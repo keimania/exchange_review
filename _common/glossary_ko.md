@@ -1,0 +1,445 @@
+# 한영 대역 용어집 — 글로벌 거래소 조사
+
+> 조사 중 새 용어가 발견될 때마다 추가. 카테고리별 영문 기준 알파벳순 정렬.
+
+---
+
+## 매매 (Trading)
+
+| English | Korean | 정의 (Definition) | KRX 참고사항 |
+|---------|--------|-------------------|-------------|
+| Add Liquidity Only Order (ALO) | 유동성공급전용주문 | 즉시 체결될 경우 거부되는 주문유형으로, 주문 제출자가 항상 유동성을 공급하도록 보장한다. | |
+| Ask (Offer) | 매도호가 | 매도자가 증권을 매도할 의사가 있는 최저 가격이다. | |
+| Auction | 단일가매매(경매) | 일정 기간 주문을 수집한 후 단일 가격으로 체결하는 매매 방식이다. | KRX: 동시호가 |
+| Bid | 매수호가 | 매수자가 증권을 매수할 의사가 있는 최고 가격이다. | |
+| Circuit Breaker (CB) | 서킷브레이커 (매매거래중단) | 가격이 사전에 정해진 임계치를 초과하여 변동할 때 매매를 일시 중단하는 장치이다. | KRX: KOSPI 8%/15%/20% 3단계 |
+| Closing Auction | 종가단일가매매 (장마감 경매) | 거래일 종료 시 종가를 결정하기 위해 실시하는 단일가매매이다. | KRX: 장마감 동시호가 (15:20~15:30) |
+| CONNEQTOR | CONNEQTOR (호가요청 플랫폼) | JPX의 ETF/ETN 매매를 위한 RFQ(호가요청) 플랫폼으로, 시장조성자가 요청에 따라 경쟁적 호가를 제공한다. | JPX의 ETF/ETN 호가요청 플랫폼 |
+| Consolidated Audit Trail (CAT) | 통합감사추적시스템 | 미국 전 거래소에 걸쳐 모든 주식 및 옵션 주문 이벤트를 추적하는 포괄적 규제 데이터베이스이다. | 미국 규제 데이터베이스 |
+| Conditional Limit Order (조건부지정가호가) | 조건부지정가호가 | KRX 주문유형으로, 접속매매 중에는 지정가주문으로 작동하다가 장마감 단일가매매 시 시장가주문으로 전환된다. | KRX 전용 주문유형 |
+| Continuous Trading | 접속매매 (연속매매) | 주문이 도착하는 즉시 호가장의 대기 주문과 체결되는 매매 세션이다. | KRX: 정규시장 접속매매 |
+| D-Order (D-Quote) | D주문 (DMM 재량주문) | NYSE DMM의 재량주문으로, 경매 및 접속매매 시 가격 개선을 허용한다. | NYSE DMM 전용 |
+| Dark Pool | 다크풀 (비공개 거래소) | 체결 전 주문을 공개적으로 표시하지 않는 비공개 매매 장소이다. | 한국에서는 제한적 운영 |
+| Designated Market Maker (DMM) | 지정시장조성자 | NYSE에서 특정 증권에 배정되어 공정하고 질서 있는 시장을 유지할 책임이 있는 시장참가자이다(과거 전문딜러 역할의 후신). | NYSE 전문 |
+| Designated Sponsor | 지정유동성공급자 | Deutsche Borse/Xetra에서 유동성이 낮은 증권의 거래가능성을 보장하기 위해 계약에 따라 지속적으로 매수·매도 호가를 제시하는 유동성공급자이다. | Deutsche Borse/Xetra 용어 |
+| Direct Market Access (DMA) | DMA (직접시장접근) | 바이사이드 기관이 거래소 호가장에 직접 접근할 수 있도록 하는 전자매매 인프라이다. | |
+| Dongsi Hoga (동시호가) | 동시호가 | KRX의 단일가매매 메커니즘으로, 시가·종가·VI 발동 후 가격 결정에 사용된다. 모든 주문을 동시 접수된 것으로 처리하고 단일 균형가격으로 체결한다. | KRX 시가·종가 결정 메커니즘 |
+| Enhanced Limit Order (ELO) | 확장지정가주문 | HKEX 주문유형으로, 반대편 최우선호가 기준 최대 10개 가격단계까지 체결 가능하다. | HKEX 주문유형 |
+| ETF Connect | ETF 커넥트 | Stock Connect 프로그램의 확장으로(2022년 7월 개시), 홍콩과 중국 본토 거래소 간 적격 ETF의 국경 간 매매를 가능하게 한다. | Stock Connect 확장 (2022년 7월~) |
+| Forced Order Range (FOR) | 강제주문범위 | SGX의 오류방지 장치로, 현재 최우선호가에서 일정 범위(예: ±30 틱)를 벗어나는 가격의 주문을 거부한다. | SGX 오류방지 장치 |
+| Funari Order | 후나리 주문 (장마감 전환주문) | JPX 주문유형으로, 접속매매 중에는 지정가주문으로 작동하다가 장마감 경매 시 시장가주문으로 전환된다. | JPX 주문유형 |
+| High-Frequency Trading (HFT) | 고빈도매매 (HFT) | 고속 시스템을 사용하여 극히 짧은 시간 내에 대량의 주문을 체결하는 자동화된 매매 전략이다. | |
+| Iceberg Order | 빙산주문 (비공개수량주문) | 전체 주문수량 중 일부만 호가장에 표시되는 주문유형이다. | |
+| Intermarket Sweep Order (ISO) | 시장간일괄주문 | Reg NMS에 따라 보호호가를 소진하기 위해 복수의 거래소에 동시 전송되는 지정가주문이다. | 미국 Reg NMS 관련 |
+| Itayose | 이타요세 (판기매매, 板寄せ) | JPX의 단일가매매 방식으로, 주문을 누적한 후 단일 균형가격으로 체결하여 시가/종가를 결정한다. | JPX 단일가매매 방식 |
+| Jeopsokmaemae (접속매매) | 접속매매 | KRX의 연속매매 방식으로, 개시 및 종가 단일가매매 사이에 가격-시간 우선원칙에 따라 주문을 체결한다. | KRX 연속매매 방식 |
+| Limit Order | 지정가주문 | 지정된 가격 또는 그보다 유리한 가격으로 매수 또는 매도하는 주문이다. | |
+| Limit Order Book (LOB) | 호가창 (지정가주문장) | 특정 증권에 대한 모든 미체결 지정가주문의 집합이다. | |
+| Limit Up-Limit Down (LULD) | 가격제한제도 (LULD) | 기준가격 대비 일정 비율 범위 밖의 거래를 방지하는 미국의 가격밴드 메커니즘이다. | 미국 가격밴드 메커니즘 |
+| Lot Size | 매매단위 (거래단위) | 표준 거래에서 매매할 수 있는 최소 주식 수량이다. | KRX: 1주 (2024년 이후) |
+| Maker-Taker | 메이커-테이커 (유동성 제공-소비 수수료 모델) | 유동성 공급자(메이커)에게는 리베이트를 지급하고 유동성 소비자(테이커)에게는 수수료를 부과하는 수수료 모델이다. | KRX: 미적용 |
+| Market Maker (MM) | 시장조성자 (마켓메이커) | 매수호가와 매도호가를 지속적으로 제시하여 유동성을 공급하는 회사이다. | KRX: LP (유동성공급자) |
+| Market Order | 시장가주문 | 가능한 최우선 가격으로 즉시 매수 또는 매도하는 주문이다. | |
+| Market-Wide Circuit Breaker (MWCB) | 시장전체 서킷브레이커 | S&P 500 지수의 하락(7%/13%/20% 임계치)에 의해 발동되어 미국 전체 주식 매매를 중단시키는 서킷브레이커이다. | 미국 S&P 500 기준 7%/13%/20% |
+| Mid-Price Pegged Order (MPL) | 중간가격연동주문 | NBBO의 중간가에 연동되는 주문으로, 가격 개선에 사용된다. | |
+| National Best Bid and Offer (NBBO) | 전미최우선호가 | 미국 전 거래소를 통틀어 특정 증권에 대해 제시되는 최우선 매수·매도호가이다. | 미국 전용 |
+| Net Order Imbalance Indicator (NOII) | 순주문불균형지표 | NASDAQ 개장/폐장 크로스 중 실시간으로 배포되는 데이터로, 예상 체결가격과 주문 불균형을 표시한다. | NASDAQ 개폐장 크로스 |
+| Opening Auction | 시가단일가매매 (개장 경매) | 거래일 시작 시 시가를 결정하기 위해 실시하는 단일가매매이다. | KRX: 장개시 동시호가 (08:30~09:00) |
+| Order Book | 호가장 (주문장) | 가격 수준별로 정리된 매수 및 매도 주문의 전자 목록이다. | |
+| Parity Allocation | 균등배분 체결 | NYSE의 체결 우선순위 규칙으로, 동일 가격의 주문에 대해 DMM, 플로어 브로커, 표시주문 간 비례적으로 체결 물량을 배분한다. | NYSE 체결 우선순위 |
+| Price-Time Priority | 가격-시간 우선원칙 | 주문을 가격 기준으로 먼저 정렬하고, 동일 가격에서는 접수 시간순으로 정렬하는 체결 규칙이다. | KRX: 동일 원칙 적용 |
+| Retail Price Improvement Order (RPI) | 소매가격개선주문 | NYSE의 비표시 주문유형으로, 소매 주문 흐름에 가격 개선을 제공한다. | NYSE 비공개 주문유형 |
+| Self-Match Prevention (SMP) | 자기체결방지 | 동일 참가자의 주문이 상호 체결되는 것을 방지하는 메커니즘이다. | |
+| Self-Regulatory Organization (SRO) | 자율규제기관 | 회원에 대한 규칙을 제정하고 집행할 권한을 부여받은 기관이다(예: NYSE, NASDAQ, FINRA). | KRX: 자율규제 기능 수행 |
+| SAPI (시장전체 매매거래중단) | 시장전체 매매거래중단 | KRX의 시장전체 서킷브레이커로, KOSPI 지수 하락률 -8%(1단계, 20분 거래중단), -15%(2단계, 20분 거래중단), -20%(3단계, 당일 매매 종료) 시 발동된다. 각 단계는 1분간 지속 확인 후 발동한다. | KRX: KOSPI -8%/-15%/-20% 3단계 |
+| Sidecar (프로그램매매호가 효력정지) | 사이드카 (프로그램매매호가 효력정지) | KOSPI 200 근월물 선물 가격이 기준가 대비 ±5% 변동 상태가 1분간 지속될 경우 프로그램매매 호가를 5분간 정지하는 KRX의 메커니즘이다. 하루 1회에 한해 적용되며 14:50 이후에는 발동하지 않는다. | KRX: KOSPI 200 선물 ±5% 1분 지속 시 발동; 1일 1회 한정 |
+| Special Quote (Tokubetsu Kehai) | 특별호가 (特別気配) | JPX의 변동성중단 메커니즘(特別気配)으로, 가격 변동이 임계치를 초과하면 접속매매를 일시 중단하고 예상호가를 표시한 후 이타요세 경매로 매매를 재개한다. | JPX 변동성중단 메커니즘 |
+| Stock Connect | 후강퉁/선강퉁 (Stock Connect) | HKEX와 상해(2014년) 및 심천(2016년) 증권거래소를 연결하여 국경 간 주식 매매를 허용하는 상호 시장접근 프로그램이다. | HKEX-상해/심천 상호접근 |
+| Stop Order | 조건부지정가주문 (역지정가주문) | 지정된 가격 수준에 도달하면 시장가주문으로 전환되는 주문이다. | |
+| Swap Connect | 스왑 커넥트 | 2023년 5월 개시된 금리스왑 상호 시장접근 프로그램으로, HKEX OTC Clear와 CFETS(중국외환거래센터)를 연결한다. 세계 최초의 파생상품 상호 시장접근 프로그램이다. | HKEX-CFETS 금리스왑 상호접근 (2023년 5월~) |
+| Tick Size | 호가단위 (최소가격변동폭) | 증권의 호가 또는 매매가 가능한 최소 가격 변동폭이다. | KRX: 가격대별 차등 호가단위 |
+| Trading at Last (TAL) | 종가매매 (장마감 후 종가거래) | 장마감 경매 이후의 세션(Euronext, SIX, BME 등에서 사용)으로, 확정된 종가로만 주문을 체결할 수 있다. | Euronext, SIX, BME 등 |
+| Volatility Auction | 변동성완화장치 (VI) 발동 시 단일가매매 | 가격 변동이 일정 임계치를 초과할 때 발동되는 특별 단일가매매이다. | KRX: VI (정적VI/동적VI) |
+| Volatility Control Mechanism (VCM) | 변동성통제장치 | HKEX의 동적 서킷브레이커로, 지정 증권의 잠재 체결가격이 5분 기준가격 대비 ±10% 벗어날 때 발동되어 5분간의 냉각기간을 부과한다. | HKEX: ±10% 가격밴드 |
+| Volatility Interruption (변동성완화장치, VI) — KRX | 변동성완화장치 (VI) | KRX의 동적 서킷브레이커로, 정적VI(직전 단일가매매 가격 대비 일정 비율 이탈 시 발동)와 동적VI(최근 기준가 대비 ±3% 이탈 시 발동)로 구성된다. 발동 시 2분간의 냉각 단일가매매 후 매매를 재개한다. | KRX: 정적VI(3%/6%), 동적VI(±3%) |
+| Zaraba | 자라바 (ザラバ, 접속매매) | JPX의 접속매매 방식(ザラバ)으로, 시가 및 종가 경매 사이에 가격-시간 우선원칙에 따라 주문을 체결한다. | JPX 연속매매 방식 |
+
+## 파생상품 (Derivatives)
+
+| English | Korean | 정의 (Definition) | KRX 참고사항 |
+|---------|--------|-------------------|-------------|
+| 0DTE Options | 당일만기옵션 (0DTE) | 거래 당일에 만기가 도래하는 옵션 계약이다. Cboe의 SPX 일일 만기옵션으로 대중화되었으며, 2025년 SPX 옵션 거래량의 약 59%를 차지한다. | |
+| ASX 24 | ASX 24 (ASX 파생상품 플랫폼) | ASX의 금리, 주가지수, 상품, 에너지, 환경 상품에 대한 선물 및 옵션 거래 플랫폼이다. 구 시드니선물거래소(SFE)로, 2016년 New Trading Platform(NTP)으로 업그레이드되었으며, 2026년 3월 LSEG와의 추가 현대화 파트너십이 발표되었다(목표 2028년 상반기). | |
+| Automated Improvement Mechanism (AIM) | 자동가격개선경매 | Cboe의 전자 경매 프로세스로, 회원이 대리 주문을 짧은 기간(통상 1초) 동안 경쟁 관심에 노출시켜 가격 개선을 추구할 수 있게 한다. | Cboe 전용 |
+| BAX | BAX (캐나다 BA 선물) | 3개월 캐나다 은행인수어음 선물로, 몬트리올거래소의 레거시 단기금리 계약이다. CDOR 기반이며 미결제약정은 2024년 4월 26일 CRA(CORRA 선물)로 전환되었고, 2024년 6월 28일 CDOR 중단 이후 공식 폐지되었다. | 몬트리올거래소; 2024년 폐지 |
+| Block Trade | 블록거래 (대량매매) | 거래소가 설정한 최소 수량 기준을 충족하는, 상장 선물 또는 옵션에 대한 사적으로 협상된 장외 거래이다. | KRX: 대량매매 (협의대량매매) |
+| Book or Cancel Order (BOC) | 메이커전용주문 | 진입 시 즉시 체결될 경우 거부되는 주문으로, 수동적(메이커) 체결만을 보장한다. Eurex에서 사용된다. | Eurex 주문유형 |
+| Cancel on Disconnect (CoD) | 접속단절 시 자동취소 | 거래 세션이 단절될 경우 모든 잔존 주문을 자동으로 취소하는 선택적 기능이다. | |
+| Canadian Derivatives Clearing Corporation (CDCC) | 캐나다파생상품청산회사 | 몬트리올거래소의 모든 장내 파생상품과 확대되는 범위의 장외 상품에 대한 중앙거래상대방(CCP)이다. Bourse de Montreal Inc.의 완전 자회사이며, 캐나다은행으로부터 시스템적으로 중요한 FMI로 지정되었다. 1997년부터 SPAN 기반 증거금 방법론을 사용한다. | 몬트리올거래소 CCP |
+| Cboe Futures Exchange (CFE) | Cboe 선물거래소 | Cboe의 CFTC 규제 선물거래소로, VIX 선물, S&P 500 분산 선물 및 기타 변동성 상품을 거래한다. | VIX 선물 상장 |
+| Cboe Volatility Index (VIX) | Cboe 변동성지수 (VIX) | S&P 500(SPX) 옵션 가격에서 산출되는 30일 선행 변동성에 대한 시장의 기대치이다. 1993년 창설되었고 2003년 방법론이 개정되었으며, 흔히 "공포지수"로 불린다. | "공포지수" |
+| Cheapest-to-Deliver (CTD) | 최저가인도채권 (CTD) | 실물인도 선물계약에서 전환계수와 시장 상황을 기반으로 매도 포지션 보유자의 인도 비용을 최소화하는 인도 적격 채권이다. | |
+| Cloud Prisma Margin Estimator (cPME) | 클라우드 Prisma 증거금 산출기 | Eurex의 웹 기반 도구로, 참가자가 가상 포트폴리오에 대한 증거금 요건을 추정할 수 있게 한다. | Eurex 웹 도구 |
+| CME Globex | CME 글로벡스 | CME Group의 전자 거래 플랫폼으로, 1992년 최초 출시되었다. 세계 최초의 글로벌 전자 선물 거래 플랫폼이다. | 세계 최초 전자선물거래 플랫폼 |
+| Commitments of Traders (COT) | 거래자별 미결제약정 보고서 | CFTC가 미국 선물시장의 거래자 범주별 집계 포지션 데이터를 게시하는 주간 보고서이다. | CFTC 주간 보고서 |
+| Commodity Futures | 상품선물 | 농산물, 에너지, 금속 등 실물 상품을 기초자산으로 하여 미래 일정 시점에 정해진 가격으로 매매할 것을 약정하는 표준화된 거래소 거래 계약이다. | |
+| Contract Specification | 계약명세 (상품명세) | 선물 또는 옵션 계약의 거래 단위, 가격 호가 단위, 만기월, 결제 방식 등 핵심 조건을 규정한 거래소의 표준화된 문서이다. | |
+| Conversion Factor (CF) | 전환계수 (CF) | 실물인도 채권선물에서 명목 표면이율과 인도 채권의 실제 표면이율 간 차이를 조정하기 위해 적용하는 계수이다. | 국채선물 인도 관련 |
+| CORRA | CORRA (캐나다 오버나이트 레포금리) | 캐나다은행이 선호하는 CAD 금리시장의 무위험 기준금리이다. CDOR를 대체하여 주요 단기금리 벤치마크가 되었으며, 몬트리올거래소의 CRA 및 COA 선물계약의 기초가 된다. | |
+| Cross-Margining | 교차증거금 (상호증거금 인정) | 상관관계가 있는 상품 간 또는 서로 다른 청산기관 간의 위험 상쇄를 인정하여 총 증거금 요건을 축소하는 관행이다. | |
+| CTP (Comprehensive Transaction Platform) | CTP (종합거래플랫폼) | SHFE의 핵심 전자 거래 시스템으로, 중국 선물업계에서 널리 사용된다. 집중형 주문 체결, 위험관리, 시세 배포 기능을 제공하며, 독자적인 CTP API를 통해 접속한다. 주 데이터센터는 상하이 장강에 소재한다. | SHFE 핵심 거래시스템 |
+| Daily Settlement Price | 일일정산가격 | 거래소가 매 거래일 종료 시 산출하는 선물계약의 정산 기준 가격으로, 일일 손익 정산(mark-to-market) 및 증거금 산출에 사용된다. | KRX: 일일정산가격 |
+| Delivery | 인도 (실물인수도) | 선물계약의 만기 시 매도자가 기초자산을 매수자에게 실물로 인도하거나 현금으로 결제하는 과정이다. | |
+| Derivatives | 파생상품 | 주식, 채권, 통화, 금리, 상품 등 기초자산의 가격 변동에 따라 가치가 결정되는 금융 계약의 총칭이다. 선물, 옵션, 스왑 등이 포함된다. | KRX: 파생상품시장 |
+| Derivatives Clearing Organization (DCO) | 파생상품청산기관 (DCO) | 선물, 옵션 및/또는 스왑을 청산하는 미국 CFTC 등록 청산기관이다. | 미국 CFTC 등록 |
+| Designated Contract Market (DCM) | 지정계약시장 (DCM) | 선물 및 옵션 계약의 거래 상장이 승인된 미국 CFTC 등록 거래소이다. | 미국 CFTC 등록 거래소 |
+| Dynamic Price Banding (DPB) | 동적가격밴드 | HKEX의 사전 주문 가격 검증 메커니즘으로, 현재 최우선 매수/매도 호가 주변의 밴드 내로 주문 가격을 제한하여 오류 주문이 호가창에 진입하는 것을 방지한다. | HKEX 사전주문검증 |
+| EFP (Exchange for Physical) | 현물교환거래 (EFP) | 선물 포지션과 대응하는 현물 상품 또는 선도 계약의 동시 교환을 수반하는 거래이다. | |
+| EFS (Exchange for Swap) | 스왑교환거래 (EFS) | 선물 포지션과 대응하는 장외 스왑의 동시 교환을 수반하는 거래이다. | |
+| Eligible Contract Participant (ECP) | 적격거래참가자 | 상품거래법(CEA)상 특정 장외 상품(블록거래, 스왑)의 거래가 허용되는 시장 참가자 범주이다. | 미국 CEA 기준 |
+| Enhanced Trading Interface (ETI) | 향상된 매매 인터페이스 (ETI) | Eurex의 T7용 고성능 네이티브 바이너리 인터페이스로, FIX 5.0 SP2 의미론에 독자적 세션 계층을 사용한다. | Eurex T7 전용 |
+| Equity Index Futures | 주가지수선물 | 주가지수를 기초자산으로 하여 미래 특정 시점에 정해진 가격으로 매매할 것을 약정하는 표준화된 선물계약이다. | KRX: KOSPI200 선물 |
+| Equity Index Options | 주가지수옵션 | 주가지수를 기초자산으로 하여 만기일 또는 그 이전에 정해진 행사가격으로 매수 또는 매도할 수 있는 권리를 부여하는 계약이다. | KRX: KOSPI200 옵션 |
+| Eurex EnLight | Eurex EnLight (호가요청 플랫폼) | Eurex의 장내 선택적 호가요청(RFQ) 플랫폼으로, 익명 협상 및 STP 통합을 제공한다. | |
+| European Union Allowance (EUA) | EU 탄소배출권 (EUA) | EU 배출권거래제도 하의 거래 가능한 탄소배출 허가권이다. 각 EUA는 보유자에게 CO₂ 환산 1톤의 배출 권리를 부여한다. ICE Futures Europe가 주요 거래 장소이다. | ICE Futures Europe 주요 거래 |
+| Exchange for Risk (EFR) | 위험교환거래 (EFR) | 선물/옵션 포지션과 대응하는 장외 파생상품의 동시 교환을 수반하는 거래이다. | |
+| Exchange of Options for Options (EOO) | 옵션교환거래 (EOO) | 장외 옵션과 상장 옵션의 동시 교환을 수반하는 거래이다. | |
+| Expiration (Expiry) | 만기 (만기일) | 선물 또는 옵션 계약의 유효 기간이 종료되는 시점이다. 만기일 이후 해당 계약의 권리와 의무는 소멸한다. | |
+| Extreme Loss Margin (ELM) | 극단손실증거금 | SEBI/NSE가 정상 VaR 기반 증거금을 초과하는 꼬리 위험을 커버하기 위해 부과하는 추가 증거금 항목이다. 2024년 11월부터 만기일 매도 옵션 포지션에 추가 2% ELM이 적용된다. | SEBI/NSE 추가 증거금 |
+| Fill and Kill (FAK) | 즉시체결잔량취소 (FAK) | 가용 수량에 대해 즉시 체결되고, 미체결 잔량은 취소되는 주문이다(일부 시장에서 IOC와 동일). | IOC와 유사 |
+| Final Settlement | 최종결제 | 선물 또는 옵션 계약의 만기 시 최종적으로 수행되는 현금결제 또는 실물인도를 통한 계약 이행 절차이다. | |
+| Filtered Historical Simulation (FHS) | 필터링 역사적 시뮬레이션 (FHS) | 과거 시장 데이터에 변동성 필터링을 적용하여 잠재적 포트폴리오 손실을 추정하는 위험 측정 방법론이다. Eurex Prisma의 핵심 방법론이다. | Eurex Prisma 핵심 방법론 |
+| Futures | 선물 | 특정 기초자산을 미래의 정해진 시점에 현재 합의된 가격으로 매매할 것을 약정하는 표준화된 거래소 거래 계약이다. | KRX: 선물시장 |
+| Futures Commission Merchant (FCM) | 선물위탁중개업자 (FCM) | 선물/옵션 거래를 위한 주문을 권유 또는 수락하고 해당 거래의 증거금으로 금전 또는 자산을 수취하는 미국 등록 법인이다. | 미국 등록 |
+| GIFT City | GIFT City (인도 국제금융서비스센터) | Gujarat International Finance Tec-City로, 인도 Gujarat주 Gandhinagar에 소재한 국제금융서비스센터(IFSC)이다. NSE International Exchange(NSE IX)가 입주하여 GIFT Nifty(2023년 7월 SGX Nifty를 대체)를 일일 약 19시간 운영한다. | GIFT Nifty 운영 |
+| Globex Credit Controls (GC2) | Globex 신용통제 (GC2) | CME의 거래소 제공 GUI로, 청산회사가 계좌별 실시간 사전 체결 위험한도를 설정할 수 있게 한다. | CME 사전위험관리 |
+| Historical Value-at-Risk (HVaR) | 역사적 VaR (HVaR) | 과거 시장 데이터 시나리오를 사용하여 잠재적 포트폴리오 손실을 추정하는 위험 측정 방법론이다. SPAN 2와 Prisma에서 사용된다. | SPAN 2, Prisma에 사용 |
+| HKATS | HKATS (홍콩선물자동매매시스템) | Hong Kong Futures Automatic Trading System으로, HKEX의 전자 파생상품 거래 시스템이다. 1995년 최초 출시되었으며, 2013년 Nasdaq Genium INET 플랫폼으로 이전되었다. | |
+| HKFE Clearing Corporation (HKCC) | HKFE 청산회사 (HKCC) | HKFE(홍콩선물거래소)에서 거래되는 지수선물/옵션, 통화선물, 상품선물 등 모든 상품의 청산기관이다. | |
+| ICE Risk Model (IRM) | ICE 위험모형 (IRM) | ICE의 독자적 증거금 산출 위험 방법론이다. IRM 2(2024~2025년 출시)는 99% 신뢰수준의 필터링 역사적 시뮬레이션 VaR를 사용하며, 레거시 시나리오 기반 IRM을 대체한다. | IRM 2: FHS VaR 기반 |
+| iLink 3 | iLink 3 | CME Group의 바이너리 주문 입력 프로토콜로, FIXP 세션 계층과 함께 FIX Simple Binary Encoding(SBE)을 사용한다. | CME 바이너리 주문 프로토콜 |
+| iMpact | iMpact | ICE의 독자적 멀티캐스트 시세 프로토콜로, 모든 ICE 선물시장에 대해 UDP 멀티캐스트를 통한 실시간 호가 잔량 데이터를 제공한다. | ICE 멀티캐스트 시세 프로토콜 |
+| Implied Order | 내재주문 (묵시적 주문) | 개별 종목의 직접 주문과 스프레드 주문의 조합으로부터 거래 시스템이 자동으로 생성하는 합성 주문이다. 관련 계약 간 유동성을 향상시킨다. | |
+| Implied Pricing | 내재가격산출 | 개별 종목 및 스프레드 주문의 조합으로부터 합성 호가를 생성하여 관련 계약 간 유동성을 향상시키는 기능이다. | 합성호가 생성 |
+| INE (Shanghai International Energy Exchange) | 상해국제에너지거래소 (INE) | SHFE의 완전 자회사로, 2013년 설립된 국제화 상품선물 거래소이다. 해외 거래자에게 개방된 위안화 표시 계약을 운영하며, 원유(SC, 2018년 3월 출시), 저유황연료유, TSR 20 고무, 보세구리, 컨테이너 운임지수 선물 등을 포함한다. | SHFE 자회사 |
+| Inline Credit Controls (ICC) | 인라인 신용통제 (ICC) | CME의 세분화된 상품별·계좌별 일일 포지션한도로, 청산회원 및 체결회사가 설정한다. | CME 상품별 포지션한도 |
+| Inter-Commodity Spread Credit | 상품간 스프레드 크레딧 | 상관관계가 있는 상품 간(예: 원유 대 난방유)의 위험 상쇄를 인정하는 SPAN 증거금 감면 항목이다. | SPAN 증거금 감면 |
+| Interest Rate Futures | 금리선물 | 금리 또는 채권을 기초자산으로 하여 미래 특정 시점에 정해진 가격으로 매매할 것을 약정하는 표준화된 선물계약이다. | KRX: 국채선물 (3년/10년) |
+| Interval Price Limit (IPL) | 구간가격제한 (IPL) | ICE의 동적 서킷브레이커 메커니즘으로, 최종 체결가 주변에 가격 밴드를 설정한다. 한도 초과 시 거래가 일시 중단된 후 확대된 범위로 재개된다. | ICE 동적 서킷브레이커 |
+| J-GATE | J-GATE (오사카거래소 파생매매시스템) | 오사카거래소(OSE)의 Nasdaq Genium INET 기술 기반 파생상품 거래 시스템이다. 현행 버전 3.0은 2021년 9월 출시되었으며, 버전 4.0은 Nasdaq Eqlipse 플랫폼으로 계획 중이다(약 2028년). | Nasdaq Genium INET 기반 |
+| J-NET | J-NET (오사카거래소 장외대량거래) | 오사카거래소의 장외 경매 외 거래 시설로, 사전 합의된 가격에 의한 대량 파생상품 협의 거래를 위한 것이다. 타 거래소의 블록거래 시설에 해당한다. | |
+| KOSPI 200 Options | KOSPI 200 옵션 | 1997년 7월 7일 KRX에 상장된 KOSPI 200 지수 옵션이다. 계약승수 KRW 500,000(2012년 6월 KRW 100,000에서 5배 인상); 유럽형 현금결제; 역사상 세계 최대 단일 파생상품 계약(2011년 최고 약 36.7억 계약). | KRX 대표 옵션; 2012년 이전 세계 최대 거래량 |
+| KRX Night Session (야간거래) | 야간거래 (夜間去來) | KRX가 독자적으로 운영하는 시간외 파생상품 거래 세션(18:00~06:00 KST)으로, 2025년 6월 9일 Eurex 연계 방식을 대체하여 출시되었다. KOSPI 200 선물/옵션, 미니 상품, KOSDAQ 150, USD 선물, KTB 선물 등 10개 상품을 커버한다. | 2025년 6월 9일 출시; 10개 상품 |
+| KRX-SPAN | KRX-SPAN | KRX의 상장 파생상품에 대한 수정 SPAN 기반 증거금 방법론이다. 시나리오 기반 포트폴리오 위험 평가를 사용하며, KOSPI 200 변동성이 선물 증거금율의 80% 이상에 도달하면 장중 추가 증거금 납부가 요구된다. | KRX: KOSPI 200 변동성 80% 도달 시 장중 추가납부 |
+| Lead Market Maker (LMM) | 선도시장조성자 (LMM) | 특정 의무 조건 하에 연속적인 양방향 호가를 제시해야 하는 지정 시장 참가자이다. 일부 체결 알고리즘에서 우선 배분을 받는다. | |
+| Liquidation Group | 청산그룹 | Eurex Prisma에서 포트폴리오 기반 증거금 산출을 위해 유사한 위험 특성을 공유하는 상품의 그룹이다. 장내 및 장외 파생상품 간 교차 증거금을 가능하게 한다. | Eurex Prisma 포트폴리오 분류 |
+| Market with Protection | 보호범위시장가주문 | CME의 주문유형으로, 현재 최우선 가격으로부터 사전 정의된 "보호 범위" 내에서 체결되어 극단적 체결을 방지한다. Globex에서 전통적 시장가 주문을 대체한다. | CME 주문유형 |
+| Market-Wide Position Limit (MWPL) | 시장전체 포지션한도 (MWPL) | 인도 파생시장에서 단일 기초증권에 대해 허용되는 최대 합산 미결제약정(모든 거래소 합산)이다. 유동주식 시가총액의 일정 비율로 산출되며, MWPL의 95% 초과 시 신규 포지션 설정이 금지된다. | 인도 파생시장 |
+| Mass Quote | 대량호가 (멀티호가) | 시장조성자가 단일 메시지로 다수의 양방향 호가를 동시에 제출할 수 있는 메시지 유형이다. | 시장조성자용 |
+| MDP 3.0 | MDP 3.0 | CME Group의 시세 플랫폼으로, UDP 멀티캐스트 및 TCP 유니캐스트를 통한 FIX SBE 인코딩을 사용한다. | CME 시세 플랫폼 |
+| Negotiated Large Trade (NLT) | 협의대량거래 (NLT) | SGX의 최소 거래량 기준을 충족하는 사적 협상 장외 파생상품 거래 시설이다. 타 거래소의 블록거래에 해당한다. | SGX 블록거래 |
+| NSE Clearing Limited (NCL) | NSE 청산회사 (NCL) | 인도 최초의 결제 보증 기능을 갖춘 중앙거래상대방(CCP)이다. 구 NSCCL로, NSE의 완전 자회사이며 NSE의 주식, 파생상품, 통화, 상품 부문 모든 거래에 대해 채무인수, 다자간 차감 및 결제 보증을 제공한다. | 인도 최초 CCP |
+| Oman Marker Price | 오만 마커 가격 | DME/GME 오만 원유선물(OQD)의 일일 기준 가격으로, 마커 윈도우(싱가포르 시간 16:25~16:30) 중 근월물 거래에서 결정된다. Trade at Marker(TAM) 거래의 기초가 되며 오만 및 두바이 원유의 아시아 수출 공식 판매가 벤치마크로 기능한다. | DME/GME 원유선물 기준가 |
+| OMD-D | OMD-D (HKEX 파생상품 시세 플랫폼) | HKEX의 Orion Market Data 파생상품 시세 플랫폼으로, UDP/IP를 통한 바이너리 멀티캐스트 데이터 피드로 선물 및 옵션 시세를 제공한다. | |
+| Open Interest | 미결제약정 | 특정 시점에 청산 또는 인도되지 않고 남아 있는 선물 또는 옵션 계약의 총 수량이다. 시장 참여도와 유동성의 지표로 사용된다. | |
+| Options | 옵션 | 보유자에게 만기일 또는 그 이전에 정해진 행사가격으로 기초자산을 매수(콜) 또는 매도(풋)할 수 있는 권리를 부여하되 의무는 부과하지 않는 파생상품 계약이다. | KRX: 옵션시장 |
+| Peak Margin | 피크 마진 (실시간 증거금 검증) | SEBI의 증거금 규정(2021년 9월 전면 시행)으로, 인도 내 모든 일중 F&O 포지션에 대해 100% 사전 증거금 징수를 요구한다. 일일 4~5회 무작위 스냅샷으로 준수 여부를 확인하며 미달 시 과태료가 부과된다. | SEBI 규정 (2021년~) |
+| Performance Bond | 이행보증금 (증거금) | CME의 증거금 용어로, 미결제 포지션의 잠재적 미래 손실을 커버하기 위해 요구되는 담보이다. | CME 용어 |
+| Position Accountability | 포지션 보고의무 | 거래소가 거래자에게 연락하여 포지션에 관한 정보를 요청할 수 있는 기준점이나, 경성 한도는 적용되지 않는다. | 한도 아닌 보고 기준 |
+| Position Limit | 포지션한도 (건옥제한) | 단일 시장 참가자가 특정 계약에서 보유할 수 있는 최대 포지션 수량에 대한 거래소 또는 규제기관이 설정한 제한이다. | KRX: 건옥제한 |
+| PRiME | PRiME (포트폴리오 위험증거금) | HKCC의 SPAN 프레임워크 기반 증거금 방법론으로, 고객 증거금에 1.33배 승수를 적용하며 상품당 16개 위험 시나리오를 평가한다. | HKCC SPAN 기반 방법론 |
+| PRISMA | PRISMA (Portfolio-based Risk Management) | Eurex의 포트폴리오 기반 위험관리 증거금 방법론이다. | Eurex 증거금 방법론 |
+| Pro-rata Matching | 비례배분 체결 | 각 가격 수준에서 진입 수량을 시간 우선이 아닌 잔존 주문 크기에 비례하여 배분하는 체결 알고리즘이다. | |
+| Qualified Clearing Member Market Maker (QCMM) | 적격청산회원시장조성자 | HKEX 파생상품 시장조성자의 일종으로, 청산회원이면서 최소 수량 의무 하에 연속적 양방향 호가를 제시해야 하며 수수료 리베이트를 수령한다. | HKEX 파생시장조성자 |
+| RiskGuard | RiskGuard (사전위험관리 서비스) | Euronext의 파생상품 및 현물시장 사전 위험관리 서비스로, 주문 규모 한도, 최대 주문수량, 일일 최대 익스포저 모니터링, 킬 스위치 기능, 자기체결방지를 FIX 5.0 API 및 웹 기반 GUI로 제공한다. | Euronext 전용 |
+| SAIL | SAIL (SOLA 접속정보언어) | 몬트리올거래소의 SOLA 거래 플랫폼용 네이티브 고성능 프로토콜로, 브로커, HFT 회사, 지정시장조성자를 위한 모든 주문 입력 기능을 지원한다. | 몬트리올거래소 프로토콜 |
+| Scanning Range | 스캐닝 범위 | SPAN 방법론에서 각 상품의 최대 예상 1일 가격 변동폭으로, 위험 시나리오 생성에 사용된다. | SPAN 리스크 시나리오 |
+| Self-Trade Prevention (STP) | 자기체결방지 | 동일 회사 또는 계좌의 주문 간 체결을 방지하는 설정 가능한 메커니즘이다. | |
+| SEOCH | SEOCH (SEHK 옵션청산회사) | SEHK Options Clearing House Limited로, 홍콩증권거래소에서 거래되는 주식옵션의 HKEX 청산기관이다. | HKEX 주식옵션 청산 |
+| SIMEX | SIMEX (싱가포르국제금융선물거래소) | 1984년 설립된 아시아 최초의 금융선물거래소이다. 1999년 SGX로 합병되었으며, CME와의 유로달러 선물 상호 상쇄 약정을 선구적으로 도입하였다. | SGX 전신 |
+| SOLA | SOLA (몬트리올거래소 매매엔진) | 몬트리올거래소의 독자 개발 저지연 전자 거래 엔진이다. 중간값 응답 시간은 약 460마이크로초(2013년 업그레이드 이후)이며, 메시징 용량은 초당 100,000건 이상의 호가를 처리한다. Boston Options Exchange(BOX) 등 외부 거래소에도 라이선스되었다. | |
+| SPAN | SPAN (Standard Portfolio Analysis of Risk) | CME의 증거금 방법론으로, 전 세계 50개 이상의 거래소에서 채택되었다. | CME 증거금 방법론; 전세계 50+ 거래소 채택 |
+| SPAN 2 | SPAN 2 (차세대 증거금 방법론) | CME의 차세대 증거금 방법론으로, HVaR 및 Expected Shortfall에 기반한다. | CME HVaR + Expected Shortfall 기반 |
+| Sidecar (사이드카) | 사이드카 | KOSPI 200 선물 근월물이 전일 정산가 대비 ±5% 변동하고 이론가격 괴리가 ±3% 이상인 상태가 1분간 지속될 경우, 모든 파생상품 계약의 호가 효력을 5분간 정지하는 KRX의 시장전체 서킷브레이커이다. | KRX 파생상품 전체 서킷브레이커; ±5% + ±3% 이론가 괴리 1분 지속 |
+| Special Opening Quotation (SOQ) | 특별개장호가 (SOQ) | 만기일에 모든 구성종목의 시가를 기반으로 산출되는 주가지수선물의 결제 산출 방식이다. | 주가지수선물 만기 결제가 |
+| Sponsored Access (SpA) | 후원접속 (SpA) | 비회원 법인이 정식 거래소 회원 자격 없이 승인된 서비스 제공자를 통해 거래소 시스템에 접속할 수 있는 모델이다. Eurex T7 Release 14.0에서 도입되었다. | Eurex T7 Release 14.0~ |
+| Spread Trading | 스프레드거래 | 관련된 두 개 이상의 선물 또는 옵션 계약을 동시에 매수·매도하여 가격 차이의 변동으로부터 이익을 추구하는 거래 전략이다. | |
+| Stop with Protection | 보호범위역지정가주문 | CME의 주문유형으로, 트리거 시 보호범위시장가주문으로 전환되어 보호 범위 내에서 체결된다. | CME 주문유형 |
+| Swap | 스왑 | 두 당사자가 일정 기간에 걸쳐 서로 다른 현금흐름을 교환하기로 합의하는 장외 파생상품 계약이다. 금리스왑, 통화스왑, 신용부도스왑 등이 있다. | |
+| Systemically Important Financial Market Utility (SIFMU) | 시스템적으로 중요한 금융시장인프라 | 도드-프랭크법에 따라 그 실패가 시스템적 위험을 초래할 수 있는 금융시장인프라에 대한 지정이다. CME Clearing이 이 지정을 받았다. | 도드-프랭크법 Title VIII 지정 |
+| T+1 Session | T+1 세션 (야간거래) | TAIFEX의 시간외 거래 세션(대만시간 15:00~익일 05:00)으로, 2017년 5월 도입되었다. 적격 주가지수, 해외지수, 상품 상품에 대해 총 거래 시간을 일일 약 19시간으로 확대하며, 유럽 및 미국 시장 시간대를 커버한다. | TAIFEX 15:00~05:00+1 |
+| T7 Entry Services (TES) | T7 장외거래입력서비스 (TES) | Eurex의 장외 거래(블록거래, EFP, EFS)를 T7 시스템에 입력하여 표준화된 청산을 가능하게 하는 시설이다. | Eurex 블록거래 등 |
+| TMP (Transaction Messaging Protocol) | TMP (거래메시지 프로토콜) | TAIFEX의 국내 참가자용 독자적 프로토콜로, 국제 접속을 위한 FIX 프로토콜과 함께 사용된다. | TAIFEX 국내 참가자용 |
+| TONA | TONA (도쿄 오버나이트 평균금리) | 일본은행의 무담보 익일물 콜금리 벤치마크이다. OSE는 2023년 3개월 TONA 선물을 출시하였으며, 일본은행 금리 인상 이후 급성장하였다. | 일본은행 기준금리 |
+| Trade at Marker (TAM) | 마커가격거래 (TAM) | DME/GME의 시설로, 시장 참가자가 일일 오만 마커 가격으로 거래를 체결할 수 있게 한다. 마커는 마커 윈도우(싱가포르 시간 16:25~16:30) 중 근월물 OQD 계약의 거래에서 결정된다. | DME/GME 전용 |
+| Trade Price Validation (TPV) | 거래가격검증 (TPV) | Euronext의 파생상품시장 추가 안전장치 계층으로, 이상 거래를 방지하기 위해 체결 전 거래 가격을 검증한다. 동적 및 정적 칼라 메커니즘을 보완한다. | Euronext 파생 안전장치 |
+| Underlying (Asset) | 기초자산 | 파생상품 계약의 가치가 파생되는 원천이 되는 자산, 지수, 금리 또는 기타 변수이다. | |
+| V-KOSPI 200 | V-KOSPI 200 (변동성지수) | KOSPI 200 옵션의 내재변동성을 측정하는 변동성 지수로, VIX와 유사하다. V-KOSPI 200 선물이 KRX에서 계약승수 KRW 250,000으로 거래된다. | KRX 변동성 파생상품; 2015년 출시 |
+| Volatility Interruption (VI) | 변동성중단 (VI) | Eurex의 서킷브레이커 메커니즘으로, 가격 이탈 한도가 초과될 경우 해당 종목을 연속매매에서 변동성 경매로 전환한다. | Eurex 서킷브레이커 |
+| Zero Days to Expiration (0DTE) | 당일만기옵션 (0DTE) | 거래 당일에 만기가 도래하는 옵션 계약이다. Cboe의 SPX 일일 만기옵션으로 대중화되었으며, 2025년 SPX 옵션 거래량의 약 59%에 달한다. | Cboe SPX ~59% 거래량 (2025) |
+
+## 청산 (Clearing)
+
+| English | Korean | 정의 (Definition) | KRX 참고사항 |
+|---------|--------|-------------------|-------------|
+| Anti-Procyclicality | 경기순응성 완화조치 | CCP가 안정기에 증거금 요구를 과도하게 낮추거나 스트레스 시 급격히 인상하여 시장 변동성을 증폭하는 것을 방지하기 위해 적용하는 조치이다. PFMI 및 EMIR에 따라 요구되며, 스트레스 역사적 관찰기간, 증거금 하한, 버퍼 등의 방법을 사용한다. | PFMI/EMIR 요구사항 |
+| Assessment Powers | 추가분담금 부과 권한 | CCP가 청산회원에게 손해배상공동기금 의무를 초과하는 추가 분담금을 요구할 수 있는 권한이다. | |
+| Back Testing | 사후검증 (백테스팅) | CCP의 증거금 모형 예측치를 실제 시장 결과와 비교하여 모형의 적정성을 평가하는 절차이다. PFMI에 따라 CCP는 최소 월 1회 사후검증을 실시하고 커버리지 수준을 보고해야 하며, 통상 99% 이상의 커버리지를 목표로 한다. | CCP는 PFMI에 따라 최소 월 1회 실시; 99% 이상 커버리지 목표 |
+| CCP Recovery and Resolution Regulation (CCP RRR) | CCP 회복 및 정리 규정 | 핵심 청산기능의 연속성을 보장하기 위한 CCP 회복 및 정리 프레임워크를 수립하는 EU 규정이다. VMGH, 포지션 배분, 추가현금납입, 부분거래종결 등의 수단을 포함한다. | EU 규정; VMGH, 포지션배분, 추가현금납입, 부분거래종결 등 |
+| Central Counterparty (CCP) | 중앙청산소 (중앙거래상대방) | 거래 상대방 사이에 개입하여 모든 매도자에 대한 매수자이자 모든 매수자에 대한 매도자가 되는 기관이다. | KRX가 CCP 역할 수행 |
+| Clearing Member (CM) | 청산회원 (청산참가자) | CCP를 통해 직접 거래를 청산할 수 있는 권한을 부여받은 참가자이다. | KRX: 청산적격회원 |
+| Close-out Netting | 일괄청산차감 | 부도 당사자와의 계약상 의무를 종료하고 단일 순액을 산정하는 절차이다. | |
+| CME Clearing | CME 청산부문 | CME Group의 청산 부문으로, CME, CBOT, NYMEX, COMEX의 선물, 옵션, OTC 파생상품에 대해 CCP 서비스를 제공한다. SIFMU로 지정되어 있으며, SPAN/SPAN 2 증거금 방법론을 사용하고 보증기금 규모는 약 101억 달러이다. | SIFMU 지정; SPAN/SPAN 2 사용 |
+| Concentration Margin | 집중도 증거금 | 청산회원의 포지션이 시장 대비 대규모일 때 청산 위험을 반영하여 부과하는 추가 증거금이다. | 대규모 포지션 보유 시 추가 증거금 |
+| Concentration Risk | 집중위험 (집중리스크) | 청산회원 또는 CCP가 단일 거래상대방, 자산군, 발행자, 시장 부문에 과도한 익스포저를 보유하는 위험이다. CCP는 집중도 증거금 가산, 포지션 한도, 담보 분산 요건 등을 통해 이를 완화한다. | KRX: 위험집중도 관리 |
+| Continuous Net Settlement (CNS) | 연속차감결제 (CNS) | NSCC의 핵심 청산 프로세스로, 동일 증권에 대한 모든 거래를 참가자별·일별 단일 인도 또는 수령 의무로 차감한다. | NSCC 핵심 청산 프로세스 |
+| Cover 2 | Cover 2 (2사 동시부도 대응) | 극단적이지만 현실적인 시장 상황에서 최대 2개 청산회원의 동시 부도를 감당할 수 있는 충분한 재원을 CCP가 보유하도록 요구하는 CPMI-IOSCO 기준이다. | CPMI-IOSCO 기준; KRX: 유사 기준 적용 |
+| Cross-Guaranty Agreement | 교차보증협정 | 계열 CCP 간(예: NSCC-FICC-DTC-OCC) 증거금 및 손해배상공동기금 자원을 교차 적용하여 복수 CCP에 공통된 부도 회원의 손실을 보전하는 약정이다. | NSCC-FICC-DTC-OCC 간 |
+| Default Fund (DF) | 공동기금 (손해배상공동기금) | 청산회원이 출연하여 회원 부도 시 손실을 보전하기 위한 기금이다. | KRX: 손해배상공동기금 |
+| Default Waterfall | 손실부담순서 (부도 처리 체계) | 청산회원 부도로 인한 손실을 보전하기 위해 재원을 사용하는 순서이다. | KRX: 청산기금 운용순서 |
+| DTCC | DTCC (미국예탁청산회사) | Depository Trust & Clearing Corporation으로 DTC(예탁/결제), NSCC(주식 청산), FICC(채권 청산)의 지주회사이다. 사용자 소유 및 업계 거버넌스 체제이며, 연간 약 3.7경 달러의 증권거래를 처리한다. 도드-프랭크 Title VIII에 따라 SIFMU로 지정되어 있다. | DTC, NSCC, FICC 지주회사 |
+| DTC | DTC (예탁신탁회사) | Depository Trust Company로 DTCC의 CSD 자회사이다. 100조 달러 이상의 수탁자산을 보유하며, 미국 주식, 회사채, 지방채에 대한 장부기입 결제를 제공한다. | DTCC 자회사; 미국 CSD |
+| Eurex Clearing | Eurex Clearing (유렉스 청산) | 유럽 최대 CCP인 Eurex Clearing AG로 Deutsche Borse Group의 자회사이다. EMIR 인가(2014년)를 받았으며, Prisma 증거금 방법론을 사용한다. 상장파생, OTC IRS, 레포(GC Pooling), 증권대차를 청산하며, 22개국 약 200개 청산회원이 참여한다. | 유럽 최대 CCP; Prisma 증거금 방법론 |
+| Euronext Clearing | Euronext Clearing (유로넥스트 청산) | Euronext의 중앙청산소(구 CC&G / Cassa di Compensazione e Garanzia)로 로마에 소재한다. 2024년 LCH SA를 대체하여 모든 Euronext 금융파생시장으로 확대되었다. | 구 CC&G; 로마 소재 |
+| EWMA | EWMA (지수가중이동평균) | 과거 관찰치에 지수적으로 감소하는 가중치를 부여하여 변동성을 추정하는 통계 기법이다. 증거금 모형에서 시간 가변적 변동성을 포착하기 위해 일반적으로 사용된다. | 증거금 모형의 변동성 추정 |
+| FICC | FICC (채권청산회사) | Fixed Income Clearing Corporation으로 DTCC 자회사이며, 미국 국채(GSD)와 MBS(MBSD)의 CCP 청산을 제공한다. GSD는 최대 일일 약 13조 달러의 거래를 처리한다. | DTCC 자회사; 미국 국채/MBS 청산 |
+| Filtered Historical Simulation (FHS) | 필터링 역사적 시뮬레이션 (FHS) | 역사적 데이터에 변동성 필터링을 적용한 VaR 추정 기법이다. Eurex Clearing Prisma의 핵심 방법론으로, 750개 필터링 역사적 시나리오와 250개 스트레스 시나리오를 사용한다. | Eurex Prisma 핵심; 750 필터링 + 250 스트레스 시나리오 |
+| GC Pooling | GC Pooling (일반담보 레포) | Eurex Repo의 익명, CCP 청산 레포 서비스로 표준화된 담보 바스켓을 사용한다. Eurex Clearing을 CCP로 하는 효율적인 담보부 자금조달을 가능하게 하며, 2025년 기록 거래량 4,060억 유로를 달성하였다. | Eurex Repo 익명 CCP 청산 레포 서비스 |
+| General Clearing Member (GCM) | 총괄청산회원 | 자기 및 타 시장참가자를 대신하여 거래를 청산할 수 있는 권한을 부여받은 청산회원이다. | |
+| Haircut | 담보가치 할인 (헤어컷) | 증거금으로 제출된 담보(증권, 비자국통화 현금)의 시장가치에서 청산 시 잠재적 손실을 반영하여 적용하는 차감률이다. CCP는 자산유형, 신용등급, 유동성에 따라 헤어컷 기준을 설정한다. | KRX: 대용가 할인율 적용 |
+| Individual Segregated Account (ISA) | 개별분리계좌 (ISA) | 청산회원의 고객 포지션과 담보가 CCP에서 별도로 관리되는 계좌 구조로, 청산회원 부도 시 완전한 포터빌리티와 보호를 제공한다. | 완전 포터빌리티 제공 |
+| Initial Margin (IM) | 개시증거금 | CCP가 잠재적 미래 익스포저를 보전하기 위해 청산회원으로부터 징수하는 담보이다. | KRX: 위탁증거금 / 거래증거금 |
+| Interoperability | 상호운용성 | 둘 이상의 CCP가 링크를 설정하여 서로 다른 CCP의 참가자가 동일 거래소에서 체결된 거래를 청산할 수 있도록 하는 체계이다. EMIR 제51조에 의해 규제되며, 유럽 현물주식에서 시행 중이다(Cboe Clear Europe, LCH, EuroCCP, SIX x-clear 등). | EMIR 제51조; 유럽 현물주식에서 시행 (Cboe Clear Europe, LCH, EuroCCP, SIX x-clear) |
+| Joint Compensation Fund (손해배상공동기금) | 손해배상공동기금 | KRX 파생상품 청산을 위한 상호화된 손해배상 기금이다. 청산회원의 고정 + 변동 모델에 따른 출연금으로 구성되며, 규모는 약 KRW 1,000억(~7,500만 달러)으로 추정된다. 부도 회원의 증거금과 청산예탁금이 소진된 후 사용된다. | KRX 파생 손해배상기금; 약 KRW 1,000억 |
+| LCH | LCH (런던청산소) | LSEG가 82.61% 소유한 다자산 CCP이다. LCH Ltd(런던, Bank of England 규제)와 LCH SA(파리, ACPR/Banque de France 규제)로 운영되며, OTC 파생, 레포, 채권, FX, 주식, 상장파생을 청산한다. | LSEG 82.61% 소유; OTC 파생, 레포, 채권, FX, 주식, 상장파생 청산 |
+| Legal Entity Identifier (LEI) | 법인식별기호 (LEI) | 금융거래에 참여하는 법인을 고유하게 식별하는 20자 영숫자 코드이다. EMIR, 도드-프랭크 등에 따라 파생거래 보고 시 전세계적으로 의무화되어 있으며, GLEIF 산하 지역운영기관(LOU)이 발급한다. | EMIR, 도드-프랭크 등에 따라 파생거래 보고 시 의무; GLEIF 관할 |
+| Lending CCP | 대차거래 CCP | Eurex Clearing의 증권대차 서비스로 CCP를 개입시켜 증권대차시장의 거래상대방 위험을 감소시킨다. | Eurex Clearing 증권대차 서비스 |
+| Liquidity Add-on | 유동성 추가 증거금 | 비유동시장에서 부도 회원의 포트폴리오 청산에 따른 비용과 위험을 반영하기 위해 CCP가 부과하는 추가 증거금 구성요소이다. 매수·매도 호가 스프레드, 시장 깊이, 포지션 집중도를 반영한다. | 비유동시장 청산 비용 반영 |
+| Loss Allocation | 손실배분 | CCP가 부도폭포를 초과하는 미충당 손실을 생존 청산회원에게 배분하는 절차이다. VMGH, 추가현금납입, 강제배분, 부분거래종결 등의 방법이 있으며, CCP 규정집 및 EU CCP RRR에 의해 규율된다. | KRX: 손해배상공동기금 규정 |
+| Margin Period of Risk (MPOR) | 마진청산기간 (MPOR) | CCP가 부도 회원의 포지션 청산에 소요되는 것으로 가정하는 기간이다. 거래소파생은 통상 2일, OTC 파생은 5일, EMIR에 따른 고객 포지션은 최대 10일이며, 개시증거금 수준에 직접 영향을 미친다. | 거래소파생 2일, OTC파생 5일, 고객포지션 최대 10일 (EMIR) |
+| Multilateral Netting | 다자간차감 | 복수 당사자 간 의무를 상계하여 각 참가자에 대해 단일 순의무를 산출하는 절차이다. | KRX: 다자간차감결제 |
+| Netting Efficiency | 차감효율 | 다자간 차감을 통해 총결제의무가 감소하는 비율이다. 예컨대 NSCC는 약 98%, Cboe Clear Europe는 2024년 70.29%를 달성하였다. 차감효율이 높을수록 결제위험과 유동성 소요가 감소한다. | NSCC ~98%, Cboe Clear Europe 70.29% (2024) |
+| Novation | 채무인수 (경개) | CCP가 거래 양측의 거래상대방으로 스스로를 대체하는 절차이다. | |
+| NSCC | NSCC (전미증권청산회사) | National Securities Clearing Corporation으로 DTCC 자회사이며, 사실상 모든 미국 주식, 회사채, ETF 거래에 대해 CCP 청산, 차감, 리스크 관리를 제공한다. 약 98%의 차감효율을 달성한다. | DTCC 자회사; 미국 주식/ETF ~98% 차감효율 |
+| OCC | OCC (옵션청산회사) | Options Clearing Corporation으로 1973년 설립된 세계 최대 주식파생 CCP이다. Cboe, NYSE, NASDAQ 거래소가 공동 소유하며, 주식옵션, 지수옵션, 선물, 증권대차를 청산한다. SIFMU로 지정되어 있으며, STANS 증거금 방법론을 사용한다. 2024년 122억 계약을 청산하였다. | 세계 최대 주식파생 CCP; STANS 방법론 |
+| Open Offer | 공개청약/개입방식 | 매매체결/매칭 시점에 원래 거래상대방 간 쌍무계약이 성립하지 않고 CCP가 즉시 각 측의 거래상대방이 되는 CCP 개입 방식이다. Cboe Clear Europe, Muqassa, LCH가 사용하며, 쌍무계약이 잠시 존재한 후 대체되는 경개(novation)와 대비된다. | CCP가 매매체결 시점에 즉시 거래상대방이 되는 방식; 경개(novation)와 대비 |
+| PAIRS | PAIRS (금리시나리오 포트폴리오 접근법) | Portfolio Approach to Interest Rate Scenarios로 LCH SwapClear의 증거금 방법론이다. 99.7% 신뢰수준의 Expected Shortfall, 5일 보유기간, GFC 플로어 시나리오를 포함한 10년 역사적 관찰기간을 사용한다. | LCH SwapClear 증거금 방법론 |
+| Partial Tear-Up | 부분거래종결 (부분 Tear-Up) | 부도 및/또는 비부도 회원의 일부(전부가 아닌) 계약을 종결하여 미충당 손실을 배분하고 매칭북을 복원하는 CCP 회복 수단이다. | CCP 회복 수단; 일부 계약만 종결 |
+| PFMI | PFMI (금융시장인프라에 관한 원칙) | CPMI-IOSCO가 2012년 발표한 지급, 청산, 결제 시스템에 대한 국제기준이다. 거버넌스, 리스크 관리, 결제, 투명성을 포괄하는 24개 원칙으로 구성된다. | CPMI-IOSCO 2012년 발표; 24개 원칙 |
+| Portfolio Margining | 포트폴리오 증거금 | 개별 포지션이 아닌 포트폴리오 단위로 위험을 평가하여 상관관계 있는 상품 간 상계를 인정하는 증거금 방법론이다. Eurex Clearing(Prisma), OCC(STANS), CME(SPAN 2), LCH(PAIRS)가 사용하며, 상품별 증거금 대비 증거금 소요를 크게 절감할 수 있다. | Eurex(Prisma), OCC(STANS), CME(SPAN 2), LCH(PAIRS) |
+| Porting | 이관 (포터빌리티) | 부도 청산회원의 고객 포지션과 관련 담보를 대안 청산회원에게 이전하여 고객의 시장 익스포저 연속성을 보장하는 절차이다. 계좌 분리 모델에 따라 이관 가능성이 달라진다(ISA는 완전 이관, 혼장계좌/LSOC는 부분 이관). | ISA는 완전 이관, 혼장계좌는 부분 이관 |
+| Prisma | Prisma (Eurex 포트폴리오 증거금) | Eurex Clearing의 포트폴리오 기반 증거금 방법론(Portfolio-based Risk management by Simulating scenario Matrices and Assessing market risks)이다. FHS 기반 99%/99.5% 신뢰수준의 Expected Shortfall을 사용하며, 상장-OTC 상품 간 교차증거금으로 최대 70% 절감이 가능하다. | FHS 기반 Expected Shortfall 99%/99.5%; 상장-OTC 교차증거금 최대 70% 절감 |
+| Public Quantitative Disclosures (PQD) | 공개정량공시 (PQD) | CPMI-IOSCO 권고에 따른 CCP의 표준화된 분기 및 연간 공시이다. 증거금 데이터, 손해배상공동기금 규모, 스트레스테스트 결과, 사후검증 커버리지 등을 포함한다. | CPMI-IOSCO 권고; 분기/연간 공시 |
+| Qualifying CCP (QCCP) | 적격중앙청산소 | 국제 규제기준을 충족하는 것으로 인정된 CCP로, 회원에게 낮은 자본 요건이 적용된다. | KRX: QCCP 인정 |
+| Recovery and Resolution | 회복 및 정리 | CCP의 생존력을 회복(recovery)하거나, 회복이 실패할 경우 핵심 청산기능을 유지하면서 질서있게 정리(resolution)하는 프레임워크이다. EU CCP RRR, FSB 핵심속성, CPMI-IOSCO 회복지침에 의해 규율된다. 회복 수단에는 VMGH, 추가현금납입, 부분거래종결이 있고, 정리 수단에는 가교 CCP, 강제 종결, 공적 지원이 있다. | KRX: 위기관리계획 수립 |
+| Settlement Facilitation Deposit (결제촉진담보금) | 결제촉진담보금 | 결제 완료를 촉진하기 위해 KRX 청산회원이 예탁하는 담보이다. 적격 담보로는 현금, 국채, 통화안정증권이 있다. | KRX 청산 담보 항목 |
+| Skin in the Game (SITG) | CCP 자기자본 출연분 | 청산회원 출연분과 구별되는 CCP 자체 재원으로, 부도폭포에 출연된다. | |
+| SIX x-clear | SIX x-clear (SIX 청산소) | SIX Group의 주식 및 기타 상품 CCP이다. BME Clearing과 마드리드 소재 단일 다자산 CCP로의 통합이 예정되어 있다. | BME Clearing과 통합 예정 (마드리드 소재) |
+| SPAN | SPAN (Standard Portfolio Analysis of Risk) | CME의 포트폴리오 기반 증거금 방법론으로, 가격 및 변동성 변화를 분석하는 16개 리스크 시나리오를 사용한다. 전세계적으로 광범위하게 채택되었으며, SPAN 2(HVaR + Expected Shortfall 기반)로 대체되고 있다. | CME 증거금 방법론; 16개 리스크 시나리오; 전세계 50+ 거래소 채택 |
+| SPAN 2 | SPAN 2 (차세대 CME 증거금) | 기존 SPAN을 대체하는 CME의 차세대 증거금 방법론이다. Historical Value-at-Risk와 Expected Shortfall을 사용하며, 전체 포트폴리오 재평가 및 향상된 상품간 상계를 제공한다. 2023-2025년 단계적으로 도입 중이다. | HVaR + Expected Shortfall 기반; 2023-2025 단계적 도입 |
+| STANS | STANS (이론분석 및 수치시뮬레이션 체계) | System for Theoretical Analysis and Numerical Simulations로 OCC의 몬테카를로 기반 증거금 방법론이다. 10,000개 이상의 시나리오를 활용한 전체 포트폴리오 시뮬레이션, 99% 신뢰수준의 Expected Shortfall, 2일 보유기간을 사용한다. | OCC 몬테카를로 기반; 10,000+ 시나리오, ES 99% |
+| Stress Testing | 스트레스테스트 | 최대 청산회원의 동시 부도(Cover 2)를 포함한 극단적이지만 현실적인 시장 시나리오 하에서 CCP의 재무 복원력을 평가하는 절차이다. PFMI, EMIR, 도드-프랭크에 따라 최소 일일 실시가 요구되며, 결과를 규제기관에 보고해야 한다. | KRX: 정기 스트레스테스트 실시 |
+| Systemically Important Financial Market Utility (SIFMU) | 시스템적으로 중요한 금융시장인프라 | 도드-프랭크 Title VIII에 따라 실패 시 시스템 리스크를 야기할 수 있는 금융시장인프라에 부여하는 지정이다. DTCC(DTC, NSCC, FICC), OCC, CME Clearing, ICE Clear Credit이 SIFMU로 지정되어 있다. | 도드-프랭크 Title VIII; DTCC, OCC, CME, ICE Clear Credit |
+| Tear-Up | 거래종결 (Tear-Up) | 매칭북을 복원하고 손실을 배분하기 위해 부도 및 비부도 계약을 강제 종결하는 CCP 회복 또는 정리 수단이다. 특정 포지션만 대상으로 하는 부분 종결과 특정 청산 서비스의 전체 계약을 종결하는 전체 종결로 구분된다. | CCP 회복/정리 수단; 부분 종결과 전체 종결 구분 |
+| Trade Repository (TR) | 거래정보저장소 (TR) | OTC 파생거래 기록의 전자 데이터베이스를 유지하는 중앙등록소이다. EMIR, 도드-프랭크 등 G20 개혁에 따라 투명성 제고 및 시스템 리스크의 규제 모니터링을 위해 의무화되었다. DTCC GTR, Regis-TR, UnaVista 등이 있다. | OTC 파생거래 중앙등록소; EMIR, 도드-프랭크 등 G20 개혁에 따라 의무화 |
+| Variation Margin (VM) | 변동증거금 | 미결제 포지션의 현재 시장가치를 반영하기 위한 일일(또는 장중) 결제금이다. | KRX: 일일정산차금 |
+| Variation Margin Gain Haircutting (VMGH) | 변동증거금이익삭감 (VMGH) | 부도폭포를 초과하는 손실을 보전하기 위해 평가이익이 있는 회원에 대한 변동증거금 지급을 삭감하는 CCP 회복 수단이다. | CCP 회복 수단; 평가이익 지급 삭감 |
+| Wrong-Way Risk | 부정적 상관위험 (Wrong-Way Risk) | 청산회원의 CCP에 대한 익스포저가 동 회원의 신용도 악화와 동시에 증가하는 위험이다. 일반적 부정적 상관위험은 익스포저와 거래상대방 신용 간 상관관계에서 발생하며, 특정 부정적 상관위험은 익스포저가 거래상대방에 직접 연결된 경우(예: 자사 증권을 담보로 제출) 발생한다. | 일반적/특정 WWR로 구분 |
+
+## 결제 (Settlement)
+
+| English | Korean | 정의 (Definition) | KRX 참고사항 |
+|---------|--------|-------------------|-------------|
+| BIS DVP Model 1 | BIS DVP 모델 1 (총액-총액 결제) | 총액-총액 결제 방식으로, 증권과 대금 모두 건별(총액) 기준으로 동시에 결제된다. 가장 강력한 결제 보호를 제공한다. T2S, Clearstream Europe, Euroclear Bank(Bridge)에서 사용한다. | T2S, Clearstream, Euroclear Bank |
+| BIS DVP Model 2 | BIS DVP 모델 2 (총액증권-차감현금) | 총액증권-차감현금 결제 방식으로, 증권은 장중 건별(총액)로 결제하고 현금은 장 종료 시 단일 차감 금액으로 결제한다. | 일부 CSD 국채 결제 |
+| BIS DVP Model 3 | BIS DVP 모델 3 (차감-차감 결제) | 차감-차감 결제 방식으로, 증권과 대금의 채무를 모두 차감하여 최종 순액을 동시에 이전한다. NSCC/DTC, HKSCC(CCASS CNS), CDP(싱가포르)에서 사용한다. | NSCC/DTC, HKSCC, CDP |
+| Book-Entry | 장부기재 (계좌대체) | 실물 증서 없이 증권의 소유권을 전자적으로 기록하는 방식이다. CSD 또는 수탁기관의 장부에서 한 계좌를 차기하고 다른 계좌를 대기하여 이전한다. | |
+| Buy-in | 매수보상 (바이인) | 원래 매도자가 결제예정일 이후 일정 기간 내에 증권을 인도하지 못할 경우, 매수자(또는 CCP)가 공개시장에서 해당 증권을 매수하도록 하는 메커니즘이다. 의무적 또는 자발적으로 구분되며, 결제규율 도구로 기능한다. | KRX: 매수보상 제도 운영 |
+| Cash Penalty | 현금 과징금 (결제불이행 벌금) | 결제예정일에 결제하지 못한 참가자에게 부과하는 금전적 제재이다. EU에서 CSDR 결제규율 제도에 따라 2022년 2월부터 시행되며, 주식·채권·SME 성장시장별로 제재율이 다르다. | CSDR 결제규율 제도에 따라 2022년 2월부터 EU 시행; 주식/채권/SME 성장시장별 차등 |
+| CCASS | CCASS (중앙청산결제시스템) | HKSCC의 홍콩 증권 통합 청산·결제·예탁·명의관리 플랫폼이다. 1992년 개시되었으며 CNS 차감, 분리매매, Stock Connect, 기업행위를 지원한다. | HKSCC 홍콩 증권 통합 플랫폼 |
+| Central Securities Depository (CSD) | 중앙예탁기관 | 증권을 비실물 형태로 보관하고 장부기재를 통해 증권 이전을 가능하게 하는 기관이다. | 한국예탁결제원 (KSD) |
+| CHESS | CHESS (전자결제 등록시스템) | ASX의 호주 주식 전자결제 및 하위등록 시스템으로, 1996년에 개시되었다. DLT 교체 시도가 2022년 중단된 후 TCS 기반으로 재구축이 진행 중이다. | ASX 주식 결제; DLT 교체 중단, TCS 기반 재구축 진행 |
+| Delivery versus Payment (DVP) | 증권과대금의 동시결제 (DVP) | 증권의 인도와 대금의 지급이 동시에 이루어지도록 보장하는 결제 메커니즘이다. | KSD: DVP 방식 적용 |
+| Dematerialization | 무권화 (비실물화) | 실물 증권 증서를 완전히 폐지하고 CSD에서 전자 장부기재 기록으로 대체하는 것이다. | |
+| Iberclear | Iberclear (스페인 CSD) | 스페인의 주식 및 채권 중앙예탁기관으로 BME 그룹의 자회사이다. 2017년에 TARGET2-Securities(T2S) 플랫폼으로 이전하였다. | BME 자회사; T2S 이전 (2017) |
+| Immobilization | 부동화 (실물집중예탁) | 실물 증권 증서를 중앙예탁기관(CSD)에 집중 예탁하고 이후의 이전을 장부기재로 기록하는 방식으로, 실물 증서 자체를 폐지하지는 않는다. 완전한 무권화와 대비된다. | |
+| International CSD (ICSD) | 국제예탁기관 | 국제증권 및 다양한 국내증권의 거래를 결제하는 CSD이다(예: Euroclear, Clearstream). | Euroclear, Clearstream |
+| JASDEC | JASDEC (일본증권예탁센터) | 일본의 주식 및 사채 중앙예탁기관이다. 주식, 투자신탁, 사채, CP의 장부기재 이전 서비스를 제공하며, 사채등록이전법에 따라 운영된다. | 일본 CSD; 주식, 사채, CP 등 |
+| Mandatory Buy-in | 의무적 매수보상 | 원래 매도자가 결제예정일 이후 일정 기간 내에 인도하지 못할 경우 매수자가 공개시장에서 매수하도록 의무화하는 메커니즘이다. CSDR에서 제안되었으나 EU에서 유예되었다. | CSDR 제안 후 EU에서 유예 |
+| Monte Titoli | Monte Titoli (이탈리아 CSD) | 이탈리아의 주식 및 기타 증권 CSD이다. 2021년 Borsa Italiana 인수와 함께 Euronext의 자회사가 되었다. | Euronext 자회사 |
+| Omnibus Account | 총괄계좌 (혼장계좌) | CSD에 보유된 단일 계좌로, 복수 최종고객의 증권을 포함한다. | |
+| Segregated Account | 분리보관계좌 (개별계좌) | 각 고객의 증권을 개별적으로 분리하여 보관하는 계좌 구조이다. | |
+| Settlement Cycle | 결제주기 | 매매일(T)로부터 결제일까지의 기간이다(예: T+2). | KRX: T+2 (주식) |
+| Settlement Discipline Regime (SDR) | 결제규율 제도 (SDR) | CSDR 조항으로, 결제예정일에 결제하지 못한 참가자에게 현금 과징금을 부과한다. 의무적 매수보상은 당초 제안되었으나 유예되었다. | CSDR 조항; 현금 과징금 부과, 의무적 매수보상 유예 |
+| Settlement Finality | 결제완결성 | 증권과 대금의 이전이 취소 불가능하고 무조건적이 되는 시점이다. | |
+| Settlement Finality Directive (SFD) | 결제완결성 지침 | EU 지침 98/26/EC로, 지정된 결제 시스템에서 결제의 완결성에 대한 법적 확실성을 제공하여 도산 시에도 이전이 번복되지 않도록 보장한다. | EU 지침 98/26/EC |
+| Split Settlement (분할결제) | 분할결제 | 2021년 도입된 KSD의 결제시스템 혁신으로, 결제를 소단위로 분할하여 결제 집중 위험을 완화한다. 단위는 KRW 100억(2021년) → 50억(2024년) → 10억(2026년 4월)으로 단계적으로 축소되었다. | KSD: 2021년 도입; 단위 10억→50억→100억 단계 축소 |
+| Straight-Through Processing (STP) | 자동일괄처리 (STP) | 수작업 개입 없이 매매의 처음부터 끝까지 자동으로 처리하는 것이다. | |
+| TARGET2-Securities (T2S) | T2S (범유럽 증권결제 플랫폼) | ECB가 운영하는 유로시스템 플랫폼으로, 중앙은행화폐로 범유럽 증권결제를 위한 단일 플랫폼을 제공한다. Iberclear, Monte Titoli 및 기타 유럽 CSD가 사용한다. | ECB 운영; 중앙은행화폐 결제; Iberclear, Monte Titoli 등 사용; KRX: 참고 벤치마크 |
+| Trade Date Affirmation | 거래일 확인 (매매일 확약) | 매매일 당일에 거래상대방 간 거래 세부사항을 확인하는 절차로, T+1 결제에 필수적이다. DTCC의 CTM 플랫폼이 당일 확인을 목표로 한다. | T+1 결제에 필수; DTCC CTM 플랫폼 |
+
+## 기술 (Technology)
+
+| English | Korean | 정의 (Definition) | KRX 참고사항 |
+|---------|--------|-------------------|-------------|
+| arrowhead | arrowhead (도쿄증권거래소 매매시스템) | Fujitsu와 공동 개발한 JPX/TSE의 핵심 매매시스템이다. 4세대가 2024년 11월 출시되었으며, 주문 응답 지연시간은 약 0.2ms이다. | 4세대 2024년 11월; ~0.2ms 지연 |
+| arrownet | arrownet (JPX 전용 고속네트워크) | 시장참가자를 매매시스템 및 코로케이션 시설에 연결하는 JPX의 전용 고속네트워크이다. | |
+| ASX Trade | ASX Trade (현물주식 매매 플랫폼) | Nasdaq OMX Genium INET 기술을 기반으로 한 ASX의 현물주식 매매 플랫폼이다. 2010년 SEATS/ITS를 대체하였다. | Nasdaq Genium INET 기반 |
+| ASX Trade24 | ASX Trade24 (파생 매매 플랫폼) | ASX 24의 선물 및 옵션 매매 플랫폼의 구 명칭이다. 2016년 NTP(New Trading Platform)로 업그레이드되었으며, 2026년 3월 LSEG와 H1 2028 가동을 목표로 차세대 현대화 파트너십이 발표되었다. | NTP로 업그레이드 (2016) |
+| Australian Liquidity Centre (ALC) | ALC (호주 유동성센터) | 시드니 Gore Hill Technology Park에 위치한 ASX의 전용 데이터센터 및 코로케이션 시설이다. 2013년 출시되었으며, 100개 이상의 금융기관 및 서비스 제공업체가 입주해 있다. ASX Trade 및 ASX 24 매칭엔진에 최저지연 접속을 제공한다. | ASX 코로케이션 시설 |
+| AutoCert+ | AutoCert+ (자동인증 도구) | Globex 접속을 위해 iLink 3을 사용하는 고객 시스템에 대한 CME Group의 필수 자동인증 도구이다. | CME iLink 3 접속 필수 |
+| Binary Order Entry (BOE) | BOE (바이너리 주문입력) | Cboe의 네이티브 바이너리 프로토콜로 고성능 주문 입력에 사용된다. 현재 BOE v2/v3 버전이 FIX보다 낮은 지연시간을 제공한다. | Cboe 네이티브 프로토콜 |
+| BOLT Plus | BOLT Plus (BSE 매매 플랫폼) | Deutsche Borse의 T7 아키텍처에 기반한 BSE(Bombay Stock Exchange)의 매매 플랫폼이다. 2013년 11월 주식파생에 출시되었고, 2014년 4월 주식 현물 부문으로 확대되었다. | Deutsche Borse T7 기반 |
+| Bursa Trade Securities 2 (BTS2) | BTS2 (부르사 증권매매 플랫폼) | Nasdaq X-Stream INET 기술 기반의 Bursa Malaysia 증권매매 플랫폼이다. 2013년 12월 NYSE Technologies NSC 엔진을 대체하여 출시되었다. | Nasdaq X-Stream INET 기반 |
+| Canton Network | Canton 네트워크 | 기관 자산을 위한 프라이버시 지원 상호운용 블록체인 네트워크이다. DTCC가 주요 금융기관과 협력하여 Canton Network 상에서 DTC 수탁 미국 국채의 토큰화를 개발 중이다. SEC가 2025년 12월 DTC 참여를 승인하는 No-Action Letter를 발행하였으며, MVP는 H1 2026에 예정되어 있다. | DTCC DLT 기반 토큰화 |
+| Cboe Titanium | Cboe Titanium (매매기술 플랫폼) | 2017년 BATS 인수 후 BATS 기술에서 발전한 Cboe의 독자 매매기술 플랫폼이다. 모든 Cboe 미국 주식 및 옵션 거래소를 구동한다. | BATS 기술 진화 |
+| Co-location | 코로케이션 (전산센터 공동입주) | 거래소의 매칭엔진과 동일한 데이터센터에 매매 인프라를 호스팅하는 것이다. | KRX: 부산 코로케이션 센터 |
+| D7 | D7 (영란은행 디지털증권예탁) | Bank of England의 디지털증권예탁소 프로그램이다. DLT 기술을 활용하여 영국 국채(gilts)의 디지털증권예탁소를 구축하는 것을 목표로 하며, 영국의 포스트트레이드 인프라 현대화 계획의 일환이다. | DLT 기반 길트 예탁 |
+| DCASS | DCASS (파생청산결제시스템) | Derivatives Clearing and Settlement System으로 HKCC/SEOCH의 청산 플랫폼이다. 2013년 Nasdaq Genium INET으로 이전되었으며, 증거금 계산, 포지션 관리, 결제를 처리한다. | HKCC/SEOCH 청산 플랫폼 |
+| EMDI | EMDI (Eurex 향상된 시세 인터페이스) | Eurex의 Enhanced Market Data Interface로, 모든 호가장 변경 및 장내 거래를 멀티캐스트를 통해 비집약적으로 배포하는 피드이다. | 비집약 호가장 변경 멀티캐스트 |
+| EOBI | EOBI (Eurex 향상된 호가장 인터페이스) | Eurex의 Enhanced Order Book Interface로, 개별 주문 상세정보를 포함한 전체 호가장(L3) 데이터를 제공한다. 코로케이션 참가자를 위한 초저지연 인터페이스이다. | L3 개별주문 데이터; 초저지연 |
+| Eqlipse | Eqlipse (나스닥 4세대 플랫폼) | 2024년 출시된 NASDAQ의 4세대 매매장 기술 플랫폼으로, 이전 세대 Nasdaq INET의 후속이다. | 2024년 출시 |
+| Equinox | Equinox (SIX 차세대 매매 플랫폼) | SIX Swiss Exchange의 차세대 매매 플랫폼이다. 주식 부문 H1 2027 가동을 목표로 하며, 현재 X-stream INET(SWXess) 시스템을 대체할 예정이다. | H1 2027 예정 |
+| EXTURE | EXTURE (KRX 1세대 통합매매시스템) | 2009년 3월 23일 출시된 KRX의 최초 통합 전자매매 플랫폼이다. KSE·KOSDAQ·KOFEX 3개 레거시 시스템을 통합하였으며, 약 20ms 지연시간, 초당 250건 체결, 일 4,000만 호가 처리 용량을 보유하였다. 2014년 EXTURE+로 대체되었다. | KRX; 2009년~2014년 |
+| EXTURE+ | EXTURE+ (KRX 2세대 통합매매시스템) | 2014년 출시된 KRX의 2세대 통합매매 플랫폼이다. 한국 자본시장 최초 Linux x86 배포; 최악 지연시간 70μs 이하; 초당 20,000건 이상 매칭; 100,000건 이상 처리량; FIX/FAST 프로토콜 및 DMA·알고리즘 매매 지원 도입. 2023년 Exture 3.0으로 대체되었다. | KRX; 2014년~2023년; 최초 Linux x86 |
+| Exture 3.0 | Exture 3.0 (KRX 3세대 통합플랫폼) | KRX의 현행 통합 매매·정보배포·청산·결제 플랫폼이다. 1단계: 2023년 1월(매매+정보배포), 2단계: 2023년 10월(청산·결제). EXTURE+ 대비 약 30% 지연시간 개선; 매칭엔진에서 전체 시스템으로 저지연 범위 확대; 유연한 다중 매칭 아키텍처. | KRX; 2023년~현재; KOSCOM 개발·운영 |
+| FAST Protocol | FAST 프로토콜 (FIX 스트리밍 압축 규약) | FIX Adapted for Streaming으로, 시세 데이터를 위한 데이터 압축 프로토콜이다. | |
+| FAST System (TWSE) | FAST (대만 전자매매시스템) | Fully Automated Securities Trading system으로 TWSE의 핵심 매매 플랫폼이다. 2세대(2014년)는 3ms 미만의 지연시간과 일일 2,000만 건의 처리 용량을 제공한다. | 2세대(2014) <3ms 지연 |
+| FIX Protocol | FIX 프로토콜 (금융정보교환 규약) | Financial Information eXchange로, 매매를 위한 표준 전자통신 프로토콜이다. | KRX: FIX 지원 |
+| FLEX (JPX) | FLEX (JPX 시세 프로토콜) | Full Line-speed Exchange로, Standard, MBO(Market by Order), MBO BC(Broadcast) 데이터 스트림을 제공하는 JPX의 시세 피드 프로토콜이다. | Standard, MBO, MBO BC |
+| FPGA | FPGA (현장프로그래머블게이트어레이) | Field-Programmable Gate Array로, 초저지연 매매에 사용되는 하드웨어이다. | |
+| FpML | FpML (금융상품마크업언어) | Financial products Markup Language로, OTC 파생상품의 전자거래 및 처리를 위한 XML 기반 개방형 표준이다. ISDA가 관리하며, 스왑, 옵션, 구조화 상품의 거래확인, 보고, 라이프사이클 관리에 광범위하게 사용된다. | OTC 파생 전자처리 표준; ISDA 관리 |
+| Genium INET | Genium INET (나스닥 매매기술) | HKEX(파생), SGX, ASX, SIX, Tadawul 등 전세계 다수 거래소에서 사용되는 Nasdaq의 매매기술 플랫폼이다. 서브밀리초 지연시간 매칭을 제공한다. | HKEX, SGX, ASX, SIX, Tadawul 등 |
+| GIFT Connect | GIFT Connect (SGX-NSE IX 상호접근) | SGX-NSE IX 상호시장접근 프로그램(2023년 7월 운영 개시)으로, 싱가포르를 통한 인도 파생상품의 국가간 매매를 가능하게 한다. | 2023년 7월~ |
+| Group Ticker Plant (GTP) | GTP (LSEG 통합시세 배포) | LSEG의 통합 시세 데이터 배포 시스템으로, 다수 거래소의 데이터를 표준화하고 지능형 조절(throttling)을 제공한다. | |
+| ICE Trading Platform | ICE 매매 플랫폼 | 모든 ICE 선물시장에 글로벌 연결을 제공하는 ICE의 독자 전자매매 플랫폼이다. 시카고(IFUS), 바실던/런던(IFEU), 마와(DR)에 데이터센터를 운영한다. | 시카고, 바실던/런던, 마와 데이터센터 |
+| Iris-ST | Iris-ST (SGX 차세대 증권매매엔진) | H2 2027 출시를 예정하고 있는 SGX의 차세대 증권매매엔진이다. | H2 2027 예정 |
+| ISO 15022 | ISO 15022 (증권메시지 표준) | SWIFT MT 메시지 형식을 사용하는 증권 메시지 국제표준이다. 증권결제, 기업행위, 수탁 메시지의 레거시 표준이며, ISO 20022으로 교체 중이다. | SWIFT MT 형식; ISO 20022으로 교체 중 |
+| ISO 20022 | ISO 20022 (금융데이터교환 표준) | 금융기관 간 전자 데이터 교환을 위한 국제표준이다. 풍부한 구조화 데이터를 갖춘 XML/ASN.1 기반 메시지를 사용하며, SWIFT(MT에서 MX로 전환), T2S, CDP Singapore 등에서 채택되었고, 지급결제 및 증권 인프라에서 점차 의무화되고 있다. | XML 기반; T2S, CDP 등 채택 |
+| ITCH Protocol | ITCH 프로토콜 (시장 데이터 피드) | NASDAQ 등에서 사용하는 전체 호가 심도(full depth-of-book) 데이터를 제공하는 직접 데이터 피드 프로토콜이다. | |
+| Matching Engine (ME) | 매매체결엔진 (매칭엔진) | 매수 및 매도 주문을 매칭하는 매매시스템의 핵심 구성요소이다. | KRX: Exture+ 매매체결시스템 |
+| KOSCOM (Korea Securities Computing Corporation) | KOSCOM (코스콤) | 한국의 금융IT 인프라 제공업체이다. KRX의 주요 기술 파트너로서 EXTURE·EXTURE+·Exture 3.0 매매 시스템을 개발·운영하며, STOCK-NET 전용 금융 네트워크를 통해 KRX 시장 데이터를 배포한다. | KRX 주요 기술 파트너 |
+| Millennium Advanced Platform (MAP) | MAP (밀레니엄 통합 플랫폼) | LSEG Technology의 다자산 통합 패키지로, Millennium Exchange, Surveillance, Post-Trade 모듈을 결합한다. 전세계 40개 이상 시장에 배포되어 있다. | LSEG 40+ 시장 배포 |
+| Millennium Exchange | Millennium Exchange (LSE 매매 플랫폼) | 2011년 출시된 LSE의 매매 플랫폼으로, 저지연 매칭을 위해 C++/Linux 기반으로 개발되었다. MillenniumIT(스리랑카)가 개발하였으며, JSE(2012) 등 전세계 40개 이상 금융시장에 배포되어 있다. | C++/Linux; MillenniumIT 개발 |
+| MillenniumIT | MillenniumIT (LSEG 기술 자회사) | 스리랑카 콜롬보 소재 LSEG 자회사이다. 1996년 Tony Weerasinghe가 설립하였으며, 2009년 LSEG가 1,800만 파운드에 인수하였다. Millennium Exchange 및 관련 매매기술을 개발한다. | 스리랑카 소재; 2009년 인수 |
+| MITCH Protocol | MITCH (LSE 시세 프로토콜) | LSE의 네이티브 시세 프로토콜로, UDP 멀티캐스트를 통해 실시간 Level 1 및 Level 2 데이터를 제공한다. | UDP 멀티캐스트 L1/L2 |
+| MoldUDP64 | MoldUDP64 (나스닥 전송 프로토콜) | NASDAQ의 시세 데이터 메시지 신뢰성 멀티캐스트 전송을 위한 전송 프로토콜이다. | |
+| NEAT / NEAT Plus | NEAT (NSE 전자매매시스템) | National Exchange for Automated Trading으로 NSE India의 자체 개발 매매시스템이다. 인도 최초의 화면 기반 전자매매 플랫폼(1994년 출시)이며, NEAT Plus는 주식, 파생, 통화, 상품 부문을 아우르는 통합 다시장 인터페이스를 제공한다. 현재 약 100마이크로초 지연시간에 초당 500~600만 건을 처리하며, 2026년 4월부터 나노초 수준 업그레이드(초당 1억 건 목표)가 예정되어 있다. | 인도 최초 전자매매 (1994); ~100μs 지연 |
+| NTP (ASX) | NTP (ASX 파생 매매 플랫폼) | 2016년 출시된 ASX의 ASX 24 업그레이드 파생 매매 플랫폼이다. 금리, 주가지수, 상품, 에너지, 환경 선물 및 옵션을 처리한다. 2026년 3월 LSEG와의 추가 현대화 파트너십이 발표되었다. | 2016년 출시; LSEG 현대화 예정 |
+| OAPI | OAPI (HKEX 개방형 API) | Open Application Programming Interface로 HKEX의 파생 매매 전용 API이며, HKATS에 대한 주문입력 및 시세 접속을 제공한다. | 파생 주문입력/시세 |
+| OMD-C | OMD-C (HKEX 증권시세 플랫폼) | HKEX의 Orion Market Data 증권시장 플랫폼으로, UDP/IP를 통한 바이너리 멀티캐스트 데이터 피드를 제공한다. | UDP/IP 바이너리 멀티캐스트 |
+| Optiq | Optiq (Euronext 매매 플랫폼) | 현물 및 파생시장을 위한 Euronext의 독자 매매 플랫폼이다. 모든 Euronext 시장(Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, Paris, Athens)에 배포되어 있으며, Borsa Italiana 이전은 3단계(2023-2024년)에 걸쳐 완료되었다. | 전 Euronext 시장 배포; Borsa Italiana 이전 완료 (2023-2024) |
+| Orion Trading Platform (OTP-C) | OTP-C (HKEX 증권매매 플랫폼) | 2018년 2월 출시된 HKEX의 현행 증권매매 플랫폼으로, 초당 60,000건의 주문 처리 용량을 지원한다. | 2018년 2월; 60,000 주문/초 |
+| OUCH Protocol | OUCH 프로토콜 (주문 입력 규약) | NASDAQ 및 기타 거래소에서 사용되는 간소화된 주문 입력 프로토콜이다. | |
+| Pillar | Pillar (NYSE 매매기술 플랫폼) | NYSE의 현대적 매매기술 플랫폼으로, 모든 NYSE 주식 및 옵션 거래소에 단일 통합 시스템을 제공한다. | NYSE 전 거래소 통합 |
+| PITCH Protocol | PITCH (Cboe 시세 프로토콜) | 멀티캐스트를 통해 전체 호가 심도(Level 3) 데이터를 제공하는 Cboe의 네이티브 시세 프로토콜이다. BATS에서 원래 개발되었다. | L3 멀티캐스트; BATS 원천 |
+| Project Ion | Project Ion (DTCC DLT 결제) | 미국 주식을 위한 DTCC의 DLT 기반 결제 플랫폼이다. 2022년 병렬 프로덕션으로 가동을 시작하여 일일 100,000건 이상의 주식거래를 처리하며, 기존 DTC 인프라와 병행하여 분산원장기술을 활용한 대안적 결제를 시연하고 있다. | 2022년 병렬 가동; 일 100,000+ 거래 |
+| SDNet | SDNet (HKEX 통신네트워크) | 참가자와 HKEX 시스템 간 연결을 제공하는 HKEX의 증권·파생 네트워크이다. SDNet/3이 최신 세대이다. | SDNet/3 최신 세대 |
+| SGX REACH | SGX REACH (증권매매 플랫폼) | Nasdaq 기술 기반의 SGX 증권매매 플랫폼이다. | Nasdaq 기반 |
+| SIBE | SIBE (스페인 전자매매시스템) | Sistema de Interconexion Bursatil Espanol로, 스페인 4개 증권거래소(Madrid, Barcelona, Bilbao, Valencia)를 연결하는 BME의 전자매매 플랫폼이다. 1995년 출시되었으며, 2012년 SIBE-Smart 업그레이드로 지연시간을 10배 이상 단축하였다. | BME 4개 거래소 연결; 1995년~ |
+| SIX Digital Exchange (SDX) | SDX (SIX 디지털자산거래소) | SIX Group의 완전 인가 디지털자산 거래소 및 CSD이다. 2019년 FINMA 인가를 받았고, 2021년 실거래 운영을 시작하였다. 세계 최초의 인가된 디지털증권 거래소이다. | FINMA 인가; 2021년 운영 개시 |
+| SoupBinTCP | SoupBinTCP (나스닥 TCP 전송) | NASDAQ 데이터 피드의 신뢰성 있는 세션 기반 TCP 전송을 위한 프레이밍 프로토콜이다. | |
+| STOCK-NET | STOCK-NET (코스콤 전용 금융네트워크) | KRX·증권사·선물사·KOFIA·기관투자자를 연결하는 KOSCOM의 전용 고속 금융 네트워크이다. 실시간 시장 데이터 배포 및 매매 연결을 담당한다. | KOSCOM 운영; KRX 시장 데이터 배포 전용망 |
+| SwissAtMid | SwissAtMid (SIX 다크풀) | 2018년 출시된 SIX Swiss Exchange의 비표시(다크) 유동성 풀로, 기관 대량주문에 대한 중간가 매칭을 제공한다. | 2018년~; 중간가 매칭 |
+| T7 | T7 (Deutsche Borse 매매 플랫폼) | Deutsche Borse Group의 고성능 매매 플랫폼이다. Xetra 주식(2017년 6월 출시) 및 Eurex 파생에 사용되며, BSE BOLT Plus 플랫폼의 기반이기도 하다. | Xetra 주식/Eurex 파생; BSE BOLT Plus 기반 |
+| Titan | Titan (SGX 파생매매 플랫폼) | Nasdaq 기술 기반의 SGX 파생매매 플랫폼으로, 100마이크로초 미만의 지연시간을 제공한다. | Nasdaq 기반; <100μs 지연 |
+| TMX Quantum XA | TMX Quantum XA (TMX 매매 플랫폼) | TMX Group의 독자 매매 플랫폼으로, 2013-2014년에 걸쳐 TSX, TSXV, TSX Alpha Exchange에 도입되었다. | TSX, TSXV, TSX Alpha (2013-2014) |
+| ToSTNeT | ToSTNeT (JPX 장외거래시스템) | JPX의 장외거래시스템(Tokyo Stock Exchange Trading NeTwork)으로, 사전 합의된 가격의 대량 및 바스켓 거래에 사용된다. | 대량/바스켓 거래 |
+| TradElect | TradElect (LSE 구 매매 플랫폼) | Microsoft .NET 기반으로 구축된 LSE의 이전 매매 플랫폼(2007-2011)이다. 지연시간 및 안정성 문제로 Millennium Exchange로 대체되었다. | .NET 기반; Millennium으로 교체 |
+| X-Stream INET | X-Stream INET (나스닥 매매기술) | 다수 거래소에 배포된 Nasdaq의 매매기술이다. Tadawul(2015), SIX Swiss Exchange(2012, SWXess 브랜드), Bursa Malaysia(2013)에서 사용 중이다. | Tadawul, SIX, Bursa Malaysia |
+| XDP | XDP (NYSE 시세 피드) | NYSE의 Exchange Data Publisher로, 실시간 호가 심도 데이터를 위한 저지연 시세 피드이다. | 저지연 호가장 데이터 |
+
+## 시장구분 (Market Segments & Boards)
+
+| English | Korean | 정의 (Definition) | KRX 참고사항 |
+|---------|--------|-------------------|-------------|
+| AIM (Alternative Investment Market) | AIM (대안투자시장) | LSE의 중소 및 신흥 기업을 위한 국제 성장시장이다. MiFID II에 따라 MTF로 분류되며, 최소 시가총액 요건이 없고 Nominated Adviser(Nomad)를 선임해야 한다. | LSE 성장시장; MiFID II MTF |
+| AltX (Alternative Exchange) | AltX (대안거래소) | JSE의 중소 고성장 기업을 위한 병행시장으로, 2003년에 개설되었다. Designated Adviser를 선임해야 한다. | JSE 중소기업 시장 |
+| BME Growth | BME Growth (BME 성장시장) | BME의 SME를 위한 다자간매매체결시설(구 Mercado Alternativo Bursatil / MAB)로, 2020년에 개명하였다. Registered Adviser(Asesor Registrado)를 선임해야 한다. | 구 MAB; MTF |
+| Catalist | Catalist (SGX 성장보드) | SGX의 스폰서 감독 방식 성장보드로, SME 및 고성장 스타트업을 대상으로 한다. SGX가 정한 정량적 상장요건은 없으며 Full Sponsor가 적합성을 판단한다. | 중소/스타트업; 스폰서 감독 |
+| ChiNext | 창업판 (创业板, ChiNext) | SZSE의 NASDAQ형 보드(创业板)로, 혁신적이고 고성장하는 기업을 대상으로 2009년 10월에 개설되었다. 2020년 8월부터 등록제 IPO를 시행하며 일일 가격제한은 ±20%이다. | SZSE; 등록제 (2020년~); ±20% 가격제한 |
+| Euronext Access / Access+ | Euronext Access / Access+ | Euronext의 스타트업 및 SME를 위한 입문 수준 MTF이다. Access+는 고성장 SME를 위한 특별 구획으로, Euronext Growth로의 진입 발판 역할을 한다. | 스타트업/SME MTF |
+| Euronext Growth | Euronext Growth (성장시장) | Euronext의 중소기업 성장시장으로(MiFID II에 따른 MTF), 전 Euronext 시장에서 운영된다. Listing Sponsor를 선임해야 한다. | MiFID II SME 성장시장 |
+| Euronext Growth Milan | Euronext Growth Milan | 구 AIM Italia로, Euronext 소유 하의 이탈리아 SME를 위한 MTF이다. Euronext Growth Advisor(구 Nomad)를 선임해야 한다. | 구 AIM Italia |
+| Euronext STAR Milan | Euronext STAR Milan | Euronext Milan 내 중형주 세그먼트로, 높은 투명성, 지배구조, 유동성 기준을 충족하는 기업이 대상이다. 약 61개 기업이 소속되어 있다. | 중형주 고투명성 세그먼트 |
+| First North Growth Market | First North (나스닥 북유럽 성장시장) | Nasdaq Nordic의 스웨덴, 핀란드, 덴마크, 아이슬란드 및 발트 3국의 중소/성장 기업을 위한 MTF이다. MiFID II에 따라 SME 성장시장으로 인가되었으며 Certified Adviser를 선임해야 한다. | MiFID II SME 성장시장 |
+| GEM (Growth Enterprise Market) | GEM (성장기업시장) | HKEX의 소형 고성장 기업을 위한 시장으로, Main Board보다 완화된 상장요건을 적용한다. | HKEX 소형 성장기업 |
+| KONEX (Korea New Exchange) | KONEX (코넥스) | 2013년 7월 KRX가 개설한 스타트업·중소기업 전용 3단계 시장이다. 상장요건이 가장 낮으며, 코스닥 상장 전 단계 기업을 대상으로 한다. 2024년 1월 기준 약 129개사 상장; 신규 상장 부진으로 존속가능성에 의문이 제기되고 있다. | KRX 3단계 시장; 2013년 7월 개설 |
+| KOSDAQ | KOSDAQ (코스닥) | 기술·벤처·중견기업을 위한 KRX의 성장시장으로, 1996년 개설되었다. 1,700개사 이상 상장; 한국의 NASDAQ에 해당한다. | KRX 성장시장; 1996년 개설 |
+| KOSPI (Korea Composite Stock Price Index) | KOSPI (코스피) | KRX의 메인보드 주식시장으로, 약 954개사가 상장된 대형 우량주 시장이다. 한국의 대표 주가지수 명칭이기도 하다. | KRX 대표 주식시장 |
+| Latibex | Latibex (중남미 증권시장) | BME의 중남미 증권을 유로화로 거래하는 국제시장으로, 2001년에 개설되었다. 유럽 투자자에게 중남미 기업에 대한 접근을 제공한다. | BME; 유로화 거래 |
+| Nextrade (NXT) | Nextrade (넥스트레이드, NXT) | 한국 최초의 대안거래소로, 2025년 3월에 출시되었다. 12시간 거래 세션(08:00~20:00 KST)을 운영하며, KRX의 유일 증권거래소 독점을 종식시켰다. 2025년 7월 기준 30% 이상의 시장점유율을 달성하였다. | 한국 최초 ATS; 2025년 3월; 30%+ 시장점유율 (2025년 7월) |
+| Nomu (Parallel Market) | Nomu (병행시장) | 사우디거래소의 SME 상장을 위한 병행시장으로, 2017년 2월에 개설되었다. Main Market(TASI)보다 완화된 상장요건을 적용한다. 아랍어로 "성장"을 의미한다. | 사우디거래소 SME; "성장" 의미 |
+| NSE EMERGE | NSE EMERGE (SME 플랫폼) | NSE 인도의 SME IPO 및 유통시장 매매 플랫폼으로, 2012년에 개설되었다. | NSE 인도; 2012년~ |
+| Scale | Scale (Deutsche Borse 성장세그먼트) | Deutsche Borse의 Open Market(Freiverkehr) 내 중소기업 성장 세그먼트이다. Designated Sponsor를 선임해야 한다. | Open Market 내 |
+| Sparks | Sparks (SIX SME 세그먼트) | SIX Swiss Exchange의 SME 전용 세그먼트로 2021년 10월에 개설되었다. 시가총액 CHF 5억 미만의 기업을 대상으로 한다. | 2021년; 시가총액 CHF 5억 미만 |
+| STAR Market | 과창판 (科创板, STAR Market) | SSE의 과학기술혁신보드(科创板)로 2019년 6월에 개설되었다. 중국 최초로 등록제 IPO를 도입하였으며, 일일 가격제한은 ±20%이다. 신소재, 신에너지, 바이오의약, IT, 첨단장비, 환경기술에 중점을 둔다. | SSE; 등록제 최초 (2019년); ±20% 가격제한 |
+| TOKYO PRO Market | TOKYO PRO Market (전문투자자시장) | JPX/TSE의 전문투자자시장으로 2009년에 개설되었다. 적격기관투자자를 대상으로 유연한 상장요건을 적용하며, J-Adviser를 선임해야 한다. | JPX; J-Adviser 필요 |
+
+## 규제 (Regulation)
+
+| English | Korean | 정의 (Definition) | KRX 참고사항 |
+|---------|--------|-------------------|-------------|
+| Australian Securities and Investments Commission (ASIC) | ASIC (호주증권투자위원회) | 호주의 증권, 파생상품, 금융서비스에 대한 주요 시장행위 규제기관이다. | |
+| Autorite des marches financiers (Quebec) (AMF) | AMF (퀘벡금융시장감독원) | 퀘벡주의 금융시장 규제기관이다. 몬트리올거래소(MX) 및 CDCC의 주관 규제기관으로서, 퀘벡 파생상품법에 따라 인정거래소 및 자율규제기관(SRO) 지위를 부여한다. | 몬트리올거래소/CDCC 주관 규제 |
+| Best Execution | 최선집행의무 | 고객 주문을 가용한 가장 유리한 조건으로 체결할 의무이다. | 자본시장법 제68조의2 |
+| Bundesanstalt fur Finanzdienstleistungsaufsicht (BaFin) | BaFin (독일연방금융감독청) | 은행, 보험, 증권을 감독하는 독일의 연방금융감독청이다. | |
+| Canadian Investment Regulatory Organization (CIRO) | CIRO (캐나다투자규제기구) | 2023년 IIROC와 MFDA의 합병으로 설립된 캐나다의 전국 자율규제기관이다. 통합시장무결성규칙(UMIR)을 관리한다. | IIROC + MFDA 통합 (2023) |
+| Capital Market Authority (Saudi Arabia) (CMA) | CMA (사우디 자본시장청) | 2003년 자본시장법에 따라 설립된 사우디아라비아의 증권 규제기관이다. 외국인 투자자 단계적 자유화를 주관하였다. | |
+| CEA (Commodity Exchange Act) | 상품거래소법 (CEA) | 상품선물 및 옵션 거래를 규율하는 미국 연방법이다. | 미국 상품선물 기본법 |
+| CFTC | 상품선물거래위원회 (CFTC) | 상품선물, 옵션, 스왑 시장을 규제하는 미국 독립기관인 Commodity Futures Trading Commission이다. | 미국 독립 규제기관 |
+| China Securities Regulatory Commission (CSRC) | CSRC (중국증권감독관리위원회) | SSE, SZSE, BSE를 관할하는 중국의 중앙 규제기관이다. 등록제 IPO 시스템을 감독한다. | SSE, SZSE, BSE 관할 |
+| College of Euronext Regulators | Euronext 규제협의체 | Euronext의 다국적 운영을 감독하는 각국 규제기관(AMF, AFM, FSMA, CMVM, CBI, Finanstilsynet, CONSOB, HCMC)의 조정기구이다. | 다국적 규제 조정 |
+| CONSOB | CONSOB (이탈리아증권시장감독원) | Commissione Nazionale per le Societa e la Borsa로, 이탈리아의 증권시장 규제기관이다. | |
+| Consolidated Tape Provider (CTP) | 통합시세제공자 (CTP) | 모든 거래소에 걸친 사후거래 데이터를 집계하여 공표할 수 있는 권한을 부여받은 기관이다(MiFID II/MiFIR에 따른 EU 개념). | MiFID II/MiFIR 개념 |
+| Corporate Governance Code | 기업지배구조코드 | TSE가 관리하는 상장회사 지배구조 실무에 관한 일본의 원칙 기반 프레임워크이다(2015년 최초 발표, 정기적으로 개정). | KRX: 한국기업지배구조원 |
+| CPMI-IOSCO | 지급결제 및 시장인프라 위원회 / 국제증권감독기구 | Committee on Payments and Market Infrastructures / International Organization of Securities Commissions이다. | |
+| CSDR | CSDR (중앙예탁기관규정) | 결제규율, CSD 인가, 바이인 규칙에 관한 EU 규정인 Central Securities Depositories Regulation이다. | EU 결제규율, CSD 인가 |
+| Digital Operational Resilience Act (DORA) | DORA (디지털운영복원력법) | 금융기관 및 ICT 제3자 제공업체에 운영 복원력 기준 충족을 요구하는 EU 규정이다(2025년 1월 적용). | EU; 2025년 1월 적용 |
+| Dodd-Frank Title VII | 도드-프랭크법 Title VII | 도드-프랭크 월스트리트 개혁 및 소비자보호법(2010) Title VII이다. 등록 DCO를 통한 표준화 스왑의 의무적 청산, SEF 매매, 거래보고를 포함하여 OTC 파생상품에 대한 포괄적 규제 프레임워크를 수립한다. | OTC 파생규제 프레임워크 |
+| Dodd-Frank Title VIII | 도드-프랭크법 Title VIII | 도드-프랭크 월스트리트 개혁 및 소비자보호법(2010) Title VIII이다. 연방준비제도이사회에 의한 시스템적으로 중요한 금융시장인프라(SIFMU)의 강화된 규제 및 감독을 규정한다. DTCC, OCC, CME Clearing, ICE Clear Credit이 SIFMU로 지정되어 있다. | SIFMU 지정 및 감독 |
+| Double Volume Cap / Single Volume Cap (DVC/SVC) | 이중거래량상한 / 단일거래량상한 | 다크풀 매매를 총거래량 대비 일정 비율로 제한하는 MiFID II 메커니즘이다. MiFIR 개정에 따라 이중 상한(4%/8%)에서 7% 단일 상한으로 변경되었다. | MiFID II 다크풀 제한; MiFIR 개정으로 7% 단일 상한 |
+| Dubai Financial Services Authority (DFSA) | DFSA (두바이금융서비스청) | Dubai International Financial Centre(DIFC)의 독립 규제기관이다. DIFC 금융자유구역 내에서 운영되는 인가 거래소로서 DME/GME를 감독하며, 국제 규제기관과 협력 협정을 유지한다. | DIFC 관할; DME/GME 감독 |
+| EMIR | 유럽시장인프라규정 (EMIR) | OTC 파생상품, CCP, 거래정보저장소에 관한 EU 규정인 European Market Infrastructure Regulation이다. | OTC 파생, CCP, TR 규제 |
+| Electronic Securities Act (전자증권법) | 전자증권법 (주식·사채 등의 전자등록에 관한 법률) | 한국예탁결제원(KSD) 및 지정등록기관에서의 증권 전자등록을 규율하는 한국 법률이다. 개정을 통해 보안토큰(증권형 토큰)을 적용 범위에 포함하였으며, 모든 보안토큰의 KSD 의무등록은 2027년 1월 시행 예정이다. | KSD 전자등록 근거법; 2027년 1월 보안토큰 의무등록 |
+| ESMA | 유럽증권시장감독청 (ESMA) | 회원국 전체의 증권 규제를 조정하는 EU 감독기관인 European Securities and Markets Authority이다. | |
+| Financial Instruments and Exchange Act (FIEA) | 금융상품거래법 (FIEA) | 증권거래, 공시, 시장행위를 규율하는 일본의 주요 증권규제법이다. | 일본 증권거래 기본법 |
+| Financial Investment Services and Capital Markets Act (자본시장법) | 자본시장과 금융투자업에 관한 법률 (자본시장법, FSCMA) | 한국의 주요 증권법으로, 기능 기반 규제 방식을 채택하여 주식·채권·집합투자상품·파생상품을 포괄한다. FSC/FSS가 관할한다. | 한국 자본시장 기본법; KRX 설립 근거 |
+| Financial Market Infrastructure Act (FMIA) | 금융시장인프라법 (FMIA) | 거래소, CCP, CSD, 거래정보저장소를 포함한 금융시장인프라를 규율하는 스위스의 주요 법률이다. FINMA가 관할한다. | 스위스; FINMA 관할 |
+| Financial Sector Conduct Authority (FSCA) | FSCA (남아공금융부문행위감독청) | JSE 감독을 포함하여 금융부문을 관할하는 남아프리카공화국의 주요 시장행위 규제기관이다. | JSE 감독 |
+| Financial Services and Markets Act (FSMA) | 금융서비스시장법 (FSMA) | 금융서비스 규제를 규율하는 영국의 기본 법률이다. | 영국 기본법 |
+| Financial Supervisory Commission (Taiwan) (FSC) | FSC (대만금융감독위원회) | 은행, 증권, 선물, 보험시장을 감독하는 대만의 통합 금융규제기관이다. 대만 유일의 인가 선물거래소이자 파생청산소인 TAIFEX를 감독한다. | TAIFEX 감독 |
+| FINMA | FINMA (스위스금융시장감독청) | 스위스의 통합 금융시장 규제기관인 Swiss Financial Market Supervisory Authority이다. | |
+| FINRA | FINRA (금융산업규제기구) | 브로커-딜러, 시장무결성, 투자자보호를 감독하는 미국 자율규제기관인 Financial Industry Regulatory Authority이다. | 미국 SRO; 브로커-딜러 감독 |
+| Futures and Derivatives Law (China) | 선물및파생상품법 (중국) | 선물 및 파생상품에 관한 중국 최초의 종합법으로, 2022년 8월 1일 시행되었다. 선물시장 발전, 투자자 보호, 국가간 활동, QFI 접근제도에 대한 법적 기반을 제공하며, 전국인민대표대회 상무위원회가 제정하였다. | 2022년 8월 시행; 최초 종합법 |
+| Futures Trading Law (Taiwan) | 선물거래법 (대만) | 1997년 제정된 대만의 국내 선물시장을 규율하는 주요 법률이다. 국내 선물거래소, 선물위탁매매업자, 청산 및 매매에 관한 법적 프레임워크를 수립하였으며, TAIFEX 설립을 인가하였다. | 1997년 제정; TAIFEX 설립 근거 |
+| Japan Financial Services Agency (JFSA) | JFSA (일본금융청) | 은행, 증권, 보험 부문을 감독하는 일본의 주요 금융규제기관이다. | |
+| JPX-R (Japan Exchange Regulation) | JPX-R (일본거래소자율규제법인) | 상장심사, 시장감시, 준법감시를 담당하는 JPX의 자율규제기관이다. | 상장심사, 시장감시, 준법 |
+| Living Will (CCP) | 정리계획 (CCP) | 회복 조치가 실패할 경우 CCP를 질서있게 정리하는 방법을 기술하기 위해 CCP가 또는 CCP를 위해 준비하는 정리계획이다. EU CCP 회복 및 정리 규정(EU 2021/23) 및 FSB 핵심속성에 따라 요구된다. | EU CCP RRR / FSB 핵심속성 |
+| Market Abuse Regulation (MAR) | 시장남용규정 (MAR) | 내부자거래, 시세조종, 내부정보의 불법 공개를 금지하는 EU/UK 규정이다. | EU/UK; 내부자거래, 시세조종 금지 |
+| MiFID II / MiFIR | 금융상품시장지침 II / 규정 | 금융시장을 위한 EU 규제 프레임워크인 Markets in Financial Instruments Directive II / Regulation이다. | EU 금융시장 규제 프레임워크 |
+| Monetary Authority of Singapore (MAS) | MAS (싱가포르통화청) | 싱가포르의 중앙은행이자 통합 금융규제기관이다. | 중앙은행 겸 통합규제기관 |
+| Multilateral Trading Facility (MTF) | 다자간매매체결회사 (MTF) | 투자회사 또는 시장운영자가 운영하여 매수·매도 관심을 매칭하는 EU 인가 거래소(규제시장의 대안)이다. | MiFID II 대안거래소 |
+| No Creditor Worse Off (NCWO) | 채권자불이익금지 원칙 (NCWO) | 파산기관의 어떤 채권자도 통상적인 도산절차보다 불리한 처우를 받아서는 안 된다는 정리제도의 기본 원칙이다. EU CCP RRR 및 FSB 핵심속성에 따라 CCP 정리에 적용된다. | 정리 시 통상도산 대비 불이익 금지 |
+| Organised Trading Facility (OTF) | 조직화된거래시설 (OTF) | MiFID II에 따른 비주식 상품 대상 EU 거래소 유형으로, 운영자에게 체결에 대한 재량이 부여된다. | MiFID II 비주식 거래소 |
+| PFMI | 금융시장인프라에 관한 원칙 (PFMI) | CPMI-IOSCO가 발표한 금융시장인프라에 관한 국제기준인 Principles for Financial Market Infrastructures이다. | CPMI-IOSCO 국제기준 |
+| Qualified Foreign Investor (QFI) | 적격외국인투자자 (QFI) | QFII와 RQFII를 대체한 통합 제도로, 외국 기관투자자의 중국 A주 시장 접근을 허용한다. 2020년 한도가 폐지되었다. | QFII/RQFII 통합; 2020년 한도 폐지 |
+| QFII / RQFII | QFII / RQFII (적격외국기관투자자) | 외국 기관투자자의 중국 증권시장 접근을 위한 레거시 제도(2002년/2011년 도입)인 Qualified Foreign Institutional Investor / RMB Qualified Foreign Institutional Investor이다. 2020년 통합 QFI 제도로 합병되었다. | 2020년 QFI로 통합 |
+| Registration-Based IPO System | 등록제 IPO | 심사 기반 시스템을 대체한 중국의 개혁된 IPO 메커니즘이다. STAR Market(2019년)에서 최초 시범 실시 후 ChiNext(2020년)에 확대되었으며, 전 시장(2023년)에 전면 시행되었다. 실질심사 기반 정부 승인에서 공시 기반 등록으로 전환하였다. | 중국; STAR(2019), ChiNext(2020), 전면 시행(2023) |
+| Regulation ATS (Reg ATS) | 대안매매시스템 규정 (Reg ATS) | 대안매매시스템(다크풀, ECN)을 규율하는 미국 SEC 규정이다. | 미국 SEC; 다크풀, ECN |
+| Regulation NMS (Reg NMS) | 전미시장제도규정 (Reg NMS) | 미국 주식시장 구조를 규율하는 미국 SEC 규정인 Regulation National Market System이다. | 미국 주식시장 구조 규제 |
+| Regulation SHO (Reg SHO) | 공매도 규정 (Reg SHO) | 차입 요건 및 결제의무를 포함하여 공매도를 규율하는 미국 SEC 규정이다. | 미국 SEC |
+| Rule 17Ad-22 | Rule 17Ad-22 | 미국 내 적용대상 청산기관(CCP/CSD)에 대한 기준을 수립하는 SEC 규칙이다. Rule 17Ad-22(e)(2017년 4월 시행)는 NSCC, DTC, FICC, OCC, ICE Clear Credit 등 SIFMU에 대해 거버넌스, 리스크 관리, 증거금, 부도 절차, 운영 리스크를 포괄하는 PFMI 기반 강화기준을 적용한다. | SEC CCP/CSD 기준; SIFMU 강화기준 (2017년~) |
+| Securities and Exchange Board of India (SEBI) | SEBI (인도증권거래위원회) | NSE, BSE 및 기타 시장참가자를 감독하는 인도의 주요 증권규제기관이다. | NSE, BSE 감독 |
+| Securities and Exchange Surveillance Commission (SESC) | SESC (일본증권거래등감시위원회) | 내부자거래, 시세조종 및 기타 위반행위를 조사하는 일본의 시장감시 기관이다. | 시장감시, 내부자거래 조사 |
+| Securities and Futures Act (SFA) | 증권선물법 (SFA) | 증권, 선물, 금융자문업을 규율하는 싱가포르의 주요 법률이다(2001년 제정). | 싱가포르; 2001년 제정 |
+| Securities and Futures Commission (SFC) | SFC (홍콩증권선물위원회) | 증권 및 선물시장을 감독하는 홍콩의 법정 규제기관이다. | |
+| Securities Commission Malaysia (SC) | SC (말레이시아증권위원회) | Bursa Malaysia 및 자본시장 활동을 감독하는 말레이시아의 주요 증권규제기관이다. | Bursa Malaysia 감독 |
+| Securities Information Processor (SIP) | 증권정보처리기관 (SIP) | 모든 거래소의 호가 및 거래를 단일 스트림으로 집계하는 미국의 통합 데이터 피드이다(Tape A/B용 CTS/CQS, Tape C용 UTP). | 미국 통합시세; CTS/CQS (Tape A/B), UTP (Tape C) |
+| Security Token | 보안토큰 (증권형 토큰) | 관련 증권법에 따라 주식·채권·펀드 수익증권 등 금융상품을 분산원장(DLT/블록체인)에 발행·기록한 디지털 표현물이다. 한국에서는 전자증권법 개정에 따라 모든 보안토큰의 KSD 의무등록 프레임워크가 2027년 1월 시행 예정이다. | KSD 의무등록 2027년 1월; 전자증권법 근거 |
+| SGX RegCo | SGX RegCo (SGX 규제법인) | 상장 규제, 시장감시, 집행을 담당하는 SGX의 독립 규제 자회사이다. | 상장, 시장감시, 집행 |
+| Short Selling Regulation (SSR) | 공매도 규정 (SSR) | 순공매도포지션 공시를 요구하고 무차입 공매도를 제한하는 EU 규정이다. | EU; 순공매도포지션 공시 |
+| SIX Exchange Regulation (SER) | SER (SIX 거래소규제) | 상장 및 매매규칙 감독을 담당하는 SIX Swiss Exchange의 자율규제기관이다. | 상장/매매규칙 감독 |
+| Systematic Internaliser (SI) | 체계적내부주문집행자 (SI) | 거래소 밖에서 정기적이고 체계적으로 자기계정을 상대로 고객 주문을 체결하는 투자회사이다(MiFID II 개념). | MiFID II; 자기계정 체결 |
+| Systematically Important FMI (SI-FMI) | 시스템적으로 중요한 금융시장인프라 | 실패 시 금융시스템에 시스템 리스크를 야기할 수 있는 금융시장인프라이다. | |
+| Universal Market Integrity Rules (UMIR) | 통합시장무결성규칙 (UMIR) | CIRO가 관리하는 캐나다의 주식매매 행위규칙이다. 최선집행, 공매도, 시세조종 등의 주제를 다룬다. | 캐나다 CIRO 관할 |

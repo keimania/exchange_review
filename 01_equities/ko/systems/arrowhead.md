@@ -1,0 +1,306 @@
+# arrowhead -- 일본거래소그룹(JPX) / 도쿄증권거래소(TSE)
+
+> **최종 업데이트:** 2026-04-06
+> **시스템 분류:** 매매시스템 (Trading System)
+
+---
+
+## 1. 시스템 개요 (System Overview)
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 시스템명 | arrowhead (소문자 표기) |
+| 운영 기관 | 도쿄증권거래소 주식회사(TSE), 일본거래소그룹 주식회사(JPX)의 자회사 |
+| 목적 | TSE에 상장된 주식, ETF, REIT, 인프라펀드, 전환사채(CB) 등 모든 현물 상품의 경매 매매를 처리하는 현물주식 매매시스템 |
+| 출시 연도 | 2010년 1월 4일 |
+| 현재 버전 | arrowhead4.0 (4세대), 2024년 11월 5일 출시 |
+| 개발 방식 | TSE와 Fujitsu Limited 공동 개발 |
+
+arrowhead는 도쿄증권거래소의 핵심 현물주식 매칭 및 매매시스템이다. 속도, 정확성, 신뢰성의 이미지를 연상시키는 이름으로, 글로벌 최고 수준의 저지연, 고신뢰성, 확장성을 결합하도록 설계되었다. 이 시스템은 동기화된 3노드 데이터 서버에서 주문, 체결, 호가장 등 매매 정보를 처리한다.
+
+4세대(arrowhead4.0)는 두 가지 주요 시장 구조 변경을 도입하였다: (1) 오후 세션 매매 시간을 30분 연장(새 종료 시각 15:30 JST), (2) 종가 형성의 투명성 향상을 위한 종가 경매 세션 도입.
+
+[Source: JPX, "Services (arrowhead)", https://www.jpx.co.jp/english/systems/equities-trading/01.html, accessed 2026-04-06]
+[Source: JPX, "Go-Live Date for the Cash Equity Trading System (arrowhead) Upgrade", https://www.jpx.co.jp/english/corporate/news/news-releases/1030/20241103-01.html, accessed 2026-04-06]
+
+### 시스템 변천사 (System Evolution)
+
+| 기간 | 시스템명 | 주요 변경사항 |
+|--------|-------------|-------------|
+| 2010년 이전 | 레거시 TSE 시스템 | 다수의 독자적 시스템; 주문 응답 시간이 초 단위로 측정 |
+| 2010년 1월 | arrowhead 1세대 | 전면 시스템 교체; 주문 응답 ~5 ms, 정보 배포 ~3 ms; Fujitsu와 Linux/상용 하드웨어로 개발; 코로케이션 서비스 도입 |
+| 2015년 9월 | arrowhead 2세대 | 처리 용량 및 안정성 향상; 주문 응답 ~1 ms 수준으로 개선 [미검증]; 주문량 급증에 대한 복원력 강화; Fujitsu PRIMERGY 서버 |
+| 2019년 11월 | arrowhead 3세대 | Fujitsu PRIMERGY RX2540 M4 서버 ~400대를 사용한 대규모 개선; Fujitsu Software Primesoft Server를 통한 마이크로초 수준의 초고속 인메모리 데이터 접근; 대폭적 지연시간 감소 |
+| 2024년 11월 | arrowhead 4세대 (arrowhead4.0) | Fujitsu PRIMERGY RX2540 M6 서버 462대 [미검증]; 지연시간 및 용량 추가 개선; 매매 시간 연장; 종가 경매 세션 도입 |
+
+[Source: Fujitsu, "TSE Launches Next-Generation arrowhead Trading System", January 2010, https://www.fujitsu.com/global/about/resources/news/press-releases/2010/0108-01.html]
+[Source: Fujitsu, "New, Enhanced TSE arrowhead Cash Equity Trading System", September 2015, https://www.fujitsu.com/global/about/resources/news/press-releases/2015/0924-01.html]
+[Source: Fujitsu, "Upgraded Version of Tokyo Stock Exchange's arrowhead Trading System", November 2019, https://www.fujitsu.com/global/about/resources/news/press-releases/2019/1105-01.html]
+[Source: Fujitsu, "Tokyo Stock Exchange and Fujitsu announce renewal of cash equity trading system arrowhead4.0", November 2024, https://www.fujitsu.com/global/about/resources/news/press-releases/2024/1105-01.html]
+
+---
+
+## 2. 아키텍처 (Architecture)
+
+### 2.1 상위 수준 설계 (High-Level Design)
+
+- **배포 모델:** 온프레미스, 전용 데이터센터 인프라 (도쿄 수도권 소재 주 사이트)
+- **토폴로지:** 각 처리 단위에 대해 동기화된 3노드 데이터 서버 클러스터를 갖는 중앙집중식 매칭
+- **설계 패턴:** 인메모리, 이벤트 기반 트랜잭션 처리
+- **이중화 모델:** 핵심 매칭에 대한 삼중 모듈러 이중화(동기화된 3노드 데이터 서버); 전체 시스템 장애 전환을 위한 Active-Standby
+
+이 아키텍처는 주문, 체결, 호가장 등 모든 매매 정보를 동기화된 3노드 데이터 서버에서 처리하는 개념을 중심으로 구축되었다. 이 3중 노드 설계는 고가용성(단일 노드 장애가 서비스를 중단시키지 않음)과 데이터 일관성을 모두 제공한다. 시스템 용량은 주문량 증가에 유연하고 신속하게 확장 가능하도록 설계되었다.
+
+[Source: JPX, "Services (arrowhead)", https://www.jpx.co.jp/english/systems/equities-trading/01.html, accessed 2026-04-06]
+
+### 2.2 핵심 구성요소 (Core Components)
+
+| 구성요소 | 기능 | 기술 |
+|-----------|----------|------------|
+| 매매체결엔진 (Matching Engine) | 모든 현물주식 상품에 대한 가격-시간 우선 주문 매칭; 이타요세(板寄せ, 콜옥션) 및 자라바(ザラバ, 연속매매) 방식 지원; 시가/종가 경매 및 변동성 중단 처리 | 동기화된 3노드 데이터 서버 위 인메모리 처리; 초고속 데이터 접근을 위한 Fujitsu Software Primesoft Server |
+| 주문 게이트웨이 (arrowhead Gateway) | 매매 참가자의 주문 수신 및 검증; 주문 확인 및 체결 보고 제공 | 독자적 바이너리 프로토콜; 주문 입력, 정정, 취소 지원 |
+| 시장 데이터 퍼블리셔 (Market Data Publisher) | FLEX 프로토콜을 통한 최우선호가, 전체 호가장, 매매 정보를 포함한 실시간 시장 데이터 배포 | Standard, MBO, MBO BC 스트림이 있는 FLEX 멀티캐스트 배포 |
+| 리스크 엔진 (Risk Engine) | 주문 규모 제한, 가격 범위 검증, 참가자 수준 통제를 포함한 사전 매매 리스크 확인 | 주문 게이트웨이 처리 파이프라인에 통합 |
+| 감시 시스템 (Surveillance) | 비정상 매매 패턴, 시장 조작, 준법 위반 탐지를 위한 실시간 시장 감시 | JPX Regulation (자율규제 기관)이 운영; arrowhead 데이터 피드 모니터링 |
+
+### 2.3 기술 스택 (Technology Stack)
+
+| 계층 | 기술 |
+|-------|-----------|
+| 프로그래밍 언어 | C++ (핵심 매매체결엔진) [Fujitsu 거래소 시스템의 업계 표준에 기반한 추정, 미검증] |
+| 운영체제 | Red Hat Enterprise Linux (RHEL), x86 상용 서버 |
+| 하드웨어 | Fujitsu PRIMERGY RX2540 M6 서버 (4세대: 462대 [미검증]); 이전 세대는 RX2540 M4 (~400대) 사용; 특정 가속 작업에 FPGA 요소 [미검증] |
+| 네트워크 | 코로케이션 시설 내 저지연 인터커넥트; 10GbE/25GbE 패브릭 [미검증] |
+| 데이터베이스/데이터 스토어 | Fujitsu Software Primesoft Server -- 나노초 수준 데이터 접근이 가능한 인메모리 데이터 관리; 모든 트랜잭션 데이터를 메모리 상주 |
+| 메시징/미들웨어 | 독자적 내부 메시징; 외부 시장 데이터 배포용 FLEX 프로토콜 |
+
+[Source: Fujitsu, "Upgraded Version of Tokyo Stock Exchange's arrowhead Trading System", November 2019, https://www.fujitsu.com/global/about/resources/news/press-releases/2019/1105-01.html]
+[Source: Practical Tech, "The Linux of Stock Markets", March 2010, https://practical-tech.com/2010/03/22/the-linux-of-stock-markets/]
+
+---
+
+## 3. 성능 사양 (Performance Specifications)
+
+| 지표 | 값 | 조건 |
+|--------|-------|------------|
+| 왕복 지연시간 (중앙값) | ~0.2 ms (200 마이크로초) [미검증] | 4세대 (arrowhead4.0); 주문 확인 왕복 |
+| 왕복 지연시간 (99번째 백분위) | 미공개 | |
+| 주문 처리 속도 | 미공개 (3세대 대비 대폭 개선) | PRIMERGY M6 서버 강화의 4세대 |
+| 최대 초당 메시지 수 | 미공개 | 급증 처리를 위한 확장 가능한 용량 |
+| 일일 거래 용량 | 유연하게 확장 가능; 이전 세대 대비 대폭 증가 처리 설계 | 시스템 용량 동적 조정 가능 |
+| 가동률 SLA | 99.999% 목표 [미검증] | 주요 글로벌 거래소 표준과 일치 |
+
+### 성능 이력 (Performance History)
+
+| 연도 | 세대 | 지연시간 (주문 응답) | 지연시간 (정보 배포) | 비고 |
+|------|-----------|--------------------------|----------------------------|-------|
+| 2010년 | 1세대 | ~5 ms | ~3 ms | 초기 출시; 레거시(초 수준) 대비 대폭 개선; 초기 PRIMERGY 서버 18대 [미검증] |
+| 2015년 | 2세대 | ~1 ms [미검증] | ~2 ms [미검증] | 주문량 급증 대비 용량 강화; 안정성 향상 |
+| 2019년 | 3세대 | 1 밀리초 미만 (마이크로초 수준) | 1 밀리초 미만 | PRIMERGY RX2540 M4 서버 ~400대; 나노초 수준 데이터 접근의 Fujitsu Primesoft Server |
+| 2024년 | 4세대 | ~0.2 ms (200 us) [미검증] | 추가 개선 | PRIMERGY RX2540 M6 서버 462대 [미검증]; 처리량 및 용량 강화 |
+
+**추세:** 1세대(5 ms)에서 3세대(200 us 미만)까지 약 25배의 지연시간 개선이 이루어졌으며, 각 세대마다 대략 3--5배의 개선을 달성하였다. 4세대는 지연시간과 복원력 모두의 개선에 초점을 맞추었다.
+
+[Source: Fujitsu, "TSE Launches Next-Generation arrowhead Trading System", January 2010, https://www.fujitsu.com/global/about/resources/news/press-releases/2010/0108-01.html]
+[Source: Fujitsu, "Tokyo Stock Exchange accelerates order processing by three times with PRIMERGY platform", October 2016, https://www.fujitsu.com/fts/about/resources/case-studies/cs-2016oct-tokyo-stock-exchange-eng.html]
+
+---
+
+## 4. 인터페이스 및 프로토콜 (Interfaces & Protocols)
+
+### 4.1 주문 입력 (Order Entry)
+
+| 프로토콜 | 버전 | 설명 |
+|----------|---------|-------------|
+| arrowhead Gateway (Native Binary) | 독자적 | 주요 저지연 주문 입력 인터페이스; 속도에 최적화된 바이너리 프로토콜; 코로케이션 참가자 및 고빈도매매 회원사가 사용 |
+| FIX 프로토콜 | FIX 4.2 / FIX 4.4 [미검증] | 폭넓은 참가자 호환성을 위한 표준 FIX 기반 주문 입력; native 게이트웨이보다 다소 높은 지연시간 |
+| OUCH 유사 프로토콜 | [미검증] | 일부 소스에서 간소화된 주문 입력을 위한 OUCH 호환 인터페이스 언급 |
+
+매매 참가자는 JPX의 코로케이션 시설(매매체결엔진과 동일 데이터센터 내 위치) 또는 광역 네트워크 접근점을 통해 연결한다.
+
+### 4.2 시장 데이터 배포 (Market Data Dissemination)
+
+| 프로토콜 | 설명 | 데이터 내용 |
+|----------|-------------|-------------|
+| FLEX Standard | 멀티캐스트 기반 실시간 시장 데이터 피드 | 모든 상장 종목의 최우선호가(BBO), 최종 체결가, VWAP, 거래량, 지수값, 요약 통계 |
+| FLEX MBO (Market by Order) | 프리미엄 전체 호가잔량 멀티캐스트 피드 | 주문 ID가 포함된 완전한 호가장을 보여주는 개별 주문 수준 데이터; 참가자가 호가장의 모든 주문을 볼 수 있음 |
+| FLEX MBO BC (Bandwidth Controlled) | FLEX MBO의 대역폭 최적화 버전 | FLEX MBO와 동일한 내용이나 네트워크 부하 관리를 위한 스로틀링/대역폭 제어 적용; 전체 호가장이 필요하되 통제된 데이터 속도를 원하는 참가자에 적합 |
+| FLEX Historical | 저장된 과거 틱 데이터 서비스 | 백테스팅 및 연구를 위한 FLEX 데이터 리플레이; JPX Market Innovation & Research, Inc. (JPXI)가 제공 |
+
+FLEX 데이터는 멀티캐스트 그룹(MCG)으로 구성된 IP 멀티캐스트를 통해 배포된다. FLEX 스로틀링은 각 MCG에 대한 임계값 대비 데이터 트래픽을 모니터링한다. FLEX MBO 및 FLEX MBO BC 사용자는 FLEX Standard 스트림에서 기준가 정보 및 종목 정보도 수신한다.
+
+[Source: JPX, "Outline -- Real Time Market Data", https://www.jpx.co.jp/english/markets/paid-info-equities/realtime/index.html, accessed 2026-04-06]
+[Source: JPX, "Specifications for Connecting to FLEX Historical Service", https://www.jpx.co.jp/english/markets/paid-info-equities/historical/b5b4pj0000046hrg-att/e_flexhistorical_spec.pdf]
+
+### 4.3 드롭 카피 / 거래 보고 (Drop Copy / Trade Reporting)
+
+- 사후 매매 확인 및 리스크 관리를 위한 FIX 기반 드롭 카피 서비스 이용 가능
+- 참가자는 사전 및 사후 매매 리스크 통제 구현을 위해 FIX 드롭 카피 라인을 통해 arrowhead 트래픽 파싱 가능
+- 거래 보고는 arrowhead 게이트웨이를 통한 체결 보고서로도 이용 가능
+
+### 4.4 기준 데이터 (Reference Data)
+
+- FLEX Standard 피드를 통해 종목 마스터 데이터(증권 식별자, 호가 단위, 가격 제한, 매매 단위) 배포
+- 기준가 정보는 장 시작 전 매일 제공
+- JPX 데이터 서비스 포털을 통해 정적 기준 데이터도 이용 가능
+
+[Source: JPX, "Alternative Data Service (arrowhead)", https://www.jpx.co.jp/english/markets/paid-info-alternative/arrowhead/index.html, accessed 2026-04-06]
+
+---
+
+## 5. 복원력 및 업무연속성 (Resilience & Business Continuity)
+
+### 5.1 이중화 (Redundancy)
+
+- **아키텍처:** 구성요소 수준에서 삼중 모듈러 이중화(동기화된 3노드 데이터 서버)를 갖는 Active-Standby
+- **지리적 분산:** 도쿄 수도권의 주 데이터센터; 간사이 지역의 보조(백업) 데이터센터
+- **장애 전환 설계:** 주 사이트 내에서 3노드 동기화 아키텍처가 단일 노드 장애 시에도 지속 운영 허용. 주 데이터센터가 재해의 영향을 받아 운영을 계속할 수 없는 경우 백업 센터로 전환
+- **장애 전환 시간:** 미공개; "가능한 한 빨리" 매매 재개하도록 설계
+
+### 5.2 재해복구 (Disaster Recovery)
+
+- **DR 사이트 위치:** 간사이 지역(서일본), 구체적으로 AT TOKYO Kansai Chuo Center (KC1), JPX의 간사이 근접지역으로 지정
+- **근거:** 도쿄 수도권 대규모 지진의 동시 영향을 피하기 위해 도쿄에서 지리적으로 먼 지역에 위치; "전기 등 필수 서비스의 부족을 초래하는 사회 인프라 피해의 우려가 거의 또는 전혀 없는" 곳으로 선정
+- **RPO (복구 시점 목표):** 미공개
+- **RTO (복구 시간 목표):** 미공개; 가능한 한 빨리 매매 재개가 목표
+- **DR 테스트 빈도:** 미공개; JPX의 BCP는 정기적으로 검토 및 업데이트
+- **접근점:** 백업 운영을 위해 매매 참가자와 JPX 네트워크를 연결하는 AP4가 간사이에 구축
+- **일정:** arrowhead 간사이 사이트 백업은 FY2022 이후 구축 (파생상품 시스템 J-GATE는 FY2021 3분기에 먼저 구축)
+
+### 5.3 용량 관리 (Capacity Management)
+
+- **확장성 접근방식:** 시스템 용량은 "주문 수의 증가에 대응하여 유연하고 신속하게 확장 가능"
+- **인프라 확장:** 세대 간 하드웨어 업그레이드(예: 3세대 ~400대 서버에서 4세대 462대 [미검증])로 용량 여유 확보
+- **부하 테스트 관행:** 미공개; Fujitsu가 각 세대 출시 전 광범위한 테스트 수행
+- **모니터링:** arrowhead System Stats 서비스(2020년 7월 출시)가 참가자에게 FLEX 스로틀링 데이터를 포함한 실시간 시스템 성능 통계를 제공하여 시장 전체의 용량 인식 가능
+
+[Source: JPX, "BCP (Business Continuity Plan)", https://www.jpx.co.jp/english/corporate/governance/risk/bcp/index.html, accessed 2026-04-06]
+[Source: FinanceFeeds, "Japan Exchange Group Updates On Setting Up New Data Back-up Center", https://financefeeds.com/japan-exchange-group-updates-setting-new-data-back-center/]
+[Source: AT TOKYO, "AT TOKYO Kansai Chuo Center Designated as Kansai Proximity Area for JPX", November 2020, https://www.attokyo.com/news/20201104.html]
+
+---
+
+## 6. 주요 기술적 특징 (Notable Technical Features)
+
+### 6.1 이타요세(板寄せ) -- 콜옥션 메커니즘 (Itayose -- Call Auction Mechanism)
+
+이타요세 방식은 시가, 종가, 변동성 중단 후 가격을 결정하는 데 사용되는 콜옥션이다. 지정된 기간 동안 주문을 축적한 뒤, 수요와 공급이 만나는 단일 균형 가격으로 동시에 매칭한다. 주요 규칙:
+- 균형 가격 이상(또는 이하)의 모든 주문이 매칭
+- 시장가 주문이 지정가 주문보다 우선
+- 전장 및 후장의 시가에 사용
+- arrowhead4.0에서 투명한 종가 형성을 위해 후장 종료 시(15:25--15:30 JST) 전용 **종가 경매 세션(Closing Auction Session)** 도입
+
+[Source: JPX, "Transaction Methods", https://www.jpx.co.jp/english/equities/trading/domestic/04.html, accessed 2026-04-06]
+
+### 6.2 자라바(ザラバ) -- 연속매매 방식 (Zaraba -- Continuous Trading Method)
+
+자라바는 시가 및 종가 경매 사이의 정규 매매 시간 중 사용되는 연속 경매 방식이다. 주문은 가격-시간 우선 원칙에 따라 매칭된다:
+- 가격 우선 (최우선가 우선)
+- 동일 가격의 주문 중 먼저 접수된 주문이 우선 매칭 (시간 우선)
+- 시장가 주문은 모든 가격에서 지정가 주문보다 우선 체결
+
+### 6.3 특별기배(特別気配) -- 변동성 중단 (Special Quote -- Volatility Interruption)
+
+특별기배는 TSE의 주요 서킷브레이커 (매매거래중단) / 변동성 통제 메커니즘이다:
+- 가격이 직전 체결가에서 일정 가격 범위를 초과하여 급등할 가능성이 있을 때 표시
+- 특별기배가 표시되면 부적절한 가격 변동을 방지하기 위해 자라바(연속매매)에서 이타요세(콜옥션)로 체결 방식 전환
+- 매매 세션 중 언제든지 발동 가능
+- **arrowhead4.0에서 강화:** 특별기배 갱신 가격대의 2배를 초과하는 과도한 가격 변동은 기준 체결로부터 60초가 경과할 때까지 방지
+- 가격제한(値幅制限)도 보다 광범위한 서킷브레이커로 적용
+
+[Source: JPX, "2024 Edition -- Trading Rules Guide", https://www.jpx.co.jp/english/equities/trading/domestic/tvdivq000000tpfi-att/eg.pdf]
+
+### 6.4 ToSTNeT (Tokyo Stock Exchange Trading NeTwork System)
+
+ToSTNeT은 arrowhead와 병행 운영되는 장외 매매 플랫폼이다:
+- 블록 매매, 바스킷 매매, 종가 거래 처리
+- 국내외 투자자(증권사를 통해)의 주문 수신
+- 중앙 주문장 외에서 협상 또는 기준 가격으로 체결
+- 주문 접수, 체결, 결과 보고 프로세스 포함
+- arrowhead의 경매 매칭과 별도의 시스템이나 TSE 생태계에 통합
+
+[Source: JPX, "Services (ToSTNeT)", https://www.jpx.co.jp/english/systems/equities-trading/03.html, accessed 2026-04-06]
+
+### 6.5 CONNEQTOR -- ETF RFQ 플랫폼 (CONNEQTOR -- RFQ Platform for ETFs)
+
+CONNEQTOR는 기관 ETF 매매를 위해 특별히 설계된 JPX의 호가요청(Request-for-Quote) 플랫폼이다:
+- **출시:** 2021년 2월
+- **목적:** 효율적인 ETF 매매를 위해 기관투자자, 증권사, 마켓메이커 연결
+- **프로세스:** (1) 투자자가 CONNEQTOR에 RFQ 제출, (2) 마켓메이커가 경쟁 호가 제시, (3) 수락된 거래가 ToSTNeT을 통해 거래소 매매로 청산 및 결제
+- **채택:** 250개 이상의 기관투자자가 이용; 월간 거래대금이 2,000억 엔을 돌파 (2023년 9월)
+- **장점:** 실시간 최적 호가, 거래 비용 절감, 운영 효율성 향상, 거래상대방 리스크 없음(거래소 청산)
+
+[Source: JPX, "Overview -- RFQ Platform", https://www.jpx.co.jp/english/equities/products/etfs/rfq-platform/index.html, accessed 2026-04-06]
+[Source: JPX, "Monthly Trading Value via the RFQ Platform CONNEQTOR Surpasses 200 Billion Yen", September 2023, https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20230904-02.html]
+
+### 6.6 arrowhead System Stats 서비스 (arrowhead System Stats Service)
+
+2020년 7월 출시된 이 대안 데이터 서비스는 다음을 제공한다:
+- arrowhead 시스템 성능에 대한 실시간 및 과거 통계
+- 멀티캐스트 그룹별 FLEX 스로틀링 데이터
+- 주문/매매 활동 지표
+- 참가자 및 데이터 벤더의 용량 계획 및 시장 미시구조 연구에 이용 가능
+
+[Source: JPX, "TSE to launch arrowhead System Stats Service", July 2020, https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20200703-01.html]
+
+### 6.7 미래 아키텍처를 위한 클라우드 PoC (Cloud PoC for Future Architecture)
+
+TSE는 현물주식 매매시스템에 대한 클라우드 기술의 장기 적용 가능성을 탐색하기 위한 개념 증명(PoC)을 수행하였으며, 이는 전통적 온프레미스 인프라를 넘어서는 잠재적 미래 아키텍처 진화를 시사한다.
+
+[Source: FX News Group, "Tokyo Stock Exchange conducts PoC to explore long-term applicability of cloud tech to its cash equity trading system", https://fxnewsgroup.com/forex-news/exchanges/tokyo-stock-exchange-conducts-poc-to-explore-long-term-applicability-of-cloud-tech-to-its-cash-equity-trading-system/]
+
+---
+
+## 7. 비교 분석 (Comparison Notes)
+
+### KRX Exture+ 대비 비교 (vs. KRX Exture+)
+
+| 항목 | arrowhead (JPX/TSE) | Exture+ (KRX) |
+|--------|---------------------|----------------|
+| **출시** | 1세대: 2010년 1월; 4세대: 2024년 11월 | 2014년 (원래 EXTURE 대체) |
+| **개발 주체** | Fujitsu (외부 벤더 파트너십) | 자체 개발 (KRX/Koscom) |
+| **아키텍처** | 동기화된 3노드 데이터 서버; Linux 위 Fujitsu PRIMERGY 상용 서버 | 오픈소스 아키텍처의 메모리 기반 솔루션; Solace PubSub+ 메시징 |
+| **주문 응답 지연시간** | ~0.2 ms (200 us) 4세대 [미검증]; 3세대 1 ms 미만 | ~0.07 ms (70 us) -- 글로벌 최상위 수준 |
+| **자산 범위** | 현물주식만 해당 (주식, ETF, REIT, CB); 파생상품은 별도 J-GATE 시스템 | 단일 플랫폼에서 모든 상품 (주식, 채권, 선물, 옵션, ETF, 워런트, 원자재) |
+| **시장 데이터 프로토콜** | FLEX (독자적 멀티캐스트: Standard, MBO, MBO BC) | Solace PubSub+ 기반 배포 |
+| **데이터센터** | 주: 도쿄 수도권; DR: 간사이 지역 | 주: 서울 (KOSPI, KOSDAQ); 부산 (파생상품); 도시 간 상호 백업 |
+| **변동성 통제** | 특별기배(特別気配) -- 이타요세 경매로 전환 | SVAR (정적 변동성 중단) 및 DVAR (동적 변동성 중단) |
+| **장외 매매** | ToSTNeT (별도 시스템) | Exture+ 내 블록딜 시스템 |
+| **RFQ 플랫폼** | CONNEQTOR (ETF, 2021년부터) | 별도 브랜드 없음 [미검증] |
+| **종가 경매** | 2024년 11월 도입 (arrowhead4.0) | 기존 기능 |
+
+### 주요 차별화 요소 (Key Differentiators)
+
+- **지연시간:** KRX Exture+가 ~70 us vs. arrowhead의 ~200 us [미검증]로 약 3배 빠른 지연시간 우위를 보유한다. 이는 KRX를 전 세계에서 가장 빠른 거래소 중 하나에 위치시키며, arrowhead는 주요 동급 거래소와 경쟁력을 유지한다.
+- **플랫폼 범위:** Exture+는 통합 다자산 플랫폼(하나의 시스템에서 주식 + 파생상품 + 채권)이며, JPX는 현물주식(arrowhead)과 파생상품(J-GATE)을 분리한다. 이는 KRX에 운영적 단순성을 부여하지만 JPX에는 자산군별 전문적 최적화를 가능하게 한다.
+- **벤더 전략:** JPX는 기술 파트너로서 Fujitsu에 크게 의존하는 반면, KRX/Koscom은 Exture+를 대부분 자체 개발한다. 이는 KRX에 시스템 진화에 대한 보다 직접적인 통제를 부여하지만, 깊은 내부 엔지니어링 역량 유지를 필요로 한다.
+- **메시징 인프라:** KRX는 업계 표준 메시징 플랫폼인 Solace PubSub+를 핵심 데이터 전달 인프라로 선택하였다. JPX는 독자적 FLEX 프로토콜을 사용하여 긴밀한 통합을 제공하지만 이식성은 낮다.
+- **DR 지리:** 양 거래소 모두 지리적으로 분리된 DR 사이트를 유지한다 (JPX: 도쿄-간사이 ~400 km; KRX: 서울-부산 ~325 km). 이는 지진이 활발한 지역의 모범 사례를 따른다.
+- **시장 구조 진화:** JPX의 종가 경매 후발 도입(2024년)은 arrowhead의 시장 미시구조가 시장 참가자와의 합의를 중시하며 보다 보수적으로 진화해왔음을 나타낸다.
+
+---
+
+## 출처 (Sources)
+
+1. JPX, "Services (arrowhead)", https://www.jpx.co.jp/english/systems/equities-trading/01.html
+2. JPX, "Go-Live Date for the Cash Equity Trading System (arrowhead) Upgrade", https://www.jpx.co.jp/english/corporate/news/news-releases/1030/20241103-01.html
+3. JPX, "Go-Live Date for Cash Equity Trading System (arrowhead) Upgrade", https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20241009-01.html
+4. Fujitsu, "TSE Launches Next-Generation arrowhead Trading System", January 2010, https://www.fujitsu.com/global/about/resources/news/press-releases/2010/0108-01.html
+5. Fujitsu, "New, Enhanced TSE arrowhead Cash Equity Trading System", September 2015, https://www.fujitsu.com/global/about/resources/news/press-releases/2015/0924-01.html
+6. Fujitsu, "Upgraded Version of Tokyo Stock Exchange's arrowhead Trading System", November 2019, https://www.fujitsu.com/global/about/resources/news/press-releases/2019/1105-01.html
+7. Fujitsu, "Tokyo Stock Exchange and Fujitsu announce renewal of cash equity trading system arrowhead4.0", November 2024, https://www.fujitsu.com/global/about/resources/news/press-releases/2024/1105-01.html
+8. Fujitsu, "Tokyo Stock Exchange accelerates order processing by three times with PRIMERGY platform", October 2016, https://www.fujitsu.com/fts/about/resources/case-studies/cs-2016oct-tokyo-stock-exchange-eng.html
+9. JPX, "Transaction Methods", https://www.jpx.co.jp/english/equities/trading/domestic/04.html
+10. JPX, "2024 Edition -- Trading Rules Guide", https://www.jpx.co.jp/english/equities/trading/domestic/tvdivq000000tpfi-att/eg.pdf
+11. JPX, "BCP (Business Continuity Plan)", https://www.jpx.co.jp/english/corporate/governance/risk/bcp/index.html
+12. JPX, "Services (ToSTNeT)", https://www.jpx.co.jp/english/systems/equities-trading/03.html
+13. JPX, "Overview -- RFQ Platform (CONNEQTOR)", https://www.jpx.co.jp/english/equities/products/etfs/rfq-platform/index.html
+14. JPX, "Outline -- Real Time Market Data", https://www.jpx.co.jp/english/markets/paid-info-equities/realtime/index.html
+15. JPX, "Alternative Data Service (arrowhead)", https://www.jpx.co.jp/english/markets/paid-info-alternative/arrowhead/index.html
+16. JPX, "TSE to launch arrowhead System Stats Service", July 2020, https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20200703-01.html
+17. AT TOKYO, "AT TOKYO Kansai Chuo Center Designated as Kansai Proximity Area for JPX", November 2020, https://www.attokyo.com/news/20201104.html
+18. FinanceFeeds, "Japan Exchange Group Updates On Setting Up New Data Back-up Center", https://financefeeds.com/japan-exchange-group-updates-setting-new-data-back-center/
+19. Global Trading, "TSE updates trading system as closing auction demand soars", https://www.globaltrading.net/tse-updates-trading-system-as-closing-auction-demand-soars/
+20. KRX Global, "EXTURE+ Trading", https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp
+21. Practical Tech, "The Linux of Stock Markets", March 2010, https://practical-tech.com/2010/03/22/the-linux-of-stock-markets/
+22. NovaSparks, "Trading Japanese Equities on TSE", https://novasparks.com/trading-on-japanese-equities/

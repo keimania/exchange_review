@@ -1,0 +1,760 @@
+# U.S. Clearing & Settlement Regulation
+
+> **Last Updated:** 2026-04-07
+> **Domain:** Clearing & Settlement -- Regulatory Framework
+
+---
+
+## Table of Contents
+
+1. [Regulatory Authorities](#1-regulatory-authorities)
+2. [Key Legislation & Regulations](#2-key-legislation--regulations)
+3. [CCP Authorization & Capital Requirements](#3-ccp-authorization--capital-requirements)
+4. [PFMI Compliance](#4-pfmi-compliance)
+5. [Recovery & Resolution Framework](#5-recovery--resolution-framework)
+6. [Settlement Regulation](#6-settlement-regulation)
+7. [Market Data & Reporting](#7-market-data--reporting)
+8. [Cross-Border Arrangements](#8-cross-border-arrangements)
+9. [Recent Regulatory Changes (2023-2026)](#9-recent-regulatory-changes-2023-2026)
+10. [Comparison with Korea](#10-comparison-with-korea)
+
+---
+
+## 1. Regulatory Authorities
+
+The U.S. clearing and settlement regulatory framework is characterized by a **multi-regulator model**, with different agencies overseeing different asset classes and systemic risk. Unlike jurisdictions with a single consolidated regulator, the U.S. divides authority primarily between the SEC (securities) and CFTC (derivatives), with the Federal Reserve and FSOC providing systemic risk oversight.
+
+### 1.1 SEC (Securities and Exchange Commission)
+
+The SEC is the **primary regulator** for clearing agencies that clear securities, including equities, fixed income, and security-based swaps. Its Division of Trading and Markets is the key unit responsible for CCP and CSD oversight.
+
+- **Jurisdiction:** All clearing agencies registered under Section 17A of the Securities Exchange Act of 1934, including CCPs (e.g., NSCC, FICC, OCC) and CSDs (e.g., DTC)
+- **Key Division:** Division of Trading and Markets -- oversees exchanges, broker-dealers, clearing agencies, transfer agents, and SROs
+- **Core Authority:**
+  - Registration and regulation of clearing agencies under Section 17A
+  - Rulemaking authority under Rule 17Ad-22 (standards for clearing agencies)
+  - Approval/disapproval of clearing agency proposed rule changes (SRO filings)
+  - Examination and enforcement against clearing agencies
+  - Authority over security-based swap clearing agencies (Dodd-Frank Title VII)
+- **Supervised Entities (Securities Clearing):** NSCC, DTC, FICC (GSD and MBSD), OCC (jointly with CFTC), ICE Clear Credit (as SBS clearing agency)
+- **Website:** [https://www.sec.gov](https://www.sec.gov)
+
+[Source: SEC, "About the SEC" and "Division of Trading and Markets," accessed 2026-04-07]
+
+### 1.2 CFTC (Commodity Futures Trading Commission)
+
+The CFTC is the **primary regulator** for derivatives clearing organizations (DCOs) that clear futures, options on futures, and swaps.
+
+- **Jurisdiction:** All DCOs registered under Section 5b of the Commodity Exchange Act (CEA), including CME Clearing, ICE Clear US, ICE Clear Europe (exempt DCO), LCH Ltd (registered DCO), and others
+- **Key Division:** Division of Clearing and Risk (DCR) -- responsible for oversight of DCOs and clearinghouse risk management
+- **Core Authority:**
+  - Registration of DCOs and enforcement of 18 Core Principles (CEA Section 5b(c)(2))
+  - Rulemaking under Part 39 of CFTC Regulations
+  - Swap clearing mandate -- determining which swaps must be centrally cleared
+  - Review of DCO proposed rule changes
+  - Examination and enforcement against registered DCOs
+  - Registration of foreign DCOs under alternative compliance or exempt DCO frameworks
+- **Supervised Entities (Key U.S. DCOs):** CME Clearing (SIFMU), ICE Clear Credit (SIFMU), ICE Clear US, LCH Ltd (registered DCO), Nodal Clear, others
+- **Website:** [https://www.cftc.gov](https://www.cftc.gov)
+
+[Source: CFTC, "Derivatives Clearing Organizations," accessed 2026-04-07; CFTC, "Division of Clearing and Risk," accessed 2026-04-07]
+
+### 1.3 Federal Reserve Board
+
+The Federal Reserve serves as the **supervisory agency** for certain designated SIFMUs under Dodd-Frank Title VIII and provides systemic risk oversight.
+
+- **Title VIII Role:** Under Dodd-Frank Section 804, the FSOC designates SIFMUs, and the "Supervisory Agency" (the Federal Reserve for payment-related FMUs, or the SEC/CFTC for clearing-related FMUs) has primary oversight responsibility. The Fed has additional authority over all designated SIFMUs:
+  - May prescribe risk management standards (Section 805)
+  - Provides access to Federal Reserve discount window and payment services for designated SIFMUs in unusual or exigent circumstances (Section 806)
+  - May examine designated FMUs (in consultation with the Supervisory Agency)
+- **Direct Supervisory Responsibility:** The Clearing House Payments Company (CHIPS) and CLS Bank International -- both designated SIFMUs where the Fed is the Supervisory Agency
+- **Indirect Authority:** The Fed has backup examination and enforcement authority over all eight designated SIFMUs, including SEC-supervised (DTC, NSCC, FICC, OCC, ICE Clear Credit) and CFTC-supervised (CME Clearing) entities
+- **Website:** [https://www.federalreserve.gov/paymentsystems/designated_fmu_about.htm](https://www.federalreserve.gov/paymentsystems/designated_fmu_about.htm)
+
+[Source: Federal Reserve Board, "Designated Financial Market Utilities," accessed 2026-04-07; Dodd-Frank Act, Title VIII, Sections 803-806]
+
+### 1.4 FSOC (Financial Stability Oversight Council)
+
+The FSOC is the **inter-agency body** responsible for identifying and responding to threats to U.S. financial stability, including the designation of SIFMUs.
+
+- **Composition:** Chaired by the Secretary of the Treasury; 10 voting members (heads of SEC, CFTC, Federal Reserve, OCC, FDIC, CFPB, FHFA, NCUA, and an independent insurance expert appointed by the President) plus 5 non-voting members
+- **SIFMU Designation Authority:** Under Dodd-Frank Title VIII, Section 804, the FSOC may designate an FMU as "systemically important" if the Council determines that the failure of or disruption to its functioning could create or increase the risk of significant liquidity or credit problems spreading among financial institutions or markets, thereby threatening U.S. financial stability
+- **Designation Criteria (Consideration Factors):**
+  - The aggregate monetary value of transactions processed by the FMU
+  - The aggregate exposure of the FMU to its counterparties
+  - The relationship, interdependencies, and other interactions with other FMUs or payment, clearing, or settlement activities
+  - The effect that the failure of or disruption to the FMU would have on critical markets, financial institutions, or the broader financial system
+  - Any other factors deemed appropriate by the Council
+- **Currently Designated SIFMUs (8 entities, designated July 2012):**
+
+| Entity | Type | Supervisory Agency | Parent |
+|--------|------|-------------------|--------|
+| The Clearing House Payments Company (CHIPS) | Payment System | Federal Reserve | The Clearing House |
+| CLS Bank International | FX Settlement | Federal Reserve | CLS Group |
+| Chicago Mercantile Exchange Inc. | CCP (Derivatives) | CFTC | CME Group |
+| ICE Clear Credit LLC | CCP (CDS) | SEC (SBS) / CFTC | ICE |
+| The Depository Trust Company (DTC) | CSD | SEC | DTCC |
+| National Securities Clearing Corporation (NSCC) | CCP (Equities) | SEC | DTCC |
+| Fixed Income Clearing Corporation (FICC) | CCP (Fixed Income) | SEC | DTCC |
+| The Options Clearing Corporation (OCC) | CCP (Options) | SEC / CFTC (joint) | Independent (user-owned) |
+
+[Source: U.S. Treasury, FSOC Designations page, accessed 2026-04-07; Dodd-Frank Act, Title VIII, Section 804; Federal Reserve Board, "Designated Financial Market Utilities," accessed 2026-04-07]
+
+---
+
+## 2. Key Legislation & Regulations
+
+### 2.1 Dodd-Frank Wall Street Reform and Consumer Protection Act (2010)
+
+The Dodd-Frank Act is the most significant piece of financial regulatory legislation since the 1930s, enacted in response to the 2008 financial crisis. Two titles are directly relevant to clearing and settlement:
+
+#### Title VII -- Wall Street Transparency and Accountability (OTC Derivatives Reform)
+
+Title VII fundamentally reformed OTC derivatives markets by mandating central clearing, trade execution on regulated platforms, and reporting to trade repositories.
+
+**Key Provisions for Clearing:**
+
+- **Clearing Mandate (CEA Section 2(h) / Exchange Act Section 3C):** Standardized swaps and security-based swaps must be cleared through a registered DCO or clearing agency, respectively. The CFTC and SEC determine which products are subject to mandatory clearing.
+  - CFTC has mandated clearing for certain interest rate swaps (fixed-to-floating in USD, EUR, GBP, JPY) and index CDS (CDX.NA.IG, CDX.NA.HY, iTraxx Europe, iTraxx Europe Crossover)
+  - SEC has not yet mandated clearing for any security-based swaps as of early 2026 [unverified]
+- **End-User Exception:** Non-financial entities hedging commercial risk may elect not to clear, subject to reporting
+- **Swap Dealer / Major Swap Participant Registration:** Entities meeting certain thresholds must register with the CFTC (for swaps) or SEC (for SBS), bringing them under capital, margin, conduct, and reporting requirements
+- **Trade Execution Requirement:** Swaps subject to the clearing mandate must be executed on a designated contract market (DCM) or swap execution facility (SEF)
+- **Reporting Requirements:** All swaps (cleared and uncleared) must be reported to a swap data repository (SDR) registered with the CFTC or SEC
+
+[Source: Dodd-Frank Act, Title VII; CFTC, "Clearing Requirement," accessed 2026-04-07]
+
+#### Title VIII -- Payment, Clearing, and Settlement Supervision
+
+Title VIII creates a framework for enhanced regulation and supervision of systemically important FMUs.
+
+**Key Provisions:**
+
+- **SIFMU Designation (Section 804):** FSOC may designate FMUs as systemically important (see Section 1.4 above for the current list of 8 designated SIFMUs)
+- **Risk Management Standards (Section 805):** The appropriate supervisory agency (SEC, CFTC, or Federal Reserve) may prescribe risk management standards governing:
+  - Operations of designated FMUs
+  - The conduct of designated activities by financial institutions
+  - Standards must be designed to promote robust risk management, promote safety and soundness, reduce systemic risks, and support the stability of the broader financial system
+- **Federal Reserve Authority Over SIFMUs (Section 806):**
+  - Examination authority (in consultation with the Supervisory Agency)
+  - May prescribe regulations requiring advance notice of material changes to rules, procedures, or operations
+  - Authority to provide Federal Reserve account services and discount window access to designated FMUs in unusual or exigent circumstances
+- **Enhanced Enforcement (Section 807):** Enhanced enforcement powers including the ability to issue cease-and-desist orders
+- **Review of Standards (Section 810):** The Supervisory Agency must review SIFMU standards every five years
+
+[Source: Dodd-Frank Act, Title VIII, Sections 803-813; Cornell Law Institute, "Dodd-Frank: Title VIII," accessed 2026-04-07]
+
+### 2.2 Securities Exchange Act of 1934
+
+#### Section 17A -- National System for Clearance and Settlement
+
+Section 17A is the **foundational statutory authority** for SEC regulation of clearing agencies. Enacted in 1975 as part of the Securities Acts Amendments, it directs the SEC to facilitate the establishment of a national system for the prompt and accurate clearance and settlement of securities transactions.
+
+**Key Elements:**
+
+- **Registration Requirement:** No clearing agency may perform the functions of a clearing agency unless registered with the SEC (or exempted)
+- **Standards for Registration:** A clearing agency must be organized and have the capacity to:
+  - Facilitate the prompt and accurate clearance and settlement of securities transactions
+  - Safeguard securities and funds in its custody or control
+  - Comply with the provisions of the Exchange Act and SEC rules
+- **SRO Status:** Registered clearing agencies are treated as self-regulatory organizations (SROs), meaning they must file proposed rule changes with the SEC for approval
+- **Fair Access:** Clearing agencies must not unreasonably prohibit or limit access to their services
+- **Due Process:** Clearing agencies must provide fair procedures for disciplinary actions and denial of access
+
+[Source: Securities Exchange Act of 1934, Section 17A, 15 U.S.C. Section 78q-1]
+
+#### Rule 17Ad-22 -- Standards for Clearing Agencies
+
+Rule 17Ad-22 is the SEC's primary regulation implementing standards for registered clearing agencies. It has evolved significantly since its original adoption in 2012 and was substantially expanded in 2016 to incorporate PFMI-aligned standards for SIFMUs.
+
+[Source: SEC, Rule 17Ad-22, 17 CFR 240.17Ad-22; SEC Release No. 34-78961 (September 2016)]
+
+### 2.3 SEC Rule 17Ad-22 (Detailed Breakdown)
+
+Rule 17Ad-22 is divided into multiple sub-parts, each with distinct applicability and requirements:
+
+#### Sub-Part B -- General Standards (Rule 17Ad-22(b) and (c))
+
+Applicable to **all** SEC-registered clearing agencies. Originally adopted in 2012.
+
+| Standard | Requirement |
+|----------|-------------|
+| (b)(1) | Measurement of credit exposures to participants at least once daily |
+| (b)(2) | Use of margin to limit credit exposures; daily mark-to-market |
+| (b)(3) | Maintain sufficient financial resources to withstand the default of the participant family with the largest exposure ("Cover 1") |
+| (b)(4) | Annual model validation of margin systems |
+| (b)(5) | Limit investments of participants' assets to instruments with minimal credit, market, and liquidity risks |
+| (b)(6) | Establish default procedures for participant defaults, including orderly close-out of the defaulting participant's positions |
+| (b)(7) | Settlement finality -- ensure settlement of payment obligations occurs no later than the end of the value date, and where necessary, intraday or real-time |
+| (c) | Governance standards, including transparent governance arrangements and fit-and-proper requirements for directors and management |
+
+#### Sub-Part C -- Enhanced Standards for Covered Clearing Agencies (Rule 17Ad-22(e))
+
+Applicable to **covered clearing agencies**, defined as clearing agencies designated as SIFMUs under Title VIII or that provide CCP services for security-based swaps, or that the SEC determines have a more complex risk profile. Adopted in September 2016, effective April 2017.
+
+These standards are **directly aligned with the PFMI** and represent the most comprehensive set of requirements for major U.S. clearing agencies.
+
+| Rule Provision | PFMI Principle Alignment | Key Requirements |
+|----------------|--------------------------|-----------------|
+| 17Ad-22(e)(1) | Principle 2 (Governance) | Clear governance framework, board composition requirements, risk management committee |
+| 17Ad-22(e)(2) | Principle 3 (Framework for Risk Mgmt) | Comprehensive risk management framework, risk tolerance policy |
+| 17Ad-22(e)(3) | Principle 15 (General Business Risk) | Maintain liquid net assets funded by equity equal to at least 6 months of operating expenses |
+| 17Ad-22(e)(4) | Principle 4 (Credit Risk) | Cover 1 standard (or Cover 2 for CCPs deemed systemically important in multiple jurisdictions); daily stress testing |
+| 17Ad-22(e)(5) | Principle 5 (Collateral) | Reasonably designed policies for acceptable collateral, haircuts, concentration limits |
+| 17Ad-22(e)(6) | Principle 6 (Margin) | Risk-based margin system, confidence interval at least 99%, regular back-testing and model validation |
+| 17Ad-22(e)(7) | Principle 7 (Liquidity Risk) | Maintain sufficient liquid resources to meet obligations in at least Cover 1 scenario; qualifying liquid resources include cash at central bank, committed lines, etc. |
+| 17Ad-22(e)(8) | Principle 8 (Settlement Finality) | Provide clear and certain final settlement no later than end of value date |
+| 17Ad-22(e)(9) | Principle 9 (Money Settlements) | Conduct money settlements in central bank money where practical and available |
+| 17Ad-22(e)(10) | Principle 10 (Physical Deliveries) | Identify, monitor, and manage risks of physical deliveries |
+| 17Ad-22(e)(11) | Principle 11 (CSDs) | CSD-specific requirements for immobilization/dematerialization |
+| 17Ad-22(e)(12) | Principle 12 (DVP/DvP) | Eliminate principal risk through appropriate delivery-versus-payment mechanisms |
+| 17Ad-22(e)(13) | Principle 13 (Participant Default) | Comprehensive default management rules and procedures; testing of default procedures at least annually |
+| 17Ad-22(e)(14) | Principle 14 (Segregation) | Enable segregation and portability of customer positions and collateral |
+| 17Ad-22(e)(15) | Principle 15 (General Business Risk) | Identify, monitor, and manage general business risks; hold liquid net assets at least equal to 6 months operating expenses |
+| 17Ad-22(e)(16) | Principle 16 (Custody & Investment) | Safeguard own and participants' assets; investment policy minimizing risk |
+| 17Ad-22(e)(17) | Principle 17 (Operational Risk) | Identify plausible sources of operational risk; business continuity plan with 2-hour recovery time objective |
+| 17Ad-22(e)(18) | Principle 18 (Access & Participation) | Fair, open, and risk-based participation requirements |
+| 17Ad-22(e)(19) | Principle 19 (Tiered Participation) | Identify, monitor, and manage risks arising from indirect/tiered participation |
+| 17Ad-22(e)(20) | Principle 20 (FMI Links) | Manage risks from links with other FMIs |
+| 17Ad-22(e)(21) | Principle 21 (Efficiency) | Design policies to meet needs of participants and markets served |
+| 17Ad-22(e)(22) | Principle 22 (Communication) | Use relevant internationally accepted communication procedures and standards |
+| 17Ad-22(e)(23) | Principle 23 (Disclosure) | Publicly disclose rules, key procedures, and market data; publish PFMI Disclosure Framework document |
+
+**2023 Amendment -- Treasury Clearing Standards (Rule 17Ad-22(e)(18)(iv)):**
+
+In December 2023, the SEC amended Rule 17Ad-22(e)(18) to add specific requirements for covered clearing agencies providing CCP services for U.S. Treasury securities (see Section 9.1 for details on the Treasury clearing mandate).
+
+[Source: SEC Release No. 34-78961 (September 2016), "Standards for Covered Clearing Agencies"; SEC Release No. 34-99149 (December 2023), "Standards for Covered Clearing Agencies for U.S. Treasury Securities"; 17 CFR 240.17Ad-22(e)]
+
+#### Sub-Part D -- Standards for Security-Based Swap Clearing Agencies (Rule 17Ad-22(d))
+
+Applicable to clearing agencies that clear **security-based swaps (SBS)**. Includes requirements for:
+
+- Financial resources adequate to meet obligations to participants notwithstanding a default by the single participant with the largest net debit
+- Transparent and enforceable legal framework for netting arrangements
+- Participant eligibility criteria based on sufficient financial resources and operational capacity
+
+[Source: SEC Rule 17Ad-22(d); Dodd-Frank Title VII]
+
+### 2.4 Commodity Exchange Act (CEA) and CFTC Part 39 Regulations
+
+The CEA, as amended by Dodd-Frank, establishes the framework for CFTC regulation of derivatives clearing organizations (DCOs).
+
+#### DCO Registration Requirements (CEA Section 5b)
+
+- Any entity seeking to clear futures, options on futures, or swaps must register as a DCO with the CFTC
+- Application filed on Form DCO including organizational documents, rules, risk management framework, financial statements, and compliance plan
+- Registration is conditioned on compliance with 18 Core Principles
+
+#### Core Principles for DCOs (CEA Section 5b(c)(2))
+
+The 18 Core Principles establish the standards DCOs must meet. CFTC Part 39 regulations provide detailed requirements for compliance.
+
+| Core Principle | Subject | Key Requirements |
+|----------------|---------|-----------------|
+| A | Compliance | Comply with CEA and CFTC regulations; establish policies and procedures for compliance |
+| B | Financial Resources | Maintain sufficient resources to cover default of the largest participant family (Cover 1); for Systemically Important DCOs (SIDCOs), Cover 2 |
+| C | Participant & Product Eligibility | Establish risk-based criteria for participant eligibility; product eligibility review |
+| D | Risk Management | Comprehensive risk management framework; margin methodologies; stress testing |
+| E | Settlement Procedures | Complete settlements on a timely basis (no less frequently than daily) |
+| F | Treatment of Funds | Segregation of customer funds from proprietary funds; protection from claims of DCO's creditors |
+| G | Default Rules & Procedures | Detailed default management procedures, including close-out, auction, and loss allocation |
+| H | Rule Enforcement | Enforce compliance with rules; maintain audit trail capability |
+| I | System Safeguards | Robust IT systems; business continuity planning; cybersecurity requirements |
+| J | Reporting | Report to CFTC as required (daily, quarterly, annual reports per Part 39.19) |
+| K | Recordkeeping | Maintain records for a minimum of 5 years |
+| L | Public Information | Publish rules, fees, procedures; make information available to participants |
+| M | Information Sharing | Cooperate with CFTC and other regulators in sharing information |
+| N | Antitrust Considerations | Avoid actions that impede competition or access |
+| O | Governance Fitness Standards | Fitness standards for directors, officers, and key personnel |
+| P | Conflicts of Interest | Establish procedures to minimize conflicts of interest |
+| Q | Composition of Governing Boards | Governance requirements including consideration of public interest |
+| R | Legal Risk | Well-founded legal basis for activities in all relevant jurisdictions |
+
+#### CFTC Part 39 -- Key Regulatory Sub-Parts
+
+| Sub-Part | Coverage | Key Provisions |
+|----------|----------|----------------|
+| A (39.1-39.6) | General Provisions | Definitions, registration procedures, amendments |
+| B (39.10-39.22) | Compliance with Core Principles | Detailed requirements for each core principle |
+| C (39.29-39.40) | Provisions Applicable to SIDCOs and Subpart C DCOs | Enhanced requirements for systemically important DCOs (e.g., Cover 2, enhanced liquidity, recovery/wind-down planning) |
+| D (39.41-39.42) | Provisions Applicable to DCOs Electing Alternative Compliance | Framework for non-U.S. DCOs to comply through home-country regulation |
+
+[Source: CEA, Section 5b; CFTC Part 39, 17 CFR Part 39; CFTC, "DCOs -- Rulemakings," accessed 2026-04-07]
+
+---
+
+## 3. CCP Authorization & Capital Requirements
+
+### 3.1 SEC-Registered Clearing Agencies
+
+#### Registration Process
+
+1. **Application:** File Form CA-1 with the SEC (Section 17A(b)(1) of the Exchange Act)
+2. **Review Period:** SEC reviews for compliance with statutory standards; opportunity for public comment on the application
+3. **Approval/Denial:** SEC grants registration if the clearing agency meets Section 17A requirements and rules thereunder
+4. **Ongoing SRO Obligations:** Once registered, the clearing agency must file proposed rule changes with SEC (Rule 19b-4); SEC approves or disapproves within 45 days (extendable to 90 days)
+
+#### Capital / Financial Resource Requirements
+
+- **Covered Clearing Agencies (SIFMUs):**
+  - **Credit Risk (17Ad-22(e)(4)):** Maintain financial resources sufficient to cover the default of the participant family posing the largest exposure in extreme but plausible conditions (Cover 1). For CCPs that have been determined to be systemically important in more than one jurisdiction or with a complex risk profile, Cover 2 is expected.
+  - **Liquidity (17Ad-22(e)(7)):** Maintain qualifying liquid resources sufficient to cover the liquidity exposure generated by the default of the single largest participant family in extreme but plausible conditions. Qualifying resources include cash at the Federal Reserve or a creditworthy commercial bank, committed lines of credit, highly marketable collateral, and other approved resources.
+  - **General Business Risk (17Ad-22(e)(3) and (e)(15)):** Hold liquid net assets funded by equity equal to at least 6 months of current operating expenses for ongoing operations, plus a recovery/wind-down plan.
+- **Non-SIFMU Clearing Agencies:**
+  - Must comply with Sub-Part B of Rule 17Ad-22 (general standards), including financial resources sufficient to withstand the default of the largest participant family
+
+[Source: SEC Rule 17Ad-22(e)(3), (e)(4), (e)(7), (e)(15); SEC Release No. 34-78961]
+
+### 3.2 CFTC-Registered DCOs
+
+#### Registration Process
+
+1. **Application:** File Form DCO electronically via the CFTC Portal (Part 39, Appendix A)
+2. **Review Period:** CFTC reviews for compliance with 18 Core Principles; may request additional information
+3. **Approval:** CFTC issues order of registration if Core Principles are met
+4. **Ongoing Compliance:** DCOs must file amendments to rules and procedures with the CFTC; must submit to regular examinations
+
+#### Financial Resource Requirements
+
+- **Standard DCOs (Part 39, Subpart B):**
+  - **Core Principle B (Financial Resources):** Maintain financial resources sufficient to cover the default of the participant family creating the largest financial exposure in extreme but plausible conditions (Cover 1)
+  - Financial resources must be held in the form of cleared member contributions (default fund), the DCO's own capital, and other approved resources
+  - At a minimum, must hold one month of projected operating costs as general business risk capital
+- **Systemically Important DCOs (SIDCOs) and Subpart C DCOs (Part 39, Subpart C):**
+  - **Cover 2:** Must maintain resources sufficient to cover the default of the two participant families posing the largest combined exposure in extreme but plausible conditions
+  - Enhanced liquidity requirements
+  - Must develop recovery and orderly wind-down plans
+  - Must maintain a viable plan, approved by the board, for raising additional financial resources if the DCO's prefunded resources are depleted
+
+**Currently CFTC-Registered DCOs (major entities):** CME Clearing (SIDCO), ICE Clear Credit (SIDCO), ICE Clear US, LCH Ltd, LCH SA, Eurex Clearing, JSCC, SGX-DC, ASX Clear (Futures), Nodal Clear, and others. As of early 2026, there are approximately 15 fully registered DCOs and several exempt DCOs.
+
+[Source: CFTC Part 39; CFTC, "Clearing Organizations," accessed 2026-04-07]
+
+### 3.3 Dual-Registered CCPs
+
+Several U.S. CCPs are registered with **both** the SEC and CFTC due to the products they clear:
+
+| Entity | SEC Registration | CFTC Registration | Products Cleared |
+|--------|-----------------|-------------------|-----------------|
+| **OCC** | Clearing Agency (Section 17A) | DCO (Section 5b) | Listed equity options (SEC jurisdiction), futures on securities and security indices (CFTC jurisdiction) |
+| **ICE Clear Credit** | Clearing Agency for SBS (Section 17A) | DCO (Section 5b) | CDS indices (CFTC jurisdiction as swaps), single-name CDS (SEC jurisdiction as SBS) |
+| **CME Clearing** | Not SEC-registered for securities clearing (separate subsidiary CME Securities Clearing Inc. registered December 2025) | DCO and SIDCO | Futures, options on futures, OTC swaps; Treasury securities (via CMESC, SEC-registered) |
+
+**How Dual Registration Works:**
+
+- The SEC and CFTC have entered into a Memorandum of Understanding (MOU) regarding the oversight of dually-registered clearing agencies/DCOs
+- Each agency applies its own set of rules (Rule 17Ad-22 for SEC; Part 39 for CFTC) to the respective product categories
+- The agencies coordinate on examinations and rulemaking to minimize duplication and regulatory burden
+- For OCC specifically, SEC is the "supervisory agency" under Title VIII, but CFTC retains full DCO oversight authority for futures and options on futures cleared through OCC
+
+[Source: SEC/CFTC MOU on Oversight of Dual-Registered Clearing Agencies; OCC PFMI Disclosure Framework, accessed 2026-04-07]
+
+---
+
+## 4. PFMI Compliance
+
+### 4.1 U.S. Adoption of PFMI
+
+The Principles for Financial Market Infrastructures (PFMI), issued by CPMI-IOSCO in April 2012, consist of 24 principles for FMIs and 5 responsibilities for authorities. The U.S. has adopted the PFMI through **domestic regulations** rather than direct transposition:
+
+**SEC Implementation:**
+- Rule 17Ad-22(e) (Sub-Part C, adopted September 2016) -- the "covered clearing agency" standards are closely aligned with PFMI Principles 1-24. The SEC stated that the standards are "designed to be consistent with the relevant PFMI"
+- The mapping is nearly one-to-one: each provision of 17Ad-22(e)(1) through (e)(23) corresponds to a specific PFMI Principle (see detailed table in Section 2.3)
+
+**CFTC Implementation:**
+- Part 39 of CFTC Regulations -- the CFTC has stated that compliance with Part 39, particularly the enhanced requirements in Subpart C for SIDCOs, is indicative of compliance with the PFMI
+- The CFTC updated Part 39 in multiple rulemakings between 2011 and 2020 to align with PFMI requirements
+
+**Joint Statement:** In 2012, the SEC and CFTC issued a joint statement noting that their respective rulemakings were intended to be consistent with the PFMI and that they would coordinate to ensure a comprehensive implementation
+
+[Source: SEC Release No. 34-78961 (September 2016); CFTC Part 39; CPMI-IOSCO, "Implementation monitoring of PFMI: Level 1 assessment -- United States," 2015]
+
+### 4.2 Gaps and Differences from International Standards
+
+While U.S. regulations are broadly consistent with the PFMI, certain differences exist:
+
+| Area | PFMI Standard | U.S. Approach | Notes |
+|------|---------------|---------------|-------|
+| **Cover 2 for CCPs** | PFMI Principle 4: CCPs that are "systemically important in multiple jurisdictions" should use Cover 2 | SEC 17Ad-22(e)(4): Cover 1 as baseline, with expectation of Cover 2 for more complex risk profiles; CFTC Subpart C: Cover 2 for SIDCOs | Not all covered clearing agencies explicitly required to meet Cover 2 under SEC rules |
+| **Central Bank Money Settlement** | PFMI Principle 9: Conduct money settlements in central bank money where practical and available | DTC and NSCC settle through the Federal Reserve (Fedwire); FICC settles through tri-party settlement banks (primarily BNYM) for repo | FICC GSD repo settlement involves significant commercial bank money exposure |
+| **Recovery Planning** | PFMI Guidance on Recovery (2017): Comprehensive recovery planning tools | SEC and CFTC require recovery and wind-down plans; implementation varies across entities | No standalone "CCP Recovery" regulation; requirements embedded in existing rules |
+| **Resolution Regime** | PFMI: Authorities should have appropriate resolution frameworks | No dedicated CCP resolution legislation in the U.S. (OLA under Dodd-Frank Title II is primary framework, but not specifically designed for CCPs) | Legislative gap -- various bills proposed but none enacted as of early 2026 |
+| **PQD Compliance** | CPMI-IOSCO Public Quantitative Disclosures | All designated SIFMUs publish quarterly PQD reports; comply with the CPMI-IOSCO PQD framework | Full compliance |
+
+[Source: CPMI-IOSCO, "Implementation monitoring of PFMI: Second update to Level 1 Assessment Report," 2015; SEC Release No. 34-78961; industry commentary]
+
+---
+
+## 5. Recovery & Resolution Framework
+
+### 5.1 Recovery Plans (Living Wills for CCPs)
+
+Under the PFMI and U.S. regulations, SIFMUs and SIDCOs are expected to maintain viable recovery and orderly wind-down plans.
+
+**SEC Requirements (Covered Clearing Agencies):**
+- Rule 17Ad-22(e)(3)(ii) requires covered clearing agencies to maintain a viable plan, approved by the board, for raising additional financial resources if the clearing agency's existing resources are insufficient to cover losses from clearing member defaults
+- Rule 17Ad-22(e)(15)(ii) requires a viable plan for recovery or orderly wind-down that considers scenarios of general business losses (as opposed to default losses)
+- Each covered clearing agency's recovery tools typically include:
+  - Assessment powers (ability to require additional contributions from clearing members)
+  - Voluntary tear-up / partial tear-up of positions
+  - Variation margin haircutting (VMGH) -- reducing gains owed to non-defaulting members
+  - Forced allocation of positions
+  - Reduction of service scope
+
+**CFTC Requirements (SIDCOs and Subpart C DCOs):**
+- Part 39.39(c) requires SIDCOs and Subpart C DCOs to maintain viable plans, approved by the board, for recovery or orderly wind-down
+- The plan must identify scenarios that could prevent the DCO from continuing as a going concern, including uncovered credit losses, liquidity shortfalls, and general business losses
+- The plan must identify tools and procedures to enable the DCO to recover and continue operations or wind down in an orderly manner
+
+**Recovery Tools Used by U.S. CCPs:**
+
+| CCP | Assessment Powers | VMGH | Position Tear-Up | Other Tools |
+|-----|-------------------|------|-------------------|-------------|
+| NSCC | Yes (loss allocation waterfall) | Yes | Yes (partial close-out) | Service closure |
+| FICC | Yes | Yes | Yes | Service reduction |
+| OCC | Yes | Yes | Yes | Capital call on shareholders [unverified] |
+| CME Clearing | Yes (assessment rights) | Yes | Yes | Limited recourse to guaranty fund; use of CME Group capital contribution |
+| ICE Clear Credit | Yes | Yes | Yes (forced allocation) | Reduced service |
+
+[Source: NSCC Rules & Procedures; FICC Rules; OCC Rules; CME Clearing PFMI Disclosure; ICE Clear Credit Rules; SEC Rule 17Ad-22(e)(3), (e)(15); CFTC Part 39.39]
+
+### 5.2 Resolution Framework
+
+**Orderly Liquidation Authority (OLA) -- Dodd-Frank Title II:**
+
+- Title II of Dodd-Frank establishes the Orderly Liquidation Authority (OLA) as a resolution framework for "financial companies" whose failure would have serious adverse effects on U.S. financial stability
+- The FDIC is designated as the receiver under OLA
+- **Applicability to CCPs:** Title II broadly applies to "financial companies," and the definition could encompass clearing agencies and DCOs. However, Title II was primarily designed for bank holding companies and large financial institutions, not specifically for CCP resolution
+- **Three-Key Determination:** To invoke OLA, the Secretary of the Treasury (in consultation with the President) must determine, upon the recommendation of two-thirds of the Federal Reserve Board and two-thirds of the SEC or CFTC (depending on the entity's primary regulator), that:
+  1. The financial company is in default or in danger of default
+  2. The failure of the company and its resolution under otherwise applicable law would have serious adverse effects on U.S. financial stability
+  3. No viable private sector alternative is available
+
+**FDIC Role:**
+- The FDIC would serve as receiver under OLA
+- The FDIC has studied CCP resolution scenarios but has not published a dedicated CCP resolution framework
+- In 2024, the FDIC and Federal Reserve issued updated guidance on resolution planning for large financial institutions (Title I living wills), but this primarily targets bank holding companies, not CCPs
+
+**Legislative Gap:**
+- The U.S. lacks a dedicated CCP resolution regime analogous to the EU's CCP Recovery and Resolution Regulation (EU 2021/23)
+- Multiple legislative proposals have been introduced in Congress to create a CCP-specific resolution framework, but none have been enacted as of early 2026
+- Industry groups (e.g., SIFMA, FIA) have advocated for tailored CCP resolution authority that accounts for the unique waterfall structure and loss-allocation tools of CCPs
+
+[Source: Dodd-Frank Act, Title II; FDIC, "Overview of Resolution Under Title II of the Dodd-Frank Act," April 2024; Georgetown Financial Policy Institute, "An Overview of the Dodd-Frank Act and its Evolution," 2025]
+
+---
+
+## 6. Settlement Regulation
+
+### 6.1 T+1 Settlement
+
+#### Background and Regulatory History
+
+The U.S. settlement cycle has progressively shortened over several decades:
+
+| Period | Settlement Cycle | Regulatory Basis |
+|--------|-----------------|------------------|
+| Pre-1993 | T+5 | Industry practice |
+| 1993-2017 | T+3 | SEC Rule 15c6-1 (adopted June 1993, effective June 1995) |
+| September 2017 - May 2024 | T+2 | SEC amendment to Rule 15c6-1 (adopted March 2017, effective September 5, 2017) |
+| May 28, 2024 - present | T+1 | SEC amendment to Rule 15c6-1 (adopted February 2023, effective May 28, 2024) |
+
+#### SEC Rule 15c6-1 (T+1 Amendment)
+
+In February 2023, the SEC adopted final rules shortening the standard settlement cycle from T+2 to T+1:
+
+- **Rule 15c6-1(a):** Prohibits a broker or dealer from effecting or entering into a contract for the purchase or sale of a security that provides for payment of funds and delivery of securities later than T+1, unless otherwise expressly agreed to by the parties
+- **Rule 15c6-1(b):** Firm commitment offerings priced after 4:30 PM ET shortened from T+4 to T+2
+- **Rule 15c6-2 (NEW):** Requires broker-dealers engaged in allocation, confirmation, or affirmation to enter into written agreements or establish contractual, binding, or other arrangements with relevant parties to ensure completion of these processes as soon as technologically practicable and no later than end of trade date (T+0)
+- **Effective Date:** May 28, 2024
+
+[Source: SEC Release No. 34-96930 (February 2023); SEC, "Shortening the Securities Transaction Settlement Cycle -- Compliance Guide," accessed 2026-04-07]
+
+#### Implementation Results
+
+The transition to T+1 was widely regarded as successful, with several measurable impacts:
+
+**Clearing Fund Reduction:**
+- NSCC Clearing Fund decreased by an average of **$2.4 billion (20%)** from the prior month average of $12.2 billion (T+2) to $9.8 billion (T+1) in the immediate post-transition period
+- Over the first full quarter (Q3 2024), the Clearing Fund decreased by approximately **$3.7 billion (29%)** from the prior quarter average of $12.8 billion to $9.1 billion
+- This reduction represents significant capital savings for clearing members
+
+**Settlement Fail Rates:**
+- Contrary to initial industry concerns about increased fails, settlement fail rates remained **stable**
+- First day of T+1 (May 28, 2024): CNS fail rate was 1.9% (vs. 2.01% pre-T+1); DTC non-CNS fail rate was 2.92% (vs. 3.24% pre-T+1)
+- July 2024 monthly average: CNS fail rate 2.12%, DTC non-CNS fail rate 3.31% -- both consistent with T+2 historical averages
+
+**Affirmation Rates:**
+- Same-day affirmation rates increased significantly from approximately 74% (pre-T+1) to over 90% in the months following implementation
+- Industry investment in DTCC's CTM (Central Trade Manager) and ITP (Institutional Trade Processing) platforms drove improvements
+
+**Emerging Challenges:**
+- **Liquidity Shortfalls:** NSCC reported a liquidity shortfall of **$7.1 billion in Q4 2024**, attributed to year-end index rebalancing activity under the compressed T+1 timeline. This raised concerns about NSCC's liquidity resources during peak-volume periods
+- **FX Funding:** International investors, particularly in Asia-Pacific time zones, faced challenges with FX funding due to the compressed settlement window and CLS settlement cut-off times
+- **Securities Lending Recall Timing:** Compressed timelines created operational challenges for securities lending recall and return processes
+
+[Source: SIFMA/ICI/DTCC, "T+1 After Action Report," October 2024; DTCC, "Comments on Industry's T+1 Progress," May 2024; Risk.net, "NSCC liquidity shortfalls raise T+1 concerns," 2025; Finadium, "DTCC analysis shows clearing fund drops $4bn after T+1 starts," 2024]
+
+### 6.2 DVP (Delivery-versus-Payment) Requirements
+
+The SEC requires covered clearing agencies to eliminate principal risk through appropriate DVP mechanisms:
+
+- **Rule 17Ad-22(e)(12):** A covered clearing agency must establish, implement, maintain, and enforce written policies and procedures reasonably designed to eliminate principal risk by conditioning the final settlement of one obligation upon the final settlement of the linked obligation
+- **Implementation in Practice:**
+  - **DTC:** Operates a DVP settlement system for equities and corporate bonds. Securities movements are linked to payment obligations through the Federal Reserve's Fedwire system. DTC's CNS (Continuous Net Settlement) and non-CNS settlement processes both operate on a DVP basis.
+  - **FICC GSD:** Settlement of U.S. Treasury transactions occurs through DVP on Fedwire Securities (for direct settlements) or through tri-party settlement (primarily at Bank of New York Mellon) for repo transactions
+  - **NSCC:** Net settlement occurs through DTC on a DVP basis; NSCC's CNS system nets all buy and sell obligations and settles the net on a delivery-versus-payment basis through DTC
+
+[Source: SEC Rule 17Ad-22(e)(12); DTC Settlement Guide; FICC GSD Rules; NSCC Rules]
+
+---
+
+## 7. Market Data & Reporting
+
+### 7.1 Trade Reporting (Dodd-Frank)
+
+Title VII of Dodd-Frank requires comprehensive trade reporting for all swap transactions:
+
+**CFTC Swap Reporting (Part 43 and Part 45):**
+- **Part 43 -- Real-Time Public Reporting:** All publicly reportable swap transactions must be reported to a registered SDR and disseminated to the public in real-time (as soon as technologically practicable after execution). Reports include price, size (subject to block trade delays), underlying asset, and other terms.
+- **Part 45 -- Swap Data Recordkeeping and Reporting:** Detailed swap data (creation data, continuation data, termination data) must be reported to a registered SDR for regulatory purposes. The CFTC has implemented Unique Transaction Identifier (UTI) and Unique Product Identifier (UPI) requirements aligned with global harmonization efforts.
+- **Registered SDRs (CFTC):** DTCC Data Repository (DDR), ICE Trade Vault, CME Global Repository Services, and others
+
+**SEC SBS Reporting (Regulation SBSR):**
+- Security-based swap transactions must be reported to a registered SBS data repository (SBSDR)
+- Real-time dissemination requirements apply, similar to the CFTC regime
+- The SEC's reporting regime for SBS became fully operational in 2022-2023
+
+**CCP Trade Reporting:**
+- CCPs are themselves reporting entities for cleared transactions. When a swap is cleared, the CCP novates the trade and the resulting cleared swap must be reported to an SDR.
+
+[Source: CFTC Part 43, Part 45; SEC Regulation SBSR; Dodd-Frank Title VII]
+
+### 7.2 CPMI-IOSCO PQD Compliance
+
+All eight designated SIFMUs in the United States publish quarterly Public Quantitative Disclosures (PQD) in accordance with the CPMI-IOSCO PQD framework:
+
+- **Scope of PQD:** Covers credit risk, liquidity risk, collateral, margin, default fund, back-testing results, settlement data, operational risk metrics, and other quantitative measures
+- **Publication Frequency:** Quarterly, typically with a one-quarter lag
+- **PFMI Disclosure Framework:** Each SIFMU also publishes a comprehensive qualitative PFMI Disclosure Framework document (updated periodically), describing how the entity observes each of the 24 PFMI Principles
+- **Where Published:** Typically on the entity's website (e.g., DTCC publishes PQD for NSCC, FICC, and DTC at dtcc.com/legal/policy-and-compliance)
+
+[Source: CPMI-IOSCO, "Public quantitative disclosure standards for central counterparties," 2015; DTCC, OCC, CME Group respective PQD publications]
+
+---
+
+## 8. Cross-Border Arrangements
+
+### 8.1 SEC Equivalence / Recognition of Foreign CCPs
+
+The SEC does not have a formal "equivalence" or "recognition" regime for foreign CCPs analogous to the EU's EMIR equivalence framework. Instead:
+
+- **Exempt Clearing Agency Status:** The SEC may grant exemptions from full registration to foreign clearing agencies under Section 17A or Exchange Act Rule 3a71-6 (substituted compliance for SBS entities). This is done on a case-by-case basis.
+- **No-Action Relief:** The SEC staff may issue no-action letters permitting foreign CCPs to provide limited clearing services to U.S. persons without full registration
+- **Substituted Compliance (SBS):** Under Dodd-Frank Title VII, the SEC has adopted a substituted compliance framework for security-based swaps, allowing compliance with home-country regulation to satisfy certain SEC requirements where the SEC has found the foreign regime comparable
+
+### 8.2 CFTC Foreign DCO Registration
+
+The CFTC has a more developed framework for recognizing foreign CCPs:
+
+**Full Registration:**
+- Foreign DCOs may register fully with the CFTC and comply with all Core Principles. Example: LCH Ltd (UK-based) is fully registered with the CFTC.
+
+**Registration with Alternative Compliance (Part 39, Subpart D):**
+- Adopted in September 2020, this framework allows non-U.S. DCOs to register with the CFTC and comply through their home-country regulations, provided:
+  1. The CFTC determines that the DCO's home-country regulatory regime is comparable to the CFTC's Core Principles
+  2. The DCO is in good regulatory standing with its home-country regulator
+  3. A satisfactory MOU or similar arrangement exists between the CFTC and the home-country regulator
+- The DCO must still comply with certain CFTC requirements directly (e.g., reporting, information sharing)
+
+**Exempt DCO Status:**
+- Under CEA Section 5b(h), the CFTC may exempt a foreign DCO from registration if the DCO is subject to comparable, comprehensive supervision in its home country
+- Exempt DCOs are limited to clearing for non-U.S. persons or certain institutional U.S. participants
+- This is a more limited form of recognition than full registration
+
+**Comparability Determinations:**
+- The CFTC has issued comparability determinations for the EU, UK, Japan, Australia, and other jurisdictions
+- The EU-U.S. CCP equivalence framework was established in 2016, with the CFTC finding certain EU laws comparable to CFTC requirements for DCOs
+
+[Source: CFTC Part 39, Subpart D; CFTC, "Comparability Determinations for Substituted Compliance Purposes," accessed 2026-04-07; CEA Section 5b(h); SEC Rule 3a71-6]
+
+---
+
+## 9. Recent Regulatory Changes (2023-2026)
+
+### 9.1 Treasury Clearing Mandate
+
+The Treasury clearing mandate is the most significant U.S. clearing regulatory development since the Dodd-Frank swap clearing mandate.
+
+#### Background
+
+The $28+ trillion U.S. Treasury market is the world's largest and most liquid government bond market. However, a large portion of Treasury transactions -- particularly in the repo market and between interdealer brokers and non-dealer participants -- have historically been settled bilaterally rather than through central clearing. Stress events (the September 2019 repo spike, the March 2020 Treasury market "dash for cash") highlighted vulnerabilities from insufficient central clearing and the concentration of settlement risk.
+
+#### SEC Final Rule (December 2023)
+
+In December 2023, the SEC adopted amendments to Rule 17Ad-22(e)(18) requiring covered clearing agencies for U.S. Treasury securities (primarily FICC) to adopt rules requiring that their direct participants centrally clear eligible secondary market transactions.
+
+**Key Requirements:**
+
+1. **Mandatory Clearing of Eligible Secondary Market Transactions (ESMTs):**
+   - Direct participants of a covered clearing agency for U.S. Treasury securities must submit for clearance and settlement all ESMTs, including:
+     - Cash market transactions between a direct participant and a registered broker-dealer, government securities dealer, or government securities broker
+     - Cash market transactions between a direct participant and an interdealer broker
+     - Repo and reverse repo transactions between a direct participant and a counterparty
+   - Certain exemptions apply (e.g., transactions between affiliates, central bank transactions)
+
+2. **Separation of House and Customer Margin:**
+   - CCAs must calculate, collect, and hold margin from direct participants for proprietary positions separately from margin for customer/indirect participant positions
+   - This is intended to protect customer collateral and enhance the portability of customer positions in a default scenario
+
+3. **Facilitating Access (Indirect Participation):**
+   - CCAs must establish policies designed to facilitate access to clearing for indirect participants
+   - This includes requirements to offer "done-away" clearing (where a customer can clear through a direct participant different from the executing dealer)
+
+#### Implementation Timeline (as Revised February 2025)
+
+| Milestone | Original Date | Extended Date |
+|-----------|---------------|---------------|
+| CCA rules for margin segregation and access effective | March 31, 2025 | March 31, 2025 (with temporary exemption for margin segregation until September 30, 2025) |
+| FICC rulebook modifications | -- | September 30, 2025 |
+| Cash market ESMTs -- compliance date | December 31, 2025 | **December 31, 2026** |
+| Repo ESMTs -- compliance date | June 30, 2026 | **June 30, 2027** |
+
+The one-year extension was adopted by the SEC in February 2025 to provide additional time for industry preparation, FICC rulebook changes, and resolution of outstanding interpretive questions.
+
+#### Expansion of Clearing Infrastructure
+
+- **FICC:** As the incumbent CCA for U.S. Treasury securities (via its Government Securities Division), FICC has been developing expanded sponsoring member and agent clearing models to accommodate the expected increase in cleared volumes
+- **CME Securities Clearing Inc.:** On December 1, 2025, the SEC approved the registration of CME Securities Clearing Inc. as a second clearing agency for U.S. Treasury securities, breaking FICC's monopoly. CME Securities Clearing plans to launch in Q2 2026.
+- **ICE Clear Credit LLC:** Has also applied for registration as a clearing agency for U.S. Treasury securities; application was pending as of early 2026
+
+**Expected Impact:**
+- An estimated **$4 trillion per day** in U.S. Treasury market transactions will require central clearing upon full implementation
+- Significant increase in demand for clearing member services and collateral
+- Potential for increased netting efficiency and reduced bilateral settlement risk
+
+[Source: SEC Release No. 34-99149 (December 2023); SEC Release No. 34-102487 (February 2025); SEC Press Release 2025-43; Arnold & Porter, "U.S. Treasury Clearing: Key Questions and Answers," February 2025; Arnold & Porter, "U.S. Treasury Clearing: SEC Extends Compliance Dates," March 2025; Federal Register, "CME Securities Clearing Inc.; Order Granting Registration," December 2025; J.P. Morgan, "The U.S. Treasury Clearing Mandate Explained," accessed 2026-04-07]
+
+### 9.2 Other Recent Regulatory Changes
+
+#### SEC Shortening of Settlement Cycle to T+1 (May 2024)
+- See Section 6.1 for full details
+- Effective May 28, 2024; resulted in significant clearing fund reductions and stable fail rates
+
+#### CFTC Part 39 Reporting Amendments (2023)
+- The CFTC adopted amendments to DCO reporting and information requirements under Part 39.19, updating daily and event-specific reporting fields, and codifying reporting requirements in a new appendix
+- Effective date: 2023
+
+[Source: CFTC Press Release 8758-23, "CFTC Approves Final DCO Reporting and Information Requirement," 2023]
+
+#### SEC Climate and ESG-Related Disclosure (2024-2025)
+- While primarily a corporate disclosure requirement, the SEC's climate disclosure rules (adopted March 2024, subsequently stayed by litigation) could affect clearing agencies' disclosure practices and risk assessment frameworks [unverified]
+
+#### CFTC Governance Requirements for DCOs (2023)
+- The CFTC proposed amendments to Part 39 to enhance governance requirements for DCOs, including requirements for risk committees, fitness standards, and conflicts of interest procedures
+- Final rule status as of early 2026: adopted in part [unverified]
+
+[Source: Federal Register, "Governance Requirements for Derivatives Clearing Organizations," July 2023]
+
+#### DTC Tokenization / Digital Asset Custody (2025-2026)
+- In December 2025, the SEC issued a No-Action Letter authorizing DTC to offer tokenization services on the Canton Network for DTC-custodied U.S. Treasury securities
+- DTCC Digital Assets Solutions launched as a new business line in 2026, with a Canton Network tokenization MVP planned for H1 2026
+
+[Source: DTCC 2024 Annual Report; DTCC website, accessed 2026-04-07]
+
+---
+
+## 10. Comparison with Korea
+
+### 10.1 Korean Clearing & Settlement Regulatory Framework
+
+Korea's clearing and settlement infrastructure is governed by the **Financial Investment Services and Capital Markets Act (FSCMA)**, with oversight from the Financial Services Commission (FSC) and the Financial Supervisory Service (FSS).
+
+**Key Entities:**
+
+| Entity | Role | Regulatory Basis |
+|--------|------|-----------------|
+| **FSC (Financial Services Commission)** | Primary regulator; sets policy and issues regulations for capital markets, including clearing and settlement | Government Organization Act; FSCMA |
+| **FSS (Financial Supervisory Service)** | Executive arm of FSC; conducts examinations, investigations, and sanctions | Act on the Establishment of Financial Supervisory Organizations |
+| **KRX (Korea Exchange)** | Operates exchange markets and serves as **CCP** for exchange-traded securities and derivatives | FSCMA (established as a special corporation) |
+| **KSD (Korea Securities Depository)** | Sole CSD in Korea; also acts as CCP for institutional OTC settlements (since 2013) | FSCMA (established as a special corporation) |
+| **BOK (Bank of Korea)** | Oversight of payment and settlement systems for financial stability purposes | Bank of Korea Act |
+
+**KRX as CCP:**
+- KRX acts as CCP for all exchange-traded transactions (equities, bonds, derivatives) on its markets
+- KRX assumes settlement obligations through novation, performs multilateral netting, and guarantees settlement
+- The KRX CCP function is embedded within the exchange organization (not a separately incorporated entity)
+
+**KSD as CSD and CCP:**
+- KSD is the sole central securities depository for all securities in Korea
+- Since 2013, KSD has also acted as CCP for institutional settlements in OTC-traded stocks, bonds, repos, and securities lending
+- Settlement occurs through DVP on KSD's settlement system, with funds settlement through BOK-Wire+
+
+[Source: IMF, "Republic of Korea: Financial Sector Assessment Program -- CPSS-IOSCO Assessment of KRX CCP," 2014; BIS, "Payment, clearing and settlement systems in Korea," 2011; KRX Clearing website, accessed 2026-04-07; Chambers, "Financial Services Regulation 2025 -- South Korea," accessed 2026-04-07]
+
+### 10.2 Key Differences
+
+| Aspect | United States | Korea |
+|--------|---------------|-------|
+| **Regulatory Structure** | Multi-regulator: SEC (securities), CFTC (derivatives), Federal Reserve (systemic risk), FSOC (SIFMU designation) | Consolidated: FSC/FSS oversee all capital markets; BOK for payment system stability |
+| **CCP Model** | Multiple independent CCPs (NSCC, FICC, OCC, CME, ICE Clear, etc.) -- each separately incorporated and regulated | KRX serves as the single CCP for exchange-traded products; KSD as CCP for OTC institutional transactions -- both embedded within market infrastructure entities |
+| **CSD Model** | DTC is the sole CSD for equities and corporate bonds; FICC handles Treasury settlement; Fedwire Securities for government securities transfers | KSD is the sole CSD for all securities |
+| **Separation of CCP and Exchange** | CCPs are generally separate legal entities from exchanges (though often within the same group, e.g., CME Group owns both the exchange and CCP) | CCP function is embedded within KRX (not separately incorporated) -- this has been flagged by CPMI-IOSCO as a potential governance concern |
+| **SIFMU / Systemic Designation** | 8 designated SIFMUs under Dodd-Frank Title VIII; enhanced supervision by primary regulator + Federal Reserve backup authority | KRX CCP and KSD are recognized as systemically important FMIs but Korea does not have a formal "SIFMU designation" process analogous to Title VIII [unverified] |
+| **Settlement Cycle** | T+1 (since May 28, 2024) for equities, corporate bonds, ETFs | T+2 for equities; KSD and KRX announced a working group in October 2025 to explore T+1 transition |
+| **Default Waterfall** | Multi-layered: defaulter's margin -> defaulter's default fund contribution -> CCP skin-in-the-game -> non-defaulter's default fund contributions -> CCP additional resources -> assessment powers / recovery tools | Multi-layered: defaulter's assets (margin, settlement funds) -> defaulter's JCF (Joint Compensation Fund) contribution -> KRX settlement reserve (skin-in-the-game) -> non-defaulter's JCF contributions -> KRX remaining settlement reserve |
+| **Recovery / Resolution** | No dedicated CCP resolution regime; OLA under Dodd-Frank Title II as fallback; covered clearing agencies must have recovery plans | No dedicated CCP resolution legislation; FSCMA provides some authority for FSC intervention; recovery planning requirements less formalized than U.S. [unverified] |
+| **PFMI Compliance** | SEC Rule 17Ad-22(e) and CFTC Part 39 implement PFMI; all SIFMUs publish PFMI Disclosure Frameworks and quarterly PQDs | KRX CCP and KSD have undergone CPMI-IOSCO/FSAP assessments (2013-2014); some concerns raised about governance (CCP within exchange) and financial resources |
+| **Treasury / Government Bond Clearing** | Mandatory central clearing through FICC (expanding under Treasury clearing mandate); CME Securities Clearing as second CCP from 2026 | Government bond clearing through KRX CCP (exchange-traded) and KSD (OTC institutional); no specific mandate for expanded central clearing |
+| **Derivatives Clearing** | Separate DCOs (CME, ICE Clear, etc.) regulated by CFTC; swap clearing mandate under Dodd-Frank | KRX is the sole CCP for exchange-traded derivatives (KOSPI 200 options/futures, etc.); no OTC derivatives clearing mandate analogous to Dodd-Frank [unverified] |
+| **Cross-Border CCP Recognition** | CFTC has developed alternative compliance and exempt DCO frameworks; SEC has case-by-case approach | Korea (FSC) has entered into MOUs with foreign regulators (including CFTC-FSC-FSS MOU signed September 2025 for clearing cooperation) |
+| **Margin Methodology** | Varies by CCP: NSCC uses VaR-based (NSCC Clearing Fund formula), CME uses SPAN/CME CORE, OCC uses STANS (Monte Carlo) | KRX uses KOSCOM-developed risk management system; margin methodology for derivatives is VaR-based with historical simulation [unverified] |
+
+### 10.3 Key Observations for KRX Benchmarking
+
+1. **CCP Independence:** The U.S. model of legally separate CCPs (distinct from exchanges) is the international norm and is recommended by the PFMI (Principle 2 on governance). Korea's model of embedding the CCP function within KRX has been flagged as a potential governance and conflict-of-interest concern in past FSAP assessments. Separating the CCP into an independent entity could be considered.
+
+2. **T+1 Transition:** The U.S. experience provides a useful blueprint for Korea's planned T+1 transition. Key lessons include the importance of same-day affirmation, the positive impact on clearing fund requirements (20-29% reduction at NSCC), and the challenges for international participants regarding FX funding and time-zone differences.
+
+3. **Treasury Clearing Mandate:** The SEC's expansion of mandatory central clearing for U.S. Treasuries is a significant structural change. Korea may wish to evaluate whether similar expansion of central clearing coverage for Korean government bonds (KTBs) in the OTC market would enhance market resilience.
+
+4. **Recovery and Resolution:** Both jurisdictions lack dedicated CCP resolution legislation. The U.S. has more developed recovery planning requirements (through Rule 17Ad-22(e) and Part 39), which could serve as a reference for Korea's development of CCP recovery frameworks.
+
+5. **Multi-CCP Competition:** The U.S. is introducing competition in Treasury clearing (FICC + CME Securities Clearing). Korea's single-CCP model may benefit from studying the effects of CCP competition on fees, innovation, and risk management.
+
+---
+
+## Sources
+
+- [SEC, "About the SEC" and "Division of Trading and Markets"](https://www.sec.gov)
+- [CFTC, "Derivatives Clearing Organizations"](https://www.cftc.gov/IndustryOversight/ClearingOrganizations/index.htm)
+- [CFTC, "Division of Clearing and Risk"](https://www.cftc.gov)
+- [Federal Reserve Board, "Designated Financial Market Utilities"](https://www.federalreserve.gov/paymentsystems/designated_fmu_about.htm)
+- [U.S. Treasury, FSOC Designations](https://home.treasury.gov/policy-issues/financial-markets-financial-institutions-and-fiscal-service/fsoc/designations)
+- [Dodd-Frank Wall Street Reform and Consumer Protection Act](https://www.congress.gov/bill/111th-congress/house-bill/4173)
+- [Securities Exchange Act of 1934, Section 17A](https://www.law.cornell.edu/uscode/text/15/78q-1)
+- [SEC Rule 17Ad-22](https://www.ecfr.gov/current/title-17/chapter-II/part-240/subpart-A/subject-group-ECFRc7dbd5ea23d3239)
+- [SEC Release No. 34-78961 (September 2016) -- Standards for Covered Clearing Agencies](https://www.sec.gov/rules-regulations/2016/09/34-78961)
+- [SEC Release No. 34-99149 (December 2023) -- Treasury Clearing Standards](https://www.sec.gov/files/rules/final/2023/34-99149.pdf)
+- [SEC Release No. 34-102487 (February 2025) -- Extension of Treasury Clearing Compliance Dates](https://www.sec.gov/files/rules/final/2025/34-102487.pdf)
+- [SEC Release No. 34-96930 (February 2023) -- T+1 Settlement](https://www.sec.gov/files/rules/final/2023/34-96930.pdf)
+- [CFTC Part 39, 17 CFR Part 39](https://www.ecfr.gov/current/title-17/chapter-I/part-39)
+- [Commodity Exchange Act, Section 5b](https://www.law.cornell.edu/uscode/text/7/7a-1)
+- [SIFMA/ICI/DTCC, "T+1 After Action Report," October 2024](https://www.sifma.org/resources/news/press-releases/sifma-ici-and-dtcc-release-t1-after-action-report-industry-coordination-led-to-successful-transition-reducing-risk-and-costs-in-the-system/)
+- [Arnold & Porter, "U.S. Treasury Clearing: Key Questions and Answers," February 2025](https://www.arnoldporter.com/en/perspectives/advisories/2025/02/us-treasury-clearing-key-questions-and-answers)
+- [Arnold & Porter, "U.S. Treasury Clearing: SEC Extends Compliance Dates," March 2025](https://www.arnoldporter.com/en/perspectives/advisories/2025/03/us-treasury-clearing-sec-extends-compliance-dates)
+- [J.P. Morgan, "The U.S. Treasury Clearing Mandate Explained"](https://www.jpmorgan.com/insights/markets-and-economy/markets/us-treasury-clearing-mandate)
+- [Federal Register, "CME Securities Clearing Inc.; Order Granting Registration," December 2025](https://www.federalregister.gov/documents/2025/12/04/2025-21908/cme-securities-clearing-inc-order-granting-an-application-for-registration-as-a-clearing-agency)
+- [SEC, "Treasury Clearing Implementation"](https://www.sec.gov/featured-topics/treasury-clearing-implementation)
+- [CPMI-IOSCO, "Principles for financial market infrastructures," April 2012](https://www.bis.org/cpmi/info_pfmi.htm)
+- [IMF, "Republic of Korea: FSAP -- CPSS-IOSCO Assessment of KRX CCP," 2014](https://www.imf.org/external/pubs/ft/scr/2014/cr14308.pdf)
+- [World Bank, "Republic of Korea: Detailed Assessment of Observance of CPSS-IOSCO PFMI," 2014](https://documents1.worldbank.org/curated/en/673871468091182735/pdf/926200FSAP0P140pdate0DAR0CPSS0IOSCO.pdf)
+- [BIS, "Payment, clearing and settlement systems in Korea," 2011](https://www.bis.org/cpmi/publ/d97_kr.pdf)
+- [Chambers, "Financial Services Regulation 2025 -- South Korea"](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/south-korea)
+- [CFTC-FSC-FSS MOU on Clearing Cooperation, September 2025](https://www.cftc.gov/sites/default/files/idc/groups/public/@internationalaffairs/documents/file/cftc-kfsc-kfss-clearingmou0925.pdf)
+- [KRX Clearing -- Default Waterfall](https://clearing.krx.co.kr/en/contents/GLB/06/0608/0608050501/GLB0608050501.jsp)
+- [FDIC, "Overview of Resolution Under Title II of the Dodd-Frank Act," April 2024](https://www.fdic.gov/sites/default/files/2024-04/spapr1024b_0.pdf)
+- [Risk.net, "NSCC liquidity shortfalls raise T+1 concerns," 2025](https://www.risk.net/risk-management/7961285/nscc-liquidity-shortfalls-raise-t1-concerns)
+- [Finadium, "DTCC analysis shows clearing fund drops $4bn after T+1 starts," 2024](https://finadium.com/dtcc-analysis-shows-clearing-fund-drops-4bn-after-t1-starts/)
+- [Georgetown Financial Policy Institute, "An Overview of the Dodd-Frank Act and its Evolution," 2025](https://finpolicy.georgetown.edu/wp-content/uploads/2025/07/Dodd-Frank.docx.pdf)

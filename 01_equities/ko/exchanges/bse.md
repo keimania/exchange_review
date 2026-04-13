@@ -1,0 +1,422 @@
+# BSE Ltd (구 Bombay Stock Exchange)
+
+> **최종 업데이트:** 2026-04-06
+> **조사 등급:** Tier 3
+> **도메인:** 주식
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | BSE Ltd (구 Bombay Stock Exchange) |
+| 약칭 | BSE |
+| 웹사이트 | https://www.bseindia.com |
+| 설립 연도 | 1875년 (아시아 최고(最古) 증권거래소) |
+| 소재지 | 인도 / 뭄바이, 마하라슈트라주 (Phiroze Jeejeebhoy Towers, Dalal Street) |
+| 소유 구조 | NSE에 상장 (종목코드: BSE); 2005년 주식회사화(2007년 발효), 2017년 2월 NSE에 IPO |
+| 모회사 / 그룹 | BSE Ltd (자체 상장 지주회사); 주요 자회사로 Indian Clearing Corporation Limited (ICCL), BSE Investments Ltd, BSE Institute Ltd 포함 |
+| 감독 기관 | Securities and Exchange Board of India (SEBI) |
+| 시가총액 (상장기업) | 약 5조 달러 이상 (약 46.5 라크 크로르 루피, DVR/REITs/InVITs/ETF 제외) 2026년 초 기준 -- 시가총액 기준 세계 6위 |
+| 총 상장기업 수 | 2026년 2월 기준 5,936개사, 은행, IT, 에너지, 제약, 소비재, 자동차, 금융서비스 등 포괄 |
+| 일평균 거래량 | 주식 현물 부문 ADT는 NSE 대비 상대적으로 낮음; 파생상품 부문은 상당한 성장세 [미확인 -- 2025-26년 구체적 ADT 수치 미확인] |
+| 일평균 거래대금 | 2025-26년 주식 현물 부문 독립 확인 불가; BSE 수익력은 주식 파생상품, 거래 수수료, 상장 수수료 중심으로 증가 추세 [미확인] |
+
+### 주요 연혁 (Key Historical Milestones)
+- **1875년:** Premchand Roychand 등 중개인들이 반얀 나무 아래에서 "The Native Share & Stock Brokers' Association" 설립 -- 아시아 최초의 증권거래소
+- **1928년:** 뭄바이 Dalal Street 현 위치로 이전
+- **1957년:** 1956년 증권계약(규제)법(SCRA)에 의한 증권거래소 인정 -- 인도 정부로부터 영구 인정을 받은 최초의 거래소
+- **1986년:** S&P BSE SENSEX(민감 지수) 도입, 30개 대표 종목 추적, 인도의 벤치마크 주식 지수로 자리매김 (기준년도: 1978-79 = 100)
+- **1995년:** BOLT (BSE On-Line Trading System) 출범, 장내 호가매매에서 전자 화면기반 매매로 전환
+- **2000년:** BSE가 T+5 순환결제주기 전환; 이후 단계적 단축
+- **2005년:** SEBI에 의한 BSE (주식회사화 및 상호회사 전환) 계획 공표
+- **2007년 (5월 19일):** BSE 공식 상호회사 전환 및 주식회사화 -- 중개인 소유 조합에서 주주 소유 회사로 변환
+- **2013년 (11월):** Deutsche Borse의 T7 아키텍처 기반 주식 파생상품용 BOLT Plus 플랫폼 출범
+- **2014년 (4월 7일):** BOLT Plus가 주식 현물 부문으로 확대, 레거시 BOLT 시스템 대체
+- **2017년 (2월 3일):** BSE, NSE에 IPO 상장 (공모가 806루피; 초일 1,085루피로 시작, +33%)
+- **2018년 (10월):** BSE, 인도 최초 상품 파생상품(금, 은) 출시
+- **2022년 (10월):** BSE, Electronic Gold Receipts (EGR) 플랫폼 출범
+- **2023년:** 인도, T+1 결제주기로 전환 완료 (2023년 1월) -- 주요 시장 중 세계 최초 수준
+- **2025년:** BSE 설립 150주년 기념; SENSEX 80,000 돌파; Securities Markets Code 2025 국회 제출로 SCRA, SEBI법, 예탁법 통합 추진
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 (Market Segments)
+| 구분 | 설명 | 상장 요건 (요약) |
+|---------|-------------|-------------------------------|
+| **메인보드 (주식)** | 기성 기업을 위한 주요 시장; 시가총액 및 거래의 대부분 차지 | 최소 발행 후 납입자본금 10크로르 루피; 최소 발행 규모 10크로르 루피; 최소 시가총액 25크로르 루피; 3년간 평균 영업이익 15크로르 루피 이상; 순유형자산 3크로르 루피 이상; 순자산 1크로르 루피 이상; 최소 공모비율 25% |
+| **BSE SME 플랫폼** | 중소기업 전용 시장; 낮은 진입 장벽 | 발행 후 납입자본금 25크로르 루피 이하; 2년간 순자산 1크로르 루피 이상; 순유형자산 3크로르 루피 이상; 3년 영업실적; 상장 수수료 50,000루피 |
+| **주식 파생상품** | 지수 및 개별주 선물/옵션 (F&O) | SEBI 승인 계약; 기초자산의 유동성 및 시가총액 기준 충족 필요 |
+| **통화 파생상품** | 통화 선물 및 옵션 (USD/INR, EUR/INR, GBP/INR, JPY/INR) | SEBI/RBI 공동 규제 |
+| **상품 파생상품** | 상품 선물 (금, 은 등) | 2018년 10월 출시; SEBI 규제 |
+| **채권 부문** | 회사채, 국채, 기업어음 | 별도 상장 및 매매 체계 |
+| **뮤추얼펀드 플랫폼 (BSE StAR MF)** | 뮤추얼펀드 거래를 위한 전자 플랫폼 | 판매사 및 직접 투자자 대상; 인도 최대 MF 유통 플랫폼 중 하나 |
+
+### 종목 분류 그룹 (Stock Classification Groups)
+BSE는 매매 및 결제 목적으로 상장 증권을 그룹별로 분류한다:
+
+| 그룹 | 설명 |
+|-------|-------------|
+| **A** | 가장 유동성 높은 활발히 거래되는 종목; 시가총액, 거래대금, 매매빈도 기준 상위 약 200개사; 매매일의 98% 이상 거래 필요; 일반 순환결제 |
+| **B** | A그룹에 해당하지 않는 종목; 평균 거래량의 일반 순환결제 |
+| **T** | Trade-to-Trade 결제; 장중매매 불가; 비유동적이거나 감시 대상 증권에 적용 |
+| **Z** | 상장 의무 또는 투자자 민원 해결 기준 미준수 기업 |
+| **F** | 채권 (고정수익 상품) |
+| **M** | 뮤추얼펀드 수익증권 |
+
+### 2.2 매매시간 (Trading Sessions)
+
+**참고:** India Standard Time (IST)은 연중 UTC+5:30 (일광절약시간제 없음).
+
+| 세션 | 현지시간 (IST) | UTC | 설명 |
+|---------|------------------|-----|-------------|
+| 장전 세션 | 9:00 - 9:15 | 03:30 - 03:45 | 주문 입력(9:00~9:08), 주문 매칭 및 체결 확인(9:08~9:12), 완충 기간(9:12~9:15); 단일가매매로 시가 결정 |
+| 접속매매(연속매매) | 9:15 - 15:30 | 03:45 - 10:00 | 가격-시간 우선원칙에 의한 연속 주문 매칭; 모든 표준 주문 유형 접수 |
+| 장마감 세션 | 15:30 - 15:40 | 10:00 - 10:10 | 종가는 접속매매(연속매매) 마지막 30분의 거래량가중평균가격(VWAP)으로 산출; 종가로 장후 주문 입력 |
+| 대량매매 1차 | 8:45 - 9:00 | 03:15 - 03:30 | 대량매매(최소 주문 규모 10크로르 루피), 전일 종가 또는 적용 기준가 대비 +/- 1%에서 체결 |
+| 대량매매 2차 | 14:05 - 14:20 | 08:35 - 08:50 | 대량매매 2차 창구 |
+
+**참고사항:**
+- 총 접속매매(연속매매) 시간: 6시간 15분 (9:15 - 15:30)
+- 점심시간 없음 -- 세션 전체 연속 매매
+- 반일 세션(예: 디왈리 Muhurat 매매)은 거래소가 정한 단축 시간으로 운영
+- BSE와 NSE는 SEBI 조율에 따라 동일한 매매시간 운영
+
+### 2.3 호가단위 (Tick Sizes)
+| 증권 유형 | 호가단위(최소가격변동폭) |
+|---------------|-----------|
+| 주식 (표준) | 0.05 루피 (5 파이사) |
+| 뮤추얼펀드 수익증권 (F그룹) | 0.01 루피 (1 파이사) |
+| F그룹 증권 (채권) | 0.01 루피 (1 파이사) |
+| 주식 파생상품 | 0.05 루피 (5 파이사) |
+
+### 2.4 매매단위 (Lot Sizes)
+- **표준 매매단위(거래단위)(무권화 주식):** 1주 (전 무권화 증권의 시장 매매단위(거래단위) 1)
+- **실물 주식:** 시장 매매단위(거래단위) 50주 또는 100주 (여전히 실물 형태인 증권 -- 점차 희소)
+- **파생상품:** 기초자산별 매매단위(거래단위) 상이; SEBI/거래소가 계약금액 기준으로 설정
+- **단주 매매:** 시장 매매단위(거래단위) 미만 수량을 위한 단주 부문에서 이용 가능
+
+### 2.5 시장조성자(마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)
+- BSE는 특정 증권, 특히 시장조성자(마켓메이커) 지정이 의무인 SME 플랫폼 상장기업에 대한 시장조성 제도를 운영
+- BSE SME 시장조성자(마켓메이커)는 매매시간의 최소 비율 동안 양방향 호가를 제공해야 함
+- 매수-매도 스프레드 개선을 위한 주식 파생상품 부문 유동성공급자 인센티브 프로그램 존재 [미확인 -- 현행 제도 세부사항 미확인]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 경매 메커니즘 (Auction Mechanisms)
+
+- **장전 단일가매매 (시가단일가매매(개장 경매)):** 장전 세션(9:00~9:15) 동안 주문이 집적되어 다자간 매칭을 통해 단일 균형가격으로 체결된다. 매수 주문은 하향 수요 곡선으로, 매도 주문은 상향 공급 곡선으로 집계되며, 교차점이 시가를 결정한다. 지정가주문이 시장가주문보다 우선한다. 균형가격 이상/이하의 주문이 체결되고, 나머지 주문은 접속매매(연속매매)로 이월된다.
+- **종가 결정:** 종가는 접속매매(연속매매) 마지막 30분의 거래량가중평균가격(VWAP)으로 산출된다. 이는 경매 메커니즘이 아닌 산출 기반 방식이다. 15:30 이후 장후 세션에서 결정된 종가로 주문 입력이 가능하다.
+- **정기 단일가매매 (PCA):** 비유동적 증권(BSE/SEBI가 매매빈도 기준으로 식별)에 적용. PCA 세션은 장중 매시간 운영(9:30~15:30). 일정 기간 주문이 집적된 후 단일 가격으로 매칭하여 저유동성 종목의 가격 발견을 개선한다.
+- **특별 단일가매매:** 재상장, 기업행위(corporate action), 또는 SEBI/거래소가 공정한 가격 발견이 필요하다고 판단할 때 사용.
+
+### 3.2 접속매매 (Continuous Trading)
+- 9:15~15:30 동안 연속 매칭이 이루어지는 **주문주도형 시장**
+- **가격-시간 우선원칙:** 최우선 가격의 주문이 먼저 매칭되고, 동일 가격에서는 주문 접수 시간 순
+- **익명 매매:** 주문 매칭 중 거래 상대방 신원 미공개
+- 매매체결엔진(매칭엔진)은 각 가격 수준 내에서 엄격한 FIFO(선입선출) 기준으로 주문 처리
+
+### 3.3 가격 발견 (Price Discovery)
+- 시가는 장전 단일가매매(다자간 매칭)를 통해 발견
+- 장중 가격은 접속매매(연속매매) 주문 매칭(가격-시간 우선원칙)을 통해 발견
+- 종가는 접속매매(연속매매) 마지막 30분의 VWAP에서 도출
+- 비유동적 증권의 경우 정기 단일가매매가 주문 흐름을 이산적 간격으로 집중시켜 가격 발견을 향상
+- 대량매매(10크로르 루피 이상)는 허용 범위 내(기준가 +/- 1%)에서 가격 협상
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 표준 주문 유형 (Standard Order Types)
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| 지정가주문 | 최대 매수가 또는 최소 매도가를 지정; 지정 가격 이상/이하로 체결 |
+| 시장가주문 | 호가장의 최우선 가격으로 체결; 현행 시장가에서 즉시 체결 |
+| 조건부주문 | 시장가가 지정된 트리거 가격에 도달하면 활성화; 발동 시 지정가주문으로 전환 |
+
+### 4.2 고급 주문 유형 (Advanced Order Types)
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| 조건부시장가주문 | 지정 가격에서 발동 후 시장가주문으로 체결 |
+| 장후주문 (AMO) | 장외시간에 접수되어 다음 매매 세션에 체결 |
+| 빙산주문 | 대량 주문을 부분적으로 공개; 호가장에는 공개 수량만 표시 [미확인 -- 증권사 인터페이스에 따라 이용 가능 여부 상이] |
+
+### 4.3 주문 유효기간 (Time-in-Force Options)
+| TIF | 설명 |
+|-----|-------------|
+| DAY | 당일에만 유효; 미체결 시 세션 종료 시 취소 |
+| IOC (즉시체결-잔량취소) | 즉시 전부 또는 일부 체결; 미체결 부분 즉시 취소 |
+| GTC (취소시까지유효) | BSE에서 기본 지원하지 않음; 증권사가 일일 재입력으로 시뮬레이션 가능 [미확인] |
+
+### 4.4 주문 수정 / 취소 (Order Modification / Cancellation)
+- 접속매매(연속매매) 시간 중 주문 수정(가격, 수량) 또는 취소 가능
+- 장전 세션 중에는 주문 입력 기간(9:00~9:08)에만 취소 허용
+- 수정된 주문은 시간 우선순위를 잃고 새로운 주문으로 취급
+
+---
+
+## 5. 매매시스템 (기술) (Trading System / Technology)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 시스템 명칭 | BOLT Plus (BSE On-Line Trading Plus) |
+| 벤더 / 자체 개발 | Deutsche Borse의 T7 매매 아키텍처 기반; BSE에 맞춰 적용 |
+| 아키텍처 | 수평 확장성의 다중 계층 아키텍처; 강건한 백엔드 OMS (주문관리시스템) 및 RMS (위험관리시스템) 엔진 |
+| 매매체결엔진 (Matching Engine) | T7 기반 중앙 매매체결엔진(매칭엔진); 가격-시간 우선원칙 |
+| 왕복 지연시간 | 약 200마이크로초 (2013-2014년 출시 시); 후속 업그레이드에서 20마이크로초 목표 발표 [미확인 -- 현행 운영 지연시간 미확인] |
+| 주문 처리 용량 | 출시 시 초당 500,000(5 라크)건; 강화 용량 목표 초당 5,000,000(50 라크)건 [미확인 -- 현행 용량 미확인] |
+| 초당 메시지 수 | 독립적으로 미확인 [미확인] |
+| 출시 연도 | 2013년 11월 (주식 파생상품); 2014년 4월 (주식 현물) |
+
+### 시스템 연혁 (System History)
+| 기간 | 시스템 | 비고 |
+|--------|--------|-------|
+| 1995년 이전 | 장내 호가매매 | Dalal Street 거래소 |
+| 1995년 | BOLT (BSE On-Line Trading) | BSE 최초의 전자매매 시스템; 화면기반 매매 |
+| 1997~2012년 | BOLT (점진적 업그레이드) | 다수 버전에 걸친 용량 및 기능 강화 |
+| 2013년 (11월) | BOLT Plus (주식 파생상품) | Deutsche Borse T7 아키텍처 기반 신규 플랫폼; 200마이크로초 지연시간 |
+| 2014년 (4월) | BOLT Plus (주식 현물) | 주식 현물 부문으로 확대, 레거시 BOLT 대체 |
+| 2018년 이후 | BOLT Plus (상품 파생상품, 통화) | 상품 및 통화 파생상품으로 플랫폼 확장 |
+
+### 기술 스택 (Technology Stack)
+- **매매 플랫폼:** BOLT Plus -- Deutsche Borse T7 아키텍처 기반
+- **웹 기반 접근:** BOLT Plus on Web (BPoW) -- 회원사를 위한 브라우저 기반 매매 단말
+- **청산 시스템:** Indian Clearing Corporation Limited (ICCL) -- 청산 및 결제를 담당하는 완전 자회사
+- **위험 관리:** BOLT Plus에 통합된 실시간 위험 관리; 거래소 수준의 사전 위험 점검
+- **시장 데이터:** BSE 시장 데이터는 전용선 및 인터넷을 통한 NFCAST 프로토콜로 배포; FIX/FAST 인코딩 (FAST 1.1 및 1.2 호환)
+- **접속:** Enhanced Trading Interface (ETI) -- 알고리즘 및 기관 매매를 위한 FIX 프로토콜 기반 API
+
+### 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)
+- BSE는 업무연속성을 위한 재해복구(DR) 사이트 유지
+- 정기적 DR 훈련 및 시스템 리허설 실시
+- 뭄바이 전용 데이터센터에서 NTT (구 Netmagic)와 제휴하여 코로케이션(전산센터 공동입주) 시설 운영 [미확인 -- 현행 DR 사이트 제도 미확인]
+
+---
+
+## 6. 시장 데이터 (Market Data)
+
+### 6.1 데이터 피드 프로토콜 (Data Feed Protocols)
+| 프로토콜 | 설명 | 용도 |
+|----------|-------------|----------|
+| NFCAST (UDP Multicast) | 주요 실시간 시장 데이터 피드 | 코로케이션(전산센터 공동입주) 및 전용선 참가자에 대한 고속 배포 |
+| FIX/FAST | FAST 1.2 인코딩 형식의 FIX 메시지 | 벤더 및 기관 소비를 위한 표준화 데이터 |
+| HTTP/API | 웹 기반 데이터 접근 | BSE 웹사이트 및 인가 데이터 벤더 |
+
+### 6.2 데이터 수준 (Data Levels)
+- **Level 1 (실시간):** 최우선 매수/매도 호가, 최근 체결가, 거래량 -- 주식, 주식 파생상품, 채권 부문에서 이용 가능
+- **Level 2 (실시간):** 호가 깊이(복수 가격 단계) -- 주식 및 주식 파생상품에서 이용 가능
+- **스냅샷/일마감:** Bhav Copy (일일 거래 파일), 기업행위 데이터, 지수 데이터
+
+### 6.3 배포 인프라 (Distribution Infrastructure)
+- 시장 데이터는 전용선(전체 NFCAST 커버리지를 위해 10 Mbps 권장) 및 인터넷을 통해 배포
+- BSE 주 사이트 및 보조 사이트 모두에 대한 별도 접속을 이중화 목적으로 권장
+- 인가 벤더(Bloomberg, Refinitiv 등) 및 BSE 자체 데이터 상품 포털을 통해 데이터 이용 가능
+- 코로케이션(전산센터 공동입주) 참가자가 최저 지연시간 데이터 피드 수신
+
+### 6.4 과거 데이터 (Historical Data)
+- BSE는 웹사이트를 통해 과거 주식시장 데이터(일별, 월별, 연간) 제공
+- Bhav Copy 파일(모든 증권의 일일 마감 데이터)을 다운로드 가능
+- SENSEX 및 기타 BSE 지수의 과거 지수 데이터 이용 가능
+- 서드파티 벤더도 BSE 과거 데이터 배포
+
+---
+
+## 7. 접속 및 접근 (Connectivity & Access)
+
+### 7.1 회원 / 참가 (Membership / Participation)
+- BSE 매매회원은 SEBI에 주식중개인으로 등록 필요
+- 회원은 SEBI가 정한 부문별 최소 순자산 요건 충족 필요
+- 비회원은 등록 증권사와의 DMA (Direct Market Access) 제도를 통해 접근 가능, SEBI DMA 지침 준수 필요
+
+### 7.2 접속 방법 (Connection Methods)
+| 방법 | 설명 |
+|--------|-------------|
+| BOLT Plus 단말 | 거래소 제공 또는 승인된 매매 워크스테이션 |
+| BOLT Plus on Web (BPoW) | 인터넷을 통한 브라우저 기반 단말 |
+| ETI (Enhanced Trading Interface) | 알고리즘/프로그램 매매를 위한 FIX 기반 프로토콜 API 접속 |
+| CTCL (Computer-to-Computer Link) | 승인된 벤더 소프트웨어를 통해 BSE에 연결되는 증권사 프론트엔드 시스템 |
+| DMA (Direct Market Access) | 기관 고객이 증권사 인프라를 통해 직접 주문 라우팅 |
+
+### 7.3 코로케이션(전산센터 공동입주) / 근접 서비스 (Co-location / Proximity Services)
+- **위치:** 뭄바이의 BSE 코로케이션(전산센터 공동입주) 시설, NTT (구 Netmagic)와 제휴 운영
+- **서비스:** 랙 공간, BSE 매매체결엔진(매칭엔진)에 대한 크로스커넥트, 저지연 데이터 피드; 코로케이션(전산센터 공동입주) 서버에서 BSE 및 기타 거래소 접근
+- Thomson Reuters (현 LSEG/Refinitiv)가 Elektron 플랫폼의 인도 허브로 BSE 코로케이션(전산센터 공동입주) 선택
+
+### 7.4 API 프로토콜 (API Protocols)
+| 프로토콜 | 용도 |
+|----------|----------|
+| FIX (ETI 경유) | 주문 제출, 체결 보고, 알고리즘 매매 |
+| FAST 1.2 | 시장 데이터 인코딩/디코딩 |
+| REST API | BSE StAR MF 플랫폼 (뮤추얼펀드 거래) |
+
+### 7.5 인증 / 테스트 (Certification / Testing)
+- BSE는 회원사의 BOLT Plus 접속 테스트를 위한 New Trading Architecture (NTA) 테스트 환경 제공
+- 신규 회원 또는 시스템 변경 전 필수 인증/모의매매 세션
+- 주식, 파생상품, 통화 부문별 별도 테스트 환경
+
+---
+
+## 8. 위험 통제 및 서킷브레이커(매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 가격제한 (개별 증권) (Price Limits)
+
+비정상적 변동성을 억제하기 위해 개별 증권에 일일 가격 범위가 적용된다. 적용 범위는 증권의 분류 및 감시 상태에 따라 다르다:
+
+| 범위 | 적용 증권 |
+|------|----------------------|
+| 가격 범위 없음 | 파생상품 부문(F&O) 증권 |
+| 2% | 강화감시조치(ESM) Stage I 대상 증권 |
+| 5% | ESM 또는 정기 단일가매매 대상 증권 |
+| 10% | 특정 증권에 대한 표준 가격 범위 |
+| 20% | 기타 대부분 증권에 대한 표준 가격 범위 |
+
+**참고:** 가격 범위는 BSE가 SEBI와 협의하여 주기적으로 검토한다. 감시 기준에 따라 더 좁은 범위로 이동될 수 있다.
+
+### 8.2 서킷브레이커(매매거래중단) (지수 기반, 시장 전체) (Circuit Breakers)
+
+SEBI는 BSE SENSEX 또는 NSE NIFTY 50 중 먼저 기준에 도달하는 지수의 변동에 의해 발동되는 3단계 시장 전체 서킷브레이커(매매거래중단)를 의무화하고 있다. 발동 시 **전국 모든 주식 및 주식 파생상품 시장**(BSE와 NSE 동시 중단)의 매매가 중단된다.
+
+| 수준 | 발동 기준 | 오후 1시 이전 | 오후 1시~2시 30분 | 오후 2시 30분 이후 |
+|-------|---------|------------------------|----------------------|----------------------|
+| **Level 1** | 10% 변동 (양방향) | 45분 중단 + 15분 장전 세션 | 15분 중단 + 15분 장전 세션 | 중단 없음 |
+| **Level 2** | 15% 변동 (양방향) | 1시간 45분 중단 + 15분 장전 세션 | 45분 중단 + 15분 장전 세션 | 잔여 거래일 중단 |
+| **Level 3** | 20% 변동 (양방향) | 잔여 거래일 매매 중단 | 잔여 거래일 매매 중단 | 잔여 거래일 매매 중단 |
+
+**참고사항:**
+- 서킷브레이커(매매거래중단) 제한은 SENSEX/NIFTY 50의 전일 종가 기준으로 매일 산출
+- 중단 후 시장은 장전 단일가매매 세션(15분)을 거쳐 접속매매(연속매매) 재개 전 재개장
+- 이 제도는 2001년 SEBI가 도입하고 2013년 개정 (기준이 절대 포인트에서 백분율로 변경)
+
+### 8.3 사전 위험 통제 (Pre-trade Risk Controls)
+- **오류 주문 방지:** 회원/거래소 수준에서 설정된 최대 주문 금액 및 수량 제한
+- **주문 규모 제한:** SEBI가 정한 최대 주문 규모 통제; 증권사는 2012년 12월 SEBI 통첩에 따라 사전 위험 점검 시행 필수
+- **제한 조절:** 시스템 과부하 방지를 위한 접속당 주문 접수율 제한
+- **실시간 증거금 감시:** ICCL이 증거금 적정성을 실시간 감시; 증거금이 요구 수준 이하로 하락 시 포지션 강제 청산 가능
+- **DMA 위험 통제:** SEBI는 DMA를 제공하는 증권사에 주문 수준 및 고객 수준 점검을 포함한 사전 위험관리 시행 의무
+
+### 8.4 긴급 차단 (Kill Switch)
+- 증권사는 오작동 알고리즘이나 시스템 발생 시 즉시 고객 매매를 비활성화하거나 연결을 끊을 수 있는 기능 보유 의무
+- BSE는 극단적 상황에서 회원의 매매 접근을 비활성화할 수 있음 [미확인 -- 구체적 긴급 차단 시행 세부사항 미확인]
+
+### 8.5 단계별 감시조치(GSM) 및 추가감시조치(ASM) (Graded Surveillance Measures / Additional Surveillance Measures)
+- **GSM:** 가격 변동이 재무 건전성에 비례하지 않는 증권에 적용. 조치 내용: Trade-to-Trade 부문 이전, 추가 감시 보증금 요건, 주 1회만 매매, 상한가 동결
+- **ASM:** 비정상적 가격/거래량 변동을 보이는 증권에 적용. 조치 내용: 축소된 가격 범위(5% 또는 2%), T2T 결제로 이전, 100% 증거금 요구
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관 (Supervising Authority)
+- **Securities and Exchange Board of India (SEBI)** -- 인도 증권시장의 주요 규제기관
+- SEBI는 1988년 설립 (1992년 SEBI법에 의해 법정 기관)
+- SEBI는 증권거래소, 상장기업, 중개기관(증권사, 예탁기관, 청산기관), 투자자 보호에 대한 관할권 보유
+- Reserve Bank of India (RBI)가 SEBI와 함께 통화 파생상품 공동 규제
+
+### 9.2 주요 규정 (Key Regulations)
+| 규정 | 설명 |
+|------------|-------------|
+| **증권계약(규제)법, 1956 (SCRA)** | 증권거래소, 상장, 증권 매매를 관할하는 주요 법률; 증권거래소의 인정 및 규제 규정 |
+| **Securities and Exchange Board of India법, 1992** | SEBI를 설립하고 증권시장 규제 권한 부여; 투자자 보호 의무 |
+| **예탁법, 1996** | 예탁기관(NSDL, CDSL) 및 증권 무권화 관할 |
+| **SEBI (증권거래소 및 청산기관) 규정, 2018** | 증권거래소 및 청산기관의 지배구조, 운영, 위험관리 관할 |
+| **SEBI (상장 의무 및 공시 요건) 규정, 2015 (LODR)** | 상장기업의 지속적 공시 의무 의무화 |
+| **SEBI (내부자거래 금지) 규정, 2015** | 내부자거래 금지 및 지정인의 매매 공시 의무화 |
+| **SEBI (사기 및 불공정거래 행위 금지) 규정, 2003** | 시장 조작, 선행매매 및 기타 불공정 거래 행위 금지 |
+| **Securities Markets Code, 2025 (법안)** | 2025년 12월 18일 하원(Lok Sabha)에 제출; SCRA, SEBI법, 예탁법을 단일 통합법으로 통합 제안; SEBI 이사회 9명에서 15명으로 확대; 경미한 위반 비범죄화; 조사에 8년 제한기간 도입; 2026년 4월 기준 의회 승인 보류 중 |
+
+### 9.3 시장 감시 (Market Surveillance)
+- **BSE 감시부:** 1999년 7월 설립; 온라인 감시(실시간 가격/거래량 모니터링) 및 오프라인 감시(사후 거래 조사 및 분석) 실시
+- **SEBI 통합시장감시시스템 (IMSS):** 2007년 가동; 거래소 및 예탁기관에서 일일 거래 및 마스터 데이터 수집; 사전 정의된 시장 조작 시나리오에 대한 경보 생성
+- **합동 감시 회의:** BSE, NSE, SEBI는 감시 조치(예: GSM, ASM, 가격 범위 변경) 조율을 위한 정기적 합동 감시 회의 개최
+- **자동 경보:** 비정상적 가격 변동, 거래량 급증, 집중 포지션, 잠재적 선행매매를 시스템이 감지
+
+### 9.4 보고 요건 (Reporting Requirements)
+- 상장기업은 SEBI LODR 2015 준수 필수 -- 분기별 재무 실적, 기업지배구조 보고서, 중요 사건 공시, 주주 구성 공시
+- 증권사는 일일 고객별 매매 데이터를 거래소 및 SEBI에 보고 필수
+- 대규모 매매자 및 외국기관투자자(FII)는 추가 포지션 보고 대상
+- 자금세탁방지법(PMLA)에 의한 의심거래보고(STR) 의무
+
+### 9.5 역외 거래 제도 (Cross-border Arrangements)
+- 외국포트폴리오투자자(FPI)는 SEBI FPI 규정에 따라 SEBI 등록 수탁기관을 통해 BSE 접근 가능
+- 인도-싱가포르 연결, NSE IX-SGX GIFT Connect 경유 (2023년 7월 운영 개시) -- 주로 NSE 상품이지만 인도의 역외 시장 접근 방식을 대표
+- SEBI는 외국 규제기관과의 MoU 유지 (IOSCO MMOU 서명국)하여 정보 공유 및 집행 협력
+- GIFT City (Gujarat International Finance Tec-City) -- IFSCA가 규제하는 인도 국제금융서비스센터(IFSC), BSE는 자회사인 India International Exchange (India INX)를 통해 존재감 확보
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 매매 수수료 (Trading Fees)
+| 수수료 유형 | 구조 | 요율 |
+|----------|-----------|------|
+| 거래 수수료 (주식 현물) | 거래별 | 거래대금 구간별 차등; NSE와 경쟁적 [미확인 -- 현행 구체적 요율 미확인] |
+| 거래 수수료 (주식 파생상품) | 거래별 | 핵심 수익원; BSE가 설정하고 주기적 개정 |
+| 거래 수수료 (통화 파생상품) | 거래별 | [미확인] |
+| 거래 수수료 (상품 파생상품) | 거래별 | [미확인] |
+
+### 10.2 기타 수수료 (Other Fees)
+- **상장 수수료:** 납입자본금 기준 연간 상장 수수료; 매년 4월 30일까지 납부; BSE는 FY2024-25 상반기에 상장 수수료로 15.7억 루피 수익
+- **시장 데이터 수수료:** 전용선 또는 벤더 접근을 통한 실시간 및 과거 데이터 구독료
+- **코로케이션(전산센터 공동입주) 수수료:** BSE 코로케이션(전산센터 공동입주) 시설의 랙 임대, 크로스커넥트 및 관련 비용
+- **BSE StAR MF 플랫폼 수수료:** 플랫폼을 통한 뮤추얼펀드 주문 처리 거래 수수료
+- **IPO/FPO 처리 수수료:** BSE 상장 기업에 대한 수수료
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 시스템 업그레이드 (최근 5년) (System Upgrades)
+- BOLT Plus 플랫폼의 용량 및 지연시간 개선을 위한 지속적 강화
+- 브라우저 기반 매매 접근을 위한 BOLT Plus on Web (BPoW) 확대
+- 높은 처리량을 위한 시장 데이터 인프라 업그레이드
+
+### 신상품 / 신시장 (New Products / Segments)
+- **Electronic Gold Receipts (EGR):** 2022년 10월 출시; 1그램 단위의 995 및 999 순도 금 매매; T+1 결제; 장중 9:00~21:30
+- **상품 파생상품:** 2018년 출시 이후 지속 확대; 금, 은 및 기타 상품 계약
+- **BSE SME 플랫폼:** SME IPO 상장의 현저한 성장; BSE SME 플랫폼은 2024-25년 역대 최다 상장 기록
+- **Social Stock Exchange (SSE):** BSE, 사회적 기업 및 비영리 조직을 위한 인도 최초의 Social Stock Exchange 부문 출범
+
+### 규제 변화 (Regulatory Changes)
+- **T+1 결제 (2023년 1월):** 인도, 모든 증권에 대해 T+1 순환결제 전환 완료 -- 세계 주요 시장 중 최초 수준
+- **SEBI 파생상품 규제 강화 (2024-25년):** 지수 파생상품에 대한 신규 규정으로 2024년 9월부터 명목 파생상품 거래량 약 40% 감소; BSE 파생상품 수익에 영향
+- **Securities Markets Code 2025:** 2025년 12월 의회에 제출; 제정 시 SCRA, SEBI법, 예탁법을 단일법으로 통합
+- **SEBI LODR 개정:** 상장기업의 기업지배구조 및 공시 강화를 위한 지속적 개정
+
+### 전략적 이니셔티브 (Strategic Initiatives)
+- **India International Exchange (India INX):** GIFT City IFSC에 소재한 BSE의 국제거래소 자회사; 하루 약 22시간 운영
+- **BSE StAR MF:** 인도 최대 전자 뮤추얼펀드 유통 플랫폼 중 하나; 월 수백만 건 거래 처리
+- **설립 150주년 (2025년):** BSE, 아시아 최고(最古) 거래소로서의 지위를 공고히 하며 150년 운영 기념
+
+---
+
+## 출처 (Sources)
+
+1. [BSE India Official Website](https://www.bseindia.com) -- 2026년 4월 접근
+2. [Bombay Stock Exchange -- Wikipedia](https://en.wikipedia.org/wiki/Bombay_Stock_Exchange) -- 2026년 4월 접근
+3. [Bombay Stock Exchange -- Britannica Money](https://www.britannica.com/money/Bombay-Stock-Exchange) -- 2026년 4월 접근
+4. [BSE Pre-Open Session](https://www.bseindia.com/static/markets/equity/preopen_session.html) -- BSE 공식
+5. [BSE Equity Trading](https://www.bseindia.com/static/markets/equity/EQReports/tra_trading.aspx) -- BSE 공식 (호가단위(최소가격변동폭), 매매단위(거래단위), 매매규정)
+6. [BSE launches equity trading on BOLT Plus -- Business Standard](https://www.business-standard.com/article/markets/bse-to-launch-equity-trading-on-bolt-plus-from-april-7-114032300126_1.html) -- 2014년 3월
+7. [Understanding BSE's back-end infrastructure -- Business Standard](https://www.business-standard.com/article/markets/understanding-bse-s-back-end-infrastructure-114070301178_1.html) -- 2014년 7월
+8. [BSE launches equity trading on BOLT Plus -- BusinessToday](https://www.businesstoday.in/markets/stocks/story/bse-launches-equity-trading-on-bolt-plus-platform-47472-2014-04-08) -- 2014년 4월
+9. [SEBI -- Index based market-wide circuit breaker mechanism](https://www.sebi.gov.in/legal/circulars/jan-2015/index-based-market-wide-circuit-breaker-mechanism_28855.html) -- SEBI 통첩
+10. [NSE India -- Circuit Breakers](https://www.nseindia.com/products-services/equity-market-circuit-breakers) -- 2026년 4월 접근
+11. [SEBI -- Pre-Trade Risk Controls circular (December 2012)](https://www.sebi.gov.in/legal/circulars/dec-2012/pre-trade-risk-controls_23951.html) -- SEBI 통첩
+12. [BSE Surveillance](https://www.bseindia.com/static/markets/equity/EQReports/sur_Surveillance.html) -- BSE 공식
+13. [SEBI -- Integrated Surveillance Department](https://www.sebi.gov.in/department/integrated-surveillance-department-10/overview.html) -- SEBI 공식
+14. [The Securities Markets Code, 2025 -- PRS India](https://prsindia.org/billtrack/the-securities-markets-code-2025) -- 입법 추적
+15. [BSE-Netmagic Co-Location Facility (PDF)](https://www.bseindia.com/downloads/fii/BSENetmagicCoLocationFacility.pdf) -- BSE 공식
+16. [BSE Market Data Interfaces Manual (PDF)](https://www.bseindia.com/downloads1/BSE_market_data_manual_v134.pdf) -- BSE 공식
+17. [BSE ETI API Manual (PDF)](https://www.bseindia.com/downloads1/ETI_API_Manual.pdf) -- BSE 공식
+18. [Mumbai BSE Data Center -- NTT](https://services.global.ntt/en-us/services-and-products/global-data-centers/global-locations/india/mumbai-bse-data-center) -- NTT
+19. [How Many Companies Are Listed in NSE and BSE in 2026 -- Shoonya](https://blog.shoonya.com/how-many-companies-are-listed-in-nse-and-bse/) -- 2026년 2월
+20. [BSE Turns 150 -- Equentis](https://www.equentis.com/blog/bse-turns-150-a-historic-journey-shaping-indias-capital-markets/) -- 2025년
+21. [Circuit Breaker Mechanism under SEBI -- LawArticle](https://lawarticle.in/circuit-breaker-mechanism-under-sebi-safeguarding-market-stability/) -- 2026년 4월 접근
+22. [Stock Market Circuit Breakers -- Groww](https://groww.in/p/stock-market-circuit-breakers) -- 2026년 4월 접근
+23. [BSE Stock Classification Groups -- Goodreturns](https://www.goodreturns.in/classroom/understanding-a-b-z-t-and-s-group-of-stocks-on-bse-1209379.html) -- 2026년 4월 접근
+24. [BSE Listing: Eligibility Criteria -- Angel One](https://www.angelone.in/knowledge-center/share-market/bse-listing-requirements) -- 2026년 4월 접근

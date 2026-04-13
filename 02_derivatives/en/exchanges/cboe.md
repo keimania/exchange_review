@@ -1,0 +1,719 @@
+# Cboe Global Markets
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 2
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Cboe Global Markets, Inc. |
+| Abbreviation | Cboe (sub-exchanges: C1/Cboe Options, C2, BZX Options, EDGX Options; equities: BZX, BYX, EDGX, EDGA; futures: CFE) |
+| Website | https://www.cboe.com |
+| Year Established | 1973 (as Chicago Board Options Exchange); renamed Cboe Global Markets in 2017 |
+| Country / City | United States / Chicago, IL (headquarters); primary data center in Secaucus, NJ |
+| Ownership Structure | Publicly traded on Cboe BZX Exchange (ticker: CBOE); widely held institutional ownership |
+| Parent Company / Group | Cboe Global Markets, Inc. |
+| Regulatory Authority | U.S. Securities and Exchange Commission (SEC) for options and equities exchanges; U.S. Commodity Futures Trading Commission (CFTC) for Cboe Futures Exchange (CFE); each exchange is a separately registered Self-Regulatory Organization (SRO) |
+| Market Capitalization | ~$29-31 billion (as of March 2026) [Source: MacroTrends, Yahoo Finance] |
+| Annual Net Revenue (2025) | $2.4 billion (record, +17% YoY) [Source: Cboe Q4 2025 earnings release, February 2026] |
+| Total Options ADV (2025) | 18.4 million contracts across four options exchanges — sixth consecutive record year [Source: Cboe full year 2025 volume report] |
+| SPX Options ADV (2025) | 3.9 million contracts (record, +25% YoY); 59% comprised of 0DTE options [Source: Cboe full year 2025 volume report] |
+| Clearing House | Options Clearing Corporation (OCC) for options; OCC also clears CFE futures |
+
+### Key Historical Milestones
+
+- **1973:** Chicago Board Options Exchange (CBOE) founded by the Chicago Board of Trade (CBOT); first exchange to list standardized, exchange-traded stock options. Trading commenced April 26, 1973, with call options on 16 underlying stocks
+- **1975:** Put options introduced on CBOE
+- **1977:** Options on individual equities expanded significantly
+- **1983:** S&P 100 Index Options (OEX) launched — first index options
+- **1993:** Cboe Volatility Index (VIX) introduced, created by Professor Robert E. Whaley; initially measured implied volatility of S&P 100 options
+- **2003:** VIX calculation methodology revised to be based on S&P 500 (SPX) options using a wider strike range and a model-free approach
+- **2004:** VIX futures launched on Cboe Futures Exchange (CFE)
+- **2006:** VIX options launched on Cboe Options Exchange — became the most actively traded index option within five years
+- **2010:** Cboe demutualizes; Cboe Holdings completes IPO (ticker: CBOE) on NASDAQ (June)
+- **2015:** SPX Weeklys options expanded to Monday, Wednesday, and Friday expirations — precursor to 0DTE growth
+- **2016:** Cboe Holdings announces acquisition of BATS Global Markets for ~$3.2 billion (September)
+- **2017:** BATS acquisition completed (March); company renamed Cboe Global Markets, Inc. (October); gained four additional exchanges (BZX, BYX, EDGX, EDGA) and significant technology capabilities
+- **2019:** SPX options expanded to include Tuesday and Thursday expirations, enabling daily expirations (0DTE on every trading day)
+- **2020:** Cboe acquires Hanweck and FT Options (data analytics firms)
+- **2021:** Cboe acquires Chi-X Asia Pacific, establishing presence in Japan and Australia; Cboe acquires ErisX (digital asset exchange)
+- **2022:** 0DTE options trading explodes — SPX 0DTE surpasses 40% of total SPX volume; Cboe Titanium platform branded
+- **2023-2024:** Continued 0DTE growth; Cboe Global Cloud launched for market data distribution; Cboe Europe Derivatives launches
+- **2025:** Record net revenue of $2.4 billion; SPX options ADV of 3.9 million contracts (record); 0DTE reaches 59% of SPX volume; Magnificent 10 Index (MGTN) futures and options launched (December 2025); strategic review initiated — sale process for Cboe Australia and Cboe Canada
+- **2026 (ongoing):** Mini-SPX prediction market contract planned for Q2 2026; FLEX options launch in Europe (Q1 2026); expanded trading hours initiative under development
+
+[Source: Cboe Global Markets, Wikipedia; Cboe investor relations; Cboe press releases 2025-2026, accessed 2026-04-06]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Exchange Segments
+
+Cboe operates multiple separately registered exchanges across options, equities, and futures:
+
+**Options Exchanges (SEC-regulated):**
+
+| Exchange | MIC Code | Description | Key Products |
+|----------|----------|-------------|--------------|
+| **Cboe Options Exchange (C1)** | XCBO | Flagship options exchange; exclusive home of SPX, VIX options | SPX, VIX, RUT, proprietary index options |
+| **Cboe C2 Exchange (C2)** | C2OX | Second options exchange; supports multi-listed and proprietary products | Multi-listed equity options, select index options |
+| **Cboe BZX Options** | BATO | Maker-taker pricing model | Multi-listed equity options |
+| **Cboe EDGX Options** | EDGO | Maker-taker pricing model with customer priority | Multi-listed equity options |
+
+**Equities Exchanges (SEC-regulated):**
+
+| Exchange | Description |
+|----------|-------------|
+| **Cboe BZX Equities** | Maker-taker pricing; Cboe Market Close (CMC) auction |
+| **Cboe BYX Equities** | Inverted pricing (taker-maker) |
+| **Cboe EDGX Equities** | Maker-taker pricing |
+| **Cboe EDGA Equities** | Inverted pricing (taker-maker) |
+
+**Futures Exchange (CFTC-regulated):**
+
+| Exchange | Description | Key Products |
+|----------|-------------|--------------|
+| **Cboe Futures Exchange (CFE)** | Designated Contract Market (DCM) for volatility and other futures | VIX futures, Mini VIX futures, MGTN futures |
+
+### 2.2 Trading Sessions / Hours
+
+**Options Exchanges (C1, C2, BZX Options, EDGX Options):**
+
+| Session | Time (CT) | Time (UTC) | Description |
+|---------|-----------|------------|-------------|
+| **Global Trading Hours (GTH)** | 2:00 AM – 8:15 AM | 07:00–13:15 UTC | Extended hours for select index options (SPX, VIX, OEX, RUT, XSP) on C1 |
+| **Pre-Open / Queuing** | ~8:20 AM – 8:30 AM | ~13:20–13:30 UTC | Order queuing prior to opening rotation |
+| **Regular Trading Hours (RTH)** | 8:30 AM – 3:15 PM | 13:30–20:15 UTC | Standard session for all options |
+| **Extended Trading Close** | 3:15 PM – 4:15 PM | 20:15–21:15 UTC | Select index options (SPX, VIX, RUT) continue trading |
+
+**Cboe Futures Exchange (CFE):**
+
+| Session | Time (CT) | Time (UTC) | Description |
+|---------|-----------|------------|-------------|
+| **Extended Trading Hours** | 5:00 PM (Sun) – 8:30 AM (Mon); 3:30 PM – 8:30 AM (Tue–Fri) | 22:00–13:30 UTC | VIX futures pre-RTH session |
+| **Regular Trading Hours** | 8:30 AM – 3:15 PM | 13:30–20:15 UTC | Standard session |
+| **Post-Close** | 3:15 PM – 3:30 PM | 20:15–20:30 UTC | Trade reporting |
+
+[Source: Cboe, "Hours & Holidays"; Cboe Options Exchange rules, accessed 2026-04-06]
+
+### 2.3 Tick Sizes (Selected Products)
+
+| Product | Minimum Tick (Premium < $3.00) | Minimum Tick (Premium >= $3.00) | Tick Value |
+|---------|-------------------------------|--------------------------------|------------|
+| SPX Options | $0.05 | $0.10 | $5.00 / $10.00 |
+| VIX Options | $0.05 | $0.10 | $5.00 / $10.00 |
+| XSP (Mini-SPX) Options | $0.01 | $0.05 | $1.00 / $5.00 |
+| Multi-listed Equity Options (Penny Pilot) | $0.01 | $0.05 | $1.00 / $5.00 |
+| Multi-listed Equity Options (Non-Penny) | $0.05 | $0.10 | $5.00 / $10.00 |
+| VIX Futures (VX) | 0.05 index points | 0.05 index points | $50.00 |
+| Mini VIX Futures | 0.05 index points | 0.05 index points | $5.00 |
+
+### 2.4 Contract Multipliers / Lot Sizes
+
+| Product | Multiplier / Contract Size |
+|---------|---------------------------|
+| SPX Options | $100 x S&P 500 Index |
+| XSP (Mini-SPX) Options | $100 x 1/10th S&P 500 Index |
+| VIX Options | $100 x VIX Index |
+| RUT (Russell 2000) Options | $100 x Russell 2000 Index |
+| Equity Options | 100 shares per contract (standard) |
+| VIX Futures (VX) | $1,000 x VIX Index |
+| Mini VIX Futures | $100 x VIX Index |
+
+### 2.5 Market Maker / Liquidity Provider Programs
+
+Cboe operates multiple market maker designations across its options exchanges:
+
+**Market Maker Types (C1 - Cboe Options Exchange):**
+
+| Type | Description |
+|------|-------------|
+| **Designated Primary Market Makers (DPMs)** | Exclusive appointment in assigned classes; highest quoting obligations and participation rights; must provide continuous two-sided markets |
+| **Lead Market Makers (LMMs)** | Appointed in specific classes; priority allocation rights (e.g., up to 50% on public customer orders in assigned classes); quoting obligations |
+| **Market Makers (MMs)** | Registered in specific classes; must maintain continuous two-sided quotes meeting width and size requirements |
+| **Supplemental Liquidity Providers (SLPs)** | Additional liquidity in SPX and VIX classes |
+
+**Incentive Structure:**
+- Tiered fee reductions based on volume thresholds
+- SPX and VIX-specific incentive programs rewarding quoting performance
+- SCORe (Select Customer Options Rebate) Program provides tier-based fee rebates for retail customer volume
+- Frequent Trader Program (FTID) aggregates customer volume across TPHs for tier-based rebates
+
+[Source: Cboe Exchange Rule Book; Cboe fee schedules, accessed 2026-04-06]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+Cboe operates several electronic auction mechanisms for price improvement and order interaction:
+
+| Auction Type | Description | Duration |
+|-------------|-------------|----------|
+| **Opening Rotation** | Electronic opening process that determines opening prices for each series; queued orders are matched at a single calculated price maximizing volume | At market open |
+| **Automated Improvement Mechanism (AIM)** | Electronic auction for paired (agency/principal) orders; provides price improvement opportunity; initiating member receives participation right (up to 40%) | Typically 100ms–1 second |
+| **Solicitation Auction Mechanism (SAM)** | Similar to AIM but for solicited orders; allows members to solicit counterparty orders with price improvement exposure | Typically 100ms–1 second |
+| **Complex Order Auction (COA)** | Auction for complex (multi-leg) orders; exposes complex orders for potential price improvement | Exchange-determined period |
+| **Step-Up Mechanism (SUM)** | Allows market makers to step up and provide price improvement | Configurable |
+| **FLEX Auction** | Auction process for FLEX (customizable) options | Per FLEX rules |
+
+Additionally, Complex AIM (C-AIM), Complex SAM (C-SAM), FLEX AIM, and FLEX SAM variants are available.
+
+### 3.2 Continuous Trading
+
+- Primary mechanism: continuous electronic matching on Cboe Titanium platform
+- Orders matched in real-time according to price priority and the applicable allocation algorithm
+- Supports simple (single-leg) orders, complex (multi-leg) orders, and stock-option orders
+- Complex Order Book (COB) maintains a separate book for multi-leg strategies; complex orders can trade against the COB or be "legged" against the simple book when net pricing is favorable
+
+### 3.3 Price Discovery
+
+- **Opening Rotation:** Establishes opening prices through an electronic price discovery process
+- **NBBO Integration:** Options exchanges operate under the Options Order Protection and Locked/Crossed Markets Plan (Options Linkage Plan); must respect the National Best Bid and Offer (NBBO)
+- **Complex Order Pricing:** Complex orders can execute at a net price that may improve upon the individual leg NBBO, subject to net price requirements
+- **VIX Settlement:** Special Opening Quotation (SOQ) process uses the opening prices of selected SPX options to calculate the VIX settlement value on expiration mornings
+
+### 3.4 Order Priority Rules / Matching Algorithms
+
+Cboe uses price/time priority (FIFO) as its primary matching algorithm across options exchanges:
+
+**Priority Hierarchy:**
+1. **Price Priority** — better-priced orders always fill first
+2. **Customer Priority** — public customer orders have priority over professional and firm orders at the same price (on C1 and EDGX Options)
+3. **Market Maker Participation Rights** — DPMs/LMMs receive participation entitlements (configurable %, up to 50%) on certain order flow
+4. **Time Priority (FIFO)** — among equal-priority orders at the same price, earliest order filled first
+5. **Pro-Rata** — used in certain classes on specific exchanges [unverified for current product set]
+
+**Key Rules:**
+- Public customer orders have priority over professional customer, broker-dealer, and market maker orders at the same price
+- Appointed market makers (DPM/LMM) may receive guaranteed participation percentages
+- Small order execution guarantees may apply for certain qualifying orders
+
+[Source: Cboe Exchange Rule Book, Rules 5.32-5.35; Cboe options trading documentation, accessed 2026-04-06]
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Limit** | Buy/sell at a specified price or better; unfilled quantity rests on the book |
+| **Market** | Executes at the best available price; subject to market order handling rules on each exchange |
+| **Stop** | Triggered when the specified stop price is reached; becomes a market order |
+| **Stop-Limit** | Triggered at stop price; becomes a limit order at specified limit price |
+
+### 4.2 Advanced Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Complex / Spread Orders** | Multi-leg orders submitted as a single strategy (e.g., vertical spread, straddle, butterfly, condor, calendar); executed at a net debit/credit price |
+| **Stock-Option Orders** | Paired equity and option legs submitted together |
+| **AIM Orders** | Paired orders for the Automated Improvement Mechanism auction |
+| **SAM Orders** | Paired orders for the Solicitation Auction Mechanism |
+| **FLEX Orders** | Customizable options with user-defined strike price, expiration date, exercise style, and settlement type |
+| **All-or-None (AON)** | Must be entirely filled or not at all |
+| **Minimum Quantity** | Requires a minimum fill size |
+| **Reserve / Iceberg** | Displays only a portion of total order quantity |
+| **Qualified Contingent Cross (QCC)** | Paired options order with stock contingency; exempt from exposure requirements; minimum 1,000 contracts |
+
+### 4.3 Time-in-Force (TIF) Conditions
+
+| TIF | Description |
+|-----|-------------|
+| **Day** | Valid for the current trading session only |
+| **Good Till Cancel (GTC)** | Remains active until filled or cancelled |
+| **Good Till Date (GTD)** | Remains active until a specified date |
+| **Immediate or Cancel (IOC)** | Executes immediately for available quantity; unfilled portion cancelled |
+| **Fill or Kill (FOK)** | Must be filled entirely immediately or cancelled entirely |
+| **Opening Only** | Participates in the opening rotation only |
+
+### 4.4 Order Modification & Cancellation
+
+- Orders can be modified (price, quantity) or cancelled during trading sessions via BOE (Binary Order Entry) protocol
+- **Mass Cancel:** Functionality to cancel all working orders by session, product, or underlying
+- **Cancel on Disconnect:** Configurable feature that cancels working orders if the trading session disconnects
+- **Kill Switch / Purge:** Immediate cancellation of all resting orders and quotes (see Section 8 for risk management tools)
+- **Self-Trade Prevention:** Configurable to prevent matching of orders from the same firm
+
+[Source: Cboe US Options BOE Specification; Cboe Exchange Rule Book, accessed 2026-04-06]
+
+---
+
+## 5. Trading System Technology — Cboe Titanium
+
+### 5.1 System Overview
+
+| Item | Details |
+|------|---------|
+| Platform Name | Cboe Titanium (Cboe Ti) |
+| Origin | Evolved from BATS Exchange technology (acquired 2017); originally built as a purpose-designed electronic exchange from ground up |
+| Architecture | Distributed matching engine architecture with multiple matching units per exchange; latency-equalized connections between order handlers and matching engines |
+| Primary Data Center | Equinix NY5, Secaucus, NJ (U.S. operations); latency-equalized access from NY4 and NY6 |
+| Secondary Data Center | Disaster recovery site (undisclosed location) [unverified] |
+| Latency | ~60% latency reduction achieved with Dedicated Cores service (U.S.); sub-100 microsecond order processing [unverified for exact figures] |
+| Throughput | ~200 billion orders and quotes processed in a single day across 27 global markets (peak day record); ~100 billion quotes and orders daily on U.S. options access architecture |
+| Uptime | 100% uptime on 25 of 27 global platforms; >99.9% across all platforms (2024) |
+| Global Platforms | Powers 27 markets across U.S., UK, Europe, Japan, and Australia |
+
+### 5.2 System History
+
+| Year | Event |
+|------|-------|
+| 2005 | BATS Exchange founded as an all-electronic exchange with purpose-built technology |
+| 2006-2016 | BATS technology refined over 10+ years; known for low-latency, high-reliability architecture |
+| 2017 | Cboe acquires BATS; begins migrating legacy CBOE systems to BATS-derived technology |
+| 2019 | Cboe Options (C1) migrated to the BATS technology platform (Feature Pack 4 integration) |
+| 2022-2023 | Platform rebranded as "Cboe Titanium" |
+| 2024-2025 | Dedicated Cores service launched with 60% latency reduction; expansion to UK, EU, and Australia; Canada migration completed (~45.5% FIX latency improvement) |
+
+### 5.3 Protocol Stack
+
+| Protocol | Purpose | Description |
+|----------|---------|-------------|
+| **BOE (Binary Order Entry)** | Order entry | Proprietary binary protocol for order submission, modification, cancellation; current versions BOE v2 and BOE v3 |
+| **FIX** | Order entry (alternative) | FIX 4.2-based protocol for order entry; higher latency than BOE |
+| **Multicast PITCH** | Market data (L3 depth) | Full depth-of-book data via UDP multicast; provides individual order adds, modifies, cancels, and executions |
+| **Multicast TOP** | Market data (L1 top) | Top-of-book quotations via UDP multicast; significantly reduced bandwidth vs. PITCH |
+| **Complex PITCH** | Market data (complex book) | Complex order book depth data |
+| **TCP PITCH** | Market data (TCP) | PITCH data delivered over TCP for gap recovery and lower-bandwidth connections |
+
+### 5.4 Disaster Recovery / Business Continuity
+
+- Secondary data center for failover operations
+- Cboe Global Cloud (AWS-based) provides geographic diversity for market data distribution
+- Platform designed with multiple matching units per exchange; single matching unit failure does not take down entire exchange
+- Regular DR testing and BCP exercises [unverified for specific frequency]
+- Latency equalization across NY4, NY5, and NY6 data centers provides infrastructure redundancy
+
+[Source: Cboe Titanium page; Cboe connectivity manuals; Cboe press releases; StockTitan news, accessed 2026-04-06]
+
+---
+
+## 6. Market Data
+
+### 6.1 Feed Protocols
+
+| Feed | Type | Description |
+|------|------|-------------|
+| **Multicast PITCH** | L3 Depth of Book | Full order-by-order data including adds, modifies, cancels, executions; delivered via UDP multicast by matching unit |
+| **Multicast TOP** | L1 Top of Book | Best bid/offer and last sale data; reduced bandwidth compared to PITCH |
+| **Complex Multicast PITCH** | Complex book depth | Depth-of-book for the Complex Order Book |
+| **Complex Auction Multicast PITCH** | Auction notifications | Real-time auction notifications for complex order auctions |
+| **Cboe One Options Feed** | Consolidated L1 | Single feed aggregating top-of-book data across all four Cboe options exchanges |
+| **TCP PITCH** | Recovery | PITCH data via TCP for gap fill; Gap Request Proxy (GRP) servers provide retransmission |
+
+### 6.2 Data Levels
+
+| Level | Content | Use Case |
+|-------|---------|----------|
+| **Level 1 (TOP)** | BBO, last sale, volume | Retail trading, display systems |
+| **Level 2 (PITCH summary)** | Aggregated depth by price level | Professional trading |
+| **Level 3 (PITCH full)** | Individual order-by-order data | HFT, market making, surveillance |
+
+### 6.3 Data Distribution
+
+- **Direct Feeds:** Available via co-located connections in Cboe data centers (NY4, NY5, NY6)
+- **Cboe Global Cloud:** AWS-based global distribution platform; delivers Cboe market data from geographically diverse locations; does not require a cloud account — supports on-premises and third-party infrastructure connectivity
+- **Securities Information Processors (SIPs):** Cboe data contributed to OPRA (Options Price Reporting Authority) for consolidated options tape
+- **Third-Party Vendors:** Cboe data available through major market data vendors (Bloomberg, Refinitiv/LSEG, ICE, etc.)
+
+### 6.4 Historical Data
+
+- **Cboe DataShop** (datashop.cboe.com): Self-service platform for historical market data
+- Products include: historical PITCH data, end-of-day options data, VIX index history, options settlement data
+- **Cboe LiveVol:** Options analytics and historical data platform (acquired via LiveVol acquisition)
+- **Cboe Data Vantage:** Data and analytics business segment; net revenue growth guided at mid-to-high single digits for 2026
+
+[Source: Cboe market data specifications; Cboe Global Cloud FAQ; Cboe DataShop, accessed 2026-04-06]
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Access
+
+**Options Exchanges:**
+- Trading Permit Holder (TPH) status required to trade directly on Cboe options exchanges
+- Application process includes assessment of operational capability, personnel experience, and financial condition
+- TPH categories: Market Maker, Floor Broker (C1 only — limited open outcry), Electronic Access Permit
+
+**Cboe Futures Exchange:**
+- Trading Privilege Holder (TPH) status required for direct access to CFE
+- Clearing member must be a member of OCC
+
+### 7.2 Connection Methods
+
+| Method | Description |
+|--------|-------------|
+| **Cboe Connect** | Cboe's managed network offering competitive microsecond round-trip latency; provides connectivity across multiple Cboe markets |
+| **Cross-Connect** | Direct physical connection within Cboe data centers (NY4, NY5, NY6) |
+| **Extranet / Third-Party Networks** | Access via financial extranets (e.g., TNS, IPC, Avelacom) |
+| **Cboe Global Cloud** | Cloud-based connectivity via AWS for market data access (not for order entry) |
+
+### 7.3 Co-Location
+
+- Primary co-location facility: Equinix NY5, Secaucus, NJ
+- Additional latency-equalized access points: Equinix NY4 and NY6
+- Cboe ensures equal fiber length between order handlers and matching engines across data centers
+- **Europe:** Equinix LD4 (primary), Equinix LD3 (secondary) for Cboe Europe operations
+
+### 7.4 API Protocols
+
+| Protocol | Use | Description |
+|----------|-----|-------------|
+| **BOE v2 / BOE v3** | Order entry | Proprietary binary protocol; lowest latency |
+| **FIX 4.2** | Order entry | Industry-standard protocol; higher latency than BOE |
+| **Multicast UDP** | Market data | PITCH and TOP feeds |
+| **TCP** | Market data recovery | TCP PITCH for gap requests and retransmission |
+| **Web API / REST** | Reference data, auction data | Cboe web-based APIs for non-latency-sensitive operations [unverified] |
+
+### 7.5 Certification / Testing
+
+- New members must complete certification testing before being granted production access
+- Cboe provides test environments (certification environments) for all protocols (BOE, FIX, PITCH)
+- Separate certification required for each exchange and protocol type
+- Risk management tool configuration testing required
+
+[Source: Cboe connectivity manuals; Cboe membership pages; Cboe Global Cloud FAQ, accessed 2026-04-06]
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Market-Wide Circuit Breakers (MWCB)
+
+Cboe participates in the U.S. market-wide circuit breaker program, coordinated across all U.S. equities, options, and futures exchanges:
+
+| Level | Threshold (S&P 500 decline) | Halt Duration | Time Condition |
+|-------|------------------------------|---------------|----------------|
+| **Level 1** | 7% | 15-minute halt | Before 3:25 PM ET only |
+| **Level 2** | 13% | 15-minute halt | Before 3:25 PM ET only |
+| **Level 3** | 20% | Trading halted for remainder of day | Any time |
+
+### 8.2 Limit Up-Limit Down (LULD)
+
+- Cboe participates in the LULD Plan for individual securities
+- Options trading halts are triggered when the underlying equity is halted under LULD
+- Price bands calculated based on reference prices; securities halted for 5 minutes if no trading occurs within the bands
+
+### 8.3 Pre-Trade Risk Controls
+
+Cboe provides comprehensive risk management tools to all Trading Permit Holders:
+
+| Tool | Description |
+|------|-------------|
+| **Purge (Kill Switch)** | Immediately cancels all resting orders and quotes across specified exchange(s) |
+| **Risk Monitor Mechanism** | Configurable parameters to prevent unwanted executions based on: contract quantity executed, notional volume, and time window |
+| **Fat Finger / Price Reasonability** | Exchange-level price reasonability checks on incoming orders |
+| **Order Size Limits** | Maximum order size limits configurable by member |
+| **Drill-Through Protection** | Prevents orders from executing through multiple price levels beyond a configurable threshold |
+| **Cancel on Disconnect** | Automatic cancellation of working orders upon session disconnection |
+| **Repeated Automated Execution Protection** | Prevents market makers from being repeatedly picked off during fast markets |
+
+### 8.4 Position and Exercise Limits
+
+- Position limits for equity options are set per Cboe Exchange rules (typically 25,000 to 250,000 contracts depending on underlying liquidity and capitalization)
+- Index options (SPX, VIX) — position limits have been significantly expanded or effectively eliminated for certain classes:
+  - SPX options: no position limits (removed via SEC approval) [unverified for current status]
+  - VIX options: subject to position limits with hedge exemptions available
+- Exercise limits generally equal position limits
+- Large trader reporting required above specified thresholds (CFTC and SEC large trader reporting)
+
+[Source: Cboe Market-Wide Circuit Breaker FAQ; Cboe US Options Risk Management Specification; Cboe Exchange Rule Book, accessed 2026-04-06]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authorities
+
+| Authority | Scope |
+|-----------|-------|
+| **SEC (Securities and Exchange Commission)** | Oversees all Cboe options and equities exchanges as registered national securities exchanges |
+| **CFTC (Commodity Futures Trading Commission)** | Oversees Cboe Futures Exchange (CFE) as a Designated Contract Market (DCM) |
+| **OCC (Options Clearing Corporation)** | Central counterparty clearing for all Cboe options and CFE futures; itself regulated by SEC and CFTC as a Systemically Important Financial Market Utility (SIFMU) |
+
+### 9.2 Self-Regulatory Organization (SRO) Status
+
+- Each Cboe exchange is a separately registered SRO
+- SRO responsibilities include: rule enforcement, member supervision, market surveillance, and disciplinary proceedings
+- Cboe's Regulatory Division monitors trading activity, detects potential market manipulation, and investigates suspicious activity
+
+### 9.3 Key Regulations
+
+| Regulation | Description |
+|-----------|-------------|
+| **Regulation SHO** | Short sale regulation applicable to equity options exercises |
+| **Regulation NMS** | National Market System rules; Options Linkage Plan ensures price protection across exchanges |
+| **Regulation SCI** | Systems Compliance and Integrity — requires robust technology governance for SCI entities |
+| **SEC Rule 15c3-5** | Market access rule — requires risk controls for broker-dealer access |
+| **CFTC Part 38** | Designated Contract Market rules for CFE |
+| **Dodd-Frank Act** | Title VII provisions applicable to swaps; Title VIII (SIFMU) applicable to OCC |
+
+### 9.4 Surveillance & Market Integrity
+
+- Cboe's Market Regulation Department conducts real-time surveillance using advanced technology systems
+- Cross-market surveillance through the Intermarket Surveillance Group (ISG)
+- Large Options Position Reporting (LOPR) to the OCC for position monitoring
+- Options Regulatory Surveillance Authority (ORSA) — consolidated surveillance for listed options across exchanges
+
+### 9.5 Cross-Border Operations
+
+- Cboe Europe: operates as a Recognised Investment Exchange (RIE) in the UK and a Regulated Market under MiFID II in the EU (Netherlands)
+- Cboe Japan: operates as a Proprietary Trading System (PTS)
+- Cboe Australia: operates under Australian Market Licence (sale process initiated in 2025)
+- Cboe Canada: operates as an Alternative Trading System (ATS) and exchange (sale process initiated in 2025)
+
+[Source: Cboe Exchange Rule Book; SEC registrations; Cboe regulatory pages, accessed 2026-04-06]
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees — Options Exchanges
+
+Cboe options exchanges operate with differentiated fee models:
+
+**Cboe Options Exchange (C1) — Select Fee Examples (as of March 2026):**
+
+| Category | SPX (per contract) | VIX (per contract) | Multi-listed Equity (per contract) |
+|----------|--------------------|--------------------|-------------------------------------|
+| Customer | $0.18–$0.47 (tiered) | $0.15–$0.45 (tiered) | $0.00–$0.25 (tiered) |
+| Market Maker | Varies by class/tier | Varies by class/tier | Varies by appointment |
+| Firm / Broker-Dealer | $0.15–$0.50 | $0.15–$0.50 | $0.02–$0.50 |
+
+Note: Exact fees vary significantly by volume tier, capacity (customer/professional/market maker), and specific program participation. Consult current fee schedule for precise rates.
+
+**Fee Models by Exchange:**
+- **C1 (Cboe Options):** Pro-rata pricing; no explicit maker-taker for proprietary products
+- **BZX Options:** Maker-taker pricing with rebates for adding liquidity
+- **EDGX Options:** Maker-taker pricing with customer priority
+- **C2:** Fee structure varies by product class
+
+### 10.2 Trading Fees — CFE Futures
+
+| Product | Transaction Fee |
+|---------|----------------|
+| VIX Futures (VX) | $0.47–$1.32 per contract (tiered by volume) |
+| Mini VIX Futures | $0.10–$0.30 per contract (tiered) [unverified] |
+| Surcharges | Regulatory fees, clearing fees, and exchange fees apply additionally |
+
+### 10.3 Market Data Fees
+
+- Real-time data fees for PITCH (depth), TOP (top-of-book), and consolidated feeds
+- Cboe One Options Feed: consolidated L1 data across all four options exchanges
+- Historical data available via Cboe DataShop
+- Cboe Data Vantage segment: growing revenue driver (~mid-to-high single digit organic growth target for 2026)
+
+### 10.4 Connectivity Fees
+
+- Co-location fees in Cboe data centers (NY4, NY5, NY6)
+- Cboe Connect network access fees
+- Port fees for logical connections per exchange
+- Cboe Global Cloud access fees for market data distribution
+
+### 10.5 Revenue Breakdown (2025)
+
+| Segment | Description |
+|---------|-------------|
+| **Options** | Largest segment; driven by SPX, VIX, multi-listed equity options; net revenue up 34% in 2025 |
+| **North American Equities** | Four equities exchanges; transaction and market data fees |
+| **Futures** | CFE — VIX futures and related products |
+| **Europe & APAC** | Cboe Europe, Japan, Australia equities/derivatives |
+| **Data Vantage** | Market data, analytics, index licensing |
+| **Total** | $2.4 billion net revenue (2025 record) |
+
+[Source: Cboe fee schedules (C1, C2, BZX, EDGX, CFE); Cboe Q4 2025 earnings release, accessed 2026-04-06]
+
+---
+
+## 11. Recent Developments
+
+### 11.1 Technology Upgrades
+
+- **Cboe Titanium Dedicated Cores:** Launched with 60% latency reduction for U.S. customers; expanding to Europe and Asia Pacific
+- **BOE v3:** Next-generation binary order entry protocol being rolled out across exchanges
+- **NY6 Integration:** Cboe expanding latency-equalized connectivity to Equinix NY6 data center in Secaucus
+- **Cboe Global Cloud Expansion:** Ongoing expansion of cloud-based market data distribution via AWS
+
+### 11.2 New Products
+
+- **Magnificent 10 Index (MGTN):** Futures and options launched December 8, 2025, on the Cboe Magnificent 10 Index tracking 10 large-cap U.S. tech/growth stocks
+- **Mini-SPX Prediction Market:** Planned for Q2 2026; uses traditional options wrapper for fixed-return outcome-based trading; will be listed on C1 and cleared by OCC
+- **FLEX Options in Europe:** Cboe Europe Derivatives launched FLEX options in Q1 2026, enabling institutional customization of strike, expiry, settlement, and exercise style
+- **Options on VIX Futures:** Available on CFE, providing additional VIX-complex trading instruments
+- **Expanded Trading Hours Initiative:** Under development for potential extension of trading hours for key products
+
+### 11.3 Regulatory Changes
+
+- **Prediction Markets Framework:** Cboe introduced innovative prediction markets framework expanding beyond yes-or-no outcomes (announced early 2026)
+- **Auction Response Processing:** SEC proceedings underway regarding proposed rule changes to auction response processing on C1 (SR-CBOE-2025-090)
+- **Position Limit Reviews:** Ongoing regulatory reviews of position and exercise limits for index options
+
+### 11.4 Strategic Initiatives
+
+- **Strategic Realignment:** Sale process initiated for Cboe Australia and Cboe Canada; exit from U.S. and European corporate listings; focus on core derivatives and data businesses
+- **0DTE Growth:** Continued expansion of same-day expiry options — 0DTE SPX options represented 59% of total SPX volume in 2025 (ADV of 2.3 million contracts); exploring 0DTE expansion to single-name equity options
+- **Data Vantage Growth:** Mid-to-high single digit organic growth target for 2026; index licensing and analytics
+- **2026 Revenue Guidance:** Mid-single-digit organic total net revenue growth; adjusted operating expenses $864-$879 million
+
+[Source: Cboe press releases 2025-2026; Cboe Q4 2025 earnings call; SEC filings, accessed 2026-04-06]
+
+---
+
+## Derivatives-Specific: Product Catalog & Contract Specifications
+
+### Key Product Categories
+
+| Category | Products | Exchange |
+|----------|----------|----------|
+| **Proprietary Index Options** | SPX, XSP (Mini-SPX), VIX, RUT, MRUT, MGTN, DJX, OEX, XEO | C1 (exclusive) |
+| **Multi-Listed Equity Options** | Options on ~3,500+ individual U.S. equities | C1, C2, BZX Options, EDGX Options |
+| **ETF Options** | SPY, QQQ, IWM, and other ETF options (multi-listed) | All four options exchanges |
+| **Volatility Futures** | VIX futures (VX), Mini VIX futures | CFE |
+| **Volatility Options on Futures** | Options on VX futures | CFE |
+| **FLEX Options** | Customizable index and equity options | C1 |
+
+### Contract Specifications — Top Products
+
+**SPX Options (S&P 500 Index Options):**
+
+| Specification | Details |
+|--------------|---------|
+| Underlying | S&P 500 Index |
+| Multiplier | $100 |
+| Exercise Style | European (no early exercise) |
+| Settlement | Cash-settled; AM-settled (standard monthly/quarterly) or PM-settled (Weeklys, End-of-Month, 0DTE) |
+| Expirations | Daily (Mon-Fri), weekly, monthly, quarterly, end-of-month; LEAPS up to 5 years |
+| Strike Intervals | $5 for near-term, $25 for far-term; $1 intervals available near-the-money in near-term expirations |
+| Tick Size | $0.05 (premium < $3.00); $0.10 (premium >= $3.00) |
+| Trading Hours | GTH: 2:00 AM – 8:15 AM CT; RTH: 8:30 AM – 3:15 PM CT; Extended close: 3:15 PM – 4:15 PM CT |
+| Settlement Calculation | AM: Special Opening Quotation (SOQ) using opening prices of component stocks; PM: closing prices of component stocks |
+| ADV (2025) | 3.9 million contracts (record); 0DTE comprised 59% (~2.3 million ADV) |
+
+**VIX Options (Cboe Volatility Index Options):**
+
+| Specification | Details |
+|--------------|---------|
+| Underlying | Cboe Volatility Index (VIX) |
+| Multiplier | $100 |
+| Exercise Style | European |
+| Settlement | Cash-settled; AM-settled using Special Opening Quotation (SOQ) of VIX |
+| Expirations | Weekly, monthly, and Weeklys series |
+| Strike Intervals | 0.50 index points for near-term; 1.00 for far-term |
+| Tick Size | $0.05 (premium < $3.00); $0.10 (premium >= $3.00) |
+| Trading Hours | GTH: 2:00 AM – 8:15 AM CT; RTH: 8:30 AM – 3:15 PM CT; Extended close: 3:15 PM – 4:15 PM CT |
+
+**VIX Futures:**
+
+| Specification | Details |
+|--------------|---------|
+| Underlying | Cboe Volatility Index (VIX) |
+| Contract Size | $1,000 x VIX |
+| Tick Size | 0.05 index points ($50.00 per tick) |
+| Settlement | Cash-settled; final settlement value calculated using SOQ of VIX |
+| Expirations | Up to 6 near-term weekly, 9 near-term monthly, and 5 quarterly expirations |
+| Trading Hours | Extended: 5:00 PM Sun – 8:30 AM Mon CT; 3:30 PM – 8:30 AM Tue-Fri CT; RTH: 8:30 AM – 3:15 PM CT |
+| Exchange | Cboe Futures Exchange (CFE) |
+
+**0DTE (Zero Days to Expiration) Options:**
+
+| Specification | Details |
+|--------------|---------|
+| Definition | Options expiring on the same day they are traded |
+| Availability | SPX options expire every trading day (Monday through Friday) |
+| Key Driver | Introduction of daily SPX expirations (completed 2022 with Tuesday/Thursday additions) |
+| 2025 Volume | ADV of ~2.3 million contracts; 59% of total SPX volume; reached 62% in August 2025 |
+| Settlement | PM-settled (closing prices of component stocks) |
+| Use Cases | Intraday hedging, premium selling, gamma scalping, event-day trades, retail speculation |
+| Risk Note | Rapid theta decay and gamma acceleration; OCC and regulators monitor for systemic risk |
+
+### VIX Index — Proprietary Methodology
+
+The VIX Index is Cboe's proprietary measure of 30-day expected volatility of the S&P 500 Index:
+
+- **Calculation:** Uses a model-free methodology based on real-time prices of a wide range of SPX options (both puts and calls) across two near-term expirations
+- **Formula:** Aggregates weighted out-of-the-money SPX option prices to derive expected variance; converted to annualized volatility
+- **Dissemination:** Updated every 15 seconds during trading hours
+- **Significance:** Known as the "Fear Index" or "Fear Gauge"; key benchmark for volatility trading globally
+- **Licensing:** Cboe licenses the VIX methodology; revenue from index licensing is part of Data Vantage segment
+
+### Margin Framework
+
+**Options Margin:**
+- Customer margin governed by Regulation T and exchange rules
+- **Standard (Strategy-Based) Margining:** Margin calculated per defined strategy (covered call, spread, naked option, etc.); Cboe Margin Manual provides detailed requirements
+- **Portfolio Margining:** Available for qualifying accounts; sets margin based on the greatest projected net loss using multiple pricing scenarios (OCC's TIMS — Theoretical Intermarket Margin System); generally results in lower margin requirements for hedged portfolios
+- **Clearing Member Margin:** OCC calculates clearing-level margin using STANS (System for Theoretical Analysis and Numerical Simulations) — a Monte Carlo-based margining system
+
+**Futures Margin (CFE):**
+- Initial and maintenance margin set by OCC as clearing house
+- VIX futures margins set based on STANS methodology
+- Performance bond requirements vary by contract and market conditions
+
+### Position Limits
+
+- **SPX Options:** Position limits have been substantially expanded; effectively no aggregate position limit for standard SPX options [unverified — verify current rule status]
+- **VIX Options:** Position limits apply; hedge exemptions available through application process
+- **Equity Options:** Typically 25,000 to 250,000 contracts per underlying, depending on the stock's trading volume and float
+- **VIX Futures:** Subject to CFTC speculative position limits and reportable position thresholds; CFE-specific limits apply
+- **Large Trader Reporting:** Positions exceeding reporting thresholds must be reported to OCC (options) and CFTC (futures)
+
+### Block Trading and Complex Order Handling
+
+**Complex Orders:**
+- Complex Order Book (COB) maintains a dedicated order book for multi-leg strategies
+- Up to 16 legs per complex order on C1 (stock-option orders via Complex AIM)
+- Complex orders can trade against other complex orders in the COB or be "legged" against the individual simple books when favorable
+- Complex Order Auction (COA) provides exposure and price improvement opportunities
+
+**Qualified Contingent Cross (QCC):**
+- Minimum 1,000 contracts per leg
+- Must include a stock component
+- Exempt from standard auction exposure; executes immediately at designated price
+- Commonly used for large institutional block-size options trades
+
+**FLEX Options:**
+- Fully customizable contract terms: any strike price, any expiration date (within limits), choice of exercise style (American/European), choice of settlement (cash/physical)
+- Minimum initial position of 250 contracts (equity FLEX) or 100 contracts (index FLEX) [unverified for current thresholds]
+- Cleared by OCC
+
+**CFE Block Trades:**
+- Block trading available for VIX futures
+- Minimum block size and reporting requirements per CFE rules
+
+[Source: Cboe product specifications pages; Cboe Margin Manual; Cboe Exchange Rule Book; Cboe VIX methodology whitepaper; Cboe press releases, accessed 2026-04-06]
+
+---
+
+## Sources
+
+- [Cboe Global Markets IR — Full Year 2025 Volume Report](https://ir.cboe.com/news/news-details/2026/Cboe-Global-Markets-Reports-Trading-Volume-for-December-and-Full-Year-2025/default.aspx)
+- [Cboe Global Markets IR — Q4 2025 & Full Year Earnings](https://ir.cboe.com/news/news-details/2026/Cboe-Global-Markets-Reports-Results-for-Fourth-Quarter-2025-and-Full-Year/default.aspx)
+- [Cboe SPX Options Product Specifications](https://www.cboe.com/tradable-products/sp-500/spx-options/spx-specifications/)
+- [Cboe VIX Futures Contract Specifications](https://www.cboe.com/tradable-products/vix/vix-futures/specifications/)
+- [Cboe VIX Options Product Specifications](https://www.cboe.com/tradable-products/vix/vix-options/specifications/)
+- [Cboe US Options Exchange Complex Orders](https://www.cboe.com/us/options/trading/complex_orders/)
+- [Cboe US Options Exchange Risk Management Tools](https://www.cboe.com/us/options/trading/risk_management/)
+- [Cboe Options Exchange Fee Schedule](https://www.cboe.com/us/options/membership/fee_schedule/)
+- [Cboe Titanium Platform](https://www.cboe.com/titanium/)
+- [Cboe Global Cloud](https://www.cboe.com/cboe_global_cloud/)
+- [Cboe Connectivity Manual](https://cdn.cboe.com/resources/membership/US_Equities_Options_Connectivity_Manual.pdf)
+- [Cboe Market-Wide Circuit Breaker FAQ](https://cdn.cboe.com/resources/membership/US_Market_Wide_Circuit_Breaker_FAQ.pdf)
+- [Cboe Margin Manual](https://cdn.cboe.com/resources/membership/Margin_Manual.pdf)
+- [Cboe Exchange Rule Book](https://cdn.cboe.com/resources/regulation/rule_book/C1_Exchange_Rule_Book.pdf)
+- [Cboe Options Membership](https://www.cboe.com/markets/us/options/membership/)
+- [Cboe Hours & Holidays](https://www.cboe.com/about/hours/)
+- [Wikipedia — Cboe Global Markets](https://en.wikipedia.org/wiki/Cboe_Global_Markets)
+- [Finance Magnates — Cboe 2025 Revenue](https://www.financemagnates.com/institutional-forex/cboe-posts-24b-in-2025-revenue-as-options-volumes-stay-elevated-across-institutional-and-retail/)
+- [MacroTrends — Cboe Market Cap](https://www.macrotrends.net/stocks/charts/CBOE/cboe-global-markets/market-cap)
+- [Cboe DataShop](https://datashop.cboe.com/)
+- [StockTitan — Cboe Titanium Announcement](https://www.stocktitan.net/news/CBOE/cboe-unveils-new-brand-for-exchange-technology-platform-marking-new-ba2swduralf0.html)

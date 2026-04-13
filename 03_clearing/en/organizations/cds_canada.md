@@ -1,0 +1,241 @@
+# CDS Clearing and Depository Services (CDS)
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3
+> **Type:** CCP / CSD
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | CDS Clearing and Depository Services Inc. |
+| Abbreviation | CDS |
+| Website | [https://www.cds.ca](https://www.cds.ca) |
+| Year Established | 1970 (incorporated June 9, 1970) |
+| Country / City | Canada / Toronto |
+| Ownership Structure | Wholly owned subsidiary of The Canadian Depository for Securities Limited |
+| Parent Company / Group | TMX Group Inc. (since 2012 Maple transaction) |
+| Regulatory Authority | Bank of Canada (designated SIPS oversight), Ontario Securities Commission (OSC), Autorite des marches financiers (AMF Quebec), British Columbia Securities Commission |
+| CPMI-IOSCO PFMI Compliance | Yes -- publishes PFMI self-assessments and qualitative disclosures [Source: CDS PFMI Disclosure, cds.ca/resource/en/247] |
+| QCCP Status | Not applicable -- CDS acts as CCP only for its CNS service (equity netting); not a derivatives CCP |
+
+### Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 1970 | Canadian Depository for Securities Limited incorporated to address rising back-office costs and increasing trading volumes [Source: [Wikipedia](https://en.wikipedia.org/wiki/Canadian_Depository_for_Securities)] |
+| 1970s-80s | Gradually expanded depository and clearing services for Canadian equity and debt markets |
+| 1996 | CDSX project initiated to build an integrated clearing and settlement system |
+| 2003 | **CDSX launched** -- integrated clearing, settlement, and depository platform replacing legacy systems [Source: [CDS About](https://www.cds.ca/about/cds)] |
+| 2012 | TMX Group acquired CDS as part of the Maple Group transaction, making CDS a wholly owned TMX subsidiary [Source: [Wikipedia](https://en.wikipedia.org/wiki/Canadian_Depository_for_Securities)] |
+| 2014 | CDS designated as a systemically important FMI under the Payment Clearing and Settlement Act (PCSA) by the Bank of Canada |
+| 2017 | CNS (Continuous Net Settlement) service launched for equity trade netting with CCP functionality [Source: [OSC CDS Rule Review](https://www.osc.ca/en/industry/market-regulation/clearing-agencies-and-clearing-houses/recognized-clearing-agencies/cds-rule-review)] |
+| 2024 (May 27) | **T+1 settlement** implemented -- Canada moved to T+1 one day before the US (May 28) [Source: [CDS T+1](https://www.cds.ca/solutions/cds-key-initiatives/t-1)] |
+| 2025+ | **Post-Trade Modernization (PTM)** initiative underway -- complete technology platform replacement [Source: [Markets Media](https://www.marketsmedia.com/post-trade-modernization-a-game-changer-for-canada/)] |
+
+> **KRX/KSD Comparison:** CDS combines CSD and CCP functions in a single entity, similar to how KSD (Korea Securities Depository) acts as Korea's CSD while KRX acts as the CCP for exchange-traded products. In Canada, CDS provides the CCP function only through its CNS service for equities, whereas Korea has a cleaner separation between KRX (CCP) and KSD (CSD/settlement).
+
+---
+
+## 2. Clearing Model
+
+### 2.1 CCP Services (brief)
+
+CDS operates three distinct financial market infrastructure functions [Source: [CDS About](https://www.cds.ca/about/cds)]:
+
+| Function | Description |
+|----------|-------------|
+| **Central Securities Depository (CSD)** | Safekeeping of almost CAD 4 trillion in securities on deposit; record-keeping for depository-eligible domestic and international securities |
+| **Securities Settlement System (SSS)** | DVP settlement of exchange-traded and OTC equity, debt, and money market transactions through CDSX |
+| **Central Counterparty (CCP)** | CNS (Continuous Net Settlement) service for eligible exchange-traded equity transactions; CDS interposes itself as counterparty through novation |
+
+| Product Class | CCP Clearing (CNS) | Settlement (CDSX) |
+|---------------|--------------------|--------------------|
+| Equities | Yes (CNS netting and novation) | Yes |
+| Government Bonds | No CCP service | Yes |
+| Corporate Bonds | No CCP service | Yes |
+| Money Market | No CCP service | Yes |
+| OTC Products | No CCP service | Yes (trade-for-trade) |
+
+> **Note:** For listed derivatives clearing in Canada, the Canadian Derivatives Clearing Corporation (CDCC), another TMX Group subsidiary, provides CCP services. CDS handles settlement infrastructure only.
+
+### 2.3 Netting
+
+- **CNS Service:** Multilateral netting with novation for eligible exchange-traded equity transactions
+- CDS substitutes itself as the counterparty to each side of the trade through a continuous netting and novation process [Source: [CDS PFMI Disclosure](https://www.cds.ca/resource/en/247)]
+- Netting occurs on a multilateral basis, reducing the number and value of settlement obligations
+- Non-CNS trades settle on a trade-for-trade (gross) basis within CDSX
+
+> **KRX/KSD Comparison:** KRX's netting for equities operates on a similar multilateral netting basis. However, KRX nets across all exchange-traded products as CCP, whereas CDS's CNS CCP function is limited to equities. Korea also uses a T+2 cycle for equities (as of 2026), while Canada moved to T+1 in May 2024.
+
+### 2.4 Clearing Membership (brief)
+
+CDS has two main types of participants in CDSX [Source: [BIS Red Book - Canada](https://www.bis.org/cpmi/publ/d97_ca.pdf)]:
+
+| Participant Type | Role | Description |
+|-----------------|------|-------------|
+| **Extender of Credit** | Settlement bank / major dealer | Provides lines of credit to Receivers; collateralizes own and receivers' intraday payment obligations; typically large banks |
+| **Receiver of Credit** | Broker-dealer / institution | Receives intraday credit lines from Extenders to enable securities purchases during the day |
+
+Additional participant roles include Settlement Agents, TA (Transfer Agent) Participants, ATON Participants, and ACT Participants.
+
+- Processing volumes: Over **2.1 million exchange trades daily** [Source: [CDS About](https://www.cds.ca/about/cds)]
+- Cross-border: Over **41 million cross-border transactions** with the US annually
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework (brief)
+
+| Component | Description |
+|-----------|-------------|
+| **Initial Margin (CNS)** | Collateral required from CNS Participants to cover potential losses from default; collected as CNS Participant Fund contributions |
+| **Variation Margin** | Mark-to-market adjustments on outstanding CNS positions |
+| **Intraday Margin Calls** | CDS has the operational capacity for both scheduled and unscheduled intraday margin calls, in compliance with PFMI Principle 6 [Source: [OSC Notice](https://www.osc.ca/en/industry/market-regulation/clearing-agencies-and-clearing-houses/recognized-clearing-agencies/cds-rule-review/notice-material-rule-submission-2)] |
+| **Equity Haircuts** | Applied to securities pledged as collateral |
+
+- The Bank of Canada has noted that as part of the PTM initiative, CDS should align its practices with the Bank's standards related to CNS margin and equity haircut model design [Source: [Bank of Canada 2024 Oversight Report](https://www.bankofcanada.ca/2025/05/release-2024-bank-canada-fmi-oversight-activities-annual-report/)]
+
+### 3.3 Default Waterfall (brief)
+
+The CNS service has a defined default waterfall [Source: [CDS PFMI Disclosure](https://www.cds.ca/resource/en/247); [OSC CDS Procedures](https://www.osc.ca/sites/default/files/2022-01/cds_20141120_sn-rfc-procedures-cns-participant-default-fund.pdf)]:
+
+| Layer | Description |
+|-------|-------------|
+| 1 | **Defaulting Participant's CNS Participant Fund collateral** (initial margin) |
+| 2 | **Defaulting Participant's CNS Default Fund contribution** |
+| 3 | **CDS's own capital** (Skin-in-the-Game) [unverified -- exact size not confirmed in public sources] |
+| 4 | **Surviving CNS Participants' Default Fund contributions** -- residual losses allocated pro-rata to surviving members |
+| 5 | **Assessment powers** -- CDS may call for additional contributions from surviving participants [unverified] |
+
+### 3.6 Recovery & Resolution (brief)
+
+- **Resolution Authority:** Bank of Canada oversees CDS as a designated systemically important FMI under the Payment Clearing and Settlement Act (PCSA)
+- CDS is subject to the Bank of Canada's risk-management standards for designated FMIs [Source: [Bank of Canada](https://www.bankofcanada.ca/core-functions/financial-system/bank-canada-risk-management-standards-systemic-fmis/)]
+- The Bank of Canada undertook core assurance reviews for CDS in 2024, assessing governance, non-cyber operational risk, and credit risk [Source: [Bank of Canada 2024 Report](https://www.bankofcanada.ca/2025/05/release-2024-bank-canada-fmi-oversight-activities-annual-report/)]
+- Recovery tools include loss allocation to surviving members (pro-rata), assessment powers, and potential service wind-down [unverified -- specific recovery tools not fully confirmed]
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle
+
+| Product | Settlement Cycle | Notes |
+|---------|-----------------|-------|
+| Equities | **T+1** (since May 27, 2024) | Previously T+2; moved to T+1 one day before the US (May 28, 2024) |
+| Government Bonds | T+1 | Aligned with equity settlement cycle change |
+| Corporate Bonds | T+1 | Aligned with equity settlement cycle change |
+| Money Market | T+0 to T+1 | Varies by instrument |
+
+**T+1 Transition Results:** In the week following T+1 implementation, the daily fail rate stayed below 2%, with the weekly average around 1% -- comparable to T+2 levels. Institutional trade processing trended toward the 90% confirmation target by 3:59 a.m. on T+1. [Source: [CDS T+1 Page](https://www.cds.ca/solutions/cds-key-initiatives/t-1); [CIBC Mellon](https://www.cibcmellon.com/en/newsroom/publications/straight-talk/2024/2024-05/st20240528-canada-implements-t+1-trading.jsp)]
+
+> **KRX/KSD Comparison:** Korea currently operates on T+2 for equities. Canada's move to T+1 (coordinated with the US) places it ahead of many markets. Korea has been studying T+1 feasibility but has not yet committed to a transition date as of 2026.
+
+### 4.2 DVP Model
+
+- **BIS DVP Model 3** -- CDSX operates with gross (item-by-item) settlement for securities transfers throughout the day, with continuous netting of corresponding payment obligations [Source: [BIS Red Book - Canada](https://www.bis.org/cpmi/publ/d97_ca.pdf)]
+- Once a transaction clears risk-control edits, settlement occurs on a DVP basis through entries to counterparties' CDSX accounts
+- End-of-day net payment obligations between CDS and participants are settled through designated bankers, with final payments made through **Lynx** (Canada's large-value payment system, operated by Payments Canada) to CDS's settlement account at the **Bank of Canada** [Source: [CDS Settlement Page](https://www.cds.ca/participants/settlement-and-clearing)]
+
+> **KRX/KSD Comparison:** KSD also uses a DVP model with settlement through the Bank of Korea (BOK-Wire+). The principle is similar -- central bank money for final settlement -- though the specific DVP model variant differs.
+
+---
+
+## 5. Technology & Infrastructure (brief)
+
+| Item | Details |
+|------|---------|
+| **System Name** | **CDSX** (launched 2003) |
+| **Architecture** | Integrated clearing, settlement, and depository platform |
+| **Processing Capacity** | Over 2.1 million exchange trades daily; ~374 million domestic securities trades annually |
+| **Key Interfaces** | Links to Lynx (LVTS replacement), DTC (US), Euroclear France, Japan Securities Depository Centre, SEB (Skandinaviska Enskilda Banken) |
+| **Modernization** | **Post-Trade Modernization (PTM)** initiative in progress -- complete technology platform replacement planned for 2025+ [Source: [Markets Media](https://www.marketsmedia.com/post-trade-modernization-a-game-changer-for-canada/)] |
+
+- CDS maintains custodial relationships with DTC (US), enabling cross-border settlement of over 41 million transactions annually
+- CDSX provides real-time processing with continuous settlement throughout the business day
+
+---
+
+## 6. Regulatory Framework
+
+### 6.1 Supervising Authority
+
+| Regulator | Role |
+|-----------|------|
+| **Bank of Canada** | Primary oversight -- CDS designated as systemically important under the Payment Clearing and Settlement Act (PCSA) |
+| **Ontario Securities Commission (OSC)** | Securities regulator recognition -- CDS recognized as a clearing agency |
+| **Autorite des marches financiers (AMF)** | Quebec securities regulator recognition |
+| **British Columbia Securities Commission** | BC securities regulator recognition |
+
+### 6.2 Key Regulations
+
+- **Payment Clearing and Settlement Act (PCSA):** Federal legislation; CDS designated as systemically important by the Bank of Canada [Source: [Bank of Canada](https://www.bankofcanada.ca/core-functions/financial-system/clearing-and-settlement-systems/)]
+- **Provincial Securities Legislation:** CDS recognized as a clearing agency under the securities acts of Ontario, Quebec, and British Columbia
+- **Bank of Canada Risk-Management Standards for Designated FMIs:** CDS must comply with these standards, which incorporate CPMI-IOSCO PFMI principles [Source: [Bank of Canada Standards](https://www.bankofcanada.ca/core-functions/financial-system/bank-canada-risk-management-standards-systemic-fmis/)]
+
+### 6.3 PFMI Compliance
+
+- CDS publishes CPMI-IOSCO PFMI qualitative self-assessments and quantitative disclosures
+- Latest disclosures available at [cds.ca](https://www.cds.ca/resource/en/247)
+- Bank of Canada conducts regular oversight assessments against PFMI standards
+
+---
+
+## 7. Interoperability
+
+### 7.1 Cross-border Linkages
+
+| Partner CSD/Depository | Type | Products |
+|------------------------|------|----------|
+| **DTC (Depository Trust Company, US)** | Custodial link | Cross-border equity and fixed income settlement; 41M+ transactions annually |
+| **Japan Securities Depository Centre** | Custodial link | Cross-border settlement |
+| **Euroclear France** | Custodial link | Cross-border settlement |
+| **SEB (Skandinaviska Enskilda Banken)** | Custodial link | Nordic market access |
+
+- CDS does not have CCP interoperability arrangements -- its CCP function (CNS) is domestic only
+- Cross-border settlement is facilitated through custodial relationships rather than direct CCP links
+
+---
+
+## 9. Recent Developments
+
+### T+1 Settlement (2024)
+- Canada successfully transitioned to T+1 on May 27, 2024, one day ahead of the US
+- Fail rates remained low (below 2%) post-transition
+- Coordinated with US/Mexico move to T+1 [Source: [CDS T+1](https://www.cds.ca/solutions/cds-key-initiatives/t-1)]
+
+### Post-Trade Modernization (PTM) Initiative (2025+)
+- Major technology replacement project to modernize the CDSX platform
+- Bank of Canada expects CDS to align CNS margin and equity haircut models with Bank standards as part of PTM
+- Described as a "game changer" for Canadian capital markets [Source: [Markets Media](https://www.marketsmedia.com/post-trade-modernization-a-game-changer-for-canada/)]
+
+### Bank of Canada 2024 Oversight
+- Bank of Canada conducted core assurance reviews for CDS in 2024 covering governance, non-cyber operational risk, and credit risk [Source: [Bank of Canada 2024 Report](https://www.bankofcanada.ca/2025/05/release-2024-bank-canada-fmi-oversight-activities-annual-report/)]
+
+### CNS Service Enhancements
+- Ongoing enhancements to intraday margin call capabilities
+- Scheduled intraday margin calls added to CDS's daily activities [Source: [OSC Notice](https://www.osc.ca/en/industry/market-regulation/clearing-agencies-and-clearing-houses/recognized-clearing-agencies/cds-rule-review/notice-material-rule-submission-2)]
+
+---
+
+## Sources
+
+1. [CDS About Page](https://www.cds.ca/about/cds) -- official overview
+2. [CDS Settlement & Clearing](https://www.cds.ca/participants/settlement-and-clearing) -- settlement services
+3. [CDS T+1 Initiative](https://www.cds.ca/solutions/cds-key-initiatives/t-1) -- T+1 transition details
+4. [CDS PFMI Qualitative Disclosure](https://www.cds.ca/resource/en/247) -- CPMI-IOSCO self-assessment
+5. [CDS PFMI Disclosure (2024)](https://www.cds.ca/resource/en/630) -- latest PFMI disclosure
+6. [Bank of Canada -- Clearing and Settlement Systems](https://www.bankofcanada.ca/core-functions/financial-system/clearing-and-settlement-systems/) -- oversight framework
+7. [Bank of Canada -- Risk-Management Standards for Designated FMIs](https://www.bankofcanada.ca/core-functions/financial-system/bank-canada-risk-management-standards-systemic-fmis/)
+8. [Bank of Canada -- 2024 FMI Oversight Report](https://www.bankofcanada.ca/2025/05/release-2024-bank-canada-fmi-oversight-activities-annual-report/)
+9. [OSC -- CDS Rule Review](https://www.osc.ca/en/industry/market-regulation/clearing-agencies-and-clearing-houses/recognized-clearing-agencies/cds-rule-review) -- regulatory notices
+10. [OSC -- CNS Participant Default Fund Procedures](https://www.osc.ca/sites/default/files/2022-01/cds_20141120_sn-rfc-procedures-cns-participant-default-fund.pdf)
+11. [BIS Red Book -- Canada (2011)](https://www.bis.org/cpmi/publ/d97_ca.pdf) -- CPSS payment systems overview
+12. [Wikipedia -- Canadian Depository for Securities](https://en.wikipedia.org/wiki/Canadian_Depository_for_Securities)
+13. [CIBC Mellon -- T+1 Implementation](https://www.cibcmellon.com/en/newsroom/publications/straight-talk/2024/2024-05/st20240528-canada-implements-t+1-trading.jsp)
+14. [Markets Media -- Post-Trade Modernization](https://www.marketsmedia.com/post-trade-modernization-a-game-changer-for-canada/)
+15. [OSC -- Impact of T+1 on Failed Trades](https://www.osc.ca/en/news-events/reports-and-publications/impact-t1-settlement-failed-trades)

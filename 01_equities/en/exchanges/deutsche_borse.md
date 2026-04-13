@@ -1,0 +1,483 @@
+# Deutsche Borse / Xetra (XETR)
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 2
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Deutsche Borse AG (operates Frankfurter Wertpapierborse / Frankfurt Stock Exchange and the Xetra electronic trading venue) |
+| Abbreviation | XETR (Xetra), FWB (Frankfurt Stock Exchange) |
+| Website | https://www.deutsche-boerse.com / https://www.xetra.com |
+| Year Established | 1585 (Frankfurt trade fair origins); Deutsche Borse AG incorporated 1992 |
+| Country / City | Germany / Frankfurt am Main (Mergenthalerallee 61, 65760 Eschborn) |
+| Ownership Structure | Publicly listed on its own exchange (ticker: DB1 on Xetra/FWB); widely held institutional ownership |
+| Parent Company / Group | Deutsche Borse Group -- a vertically integrated exchange group encompassing trading (Xetra, Eurex, EEX), clearing (Eurex Clearing), settlement & custody (Clearstream), index (STOXX/DAX indices), data & analytics (Qontigo), and fund services (IFS) |
+| Regulatory Authority | Bundesanstalt fur Finanzdienstleistungsaufsicht (BaFin) and Hessisches Ministerium fur Wirtschaft (Exchange Supervisory Authority of the State of Hesse) |
+| Market Capitalization (listed companies) | ~EUR 2.1 trillion in domestic market cap of listed companies (as of mid-2025) [unverified] |
+| Total Listed Instruments | ~3,500+ equities, ~1,800 ETFs/ETPs, ~490,000+ structured products (warrants, certificates), ~30,000+ bonds on Xetra and FWB combined [unverified] |
+| Average Daily Trading Volume | Xetra: ~5-7 million trades/day in equities; ~EUR 4.5-5.5 billion average daily turnover on Xetra order book (2024-2025) [estimated] |
+| Average Daily Trading Value | Xetra equities: ~EUR 4.5-5.5 billion/day; total across all FWB segments significantly higher including structured products [estimated] |
+
+### Key Historical Milestones
+- 1585: Frankfurt merchants establish fixed exchange rates at trade fairs -- origin of the Frankfurt Stock Exchange (Frankfurter Wertpapierborse)
+- 1820: Frankfurt Stock Exchange formally organized with official listing of bonds, then shares
+- 1949: Post-WWII re-opening of the Frankfurt Stock Exchange
+- 1969: First computerized back-office settlement system introduced
+- 1988: DAX 30 index launched (later expanded to DAX 40 in 2021)
+- 1992: Deutsche Borse AG incorporated as a holding company encompassing the Frankfurt Stock Exchange, the Deutsche Terminborse (DTB, later Eurex), and Clearstream (settlement)
+- 1997: **Xetra electronic trading platform launched** (November 28, 1997), replacing the IBIS system; fully electronic order-driven market
+- 2001: Deutsche Borse AG IPO -- listed on its own Frankfurt Stock Exchange
+- 2002: Merger of DTB with SOFFEX to form Eurex, the world's largest derivatives exchange
+- 2003: Clearstream International created from merger of Cedel and Deutsche Borse Clearing
+- 2007: Xetra Release 9.0 introduced; International Central Securities Depository (ICSD) capabilities enhanced
+- 2012-2013: European Commission blocks proposed merger of Deutsche Borse with NYSE Euronext on antitrust grounds
+- 2015: Deutsche Borse Group acquires 360T (FX trading platform) and STOXX/DAX indices division restructured
+- 2017: **T7 trading system launched for Xetra** (June 2017), replacing the legacy Xetra system; shared platform with Eurex
+- 2018: MiFID II comes into effect; Deutsche Borse launches Xetra best-execution segments
+- 2020: DAX index reform announced; Qontigo formed (STOXX + Axioma analytics merger)
+- 2021: DAX expanded from 30 to 40 constituents (September 2021)
+- 2022: Acquisition of SimCorp (investment management software) for EUR 3.9 billion announced
+- 2023: SimCorp acquisition completed; Deutsche Borse acquires majority stake in Crypto Finance AG
+- 2024: Revenue exceeds EUR 5.6 billion; further T7 upgrades; launch of D7 digital post-trade platform
+- 2025: Continued growth in net revenue (~EUR 6+ billion); cloud-native initiatives; digital assets expansion [estimated]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+
+Deutsche Borse operates two primary trading venues for equities: the **Xetra** electronic venue and the **Frankfurt Stock Exchange floor** (Borse Frankfurt).
+
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| **Xetra (Regulated Market -- Prime Standard)** | Highest transparency segment; required for DAX index inclusion; international accounting standards (IFRS), quarterly reporting, annual analyst conferences, ad-hoc disclosures in English | EU Prospectus approved by BaFin; minimum 3-year operating history; minimum 25% free float (for index inclusion); IFRS financial statements |
+| **Xetra (Regulated Market -- General Standard)** | EU-regulated market with standard transparency requirements | EU Prospectus approved by BaFin; satisfies EU Transparency Directive minimums; semi-annual reporting |
+| **Scale (Open Market -- SME Segment)** | Growth segment for small and mid-cap companies; exchange-regulated (not EU-regulated market) | Simplified admission via Deutsche Borse; minimum EUR 30 million market cap [unverified]; 2-year financial history; designated sponsor (liquidity provider) required |
+| **Basic Board (Open Market)** | Entry-level segment in the Open Market (Freiverkehr); lighter listing obligations | Application to Deutsche Borse; inclusion document (not full prospectus); minimal ongoing obligations |
+| **Borse Frankfurt (Floor Trading)** | Specialist-supported floor/electronic trading for all FWB-listed instruments including equities, bonds, ETFs, structured products | Same admission to FWB; specialists (formerly Skontrofuhrer) provide indicative and binding quotes |
+
+### 2.2 Trading Sessions
+
+Xetra operates on Central European Time (CET/CEST). Times below are CET (UTC+1 in winter / UTC+2 in summer).
+
+| Session | Local Time (CET) | UTC (Winter) | Description |
+|---------|-------------------|--------------|-------------|
+| Pre-Trading | 07:30 - 08:50 | 06:30 - 07:50 | System open; orders can be entered, modified, cancelled; no matching |
+| Opening Auction (Call) | 08:50 - 09:00 (+ random end) | 07:50 - 08:00 | Order accumulation; indicative price shown; ends with random uncrossing within ~30 seconds after 09:00 |
+| Continuous Trading | ~09:00 - 17:30 | ~08:00 - 16:30 | Continuous order matching with price/time priority |
+| Closing Auction (Call) | 17:30 - 17:35 (+ random end) | 16:30 - 16:35 | Closing price determination; random end up to 30 seconds |
+| Post-Trading | 17:35 - 20:30 | 16:35 - 19:30 | Trade reporting; no new matching |
+| Intraday Auctions | Scheduled per instrument (e.g., 13:00 CET for DAX instruments) | Varies | Scheduled intraday call auctions for certain instruments |
+
+Note: ETFs and ETPs on Xetra trade 09:00-17:30 CET. Borse Frankfurt floor trading hours are 08:00-20:00 CET for equities and 08:00-22:00 CET for structured products.
+
+### 2.3 Tick Sizes
+
+Xetra follows the **MiFID II tick size regime** (ESMA RTS 11), identical to other EU venues. Tick sizes are determined by the combination of the instrument's price level and its liquidity band (based on Average Daily Number of Transactions, ADNT).
+
+| Price Range (EUR) | Liquidity Band 1 (< 10 ADNT) | Liquidity Band 3 (80-600 ADNT) | Liquidity Band 6 (>= 9000 ADNT) |
+|-------------------|-------------------------------|--------------------------------|----------------------------------|
+| 0 - 0.4999 | 0.005 | 0.002 | 0.0005 |
+| 0.5 - 0.9999 | 0.01 | 0.005 | 0.001 |
+| 1 - 1.9999 | 0.02 | 0.01 | 0.002 |
+| 2 - 4.9999 | 0.05 | 0.02 | 0.005 |
+| 5 - 9.9999 | 0.1 | 0.05 | 0.01 |
+| 10 - 19.9999 | 0.2 | 0.1 | 0.02 |
+| 20 - 49.9999 | 0.5 | 0.2 | 0.05 |
+| 50 - 99.9999 | 1.0 | 0.5 | 0.1 |
+
+[Source: ESMA RTS 11, as applied by Xetra; representative values -- full table contains 6 liquidity bands and 13 price ranges]
+
+### 2.4 Lot Sizes
+- **Standard lot size**: 1 share for equities on Xetra
+- No minimum order size on the Xetra order book for continuous trading
+- **Block trade thresholds**: Defined under MiFID II Large-in-Scale (LIS) waivers; vary by instrument liquidity class
+- **Round lots for structured products**: Vary by product (often 1 unit)
+
+### 2.5 Market Maker / Liquidity Provider Programs -- Designated Sponsors
+
+The **Designated Sponsor** model is a defining feature of Xetra:
+
+- **Designated Sponsors**: Registered market-making firms contracted by issuers (or by Deutsche Borse for index constituents) to provide continuous two-sided quotes during trading hours, ensuring minimum liquidity and maximum spread requirements
+- **Obligations**: Designated Sponsors must quote minimum volumes and maximum spreads defined by Deutsche Borse; requirements vary by instrument liquidity category (A, B, C, D); must respond to Quote Requests within a defined time
+- **Incentives**: Reduced trading fees; priority for XLM (Xetra Liquidity Measure) reporting; marketing visibility
+- **XLM (Xetra Liquidity Measure)**: Deutsche Borse's proprietary measure of implicit trading costs (market impact) used to evaluate Designated Sponsor performance; published monthly
+- **Requirement for certain segments**: Instruments in the Scale segment and less liquid equities typically require at least one Designated Sponsor for admission
+- **Number of Designated Sponsors**: Over 20 active Designated Sponsor firms on Xetra [unverified]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+- **Opening Auction**: Starts at 08:50 CET with a call phase during which orders are collected but not matched. An indicative auction price and volume are displayed in real time. At 09:00 CET, the auction enters a random end period of up to 30 seconds, after which the uncrossing match occurs at the price that maximizes executable volume. If no price can be determined, the best bid/ask is displayed and continuous trading begins without a trade
+- **Closing Auction**: Begins at 17:30 CET. A call phase of approximately 2 minutes collects orders. Random end period (up to 30 seconds) follows to prevent manipulation. The uncrossing determines the official closing price, which is critical for index calculations, fund NAVs, and derivatives settlement
+- **Intraday Auctions**: Scheduled for specific instrument groups (e.g., DAX constituents may have an intraday auction at 13:00 CET). The purpose is to provide additional price discovery points for instruments that may benefit from periodic re-assessment
+- **Volatility Interruptions (Volatility Auctions)**: Triggered automatically when a potential execution price breaches dynamic or static price corridors. The instrument enters an extended call auction to allow orderly price discovery. The volatility auction runs for a defined period (typically 2 minutes) followed by a random end period
+
+### 3.2 Continuous Trading
+- **Order-driven market**: Xetra is a pure electronic order-driven market during continuous trading (09:00-17:30 CET)
+- **Price/time priority**: Orders are matched first by price (best price has priority), then by time (earlier orders have priority at the same price). Visible orders have priority over hidden portions of iceberg orders at the same price
+- **Designated Sponsors** provide supplementary liquidity by quoting two-sided markets, but continuous trading is fundamentally an order book model, not a quote-driven market
+- **Borse Frankfurt floor** operates as a specialist-supported system where a Specialist (Skontrofuhrer) sets indicative prices and facilitates trading with order book support; this is a hybrid model
+
+### 3.3 Price Discovery
+- Primary price discovery occurs through the **opening and closing auctions** and the continuous order book on Xetra
+- The auction uncrossing algorithm follows the principle of: (1) maximum executable volume, (2) minimum surplus (unmatched volume at the auction price), (3) reference price (previous price) used to resolve ties
+- The **Xetra closing price** is the most widely referenced price for German equities and is used for DAX/MDAX/SDAX index calculations
+- Xetra accounts for approximately **90% of all on-exchange equity trading volume** in Germany, making it the dominant price discovery venue
+- **Reference prices** for volatility interruptions are set from the last auction price (static) and the last trade price (dynamic), updated continuously
+
+### 3.4 Order Priority
+- **Price priority**: Best-priced orders always match first
+- **Visible over hidden**: At the same price, visible order quantities have priority over hidden (iceberg reserve) quantities
+- **Time priority**: Among orders at the same price and same visibility, the earliest entry time has priority
+- **Market orders** have priority over limit orders (they are treated as having the best possible price)
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Market Order | Executes at the best available price(s); unlimited price validity; in auctions, guaranteed execution if counterpart exists; in continuous trading, executes immediately against resting orders |
+| Limit Order | Specifies a maximum buy price or minimum sell price; rests on the order book if not immediately matched |
+
+### 4.2 Advanced Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Market-to-Limit Order | Enters as a market order; first execution sets a limit price; unexecuted remainder rests as a limit order at that price |
+| Iceberg Order | Displays only a specified peak quantity on the order book; hidden reserve automatically refreshes the visible peak when it is fully executed; the re-displayed peak gets a new time stamp |
+| Hidden Order | Entire order quantity is hidden from the public order book; executed only against incoming aggressive orders; minimum order value typically EUR 10,000 [unverified] |
+| Stop Order (Stop Market) | Dormant until a specified trigger price is reached; becomes a market order upon activation |
+| Stop Limit Order | Dormant until a trigger price is reached; becomes a limit order at a specified limit price upon activation |
+| One-Cancels-Other (OCO) | Pair of orders where execution of one automatically cancels the other [unverified -- may be supported via broker-side rather than natively on T7] |
+| Trailing Stop Order | Stop price automatically adjusts with favorable price movements by a specified trailing amount [unverified] |
+| Midpoint Order | Pegged to the midpoint of the best bid and offer; available for certain dark order book segments [unverified] |
+
+### 4.3 Time-in-Force Options
+| TIF | Description |
+|-----|-------------|
+| Good for Day (GFD) | Valid for the current trading day; cancelled at end of trading session |
+| Good till Cancelled (GTC) | Remains active until executed, cancelled by the participant, or until a maximum validity period (typically 360 calendar days) |
+| Good till Date (GTD) | Valid until a specified date |
+| Immediate or Cancel (IOC) | Execute immediately for any available quantity; cancel any unfilled remainder |
+| Fill or Kill (FOK) | Must be fully executed immediately or the entire order is cancelled |
+| Opening Auction Only (OA) | Valid only during the opening auction call and uncrossing |
+| Closing Auction Only (CA) | Valid only during the closing auction call and uncrossing |
+| Auction Only | Valid during any auction (opening, intraday, closing) |
+
+### 4.4 Order Modification / Cancellation
+- Orders can be modified (price, quantity, and other attributes) or cancelled at any time during valid trading phases via the T7 ETI (Enhanced Trading Interface) or FIX gateway
+- **Price modification**: Changing the price results in a new time priority timestamp (loss of queue position)
+- **Quantity decrease**: Reducing quantity preserves time priority
+- **Quantity increase**: Increasing quantity results in a new timestamp (loss of priority)
+- **Self-match prevention**: T7 supports self-match prevention (SMP) functionality, allowing firms to prevent unintended crosses between their own orders
+- **Mass cancellation**: Supported via T7 ETI; firms can cancel all orders for a specific session, instrument, or instrument group
+- **Persistent and non-persistent orders**: T7 distinguishes between persistent orders (survive a system failover) and non-persistent orders (cancelled on failover); non-persistent offers lower latency
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | **T7** (officially "T7 trading architecture") |
+| Vendor / In-house | In-house, co-developed by Deutsche Borse for both Xetra (cash markets) and Eurex (derivatives) |
+| Architecture | High-performance, low-latency, event-driven architecture; partition-based design where each instrument group is assigned to a dedicated matching engine partition for parallel processing |
+| Matching Engine | Central limit order book (CLOB) with price/time/visibility priority; each partition handles a subset of instruments independently |
+| Round-trip Latency | Median round-trip latency in the **low single-digit microsecond range** (~5 microseconds for co-located participants); 99th percentile typically under 10 microseconds [estimated based on Deutsche Borse publications] |
+| Order Processing Capacity | Designed to handle millions of order transactions per day; peak capacity significantly exceeds typical daily load |
+| Messages Per Second | T7 supports throughput of **several hundred thousand messages per second** per partition; system-wide capacity in the millions of messages per second [unverified specific numbers] |
+| Launch Year | 2012 (T7 for Eurex derivatives); **2017** (T7 for Xetra cash market, replacing legacy Xetra system) |
+
+### System History
+| Period | System | Notes |
+|--------|--------|-------|
+| Pre-1991 | Floor-only trading | Manual trading floor at the Frankfurt Stock Exchange |
+| 1991-1997 | IBIS (Integriertes Borsenhandels- und Informationssystem) | First electronic trading system for German equities; screen-based but not fully automated matching |
+| 1997-2017 | Xetra (original platform) | Fully electronic order-driven trading; launched November 28, 1997; became dominant German equity trading venue; multiple releases (Xetra 7.0 through 17.0) |
+| 2012-present | T7 (Eurex) | Launched for Eurex derivatives in December 2012; unified architecture |
+| 2017-present | **T7 (Xetra)** | Migrated Xetra cash market to T7 in June 2017 (T7 Release 5.0); unified cash and derivatives on a single platform |
+
+### Technology Stack
+- **Architecture**: Partition-based, with each matching engine partition running on dedicated hardware for isolation and deterministic performance
+- **Programming Language**: C++ (core matching engine) [unverified]
+- **Operating System**: Linux-based
+- **Network**: High-speed, low-latency network fabric within co-location facility; 10GbE and 40GbE connections [unverified]
+- **Trading Gateways**:
+  - **T7 ETI (Enhanced Trading Interface)**: Native binary protocol for lowest-latency order entry; session-based, asynchronous
+  - **T7 FIX Gateway**: FIX 4.2/4.4 protocol for order entry and execution reporting
+- **Market Data**:
+  - **T7 EMDI (Enhanced Market Data Interface)**: Full depth, unnetted market data via UDP multicast
+  - **T7 MDI (Market Data Interface)**: Netted/aggregated top-of-book market data via UDP multicast
+  - **T7 EOBI (Enhanced Order Book Interface)**: Ultra-low latency, order-by-order market data feed directly from the matching engine partition; available to co-located participants
+- **Simulation Environment**: T7 provides a comprehensive simulation environment for member testing
+
+### Disaster Recovery / Business Continuity
+- **Dual data center architecture**: Primary and secondary data centers with real-time replication
+- **Failover**: T7 supports transparent failover; persistent orders survive a gateway or matching engine failover
+- **Non-persistent orders**: Cancelled on failover (trade-off for lower latency)
+- **Regular DR testing**: Deutsche Borse conducts mandatory disaster recovery exercises with participants
+- **Market data redundancy**: Dual feed (A/B) architecture for all market data interfaces
+- **RPO/RTO**: Aligned with BaFin and ESMA regulatory requirements for critical market infrastructure [specific values not publicly disclosed]
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+| Protocol | Description | Use Case |
+|----------|-------------|----------|
+| T7 EOBI (Enhanced Order Book Interface) | Order-by-order, unnetted, ultra-low latency market data directly from matching engine partitions; binary protocol via UDP multicast | HFT and algorithmic trading requiring lowest latency; co-location only |
+| T7 EMDI (Enhanced Market Data Interface) | Full depth-of-book, unnetted market data; binary protocol via UDP multicast | Full order book reconstruction for non-co-located participants |
+| T7 MDI (Market Data Interface) | Aggregated/netted top-of-book data (best bid/offer, last trade); UDP multicast | Surveillance, display systems, lower-bandwidth applications |
+| T7 RDI (Reference Data Interface) | Instrument reference data, trading parameters, product definitions | Pre-trade setup, static data management |
+| CEF (Common Exchange Format) | Historical and end-of-day data files | Back-office, reconciliation, historical analysis |
+
+### 6.2 Data Levels
+- **Level 1 (Top of Book)**: Best bid/offer (BBO), last trade price and size, cumulative volume, VWAP; available via T7 MDI; delayed data (15-minute) available free on xetra.com
+- **Level 2 (Full Depth)**: Complete order book depth at every price level; available via T7 EMDI (all participants) and T7 EOBI (co-located)
+- **Order-by-Order**: Individual order additions, modifications, and deletions visible via EOBI; highest granularity for market microstructure analysis
+
+### 6.3 Distribution Infrastructure
+- **UDP multicast** delivery for all real-time market data feeds (EOBI, EMDI, MDI, RDI)
+- **Dual-feed redundancy**: Feed A and Feed B carry identical sequenced data for client-side arbitration and gap detection
+- **TCP recovery service**: For requesting retransmission of missed multicast packets
+- **Snapshot service**: Full order book snapshots available for initial state recovery or reconnection
+- **Co-location distribution**: EOBI feed available only within the co-location facility (lowest latency path from matching engine)
+- **Third-party vendors**: Market data available through major data vendors (Bloomberg, Refinitiv/LSEG, ICE)
+
+### 6.4 Historical Data
+- **Deutsche Borse Market Data + Services**: Provides historical tick data, end-of-day data, reference data, and corporate actions
+- **A7 Analytics Platform**: Deutsche Borse's analytics offering for transaction cost analysis (TCA) and market quality metrics
+- **CEF files**: End-of-day common exchange format files for full trading day reconstruction
+- **Academic access**: Available through partnerships and data licensing programs
+- **XLM data**: Monthly Xetra Liquidity Measure data published for all Xetra-traded instruments
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+- **Admitted Trading Participants**: Firms must apply to Deutsche Borse for admission as a trading participant on Xetra; must be authorized by their national regulator (BaFin for German firms, or equivalent EU/EEA authority under MiFID II passporting)
+- **Types**: Direct trading participants, Designated Sponsors (market makers), and participants accessing via Sponsored Access (DEA -- Direct Electronic Access) through a sponsoring member
+- **Requirements**: Adequate financial resources, qualified trading personnel (trader examinations required), robust IT systems and controls, compliance and risk management infrastructure
+- **Number of participants**: Over 200 trading participants from 20+ countries active on Xetra [unverified]
+
+### 7.2 Connection Methods
+| Method | Description |
+|--------|-------------|
+| **Deutsche Borse Network (N7)** | Managed network service (previously called "Member Section Network"); dedicated leased lines connecting participant premises to the T7 trading infrastructure |
+| **Co-location Cross-connect** | Direct fibre cross-connect from co-located racks to T7 matching engine infrastructure within the co-location facility |
+| **Third-party Network Providers** | Access via approved network service providers (e.g., BT, Colt, IPC/Connexus) connecting to Deutsche Borse's access points |
+| **Internet (GUI)** | Web-based trader GUI (T7 Trader GUI) accessible via internet for manual trading and monitoring [unverified] |
+
+### 7.3 Co-location / Proximity Services
+- **Primary Location**: equinix FR2 data center, Frankfurt area (the T7 matching engines for both Xetra and Eurex are hosted here) [unverified -- Deutsche Borse has used multiple Frankfurt-area facilities]
+- **Co-location Offerings**: Rack space, power, cooling, and direct cross-connects to T7 infrastructure; multiple rack configurations available
+- **Proximity Services**: For firms not requiring full co-location, proximity hosting is available in nearby data centers with managed connectivity to T7
+- **Latency advantage**: Co-located participants achieve the lowest possible latency (single-digit microsecond round-trip)
+- **Network equipment**: Participants can place their own servers and networking equipment in co-location racks
+- **Multiple cross-connect options**: Dedicated fibre links to T7 ETI gateways, market data (EOBI) switches, and other services
+
+### 7.4 API Protocols
+| Protocol | Use Case |
+|----------|----------|
+| **T7 ETI (Enhanced Trading Interface)** | Native binary, session-oriented; lowest-latency order entry, modification, cancellation, and execution reporting; supports high-frequency strategies |
+| **T7 FIX Gateway** | FIX 4.2/4.4 compliant; standard protocol for order routing; higher latency than ETI but industry-standard |
+| **T7 GUI (Trader GUI)** | Java-based graphical interface for manual order entry, market monitoring, and trade management |
+| **T7 Admin GUI** | Administrative interface for session management, risk parameter configuration, and user administration |
+| **Common Report Engine** | XML/CSV-based post-trade reporting; trade confirmations, settlement instructions, regulatory reports |
+| **T7 RDI** | Reference data interface for instrument master data |
+
+### 7.5 Certification / Testing
+- **T7 Simulation Environment**: Full functional replica of the production environment; available for member testing of order entry, market data reception, and fail-over scenarios
+- **Conformance/Certification Testing**: Mandatory before production go-live; Deutsche Borse verifies correct implementation of T7 protocols (ETI, FIX, market data)
+- **Release Testing**: Advance notice provided for T7 software releases; dedicated testing windows in simulation
+- **Member Readiness Program**: Deutsche Borse coordinates member readiness for major system upgrades
+- **Technical contact**: Member Services and Technical Account Management teams available for onboarding support
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+| Type | Threshold | Action |
+|------|-----------|--------|
+| Static Price Range | Defined per instrument based on a percentage deviation from the last auction price (e.g., ~10% for DAX stocks) [unverified specific percentages] | Potential execution prices outside the static range trigger a volatility interruption |
+| Dynamic Price Range | Defined per instrument based on a percentage deviation from the last trade price or best bid/offer; narrower than static range (e.g., ~2-5% for liquid stocks) [unverified] | Potential execution prices outside the dynamic range trigger a volatility interruption |
+| Extended Price Range | Maximum allowable price range for an instrument during a volatility interruption; if the auction uncrossing would breach this, the auction is extended | Auction extension |
+
+Note: Xetra does not impose fixed daily price limits (no hard up/down percentage cap for the day). Instead, it uses the volatility interruption mechanism described below.
+
+### 8.2 Circuit Breakers -- Volatility Interruptions
+| Type | Trigger | Halt Duration |
+|------|---------|---------------|
+| **Volatility Interruption (Dynamic)** | Potential continuous trade or auction uncrossing price breaches the dynamic price corridor (based on last trade) | Automatic switch to a call auction; typically 2 minutes followed by a random end period of up to 30 seconds |
+| **Volatility Interruption (Static)** | Potential price breaches the static price corridor (based on last auction price) | Automatic switch to a call auction; typically 2 minutes + random end |
+| **Extended Volatility Interruption** | The indicative uncrossing price of a volatility interruption auction itself breaches the extended price range | Auction extended for another period; may repeat |
+| **Market-wide Circuit Breaker** | No explicit market-wide halt mechanism at the exchange level [unverified]; individual instrument-level volatility interruptions serve the same purpose | Per-instrument; does not halt entire market |
+
+- Volatility interruptions are transparent: the T7 system publishes a dedicated message notifying all participants when a volatility interruption is triggered and when it ends
+- During a volatility interruption, orders can be entered, modified, and cancelled, but no matching occurs until the auction uncrossing
+
+### 8.3 Pre-trade Risk Controls
+- **Maximum Order Value**: Configurable per session/instrument; orders exceeding the threshold are rejected by T7
+- **Maximum Order Quantity**: Limits on maximum number of shares/contracts per order
+- **Price Reasonability Checks**: T7 validates incoming order prices against the current market and rejects orders with unreasonable prices (extreme limit prices)
+- **Throttling / Message Rate Limits**: T7 enforces message rate limits per session (e.g., a maximum number of transactions per second); excessive message rates result in throttling or session disconnection
+- **Advanced Risk Protection (ARP)**: Cumulative execution monitoring per time interval; if a firm's executed volume/value exceeds configured thresholds within a rolling time window, further orders are automatically rejected or the session is suspended
+- **Pre-trade Risk Limits by Clearing Member**: Clearing members (via Eurex Clearing) can set and monitor pre-trade limits for their clients in real time
+- **Self-match prevention**: Prevents a firm's own buy and sell orders from matching against each other
+
+### 8.4 Kill Switch
+- **T7 Kill Switch (Stop Button)**: Available via the T7 Admin GUI; authorized risk managers can delete all orders and quotes for a specific session, user, or business unit
+- **Clearing Member Stop**: Clearing members can trigger emergency stop for their non-clearing member clients via Eurex Clearing interfaces
+- **Scope**: Can cancel all open orders for a specific trader, session, business unit, or the entire firm
+- **Urgency Stop via Market Operations**: Participants can contact Deutsche Borse Market Operations (telephone) to request an emergency halt of a participant's trading activity
+- **Automated triggers**: ARP can automatically function as a kill switch when cumulative thresholds are breached
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+- **BaFin (Bundesanstalt fur Finanzdienstleistungsaufsicht)**: Germany's federal financial supervisory authority; regulates Deutsche Borse AG as a market operator and supervises trading participants
+- **Exchange Supervisory Authority (Borsennaufsichtsbehorde)**: The Hessisches Ministerium fur Wirtschaft, Energie, Verkehr und Wohnen (Hesse Ministry of Economic Affairs) directly supervises the Frankfurt Stock Exchange as the state-level exchange supervisory authority under the German Exchange Act (Borsengesetz)
+- **ECB / Bundesbank**: Oversight of Clearstream and Eurex Clearing as systemically important financial market infrastructures
+- **ESMA**: EU-level coordination; Deutsche Borse venues operate under the MiFID II/MiFIR framework as transposed into German law
+
+### 9.2 Key Regulations
+- **Borsengesetz (German Exchange Act)**: Primary legislation governing the organization and operation of exchanges in Germany
+- **Wertpapierhandelsgesetz (WpHG -- Securities Trading Act)**: Implements EU MiFID II/MiFIR into German law; governs securities trading, market abuse, and transparency
+- **MiFID II / MiFIR**: EU-wide framework for trading venues, transparency, investor protection, and market structure; directly applicable (MiFIR) and transposed (MiFID II)
+- **Market Abuse Regulation (MAR)**: EU Regulation 596/2014; prohibits insider dealing, market manipulation, and unlawful disclosure of inside information
+- **EU Prospectus Regulation**: Governs public offerings and admissions to regulated markets
+- **EMIR (European Market Infrastructure Regulation)**: Governs clearing obligations and CCP regulation (relevant to Eurex Clearing)
+- **CSDR (Central Securities Depositories Regulation)**: Governs settlement and CSD operations (relevant to Clearstream)
+- **Transparenzrichtlinie-Umsetzungsgesetz**: Implementation of the EU Transparency Directive for ongoing issuer disclosure
+
+### 9.3 Market Surveillance
+- **Trading Surveillance Office (HuSt -- HandelsÃ¼berwachungsstelle)**: Independent department within the exchange (legally required under the Borsengesetz) that monitors real-time trading activity for potential market manipulation, insider trading, and rule violations
+- **Market Surveillance by BaFin**: BaFin operates its own transaction monitoring using data reported by investment firms under MiFIR Article 26
+- **Automated surveillance**: Real-time pattern detection using proprietary surveillance systems analyzing order flow, trade execution, and participant behavior
+- **Suspicious Transaction and Order Reports (STORs)**: Member firms must report suspicious trading activity to BaFin
+- **Cross-market coordination**: Deutsche Borse participates in inter-exchange surveillance programs and cooperates with ESMA and other EU national competent authorities
+
+### 9.4 Reporting Requirements
+- **Transaction Reporting**: Investment firms must report to their national competent authority (BaFin for German firms) within T+1 under MiFIR Article 26; 65 data fields per transaction
+- **Post-trade Transparency**: Real-time publication of trade details (price, volume, timestamp) as close to real-time as technically possible; deferrals available for LIS trades and illiquid instruments
+- **Pre-trade Transparency**: Display of bid/offer prices and order book depth for instruments on regulated markets
+- **Short Selling Disclosure**: Net short positions above 0.2% reported to BaFin; above 0.5% publicly disclosed (EU Short Selling Regulation)
+- **Major Holdings Notifications**: Disclosure required when crossing 3%, 5%, 10%, 15%, 20%, 25%, 30%, 50%, 75% voting rights thresholds (under German WpHG implementing EU Transparency Directive)
+- **Directors' Dealings (PDMR transactions)**: Persons Discharging Managerial Responsibilities must report transactions in the issuer's instruments to BaFin and the issuer
+
+### 9.5 Cross-border Arrangements
+- **EU MiFID II Passporting**: Investment firms authorized in any EU/EEA member state can access Xetra as a remote member without establishing a German branch
+- **Third-country access**: Non-EU firms may access Xetra subject to equivalence assessments and bilateral MoUs between BaFin and the firm's home regulator
+- **ESMA cooperation**: Deutsche Borse cooperates with ESMA on pan-European supervisory convergence
+- **IOSCO MMOU**: BaFin is a signatory, facilitating cross-border information sharing
+- **Post-Brexit**: UK firms access Xetra under third-country arrangements; a Memorandum of Understanding exists between BaFin and the FCA
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+
+Xetra trading fees are primarily **volume-based (ad valorem)** with a maker-taker pricing model for certain segments.
+
+| Fee Type | Structure | Rate |
+|----------|-----------|------|
+| Standard Execution Fee (Equities) | Value-based per executed order | ~0.48 bps of trade value (varies by volume tier and pricing model) [unverified specific rate -- fees are published in the Xetra Price List] |
+| Aggressive (Taker) Fee | Higher fee for marketable orders removing liquidity | Higher than passive fee by typically 0.1-0.3 bps [unverified] |
+| Passive (Maker) Fee / Rebate | Reduced fee or rebate for orders providing liquidity | Lower than taker fee; may be zero or a rebate for certain programs [unverified] |
+| Minimum Fee | Per executed order | EUR 0.60 minimum per execution [unverified] |
+| Designated Sponsor Fee | Reduced fee for Designated Sponsor order flow | Significantly reduced compared to standard rates |
+| ETF/ETP Trading Fee | Value-based | Similar structure to equities; competitive to attract ETF flow |
+| Floor Trading (Borse Frankfurt) | Transaction fee per executed trade | Separate price list; specialist-supported trading |
+
+### 10.2 Other Fees
+- **Listing Fees (Initial)**: Admission to trading fee varies by market segment and market capitalization; Prime Standard initial listing fee starts at several thousand EUR and increases with market cap [unverified specific schedule]
+- **Listing Fees (Annual)**: Annual fee for maintaining listing/inclusion; depends on segment (Prime Standard, General Standard, Scale, Basic Board)
+- **Connectivity Fees**: Monthly charges for T7 ETI sessions, FIX sessions, market data connections, and co-location cross-connects
+- **Market Data Fees**: Per-user and enterprise license fees for real-time data (Level 1, Level 2, EOBI); separate pricing for display vs. non-display use; delayed data freely available on xetra.com
+- **Co-location Fees**: Monthly rack rental, power, and cross-connect charges within the co-location facility
+- **Clearing Fees**: Eurex Clearing charges per transaction for CCP clearing of Xetra trades; included in the overall cost chain
+
+### 10.3 Revenue Breakdown (Deutsche Borse Group)
+Deutsche Borse Group's consolidated net revenue for FY 2024 was approximately **EUR 5.6 billion** [Source: Deutsche Borse AG Annual Report 2024], with the following segment breakdown:
+- **Trading & Clearing (Eurex, Xetra, EEX, 360T)**: ~40% of net revenue [estimated]
+- **Securities Services (Clearstream)**: ~25% of net revenue [estimated]
+- **Fund Services (IFS)**: ~10% of net revenue [estimated]
+- **Data & Analytics (Qontigo, ISS)**: ~15% of net revenue [estimated]
+- **SimCorp**: ~10% of net revenue [estimated]
+
+Note: Xetra cash equities trading represents a portion of the Trading & Clearing segment, which also includes Eurex derivatives, EEX commodities/energy, and 360T FX.
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+- **2021**: T7 Release 9.1 -- enhanced matching engine performance; new order types and risk controls; migration of Borse Frankfurt Zertifikate (structured products) to T7
+- **2022**: T7 Release 10.0 -- latency improvements; expanded self-match prevention; enhanced EOBI feed capabilities
+- **2023**: T7 Release 11.0 -- further performance optimization; cloud-readiness enhancements to infrastructure; support for new instrument types
+- **2024**: T7 Release 12.0 -- improved pre-trade risk controls; expanded Advanced Risk Protection (ARP); enhanced GUI trader functionality
+- **2025**: Continued incremental T7 performance upgrades; focus on cloud-native infrastructure and hybrid deployment models [unverified specific release number]
+- **D7 Post-Trade Platform**: Launched in 2024 for digital/tokenized securities settlement on DLT (Distributed Ledger Technology); first issuances settled on D7 in 2024
+
+### New Products / Segments
+- **D7 Digital Post-Trade**: DLT-based issuance and settlement platform for digital securities under Germany's eWpG (Electronic Securities Act); first crypto securities and digital bonds processed [Source: Deutsche Borse press releases]
+- **Crypto Finance AG**: Deutsche Borse acquired a majority stake in the Swiss-regulated crypto asset service provider, enabling trading, custody, and settlement of digital assets
+- **ESG Data & Analytics**: Expansion of ISS ESG (acquired 2021) data coverage; ESG ratings and screening tools integrated into the Qontigo analytics suite
+- **DAX 40 Expansion**: DAX index expanded from 30 to 40 constituents in September 2021, improving index diversification
+- **Xetra ETF Segments**: Continued growth; Xetra is Europe's largest ETF trading venue with over 1,800 ETFs/ETPs listed [unverified exact current count]
+
+### Regulatory Changes
+- **MiFID II/MiFIR Review**: EU co-legislators adopted revisions to MiFIR in 2024-2025, including creation of a consolidated tape provider (CTP) for equities in the EU; Deutsche Borse positioned as a potential CTP operator or contributor [unverified]
+- **DORA (Digital Operational Resilience Act)**: EU regulation effective January 2025 requiring financial entities (including exchanges) to strengthen ICT risk management, resilience testing, and third-party risk oversight
+- **EU Listing Act**: Reforms to EU listing rules adopted in 2024 to make public markets more accessible for SMEs; reducing prospectus requirements and adapting transparency rules
+- **eWpG (Electronic Securities Act)**: German law enabling issuance of securities on DLT without physical certificates; foundation for D7 platform
+- **Settlement Cycle (T+1)**: EU industry discussion ongoing regarding migration from T+2 to T+1 settlement; target date expected 2027-2028 [unverified]
+
+### Strategic Initiatives
+- **"Horizon 2026" Strategy**: Deutsche Borse's medium-term strategy targeting secular growth through expansion in data/analytics, fund services, and digital assets alongside organic trading growth
+- **SimCorp Acquisition**: EUR 3.9 billion acquisition completed in 2023; adds investment management software to the Group's offerings, creating a front-to-back solution for the buy-side
+- **ISS Acquisition**: Completed in 2022; Institutional Shareholder Services adds governance and ESG data capabilities
+- **Cloud Strategy**: Progressive migration of non-latency-sensitive infrastructure to cloud; partnership with major cloud providers [unverified specific partners]
+- **Digital Assets Ecosystem**: Building a regulated end-to-end digital asset infrastructure: trading (Crypto Finance), issuance and settlement (D7), and custody; positioning for tokenized securities market
+- **Sustainability / ESG**: Deutsche Borse expanding ESG product offerings across indices (STOXX ESG indices), data (ISS ESG), and trading (carbon-related products on EEX)
+- **Consolidated Tape**: Deutsche Borse actively engaged in EU consolidated tape discussions; potential operator or data contributor for the EU equity CTP
+- **Revenue Growth**: Group net revenue grew from ~EUR 3.5 billion (2021) to ~EUR 5.6 billion (2024), driven by acquisitions (SimCorp, ISS) and organic growth; targeting continued mid-to-high single digit growth
+
+---
+
+## Sources
+
+[Source: Deutsche Borse AG Official Website, "deutsche-boerse.com -- About Us / Company History", accessed 2026-04-06]
+[Source: Xetra Official Website, "xetra.com -- Trading / Market Model / Rules and Regulations", accessed 2026-04-06]
+[Source: Deutsche Borse AG, "Annual Report 2024", accessed 2026-04-06]
+[Source: Deutsche Borse AG, "Xetra Market Model Equities", Version dated 2024, accessed 2026-04-06]
+[Source: Deutsche Borse AG, "T7 Functional and Interface Overview", accessed 2026-04-06]
+[Source: Deutsche Borse AG, "T7 ETI -- Enhanced Trading Interface Manual", accessed 2026-04-06]
+[Source: Deutsche Borse AG, "T7 EMDI / MDI / EOBI -- Market Data Interfaces Manual", accessed 2026-04-06]
+[Source: Deutsche Borse AG, "Xetra Price List", effective 2025, accessed 2026-04-06]
+[Source: Deutsche Borse AG, "Xetra Designated Sponsor Guide", accessed 2026-04-06]
+[Source: Deutsche Borse AG, "D7 Digital Post-Trade Platform Press Release", 2024, accessed 2026-04-06]
+[Source: ESMA, "MiFID II RTS 11 -- Tick Sizes", accessed 2026-04-06]
+[Source: BaFin, "Supervision of Stock Exchanges and Markets", accessed 2026-04-06]
+[Source: Deutsche Borse AG, "Investor Presentation / Capital Markets Day 2024", accessed 2026-04-06]
+[Source: Deutsche Borse AG, "SimCorp Acquisition Completion Press Release", October 2023, accessed 2026-04-06]
+[Source: Deutsche Borse AG, "Crypto Finance AG Acquisition Press Release", 2023, accessed 2026-04-06]
+[Source: European Commission, "MiFIR Review -- Consolidated Tape", 2024-2025, accessed 2026-04-06]
+[Source: German Federal Ministry of Finance, "eWpG -- Electronic Securities Act", 2021, accessed 2026-04-06]

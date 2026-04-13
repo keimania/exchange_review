@@ -1,0 +1,776 @@
+# EU 청산 및 결제 규제 (EU Clearing & Settlement Regulation)
+
+> **최종 업데이트:** 2026-04-07
+> **상태:** 포괄적 초안 (Comprehensive draft)
+
+---
+
+## 1. 규제 기관 (Regulatory Authorities)
+
+### 1.1 ESMA (European Securities and Markets Authority, 유럽증권시장감독청)
+
+**CCP 감독 역할:**
+- ESMA (유럽증권시장감독청)는 EU에서 CCP에 대한 중앙 감독 기관으로 기능하며, EMIR 2.2(2019)에 의해 그 역할이 크게 강화되었고, EMIR 3.0(2024)에 의해 추가적으로 확대되었다.
+- EMIR 3.0에 따라 ESMA는 EU CCP에 대한 직접 감독 권한을 확대 부여받았으며, 특히 시스템 리스크 모니터링 및 Active Account Requirement(AAR, 활성계좌 요건) 시행에 관한 권한이 강화되었다.
+- 2026년 3월 기준, ESMA는 21개국에 걸쳐 소규모 전문기관부터 대형 글로벌 기관까지 50개 이상의 기관을 감독한다.
+[Source: ESMA, "Supervision," https://www.esma.europa.eu/esmas-activities/supervision; ESMA 2026 Annual Work Programme]
+
+**CCP 감독위원회 (CCP Supervisory Committee):**
+- EMIR 2.2에 따라 설립된 CCP 감독위원회는 다음을 담당하는 ESMA 내부 위원회이다:
+  - 제3국 CCP(TC-CCP)의 감독과 관련된 결정 준비
+  - CCP 감독에 관한 각국 감독당국(NCA)과의 조율
+  - TC-CCP의 등급 평가(Tier 1 대 Tier 2) 수행
+  - CCP 스트레스 테스트 및 리스크 모델 검증 감독
+- 위원회는 독립 의장이 주재하며, NCA 및 ECB (유럽중앙은행) 대표가 참여한다.
+[Source: ESMA, "CCP Policy," https://www.esma.europa.eu/central-counterparties/ccp-policy]
+
+**제3국 CCP 승인 (Third-Country CCP Recognition):**
+- EMIR (유럽시장인프라규정) Article 25에 따라, ESMA는 EU 청산회원이나 거래소에 청산 서비스를 제공하고자 하는 제3국 CCP를 승인하는 책임을 진다.
+- 승인 요건:
+  1. 유럽위원회(European Commission)에 의한 제3국의 법적·감독적 체계에 대한 동등성 결정
+  2. ESMA와 관련 제3국 당국 간 협력 약정(MOU)
+  3. 등급 결정(Tier 1 또는 Tier 2)
+- **Tier 1 TC-CCP:** EU에 시스템적으로 중요하지 않은 CCP; 자국 규제에 의존하는 완화된 감독 적용
+- **Tier 2 TC-CCP:** EU에 시스템적으로 중요하거나 중요해질 가능성이 있는 CCP; 관련 EMIR 요건을 직접 또는 "비교 가능 준수(comparable compliance)"를 통해 준수하여야 하며, ESMA의 직접 감독을 받는다
+- 2022년 두 영국 CCP(LCH Ltd, ICE Clear Europe)를 Tier 2로 승인한 이후, ESMA는 2026년 3월까지 4회의 연례 검토 평가를 수행하고, 다수의 리스크 모델 변경을 검증하며, 2회의 CCP 스트레스 테스트를 실시하였다.
+[Source: ESMA, "Third-Country CCPs," https://www.esma.europa.eu/central-counterparties/third-country-ccps; ESMA 2026 AWP]
+
+### 1.2 각국 감독당국 (National Competent Authorities, NCA)
+
+**CCP 인가 역할:**
+- NCA는 EMIR에 따라 EU 소재 CCP를 인가하는 주요 당국으로 유지된다.
+- 인가 절차는 NCA가 다음을 수행하도록 요구한다:
+  - 신청 CCP에 대한 리스크 평가 수행
+  - 감독 칼리지(supervisory college) 설립 및 의장 역할
+  - 모든 EMIR 조직, 영업행위, 건전성 요건이 충족되도록 확인
+  - ESMA 및 관련 칼리지 구성원과 협의
+- NCA는 ESMA의 조율하에 인가된 EU CCP를 지속적으로 감독한다.
+[Source: FMA Austria, "Authorisation & Ongoing Supervision," https://www.fma.gv.at/en/capital-markets/emir/authorisation-ongoing-supervision/]
+
+**CSDR에 따른 CSD 인가:**
+- CSDR(Regulation (EU) No 909/2014)에 따라, NCA는 자국 관할권에 설립된 CSD를 인가하는 책임을 진다.
+- 인가 요건에는 조직 구조, 지배구조, 자본 적정성, 운영 복원력이 포함된다.
+- NCA는 결제규율(settlement discipline) 의무를 포함한 CSDR 요건의 지속적 준수도 감독한다.
+[Source: ESMA, "Central Securities Depositories," https://www.esma.europa.eu/esmas-activities/markets-and-infrastructure/central-securities-depositories]
+
+**감독 칼리지 (Colleges of Supervisors):**
+- 인가된 각 EU CCP에 대해 다음으로 구성된 감독 칼리지가 설립된다:
+  - CCP의 NCA(의장)
+  - ESMA 대표
+  - 가장 관련 있는 청산회원의 NCA
+  - CCP가 서비스하는 거래소의 NCA
+  - 상호운용 CCP의 NCA
+  - 관련 발행화폐 중앙은행
+- 칼리지는 정보 교환을 촉진하고, 감독 활동을 조율하며, CCP 인가 및 주요 규칙 변경에 대한 의견을 제공한다.
+[Source: ESMA, "Opinion on the composition of CCP colleges under EMIR," ESMA/2015/838]
+
+### 1.3 ECB / 각국 중앙은행 (ECB / National Central Banks)
+
+**결제 감독 역할:**
+- ECB (유럽중앙은행) 및 유로시스템(Eurosystem) 중앙은행은 EU 기능조약에 따라 결제 및 결제시스템에 대한 감독 역할을 수행한다.
+- ECB는 유로화 발행화폐 중앙은행으로서 CCP 감독 칼리지에 참여한다.
+- 각국 중앙은행은 NCA와 협력하여 자국 관할권의 CSD를 감독하며, 특히 중앙은행 화폐를 통한 결제에 관여한다.
+[Source: ECB, "TARGET2-Securities," https://www.ecb.europa.eu/paym/target/t2s/html/index.en.html]
+
+**T2S 거버넌스:**
+- TARGET2-Securities(T2S) 플랫폼은 유로시스템이 소유하고 운영한다.
+- 의사결정 권한은 ECB Governing Council(운영이사회)에 있다.
+- 주요 거버넌스 기구:
+  - **Market Infrastructure Board(MIB):** TARGET2 및 T2S의 일상적 관리와 모든 유로시스템 시장인프라 프로젝트를 담당
+  - **CSD Steering Group(CSG):** 참여 CSD의 입장과 요건을 조율
+  - **Advisory Group on Market Infrastructures for Securities and Collateral(AMI-SeCo):** 청산, 결제, 담보 관리 문제에 관해 자문; 증권시장 참가자, CSD, CCP, 중앙은행 대표로 구성
+[Source: ECB, "What is T2S?", https://www.ecb.europa.eu/paym/t2s/about/html/index.en.html]
+
+**중앙은행 화폐 결제:**
+- T2S는 중앙은행 화폐(유로화 및 덴마크 크로네)를 통한 DVP (증권과대금의 동시결제) 결제를 지원한다.
+- 중앙은행 화폐를 통한 결제는 상업은행 신용 리스크를 제거하며, PFMI (금융시장인프라에 관한 원칙) 원칙 9에 부합한다.
+- 23개 유럽 국가의 24개 CSD가 T2S에 연결되어 자금 결제에 중앙은행 화폐를 사용한다.
+[Source: ECB, "TARGET2-Securities," https://www.ecb.europa.eu/paym/target/t2s/html/index.en.html]
+
+---
+
+## 2. 주요 법률 및 규정 (Key Legislation & Regulations)
+
+### 2.1 EMIR (European Market Infrastructure Regulation, 유럽시장인프라규정)
+
+#### 최초 EMIR (Original EMIR, 2012)
+- **Regulation (EU) No 648/2012**, 2012년 7월 4일 채택, 2012년 8월 16일 발효.
+- G20 약속(2009년 피츠버그)에 따른 OTC 파생상품 개혁을 이행.
+- 주요 요건:
+  - 표준화된 OTC 파생상품에 대한 의무적 중앙청산
+  - 모든 파생상품 계약의 거래정보저장소 보고
+  - 비중앙청산 OTC 파생상품에 대한 리스크 경감 기법(양자 간 증거금, 적시 확인, 포트폴리오 대사, 분쟁 해결)
+  - EU CCP에 대한 인가 및 건전성 요건
+  - 제3국 CCP에 대한 승인 체계
+[Source: EUR-Lex, Regulation (EU) No 648/2012]
+
+#### EMIR Refit (2019)
+- **Regulation (EU) 2019/834**, 2019년 5월 20일 채택.
+- 일부 요건을 간소화하고 합리화:
+  - 청산 기준 미달 비금융 거래상대방(NFC)에 대한 보고 부담 경감
+  - NFC의 청산 기준 계산 간소화
+  - 연금제도 약정에 대한 청산의무 유예(이후 여러 차례 연장)
+  - CCP 증거금 모델의 투명성 개선
+[Source: EUR-Lex, Regulation (EU) 2019/834]
+
+#### EMIR 2.2 (2019) -- 제3국 CCP 감독 (Third-Country CCP Supervision)
+- **Regulation (EU) 2019/2099**, 2019년 10월 23일 채택.
+- 제3국 CCP에 대한 강화된 감독 체계 수립:
+  - ESMA 내 CCP 감독위원회 창설
+  - TC-CCP에 대한 2단계 분류 체계(Tier 1 및 Tier 2)
+  - Tier 2 TC-CCP에 대한 ESMA 직접 감독
+  - Tier 2 TC-CCP에 대한 "비교 가능 준수(comparable compliance)" 메커니즘
+  - 핵옵션(nuclear option): TC-CCP의 시스템적 중요성이 너무 커서 승인해서는 안 된다고(EU 이전 요구) ESMA가 권고할 수 있는 권한
+- Brexit에 따른 영국 CCP(특히 LCH Ltd)의 EU 금융 안정성에 대한 시스템적 중요성 우려가 동기가 되었다.
+[Source: EUR-Lex, Regulation (EU) 2019/2099]
+
+#### EMIR 3.0 (2024) -- Active Account Requirement, 강화된 EU CCP 감독
+- **Regulation (EU) 2024/2987**, 2024년 12월 4일 EU 관보에 게재, 2024년 12월 24일 발효.
+- EMIR 제정 이래 가장 중요한 개혁.
+[Source: EUR-Lex, Regulation (EU) 2024/2987; Jones Day, "EMIR 3 Published in the Official Journal," December 2024]
+
+**Active Account Requirement(AAR, 활성계좌 요건):**
+- 청산 기준을 초과하는 금융 거래상대방(FC) 및 비금융 거래상대방(NFC)은 범위 내 파생상품 계약의 청산을 위해 인가된 EU CCP에서 "활성계좌(active account)"를 유지하여야 한다.
+- **범위 내 상품:**
+  - 유로화(EUR) 또는 폴란드 즐로티(PLN) 표시 금리파생상품
+  - 유로화 표시 단기금리파생상품(STIR)
+- **운영 조건** -- 활성계좌는 다음이어야 한다:
+  1. 상시 기능적일 것
+  2. 단기간에 해당 기관의 모든 신규 범위 내 거래를 처리할 수 있는 운영 능력을 갖출 것
+  3. 다른 CCP로부터 범위 내 거래의 신속한 이전을 수용할 수 있을 것
+- **면제:** 범위 내 파생상품 계약(총명목가치 기준)의 85% 이상을 인가된 EU CCP를 통해 청산하는 거래상대방은 운영 조건이 면제된다.
+- **시행 일정:**
+  - AAR 의무 적용: 2025년 6월 24일부터
+  - ESMA의 RTS 초안에 대한 협의: 2025년 1월 27일 종료
+  - ESMA가 유럽위원회에 최종 RTS 제출: 2025년 6월 25일까지
+[Source: Ashurst, "EU EMIR: EMIR 3 and the Active Account Requirement," 2025; ESMA Consultation Paper ESMA91-1505572268-3856, November 2024; PwC, "EMIR 3.0: Navigating the Active Account Requirement," 2025]
+
+**강화된 ESMA 직접 감독 권한:**
+- EU 및 제3국 CCP에 대한 ESMA의 감독 권한 강화
+- CCP 스트레스 테스트 및 리스크 모델 검증에 대한 확대된 권한
+- NCA 감독 활동에 대한 조율 권한 확대
+[Source: ESMA CCP Policy, https://www.esma.europa.eu/central-counterparties/ccp-policy]
+
+**증거금의 경기순응성 완화 조항 (Anti-Procyclicality Provisions for Margin):**
+- EMIR은 항상 CCP에 3가지 경기순응성 완화(APC) 증거금 조치 중 최소 하나를 채택하도록 요구하였다. EMIR 3.0은 이를 강화한다:
+  - 옵션 1: 스트레스 기간에 일시적으로 소진될 수 있는 최소 25%의 증거금 완충액 적용
+  - 옵션 2: 관측기간에 스트레스 관측치에 최소 25% 가중치 부여
+  - 옵션 3: 스트레스 관측치를 포함한 10년 과거 관측기간을 사용하여 계산한 증거금보다 낮지 않도록 보장
+- ESMA는 2023년 APC 증거금 조치에 대한 최종 가이드라인(ESMA91-1505572268-3217)을 발표하여 표준화된 적용과 APC 도구 사용의 투명성 강화를 권고
+- EMIR 3.0은 증거금 모델의 경기순응성 지표에 대한 보다 견고한 공시를 의무화
+[Source: ESMA Guidelines on CCP APC Margin Measures, ESMA70-151-1496; ESMA Final Report, July 2023]
+
+**교차증거금 촉진 (Cross-Margining Facilitation):**
+- EMIR 3.0은 EU CCP 내 동일 청산그룹(liquidation group)에서 거래소 거래 파생상품(ETD)과 OTC 파생상품 간 교차증거금을 촉진한다.
+- 거래상대방 리스크 한도 계산에서 "OTC"와 "ETD" 파생상품 간 구분이 제거되어, 인가/승인 CCP에서 청산되지 않는 한 동등하게 취급된다.
+- 이는 Eurex Clearing 등 OTC 금리파생상품과 상장 STIR 선물 간 교차증거금을 제공하는 EU CCP에 유리하다.
+- 비청산 거래에 대한 단일주식옵션 및 주가지수옵션의 양자 간 개시증거금 및 변동증거금 요건 영구 면제(미국 체계와 정합).
+[Source: A&O Shearman, "EMIR 3 and Clearing in the EU," 2024; Eurex, "EMIR 3.0 at Eurex," https://www.eurex.com/ec-en/rules-regs/emir3-0]
+
+**기타 주요 EMIR 3.0 조항:**
+- 청산 기준 계산 수정: FC는 이제 청산 및 비청산 포지션 모두 계산; NFC는 비청산 포지션만 계산(헤징 배제 유지)
+- 비청산 OTC 파생상품에 대해 거래상대방이 사용하는 모의 개시증거금 모델에 대한 EBA (유럽은행감독청) 검증 요건
+- ESMA 연례 CCP 스트레스 테스트 범위 확대
+[Source: National Law Review, "EMIR 3: Active Account, Clearing Threshold and Exemptions," December 2024]
+
+### 2.2 CSDR (Central Securities Depositories Regulation, 중앙예탁기관 규정)
+
+- **Regulation (EU) No 909/2014**, 2014년 7월 23일 채택, 2014년 9월 17일 발효.
+- EU 내 CSD의 인가, 감독 및 운영에 대한 조화된 체계를 제공한다.
+[Source: EUR-Lex, Regulation (EU) No 909/2014]
+
+**CSD 인가 요건:**
+- CSD는 EU에서 운영하기 위해 소관 NCA로부터 인가를 받아야 한다.
+- 주요 요건:
+  - 적절한 지배구조 및 조직 구조
+  - 최소 자본금 요건
+  - 운영 리스크 관리(IT 복원력, 업무연속성 계획 포함)
+  - 참가자 접근 규칙(공정, 개방, 비차별)
+  - 기록 보관 및 보고 의무
+  - 참가자 증권의 분리보관
+[Source: ESMA, "Central Securities Depositories"]
+
+**결제규율 체계 (Settlement Discipline Regime):**
+
+*현금 벌과금(Cash Penalties, 2022년 2월 1일 시행):*
+- CSDR Article 7은 의도된 결제일(ISD)까지 결제가 이루어지지 않은 모든 거래에 대해 일일 현금 벌과금을 부과하도록 의무화한다.
+- 벌과금은 CSD가 ISD부터 실제 결제일까지 매 영업일 종료 시 계산하고 적용한다.
+- CSD는 실패 참가자로부터 최소 월 1회 벌과금을 징수하여 수취 참가자에게 재분배한다.
+- 벌과금 비율은 자산군별로 상이(예: 주식, 국채, 회사채, SME 성장시장 금융상품).
+- **효과성 평가:** ESMA의 검토에 의하면 벌과금 메커니즘이 결제 효율성을 개선하였으나, 현금 벌과금의 약 81%가 50유로 미만으로 억제 효과 대비 행정 부담에 대한 의문이 제기되었다.
+- **ESMA의 2024년 자문:** 대부분의 자산군에 걸쳐 벌과금 비율의 점진적 인상과 억제 효과 강화를 위한 누진적 벌과금(실패 후 매일 증가) 도입을 제안. 유럽위원회는 2026년 1분기에 이 제안을 채택할 것으로 예상되었다.
+[Source: ESMA, "Final Report on Technical Advice on CSDR Penalty Mechanism," ESMA74-2119945925-2059, November 2024; ICMA, "CSDR Settlement Discipline," https://www.icmagroup.org/market-practice-and-regulatory-policy/secondary-markets/secondary-markets-regulation/csdr-settlement-discipline/]
+
+*강제매수(Mandatory Buy-In, 유예/수정 상태):*
+- 최초 CSDR은 실패 참가자가 ISD 이후 연장 기간 내에 인도하지 못할 경우 강제매수 프로세스를 의무화하였다:
+  - **표준 연장 기간:** ISD 후 4영업일
+  - **SME 성장시장 금융상품:** 15영업일
+  - **기타 비유동성 금융상품:** 최대 7영업일
+- 강제매수 제도는 **반복적으로 유예**되었으며, 원래 형태로 시행된 적이 없다.
+- **CSDR Refit(2023)**은 강제매수 제도를 근본적으로 수정하였다:
+  - 매수는 더 이상 자동적으로 의무화되지 않으며, 모니터링 기간 후 결제 효율성이 정의된 기준을 충족하지 못할 경우에만 발동
+  - 증권금융거래(SFT)는 매수 범위에서 제외
+  - 참가자 귀책이 아닌 결제 실패로 인한 현금 벌과금 제외
+  - 유럽위원회는 결제 효율성이 지정된 기준 이하로 악화될 경우 위임법령(delegated act)을 통해 강제매수를 발동할 수 있다
+- 2026년 4월 기준, 강제매수는 발동되지 않았다. [unverified -- 최근 EC 결정에 따라 정확한 발동 여부 변동 가능]
+[Source: Norton Rose Fulbright, "CSDR Refit: The Key Changes," 2024; ICMA, "CSDR Settlement Discipline"]
+
+**결제 내부화 보고 (Settlement Internalization Reporting):**
+- CSDR은 CSD 외부에서 거래를 결제하는 투자회사 및 신용기관(결제 내부화 기관)이 분기별로 내부화 결제의 건수 및 금액을 소관 NCA에 보고하도록 요구한다.
+- 이를 통해 규제기관은 규제 대상 CSD 인프라 외부에서 발생하는 결제 활동을 모니터링할 수 있다.
+[Source: BNP Paribas Securities Services, "CSDR Regulation Memo"]
+
+**CSD 패스포팅 (CSD Passporting):**
+- 하나의 EU 회원국에서 인가된 CSD는 패스포팅 메커니즘을 통해 다른 회원국에서 서비스를 제공할 수 있다.
+- **CSDR Refit(2023)**은 패스포팅 절차를 간소화하여 국경 간 CSD 운영의 행정적 복잡성을 줄였다.
+[Source: Norton Rose Fulbright, "CSDR Refit: The Key Changes"]
+
+### 2.3 MiFID II / MiFIR (금융상품시장지침 II / 규정) (청산 관련 조항) (Clearing-Related Provisions)
+
+**접근 및 상호운용 조항:**
+- MiFID II/MiFIR은 거래소와 CCP가 상호 비차별적 접근을 제공하도록 요구하는 개방접근(open access) 조항을 수립한다.
+- CCP는 거래소로부터의 접근 요청을 수용하여야 하고, 거래소는 요청 시 CCP에 리스크 관리 조건에 따라 거래 피드를 제공하여야 한다.
+[Source: EUR-Lex, Directive 2014/65/EU (MiFID II), Regulation (EU) No 600/2014 (MiFIR)]
+
+**파생상품 청산의무:**
+- 청산의무 자체는 EMIR에 의해 수립되나, MiFID II/MiFIR은 보완적 조항을 제공한다:
+  - 청산의무 대상이며 충분히 유동적인 파생상품에 대한 거래의무
+  - 청산 및 비청산 파생상품에 대한 보고 요건
+[Source: ESMA, "CCP Policy"]
+
+**CCP 및 거래소에 대한 개방접근:**
+- MiFIR Articles 35-36은 개방접근 체계를 수립한다:
+  - CCP는 해당 거래소와 기존 관계가 있는지 여부와 관계없이 모든 거래소로부터의 청산 요청을 수용
+  - 거래소는 해당 거래소에서 체결된 거래를 청산하고자 하는 모든 CCP에 거래 데이터를 제공
+  - 특정 CCP 및 거래소(수직적 통합 모델을 운영하는 파생상품 거래소 등)에 대한 경과 규정 및 면제 가능
+[Source: EUR-Lex, Regulation (EU) No 600/2014 (MiFIR)]
+
+### 2.4 Bank Recovery and Resolution Directive (BRRD, 은행 회복 및 정리 지침) -- CCP 관련 측면
+
+- **Directive 2014/59/EU**(BRRD)는 신용기관 및 투자회사의 회복 및 정리에 관한 체계를 수립한다.
+- 주로 은행을 대상으로 하지만, BRRD는 다음을 통해 CCP와 관련된다:
+  - 은행의 CCP 익스포저에 대한 자본 취급(은행 정리와 CCP 복원력 간 상호연관성)
+  - 청산회원 은행의 정리 및 CCP 부도 관리에 미치는 영향
+  - 은행 정리 당국과 CCP 정리 당국 간 조율
+[Source: EUR-Lex, Directive 2014/59/EU]
+
+### 2.5 CCP 회복 및 정리 규정 (CCP Recovery and Resolution Regulation, 2021)
+
+- **Regulation (EU) 2021/23**, 2020년 12월 16일 채택, 2021년 2월 12일 발효.
+- 회복 계획에 관한 주요 조항은 **2022년 2월 12일**부터 적용; 대부분의 나머지 조항은 **2022년 8월 12일**부터 적용.
+- CCP의 회복 및 정리에 관한 EU 조화 체계를 수립하여, CCP와 규제기관이 위기 시 핵심 청산 기능을 유지하면서 금융 안정성 및 공적 자금에 대한 영향을 제한할 수 있도록 결정적으로 행동할 수 있게 한다.
+[Source: EUR-Lex, Regulation (EU) 2021/23, https://eur-lex.europa.eu/eli/reg/2021/23/oj/eng; European Commission, "Recovery and Resolution of CCPs"]
+
+**회복 계획 요건:**
+- 모든 EU CCP는 NCA의 승인을 받고 감독 칼리지에 의해 검토되는 회복 계획을 유지하여야 한다.
+- 회복 계획에 포함되어야 하는 내용:
+  - 다양한 회복 도구 및 시나리오(부도 및 비부도 손실 사건 포함)
+  - 회복 조치 발동을 위한 지표 및 트리거
+  - 회복 도구가 청산회원, 고객, 광범위한 금융시스템에 미치는 영향 평가
+  - 회복 기간 중 핵심 청산 기능의 연속성을 위한 약정
+[Source: EUR-Lex, Regulation (EU) 2021/23, Articles 9-13]
+
+**정리 도구:**
+이 규정은 정리 당국에 다음 도구를 제공한다:
+
+1. **포지션 배분 도구 (Position Allocation Tool, Article 29):**
+   - 정리 당국은 CCP의 미결제 계약을 이전, 감소 또는 종료하여 장부를 재조정할 수 있다.
+   - 계약의 부분적 또는 전면 청산(tear-up) 포함.
+
+2. **손실 배분 도구 (Loss Allocation Tools, Articles 30-31):**
+   - **변동증거금 이익 삭감(VMGH):** 손실 흡수를 위해 지급 변동증거금에 대한 삭감 적용
+   - **정리 현금 요구(Resolution Cash Calls):** 각 관련 청산회원의 적용 가능한 공동기금(default fund) 분담금 요건의 최대 2배까지 가능
+   - **감액 및 전환(Write-down and conversion):** CCP에 대한 청구권의 감액 또는 채무상품의 지분 전환
+
+3. **사업 매각 도구 (Sale of Business Tool):**
+   - 정리 당국은 주주 동의 없이 CCP 사업의 전부 또는 일부를 제3자 인수자에게 매각할 수 있다.
+
+4. **브릿지 CCP (Bridge CCP):**
+   - 핵심 청산 기능을 정리 당국이 운영하는 임시 브릿지 CCP로 이전할 수 있다.
+
+5. **계약 청산 (Tear-Up of Contracts):**
+   - 최후 수단으로서 CCP의 미결제 계약의 부분적 또는 전면 종료.
+[Source: EUR-Lex, Regulation (EU) 2021/23; BNP Paribas, "The EU CCP Recovery and Resolution Regulation," December 2024; JP Morgan, "EU CCP Recovery and Resolution Regulation Disclosure"]
+
+**정리 당국:**
+- 각 회원국은 자국 관할권에서 인가된 CCP에 대한 정리 당국을 지정하여야 한다.
+- 정리 당국은 NCA, 중앙은행 또는 별도의 전담 당국이 될 수 있다.
+- 정리 당국은 감독 칼리지 및 ESMA와 협의하여 각 CCP에 대한 정리 계획을 준비하여야 한다.
+[Source: EUR-Lex, Regulation (EU) 2021/23, Articles 3-4]
+
+**채권자 불이익 금지 원칙 (No Creditor Worse Off, NCWO Principle):**
+- 이 규정은 NCWO 안전장치를 포함한다: 어떤 청산회원, 고객 또는 주주도 정리 하에서 일반 도산 절차하에서보다 불리한 상황에 놓여서는 안 된다.
+- NCWO가 준수되었는지 평가하기 위한 독립적 평가가 수행되어야 한다.
+- NCWO 원칙이 위반된 경우 전용 기금에서 보상이 지급될 수 있다.
+[Source: EUR-Lex, Summary, "Recovery and resolution of central counterparties," https://eur-lex.europa.eu/EN/legal-content/summary/recovery-and-resolution-of-central-counterparties.html]
+
+> **KRX/FSC 비교:** EU는 CCP 회복 및 정리에 관한 전용 규정(EU 2021/23)을 보유하고 있어, VMGH, 계약 청산, 현금 요구, 사업 매각 등 구체적 도구를 규정한다. 한국은 전용 CCP 회복·정리 법률이 없으며, 자본시장법 일반 조항으로 처리된다. EU의 체계는 한국의 CCP 정리 체계 개발에 유용한 참고가 된다.
+
+---
+
+## 3. CCP 인가 및 자본 요건 (CCP Authorization & Capital Requirements)
+
+### 3.1 EMIR 인가 절차 (EMIR Authorization Process)
+
+**감독 칼리지의 역할:**
+- 인가를 부여하기 전에 NCA는 다음으로 구성된 감독 칼리지를 설립하여야 한다:
+  - ESMA
+  - CCP의 NCA(의장)
+  - 가장 관련 있는 청산회원에 대한 책임 NCA
+  - CCP가 서비스하는 거래소의 NCA
+  - 상호운용 CCP의 NCA
+  - 관련 발행화폐 중앙은행
+- 칼리지는 공동 리스크 평가를 수행하고 인가에 대한 구속력 없는 의견을 제공한다. NCA가 최종 인가 결정을 내린다.
+[Source: ESMA, "Opinion on the composition of CCP colleges under EMIR," ESMA/2015/838; FMA Austria, "Authorisation & Ongoing Supervision"]
+
+**자본 요건:**
+- **최소 초기자본:** 750만 유로(항구적이고 이용 가능).
+- 최소 금액을 넘어 CCP의 자본(이익잉여금 및 적립금 포함)은:
+  - CCP 활동에서 발생하는 리스크에 비례하여야 한다
+  - 적절한 기간에 걸친 질서 있는 정리 또는 구조조정을 보장하기에 충분하여야 한다
+  - 특정 재무자원(증거금, 공동기금)으로 이미 충당되지 않은 신용, 거래상대방, 시장, 운영, 법적 및 사업 리스크에 대해 CCP를 보호하기에 적절하여야 한다
+- EMIR Article 16은 자본이 항시 정리 기간의 운영비를 충당하기에 충분하여야 한다고 추가 규정(일반 사업 리스크에 대해 최소 6개월 [unverified]).
+[Source: ESMA, "Article 16 Capital Requirements," https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/emir/article-16-capital-requirements]
+
+**조직 요건:**
+- 명확한 조직 구조와 잘 정의된 책임 구조를 갖춘 견고한 지배구조
+- 이사회 구성 요건(독립 위원 포함)
+- 청산회원 대표가 참여하는 리스크 위원회
+- 최고리스크책임자(CRO) 및 최고준법감시인(CCO) 기능
+- IT 시스템 및 운영 복원력 요건
+- 업무연속성 및 재해복구 약정
+- 외주 거버넌스 체계
+[Source: EMIR Articles 26-35]
+
+**지속적 준수:**
+- NCA는 인가된 CCP에 대한 정기적 감독 검토 및 평가(SREP)를 수행한다.
+- ESMA는 EMIR에 따른 CCP 감독 검토 및 평가를 조화시키기 위한 가이드라인(2024)을 발표하였다.
+- 연간 보고, 스트레스 테스트 및 백테스팅 요건.
+- CCP는 규칙, 절차 또는 리스크 모델에 대한 중대한 변경을 NCA에 통지하여야 한다.
+[Source: ESMA, "Guidelines to harmonise CCP supervisory reviews and evaluation under EMIR," 2024]
+
+### 3.2 제3국 CCP 승인 (Third-Country CCP Recognition)
+
+**Tier 1 대 Tier 2 분류:**
+- **Tier 1 TC-CCP:** EU 금융시스템에 시스템적으로 중요하지 않음. 완화된 요건 적용; ESMA는 주로 자국 감독기관에 의존.
+- **Tier 2 TC-CCP:** 시스템적으로 중요하거나 중요해질 가능성. EMIR 요건을 직접 또는 비교 가능 준수를 통해 충족. 다음을 포함한 지속적 ESMA 감독을 받는다:
+  - 연례 검토 평가
+  - 변경 사항에 대한 리스크 모델 검증
+  - ESMA CCP 스트레스 테스트 참여
+  - 자국 당국과의 정기적 정보 공유
+[Source: ESMA, "Third-Country CCPs"]
+
+**비교 가능 준수 평가:**
+- Tier 2 TC-CCP는 ESMA에 "비교 가능 준수" 결정을 신청할 수 있다.
+- 이를 통해 TC-CCP는 ESMA가 자국 규칙이 동등한 규제 결과를 달성한다고 판단하는 경우 자국 규칙(EMIR 직접 적용 대신)을 준수할 수 있다.
+- 평가는 요건별로 수행된다.
+[Source: ESMA, "ESMA consults on tiering, comparable compliance and fees under EMIR 2.2"]
+
+**시스템적 중요성 판단:**
+- ESMA의 등급 평가 시 고려사항:
+  - TC-CCP의 EU 청산회원 및 거래소와의 사업 성격, 규모 및 복잡성
+  - TC-CCP의 장애 또는 실패가 EU 금융시장, 금융기관 또는 광범위한 금융시스템에 미치는 영향
+  - TC-CCP의 청산회원 구조 및 EU 기관의 서비스 의존도
+- ESMA는 최소 5년마다 또는 TC-CCP가 EU 관련 활동을 확대하거나 축소할 때 등급을 검토한다.
+[Source: ESMA, "Third-Country CCPs"]
+
+**EMIR 3.0의 Active Account Requirement:**
+- 승인 체계에 추가하여, EMIR 3.0은 청산의무 대상 EU 거래상대방이 범위 내 상품에 대해 인가된 EU CCP에서 활성계좌를 유지하도록 요구하는 AAR을 도입한다.
+- 이는 공급 측면의 TC-CCP 승인 체계를 보완하는 수요 측면의 조치(EU 청산회원 및 고객을 대상)이다.
+- AAR은 비EU CCP(특히 런던의 LCH Ltd)에서의 유로화 표시 파생상품 청산의 과도한 집중을 줄이기 위해 설계되었다.
+[Source: Ashurst, "EU EMIR: EMIR 3 and the Active Account Requirement"]
+
+---
+
+## 4. PFMI 준수 (PFMI Compliance)
+
+### 4.1 EU의 PFMI 도입 (EU Adoption of PFMI)
+
+**EMIR/CSDR과 PFMI 원칙의 대응 관계:**
+- CPMI-IOSCO (지급결제 및 시장인프라 위원회 / 국제증권감독기구)가 2012년 4월 발표한 PFMI (금융시장인프라에 관한 원칙)는 FMI에 대한 24개 원칙과 당국에 대한 5개 책무를 제공한다.
+- EU는 주로 다음을 통해 PFMI 원칙을 도입하였다:
+  - **EMIR**(CCP 및 거래정보저장소): EMIR의 건전성, 조직, 영업행위 요건은 PFMI 원칙과 최소한 동등한 수준으로 설계. 주요 대응:
+    - PFMI 원칙 4(신용 리스크) -> EMIR Articles 41-44(증거금, 공동기금, CCP 자기자본 출연분)
+    - PFMI 원칙 5(담보) -> EMIR Article 46(담보 요건)
+    - PFMI 원칙 6(증거금) -> EMIR Articles 41-42(증거금 요건)
+    - PFMI 원칙 7(유동성 리스크) -> EMIR Article 44(유동성 리스크 관리)
+    - PFMI 원칙 13(참가자 부도 규칙) -> EMIR Article 48(부도 절차)
+    - PFMI 원칙 15(일반 사업 리스크) -> EMIR Article 16(자본 요건)
+  - **CSDR**(CSD): CSDR 요건은 CSD 및 증권결제시스템에 대한 관련 PFMI 원칙에 대응:
+    - PFMI 원칙 8(결제완결성) -> CSDR Article 39(결제완결성)
+    - PFMI 원칙 9(자금 결제) -> T2S를 통한 중앙은행 화폐 결제에 관한 CSDR 조항
+    - PFMI 원칙 11(CSD) -> CSDR 인가 및 운영 요건
+
+**EU CCP에 대한 CPMI-IOSCO 평가 결과:**
+- 유럽위원회와 ESMA는 CPMI-IOSCO 이행 모니터링 평가에 참여하였다.
+- EU 관할권은 CCP 및 CSD에 적용 가능한 대부분의 PFMI 원칙에 대해 일반적으로 "광범위하게 준수(broadly observed)" 또는 "준수(observed)"로 평가되었다.
+- EU CCP는 분기별 CPMI-IOSCO 공개정량공시(PQD) 및 PFMI Disclosure Framework에 대한 정성적 자기평가를 발표하여야 한다.
+- 개별 EU CCP의 PFMI 평가는 관련 NCA 및 CCP 자체(예: Eurex Clearing, LCH SA, EuroCCP)에서 확인할 수 있다.
+[Source: CPMI-IOSCO, "Principles for Financial Market Infrastructures," April 2012; CPMI-IOSCO Implementation Monitoring Reports]
+
+---
+
+## 5. 결제 체계 (Settlement Framework)
+
+### 5.1 T2S (TARGET2-Securities)
+
+**거버넌스 및 운영(ECB):**
+- T2S는 유로시스템(ECB 및 유로지역 각국 중앙은행)이 소유하고 운영하는 범유럽 결제 플랫폼이다.
+- 2015년 6월 출범, CSD의 단계적 이전이 2017년 9월 완료.
+- T2S는 중앙은행 화폐(EUR 및 DKK)로 증권 결제를 위한 단일하고 국경 없는 풀을 제공한다.
+- 의사결정 권한: ECB Governing Council, Market Infrastructure Board(MIB), CSD Steering Group(CSG), AMI-SeCo 자문그룹의 지원.
+[Source: ECB, "What is TARGET2-Securities (T2S)?", https://www.ecb.europa.eu/paym/target/t2s/html/index.en.html]
+
+**참여 CSD:**
+- **23개 유럽 국가의 24개 CSD**가 T2S에 연결:
+  - 주요 CSD: Euroclear France, Euroclear Belgium, Euroclear Nederland, Clearstream Banking Frankfurt, Monte Titoli(이탈리아), Iberclear(스페인), VP Securities(덴마크), Interbolsa(포르투갈) 등
+  - Euroclear Bank(ICSD)는 T2S 합류 과정 중 [unverified -- 정확한 출시일]
+- 참여는 자발적이며, T2S Framework Agreement(유로시스템과 참여 CSD 간 상호 권리와 의무를 규정하는 계약)에 의해 규율
+- 비유로 CSD도 EUR 및/또는 기타 적격 화폐로의 결제를 위해 참여 가능
+[Source: ECB, "What is T2S?"; Wikipedia, "TARGET2-Securities"]
+
+**중앙은행 화폐 DVP:**
+- T2S는 증권과 현금의 동시적이고 취소 불가능한 이전을 보장하는 실시간 DVP 결제 모델을 운영한다.
+- 현금 결제는 해당 각국 중앙은행에 개설된 전용 중앙은행 화폐 계좌(T2S Dedicated Cash Accounts, DCA)를 통해 이루어진다.
+- 이는 결제의 현금 구간에서 상업은행 신용 리스크를 제거한다.
+- T2S는 결제일 중 실시간 총액결제 및 복수 일괄 최적화 주기를 모두 지원한다.
+[Source: ECB, "TARGET2-Securities"]
+
+**이전 연혁 및 현재 상태:**
+- **Wave 1(2015년 6월):** Monte Titoli(이탈리아), 몰타 CSD, 루마니아 CSD, 스위스 CSD(SIX SIS, EUR 결제용)
+- **Wave 2(2016년 3월):** Euroclear Belgium, Euroclear France, Euroclear Nederland, Interbolsa(포르투갈), NBB-SSS(벨기에)
+- **Wave 3(2016년 9월):** Clearstream Banking Frankfurt, OeKB CSD(오스트리아), VP Lux(룩셈부르크) 등
+- **Wave 4(2017년 2월):** Iberclear(스페인), 브라티슬라바 및 류블랴나 CSD
+- **Wave 5(2017년 9월):** VP Securities(덴마크 -- EUR 및 DKK 결제), Euroclear Finland, 발틱 CSD
+- 2026년 기준, T2S는 연간 수억 건의 거래를 결제하며, EU 증권 결제의 상당 부분을 처리한다.
+[Source: ECB, "TARGET2-Securities"; Banco de Espana, "TARGET2-Securities"]
+
+### 5.2 결제주기 -- T+1 전환 (Settlement Cycle -- T+1 Transition)
+
+**CSDR 하의 현행 T+2:**
+- CSDR은 EU 거래소에서 거래에 승인되거나 거래되는 양도성 증권에 대해 조화된 T+2 결제주기를 의무화하였으며, 2015년 1월 1일부터 시행(이전 대부분의 EU 시장은 T+3으로 운영, T+2 이전은 2014년 10월까지 완료).
+[Source: CSDR Article 5]
+
+**EU T+1 전환 계획(2027년 10월 11일):**
+- 2024년 11월 18일 ESMA는 EU가 늦어도 **2027년 10월 11일**까지 T+1로 이행할 것을 권고하는 보고서를 발표하였다.
+- 이 권고는 EU 공동입법자에 의해 채택되어 **2025년 10월 14일 EU 관보에 게재**되었으며, T+1 요건은 **2027년 10월 11일**부터 적용된다.
+[Source: ESMA, "ESMA proposes to move to T+1 by October 2027," November 2024; Societe Generale Securities Services, "T+1 in Europe," 2025; European Commission, "T+1 Settlement," February 2025]
+
+**ESMA 협의 및 일정:**
+- ESMA는 **3단계 시행**을 권고하였다:
+  1. **1단계(2025년 3분기까지):** 기술적 솔루션 정의 확정
+  2. **2단계(2026년 말까지):** 시장 참가자 및 인프라 전반에 걸친 기술적 솔루션 시행
+  3. **3단계(2027년):** 2027년 10월 11일 가동을 목표로 한 업계 전체 테스트
+- 2026년 12월에 시작하여 2027년 10월 11일까지 완료되는 단계적 시행 일정이 원활한 전환을 보장하도록 설계되었다.
+[Source: ESMA, "Shortening the settlement cycle to T+1 in the EU," https://www.esma.europa.eu/esmas-activities/markets-and-infrastructure/shortening-settlement-cycle-t1-eu]
+
+**업계 준비 현황 / 거버넌스:**
+- **EU T+1 거버넌스 구조**가 2025년 1월 22일 설립되었으며, ESMA, ECB, 유럽위원회와 금융업계로 구성
+- ESMA는 2025년 6월 30일 **EU 증권결제 T+1 전환을 위한 상위 수준 로드맵(High-Level Roadmap)**을 발표
+- 주요 업계 준비 과제:
+  - 기업행사(corporate actions) 처리 및 외환 결제 타이밍 조화
+  - 거래 후 매칭 및 확인 프로세스 조정
+  - 증권대차에 대한 영향
+  - 영국 및 스위스 T+1 전환과의 조율
+- 영국과 스위스는 EU의 2027년 10월 일자에 맞추어 T+1 전환을 조율하고 있다.
+[Source: ESMA, "New governance structure for transition to T+1 settlement cycle kicks off," January 2025; ESMA High-Level Roadmap, June 2025; BNP Paribas, "T+1 in Europe"]
+
+> **KRX/FSC 비교:** EU의 T+1 전환(2027년 10월 11일 예정)은 24개 CSD와 27개 회원국에 걸친 대규모 프로젝트이다. 한국은 단일 CSD(KSD) 모델로 인해 기술적으로 단순하나, 2025년 10월 KSD/KRX 공동 워킹그룹 설립에서 보듯 아직 구체적 일정이 확정되지 않았다. EU와 미국(2024년 5월 T+1 시행)의 경험이 한국의 전환 계획에 중요한 참고가 된다.
+
+### 5.3 결제규율 (Settlement Discipline, CSDR)
+
+**현금 벌과금 체계(2022년 2월 시행):**
+- CSDR 결제규율 현금 벌과금 체계는 **2022년 2월 1일**부터 시행 중이다.
+- 벌과금은 ISD 이후 미결제 상태인 매 영업일에 대해 일일 적용된다.
+- 벌과금 비율(자산군별, 실패 거래 가액에 대한 일일 bp):
+  - 유동 주식: 1.0 bps/일
+  - 국채 및 동등물: 0.5 bps/일 [unverified -- ESMA의 제안된 수정에 따라 비율 변동 가능]
+  - 회사채: 0.5 bps/일 [unverified]
+  - SME 성장시장 금융상품: 0.25 bps/일 [unverified]
+  - 기타 금융상품: 0.5 bps/일 [unverified]
+- 현금 미인도에 대한 벌과금: 결제통화 발행 중앙은행의 익일물 대출 공식 이자율 기반, 하한선 0.
+- **운영:** CSD가 일말에 벌과금을 계산 및 적용; 실패 참가자로부터 징수하여 수취 참가자에게 최소 월 1회 재분배.
+[Source: ICMA, "CSDR Settlement Discipline"; Euroclear, "CSDR Settlement Discipline: Settlement Penalties"]
+
+**실패율 및 통계:**
+- 시행 이후 벌과금 메커니즘은 EU 시장 전반의 결제 효율성 개선에 기여하였다.
+- 그러나 ESMA의 분석에 의하면 벌과금의 상당 부분(81%)이 절대 금액이 매우 작아(50유로 미만) 행정 비용 대비 억제 효과에 의문이 제기되었다.
+- ESMA는 2024년 11월 다음을 제안하였다:
+  - 대부분의 자산군에 걸친 벌과금 비율의 점진적 인상
+  - 보다 신속한 해결을 유도하기 위한 **누진적 벌과금**(실패일이 지날수록 증가) 도입
+  - 지연 매칭 벌과금 및 현금 실패 관련 벌과금 취급 조정
+- 유럽위원회는 수정된 벌과금 비율을 2026년 1분기에 채택할 것으로 예상 [unverified -- 정확한 채택일]
+- 2025년 2월 27-28일 주요 TARGET 서비스 사고로 인해 NCA가 해당 일자에 대한 현금 벌과금 적용을 유예하였다.
+[Source: ESMA Final Report on CSDR Penalty Mechanism, November 2024; ESMA, "ESMA finalises its advice on the CSDR Penalty Mechanism"]
+
+**강제매수(유예/수정 상태):**
+- CSDR Article 7에 따른 강제매수 제도는 규정 최초 시행 이래 유예되어 왔다.
+- **CSDR Refit(Regulation (EU) 2023/2845)**, 2023년 12월 게재, 은 매수 체계를 근본적으로 재구조화하였다:
+  - 매수는 더 이상 자동 의무화가 아니며, 유럽위원회의 위임법령에 의해서만 결제 효율성이 정의된 기준 이하로 악화될 경우 발동되는 보완 수단으로 기능
+  - SFT는 매수 범위에서 제외
+  - 매수의 대안으로서 현금 보상 보존
+- 2026년 4월 기준, 강제매수는 **발동되지 않았다**. 현금 벌과금 체계가 주요 결제규율 도구로 유지된다.
+[Source: Norton Rose Fulbright, "CSDR Refit: The Key Changes"; ICMA, "CSDR Settlement Discipline"]
+
+---
+
+## 6. 상호운용성 (Interoperability)
+
+### 6.1 EMIR에 따른 CCP 상호운용성 (CCP Interoperability under EMIR)
+
+**상호운용 연계 체계:**
+- EMIR Title V(Articles 51-54)는 CCP 간 상호운용 약정에 대한 체계를 수립한다.
+- 상호운용 약정은 하나의 CCP가 다른 CCP가 서비스하는 거래소에서 체결된 거래를 청산할 수 있게 하여, 시장 참가자가 거래 장소에 관계없이 CCP를 선택할 수 있게 한다.
+- 상호운용을 위한 주요 요건:
+  - 양 CCP가 NCA에 연계 승인 신청
+  - CCP 간 익스포저에 대한 견고한 리스크 관리
+  - 연계된 CCP 간 적절한 증거금 및 담보 약정
+  - 조율된 부도 관리 절차
+  - 약정의 집행 가능성에 대한 법률 의견
+[Source: EMIR Articles 51-54; ESRB, "CCP Interoperability Arrangements," January 2019]
+
+**상호운용 CCP의 리스크 관리:**
+- 상호운용 CCP는 다음을 통해 상대 CCP에 대한 익스포저를 관리하여야 한다:
+  - CCP 간 구간에 대한 적절한 증거금 요건
+  - 전용 공동기금 분담금 또는 기타 재무적 안전장치
+  - 일중 익스포저 모니터링 및 관리
+  - 조율된 스트레스 테스트
+- ESRB의 2019년 보고서는 상호운용에서 발생하는 리스크(전염 리스크, 유동성 리스크, 운영 리스크 포함)를 식별하고 ESMA 및 NCA의 강화된 모니터링을 권고하였다.
+[Source: ESRB, "CCP Interoperability Arrangements," January 2019, https://www.esrb.europa.eu/pub/pdf/reports/esrb.report190131_CCP_interoperability_arrangements~99908a78e7.en.pdf]
+
+**EU 내 현행 상호운용 약정:**
+- 2026년 기준, 유럽에는 **5개 CCP 상호운용 약정**이 있으며, 다음이 참여한다:
+  - **EU 인가 CCP:** EuroCCP(네덜란드), CC&G/Euronext Clearing(이탈리아), LCH SA(프랑스)
+  - **승인된 제3국 CCP:** LCH Ltd(영국), SIX x-clear(스위스, 노르웨이 지점 SIX x-clear NO 포함)
+- 이 약정은 주로 유럽 거래소(Euronext, CBOE Europe, Aquis Exchange 등)에서 거래되는 현물 주식 및 ETF를 대상으로 한다.
+- **EMIR 3.0 확대:** EMIR 3.0에 따라 상호운용 약정은 더 이상 양도성 증권 및 단기금융상품에 한정되지 않으며, 모든 금융 또는 비금융 상품과 관련될 수 있다.
+[Source: ESRB Report, January 2019; A&O Shearman, "EMIR 3 and Clearing in the EU"]
+
+> **KRX/FSC 비교:** EU는 5개의 CCP 상호운용 약정을 보유하여 경쟁과 선택을 촉진한다. 한국은 단일 CCP(KRX) 모델을 운영하므로 CCP 상호운용의 필요성이 없지만, 리스크 집중에 대한 고려가 필요하다.
+
+---
+
+## 7. 국경 간 협정 (Cross-Border Arrangements)
+
+### 7.1 영국 Brexit 이후 (UK Post-Brexit)
+
+**영국 CCP 임시 승인(LCH Ltd, ICE Clear Europe, LME Clear):**
+- 영국이 2020년 1월 31일 EU를 탈퇴한 후(전환 기간 2020년 12월 31일 종료), 영국 CCP는 EU 인가를 상실하였다.
+- ESMA는 2021년 1월 1일부터 3개 영국 CCP에 임시 승인을 부여하였다: **LCH Ltd, ICE Clear Europe, LME Clear**.
+- **LCH Ltd** 및 **ICE Clear Europe**은 **Tier 2 TC-CCP**(시스템적으로 중요)로 분류되어 ESMA의 직접 감독을 받는다.
+- **LME Clear**는 **Tier 1 TC-CCP**로 분류되었다.
+[Source: ESMA, "ESMA to recognise three UK CCPs from 1 January 2021"; ESMA, "ESMA extends the tiering and recognition of the three UK-based CCPs"]
+
+**동등성 연장:**
+- 유럽위원회는 원래 영국 CCP 규제 체계에 대한 기한부 동등성 결정을 채택하였다.
+- **2025년 1월 31일**, 위원회는 영국 CCP 동등성을 **2028년 6월 30일까지 3년간** 연장하는 결정을 채택(2025년 7월 1일부터 적용, 이전 결정은 2025년 6월 30일 만료).
+- 이 연장은 EMIR 3.0 AAR이 시행되는 동안 영국 CCP에서 청산하는 EU 시장 참가자에게 연속성을 제공한다.
+[Source: European Commission, "Commission extends time-limited equivalence for UK central counterparties," January 2025; AIMA, "European Commission Proposes to Extend UK CCP Equivalence Beyond 2025"]
+
+**EMIR 3.0 Active Account의 영향:**
+- AAR은 유로화 표시 파생상품 청산에서 영국 CCP에 대한 EU의 의존도를 줄이기 위한 주요 정책 도구이다.
+- EU 거래상대방은 영국 CCP에서도 계속 청산할 수 있더라도 범위 내 금리파생상품 및 STIR에 대해 EU CCP(예: Eurex Clearing)에서 활성계좌를 유지하여야 한다.
+- 85% 기준 면제는 이미 EU CCP에서 주로 청산하는 거래상대방에 대해 최소한의 추가 부담을 의미한다.
+- 장기 전략적 의도는 특히 유로화 표시 금리파생상품 청산에서 LCH Ltd에 대한 실행 가능한 대안으로서 EU CCP 역량 및 시장 유동성을 구축하는 것, 특히 Eurex Clearing에서의 역량 구축이다.
+[Source: Eurex, "EMIR 3.0 active accounts are set to change the European clearing landscape"; Ashurst, "EU extends UK CCP equivalence"]
+
+**장기 동등성 결정:**
+- 현재 동등성 결정은 기한부(2028년 6월 30일까지)로 유지된다.
+- 유럽위원회는 영국에 대한 영구적 또는 무기한 동등성 결정을 채택하지 않았다.
+- 영국 CCP의 EU 시장 접근 미래는 AAR의 EU 청산 역량 구축 성공과 진행 중인 EU-영국 규제 협력에 달려 있다.
+- 영국의 자체 **임시승인체계(TRR, Temporary Recognition Regime)** -- EU CCP의 영국 내 운영을 위한 -- 은 2026년 12월 31일까지 연장(HM Treasury에 의해 추가 연장 가능) [unverified -- 이후 추가 연장 가능]
+[Source: Bank of England, "Information on the effect of the UK's withdrawal from the EU on FMI supervision"]
+
+### 7.2 제3국 동등성 (Third-Country Equivalence)
+
+**비EU 관할권에 대한 동등성 결정:**
+- 유럽위원회는 다수 제3국의 CCP 규제 체계에 대한 동등성 결정을 채택하여, 해당국 CCP가 ESMA 승인을 신청할 수 있게 하였다.
+- CCP 동등성 결정이 있는 주요 관할권:
+  - **미국**(CFTC 규제 CCP)
+  - **영국**(기한부, 2028년 6월 30일까지)
+  - **일본**(JFSA 규제 CCP)
+  - **싱가포르**(MAS 규제 CCP)
+  - **홍콩**(SFC/HKMA 규제 CCP)
+  - **호주**(ASIC/RBA 규제 CCP)
+  - **한국**(FSC/FSS 규제 CCP)
+  - **인도, 캐나다, 스위스, 브라질, 멕시코, 남아프리카** 등
+- 동등성은 관할권별·활동별 기준으로 평가된다.
+[Source: European Commission, "Equivalence decisions"; ESMA, "Third-Country CCPs"]
+
+**비EU CCP에 대한 영향:**
+- 동등성 + 승인을 통해 비EU CCP는 EU 청산회원 및 거래소에 청산 서비스를 제공할 수 있다.
+- EMIR 2.2 등급 체계 및 EMIR 3.0 AAR은 EU 시장을 서비스하는 비EU CCP에 대한 규제 감독 및 운영 요건을 강화하였다.
+- Tier 2 TC-CCP는 상당한 준수 비용(비교 가능 준수 또는 EMIR 직접 준수, ESMA 감독 수수료)에 직면한다.
+- AAR은 EU 청산 물량이 EU 인가 CCP로 이동하도록 유인을 제공하여, 유로화 표시 상품에서 비EU CCP의 시장 점유율을 잠재적으로 감소시킨다.
+
+**ESMA-한국 MoU:**
+- ESMA와 한국 FSC/FSS는 EMIR Article 25에 따른 한국 CCP의 승인 조건 준수에 대한 ESMA의 모니터링에 관한 양해각서(MOU)를 체결하였다.
+- 유럽위원회는 한국의 CCP 규제 체계(자본시장법)가 EMIR 요건과 동등하다는 동등성 결정을 채택하였다.
+- 이를 통해 KRX(CCP로서)가 ESMA 승인을 신청할 수 있으나, KRX는 EU 회원에게 중요한 국경 간 청산 서비스를 제공하지 않으므로 승인을 신청하지 않은 것으로 보인다. [unverified]
+[Source: ESMA, "Memorandum of Understanding -- ESMA and FSC/FSS Korea"]
+
+---
+
+## 8. 최근 규제 변화 (2023-2026) (Recent Regulatory Changes)
+
+### 8.1 EMIR 3.0 시행 (EMIR 3.0 Implementation)
+
+| 이정표 | 일자 | 상태 |
+|--------|------|------|
+| EMIR 3.0 EU 관보 게재 | 2024년 12월 4일 | 완료 |
+| 발효 | 2024년 12월 24일 | 완료 |
+| ESMA의 AAR RTS 협의 | 2024년 11월 - 2025년 1월 | 완료 |
+| AAR 의무 적용 | 2025년 6월 24일 | 완료 |
+| ESMA 최종 RTS 유럽위원회 제출 | 2025년 6월 25일 | 완료 |
+| 지속적 시행 및 모니터링 | 2025-2026 | 진행 중 |
+
+[Source: ESMA, "EMIR 3 Active Account Requirement" publications; Jones Day, December 2024]
+
+### 8.2 CSDR Refit
+
+| 이정표 | 일자 | 상태 |
+|--------|------|------|
+| CSDR Refit 잠정 합의 | 2023년 6월 27일 | 완료 |
+| EU 관보 게재 | 2023년 12월 27일 | 완료 |
+| 발효 | 2024년 1월 16일 | 완료 |
+| 첫 번째 조항 적용 | 2024년 5월 1일 | 완료 |
+| 나머지 조항 적용 | 2026년 1월 17일 | 완료 |
+| ESMA 결제규율 RTS 개정(T+1 지원) | 2025년 10월 13일 | 완료 |
+
+주요 CSDR Refit 변경 사항:
+1. **결제규율:** 수정된 강제매수 체계(자동이 아닌 보완 수단); SFT 제외; 강화된 현금 벌과금 체계.
+2. **패스포팅:** 국경 간 CSD 서비스 제공 간소화.
+3. **은행형 부수 서비스:** CSD의 은행형 서비스 제공 또는 접근 용이화.
+4. **제3국 CSD 감독:** EU에서 운영하는 비EU CSD에 대한 체계 간소화.
+5. **감독 협력:** NCA와 ESMA 간 조율 강화.
+[Source: Norton Rose Fulbright, "CSDR Refit: The Key Changes"; Regulation (EU) 2023/2845]
+
+### 8.3 디지털 금융 패키지(DLT 시범 체계) (Digital Finance Package, DLT Pilot Regime for Market Infrastructure)
+
+- **Regulation (EU) 2022/858**(DLT 시범 체계)은 **2023년 3월 23일** 발효.
+- DLT 기반 시장인프라에 대한 규제 샌드박스를 생성하여 다음을 허용:
+  - **DLT 다자간거래시스템(DLT MTF)**
+  - **DLT 결제시스템(DLT SS)**
+  - **DLT 거래 및 결제시스템(DLT TSS)** -- 단일 DLT 플랫폼에서 거래와 결제를 결합
+- 토큰화 금융상품(증권 토큰 / DLT 금융상품)의 발행, 기록, 이전 및 보관을 대상으로 한다.
+- 결제는 중앙은행 화폐, 상업은행 화폐 또는 전자화폐 토큰으로 이루어질 수 있다.
+- 원래 정의된 기준 이하의 특정 금융상품으로 제한 [unverified]
+[Source: EUR-Lex, Regulation (EU) 2022/858; ESMA, "DLT Pilot Regime"]
+
+**최근 발전:**
+- **2024년:** 독일 규제기관 BaFin이 DLT 시범 체계에 따라 완전 규제된 블록체인 기반 거래 및 결제 장소를 운영하기 위해 **21X**에 인가를 부여.
+- **2025년 12월:** 유럽위원회가 DLT 시범 체계에 대한 **대폭 업그레이드**를 제안:
+  - 발행 기준을 60억 유로에서 1,000억 유로로 인상
+  - 적격성을 모든 MiFID II 증권으로 확대(주식, 채권, 펀드에 한정하지 않음)
+  - 거래 후 인프라에서 DLT의 보다 광범위한 채택을 촉진하기 위한 범위 확대
+- **2025년 6월:** ESMA는 규정 Article 14에 따른 DLT 시범 체계의 기능 및 검토에 관한 보고서를 발표.
+[Source: ESMA, "DLT Pilot Regime," https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/dlt-pilot-regime; Ledger Insights, "EU Commission floats major DLT Pilot Regime upgrade," December 2025]
+
+### 8.4 T+1 준비 (T+1 Preparations)
+
+| 이정표 | 일자 | 상태 |
+|--------|------|------|
+| ESMA T+1 보고서 및 권고 | 2024년 11월 18일 | 완료 |
+| EU T+1 거버넌스 구조 설립 | 2025년 1월 22일 | 완료 |
+| 1단계: 기술적 솔루션 정의 | 2025년 3분기 | 완료 |
+| ESMA 상위 수준 로드맵 발표 | 2025년 6월 30일 | 완료 |
+| 입법 문서 EU 관보 게재 | 2025년 10월 14일 | 완료 |
+| ESMA 결제규율 RTS 개정 | 2025년 10월 13일 | 완료 |
+| 2단계: 기술적 솔루션 시행 | 2026년 말까지 | 진행 중 |
+| 3단계: 업계 전체 테스트 | 2027년 초 | 예정 |
+| **T+1 가동** | **2027년 10월 11일** | 예정 |
+
+타 관할권과의 조율:
+- 영국은 EU의 2027년 10월 일자에 맞추어 T+1 전환을 조율할 것으로 예상 [unverified -- 정확한 영국 일자]
+- 스위스도 EU 일정에 맞추어 전환을 조율 중
+- 미국은 2024년 5월 T+1로 성공적으로 이행; 인도는 2023년 1월 T+1로 이행
+[Source: ESMA, "Shortening the settlement cycle to T+1 in the EU"; BNP Paribas, "T+1 in Europe"]
+
+---
+
+## 9. 한국과의 비교 (Comparison with Korea)
+
+### 9.1 주요 차이점 (Key Differences)
+
+| 측면 | EU | 한국 |
+|------|-----|------|
+| **주요 법률** | EMIR(648/2012, EMIR Refit, 2.2, 3.0으로 개정), CSDR(909/2014, CSDR Refit으로 개정) | 자본시장과 금융투자업에 관한 법률(FSCMA, 자본시장법) |
+| **CCP 규제기관** | ESMA(초국가적) + NCA(국가별), 감독 칼리지를 통해 | FSC(정책/인가) + FSS(감독/검사) + BOK(결제시스템 감독) |
+| **CCP 구조** | 복수 CCP -- Eurex Clearing, LCH SA, EuroCCP, CC&G, ICE Clear Europe 등 | 단일 CCP -- KRX가 거래소 거래 상품의 유일 CCP |
+| **CSD 구조** | 복수 CSD -- T2S에 연결된 24개 이상 CSD; ICSD(Euroclear Bank, Clearstream Banking) | 단일 CSD -- 한국예탁결제원(KSD), 자본시장법에 따른 특수법인 |
+| **CCP 인가** | NCA 인가 + 감독 칼리지, ESMA 조율; 최소 750만 유로 자본금 | KRX는 자율규제기관 및 CCP로서 법률에 의해 설립; 자본시장법에 따라 규제 |
+| **결제 인프라** | T2S(범유럽, ECB 운영, 중앙은행 화폐 DVP) | KSD가 결제 시스템 운영; BOK-Wire+를 통한 중앙은행 화폐 자금 결제 |
+| **결제주기** | T+2(2027년 10월 11일 T+1 전환 예정) | T+2(주식); T+1(국채); T+0(일반 채권) |
+| **결제규율** | 현금 벌과금(2022년 2월 이후); 강제매수(유예, CSDR Refit에 따라 보완 수단만) | KRX/KSD 규칙에 따른 결제 실패 처리; KRX 규칙집에 정의된 벌과금 및 부도 절차 [unverified] |
+| **CCP 상호운용** | EU 및 제3국 CCP 간 5개 상호운용 약정 | CCP 상호운용 없음 -- 단일 CCP 모델 |
+| **DVP 모델** | T2S는 복수 일괄 최적화 주기를 갖는 실시간 DVP; BIS 모델 1(총액-총액) 실시간 | KSD는 주식에 대해 총액 증권/순액 현금(BIS 모델 2) 사용 [unverified]; 모든 상품 DVP |
+| **회복 및 정리** | 전용 CCP 회복·정리 규정(EU) 2021/23, 구체적 도구(VMGH, 계약 청산, 현금 요구, 사업 매각) 규정 | 전용 CCP 회복·정리 법률 없음; 일반 금융 안정성 체계 및 자본시장법 조항으로 처리 [unverified] |
+| **제3국 CCP 접근** | EMIR Article 25에 따른 승인 체계(Tier 1 / Tier 2); 동등성 결정 | 한국 CCP는 일반적으로 외국 청산회원에 직접 서비스를 제공하지 않음; ESMA-한국 MoU는 승인 목적으로 존재 |
+| **교차증거금** | EMIR 3.0에 따라 촉진(동일 청산그룹 내 ETD/OTC 교차증거금) | KRX가 거래소 파생상품(KOSPI 200 선물/옵션)에 대한 교차증거금 제공 [unverified] |
+| **PFMI 준수** | EMIR/CSDR은 PFMI와 정합되도록 설계; CPMI-IOSCO 평가 수행 | IMF/World Bank FSAP 평가(2014)에서 KRX CCP 및 BOK-Wire+를 PFMI에 대해 평가; 일반적으로 광범위하게 준수로 평가 [Source: IMF FSAP 2014, cr14308/cr14309] |
+| **청산의무** | 표준화된 OTC 파생상품(IRS, CDS 지수)에 대한 인가/승인 CCP에서의 의무적 중앙청산 | EMIR에 비교 가능한 의무 OTC 청산의무 없음; 거래소 파생상품은 KRX에 의해 당연히 중앙청산 [unverified] |
+| **Active Account Requirement** | EMIR 3.0 AAR(유로화 표시 IRD 및 STIR) | 동등한 요건 없음 |
+| **DLT/혁신** | DLT 시범 체계(Regulation 2022/858), 토큰화 증권 결제용 | KSD가 국경 간 결제를 위한 블록체인 탐색(예: OTC 파생상품 보고를 위한 KSD 블록체인 플랫폼) [unverified] |
+| **T+1 전환** | 2027년 10월 11일로 입법화 | KSD/KRX가 T+1 전환 논의 착수(2025년 10월 워킹그룹 설립); 아직 입법 일정 없음 |
+
+### 9.2 구조적 관찰 (Structural Observations)
+
+**중앙집중형 대 분산형 모델:**
+- 한국은 고도로 중앙집중화된 거래 후 모델을 운영한다: 단일 거래소 그룹(KRX)이 거래소와 CCP를 겸하고, 단일 CSD(KSD)가 모든 결제를 처리한다. 이는 상호운용성 우려를 단순화하지만 리스크를 집중시킨다.
+- EU는 27개 회원국에 걸쳐 복수의 CCP, CSD, 거래소를 갖춘 분산형 모델을 운영하여, 광범위한 규제 조율(칼리지, ESMA 감독, T2S 조화)이 필요하다. 이는 경쟁과 선택을 제공하지만 복잡성을 수반한다.
+
+**규제 중복:**
+- 한국에서는 FSC/FSS와 BOK 모두 KRX 및 KSD 감독에 중복적 책임을 가지고 있으며, 2014년 IMF FSAP에서 잠재적 조율 과제로 지적되었다.
+- EU에서는 ESMA(초국가적)와 NCA(국가별) 간 분담이 EMIR에 따라 보다 명확하게 구분되며, EMIR 3.0 개혁은 감독 권한을 ESMA에 더욱 집중시킨다.
+
+**결제 효율성:**
+- 한국의 단일 CSD 모델과 채권에 대한 짧은 결제주기(T+1 및 T+0)는 보다 간소화된 결제 프로세스를 시사한다.
+- EU의 복수 CSD 환경은 T2S 존재에도 불구하고 보다 큰 국경 간 복잡성을 수반한다. T+1 전환은 24개 CSD 및 해당 시장 커뮤니티 전반의 조율이 필요한 대규모 업계 프로젝트이다.
+
+[Source: IMF, "Republic of Korea: FSAP -- Detailed Assessment of Observance of the CPSS-IOSCO PFMI," 2014; BIS, "Payment, clearing and settlement systems in Korea," Red Book 2011; Clearstream, "Market infrastructure -- South Korea"]
+
+---
+
+## 출처 (Sources)
+
+### 주요 법률 (Primary Legislation)
+- [EMIR -- Regulation (EU) No 648/2012](https://eur-lex.europa.eu/eli/reg/2012/648/oj/eng)
+- [EMIR 3.0 -- Regulation (EU) 2024/2987](https://eur-lex.europa.eu/eli/reg/2024/2987/oj/eng)
+- [CSDR -- Regulation (EU) No 909/2014](https://eur-lex.europa.eu/eli/reg/2014/909/oj/eng)
+- [CSDR Refit -- Regulation (EU) 2023/2845](https://eur-lex.europa.eu/eli/reg/2023/2845/oj/eng)
+- [CCP Recovery and Resolution -- Regulation (EU) 2021/23](https://eur-lex.europa.eu/eli/reg/2021/23/oj/eng)
+- [DLT Pilot Regime -- Regulation (EU) 2022/858](https://eur-lex.europa.eu/eli/reg/2022/858/oj/eng)
+
+### ESMA 발간물 (ESMA Publications)
+- [ESMA -- Third-Country CCPs](https://www.esma.europa.eu/central-counterparties/third-country-ccps)
+- [ESMA -- CCP Policy](https://www.esma.europa.eu/central-counterparties/ccp-policy)
+- [ESMA -- Central Securities Depositories](https://www.esma.europa.eu/esmas-activities/markets-and-infrastructure/central-securities-depositories)
+- [ESMA -- DLT Pilot Regime](https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/dlt-pilot-regime)
+- [ESMA -- Shortening the Settlement Cycle to T+1](https://www.esma.europa.eu/esmas-activities/markets-and-infrastructure/shortening-settlement-cycle-t1-eu)
+- [ESMA -- EMIR 3 Active Account Requirement Consultation Paper (November 2024)](https://www.esma.europa.eu/sites/default/files/2024-11/ESMA91-1505572268-3856_Consultation_Paper_EMIR_3_Active_Account_Requirement.pdf)
+- [ESMA -- Final Report on CSDR Penalty Mechanism (November 2024)](https://www.esma.europa.eu/sites/default/files/2024-11/ESMA74-2119945925-2059_Final_Report_on_Technical_Advice_on_CSDR_Penalty_Mechanism.pdf)
+
+### ECB / T2S
+- [ECB -- What is TARGET2-Securities (T2S)?](https://www.ecb.europa.eu/paym/target/t2s/html/index.en.html)
+- [ECB -- T2S About](https://www.ecb.europa.eu/paym/t2s/about/html/index.en.html)
+
+### 유럽위원회 (European Commission)
+- [EC -- Recovery and Resolution of CCPs](https://finance.ec.europa.eu/capital-markets-union-and-financial-markets/financial-markets/post-trade-services/recovery-and-resolution-central-counterparties-ccps_en)
+- [EC -- T+1 Settlement (February 2025)](https://finance.ec.europa.eu/news/t1-settlement-2025-02-14_en)
+- [EC -- Commission extends UK CCP equivalence (January 2025)](https://finance.ec.europa.eu/news/commission-extends-time-limited-equivalence-uk-central-counterparties-2025-01-31_en)
+
+### 업계 및 자문 출처 (Industry & Advisory Sources)
+- [Ashurst -- EU EMIR: EMIR 3 and the Active Account Requirement](https://www.ashurst.com/en/insights/eu-emir-emir-3-and-the-active-account-requirement/)
+- [A&O Shearman -- EMIR 3 and Clearing in the EU](https://www.aoshearman.com/en/insights/emir-3-and-clearing-in-the-eu)
+- [Norton Rose Fulbright -- CSDR Refit: The Key Changes](https://www.nortonrosefulbright.com/en/knowledge/publications/3fec092d/csdr-refit-the-key-changes)
+- [Jones Day -- EMIR 3 Published in the Official Journal (December 2024)](https://www.jonesday.com/en/insights/2024/12/emir-3-published-in-the-official-journal-of-the-european-union)
+- [BNP Paribas -- EU CCP Recovery and Resolution Regulation (December 2024)](https://globalmarkets.cib.bnpparibas/app/uploads/sites/4/2024/12/eu-ccp-rrr-dec24.pdf)
+- [ICMA -- CSDR Settlement Discipline](https://www.icmagroup.org/market-practice-and-regulatory-policy/secondary-markets/secondary-markets-regulation/csdr-settlement-discipline/)
+- [ESRB -- CCP Interoperability Arrangements (January 2019)](https://www.esrb.europa.eu/pub/pdf/reports/esrb.report190131_CCP_interoperability_arrangements~99908a78e7.en.pdf)
+
+### 한국 관련 (Korea-Specific)
+- [IMF -- Republic of Korea: FSAP Detailed Assessment of CPSS-IOSCO PFMI (2014)](https://www.imf.org/external/pubs/ft/scr/2014/cr14308.pdf)
+- [BIS -- Payment, Clearing and Settlement Systems in Korea (Red Book 2011)](https://www.bis.org/cpmi/publ/d97_kr.pdf)
+- [Clearstream -- Market Infrastructure: South Korea](https://www.clearstream.com/clearstream-en/res-library/market-coverage/market-infrastructure-south-korea-1283522)
+- [ESMA -- MoU with FSC/FSS Korea](https://www.esma.europa.eu/sites/default/files/library/revised_mou_esma-fsc_fss_korea_tc-ccps_-_final.pdf)
+- [Chambers and Partners -- Financial Services Regulation 2025: South Korea](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/south-korea)

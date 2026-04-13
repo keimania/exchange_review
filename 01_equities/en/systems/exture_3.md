@@ -1,0 +1,195 @@
+# Exture 3.0 — Korea Exchange (KRX)
+
+> **Last Updated:** 2026-04-13
+> **System Category:** Trading System / Clearing System / Market Data System
+
+---
+
+## 1. System Overview
+
+| Item | Details |
+|------|---------|
+| System Name | Exture 3.0 (엑스처 3.0) |
+| Operated By | Korea Exchange (KRX); developed and operated in partnership with KOSCOM |
+| Purpose | Integrated trading, information distribution, clearing, and settlement platform for all KRX markets (KOSPI, KOSDAQ, KONEX, derivatives) |
+| Launch Year | 2023 (Phase 1: January 25 — trading + info distribution; Phase 2: October 4 — clearing + settlement) |
+| Current Version | Exture 3.0 |
+| Vendor / In-house | In-house (KRX/KOSCOM); major SI companies (Samsung SDS, LG CNS, SK C&C) competed for infrastructure construction (~KRW 35 billion hardware budget) |
+
+### System Evolution
+| Period | System Name | Key Changes |
+|--------|-------------|-------------|
+| 1956-1988 | Manual / Open Outcry | Physical trading floor; paper-based order processing |
+| 1988-1997 | Computer-assisted trading | Electronic order routing introduced parallel with open outcry; inspired by TSE CATS system |
+| 1997-2009 | Fully automated (legacy) | Trading floor eliminated (September 1997); separate systems for KSE, KOSDAQ, KOFEX |
+| 2009-2014 | **EXTURE** | Launched March 23, 2009; first unified platform consolidating three legacy exchange systems; ~20 ms latency; 250 TPS matching; 40 million quotes/day capacity |
+| 2014-2023 | **EXTURE+** | Launched 2014; revolutionary upgrade — 285x latency reduction; first Linux x86 platform in Korean capital markets; sub-70 us worst-case latency; 20,000+ TPS order matching; 100,000+ TPS throughput; 160 million quotes/day; introduced FIX/FAST protocols, DMA, and algo trading support |
+| 2023-present | **Exture 3.0** | ISP established 2019; construction started October 2020; Phase 1 (January 2023): trading + information distribution; Phase 2 (October 2023): clearing + settlement; 30% latency improvement over EXTURE+; low-latency extended to entire system; flexible multi-matching architecture |
+
+[Source: Finextra — EXTURE launch 2009; KOSCOM — EXTURE+ specs; Seoul Finance — Exture 3.0 Phase 1; CEO Score Daily — Phase 2]
+
+---
+
+## 2. Architecture
+
+### 2.1 High-Level Design
+- **Centralized** matching with distributed gateway architecture
+- **Layered/Tiered** architecture with memory-based order book
+- **On-premise** — dual data center (Seoul + Busan) with interchangeable failover
+- **Flexible, expandable** design with market-specific multi-matching capabilities
+- Low-latency scope extended from matching engine only (EXTURE+) to the **entire market system** including information distribution and clearing/settlement
+
+### 2.2 Core Components
+| Component | Function | Technology |
+|-----------|----------|------------|
+| Matching Engine | Memory-based order book matching with zero-latency design goal; price-time priority | In-house (KRX/KOSCOM); x86 Linux |
+| Order Gateway | Member system connectivity; pre-trade validation; session management | FIX/FAST protocol support; KRX native binary |
+| Market Data Publisher | Real-time quote and trade dissemination; expanded bandwidth (45→100 Mbps for derivatives) | KOSCOM STOCK-NET distribution |
+| Risk Engine | Real-time risk calculation and simulation (integrated in Phase 2); VI/SAPI monitoring | Integrated with clearing system |
+| Surveillance | Market surveillance, abnormal transaction detection, manipulation prevention | KRX SRO function |
+| Clearing/Settlement Module | Unified on-exchange + OTC clearing/settlement UI (Phase 2); integrated risk management | Exture 3.0 Phase 2 |
+
+### 2.3 Technology Stack
+| Layer | Technology |
+|-------|-----------|
+| Programming Language | Not publicly disclosed (C/C++ likely based on industry practice and EXTURE+ heritage) |
+| Operating System | Linux (first adoption in Korean capital markets with EXTURE+, continued in 3.0) |
+| Hardware | x86 commodity servers; ~KRW 35 billion hardware infrastructure budget |
+| Network | KOSCOM STOCK-NET dedicated high-speed financial network; 100 Mbps derivative bandwidth |
+| Database | Not publicly disclosed |
+| Messaging/Middleware | FIX/FAST protocols; proprietary binary for co-located participants |
+| Virtualization | 200-user desktop virtualization (VDI) |
+
+---
+
+## 3. Performance Specifications
+
+| Metric | Value | Conditions |
+|--------|-------|------------|
+| Round-trip Latency (worst-case, EXTURE+) | <=70 us | Co-located; EXTURE+ baseline |
+| Round-trip Latency (average, EXTURE+) | 30-50 us | Co-located |
+| Round-trip Latency (Exture 3.0, estimated) | ~49 us worst-case | 30% improvement over EXTURE+ 70 us [estimated] |
+| Order Processing Rate (matching) | 20,000+ TPS | EXTURE+ specification |
+| Peak Messages Per Second (throughput) | 100,000+ TPS | EXTURE+ specification |
+| Daily Quote Capacity | 160 million quotes/day | EXTURE+ specification |
+| Uptime SLA | Not publicly disclosed | Backup system activates on primary failure |
+
+**Note:** KRX has not published exact Exture 3.0 latency or throughput figures. The 30% improvement claim is from KRX's official announcement. Actual production performance may differ.
+
+### Performance History
+| Year | System | Latency | Throughput | Notes |
+|------|--------|---------|------------|-------|
+| 2009 | EXTURE | ~20 ms | 250 TPS; 40M quotes/day | First unified platform |
+| 2014 | EXTURE+ | <=70 us (worst); 30-50 us (avg) | 20,000+ TPS match; 100,000+ TPS throughput; 160M quotes/day | 285x latency reduction; first Linux x86 |
+| 2023 | Exture 3.0 | ~49 us [estimated] | Not disclosed; derivative bandwidth 100 Mbps | 30% improvement; full-system low-latency |
+
+---
+
+## 4. Interfaces & Protocols
+
+### 4.1 Order Entry
+| Protocol | Version | Description |
+|----------|---------|-------------|
+| FIX | Standard | International standard order entry; supported since EXTURE+ |
+| KRX Native/Binary | Proprietary | High-performance protocol for co-located participants; lowest latency |
+| DMA | Since EXTURE+ | Direct Market Access for institutional and algo traders |
+| 회원증권단말기 | KRX-provided | KRX-provided securities terminal for member firms |
+
+### 4.2 Market Data Dissemination
+| Protocol | Description | Data Content |
+|----------|-------------|-------------|
+| FAST (FIX Adapted for Streaming) | Compressed market data protocol | Real-time quotes, trades, indices |
+| KRX proprietary | Direct feed via KOSCOM STOCK-NET | Full depth of book; real-time production data |
+| KOSCOM distribution | Internet and dedicated line delivery | L1, L2, full depth; batch (end-of-day) via FTP |
+| KRX Data Marketplace | Web portal (data.krx.co.kr) | Historical data, reference data, indices; free and paid tiers |
+
+### 4.3 Drop Copy / Trade Reporting
+- Trade confirmations delivered through member system connectivity
+- Real-time trade data available through KOSCOM distribution network
+
+### 4.4 Reference Data
+- Security master data, corporate actions, index constituents available through KRX Data Marketplace and KOSCOM feeds
+
+---
+
+## 5. Resilience & Business Continuity
+
+### 5.1 Redundancy
+- **Active-passive** with interchangeable failover between Seoul and Busan data centers
+- **Backup system (예비시스템):** Can be activated if primary system fails [시행세칙 Art. 42(4)]
+- **Geographic distribution:** Seoul DC (primary for equities) + Busan DC (primary for derivatives); each serves as DR for the other
+
+### 5.2 Disaster Recovery
+- **DR site:** Seoul ↔ Busan interchangeable failover
+- **RPO (Recovery Point Objective):** Not publicly disclosed
+- **RTO (Recovery Time Objective):** Not publicly disclosed; trading hours adjustment allowed for recovery [시행세칙 Art. 8(2)]
+- **DR testing frequency:** Not publicly disclosed
+
+### 5.3 Capacity Management
+- **Scalability approach:** Flexible, expandable architecture with market-specific multi-matching capabilities
+- **Capacity planning:** System failure threshold triggers trading hour adjustment when failures affect firms responsible for 75%+ of total trading volume
+- **Recovery principle:** Delay trading by duration equal to outage time [시행세칙 Art. 8(2)]
+- **Load testing:** Connectivity tests required for HFT registration and annually [시행세칙 Art. 131-4]
+
+---
+
+## 6. Notable Technical Features
+
+- **Full-system low-latency:** Unlike EXTURE+ where low-latency was limited to the matching engine, Exture 3.0 extends sub-100 us performance to information distribution, clearing, and settlement
+- **Integrated clearing/settlement UI:** Phase 2 unified on-exchange and OTC clearing/settlement into a single interface
+- **Real-time risk simulation:** Integrated risk calculation and simulation capabilities in the clearing module
+- **Multi-matching architecture:** Flexible design supporting market-specific matching engine configurations
+- **New order types:** Mid-Price Order (중간가호가) and Stop Limit Order (스톱지정가호가) added in February 2025 — enabled by Exture 3.0's flexible architecture
+- **Quote price granularity improvement:** Maximum tick-to-price ratio reduced from 0.5% to 0.25% for stocks and stock futures
+- **Self-trade prevention:** Built-in STP with 3 configurable modes for HFT participants
+- **Export capability:** KRX contracted to supply clearing/settlement system technology to Thai Stock Exchange (April 2025)
+- **Linux x86 pioneering:** First adoption of Linux x86 server environment in Korean capital markets (EXTURE+, continued in 3.0), replacing proprietary hardware
+
+---
+
+## 7. Comparison Notes
+
+### vs. Global Peer Systems
+| Aspect | Exture 3.0 (KRX) | Pillar (NYSE) | INET/Eqlipse (NASDAQ) | arrowhead 4.0 (JPX) | T7 (Deutsche Borse) | Optiq (Euronext) |
+|--------|------------------|---------------|----------------------|---------------------|---------------------|------------------|
+| Launch Year | 2023 | 2017-2023 | 2006/2024 | 2024 (4th gen) | 2017 | 2018 |
+| Latency | ~49 us [est.] | ~34 us (P50) | ~14-20 us | Microsecond-level | ~5 us median (colo) | ~15 us average |
+| Throughput | 100,000+ TPS | Not disclosed | Millions/sec [est.] | Not disclosed | Hundreds of thousands/sec/partition | 1,000,000 msgs/sec |
+| Architecture | Memory-based, layered | Binary/FIX gateways, deterministic | FPGA-accelerated, microservices | Triple-redundancy, Fujitsu servers | Partition-based, event-driven | SBE/FIX 5.0, Kafka |
+| Platform | Linux x86 | Not disclosed | AWS hybrid | Fujitsu PRIMERGY | Not disclosed | Not disclosed |
+| Unique Feature | Full-system low-latency (trading + clearing) | Physical floor + electronic hybrid | FPGA acceleration | Cloud PoC with AWS | Shared with Eurex derivatives | Unified across 8 markets |
+| DR/BCP | Seoul-Busan dual DC | Equinix NY11 + CH4 Chicago | Not disclosed | Tokyo metro DC | Equinix FR2 | Aruba IT3, Bergamo |
+
+### Key Differentiators
+- **Integrated scope:** Exture 3.0 is one of few systems that provides unified low-latency across trading, market data, clearing, and settlement in a single platform
+- **Export potential:** KRX actively licensing clearing/settlement technology to other exchanges (Thai Stock Exchange deal, April 2025)
+- **Latency positioning:** Mid-range globally (~49 us est.) — faster than LSE Millennium (~126 us), HKEX OTP-C (sub-ms), but slower than Deutsche Borse T7 (~5 us), NASDAQ INET (~14 us), Euronext Optiq (~15 us)
+- **Linux x86 pioneer in Korea:** EXTURE+ (2014) was the first Linux x86 deployment in Korean capital markets, setting a precedent that Exture 3.0 continues
+- **Competition response:** Exture 3.0's flexible architecture enabled rapid introduction of new order types (mid-price, stop limit) and fee structure changes in response to Nextrade competition (2025)
+
+### vs. KRX Systems
+| Aspect | Exture 3.0 | EXTURE+ (predecessor) |
+|--------|-----------|----------------------|
+| Latency | ~49 us [est.] | <=70 us (worst-case) |
+| Scope | Trading + info distribution + clearing/settlement | Trading + matching only |
+| Architecture | Flexible multi-matching | Memory-based order book |
+| Clearing/Settlement | Unified on-exchange + OTC UI | Separate systems |
+| Risk Management | Integrated real-time simulation | Separate |
+| Derivative Bandwidth | 100 Mbps | 45 Mbps |
+| Quote Granularity | Max 0.25% tick/price ratio | Max 0.5% |
+
+---
+
+## Sources
+1. [KRX Global — EXTURE+ Trading System](https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp)
+2. [KOSCOM — KRX Trading System](https://www.koscom.co.kr/eng/main/contents.do?menuNo=300005)
+3. [Seoul Finance — Exture 3.0 Phase 1 Launch](https://www.seoulfn.com/news/articleView.html?idxno=477662), 2023-01-25
+4. [CEO Score Daily — Exture 3.0 Phase 2](https://m.ceoscoredaily.com/page/view/2023092616475531974), 2023-09-26
+5. [Finextra — EXTURE Launch 2009](https://www.finextra.com/pressarticle/26674/korea-exchange-launches-new-trading-system)
+6. [Finextra — EXTURE+ Launch 2014](https://www.finextra.com/pressarticle/54152/korea-exchange-launches-exture-trading-platform)
+7. [Digital Daily — KRX HW Infrastructure Project](https://m.ddaily.co.kr/page/view/2013010408094542642)
+8. [KOSCOM — Market Data Service](https://www.koscom.co.kr/eng/main/contents.do?menuNo=300126)
+9. [KOSCOM — STOCK-NET](https://www.koscom.co.kr/eng/main/contents.do?menuNo=300122)
+10. [WatersTechnology — IPC connects to KOSCOM Busan facility](https://www.waterstechnology.com/trading-tech/2218681/ipc-connects-to-koscom-busan-facility)
+11. [Wikipedia — Korea Exchange](https://en.wikipedia.org/wiki/Korea_Exchange)
+12. 유가증권시장 업무규정 시행세칙 (전문, 2026.04.01) — system-related provisions

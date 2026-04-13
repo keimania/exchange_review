@@ -1,0 +1,227 @@
+# SIX x-clear AG (SIX x-clear)
+
+> **최종 업데이트:** 2026-04-07
+> **조사 등급:** Tier 3 (개요)
+> **유형:** CCP (중앙청산소, Central Counterparty)
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 내용 |
+|------|------|
+| 정식 명칭 | SIX x-clear AG |
+| 약칭 | SIX x-clear |
+| 웹사이트 | [https://www.six-group.com/en/products-services/securities-services/clearing.html](https://www.six-group.com/en/products-services/securities-services/clearing.html) |
+| 설립연도 | 2003년 |
+| 국가 / 도시 | 스위스 / 취리히 |
+| 소유 구조 | SIX Securities Services AG의 자회사, SIX Group AG 소속 |
+| 모회사 / 그룹 | SIX Group AG -- SIX Swiss Exchange (주식/채권), SIX x-clear (CCP), SIX SIS (CSD), SIX Digital Exchange (SDX), BME (스페인 거래소), 금융정보 서비스를 포괄하는 스위스 수직통합형 금융 인프라 그룹 |
+| 감독기관 | FINMA (스위스 금융시장감독청, Swiss Financial Market Supervisory Authority) -- 주요 감독기관; SNB (스위스 국립은행, Swiss National Bank) -- 시스템적으로 중요한 서비스 감독 |
+| CPMI-IOSCO PFMI 준수 | 예 -- CPMI-IOSCO 자체평가 및 공개정량공시(PQD) 발행 |
+| QCCP 지위 | 2018년 3월 28일부터 스위스 금융시장인프라법(FMIA)에 따라 CCP 인가 취득; EU 및 영국에서 제3국 CCP로 인정 |
+| 청산회원 (Clearing Members) | 유럽 시장 전반 약 60개 청산회원 |
+| 서비스 시장 | 28개 거래소를 통해 18개 시장 (BME Clearing과 합산) |
+| 시장 지위 | 유럽 현물주식 시장의 선도적 상호운용 CCP; CCP 상호운용성의 선구자 |
+
+[Source: SIX Group -- Clearing Services, https://www.six-group.com/en/products-services/securities-services/clearing.html]
+[Source: SIX Group -- 20 Years of Clearing, https://www.six-group.com/en/newsroom/news/securities-services/2023/20-years-clearing-anniversary.html]
+[Source: SIX Group -- FINMA Recognition, https://www.six-group.com/en/newsroom/archive/2018/20180406-SIXxclear.html]
+
+### 주요 연혁 (Key Historical Milestones)
+
+| 연도 | 사건 |
+|------|------|
+| 2003 | SIX x-clear, SIX Swiss Exchange(당시 SWX Swiss Exchange)의 CCP 자회사로 설립 |
+| 2003 | SIX Swiss Exchange 주식 청산 서비스 개시 |
+| 2008 | London Stock Exchange 대상 LCH Ltd와의 상호운용 링크 구축 -- 유럽 최초의 CCP 상호운용 체계 |
+| 2008 | 상호운용 링크가 Lehman Brothers 파산을 견디며 모델의 견고성 입증 |
+| 2010년대 | Cboe Europe, Euronext, Nasdaq Nordic/Oslo 등 추가 유럽 거래소로 상호운용 확대 |
+| 2018 | 금융시장인프라법(FMIA)에 따른 FINMA CCP 인가 취득 (2018년 3월 28일) |
+| 2021 | FINMA, SIX x-clear의 최초 회복계획 승인 |
+| 2023 | 청산 운영 20주년 |
+| 2025 (12월) | SIX, SIX x-clear와 BME Clearing을 "SIX Clearing"이라는 단일 국제 다중자산 CCP로 통합 발표 -- 마드리드에 본사, 취리히 및 오슬로에 사무소 설치 |
+
+[Source: SIX Group -- Interoperability 20 Years, https://www.six-group.com/en/newsroom/news/securities-services/2023/interoperability-20-years-clearing-anniversary.html]
+[Source: SIX Group -- SIX x-clear/BME Clearing Integration, https://www.six-group.com/en/newsroom/media-releases/2025/20251204-six-clearing.html]
+[Source: FINMA -- Resolution Report, https://www.finma.ch/en/enforcement/recovery-und-resolution-n/publikationen/resolution-report/archive/resolution-report/focus-on-financial-market-infrastructures/]
+
+---
+
+## 2. 청산 모델 (Clearing Model)
+
+### 2.1 CCP 서비스 (CCP Services)
+
+SIX x-clear는 유럽 전역의 현물주식 및 채권 시장에 대해 중앙청산소(CCP) 청산 서비스를 제공한다. 매매 체결 시 SIX x-clear는 채무인수(novation)를 통해 CCP로서 개입하여, 모든 매도자에 대한 매수자이자 모든 매수자에 대한 매도자가 된다.
+
+| 서비스 | 자산 유형 | 거래소 |
+|--------|----------|--------|
+| 스위스 시장 청산 | 주식, ETF, 채권 | SIX Swiss Exchange |
+| 범유럽 현물주식 | 주식, ETF | London Stock Exchange, Cboe Europe, Euronext, Nasdaq Nordic/Oslo |
+| 채권 청산 | 국채 및 회사채 | SIX Swiss Exchange |
+
+### 2.2 청산 절차 (Clearing Process)
+
+- **채무인수 (Novation):** SIX x-clear는 거래 수락 시 거래상대방 위험을 인수한다
+- **다자간차감 (Multilateral Netting):** 청산회원별로 하우스/고객 계좌, ISIN, 통화, 결제 세부사항에 따라 다자간 기준으로 거래를 차감한다
+- **차감 효과:** 다자간차감은 회원의 전체 결제 물량 및 관련 비용을 크게 줄여준다
+- **핵심 시스템:** SECOM은 리스크 관리, 증거금 산출, 청산 거래 처리 등 청산 및 결제 서비스의 핵심 애플리케이션이다
+
+[Source: SIX Group -- Clearing Services]
+[Source: SIX x-clear -- CPMI-IOSCO Disclosure, https://www.six-group.com/dam/download/securities-services/clearing/regulatory/consultation-responses/six-x-clear-iosco-en.pdf]
+
+### 2.3 회원 자격 (Membership)
+
+SIX x-clear는 약 60개의 청산회원에게 서비스를 제공한다. 회원은 자기계좌(proprietary) 또는 고객 대리로 청산할 수 있다. 회원 자격을 위해서는 SIX x-clear가 정한 자본, 운영 및 기술 요건을 충족해야 한다.
+
+---
+
+## 3. 리스크 관리 (Risk Management)
+
+### 3.1 증거금 체계 (Margin Framework)
+
+SIX x-clear는 주식 증거금 모델에 **몬테카를로 VaR (Value-at-Risk)** 방법론을 적용한다:
+
+- 손익 시나리오를 생성하는 포트폴리오 증거금 방식
+- 모수적 가정(변동성, 상관관계)을 일일 기준으로 과거 데이터와 대조하여 검증
+- **경기순응성 완화 조치 (Anti-procyclicality measures):** 안정기에 증거금이 과도하게 낮아지는 것을 방지하고 스트레스 시기에 점진적 인상이 가능하도록 스트레스 기간을 증거금 산출에 반영
+- 증거금 요구액은 청산 기간(liquidation period) 동안의 잠재적 손실을 높은 신뢰수준(통상 99% 이상)에서 커버하도록 설계
+
+[Source: SIX x-clear -- CPMI-IOSCO Disclosure]
+
+### 3.3 손실부담순서 (Default Waterfall)
+
+SIX x-clear는 청산회원의 부도 시 발생하는 손실이 해당 부도자의 담보를 초과할 경우 비부도 회원을 보호하기 위한 손실부담순서를 유지한다:
+
+1. **부도자의 증거금 및 담보** -- 부도 회원의 개시증거금(initial margin) 및 변동증거금(variation margin)
+2. **부도자의 공동기금 출연분** -- 부도 회원의 공동기금(default fund) 기여분
+3. **SIX x-clear 자기자본 출연분 (Skin-in-the-Game)** -- SIX x-clear 자체 재원의 전용 부분
+4. **비부도 회원의 공동기금 출연분** -- 생존 회원의 상호부담(mutualized) 계층
+5. **추가분담금 부과** -- 필요 시 생존 회원에 대한 추가 징수 [unverified]
+
+*참고: 손실부담순서 각 계층의 구체적 금액은 집필 시점에 공개 자료에서 확인되지 않았다.*
+
+### 3.6 회복 및 정리 (Recovery & Resolution)
+
+- **회복계획 (Recovery Plan):** 2021년 FINMA 최초 승인 (일정 조건 부가)
+- **정리전략 (Resolution Strategy):** FINMA의 SIX x-clear 정리전략은 시스템적으로 중요한 기능을 최대 6개월간 일시적으로 지속하여 질서 있는 업무 종료를 가능하게 하는 것을 목표로 한다
+- **시스템적으로 중요한 FMI:** SIX x-clear는 FINMA/SNB에 의해 시스템적으로 중요한 금융시장인프라로 지정되어 있다
+- **법적 근거:** 스위스 금융시장인프라법(FMIA) 및 스위스 은행법이 회복 및 정리의 법적 틀을 제공한다
+
+[Source: FINMA -- Focus on Financial Market Infrastructures, https://www.finma.ch/en/enforcement/recovery-und-resolution-n/publikationen/resolution-report/archive/resolution-report/focus-on-financial-market-infrastructures/]
+
+---
+
+## 4. 결제 (Settlement)
+
+### 4.1 결제주기 (Settlement Cycle)
+
+- **스위스 시장:** SIX Swiss Exchange에서 거래되는 주식 및 채권의 표준 결제주기는 T+2이다
+- **유럽 시장:** EU CSDR 요건에 따라 유럽 거래소 거래에 대해 T+2 적용
+- **T+1 전환:** EU와 영국은 T+1로의 전환을 계획 중이며, 스위스도 이에 따를 것으로 예상되나 구체적 일정은 논의 중이다 [unverified]
+
+### 4.2 DVP 모델 (DVP Model)
+
+- SIX x-clear는 자체적으로 결제 시스템을 운영하지 않으며, 결제는 해당 CSD를 통해 이루어진다
+- **스위스 시장 결제:** SIX SIS (스위스 CSD)를 통해 DVP Model 1 (증권과 대금의 총액 동시 최종 이전) 방식으로 결제
+- **유럽 시장:** 거래소에 따라 해당 국내 CSD 또는 국제예탁기관(ICSD)을 통해 결제 (예: LSE의 경우 CREST, Euronext의 경우 Euroclear 등)
+- SIX x-clear의 차감된 채무(netted obligations)는 최종 결제를 위해 해당 CSD로 전달된다
+
+[Source: SIX Group -- Clearing & Settlement Provisions, https://www.six-group.com/en/products-services/the-swiss-stock-exchange/trading/trading-provisions/clearing-and-settlement.html]
+
+---
+
+## 5. 기술 및 인프라 (Technology & Infrastructure)
+
+- **SECOM 플랫폼:** 리스크 관리, 증거금 산출, 거래 청산을 처리하는 핵심 청산 및 결제 애플리케이션
+- **연결성 (Connectivity):** SIX x-clear는 표준화된 인터페이스를 통해 다수의 유럽 거래소 및 CSD와 연결된다
+- **SIX Digital Exchange (SDX):** SIX Group은 규제를 받는 디지털 자산 거래소 및 CSD를 운영하며, 향후 x-clear 청산 서비스와의 통합 가능성이 있다 [unverified]
+
+---
+
+## 6. 규제 체계 (Regulatory Framework)
+
+| 항목 | 내용 |
+|------|------|
+| 주요 법률 | 스위스 금융시장인프라법 (FMIA, FinfraG) |
+| 주요 감독기관 | FINMA (스위스 금융시장감독청) |
+| 감시기관 | SNB (스위스 국립은행) -- 시스템적으로 중요한 서비스 대상 |
+| CCP 인가 | FMIA에 따른 CCP 인가, 2018년 3월 28일 |
+| EU 지위 | 유럽시장인프라규정(EMIR)에 따른 제3국 CCP 인정 |
+| 영국 지위 | UK EMIR에 따른 제3국 CCP 인정 |
+| PFMI 준수 | CPMI-IOSCO 자체평가 및 PQD 발행 |
+| 시스템적 중요성 | 스위스에서 시스템적으로 중요한 FMI로 지정 |
+
+**스위스-EU 동등성 맥락:** 스위스는 EU/EEA 회원국이 아니다. SIX x-clear의 EU 인정은 스위스 규제에 대한 유럽위원회의 동등성 결정에 의존한다. 이는 광범위한 스위스-EU 관계를 고려할 때 정치적으로 민감한 사안이다. BME Clearing(EU CCP 인가 보유)과의 계획된 통합은 부분적으로 EU 시장에 대한 직접 접근을 확보하기 위한 동기에서 비롯된다.
+
+[Source: SIX Group -- FINMA Recognition, https://www.six-group.com/en/newsroom/archive/2018/20180406-SIXxclear.html]
+
+---
+
+## 7. 상호운용성 (Interoperability)
+
+SIX x-clear는 유럽 CCP 상호운용성의 선구자이자 선도자이다:
+
+### 활성 상호운용 링크 (Active Interoperability Links)
+
+| 상대방 CCP | 대상 시장 | 개시 시기 |
+|-----------|----------|----------|
+| LCH Ltd | London Stock Exchange 등 | 2008 |
+| Cboe Clear Europe (구 EuroCCP) | Cboe Europe | 다양한 시기 |
+
+### 상호운용 모델 (Interoperability Model)
+
+- **청산 선택권 (Clearing Choice):** 상호운용 거래소의 참가자는 자신의 거래를 어느 CCP가 청산할지 선택할 수 있어, CCP 간 경쟁을 가능하게 한다
+- **CCP 간 리스크 관리 (Cross-CCP Risk Management):** 상호운용 CCP들은 CCP 간 익스포저를 커버하기 위해 양자간 증거금 체계를 유지한다
+- **커버리지:** 2018년까지 상호운용성은 유럽 주식 거래의 약 70%를 커버하였으며, 추가 25%도 청산 선택권을 확보할 것으로 예상되었다
+- **검증된 회복력:** LCH/x-clear 상호운용 링크는 2008년 Lehman Brothers 파산 시 문제 없이 작동하여, 이후 상호운용 체계의 모범 사례가 되었다
+
+### 계획된 통합 (Planned Integration, 2025-2026)
+
+- SIX는 2025년 12월 SIX x-clear(스위스)와 BME Clearing(스페인)을 **SIX Clearing**이라는 단일 법인으로 통합한다고 발표하였다
+- 마드리드에 본사를 두며, 취리히 및 오슬로에 사무소를 유지한다
+- BME Clearing의 EU 인가를 활용하여 ECB EUR 유동성, T2, T2S 접근 및 EU 규제 시장 연결을 확보한다
+- 통합 법인은 28개 거래소 및 18개 시장에 걸쳐 5개 자산군을 서비스할 예정이다
+- 규제 승인 대상이며, 2026년은 고객 준비에 집중한다
+
+[Source: SIX Group -- Integration Announcement, https://www.six-group.com/en/newsroom/media-releases/2025/20251204-six-clearing.html]
+[Source: ESRB -- CCP Interoperability Arrangements, https://www.esrb.europa.eu/pub/pdf/reports/esrb.report190131_CCP_interoperability_arrangements~99908a78e7.en.pdf]
+
+---
+
+## 9. 최근 동향 (Recent Developments)
+
+| 일자 | 내용 |
+|------|------|
+| 2025년 12월 | SIX, SIX x-clear와 BME Clearing을 "SIX Clearing"으로 통합 발표 -- 마드리드 본사의 단일 국제 다중자산 CCP |
+| 2025 | SIX x-clear, 유럽 현물주식 거래소 전반으로 상호운용 청산 지속 확대 |
+| 2025 | SIX 포스트트레이드 실적이 금리 하락의 역풍에 직면, 전략적 통합의 동기 부여 |
+| 2026 (예정) | SIX Clearing 통합을 위한 고객 준비 및 이관 계획 |
+| 미정 | SIX x-clear / BME Clearing 통합에 대한 규제 승인 진행 중 |
+
+### 전략적 전망 (Strategic Outlook)
+
+SIX Clearing의 출범은 중요한 전략적 움직임이다:
+- SIX x-clear의 상호운용 범유럽 현물주식 CCP 모델과 BME Clearing의 다중자산 역량(주식, 채권, 파생상품, 에너지, 레포)을 결합한다
+- BME Clearing의 기존 EU CCP 인가를 통해 직접적인 EU 시장 접근을 제공한다
+- 통합 법인을 기존 유럽 CCP(Eurex Clearing, LCH)의 대안으로 자리매김한다
+- 스위스-EU 동등성 관련 규제 불확실성을 해소한다
+
+[Source: Finance Magnates -- SIX Pan-European Clearing, https://www.financemagnates.com/institutional-forex/exchanges/six-pushes-for-pan-european-clearing-crown-as-post-trade-results-face-rate-headwinds/]
+[Source: Markets Media -- SIX Integrates CCPs, https://www.marketsmedia.com/six-integrates-ccps-to-position-for-growth/]
+
+---
+
+## 출처 (Sources)
+
+- [SIX Group -- Clearing Services](https://www.six-group.com/en/products-services/securities-services/clearing.html)
+- [SIX Group -- 20 Years of Clearing](https://www.six-group.com/en/newsroom/news/securities-services/2023/20-years-clearing-anniversary.html)
+- [SIX Group -- Interoperability History](https://www.six-group.com/en/newsroom/news/securities-services/2023/interoperability-20-years-clearing-anniversary.html)
+- [SIX Group -- SIX x-clear/BME Clearing Integration (Dec 2025)](https://www.six-group.com/en/newsroom/media-releases/2025/20251204-six-clearing.html)
+- [SIX Group -- FINMA CCP Recognition (2018)](https://www.six-group.com/en/newsroom/archive/2018/20180406-SIXxclear.html)
+- [SIX x-clear -- CPMI-IOSCO Disclosure](https://www.six-group.com/dam/download/securities-services/clearing/regulatory/consultation-responses/six-x-clear-iosco-en.pdf)
+- [SIX Group -- Clearing & Settlement Provisions](https://www.six-group.com/en/products-services/the-swiss-stock-exchange/trading/trading-provisions/clearing-and-settlement.html)
+- [FINMA -- Focus on Financial Market Infrastructures](https://www.finma.ch/en/enforcement/recovery-und-resolution-n/publikationen/resolution-report/archive/resolution-report/focus-on-financial-market-infrastructures/)
+- [ESRB -- CCP Interoperability Arrangements (2019)](https://www.esrb.europa.eu/pub/pdf/reports/esrb.report190131_CCP_interoperability_arrangements~99908a78e7.en.pdf)
+- [Finance Magnates -- SIX Pan-European Clearing](https://www.financemagnates.com/institutional-forex/exchanges/six-pushes-for-pan-european-clearing-crown-as-post-trade-results-face-rate-headwinds/)
+- [IMF -- Switzerland FSAP 2019](https://www.imf.org/-/media/Files/Publications/CR/2019/1CHEEA2019010.ashx)

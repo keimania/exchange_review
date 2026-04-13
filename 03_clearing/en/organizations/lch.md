@@ -1,0 +1,703 @@
+# LCH (LCH Limited & LCH SA)
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 1 (Deep Dive)
+> **Type:** CCP (Central Counterparty)
+
+---
+
+## 1. Overview & Profile
+
+### 1.1 LCH Group
+
+| Item | Details |
+|------|---------|
+| Official Name | LCH Group Holdings Limited |
+| Operating Entities | LCH Limited (London); LCH SA (Paris) |
+| Website | [https://www.lch.com](https://www.lch.com) |
+| Year Established | 1888 (as London Produce Clearing House); 2003 (as LCH.Clearnet following merger) |
+| Ownership Structure | London Stock Exchange Group (LSEG) holds 82.61% of LCH Group Holdings Limited ([Wikipedia](https://en.wikipedia.org/wiki/LCH_(clearing_house))) |
+| Other Operating Entity | SwapAgent Ltd (UK) |
+| CPMI-IOSCO PFMI Compliance | Yes -- both LCH Ltd and LCH SA publish CPMI-IOSCO self-assessments and PQD disclosures ([LSEG CCP Disclosures](https://www.lseg.com/en/post-trade/clearing/clearing-resources/ccp-disclosures)) |
+
+### 1.2 LCH Limited (LCH Ltd)
+
+| Item | Details |
+|------|---------|
+| Official Name | LCH Limited |
+| Abbreviation | LCH Ltd |
+| Country / City | United Kingdom / London |
+| Regulatory Authority | Bank of England (primary supervisor); also registered as DCO with US CFTC; recognised by ESMA as third-country CCP (Tier 2) under EU EMIR |
+| QCCP Status | Yes -- recognised as QCCP in multiple jurisdictions including EU, US, Switzerland (FINMA), Hong Kong, Singapore, Japan, Canada, Australia ([LSEG Company Structure](https://www.lseg.com/en/post-trade/clearing/about-lch/structure-and-governance/company-structure); [LSEG QCCP Document](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/structure-and-governance/lch-qccp-status-dec-22-clean-latest-0.pdf)) |
+| Clearing Services | SwapClear, ForexClear, RepoClear (Ltd), EquityClear (Ltd), Listed Rates (Listed Derivatives) |
+
+### 1.3 LCH SA
+
+| Item | Details |
+|------|---------|
+| Official Name | Banque Centrale de Compensation SA, operating as LCH SA |
+| Abbreviation | LCH SA |
+| Country / City | France / Paris |
+| Regulatory Authority | ACPR (Autorite de Controle Prudentiel et de Resolution), Banque de France, AMF (Autorite des Marches Financiers); indirectly supervised by the ECB ([LCH SA CPMI-IOSCO Self-Assessment 2024](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/lch-sa-cpmi-iosco-self-qualitative-assessment-q1-2025.pdf)) |
+| QCCP Status | Yes -- authorised as CCP under EU EMIR; registered as DCO with US CFTC (for CDSClear) and as clearing agency with US SEC |
+| Clearing Services | CDSClear, RepoClear SA, DigitalAssetClear (launched 2024, replacing former EquityClear SA and CommodityClear SA) |
+
+### 1.4 Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 1888 | London Produce Clearing House (LPCH) established for commodity futures clearing ([LCH History](https://www.lch.com/about-us/our-history)) |
+| 1969 | Banque Centrale de Compensation SA founded in Paris for commodity market clearing |
+| 1971 | LPCH renamed International Commodities Clearing House (ICCH) |
+| 1988 | Business acquired by consortium of six banks |
+| 1992 | Renamed London Clearing House Ltd |
+| 1996 | Majority ownership transferred to clearing membership |
+| 1998 | RepoClear launched for repo and bond clearing |
+| 1999 | SwapClear launched -- first OTC interest rate swap CCP; Clearnet SA brand adopted in Paris |
+| 2001 | Clearnet merges with Euronext clearing houses |
+| 2003 | LCH.Clearnet Group formed via merger of London Clearing House and Clearnet SA (ownership: Members 45.1%, Exchanges 45.1%, Euroclear 9.8%) |
+| 2008 | Successfully managed Lehman Brothers default -- $9 trillion OTC IRS portfolio of 66,390 trades, using only 35% of Lehman's initial margin ([LCH SwapClear Risk Management](https://www.lseg.com/en/post-trade/clearing/lch-services/swapclear/risk-management)) |
+| 2009 | CDSClear launched; US operations opened |
+| 2012 | LSE acquired 60% stake for EUR 813 million |
+| 2013 | LSEG gained majority control (54%) |
+| 2016 | Dropped "Clearnet" from branding; became simply "LCH" |
+| 2023 | LCH Group acquired Euronext's 11.1% stake in LCH SA for EUR 111 million, taking full ownership ([LSEG Press Release](https://www.lseg.com/en/media-centre/press-releases/2023/lch-group-to-acquire-euronexts-stake-in-lch-sa)) |
+| 2023 (Nov) | Euronext cash market clearing migrated from LCH SA to Euronext Clearing |
+| 2024 (Jul) | Euronext commodity derivatives migrated from LCH SA |
+| 2024 (Sep) | Euronext financial derivatives completed migration from LCH SA to Euronext Clearing; LCH SA closed EquityClear and CommodityClear services ([Euronext Press Release](https://www.euronext.com/en/about/media/euronext-press-releases/successful-expansion-euronext-clearing-all-euronext-financial)) |
+| 2024 (Sep) | FMX Futures Exchange launched with LCH Ltd clearing SOFR futures |
+| 2024 | LCH SA launched DigitalAssetClear service (partnership with GFO-X for digital asset derivatives) |
+
+---
+
+## 2. Clearing Model
+
+### 2.1 CCP Services
+
+#### LCH Ltd Services
+
+| Service | Product Class | Description | Key Statistics (2024) |
+|---------|--------------|-------------|----------------------|
+| **SwapClear** | OTC Interest Rate Derivatives | World's largest OTC IRS clearing service; 28 currencies, tenors up to 51 years in USD/GBP/EUR | $779 trillion notional cleared in H1 2024 (up 15% YoY); ~$240 billion initial margin held (Q4 2024); 99.4% market share in EMEA IRS ([Clarus FT](https://www.clarusft.com/2024-ccp-volumes-and-share-in-ird/); [Clarus Q4 2024](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)) |
+| **ForexClear** | OTC FX Derivatives | NDF, FX options, FX forwards clearing | $10.7 billion IM at end Q2 2024 (up 32%); 25+ NDF currencies; 92 clients; ~30 clearing members ([LCH ForexClear Factsheet](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/fact-sheets/lch-forexclear-factsheet-a-global-leader.pdf)) |
+| **RepoClear (Ltd)** | Fixed Income / Repos | Cash bond and repo clearing for UK gilts and other markets | Covers multiple European government debt markets |
+| **EquityClear (Ltd)** | Cash Equities | Equity clearing for LSE, SIX Swiss Exchange, Cboe Europe, Aquis | Interoperable with SIX x-clear and Cboe Clear Europe |
+| **Listed Rates** | Listed Interest Rate Derivatives | Futures and options on interest rates (including FMX SOFR futures) | 6 clearing members, 8 clients at end 2024; $3.6 billion gross notional outstanding ([Clarus Q4 2024](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)) |
+
+#### LCH SA Services
+
+| Service | Product Class | Description | Key Statistics (2024) |
+|---------|--------------|-------------|----------------------|
+| **CDSClear** | OTC Credit Derivatives | CDS indices and single names clearing | 28 members (2024); EUR 5,437 billion total notional cleared (up 9% YoY); EUR 426 billion client notional in H1 2024 (up 88%); $10.2 billion IM (Q4 2024) ([Risk.net](https://www.risk.net/awards/7960370/clearing-house-of-the-year-lch); [Clarus Q4 2024](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)) |
+| **RepoClear SA** | Fixed Income / Repos | Euro-denominated government bond repo clearing for French, German, Belgian, Dutch, and other eurozone sovereign debt | EUR 1.9 billion gross notional unsettled cash bonds (Q4 2024) |
+| **DigitalAssetClear** | Digital Asset Derivatives | Bitcoin index futures and options (partnership with GFO-X); launched 2024 replacing former EquityClear SA/CommodityClear SA | New service -- early stage |
+
+> **Note:** LCH SA's EquityClear and CommodityClear services were wound down in 2024 following the full migration of Euronext clearing to Euronext Clearing (CC&G-based). Euronext paid a termination fee of approximately EUR 36 million to LCH SA. ([Euronext](https://www.euronext.com/en/about/media/euronext-press-releases/successful-expansion-euronext-clearing-all-euronext-financial); [Finadium](https://finadium.com/euronext-completes-lch-sa-migration-and-borsa-italiana-integration/))
+
+### 2.2 Novation Process
+
+- **Novation by open offer:** For exchange-traded products and interoperable clearing, LCH becomes the buyer to every seller and seller to every buyer at the point of trade registration.
+- **Novation for OTC derivatives:** Upon trade registration/acceptance, the original bilateral contract is extinguished and replaced by two new contracts -- one between the CCP and each original counterparty.
+- **SwapClear real-time trade registration:** Trades are novated within approximately 10 seconds of submission, supported by a dedicated GBP 600 million real-time trade registration (RTTR) default fund component. ([RBA Assessment 2020](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html))
+
+### 2.3 Netting & Compression
+
+**Multilateral Netting:**
+- LCH performs multilateral netting across all cleared positions, reducing gross bilateral exposures to a single net exposure to the CCP per clearing member.
+- RepoClear provides netting for cash bond and repo transactions, significantly reducing settlement obligations.
+
+**Portfolio Compression (SwapClear):**
+- Compression reduces the number of line items and gross notional outstanding by combining or offsetting trades with compatible economics.
+- Eligible products for compression: IRS, OIS, FRAs, basis swaps, zero-coupon inflation swaps.
+- Techniques include blended rate compression and future cash flow netting.
+- In 2015 alone, SwapClear compressed $323 trillion in trades with $107 trillion net notional reduction. ([LCH Compression](https://www.lch.com/services/swapclear/enhancements/compression))
+- LCH's SwapClear has compressed more than $1 quadrillion of cleared notional cumulatively. ([LeapRate](https://www.leaprate.com/news/lchs-swapclear-compresses-more-than-1-quadrillion-of-cleared-notional/))
+- Multilateral compression (via OSTTRA triReduce) generated approximately USD 1 trillion of additional gross notional reduction in a single month (September 2022). ([OSTTRA](https://osttra.com/articles/trade-refactoring-unlocks-additional-compression-benefits/))
+
+### 2.4 Clearing Membership
+
+#### LCH Ltd Membership
+
+| Category | Requirements | Application Fee |
+|----------|-------------|-----------------|
+| Clearing Member | Minimum net capital per Procedures Section 1 of Rulebook; appropriate banking arrangements; experienced personnel; adequate systems and infrastructure; KYC/AML compliance; signed Clearing Membership Agreement | GBP 10,000 (+VAT for UK applicants) |
+
+**Default Fund Minimum Contributions by Service (LCH Ltd):**
+
+| Service | Minimum Contribution |
+|---------|---------------------|
+| SwapClear | GBP 10 million + GBP 4 million tolerance contribution |
+| RepoClear (Ltd) | GBP 2 million |
+| ForexClear | USD 5 million |
+| EquityClear (Ltd) | GBP 500,000 |
+| Listed Interest Rates | Greater of stress-loss calculation or GBP 2 million per member; overall fund minimum GBP 10 million |
+
+Source: [LCH Ltd Membership](https://www.lseg.com/en/post-trade/clearing/membership/ltd-membership)
+
+**Operational Requirements:**
+- At least two personnel fully conversant with clearing procedures
+- UK & US PPS (Protected Payments System) mandate and contingency arrangements
+- Annual KYC/AML updates
+- Approval timeline: approximately 8 weeks after complete submission
+
+#### LCH SA Membership (CDSClear)
+
+| Category | Key Requirements |
+|----------|-----------------|
+| CDSClear General Clearing Member | EUR 10 million minimum default fund contribution (cash only); annual membership fee EUR 400,000 |
+| CDSClear Select Member | Variable tariff; first-year fee waiver available |
+
+Source: [LCH SA Fees](https://www.lseg.com/en/post-trade/clearing/membership/sa-membership/sa-fees)
+
+**Approximate Number of Clearing Members (2024):**
+
+| Service | Members |
+|---------|---------|
+| SwapClear (Ltd) | ~120 [unverified -- based on historical data] |
+| ForexClear (Ltd) | ~30 direct members; 92 clients |
+| RepoClear (Ltd) | ~20 [unverified] |
+| EquityClear (Ltd) | ~15 [unverified] |
+| Listed Rates (Ltd) | 6 members, 8 clients |
+| CDSClear (SA) | 28 members (20 GCMs, up from 25 in 2023) |
+| RepoClear SA | ~20 [unverified] |
+| SwapAgent | 36 members (up from 29 in 2023) |
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework
+
+#### PAIRS Methodology (Portfolio Approach to Interest Rate Scenarios)
+
+PAIRS is LCH's proprietary margin methodology used for SwapClear, ForexClear, and Listed Rates services. ([LCH Ltd Margin Methodology](https://www.lseg.com/en/post-trade/clearing/risk-management/ltd-risk-management/ltd-margin-methodology))
+
+| Parameter | Specification |
+|-----------|--------------|
+| Model Type | Expected Shortfall (ES) model based on filtered historical simulation incorporating volatility scaling |
+| Confidence Level | 99.7% (equivalent to ~2.75 standard deviations) |
+| Holding Period (Members) | 5-day close-out period |
+| Holding Period (Clients) | 7-day close-out period (5 days + 2 additional days for portfolio transfer) |
+| Lookback Period | 10 years of historical market data with volatility-scaled movements in yield curves and exchange rates |
+| Floor Calibration | Unscaled historical 10-year lookback plus an additional 2.5-year window covering the Global Financial Crisis (2007-2009) |
+
+Source: [RBA Assessment 2020 Appendix B](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html)
+
+**PAIRS Process:**
+1. Collects 10 years of daily market data (yield curves, FX rates, credit spreads depending on service)
+2. Applies volatility scaling (EWMA-based) to historical returns to reflect current market conditions
+3. Generates a distribution of simulated portfolio P&L changes
+4. Calculates Expected Shortfall at 99.7% confidence over the holding period
+5. Determines initial margin as the expected loss conditional on losses exceeding the 99.7% VaR threshold
+
+**Margin Add-ons:**
+- **Credit Risk Add-on:** Applied where a member's credit exposure is not fully captured in the base PAIRS model
+- **Liquidity Risk Add-on:** Accounts for potential costs of liquidating large or concentrated positions
+- **Concentration Risk Add-on:** For portfolios with disproportionately large positions in specific tenors or currencies
+- **Stress Margin Add-on:** May be applied during periods of elevated market stress
+
+#### CDSClear Margin (LCH SA)
+
+| Parameter | Specification |
+|-----------|--------------|
+| Model Type | Historical simulation with scaled returns; Expected Shortfall methodology |
+| Confidence Level | 99.7% |
+| Holding Period | 5 days |
+| Lookback Period | From April 2007 (includes GFC period) |
+
+Source: [LCH CDSClear Risk Management](https://www.lseg.com/en/post-trade/clearing/lch-services/cdsclear/risk-management)
+
+#### Initial Margin Held (Q4 2024 CPMI-IOSCO PQD Data)
+
+| Service | Initial Margin Held |
+|---------|-------------------|
+| SwapClear (Ltd) | ~$240 billion (GBP 192 billion) |
+| CDSClear (SA) | ~$10.2 billion (EUR 9.8 billion) |
+| ForexClear (Ltd) | ~$10.7 billion (Q2 2024 record) |
+| Listed Rates (Ltd) | ~$3 million (newly launched) |
+
+Source: [Clarus FT Q4 2024](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)
+
+### 3.2 Margin Call Schedule
+
+| Call Type | Timing | Details |
+|-----------|--------|---------|
+| End-of-Day (EOD) | End of each business day | Full recalculation of initial and variation margin for all positions |
+| Intraday Margin Call | Throughout the business day | Triggered when a member's combined margin liability exceeds a predetermined participant-specific credit threshold |
+| Ad-hoc / Extraordinary | As needed | LCH may issue additional margin calls during periods of extreme market stress or significant position changes |
+
+Source: [RBA Assessment 2020](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html)
+
+- **Variation Margin:** Collected daily and intraday in cash to reflect mark-to-market changes in positions
+- **SwapClear:** Variation margin is exchanged daily; intraday monitoring with automated calls
+
+### 3.3 Default Waterfall
+
+#### LCH Ltd Default Waterfall
+
+The default waterfall is operated on a per-service basis. Each clearing service has its own segregated default fund. The layers are consumed sequentially:
+
+| Layer | Description | Approximate Size |
+|-------|-------------|-----------------|
+| 1 | **Defaulter's Initial Margin** | Varies by member (total across all SwapClear: ~GBP 192 billion) |
+| 2 | **Defaulter's Default Fund Contribution** | Varies by member (min GBP 10m for SwapClear) |
+| 3 | **LCH's Skin-in-the-Game (SITG)** | 25% of LCH's minimum regulatory capital requirement; approximately GBP 35 million [unverified -- based on Clarus FT estimate] |
+| 4 | **Non-Defaulting Members' Default Fund Contributions** | SwapClear: up to GBP 5.4 billion (core component, sized to Cover 2 standard); RepoClear Ltd and ForexClear: separate funds |
+| 5 | **RTTR Default Fund Component** | GBP 600 million (for real-time trade registration risk) |
+| 6 | **Assessment Powers (Unfunded)** | Up to the equivalent of each non-defaulting member's last default fund contribution per default; maximum 3 defaults in any 6-month period |
+| 7 | **LCH Additional Capital / Recovery Tools** | Additional CCP resources; VMGH and tear-up as final resort |
+
+**SwapClear Default Fund Sizing:**
+- Core component capped at GBP 5.4 billion (as of 2020 assessment; cap raised from GBP 5 billion in September 2019)
+- RTTR component: GBP 600 million
+- Total Rates Service Default Fund cap: approximately GBP 6 billion
+- Sized to **Cover 2 standard**: able to withstand the simultaneous default of the two clearing participants (including affiliates and clients) with the largest exposures under extreme but plausible stress scenarios
+- Resized monthly on the first business day of each month, using the largest two participant stress test losses over initial margin (STLOIM) over a 60-day lookback period, plus a buffer
+
+Source: [RBA Assessment 2020](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html); [Clarus FT](https://www.clarusft.com/swap-default-funds-at-the-cme-lch/)
+
+**Default Fund Contribution Methodology (SwapClear):**
+- ~90% based on potential residual loss (stress test loss over initial margin)
+- ~10% based on gross notional swap positions
+- Recalculated monthly
+
+#### LCH SA Default Waterfall
+
+LCH SA operates separate default funds for each clearing service (CDSClear, RepoClear SA, DigitalAssetClear).
+
+| Layer | Description | Approximate Size |
+|-------|-------------|-----------------|
+| 1 | **Defaulter's Initial Margin** | Varies by member |
+| 2 | **Defaulter's Default Fund Contribution** | Minimum EUR 10 million for CDSClear |
+| 3 | **LCH SA's First Skin-in-the-Game (SITG)** | EUR 20 million (per service) |
+| 4 | **Non-Defaulting Members' Default Fund Contributions** | CDSClear: ~EUR 2.77 billion (Q2 2023 record, up 37.6%); EquityClear: ~EUR 4.24 billion (Q2 2023, before closure) |
+| 5 | **LCH SA's Second SITG (Variable Contribution)** | Additional CCP capital layer |
+| 6 | **Assessment Powers / Loss Attribution** | Pro-rata allocation among non-defaulting members |
+| 7 | **Recovery Tools** | VMGH, partial tear-up |
+
+Source: [Risk.net](https://www.risk.net/risk-quantum/7957808/lch-sas-default-funds-hit-record-highs); [LCH SA Default Waterfall PDF](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-sa-default-waterfall.pdf)
+
+> **Note:** LCH SA's own SITG contributions account for less than 1% of total default fund resources across its three clearing services. ([Risk.net](https://www.risk.net/risk-quantum/7957808/lch-sas-default-funds-hit-record-highs))
+
+### 3.4 Stress Testing & Back-testing
+
+| Item | Details |
+|------|---------|
+| Stress Testing Standard | **Cover 2** -- default fund sized to cover simultaneous default of two largest clearing participants (including affiliates and clients) under extreme but plausible conditions |
+| Stress Scenarios | Historical scenarios (including GFC, European sovereign debt crisis, COVID-19); hypothetical scenarios (interest rate shocks, credit spread moves, FX dislocations); reverse stress tests |
+| Back-testing Frequency | **Daily and monthly** back-testing of margin model performance |
+| Sensitivity Analysis | Monthly sensitivity analysis |
+| Model Validation | Annual independent model validation reviews |
+| Reporting | Results reported to Risk Committee and Board; shared with regulators |
+
+Source: [RBA Assessment 2020](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html)
+
+### 3.5 Default Management Process
+
+LCH's default management process follows three stages:
+
+1. **Risk Neutralization & Client Porting:** Immediate hedging of the defaulting member's portfolio to contain market risk; attempt to transfer (port) client positions and collateral to non-defaulting clearing members
+2. **Portfolio Auction:** The defaulting member's portfolio is divided by product and currency, then auctioned to surviving clearing members via a structured auction process
+3. **Loss Attribution:** Losses from variation margin/hedging costs allocated pro-rata; auction losses allocated based on bidding outcomes
+
+**Proven Track Record:**
+- **Lehman Brothers (2008):** LCH managed the default of Lehman Brothers' $9 trillion IRS portfolio (66,390 trades) using only 35% of Lehman's posted initial margin. No losses were imposed on non-defaulting members or the default fund. ([LCH SwapClear Risk Management](https://www.lseg.com/en/post-trade/clearing/lch-services/swapclear/risk-management))
+
+### 3.6 Recovery & Resolution
+
+#### Recovery Tools (LCH Ltd)
+
+| Tool | Description |
+|------|-------------|
+| **Variation Margin Gains Haircutting (VMGH)** | LCH may apply pro-rata haircuts to variation margin payments owed to non-defaulting participants whose positions have gained in value |
+| **Assessment Powers (Cash Calls)** | Unfunded contributions from non-defaulting members, up to the value of their last default fund contribution per default; maximum 3 defaults in any 6-month period |
+| **Partial Tear-up** | Termination of specific contracts to restore a matched book; used as a last resort |
+| **Full Tear-up** | In extreme circumstances, termination of all open contracts in the affected service |
+| **Reduced Gains Distribution (RGD)** | Haircuts on gains to reduce outflows |
+
+#### Resolution Framework
+
+| Item | Details |
+|------|---------|
+| LCH Ltd Resolution Authority | **Bank of England** -- has statutory powers under UK legislation for CCP resolution including cash calls, VMGH, tear-up, and transfer of critical functions ([Bank of England](https://www.bankofengland.co.uk/prudential-regulation/publication/2013/supervisory-tools-recovery-and-resolution-plans)) |
+| LCH SA Resolution Authority | **ACPR** (Autorite de Controle Prudentiel et de Resolution) under the EU CCP Recovery and Resolution Regulation (EU CCPRR) |
+| FSB Compliance | Both entities comply with FSB Key Attributes for resolution of financial market infrastructures |
+| Resolution Plan Status | Both LCH Ltd and LCH SA maintain resolution plans reviewed by respective resolution authorities |
+
+Source: [FSB 2024 Resolution Report](https://www.fsb.org/uploads/P051224.pdf); [LCH Response to FSB](https://www.fsb.org/uploads/LCH.pdf)
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle by Product
+
+| Product / Service | Settlement Cycle | Entity |
+|-------------------|-----------------|--------|
+| SwapClear (OTC IRS) | Variation margin: daily cash settlement (T+0); Initial margin: T+0/T+1 | LCH Ltd |
+| ForexClear (OTC FX) | Variation margin: daily; Physical settlement per CLS/standard FX conventions | LCH Ltd |
+| RepoClear (Ltd) | T+0 to T+2 depending on instrument; standard repo settlement via CSD | LCH Ltd |
+| EquityClear (Ltd) | T+2 (UK standard; T+1 under review) | LCH Ltd |
+| CDSClear | Variation margin: daily cash; Event settlement per ISDA protocols | LCH SA |
+| RepoClear SA | T+0 to T+2; standard repo settlement | LCH SA |
+
+### 4.2 DVP Model
+
+| Entity / Service | DVP Model | Details |
+|-----------------|-----------|---------|
+| RepoClear (Ltd & SA) | BIS DVP Model 1 (Gross-gross) / Model 3 (Net-net) | Depends on CSD and settlement arrangement; gross delivery of securities against net cash in some configurations |
+| EquityClear (Ltd) | BIS DVP Model 3 (Net-net) | Multilateral net settlement of both securities and cash |
+| SwapClear | N/A (cash-settled) | No securities delivery; margin and VM settled in cash |
+| CDSClear | N/A (cash-settled) | Cash settlement of margin; physical settlement for credit events per ISDA protocols |
+
+### 4.3 Settlement Finality
+
+**LCH Ltd:**
+- **Legal Basis:** UK Financial Markets and Insolvency (Settlement Finality) Regulations 1999 (SI 1999/2979), as amended post-Brexit. LCH Ltd is designated as a "designated system" by the Bank of England. ([Settlement Finality Regulations](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/rulebooks/lch-ltd/settlement-finality-regulations.pdf))
+- **Point of Finality:** Transfer orders entered into the system become irrevocable and cannot be unwound in the event of a participant's insolvency proceedings.
+- **Protection:** The SF Regulations protect transfer orders and related collateral security from being invalidated by insolvency proceedings.
+
+**LCH SA:**
+- **Legal Basis:** EU Settlement Finality Directive (Directive 98/26/EC) as transposed into French law; LCH SA is a designated system under French implementation.
+- **Point of Finality:** Upon entry into the system as defined by LCH SA's rules; protected from insolvency proceedings of participants.
+
+### 4.4 CSD / Settlement Infrastructure
+
+**Cash Settlement:**
+- **LCH Ltd:** Primarily commercial bank money via the Protected Payments System (PPS) using settlement banks; Bank of England reserves for GBP settlement where applicable
+- **LCH SA:** Central bank money via Banque de France (TARGET system) for euro-denominated settlements; commercial bank money where applicable
+
+**Securities Settlement:**
+- Settlement through relevant CSDs depending on the market and asset class
+
+### 4.5 CSD Linkages
+
+| Entity | CSD Partner | Products / Markets |
+|--------|------------|-------------------|
+| LCH Ltd | CREST (Euroclear UK & International) | UK equities, gilts |
+| LCH Ltd | SIX SIS | Swiss equities (via EquityClear interop) |
+| LCH SA | Euroclear France / ESES | French government bonds, repos |
+| LCH SA | Euroclear Bank | Multi-market settlement, international bonds |
+| LCH SA | Clearstream Banking Luxembourg | German government bonds, European sovereign debt |
+| RepoClear Ltd | Euroclear, Clearstream | European government bond settlement |
+| RepoClear SA | Euroclear France, Clearstream | Euro sovereign repo settlement |
+
+Source: [Euroclear RepoClear Settlement](https://www.euroclear.com/services/en/settlement/repoclear.html); [LeapRate on Clearstream](https://www.leaprate.com/forex/institutional/lch-repoclear-expands-dutch-debt-settlement-through-clearstream/)
+
+### 4.6 Securities Lending & Borrowing
+
+- LCH does not directly operate a securities lending facility.
+- Members may use external securities lending programs to source collateral for margin obligations.
+- LCH accepts a wide range of non-cash collateral (government bonds, covered bonds, etc.) which facilitates collateral optimization by members.
+- In 2024, HSBC and BNP Paribas were added as custodial banks for non-cash collateral, and eligible collateral expanded to include Danish covered bonds and Chinese government bonds (planned for 2025). ([Risk.net](https://www.risk.net/awards/7960370/clearing-house-of-the-year-lch))
+
+---
+
+## 5. Technology & Infrastructure
+
+### 5.1 Core Systems
+
+| Item | Details |
+|------|---------|
+| Core Clearing Platform | **Millennium Clearing & Risk (MCCP)** -- developed by LSEG Technology; implemented for EquityClear and progressively rolled out to other services ([FinTech Futures](https://www.fintechfutures.com/fintech-innovation/lch-implements-clearing-and-settlement-solution-from-lseg-technology); [Finance Magnates](https://www.financemagnates.com/trading-room/industry-news/lch-equityclear-goes-live-with-new-lseg-technology-post-trade-platform/)) |
+| Architecture | Zero-touch straight-through processing (STP); parallel real-time processing using hardware acceleration; real-time margin calculations |
+| Processing Capacity | High throughput, low latency design; SwapClear processes novation within ~10 seconds |
+| STP Rate | Near 100% for standard products [unverified -- LCH targets full STP] |
+
+### 5.2 Interface Protocols
+
+| Protocol | Use Case |
+|----------|----------|
+| SWIFT (FIN / ISO 15022) | Collateral management, settlement instructions, payment messaging |
+| ISO 20022 | Collateral management (LCH was an early adopter of ISO 20022 for collateral) ([SWIFT](https://www.swift.com/swift-resource/15021/download)) |
+| FIX Protocol | Trade submission for exchange-traded products |
+| Proprietary APIs | Direct connectivity for OTC trade submission (SwapClear, CDSClear, ForexClear) |
+| SFTP | Report delivery to members |
+| Web Portal | Member access to positions, margin reports, risk analytics |
+| MarkitWire / Middleware | Trade affirmation and routing for OTC derivatives |
+
+### 5.3 Margin Calculators & Tools
+
+- **LCH Rates Online Margin Calculator:** Allows members and clients to calculate collateral requirements prior to clearing SwapClear trades. ([LCH Margin Calculator](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-rates-online-margin-calculator.pdf))
+- **CDSClear Margin Simulator:** Available for CDS members to pre-calculate margin requirements.
+
+### 5.4 Resilience & Disaster Recovery
+
+| Item | Details |
+|------|---------|
+| DR Site | Geographically separate disaster recovery site(s) for both LCH Ltd and LCH SA [unverified -- standard for systemically important CCPs] |
+| RTO | Target of 2 hours for critical systems (industry standard for PFMI-compliant CCPs) [unverified] |
+| RPO | Near-zero for critical clearing and settlement data [unverified] |
+| Business Continuity | Comprehensive BCP including pandemic, cyber-incident, and physical disruption scenarios; regular testing with members |
+| Cyber Resilience | Subject to Bank of England CBEST (UK) and ECB/Eurosystem cyber resilience frameworks |
+
+---
+
+## 6. Regulatory Framework
+
+### 6.1 Supervising Authorities
+
+#### LCH Ltd
+
+| Regulator | Role |
+|-----------|------|
+| **Bank of England** | Primary supervisor and resolution authority under UK Financial Services and Markets Act; oversees as systemically important financial market infrastructure |
+| **US CFTC** | Registered as Derivatives Clearing Organization (DCO) for SwapClear and ForexClear |
+| **ESMA** | Recognised as third-country CCP (Tier 2) under EU EMIR Article 25; recognition extended to 30 June 2028 |
+| **FINMA (Switzerland)** | Recognised for Swiss market clearing |
+| **RBA (Australia)** | Overseas CS facility licence for SwapClear |
+| **Other** | Recognised by regulators in Hong Kong (SFC), Singapore (MAS), Japan (JFSA), Canada (OSC, AMF Quebec) |
+
+Source: [LSEG Company Structure](https://www.lseg.com/en/post-trade/clearing/about-lch/structure-and-governance/company-structure); [ESMA Recognition Extension](https://www.esma.europa.eu/press-news/esma-news/esma-extends-tiering-and-recognition-three-uk-based-ccps)
+
+#### LCH SA
+
+| Regulator | Role |
+|-----------|------|
+| **ACPR** | Primary supervisor as credit institution under French Monetary and Financial Code |
+| **Banque de France** | Oversight of payment and settlement systems |
+| **AMF** | Securities markets regulatory oversight |
+| **ECB** | Indirect supervision via Eurosystem oversight framework |
+| **ESMA** | Authorised under EU EMIR (Regulation 648/2012) |
+| **US CFTC** | Registered as DCO for CDSClear |
+| **US SEC** | Registered as clearing agency for CDSClear |
+| **Regulatory College** | Multi-country supervisory college including France, Netherlands, Belgium, Portugal |
+
+Source: [LCH SA CPMI-IOSCO Self-Assessment 2024](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/lch-sa-cpmi-iosco-self-qualitative-assessment-q1-2025.pdf)
+
+### 6.2 Key Regulations
+
+| Regulation | Applicability | Details |
+|-----------|---------------|---------|
+| **UK EMIR** (onshored EU EMIR) | LCH Ltd | UK regulatory framework for CCPs post-Brexit; requires authorisation, ongoing compliance, reporting |
+| **EU EMIR** (Regulation 648/2012) | LCH SA | EU CCP authorisation, clearing obligations, margin requirements |
+| **EU CCP Recovery & Resolution Regulation (CCPRR)** | LCH SA | Recovery planning, resolution tools, loss allocation framework |
+| **UK Financial Services & Markets Act** | LCH Ltd | Broader regulatory framework; Bank of England supervisory powers |
+| **Dodd-Frank Act** | Both (US-registered) | CFTC DCO registration requirements; SEC clearing agency requirements |
+| **UK Settlement Finality Regulations 1999** | LCH Ltd | Settlement finality protection |
+| **EU Settlement Finality Directive** | LCH SA | Settlement finality protection |
+| **Basel III** | Both (indirect) | Bank capital requirements for CCP exposures (KCCP calculations) |
+
+### 6.3 PFMI Compliance
+
+| Entity | Last Self-Assessment | Key Findings |
+|--------|---------------------|--------------|
+| LCH Ltd | Q3 2024 ([CPMI-IOSCO Qualitative Assessment](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/cpmi-iosco-qualitative-assessment-of-lch-limited-q3-2024.pdf)) | Observes or broadly observes all 24 applicable PFMI principles |
+| LCH SA | Q1 2025 ([CPMI-IOSCO Self-Assessment](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/lch-sa-cpmi-iosco-self-qualitative-assessment-q1-2025.pdf)) | Observes or broadly observes all applicable PFMI principles |
+
+### 6.4 Reporting Requirements
+
+| Requirement | Details |
+|-------------|---------|
+| Trade Reporting | Members must report derivatives trades to authorised Trade Repositories under UK EMIR / EU EMIR |
+| Position Reporting | LCH provides position-level data to members; regulators have direct access to position and risk data |
+| CPMI-IOSCO PQD | Published quarterly; available on [LCH CCP Disclosures page](https://www.lseg.com/en/post-trade/clearing/clearing-resources/ccp-disclosures) |
+| Contact for PQD queries | Reg.reporting@lch.com |
+
+---
+
+## 7. Interoperability
+
+### 7.1 CCP Interoperability Arrangements (LCH Ltd EquityClear)
+
+LCH Ltd EquityClear participates in interoperability arrangements for European equity clearing, allowing market participants to choose their preferred CCP.
+
+| Partner CCP | Products | Venue(s) | Status |
+|-------------|----------|----------|--------|
+| SIX x-clear | Cash equities | SIX Swiss Exchange | Active |
+| Cboe Clear Europe (formerly EuroCCP) | Cash equities | Cboe Europe, other MTFs | Active |
+
+Source: [LCH EquityClear Interoperability](https://www.lseg.com/en/post-trade/clearing/lch-services/equityclear/equityclear-ltd/essentials/ccp-interoperability); [Cboe European Equities Clearing](https://www.cboe.com/europe/equities/clearing/central_counterparties/)
+
+**Interoperability Framework:**
+- Each interoperable CCP posts margin (inter-CCP margin) to the other CCPs to cover the net exposure arising from the interoperable link.
+- Subject to specific risk management requirements under EU/UK EMIR and ESRB/ESMA guidelines on CCP interoperability arrangements.
+- The ESRB has published analysis on risks and safeguards related to CCP interoperability. ([ESRB Report 2019](https://www.esrb.europa.eu/pub/pdf/reports/esrb.report190131_CCP_interoperability_arrangements~99908a78e7.en.pdf))
+
+### 7.2 Cross-border Arrangements
+
+| Arrangement | Details |
+|-------------|---------|
+| ESMA-BoE MoU | Revised Memorandum of Understanding for cooperation and information exchange regarding LCH Ltd (and other UK CCPs) as recognised third-country CCPs under EU EMIR ([ESMA](https://www.esma.europa.eu/press-news/esma-news/esma-and-bank-england-conclude-revised-mou-respect-uk-based-ccps-under-emir)) |
+| EU Equivalence for UK CCPs | Extended to 30 June 2028 by European Commission; LCH Ltd classified as Tier 2 (systemically important) third-country CCP |
+| US CFTC Registration | Both LCH Ltd (SwapClear, ForexClear, Listed Rates) and LCH SA (CDSClear) registered as DCOs |
+| Multi-jurisdictional Recognition | LCH Ltd recognised in Switzerland, Hong Kong, Singapore, Japan, Canada, Australia; LCH SA recognised in US and Canada |
+
+### 7.3 Post-Brexit Dynamics
+
+The most significant interoperability and cross-border issue for LCH is the post-Brexit regulatory dynamic:
+
+- **LCH Ltd (UK)** lost its EU-authorised CCP status after Brexit (31 January 2020 / end of transition period 31 December 2020). ESMA granted temporary recognition under EU EMIR Article 25 as a third-country CCP.
+- **Tier 2 Classification:** ESMA designated LCH Ltd as a Tier 2 (systemically important) third-country CCP, subjecting it to enhanced ESMA supervision and potential requirements to relocate certain euro-denominated clearing activities.
+- **Equivalence Extensions:** The EU has repeatedly extended equivalence decisions for UK CCPs, most recently to 30 June 2028, acknowledging the systemic risk of a sudden withdrawal of recognition.
+- **EU Active Account Requirement:** Under EMIR 3.0 (proposed), EU clearing members may be required to maintain active accounts at EU-authorised CCPs for certain systemically important products (particularly euro-denominated IRS), potentially shifting some volume from LCH Ltd SwapClear to EU-based alternatives.
+- **LCH SA Repositioning:** Following the loss of Euronext clearing, LCH SA has pivoted to focus on CDSClear, RepoClear SA, and the new DigitalAssetClear service, maintaining its EU-authorised CCP status.
+
+---
+
+## 8. Fees
+
+### 8.1 Clearing Fees by Service
+
+#### SwapClear (LCH Ltd)
+
+| Fee Type | Amount |
+|----------|--------|
+| Self-Clearing Annual Fee (LCH LLC - US) | USD 250,000 per year (collected in 12 monthly installments) |
+| Client Clearing Fees | Tiered trade registration model and tiered maintenance fees (introduced July 2024 to discourage inappropriate use of HTO fee plan) |
+| Compression Fees | Included in service; specific rates vary by technique |
+| Contact for details | RatesClientServices@lch.com |
+
+Source: [LCH SwapClear Fees](https://www.lseg.com/en/post-trade/clearing/lch-services/swapclear/fees)
+
+#### CDSClear (LCH SA)
+
+| Fee Type | Amount |
+|----------|--------|
+| Annual Membership & Clearing Fixed Fee (Dealer Status) | EUR 400,000 per year (covers all self-clearing activity) |
+| General Member Variable Tariff | First-year fee waiver available for new members (through 2026) |
+| Contact for details | CDSClearSales@lch.com |
+
+Source: [LCH CDSClear Fees](https://www.lseg.com/en/post-trade/clearing/lch-services/cdsclear/fees)
+
+#### RepoClear SA (LCH SA)
+
+| Fee Type | Amount |
+|----------|--------|
+| Minimum Monthly Activity Charge (MAC) | EUR 8,500 per member (currently waived until further notice) |
+| New Member Onboarding Fee | EUR 20,000 (one-time) |
+
+Source: [LCH RepoClear SA Fees](https://www.lseg.com/en/post-trade/clearing/lch-services/repoclear/repoclear-sa/fees)
+
+#### EquityClear (LCH Ltd)
+
+| Fee Type | Amount |
+|----------|--------|
+| Settlement Fees | Per published fee schedule effective 1 January 2025 |
+
+Source: [LCH EquityClear Settlement Fee Schedule](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-ltd-equityclear-settlement-fee-schedule.pdf)
+
+### 8.2 Membership & Account Structure Fees (LCH SA)
+
+| Fee Type | Amount |
+|----------|--------|
+| LCH Ltd Application Fee | GBP 10,000 (+VAT for UK) |
+| LCH SA New Member Code | EUR 1,000 (one-off) |
+| Additional Member Code (same entity) | EUR 2,000 (one-off) |
+| Clearer Change | EUR 2,000 (one-off) |
+| ISA/OSA Account Fees (CDSClear) | EUR 3,500 per 6 months |
+| ISA/OSA Account Fees (RepoClear) | EUR 3,500 (ISA) / EUR 1,200 (OSA Net) per 6 months |
+| DigitalAssetClear Account Fees | EUR 3,500 (ISA) / EUR 1,200 (OSA Net) per 6 months |
+| Connectivity (CMC) | EUR 593-3,061 monthly depending on tier and bandwidth |
+
+Source: [LCH SA Fees](https://www.lseg.com/en/post-trade/clearing/membership/sa-membership/sa-fees) (effective 7 May 2025)
+
+---
+
+## 9. Recent Developments
+
+### 9.1 System Upgrades (Last 5 Years)
+
+| Year | Development |
+|------|-------------|
+| 2020 | LCH implemented Millennium Clearing & Risk (MCCP) platform from LSEG Technology for clearing and settlement operations ([FinTech Futures](https://www.fintechfutures.com/fintech-innovation/lch-implements-clearing-and-settlement-solution-from-lseg-technology)) |
+| 2022 | MCCP platform deployed for EquityClear (Ltd) -- zero-touch STP, real-time parallel processing with hardware acceleration ([Finance Magnates](https://www.financemagnates.com/trading-room/industry-news/lch-equityclear-goes-live-with-new-lseg-technology-post-trade-platform/)) |
+| 2024 | Listed Rates clearing launched on new platform for FMX SOFR futures |
+| 2024 | ISO 20022 adoption expanded for collateral management |
+| Ongoing | Progressive migration of remaining services to MCCP platform |
+
+### 9.2 New Services
+
+| Year | Service |
+|------|---------|
+| 2023 | ForexClear smart clearing solution launched with Quantile, enabling selective clearing of FX books |
+| 2024 | **Listed Rates:** Launch of listed interest rate derivatives clearing, initially for FMX SOFR futures (September 2024); US Treasury futures clearing added in 2025 |
+| 2024 | **DigitalAssetClear (LCH SA):** New segregated CCP clearing service for digital asset derivatives, in partnership with GFO-X exchange ([LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/digitalassetclear)) |
+| 2024 | **Portfolio Margining Service:** Cross-margining between FMX futures and SwapClear IRS portfolios, with Marex as first clearing firm to enable client access ([Marex](https://www.marex.com/news/2025/10/marex-first-clearing-firm-to-enable-client-access-to-competitive-margin-benefits-with-fmx-futures-exchange-and-lch-ltd/)) |
+| 2025 | Eligible collateral expansion: Danish covered bonds; Chinese government bonds (EUR and USD-denominated) |
+| 2025 | EUR inflation swap clearing record: EUR 2.9 trillion notional in H1 2025 (up 26% YoY) |
+
+### 9.3 Regulatory Changes
+
+| Year | Change |
+|------|--------|
+| 2022 | ESMA classified LCH Ltd as **Tier 2 systemically important third-country CCP** |
+| 2022-2025 | EU equivalence for UK CCPs extended repeatedly; current extension to **30 June 2028** |
+| 2024 | ESMA and Bank of England signed revised MoU for cooperation on UK CCP oversight |
+| 2025 | EU EMIR 3.0 proposals (active account requirement) under discussion -- potential impact on LCH Ltd SwapClear euro clearing volumes |
+| 2025 | LCH SA CPMI-IOSCO PFMI self-assessment published (Q1 2025) |
+| 2026 | LCH SA proposed CDS Clearing Rule changes related to AMF outsourcing, EMIR SITG requirements, and EU CCPRR compliance ([Federal Register](https://regulations.justia.com/regulations/fedreg/2026/03/26/2026-05851.html)) |
+
+### 9.4 Strategic Initiatives
+
+| Initiative | Details |
+|-----------|---------|
+| **FMX Partnership** | Strategic partnership with BGC Group's FMX to challenge CME's dominance in US Treasury and SOFR futures; LCH provides clearing and portfolio margining against SwapClear OTC positions |
+| **EU CCP Strategy** | LCH SA repositioned after Euronext departure: focused on CDSClear growth (28 members, 88% client volume growth) and DigitalAssetClear launch |
+| **Collateral Expansion** | Broadening eligible collateral universe including non-traditional assets; added HSBC and BNP Paribas as custodial banks |
+| **Client Clearing Growth** | CDSClear: 217 client entities across 1,753 accounts; ForexClear: 92 clients |
+| **Compression Innovation** | Continued investment in compression tools including blended rate compression, cash flow netting, and third-party multilateral compression partnerships |
+| **SwapAgent Growth** | Membership increased from 29 to 36; $21.4 trillion notional registered in 2024 (up from $13.4 trillion) |
+
+### 9.5 Brexit Impact on Ltd vs SA Structure
+
+The most consequential structural development for LCH in recent years has been the divergence of LCH Ltd and LCH SA following Brexit:
+
+**LCH Ltd (UK):**
+- Retained its dominant position in OTC IRS clearing (SwapClear) despite loss of EU-authorised status
+- Gained temporary equivalence and Tier 2 recognition from ESMA, extended to 2028
+- Faces ongoing political pressure from EU authorities to relocate euro-denominated clearing to the EU
+- Launched new business lines (Listed Rates/FMX) to diversify and strengthen its competitive position
+- Continued growth: $779 trillion notional cleared in H1 2024 for SwapClear alone
+
+**LCH SA (Paris):**
+- Lost its largest revenue source (Euronext EquityClear and CommodityClear) to Euronext's own CCP in 2023-2024
+- LSEG acquired Euronext's remaining 11.1% stake for EUR 111 million, taking full ownership
+- Pivoted to CDSClear (strong growth: 28 members, 88% client volume increase) and DigitalAssetClear as future growth vectors
+- Maintained EU-authorised CCP status, potentially positioning it as a venue for relocated euro clearing if EU active account requirements materialize
+- RepoClear SA continues serving eurozone government bond repo markets
+
+---
+
+## Sources
+
+1. [LCH Company Structure - LSEG](https://www.lseg.com/en/post-trade/clearing/about-lch/structure-and-governance/company-structure)
+2. [LCH (clearing house) - Wikipedia](https://en.wikipedia.org/wiki/LCH_(clearing_house))
+3. [LCH History - LSEG](https://www.lch.com/about-us/our-history)
+4. [LCH Ltd Margin Methodology - LSEG](https://www.lseg.com/en/post-trade/clearing/risk-management/ltd-risk-management/ltd-margin-methodology)
+5. [LCH SwapClear Risk Management - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/swapclear/risk-management)
+6. [LCH CDSClear Risk Management - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/cdsclear/risk-management)
+7. [LCH Ltd Membership - LSEG](https://www.lseg.com/en/post-trade/clearing/membership/ltd-membership)
+8. [LCH SA Fees - LSEG](https://www.lseg.com/en/post-trade/clearing/membership/sa-membership/sa-fees)
+9. [LCH SwapClear Fees - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/swapclear/fees)
+10. [LCH CDSClear Fees - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/cdsclear/fees)
+11. [LCH RepoClear SA Fees - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/repoclear/repoclear-sa/fees)
+12. [RBA Assessment of LCH Limited SwapClear Service, December 2020, Appendix B](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html)
+13. [LCH Ltd Default Waterfall (October 2024)](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-ltd-default-waterfall-oct-2024.pdf)
+14. [LCH SA Default Waterfall](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-sa-default-waterfall.pdf)
+15. [ESMA extends tiering and recognition of UK CCPs](https://www.esma.europa.eu/press-news/esma-news/esma-extends-tiering-and-recognition-three-uk-based-ccps)
+16. [ESMA-BoE Revised MoU on UK CCPs](https://www.esma.europa.eu/press-news/esma-news/esma-and-bank-england-conclude-revised-mou-respect-uk-based-ccps-under-emir)
+17. [LCH QCCP Status Document (Dec 2022)](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/structure-and-governance/lch-qccp-status-dec-22-clean-latest-0.pdf)
+18. [LCH CCP Disclosures - LSEG](https://www.lseg.com/en/post-trade/clearing/clearing-resources/ccp-disclosures)
+19. [LCH Ltd CPMI-IOSCO Qualitative Assessment Q3 2024](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/cpmi-iosco-qualitative-assessment-of-lch-limited-q3-2024.pdf)
+20. [LCH SA CPMI-IOSCO Self-Assessment Q1 2025](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/lch-sa-cpmi-iosco-self-qualitative-assessment-q1-2025.pdf)
+21. [Clarus FT - What's New in CCP Disclosures Q4 2024](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)
+22. [Clarus FT - 2024 CCP Volumes and Share in IRD](https://www.clarusft.com/2024-ccp-volumes-and-share-in-ird/)
+23. [Clarus FT - Swap Default Funds at CME & LCH](https://www.clarusft.com/swap-default-funds-at-the-cme-lch/)
+24. [Risk.net - LCH SA default funds hit record highs](https://www.risk.net/risk-quantum/7957808/lch-sas-default-funds-hit-record-highs)
+25. [Risk.net - Clearing House of the Year: LCH](https://www.risk.net/awards/7960370/clearing-house-of-the-year-lch)
+26. [LCH Group Holdings Limited Financial Statements 2024](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/annual-reports/lch-group-holdings-limited-financial-statements-2024.pdf)
+27. [LCH Limited Financial Statements 2025](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/annual-reports/2025-lch-limited-financial-statements.pdf)
+28. [LSEG 2024 Preliminary Results](https://www.lseg.com/content/dam/lseg/en_us/documents/investor-relations/financial-results/preliminary-results/rns/lseg-2024-preliminary-results-rns-27feb2025.pdf)
+29. [Euronext - Successful Expansion of Euronext Clearing](https://www.euronext.com/en/about/media/euronext-press-releases/successful-expansion-euronext-clearing-all-euronext-financial)
+30. [LCH Group acquires Euronext's stake in LCH SA - LSEG](https://www.lseg.com/en/media-centre/press-releases/2023/lch-group-to-acquire-euronexts-stake-in-lch-sa)
+31. [LSEG Technology implements new clearing platform for EquityClear](https://www.fintechfutures.com/fintech-innovation/lch-implements-clearing-and-settlement-solution-from-lseg-technology)
+32. [LCH EquityClear Interoperability - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/equityclear/equityclear-ltd/essentials/ccp-interoperability)
+33. [ESRB Report on CCP Interoperability Arrangements (Jan 2019)](https://www.esrb.europa.eu/pub/pdf/reports/esrb.report190131_CCP_interoperability_arrangements~99908a78e7.en.pdf)
+34. [UK Settlement Finality Regulations - LCH Ltd Rulebook](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/rulebooks/lch-ltd/settlement-finality-regulations.pdf)
+35. [Euroclear RepoClear Settlement Service](https://www.euroclear.com/services/en/settlement/repoclear.html)
+36. [FSB 2024 Resolution Report](https://www.fsb.org/uploads/P051224.pdf)
+37. [SwapClear Compression - LSEG](https://www.lch.com/services/swapclear/enhancements/compression)
+38. [FMX Futures Exchange](https://www.fmxfutures.com/clearing/)
+39. [LCH DigitalAssetClear - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/digitalassetclear)
+40. [LCH SA Default Management Process (Dec 2024)](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-sa-default-management-process.pdf)

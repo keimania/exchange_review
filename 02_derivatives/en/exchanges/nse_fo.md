@@ -1,0 +1,560 @@
+# National Stock Exchange of India — Futures & Options (NSE F&O)
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | National Stock Exchange of India Limited — Futures & Options Segment |
+| Abbreviation | NSE F&O |
+| Website | https://www.nseindia.com |
+| Year Established | 1992 (NSE incorporated); 2000 (F&O segment launch — index futures on 12 June 2000) |
+| Country / City | India / Mumbai (Exchange Plaza, Bandra Kurla Complex) |
+| Ownership Structure | Demutualised; owned by a group of domestic and international financial institutions (not publicly listed as of 2026) |
+| Parent Company / Group | NSE Investments Limited (holding structure) |
+| Regulatory Authority | Securities and Exchange Board of India (SEBI) |
+| Clearing House | NSE Clearing Limited (NCL, formerly NSCCL) — India's first CCP with settlement guarantee |
+| Global Ranking (CY2024) | **#1 globally** by number of derivatives contracts traded (FIA statistics); surpassed by Brazil's B3 in H1 2025 following SEBI curbs |
+| Annual Derivatives Volume (CY2023) | ~85 billion contracts (FIA) — more than 61% of all futures and options traded worldwide |
+| Annual Derivatives Volume (CY2024) | Estimated 92–108 billion contracts (NSE press releases indicate continued #1 ranking for CY2024; exact FIA figure pending final confirmation) [unverified — exact CY2024 total] |
+| Equity Derivatives Turnover (FY2025) | >Rs 40,000 trillion notional turnover |
+| Trading Terminals | 210,873 terminals across India (as of September 2025) |
+| F&O-Eligible Stocks | ~208–250+ individual securities for single stock futures/options (reviewed semi-annually) |
+
+[Source: [NSE India — History & Milestones](https://www.nseindia.com/static/national-stock-exchange/history-milestones); [NSE Press Release, January 2024](https://nsearchives.nseindia.com/web/sites/default/files/2024-01/PR_cc_18012024_0.pdf); [FIA — Meteoric Rise of India's Equity Derivatives](https://www.fia.org/marketvoice/articles/explainer-meteoric-rise-indias-equity-derivatives-volume); [FIA — 2024 Annual ETD Volume Review](https://www.fia.org/fia/articles/2024-annual-etd-volume-review); [Wikipedia — National Stock Exchange of India](https://en.wikipedia.org/wiki/National_Stock_Exchange_of_India); [NSE Trading Technology](https://www.nseindia.com/static/trade/platform-services-neat-trading-system)]
+
+### Key Historical Milestones
+
+- **1992:** NSE incorporated as a tax-paying company; India's first electronic exchange
+- **1994 (November):** NSE commences equity cash market trading
+- **2000 (12 June):** **F&O segment launched** — index futures on Nifty 50 begin trading, making NSE one of India's first derivatives exchanges
+- **2001 (4 June):** Index options on Nifty 50 introduced
+- **2001 (2 July):** Options on individual securities launched
+- **2001 (9 November):** Futures on individual securities launched — completing the four basic F&O product types
+- **2008 (August):** Currency derivatives segment launched (USD/INR futures)
+- **2010:** Interest rate futures on government securities introduced
+- **2018 (October):** Commodity derivatives segment launched (gold, silver futures)
+- **2018 (February):** Cross-currency futures and options (EUR-USD, GBP-USD, USD-JPY) introduced; options on EUR/INR, GBP/INR, JPY/INR launched
+- **2019:** NSE becomes the world's largest derivatives exchange by contract volume (FIA), a title it held for five consecutive years (2019–2024)
+- **2021 (phased, March–September):** SEBI peak margin rules fully implemented — 100% upfront margin required for all intraday F&O positions
+- **2023 (3 July):** NSE International Exchange (NSE IX) at GIFT City goes operational; GIFT Nifty replaces SGX Nifty
+- **2023:** NSE trades ~85 billion derivatives contracts — more than 10x the second-largest exchange (B3, at 8.3 billion)
+- **2024 (September):** SEBI publishes updated study: **93% of individual F&O traders incurred losses** between FY22–FY24, with aggregate losses exceeding Rs 1.8 lakh crore
+- **2024 (October–November):** SEBI announces six major measures to curb F&O speculation (effective November 2024–February 2025)
+- **2024 (November 20):** Weekly expiry restrictions and increased lot sizes take effect
+- **2025 (H1):** NSE loses #1 global derivatives exchange ranking to Brazil's B3, attributed to SEBI-mandated volume curbs and B3's smaller contract sizes
+- **2026 (April, planned):** Launch of Platts oil price benchmark derivatives (Dated Brent Crude Oil futures)
+
+[Source: [NSE — History & Milestones](https://www.nseindia.com/static/national-stock-exchange/history-milestones); [StockEdge — NSE's 30-Year Evolution](https://blog.stockedge.com/commemorating-30-years-of-nse/); [SEBI Press Release, September 2024](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html); [Business Standard — NSE Loses Top Spot to B3](https://www.business-standard.com/markets/news/nse-loses-top-derivatives-exchange-spot-to-brazil-b3-eyes-vix-futures-125073001569_1.html); [Zerodha — SEBI's New Rules](https://zerodha.com/z-connect/business-updates/sebis-new-rules-for-index-derivatives-heres-whats-changing)]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments / Asset Classes
+
+| Segment | Products | Key Contracts |
+|---------|----------|---------------|
+| **Equity Index F&O** | Futures and options on benchmark indices | Nifty 50, Bank Nifty, Nifty Financial Services (FinNifty), Nifty Midcap Select (MidcapNifty), Nifty Next 50 |
+| **Single Stock F&O** | Futures and options on individual equities | ~208–250+ eligible stocks (e.g., Reliance, TCS, HDFC Bank, Infosys, Zomato) |
+| **Currency Derivatives** | Futures and options on INR pairs and cross-currency pairs | USD/INR, EUR/INR, GBP/INR, JPY/INR; cross-currency: EUR-USD, GBP-USD, USD-JPY |
+| **Interest Rate Derivatives** | Futures on government securities and T-bills | 6-year, 10-year, 13-year GOI Security futures (NBF II); 91-day T-Bill futures |
+| **Commodity Derivatives** | Futures and options on precious metals, energy | Gold (standard, mini, 1g), Silver (standard, mini, micro), Brent Crude, WTI Crude |
+
+[Source: [NSE — Equity Derivatives](https://www.nseindia.com/products-services/equity-derivatives-list-underlyings-information); [NSE — Currency Derivatives Contract Specs](https://www.nseindia.com/static/products-services/currency-derivatives-contract-specification-inr); [NSE — Interest Rate Futures](https://www.nseindia.com/market-data/bond-market-futures); [NSE — Commodity Derivatives](https://www.nseclearing.in/clearing-settlement/commodity-derivatives)]
+
+### 2.2 Trading Sessions / Hours
+
+**Note:** India Standard Time (IST) is UTC+05:30 year-round (no daylight saving time).
+
+**Equity Derivatives (Futures & Options)**
+
+| Session | Local Time (IST) | UTC | Description |
+|---------|------------------|-----|-------------|
+| **Pre-open** | 09:00 – 09:08 | 03:30 – 03:38 | Order entry and matching preparation |
+| **Regular Trading** | 09:15 – 15:30 | 03:45 – 10:00 | Continuous trading session |
+| **Close** | 15:30 | 10:00 | Market close; settlement calculations begin |
+
+**Currency Derivatives**
+
+| Session | Local Time (IST) | UTC | Description |
+|---------|------------------|-----|-------------|
+| **Regular Trading** | 09:00 – 17:00 | 03:30 – 11:30 | Standard session |
+
+**Note:** Currency derivatives previously had extended hours to 19:30 IST; current hours should be confirmed on the NSE website.
+
+**Commodity Derivatives**
+
+| Session | Local Time (IST) | UTC | Description |
+|---------|------------------|-----|-------------|
+| **Regular Trading** | 09:00 – 23:30/23:55 | 03:30 – 18:00/18:25 | Extended hours for global commodity price discovery |
+
+**NSE IX (GIFT City) — GIFT Nifty**
+
+| Session | Local Time (IST) | UTC | Description |
+|---------|------------------|-----|-------------|
+| **Session 1** | 06:30 – 15:40 | 01:00 – 10:10 | Overlaps with domestic NSE session |
+| **Session 2** | 16:35 – 02:45 +1 | 11:05 – 21:15 | Extended hours covering European and U.S. hours |
+
+GIFT Nifty operates ~19 hours per day, providing global investors extended access.
+
+**Trading Days:** Monday to Friday; closed on SEBI-designated holidays.
+
+[Source: [NSE — Market Timings & Holidays](https://www.nseindia.com/resources/exchange-communication-holidays); [Bajaj Finserv — Share Market Timings](https://www.bajajfinserv.in/share-market-timings); [NSE IX — Trading Hours](https://www.nseix.com/markets/trading/tradinghours); [GIFT Nifty — Wikipedia](https://en.wikipedia.org/wiki/GIFT_Nifty)]
+
+### 2.3 Tick Sizes (Equity Derivatives)
+
+| Instrument | Tick Size (Minimum Price Movement) |
+|------------|-----------------------------------|
+| Index Futures (Nifty 50, Bank Nifty) | Rs 0.05 (5 paise) |
+| Index Options | Rs 0.05 (5 paise) |
+| Single Stock Futures | Rs 0.05 (5 paise) |
+| Single Stock Options | Rs 0.05 (5 paise) |
+
+[Source: [NSE — Nifty 50 F&O Specifications](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50)]
+
+### 2.4 Lot Sizes / Contract Units (as of January 2026)
+
+| Product | Lot Size | Approx. Contract Value |
+|---------|----------|----------------------|
+| Nifty 50 Futures/Options | 65 | ~Rs 15–16 lakh |
+| Bank Nifty Futures/Options | 30 | ~Rs 15–16 lakh |
+| Nifty Financial Services (FinNifty) | 65 [unverified] | ~Rs 15 lakh |
+| Nifty Midcap Select | 75 [unverified] | ~Rs 15 lakh |
+| Nifty Next 50 | 25 | ~Rs 15 lakh |
+| Single Stock F&O | Varies per stock | Min Rs 15 lakh contract value (SEBI requirement from Nov 2024) |
+
+**Note:** Lot sizes were revised significantly in November 2024 under SEBI's new framework. Nifty 50 lot size went from 25 to 75 (Nov 2024), then was adjusted to 65 (October 2025). SEBI requires minimum contract value of Rs 15–20 lakh.
+
+[Source: [Sahi — Nifty 50 Lot Size 2026](https://www.sahi.com/blogs/nifty-lot-size-2026-bank-nifty-sensex); [ICICI Direct — New Lot Sizes](https://www.icicidirect.com/faqs/fno/from-when-will-the-new-lot-sizes-for-weekly-contracts-be-effective); [Zerodha — SEBI's New Rules](https://zerodha.com/z-connect/business-updates/sebis-new-rules-for-index-derivatives-heres-whats-changing)]
+
+### 2.5 Contract Cycles & Expiry
+
+| Product | Contract Cycle | Expiry Day |
+|---------|---------------|------------|
+| Nifty 50 Futures | 3 serial months (near, next, far) | Last Thursday of expiry month |
+| Nifty 50 Monthly Options | 3 serial months | Last Thursday of expiry month |
+| Nifty 50 Weekly Options | Weekly (only index with weekly expiry post-Nov 2024) | Every Thursday |
+| Bank Nifty (Monthly only, post-Nov 2024) | 3 serial months | Last Wednesday [unverified — confirm current expiry day] |
+| Single Stock Futures | 3 serial months | Last Thursday of expiry month |
+| Single Stock Options | 3 serial months | Last Thursday of expiry month |
+
+**Critical change (November 2024):** SEBI restricted weekly expiries to **one benchmark index per exchange**. NSE retained weekly options only on Nifty 50. Bank Nifty, FinNifty, MidcapNifty, and Nifty Next 50 weekly expiries were all discontinued.
+
+**Settlement:** All equity derivatives on NSE are **cash-settled** on T+1 basis. Final settlement price is based on the closing price of the underlying on the expiry day.
+
+[Source: [NSE — Nifty 50 F&O](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50); [NSE Clearing — Settlement Mechanism](https://www.nseclearing.in/clearing-settlement/equity-derivatives/settlement-mechanism); [Business Standard — SEBI Announces Six Key Changes](https://www.business-standard.com/markets/news/sebi-announces-six-key-changes-to-curb-speculation-in-derivatives-trading-124100101316_1.html)]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Order Matching
+
+- **Order-driven market** with price-time priority
+- Anonymous order book; counterparty identity not disclosed pre-trade
+- NSE Clearing Limited acts as central counterparty (CCP) to all trades, providing novation and settlement guarantee
+
+### 3.2 Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| Market Order | Executed at best available price |
+| Limit Order | Executed at specified price or better |
+| Stop-Loss Order | Triggered when market reaches specified price; converts to market or limit order |
+| Immediate or Cancel (IOC) | Must be filled immediately; unfilled portion cancelled |
+| Spread Orders | Two-legged orders for calendar spreads |
+
+### 3.3 Price Discovery
+
+- Continuous auction throughout trading hours
+- Opening price determined during pre-open session (call auction)
+- Closing price in F&O segment derived from the underlying cash market closing price
+
+[Source: [NSE — NEAT Trading System](https://www.nseindia.com/static/trade/platform-services-neat-trading-system)]
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | NEAT (National Exchange for Automated Trading) / NEAT Plus (multi-market unified interface) |
+| Vendor / In-house | In-house (homegrown applications) |
+| Architecture | Client-server based; satellite communication network for pan-India reach |
+| Matching Engine | In-memory database for minimum response time and maximum availability |
+| Round-trip Latency | ~100 microseconds (current); **nanosecond-level latency planned from April 2026** |
+| Order Processing Capacity | ~5–6 million transactions per second (current); **100 million transactions/second target (2026 upgrade)** |
+| Uptime | 99.7% system availability |
+| Colocation Racks | >2,000 racks (current); scaling to ~4,500 racks |
+| Trading Terminals | 210,873 across India (as of September 2025) |
+
+### System History
+
+| Period | System | Notes |
+|--------|--------|-------|
+| 1994 | NEAT 1.0 | India's first screen-based electronic trading system |
+| Ongoing | NEAT / NEAT Plus | Evolved over decades; supports all segments (equity, derivatives, currency, commodity) |
+| 2026 (planned) | Next-gen ultra-low-latency engine | Nanosecond response time; ~1,000x speed improvement over current system |
+
+### Connectivity & Access
+
+| Method | Description |
+|--------|-------------|
+| NEAT / NEAT+ Terminal | Exchange-provided trading front-end software |
+| CTCL (Computer to Computer Link) | Broker's own front-end connected via NEAT Adapter |
+| DMA (Direct Market Access) | Institutional clients access exchange directly through broker infrastructure (SEBI-regulated) |
+| FIX Protocol | FIX 4.2 supported for algorithmic and DMA trading |
+| Colocation | Servers hosted in NSE data center for ultra-low latency; widely used by HFT and algo firms |
+
+### Colocation Facility
+
+NSE provides colocation services at its data center, allowing trading firms to install servers to minimise network delays. A significant share of NSE's order flow passes through colocation, especially for algorithmic trading and DMA.
+
+[Source: [NSE — Trading Technology](https://www.nseindia.com/static/trade/platform-services-neat-trading-system); [NSE — Colocation Facility](https://www.nseindia.com/static/trade/platform-services-co-location-facility); [BusinessToday — NSE to Slash Trading Latency to Nanoseconds](https://www.businesstoday.in/markets/stocks/story/nse-to-slash-trading-latency-to-nanoseconds-from-apr-11-targets-100-mn-transactions-per-second-517444-2026-02-22); [NSE — DMA](https://www.nseindia.com/static/trade/platform-services-non-neat-direct-market-access)]
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Market-Wide Circuit Breakers (Index-Based)
+
+Market-wide circuit breakers are triggered by movement of either the BSE Sensex or the Nifty 50, whichever is breached first. When triggered, trading halts across **all** equity and equity derivative markets nationwide (NSE, BSE, and other exchanges).
+
+| Level | Trigger | Halt if Before 1:00 PM | Halt if 1:00–2:30 PM | Halt if After 2:30 PM |
+|-------|---------|----------------------|--------------------|--------------------|
+| **Level 1** | 10% index movement | 45-minute halt | 15-minute halt | No halt |
+| **Level 2** | 15% index movement | 1 hour 45 minutes | 45-minute halt | Remainder of day |
+| **Level 3** | 20% index movement | Remainder of day | Remainder of day | Remainder of day |
+
+Circuit breaker limits are **recalculated daily** based on the previous day's closing level of the index, rounded to the nearest tick size.
+
+[Source: [NSE — Circuit Breakers](https://www.nseindia.com/products-services/equity-market-circuit-breakers); [Business Standard — Circuit Filters Explained](https://www.business-standard.com/markets/news/market-crash-what-are-circuit-filters-for-the-sensex-and-nifty-explained-125040700243_1.html)]
+
+### 8.2 Price Bands for Derivatives Underlyings
+
+- **Price bands are not applicable** to securities on which derivative products are available
+- Instead, the exchange applies a **dynamic price band of 10%** of the previous day's closing price, which is flexed based on pre-defined criteria as the underlying moves
+
+[Source: [NSE — Circuit Breakers](https://www.nseindia.com/products-services/equity-market-circuit-breakers)]
+
+### 8.3 Pre-trade Risk Controls
+
+- **Quantity freeze:** Orders exceeding a predefined quantity threshold require manual confirmation by the exchange
+- **Order value limits:** Maximum order value checks
+- **Position limits:** Market-wide position limits (MWPL) and trading member-level limits
+- **Real-time margin monitoring:** Intraday position monitoring and margining on a real-time basis
+
+### 8.4 Expiry Day Extreme Loss Margin (from November 2024)
+
+An additional Extreme Loss Margin (ELM) of **2%** is applied to short options positions on the expiry day, to cover heightened volatility risk.
+
+[Source: [Zerodha — SEBI's New Rules](https://zerodha.com/z-connect/business-updates/sebis-new-rules-for-index-derivatives-heres-whats-changing); [Outlook Business — SEBI's New F&O Rules](https://www.outlookbusiness.com/markets/sebis-new-fo-rules-kick-in-how-the-risk-tail-coverage-change-will-affect-traders)]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+
+**Securities and Exchange Board of India (SEBI)** — the statutory regulator for securities and derivatives markets in India, established in 1992.
+
+### 9.2 Key Regulations & Recent Developments
+
+| Date | Regulation / Event | Details |
+|------|-------------------|---------|
+| 2000 | SEBI approval for index futures | Permitted NSE (and BSE) to launch equity derivatives |
+| 2001 | SEBI approval for stock F&O | Individual stock futures and options permitted |
+| 2021 (Mar–Sep) | **SEBI Peak Margin Rules** | Phased implementation requiring 100% upfront margin for all intraday F&O positions; random snapshots taken 4–5 times daily; penalty for shortfall |
+| 2024 (Sep) | **SEBI Study on Retail F&O Losses** | Updated study revealed 93% of individual traders incurred losses in equity F&O between FY22–FY24; aggregate losses exceeded Rs 1.8 lakh crore over three years |
+| 2024 (Oct) | **SEBI Six-Point F&O Reform Package** | Comprehensive measures to curb retail speculation |
+| 2024 (Nov 20) | **Weekly expiry restriction** | Only one benchmark index per exchange may have weekly expiries; NSE retained Nifty 50 only |
+| 2024 (Nov 21) | **Lot size increase** | Minimum contract value raised to Rs 15–20 lakh; Nifty 50 lot size tripled from 25 to 75 |
+| 2024 (Nov 20) | **Expiry-day ELM** | 2% additional ELM on short options positions on expiry day |
+| 2025 (Feb 1) | **Upfront premium collection** | Option buyers must pay entire premium upfront (no intraday leverage on option purchases) |
+
+[Source: [SEBI — Press Release, September 2024](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html); [Business Standard — SEBI Announces Six Key Changes](https://www.business-standard.com/markets/news/sebi-announces-six-key-changes-to-curb-speculation-in-derivatives-trading-124100101316_1.html); [Zerodha — SEBI's New Rules](https://zerodha.com/z-connect/business-updates/sebis-new-rules-for-index-derivatives-heres-whats-changing); [Bajaj Broking — SEBI Peak Margin Rules](https://www.bajajbroking.in/blog/sebi-peak-margin-rules)]
+
+### 9.3 Impact of SEBI Curbs
+
+- **Volume decline:** Derivatives trading volumes fell ~30–38% from their peak following the November 2024 curbs
+- **Retail participation decline:** Smaller investor participation in derivatives dropped ~49% (Icra estimate)
+- **Global ranking lost:** NSE ceded #1 derivatives exchange title to Brazil's B3 in H1 2025
+- **Policy rationale:** Protection of retail investors, given that 93% incurred losses and aggregate losses exceeded Rs 1.8 lakh crore in FY22–FY24
+
+[Source: [Business Standard — Derivatives Trading Drops 38%](https://www.business-standard.com/markets/stock-market-news/derivatives-trading-drops-38-on-bse-nse-in-december-due-to-sebi-curbs-125010200580_1.html); [Business Standard — Small Investors Decline 49%](https://www.business-standard.com/markets/news/smaller-investor-participation-in-derivatives-down-49-pc-icra-125052301377_1.html); [Angel One — NSE Loses Top Title](https://www.angelone.in/news/market-updates/nse-loses-top-derivatives-exchange-title-to-brazil-b3)]
+
+### 9.4 Market Surveillance
+
+- NSE operates a dedicated surveillance department monitoring trading patterns, price movements, and position concentrations
+- Automated alerts for unusual trading activity, insider trading patterns, and market manipulation
+- SEBI mandates large trader reporting for positions exceeding specified thresholds
+
+### 9.5 Membership Categories
+
+| Category | Description |
+|----------|-------------|
+| Trading Member (TM) | Can trade on own account and client accounts |
+| Trading & Self Clearing Member (TM & SCM) | Can trade and clear/settle own and client trades |
+| Trading & Clearing Member (TM & CM) | Can trade and clear/settle own trades, client trades, and trades of other TMs |
+| Professional Clearing Member (PCM) | Clearing-only (banks, custodians); does not trade directly |
+
+Admission fee: Rs 5,00,000 plus applicable taxes. Application processing fee: Rs 10,000.
+
+[Source: [NSE Clearing — Eligibility Criteria](https://www.nseclearing.in/membership/eligibility-criteria); [NSE Clearing — Fees, Deposits & Networth](https://www.nseclearing.in/membership/fees-deposits--networth-requirements)]
+
+---
+
+## Product Catalog
+
+### Equity Index Derivatives
+
+| Index | Futures | Options (Monthly) | Options (Weekly) | Lot Size (Jan 2026) | Expiry Day |
+|-------|---------|-------------------|------------------|---------------------|------------|
+| **Nifty 50** | Yes | Yes | **Yes** (only weekly index post-Nov 2024) | 65 | Thursday |
+| **Bank Nifty** | Yes | Yes | No (weekly discontinued Nov 2024) | 30 | Last Wednesday [unverified] |
+| **Nifty Financial Services (FinNifty)** | Yes | Yes | No (weekly discontinued Nov 2024) | 65 [unverified] | Tuesday [unverified] |
+| **Nifty Midcap Select** | Yes | Yes | No (weekly discontinued Nov 2024) | 75 [unverified] | Monday [unverified] |
+| **Nifty Next 50** | Yes | Yes | No (weekly discontinued Nov 2024) | 25 | Friday [unverified] |
+
+### Single Stock Futures & Options
+
+- **~208–250+ eligible stocks** as of April 2026
+- Stocks must meet SEBI eligibility criteria: minimum average daily turnover, market-wide position limits based on free-float market cap, minimum market capitalisation, and free-float average daily delivery value
+- Recent additions (November 2024): 45 new stocks including Zomato, DMart, and Jio Financial
+- Contract cycle: 3 serial months
+- Expiry: Last Thursday of expiry month
+- Settlement: Cash-settled
+
+### Currency Derivatives
+
+| Pair | Futures | Options | Contract Unit |
+|------|---------|---------|--------------|
+| USD/INR | Yes | Yes | USD 1,000 |
+| EUR/INR | Yes | Yes | EUR 1,000 |
+| GBP/INR | Yes | Yes | GBP 1,000 |
+| JPY/INR | Yes | Yes | JPY 100,000 |
+| EUR-USD (cross) | Yes | Yes | EUR 1,000 |
+| GBP-USD (cross) | Yes | Yes | GBP 1,000 |
+| USD-JPY (cross) | Yes | Yes | USD 1,000 |
+
+All currency contracts are cash-settled. Price quotation: INR per unit of foreign currency (for INR pairs).
+
+### Interest Rate Derivatives
+
+| Product | Underlying | Contract Unit |
+|---------|-----------|--------------|
+| NBF II (6-year) | GOI Security, 4–8 year residual maturity | Face value Rs 2,00,000 |
+| NBF II (10-year) | GOI Security, 8–11 year residual maturity | Face value Rs 2,00,000 |
+| NBF II (13-year) | GOI Security, 11–15 year residual maturity | Face value Rs 2,00,000 |
+| 91-Day T-Bill Futures | 91-day Government of India Treasury Bill | Face value Rs 2,00,000 [unverified] |
+
+Contract cycle: 3 serial monthly + 3 quarterly (March/June/September/December). Cash-settled.
+
+### Commodity Derivatives
+
+| Product | Contract Variants |
+|---------|------------------|
+| Gold | Standard, Mini, 1-gram |
+| Silver | Standard, Mini, Micro |
+| Brent Crude Oil | Standard |
+| WTI Crude Oil | Standard, Mini |
+| Platts Dated Brent (planned April 2026) | Standard |
+
+[Source: [NSE — Equity Derivatives](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50); [NSE — Currency Derivatives Contract Specs](https://www.nseindia.com/static/products-services/currency-derivatives-contract-specification-inr); [NSE — Interest Rate Futures](https://www.nseindia.com/market-data/bond-market-futures); [Groww — NSE Adds 45 New Stocks to F&O](https://groww.in/blog/nse-adds-45-new-stocks-to-the-fo-list); [NSE Clearing — Commodity Derivatives](https://www.nseclearing.in/clearing-settlement/commodity-derivatives)]
+
+---
+
+## Contract Specifications (Key Products)
+
+### Nifty 50 Futures
+
+| Parameter | Specification |
+|-----------|--------------|
+| Underlying | Nifty 50 Index |
+| Contract Unit | Lot size x Index level (65 x Nifty value) |
+| Lot Size | 65 (as of January 2026) |
+| Tick Size | Rs 0.05 |
+| Contract Cycle | 3 serial months |
+| Expiry | Last Thursday of expiry month |
+| Settlement | Cash-settled on T+1 |
+| Final Settlement Price | Closing value of Nifty 50 on expiry day |
+| Min Contract Value | Rs 15 lakh (SEBI requirement) |
+
+### Nifty 50 Options
+
+| Parameter | Specification |
+|-----------|--------------|
+| Underlying | Nifty 50 Index |
+| Option Style | European (exercised only at expiry) |
+| Lot Size | 65 (as of January 2026) |
+| Tick Size | Rs 0.05 |
+| Strike Price Interval | Rs 50 (near-the-money); wider for far strikes |
+| Weekly Expiry | Every Thursday |
+| Monthly Expiry | Last Thursday of expiry month |
+| Settlement | Cash-settled |
+| Exercise | Automatic exercise for in-the-money options |
+
+### Bank Nifty Options
+
+| Parameter | Specification |
+|-----------|--------------|
+| Underlying | Nifty Bank Index |
+| Option Style | European |
+| Lot Size | 30 (as of January 2026) |
+| Tick Size | Rs 0.05 |
+| Expiry | Monthly only (weekly discontinued Nov 2024) |
+| Settlement | Cash-settled |
+
+[Source: [NSE — Nifty 50 F&O](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50); [Sahi — Lot Size 2026](https://www.sahi.com/blogs/nifty-lot-size-2026-bank-nifty-sensex)]
+
+---
+
+## Margin Framework
+
+### Margin Methodology
+
+NSE Clearing uses the **SPAN (Standard Portfolio Analysis of Risk)** system — a portfolio-based margining system originally developed by CME Group. SPAN estimates risk across combined futures and options portfolios and revalues positions under various scenarios of changing market conditions.
+
+### Margin Components
+
+| Component | Description |
+|-----------|-------------|
+| **SPAN Margin (Initial Margin)** | Based on 99% VaR over a one-day time horizon; calculated using worst-case portfolio loss across 16 risk scenarios |
+| **Exposure Margin** | Additional margin for potential exposure; typically 3% for index F&O, 5–10% for stock F&O |
+| **Extreme Loss Margin (ELM)** | Covers losses beyond normal VaR scenarios |
+| **Expiry Day ELM** | Additional 2% on short options positions on expiry day (from November 2024) |
+| **Mark-to-Market (MTM)** | Daily settlement of profit/loss; collected on T+1 basis |
+| **Delivery Margin** | Applied to physically settling stock options contracts nearing expiry |
+
+### SEBI Peak Margin Rules (September 2021 — Full Implementation)
+
+| Aspect | Requirement |
+|--------|------------|
+| Minimum margin | 100% of SPAN + Exposure margin required at all times (including intraday) |
+| Monitoring | Random snapshots of positions at 4–5 intervals during the trading day |
+| Penalty | Shortfall penalty charged if margin is insufficient at any snapshot |
+| Impact | Eliminated excessive intraday leverage previously offered by brokers; brokers can no longer provide additional leverage beyond SPAN margins |
+
+### Upfront Premium Collection (February 2025)
+
+Option buyers must pay the **entire option premium upfront**. Previously, some brokers allowed intraday leverage on option purchases. This rule eliminated that practice.
+
+### Interest Rate Futures Margins
+
+| Product | Initial Margin |
+|---------|---------------|
+| GOI Security Futures (NBF II) | 1.5% of contract value (subject to max 2.8% on first day) |
+| 91-Day T-Bill Futures | 0.10% of notional value on first trading day |
+
+[Source: [NSE Clearing — SPAN](https://www.nseindia.com/products-services/equity-derivatives-nse-clearing-span); [NSE Clearing — Margins](https://www.nseclearing.in/risk-management/equity-derivatives/margins); [NSE — SPAN Risk Parameters](https://www.nseclearing.in/risk-management/equity-derivatives/span-risk-parameters); [Bajaj Broking — SEBI Peak Margin Rules](https://www.bajajbroking.in/blog/sebi-peak-margin-rules); [NSE — Interest Rate Futures Margins](https://www.nseindia.com/products-services/interest-rate-derivatives-margins)]
+
+---
+
+## NSE International Exchange (NSE IX) — GIFT City
+
+### Overview
+
+NSE IX operates within India's first International Financial Services Centre (IFSC) at GIFT City, Gujarat. It launched on 3 July 2023 following the migration of SGX Nifty derivatives from the Singapore Exchange under the NSE-SGX GIFT Connect arrangement.
+
+### Key Products
+
+| Product | Currency | Description |
+|---------|----------|-------------|
+| GIFT Nifty 50 | USD | Flagship product; replacement for SGX Nifty |
+| GIFT Nifty Bank | USD | Banking sector index futures |
+| GIFT Nifty Financial Services | USD | Financial services sector index |
+| GIFT Nifty IT | USD | IT sector index |
+
+### Performance
+
+- Cumulative turnover exceeded **USD 2.40 trillion** as of October 2025
+- Record monthly turnover of **USD 102.35 billion** in May 2025
+- Operates ~19 hours per day across two sessions
+
+### Tax Advantages
+
+- Zero Capital Gains Tax on derivatives
+- No Securities Transaction Tax (STT), Commodity Transaction Tax (CTT), or stamp duty
+- Attractive for foreign portfolio investors and international participants
+
+[Source: [GIFT Nifty — Wikipedia](https://en.wikipedia.org/wiki/GIFT_Nifty); [NSE IX Official Website](https://www.nseix.com/); [NSE Press Release — GIFT Nifty Identity](https://www.nseindia.com/static/resources/nse-international-exchange-unveils-a-new-identity-for-gift-nifty)]
+
+---
+
+## Retail Options Trading: The Explosion and Regulatory Response
+
+### Scale of the Phenomenon
+
+NSE's derivatives market experienced an extraordinary surge in retail options trading:
+
+- **Volume growth:** Equity index options volume surged ~13x, from Rs 10.8 trillion (FY20) to Rs 138 trillion (FY24)
+- **NSE market share:** NSE holds over 90% of India's index options market
+- **Global dominance:** At peak, NSE accounted for more than 61% of all futures and options traded worldwide
+
+### SEBI Study Findings (September 2024)
+
+| Metric | Data |
+|--------|------|
+| Percentage of individual traders incurring losses | **93%** (FY22–FY24) |
+| Aggregate losses by individual traders | **Rs 1.8 lakh crore** (~USD 21.5 billion) over three years |
+| Average loss per trader | ~Rs 2 lakh per trader |
+| Loss rate trend | Worsening — 89% in FY22 to 91.1% in FY24 |
+| Proprietary trader profits (FY24) | Rs 33,000 crore gross |
+| FPI profits (FY24) | Rs 28,000 crore gross |
+| Algo trading share of institutional profits | 96–97% |
+
+### Regulatory Response
+
+SEBI's six-point reform package (October 2024) was explicitly designed to address the retail speculation crisis:
+
+1. **Weekly expiry rationalization** — reduced to one per exchange (effective Nov 20, 2024)
+2. **Lot size increase** — minimum contract value raised to Rs 15–20 lakh (effective Nov 21, 2024)
+3. **Expiry-day ELM** — 2% additional margin on short options on expiry day (effective Nov 20, 2024)
+4. **Upfront premium collection** — full premium required from option buyers (effective Feb 1, 2025)
+5. **Intraday monitoring of position limits** — enhanced real-time surveillance
+6. **Removal of calendar spread benefit on expiry day** — reduces margin offsets for spread positions on expiry
+
+### Outcome
+
+Post-implementation, F&O volumes declined 30–38%, smaller investor participation dropped ~49%, and NSE lost its #1 global ranking to Brazil's B3. SEBI views this as a successful policy outcome — protecting retail investors from disproportionate losses.
+
+[Source: [SEBI — September 2024 Press Release](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html); [CFA Institute — India's Derivatives Market and Retail Investors](https://blogs.cfainstitute.org/marketintegrity/2025/11/05/indias-derivatives-market-and-retail-investors/); [FIA — Premium Turnover in Indian Options](https://www.fia.org/marketvoice/articles/premium-turnover-indian-options-hits-150-billion); [NISM — Retail Derivatives Trading in India](https://www.nism.ac.in/blog/equity-linked-exchange-traded-derivative-contracts-the-retail-rush-and-regulatory-measures/)]
+
+---
+
+## Sources
+
+1. [NSE India — Official Website](https://www.nseindia.com)
+2. [NSE India — History & Milestones](https://www.nseindia.com/static/national-stock-exchange/history-milestones)
+3. [NSE India — Nifty 50 F&O Specifications](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50)
+4. [NSE India — Circuit Breakers](https://www.nseindia.com/products-services/equity-market-circuit-breakers)
+5. [NSE India — NEAT Trading System](https://www.nseindia.com/static/trade/platform-services-neat-trading-system)
+6. [NSE India — Colocation Facility](https://www.nseindia.com/static/trade/platform-services-co-location-facility)
+7. [NSE India — Currency Derivatives Contract Specs](https://www.nseindia.com/static/products-services/currency-derivatives-contract-specification-inr)
+8. [NSE India — Interest Rate Futures](https://www.nseindia.com/market-data/bond-market-futures)
+9. [NSE Clearing Limited](https://www.nseclearing.in/)
+10. [NSE Clearing — SPAN Margin](https://www.nseindia.com/products-services/equity-derivatives-nse-clearing-span)
+11. [NSE Clearing — Margins](https://www.nseclearing.in/risk-management/equity-derivatives/margins)
+12. [NSE IX — Official Website](https://www.nseix.com/)
+13. [GIFT Nifty — Wikipedia](https://en.wikipedia.org/wiki/GIFT_Nifty)
+14. [SEBI — Press Release: 93% Retail Losses, September 2024](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html)
+15. [FIA — Meteoric Rise of India's Equity Derivatives Volume](https://www.fia.org/marketvoice/articles/explainer-meteoric-rise-indias-equity-derivatives-volume)
+16. [FIA — 2024 Annual ETD Volume Review](https://www.fia.org/fia/articles/2024-annual-etd-volume-review)
+17. [FIA — Premium Turnover in Indian Options Hits $150 Billion](https://www.fia.org/marketvoice/articles/premium-turnover-indian-options-hits-150-billion)
+18. [Zerodha — SEBI's New Rules for Index Derivatives](https://zerodha.com/z-connect/business-updates/sebis-new-rules-for-index-derivatives-heres-whats-changing)
+19. [BusinessToday — NSE to Slash Trading Latency to Nanoseconds, February 2026](https://www.businesstoday.in/markets/stocks/story/nse-to-slash-trading-latency-to-nanoseconds-from-apr-11-targets-100-mn-transactions-per-second-517444-2026-02-22)
+20. [Business Standard — NSE Loses Top Derivatives Exchange Spot to B3](https://www.business-standard.com/markets/news/nse-loses-top-derivatives-exchange-spot-to-brazil-b3-eyes-vix-futures-125073001569_1.html)
+21. [Business Standard — Derivatives Trading Drops 38%](https://www.business-standard.com/markets/stock-market-news/derivatives-trading-drops-38-on-bse-nse-in-december-due-to-sebi-curbs-125010200580_1.html)
+22. [Business Standard — SEBI Announces Six Key Changes](https://www.business-standard.com/markets/news/sebi-announces-six-key-changes-to-curb-speculation-in-derivatives-trading-124100101316_1.html)
+23. [Bajaj Broking — SEBI Peak Margin Rules](https://www.bajajbroking.in/blog/sebi-peak-margin-rules)
+24. [Sahi — Nifty 50 Lot Size 2026](https://www.sahi.com/blogs/nifty-lot-size-2026-bank-nifty-sensex)
+25. [CFA Institute — India's Derivatives Market and Retail Investors](https://blogs.cfainstitute.org/marketintegrity/2025/11/05/indias-derivatives-market-and-retail-investors/)
+26. [Wikipedia — National Stock Exchange of India](https://en.wikipedia.org/wiki/National_Stock_Exchange_of_India)
+27. [NSE Press Release, January 2024](https://nsearchives.nseindia.com/web/sites/default/files/2024-01/PR_cc_18012024_0.pdf)
+28. [Whalesbook — NSE to Launch Platts Oil Derivatives](https://www.whalesbook.com/news/English/commodities/NSE-to-Launch-Platts-Oil-Derivatives-for-Indias-Price-Hedging/69d3c9f731d4f2ab480c738f)

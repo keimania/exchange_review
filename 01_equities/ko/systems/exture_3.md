@@ -1,0 +1,211 @@
+# Exture 3.0 — 한국거래소 (Korea Exchange, KRX)
+
+> **최종 업데이트:** 2026-04-13
+> **시스템 분류:** 매매시스템 / 청산결제시스템 / 시장정보시스템 (Trading System / Clearing System / Market Data System)
+
+---
+
+## 1. 시스템 개요 (System Overview)
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 시스템명 | Exture 3.0 (엑스처 3.0) |
+| 운영 기관 | 한국거래소 (KRX); KOSCOM과 공동 개발·운영 |
+| 목적 | KRX 전 시장(유가증권시장, KOSDAQ, KONEX, 파생상품시장)의 통합 매매·정보배포·청산·결제 플랫폼 |
+| 가동 연도 | 2023년 (1단계: 1월 25일 — 매매 + 정보배포; 2단계: 10월 4일 — 청산 + 결제) |
+| 현재 버전 | Exture 3.0 |
+| 개발 방식 | 자체 개발 (KRX/KOSCOM); 하드웨어 인프라 구축에 삼성SDS, LG CNS, SK C&C 등 대형 SI사 참여 (하드웨어 예산 약 350억 원) |
+
+### 시스템 변천사 (System Evolution)
+
+| 기간 | 시스템명 | 주요 변경사항 |
+|--------|-------------|-------------|
+| 1956-1988 | 수동/공개호가 (Manual / Open Outcry) | 물리적 매매장; 종이 기반 주문 처리 |
+| 1988-1997 | 전산보조매매 (Computer-assisted trading) | 공개호가와 병행하여 전자 주문 라우팅 도입; 일본 TSE CATS 시스템에서 영감 |
+| 1997-2009 | 완전자동화 (레거시) (Fully automated, legacy) | 매매장 폐지 (1997년 9월); KSE·KOSDAQ·KOFEX별 분리 시스템 운영 |
+| 2009-2014 | **EXTURE** | 2009년 3월 23일 가동; 세 레거시 시스템을 통합한 최초의 단일 플랫폼; 지연시간 약 20 ms; 처리용량 250 TPS; 일일 호가 처리 4,000만 건 |
+| 2014-2023 | **EXTURE+** | 2014년 가동; 획기적 업그레이드 — 지연시간 285배 단축; 국내 자본시장 최초 Linux x86 플랫폼 도입; 최악 지연시간 70 us 이하; 주문체결 20,000 TPS 이상; 처리 처리량 100,000 TPS 이상; 일일 호가 1억 6,000만 건; FIX/FAST 프로토콜, DMA (직접시장접근), 알고리즘 매매 지원 도입 |
+| 2023-현재 | **Exture 3.0** | 2019년 ISP 수립; 2020년 10월 구축 착수; 1단계 (2023년 1월): 매매 + 정보배포; 2단계 (2023년 10월): 청산 + 결제; EXTURE+ 대비 지연시간 30% 개선; 전 시스템 저지연 확대; 유연한 다중 매칭 아키텍처 |
+
+[Source: Finextra — EXTURE launch 2009; KOSCOM — EXTURE+ specs; Seoul Finance — Exture 3.0 Phase 1; CEO Score Daily — Phase 2]
+
+---
+
+## 2. 아키텍처 (Architecture)
+
+### 2.1 고수준 설계 (High-Level Design)
+
+- **집중형 (Centralized)** 매칭 + 분산 게이트웨이 아키텍처
+- **계층형 (Layered/Tiered)** 아키텍처; 메모리 기반 호가장 (order book)
+- **온프레미스 (On-premise)** — 서울·부산 이중 데이터센터 간 상호 전환 가능한 장애복구 체계
+- **유연하고 확장 가능한** 설계; 시장별 다중 매칭 기능 지원
+- 저지연 적용 범위를 매칭엔진 단독(EXTURE+)에서 정보배포·청산·결제를 포함한 **전 시스템**으로 확대
+
+### 2.2 핵심 구성요소 (Core Components)
+
+| 구성요소 | 기능 | 기술 |
+|-----------|----------|------------|
+| 매칭엔진 (Matching Engine) | 제로지연 설계를 목표로 한 메모리 기반 호가장 매칭; 가격-시간 우선원칙 | 자체 개발 (KRX/KOSCOM); x86 Linux |
+| 주문게이트웨이 (Order Gateway) | 회원 시스템 연결; 사전 주문 검증; 세션 관리 | FIX/FAST 프로토콜 지원; KRX 자체 바이너리 프로토콜 |
+| 시장정보 배포서버 (Market Data Publisher) | 실시간 호가·체결 배포; 대역폭 확대 (파생상품: 45 → 100 Mbps) | KOSCOM STOCK-NET 배포망 |
+| 위험관리엔진 (Risk Engine) | 실시간 위험 산출·시뮬레이션 (2단계 통합); 정적VI·동적VI·SAPI 모니터링 | 청산시스템과 통합 |
+| 시장감시시스템 (Surveillance) | 시장감시, 이상거래 탐지, 시세조종 방지 | KRX 자율규제 (SRO) 기능 |
+| 청산결제 모듈 (Clearing/Settlement Module) | 장내·장외 통합 청산결제 UI (2단계); 통합 위험관리 | Exture 3.0 2단계 |
+
+### 2.3 기술 스택 (Technology Stack)
+
+| 계층 | 기술 |
+|-------|-----------|
+| 프로그래밍 언어 | 미공개 (업계 관행 및 EXTURE+ 선례 기반 C/C++ 추정) |
+| 운영체제 | Linux (EXTURE+에서 국내 자본시장 최초 도입, 3.0에서 계속) |
+| 하드웨어 | x86 범용 서버; 하드웨어 인프라 예산 약 350억 원 |
+| 네트워크 | KOSCOM STOCK-NET 전용 고속 금융망; 파생상품 대역폭 100 Mbps |
+| 데이터베이스 | 미공개 |
+| 메시징/미들웨어 | FIX/FAST 프로토콜; 코로케이션 참가자용 자체 바이너리 프로토콜 |
+| 가상화 | 200석 데스크톱 가상화 (VDI) |
+
+---
+
+## 3. 성능 사양 (Performance Specifications)
+
+| 지표 | 수치 | 조건 |
+|--------|-------|------------|
+| 왕복 지연시간 (최악, EXTURE+) | ≤70 us | 코로케이션 기준; EXTURE+ 기준값 |
+| 왕복 지연시간 (평균, EXTURE+) | 30-50 us | 코로케이션 기준 |
+| 왕복 지연시간 (Exture 3.0, 추정) | 약 49 us (최악) | EXTURE+ 70 us 대비 30% 개선 [추정] |
+| 주문처리 속도 (매칭) | 20,000 TPS 이상 | EXTURE+ 기준 사양 |
+| 초당 최대 메시지 처리량 | 100,000 TPS 이상 | EXTURE+ 기준 사양 |
+| 일일 호가 처리 용량 | 1억 6,000만 건/일 | EXTURE+ 기준 사양 |
+| 가동률 SLA | 미공개 | 주 시스템 장애 시 예비시스템 가동 |
+
+**참고:** KRX는 Exture 3.0의 정확한 지연시간 및 처리량 수치를 공개하지 않았다. 30% 개선이라는 수치는 KRX의 공식 발표에 근거한다. 실제 운영 성능은 다를 수 있다.
+
+### 성능 변천사 (Performance History)
+
+| 연도 | 시스템 | 지연시간 | 처리량 | 비고 |
+|------|--------|---------|------------|-------|
+| 2009 | EXTURE | 약 20 ms | 250 TPS; 일 4,000만 건 | 최초 통합 플랫폼 |
+| 2014 | EXTURE+ | ≤70 us (최악); 30-50 us (평균) | 매칭 20,000 TPS 이상; 처리량 100,000 TPS 이상; 일 1억 6,000만 건 | 285배 지연시간 단축; 국내 최초 Linux x86 |
+| 2023 | Exture 3.0 | 약 49 us [추정] | 미공개; 파생상품 대역폭 100 Mbps | 30% 개선; 전 시스템 저지연 |
+
+---
+
+## 4. 인터페이스 및 프로토콜 (Interfaces & Protocols)
+
+### 4.1 주문 입력 (Order Entry)
+
+| 프로토콜 | 버전 | 설명 |
+|----------|---------|-------------|
+| FIX | 표준 | 국제 표준 주문 입력 프로토콜; EXTURE+부터 지원 |
+| KRX 자체 바이너리 (Native/Binary) | 자체 | 코로케이션 참가자용 고성능 프로토콜; 최저 지연시간 |
+| DMA (직접시장접근) | EXTURE+부터 | 기관투자자 및 알고리즘 매매자용 직접시장접근 |
+| 회원증권단말기 | KRX 제공 | KRX가 회원사에 제공하는 증권단말기 |
+
+### 4.2 시장정보 배포 (Market Data Dissemination)
+
+| 프로토콜 | 설명 | 데이터 내용 |
+|----------|-------------|-------------|
+| FAST (FIX Adapted for Streaming) | 압축 방식 시장정보 프로토콜 | 실시간 호가·체결·지수 |
+| KRX 자체 프로토콜 | KOSCOM STOCK-NET을 통한 직접 피드 | 전체 호가창 (Full depth of book); 실시간 운영 데이터 |
+| KOSCOM 배포 | 인터넷 및 전용선 제공 | L1, L2, 전체 호가창; 일별 종합 데이터 FTP 배포 |
+| KRX 데이터마켓플레이스 | 웹 포털 (data.krx.co.kr) | 과거 데이터, 기준 데이터, 지수; 무료·유료 서비스 |
+
+### 4.3 드롭카피 / 매매 보고 (Drop Copy / Trade Reporting)
+
+- 체결 확인은 회원 시스템 연결을 통해 전달된다.
+- 실시간 체결 데이터는 KOSCOM 배포망을 통해 제공된다.
+
+### 4.4 기준 데이터 (Reference Data)
+
+- 종목 기준 데이터, 기업행위 (Corporate Action), 지수 구성종목 등은 KRX 데이터마켓플레이스 및 KOSCOM 피드를 통해 제공된다.
+
+---
+
+## 5. 복원력 및 업무연속성 (Resilience & Business Continuity)
+
+### 5.1 이중화 (Redundancy)
+
+- **주-예비 (Active-passive)** 방식; 서울·부산 데이터센터 간 상호 전환 가능한 장애복구 체계
+- **예비시스템:** 주 시스템 장애 시 가동 [시행세칙 제42조 제4항]
+- **지역 분산:** 서울 DC (유가증권시장 주 서버) + 부산 DC (파생상품시장 주 서버); 상호 재해복구 (DR) 역할 수행
+
+### 5.2 재해복구 (Disaster Recovery)
+
+- **DR 사이트:** 서울 ↔ 부산 상호 전환
+- **RPO (목표복구시점):** 미공개
+- **RTO (목표복구시간):** 미공개; 복구를 위한 매매시간 조정 허용 [시행세칙 제8조 제2항]
+- **DR 테스트 주기:** 미공개
+
+### 5.3 용량 관리 (Capacity Management)
+
+- **확장성:** 시장별 다중 매칭 기능을 갖춘 유연한 확장 가능 아키텍처
+- **용량 계획:** 시스템 장애가 전체 거래량의 75% 이상을 담당하는 회원사에 영향을 미칠 경우 매매시간 조정 발동
+- **복구 원칙:** 장애 시간만큼 매매를 지연하여 운영 [시행세칙 제8조 제2항]
+- **부하 테스트:** HFT 등록 시 및 매년 접속 테스트 실시 필수 [시행세칙 제131조의4]
+
+---
+
+## 6. 주요 기술적 특징 (Notable Technical Features)
+
+- **전 시스템 저지연:** EXTURE+에서 매칭엔진에 국한되었던 저지연 범위를 Exture 3.0은 정보배포·청산·결제 전 과정에 걸쳐 100 us 이하로 확대한다.
+- **청산결제 통합 UI:** 2단계에서 장내 및 장외 청산결제를 단일 인터페이스로 통합하였다.
+- **실시간 위험 시뮬레이션:** 청산 모듈에 실시간 위험 산출·시뮬레이션 기능이 통합되어 있다.
+- **다중 매칭 아키텍처:** 시장별 매칭엔진 구성을 지원하는 유연한 설계를 채택한다.
+- **신규 호가유형:** 2025년 2월 중간가호가 (Mid-Price Order) 및 스톱지정가호가 (Stop Limit Order) 도입 — Exture 3.0의 유연한 아키텍처 덕분에 가능하였다.
+- **호가단위 세분화:** 주식 및 주식선물의 최대 틱/가격 비율이 0.5%에서 0.25%로 축소되었다.
+- **자기체결방지 (STP):** HFT 참가자를 위한 3가지 구성 가능한 모드의 자기체결방지 기능이 내장되어 있다.
+- **기술 수출:** KRX는 태국거래소에 청산결제 시스템 기술을 공급하는 계약을 체결하였다 (2025년 4월).
+- **Linux x86 선도 도입:** EXTURE+ (2014년)는 국내 자본시장 최초의 Linux x86 서버 환경을 도입하여 독점 하드웨어를 대체하였으며, Exture 3.0이 이 전통을 계승하고 있다.
+
+---
+
+## 7. 비교 분석 (Comparison Notes)
+
+### 글로벌 주요 시스템과의 비교 (vs. Global Peer Systems)
+
+| 항목 | Exture 3.0 (KRX) | Pillar (NYSE) | INET/Eqlipse (NASDAQ) | arrowhead 4.0 (JPX) | T7 (Deutsche Borse) | Optiq (Euronext) |
+|--------|------------------|---------------|----------------------|---------------------|---------------------|------------------|
+| 가동 연도 | 2023 | 2017-2023 | 2006/2024 | 2024 (4세대) | 2017 | 2018 |
+| 지연시간 | 약 49 us [추정] | 약 34 us (P50) | 약 14-20 us | 마이크로초 수준 | 약 5 us 중앙값 (코로케이션) | 약 15 us 평균 |
+| 처리량 | 100,000 TPS 이상 | 미공개 | 수백만 건/초 [추정] | 미공개 | 수십만 건/초/파티션 | 초당 100만 건 |
+| 아키텍처 | 메모리 기반 계층형 | 바이너리/FIX 게이트웨이, 결정론적 | FPGA 가속, 마이크로서비스 | 삼중 이중화, 후지쯔 서버 | 파티션 기반, 이벤트 구동 | SBE/FIX 5.0, Kafka |
+| 플랫폼 | Linux x86 | 미공개 | AWS 하이브리드 | Fujitsu PRIMERGY | 미공개 | 미공개 |
+| 특징 | 전 시스템 저지연 (매매+청산) | 물리 플로어+전자 하이브리드 | FPGA 가속 | AWS 클라우드 PoC | Eurex 파생상품과 공유 | 8개 시장 통합 |
+| DR/BCP | 서울-부산 이중 DC | Equinix NY11 + CH4 (시카고) | 미공개 | 도쿄 메트로 DC | Equinix FR2 | Aruba IT3, 베르가모 |
+
+### 핵심 차별화 요소 (Key Differentiators)
+
+- **통합 범위:** Exture 3.0은 매매·시장정보·청산·결제 전반에 걸쳐 단일 플랫폼으로 통합 저지연을 제공하는 몇 안 되는 시스템 중 하나이다.
+- **기술 수출 잠재력:** KRX는 청산결제 기술을 타 거래소에 적극적으로 라이선싱하고 있다 (태국거래소 계약, 2025년 4월).
+- **글로벌 지연시간 포지셔닝:** 세계적으로 중간 수준 (약 49 us 추정) — LSE Millennium (약 126 us), HKEX OTP-C (1 ms 이하)보다 빠르지만, Deutsche Borse T7 (약 5 us), NASDAQ INET (약 14 us), Euronext Optiq (약 15 us)보다는 느리다.
+- **국내 Linux x86 선도:** EXTURE+ (2014년)는 국내 자본시장 최초의 Linux x86 도입 사례로서 선례를 남겼으며, Exture 3.0이 이를 계승하고 있다.
+- **경쟁 대응:** Exture 3.0의 유연한 아키텍처 덕분에 넥스트레이드 (Nextrade)와의 경쟁에 대응하여 신규 호가유형(중간가호가, 스톱지정가호가) 도입 및 수수료 체계 변경을 신속하게 실행할 수 있었다 (2025년).
+
+### KRX 시스템 간 비교 (vs. KRX Systems)
+
+| 항목 | Exture 3.0 | EXTURE+ (전 세대) |
+|--------|-----------|----------------------|
+| 지연시간 | 약 49 us [추정] | ≤70 us (최악) |
+| 적용 범위 | 매매 + 정보배포 + 청산결제 | 매매·매칭만 해당 |
+| 아키텍처 | 유연한 다중 매칭 | 메모리 기반 호가장 |
+| 청산결제 | 장내·장외 통합 UI | 별도 시스템 |
+| 위험관리 | 통합 실시간 시뮬레이션 | 별도 |
+| 파생상품 대역폭 | 100 Mbps | 45 Mbps |
+| 호가단위 세분화 | 최대 틱/가격 비율 0.25% | 최대 0.5% |
+
+---
+
+## 출처 (Sources)
+
+1. [KRX Global — EXTURE+ Trading System](https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp)
+2. [KOSCOM — KRX Trading System](https://www.koscom.co.kr/eng/main/contents.do?menuNo=300005)
+3. [Seoul Finance — Exture 3.0 Phase 1 Launch](https://www.seoulfn.com/news/articleView.html?idxno=477662), 2023-01-25
+4. [CEO Score Daily — Exture 3.0 Phase 2](https://m.ceoscoredaily.com/page/view/2023092616475531974), 2023-09-26
+5. [Finextra — EXTURE Launch 2009](https://www.finextra.com/pressarticle/26674/korea-exchange-launches-new-trading-system)
+6. [Finextra — EXTURE+ Launch 2014](https://www.finextra.com/pressarticle/54152/korea-exchange-launches-exture-trading-platform)
+7. [Digital Daily — KRX HW Infrastructure Project](https://m.ddaily.co.kr/page/view/2013010408094542642)
+8. [KOSCOM — Market Data Service](https://www.koscom.co.kr/eng/main/contents.do?menuNo=300126)
+9. [KOSCOM — STOCK-NET](https://www.koscom.co.kr/eng/main/contents.do?menuNo=300122)
+10. [WatersTechnology — IPC connects to KOSCOM Busan facility](https://www.waterstechnology.com/trading-tech/2218681/ipc-connects-to-koscom-busan-facility)
+11. [Wikipedia — Korea Exchange](https://en.wikipedia.org/wiki/Korea_Exchange)
+12. 유가증권시장 업무규정 시행세칙 (전문, 2026.04.01) — 시스템 관련 조항

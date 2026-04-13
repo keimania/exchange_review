@@ -1,0 +1,676 @@
+# 최종 리뷰 (Final Review): 글로벌 거래소 연구 — 도메인 간 비교 분석 및 KRX 벤치마킹
+
+> **작성일:** 2026-04-13
+> **범위:** 주식시장 23개 거래소, 파생상품시장 17개 거래소, 청산·결제 기관 20개
+> **총 문서 수:** 3개 도메인에 걸쳐 영문 연구 파일 90개 이상
+
+---
+
+## 목차 (Table of Contents)
+
+1. [도메인 간 비교 분석](#1-도메인-간-비교-분석)
+2. [KRX 벤치마킹](#2-krx-벤치마킹)
+3. [품질 검토](#3-품질-검토)
+
+---
+
+## 1. 도메인 간 비교 분석 (Cross-Domain Comparative Analysis)
+
+### 1.1 주요 비교표 — 거래소 인프라 생태계 (Master Comparison — Exchange Infrastructure Ecosystem)
+
+글로벌 거래소 생태계는 **매매(Trading, 거래소) → 청산(Clearing, CCP) → 결제(Settlement, CSD)**의 상호연결된 체계로 운영된다. 아래 표는 조사 대상 전 지역에 걸친 이들 관계를 정리한 것이다.
+
+#### 북미 (North America)
+
+| 거래소 (Trading) | 매매시스템 | CCP (청산) | 증거금 방식 | CSD (결제) | 결제주기 |
+|---|---|---|---|---|---|
+| NYSE | Pillar (ICE, 자체개발) | NSCC (DTCC) | VaR 기반 | DTC (DTCC) | T+1 |
+| NASDAQ | Eqlipse/INET (자체개발) | NSCC (DTCC) | VaR 기반 | DTC (DTCC) | T+1 |
+| CME/CBOT/NYMEX/COMEX | Globex (자체개발) | CME Clearing | SPAN → SPAN 2 (HVaR) | CME 결제 | T+0/T+1 |
+| Cboe | Titanium (자체개발) | OCC | STANS (Monte Carlo) | DTC (DTCC) | T+1 |
+| ICE Futures | ICE Platform (자체개발) | ICE Clear US/Europe/Credit | IRM 2 (FHS VaR) | — | T+0/T+1 |
+| TMX (TSX) | Quantum XA (자체개발) | CDS Canada | 담보 기반 | CDS (CDSX) | T+1 |
+| Montreal Exchange | SOLA (자체개발) | CDCC | SPAN | CDS (CDSX) | T+1 |
+
+#### 유럽 (Europe)
+
+| 거래소 (Trading) | 매매시스템 | CCP (청산) | 증거금 방식 | CSD (결제) | 결제주기 |
+|---|---|---|---|---|---|
+| LSE | Millennium (LSEG/MillenniumIT) | LCH Ltd | PAIRS (ES 기반) | Euroclear UK & Ireland | T+2 |
+| Euronext (7개국) | Optiq (자체개발) | Euronext Clearing (구 LCH SA) | VaR 기반 | Euroclear | T+2 |
+| Deutsche Borse / Xetra | T7 (자체개발) | Eurex Clearing | PRISMA (FHS) | Clearstream | T+2 |
+| Eurex (파생상품) | T7 (자체개발) | Eurex Clearing | PRISMA (FHS) | Clearstream | T+2 |
+| SIX Swiss | SWXess/X-stream (Nasdaq) | SIX x-clear | Monte Carlo VaR | SIX SIS | T+2 |
+| Borsa Italiana | Optiq (Euronext) | LCH Ltd → Euronext Clearing | VaR 기반 | Monte Titoli / Euroclear | T+2 |
+| BME (스페인) | SIBE-Smart (자체개발) | BME Clearing | VaR 기반 | Iberclear | T+2 |
+| Nasdaq Nordic | Genium INET (Nasdaq) | Eurex Clearing | PRISMA | Euroclear Finland/Sweden | T+2 |
+
+#### 아시아·태평양 (Asia-Pacific)
+
+| 거래소 (Trading) | 매매시스템 | CCP (청산) | 증거금 방식 | CSD (결제) | 결제주기 |
+|---|---|---|---|---|---|
+| JPX / TSE | arrowhead 4.0 (Fujitsu 공동개발) | JSCC | VaR (99%) | JASDEC | T+2 |
+| Osaka Exchange (JPX 파생) | J-GATE 3.0 (Genium INET) | JSCC | VaR (SPAN에서 전환) | JASDEC | T+2 |
+| HKEX (주식) | OTP-C / Orion (자체개발) | HKSCC | Cover 2 | HKSCC (통합) | T+2 |
+| HKEX (파생상품) | HKATS (Genium INET) | HKCC / SEOCH | PRiME (VaR) | HKSCC | T+1 |
+| SGX (주식) | REACH (Nasdaq) | CDP | 위험기반 (99%+) | CDP (통합) | T+2 |
+| SGX (파생상품) | Titan DT (Genium INET) | SGX-DC | IRM (SPAN 유사) | SGX-DC | T+0 |
+| ASX (주식) | ASX Trade (Genium INET) | ASX Clear | VaR 기반 | ASX Settlement (CHESS) | T+1 |
+| ASX (파생상품) | ASX 24 NTP (Nasdaq) | ASX Clear (Futures) | SPAN 기반 | ASX Settlement | T+1 |
+| SSE (상하이) | 4세대 (자체개발) | ChinaClear | 고정비율 | CSDC | T+1 |
+| SZSE (선전) | 자체개발 (in-house) | ChinaClear | 고정비율 | CSDC | T+1 |
+| NSE India (주식) | NEAT+ (자체개발) | NSCCL | SPAN | NSDL / CDSL | T+1 |
+| NSE India (F&O) | NEAT+ (자체개발) | NSE Clearing (NCL) | SPAN (100% 최고치) | NSDL / CDSL | T+1 |
+| BSE India | BOLT Plus (T7 라이선스) | ICCL | VaR 기반 | CDSL | T+1 |
+| TWSE | FAST 2세대 (자체개발) | Taiwan CCDC | VaR 기반 | TDCC | T+2 |
+| TAIFEX | 6세대 (자체개발) | TAIFEX Clearing | 시나리오 기반 | TDCC | T+0/T+1 |
+| Bursa Malaysia | BTS2/X-stream (Nasdaq) | Bursa Malaysia Clearing | 위험기반 | Bursa Malaysia Depository | T+2 |
+| **KRX (주식)** | **Exture 3.0 (자체개발)** | **KRX Clearing** | **KRX-SPAN (시나리오 기반)** | **KSD** | **T+2** |
+| **KRX (파생상품)** | **Exture 3.0 (자체개발)** | **KRX Clearing** | **KRX-SPAN (시나리오 기반)** | **KSD** | **T+0/T+1** |
+
+#### 중동 및 아프리카 (Middle East & Africa)
+
+| 거래소 (Trading) | 매매시스템 | CCP (청산) | 증거금 방식 | CSD (결제) | 결제주기 |
+|---|---|---|---|---|---|
+| Tadawul (사우디) | X-stream INET (Nasdaq) | Muqassa | 포트폴리오 기반 | Edaa | T+2 |
+| JSE (남아프리카) | Millennium (LSEG) | JSE Clear | VaR 기반 | Strate | T+3 |
+| DME (두바이) | CME Globex (위탁 운영) | CME Clearing | SPAN / SPAN 2 | — | T+0/T+1 |
+
+---
+
+### 1.2 글로벌 거래소 공통 기술 벤더 (Common Technology Vendors Across Exchanges)
+
+글로벌 거래소 기술 시장은 소수의 플랫폼 공급업체가 지배하고 있다.
+
+#### Nasdaq Technology (INET / Genium INET / X-stream INET)
+
+전 세계에서 가장 광범위하게 배포된 거래소 기술로, **10개 이상의 거래소**에 공급되고 있다.
+
+| 플랫폼 변형 | 거래소 | 도메인 |
+|---|---|---|
+| INET / Eqlipse (4세대) | NASDAQ | 주식 |
+| Genium INET | ASX, Nasdaq Nordic, SGX (REACH), Bursa Malaysia, SIX Swiss | 주식 |
+| Genium INET (파생상품) | HKEX 파생상품 (HKATS), SGX 파생상품 (Titan DT), Osaka Exchange (J-GATE) | 파생상품 |
+| X-stream INET | Tadawul, Bursa Malaysia (BTS2) | 주식 |
+
+**주요 특징:** OUCH/ITCH/FIX 프로토콜; 모듈형 아키텍처; 100마이크로초 미만 지연시간; 설정 가능한 체결 알고리즘.
+
+#### LSEG / MillenniumIT (Millennium Exchange)
+
+| 거래소 | 도메인 |
+|---|---|
+| LSE | 주식 |
+| JSE (남아프리카) | 주식 |
+| Borsa Italiana (2023-24년 Optiq으로 전환) | 주식 (구 시스템) |
+| 글로벌 40개 이상 거래소 | 다양 |
+
+**주요 특징:** C++/Linux; 약 126마이크로초 지연시간; 신흥시장에 광범위하게 배포.
+
+#### Deutsche Borse (T7 플랫폼)
+
+| 거래소 | 도메인 |
+|---|---|
+| Deutsche Borse / Xetra | 주식 |
+| Eurex | 파생상품 |
+| BSE India (BOLT Plus, T7 라이선스) | 주식 |
+
+**주요 특징:** 중간값 기준 약 5마이크로초 지연시간 (주요 플랫폼 중 최고 속도); 파티션 기반 아키텍처; 주식·파생상품 공용 플랫폼; C/C++/Linux.
+
+#### 자체개발 독점 시스템 (In-House Proprietary Systems)
+
+| 거래소 | 시스템 | 주요 특징 |
+|---|---|---|
+| NYSE | Pillar | 7개 거래소 통합; 34마이크로초 바이너리 |
+| CME Group | Globex | Google Cloud 이전 2026-2028 |
+| Euronext | Optiq | 7개국 통합; 약 15마이크로초; Kafka 영속성 |
+| HKEX (주식) | OTP-C / Orion | SDNet/3 네트워크 |
+| SSE, SZSE | 자체개발 | 기술 독립 정책 |
+| NSE India | NEAT+ | 나노초 업그레이드 2026년 4월 예정 |
+| TMX | Quantum XA | — |
+| TWSE | FAST 2세대 | 3ms 미만 |
+| BME | SIBE-Smart | — |
+| ICE | ICE Platform | 서브밀리초 |
+| Cboe | Titanium | 100마이크로초 미만 |
+| KRX | Exture 3.0 | 주식·파생상품 통합; 약 49μs 추정; 1단계 2023년 1월 |
+
+#### 기술 벤더 요약 (Technology Vendor Summary)
+
+| 벤더 | 주식 | 파생상품 | 청산 시스템 | 총 적용 범위 |
+|---|---|---|---|---|
+| **Nasdaq Tech** | 7개 거래소 | 4개 거래소 | — | 11개 이상 거래소 |
+| **LSEG/MillenniumIT** | 2개 이상 거래소 | — | — | 글로벌 40개 이상 |
+| **Deutsche Borse T7** | 2개 거래소 (BSE 라이선스 포함) | 1개 거래소 | Eurex C7 | 3개 이상 |
+| **자체개발** | 11개 거래소 | 10개 거래소 | 모든 CCP | 다수 |
+
+**핵심 시사점:** Nasdaq 기술이 글로벌 배포 범위는 가장 넓지만, 대형 거래소(NYSE, CME, Euronext, HKEX 주식, 중국 거래소)는 자체개발 시스템을 사용한다. Tier 1 거래소는 자체개발, Tier 2/3 거래소는 라이선스 기술을 채택하는 추세가 뚜렷하다.
+
+---
+
+### 1.3 청산기관 관계도 — CCP별 청산 대상 거래소 (Clearing Relationship Map — Which CCP Clears for Which Exchange)
+
+#### 글로벌 CCP-거래소 관계
+
+```
+DTCC (NSCC/DTC/FICC)
+  ├── NYSE
+  ├── NASDAQ
+  ├── Cboe (주식)
+  └── 모든 미국 주식 거래소 + 미국 국채
+
+CME Clearing
+  ├── CME / CBOT / NYMEX / COMEX
+  ├── DME (Dubai Mercantile Exchange)
+  └── FICC (국채)와 교차증거금
+
+OCC (Options Clearing Corporation)
+  ├── 모든 미국 주식옵션 거래소 (Cboe, NYSE Arca, NASDAQ, ISE 등)
+  └── NSCC/FICC/DTC와 교차증거금
+
+LCH Ltd (영국)
+  ├── LSE (EquityClear)
+  ├── 글로벌 OTC IRS (SwapClear — 2024년 상반기 $779T)
+  ├── RepoClear
+  └── 상호운용성: SIX x-clear, Cboe Clear Europe
+
+Euronext Clearing (구 LCH SA, 2024년 9월 전환)
+  ├── Euronext (파리, 암스테르담, 브뤼셀, 리스본, 더블린, 오슬로, 밀라노)
+  └── Borsa Italiana (전환 중)
+
+Eurex Clearing
+  ├── Eurex (파생상품)
+  ├── Xetra / Deutsche Borse (주식)
+  ├── Nasdaq Nordic
+  └── OTC IRS 청산
+
+JSCC (일본)
+  ├── TSE / JPX (주식)
+  ├── Osaka Exchange (파생상품)
+  └── OTC IRS (TONA), CDS
+
+HKEX Clearing (HKSCC / HKCC / SEOCH)
+  ├── HKEX (주식, HKSCC 경유)
+  ├── HKEX (선물, HKCC 경유)
+  ├── HKEX (주식옵션, SEOCH 경유)
+  └── Stock Connect (ChinaClear와 크로스보더)
+
+SGX-DC / CDP
+  ├── SGX (주식, CDP 경유)
+  ├── SGX (파생상품, SGX-DC 경유)
+  └── NSE India와 GIFT Connect
+
+ICE Clear (US / Europe / Credit)
+  ├── ICE Futures U.S.
+  ├── ICE Futures Europe
+  └── ICE Clear Credit (CDS — $2T 이상 미결제약정)
+
+ASX Clear / ASX Clear (Futures)
+  ├── ASX (주식)
+  └── ASX 24 (파생상품)
+
+ChinaClear (CSDC)
+  ├── SSE (상하이)
+  ├── SZSE (선전)
+  └── Stock Connect (HKSCC와 크로스보더)
+
+NSE Clearing (NCL) / ICCL
+  ├── NSE India (주식 + F&O)
+  └── BSE India (ICCL 경유)
+
+KRX Clearing (한국)
+  ├── KRX (주식 — KOSPI, KOSDAQ)
+  ├── KRX (파생상품 — KOSPI 200, KTB, FX, 상품)
+  └── OTC IRS/CRS 청산 (의무화)
+
+KSD (한국예탁결제원)
+  ├── KRX (상장 주식, 채권, ETF 전체)
+  ├── 국채 결제 (BOK 중앙은행 자금)
+  └── 크로스보더 연결: Euroclear, Clearstream, DTC
+```
+
+#### 국경 간 청산 약정 (Cross-Border Clearing Arrangements)
+
+| 약정 | 유형 | 참여 기관 | 현황 |
+|---|---|---|---|
+| Stock Connect | 크로스보더 주식 접근 | HKSCC ↔ ChinaClear | 운영 중 (2014-) |
+| GIFT Connect | 크로스보더 파생상품 | SGX-DC ↔ NSE India | 운영 중 (2023-) |
+| Swap Connect | 크로스보더 IRS | OTC Clear (HK) ↔ CFETS | 북향(Northbound) 운영 중 (2023-) |
+| CME-FICC 교차증거금 | 교차CCP 증거금 상계 | CME Clearing ↔ FICC | 운영 중 (2024-) |
+| CCP 상호운용성 | 다중CCP 청산 | LCH Ltd ↔ SIX x-clear ↔ Cboe Clear Europe | 운영 중 |
+| CME-OCC 교차증거금 | 포트폴리오 증거금 상계 | CME Clearing ↔ OCC | 운영 중 |
+| JSCC-CFTC | 규제 인정 | JSCC ↔ 미국 거주자 | JPY-IRS 고객 청산 (2025-) |
+
+---
+
+### 1.4 글로벌 결제주기 전환 현황 (Global Settlement Cycle Transition Status)
+
+| 결제주기 | 지역 | 달성/목표 시기 |
+|---|---|---|
+| **T+1 (달성)** | 미국, 캐나다 | 2024년 5월 |
+| **T+1 (달성)** | 인도 | 2023년 1월 |
+| **T+1 (달성)** | 중국 (주식) | 진행 중 (당일 매도 제한 있음) |
+| **T+1 (달성)** | 호주 | 2024년 하반기 |
+| **T+2 (T+1 목표)** | EU (28개국) | 목표: 2027년 10월 |
+| **T+2 (T+1 목표)** | 영국 | 목표: 약 2027년 |
+| **T+2 (검토 중)** | 일본, 홍콩, 싱가포르, 대만 | 논의 중 |
+| **T+2 (적극 검토)** | 한국 (KRX/KSD) | 적극 검토 중; KSD 분할결제 개혁 진행 중 (2026년 4월부터 KRW 10억 단위) |
+| **T+3 (예외)** | 남아프리카 (JSE) | 전환 일정 미발표 |
+
+---
+
+### 1.5 증거금 방법론 수렴 추세 (Margin Methodology Convergence)
+
+글로벌 청산 업계는 시나리오 기반(SPAN)에서 VaR 기반 방법론으로 전환 중이다.
+
+| 세대 | 방법론 | 사용 CCP | 주요 특징 |
+|---|---|---|---|
+| **1세대** | 고정비율 | CFFEX, DCE, SHFE | 규제 재량; 정책 수단으로 활용 |
+| **2세대** | SPAN (시나리오 기반) | CDCC, ASX Clear (Futures), NSE Clearing, SGX-DC (IRM) | 16가지 표준 시나리오 |
+| **3세대** | Historical VaR | JSCC, HKSCC, ICE Clear (IRM 2), CME (SPAN 2) | 필터링된 역사적 시뮬레이션 |
+| **3세대** | PRISMA (FHS + ES) | Eurex Clearing | 750개 필터링 + 250개 스트레스 시나리오; 포트폴리오 기반 |
+| **3세대** | PAIRS (ES 기반) | LCH | Expected Shortfall 99.7%; 5일 보유기간 |
+| **3세대** | STANS (Monte Carlo) | OCC | 10,000개 이상 시나리오; 99% ES |
+| **2세대** | KRX-SPAN (시나리오 기반) | KRX | 변형 SPAN; VaR 전환 검토 중 (JSCC 2023년 선례 참고) |
+| **전환기** | SPAN → SPAN 2 | CME Clearing | HVaR + ES; 2023-2025년 단계적 전환 |
+
+---
+
+## 2. KRX 벤치마킹 (KRX Benchmarking)
+
+### 2.1 KRX 프로필 요약 (KRX Profile Summary)
+
+Korea Exchange (KRX, 한국거래소)는 주식(KOSPI/KOSDAQ/KONEX), 파생상품, 채권을 아우르는 통합 거래소로 운영된다. 핵심 인프라는 다음과 같다.
+
+- **주식 매매시스템:** Exture 3.0 (1단계: 2023년 1월, 2단계: 2023년 10월; 자체개발)
+- **파생상품 매매시스템:** Exture 3.0 (통합 플랫폼)
+- **CCP:** KRX가 전체 상장상품에 대해 직접 CCP 역할 수행
+- **CSD:** KSD (한국예탁결제원, Korea Securities Depository)
+- **감독기관:** FSC (금융위원회, Financial Services Commission), FSS (금융감독원, Financial Supervisory Service), BOK (한국은행, Bank of Korea — 시스템적 감독)
+- **결제주기:** T+2 (주식), T+1 (국채), T+0/T+1 (파생상품 증거금)
+- **시가총액:** 약 KRW 4,277조 (약 USD 2.95조, 2026년 1월)
+- **상장기업 수:** 약 2,901개 (KOSPI 약 954개, KOSDAQ 1,700개 이상, KONEX 약 129개)
+- **일평균 거래대금:** 약 KRW 32.23조 (약 USD 207억, 2026년 2월 평균)
+
+---
+
+### 2.2 KRX 주식시장 대 글로벌 비교 (KRX Equities Market vs Global Peers)
+
+#### 매매시스템 비교 (Trading System Comparison)
+
+| 지표 | KRX (Exture+) | NYSE (Pillar) | NASDAQ (Eqlipse) | Deutsche Borse (T7) | JPX (arrowhead 4.0) |
+|---|---|---|---|---|---|
+| **지연시간** | ≤70μs 최악치 (EXTURE+); 약 49μs 추정 (Exture 3.0, 30% 개선) | 약 34마이크로초 | 약 14마이크로초 | 약 5마이크로초 | 마이크로초 수준 |
+| **아키텍처** | 자체개발 (Linux x86, 메모리 기반 호가창) | 자체개발 (ICE) | 자체개발 (4세대) | 자체개발 | 공동개발 (Fujitsu) |
+| **출시** | 2023년 1월 (Exture 3.0 1단계) | 2016-2023 | 2024 | 2012/2017 | 2024년 11월 |
+| **통합 범위** | 주식 + 파생상품 + 청산/결제 | 7개 NYSE 거래소 | 복수 시장 | 주식 + 파생상품 | 주식 전용 |
+
+**평가:**
+- **경쟁력 있음:** Exture 3.0 지연시간(약 49μs 최악치 추정)은 대부분의 거래소와 비교 시 경쟁력이 있으나, 선두 거래소(T7 약 5μs, NASDAQ 약 14μs)에는 미치지 못한다.
+- **강점:** Exture 3.0은 최근(2023년 1월/10월) 업그레이드된 시스템으로, 저지연 범위를 청산·결제까지 확장한 통합 플랫폼을 제공 — 대부분의 비교 대상보다 커버리지가 넓다.
+- **강점:** 주식, 파생상품, 청산·결제를 아우르는 통합 플랫폼 — arrowhead + J-GATE + JSCC와 같이 시스템이 분리된 JPX보다 효율적이다.
+- **격차:** 공식적인 Exture 3.0 지연시간·처리량이 공개되지 않음 — 약 49μs 수치는 KRX가 발표한 EXTURE+(≤70μs) 대비 30% 개선 주장에 근거한 추정치이다.
+
+#### 시장 구조 비교 (Market Structure Comparison)
+
+| 특성 | KRX | NYSE | NASDAQ | LSE | JPX | HKEX |
+|---|---|---|---|---|---|---|
+| **시가총액** | 약 $2.95T (KRW 4,277조, 2026년 1월) | $28.0T | $42.2T | $5.9T | $8.1T | $6.2T |
+| **시가(개장)동시호가** | 있음 (동시호가) | 있음 | 있음 (크로스) | 있음 | 있음 | 있음 |
+| **종가(마감)동시호가** | 있음 | 있음 (D-Limit) | 있음 (크로스) | 있음 | 있음 (2024년 11월부터) | 있음 |
+| **점심 휴장** | 없음 (2000년 폐지) | 없음 | 없음 | 없음 | 있음 (11:30-12:30) | 있음 (12:00-13:00) |
+| **가격제한폭** | ±30% (IPO +300%/-60%) | LULD (5-20%) | LULD (5-20%) | 없음 (동적 CB) | ±30% (상장 첫날 없음) | 없음 |
+| **DMM/시장조성자** | LP 프로그램 | 지정 MM | 등록 MM | 자율 MM | 자율 MM | 자율 MM |
+| **다크트레이딩** | 미미 | 거래량의 약 15% | 거래량의 약 15% | 약 10% | 미미 | 미미 |
+
+**평가:**
+- **KRX 선도:** 2000년부터 점심 휴장 폐지 — 여전히 점심 휴장을 운영 중인 모든 아시아 비교 대상 거래소보다 앞서 있다. 가격제한폭(±30%) 설계도 합리적이다.
+- **KRX 뒤처짐:** 다크풀·대체거래소 생태계 미미; 시간외 거래가 16:00-18:00에 한정됨 (NYSE는 22시간 거래 계획 중); Nextrade (NXT) ATS 승인 대기 중.
+
+#### 결제 비교 (Settlement Comparison)
+
+| 특성 | KRX/KSD | DTCC (미국) | LCH/Euroclear (EU) | JSCC/JASDEC (일본) | HKSCC (홍콩) |
+|---|---|---|---|---|---|
+| **결제주기** | T+2 | T+1 | T+2 | T+2 | T+2 |
+| **DVP 모델** | DVP Model 1 | DVP Model 2 | DVP Model 1 (T2S) | DVP Model 3 | DVP Model 1 |
+| **중앙은행 자금** | BOK (KRW) | 연준 (Fedwire) | ECB (T2S, EUR) | BOJ | HKMA (RTGS) |
+| **T+1 계획** | 검토 중 | 달성 (2024년 5월) | 목표 2027년 10월 | 논의 중 | 2025년까지 준비 |
+
+**평가:**
+- **격차:** 미국·캐나다·인도·호주가 T+1으로 이전한 상황에서 T+2 결제 유지 중. T+1 전환이 우선 과제로 추진되어야 한다.
+- **강점:** BOK 결제와 결합된 DVP Model 1은 견고한 결제 확정성을 제공한다.
+
+---
+
+### 2.3 KRX 파생상품시장 대 글로벌 비교 (KRX Derivatives Market vs Global Peers)
+
+#### 거래량 및 상품 비교 (Volume and Product Comparison)
+
+| 거래소 | 2024년 거래량 (계약) | 상품 폭 | 주요 상품 |
+|---|---|---|---|
+| NSE India (F&O) | 약 920억-1,080억 [추정] | 주식지수, 개별주식, FX, 상품 | Nifty 50, Bank Nifty |
+| CME Group | 약 62억 (ADV 2,810만) | 멀티애셋 (6개 이상 자산군) | E-mini S&P, 국채, WTI, 금 |
+| Eurex | 약 21억 | 멀티애셋 (8개 이상 자산군) | Euro-Bund, EURO STOXX 50, DAX |
+| KRX | 약 15억 (2024년; 거래대금 기준 글로벌 8위) | 주식지수 (KOSPI 200, 미니, 위클리, KOSDAQ 150, 섹터), 개별주식 (선물 약 274개, 옵션 약 64개), FX (USD/JPY/EUR/CNY), 상품 (금, 돈육), 금리 (3Y/10Y/30Y KTB), 변동성 (V-KOSPI 200) | KOSPI 200 옵션/선물, 미니 KOSPI 200 |
+| Cboe | 약 45억 (ADV 1,840만 옵션) | 주식/지수 옵션 | SPX, VIX |
+| HKEX 파생 | 약 3억3,400만 | 주식지수, FX, 상품 | HSI, H주 |
+| SGX 파생 | 약 3억2,900만 | 아시아 주식지수, FX, 상품 | FTSE China A50, Nikkei 225 |
+
+**평가:**
+- **KRX 선도:** 역사적으로 세계에서 가장 활발한 단일상품 파생상품 거래소 (KOSPI 200 옵션; 2011년 최고치 39억3,000만 계약). 2012년 승수 인상(KRW 100,000 → 500,000) 이후 거래량이 약 15억 계약(2024년)으로 정상화. KRX는 파생상품 거래대금 기준 글로벌 8위이다.
+- **KRX 뒤처짐:** 상품 폭 개선 중이나 여전히 KOSPI 200에 집중. CME, Eurex는 훨씬 다양한 상품 라인업 보유. 상품 커버리지 미흡 (금, 돈육에 한정). V-KOSPI 200 선물 존재하나 유동성 제한적이다.
+- **기회:** 야간 거래 확대 (2025년 6월부터 10개 상품); 상품 파생상품 개발; 환경·ESG 파생상품; 위클리 옵션 확대.
+
+#### 증거금 방법론 비교 (Margin Methodology Comparison)
+
+| 특성 | KRX | CME (SPAN 2) | Eurex (PRISMA) | OCC (STANS) | LCH (PAIRS) |
+|---|---|---|---|---|---|
+| **방법론** | KRX-SPAN (변형 SPAN, 시나리오 기반) | Historical VaR + ES | 필터링 역사적 시뮬레이션 | Monte Carlo VaR | Expected Shortfall |
+| **신뢰수준** | 공개되지 않음 | 99%+ | 99%/99.5% | 99% | 99.7% |
+| **보유기간** | 공개되지 않음 | 1-2일 (ETD) | 2일 (ETD) | 2일 | 5일 (SwapClear) |
+| **교차증거금** | 스프레드 증거금 (만기간/상품간); OTC IRS/CRS 청산 (의무화) | 포괄적 (선물-IRS, CME-OCC) | 포괄적 (ETD-OTC, 교차자산) | 포트폴리오 마진 | 교차서비스 |
+| **경기순응성 완화** | 공개되지 않음; VaR 전환 검토 중 | 스트레스 VaR 하한 | 스트레스 버퍼 | 증거금 하한 | 변동성 버퍼 |
+
+**평가:**
+- **업데이트:** KRX는 KRX-SPAN(변형 SPAN, 시나리오 기반)을 사용 — 2세대 방법론. KRX는 JSCC의 2023년 선례를 참고하여 VaR 기반 방식으로의 전환을 검토 중이다.
+- **격차:** 교차증거금이 스프레드 증거금 및 의무화된 OTC IRS/CRS 청산에 한정. CME, Eurex와 같은 포괄적 ETD-OTC 포트폴리오 마진 또는 CCP 간 약정 없음.
+- **격차:** 증거금 방법론의 신뢰수준 및 보유기간 미공개 — 투명성 개선 권고.
+- **기회:** VaR 전환 시 KRX가 글로벌 3세대 기준에 부합하게 됨; 주식·파생상품·채권 간 포괄적 교차증거금 체계 구축 필요.
+
+---
+
+### 2.4 KRX/KSD 청산·결제 대 글로벌 비교 (KRX/KSD Clearing & Settlement vs Global Peers)
+
+#### CCP 비교 (CCP Comparison)
+
+| 특성 | KRX (CCP) | DTCC/NSCC | CME Clearing | LCH | Eurex Clearing |
+|---|---|---|---|---|---|
+| **모델** | 통합형 거래소-CCP | 독립형 CCP (유틸리티) | 거래소-CCP (CME Group) | 멀티거래소 CCP | 거래소-CCP (DBAG) |
+| **청산 대상** | 주식, 파생상품, 채권 | 주식, 국채, MBS | 선물, 옵션, OTC IRS/FX | OTC IRS, 레포, 주식, FX, CDS | ETD, 주식, OTC IRS |
+| **결제이행재원 (채무불이행 워터폴)** | 순차적: ①채무불이행 회원 증거금 → ②채무불이행 회원 청산기금 예치금 → ③손해배상공동기금(약 KRW 1,000억 추정) → ④KRX 자기자본(SITG) → ⑤비채무불이행 회원 추가 기여 | 부담금 권한 포함 순차적 | 보증기금 포함 순차적 | 준비기금 포함 순차적 | 준비기금 포함 순차적 |
+| **SITG (자기부담분, Skin-in-the-Game)** | 존재 (4단계, 비채무불이행 회원 이전); 금액 미공개 | 실질적 | 실질적 | 실질적 | 실질적 |
+| **커버 기준** | 명시적으로 공개되지 않음; PFMI 대체로 이행 (IMF FSAP 평가) | Cover 1-2 | Cover 2 | Cover 2 | Cover 2 |
+| **PFMI 준수** | 대체로 이행 (FSAP 평가) | 완전 이행 | 완전 이행 | 완전 이행 | 완전 이행 |
+| **회복 수단** | 생존 회원에 대한 부담금 권한; 자산 청산; 차감결제. 전용 CCP 회복·정리(R&R) 체계 없음 (2026년 기준) | 부담금, VMGH | 부담금, 강제청산 | VMGH, 강제청산, 강제배분, 경매 | VMGH, 현금 납입, 포지션 배분 |
+| **정리 당국** | FSC/FSS (전용 CCP R&R 체계 없음; 격차로 지적됨) | FDIC (Title II) | FDIC (Title II) | 영란은행 | SRB + BaFin |
+
+**평가:**
+- **강점:** 통합형 거래소-CCP 모델(CME, Eurex와 유사)은 운영 효율성과 리스크 가시성을 제공한다.
+- **강점:** PFMI 대체로 이행 (IMF FSAP); SITG가 비채무불이행 회원 이전 단계에 올바르게 위치하고 있다.
+- **강점:** 손해배상공동기금이 고정·변동 혼합 모델로 동적 적정성을 유지한다.
+- **격차:** 전용 CCP 회복 및 정리(R&R) 체계 없음 (일본, 홍콩, 싱가포르도 유사한 격차 보유) — EU CCP RRR (2021/23) 및 미국 Dodd-Frank Title II와 대조됨.
+- **격차:** 결제이행재원 단계별 규모 및 SITG 금액 미공개 — 글로벌 모범 관행(CPMI-IOSCO PQD)은 상세 공시를 요구한다.
+- **격차:** CCP 상호운용성 약정 없음 — 유럽 모델(LCH ↔ SIX x-clear ↔ Cboe Clear Europe)과 대조됨.
+- **격차:** 회복 수단이 부담금 권한 및 자산 청산에 한정 — VMGH 또는 강제배분 수단 미문서화.
+
+#### CSD 비교 (KSD vs 비교 대상) (CSD Comparison)
+
+| 특성 | KSD | DTC (DTCC) | Euroclear | JASDEC | CSDC (중국) |
+|---|---|---|---|---|---|
+| **유형** | 국가 CSD | 국가 CSD | ICSD + 국가 CSD | 국가 CSD | 국가 CSD |
+| **수탁 자산** | KRW 3,149조 (약 $2.4조, 2014년; 2026년 현재 상당히 증가 예상) | $100조 이상 | EUR 42.5조 | 약 $5조 [추정] | RMB 1경 1,050조 |
+| **ISO 20022** | 채택 (CSD 연결, 이전대리인, 글로벌 펀드 플랫폼) | 2027년 3분기 목표 | 채택 | 진행 중 | 독자 프로토콜 |
+| **DLT 이니셔티브** | 증권토큰 프레임워크 (KSD 의무 등록; 2027년 1월 시행) | Project Ion | — | — | — |
+| **T2S 상응** | 해당 없음 (단일 시장) | 해당 없음 | T2S (EUR 결제) | 해당 없음 | 해당 없음 |
+
+**평가:**
+- **강점:** KSD가 이미 ISO 20022를 채택 — DTC(2027년 3분기 목표) 및 JASDEC(진행 중)보다 앞서 있다.
+- **강점:** 증권토큰 프레임워크 법률 통과; KSD가 전체 증권토큰의 의무 중앙 등록기관으로 지정됨 (2027년 1월 시행) — 선제적 접근.
+- **강점:** 분할결제 개혁 (2026년 4월부터 KRW 10억 단위)으로 회원 예탁금 요건 감소.
+- **동등 수준:** KSD는 국채의 BOK 중앙은행 자금 결제를 포함하여 국가 CSD로서 양호하게 기능한다.
+- **격차:** 수탁 자산 수치 노후화 (2014년 KRW 3,149조); 현재 수치 공시 필요.
+
+---
+
+### 2.5 KRX 강점 및 격차 요약 (KRX Strengths and Gaps Summary)
+
+#### KRX가 앞서 있는 분야 (Areas Where KRX Leads)
+
+| 분야 | 설명 |
+|---|---|
+| **점심 휴장 폐지** | 2000년 폐지 — JPX, HKEX, SGX, SSE/SZSE 등 여전히 점심 휴장을 운영하는 모든 아시아 거래소보다 앞서 있음 |
+| **통합 거래소** | 주식 + 파생상품 + 채권 단일 거래소 (Deutsche Borse Group 모델과 유사) — 운영 효율적 |
+| **파생상품 역사** | 역사적으로 세계에서 가장 활발한 단일상품 파생상품 거래소 (KOSPI 200 옵션; 2011년 최고치 39억3,000만 계약); 거래대금 기준 글로벌 8위 (2024년) |
+| **PFMI 준수** | 대체로 이행, IMF FSAP 평가로 확인 |
+| **통합 Exture 3.0** | 최근 업그레이드 (2023년) 통합 플랫폼으로 저지연 범위를 청산·결제까지 확장 |
+| **기술 독립성** | 자체개발 시스템 — 외국 벤더에 비의존적 |
+| **ISO 20022** | KSD ISO 20022 채택 — DTC, JASDEC보다 앞서 있음 |
+| **증권토큰** | KSD가 모든 증권토큰의 의무 중앙 등록기관으로 지정됨 (법률 2027년 1월 시행) |
+| **OTC 청산** | KRX를 통한 KRW IRS 및 CRS 중앙청산 의무화 |
+| **LP/MM 프로그램** | 주식, ETF, ETN, ELW, 파생상품에 대한 포괄적인 LP(유동성공급자) 및 시장조성자 프로그램 운영 |
+
+#### KRX가 뒤처지는 분야 (Areas Where KRX Lags)
+
+| 분야 | 격차 | 우선순위 | 글로벌 선도 기관 |
+|---|---|---|---|
+| **매매시스템 투명성** | 공식 Exture 3.0 지연시간·처리량 미공개 | 중간 | T7, NASDAQ, Optiq (공개 사양) |
+| **결제주기** | 미국·캐나다·인도·호주가 T+1인 상황에서 T+2 유지 | 높음 | DTCC (T+1, 2024년 5월), 인도 (T+1, 2023년 1월) |
+| **증거금 방법론** | KRX-SPAN (2세대); 비교 대상들은 VaR/ES (3세대)로 전환 중 | 중간~높음 | CME (SPAN 2), Eurex (PRISMA), OCC (STANS) |
+| **파생상품 상품 폭** | 개선 중이나 KOSPI 200에 집중; 상품 커버리지 미흡 | 중간 | CME (6개 이상 자산군), Eurex (8개 이상 상품 범주) |
+| **CCP R&R 체계** | 전용 CCP 회복 및 정리 체계 없음 | 중간~높음 | EU CCP RRR (2021/23), 미국 Dodd-Frank Title II |
+| **결제이행재원 투명성** | 워터폴 단계별 규모 및 SITG 금액 미공개 | 중간 | DTCC, CME, LCH, Eurex (상세 PQD 보고서) |
+| **교차증거금** | 스프레드 증거금 및 의무화된 OTC IRS/CRS에 한정; CCP 간 약정 없음 | 중간 | CME-FICC, Eurex PRISMA (포괄적 ETD/OTC) |
+| **CCP 회복 수단** | VMGH 또는 강제배분 미문서화; 부담금 권한만 확인 | 중간 | LCH (VMGH, 강제청산, 경매), Eurex (VMGH, 현금 납입) |
+| **다크풀/대체 거래소** | 미미; Nextrade (NXT) ATS 승인 대기 중 | 낮음 | 미국 (다크 15%+), EU (다크/SI 10%+) |
+| **거래 시간 연장** | 시간외 16:00-18:00에 한정; 파생상품 야간 세션 2025년 6월부터 | 낮음~중간 | NYSE (22시간 계획 중), CME Globex (약 23시간) |
+| **클라우드 전환** | 발표된 계획 없음 | 낮음 | CME (Google Cloud 2026-28), LCH (AWS), Eurex (Google Cloud) |
+
+#### KRX 우선 권고 사항 (Recommended Priority Actions for KRX)
+
+1. **높은 우선순위 — T+1 결제 전환 (T+1 Settlement Migration)**
+   - 미국·캐나다는 2024년 5월 완료; EU는 2027년 10월 목표
+   - 역내 비교 대상(HKEX 2025년까지 준비)과 보조를 맞추지 않을 경우 뒤처질 위험
+   - KSD, BOK, 시장참가자와의 협력 필요
+
+2. **높은 우선순위 — CCP 회복·정리 프레임워크 (CCP Recovery and Resolution Framework)**
+   - 전용 CCP R&R 체계 없음 — 일본, 홍콩, 싱가포르와 공유하는 격차
+   - EU CCP RRR (Regulation 2021/23)이 참고 모델 제공
+   - 포함 필요 수단: VMGH, 강제배분, 강제청산, 부분 재산이전
+   - CPMI-IOSCO PQD 모범 관행에 따라 SITG 금액 및 워터폴 상세 내용 공시 필요
+
+3. **중간 우선순위 — 파생상품 상품 다각화 (Derivatives Product Diversification)**
+   - 상품 파생상품, 금리상품, 변동성 상품 확대
+   - 소매 참여를 위한 마이크로/미니 계약 도입 검토
+   - 환경·ESG 파생상품 (글로벌 성장 추세)
+
+4. **중간~높은 우선순위 — 증거금 방법론 현대화 (Margin Methodology Modernization)**
+   - KRX-SPAN은 2세대; 글로벌 비교 대상들은 VaR/ES (3세대)로 전환 중
+   - JSCC는 2023년 SPAN → VaR 전환 완료 — KRX의 참고 모델
+   - 현행 스프레드 증거금을 넘어 주식·파생상품·채권 간 포괄적 교차증거금 체계 개발 필요
+
+5. **중간 우선순위 — 투명성 및 공시 강화 (Transparency & Disclosure)**
+   - 결제이행재원 상세 데이터를 포함한 CPMI-IOSCO PQD 보고서 발간
+   - CCP 회복·정리 계획 문서 강화
+   - 증거금 방법론 투명성에 관한 글로벌 모범 관행과의 정합성 확보
+
+---
+
+## 3. 품질 검토 (Quality Check)
+
+### 3.1 문서 완성도 (Document Completeness)
+
+#### 주식 도메인 (01_equities)
+
+| 범주 | 예정 | 완료 | 현황 |
+|---|---|---|---|
+| 거래소 프로필 | 23 | 23 (KRX 포함) | 완료 |
+| 시스템 심층 분석 | 9 | 9 (Pillar, INET, Millennium, arrowhead, Orion, Titan, Optiq, T7, Exture 3.0) | 완료 |
+| 규제 분석 | 3 | 3 (미국, EU, 아시아) | 완료 |
+| 개요 | 1 | 1 | 완료 |
+| 비교 분석 | 1 | 1 | 완료 |
+| **영문 파일 합계** | **37** | **37** | **완료** |
+
+#### 파생상품 도메인 (02_derivatives)
+
+| 범주 | 예정 | 완료 | 현황 |
+|---|---|---|---|
+| 거래소 프로필 | 17 | 17 (KRX 파생상품 포함) | 완료 |
+| 시스템 심층 분석 | 3 | 3 (Globex, Genium INET, T7 Derivatives) | 완료 |
+| 규제 분석 | 3 | 3 (미국, EU, 아시아) | 완료 |
+| 개요 | 1 | 1 | 완료 |
+| 비교 분석 | 1 | 1 | 완료 |
+| **영문 파일 합계** | **25** | **25** | **완료** |
+
+#### 청산 도메인 (03_clearing)
+
+| 범주 | 예정 | 완료 | 현황 |
+|---|---|---|---|
+| 기관 프로필 | 20 | 20 (KRX Clearing + KSD 추가) | 완료 |
+| 시스템 심층 분석 | 3 | 3 (DTCC Systems, LCH Systems, Eurex PRISMA) | 완료 |
+| 규제 분석 | 3 | 3 (미국, EU, 아시아) | 완료 |
+| 개요 | 1 | 1 | 완료 |
+| 비교 분석 | 1 | 1 | 완료 |
+| **영문 파일 합계** | **28** | **28** | **완료** |
+
+#### 전체 요약
+
+| 항목 | 수량 |
+|---|---|
+| 영문 연구 파일 합계 | 90 |
+| 한국어 번역 | 90 (미러) |
+| 영문 DOCX 내보내기 | 90 |
+| 한국어 DOCX 내보내기 | 90 |
+| **총 합계** | **360개 이상** |
+
+---
+
+### 3.2 [미검증] 항목 요약 ([Unverified] Items Summary)
+
+**전체 도메인의 [unverified] 태그 합계: 50개 파일에 약 215건**
+
+#### 도메인별 분포 (Distribution by Domain)
+
+| 도메인 | [unverified] | [estimated] | TBD/TODO |
+|---|---|---|---|
+| 주식 | 약 61 | 약 24 | 0 |
+| 파생상품 | 약 57 | 약 1 | 2 |
+| 청산 | 약 97 | 약 3 | 3 |
+| **합계** | **약 215** | **약 28** | **5** |
+
+#### [unverified] 수 상위 파일 (Top Files by [unverified] Count)
+
+| 파일 | 수량 | 주요 분야 |
+|---|---|---|
+| `02_derivatives/en/exchanges/sgx_derivatives.md` | 32 | 상품 사양, 호가단위, 결제 방식 |
+| `01_equities/en/systems/arrowhead.md` | 15 | 하드웨어 사양, 프로그래밍 언어 |
+| `03_clearing/en/organizations/jscc.md` | 14 | 증거금 방법론 상세, MPOR 값 |
+| `03_clearing/en/regulations/eu_clearing_regulation.md` | 12 | KRX 비교 포인트, DLT 이니셔티브 |
+| `01_equities/en/regulations/us_equities_regulation.md` | 11 | SIFMU 정의 ([estimated]로 태그됨) |
+| `03_clearing/en/regulations/us_clearing_regulation.md` | 8 | 증권기반 스왑 청산 현황 |
+| `03_clearing/en/systems/dtcc_systems.md` | 7 | 레거시 기술 스택, 차감결제 효율성 |
+| `01_equities/en/systems/pillar.md` | 7 | OS, 프로그래밍 언어, DR 구성 |
+
+#### [unverified] 범주 ([Unverified] Categories)
+
+| 범주 | 전체 비중 | 대표 사례 |
+|---|---|---|
+| 기술 사양 (지연시간, 처리량, 프로그래밍 언어) | 약 35% | arrowhead C++ [unverified], T7 FPGA 세부사항 [unverified] |
+| KRX 비교 포인트 | 약 20% | KRX 증거금 방법론 [unverified], KRX 결제 모델 [unverified] |
+| 상품/계약 사양 | 약 15% | SGX 호가단위 [unverified], 계약 규모 [unverified] |
+| 규제 세부사항 | 약 15% | 증권기반 스왑 의무화 [unverified], T+1 일정 [unverified] |
+| 조직/운영 사항 | 약 15% | 임직원 수 [unverified], 수익 수치 [unverified] |
+
+**평가:** [unverified] 태그는 RESEARCH_GUIDE.md 기준에 따라 적절히 활용되었다. 대부분의 태그는 부차적 세부사항(프로그래밍 언어, 정확한 하드웨어 수량) 또는 KRX 내부 문서 확인이 필요한 KRX 특정 비교 포인트에 적용되어 있다. 핵심 거래소 메커니즘, 시장 구조, 규제 프레임워크는 충분히 출처가 뒷받침되어 있다.
+
+---
+
+### 3.3 일관성 검토 (Consistency Check)
+
+#### 명명 규칙 (Naming Conventions)
+- 모든 파일이 RESEARCH_GUIDE.md에 따라 소문자_언더스코어 규칙을 따른다.
+- 디렉터리 구조가 3개 도메인 전체에서 일관됨: `en/exchanges/`, `en/systems/`, `en/regulations/`
+- 한국어 번역이 영문 구조를 미러링: `ko/exchanges/`, `ko/systems/`, `ko/regulations/`
+
+#### 템플릿 준수 (Template Adherence)
+- 주식: 23개 거래소 파일 전체가 TEMPLATE_EXCHANGE.md (11개 섹션) 준수
+- 파생상품: 17개 거래소 파일 전체가 파생상품용으로 조정된 TEMPLATE_EXCHANGE.md 준수
+- 청산: 20개 기관 파일 전체가 TEMPLATE_CLEARING.md (8-9개 섹션) 준수
+- 시스템 파일은 TEMPLATE_SYSTEM.md 준수
+
+#### 출처 인용 (Source Citation)
+- 1차 출처 (거래소 웹사이트, 연간 보고서) 일관되게 활용
+- 출처 형식은 `[Source: 기관명, "문서명", accessed YYYY-MM-DD]` 패턴 준수
+- 3개 도메인 모두 동일한 인용 기준 적용
+
+#### 도메인 간 용어 (Cross-Domain Terminology)
+- 도메인 간 용어 일관되게 사용됨 (예: "DVP Model 1/2/3", "PFMI", "SPAN")
+- 도메인 간 상충되는 정의 발견되지 않음
+
+---
+
+### 3.4 용어집 완성도 (Glossary Completeness)
+
+| 지표 | 영문 (glossary_en.md) | 한국어 (glossary_ko.md) |
+|---|---|---|
+| **총 항목 수** | 355 | 374 |
+| **포함 범주** | 매매, 청산, 결제, 기술, 규제, 파생상품, 시장 구분 | 동일 + KRX 특화 용어 |
+| **한국어 번역 누락 영문 항목** | 3개 (Exchange for Physical, Exchange for Swap, Pro-Rata Matching) | — |
+| **한국어 전용 항목** | — | 약 22개 (추가 KRX/한국 시장 용어) |
+
+**평가:** 용어집은 99% 이상 정합성이 있다. 완성도를 위해 누락된 한국어 번역 3개를 추가해야 한다.
+- Exchange for Physical (EFP) → 실물교환거래
+- Exchange for Swap (EFS) → 스왑교환거래
+- Pro-Rata Matching → 비례배분 체결
+
+#### 추가 권고 용어 (현재 양쪽 용어집 모두 미포함) (Suggested Additional Terms)
+
+| 용어 | 범주 | 관련성 |
+|---|---|---|
+| 0DTE (Zero Days to Expiration) | 파생상품 | 2025년 SPX 거래량의 59% |
+| Active Account Requirement (AAR) | 규제 | EMIR 3.0 핵심 조항 |
+| DORA (Digital Operational Resilience Act) | 규제 | 2025년 1월부터 EU 의무화 |
+| Swap Connect | 국경 간 | HK-중국 IRS 연결 |
+| GIFT Connect | 국경 간 | SGX-NSE India 연결 |
+| Consolidated Tape Provider (CTP) | 시장 데이터 | EU MiFIR Refit 이니셔티브 |
+
+---
+
+### 3.5 알려진 격차 및 후속 과제 (Known Gaps and Follow-Up Items)
+
+#### 문서 격차 (비핵심) (Documentation Gaps — Not Critical)
+
+1. **시스템 심층 분석이 주요 플랫폼에만 한정:** 시스템 파일이 총 14개만 작성됨 (주식 8개 + 파생상품 3개 + 청산 3개). Tier 2/3 거래소 시스템(Quantum XA, SIBE-Smart, NEAT+, 중국 시스템)에 대한 전용 시스템 파일은 SESSION_PLAN.md에 따라 의도적으로 작성하지 않음.
+
+2. **중동/아프리카 규제:** 중동 또는 아프리카에 대한 전용 규제 파일 없음. 거래소 수준 문서(Tadawul, JSE, DME) 내에서 간략히 다루어짐.
+
+3. **OTC 파생상품 청산:** 주요 CCP(LCH SwapClear, CME OTC, Eurex OTC)를 제외한 양자 대 청산 OTC 시장에 대한 상세 내용 제한적.
+
+#### KRX 내부 검증이 필요한 항목 (Items Requiring KRX Internal Verification)
+
+KRX 심층 연구 이후에도 아래 항목들은 [unverified] 상태이며, KRX 내부 문서 접근이 필요하다.
+
+1. Exture 3.0 공식 지연시간 및 처리량 사양 (KRX 미공개; 약 49μs는 30% 개선 주장에 근거한 추정치)
+2. KRX SITG(자기부담분) 정확한 금액 (4단계에 존재 확인, 금액 미공개)
+3. 손해배상공동기금 정확한 규모 (약 KRW 1,000억 추정)
+4. KRX-SPAN 신뢰수준 및 보유기간 파라미터 (공개 자료에 미명시)
+5. 커버 기준 (Cover 1 또는 Cover 2로 명시적으로 공개되지 않음)
+6. KSD 현재 수탁 자산 (KRW 3,149조 수치는 2014년 기준)
+7. 현재 시간외 세션을 넘어서는 KRX 거래 시간 연장 계획
+8. KRX T+1 결제 전환 일정 (적극 검토 중)
+
+---
+
+## 부록: 연구 통계 (Appendix: Research Statistics)
+
+| 지표 | 수치 |
+|---|---|
+| **총 조사 거래소·기관 수** | 60개 (주식 23 + 파생상품 17 + 청산 20) |
+| **영문 연구 문서 합계** | 90개 |
+| **한국어 번역 합계** | 90개 |
+| **DOCX 내보내기 합계** | 180개 (영문 90 + 한국어 90) |
+| **총 파일 수** | 360개 이상 |
+| **연구 기간** | 2026-04-03 ~ 2026-04-13 |
+| **실행 세션 수** | 15개 (E1-E3, D1-D3, C1-C3, T1-T3, K1-K3) |
+| **용어집 항목 수 (영문)** | 355개 |
+| **용어집 항목 수 (한국어)** | 374개 |
+| **[unverified] 태그** | 50개 파일에 약 215건 |
+| **[estimated] 태그** | 7개 파일에 약 28건 |
+| **TBD/자리표시 항목** | 5건 |
+| **대상 지역** | 20개 이상 |
+| **분석된 매매시스템** | 25개 이상 독자 플랫폼 |
+| **프로파일링된 CCP/CSD** | 20개 기관 |
+| **규제 프레임워크** | 9개 지역 분석 (도메인별 3개) |
+
+---
+
+*문서 생성일: 2026-04-13*
+*프로젝트: KRX IT 부서를 위한 글로벌 거래소 연구*
+*현황: 5단계 — KRX 심층 분석 완료*

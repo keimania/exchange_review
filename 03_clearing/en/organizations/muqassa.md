@@ -1,0 +1,251 @@
+# Securities Clearing Center Company (Muqassa)
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3
+> **Type:** CCP (Central Counterparty)
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Securities Clearing Center Company (Muqassa) |
+| Abbreviation | Muqassa |
+| Website | [https://www.muqassa.sa](https://www.muqassa.sa) |
+| Year Established | 2018 (incorporated); CCP operations commenced 2020 |
+| Country / City | Saudi Arabia / Riyadh |
+| Ownership Structure | Closed joint stock company, wholly owned by Saudi Tadawul Group |
+| Parent Company / Group | Saudi Tadawul Group Holding Company (which also owns Saudi Exchange/Tadawul, Edaa/Securities Depository Center, and Wamid) |
+| Regulatory Authority | Capital Market Authority (CMA) of Saudi Arabia |
+| CPMI-IOSCO PFMI Compliance | Working toward compliance; CMA regulations incorporate PFMI principles [unverified -- no public PFMI self-assessment found] |
+| QCCP Status | **Yes** -- designated as QCCP by the CMA [Source: [CMA News](https://cma.gov.sa/en/MediaCenter/NEWS/pages/CMA_N_2688.aspx)] |
+| Capital | SAR 600 million (approximately USD 160 million) |
+
+### Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 2018 | **Muqassa established** as a closed joint stock company with SAR 600M capital, as part of Saudi Arabia's Financial Sector Development Program (FSDP) under Vision 2030 [Source: [Tadawul 2018 Annual Report](https://annualreport2018.tadawul.com.sa/Resources/AnnualReport/strategy_in_action/post_trade.html)] |
+| 2020 (Mar) | **CCP operations commenced** -- Muqassa began clearing services for equity market (cash market) on Saudi Exchange [Source: [GlobalComplianceNews](https://www.globalcompliancenews.com/2020/10/29/saudi-arabia-a-new-dawn-for-saudi-arabias-capital-markets-the-commencement-of-muqassas-operations-and-implications-for-market-participants22092020/)] |
+| 2020 | Derivatives market clearing operations transferred from NASDAQ technology to Muqassa |
+| 2020 | Introduction of T+2 settlement cycle, DVP model, and segregation of custody from settlement |
+| 2022 (Apr) | Clearing services expanded to cover **all exchange-traded products** (cash market, derivatives, and repo as OTC product) [Source: [Tadawul Group 2022 AR](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2022/putting_group_principles/muqassa.html)] |
+| 2022 | Repo clearing launched using cash sukuk and Sharia-compliant collateral |
+| 2022 | Government Sukuk and bonds approved as acceptable collateral for margin requirements |
+| 2023 | CMA designated Muqassa as **Qualified CCP (QCCP)** [Source: [CMA](https://cma.gov.sa/en/MediaCenter/NEWS/pages/CMA_N_2688.aspx)] |
+| 2024 | Continued expansion of product coverage and clearing member base; SNB Capital became a clearing member [Source: [Securities Finance Times](https://www.securitiesfinancetimes.com/securitieslendingnews/industryarticle.php?article_id=227226)] |
+
+> **KRX/KSD Comparison:** Muqassa is a relatively young CCP (operational since 2020), compared to KRX which has served as Korea's CCP since 2005 (through its clearing subsidiary). Like KRX, Muqassa was established as part of a broader exchange group restructuring to separate trading, clearing, and settlement functions. The Saudi Tadawul Group structure (Exchange + Muqassa CCP + Edaa CSD + Wamid) mirrors the Korean model (KRX exchange/CCP + KSD depository/settlement).
+
+---
+
+## 2. Clearing Model
+
+### 2.1 CCP Services (brief)
+
+Muqassa provides CCP clearing for all securities traded on the Saudi Exchange [Source: [Muqassa Home](https://www.muqassa.sa); [Tadawul Group 2022 AR](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2022/putting_group_principles/muqassa.html)]:
+
+| Product Class | Clearing Service | Notes |
+|---------------|-----------------|-------|
+| **Equities** | CCP clearing | All listed equities on Saudi Exchange (TASI, Nomu) |
+| **ETFs** | CCP clearing | Exchange-traded funds listed on Saudi Exchange |
+| **REITs** | CCP clearing | Real Estate Investment Trusts |
+| **Sukuk & Bonds** | CCP clearing | Government and corporate sukuk/bonds |
+| **Derivatives** | CCP clearing | Single Stock Futures, Index Futures (MT30), Index Options [unverified -- exact product list] |
+| **Repo (OTC)** | CCP clearing | Launched April 2022; uses sukuk as Sharia-compliant collateral |
+
+- Muqassa can guarantee **any asset class**, both exchange-traded and OTC [Source: [Tadawul Why CCP](https://www.tadawul.com.sa/wps/wcm/connect/f86f2e1b-1f2a-4ae8-8a64-1c208e8be5c8/Why+CCP+en.pdf?MOD=AJPERES)]
+
+**Novation Process:**
+- Muqassa clears exchange-traded transactions on an **open offer** basis -- Muqassa interposes itself between counterparties at the time of trade matching [Source: [GlobalComplianceNews](https://www.globalcompliancenews.com/2020/10/29/saudi-arabia-a-new-dawn-for-saudi-arabias-capital-markets-the-commencement-of-muqassas-operations-and-implications-for-market-participants22092020/)]
+- This is similar to the novation model used by most exchange-linked CCPs globally
+
+### 2.3 Netting
+
+- Muqassa performs **multilateral netting** of obligations for exchange-traded products
+- Netting reduces the number of settlement instructions and the value of securities/cash to be exchanged
+- Final net positions are determined for settlement through Edaa (CSD) [unverified -- specific netting methodology details not publicly available]
+
+### 2.4 Clearing Membership (brief)
+
+Muqassa requires clearing members to maintain specific account structures [Source: [Al Tamimi & Company](https://www.tamimi.com/news/ksa-securities-central-counterparties-regulation-and-the-central-counterparty-clearing-house-muqassa/)]:
+
+| Account Type | Description |
+|-------------|-------------|
+| **House Account** | For the Clearing Member's own proprietary trades |
+| **Omnibus Client Account** | Commingled account for the Clearing Member's clients |
+| **Individual Client Account** | Segregated account for each individual client |
+
+- Clearing members include major Saudi financial institutions (e.g., SNB Capital, other licensed broker-dealers)
+- Membership requires CMA licensing and meeting Muqassa's financial and operational requirements [unverified -- specific capital thresholds not confirmed]
+
+> **KRX/KSD Comparison:** KRX also requires clearing member account segregation between house and client positions. The Saudi model of Individual Client Accounts provides stronger client asset protection than omnibus-only models, aligning with international best practices that KRX also follows.
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework (brief)
+
+Muqassa's margin framework is risk-based rather than credit-based [Source: [Muqassa Risk Management](https://www.muqassa.sa/wps/portal/muqassa/risk-management/)]:
+
+| Component | Description |
+|-----------|-------------|
+| **Initial Margin** | Collected from clearing members based on portfolio risk (market risk, liquidity risk); not based on clearing member credit risk |
+| **Variation Margin** | Calculated daily for all open positions using Daily Settlement Price or Final Settlement Price determined by Saudi Exchange |
+| **Clearing Member Trading Limit** | Risk-based limit on trading activity; utilization percentage under periodic review |
+
+**Acceptable Collateral:**
+- SAR cash and non-SAR currencies
+- Saudi Arabian Government Sukuk and bonds denominated in SAR (Sharia-compliant collateral)
+- Non-cash collateral subject to haircuts for market risk
+- For **Default Fund contributions:** SAR cash only [Source: [Muqassa Risk Management](https://www.muqassa.sa/wps/portal/muqassa/risk-management/)]
+
+> **Sharia-Compliant Features:** The acceptance of government sukuk as collateral (rather than only conventional bonds) is a distinctive feature reflecting Saudi Arabia's Islamic finance framework. This allows market participants to maintain Sharia compliance throughout the clearing process.
+
+### 3.3 Default Waterfall (brief)
+
+Muqassa maintains a default waterfall consistent with international CCP standards [unverified -- specific layer sizes not publicly available]:
+
+| Layer | Description |
+|-------|-------------|
+| 1 | **Defaulting member's margin** (initial margin and variation margin) |
+| 2 | **Defaulting member's Default Fund contribution** |
+| 3 | **Muqassa's own capital** (Skin-in-the-Game) |
+| 4 | **Non-defaulting members' Default Fund contributions** |
+| 5 | **Additional assessment powers** [unverified] |
+
+- Default Fund contribution: SAR cash only
+- The CMA's Securities Central Counterparties Regulation specifies the framework for default management [Source: [Al Tamimi & Company](https://www.tamimi.com/news/ksa-securities-central-counterparties-regulation-and-the-central-counterparty-clearing-house-muqassa/)]
+
+### 3.6 Recovery & Resolution (brief)
+
+- **Resolution Authority:** Capital Market Authority (CMA) of Saudi Arabia
+- CMA's Securities Central Counterparties Regulation provides the legal framework for CCP oversight, including recovery and resolution provisions
+- Muqassa's QCCP designation confirms that it meets CMA's regulatory standards for risk management [Source: [CMA](https://cma.gov.sa/en/MediaCenter/NEWS/pages/CMA_N_2688.aspx)]
+- Specific recovery tools (e.g., VMGH, tear-up, assessment powers) are governed by Muqassa's rules and CMA regulations [unverified -- detailed recovery plan not publicly available]
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle
+
+| Product | Settlement Cycle | Notes |
+|---------|-----------------|-------|
+| Equities | **T+2** | Standard for Saudi Exchange cash market |
+| ETFs / REITs | **T+2** | Same as equities |
+| Sukuk & Bonds | **T+2** | [unverified -- may vary by instrument] |
+| Derivatives | **Daily mark-to-market** | Variation margin settled daily; final settlement varies by contract |
+| Repo | **Varies** | OTC repo clearing since April 2022 |
+
+- The T+2 cycle was introduced as part of the post-trade infrastructure overhaul when Muqassa commenced operations in 2020 [Source: [Tadawul 200 Listed Securities](https://200listedsecurities.saudiexchange.sa/Resources/200ListedSecurities/overview/inside_200_listed_securities.html)]
+
+> **KRX/KSD Comparison:** Both Saudi Exchange and KRX operate on T+2 for equities. Neither has yet moved to T+1, unlike the US and Canada (May 2024). Any future Saudi T+1 transition would require coordination between Muqassa, Edaa, and market participants.
+
+### 4.2 DVP Model
+
+- Saudi Exchange operates a **Delivery versus Payment (DVP)** model implemented alongside Muqassa's CCP launch in 2020 [Source: [Tadawul 200 Listed Securities](https://200listedsecurities.saudiexchange.sa/Resources/200ListedSecurities/overview/inside_200_listed_securities.html)]
+- Securities settlement is handled by **Edaa** (Securities Depository Center Company), the CSD within Saudi Tadawul Group
+- Cash settlement is facilitated through the Saudi Arabian Monetary Authority (SAMA) payment systems [unverified -- specific DVP model type (BIS Model 1/2/3) not confirmed]
+
+---
+
+## 5. Technology & Infrastructure (brief)
+
+| Item | Details |
+|------|---------|
+| **Clearing System** | Proprietary clearing platform (replaced NASDAQ-operated system in 2020) |
+| **CSD Partner** | Edaa (Securities Depository Center Company) -- handles securities custody and settlement |
+| **Exchange Integration** | Directly integrated with Saudi Exchange (Tadawul) trading platform |
+| **Derivatives Platform** | Originally operated by NASDAQ; transferred to Muqassa in 2020 |
+
+- Muqassa is part of a fully integrated post-trade ecosystem within Saudi Tadawul Group: Trade Execution (Saudi Exchange) -> Clearing (Muqassa) -> Settlement & Custody (Edaa)
+- Technology modernization is ongoing as part of Saudi Vision 2030 financial sector development [unverified]
+
+---
+
+## 6. Regulatory Framework
+
+### 6.1 Supervising Authority
+
+| Regulator | Role |
+|-----------|------|
+| **Capital Market Authority (CMA)** | Primary regulator -- licenses and supervises Muqassa; issued QCCP designation |
+| **Saudi Central Bank (SAMA)** | Oversight of payment and settlement systems [unverified -- extent of SAMA role in Muqassa oversight] |
+
+### 6.2 Key Regulations
+
+- **Securities Central Counterparties Regulation (CMA):** Governs CCP licensing, operations, risk management, margin requirements, default management, and member obligations [Source: [Al Tamimi & Company](https://www.tamimi.com/news/ksa-securities-central-counterparties-regulation-and-the-central-counterparty-clearing-house-muqassa/)]
+- **Capital Market Law:** Overarching securities legislation in Saudi Arabia
+- CMA regulations require the CCP to specify margin requirements, including models and parameters, proportional to the risks and attributes of cleared products
+
+### 6.3 PFMI Compliance
+
+- Muqassa's QCCP designation indicates alignment with international standards
+- CMA regulations incorporate principles consistent with CPMI-IOSCO PFMIs
+- No publicly available PFMI self-assessment or CPMI-IOSCO PQD disclosures found [unverified -- Muqassa may publish these through CMA or other channels]
+
+---
+
+## 7. Interoperability
+
+### 7.1 Cross-border Arrangements
+
+- Muqassa currently operates as a **domestic-only CCP** clearing products traded on the Saudi Exchange
+- No known CCP interoperability arrangements with foreign CCPs [unverified]
+- Cross-border access to Saudi markets is facilitated through the Qualified Foreign Investor (QFI) framework and Saudi Exchange's swap agreements rather than through CCP-level interoperability
+
+### 7.2 Relationship with Edaa (CSD)
+
+- **Edaa** (Securities Depository Center Company) serves as the CSD for all securities cleared by Muqassa
+- Edaa handles securities custody, ownership registration, settlement, and corporate actions
+- Together, Muqassa (CCP) and Edaa (CSD) form the complete post-trade infrastructure for the Saudi capital market
+
+> **KRX/KSD Comparison:** The Muqassa-Edaa relationship closely mirrors the KRX-KSD relationship in Korea. Both are organized as separate entities within the same exchange group, with clear functional separation between CCP clearing and CSD settlement/custody.
+
+---
+
+## 9. Recent Developments
+
+### QCCP Designation (2023)
+- CMA designated Muqassa as a Qualified Central Counterparty, confirming it meets international standards for risk management and operations [Source: [CMA](https://cma.gov.sa/en/MediaCenter/NEWS/pages/CMA_N_2688.aspx)]
+
+### Expansion of Clearing Services (2022-2024)
+- April 2022: Clearing services expanded to all exchange-traded products and OTC repo
+- Introduction of government sukuk and bonds as acceptable collateral
+- Covered short-selling facilitated through the DVP model [Source: [Tadawul Group 2022 AR](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2022/putting_group_principles/muqassa.html)]
+
+### Growing Membership Base (2024-2025)
+- Continued onboarding of clearing members (e.g., SNB Capital) [Source: [Securities Finance Times](https://www.securitiesfinancetimes.com/securitieslendingnews/industryarticle.php?article_id=227226)]
+- Muqassa updating margin parameters and risk percentages for Clearing Member Trading Limit, effective August 2025
+
+### Vision 2030 Alignment
+- Muqassa is a key pillar of Saudi Arabia's Financial Sector Development Program (FSDP) under Vision 2030
+- Supports goals of deepening capital markets, attracting foreign investment, and aligning with international best practices [Source: [Tadawul Group 2024 AR](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2024/assets/img/pdfs/Muqassa.pdf)]
+
+### Sharia-Compliant Infrastructure
+- Ongoing development of Sharia-compliant clearing features, including sukuk-based collateral and repo clearing
+- Positions Saudi market infrastructure to serve the growing global Islamic finance industry [Source: [Chambers -- Islamic Finance 2025](https://practiceguides.chambers.com/practice-guides/islamic-finance-2025/saudi-arabia)]
+
+---
+
+## Sources
+
+1. [Muqassa Official Website](https://www.muqassa.sa) -- home page and services
+2. [Muqassa -- Our Story](https://muqassa.sa/wps/portal/muqassa/about/our-story?locale=en) -- history and milestones
+3. [Muqassa -- Risk Management](https://www.muqassa.sa/wps/portal/muqassa/risk-management/) -- margin and collateral framework
+4. [Saudi Tadawul Group -- Muqassa](https://www.tadawulgroup.sa/wps/portal/tadawulgroup/portfolio/muqassa) -- group overview
+5. [Saudi Tadawul Group -- 2022 Annual Report (Muqassa)](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2022/putting_group_principles/muqassa.html) -- operational milestones
+6. [Saudi Tadawul Group -- 2023 Annual Report (Muqassa)](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2023/assets/img/pdfs/Muqassa.pdf) -- PDF report
+7. [Saudi Tadawul Group -- 2024 Annual Report (Muqassa)](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2024/assets/img/pdfs/Muqassa.pdf) -- PDF report
+8. [CMA -- QCCP Designation](https://cma.gov.sa/en/MediaCenter/NEWS/pages/CMA_N_2688.aspx) -- regulatory announcement
+9. [Al Tamimi & Company -- Securities Central Counterparties Regulation](https://www.tamimi.com/news/ksa-securities-central-counterparties-regulation-and-the-central-counterparty-clearing-house-muqassa/) -- legal analysis
+10. [GlobalComplianceNews -- Muqassa Operations Commencement](https://www.globalcompliancenews.com/2020/10/29/saudi-arabia-a-new-dawn-for-saudi-arabias-capital-markets-the-commencement-of-muqassas-operations-and-implications-for-market-participants22092020/) -- launch details
+11. [Tadawul 2018 Annual Report -- Post-Trade](https://annualreport2018.tadawul.com.sa/Resources/AnnualReport/strategy_in_action/post_trade.html) -- establishment context
+12. [Saudi Exchange -- Why CCP (PDF)](https://www.tadawul.com.sa/wps/wcm/connect/f86f2e1b-1f2a-4ae8-8a64-1c208e8be5c8/Why+CCP+en.pdf?MOD=AJPERES) -- CCP rationale
+13. [Edaa -- Muqassa Fact Sheet (PDF)](https://www.edaa.sa/wps/wcm/connect/b06fe1a5-c6ae-4aa4-b9ed-5c678ad2e27e/MuqassaPTTPFactSheetEN.pdf?MOD=AJPERES) -- post-trade overview
+14. [Chambers -- Islamic Finance 2025 Saudi Arabia](https://practiceguides.chambers.com/practice-guides/islamic-finance-2025/saudi-arabia) -- Sharia-compliant clearing
+15. [Securities Finance Times -- SNB Capital Clearing Membership](https://www.securitiesfinancetimes.com/securitieslendingnews/industryarticle.php?article_id=227226)
+16. [Tadawul 200 Listed Securities](https://200listedsecurities.saudiexchange.sa/Resources/200ListedSecurities/overview/inside_200_listed_securities.html) -- market infrastructure overview

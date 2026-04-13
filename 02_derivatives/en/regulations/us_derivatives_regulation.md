@@ -1,0 +1,575 @@
+# U.S. Derivatives Regulation
+
+> **Last Updated:** 2026-04-07
+> **Domain:** Derivatives — Regulatory Framework
+
+---
+
+## 1. Regulatory Authorities
+
+### 1.1 Commodity Futures Trading Commission (CFTC)
+
+The CFTC is the **primary federal regulator** for U.S. derivatives markets. Established in 1974 under the Commodity Futures Trading Commission Act, it assumed regulatory authority previously held by the Department of Agriculture.
+
+- **Jurisdiction:** Futures contracts, options on futures, swaps, and commodity options
+- **Mission:** Promote the integrity, resilience, and vibrancy of U.S. derivatives markets through sound regulation
+- **Authority:** Commodity Exchange Act (CEA), 7 U.S.C. Chapter 1; Title VII of the Dodd-Frank Act (swaps)
+- **Divisions:**
+  - Division of Market Oversight (DMO) — market surveillance, exchange oversight
+  - Division of Clearing and Risk (DCR) — clearinghouse regulation
+  - Division of Enforcement (DOE) — investigations, litigation
+  - Division of Swap Dealer and Intermediary Oversight (DSIO) — registrant supervision
+  - Market Participants Division (MPD) — registrant and market participant oversight
+- **Website:** [https://www.cftc.gov](https://www.cftc.gov)
+
+### 1.2 Securities and Exchange Commission (SEC)
+
+- **Jurisdiction over derivatives:** Security-based swaps (swaps on single securities, narrow-based security indices, or loan-based), security futures products
+- **Dodd-Frank mandate:** Title VII granted SEC authority over security-based swaps, mirroring CFTC swap oversight
+- **Joint authority:** Mixed swaps (having both swap and security-based swap characteristics) are jointly regulated by CFTC and SEC
+
+### 1.3 National Futures Association (NFA)
+
+- **Status:** Designated self-regulatory organization (SRO) for the U.S. futures industry under Section 17 of the CEA
+- **Functions:**
+  - Registration processing for all CFTC registrants (FCMs, IBs, CPOs, CTAs, swap dealers, etc.)
+  - Compliance audits and examinations
+  - Arbitration and mediation services
+  - Rule enforcement and disciplinary actions
+- **Membership:** Mandatory for all CFTC registrants
+- **Website:** [https://www.nfa.futures.org](https://www.nfa.futures.org)
+
+### 1.4 Designated Contract Markets (DCMs)
+
+DCMs (i.e., futures exchanges such as CME, CBOT, NYMEX, COMEX, ICE Futures U.S.) have **self-regulatory responsibilities** including:
+
+- Rule enforcement and trade practice surveillance
+- Market surveillance and position monitoring
+- Setting position limits and accountability levels within CFTC parameters
+- Disciplinary proceedings against market participants
+
+### 1.5 Jurisdictional Delineation: CFTC vs. SEC
+
+| Issue | Resolution |
+|-------|-----------|
+| **Shad-Johnson Accord (1982)** | CFTC received exclusive jurisdiction over futures and options on broad-based stock indices; futures on single stocks and narrow-based indices were banned |
+| **CFMA (2000)** | Lifted the ban on single stock futures (SSFs) and narrow-based index futures; established joint CFTC/SEC jurisdiction over these "security futures products" |
+| **Dodd-Frank (2010)** | CFTC regulates "swaps"; SEC regulates "security-based swaps"; mixed swaps are jointly regulated |
+| **Single stock futures** | Trading ceased in 2020 (OneChicago closure); the product is essentially defunct |
+| **Current practice** | CFTC oversees the vast majority of derivatives by volume; SEC jurisdiction is limited primarily to security-based swaps and equity options on individual securities/narrow indices |
+
+> **Note:** A 2023 U.S. District Court decision (SDNY) clarified that the CFTC does not have jurisdiction over total return swaps based on ETFs or custom baskets with discretionary rebalancing — those fall under SEC authority as security-based swaps.
+
+---
+
+## 2. Key Legislation & Regulations
+
+### 2.1 Commodity Exchange Act (CEA)
+
+- **Enacted:** 1936 (replaced Grain Futures Act of 1922)
+- **Codified:** 7 U.S.C. Chapter 1
+- **Purpose:** Federal regulation of commodity futures trading, prevention of price manipulation and fraud
+- **Historical evolution:**
+  - 1936 — Original enactment, covering grain and enumerated agricultural commodities
+  - 1974 — CFTC Act: created the CFTC, expanded jurisdiction to all commodities
+  - 1982 — Ratified Shad-Johnson Accord jurisdictional split
+  - 2000 — Commodity Futures Modernization Act (CFMA): deregulated OTC derivatives, created legal certainty for swaps
+  - 2010 — Dodd-Frank Act: brought OTC swaps under comprehensive regulation
+
+### 2.2 Dodd-Frank Wall Street Reform and Consumer Protection Act (2010) — Title VII
+
+Title VII, "Wall Street Transparency and Accountability," is the most significant reform to U.S. derivatives regulation since the CEA's enactment. Key provisions:
+
+#### Mandatory Clearing
+- Standardized swaps must be cleared through registered Derivatives Clearing Organizations (DCOs)
+- CFTC mandated clearing for certain interest rate swaps (IRS) and index credit default swaps (CDS) beginning March 2013
+- **End-user exception:** Commercial end-users hedging commercial risks may elect not to clear
+
+#### Swap Execution Facilities (SEFs)
+- Swaps subject to mandatory clearing must be executed on a SEF or DCM (unless no SEF/DCM makes the swap available to trade)
+- SEFs must provide order book and/or request-for-quote (RFQ) functionality
+- As of 2022, ~70% of interest rate derivatives and ~87% of CDS were executed on SEFs (ISDA data)
+
+#### Registration Requirements
+- **Swap Dealers (SDs):** Entities dealing in swaps above de minimis thresholds must register
+- **Major Swap Participants (MSPs):** Non-dealers with substantial swap positions creating systemic risk must register
+- Both SDs and MSPs are subject to capital, margin, business conduct, and reporting requirements
+
+#### Trade Reporting
+- All swaps (cleared and uncleared) must be reported to registered Swap Data Repositories (SDRs)
+- Real-time public reporting of swap transaction and pricing data
+- Block trade exemptions with delayed reporting
+
+#### Margin Requirements
+- Uncleared swaps between SDs/MSPs are subject to mandatory initial margin (IM) and variation margin (VM)
+- Final phase-in of IM requirements completed in September 2022
+
+### 2.3 CFTC Regulations (17 CFR Chapter I)
+
+Key parts of the Code of Federal Regulations:
+
+| Part | Subject |
+|------|---------|
+| **Part 1** | General regulations (definitions, registration, customer protection) |
+| **Part 4** | Commodity Pool Operators (CPOs) and Commodity Trading Advisors (CTAs) |
+| **Part 15-21** | Reporting requirements (large traders, position reports) |
+| **Part 23** | Swap dealer and MSP requirements |
+| **Part 37** | Swap Execution Facilities (SEFs) |
+| **Part 38** | Designated Contract Markets (DCMs) |
+| **Part 39** | Derivatives Clearing Organizations (DCOs) |
+| **Part 43** | Real-time public reporting |
+| **Part 45** | Swap data recordkeeping and reporting |
+| **Part 46** | Swap data for pre-enactment and transition swaps |
+| **Part 49** | Swap Data Repositories (SDRs) |
+| **Part 140** | Organization, functions, and procedures |
+| **Part 150** | Speculative position limits |
+| **Part 190** | Bankruptcy rules for commodity brokers |
+
+### 2.4 Other Relevant Legislation
+
+- **Commodity Futures Modernization Act (CFMA, 2000):** Deregulated OTC derivatives, created legal certainty for swaps (later largely superseded by Dodd-Frank)
+- **CEA Reauthorization Act (2008):** Enhanced CFTC enforcement authority over energy markets
+- **CFTC Reauthorization:** Congress periodically reauthorizes the CFTC (most recent reauthorization debates ongoing)
+
+---
+
+## 3. Market Participant Categories
+
+### 3.1 Intermediaries
+
+| Category | Abbreviation | Function | Capital Requirement |
+|----------|-------------|----------|-------------------|
+| **Futures Commission Merchant** | FCM | Solicits/accepts orders and customer funds for futures, options, swaps | $1,000,000 adjusted net capital (minimum); $20,000,000 if also a registered swap dealer |
+| **Introducing Broker** | IB | Solicits orders but does not hold customer funds (introduces to an FCM) | $45,000 net capital (or guaranteed IB arrangement) |
+| **Commodity Pool Operator** | CPO | Operates pooled investment vehicles trading futures/swaps | Varies (fund-level requirements) |
+| **Commodity Trading Advisor** | CTA | Provides trading advice on futures/swaps for compensation | Varies |
+| **Swap Dealer** | SD | Deals in swaps (market-making, accommodating demand) | $20,000,000 minimum net capital (bank SDs subject to prudential regulator capital) |
+| **Major Swap Participant** | MSP | Non-dealer with substantial swap positions that could create systemic risk | Capital requirements set by CFTC |
+
+### 3.2 Registration Requirements
+
+- All intermediaries must register with the CFTC through NFA
+- **Form 7-R:** Firm registration (legal name, organization, business details, principal disclosure)
+- **Form 8-R:** Individual registration for principals and associated persons (APs)
+- **Proficiency:** APs must pass the Series 3 (National Commodity Futures Examination); swap activity requires additional Swaps Proficiency Requirements (NFA Rule 401)
+- **Chief Compliance Officer (CCO):** Every FCM and SD must designate a CCO
+- **Compliance programs:** AML, cybersecurity, business continuity, supervisory procedures, promotional material review
+
+### 3.3 Other Market Participants
+
+- **Proprietary trading firms:** Generally exempt from FCM registration if trading only for own account
+- **Commercial hedgers (end-users):** Exempt from clearing mandates; exempt from certain swap dealer registration thresholds
+- **Foreign intermediaries:** May be subject to CFTC requirements depending on U.S. customer activity and cross-border rules
+
+---
+
+## 4. Position Limits Framework
+
+### 4.1 CFTC Part 150 — Federal Speculative Position Limits
+
+The CFTC finalized its long-awaited position limits rule on January 14, 2021 (86 FR 3236), effective March 15, 2021.
+
+#### 25 Core Referenced Futures Contracts
+
+The rule establishes federal speculative position limits on **25 core referenced futures contracts** across three commodity groups:
+
+**Agricultural (Legacy 9 + New 7 = 16):**
+- Legacy: CBOT Corn, Oats, Soybeans, Soybean Oil, Soybean Meal, Wheat, KC HRW Wheat, MGEX HRS Wheat, ICE Cotton No. 2
+- New: CBOT Rice, ICE Cocoa, ICE Coffee C, ICE FCOJ-A, ICE Sugar No. 11, ICE Sugar No. 16, CME Live Cattle (added to federal limits)
+
+**Metals (4):**
+- COMEX Gold, Silver, Copper, NYMEX Palladium
+
+**Energy (5):**
+- NYMEX Light Sweet Crude Oil (WTI), NY Harbor ULSD, RBOB Gasoline, Henry Hub Natural Gas, ICE Henry Hub Natural Gas
+
+#### Position Limit Levels
+
+| Limit Type | Methodology |
+|-----------|-------------|
+| **Spot-month** | At or below 25% of estimated deliverable supply; physically-settled and cash-settled limits apply separately |
+| **Single-month (non-spot)** | 10% of open interest for the first 25,000 contracts + 2.5% thereafter |
+| **All-months combined** | 10% of open interest for the first 25,000 contracts + 2.5% thereafter |
+
+#### Scope: Referenced Contracts
+
+Position limits apply to:
+1. The 25 core referenced futures contracts themselves
+2. Any futures/options directly or indirectly linked to a core referenced contract
+3. **Economically equivalent swaps** (compliance date: January 1, 2023)
+
+#### Compliance Dates
+- January 1, 2022: Federal limits for 16 non-legacy core referenced contracts
+- January 1, 2023: Federal limits for economically equivalent swaps
+
+### 4.2 Hedge Exemptions
+
+Bona fide hedgers may apply for exemptions from speculative position limits:
+
+- **Enumerated hedges:** Fixed list of qualifying hedge transactions (e.g., production hedging, merchant hedging, processing hedging)
+- **Non-enumerated hedges:** Market participants may apply to exchanges (and notify CFTC) for recognition of hedge positions not fitting enumerated categories
+- **Pass-through swap offsets:** Swap dealers may claim exemptions for swap positions that offset commercial end-user hedging
+- **Conditional spot-month exemptions:** Available for certain cash-settled contracts
+
+### 4.3 Exchange-Set Position Limits and Accountability Levels
+
+- Exchanges (DCMs) set their own position limits and **accountability levels** for contracts not covered by federal limits
+- For federally limited contracts, exchange limits must be at least as stringent as CFTC levels
+- **Accountability levels:** Not hard limits but trigger enhanced reporting and exchange inquiry obligations
+
+### 4.4 Aggregation
+
+- Positions of accounts owned or controlled by the same entity must be aggregated
+- Exemptions available for certain independent account controllers, owned non-financial entities with firewalls, and certain fund managers
+
+---
+
+## 5. Clearing Mandates
+
+### 5.1 Mandatory Clearing Categories
+
+Under Dodd-Frank and CFTC regulations, the following swap categories are subject to mandatory clearing:
+
+**Interest Rate Swaps (effective March 2013):**
+- Fixed-to-floating (plain vanilla) IRS in USD, EUR, GBP, JPY
+- Basis swaps in USD, EUR, GBP, JPY
+- Forward Rate Agreements (FRAs) in USD, EUR, GBP, JPY
+- Overnight Index Swaps (OIS) in USD, EUR, GBP
+
+**Credit Default Swaps (effective March 2013):**
+- North American untranched CDX indices (Investment Grade, High Yield)
+- European untranched iTraxx indices (Main, Crossover)
+
+### 5.2 Derivatives Clearing Organization (DCO) Requirements
+
+DCOs must register with the CFTC under Section 5b of the CEA and comply with **18 Core Principles**:
+
+1. Compliance with the CEA and CFTC regulations
+2. Financial resources sufficient to cover defaults
+3. Participant and product eligibility standards
+4. Risk management frameworks
+5. Settlement procedures
+6. Treatment of funds (customer segregation)
+7. Default rules and procedures
+8. Rule enforcement
+9. System safeguards (cybersecurity, business continuity)
+10. Reporting requirements
+11. Recordkeeping
+12. Public information
+13. Information sharing
+14. Antitrust considerations
+15. Governance fitness standards
+16. Conflicts of interest
+17. Composition of governing boards
+18. Legal risk
+
+### 5.3 Systemically Important DCOs (SIDCOs) and SIFMU Designation
+
+Under **Title VIII of the Dodd-Frank Act**, the Financial Stability Oversight Council (FSOC) may designate clearing organizations as **Systemically Important Financial Market Utilities (SIFMUs)**.
+
+**Currently designated SIFMUs (clearing):**
+| Entity | Designated | Products |
+|--------|-----------|----------|
+| **CME Clearing** | July 2012 | Futures, options on futures, IRS, CDS |
+| **ICE Clear Credit** | July 2012 | CDS (credit derivatives) |
+| **OCC (Options Clearing Corporation)** | July 2012 | Listed equity options, security futures |
+| **FICC (Fixed Income Clearing Corporation)** | July 2012 | Government securities, mortgage-backed securities |
+
+> **Note:** LCH Ltd. (UK-based) is a registered DCO for U.S. participants but is not a SIFMU — it is regulated by the Bank of England with CFTC oversight for U.S. activities.
+
+**Enhanced requirements for SIDCOs:**
+- Heightened financial resources (cover-2 standard: must hold resources to cover the default of the two largest clearing members)
+- Annual CFTC examination
+- Enhanced governance, risk management, and recovery/wind-down planning
+- Additional disclosure requirements (CPMI-IOSCO Principles for Financial Market Infrastructures — PFMIs)
+
+### 5.4 Client Clearing Models
+
+- **Futures:** Customer funds segregated under Section 4d of the CEA (full physical segregation at DCO level)
+- **Swaps (LSOC):** "Legally Segregated, Operationally Commingled" — each customer's collateral is legally protected but may be held in an omnibus account at the DCO
+- **End-user exception:** Commercial end-users using swaps to hedge commercial risk may elect not to clear, subject to notification and reporting requirements
+
+---
+
+## 6. Market Surveillance & Enforcement
+
+### 6.1 Large Trader Reporting System (LTRS)
+
+- Clearing members, FCMs, and foreign brokers must file **daily large trader position reports** with the CFTC under Part 17 of the regulations
+- Reports are filed when a trader's position reaches or exceeds the **reporting level** for a given contract
+- Reporting levels vary by contract (e.g., 25 contracts for some agricultural futures, 350 contracts for E-mini S&P 500 futures)
+- **2024 Update:** CFTC finalized amendments to Part 17 modernizing data submission standards and data elements, with a compliance date of **June 3, 2026**
+
+### 6.2 Commitments of Traders (COT) Reports
+
+The CFTC publishes weekly COT reports based on large trader data:
+
+| Report | Content | Frequency |
+|--------|---------|-----------|
+| **Legacy COT** | Commercial vs. non-commercial positions | Weekly (Tuesdays, published Fridays) |
+| **Disaggregated COT** | Producer/merchant, swap dealer, managed money, other reportables | Weekly |
+| **Traders in Financial Futures (TFF)** | Dealer, asset manager, leveraged funds, other reportables | Weekly |
+| **Supplemental COT** | Additional data for selected agricultural contracts | Weekly |
+
+### 6.3 Market Surveillance Programs
+
+**CFTC Market Surveillance:**
+- Monitors daily large trader activity, key price relationships, and supply/demand factors for all active futures and options markets
+- Surveillance staff identifies potential market problems at the earliest possible stage
+- Coordinates with exchange surveillance programs
+
+**Exchange-Level Surveillance:**
+- DCMs maintain their own surveillance departments
+- Real-time trade monitoring, cross-market surveillance
+- Position monitoring against limits and accountability levels
+
+### 6.4 Enforcement Authority
+
+The CFTC Division of Enforcement investigates and prosecutes violations of the CEA and CFTC regulations:
+
+**Key prohibitions:**
+- **Anti-manipulation (CEA Section 9(a)(2)):** Price manipulation, attempted manipulation, corners, squeezes
+- **Anti-fraud (CEA Section 4b):** Fraud in connection with futures, options, and swaps transactions
+- **Spoofing (CEA Section 4c(a)(5)(C)):** Bidding or offering with intent to cancel before execution (added by Dodd-Frank)
+- **Wash trading:** Transactions creating the appearance of market activity without genuine economic purpose
+- **Disruptive trading practices:** Violating bids or offers, intentional or reckless disregard for orderly execution
+
+**Enforcement tools:**
+- Civil monetary penalties (up to the greater of $1,000,000 per violation or triple the monetary gain)
+- Trading bans and suspensions
+- Cease and desist orders
+- Disgorgement of profits
+- Criminal referrals to the Department of Justice
+
+### 6.5 Whistleblower Program
+
+- Established under Dodd-Frank Section 748
+- Awards of 10-30% of sanctions collected exceeding $1 million
+- Over $370 million awarded since program inception through 2025
+
+---
+
+## 7. Reporting Requirements
+
+### 7.1 Swap Data Reporting to SDRs
+
+Under Dodd-Frank and CFTC Parts 43, 45, and 49:
+
+- **All swaps** (cleared and uncleared) must be reported to CFTC-registered Swap Data Repositories
+- **Creation data:** Reported on the day of execution, including all primary economic terms
+- **Continuation data:** Ongoing lifecycle events (amendments, terminations, novations) reported promptly
+- **Valuation data:** Daily mark-to-market data for uncleared swaps
+
+**Registered SDRs (as of 2026):**
+- DTCC Data Repository (DDR)
+- CME Group (CME Global Repository Service)
+- ICE Trade Vault
+
+### 7.2 Real-Time Public Reporting (Part 43)
+
+- Swap transaction and pricing data must be publicly disseminated in real time through SDRs
+- **Block trades:** Transactions exceeding established notional thresholds receive a **time delay** before public dissemination
+  - Cap sizes limit the notional amounts displayed for very large trades
+  - Block thresholds and cap sizes are periodically updated by the CFTC
+- **Data elements:** Notional amount (capped), price, tenor, currency, asset class, clearing status
+- **Delays:** Vary based on asset class, trade category (on-SEF vs. off-facility), and block status
+
+### 7.3 Position Reporting
+
+- **Part 17:** Large trader reports filed daily by FCMs and clearing members
+- **Part 18:** Special calls — CFTC may request additional information from any trader
+- **Form 40:** Trader identification and classification information
+- **Part 20:** Swap position reporting (large swap trader reports)
+
+### 7.4 Financial Reporting for FCMs
+
+- **Daily segregation reports:** Customer funds segregation compliance
+- **Monthly financial reports:** Filed with the CFTC and the designated SRO (NFA or exchange)
+- **Annual audited financial statements:** Required within 60 days of fiscal year end
+- **FOCUS reports:** For FCMs that are also broker-dealers (dual registrants)
+- All FCM financial data is publicly available on the CFTC website
+
+---
+
+## 8. Cross-Border Framework
+
+### 8.1 CFTC Cross-Border Swaps Regulation
+
+The CFTC finalized its cross-border swaps framework in September 2020 (85 FR 56924), replacing earlier 2013 interim guidance:
+
+**Key concepts:**
+- **U.S. person:** Broadly defined to include natural persons domiciled in the U.S., entities organized or with principal place of business in the U.S., pension plans for U.S. residents, etc.
+- **Guaranteed affiliate / conduit affiliate:** Foreign entities whose swap obligations are guaranteed by, or that bear significant financial risk for, a U.S. person
+- **Arrange, negotiate, or execute (ANE) transactions:** Activities performed within the U.S.
+
+**Registration thresholds:**
+- Foreign entities must count certain cross-border swaps toward swap dealer registration thresholds
+- The final rule clarified which cross-border swaps count toward the de minimis threshold ($8 billion aggregate gross notional amount)
+
+### 8.2 Substituted Compliance
+
+The CFTC may determine that a foreign jurisdiction's regulatory framework is **comparable** to U.S. requirements, allowing foreign entities to comply with home-country rules instead of CFTC rules:
+
+- **Holistic, outcomes-based approach:** The CFTC assesses whether a foreign regime achieves comparable regulatory outcomes
+- **13 categories of requirements** subject to separate comparability determinations:
+  - 5 entity-level requirements (capital, chief compliance officer, risk management, SDR reporting, large trader reporting)
+  - 8 transaction-level requirements (clearing, trade execution, real-time reporting, margin, external/internal business conduct, and others)
+- **Exclusions:** Substituted compliance is generally not available for large trader reporting or external business conduct standards
+
+**Comparability determinations issued for:**
+- European Union (multiple categories)
+- Japan (multiple categories)
+- Australia, Canada, United Kingdom, and others (various categories)
+
+### 8.3 Recognition of Foreign CCPs and Trading Venues
+
+- **Exempt DCOs:** Foreign clearinghouses may obtain exemption from DCO registration to clear swaps for U.S. persons, provided they are subject to comparable home-country regulation (e.g., KRX received an exemption order from the CFTC in 2015)
+- **Foreign boards of trade (FBOTs):** Foreign exchanges may register with the CFTC to offer direct access to U.S. participants
+
+### 8.4 International Coordination
+
+- **IOSCO:** CFTC actively participates in setting international standards through the International Organization of Securities Commissions
+- **CPMI-IOSCO:** Joint standards for financial market infrastructures (PFMIs)
+- **FSB (Financial Stability Board):** OTC derivatives reform monitoring
+- **Bilateral MOUs:** The CFTC maintains memoranda of understanding with foreign regulators for information sharing and supervisory cooperation (including CFTC-FSC/FSS MOU with Korea)
+
+---
+
+## 9. Recent Developments (2023-2026)
+
+### 9.1 Position Limits Implementation
+
+- January 2022: Federal speculative position limits took effect for 16 non-legacy core referenced contracts
+- January 2023: Limits extended to economically equivalent swaps
+- Ongoing exchange implementation of exchange-set limits and accountability levels
+- Continued industry adaptation to aggregation and hedge exemption requirements
+
+### 9.2 Event Contracts and Prediction Markets
+
+This is one of the most contentious areas of U.S. derivatives regulation in 2025-2026:
+
+- **Explosive growth:** DCMs listed ~131 event contracts in 2021; approximately 1,600 event contracts were certified for listing in 2025 alone (covering political events, sports, weather, cultural events, scientific outcomes, etc.)
+- **Policy shift (Jan 2026):** CFTC Chairman Michael Selig announced support for "responsible development of event contract markets," reversing the prior administration's proposed ban on political event contracts
+- **Rulemaking (Mar 2026):** CFTC issued an Advance Notice of Proposed Rulemaking on prediction markets; comments due April 30, 2026
+- **State-level conflicts:** Multiple states (Arizona, Connecticut, Illinois) have enacted or proposed legislation restricting prediction markets; the CFTC filed lawsuits in 2026 asserting exclusive federal jurisdiction over event contracts listed on DCMs under the CEA
+- **Enforcement cases:** CFTC addressed misuse of nonpublic information and fraud on prediction market platforms, including penalties for trading based on material nonpublic information and trading on one's own candidacy
+- **Key platforms:** Kalshi, Polymarket (operating offshore), CME Group (exploring event contract offerings)
+
+### 9.3 Digital Asset Derivatives
+
+- CFTC asserts jurisdiction over digital asset commodities (Bitcoin, Ether) and derivatives based on them
+- Bitcoin and Ether futures actively traded on CME
+- Ongoing legislative debates over CFTC vs. SEC jurisdiction over digital asset spot markets
+- CFTC enforcement actions against unregistered digital asset derivatives platforms
+- Proposed legislation (e.g., FIT21, discussed in Congress) would expand CFTC authority over certain digital asset spot markets
+
+### 9.4 Climate-Related Derivatives and Voluntary Carbon Credits (VCCs)
+
+- **October 2024:** CFTC approved final guidance on listing voluntary carbon credit (VCC) derivative contracts on DCMs
+- Guidance emphasizes transparency, additionality, permanence, and robust quantification of carbon credits underlying derivatives
+- ~200 environmental commodity derivative contracts have been submitted to DCMs, though market liquidity remains limited (only 3 contracts had open interest as of late 2023)
+- CFTC's jurisdiction does not extend to VCC spot markets, creating regulatory gaps where fraud is endemic
+- Mandatory CORSIA participation beginning in 2026 may shift carbon credit markets and demand dynamics
+
+### 9.5 CFTC Technology Modernization
+
+- Modernized large trader reporting data standards (compliance: June 2026)
+- Enhanced swap data reporting requirements and data quality standards
+- Investment in surveillance technology and data analytics
+- Cybersecurity guidance for registered entities
+
+### 9.6 Other Notable Developments
+
+- **FCM Guidance (2025):** CFTC issued comprehensive FAQ guidance on FCM registration and compliance obligations
+- **Margin reform:** Ongoing calibration of uncleared swap margin requirements
+- **LIBOR transition:** Completion of the transition from LIBOR to SOFR and other alternative reference rates in cleared and uncleared derivatives
+
+---
+
+## 10. Comparison with Korea
+
+### 10.1 Regulatory Structure
+
+| Dimension | United States | Korea |
+|-----------|--------------|-------|
+| **Primary regulator** | CFTC (independent agency) | FSC (Financial Services Commission) — policy and rulemaking |
+| **Supervisory body** | CFTC divisions + NFA (SRO) | FSS (Financial Supervisory Service) — examination and enforcement |
+| **SRO role** | NFA (registration, audits, arbitration); exchanges (trade surveillance) | KRX has SRO functions; no separate NFA equivalent |
+| **Governing legislation** | Commodity Exchange Act (CEA) + Dodd-Frank | Financial Investment Services and Capital Markets Act (FSCMA) |
+| **Jurisdictional split** | CFTC (futures/swaps) vs. SEC (securities/security-based swaps) | FSC/FSS has unified supervision over both securities and derivatives |
+| **Market structure** | Multiple competing exchanges (CME, ICE, Cboe, etc.) | Single integrated exchange (KRX) operating all markets |
+
+### 10.2 Position Limit Approaches
+
+| Dimension | United States | Korea |
+|-----------|--------------|-------|
+| **Authority** | Federal limits set by CFTC (Part 150); exchange limits supplement | KRX sets position limits under FSC/FSS supervision |
+| **Scope** | 25 core referenced futures + economically equivalent swaps | Applied to KOSPI 200 futures/options and other listed derivatives |
+| **Methodology** | Spot-month: 25% of deliverable supply; non-spot: 10%/2.5% formula | Based on open interest percentages and notional values |
+| **Hedge exemptions** | Enumerated and non-enumerated hedge exemptions; exchange-administered | Hedging exemptions available through KRX application |
+| **Swap equivalents** | Federal limits extend to economically equivalent swaps (since 2023) | OTC derivatives position management through TR reporting |
+
+### 10.3 Clearing Mandates
+
+| Dimension | United States | Korea |
+|-----------|--------------|-------|
+| **Mandatory clearing** | IRS, CDS (standardized, since 2013) | KRW IRS (since June 2014) |
+| **CCP structure** | Multiple DCOs (CME, LCH, ICE Clear) | Single CCP (KRX) for both exchange-traded and OTC |
+| **CFTC-KRX relationship** | KRX received exempt DCO status from CFTC (2015) | — |
+| **End-user exemption** | Available for commercial hedgers | Available for qualifying end-users |
+| **Margin framework** | CFTC rules for cleared; prudential regulators for banks | FSC/FSS-set margin rules; KRX margin methodology |
+| **Client clearing model** | LSOC for swaps; full segregation for futures | Customer protection through KRX clearing rules |
+
+### 10.4 Trade Reporting
+
+| Dimension | United States | Korea |
+|-----------|--------------|-------|
+| **Trade repositories** | Multiple registered SDRs (DTCC, CME, ICE) | KRX operates as trade repository (activated ~2020) |
+| **Reporting scope** | All swaps (cleared and uncleared) | OTC derivatives transactions |
+| **Real-time public reporting** | Required with block trade delays | Limited public reporting of OTC data |
+| **COT-style reports** | Weekly public COT reports | KRX publishes investor-type position data |
+
+### 10.5 Market Surveillance
+
+| Dimension | United States | Korea |
+|-----------|--------------|-------|
+| **Dual-level surveillance** | CFTC (federal) + exchanges (self-regulatory) | FSS (supervisory) + KRX (front-line surveillance) |
+| **Large trader reporting** | Daily reports above contract-specific thresholds | Real-time position monitoring through integrated KRX system |
+| **Cross-market surveillance** | Coordinated but challenging across multiple exchanges | Unified surveillance across all KRX markets |
+| **Enforcement** | CFTC civil/administrative actions; DOJ criminal referrals | FSS administrative sanctions; referral to prosecutors for criminal cases |
+
+### 10.6 Key Structural Differences
+
+1. **Fragmented vs. unified:** The U.S. has a fragmented regulatory structure (CFTC/SEC split, multiple exchanges, multiple CCPs) vs. Korea's unified structure (FSC/FSS, single KRX exchange and CCP)
+2. **SRO model:** The U.S. relies heavily on NFA and exchanges as SROs; Korea integrates SRO functions within KRX
+3. **Market competition:** U.S. exchanges compete on products, fees, and technology; KRX is a monopoly exchange but may offer lower costs through integration
+4. **OTC derivatives reform:** Both jurisdictions followed G20 mandates for central clearing, trade reporting, and platform trading, but U.S. implementation is broader in scope and earlier in timing
+5. **Cross-border:** CFTC has extensive cross-border framework including substituted compliance; Korea's cross-border approach is more bilateral (MOU-based)
+
+---
+
+## Sources
+
+- [CFTC — Commodity Exchange Act & Regulations](https://www.cftc.gov/LawRegulation/CommodityExchangeAct/index.htm)
+- [CFTC — Dodd-Frank Act Implementation](https://www.cftc.gov/LawRegulation/DoddFrankAct/index.htm)
+- [CFTC — Position Limits for Derivatives](https://www.cftc.gov/LawRegulation/DoddFrankAct/Rulemakings/PositionLimitsforDerivatives/index.htm)
+- [CFTC — Cross-Border Application of Swaps Provisions](https://www.cftc.gov/LawRegulation/DoddFrankAct/Rulemakings/Cross-BorderApplicationofSwapsProvisions/index.htm)
+- [CFTC — Comparability Determinations for Substituted Compliance](https://www.cftc.gov/LawRegulation/DoddFrankAct/CDSCP/index.htm)
+- [CFTC — Derivatives Clearing Organizations](https://www.cftc.gov/IndustryOversight/ClearingOrganizations/index.htm)
+- [CFTC — Market Surveillance Program](https://www.cftc.gov/IndustryOversight/MarketSurveillance/CFTCMarketSurveillanceProgram/index.htm)
+- [CFTC — Large Trader Reporting Program](https://www.cftc.gov/IndustryOversight/MarketSurveillance/LargeTraderReportingProgram/index.htm)
+- [CFTC — Real-Time Reporting](https://www.cftc.gov/LawRegulation/DoddFrankAct/Rulemakings/DF_18_RealTimeReporting/index.htm)
+- [CFTC — Data Repositories](https://www.cftc.gov/IndustryOversight/DataRepositories/index.htm)
+- [CFTC — Systemically Important DCO Rules](https://www.cftc.gov/LawRegulation/DoddFrankAct/Rulemakings/DF_10_SystemicDCO/index.htm)
+- [NFA — Registration and Membership](https://www.nfa.futures.org/registration-membership/index.html)
+- [NFA — FCM Registration Requirements](https://www.nfa.futures.org/registration-membership/who-has-to-register/fcm.html)
+- [Federal Register — Position Limits for Derivatives (86 FR 3236)](https://www.federalregister.gov/documents/2021/01/14/2020-25332/position-limits-for-derivatives)
+- [Federal Register — Cross-Border Application (85 FR 56924)](https://www.federalregister.gov/documents/2020/09/14/2020-16489/cross-border-application-of-the-registration-thresholds-and-certain-requirements-applicable-to-swap)
+- [Federal Register — Prediction Markets ANPR (2026)](https://www.federalregister.gov/documents/2026/03/16/2026-05105/prediction-markets)
+- [eCFR — 17 CFR Part 150 (Position Limits)](https://www.ecfr.gov/current/title-17/chapter-I/part-150)
+- [eCFR — 17 CFR Part 39 (DCOs)](https://www.ecfr.gov/current/title-17/chapter-I/part-39)
+- [eCFR — 17 CFR Part 43 (Real-Time Public Reporting)](https://www.ecfr.gov/current/title-17/chapter-I/part-43)
+- [Congress.gov — Dodd-Frank Title VII (CRS Report R41398)](https://www.congress.gov/crs-product/R41398)
+- [CFTC — KRX Exempt DCO Order (2015)](https://www.cftc.gov/PressRoom/PressReleases/7270-15)
+- [KRX — OTC Derivatives Clearing Background](https://clearing.krx.co.kr/en/contents/GLB/02/0202/0202030201/GLB0202030201.jsp)
+- [Chambers — Financial Services Regulation 2025: South Korea](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/south-korea)

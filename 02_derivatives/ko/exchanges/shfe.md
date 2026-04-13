@@ -1,0 +1,514 @@
+# Shanghai Futures Exchange (SHFE, 상하이선물거래소)
+
+> **최종 수정일:** 2026-04-07
+> **조사 등급:** Tier 3
+> **분야:** 파생상품
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | Shanghai Futures Exchange (上海期货交易所) |
+| 약칭 | SHFE |
+| 웹사이트 | https://www.shfe.com.cn/eng/ |
+| 설립연도 | 1999년 12월 (3개 거래소 합병으로 설립) |
+| 소재지 | 중국 / 상하이 (푸동지구 루자쭈이) |
+| 지배구조 | 비영리 자율규제기관 |
+| 모회사 / 그룹 | 독립 법인; 중국증권감독관리위원회(CSRC) 감독 하에 운영 |
+| 자회사 | Shanghai International Energy Exchange (INE, 2013년 설립) — 국제화 상품 담당 |
+| 감독기관 | 중국증권감독관리위원회 (China Securities Regulatory Commission, CSRC) |
+| 세계 순위 | 전 세계 파생상품 거래소 10위 (FIA 2023년 순위) |
+| 상장 종목 | 선물 계약 24종 이상 (SHFE + INE 합산), 다수 상품에 대한 옵션 |
+| 주요 상품 | 구리, 알루미늄, 아연, 금, 은, 니켈, 천연고무, 철근, 원유(INE), 연료유 |
+
+[Source: Wikipedia, "Shanghai Futures Exchange", https://en.wikipedia.org/wiki/Shanghai_Futures_Exchange]
+[Source: SHFE, "Overview", https://www.shfe.com.cn/eng/AboutSHFE/Introduction/Overview/]
+[Source: Grokipedia, "Shanghai Futures Exchange", https://grokipedia.com/page/Shanghai_Futures_Exchange]
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **1992년 (5월 28일)**: Shanghai Metal Exchange (SHME) 설립 — 전신 거래소 중 하나
+- **1993년**: Shanghai Cereals and Oil Exchange 및 Shanghai Commodity Exchange도 운영 중
+- **1999년 (12월)**: Shanghai Metal Exchange, Shanghai Cereals and Oil Exchange, Shanghai Commodity Exchange의 합병으로 Shanghai Futures Exchange 설립 — 중국 전국 선물시장 구조조정의 일환
+- **2004년**: 연료유 선물 상장
+- **2007년**: 아연 선물 상장
+- **2008년**: 금 선물 상장 (1월 9일) — 중국 본토 최초의 금 선물
+- **2012년**: 은 선물 상장
+- **2013년**: 국제화 상품을 위한 자회사로 Shanghai International Energy Exchange (INE) 설립
+- **2014년**: 열연코일 선물 상장; 니켈 및 주석 선물 상장
+- **2018년 (3월 26일)**: INE 원유 선물(SC) 출범 — 중국 본토에서 해외 투자자에게 개방된 최초의 상품 선물, 위안화 표시
+- **2018년**: 구리 옵션 상장 (9월 21일) — SHFE 최초의 옵션 상품
+- **2019년**: 천연고무 옵션, 스테인리스강 선물(9월 25일), TSR 20 고무 선물(INE) 상장
+- **2020년**: INE에서 저유황 연료유 선물 상장; INE 보세구리 선물 출시
+- **2022년**: 주조 알루미늄합금 선물 상장; 알루미나(산화알루미늄) 선물 상장
+- **2024년**: SHFE가 FOW Trading Amsterdam에서 3개 국제 수상; INE에서 컨테이너 운임지수 선물(SCFIS) 출시
+- **2025년**: 인쇄용지 선물 상장 [unverified 상장일]
+
+[Source: Wikipedia, "Shanghai Futures Exchange", https://en.wikipedia.org/wiki/Shanghai_Futures_Exchange]
+[Source: MarketsWiki, "Shanghai Futures Exchange", https://www.marketswiki.com/wiki/Shanghai_Futures_Exchange]
+[Source: SHFE, Official Website, https://www.shfe.com.cn/eng/]
+[Source: Orient Futures Singapore, "INE Futures & Options Trading", https://www.orientfutures.com.sg/china-market-access/shanghai-international-energy-exchange-ine/]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 (Market Segments)
+
+#### SHFE (국내 시장)
+
+| 구분 | 주요 상품 | 설명 |
+|---------|-------------|-------------|
+| **비철금속 선물** | 구리(CU), 알루미늄(AL), 아연(ZN), 납(PB), 니켈(NI), 주석(SN), 주조 알루미늄합금(AD) | 주요 비철금속; 구리와 알루미늄은 세계에서 가장 유동성이 높은 금속 계약에 포함 |
+| **귀금속 선물** | 금(AU), 은(AG) | 실물 인수도 금 및 은 선물 |
+| **철금속 선물** | 철근(RB), 열연코일(HC), 스테인리스강(SS) | 철강 제품 선물 |
+| **에너지 선물** | 연료유(FU), 아스팔트(BU), LPG (SHFE 상장 미확인) [unverified] | 석유 관련 상품 |
+| **화학 선물** | 천연고무(RU), 알루미나/산화알루미늄(AO) | 화학 및 산업용 원재료 |
+| **기타** | 인쇄용지(OP) | 최근 추가된 상품 |
+| **옵션** | 구리 옵션, 알루미늄 옵션, 아연 옵션, 금 옵션, 천연고무 옵션 등 | 주요 선물 상품에 대한 옵션 |
+
+#### INE (국제 시장 — SHFE 자회사)
+
+| 상품 | 티커 | 설명 | 해외 접근 |
+|---------|--------|-------------|---------------------|
+| 원유 | SC | 중질사워 원유, 1,000배럴/로트, 위안화 표시 | 해외 투자자 개방 (2018년 3월~) |
+| 저유황 연료유 | LU | 10톤/로트 | 해외 투자자 개방 |
+| TSR 20 고무 | NR | 10톤/로트, Technically Specified Rubber 20 | 해외 투자자 개방 |
+| 보세구리 | BC | 5톤/로트, 보세구역 전기동 | 해외 투자자 개방 |
+| 컨테이너 운임지수 | SCFIS | 현금결제, Shanghai Containerized Freight Index | 해외 투자자 개방 |
+
+[Source: SHFE, Official Website Products, https://www.shfe.com.cn/eng/]
+[Source: INE, Official Website, https://www.ine.cn/eng/]
+[Source: KGI World, "INE International Copper Futures", https://www.kgieworld.sg/futures/ine-copper-launch]
+
+### 2.2 거래 세션 (Trading Sessions)
+
+SHFE는 중국 표준시(CST, 베이징 시간, UTC+8)로 운영된다. 아래 시간은 모두 표준 거래일(월요일~금요일) 기준이다.
+
+#### 주간 세션 (전 상품)
+
+| 세션 | 베이징 시간 (CST) | UTC | 설명 |
+|---------|-------------------|-----|-------------|
+| **오전 세션 I** | 09:00 - 10:15 | 01:00 - 02:15 | 첫 번째 오전 거래 시간 |
+| **오전 세션 II** | 10:30 - 11:30 | 02:30 - 03:30 | 두 번째 오전 거래 시간 (15분 휴식) |
+| **오후 세션** | 13:30 - 15:00 | 05:30 - 07:00 | 오후 거래 시간 |
+
+#### 야간 세션 (연속 거래 프로그램 — 일부 상품)
+
+| 상품군 | 베이징 시간 (CST) | UTC | 대상 상품 |
+|--------------|-------------------|-----|----------|
+| **귀금속** | 21:00 - 02:30 (+1) | 13:00 - 18:30 | 금(AU), 은(AG) |
+| **비철금속 (그룹 1)** | 21:00 - 01:00 (+1) | 13:00 - 17:00 | 구리(CU), 알루미늄(AL), 아연(ZN), 납(PB), 니켈(NI), 주석(SN) |
+| **기타 SHFE 상품** | 21:00 - 23:00 | 13:00 - 15:00 | 천연고무(RU), 연료유(FU), 아스팔트(BU), 철근(RB), 열연코일(HC), 스테인리스강(SS), 알루미나(AO) [unverified — 이 등급의 구체적 상품] |
+| **INE 원유** | 21:00 - 02:30 (+1) | 13:00 - 18:30 | 원유(SC) |
+| **INE 보세구리** | 21:00 - 01:00 (+1) | 13:00 - 17:00 | 보세구리(BC) |
+| **INE 기타** | 21:00 - 23:00 | 13:00 - 15:00 | 저유황 연료유(LU), TSR 20 고무(NR) |
+
+**야간 세션 참고사항:**
+- 야간 세션의 거래는 익영업일 결제에 포함된다
+- 공휴일 전날 저녁에는 야간 세션이 운영되지 않는다
+- 금과 은은 런던 및 뉴욕 귀금속 거래 시간과 중첩되도록 가장 긴 야간 세션(02:30까지)을 운영한다
+- 비철금속은 London Metal Exchange (LME) 거래 시간을 포착하기 위해 01:00까지 운영한다
+
+[Source: SHFE, "Trading Hours", https://www.shfe.com.cn/eng/reports/CalendarHolidays/TradingHours/]
+[Source: SHFE, "Continuous Trading Program", https://www.shfe.com.cn/content/lxjy/main_en.html]
+[Source: Nanhua Futures, "Trading Hours Overview", https://www.nanhua.net/cmsbigfile/2024/11/c7be3f53-3ee2-4e9d-a55f-c074f5165c5b/Trading%20Hours%202024.11.18.pdf]
+[Source: TradingHours.com, "SHFE Market Hours", https://www.tradinghours.com/markets/shfe]
+
+### 2.3 호가단위 및 계약 명세 (Tick Sizes and Contract Specifications, 주요 상품)
+
+| 상품 | 계약 단위 | 호가단위 (최소가격변동폭) | 틱 가치 | 가격 표시 | 결제 방식 |
+|---------|--------------|-----------|------------|-----------------|----------|
+| 구리 (CU) | 5톤/로트 | 10 CNY/톤 | CNY 50 | CNY/톤 | 실물 인수도 |
+| 알루미늄 (AL) | 5톤/로트 | 5 CNY/톤 | CNY 25 | CNY/톤 | 실물 인수도 |
+| 아연 (ZN) | 5톤/로트 | 5 CNY/톤 | CNY 25 | CNY/톤 | 실물 인수도 |
+| 납 (PB) | 5톤/로트 | 5 CNY/톤 | CNY 25 | CNY/톤 | 실물 인수도 |
+| 니켈 (NI) | 1톤/로트 | 10 CNY/톤 | CNY 10 | CNY/톤 | 실물 인수도 |
+| 주석 (SN) | 1톤/로트 | 10 CNY/톤 | CNY 10 | CNY/톤 | 실물 인수도 |
+| 금 (AU) | 1,000그램/로트 | 0.02 CNY/그램 | CNY 20 | CNY/그램 | 실물 인수도 |
+| 은 (AG) | 15 kg/로트 | 1 CNY/kg | CNY 15 | CNY/kg | 실물 인수도 |
+| 천연고무 (RU) | 10톤/로트 | 5 CNY/톤 | CNY 50 | CNY/톤 | 실물 인수도 |
+| 연료유 (FU) | 10톤/로트 | 1 CNY/톤 | CNY 10 | CNY/톤 | 실물 인수도 |
+| 아스팔트 (BU) | 10톤/로트 | 1 CNY/톤 | CNY 10 | CNY/톤 | 실물 인수도 |
+| 철근 (RB) | 10톤/로트 | 1 CNY/톤 | CNY 10 | CNY/톤 | 실물 인수도 |
+| 열연코일 (HC) | 10톤/로트 | 1 CNY/톤 | CNY 10 | CNY/톤 | 실물 인수도 |
+| 스테인리스강 (SS) | 5톤/로트 | 5 CNY/톤 | CNY 25 | CNY/톤 | 실물 인수도 |
+| INE 원유 (SC) | 1,000배럴/로트 | 0.1 CNY/배럴 | CNY 100 | CNY/배럴 | 실물 인수도 |
+| INE 보세구리 (BC) | 5톤/로트 | 10 CNY/톤 | CNY 50 | CNY/톤 | 실물 인수도 |
+| INE TSR 20 고무 (NR) | 10톤/로트 | 5 CNY/톤 | CNY 50 | CNY/톤 | 실물 인수도 |
+
+[Source: SHFE, "Contract Text — Copper", https://www.shfe.com.cn/eng/Market/Futures/Metal/cu_f/ContractText/]
+[Source: SHFE, "Gold Contract Specification", https://www.shfe.com.cn/eng/Market/Futures/Metal/au_f/ContractText/]
+[Source: SHFE, "Silver Futures Contract Specifications", https://www.shfe.com.cn/eng/Market/Futures/Metal/ag_f/ContractText/]
+[Source: INE, "Crude Oil", https://www.ine.cn/eng/market/futures/energy/sc/]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 주문 체결 (Order Matching)
+
+- **체결 방식**: 가격-시간 우선의 전산화 중앙집중 체결
+- **우선순위 규칙**: 가격 우선(높은 매수호가와 낮은 매도호가가 먼저 체결), 이후 시간 우선(동일 가격에서 먼저 접수된 주문이 우선)
+- **매매체결엔진**: 주문이 중앙서버에 진입하여 중앙집중 체결; 체결 결과가 거래 단말로 피드백
+
+### 3.2 경매 방식 (Auction Mechanisms)
+
+- **단일가매매 (집합호가, Opening)**: 각 세션 시작 시 사용되어 시가를 결정한다. 사전접수 기간 동안 누적된 주문이 거래량을 극대화하는 단일 가격으로 체결된다.
+- **접속매매 (연속매매)**: 개장 후 신규 주문이 대기 주문과 연속적으로 체결된다.
+
+### 3.3 주문 유형 (Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| **지정가 주문** | 지정된 가격 또는 그보다 유리한 가격으로 매수 또는 매도하는 주문 |
+| **시장가 주문** | 최우선 호가에서 체결; 미체결 수량은 취소 |
+
+### 3.4 정산가격 (Settlement Price)
+
+- 일일 정산가격은 통상 거래일(또는 지정된 산출 시간대) 중 전체 거래의 거래량가중평균가격이다
+- 일일 mark-to-market 증거금 산출에 사용된다
+
+### 3.5 스프레드 거래 (Spread Trading)
+
+- 일부 상품에 대해 캘린더 스프레드(월간 스프레드) 거래가 지원된다
+- 관련 상품 간 상품간 스프레드도 이용 가능할 수 있다 [unverified]
+
+[Source: SHFE, "Application Report on Remote Trading Seat", https://www.shfe.com.cn/upload/20131120/1384924405429.doc]
+[Source: SHFE, "Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/]
+
+---
+
+## 5. 매매시스템 / 기술 (Trading System / Technology)
+
+### 5.1 CTP (Comprehensive Transaction Platform)
+
+SHFE는 중국 선물 업계에서 널리 사용되는 CTP (Comprehensive Transaction Platform)를 핵심 매매시스템으로 운영한다.
+
+| 항목 | 세부사항 |
+|------|---------|
+| 시스템 명칭 | CTP (Comprehensive Transaction Platform) |
+| 아키텍처 | 중앙 매매체결엔진과 분산 접속 |
+| 데이터센터 | 상하이 장장(Zhangjiang) 데이터센터 (기본 사이트) |
+| 접속 방식 | CTP API (기본), Hang Seng, POBO (Bloomberg), Multicharts 단말 |
+| HFT 접속 | CTP API, FPGA (Shengli), Femas, X1, Esunny Morningstar |
+| 거래 프로토콜 | CTP 독자 API; 제3자 ISV 접속 지원 |
+
+### 5.2 시스템 기능 (System Capabilities)
+
+- **주문 처리**: 모든 상장 선물 및 옵션에 대한 가격-시간 우선의 중앙집중 체결
+- **리스크 관리**: 실시간 포지션 모니터링, 증거금 산출, 자동 강제청산
+- **시장 데이터 배포**: 회원 및 정보 벤더에게 실시간 가격 및 시장 심도 데이터 배포
+- **인수도 시스템**: 전자 창고증권 관리 및 실물 인수도 처리
+
+### 5.3 인프라 (Infrastructure)
+
+- 주요 데이터센터는 상하이 장장 데이터센터 VIP 구역에 위치
+- 저지연 거래 접속을 위해 거래소 데이터센터에서 코로케이션/호스팅 서비스 제공
+- 고빈도거래 참가자를 위한 신속 거래 플랫폼이 호스팅 룸에 배치
+- 개인 투자자, 기관 투자자, 전문 HFT 참가자를 위한 표준화된 개방형 인터페이스 접속
+
+### 5.4 재해복구 (Disaster Recovery)
+
+- SHFE는 백업 시스템을 갖춘 업무연속성 계획을 유지
+- 구체적인 DR 사이트 위치 및 RTO/RPO 세부사항은 공개되지 않음 [unverified]
+
+[Source: CCB Futures, "Advantages", https://www.ccbfutures.com/en/about_us/advantages/index.shtml]
+[Source: Min Futures, "Trading Access", https://www.minfutures.com/english/main_business/tradingaccess/index.shtml]
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (Risk Controls & Circuit Breakers)
+
+### 8.1 일일 가격제한 (Daily Price Limits)
+
+SHFE는 모든 선물 계약에 일일 가격제한을 적용하며, 이는 전 거래일 정산가격 대비 비율로 산출된다. 한도는 시장 상황 및 공휴일 기간에 따라 조정된다.
+
+**표준 가격제한 (일반 조건):**
+
+| 상품 구분 | 표준 일일 가격제한 | 비고 |
+|-----------------|---------------------------|-------|
+| 구리 (CU) | ±3% (기본) | 변동성 확대 시 ±7-9%로 인상 (예: 2026년 1월 9%) |
+| 알루미늄 (AL) | ±3% (기본) | 변동성 확대 시 ±9%로 인상 |
+| 아연 (ZN) | ±4% | 공휴일 기간 조정 |
+| 납 (PB) | ±4% | 공휴일 기간 조정 |
+| 니켈 (NI) | ±5% | 변동성으로 인해 높은 기본 한도 |
+| 주석 (SN) | ±4% | 공휴일 기간 조정 |
+| 금 (AU) | ±3% (기본) | 변동성 확대 시 인상 |
+| 은 (AG) | ±3% (기본) | 변동성 확대 시 인상 |
+| 천연고무 (RU) | ±3% | 표준 |
+| 연료유 (FU) | ±5% | 표준 |
+| 철근 (RB) | ±4% | 표준 |
+| 스테인리스강 (SS) | ±5% (기본) | 공휴일 시 ±8%로 인상 |
+| INE 원유 (SC) | ±4% (기본) | 국제 원유 가격 변동성에 따라 조정 |
+
+**확대 메커니즘:**
+- 계약이 연속 거래일 동안 가격제한에서 정산되면, SHFE는 가격제한 범위를 확대하고 증거금 요건을 인상할 수 있다
+- SHFE는 공휴일 전이나 극단적 시장 상황에서 임시 조정을 시행할 수도 있다
+- 2026년 1월, SHFE는 귀금속 급등에 대응하여 금, 은, 구리, 알루미늄의 일일 가격제한을 확대하고 증거금 요건을 인상하는 등 규칙을 대폭 강화하였다
+
+### 8.2 거래 증거금 (Trading Margin Requirements)
+
+SHFE는 **고정비율 증거금 시스템**을 사용한다. 증거금은 계약 가치의 백분율로 산출된다.
+
+**표준 최저 거래 증거금:**
+
+| 상품 | 최저 증거금률 | 비고 |
+|---------|-------------------|-------|
+| 구리 (CU) | 5% (기본) | 변동성 확대 시 8-11%로 인상; 2026년 1월 투기 포지션 11% |
+| 알루미늄 (AL) | 5% (기본) | 변동성 확대 시 조정 |
+| 아연 (ZN) | 5% (기본) | 표준 |
+| 납 (PB) | 5% (기본) | 표준 |
+| 니켈 (NI) | 8% (기본) | 변동성으로 인해 높은 수준 |
+| 주석 (SN) | 8% (기본) | 변동성으로 인해 높은 수준 |
+| 금 (AU) | 4% (기본) | 낮은 기본 요율; 변동성 확대 시 인상 |
+| 은 (AG) | 4% (기본) | 낮은 기본 요율; 변동성 확대 시 인상 |
+| 천연고무 (RU) | 5% (기본) | 표준 |
+| 철근 (RB) | 5% (기본) | 표준 |
+| INE 원유 (SC) | 7% (기본) | 국제적 성격과 변동성으로 인해 높은 기본 수준 |
+
+**증거금 조정 규칙:**
+- 계약이 결제월에 근접함에 따라 증거금이 단계적으로 인상
+- 미결제약정이 지정된 임계치를 초과하면 증거금 인상
+- SHFE는 장기 공휴일(춘절, 국경절, 노동절) 전에 증거금을 인상
+- 거래소는 시장 상황에 따라 언제든 증거금을 인상할 수 있다
+
+### 8.3 포지션한도 (Position Limits)
+
+- SHFE는 각 회원 또는 고객이 보유할 수 있는 최대 매수 또는 매도 포지션을 지정하는 투기적 포지션한도 (건옥제한)를 부과한다
+- 포지션한도는 상품별로 다르며 최대 로트 수로 표시된다
+- 특정 상품(예: 은, 주석)에는 일일 개시 포지션 한도가 적용된다
+- 헤지 포지션은 신청을 통해 더 높은 한도를 승인받을 수 있다
+- 포지션이 지정된 임계치를 초과하면 대량거래자 보고 의무가 적용된다
+
+### 8.4 리스크 관리 체계 (Risk Management Framework)
+
+SHFE는 다음을 포함하는 종합적인 리스크 관리 체제를 적용한다:
+
+| 조치 | 설명 |
+|---------|-------------|
+| **증거금** | 담보로 납부하는 계약 가치의 백분율 |
+| **가격제한** | 최대 일일 가격 변동 범위 |
+| **투기적 포지션한도 (건옥제한)** | 비헤지 계좌의 최대 포지션 규모 |
+| **대량거래자 보고** | 포지션이 임계치를 초과할 때 의무 보고 |
+| **강제청산** | 증거금 요건 미충족 시 포지션 강제 청산 |
+| **리스크 경고** | 비정상적 거래 패턴 감지 시 경고 발령 |
+
+### 8.5 강제청산 (Forced Liquidation)
+
+- 회원의 증거금이 요구 수준 이하로 하락하고 익영업일 개장까지 보충되지 않을 경우, SHFE는 포지션을 강제로 청산할 수 있다
+- 포지션한도 (건옥제한)를 초과한 경우에도 포지션이 강제 청산될 수 있다
+- 극단적 상황에서는 거래 중단을 포함한 비상조치를 발동할 수 있다
+
+[Source: Caixin Global, "Shanghai Futures Exchange Tightens Rules Amid Precious Metals Surge", January 2026, https://www.caixinglobal.com/2026-01-21/shanghai-futures-exchange-tightens-rules-amid-precious-metals-surge-102406134.html]
+[Source: Caixin Global, "Shanghai Exchange Slaps New Limits on Metal Trading as Prices Soar", January 2026, https://www.caixinglobal.com/2026-01-27/shanghai-exchange-slaps-new-limits-on-metal-trading-as-prices-soar-102408262.html]
+[Source: SHFE, "Risk Management Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/202508/t20250807_828560.html]
+[Source: Mining.com, "Shanghai Futures Exchange lowers margin requirements for metals trading", https://www.mining.com/web/shanghai-futures-exchange-lowers-margin-requirements-for-metals-trading/]
+[Source: Swastika, "SHFE Raises Trading Margins: Market Impact Explained", https://www.swastika.co.in/blog/shanghai-futures-exchange-shfe-raises-trading-margins-what-it-means-for-commodities-and-indian-markets]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관 (Supervising Authority)
+
+| 감독기관 | 역할 |
+|-----------|------|
+| **중국증권감독관리위원회 (CSRC)** | 주요 감독기관; 중국 내 모든 선물 및 파생상품 거래소를 감독; 신규 상품 상장 승인 |
+
+### 9.2 주요 규정 (Key Regulations)
+
+- **선물거래관리조례 (국무원)**: 중국 선물시장을 규율하는 주요 국가 규정
+- **선물 및 파생상품법 (2022년)**: 중국 최초의 선물 및 파생상품에 관한 종합 법률, 2022년 8월 1일 시행; 시장 발전, 투자자 보호, 국경간 활동에 대한 법적 기반 제공
+- **SHFE 거래규칙**: 거래 행위, 주문 관리, 가격제한, 시장 운영을 규율하는 거래소 수준의 규칙
+- **SHFE 청산규칙**: 증거금, 결제, 인수도, 채무불이행 관리를 규율하는 규칙
+- **SHFE 리스크관리규칙**: 증거금, 가격제한, 포지션한도, 대량거래자 보고, 강제청산에 관한 규칙
+- **INE 업무규칙**: SHFE와 별도이나 정합성을 갖춘 Shanghai International Energy Exchange 운영 및 국제 참가자 접근에 관한 규칙
+
+### 9.3 시장감시 (Market Surveillance)
+
+- SHFE는 비정상적 거래 패턴, 시세조종, 내부자 거래에 대한 실시간 시장감시를 수행한다
+- CSRC와 협력하여 집행 조치를 시행한다
+- 대규모 포지션 및 이상 거래 활동을 보고한다
+- 투기 활동 통제를 위해 특정 상품에 대한 일일 개시 포지션 한도를 시행한다
+
+### 9.4 INE를 통한 국제화 (Internationalization via INE)
+
+SHFE의 자회사로 2013년에 설립된 Shanghai International Energy Exchange (INE)는 국제화 상품 거래를 위한 플랫폼이다:
+
+| 특징 | 설명 |
+|---------|-------------|
+| **목적** | 해외 투자자가 중국 상품 선물을 거래할 수 있는 규제된 장 제공 |
+| **통화** | 모든 계약은 위안화(RMB)로 표시 및 결제 |
+| **접근 채널** | 해외 중개기관을 통한 직접 해외 참여, 또는 QFII/RQFII 채널 |
+| **해외 투자자 개방 상품** | 원유(SC), 저유황 연료유(LU), TSR 20 고무(NR), 보세구리(BC), 컨테이너 운임지수(SCFIS) |
+| **보세 인수도** | 상하이 자유무역구 및 기타 지정 구역의 보세 창고를 통한 실물 인수도 |
+| **의의** | 원유 선물(SC, 2018년 3월 출시)은 중국 본토에서 해외 투자자에게 개방된 최초의 상품 선물 |
+
+### 9.5 자율규제기관 (Self-Regulatory Organization)
+
+- SHFE는 CSRC 감독 하의 자율규제기관(SRO)으로 기능한다
+- 중국 전역에 224개 인수도 창고를 운영
+- 회원사는 선물위탁매매업자(FCM) 및 비선물사 회원을 포함한다
+- SHFE는 자체 거래규칙, 청산규칙, 회원 요건을 설정하고 시행한다
+
+[Source: SHFE, "Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/]
+[Source: SHFE, "Clearing Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/202508/t20250807_828555.html]
+[Source: INE, "Overview", https://www.ine.cn/eng/about/overview/]
+[Source: Orient Futures Singapore, "INE Futures & Options Trading", https://www.orientfutures.com.sg/china-market-access/shanghai-international-energy-exchange-ine/]
+
+---
+
+## 상품 목록 (Product Catalog)
+
+### SHFE 선물 상품
+
+| 구분 | 상품 | 티커 | 계약 단위 | 상장 연도 |
+|----------|---------|--------|--------------|-------------|
+| **비철금속** | 전기동 | CU | 5톤/로트 | 1999 (SHME에서 승계) |
+| | 알루미늄 | AL | 5톤/로트 | 1999 (승계) |
+| | 아연 | ZN | 5톤/로트 | 2007 |
+| | 납 | PB | 5톤/로트 | 2011 |
+| | 니켈 | NI | 1톤/로트 | 2015 |
+| | 주석 | SN | 1톤/로트 | 2015 |
+| | 주조 알루미늄합금 | AD | 5톤/로트 [unverified] | 2022 |
+| **귀금속** | 금 | AU | 1,000그램/로트 | 2008 |
+| | 은 | AG | 15 kg/로트 | 2012 |
+| **철금속** | 철근 | RB | 10톤/로트 | 2009 |
+| | 열연코일 | HC | 10톤/로트 | 2014 |
+| | 스테인리스강 | SS | 5톤/로트 | 2019 |
+| **에너지** | 연료유 | FU | 10톤/로트 | 2004 |
+| | 아스팔트 | BU | 10톤/로트 | 2013 |
+| **화학** | 천연고무 | RU | 10톤/로트 | 1999 (승계) |
+| | 알루미나 (산화알루미늄) | AO | 20톤/로트 [unverified] | 2022 |
+| | 인쇄용지 | OP | [unverified] | 2025 [unverified] |
+
+### INE 선물 상품 (국제화)
+
+| 상품 | 티커 | 계약 단위 | 상장 연도 | 해외 접근 |
+|---------|--------|--------------|-------------|---------------------|
+| 원유 | SC | 1,000배럴/로트 | 2018 | 가능 (본토 최초로 해외 투자자에게 개방된 상품) |
+| 저유황 연료유 | LU | 10톤/로트 | 2020 | 가능 |
+| TSR 20 고무 | NR | 10톤/로트 | 2019 | 가능 |
+| 보세구리 | BC | 5톤/로트 | 2020 | 가능 |
+| 컨테이너 운임지수 | SCFIS | 현금결제 | 2024 [unverified] | 가능 |
+
+### 옵션 상품
+
+옵션은 SHFE에서 구리(CU), 알루미늄(AL), 아연(ZN), 금(AU), 은(AG), 천연고무(RU) 등에서 이용 가능하며; INE에서는 원유 옵션이 이용 가능하다.
+
+[Source: SHFE, Official Website, https://www.shfe.com.cn/eng/]
+[Source: INE, Official Website, https://www.ine.cn/eng/]
+[Source: CSI Data, "Commodity Factsheet — SHFE", https://apps.csidata.com/factsheets.php?type=commodity&format=htmltable&exchangeid=SHFE]
+
+---
+
+## 주요 상품 계약 명세 (Contract Specifications, Key Products Detail)
+
+### 구리 선물 (CU) — 대표 상품
+
+| 항목 | 명세 |
+|------|--------------|
+| 거래 단위 | 로트당 5미터톤 |
+| 가격 표시 | CNY/톤 |
+| 최소가격변동폭 | 10 CNY/톤 |
+| 일일 가격제한 | 전일 정산가격 대비 ±3% (기본; 변동성 확대 시 조정) |
+| 계약월 | 월물 (1월~12월) |
+| 인수도 방식 | 실물 인수도 |
+| 인수도 가능 등급 | 표준 전기동 (Cu-CATH-2, GB/T467) Cu+Ag 함량 >= 99.95% |
+| 인수도 단위 | 워런트당 25톤 |
+| 거래 증거금 | 최저 5% (기본) |
+
+### 금 선물 (AU)
+
+| 항목 | 명세 |
+|------|--------------|
+| 거래 단위 | 로트당 1,000그램 |
+| 가격 표시 | CNY/그램 |
+| 최소가격변동폭 | 0.02 CNY/그램 |
+| 일일 가격제한 | 전일 정산가격 대비 ±3% (기본) |
+| 계약월 | 연중 대부분의 월 |
+| 인수도 방식 | 실물 인수도 |
+| 인수도 가능 등급 | 순도 >= 99.95% 금괴 |
+| 인수도 단위 | 3,000그램 (순중량) |
+| 거래 증거금 | 최저 4% (기본) |
+
+### 은 선물 (AG)
+
+| 항목 | 명세 |
+|------|--------------|
+| 거래 단위 | 로트당 15 kg |
+| 가격 표시 | CNY/kg |
+| 최소가격변동폭 | 1 CNY/kg |
+| 일일 가격제한 | 전일 정산가격 대비 ±3% (기본) |
+| 인수도 방식 | 실물 인수도 |
+| 인수도 단위 | 30 kg |
+| 거래 증거금 | 최저 4% (기본) |
+
+### INE 원유 선물 (SC)
+
+| 항목 | 명세 |
+|------|--------------|
+| 거래 단위 | 로트당 1,000배럴 |
+| 가격 표시 | CNY/배럴 |
+| 최소가격변동폭 | 0.1 CNY/배럴 |
+| 일일 가격제한 | 전일 정산가격 대비 ±4% (기본) |
+| 계약월 | 월물, 12-36개월 선행 |
+| 인수도 방식 | 보세 창고에서의 실물 인수도 |
+| 인수도 가능 등급 | 중질사워 원유 (API 32, 유황 1.5%) |
+| 거래 증거금 | 최저 7% (기본) |
+| 통화 | 위안화(RMB) 표시 및 결제 |
+| 해외 접근 | 2018년 3월 26일부터 해외 투자자에게 개방 |
+
+[Source: SHFE, "Contract Text — Copper", https://www.shfe.com.cn/eng/Market/Futures/Metal/cu_f/ContractText/]
+[Source: SHFE, "Gold Contract Specification", https://www.shfe.com.cn/eng/Market/Futures/Metal/au_f/ContractText/]
+[Source: SHFE, "Silver Futures Contract Specifications", https://www.shfe.com.cn/eng/Market/Futures/Metal/ag_f/ContractText/]
+[Source: INE, "Crude Oil", https://www.ine.cn/eng/market/futures/energy/sc/]
+[Source: SHFE, "Crude Oil Futures", https://www.shfe.com.cn/content/2018-yyQH-en/index.html]
+
+---
+
+## 증거금 체계 (Margin Framework)
+
+### 증거금 산출 방법론 (Margin Methodology)
+
+SHFE는 **고정비율 증거금 시스템**을 사용한다 (SPAN이나 VaR가 아닌). 거래 증거금은 계약 가치의 백분율로 산출되며, 비율은 상품, 결제월 근접도, 포지션 규모, 시장 상황에 따라 달라진다.
+
+### 증거금 산출 (Margin Calculation)
+
+- **개시증거금** = 계약 가격 x 계약 단위 x 증거금률
+- 예시: 구리 CNY 70,000/톤, 5톤/로트, 8% 증거금 = 로트당 CNY 28,000
+
+### 증거금 인상 규칙 (Margin Escalation Rules)
+
+| 조건 | 효과 |
+|-----------|--------|
+| **결제월 근접** | 계약이 결제월에 근접함에 따라 증거금률이 단계적으로 인상 |
+| **높은 미결제약정** | 총 미결제약정이 지정 임계치를 초과하면 증거금률 인상 |
+| **연속 가격제한 도달** | 계약이 연속일 가격제한에서 정산되면 증거금 인상 |
+| **공휴일 기간** | SHFE는 장기 공휴일(춘절, 국경절, 노동절) 전에 정례적으로 증거금 인상 |
+| **거래소 재량** | SHFE는 언제든 증거금을 조정할 수 있다; 2026년 1월 귀금속 급등 시 구리 증거금을 7%에서 8%(일반) 및 11%(투기)로 인상 |
+
+### 변동증거금 (Variation Margin)
+
+- 일일 정산가격 기준으로 매일 정산 (mark-to-market)
+- 이익은 회원의 증거금 계좌에 입금되고 손실은 매일 차감
+- 증거금이 유지 수준 이하로 하락하면 마진콜이 발생; 익영업일 개장까지 보충하지 않으면 강제청산될 수 있다
+
+### 인수도 증거금 (Delivery Margin)
+
+- 인수도월 중에는 증거금 요건이 크게 증가한다
+- 매수자와 매도자 모두 인수도 증거금을 납부해야 한다
+- SHFE 지정 창고(중국 전역 224개 창고)를 통한 실물 인수도
+
+### INE 증거금 특이사항 (INE Margin Specifics)
+
+- INE 상품(원유, 보세구리 등)은 동일한 고정비율 방법론을 따른다
+- 해외 참가자는 외화(USD)를 증거금 담보로 사용할 수 있다 (헤어컷 적용) [unverified — 구체적 헤어컷 비율]
+- INE 증거금 요건은 계약의 국제적 성격으로 인해 일반적으로 국내 SHFE 상품보다 높다
+
+[Source: SHFE, "Risk Management Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/202508/t20250807_828560.html]
+[Source: SHFE, "Clearing Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/202508/t20250807_828555.html]
+[Source: Caixin Global, "Shanghai Futures Exchange Tightens Rules Amid Precious Metals Surge", January 2026, https://www.caixinglobal.com/2026-01-21/shanghai-futures-exchange-tightens-rules-amid-precious-metals-surge-102406134.html]

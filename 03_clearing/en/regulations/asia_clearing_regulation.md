@@ -1,0 +1,309 @@
+# Asia-Pacific Clearing & Settlement Regulation
+
+> **Last Updated:** 2026-04-07
+
+---
+
+## 1. Japan
+
+### 1.1 Regulatory Authorities
+- **FSA / JFSA (Financial Services Agency):** Primary regulator for securities markets and clearing organizations. JSCC is directly regulated by JFSA under the Financial Instruments and Exchange Act. JFSA oversees licensing of Financial Instruments Obligation Assumption Services. [Source: JSCC PFMI Disclosure, March 2025]
+- **Bank of Japan (BOJ):** Oversees payment and settlement systems, operates BOJ-NET for JGB settlement and fund transfers. Conducts oversight assessments of FMIs under the PFMI framework. [Source: BOJ Red Book 2012]
+- **Role Division:** JFSA handles prudential regulation and licensing of clearing organizations; BOJ focuses on systemic risk oversight and payment system operation. Both coordinate on FMI supervision. The Ministry of Agriculture, Forestry and Fisheries and the Ministry of Economy, Trade and Industry co-regulate commodity derivatives clearing alongside JFSA. [Source: JSCC PFMI Disclosure, March 2025]
+
+### 1.2 Key Legislation
+- **Financial Instruments and Exchange Act (FIEA):** Core statute governing securities and derivatives markets, including mandatory clearing requirements for specified OTC derivatives. JSCC is licensed under FIEA to perform Financial Instruments Obligation Assumption Services. Business Rules established under FIEA are legally binding and enforceable. [Source: Chambers Derivatives 2025 - Japan]
+- **Act on Book-Entry Transfer of Corporate Bonds, Shares, etc.:** Legal framework for dematerialized securities holding and transfer through JASDEC. [Source: BOJ Red Book]
+- **Payment and Settlement Systems Act:** Governs payment systems including BOJ-NET operations, netting arrangements, and settlement finality. [Source: BOJ Red Book]
+- **Commodity Derivatives Act (CDA):** JSCC is also licensed under the CDA to perform Business of Assuming Commodity Transaction Debts. [Source: JSCC PFMI Disclosure, March 2025]
+
+### 1.3 CCP/CSD Framework
+- **JSCC (Japan Securities Clearing Corporation):** Sole CCP in Japan, a wholly-owned subsidiary of JPX (Japan Exchange Group). Provides clearing services for listed equities, JGBs, listed derivatives, OTC interest rate swaps (TONA), and credit default swaps (iTraxx Japan). Updated its PFMI Disclosure on April 1, 2026. [Source: JPX/JSCC website, JSCC PFMI Disclosure 2025/2026]
+- **JASDEC (Japan Securities Depository Center, Inc.):** Central securities depository for equities, corporate bonds, and other securities. Provides book-entry transfer services. DVP settlement for cash products is conducted by linking JASDEC book-entry transfer with fund settlement at Fund Settlement Banks. [Source: JSCC PFMI Disclosure, March 2025]
+- **BOJ-NET:** Real-time gross settlement (RTGS) system operated by BOJ for JGB settlement and interbank fund transfers. DVP for JGBs is achieved through BOJ-NET. [Source: BOJ Red Book]
+- **OTC Derivatives Clearing Mandate:** Categories subject to mandatory clearing under FIEA include Designated Cleared CDSs (iTraxx Japan) and Designated Cleared IRSs (TONA compounded in arrears). [Source: JSCC PFMI Disclosure, March 2025]
+
+### 1.4 Settlement
+- **Equities:** T+2 settlement cycle. DVP through linkage between JASDEC (securities leg) and Fund Settlement Banks (cash leg). [Source: JSCC PFMI Disclosure]
+- **JGBs:** T+1 settlement cycle. DVP through BOJ-NET. [Source: BOJ Red Book]
+- **T+1 Considerations for Equities:** Japan has not yet announced a formal timeline for equity T+1 migration but is monitoring global developments. [unverified]
+
+### 1.5 Recent Changes
+- **JSCC Margin Methodology Migration (SPAN to VaR):** JSCC migrated from SPAN to a VaR-based margin calculation method on November 6, 2023, covering JGB futures, index futures, options, and commodity futures/options. The methodology uses Historical Simulation (HS-VaR) and Alternative Simulation (AS-VaR) methods. VaR Margin Software (VMA) upgrade from v3.0 to v4.0 is planned for April 13, 2026. [Source: JPX Working Paper Vol. 45, February 2025; JSCC VaR Method page]
+- **Listed Derivatives April 2026 Project:** JSCC published outline of changes for listed derivatives scheduled for April 2026. [Source: JSCC News, 2026]
+- **Cross-border CCP Recognition:** JSCC has obtained recognition from foreign regulators including the Ontario Securities Commission (Canada) under s.147 orders. [Source: OSC decision]
+
+---
+
+## 2. Hong Kong
+
+### 2.1 Regulatory Authorities
+- **SFC (Securities and Futures Commission):** Primary securities regulator. Oversees recognized clearing houses, OTC derivatives regime, and market infrastructure. Jointly administers clearing rules with HKMA for OTC derivatives. [Source: SFC website; ICLG Derivatives 2025-2026 Hong Kong]
+- **HKMA (Hong Kong Monetary Authority):** Oversees designated clearing and settlement systems under the Clearing and Settlement Systems Ordinance. Co-regulator (with SFC) for OTC derivatives clearing mandate applying to authorized institutions. [Source: HKMA press releases 2025-2026]
+
+### 2.2 Key Legislation
+- **Securities and Futures Ordinance (SFO):** Core legislation governing securities and futures markets, including the framework for recognized clearing houses (HKSCC, HKCC, SEOCH, OTC Clear). Part IIIA governs OTC derivatives. [Source: ICLG Derivatives 2025-2026 Hong Kong]
+- **Clearing and Settlement Systems Ordinance (CSSO):** Empowers HKMA to designate and oversee clearing and settlement systems that are important to the monetary or financial stability of Hong Kong. [Source: HKMA website]
+
+### 2.3 CCP/CSD Framework
+- **HKSCC (Hong Kong Securities Clearing Company):** CCP and CSD for equities and fixed income traded on SEHK. Operates CCASS (Central Clearing and Settlement System). All are subsidiaries of HKEX. [Source: HKEX PFMI Disclosure]
+- **HKCC (HKFE Clearing Corporation):** CCP for futures and options traded on HKFE. [Source: HKEX]
+- **SEOCH (SEHK Options Clearing House):** CCP for stock options. [Source: HKEX]
+- **OTC Clear (OTC Clearing Hong Kong):** CCP for OTC derivatives (IRS, NDF, cross-currency swaps). [Source: ICLG Derivatives 2025-2026 Hong Kong]
+- **Stock Connect Clearing Arrangements:** HKSCC acts as sole clearing participant in ChinaClear, holding two omnibus stock accounts (Shanghai and Shenzhen) on behalf of CCASS participants. The offshore investor faces only HKSCC as clearing house. ChinaClear settlement occurs at 6 pm Shanghai time on trade date. Bond Connect operates similarly for fixed income. [Source: HKEX Stock Connect Information Book; Dorsey & Whitney Guide]
+
+### 2.4 Settlement
+- **Equities:** T+2 settlement cycle via CCASS. [Source: Citi Hong Kong Market Report]
+- **Multi-Counter Securities:** In June 2025, HKSCC adopted a single tranche multiple counter arrangement for dual counter securities and multi-counter ETFs in CCASS. [Source: Citi Hong Kong Report]
+- **T+1 Consultation:** HKEX released a consultation paper in July 2025 proposing to shorten the cash market settlement cycle from T+2 to T+1. HKEX advised that post-trade systems will be technically ready to support T+1 by end of 2025. No final implementation date announced as of April 2026. [Source: HKEX consultation paper July 2025; Broadridge insight]
+
+### 2.5 Recent Changes
+- **Uncertificated Securities Market (USM):** SFC is implementing a compulsory uncertificated (paperless) securities regime. All new issues required to be paperless from early 2026. Five-year transition period (to early 2031) for existing listed companies issuing prescribed securities. HKSCC platforms connected to approved securities registrars. [Source: SFC USM page; Charltons Law update]
+- **OTC Derivative Clearing Mandate Extensions:** Clearing obligation applies to prescribed persons trading in-scope products. HKMA and SFC jointly consulting on standard calculation periods under OTC derivative Clearing Rules (effective from 1 March 2027). Comments due by 27 February 2026. [Source: HKMA press release, January 2026]
+- **OTC Derivatives Reporting Enhancements:** Mandatory implementation of UTI, UPI, and CDE reporting from 29 September 2025. [Source: EY Hong Kong FSRM Insights, March 2025]
+- **Margin for Non-Centrally Cleared OTC Derivatives:** SFC deferred effective date of margin requirements for non-centrally cleared single-stock options, equity basket options, and equity index options until 4 January 2026. [Source: ICLG Derivatives 2025-2026 Hong Kong]
+- **Stock Connect Enhancements:** Ongoing expansion of eligible securities and operational improvements for both Stock Connect and Bond Connect. [Source: HKEX]
+
+---
+
+## 3. Singapore
+
+### 3.1 Regulatory Authorities
+- **MAS (Monetary Authority of Singapore):** Sole integrated regulator serving as central bank, financial regulator, and supervisor. Regulates clearing facilities (CDP, SGX-DC) under the Securities and Futures Act. Designates systemically important FMIs. [Source: MAS; BIS CPMI Red Book Singapore]
+
+### 3.2 Key Legislation
+- **Securities and Futures Act (SFA):** Core legislation governing securities, derivatives markets, and clearing facilities. Provides framework for recognition and regulation of approved clearing houses. [Source: SGX Rulebook - CDP Clearing Rules]
+- **Payment Services Act (PSA):** Governs payment systems and services, complementing the SFA framework for settlement systems. [Source: MAS]
+
+### 3.3 CCP/CSD Framework
+- **CDP (Central Depository Pte Ltd):** Wholly-owned subsidiary of SGX, providing securities clearing, settlement, and depository services for equities and fixed income traded on SGX-ST. MAS regulates CDP as a clearing house under SFA. CDP custody modernization initiative announced by MAS Deputy Chairman Chee Hong Tat. [Source: SGX Rulebook; MAS]
+- **SGX-DC (SGX Derivatives Clearing):** Wholly-owned subsidiary of SGX, CCP for all derivatives traded on SGX. Acts as CCP guaranteeing all executed trades. [Source: SGX Derivatives Clearing Information]
+- **MAS Designation:** Both CDP and SGX-DC are designated as systemically important clearing houses by MAS. [Source: BIS CPMI Red Book Singapore]
+
+### 3.4 Settlement
+- **Equities:** T+2 settlement cycle. DVP model through CDP. [Source: Clearstream Singapore Market Guide]
+- **CDP Settlement Rules:** Governed by detailed CDP Settlement Rules published in SGX Rulebook. [Source: SGX Rulebook - CDP Settlement Rules]
+
+### 3.5 Recent Changes
+- **Post-trade Modernization:** CDP custody modernization to facilitate wider investor adoption of broker custody accounts while retaining the option for retail investors to keep CDP direct accounts. Board lot reduction also under consideration. [Source: MAS Deputy Chairman remarks; SGX]
+- **T+1 Considerations:** MAS reached out to CDP to understand views on adopting T+1. Industry participants have requested a cautious approach citing operational challenges. No firm timeline set. [Source: BNP Paribas Securities Services T+1 APAC report]
+- **SGX-Nasdaq Bridge:** Progress toward mid-2026 SGX-Nasdaq dual-listing bridge. [Source: SGX update December 2025]
+
+---
+
+## 4. Australia
+
+### 4.1 Regulatory Authorities
+- **ASIC (Australian Securities and Investments Commission):** Regulates market operators and clearing/settlement facility licensees. Has new powers under Competition in Clearing and Settlement (CiCS) reforms. Commissioned expert-led Inquiry into ASX in June 2025. Published ASX Inquiry Panel Final Report in 2026. [Source: ASIC media release 25-019MR; ASIC media release 26-059MR]
+- **RBA (Reserve Bank of Australia):** Oversees clearing and settlement facilities for financial stability. Conducts annual assessments of ASX clearing and settlement facilities against FSS (Financial Stability Standards), which implement the PFMI. Published Assessment of ASX Clearing and Settlement Facilities for 2024-2025. [Source: RBA Assessment Report September 2025]
+- **Council of Financial Regulators (CFR):** Coordinates ASIC and RBA oversight. Published regulatory expectations for conduct in cash equity clearing and settlement. [Source: ASIC CS Services Rules background]
+
+### 4.2 Key Legislation
+- **Corporations Act 2001:** Core legislation governing CS facility licensing. Part 7.3 establishes the framework for clearing and settlement facility licences. [Source: ASIC Licensed CS Facilities page]
+- **Payment Systems and Netting Act 1998:** Provides legal framework for settlement finality and netting arrangements. [Source: RBA]
+- **Financial Sector (Collection of Data) Act 2001:** Enables data collection from financial market infrastructure operators. [Source: RBA]
+- **Competition in Clearing and Settlement (CiCS) Reforms:** Passed September 2023, enlivened by the Minister in May 2024. Gives ASIC new powers to promote competitive outcomes in clearing and settlement. [Source: ASIC media release 25-019MR]
+
+### 4.3 CCP/CSD Framework
+- **ASX Clear Pty Ltd:** CCP for cash equities and equity-related derivatives. [Source: RBA Assessment 2024-2025]
+- **ASX Clear (Futures) Pty Ltd:** CCP for futures, options on futures, and OTC derivatives. [Source: RBA Assessment 2024-2025]
+- **ASX Settlement Pty Ltd (CHESS):** Securities settlement facility and sub-register for ASX-listed securities. Operates the CHESS system. [Source: ASX CHESS Replacement page]
+- **Austraclear Limited:** Settlement facility for debt securities and OTC derivatives. [Source: RBA Assessment 2024-2025]
+- **Vertically Integrated Model and Competition Debate:** ASX operates all four CS facilities in a vertically integrated structure. ASIC has now exercised CiCS powers to require fair and transparent provision of CS services, including publication of fee comparisons against international providers. [Source: ASIC media release 25-019MR]
+
+### 4.4 Settlement
+- **Equities:** T+2 settlement cycle through CHESS. [Source: ASX]
+- **CHESS Replacement Project:** Two-phased approach:
+  - **Release 1 (Clearing):** Go-live planned for 20 April 2026. Industry Test Environment (ITE) opened 28 February 2025. TCS (Tata Consultancy Services) as vendor, Accenture as solutions integrator. Budget: A$105 million. [Source: ASX CHESS Replacement page; ASX update 23 March 2026]
+  - **Release 2 (Settlement and Sub-registry):** Expected during 2028 or 2029. Budget: A$125 million. [Source: ASX CHESS Project page]
+  - The original DLT-based CHESS replacement project was abandoned; the current project uses conventional technology. [Source: Digital Finance Group analysis]
+- **T+1 Considerations:** Deferred to 2030 at earliest, essentially one year after Australia's CHESS Release 2 migration (expected 2029). Australia and New Zealand are eyeing joint transition. [Source: BNP Paribas T+1 APAC report; EquiLend analysis]
+
+### 4.5 Recent Changes
+- **ASIC CS Services Rules 2025:** First exercise of new CiCS powers. Requires ASX to provide CS services on transparent and fair basis, publish fee comparisons, ensure technical interoperability, manage intragroup conflicts of interest, and obtain external assurance on pricing and barriers to competition. Implements previously non-enforceable CFR Regulatory Expectations as binding obligations. [Source: ASIC media release 25-019MR; ASX CS Service Rules and Code of Practice page]
+- **ASIC ASX Inquiry Panel Final Report:** Published in 2026 following expert-led inquiry commissioned June 2025 into persistent operational issues. [Source: ASIC media release 26-059MR]
+- **RBA FSS Standard Assessments:** Annual assessment of ASX clearing and settlement facilities published September 2025. RBA and ASIC monitoring CHESS Release 1 cutover closely to ensure adequate planning, cutover, and rollback strategies. [Source: RBA Assessment 2024-2025]
+- **CS Facility Resolution Regime:** RBA published guidance for consultation on the Australian Clearing and Settlement Facility Resolution Regime in June 2025. [Source: RBA Consultation Paper, June 2025]
+
+---
+
+## 5. China
+
+### 5.1 Regulatory Authorities
+- **CSRC (China Securities Regulatory Commission):** Primary regulator for securities and futures markets, including clearing organizations. Issues administrative measures governing securities registration and settlement. Published revised Administrative Measures for Securities Registration and Settlement to support DVP reform. [Source: CSRC; Xinhua Silk Road]
+- **PBOC (People's Bank of China):** Central bank overseeing interbank bond market clearing and settlement, payment systems. Regulates SHCH (Shanghai Clearing House) for interbank market. [Source: Chambers Derivatives 2025 - China]
+
+### 5.2 Key Legislation
+- **Securities Law of the People's Republic of China:** Core statute governing securities markets including registration, custody, clearing, and settlement. [Source: CSDC website - Legal Documents]
+- **Measures for the Administration of Securities Registration and Settlement:** Issued by CSRC, governing CSDC operations. Amended to incorporate DVP reform provisions including tagged securities protections and default procedures. [Source: CSRC; CSDC website]
+- **Futures and Derivatives Law:** Came into force on 1 August 2022, providing comprehensive regulatory framework for trading, settlement, and clearing of futures and derivatives. CSRC has issued implementing regulations. [Source: FIA; Chambers Derivatives 2025 - China]
+- **Regulations on Administration of Securities Registration and Settlement:** Detailed operational regulations for CSDC. [Source: CSDC website]
+
+### 5.3 CCP/CSD Framework
+- **CSDC (China Securities Depository and Clearing Corporation / ChinaClear):** Dual CCP and CSD role. Based in Beijing with Shanghai and Shenzhen branches serving the respective stock exchanges. Responsible for all securities depository, registration, clearing, settlement, and netting for SSE and SZSE. Analogous to DTCC in the US. [Source: CSDC Company Profile; Wikipedia]
+- **Shanghai Branch:** Serves Shanghai Stock Exchange. [Source: SSE website]
+- **Shenzhen Branch:** Serves Shenzhen Stock Exchange. [Source: CSDC]
+- **SHCH (Shanghai Clearing House):** CCP for interbank bond market and OTC derivatives, regulated by PBOC. [Source: Chambers Derivatives 2025 - China]
+- **Stock Connect Cross-border Arrangements:** HKSCC is a participant in ChinaClear as nominee for all CCASS clearing participants. HKSCC maintains two omnibus stock accounts with ChinaClear (one for Shanghai Connect, one for Shenzhen Connect). Settlement occurs at 6 pm Shanghai time on trade date (T+0 for securities). [Source: HKEX Stock Connect Information Book; Dorsey & Whitney Guide]
+
+### 5.4 Settlement
+- **Unique T+0 Securities / T+1 Funds Model:** Securities are delivered on T+0 (trade date), while fund settlement occurs on T+1. This is a unique settlement model globally, and with DVP reform, China is described as the first market to adopt T+1 DVP. [Source: WFE Focus article by CSDC; ACG CSD article]
+- **DVP Reform (December 2022):** Implemented on December 26, 2022. The reform establishes linkage between securities delivery and funds transfer via "tagging" of securities. At end of T+0, for buyers with sufficient funds, CSDC freezes the corresponding amount in the buyer's fund settlement account. Tagged securities in settlement are protected from enforcement. Aligned with 2016-2017 IMF/World Bank FSAP recommendation. [Source: WFE Focus - CSDC DVP; Xinhua Silk Road; CGTN]
+- **CSDC Settlement Reserve Fund Reduction:** CSDC cut the minimum ratio of stock settlement reserve funds to lower costs and better serve the real economy. [Source: Xinhua Silk Road]
+
+### 5.5 Recent Changes
+- **DVP Implementation and Stabilization:** Six months after the December 2022 reform, the market reported positive feedback and stable operation. [Source: WFE Focus - CSDC]
+- **Bond Connect and Stock Connect Expansion:** Ongoing expansion of eligible securities and operational improvements. CSRC unveiled a work plan to optimize the QFI (Qualified Foreign Investor) regime. [Source: Chambers article on CSRC QFI optimization]
+- **Programme Trading Regulations:** CSRC issued new rules on programme trading in China. [Source: Simmons & Simmons]
+- **CSRC 2025 Legislative Plan:** CSRC published an active legislative plan for 2025, indicating continued regulatory evolution. [Source: UDF Space article]
+
+---
+
+## 6. India
+
+### 6.1 Regulatory Authorities
+- **SEBI (Securities and Exchange Board of India):** Primary securities market regulator. Oversees clearing corporations (NSCCL, ICCL) and depositories (NSDL, CDSL). Pioneered T+1 settlement and launched T+0 pilot. Extended clearing corporation licences. [Source: SEBI circulars; Bigul blog]
+- **RBI (Reserve Bank of India):** Central bank overseeing payment systems, government securities clearing (through CCIL), and foreign exchange settlement. [Source: RBI]
+
+### 6.2 CCP/CSD Framework
+- **NSCCL (NSE Clearing Ltd, formerly National Securities Clearing Corporation Ltd):** Clearing corporation for NSE (National Stock Exchange). Licence extended by SEBI until October 2, 2026. [Source: SEBI; Bigul blog]
+- **ICCL (Indian Clearing Corporation Ltd):** Clearing corporation for BSE (formerly Bombay Stock Exchange). Licence extended by SEBI until October 2, 2026. [Source: SEBI; Bigul blog]
+- **CCIL (Clearing Corporation of India Ltd):** CCP for government securities, money market instruments, and foreign exchange. Regulated by RBI. [Source: RBI]
+- **NSDL (National Securities Depository Ltd):** Central securities depository, primarily serving NSE participants. [Source: SEBI]
+- **CDSL (Central Depository Services Ltd):** Central securities depository, primarily serving BSE participants. [Source: SEBI]
+
+### 6.3 Settlement
+- **T+1 for Equities (Pioneer):** India fully implemented T+1 settlement for all equities from January 27, 2023, becoming one of the first major markets globally to do so. The migration was phased starting from the lowest-capitalization stocks and moving upward. [Source: SEBI; multiple market reports]
+- **Instant Settlement (T+0) Pilot and Expansion:**
+  - **Phase 1 (March 2024):** Pilot launched on March 28, 2024, with 25 selected stocks and limited brokers. [Source: Business Today; SEBI]
+  - **Phase 2 (January-May 2025):** Starting January 31, 2025, the bottom 100 of the top 500 companies by market cap migrated to T+0, with 100 more added each month. All 500 companies had T+0 option by May 2025. [Source: Tej Mandi; SEBI circular]
+  - **NSE T+0 Official Launch (February 2026):** NSE officially launched T+0 same-day settlement on February 5, 2026. [Source: Global Publicist 24]
+  - **Further Expansion:** Expected rollout of 50 additional mid-cap stocks in Q3 2026. [Source: Global Publicist 24]
+  - **Operational Details:** Trading until 1:30 pm, obligations determined by 2:30 pm on T day, settlement completed thereafter. Investors can choose between T+0 and T+1. Brokers may charge separate brokerage for each. [Source: SEBI circular; StockGro]
+  - **QSB Implementation:** SEBI extended timeline for mandatory implementation of T+0 systems by Qualified Stock Brokers (QSBs). [Source: SEBI circular October 2025]
+
+---
+
+## 7. Korea (for comparison)
+
+### 7.1 Regulatory Structure
+- **FSC (Financial Services Commission):** Policy and rulemaking authority for financial markets. Regulates KRX based on the Financial Investment Services and Capital Markets Act (FSCMA). KRX needs FSC approval to amend its regulations. From 2026, mandatory English disclosure requirement expands to all KOSPI-listed companies. [Source: Chambers Financial Services Regulation 2025 - South Korea; FSC press releases]
+- **FSS (Financial Supervisory Service):** Executive supervisory body under FSC. Conducts on-site examinations and enforcement. [Source: FSC/FSS]
+- **BOK (Bank of Korea):** Central bank overseeing payment and settlement systems. Operates BOK-Wire+ system. [Source: BIS CPMI Red Book Korea]
+- **KRX (Korea Exchange):** Sole exchange operator and CCP for exchange-traded products (equities, derivatives). Vertically integrated model. Regulated by FSC and overseen by BOK. [Source: Chambers 2025; BIS Red Book Korea; IMF FSAP 2014]
+- **KSD (Korea Securities Depository):** Central securities depository. Operates e-SAFE settlement system for bond institutions. [Source: FSC press release August 2025; Clearstream Market Infrastructure - South Korea]
+
+### 7.2 Key Features
+- **Vertically Integrated Model:** KRX operates as combined exchange, clearing house, and CCP. KSD operates as CSD. Both are closely coordinated under FSC/FSS oversight. [Source: BIS Red Book Korea; IMF FSAP 2014]
+- **T+2 Settlement:** Current settlement cycle for equities. [Source: Clearstream Market Infrastructure - South Korea]
+- **T+1 Working Group:** On October 10, 2025, KSD and KRX announced establishment of a joint working group to explore T+1 transition, including representatives from KOFIA (Korea Financial Investment Association), major securities firms, and other market participants. Findings to be reported to financial authorities. [Source: FSC press release]
+- **Settlement Infrastructure Enhancement:** Plan to Enhance Securities Settlement Infrastructure announced August 2025. Includes extending operating hours of BOK-Wire+ and KSD's e-SAFE system. Market participant feedback being gathered. [Source: FSC press release]
+- **KRX as Sole CCP:** KRX serves as the sole CCP for all exchange-traded products including equities, derivatives (KOSPI 200 futures/options, single stock futures, etc.). [Source: BIS Red Book Korea; IMF FSAP]
+
+---
+
+## 8. Cross-Regional Comparison
+
+| Aspect | Japan | Hong Kong | Singapore | Australia | China | India | Korea |
+|--------|-------|-----------|-----------|-----------|-------|-------|-------|
+| **Primary Regulator** | JFSA + BOJ | SFC + HKMA | MAS | ASIC + RBA | CSRC + PBOC | SEBI + RBI | FSC + FSS + BOK |
+| **CCP Model** | JSCC (JPX subsidiary), sole CCP | HKSCC, HKCC, SEOCH, OTC Clear (all HKEX) | CDP + SGX-DC (SGX subsidiaries) | ASX Clear + ASX Clear (Futures) | CSDC (dual CCP+CSD) + SHCH (interbank) | NSCCL (NSE) + ICCL (BSE) + CCIL (govt sec) | KRX (exchange + CCP) |
+| **CSD Model** | JASDEC | HKSCC (via CCASS) | CDP | ASX Settlement (CHESS) + Austraclear | CSDC (dual CCP+CSD) | NSDL + CDSL | KSD |
+| **Settlement Cycle** | T+2 equities, T+1 JGBs | T+2 equities | T+2 equities | T+2 equities | T+0 securities / T+1 funds | T+1 equities (since Jan 2023); T+0 pilot live | T+2 equities |
+| **Clearing Mandate (OTC)** | Yes (IRS-TONA, iTraxx Japan CDS) | Yes (IRS, NDF via OTC Clear) | Yes (specified IRS) [unverified] | Yes (specified OTC derivatives) [unverified] | Developing (Futures & Derivatives Law 2022) | Limited [unverified] | Limited [unverified] |
+| **PFMI Compliance** | Full (JSCC PFMI disclosure updated April 2026) | Full (HKSCC PFMI disclosure) | Full (MAS oversight) | Full (RBA FSS assessments annual) | Progressing (DVP reform aligned with FSAP) | Progressing [unverified] | Full (IMF FSAP assessed) |
+| **T+1 Status** | No firm timeline | Consultation paper July 2025, no date set | MAS exploring, industry cautious | Deferred to 2030+ (post-CHESS) | Already T+0 sec / T+1 funds | Already T+1; T+0 expanding | Working group established Oct 2025 |
+
+---
+
+## 9. Recent Trends in Asia-Pacific
+
+### 9.1 T+1 Adoption Wave
+The global move toward T+1 is gaining momentum in Asia-Pacific following the US/Canada migration in May 2024 and the EU's announced transition. India pioneered T+1 (January 2023) and is already pushing toward T+0. China's unique model already settles securities on T+0. Hong Kong issued a T+1 consultation in July 2025. Korea established a T+1 working group in October 2025. Australia has deferred T+1 to 2030 pending CHESS replacement completion. Singapore's industry has requested a cautious approach. Pakistan announced T+1 from February 2026, and Turkey is targeting end of 2026 for preparations. [Source: BNP Paribas T+1 APAC report; EquiLend; Citi T+1 Asia report; TWSE Market Insights]
+
+### 9.2 Stock Connect and Cross-Border Linkages
+Stock Connect (Shanghai-Hong Kong, Shenzhen-Hong Kong) and Bond Connect continue to expand as the primary channels for cross-border investment in Chinese securities. The clearing architecture with HKSCC as ChinaClear's nominee has proven resilient. The SGX-Nasdaq dual-listing bridge (targeted mid-2026) represents a new model of cross-border linkage. [Source: HKEX; SGX]
+
+### 9.3 OTC Clearing Mandates
+Jurisdictions continue to expand mandatory OTC clearing requirements. Hong Kong is refining clearing rules with new calculation period designations (effective March 2027) and implementing enhanced reporting (UTI, UPI, CDE from September 2025). Japan maintains clearing mandates for TONA IRS and iTraxx Japan CDS. China's Futures and Derivatives Law (2022) provides the framework for further development. [Source: HKMA January 2026; JSCC; CSRC]
+
+### 9.4 Technology Modernization
+- **Australia:** CHESS replacement Release 1 (clearing) go-live April 2026, after abandoning the original DLT-based approach. [Source: ASX]
+- **Hong Kong:** Uncertificated Securities Market (USM) regime launching early 2026 with five-year transition. [Source: SFC]
+- **Singapore:** CDP custody modernization and board lot reduction under consideration. [Source: MAS]
+- **Korea:** Securities settlement infrastructure enhancement plan (August 2025), including extended BOK-Wire+ and e-SAFE operating hours. [Source: FSC]
+- **India:** T+0 instant settlement infrastructure development and NSE T+0 official launch (February 2026). [Source: SEBI; NSE]
+
+### 9.5 PFMI Compliance Improvements
+All major Asia-Pacific jurisdictions continue to align with CPMI-IOSCO Principles for Financial Market Infrastructures (PFMI). Japan's JSCC updated its PFMI disclosure in April 2026. Australia's RBA conducts annual FSS assessments (latest September 2025). China's DVP reform directly addressed FSAP recommendations for PFMI compliance. RBA published guidance on CS facility resolution regime (June 2025). [Source: JSCC; RBA; WFE Focus - CSDC]
+
+---
+
+## Sources
+
+### Japan
+- [JSCC PFMI Disclosure (March 2025)](https://www.jpx.co.jp/jscc/en/company/cimhll0000000osu-att/JSCC_PFMI_Disclosure_20250331_EN.pdf)
+- [JSCC PFMI Disclosure Update Notice (April 2026)](https://www.jpx.co.jp/jscc/en/information/news/20260401.html)
+- [JPX Working Paper Vol.45 - Migration to New Margin Calculation Method (February 2025)](https://www.jpx.co.jp/english/corporate/research-study/working-paper/JPXWP_Vol45e.pdf)
+- [JSCC VaR Method for Futures and Options](https://www.jpx.co.jp/jscc/en/cash/futures/marginsystem/VaR.html)
+- [Chambers Derivatives 2025 - Japan](https://practiceguides.chambers.com/practice-guides/derivatives-2025/japan)
+- [Chambers Financial Services Regulation 2025 - Japan](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/japan/trends-and-developments)
+- [BOJ Red Book - Payment, Clearing and Settlement Systems in Japan](https://www.boj.or.jp/en/paym/outline/pay_boj/pss1212a.pdf)
+
+### Hong Kong
+- [ICLG Derivatives 2025-2026 - Hong Kong](https://iclg.com/practice-areas/derivatives-laws-and-regulations/hong-kong)
+- [SFC Uncertificated Securities Market](https://www.sfc.hk/en/Rules-and-standards/Uncertificated-Securities-Market)
+- [Charltons - SFC and HKEx USM Regime Update](https://www.charltonslaw.com/sfc-and-hkex-updates-on-hong-kongs-uncertificated-securities-market-regime-launching-early-2026/)
+- [HKMA - Clearing Rules Consultation (January 2026)](https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/01/20260129-4/)
+- [HKEX Stock Connect Information Book](https://www.hkex.com.hk/-/media/HKEX-Market/Mutual-Market/Stock-Connect/Getting-Started/Information-Booklet-and-FAQ/Information-Book-for-Market-Participants/EP_CP_Book_En.pdf)
+- [Citi - Hong Kong Market Changes](https://www.citigroup.com/global/insights/hong-kong-a-myriad-of-changes)
+- [Broadridge - Hong Kong T+1 Settlement Discussion](https://www.broadridge.com/insight-pages/hong-kongs-tplus1-settlement-discussion)
+- [EY - Evolving HKTR Requirements (March 2025)](https://www.ey.com/content/dam/ey-unified-site/ey-com/en-cn/technical/hong-kong-fsrm-insights/documents/ey-evolving-hktr-requirements-adapting-to-international-standards-and-revamping-reporting-capabilities.pdf)
+
+### Singapore
+- [SGX Rulebook - CDP Clearing Rules](https://rulebook.sgx.com/rulebook/cdp-clearing-rules)
+- [SGX Rulebook - CDP Settlement Rules](https://rulebook.sgx.com/rulebook/cdp-settlement-rules)
+- [SGX Rulebook - SGX-DC Clearing Rules](https://rulebook.sgx.com/rulebook/sgx-dc-clearing-rules)
+- [BIS CPMI - Payment, Clearing and Settlement Systems in Singapore](https://www.bis.org/cpmi/publ/d97_sg.pdf)
+- [Clearstream - Settlement Process Singapore](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-process-singapore-1280598)
+
+### Australia
+- [ASIC Media Release 25-019MR - CS Services Rules](https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2025-releases/25-019mr-asic-makes-new-clearing-and-settlement-rules-to-promote-competition/)
+- [ASIC Media Release 26-059MR - ASX Inquiry Panel Report](https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-059mr-asic-publishes-asx-inquiry-panel-final-report-and-acknowledges-observations/)
+- [RBA Assessment of ASX Clearing and Settlement Facilities (2024-2025)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/pdf/report-2024-2025.pdf)
+- [ASX CHESS Replacement](https://www.asx.com.au/markets/clearing-and-settlement-services/chess-replacement)
+- [ASX CS Services Rules and Code of Practice](https://www.asx.com.au/about/regulation/clearing-and-settlement-of-cash-equities-in-australia/cs-services-rules-and-code-of-practice)
+- [RBA CS Facility Resolution Regime Guidance (June 2025)](https://www.rba.gov.au/publications/consultations/2025-06-guidance-for-the-australian-csf-resolution-regime/pdf/2025-06-guidance-for-the-australian-csf-resolution-regime.pdf)
+- [ASIC Licensed CS Facilities](https://www.asic.gov.au/for-finance-professionals/market-infrastructure-licensees/licensed-and-exempt-clearing-and-settlement-facilities/)
+
+### China
+- [CSDC Company Profile](http://www.chinaclear.cn/english/comp/about_lmtt.shtml)
+- [CSDC Legal Documents](http://www.chinaclear.cn/english/005/legal_list2.shtml)
+- [WFE Focus - Introducing the DVP Reform of China's Capital Market (CSDC)](https://focus.world-exchanges.org/articles/csdc-dvp)
+- [ACG CSD - China's Capital Market Triumphs with T+1 DVP](https://www.acgcsd.org/acg_02-2.aspx?seq=591&ID=1)
+- [Chambers Derivatives 2025 - China](https://practiceguides.chambers.com/practice-guides/derivatives-2025/china)
+- [FIA - China Futures and Derivatives Law Implementing Rules](https://www.fia.org/marketvoice/articles/china-progresses-futures-and-derivatives-law-implementing-rules)
+- [Xinhua Silk Road - DVP Reform Amendment](https://en.imsilkroad.com/p/328069.html)
+
+### India
+- [SEBI Circular - T+0 QSB Timeline Extension (October 2025)](https://www.sebi.gov.in/legal/circulars/oct-2025/further-extension-of-timeline-for-mandatory-implementation-of-systems-and-processes-by-qualified-stock-brokers-qsbs-with-respect-to-t-0-settlement-cycle_97551.html)
+- [SEBI - NSE Clearing and ICCL Licence Extension](https://bigul.co/blog/sebi-extends-licences-for-nse-clearing-and-iccl-until-2026)
+- [NSE Clearing - Clearing & Settlement](https://www.nseindia.com/nsccl-nse-clearing/clearing-settlement)
+- [NSE T+0 Settlement Live Guide 2026](https://www.globalpublicist24.com/nse-t0-instant-settlement-live-india-trading-2026/)
+- [SEBI T+0 Implementation for Top 500](https://tejimandi.com/blog/feature-articles/sebi-implements-t0-settlement-for-top-500-companies)
+
+### Korea
+- [Chambers Financial Services Regulation 2025 - South Korea](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/south-korea)
+- [FSC Press Release - Securities Settlement Infrastructure](https://www.fsc.go.kr/eng/pr010101/85653)
+- [BIS CPMI Red Book - Korea](https://www.bis.org/cpmi/publ/d97_kr.pdf)
+- [IMF FSAP - Republic of Korea (2014)](https://www.imf.org/external/pubs/ft/scr/2014/cr14308.pdf)
+- [Clearstream - Market Infrastructure South Korea](https://www.clearstream.com/clearstream-en/res-library/market-coverage/market-infrastructure-south-korea-1283522)
+
+### Cross-Regional
+- [BNP Paribas - T+1 Settlement Global Learnings for APAC](https://securities.cib.bnpparibas/t1-settlement-global-learnings-for-the-apac-region/)
+- [Citi - The Path to T+1: Accelerated Settlements for Asia](https://www.citigroup.com/global/insights/path-t-1-accelerated-settlements-asia-based-firms)
+- [Citi - T+1 Impact Asia Investors Report (2025)](https://www.citigroup.com/rcs/citigpa/storage/public/citi-t-1-impact-asia-investors-report.pdf)
+- [EquiLend - The Quiet Countdown to T+1 Settlement in Asia](https://equilend.com/insight/the-quiet-countdown-to-t1-settlement-in-asia/)
+- [BNP Paribas - Global T+1 Outlook](https://securities.cib.bnpparibas/t1-settlement-ready/)
+- [TWSE Market Insights - Trends in Shortening Settlement Cycles](https://www.twse.com.tw/market_insights/en/detail/8a8216d69d19ce2e019d1d6ae0ea0031)
+- [BIP Consulting - T+1 Settlement Transition 2027 Roadmap](https://www.bipconsulting.us/t1-settlement-transition-global-markets/)

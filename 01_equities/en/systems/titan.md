@@ -1,0 +1,440 @@
+# SGX Titan / SGX REACH -- Singapore Exchange
+
+> **Last Updated:** 2026-04-06
+> **System Category:** Trading System
+
+---
+
+## 1. System Overview
+
+| Item | Details |
+|------|---------|
+| System Name (Derivatives) | SGX Titan DT (Derivatives Trading) / SGX Titan DC (Derivatives Clearing) |
+| System Name (Securities) | SGX REACH (Securities Trading) |
+| System Name (OTC) | SGX Titan OTC (OTC trade registration and clearing) |
+| Operated By | Singapore Exchange Limited (SGX Group) |
+| Purpose | Order matching, market data dissemination, clearing, and risk management for SGX's derivatives and securities markets |
+| Launch Year (Titan DT/DC) | 14 November 2016 (replaced QUEST and SGXClear) |
+| Launch Year (REACH) | 2008 (initial); upgraded 3 June 2019 to Nasdaq Financial Framework multi-matching engine |
+| Next-Gen (Securities) | Iris-ST -- planned go-live H2 2027 (replacing SGX REACH) |
+| Vendor | Nasdaq, Inc. (technology partnership since 2003) |
+| Technology Base | Nasdaq Genium INET v4 (Titan DT/DC); Nasdaq Financial Framework / Genium INET (REACH) |
+
+SGX operates a dual-platform architecture for its trading infrastructure: **Titan** powers the derivatives business (trading, clearing, and OTC), while **SGX REACH** powers the securities (cash equities) market. Both platforms are built on Nasdaq's Genium INET technology family, giving SGX a unified technology base across asset classes while maintaining separate, purpose-optimized engines for each market.
+
+The Nasdaq partnership dates back to 2003, making it one of the longest-running exchange technology relationships in Asia. SGX has progressively upgraded through multiple generations of Nasdaq technology, from early Genium deployments to the current Nasdaq Financial Framework.
+
+[Source: SGX, "Platforms", https://www.sgx.com/derivatives/platforms, accessed 2026-04-06]
+[Source: Nasdaq, "Singapore Exchange Launches New Multi-Matching Trading Engine from Nasdaq", 12 July 2019, https://ir.nasdaq.com/news-releases/news-release-details/singapore-exchange-launches-new-multi-matching-trading-engine]
+[Source: Phillip Futures, "Launch of Titan DT/DC, SGX's New Derivatives Trading & Clearing Platform", https://www.phillipfutures.com.sg/investors/support/announcements/352-launch-of-titan-sgx-s-new-derivatives-trading-clearing-platform]
+
+### System Evolution
+
+| Year | System | Key Changes |
+|------|--------|-------------|
+| Pre-2003 | Legacy SES/SIMEX systems | Original trading systems from the pre-merger era |
+| 2003 | Nasdaq partnership begins | SGX adopts Nasdaq technology for trading infrastructure |
+| 2004 | QUEST | Derivatives trading system |
+| 2008 | SGX REACH (v1) | Securities trading migrated to Nasdaq Genium platform; part of SGX's ~SGD 250 million infrastructure investment including new data center and co-location |
+| 2011 | SGX REACH infrastructure upgrade | Ultra-low latency platform with sub-90 microsecond latency; Mellanox InfiniBand switches and HP blade servers deployed |
+| 2014 | Titan DT/DC announced | SGX and Nasdaq announce next-generation derivatives platform based on Genium INET v4 |
+| 14 Nov 2016 | **Titan DT/DC go-live** | Replaces QUEST (trading) and SGXClear (clearing); introduces OUCH/ITCH protocols for derivatives; sub-100 microsecond latency |
+| 3 Jun 2019 | **REACH upgrade to Nasdaq Financial Framework** | Multi-matching trading engine for securities; standardized APIs across cash and derivatives; unified messaging and data infrastructure |
+| 3 Jul 2023 | GIFT Connect fully operational | NSE IFSC-SGX Connect links Singapore and India capital markets; Nifty derivatives orders routed through SGX infrastructure to NSE IFSC matching engine |
+| Nov 2025 | Iris-ST announced | SGX RegCo opens consultation on next-generation securities trading engine |
+| H2 2027 (planned) | **Iris-ST go-live** | Replaces SGX REACH; new order types, auction price collars, enhanced pre-trade risk controls, more intuitive counter codes |
+
+[Source: Nasdaq, "NASDAQ OMX to Deliver World's Fastest Trading Platform to Singapore Exchange", https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-omx-deliver-worlds-fastest-trading-platform-singapore]
+[Source: GlobeNewswire, "SGX's next-generation derivatives trading and clearing platform to use Nasdaq technology", 29 December 2014, https://www.globenewswire.com/news-release/2014/12/29/708323/0/en/SGX-s-next-generation-derivatives-trading-and-clearing-platform-to-use-Nasdaq-technology.html]
+[Source: A-Team Insight, "SGX Reaches for Lower Latency", https://a-teaminsight.com/blog/sgx-reaches-for-lower-latency/?brand=tti]
+
+---
+
+## 2. Architecture
+
+### 2.1 High-Level Design
+
+- **Deployment model:** On-premise, purpose-built SGX data center in Singapore
+- **Topology:** Separate matching engines for derivatives (Titan DT) and securities (REACH), unified connectivity and market data layer
+- **Design pattern:** Event-driven, deterministic processing; Nasdaq Genium INET core with single-threaded matching per symbol group
+- **Multi-asset scope:** Titan covers equity derivatives, commodity derivatives (including iron ore, rubber, freight), FX derivatives, and interest rate derivatives; REACH covers all cash equities (Mainboard, Catalist, GlobalQuote), REITs, ETFs, bonds, and structured warrants
+- **Technology base:** Nasdaq Genium INET architecture -- same technology family powering Nasdaq Nordic, HKEX (previously), and 130+ marketplaces worldwide
+
+**Simplified Data Flow (Titan DT -- Derivatives):**
+1. Order arrives via OUCH (native binary) or Titan DT API (Genium INET v4 proprietary) or FIX
+2. Pre-trade risk checks applied (price limits, position limits, self-trade prevention)
+3. Order dispatched to matching engine thread
+4. Matching engine executes price-time priority algorithm
+5. Execution reports returned to participant via same protocol
+6. Market data update published via ITCH over MoldUDP64 (multicast)
+7. Trade details forwarded to Titan DC (clearing) for real-time risk management and position updates
+
+**Simplified Data Flow (SGX REACH -- Securities):**
+1. Order arrives via SGXAccess API (OMnet/Genium proprietary) or SGXAccess FIX (FIX 5.0)
+2. Pre-trade validation (Forced Order Range, PTRC checks)
+3. Multi-matching engine routes order to appropriate matching partition
+4. Price-time priority matching during continuous trading; equilibrium price algorithm during auctions
+5. Execution reports returned; market data published via ITCH
+
+### 2.2 Core Components
+
+#### Titan DT (Derivatives Trading)
+
+| Component | Function | Technology |
+|-----------|----------|------------|
+| **Titan Matching Engine** | Order matching for derivatives using price-time priority; supports continuous trading and auction mechanisms | Nasdaq Genium INET v4; single-threaded per instrument group; sub-100 microsecond latency |
+| **OUCH Gateway** | Ultra-low latency native binary order entry; asynchronous order entry independent of acknowledgement messages | OUCH protocol over SoupBinTCP; co-location only; 50 TPS per port |
+| **Titan DT API Gateway** | Proprietary Genium INET v4 order entry interface; richer functionality than OUCH | Genium INET v4 native protocol; 10-50 TPS configurable |
+| **ITCH Market Data Engine** | Real-time market data dissemination with full depth-of-book | ITCH protocol over MoldUDP64 multicast; supports Market-by-Order (MBO) and Market-by-Price (MBP) |
+| **GLIMPSE Server** | Snapshot recovery service for ITCH market data; provides current state of the order book on demand | TCP-based request/response; used to recover from missed multicast messages |
+| **Risk Engine** | Pre-trade risk controls, position monitoring, self-trade prevention | Integrated with matching engine; real-time position updates to Titan DC |
+| **Drop Copy Server** | Real-time execution copies for compliance and reconciliation | Proprietary protocol; consolidated view across multiple order books |
+
+#### Titan DC (Derivatives Clearing)
+
+| Component | Function | Technology |
+|-----------|----------|------------|
+| **Clearing Engine** | Real-time trade clearing, novation, and position management for all SGX-cleared derivatives | Nasdaq Genium INET clearing platform |
+| **Risk Management System** | Real-time margin computation, collateral management, default management | SPAN-based margining; intraday mark-to-market |
+| **Titan OTC Module** | Trade registration and workflow management for off-exchange (block) derivatives trades | FIX 5.0 SP2 API; supports Flex Futures, strip trading (quarter/calendar strips), and broker-assisted order management (Titan OTC Pro) |
+
+#### SGX REACH (Securities Trading)
+
+| Component | Function | Technology |
+|-----------|----------|------------|
+| **Multi-Matching Engine** | Parallel matching engines partitioned by instrument group; enables horizontal scaling | Nasdaq Financial Framework; multiple matching partitions operating in parallel |
+| **SGXAccess API Gateway** | Proprietary high-speed order entry for securities | OMnet (Genium) protocol; 20-100 TPS configurable |
+| **SGXAccess FIX Gateway** | Standard FIX protocol order entry for securities | FIX 5.0; minimal redevelopment for participants; broader compatibility |
+| **ITCH Market Data Engine** | Real-time securities market data | ITCH over MoldUDP64 multicast; MBO and MBP feeds |
+| **Drop Copy API** | Real-time trade/order monitoring across multiple books | Proprietary; consolidated monitoring |
+| **Auction Engine** | Opening, mid-day, and closing auctions using equilibrium price algorithm; randomized non-cancel phase timing | Integrated with matching engine |
+
+[Source: SGX, "Market Access", https://www.sgx.com/data-connectivity/market-access, accessed 2026-04-06]
+[Source: SGX, "Titan ITCH & GLIMPSE Protocol Specifications Release 1.4", https://api2.sgx.com/sites/default/files/2018-09/Titan%20ITCH%20&%20GLIMPSE%20Protocol%20Specifications.pdf]
+[Source: SGX, "Titan OTC FIX API Specifications v1.5.5", https://api2.sgx.com/sites/default/files/2019-12/SGX%20-%20FIX%20Specification%20-%20v1%205%205.pdf]
+[Source: Emerging Manager Forum, "SGX Titan DT/DC New High-Performance Derivatives Platform", https://emergingmanagerforum.com/sgx-titan-dtdc-new-high-performance-derivatives-platform/]
+
+### 2.3 Technology Stack
+
+| Layer | Technology |
+|-------|-----------|
+| **Core Platform** | Nasdaq Genium INET v4 (Titan DT/DC); Nasdaq Financial Framework (REACH) |
+| **Programming Language** | C/C++ (matching engine core -- standard for Nasdaq INET platforms) [unverified for SGX-specific build] |
+| **Operating System** | Linux (commodity servers; kernel tuned for low-latency operations -- standard Nasdaq deployment) [unverified for SGX-specific configuration] |
+| **Networking** | InfiniBand (internal fabric -- Mellanox switches confirmed for REACH infrastructure); Ethernet (participant-facing: 1G/10G options) |
+| **Hardware** | HP blade servers (confirmed for REACH); commodity Linux servers (Titan) [unverified for current generation] |
+| **Market Data Transport** | MoldUDP64 (multicast) for ITCH feeds; SoupBinTCP (point-to-point) for OUCH order entry |
+| **Streaming Infrastructure** | Apache Kafka (Confluent Platform) used internally for real-time data streaming and event processing |
+| **Byte Order** | Big Endian (Genium INET standard) |
+
+[Source: A-Team Insight, "SGX Reaches for Lower Latency", https://a-teaminsight.com/blog/sgx-reaches-for-lower-latency/?brand=tti]
+
+---
+
+## 3. Performance Specifications
+
+### 3.1 Latency
+
+| Platform | Metric | Value | Conditions |
+|----------|--------|-------|------------|
+| **Titan DT (Derivatives)** | Round-trip latency (Tier 1 co-location) | < 100 microseconds | Production; co-location Tier 1 |
+| **Titan DT** | OUCH order routing latency | ~100-150 microseconds | Production estimate |
+| **Titan DT** | Nasdaq Genium INET benchmark | < 90 microseconds average | SGX benchmark tests (announced at launch) |
+| **SGX REACH (Securities)** | Round-trip latency (Tier 1 co-location) | < 100 microseconds | Production; co-location Tier 1 |
+| **SGX REACH** | Nasdaq matching engine capability | Sub-40 microseconds door-to-door | Nasdaq stated capability for INET-based engines |
+| **Genium INET (general)** | Average production round-trip | Sub-200 microseconds | General Genium INET specification |
+
+**Notes:**
+- Latency figures are measured round-trip at the gateway level for co-located participants
+- Tier 2 and Tier 3 co-location offer progressively higher latency at lower cost
+- Non-co-located participants connecting via managed network services experience additional network transit latency
+- The sub-40 microsecond capability cited by Nasdaq refers to the engine's theoretical performance; actual SGX production latency is subject to system load, message complexity, and network conditions
+
+[Source: Nasdaq, "NASDAQ OMX to Deliver World's Fastest Trading Platform to Singapore Exchange", https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-omx-deliver-worlds-fastest-trading-platform-singapore]
+[Source: SGX, "Co-Location", https://www.sgx.com/data-connectivity/co-location, accessed 2026-04-06]
+
+### 3.2 Throughput and Capacity
+
+| Platform | Metric | Value |
+|----------|--------|-------|
+| **Genium INET (engine capability)** | Message throughput | > 1,000,000 messages/second |
+| **Titan DT API** | Per-port order rate | 10-50 TPS (configurable) |
+| **Titan DT OUCH** | Per-port order rate | 50 TPS |
+| **SGXAccess API (REACH)** | Per-port order rate | 20-100 TPS (configurable) |
+| **SGXAccess FIX (REACH)** | Per-port order rate | 20-100 TPS (configurable) [unverified -- assumed similar to API] |
+
+**Notes:**
+- Per-port TPS rates represent throttle limits imposed by SGX on individual participant sessions; aggregate system capacity is substantially higher
+- The 1,000,000+ messages/second figure is the Nasdaq Genium INET engine specification, not an SGX-specific published number
+- SGX does not publicly disclose aggregate system-level throughput or peak daily message counts
+
+[Source: SGX, "Market Access", https://www.sgx.com/data-connectivity/market-access, accessed 2026-04-06]
+[Source: Nasdaq IR, "NASDAQ OMX to Deliver World's Fastest Trading Platform to Singapore Exchange", https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-omx-deliver-worlds-fastest-trading-platform-singapore]
+
+### 3.3 Capacity Comparison: REACH 2008 vs REACH 2019
+
+| Metric | REACH 2008 (Genium) | REACH 2019 (NFF Multi-Matching) |
+|--------|---------------------|-------------------------------|
+| Architecture | Single matching engine | Multi-matching engine (parallel partitions) |
+| Latency | Sub-200 microseconds | Sub-100 microseconds (Tier 1 co-location) |
+| Scalability | Limited by single engine | Horizontally scalable via additional matching partitions |
+| API Standardization | Separate protocols for cash and derivatives | Standardized API messages across cash and derivatives |
+
+[Source: Nasdaq, "Singapore Exchange Launches New Multi-Matching Trading Engine from Nasdaq", 12 July 2019, https://www.globenewswire.com/news-release/2019/07/12/1881820/6948/en/Singapore-Exchange-Launches-New-Multi-Matching-Trading-Engine-from-Nasdaq.html]
+
+---
+
+## 4. Interfaces & Protocols
+
+### 4.1 Order Entry -- Derivatives (Titan DT)
+
+| Protocol | Version | Latency | Rate Limit | Description |
+|----------|---------|---------|------------|-------------|
+| **OUCH** | Nasdaq OUCH (SGX variant) | Lowest | 50 TPS | Native binary order entry; asynchronous -- order entry (tx) independent of acknowledgement (ack); supports enter, replace, cancel; co-location access only |
+| **Titan DT API** | Genium INET v4 | Low | 10-50 TPS | Proprietary Genium interface; richer order functionality including complex orders, strategy trading; wider connectivity options |
+| **FIX** | FIX 4.2 / 5.0 [unverified exact version for DT] | Standard | Varies | Standard FIX protocol for broader compatibility |
+
+**OUCH Message Types (Key):**
+- Enter Order, Replace Order, Cancel Order (client-to-exchange)
+- Order Accepted, Order Replaced, Order Cancelled, Order Executed (exchange-to-client)
+- Transport: SoupBinTCP (reliable, sequenced, point-to-point TCP)
+
+### 4.2 Order Entry -- Securities (SGX REACH)
+
+| Protocol | Version | Rate Limit | Description |
+|----------|---------|------------|-------------|
+| **SGXAccess API** | OMnet (Genium proprietary) | 20-100 TPS | Proprietary high-speed interface; lowest latency for securities |
+| **SGXAccess FIX** | FIX 5.0 | 20-100 TPS | Standard FIX protocol with SGX extensions; minimal system redevelopment for participants; uses FIX Application Sequencing for fine-grained subscription and recovery |
+
+[Source: SGX, "SGXAccess REACH FIX Technical Specifications v1.10", https://api2.sgx.com/sites/default/files/2019-01/SGXAccess+REACH+FIX+Technical+Specifications+v1.10.pdf]
+[Source: SGX, "SGXAccess REACH 2.0 FIX Technical Specifications v1.3", https://api2.sgx.com/sites/default/files/2019-01/SGXAccess+REACH+2.0+FIX+Technical+Specifications+v1.3.pdf]
+
+### 4.3 Order Entry -- OTC (Titan OTC)
+
+| Protocol | Version | Description |
+|----------|---------|-------------|
+| **Titan OTC FIX** | FIX 5.0 SP2 | Trade registration and workflow management for off-exchange derivatives; supports Flex Futures (customizable expiry), strip trading (quarter/calendar strips), and broker-assisted order management (Titan OTC Pro) |
+
+[Source: SGX, "Titan OTC FIX API Specifications v1.5.5", https://api2.sgx.com/sites/default/files/2019-12/SGX%20-%20FIX%20Specification%20-%20v1%205%205.pdf]
+
+### 4.4 Order Entry -- GIFT Connect (India Access)
+
+| Protocol | Description |
+|----------|-------------|
+| **GIFT Connect FIX** | FIX 5.0 SP2; routes Nifty derivative orders to NSE IFSC matching engine; Level 2 market data (5 depths) |
+| **GIFT Connect DMA** | NSE IFSC NNF trimmed protocol; ultra-low latency via India co-location in GIFT City |
+
+### 4.5 Market Data Dissemination
+
+| Feed | Protocol | Transport | Description |
+|------|----------|-----------|-------------|
+| **Titan ITCH** (Derivatives) | ITCH (Nasdaq binary) | MoldUDP64 multicast | Real-time derivatives market data; supports MBO (individual order level) and MBP (aggregated price level) |
+| **SGX ITCH** (Securities) | ITCH (Nasdaq binary) | MoldUDP64 multicast | Real-time securities market data; MBO and MBP |
+| **GLIMPSE** (Derivatives) | GLIMPSE (Nasdaq) | TCP request/response | Snapshot recovery for Titan ITCH; provides current order book state on demand; used to recover from missed multicast messages |
+| **Reference Data Feed** | ITCH | MoldUDP64 | Static instrument data, trading schedules, system events |
+
+**Market Data Architecture:**
+- Multicast delivery via MoldUDP64 for lowest latency
+- Dual redundant multicast groups for failover [unverified -- standard Nasdaq practice]
+- GLIMPSE provides TCP-based snapshot recovery as an alternative to full replay
+- Differentiated feeds available at varying latency tiers via co-location
+
+[Source: SGX, "Titan ITCH & GLIMPSE Protocol Specifications Release 1.4", 2016, https://api2.sgx.com/sites/default/files/2018-09/Titan%20ITCH%20&%20GLIMPSE%20Protocol%20Specifications.pdf]
+
+### 4.6 Drop Copy
+
+- Real-time drop copy available via proprietary Drop Copy API
+- Consolidated view across multiple order books (securities and derivatives)
+- Used for compliance monitoring, reconciliation, and real-time risk management
+- Enables trading members to monitor all orders and executions from a single feed
+
+[Source: SGX, "SGXAccess Dropcopy Technical Specifications v1.6", https://api2.sgx.com/sites/default/files/2019-01/SGXAccess%2BDropcopy%2BTechnical%2BSpecifications%2Bv1.6.pdf]
+
+---
+
+## 5. Resilience & Business Continuity
+
+### 5.1 Data Center Infrastructure
+
+SGX operates a purpose-built data center in Singapore, constructed as part of a ~SGD 250 million infrastructure investment that also included the trading platform upgrades and co-location facility.
+
+| Specification | Details |
+|---------------|---------|
+| **Location** | Singapore (exact address not publicly disclosed for security) |
+| **Power** | Dual power feeds with 2N Dynamic Rotary UPS systems; 72+ hours diesel generator backup |
+| **Cooling** | N+2 Computer Room Air-conditioning with FM 200 fire suppression |
+| **Security** | 24/7 surveillance; three access levels (gate, building, data center); dual card, mantraps, and biometric access controls |
+| **Certifications** | ISO 22301 (Business Continuity), ISO 27001 (Information Security), SSAE 3402 (SOC), TIA-942 Tier 3 Standard |
+
+### 5.2 Redundancy
+
+- **Matching engine:** Deterministic design enables consistent state replication; Nasdaq Genium INET architecture supports hot-standby failover [unverified for SGX-specific implementation]
+- **Market data:** MoldUDP64 multicast with GLIMPSE snapshot recovery for missed messages; dual multicast group architecture [unverified]
+- **Network:** Telco-neutral, carrier-neutral environment with cross-connections to multiple service providers and exchanges
+- **Power:** 2N UPS configuration with 72+ hours generator backup -- exceeds typical exchange requirements
+
+### 5.3 Disaster Recovery
+
+- SGX is believed to maintain a geographically separated secondary site for disaster recovery [unverified -- specific DR site location not publicly disclosed]
+- Regulatory requirement under MAS Technology Risk Management Guidelines (TRM) mandates adequate DR capabilities for financial institutions
+- Regular BCP exercises conducted -- SGX Titan industry-wide BCP exercises are documented in member circulars
+- Specific failover time (RTO/RPO) not publicly disclosed
+
+### 5.4 Capacity Management
+
+- Co-location Tier 1/2/3 structure distributes participant load by latency sensitivity
+- Per-port TPS throttles (10-100 TPS depending on protocol) prevent individual participants from overwhelming the system
+- Multi-matching engine architecture (REACH 2019) provides horizontal scaling capability for securities
+- 10 Gbps trading connection upgrades available for high-throughput participants
+
+[Source: SGX, "Co-Location", https://www.sgx.com/data-connectivity/co-location, accessed 2026-04-06]
+
+---
+
+## 6. Notable Technical Features
+
+### 6.1 Multi-Asset Capability
+
+SGX Titan covers a remarkably broad range of derivative products from a single platform family:
+
+| Asset Class | Products |
+|-------------|----------|
+| **Equity Derivatives** | Nifty 50 futures/options (via GIFT Connect), MSCI index futures (Singapore, Asia, EM), Straits Times Index futures, single-stock futures |
+| **Commodity Derivatives** | Iron ore (world's largest venue), rubber, freight (FFAs), petrochemicals |
+| **FX Derivatives** | USD/SGD, USD/CNH, INR, KRW, JPY, and other Asian currency pairs |
+| **Interest Rate Derivatives** | Singapore government bond futures, SOFR futures |
+| **Cryptocurrency Derivatives** | Bitcoin and Ether perpetual futures (launched 2024-2025) |
+
+### 6.2 GIFT Connect with NSE India
+
+The GIFT (Gujarat International Finance Tec-City) Connect is a landmark cross-border initiative linking SGX and India's National Stock Exchange (NSE):
+
+| Item | Details |
+|------|---------|
+| **Launch** | 29 July 2022 (NSE IFSC-SGX Connect); GIFT Nifty fully operational 3 July 2023 |
+| **Mechanism** | Orders from SGX members are routed to and matched on the NSE IFSC order matching engine in GIFT City, India |
+| **Products** | Nifty 50 equity derivatives (futures and options) |
+| **Access Protocols** | FIX 5.0 SP2 (standard); NNF trimmed protocol via India co-location (DMA) |
+| **Market Data** | Level 2 data (5 depths) via GIFT Connect FIX |
+| **Significance** | Replaced the previous SGX Nifty product; enables both international (via SGX) and domestic (via NSE IFSC) participants to trade on a single order book |
+
+[Source: SGX, "GIFT Connect Nifty Futures and Options", https://www.sgx.com/derivatives/products/gift-connect, accessed 2026-04-06]
+[Source: Wikipedia, "GIFT Nifty", https://en.wikipedia.org/wiki/GIFT_Nifty]
+
+### 6.3 Titan OTC for Clearing
+
+Titan OTC provides trade registration and post-trade services for off-exchange (OTC/block) derivatives:
+
+- **Scope:** OTC trade registration for SGX-listed derivatives (equities, FX, commodities)
+- **Flex Futures:** Customizable expiration dates on standardized futures contracts
+- **Strip Trading:** Simultaneous trading of multiple contract months (quarter strips, calendar strips)
+- **Titan OTC Pro:** Broker-assisted order management system for commodity products
+- **Protocol:** FIX 5.0 SP2
+- **Integration:** Registered trades flow directly to Titan DC for central clearing, providing CCP (Central Counterparty) risk reduction
+
+[Source: SGX, "Titan OTC Portal", https://www.sgx.com/titan-otc-portal, accessed 2026-04-06]
+
+### 6.4 Co-Location in Singapore
+
+SGX's co-location facility is a key competitive advantage in Asia-Pacific:
+
+| Tier | Target Users | Latency | Features |
+|------|-------------|---------|----------|
+| **Tier 1** | HFT, market makers, proprietary traders | < 100 microseconds round-trip | Lowest latency; direct fiber to matching engines |
+| **Tier 2** | Institutional brokers, algo traders | Competitive (not disclosed) | Balance of latency and cost |
+| **Tier 3** | Back-office, non-trading systems | Standard | Cost-effective; 24/7 support |
+
+**Facility Characteristics:**
+- Telco-neutral, carrier-neutral, vendor-neutral
+- Cross-connections to other exchanges and cloud services
+- 10 Gbps trading connection upgrades available
+- Regional connectivity via fiber to Tokyo, Hong Kong, London (available through third-party providers such as Beeks, TNS)
+- Scalable rack space with 24/7 on-site support
+
+[Source: SGX, "Co-Location", https://www.sgx.com/data-connectivity/co-location, accessed 2026-04-06]
+[Source: Beeks Group, "SGX Data Centre in Singapore", https://beeksgroup.com/services/connectivity/data-centres/asiapac/sgx-singapore-sgx/]
+
+### 6.5 Iris-ST: Next-Generation Securities Engine (Planned H2 2027)
+
+Iris-ST will replace SGX REACH as the securities trading engine. Key planned enhancements:
+
+| Feature | Description |
+|---------|-------------|
+| **New Order Types** | Additional order types beyond the current limit/market/stop family (specific types under consultation) |
+| **Auction Price Collars** | Price collar mechanism for opening, mid-day, and closing auctions to prevent extreme price dislocations while enabling price discovery; replaces Forced Order Range for auctions |
+| **Pre-Trade Risk Controls (PTRC)** | New exchange-level PTRC system that members can use to meet regulatory obligations; replaces existing Forced Order Range and "Force Key" error-prevention functions |
+| **Counter Codes** | More intuitive security counter codes |
+| **MBO Data Enhancements** | Improved Market-by-Order data feed capabilities |
+| **Technology Base** | Expected to be built on Nasdaq Eqlipse (4th-generation platform) or latest Nasdaq Financial Framework [unverified] |
+
+**Consultation Timeline:**
+- November 2025: SGX RegCo opens consultation on Iris-ST rule amendments
+- 31 December 2025: Consultation closed
+- H2 2027: Targeted go-live
+
+[Source: The Edge Singapore, "SGX to introduce new trading engine Iris-ST for members", https://www.theedgesingapore.com/news/markets/sgx-introduce-new-trading-engine-iris-st-members-seeking-feedback-functionalities]
+[Source: Regulation Asia, "SGX to Launch Next Gen Trading Engine 'Iris-ST' in 2027", https://www.regulationasia.com/articles/sgx-to-launch-next-gen-trading-engine-iris-st-in-2027]
+[Source: Rajah & Tann Asia, "SGX RegCo Consults on Details of New Trading Engine Iris-ST", https://www.rajahtannasia.com/viewpoints/sgx-regco-consults-on-details-of-new-trading-engine-iris-st-for-singapore-stock-market-with-new-and-enhanced-trading-functionalities/]
+
+---
+
+## 7. Comparison Notes -- vs KRX Exture+
+
+### 7.1 Summary Comparison
+
+| Dimension | SGX Titan / REACH | KRX Exture+ |
+|-----------|-------------------|-------------|
+| **Operator** | Singapore Exchange (SGX Group) | Korea Exchange (KRX) |
+| **Technology Origin** | Nasdaq (vendor -- Genium INET / NFF) | In-house (developed by KRX/Koscom) |
+| **Architecture** | Separate engines: Titan DT (derivatives), REACH (securities) | Unified single platform: stocks, bonds, futures, options, ETFs, warrants, commodities all on one system |
+| **Matching Engine Latency** | < 100 microseconds (co-location Tier 1); Nasdaq benchmark < 90 microseconds | ~70 microseconds (matching engine) |
+| **Latency Comparison** | Comparable | Comparable; KRX slightly faster on published matching engine latency |
+| **Throughput (Engine)** | > 1,000,000 messages/second (Nasdaq Genium INET specification) | 40 million quotes/day capacity (~462 messages/second sustained, peak significantly higher) [unverified exact peak] |
+| **Per-Port Rate Limits** | 10-100 TPS depending on protocol | Not publicly disclosed in comparable terms |
+| **Order Entry Protocols** | OUCH (native binary), Genium API (proprietary), FIX 5.0 -- all Nasdaq-derived | KRX proprietary API (Koscom-developed); FIX gateway |
+| **Market Data Protocols** | ITCH (Nasdaq binary) over MoldUDP64 | KRX proprietary market data protocol |
+| **Vendor Dependency** | High -- dependent on Nasdaq for core engine development, upgrades, and support | None -- fully in-house control over development roadmap and timelines |
+| **Upgrade Cycle** | Tied to Nasdaq product roadmap (Genium INET -> NFF -> Eqlipse); major upgrades every 5-8 years | Internal development cycle; Exture (2009) -> Exture+ (2014); next-gen under KRX control |
+| **Multi-Asset** | Derivatives (Titan) and securities (REACH) on separate but related platforms; OTC clearing via Titan OTC | Single unified platform across all asset classes |
+| **Cross-Border Connectivity** | GIFT Connect (India), regional co-location links to Tokyo/Hong Kong | Limited; primarily domestic market |
+| **Co-Location** | 3-tier co-location in Singapore; regional proximity hosting | Co-location at KRX data center in Busan |
+| **Data Center** | Singapore (city-state -- limited geographic separation for DR) | Primary in Busan; DR in separate location |
+
+### 7.2 Architectural Philosophy
+
+**SGX (Nasdaq Vendor Model):**
+- **Advantages:** Access to Nasdaq's global R&D investment; proven technology deployed at 130+ marketplaces; faster time-to-market for new capabilities via vendor roadmap; industry-standard protocols (OUCH/ITCH/FIX) reduce participant onboarding friction
+- **Disadvantages:** Vendor dependency for core system changes; upgrade timing partly dictated by Nasdaq's global product schedule; licensing costs; less ability to customize deeply; risk of vendor strategic shifts
+- **Philosophy:** "Buy best-in-class and customize" -- leverage Nasdaq's global scale for technology while focusing internal resources on market development, products, and regulation
+
+**KRX (In-House Model):**
+- **Advantages:** Full control over technology roadmap and priorities; no vendor licensing costs; deep customization for Korean market requirements (e.g., daily price limits, unique auction mechanisms); unified single-platform architecture across all asset classes
+- **Disadvantages:** Entire R&D burden borne internally (via Koscom); slower to adopt global protocol standards; smaller development team compared to Nasdaq's global engineering organization; less portability of technology
+- **Philosophy:** "Build and own" -- maintain complete sovereignty over exchange technology stack; optimize specifically for domestic market characteristics
+
+### 7.3 Latency Context
+
+Both exchanges achieve sub-100 microsecond latency class, placing them in the global top tier alongside Nasdaq (~20-30 microseconds), NYSE Pillar (~25-40 microseconds), and LSE Millennium (~20-30 microseconds). The difference between SGX's ~90 microseconds and KRX's ~70 microseconds is relatively modest -- both are well within the "ultra-low latency" category. The practical impact depends heavily on co-location quality, network infrastructure, and participant-side technology.
+
+Notable: KRX achieved a ~285x improvement from Exture (20,000 microseconds) to Exture+ (70 microseconds), while SGX achieved a ~2x improvement from REACH 2008 (~200 microseconds) to REACH 2019 (~100 microseconds) -- though SGX started from a much lower baseline thanks to Nasdaq's Genium INET technology.
+
+[Source: KRX Global, "EXTURE+ Trading", https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp]
+[Source: Koscom, "KRX Trading System", https://english.koscom.co.kr/eng/main/contents.do?menuNo=300005]
+
+---
+
+## Appendix: Protocol Quick Reference
+
+| Protocol | Origin | Layer | Use at SGX | Transport |
+|----------|--------|-------|-----------|-----------|
+| **OUCH** | Nasdaq (Island ECN heritage) | Order Entry | Titan DT derivatives (ultra-low latency) | SoupBinTCP (TCP) |
+| **ITCH** | Nasdaq (Island ECN heritage) | Market Data | Securities and derivatives real-time data | MoldUDP64 (UDP multicast) |
+| **GLIMPSE** | Nasdaq | Market Data Recovery | Titan DT snapshot recovery | TCP request/response |
+| **MoldUDP64** | Nasdaq | Transport | Multicast delivery layer for ITCH | UDP multicast |
+| **SoupBinTCP** | Nasdaq | Transport | Point-to-point session layer for OUCH | TCP |
+| **OMnet / Genium API** | Nasdaq (OMX heritage) | Order Entry | SGXAccess API for securities; Titan DT API for derivatives | Proprietary TCP |
+| **FIX** | FIX Protocol Ltd (industry standard) | Order Entry | SGXAccess FIX (5.0) for securities; Titan OTC (5.0 SP2); GIFT Connect (5.0 SP2) | TCP |
+
+---
+
+*This document covers SGX Titan (derivatives), SGX REACH (securities), Titan OTC (OTC clearing), and the planned Iris-ST (next-gen securities). For the broader SGX exchange profile including market structure, regulations, and listing requirements, see [sgx.md](../exchanges/sgx.md). For Nasdaq INET technology in depth, see [inet.md](inet.md).*

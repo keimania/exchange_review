@@ -1,0 +1,303 @@
+# 아시아-태평양 청산 및 결제 규제 (Asia-Pacific Clearing & Settlement Regulation)
+
+> **최종 업데이트:** 2026-04-07
+
+---
+
+## 1. 일본 (Japan)
+
+### 1.1 규제 기관 (Regulatory Authorities)
+- **FSA / JFSA (Financial Services Agency, 금융청):** 증권시장 및 청산기관의 주요 규제기관. JSCC는 금융상품거래법(FIEA)에 따라 JFSA의 직접 규제를 받는다. JFSA는 금융상품채무인수업(Financial Instruments Obligation Assumption Services)의 인가를 관장한다. [Source: JSCC PFMI Disclosure, March 2025]
+- **BOJ (Bank of Japan, 일본은행):** 결제시스템을 감독하고 JGB(일본국채) 결제 및 자금이체를 위한 BOJ-NET을 운영한다. PFMI (금융시장인프라에 관한 원칙) 체계에 따라 FMI에 대한 감독 평가를 수행한다. [Source: BOJ Red Book 2012]
+- **역할 분담:** JFSA는 청산기관의 건전성 규제 및 인가를 담당하고, BOJ는 시스템 리스크 감독 및 결제시스템 운영에 집중한다. 양 기관은 FMI 감독에 관해 조율한다. 농림수산성 및 경제산업성은 JFSA와 함께 상품파생상품 청산을 공동 규제한다. [Source: JSCC PFMI Disclosure, March 2025]
+
+### 1.2 주요 법률 (Key Legislation)
+- **Financial Instruments and Exchange Act (FIEA, 금융상품거래법):** 지정 OTC 파생상품에 대한 의무 청산 요건을 포함하여 증권 및 파생상품 시장을 규율하는 핵심 법률. JSCC는 FIEA에 따라 금융상품채무인수업을 수행하도록 인가되었다. FIEA에 따라 제정된 업무규정은 법적 구속력이 있으며 집행 가능하다. [Source: Chambers Derivatives 2025 - Japan]
+- **사채, 주식 등의 진흥에 관한 법률(Act on Book-Entry Transfer of Corporate Bonds, Shares, etc.):** JASDEC을 통한 무권화 증권 보유 및 이전에 관한 법적 체계. [Source: BOJ Red Book]
+- **자금결제에 관한 법률(Payment and Settlement Systems Act):** BOJ-NET 운영, 차감 약정, 결제완결성을 포함한 결제시스템을 규율. [Source: BOJ Red Book]
+- **상품선물거래법(Commodity Derivatives Act, CDA):** JSCC는 CDA에 따라 상품거래채무인수업을 수행하도록 인가되었다. [Source: JSCC PFMI Disclosure, March 2025]
+
+### 1.3 CCP/CSD 체계 (CCP/CSD Framework)
+- **JSCC (Japan Securities Clearing Corporation, 일본증권청산기관):** 일본 유일의 CCP로, JPX (Japan Exchange Group, 일본거래소그룹)의 완전 자회사이다. 상장 주식, JGB, 상장 파생상품, OTC 금리스왑(TONA), 신용부도스왑(iTraxx Japan)에 대한 청산 서비스를 제공한다. 2026년 4월 1일 PFMI Disclosure를 갱신하였다. [Source: JPX/JSCC website, JSCC PFMI Disclosure 2025/2026]
+- **JASDEC (Japan Securities Depository Center, Inc., 일본증권보관진흥기구):** 주식, 사채 및 기타 증권에 대한 중앙예탁기관(CSD). 계좌대체 서비스를 제공한다. 현물상품에 대한 DVP (증권과대금의 동시결제) 결제는 JASDEC의 계좌대체와 자금결제은행(Fund Settlement Banks)의 자금 결제를 연계하여 수행된다. [Source: JSCC PFMI Disclosure, March 2025]
+- **BOJ-NET:** BOJ가 운영하는 JGB 결제 및 은행 간 자금이체를 위한 실시간총액결제(RTGS) 시스템. JGB에 대한 DVP는 BOJ-NET을 통해 달성된다. [Source: BOJ Red Book]
+- **OTC 파생상품 청산의무:** FIEA에 따른 의무 청산 대상에는 지정 CDS(iTraxx Japan) 및 지정 IRS(TONA 후급복리)가 포함된다. [Source: JSCC PFMI Disclosure, March 2025]
+
+### 1.4 결제 (Settlement)
+- **주식:** T+2 결제주기. JASDEC(증권 구간)과 자금결제은행(자금 구간)의 연계를 통한 DVP. [Source: JSCC PFMI Disclosure]
+- **JGB:** T+1 결제주기. BOJ-NET을 통한 DVP. [Source: BOJ Red Book]
+- **주식 T+1 전환 고려:** 일본은 아직 주식 T+1 이행에 대한 공식 일정을 발표하지 않았으나 글로벌 동향을 모니터링 중이다. [unverified]
+
+### 1.5 최근 변화 (Recent Changes)
+- **JSCC 증거금 방법론 전환(SPAN에서 VaR로):** JSCC는 2023년 11월 6일 JGB 선물, 지수선물, 옵션, 상품선물/옵션에 대해 SPAN에서 VaR 기반 증거금 산출 방법으로 전환하였다. 방법론은 Historical Simulation(HS-VaR) 및 Alternative Simulation(AS-VaR)을 사용한다. VaR Margin Software(VMA) v3.0에서 v4.0으로의 업그레이드가 2026년 4월 13일에 예정되어 있다. [Source: JPX Working Paper Vol. 45, February 2025; JSCC VaR Method page]
+- **상장 파생상품 2026년 4월 프로젝트:** JSCC가 2026년 4월 예정 상장 파생상품 변경 개요를 발표하였다. [Source: JSCC News, 2026]
+- **국경 간 CCP 승인:** JSCC는 온타리오증권위원회(캐나다) 등 외국 규제기관으로부터 승인을 획득하였다. [Source: OSC decision]
+
+---
+
+## 2. 홍콩 (Hong Kong)
+
+### 2.1 규제 기관 (Regulatory Authorities)
+- **SFC (Securities and Futures Commission, 증권선물위원회):** 주요 증권 규제기관. 인정청산소(recognized clearing house), OTC 파생상품 체계, 시장인프라를 감독한다. OTC 파생상품에 대해 HKMA와 공동으로 청산 규칙을 관리한다. [Source: SFC website; ICLG Derivatives 2025-2026 Hong Kong]
+- **HKMA (Hong Kong Monetary Authority, 홍콩금융관리국):** 청산결제제도조례(Clearing and Settlement Systems Ordinance)에 따라 지정된 청산·결제 시스템을 감독한다. 인가기관에 적용되는 OTC 파생상품 청산의무에 대해 SFC와 공동 규제기관이다. [Source: HKMA press releases 2025-2026]
+
+### 2.2 주요 법률 (Key Legislation)
+- **Securities and Futures Ordinance (SFO, 증권선물조례):** 인정청산소(HKSCC, HKCC, SEOCH, OTC Clear)에 대한 체계를 포함하여 증권 및 선물시장을 규율하는 핵심 법률. Part IIIA가 OTC 파생상품을 규율한다. [Source: ICLG Derivatives 2025-2026 Hong Kong]
+- **Clearing and Settlement Systems Ordinance (CSSO, 청산결제제도조례):** HKMA에 홍콩의 통화적 또는 금융적 안정에 중요한 청산·결제 시스템을 지정하고 감독하는 권한을 부여한다. [Source: HKMA website]
+
+### 2.3 CCP/CSD 체계 (CCP/CSD Framework)
+- **HKSCC (Hong Kong Securities Clearing Company, 홍콩증권청산회사):** SEHK에서 거래되는 주식 및 채권에 대한 CCP 및 CSD. CCASS(Central Clearing and Settlement System)를 운영한다. 모두 HKEX (홍콩거래소)의 자회사이다. [Source: HKEX PFMI Disclosure]
+- **HKCC (HKFE Clearing Corporation):** HKFE에서 거래되는 선물 및 옵션에 대한 CCP. [Source: HKEX]
+- **SEOCH (SEHK Options Clearing House):** 주식옵션에 대한 CCP. [Source: HKEX]
+- **OTC Clear (OTC Clearing Hong Kong):** OTC 파생상품(IRS, NDF, 교차통화스왑)에 대한 CCP. [Source: ICLG Derivatives 2025-2026 Hong Kong]
+- **Stock Connect 청산 약정:** HKSCC는 ChinaClear에서 CCASS 참가자를 대신하여 2개의 총괄주식계좌(상하이 및 선전)를 보유하는 유일한 청산참가자 역할을 한다. 역외 투자자는 청산소로서 HKSCC만을 거래상대방으로 한다. ChinaClear 결제는 거래일 상하이 시간 오후 6시에 이루어진다. Bond Connect는 채권에 대해 유사하게 운영된다. [Source: HKEX Stock Connect Information Book; Dorsey & Whitney Guide]
+
+### 2.4 결제 (Settlement)
+- **주식:** CCASS를 통한 T+2 결제주기. [Source: Citi Hong Kong Market Report]
+- **멀티카운터 증권:** 2025년 6월 HKSCC는 CCASS에서 이중상장 증권 및 멀티카운터 ETF에 대한 단일 트랜치 멀티카운터 약정을 채택하였다. [Source: Citi Hong Kong Report]
+- **T+1 협의:** HKEX는 2025년 7월 현물시장 결제주기를 T+2에서 T+1로 단축하는 협의서를 발표하였다. HKEX는 거래 후 시스템이 2025년 말까지 T+1을 기술적으로 지원할 준비가 될 것이라고 안내하였다. 2026년 4월 기준 최종 시행일은 미발표. [Source: HKEX consultation paper July 2025; Broadridge insight]
+
+### 2.5 최근 변화 (Recent Changes)
+- **무권증권시장(USM, Uncertificated Securities Market):** SFC가 의무적 무권(무지증권화) 증권 체계를 시행 중이다. 2026년 초부터 모든 신규 발행은 무권화 필수. 기존 상장회사가 지정증권을 발행하는 경우 5년 전환기간(2031년 초까지). HKSCC 플랫폼이 인가된 증권등록기관에 연결된다. [Source: SFC USM page; Charltons Law update]
+- **OTC 파생상품 청산의무 확대:** 청산의무는 범위 내 상품을 거래하는 지정인에게 적용된다. HKMA와 SFC는 OTC 파생상품 청산규칙에 따른 표준산정기간에 대해 공동 협의 중(2027년 3월 1일 시행). 의견 제출 기한 2026년 2월 27일. [Source: HKMA press release, January 2026]
+- **OTC 파생상품 보고 강화:** UTI, UPI, CDE 보고의 의무 시행 2025년 9월 29일부터. [Source: EY Hong Kong FSRM Insights, March 2025]
+- **비중앙청산 OTC 파생상품 증거금:** SFC는 비중앙청산 단일주식옵션, 주식바스켓옵션, 주가지수옵션에 대한 증거금 요건의 시행일을 2026년 1월 4일로 연기하였다. [Source: ICLG Derivatives 2025-2026 Hong Kong]
+- **Stock Connect 개선:** 적격 증권 확대 및 Stock Connect, Bond Connect 모두에 대한 운영 개선이 지속 중이다. [Source: HKEX]
+
+---
+
+## 3. 싱가포르 (Singapore)
+
+### 3.1 규제 기관 (Regulatory Authorities)
+- **MAS (Monetary Authority of Singapore, 싱가포르통화청):** 중앙은행, 금융 규제기관, 감독기관을 겸하는 유일한 통합 규제기관. 증권선물법(SFA)에 따라 청산시설(CDP, SGX-DC)을 규제한다. 시스템적으로 중요한 FMI를 지정한다. [Source: MAS; BIS CPMI Red Book Singapore]
+
+### 3.2 주요 법률 (Key Legislation)
+- **Securities and Futures Act (SFA, 증권선물법):** 증권, 파생상품시장, 청산시설을 규율하는 핵심 법률. 인가된 청산소의 인정 및 규제에 관한 체계를 제공한다. [Source: SGX Rulebook - CDP Clearing Rules]
+- **Payment Services Act (PSA, 결제서비스법):** 결제시스템 및 서비스를 규율하며, 결제시스템에 대한 SFA 체계를 보완한다. [Source: MAS]
+
+### 3.3 CCP/CSD 체계 (CCP/CSD Framework)
+- **CDP (Central Depository Pte Ltd):** SGX의 완전 자회사로, SGX-ST에서 거래되는 주식 및 채권에 대한 증권 청산, 결제, 예탁 서비스를 제공한다. MAS는 SFA에 따라 CDP를 청산소로 규제한다. MAS 부의장 Chee Hong Tat에 의해 CDP 수탁 현대화 계획이 발표되었다. [Source: SGX Rulebook; MAS]
+- **SGX-DC (SGX Derivatives Clearing):** SGX의 완전 자회사로, SGX에서 거래되는 모든 파생상품에 대한 CCP. 체결된 모든 거래를 보증하는 CCP 역할을 수행한다. [Source: SGX Derivatives Clearing Information]
+- **MAS 지정:** CDP와 SGX-DC 모두 MAS에 의해 시스템적으로 중요한 청산소로 지정되었다. [Source: BIS CPMI Red Book Singapore]
+
+### 3.4 결제 (Settlement)
+- **주식:** T+2 결제주기. CDP를 통한 DVP 모델. [Source: Clearstream Singapore Market Guide]
+- **CDP 결제 규칙:** SGX 규칙집에 게시된 상세한 CDP Settlement Rules에 의해 규율된다. [Source: SGX Rulebook - CDP Settlement Rules]
+
+### 3.5 최근 변화 (Recent Changes)
+- **거래 후 현대화:** CDP 수탁 현대화를 통해 투자자의 브로커 수탁 계좌 채택을 확대하면서도 소매 투자자가 CDP 직접 계좌를 유지할 수 있는 옵션을 유지. 매매단위(board lot) 축소도 검토 중. [Source: MAS Deputy Chairman remarks; SGX]
+- **T+1 전환 고려:** MAS가 T+1 채택에 대한 CDP의 의견을 파악하기 위해 접촉. 업계 참가자들은 운영상 과제를 이유로 신중한 접근을 요청. 확정 일정 미설정. [Source: BNP Paribas Securities Services T+1 APAC report]
+- **SGX-Nasdaq 브릿지:** 2026년 중반 SGX-Nasdaq 이중상장 브릿지 추진 중. [Source: SGX update December 2025]
+
+---
+
+## 4. 호주 (Australia)
+
+### 4.1 규제 기관 (Regulatory Authorities)
+- **ASIC (Australian Securities and Investments Commission, 호주증권투자위원회):** 시장 운영자 및 청산·결제시설 인가기관을 규제한다. 청산·결제 경쟁(CiCS) 개혁에 따른 신규 권한을 보유한다. 2025년 6월 ASX에 대한 전문가 주도 조사를 위탁. 2026년 ASX 조사 패널 최종 보고서를 발표하였다. [Source: ASIC media release 25-019MR; ASIC media release 26-059MR]
+- **RBA (Reserve Bank of Australia, 호주준비은행):** 금융 안정성을 위한 청산·결제시설 감독. PFMI를 이행하는 FSS(Financial Stability Standards)에 대해 ASX 청산·결제시설의 연례 평가를 수행한다. 2024-2025 ASX 청산·결제시설 평가를 발표하였다. [Source: RBA Assessment Report September 2025]
+- **Council of Financial Regulators (CFR, 금융규제기관협의회):** ASIC와 RBA의 감독을 조율한다. 현물 주식 청산·결제 행동에 대한 규제기대를 발표하였다. [Source: ASIC CS Services Rules background]
+
+### 4.2 주요 법률 (Key Legislation)
+- **Corporations Act 2001 (회사법):** CS 시설 인가를 규율하는 핵심 법률. Part 7.3이 청산·결제시설 인가 체계를 수립한다. [Source: ASIC Licensed CS Facilities page]
+- **Payment Systems and Netting Act 1998 (결제시스템 및 차감법):** 결제완결성 및 차감 약정에 대한 법적 체계를 제공한다. [Source: RBA]
+- **Financial Sector (Collection of Data) Act 2001 (금융부문 데이터 수집법):** 금융시장인프라 운영자로부터의 데이터 수집을 가능하게 한다. [Source: RBA]
+- **청산·결제 경쟁(CiCS) 개혁:** 2023년 9월 통과, 2024년 5월 장관에 의해 시행. ASIC에 청산·결제 경쟁 성과를 촉진하는 신규 권한을 부여한다. [Source: ASIC media release 25-019MR]
+
+### 4.3 CCP/CSD 체계 (CCP/CSD Framework)
+- **ASX Clear Pty Ltd:** 현물 주식 및 주식 관련 파생상품에 대한 CCP. [Source: RBA Assessment 2024-2025]
+- **ASX Clear (Futures) Pty Ltd:** 선물, 선물옵션 및 OTC 파생상품에 대한 CCP. [Source: RBA Assessment 2024-2025]
+- **ASX Settlement Pty Ltd (CHESS):** 증권결제시설 및 ASX 상장증권에 대한 하위등록기관. CHESS 시스템을 운영한다. [Source: ASX CHESS Replacement page]
+- **Austraclear Limited:** 채무증권 및 OTC 파생상품에 대한 결제시설. [Source: RBA Assessment 2024-2025]
+- **수직적 통합 모델 및 경쟁 논쟁:** ASX는 4개 CS 시설 모두를 수직적으로 통합된 구조로 운영한다. ASIC는 이제 CiCS 권한을 행사하여 국제 기관과의 수수료 비교 공시를 포함한 CS 서비스의 공정하고 투명한 제공을 요구하고 있다. [Source: ASIC media release 25-019MR]
+
+> **KRX/FSC 비교:** ASX의 수직적 통합 모델은 KRX와 유사한 구조이다. 호주에서의 경쟁 도입 논의(CiCS 개혁)는 단일 인프라 모델의 수수료 투명성 및 접근성에 대한 시사점을 제공한다.
+
+### 4.4 결제 (Settlement)
+- **주식:** CHESS를 통한 T+2 결제주기. [Source: ASX]
+- **CHESS 교체 프로젝트:** 2단계 접근:
+  - **Release 1(청산):** 2026년 4월 20일 가동 예정. 업계 테스트 환경(ITE) 2025년 2월 28일 개방. TCS(Tata Consultancy Services)가 벤더, Accenture가 솔루션 통합자. 예산: A$1억 500만. [Source: ASX CHESS Replacement page; ASX update 23 March 2026]
+  - **Release 2(결제 및 하위등록기관):** 2028년 또는 2029년 중 예상. 예산: A$1억 2,500만. [Source: ASX CHESS Project page]
+  - 최초 DLT 기반 CHESS 교체 프로젝트는 폐기되었으며, 현재 프로젝트는 기존 기술을 사용한다. [Source: Digital Finance Group analysis]
+- **T+1 전환 고려:** 최소 2030년까지 연기, 본질적으로 호주의 CHESS Release 2 이전(2029년 예상) 1년 후. 호주와 뉴질랜드가 공동 전환을 고려 중. [Source: BNP Paribas T+1 APAC report; EquiLend analysis]
+
+### 4.5 최근 변화 (Recent Changes)
+- **ASIC CS Services Rules 2025:** CiCS 권한의 최초 행사. ASX에 투명하고 공정한 CS 서비스 제공, 수수료 비교 공시, 기술적 상호운용성 보장, 그룹 내 이해충돌 관리, 가격 및 경쟁 장벽에 대한 외부 보증 획득을 요구한다. 이전의 비집행적 CFR 규제기대를 구속력 있는 의무로 전환하였다. [Source: ASIC media release 25-019MR; ASX CS Service Rules and Code of Practice page]
+- **ASIC ASX 조사 패널 최종 보고서:** 지속적 운영 문제에 대해 2025년 6월 위탁된 전문가 주도 조사 후 2026년 발표. [Source: ASIC media release 26-059MR]
+- **RBA FSS 기준 평가:** 2025년 9월 발표된 ASX 청산·결제시설의 연례 평가. RBA와 ASIC는 CHESS Release 1 전환이 적절한 계획, 전환, 롤백 전략을 갖추도록 면밀히 모니터링 중. [Source: RBA Assessment 2024-2025]
+- **CS 시설 정리 체계:** RBA는 2025년 6월 호주 청산·결제시설 정리 체계에 대한 협의용 지침을 발표하였다. [Source: RBA Consultation Paper, June 2025]
+
+---
+
+## 5. 중국 (China)
+
+### 5.1 규제 기관 (Regulatory Authorities)
+- **CSRC (China Securities Regulatory Commission, 중국증권감독관리위원회):** 청산기관을 포함한 증권 및 선물시장의 주요 규제기관. 증권등록결제에 관한 행정조치를 발령한다. DVP 개혁을 지원하기 위해 개정된 증권등록결제 행정조치를 발표하였다. [Source: CSRC; Xinhua Silk Road]
+- **PBOC (People's Bank of China, 중국인민은행):** 은행 간 채권시장 청산·결제, 결제시스템을 감독하는 중앙은행. 은행 간 시장의 SHCH(상하이청산소)를 규제한다. [Source: Chambers Derivatives 2025 - China]
+
+### 5.2 주요 법률 (Key Legislation)
+- **중화인민공화국 증권법(Securities Law of the People's Republic of China):** 등록, 보관, 청산, 결제를 포함한 증권시장을 규율하는 핵심 법률. [Source: CSDC website - Legal Documents]
+- **증권등록결제 관리조치(Measures for the Administration of Securities Registration and Settlement):** CSRC가 발령하여 CSDC 운영을 규율한다. 표지증권(tagged securities) 보호 및 부도 절차 등 DVP 개혁 조항을 포함하도록 개정되었다. [Source: CSRC; CSDC website]
+- **선물 및 파생상품법(Futures and Derivatives Law):** 2022년 8월 1일 시행. 선물 및 파생상품의 거래, 결제, 청산에 대한 포괄적 규제 체계를 제공한다. CSRC가 시행 규정을 발령하였다. [Source: FIA; Chambers Derivatives 2025 - China]
+- **증권등록결제 관리규정(Regulations on Administration of Securities Registration and Settlement):** CSDC에 대한 상세 운영 규정. [Source: CSDC website]
+
+### 5.3 CCP/CSD 체계 (CCP/CSD Framework)
+- **CSDC (China Securities Depository and Clearing Corporation / ChinaClear, 중국증권등록결제유한공사):** CCP와 CSD의 이중 역할. 베이징에 본사, 상하이 및 선전 지점이 각각의 증권거래소를 담당. SSE 및 SZSE에 대한 모든 증권 예탁, 등록, 청산, 결제, 차감을 담당한다. 미국의 DTCC에 상응하는 기관이다. [Source: CSDC Company Profile; Wikipedia]
+- **상하이 지점:** 상하이증권거래소(SSE)를 담당. [Source: SSE website]
+- **선전 지점:** 선전증권거래소(SZSE)를 담당. [Source: CSDC]
+- **SHCH (Shanghai Clearing House, 상하이청산소):** 은행 간 채권시장 및 OTC 파생상품에 대한 CCP로, PBOC의 규제를 받는다. [Source: Chambers Derivatives 2025 - China]
+- **Stock Connect 국경 간 약정:** HKSCC는 모든 CCASS 청산참가자를 위한 명의인으로서 ChinaClear의 참가자이다. HKSCC는 ChinaClear에 2개의 총괄주식계좌를 유지(상하이 Connect용 1개, 선전 Connect용 1개). 결제는 거래일 상하이 시간 오후 6시에 이루어진다(증권은 T+0). [Source: HKEX Stock Connect Information Book; Dorsey & Whitney Guide]
+
+### 5.4 결제 (Settlement)
+- **고유한 T+0 증권 / T+1 자금 모델:** 증권은 T+0(거래일)에 인도되고, 자금 결제는 T+1에 이루어진다. 이는 전 세계적으로 고유한 결제 모델이며, DVP 개혁을 통해 중국은 T+1 DVP를 최초로 도입한 시장으로 평가된다. [Source: WFE Focus article by CSDC; ACG CSD article]
+- **DVP 개혁(2022년 12월):** 2022년 12월 26일 시행. 증권 인도와 자금 이체 간 연계를 증권의 "표지(tagging)"를 통해 수립. T+0 종료 시점에 충분한 자금을 보유한 매수자에 대해 CSDC가 매수자의 자금결제계좌에서 해당 금액을 동결한다. 결제 중 표지 증권은 강제집행으로부터 보호된다. 2016-2017년 IMF/World Bank FSAP 권고에 부합. [Source: WFE Focus - CSDC DVP; Xinhua Silk Road; CGTN]
+- **CSDC 결제적립금 비율 인하:** CSDC가 비용 절감 및 실물경제 지원을 위해 주식결제적립금의 최소 비율을 인하하였다. [Source: Xinhua Silk Road]
+
+### 5.5 최근 변화 (Recent Changes)
+- **DVP 시행 및 안정화:** 2022년 12월 개혁 후 6개월 뒤 시장은 긍정적 반응과 안정적 운영을 보고하였다. [Source: WFE Focus - CSDC]
+- **Bond Connect 및 Stock Connect 확대:** 적격 증권 확대 및 운영 개선이 지속 중. CSRC는 QFI(적격외국인투자자) 체계 최적화를 위한 업무 계획을 발표하였다. [Source: Chambers article on CSRC QFI optimization]
+- **프로그램 매매 규정:** CSRC가 중국 내 프로그램 매매에 관한 신규 규칙을 발령하였다. [Source: Simmons & Simmons]
+- **CSRC 2025 입법 계획:** CSRC가 2025년 적극적 입법 계획을 발표하여 지속적 규제 변화를 예고하였다. [Source: UDF Space article]
+
+---
+
+## 6. 인도 (India)
+
+### 6.1 규제 기관 (Regulatory Authorities)
+- **SEBI (Securities and Exchange Board of India, 인도증권거래위원회):** 주요 증권시장 규제기관. 청산법인(NSCCL, ICCL) 및 예탁기관(NSDL, CDSL)을 감독한다. T+1 결제를 선도하고 T+0 시범사업을 출시하였다. 청산법인 인가를 연장하였다. [Source: SEBI circulars; Bigul blog]
+- **RBI (Reserve Bank of India, 인도준비은행):** 결제시스템, 국채 청산(CCIL을 통해), 외환 결제를 감독하는 중앙은행. [Source: RBI]
+
+### 6.2 CCP/CSD 체계 (CCP/CSD Framework)
+- **NSCCL (NSE Clearing Ltd, 전 National Securities Clearing Corporation Ltd):** NSE (National Stock Exchange)에 대한 청산법인. SEBI에 의해 2026년 10월 2일까지 인가 연장. [Source: SEBI; Bigul blog]
+- **ICCL (Indian Clearing Corporation Ltd):** BSE (전 봄베이증권거래소)에 대한 청산법인. SEBI에 의해 2026년 10월 2일까지 인가 연장. [Source: SEBI; Bigul blog]
+- **CCIL (Clearing Corporation of India Ltd):** 국채, 단기금융상품, 외환에 대한 CCP. RBI의 규제를 받는다. [Source: RBI]
+- **NSDL (National Securities Depository Ltd):** 주로 NSE 참가자를 서비스하는 중앙예탁기관(CSD). [Source: SEBI]
+- **CDSL (Central Depository Services Ltd):** 주로 BSE 참가자를 서비스하는 중앙예탁기관(CSD). [Source: SEBI]
+
+### 6.3 결제 (Settlement)
+- **주식 T+1(선도자):** 인도는 2023년 1월 27일부터 모든 주식에 대해 T+1 결제를 완전 시행하여, 전 세계 주요 시장 중 최초로 이를 달성하였다. 최소 시가총액 종목부터 시작하여 상향 단계적으로 이전하였다. [Source: SEBI; multiple market reports]
+- **즉시 결제(T+0) 시범사업 및 확대:**
+  - **1단계(2024년 3월):** 2024년 3월 28일 25개 선정 종목 및 제한된 브로커로 시범사업 출범. [Source: Business Today; SEBI]
+  - **2단계(2025년 1-5월):** 2025년 1월 31일부터 시가총액 상위 500개 기업 중 하위 100개가 T+0으로 이전, 매월 100개씩 추가. 2025년 5월까지 500개 기업 모두 T+0 옵션 보유. [Source: Tej Mandi; SEBI circular]
+  - **NSE T+0 공식 출시(2026년 2월):** NSE가 2026년 2월 5일 T+0 당일 결제를 공식 출시. [Source: Global Publicist 24]
+  - **추가 확대:** 2026년 3분기에 추가 50개 중형주 종목 확대 예상. [Source: Global Publicist 24]
+  - **운영 세부사항:** 오후 1:30까지 거래, T일 오후 2:30까지 의무 확정, 이후 결제 완료. 투자자는 T+0과 T+1 중 선택 가능. 브로커는 각각 별도 수수료를 부과할 수 있다. [Source: SEBI circular; StockGro]
+  - **QSB 시행:** SEBI가 적격증권브로커(QSB)의 T+0 시스템 의무 시행 일정을 연장하였다. [Source: SEBI circular October 2025]
+
+> **KRX/FSC 비교:** 인도는 T+1을 선도적으로 시행(2023년 1월)하고 T+0까지 추진하는 가장 적극적인 사례이다. 한국의 T+1 워킹그룹(2025년 10월 설립)은 인도의 단계적 접근과 기술적 준비 방식을 참고할 수 있다.
+
+---
+
+## 7. 한국 (비교용) (Korea, for comparison)
+
+### 7.1 규제 구조 (Regulatory Structure)
+- **FSC (Financial Services Commission, 금융위원회):** 금융시장에 대한 정책 및 규칙 제정 당국. 자본시장과 금융투자업에 관한 법률(FSCMA, 자본시장법)에 기반하여 KRX를 규제한다. KRX는 규정 개정 시 FSC 승인이 필요하다. 2026년부터 영문 공시 의무가 모든 KOSPI 상장기업으로 확대된다. [Source: Chambers Financial Services Regulation 2025 - South Korea; FSC press releases]
+- **FSS (Financial Supervisory Service, 금융감독원):** FSC 산하 집행 감독기관. 현장 검사 및 집행을 수행한다. [Source: FSC/FSS]
+- **BOK (Bank of Korea, 한국은행):** 결제시스템을 감독하는 중앙은행. BOK-Wire+ 시스템을 운영한다. [Source: BIS CPMI Red Book Korea]
+- **KRX (Korea Exchange, 한국거래소):** 유일한 거래소 운영자이자 거래소 거래 상품(주식, 파생상품)에 대한 CCP. 수직적 통합 모델. FSC의 규제를 받고 BOK의 감독을 받는다. [Source: Chambers 2025; BIS Red Book Korea; IMF FSAP 2014]
+- **KSD (Korea Securities Depository, 한국예탁결제원):** 중앙예탁기관(CSD). 채권 기관 간 거래를 위한 e-SAFE 결제 시스템을 운영한다. [Source: FSC press release August 2025; Clearstream Market Infrastructure - South Korea]
+
+### 7.2 주요 특징 (Key Features)
+- **수직적 통합 모델:** KRX는 거래소, 청산소, CCP를 결합하여 운영한다. KSD는 CSD로 운영한다. 양 기관 모두 FSC/FSS 감독하에 긴밀히 조율된다. [Source: BIS Red Book Korea; IMF FSAP 2014]
+- **T+2 결제:** 주식에 대한 현행 결제주기. [Source: Clearstream Market Infrastructure - South Korea]
+- **T+1 워킹그룹:** 2025년 10월 10일 KSD와 KRX는 한국금융투자협회(KOFIA), 주요 증권회사 및 기타 시장 참가자 대표를 포함하여 T+1 전환을 탐색하기 위한 공동 워킹그룹 설립을 발표하였다. 결과는 금융당국에 보고될 예정이다. [Source: FSC press release]
+- **결제 인프라 개선:** 2025년 8월 증권결제 인프라 개선 방안이 발표되었다. BOK-Wire+ 및 KSD e-SAFE 시스템의 운영시간 연장을 포함한다. 시장 참가자 의견 수렴 중. [Source: FSC press release]
+- **KRX의 유일 CCP 역할:** KRX는 주식, 파생상품(KOSPI 200 선물/옵션, 개별주식선물 등)을 포함한 모든 거래소 거래 상품의 유일 CCP로 기능한다. [Source: BIS Red Book Korea; IMF FSAP]
+
+---
+
+## 8. 지역 간 비교 (Cross-Regional Comparison)
+
+| 측면 | 일본 | 홍콩 | 싱가포르 | 호주 | 중국 | 인도 | 한국 |
+|------|------|------|----------|------|------|------|------|
+| **주요 규제기관** | JFSA + BOJ | SFC + HKMA | MAS | ASIC + RBA | CSRC + PBOC | SEBI + RBI | FSC + FSS + BOK |
+| **CCP 모델** | JSCC(JPX 자회사), 유일 CCP | HKSCC, HKCC, SEOCH, OTC Clear(모두 HKEX) | CDP + SGX-DC(SGX 자회사) | ASX Clear + ASX Clear(Futures) | CSDC(CCP+CSD 이중역할) + SHCH(은행간) | NSCCL(NSE) + ICCL(BSE) + CCIL(국채) | KRX(거래소 + CCP) |
+| **CSD 모델** | JASDEC | HKSCC(CCASS 통해) | CDP | ASX Settlement(CHESS) + Austraclear | CSDC(CCP+CSD 이중역할) | NSDL + CDSL | KSD |
+| **결제주기** | T+2 주식, T+1 JGB | T+2 주식 | T+2 주식 | T+2 주식 | T+0 증권 / T+1 자금 | T+1 주식(2023년 1월~); T+0 시범 운영 중 | T+2 주식 |
+| **청산의무(OTC)** | 있음(IRS-TONA, iTraxx Japan CDS) | 있음(IRS, NDF, OTC Clear 통해) | 있음(지정 IRS) [unverified] | 있음(지정 OTC 파생상품) [unverified] | 발전 중(선물·파생상품법 2022) | 제한적 [unverified] | 제한적 [unverified] |
+| **PFMI 준수** | 완전(JSCC PFMI 공시 2026년 4월 갱신) | 완전(HKSCC PFMI 공시) | 완전(MAS 감독) | 완전(RBA FSS 연례 평가) | 진행 중(DVP 개혁이 FSAP에 부합) | 진행 중 [unverified] | 완전(IMF FSAP 평가) |
+| **T+1 현황** | 확정 일정 없음 | 협의서 2025년 7월, 일자 미확정 | MAS 탐색 중, 업계 신중 | 2030년 이후로 연기(CHESS 이후) | 이미 T+0 증권 / T+1 자금 | 이미 T+1; T+0 확대 중 | 워킹그룹 2025년 10월 설립 |
+
+---
+
+## 9. 아시아-태평양 최근 동향 (Recent Trends in Asia-Pacific)
+
+### 9.1 T+1 도입 물결 (T+1 Adoption Wave)
+글로벌 T+1 전환 추세는 2024년 5월 미국/캐나다 이행 및 EU의 전환 발표에 이어 아시아-태평양에서 가속화되고 있다. 인도가 T+1을 선도(2023년 1월)하고 이미 T+0을 추진 중이다. 중국의 고유 모델은 이미 T+0으로 증권을 결제한다. 홍콩은 2025년 7월 T+1 협의서를 발표하였다. 한국은 2025년 10월 T+1 워킹그룹을 설립하였다. 호주는 CHESS 교체 완료 대기로 2030년까지 T+1을 연기하였다. 싱가포르 업계는 운영상 과제를 이유로 신중한 접근을 요청하였다. 파키스탄은 2026년 2월부터 T+1을 발표하였고, 터키는 2026년 말까지 준비를 목표로 한다. [Source: BNP Paribas T+1 APAC report; EquiLend; Citi T+1 Asia report; TWSE Market Insights]
+
+### 9.2 Stock Connect 및 국경 간 연계 (Stock Connect and Cross-Border Linkages)
+Stock Connect(상하이-홍콩, 선전-홍콩) 및 Bond Connect는 중국 증권에 대한 국경 간 투자의 주요 채널로서 계속 확대되고 있다. ChinaClear의 명의인으로서 HKSCC를 활용하는 청산 아키텍처는 복원력을 입증하였다. SGX-Nasdaq 이중상장 브릿지(2026년 중반 목표)는 국경 간 연계의 새로운 모델을 제시한다. [Source: HKEX; SGX]
+
+### 9.3 OTC 청산의무 (OTC Clearing Mandates)
+각 관할권은 의무 OTC 청산 요건을 지속적으로 확대하고 있다. 홍콩은 새로운 산정기간 지정으로 청산 규칙을 정비하고(2027년 3월 시행) 강화된 보고(UTI, UPI, CDE, 2025년 9월부터)를 시행하고 있다. 일본은 TONA IRS 및 iTraxx Japan CDS에 대한 청산의무를 유지한다. 중국의 선물·파생상품법(2022)은 추가 발전을 위한 체계를 제공한다. [Source: HKMA January 2026; JSCC; CSRC]
+
+### 9.4 기술 현대화 (Technology Modernization)
+- **호주:** CHESS 교체 Release 1(청산) 2026년 4월 가동, 최초 DLT 기반 접근 폐기 후. [Source: ASX]
+- **홍콩:** 무권증권시장(USM) 체계 2026년 초 출범, 5년 전환기간. [Source: SFC]
+- **싱가포르:** CDP 수탁 현대화 및 매매단위 축소 검토 중. [Source: MAS]
+- **한국:** 증권결제 인프라 개선 방안(2025년 8월), BOK-Wire+ 및 e-SAFE 운영시간 연장 포함. [Source: FSC]
+- **인도:** T+0 즉시 결제 인프라 개발 및 NSE T+0 공식 출시(2026년 2월). [Source: SEBI; NSE]
+
+### 9.5 PFMI 준수 개선 (PFMI Compliance Improvements)
+모든 주요 아시아-태평양 관할권은 CPMI-IOSCO PFMI (금융시장인프라에 관한 원칙)에 대한 정합을 계속하고 있다. 일본의 JSCC는 2026년 4월 PFMI 공시를 갱신하였다. 호주의 RBA는 연례 FSS 평가를 수행한다(최근 2025년 9월). 중국의 DVP 개혁은 PFMI 준수를 위한 FSAP 권고에 직접 대응하였다. RBA는 CS 시설 정리 체계에 관한 지침을 발표하였다(2025년 6월). [Source: JSCC; RBA; WFE Focus - CSDC]
+
+---
+
+## 출처 (Sources)
+
+### 일본 (Japan)
+- [JSCC PFMI Disclosure (March 2025)](https://www.jpx.co.jp/jscc/en/company/cimhll0000000osu-att/JSCC_PFMI_Disclosure_20250331_EN.pdf)
+- [JSCC PFMI Disclosure Update Notice (April 2026)](https://www.jpx.co.jp/jscc/en/information/news/20260401.html)
+- [JPX Working Paper Vol.45 - Migration to New Margin Calculation Method (February 2025)](https://www.jpx.co.jp/english/corporate/research-study/working-paper/JPXWP_Vol45e.pdf)
+- [JSCC VaR Method for Futures and Options](https://www.jpx.co.jp/jscc/en/cash/futures/marginsystem/VaR.html)
+- [Chambers Derivatives 2025 - Japan](https://practiceguides.chambers.com/practice-guides/derivatives-2025/japan)
+- [Chambers Financial Services Regulation 2025 - Japan](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/japan/trends-and-developments)
+- [BOJ Red Book - Payment, Clearing and Settlement Systems in Japan](https://www.boj.or.jp/en/paym/outline/pay_boj/pss1212a.pdf)
+
+### 홍콩 (Hong Kong)
+- [ICLG Derivatives 2025-2026 - Hong Kong](https://iclg.com/practice-areas/derivatives-laws-and-regulations/hong-kong)
+- [SFC Uncertificated Securities Market](https://www.sfc.hk/en/Rules-and-standards/Uncertificated-Securities-Market)
+- [Charltons - SFC and HKEx USM Regime Update](https://www.charltonslaw.com/sfc-and-hkex-updates-on-hong-kongs-uncertificated-securities-market-regime-launching-early-2026/)
+- [HKMA - Clearing Rules Consultation (January 2026)](https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/01/20260129-4/)
+- [HKEX Stock Connect Information Book](https://www.hkex.com.hk/-/media/HKEX-Market/Mutual-Market/Stock-Connect/Getting-Started/Information-Booklet-and-FAQ/Information-Book-for-Market-Participants/EP_CP_Book_En.pdf)
+- [Citi - Hong Kong Market Changes](https://www.citigroup.com/global/insights/hong-kong-a-myriad-of-changes)
+- [Broadridge - Hong Kong T+1 Settlement Discussion](https://www.broadridge.com/insight-pages/hong-kongs-tplus1-settlement-discussion)
+- [EY - Evolving HKTR Requirements (March 2025)](https://www.ey.com/content/dam/ey-unified-site/ey-com/en-cn/technical/hong-kong-fsrm-insights/documents/ey-evolving-hktr-requirements-adapting-to-international-standards-and-revamping-reporting-capabilities.pdf)
+
+### 싱가포르 (Singapore)
+- [SGX Rulebook - CDP Clearing Rules](https://rulebook.sgx.com/rulebook/cdp-clearing-rules)
+- [SGX Rulebook - CDP Settlement Rules](https://rulebook.sgx.com/rulebook/cdp-settlement-rules)
+- [SGX Rulebook - SGX-DC Clearing Rules](https://rulebook.sgx.com/rulebook/sgx-dc-clearing-rules)
+- [BIS CPMI - Payment, Clearing and Settlement Systems in Singapore](https://www.bis.org/cpmi/publ/d97_sg.pdf)
+- [Clearstream - Settlement Process Singapore](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-process-singapore-1280598)
+
+### 호주 (Australia)
+- [ASIC Media Release 25-019MR - CS Services Rules](https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2025-releases/25-019mr-asic-makes-new-clearing-and-settlement-rules-to-promote-competition/)
+- [ASIC Media Release 26-059MR - ASX Inquiry Panel Report](https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-059mr-asic-publishes-asx-inquiry-panel-final-report-and-acknowledges-observations/)
+- [RBA Assessment of ASX Clearing and Settlement Facilities (2024-2025)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/pdf/report-2024-2025.pdf)
+- [ASX CHESS Replacement](https://www.asx.com.au/markets/clearing-and-settlement-services/chess-replacement)
+- [ASX CS Services Rules and Code of Practice](https://www.asx.com.au/about/regulation/clearing-and-settlement-of-cash-equities-in-australia/cs-services-rules-and-code-of-practice)
+- [RBA CS Facility Resolution Regime Guidance (June 2025)](https://www.rba.gov.au/publications/consultations/2025-06-guidance-for-the-australian-csf-resolution-regime/pdf/2025-06-guidance-for-the-australian-csf-resolution-regime.pdf)
+- [ASIC Licensed CS Facilities](https://www.asic.gov.au/for-finance-professionals/market-infrastructure-licensees/licensed-and-exempt-clearing-and-settlement-facilities/)
+
+### 중국 (China)
+- [CSDC Company Profile](http://www.chinaclear.cn/english/comp/about_lmtt.shtml)
+- [CSDC Legal Documents](http://www.chinaclear.cn/english/005/legal_list2.shtml)
+- [WFE Focus - Introducing the DVP Reform of China's Capital Market (CSDC)](https://focus.world-exchanges.org/articles/csdc-dvp)
+- [ACG CSD - China's Capital Market Triumphs with T+1 DVP](https://www.acgcsd.org/acg_02-2.aspx?seq=591&ID=1)
+- [Chambers Derivatives 2025 - China](https://practiceguides.chambers.com/practice-guides/derivatives-2025/china)
+- [FIA - China Futures and Derivatives Law Implementing Rules](https://www.fia.org/marketvoice/articles/china-progresses-futures-and-derivatives-law-implementing-rules)
+- [Xinhua Silk Road - DVP Reform Amendment](https://en.imsilkroad.com/p/328069.html)
+
+### 인도 (India)
+- [SEBI Circular - T+0 QSB Timeline Extension (October 2025)](https://www.sebi.gov.in/legal/circulars/oct-2025/further-extension-of-timeline-for-mandatory-implementation-of-systems-and-processes-by-qualified-stock-brokers-qsbs-with-respect-to-t-0-settlement-cycle_97551.html)
+- [SEBI - NSE Clearing and ICCL Licence Extension](https://bigul.co/blog/sebi-extends-licences-for-nse-clearing-and-iccl-until-2026)
+- [NSE Clearing - Clearing & Settlement](https://www.nseindia.com/nsccl-nse-clearing/clearing-settlement)
+- [NSE T+0 Settlement Live Guide 2026](https://www.globalpublicist24.com/nse-t0-instant-settlement-live-india-trading-2026/)
+- [SEBI T+0 Implementation for Top 500](https://tejimandi.com/blog/feature-articles/sebi-implements-t0-settlement-for-top-500-companies)
+
+### 한국 (Korea)
+- [Chambers Financial Services Regulation 2025 - South Korea](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/south-korea)
+- [FSC Press Release - Securities Settlement Infrastructure](https://www.fsc.go.kr/eng/pr010101/85653)
+- [BIS CPMI Red Book - Korea](https://www.bis.org/cpmi/publ/d97_kr.pdf)
+- [IMF FSAP - Republic of Korea (2014)](https://www.imf.org/external/pubs/ft/scr/2014/cr14308.pdf)

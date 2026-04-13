@@ -1,0 +1,335 @@
+# Global Equities Markets — Overview
+
+> **Last Updated:** 2026-04-13
+> **Status:** Completed
+
+---
+
+## 1. Introduction
+
+This document provides a high-level overview of global equities (securities) markets, their structure, key players, and trends. It serves as the entry point for the detailed exchange-by-exchange research in this project.
+
+---
+
+## 2. Global Equities Market Landscape
+
+### 2.1 Market Size & Scale
+- **Total global market capitalization:** ~USD 115 trillion (as of early 2026; WFE member exchanges aggregate). The U.S. alone accounts for over USD 50 trillion, representing roughly 44% of global equity market value.
+- **Number of listed companies worldwide:** ~58,000+ across WFE member exchanges (2025). This figure includes main boards and growth/SME boards. The largest exchanges by listing count include BSE (~5,936), NASDAQ (~4,075), JPX/TSE (~3,945), TMX Group (~3,400+ across TSX and TSXV), SZSE (~2,879), and HKEX (~2,673).
+- **Average daily trading value (global):** ~USD 400-500 billion across all major exchanges (2025 estimate). The U.S. markets (NYSE + NASDAQ + other U.S. venues) alone account for approximately USD 500+ billion/day. Mainland China (SSE + SZSE) contributes an additional ~USD 350 billion/day during active periods.
+- **Source:** WFE Annual Statistics, individual exchange disclosures, CEIC Data, Statista (2025-2026)
+
+### 2.2 Top Exchanges by Market Capitalization
+| Rank | Exchange | Market Cap (USD, approx.) | Region |
+|------|----------|--------------------------|--------|
+| 1 | NYSE | ~$28.0 trillion | North America |
+| 2 | NASDAQ | ~$42.2 trillion (listed companies) | North America |
+| 3 | Shanghai Stock Exchange (SSE) | ~$8.9 trillion | Asia-Pacific |
+| 4 | Japan Exchange Group (JPX/TSE) | ~$8.1 trillion | Asia-Pacific |
+| 5 | Euronext | ~$7.8 trillion (EUR 6.8T aggregate) | Europe |
+| 6 | Hong Kong Exchanges (HKEX) | ~$6.2 trillion | Asia-Pacific |
+| 7 | London Stock Exchange (LSE) | ~$5.9 trillion | Europe |
+| 8 | National Stock Exchange of India (NSE) | ~$5.1 trillion | Asia-Pacific |
+| 9 | Shenzhen Stock Exchange (SZSE) | ~$5.1 trillion | Asia-Pacific |
+| 10 | BSE (Bombay Stock Exchange) | ~$5.0 trillion | Asia-Pacific |
+| 11 | TMX Group (TSX) | ~$3.9 trillion (C$5.8T) | North America |
+| 12 | **Korea Exchange (KRX)** | **~$2.95 trillion (KRW 4,277T)** | **Asia-Pacific** |
+| 13 | Taiwan Stock Exchange (TWSE) | ~$2.9 trillion | Asia-Pacific |
+| 14 | Saudi Exchange (Tadawul) | ~$2.7 trillion | Middle East |
+| 15 | Deutsche Borse (Xetra/FWB) | ~$2.4 trillion (EUR 2.1T) | Europe |
+| 16 | ASX (Australian Securities Exchange) | ~$2.2 trillion | Asia-Pacific |
+| 17 | Nasdaq Nordic (OMX) | ~$2.2 trillion (EUR 2.0T) | Europe |
+| 18 | SIX Swiss Exchange | ~$2.1 trillion (CHF 1.8T) | Europe |
+| 19 | Johannesburg Stock Exchange (JSE) | ~$1.5 trillion | Africa |
+| 20 | BME (Spanish Exchanges) | ~$1.3 trillion (EUR 1.2T) | Europe |
+| 21 | Borsa Italiana (Euronext Milan) | ~$1.2 trillion (EUR 1.04T) | Europe |
+| 22 | Singapore Exchange (SGX) | ~$0.8 trillion | Asia-Pacific |
+| 23 | Bursa Malaysia | ~$0.4 trillion | Asia-Pacific |
+
+**Notes:**
+- NASDAQ's listed-company market cap (~$42.2T) significantly exceeds NYSE's (~$28.0T) due to the concentration of mega-cap technology companies (Apple, Microsoft, NVIDIA, Alphabet, Amazon, Meta, Tesla). However, NYSE remains the premier listing venue by prestige and average company size.
+- Euronext's figure is an aggregate across Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, Paris, and Athens.
+- Nasdaq Nordic is reported separately from NASDAQ U.S.
+- Rankings can shift significantly based on currency movements and market conditions. Data as of late 2025 / early 2026.
+- Source: Individual exchange disclosures, WFE, Statista, companiesmarketcap.com
+
+### 2.3 Top Exchanges by Trading Value
+| Rank | Exchange | Avg Daily Value (USD, approx.) | Region |
+|------|----------|-------------------------------|--------|
+| 1 | NASDAQ | ~$300-400 billion | North America |
+| 2 | Shanghai Stock Exchange (SSE) | ~$200-345 billion | Asia-Pacific |
+| 3 | NYSE | ~$80 billion | North America |
+| 4 | Shenzhen Stock Exchange (SZSE) | ~$70-80 billion | Asia-Pacific |
+| 5 | Japan Exchange Group (JPX/TSE) | ~$45 billion (JPY 6.7T) | Asia-Pacific |
+| 6 | **Korea Exchange (KRX)** | **~$20.7 billion (KRW 32.2T, Feb 2026)** | **Asia-Pacific** |
+| 7 | Hong Kong Exchanges (HKEX) | ~$30 billion (HK$231B) | Asia-Pacific |
+| 8 | Euronext | ~$14 billion (EUR 12B) | Europe |
+| 9 | TWSE | ~$13 billion (NT$416B) | Asia-Pacific |
+| 10 | NSE India | ~$8-9 billion | Asia-Pacific |
+| 11 | TMX Group (TSX) | ~$5 billion (C$7.4B) | North America |
+| 12 | LSE | ~$5 billion (GBP 4.0B) | Europe |
+| 13 | Deutsche Borse (Xetra) | ~$5 billion (EUR 4.5-5.5B) | Europe |
+| 14 | SIX Swiss Exchange | ~$3.5 billion (CHF 3.5B) | Europe |
+| 15 | Nasdaq Nordic | ~$3.5 billion (EUR 3.2B) | Europe |
+| 16 | ASX | ~$3.2 billion (AUD 4.7B) | Asia-Pacific |
+| 17 | BME | ~$1.7-2.8 billion (EUR 1.5-2.5B) | Europe |
+| 18 | Tadawul | ~$1.2 billion (SAR 4.6B) | Middle East |
+| 19 | SGX | ~$1.0 billion (SGD 1.34B SDAV) | Asia-Pacific |
+| 20 | Bursa Malaysia | ~$0.6 billion (RM 2.5-3.0B) | Asia-Pacific |
+| 21 | JSE | ~data not confirmed | Africa |
+
+**Notes:**
+- NASDAQ's daily trading value is extremely high because it includes all NMS-stock volume executed on NASDAQ venues (not just NASDAQ-listed stocks). Fragmented U.S. market structure means cross-listed stocks trade across multiple venues.
+- Chinese exchanges (SSE, SZSE) show high trading values driven by retail participation and high turnover ratios.
+- NSE India is the world's largest derivatives exchange by contract volume but cash equity ADV is more moderate.
+- Source: Individual exchange monthly/quarterly reports, 2025 data.
+
+---
+
+## 3. Market Structure Models
+
+### 3.1 Order-Driven Markets
+An order-driven market matches buy and sell orders directly through a central limit order book (CLOB) based on price-time priority, without designated intermediaries providing obligatory quotes.
+
+**Pure Order-Driven Examples:**
+- **NASDAQ** — Fully electronic order-driven market with competing market makers providing liquidity voluntarily (not obligatory for all securities). Price-time priority matching.
+- **JPX/TSE** — Pure order-driven market using Itayose (call auction) for opening/closing and Zaraba (continuous matching) during the session. No designated market makers for most securities (though ETF market making incentive schemes exist).
+- **SSE and SZSE** — Order-driven markets with call auction opening/closing and continuous matching. No formal market maker system for A-shares on the main boards (STAR Market and ChiNext have introduced voluntary market making in 2023-2024).
+- **Euronext** — Order-driven across all markets (Amsterdam, Brussels, Paris, Dublin, Lisbon, Milan, Oslo, Athens) with optional Liquidity Provider and Supplemental Liquidity Provider programmes.
+- **ASX** — Pure order-driven CLOB with no obligatory market makers for equities (though designated price makers exist for ETFs and some less liquid securities).
+- **TMX / TSX** — Order-driven CLOB with no designated market makers; however, assigned Market Makers and Odd Lot Dealers exist for certain securities.
+
+### 3.2 Quote-Driven Markets
+A quote-driven market relies on market makers (dealers) who continuously post bid and ask quotes, with investors trading against these quotes rather than directly with each other.
+
+**Examples:**
+- **LSE SEAQ** — The Stock Exchange Automated Quotations system is a pure quote-driven platform for the least liquid UK securities. Market makers are obligated to provide continuous two-sided quotes.
+- **LSE SETSqx** — A hybrid system where market makers provide continuous quotes throughout the day, supplemented by periodic intraday auctions (at 08:00, 09:00, 11:00, 14:00, and 16:35).
+
+**Note:** Pure quote-driven markets have become rare in modern equities trading. Most exchanges have adopted order-driven or hybrid models due to the transparency and efficiency advantages of central limit order books.
+
+### 3.3 Hybrid Markets
+Hybrid markets combine elements of both order-driven and quote-driven structures, typically featuring an electronic order book supplemented by designated intermediaries with obligations to provide liquidity.
+
+**Examples:**
+- **NYSE** — The archetypal hybrid market. Features a central limit order book combined with Designated Market Makers (DMMs) who are assigned to specific securities and obligated to maintain fair and orderly markets. DMMs operate both on the physical trading floor and electronically. The NYSE is the last major exchange to maintain a physical trading floor with human intermediaries.
+- **LSE SETS** — Primarily order-driven with registered market makers who can provide continuous quotes but are not strictly obligated to do so. Market makers receive certain benefits (reduced fees, short-selling exemptions).
+- **Deutsche Borse / Xetra** — Order-driven CLOB supplemented by Designated Sponsors (liquidity providers) who are contractually obligated to provide continuous quotes for less liquid securities. On the Frankfurt floor, Specialists provide indicative and binding quotes.
+- **HKEX** — Primarily order-driven but allows designated securities market makers for structured products, ETFs, and derivatives.
+- **SGX** — Order-driven market with Designated Market Makers (DMMs) for less liquid securities and ETFs, obligated to maintain continuous two-sided quotes.
+- **SIX Swiss Exchange** — Order-driven CLOB with Market Maker and Liquidity Provider programmes for ETFs, structured products, and less liquid equities.
+- **Tadawul** — Order-driven with Liquidity Provider programmes to enhance market quality.
+
+---
+
+## 4. Trading System Evolution
+
+### 4.1 From Floor Trading to Electronic Trading
+
+| Era | Period | Characteristics | Notable Examples |
+|-----|--------|-----------------|------------------|
+| **Open Outcry** | Pre-1970s | Physical trading floors, hand signals, verbal orders, paper tickets | NYSE (1792-2006), LSE (pre-1986), all historical exchanges |
+| **Early Electronic** | 1970s-1980s | Electronic quote display, automated order routing, but still manual execution | NASDAQ (1971, electronic quotes), TSE CATS (1977, one of the world's first automated systems) |
+| **First-Gen Electronic** | 1986-2000 | Full electronic order matching, abolition of floor trading at most exchanges | LSE Big Bang & SEAQ (1986), TWSE FAST (1993), SIX Swiss Exchange (1995, first fully automated end-to-end), SIBE (1995), Xetra (1997) |
+| **Second-Gen / Low-Latency** | 2000-2015 | Microsecond-level latency, co-location, HFT emergence, FIX/ITCH protocols | arrowhead 1.0 (2010, JPX), Millennium Exchange (2011, LSE), ASX Trade (2010, NASDAQ INET), SIBE-Smart (2012, BME) |
+| **Current Generation** | 2015-present | Sub-100 microsecond latency, FPGA acceleration, cloud exploration, 24-hour trading proposals | Pillar (NYSE, 2017-), arrowhead 4.0 (JPX, 2024), T7 (Deutsche Borse/Xetra, 2017), Optiq (Euronext, 2018-2024), OTP-C (HKEX, 2018), Eqlipse (NASDAQ, 2024), BOLT Plus (BSE, 2013-2014) |
+
+### 4.2 Key Trading Systems by Exchange
+
+| Exchange | Current System | Vendor/Developer | Key Specs |
+|----------|---------------|-----------------|-----------|
+| NYSE | Pillar | In-house (ICE) | Unified platform across all NYSE equity/options exchanges |
+| NASDAQ | Eqlipse (4th gen) | In-house (Nasdaq, Inc.) | Fourth-generation marketplace technology; sub-100 microsecond latency |
+| LSE | Millennium Exchange | MillenniumIT (LSEG subsidiary) | C++/Linux; deployed at 40+ markets globally |
+| JPX/TSE | arrowhead 4.0 | Fujitsu (co-developed) | ~0.2ms order response; closing auction session; MBO data |
+| HKEX | Orion Trading Platform (OTP-C) | In-house | 60,000 orders/second; launched February 2018 |
+| SGX | SGX REACH | Nasdaq technology (Genium INET / Financial Framework) | Multi-matching engine; sub-100us latency; Iris-ST planned for 2027 |
+| Euronext | Optiq | In-house (Euronext) | Unified platform across all 8 Euronext markets; completed full migration 2024 |
+| Deutsche Borse | T7 | In-house (Deutsche Borse) | Shared with Eurex derivatives; launched 2017 for Xetra |
+| ASX | ASX Trade | NASDAQ OMX Genium INET | Replaced SEATS/ITS in 2010 |
+| TMX | TMX Quantum XA | In-house (TMX) | Rolled out 2013-2014 across TSX, TSXV, and TSX Alpha |
+| SIX Swiss Exchange | X-stream INET (SWXess) | Nasdaq OMX | Deployed 2012; Equinox platform migration targeted H1 2027 |
+| SSE | 4th-gen (self-developed) | In-house | Replaced earlier OMX X-STREAM based system |
+| SZSE | Self-developed | In-house | 1.1ms matching latency; 300,000 trades/sec capacity (2016 upgrade) |
+| BSE | BOLT Plus | Deutsche Borse T7 architecture | Extended to equity cash segment in 2014 |
+| NSE India | NEAT+ / Next-gen | In-house | Nanosecond-level upgrade planned for April 2026 |
+| TWSE | FAST (2nd gen) | In-house | <3ms latency; 20M transactions/day capacity (2014) |
+| BME | SIBE | In-house (BME) | SIBE-Smart upgrade in 2012 |
+| Nasdaq Nordic | Nasdaq INET | Nasdaq, Inc. | Shared Nasdaq technology across all Nordic/Baltic markets |
+| Tadawul | X-Stream INET | Nasdaq technology | First in Middle East to adopt Nasdaq's fastest engine (2015) |
+| JSE | Millennium Exchange | LSEG Technology | Migrated 2012 from TradElect |
+| Bursa Malaysia | Bursa Trade Securities 2 (BTS2) | Nasdaq X-Stream INET | Launched December 2013 |
+| **KRX** | **Exture 3.0** | **In-house (KRX/KOSCOM)** | **Phase 1 Jan 2023, Phase 2 Oct 2023; ~49 us est. latency; integrated trading+clearing+settlement** |
+
+### 4.3 Emerging Technology Trends
+- **Cloud migration:** JPX conducting PoC with AWS and Fujitsu for arrowhead cloud migration (2025). ASX exploring cloud for post-trade. Multiple exchanges evaluating hybrid cloud/on-premise architectures.
+- **24-hour trading:** NYSE Arca approved for 22-hour trading (targeted late 2026). NASDAQ planning 23-hour sessions (pending SEC approval, target H2 2026). Reflects growing demand for global continuous access.
+- **Digital assets / DLT:** SIX Digital Exchange (SDX) operational since 2021 with FINMA license. Deutsche Borse launched D7 digital post-trade platform (2024) and Crypto Finance AG. ASX abandoned DLT-based CHESS replacement (2022) after writing off ~AUD 250M.
+- **AI/ML:** LSEG integrating financial data into ChatGPT (2025). Exchanges deploying ML for market surveillance (pattern detection, anomaly identification). Nasdaq applying AI across market technology products.
+
+---
+
+## 5. Regulatory Landscape
+
+### 5.1 North America
+- **United States:**
+  - **Regulation NMS** (2005, amended 2024-2025): Core framework for U.S. equity market structure. Mandates order protection (trade-through rule), access fees, sub-penny rule, and market data. SEC adopted amendments in 2024 to reduce minimum tick sizes for liquid stocks and adjust access fee caps.
+  - **Reg SHO:** Short selling regulation (locate requirement, close-out obligations).
+  - **Reg ATS:** Governs alternative trading systems (dark pools, ECNs).
+  - **LULD (Limit Up-Limit Down):** Dynamic price bands preventing trades outside specified percentage thresholds.
+  - **MWCB (Market-Wide Circuit Breakers):** S&P 500-based halts at 7%, 13%, 20% declines.
+  - **CAT (Consolidated Audit Trail):** Comprehensive regulatory database tracking all equity/options order events.
+  - **SRO model:** NYSE, NASDAQ, and FINRA function as self-regulatory organizations under SEC oversight.
+  - **T+1 settlement:** Implemented May 2024 in the U.S. and Canada.
+- **Canada:**
+  - Provincial securities regulation coordinated via **CSA (Canadian Securities Administrators)** with the OSC as lead regulator.
+  - **CIRO (Canadian Investment Regulatory Organization):** Formed 2023 from merger of IIROC and MFDA; administers UMIR (Universal Market Integrity Rules).
+  - T+1 settlement implemented May 27, 2024.
+
+### 5.2 Europe
+- **MiFID II / MiFIR (2018, ongoing reform):** Comprehensive EU framework for financial markets. Key provisions: pre-/post-trade transparency, tick size regime (RTS 11), systematic internalisers, dark pool volume caps (reformed to single 7% cap under MiFIR Refit), best execution obligations.
+- **MiFIR Refit (2024-2025):** Reforms include consolidated tape for equities, bond transparency, and designation of a single CT provider.
+- **CSDR (Central Securities Depositories Regulation):** Settlement discipline regime, mandatory buy-ins (delayed implementation), CSD authorization.
+- **EMIR:** OTC derivatives clearing obligations, CCP requirements.
+- **MAR (Market Abuse Regulation):** Insider dealing, market manipulation, unlawful disclosure prohibitions.
+- **DORA (Digital Operational Resilience Act):** Applied January 2025; ICT risk management requirements for financial entities.
+- **ESMA:** EU-level supervisory coordination; administers waivers, registers, and MiFID II delegated acts.
+- **Switzerland:** FINMA supervision under the Financial Market Infrastructure Act (FMIA). EU equivalence recognition was revoked in 2019 (protective measures enacted by Swiss Federal Council) and lifted in May 2025.
+- **UK (post-Brexit):** Retained EU acquis (UK MAR, UK MiFIR) administered by the FCA under FSMA. Diverging from EU on topics such as the consolidated tape and Listings Rules reform.
+
+### 5.3 Asia-Pacific
+- **Japan:**
+  - **FIEA (Financial Instruments and Exchange Act):** Primary securities law governing trading, disclosure, and market conduct.
+  - **JFSA / SESC:** Financial Services Agency regulates; SESC investigates market violations.
+  - **JPX-R:** Self-regulatory organization within JPX handling listing examination, surveillance, and compliance.
+  - **Corporate Governance Code:** Principles-based governance framework administered by TSE (PBR initiative since 2023).
+- **Hong Kong:**
+  - **SFC (Securities and Futures Commission):** Statutory regulator under the Securities and Futures Ordinance (SFO).
+  - HKEX operates as a recognized exchange company with SFC oversight. Government holds a 5.87% stake.
+- **China (Mainland):**
+  - **CSRC (China Securities Regulatory Commission):** Central regulatory authority managing SSE, SZSE, and BSE.
+  - **Registration-based IPO system:** Introduced on STAR Market (2019), ChiNext (2020), fully rolled out across all boards (2023), replacing the approval-based system.
+  - **QFI (Qualified Foreign Investor) scheme:** Unified from QFII/RQFII in 2020; quota limits abolished. QFI regime fully abolished February 2026 for Tadawul (Saudi); in China, remains the framework for foreign institutional access though barriers have been significantly reduced.
+  - Daily price limits: +/-10% (main boards), +/-20% (STAR Market, ChiNext), no limit first 5 days for new STAR/ChiNext listings.
+- **India:**
+  - **SEBI (Securities and Exchange Board of India):** Primary regulator for NSE, BSE, and other exchanges.
+  - T+1 settlement: India completed transition in January 2023, among the first major markets globally.
+  - **Securities Markets Code 2025:** Proposed consolidation of SCRA, SEBI Act, and Depositories Act.
+- **Singapore:**
+  - **MAS (Monetary Authority of Singapore):** Central bank and integrated financial regulator under the Securities and Futures Act (SFA).
+  - **SGX RegCo:** Independent regulatory subsidiary of SGX.
+- **Taiwan:**
+  - **FSC (Financial Supervisory Commission):** Primary regulator for TWSE.
+  - Transitioned from periodic call auction to continuous trading (March 2020).
+- **Australia:**
+  - **ASIC (Australian Securities and Investments Commission):** Primary market conduct regulator. Launched formal Inquiry into ASX Group in June 2025.
+  - **RBA:** Oversees clearing and settlement stability.
+  - Competition: Cboe Australia operates as a competing lit venue (since 2012).
+
+### 5.4 Middle East & Africa
+- **Saudi Arabia:**
+  - **CMA (Capital Market Authority):** Established 2003 under the Capital Market Law. Oversaw progressive foreign investor liberalization culminating in full barrier-free access (February 2026).
+  - MSCI and FTSE Russell Emerging Market inclusion (2019) catalyzed institutional development.
+- **South Africa:**
+  - **FSCA (Financial Sector Conduct Authority):** Primary market conduct regulator for JSE.
+  - **Twin Peaks model:** FSCA (conduct) + SARB Prudential Authority (stability).
+
+### 5.5 Cross-Border and Global Trends
+- **T+1 settlement adoption:** U.S. and Canada (May 2024), India (January 2023). EU targeting T+1 by October 2027. UK consulting on T+1 timeline.
+- **Stock Connect programs:** Shanghai-Hong Kong (2014), Shenzhen-Hong Kong (2016), Bond Connect (2017), ETF Connect (2022), Swap Connect (2023). GIFT Connect (SGX-NSE IX, 2023) for India derivatives.
+- **Consolidated tape mandates:** EU pursuing a single CT provider for equities under MiFIR Refit. U.S. operates existing SIP infrastructure (CTS/CQS, UTP).
+- **ESG disclosure harmonization:** GCC Exchanges Committee (chaired by Tadawul) introduced 29 Unified ESG Metrics (2023). TWSE mandated sustainability reports for all listed companies (2025). LSEG launched Sustainability Ratings (2026).
+
+---
+
+## 6. Key Trends
+
+### 6.1 T+1 / T+0 Settlement Transition
+- **U.S. and Canada** implemented T+1 on May 27-28, 2024. The SEC is considering T+0 as a longer-term goal.
+- **India** completed T+1 in January 2023 and is piloting optional T+0 settlement for select securities.
+- **EU** has set a target of October 2027 for T+1 adoption.
+- **UK** is consulting on a T+1 timeline, likely to follow the EU.
+- **Impact:** Reduces counterparty risk and margin requirements but increases operational demands for same-day trade confirmation, allocation, and funding.
+
+### 6.2 Cloud Adoption
+- **JPX** conducted a proof of concept with AWS Outposts and Fujitsu in 2025 for potential cloud migration of the arrowhead trading system.
+- **ASX** exploring cloud for post-trade infrastructure after abandoning DLT-based CHESS replacement.
+- **Nasdaq** offers cloud-based market technology to client exchanges globally.
+- **LSEG** partnering with Microsoft Azure for data and analytics platform enhancements.
+- **Challenge:** Regulatory concerns about operational resilience, data sovereignty, and latency remain barriers to cloud adoption for core matching engines.
+
+### 6.3 Digital Assets / Tokenization
+- **SIX Digital Exchange (SDX):** Operational since 2021 with FINMA license; world's first fully regulated digital asset exchange and CSD.
+- **Deutsche Borse D7:** Digital post-trade platform launched 2024; Crypto Finance AG acquisition for digital asset trading.
+- **NASDAQ:** SEC approved tokenized stock settlement for certain securities (March 2026).
+- **LSE/LSEG:** On-chain settlement initiative (Digital Markets Infrastructure) announced 2026.
+- **ASX:** Abandoned DLT/blockchain for CHESS replacement (2022, ~AUD 250M write-off); pivoted to conventional technology with TCS.
+
+### 6.4 ESG Integration
+- **TWSE:** All 1,029 listed companies submitted sustainability reports by August 2025 deadline; ESG Evaluation system launched in 2026.
+- **GCC Exchanges (Tadawul-chaired):** 29 Unified ESG Metrics introduced in 2023.
+- **LSEG:** Launched Sustainability Ratings and Data in 2026.
+- **Bursa Malaysia:** MSPO certification mandated for commodity derivatives delivery (2021), first exchange globally to require sustainability certification.
+- **JPX/TSE:** PBR (price-to-book ratio) initiative since 2023 requesting companies to disclose plans for improving capital efficiency and stock price.
+- **Trend:** ESG reporting moving from voluntary to mandatory across major markets, with increasing focus on climate-related financial disclosures (TCFD/ISSB standards).
+
+### 6.5 Retail Trading Growth
+- **China (SSE/SZSE):** Retail investors account for ~60-80% of trading volume, among the highest globally.
+- **India (NSE/BSE):** Demat account openings surged; retail participation growing rapidly in both cash and derivatives markets.
+- **U.S.:** Post-2020 retail surge (commission-free trading, fractional shares, social media-driven). NYSE introduced Retail Price Improvement (RPI) orders.
+- **Saudi Arabia:** QFI restrictions abolished (February 2026); previously retail-dominated market opening to foreign flows.
+- **Korea:** High retail participation (~60-70% of turnover); KOSPI surged from 2,500 to 6,000 (Oct 2025 - Feb 2026); Nextrade (NXT) launched March 2025 as first alternative exchange; KRX introduced maker-taker fees (Dec 2025) in response to competition.
+- **Taiwan:** High retail participation (~60-70% of turnover) with active options/derivatives retail trading.
+
+### 6.6 AI/ML in Surveillance and Trading
+- **LSEG:** Integrated financial data into ChatGPT (2025); Microsoft partnership for AI-powered analytics.
+- **Nasdaq:** AI-driven market surveillance across 130+ market operator clients globally.
+- **Exchanges generally:** Deploying ML for anomaly detection in order flow, insider trading pattern recognition, market manipulation surveillance.
+- **NSE India:** Planning nanosecond-level trading system upgrade with capacity of ~100 million transactions/second (April 2026).
+- **Regulatory implication:** Regulators (SEC, ESMA, MAS) increasingly focused on AI governance in trading, algorithmic accountability, and model risk management.
+
+### 6.7 Extended Trading Hours
+- **NYSE Arca:** SEC approved 22-hour trading (1:30 AM - 11:30 PM ET Mon-Thu), targeted late 2026.
+- **NASDAQ:** Planning 23-hour sessions (pending SEC approval, H2 2026).
+- **JPX/TSE:** Extended trading hours by 30 minutes (to 15:30) and introduced closing auction session in November 2024.
+- **HKEX:** Shortened lunch break from 1.5 hours to 1 hour (2011); periodic discussions about further reduction or elimination.
+- **Trend:** Driven by globalization, institutional demand for risk management during non-home-market hours, and competition from crypto markets operating 24/7.
+
+---
+
+## 7. Research Roadmap
+
+### Tier 1 — Deep Dive
+| Exchange | File | Status |
+|----------|------|--------|
+| NYSE | [nyse.md](exchanges/nyse.md) | Completed |
+| NASDAQ | [nasdaq.md](exchanges/nasdaq.md) | Completed |
+| LSE | [lse.md](exchanges/lse.md) | Completed |
+| JPX (TSE) | [jpx.md](exchanges/jpx.md) | Completed |
+| HKEX | [hkex.md](exchanges/hkex.md) | Completed |
+| SGX | [sgx.md](exchanges/sgx.md) | Completed |
+| **KRX** | [krx.md](exchanges/krx.md) | **Completed** |
+
+### Tier 2 — Standard
+| Exchange | File | Status |
+|----------|------|--------|
+| Euronext | [euronext.md](exchanges/euronext.md) | Completed |
+| Deutsche Borse | [deutsche_borse.md](exchanges/deutsche_borse.md) | Completed |
+| ASX | [asx.md](exchanges/asx.md) | Completed |
+| TMX | [tmx.md](exchanges/tmx.md) | Completed |
+| SIX | [six.md](exchanges/six.md) | Completed |
+
+### Tier 3 — Overview
+| Exchange | File | Status |
+|----------|------|--------|
+| SSE | [sse.md](exchanges/sse.md) | Completed |
+| SZSE | [szse.md](exchanges/szse.md) | Completed |
+| BSE | [bse.md](exchanges/bse.md) | Completed |
+| NSE India | [nse_india.md](exchanges/nse_india.md) | Completed |
+| TWSE | [twse.md](exchanges/twse.md) | Completed |
+| Borsa Italiana | [borsa_italiana.md](exchanges/borsa_italiana.md) | Completed |
+| BME | [bme.md](exchanges/bme.md) | Completed |
+| Nasdaq Nordic | [nasdaq_nordic.md](exchanges/nasdaq_nordic.md) | Completed |
+| Tadawul | [tadawul.md](exchanges/tadawul.md) | Completed |
+| JSE | [jse.md](exchanges/jse.md) | Completed |
+| Bursa Malaysia | [bursa_malaysia.md](exchanges/bursa_malaysia.md) | Completed |

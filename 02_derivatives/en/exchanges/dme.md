@@ -1,0 +1,321 @@
+# Dubai Mercantile Exchange (DME)
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Gulf Mercantile Exchange Limited (formerly Dubai Mercantile Exchange) |
+| Abbreviation | GME (formerly DME) |
+| Website | https://www.gulfmerc.com |
+| Year Established | 2007 (launched June 1, 2007; initial JV agreement signed 2005) |
+| Country / City | United Arab Emirates / Dubai (Dubai International Financial Centre — DIFC) |
+| Ownership Structure | Joint venture — Saudi Tadawul Group (32.6%), CME Group (joint largest shareholder alongside STG), Oman Investment Authority, Dubai Holding, and institutional shareholders (Vitol, Shell, JPMorgan, Morgan Stanley, Goldman Sachs) |
+| Parent Company / Group | DME Holdings Limited |
+| Regulatory Authority | Dubai Financial Services Authority (DFSA) within the DIFC |
+| Listed Instruments | Oman Crude Oil Futures (OQD — flagship), Oman Crude Oil Options (OQE), Micro Oman Crude Oil Futures |
+| Clearing House | CME Clearing (CME Group) |
+| Trading Platform | CME Globex |
+| Rebranding | Renamed from Dubai Mercantile Exchange to Gulf Mercantile Exchange (GME) effective September 2, 2024 |
+
+[Source: [Wikipedia — Dubai Mercantile Exchange](https://en.wikipedia.org/wiki/Dubai_Mercantile_Exchange); [GME — About GME](https://www.gulfmerc.com/about-gme); [CME Group — GME Strategic Partnership](https://www.cmegroup.com/international/partnership-resources/gme-resources.html); [LiquidityFinder — DME to Rebrand as Gulf Mercantile Exchange](https://liquidityfinder.com/news/dme-to-rebrand-as-gulf-mercantile-exchange-after-saudi-tadawul-group-becomes-joint-largest-shareholder-in-dme-alongside-cme-group-ebf36); [CME Group Press Release — Saudi Tadawul Group Acquires Strategic Stake](https://www.cmegroup.com/media-room/press-releases/2024/1/18/saudi_tadawul_groupacquiresastrategicstakeindubaimercantileexcha.html)]
+
+### Key Historical Milestones
+
+- **2005:** Tatweer (a Dubai Holding subsidiary) and NYMEX signed a Joint Venture Agreement to launch a commodities exchange in the Middle East
+- **2007 (1 June):** Dubai Mercantile Exchange launched with the Oman Crude Oil Futures Contract (OQD) as its flagship product, aiming to establish a transparent crude oil benchmark for the East of Suez market
+- **2007:** DME Oman represented approximately 8% of Middle Eastern crude heading to the Asian market at launch
+- **2008:** Global financial institutions — Concord Energy, Goldman Sachs, JPMorgan Chase, Morgan Stanley, Shell, and Vitol — became shareholders of DME; NYMEX was acquired by CME Group, bringing DME into CME Group's orbit
+- **2009 (February):** DME futures contracts migrated from NYMEX ACCESS to the CME Globex electronic trading platform, enabling all three global crude benchmarks (WTI, Brent, DME Oman) to be traded on the same platform
+- **2012 (February):** CME Group's NYMEX division doubled its holding to approximately 50%; Oman Investment Fund held ~29%; Dubai Holding ~9%; institutional investors ~12%
+- **2016:** Oman's Ministry of Oil & Gas adopted DME Oman as the official selling price (OSP) benchmark for Oman crude exports
+- **2018:** Dubai's Supreme Council of Energy adopted DME Oman as the pricing benchmark for Dubai crude OSP
+- **2024 (January):** Saudi Tadawul Group (STG) acquired a 32.6% strategic stake in DME Holdings, becoming joint largest shareholder alongside CME Group
+- **2024 (2 September):** Official rebranding from Dubai Mercantile Exchange to Gulf Mercantile Exchange (GME)
+- **2024:** DME Oman represents 36% of Middle Eastern crude heading to the Asian market (up from 8% in 2007)
+
+[Source: [Wikipedia — Dubai Mercantile Exchange](https://en.wikipedia.org/wiki/Dubai_Mercantile_Exchange); [Wikipedia — DME Oman Crude Oil Futures Contract](https://en.wikipedia.org/wiki/DME_Oman_Crude_Oil_Futures_Contract); [MarketsWiki — Dubai Mercantile Exchange](https://www.marketswiki.com/wiki/Dubai_Mercantile_Exchange); [Logistics Middle East — Gulf Mercantile Exchange launched](https://www.logisticsmiddleeast.com/business/gulf-mercantile-exchange-launched-as-saudi-tadawul-group-acquires-major-stake); [PR Newswire — Saudi Tadawul Group acquires strategic stake](https://www.prnewswire.com/news-releases/saudi-tadawul-group-acquires-a-strategic-stake-in-dubai-mercantile-exchange-creating-gulf-mercantile-exchange-302038438.html)]
+
+### Strategic Importance
+
+DME Oman is the world's third major crude oil benchmark alongside ICE Brent (European benchmark) and NYMEX WTI (North American benchmark). Its strategic significance includes:
+
+- **Asian Sour Crude Pricing:** DME Oman is the explicit and sole benchmark for Oman and Dubai crude oil Official Selling Prices (OSPs), which serve as the historically established price markers for Middle Eastern crude oil exports to Asia
+- **Physical Delivery:** The contract is the largest physically delivered crude oil contract in the world, providing physical underpinning to price discovery
+- **Geographical Advantage:** The export port Mina al Fahal (operated by Petroleum Development Oman) is located in the Gulf of Oman, past the Strait of Hormuz — avoiding geopolitical chokepoint risk
+- **Market Share Growth:** From 8% of Middle Eastern crude to Asia in 2007 to 36% by 2024
+
+[Source: [GME — About GME](https://www.gulfmerc.com/about-gme); [Oxford Energy — Prospects of the DME Oman Crude Oil Futures Contract](https://www.oxfordenergy.org/wpcms/wp-content/uploads/2011/01/March2008-DMECrudeOil-BassamFattouh.pdf); [Ursa Space — DME Oman crude in the spotlight](https://ursaspace.com/wp-content/uploads/2021/09/Oman-Crude-Futures-and-Storage.pdf)]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments / Asset Classes
+
+| Asset Class | Products | Key Contracts |
+|-------------|----------|---------------|
+| **Energy — Crude Oil** | Futures and options on Oman sour crude | Oman Crude Oil Futures (OQD), Oman Crude Oil Options (OQE), Micro Oman Crude Oil Futures |
+
+DME/GME is a single-product exchange focused exclusively on Oman crude oil derivatives. This narrow focus reflects its strategic role as a pricing benchmark rather than a broad multi-asset marketplace.
+
+### 2.2 Trading Sessions / Hours
+
+**Note:** Dubai Standard Time (GST) is UTC+4 year-round (no daylight saving time). DME/GME products trade on CME Globex, which operates on U.S. Eastern Time.
+
+**Oman Crude Oil Futures (OQD) on CME Globex**
+
+| Session | U.S. Eastern Time | Dubai Time (GST) | UTC | Description |
+|---------|-------------------|-------------------|-----|-------------|
+| **Electronic Trading Open** | 18:00 (Sunday) | 02:00 +1 (Monday) | 23:00 (Sunday) | Week opens Sunday evening ET |
+| **Continuous Trading** | 18:00 – 17:15 +1 | 02:00 +1 – 01:15 +2 | 23:00 – 22:15 +1 | Near-continuous trading (~23.25 hours/day) |
+| **Daily Maintenance Break** | 17:15 – 18:00 | 01:15 – 02:00 | 22:15 – 23:00 | 45-minute daily break |
+| **Week Close** | 17:15 (Friday) | 01:15 (Saturday) | 22:15 (Friday) | Week closes Friday afternoon ET |
+
+**Settlement Window:**
+- End-of-day settlement prices declared at 14:30 EST, based on GME Oman market relevant values between 14:25 and 14:30 EST
+
+**Oman Marker Price:**
+- Daily marker price published for the front-month OQD contract during the Marker Window: 16:25 – 16:30 Singapore Time (08:25 – 08:30 GST / 04:25 – 04:30 UTC)
+
+[Source: [GME — Trading Hours and Holiday Calendar](https://www.gulfmerc.com/gme-product-services/gme-trading-trading-hours-and-holiday-calendar); [GME — Settlements](https://www.gulfmerc.com/gme-product-services/gme-trading-settlements); [CME Group — Trading Hours](https://www.cmegroup.com/trading-hours.html); [GME — Oman Crude Oil Futures TAM](https://d2744r28dxz36a.cloudfront.net/Trading%20and%20clearing/Trade%20at%20Marker%20(TAM)/TAM.pdf)]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Trading Platform — CME Globex
+
+DME/GME products are listed and executed on the CME Globex electronic matching engine, the same platform used for NYMEX WTI and other CME Group energy products. This provides several advantages:
+
+- **Single Platform Access:** Traders can access all three global crude benchmarks (WTI, Brent, DME Oman) on the same electronic platform
+- **Matching Algorithm:** Price-time priority (FIFO) — standard CME Globex matching logic
+- **Order Types:** Full suite of CME Globex order types available, including limit, market, stop, stop-limit, market-if-touched, and iceberg orders
+- **Spread Trading:** Inter-commodity spreads available between OQD and other CME Group energy contracts (e.g., WTI-Oman spread)
+
+### 3.2 Trade at Marker (TAM)
+
+GME offers a Trade at Marker (TAM) facility:
+- Allows market participants to execute trades at the daily Oman Marker Price
+- Marker Window: 16:25 – 16:30 Singapore Time on each trading day
+- The marker price is determined from trades executed on the nearby contract month (M1) during the Marker Window
+
+### 3.3 Clearing — CME Clearing
+
+- All GME products are cleared by CME Clearing (formerly NYMEX Clearing)
+- Novation: CME Clearing becomes the buyer to every seller and seller to every buyer
+- Netting: Positions netted at the clearing level across CME Group products
+- Settlement Banks: Global network of CME Group-approved settlement banks
+
+### 3.4 Physical Delivery
+
+- The Oman Crude Oil Futures Contract is **physically delivered**
+- Delivery point: FOB (Free on Board) at the export terminal Mina al Fahal, Muscat, Oman
+- Front month is always two months forward (e.g., the March contract is the front month during January trading)
+- Physical delivery underpins the contract's credibility as a benchmark — unlike financially settled contracts
+
+[Source: [CME Group — GME Strategic Partnership](https://www.cmegroup.com/international/partnership-resources/gme-resources.html); [Wikipedia — DME Oman Crude Oil Futures Contract](https://en.wikipedia.org/wiki/DME_Oman_Crude_Oil_Futures_Contract); [GME — OQD Contract Summary](https://www.gulfmerc.com/gme-product-services/gme-contracts-contract-summary-oqd); [Rigzone — DME's Contracts Migrate to CME Group Trading Platform](https://www.rigzone.com/news/oil_gas/a/72413/dmes_contracts_migrate_to_cme_group_trading_platform/)]
+
+---
+
+## 5. Trading System Technology
+
+### 5.1 System Overview
+
+| Item | Details |
+|------|---------|
+| Trading Platform | CME Globex (hosted and operated by CME Group) |
+| Matching Engine | CME Globex matching engine — centralized, high-performance electronic platform |
+| Clearing System | CME Clearing (CME ClearPort for block/EFP submission) |
+| Technology Provider | CME Group (full technology stack) |
+| Order Entry Protocols | CME iLink (FIX-based), CME Market Data (MDP 3.0) |
+| Co-Location | CME Group data center in Aurora, Illinois (primary); connectivity hubs globally |
+
+### 5.2 Platform History
+
+| Year | Milestone |
+|------|-----------|
+| 2007 | DME launched using NYMEX ACCESS electronic trading platform |
+| 2009 (Feb) | Migrated to CME Globex electronic trading platform after CME Group's acquisition of NYMEX |
+| 2009–present | All trading, clearing, and settlement handled through CME Group infrastructure |
+
+### 5.3 Connectivity
+
+- **CME Globex Direct Access:** Participants connect via CME iLink protocol through CME's global network
+- **Co-Location:** Available at CME Group's Aurora, Illinois data center for lowest-latency access
+- **Global Network Hubs:** CME operates connectivity points in major financial centers including London, Tokyo, Singapore, Hong Kong, and Dubai
+- **ISV Support:** All major independent software vendors supporting CME Globex also support DME/GME products
+
+**Note:** Because DME/GME uses CME Globex, the exchange itself does not operate proprietary trading technology. All technology infrastructure is provided by and maintained by CME Group.
+
+[Source: [CME Group — GME Strategic Partnership](https://www.cmegroup.com/international/partnership-resources/gme-resources.html); [CME Group Press Release — Dubai Mercantile Exchange Contracts Migrate to CME Group Platform](http://investor.cmegroup.com/news-releases/news-release-details/dubai-mercantile-exchange-contracts-migrate-cme-group-platform); [Rigzone — DME's Contracts Migrate to CME Group Trading Platform](https://www.rigzone.com/news/oil_gas/a/72413/dmes_contracts_migrate_to_cme_group_trading_platform/)]
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+
+DME/GME products are subject to CME Group's standard energy product price limit mechanisms:
+
+| Mechanism | Description |
+|-----------|-------------|
+| **Price Banding (Velocity Logic)** | CME Globex's dynamic price banding system that prevents execution of orders at extreme prices; rejects orders outside a dynamic price range around the current market |
+| **Stop Logic** | Triggers a brief pause if a stop order cascade would move the market beyond a defined threshold |
+| **Daily Price Limits** | Product-specific daily price limits applied per CME Group rules; expanded in stages during extreme moves [unverified] |
+
+### 8.2 Position Limits
+
+- Position limits and accountability levels set by CME Group for DME Oman contracts
+- Large trader reporting obligations apply per CME Group and CFTC rules (for U.S.-connected participants)
+- Hedge exemptions available through CME Group's Market Regulation department
+
+### 8.3 CME Clearing Risk Management
+
+| Item | Details |
+|------|---------|
+| CCP | CME Clearing acts as the central counterparty for all GME trades |
+| Margin Methodology | CME SPAN (Standard Portfolio Analysis of Risk) |
+| Mark-to-Market | Daily settlement; intraday margin calls as needed |
+| Default Waterfall | CME Clearing's standard default waterfall — defaulting member resources, CME contribution ("skin in the game"), clearing fund (mutualized), assessments |
+| Financial Safeguards | GME products benefit from CME Clearing's total financial safeguards package (~USD 35 billion in clearing member assets) [unverified] |
+
+[Source: [CME Group — GME Strategic Partnership](https://www.cmegroup.com/international/partnership-resources/gme-resources.html); [GME — About GME](https://www.gulfmerc.com/about-gme)]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Primary Regulator
+
+- **Dubai Financial Services Authority (DFSA):** The independent regulator of the DIFC (Dubai International Financial Centre); supervises DME/GME as a licensed exchange operating within the DIFC free zone
+- **DIFC:** The DIFC operates as a financial free zone with its own legal and regulatory framework, separate from mainland UAE regulation
+
+### 9.2 Regulatory Environment
+
+| Regulation | Description |
+|-----------|-------------|
+| **DIFC Markets Law** | Primary legislation governing exchanges and market intermediaries within the DIFC |
+| **DFSA Market Rules** | Rules governing trading, conduct, market abuse, and reporting on DIFC-regulated exchanges |
+| **CME Group Rules** | CME Group's rulebook applies to trading and clearing of DME/GME products on CME Globex and through CME Clearing |
+| **CFTC Oversight** | U.S. CFTC oversight applies to CME Clearing (as a registered DCO) and to U.S. persons trading DME/GME products |
+
+### 9.3 Cross-Border Recognition
+
+- DME/GME products are accessible to participants globally through CME Globex
+- CME Clearing's status as a registered DCO with the U.S. CFTC and recognized CCP under EU EMIR extends regulatory recognition to DME/GME products
+- DFSA maintains cooperation agreements with multiple international regulators
+
+### 9.4 Market Integrity
+
+- Market surveillance conducted jointly by DFSA and CME Group's Market Regulation department
+- Position reporting and large trader reporting obligations apply
+- Anti-market manipulation and market abuse provisions under both DFSA and CME Group rules
+
+[Source: [GME — About GME](https://www.gulfmerc.com/about-gme); [Wikipedia — Dubai Mercantile Exchange](https://en.wikipedia.org/wiki/Dubai_Mercantile_Exchange); [CFTC — DME Contract Specifications](https://www.cftc.gov/sites/default/files/stellent/groups/public/@requestsandactions/documents/ifdocs/nymex_dme_4d_ex2_contr_specs.pdf)]
+
+---
+
+## Derivatives-Specific Sections
+
+---
+
+## D1. Product Catalog
+
+| Product | Symbol | Contract Size | Settlement | Status |
+|---------|--------|---------------|------------|--------|
+| Oman Crude Oil Futures | OQD | 1,000 barrels | Physical delivery (FOB Mina al Fahal) | Active — Flagship |
+| Oman Crude Oil European Style Options | OQE | 1,000 barrels (1 futures contract) | Exercise into futures position | Active |
+| Micro Oman Crude Oil Futures | — | 100 barrels | Cash settled [unverified] | Active |
+
+**Note:** DME/GME is an intentionally focused exchange with a narrow product slate centered on Oman crude oil. Unlike multi-asset exchanges, GME's value proposition is built around establishing Oman crude as the definitive Asian sour crude benchmark rather than offering product breadth.
+
+[Source: [GME — OQD Contract Summary](https://www.gulfmerc.com/gme-product-services/gme-contracts-contract-summary-oqd); [GME — OQE Contract Summary](https://www.gulfmerc.com/gme-product-services/gme-contracts-contract-summary-oqe); [Wikipedia — DME Oman Crude Oil Futures Contract](https://en.wikipedia.org/wiki/DME_Oman_Crude_Oil_Futures_Contract); [DFM — Micro Oman Crude Oil Futures](https://www.dfm.ae/investing/products/oil-futures)]
+
+---
+
+## D2. Key Contract Specifications
+
+### 1. Oman Crude Oil Futures (OQD) — Flagship Product
+
+| Item | Specification |
+|------|---------------|
+| Underlying | Oman Crude Oil (sour crude grade) |
+| Contract Size | 1,000 barrels |
+| Price Quotation | U.S. dollars and cents per barrel |
+| Tick Size | USD 0.01 per barrel |
+| Tick Value | USD 10.00 (= USD 0.01 x 1,000 barrels) |
+| Contract Months | Monthly contracts for up to 72 consecutive months [unverified] |
+| Front Month | Always two months forward (e.g., March contract is the front month during January trading) |
+| Trading Hours | Sunday 18:00 – Friday 17:15 ET (CME Globex); 45-minute daily break 17:15 – 18:00 ET |
+| Last Trading Day | Last business day of the month, two months prior to the contract month [unverified] |
+| Settlement Method | Physical delivery |
+| Delivery Point | FOB Mina al Fahal terminal, Muscat, Oman (operated by Petroleum Development Oman) |
+| Settlement Currency | USD |
+| Daily Marker Price | Determined during Marker Window 16:25 – 16:30 Singapore Time |
+| End-of-Day Settlement | 14:30 EST (based on values between 14:25 – 14:30 EST) |
+| Block Trade Minimum | Product-specific threshold per CME Group rules [unverified] |
+
+### 2. Oman Crude Oil European Style Options (OQE)
+
+| Item | Specification |
+|------|---------------|
+| Underlying | One Oman Crude Oil Futures contract (OQD) |
+| Contract Size | 1,000 barrels |
+| Exercise Style | European (exercisable only at expiration) |
+| Price Quotation | U.S. dollars and cents per barrel |
+| Tick Size | USD 0.01 per barrel |
+| Tick Value | USD 10.00 |
+| Settlement | Exercise results in a futures position in the underlying OQD contract |
+
+### 3. Micro Oman Crude Oil Futures
+
+| Item | Specification |
+|------|---------------|
+| Contract Size | 100 barrels (1/10 of standard OQD) |
+| Price Quotation | U.S. dollars and cents per barrel |
+| Settlement | Cash settled [unverified] |
+| Purpose | Smaller contract size for retail and smaller institutional participants |
+
+[Source: [GME — OQD Contract Summary](https://www.gulfmerc.com/gme-product-services/gme-contracts-contract-summary-oqd); [GME — OQE Contract Summary](https://www.gulfmerc.com/gme-product-services/gme-contracts-contract-summary-oqe); [Wikipedia — DME Oman Crude Oil Futures Contract](https://en.wikipedia.org/wiki/DME_Oman_Crude_Oil_Futures_Contract); [CFTC — DME Contract Specifications](https://www.cftc.gov/sites/default/files/stellent/groups/public/@requestsandactions/documents/ifdocs/nymex_dme_4d_ex2_contr_specs.pdf); [DFM — Micro Oman Crude Oil Futures](https://www.dfm.ae/investing/products/oil-futures)]
+
+---
+
+## D3. Margin Framework
+
+### Margin Methodology
+
+| Item | Details |
+|------|---------|
+| Methodology | CME SPAN (Standard Portfolio Analysis of Risk) |
+| Administrator | CME Clearing |
+| Margin Calculation | Portfolio-based risk assessment; considers price risk, volatility, inter-month spreads, and inter-commodity correlations |
+| Initial Margin | Set by CME Clearing; adjusted based on market volatility; publishes daily scanning ranges |
+| Maintenance Margin | Typically set at a percentage of initial margin (CME standard practice) |
+| Variation Margin | Daily mark-to-market settlement of gains and losses |
+| Intraday Margin | CME Clearing may issue intraday margin calls during periods of extreme volatility |
+
+### Margin Process
+
+1. **End-of-Day:** CME Clearing calculates margin requirements using SPAN for all open positions, including GME products within the broader portfolio
+2. **Cross-Margining:** Potential margin offsets available when GME Oman positions are held alongside other CME Group energy products (e.g., WTI crude, Brent crude) within the same portfolio
+3. **Settlement:** Daily cash settlement of variation margin through CME Group's settlement banking network
+4. **Margin Calls:** Must be met within prescribed time frames per CME Clearing rules; failure to meet margin calls can result in position liquidation
+
+### Acceptable Collateral (per CME Clearing)
+
+- Cash (USD and select foreign currencies)
+- U.S. Treasury securities
+- Sovereign government bonds (approved list)
+- Letters of credit (subject to limits)
+- Other CME-approved collateral (subject to haircuts)
+
+[Source: [CME Group — GME Strategic Partnership](https://www.cmegroup.com/international/partnership-resources/gme-resources.html); [GME — About GME](https://www.gulfmerc.com/about-gme)]
+
+---
+
+*Research compiled from official GME/DME sources, CME Group resources, CFTC filings, and industry references. Items marked [unverified] require confirmation from primary sources.*

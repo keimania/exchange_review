@@ -1,0 +1,394 @@
+# Borsa Italiana (Euronext Milan)
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 3
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Borsa Italiana S.p.A. |
+| Abbreviation | BIt / MIL |
+| Operating MIC | XMIL |
+| Website | https://www.borsaitaliana.it |
+| Year Established | 1808 (as Borsa di commercio di Milano, by decree of Eugene de Beauharnais, Viceroy of the Napoleonic Kingdom of Italy) |
+| Country / City | Italy / Milan (Palazzo Mezzanotte, Piazza degli Affari) |
+| Ownership Structure | Wholly-owned subsidiary of Euronext N.V. (since April 2021) |
+| Parent Company / Group | Euronext N.V. (ticker: ENX on Euronext Amsterdam) |
+| Regulatory Authority | CONSOB (Commissione Nazionale per le Societa e la Borsa) |
+| Market Capitalization (listed companies) | ~EUR 1,042 billion / ~USD 1.15 trillion (as of December 2025) |
+| Total Listed Instruments | ~375+ companies across all market segments |
+| Benchmark Index | FTSE MIB (40 most liquid and capitalised Italian shares, covering ~80% of domestic market capitalisation) |
+| Average Daily Trading Volume | [unverified -- not publicly disclosed in consolidated form] |
+| Average Daily Trading Value | [unverified -- not publicly disclosed in consolidated form] |
+
+### Key Historical Milestones
+- **1808**: Borsa di commercio di Milano established by Napoleonic decree (16 January and 6 February 1808)
+- **1808-1996**: Operated as a government-regulated public institution; trading conducted on the physical floor at Palazzo Mezzanotte
+- **1991**: Electronic trading introduced alongside floor trading
+- **1994**: Floor trading ceased; full migration to electronic systems
+- **1997**: Privatisation of the Italian stock exchange; Borsa Italiana S.p.A. formally created
+- **1998**: Borsa Italiana S.p.A. becomes effective as a private entity (2 January 1998), consolidating all Italian regulated markets
+- **2007**: London Stock Exchange Group (LSEG) acquires Borsa Italiana for EUR 1.6 billion (23 June 2007), forming LSEG
+- **2010**: MTA renamed and modernized under LSEG ownership; Millennium Exchange technology deployed
+- **2020**: LSEG agrees to divest Borsa Italiana Group to Euronext for EUR 4.325 billion (9 October 2020), a condition of LSEG's acquisition of Refinitiv to satisfy EU antitrust requirements
+- **2021**: Euronext completes acquisition of Borsa Italiana Group (29 April 2021); Euronext's Core Data Centre migration from Basildon (UK) to Aruba IT3, Bergamo (Italy) announced
+- **2022**: Core Data Centre migration to Bergamo completed
+- **2023**: Phase 1 Optiq migration -- equities and ETFs migrated to Euronext Optiq platform (27 March 2023); Phase 2 -- fixed income, warrants, and certificates migrated (11 September 2023); market segments rebranded (MTA to Euronext Milan, AIM Italia to Euronext Growth Milan)
+- **2024**: Phase 3 Optiq migration -- Italian derivatives migrated to Optiq (April 2024); full integration onto Euronext single trading platform completed
+- **2025**: Market capitalisation surpasses EUR 1 trillion; 71st listing on Euronext in 2025
+
+> **Note on LSEG-to-Euronext Transition**: The sale of Borsa Italiana was driven by EU antitrust conditions imposed on LSEG's USD 27 billion Refinitiv acquisition. Euronext's acquisition included not only Borsa Italiana's markets but also CC&G (central counterparty, now Euronext Clearing) and Monte Titoli (central securities depository). The full technology migration from LSEG's Millennium platform to Euronext's Optiq platform was completed in three phases across 2023-2024, less than three years after acquisition.
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| **Euronext Milan** (formerly MTA) | Main regulated market for large and mid-cap companies; flagship venue for Italian equities | Minimum foreseeable market cap EUR 40 million; 3-year audited financial history; minimum 25% free float; sponsor required; CONSOB-approved prospectus |
+| **Euronext STAR Milan** | Segment within Euronext Milan for mid-caps committing to higher transparency, governance, and liquidity standards | All Euronext Milan requirements plus: enhanced corporate governance, minimum analyst coverage, dedicated specialist/liquidity provider; ~61 companies, ~EUR 39 billion total market cap |
+| **Euronext Growth Milan** (formerly AIM Italia) | MTF for SMEs with lighter listing requirements; gateway for smaller and growing companies | No minimum market cap; no minimum trading history; appointed Euronext Growth Advisor (formerly Nomad) required; minimum 10% free float [unverified]; admission document (not full prospectus) |
+| **Euronext Access Milan** | Entry-level market for micro-caps and start-ups; least stringent requirements | Simplified admission; listing sponsor required; minimal ongoing obligations [unverified] |
+
+### 2.2 Trading Sessions
+| Session | Local Time (CET/CEST) | UTC (Winter / Summer) | Description |
+|---------|----------------------|----------------------|-------------|
+| Pre-open / Order Entry | 08:00 - 09:00 | 07:00 - 08:00 / 06:00 - 07:00 | Orders can be entered, amended, cancelled; no matching |
+| Opening Auction | 09:00 - 09:00+ | 08:00 / 07:00 | Price determination via call auction; includes random end period to prevent manipulation |
+| Continuous Trading | ~09:00 - 17:25 | ~08:00 - 16:25 / ~07:00 - 15:25 | Order-driven continuous matching with price/time priority |
+| Closing Auction | 17:25 - 17:30 | 16:25 - 16:30 / 15:25 - 15:30 | Closing price determination via call auction; random end period |
+| Trading at Closing Price | 17:30 - 17:30+ | 16:30 / 15:30 | Orders can execute at the established closing price only [unverified exact end time] |
+
+Note: Italy observes CEST (UTC+2) from late March to late October, CET (UTC+1) otherwise. Times above are approximate; exact phase boundaries may vary by a few minutes due to random auction end periods. Euronext Growth Milan follows a similar schedule with some variations.
+
+### 2.3 Tick Sizes
+
+Borsa Italiana / Euronext Milan follows the **MiFID II tick size regime** (RTS 11), the same framework used across all Euronext markets. Tick sizes depend on both the price level and the liquidity band of the instrument (based on average daily number of transactions). Specific tick size values for each instrument are published in the Borsa Italiana "Guide to the Parameters."
+
+Representative values (same as the Euronext-wide and EU-wide MiFID II tick table):
+
+| Price Range (EUR) | Liquidity Band 1 (< 10 ADNT) | Liquidity Band 3 (80-600 ADNT) | Liquidity Band 6 (>= 9000 ADNT) |
+|-------------------|-------------------------------|--------------------------------|----------------------------------|
+| 0 - 0.4999 | 0.005 | 0.002 | 0.0005 |
+| 0.5 - 0.9999 | 0.01 | 0.005 | 0.001 |
+| 1 - 1.9999 | 0.02 | 0.01 | 0.002 |
+| 2 - 4.9999 | 0.05 | 0.02 | 0.005 |
+| 5 - 9.9999 | 0.1 | 0.05 | 0.01 |
+| 10 - 49.9999 | 0.2-0.5 | 0.1-0.2 | 0.02-0.05 |
+| 50 - 99.9999 | 1.0 | 0.5 | 0.1 |
+
+[Source: ESMA RTS 11; representative values from 6 liquidity bands and 13 price ranges]
+
+### 2.4 Lot Sizes
+- **Standard lot size**: 1 share for equities on Euronext Milan
+- No minimum lot size for continuous order book trading
+- Block trade thresholds defined under MiFID II Large-in-Scale (LIS) waivers
+
+### 2.5 Market Maker / Liquidity Provider Programs
+- **Specialist / Liquidity Provider**: Appointed market makers for specific securities commit to providing continuous two-sided quotes during trading hours; required for Euronext STAR Milan segment
+- **Market Maker Fee Incentives**: Euronext offers reduced trading fees for registered liquidity providers
+- **Euronext Growth Milan**: Each issuer must appoint a specialist to support liquidity
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+- **Opening Auction**: Begins after the pre-open order accumulation phase. Orders accumulate and the uncrossing algorithm determines the price that maximizes executable volume. Includes a random end period (typically up to 30 seconds) to prevent last-second manipulation
+- **Closing Auction**: At 17:25, continuous trading halts and a closing auction period begins. The uncrossing determines the official closing price (used by index providers, fund managers, and for NAV calculations). Includes a random end period
+- **Volatility Auction**: Triggered when a potential execution would breach dynamic or static price monitoring thresholds (circuit breakers). Trading is suspended and a call auction is initiated to allow orderly price discovery. Minimum duration 5 minutes; can be extended if the indicative price would breach thresholds again (average duration in Borsa Italiana historically ~10 minutes, with extensions up to 50 minutes observed)
+- **Trading at Closing Price**: After the closing auction, a brief session allows execution at the established closing price only
+
+### 3.2 Continuous Trading
+- **Order-driven market** with price/time priority matching during the continuous session (~09:00-17:25 CET)
+- Each new order is immediately matched against opposite orders in the order book; any unmatched portion rests on the book
+- Optional market maker participation provides additional liquidity
+- Runs on the Euronext Optiq matching engine (since March 2023 for equities)
+
+### 3.3 Price Discovery
+- Price discovery occurs primarily through the opening and closing auctions and continuous order book interaction
+- The uncrossing algorithm maximizes executable volume, then minimizes surplus, then references the prior price
+- Reference prices for circuit breakers are derived from auction uncrossing prices and dynamically updated during continuous trading
+- The closing price (from closing auction) is the primary reference for indices, settlements, and fund valuations
+
+---
+
+## 4. Order Types
+
+*Brief coverage (Tier 3)*
+
+### 4.1 Standard Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Limit Order | Buy/sell at a specified price or better; rests on the book if not immediately matched |
+| Market Order | Executes at the best available price; unmatched portion may be cancelled depending on configuration |
+
+### 4.2 Advanced Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Iceberg Order | Disclosed peak quantity displayed; hidden reserve replenishes automatically. Peak must be at minimum 10x lot size; total value must be >= EUR 10,000 or the order is converted to a transparent limit order |
+| Stop Order (Market/Limit) | Triggered when the market reaches a specified stop price |
+| Pegged Order | Primary pegged tracks best bid/offer; mid-point pegged tracks the midpoint of the BBO. Continuously re-priced as the reference changes |
+
+### 4.3 Time-in-Force Options
+| TIF | Description |
+|-----|-------------|
+| Day (GFD) | Valid for the current trading day only |
+| Good till Date (GTD) | Valid until a specified expiry date |
+| Good till Cancelled (GTC) | Remains active until executed or cancelled |
+| Immediate or Cancel (IOC) | Execute immediately; cancel any remainder |
+| Fill or Kill (FOK) | Execute in full immediately or cancel entirely |
+
+### 4.4 Order Modification / Cancellation
+- Orders can be amended or cancelled during trading sessions via FIX or SBE (native) gateway
+- Price amendments that improve priority result in a new timestamp (loss of time priority)
+- Self-Trade Prevention (STP) mechanism available to prevent a firm's orders from matching against each other
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | Euronext Optiq |
+| Vendor / In-house | In-house (developed by Euronext) |
+| Previous System | Millennium Exchange (LSEG/MillenniumIT) -- used until March 2023 for equities |
+| Architecture | High-performance, low-latency matching engine; event-driven architecture |
+| Matching Engine | Central matching engine with price/time priority; supports multi-asset class |
+| Round-trip Latency | ~15 microseconds average (order round-trip and market data) |
+| Order Processing Capacity | Up to 1 million messages per second; scalable architecture |
+| Launch Year (for Borsa Italiana) | Phase 1: March 2023 (equities, ETFs); Phase 2: September 2023 (fixed income, warrants, certificates); Phase 3: April 2024 (derivatives) |
+
+### System History
+| Period | System | Notes |
+|--------|--------|-------|
+| Pre-1994 | Floor trading | Physical trading floor at Palazzo Mezzanotte |
+| 1991-1994 | Hybrid electronic/floor | Electronic trading introduced alongside floor |
+| 1994-2007 | Fully electronic (proprietary Italian systems) | Floor trading ceased; electronic order book |
+| 2007-2023 | Millennium Exchange (under LSEG) | Deployed after LSEG acquisition; C++/Linux-based; sub-millisecond latency |
+| 2023-present | Euronext Optiq | Migration completed in three phases (March 2023 - April 2024) |
+
+### Technology Stack
+- **Trading Platform**: Optiq (Euronext's unified trading platform across all Euronext markets)
+- **Trading Gateways**: FIX 5.0 SP2 and native SBE (Simple Binary Encoding) for lowest latency
+- **Market Data Distribution**: Optiq MDG (Market Data Gateway); UDP multicast for real-time data
+- **Primary Data Centre**: Aruba Global Cloud Data Centre IT3, Bergamo, Italy (migrated from Basildon, UK in 2022)
+- **Power**: Data centre entirely powered by green energy [unverified -- per Euronext statements]
+
+### Disaster Recovery / Business Continuity
+- Redundant matching engine architecture with real-time replication
+- Dual market data feeds for client-side arbitration
+- Business continuity aligned with Euronext group-wide standards and regulatory requirements
+- [Specific DR details not publicly disclosed]
+
+---
+
+## 6. Market Data
+
+*Brief coverage (Tier 3)*
+
+### 6.1 Data Feed Protocols
+| Protocol | Description | Use Case |
+|----------|-------------|----------|
+| Optiq MDG (Level 2) | Native binary market data; full order-by-order depth | Low-latency algorithmic trading |
+| Optiq MDG (Level 1) | Aggregated BBO and trade data | Real-time top-of-book |
+| FIX Market Data | Market data via FIX protocol | Standardised connectivity |
+
+### 6.2 Data Levels
+- **Level 1**: Best bid/offer, last trade, volume
+- **Level 2**: Full order book depth
+- Historical and reference data available through Euronext data services and third-party vendors
+
+### 6.3 Distribution Infrastructure
+- UDP multicast over dedicated network from Bergamo data centre
+- Dual redundant feeds
+- Colocation and proximity hosting available at Aruba IT3 Bergamo
+
+---
+
+## 7. Connectivity & Access
+
+*Brief coverage (Tier 3)*
+
+### 7.1 Membership / Participation
+- Member firms must be authorised by CONSOB (or equivalent EU/EEA regulator under MiFID II passporting)
+- Apply to Borsa Italiana / Euronext for trading membership
+- Remote membership available for firms based outside Italy
+
+### 7.2 Connection Methods
+| Method | Description |
+|--------|-------------|
+| Euronext Colocation | Direct cross-connect at Aruba IT3, Bergamo |
+| Client Managed Connectivity (CMC) | Connect via Euronext PoPs at Interxion LON1, Equinix LD4, or directly at Aruba IT-DC3 |
+| Data Centre Carriers | Specialist network providers offering connectivity to Bergamo |
+
+### 7.3 Co-location / Proximity Services
+- **Primary Location**: Aruba Global Cloud Data Centre IT3, Bergamo, Italy
+- **Services**: Rack space, power, cooling, direct fibre cross-connects to matching engine
+- Lowest latency achievable through colocation at Bergamo
+
+### 7.4 API Protocols
+| Protocol | Use Case |
+|----------|----------|
+| Optiq OEG SBE (native binary) | Lowest latency order entry |
+| Optiq OEG FIX 5.0 SP2 | Standard order entry |
+| Optiq MDG | Market data distribution |
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+| Type | Threshold | Action |
+|------|-----------|--------|
+| **Dynamic Collar** | +/-5% from dynamic reference price (last traded price); +/-3% for flagship index constituents (e.g., FTSE MIB) | Trading halted; instrument enters volatility auction |
+| **Static Collar** | +/-10% from static reference price (last auction uncrossing price); +/-8% for flagship index constituents | Trading halted; instrument enters volatility auction |
+
+- The dynamic reference price updates after each trade (the last traded price becomes the new reference)
+- The static reference price remains fixed throughout the session unless manually changed by Euronext Market Operations
+- Borsa Italiana-specific parameters are published in the "Guide to the Parameters" document
+
+### 8.2 Circuit Breakers
+| Level | Trigger | Halt Duration |
+|-------|---------|---------------|
+| Dynamic collar breach | Potential execution price exceeds dynamic threshold | Volatility auction; minimum ~5 minutes |
+| Static collar breach | Potential execution price exceeds static threshold | Volatility auction; minimum ~5 minutes |
+| Auction extension | Indicative uncrossing price would breach thresholds again | Auction call period extended |
+
+- Borsa Italiana historically has the highest average circuit breaker duration among Euronext venues (~10 minutes average), with extensions ranging from 5 to 50 minutes
+- Circuit breakers apply to individual instruments, not market-wide
+
+### 8.3 Pre-trade Risk Controls
+- **Maximum Order Value**: Configurable per firm/gateway; orders exceeding threshold are rejected
+- **Maximum Order Quantity**: Limits on shares per single order
+- **Message Throttling**: Rate limits on order submissions per second per connection (Optiq OEG throttling mechanism)
+- **Price Collar Checks**: Orders significantly away from the current market may be rejected
+- **Self-Trade Prevention (STP)**: Prevents a firm's buy and sell orders from matching against each other
+- **Kill Switch**: Available to cancel all outstanding orders for a firm, CompID, or user via GUI or by contacting Euronext Market Operations
+
+### 8.4 Kill Switch
+- GUI-based and telephone-based kill switch available
+- Can cancel all orders at firm, gateway, or user level
+- Real-time risk monitoring with configurable alert thresholds
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+- **CONSOB (Commissione Nazionale per le Societa e la Borsa)**: Primary regulator for Italian securities markets; established in 1974. Responsible for regulating and supervising securities markets and issuers, approving listing and offering prospectuses, and enforcing market abuse rules
+- **Bank of Italy (Banca d'Italia)**: Prudential oversight of financial intermediaries; supervises market infrastructure stability
+- **ESMA (European Securities and Markets Authority)**: EU-level coordination and oversight under MiFID II/MiFIR framework
+
+### 9.2 Key Regulations
+- **Consolidated Law on Finance (Testo Unico della Finanza, TUF -- Legislative Decree No. 58/1998)**: Primary Italian legislation governing financial markets, intermediaries, issuers, and market abuse. The foundational law for Italian securities regulation
+- **MiFID II / MiFIR (EU Directive 2014/65/EU and Regulation 600/2014)**: EU-wide framework governing trading venues, transparency, investor protection, and market structure; directly applicable in Italy
+- **Market Abuse Regulation (EU MAR -- Regulation 596/2014)**: Prohibits insider dealing, market manipulation, and unlawful disclosure of inside information
+- **Borsa Italiana Markets Rulebook**: Exchange-level rules approved by CONSOB; governs listing, trading, and membership
+- **EU Prospectus Regulation (Regulation 2017/1129)**: Governs prospectus requirements for public offerings and admissions to trading
+- **CSDR (Central Securities Depositories Regulation)**: Governs settlement discipline and CSD operations (applicable to Monte Titoli / Euronext Securities Milan)
+
+### 9.3 Market Surveillance
+- **Borsa Italiana Market Surveillance**: Real-time monitoring of trading activity for suspicious patterns, potential market abuse, and rule violations
+- **CONSOB Surveillance**: Independent market monitoring using transaction reporting data; enforcement of MAR
+- **Suspicious Transaction and Order Reports (STORs)**: Member firms required to report suspicious activity to CONSOB
+- **Cross-market coordination**: Through ESMA and bilateral MoUs with other EU and international regulators
+
+### 9.4 Reporting Requirements
+- **Transaction Reporting**: Investment firms must report trades to CONSOB under MiFIR Article 26 (65 data fields, T+1 deadline)
+- **Post-trade Transparency**: Real-time publication of trade details as required by MiFID II; deferrals for large-in-scale and illiquid instruments
+- **Pre-trade Transparency**: Display of bid/offer prices and depth for order book instruments
+- **Short Selling Disclosure**: Per EU Short Selling Regulation; net short positions above 0.2% reported to CONSOB, above 0.5% publicly disclosed
+- **Major Shareholding Notifications**: Disclosure required when crossing specified thresholds of voting rights (per TUF and Transparency Directive)
+- **Italian Financial Transaction Tax (FTT)**: Applies to trades in Italian equities; 0.10% on regulated market transactions, 0.20% on OTC transactions [unverified exact current rates]
+
+### 9.5 Cross-border Arrangements
+- EU MiFID II passporting allows investment firms authorised in any EU/EEA member state to access Borsa Italiana as remote members
+- Euronext operates as a single cross-border exchange group with harmonised rules across its markets (Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, Paris)
+- CONSOB is a signatory to IOSCO MMOU for international regulatory cooperation
+- ESMA coordinates cross-border supervision within the EU
+
+---
+
+## 10. Fees & Revenue Model
+
+*Brief coverage (Tier 3)*
+
+### 10.1 Trading Fees
+- Euronext Cash Markets Trading Fee Guide applies (effective April 2026)
+- Fee structure is value-based (ad valorem) with tiered pricing based on monthly trading volume
+- Market maker / liquidity provider fee incentives available (reduced execution fees)
+- [Specific per-trade rates not detailed here; refer to Euronext Cash Markets Trading Fee Guide]
+
+### 10.2 Other Fees
+- **Listing Fees (Initial)**: EUR 250 per EUR 1 million of market capitalisation; minimum EUR 40,000 (if market cap <= EUR 1 billion) or EUR 100,000 (if > EUR 1 billion); maximum EUR 1,000,000. Companies already listed on a foreign market: minimum EUR 20,000, maximum EUR 200,000
+- **Euronext STAR Milan Surcharge**: Additional EUR 5,000 initial fee; EUR 2,500 annual fee
+- **Annual Listing Fees**: Scale with market capitalisation [specific schedule in Borsa Italiana Price List]
+- **Connectivity and Colocation Fees**: Charges for gateway connections, market data, and colocation at Bergamo
+- **Market Data Fees**: Per-user and enterprise licensing for Level 1 and Level 2 data
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+- **2021**: Euronext acquires Borsa Italiana Group (April); data centre migration from Basildon (UK) to Bergamo (Italy) announced
+- **2022**: Core Data Centre migration to Aruba IT3, Bergamo completed
+- **2023**: Phase 1 Optiq migration -- equities and ETFs (March 2023); Phase 2 -- fixed income, warrants, certificates (September 2023); market rebranding (MTA to Euronext Milan, AIM Italia to Euronext Growth Milan)
+- **2024**: Phase 3 Optiq migration -- Italian derivatives (April 2024); full integration onto Euronext single trading platform completed, contributing to targeted EUR 115 million synergies
+- **2025**: CC&G rebranded as Euronext Clearing; migration of clearing services ongoing (client testing through April 2025)
+
+### New Products / Segments
+- **Euronext STAR Conference**: 25th annual edition held in 2026, showcasing Italian mid-cap companies to international investors
+- **Tax credits for SME listings**: Italian government extended tax credits for SME IPO costs through 2025
+- **"Fondo di Fondi"**: Italian Ministry of Economy and Treasury initiative supporting IPO pipeline
+
+### Regulatory Changes
+- **MiFID II tick size regime**: Fully adopted under Euronext harmonised framework
+- **Settlement discipline**: CSDR provisions applied through Monte Titoli / Euronext Securities Milan
+- **Italian FTT**: Financial Transaction Tax continues to apply to Italian equity trades
+
+### Strategic Initiatives
+- **Euronext Group Integration**: Borsa Italiana fully integrated into Euronext's single trading platform, single data centre, and harmonised rulebook
+- **Euronext Clearing**: CC&G (now Euronext Clearing) positioned as Euronext's group-wide CCP for all cash equity, financial and commodity derivatives
+- **Green Data Centre**: Bergamo data centre powered entirely by green energy [per Euronext statements]
+- **Market Capitalisation Growth**: Italian market surpassed EUR 1 trillion capitalisation in 2025, a significant milestone reflecting renewed investor confidence
+- **IPO Pipeline**: Continued activity with 375+ listed companies; supportive environment for SME listings through government incentives
+
+---
+
+## Sources
+
+[Source: Euronext, "Milan | Euronext", https://www.euronext.com/en/markets/milan, accessed 2026-04-06]
+[Source: Borsa Italiana, "Trading on Euronext Milan and Euronext Growth Milan", https://www.borsaitaliana.it/azioni/mercati/negoziazioni/negoziazioni/negoziazioni.en.htm, accessed 2026-04-06]
+[Source: Borsa Italiana, "Trading Calendar and Hours", https://www.borsaitaliana.it/borsaitaliana/calendario-e-orari-di-negoziazione/calendario-borsa-orari-di-negoziazione.en.htm, accessed 2026-04-06]
+[Source: Borsa Italiana, "Euronext Milan market characteristics", https://www.borsaitaliana.it/azioni/mercati/euronext-milan/home/caratteristiche.en.htm, accessed 2026-04-06]
+[Source: Borsa Italiana, "Euronext Growth Milan market characteristics", https://www.borsaitaliana.it/azioni/mercati/euronext-growth-milan/home/caratteristiche.en.htm, accessed 2026-04-06]
+[Source: Euronext, "Successful completion of the migration of Borsa Italiana to Optiq", https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-borsa-italiana-optiqr-trading, accessed 2026-04-06]
+[Source: Euronext, "Successful migration of Borsa Italiana equity and ETF markets to Optiq", https://www.euronext.com/en/about/media/euronext-press-releases/successful-migration-borsa-italiana-equity-and-etf-markets, accessed 2026-04-06]
+[Source: Euronext, "Borsa Italiana Optiq migration: successful completion of Phase Two", https://www.euronext.com/en/news/euronext-optiq-migration-successful-completion-phase-two-for-borsa-italiana-markets, accessed 2026-04-06]
+[Source: Euronext, "Euronext introduces Optiq, the new technology platform", https://www.euronext.com/en/about/media/euronext-press-releases/euronext-introduces-optiq-new-technology-platform-powering-cash, accessed 2026-04-06]
+[Source: Euronext, "Trading safeguards on the Euronext markets", https://www.euronext.com/en/trading/market-quality/trading-safeguards-euronext-markets, accessed 2026-04-06]
+[Source: Euronext, "Euronext Data Centre", https://www.euronext.com/en/technology/euronext-data-centre, accessed 2026-04-06]
+[Source: Euronext, "Data Centre migration completed", https://www.euronext.com/en/news/data-centre-migration, accessed 2026-04-06]
+[Source: Euronext, "Trading fees and charges", https://www.euronext.com/en/trading/fees-charges, accessed 2026-04-06]
+[Source: Euronext, "Trading hours & holidays", https://www.euronext.com/en/trading/trading-hours-holidays, accessed 2026-04-06]
+[Source: Euronext, "Euronext Clearing", https://www.euronext.com/en/clearing, accessed 2026-04-06]
+[Source: Euronext, "Euronext Clearing: one clearing house for Europe", https://www.euronext.com/en/news/euronext-clearing-one-clearing-house-for-europe, accessed 2026-04-06]
+[Source: Borsa Italiana, "Price List -- Issuers listed before 1 January 2025", https://www.borsaitaliana.it/azioni/mercati/mercati-landingpage/01-01-2025-price-list-milan.en.pdf, accessed 2026-04-06]
+[Source: Borsa Italiana, "Connectivity", https://www.borsaitaliana.it/borsaitaliana/gestione-mercati/connettivita/connettivita.en.htm, accessed 2026-04-06]
+[Source: CONSOB, "Laws and regulations", https://www.consob.it/web/consob-and-its-activities/laws-and-regulations, accessed 2026-04-06]
+[Source: Wikipedia, "Borsa Italiana", https://en.wikipedia.org/wiki/Borsa_Italiana, accessed 2026-04-06]
+[Source: Wikipedia, "Euronext Clearing", https://en.wikipedia.org/wiki/Euronext_Clearing, accessed 2026-04-06]
+[Source: ESMA, "MiFID II Article 49 Tick Sizes / RTS 11", accessed 2026-04-06]
+[Source: MarketScreener, "Milan Stock Exchange Capitalization Surpasses EUR 1 Trillion in 2025", https://www.marketscreener.com/news/milan-stock-exchange-capitalization-surpasses-a-1-trillion-in-2025-gap-widens-between-egm-and-mta-ce7e59d8d98ef024, accessed 2026-04-06]
+[Source: AMAN-ANSA, "Milan bourse market capitalization rises to EUR 1,042 billion in 2025", https://www.aman-alliance.org/Home/ContentDetail/98854, accessed 2026-04-06]
+[Source: Disfold, "Largest FTSE MIB Companies by Market Capitalization in 2026", https://disfold.com/stock-index/ftse-mib/companies/, accessed 2026-04-06]
+[Source: ESMA Working Paper No. 1, 2020, "Market impacts of circuit breakers -- Evidence from EU trading venues", https://www.esma.europa.eu/sites/default/files/library/esmawp-2020-1_market_impacts_of_circuit_breakers.pdf, accessed 2026-04-06]
+[Source: DLA Piper, "Italy Investment Rules", https://www.dlapiperintelligence.com/investmentrules/countries/handbook.pdf?c=IT, accessed 2026-04-06]
+[Source: Confluent, "Euronext builds high-speed trading platform", https://www.confluent.io/customers/euronext/, accessed 2026-04-06]

@@ -1,0 +1,573 @@
+# EU Derivatives Regulation
+
+> **Last Updated:** 2026-04-07
+> **Domain:** Derivatives -- Regulatory Framework
+
+---
+
+## 1. Regulatory Authorities
+
+### 1.1 European Commission
+- Initiates and proposes legislative measures for derivatives markets (e.g., EMIR, MiFID II/MiFIR)
+- Adopts delegated and implementing acts (Regulatory Technical Standards, Implementing Technical Standards) based on ESMA drafts
+- Issues equivalence decisions for third-country regulatory regimes
+- Responsible for legislative reviews and impact assessments (e.g., EMIR review proposals)
+
+### 1.2 ESMA (European Securities and Markets Authority)
+- **Supervisory coordination**: coordinates NCAs' supervision of derivatives markets across the EU
+- **Direct CCP supervision**: directly supervises Tier 2 third-country CCPs under EMIR 2.2 and EMIR 3.0; monitors risk models, liquidity, and operational risk
+- **Technical standards**: drafts RTS and ITS for Commission adoption (clearing obligation, reporting formats, CCP requirements)
+- **Third-country CCP recognition**: determines tiering (Tier 1 vs Tier 2) and grants or refuses recognition
+- **Data and transparency**: oversees trade repositories, consolidated tape provider selection, and data quality
+- **Position limits**: establishes the commodity derivatives position limit framework under MiFID II
+- **Established**: 2011, headquartered in Paris
+
+### 1.3 National Competent Authorities (NCAs)
+Key NCAs include:
+| NCA | Country | Key Role |
+|-----|---------|----------|
+| **BaFin** | Germany | Supervision of Eurex participants, German banks' derivatives exposure |
+| **AMF** (Autorite des Marches Financiers) | France | Oversight of Euronext derivatives, French market participants |
+| **CONSOB** | Italy | Italian derivatives market supervision |
+| **CNMV** | Spain | Spanish derivatives regulation |
+| **AFM** | Netherlands | Dutch derivatives market oversight |
+| **DNB** (De Nederlandsche Bank) | Netherlands | Prudential supervision of Dutch CCPs |
+
+- NCAs authorize EU CCPs under EMIR, supported by colleges of supervisors
+- NCAs set and enforce position limits for commodity derivatives under MiFID II (except for critical/significant contracts where ESMA has a direct role)
+- NCAs enforce MAR provisions including derivatives-related market abuse
+
+### 1.4 ECB / ESCB (European Central Bank / European System of Central Banks)
+- Systemic risk monitoring for CCPs and derivatives markets
+- Participates in CCP supervisory colleges (particularly for euro-denominated clearing)
+- Provides central bank of issue opinions on CCP authorization and recognition
+- EMIR 3.0 enhances ECB involvement in third-country CCP oversight for euro-denominated products
+
+### 1.5 ESRB (European Systemic Risk Board)
+- Macro-prudential oversight of EU derivatives markets
+- Issues warnings and recommendations on systemic risks arising from derivatives exposures
+- Coordinates with ESMA on CCP stress testing and systemic risk assessment
+
+---
+
+## 2. Key Legislation
+
+### 2.1 EMIR (European Market Infrastructure Regulation)
+
+#### 2.1.1 Original EMIR -- Regulation (EU) No 648/2012
+- **Adopted**: 4 July 2012; **In force**: 16 August 2012
+- **Core pillars**:
+  - **Clearing obligation**: mandatory central clearing for standardized OTC derivatives through authorized or recognized CCPs
+  - **Trade reporting**: all derivative contracts (OTC and exchange-traded) reported to authorized trade repositories
+  - **Risk mitigation for non-cleared OTC derivatives**: timely confirmation, portfolio reconciliation and compression, dispute resolution, daily mark-to-market/mark-to-model valuation, exchange of collateral (bilateral margining)
+  - **CCP authorization**: comprehensive requirements for EU CCP authorization including capital, governance, risk management, default procedures
+- **Counterparty classification**:
+  - Financial Counterparties (FC): banks, investment firms, insurers, UCITS, AIFs, pension funds, CCPs
+  - Non-Financial Counterparties (NFC): any undertaking established in the EU not qualifying as FC
+  - NFC+: NFCs exceeding clearing thresholds; NFC-: NFCs below thresholds
+
+#### 2.1.2 EMIR 2.2 -- Regulation (EU) 2019/2099
+- **Adopted**: 23 October 2019
+- Enhanced ESMA's direct supervisory powers over third-country CCPs
+- Introduced the **tiering framework** for third-country CCPs:
+  - **Tier 1**: non-systemically important; subject to recognition with ongoing compliance monitoring
+  - **Tier 2**: systemically important (or likely to become so) for EU financial stability; subject to direct ESMA supervision and compliance with EMIR requirements
+- Strengthened role of central banks of issue in CCP supervision
+- Established CCP Supervisory Committee within ESMA
+
+#### 2.1.3 EMIR Refit -- Regulation (EU) 2019/834
+- **Published**: 28 May 2019; **In force**: 17 June 2019
+- **Key simplifications**:
+  - Eliminated the frontloading requirement for the clearing obligation
+  - Simplified clearing obligation for small financial counterparties (FCs below clearing thresholds exempt from clearing obligation but must still calculate positions)
+  - NFCs need only calculate positions in the asset class exceeding the threshold (not all classes)
+  - Simplified reporting: NFC- reporting delegated to FC counterparty
+  - Suspended clearing obligation for pension scheme arrangements (extended multiple times)
+- **Reporting enhancements** (RTS/ITS applicable from 29 April 2024):
+  - Alignment with CPMI-IOSCO global standards for data elements
+  - Introduction of Unique Transaction Identifier (UTI), Unique Product Identifier (UPI), Legal Entity Identifier (LEI)
+  - ISIN required for derivatives traded on regulated markets, MTFs, OTFs, and SIs under MiFIR; UPI for remaining OTC derivatives
+  - Enhanced data quality, validation, and reconciliation at trade repositories
+
+#### 2.1.4 EMIR 3.0 -- Regulation (EU) 2024/2987
+- **Adopted**: 27 November 2024; **Published in OJ**: 4 December 2024 (OJ L, 2024/2987)
+- **In force**: 24 December 2024
+- **Objective**: reduce excessive EU exposures to third-country CCPs, improve efficiency of EU clearing markets
+- **Key provisions**:
+  - **Active Account Requirement (AAR)**: EU counterparties must maintain an active clearing account at an EU-authorized CCP for certain derivatives of substantial systemic importance (primarily euro-denominated interest rate derivatives, short-term interest rate derivatives, CDS)
+  - Three operational conditions to ensure accounts are genuinely active and functional, including stress testing
+  - Representativeness obligation for the most active counterparties
+  - Reporting obligations to assess AAR compliance (reporting commenced 25 June 2025)
+  - ESMA required to develop RTS within six months of entry into force
+  - ESMA published final report on AAR in June 2025; consultation on draft RTS on participation requirements in October 2025
+  - **Revised clearing thresholds**: new methodology focusing on uncleared OTC derivatives activity, ensuring proportionate clearing obligation
+  - **Enhanced intragroup exemptions framework**: permanent regime replacing temporary extensions
+  - Amendments to CRR (Regulation 575/2013) and MMFR (Regulation 2017/1131) to incentivize EU clearing
+
+#### 2.1.5 Clearing Obligation Categories
+Classes of OTC derivatives subject to mandatory clearing:
+
+| Asset Class | Products | Delegated Regulation |
+|-------------|----------|---------------------|
+| **Interest Rate Derivatives (IRS)** | Fixed-to-float IRS, basis swaps, FRAs, OIS in EUR, GBP, USD, JPY, NOK, PLN, SEK | (EU) 2015/2205 |
+| **Credit Derivatives (CDS)** | Untranched European index CDS (iTraxx Europe Main, iTraxx Europe Crossover) | (EU) 2016/592 |
+
+#### 2.1.6 Clearing Thresholds (Pre-EMIR 3.0 Review)
+
+| Derivative Class | NFC Threshold | FC Threshold |
+|-----------------|---------------|--------------|
+| Credit derivatives | EUR 1 billion | Subject to aggregate calculation |
+| Equity derivatives | EUR 1 billion | Subject to aggregate calculation |
+| Interest rate derivatives | EUR 3 billion | Subject to aggregate calculation |
+| FX derivatives | EUR 3 billion | Subject to aggregate calculation |
+| Commodity derivatives | EUR 4 billion | Subject to aggregate calculation |
+
+- Under EMIR 3.0, ESMA consulted on revised clearing thresholds (April 2025) with a final report published in February 2026, introducing a dual-threshold approach assessing both uncleared positions and aggregate OTC exposure for FCs
+
+### 2.2 MiFID II / MiFIR (Derivatives Provisions)
+
+#### 2.2.1 MiFID II -- Directive 2014/65/EU
+- **In force**: 3 January 2018
+- **Derivatives-specific provisions**:
+  - **Organized Trading Facilities (OTFs)**: new venue category specifically for non-equity instruments including derivatives; operator discretion in execution
+  - **Position limits for commodity derivatives** (Article 57): NCAs must establish limits on the net position a person can hold in commodity derivatives traded on trading venues and economically equivalent OTC (EEOTC) contracts
+    - Critical/significant contracts: net open interest above 300,000 lots over one year
+    - ESMA coordinates and can intervene on NCA-set limits
+  - **Position management controls**: trading venues must apply position management controls
+  - **Position reporting**: trading venues must publish weekly aggregate position reports by participant category
+  - **Hedging exemptions**: NCAs can grant exemptions from position limits for bona fide hedging activities
+  - **Ancillary activity exemption**: non-financial entities dealing in commodity derivatives as ancillary to their main business may be exempt from MiFID II authorization (revised methodology under MiFID II review)
+- **MiFID II Review**: transposition deadline for all changes: 29 September 2025
+  - December 2024: ESMA proposed extending position monitoring and accountability levels to emission allowance derivatives
+
+#### 2.2.2 MiFIR -- Regulation (EU) No 600/2014
+- **Trading obligation**: standardized OTC derivatives subject to the clearing obligation must be traded on regulated markets, MTFs, OTFs, or equivalent third-country venues
+- **Pre-trade transparency**: bid/offer prices and depth of trading interest for derivatives on trading venues (with waivers for large-in-scale orders and package orders)
+- **Post-trade transparency**: price, volume, and time of transactions in derivatives, with deferred publication regimes for large-in-scale and illiquid instruments
+- **Systematic internalisers**: transparency obligations for SIs dealing in derivatives
+- **Transaction reporting**: derivatives transactions reported to NCAs under Article 26
+
+#### 2.2.3 MiFIR Review -- Regulation (EU) 2024/791
+- **Adopted**: 2024; amends Regulation (EU) No 600/2014
+- **Key changes for derivatives**:
+  - **Consolidated Tape Provider (CTP) for OTC derivatives**: ESMA authorized to select, authorize, and supervise CTPs; selection procedure for OTC derivatives CTP launched 5 January 2026 (submission deadline: 11 February 2026)
+  - Revised pre- and post-trade transparency requirements for derivatives: balance between transparency and liquidity provider protection
+  - Static thresholds replacing dynamic calculations for derivatives transparency
+  - Single application date across amended RTS for derivatives
+  - Removal of derivatives transparency reporting to ESMA (simplification)
+  - ESMA submitted final report on derivatives transparency and CTP input/output to Commission on 11 December 2025
+  - **Payment for Order Flow (PFOF)**: prohibition, with transitional period
+  - Enhanced data quality requirements
+
+### 2.3 Other Relevant Regulations
+
+#### 2.3.1 MAR -- Market Abuse Regulation (EU) No 596/2014
+- Extends market abuse framework to derivatives: insider dealing and market manipulation provisions apply to derivatives whose underlying is a financial instrument admitted to trading
+- Explicitly bans benchmark manipulation (post-LIBOR scandal reforms)
+- Applies to commodity derivatives and related spot commodity contracts
+- Cross-market surveillance obligations: trading venues must monitor for abuse across related derivatives and underlying markets
+- Reinforced investigative and sanctioning powers for NCAs
+
+#### 2.3.2 CRR / CRD (Capital Requirements)
+- **CRR** -- Regulation (EU) No 575/2013 (as amended by CRR II/III):
+  - Counterparty credit risk framework for derivatives: SA-CCR (Standardised Approach for Counterparty Credit Risk) mandatory from June 2021
+  - Credit Valuation Adjustment (CVA) risk capital charge
+  - Favorable capital treatment for centrally cleared derivatives (lower risk weights for CCP exposures)
+  - EMIR 3.0 amendments to CRR incentivize EU clearing through adjusted capital requirements
+- **CRD** -- Directive 2013/36/EU: governance and internal control requirements applicable to banks' derivatives activities
+
+#### 2.3.3 SFTR -- Securities Financing Transactions Regulation (EU) 2015/2365
+- Reporting obligation for securities financing transactions (repos, securities lending, margin lending) to trade repositories
+- Transparency of re-hypothecation/reuse of collateral received under derivatives transactions
+- Overlaps with EMIR reporting for certain collateral-related transactions
+- Trade repository infrastructure shared with EMIR
+
+#### 2.3.4 BMR -- Benchmarks Regulation (EU) 2016/1011
+- Regulates benchmark administrators providing reference rates used in derivatives contracts (e.g., EURIBOR, EONIA successor ESTR)
+- Authorization/registration of benchmark administrators
+- **BMR Review** (political agreement December 2024, published May 2025): from January 2026, scope focused on critical/significant benchmarks, EU Climate Transition and Paris-aligned benchmarks, and certain commodity benchmarks
+- Third-country benchmark regime applicable from 31 December 2025
+- Post-LIBOR transition: ESTR as EU risk-free rate; impact on derivatives referencing legacy benchmarks
+
+#### 2.3.5 MiCA -- Markets in Crypto-Assets Regulation (EU) 2023/1114
+- **Fully applicable**: 30 December 2024
+- Relevant to derivatives where crypto-assets are the underlying
+- Crypto-assets qualifying as financial instruments under MiFID II Annex I Section C fall under existing derivatives regulation
+- Transitional period for existing crypto-asset service providers: until 1 July 2026
+- DAC8 tax transparency rules for crypto-asset transactions: in force 1 January 2026
+
+---
+
+## 3. Position Limits Framework
+
+### 3.1 Legal Basis
+- MiFID II Article 57: NCAs must set position limits on commodity derivatives and emission allowance derivatives
+- MiFID II Article 58: position reporting obligations
+
+### 3.2 Scope
+- **Commodity derivatives** traded on EU trading venues (regulated markets, MTFs, OTFs)
+- **Economically Equivalent OTC Contracts (EEOTC)**: OTC derivatives economically equivalent to exchange-traded commodity derivatives
+- **Emission allowance derivatives**: derivatives on EU ETS emission allowances
+
+### 3.3 Position Limit Setting
+- NCAs set limits based on ESMA methodology:
+  - **Spot month limit**: based on deliverable supply (typically 25% of deliverable supply)
+  - **Other months limit**: based on open interest (typically 25% of open interest)
+- **Critical/significant contracts**: commodity derivatives with net open interest above 300,000 lots; subject to ESMA coordination
+- ESMA can issue opinions on NCA-proposed limits and, in exceptional cases, directly impose or revise limits
+
+### 3.4 Hedging Exemptions
+- NCAs may grant exemptions from position limits for positions that are **objectively measurable as reducing risks** directly related to commercial activity
+- Applicants must demonstrate that positions qualify as hedging under defined criteria
+- Financial entities acting on behalf of NFC hedgers may also benefit from exemptions (under revised framework)
+
+### 3.5 Position Management Controls
+- Trading venues must apply position management controls including:
+  - Monitoring of open positions
+  - Obtaining information from participants about positions (including in EEOTC contracts)
+  - Requiring participants to terminate or reduce positions
+  - Requiring participants to provide liquidity back to the market at an agreed price and volume
+
+### 3.6 Position Reporting
+- Trading venues must publish weekly **Commitment of Traders (CoT)** reports with aggregate positions by participant category
+- Members and participants must report daily positions to the trading venue
+- NCAs receive position data and can share with ESMA
+
+### 3.7 December 2024 Updates
+- ESMA proposed extending general monitoring and accountability level requirements to derivatives on emission allowances
+- MiFID II review changes in position limit framework to be transposed by 29 September 2025
+
+---
+
+## 4. Clearing Obligations
+
+### 4.1 Product Scope
+Products subject to mandatory clearing at authorized/recognized CCPs:
+
+**Interest Rate Swaps (IRS)**:
+- Fixed-to-floating IRS (plain vanilla)
+- Basis swaps
+- Forward Rate Agreements (FRAs)
+- Overnight Index Swaps (OIS)
+- Currencies: EUR, GBP, USD, JPY, NOK, PLN, SEK
+- Reference rates: EURIBOR, LIBOR (legacy), SOFR, SONIA, TONA, ESTR
+
+**Credit Default Swaps (CDS)**:
+- Untranched iTraxx Europe Main (Series 17 onwards, 5-year tenor)
+- Untranched iTraxx Europe Crossover (Series 17 onwards, 5-year tenor)
+
+### 4.2 Counterparty Categories and Phase-In
+The clearing obligation was phased in based on counterparty type:
+
+| Category | Description | IRS Phase-In | CDS Phase-In |
+|----------|-------------|--------------|--------------|
+| **Category 1** | Clearing members of at least one CCP for relevant class | 21 June 2016 | 9 February 2017 |
+| **Category 2** | FCs and AIFs with aggregate notional > EUR 8 billion | 21 December 2016 | 9 August 2017 |
+| **Category 3** | FCs and AIFs not in Categories 1 or 2 | 21 June 2017 | 9 February 2018 |
+| **Category 4** | NFC+ (non-financial counterparties above clearing thresholds) | 21 December 2018 | 9 May 2019 |
+
+### 4.3 Frontloading
+- **Eliminated** under EMIR Refit (Regulation 2019/834): contracts entered into after notification but before the clearing obligation takes effect are no longer required to be retrospectively cleared
+
+### 4.4 Intragroup Exemptions
+- OTC derivative contracts between entities within the same group may be exempted from the clearing obligation (Article 3 of EMIR)
+- **Conditions**:
+  - Both counterparties are included in the same consolidation
+  - Both are subject to appropriate centralized risk evaluation, measurement, and control procedures
+  - The parent undertaking is not a FC
+- **Third-country intragroup exemptions**: require equivalence decision for the third-country counterparty's jurisdiction
+  - Temporary exemption regime extended multiple times (ESAs proposed three-year extension during EMIR review)
+  - EMIR 3.0 establishes a more permanent intragroup exemptions framework
+
+### 4.5 Pension Scheme Arrangements
+- Temporary exemption from the clearing obligation for pension scheme arrangements (PSAs)
+- Multiple extensions granted; EMIR 3.0 addresses the long-term treatment of PSAs
+
+### 4.6 EMIR 3.0 Changes to Clearing
+- Revised clearing thresholds with dual assessment (uncleared positions + aggregate OTC exposure for FCs)
+- Active Account Requirement drives additional clearing volume to EU CCPs
+- Enhanced proportionality for smaller counterparties
+
+---
+
+## 5. CCP Supervision & Authorization
+
+### 5.1 EU CCP Authorization (Title III of EMIR)
+- CCPs must be authorized by their home NCA, with involvement of a **college of supervisors** including:
+  - Home NCA (lead supervisor)
+  - ESMA
+  - Relevant central banks of issue
+  - NCAs of the most relevant clearing members
+  - NCAs of trading venues served by the CCP
+- **Authorization requirements**:
+  - Minimum capital: EUR 7.5 million
+  - Governance: independent risk committee, senior management requirements
+  - Risk management: margining framework (initial margin, variation margin, default fund), stress testing, back testing
+  - Default waterfall: defaulter's margins -> defaulter's default fund contribution -> CCP's dedicated own resources (skin-in-the-game) -> non-defaulting members' default fund contributions
+  - Segregation and portability of client positions and collateral
+  - Business continuity and disaster recovery
+  - Interoperability arrangements (subject to NCA/ESMA approval)
+- **Major EU CCPs**: Eurex Clearing (Germany), LCH SA (France), CC&G (Italy), BME Clearing (Spain), ICE Clear Netherlands, European Commodity Clearing (Germany)
+
+### 5.2 Third-Country CCP Recognition
+- Third-country CCPs must be recognized by ESMA to provide clearing services to EU members/venues
+- **Prerequisites**:
+  - European Commission equivalence decision for the third country's regulatory framework
+  - Cooperation arrangement between ESMA and the third-country authority
+  - CCP authorized in its home jurisdiction
+- **Tiering determination** (introduced by EMIR 2.2):
+  - **Tier 1**: non-systemically important; recognized subject to ongoing compliance with home-country rules
+  - **Tier 2**: systemically important (or likely to become so) for EU/Member State financial stability
+    - Must comply with relevant EMIR requirements (or comparable compliance framework)
+    - Subject to direct ESMA supervision: risk model review, stress testing, liquidity monitoring, annual reviews
+    - ESMA can propose remedial actions to preserve EU financial stability
+- As of January 2026, ESMA has recognized CCPs from multiple jurisdictions (US, UK, Japan, Hong Kong, Singapore, Australia, and others)
+
+### 5.3 Brexit Implications for UK CCPs
+- Post-Brexit (1 January 2021): UK CCPs became third-country CCPs under EMIR
+- **Key UK CCPs recognized by ESMA**:
+  - **LCH Ltd** (London): Tier 2 -- dominant in euro-denominated IRS clearing
+  - **ICE Clear Europe Ltd**: Tier 2 -- significant CDS and energy derivatives clearing
+  - **LME Clear Ltd**: Tier 1 -- metals derivatives
+- **Equivalence timeline**:
+  - Initial temporary equivalence: to 30 June 2022
+  - Extended to 30 June 2025
+  - **Latest extension** (January 2025): extended to **30 June 2028** (three-year extension)
+  - Purpose: provide implementation time for EMIR 3.0 measures to reduce reliance on UK CCPs
+- Central policy tension: EU firms heavily rely on LCH Ltd for euro IRS clearing, but EU policy aims to repatriate clearing to EU CCPs (Eurex, LCH SA)
+
+### 5.4 EMIR 3.0 Active Account Requirement
+- EU counterparties subject to the clearing obligation for derivatives of substantial systemic importance must:
+  - Open and maintain an active account at an EU-authorized CCP
+  - Clear a representative proportion of their relevant derivatives through this account
+  - Ensure the account is operationally functional (including participation in stress tests)
+- Applies primarily to: euro-denominated IRS, short-term interest rate derivatives, certain CDS classes
+- Phased implementation with reporting from June 2025
+- ESMA developing detailed RTS on operational conditions, representativeness, and reporting
+
+---
+
+## 6. Reporting Requirements
+
+### 6.1 EMIR Trade Reporting (Article 9)
+- **Scope**: all derivative contracts (OTC and exchange-traded) must be reported to an EU-registered trade repository (TR)
+- **Reporting parties**:
+  - Both counterparties must report (dual-sided reporting)
+  - Under EMIR Refit: FC responsible for reporting on behalf of NFC- counterparty
+  - Reporting can be delegated to the counterparty, CCP, or third-party service provider
+- **Timeline**: reported no later than T+1 (one working day after execution, modification, or termination)
+- **Content**: counterparty data, contract data, valuation data, collateral data
+
+### 6.2 Key Identifiers
+| Identifier | Purpose | Standard |
+|-----------|---------|----------|
+| **LEI** (Legal Entity Identifier) | Identify counterparties | ISO 17442 (GLEIF system) |
+| **UTI** (Unique Transaction Identifier) | Unique identification of each transaction | CPMI-IOSCO / ISO 23897 |
+| **UPI** (Unique Product Identifier) | Product classification for OTC derivatives not identified by ISIN | CPMI-IOSCO / ANNA DSB |
+| **ISIN** | Identify derivatives traded on RM, MTF, OTF, SI | ISO 6166 |
+
+### 6.3 EMIR Refit Reporting Changes (Applicable 29 April 2024)
+- Alignment with CPMI-IOSCO global data standards (CDE -- Critical Data Elements)
+- Expanded reportable fields (from ~129 to ~203 fields)
+- XML reporting format based on ISO 20022
+- Enhanced data quality requirements: validation rules at TR level, reconciliation processes
+- Lifecycle event reporting standardized
+- Pairing and matching requirements between counterparties
+- ESMA Guidelines on EMIR Refit reporting published October 2023
+
+### 6.4 Trade Repositories
+- Must be registered with ESMA (or recognized if third-country TR)
+- Responsibilities: data collection, validation, reconciliation, secure storage, access provision to authorities
+- **EU-registered TRs** include: DTCC Derivatives Repository (DDRL), Regis-TR, UnaVista (LSEG), KDPW (Poland), CME TR
+- TRs must provide data access to relevant authorities (NCAs, ESMA, ECB, ESRB)
+
+### 6.5 EMIR 3.0 Reporting Obligations
+- New reporting on AAR compliance to ESMA (from 25 June 2025)
+- ESMA public statement on upcoming EMIR 3 reporting obligations (December 2025)
+- Enhanced reporting on clearing volumes at EU vs. third-country CCPs
+
+### 6.6 MiFID II Position Reporting
+- Daily position reports from members to trading venues
+- Weekly aggregate Commitment of Traders reports published by trading venues
+- Position data shared with NCAs and ESMA
+
+### 6.7 MiFIR Transaction Reporting (Article 26)
+- Investment firms report derivatives transactions to their NCA
+- Includes detailed client, decision-maker, and execution information
+- Data shared across NCAs and with ESMA for cross-border surveillance
+
+---
+
+## 7. Cross-Border Framework
+
+### 7.1 Third-Country CCP Recognition
+- ESMA recognition process requires:
+  1. Commission equivalence decision for the third country's CCP regulatory framework
+  2. Cooperation arrangement (MoU) between ESMA and third-country authority
+  3. Application by the third-country CCP
+  4. ESMA tiering assessment (Tier 1 or Tier 2)
+- Recognized third-country CCPs listed on ESMA register (updated regularly)
+
+### 7.2 Equivalence Decisions
+- Commission has adopted equivalence decisions for CCP frameworks of multiple jurisdictions:
+  - **Full equivalence**: USA (CFTC-regulated), Japan, Hong Kong, Singapore, Australia, Brazil, Canada, Mexico, South Korea, India, and others
+  - **UK**: time-limited equivalence extended to 30 June 2028
+- Equivalence assessed on an outcomes-based approach (not line-by-line regulatory matching)
+- Commission can withdraw equivalence decisions if conditions change
+
+### 7.3 Third-Country Trading Venue Recognition
+- Under MiFIR trading obligation, equivalence decisions allow derivatives to be traded on third-country venues deemed equivalent
+- Limited equivalence decisions adopted to date for trading venues
+
+### 7.4 IOSCO Coordination
+- EU framework aligned with IOSCO Principles for Financial Market Infrastructures (PFMIs)
+- CPMI-IOSCO standards for data harmonization (UTI, UPI, CDE) adopted in EMIR Refit
+- IOSCO coordination on cross-border CCP supervision and recovery/resolution
+
+### 7.5 Post-Brexit UK-EU Derivatives Landscape
+- **UK equivalence for EU venues**: UK (FCA) granted equivalence to EU regulated markets for trading obligation purposes
+- **EU equivalence for UK CCPs**: time-limited to 30 June 2028
+- **Divergence risks**:
+  - UK developed independent derivatives regulation (UK EMIR, UK MiFIR)
+  - Differences in clearing obligation scope, reporting formats, and CCP requirements are emerging
+  - UK onshored EU regulations with subsequent UK-specific amendments
+- **Market impact**: fragmented liquidity in some derivatives markets; dual reporting obligations for cross-border participants
+- **Memoranda of Understanding**: ESMA-FCA cooperation arrangements for CCP supervision, TR data sharing, and market surveillance
+
+---
+
+## 8. Recent Developments (2023--2026)
+
+### 8.1 EMIR 3.0 Implementation Timeline
+| Date | Milestone |
+|------|-----------|
+| December 2022 | Commission legislative proposal for EMIR review (EMIR 3.0) |
+| November 2024 | European Parliament and Council adoption |
+| 4 December 2024 | Publication in Official Journal (Regulation 2024/2987) |
+| 24 December 2024 | Entry into force |
+| 25 June 2025 | AAR reporting obligations commence |
+| June 2025 | ESMA final report on AAR |
+| October 2025 | ESMA consultation on draft RTS for participation requirements |
+| December 2025 | ESMA public statement on upcoming EMIR 3 reporting obligations |
+| February 2026 | ESMA final report on clearing thresholds RTS |
+| 2026-2027 | Full AAR operational requirements expected to apply |
+
+### 8.2 Active Account Requirement Debates
+- Significant industry debate on scope and calibration of the AAR
+- Concerns about market fragmentation and increased costs for EU participants
+- LCH Ltd (London) dominates euro-denominated IRS clearing (~90%+ market share historically)
+- EU CCPs (especially Eurex) investing in capacity and incentive programs to attract clearing volumes
+- Ongoing discussions on whether representativeness thresholds are set at appropriate levels
+- Potential impact on clearing liquidity and pricing for EU end-users
+
+### 8.3 Consolidated Tape Provider (CTP)
+- MiFIR Review establishes framework for CTPs across asset classes
+- **OTC derivatives CTP**: ESMA launched selection procedure on 5 January 2026
+  - Submission deadline: 11 February 2026
+  - ESMA to select, authorize, and supervise the CTP
+- CTP expected to consolidate post-trade data for OTC derivatives, enhancing price transparency
+- Revenue-sharing model between data contributors and CTP
+
+### 8.4 ESG Derivatives Regulation
+- Growing market for ESG-linked derivatives (sustainability-linked swaps, carbon derivatives, green bond futures)
+- EU ETS emission allowance derivatives subject to MiFID II position limit regime
+- **EU Taxonomy Regulation** and **SFDR**: increasing focus on ESG-related disclosure for derivatives portfolios
+- **ESG Rating Regulation**: application date 2 July 2026; ESMA developing supporting technical standards
+- Carbon border adjustment mechanism (CBAM) may generate new derivatives products
+- ESMA monitoring ESG-related greenwashing risks in derivatives markets
+
+### 8.5 Digital / Crypto Derivatives
+- **MiCA** (fully applicable December 2024): framework for crypto-assets; crypto-assets qualifying as financial instruments fall under MiFID II/EMIR
+- Derivatives on crypto-assets subject to same clearing, reporting, and transparency requirements as traditional derivatives (where underlying qualifies under MiFID II)
+- **DLT Pilot Regime** (Regulation 2022/858): sandbox for trading and settlement of DLT-based financial instruments, including derivatives (limited scope)
+- **DAC8**: tax transparency for crypto-asset transactions from 1 January 2026
+- ESMA guidelines on qualification of crypto-assets as financial instruments to ensure consistent NCA interpretation
+
+### 8.6 CCP Recovery and Resolution
+- **CCPRRR** -- CCP Recovery and Resolution Regulation (EU) 2021/23:
+  - Recovery plans, resolution plans, and resolution authorities for EU CCPs
+  - Resolution tools: position allocation, forced contract termination, write-down of equity/debt
+  - Resolution fund contributions from clearing members
+- Ongoing ESMA work on CCP stress testing and resolution readiness
+
+### 8.7 ESMA 2026 Work Programme (Key Derivatives Items)
+- Continued Tier 2 CCP supervision (risk model monitoring, stress testing, liquidity and operational risk)
+- EMIR 3.0 RTS development and implementation
+- MiFIR Review technical standards finalization
+- CTP selection and authorization process
+- Simplification of financial transaction reporting (call for evidence issued June 2025)
+
+---
+
+## 9. Comparison with Korea
+
+### 9.1 Regulatory Architecture
+
+| Aspect | EU | Korea |
+|--------|-----|-------|
+| **Primary regulator** | ESMA (coordination) + NCAs (national) | FSC (Financial Services Commission) + FSS (Financial Supervisory Service) |
+| **Exchange operator** | Multiple (Eurex, Euronext, ICE, Nasdaq Nordic, etc.) | KRX (Korea Exchange) -- single integrated exchange |
+| **CCP model** | Multiple authorized CCPs (Eurex Clearing, LCH SA, etc.) | KRX CCP -- single CCP for exchange-traded and OTC derivatives |
+| **Legislative framework** | EMIR, MiFID II/MiFIR (EU regulations/directives) | Financial Investment Services and Capital Markets Act (FSCMA, amended March 2013) |
+| **Supervisory approach** | Multi-layered (ESMA + 27 NCAs + ECB) | Centralized (FSC/FSS) |
+
+### 9.2 Position Limit Approaches
+
+| Aspect | EU | Korea |
+|--------|-----|-------|
+| **Legal basis** | MiFID II Article 57 | FSCMA + KRX rules |
+| **Scope** | Commodity and emission allowance derivatives | All listed derivatives (equities, indices, commodities) |
+| **Setting authority** | NCAs (ESMA coordination) | KRX (with FSC/FSS oversight) |
+| **Methodology** | Based on deliverable supply and open interest | Based on open interest and notional value |
+| **Hedging exemptions** | NCA-granted exemptions | KRX-granted exemptions |
+| **Speculative limits** | Per-contract limits | Per-account and per-product limits |
+
+### 9.3 Clearing Mandates Comparison
+
+| Aspect | EU | Korea |
+|--------|-----|-------|
+| **OTC clearing mandate** | Standardized IRS and CDS (phased in 2016-2019) | KRW IRS, CRS (introduced 2014) |
+| **CCP** | Multiple EU CCPs + recognized third-country CCPs | KRX CCP (single) |
+| **Counterparty scope** | FC, NFC+ (above clearing thresholds) | Financial institutions (banks, securities firms) |
+| **Clearing thresholds** | Yes (asset-class specific notional thresholds) | Yes (transaction volume-based) |
+| **G20 alignment** | Full (EMIR implements G20 Pittsburgh commitments) | Full (FSCMA amendments implement G20 commitments) |
+| **Trade reporting** | Dual-sided to TRs | To KRX TR (Korea Trade Repository) |
+| **Risk mitigation (uncleared)** | Bilateral margining, confirmation, reconciliation, compression | Bilateral margining, similar risk mitigation requirements |
+
+### 9.4 Key Structural Differences
+- **Market structure**: EU has a fragmented multi-venue, multi-CCP landscape vs. Korea's centralized single-exchange model under KRX
+- **Regulatory complexity**: EU's multi-layered framework (EU-level regulations + national transposition + NCA implementation) vs. Korea's streamlined FSC/FSS-KRX structure
+- **Cross-border dimension**: EU framework heavily focused on third-country CCP recognition and equivalence (due to Brexit and global interconnection); Korea's framework is primarily domestic-focused with international cooperation through IOSCO/FSB
+- **Active account concept**: EU's EMIR 3.0 AAR has no direct Korean equivalent (KRX CCP is the domestic monopoly clearing provider)
+- **Reporting standards**: Both aligned with CPMI-IOSCO global data standards (UTI, UPI, LEI)
+
+---
+
+## References
+
+### Primary Legislation (EUR-Lex)
+- [EMIR -- Regulation (EU) No 648/2012](https://eur-lex.europa.eu/eli/reg/2012/648/oj/eng)
+- [EMIR 3.0 -- Regulation (EU) 2024/2987](https://eur-lex.europa.eu/eli/reg/2024/2987/oj/eng)
+- [MiFIR Review -- Regulation (EU) 2024/791](https://eur-lex.europa.eu/eli/reg/2024/791/oj/eng)
+
+### ESMA
+- [EMIR Reporting](https://www.esma.europa.eu/data-reporting/emir-reporting)
+- [Clearing Obligation and Risk Mitigation Techniques under EMIR](https://www.esma.europa.eu/post-trading/clearing-obligation-and-risk-mitigation-techniques-under-emir)
+- [Third-Country CCPs](https://www.esma.europa.eu/central-counterparties/third-country-ccps)
+- [Clearing Thresholds](https://www.esma.europa.eu/post-trading/clearing-thresholds)
+- [Final Report on EMIR 3 Active Account Requirement](https://www.esma.europa.eu/press-news/esma-news/esma-publishes-final-report-active-account-requirement-under-emir-3)
+- [MiFIR Review Final Report on Derivatives Transparency](https://www.esma.europa.eu/press-news/esma-news/esma-finalises-technical-standards-derivatives-transparency-and-otc)
+- [Consolidated Tape Providers](https://www.esma.europa.eu/esmas-activities/markets-and-infrastructure/consolidated-tape-providers)
+- [Commodity Derivatives -- Position Limits (MiFID II Article 57)](https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/mifid-ii/article-57-position-limits-commodity)
+- [MiCA -- Markets in Crypto-Assets Regulation](https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica)
+- [ESMA 2026 Annual Work Programme](https://www.esma.europa.eu/sites/default/files/2025-10/ESMA22-50751485-1604_Annual_Work_Programme_2026.pdf)
+
+### European Commission
+- [Derivatives / EMIR -- Finance](https://finance.ec.europa.eu/financial-markets/financial-markets-policy/post-trade-services/derivatives-emir_en)
+- [UK CCP Equivalence Extension (January 2025)](https://finance.ec.europa.eu/news/commission-extends-time-limited-equivalence-uk-central-counterparties-2025-01-31_en)
+- [Benchmarks Regulation](https://finance.ec.europa.eu/news/benchmarks-2025-01-30_en)
+- [Crypto-Assets](https://finance.ec.europa.eu/digital-finance/crypto-assets_en)
+
+### Korea
+- [KRX OTC Derivatives Clearing](https://global.krx.co.kr/contents/GLB/02/0202/0202030201/GLB0202030201.jsp)
+- [FSC Press Release on OTC Clearing](https://www.fsc.go.kr/eng/pr010101/22219)

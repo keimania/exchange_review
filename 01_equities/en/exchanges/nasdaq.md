@@ -1,0 +1,383 @@
+# NASDAQ Stock Market (NASDAQ)
+
+> **Last Updated:** 2026-04-03
+> **Research Tier:** Tier 1
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | The Nasdaq Stock Market LLC |
+| Abbreviation | NASDAQ (National Association of Securities Dealers Automated Quotations) |
+| Website | https://www.nasdaq.com |
+| Year Established | 1971 (first trades on February 8, 1971) |
+| Country / City | United States / New York, NY (headquarters); Carteret, NJ (primary data center) |
+| Ownership Structure | Publicly traded (NDAQ on Nasdaq) |
+| Parent Company / Group | Nasdaq, Inc. (market cap ~$48.5 billion as of early 2026) |
+| Regulatory Authority | U.S. Securities and Exchange Commission (SEC); self-regulatory organization (SRO) with FINRA oversight |
+| Market Capitalization (listed companies) | ~$42.2 trillion (November 2025) [estimated] |
+| Total Listed Instruments | 4,075 companies (as of December 31, 2024): 1,383 on Global Select Market, 1,366 on Global Market, 1,326 on Capital Market |
+| Average Daily Trading Volume | ~9 billion shares [estimated, 2025] |
+| Average Daily Trading Value | ~$300-400 billion [estimated] |
+
+### Key Historical Milestones
+- **1971:** NASDAQ launched on February 8 as the world's first electronic stock market, providing automated quotations for over 2,500 OTC securities. Trades still executed by telephone.
+- **1980:** Apple Computer IPO listed on NASDAQ.
+- **1984:** Electronic execution introduced, replacing telephone-based trading.
+- **1985:** NASDAQ-100 Index launched, tracking the 100 largest non-financial companies.
+- **1986:** Microsoft IPO listed on NASDAQ.
+- **1991:** NASDAQ accounted for approximately 46% of U.S. securities trading volume.
+- **1992:** NASDAQ and London Stock Exchange formed the first intercontinental linkage.
+- **1998:** NASDAQ merged with the American Stock Exchange (AMEX).
+- **2000:** NASDAQ Composite reached peak of 5,048 during the dot-com bubble (March 10, 2000).
+- **2002-2003:** SuperMontage launched, integrating a public limit order book with market maker quotations.
+- **2005:** NASDAQ converted from an industry-owned organization to a publicly traded company; acquired Instinet for $1.9 billion, retaining the Inet ECN.
+- **2006:** Began operating as a national securities exchange (registered with SEC).
+- **2007:** Acquired OMX Group, forming NASDAQ OMX Group.
+- **2013:** Acquired Thomson Reuters' IR, PR, and multimedia businesses.
+- **2016:** Company rebranded as Nasdaq, Inc.
+- **2023:** Acquired Adenza (risk management and regulatory technology) for $10.5 billion.
+- **2024:** Launched Nasdaq Eqlipse, the fourth generation of its marketplace technology platform.
+- **2025:** Announced plans for 24-hour, 5-day-a-week trading (pending SEC approval, target launch H2 2026).
+- **2026 (March):** SEC approved Nasdaq proposal to allow certain stocks to be traded and settled in tokenized form.
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| Nasdaq Global Select Market | Premier tier; largest-cap companies with the highest listing standards | Market cap: avg >$850M (prior 12 months); Revenue: >$90M (prior fiscal year); OR meet earnings/capitalization with cash flow/assets with equity standards. Entry fee: $150,000-$295,000 + $25,000 application fee |
+| Nasdaq Global Market | Mid-tier market for established companies | Entry fee: $325,000; must meet financial, liquidity, and corporate governance standards between Global Select and Capital Market levels |
+| Nasdaq Capital Market | Entry-level tier for small-cap issuers | Market value of listed securities: min $15M; min 300 round lot shareholders; Entry fee: $50,000-$75,000 (based on shares outstanding) + $5,000 application fee |
+
+### 2.2 Trading Sessions
+| Session | Local Time (ET) | UTC (EST/EDT) | Description |
+|---------|----------------|---------------|-------------|
+| Pre-Market | 4:00 AM - 9:30 AM ET | 09:00 - 14:30 UTC (EST) | Extended hours session; limited order types; lower liquidity |
+| Opening Cross | 9:30 AM ET | 14:30 UTC (EST) | Opening auction; single-price cross; ~4% of daily volume |
+| Regular / Continuous Trading | 9:30 AM - 4:00 PM ET | 14:30 - 21:00 UTC (EST) | Core trading session; full order type availability |
+| Closing Cross | ~3:50 PM - 4:00 PM ET | ~20:50 - 21:00 UTC (EST) | Closing auction; single-price cross; ~16% of daily volume |
+| After-Hours | 4:00 PM - 8:00 PM ET | 21:00 - 01:00 UTC (EST) | Extended hours session; limited order types; lower liquidity |
+
+**Planned change (H2 2026, pending SEC approval):** Expansion to 23-hour trading per weekday. Day session 4:00 AM - 8:00 PM ET, 1-hour maintenance pause (8:00-9:00 PM), Night session 9:00 PM - 4:00 AM ET.
+
+### 2.3 Tick Sizes
+| Price Range | Tick Size |
+|-------------|-----------|
+| Securities priced >= $1.00 | $0.01 (1 cent) |
+| Securities priced < $1.00 | $0.0001 (0.01 cent) |
+
+**Note:** The SEC finalized amendments to Regulation NMS to reduce minimum pricing increments for certain liquid stocks to half-penny ($0.005) increments and lower access fee caps. Sub-penny midpoint executions are permitted for orders providing price improvement.
+
+### 2.4 Lot Sizes
+- **Round lot:** 100 shares (standard)
+- **Odd lot:** Less than 100 shares (odd-lot orders are now included in the NBBO under SEC Rule 612 amendments)
+- **Mixed lot:** Round lot + odd lot combination
+
+### 2.5 Market Maker / Liquidity Provider Programs
+- **Registered Market Makers:** Multiple competing market makers per security (unlike NYSE's single DMM model). Required to maintain continuous two-sided quotes (bid and offer) during exchange hours.
+- **Qualified Market Maker (QMM) Program:** Market makers maintaining NBBO quotes in 1,000+ securities receive additional rebates ($0.0001-$0.0002/share) and discounted remove fees ($0.00290-$0.00295/share).
+- **Enhanced Market Quality Program (EMQP):** Members actively quoting at the NBBO in a broad set of securities who meet monthly quoting requirements qualify for lump sum payments.
+- **Supplemental Liquidity Providers:** Electronic high-volume members incentivized to add liquidity.
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+- **Opening Cross (9:30 AM ET):** Aggregates all pre-market orders and continuous book orders to determine a single opening price per security. The Net Order Imbalance Indicator (NOII) is disseminated prior to the cross, providing supply/demand transparency via Nasdaq TotalView. Fully electronic with no human intervention. Processes millions of orders in microseconds.
+- **Closing Cross (~4:00 PM ET):** Determines the official closing price for Nasdaq-listed securities. NOII disseminated beginning at 3:50 PM ET. Handles approximately 16% of daily Nasdaq volume. This price is used for mutual fund NAV calculations, index calculations, and settlement.
+- **IPO/Halt Cross:** Used for IPO price discovery and resumption of trading after halts. Separate NOII disseminated for imbalance information.
+
+### 3.2 Continuous Trading
+- **Order-driven market** with competing market makers providing liquidity.
+- **Price-time priority:** Orders are matched first by price, then by time of entry at the same price level.
+- Supports both displayed and non-displayed (hidden) orders.
+- Midpoint pegging orders available for execution at the midpoint of the NBBO.
+
+### 3.3 Price Discovery
+- Opening and closing crosses are the primary price discovery mechanisms, representing approximately 20% of total daily exchange volume.
+- NOII provides real-time reference prices, paired shares, and imbalance data for informed participation.
+- Continuous trading provides ongoing price discovery throughout the regular session.
+
+---
+
+#ㅌ
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | Nasdaq INET (matching engine); Nasdaq Eqlipse (4th-generation platform, launched 2024) |
+| Vendor / In-house | In-house developed by Nasdaq, Inc. |
+| Architecture | Microservice-based, cloud-ready platform supporting both cloud and on-premise deployment |
+| Matching Engine | Ultra-low latency INET matching engine; price-time priority; multi-asset capable |
+| Round-trip Latency | Market data latency: ~3 microseconds; Order acknowledgment: ~20 microseconds; Door-to-door: ~14 microseconds (fastest production); 99th percentile: ~78 microseconds; 99.9th percentile: ~150 microseconds [Source: OUCH measurements, SIX X-Stream INET benchmarks] |
+| Order Processing Capacity | Supports millions of orders per day; designed to handle peak volumes exceeding 10x average |
+| Messages Per Second | Not officially disclosed; industry estimates suggest capacity in the millions of messages per second [unverified] |
+| Launch Year | INET: 2006 (based on Instinet/Inet ECN acquired 2005); Eqlipse platform: 2024 |
+
+### System History
+| Period | System | Notes |
+|--------|--------|-------|
+| 1971-1982 | Original NASDAQ Automated Quotation System | Quote-only system; no execution capability; CRT terminals |
+| 1982-1990s | SOES (Small Order Execution System) | First electronic execution; mandatory for market makers |
+| 2002-2006 | SuperMontage | Integrated limit order book with market maker quotes; replaced legacy systems |
+| 2006-2024 | INET | Acquired from Instinet; sub-millisecond latency; became the core matching engine across all Nasdaq markets globally |
+| 2024-Present | Nasdaq Eqlipse (with INET engine) | Fourth-generation platform; microservice architecture; cloud-ready; "evergreen" quarterly upgrade model; AWS Outposts integration |
+
+### Technology Stack
+- **Matching Engine:** Custom-built INET engine optimized for ultra-low latency; FPGA-accelerated feed processing.
+- **Network:** 10 Gbps and 40 Gbps network connections; 40G Express Connect with <35 nanoseconds switching latency.
+- **Protocol Support:** OUCH (native low-level order entry), FIX (4.0/4.1/4.2), SoupBinTCP (transport layer), ITCH (market data).
+- **Cloud Integration:** AWS partnership; Nasdaq Eqlipse Trading cloud-based platform (launched May 2025 with AWS).
+- **AI Integration:** AI built into Verafin, eVestment, AxiomSL, Calypso, and Surveillance solutions.
+
+### Disaster Recovery / Business Continuity
+- **Primary Data Center:** Equinix NY11, Carteret, NJ (91,413 sq ft; expansion NY11-4 under construction to double capacity).
+- **Disaster Recovery Site:** Equinix CH4, 350 E. Cermak, Chicago, IL (migrated from Ashburn, VA in 2015 for greater regional diversity).
+- **Rationale:** Chicago DR site provides geographic separation from East Coast primary facility to mitigate regional disaster risk (hurricanes, coastal flooding).
+- **Redundancy:** POP (Point of Presence) nodes in multiple financial data centers; redundant high-speed fiber paths.
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+| Protocol | Description | Use Case |
+|----------|-------------|----------|
+| ITCH (TotalView-ITCH 5.0) | Native binary protocol; full order-by-order depth of book data; variable-length messages | Full book reconstruction; algorithmic trading; market microstructure analysis |
+| ITCH FPGA Feed | Hardware-accelerated FPGA version of TotalView-ITCH; broadcast via MoldUDP64 only | Ultra-low latency applications; HFT; requires 10G or 40G connection |
+| SoupBinTCP | Transport layer protocol providing framing, authentication, heartbeats, sequencing, and recovery | Underlying transport for ITCH and OUCH protocols |
+| MoldUDP64 | UDP multicast protocol for market data dissemination | Primary multicast delivery mechanism for ITCH feeds |
+
+### 6.2 Data Levels
+- **Level 1 (Nasdaq Basic):** Best bid/offer (BBO), last sale price, volume. Suitable for retail investors.
+- **Level 2 (Nasdaq TotalView):** Full depth of book; every order at every price level with attribution; includes NOII data for opening/closing crosses. The most comprehensive Nasdaq data product.
+- **Level 3:** Market maker-only view with ability to enter and update quotes (not a separate product; refers to market maker functionality).
+
+### 6.3 Distribution Infrastructure
+- **Direct feeds:** Available via co-location in Carteret, NJ or through Nasdaq POP sites.
+- **SIP (Securities Information Processor):** CTA/CQS for Tape A & B (NYSE-listed); UTP SIP for Tape C (Nasdaq-listed). Provides consolidated national best bid/offer.
+- **Third-party distributors:** Bloomberg, Refinitiv, ICE, and other major data vendors.
+- **Nasdaq Data Link (formerly Quandl):** Platform for accessing financial, economic, and alternative datasets.
+
+### 6.4 Historical Data
+- **Nasdaq Daily Share Volume (NDSV):** Historical daily volume data by symbol.
+- **TotalView-ITCH historical replay:** Available through Nasdaq and third-party providers (e.g., Databento, LOBSTER).
+- **Nasdaq Global Data Services:** Offers historical tick data, end-of-day data, and reference data products.
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+- Open to SEC-registered broker-dealers who have obtained SRO membership.
+- Members must have an established connection to a clearing firm (self-clearing or correspondent clearing arrangement).
+- Categories include: Market Makers, Order Entry Firms, ECN participants.
+- Membership applications reviewed by Nasdaq; subject to ongoing examination and compliance oversight (outsourced to FINRA).
+
+### 7.2 Connection Methods
+- **Direct Connect (10G):** <40 nanoseconds switching latency at Carteret data center.
+- **Express Connect (40G):** <35 nanoseconds switching latency; higher bandwidth for demanding applications.
+- **Extranet providers:** Approved third-party network providers offering managed connectivity.
+- **Service Bureau:** Indirect connection through approved FIX service bureaus.
+- **Nasdaq POP (Point of Presence):** Redundant high-speed fiber handoffs at Equinix NY11 (Carteret) and other strategic financial data centers. Available in 10G and 1G.
+
+### 7.3 Co-location / Proximity Services
+- **Location:** Equinix NY11, Carteret, NJ.
+- **Services:** High-density cabinet hosting within the same facility as Nasdaq matching engines.
+- **Benefits:** Minimized latency; single hand-off for all Nasdaq U.S. markets (Nasdaq, BX, PSX).
+- **Expansion:** NY11-4 facility under construction on the north side of the Carteret campus, doubling available co-location space.
+- **Cloud Integration:** AWS Outposts being incorporated directly into the Carteret core network for hybrid cloud/co-location deployments.
+
+### 7.4 API Protocols
+| Protocol | Direction | Description |
+|----------|-----------|-------------|
+| OUCH | Order Entry | Native low-level binary protocol; highest performance; maximum throughput at cost of flexibility |
+| FIX (4.0/4.1/4.2) | Order Entry | Industry-standard text-based protocol; wider compatibility; slightly higher latency than OUCH |
+| ITCH (TotalView-ITCH 5.0) | Market Data (outbound) | Full depth-of-book data feed; order-by-order updates |
+| RASH | Order Entry | Alternative to OUCH with additional routing strategy support |
+| SoupBinTCP 4.0 | Transport | Provides sequencing, authentication, heartbeats, and recovery for OUCH/ITCH |
+| MoldUDP64 | Transport | UDP multicast delivery for market data feeds |
+
+### 7.5 Certification / Testing
+- **Certification Environment:** Nasdaq provides a dedicated test/certification environment for all connectivity protocols (OUCH, FIX, ITCH).
+- **Conformance Testing:** Required before production access; validates message formatting, order handling, and market data consumption.
+- **Industry Testing:** Participants must complete SEC Rule 15c3-5 (Market Access Rule) compliance testing for risk controls.
+- **Ongoing Testing:** Periodic industry-wide tests (e.g., disaster recovery failover tests, LULD testing).
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+- **Limit Up-Limit Down (LULD):** Price bands set at a percentage above and below the average reference price over the preceding 5-minute period.
+- **Tier 1 NMS Stocks** (S&P 500, Russell 1000, select ETPs):
+  - Price > $3.00: 5% band
+  - Price $0.75 - $3.00: 20% band
+  - Price < $0.75: Lesser of $0.15 or 75%
+- **Tier 2 NMS Stocks** (all other NMS securities):
+  - Price > $3.00: 10% band
+  - Price $0.75 - $3.00: 20% band
+  - Price < $0.75: Lesser of $0.15 or 75%
+- If price reaches the band and does not return within **15 seconds**, a **5-minute trading pause** is triggered.
+
+### 8.2 Circuit Breakers
+| Level | Trigger (S&P 500 decline from prior close) | Halt Duration |
+|-------|---------------------------------------------|---------------|
+| Level 1 | 7% decline | 15-minute halt (once per day; no halt if triggered after 3:25 PM ET) |
+| Level 2 | 13% decline | 15-minute halt (once per day; no halt if triggered after 3:25 PM ET) |
+| Level 3 | 20% decline | Trading halted for remainder of the trading day |
+
+### 8.3 Pre-trade Risk Controls
+- **Maximum Order Value Checks:** Configurable per-order maximum value limits; orders exceeding the limit are rejected.
+- **Maximum Accumulated Value Checks:** Cumulative order value tracking throughout the trading day; new orders rejected when the accumulated limit is reached.
+- **Fat Finger Checks:** Price reasonability checks comparing order price against current last sale / reference price to catch entry errors.
+- **Credit Risk Controls:** Real-time monitoring of execution exposure against pre-set limits.
+- **FIX Drop-on-Disconnect:** Automatic cancellation of all open orders and prevention of new order entry upon connection loss.
+
+### 8.4 Kill Switch
+- **Nasdaq Equity Kill Switch:** Allows participants to establish Risk Exposure levels and receive notifications as execution value and open order value approach those levels.
+- Computes total value of all executions and open orders throughout the trading day.
+- When activated: immediately cancels all current orders and rejects all subsequent orders.
+- Available for manual activation by participant administrators or automated trigger based on pre-configured thresholds.
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+- **Primary Regulator:** U.S. Securities and Exchange Commission (SEC).
+- **Self-Regulatory Organization:** Nasdaq operates as an SRO; market regulation functions outsourced to FINRA under a Regulatory Services Agreement (RSA).
+- **Oversight:** SEC oversight of exchange rules, listing standards, and market structure.
+
+### 9.2 Key Regulations
+- **Securities Exchange Act of 1934:** Foundation statute governing national securities exchanges.
+- **Regulation NMS (2005):** Modernized equity market structure; 14 rules covering trade reporting (601-603), investor protection (604-607), SRO governance (608-609), trading rules including protected quotes, decimal ticks, access fee caps (610-612), and Consolidated Audit Trail (613).
+- **Regulation SHO:** Short selling rules including locate requirements and close-out obligations.
+- **SEC Rule 15c3-5 (Market Access Rule):** Requires broker-dealers with market access to implement risk controls and supervisory procedures.
+- **SEC Rule 606:** Order routing disclosure requirements.
+- **Regulation ATS:** Rules for alternative trading systems operating alongside exchanges.
+
+### 9.3 Market Surveillance
+- **NASDAQ MarketWatch:** Dedicated surveillance unit monitoring trading across Nasdaq, BX, PSX (equities) and NOM, BX Options, PHLX (options).
+- **Real-time surveillance:** Automated detection systems generating alerts on unusual trading activity, potential manipulation, and rule violations.
+- **Post-trade surveillance:** Pattern analysis and investigation of trading anomalies.
+- **Consolidated Audit Trail (CAT):** Industry-wide order tracking system capturing lifecycle of every order across all U.S. exchanges and broker-dealers.
+- **Outsourced examination/investigation:** FINRA conducts member examinations and investigations under the RSA.
+
+### 9.4 Reporting Requirements
+- **Transaction Reporting:** All trades reported to the consolidated tape via CTA (Tape A/B) or UTP (Tape C) within seconds of execution.
+- **OATS (Order Audit Trail System):** Being replaced by CAT; requires recording of all order events.
+- **Short Interest Reporting:** Bi-monthly reporting of short positions by member firms.
+- **Large Trader Reporting (SEC Rule 13h-1):** Firms exceeding thresholds (2 million shares or $20 million in a day, or 20 million shares or $200 million in a month) must register and report.
+- **Form 13F:** Institutional investment managers with >$100 million AUM must report quarterly holdings.
+
+### 9.5 Cross-border Arrangements
+- NASDAQ lists securities of over 500 foreign companies (largest sources: China, Israel, UK, Canada).
+- ADR (American Depositary Receipt) listings enable foreign company access.
+- Nasdaq, Inc. operates exchanges globally (Nordic/Baltic exchanges, Nasdaq First North, others) providing cross-listing opportunities.
+- Information-sharing agreements with foreign regulators through SEC's international cooperation framework (IOSCO MMoU).
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+| Fee Type | Structure | Rate |
+|----------|-----------|------|
+| Displayed Liquidity - Add (Top Tier) | Per share rebate (securities >= $1.00) | ($0.00305) rebate for >1.50% consolidated volume |
+| Displayed Liquidity - Add (Mid Tier) | Per share rebate | ($0.0030) to ($0.0018) depending on tier (Tape A&B); ($0.0013) for smaller participants (Tape C) |
+| Displayed Liquidity - Remove | Per share fee | $0.0030 standard |
+| Non-Displayed / Midpoint - Add | Per share rebate | ($0.0028) for >= 0.30% volume; down to ($0.0010) |
+| Midpoint Extended Life (MELO) - Add | Supplemental credit | Additional ($0.00015) per share |
+| QMM Tier 1 - Add | Additional per share rebate | ($0.0001) additional |
+| QMM Tier 2 - Add | Additional per share rebate | ($0.0002) additional |
+| QMM - Remove | Discounted remove fee | $0.00295 (Tier 1) / $0.00290 (Tier 2) |
+| Pre-Market - Add | Percentage of dollar volume | 0.05% (5 bps) of total dollar volume |
+| Pre-Market - Remove | Percentage of dollar volume | 0.15% (15 bps) of total dollar volume |
+
+**Note:** Rates shown are for securities priced >= $1.00. Sub-dollar securities have separate fee schedules, typically as a percentage of total dollar value. The maker-taker model incentivizes liquidity provision with rebates for adding liquidity and charges for removing it.
+
+### 10.2 Other Fees
+- **Listing Fees:** Application fees ($5,000-$25,000); entry fees ($50,000-$325,000 depending on tier); annual fees based on shares outstanding.
+- **Market Data Fees:** TotalView subscriptions; Nasdaq Basic (Level 1); ITCH feed access fees; co-location data access charges.
+- **Co-location Fees:** Cabinet rental; cross-connects; power and cooling charges at Carteret facility.
+- **Connectivity Fees:** Port fees for OUCH/FIX connections; network access charges (10G/40G).
+- **Regulatory Fees:** Section 31 fees (passed through to members); CAT fees; Trading Activity Fees (TAF).
+- **Technology Solutions Revenue:** Nasdaq Eqlipse licensing to other exchanges; Verafin (anti-financial crime); AxiomSL/Calypso (risk and regulatory reporting).
+- **Index Revenue:** Licensing fees for Nasdaq-100, Nasdaq Composite, and other proprietary indices.
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+- **2022:** Continued INET matching engine optimizations; enhanced FPGA-based market data distribution.
+- **2023:** Acquired Adenza for $10.5 billion, adding Calypso (trading/risk) and AxiomSL (regulatory reporting) to the technology portfolio.
+- **2024:** Launched Nasdaq Eqlipse, the fourth-generation marketplace technology platform with microservice architecture and cloud-ready deployment. Introduced "evergreen" quarterly upgrade model for client exchanges. Calypso XVA Accelerator announced for portfolio risk calculations.
+- **2025 (May):** Nasdaq and AWS launched Nasdaq Eqlipse Trading cloud-based platform; adopted by Johannesburg Stock Exchange, Grupo BMV (Mexico), and Philippine Stock Exchange. Continued AI integration across surveillance and risk platforms.
+- **2026:** NY11-4 co-location expansion under construction in Carteret, NJ. AWS Outposts being integrated into core network infrastructure.
+
+### New Products / Segments
+- **24-Hour Trading Initiative (2025-2026):** Announced plans to extend U.S. equities trading to 23 hours/day, 5 days/week. Day session 4:00 AM - 8:00 PM ET, 1-hour maintenance pause, night session 9:00 PM - 4:00 AM ET. Target launch: H2 2026 pending SEC approval and critical infrastructure readiness (SIP, DTCC).
+- **Tokenized Stock Settlement (March 2026):** SEC approved Nasdaq proposal for certain stocks to be traded and settled in tokenized form.
+- **Nasdaq Data Link:** Expanded alternative data offerings through the platform (formerly Quandl).
+
+### Regulatory Changes
+- **SEC Regulation NMS Amendments (2024):** Adopted rules to reduce minimum tick sizes to half-penny ($0.005) for liquid stocks, lower exchange access fee caps, and accelerate odd-lot transparency requirements.
+- **Consolidated Audit Trail (CAT):** Full implementation and ongoing enhancements for order lifecycle tracking across all U.S. exchanges and broker-dealers.
+- **SEC Market Structure Proposals:** Ongoing review of best execution rules, order competition, and payment for order flow regulations.
+
+### Strategic Initiatives
+- **AI and Machine Learning:** AI integrated across Verafin (anti-financial crime), eVestment (analytics), AxiomSL (regulatory reporting), Calypso (risk management), and Surveillance platforms.
+- **Cross-sell from Adenza Acquisition:** 42 successful cross-sells completed since the Adenza acquisition through year-end 2025; targeting $100 million cross-sell run-rate revenue by year-end 2027.
+- **Nasdaq Eqlipse Global Adoption:** Positioning Eqlipse as a comprehensive technology platform for exchanges worldwide, supporting equities, ETFs, futures, options, bonds, repos, FX, commodities, energy, cryptocurrencies, NFTs, and carbon credits.
+- **Medium-term Revenue Outlook:** Nasdaq raised medium-term revenue outlook at 2026 Investor Day, emphasizing scalable growth driven by diversified business model (Financial Technology, Market Services, and Capital Access Platforms).
+
+---
+
+## Sources
+
+- [Source: NASDAQ Official Website, "Nasdaq Stock Market", accessed 2026-04-03](https://www.nasdaq.com)
+- [Source: Nasdaq, Inc. Investor Relations, "Volume Statistics", accessed 2026-04-03](https://ir.nasdaq.com/financials/volume-statistics)
+- [Source: Nasdaq, Inc. Investor Relations, "2026 Investor Day", accessed 2026-04-03](https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-raises-medium-term-revenue-outlook-and-outlines-strategy)
+- [Source: NasdaqTrader.com, "OUCH Measurements of Order Latency", accessed 2026-04-03](https://www.nasdaqtrader.com/snippets/inet2.html)
+- [Source: NasdaqTrader.com, "Order Types and Modifiers", accessed 2026-04-03](https://www.nasdaqtrader.com/content/productsservices/trading/ordertypesg.pdf)
+- [Source: NasdaqTrader.com, "NASDAQ Trading Fee Schedule", accessed 2026-04-03](https://www.nasdaqtrader.com/Trader.aspx?id=PriceListTrading2)
+- [Source: NasdaqTrader.com, "NASDAQ Co-Location", accessed 2026-04-03](https://www.nasdaqtrader.com/Trader.aspx?id=colo)
+- [Source: NasdaqTrader.com, "TotalView-ITCH 5.0 Specification", accessed 2026-04-03](https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification.pdf)
+- [Source: NasdaqTrader.com, "Opening and Closing Crosses FAQ", accessed 2026-04-03](https://nasdaqtrader.com/content/productsservices/trading/crosses/openclose_faqs.pdf)
+- [Source: NasdaqTrader.com, "OUCH Protocol", accessed 2026-04-03](https://www.nasdaqtrader.com/Trader.aspx?id=OUCH)
+- [Source: NasdaqTrader.com, "FIX Protocol", accessed 2026-04-03](https://www.nasdaqtrader.com/Trader.aspx?id=FIX)
+- [Source: NasdaqTrader.com, "Equity Kill Switch", accessed 2026-04-03](https://www.nasdaqtrader.com/content/EquityKillSwitch.pdf)
+- [Source: NasdaqTrader.com, "LULD FAQ", accessed 2026-04-03](https://www.nasdaqtrader.com/content/MarketRegulation/LULD_FAQ.pdf)
+- [Source: NasdaqTrader.com, "MarketWatch", accessed 2026-04-03](https://www.nasdaqtrader.com/Trader.aspx?id=MarketWatch)
+- [Source: Nasdaq Solutions, "Exchange Matching Engine", accessed 2026-04-03](https://www.nasdaq.com/solutions/fintech/nasdaq-eqlipse/trading-technology/exchange-matching)
+- [Source: Nasdaq Solutions, "Nasdaq Co-location", accessed 2026-04-03](https://www.nasdaq.com/solutions/nasdaq-co-location)
+- [Source: Nasdaq Solutions, "Nasdaq POP", accessed 2026-04-03](https://www.nasdaq.com/solutions/nasdaq-pop)
+- [Source: Nasdaq Solutions, "Pre-Trade Risk Management", accessed 2026-04-03](https://www.nasdaq.com/solutions/pre-trade-risk-management)
+- [Source: Nasdaq Newsroom, "Nasdaq Launches Eqlipse", accessed 2026-04-03](https://www.nasdaq.com/newsroom/nasdaq-launches-eqlipse-fourth-generation-its-marketplace-technology-platform)
+- [Source: Nasdaq Articles, "Global Trading Hours: The Future of Trading", accessed 2026-04-03](https://www.nasdaq.com/articles/nasdaq-global-trading-hours-future-trading)
+- [Source: Nasdaq Articles, "All About LULDs", accessed 2026-04-03](https://www.nasdaq.com/articles/all-about-lulds)
+- [Source: Nasdaq Articles, "Circuit Breakers: Emergency Brakes", accessed 2026-04-03](https://www.nasdaq.com/articles/circuit-breakers:-emergency-brakes-for-the-stock-market)
+- [Source: Nasdaq, Inc. IR, "Nasdaq Migrates DR to Chicago", accessed 2026-04-03](https://ir.nasdaq.com/static-files/ac71c79a-e19c-4d20-bda6-6a814ab2ee50)
+- [Source: CNBC, "Nasdaq moves to near 24-hour trading", December 2025, accessed 2026-04-03](https://www.cnbc.com/2025/12/16/nasdaq-moves-to-near-24-hour-trading-some-say-thats-a-bad-idea.html)
+- [Source: SEC.gov, "Stock Market Circuit Breakers", accessed 2026-04-03](https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-market-circuit-breakers)
+- [Source: SEC.gov, "Tick Size Pilot Program", accessed 2026-04-03](https://www.sec.gov/ticksizepilot)
+- [Source: SEC / Sidley Austin, "SEC Adopts Rules Modifying Minimum Pricing Increments", October 2024, accessed 2026-04-03](https://www.sidley.com/en/insights/newsupdates/2024/10/sec-adopts-rules-modifying-minimum-pricing-increments-access-fee-caps-and-order-transparency)
+- [Source: Wikipedia, "Nasdaq", accessed 2026-04-03](https://en.wikipedia.org/wiki/Nasdaq)
+- [Source: Wikipedia, "Nasdaq, Inc.", accessed 2026-04-03](https://en.wikipedia.org/wiki/Nasdaq,_Inc.)
+- [Source: Corporate Finance Institute, "Nasdaq Global Select Market", accessed 2026-04-03](https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/nasdaq-global-select-market/)
+- [Source: Corporate Finance Institute, "Nasdaq Capital Market", accessed 2026-04-03](https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/nasdaq-capital-market/)
+- [Source: Nasdaq Listing Center, "Initial Listing Guide", accessed 2026-04-03](https://listingcenter.nasdaq.com/assets/initialguide.pdf)
+- [Source: FINRA, "Regulation NMS", accessed 2026-04-03](https://www.finra.org/filing-reporting/regulation-nms)
+- [Source: A-Team Insight, "Nasdaq OMX Pushes Matching Latency Below 40 Microseconds", accessed 2026-04-03](https://a-teaminsight.com/blog/with-six-rollout-nasdaq-omx-pushes-matching-latency-below-40-microseconds/)
+- [Source: Databento, "Nasdaq TotalView-ITCH live data", accessed 2026-04-03](https://databento.com/datasets/XNAS.ITCH)

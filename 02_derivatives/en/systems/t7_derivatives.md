@@ -1,0 +1,473 @@
+# T7 Trading Architecture -- Eurex (Derivatives)
+
+> **Last Updated:** 2026-04-07
+> **System Category:** Trading System
+
+---
+
+## 1. System Overview
+
+| Item | Details |
+|------|---------|
+| System Name | T7 |
+| Operated By | Eurex Frankfurt AG (part of Deutsche Boerse Group) |
+| Purpose | High-performance electronic trading platform for derivatives (futures, options, and complex strategies); also serves cash equities (Xetra), energy (EEX), and other venues on the same technology |
+| Launch Year | December 2012 (Eurex derivatives -- first T7 deployment); July 2017 (Xetra cash market migration) |
+| Current Version | T7 Release 14.0 (introduced 10 November 2025 for Eurex); T7 Release 14.1 planned for 18 May 2026 |
+| Vendor / In-house | In-house (developed by Deutsche Boerse Group technology teams) |
+
+T7 is Deutsche Boerse Group's core trading platform. When first deployed at Eurex in December 2012, it was reported to be **14 times faster than the predecessor system for futures** and **40 times faster for options**. The platform serves as a shared technology base across Eurex (derivatives), Xetra (cash equities), EEX (energy), Boerse Frankfurt, and Nodal Exchange. For derivatives participants, key differentiators include built-in complex strategy trading, implied pricing, mass quoting, and integrated off-book trade entry (T7 Entry Services).
+
+[Source: Eurex, "T7 trading architecture", https://www.eurex.com/t7/, accessed 2026-04-07]
+[Source: Eurex, "T7", https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07]
+[Source: MarketsWiki, "Eurex", https://www.marketswiki.com/wiki/Eurex, accessed 2026-04-07]
+
+### System Evolution
+
+| Period | System / Milestone | Key Changes |
+|--------|-------------------|-------------|
+| 1988 | DTB (Deutsche Terminboerse) founded | Deutsche Boerse's first electronic derivatives exchange; trading began 26 January 1990 with options, then futures |
+| 1993 | DTB GmbH integrated into Deutsche Boerse AG | Organizational consolidation |
+| 1998 | Eurex formed (merger of DTB + SOFFEX) | DTB merged with Swiss Options and Financial Futures Exchange (SOFFEX) to create Eurex; became one of the world's largest derivatives exchanges |
+| 1998--2012 | Eurex System 1 (legacy platform) | Multiple release upgrades; served Eurex throughout its growth phase |
+| December 2012 | T7 Release 1.0 (Eurex) | First T7 deployment at Eurex; stepwise product migration; 14x/40x faster than predecessor (futures/options) |
+| Q1 2018 | Partition-Specific (PS) Gateway | Introduction of PS gateways; significantly lowered latency variability and increased determinism |
+| Q1 2020 | Matching Engine hardware upgrade | New server hardware for matching engines completed |
+| H1 2021 | Consolidated matcher/gateway | PS Gateway and Matching Engine processes consolidated on the same server; faster order processing, improved stability |
+| H2 2021--2022 | Market Data Distributor consolidation | EMDI distributor process consolidated onto matching engine host; reduced failover scenarios, more deterministic data delivery |
+| February 2022 | Partition expansion to 13 | Addition of Partition 12 for Eurex derivatives; redistribution of futures products |
+| November 2023 | T7 Release 12.0 | Major feature release |
+| March 2024 | T7 Release 12.1 | Static volatility interruption enhancements; Self-Match Prevention (SMP) introduced market-wide |
+| November 2024 | T7 Release 13.0 | Feature and performance enhancements |
+| May 2025 | T7 Release 13.1 | Introduced for Eurex |
+| November 2025 | T7 Release 14.0 | Current production release; new web-based GUIs introduced |
+| May 2026 (planned) | T7 Release 14.1 | Simulation period started 23 March 2026; planned production launch 18 May 2026 |
+| 2026--2027 | Web GUI transition | T7 Web Admin (Q2/Q3 2026), T7 Web Trader (not before 2027); phased replacement of Java-based GUIs |
+
+[Source: WallStreetMojo, "Eurex Exchange -- What Is It, Rules, History & Benefits", https://www.wallstreetmojo.com/eurex-exchange/, accessed 2026-04-07]
+[Source: Eurex, "T7 Release 14.0", https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0, accessed 2026-04-07]
+[Source: Eurex, "T7 Release 14.1", https://www.eurex.com/ex-en/support/initiatives/t7release14-1, accessed 2026-04-07]
+[Source: Eurex, "Announcement of T7 Release 14.1", https://www.eurex.com/ex-en/find/circulars/circular-4803582, accessed 2026-04-07]
+[Source: Eurex, "Completion of the T7 matching engine server hardware upgrade", https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-07]
+[Source: Eurex, "T7: Introduction of a consolidated partition-specific Gateway and Matching Engine process", https://www.eurex.com/ex-en/find/circulars/circular-2404602, accessed 2026-04-07]
+[Source: Eurex, "T7: Consolidation of the Market Data Distributor and Matching Engine processes on the Matching Engine Host", https://www.eurex.com/ex-en/find/circulars/T7-Consolidation-of-the-Market-Data-Distributor-and-Matching-Engine-processes-on-the-Matching-Engine-Host-3682674, accessed 2026-04-07]
+
+---
+
+## 2. Architecture
+
+### 2.1 High-Level Design
+
+- **Deployment model:** On-premise, hosted at Equinix FR2 colocation facility in Frankfurt, Germany
+- **Topology:** Partition-based distributed matching architecture -- centralized matching within each partition, but partitions operate independently
+- **Design pattern:** High-performance, event-driven matching with independent product partitions; each partition has its own matching engine, PS gateway, and market data distributor
+- **Multi-venue:** Single platform serving Eurex (derivatives), Xetra (cash equities), EEX (energy), Boerse Frankfurt, and Nodal Exchange
+
+T7 employs a **partition-based architecture** in which the derivatives market is divided into completely independent partitions. Each partition operates its own matching engine and partition-specific gateway. If one partition experiences an issue, other partitions continue operating independently. For Eurex derivatives, there are **13 partitions** (12 XEUR partitions + 1 XEEE partition for EEX). Products are distributed across partitions by asset class -- for example, equity index futures and options, fixed income futures, and commodity derivatives may reside on different partitions.
+
+Since H1 2021, the PS Gateway and Matching Engine processes have been consolidated on the same server, and from late 2021 onward the Market Data Distributor process was also consolidated onto the matching engine host. This consolidation reduces latency, simplifies failover scenarios, and improves determinism.
+
+[Source: Eurex, "T7", https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07]
+[Source: Eurex, "T7 Production environment: Increase in the number of partitions", https://www.eurex.com/ex-en/find/circulars/circular-2877730, accessed 2026-04-07]
+
+### 2.2 Core Components
+
+| Component | Function | Technology / Notes |
+|-----------|----------|-------------------|
+| **Matching Engine** (per partition) | Order and quote matching for all instruments assigned to the partition; price-time priority; supports continuous trading, auctions, and complex strategy matching with implied pricing | Custom-built; runs on dedicated server hardware; each partition has its own matching engine with a standby partner for failover |
+| **Partition-Specific (PS) Gateway** | Lowest-latency order entry path; FIFO processing; one PS gateway per partition | Consolidated on the same server as the matching engine since H1 2021; 10 Gbit/s cross connects from co-location |
+| **Low-Frequency (LF) Gateway** | Order entry for participants not requiring ultra-low latency; connects to all partitions; ~12 microseconds additional latency vs. PS gateway | Proprietary binary (ETI); TCP/IP |
+| **Enhanced Trading Interface (ETI)** | Primary high-performance trading interface; asynchronous, message-based; FIX 5.0 SP2 semantics with proprietary session protocol and flat binary encoding | Binary over TCP/IP; no special hardware required; OS/language agnostic |
+| **FIX Gateway** | Standard FIX protocol access; trading and back-office sessions | FIX 4.2 / FIX 4.4 over TCP/IP; FIX LF interface (FIX 4.4) introduced with Release 9.0 |
+| **EMDI** (Enhanced Market Data Interface) | Un-netted market data; disseminates every order book change up to configured depth | UDP multicast; FAST 1.1/1.2 encoded; dual service paths (A and B) |
+| **EOBI** (Enhanced Order Book Interface) | Full order-by-order (Level 3) market data; no depth limitation | UDP multicast; native binary encoding (not FAST); lowest-latency market data feed |
+| **MDI** (Market Data Interface) | Netted/statistical market data (daily high/low, last trade, total volume) | UDP multicast; FAST encoded |
+| **RDI** (Reference Data Interface) | Instrument definitions, trading parameters, product assignments | UDP multicast; FAST encoded |
+| **Risk Engine** | Pre-trade risk controls; session-level throttling; position limits; Advanced Risk Protection (ARP) | Integrated into gateway layer |
+| **Surveillance** | Market surveillance and regulatory oversight (BaFin/ESMA framework) | Separate surveillance infrastructure; trade surveillance system monitors for market manipulation and abuse [details not publicly disclosed in detail] |
+| **T7 GUI** (Trader/Admin/Clearer) | Graphical user interfaces for derivatives trading, administration, and clearing operations | Transitioning from Java-based to web-based GUIs (2025--2027) |
+
+[Source: Eurex, "T7 R.13.1 Enhanced Trading Interface Manual", https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07]
+[Source: OnixS, "Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK", https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]
+
+### 2.3 Technology Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Programming Language | C/C++ [unverified; consistent with Deutsche Boerse technical presentations and industry standard for matching engines] |
+| Operating System | Linux [unverified; consistent with industry standard] |
+| Hardware | Commodity x86 server hardware with custom optimization; matching engine hardware upgraded in 2020; PTP (Precision Time Protocol) timing at 4--5 ns RMS accuracy |
+| FPGA Acceleration | Not confirmed in T7 core matching engine; third-party vendors (e.g., NanoSpeed) offer FPGA-based connectivity solutions to T7 |
+| Network (Internal) | 10 Gbit/s Ethernet with cut-through switching in the co-location access layer; 10 Gbit/s cross connects to PS gateways |
+| Network (External) | N7 network infrastructure; thousands of connections in 35+ countries across Europe, North America, and Asia; 10G/100G Ethernet connectivity |
+| Messaging Format | Binary messages following FIX 5.0 SP2 semantics (ETI); FAST 1.1/1.2 encoding for EMDI/MDI/RDI; native binary for EOBI |
+| Byte Order | Little Endian |
+| Colocation | Equinix FR2 data center, Frankfurt, Germany |
+| In-Memory | Matching engine operates in-memory for order book state; persistent orders backed to persistency layer for failover recovery |
+
+[Source: Deutsche Boerse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]
+[Source: Deutsche Boerse, "Open Day 2019 -- T7 infrastructure and latency", https://www.deutsche-boerse.com/resource/blob/1637232/da0ae611905acda0d7502260903a0835/data/Open-Day-2019_T7-Latency-Roadmap_Andreas-Lohr_final.pdf, accessed 2026-04-07]
+
+---
+
+## 3. Performance Specifications
+
+### Current Latency (Production Data, 2025)
+
+| Metric | Value | Conditions |
+|--------|-------|------------|
+| Minimum internal matching latency | ~2,787 ns (~2.8 microseconds) | Measured from market data timestamp to request processing; production data February 2025 |
+| Median round-trip (HF session, co-located) | ~60 microseconds | Full circle via PS gateway; includes network traversal, matching, and response |
+| LF gateway additional latency | ~12 microseconds | Compared to PS gateway path |
+| EOBI faster than EMDI | ~1.5 microseconds (median) | EOBI market data arrives faster than EMDI updates |
+| EOBI faster than ETI response | ~1.5 microseconds (median) | For order-triggered market data updates |
+| EOBI advantage over EMDI (DAX futures) | ~15 microseconds faster (simple updates), ~25 microseconds faster (trades) | Measured for Xetra DAX products; similar advantage expected for Eurex derivatives |
+| Dual EMDI feed difference (A vs B) | ~6--8 microseconds (median) | Latency difference between A and B incremental feeds for futures products |
+| PTP timing accuracy | 4--5 ns RMS | Precision Time Protocol synchronization |
+
+**Notes:**
+- The 2,787 ns minimum represents internal matching engine processing time
+- Round-trip latency of ~60 microseconds is measured for co-located participants using PS gateways via high-frequency sessions
+- T7 provides up to six timestamps with each response and key timestamps with every market data update, enabling participants to measure and decompose latency in detail
+- The 10 Gbit/s access layer switches operate in "cut-through" mode, reserving priority on the competitive network path
+
+[Source: Deutsche Boerse, "Internal T7 Latency Performance Updates", https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-07]
+[Source: Deutsche Boerse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]
+
+### Throughput & Capacity
+
+| Metric | Value | Notes |
+|--------|-------|-------|
+| Typical throughput (t_3n -- internal matching) | ~8,000 kHz (8 million msgs/sec) | Internal matching engine throughput rate; March 2025 data |
+| Typical throughput (t_5 -- gateway level) | ~500 kHz | Throughput at gateway level [unverified interpretation] |
+| Typical throughput (t_7 -- external) | ~300 kHz | Throughput including external network [unverified interpretation] |
+| Peak daily requests (across T7 venues) | 1.25 billion | Recorded 7 April 2025 (vs. 857 million in 2023) |
+| ETI HF session throttle | 150 messages/second | Per session; high-frequency session type |
+| ETI LF session throttle | 50 messages/second | Per session; low-frequency session type |
+| Eurex partitions | 13 (12 XEUR + 1 XEEE) | As of 2022; partitions can be expanded as needed |
+
+[Source: Deutsche Boerse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]
+
+### Performance Evolution
+
+| Period | Improvement | Notes |
+|--------|------------|-------|
+| December 2012 (T7 launch at Eurex) | 14x faster (futures), 40x faster (options) than predecessor | First T7 deployment |
+| Q1 2018 | PS gateway introduced | Significantly lowered latency variability; increased determinism |
+| Q1 2020 | Matching engine hardware upgrade | New server hardware |
+| H1 2021 | Consolidated matcher/gateway on same server | Further latency reduction and stability improvement |
+| 2021--2022 | Market data distributor consolidated onto matching engine host | Reduced EMDI latency variability |
+| 2025 | PTP accuracy 4--5 ns RMS | Improved timestamping precision |
+
+---
+
+## 4. Interfaces & Protocols
+
+### 4.1 Order Entry -- ETI (Enhanced Trading Interface)
+
+| Attribute | Details |
+|-----------|---------|
+| Protocol | Proprietary binary with FIX 5.0 SP2 semantics |
+| Session Layer | Proprietary (not standard FIX session protocol) |
+| Encoding | Flat binary encoding (optimized for performance) |
+| Transport | TCP/IP |
+| Byte Order | Little Endian |
+| Session Types | High-frequency (HF) and Low-frequency (LF); Standard (persistent orders) and Lean (non-persistent orders) |
+| Throttle Limits | HF: 150 msgs/sec; LF: 50 msgs/sec per session |
+| Functions | Order handling, quote handling (mass quotes), strategy creation, RFQ submission, off-book trade entry (TES), cross requests |
+| Hardware Requirements | None -- OS/language/compiler agnostic; no exchange software installation required |
+
+**ETI Derivatives-Specific Features:**
+- Mass quote submission and maintenance (key for market makers)
+- Complex instrument creation (user-defined strategies)
+- Cross request functionality
+- T7 Entry Services (TES) trade entry for block/EFP/EFS trades
+- Eurex EnLight RFQ submission and response
+- Self-Match Prevention (SMP) tagging
+
+**FIX Gateway:**
+- FIX 4.2 and FIX 4.4 support
+- FIX LF interface (FIX 4.4 only) -- closer to T7 architecture, provides performance characteristics similar to ETI
+- Trading sessions (order management, risk control, cross trade) and Back-office sessions (trade confirmations)
+- Slightly higher latency than ETI due to protocol translation
+
+[Source: Eurex, "T7 R.13.1 Enhanced Trading Interface Manual", https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07]
+
+### 4.2 Market Data
+
+| Feed | Protocol | Encoding | Content | Latency Profile |
+|------|----------|----------|---------|-----------------|
+| **EMDI** (Enhanced Market Data Interface) | UDP multicast | FAST 1.1/1.2 | Un-netted feed; every order book change up to configured depth; all on-exchange trades; market-by-price (MBP) at aggregated price levels | ~1.5 microseconds slower than EOBI (median) |
+| **EOBI** (Enhanced Order Book Interface) | UDP multicast | Native binary (not FAST) | Full order-by-order (Level 3); no depth limitation; side, price, priority timestamp, displayed quantity of each individual order/quote; trade price and quantity | Fastest market data feed; ~1.5 microseconds faster than ETI response |
+| **MDI** (Market Data Interface) | UDP multicast | FAST | Netted/statistical data; daily high/low, total traded quantity, last trade, settlement prices, open interest | Suitable for less latency-sensitive applications |
+| **RDI** (Reference Data Interface) | UDP multicast | FAST | Instrument definitions, trading parameters, product assignments, multicast address/port configurations | Published before trading day opens |
+| **EMDS** (Extended Market Data Service) | UDP multicast | -- | Extended data including settlement prices and open interest | Supplementary feed |
+
+**Architecture Notes:**
+- All feeds use dual service paths (Service A and Service B) with different multicast addresses for live-live redundancy
+- Clients should subscribe to both services and arbitrate between them
+- EOBI is the premium feed for latency-sensitive derivatives participants -- provides full order-by-order book, native binary encoding (no FAST decode overhead), and is consistently the fastest data path
+- For derivatives participants, EMDI provides un-netted updates at configured depth while EOBI provides the complete order book
+
+[Source: Eurex, "T7 R.12.1 EMDI/MDI/RDI Manual", https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-07]
+[Source: OnixS, "Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK", https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]
+
+### 4.3 Drop Copy / Trade Reporting -- T7 Entry Services (TES)
+
+T7 Entry Services are the primary off-book trade registration mechanism for Eurex derivatives. They enable participants to enter negotiated or pre-arranged trade information into the Eurex system while benefiting from standardized clearing and settlement through Eurex Clearing.
+
+| TES Trade Type | Description |
+|----------------|-------------|
+| **Block Trades** | Off-book trading of standard Eurex products; buyers and sellers execute order information without execution risk; Bulk Load Panel enhances efficiency for large batches |
+| **Exchange for Physicals (EFP)** | Simultaneous purchase/sale of futures and a cash market security with price correlation (e.g., Fixed Income Futures vs. bonds); auto-approval functionality introduced in collaboration with Tradeweb |
+| **Exchange for Swaps (EFS)** | Exchange of futures position for an OTC swap equivalent |
+| **Multilateral Trades** | Processing of order information for multilateral Block Trades |
+| **Brokerage Functionality** | Broker-mediated trade facilitation |
+
+**Eurex EnLight (Selective RFQ):**
+- On-exchange, off-book selective Request-for-Quote (RFQ) functionality
+- Allows participants to selectively request quotes from specific counterparties
+- Circuit breakers implemented via price collars
+- Integrated with T7 trade registration workflow
+
+[Source: Eurex, "Eurex T7 Entry Services", https://www.eurex.com/ex-en/trade/eurex-t7-entry-services, accessed 2026-04-07]
+[Source: Eurex, "Block Trades", https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades, accessed 2026-04-07]
+[Source: Eurex, "Eurex EnLight", https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]
+
+### 4.4 Reference Data -- RDI and RDD
+
+| Source | Description |
+|--------|-------------|
+| **RDI** (Reference Data Interface) | Real-time multicast feed; provides instrument definitions, trading parameters, product-to-partition assignments, and multicast address configurations before trading day opens |
+| **RDD** (Reference Data Download) | File-based reference data available for download from the Eurex website; includes product and instrument parameter files, T7 Entry Service parameters |
+| **T7 GUI** | Administrative GUI provides reference data views and management |
+
+[Source: Eurex, "T7 Entry Service parameters", https://www.eurex.com/ex-en/data/trading-files/t7-entry-service-parameters, accessed 2026-04-07]
+
+---
+
+## 5. Resilience & Business Continuity
+
+### 5.1 Redundancy
+
+- **Partition independence:** Each of the 13 partitions operates independently; a failure in one partition does not affect other partitions -- this is a key resilience benefit of the partition-based architecture
+- **Matching engine failover:** Every matching engine has a standby partner that can take over if the primary fails; a failover triggers a market reset -- the secondary loads persistent orders from the persistency layer; all non-persistent orders and quotes are deleted
+- **Market data redundancy:** Dual multicast service paths (Service A and Service B) with different multicast addresses; live-live concept
+- **Gateway redundancy:** Multiple gateway sessions available; PS and LF gateways provide different access paths; if a PS gateway fails, LF gateways remain available (and vice versa)
+- **Network redundancy:** N7 network provides redundant connectivity across 35+ countries; backbone lines terminate in both primary and secondary data centers
+
+### 5.2 Disaster Recovery
+
+| Aspect | Details |
+|--------|---------|
+| Primary Site | Equinix FR2 data center, Frankfurt, Germany |
+| DR Infrastructure | T7 simulation environment infrastructure re-used as DR production infrastructure |
+| Failover Scenario | Simulates complete outage of regular T7 production system hosted in primary data center |
+| Colocation Access | Colocation facility remains accessible during DR; co-location customers can access DR infrastructure |
+| Network Continuity | Backbone lines to Frankfurt terminate in the secondary data centre; participants connecting to the Frankfurt access point continue using the same leased line connecting to the access point half located in the secondary data centre |
+| Order Book State | Order books are empty after switch to DR environment; participants must re-enter orders |
+| Interface Availability | Most T7 interfaces available in DR scenario; some conceptual differences vs. regular production |
+| DR Testing | Regular tests conducted (typically 2x per year); examples: 16 March 2024, 17 June 2023, 15 October 2022; Eurex requests all Trading Participants to participate |
+
+**Key Notes:**
+- DR concept documented in the "T7 Disaster Recovery Concept" guide (updated with each major release; current version: 2025 v1.2)
+- In DR, the simulation environment infrastructure becomes the backup production environment -- this is a pragmatic but potentially capacity-constrained design
+- Different IP addresses and configurations may apply in DR
+- Participation in DR tests is considered essential for compliance with Business Continuity Processes and continued market integrity
+
+[Source: Eurex, "T7 Disaster Recovery Concept 2025 Version 1.2", https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf, accessed 2026-04-07]
+[Source: Eurex, "T7 Disaster Recovery Test on 16 March 2024", https://www.eurex.com/ex-en/find/circulars/circular-3818172, accessed 2026-04-07]
+
+### 5.3 Primary Data Center
+
+| Specification | Details |
+|---------------|---------|
+| Facility | Equinix FR2 (Friesstrasse, Frankfurt, Germany) |
+| Operator | Equinix (strategic partnership since 2010) |
+| Role | Financial low-latency trading hub; hosts primary Eurex and Xetra back-ends |
+| Colocation Services | Rack space, cooling, power supply, smart hands; separate 10 Gbit/s connections for transaction and market data services |
+| Network | 10 Gbit/s access layer switches in cut-through mode; latency-optimized co-location network |
+
+[Source: Xetra, "Co-Location Services", https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-07]
+
+---
+
+## 6. Notable Technical Features
+
+### 6.1 Complex Strategy Trading (Spread Engine / Implied Pricing)
+
+This is one of the most derivatives-specific features of T7. The platform supports:
+
+- **Complex instruments:** Extended combination trading functionality enabling participants to create individual combinations of single-leg instruments and announce the strategy to the entire market
+- **Strategy types:**
+  - Futures combinations: time spreads, packs & bundles, strips, inter-product spreads
+  - Standard options strategies: a wide variety of recognized options strategy templates
+  - User-defined strategies: participants can create custom multi-leg combinations
+- **Implied pricing:** T7 calculates implied prices based on the top-of-book prices of the legs; supports both implied-in (synthetic matching into leg order books from strategy orders) and implied-out (matching of outright leg contracts against synthetic combinations)
+- **Inter-product spreads (IPS):** Traded in separate order books with synthetic matching into the respective leg product order books (e.g., Euribor vs. Euro-STR futures IPS)
+- **Auto-normalization:** If an entered strategy matches a standard options strategy, it is automatically converted and normalized
+
+[Source: Eurex, "Strategy trading -- Trading in complex instruments", https://www.eurex.com/ex-en/trade/order-book-trading/trading-in-complex-instruments, accessed 2026-04-07]
+
+### 6.2 Volatility Interruption Mechanism
+
+T7 implements volatility interruptions to strengthen price continuity in derivatives:
+
+- **Trigger mechanism:** If the potential execution price deviates beyond allowed price corridors from reference prices, execution of the incoming order is prevented and the affected instrument (or all instruments of the affected product) is automatically moved from continuous trading to a volatility auction
+- **Static volatility interruptions** (introduced with T7 Release 12.1): Based on static price ranges around additional reference prices defined by the exchange; triggers when the allowed static price deviation is exceeded
+- **Dynamic volatility interruptions:** Based on dynamic price ranges around the last traded price
+- **Scope:** Can apply to individual instruments or entire product groups depending on configuration
+
+[Source: Eurex, "Volatility Interruption Functionality", https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality, accessed 2026-04-07]
+[Source: Eurex, "Eurex T7 Functionality activations: Volatility Interruption enhancements", https://www.eurex.com/ex-en/find/circulars/circular-3989342, accessed 2026-04-07]
+
+### 6.3 T7 Entry Services (TES) for Off-Book Trades
+
+See Section 4.3 above for detailed coverage. Key point: TES provides the regulatory and operational framework for block trades, EFP, EFS, and multilateral off-book transactions to be registered and cleared through the exchange.
+
+### 6.4 Mass Quote Functionality for Market Makers
+
+- **Mass quotes:** Market makers can submit and update two-sided quotes (bid and ask) for multiple instruments in a single message, enabling efficient market making across large numbers of options series
+- **Market maker role:** Enables all quoting and order handling functions, cross requests, and complex instrument creation
+- **Non-persistent quotes:** Mass quotes are typically non-persistent (lean), meaning they are deleted upon matching engine failover -- this is a design trade-off favoring performance over persistence
+
+### 6.5 Self-Trade Prevention (SMP)
+
+- **Introduced:** T7 Release 12.1 (market-wide rollout)
+- **Mechanism:** SMP Type A functionality prevents certain orders or quotes of the same instrument from matching against each other during continuous trading when sent by the same Trading Participant and tagged with the same SMP ID
+- **Purpose:** Prevents unintentional self-trades that may arise from different algorithmic strategies operating within the same participant
+
+[Source: Eurex, "Announcement of T7 Release 12.1", https://www.eurex.com/ex-en/find/circulars/circular-3723224, accessed 2026-04-07]
+
+### 6.6 Eurex EnLight (Selective RFQ)
+
+- **Type:** On-exchange, off-book selective Request-for-Quote platform
+- **Mechanism:** Initiators selectively request quotes from specific counterparties (rather than broadcasting to the entire market)
+- **Safeguards:** Circuit breakers implemented via price collars
+- **Use case:** Large/complex derivatives trades where participants want to negotiate with specific liquidity providers while maintaining on-exchange trade registration
+
+[Source: Eurex, "Eurex EnLight | Selective RFQ Platform for Derivatives", https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]
+
+### 6.7 Pre-Trade Risk Controls (Advanced Risk Protection)
+
+- **Pre-Trade Risk Position Limits:** Allow Clearing Members (CMs) to set pre-trade risk limits for their Direct Clearing Member Participants (DCMPs) and Non-Clearing Members
+- **Advanced Risk Protection (ARP):** Integrated with Eurex Clearing's C7 system; provides real-time risk monitoring with automatic protective actions
+- **Session-level throttling:** ETI enforces per-session message rate limits (150 msgs/sec HF, 50 msgs/sec LF)
+- **Order size limits:** Configurable maximum order quantity per product
+- **Kill switch:** Emergency functionality to cancel all orders and quotes for a participant
+
+[Source: Eurex, "T7 Derivatives Markets -- Participant and User Maintenance Manual", https://www.eurex.com/resource/blob/4332334/61e2e29f08a63ff88d20ee30c4dc2049/data/T7_R.13.1_Derivatives_Market_-_Participant_and_User_Maintenance_Manual_Version_1.pdf, accessed 2026-04-07]
+
+### 6.8 Sponsored Access (SpA) Model
+
+- **Purpose:** Allows buy-side firms to access Eurex's T7 platform directly without full exchange membership, using a sponsoring Eurex participant (FCM) as the access provider
+- **Classification:** Direct Electronic Access (DEA) under MiFID II
+- **Risk framework:** The sponsoring participant establishes pre-trade risk limits for the sponsored firm and its traders within the T7 system
+- **Benefit:** Enables buy-side firms to implement latency-sensitive electronic trading strategies with direct access to T7 infrastructure and complete connectivity suite
+
+[Source: Eurex, "Sponsored Access: A new gateway for the buy-side", https://www.eurex.com/ex-en/trade/sponsored-access, accessed 2026-04-07]
+
+### 6.9 Partition-Based Matching Architecture
+
+The partition model is a foundational architectural choice with derivatives-specific implications:
+
+- **Product isolation:** Different asset classes (equity index derivatives, fixed income derivatives, commodity derivatives) can be assigned to separate partitions, ensuring that high-activity products do not impact latency for other products
+- **Scalability:** New partitions can be added as product offerings grow (demonstrated by the addition of Partition 12 in 2022)
+- **Fault isolation:** A technical issue in one partition does not cascade to others
+- **Latency determinism:** Since each partition has its own matching engine and PS gateway, latency is more predictable within a partition
+- **Trade-off:** Participants trading across partitions need multiple PS gateway connections for optimal latency on all partitions; cross-partition strategies are not natively supported within the matching engine
+
+[Source: Eurex, "Technical Upgrade of T7 partitions", https://www.eurex.com/ex-en/support/information-channels/implementation-news/Technical-Upgrade-of-T7-partitions--4079882, accessed 2026-04-07]
+
+---
+
+## 7. Comparison Notes
+
+### vs. KRX Systems (Exture+ / Exture 3.0)
+
+| Aspect | Eurex T7 (Derivatives) | KRX Exture+ / Exture 3.0 |
+|--------|----------------------|--------------------------|
+| **Launch Year** | 2012 (Eurex derivatives) | 2014 (Exture+); Exture 3.0 launched recently |
+| **Developer** | In-house (Deutsche Boerse Group) | In-house (KRX with Koscom subsidiary) |
+| **Architecture** | Partition-based; 13 independent partitions for derivatives, each with own matching engine and PS gateway | Unified matching engine architecture; Seoul DC (equities) + Busan DC (derivatives) |
+| **Internal Matching Latency** | ~2.8 microseconds minimum (Feb 2025) | ~70 microseconds (Exture+); Exture 3.0 achieved ~30% improvement |
+| **Round-trip Latency (co-located)** | ~60 microseconds median (HF session via PS gateway) | ~70 microseconds (matching engine only; Exture+) |
+| **Complex Strategy Support** | Native spread engine with implied pricing (implied-in / implied-out); user-defined strategies; inter-product spreads | Strategy orders supported but implied pricing capabilities less documented [unverified] |
+| **Market Data Feeds** | EMDI (un-netted MBP), MDI (netted), EOBI (full MBO/L3), RDI (reference) via UDP multicast | Proprietary binary; Solace PubSub+ messaging middleware |
+| **Order Entry Protocol** | ETI (proprietary binary, FIX 5.0 SP2 semantics) + FIX 4.2/4.4 | FIX-based + proprietary API [unverified] |
+| **Off-Book Trading** | T7 Entry Services (TES): Block, EFP, EFS, Multilateral, Brokerage; Eurex EnLight (selective RFQ) | Negotiated trades supported; specific off-book framework less documented publicly [unverified] |
+| **Market Making Support** | Mass quote functionality; non-persistent lean quotes; Designated Market Maker programs | Liquidity Provider (LP) system |
+| **Self-Trade Prevention** | SMP Type A (same participant, same SMP ID) -- market-wide since Release 12.1 | Available [unverified -- specific mechanism not publicly detailed] |
+| **Volatility Protection** | Volatility Interruption (static + dynamic corridors); product-wide or instrument-level | SVIH (Static/Dynamic Volatility Interruption) |
+| **Primary Data Center** | Equinix FR2, Frankfurt (hosted at third-party facility) | KRX-owned Busan Data Center (derivatives) |
+| **DR Approach** | Simulation infrastructure re-used as DR; regular testing (2x/year); order books empty after failover | Active/Standby between Seoul and Busan [unverified] |
+| **Partition Model** | 13 partitions; products distributed across partitions; partition-level fault isolation | Unified model [unverified -- specific partition details not publicly available] |
+| **Regulatory Framework** | BaFin / ESMA (MiFID II / MiFIR / EMIR) | FSC / FSS |
+| **Technology Export** | T7 licensed to BSE India and others | Exture+ exported to Laos, Cambodia, Azerbaijan, and others |
+
+### Key Differentiators
+
+**Eurex T7 Strengths (Derivatives-Specific):**
+
+1. **Implied pricing and spread engine:** Native support for implied-in and implied-out matching across complex strategies and inter-product spreads is a significant architectural capability for derivatives trading; enables synthetic liquidity discovery across related products
+2. **Extremely low internal latency:** ~2.8 microseconds internal matching latency is among the fastest globally; combined with the PS gateway consolidation, provides highly deterministic performance
+3. **Partition-based fault isolation:** Independent partitions ensure that activity spikes or issues in one product group (e.g., equity index options during volatility events) do not degrade performance for other products (e.g., fixed income futures)
+4. **Comprehensive off-book ecosystem:** TES (Block/EFP/EFS/Multilateral/Brokerage) + Eurex EnLight (selective RFQ) provide a rich off-book trading framework integrated with on-exchange clearing
+5. **Mass quoting optimization:** Flat binary encoding and lean (non-persistent) quotes designed specifically for high-frequency market making across large options series
+6. **EOBI order-by-order feed:** Full Level 3 market data without depth limitation, native binary encoding (no FAST decode overhead), consistently fastest data path -- critical for derivatives participants who need to see individual order/quote activity
+7. **Extensive public documentation:** Deutsche Boerse publishes unusually detailed technical documentation about T7 internals, latency performance, and system dynamics -- valuable for participant development teams
+
+**KRX Exture+ / Exture 3.0 Strengths:**
+
+1. **Unified exchange model:** Single exchange covering all Korean capital market products (equities, bonds, derivatives) under one roof, reducing cross-venue complexity
+2. **Full technology independence:** Owned data center infrastructure (Busan for derivatives) with no dependency on third-party facility operators
+3. **Broader technology export track record:** KRX has established export relationships across multiple Asian markets (Laos, Cambodia, Azerbaijan)
+4. **Geographic separation:** Seoul (equities) and Busan (derivatives) data centers provide natural geographic disaster recovery
+5. **Exture 3.0 modernization:** Recent system upgrade achieved ~30% improvement in transaction processing speed with increased capacity
+
+**Architectural Observations:**
+
+- T7's partition model is well-suited for a derivatives exchange with thousands of instrument series (options chains generate large numbers of instruments); the partition-level isolation prevents "noisy neighbor" effects common in options markets during high-volatility periods
+- KRX's unified model may offer more uniform latency across instruments but could face challenges when derivatives volume spikes affect the shared infrastructure
+- T7's approach of co-locating at Equinix provides access to a broader ecosystem of connectivity providers and co-located participants, whereas KRX's owned facility model gives more direct control over the infrastructure
+- T7's DR model of re-using simulation infrastructure is a cost-effective approach but means DR capacity may be lower than production; KRX's geographic separation (Seoul/Busan) provides natural resilience
+- Both exchanges have invested in reducing latency to globally competitive levels, though T7's published internal matching latency (~2.8 microseconds) is significantly faster than KRX's published figures
+
+---
+
+## Sources
+
+### Official Eurex / Deutsche Boerse Documentation
+- [Source: Eurex, "T7 trading architecture", https://www.eurex.com/t7/, accessed 2026-04-07]
+- [Source: Eurex, "T7", https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07]
+- [Source: Eurex, "T7 Release 14.0", https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0, accessed 2026-04-07]
+- [Source: Eurex, "T7 Release 14.1", https://www.eurex.com/ex-en/support/initiatives/t7release14-1, accessed 2026-04-07]
+- [Source: Eurex, "Announcement of T7 Release 14.1", https://www.eurex.com/ex-en/find/circulars/circular-4803582, accessed 2026-04-07]
+- [Source: Eurex, "T7 R.13.1 Enhanced Trading Interface Manual", https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07]
+- [Source: Eurex, "T7 R.12.1 EMDI/MDI/RDI Manual", https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-07]
+- [Source: Eurex, "T7 Disaster Recovery Concept 2025 v1.2", https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf, accessed 2026-04-07]
+- [Source: Eurex, "Eurex T7 Entry Services", https://www.eurex.com/ex-en/trade/eurex-t7-entry-services, accessed 2026-04-07]
+- [Source: Eurex, "Block Trades", https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades, accessed 2026-04-07]
+- [Source: Eurex, "Eurex EnLight", https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]
+- [Source: Eurex, "Strategy trading -- Trading in complex instruments", https://www.eurex.com/ex-en/trade/order-book-trading/trading-in-complex-instruments, accessed 2026-04-07]
+- [Source: Eurex, "Volatility Interruption Functionality", https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality, accessed 2026-04-07]
+- [Source: Eurex, "Sponsored Access", https://www.eurex.com/ex-en/trade/sponsored-access, accessed 2026-04-07]
+- [Source: Eurex, "T7: Introduction of a consolidated partition-specific Gateway and Matching Engine process", https://www.eurex.com/ex-en/find/circulars/circular-2404602, accessed 2026-04-07]
+- [Source: Eurex, "T7: Consolidation of the Market Data Distributor and Matching Engine processes", https://www.eurex.com/ex-en/find/circulars/T7-Consolidation-of-the-Market-Data-Distributor-and-Matching-Engine-processes-on-the-Matching-Engine-Host-3682674, accessed 2026-04-07]
+- [Source: Eurex, "Technical Upgrade of T7 partitions", https://www.eurex.com/ex-en/support/information-channels/implementation-news/Technical-Upgrade-of-T7-partitions--4079882, accessed 2026-04-07]
+- [Source: Eurex, "Completion of the T7 matching engine server hardware upgrade", https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-07]
+- [Source: Deutsche Boerse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]
+- [Source: Deutsche Boerse, "Internal T7 Latency Performance Updates", https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-07]
+- [Source: Deutsche Boerse, "Open Day 2019 -- T7 infrastructure and latency", https://www.deutsche-boerse.com/resource/blob/1637232/da0ae611905acda0d7502260903a0835/data/Open-Day-2019_T7-Latency-Roadmap_Andreas-Lohr_final.pdf, accessed 2026-04-07]
+- [Source: Xetra, "Co-Location Services", https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-07]
+- [Source: Eurex, "T7 Derivatives Markets Participant and User Maintenance Manual R.13.1", https://www.eurex.com/resource/blob/4332334/61e2e29f08a63ff88d20ee30c4dc2049/data/T7_R.13.1_Derivatives_Market_-_Participant_and_User_Maintenance_Manual_Version_1.pdf, accessed 2026-04-07]
+- [Source: Eurex, "Readiness Newsflash -- Our path for 2026!", https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026--4867350, accessed 2026-04-07]
+
+### Third-Party Sources
+- [Source: OnixS, "Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK", https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]
+- [Source: MarketsWiki, "Eurex", https://www.marketswiki.com/wiki/Eurex, accessed 2026-04-07]
+- [Source: WallStreetMojo, "Eurex Exchange", https://www.wallstreetmojo.com/eurex-exchange/, accessed 2026-04-07]
+
+### KRX / Exture+ Sources
+- [Source: Koscom, "KRX Trading System", https://english.koscom.co.kr/eng/main/contents.do?menuNo=300005, accessed 2026-04-07]
+- [Source: Solace, "Korea Exchange Deploys Solace Systems", October 2013, https://www.prweb.com/releases/2013/10/prweb11191574.htm, accessed 2026-04-07]

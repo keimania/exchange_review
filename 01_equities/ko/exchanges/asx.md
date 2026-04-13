@@ -1,0 +1,513 @@
+# Australian Securities Exchange (ASX)
+
+> **최종 업데이트:** 2026-04-06
+> **조사 등급:** Tier 2
+> **분야:** 주식
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 내용 |
+|------|------|
+| 정식 명칭 | ASX Limited (Australian Securities Exchange 운영) |
+| 약칭 | ASX |
+| 웹사이트 | https://www.asx.com.au |
+| 설립 연도 | 1987년 (6개 주별 거래소 합병); ASX Limited는 2006년 ASX와 SFE (Sydney Futures Exchange) 합병으로 설립 |
+| 국가 / 도시 | 호주 / Sydney (Exchange Centre, 20 Bridge Street, Sydney NSW 2000) |
+| 소유 구조 | 자사 거래소에 상장 (티커: ASX); 개인투자자 약 50%, 기관투자자 약 49% (주요 보유자: UniSuper 약 14%, BlackRock 약 6.1%, AustralianSuper 약 6.1%), 내부자 1% 미만 |
+| 모회사 / 그룹 | ASX Limited (자기상장 지주회사) |
+| 감독 기관 | Australian Securities and Investments Commission (ASIC); 청산·결제 안정성에 대해 Reserve Bank of Australia (RBA) |
+| CEO | Helen Lofthouse (2022년 8월 취임) |
+| 시가총액 (상장기업 기준) | 약 AUD 3.4조 / 약 USD 2.2조 (2026년 2월) |
+| ASX Limited 시가총액 (거래소 운영자) | 약 AUD 96억 (2026년) |
+| 상장 종목 수 | 약 2,241개 상장기업 (2025년 기준) |
+| 일평균 거래대금 | 일평균 약 AUD 47억 |
+| FY2025 영업수익 | AUD 11.072억 (전년 대비 +7.0%) |
+| FY2025 기초 순이익 | AUD 5.1억 (전년 대비 +7.5%) |
+
+### 수직통합 구조 (Vertical Integration)
+
+ASX는 전체 가치사슬에 걸쳐 운영되는 세계 소수의 수직통합형 거래소 그룹 중 하나이다:
+- **상장:** ASX Listing Rules가 입회 및 지속적 의무를 규율
+- **매매:** ASX Trade (현물주식), ASX 24 (파생상품)
+- **청산:** ASX Clear (현물주식 및 주식옵션), ASX Clear (Futures)
+- **결제:** ASX Settlement (CHESS -- Clearing House Electronic Subregister System을 통해)
+- **등록:** Austraclear (채무증권)
+
+### 주요 연혁 (Key Historical Milestones)
+- 1861: Melbourne에 최초 증권거래소 설립
+- 1871: Sydney Stock Exchange 설립
+- 1987: Australian Securities Exchange and National Guarantee Fund Act 1987에 따라 6개 독립 주별 거래소(Sydney, Melbourne, Brisbane, Adelaide, Hobart, Perth) 합병으로 4월 1일 Australian Stock Exchange (ASX) 설립
+- 1987: 완전 전자매매 도입 (SEATS -- Stock Exchange Automated Trading System), 장내매매 대체
+- 1990: ASX가 전국 시장으로 전환; Australian Securities Commission (ASIC 전신) 설립
+- 1996: CHESS (Clearing House Electronic Subregister System) 출시, 전자 결제 및 하위등록부
+- 1998: ASX 주식회사 전환 및 자사 거래소에 상장 (10월 13일), 세계 최초로 이를 실행한 거래소 중 하나
+- 2006: ASX가 Sydney Futures Exchange (SFE)와 합병하여 ASX Limited 설립, 다자산 거래소 그룹 탄생
+- 2010: ASX Trade 출시 (NASDAQ OMX Genium INET 기반), SEATS/ITS 대체
+- 2010-2011: Singapore Exchange (SGX)와의 AUD 84억 합병 제안; 호주 정부가 국익을 이유로 불허 (2011년 4월)
+- 2012: Chi-X Australia (현 Cboe Australia)가 경쟁 공개시장으로 출범, ASX의 매매 독점 종료; ASIC가 ASX로부터 시장 감시 기능 인수
+- 2015: ASX가 CHESS 대체를 위한 분산원장기술(DLT) 탐색을 위해 Digital Asset Holdings (DA) 선정
+- 2017: ASX가 DLT/블록체인 기술을 활용한 CHESS 대체를 공식 발표
+- 2022: 11월 ASX가 DLT 기반 CHESS 대체 프로젝트 중단, 약 AUD 2.5억 상각
+- 2023: ASX가 기존 기술 기반의 CHESS 대체를 위한 새로운 구현 파트너로 Tata Consultancy Services (TCS) 선정
+- 2024: 12월 20일 CHESS 일괄결제 장애 발생, 주요 규제 감시 촉발
+- 2025: "반복적이고 심각한 장애"에 따라 ASIC가 ASX Group에 대한 공식 조사 개시 (6월)
+- 2025: 시장 구조 변경(SR15) 6월 23일 시행 -- 단일 시가단일가매매(개장 경매), 새로운 종가단일가매매 형식, 장마감 후 매매 세션
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 (Market Segments)
+
+| 구분 | 설명 | 상장 요건 (요약) |
+|------|------|-----------------|
+| **ASX (메인보드)** | 기존 기업을 위한 주요 상장 장소, S&P/ASX 200 구성종목 포함; 주식, ETF, LIC, REIT, 인프라 펀드, 채무증권 포괄 | 최소 이익 요건 (3년 합산 AUD 100만, 직전 연도 AUD 50만 포함) 또는 자산 요건 (순유형자산 AUD 400만 또는 시가총액 AUD 1,500만); 최소 300명의 주주 각 AUD 2,000 이상 보유; 최소 20% 유동비율 |
+| **ASX 상장 (채무)** | 도매 및 소매 채무증권(사채, 국채, 하이브리드 증권) 상장 장소 | 채무 발행사를 위한 특정 요건, 투자설명서/정보각서 포함; 최소 발행 규모 요건 적용 |
+| **ASX Foreign Exempt** | 승인된 해외거래소에 주 상장된 기업을 위한 간소화 이중상장 | 인정된 거래소에 주 상장; 본국 거래소 규칙 준수; 초기 상장 수수료 AUD 10만~100만 |
+
+**참고:** 일부 거래소와 달리, ASX는 별도의 SME/성장시장을 운영하지 않는다. 다만, 소규모 기업은 보다 낮은 기준의 자산 요건 경로를 통해 상장할 수 있다.
+
+### 2.2 매매 시간 (Trading Sessions)
+
+**참고:** Sydney는 4월~10월 AEST (UTC+10), 10월~4월 AEDT (UTC+11)를 적용한다. 아래 시간은 Sydney 현지 시간 기준이다.
+
+**2025년 6월 이후 매매 일정 (SR15 시장 구조 변경 이후):**
+
+| 구분 | 현지 시간 (Sydney) | UTC (AEST) | UTC (AEDT) | 설명 |
+|------|-------------------|------------|------------|------|
+| 프리오픈 | 07:00 - 09:59 | 21:00 - 23:59 (전일) | 20:00 - 22:59 (전일) | 주문 접수, 입력, 정정, 취소; 체결 없음 |
+| 시가단일가매매 (개장 경매) | 09:59:00 - 09:59:15 | 23:59:00 - 23:59:15 | 22:59:00 - 22:59:15 | 랜덤 15초 윈도우; 단일가 체결로 시초가 결정 |
+| 안정화 기간 (Levelling Period) | ~09:59:15 - ~10:00 | -- | -- | 경매 거래의 질서 있는 처리를 위한 15~30초 기간 |
+| 접속매매 (연속매매) | 10:00 - 16:00 | 00:00 - 06:00 | 23:00 - 05:00 | 가격-시간 우선원칙에 의한 연속 주문 체결; 6시간 무중단 (점심 휴식 없음) |
+| CSPA 전 (장마감) | 16:00 - 16:10 | 06:00 - 06:10 | 05:00 - 05:10 | 종가단일가매매를 위한 주문 축적; 가격민감성 공시 반영 |
+| 종가단일가매매 (CSPA) | 16:10 - 16:11 | 06:10 - 06:11 | 05:10 - 05:11 | 랜덤 종료; 공식 종가를 결정하는 단일가 체결 |
+| 장마감 후 매매 | 16:11 - 16:21:30 | 06:11 - 06:21:30 | 05:11 - 05:21:30 | 종가에서만 체결되는 접속매매(연속매매, 공개시장); 2025년 6월 도입된 신규 세션 |
+
+**SR15 주요 변경사항 (2025년 6월 23일):**
+- 통합 시가단일가매매 (이전에는 5개 그룹으로 순차 시행)
+- CSPA 전 기간 연장 (이전 16:10 시작에서 현재 16:00)
+- 종가에서만 체결되는 신규 10분 장마감 후 접속매매 세션
+- 점심 휴식 없음 (ASX는 수년 전에 점심 휴식을 폐지하였으며, 많은 아시아 거래소와 다름)
+
+**KRX 비교:** KRX는 09:00 시가단일가매매, 09:00~15:20 접속매매, 15:20~15:30 종가단일가매매 시간표를 운영한다. ASX의 SR15 변경은 단일 시가경매 및 장마감 후 매매 세션 도입 면에서 글로벌 모범사례에 가까워진 것이다.
+
+### 2.3 호가단위 (Tick Sizes)
+
+| 가격 범위 (AUD) | 호가단위 (AUD) |
+|----------------|----------------|
+| $0.10 미만 | $0.001 (0.1센트) |
+| $0.10 - $1.999 | $0.005 (0.5센트) |
+| $2.00 이상 | $0.01 (1센트) |
+
+*출처: ASX Operating Rules Procedures. ETF 및 일부 종목 유형은 별도 호가단위 테이블이 적용될 수 있다.*
+
+### 2.4 매매단위 (Lot Sizes)
+
+- **표준 매매단위(거래단위):** 1주 (ASX는 주식에 대해 최소 매매단위를 강제하지 않으며; 1주 단위로 주문 접수)
+- **단주 거래:** 주 호가창에서 완전히 지원; 별도 단주 시장 불필요
+- **최소 주문 금액:** 일부 브로커가 자체 최소 주문 금액(예: AUD 500)을 부과하나, 거래소 수준의 요건은 아님
+
+### 2.5 시장조성자 (Market Maker) / 유동성공급자 프로그램
+
+ASX는 여러 유동성 강화 프로그램을 운영한다:
+
+- **ETF 시장조성:** 전용 시장조성자(마켓메이커)가 스프레드 폭 및 최소 호가 규모 의무를 이행하며 ETF에 대해 양방향 호가를 지속 제시; 매매 및 청산 수수료 감면으로 인센티브 제공
+- **워런트 시장조성:** 구조화 워런트 발행사는 자사 상품에 대한 시장조성 의무를 부담
+- **현물주식 유동성:** ASX는 유동성이 낮은 종목에 대해 시장조성자 인센티브 프로그램을 주기적으로 제공했으나, 일부 다른 거래소만큼 공식화되어 있지 않음 [미검증 -- 현행 구체적 프로그램이 변경되었을 수 있음]
+
+---
+
+## 3. 매매 체결 방식 (Trading Mechanism)
+
+### 3.1 단일가매매 (경매) 방식 (Auction Mechanisms)
+
+- **시가단일가매매 (개장 경매):** 프리오픈 단계(07:00부터)에서 주문이 축적된다. 09:59:00~09:59:15 사이의 랜덤 시점에 시스템이 거래 가능 물량을 최대화하는 단일가 경매를 실행한다. 균형가격 알고리즘은 다음을 고려한다: (1) 최대 실행 가능 거래량, (2) 해당 거래량에서의 최소 주문 불균형, (3) 참조가격 근접도. 모든 종목이 동시에 개장한다 (단일 개장, 2025년 6월 시행).
+
+- **종가단일가매매 (CSPA):** CSPA 전 단계가 16:00에 시작되어 주문이 축적된다. 16:10~16:11 경의 랜덤 시점에 동일한 균형가격 알고리즘으로 종가 경매가 실행된다. CSPA 종가가 지수 산출, 증거금 산출, NAV 결정에 사용되는 공식 종가이다.
+
+- **장마감 후 매매 세션:** 2025년 6월 도입되었으며, 이 10분간의 접속매매 세션에서는 공식 종가에서만 주문이 체결된다. 종가에서 체결이 필요한 참가자(예: 인덱스 펀드, 벤치마크 기반 전략)에게 추가 유동성을 제공한다.
+
+- **변동성완화장치 발동 시 단일가매매:** 별도의 공식 경매가 아닌, ASX는 가격 변동성이 과도할 때 매매를 일시 정지하거나 제한하는 Extreme Trade Range (ETR) 및 Anomalous Order Threshold (AOT) 메커니즘을 사용한다 (제8장 참조).
+
+### 3.2 접속매매 (연속매매) (Continuous Trading)
+
+- **모델:** ASX TradeMatch (공개시장)에 대한 순수 주문주도형 중앙지정가호가창(CLOB)
+- **우선순위:** 엄격한 가격-시간 우선원칙 -- 최우선 가격으로 먼저 체결, 동일 가격에서는 입력 시간 순
+- **비공개(Dark) 유동성:** ASX Centre Point이 공개 호가창과 통합된 비공개 풀로 운영 (제4.2절 참조)
+- **세션 시간:** 6시간 연속 (10:00-16:00), 점심 휴식 없음
+
+### 3.3 가격 발견 (Price Discovery)
+
+**균형가격 알고리즘 (경매용):**
+1. 실행 가능 거래량을 최대화하는 가격 산출
+2. 동일 최대 거래량을 산출하는 가격이 복수인 경우, 불균형이 가장 적은 가격 선택
+3. 여전히 동률인 경우, 참조가격(최종 체결가 또는 전일 종가)에 가장 가까운 가격 선택
+4. 시장가주문은 최고 우선순위로 참여
+
+**접속매매:**
+- 유입되는 적극적 주문이 잔류 소극적 주문에 대해 연속 체결되면서 가격 발견
+- ASX TradeMatch (공개)와 ASX Centre Point (비공개)이 동일 매매체결엔진(매칭엔진) 내에서 두 개의 통합 매매장소로 운영
+- Centre Point 주문은 NBBO (National Best Bid and Offer) 이내에서 체결되며, 중간가격이 기본 체결가격
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 기본 주문 유형 (ASX TradeMatch -- 공개시장) (Standard Order Types)
+
+| 주문 유형 | 설명 |
+|----------|------|
+| **지정가주문 (Limit Order)** | 지정 가격 또는 그보다 유리한 가격으로 매수 또는 매도; 즉시 체결되지 않으면 호가창에 잔류 |
+| **시장가주문 (Market Order)** | 최우선 가격에서 즉시 체결; 미체결 수량은 최종 체결가의 지정가주문으로 전환 (시장가-지정가 전환 방식) |
+| **시장가-지정가전환주문 (Market-to-Limit Order)** | 최우선 가격에서 체결; 미체결 부분은 최종 부분체결 가격의 지정가주문으로 잔류 |
+
+### 4.2 고급 주문 유형 (ASX Centre Point -- 비공개) (Advanced Order Types)
+
+| 주문 유형 | 설명 |
+|----------|------|
+| **Centre Point** | NBBO 중간가격에서 체결되는 비공개 주문; 공개시장 대비 가격 개선 제공 |
+| **Centre Point Block** | 사용자 정의 최소수락수량(MAQ) 설정 Centre Point 주문; MAQ 충족 시에만 체결 |
+| **Single Fill MAQ** | 단일 상대 주문으로 전체 MAQ 충족 가능한 경우에만 체결; 최소 정보 유출로 블록 발견 설계 |
+| **Dark Limit** | 지정 가격 이내에서 허용된 비공개 가격으로 체결되는 비공개 주문 (중간가격 제한 없음) |
+| **ASX Sweep** | 단일 거래로 Centre Point의 비공개 유동성을 먼저 소진한 후 TradeMatch의 공개 유동성 소진; 잔여 물량은 TradeMatch에 잔류 |
+| **ASX Sweep Dual Post** | Centre Point와 TradeMatch에 지정가 +1/2 호가단위로 동시 게시; 과다체결 위험 없음 |
+| **추적주문 (Pegged Order)** | 최우선 매수호가 또는 매도호가를 자동 추적하여 가격 조정 [미검증 -- 구체적 추적주문 가용 여부 상이할 수 있음] |
+
+### 4.3 주문 유효기간 (Time-in-Force Options)
+
+| TIF 옵션 | 설명 |
+|----------|------|
+| **당일 (Day)** | 당일 매매시간에만 유효; 장 종료 시 취소 |
+| **즉시체결잔량취소 (IOC)** | 즉시(전량 또는 부분) 체결; 미체결 부분 취소 |
+| **전량체결아니면취소 (FOK)** | 즉시 전량 체결 또는 전체 주문 취소 |
+| **취소시까지 (GTC)** | 체결 또는 명시적 취소 시까지 유효 (최대 주문 유효기간 적용) |
+| **지정일까지 (GTD)** | 지정 날짜까지 유효, 또는 체결/취소 시까지 |
+| **만기시까지 (GTE)** | 해당 종목의 만기일까지 유효 |
+
+### 4.4 주문 정정 / 취소 (Order Modification / Cancellation)
+
+- 프리오픈 및 접속매매 시간 중 주문 정정(가격, 수량) 또는 취소 가능
+- 가격 정정 시 시간 우선순위 상실 (새 시간 부여)
+- 수량 감소(하향 정정)는 시간 우선순위 유지
+- 경매의 취소불가(Non-Cancel) 기간에는 취소 또는 정정 불가
+- ASX Operating Rules에 따라 참가자는 주문 관리·통제를 위한 적절한 시스템을 갖추어야 함
+
+---
+
+## 5. 매매 시스템 (기술) (Trading System / Technology)
+
+| 항목 | 내용 |
+|------|------|
+| 시스템명 | ASX Trade (현물주식); ASX 24 (파생상품) |
+| 벤더 | NASDAQ OMX Genium INET 플랫폼 |
+| 아키텍처 | Australian Liquidity Centre (ALC)의 중앙집중형 매매체결엔진(매칭엔진); 통신사 중립 데이터센터 |
+| 매매체결엔진 (매칭엔진) | Genium INET -- 다중 호가창, 경매 및 연속 체결, 통합 공개/비공개 지원 |
+| 왕복 지연시간 | 약 300마이크로초 (2010년 출시 당시; 이전 SEATS 시스템의 30ms에서 개선) [미검증 -- 이후 최적화로 현재 지연시간이 더 낮을 수 있음] |
+| 주문 처리 용량 | 초당 100,000건 이상 (2010년 출시 당시; SEATS의 20,000건에서 증가) |
+| 초당 메시지 수 | [구체적 현재 수치 미공개] |
+| 가동 연도 | 2010년 (ASX Trade 현물주식); 2010년 (ASX 24 파생상품, 10월) |
+
+### 시스템 변천사 (System History)
+
+| 기간 | 시스템 | 비고 |
+|------|--------|------|
+| 1987 - 2006 | SEATS (Stock Exchange Automated Trading System) | 최초의 완전 전자매매 시스템; 공개호가 방식 대체 |
+| 2006 - 2010 | ITS (Integrated Trading System) | ASX-SFE 합병 후 중간 업그레이드 |
+| 2010 - 현재 | ASX Trade (Genium INET) | NASDAQ OMX 플랫폼; 2010년 11월 29일 출시; 용량 및 지연시간 대폭 개선 |
+| 2010 - 현재 | ASX 24 (Genium INET) | 파생상품 플랫폼; 2010년 10월 11일 출시 |
+| 1996 - 현재 | CHESS | Clearing House Electronic Subregister System; 결제 및 하위등록부 처리; 대체 진행 중 |
+
+### 기술 스택 (Technology Stack)
+
+- **매매 엔진:** NASDAQ Genium INET (C/C++ 기반 매매체결엔진)
+- **데이터센터:** Australian Liquidity Centre (ALC), Gore Hill, Sydney -- 금융시장 전용 Tier III 데이터센터
+- **네트워크:** ASX Net -- ALC에서 참가자 사무실 및 Sydney·Melbourne 내 기타 데이터센터를 연결하는 고성능 다크파이버 광 네트워크
+- **프로토콜:** FIX (주문 접수), OUCH (초저지연 주문 접수), ITCH (초저지연 시세정보), GLIMPSE (호가창 스냅샷)
+
+### 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)
+
+- ASX는 재해복구를 위한 보조 데이터센터를 운영한다 [구체적 위치 미공개]
+- 업무연속성 계획은 매매 시스템 장애조치, CHESS 운영, 청산 프로세스를 포괄
+- 2024년 12월 CHESS 일괄결제 장애는 운영 복원력의 심각한 취약점을 노출시켜 규제 조치를 촉발하였다 (제9장 및 제11장 참조)
+
+---
+
+## 6. 시세정보 (Market Data)
+
+### 6.1 데이터 피드 프로토콜 (Data Feed Protocols)
+
+| 프로토콜 | 설명 | 용도 |
+|----------|------|------|
+| **ASX ITCH** | 나노초 타임스탬프를 갖춘 전체 호가창 상세를 제공하는 초저지연 바이너리 멀티캐스트 프로토콜 | 알고리즘/HFT 업체를 위한 주요 피드; 전체 호가 깊이 |
+| **GLIMPSE** | ITCH를 보완하는 포인트-투-포인트 TCP 스냅샷 피드 | 호가창 복구/동기화; ITCH 재동기화를 위한 시퀀스 번호를 포함한 현재 상태 스냅샷 제공 |
+| **FIX Market Data** | 시세정보 전달을 위한 산업 표준 FIX 프로토콜(금융정보교환 규약) | 보다 넓은 참가자 커뮤니티; 저지연 요건 |
+| **ASX MDF (Market Data Feed)** | [레거시/대체 시세정보 배포] | 일반 시세정보 소비 |
+
+### 6.2 데이터 수준 (Data Levels)
+
+- **Level 1 (최우선호가):** 최우선 매수·매도호가 및 수량; 최종 체결가, 거래량; 일중 고가/저가/시가/종가
+- **Level 2 (시장 깊이):** 호가창의 복수 가격 수준 (통상 5~10 수준의 집계된 호가 깊이)
+- **전체 호가 깊이 (ITCH):** 호가창의 완전한 주문별 조회; 모든 주문 추가, 정정, 취소, 체결 이벤트; 전체 가격 수준
+
+### 6.3 배포 인프라 (Distribution Infrastructure)
+
+- **직접 피드:** ALC 코로케이션(전산센터 공동입주) 또는 ASX Net 연결을 통해 이용 가능
+- **재배포사:** ASX 실시간 데이터는 Refinitiv (LSEG), Bloomberg, FactSet 등 주요 벤더를 통해 배포
+- **ASX Information Services:** 모든 ASX 시세정보 상품의 라이선스 및 배포 관리
+- **전달:** ITCH는 UDP 멀티캐스트; GLIMPSE는 TCP (SoupBinTCP); FIX는 TCP
+
+### 6.4 과거 데이터 (Historical Data)
+
+- ASX는 ASX Information Services를 통해 종가 데이터, 틱별 과거 데이터, 참조 데이터를 제공한다
+- 제3자 제공자(예: Refinitiv, TickData)가 가공된 ASX 과거 데이터 상품을 제공
+- 기업 행위 및 공시 데이터는 ASX의 기업 공시 플랫폼을 통해 이용 가능
+
+---
+
+## 7. 접속 및 이용 (Connectivity & Access)
+
+### 7.1 회원 자격 / 참가 (Membership / Participation)
+
+- **시장 참가자:** Australian Market Licence (AML) 보유 또는 Corporations Act 2001에 따라 ASIC에 의해 시장 참가자로 인가 필요
+- **매매 참가자:** 자본적정성, 조직 역량, 시스템 인증 등 ASX Operating Rules 요건 충족 필요
+- **청산 참가자:** ASX Clear (현물) 및 ASX Clear (Futures)에 대한 별도 회원 필요; 자본 요건 및 리스크 관리 의무 적용
+- **결제 참가자:** CHESS 참여를 위해 ASX Settlement의 승인 필요
+
+### 7.2 접속 방법 (Connection Methods)
+
+| 방법 | 설명 |
+|------|------|
+| **코로케이션 (ALC)** | Australian Liquidity Centre의 직접 랙 공간; 매매체결엔진까지 동일 길이 크로스커넥트 |
+| **ASX Net** | ALC에서 Sydney 및 Melbourne 내 참가자 사무실 및 기타 데이터센터를 연결하는 ASX의 고성능 다크파이버 네트워크 |
+| **제3자 네트워크** | 통신사 중립 ALC는 선호 네트워크 제공자(예: BT Radianz, IPC, TNS)를 통한 연결 허용 |
+| **인터넷/VPN** | 지연시간 민감도가 낮은 연결(예: 감시, 보고)에 사용 가능 |
+
+### 7.3 코로케이션 (전산센터 공동입주) / 근접 서비스 (Co-location / Proximity Services)
+
+- **위치:** Australian Liquidity Centre (ALC), Gore Hill, Sydney, NSW
+- **시설:** 2012년 개설된 금융시장 전용 Tier III 데이터센터
+- **균등 접속:** 모든 코로케이션 참가자에게 매매체결엔진까지 동일 길이 크로스커넥트 제공
+- **입주자:** 100개 이상 금융기관(바이사이드, 셀사이드, 대체유동성장소, ISV, 네트워크 제공자 포함)
+- **피어투피어:** 크로스커넥트 패브릭을 통해 ALC 내 참가자 간 직접 연결 가능
+
+### 7.4 API 프로토콜 (API Protocols)
+
+| 프로토콜 | 용도 |
+|----------|------|
+| **FIX (Financial Information eXchange)** | 표준 주문 접수 및 체결; 대부분 참가자에 적합 |
+| **OUCH** | 알고리즘 및 고빈도 매매에 최적화된 초저지연 바이너리 주문 접수 프로토콜 |
+| **ITCH** | 전체 호가 깊이를 멀티캐스트로 제공하는 초저지연 바이너리 시세정보 프로토콜 |
+| **GLIMPSE** | 세션 복구를 위한 TCP 기반 호가창 스냅샷 복구; ITCH 보완 |
+| **OMNet / OMEX** | 레거시 API 인터페이스 [미검증 -- 플랫폼 업그레이드로 폐지되었을 수 있음] |
+
+### 7.5 인증 / 테스트 (Certification / Testing)
+
+- 모든 시장 참가자는 운영 환경 연결 전에 ASX 인증 테스트를 완료해야 함
+- ASX는 테스트를 위한 Customer Development Environment (CDE) 제공
+- 참가자는 중대한 시스템 변경(ASX 측 또는 참가자 측) 후 재인증 필요
+- 기술 문서는 ASX Online (asxonline.com)을 통해 제공
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 가격 제한 (Price Limits)
+
+| 유형 | 기준 | 조치 |
+|------|------|------|
+| **이상주문 기준 (Anomalous Order Threshold, AOT)** | 롤링 2분 VWAP 참조가격(매분 갱신) 대비 +/- 10% | AOT를 초과하는 가격의 주문은 거부; 대량 오류주문 및 오류주문 방지 |
+| **극단거래범위 (Extreme Trade Range, ETR)** | 종목별 가격 범위 (각 종목 특성에 따라 산출) | 잠재 체결이 ETR을 위반할 경우, 해당 종목의 매매가 2분간 일시 정지 |
+
+### 8.2 서킷브레이커 (매매거래중단) (Circuit Breakers)
+
+| 메커니즘 | 발동 조건 | 조치 |
+|----------|----------|------|
+| **극단거래범위 (ETR) 일시 정지** | 체결이 특정 종목의 ETR 범위 밖에서 실행될 경우 | 해당 종목 2분간 매매 일시 정지; 다른 종목은 정상 거래 |
+| **시장 전체 서킷브레이커** | ASX는 지수 하락 기준의 공식적 시장 전체 서킷브레이커를 운영하지 않음 (NYSE/NASDAQ과 달리) | ASX는 개별 종목 수준 관리(ETR/AOT)에 의존하며 이례적 상황에서 시장을 중단할 재량권 보유 |
+| **매매 정지 (Trading Halt)** | 상장법인의 요청 또는 ASX가 가격민감성 공시 대기 중 부과 | 공시가 발표되고 시장이 정보를 흡수할 시간이 주어질 때까지 매매 정지 |
+| **상장 정지 (Suspension)** | 상장 규칙 미준수, ASIC 지시, 기타 규제적 사유로 ASX가 부과 | 문제가 해결될 때까지 무기한 매매 정지 |
+
+**ASX의 철학:** ASX는 포괄적인 시장 전체 서킷브레이커보다 개별 종목 수준 관리(AOT/ETR)를 선호한다는 입장을 공개적으로 밝혀왔으며, 대상이 제한된 메커니즘이 영향을 받지 않는 종목의 매매를 불필요하게 중단하지 않으면서 질서 있는 시장 유지에 더 효과적이라고 주장한다.
+
+**KRX 비교:** KRX는 시장 전체 서킷브레이커(KOSPI 지수 8%/15%/20% 하락 시 발동)와 개별 종목 변동성완화장치(VI)를 모두 운영한다. ASX는 시장 전체 서킷브레이커를 공식적으로 운영하지 않는 점에서 KRX와 대조적이다.
+
+### 8.3 매매 전 리스크 관리 (Pre-trade Risk Controls)
+
+- **이상주문 기준 (AOT):** 참조가격 대비 +/- 10%를 초과하는 적극적 주문 방지
+- **주문 크기 제한:** ASX Operating Rules에 따라 참가자는 자체 주문 크기 관리를 시행해야 하며; ASX도 시스템 수준 한도 설정 가능
+- **참가자 수준 관리:** 매매 참가자는 최대 주문 금액 검사 및 포지션 한도를 포함한 매매 전 리스크 관리 시스템 유지 의무
+- **Kill Switch:** ASX는 긴급 상황에서 참가자가 모든 잔류 주문을 취소할 수 있는 대량 취소(mass cancel) 기능 제공
+
+### 8.4 Kill Switch
+
+- 참가자는 FIX 또는 OUCH 프로토콜을 통해 대량 취소 요청을 발행하여 모든 미체결 주문 취소 가능
+- ASX도 ASX Operating Rules에 따라 이례적 상황에서 시장으로부터 주문을 취소하거나 제거할 수 있는 자체 권한을 행사 가능
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관 (Supervising Authority)
+
+- **ASIC (Australian Securities and Investments Commission):** 주요 감독기관; 시장 감시, 시장 운영자 및 참가자 인가, 시장 건전성 규칙 집행, 소비자 보호 담당
+- **RBA (Reserve Bank of Australia):** Financial Stability Standards에 따라 청산·결제 시설 인가자를 감독; ASX Clear와 ASX Settlement의 준수 여부를 연간 평가
+- **ASX Compliance:** ASX의 내부 준법 기능으로 상장법인의 상장 규칙 준수를 모니터링 (ASIC의 시장 감시 역할과 별개)
+
+### 9.2 주요 규제 (Key Regulations)
+
+- **Corporations Act 2001 (Cth):** 금융시장을 규율하는 주요 법률, Part 7.2 (시장 인가), Part 7.3 (청산·결제 시설 인가), Part 7.10 (시장 건전성) 포함
+- **ASIC Market Integrity Rules (Securities Markets) 2017:** 매매 행위, 최선집행, 주문 처리, 시세조종을 규율하는 상세 규칙
+- **ASIC Market Integrity Rules (Competition in Exchange Markets) 2011:** 매매장소 간 경쟁(ASX vs. Cboe Australia)을 규율하는 규칙
+- **ASX Operating Rules:** 매매 참가자, 주문 접수, 시장 행위를 규율하는 거래소 고유 규칙
+- **ASX Listing Rules:** 상장법인의 입회 및 지속적 의무, 지속적 공시, 특수관계인 거래, 주주 승인 요건을 규율
+- **ASX Clear Operating Rules / ASX Settlement Operating Rules:** 청산 및 결제 참가자를 규율
+- **Financial Stability Standards (RBA):** ASX Clear 및 ASX Settlement이 청산·결제 시설 인가를 유지하기 위해 충족해야 하는 기준
+
+### 9.3 시장 감시 (Market Surveillance)
+
+- **ASIC 시장 감시:** ASIC가 2010년 8월 ASX로부터 직접 시장 감시 책임을 인수 (2012년 공식화), SMARTS 감시 시스템 사용
+- **실시간 모니터링:** ASIC가 ASX 및 Cboe Australia 전반의 모든 매매 활동을 시세조종, 내부자거래 등 위법행위에 대해 실시간 모니터링
+- **ASX 상장 준법:** ASX는 상장 규칙(지속적 공시, 기업지배구조) 준수 모니터링 책임을 유지
+- **ASIC의 ASX 조사 (2025-2026):** ASIC가 2024년 12월 CHESS 결제 장애 및 기타 사건에 따라 2025년 6월 ASX Group에 대한 공식 조사를 개시; 조사는 모든 ASX 인가 법인의 지배구조, 역량, 리스크 관리를 검토
+
+### 9.4 보고 의무 (Reporting Requirements)
+
+- **지속적 공시:** 상장법인은 ASX Listing Rule 3.1 및 Corporations Act 제674조에 따라 가격민감성 정보를 즉시 공시해야 함
+- **거래 보고:** 시장 참가자는 모든 거래를 ASIC에 보고해야 함
+- **대량 보유 통지:** 보유 비율이 5% 기준을 초과할 때(이후 1% 변동 시마다) 공시 필요
+- **공매도 보고:** 차입 공매도의 일별 보고; 무차입 공매도는 금지
+
+### 9.5 국경 간 협정 (Cross-border Arrangements)
+
+- ASX는 여러 해외 거래소 및 감독기관과 상호인정 협정 체결
+- 해외 기업은 Foreign Exempt 상장 범주로 ASX에 상장 가능
+- ASIC는 IOSCO에 참여하며 다수의 국제 감독기관과 MoU 체결
+- ASX-SGX 합병 제안(2010-2011)은 외국인 인수 및 합병법(Foreign Acquisitions and Takeovers Act)에 따라 국익을 이유로 호주 정부가 불허
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 매매 수수료 (Trading Fees)
+
+| 수수료 유형 | 구조 | 요율 (대략) |
+|------------|------|------------|
+| **매매 수수료 (TradeMatch)** | 거래대금 기준 | 참가자 등급 및 활동 수준에 따라 편당 약 0.15-0.28 bps [미검증 -- 2026년 1월 수수료표 기준 구체적 요율] |
+| **Centre Point 매매 수수료** | 거래대금 기준; 가격 개선으로 인해 통상 TradeMatch보다 높음 | 공개시장 매매 수수료 대비 프리미엄 [미검증 -- 구체적 요율 공개 요약 없음] |
+| **청산 수수료 (ASX Clear)** | 거래당 수수료 또는 거래대금 기준 구성요소 | 2025년 7월 시행된 신규 수익상한 가격정책 적용 |
+| **결제 수수료 (ASX Settlement)** | 결제 지시당 | 2025년 7월 시행된 신규 수익상한 가격정책 적용 |
+
+**참고:** 2025년 7월, ASX는 현물주식 청산, 결제, 발행사 서비스에 대해 효율적 서비스 제공에 필요한 금액에 합리적 수익률을 더한 수준으로 수익을 상한하는 신규 가격정책을 시행하였다. 이는 ASIC CS Services Rules 2025에 따라 도입되었으며, 청산·결제 분야에서 ASX의 독점적 지위를 반영한다.
+
+### 10.2 기타 수수료 (Other Fees)
+
+**상장 수수료:**
+- **초기 상장 수수료:** 상장 증권 가치 기준 산출; 표준 상장 최소 약 AUD 30,000; Foreign Exempt 상장 AUD 100,000~1,000,000
+- **연간 상장 수수료:** 매년 5월 31일 기준 상장 증권 가치로 산출; 시가총액 구간별 상이
+- **상장 정지 법인 수수료:** 6개월 이상 상장 정지된 법인에 연간 AUD 30,000
+- **상장 수익 (FY2025):** AUD 2.08억
+
+**시세정보 수수료:**
+- 실시간 데이터(Level 1, Level 2, 전체 호가 깊이), 지연 데이터, 과거 데이터에 대한 수수료
+- ASX Information Services를 통해 라이선스; 재배포사는 사용자별 수수료 지불
+- 구체적 수수료표는 ASX Information and Technical Services에서 제공
+
+**코로케이션 수수료:**
+- ALC의 랙 공간, 전력, 크로스커넥트 수수료
+- 매매체결엔진까지 크로스커넥트에 대한 균등 접속 가격 모델
+
+### 10.3 수익 구성 (FY2025) (Revenue Breakdown)
+
+| 부문 | 수익 (AUD M) | 전년 대비 변화 |
+|------|-------------|--------------|
+| 상장 | 208.0 | -0.1% |
+| 시장 (선물, OTC, Austraclear) | 349.2 | +10.7% |
+| 기술 및 데이터 | [전체에 포함] | -- |
+| **전체 영업수익** | **1,107.2** | **+7.0%** |
+| **기초 순이익** | **510.0** | **+7.5%** |
+| **주당 배당금** | **223.3 cps** | 완전 프랭킹 |
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### CHESS 대체 사태 (주요 이슈) (CHESS Replacement Saga)
+
+CHESS 대체 프로젝트 실패는 세계 거래소 역사상 가장 중대한 기술 실패 중 하나이다:
+
+**Phase 1 -- DLT/블록체인 접근 (2015-2022):**
+- 2015: ASX가 CHESS 대체를 위한 DLT 탐색에 Digital Asset Holdings (DA) 선정
+- 2017: ASX가 DA의 분산원장기술을 활용한 CHESS 대체 공식 발표
+- 2018-2022: 반복적 지연; 가동 목표일이 여러 차례 연기 (최초 2020년, 이후 2021, 2022, 2023년)
+- 2022년 11월: Accenture의 독립 검토에서 소프트웨어가 63% 완성에 불확실한 일정과 과도하게 복잡한 통합 설계를 갖춘 것으로 확인된 후 ASX가 DLT 기반 프로젝트 중단
+- 재무적 영향: 약 AUD 2.5억 상각
+- 핵심 교훈: 검증되지 않은 기술(엔터프라이즈 블록체인)로 핵심 시장 인프라를 대체하려 한 것이 근본적 전략 오류로 식별
+
+**Phase 2 -- 기존 기술 접근 (2023-현재):**
+- 2023: ASX가 새로운 구현 파트너로 Tata Consultancy Services (TCS) 선정
+- 2단계 접근: Phase 1 (청산) 2026년 4월 말 목표; Phase 2 (결제 및 하위등록부) 2028-2029년 목표
+- DLT에서 기존 기술 스택으로 완전 전환
+- CHESS 대체 Release One 가동 목표일: 2026년 4월 말 [변경 가능]
+
+### 2024년 12월 CHESS 결제 장애 (December 2024 CHESS Settlement Failure)
+
+- 2024년 12월 20일: CHESS 일괄결제가 완료되지 못하여 모든 결제가 다음 월요일로 연기
+- 근본 원인: 2014년 도입된 메모리 할당 코딩 오류로 특정 조건이 발동될 때까지 10년간 미감지
+- 영향: 호주 시장의 모든 현물주식 거래 결제 차질
+- 2025년 3월 전례 없는 RBA-ASIC 공동 개입 촉발
+
+### ASIC의 ASX Group 조사 (2025-2026) (ASIC Inquiry)
+
+- 2025년 3월: RBA와 ASIC가 ASX의 운영 리스크 관리에 대한 "깊은 우려"를 표명하는 공동 서한 발송
+- 2025년 6월: ASIC가 모든 ASX 인가 법인(시장 인가 및 청산·결제 시설 인가)의 지배구조, 역량, 리스크 관리를 포괄하는 ASX Group 공식 조사 개시
+- 조사는 ASX Group 전반의 "반복적이고 심각한 장애"를 검토
+- 2025년 12월: ASIC가 조사 중간보고서에 기반하여 금융시장 보호를 위한 "변혁적 패키지" 발표
+- 2026년 3월: ASIC가 관찰사항 및 변화 권고사항을 담은 ASX Inquiry Panel 최종 보고서 공개
+
+### 시장 구조 변경 -- SR15 (2025년 6월) (Market Structure Changes)
+
+- **단일 시가단일가매매:** 모든 종목이 동시 개장 (이전의 5개 그룹 순차 개장 대체)
+- **강화된 종가단일가매매:** CSPA 전 기간이 16:00으로 연장 (이전 16:07); 후기 가격민감성 공시 처리 개선
+- **장마감 후 매매 세션:** CSPA 이후 공식 종가에서의 10분간 신규 접속매매(연속매매, 공개시장) 세션 (16:11-16:21:30)
+- 이러한 변경은 ASX를 글로벌 모범사례(NASDAQ, HKEX, LSE와 유사)에 보다 근접시킴
+
+### T+1 결제 계획 (T+1 Settlement Plans)
+
+- 호주는 현재 T+2로 결제
+- ASX가 2024년 4월 업계 백서 발간; T+1 워킹그룹 2023년 12월 설립
+- 업계 합의: T+1은 바람직하나 CHESS 대체 완료 전에는 진행하지 않아야 함
+- 확정된 T+1 시행 일정 없음; 실현 가능 최조 시기는 2029년 이후 (CHESS Phase 2 이후)
+- 국제적 맥락: 미국 2024년 5월 T+1 시행; EU 2027년 목표; 영국 2027년 목표
+
+### 기타 동향 (Other Developments)
+
+- **토큰화 국채 결제:** ASX가 2026년 3월 토큰화 국채 결제 파일럿 출시
+- **ASIC CS Services Rules 2025:** 수익상한 방법론을 시행하는 청산·결제 서비스 가격에 대한 새로운 규제 프레임워크
+- **경쟁:** Cboe Australia가 경쟁 공개시장으로 계속 운영; ASX는 공개 장내 매매 시장점유율 약 80% 이상 유지 [미검증]
+
+---
+
+## 출처 (Sources)
+
+1. [ASX Official Website](https://www.asx.com.au) -- 거래소 개요, 매매 시간, 상장 규칙, 수수료표
+2. [ASX Cash Market Trading Hours](https://www.asx.com.au/markets/market-resources/trading-hours-calendar/cash-market-trading-hours) -- 매매 세션 상세
+3. [ASX Centre Point](https://www.asx.com.au/markets/trade-our-cash-market/asx-equities-trading/asx-centre-point) -- 비공개 풀 주문 유형
+4. [ASX Trade Technical Documentation](https://www.asxonline.com/public/documents/asx-trade-refresh-manuals.html) -- FIX, OUCH, ITCH 사양
+5. [ASX Australian Liquidity Centre](https://www.asx.com.au/alc) -- 코로케이션 및 연결
+6. [ASX Fee Schedules](https://www.asx.com.au/markets/market-resources/asx-schedule-of-fees) -- 매매, 청산, 결제, 상장 수수료
+7. [NASDAQ Press Release: ASX Launches Next Generation Trading Platform](https://ir.nasdaq.com/news-releases/news-release-details/asx-launches-next-generation-trading-platform-powered-nasdaq) -- ASX Trade 기술 사양 (2010)
+8. [ASX Annual Report 2025](https://www.asx.com.au/content/dam/asx/annual-reports/asx-2025-annual-report.pdf) -- 재무 실적
+9. [ASX Regulatory Framework](https://www.asx.com.au/about/regulation) -- 규제 개요
+10. [ASIC Inquiry into ASX](https://www.asic.gov.au/regulatory-resources/markets/inquiry-into-asx/) -- 2025-2026 조사 상세
+11. [ASIC Media Release 25-050MR: RBA and ASIC act on deep concerns with ASX](https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2025-releases/25-050mr-rba-and-asic-act-on-deep-concerns-with-asx/) -- CHESS 결제 장애 대응
+12. [ASIC Media Release 26-059MR: ASIC publishes ASX Inquiry Panel Final Report](https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-059mr-asic-publishes-asx-inquiry-panel-final-report-and-acknowledges-observations/) -- 조사 결론
+13. [ASX Changes to Equity Market Structure](https://www.asx.com.au/blog/listed-at-asx/changes-to-equity-market-structure) -- SR15 시장 구조 변경
+14. [ASX T+1 Settlement Cycle](https://www.asx.com.au/markets/clearing-and-settlement-services/t1-settlement-cycle) -- T+1 협의
+15. [Henrico Dolfing: ASX CHESS Blunder Case Study](https://www.henricodolfing.com/2025/01/case-study-asx-chess-disaster.html) -- CHESS DLT 프로젝트 실패 분석
+16. [ASX Market Volatility FAQs](https://www.asx.com.au/markets/market-resources/market-volatility-faqs) -- 서킷브레이커 및 AOT/ETR 상세
+17. [Australian Securities Exchange - Wikipedia](https://en.wikipedia.org/wiki/Australian_Securities_Exchange) -- 역사적 배경
+18. [Statista: Monthly ASX Domestic Market Cap](https://www.statista.com/statistics/1274954/monthly-asx-domestic-market-cap/) -- 시가총액 데이터
+19. [CEIC: Australian Stock Exchange Market Capitalization](https://www.ceicdata.com/en/australia/australian-stock-exchange-market-capitalization) -- AUD 3.4조 (2026년 2월)
+20. [ASX Order Controls](https://www.asx.com.au/markets/trade-our-cash-market/asx-equities-trading/order-controls) -- AOT 및 ETR 사양

@@ -1,0 +1,446 @@
+# Bursa Malaysia Berhad (Bursa Malaysia)
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 3
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Bursa Malaysia Berhad |
+| Abbreviation | Bursa Malaysia (formerly KLSE) |
+| Website | https://www.bursamalaysia.com |
+| Year Established | 1973 as Kuala Lumpur Stock Exchange (KLSE); renamed Bursa Malaysia in April 2004 |
+| Country / City | Malaysia / Kuala Lumpur (Exchange Square, Bukit Kewangan) |
+| Ownership Structure | Publicly listed on its own Main Market (ticker: BURSA, stock code 1818) |
+| Parent Company / Group | Self-listed exchange holding company |
+| Regulatory Authority | Securities Commission Malaysia (SC) |
+| Market Capitalization (listed companies) | ~RM 1.9 trillion (~USD 430 billion) as of 1H 2025; exceeded RM 2 trillion briefly in May 2024 |
+| Total Listed Instruments | ~1,051 listed companies + 22 non-company listings (ETFs, REITs, SPACs, business trusts) across all markets |
+| Average Daily Trading Volume | [unverified] ~3-5 billion shares |
+| Average Daily Trading Value | ~RM 2.5-3.0 billion; retail SDAV approximately RM 450 million (2025) [unverified â exact consolidated figure varies by period] |
+
+**Bursa Malaysia Berhad Market Cap (the exchange itself):** ~RM 7.25 billion (~USD 1.6 billion) as of February 2026.
+
+### Key Historical Milestones
+- **1930:** Earliest formal securities trading in Malaya via the Singapore Stockbrokers' Association
+- **1964:** Stock Exchange of Malaysia established (joint exchange with Singapore)
+- **1973:** Kuala Lumpur Stock Exchange (KLSE) formally established as a separate entity following the de-linking of currencies between Malaysia and Singapore
+- **1976:** KLSE incorporated as a company limited by guarantee
+- **1994:** KLSE moved to its current location at Exchange Square, Bukit Kewangan, Kuala Lumpur
+- **2004 (5 Jan):** KLSE demutualized pursuant to the Demutualisation (Kuala Lumpur Stock Exchange) Act 2003; became a public company limited by shares (KLSE Berhad)
+- **2004 (14 Apr):** Renamed to Bursa Malaysia Berhad; securities exchange business vested in subsidiary Bursa Malaysia Securities Berhad (BMSB)
+- **2005 (18 Mar):** Bursa Malaysia listed on its own Main Board via IPO
+- **2009 (3 Aug):** Tick sizes reduced to improve liquidity and narrow bid-ask spreads
+- **2013 (2 Dec):** Launched Bursa Trade Securities 2 (BTS2) powered by Nasdaq's X-Stream INET, replacing the NSC engine from NYSE Technologies
+- **2019 (29 Apr):** Settlement cycle shortened from T+3 to T+2
+- **2021 (1 Apr):** MSPO (Malaysian Sustainable Palm Oil) certification mandated for FCPO physical delivery â first exchange globally to require sustainability certification for commodity derivatives delivery
+- **2025:** Bursa Malaysia recorded RM 1.9 trillion overall market cap in 1H 2025; continued leadership in ASEAN IPO activities
+
+### Key Indices
+| Index | Description |
+|-------|-------------|
+| **FTSE Bursa Malaysia KLCI (FBM KLCI)** | Flagship benchmark; 30 largest companies by market cap (free-float weighted); jointly operated by FTSE Russell and Bursa Malaysia; minimum 15% free float required |
+| **FBM Emas** | Broader index comprising constituents of FBM KLCI + FBM Small Cap |
+| **FBM ACE** | Tracks all eligible companies on the ACE Market |
+| **FBM Hijrah Shariah** | Shariah-compliant index for Islamic investors |
+| **FBM KLCI Futures** | Derivative product based on FBM KLCI |
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| **Main Market** | Primary market for established companies with strong operating and profit track records | Minimum market cap RM 500 million upon listing; profit track record or market cap threshold; minimum 25% public spread (or 15% for large-cap companies); approved prospectus required |
+| **ACE Market** | Sponsor-driven alternative market for companies with growth potential; no minimum size or profit requirement | Sponsor-supervised; no quantitative criteria set by Bursa (sponsor determines suitability); must be primary listing; higher risk disclosure required |
+| **LEAP Market** | Adviser-driven market for emerging companies and SMEs seeking fundraising access | Available only to sophisticated investors; no operating or financial track record required; adviser-driven (not sponsor-driven); limited to qualified institutional and high-net-worth investors |
+
+**Shariah-Compliant Market Significance:** As of May 2025, approximately 850 of 1,056 listed securities (~80%) are classified as Shariah-compliant by the SC's Shariah Advisory Council (SAC). Shariah-compliant assets exceed RM 2.6 trillion and represent approximately 63% of the national capital market as at end-2024. Malaysia is one of the world's largest Islamic capital markets, and this Shariah classification is a defining characteristic of Bursa Malaysia that distinguishes it from most other exchanges globally. The SAC updates the list biannually (May and November).
+
+### 2.2 Trading Sessions
+
+**Note:** Malaysia is UTC+8 (MYT â Malaysia Time) year-round (no daylight saving time).
+
+**Normal Day Trading**
+
+| Session | Local Time (MYT) | UTC | Description |
+|---------|------------------|-----|-------------|
+| Pre-Opening | 08:30 - 09:00 | 00:30 - 01:00 | Orders can be entered, amended, cancelled; no matching; Theoretical Opening Price (TOP) and Volume (TOV) disseminated |
+| Morning Continuous Trading | 09:00 - 12:30 | 01:00 - 04:30 | Continuous order matching by price-time priority |
+| **Lunch Break** | **12:30 - 14:00** | **04:30 - 06:00** | **No trading; 1.5-hour mid-day break** |
+| Pre-Opening (Afternoon) | 14:00 - 14:30 | 06:00 - 06:30 | Order entry for afternoon session; unmatched morning orders carried forward |
+| Afternoon Continuous Trading | 14:30 - 16:45 | 06:30 - 08:45 | Continuous order matching by price-time priority |
+| Pre-Closing | 16:45 - 16:50 | 08:45 - 08:50 | Orders can be entered; closing auction price computed |
+| Closing Auction | 16:50 | 08:50 | Single-price matching determines closing price |
+| Trading at Last | 16:50 - 17:00 | 08:50 - 09:00 | Orders matched continuously at closing price only |
+
+**Asia-Specific Feature â Lunch Break:** Bursa Malaysia maintains a 1.5-hour lunch break (12:30-14:00 MYT), similar to other major Asian exchanges. In 2013, Bursa removed the pre-closing and trading-at-last phases from the morning session, simplifying the first session end.
+
+**Half-Day Trading:** On half days, only the morning session operates (08:30-12:30 MYT with closing routine).
+
+### 2.3 Tick Sizes
+
+**Securities (Shares, Warrants, ETFs)**
+
+| Price Range (RM) | Tick Size (sen) |
+|------------------|-----------------|
+| Below RM 1.00 | 0.5 sen (RM 0.005) |
+| RM 1.00 and above | 1.0 sen (RM 0.01) |
+
+*Note: The simplified two-tier tick size structure was introduced on 3 August 2009, replacing the previous multi-tier structure that had up to six price bands. This narrowing of tick sizes aimed to improve liquidity and reduce bid-ask spreads.*
+
+**Exchange Traded Funds (ETFs)**
+
+| Price Range (RM) | Tick Size (sen) |
+|------------------|-----------------|
+| Below RM 1.00 | 0.1 sen (RM 0.001) |
+| RM 1.00 - RM 2.995 | 0.5 sen (RM 0.005) |
+| RM 3.00 and above | 1.0 sen (RM 0.01) [unverified] |
+
+### 2.4 Lot Sizes
+
+- **Standard Board Lot:** 100 shares (for all markets â Main, ACE, LEAP)
+- **Odd Lot Trading:** Available; odd lots (fewer than 100 shares) can be traded separately in the odd lot market
+- **Fractional Trading:** The Malaysian government committed in 2023 to enabling fractional share trading on Bursa Malaysia [status of implementation unverified as of 2026]
+
+### 2.5 Market Maker / Liquidity Provider Programs
+
+- Bursa Malaysia operates a **Designated Market Maker (DMM)** programme for ETFs, structured warrants, and selected less-liquid securities [unverified â details limited]
+- Market makers are required to provide continuous two-sided quotes during trading hours
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+- **Opening Auction:** During the Pre-Opening phase (08:30-09:00 morning; 14:00-14:30 afternoon), orders accumulate without matching. The Automated Trading System (ATS) computes and disseminates the Theoretical Opening Price (TOP) and Theoretical Opening Volume (TOV). At the end of the pre-opening phase, a single-price auction determines the opening price, maximizing tradable volume.
+
+- **Closing Auction:** During the Pre-Closing phase (16:45-16:50), orders accumulate. At 16:50, a single-price matching determines the closing price. This is followed by the "Trading at Last" phase (16:50-17:00), where orders are matched continuously at the fixed closing price only.
+
+- **Intraday Auction:** No formal intraday volatility auctions are implemented [unverified].
+
+### 3.2 Continuous Trading
+
+- **Market Type:** Order-driven
+- **Matching Algorithm:** Price-time priority â orders are matched first by best price, then by earliest entry time at the same price level
+- **Morning Session:** 09:00 - 12:30 MYT (3.5 hours)
+- **Afternoon Session:** 14:30 - 16:45 MYT (2.25 hours)
+- **Total Continuous Trading:** ~5.75 hours per normal trading day
+- All unmatched orders from the morning session are automatically carried forward to the afternoon session
+
+### 3.3 Price Discovery
+
+- Opening and closing prices are determined by single-price auction algorithms that maximize tradable volume and minimize order imbalance
+- During continuous trading, prices are discovered through real-time order matching at the best available prices
+- The Theoretical Opening Price (TOP) is continuously updated and disseminated during pre-opening phases to provide transparency to market participants
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+
+| Order Type | Description |
+|------------|-------------|
+| **Limit Order** | Buy at or below / sell at or above the specified limit price |
+| **Market Order** | Executed at the best available price immediately [unverified â may have been replaced by Market-to-Limit] |
+
+### 4.2 Advanced Order Types
+
+| Order Type | Description |
+|------------|-------------|
+| **Market-to-Limit (MTL)** | Matched at current market price; remaining unmatched portion converts to a limit order at the execution price |
+| **Fill and Kill (FAK)** | Trades not matched at the desired price are automatically deleted from the order book; partial fills accepted |
+| **Minimum Quantity** | Allows specification of a minimum quantity threshold for execution |
+
+### 4.3 Time-in-Force Options
+
+| TIF | Description |
+|-----|-------------|
+| DAY | Valid for the current trading day only |
+| GTC | Good-till-cancelled [unverified] |
+| IOC | Immediate or Cancel â fill what can be filled, cancel the rest |
+
+*Note: The introduction of MTL and FAK order types was part of the BTS2 system upgrade in 2013, expanding beyond the previously limited set of just market and limit orders.*
+
+### 4.4 Order Modification / Cancellation
+
+- Orders can be entered, amended, and cancelled during pre-opening and continuous trading phases
+- During closing auction (non-cancel) phases, modifications and cancellations are restricted [unverified â exact rules to be confirmed]
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | Bursa Trade Securities 2 (BTS2) |
+| Vendor / In-house | Nasdaq (formerly NASDAQ OMX) â X-Stream INET platform |
+| Previous System | NSC trading engine from NYSE Technologies (formerly Atos Euronext) |
+| Matching Engine | Nasdaq X-Stream INET matching engine |
+| Round-trip Latency | Sub-millisecond [unverified â specific figure not publicly disclosed; Nasdaq's reference implementations achieve sub-40 microseconds] |
+| Order Processing Capacity | 10x higher capacity than predecessor BTS1 |
+| Execution Speed | Described as 1,000x faster in order/trade execution versus BTS1 |
+| Launch Year | 2 December 2013 (ahead of Q1 2014 target) |
+
+### System History
+
+| Period | System | Notes |
+|--------|--------|-------|
+| Pre-2000s | SCORE (System on Computerised Order Routing and Execution) | Early electronic trading system for KLSE [unverified] |
+| ~2000s | NSC (Nouveau Systeme de Cotation) | Licensed from NYSE Technologies (Atos Euronext); same platform used by multiple global exchanges |
+| 2013-present | Bursa Trade Securities 2 (BTS2) | Nasdaq X-Stream INET; 1,000x faster, 10x capacity vs predecessor |
+
+### Technology Stack
+
+- **Trading Engine:** Nasdaq X-Stream INET
+- **Connectivity:** FIX Protocol supported for order routing and market information via Bursa Data Access (BDA) gateways
+- **ISV/PO Access:** Independent Software Vendors (ISVs) and Participating Organisations (POs) can develop customised Order Management Systems (OMS) and connect directly to exchange gateways via FIX protocol
+- **Derivatives Platform:** CME Globex electronic trading platform (for Bursa Malaysia Derivatives products including FCPO)
+
+### Disaster Recovery / Business Continuity
+
+- Bursa Malaysia maintains business continuity plans as required by SC Malaysia regulations [unverified â specific DR site details not publicly disclosed]
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+
+| Protocol | Description | Use Case |
+|----------|-------------|----------|
+| FIX Protocol | Standard messaging via BDA gateways | Order routing and market information |
+| Proprietary Feed | Bursa Malaysia Information (BMI) data feed [unverified] | Real-time market data distribution |
+
+### 6.2 Data Levels
+
+- Level 1: Best bid/offer, last traded price, volume
+- Level 2: Market depth (multiple price levels)
+- Full Depth: Complete order book [unverified â availability may vary by subscription]
+
+### 6.3 Distribution Infrastructure
+
+- Market data distributed through authorized information vendors
+- Bursa Malaysia Information (BMI) provides real-time and historical data services [unverified]
+
+### 6.4 Historical Data
+
+- Historical data available through Bursa Malaysia website and authorized vendors
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+
+- Trading access via Participating Organisations (POs) â licensed stockbroking firms authorized by SC Malaysia
+- Remote trading participants may access via sponsored connections [unverified]
+
+### 7.2 Connection Methods
+
+| Method | Description |
+|--------|-------------|
+| FIX Gateway | Direct Market Access (DMA) via FIX protocol through BDA |
+| Broker Terminal | PO-provided trading terminals and online platforms |
+| API | Customised OMS connections via FIX protocol |
+
+### 7.3 Co-location / Proximity Services
+
+- Location: [unverified â data center details not publicly available]
+- Offerings: Co-location services available for low-latency connectivity [unverified]
+
+### 7.4 API Protocols
+
+| Protocol | Use Case |
+|----------|----------|
+| FIX 4.2+ | Order routing, execution, market data |
+| Proprietary | BDA gateway-specific protocol [unverified] |
+
+### 7.5 Certification / Testing
+
+- POs and ISVs must undergo conformance testing before connecting to the BTS2 production environment
+- Bursa Malaysia provides onboarding documentation and test environments for BTS2
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+
+| Type | Threshold | Action |
+|------|-----------|--------|
+| **Static Price Limit (Upper)** | +30% from previous closing price (for securities priced >= RM 1.00) | Orders beyond this limit are rejected |
+| **Static Price Limit (Lower)** | -30% from previous closing price (for securities priced >= RM 1.00) | Orders beyond this limit are rejected |
+| **Static Price Limit (Low-priced)** | +/- 30 sen for securities priced < RM 1.00 | Absolute limit in sen rather than percentage |
+| **Dynamic Price Limit (Upper)** | +8% from last traded price (for securities >= RM 1.00) | Prevents sudden price jumps within a session |
+| **Dynamic Price Limit (Lower)** | -8% from last traded price (for securities >= RM 1.00) | Prevents sudden price drops within a session |
+| **Dynamic Price Limit (Low-priced)** | +/- 8 sen for securities priced < RM 1.00 | Absolute dynamic limit in sen |
+
+*Note: These parameters were reinstated on 31 May 2021 following temporary revisions implemented in July 2020 during COVID-19 market volatility. During the temporary period, the SC and Bursa Malaysia had widened limits for FBM KLCI component stocks.*
+
+### 8.2 Circuit Breakers
+
+The market-wide circuit breaker is triggered automatically when the FBM KLCI declines by specified thresholds from the previous day's closing level:
+
+| Level | Trigger | Halt Duration |
+|-------|---------|---------------|
+| **Level 1** | FBM KLCI drops 10% | If triggered 09:00-11:15 or 14:30-15:30: **1-hour halt**. If triggered 11:15-12:30 or 15:30-17:00: **halt for rest of session** |
+| **Level 2** | FBM KLCI drops 15% (aggregate) | **Trading halted for the remainder of the day** |
+| **Level 3** | FBM KLCI drops 20% (aggregate) | **Trading halted for the remainder of the day** (serves as an additional safeguard) |
+
+- Circuit breakers halt trading on both Bursa Malaysia Securities Berhad and equity-linked derivative products on Bursa Malaysia Derivatives Berhad
+- Purpose: Provides a cooling-off period for information dissemination, enabling market participants to make well-considered investment decisions
+
+### 8.3 Pre-trade Risk Controls
+
+- **Fat-finger checks:** Static and dynamic price limits serve as de facto fat-finger protections
+- **Order size limits:** Maximum order size limits enforced by POs and the trading system [unverified â specific thresholds not publicly disclosed]
+- **Throttling:** System-level message throttling to prevent excessive order submission [unverified]
+
+### 8.4 Kill Switch
+
+- POs are responsible for implementing risk management controls including the ability to cancel all outstanding orders [unverified â specific kill switch mechanism details not publicly disclosed]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+
+- **Securities Commission Malaysia (SC):** Established 1 March 1993 under the Securities Commission Act 1993; self-funded statutory body with regulatory and developmental responsibilities for the Malaysian capital market
+- **Bank Negara Malaysia (BNM):** Central bank; oversees monetary policy and banking sector; coordinates with SC on financial stability matters
+- **Bursa Malaysia** itself operates as a front-line regulator (Self-Regulatory Organisation / SRO), conducting market surveillance, enforcement of listing rules, and regulation of Participating Organisations
+
+### 9.2 Key Regulations
+
+| Legislation / Rule | Description |
+|--------------------|-------------|
+| **Capital Markets and Services Act 2007 (CMSA)** | Primary legislation governing securities markets; regulates stockbroking, fund management, derivatives, and securities offerings |
+| **Securities Commission Act 1993** | Establishes the SC and defines its regulatory powers |
+| **Demutualisation (Kuala Lumpur Stock Exchange) Act 2003** | Enabled the conversion of KLSE from member-owned to a demutualized company |
+| **Rules of Bursa Malaysia Securities** | Exchange rules governing trading, listing, and market conduct |
+| **Listing Requirements (Main Market / ACE Market / LEAP Market)** | Detailed requirements for IPO and ongoing obligations |
+| **Participating Organisations' Trading Manual** | Technical and operational rules for POs |
+| **Securities Industry (Central Depositories) Act 1991** | Governs the central depository system (Bursa Depository) |
+
+### 9.3 Market Surveillance
+
+- Bursa Malaysia operates a market surveillance department that monitors trading activity for potential market manipulation, insider trading, and other irregularities
+- Real-time surveillance using automated systems to detect abnormal trading patterns
+- Cross-market surveillance coordination with SC Malaysia
+
+### 9.4 Reporting Requirements
+
+- Listed companies must comply with continuous disclosure obligations (timely disclosure of material information)
+- Quarterly financial reporting for listed companies
+- Annual reports and audited financial statements required
+- Substantial shareholding notifications (threshold: 5% and above)
+
+### 9.5 Shariah-Compliant Securities Framework
+
+This is a distinguishing feature of Bursa Malaysia's regulatory environment:
+
+- **Shariah Advisory Council (SAC):** Established under the SC, the SAC is the sole authoritative body for Shariah-compliant classification of securities on Bursa Malaysia
+- **Screening Methodology:** Two-tier quantitative approach:
+  - **Business Activity Benchmark:** Non-permissible activities (e.g., conventional banking, gambling, alcohol, tobacco) must be below threshold levels (5% for clearly prohibited activities, 20% for mixed activities, 25% for activities generally permissible but with some Shariah concerns) [unverified â exact thresholds may have been updated]
+  - **Financial Ratio Benchmark:** Conventional debt and interest-related metrics must remain below specified thresholds relative to total assets
+- **Biannual Updates:** The Shariah-compliant securities list is updated every May and November
+- **Scale:** ~80% of Bursa-listed securities are Shariah-compliant (~850 of 1,056 as of May 2025), making Malaysia one of the world's largest Islamic capital markets
+- **Effective April 2024:** Companies seeking listing no longer need to submit separate SAC applications; the SAC reviews all new listings automatically
+
+### 9.6 Cross-border Arrangements
+
+- ASEAN Trading Link initiative (though operationally limited) [unverified â status may have evolved]
+- Mutual Recognition Arrangements (MRA) with various jurisdictions [unverified]
+- CME-Bursa Malaysia link for derivatives (FCPO accessible via CME Globex)
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+
+| Fee Type | Structure | Rate |
+|----------|-----------|------|
+| Brokerage commission | Negotiable; capped by regulation | Max 0.7% for online; negotiable for institutional [unverified â caps may have been liberalized] |
+| Clearing fee | Per trade value | 0.03% of contract value, capped at RM 1,000 per trade [unverified] |
+| Stamp duty | Government levy | RM 1 per RM 1,000 of contract value, capped at RM 200 per trade [unverified] |
+
+### 10.2 Other Fees
+
+- **Listing fees:** Initial listing fees and annual listing fees based on market capitalization
+- **Market data fees:** Subscription-based via BMI and authorized vendors
+- **Depository fees:** Fees for securities deposited in Bursa Depository (CDS accounts)
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+
+- BTS2 platform continues to receive incremental upgrades for capacity and functionality
+- Trading Manual updated to Version 37 (July 2025) reflecting ongoing parameter adjustments
+
+### New Products / Segments
+
+- **FCPO MSPO Mandate (2021):** Bursa Malaysia Derivatives became the first exchange globally to mandate sustainability certification (MSPO) for physically delivered commodity futures
+- **USD Crude Palm Oil Futures (FUPO):** Cash-settled USD-denominated complement to the RM-denominated FCPO
+- **East Malaysia Crude Palm Oil Futures (FEPO):** Regional CPO futures contract
+- **Bursa Carbon Exchange (BCX):** Launched as a voluntary carbon credit exchange [unverified â launch timing to be confirmed]
+
+### Regulatory Changes
+
+- **T+2 Settlement (2019):** Shortened from T+3 to align with global standards
+- **Shariah Screening Simplification (2024):** Removed requirement for separate SAC applications for new listings
+- **Circuit Breaker Restoration (2021):** Reverted to original parameters after temporary COVID-19 widening
+
+### Strategic Initiatives
+
+- **Islamic Capital Market Leadership:** Positioning as the global hub for Islamic finance and Shariah-compliant capital markets; Shariah-compliant assets exceeding RM 2.6 trillion
+- **ASEAN IPO Leadership:** Maintained leading position in Southeast Asian IPO activities in 2025
+- **Palm Oil Derivatives:** Global benchmark status for crude palm oil pricing through FCPO (traded since 1980, with daily settlement accessible globally via CME Globex)
+- **Retail Participation:** Active retail investor base with significant participation in daily trading value
+
+### Palm Oil Futures â Derivatives Highlight
+
+While this file focuses on the equities domain, Bursa Malaysia's derivatives arm (Bursa Malaysia Derivatives Berhad) is globally significant:
+
+- **FCPO (Crude Palm Oil Futures):** Launched October 1980; the global benchmark for crude palm oil pricing. Ringgit-denominated, physically delivered. Actively used by plantation companies, refineries, millers, exporters, global fund managers, and CTAs.
+- **Global Access:** FCPO and other Bursa derivatives products are accessible via CME Globex electronic trading platform, enabling worldwide participation.
+- **MSPO Certification:** From 1 April 2021, all FCPO physical deliveries require MSPO (Malaysian Sustainable Palm Oil) certification â a world first for exchange-traded commodity derivatives.
+- **Contract Size:** 25 metric tonnes per contract; minimum price fluctuation of RM 1.00 per metric tonne.
+
+---
+
+## Sources
+
+1. Bursa Malaysia Official Website â https://www.bursamalaysia.com (accessed April 2026)
+2. Bursa Malaysia â Trading Sessions â https://www.bursamalaysia.com/trade/trading_resources/equities/trading_sessions
+3. Bursa Malaysia â Board Lot â https://www.bursamalaysia.com/trade/trading_resources/equities/board_lot
+4. Bursa Malaysia â Order Types â https://www.bursamalaysia.com/trade/trading_resources/equities/order_types
+5. Bursa Malaysia â FAQs on Circuit Breaker â https://www.bursamalaysia.com/reference/faqs/securities/faqs_on_circuit_breaker
+6. Bursa Malaysia â BTS2 On-Boarding â https://www.bursamalaysia.com/trade/our_products_services/bts2_on_boarding/overview
+7. Bursa Malaysia â POs Trading Manual V37 (14 July 2025) â https://www.bursamalaysia.com/sites/5d809dcf39fba22790cad230/assets/68765762e6414a4bcabbc0c6/POs_Trading_Manual_V37_14_July_2025.pdf
+8. Bursa Malaysia â Crude Palm Oil Futures (FCPO) â https://www.bursamalaysia.com/trade/our_products_services/derivatives/commodity_derivatives/crude_palm_oil_futures
+9. Securities Commission Malaysia â Shariah-Compliant Securities â https://www.sc.com.my/development/icm/shariah-compliant-securities
+10. Securities Commission Malaysia â Shariah Screening Methodology FAQ â https://www.sc.com.my/regulation/regulatory-faqs/frequently-asked-questions-on-revised-shariah-screening-methodology
+11. BERNAMA â "Bursa Malaysia Records RM1.9 Trillion Overall Market Cap in 1H2025" â https://www.bernama.com/en/news.php?id=2449543
+12. BusinessToday â "Bursa Malaysia Champions RM2.6 Trillion Islamic Market Push" (August 2025) â https://www.businesstoday.com.my/2025/08/07/bursa-malaysia-champions-rm2-6-trillion-islamic-market-push/
+13. BusinessToday â "Financial Sector Commands 25% Of Bursa Market Cap At RM474 Billion" (December 2025) â https://www.businesstoday.com.my/2025/12/16/financial-sector-commands-25-of-bursa-market-cap-at-rm474-billion/
+14. The Edge Malaysia â "Bursa to fast-track launch of BTS2" â https://theedgemalaysia.com/article/bursa-fast-track-launch-bts2
+15. Nasdaq IR â "Bursa Malaysia Goes Live With Its New Trading Engine Powered by NASDAQ OMX" â https://ir.nasdaq.com/news-releases/news-release-details/bursa-malaysia-goes-live-its-new-trading-engine-powered-nasdaq
+16. The Star â "Demutualised KLSE to be called Bursa Malaysia" (February 2004) â https://www.thestar.com.my/business/business-news/2004/02/14/demutualised-klse-to-be-called-bursa-malaysia
+17. Wikipedia â Bursa Malaysia â https://en.wikipedia.org/wiki/Bursa_Malaysia
+18. Stock Analysis â Bursa Malaysia Market Cap â https://stockanalysis.com/quote/klse/BURSA/market-cap/
+19. Clearstream â Settlement process Malaysia (T+2) â https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-process-malaysia-1281334
+20. Baker McKenzie â Cross-Border Listings Guide: Bursa Malaysia â https://resourcehub.bakermckenzie.com/en/resources/cross-border-listings-guide/asia-pacific/bursa-malaysia/topics/overview-of-exchange
+21. FTSE Russell â FTSE Bursa Malaysia KLCI Factsheet â https://research.ftserussell.com/Analytics/FactSheets/Home/DownloadSingleIssue?issueName=FBMKLCI
+22. Capital Markets Malaysia â Public Equities â https://www.capitalmarketsmalaysia.com/public-equities/

@@ -1,0 +1,306 @@
+# arrowhead -- Japan Exchange Group (JPX) / Tokyo Stock Exchange (TSE)
+
+> **Last Updated:** 2026-04-06
+> **System Category:** Trading System
+
+---
+
+## 1. System Overview
+
+| Item | Details |
+|------|---------|
+| System Name | arrowhead (stylized in lowercase) |
+| Operated By | Tokyo Stock Exchange, Inc. (TSE), a subsidiary of Japan Exchange Group, Inc. (JPX) |
+| Purpose | Cash equity trading system handling auction trading of all cash products including stocks, ETFs, REITs, infrastructure funds, and convertible bonds (CBs) listed on TSE |
+| Launch Year | January 4, 2010 |
+| Current Version | arrowhead4.0 (4th generation), launched November 5, 2024 |
+| Vendor / In-house | Jointly developed by TSE and Fujitsu Limited |
+
+arrowhead is the core cash equity matching and trading system of the Tokyo Stock Exchange. Named to evoke the image of speed, accuracy, and reliability, it was designed to combine low latency, high reliability, and scalability at the highest global standard. The system processes trading information such as orders, executions, and order books on synchronized 3-node data servers.
+
+The 4th generation (arrowhead4.0) introduced two major market structure changes: (1) extension of afternoon session trading hours by 30 minutes (new close at 15:30 JST), and (2) introduction of a closing auction session to improve transparency of closing price formation.
+
+[Source: JPX, "Services (arrowhead)", https://www.jpx.co.jp/english/systems/equities-trading/01.html, accessed 2026-04-06]
+[Source: JPX, "Go-Live Date for the Cash Equity Trading System (arrowhead) Upgrade", https://www.jpx.co.jp/english/corporate/news/news-releases/1030/20241103-01.html, accessed 2026-04-06]
+
+### System Evolution
+
+| Period | System Name | Key Changes |
+|--------|-------------|-------------|
+| Pre-2010 | Legacy TSE systems | Multiple proprietary systems; order response times measured in seconds |
+| Jan 2010 | arrowhead 1st gen | Full system replacement; order response ~5 ms, information distribution ~3 ms; developed on Linux/commodity hardware with Fujitsu; introduced co-location services |
+| Sep 2015 | arrowhead 2nd gen | Enhanced processing capacity and reliability; improved order response to ~1 ms range [unverified]; greater resilience against order volume surges; Fujitsu PRIMERGY servers |
+| Nov 2019 | arrowhead 3rd gen | Major overhaul with ~400 Fujitsu PRIMERGY RX2540 M4 servers; ultra-high-speed in-memory data access at microsecond level via Fujitsu Software Primesoft Server; significant latency reduction |
+| Nov 2024 | arrowhead 4th gen (arrowhead4.0) | 462 Fujitsu PRIMERGY RX2540 M6 servers [unverified]; further latency and capacity improvements; trading hours extension; closing auction session introduced |
+
+[Source: Fujitsu, "TSE Launches Next-Generation arrowhead Trading System", January 2010, https://www.fujitsu.com/global/about/resources/news/press-releases/2010/0108-01.html]
+[Source: Fujitsu, "New, Enhanced TSE arrowhead Cash Equity Trading System", September 2015, https://www.fujitsu.com/global/about/resources/news/press-releases/2015/0924-01.html]
+[Source: Fujitsu, "Upgraded Version of Tokyo Stock Exchange's arrowhead Trading System", November 2019, https://www.fujitsu.com/global/about/resources/news/press-releases/2019/1105-01.html]
+[Source: Fujitsu, "Tokyo Stock Exchange and Fujitsu announce renewal of cash equity trading system arrowhead4.0", November 2024, https://www.fujitsu.com/global/about/resources/news/press-releases/2024/1105-01.html]
+
+---
+
+## 2. Architecture
+
+### 2.1 High-Level Design
+
+- **Deployment model:** On-premise, dedicated data center infrastructure (primary site in Tokyo metropolitan area)
+- **Topology:** Centralized matching with synchronized 3-node data server clusters for each processing unit
+- **Design pattern:** In-memory, event-driven transaction processing
+- **Redundancy model:** Triple-modular redundancy (3-node synchronized data servers) for core matching; active-standby for overall system failover
+
+The architecture is built around the concept of processing all trading information -- orders, executions, and order books -- on synchronized 3-node data servers. This triple-node design provides both high availability (any single node failure does not disrupt service) and data consistency. System capacity is designed to be flexibly and swiftly scalable to accommodate increases in order volumes.
+
+[Source: JPX, "Services (arrowhead)", https://www.jpx.co.jp/english/systems/equities-trading/01.html, accessed 2026-04-06]
+
+### 2.2 Core Components
+
+| Component | Function | Technology |
+|-----------|----------|------------|
+| Matching Engine | Price-time priority order matching for all cash equity products; supports Itayose (call auction) and Zaraba (continuous) trading methods; handles opening/closing auctions and volatility interruptions | In-memory processing on synchronized 3-node data servers; Fujitsu Software Primesoft Server for ultra-high-speed data access |
+| Order Gateway (arrowhead Gateway) | Accepts and validates orders from trading participants; provides order acknowledgments and execution reports | Proprietary binary protocol; supports order entry, modification, and cancellation |
+| Market Data Publisher | Distributes real-time market data including best bid/offer, full order book, and trade information via FLEX protocol | FLEX multicast distribution with Standard, MBO, and MBO BC streams |
+| Risk Engine | Pre-trade risk checks including order size limits, price range validation, and participant-level controls | Integrated within order gateway processing pipeline |
+| Surveillance | Real-time market surveillance for detecting abnormal trading patterns, market manipulation, and compliance violations | Operated by JPX Regulation (self-regulatory arm); monitors arrowhead data feeds |
+
+### 2.3 Technology Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Programming Language | C++ (core matching engine) [unverified based on industry standard for Fujitsu exchange systems] |
+| Operating System | Red Hat Enterprise Linux (RHEL) on x86 commodity servers |
+| Hardware | Fujitsu PRIMERGY RX2540 M6 servers (4th gen: 462 units [unverified]); earlier gen used RX2540 M4 (~400 units); FPGA elements for specific acceleration tasks [unverified] |
+| Network | Low-latency interconnects within co-location facility; 10GbE/25GbE fabric [unverified] |
+| Database/Data Store | Fujitsu Software Primesoft Server -- in-memory data management with nanosecond-level data access; all transaction data kept resident in memory |
+| Messaging/Middleware | Proprietary internal messaging; FLEX protocol for external market data distribution |
+
+[Source: Fujitsu, "Upgraded Version of Tokyo Stock Exchange's arrowhead Trading System", November 2019, https://www.fujitsu.com/global/about/resources/news/press-releases/2019/1105-01.html]
+[Source: Practical Tech, "The Linux of Stock Markets", March 2010, https://practical-tech.com/2010/03/22/the-linux-of-stock-markets/]
+
+---
+
+## 3. Performance Specifications
+
+| Metric | Value | Conditions |
+|--------|-------|------------|
+| Round-trip Latency (median) | ~0.2 ms (200 microseconds) [unverified] | 4th gen (arrowhead4.0); order acknowledgment round-trip |
+| Round-trip Latency (99th percentile) | Not publicly disclosed | |
+| Order Processing Rate | Not publicly disclosed (significantly improved over 3rd gen) | 4th gen with enhanced PRIMERGY M6 servers |
+| Peak Messages Per Second | Not publicly disclosed | Scalable capacity designed for surge handling |
+| Daily Transaction Capacity | Flexibly scalable; designed to handle significant increases over prior generation | System capacity dynamically adjustable |
+| Uptime SLA | 99.999% target [unverified] | Consistent with major global exchange standards |
+
+### Performance History
+
+| Year | Generation | Latency (Order Response) | Latency (Info Distribution) | Notes |
+|------|-----------|--------------------------|----------------------------|-------|
+| 2010 | 1st gen | ~5 ms | ~3 ms | Initial launch; massive improvement over legacy (seconds-level); 18 PRIMERGY servers initially [unverified] |
+| 2015 | 2nd gen | ~1 ms [unverified] | ~2 ms [unverified] | Enhanced capacity for order volume surges; improved reliability |
+| 2019 | 3rd gen | Sub-millisecond (microsecond-level) | Sub-millisecond | ~400 PRIMERGY RX2540 M4 servers; Fujitsu Primesoft Server with nanosecond-level data access |
+| 2024 | 4th gen | ~0.2 ms (200 us) [unverified] | Further improved | 462 PRIMERGY RX2540 M6 servers [unverified]; enhanced throughput and capacity |
+
+**Trend:** Latency improved approximately 25x from 1st gen (5 ms) to 3rd gen (sub-200 us), with each generation bringing roughly a 3--5x improvement. The 4th generation focused on both latency and resilience improvements.
+
+[Source: Fujitsu, "TSE Launches Next-Generation arrowhead Trading System", January 2010, https://www.fujitsu.com/global/about/resources/news/press-releases/2010/0108-01.html]
+[Source: Fujitsu, "Tokyo Stock Exchange accelerates order processing by three times with PRIMERGY platform", October 2016, https://www.fujitsu.com/fts/about/resources/case-studies/cs-2016oct-tokyo-stock-exchange-eng.html]
+
+---
+
+## 4. Interfaces & Protocols
+
+### 4.1 Order Entry
+
+| Protocol | Version | Description |
+|----------|---------|-------------|
+| arrowhead Gateway (Native Binary) | Proprietary | Primary low-latency order entry interface; binary protocol optimized for speed; used by co-located participants and high-frequency trading firms |
+| FIX Protocol | FIX 4.2 / FIX 4.4 [unverified] | Standard FIX-based order entry for broader participant compatibility; slightly higher latency than native gateway |
+| OUCH-like Protocol | [unverified] | Some sources suggest OUCH-compatible interface for simplified order entry |
+
+Trading participants connect through JPX's co-location facility (located in the same data center as the matching engine) or via wide-area network access points.
+
+### 4.2 Market Data Dissemination
+
+| Protocol | Description | Data Content |
+|----------|-------------|-------------|
+| FLEX Standard | Multicast-based real-time market data feed | Best bid/offer (BBO), last trade price, VWAP, trade volume, index values, and summary statistics for all listed issues |
+| FLEX MBO (Market by Order) | Premium full depth-of-book multicast feed | Individual order-level data showing complete order book with order IDs; enables participants to see every order in the book |
+| FLEX MBO BC (Bandwidth Controlled) | Bandwidth-optimized version of FLEX MBO | Same content as FLEX MBO but with throttling/bandwidth control to manage network load; suitable for participants who need full book but with controlled data rates |
+| FLEX Historical | Stored historical tick data service | Replay of FLEX data for back-testing and research; provided by JPX Market Innovation & Research, Inc. (JPXI) |
+
+FLEX data is distributed via IP multicast organized into multicast groups (MCGs). FLEX throttling monitors data traffic against thresholds for each MCG. FLEX MBO and FLEX MBO BC users also receive Base Price Information and Issue Information from the FLEX Standard stream.
+
+[Source: JPX, "Outline -- Real Time Market Data", https://www.jpx.co.jp/english/markets/paid-info-equities/realtime/index.html, accessed 2026-04-06]
+[Source: JPX, "Specifications for Connecting to FLEX Historical Service", https://www.jpx.co.jp/english/markets/paid-info-equities/historical/b5b4pj0000046hrg-att/e_flexhistorical_spec.pdf]
+
+### 4.3 Drop Copy / Trade Reporting
+
+- FIX-based drop copy service available for post-trade confirmation and risk management
+- Participants can parse arrowhead traffic via FIX drop copy lines for implementing pre-trade and post-trade risk controls
+- Trade reports are also available through the arrowhead gateway as execution reports
+
+### 4.4 Reference Data
+
+- Issue master data (security identifiers, tick sizes, price limits, trading lot sizes) distributed via FLEX Standard feed
+- Base price information provided daily before market open
+- Static reference data also available through JPX's data services portal
+
+[Source: JPX, "Alternative Data Service (arrowhead)", https://www.jpx.co.jp/english/markets/paid-info-alternative/arrowhead/index.html, accessed 2026-04-06]
+
+---
+
+## 5. Resilience & Business Continuity
+
+### 5.1 Redundancy
+
+- **Architecture:** Active-standby with triple-modular redundancy (3-node synchronized data servers) at the component level
+- **Geographic distribution:** Primary data center in the Tokyo metropolitan area; secondary (backup) data center in the Kansai region
+- **Failover design:** Within the primary site, the 3-node synchronized architecture allows continued operation upon single-node failure. If the primary data center is affected by a disaster and cannot continue operations, operations are switched to the backup center.
+- **Failover time:** Not publicly disclosed; designed to resume trading "as quickly as possible"
+
+### 5.2 Disaster Recovery
+
+- **DR site location:** Kansai region (western Japan), specifically at AT TOKYO Kansai Chuo Center (KC1), designated as the Kansai Proximity Area for JPX
+- **Rationale:** Located in a geographically remote area from Tokyo to avoid simultaneous impact from a major large-scale earthquake in the Tokyo Metropolitan area; selected to ensure "little or no fear of damage to societal infrastructure causing a shortage of essential services such as electricity"
+- **RPO (Recovery Point Objective):** Not publicly disclosed
+- **RTO (Recovery Time Objective):** Not publicly disclosed; goal is to resume trading as quickly as possible
+- **DR testing frequency:** Not publicly disclosed; JPX's BCP is reviewed and updated regularly
+- **Access Point:** AP4 was established in Kansai to connect trading participants with the JPX network for backup operations
+- **Timeline:** arrowhead backup at Kansai site established after FY2022 (derivatives system J-GATE was set up first in Q3 FY2021)
+
+### 5.3 Capacity Management
+
+- **Scalability approach:** System capacity is "flexibly and swiftly scalable to accommodate an increase in the number of orders"
+- **Infrastructure scaling:** Hardware upgrades between generations (e.g., ~400 servers in 3rd gen to 462 in 4th gen [unverified]) provide capacity headroom
+- **Load testing practices:** Not publicly disclosed; Fujitsu conducts extensive testing prior to each generation launch
+- **Monitoring:** arrowhead System Stats service (launched July 2020) provides participants with real-time system performance statistics including FLEX throttling data, enabling market-wide capacity awareness
+
+[Source: JPX, "BCP (Business Continuity Plan)", https://www.jpx.co.jp/english/corporate/governance/risk/bcp/index.html, accessed 2026-04-06]
+[Source: FinanceFeeds, "Japan Exchange Group Updates On Setting Up New Data Back-up Center", https://financefeeds.com/japan-exchange-group-updates-setting-new-data-back-center/]
+[Source: AT TOKYO, "AT TOKYO Kansai Chuo Center Designated as Kansai Proximity Area for JPX", November 2020, https://www.attokyo.com/news/20201104.html]
+
+---
+
+## 6. Notable Technical Features
+
+### 6.1 Itayose (Call Auction) Mechanism
+
+The Itayose method is a call auction used to determine opening prices, closing prices, and prices after volatility interruptions. Orders are accumulated during a designated period, then matched simultaneously at a single equilibrium price where supply meets demand. Key rules:
+- All orders at or better than the equilibrium price are matched
+- Market orders have priority over limit orders
+- Used at the open of morning and afternoon sessions
+- With arrowhead4.0, a dedicated **Closing Auction Session** was introduced at the end of the afternoon session (15:25--15:30 JST) specifically for transparent closing price formation
+
+[Source: JPX, "Transaction Methods", https://www.jpx.co.jp/english/equities/trading/domestic/04.html, accessed 2026-04-06]
+
+### 6.2 Zaraba (Continuous Trading) Method
+
+Zaraba is the continuous auction method used during regular trading hours between the opening and closing auctions. Orders are matched on a price-time priority basis:
+- Best price has priority (price priority)
+- Among orders at the same price, earlier orders are matched first (time priority)
+- Market orders are executed ahead of limit orders at any price
+
+### 6.3 Special Quote (Tokubetsu Kehai) -- Volatility Interruption
+
+Special Quotes serve as TSE's primary circuit breaker / volatility control mechanism:
+- Indicated whenever prices are likely to jump beyond a certain price range from the last execution price
+- Once a Special Quote is indicated, execution switches from Zaraba (continuous) to Itayose (call auction) to prevent inappropriate price fluctuations
+- Can be triggered at any time during the trading session
+- **Enhanced in arrowhead4.0:** Excessive price fluctuations beyond double the update price range of Special Quotes are prevented until 60 seconds have passed from the reference execution
+- Daily price limits (å¤å¹å¶é) also apply as a broader circuit breaker
+
+[Source: JPX, "2024 Edition -- Trading Rules Guide", https://www.jpx.co.jp/english/equities/trading/domestic/tvdivq000000tpfi-att/eg.pdf]
+
+### 6.4 ToSTNeT (Tokyo Stock Exchange Trading NeTwork System)
+
+ToSTNeT is the off-auction trading platform operated alongside arrowhead:
+- Handles block trades, basket trades, and closing price transactions
+- Accepts orders from domestic and foreign investors (through securities companies)
+- Trades executed off the central order book at negotiated or reference prices
+- Processes include order acceptance, execution, and result reporting
+- Separate system from arrowhead's auction matching but integrated into the TSE ecosystem
+
+[Source: JPX, "Services (ToSTNeT)", https://www.jpx.co.jp/english/systems/equities-trading/03.html, accessed 2026-04-06]
+
+### 6.5 CONNEQTOR -- RFQ Platform for ETFs
+
+CONNEQTOR is JPX's Request-for-Quote platform specifically designed for institutional ETF trading:
+- **Launch:** February 2021
+- **Purpose:** Connects institutional investors, securities companies, and market makers for efficient ETF trading
+- **Process:** (1) Investor submits RFQ on CONNEQTOR, (2) market makers provide competitive quotes, (3) accepted trade is cleared and settled via ToSTNeT as an on-exchange trade
+- **Adoption:** Used by more than 250 institutional investors; monthly trading value surpassed JPY 200 billion (September 2023)
+- **Benefits:** Real-time best price quoting, reduced transaction costs, improved operational efficiency, no counterparty risk (exchange-cleared)
+
+[Source: JPX, "Overview -- RFQ Platform", https://www.jpx.co.jp/english/equities/products/etfs/rfq-platform/index.html, accessed 2026-04-06]
+[Source: JPX, "Monthly Trading Value via the RFQ Platform CONNEQTOR Surpasses 200 Billion Yen", September 2023, https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20230904-02.html]
+
+### 6.6 arrowhead System Stats Service
+
+Launched in July 2020, this alternative data service provides:
+- Real-time and historical statistics on arrowhead system performance
+- FLEX throttling data per multicast group
+- Order/trade activity metrics
+- Available to participants and data vendors for capacity planning and market microstructure research
+
+[Source: JPX, "TSE to launch arrowhead System Stats Service", July 2020, https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20200703-01.html]
+
+### 6.7 Cloud PoC for Future Architecture
+
+TSE has conducted a Proof of Concept (PoC) to explore the long-term applicability of cloud technology to its cash equity trading system, signaling potential future architectural evolution beyond traditional on-premise infrastructure.
+
+[Source: FX News Group, "Tokyo Stock Exchange conducts PoC to explore long-term applicability of cloud tech to its cash equity trading system", https://fxnewsgroup.com/forex-news/exchanges/tokyo-stock-exchange-conducts-poc-to-explore-long-term-applicability-of-cloud-tech-to-its-cash-equity-trading-system/]
+
+---
+
+## 7. Comparison Notes
+
+### vs. KRX Exture+
+
+| Aspect | arrowhead (JPX/TSE) | Exture+ (KRX) |
+|--------|---------------------|----------------|
+| **Launch** | 1st gen: January 2010; 4th gen: November 2024 | 2014 (replaced original EXTURE) |
+| **Developer** | Fujitsu (external vendor partnership) | In-house (KRX/Koscom) |
+| **Architecture** | Synchronized 3-node data servers; Fujitsu PRIMERGY commodity servers on Linux | Memory-based solution with open-source architecture; Solace PubSub+ messaging |
+| **Order Response Latency** | ~0.2 ms (200 us) for 4th gen [unverified]; sub-ms for 3rd gen | ~0.07 ms (70 us) -- global top-tier level |
+| **Asset Coverage** | Cash equities only (stocks, ETFs, REITs, CBs); derivatives on separate J-GATE system | All instruments in a single platform (stocks, bonds, futures, options, ETFs, warrants, commodities) |
+| **Market Data Protocol** | FLEX (proprietary multicast: Standard, MBO, MBO BC) | Solace PubSub+ based distribution |
+| **Data Center** | Primary: Tokyo metropolitan area; DR: Kansai region | Primary: Seoul (KOSPI, KOSDAQ); Busan (derivatives); mutual backup between cities |
+| **Volatility Control** | Special Quote (Tokubetsu Kehai) -- switches to Itayose auction | SVAR (Static Volatility Interruption) and DVAR (Dynamic Volatility Interruption) |
+| **Off-Auction Trading** | ToSTNeT (separate system) | Block deal system within Exture+ |
+| **RFQ Platform** | CONNEQTOR (ETFs, since 2021) | Not separately branded [unverified] |
+| **Closing Auction** | Introduced November 2024 (arrowhead4.0) | Established feature |
+
+### Key Differentiators
+
+- **Latency:** KRX Exture+ holds a latency advantage at ~70 us vs. arrowhead's ~200 us [unverified], approximately 3x faster. This positions KRX among the fastest exchanges globally, while arrowhead remains competitive with major peers.
+- **Platform Scope:** Exture+ is a unified multi-asset platform (equities + derivatives + bonds on one system), whereas JPX separates cash equities (arrowhead) from derivatives (J-GATE). This gives KRX operational simplicity but JPX more specialized optimization per asset class.
+- **Vendor Strategy:** JPX relies heavily on Fujitsu as a technology partner, whereas KRX/Koscom develops Exture+ largely in-house. This gives KRX more direct control over system evolution but requires maintaining deep internal engineering capability.
+- **Messaging Infrastructure:** KRX selected Solace PubSub+ as its core data delivery infrastructure, an industry-standard messaging platform. JPX uses its proprietary FLEX protocol, which offers tight integration but less portability.
+- **DR Geography:** Both exchanges maintain geographically separated DR sites (JPX: Tokyo-Kansai ~400 km; KRX: Seoul-Busan ~325 km), following best practices for seismically active regions.
+- **Market Structure Evolution:** JPX's late adoption of a closing auction (2024) compared to KRX indicates that arrowhead's market microstructure has been evolving more conservatively, prioritizing stability and consensus-building with market participants.
+
+---
+
+## Sources
+
+1. JPX, "Services (arrowhead)", https://www.jpx.co.jp/english/systems/equities-trading/01.html
+2. JPX, "Go-Live Date for the Cash Equity Trading System (arrowhead) Upgrade", https://www.jpx.co.jp/english/corporate/news/news-releases/1030/20241103-01.html
+3. JPX, "Go-Live Date for Cash Equity Trading System (arrowhead) Upgrade", https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20241009-01.html
+4. Fujitsu, "TSE Launches Next-Generation arrowhead Trading System", January 2010, https://www.fujitsu.com/global/about/resources/news/press-releases/2010/0108-01.html
+5. Fujitsu, "New, Enhanced TSE arrowhead Cash Equity Trading System", September 2015, https://www.fujitsu.com/global/about/resources/news/press-releases/2015/0924-01.html
+6. Fujitsu, "Upgraded Version of Tokyo Stock Exchange's arrowhead Trading System", November 2019, https://www.fujitsu.com/global/about/resources/news/press-releases/2019/1105-01.html
+7. Fujitsu, "Tokyo Stock Exchange and Fujitsu announce renewal of cash equity trading system arrowhead4.0", November 2024, https://www.fujitsu.com/global/about/resources/news/press-releases/2024/1105-01.html
+8. Fujitsu, "Tokyo Stock Exchange accelerates order processing by three times with PRIMERGY platform", October 2016, https://www.fujitsu.com/fts/about/resources/case-studies/cs-2016oct-tokyo-stock-exchange-eng.html
+9. JPX, "Transaction Methods", https://www.jpx.co.jp/english/equities/trading/domestic/04.html
+10. JPX, "2024 Edition -- Trading Rules Guide", https://www.jpx.co.jp/english/equities/trading/domestic/tvdivq000000tpfi-att/eg.pdf
+11. JPX, "BCP (Business Continuity Plan)", https://www.jpx.co.jp/english/corporate/governance/risk/bcp/index.html
+12. JPX, "Services (ToSTNeT)", https://www.jpx.co.jp/english/systems/equities-trading/03.html
+13. JPX, "Overview -- RFQ Platform (CONNEQTOR)", https://www.jpx.co.jp/english/equities/products/etfs/rfq-platform/index.html
+14. JPX, "Outline -- Real Time Market Data", https://www.jpx.co.jp/english/markets/paid-info-equities/realtime/index.html
+15. JPX, "Alternative Data Service (arrowhead)", https://www.jpx.co.jp/english/markets/paid-info-alternative/arrowhead/index.html
+16. JPX, "TSE to launch arrowhead System Stats Service", July 2020, https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20200703-01.html
+17. AT TOKYO, "AT TOKYO Kansai Chuo Center Designated as Kansai Proximity Area for JPX", November 2020, https://www.attokyo.com/news/20201104.html
+18. FinanceFeeds, "Japan Exchange Group Updates On Setting Up New Data Back-up Center", https://financefeeds.com/japan-exchange-group-updates-setting-new-data-back-center/
+19. Global Trading, "TSE updates trading system as closing auction demand soars", https://www.globaltrading.net/tse-updates-trading-system-as-closing-auction-demand-soars/
+20. KRX Global, "EXTURE+ Trading", https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp
+21. Practical Tech, "The Linux of Stock Markets", March 2010, https://practical-tech.com/2010/03/22/the-linux-of-stock-markets/
+22. NovaSparks, "Trading Japanese Equities on TSE", https://novasparks.com/trading-on-japanese-equities/

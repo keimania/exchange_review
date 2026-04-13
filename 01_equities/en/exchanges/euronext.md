@@ -1,0 +1,442 @@
+# Euronext N.V. (Euronext)
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 2
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Euronext N.V. (European New Exchange Technology) |
+| Abbreviation | ENX |
+| Website | https://www.euronext.com |
+| Year Established | 2000 (formed 22 September 2000 through merger of Amsterdam, Brussels, and Paris exchanges) |
+| Country / City | Registered in the Netherlands (Amsterdam); operational HQ in Paris, France. Operates exchanges in Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, and Paris; Athens added in 2025 |
+| Ownership Structure | Publicly listed on Euronext Paris (ticker: ENX); reference shareholders include Caisse des Depots et Consignations (CDC), Euroclear, and other institutional investors |
+| Parent Company / Group | Euronext N.V. (independent, self-listed) |
+| Regulatory Authority | Multi-national: AMF (France), AFM (Netherlands), FSMA (Belgium), CMVM (Portugal), CBI (Ireland), Finanstilsynet (Norway), CONSOB (Italy), HCMC (Greece) -- coordinated via the College of Euronext Regulators |
+| Market Capitalization (listed companies) | ~EUR 6.8 trillion aggregate across all Euronext markets (as of end 2025) |
+| Total Listed Instruments | ~1,900+ issuers across all markets (equities); plus ETFs, bonds, warrants, and structured products |
+| Average Daily Trading Volume | ~EUR 11.0-13.8 billion ADV in cash equities (2025 quarterly range; full-year 2024 average ~EUR 10.5 billion) |
+| Average Daily Trading Value | ~EUR 12.0 billion ADV (Q4 2025), up +14.0% YoY |
+
+### Key Historical Milestones
+- 1602: Amsterdam Stock Exchange (Amsterdamse Beurs) founded -- widely regarded as the world's first formal securities exchange
+- 1724: Paris Bourse formally organized under royal decree
+- 1801: Brussels Stock Exchange established
+- 1891: Lisbon Stock Exchange (Bolsa de Valores de Lisboa) established
+- 2000: **Euronext N.V. formed** through merger of Amsterdam Exchanges, Brussels Exchanges, and Paris Bourse SBF
+- 2002: Euronext acquires LIFFE (London International Financial Futures and Options Exchange) and merges with Bolsa de Valores de Lisboa e Porto (BVLP), adding Lisbon
+- 2007: Euronext merges with NYSE Group to form **NYSE Euronext**, creating the first transatlantic exchange group
+- 2013: IntercontinentalExchange (ICE) acquires NYSE Euronext for ~USD 11 billion
+- 2014: **Euronext re-IPOs** as an independent company on Euronext Amsterdam and Paris (June 2014); ICE retains NYSE
+- 2018: Euronext acquires the **Irish Stock Exchange** (renamed Euronext Dublin); Optiq trading platform goes live for cash markets
+- 2019: Euronext completes acquisition of **Oslo Bors VPS** (Oslo Stock Exchange and central securities depository)
+- 2020: Acquires Nord Pool (European power exchange) and VP Securities (Danish CSD)
+- 2021: Euronext completes acquisition of **Borsa Italiana Group** (including MTS and CC&G, now Euronext Clearing) from LSEG for EUR 4,444 million -- transformative deal making Italy its largest revenue contributor
+- 2022: Core Data Centre migrated from Basildon (UK) to **Bergamo, Italy** (Aruba IT3); completed 6 June 2022
+- 2023: Borsa Italiana cash markets migrated to Optiq platform (Phase 1 and Phase 2)
+- 2024: Borsa Italiana derivatives migrated to Optiq (Phase 3, final); Euronext Clearing expanded to all Euronext financial derivatives markets, completing separation from LCH SA
+- 2025: Acquisition of **ATHEX Group** (Athens Stock Exchange, ~75.6% stake by year-end); acquisition of Admincontrol (Nordic SaaS); launched Mini Bond Futures on European government bonds; Nasdaq Nordic power futures acquisition announced; full-year adjusted EBITDA of EUR 1,143.1 million (+13.6%)
+- 2026: Power futures launch (March 2026); European CSD harmonization and Repo market expansion in progress
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| **Euronext Regulated Market -- Compartment A** | Large-cap equities (market cap > EUR 1 billion); flagship segment subject to full EU Regulated Market requirements | Minimum 3-year audited financial history, minimum 25% free float, EU Prospectus Regulation-compliant prospectus, sponsor/listing agent required |
+| **Euronext Regulated Market -- Compartment B** | Mid-cap equities (market cap EUR 150 million - 1 billion) | Same as Compartment A; compartment classification is automatic based on market cap |
+| **Euronext Regulated Market -- Compartment C** | Small-cap equities (market cap < EUR 150 million) | Same as Compartment A |
+| **Euronext Growth** | SME Growth Market (MTF under MiFID II) for small and mid-sized companies seeking simplified listing | No minimum market cap, 2-year financial statements (1 year in some jurisdictions), free float negotiable, Listing Sponsor required, lighter ongoing reporting |
+| **Euronext Access** | Entry-level MTF for start-ups and SMEs; not a Regulated Market under EU directives | Simplified admission criteria, no minimum financial history, Listing Sponsor required |
+| **Euronext Access+** | Special compartment within Euronext Access for fast-growing SMEs; acts as a springboard to Euronext Growth | Additional governance and reporting commitments vs. standard Access |
+| **Professional Segment** | Segment of the Regulated Market reserved for qualified/institutional investors | Specific eligibility criteria; used for specialist debt instruments and structured products |
+
+### 2.2 Trading Sessions
+| Session | Local Time (CET/CEST) | UTC (Winter) | Description |
+|---------|----------------------|--------------|-------------|
+| Pre-opening (Order Entry) | 07:15 - 09:00 | 06:15 - 08:00 | Orders can be entered, amended, cancelled; indicative prices calculated but no matching occurs |
+| Opening Auction (Call Phase + Uncrossing) | 09:00 (+random end) | 08:00 (+random end) | Accumulated orders matched at a single equilibrium price; random end period (up to 30 seconds) prevents manipulation |
+| Continuous Trading | ~09:00 - 17:30 | ~08:00 - 16:30 | Order-driven continuous matching with price/time priority |
+| Pre-closing (Order Entry) | 17:30 - 17:35 | 16:30 - 16:35 | Orders accumulate for closing auction; no matching |
+| Closing Auction (Uncrossing) | 17:35 (+random end) | 16:35 (+random end) | Determines official closing price; random end period |
+| Trading at Last (TAL) | ~17:35 - 17:40 | ~16:35 - 16:40 | Orders execute only at the established closing price; provides additional closing liquidity |
+
+Note: Times shown are for the harmonized schedule across Amsterdam, Brussels, Paris, and Lisbon. Oslo follows 09:00-16:20 CET for continuous trading with closing auction at 16:20-16:25 CET. Milan (Borsa Italiana) follows 09:00-17:30 CET with specific auction timing. Dublin follows the harmonized schedule. CET = UTC+1 (winter), CEST = UTC+2 (summer).
+
+### 2.3 Tick Sizes
+
+Euronext follows the **MiFID II tick size regime** (RTS 11, Delegated Regulation EU 2017/588). Tick sizes depend on the price level and the average daily number of transactions (ADNT) liquidity band of the instrument.
+
+| Price Range (EUR) | Liquidity Band 1 (< 10 ADNT) | Liquidity Band 3 (80-600 ADNT) | Liquidity Band 6 (>= 9000 ADNT) |
+|-------------------|-------------------------------|--------------------------------|----------------------------------|
+| 0 - 0.4999 | 0.005 | 0.002 | 0.0005 |
+| 0.5 - 0.9999 | 0.01 | 0.005 | 0.001 |
+| 1 - 1.9999 | 0.02 | 0.01 | 0.002 |
+| 2 - 4.9999 | 0.05 | 0.02 | 0.005 |
+| 5 - 9.9999 | 0.1 | 0.05 | 0.01 |
+| 10 - 19.9999 | 0.2 | 0.1 | 0.02 |
+| 20 - 49.9999 | 0.5 | 0.2 | 0.05 |
+| 50 - 99.9999 | 1.0 | 0.5 | 0.1 |
+
+[Source: ESMA RTS 11 as applied by Euronext; representative values shown -- full table has 6 liquidity bands and 13 price ranges]
+
+### 2.4 Lot Sizes
+- Standard lot size: **1 share** for most equities
+- No minimum lot size for order book trading
+- Block trade thresholds defined under MiFID II Large-in-Scale (LIS) waivers, varying by instrument liquidity
+- Odd lot trading is supported on the central order book
+
+### 2.5 Market Maker / Liquidity Provider Programs
+- **Liquidity Provider (LP) Program**: Euronext appoints Liquidity Providers for specific securities (especially mid/small-caps, ETFs) who commit to maintaining continuous two-sided quotes with maximum spread and minimum size obligations; in return they receive reduced trading fees
+- **Market Maker Programs**: Dedicated programs for ETFs, structured products, warrants, and derivatives with tiered fee rebates based on quoting performance
+- **Supplemental Liquidity Provider (SLP)**: Additional scheme targeting blue-chip and index constituents to ensure tight spreads and deep liquidity
+- **Euronext Block**: Midpoint matching facility for large block orders, allowing institutional participants to trade at midpoint without information leakage
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+- **Opening Auction**: Pre-opening phase begins at 07:15 CET allowing order accumulation. At 09:00, the uncrossing algorithm determines the opening price by maximizing executable volume. A random end period (up to 30 seconds) is applied to prevent last-second manipulation. Surplus orders remain on the book for continuous trading
+- **Closing Auction**: At 17:30, continuous trading halts and a pre-closing order accumulation phase begins (typically 5 minutes). The closing auction uncrossing determines the official closing price used by index providers and fund NAV calculations. Random end period applies
+- **Intraday (Volatility) Auction**: Triggered automatically when a potential trade would breach dynamic or static price collars. The instrument enters a "reservation" period (typically 5 minutes) during which orders accumulate, followed by an uncrossing to resume trading at a new equilibrium price
+- **Auction Price Discovery Algorithm**: Maximizes executable volume; if multiple prices yield the same volume, minimizes surplus (unmatched) volume; if still tied, selects price closest to the last reference price
+
+### 3.2 Continuous Trading
+- **Order-driven market** with price/time priority (first priority: best price; second priority: earliest timestamp at the same price)
+- Pure central limit order book (CLOB) model for liquid equities
+- Market makers provide supplemental liquidity but do not operate as obligatory dealers
+- **Euronext Block**: Dark midpoint matching service operating as an MTF for block-sized institutional orders
+- All Euronext cash markets share a single harmonized matching engine via the Optiq platform
+
+### 3.3 Price Discovery
+- Primary price discovery through opening and closing auctions and continuous order book interaction
+- The uncrossing algorithm is designed to maximize volume at a single equilibrium price
+- Reference prices for circuit breaker collars are derived from auction prices and dynamically updated during continuous trading (last traded price becomes new dynamic reference)
+- Closing price established via closing auction is the official reference for settlement, index calculation, and derivative valuation
+- **Trading at Last (TAL)** session allows additional volume to trade at the closing price, further concentrating closing liquidity
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Limit Order | Order to buy/sell at a specified price or better; rests on the book if not immediately matched |
+| Market Order | Executes at the best available prices until fully filled; any unmatched portion converts to a limit order at the last execution price (Euronext-specific behavior) |
+| Market-to-Limit Order | Executes at the best available price; any unfilled quantity is converted to a limit order at the price of the initial execution |
+| Stop Loss Order | Triggered when the market price reaches a specified stop price; becomes a market order upon activation |
+| Stop Limit Order | Triggered when the market price reaches a specified stop price; becomes a limit order at a specified limit price upon activation |
+
+### 4.2 Advanced Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Iceberg Order | Displays only a portion (peak quantity) of the total order; as the visible portion is filled, a new peak is automatically refreshed from the hidden reserve; each refresh gets a new timestamp |
+| Pegged Order | Price automatically tracks a reference price (best bid, best offer, or midpoint); adjusts in real time as the BBO changes |
+| Pegged-to-Midpoint Order | Pegged to the midpoint of the best bid and offer; commonly used in Euronext Block for dark trading |
+| Mid-Point Order (Euronext Block) | Executes at the midpoint of the primary market BBO; designed for large institutional block trades with reduced market impact |
+| Trailing Stop Order | Stop price adjusts with favorable market movements by a defined offset; triggered on adverse moves [unverified] |
+
+### 4.3 Time-in-Force Options
+| TIF | Description |
+|-----|-------------|
+| Day (DAY) | Valid for the current trading day only; cancelled at end of day |
+| Good till Cancelled (GTC) | Remains active until executed or cancelled (subject to maximum duration set by the exchange, typically 365 days) |
+| Good till Date (GTD) | Valid until a specified expiry date |
+| Immediate or Cancel (IOC) | Execute as much as possible immediately; cancel any remaining quantity |
+| Fill or Kill (FOK) | Must be executed in full immediately or the entire order is cancelled |
+| Valid for Closing Auction | Order participates only in the closing auction |
+| Valid for Opening Auction | Order participates only in the opening auction [unverified] |
+
+### 4.4 Order Modification / Cancellation
+- Orders can be amended (price, quantity) or cancelled during any phase via OEG (Order Entry Gateway) using FIX 5.0 or native SBE protocol
+- Price amendments that improve the order (more aggressive price) result in a new timestamp (loss of time priority)
+- Quantity reduction preserves time priority; quantity increase may or may not depending on the order type
+- During auction call periods, orders can be entered, amended, and cancelled but no matching occurs
+- Mass cancellation functionality available for risk management; Kill Switch allows cancellation of all outstanding orders for a member firm
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | **Optiq** |
+| Vendor / In-house | In-house development by Euronext |
+| Architecture | Modular, low-latency architecture; event-driven with latest-generation components; single harmonized platform across all Euronext markets (cash and derivatives) |
+| Matching Engine | Central matching engine with price/time priority; multi-market, multi-asset capable |
+| Round-trip Latency | ~15 microseconds average (order round-trip and market data) |
+| Order Processing Capacity | Up to 1 million messages per second ingestion rate |
+| Messages Per Second | Designed for highly scalable throughput; tenfold capacity increase over predecessor systems |
+| Launch Year | 2016-2018 (MDG in July 2017; cash markets live July 2018; derivatives 2019) |
+
+### System History
+| Period | System | Notes |
+|--------|--------|-------|
+| Pre-2000 | Various national systems | Each exchange operated its own platform (e.g., Paris NSC, Amsterdam AEB) |
+| 2000-2007 | NSC (Nouveau Systeme de Cotation) | Harmonized platform across Paris, Amsterdam, Brussels; originally developed by SBF/Paris Bourse |
+| 2007-2014 | UTP (Universal Trading Platform) | NYSE Euronext era; evolution of NSC with enhanced capacity |
+| 2016-2018 | Optiq (phased rollout) | MDG live July 2017; fixed income April 2018; full cash markets July 2018 |
+| 2019 | Optiq Derivatives | Derivatives order entry and matching migrated to Optiq |
+| 2020-2021 | Optiq for Oslo | Oslo Bors markets migrated to Optiq |
+| 2022-2024 | Optiq for Borsa Italiana | Three-phase migration: cash Phase 1 (2023), cash Phase 2 (2023), derivatives Phase 3 (April 2024) |
+
+### Technology Stack
+- **Programming Language**: Proprietary low-latency C/C++ stack [unverified]
+- **Persistence Layer**: Confluent Platform with Apache Kafka for the streaming/persistence layer; reliable, scalable streaming infrastructure supporting millisecond latencies with zero message loss
+- **Network Protocol**: TCP/IP for Order Entry Gateways (OEG); UDP/IP multicast for Market Data Gateway (MDG)
+- **Encoding**: SBE (Simple Binary Encoding, a FIX standard for binary encoding) for native low-latency access; FIX 5.0 for standard order entry
+- **Market Data**: Optiq MDG uses SBE over UDP multicast; supports LZ4 compression for low-bandwidth connections
+- **Hardware**: Commodity server infrastructure hosted at Aruba IT3 data centre in Bergamo, Italy
+
+### Disaster Recovery / Business Continuity
+- Primary data centre: Aruba Global Cloud Data Centre IT3, Bergamo, Italy (operational since June 2022)
+- Fully redundant architecture with real-time replication
+- Dual market data feeds for client-side arbitration
+- Business continuity plans aligned with multi-national regulatory requirements across all jurisdictions
+- Regular disaster recovery testing as mandated by local regulators (AMF, CONSOB, AFM, etc.)
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+| Protocol | Description | Use Case |
+|----------|-------------|----------|
+| Optiq MDG (Market Data Gateway) | Native binary market data feed using SBE encoding over UDP multicast; provides full depth and trade data | Ultra-low latency real-time market data for algorithmic and HFT firms |
+| Optiq MDG Lite | Lighter version of MDG with reduced data scope | Firms requiring simplified real-time data |
+| Optiq MDG Cloud | Cloud-delivered market data service | Remote participants not co-located |
+| FIX Market Data | Market data via FIX protocol | Firms preferring standardized FIX connectivity |
+| Reference Data Feed | Daily instrument reference data (tick tables, trading calendars, instrument parameters) | Pre-trade setup and static data maintenance |
+
+### 6.2 Data Levels
+- **Level 1 (Last Price)**: Last traded price, trade volume, timestamps; suitable for display and monitoring
+- **Level 2 (Full Depth)**: Full order book depth with top 10 price levels (MBP -- Market by Price) or top 10 individual orders (MBO -- Market by Order) for both bid and offer sides
+- **Continental Cash Consolidated Pack**: Bundled Level 1 and Level 2 data across all Euronext cash markets
+
+### 6.3 Distribution Infrastructure
+- Market data disseminated via **UDP multicast** (IPv4) from the Bergamo data centre
+- Dual redundant feeds for resilience
+- MBO and MBP snapshot services published in multicast UDP using same distribution as core MDG
+- Optiq MDG supports dynamic identification of instrument book depth levels (multiple depth order books supported)
+- **LZ4 compression** available for low-bandwidth connections (100 Mbps) and all snapshots
+- Distribution through data vendors (Refinitiv/LSEG, Bloomberg, ICE, etc.) and direct connections
+
+### 6.4 Historical Data
+- Euronext provides historical tick data, end-of-day data, and corporate action data through its Euronext Data Services division
+- Available via file download or API delivery
+- MiFID II-compliant data products (pre-trade and post-trade transparency data)
+- Delayed data (15-minute delay) available free for internal use
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+- Membership is required for direct trading access; members must be authorized investment firms or credit institutions regulated in an EEA jurisdiction
+- Remote membership available for firms regulated in other EEA countries (passporting under MiFID II)
+- Third-country firms may access via sponsored access through an existing member
+- Separate membership regimes for cash and derivatives markets
+- Members must comply with the Euronext Rule Book (Harmonised Rules, Book I) and local supplementary rules (Book II)
+
+### 7.2 Connection Methods
+| Method | Description |
+|--------|-------------|
+| Optiq OEG (Order Entry Gateway) -- SBE | Native binary protocol using SBE encoding; lowest latency option for order submission |
+| Optiq OEG -- FIX 5.0 | Industry-standard FIX 5.0 protocol for order entry; slightly higher latency than SBE |
+| Optiq MDG | Direct market data feed via UDP multicast |
+| Sponsored Access | Broker/member provides direct market access (DMA) to non-member clients through its infrastructure |
+| ISV (Independent Software Vendor) Access | Pre-certified third-party trading platforms connected to Euronext |
+
+### 7.3 Co-location / Proximity Services
+- **Location**: Aruba Global Cloud Data Centre IT3, Bergamo, Italy (primary data centre since June 2022)
+- **Offerings**: Full-rack and partial-rack co-location within the same facility as the matching engines; provides lowest possible latency (~15 microseconds round-trip)
+- **Carriers**: Multiple certified data centre carriers provide direct connectivity to the Bergamo facility
+- **Cross-connects**: Direct cross-connect options within the data centre to trading participants, ISVs, and market data vendors
+- **Proximity hosting**: Available for firms that do not require full co-location but want reduced latency
+
+### 7.4 API Protocols
+| Protocol | Use Case |
+|----------|----------|
+| FIX 5.0 (OEG) | Standard order entry, modification, cancellation; trade confirmations |
+| SBE Native (OEG) | Low-latency binary order entry for HFT and algorithmic trading |
+| FIX Drop Copy | Real-time trade capture and monitoring for compliance |
+| MDG SBE (UDP) | Real-time market data reception |
+| REST API | Reference data, corporate actions, listing information (Euronext Data Services) [unverified] |
+
+### 7.5 Certification / Testing
+- All members and ISVs must complete **conformance testing** before gaining production access
+- Euronext provides a dedicated test environment (External Customer Testing, or ECT) replicating the production Optiq environment
+- Separate certification required for SBE native and FIX protocols
+- Migration testing windows provided ahead of major platform upgrades or new market onboarding
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+
+Euronext employs a multi-layered safeguard system combining dynamic and static collars:
+
+| Type | Reference Price | Threshold | Action |
+|------|----------------|-----------|--------|
+| Dynamic Collar | Last traded price (updated after each trade) | Percentage varies by instrument liquidity/index membership (e.g., +/-2% to +/-5% typical) [unverified] | Instrument enters reservation (volatility auction) if a potential trade would breach the collar |
+| Static Collar | Opening price of the day or last reference price from previous session | +/-8% for flagship index constituents; +/-10% for other instruments (typical) | Instrument enters reservation if potential trade breaches static threshold from the daily reference price |
+
+### 8.2 Circuit Breakers
+| Level | Trigger | Halt Duration |
+|-------|---------|---------------|
+| Dynamic Collar Breach | Potential trade would breach dynamic price band around last traded price | Reservation period (~5 minutes) followed by volatility auction uncrossing with random end |
+| Static Collar Breach | Potential trade would breach static price band around the daily reference price | Reservation period (~5 minutes) followed by volatility auction uncrossing |
+| Multiple Successive Triggers | Repeated reservation triggers on same instrument | Duration may be extended; Market Operations may intervene manually |
+| Market-wide Halt | Extraordinary circumstances (coordinated with regulators) | Duration determined by regulators; Euronext Market Operations coordinates with the College of Regulators |
+
+### 8.3 Pre-trade Risk Controls
+- **Aberrant order rejection**: Orders that are unusually large in size, quantity, or price are automatically rejected before entering the order book
+- **Maximum order size limits**: Configurable per instrument to prevent fat-finger errors
+- **Throttling**: Rate-limiting controls on message submission per connection to prevent system overload
+- **Price collar validation**: Orders priced outside the current collar range are rejected or trigger a reservation
+- **Member-level controls**: Members must implement their own pre-trade risk management in accordance with MiFID II/RTS 6 requirements (algorithmic trading controls)
+
+### 8.4 Kill Switch
+- Euronext provides a **Kill Switch** functionality that allows members (or Euronext Market Operations) to cancel all outstanding orders for a specific member/connection in a single action
+- Compliant with MiFID II Article 48 requirements for circuit breaker and kill switch mechanisms
+- Members can also implement their own kill switch through OEG mass cancellation messages
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+- **College of Euronext Regulators**: Multi-national coordination body comprising:
+  - **AMF** (Autorite des Marches Financiers) -- France (lead regulator)
+  - **AFM** (Autoriteit Financiele Markten) -- Netherlands
+  - **FSMA** (Financial Services and Markets Authority) -- Belgium
+  - **CMVM** (Comissao do Mercado de Valores Mobiliarios) -- Portugal
+  - **CBI** (Central Bank of Ireland) -- Ireland
+  - **Finanstilsynet** (Financial Supervisory Authority) -- Norway
+  - **CONSOB** (Commissione Nazionale per le Societa e la Borsa) -- Italy
+  - **HCMC** (Hellenic Capital Market Commission) -- Greece (from 2025)
+- The College operates under a Memorandum of Understanding coordinating supervision across all Euronext jurisdictions
+
+### 9.2 Key Regulations
+- **MiFID II / MiFIR** (Markets in Financial Instruments Directive/Regulation): Core framework governing Euronext as a Regulated Market operator and MTF
+- **Market Abuse Regulation (MAR)**: EU Regulation 596/2014 governing insider dealing, market manipulation, and disclosure
+- **EU Prospectus Regulation**: Governs prospectus requirements for securities admitted to Euronext Regulated Markets
+- **CSDR** (Central Securities Depositories Regulation): Governs Euronext Securities (CSDs in Denmark, Italy, Norway)
+- **EMIR** (European Market Infrastructure Regulation): Governs Euronext Clearing (formerly CC&G)
+- **Euronext Rule Book**: Harmonised Rules (Book I, applicable across all markets) and local supplementary rules (Book II, market-specific)
+- **RTS 6** (Algorithmic Trading): Requirements for algorithmic trading controls, testing, and record-keeping
+- **RTS 11** (Tick Size Regime): Standardized tick sizes based on price and liquidity
+
+### 9.3 Market Surveillance
+- Euronext operates a centralized **Market Surveillance** department monitoring all markets in real time
+- Surveillance covers potential market abuse (insider trading, price manipulation, spoofing, layering)
+- Cross-market surveillance across all Euronext venues (regulated markets, Growth, Access, Block)
+- Automated alert systems detect anomalous trading patterns, unusual price movements, and order book irregularities
+- Findings reported to relevant national regulators (AMF, CONSOB, etc.) for enforcement action
+- Euronext also operates as an **ARM (Approved Reporting Mechanism)** and **APA (Approved Publication Arrangement)** under MiFID II for trade reporting
+
+### 9.4 Reporting Requirements
+- Members must report transactions to national competent authorities under MiFIR Article 26
+- Post-trade transparency: Trades published in real time (or deferred for large-in-scale transactions per MiFID II waivers)
+- Pre-trade transparency: Full order book visible for lit markets; waivers available for dark trading (reference price waiver, negotiated trade waiver, LIS waiver)
+- Listed companies subject to ongoing disclosure obligations (regulated information, inside information under MAR)
+
+### 9.5 Cross-border Arrangements
+- Single Rule Book (Harmonised Rules) creates a unified regulatory framework across all Euronext markets
+- Passporting under MiFID II enables EEA-regulated firms to access all Euronext markets via remote membership
+- Third-country equivalence determinations may apply for non-EEA firms
+- Euronext's multi-jurisdictional structure is unique among major exchanges, requiring coordination between 8 national regulators
+- Post-Brexit: Euronext relocated its primary data centre from Basildon (UK) to Bergamo (Italy) in 2022, reducing dependency on UK infrastructure
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+| Fee Type | Structure | Rate |
+|----------|-----------|------|
+| Standard Cash Equities | Ad-valorem (basis points on traded value) | 0.50 bps per trade (effective Feb 2025); minimum EUR 0.70 per trade |
+| Market Maker / Liquidity Provider | Maker-taker model with tiered rebates | Reduced fees for passive (maker) trades; specific rates depend on program tier and asset class |
+| Euronext Block (Dark) | Per-trade fee | Separate fee schedule [unverified] |
+| ETFs | Reduced fee schedules for ETF trading | Varies by liquidity program participation |
+| Structured Products | Free for trades up to EUR 6,000 value; capped at EUR 20 per trade | Per-trade cap applies; 5 free orders per trade |
+| Clearing Fees | Per-trade clearing fee via Euronext Clearing | Varies by instrument and volume tier |
+
+### 10.2 Other Fees
+- **Listing fees**: Annual listing fees based on market capitalization; initial listing fees vary by market segment (Regulated Market, Growth, Access). Detailed in annual Listing Fee Book (2025 edition available on Euronext website)
+- **Market data fees**: Real-time data subject to the Information Product Fee Schedule; delayed data (15-min) free for internal use; redistribution requires a license and additional fees
+- **Co-location fees**: Rack space rental at Bergamo data centre; cross-connect fees; specific pricing not publicly disclosed (negotiated per client)
+- **Connectivity fees**: Monthly fees for OEG and MDG connections; varies by connection type and bandwidth
+- **Technology licensing**: Euronext licenses the Optiq platform to third-party exchange operators [unverified]
+
+### Revenue Breakdown (FY 2025)
+- Euronext N.V. total revenue: ~EUR 1.7 billion [estimated based on adjusted EBITDA of EUR 1,143 million at ~67% margin]
+- Revenue is diversified: trading revenue (~30%), post-trade/clearing (~25%), listing (~10%), technology/data (~20%), other (~15%) [approximate, unverified]
+- Non-volume-based revenue growth is a strategic priority under the "Innovate for Growth 2027" plan
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+- **2022**: Core Data Centre relocated from Basildon (UK) to Bergamo, Italy (Aruba IT3); completed June 2022
+- **2023**: Borsa Italiana cash markets (equities, ETFs, bonds) migrated to Optiq in two phases
+- **2024**: Borsa Italiana derivatives migrated to Optiq (Phase 3, April 2024) -- completing full Borsa Italiana technology integration; Euronext Clearing expanded to cover all Euronext financial derivatives
+- **2025**: Continued Optiq platform enhancements; ATHEX Group integration planning underway; MDG and OEG version upgrades (v5.38.0 specification documents published)
+- **Ongoing**: Optiq platform offered as a technology solution to third-party exchanges and venue operators
+
+### New Products / Segments
+- **2024**: Launch of integrated European ETF market platform (support from issuers representing >90% of European ETF AUM)
+- **2025**: Launch of cash-settled **Mini Bond Futures** on Italian, French, German, and Spanish government bonds (September 2025)
+- **2026**: Power futures launch (March 2026), diversifying commodities franchise following Nasdaq Nordic power futures acquisition
+- **2026**: European Repo market expansion (target completion June 2026)
+- **Euronext Block**: Continues to grow as dark midpoint venue for institutional block trading
+
+### Regulatory Changes
+- **MiFID II/MiFIR Review**: EU Commission published market integration legislative package (December 2025) aiming to simplify regulatory framework and move toward EU-level supervision; potential impact on Euronext's multi-jurisdiction structure
+- **CSDR Refit**: Ongoing implementation affecting Euronext Securities (CSDs)
+- **Consolidated Tape Provider (CTP)**: EU regulatory push for a consolidated tape for equities; Euronext has positioned itself as a potential contributor/operator
+- **T+1 Settlement**: Industry discussions on migrating European markets from T+2 to T+1 settlement; Euronext preparing infrastructure
+
+### Strategic Initiatives
+- **"Innovate for Growth 2027"**: Strategic plan focused on growing non-volume-based businesses, scaling technology, and expanding the European footprint
+- **European CSD Model**: Announced December 2025; plan to harmonize CSD operations across Denmark, Italy, Norway, and Portugal, reducing costs and improving cross-border settlement. Euronext Securities to begin settling Amsterdam, Brussels, and Paris cash equities by September 2026
+- **ATHEX Integration**: Athens Stock Exchange acquired (75.6% stake by end 2025); targeting EUR 12 million annual run-rate synergies by 2028
+- **Admincontrol Acquisition**: Nordic SaaS platform for board portals; expanded Corporate Solutions business to 8,500+ companies
+- **Power Futures / Commodity Expansion**: Building on Nord Pool acquisition; power futures launching March 2026; expanding energy trading franchise
+- **Euronext Clearing Expansion**: After separating from LCH SA, Euronext Clearing now handles all Euronext financial derivatives; further expansion into cash equities clearing planned
+
+---
+
+## Sources
+
+1. Euronext Official Website -- About, Trading, Technology, Regulation: https://www.euronext.com (accessed 2026-04-06)
+2. Euronext -- Trading Hours & Holidays: https://www.euronext.com/en/trading/trading-hours-holidays (accessed 2026-04-06)
+3. Euronext -- Trading Safeguards: https://www.euronext.com/en/trading/market-quality/trading-safeguards-euronext-markets (accessed 2026-04-06)
+4. Euronext -- Optiq Technology Platform: https://www.euronext.com/en/technology/optiq-tech-solutions-for-exchanges-and-venue-operators (accessed 2026-04-06)
+5. Euronext -- Trading Fees and Charges: https://www.euronext.com/en/trading/fees-charges (accessed 2026-04-06)
+6. Euronext -- Cash Markets Trading Fee Guide (Effective 01 Feb 2025): https://www.euronext.com/sites/default/files/2025-02/Euronext%20Cash%20Markets%20Trading%20Fee%20Guide_Effective%2001FEB2025.pdf (accessed 2026-04-06)
+7. Euronext -- Q4 and Full Year 2025 Results: https://www.euronext.com/en/about/media/euronext-press-releases/euronext-publishes-q4-and-full-year-2025-results (accessed 2026-04-06)
+8. Euronext -- Delivering on Strategy 2025: https://www.euronext.com/en/news/delivering-strategy-and-strengthening-european-capital-markets-2025 (accessed 2026-04-06)
+9. Euronext -- Data Centre: https://www.euronext.com/en/technology/euronext-data-centre (accessed 2026-04-06)
+10. Euronext -- Borsa Italiana Acquisition Completion: https://www.euronext.com/en/about/media/euronext-press-releases/acquisition-borsa-italiana-group-and-q1-2021-results (accessed 2026-04-06)
+11. Euronext -- Regulatory Framework / Regulatory Bodies: https://www.euronext.com/en/regulation (accessed 2026-04-06)
+12. Euronext -- Market Data Products: https://www.euronext.com/en/data/market-data/market-data-products (accessed 2026-04-06)
+13. Euronext -- Choosing a Market (Listing): https://www.euronext.com/en/listing/raise-capital/how-go-public/choosing-market (accessed 2026-04-06)
+14. Confluent -- Euronext Case Study (Optiq/Kafka): https://www.confluent.io/customers/euronext/ (accessed 2026-04-06)
+15. OnixS -- Euronext Optiq MDG Market Data Handler: https://www.onixs.biz/euronext-optiq-market-data-gateway-feed-handler.html (accessed 2026-04-06)
+16. Euronext -- Optiq OEG FIX 5.0 / SBE Interface Specifications (v5.38.0): https://connect.euronext.com (accessed 2026-04-06)
+17. Wikipedia -- Euronext: https://en.wikipedia.org/wiki/Euronext (accessed 2026-04-06)
+18. TradingBrokers -- Euronext Trading Hours: https://tradingbrokers.com/euronext-trading-hours/ (accessed 2026-04-06)
+19. ESMA -- MiFID II / RTS 11 Tick Size Regime: https://www.esma.europa.eu (accessed 2026-04-06)
+20. The TRADE News -- Euronext Data Centre Migration: https://www.thetradenews.com/inside-europes-new-fortress-euronexts-continental-data-centre-and-trading-floor/ (accessed 2026-04-06)

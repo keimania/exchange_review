@@ -1,0 +1,441 @@
+# Central Depository Pte Ltd (CDP, 싱가포르 중앙예탁청산기관)
+
+> **최종 업데이트:** 2026-04-07
+> **조사 등급:** Tier 2 (Standard)
+> **유형:** CCP + CSD (중앙청산소 + 중앙예탁기관)
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | The Central Depository (Pte) Limited |
+| 약칭 | CDP |
+| LEI | 549300CMH3J8ASUM8N29 |
+| SWIFT 코드 | CDPLSGSGXXX |
+| 소재지 | 싱가포르 |
+| 주소 | SGX Centre 1, 2 Shenton Way, #02-02, Singapore 068804 |
+| 웹사이트 | [https://www.sgx.com/securities/depository](https://www.sgx.com/securities/depository) |
+| 설립연도 | 1987년 |
+| 모회사 | Singapore Exchange Limited (SGX Group, 싱가포르거래소그룹) -- 완전자회사 |
+| 감독기관 | Monetary Authority of Singapore (MAS, 싱가포르통화청) |
+| 규제 지위 | 증권선물법(Securities and Futures Act 2001, SFA)에 따른 인가청산기관(Approved Clearing House, ACH); 회사법에 따른 지정 중앙예탁기관 |
+| CPMI-IOSCO PFMI 준수 | 준수 -- PFMI 공시 발간 ([SGX RegCo PFMI Page](https://regco.sgx.com/principles-financial-market-infrastructures-disclosure)) |
+| 역할 | 싱가포르 증권시장(주식 및 채권)에 대한 통합 청산, 결제, 예탁 서비스 제공 |
+| 시스템적 중요성 | MAS에 의해 시스템적으로 중요한 금융시장인프라(FMI)로 지정; 청산 거래 금액의 싱가포르 GDP 대비 비율은 약 94% (2012년 IMF 평가 기준) [Source: IMF Country Report No. 13/345] |
+
+**SGX Group과의 관계:**
+
+CDP는 SGX Group 내 2개 청산기관 중 하나이다:
+- **CDP** -- SGX-ST (Singapore Exchange Securities Trading, 싱가포르거래소 증권매매시장)에서 거래되는 주식, 사채, ETF, REIT, 단위신탁, 워런트, 예탁증서 등 상장 증권의 청산 및 결제
+- **SGX-DC (SGX Derivatives Clearing Limited)** -- 파생상품(선물, 옵션, OTC 파생상품) 청산; 자체 청산기금(2024년 12월 기준 약 S$5.57억) 보유 별도 법인
+
+CDP와 SGX-DC 모두 SGX의 완전자회사이며 SFA에 따른 지정청산기관(Designated Clearing House, DCH)으로 규제된다. [Source: MAS -- [Clearing Houses](https://www.mas.gov.sg/regulation/capital-markets/understand-the-types-of-capital-market-entities/clearing-houses)]
+
+> **KRX/KSD 비교:** 한국에서는 KRX가 CCP, KSD가 CSD 역할을 하며 별도 법인이다. 싱가포르에서는 CDP가 CCP와 CSD 기능을 단일 법인 내에서 결합하고 있다는 점이 독특하다.
+
+### 주요 연혁 (Key Historical Milestones)
+
+| 연도 | 사건 |
+|------|------|
+| 1987 | CDP 설립 -- 싱가포르증권거래소(SES)의 완전자회사로서 싱가포르 시장의 중앙예탁기관 역할 |
+| 1999 | SES와 SIMEX 합병으로 Singapore Exchange (SGX) 출범; CDP는 SGX의 자회사로 전환 |
+| 2006 | CDP, 결제 리스크에 대한 실시간 감시 역량 구축 |
+| 2012 | SGX, 청산·결제·예탁 시스템 업그레이드를 위한 장후 처리 현대화 프로그램 착수 |
+| 2016 (1월) | 신규 Post-Trade System (PTS) Phase 1 가동 -- ISO 20022 메시징을 활용한 청산, 결제, 대금지급 API [Source: [SWIFT Case Study](https://swift.com/resource/singapore-exchange-sgx-embraces-iso-20022-its-new-post-trade-system)] |
+| 2018 (12월) | PTS Phase 2 가동 -- LSEG Technology 기반의 신규 증권결제 및 예탁 프레임워크; 결제주기 T+3에서 T+2로 단축; 진정한 DVP 결제 도입 [Source: [LSEG Press Release](https://www.lseg.com/en/media-centre/press-releases/2018/lseg-technology-successfully-implements-settlement-and-depository-solution-singapore-exchange-sgx)] |
+| 2019 (7월) | 부도 관리 역량 개선 시행 [Source: [Allen & Gledhill](https://www.allenandgledhill.com/sg/publication/articles/12346/sgx-implements-enhancements-to-default-management-capabilities-of-sgx-dc-and-cdp-on-17-july-2019)] |
+| 2019 (12월) | 증권대차(SBL) 프로그램 변동금리 도입으로 개선 [Source: [SGX Group Media Centre](https://www.sgxgroup.com/media-centre/20191127-sgx-enhances-securities-borrowing-and-lending-programme-introduction-variable)] |
+| 2022 (6월) | SGX CDP, Marketnode의 DLT 기반 직접예탁(direct-to-depository) 서비스를 디지털 채권 발행에 활용 [Source: [SGX Group Media Centre](https://www.sgxgroup.com/media-centre/20220601-sgx-cdp-makes-available-marketnodes-dlt-enabled-direct-depository)] |
+| 2023 (5월) | CDP 증거금 및 청산기금 체계 개편 시행 [Source: [Allen & Gledhill](https://www.allenandgledhill.com/sg/publication/articles/24870/sgx-implements-refinements-to-cdp-margin-and-clearing-fund-frameworks)] |
+| 2024 | SGX Group, 복수 부도 시 청산회원 책임 한도 개정 [Source: [Mondovisione](https://mondovisione.com/news/sgx-group-seeks-to-refine-cap-on-clearing-members-liability-for-multiple-defaul-2024322/)] |
+
+---
+
+## 2. 청산 모델 (Clearing Model)
+
+### 2.1 CCP 서비스 (CCP Services)
+
+CDP는 SGX-ST에서 거래되는 모든 증권에 대한 중앙청산소(CCP) 역할을 수행하며, 다음에 대한 청산 서비스를 제공한다:
+
+| 상품군 | 설명 |
+|--------|------|
+| 주식 | SGX-ST 상장 보통주, 우선주 |
+| ETF | SGX-ST 상장 모든 ETF |
+| REIT 및 비즈니스 트러스트 | 부동산투자신탁(REIT) 및 비즈니스 트러스트 |
+| 채권 | 상장 사채, 국채 |
+| 워런트 및 구조화상품 | 구조화 워런트, 일일레버리지증서(Daily Leverage Certificates) |
+| 예탁증서 | 싱가포르 예탁증서(Singapore Depository Receipts) |
+| 단위신탁 | 상장 단위신탁 |
+| Extended Settlement (ES) 계약 | 개별주식에 대한 증거금 부과 선물형 계약 |
+| 신주인수권 | 기업행위 시 신주인수권 |
+
+[Source: [SGX Clearing Information](https://www.sgx.com/securities/clearing-information)]
+
+### 2.2 채무인수 절차 (Novation Process)
+
+CDP는 SGX-ST에서 거래가 체결 또는 보고되는 즉시 채무인수(novation)를 통해 각 거래의 양측에 대한 상대방이 된다. 채무인수 절차는 회원 유형에 따라 다르다:
+
+1. **양 당사자 모두 청산회원(CM)인 경우:** 거래가 CDP에 직접 채무인수되며, CDP가 매도 CM의 매수자, 매수 CM의 매도자가 된다.
+
+2. **일방이 매매회원(TM), 타방이 CM인 경우:** 적격 CM이 상대방 TM의 권리, 의무 및 책임을 인수하고, 이후 거래가 CDP에 채무인수된다.
+
+3. **양 당사자 모두 매매전용 회원인 경우:** 각각의 적격 CM이 각 TM의 권리와 의무를 인수하고, 이후 거래가 CDP에 채무인수된다.
+
+[Source: [SGX Rulebook -- Rule 6.2 Clearing and Novation](https://rulebook.sgx.com/entiresection/536)]
+
+> **KRX 비교:** KRX도 유사한 채무인수 모델을 따른다 -- 거래소에서 매매 체결 시 KRX가 양측에 대한 CCP로 개입한다. 주요 차이점은 KRX가 단일 통합 거래소-CCP 법인으로 운영되는 반면, CDP는 SGX Group 내 별도 법인 자회사라는 점이다.
+
+### 2.3 차감 (Netting)
+
+CDP는 다자간차감 시스템을 운영한다:
+
+- **증권 차감:** 청산회원별·종목별 순증권 의무가 산출된다. T+2에 각 CM은 종목별로 단일 순인도 또는 순수취 의무를 갖는다.
+- **현금 차감:** 청산회원별 순현금 의무가 산출된다. 결제일당 단일 순지급 또는 순수취 금액이 결정된다.
+- **차감 마감:** 당일 체결된 거래에 대해 거래일 종료 시 차감이 이루어지며, 결제 의무는 T+2에 도래한다.
+
+### 2.4 청산회원 (Clearing Membership)
+
+CDP는 2가지 범주의 청산회원을 보유한다:
+
+| 유형 | 최소 자본 | 주요 요건 |
+|------|---------|---------|
+| **총괄청산회원 (GCM)** | 기본 자본 S$500만 (SGX-DC 청산회원도 겸하는 경우 S$800만) | 싱가포르 등록 법인이어야 함; 자본시장서비스 인가(면제 시 제외); CEO 등록; 적립금 유지(감사 순이익의 30%를 기본자본에서 미처분이익을 뺀 금액이 S$1,500만에 달할 때까지 연간 적립) |
+| **은행청산회원 (BCM)** | 특정 최소 기준 없음 (은행 규제에 따름) | 싱가포르에서 은행업 영위 인가를 받아야 함; 본질적 안전성과 건전성을 나타내는 적정 신용등급 보유 필요 |
+
+[Source: [SGX Rulebook -- Rule 3 Membership](https://rulebook.sgx.com/rulebook/rule-3-membership-0); [SGX Rulebook -- Rule 5 Financial/Capital Requirements](https://rulebook.sgx.com/rulebook/rule-5-financialcapital-requirements-0)]
+
+추가 요건:
+- CDP는 거래량, 위험 익스포저, 위험 집중도, 증거금 정책, 영위 사업의 특성에 따라 추가 자본, 재무 및 기타 요건을 부과할 수 있다
+- GCM은 자기계정 및 자신이 자격 부여(후원)한 매매회원을 위해 청산 가능
+- BCM은 수탁 고객을 위해 청산 가능
+
+> **KRX 비교:** KRX 청산회원 자격은 증권 청산회원의 경우 최소 순자본 KRW 100억(약 S$1,000만)을 요구하며, 이는 CDP의 S$500만 기준과 대체로 비교 가능하다.
+
+---
+
+## 3. 리스크 관리 (Risk Management)
+
+### 3.1 증거금 체계 (Margin Framework)
+
+CDP는 청산회원에 대해 리스크 기반 증거금 체계를 적용한다:
+
+| 항목 | 세부사항 |
+|------|---------|
+| 증거금 방법론 | 최소 99% 신뢰수준의 리스크 기반 증거금 산출 [Source: SGX CDP PFMI Disclosure] |
+| 청산 기간(Close-out Period) | 계약 유동성에 따라 1~5일 |
+| 증거금 산출 빈도 | 최소 1일 2회 (일중 및 장마감 후) |
+| 증거금 유형 | 개시증거금, 변동증거금, 추가 증거금 (집중도, 역방향 리스크) |
+| 수용 담보 | 현금(SGD), 국채, 기타 적정 할인율이 적용된 승인 담보 [미확인 -- 구체적 담보 목록은 공개 출처에서 확인 불가] |
+
+증거금 체계의 주요 특징 (2023년 5월 개편 이후):
+- 개시증거금은 99% 신뢰수준에서 청산 기간 중 잠재 손실을 커버하도록 설계
+- 증거금 산출에 현재 시장 리스크와 과거 스트레스 시나리오 모두 반영
+- CDP는 변동성 확대 기간에 추가 증거금을 징수할 수 있음
+
+[Source: [Allen & Gledhill -- CDP Margin and Clearing Fund Refinements](https://www.allenandgledhill.com/sg/publication/articles/24870/sgx-implements-refinements-to-cdp-margin-and-clearing-fund-frameworks)]
+
+### 3.2 증거금 징수 일정 (Margin Call Schedule)
+
+| 주기 | 시점 | 설명 |
+|------|------|------|
+| 일중 증거금 | 매매 시간 중 | CDP는 일중 포지션을 모니터링하며 증거금 요건 부족분 및 잠재적 시가평가 손실을 커버하기 위해 증거금을 징수할 수 있음 |
+| 장마감 증거금 | 장마감 후 | 전체 증거금 재산정; 부족분에 대해 증거금 징수 |
+| 증거금 납부 기한 | 1 거래일 이내 | 청산회원은 증거금 징수 사유 발생일로부터 1 거래일 이내에 납부해야 함 |
+| 고객 증거금 복원 | 2 영업일 이내 | CM은 고객 자산가치가 고객 요구 증거금 이하로 하락한 경우 2 영업일 이내에 고객으로부터 개시증거금 수준으로의 복원을 요청해야 함 |
+
+[Source: [SGX Rulebook -- Rule 6A Margin Requirements](https://rulebook.sgx.com/rulebook/rule-6a-margin-requirements); [SGX Rulebook -- Regulatory Notice 3.3.12](https://rulebook.sgx.com/rulebook/regulatory-notice-3312-customer-margins)]
+
+### 3.3 손실부담순서 (Default Waterfall) (대략적 규모 포함)
+
+CDP의 손실부담순서는 청산회원 부도 시 재무 자원이 적용되는 순서를 규정한다:
+
+| 단계 | 재원 | 대략적 규모 / 비고 |
+|------|------|-------------------|
+| 1 | **부도자 증거금** | 부도 CM이 납부한 증거금 및 담보; 최초 방어선 |
+| 2 | **부도자 청산기금 출연분** | 부도 CM의 청산기금 출연분(funded contribution) |
+| 3 | **CDP Skin-in-the-Game (SITG)** | CDP 자체 자본의 청산기금 출연분 -- 총 청산기금의 최소 25% [미확인 -- 정확한 현재 CDP SITG 금액 미확정; 25% 비율은 SGX Group 차원 성명에서 도출] |
+| 4 | **비부도 CM의 출연 청산기금** | 기타 (비부도) 청산회원의 출연(funded) 분담금 |
+| 5 | **비부도 CM의 조건부 분담금(Contingent Contributions)** | 비부도 CM의 미출연(callable) 분담금 -- 모든 출연 재원이 소진된 후에만 사용 (2023년 개편에 따름) |
+| 6 | **CDP 잔여 자본** | CDP의 잔여 재무 자원 |
+
+**청산기금 규모:**
+- CDP 총 청산기금: **S$8,000만** (2024년 6월 30일 및 2024년 12월 31일 기준) [Source: SGX Group Financial Results FY2024/H1 FY2025]
+- 참고: SGX-DC 청산기금: **S$5.57억** (동일 시점)
+
+**2023년 주요 개편:**
+- 비부도 CM의 조건부 분담금이 후순위로 조정됨 -- 출연(funded) 분담금(CM 및 CDP 모두)이 미출연 자원보다 먼저 사용
+- 청산회원의 총 청산기금 책임에 상한이 설정되어 최대 익스포저에 대한 확실성 제공
+- CDP 자체 출연분은 총 청산기금의 최소 25%로 구조화되었으며, SGX는 이것이 유럽 및 미국의 많은 CCP보다 비례적으로 높다고 설명
+
+[Source: [Allen & Gledhill](https://www.allenandgledhill.com/sg/publication/articles/24870/sgx-implements-refinements-to-cdp-margin-and-clearing-fund-frameworks); [SGX Group Financial Results H1 FY2025](https://investorrelations.sgx.com/static-files/df4677aa-9523-4995-9e31-d69158169384)]
+
+> **KRX 비교:** KRX의 증권시장 손해배상공동기금은 2023년 기준 약 KRW 1,000억(약 S$1억)으로, CDP의 S$8,000만과 대체로 비교 가능한 규모이다. KRX도 비부도 회원의 출연분보다 앞서 자체 출연분(skin-in-the-game)을 손실부담순서에 배치하며, 이는 CPMI-IOSCO 지침에 부합한다. [미확인 -- KRX 기금 규모는 대략적 수치]
+
+### 3.4 공동기금 / 보증기금 (Default Fund / Guarantee Fund)
+
+CDP 청산기금은 다음과 같이 규모가 산정·관리된다:
+
+| 항목 | 세부사항 |
+|------|---------|
+| 총 기금 규모 | S$8,000만 (2024년 12월 기준) |
+| CDP SITG 출연분 | 청산기금의 최소 25% |
+| CM 출연 분담금 | 평균 일일 위험 증거금의 일정 비율 기반(2023년 방법론) |
+| CM 조건부 분담금 | 콜(callable) 가능, 상한 있음, 출연 재원 소진 후에만 사용 |
+| 기금 규모 산정 방법론 | 2023년 개정 -- 보다 리스크에 민감한 방식으로 청산기금 규모 산정 변경 |
+| 기금 검토 빈도 | 주기적 검토; 출연분이 부족할 경우 기금 징수 가능 |
+
+[Source: [SGX RegCo Consultation Paper on CDP Margining and Clearing Fund (Nov 2022)](https://www.sgxgroup.com/media-centre/20221103-sgx-regco-proposes-changes-cdp-margining-and-clearing-fund)]
+
+### 3.5 스트레스 테스트 및 백테스트 (Stress Testing & Back-testing)
+
+CDP는 PFMI 준수의 일환으로 정기적 스트레스 테스트 및 백테스트를 실시한다:
+
+- **스트레스 테스트:** CDP는 극단적이나 현실적인 시장 상황에서 재무 자원의 적정성을 확인하기 위해 스트레스 테스트를 수행한다. 여기에는 과거 스트레스 시나리오와 가상 시나리오가 모두 포함된다. [미확인 -- 구체적 스트레스 시나리오 세부사항 비공개]
+- **백테스트:** 증거금 모델이 목표 커버리지 수준(99% 신뢰수준)을 달성하는지 검증하기 위해 백테스트를 실시한다. 결과는 정기적으로 검토되며 필요시 모델이 재보정된다. [미확인 -- 구체적 백테스트 결과 비공개]
+- **MAS 감독:** MAS는 CDP의 스트레스 테스트 체계를 포함한 리스크 관리 관행에 대한 감독 평가를 실시한다. [Source: [MAS Parliamentary Reply on CDP Oversight (2024)](https://www.mas.gov.sg/news/parliamentary-replies/2024/pq-on-mas-oversight-on-cdp)]
+
+### 3.6 회복 및 정리 (Recovery & Resolution)
+
+- **회복 수단:** CDP는 손실부담순서를 초과하는 잔여 손실을 관리하기 위해 변동증거금 삭감(variation margin haircutting), 부분적 포지션 청산(partial tear-up), 자발적 경매 메커니즘 등의 수단을 포함하는 회복 계획을 보유한다. [미확인 -- 구체적 회복 계획 세부사항 비공개]
+- **정리 기관:** MAS는 싱가포르에서 시스템적으로 중요한 FMI인 CDP의 정리 기관이다.
+- **부도 관리 개선 (2019년):** SGX는 청산회원에 대한 부도 관리 절차 개정을 포함하여 SGX-DC와 CDP 모두의 부도 관리 역량 개선을 시행하였다. [Source: [Allen & Gledhill (2019)](https://www.allenandgledhill.com/sg/publication/articles/12346/sgx-implements-enhancements-to-default-management-capabilities-of-sgx-dc-and-cdp-on-17-july-2019)]
+- **2024년 개정:** SGX는 복수 부도 시 청산회원의 책임 한도를 개정하여 CM에게 극단적 꼬리 위험(tail-risk) 사건에서의 최대 재무 익스포저에 대한 확실성을 제공하였다. [Source: [Mondovisione (2024)](https://mondovisione.com/news/sgx-group-seeks-to-refine-cap-on-clearing-members-liability-for-multiple-defaul-2024322/)]
+
+---
+
+## 4. 결제 (Settlement)
+
+### 4.1 결제주기 (Settlement Cycle)
+
+| 상품 | 결제주기 | 비고 |
+|------|---------|------|
+| 주식 (보통주, ETF, REIT) | **T+2** | 2018년 12월 10일 T+3에서 단축 |
+| 상장 사채 | **T+2** | 주식과 동일 |
+| 싱가포르 국채 (SGS) | **T+1** | MAS의 MEPS+ 시스템을 통해 결제 (CDP 경유 아님) |
+| 비상장 사채 | **협의 가능** | 결제일 완전 협의 가능 |
+| 단위신탁 | **다양** | 펀드 운용사 조건에 따름 |
+
+[Source: [Clearstream -- Settlement Process Singapore](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-process-singapore-1280598); [DBS Vickers -- New Securities Settlement Framework](https://www.dbsvickers.com/vickers/sgxposttrademodernisation.page)]
+
+> **KRX 비교:** KRX도 주식을 T+2로 결제한다 (2024년 T+3에서 전환). 양 시장 모두 현재 글로벌 표준에 부합한다. 미국은 2024년 5월 T+1로 전환하였으나, 싱가포르는 아직 T+1 전환 계획을 발표하지 않았다. [미확인 -- 싱가포르 T+1 현황]
+
+### 4.2 DVP 모델 (DVP Model)
+
+CDP는 2018년 12월 시스템 업그레이드 이후 **진정한 DVP (Delivery versus Payment, 증권과대금의 동시결제)** 모델을 운영한다:
+
+| 특징 | 세부사항 |
+|------|---------|
+| DVP 유형 | BIS Model 3 -- 증권 총액결제 + 현금 순액결제 [미확인 -- 정확한 BIS 모델 분류] |
+| 증권결제 | CDP 내 장부대체; 일중 배치 또는 RTGS 완료 시에만 결제 확정 |
+| 현금결제 | MAS의 MEPS+ RTGS 시스템을 통한 결제은행 경유 SGD 결제; 다통화 결제 지원 |
+| 결제 시간대 | 결제일 09:00부터 결제; 복수의 일중 배치 결제 주기 |
+| 동시결제 | 증권과 현금 동시 결제 -- 현금 지급 확인 시에만 증권 인도 실행 |
+
+[Source: [DBS Vickers -- New Securities Settlement Framework](https://www.dbsvickers.com/vickers/sgxposttrademodernisation.page)]
+
+### 4.3 결제완결성 (Settlement Finality)
+
+CDP 규정에 따라 결제완결성이 명확히 정의되어 있다:
+
+- **증권 완결성:** 증권 인도는 CDP가 인도 증권계좌에서 증권을 차감함으로써 실행되며 **확정**된다. 수취는 CDP가 수취 증권계좌에 증권을 입금함으로써 확정된다.
+- **현금 완결성:** 결제참가자의 대금 지급 의무는 CDP가 결제참가자의 현금원장계좌에서 동일 금액을 차감함으로써 실행되며 **확정**된다.
+- **법적 근거:** 결제완결성은 증권선물법(SFA) 2001에 의해 보호되며, 동 법은 인가청산기관을 통해 이루어진 결제의 취소 불가능성 및 완결성에 대한 법정 보호를 제공한다.
+
+[Source: [SGX Rulebook -- CDP Settlement Rules](https://rulebook.sgx.com/rulebook/cdp-settlement-rules)]
+
+### 4.4 CSD / 결제 인프라 (CSD / Settlement Infrastructure)
+
+CDP는 싱가포르 장내 증권의 유일한 중앙예탁기관(CSD)으로 기능한다:
+
+| 기능 | 세부사항 |
+|------|---------|
+| 보유 증권 | 주식, 사채, ETF, REIT, 워런트, 구조화상품, 단위신탁, 예탁증서를 포함한 모든 SGX 상장 증권 |
+| 계좌 유형 | **직접증권계좌(Direct Securities Account)** (개인 소매투자자가 CDP에 직접 연결); **부계좌(Sub-Account)** (증권회사 또는 수탁은행 등 예탁대리인 명의로 보유) |
+| 부동화 | SGX 상장 증권은 부동화(immobilised) -- 모든 증권이 CDP에서 장부대체 형태로 보유 |
+| 기업행위 | CDP는 계좌 보유자를 대신하여 배당금, 신주인수권, 무상증자, 주식분할 등 기업행위를 처리 |
+| 계좌 수 | 소매투자자 보유 CDP 증권계좌 150만 개 이상 [미확인 -- 업계 보고서 기반 대략적 수치] |
+
+**주요 통계 (FY2025, 2024년 7월 -- 2025년 6월):**
+- 증권 일평균 거래대금(SDAV): **S$13.4억** (전년 대비 26.5% 증가)
+- 총 증권 거래대금: **S$3,364억** (전년 대비 27.5% 증가)
+- 평균 순청산수수료: **2.59 basis points** (전년 2.46 bps에서 상승)
+
+[Source: [SGX Group Annual Report FY2025](https://links.sgx.com/FileOpen/2025_SGX_Annual_Report.ashx?App=Announcement&FileID=859054)]
+
+### 4.5 CSD 연계 (CSD Linkages)
+
+CDP는 국제 CSD 및 결제 시스템과 국경 간 연계를 유지한다:
+
+| 상대기관 | 유형 | 설명 |
+|---------|------|------|
+| **Clearstream Banking Luxembourg (CBL)** | CSD 연계 | CBL 고객이 CDP 직접 계좌 보유자인 상대방과 거래 결제 가능; 국내 시장 상대방으로부터 예탁기관 경유 사전통지(allegement) 수용 [Source: [Clearstream -- Settlement Services Singapore](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-services-singapore-1278428)] |
+| **Euroclear** | 간접 연계 | 통신은행(correspondent) 관계를 통한 싱가포르 시장 증권 접근 [미확인 -- 구체적 연계 세부사항 미확정] |
+| **MAS MEPS+** | 현금결제 | CDP는 SGD 현금결제에 MAS의 MEPS+ RTGS 시스템을 사용; MEPS+는 SGS 채권 결제도 직접 처리 |
+| **결제은행** | 은행 인터페이스 | CDP는 청산회원을 대신한 현금결제를 위해 지정 결제은행(예: DBS, OCBC, UOB, 국제은행)과 인터페이스 |
+
+> **KRX/KSD 비교:** KSD는 국경 간 결제를 위해 50개 이상의 해외 CSD 및 ICSD와 양자 CSD 연계를 유지한다. CDP의 연계 네트워크는 더 소규모인데, 이는 강력한 수탁은행 중개를 활용하는 금융 허브로서의 싱가포르의 차별화된 시장 포지셔닝을 반영한다.
+
+### 4.6 증권 대차 (Securities Lending & Borrowing)
+
+CDP는 **SGX 증권대차(SBL)** 프로그램을 운영한다:
+
+| 특징 | 세부사항 |
+|------|---------|
+| 역할 | CDP가 대여자와 차입자 양측에 대한 본인(principal) 상대방으로 기능; 대여자는 차입자가 아닌 CDP의 거래상대방 리스크를 부담 |
+| 적격 (대여자) | CDP 증권계좌를 보유한 소매 및 기관 투자자; 최소 보유량: 주당 S$1 이하인 주식은 10,000주, 주당 S$1 초과인 주식은 S$10,000 가치 |
+| 차입 수수료 | 지수주 0.5%, REIT·비즈니스 트러스트 0.5%; 기타 증권 4.0% (2019년 12월 변동금리 도입 기준) |
+| 대여 수수료 | 대여자는 차입 수수료의 70% 수취 |
+| 소유권 이전 | 법적 소유권은 차입자에게 일시 이전; 대차 기간 중 의결권 정지; 경제적 이익(배당금)은 대여자가 보유 |
+| 등록 수수료 | 대여자 무료 |
+
+[Source: [SGX Group Media Centre -- SBL Enhancement (2019)](https://www.sgxgroup.com/media-centre/20191127-sgx-enhances-securities-borrowing-and-lending-programme-introduction-variable); [SGX Securities Lending Pool](https://www1.cdp.sgx.com/sgx-cdp-web/lendingpool/show)]
+
+---
+
+## 5. 기술 및 인프라 (Technology & Infrastructure)
+
+### 5.1 인터페이스 프로토콜 (Interface Protocols)
+
+| 구성요소 | 세부사항 |
+|---------|---------|
+| Post-Trade System (PTS) | 2단계로 구현된 신규 시스템 (Phase 1: 2016년 1월, Phase 2: 2018년 12월); LSEG Technology 기반 |
+| 메시징 표준 | **ISO 20022** -- 결제 처리에 채택; 구조화 XML 기반 메시징 |
+| 연결성 | API 기반 연결로 회원이 "best of breed" 솔루션을 유연하게 도입 가능; SWIFT 네트워크 또는 직접 API를 통해 접속 가능 |
+| 웹 인터페이스 | SGX-PTS WEB -- 레거시 시스템(PSMS, Enhanced DVP, E-Hub, DCSS)을 대체하는 단일 웹 기반 결제 시스템 |
+| 레거시 시스템 대체 | 2018년 12월 10일부로 신규 PTS가 4개 레거시 시스템을 대체 |
+
+[Source: [SWIFT Case Study -- SGX ISO 20022](https://swift.com/resource/singapore-exchange-sgx-embraces-iso-20022-its-new-post-trade-system); [LSEG Technology Press Release (2018)](https://www.lseg.com/en/media-centre/press-releases/2018/lseg-technology-successfully-implements-settlement-and-depository-solution-singapore-exchange-sgx)]
+
+### 5.2 복원력 (Resilience)
+
+| 특징 | 세부사항 |
+|------|---------|
+| 업무연속성 | CDP는 시스템적으로 중요한 FMI에 대한 MAS 요건에 따라 업무연속성 및 재해복구 계획을 유지 [미확인 -- 구체적 BCP/DR 세부사항 비공개] |
+| 운영 가동률 | 시스템 가용성 99.9% 이상 목표 [미확인] |
+| 사이버 보안 | MAS 기술리스크관리(TRM) 지침 적용; MAS가 정기적 감독 기술리스크 평가 실시 [Source: MAS regulatory framework] |
+| 데이터센터 | 주 및 보조 데이터센터 시설 [미확인 -- 구체적 위치 비공개] |
+| DLT 역량 | CDP의 핵심 예탁 인프라에 연결되는 별도 분산원장 계층인 Marketnode 통합으로 DLT 기반 채권 발행 지원 |
+
+---
+
+## 6. 규제 체계 (Regulatory Framework) (MAS 감독)
+
+CDP는 싱가포르통화청(MAS)의 다중 체계하에서 규제된다:
+
+| 체계 | 세부사항 |
+|------|---------|
+| **증권선물법 2001 (SFA)** | CDP는 인가청산기관(ACH)으로 인가받아 중앙예탁 시스템을 운영한다. MAS는 규제, 검사, 조사, 집행 준수에 대한 권한을 보유한다. |
+| **지급결제시스템(감독)법 (PS(O)A)** | MAS는 CDP의 지급결제 시스템을 PS(O)A에 따라 지정할 수 있으며, 접근 체계(access regime) 규정을 포함한 추가 감독 요건에 종속시킬 수 있다. |
+| **회사법** | CDP는 회사법에 따라 중앙예탁기관으로서도 추가 규제된다. |
+| **PFMI 기준** | CDP는 CPMI-IOSCO 금융시장인프라에 관한 원칙(PFMI)을 준수해야 하며, 주기적 자체평가를 발간한다. |
+| **MAS 감독 권한** | 정보 요청, 규정 제정, 검사, 조사, 접근 체계 수립, 지시 발행 권한 포함. |
+
+**CDP에 대한 주요 규제 요건:**
+- 참여에 대한 공정하고 객관적인 접근 기준
+- 청산시설의 안전하고 효율적인 운영
+- 투자자 보호
+- 적정 재무자원 및 리스크 관리
+- MAS에 대한 정기 보고 및 공시
+
+[Source: [MAS -- Clearing Houses](https://www.mas.gov.sg/regulation/capital-markets/understand-the-types-of-capital-market-entities/clearing-houses); [MAS -- ACH/RCH Licence](https://www.mas.gov.sg/regulation/capital-markets/apply-for-licensing-or-registration-of-capital-market-entities/copy-of-approved-clearing-house-ach-or-recognised-clearing-house-rch-licence)]
+
+> **KRX 비교:** KRX는 한국 금융위원회(FSC) 및 금융감독원(FSS)의 감독을 받는다. 상장 거래소의 민간 자회사인 CDP와 달리, KRX는 자본시장과 금융투자업에 관한 법률에 따라 설립된 특수목적 법인이다.
+
+---
+
+## 7. 상호운용성 (Interoperability)
+
+CDP는 현재 다른 CCP와의 공식적인 CCP 상호운용성 체계(CCP 링크)를 교차증거금(cross-margining) 또는 상호 청산 목적으로 유지하지 않는다. 상호운용성은 주로 다음을 통해 이루어진다:
+
+- **CSD 연계:** 4.5절에서 기술한 바와 같이, CDP는 Clearstream과의 연계 및 Euroclear를 통한 간접 접근을 국경 간 결제에 활용
+- **SGX Group 내 통합:** SGX Group 내에서 CDP와 SGX-DC는 보완적이나 별도의 청산기관으로 운영된다 -- CDP는 증권, SGX-DC는 파생상품 담당. 양 기관 간 공식적 교차증거금은 없다. [미확인 -- 교차증거금 현황]
+- **ASEAN 연계:** SGX는 ASEAN 거래소 간 국경 간 매매 및 결제를 가능하게 하고자 했던 ASEAN 거래소 연결 이니셔티브(ASEAN Trading Link, 2012년 출범 후 중단)에 참여한 바 있다. [Source: Industry reports]
+
+---
+
+## 8. 수수료 (Fees)
+
+CDP는 발간된 수수료표에 따라 청산회원에게 청산 및 결제 수수료를 부과한다:
+
+| 수수료 유형 | 요율 / 금액 | 비고 |
+|------------|-----------|------|
+| **청산수수료** | 거래대금의 약 0.0325% | FY2025 평균 순청산수수료 2.59 bps; 실제 요율은 상품 및 거래량 단계별로 상이 [Source: SGX Group Annual Report FY2025] |
+| **결제수수료** | 결제지시건당 | 결제참가자에게 부과 [미확인 -- 구체적 건당 수수료 미확정] |
+| **예탁수수료** | 소매 CDP 계좌 무료 | 직접 CDP 계좌에 증권을 보유한 소매투자자에게 보관료 없음 |
+| **기업행위 처리** | 다양 | 배당금, 신주인수권 등 처리 수수료 [미확인 -- 구체적 수수료표 미확정] |
+| **SBL 수수료** | 차입 수수료 0.5%~4.0% | CDP가 차입 수수료의 30% 보유; 대여자가 70% 수취 |
+| **계좌 개설** | 무료 | CDP 증권계좌 개설 수수료 없음 |
+
+참고: 구체적 상세 수수료표는 [SGX Rulebook](https://rulebook.sgx.com/rulebook/111-fees-and-expenses-payable)에 발간되며 주기적으로 업데이트된다.
+
+---
+
+## 9. 최근 동향 (Recent Developments)
+
+### 2022 -- Marketnode DLT 직접예탁 서비스
+SGX CDP는 채권 발행자를 위한 Marketnode의 DLT 기반 직접예탁(direct-to-depository) 서비스를 활용하였다. 이 플랫폼은 종이 기반 절차를 제거하고 채권 결제 시간을 60% 단축(T+5에서 T+2로)하였다. OCBC Bank의 US$1억 유로커머셜페이퍼 발행이 동 플랫폼의 최초 거래였다. S$10억 이상의 디지털 채권이 동 플랫폼을 통해 발행되었다. [Source: [SGX Group (Jun 2022)](https://www.sgxgroup.com/media-centre/20220601-sgx-cdp-makes-available-marketnodes-dlt-enabled-direct-depository); [Marketnode](https://www.marketnode.com/media-centre/sgx-cdp-makes-available-marketnodes-dlt-enabled-direct-to-depository-service-for-debt-issuers)]
+
+### 2023 -- 증거금 및 청산기금 체계 개편
+2023년 5월 26일(규정) 및 6월 12일(증거금 방법론) 시행으로 CDP는 중대한 변경을 도입하였다:
+- 보다 리스크에 민감한 방식으로 청산기금 규모 산정 방법 개정
+- 조건부 분담금 후순위 조정 -- 출연(funded) 재원 우선 사용
+- 청산회원의 총 청산기금 책임 상한 설정
+- CDP skin-in-the-game을 청산기금의 최소 25%로 유지
+
+[Source: [Allen & Gledhill (2023)](https://www.allenandgledhill.com/sg/publication/articles/24870/sgx-implements-refinements-to-cdp-margin-and-clearing-fund-frameworks)]
+
+### 2024 -- 복수 부도 시 청산회원 책임 한도 개정
+SGX Group은 복수 부도 시 청산회원의 책임 한도를 개정하여 CM에게 순차적 부도가 수반되는 극단적 꼬리 위험(tail-risk) 사건에서의 최대 재무 익스포저에 대한 확실성을 제공하였다. [Source: [Mondovisione (Mar 2024)](https://mondovisione.com/news/sgx-group-seeks-to-refine-cap-on-clearing-members-liability-for-multiple-defaul-2024322/)]
+
+### 2025 -- 활발한 시장 활동
+FY2025 (2024년 7월 -- 2025년 6월)에 시장 활동이 크게 증가하였다:
+- 증권 일평균 거래대금 S$13.4억 달성 (26.5% 증가)
+- 총 증권 거래대금 S$3,364억 달성 (27.5% 증가)
+
+[Source: [SGX Group Annual Report FY2025](https://links.sgx.com/FileOpen/2025_SGX_Annual_Report.ashx?App=Announcement&FileID=859054)]
+
+### 디지털 자산 및 블록체인 이니셔티브
+- SGX와 Temasek(테마섹)이 디지털 시장 인프라를 위한 합작법인으로 Marketnode를 설립
+- MAS와 SGX가 토큰화 자산 결제를 위한 블록체인 기술을 성공적으로 시범 운영 (Project Ubin) [Source: [MAS Media Release (2018)](https://www.mas.gov.sg/news/media-releases/2018/mas-and-sgx-successfully-leverage-blockchain-technology-for-settlement-of-tokenised-assets)]
+- SGX Derivatives (CDP와 별도)가 2025년 11월 비트코인 및 이더리움 무기한 선물 출시
+
+---
+
+## 출처 (Sources)
+
+### SGX / CDP 공식 출처
+- [SGX Securities Depository](https://www.sgx.com/securities/depository)
+- [SGX Securities Clearing Information](https://www.sgx.com/securities/clearing-information)
+- [SGX Rulebook -- CDP Clearing Rules](https://rulebook.sgx.com/rulebook/cdp-clearing-rules)
+- [SGX Rulebook -- CDP Settlement Rules](https://rulebook.sgx.com/rulebook/cdp-settlement-rules)
+- [SGX RegCo -- PFMI Disclosure](https://regco.sgx.com/principles-financial-market-infrastructures-disclosure)
+- [SGX Group Annual Report FY2025](https://links.sgx.com/FileOpen/2025_SGX_Annual_Report.ashx?App=Announcement&FileID=859054)
+- [SGX Group Financial Results H1 FY2025](https://investorrelations.sgx.com/static-files/df4677aa-9523-4995-9e31-d69158169384)
+- [SGX Group Financial Results FY2024](https://investorrelations.sgx.com/static-files/a56f86dc-34fd-4a1f-965c-b9563565594a)
+- [SGX Rulebook -- Rule 3 Membership](https://rulebook.sgx.com/rulebook/rule-3-membership-0)
+- [SGX Rulebook -- Rule 5 Financial/Capital Requirements](https://rulebook.sgx.com/rulebook/rule-5-financialcapital-requirements-0)
+- [SGX Rulebook -- Rule 6.2 Clearing and Novation](https://rulebook.sgx.com/entiresection/536)
+- [SGX Rulebook -- Rule 6A Margin Requirements](https://rulebook.sgx.com/rulebook/rule-6a-margin-requirements)
+- [SGX SBL Lending Pool](https://www1.cdp.sgx.com/sgx-cdp-web/lendingpool/show)
+
+### 규제 출처
+- [MAS -- Clearing Houses](https://www.mas.gov.sg/regulation/capital-markets/understand-the-types-of-capital-market-entities/clearing-houses)
+- [MAS -- Parliamentary Reply on CDP Oversight (2024)](https://www.mas.gov.sg/news/parliamentary-replies/2024/pq-on-mas-oversight-on-cdp)
+- [MAS -- EMEAP Red Book (2011)](https://www.mas.gov.sg/-/media/MAS/Singapore-Financial-Centre/Why-Singapore/Payment-and-Settlement-Systems-redirect-pages/EMEAP-Redbook-2011--Paymentclearing-and-settlement-systems-in-Singapore.pdf)
+- [BIS -- Payment Systems in Singapore](https://www.bis.org/cpmi/publ/d97_sg.pdf)
+- [IMF Country Report No. 13/345 -- Singapore FSAP](https://www.imf.org/external/pubs/ft/scr/2013/cr13345.pdf)
+
+### 제3자 / 분석 출처
+- [Allen & Gledhill -- CDP Margin and Clearing Fund Refinements (2023)](https://www.allenandgledhill.com/sg/publication/articles/24870/sgx-implements-refinements-to-cdp-margin-and-clearing-fund-frameworks)
+- [Allen & Gledhill -- Default Management Enhancements (2019)](https://www.allenandgledhill.com/sg/publication/articles/12346/sgx-implements-enhancements-to-default-management-capabilities-of-sgx-dc-and-cdp-on-17-july-2019)
+- [Allen & Gledhill -- Default Management Process Amendments](https://www.allenandgledhill.com/sg/publication/articles/19588/sgx-amends-default-management-process-for-clearing-members-of-cdp)
+- [Mondovisione -- Clearing Member Liability Cap (2024)](https://mondovisione.com/news/sgx-group-seeks-to-refine-cap-on-clearing-members-liability-for-multiple-defaul-2024322/)
+- [LSEG Technology -- SGX Implementation (2018)](https://www.lseg.com/en/media-centre/press-releases/2018/lseg-technology-successfully-implements-settlement-and-depository-solution-singapore-exchange-sgx)
+- [SWIFT -- SGX ISO 20022 Case Study](https://swift.com/resource/singapore-exchange-sgx-embraces-iso-20022-its-new-post-trade-system)
+- [Clearstream -- Settlement Process Singapore](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-process-singapore-1280598)
+- [Clearstream -- Settlement Services Singapore](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-services-singapore-1278428)
+- [Marketnode -- DLT Direct-to-Depository](https://www.marketnode.com/media-centre/sgx-cdp-makes-available-marketnodes-dlt-enabled-direct-to-depository-service-for-debt-issuers)
+- [Cbonds -- CDP Issuer Information](https://cbonds.com/company/86295/)
+- [MAS eServices -- CDP Registration](https://eservices.mas.gov.sg/fid/institution/detail/100611-THE-CENTRAL-DEPOSITORY-PTE-LIMITED)

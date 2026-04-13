@@ -1,0 +1,428 @@
+# English Glossary — Global Exchange Research
+
+> Terms are added as they are encountered during research. Keep alphabetically sorted within each category.
+
+---
+
+## Derivatives
+
+| Term | Abbreviation | Definition |
+|------|-------------|-----------|
+| 0DTE Options | 0DTE | See: Zero Days to Expiration |
+| ASX 24 | | ASX's derivatives trading platform for futures and options on interest rates, equity indices, commodities, energy, and environmental products; formerly Sydney Futures Exchange (SFE); upgraded to New Trading Platform (NTP) in 2016; LSEG partnership announced March 2026 for further modernization (target H1 2028) |
+| Automated Improvement Mechanism | AIM | Cboe's electronic auction process allowing a member to seek price improvement for an agency order by exposing it to competing interest for a brief period (typically 1 second) |
+| BAX | | Three-Month Canadian Bankers' Acceptance Futures — Montreal Exchange's legacy short-term interest rate contract based on CDOR; open positions converted to CRA (CORRA futures) on April 26, 2024; formally discontinued after CDOR cessation on June 28, 2024 |
+| Block Trade | | A privately negotiated, off-exchange transaction in listed futures or options that meets minimum size thresholds set by the exchange |
+| Book or Cancel Order | BOC | An order that is rejected if it would immediately match upon entry, ensuring passive (maker) execution only; used at Eurex |
+| Cancel on Disconnect | CoD | An optional feature that automatically cancels all working orders if the trading session is disconnected |
+| Canadian Derivatives Clearing Corporation | CDCC | The central counterparty (CCP) for all exchange-traded derivatives on the Montreal Exchange and for a growing range of OTC instruments; wholly-owned subsidiary of Bourse de Montreal Inc.; designated as a systemically important FMI by the Bank of Canada; uses SPAN-based margin methodology since 1997 |
+| Cboe Futures Exchange | CFE | Cboe's CFTC-regulated futures exchange, trading VIX futures, S&P 500 Variance futures, and other volatility products |
+| Cboe Volatility Index | VIX | The market's expectation of 30-day forward-looking volatility, calculated from S&P 500 (SPX) option prices; created in 1993, revised methodology in 2003; often called the "fear gauge" |
+| Cheapest-to-Deliver | CTD | The deliverable bond that minimizes the cost for the short position holder in a physically-delivered futures contract, based on conversion factors and market conditions |
+| Cloud Prisma Margin Estimator | cPME | Eurex's web-based tool allowing participants to estimate margin requirements for hypothetical portfolios |
+| CME Globex | | CME Group's electronic trading platform, first launched in 1992; the world's first global electronic futures trading platform |
+| Commitments of Traders | COT | CFTC weekly report publishing aggregated position data by trader category for U.S. futures markets |
+| Conversion Factor | CF | A factor applied in physically-delivered bond futures to adjust for differences between the notional coupon and the actual coupon of the delivered bond |
+| CORRA | | Canadian Overnight Repo Rate Average — Bank of Canada's preferred risk-free rate benchmark for CAD interest rate markets; replaced CDOR as the primary short-term interest rate benchmark; underlies Montreal Exchange's CRA and COA futures contracts |
+| Cross-Margining | | The practice of recognizing risk offsets between correlated products or across different clearing organizations to reduce total margin requirements |
+| CTP (Comprehensive Transaction Platform) | CTP | SHFE's core electronic trading system, widely used across China's futures industry; provides centralized order matching, risk management, and market data distribution; accessed via proprietary CTP API; primary data center at Zhangjiang, Shanghai |
+| Designated Contract Market | DCM | A U.S. CFTC-registered exchange authorized to list futures and options contracts for trading |
+| Derivatives Clearing Organization | DCO | A U.S. CFTC-registered clearinghouse that clears futures, options, and/or swaps |
+| Dynamic Price Banding | DPB | HKEX's pre-trade price validation mechanism that limits order prices to a band around the current best bid/ask, preventing erroneous orders from entering the order book |
+| Eligible Contract Participant | ECP | A category of market participant under the Commodity Exchange Act eligible to trade certain off-exchange products (block trades, swaps) |
+| Enhanced Trading Interface | ETI | Eurex's high-performance native binary interface for T7, using FIX 5.0 SP2 semantics with proprietary session layer |
+| Eurex EnLight | | Eurex's on-exchange selective Request-for-Quote (RFQ) platform with anonymous negotiation and STP integration |
+| European Union Allowance | EUA | A tradable carbon emission permit under the EU Emissions Trading System; each EUA entitles the holder to emit one tonne of CO₂ equivalent; ICE Futures Europe is the primary trading venue |
+| Exchange for Physical | EFP | A transaction involving the simultaneous exchange of a futures position for a corresponding physical commodity or forward contract |
+| Exchange for Risk | EFR | A transaction involving the simultaneous exchange of a futures/options position for a corresponding OTC derivative |
+| Exchange for Swap | EFS | A transaction involving the simultaneous exchange of a futures position for a corresponding OTC swap |
+| Exchange of Options for Options | EOO | A transaction involving the simultaneous exchange of an OTC option for a listed option |
+| EXTURE+ | | KRX's unified electronic trading system launched in 2014, developed by KOSCOM; memory-based architecture on x86 Linux servers with ~30-50 microsecond latency and 100,000+ TPS; supports equities, bonds, futures, options, ETFs, and commodities |
+| Extreme Loss Margin | ELM | An additional margin component applied by SEBI/NSE to cover tail risk beyond normal VaR-based margins; from November 2024, an additional 2% ELM is applied to short options positions on expiry day to address heightened volatility risk |
+| Fill and Kill | FAK | An order that executes immediately for any available quantity, with unfilled portion cancelled (equivalent to IOC in some markets) |
+| Futures Commission Merchant | FCM | A U.S.-registered entity that solicits or accepts orders for futures/options trading and accepts money or assets to margin such trades |
+| GIFT City | | Gujarat International Finance Tec-City — India's international financial services centre (IFSC) at Gandhinagar, Gujarat; hosts NSE International Exchange (NSE IX), which operates GIFT Nifty (replacing SGX Nifty from July 2023) with ~19 hours/day trading coverage for international investors |
+| Globex Credit Controls | GC2 | CME's exchange-provided GUI for clearing firms to set real-time, pre-execution risk limits per account |
+| Historical Value-at-Risk | HVaR | A risk measurement methodology using historical market data scenarios to estimate potential portfolio losses; used in both SPAN 2 and Prisma |
+| HKATS | | Hong Kong Futures Automatic Trading System — HKEX's electronic derivatives trading system, originally launched 1995, migrated to Nasdaq Genium INET platform in 2013 |
+| HKFE Clearing Corporation | HKCC | The clearing house for all products traded on HKFE (Hong Kong Futures Exchange), including index futures/options, currency futures, and commodity futures |
+| ICE Risk Model | IRM | ICE's proprietary risk methodology for margin calculation; IRM 2 (launched 2024-2025) uses Filtered Historical Simulation VaR at 99% confidence level, replacing the legacy scenario-based IRM |
+| iLink 3 | | CME Group's binary order entry protocol using FIX Simple Binary Encoding (SBE) with FIXP session layer |
+| iMpact | | ICE's proprietary multicast market data protocol providing real-time depth-of-book data via UDP multicast for all ICE futures markets |
+| Implied Pricing | | The generation of synthetic orders from combinations of outright and spread orders, enhancing liquidity across related contracts |
+| INE (Shanghai International Energy Exchange) | INE | SHFE's wholly-owned subsidiary established 2013 for internationalized commodity futures; operates RMB-denominated contracts open to overseas traders including Crude Oil (SC, launched March 2018 — first mainland China commodity open to foreign participants), Low Sulfur Fuel Oil, TSR 20 Rubber, Bonded Copper, and Containerized Freight Index futures |
+| Inline Credit Controls | ICC | CME's granular, per-product, account-level daily position limits set by clearing members and executing firms |
+| Inter-Commodity Spread Credit | | A SPAN margin reduction recognizing risk offsets between correlated products (e.g., crude oil vs. heating oil) |
+| Interval Price Limit | IPL | ICE's dynamic circuit breaker mechanism that sets price bands around the last trade price; trading is paused temporarily if the limit is breached, then resumes with an expanded range |
+| J-GATE | | Osaka Exchange's (OSE) derivatives trading system built on Nasdaq Genium INET technology; current version 3.0 launched September 2021; version 4.0 planned on Nasdaq Eqlipse platform (~2028) |
+| J-NET | | Osaka Exchange's off-auction trading facility for negotiated large-lot derivative transactions at pre-agreed prices, analogous to block trade facilities at other exchanges |
+| KOSPI 200 Options | | Equity index options based on the KOSPI 200 index, traded on KRX since July 7, 1997; contract multiplier KRW 500,000 (quintupled from KRW 100,000 in June 2012); European-style cash-settled; historically the world's most actively traded single derivatives contract (peak ~3.67 billion contracts in 2011) |
+| KRX Night Session (야간거래) | | KRX's independently operated after-hours derivatives trading session (18:00-06:00 KST), launched June 9, 2025, replacing the previous Eurex-linked arrangement; covers 10 products including KOSPI 200 futures/options, Mini products, KOSDAQ 150, USD futures, and KTB futures |
+| KRX-SPAN | | KRX's modified SPAN-based margin methodology for listed derivatives; uses scenario-based portfolio risk assessment; includes intraday margin calls triggered when KOSPI 200 volatility reaches ≥80% of the futures margin rate |
+| Lead Market Maker | LMM | A designated market participant required to provide continuous two-sided quotes with specific obligations; receives priority allocation in some matching algorithms |
+| Liquidation Group | | In Eurex Prisma, a grouping of products sharing similar risk characteristics for portfolio-based margin calculation; enables cross-margining between listed and OTC derivatives |
+| Market with Protection | | CME order type that executes within a pre-defined "protected range" from the current best price, preventing extreme fills; replaces traditional market orders on Globex |
+| Market-Wide Position Limit | MWPL | In India's derivatives markets, the maximum combined open interest (across all exchanges) permitted for a single underlying security; calculated as a percentage of the free-float market capitalization; when 95% of MWPL is breached, no new positions are allowed |
+| Mass Quote | | A message type allowing market makers to submit multiple two-sided quotes in a single message |
+| MDP 3.0 | | CME Group's market data platform using FIX SBE encoding over UDP multicast and TCP unicast |
+| Negotiated Large Trade | NLT | SGX's facility for privately negotiated off-order-book derivatives transactions that meet minimum volume thresholds; equivalent to block trades at other exchanges |
+| NSE Clearing Limited | NCL | India's first central counterparty (CCP) with settlement guarantee, formerly NSCCL (National Securities Clearing Corporation Limited); a wholly-owned subsidiary of NSE; provides novation, multilateral netting, and settlement guarantee for all trades on NSE's equity, derivatives, currency, and commodity segments |
+| Oman Marker Price | | The daily benchmark price for DME/GME Oman Crude Oil Futures (OQD), determined during the Marker Window (16:25-16:30 Singapore Time) from trades on the front-month contract; used as the basis for Trade at Marker (TAM) transactions and serves as the official selling price benchmark for Oman and Dubai crude exports to Asia |
+| OMD-D | | HKEX's Orion Market Data platform for the derivatives market, providing binary multicast data feeds for futures and options via UDP/IP |
+| Peak Margin | | SEBI's margin rule (fully implemented September 2021) requiring 100% upfront margin collection for all intraday F&O positions in India; random snapshots taken 4-5 times daily to verify compliance; penalties for shortfall; a key component of SEBI's retail investor protection framework |
+| Performance Bond | | CME's term for margin — collateral required to cover potential future losses on open positions |
+| Position Accountability | | A threshold at which an exchange may contact a trader and request information about positions, but no hard limit applies |
+| PRiME | | Portfolio Risk Margining of Exchange Positions — HKCC's margin methodology based on SPAN framework with a 1.33x client margin multiplier; evaluates 16 risk scenarios per product |
+| Pro-Rata Matching | | A matching algorithm where incoming quantity at each price level is allocated proportionally to resting order sizes rather than by time priority |
+| Qualified Clearing Member Market Maker | QCMM | A type of HKEX derivatives market maker that is also a clearing member, required to provide continuous two-sided quotes with minimum size obligations in exchange for fee rebates |
+| RiskGuard | | Euronext's pre-trade risk management service for derivatives and cash markets; provides order size limits, maximum order quantity, daily maximum exposure monitoring, kill switch functionality, and self-trade prevention via FIX 5.0 API and web-based GUI |
+| SAIL (SOLA Access Information Language) | SAIL | Montreal Exchange's native high-performance protocol for the SOLA trading platform; supports all order entry functionalities for brokers, HFT firms, and designated market makers |
+| Scanning Range | | In SPAN methodology, the maximum probable one-day price move for each product, used to generate risk scenarios |
+| Sidecar (사이드카) | | KRX's market-wide circuit breaker for derivatives; triggered when KOSPI 200 futures lead month hits ±5% of previous settlement for 1 minute with theoretical price variance ±3% or more; halts ALL derivatives contracts for 5 minutes |
+| Self-Trade Prevention | STP | A configurable mechanism that prevents matching of orders from the same firm or account |
+| SEOCH | | The SEHK Options Clearing House Limited — HKEX's clearing house for stock options traded on the Stock Exchange of Hong Kong |
+| SIMEX | | Singapore International Monetary Exchange — Asia's first financial futures exchange, established 1984; merged into SGX in 1999; pioneered mutual offset arrangement with CME for Eurodollar futures |
+| SOLA | | Montreal Exchange's proprietary low-latency electronic trading engine developed in-house; median response time ~460 microseconds (post-2013 upgrade); messaging capacity 100,000+ quotes/second; also licensed to external venues including Boston Options Exchange (BOX); co-located at TMX Data Centre, Markham, Ontario |
+| Special Opening Quotation | SOQ | The settlement calculation for equity index futures based on the opening prices of all constituent stocks on expiration day |
+| Sponsored Access | SpA | A model allowing non-member entities to access exchange systems via an approved service provider without full exchange membership; introduced at Eurex T7 Release 14.0 |
+| Stop with Protection | | CME order type that becomes a market-with-protection order when triggered, executing within the protected range |
+| Systemically Important Financial Market Utility | SIFMU | A designation under the Dodd-Frank Act for FMUs whose failure could pose systemic risk; CME Clearing holds this designation |
+| T+1 Session | | TAIFEX's after-hours trading session (15:00-05:00+1 TST) introduced May 2017, extending total trading coverage to ~19 hours/day for eligible equity index, foreign index, and commodity products; covers European and U.S. market hours; trades settle on the next business day |
+| T7 Entry Services | TES | Eurex's facility enabling off-book transactions (block trades, EFP, EFS) to be entered into the T7 system for standardized clearing |
+| TMP (Transaction Messaging Protocol) | TMP | TAIFEX's proprietary protocol for domestic participants to connect to the exchange's electronic trading system; used alongside FIX protocol for international connectivity |
+| TONA | | Tokyo Overnight Average Rate — the Bank of Japan's unsecured overnight call rate benchmark; OSE launched 3-Month TONA Futures in 2023, which have grown rapidly following BOJ rate hikes |
+| Trade at Marker | TAM | DME/GME facility allowing market participants to execute trades at the daily Oman Marker Price; the marker is determined during the Marker Window (16:25-16:30 Singapore Time) from trades on the front-month OQD contract |
+| Trade Price Validation | TPV | Euronext's additional safeguard layer for derivatives markets that validates trade prices before execution to prevent aberrant trades; supplements the dynamic and static collar mechanisms |
+| V-KOSPI 200 | | Volatility index measuring the implied volatility of KOSPI 200 options, analogous to the VIX; V-KOSPI 200 futures trade on KRX with a multiplier of KRW 250,000 |
+| Volatility Interruption | VI | Eurex's circuit breaker mechanism that moves an instrument from continuous trading to a volatility auction when price deviation limits are breached |
+| Volatility Interruption (변동성완화장치, VI) | VI | KRX's dynamic circuit breaker mechanism consisting of Static VI (정적VI, triggered by deviation from previous settlement) and Dynamic VI (동적VI, triggered by ±3% deviation from recent reference price); triggers a 2-minute cooling-off period followed by single-price auction |
+| Zero Days to Expiration | 0DTE | Options contracts that expire on the same day they are traded; popularized by Cboe's SPX daily expirations, reaching ~59% of SPX options volume in 2025 |
+
+## Trading
+
+| Term | Abbreviation | Definition |
+|------|-------------|-----------|
+| Add Liquidity Only Order | ALO | An order that is rejected rather than immediately executing, ensuring the sender always provides liquidity |
+| Ask (Offer) | | The lowest price at which a seller is willing to sell a security |
+| Auction | | A trading mechanism where orders are collected over a period and executed at a single price |
+| Bid | | The highest price at which a buyer is willing to buy a security |
+| Circuit Breaker | CB | A mechanism that temporarily halts trading when prices move beyond predefined thresholds |
+| Closing Auction | | An auction held at the end of the trading day to determine the closing price |
+| CONNEQTOR | | JPX's RFQ (Request for Quote) platform for ETF/ETN trading, enabling market makers to provide competitive quotes on demand |
+| Consolidated Audit Trail | CAT | A comprehensive U.S. regulatory database tracking all equity and options order events across exchanges |
+| Continuous Trading | | A trading session where orders are matched immediately as they arrive against the order book |
+| D-Order (D-Quote) | | NYSE DMM discretionary order that allows price improvement during auctions and continuous trading |
+| Dark Pool | | A private trading venue that does not display orders publicly before execution |
+| Designated Market Maker | DMM | A market participant assigned to specific securities on NYSE, responsible for maintaining fair and orderly markets (successor to the specialist role) |
+| Designated Sponsor | | Deutsche Borse/Xetra term for a contractually obligated liquidity provider who maintains continuous bid/ask quotes for less liquid securities to ensure tradability |
+| Conditional Limit Order (조건부지정가호가) | | KRX order type that acts as a limit order during continuous trading but converts to a market order at the closing call auction |
+| Direct Market Access | DMA | Electronic trading infrastructure allowing buy-side firms to directly access exchange order books |
+| Dongsi Hoga (동시호가) | | KRX's call auction mechanism used for opening price, closing price, and VI-triggered auction price determination; all orders are treated as simultaneous and matched at a single equilibrium price |
+| Enhanced Limit Order | ELO | HKEX order type that can match up to 10 price queues beyond the best price on the opposite side |
+| ETF Connect | | Extension of the Stock Connect programme (launched July 2022) enabling cross-border trading of eligible ETFs between Hong Kong and mainland China exchanges |
+| Forced Order Range | FOR | SGX mechanism that rejects orders priced beyond a specified range (e.g., +/-30 bids) from the current best price to prevent erroneous trades |
+| Funari Order | | JPX order type that acts as a limit order during continuous trading but converts to a market order at the closing auction |
+| High-Frequency Trading | HFT | Automated trading strategy using high-speed systems to execute large numbers of orders in fractions of a second |
+| Iceberg Order | | An order type where only a portion of the total order quantity is visible in the order book |
+| Intermarket Sweep Order | ISO | A limit order that simultaneously routes to multiple exchanges to sweep through protected quotes under Reg NMS |
+| Itayose | | JPX's call auction method (板寄せ) used for opening/closing price determination, where orders are accumulated and matched at a single equilibrium price |
+| Jeopsokmaemae (접속매매) | | KRX's continuous trading method using price-time priority matching between opening and closing auctions; equivalent to continuous order book matching |
+| Limit Order | | An order to buy or sell at a specified price or better |
+| Limit Order Book | LOB | The collection of all outstanding limit orders for a given security |
+| Limit Up-Limit Down | LULD | A U.S. price band mechanism that prevents trades outside specified percentage bands from a reference price |
+| Lot Size | | The minimum quantity of shares that can be traded in a standard transaction |
+| Maker-Taker | | A fee model where liquidity providers (makers) receive a rebate and liquidity takers pay a fee |
+| Market Maker | MM | A firm that provides liquidity by continuously quoting bid and ask prices |
+| Market Order | | An order to buy or sell immediately at the best available price |
+| Market-Wide Circuit Breaker | MWCB | A circuit breaker triggered by a decline in the S&P 500 index (7%/13%/20% thresholds) that halts all U.S. equity trading |
+| Mid-Price Pegged Order | MPL | An order pegged to the midpoint of the NBBO, used for price improvement |
+| National Best Bid and Offer | NBBO | The best available bid and ask price across all U.S. exchanges for a given security |
+| Net Order Imbalance Indicator | NOII | Real-time data disseminated during NASDAQ opening/closing cross showing indicative prices and imbalances |
+| Opening Auction | | An auction held at the start of the trading day to determine the opening price |
+| Order Book | | An electronic list of buy and sell orders organized by price level |
+| Parity Allocation | | NYSE's matching priority rule where orders at the same price share proportional fills among DMM, floor brokers, and displayed orders |
+| Price-Time Priority | | A matching rule where orders are first ranked by price, then by time of entry |
+| Retail Price Improvement Order | RPI | A non-displayed order type on NYSE that provides price improvement to retail order flow |
+| SAPI (시장전체 매매거래중단) | | KRX's market-wide circuit breaker mechanism; triggers at KOSPI -8% (Level 1, 20-min halt), -15% (Level 2, 20-min halt), -20% (Level 3, trading terminated for the day); each sustained for 1 minute |
+| Self-Match Prevention | SMP | A mechanism that prevents orders from the same participant from matching against each other |
+| Self-Regulatory Organization | SRO | An organization authorized to create and enforce rules governing its members (e.g., NYSE, NASDAQ, FINRA) |
+| Sidecar (프로그램매매호가 효력정지) | | KRX mechanism that suspends program trading orders for 5 minutes when KOSPI 200 front-month futures price moves +/-5% from base price for 1 minute; applied once per day, not after 14:50 KST |
+| Special Quote (Tokubetsu Kehai) | | JPX volatility interruption mechanism (特別気配) that temporarily halts continuous trading when price movement exceeds a threshold, displaying an indicative quote before resuming via Itayose auction |
+| Stock Connect | | Mutual market access program linking HKEX with Shanghai (2014) and Shenzhen (2016) stock exchanges, allowing cross-border equity trading |
+| Stop Order | | An order that becomes a market order when a specified price level is reached |
+| Swap Connect | | Mutual market access programme for interest rate swaps launched May 2023, linking HKEX's OTC Clear with China Foreign Exchange Trade System (CFETS); world's first derivatives mutual market access programme |
+| Tick Size | | The minimum price increment at which a security can be quoted or traded |
+| Trading at Last | TAL | A post-closing-auction session (used by Euronext, SIX, BME, and others) where orders can execute only at the established closing price |
+| Volatility Auction | | A special auction triggered when price movements exceed certain thresholds |
+| Volatility Control Mechanism | VCM | HKEX's dynamic circuit breaker triggered when potential trades deviate +/-10% from a 5-minute reference price for designated securities, imposing a 5-minute cooling-off period |
+| Volatility Interruption (KRX) | VI | KRX's per-stock circuit breaker; Static VI triggers at 3% (KOSPI 200 constituents) or 6% (others) from last call auction price; Dynamic VI triggers at 10% from last trade price; activates a 2-minute call auction with random 30-second close |
+| Zaraba | | JPX's continuous trading method (ザラバ) using price-time priority order matching between opening and closing auctions |
+
+## Clearing
+
+| Term | Abbreviation | Definition |
+|------|-------------|-----------|
+| Anti-Procyclicality | | Measures employed by CCPs to prevent margin requirements from dropping too low during calm periods and surging excessively during stress, thereby avoiding amplifying market volatility; required under PFMI and EMIR; approaches include using stressed lookback periods, margin floors, and buffers |
+| Assessment Powers | | The ability of a CCP to require additional contributions from clearing members beyond their default fund obligations |
+| Back Testing | | The process of comparing a CCP's margin model predictions against actual realized market outcomes to assess model adequacy; CCPs are required under PFMI to back-test at least monthly and report coverage levels; typical target is 99% or higher coverage |
+| CCP Recovery and Resolution Regulation | CCP RRR | EU regulation establishing a framework for the recovery and resolution of CCPs to ensure continuity of critical clearing functions; tools include VMGH, position allocation, cash calls, and partial tear-up |
+| Central Counterparty | CCP | An entity that interposes itself between counterparties to trades, becoming the buyer to every seller and the seller to every buyer |
+| Clearing Member | CM | A participant that is authorized to clear trades directly through a CCP |
+| Close-out Netting | | The termination of obligations under a contract with a defaulting party and the calculation of a single net amount |
+| CME Clearing | | CME Group's clearing division providing CCP services for futures, options, and OTC derivatives across CME, CBOT, NYMEX, and COMEX; designated as a SIFMU; uses SPAN/SPAN 2 margin methodology; guaranty fund ~$10.1B |
+| Concentration Margin | | Additional margin charged when a clearing member's positions are large relative to the market, reflecting liquidation risk |
+| Concentration Risk | | The risk that a clearing member or CCP has excessive exposure to a single counterparty, asset class, issuer, or market sector; CCPs mitigate this through concentration margin add-ons, position limits, and collateral diversification requirements |
+| Continuous Net Settlement | CNS | NSCC's core clearing process that nets all trades in the same security to a single deliver or receive obligation per participant per day |
+| Cover 2 | | A CPMI-IOSCO standard requiring a CCP to maintain sufficient financial resources to cover the simultaneous default of its two largest clearing members under extreme but plausible market conditions |
+| Cross-Guaranty Agreement | | An arrangement between affiliated CCPs (e.g., NSCC-FICC-DTC-OCC) allowing cross-application of margin and default fund resources to cover losses from a defaulting member common to multiple CCPs |
+| Default Fund | DF | A fund contributed to by clearing members to cover losses in the event of a member default |
+| Default Waterfall | | The sequence of financial resources used to cover losses resulting from a clearing member default |
+| DTCC | DTCC | Depository Trust & Clearing Corporation — the holding company for DTC (depository/settlement), NSCC (equities clearing), and FICC (fixed income clearing); user-owned and industry-governed; processes approximately $3.7 quadrillion in securities transactions annually; designated as a SIFMU under Dodd-Frank Title VIII |
+| DTC | DTC | Depository Trust Company — the CSD subsidiary of DTCC; holds over $100 trillion in assets under custody; provides book-entry settlement for U.S. equities, corporate bonds, and municipal securities |
+| Eurex Clearing | | Eurex Clearing AG — Europe's largest CCP, subsidiary of Deutsche Börse Group; authorized under EMIR (2014); uses Prisma margin methodology; clears listed derivatives, OTC IRS, repos (GC Pooling), and securities lending; ~200 clearing members in 22 countries |
+| Euronext Clearing | | Euronext's central counterparty (formerly CC&G / Cassa di Compensazione e Garanzia), headquartered in Rome; expanded to all Euronext financial derivatives markets in 2024, replacing LCH SA |
+| EWMA | EWMA | Exponentially Weighted Moving Average — a statistical technique used in margin models to estimate volatility by assigning exponentially decreasing weights to older observations; commonly used in risk models to capture time-varying volatility dynamics |
+| FICC | FICC | Fixed Income Clearing Corporation — DTCC subsidiary providing CCP clearing for U.S. government securities (GSD) and mortgage-backed securities (MBSD); GSD handles ~$13 trillion peak daily transaction value |
+| Filtered Historical Simulation | FHS | A VaR estimation technique using historical data with volatility filtering; core methodology behind Eurex Clearing Prisma; uses 750 filtered historical + 250 stress scenarios |
+| GC Pooling | | Eurex Repo's anonymous, CCP-cleared repo service using standardized collateral baskets; enables efficient secured funding with Eurex Clearing as CCP; record volumes of EUR 406B (2025) |
+| General Clearing Member | GCM | A clearing member authorized to clear trades on behalf of itself and other market participants |
+| Haircut | | A percentage reduction applied to the market value of collateral (securities, cash in non-domestic currency) posted as margin, reflecting potential loss in value during liquidation; CCPs set haircut schedules based on asset type, credit quality, and liquidity |
+| Individual Segregated Account | ISA | An account structure where a clearing member's client positions and collateral are held separately at the CCP, providing full portability and protection in the event of the clearing member's default |
+| Initial Margin | IM | Collateral collected by a CCP from clearing members to cover potential future exposure |
+| Interoperability | | An arrangement allowing two or more CCPs to establish links so that participants of different CCPs can clear trades executed on the same trading venue; regulated under EMIR Article 51; implemented in European cash equities (e.g., Cboe Clear Europe, LCH, EuroCCP, SIX x-clear) |
+| Joint Compensation Fund (손해배상공동기금) | | KRX's mutualized default fund for derivatives clearing; contributions from clearing members based on fixed + variable model; estimated size ~KRW 100 billion (~$75M); used after defaulter's margin and clearing deposit are exhausted |
+| LCH | LCH | London Clearing House — a multi-asset CCP majority owned by LSEG (82.61%); operates as LCH Ltd (London, regulated by Bank of England) and LCH SA (Paris, regulated by ACPR/Banque de France); clears OTC derivatives, repos, fixed income, FX, equities, and listed derivatives |
+| Legal Entity Identifier | LEI | A 20-character alphanumeric code that uniquely identifies legal entities participating in financial transactions; mandated globally for derivatives trade reporting under EMIR, Dodd-Frank, and other regulations; issued by Local Operating Units under the Global LEI Foundation (GLEIF) |
+| Lending CCP | | Eurex Clearing's securities lending service with CCP interposition, reducing counterparty risk in the securities lending market |
+| Liquidity Add-on | | An additional margin component charged by a CCP to account for the cost and risk of liquidating a defaulting member's portfolio in illiquid markets; reflects bid-ask spreads, market depth, and position concentration |
+| Loss Allocation | | The process by which a CCP distributes uncovered losses (exceeding the default waterfall) among surviving clearing members; methods include VMGH, cash calls, forced allocation, and partial tear-up; governed by CCP rulebooks and the EU CCP RRR |
+| Margin Period of Risk | MPOR | The time horizon assumed by a CCP for the close-out of a defaulting member's positions; typically 2 days for exchange-traded derivatives, 5 days for OTC derivatives, and up to 10 days for client positions under EMIR; directly affects the level of initial margin collected |
+| Multilateral Netting | | The offsetting of obligations among multiple parties, resulting in a single net obligation for each participant |
+| Netting Efficiency | | The percentage reduction in gross settlement obligations achieved through multilateral netting; e.g., NSCC achieves ~98% netting efficiency, Cboe Clear Europe achieved 70.29% in 2024; higher netting efficiency reduces settlement risk and liquidity requirements |
+| Novation | | The process by which a CCP substitutes itself as the counterparty to both sides of a trade |
+| NSCC | NSCC | National Securities Clearing Corporation — DTCC subsidiary providing CCP clearing, netting, and risk management for virtually all U.S. equities, corporate bonds, and ETF trades; achieves ~98% netting efficiency |
+| OCC | OCC | Options Clearing Corporation — the world's largest equity derivatives CCP, established 1973; jointly owned by Cboe, NYSE, NASDAQ exchanges; clears equity options, index options, futures, and securities lending; designated SIFMU; uses STANS margin methodology; 12.2B contracts cleared in 2024 |
+| Open Offer | | A method of CCP interposition where the CCP becomes the counterparty to each side of a trade at the point of trade matching/execution, without an intervening bilateral contract between the original counterparties; used by Cboe Clear Europe, Muqassa, and LCH for exchange-traded products; contrasts with novation where a bilateral contract briefly exists before being replaced |
+| PAIRS | | Portfolio Approach to Interest Rate Scenarios — LCH SwapClear's margin methodology; uses Expected Shortfall at 99.7% confidence level with a 5-day holding period and 10-year historical lookback including GFC floor scenarios |
+| Partial Tear-Up | | A CCP recovery tool allowing the termination of some (but not all) contracts of defaulted and/or non-defaulting members to allocate uncovered losses and restore a matched book |
+| PFMI | PFMI | Principles for Financial Market Infrastructures — international standards issued by CPMI-IOSCO in 2012 for payment, clearing, and settlement systems; 24 principles covering governance, risk management, settlement, and transparency |
+| Portfolio Margining | | A margin methodology that evaluates risk at the portfolio level rather than position-by-position, recognizing offsets between correlated instruments; used by Eurex Clearing (Prisma), OCC (STANS), CME (SPAN 2), and LCH (PAIRS); can significantly reduce margin requirements compared to product-based margining |
+| Porting | | The transfer of a defaulting clearing member's client positions and associated collateral to an alternative clearing member, enabling continuity of the client's market exposure; portability depends on account segregation model (ISA provides full portability; omnibus/LSOC provides partial) |
+| Prisma | | Eurex Clearing's portfolio-based margin methodology (Portfolio-based Risk management by Simulating scenario Matrices and Assessing market risks); uses filtered historical simulation with Expected Shortfall at 99%/99.5% confidence; enables cross-margining between listed and OTC products with up to 70% savings |
+| Public Quantitative Disclosures | PQD | Standardized quarterly and annual disclosures by CCPs as recommended by CPMI-IOSCO; includes margin data, default fund sizes, stress test results, and back-testing coverage |
+| Qualifying CCP | QCCP | A CCP that has been recognized as meeting international regulatory standards, resulting in lower capital requirements for its members |
+| Security Token | | A digital representation of a financial instrument (equity, bond, fund unit, or other security) issued and recorded on a distributed ledger (DLT/blockchain) under applicable securities law; in Korea, mandatory registration of all security tokens with KSD (Korea Securities Depository) is required under the revised Electronic Registration Act framework, effective January 2027 |
+| Recovery and Resolution | | The framework for restoring a CCP to viability (recovery) or, if recovery fails, winding down in an orderly manner (resolution) while preserving critical clearing functions; governed by the EU CCP RRR, FSB Key Attributes, and CPMI-IOSCO Recovery Guidance; recovery tools include VMGH, cash calls, and partial tear-up; resolution tools include bridge CCP, mandatory tear-up, and public backstop |
+| Settlement Facilitation Deposit (결제촉진담보금) | | Collateral deposited by KRX clearing members to promote settlement completion; eligible collateral includes cash, government bonds, and monetary stabilization bonds |
+| Skin in the Game | SITG | A CCP's own financial resources contributed to the default waterfall, distinct from clearing member contributions |
+| SIX x-clear | | SIX Group's CCP for equities and other instruments; planned consolidation with BME Clearing into a single multi-asset CCP headquartered in Madrid |
+| SPAN | SPAN | Standard Portfolio Analysis of Risk — CME's portfolio-based margin methodology using 16 risk scenarios analyzing price and volatility changes; widely adopted globally; being succeeded by SPAN 2 (HVaR + Expected Shortfall based) |
+| SPAN 2 | | CME's next-generation margin methodology replacing legacy SPAN; uses Historical Value-at-Risk with Expected Shortfall, full portfolio re-evaluation, and improved cross-product offsets; phased rollout 2023-2025 |
+| STANS | STANS | System for Theoretical Analysis and Numerical Simulations — OCC's Monte Carlo-based margin methodology; uses full portfolio simulation with 10,000+ scenarios, Expected Shortfall at 99% confidence, 2-day holding period |
+| Stress Testing | | The process of evaluating a CCP's financial resilience under extreme but plausible market scenarios, including the simultaneous default of the largest clearing members (Cover 2); required by PFMI, EMIR, and Dodd-Frank; CCPs must conduct stress tests at least daily and report results to regulators |
+| Systemically Important Financial Market Utility | SIFMU | A designation under Dodd-Frank Title VIII for FMIs whose failure could create systemic risk; DTCC (DTC, NSCC, FICC), OCC, CME Clearing, and ICE Clear Credit are designated SIFMUs |
+| Tear-Up | | A CCP recovery or resolution tool involving the compulsory termination of contracts (both defaulted and non-defaulted) to restore a matched book and allocate losses; partial tear-up targets specific positions, while full tear-up terminates all contracts in a given clearing service |
+| Trade Repository | TR | A centralized registry that maintains an electronic database of OTC derivative transaction records; mandated under EMIR, Dodd-Frank, and other G20 reforms to enhance transparency and enable regulatory monitoring of systemic risk; examples include DTCC Global Trade Repository, Regis-TR, and UnaVista |
+| Variation Margin | VM | Daily (or intraday) payment to reflect current market value of open positions |
+| Variation Margin Gain Haircutting | VMGH | A CCP recovery tool that reduces variation margin payments owed to members with mark-to-market gains to cover losses that exceed the default waterfall |
+| Wrong-Way Risk | | The risk that a clearing member's exposure to the CCP increases at the same time as the member's creditworthiness deteriorates; general wrong-way risk arises from correlation between exposure and counterparty credit quality; specific wrong-way risk occurs when exposure is directly linked to the counterparty (e.g., a member posting its own securities as collateral) |
+
+## Settlement
+
+| Term | Abbreviation | Definition |
+|------|-------------|-----------|
+| BIS DVP Model 1 | | Gross-gross settlement — both securities and funds settle on a gross (trade-by-trade) basis simultaneously; provides the strongest settlement protection; used by T2S (Europe), Clearstream Europe, Euroclear Bank (Bridge) |
+| BIS DVP Model 2 | | Gross securities, net funds — securities settle on a gross basis throughout the day, with a single net cash payment at the end of the day; used by some CSDs for government securities |
+| BIS DVP Model 3 | | Net-net settlement — both securities and funds obligations are netted, with final net transfers occurring simultaneously; used by NSCC/DTC, HKSCC (CCASS CNS), CDP (Singapore) |
+| Book-Entry | | A method of recording ownership of securities electronically without physical certificates; transfers occur by debiting one account and crediting another on the books of a CSD or custodian |
+| Buy-in | | A mechanism requiring a buyer (or CCP) to purchase securities in the open market if the original seller fails to deliver within a specified period after the intended settlement date; may be mandatory (as originally proposed under CSDR) or voluntary; serves as a settlement discipline tool to address persistent settlement fails |
+| Cash Penalty | | A financial penalty imposed on participants who fail to settle on the intended settlement date; implemented under CSDR Settlement Discipline Regime in the EU since February 2022; penalty rates differ for equities, bonds, and SME Growth Market instruments |
+| CCASS | | Central Clearing and Settlement System — HKSCC's integrated clearing, settlement, depository, and nominee services platform for Hong Kong securities; launched 1992; supports CNS netting, isolated trades, Stock Connect, and corporate actions |
+| Central Securities Depository | CSD | An entity that holds securities in dematerialized form and enables transfer of securities through book entry |
+| CHESS | | Clearing House Electronic Subregister System — ASX's electronic settlement and subregistry system for Australian equities, launched 1996; replacement project ongoing (DLT attempt abandoned 2022, TCS-based rebuild in progress) |
+| Delivery versus Payment | DVP | A settlement mechanism that ensures delivery of securities occurs simultaneously with payment |
+| Dematerialization | | The elimination of physical securities certificates, replacing them entirely with electronic book-entry records at a CSD; most modern securities markets have fully dematerialized their securities |
+| Iberclear | | Spain's central securities depository (CSD) for equities and fixed income; subsidiary of BME Group; migrated to TARGET2-Securities (T2S) platform in 2017 |
+| Immobilization | | The practice of concentrating physical securities certificates in a central depository (CSD) and recording subsequent transfers through book entries, without eliminating the underlying physical certificates; contrasts with full dematerialization |
+| International CSD | ICSD | A CSD that settles trades in international securities and various domestic securities (e.g., Euroclear, Clearstream) |
+| JASDEC | | Japan Securities Depository Center, Inc. — Japan's central securities depository for equities and corporate bonds; provides book-entry transfer services for shares, investment trusts, corporate bonds, and commercial paper; operates under the Book-Entry Transfer Act |
+| KSD (Korea Securities Depository, 한국예탁결제원) | KSD | South Korea's central securities depository; established 1974; headquartered in Busan; provides securities custody, settlement agent services, fund settlement, and transfer agent services; ISO 20022 adopted; SWIFT BIC KSDCKRSEXXX; mandatory security token registration framework effective January 2027 |
+| Mandatory Buy-in | | A mechanism requiring a buyer to purchase securities in the open market if the original seller fails to deliver within a specified period after the intended settlement date; proposed under CSDR but deferred in the EU; remains under discussion globally as a settlement discipline tool |
+| Monte Titoli | | Italian CSD for equities and other securities; subsidiary of Euronext (acquired with Borsa Italiana in 2021) |
+| Omnibus Account | | A single account held at a CSD that contains the securities of multiple underlying clients |
+| Segregated Account | | An account structure where each client's securities are held separately |
+| Settlement Cycle | | The time period between trade date and settlement date (e.g., T+2) |
+| Settlement Discipline Regime | SDR | CSDR provision imposing cash penalties on participants that fail to settle on the intended settlement date; mandatory buy-ins originally proposed but deferred |
+| Settlement Finality | | The point at which the transfer of securities and funds becomes irrevocable and unconditional |
+| Settlement Finality Directive | SFD | EU Directive 98/26/EC providing legal certainty for settlement finality in designated payment and securities settlement systems, ensuring transfers cannot be unwound in insolvency |
+| Split Settlement (분할결제) | | KSD's settlement system innovation introduced in 2021 that divides settlement into smaller units to reduce peak settlement risk; units progressively reduced from KRW 10 billion (2021) to 5 billion (2024) to 1 billion (April 2026) |
+| Straight-Through Processing | STP | The automated end-to-end processing of trades without manual intervention |
+| TARGET2-Securities | T2S | Eurosystem platform operated by the ECB providing a single pan-European platform for securities settlement in central bank money; used by Iberclear, Monte Titoli, and other European CSDs |
+| Trade Date Affirmation | | The process of confirming trade details between counterparties on trade date, critical for T+1 settlement; DTCC's CTM platform targets same-day affirmation |
+
+## Technology
+
+| Term | Abbreviation | Definition |
+|------|-------------|-----------|
+| arrowhead | | JPX/TSE's core trading system developed with Fujitsu; 4th generation launched November 2024 with ~0.2ms order response latency |
+| arrownet | | JPX's dedicated high-speed network connecting market participants to the trading system and co-location facility |
+| ASX Trade | | ASX's cash equities trading platform, powered by NASDAQ OMX Genium INET technology; replaced SEATS/ITS in 2010 |
+| ASX Trade24 | | Former name for ASX 24's trading platform for futures and options; upgraded to New Trading Platform (NTP) in 2016; LSEG partnership announced March 2026 for next-generation modernization targeting H1 2028 go-live |
+| Australian Liquidity Centre | ALC | ASX's purpose-built data centre and co-location facility at Gore Hill Technology Park, Sydney; launched 2013; hosts over 100 financial institutions and service providers; provides lowest-latency access to ASX Trade and ASX 24 matching engines; carrier-neutral with IaaS offering |
+| AutoCert+ | | CME Group's mandatory automated certification tool for client systems using iLink 3 for Globex access |
+| Binary Order Entry | BOE | Cboe's native binary protocol for high-performance order entry; current version BOE v2/v3 provides lower latency than FIX |
+| BOLT Plus | | BSE's (Bombay Stock Exchange) trading platform based on Deutsche Borse's T7 architecture; launched for equity derivatives in November 2013 and extended to equity cash segment in April 2014 |
+| Bursa Trade Securities 2 | BTS2 | Bursa Malaysia's securities trading platform powered by Nasdaq's X-Stream INET technology; launched December 2013, replacing the NYSE Technologies NSC engine |
+| Canton Network | | A privacy-enabled interoperable blockchain network for institutional assets; DTCC, in partnership with major financial institutions, is developing tokenization of DTC-custodied U.S. Treasury securities on the Canton Network; SEC issued a No-Action Letter in December 2025 authorizing DTC's participation; MVP planned for H1 2026 |
+| Cboe Titanium | | Cboe's proprietary trading technology platform, evolved from BATS technology after the 2017 acquisition; powers all Cboe U.S. equities and options exchanges |
+| Co-location | Colo | Hosting trading infrastructure in the same data center as the exchange's matching engine |
+| D7 | | The Bank of England's Digital Securities Depository programme; aims to create a digital securities depository for UK government bonds (gilts) using DLT technology; part of the UK's broader initiative to modernize post-trade infrastructure |
+| DCASS | | Derivatives Clearing and Settlement System — HKCC/SEOCH's clearing platform, migrated to Nasdaq Genium INET in 2013; handles margin calculation, position management, and settlement |
+| EMDI | EMDI | Eurex's Enhanced Market Data Interface — un-netted feed disseminating every order book change and on-exchange trades via multicast |
+| EOBI | EOBI | Eurex's Enhanced Order Book Interface — full order book (L3) data with individual order details; ultra-low latency for co-located participants |
+| Eqlipse | | NASDAQ's fourth-generation marketplace technology platform, launched 2024; successor to previous Nasdaq INET generations |
+| EXTURE | | Korea Exchange's first unified electronic trading platform, launched March 2009; consolidated three legacy exchange systems (KSE, KOSDAQ, KOFEX); ~20 ms latency; 250 TPS; replaced by EXTURE+ in 2014 |
+| EXTURE+ | | Korea Exchange's second-generation unified trading platform, launched 2014; first Linux x86 deployment in Korean capital markets; <=70 us worst-case latency; 20,000+ TPS matching; 100,000+ TPS throughput; replaced by Exture 3.0 in 2023 |
+| Exture 3.0 | | Korea Exchange's current integrated trading, information distribution, clearing, and settlement platform; Phase 1 launched January 2023 (trading), Phase 2 October 2023 (clearing/settlement); ~30% latency improvement over EXTURE+; extended low-latency to entire system |
+| Equinox | | SIX Swiss Exchange's next-generation trading platform; equity go-live targeted for H1 2027, replacing the current X-stream INET (SWXess) system |
+| FAST Protocol | FAST | FIX Adapted for Streaming — a data compression protocol for market data |
+| FAST System (TWSE) | FAST | Fully Automated Securities Trading system — TWSE's core trading platform; 2nd generation (2014) provides <3ms latency and 20 million transactions/day capacity |
+| FIX Protocol | FIX | Financial Information eXchange — a standard electronic communications protocol for trading |
+| FLEX (Full Line-speed Exchange) | FLEX | JPX's market data feed protocol providing Standard, MBO (Market by Order), and MBO BC (Broadcast) data streams |
+| FPGA | FPGA | Field-Programmable Gate Array — hardware used for ultra-low-latency trading |
+| FpML | FpML | Financial products Markup Language — an XML-based open standard for electronic dealing and processing of OTC derivatives; maintained by ISDA; widely used for trade confirmation, reporting, and lifecycle management of swaps, options, and structured products |
+| Genium INET | | Nasdaq's trading technology platform used by multiple exchanges globally including HKEX (derivatives), SGX, ASX, SIX, and Tadawul; offers sub-millisecond latency matching |
+| GIFT Connect | | SGX-NSE IX mutual market access program (operational July 2023) enabling cross-border trading of Indian derivatives through Singapore |
+| Group Ticker Plant | GTP | LSEG's aggregated market data distribution system that normalizes data across venues with intelligent throttling |
+| ICE Trading Platform | | ICE's proprietary electronic trading platform providing global connectivity across all ICE futures markets; data centers in Chicago (IFUS), Basildon/London (IFEU), and Mahwah (DR) |
+| Iris-ST | | SGX's next-generation securities trading engine, planned for launch in H2 2027 |
+| ISO 15022 | | An international standard for securities messaging using the SWIFT MT message format; the legacy standard for securities settlement, corporate actions, and custody messaging; being replaced by ISO 20022 |
+| ISO 20022 | | An international standard for electronic data interchange between financial institutions; uses XML/ASN.1-based messaging with rich, structured data; adopted by SWIFT (migration from MT to MX messages), T2S, CDP Singapore (Phase 1, 2016), and increasingly mandated for payment and securities infrastructure globally |
+| ITCH Protocol | ITCH | A direct data feed protocol that provides full depth-of-book data (used by NASDAQ and others) |
+| Matching Engine | ME | The core component of a trading system that matches buy and sell orders |
+| KOSCOM (Korea Securities Computing Corporation) | | Korea's financial IT infrastructure provider; primary technology partner for KRX; develops and operates EXTURE/EXTURE+/Exture 3.0 trading systems; distributes KRX market data via STOCK-NET dedicated financial network |
+| Millennium Advanced Platform | MAP | LSEG Technology's integrated multi-asset offering bundling Millennium Exchange, Surveillance, and Post-Trade modules; deployed at 40+ markets globally |
+| Millennium Exchange | | LSE's trading platform launched in 2011, built on C++/Linux for low-latency matching; developed by MillenniumIT (Sri Lanka); deployed across 40+ financial markets worldwide including JSE (2012) |
+| MillenniumIT | | LSEG subsidiary based in Colombo, Sri Lanka; founded 1996 by Tony Weerasinghe; acquired by LSEG in 2009 for GBP 18M; develops Millennium Exchange and related trading technology |
+| MITCH Protocol | MITCH | LSE's native market data protocol providing real-time Level 1 and Level 2 data via UDP multicast |
+| MoldUDP64 | | NASDAQ's transport protocol for reliable multicast delivery of market data messages |
+| NEAT / NEAT Plus | | National Exchange for Automated Trading — NSE India's in-house developed trading system; India's first screen-based electronic trading platform (launched 1994); NEAT Plus provides a unified multi-market interface across equity, derivatives, currency, and commodity segments; current system handles ~5-6 million transactions/second with ~100 microsecond latency; nanosecond-level upgrade planned from April 2026 targeting 100 million transactions/second |
+| NTP (New Trading Platform) | NTP | ASX's upgraded derivatives trading platform for ASX 24, launched 2016; handles interest rate, equity index, commodity, energy, and environmental futures and options; announced March 2026 partnership with LSEG for further modernization |
+| OAPI | | Open Application Programming Interface — HKEX's proprietary API for derivatives trading, providing order entry and market data access to HKATS |
+| OMD-C | | HKEX's Orion Market Data platform for the securities market, providing binary multicast data feeds via UDP/IP |
+| Optiq | | Euronext's proprietary trading platform for cash and derivatives markets; deployed across all Euronext venues (Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, Paris, Athens); Borsa Italiana migration completed in three phases (2023-2024) |
+| Orion Trading Platform | OTP-C | HKEX's current securities trading platform launched February 2018, supporting 60,000 orders/second capacity |
+| OUCH Protocol | OUCH | A simplified order entry protocol used by NASDAQ and other exchanges |
+| Pillar | | NYSE's modern trading technology platform, providing a single integrated system across all NYSE equity and options exchanges |
+| PITCH Protocol | PITCH | Cboe's native market data protocol providing full depth-of-book data (Level 3) via multicast; originally developed by BATS |
+| Project Ion | | DTCC's DLT-based settlement platform for U.S. equities; went live in parallel production in 2022, processing 100,000+ equity transactions daily; demonstrates alternative settlement using distributed ledger technology alongside the existing DTC infrastructure |
+| SDNet | | HKEX's Securities and Derivatives Network providing connectivity between participants and HKEX systems; SDNet/3 is the latest generation |
+| SGX REACH | | SGX's securities trading platform based on Nasdaq technology |
+| SIBE | | Sistema de Interconexion Bursatil Espanol — BME's electronic trading platform connecting the four Spanish stock exchanges (Madrid, Barcelona, Bilbao, Valencia); launched 1995; SIBE-Smart upgrade in 2012 reduced latency by more than 10x |
+| SIX Digital Exchange | SDX | SIX Group's fully regulated digital asset exchange and CSD; received FINMA license in 2019; began live operations in 2021; world's first regulated digital securities exchange |
+| SoupBinTCP | | A framing protocol used for reliable, session-based TCP delivery of NASDAQ data feeds |
+| STOCK-NET | | KOSCOM's dedicated high-speed financial network connecting KRX, securities/futures firms, KOFIA, and institutional investors for real-time market data distribution and trading connectivity |
+| SwissAtMid | | SIX Swiss Exchange's non-displayed (dark) liquidity pool, launched 2018; provides midpoint matching for institutional block orders |
+| T7 | | Deutsche Borse Group's high-performance trading platform; used for Xetra equities (launched June 2017) and Eurex derivatives; also the basis for BSE's BOLT Plus platform |
+| Titan | | SGX's derivatives trading platform based on Nasdaq technology, providing sub-100 microsecond latency |
+| TMX Quantum XA | | TMX Group's proprietary trading platform; rolled out across TSX, TSXV, and TSX Alpha Exchange in 2013-2014 |
+| ToSTNeT | | JPX's off-auction trading system (Tokyo Stock Exchange Trading NeTwork) for large-lot and basket trades executed at pre-agreed prices |
+| TradElect | | LSE's former trading platform (2007-2011) built on Microsoft .NET; replaced by Millennium Exchange due to latency and reliability issues |
+| X-Stream INET | | Nasdaq's trading technology deployed at multiple exchanges; used by Tadawul (2015), SIX Swiss Exchange (2012, branded SWXess), and Bursa Malaysia (2013) |
+| XDP | XDP | NYSE's Exchange Data Publisher — a low-latency market data feed for real-time depth-of-book data |
+
+## Market Segments & Boards
+
+| Term | Abbreviation | Definition |
+|------|-------------|-----------|
+| AIM (Alternative Investment Market) | AIM | LSE's international growth market for smaller and emerging companies; classified as an MTF under MiFID II; no minimum market cap; requires a Nominated Adviser (Nomad) |
+| AltX (Alternative Exchange) | AltX | JSE's parallel market for small and medium-sized high-growth companies; launched 2003; requires a Designated Adviser |
+| BME Growth | | BME's Multilateral Trading Facility for SMEs (formerly Mercado Alternativo Bursatil / MAB); renamed 2020; requires a Registered Adviser (Asesor Registrado) |
+| Catalist | | SGX's sponsor-supervised growth board for SMEs and high-potential startups; no quantitative entry criteria set by SGX; Full Sponsor determines suitability |
+| ChiNext | | SZSE's NASDAQ-style board (创业板) for innovative, high-growth enterprises launched October 2009; registration-based IPO system since August 2020; +/-20% daily price limit |
+| Euronext Access / Access+ | | Euronext's entry-level MTF for start-ups and SMEs; Access+ is a special compartment for fast-growing SMEs acting as a springboard to Euronext Growth |
+| Euronext Growth | | Euronext's SME Growth Market (MTF under MiFID II) for small and mid-sized companies; operates across all Euronext markets; requires a Listing Sponsor |
+| Euronext Growth Milan | | Formerly AIM Italia; MTF for Italian SMEs under Euronext ownership; requires an Euronext Growth Advisor (formerly Nomad) |
+| Euronext STAR Milan | | Segment within Euronext Milan for mid-cap companies committing to higher transparency, governance, and liquidity standards; ~61 companies |
+| First North Growth Market | | Nasdaq Nordic's MTF for smaller/growth companies across Sweden, Finland, Denmark, Iceland, and the Baltic states; licensed as an SME Growth Market under MiFID II; requires a Certified Adviser |
+| GEM (Growth Enterprise Market) | GEM | HKEX's market for smaller, high-growth companies with less stringent requirements than the Main Board |
+| KONEX (Korea New Exchange) | | KRX's third-tier market for startups and SMEs, launched July 2013; serves as a pre-KOSDAQ stage for early-stage companies; ~129 listed companies as of January 2024; viability questioned due to low new listing activity |
+| KOSDAQ | | KRX's growth market for technology and venture companies, launched 1996; ~1,700+ listed companies; Korean equivalent of NASDAQ |
+| KOSPI (Korea Composite Stock Price Index) | | KRX's main board equities market; ~954 listed companies; blue-chip large-cap market; also refers to the benchmark price index |
+| Latibex | | BME's international market for Latin American securities traded in euros; launched 2001; provides European investors access to LatAm companies |
+| Nomu (Parallel Market) | | Saudi Exchange's parallel market for SME listings launched February 2017; lighter listing requirements than the Main Market (TASI); Arabic for "growth" |
+| Nextrade (NXT) | | South Korea's first alternative exchange, launched March 2025; operates 12-hour trading sessions (08:00-20:00 KST); ended KRX's monopoly as sole securities exchange operator; captured 30%+ market share by July 2025 |
+| NSE EMERGE | | NSE India's platform for SME IPOs and secondary market trading; launched 2012 |
+| Scale | | Deutsche Borse's growth segment within the Open Market (Freiverkehr) for small and mid-cap companies; requires a Designated Sponsor |
+| Sparks | | SIX Swiss Exchange's dedicated segment for SMEs launched October 2021; companies must have market cap below CHF 500 million |
+| STAR Market | | SSE's Science and Technology Innovation Board (科创板, Kechuangban) launched June 2019; first Chinese board with registration-based IPO system; +/-20% daily price limit; focus on new materials, new energy, biomedicine, IT, high-end equipment, environmental tech |
+| TOKYO PRO Market | | JPX/TSE's professional investors market launched 2009; flexible listing criteria targeting qualified institutional investors; requires a J-Adviser |
+
+## Regulation
+
+| Term | Abbreviation | Definition |
+|------|-------------|-----------|
+| Australian Securities and Investments Commission | ASIC | Australia's primary market conduct regulator for securities, derivatives, and financial services |
+| Autorite des marches financiers (Quebec) | AMF | Quebec's financial markets regulator; lead regulator for the Montreal Exchange (MX) and CDCC; grants recognized exchange and self-regulatory organization (SRO) status under Quebec's Derivatives Act |
+| Best Execution | | The obligation to execute client orders on the most favorable terms available |
+| Bundesanstalt fur Finanzdienstleistungsaufsicht | BaFin | Germany's federal financial supervisory authority overseeing banking, insurance, and securities |
+| Canadian Investment Regulatory Organization | CIRO | Canada's national self-regulatory organization formed in 2023 from the merger of IIROC and MFDA; administers Universal Market Integrity Rules (UMIR) |
+| Capital Market Authority (Saudi Arabia) | CMA | Saudi Arabia's securities regulator established 2003 under the Capital Market Law; oversaw progressive foreign investor liberalization |
+| CEA (Commodity Exchange Act) | CEA | U.S. federal law governing the trading of commodity futures and options |
+| CFTC | CFTC | Commodity Futures Trading Commission — U.S. independent agency regulating commodity futures, options, and swaps markets |
+| China Securities Regulatory Commission | CSRC | China's central regulatory authority managing SSE, SZSE, and BSE; oversees the registration-based IPO system |
+| College of Euronext Regulators | | Coordinating body of national regulators (AMF, AFM, FSMA, CMVM, CBI, Finanstilsynet, CONSOB, HCMC) overseeing Euronext's multi-jurisdictional operations |
+| CONSOB | | Commissione Nazionale per le Societa e la Borsa — Italy's securities market regulatory authority |
+| Consolidated Tape Provider | CTP | An entity authorized to aggregate and publish post-trade data across all trading venues (EU concept under MiFID II/MiFIR) |
+| Corporate Governance Code | | Japan's principles-based framework for listed companies' governance practices, administered by TSE (first issued 2015, revised periodically) |
+| CPMI-IOSCO | | Committee on Payments and Market Infrastructures / International Organization of Securities Commissions |
+| CSDR | CSDR | Central Securities Depositories Regulation — EU regulation on settlement discipline, CSD authorization, and buy-in rules |
+| Digital Operational Resilience Act | DORA | EU regulation requiring financial entities and ICT third-party providers to meet operational resilience standards (applied January 2025) |
+| Dodd-Frank Title VII | | Title VII of the Dodd-Frank Wall Street Reform and Consumer Protection Act (2010); establishes a comprehensive regulatory framework for OTC derivatives including mandatory clearing of standardized swaps through registered DCOs, swap execution facility (SEF) trading, and trade reporting |
+| Dodd-Frank Title VIII | | Title VIII of the Dodd-Frank Wall Street Reform and Consumer Protection Act (2010); provides for enhanced regulation and supervision of Systemically Important Financial Market Utilities (SIFMUs) by the Federal Reserve Board; DTCC, OCC, CME Clearing, and ICE Clear Credit are designated SIFMUs |
+| Double Volume Cap / Single Volume Cap | DVC / SVC | MiFID II mechanism limiting dark pool trading as a percentage of total volume; reformed from dual cap (4%/8%) to single 7% cap under MiFIR Refit |
+| Dubai Financial Services Authority | DFSA | The independent regulator of the Dubai International Financial Centre (DIFC); supervises DME/GME as a licensed exchange operating within the DIFC financial free zone; maintains cooperation agreements with international regulators |
+| EMIR | EMIR | European Market Infrastructure Regulation — EU regulation on OTC derivatives, CCPs, and trade repositories |
+| Electronic Securities Act (전자증권법) | | South Korea's Act on Electronic Registration of Stocks, Bonds, etc. (주식·사채 등의 전자등록에 관한 법률); governs the electronic registration of securities at KSD and designated registrars; revisions extended the framework to cover security tokens, with mandatory KSD registration of all security tokens effective January 2027 |
+| ESMA | ESMA | European Securities and Markets Authority — EU supervisory authority coordinating securities regulation across member states |
+| Financial Investment Services and Capital Markets Act (자본시장법) | FSCMA | South Korea's primary securities law; function-based regulation covering stocks, bonds, collective investment schemes, and derivatives; administered by FSC/FSS |
+| Financial Instruments and Exchange Act | FIEA | Japan's primary securities regulation law, governing securities trading, disclosure, and market conduct |
+| Financial Market Infrastructure Act | FMIA | Switzerland's primary legislation governing financial market infrastructures, including exchanges, CCPs, CSDs, and trade repositories; administered by FINMA |
+| Financial Services Commission (Korea) | FSC (금융위원회) | South Korea's highest financial regulatory authority; formulates policy, licensing, and approval of financial companies; supervises KRX |
+| Financial Sector Conduct Authority | FSCA | South Africa's primary market conduct regulator for the financial sector, including oversight of the JSE |
+| Financial Supervisory Service (Korea) | FSS (금융감독원) | FSC's enforcement arm in South Korea; conducts examinations, investigations, and sanctions across all financial sectors |
+| Financial Services and Markets Act | FSMA | UK primary legislation governing financial services regulation |
+| Financial Supervisory Commission (Taiwan) | FSC | Taiwan's consolidated financial regulatory authority overseeing banking, securities, futures, and insurance markets; supervises TAIFEX as the sole licensed futures exchange and derivatives clearing house in Taiwan |
+| FINMA | FINMA | Swiss Financial Market Supervisory Authority — Switzerland's integrated financial market regulator |
+| FINRA | FINRA | Financial Industry Regulatory Authority — U.S. SRO overseeing broker-dealers, market integrity, and investor protection |
+| Futures and Derivatives Law (China) | | China's first comprehensive law on futures and derivatives, effective August 1, 2022; provides legal foundation for futures market development, investor protection, cross-border activities, and the QFI access scheme; enacted by the Standing Committee of the National People's Congress |
+| Futures Trading Law (Taiwan) | | Taiwan's primary legislation governing the domestic futures market, enacted 1997; established the legal framework for domestic futures exchanges, futures commission merchants, clearing, and trading; authorized the creation of TAIFEX |
+| Japan Financial Services Agency | JFSA | Japan's primary financial regulatory authority overseeing banking, securities, and insurance sectors |
+| JPX-R (Japan Exchange Regulation) | JPX-R | JPX's self-regulatory organization responsible for listing examination, market surveillance, and compliance |
+| Living Will (CCP) | | A resolution plan prepared by or for a CCP describing how it could be resolved in an orderly manner in the event that recovery measures fail; required under the EU CCP Recovery and Resolution Regulation (EU 2021/23) and recommended by FSB Key Attributes |
+| Market Abuse Regulation | MAR | EU/UK regulation prohibiting insider dealing, market manipulation, and unlawful disclosure of inside information |
+| MiFID II / MiFIR | | Markets in Financial Instruments Directive II / Regulation — EU regulatory framework for financial markets |
+| Monetary Authority of Singapore | MAS | Singapore's central bank and integrated financial regulator |
+| Multilateral Trading Facility | MTF | An EU-regulated trading venue operated by an investment firm or market operator matching buy/sell interests (alternative to regulated market) |
+| No Creditor Worse Off | NCWO | A fundamental principle of resolution regimes requiring that no creditor of a failed institution should be left worse off than they would have been under normal insolvency proceedings; applied to CCP resolution under the EU CCP RRR and FSB Key Attributes |
+| Organised Trading Facility | OTF | An EU trading venue category under MiFID II for non-equity instruments, with operator discretion in execution |
+| PFMI | PFMI | Principles for Financial Market Infrastructures — international standards for FMIs issued by CPMI-IOSCO |
+| Qualified Foreign Investor | QFI | Unified scheme (replacing QFII and RQFII) for foreign institutional access to China's A-share markets; quota limits abolished in 2020 |
+| QFII / RQFII | | Qualified Foreign Institutional Investor / RMB Qualified Foreign Institutional Investor — legacy schemes (introduced 2002/2011) for foreign institutional access to China's securities markets; merged into unified QFI scheme in 2020 |
+| Registration-Based IPO System | | China's reformed IPO mechanism replacing the approval-based system; first piloted on STAR Market (2019), then ChiNext (2020), fully rolled out across all boards (2023); shifts from merit-based government approval to disclosure-based registration |
+| Regulation ATS | Reg ATS | U.S. SEC regulation governing alternative trading systems (dark pools, ECNs) |
+| Regulation NMS | Reg NMS | Regulation National Market System — U.S. SEC regulation governing equity market structure |
+| Regulation SHO | Reg SHO | U.S. SEC regulation governing short selling, including locate requirements and close-out obligations |
+| Rule 17Ad-22 | | SEC rule establishing standards for covered clearing agencies (CCPs/CSDs) in the United States; Rule 17Ad-22(e) (effective April 2017) implements PFMI-based enhanced standards for SIFMUs including NSCC, DTC, FICC, OCC, and ICE Clear Credit; covers governance, risk management, margin, default procedures, and operational risk |
+| Securities and Exchange Board of India | SEBI | India's primary securities regulatory authority overseeing NSE, BSE, and other market participants |
+| Securities and Exchange Surveillance Commission | SESC | Japan's market surveillance body responsible for investigating insider trading, market manipulation, and other violations |
+| Securities and Futures Act | SFA | Singapore's primary legislation governing securities, futures, and financial advisers (enacted 2001) |
+| Securities and Futures Commission | SFC | Hong Kong's statutory regulatory body overseeing the securities and futures markets |
+| Securities Commission Malaysia | SC | Malaysia's primary securities regulatory authority overseeing Bursa Malaysia and capital market activities |
+| Securities Information Processor | SIP | U.S. consolidated data feed aggregating quotes and trades from all exchanges into a single stream (CTS/CQS for Tapes A/B, UTP for Tape C) |
+| SGX RegCo | | SGX's independent regulatory subsidiary responsible for listing regulation, market surveillance, and enforcement |
+| Short Selling Regulation | SSR | EU regulation requiring disclosure of net short positions and restricting uncovered short selling |
+| SIX Exchange Regulation | SER | SIX Swiss Exchange's self-regulatory body handling listing and trading rule supervision |
+| Systematic Internaliser | SI | An investment firm that executes client orders against its own account on a regular and systematic basis outside a trading venue (MiFID II concept) |
+| Systematically Important FMI | SI-FMI | An FMI whose failure could pose systemic risk to the financial system |
+| Universal Market Integrity Rules | UMIR | Canadian rules governing equity trading conduct, administered by CIRO; cover topics including best execution, short selling, and market manipulation |

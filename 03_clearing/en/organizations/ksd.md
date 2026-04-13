@@ -1,0 +1,239 @@
+# KSD (Korea Securities Depository)
+
+> **Last Updated:** 2026-04-13
+> **Research Tier:** Tier 1
+> **Type:** CSD (Central Securities Depository)
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Korea Securities Depository (한국예탁결제원) |
+| Abbreviation | KSD |
+| Website | [https://www.ksd.or.kr](https://www.ksd.or.kr) |
+| Year Established | December 6, 1974 (as Korea Securities Settlement Corporation); reorganized multiple times |
+| Country / City | South Korea / Busan (HQ) |
+| Ownership Structure | Public institution under FSC |
+| Regulatory Authority | Financial Services Commission (FSC) / Financial Supervisory Service (FSS) |
+| LEI | 9884008RRMX1X5HV6625 |
+| SWIFT BIC | KSDCKRSEXXX |
+| Core Functions | Securities depository, settlement agent, transfer agent, fund settlement |
+| Assets Under Custody | KRW 3,149 trillion (2014 figure); likely significantly higher by 2026 |
+| Daily Cash Processing | KRW 70 trillion average (2014 reference) |
+
+### Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 1974 | Korea Securities Settlement Corporation established |
+| 1994 | Reorganized as Korea Securities Depository |
+| 2005 | Incorporated into KRX group structure |
+| 2009 | Re-established as independent entity under FSCMA (Financial Investment Services and Capital Markets Act) |
+| 2016 | Headquarters moved to Busan |
+| 2021 | Split settlement system introduced (10B KRW units) |
+| 2024 | Settlement units reduced from 10B to 5B KRW |
+| 2026 | Further unit reduction to 1B KRW; operating hours expanded |
+
+[Source: Wikipedia, "Korea Securities Depository"]
+[Source: KSD official website, https://www.ksd.or.kr]
+
+---
+
+## 2. Core Services
+
+### 2.1 Securities Depository
+
+- Custody of all listed securities (KOSPI, KOSDAQ, bonds, ETFs)
+- Immobilization and dematerialization of securities
+- Book-entry transfer system
+- Corporate action processing (dividends, rights issues, stock splits)
+
+### 2.2 Settlement Services
+
+- Settlement agent for KRX-cleared trades
+- DVP settlement for equities (T+2) and bonds (T+1)
+- Settlement for both exchange-traded and OTC transactions
+- Settlement facilitation deposits (결제촉진담보금) — cash, government bonds, monetary stabilization bonds
+- Settlement promoting collateral system
+
+### 2.3 Fund Settlement
+
+- Fund subscription/redemption settlement
+- Connection to global fund platforms (Euroclear FundSettle, Clearstream Vestima)
+- Transfer agent services
+
+### 2.4 Securities Information Services
+
+- Securities master data management
+- Corporate action notifications
+- Investor registry maintenance
+
+[Source: KSD official website, https://www.ksd.or.kr]
+
+---
+
+## 3. Settlement Infrastructure
+
+### 3.1 Settlement Process
+
+| Step | Description |
+|------|-------------|
+| Trade matching | KRX transmits matched trade data to KSD |
+| Netting | KSD calculates net obligations by clearing member |
+| Settlement instruction | Settlement instructions generated automatically |
+| DVP settlement | Securities delivery vs. payment (simultaneous) |
+| Finality | Settlement finality upon book-entry completion |
+
+### 3.2 Settlement Timing
+
+| Product | Settlement Cycle | Settlement Time |
+|---------|-----------------|-----------------|
+| Equities | T+2 | 09:00 |
+| Government Bonds | T+1 | 09:00 |
+| Corporate Bonds | T+1 to T+2 | 15:30 |
+| Repos (환매채) | T+0 to T+2 | Varies |
+| Derivatives Margin | T+0/T+1 | 11:00 |
+
+### 3.3 Settlement Banks
+
+- Bank of Korea (central bank money for large-value/government bond settlement)
+- Commercial settlement banks: Must meet capital adequacy ratios and credit rating requirements
+- Repo facility through Bank of Korea (환매조건부매매)
+- Daily cash processing volume: ~KRW 70 trillion [data as of 2014]
+
+### 3.4 Settlement System Overhaul (2021-2026)
+
+| Year | Change | Impact |
+|------|--------|--------|
+| 2021 | Split settlement introduced (10B KRW units) | Reduced peak settlement risk |
+| 2024 | Units reduced to 5B KRW | 15-20% deposit reduction |
+| Feb 2026 | Operating hours expanded (7:00-16:10) | Better pre-market preparation |
+| Apr 2026 | Units reduced to 1B KRW | Further deposit reduction |
+
+**2026 Metrics:**
+
+- Average daily trading value: KRW 29.6 trillion (Jan-Mar 2026), up 138.7%
+- Institutional stock settlement: KRW 3.6 trillion/day, up 157.1%
+- Settlement facilitation deposits per firm: KRW 84.8 billion/day, up 131%
+
+[Source: Seoul Economic Daily, "KSD Settlement Overhaul", April 2026]
+[Source: KRX, "증권시장 청산결제 업무규정_전문_20260304"]
+
+---
+
+## 4. Technology & Infrastructure
+
+| Item | Details |
+|------|---------|
+| Core System | KSD Securities Settlement System |
+| ISO 20022 | Adopted for CSD connections, transfer agents, global fund platforms |
+| SWIFT | Connected via SWIFT network (BIC: KSDCKRSEXXX) |
+| APIs | Deployed for securities information services |
+| Data Center | Busan |
+| STP Rate | High (automated processing for exchange trades) |
+
+[Source: KSD official website, https://www.ksd.or.kr]
+
+---
+
+## 5. DLT / Blockchain Initiatives
+
+### 5.1 Security Token Framework
+
+| Item | Details |
+|------|---------|
+| Legislation | Revisions to Electronic Registration Act and FSCMA |
+| Effective Date | January 2027 |
+| KSD Role | Mandatory registration of ALL security tokens with KSD |
+| Scope | Broad — covers all security tokens, not limited to listed securities |
+| Requirements | Licensed intermediaries required; unlicensed intermediaries prohibited |
+| Smart Contracts | DLT recognized for record-keeping and smart contract functionality |
+| Previous Attempt | 2023 bill failed; current law succeeded after extended deliberation |
+| Gap | DeFi platforms remain unaddressed |
+
+### 5.2 Digital Asset Infrastructure
+
+- KSD positioning as central registry for tokenized securities
+- Working with regulators on operational framework
+
+[Source: Ledger Insights, "Korea Tokenization Legislation"]
+
+---
+
+## 6. Regulatory Framework
+
+| Item | Details |
+|------|---------|
+| Primary Regulator | FSC / FSS |
+| Legal Basis | FSCMA (자본시장법, Financial Investment Services and Capital Markets Act) |
+| Settlement Finality | Capital Market Act provisions |
+| PFMI Role | Settlement agent complementing KRX as CCP |
+| International Standards | ISO 20022 adopted; SWIFT connected |
+
+[Source: KSD official website, https://www.ksd.or.kr]
+
+---
+
+## 7. Cross-Border Linkages
+
+| Counterpart | Type | Description |
+|-------------|------|-------------|
+| Euroclear | CSD Link | Cross-border settlement for Korean securities |
+| Clearstream | CSD Link | Cross-border settlement |
+| DTC (DTCC) | CSD Link | Cross-border settlement for Korean/U.S. securities |
+| Euroclear FundSettle | Fund Platform | Fund subscription/redemption |
+| Clearstream Vestima | Fund Platform | Fund subscription/redemption |
+| SWIFT | Network | Global messaging for settlement instructions |
+
+[Source: KSD official website, https://www.ksd.or.kr]
+
+---
+
+## 8. Comparison with Global CSDs
+
+| Dimension | KSD (Korea) | DTC (U.S.) | Euroclear | JASDEC (Japan) | CSDC (China) |
+|-----------|-------------|------------|-----------|----------------|--------------|
+| Established | 1974 | 1973 | 1968 | 2002 | 2001 |
+| AUC | KRW 3,149T (2014) | $100+ trillion | EUR 42.5T | [data not available] | RMB 11.05 quadrillion |
+| Settlement Cycle (Equities) | T+2 | T+1 | T+2 | T+2 | T+1 |
+| ISO 20022 | Adopted | In progress | Adopted | In progress | [data not available] |
+| DLT Initiatives | Security token registration (2027) | Project Ion | Canton Network | Pilot stage | [data not available] |
+| Cross-border Links | Euroclear, Clearstream, DTC links | Global network | Bridge with Clearstream; 48 markets | Euroclear, Clearstream links | Stock Connect (HKSCC) |
+
+---
+
+## 9. Recent Developments
+
+| Date | Development |
+|------|-------------|
+| 2026 | Settlement system overhaul (units from 5B to 1B KRW; hours expanded) |
+| 2027 (Jan) | Security token mandatory registration framework effective |
+| Q1 2026 | Trading value surge: KRW 29.6 trillion/day, up 138.7% |
+| Ongoing | ISO 20022 adoption for global connectivity |
+| Ongoing | Working on DLT/blockchain infrastructure for tokenized securities |
+
+[Source: Seoul Economic Daily, "KSD Settlement Overhaul", April 2026]
+[Source: Ledger Insights, "Korea Tokenization Legislation"]
+
+---
+
+## 10. Fees
+
+| Fee Type | Details |
+|----------|---------|
+| Settlement Fees | Charged to clearing members |
+| Custody Fees | For securities held on deposit |
+| Corporate Action Fees | Processing fees for dividends, rights issues, etc. |
+| Fee Schedule | [Specific fee schedule not publicly available in English] |
+
+---
+
+## Sources
+
+- [Source: Wikipedia, "Korea Securities Depository"]
+- [Source: Seoul Economic Daily, "KSD Settlement Overhaul", April 2026]
+- [Source: Ledger Insights, "Korea Tokenization Legislation"]
+- [Source: KSD official website, https://www.ksd.or.kr]
+- [Source: KRX, "증권시장 청산결제 업무규정_전문_20260304"]

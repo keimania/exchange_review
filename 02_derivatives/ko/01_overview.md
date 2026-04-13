@@ -1,0 +1,301 @@
+# 글로벌 파생상품시장 (Global Derivatives Markets) — 개요 (Overview)
+
+> **최종 업데이트:** 2026-04-13
+> **상태 (Status):** 완료 (Completed)
+
+---
+
+## 1. 서론 (Introduction)
+
+본 문서는 글로벌 파생상품시장(파생상품시장, Global Derivatives Markets)—선물(Futures), 옵션(Options), 기타 상장 파생상품—의 구조, 주요 참여자 및 동향에 관한 고수준 개요를 제공한다. 본 문서는 글로벌 거래소 조사 프로젝트(Global Exchange Research)의 파생상품 도메인에 대한 종합 요약으로서, 17개 개별 거래소 조사 파일의 결과를 집약한다.
+
+**관련 자료:**
+- 개별 거래소 파일: [exchanges/](exchanges/)
+- 시스템 심층 분석: [systems/](systems/) (Globex, Genium INET, T7)
+- 규제 분석: [regulations/](regulations/) (미국, EU, 아시아)
+
+---
+
+## 2. 글로벌 파생상품시장 현황 (Global Derivatives Market Landscape)
+
+### 2.1 시장 규모 (Market Size & Scale)
+
+| 지표 | 수치 (2024년) | 출처 |
+|------|--------------|------|
+| **상장 파생상품(ETD) 총 거래계약 수 (연간)** | 약 2,053억 4,000만 계약 (전년 대비 +51%) | FIA, 2024 Annual ETD Volume Review |
+| **옵션 총 거래량** | 약 1,771억 2,000만 계약 (전년 대비 +63.8%) | FIA |
+| **선물 총 거래량** | 약 282억 2,000만 계약 (전년 대비 +1.2%) | FIA |
+| **미결제약정 (2024년 말)** | 약 12억 3,000만 계약 | FIA |
+| **장외파생상품(OTC) 명목잔액 (2024년 말)** | 약 700조 달러 이상 | BIS Semiannual Statistics |
+| — 금리 파생상품 | 약 548.3조 달러 | BIS |
+| — 외환 파생상품 | 약 130.1조 달러 | BIS |
+| — 신용 파생상품 | 약 9.2조 달러 | BIS |
+| — 주식 파생상품 (OTC) | 약 8.9조 달러 | BIS |
+| — 상품 파생상품 (OTC) | 약 2.4조 달러 | BIS |
+
+**주요 관측:** 글로벌 ETD 시장은 2024년 처음으로 2,000억 계약을 돌파하며 6년 연속 역대 최고 기록을 경신하였다. 거래량 증가의 압도적 다수는 주식 옵션에서 비롯되었으며, 특히 인도의 NSE(인도국립증권거래소, National Stock Exchange of India)는 단독으로 약 920억~1,080억 계약을 거래한 것으로 추정된다. 옵션은 현재 전체 ETD 거래량의 약 86%를 차지하며, 선물은 나머지 약 14%를 점유한다.
+
+[출처: FIA, "2024 Annual ETD Volume Review", https://www.fia.org/fia/articles/2024-annual-etd-volume-review]
+[출처: BIS, "OTC derivatives statistics at end-June 2024", https://www.bis.org/publ/otc_hy2411.htm]
+[출처: ISDA, "Key Trends in OTC Derivatives Markets H2 2024", https://www.isda.org/2025/07/03/key-trends-in-the-size-and-composition-of-otc-derivatives-markets-in-the-second-half-of-2024]
+
+### 2.2 거래량 기준 주요 거래소 (Top Exchanges by Volume, 계약 수, 2024년)
+
+| 순위 | 거래소 | 계약 수 (추정 연간, 십억) | 주요 상품 | 권역 |
+|------|--------|--------------------------|-----------|------|
+| 1 | **NSE (인도)** | 약 920억~1,080억 | 주가지수 및 개별주식 옵션 (Nifty 50, Bank Nifty) | 아시아·태평양 |
+| 2 | **B3 (브라질)** | 약 90억~100억 | 주가지수 및 금리 선물·옵션 | 아메리카 |
+| 3 | **CME Group** | 약 62억 (일평균 거래량 2,480만 계약 신기록) | 복합자산 (금리, 주가지수, 에너지, 금속, FX) | 아메리카 |
+| 4 | **Cboe Global Markets** | 약 45억 | 주식 옵션, VIX, SPX, 0DTE 옵션 | 아메리카 |
+| 5 | **SHFE (INE 포함)** | 약 30억 | 금속 (구리, 금, 알루미늄), 원유, 고무 | 아시아·태평양 |
+| 6 | **DCE** | 약 25억 | 철광석, 대두박, 농산물·석유화학 | 아시아·태평양 |
+| 7 | **Eurex** | 약 24억 | 주가지수 (Euro Stoxx 50), 금리 (Bund), 개별주식 | 유럽 |
+| 8 | **ZCE (정주상품거래소, Zhengzhou Commodity Exchange)** | 약 22억 | 농산물 (면화, 설탕, PTA), 유리, 메탄올 | 아시아·태평양 |
+| 9 | **ICE** | 약 18억 | 에너지 (브렌트유, 가스), 금리, 소프트 상품, 탄소 | 아메리카/유럽 |
+| 10 | **KRX (한국거래소, Korea Exchange)** | 약 15억 | KOSPI 200 옵션, 주가지수 선물 | 아시아·태평양 |
+
+**참고:**
+- NSE의 지배적 위상은 대규모 개인투자자 옵션 참여에 기인하나, 2024년 11월 SEBI(인도증권거래위원회, Securities and Exchange Board of India)의 규제 강화 이후 거래량이 최고치 대비 약 30~38% 감소하였으며, NSE는 2025년 상반기에 B3에 1위 자리를 내주었다.
+- CME Group의 일평균 거래량(ADV)은 2024년 7월 2,480만 계약으로 역대 최고치를 기록하였으며, 2024년 3분기 국제 ADV는 840만 계약을 달성하였다.
+- 순위는 잠정치이며, FIA 연간 최종 발표 전까지 수정될 수 있다. 중국 거래소(SHFE, DCE, ZCE)는 계약 수 기준으로 꾸준히 상위 10위권에 랭크된다.
+
+[출처: FIA ETD Tracker, https://www.fia.org/fia/etd-tracker]
+[출처: NSE, "NSE is the World's Largest Derivative Exchange for Fifth Consecutive Year", January 2024]
+[출처: CME Group, "CME Group International ADV Reached New Record of 8.4M Contracts in Q3 2024", October 2024]
+[출처: Business Standard, "NSE Loses Top Derivatives Exchange Spot to Brazil B3", July 2025]
+
+### 2.3 상품 유형 (Product Categories)
+
+| 유형 | 예시 | 주요 거래소 |
+|------|------|------------|
+| **주가지수 선물·옵션 (Equity Index Futures/Options)** | S&P 500, Euro Stoxx 50, Nifty 50, KOSPI 200, TAIEX, SPI 200, CAC 40, FTSE MIB, 항셍, SGX Nifty (GIFT Nifty) | NSE, CME, Eurex, Cboe, TAIFEX, ASX, Euronext, HKEX, SGX, KRX, OSE |
+| **금리 선물·옵션 (Interest Rate Futures/Options)** | SOFR, Euribor, Bund, T-Note/T-Bond, 3Y/10Y 호주 국채, GoC 채권, CORRA, JGB, TONA | CME, Eurex, ICE, ASX, MX (몬트리올), OSE |
+| **외환 선물·옵션 (FX Futures/Options)** | EUR/USD, JPY/USD, USD/INR, AUD/USD, GBP/USD | CME, SGX, NSE, TAIFEX |
+| **상품 — 에너지 (Commodity — Energy)** | WTI 원유, 브렌트 원유, 오만 원유, 천연가스, 전력, LNG | NYMEX/CME, ICE, DME (GME), INE/SHFE, ASX |
+| **상품 — 금속 (Commodity — Metals)** | 금, 은, 구리, 알루미늄, 철광석, 니켈, 아연 | COMEX/CME, LME, SHFE, DCE |
+| **상품 — 농산물 (Commodity — Agriculture)** | 옥수수, 밀, 대두, 대두박, 팜유, 면화, 설탕, 유채씨, 돼지 | CBOT/CME, ICE, DCE, ZCE, Euronext (MATIF) |
+| **개별주식 선물·옵션 (Single Stock Futures/Options)** | 개별 종목 옵션·선물 | NSE, Eurex, Cboe, Euronext, ASX (ETOs), TAIFEX, HKEX |
+| **변동성 상품 (Volatility Products)** | VIX 선물·옵션, VSTOXX | Cboe (CFE), Eurex |
+| **환경·ESG 파생상품 (Environmental / ESG)** | EU 배출권(EUA), 탄소크레딧(ACCU, NZU), 재생에너지인증서 | ICE, Eurex, ASX, EEX |
+| **배당 파생상품 (Dividend Derivatives)** | 지수 배당 선물, 개별주식 배당 선물 | Eurex, Euronext |
+| **국채 선물 — 중국 (Government Bond Futures, China)** | 2년·5년·10년·30년 국채선물(CGB Futures) | CFFEX |
+
+---
+
+## 3. 시장 구조 (Market Structure)
+
+### 3.1 상장 파생상품 vs. 장외 파생상품 (Exchange-Traded vs OTC)
+
+글로벌 파생상품시장은 상장 파생상품(ETD, Exchange-Traded Derivatives)과 장외파생상품(OTC, Over-the-Counter) 시장 양측에 걸쳐 형성되어 있다.
+
+- **ETD 시장:** 2024년 약 2,050억 계약에 달하였으며, 주식 옵션이 거래량의 약 86%를 차지한다.
+- **OTC 명목잔액:** 2024년 말 700조 달러를 초과하였으며, 금리 파생상품(약 548조 달러)이 지배적이다.
+- 2008년 금융위기 이후 규제 의무화(Dodd-Frank, EMIR)에 따라 표준화된 OTC 파생상품이 중앙청산(Central Clearing) 방향으로 이동하면서 상장 파생상품과 OTC의 경계가 점차 모호해지고 있다.
+- 주요 중앙청산소(CCP, Central Counterparty)는 현재 ETD와 OTC 상품 모두를 청산한다 (예: CME Clearing, Eurex Clearing, ASX Clear Futures, LCH).
+
+### 3.2 매매 체결 방식 (Trading Mechanisms)
+
+| 방식 | 설명 | 예시 |
+|------|------|------|
+| **전자주문장 (CLOB, Central Limit Order Book)** | 가격-시간 우선원칙에 의한 연속 체결; 글로벌 지배적 방식 | CME Globex, Eurex T7, Optiq, SOLA, ASX 24, HKATS, J-GATE, Titan, Cboe Titanium |
+| **호가요청 방식 (RFQ, Request for Quote)** | 유동성이 낮은 상품에 대한 전자 협상; 시장조성자가 경쟁 호가 제공 | Eurex EnLight, ICE, HKEX, Cboe AIM |
+| **대량거래·협의거래 (Block Trading / Negotiated Trades)** | 사전 합의 가격으로 장외 대량 거래 후 거래소에 보고·청산 | 주요 거래소 전반 (예: CME EFP/EFS/EOO, Eurex TES, OSE J-NET, SGX NLT, ASX Custom Market) |
+| **기준가 거래 (TAM, Trade at Marker)** | 공표된 일일 기준가격으로 체결 | DME/GME (오만 기준가격) |
+
+### 3.3 시장 참여자 (Market Participants)
+
+- **헤저 (Hedgers):** 상품, 금리, 외환, 주식 리스크를 관리하는 기업 실수요자
+- **투기자 (Speculators):** 개인투자자(특히 인도 옵션시장에서 지배적), 헤지펀드, 자기매매업자 포함
+- **차익거래자 (Arbitrageurs):** 관련 계약 및 거래소 간 가격 차이를 이용하는 참여자
+- **자기매매업자·고빈도거래(HFT) (Proprietary Trading Firms / HFT):** 유동성을 공급하는 고속 알고리즘 시장조성자
+- **시장조성자 (Market Makers):** 거래소 지정 유동성 공급자로 호가 의무 및 인센티브를 수반함
+
+---
+
+## 4. 증거금 및 리스크 체계 (Margin & Risk Framework)
+
+글로벌 파생상품거래소는 다양한 증거금 산출 방법론을 채택하고 있으며, 시나리오 기반(SPAN)에서 VaR 기반 방식으로의 전환이 업계 전반에서 뚜렷하게 진행 중이다.
+
+| 방법론 | 유형 | 주요 거래소·CCP | 현황 |
+|--------|------|----------------|------|
+| **SPAN (원형)** | 시나리오 기반 (16개 시나리오) | TAIFEX, CDCC (몬트리올), HKCC (PRiME), 다수 소규모 거래소 | 레거시; 주요 거래소에서 단계적 퇴출 중 |
+| **SPAN 2** | HVaR 기반 (수천 개 시나리오) | CME Clearing | 에너지 상품 2023년 이전 완료; 확대 적용 진행 중 |
+| **Prisma** | 필터링 히스토리컬 시뮬레이션 VaR | Eurex Clearing | 2013년부터 실운용 중; 금융 선물에 VaR 적용한 최초의 CCP |
+| **ICE Risk Model 2 (IRM 2)** | 필터링 히스토리컬 시뮬레이션 VaR | ICE Clear | 2024~2025년 출시, 레거시 IRM 대체 |
+| **Euronext Clearing** | VaR 기반 | Euronext Clearing (구 CC&G) | 2024년 9월 모든 Euronext 금융 파생상품으로 확대 |
+| **고정비율 (Fixed-percentage)** | 계약가치 대비 비율 | CFFEX, DCE, SHFE (중국) | 중국 거래소는 고정비율 방식으로 운용하며, 규제 재량에 따라 조정 가능 |
+| **SEBI 피크 증거금 (SEBI Peak Margin)** | 선취 100% 증거금 | NSE (인도) | 2021년 도입; 2024년 11월부터 만기일 ELM 추가 부과 |
+| **KRX-SPAN** | 시나리오 기반 (수정 SPAN) | KRX (한국거래소) | 운용 중; VaR 기반 전환 검토 진행 중 |
+
+**주요 관측:**
+- 업계는 SPAN의 고정 16개 시나리오 방식을 대체하는, 수천 개의 역사적 시나리오를 활용한 VaR 기반 방법론(SPAN 2, Prisma, IRM 2)으로 수렴하는 추세이다.
+- 중국 거래소(CFFEX, DCE, SHFE)는 변동성이 크거나 공휴일 기간 중 증거금을 조정하는 광범위한 규제 재량과 함께 고정비율 방식을 유지하고 있다.
+- CME, Eurex 및 기타 복합자산 CCP에서 상품 간 교차증거금(Cross-margining) 적용이 확대되고 있다.
+- 반경기순응성 조치(스트레스 VaR 하한, 변동성 완충장치)가 주요 CCP의 표준으로 자리잡고 있다.
+
+---
+
+## 5. 규제 환경 (Regulatory Landscape)
+
+| 관할권 | 주요 규제 | 규제기관 | 범위 |
+|--------|-----------|----------|------|
+| **미국** | Dodd-Frank Act (2010) | CFTC, SEC | 표준화된 스왑에 대한 중앙청산 의무화; 포지션 한도; DCM·DCO 등록; 시스템적으로 중요한 CCP의 SIFMU 지정 |
+| **유럽연합** | EMIR (2012, 개정), MiFID II/MiFIR (2018) | ESMA, 각국 NCA | CCP 인가; 청산 의무; 포지션 한도 및 보고; 통합테이프·단일 거래량 상한을 도입한 MiFIR Refit (2024) |
+| **영국** | UK EMIR, UK MiFID II (브렉시트 이후) | FCA, 잉글랜드은행 | EU와 병행 체제; 독립적 CCP 감독 |
+| **중국** | 선물 및 파생상품법 (2022), 국무원 규정 | CSRC | 포괄적 법적 체계; 외국인 투자자 QFI 접근; 엄격한 포지션 한도 및 증거금 관리 |
+| **인도** | SEBI법, SEBI F&O 규정 | SEBI | 6개 항목의 F&O 개혁 패키지 (2024년 10월); 주간 만기 제한; 피크 증거금 규정; 개인투자자 93% 손실 연구 |
+| **일본** | 금융상품거래법 (FIEA) | JFSA, SESC | JPX 하의 거래소 통합; BOJ 금리 정상화에 따른 TONA 선물 성장 |
+| **싱가포르** | 증권선물법 (SFA) | MAS | 국제 허브; CME와의 상호상쇄결제(Mutual Offset); NSE IX와 GIFT Connect |
+| **홍콩** | 증권선물조례 | SFC | 스왑커넥트 (2023); 스톡커넥트 확대; 이중 CCP 체계 (HKCC/SEOCH) |
+| **호주** | 회사법, ASIC 시장건전성 규칙 | ASIC, RBA | OTC 청산 의무화; ASX 수직통합 모델; CHESS 교체 진행 중 |
+| **대만** | 선물거래법 (1997) | FSC | TAIFEX(대만선물거래소, Taiwan Futures Exchange)가 유일한 국내 파생상품거래소; QCCP 지정 (2020) |
+| **캐나다** | 파생상품법 (퀘벡주), 각 주 증권법 | AMF, CIRO, 캐나다은행 | MX/CDCC가 시스템적으로 중요한 금융시장인프라(FMI); T+1 결제 (2024년 5월); CDOR 폐지 |
+| **UAE (DIFC)** | DIFC 시장법 | DFSA | DME/GME는 DIFC 자유구역 내 규제; CME Clearing이 CCP 서비스 제공 |
+| **대한민국** | 자본시장법 (FSCMA, 2007), 파생상품시장업무규정 | 금융위원회 (FSC), 금융감독원 (FSS) | 거래소·CCP 통합 모델; 야간거래 세션 2025년 6월 개시; 외국인 투자자 QFI 접근; 넥스트레이드(NXT) 대체거래소 2025년 3월 개장 |
+
+**공통 규제 동향:**
+- 전 세계적으로 OTC 파생상품에 대한 중앙청산 의무 강화
+- 포지션 한도 체계 및 대규모 거래자 보고 강화
+- 개인투자자 보호 강화 조치(특히 인도 SEBI 개혁)
+- EU 디지털운영회복법 (DORA, Digital Operational Resilience Act) (2025년 1월 발효)
+- PFMI(금융시장인프라 원칙, Principles for Financial Market Infrastructures) 준수가 글로벌 표준으로 정착
+
+상세 규제 분석은 다음을 참조:
+- [미국 파생상품 규제](regulations/us_derivatives_regulation.md)
+- [EU 파생상품 규제](regulations/eu_derivatives_regulation.md)
+- [아시아 파생상품 규제](regulations/asia_derivatives_regulation.md)
+
+---
+
+## 6. 주요 트렌드 (Key Trends)
+
+### 6.1 옵션 거래 폭발적 증가 및 개인투자자 참여 (Explosion of Options Trading & Retail Participation)
+
+- 2024년 글로벌 옵션 거래량은 **1,770억 계약**에 달하였으며 (전년 대비 +63.8%), 현재 전체 ETD 거래량의 약 86%를 차지한다.
+- 인도 NSE만 2024년 약 920억~1,080억 계약을 거래하였으며(대부분 주식 옵션), 대규모 개인투자자 참여가 주도하였다.
+- SEBI의 2024년 9월 연구에 따르면 **FY22~FY24 기간 개인 F&O 거래자의 93%가 손실**을 기록한 것으로 나타났으며, 이는 포괄적인 규제 강화로 이어졌다.
+- SEBI 규제 강화(2024년 11월) 이후 NSE 거래량은 약 30~38% 감소하였으며, B3가 2025년 상반기에 NSE를 제치고 글로벌 1위로 올라섰다.
+
+### 6.2 제로 만기 옵션(0DTE) 혁명 (0DTE, Zero Days to Expiration Options Revolution)
+
+- 0DTE 옵션은 2025년 일평균 **1,400만 계약**을 기록하며 전년 대비 41% 증가하였다.
+- 0DTE는 2025년 미국 상장 옵션 전체 거래량의 **24.1%**를 차지하였다 (2024년 21.5%, 2022년 대비 약 두 배).
+- SPX 0DTE 계약은 2024년 4분기에 다른 모든 만기물을 합산한 거래량을 초과하며 S&P 500 옵션 중 가장 많이 거래된 상품이 되었다.
+- Cboe의 일별 SPX 만기 도입(2022년)이 촉매제가 되었으며, 2025년까지 0DTE는 SPX 옵션 거래량의 약 59%에 달하였다.
+- 개인투자자(리테일 브로커 주문 흐름의 50%)와 기관 참여자 모두 0DTE 전략을 채택하고 있다.
+
+### 6.3 소액 투자자 접근을 위한 마이크로·나노 계약 (Micro/Nano Contracts for Retail Access)
+
+- CME 마이크로 E-mini 시리즈 (S&P 500, 나스닥, 금, 원유)는 계속 성장 중이며, 개인투자자의 진입 요건을 낮추고 있다.
+- TAIFEX(대만선물거래소)는 마이크로 TAIEX 선물을 출시하였으며, ASX는 미니 SPI 200을 제공한다.
+- DME/GME는 마이크로 오만 원유 선물(표준 1,000배럴 대비 100배럴)을 출시하였다.
+- Euronext는 미니 개별주식 옵션(2025년 5월)과 미니 ETF 옵션(2026년 3월)을 도입하였다.
+
+### 6.4 ESG 및 환경 파생상품 (ESG & Environmental Derivatives)
+
+- ICE 환경 시장은 2025년 **2,090만 계약**의 역대 최고치를 기록하였다 (전년 대비 +4%).
+- EU 배출권거래제(ETS) 배출권은 가장 유동성 높은 환경 파생상품으로, ICE Futures Europe이 주요 거래소이다.
+- ASX는 ACCU(호주탄소크레딧 선물), NZU 선물, LGC 선물을 상장하고 있다.
+- Euronext는 CAC 40 ESG 지수 선물을 출시하였다.
+- 글로벌 탄소 시장은 2025년 **1조 달러**를 초과하였다.
+- 재생에너지 탄소크레딧 시장은 2024년 434억 달러를 초과하였다.
+
+### 6.5 암호화폐 파생상품 (Cryptocurrency Derivatives)
+
+- 암호화폐 파생상품 시장은 2025년 월간 **89.4조 달러** 규모로 확대되었다.
+- CME 비트코인 및 이더 선물·옵션은 규제 거래소로서 지속 성장하고 있다.
+- 이더 옵션의 일평균 거래량은 2024년 대비 2025년에 65% 증가하였다.
+- 비트코인과 이더리움이 합산 암호화폐 파생상품 거래량의 약 68%를 차지한다.
+
+### 6.6 거래 시간 연장 (Extended Trading Hours)
+
+- TAIFEX는 19시간 커버리지를 제공한다 (주간 세션 + T+1 야간 세션, 2017년부터).
+- ASX 24는 금리 및 주가지수 선물에 대해 준 24시간 거래를 제공한다.
+- CME Globex는 전 자산군에 걸쳐 하루 약 23시간 거래를 제공한다.
+- SHFE·DCE·CFFEX의 야간 세션은 런던·뉴욕 시장과의 시간대 중첩을 확대한다.
+- Euronext는 주가지수 선물 거래 시간을 CET 22시까지 연장하였다(미국 장 커버).
+- KRX(한국거래소)는 2025년 6월 9일 독립 야간 세션(18:00~06:00 KST)을 개시하여 파생상품 거래 시간을 하루 약 19시간으로 확대하였다.
+
+### 6.7 기술 현대화 (Technology Modernization)
+
+- 증거금 방법론 전환: 주요 CCP 전반에서 SPAN에서 VaR 기반 방식(SPAN 2, Prisma, IRM 2)으로 이행 중이다.
+- Euronext는 모든 파생상품(IDEM 포함)에 대한 Optiq 플랫폼 이전을 2024년 4월 완료하였다.
+- Euronext Clearing의 LCH SA로부터의 전환이 모든 금융 파생상품에 대해 2024년 9월 완료되었다.
+- ASX 24 플랫폼 현대화 사업이 LSEG와 함께 발표되었다(2026년 3월, 목표 운영 개시 2028년 상반기).
+- NSE는 나노초 지연 업그레이드를 계획하고 있다(초당 1억 건 처리, 2026년 4월부터).
+- OSE J-GATE 4.0은 Nasdaq Eqlipse 플랫폼 기반으로 계획되어 있다(약 2028년).
+
+### 6.8 중국의 국제화 (China's Internationalization)
+
+- INE(상해국제에너지거래소, Shanghai International Energy Exchange) 원유 선물(2018년 상장)이 위안화(RMB) 기반 에너지 벤치마크를 정립하였다.
+- DCE 철광석 및 팜유는 해외 거래자에게 개방되었다.
+- SHFE 보세 창고 구리 및 저유황 연료유는 외국인 참여자가 접근 가능하다.
+- QFI(적격외국인투자자, Qualified Foreign Investor) 제도가 CFFEX·DCE·SHFE 상품 전반으로 접근을 확대하였다.
+- 선물 및 파생상품법(2022)이 포괄적인 법적 기반을 마련하였다.
+
+### 6.9 채권 파생상품 성장 (Fixed Income Derivatives Growth)
+
+- BOJ(일본은행)의 금리 정상화가 OSE의 TONA 선물 성장을 이끌고 있다.
+- Euronext는 2025년 9월 미니 현금결제 국채 선물(BTP, OAT, Bund, Bono)을 출시하였다.
+- 몬트리올거래소(Montreal Exchange) CORRA 선물(CRA)은 BAX에서 CRA로의 성공적인 전환 이후 2025년 일평균 거래량 약 17만 계약을 달성하였다.
+- ASX 금리 선물은 2025년 4분기에 역대 최고 거래량을 기록하였다(전년 대비 +23%).
+- CFFEX 30년 국채선물(CGB Futures)은 2023년 4월 상장되어 중국의 수익률 곡선 커버리지가 완성되었다.
+
+---
+
+## 7. 조사 로드맵 (Research Roadmap)
+
+### 1단계 — 심층 분석 (Tier 1 — Deep Dive)
+| 거래소 | 파일 | 상태 |
+|--------|------|------|
+| CME Group | [cme_group.md](exchanges/cme_group.md) | ✅ 완료 (2026-04-06) |
+| Eurex | [eurex.md](exchanges/eurex.md) | ✅ 완료 (2026-04-06) |
+| HKEX 파생상품 | [hkex_derivatives.md](exchanges/hkex_derivatives.md) | ✅ 완료 (2026-04-06) |
+| SGX 파생상품 | [sgx_derivatives.md](exchanges/sgx_derivatives.md) | ✅ 완료 (2026-04-06) |
+| KRX 파생상품 | [krx_derivatives.md](exchanges/krx_derivatives.md) | ✅ 완료 (2026-04-13) |
+
+### 2단계 — 표준 분석 (Tier 2 — Standard)
+| 거래소 | 파일 | 상태 |
+|--------|------|------|
+| Cboe | [cboe.md](exchanges/cboe.md) | ✅ 완료 (2026-04-06) |
+| ICE Futures | [ice_futures.md](exchanges/ice_futures.md) | ✅ 완료 (2026-04-06) |
+| 오사카거래소 (Osaka Exchange) | [osaka_exchange.md](exchanges/osaka_exchange.md) | ✅ 완료 (2026-04-06) |
+| Euronext 파생상품 | [euronext_derivatives.md](exchanges/euronext_derivatives.md) | ✅ 완료 (2026-04-07) |
+| ASX 파생상품 | [asx_derivatives.md](exchanges/asx_derivatives.md) | ✅ 완료 (2026-04-07) |
+
+### 3단계 — 개요 분석 (Tier 3 — Overview)
+| 거래소 | 파일 | 상태 |
+|--------|------|------|
+| 몬트리올거래소 (Montreal Exchange) | [montreal_exchange.md](exchanges/montreal_exchange.md) | ✅ 완료 (2026-04-07) |
+| CFFEX | [cffex.md](exchanges/cffex.md) | ✅ 완료 (2026-04-07) |
+| DCE | [dce.md](exchanges/dce.md) | ✅ 완료 (2026-04-07) |
+| SHFE | [shfe.md](exchanges/shfe.md) | ✅ 완료 (2026-04-07) |
+| NSE F&O | [nse_fo.md](exchanges/nse_fo.md) | ✅ 완료 (2026-04-07) |
+| TAIFEX | [taifex.md](exchanges/taifex.md) | ✅ 완료 (2026-04-07) |
+| DME | [dme.md](exchanges/dme.md) | ✅ 완료 (2026-04-07) |
+
+### 지원 조사 자료 (Supporting Research)
+| 문서 | 파일 | 상태 |
+|------|------|------|
+| Globex 시스템 심층 분석 | [systems/globex.md](systems/globex.md) | ✅ 완료 |
+| Genium INET 시스템 심층 분석 | [systems/genium_inet.md](systems/genium_inet.md) | ✅ 완료 |
+| T7 파생상품 시스템 심층 분석 | [systems/t7_derivatives.md](systems/t7_derivatives.md) | ✅ 완료 |
+| 미국 파생상품 규제 | [regulations/us_derivatives_regulation.md](regulations/us_derivatives_regulation.md) | ✅ 완료 |
+| EU 파생상품 규제 | [regulations/eu_derivatives_regulation.md](regulations/eu_derivatives_regulation.md) | ✅ 완료 |
+| 아시아 파생상품 규제 | [regulations/asia_derivatives_regulation.md](regulations/asia_derivatives_regulation.md) | ✅ 완료 |
+
+---
+
+## 출처 (Sources)
+
+- [FIA — 2024 Annual ETD Volume Review](https://www.fia.org/fia/articles/2024-annual-etd-volume-review)
+- [FIA — ETD Tracker](https://www.fia.org/fia/etd-tracker)
+- [BIS — OTC Derivatives Statistics](https://www.bis.org/statistics/derstats.htm)
+- [BIS — OTC Derivatives Statistics at end-June 2024](https://www.bis.org/publ/otc_hy2411.htm)
+- [ISDA — Key Trends in OTC Derivatives Markets H2 2024](https://www.isda.org/2025/07/03/key-trends-in-the-size-and-composition-of-otc-derivatives-markets-in-the-second-half-of-2024)
+- [NSE — World's Largest Derivative Exchange](https://www.nseindia.com/nse-is-now-worlds-largest-derivatives-exchange)
+- [CME Group — Record ADV 2024](https://www.marketsmedia.com/cme-reports-record-average-daily-volume-for-2024/)
+- [Business Standard — NSE Loses Top Spot to B3](https://www.business-standard.com/markets/news/nse-loses-top-derivatives-exchange-spot-to-brazil-b3-eyes-vix-futures-125073001569_1.html)
+- [Cboe — State of the Options Industry Q3 2025](https://www.cboe.com/insights/posts/the-state-of-the-options-industry-quarter-three-2025/)
+- [SEBI — 93% Retail F&O Loss Study, September 2024](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html)
+- [OpenGamma — SPAN vs VaR](https://opengamma.com/span-vs-var/)

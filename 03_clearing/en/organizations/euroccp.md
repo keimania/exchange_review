@@ -1,0 +1,458 @@
+# European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 2 (Standard)
+> **Type:** CCP (Central Counterparty)
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Cboe Clear Europe N.V. (formerly European Central Counterparty N.V. / EuroCCP) |
+| Abbreviation | CCE (formerly EuroCCP) |
+| Country / City | Netherlands / Amsterdam |
+| Website | [https://clear.cboe.com/europe](https://clear.cboe.com/europe) |
+| Year Established | 2007 (EMCF and EuroCCP Ltd incorporated); 2013 (combined entity); 2014 (EMIR authorization) |
+| Ownership | Cboe Global Markets, Inc. (100% subsidiary since July 2020) |
+| Legal Entity Identifier (LEI) | [unverified] |
+| Regulatory Authority | De Nederlandsche Bank (DNB) as primary supervisor; Autoriteit Financiele Markten (AFM) as conduct supervisor |
+| EMIR Authorization | Authorized as CCP under EMIR on 1 April 2014 [Source: [ESMA CCP List](https://www.esma.europa.eu/sites/default/files/library/ccps_authorised_under_emir.pdf)] |
+| CPMI-IOSCO PFMI Compliance | Yes -- publishes CPMI-IOSCO self-assessments and PQD disclosures quarterly [Source: [Cboe Clear Public Disclosures](https://clear.cboe.com/europe/resources/documentation/public_disclosures)] |
+| Clearing Participants | 50 active clearing participants; 144 trading firms served (as of December 2024) [Source: [Cboe Clear Europe Annual Report 2024](https://cdn-clear.cboe.com/europe/resources/annual-report/Cboe-Clear-Europe-Annual-Report-2024.pdf)] |
+| Connected Venues | 52 venues and segments (the most connected CCP in Europe) |
+| Connected CSDs | 15+ national Central Securities Depositories (19 CSDs for SFT clearing) |
+
+### Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 2007 | European Multilateral Clearing Facility N.V. (EMCF) incorporated in the Netherlands; European Central Counterparty Limited (EuroCCP Ltd) incorporated in the UK as a subsidiary of DTCC |
+| 2008 (Aug) | EuroCCP Ltd begins operations, initially clearing for the Turquoise pan-European trading platform |
+| 2013 (Dec) | EMCF and EuroCCP Ltd merge to form European Central Counterparty N.V. (EuroCCP), domiciled in Amsterdam. The merger was driven by the need to consolidate loss-making operations into a viable entity [Source: [MarketsWiki - Cboe Clear Europe](https://www.marketswiki.com/wiki/Cboe_Clear_Europe)] |
+| 2014 (Apr) | EuroCCP authorized as a CCP under EMIR |
+| Pre-2019 | Ownership shared among multiple stakeholders: Cboe Global Markets (20%), Nasdaq (20%), Euronext (20%), ABN Amro and DTCC (combined 40%) [Source: [MarketsWiki](https://www.marketswiki.com/wiki/Cboe_Clear_Europe)] |
+| 2019 (Dec) | Cboe Global Markets announces agreement to acquire 100% of EuroCCP |
+| 2020 (Jul 7) | Cboe completes acquisition of EuroCCP, bringing together two companies championing clearing competition and interoperability in Europe [Source: [Cboe IR](https://ir.cboe.com/news/news-details/2022/EuroCCP-Rebranded-to-Cboe-Clear-Europe-11-14-2022/default.aspx)] |
+| 2021 | EuroCCP diversifies into equity derivatives clearing to support the launch of Cboe Europe Derivatives (CEDX) |
+| 2022 (Nov 14) | Rebranded from European Central Counterparty N.V. to Cboe Clear Europe N.V. [Source: [Markets Media](https://www.marketsmedia.com/euroccp-rebranded-to-cboe-clear-europe/)] |
+| 2023 (Jun) | Cboe Clear Europe announces plans to introduce CCP clearing for Securities Financing Transactions (SFTs) [Source: [PR Newswire](https://www.prnewswire.com/news-releases/cboe-clear-europe-plans-to-introduce-clearing-service-for-securities-financing-transactions-301850467.html)] |
+| 2024 (Nov) | Receives DNB/AFM regulatory approval to clear European SFTs [Source: [Cboe IR](https://ir.cboe.com/news/news-details/2024/Cboe-Clear-Europe-Secures-Regulatory-Approval-to-Launch-Securities-Financing-Transactions-Clearing/default.aspx)] |
+| 2025 (Mar 31) | Cboe Clear Europe commences clearing of European Securities Financing Transactions (SFTs) [Source: [PR Newswire](https://www.prnewswire.com/news-releases/cboe-clear-europe-clears-first-securities-financing-transactions-302415378.html)] |
+| 2025 (Q4) | Cash equities market share reaches 39.6% in Q4 2025 (up from 38.5% in Q4 2024) |
+
+> **DTCC Heritage:** EuroCCP originated as a European subsidiary of the Depository Trust & Clearing Corporation (DTCC), conceived to bring US-style centralized clearing efficiencies to European equity markets. The DTCC connection was severed through the gradual diversification of ownership and ultimately Cboe's full acquisition in 2020. [Source: [Cboe Insights - Our Origins](https://www.cboe.com/insights/posts/our-origins-delivering-efficiencies-with-euro-ccp/)]
+
+---
+
+## 2. Clearing Model
+
+### 2.1 CCP Services
+
+| Service | Product Class | Description | Key Statistics |
+|---------|--------------|-------------|----------------|
+| **Cash Equities** | Equities, ETFs, Depositary Receipts | Pan-European clearing across 52 venues and segments covering approximately 95% of all European equity trades | 1.2 billion client trades cleared in 2024 (+5% YoY); EUR 49.3 billion average daily CCP protection value [Source: [Cboe Clear Europe Annual Report 2024](https://cdn-clear.cboe.com/europe/resources/annual-report/Cboe-Clear-Europe-Annual-Report-2024.pdf)] |
+| **Equity Derivatives** | Options and Futures on European equities | Clearing for Cboe Europe Derivatives (CEDX), a pan-European equity derivatives exchange launched 2021 | 210,000 lots cleared in 2024 (up from 94,000 in 2023) [Source: [Cboe Clear Europe Annual Report 2024](https://cdn-clear.cboe.com/europe/resources/annual-report/Cboe-Clear-Europe-Annual-Report-2024.pdf)] |
+| **Securities Financing Transactions (SFT)** | Securities lending and borrowing | Matching, CCP clearing, settlement, and post-trade lifecycle management for SFTs in European cash equities and ETFs | Launched March 2025; nine initial participants including Bank of America and State Street; settlement across 19 European CSDs [Source: [PR Newswire](https://www.prnewswire.com/news-releases/cboe-clear-europe-clears-first-securities-financing-transactions-302415378.html)] |
+
+**Covered Markets (Securities from 20+ European markets):** Including but not limited to Austria, Belgium, Denmark, Finland, France, Germany, Ireland, Italy, Netherlands, Norway, Portugal, Spain, Sweden, Switzerland, United Kingdom, and Poland. [Source: [Cboe Clear - Markets](https://clear.cboe.com/europe/services/equities/markets)]
+
+### 2.2 Novation Process
+
+- **Open Offer Model:** Cboe Clear Europe interposes itself as the central counterparty through novation at the point of trade registration. The original bilateral obligation between buyer and seller is replaced by two new obligations -- one between the CCP and each counterparty.
+- **Real-time Processing:** Transactions are fed to the risk management system as soon as they are received from the trading platform. Margin and P&L are recalculated in real-time.
+- **Trade Registration:** Trades are accepted and novated upon receipt from connected trading venues, subject to risk validation checks.
+
+[Source: [CPMI-IOSCO Disclosure Framework - EuroCCP Sept 2020](https://cdn-clear.cboe.com/europe/resources/public-disclosures/CPMI-IOSCO-disclosure-framework-EuroCCP-Sept-2020.pdf)]
+
+### 2.3 Netting
+
+**Multilateral Netting:**
+- Cboe Clear Europe performs multilateral netting across all cleared positions per clearing participant, reducing gross settlement obligations to net amounts per ISIN per CSD.
+- **Netting Efficiency:** In 2024, netting eliminated 70.29% (EUR 34.6 billion) of the average daily value that would otherwise require settlement. This means that of the EUR 49.3 billion average daily CCP protection value, only approximately EUR 14.7 billion required actual settlement each day.
+- **Cross-venue Netting:** A key benefit of Cboe Clear Europe is that positions from multiple trading venues can be netted together into a single settlement obligation per ISIN, significantly reducing settlement volume and costs.
+
+[Source: [Cboe Clear Europe Annual Report 2024](https://cdn-clear.cboe.com/europe/resources/annual-report/Cboe-Clear-Europe-Annual-Report-2024.pdf)]
+
+### 2.4 Clearing Membership
+
+**Membership Categories:**
+
+| Category | Description |
+|----------|-------------|
+| General Clearing Participant (GCP) | Clears own trades and trades of non-clearing participants (NCPs) |
+| Direct Clearing Participant (DCP) | Clears own trades only |
+| Special Participant (SFT) | For SFT clearing -- beneficial owners (UCITS and non-UCITS) that can join without paying margin or contributing to the default fund [unverified -- specific terms may vary] |
+
+**Membership Requirements (General):**
+- Adequate financial resources and minimum capital requirements as defined in Cboe Clear Europe Clearing Rule Book
+- Appropriate banking arrangements
+- Experienced personnel and adequate operational systems
+- KYC/AML compliance
+- Signed Clearing Participant Agreement
+- Settlement agent arrangements at relevant CSDs
+
+[Source: [Cboe Clear - Membership](https://clear.cboe.com/europe/services/membership); [Clearing Participant Agreement](https://cdn.cboe.com/euroccp/resources/EuroCCP-Clearing-Participant-Agreement-version-May-2020.pdf)]
+
+**Active Participants (2024):** 50 clearing participants; 144 trading firms [Source: [Cboe Clear Europe Annual Report 2024](https://cdn-clear.cboe.com/europe/resources/annual-report/Cboe-Clear-Europe-Annual-Report-2024.pdf)]
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework
+
+Cboe Clear Europe uses a **Conditional Value-at-Risk (CVaR)** based margin model, as required under EMIR.
+
+**Securities Margin Model Parameters:**
+
+| Parameter | Value |
+|-----------|-------|
+| Model Type | Historical simulation CVaR |
+| Confidence Level | 99% (with CVaR capturing tail risk beyond 99th percentile) |
+| Margin Period of Risk (MPOR) | 2 business days (for cash equities); 3 business days (for certain products) [unverified -- MPOR may differ by service] |
+| Lookback Window | 700 historical scenarios (approximately 2.8 years of data) |
+| Minimum Data Requirement | At least 12 months, capturing a full range of market conditions including stress periods (per EMIR requirement) |
+| Anti-Procyclicality Measure | Stressed Historical Simulation (StressHS) margin, per EMIR RTS Article 28(1)(b) |
+| Recalculation Frequency | At least every 5 minutes in real-time |
+
+[Source: [Cboe Clear Europe Margin Model Description - Securities](https://cdn-clear.cboe.com/europe/resources/risk-management/Cboe-Clear-Europe-Margin-Model-Description-Securities.pdf); [ECB Occasional Paper on CCP IM Models](https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op314~afc6d2980c.en.pdf)]
+
+**Margin Components:**
+
+| Component | Description |
+|-----------|-------------|
+| Initial Margin (IM) | Potential future exposure based on CVaR model; covers worst-case losses over MPOR at 99% confidence |
+| Variation Margin (VM) | Mark-to-market / current exposure reflecting unrealized P&L |
+| Total Margin | Max [0; (Initial Margin - Variation Margin)]; i.e., if VM gains exceed IM, no additional margin is required |
+| Add-ons | Additional margin to cover risks not captured by core IM model (e.g., concentration risk, liquidity risk, wrong-way risk) |
+
+**Cross-Product Margining:**
+- Cboe Clear Europe offers cross-product margining across cash equities, derivatives, and SFT positions, recognizing offsets where correlations justify reduced margin.
+
+[Source: [CPMI-IOSCO Disclosure Framework - EuroCCP Sept 2020](https://cdn-clear.cboe.com/europe/resources/public-disclosures/CPMI-IOSCO-disclosure-framework-EuroCCP-Sept-2020.pdf)]
+
+**Real-Time Risk Management (RTRM):**
+- The risk management system (COH/RTRM -- Collateral Haircut / Real Time Risk Management) calculates margin requirements for Clearing Participants and Co-CCPs.
+- Prices are updated instantaneously upon receipt from data providers (Refinitiv).
+- P&L in portfolios is recalculated in real-time.
+
+### 3.2 Margin Call Schedule
+
+| Margin Call | Timing | Description |
+|-------------|--------|-------------|
+| End-of-Day Margin | After market close | Full recalculation based on closing prices |
+| Intraday Margin | Throughout trading hours | Triggered when real-time monitoring detects that margin is insufficient; recalculated at least every 5 minutes |
+| Interoperability Fund | Before 09:00 CET | Daily determination of required Interoperability Fund Deposits; if additional deposit required, notification by email before 09:00 CET, account debited via Direct Debit before 09:30 CET |
+
+[Source: [Cboe Clear Europe - Risk Management](https://clear.cboe.com/europe/services/risk_management)]
+
+### 3.3 Default Waterfall
+
+The default waterfall defines the sequence in which financial resources are applied in the event of a clearing participant default:
+
+| Layer | Resource | Description |
+|-------|----------|-------------|
+| 1 | **Defaulting Member's Margin** | Initial margin and variation margin of the defaulting participant are applied first |
+| 2 | **Defaulting Member's Default Fund Contribution** | The defaulting participant's share of the Clearing Fund |
+| 3 | **CCP Skin-in-the-Game (First Tranche)** | Cboe Clear Europe's own dedicated financial resources, amounting to 25% of minimum required capital. As of mid-2021 this was approximately EUR 6.8 million [Source: [Cboe Insights - Dedicated Own Resources July 2021](https://www.cboe.com/insights/posts/dedicated-own-euro-ccp-resources-july-2021/)] |
+| 4 | **Non-Defaulting Members' Default Fund Contributions** | Clearing Fund contributions of surviving (non-defaulting) clearing participants are mutualized |
+| 5 | **CCP Additional Dedicated Resources (Second Tranche)** | Additional dedicated own financial resources of Cboe Clear Europe, introduced per EU R&R Regulation Article 9(14) |
+| 6 | **Recovery Tools** | Calls beyond the default waterfall -- including loss allocation to non-defaulting members, additional assessment powers, and other recovery measures |
+
+> **Note on Sizing:** The exact current size of the Clearing Fund and CCP dedicated resources fluctuates. The 2021 disclosure indicated EUR 6.8 million in CCP skin-in-the-game (25% of minimum capital). The total Clearing Fund size varies based on stress-test outcomes and participant composition. For current figures, refer to the latest PQD disclosures. [Source: [Cboe Clear Public Disclosures](https://clear.cboe.com/europe/resources/documentation/public_disclosures)]
+
+[Source: [Cboe Clear Europe Clearing Rule Book](https://cdn.cboe.com/euroccp/resources/Cboe-Clear-Clearing-Rule-Book.pdf), Article 9.1.2]
+
+### 3.4 Default Fund / Guarantee Fund
+
+**Clearing Fund (Default Fund):**
+- All clearing participants contribute to the Clearing Fund based on their risk profile and stress-test outcomes.
+- The fund is sized to cover the default of the largest member (Cover 1) or the two largest members (Cover 2) under extreme but plausible stress scenarios, as required by EMIR.
+- Contributions are recalculated periodically and can be called for replenishment after a default event.
+- Separate fund arrangements exist for the Interoperability Fund (for co-CCP exposures).
+
+**Interoperability Fund:**
+- A dedicated fund to cover exposures arising from interoperable CCP arrangements (with LCH Ltd and SIX x-clear AG).
+- Daily recalculation of required deposits.
+
+[Source: [CPMI-IOSCO Disclosure Framework - EuroCCP Sept 2020](https://cdn-clear.cboe.com/europe/resources/public-disclosures/CPMI-IOSCO-disclosure-framework-EuroCCP-Sept-2020.pdf)]
+
+### 3.5 Stress Testing & Back-Testing
+
+**Stress Testing:**
+- Cboe Clear Europe conducts regular stress tests to assess the adequacy of financial resources under extreme but plausible market conditions, as required by EMIR Article 49.
+- Participates in ESMA's EU-wide CCP stress tests. In ESMA's 5th CCP Stress Test (2024), the European clearing system was found to be resilient overall. [Source: [ESMA 5th CCP Stress Test Report](https://www.esma.europa.eu/sites/default/files/2024-07/ESMA91-1505572268-3627_5th_ESMA_CCP_Stress_Test_Report.pdf)]
+- Stress scenarios include historical scenarios (e.g., 2008 financial crisis, COVID-19 March 2020) and hypothetical extreme scenarios.
+
+**Back-Testing:**
+- Daily back-testing of margin model adequacy to verify that collected margins would have been sufficient to cover actual observed losses.
+- EMIR requires CCPs to evaluate whether initial margin covered potential losses assuming a clearing member defaults on a specific historical day.
+- Results are reported to DNB/AFM and disclosed in CPMI-IOSCO PQD reports.
+
+**Anti-Procyclicality:**
+- The Stressed Historical Simulation (StressHS) margin add-on ensures that margin levels do not decline excessively during calm market periods, maintaining a buffer that reduces sudden spikes during stress.
+
+[Source: [Cboe Clear Europe Margin Model Description](https://cdn-clear.cboe.com/europe/resources/risk-management/Cboe-Clear-Europe-Margin-Model-Description-Securities.pdf); [ESMA Opinion on CCP Backtesting](https://www.esma.europa.eu/sites/default/files/2023-10/ESMA91-372-2811_ESMA_Opinion_on_CCP_backtesting.pdf)]
+
+### 3.6 Recovery & Resolution
+
+**Recovery Plan:**
+- Cboe Clear Europe maintains a recovery plan and a plan for orderly wind-down, as required under the EU CCP Recovery and Resolution Regulation (CCP R&R).
+- **Recovery tools include:**
+  - Calls for losses beyond the default waterfall (assessment powers on non-defaulting members)
+  - Calls for additional liquidity resources
+  - Calls for replenishment of the Clearing Fund
+  - Variation Margin Gains Haircutting (VMGH) as an ultimate tool
+  - Partial or full tear-up of contracts
+
+**Resolution:**
+- The resolution authority for Cboe Clear Europe is the Single Resolution Board (SRB) or DNB [unverified -- the specific resolution authority designation may depend on evolving EU CCP R&R framework implementation].
+- Resolution tools mirror those available under the EU CCP R&R Regulation, including write-down of equity, position transfer, bridge CCP, and orderly wind-down.
+
+[Source: [CPMI-IOSCO Disclosure Framework - EuroCCP Sept 2020](https://cdn-clear.cboe.com/europe/resources/public-disclosures/CPMI-IOSCO-disclosure-framework-EuroCCP-Sept-2020.pdf)]
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle
+
+| Market | Current Cycle | Notes |
+|--------|--------------|-------|
+| Most European Markets | T+2 | Standard settlement cycle under EU CSDR |
+| UK Markets | T+1 | UK moved to T+1 in October 2027 [unverified -- check for final UK T+1 date] |
+| EU T+1 Transition | T+1 (planned 11 October 2027) | EU co-legislators adopted T+1 transition, published in EU Official Journal on 14 October 2025 [Source: [BNP Paribas - T+1 in Europe](https://securities.cib.bnpparibas/t1-in-europe-whats-next-for-the-eu-the-uk-and-switzerland/)] |
+
+**T+1 Transition Phases (EU):**
+1. **Planning Phase (2025):** Finalization of technical solutions
+2. **Development Phase (2026):** Industry implementation
+3. **Testing Phase (2027):** Until transition date of 11 October 2027
+
+[Source: [BNP Paribas - T+1 in Europe](https://securities.cib.bnpparibas/t1-in-europe-whats-next-for-the-eu-the-uk-and-switzerland/)]
+
+### 4.2 DVP Model
+
+- Cboe Clear Europe uses Delivery-versus-Payment (DVP) settlement, ensuring that the transfer of securities occurs simultaneously with the transfer of cash, eliminating principal risk.
+- Settlement instructions are submitted by Cboe Clear Europe to the relevant CSD on behalf of clearing participants (via CSD Power of Attorney model).
+
+### 4.3 Settlement Finality
+
+- Settlement finality is governed by the EU Settlement Finality Directive (SFD), as implemented in Dutch law and the laws of each CSD's jurisdiction.
+- Once settlement instructions are entered into the relevant CSD settlement system and become irrevocable, they cannot be unwound, even in the event of insolvency of a participant.
+- Cboe Clear Europe is designated as a system under the SFD in the Netherlands.
+
+[Source: [Cboe Clear - Regulation Settlement](https://cdn-clear.cboe.com/europe/resources/clearing-rules/Regulation_Settlement_effective_12_June_2025.pdf)]
+
+### 4.4 CSD / Settlement Infrastructure
+
+- Cboe Clear Europe does not operate its own CSD. It relies on national CSDs for settlement of securities.
+- Settlement is performed through the domestic CSD of the relevant market, ensuring that securities remain in the home market's settlement infrastructure.
+- The CSD participant (clearing participant or its settlement agent) grants Cboe Clear Europe a CSD Power of Attorney (PoA) to submit settlement instructions on their behalf.
+
+### 4.5 CSD Linkages
+
+Cboe Clear Europe has established direct connectivity with **15+ national CSDs** (expanding to 19 CSDs for SFT clearing):
+
+| CSD | Country |
+|-----|---------|
+| Euroclear Belgium | Belgium |
+| Euroclear Finland | Finland |
+| Euroclear France | France |
+| Euroclear Nederland | Netherlands |
+| Euroclear Sweden | Sweden |
+| Euroclear UK & International (EUI) | United Kingdom / Ireland |
+| Clearstream Banking Frankfurt | Germany |
+| Monte Titoli | Italy |
+| Iberclear | Spain |
+| VP Securities | Denmark |
+| VPS (Euronext Securities Oslo) | Norway |
+| SIX SIS | Switzerland |
+| Interbolsa | Portugal |
+| KDPW | Poland |
+| OeKB CSD | Austria |
+
+> **Note:** The above list is illustrative. The exact number and composition of CSD connections evolves. Cboe Clear Europe states connectivity to 15 CSDs for cash equities and 19 CSDs for SFT clearing. [Source: [Cboe Clear - Markets](https://clear.cboe.com/europe/services/equities/markets)]
+
+### 4.6 Securities Lending & Borrowing
+
+**SFT Clearing Service (launched March 2025):**
+- Cboe Clear Europe introduced centrally cleared Securities Financing Transactions, a first for pan-European equity SFTs.
+- The service covers matching, CCP clearing, settlement, and post-trade lifecycle management for securities lending/borrowing in European cash equities and ETFs.
+- **Participant categories:** Principal lenders, Special Participant lenders (UCITS and non-UCITS), and borrowers.
+- **Special Participant model:** Beneficial owners (e.g., UCITS funds) can participate without paying margin or contributing to the default fund, with Required Value (RQV) models developed on a case-by-case basis [unverified -- specific terms may vary].
+- **Cross-product margining:** SFT positions can be margined together with cash equities and derivatives positions.
+- **Initial launch participants:** Nine firms including Bank of America and State Street.
+
+[Source: [Cboe Clear Europe SFT](https://clear.cboe.com/europe/resources/roadmap_initiatives/sft); [PR Newswire](https://www.prnewswire.com/news-releases/cboe-clear-europe-clears-first-securities-financing-transactions-302415378.html)]
+
+---
+
+## 5. Technology & Infrastructure
+
+### 5.1 Interface Protocols
+
+| Interface | Description |
+|-----------|-------------|
+| FIX Protocol | Cboe Clear Europe supports FIX (Financial Information eXchange) protocol connectivity for trade submission and reporting [Source: [Cboe Titanium Europe FIX Specification](https://cdn.cboe.com/resources/participant_resources/BATS_Europe_FIX_Specification.pdf)] |
+| Automated STP | Maximum straight-through processing (STP) with minimum manual intervention; automated trade capture from connected venues, netting, and settlement instruction generation |
+| CSD PoA Connectivity | Direct automated settlement instruction submission to 15+ CSDs |
+| Real-Time Risk Engine | COH/RTRM (Collateral Haircut / Real Time Risk Management) system with real-time price feeds from Refinitiv |
+
+### 5.2 Resilience
+
+- **Business Continuity:** Cboe Clear Europe maintains robust business continuity and disaster recovery arrangements, as required under EMIR.
+- **Technology reliability:** The platform is designed to minimize delays and downtime with reliable technology infrastructure.
+- **RTO / RPO:** Specific Recovery Time Objective (RTO) and Recovery Point Objective (RPO) figures are not publicly disclosed, but EMIR Article 34 requires that a CCP's systems provide a high degree of security, operational reliability, and adequate capacity, with recovery arrangements that enable timely completion of critical operations. [unverified -- specific RTO/RPO targets may be disclosed in regulatory filings]
+- **Cboe Group Infrastructure:** Following the Cboe acquisition, Cboe Clear Europe benefits from Cboe's global technology infrastructure and expertise.
+
+---
+
+## 6. Regulatory Framework
+
+### Supervision and Oversight
+
+| Authority | Role |
+|-----------|------|
+| **De Nederlandsche Bank (DNB)** | Primary prudential supervisor; responsible for authorization and ongoing supervision under EMIR |
+| **Autoriteit Financiele Markten (AFM)** | Conduct supervisor; market integrity and investor protection oversight |
+| **ESMA** | EU-level supervisory coordination; CCP stress tests; maintains register of authorized CCPs |
+| **College of Supervisors** | A supervisory college including relevant EU authorities oversees CCPs with cross-border significance |
+
+### Key Regulatory Framework
+
+| Regulation | Application |
+|------------|-------------|
+| **EMIR (Regulation 648/2012)** | Core EU regulation for CCP authorization, risk management, capital requirements, and governance |
+| **EMIR Refit / EMIR 3.0** | Enhanced requirements for CCP governance, active account requirements, and cross-border supervision |
+| **EU CCP Recovery & Resolution Regulation** | Framework for CCP recovery planning and resolution |
+| **CSDR (Central Securities Depositories Regulation)** | Settlement discipline framework, including mandatory buy-in rules and cash penalties [Source: [Cboe Clear CSDR Framework](https://cdn.cboe.com/euroccp/resources/Cboe_Clear_CSDR_Settlement_Discipline_Framework_V1.4.pdf)] |
+| **Settlement Finality Directive (SFD)** | Designated system under Dutch implementation of SFD |
+
+### QCCP Status
+
+Cboe Clear Europe is authorized under EMIR and therefore qualifies as a Qualifying CCP (QCCP) for purposes of EU bank capital requirements (CRR), enabling clearing members to benefit from lower capital charges for exposures to the CCP. [unverified -- specific QCCP recognitions in non-EU jurisdictions should be verified]
+
+---
+
+## 7. Interoperability
+
+### Overview
+
+CCP interoperability is a defining feature of Cboe Clear Europe and a core element of its competitive strategy. Under interoperability, trading firms -- rather than the trading venue -- choose which CCP clears their transactions. This "user choice" model promotes competition, lowers post-trade costs, and allows participants to consolidate clearing at a single CCP across multiple venues.
+
+### Interoperable CCP Partners
+
+| Co-CCP | Scope | Markets |
+|--------|-------|---------|
+| **LCH Ltd (EquityClear)** | Full interoperability | Cboe Europe (CXE/BXE), Aquis Exchange, Turquoise, SIX Swiss Exchange, and others |
+| **SIX x-clear AG** | Full interoperability | Cboe Europe, SIX Swiss Exchange, Aquis Exchange, and others |
+
+### How Interoperability Works
+
+1. A trade is executed on an interoperable venue (e.g., Cboe Europe).
+2. The buyer and seller may each choose a different CCP (e.g., buyer chooses Cboe Clear Europe, seller chooses LCH Ltd).
+3. Each CCP novates the leg facing its own clearing participant.
+4. The two CCPs face each other for the inter-CCP leg, managing the resulting exposure through the Interoperability Fund and margin arrangements between the Co-CCPs.
+5. Settlement occurs through the normal CSD channels.
+
+### Preferred Clearing
+
+In addition to full interoperability, Cboe Clear Europe offers a **Preferred Clearing** model for certain venues where full interoperability is not available (e.g., Euronext Amsterdam, Brussels, Dublin, Lisbon, Milan, Paris). Under Preferred Clearing, Cboe Clear Europe acts as an alternative CCP to the venue's primary CCP.
+
+- **Euronext Oslo:** Cleared via the full interoperable model.
+- **Euronext (other markets):** Via Preferred Clearing arrangement.
+
+[Source: [Cboe - Preferred Clearing](https://clear.cboe.com/europe/services/equities/preferred_clearing); [Cboe - Interoperability](https://www.cboe.com/europe/equities/clearing/products/)]
+
+### Regulatory Framework for Interoperability
+
+- EMIR Title V establishes the regulatory framework for CCP interoperability arrangements.
+- Interoperable links require regulatory approval and must meet specific risk management standards.
+- The European Systemic Risk Board (ESRB) published a report in January 2019 examining the risks and benefits of CCP interoperability arrangements in Europe. [Source: [ESRB Report on CCP Interoperability](https://www.esrb.europa.eu/pub/pdf/reports/esrb.report190131_CCP_interoperability_arrangements~99908a78e7.en.pdf)]
+
+### Cboe's Advocacy for Interoperability
+
+Cboe has been a vocal advocate for clearing competition and interoperability in Europe, arguing that Europe benefits from multiple competing CCPs rather than a single monopoly CCP. Cboe contends that interoperability has substantially lowered post-trade costs in European cash equity markets. [Source: [Cboe Insights - Europe Needs Clearing Competition](https://www.cboe.com/insights/posts/europe-needs-clearing-competition-not-a-single-ccp/)]
+
+---
+
+## 8. Fees
+
+### Fee Structure
+
+| Fee Type | Details |
+|----------|---------|
+| Clearing Fee (Cash Equities) | Per-transaction clearing fee charged to clearing participants; all fees denominated in EUR |
+| NAV-based Fee | 0.04 bps on the notional of trade legs with NAV price, capped at trades with notional greater than EUR 10 million |
+| Participant Fee | Annual fee for clearing participants (waived in 2024; new structure from 2025) |
+| Preferred Clearing Discount | Cboe Clear Europe states that Preferred Clearing fees are over 75% less than the primary CCP's average fees across all members [Source: [Cboe - Preferred Clearing](https://clear.cboe.com/europe/services/equities/preferred_clearing)] |
+
+> **Note:** Specific per-transaction clearing fees are not publicly disclosed in detail through web searches. The full fee schedule is documented in the "Regulation Fees and Penalties" document. [Source: [Cboe Clear Regulation Fees and Penalties](https://cdn-clear.cboe.com/europe/resources/clearing-rules/Cboe_Clear_Regulation_Fees_and_Penalties.pdf)]
+
+### Competitive Positioning
+
+Cboe Clear Europe has consistently positioned itself as a lower-cost alternative to incumbent CCPs, leveraging:
+- Economies of scale from pan-European coverage (52 venues)
+- Netting efficiencies that reduce settlement costs
+- Interoperability that allows participants to consolidate at a single CCP
+- Under Cboe ownership, venue coverage expanded from 37 to 52 venues, providing access to approximately 95% of all European equity trades
+
+---
+
+## 9. Recent Developments
+
+### 2024-2026 Highlights
+
+| Date | Development |
+|------|-------------|
+| 2024 | Cleared 1.2 billion client trades in cash equities (+5% YoY) and a record 210,000 lots in derivatives |
+| 2024 (Nov) | Received DNB/AFM approval for SFT clearing |
+| 2025 (Mar) | Commenced clearing of European SFTs with nine launch participants |
+| 2025 (Q4) | Cash equities market share reached 39.6% (up from 38.5% YoY) |
+| 2025-2027 | Preparing for EU T+1 settlement transition (11 October 2027) |
+
+### Strategic Priorities
+
+1. **SFT Clearing Expansion:** Expanding the SFT clearing service to additional markets and participants; Cboe Clear Europe aims to become the leading multi-asset class clearing house in Europe. [Source: [Markets Media](https://www.marketsmedia.com/cboe-clear-europe-aims-to-expand-sft-clearing/)]
+2. **Derivatives Growth:** Continued growth of CEDX equity derivatives clearing.
+3. **T+1 Preparation:** Preparing systems and processes for the EU-wide transition to T+1 settlement, scheduled for 11 October 2027.
+4. **Venue Expansion:** Continuing to add connected trading venues and market segments.
+5. **Cross-product Margining:** Enhancing cross-product margining capabilities across cash equities, derivatives, and SFTs.
+
+---
+
+## Sources
+
+### Official Sources
+- [Cboe Clear Europe - Official Website](https://clear.cboe.com/europe)
+- [Cboe Clear Europe - Public Disclosures (PQD, PFMI Self-Assessment)](https://clear.cboe.com/europe/resources/documentation/public_disclosures)
+- [Cboe Clear Europe Annual Report 2024](https://cdn-clear.cboe.com/europe/resources/annual-report/Cboe-Clear-Europe-Annual-Report-2024.pdf)
+- [Cboe Clear Europe Margin Model Description - Securities](https://cdn-clear.cboe.com/europe/resources/risk-management/Cboe-Clear-Europe-Margin-Model-Description-Securities.pdf)
+- [CPMI-IOSCO Disclosure Framework - EuroCCP (Sept 2020)](https://cdn-clear.cboe.com/europe/resources/public-disclosures/CPMI-IOSCO-disclosure-framework-EuroCCP-Sept-2020.pdf)
+- [Cboe Clear Europe Clearing Rule Book](https://cdn.cboe.com/euroccp/resources/Cboe-Clear-Clearing-Rule-Book.pdf)
+- [Cboe Clear Regulation Fees and Penalties](https://cdn-clear.cboe.com/europe/resources/clearing-rules/Cboe_Clear_Regulation_Fees_and_Penalties.pdf)
+- [Cboe Clear Regulation Settlement](https://cdn-clear.cboe.com/europe/resources/clearing-rules/Regulation_Settlement_effective_12_June_2025.pdf)
+- [Cboe Clear CSDR Settlement Discipline Framework](https://cdn.cboe.com/euroccp/resources/Cboe_Clear_CSDR_Settlement_Discipline_Framework_V1.4.pdf)
+
+### Cboe Corporate & Press Releases
+- [Cboe Insights - Our Origins: Delivering Efficiencies with EuroCCP](https://www.cboe.com/insights/posts/our-origins-delivering-efficiencies-with-euro-ccp/)
+- [Cboe Insights - Dedicated Own Resources July 2021](https://www.cboe.com/insights/posts/dedicated-own-euro-ccp-resources-july-2021/)
+- [Cboe Insights - Europe Needs Clearing Competition](https://www.cboe.com/insights/posts/europe-needs-clearing-competition-not-a-single-ccp/)
+- [Cboe Insights - 2024 Recap and Look Ahead](https://www.cboe.com/insights/posts/cboe-clear-europe-2024-recap-and-look-ahead/)
+- [EuroCCP Rebranded to Cboe Clear Europe (PR Newswire)](https://www.prnewswire.com/news-releases/euroccp-rebranded-to-cboe-clear-europe-301676681.html)
+- [Cboe Clear Europe SFT Launch (PR Newswire)](https://www.prnewswire.com/news-releases/cboe-clear-europe-clears-first-securities-financing-transactions-302415378.html)
+- [Cboe Clear Europe SFT Regulatory Approval (Cboe IR)](https://ir.cboe.com/news/news-details/2024/Cboe-Clear-Europe-Secures-Regulatory-Approval-to-Launch-Securities-Financing-Transactions-Clearing/default.aspx)
+
+### Regulatory & Industry Sources
+- [ESMA - List of CCPs Authorised Under EMIR](https://www.esma.europa.eu/sites/default/files/library/ccps_authorised_under_emir.pdf)
+- [ESMA 5th EU-wide CCP Stress Test Report (2024)](https://www.esma.europa.eu/sites/default/files/2024-07/ESMA91-1505572268-3627_5th_ESMA_CCP_Stress_Test_Report.pdf)
+- [ESRB Report on CCP Interoperability Arrangements (Jan 2019)](https://www.esrb.europa.eu/pub/pdf/reports/esrb.report190131_CCP_interoperability_arrangements~99908a78e7.en.pdf)
+- [ECB Occasional Paper - CCP Initial Margin Models in Europe](https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op314~afc6d2980c.en.pdf)
+- [BNP Paribas - T+1 in Europe](https://securities.cib.bnpparibas/t1-in-europe-whats-next-for-the-eu-the-uk-and-switzerland/)
+
+### Reference
+- [MarketsWiki - Cboe Clear Europe](https://www.marketswiki.com/wiki/Cboe_Clear_Europe)
+- [Markets Media - Cboe Agrees to Acquire EuroCCP](https://www.marketsmedia.com/cboe-global-markets-agrees-to-acquire-euroccp/)
+- [Markets Media - Cboe Clear Europe Aims to Expand SFT Clearing](https://www.marketsmedia.com/cboe-clear-europe-aims-to-expand-sft-clearing/)

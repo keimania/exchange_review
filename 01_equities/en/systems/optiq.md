@@ -1,0 +1,434 @@
+# Optiq -- Euronext
+
+> **Last Updated:** 2026-04-06
+> **System Category:** Trading System
+
+---
+
+## 1. System Overview
+
+| Item | Details |
+|------|---------|
+| System Name | Optiq |
+| Operated By | Euronext N.V. |
+| Purpose | Unified multi-market, multi-asset trading platform serving all Euronext regulated markets across seven European countries |
+| Launch Year | 2016--2019 phased rollout (MDG July 2017, Cash OEG/ME March 2018, Derivatives December 2019); subsequent expansion to Oslo (2020) and Borsa Italiana (2023--2024) |
+| Current Version | Continuously updated; latest public OEG SBE specification v5.38.0, MDG specification v6.36.320 |
+| Vendor / In-house | In-house (developed by Euronext's internal technology teams) |
+
+Optiq is Euronext's proprietary, next-generation trading platform that provides a Single Order Book across all seven Euronext regulated markets. It replaced the legacy Universal Trading Platform (UTP) for cash markets and LIFFE CONNECT / SOLA for derivatives, as well as Millennium Exchange for Borsa Italiana following Euronext's 2021 acquisition. The platform is described officially as delivering "ultra-low latency, predictability, high availability, and high scalability," with a harmonized cash and derivatives messaging model.
+
+Euronext has also positioned Optiq as a licensable technology product for other exchange and venue operators.
+
+[Source: Euronext, "Optiq: technology solutions for exchanges and venue operators", https://www.euronext.com/en/technology/optiq-tech-solutions-for-exchanges-and-venue-operators, accessed 2026-04-06]
+[Source: Euronext, "Euronext introduces Optiq, the new technology platform powering cash markets", July 2018, https://www.euronext.com/en/about/media/euronext-press-releases/euronext-introduces-optiq-new-technology-platform-powering-cash, accessed 2026-04-06]
+
+### System Evolution
+
+| Period | System Name | Key Changes |
+|--------|-------------|-------------|
+| 2000--2003 | NSC (Nouveau Systeme de Cotation) | Original Paris Bourse trading system; adopted across merged Euronext markets (Amsterdam, Brussels, Lisbon) |
+| 2003--2017 | UTP (Universal Trading Platform) | Harmonized cash trading across all Euronext markets; based on NSC architecture; integrated following NYSE-Euronext merger |
+| 2004--2019 | LIFFE CONNECT / SOLA | Derivatives trading platform inherited from LIFFE; used across Euronext derivatives markets |
+| 2010--2023 | Millennium Exchange (Borsa Italiana) | London Stock Exchange Group's Millennium IT platform; used by Borsa Italiana until migration to Optiq |
+| 2017--2019 | Optiq Phase 1--3 (core Euronext) | Phased replacement of UTP and LIFFE CONNECT across Paris, Amsterdam, Brussels, Lisbon, Dublin |
+| 2020 | Optiq Oslo migration | Oslo Bors migrated from Millennium/SOLA to Optiq following Euronext's June 2019 acquisition |
+| 2022 | Data center migration | Primary infrastructure migrated from Basildon (UK) to Bergamo (Italy) on 6 June 2022 |
+| 2023--2024 | Optiq Borsa Italiana migration | Three-phase migration of Borsa Italiana from Millennium Exchange to Optiq (equities March 2023, bonds/ETFs September 2023, derivatives Q1 2024) |
+
+#### Optiq Migration Timeline (Detailed)
+
+| Date | Milestone |
+|------|-----------|
+| June 2016 | Optiq program formally announced; first newsletter published |
+| 19 June 2017 | Cash MDG pre-production begins (Phase 1) |
+| July 2017 | Cash Market Data Gateway (MDG) goes live in production |
+| August 2017 | Derivatives MDG goes live; Phase 2 (Cash OEG/ME) test platform opens |
+| April 2018 | Fixed income instruments migrated to Optiq |
+| 12 March 2018 | Cash Order Entry Gateway (OEG) and Matching Engine (ME) go live in production (Phase 2) |
+| January 2019 | Derivatives OEG and ME migration begins (Phase 3) |
+| 9 December 2019 | Derivatives markets complete migration to Optiq; UTP and LIFFE CONNECT fully decommissioned |
+| 30 November 2020 | Oslo Bors equities migrate to Optiq |
+| 7 December 2020 | Oslo Bors derivatives and fixed income migrate to Optiq |
+| 6 June 2022 | Core data center migrates from Basildon (UK) to Bergamo (Italy) |
+| 27 March 2023 | Borsa Italiana equities and ETFs migrate to Optiq (Phase 1) |
+| September 2023 | Borsa Italiana bonds, securitised derivatives, and other instruments migrate (Phase 2; 32,500+ instruments) |
+| Q1 2024 | Borsa Italiana derivatives complete migration to Optiq (Phase 3 -- final) |
+
+[Source: Euronext, "Successful roll-out of Euronext Derivatives markets to Optiq trading platform", December 2019, https://www.euronext.com/en/about/media/euronext-press-releases/successful-roll-out-euronext-derivatives-markets-optiq-trading, accessed 2026-04-06]
+[Source: Euronext, "Successful migration of Borsa Italiana equity and ETF markets to the Optiq trading platform", March 2023, https://www.euronext.com/en/about/media/euronext-press-releases/successful-migration-borsa-italiana-equity-and-etf-markets, accessed 2026-04-06]
+[Source: Euronext, "Successful completion of the migration of Borsa Italiana to the Optiq trading platform", 2024, https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-borsa-italiana-optiqr-trading, accessed 2026-04-06]
+[Source: Mondovisione, "Oslo Optiq Migration -- High-Level Timeline and Scope", https://mondovisione.com/news/oslo-optiq-migration-high-level-timeline-and-scope/, accessed 2026-04-06]
+[Source: Euronext, "Optiq Newsletter #1", July 2016, https://www.euronext.com/sites/default/files/nl201607_euronext_optiq_newsletter_1_july_2016.pdf, accessed 2026-04-06]
+
+---
+
+## 2. Architecture
+
+### 2.1 High-Level Design
+
+- **Deployment model:** On-premise, dedicated data center infrastructure (Aruba campus, Bergamo, Italy)
+- **Topology:** Single centralized platform serving all Euronext markets; modular component design
+- **Design pattern:** Event-driven; Apache Kafka (Confluent Platform) used as persistence layer; deterministic matching pipeline
+- **Multi-venue:** Single platform, Single Order Book architecture across 7 countries and 7 regulated markets (Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, Paris)
+- **Multi-asset:** Cash equities, ETFs, bonds, derivatives (futures and options), warrants, securitised derivatives, commodities, FX products
+- **Multi-currency:** EUR, GBP, NOK, USD, CHF, and others traded across venues
+
+The Optiq architecture uses a segmented design where each **Optiq Segment** defines a universe of instruments sharing common trading properties (e.g., "Euronext Cash Amsterdam," "Euronext Derivatives Paris"). Each segment is subdivided into **Partitions** -- technically independent processing units connected within the segment context. This partition-based architecture enables horizontal scalability and isolation.
+
+The platform's unique architecture minimizes jitter to enable clients to fine-tune their algorithms against stable and predictable latencies.
+
+[Source: Euronext, "Optiq: technology solutions for exchanges and venue operators", https://www.euronext.com/en/technology/optiq-tech-solutions-for-exchanges-and-venue-operators, accessed 2026-04-06]
+[Source: Confluent, "Euronext builds high-speed trading platform", https://www.confluent.io/customers/euronext/, accessed 2026-04-06]
+
+### 2.2 Core Components
+
+| Component | Function | Technology |
+|-----------|----------|------------|
+| Matching Engine (ME) | Deterministic order matching for all asset classes across all Euronext markets; supports continuous trading, auctions (opening, closing, intraday, volatility interruption), and call phases | Custom-built in-house engine; partitioned per segment; binary message processing |
+| Order Entry Gateway (OEG) | Private interface between clients and the matching engine; manages authentication, session lifecycle, throttling, and order routing to partitions | TCP/IP connectivity; supports both SBE (binary) and FIX 5.0 protocols; per-partition physical connections |
+| Market Data Gateway (MDG) | Real-time and snapshot market data dissemination; publishes full order book, BBO, and trade data | UDP/IP multicast with SBE encoding; dual redundant feeds (Feed A / Feed B); LZ4 compression for low-bandwidth connections |
+| Drop Copy Gateway | Post-trade message dissemination; provides execution reports and trade confirmations to back-office systems | Dedicated logical accesses separate from trading OEG; SBE and FIX protocols |
+| Risk Engine | Pre-trade risk controls; order throttling mechanism; kill switch functionality | Integrated into OEG layer; per-session throttle rates; configurable rejection/queuing behavior |
+| Surveillance | Market surveillance for regulatory compliance (MAR, MiFID II); real-time and post-trade monitoring | Separate surveillance infrastructure [details not publicly disclosed] |
+| Persistence Layer | Event sourcing and message persistence for the trading platform | Apache Kafka (Confluent Platform); designed for up to 1 million messages/second ingestion |
+
+### 2.3 Technology Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Programming Language | C++ (confirmed via Confluent case study referencing C++ API integration with Kafka); additional languages likely used for ancillary systems [unverified] |
+| Operating System | Linux (confirmed; RedHat/CentOS-based environments referenced in SDK documentation) |
+| Hardware | Commodity server hardware; no confirmed use of FPGA acceleration [unverified] |
+| Network | Dedicated Euronext network infrastructure; 10 Gbps and 100 Mbps (shaped) connectivity options for market data; TCP/IP for order entry; UDP/IP multicast for market data |
+| Database | Not publicly disclosed; Apache Kafka serves as the persistence/event sourcing layer |
+| Messaging/Middleware | Apache Kafka (Confluent Platform) for persistence layer; SBE (Simple Binary Encoding) for wire protocol; UDP multicast for market data distribution; LZ4 compression available |
+| Encoding | SBE (Simple Binary Encoding) -- FIX Protocol Limited open standard; fixed-position, fixed-length fields for direct data access without sequential processing |
+
+[Source: Confluent, "Euronext builds high-speed trading platform", https://www.confluent.io/customers/euronext/, accessed 2026-04-06]
+[Source: Confluent, "Building an Event-Driven Stock Platform at Euronext", https://www.confluent.io/blog/euronext-apache-kafka-use-case-with-confluent-platform/, accessed 2026-04-06]
+[Source: OnixS, "Euronext Optiq Market Data Gateway (MDG) Market Data Handler SDK", https://www.onixs.biz/euronext-optiq-market-data-gateway-feed-handler.html, accessed 2026-04-06]
+
+---
+
+## 3. Performance Specifications
+
+| Metric | Value | Conditions |
+|--------|-------|------------|
+| Average Order Round-trip Latency | ~15 microseconds | Euronext official claim; order acknowledgment round-trip; measured at gateway level [verify: this may represent best-case/median rather than average across all conditions] |
+| Average Market Data Latency | ~15 microseconds | Euronext official claim; market data dissemination latency |
+| Capacity vs. Predecessor | 10x increase | Compared to UTP; Euronext official claim |
+| Peak Ingestion Rate (persistence layer) | Up to 1 million messages/second | Kafka-based persistence layer benchmark; Confluent case study |
+| Session Throttle Rate | ~100 messages/second per session (default example) | Per OEG connectivity spec example for 1-session, 1-partition logical access; actual rates configurable per client [unverified whether higher rates are standard] |
+| Daily Message Volume (early production) | 14+ billion messages processed | Reported after initial cash market go-live (mid-2018); includes orders, modifications, cancellations, and market data |
+| Daily Trades (early production) | 18.8 million trades | Reported after initial cash market go-live (mid-2018) |
+| Uptime SLA | Not publicly disclosed | Euronext is subject to MiFID II operational resilience requirements; annual DR testing conducted [specific SLA percentage not published] |
+
+**Notes:**
+- The ~15 microsecond figure is Euronext's official marketing claim for average latency. Percentile breakdowns (P50, P99, P99.9) are not published in the same manner as some other exchanges (e.g., NYSE publishes detailed venue-by-venue percentile data). Actual production latency under load is likely higher at tail percentiles.
+- The 10x capacity improvement over UTP is a headline figure from the 2018 launch announcement.
+- Euronext's jitter-minimizing architecture is emphasized as a key differentiator, suggesting consistent latency is prioritized alongside raw speed.
+
+### Performance History
+
+| Year | Latency | Throughput | Notes |
+|------|---------|------------|-------|
+| Pre-2017 (UTP) | Not publicly benchmarked in microseconds [unverified] | Lower than Optiq by ~10x | Legacy Universal Trading Platform |
+| 2017 (MDG launch) | ~15 microseconds (market data) | 10x improvement over predecessor | Phase 1: Market Data Gateway |
+| 2018 (Cash OEG/ME) | ~15 microseconds (order round-trip) | 14 billion+ messages processed post-launch | Phase 2: Cash trading fully operational |
+| 2019 (Derivatives) | Same platform performance | Full cash + derivatives on single platform | Phase 3 complete |
+| 2022 | Same platform performance [unverified] | -- | Data center migrated from Basildon to Bergamo; latency characteristics may have shifted for some participants |
+
+[Source: Euronext, "Euronext introduces Optiq, the new technology platform powering cash markets", July 2018, https://www.euronext.com/en/about/media/euronext-press-releases/euronext-introduces-optiq-new-technology-platform-powering-cash, accessed 2026-04-06]
+[Source: Confluent, "Euronext builds high-speed trading platform", https://www.confluent.io/customers/euronext/, accessed 2026-04-06]
+[Source: Euronext, "Optiq: technology solutions for exchanges and venue operators", https://www.euronext.com/en/technology/optiq-tech-solutions-for-exchanges-and-venue-operators, accessed 2026-04-06]
+
+---
+
+## 4. Interfaces & Protocols
+
+### 4.1 Order Entry
+
+| Protocol | Version | Description |
+|----------|---------|-------------|
+| OEG SBE (Simple Binary Encoding) | v5.38.0 (latest published) | Lowest-latency order entry; fixed-position, fixed-length binary messages based on FIX Protocol Limited's SBE standard; optimized for low-bandwidth utilization and minimal encoding/decoding overhead; supports all Euronext cash and derivatives markets |
+| OEG FIX 5.0 | v4.12.0 (latest published) | Standard FIX 5.0 protocol with Euronext-specific extensions; broader compatibility with existing client systems; slightly higher latency than SBE |
+
+**Session Architecture:**
+- Clients connect via TCP/IP to the Order Entry Gateway (OEG)
+- A **Logical Access** is an OEG entry point configured for a single Optiq Segment, containing the client's connectivity configuration
+- Each Logical Access may have as many **OE Sessions** (physical connections) as there are Partitions in the Optiq Segment
+- Logon message must be sent individually to each partition
+- Separate Logical Accesses required for trading OEG and Drop Copy gateway
+- Session lifecycle: Logon -> Active Trading -> Logout; heartbeat mechanism for connection monitoring
+
+**Throttling Mechanism:**
+- Per-session message rate limits enforced at the OEG level
+- Configurable burst size (maximum messages that can be sent consecutively before throttling activates)
+- When throttle limit breached: messages either rejected or queued (configurable)
+- Rejection returns TechnicalReject (SBE message 108) or Reject (FIX message 3)
+- Exchange also monitors for excessive breaching and may take additional action
+
+[Source: Euronext, "Optiq OEG SBE Messages -- Interface Specification v5.38.0", https://connect.euronext.com/sites/default/files/it-documentation/Optiq%20OEG%20SBE%20Messages%20-%20Interface%20Specification%20-%20Euronext%20Cash%20and%20Derivatives%20Markets%20-%20External%20-%20v5.38.0.pdf, accessed 2026-04-06]
+[Source: Euronext, "Optiq OEG Client Specifications -- FIX 5.0 Interface v4.12.0", https://connect2.euronext.com/sites/default/files/it-documentation/Euronext%20Markets%20-%20Optiq%20OEG%20Client%20Specifications%20-%20FIX%205.0%20Interface%20-%20v4.12.0.pdf, accessed 2026-04-06]
+[Source: Euronext, "Optiq OEG Throttling Mechanism v2.2", https://connect2.euronext.com/sites/default/files/it-documentation/euronext_cash_markets_-_oeg_throttling_mechanism_-_v2.2.pdf, accessed 2026-04-06]
+
+### 4.2 Market Data Dissemination
+
+| Feed | Protocol | Description | Data Content |
+|------|----------|-------------|-------------|
+| MDG Real-time (Full) | UDP/IP multicast, SBE encoding | Full order book depth, real-time | All price levels, order counts, trade reports, auction data; unshaped 10 Gbps or shaped 1 Gbps |
+| MDG Real-time (Compressed) | UDP/IP multicast, SBE + LZ4 compression | Compressed real-time feed for lower-bandwidth connections | Same content as full feed; shaped to 100 Mbps; body compressed with LZ4 (block mode, no headers) |
+| MDG Snapshot | UDP/IP multicast, SBE + LZ4 compression | Periodic snapshots for recovery and initialization | Full instrument state at point-in-time; always LZ4 compressed |
+| MDG Lite | UDP/IP multicast, SBE encoding | Simplified market data feed | Reduced data set for clients not requiring full depth [unverified -- details limited] |
+
+**Market Data Architecture:**
+- Dual redundant multicast feeds: **Feed A** and **Feed B** published independently; clients should subscribe to both and arbitrate
+- Channels disaggregated by: asset class, currency, and country
+- Separate dedicated channels for pre-trade and post-trade data
+- Channel identification scheme: first digit = feed type (1 = real-time, 2 = snapshot); last three digits = multicast group IP suffix
+- SBE format: fixed-position, fixed-length fields supporting direct access to data; avoids sequential processing of variable-length elements
+- 10 Gbps line clients can subscribe to all available channels including Full Order Book
+
+[Source: Euronext, "Optiq MDG Client Specifications v4.1.0", https://connect2.euronext.com/sites/default/files/it-documentation/Euronext%20Markets%20-%20Optiq%20MDG%20Client%20Specifications%20v4.1.0.pdf, accessed 2026-04-06]
+[Source: Euronext, "Optiq MDG Messages -- Interface Specification v6.36.320", https://connect.euronext.com/sites/default/files/it-documentation/optiq-mdg-messages-interface-specification-euronext-cash-and-derivatives-markets-external-v636320.pdf, accessed 2026-04-06]
+
+### 4.3 Drop Copy / Trade Reporting
+
+- Dedicated **Drop Copy Service** via separate OEG logical accesses
+- Provides execution reports, trade confirmations, and fill notifications to back-office systems
+- Available in both SBE and FIX 5.0 protocols
+- Drop Copy is not a trading segment; uses a different partition approach than the trading OEG
+- Separate connectivity configuration required (distinct IP addresses from trading gateway)
+- MiFID II trade reporting obligations supported through Euronext's approved publication arrangement (APA) and approved reporting mechanism (ARM) services
+
+[Source: Euronext, "Optiq Drop Copy Service -- Interface Specification v5.351.0", https://connect.euronext.com/sites/default/files/it-documentation/Optiq%20Drop%20Copy%20Service%20-%20Interface%20Specification%20-%20Euronext%20Cash%20and%20Derivatives%20Markets%20-%20External%20-%20v5.351.0.pdf, accessed 2026-04-06]
+
+### 4.4 Reference Data
+
+- **Optiq MDG Reference Data** provides instrument-level reference information
+- Published via MDG channels at start of trading day and available as downloadable files
+- Includes trading parameters, tick size tables, lot sizes, trading hours, instrument identifiers (ISIN, MIC, Symbol Index)
+- Reference data available for all Euronext-listed instruments across all markets
+- Standing Data files published on Euronext's website and via Connect portal
+
+[Source: Euronext, "Optiq MDG Reference Data", https://www.euronext.com/en/products-services/optiq-mdg-reference-data, accessed 2026-04-06]
+
+---
+
+## 5. Resilience & Business Continuity
+
+### 5.1 Redundancy
+
+- **Market data redundancy:** Dual independent multicast feeds (Feed A and Feed B) per channel; clients expected to subscribe to both and perform arbitration
+- **Gateway redundancy:** Multiple OEG partitions per segment; clients can distribute order flow across partitions
+- **Network redundancy:** Multiple connectivity paths to the primary data center; colocation available within the Aruba campus
+- **Platform redundancy:** Modular, partitioned architecture isolates failures within individual segments/partitions
+
+### 5.2 Disaster Recovery
+
+| Aspect | Details |
+|--------|---------|
+| Primary Site | DC1 -- Aruba Global Cloud Data Centre (IT3), Ponte San Pietro, Bergamo, Italy (within Aruba S.p.A. campus) |
+| DR Site | DC2 -- Paris region (exact location not publicly confirmed; referred to as the "Disaster Recovery Data Centre") |
+| Configuration | Active/Passive -- DR site is a separate physical data center maintained in standby |
+| Failover Type | Managed failover; upon DR activation, trading resumes from the secondary site |
+| IP Addressing | DR site uses different IP addresses (IPAddressDR field in OEG connectivity specs); clients must maintain separate DR connectivity configurations |
+| DR Testing | Conducted at least annually on a dedicated Saturday; external participants involved; reconciliation reports automatically generated after failover to identify gaps |
+| Regulatory Requirement | MiFID II Article 48 and RTS 7 require regulated markets to maintain business continuity arrangements including near-instantaneous switch-over capability |
+
+**Previous Primary Site:**
+- Before June 2022, Euronext's primary data center was located in **Basildon, Essex, United Kingdom** (inherited from the NYSE Euronext era)
+- The 14-month migration to Bergamo was completed on 6 June 2022, part of Euronext's strategic repatriation of infrastructure to continental Europe following Brexit and the Borsa Italiana acquisition
+
+[Source: Euronext, "Euronext Data Centre", https://www.euronext.com/en/technology/euronext-data-centre, accessed 2026-04-06]
+[Source: Euronext, "Successful completion of the migration of Euronext's Core Data Centre", June 2022, https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-euronexts-core-data-centre, accessed 2026-04-06]
+[Source: Euronext, "Disaster Recovery Test 25 October 2025: Guidelines for Participants", https://connect.euronext.com/sites/default/files/it-documentation/euronext-disaster-recovery-test-25-october-2025-guidelines-participants.pdf, accessed 2026-04-06]
+[Source: The TRADE, "Inside Europe's new fortress: Euronext's continental data centre and trading floor", https://www.thetradenews.com/inside-europes-new-fortress-euronexts-continental-data-centre-and-trading-floor/, accessed 2026-04-06]
+
+### 5.3 Primary Data Center: Bergamo (Aruba IT3 Campus)
+
+| Specification | Details |
+|---------------|---------|
+| Location | Ponte San Pietro, Bergamo, Italy (Aruba S.p.A. Global Cloud Data Centre campus) |
+| Campus Size | ~20 hectares; capacity for up to 5 data center buildings; 200,000 sqm total potential |
+| Current Building | ~17,600 sqm with 8,000 sqm colocation space across 10 data rooms |
+| Total Power Capacity | 12 MW (initial building); campus scalable to 60 MW |
+| Additional Buildings | DC-B (9 MW, 4,950 sqm) and DC-C (8 MW, 5,950 sqm) available on campus |
+| Certification | Rating 4 (Tier IV equivalent); maximum safety and resilience |
+| Power Source | 100% renewable energy -- hydroelectric (River Brembo dedicated plant), photovoltaic (10,258 sqm solar panels), geothermal and dynamic free cooling |
+| Connectivity | Colocation services available for Euronext members; cross-connects to matching infrastructure |
+| Migration Date | 6 June 2022 (from Basildon, UK) |
+
+[Source: Euronext, "New, Green Data Centre: A Glimpse into the Future", https://www.euronext.com/en/news/new-green-data-centre-bergamo, accessed 2026-04-06]
+[Source: DataCenterMap, "Aruba Global Cloud IT3, Bergamo", https://www.datacentermap.com/italy/bergamo/global-cdc-it3/, accessed 2026-04-06]
+
+### 5.4 Capacity Management
+
+- Partitioned architecture allows horizontal scaling by adding partitions within segments
+- Throttling mechanism prevents individual clients from overloading partitions
+- Market data distributed across multiple disaggregated multicast channels to manage bandwidth
+- 10x capacity improvement over predecessor UTP platform
+- Kafka persistence layer benchmarked for 1 million messages/second sustained ingestion
+- Scalable infrastructure described by Euronext as able to "accommodate unlimited capacity"
+
+---
+
+## 6. Notable Technical Features
+
+### 6.1 Single Platform Across Seven Countries
+
+Optiq is one of the most geographically distributed single-platform exchange systems in the world, serving seven distinct national markets from a single data center:
+
+| Market | Country | Asset Classes | Key Indices |
+|--------|---------|---------------|-------------|
+| Euronext Amsterdam | Netherlands | Equities, ETFs, bonds, derivatives | AEX 25 |
+| Euronext Brussels | Belgium | Equities, ETFs, bonds, derivatives | BEL 20 |
+| Euronext Dublin | Ireland | Equities, ETFs, bonds | ISEQ 20 |
+| Euronext Lisbon | Portugal | Equities, ETFs, bonds, derivatives | PSI 20 |
+| Euronext Milan (Borsa Italiana) | Italy | Equities, ETFs, bonds, derivatives | FTSE MIB |
+| Euronext Oslo (Oslo Bors) | Norway | Equities, ETFs, bonds, derivatives, seafood/freight | OBX 25 |
+| Euronext Paris | France | Equities, ETFs, bonds, derivatives | CAC 40 |
+
+### 6.2 Migration of Borsa Italiana from Millennium Exchange
+
+One of the most significant technology migrations in recent European exchange history:
+- Borsa Italiana was acquired by Euronext from LSEG in April 2021
+- Full migration from Millennium Exchange to Optiq completed in three phases over 12 months (March 2023 -- Q1 2024)
+- Over 32,500 instruments migrated in Phase 2 alone
+- Required coordination between Euronext technology teams, Italian market participants, and ISVs (e.g., ION/LIST's FastTrade)
+- Represented Optiq's ability to absorb a major new market onto the existing platform
+
+[Source: Euronext, "Behind the scenes: migrating Borsa Italiana Equities and ETFs to Optiq", https://www.euronext.com/en/news/behind-scenes-migrating-borsa-italiana-equities-and-etfs-optiqr, accessed 2026-04-06]
+[Source: Finance Magnates, "Italian Investors Unlock Trading with Optiq Migration", https://www.financemagnates.com/institutional-forex/italian-investors-gain-access-to-new-trading-capabilities-with-optiq-platform-migration/, accessed 2026-04-06]
+
+### 6.3 Harmonized Cash and Derivatives Messaging
+
+- Single SBE/FIX messaging model covers both cash and derivatives markets
+- Reduces integration effort for firms trading across multiple asset classes
+- Consistent order types, execution reports, and market data formats regardless of asset class
+- MiFID II compliance built into the messaging model (transaction reporting fields, investor identification)
+
+### 6.4 SBE (Simple Binary Encoding) as Core Protocol
+
+- Euronext adopted FIX Protocol Limited's open SBE standard rather than developing a fully proprietary binary protocol
+- Benefits: industry-standard tooling, wider SDK ecosystem, reduced vendor lock-in
+- Fixed-position, fixed-length fields enable zero-copy direct access to message fields
+- Avoids overhead of variable-length parsing required by traditional FIX tag-value format
+
+### 6.5 Apache Kafka Persistence Layer
+
+- Unusual for exchange platforms: Euronext selected Apache Kafka (Confluent Platform) as the core persistence and event-sourcing layer
+- Provides durable, ordered event log for all trading messages
+- Proof of concept started with a Kafka-based matching engine prototype for an order book
+- Production deployment handles sustained multi-million message/second throughput
+- C++ integration with Kafka API for matching engine components
+
+### 6.6 Green Data Center
+
+- 100% renewable energy powering the primary trading infrastructure
+- Hydroelectric, solar, and geothermal cooling at the Bergamo campus
+- Euronext is among the first major exchanges to operate its core matching engine entirely on renewable energy
+- Rating 4 (Tier IV equivalent) certification ensures high resilience despite the green power approach
+
+### 6.7 Technology Licensing
+
+- Optiq is offered as a licensable product for other exchange operators and venue operators
+- Euronext positions it as a turnkey trading platform solution
+- Includes matching engine, order gateway, market data gateway, and surveillance components
+- Reflects a business model similar to Nasdaq's market technology licensing and LSEG Millennium IT's approach
+
+---
+
+## 7. Comparison Notes
+
+### vs. KRX Exture+
+
+| Aspect | Euronext Optiq | KRX Exture+ |
+|--------|---------------|-------------|
+| Launch Year | 2016--2019 (phased); ongoing expansion through 2024 | 2014 |
+| Developer | In-house (Euronext technology teams) | In-house (KRX with Koscom subsidiary) |
+| Markets Served | 7 national regulated markets across 7 countries | Single unified market (KOSPI, KOSDAQ, derivatives, bonds) |
+| Geography | Pan-European (Netherlands, Belgium, France, Portugal, Ireland, Norway, Italy) | Single country (South Korea) |
+| Claimed Latency | ~15 microseconds average (order round-trip, official claim) | ~70 microseconds (matching engine) |
+| Capacity vs. Predecessor | 10x improvement over UTP | ~285x improvement over original EXTURE |
+| Asset Class Coverage | Equities, ETFs, bonds, derivatives, warrants, commodities, FX | Equities, bonds, derivatives (futures/options), ETFs, warrants |
+| Matching Model | Price-time priority (standard across Euronext markets) | Price-time priority |
+| Order Entry Protocol | SBE (binary, open standard) + FIX 5.0 | FIX-based + proprietary API [unverified] |
+| Market Data Protocol | SBE over UDP/IP multicast; LZ4 compression option | Proprietary binary [unverified]; Solace PubSub+ messaging middleware |
+| Persistence Layer | Apache Kafka (Confluent Platform) | Not publicly disclosed |
+| Primary Data Center | Bergamo, Italy (Aruba IT3 campus; 12 MW initial) | Busan Data Center (primary since 2014) |
+| DR Site | Paris region (separate physical DC) | Seoul DR site [unverified] |
+| DR Model | Active/Passive with annual external testing | Active/Standby [unverified] |
+| Data Center Power | 100% renewable energy (hydroelectric, solar, geothermal) | Not publicly disclosed |
+| Multi-Currency | Yes (EUR, GBP, NOK, USD, CHF, etc.) | Single currency (KRW) |
+| Regulatory Framework | MiFID II / MAR across multiple national regulators + ESMA | Under FSC / FSS oversight |
+| Technology Export | Licensed to other exchanges/venues (commercial offering) | Exported to other countries (Laos, Cambodia, etc.) |
+
+### Key Differentiators
+
+**Euronext Optiq Strengths:**
+1. **Pan-European unification**: Only exchange platform serving 7 distinct national markets from a single matching engine -- operationally unique in scope
+2. **Ultra-low latency**: ~15 microsecond average order round-trip is competitive with global best-in-class, though detailed percentile data is not published
+3. **Open protocol standards**: Adoption of SBE (FIX Protocol Limited standard) reduces integration burden vs. fully proprietary protocols
+4. **Modern persistence architecture**: Apache Kafka as event-sourcing layer is a distinctive architectural choice among major exchanges
+5. **Green infrastructure**: 100% renewable-powered primary data center; relevant for ESG-conscious participants and regulatory trends
+6. **Proven migration capability**: Successfully absorbed Borsa Italiana (32,500+ instruments) and Oslo Bors onto existing platform, demonstrating scalability
+7. **Technology licensing**: Commercial offering of Optiq to other venues provides additional revenue stream and technology validation
+
+**KRX Exture+ Strengths:**
+1. **Broader derivatives coverage**: Single platform handles a wider range of derivative products including index, currency, interest rate, commodity futures/options
+2. **Technology independence**: Fully in-house development with proven export track record
+3. **Simpler operational model**: Single country, single currency, single regulatory framework eliminates cross-border complexity
+4. **Global competitiveness**: 70-microsecond matching engine latency remains competitive at global top-tier level
+5. **Unified market**: All Korean capital market products on one exchange reduces cross-venue fragmentation
+
+**Architectural Comparison:**
+- Optiq's "one platform, many countries" model is a **geographic unification** approach -- solving the complexity of operating multiple national markets on a single technology stack with harmonized protocols
+- Exture+'s "one platform, one market" model is an **asset-class unification** approach -- optimizing for comprehensive coverage within a single jurisdiction
+- Optiq's use of Apache Kafka as a persistence layer is architecturally distinctive; most exchanges use custom-built or proprietary event stores. This choice trades some theoretical latency overhead for operational benefits (replayability, fault tolerance, ecosystem tooling)
+- Optiq's SBE protocol adoption aligns with European trends toward open standards (MiFID II drove standardization); KRX's approach is more typical of Asian exchanges favoring proprietary protocols
+- The Bergamo data center migration (from UK to Italy, post-Brexit/post-acquisition) demonstrates Optiq's portability -- the entire matching engine was relocated with minimal impact. This is relevant for KRX as it considers future infrastructure evolution
+- Both platforms demonstrate that in-house development remains viable and competitive against vendor solutions (Nasdaq OMX, LSEG Millennium IT) at the global top tier
+
+---
+
+## Sources
+
+### Official Euronext Documentation
+- [Source: Euronext, "Optiq: technology solutions for exchanges and venue operators", https://www.euronext.com/en/technology/optiq-tech-solutions-for-exchanges-and-venue-operators, accessed 2026-04-06]
+- [Source: Euronext, "Euronext introduces Optiq, the new technology platform powering cash markets", July 2018, https://www.euronext.com/en/about/media/euronext-press-releases/euronext-introduces-optiq-new-technology-platform-powering-cash, accessed 2026-04-06]
+- [Source: Euronext, "Successful roll-out of Euronext Derivatives markets to Optiq trading platform", December 2019, https://www.euronext.com/en/about/media/euronext-press-releases/successful-roll-out-euronext-derivatives-markets-optiq-trading, accessed 2026-04-06]
+- [Source: Euronext, "Successful migration of Borsa Italiana equity and ETF markets to the Optiq trading platform", March 2023, https://www.euronext.com/en/about/media/euronext-press-releases/successful-migration-borsa-italiana-equity-and-etf-markets, accessed 2026-04-06]
+- [Source: Euronext, "Successful completion of the migration of Borsa Italiana to the Optiq trading platform", 2024, https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-borsa-italiana-optiqr-trading, accessed 2026-04-06]
+- [Source: Euronext, "Optiq OEG SBE Messages -- Interface Specification v5.38.0", https://connect.euronext.com/sites/default/files/it-documentation/Optiq%20OEG%20SBE%20Messages%20-%20Interface%20Specification%20-%20Euronext%20Cash%20and%20Derivatives%20Markets%20-%20External%20-%20v5.38.0.pdf, accessed 2026-04-06]
+- [Source: Euronext, "Optiq OEG Client Specifications -- FIX 5.0 Interface v4.12.0", https://connect2.euronext.com/sites/default/files/it-documentation/Euronext%20Markets%20-%20Optiq%20OEG%20Client%20Specifications%20-%20FIX%205.0%20Interface%20-%20v4.12.0.pdf, accessed 2026-04-06]
+- [Source: Euronext, "Optiq OEG Connectivity Specifications v3.4 -- Aruba Data Centre", https://connect2.euronext.com/sites/default/files/it-documentation/Euronext%20Markets%20%20OPTIQ%20OEG%20Connectivity%20Specifications%20v3.4%20-%20Aruba%20Data%20Centre.pdf, accessed 2026-04-06]
+- [Source: Euronext, "Optiq OEG Throttling Mechanism v2.2", https://connect2.euronext.com/sites/default/files/it-documentation/euronext_cash_markets_-_oeg_throttling_mechanism_-_v2.2.pdf, accessed 2026-04-06]
+- [Source: Euronext, "Optiq MDG Client Specifications v4.1.0", https://connect2.euronext.com/sites/default/files/it-documentation/Euronext%20Markets%20-%20Optiq%20MDG%20Client%20Specifications%20v4.1.0.pdf, accessed 2026-04-06]
+- [Source: Euronext, "Optiq MDG Messages -- Interface Specification v6.36.320", https://connect.euronext.com/sites/default/files/it-documentation/optiq-mdg-messages-interface-specification-euronext-cash-and-derivatives-markets-external-v636320.pdf, accessed 2026-04-06]
+- [Source: Euronext, "Optiq Drop Copy Service -- Interface Specification v5.351.0", https://connect.euronext.com/sites/default/files/it-documentation/Optiq%20Drop%20Copy%20Service%20-%20Interface%20Specification%20-%20Euronext%20Cash%20and%20Derivatives%20Markets%20-%20External%20-%20v5.351.0.pdf, accessed 2026-04-06]
+- [Source: Euronext, "Optiq MDG Reference Data", https://www.euronext.com/en/products-services/optiq-mdg-reference-data, accessed 2026-04-06]
+- [Source: Euronext, "Euronext Data Centre", https://www.euronext.com/en/technology/euronext-data-centre, accessed 2026-04-06]
+- [Source: Euronext, "Successful completion of the migration of Euronext's Core Data Centre", June 2022, https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-euronexts-core-data-centre, accessed 2026-04-06]
+- [Source: Euronext, "Disaster Recovery Test 25 October 2025: Guidelines for Participants", https://connect.euronext.com/sites/default/files/it-documentation/euronext-disaster-recovery-test-25-october-2025-guidelines-participants.pdf, accessed 2026-04-06]
+- [Source: Euronext, "Market Outage Plan -- Euronext Regulated Markets", December 2024, https://connect2.euronext.com/en/media/1390/download, accessed 2026-04-06]
+- [Source: Euronext, "New, Green Data Centre: A Glimpse into the Future", https://www.euronext.com/en/news/new-green-data-centre-bergamo, accessed 2026-04-06]
+
+### Third-Party Sources
+- [Source: Confluent, "Euronext builds high-speed trading platform", https://www.confluent.io/customers/euronext/, accessed 2026-04-06]
+- [Source: Confluent, "Building an Event-Driven Stock Platform at Euronext", https://www.confluent.io/blog/euronext-apache-kafka-use-case-with-confluent-platform/, accessed 2026-04-06]
+- [Source: The TRADE, "Inside Europe's new fortress: Euronext's continental data centre and trading floor", https://www.thetradenews.com/inside-europes-new-fortress-euronexts-continental-data-centre-and-trading-floor/, accessed 2026-04-06]
+- [Source: Mondovisione, "Oslo Optiq Migration -- High-Level Timeline and Scope", https://mondovisione.com/news/oslo-optiq-migration-high-level-timeline-and-scope/, accessed 2026-04-06]
+- [Source: Finance Magnates, "Italian Investors Unlock Trading with Optiq Migration", https://www.financemagnates.com/institutional-forex/italian-investors-gain-access-to-new-trading-capabilities-with-optiq-platform-migration/, accessed 2026-04-06]
+- [Source: Traders Magazine, "Euronext Launches New OPTIQ Cash Market Trading Platform", https://www.tradersmagazine.com/news/euronext-launches-new-optiq-cash-market-trading-platform/, accessed 2026-04-06]
+- [Source: FinTech Futures, "Euronext moves cash markets to its Optiq platform", https://www.fintechfutures.com/branches-atms/euronext-moves-cash-markets-to-its-optiq-platform, accessed 2026-04-06]
+- [Source: WatersTechnology, "Euronext Debuts Next-Generation Platform Optiq", https://www.waterstechnology.com/exchanges-trading-venues/exchange-technologies/3743206/euronext-debuts-next-generation-platform-optiq, accessed 2026-04-06]
+- [Source: OnixS, "Euronext Optiq Market Data Gateway (MDG) Market Data Handler SDK", https://www.onixs.biz/euronext-optiq-market-data-gateway-feed-handler.html, accessed 2026-04-06]
+- [Source: DataCenterMap, "Aruba Global Cloud IT3, Bergamo", https://www.datacentermap.com/italy/bergamo/global-cdc-it3/, accessed 2026-04-06]
+- [Source: Wikipedia, "Euronext", https://en.wikipedia.org/wiki/Euronext, accessed 2026-04-06]
+- [Source: MarketsWiki, "Euronext", https://www.marketswiki.com/wiki/Euronext, accessed 2026-04-06]
+
+### KRX/Exture+ Sources
+- [Source: KRX, "EXTURE+ Trading", https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp, accessed 2026-04-06]
+- [Source: PRWeb/Solace, "Korea Exchange Deploys Solace Systems", October 2013, https://www.prweb.com/releases/2013/10/prweb11191574.htm, accessed 2026-04-06]

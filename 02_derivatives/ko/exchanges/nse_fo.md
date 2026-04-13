@@ -1,0 +1,560 @@
+# National Stock Exchange of India — Futures & Options (NSE F&O, 인도국립증권거래소 선물옵션)
+
+> **최종 수정일:** 2026-04-07
+> **조사 등급:** Tier 3
+> **분야:** 파생상품
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | National Stock Exchange of India Limited — Futures & Options Segment |
+| 약칭 | NSE F&O |
+| 웹사이트 | https://www.nseindia.com |
+| 설립연도 | 1992년 (NSE 법인설립); 2000년 (F&O 세그먼트 개시 — 2000년 6월 12일 지수 선물) |
+| 소재지 | 인도 / 뭄바이 (Exchange Plaza, Bandra Kurla Complex) |
+| 지배구조 | 비상호화; 국내외 금융기관 그룹이 소유 (2026년 기준 비상장) |
+| 모회사 / 그룹 | NSE Investments Limited (지주 구조) |
+| 감독기관 | Securities and Exchange Board of India (SEBI) |
+| 청산기관 | NSE Clearing Limited (NCL, 구 NSCCL) — 인도 최초의 결제보증 CCP |
+| 세계 순위 (CY2024) | 파생상품 계약 거래 건수 기준 **세계 1위** (FIA 통계); 2025년 상반기 SEBI 규제 강화에 따라 브라질 B3에 추월됨 |
+| 연간 파생상품 거래량 (CY2023) | 약 850억 계약 (FIA) — 전 세계 선물 및 옵션 거래의 61% 이상 |
+| 연간 파생상품 거래량 (CY2024) | 약 920-1,080억 계약 추정 (NSE 보도자료에 따르면 CY2024에도 1위 유지; 정확한 FIA 수치는 최종 확인 대기) [unverified — 정확한 CY2024 총량] |
+| 주식 파생상품 회전율 (FY2025) | 명목 회전율 Rs 40,000조 이상 |
+| 거래 단말 | 인도 전역 210,873대 (2025년 9월 기준) |
+| F&O 대상 종목 | 개별주식 선물/옵션 대상 약 208-250개 이상 종목 (반기별 검토) |
+
+[Source: [NSE India — History & Milestones](https://www.nseindia.com/static/national-stock-exchange/history-milestones); [NSE Press Release, January 2024](https://nsearchives.nseindia.com/web/sites/default/files/2024-01/PR_cc_18012024_0.pdf); [FIA — Meteoric Rise of India's Equity Derivatives](https://www.fia.org/marketvoice/articles/explainer-meteoric-rise-indias-equity-derivatives-volume); [FIA — 2024 Annual ETD Volume Review](https://www.fia.org/fia/articles/2024-annual-etd-volume-review); [Wikipedia — National Stock Exchange of India](https://en.wikipedia.org/wiki/National_Stock_Exchange_of_India); [NSE Trading Technology](https://www.nseindia.com/static/trade/platform-services-neat-trading-system)]
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **1992년:** NSE 법인설립; 인도 최초의 전자 거래소
+- **1994년 (11월):** NSE 주식 현물시장 거래 개시
+- **2000년 (6월 12일):** **F&O 세그먼트 개시** — Nifty 50 지수 선물 거래 시작, NSE가 인도 최초의 파생상품 거래소 중 하나로 자리매김
+- **2001년 (6월 4일):** Nifty 50 지수 옵션 도입
+- **2001년 (7월 2일):** 개별주식 옵션 개시
+- **2001년 (11월 9일):** 개별주식 선물 개시 — 4가지 기본 F&O 상품 유형 완성
+- **2008년 (8월):** 통화 파생상품 세그먼트 개시 (USD/INR 선물)
+- **2010년:** 국채 금리 선물 도입
+- **2018년 (10월):** 상품 파생상품 세그먼트 개시 (금, 은 선물)
+- **2018년 (2월):** 교차통화 선물 및 옵션 (EUR-USD, GBP-USD, USD-JPY) 도입; EUR/INR, GBP/INR, JPY/INR 옵션 개시
+- **2019년:** NSE가 계약 거래량 기준 세계 최대 파생상품 거래소로 등극 (FIA), 5년 연속 1위 유지 (2019-2024)
+- **2021년 (단계별, 3-9월):** SEBI 피크 증거금 규칙 완전 시행 — 모든 장중 F&O 포지션에 100% 사전 증거금 요구
+- **2023년 (7월 3일):** NSE International Exchange (NSE IX) GIFT City 운영 개시; GIFT Nifty가 SGX Nifty 대체
+- **2023년:** NSE가 약 850억 파생상품 계약 거래 — 2위(B3, 83억)의 10배 이상
+- **2024년 (9월):** SEBI 업데이트 연구 발표: FY22-FY24 기간 **개인 F&O 투자자의 93%가 손실 발생**, 누적 손실 Rs 1.8 라크 크로르 초과
+- **2024년 (10-11월):** SEBI가 F&O 투기 억제를 위한 6대 주요 조치 발표 (2024년 11월-2025년 2월 시행)
+- **2024년 (11월 20일):** 주간 만기 제한 및 로트 규모 인상 시행
+- **2025년 (상반기):** NSE가 세계 1위 파생상품 거래소 타이틀을 브라질 B3에 상실, SEBI의 거래량 규제와 B3의 소규모 계약 단위에 기인
+- **2026년 (4월, 예정):** Platts 유가 벤치마크 파생상품 (Dated Brent Crude Oil 선물) 출시
+
+[Source: [NSE — History & Milestones](https://www.nseindia.com/static/national-stock-exchange/history-milestones); [StockEdge — NSE's 30-Year Evolution](https://blog.stockedge.com/commemorating-30-years-of-nse/); [SEBI Press Release, September 2024](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html); [Business Standard — NSE Loses Top Spot to B3](https://www.business-standard.com/markets/news/nse-loses-top-derivatives-exchange-spot-to-brazil-b3-eyes-vix-futures-125073001569_1.html); [Zerodha — SEBI's New Rules](https://zerodha.com/z-connect/business-updates/sebis-new-rules-for-index-derivatives-heres-whats-changing)]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 / 자산 유형 (Market Segments / Asset Classes)
+
+| 구분 | 상품 | 주요 계약 |
+|---------|----------|---------------|
+| **주가지수 F&O** | 벤치마크 지수에 대한 선물 및 옵션 | Nifty 50, Bank Nifty, Nifty Financial Services (FinNifty), Nifty Midcap Select (MidcapNifty), Nifty Next 50 |
+| **개별주식 F&O** | 개별 주식에 대한 선물 및 옵션 | 약 208-250개 이상 적격 종목 (예: Reliance, TCS, HDFC Bank, Infosys, Zomato) |
+| **통화 파생상품** | INR 쌍 및 교차통화 쌍에 대한 선물 및 옵션 | USD/INR, EUR/INR, GBP/INR, JPY/INR; 교차통화: EUR-USD, GBP-USD, USD-JPY |
+| **금리 파생상품** | 국채 및 T-bill 선물 | 6년, 10년, 13년 GOI Security 선물 (NBF II); 91일 T-Bill 선물 |
+| **상품 파생상품** | 귀금속, 에너지에 대한 선물 및 옵션 | 금(표준, 미니, 1g), 은(표준, 미니, 마이크로), Brent Crude, WTI Crude |
+
+[Source: [NSE — Equity Derivatives](https://www.nseindia.com/products-services/equity-derivatives-list-underlyings-information); [NSE — Currency Derivatives Contract Specs](https://www.nseindia.com/static/products-services/currency-derivatives-contract-specification-inr); [NSE — Interest Rate Futures](https://www.nseindia.com/market-data/bond-market-futures); [NSE — Commodity Derivatives](https://www.nseclearing.in/clearing-settlement/commodity-derivatives)]
+
+### 2.2 거래 세션 / 거래 시간 (Trading Sessions / Hours)
+
+**참고:** 인도 표준시(IST)는 연중 UTC+05:30이다 (일광절약시간 없음).
+
+**주식 파생상품 (선물 및 옵션)**
+
+| 세션 | 현지 시간 (IST) | UTC | 설명 |
+|---------|------------------|-----|-------------|
+| **사전개장** | 09:00 – 09:08 | 03:30 – 03:38 | 주문 접수 및 체결 준비 |
+| **정규 거래** | 09:15 – 15:30 | 03:45 – 10:00 | 연속 거래 세션 |
+| **마감** | 15:30 | 10:00 | 시장 마감; 결제 산출 시작 |
+
+**통화 파생상품**
+
+| 세션 | 현지 시간 (IST) | UTC | 설명 |
+|---------|------------------|-----|-------------|
+| **정규 거래** | 09:00 – 17:00 | 03:30 – 11:30 | 표준 세션 |
+
+**참고:** 통화 파생상품은 이전에 IST 19:30까지 연장 시간이 있었으나; 현재 시간은 NSE 웹사이트에서 확인 필요.
+
+**상품 파생상품**
+
+| 세션 | 현지 시간 (IST) | UTC | 설명 |
+|---------|------------------|-----|-------------|
+| **정규 거래** | 09:00 – 23:30/23:55 | 03:30 – 18:00/18:25 | 글로벌 상품 가격 발견을 위한 연장 시간 |
+
+**NSE IX (GIFT City) — GIFT Nifty**
+
+| 세션 | 현지 시간 (IST) | UTC | 설명 |
+|---------|------------------|-----|-------------|
+| **세션 1** | 06:30 – 15:40 | 01:00 – 10:10 | 국내 NSE 세션과 중첩 |
+| **세션 2** | 16:35 – 02:45 +1 | 11:05 – 21:15 | 유럽 및 미국 시간대를 포괄하는 연장 시간 |
+
+GIFT Nifty는 하루 약 19시간 운영되어 글로벌 투자자에게 연장된 접근을 제공한다.
+
+**거래일:** 월요일~금요일; SEBI 지정 공휴일 휴장.
+
+[Source: [NSE — Market Timings & Holidays](https://www.nseindia.com/resources/exchange-communication-holidays); [Bajaj Finserv — Share Market Timings](https://www.bajajfinserv.in/share-market-timings); [NSE IX — Trading Hours](https://www.nseix.com/markets/trading/tradinghours); [GIFT Nifty — Wikipedia](https://en.wikipedia.org/wiki/GIFT_Nifty)]
+
+### 2.3 호가단위 (Tick Sizes, 주식 파생상품)
+
+| 종목 | 호가단위 (최소가격변동폭) |
+|------------|-----------------------------------|
+| 지수 선물 (Nifty 50, Bank Nifty) | Rs 0.05 (5 파이사) |
+| 지수 옵션 | Rs 0.05 (5 파이사) |
+| 개별주식 선물 | Rs 0.05 (5 파이사) |
+| 개별주식 옵션 | Rs 0.05 (5 파이사) |
+
+[Source: [NSE — Nifty 50 F&O Specifications](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50)]
+
+### 2.4 로트 단위 / 계약 단위 (Lot Sizes / Contract Units, 2026년 1월 기준)
+
+| 상품 | 로트 단위 | 대략적 계약 가치 |
+|---------|----------|----------------------|
+| Nifty 50 선물/옵션 | 65 | 약 Rs 15-16 라크 |
+| Bank Nifty 선물/옵션 | 30 | 약 Rs 15-16 라크 |
+| Nifty Financial Services (FinNifty) | 65 [unverified] | 약 Rs 15 라크 |
+| Nifty Midcap Select | 75 [unverified] | 약 Rs 15 라크 |
+| Nifty Next 50 | 25 | 약 Rs 15 라크 |
+| 개별주식 F&O | 종목별 상이 | 최소 Rs 15 라크 계약 가치 (2024년 11월부터 SEBI 요구) |
+
+**참고:** 로트 단위는 SEBI의 신규 체계에 따라 2024년 11월에 대폭 변경되었다. Nifty 50 로트 단위는 25에서 75로 (2024년 11월), 이후 65로 조정 (2025년 10월). SEBI는 최소 계약 가치 Rs 15-20 라크를 요구한다.
+
+[Source: [Sahi — Nifty 50 Lot Size 2026](https://www.sahi.com/blogs/nifty-lot-size-2026-bank-nifty-sensex); [ICICI Direct — New Lot Sizes](https://www.icicidirect.com/faqs/fno/from-when-will-the-new-lot-sizes-for-weekly-contracts-be-effective); [Zerodha — SEBI's New Rules](https://zerodha.com/z-connect/business-updates/sebis-new-rules-for-index-derivatives-heres-whats-changing)]
+
+### 2.5 계약 주기 및 만기 (Contract Cycles & Expiry)
+
+| 상품 | 계약 주기 | 만기일 |
+|---------|---------------|------------|
+| Nifty 50 선물 | 3개 연속 월물 (근월, 차월, 원월) | 만기월 마지막 목요일 |
+| Nifty 50 월간 옵션 | 3개 연속 월물 | 만기월 마지막 목요일 |
+| Nifty 50 주간 옵션 | 주간 (2024년 11월 이후 유일하게 주간 만기가 있는 지수) | 매주 목요일 |
+| Bank Nifty (2024년 11월 이후 월간만) | 3개 연속 월물 | 마지막 수요일 [unverified — 현재 만기일 확인 필요] |
+| 개별주식 선물 | 3개 연속 월물 | 만기월 마지막 목요일 |
+| 개별주식 옵션 | 3개 연속 월물 | 만기월 마지막 목요일 |
+
+**주요 변경 (2024년 11월):** SEBI는 주간 만기를 **거래소당 하나의 벤치마크 지수**로 제한하였다. NSE는 Nifty 50에만 주간 옵션을 유지하였다. Bank Nifty, FinNifty, MidcapNifty, Nifty Next 50의 주간 만기는 모두 폐지되었다.
+
+**결제:** NSE의 모든 주식 파생상품은 T+1 기준으로 **현금결제**된다. 최종 결제가격은 만기일 기초자산의 종가를 기준으로 한다.
+
+[Source: [NSE — Nifty 50 F&O](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50); [NSE Clearing — Settlement Mechanism](https://www.nseclearing.in/clearing-settlement/equity-derivatives/settlement-mechanism); [Business Standard — SEBI Announces Six Key Changes](https://www.business-standard.com/markets/news/sebi-announces-six-key-changes-to-curb-speculation-in-derivatives-trading-124100101316_1.html)]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 주문 체결 (Order Matching)
+
+- 가격-시간 우선의 **주문주도 시장**
+- 익명 호가창; 거래 전 거래상대방 신원 미공개
+- NSE Clearing Limited가 모든 거래의 중앙거래상대방(CCP)으로 기능하여 채무인수(novation) 및 결제보증 제공
+
+### 3.2 주문 유형 (Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| 시장가 주문 | 최우선 가격에서 체결 |
+| 지정가 주문 | 지정 가격 또는 그보다 유리한 가격에서 체결 |
+| 스톱-로스 주문 | 시장이 지정 가격에 도달하면 발동; 시장가 또는 지정가 주문으로 전환 |
+| Immediate or Cancel (IOC) | 즉시 체결 필수; 미체결 수량 취소 |
+| 스프레드 주문 | 캘린더 스프레드를 위한 2개 레그 주문 |
+
+### 3.3 가격 발견 (Price Discovery)
+
+- 거래 시간 내내 연속 경매
+- 사전개장 세션(단일가매매, 집합호가) 중 시가 결정
+- F&O 세그먼트의 종가는 기초자산 현물시장 종가에서 도출
+
+[Source: [NSE — NEAT Trading System](https://www.nseindia.com/static/trade/platform-services-neat-trading-system)]
+
+---
+
+## 5. 매매시스템 (기술) (Trading System, Technology)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 시스템 명칭 | NEAT (National Exchange for Automated Trading) / NEAT Plus (다시장 통합 인터페이스) |
+| 벤더 / 자체개발 | 자체개발 (자사 구축 애플리케이션) |
+| 아키텍처 | 클라이언트-서버 기반; 인도 전역 접속을 위한 위성통신 네트워크 |
+| 매매체결엔진 | 최소 응답시간 및 최대 가용성을 위한 인메모리 데이터베이스 |
+| 왕복 지연시간 | 약 100마이크로초 (현재); **2026년 4월부터 나노초 수준 지연시간 계획** |
+| 주문 처리 용량 | 현재 초당 약 500-600만 건; **2026년 업그레이드로 초당 1억 건 목표** |
+| 가동률 | 99.7% 시스템 가용성 |
+| 코로케이션 랙 | 현재 2,000개 이상; 약 4,500개로 확대 |
+| 거래 단말 | 인도 전역 210,873대 (2025년 9월 기준) |
+
+### 시스템 변천 (System History)
+
+| 기간 | 시스템 | 비고 |
+|--------|--------|-------|
+| 1994 | NEAT 1.0 | 인도 최초의 화면 기반 전자거래 시스템 |
+| 지속 | NEAT / NEAT Plus | 수십 년에 걸쳐 진화; 모든 세그먼트(주식, 파생상품, 통화, 상품) 지원 |
+| 2026 (예정) | 차세대 초저지연 엔진 | 나노초 응답시간; 현행 시스템 대비 약 1,000배 속도 향상 |
+
+### 연결성 및 접속 (Connectivity & Access)
+
+| 방식 | 설명 |
+|--------|-------------|
+| NEAT / NEAT+ 단말 | 거래소 제공 거래 프론트엔드 소프트웨어 |
+| CTCL (Computer to Computer Link) | NEAT Adapter를 통해 연결된 브로커 자체 프론트엔드 |
+| DMA (Direct Market Access) | 기관 고객이 브로커 인프라를 통해 거래소에 직접 접속 (SEBI 규제) |
+| FIX Protocol | 알고리즘 및 DMA 거래를 위한 FIX 4.2 지원 |
+| 코로케이션 | 네트워크 지연 최소화를 위해 NSE 데이터센터에 서버 호스팅; HFT 및 알고 회사가 널리 사용 |
+
+### 코로케이션 시설 (Colocation Facility)
+
+NSE는 데이터센터에서 코로케이션 서비스를 제공하여 거래 회사가 네트워크 지연을 최소화하기 위한 서버를 설치할 수 있다. 특히 알고리즘 거래 및 DMA에서 NSE 주문 흐름의 상당 부분이 코로케이션을 통해 전달된다.
+
+[Source: [NSE — Trading Technology](https://www.nseindia.com/static/trade/platform-services-neat-trading-system); [NSE — Colocation Facility](https://www.nseindia.com/static/trade/platform-services-co-location-facility); [BusinessToday — NSE to Slash Trading Latency to Nanoseconds](https://www.businesstoday.in/markets/stocks/story/nse-to-slash-trading-latency-to-nanoseconds-from-apr-11-targets-100-mn-transactions-per-second-517444-2026-02-22); [NSE — DMA](https://www.nseindia.com/static/trade/platform-services-non-neat-direct-market-access)]
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (Risk Controls & Circuit Breakers)
+
+### 8.1 시장 전체 서킷브레이커 (매매거래중단) (지수 기반)
+
+시장 전체 서킷브레이커 (매매거래중단)는 BSE Sensex 또는 Nifty 50 중 먼저 이탈하는 쪽의 움직임에 의해 발동된다. 발동 시 **모든** 주식 및 주식 파생상품 시장에서 전국적으로 거래가 중단된다 (NSE, BSE 및 기타 거래소).
+
+| 단계 | 발동 조건 | 오후 1시 이전 발동 시 | 오후 1시-2시 30분 발동 시 | 오후 2시 30분 이후 발동 시 |
+|-------|---------|----------------------|--------------------|--------------------|
+| **1단계** | 지수 10% 변동 | 45분간 중단 | 15분간 중단 | 중단 없음 |
+| **2단계** | 지수 15% 변동 | 1시간 45분간 중단 | 45분간 중단 | 잔여 시간 중단 |
+| **3단계** | 지수 20% 변동 | 잔여 시간 중단 | 잔여 시간 중단 | 잔여 시간 중단 |
+
+서킷브레이커 (매매거래중단) 한도는 지수의 전일 종가를 기준으로 호가단위 (최소가격변동폭)에 맞춰 반올림하여 **매일 재산출**된다.
+
+[Source: [NSE — Circuit Breakers](https://www.nseindia.com/products-services/equity-market-circuit-breakers); [Business Standard — Circuit Filters Explained](https://www.business-standard.com/markets/news/market-crash-what-are-circuit-filters-for-the-sensex-and-nifty-explained-125040700243_1.html)]
+
+### 8.2 파생상품 기초자산의 가격밴드 (Price Bands for Derivatives Underlyings)
+
+- 파생상품 대상 종목에는 **가격밴드가 적용되지 않는다**
+- 대신 거래소가 전일 종가의 **동적 가격밴드 10%**를 적용하며, 기초자산이 움직임에 따라 사전 정의된 기준에 의해 유연하게 조정
+
+[Source: [NSE — Circuit Breakers](https://www.nseindia.com/products-services/equity-market-circuit-breakers)]
+
+### 8.3 사전거래 리스크 관리 (Pre-trade Risk Controls)
+
+- **수량 동결(Quantity freeze):** 사전 정의된 수량 임계치를 초과하는 주문은 거래소의 수동 확인 필요
+- **주문 가치 한도:** 최대 주문 가치 점검
+- **포지션한도 (건옥제한):** 시장 전체 포지션한도(MWPL) 및 거래회원 수준 한도
+- **실시간 증거금 모니터링:** 장중 실시간 기반 포지션 모니터링 및 증거금 산출
+
+### 8.4 만기일 극단손실증거금 (Expiry Day Extreme Loss Margin, 2024년 11월부터)
+
+만기일에 매도 옵션 포지션에 대해 **2%**의 추가 극단손실증거금(ELM)이 적용되어 높아진 변동성 리스크를 커버한다.
+
+[Source: [Zerodha — SEBI's New Rules](https://zerodha.com/z-connect/business-updates/sebis-new-rules-for-index-derivatives-heres-whats-changing); [Outlook Business — SEBI's New F&O Rules](https://www.outlookbusiness.com/markets/sebis-new-fo-rules-kick-in-how-the-risk-tail-coverage-change-will-affect-traders)]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관 (Supervising Authority)
+
+**Securities and Exchange Board of India (SEBI)** — 1992년에 설립된 인도 증권 및 파생상품 시장의 법정 감독기관.
+
+### 9.2 주요 규정 및 최근 동향 (Key Regulations & Recent Developments)
+
+| 일자 | 규정 / 사건 | 세부사항 |
+|------|-------------------|---------|
+| 2000 | SEBI 지수 선물 승인 | NSE (및 BSE)의 주식 파생상품 출시 허가 |
+| 2001 | SEBI 개별주식 F&O 승인 | 개별주식 선물 및 옵션 허용 |
+| 2021 (3-9월) | **SEBI 피크 증거금 규칙** | 모든 장중 F&O 포지션에 100% 사전 증거금을 요구하는 단계적 시행; 일일 4-5회 무작위 스냅샷; 부족 시 과징금 |
+| 2024 (9월) | **SEBI 개인 F&O 손실 연구** | 업데이트 연구에서 FY22-FY24 주식 F&O에서 개인 투자자의 93%가 손실 발생; 3년간 누적 손실 Rs 1.8 라크 크로르 초과 |
+| 2024 (10월) | **SEBI 6대 F&O 개혁 패키지** | 개인 투기 억제를 위한 종합 조치 |
+| 2024 (11월 20일) | **주간 만기 제한** | 거래소당 하나의 벤치마크 지수만 주간 만기 가능; NSE는 Nifty 50만 유지 |
+| 2024 (11월 21일) | **로트 규모 인상** | 최소 계약 가치 Rs 15-20 라크로 인상; Nifty 50 로트 25에서 75로 3배 인상 |
+| 2024 (11월 20일) | **만기일 ELM** | 만기일 매도 옵션 포지션에 2% 추가 ELM |
+| 2025 (2월 1일) | **사전 프리미엄 납부** | 옵션 매수자는 전체 프리미엄을 사전 납부해야 함 (옵션 매수에 대한 장중 레버리지 불가) |
+
+[Source: [SEBI — Press Release, September 2024](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html); [Business Standard — SEBI Announces Six Key Changes](https://www.business-standard.com/markets/news/sebi-announces-six-key-changes-to-curb-speculation-in-derivatives-trading-124100101316_1.html); [Zerodha — SEBI's New Rules](https://zerodha.com/z-connect/business-updates/sebis-new-rules-for-index-derivatives-heres-whats-changing); [Bajaj Broking — SEBI Peak Margin Rules](https://www.bajajbroking.in/blog/sebi-peak-margin-rules)]
+
+### 9.3 SEBI 규제의 영향 (Impact of SEBI Curbs)
+
+- **거래량 감소:** 2024년 11월 규제 이후 파생상품 거래량이 정점 대비 약 30-38% 감소
+- **개인 투자자 참여 감소:** 소규모 투자자의 파생상품 참여가 약 49% 감소 (Icra 추정)
+- **세계 순위 상실:** NSE가 2025년 상반기에 세계 1위 파생상품 거래소 타이틀을 브라질 B3에 양도
+- **정책 근거:** 93%의 개인 투자자가 손실을 입고 FY22-FY24 누적 손실이 Rs 1.8 라크 크로르를 초과한 상황에서의 개인 투자자 보호
+
+[Source: [Business Standard — Derivatives Trading Drops 38%](https://www.business-standard.com/markets/stock-market-news/derivatives-trading-drops-38-on-bse-nse-in-december-due-to-sebi-curbs-125010200580_1.html); [Business Standard — Small Investors Decline 49%](https://www.business-standard.com/markets/news/smaller-investor-participation-in-derivatives-down-49-pc-icra-125052301377_1.html); [Angel One — NSE Loses Top Title](https://www.angelone.in/news/market-updates/nse-loses-top-derivatives-exchange-title-to-brazil-b3)]
+
+### 9.4 시장감시 (Market Surveillance)
+
+- NSE는 거래 패턴, 가격 변동, 포지션 집중을 모니터링하는 전담 감시부서를 운영
+- 이상 거래 활동, 내부자 거래 패턴, 시세조종에 대한 자동 경보
+- SEBI는 지정 임계치를 초과하는 포지션에 대한 대량거래자 보고를 의무화
+
+### 9.5 회원 유형 (Membership Categories)
+
+| 유형 | 설명 |
+|----------|-------------|
+| Trading Member (TM) | 자기계좌 및 고객계좌로 거래 가능 |
+| Trading & Self Clearing Member (TM & SCM) | 자기 및 고객 거래의 거래, 청산/결제 가능 |
+| Trading & Clearing Member (TM & CM) | 자기, 고객 거래 및 다른 TM의 거래에 대한 거래, 청산/결제 가능 |
+| Professional Clearing Member (PCM) | 청산 전용 (은행, 수탁기관); 직접 거래 불가 |
+
+가입비: Rs 5,00,000 + 해당 세금. 신청 처리 수수료: Rs 10,000.
+
+[Source: [NSE Clearing — Eligibility Criteria](https://www.nseclearing.in/membership/eligibility-criteria); [NSE Clearing — Fees, Deposits & Networth](https://www.nseclearing.in/membership/fees-deposits--networth-requirements)]
+
+---
+
+## 상품 목록 (Product Catalog)
+
+### 주가지수 파생상품 (Equity Index Derivatives)
+
+| 지수 | 선물 | 옵션 (월간) | 옵션 (주간) | 로트 단위 (2026년 1월) | 만기일 |
+|-------|---------|-------------------|------------------|---------------------|------------|
+| **Nifty 50** | 가능 | 가능 | **가능** (2024년 11월 이후 유일한 주간 지수) | 65 | 목요일 |
+| **Bank Nifty** | 가능 | 가능 | 불가 (2024년 11월 주간 폐지) | 30 | 마지막 수요일 [unverified] |
+| **Nifty Financial Services (FinNifty)** | 가능 | 가능 | 불가 (2024년 11월 주간 폐지) | 65 [unverified] | 화요일 [unverified] |
+| **Nifty Midcap Select** | 가능 | 가능 | 불가 (2024년 11월 주간 폐지) | 75 [unverified] | 월요일 [unverified] |
+| **Nifty Next 50** | 가능 | 가능 | 불가 (2024년 11월 주간 폐지) | 25 | 금요일 [unverified] |
+
+### 개별주식 선물 및 옵션 (Single Stock Futures & Options)
+
+- 2026년 4월 기준 **약 208-250개 이상 적격 종목**
+- 종목은 SEBI 적격 기준을 충족해야 함: 최소 일평균 회전율, 유동주식 시가총액 기반 시장 전체 포지션한도, 최소 시가총액, 유동주식 일평균 인수도 가치
+- 최근 추가 (2024년 11월): Zomato, DMart, Jio Financial 등 45개 신규 종목
+- 계약 주기: 3개 연속 월물
+- 만기: 만기월 마지막 목요일
+- 결제: 현금결제
+
+### 통화 파생상품 (Currency Derivatives)
+
+| 통화쌍 | 선물 | 옵션 | 계약 단위 |
+|------|---------|---------|--------------|
+| USD/INR | 가능 | 가능 | USD 1,000 |
+| EUR/INR | 가능 | 가능 | EUR 1,000 |
+| GBP/INR | 가능 | 가능 | GBP 1,000 |
+| JPY/INR | 가능 | 가능 | JPY 100,000 |
+| EUR-USD (교차) | 가능 | 가능 | EUR 1,000 |
+| GBP-USD (교차) | 가능 | 가능 | GBP 1,000 |
+| USD-JPY (교차) | 가능 | 가능 | USD 1,000 |
+
+모든 통화 계약은 현금결제이다. 가격 표시: INR 쌍의 경우 외화 단위당 INR.
+
+### 금리 파생상품 (Interest Rate Derivatives)
+
+| 상품 | 기초자산 | 계약 단위 |
+|---------|-----------|--------------|
+| NBF II (6년) | GOI Security, 잔존 만기 4-8년 | 액면가 Rs 2,00,000 |
+| NBF II (10년) | GOI Security, 잔존 만기 8-11년 | 액면가 Rs 2,00,000 |
+| NBF II (13년) | GOI Security, 잔존 만기 11-15년 | 액면가 Rs 2,00,000 |
+| 91일 T-Bill 선물 | 91일 인도 정부 Treasury Bill | 액면가 Rs 2,00,000 [unverified] |
+
+계약 주기: 3개 연속 월물 + 3개 분기물 (3월/6월/9월/12월). 현금결제.
+
+### 상품 파생상품 (Commodity Derivatives)
+
+| 상품 | 계약 종류 |
+|---------|------------------|
+| 금 | 표준, 미니, 1그램 |
+| 은 | 표준, 미니, 마이크로 |
+| Brent Crude Oil | 표준 |
+| WTI Crude Oil | 표준, 미니 |
+| Platts Dated Brent (2026년 4월 예정) | 표준 |
+
+[Source: [NSE — Equity Derivatives](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50); [NSE — Currency Derivatives Contract Specs](https://www.nseindia.com/static/products-services/currency-derivatives-contract-specification-inr); [NSE — Interest Rate Futures](https://www.nseindia.com/market-data/bond-market-futures); [Groww — NSE Adds 45 New Stocks to F&O](https://groww.in/blog/nse-adds-45-new-stocks-to-the-fo-list); [NSE Clearing — Commodity Derivatives](https://www.nseclearing.in/clearing-settlement/commodity-derivatives)]
+
+---
+
+## 주요 상품 계약 명세 (Contract Specifications, Key Products)
+
+### Nifty 50 선물
+
+| 항목 | 명세 |
+|-----------|--------------|
+| 기초자산 | Nifty 50 Index |
+| 계약 단위 | 로트 단위 x 지수 수준 (65 x Nifty 값) |
+| 로트 단위 | 65 (2026년 1월 기준) |
+| 호가단위 (최소가격변동폭) | Rs 0.05 |
+| 계약 주기 | 3개 연속 월물 |
+| 만기 | 만기월 마지막 목요일 |
+| 결제 | T+1 현금결제 |
+| 최종 결제가격 | 만기일 Nifty 50 종가 |
+| 최소 계약 가치 | Rs 15 라크 (SEBI 요구) |
+
+### Nifty 50 옵션
+
+| 항목 | 명세 |
+|-----------|--------------|
+| 기초자산 | Nifty 50 Index |
+| 옵션 유형 | 유러피안 (만기 시에만 행사) |
+| 로트 단위 | 65 (2026년 1월 기준) |
+| 호가단위 (최소가격변동폭) | Rs 0.05 |
+| 행사가격 간격 | Rs 50 (등가격 근처); 원거리 행사가는 더 넓음 |
+| 주간 만기 | 매주 목요일 |
+| 월간 만기 | 만기월 마지막 목요일 |
+| 결제 | 현금결제 |
+| 행사 | 내가격 옵션 자동 행사 |
+
+### Bank Nifty 옵션
+
+| 항목 | 명세 |
+|-----------|--------------|
+| 기초자산 | Nifty Bank Index |
+| 옵션 유형 | 유러피안 |
+| 로트 단위 | 30 (2026년 1월 기준) |
+| 호가단위 (최소가격변동폭) | Rs 0.05 |
+| 만기 | 월간만 (2024년 11월 주간 폐지) |
+| 결제 | 현금결제 |
+
+[Source: [NSE — Nifty 50 F&O](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50); [Sahi — Lot Size 2026](https://www.sahi.com/blogs/nifty-lot-size-2026-bank-nifty-sensex)]
+
+---
+
+## 증거금 체계 (Margin Framework)
+
+### 증거금 산출 방법론 (Margin Methodology)
+
+NSE Clearing은 CME Group이 원래 개발한 포트폴리오 기반 증거금 시스템인 **SPAN (Standard Portfolio Analysis of Risk)**을 사용한다. SPAN은 결합된 선물 및 옵션 포트폴리오의 리스크를 추정하고 변화하는 시장 상황의 다양한 시나리오에서 포지션을 재평가한다.
+
+### 증거금 구성요소 (Margin Components)
+
+| 구성요소 | 설명 |
+|-----------|-------------|
+| **SPAN 증거금 (개시증거금)** | 1일 시간범위에서 99% VaR 기반; 16개 리스크 시나리오에 걸친 최악의 포트폴리오 손실을 기준으로 산출 |
+| **익스포저 증거금** | 잠재적 익스포저를 위한 추가 증거금; 통상 지수 F&O 3%, 개별주식 F&O 5-10% |
+| **극단손실증거금 (ELM)** | 정상 VaR 시나리오를 넘는 손실을 커버 |
+| **만기일 ELM** | 만기일 매도 옵션 포지션에 2% 추가 (2024년 11월부터) |
+| **일일정산 (Mark-to-Market, MTM)** | 일일 손익 정산; T+1 기준으로 징수 |
+| **인수도 증거금** | 만기가 다가오는 실물결제 주식 옵션 계약에 적용 |
+
+### SEBI 피크 증거금 규칙 (2021년 9월 — 완전 시행)
+
+| 측면 | 요건 |
+|--------|------------|
+| 최소 증거금 | SPAN + 익스포저 증거금의 100%를 항시(장중 포함) 유지 필요 |
+| 모니터링 | 거래일 중 4-5개 시점에서 포지션의 무작위 스냅샷 |
+| 과징금 | 어느 스냅샷에서든 증거금이 부족하면 부족분 과징금 부과 |
+| 영향 | 이전에 브로커가 제공하던 과도한 장중 레버리지 제거; 브로커는 더 이상 SPAN 증거금을 초과하는 추가 레버리지 제공 불가 |
+
+### 사전 프리미엄 납부 (Upfront Premium Collection, 2025년 2월)
+
+옵션 매수자는 **전체 옵션 프리미엄을 사전에** 납부해야 한다. 이전에는 일부 브로커가 옵션 매수에 대해 장중 레버리지를 제공하였으나 이 규칙으로 해당 관행이 제거되었다.
+
+### 금리 선물 증거금 (Interest Rate Futures Margins)
+
+| 상품 | 개시증거금 |
+|---------|---------------|
+| GOI Security 선물 (NBF II) | 계약 가치의 1.5% (첫 거래일 최대 2.8%) |
+| 91일 T-Bill 선물 | 첫 거래일 명목금액의 0.10% |
+
+[Source: [NSE Clearing — SPAN](https://www.nseindia.com/products-services/equity-derivatives-nse-clearing-span); [NSE Clearing — Margins](https://www.nseclearing.in/risk-management/equity-derivatives/margins); [NSE — SPAN Risk Parameters](https://www.nseclearing.in/risk-management/equity-derivatives/span-risk-parameters); [Bajaj Broking — SEBI Peak Margin Rules](https://www.bajajbroking.in/blog/sebi-peak-margin-rules); [NSE — Interest Rate Futures Margins](https://www.nseindia.com/products-services/interest-rate-derivatives-margins)]
+
+---
+
+## NSE International Exchange (NSE IX) — GIFT City
+
+### 개요 (Overview)
+
+NSE IX는 인도 최초의 국제금융서비스센터(IFSC)인 구자라트주 GIFT City 내에서 운영된다. NSE-SGX GIFT Connect 합의에 따라 Singapore Exchange의 SGX Nifty 파생상품이 이관된 후 2023년 7월 3일 운영을 개시하였다.
+
+### 주요 상품 (Key Products)
+
+| 상품 | 통화 | 설명 |
+|---------|----------|-------------|
+| GIFT Nifty 50 | USD | 대표 상품; SGX Nifty 대체 |
+| GIFT Nifty Bank | USD | 은행 섹터 지수 선물 |
+| GIFT Nifty Financial Services | USD | 금융서비스 섹터 지수 |
+| GIFT Nifty IT | USD | IT 섹터 지수 |
+
+### 성과 (Performance)
+
+- 2025년 10월 기준 누적 회전율 **USD 2.40조** 초과
+- 2025년 5월 월간 회전율 **USD 1,023.5억** 기록
+- 2개 세션에 걸쳐 하루 약 19시간 운영
+
+### 세제 혜택 (Tax Advantages)
+
+- 파생상품에 대한 자본이득세 면제
+- 증권거래세(STT), 상품거래세(CTT), 인지세 면제
+- 외국 포트폴리오 투자자 및 국제 참가자에게 매력적
+
+[Source: [GIFT Nifty — Wikipedia](https://en.wikipedia.org/wiki/GIFT_Nifty); [NSE IX Official Website](https://www.nseix.com/); [NSE Press Release — GIFT Nifty Identity](https://www.nseindia.com/static/resources/nse-international-exchange-unveils-a-new-identity-for-gift-nifty)]
+
+---
+
+## 개인 투자자 옵션 거래: 폭발적 성장과 규제 대응 (Retail Options Trading: The Explosion and Regulatory Response)
+
+### 현상의 규모 (Scale of the Phenomenon)
+
+NSE의 파생상품 시장은 개인 투자자 옵션 거래의 유례없는 급증을 경험하였다:
+
+- **거래량 성장:** 주가지수 옵션 거래량이 Rs 10.8조 (FY20)에서 Rs 138조 (FY24)로 약 13배 급증
+- **NSE 시장 점유율:** NSE가 인도 지수 옵션 시장의 90% 이상을 차지
+- **세계적 지배:** 정점 시 NSE는 전 세계 선물 및 옵션 거래의 61% 이상을 차지
+
+### SEBI 연구 결과 (2024년 9월)
+
+| 지표 | 데이터 |
+|--------|------|
+| 손실 발생 개인 투자자 비율 | **93%** (FY22-FY24) |
+| 개인 투자자 누적 손실 | **Rs 1.8 라크 크로르** (약 USD 215억) 3년간 |
+| 투자자당 평균 손실 | 투자자당 약 Rs 2 라크 |
+| 손실률 추세 | 악화 — FY22 89%에서 FY24 91.1%로 |
+| 자기매매 이익 (FY24) | Rs 33,000 크로르 총액 |
+| FPI 이익 (FY24) | Rs 28,000 크로르 총액 |
+| 기관 이익 중 알고 거래 비중 | 96-97% |
+
+### 규제 대응 (Regulatory Response)
+
+SEBI의 6대 개혁 패키지(2024년 10월)는 명시적으로 개인 투기 위기를 해결하기 위해 설계되었다:
+
+1. **주간 만기 합리화** — 거래소당 하나로 축소 (2024년 11월 20일 시행)
+2. **로트 규모 인상** — 최소 계약 가치 Rs 15-20 라크로 인상 (2024년 11월 21일 시행)
+3. **만기일 ELM** — 만기일 매도 옵션에 2% 추가 증거금 (2024년 11월 20일 시행)
+4. **사전 프리미엄 납부** — 옵션 매수자에게 전액 프리미엄 사전 납부 요구 (2025년 2월 1일 시행)
+5. **장중 포지션한도 모니터링** — 실시간 감시 강화
+6. **만기일 캘린더 스프레드 혜택 제거** — 만기일 스프레드 포지션의 증거금 상계 축소
+
+### 결과 (Outcome)
+
+시행 후 F&O 거래량이 30-38% 감소하고, 소규모 투자자 참여가 약 49% 감소하였으며, NSE는 세계 1위 순위를 브라질 B3에 상실하였다. SEBI는 이를 성공적 정책 결과로 평가한다 — 불균형적 손실로부터 개인 투자자를 보호.
+
+[Source: [SEBI — September 2024 Press Release](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html); [CFA Institute — India's Derivatives Market and Retail Investors](https://blogs.cfainstitute.org/marketintegrity/2025/11/05/indias-derivatives-market-and-retail-investors/); [FIA — Premium Turnover in Indian Options](https://www.fia.org/marketvoice/articles/premium-turnover-indian-options-hits-150-billion); [NISM — Retail Derivatives Trading in India](https://www.nism.ac.in/blog/equity-linked-exchange-traded-derivative-contracts-the-retail-rush-and-regulatory-measures/)]
+
+---
+
+## 출처 (Sources)
+
+1. [NSE India — Official Website](https://www.nseindia.com)
+2. [NSE India — History & Milestones](https://www.nseindia.com/static/national-stock-exchange/history-milestones)
+3. [NSE India — Nifty 50 F&O Specifications](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50)
+4. [NSE India — Circuit Breakers](https://www.nseindia.com/products-services/equity-market-circuit-breakers)
+5. [NSE India — NEAT Trading System](https://www.nseindia.com/static/trade/platform-services-neat-trading-system)
+6. [NSE India — Colocation Facility](https://www.nseindia.com/static/trade/platform-services-co-location-facility)
+7. [NSE India — Currency Derivatives Contract Specs](https://www.nseindia.com/static/products-services/currency-derivatives-contract-specification-inr)
+8. [NSE India — Interest Rate Futures](https://www.nseindia.com/market-data/bond-market-futures)
+9. [NSE Clearing Limited](https://www.nseclearing.in/)
+10. [NSE Clearing — SPAN Margin](https://www.nseindia.com/products-services/equity-derivatives-nse-clearing-span)
+11. [NSE Clearing — Margins](https://www.nseclearing.in/risk-management/equity-derivatives/margins)
+12. [NSE IX — Official Website](https://www.nseix.com/)
+13. [GIFT Nifty — Wikipedia](https://en.wikipedia.org/wiki/GIFT_Nifty)
+14. [SEBI — Press Release: 93% Retail Losses, September 2024](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html)
+15. [FIA — Meteoric Rise of India's Equity Derivatives Volume](https://www.fia.org/marketvoice/articles/explainer-meteoric-rise-indias-equity-derivatives-volume)
+16. [FIA — 2024 Annual ETD Volume Review](https://www.fia.org/fia/articles/2024-annual-etd-volume-review)
+17. [FIA — Premium Turnover in Indian Options Hits $150 Billion](https://www.fia.org/marketvoice/articles/premium-turnover-indian-options-hits-150-billion)
+18. [Zerodha — SEBI's New Rules for Index Derivatives](https://zerodha.com/z-connect/business-updates/sebis-new-rules-for-index-derivatives-heres-whats-changing)
+19. [BusinessToday — NSE to Slash Trading Latency to Nanoseconds, February 2026](https://www.businesstoday.in/markets/stocks/story/nse-to-slash-trading-latency-to-nanoseconds-from-apr-11-targets-100-mn-transactions-per-second-517444-2026-02-22)
+20. [Business Standard — NSE Loses Top Derivatives Exchange Spot to B3](https://www.business-standard.com/markets/news/nse-loses-top-derivatives-exchange-spot-to-brazil-b3-eyes-vix-futures-125073001569_1.html)
+21. [Business Standard — Derivatives Trading Drops 38%](https://www.business-standard.com/markets/stock-market-news/derivatives-trading-drops-38-on-bse-nse-in-december-due-to-sebi-curbs-125010200580_1.html)
+22. [Business Standard — SEBI Announces Six Key Changes](https://www.business-standard.com/markets/news/sebi-announces-six-key-changes-to-curb-speculation-in-derivatives-trading-124100101316_1.html)
+23. [Bajaj Broking — SEBI Peak Margin Rules](https://www.bajajbroking.in/blog/sebi-peak-margin-rules)
+24. [Sahi — Nifty 50 Lot Size 2026](https://www.sahi.com/blogs/nifty-lot-size-2026-bank-nifty-sensex)
+25. [CFA Institute — India's Derivatives Market and Retail Investors](https://blogs.cfainstitute.org/marketintegrity/2025/11/05/indias-derivatives-market-and-retail-investors/)
+26. [Wikipedia — National Stock Exchange of India](https://en.wikipedia.org/wiki/National_Stock_Exchange_of_India)
+27. [NSE Press Release, January 2024](https://nsearchives.nseindia.com/web/sites/default/files/2024-01/PR_cc_18012024_0.pdf)
+28. [Whalesbook — NSE to Launch Platts Oil Derivatives](https://www.whalesbook.com/news/English/commodities/NSE-to-Launch-Platts-Oil-Derivatives-for-Indias-Price-Hedging/69d3c9f731d4f2ab480c738f)

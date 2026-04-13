@@ -1,0 +1,679 @@
+# Osaka Exchange (오사카거래소, OSE)
+
+> **최종 수정일:** 2026-04-06
+> **조사 등급:** Tier 2
+> **분야:** 파생상품 (Derivatives)
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 상세 |
+|------|------|
+| 정식 명칭 | Osaka Exchange, Inc. (株式会社大阪取引所) |
+| 약칭 | OSE |
+| 웹사이트 | https://www.jpx.co.jp/english/derivatives/ |
+| 설립 연도 | 1878년 (오사카증권거래소로); 2014년 3월 24일 Osaka Exchange, Inc.로 개명 |
+| 소재지 | 일본 / 오사카 (등기본점); 매매시스템은 도쿄 데이터센터에서 운영 |
+| 소유 구조 | Japan Exchange Group, Inc. (JPX, TSE: 8697)의 100% 자회사 |
+| 모회사 / 그룹 | Japan Exchange Group (JPX) — Tokyo Stock Exchange (TSE, 현물 주식), Osaka Exchange (OSE, 파생상품), Tokyo Commodity Exchange (TOCOM, 상품 파생상품), Japan Securities Clearing Corporation (JSCC, CCP), JPX Market Innovation & Research를 포괄하는 수직 통합 그룹 |
+| 감독 기관 | 일본 금융청 (JFSA); 증권거래등감시위원회 (SESC); 경제산업성 (METI) — 상품 파생상품 |
+| 연간 거래량 (CY2024) | 4억 6,416만 5,639 계약 (역대 최고); 거래 금액 JPY 4,156조 |
+| 일평균 거래량 (FY2024) | 186만 계약 (역대 최고, 전년 대비 +8.4%) |
+| 상장 상품 | 주가지수 선물 및 옵션, JGB 선물 및 옵션, 금리 선물, 상품 선물 및 옵션, 증권 옵션 |
+| 핵심 상품 | Nikkei 225 선물/미니/마이크로, TOPIX 선물/미니, JGB 선물 (10년물, 20년물), Nikkei 225 옵션, 3개월 TONA 선물 |
+
+[출처: JPX, "Trading Overview in Year 2024 & December 2024", December 2024, https://www.jpx.co.jp/english/corporate/news/news-releases/0063/20241230-01.html]
+[출처: JPX, "Trading Overview in FY2024 & March 2025", April 2025, https://www.jpx.co.jp/english/corporate/news/news-releases/0063/20250401-01.html]
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **1697년**: 오사카 도지마 지구로 쌀 거래 이전
+- **1730년**: 도지마 쌀거래소, 도쿠가와 막부에 의해 공식 승인 — 일본 선물 거래의 기원으로 인정 (초합미 선도계약)
+- **1878년 (6월)**: 오사카주식거래소 주식회사 설립
+- **1988년**: 오사카증권거래소(OSE)에서 Nikkei 225 선물 출시 — 국제적으로 인정받는 벤치마크 지수 선물
+- **1988년**: 20년물 JGB 선물 출시
+- **2001년**: J-GATE 1.0 파생상품 매매시스템 출시 (Nasdaq/OMX 기술로 개발)
+- **2006년**: Nikkei 225 미니 선물 출시 (표준 계약의 1/10 규모)
+- **2011년**: J-GATE 2.0 업그레이드 시스템 출시 (2월)
+- **2013년 (1월 1일)**: Tokyo Stock Exchange Group과 Osaka Securities Exchange의 합병으로 Japan Exchange Group (JPX) 출범
+- **2013년 (7월 16일)**: OSE 현물 주식 시장이 TSE에 통합; OSE는 전용 파생상품 거래소로 전환
+- **2014년 (3월 24일)**: Osaka Securities Exchange에서 **Osaka Exchange, Inc.**로 개명; TSE 파생상품 시장이 OSE에 통합되어 모든 JPX 파생상품이 단일 거래소로 통합
+- **2016년**: 차세대 J-GATE (J-GATE 2.5) 출시, ITCH 시장 데이터 피드 포함
+- **2018년**: OSE, 미국 CFTC에 해외거래위원회(FBOT)로 등록, 미국 참여자의 직접 접근 허용
+- **2020년**: TOCOM 상품 파생상품 (귀금속, 고무, 농산물)이 OSE에 통합
+- **2021년 (9월 21일)**: **J-GATE 3.0** 출시 — OSE와 TOCOM을 단일 Nasdaq Genium INET 플랫폼에 통합
+- **2022년 (5월)**: Nikkei 225 마이크로 선물 출시 (표준 계약의 1/100 규모, 소매 투자자 대상)
+- **2022년 (9월 23일)**: 파생상품 휴일 매매 시작
+- **2023년 (5월)**: Nikkei 225 미니 옵션 출시; JSCC, 증거금 방법론을 SPAN에서 VaR로 전환 (11월)
+- **2024년**: 연간 파생상품 거래량 4억 6,400만 계약으로 역대 최고; BOJ 금리 인상에 따라 3개월 TONA 선물 급성장
+- **2025년**: 3개월 TONA 선물 미결제약정 10만 계약 초과 (2025년 3월, 역대 최고); 20년물 JGB 선물 연간 거래량 기록 경신; J-GATE 4.0 발표 (Nasdaq Eqlipse 플랫폼, ~2028년 출시)
+
+[출처: Wikipedia, "Osaka Exchange", https://en.wikipedia.org/wiki/Osaka_Exchange]
+[출처: JPX, "Before JPX Launched | History (OSE)", https://www.jpx.co.jp/english/corporate/about-jpx/history/02-01.html]
+[출처: Nasdaq, "OSE's New Derivatives Trading System, J-GATE, Launched", https://ir.nasdaq.com/news-releases/news-release-details/oses-new-derivatives-trading-system-j-gate-launched]
+[출처: CFTC, "Orders of Registration to Osaka Exchange", 2018, https://www.cftc.gov/PressRoom/PressReleases/7772-18]
+[출처: Mondovisione, "3-Month TONA Futures Open Interest Surpasses 100,000 Contracts", March 2025, https://mondovisione.com/media-and-resources/news/osaka-exchange-3-month-tona-futures-open-interest-surpasses-100000-contracts-2025314/]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 부문 (Market Segments)
+
+| 부문 | 주요 상품 | 설명 |
+|------|-----------|------|
+| **주가지수 선물 (Equity Index Futures)** | Nikkei 225 선물, Nikkei 225 미니, Nikkei 225 마이크로, TOPIX 선물, 미니-TOPIX, JPX-Nikkei 400 선물, TOPIX Core30 선물, TOPIX Banks Index 선물, TSE Mothers Index 선물, TSE REIT Index 선물, Nikkei 225 VI 선물 | 대형부터 마이크로 규모까지 일본 주가지수 선물 전 범위 |
+| **주가지수 옵션 (Equity Index Options)** | Nikkei 225 옵션, Nikkei 225 미니 옵션 (주간 포함), TOPIX 옵션, JPX-Nikkei 400 옵션, TOPIX Banks Index 옵션, TSE REIT Index 옵션 | 일본 주가지수에 대한 유럽식 옵션 |
+| **JGB 파생상품 (JGB Derivatives)** | 10년물 JGB 선물, 20년물 JGB 선물, 미니-10년물 JGB 선물 (현금결제), 10년물 JGB 선물 옵션 | 일본 국채에 대한 금리 파생상품 |
+| **금리 선물 (Interest Rate Futures)** | 3개월 TONA 선물 | 도쿄 익일물평균금리(TONA) 기반 익일물금리 선물; BOJ 금리 정상화 이후 급성장 |
+| **증권 옵션 (Securities Options)** | 개별주식 옵션 | TSE 상장 개별 주식에 대한 옵션 |
+| **상품 선물 및 옵션 (Commodity Futures & Options)** | 금, 은, 백금, 팔라듐, 고무 (RSS3, TSR20), 옥수수, 대두, 팥, 전력 선물 | 2020년 TOCOM에서 통합; 귀금속 및 농산물 |
+
+[출처: JPX, "Derivatives Products", https://www.jpx.co.jp/english/derivatives/products/]
+
+### 2.2 매매 세션 (Trading Sessions)
+
+OSE는 일본표준시(JST, UTC+9)로 운영된다. 핵심 특징은 유럽 및 미국 매매시간을 커버하는 광범위한 **야간 세션**이다.
+
+| 세션 | JST | UTC | 설명 |
+|------|-----|-----|------|
+| **사전 개장 (주간)** | 08:00 - 08:45 | 23:00 - 23:45 (전일) | 주문 입력 기간; 체결 없음; 개장 단일가매매 준비 |
+| **주간 세션 (Day Session)** | 08:45 - 15:15 | 23:45 - 06:15 (전일) | 개장 단일가매매 후 접속매매 |
+| **사전 개장 (야간)** | 16:15 - 16:30 | 07:15 - 07:30 | 야간 세션 주문 입력 |
+| **야간 세션 (Night Session)** | 16:30 - 06:00 (+1) | 07:30 - 21:00 | 유럽 및 미국 시간을 커버하는 연장 세션; 다음날 오전 6:00까지 운영 |
+
+**상품별 변동:**
+- **지수 선물/옵션 (Nikkei 225, TOPIX 등)**: 주간 08:45–15:15; 야간 16:30–06:00 (+1일)
+- **JGB 선물/옵션**: 주간 08:45–15:02; 야간 16:30–06:00 (+1일)
+- **3개월 TONA 선물**: 주간 08:45–15:02; 야간 16:30–06:00 (+1일)
+- **Nikkei 225 VI 선물**: 주간 08:45–15:15; 야간 16:30–19:00 (단축 야간)
+- **상품 선물 (금, 백금 등)**: 주간 08:45–15:15; 야간 16:30–06:00 (+1일)
+- **고무 선물**: 주간 08:45–15:15; 야간 16:30–19:00 (단축 야간)
+- **전력 선물**: 주간 08:45–15:15; 야간 16:30–19:00 (단축 야간)
+- **증권 옵션**: 주간 08:45–15:15; 야간 16:30–06:00 (+1일) [unverified]
+
+**야간 세션의 중요성:** FY2024에 야간 세션이 전체 파생상품 거래량의 **40.5%** (1억 8,416만 7,267 계약)를 차지하여, 역대 두 번째로 높은 비율을 기록하였으며, 이는 글로벌 투자자에게 그 핵심적 중요성을 보여준다.
+
+**휴일 매매:** 2022년 9월부터 OSE는 일부 국경일 (토요일, 일요일, 1월 1일 제외)에 파생상품 매매를 실시하여 국제 시장 시간대에 헤지 기회를 제공한다.
+
+[출처: JPX, "Trading Hours | Derivatives", https://www.jpx.co.jp/english/derivatives/rules/trading-hours/index.html]
+[출처: JPX, "Night Session | Derivatives", https://www.jpx.co.jp/english/derivatives/rules/trading-hours/01.html]
+[출처: FIA, "The Market Never Sleeps: The Success of Extended Trading Hours at JPX", https://www.fia.org/marketvoice/articles/market-never-sleeps-success-extended-trading-hours-jpx]
+
+### 2.3 호가단위 (최소가격변동폭) 및 거래단위 (Tick Sizes and Lot Sizes)
+
+| 상품 | 호가단위 (Tick Size) | 틱 가치 (Tick Value) | 계약 승수 | 거래단위 |
+|------|---------------------|---------------------|-----------|----------|
+| Nikkei 225 선물 | 10엔 | JPY 10,000 | 1,000x 지수 | 1 계약 |
+| Nikkei 225 미니 | 5엔 | JPY 500 | 100x 지수 | 1 계약 |
+| Nikkei 225 마이크로 | 5엔 | JPY 50 | 10x 지수 | 1 계약 |
+| TOPIX 선물 | 0.5 포인트 | JPY 5,000 | 10,000x 지수 | 1 계약 |
+| 미니-TOPIX 선물 | 0.25 포인트 | JPY 250 | 1,000x 지수 | 1 계약 |
+| 10년물 JGB 선물 | 액면 100엔당 JPY 0.01 | JPY 10,000 | 액면가 JPY 1억 | 1 계약 |
+| 미니-10년물 JGB 선물 | 액면 100엔당 JPY 0.005 | JPY 500 | 액면가 JPY 1,000만 | 1 계약 |
+| 20년물 JGB 선물 | 액면 100엔당 JPY 0.01 | JPY 10,000 | 액면가 JPY 1억 | 1 계약 |
+| Nikkei 225 옵션 | 1엔 (프리미엄 < 100); 5엔 (100-1,000); 10엔 (>= 1,000) | 상이 | 1,000x 지수 | 1 계약 |
+
+[출처: JPX, "Contract Specifications | Nikkei 225 Futures", https://www.jpx.co.jp/english/derivatives/products/domestic/225futures/01.html]
+[출처: JPX, "Contract Specifications | JGB Futures", https://www.jpx.co.jp/english/derivatives/products/jgb/jgb-futures/01.html]
+
+### 2.4 시장조성자 (마켓메이커) 프로그램 (Market Maker Programs)
+
+OSE는 긴밀한 매수-매도 스프레드와 지속적 유동성을 보장하기 위해 일부 상품에 대해 시장조성자(MM) 및 유동성공급자(LP) 프로그램을 운영한다. 지정 시장조성자는 지정된 매개변수 (최대 스프레드, 최소 수량, 최소 호가 시간) 내에서 양방향 호가를 유지하는 대가로 수수료 할인 또는 인센티브 지급을 받는다.
+
+대상 상품은 Nikkei 225 옵션, TOPIX 옵션, JGB 선물 옵션, 증권 옵션, Nikkei 225 마이크로 선물 및 3개월 TONA 선물 등 신규 상품을 포함한다. [unverified — 구체적 프로그램 세부사항]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 단일가매매 (경매) 메커니즘 (Auction Mechanisms)
+
+- **개장 단일가매매 (판이타세, Itayose)**: 각 세션 (주간 및 야간) 시작 시 단일가 단일가매매 (판이타세 방식)로 주문 체결. 사전 개장 기간에 누적된 모든 주문이 거래량을 최대화하는 단일 균형가에서 체결.
+- **종가 단일가매매 (Closing Auction)**: 각 세션 종료 시 정산가를 결정하는 종가 단일가매매. 특정 상품의 종가는 판이타세 방식으로 결정.
+
+### 3.2 접속매매 (연속매매) (자라바, Zaraba) (Continuous Trading)
+
+개장 단일가매매 후 접속체결 (자라바 방식)을 통해 매매 진행:
+- 유입 주문이 가격-시간 우선 기준에 따라 호가장과 체결
+- 체결이 이루어지지 않으면 주문이 지정가에서 호가장에 잔류
+- 시장가주문이 가장 높은 우선순위를 가지며 최우선 가격으로 체결
+
+### 3.3 가격 발견 (Price Discovery)
+
+- **특별호가 (SQ, Special Quotation)**: 지수 선물 및 옵션의 최종결제를 위해, 최종 거래일 다음 영업일 각 구성종목의 시가에 기반하여 특별호가(SQ) 값을 산출. 이 SQ 값이 최종결제가로 기능.
+- **이론적 시가 (TOP, Theoretical Opening Price)**: 사전 개장 기간에 예상 시가 수준을 나타내는 이론적 시가를 배포.
+
+### 3.4 주문 우선순위 (Order Priority)
+
+1. **가격 우선**: 더 좋은 가격의 주문 (높은 매수호가, 낮은 매도호가)이 우선
+2. **시간 우선**: 동일 가격의 주문 중 먼저 제출된 주문이 우선
+
+[출처: JPX, "Trading | Derivatives", https://www.jpx.co.jp/english/derivatives/rules/]
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 기본 주문 유형 (Standard Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|------|
+| **지정가주문 (Limit Order)** | 지정된 가격 또는 그보다 유리한 가격으로 매수 또는 매도 주문 |
+| **시장가주문 (Market Order)** | 최우선 가격으로 매수 또는 매도 주문; 접속매매 중 즉시 체결 |
+| **시장-지정가 주문 (Market-to-Limit Order)** | 시장가주문으로 제출; 미체결 잔량은 체결 가격의 지정가주문으로 전환 |
+
+### 4.2 고급 / 조건부 주문 유형 (Advanced / Conditional Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|------|
+| **역지정가 주문 (Stop Order, Trigger Order)** | 지정된 발동가에 도달하면 활성화되는 주문 |
+| **역지정가-지정가 주문 (Stop-Limit Order)** | 발동 시 지정가주문으로 전환되는 역지정가 주문 |
+| **스프레드/조합 주문 (Spread/Combination Order)** | 서로 다른 결제월 또는 상품 간 동시 매수 및 매도 주문 (캘린더 스프레드, 상품간 스프레드) |
+| **아이스버그 주문 (Iceberg Order)** | 총 수량의 일부만 호가장에 표시되는 대규모 주문 [unverified] |
+
+### 4.3 주문 유효조건 (Time-in-Force)
+
+| TIF | 설명 |
+|-----|------|
+| **GFD (Good for Day)** | 현재 매매 세션에만 유효 |
+| **GFS (Good for Session)** | 현재 세션 (주간 또는 야간)에 유효 |
+| **GTC (Good till Cancelled)** | 체결되거나 취소될 때까지 유지 |
+| **FAK (Fill and Kill)** | 가능한 만큼 즉시 체결; 미체결 잔량 취소 |
+| **FOK (Fill or Kill)** | 전량 즉시 체결되거나 전량 취소 |
+
+### 4.4 수정 / 취소 (Modification / Cancellation)
+
+- 매매 세션 중 주문의 가격, 수량 수정 또는 취소 가능
+- 사전 개장 기간에는 주문 입력, 수정, 취소 가능하나 체결은 없음
+- **TradeGuard** 사전 매매 리스크 검사가 모든 주문 제출에 적용
+
+[출처: JPX, "J-GATE", https://www.jpx.co.jp/english/systems/derivatives-trading/01.html]
+
+---
+
+## 5. 매매시스템 / 기술 (Trading System / Technology)
+
+### 5.1 J-GATE (현행: 버전 3.0)
+
+| 항목 | 상세 |
+|------|------|
+| 시스템 명칭 | J-GATE (Global Access Trading Engine) |
+| 현재 버전 | J-GATE 3.0 (2021년 9월 21일 출시) |
+| 기술 벤더 | Nasdaq (Genium INET 플랫폼) |
+| 아키텍처 | 분산 접근 게이트웨이를 갖춘 중앙 매매체결엔진 |
+| 주문 처리 지연 | 100 마이크로초 미만 (평균 응답시간) — 이전 시스템 대비 20배 개선 [unverified — 3.0 정확한 수치] |
+| 처리량 | 초당 ~100,000 주문 (이전 시스템 대비 8배 개선) |
+| 매매 프로토콜 | OUCH (주문 입력), ITCH (시장 데이터), OMnet API |
+| 사전 매매 리스크 | TradeGuard — 모든 매매참가자에 대한 필수 사전 매매 리스크 검사 |
+
+### 5.2 시스템 연혁 (System History)
+
+| 버전 | 연도 | 플랫폼 | 주요 변경 |
+|------|------|--------|-----------|
+| J-GATE 1.0 | 2001 | Nasdaq OMX | OSE 최초의 전자 파생상품 플랫폼 |
+| J-GATE 2.0 | 2011 | Nasdaq OMX | 시스템 갱신; 지연 및 용량 개선 |
+| J-GATE 2.5 | 2016 | Nasdaq Genium INET | ITCH 시장 데이터 피드 추가; API 강화 |
+| J-GATE 3.0 | 2021 | Nasdaq Genium INET | OSE와 TOCOM을 통합 플랫폼에 합병; TradeGuard 필수화 |
+| J-GATE 4.0 | ~2028 (예정) | Nasdaq Eqlipse | Eqlipse Trading 및 Nasdaq Market Surveillance 기술을 활용한 차세대 플랫폼; 40 마이크로초 미만 지연 목표 |
+
+### 5.3 기술 스택 (Tech Stack)
+
+- **매매체결엔진**: Nasdaq Genium INET — 전 세계 다수 거래소에서 사용
+- **시장 감시**: Nasdaq SMARTS (현행); J-GATE 4.0과 함께 Nasdaq Market Surveillance로 이전 예정
+- **주문 입력 API**: OUCH 프로토콜 (바이너리, 저지연)
+- **시장 데이터 피드**: ITCH 프로토콜 (멀티캐스트)
+- **레거시 API**: OMnet (C++ 라이브러리 기반 API)
+
+### 5.4 재해복구 / BCP (Disaster Recovery / BCP)
+
+- JPX는 업무연속성을 위한 주 데이터센터 및 백업 사이트 운영
+- J-GATE는 장애 조치 메커니즘을 갖춘 고가용성 설계
+- 시스템 장애 시 OSE는 매매를 중단하고 백업 시스템에서 재개 가능
+- 구체적 DR 사이트 위치 및 RTO/RPO 세부사항 미공개 [unverified]
+
+[출처: Nasdaq, "Japan's Osaka Exchange Adopts Nasdaq Eqlipse Trading and Surveillance Technology", https://ir.nasdaq.com/news-releases/news-release-details/japans-osaka-exchange-adopts-nasdaq-eqlipse-trading-and]
+[출처: JPX, "J-GATE | Derivatives Trading Services", https://www.jpx.co.jp/english/systems/derivatives-trading/01.html]
+[출처: FinanceFeeds, "Osaka Exchange Selects Nasdaq to Build Next-Generation Derivatives Trading System", https://financefeeds.com/osaka-exchange-selects-nasdaq-to-build-next-generation-derivatives-trading-system/]
+
+---
+
+## 6. 시장 데이터 (Market Data)
+
+### 6.1 피드 프로토콜 (Feed Protocols)
+
+| 피드 | 프로토콜 | 설명 |
+|------|----------|------|
+| **실시간 시장 데이터** | ITCH (멀티캐스트) | Level 1 및 Level 2 호가장 데이터; 멀티캐스트를 통한 결정론적 배포 |
+| **주문 입력** | OUCH | 주문 제출, 수정, 취소를 위한 바이너리 프로토콜 |
+| **레거시 API** | OMnet | 시장 데이터 및 주문 입력 모두를 위한 C++ 라이브러리 기반 API |
+| **FIX 프로토콜** | FIX 4.2/4.4 | 제3자 ISV 게이트웨이를 통해 이용 가능 [unverified — 버전] |
+
+### 6.2 데이터 수준 (Data Levels)
+
+| 수준 | 내용 |
+|------|------|
+| **Level 1** | 최우선 매수/매도호가, 최근 거래 가격, 거래량, 고/저가 |
+| **Level 2** | 전체 호가장 깊이 (복수 가격 수준) |
+| **Level 3 (FLEX Historical)** | 나노초 타임스탬프의 패킷 캡처 형식(.pcap) 틱별 과거 데이터; JPX Market Innovation & Research에서 이용 가능 |
+
+### 6.3 배포 (Distribution)
+
+- **실시간 데이터** 코로케이션 멀티캐스트 및 관리형 네트워크 연결을 통해 배포
+- **정보 벤더**: 주요 글로벌 데이터 벤더 (Bloomberg, Refinitiv 등)가 OSE 시장 데이터 재배포
+- **JPX Market Data Cloud**: 시장 데이터를 위한 클라우드 기반 배포 서비스 [unverified]
+
+### 6.4 과거 데이터 (Historical Data)
+
+- **FLEX Historical**: .pcap 형식으로 저장된 수신 시간 타임스탬프의 틱 데이터 (2021년 5월 24일 이후 데이터 이용 가능)
+- **일일 보고서**: JPX 웹사이트에 시가, 고가, 저가, 종가 및 거래량 게시
+- **대안 데이터 서비스 (J-GATE)**: 학술 및 정량 연구를 위한 주문 수준 데이터
+
+[출처: JPX, "Real Time Market Data | Paid Information Services (Derivatives)", https://www.jpx.co.jp/english/markets/paid-info-derivatives/realtime/index.html]
+[출처: JPX, "Alternative Data Service (J-GATE)", https://www.jpx.co.jp/english/markets/paid-info-alternative/j-gate/index.html]
+
+---
+
+## 7. 접속 및 접근 (Connectivity & Access)
+
+### 7.1 회원 / 매매참가자 유형 (Membership / Trading Participant Types)
+
+OSE에서 매매하려면 다음 매매참가자 유형 중 하나로 등록해야 한다:
+
+| 참가자 유형 | 범위 |
+|-------------|------|
+| **선물거래참가자 (Futures Trading Participant)** | 주가지수 및 증권 파생상품 |
+| **국채선물거래참가자 (Government Bond Futures Trading Participant)** | JGB 선물 및 옵션 |
+| **상품선물거래참가자 (Commodity Futures Trading Participant)** | 상품 파생상품 (금, 고무 등) |
+
+**요건:**
+- 금융상품거래법(FIEA)에 따라 금융상품거래업자, 등록금융기관, 또는 상품파생상품거래업자로 등록 필요
+- JSCC 청산 자격 취득 또는 대리 청산참가자 지정 필요
+- 거래소의 자격 심사 통과 필요
+- 외국 기업은 원격 매매참가자 자격 또는 CFTC FBOT 등록 (2018년 이후 미국 기반 참가자)을 통해 참여 가능
+
+### 7.2 접속 방법 (Connection Methods)
+
+| 방법 | 설명 |
+|------|------|
+| **코로케이션 (Co-Location)** | JPX 주 데이터센터 (@Tokyo CC2 시설) 랙 공간; arrowhead (TSE) 및 J-GATE (OSE)의 매매체결엔진과 같은 층 |
+| **근접 호스팅 (Proximity Hosting)** | JPX 데이터센터 인근 제3자 시설 (예: Pico, Colt) |
+| **관리형 네트워크** | 참가자 사무실과 JPX를 연결하는 전용 임대회선 |
+| **인터넷 VPN** | 소규모 참가자를 위한 저비용 연결 옵션 [unverified] |
+
+### 7.3 코로케이션 상세 (Co-Location Details)
+
+- 도쿄 JPX 주 사이트에 위치
+- J-GATE (파생상품), arrowhead (주식), ToSTNeT (장외 주식), 시장정보시스템에 대한 직접 연결 제공
+- Pico, Colt 및 기타 인프라 제공업체가 코로케이션 시설 내 Layer 1 (물리적 크로스커넥트) 연결을 제공하여 초저지연 접근 달성
+- 코로케이션에서 매매체결엔진까지의 지연: 서브마이크로초 네트워크 지연 (시장 데이터 전달에 5 나노초 주장) [unverified — 스위치 수준 지연일 가능성]
+
+### 7.4 API 프로토콜 (API Protocols)
+
+- **OUCH**: 주요 저지연 바이너리 주문 입력 프로토콜
+- **ITCH**: 주요 시장 데이터 배포 프로토콜
+- **OMnet**: 주문 입력 및 시장 데이터를 위한 레거시 C++ API
+- Trading Technologies (TT), CQG, Fidessa 등을 통한 제3자 ISV 연결 이용 가능
+
+### 7.5 인증 (Certification)
+
+- 매매참가자는 운영 개시 전 시스템 연결 테스트 및 인증 완료 필요
+- 각 API (OUCH, ITCH, OMnet)별 별도 인증 필요
+
+[출처: JPX, "Connectivity Services", https://www.jpx.co.jp/english/systems/connectivity/index.html]
+[출처: JPX, "Trading Participants", https://www.jpx.co.jp/english/rules-participants/participants/index.html]
+[출처: Pico, "Pico Expands its Services at Japan Exchange Group Colocation Facility", https://www.pico.net/press-release/pico-expands-its-services-at-japan-exchange-group-colocation-facility-with-layer-1-connectivity/]
+
+---
+
+## 8. 리스크 통제 및 서킷브레이커 (매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 가격제한 (정적 서킷브레이커) (Price Limits — Static Circuit Breakers)
+
+OSE는 선물 및 옵션 계약에 일일 가격제한 범위를 적용한다. 이 제한은 기준가에 사전 결정된 비율을 곱하여 산출되며 분기별 (3, 6, 9, 12월) 재산출된다.
+
+**확대 메커니즘:**
+- 선물 계약이 가격제한에 도달하면 모든 관련 계약 (동일 기초자산 지수)의 매매가 약 **10분간** 일시 중단
+- 중단 후 확대된 가격제한 (1차 확대)으로 매매 재개
+- 다시 제한에 도달하면 추가 확대 (2차 확대) 적용
+
+**예시 (Nikkei 225 선물):** 정상 조건하에서 초기 가격제한은 기준가의 약 8%. 1차 확대 후 제한이 더 넓어짐. [unverified — 정확한 백분율은 기간에 따라 상이]
+
+### 8.2 즉시체결가능가격범위 (동적 서킷브레이커) (Immediately Executable Price Range — Dynamic Circuit Breakers)
+
+접속매매 중 급격한 대폭 가격 변동을 방지하는 동적 서킷브레이커 메커니즘 (즉시체결가능가격범위 규칙):
+- 유입 주문이 최근 거래가로부터 "즉시체결가능가격범위" 밖의 가격에서 체결될 경우 일시 매매 중단 발동
+- 이는 변동성 중단 메커니즘과 유사하게 기능
+- 단일가 단일가매매를 통한 짧은 냉각 기간 후 매매 재개
+
+### 8.3 사전 매매 리스크 통제 (Pre-Trade Risk Controls)
+
+- **TradeGuard**: 모든 매매참가자에 대해 J-GATE 3.0에 구현된 필수 사전 매매 리스크 검사 시스템
+  - 최대 주문 크기 한도
+  - 최대 포지션 한도
+  - 주문 가격 합리성 검사
+  - 거래소 의무 최소 기준 하에 각 매매참가자가 설정
+
+### 8.4 킬 스위치 (Kill Switch)
+
+- 매매참가자는 TradeGuard 또는 수동 절차를 사용하여 모든 대기 주문을 취소하고 신규 주문 입력을 방지 가능
+- OSE도 비상 상황에서 참가자의 매매를 중단할 수 있음
+
+[출처: JPX, "Price Limits / Circuit Breaker Rule | Derivatives", https://www.jpx.co.jp/english/derivatives/rules/price-limit-cb/]
+[출처: JPX, "Immediately Executable Price Range Rule", https://www.jpx.co.jp/english/derivatives/rules/price-range/]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관 (Supervising Authority)
+
+| 감독기관 | 역할 |
+|----------|------|
+| **일본 금융청 (JFSA)** | 주요 감독기관; FIEA에 따라 증권 및 파생상품 시장 감독 |
+| **증권거래등감시위원회 (SESC)** | 시장 참가자에 대한 현장 및 비현장 검사 수행; 시장 부정행위 조사 |
+| **경제산업성 (METI)** | JFSA와 함께 상품 파생상품 공동 규제 |
+| **농림수산성 (MAFF)** | 농산물 상품 파생상품 공동 규제 |
+
+### 9.2 주요 규정 (Key Regulations)
+
+- **금융상품거래법 (FIEA)**: 일본의 증권 및 파생상품을 규율하는 주요 법률; 2006년 6월 14일 공포 (증권거래법 대체)
+- **상품파생상품거래법**: 상품 선물 거래를 규율
+- **OSE 업무규정**: 매매 행위, 참가자 의무, 상장 기준, 시장 운영을 규율하는 거래소 수준 규칙
+- **JSCC 규칙**: 증거금, 결제, 이행불능 관리를 규율하는 청산 규칙
+
+### 9.3 시장 감시 (Market Surveillance)
+
+- OSE는 Nasdaq SMARTS 기술을 사용하여 실시간 시장 감시 수행
+- 시장 조작, 내부자 거래, 비정상적 매매 패턴 모니터링
+- TSE (현물)와 OSE (파생상품) 간 교차시장 감시 조율
+- J-GATE 4.0과 함께 Nasdaq Market Surveillance 기술로 업그레이드 예정
+
+### 9.4 보고 요건 (Reporting Requirements)
+
+- 매매참가자에 대한 대규모 포지션 보고 의무
+- JSCC에 대한 일일 증거금 보고
+- JFSA에 대한 거래 보고
+
+### 9.5 국경간 접근 (Cross-Border Access)
+
+- OSE, 2018년 미국 CFTC에 **해외거래위원회(FBOT)**로 등록, 미국 소재 시장 참가자의 직접 접근 허용
+- 기타 관할권과의 양자 인정 협약 [unverified — 구체적 관할권]
+- CME Group/OSE Nikkei 225 선물 교차상장 파트너십
+
+[출처: JFSA, "Financial Instruments and Exchange Act", https://www.fsa.go.jp/en/policy/fiel/index.html]
+[출처: CFTC, "CFTC Issues Orders of Registration to Osaka Exchange", https://www.cftc.gov/PressRoom/PressReleases/7772-18]
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 매매참가자 수수료 구조 (2026년 1월 기준) (Trading Participant Fee Structure)
+
+수수료는 매매참가자에게 부과된다 (최종 투자자에게 직접 부과되지 않음). 최종 투자자 수수료는 중개사의 수수료 구조에 따라 달라진다.
+
+**기본 수수료:**
+
+| 수수료 유형 | 금액 |
+|-------------|------|
+| 매매참가 수수료 (일회) | 참가자 유형별 상이 [unverified — 정확한 금액] |
+| 월간 기본 수수료 | 연결/터미널당 부과 [unverified — 정확한 금액] |
+
+**매매 수수료 (계약당, 매매참가자에 부과):**
+
+| 상품 분류 | 대략적 수수료 범위 |
+|-----------|-------------------|
+| Nikkei 225 선물 (표준) | JPY 50–110/계약 (거래량 단계별) |
+| Nikkei 225 미니 선물 | 소규모로 인한 낮은 계약당 수수료 |
+| Nikkei 225 마이크로 선물 | 최저 계약당 수수료 |
+| TOPIX 선물 | JPY 20–50/계약 (거래량 단계별) |
+| JGB 선물 (10년물) | JPY 225–500/계약 (거래량 단계별) |
+| 미니-10년물 JGB 선물 | JPY 38–85/계약 (거래량 단계별) |
+| 옵션 | 프리미엄 수준 및 상품에 따라 상이 |
+
+**청산 수수료:**
+- JSCC가 청산 수수료를 별도 부과, 계약당 최대 JPY 35
+- 거래소 수수료 최소 계약당 JPY 5; 최대: JPY 350
+
+**수수료 인센티브:**
+- 3개월 TONA 선물: 매매 및 청산 수수료 50% 할인 캠페인 2026년 9월 30일까지 연장
+- 지정 상품에 대한 시장조성자 수수료 환급 및 인센티브 프로그램
+- 대량 거래 참가자를 위한 거래량 기반 단계별 할인
+
+### 10.2 시장 데이터 수수료 (Market Data Fees)
+
+- 실시간 파생상품 시장 데이터는 유료 서비스
+- 데이터 수준 (Level 1 vs. 전체 깊이), 터미널 수, 배포 범위에 따라 수수료 구조 상이
+- 과거 데이터 (FLEX Historical)는 JPX Market Innovation & Research에서 별도 수수료로 이용 가능
+
+### 10.3 코로케이션 수수료 (Co-Location Fees)
+
+- JPX 주 사이트의 랙 공간 임대
+- 관리형 회선 네트워크 연결 수수료
+- Layer 1 연결을 위한 크로스커넥트 수수료
+
+[출처: JPX, "Trading Participation Fees", https://www.jpx.co.jp/english/rules-participants/participants/fees/index.html]
+[출처: Interactive Brokers, "OSE Exchange and Regulatory Fees", https://www.interactivebrokers.com/en/accounts/fees/OSE-JPN.php]
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 11.1 시스템 업그레이드 (System Upgrades)
+
+- **J-GATE 4.0 발표 (2025년)**: OSE, 차세대 파생상품 시스템을 위해 Nasdaq의 Eqlipse Trading 플랫폼 및 Nasdaq Market Surveillance 기술 선정. J-GATE 4.0은 2028년 하반기 출시 예정이며 40 마이크로초 미만 지연, 확장성 강화, AI 기반 시장 감시를 제공할 것이다.
+- **J-GATE 3.0 지속 개선**: 안정성 및 성능을 위한 현행 Genium INET 기반 플랫폼의 지속적 업데이트.
+
+### 11.2 신규 상품 및 거래량 (New Products & Volumes)
+
+- **3개월 TONA 선물 성장 (2024–2025)**: BOJ의 마이너스 금리 탈피 (2024년 3월) 및 후속 금리 인상 (2024년 7월, 2025년 1월)에 따라 JPY 금리 헤지 수요 급증. 2025년 3월 미결제약정 10만 계약 돌파. OSE가 TONA 선물에 대한 Pack 및 Bundle 매매 도입.
+- **Nikkei 225 마이크로 선물 성공**: 2022년 5월 소매 투자자 유치를 위해 출시; 2025년 역대 최고 거래량 달성.
+- **Nikkei 225 미니 옵션**: 2023년 5월 주간 만기로 출시, 보다 세분화된 리스크 관리 가능.
+- **20년물 JGB 선물**: 수익률 곡선 매매 증가에 힘입어 2025년 연간 거래량 기록 경신 (196,682계약).
+- **전체 역대 최고 거래량**: CY2024 총 4억 6,400만 계약 (기록); 야간 세션 비중 40.5%.
+
+### 11.3 규제 변경 (Regulatory Changes)
+
+- **JSCC 증거금 VaR 전환 (2023년 11월)**: JSCC, 모든 장내 파생상품에 대해 SPAN 기반 증거금에서 VaR (Value-at-Risk) 방법론으로 전환. 과거 시뮬레이션 (HS-VaR) 사용. VaR 방법은 SPAN의 16개 단순화 시나리오 대비 1,250개 이상의 과거 데이터 포인트를 사용하여, 99% 신뢰수준에서 보다 정확한 리스크 기반 증거금 산출 제공.
+- **증권 옵션 활성화**: 2024-2025년 일본 개별주식 옵션 시장 활성화를 위한 규제 개선, 포지션한도 완화 및 시장조성자 프로그램 강화 포함.
+
+### 11.4 전략적 이니셔티브 (Strategic Initiatives)
+
+- **암호화폐 파생상품 탐색**: OSE 요코야마 료스케 사장이 JPX 중기 전략의 일환으로 신규 자산군 다각화를 위한 암호화폐 선물, 옵션, 암호화폐 ETF 계획 탐색 시사.
+- **휴일 매매 확대**: 글로벌 접근성 극대화를 위한 파생상품 휴일 매매 일정 지속 확대.
+- **CME Group 파트너십**: Nikkei 225 상품에 대한 교차상장 및 상호 상계 약정 지속.
+- **글로벌 접근 촉진**: FBOT 자격 활용 및 야간 세션 시간 연장으로 국제 기관 참여 유치.
+
+[출처: Nasdaq, "Japan's Osaka Exchange Adopts Nasdaq Eqlipse Trading and Surveillance Technology", https://ir.nasdaq.com/news-releases/news-release-details/japans-osaka-exchange-adopts-nasdaq-eqlipse-trading-and]
+[출처: JPX, "JGB and JPY Interest Rate Derivatives Reach Annual Record Highs in 2025", January 2026, https://www.jpx.co.jp/english/news/2041/20260113-01.html]
+[출처: CoinGape, "Osaka Exchange Could Bring Crypto Futures and Options to Japanese Markets Soon", https://coingape.com/osaka-exchange-could-bring-crypto-futures-and-options-to-japanese-markets-soon/]
+[출처: The TRADE, "Japan's equity derivatives market set to grow in 2025", https://www.thetradenews.com/thought-leadership/japans-equity-derivatives-market-set-to-grow-in-2025/]
+
+---
+
+## 파생상품 특화 섹션 (Derivatives-Specific Sections)
+
+### D1. 상품 카탈로그 (Product Catalog)
+
+#### 주가지수 파생상품 (Equity Index Derivatives)
+
+| 상품 | 계약 규모 | 결제 | 출시 연도 |
+|------|-----------|------|-----------|
+| Nikkei 225 선물 | 1,000 x Nikkei 225 | 현금 (SQ) | 1988 |
+| Nikkei 225 미니 선물 | 100 x Nikkei 225 | 현금 (SQ) | 2006 |
+| Nikkei 225 마이크로 선물 | 10 x Nikkei 225 | 현금 (SQ) | 2022 |
+| TOPIX 선물 | 10,000 x TOPIX | 현금 (SQ) | 1988 |
+| 미니-TOPIX 선물 | 1,000 x TOPIX | 현금 (SQ) | 2008 |
+| JPX-Nikkei 400 선물 | 100 x JPX-Nikkei 400 | 현금 (SQ) | 2014 |
+| Nikkei 225 옵션 | 1,000 x Nikkei 225 | 현금 (SQ) | 1989 |
+| Nikkei 225 미니 옵션 | 100 x Nikkei 225 | 현금 (SQ) | 2023 |
+| TOPIX 옵션 | 10,000 x TOPIX | 현금 (SQ) | 1989 |
+| Nikkei 225 VI 선물 | 10,000 x Nikkei VI | 현금 | 2012 |
+
+#### JGB 및 금리 파생상품 (JGB & Interest Rate Derivatives)
+
+| 상품 | 계약 규모 | 결제 | 출시 연도 |
+|------|-----------|------|-----------|
+| 10년물 JGB 선물 | 액면가 JPY 1억 (6% 쿠폰 표준채) | 실물인도 | 1985 |
+| 20년물 JGB 선물 | 액면가 JPY 1억 | 실물인도 | 1988 |
+| 미니-10년물 JGB 선물 | 액면가 JPY 1,000만 | 현금 (10년물 JGB 선물 정산가 기반) | 2009 |
+| 10년물 JGB 선물 옵션 | JGB 선물 1계약 | 실물 (선물 포지션 인도) | 1990 |
+| 3개월 TONA 선물 | JPY 1억 명목 | 현금 (복리 TONA 금리 기반) | 2023 |
+
+#### 상품 파생상품 (TOCOM 상품, OSE 거래) (Commodity Derivatives)
+
+| 상품 | 계약 규모 | 결제 |
+|------|-----------|------|
+| 금 선물 | 1 kg | 실물인도 |
+| 금 미니 선물 | 100 g | 현금 |
+| 은 선물 | 10 kg | 실물인도 |
+| 백금 선물 | 500 g | 실물인도 |
+| 팔라듐 선물 | 500 g | 실물인도 [unverified] |
+| 고무 (RSS3) 선물 | 5,000 kg | 실물인도 |
+| 고무 (TSR20) 선물 | 5,000 kg | 현금 |
+| 옥수수 선물 | 50톤 | 현금 |
+| 대두 선물 | 25톤 | 현금 [unverified] |
+| 전력 (동일본 기저부하) 선물 | 상이 | 현금 |
+
+### D2. 주요 계약 사양 (주요 상품) (Key Contract Specifications)
+
+#### Nikkei 225 선물 (표준)
+
+| 사양 | 상세 |
+|------|------|
+| 계약 승수 | 지수포인트당 JPY 1,000 |
+| 호가단위 (Tick Size) | 10엔 (= 틱당 JPY 10,000) |
+| 결제월 | 19개월: 분기 (3, 6, 9, 12월) — 6/12월 최대 8년, 3/9월 1.5년 |
+| 최종 거래일 | 결제월 둘째 금요일 전일 영업일 |
+| 최종결제 | 특별호가(SQ) 기반 현금결제 |
+| 매매시간 | 주간: 08:45–15:15 JST; 야간: 16:30–06:00 (+1) JST |
+| 명목 가치 (대략) | ~계약당 JPY 4,000만 (Nikkei 225 = 40,000 기준) |
+
+#### Nikkei 225 미니 선물
+
+| 사양 | 상세 |
+|------|------|
+| 계약 승수 | 지수포인트당 JPY 100 (표준의 1/10) |
+| 호가단위 (Tick Size) | 5엔 (= 틱당 JPY 500) |
+| 결제월 | 가장 가까운 3개 분기월 및 가장 가까운 3개 연속월 |
+| 최종 거래일 | 결제월 둘째 금요일 전일 영업일 |
+| 최종결제 | SQ 기반 현금결제 |
+| 의의 | 거래량 기준 세계 3위 주가지수 선물 계약 (2020 FIA 데이터) |
+
+#### Nikkei 225 마이크로 선물
+
+| 사양 | 상세 |
+|------|------|
+| 계약 승수 | 지수포인트당 JPY 10 (표준의 1/100) |
+| 호가단위 (Tick Size) | 5엔 (= 틱당 JPY 50) |
+| 결제월 | 가장 가까운 2개 분기월 및 가장 가까운 2개 연속월 |
+| 최종 거래일 | 결제월 둘째 금요일 전일 영업일 |
+| 최종결제 | SQ 기반 현금결제 |
+| 대상 사용자 | 소매 투자자 및 소규모 헤저; 낮은 증거금 요건 |
+
+#### TOPIX 선물 (표준)
+
+| 사양 | 상세 |
+|------|------|
+| 계약 승수 | 지수포인트당 JPY 10,000 |
+| 호가단위 (Tick Size) | 0.5 포인트 (= 틱당 JPY 5,000) |
+| 결제월 | 분기 (3, 6, 9, 12월) |
+| 최종 거래일 | 결제월 둘째 금요일 전일 영업일 |
+| 최종결제 | SQ 기반 현금결제 |
+
+#### 10년물 JGB 선물
+
+| 사양 | 상세 |
+|------|------|
+| 계약 규모 | 액면가 JPY 1억 (6% 쿠폰 표준채) |
+| 호가단위 (Tick Size) | 액면 100엔당 JPY 0.01 (= 틱당 JPY 10,000) |
+| 결제월 | 분기 (3, 6, 9, 12월) — 가장 가까운 3개 결제월 |
+| 최종 거래일 | 결제월에 따라 상이 [unverified — 통상 20일 전 5영업일] |
+| 결제 | 적격 JGB 종목의 실물인도 |
+| 2025년 연간 거래량 | 10,750,902 계약 (2년 연속 1,000만 초과) |
+
+### D3. 증거금 체계 (Margin Framework)
+
+#### JSCC VaR 기반 증거금 (2023년 11월 이후) (JSCC VaR-Based Margining)
+
+| 항목 | 상세 |
+|------|------|
+| 청산소 | Japan Securities Clearing Corporation (JSCC) — 모든 OSE 장내 파생상품의 CCP |
+| 방법론 | Value-at-Risk (VaR) — 2023년 11월 6일 SPAN 대체 |
+| VaR 접근법 | 과거 시뮬레이션 (HS-VaR): 1,250개 이상 과거 시나리오를 사용한 포트폴리오 손익 산출; 이력 부족 상품에 대한 대안 시뮬레이션 (AS-VaR) 사용 |
+| 신뢰수준 | 잠재적 미래 노출의 최소 99% |
+| 회고 기간 | 최소 1,250 거래일 (~5년) 과거 데이터 |
+| 증거금 유형 | 개시증거금 (선납 보증금) + 변동증거금 (일일 시가평가 결제) |
+| 적격 담보 | 현금 (JPY), 국채, 상장주식, 기타 승인 유가증권 |
+| 마진콜 절차 | 극단적 변동성 시 장중 마진콜 가능; 정기 마진콜은 일말 |
+| 포트폴리오 증거금 | 상관된 포지션 간 교차 증거금 (예: Nikkei 225 선물 및 옵션) |
+
+**이전 SPAN 방법론과의 비교:**
+- VaR는 SPAN의 16개 단순화 시나리오 대비 1,250개 이상 과거 시나리오 사용
+- VaR는 특히 복합 포트폴리오에 대해 보다 정확한 리스크 기반 증거금 제공
+- VaR는 헤지된 포지션에 대해 낮은 증거금, 집중 리스크에 대해 높은 증거금 결과 가능
+
+### D4. 포지션한도 (건옥제한) (Position Limits)
+
+- 포지션한도는 일부 상품의 투기적 포지션에 적용
+- 문서화된 헤지 근거를 갖춘 신청으로 헤지 면제 이용 가능
+- 대규모 포지션 보고 기준 초과 시 OSE 및 JFSA에 대한 보고 의무 발동
+- 구체적 포지션한도 수준은 상품별로 상이하며 OSE 업무규정에 의해 설정 [unverified — 정확한 한도가 단일 출처에 공개적으로 요약되어 있지 않음]
+
+### D5. J-NET 매매 (장외 시설) (J-NET Trading — Off-Auction Facility)
+
+| 항목 | 상세 |
+|------|------|
+| 설명 | 중앙 호가장과 독립적인 파생상품의 장외 (협상) 매매 시설 |
+| 적격 상품 | OSE에 상장된 모든 선물 및 옵션 |
+| 메커니즘 | 참가자가 양자 간 협상하여 일치하는 주문을 J-NET에 제출; 가격, 수량, 상대방 세부사항이 일치하면 체결 |
+| 가격 제약 | 단일가매매 시장 대비 지정된 가격 밴드 내이어야 함 |
+| 매매시간 | 주간 및 야간 세션 모두에서 이용 가능; 휴일 매매일에도 이용 가능 |
+| 유연 계약 | J-NET은 특정 상품에 대해 유연한 조건 (예: 비표준 만기일, 결제 방법) 지원 |
+| 보고 | J-NET 거래 가격 (시가, 고가, 저가, 종가) 및 거래량 매일 공표 |
+| 용도 | 블록거래 (대량매매), 베이시스 매매, 포트폴리오 재조정, 기타 장외 협상 거래 |
+
+[출처: JPX, "J-NET Trading | Derivatives", https://www.jpx.co.jp/english/derivatives/rules/j-net/index.html]
+[출처: JPX, "Outline of J-NET Trading Rules", November 2025, https://www.jpx.co.jp/english/derivatives/rules/outline/dreu250000001ove-att/dreu250000001oxp.pdf]
+
+### D6. 인도 및 결제 (Delivery & Settlement)
+
+#### 현금결제 상품 (대다수) (Cash-Settled Products)
+
+- **주가지수 선물/옵션**: 최종 거래일 다음 영업일 각 구성종목의 시가에 기반하여 산출된 특별호가(SQ) 값으로 결제
+- **미니/마이크로 선물**: 동일 SQ 방법론을 사용한 현금결제
+- **상품 선물 (일부)**: 참조 가격에 기반한 현금결제
+
+#### 실물인도 상품 (Physically-Delivered Products)
+
+- **10년물 JGB 선물**: 적격 JGB 종목의 실물인도; 인도월은 결제월; 인도 가능 바스켓은 잔존 만기 7-11년 (대략)의 JGB로 구성; 전환계수 시스템 사용
+- **20년물 JGB 선물**: 잔존 만기 15-21년 (대략)의 적격 JGB 실물인도 [unverified]
+- **금/백금/은 선물**: 지정 창고를 통한 실물인도
+
+#### 중앙청산소 (Central Counterparty)
+
+- **JSCC (Japan Securities Clearing Corporation)**가 모든 OSE 장내 파생상품의 CCP 역할
+- JSCC가 매수자와 매도자 사이에 개입하여 결제 보증
+- JSCC는 별도 청산 서비스로 OTC JPY 금리 스왑도 청산 (연간 청산 금액 2025년 약 JPY 12,202조에 달해 역대 최고 기록)
+- JSCC는 모든 청산회원이 출연하는 기본이행불능기금 (청산기금)을 유지
+
+[출처: JSCC, "Margin on Futures and Options", https://www.jpx.co.jp/jscc/en/cash/futures/marginsystem/margin.html]
+[출처: JSCC, "Margin Calculation Method (VaR Method)", https://www.jpx.co.jp/jscc/en/cash/futures/marginsystem/VaR.html]
+[출처: JPX, "JGB and JPY Interest Rate Derivatives Reach Annual Record Highs in 2025", January 2026, https://www.jpx.co.jp/english/news/2041/20260113-01.html]
+
+---
+
+## 부록: KRX 파생상품과의 비교 (Appendix: Comparison with KRX Derivatives)
+
+| 항목 | OSE (JPX) | KRX |
+|------|-----------|-----|
+| 매매시스템 | J-GATE 3.0 (Nasdaq Genium INET) | EXTURE+ |
+| 대표 상품 | Nikkei 225 선물/옵션 | KOSPI 200 선물/옵션 |
+| 증거금 방법론 | VaR (JSCC, 2023년 11월 이후) | SPAN (KRX, PC-SPAN) |
+| CCP | JSCC | KRX Clearing |
+| 야간 세션 | 16:30–06:00 JST (13.5시간) | 18:00–06:00 KST (연장 세션) |
+| 휴일 매매 | 있음 (2022년 9월부터, 국경일) | 없음 |
+| FBOT 등록 (미국) | 있음 (2018년 이후) | 있음 |
+
+[주: KRX 비교는 일반적 지식에 기반; 구체적 KRX 세부사항은 별도 검증 필요]

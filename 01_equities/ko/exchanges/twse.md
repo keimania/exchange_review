@@ -1,0 +1,400 @@
+# Taiwan Stock Exchange (TWSE)
+
+> **최종 업데이트:** 2026-04-06
+> **조사 등급:** Tier 3
+> **도메인:** 주식
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | Taiwan Stock Exchange Corporation (TWSE; 臺灣證券交易所) |
+| 약칭 | TWSE |
+| 웹사이트 | https://www.twse.com.tw/en/ |
+| 설립 연도 | 1961년 (10월 23일); 1962년 2월 9일 거래 개시 |
+| 소재지 | 대만 / 타이베이 (타이베이 101에 본사) |
+| 소유 구조 | 비상장 민간법인. 원래 비영리 조직으로 설립, 1994년 법인으로 전환. 주주는 정부 연계 금융기관 및 증권회사. 이사 및 감사의 최소 1/3은 증권당국(FSC)이 공익 대표로 임명 [미확인 -- 정확한 주주 구성은 영문 자료에 미공개] |
+| 모회사 / 그룹 | 해당 없음 -- TWSE는 지주그룹에 속하지 않는 독립 법인 |
+| 감독 기관 | Financial Supervisory Commission (FSC; 金融監督管理委員會) |
+| 시가총액 (상장기업) | 2025년 말 약 94조 대만달러 (약 2.9조 달러); 2026년 1월 초 약 99.6조 대만달러까지 상승. 대만은 주식시장 시가총액 기준 세계 7위 |
+| 총 상장기업 수 | 2025년 중반 기준 약 1,045개사; ETF, ETN, TDR, 워런트, 전환사채 등 별도 |
+| 일평균 거래량 | 영문 자료에 별도 미공개 [미확인] |
+| 일평균 거래대금 | 2025년 기록적 일평균 거래대금 4,160억 대만달러 (약 130억 달러); 2024년 연간 총거래대금 약 100조 대만달러 |
+
+### 주요 연혁 (Key Historical Milestones)
+- **1961년:** Taiwan Stock Exchange Corporation, 비영리 조직으로 10월 23일 설립
+- **1962년:** 2월 9일 상장기업 18개사로 거래 개시
+- **1985년:** 주요 시장 벤치마크로 TAIEX (가권지수) 출범
+- **1993년:** 11월 Fully Automated Securities Trading (FAST) 시스템 출범, 장내매매 대체
+- **1994년:** TWSE, 비영리 조직에서 법인으로 전환
+- **2003년:** 외국인 투자자 일일 투자 한도 폐지; FINI/FIDI 등록 제도 도입
+- **2014년:** 8월 2세대 FAST 시스템 도입 -- 주문 처리 용량 3배 증가(일 650만건에서 2,000만건); 지연시간 약 50ms에서 3ms 미만으로 단축
+- **2015년:** 일일 가격 변동 제한 ±7%에서 ±10%로 확대 (6월 1일 시행)
+- **2019년:** 8월 반차오 근접 데이터센터 개장, 코로케이션(전산센터 공동입주) 서비스 제공
+- **2020년:** 3월 23일 정기 단일가매매에서 접속매매(연속매매)로 전환; 시장가주문, IOC, FOK 등 신규 주문 유형 동시 도입
+- **2020년:** 10월 26일 장중 단주 매매 시스템 출범
+- **2022년:** 장중 단주 매칭 간격 3분에서 1분으로 단축 (12월 19일)
+- **2024년:** 장중 단주 매칭 간격 1분에서 5초로 단축 (12월 2일)
+- **2025년:** TAIEX 사상 최고치 기록; 총 시가총액 94조 대만달러 돌파; 45건 신규 IPO 신청(2008년 이후 최다); 전 상장기업 1,029개사가 8월 31일 기한까지 지속가능성 보고서 제출
+- **2026년:** 기존 기업지배구조 평가를 대체하는 ESG 평가 제도 출범
+
+### 주요 지수 (Key Indices)
+| 지수 | 설명 |
+|-------|-------------|
+| **TAIEX** (가권지수) | 주요 벤치마크; TWSE 상장 전 보통주의 시가총액 가중 지수. TSMC가 전체 지수 비중의 30% 이상 차지하여 큰 영향력 행사 |
+| TWSE Taiwan 50 Index | 시가총액 상위 50개사 (0050 ETF의 기초) |
+| TWSE Taiwan Mid-Cap 100 Index | 시가총액 기준 차순위 100개사 |
+| Taiwan Semiconductor Index | 반도체 기업 섹터별 지수 |
+
+**반도체 집중도:** TSMC (2330.TW)만으로 2025년 TAIEX에 추정 3,813포인트 기여. 반도체 산업이 거래소를 지배하며, 이는 글로벌 반도체 공급망에서의 대만의 중심적 역할을 반영한다.
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 (Market Segments)
+| 구분 | 설명 | 상장 요건 (요약) |
+|---------|-------------|-------------------------------|
+| **메인보드 (TWSE)** | 정량적 상장 기준을 충족하는 기성 기업을 위한 주요 시장 | 수익성 요건, 최소 납입자본금, 영업실적, 공모비율 요건. 매출, 순이익, 주주자본에 대한 재무 기준 충족 필요 |
+| **Taiwan Innovation Board (TIB)** | 혁신 기술기업을 위해 출범; 완화된 상장 요건 [미확인 -- 영문 세부정보 제한적] | 바이오, 기술, 혁신기업 대상으로 완화된 수익성 요건 |
+
+**참고:** Taipei Exchange (TPEx/GTSM)는 소형/성장기업을 위한 대만의 2부 시장으로 TWSE와 별도 운영되며, 이 문서에서는 다루지 않는다. TPEx 산하 Emerging Stock Board (ESB)는 상장 전 시장으로 기능한다.
+
+### 2.2 매매시간 (Trading Sessions)
+| 세션 | 현지시간 (TST, UTC+8) | UTC | 설명 |
+|---------|--------------------------|-----|-------------|
+| 장전 주문접수 | 08:30 - 09:00 | 00:30 - 01:00 | 주문 접수 및 대기; 매칭 미발생 |
+| 시가단일가매매(개장 경매) | 09:00 | 01:00 | 단일가매매에 의한 시가 결정 |
+| 접속매매(연속매매) | 09:00 - 13:25 | 01:00 - 05:25 | 가격-시간 우선원칙에 의한 연속 매칭 |
+| 종가단일가매매(장마감 경매) | 13:25 - 13:30 | 05:25 - 05:30 | 단일가매매에 의한 종가 결정 |
+| 장후 단주 매매 | 13:40 - 14:30 | 05:40 - 06:30 | 단주 주문(1,000주 미만); 단일가매매에 의한 매칭 |
+| 장후 고정가매매 | 14:00 - 14:30 | 06:00 - 06:30 | 종가로 주문 접수; 14:30에 컴퓨터 매칭으로 체결 |
+| 대량매매 | 09:00 - 17:00 | 01:00 - 09:00 | 협의에 의한 대량 거래; 호가단위(최소가격변동폭) 0.01 대만달러 |
+
+**참고사항:**
+- 총 정규 매매시간: 일 4.5시간 (09:00 - 13:30). 대부분 주요 아시아 거래소(JPX: 5.5시간, HKEX: 5.5시간, SGX: 7시간)보다 현저히 짧음
+- 점심시간 없음 -- 개장부터 폐장까지 연속 단일 세션
+- 장중 단주 매매도 정규 시간 09:00~13:30에 운영, 09:10 첫 매칭 후 5초 간격으로 매칭 (2024년 12월 2일 기준)
+- 토요일, 일요일, 국경일 휴장
+
+### 2.3 호가단위 (Tick Sizes)
+| 가격 범위 (대만달러) | 호가단위(최소가격변동폭) (대만달러) |
+|--------------------|-----------------|
+| 10 미만 | 0.01 |
+| 10 이상 50 미만 | 0.05 |
+| 50 이상 100 미만 | 0.10 |
+| 100 이상 500 미만 | 0.50 |
+| 500 이상 1,000 미만 | 1.00 |
+| 1,000 이상 | 5.00 |
+
+**ETF 호가단위(최소가격변동폭):** 50 대만달러 미만 수익증권은 0.01 대만달러; 50 대만달러 이상은 0.05 대만달러.
+
+### 2.4 매매단위 (Lot Sizes)
+- **표준 매매단위(거래단위):** 1,000주 (1 매매단위(거래단위))
+- **단주 매매:** 1~999주 주문; 장중(09:10~13:30, 5초 간격 매칭) 및 장후(13:40~14:30) 세션 모두 이용 가능
+- **대량매매:** 최소 규모 요건 적용; T+2 결제
+
+### 2.5 시장조성자(마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)
+- **주식 시장조성 메커니즘:** 2021년 6월 도입, 저유동성 종목의 거래량 및 유동성 향상 목적
+- **ETF 유동성공급자 프로그램:** 증권회사가 ETF의 스프레드 유지를 위한 유동성공급자로 활동 [미확인 -- 프로그램 세부사항 제한적]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 경매 메커니즘 (Auction Mechanisms)
+- **시가단일가매매(개장 경매):** 09:00에 장전 기간(08:30~09:00) 동안 집적된 모든 주문이 단일가매매를 통해 시가 결정
+- **종가단일가매매(장마감 경매):** 13:25~13:30 동안 단일가매매를 통해 공식 종가 결정
+- **장중 단주 경매:** 단주 주문이 정규 매매시간 중 5초 간격으로 단일가매매에 의해 매칭 (09:10 첫 매칭)
+
+### 3.2 접속매매 (Continuous Trading)
+
+**역사적 변천:**
+1. **2013년 이전:** 20초 매칭 간격의 순수 단일가매매 시스템
+2. **2013~2014년:** 단일가매매 간격 점진적 단축 -- 20초에서 15초(2013년 7월 1일), 10초(2014년 2월 24일), 5초(2014년 12월 29일)
+3. **2020년 3월 23일:** 주식, ETF, ETN, TDR에 대한 접속매매(연속매매)로 완전 전환
+
+**현행 메커니즘 (2020년 3월 이후):**
+- **가격-시간 우선원칙**의 **주문주도형** 시장
+- 정규 세션(09:00~13:25) 동안 실시간 연속 매칭
+- 매매가격, 거래량, 최우선 5단계 매수/매도 호가 및 수량이 실시간 공개
+- 데이터 배포 목적의 "5초 스냅샷"도 제공
+
+### 3.3 가격 발견 (Price Discovery)
+- 시가 및 종가는 단일가매매를 통해 결정, 수급의 투명한 집계 제공
+- 장중 가격은 가격-시간 우선원칙 하의 접속매매(연속매매)를 통해 발견
+- **장중 가격안정화 메커니즘** (동적 서킷브레이커(매매거래중단))은 잠재적 체결 가격이 기준가에서 ±3.5% 이상 이탈 시 2분간 매칭을 일시 중지하여 과도한 단기 변동성을 방지하면서 주문 집적 허용
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 표준 주문 유형 (Standard Order Types)
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| 지정가주문 | 최대 매수가 또는 최소 매도가 지정; 주요하고 가장 일반적인 주문 유형 |
+| 시장가주문 | 최우선 가격으로 체결; 2020년 3월 23일 접속매매(연속매매) 전환과 함께 도입 |
+
+### 4.2 고급 주문 유형 (Advanced Order Types)
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| -- | 조건부주문, 빙산주문, 연동가주문 등 고급 주문 유형은 TWSE에서 이용 불가 [미확인] |
+
+### 4.3 주문 유효기간 (Time-in-Force Options)
+| TIF | 설명 |
+|-----|-------------|
+| ROD (Rest of Day) | 표준 당일 주문; 세션 종료 또는 체결 시까지 유효 |
+| IOC (즉시체결-잔량취소) | 최우선 가격으로 즉시 체결; 미체결 부분 취소. 2020년 3월 23일 도입 |
+| FOK (전량체결-또는-취소) | 전량 즉시 체결 또는 전량 취소. 2020년 3월 23일 도입 |
+
+### 4.4 주문 수정 / 취소 (Order Modification / Cancellation)
+- 지정가주문(ROD)은 매매 세션 중 취소 또는 수량 수정 가능
+- 가격 수정은 불가; 취소 후 새 가격으로 재입력 필요 [미확인]
+- 장중 가격안정화 일시 중지(2분) 동안에도 ROD 주문의 접수, 취소, 수량 수정은 허용
+
+---
+
+## 5. 매매시스템 (기술) (Trading System / Technology)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 시스템 명칭 | FAST (Fully Automated Securities Trading) |
+| 벤더 / 자체 개발 | 자체 개발 / 독자적 개발 |
+| 아키텍처 | 중앙집중형 매매체결엔진(매칭엔진) |
+| 매매체결엔진 (Matching Engine) | 독자적; 가격-시간 우선원칙 접속매매(연속매매) 매칭 (2020년 이후) |
+| 왕복 지연시간 | 3밀리초 미만 (주문 도어-투-도어 지연시간, 2014년 2세대 FAST 기준) |
+| 주문 처리 용량 | 일 2,000만 건 (2세대 FAST) |
+| 초당 메시지 수 | 미공개 [미확인] |
+| 출시 연도 | 1세대: 1993년; 2세대: 2014년 |
+
+### 시스템 연혁 (System History)
+| 기간 | 시스템 | 비고 |
+|--------|--------|-------|
+| 1993년 이전 | 장내매매 / 수동 | 호가매매 시스템 |
+| 1993년 | FAST 1세대 | 완전 전자매매 도입; 단일가매매 방식 매칭 |
+| 2014년 | FAST 2세대 | 용량 3배 증가(일 2,000만건); 지연시간 17배 단축(3ms 미만); 시스템 효율 2배 향상 |
+| 2020년 | FAST 접속매매(연속매매) 적용 | 연속 매칭, 신규 주문 유형(시장가, IOC, FOK) 지원을 위한 소프트웨어 업그레이드; 동일 하드웨어 플랫폼 |
+
+### 기술 스택 (Technology Stack)
+- TWSE가 자체 개발한 독자적 매매시스템
+- 증권사 접속을 위한 독자적 TMP (Transaction Message Protocol)의 대안으로 FIX 프로토콜 지원
+- 전용 프로토콜을 통한 시장 정보 전송 (TWSE 시장정보전송 운영매뉴얼 참조)
+
+### 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)
+- 반차오 데이터센터(2019년 8월 개장)가 주 시설로 기능; TIA-942 Tier 4 적합
+- 신타이베이시 반차오구 소재 10층 건물(지상 7층, 지하 3층)
+- 백업/DR 제도는 영문 자료에 상세 미공개 [미확인]
+
+---
+
+## 6. 시장 데이터 (Market Data)
+
+### 6.1 데이터 피드 프로토콜 (Data Feed Protocols)
+| 프로토콜 | 설명 | 용도 |
+|----------|-------------|----------|
+| TWSE 시장정보전송 | 독자적 프로토콜 | 정보 벤더에 대한 실시간 시장 데이터 배포 |
+| FIX | 주문 라우팅에 이용 가능 | 증권사 접속 (TMP의 선택적 대안) |
+
+### 6.2 데이터 수준 (Data Levels)
+- **실시간 공개:** 매매가격, 거래량, 최우선 5단계 매수/매도 호가 및 수량
+- **5초 스냅샷:** 주기적 집계 시장 데이터 스냅샷
+- **전체 호가 깊이:** 이용 가능 자료에 미기술 [미확인]
+
+### 6.3 배포 인프라 (Distribution Infrastructure)
+- 인가 정보 벤더가 TWSE 시장 데이터 배포
+- Colt는 대만 내 유일한 외국 인가 시장 데이터 벤더 및 Network Service Provider (NSP)
+- Pico가 CHT 타이베이 IDC 경유 접속 및 현지 서비스 제공
+
+### 6.4 과거 데이터 (Historical Data)
+- TWSE는 웹사이트를 통해 과거 매매 데이터(종목별 일일 거래대금/거래량) 제공
+- TWSE Fact Book이 포괄적 시장 통계와 함께 매년 발행
+
+---
+
+## 7. 접속 및 접근 (Connectivity & Access)
+
+### 7.1 회원 / 참가 (Membership / Participation)
+- 인가 증권회사(증권사)를 통한 매매
+- 2025년 기준 다수의 증권회사가 TWSE 매매 접근 보유
+- 외국인 투자자는 투자 전 TWSE에 FINI (외국기관투자자) 또는 FIDI (외국개인투자자)로 등록 필요
+
+### 7.2 접속 방법 (Connection Methods)
+| 방법 | 설명 |
+|--------|-------------|
+| TMP (Transaction Message Protocol) | TWSE 독자적 주문 라우팅 프로토콜; 증권사의 주요 접속 방법 |
+| FIX 프로토콜 | 주문 라우팅을 위한 대안 접속 방법 |
+| 전용선 | 증권회사의 TWSE 시스템 접속을 위한 전용선 |
+
+### 7.3 코로케이션(전산센터 공동입주) / 근접 서비스 (Co-location / Proximity Services)
+- **위치:** 반차오 데이터센터, 신타이베이시 반차오구
+- **서비스:** 랙 공간, 하드웨어 호스팅, TWSE/TAIFEX 매매체결엔진(매칭엔진) 100미터 이내 저지연 접속
+- **제공업체:** Colt (랙 공간, 호스팅, 접속, 시장 데이터); Pico (접속, Intellihands 서비스)
+- 동일 시설에서 TWSE, TAIFEX (선물), TPEx에 대한 코로케이션(전산센터 공동입주) 서비스 이용 가능
+
+### 7.4 API 프로토콜 (API Protocols)
+| 프로토콜 | 용도 |
+|----------|----------|
+| FIX | 주문 라우팅 (TMP의 대안) |
+| TMP (독자적) | 주요 주문 라우팅 |
+| REST/WebSocket | 공개 문서화되지 않음 [미확인] |
+
+---
+
+## 8. 위험 통제 및 서킷브레이커(매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 가격제한 (Price Limits)
+| 유형 | 기준 | 조치 |
+|------|-----------|--------|
+| **일일 가격제한** | 전일 종가 대비 ±10% | 제한 초과 주문 거부; 당일 상한/하한 초과 불가 |
+| **채권** | 기준가 대비 ±5% | 주식과 동일 메커니즘이나 더 좁은 범위 |
+
+**참고:** 일일 가격제한은 2015년 6월 1일 ±7%에서 ±10%로 확대. 주식, ETF, ETN, TDR, 전환사채, 수익증권에 적용.
+
+### 8.2 서킷브레이커(매매거래중단) (Circuit Breakers)
+| 유형 | 발동 기준 | 조치 |
+|------|---------|--------|
+| **장중 가격안정화 메커니즘** | 잠재적 체결 가격이 최근 체결가(기준가)에서 ±3.5% 이탈 | 2분간 매칭 연기; 연기 중 ROD 주문의 접수, 취소, 수량 수정 계속 가능; 2분 후 단일가매매로 매매 재개 |
+
+**참고:** 대만은 미국이나 중국과 같은 시장 전체 지수 기반 서킷브레이커(매매거래중단) 메커니즘을 채용하지 않는다. 대신 일일 가격제한과 결합된 개별 증권 수준의 장중 가격안정화에 의존한다.
+
+### 8.3 사전 위험 통제 (Pre-trade Risk Controls)
+- **일일 가격제한 시행:** ±10% 범위 초과 호가의 주문 자동 거부
+- **신용거래 유지비율:** 신용거래 계좌에 대해 130% 설정 (2015년 5월 조정)
+- **공매도 수량 제한:** 차입 증권의 일일 공매도량은 직전 30거래일 일평균 거래량의 30% 초과 불가 (극단적 변동성 기간 중 일시적으로 3%로 축소, 예: 2025년 4월)
+- **오류 주문 방지:** 구체적 메커니즘 미공개 [미확인]
+- **주문 규모 제한:** 대량매매 최소 기준 적용 [미확인 -- 영문 자료에 구체적 한도 미확인]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관 (Supervising Authority)
+- **Financial Supervisory Commission (FSC)** -- 대만 증권, 은행, 보험 시장의 주요 규제기관. FSC 산하 Securities and Futures Bureau (SFB)가 증권시장 활동을 직접 감독
+- **TWSE**도 시장 감시, 상장 심사, 매매규정 집행 등 자율규제 기능 수행
+
+### 9.2 주요 규정 (Key Regulations)
+| 규정 | 설명 |
+|------------|-------------|
+| **증권거래법 (證券交易法)** | 대만의 증권 발행, 매매, 시장 참가자를 관할하는 주요 법률 |
+| **증권거래법 시행규칙** | 주요 법률에 의한 세부 시행 규정 |
+| **TWSE 영업규칙** | 매매, 상장, 공시, 회원 행위를 관할하는 거래소 규정 |
+| **해외화교 및 외국인의 증권투자에 관한 규정** | FINI/FIDI 등록, 투자 범위, 보고 의무 관할 |
+| **증권회사 관리규정** | 증권사의 인가, 자본 요건, 운영 규칙 |
+| **신용거래 관리규정** | 증권회사 및 투자자의 신용매수 및 공매도 규칙 |
+
+### 9.3 시장 감시 (Market Surveillance)
+- TWSE는 "TWSE 주식시장감시시스템 시행규칙"에 의한 시장감시 시스템 운영
+- 내부자거래, 시장 조작, 비정상적 매매 패턴 감시
+- 감시운영감독위원회는 비정상적 활동을 보이는 특정 증권에 대한 신용매수 및 공매도 정지 결의 가능
+- 집행 조치를 위한 SFB/FSC와의 협력
+
+### 9.4 보고 요건 (Reporting Requirements)
+- 상장기업은 정기 재무보고서(분기, 반기, 연간) 제출 필수
+- 중요 정보는 Market Observation Post System (MOPS)을 통해 즉시 공시 필수
+- 2025년 기준 TWSE 상장기업 전 1,029개사가 연간 지속가능성 보고서 제출 의무
+- 외국인 투자자(FINI/FIDI)는 FSC 규정에 따라 보유 및 거래 보고 필수
+
+### 9.5 외국인 투자자 규칙 (FINI / FIDI) (Foreign Investor Rules)
+| 항목 | 세부사항 |
+|------|---------|
+| **등록** | 외국기관투자자(FINI) 및 외국개인투자자(FIDI)는 투자 전 TWSE에 등록하여 Foreign Investor Investment ID (FID) 취득 필요 |
+| **수탁기관 요건** | FINI는 대만 내 적격 수탁기관을 지정하여 증권 및 현금 수익 보관 필요 |
+| **보유 한도** | 일반적으로 개인 또는 총 외국인 보유 한도 없음 (2003년 폐지), 다만 특정 업종(통신, 미디어)은 법정 상한 유지 |
+| **투자 범위** | TWSE 상장 주식, 채권, ETF, 워런트, 기타 FSC 승인 증권 |
+| **자금 환수** | 자본 또는 수익의 환수에 제한 없음 |
+| **외국인 보유 비중** | 2024년 말 기준 외국인 투자자가 TWSE 전체 시가총액의 45.41% 보유, 시장가치 33조 대만달러 초과 |
+| **최근 동향** | 2023년 8월 이후 FINI는 대만 상장 주식을 역외 투자활동의 담보로 사용 가능 |
+
+### 9.6 역외 거래 제도 (Cross-border Arrangements)
+- 대만은 FSC의 양자 MoU를 통해 국제 규제 협력에 참여
+- 정치적 고려로 인해 중국 본토와의 Stock Connect 또는 상호 시장 접근 메커니즘은 존재하지 않음 [미확인]
+- TWSE는 국제 지수 편입을 적극 추진 (예: FTSE TWSE Taiwan Index 시리즈, MSCI Taiwan Index)
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 매매 수수료 (Trading Fees)
+| 수수료 유형 | 구조 | 요율 |
+|----------|-----------|------|
+| 위탁매매 수수료 | 증권회사 부과; FSC가 상한 설정 | 거래대금의 최대 0.1425% (매수 및 매도); 대부분 증권사가 할인 제공 |
+| 증권거래세 | 매도자에 대한 정부 세금 | 주식 거래대금의 0.30%; ETF 수익증권, 워런트, TDR은 0.10% |
+| TWSE 매매 수수료 | 증권회사에 부과 | TWSE 수수료 기준에 따른 구체적 체계 [미확인 -- 영문 자료에 정확한 요율 미확인] |
+
+### 10.2 기타 수수료 (Other Fees)
+- **상장 수수료:** 초기 상장 수수료 및 연간 상장 유지 수수료 적용 (TWSE 발행 수수료표)
+- **시장 데이터 수수료:** 실시간 시장 데이터 재배포에 대해 정보 벤더에 부과
+- **코로케이션(전산센터 공동입주) 수수료:** 반차오 데이터센터의 랙 공간 및 접속에 대해 부과
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 시스템 업그레이드 (최근 5년) (System Upgrades)
+- **2020년:** 접속매매(연속매매) 출범(3월 23일); 장중 단주 매매 출범(10월 26일)
+- **2022년:** 단주 매칭 간격 3분에서 1분으로 단축(12월 19일)
+- **2024년:** 단주 매칭 간격 1분에서 5초로 단축(12월 2일)
+
+### 신상품 / 신시장 (New Products / Segments)
+- ETF 및 ETN 상품 확대
+- 혁신 기술기업을 위한 Taiwan Innovation Board [미확인 -- 출범 세부사항 제한적]
+- 장중 단주 매매로 소매 투자자 접근 확대
+
+### 규제 변화 (Regulatory Changes)
+- **2025년:** FSC, 2025년 4월 시장 변동성 기간 중 공매도 한도 일시적 강화(30%에서 3% 일일 상한)
+- **2025년:** 전 상장기업 지속가능성 보고서 제출 의무
+- **2026년:** 75개 지표로 구성된 E, S, G 차원의 ESG 평가 제도, 기업지배구조 평가 대체
+- **2026년:** 사외이사 연임 3회 이하로 제한하는 새로운 평가 기준
+
+### 전략적 이니셔티브 (Strategic Initiatives)
+- **ESG / 지속가능성:** ESG Genplus 플랫폼에 SASB 기준 통합; 전 상장기업 의무 지속가능성 보고
+- **국제화:** FTSE TWSE 지수 시리즈 홍보; 향상된 ESG 공시 및 지배구조 기준을 통한 국제 자본 유치 노력
+- **소매 투자자 접근:** 투자 문턱을 낮추기 위한 단주 매칭 간격의 점진적 단축(20초 -> 15초 -> 10초 -> 5초 -> 1분 -> 5초)
+- **시장조성자(마켓메이커) 프로그램:** 시장 깊이 개선을 위한 주식 시장조성 메커니즘(2021년) 및 ETF 유동성공급자 프로그램
+
+---
+
+## KRX 비교 참고 (KRX Comparison Notes)
+
+| 항목 | TWSE | KRX (KOSPI) |
+|------|------|-------------|
+| 매매시간 | 09:00-13:30 (4.5시간) | 09:00-15:30 (6.5시간) |
+| 매매 메커니즘 | 접속매매(연속매매) (2020년 이후) | 시가/종가 경매를 포함한 접속매매(연속매매) |
+| 일일 가격제한 | ±10% | ±30% |
+| 표준 매매단위(거래단위) | 1,000주 | 1주 |
+| 장중 변동성 통제 | ±3.5% 동적 가격안정화 (2분 일시 중지) | VI (변동성 완화장치): 정적 ±10% / 동적 ±3-6% (2분 경매) |
+| 거래세 (매도) | 0.30% | 0.18% (2026년 시행 예정) [미확인] |
+| 시가총액 (2025년) | 약 2.9조 달러 | 약 1.6조 달러 |
+| 반도체 집중도 | 매우 높음 (TSMC 단독 약 30% 이상) | 보통 (삼성전자 약 20% 이상) |
+
+---
+
+## 출처 (Sources)
+
+1. [TWSE Official Website -- Trading Mechanism Introduction](https://www.twse.com.tw/en/products/system/trading.html)
+2. [TWSE -- 2025 Guide to Investing in Taiwan](https://www.twse.com.tw/en/about/company/guide.html)
+3. [TWSE -- Continuous Trading](https://www.twse.com.tw/en/page/products/trading/information13.html)
+4. [TWSE -- Timeline / History](https://www.twse.com.tw/en/about/company/history.html)
+5. [TWSE -- Co-Location Service](https://www.twse.com.tw/en/products/colo/colo.html)
+6. [TWSE -- Foreign Investment](https://www.twse.com.tw/en/products/education/foreign/other/free.html)
+7. [TWSE Market Insights -- 2025 Thrived Amid Challenges, 2026 Poised for Greater Heights](https://www.twse.com.tw/market_insights/en/detail/8a8216d69bde495d019c033cfb3400a7)
+8. [TWSE Market Insights -- Setting Sail from 2024 Milestones](https://www.twse.com.tw/market_insights/en/detail/8a8216d69517ec0c019527a7005a0062)
+9. [Focus Taiwan -- Taiwan stock market sets six records in 2025](https://focustaiwan.tw/business/202601080012)
+10. [Taiwan Stock Exchange -- Wikipedia](https://en.wikipedia.org/wiki/Taiwan_Stock_Exchange)
+11. [Finextra -- Taiwan Stock Exchange rolls out trading system (2014)](https://www.finextra.com/pressarticle/56470/taiwan-stock-exchange-rolls-out-trading-system)
+12. [The TRADE -- Taiwan Stock Exchange to launch new trading system](https://www.thetradenews.com/taiwan-stock-exchange-to-launch-new-trading-system-by-end-2012/)
+13. [Lee, Tsai & Partners -- From Call Auction to Continuous Trading (Taiwan)](https://www.leetsai.com/ltp-special-column/from-call-auction-to-continuous-trading-taiwan)
+14. [Traders Magazine -- A Closer Look at Trading Curbs in Asia Markets](https://www.tradersmagazine.com/featured_articles/a-closer-look-at-trading-curbs-in-asia-markets/)
+15. [Colt -- Full hosting capability for three Taiwan exchanges](https://www.colt.net/resources/insights/colt-provides-full-hosting-capability-to-three-taiwan-exchanges-in-response-to-the-growing-demand-for-twse-implementing-continuous-trading)
+16. [Chambers & Partners -- Investing In Taiwan 2026](https://practiceguides.chambers.com/practice-guides/investing-in-2026/taiwan/trends-and-developments)
+17. [Law.asia -- Short selling and securities lending in Taiwan](https://law.asia/short-selling-securities-lending-taiwan-fini-regulations-market/)
+18. [Securities and Exchange Act -- Laws & Regulations Database of Taiwan](https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=G0400001)
+19. [SFB/FSC -- Number of TWSE Listed Companies](https://www.sfb.gov.tw/en/home.jsp?id=272&parentpath=0,7,92)
+20. [SFB/FSC -- Intraday Odd Lot Matching Interval Shortened (Dec 2024)](https://www.sfb.gov.tw/en/home.jsp?id=78&parentpath=0&mcustomize=multimessage_view.jsp&dataserno=202407300001&dtable=News)
+21. [TWSE Intraday Odd-Lot Trading -- Market Insights](https://www.twse.com.tw/market_insights/en/detail/8a8216d6933460a401936c8d0e8401a8)
+22. [Interactive Brokers -- Taiwan Stock Exchange Fees](https://www.interactivebrokers.com/en/accounts/fees/TAIWAN-StkFees.php)
+23. [DataCenterDynamics -- Taiwan Stock Exchange opens modern data center](https://www.datacenterdynamics.com/en/news/taiwan-stock-exchange-opens-modern-data-center/)
+24. [TWSE CGC -- ESG Evaluation 2026](https://cgc.twse.com.tw/pressReleases/promoteNewsArticleEn/4549)
+25. [Baker McKenzie -- Taiwan Regulatory Sources](https://resourcehub.bakermckenzie.com/en/resources/global-financial-services-regulatory-guide/asia-pacific/taiwan/topics/what-are-the-main-sources-of-regulatory-laws-in-your-jurisdiction)

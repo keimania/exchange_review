@@ -1,0 +1,573 @@
+# EU 파생상품 규제 (EU Derivatives Regulation)
+
+> **최종 업데이트:** 2026-04-07
+> **분야:** 파생상품 — 규제 프레임워크 (Regulatory Framework)
+
+---
+
+## 1. 규제 기관 (Regulatory Authorities)
+
+### 1.1 유럽위원회 (European Commission)
+- 파생상품 시장에 대한 입법 조치를 발의하고 제안한다 (예: EMIR, MiFID II/MiFIR)
+- ESMA 초안에 기반하여 위임법률(delegated acts) 및 이행법률(implementing acts) (규제기술표준(RTS), 이행기술표준(ITS))을 채택한다
+- 제3국 규제체제에 대한 동등성 결정(equivalence decisions)을 발행한다
+- 입법 검토 및 영향평가를 담당한다 (예: EMIR 개정 제안)
+
+### 1.2 ESMA (유럽증권시장감독청, European Securities and Markets Authority)
+- **감독 조율**: EU 전역에서 NCA들의 파생상품 시장 감독을 조율한다
+- **직접 CCP 감독**: EMIR 2.2 및 EMIR 3.0에 따라 Tier 2 제3국 CCP(중앙청산소)를 직접 감독하며, 리스크 모델, 유동성 및 운영리스크를 모니터링한다
+- **기술표준**: 위원회 채택을 위해 RTS 및 ITS를 초안한다 (청산의무, 보고 형식, CCP 요건)
+- **제3국 CCP 인정**: 계층 구분(Tier 1 vs Tier 2)을 결정하고 인정을 부여하거나 거부한다
+- **데이터 및 투명성**: 거래저장소, 통합시세정보제공자(CTP) 선정 및 데이터 품질을 감독한다
+- **포지션한도**: MiFID II에 따라 상품파생상품 포지션한도 프레임워크를 수립한다
+- **설립**: 2011년, 파리 소재
+
+### 1.3 각국 감독기관 (National Competent Authorities, NCAs)
+주요 NCA는 다음과 같다:
+| NCA | 국가 | 주요 역할 |
+|-----|------|----------|
+| **BaFin** | 독일 | Eurex 참여자 감독, 독일 은행의 파생상품 익스포저 |
+| **AMF** (금융시장감독청, Autorité des Marchés Financiers) | 프랑스 | Euronext 파생상품 감독, 프랑스 시장 참여자 |
+| **CONSOB** | 이탈리아 | 이탈리아 파생상품 시장 감독 |
+| **CNMV** | 스페인 | 스페인 파생상품 규제 |
+| **AFM** | 네덜란드 | 네덜란드 파생상품 시장 감독 |
+| **DNB** (네덜란드 중앙은행, De Nederlandsche Bank) | 네덜란드 | 네덜란드 CCP의 건전성 감독 |
+
+- NCA는 감독기관 합의체(colleges of supervisors)의 지원을 받아 EMIR에 따라 EU CCP를 인가한다
+- NCA는 MiFID II에 따라 상품파생상품의 포지션한도를 설정하고 집행한다 (ESMA가 직접적 역할을 하는 핵심/중요 계약 제외)
+- NCA는 파생상품 관련 시장남용을 포함하여 MAR 조항을 집행한다
+
+### 1.4 ECB / ESCB (유럽중앙은행 / 유럽중앙은행시스템)
+- CCP 및 파생상품 시장에 대한 시스템리스크 모니터링
+- CCP 감독 합의체에 참여한다 (특히 유로화 표시 청산)
+- CCP 인가 및 인정에 관한 발행중앙은행(central bank of issue) 의견을 제공한다
+- EMIR 3.0은 유로화 표시 상품에 대한 제3국 CCP 감독에서 ECB의 참여를 강화한다
+
+### 1.5 ESRB (유럽시스템리스크위원회, European Systemic Risk Board)
+- EU 파생상품 시장에 대한 거시건전성 감독
+- 파생상품 익스포저에서 발생하는 시스템리스크에 관한 경고 및 권고를 발행한다
+- CCP 스트레스 테스트 및 시스템리스크 평가에 대해 ESMA와 조율한다
+
+---
+
+## 2. 주요 법률 (Key Legislation)
+
+### 2.1 EMIR (유럽시장인프라규정, European Market Infrastructure Regulation)
+
+#### 2.1.1 최초 EMIR — Regulation (EU) No 648/2012
+- **채택**: 2012년 7월 4일; **시행**: 2012년 8월 16일
+- **핵심 축**:
+  - **청산의무**: 인가 또는 인정된 CCP를 통한 표준화된 OTC 파생상품의 의무적 중앙청산
+  - **거래보고**: 모든 파생상품 계약(OTC 및 장내거래)을 인가된 거래저장소에 보고
+  - **비청산 OTC 파생상품의 리스크 경감**: 적시 확인, 포트폴리오 조정 및 압축, 분쟁 해결, 일일 시가평가/모델평가, 담보물 교환 (양자간 증거금)
+  - **CCP 인가**: 자본, 거버넌스, 리스크 관리, 부도 절차를 포함한 EU CCP 인가의 포괄적 요건
+- **거래상대방 분류**:
+  - 금융 거래상대방(Financial Counterparties, FC): 은행, 투자회사, 보험사, UCITS, AIF, 연금기금, CCP
+  - 비금융 거래상대방(Non-Financial Counterparties, NFC): FC에 해당하지 않는 EU 내 설립된 모든 기업
+  - NFC+: 청산 기준을 초과하는 NFC; NFC-: 기준 미만의 NFC
+
+#### 2.1.2 EMIR 2.2 — Regulation (EU) 2019/2099
+- **채택**: 2019년 10월 23일
+- 제3국 CCP에 대한 ESMA의 직접 감독 권한을 강화하였다
+- 제3국 CCP에 대한 **계층 프레임워크(tiering framework)**를 도입하였다:
+  - **Tier 1**: 시스템적으로 중요하지 않은 CCP; 지속적인 준수 모니터링과 함께 인정 대상
+  - **Tier 2**: EU 금융안정에 시스템적으로 중요한(또는 중요해질 가능성이 있는) CCP; ESMA의 직접 감독 및 EMIR 요건 준수 대상
+- 발행중앙은행의 CCP 감독 역할을 강화하였다
+- ESMA 내 CCP 감독위원회(CCP Supervisory Committee)를 설립하였다
+
+#### 2.1.3 EMIR Refit — Regulation (EU) 2019/834
+- **공포**: 2019년 5월 28일; **시행**: 2019년 6월 17일
+- **주요 간소화**:
+  - 청산의무에 대한 사전적용(frontloading) 요건을 폐지하였다
+  - 소규모 금융 거래상대방에 대한 청산의무를 간소화하였다 (청산 기준 미만의 FC는 청산의무 면제이나 포지션 산정은 여전히 필요)
+  - NFC는 기준을 초과하는 자산유형의 포지션만 산정하면 된다 (모든 유형이 아님)
+  - 보고 간소화: NFC-의 보고는 FC 거래상대방에 위임된다
+  - 연금제도(pension scheme arrangements)에 대한 청산의무를 유예하였다 (여러 차례 연장)
+- **보고 개선** (RTS/ITS 2024년 4월 29일부터 적용):
+  - CPMI-IOSCO 글로벌 데이터 요소 표준과 정합
+  - UTI(고유거래식별자), UPI(고유상품식별자), LEI(법인식별기호) 도입
+  - MiFIR에 따라 규제시장, MTF, OTF, SI에서 거래되는 파생상품에는 ISIN 필수; 나머지 OTC 파생상품에는 UPI
+  - 거래저장소에서의 강화된 데이터 품질, 검증 및 조정
+
+#### 2.1.4 EMIR 3.0 — Regulation (EU) 2024/2987
+- **채택**: 2024년 11월 27일; **관보 게재**: 2024년 12월 4일 (OJ L, 2024/2987)
+- **시행**: 2024년 12월 24일
+- **목적**: 제3국 CCP에 대한 과도한 EU 익스포저를 줄이고, EU 청산 시장의 효율성을 개선한다
+- **주요 조항**:
+  - **활성계좌 요건(Active Account Requirement, AAR)**: EU 거래상대방은 상당한 시스템적 중요성을 지닌 특정 파생상품(주로 유로화 표시 금리파생상품, 단기금리파생상품, CDS)에 대해 EU 인가 CCP에서 활성 청산계좌를 유지해야 한다
+  - 스트레스 테스트를 포함하여 계좌가 진정으로 활성적이고 기능적임을 보장하는 세 가지 운영 조건
+  - 가장 활발한 거래상대방에 대한 대표성 의무
+  - AAR 준수 평가를 위한 보고의무 (보고는 2025년 6월 25일 개시)
+  - ESMA는 시행 후 6개월 이내에 RTS를 개발해야 한다
+  - ESMA는 2025년 6월에 AAR에 관한 최종 보고서를 발표하였으며; 2025년 10월에 참여 요건에 관한 RTS 초안을 공개 의견수렴하였다
+  - **개정 청산 기준**: 비청산 OTC 파생상품 활동에 초점을 맞춘 새로운 방법론으로, 비례적 청산의무를 보장한다
+  - **강화된 그룹 내 면제 프레임워크**: 일시적 연장을 대체하는 항구적 체제
+  - CRR(Regulation 575/2013) 및 MMFR(Regulation 2017/1131) 개정을 통해 EU 청산을 장려한다
+
+#### 2.1.5 청산의무 대상 유형 (Clearing Obligation Categories)
+의무청산 대상 OTC 파생상품 유형:
+
+| 자산유형 | 상품 | 위임규정 |
+|---------|------|---------|
+| **금리파생상품 (IRS)** | 고정-변동 IRS, 베이시스 스왑, FRA, OIS (EUR, GBP, USD, JPY, NOK, PLN, SEK 통화) | (EU) 2015/2205 |
+| **신용파생상품 (CDS)** | 비트랜치 유럽 지수 CDS (iTraxx Europe Main, iTraxx Europe Crossover) | (EU) 2016/592 |
+
+#### 2.1.6 청산 기준 (Clearing Thresholds, EMIR 3.0 검토 이전)
+
+| 파생상품 유형 | NFC 기준 | FC 기준 |
+|-------------|---------|---------|
+| 신용파생상품 | EUR 10억 | 총합 산정 대상 |
+| 주식파생상품 | EUR 10억 | 총합 산정 대상 |
+| 금리파생상품 | EUR 30억 | 총합 산정 대상 |
+| 외환파생상품 | EUR 30억 | 총합 산정 대상 |
+| 상품파생상품 | EUR 40억 | 총합 산정 대상 |
+
+- EMIR 3.0에 따라, ESMA는 개정 청산 기준에 관해 의견수렴(2025년 4월)을 실시하고 2026년 2월에 최종 보고서를 발표하여, FC에 대해 비청산 포지션과 총 OTC 익스포저를 모두 평가하는 이중 기준 접근법을 도입하였다
+
+### 2.2 MiFID II / MiFIR (파생상품 관련 조항)
+
+#### 2.2.1 MiFID II — Directive 2014/65/EU
+- **시행**: 2018년 1월 3일
+- **파생상품 관련 조항**:
+  - **조직화된 거래시설(Organized Trading Facilities, OTFs)**: 파생상품을 포함한 비주식 상품을 위한 새로운 거래소 유형; 운영자의 체결 재량
+  - **상품파생상품 포지션한도** (제57조): NCA는 거래소에서 거래되는 상품파생상품 및 경제적으로 동등한 OTC(EEOTC) 계약에서 개인이 보유할 수 있는 순포지션에 한도를 설정해야 한다
+    - 핵심/중요 계약: 1년간 순미결제약정이 300,000랏을 초과하는 계약
+    - ESMA가 NCA 설정 한도를 조율하고 개입할 수 있다
+  - **포지션 관리 통제**: 거래소는 포지션 관리 통제를 적용해야 한다
+  - **포지션 보고**: 거래소는 참여자 유형별 주간 종합 포지션 보고서를 발표해야 한다
+  - **헤지 면제**: NCA는 선의의 헤지 활동에 대해 포지션한도 면제를 부여할 수 있다
+  - **부수적 활동 면제(Ancillary activity exemption)**: 주요 사업의 부수 활동으로 상품파생상품을 거래하는 비금융 기관은 MiFID II 인가에서 면제될 수 있다 (MiFID II 개정에 따른 수정 방법론)
+- **MiFID II 개정**: 모든 변경사항의 국내법 전환 기한: 2025년 9월 29일
+  - 2024년 12월: ESMA가 배출권 파생상품에 대한 포지션 모니터링 및 책임수준 확대를 제안하였다
+
+#### 2.2.2 MiFIR — Regulation (EU) No 600/2014
+- **거래의무**: 청산의무 대상 표준화된 OTC 파생상품은 규제시장, MTF, OTF 또는 동등한 제3국 거래소에서 거래해야 한다
+- **사전거래 투명성**: 거래소의 파생상품에 대한 매수·매도 호가 및 거래 관심의 깊이 (대규모 주문 및 패키지 주문에 대한 면제 포함)
+- **사후거래 투명성**: 파생상품 거래의 가격, 거래량 및 시간, 대규모 및 비유동성 상품에 대한 지연 공개 체제
+- **체계적 내부화자(Systematic Internalisers)**: 파생상품을 거래하는 SI에 대한 투명성 의무
+- **거래보고**: 제26조에 따라 파생상품 거래를 NCA에 보고한다
+
+#### 2.2.3 MiFIR 개정 — Regulation (EU) 2024/791
+- **채택**: 2024년; Regulation (EU) No 600/2014을 개정한다
+- **파생상품에 대한 주요 변경**:
+  - **OTC 파생상품 통합시세정보제공자(CTP)**: ESMA가 CTP를 선정, 인가, 감독할 권한을 부여받음; OTC 파생상품 CTP 선정 절차가 2026년 1월 5일에 시작되었다 (제출 기한: 2026년 2월 11일)
+  - 파생상품의 사전 및 사후거래 투명성 요건 개정: 투명성과 유동성 공급자 보호 간 균형
+  - 파생상품 투명성에 대한 동적 계산을 대체하는 정적 기준
+  - 개정된 파생상품 RTS에 대한 단일 적용일
+  - ESMA에 대한 파생상품 투명성 보고 삭제 (간소화)
+  - ESMA는 2025년 12월 11일에 파생상품 투명성 및 CTP 입출력에 관한 최종 보고서를 위원회에 제출하였다
+  - **주문흐름결제(Payment for Order Flow, PFOF)**: 금지, 경과기간 적용
+  - 강화된 데이터 품질 요건
+
+### 2.3 기타 관련 규정 (Other Relevant Regulations)
+
+#### 2.3.1 MAR — 시장남용규정 (Market Abuse Regulation, (EU) No 596/2014)
+- 시장남용 프레임워크를 파생상품으로 확장한다: 내부자거래 및 시장조작 조항이 거래소에 상장된 금융상품을 기초자산으로 하는 파생상품에 적용된다
+- 벤치마크 조작을 명시적으로 금지한다 (LIBOR 스캔들 이후 개혁)
+- 상품파생상품 및 관련 현물상품 계약에 적용된다
+- 교차시장 감시 의무: 거래소는 관련 파생상품과 기초시장 간의 남용을 모니터링해야 한다
+- NCA의 강화된 조사 및 제재 권한
+
+#### 2.3.2 CRR / CRD (자본요건)
+- **CRR** — Regulation (EU) No 575/2013 (CRR II/III에 의해 개정):
+  - 파생상품에 대한 거래상대방 신용리스크 프레임워크: SA-CCR(거래상대방 신용리스크 표준접근법)이 2021년 6월부터 의무화되었다
+  - 신용가치조정(CVA) 리스크 자본 부담
+  - 중앙청산 파생상품에 대한 우대 자본 처리 (CCP 익스포저에 대한 낮은 위험가중치)
+  - EMIR 3.0의 CRR 개정을 통해 조정된 자본 요건으로 EU 청산을 장려한다
+- **CRD** — Directive 2013/36/EU: 은행의 파생상품 활동에 적용되는 거버넌스 및 내부통제 요건
+
+#### 2.3.3 SFTR — 증권금융거래규정 (Securities Financing Transactions Regulation, (EU) 2015/2365)
+- 증권금융거래(환매조건부거래, 증권대차, 마진대출)의 거래저장소 보고의무
+- 파생상품 거래에서 수취한 담보물의 재담보(re-hypothecation)/재사용에 대한 투명성
+- 특정 담보 관련 거래에 대해 EMIR 보고와 중복된다
+- EMIR과 거래저장소 인프라를 공유한다
+
+#### 2.3.4 BMR — 벤치마크규정 (Benchmarks Regulation, (EU) 2016/1011)
+- 파생상품 계약에서 사용되는 기준금리를 제공하는 벤치마크 관리자를 규제한다 (예: EURIBOR, EONIA 후속 ESTR)
+- 벤치마크 관리자의 인가/등록
+- **BMR 개정** (2024년 12월 정치적 합의, 2025년 5월 공포): 2026년 1월부터 범위가 핵심/중요 벤치마크, EU 기후전환 및 파리협정 정렬 벤치마크, 특정 상품 벤치마크로 집중된다
+- 제3국 벤치마크 체제 2025년 12월 31일부터 적용
+- LIBOR 이후 전환: ESTR이 EU 무위험금리로 지정; 레거시 벤치마크를 참조하는 파생상품에 미치는 영향
+
+#### 2.3.5 MiCA — 암호자산시장규정 (Markets in Crypto-Assets Regulation, (EU) 2023/1114)
+- **전면 적용**: 2024년 12월 30일
+- 암호자산이 기초자산인 파생상품에 관련된다
+- MiFID II Annex I Section C에 따라 금융상품으로 분류되는 암호자산은 기존 파생상품 규제에 해당한다
+- 기존 암호자산 서비스 제공자에 대한 경과기간: 2026년 7월 1일까지
+- DAC8 암호자산 거래에 대한 세무 투명성 규정: 2026년 1월 1일 시행
+
+---
+
+## 3. 포지션한도 체계 (Position Limits Framework)
+
+### 3.1 법적 근거 (Legal Basis)
+- MiFID II 제57조: NCA는 상품파생상품 및 배출권 파생상품에 대해 포지션한도를 설정해야 한다
+- MiFID II 제58조: 포지션 보고의무
+
+### 3.2 적용범위 (Scope)
+- EU 거래소(규제시장, MTF, OTF)에서 거래되는 **상품파생상품**
+- **경제적으로 동등한 OTC 계약(Economically Equivalent OTC Contracts, EEOTC)**: 장내 상품파생상품과 경제적으로 동등한 OTC 파생상품
+- **배출권 파생상품**: EU ETS 배출허용량에 대한 파생상품
+
+### 3.3 포지션한도 설정 (Position Limit Setting)
+- NCA는 ESMA 방법론에 따라 한도를 설정한다:
+  - **인도월 한도(Spot month limit)**: 인도가능공급량에 기반 (통상 인도가능공급량의 25%)
+  - **기타 월 한도(Other months limit)**: 미결제약정에 기반 (통상 미결제약정의 25%)
+- **핵심/중요 계약**: 순미결제약정이 300,000랏을 초과하는 상품파생상품; ESMA 조율 대상
+- ESMA는 NCA가 제안한 한도에 대해 의견을 발행할 수 있으며, 예외적인 경우 직접 한도를 부과하거나 수정할 수 있다
+
+### 3.4 헤지 면제 (Hedging Exemptions)
+- NCA는 상업 활동과 직접 관련된 위험을 **객관적으로 측정 가능하게 감소시키는** 포지션에 대해 포지션한도 면제를 부여할 수 있다
+- 신청자는 포지션이 정의된 기준에 따라 헤지에 해당함을 입증해야 한다
+- NFC 헤지자를 대신하여 활동하는 금융 기관도 면제 혜택을 받을 수 있다 (개정된 프레임워크에 따라)
+
+### 3.5 포지션 관리 통제 (Position Management Controls)
+- 거래소는 다음을 포함하는 포지션 관리 통제를 적용해야 한다:
+  - 미결제 포지션 모니터링
+  - 참여자로부터 포지션(EEOTC 계약 포함)에 관한 정보 획득
+  - 참여자에게 포지션 종료 또는 축소 요구
+  - 참여자에게 합의된 가격과 거래량으로 시장에 유동성을 제공할 것을 요구
+
+### 3.6 포지션 보고 (Position Reporting)
+- 거래소는 참여자 유형별 종합 포지션을 포함하는 주간 **거래자약정(Commitment of Traders, CoT) 보고서**를 발표해야 한다
+- 회원 및 참여자는 거래소에 일일 포지션을 보고해야 한다
+- NCA는 포지션 데이터를 수령하여 ESMA와 공유할 수 있다
+
+### 3.7 2024년 12월 업데이트 (December 2024 Updates)
+- ESMA가 배출권 파생상품에 대한 일반 모니터링 및 책임수준 요건의 확대를 제안하였다
+- MiFID II 개정에 따른 포지션한도 프레임워크 변경은 2025년 9월 29일까지 국내법으로 전환해야 한다
+
+---
+
+## 4. 청산의무 (Clearing Obligations)
+
+### 4.1 상품 범위 (Product Scope)
+인가/인정된 CCP에서의 의무청산 대상 상품:
+
+**금리스왑 (IRS)**:
+- 고정-변동 IRS (plain vanilla)
+- 베이시스 스왑
+- 선도금리계약(FRAs)
+- 익일물지수스왑(OIS)
+- 통화: EUR, GBP, USD, JPY, NOK, PLN, SEK
+- 기준금리: EURIBOR, LIBOR (레거시), SOFR, SONIA, TONA, ESTR
+
+**신용부도스왑 (CDS)**:
+- 비트랜치 iTraxx Europe Main (Series 17 이후, 5년 만기)
+- 비트랜치 iTraxx Europe Crossover (Series 17 이후, 5년 만기)
+
+### 4.2 거래상대방 유형 및 단계적 도입 (Counterparty Categories and Phase-In)
+청산의무는 거래상대방 유형에 따라 단계적으로 도입되었다:
+
+| 유형 | 설명 | IRS 도입일 | CDS 도입일 |
+|------|------|----------|----------|
+| **Category 1** | 관련 유형에서 최소 하나의 CCP의 청산회원 | 2016년 6월 21일 | 2017년 2월 9일 |
+| **Category 2** | 총명목금액 > EUR 80억의 FC 및 AIF | 2016년 12월 21일 | 2017년 8월 9일 |
+| **Category 3** | Category 1 또는 2에 해당하지 않는 FC 및 AIF | 2017년 6월 21일 | 2018년 2월 9일 |
+| **Category 4** | NFC+ (청산 기준 초과 비금융 거래상대방) | 2018년 12월 21일 | 2019년 5월 9일 |
+
+### 4.3 사전적용 (Frontloading)
+- EMIR Refit (Regulation 2019/834)에 의해 **폐지되었다**: 통지 후 청산의무 발효 전에 체결된 계약을 소급적으로 청산할 필요가 없어졌다
+
+### 4.4 그룹 내 면제 (Intragroup Exemptions)
+- 동일 그룹 내 기관 간의 OTC 파생상품 계약은 청산의무에서 면제될 수 있다 (EMIR 제3조)
+- **조건**:
+  - 양 거래상대방이 동일한 연결 대상에 포함된다
+  - 양자가 적절한 중앙집중식 리스크 평가, 측정 및 통제 절차의 적용을 받는다
+  - 모회사가 FC가 아니다
+- **제3국 그룹 내 면제**: 제3국 거래상대방 관할권에 대한 동등성 결정이 필요하다
+  - 일시적 면제 체제가 여러 차례 연장되었다 (ESA가 EMIR 개정 중 3년 연장을 제안)
+  - EMIR 3.0은 보다 항구적인 그룹 내 면제 프레임워크를 수립한다
+
+### 4.5 연금제도 (Pension Scheme Arrangements)
+- 연금제도(PSA)에 대한 청산의무의 일시적 면제
+- 여러 차례 연장이 부여되었으며; EMIR 3.0이 PSA의 장기적 처우를 다룬다
+
+### 4.6 EMIR 3.0의 청산 관련 변경 (EMIR 3.0 Changes to Clearing)
+- 이중 평가(비청산 포지션 + FC의 총 OTC 익스포저)를 적용하는 개정 청산 기준
+- 활성계좌 요건(AAR)이 EU CCP에 대한 추가 청산 거래량을 유도한다
+- 소규모 거래상대방에 대한 강화된 비례성
+
+---
+
+## 5. CCP 감독 및 인가 (CCP Supervision & Authorization)
+
+### 5.1 EU CCP 인가 (Title III of EMIR)
+- CCP는 본국 NCA로부터 인가를 받아야 하며, 다음을 포함하는 **감독 합의체(college of supervisors)**가 참여한다:
+  - 본국 NCA (주관 감독기관)
+  - ESMA
+  - 관련 발행중앙은행
+  - 가장 관련성 높은 청산회원의 NCA
+  - CCP가 서비스하는 거래소의 NCA
+- **인가 요건**:
+  - 최소 자본: EUR 750만
+  - 거버넌스: 독립 리스크 위원회, 고위경영진 요건
+  - 리스크 관리: 증거금 프레임워크 (개시증거금, 변동증거금, 부도기금), 스트레스 테스트, 백테스트
+  - 부도 워터폴: 부도자 증거금 -> 부도자 부도기금 출연금 -> CCP 자체 전용 자원(skin-in-the-game) -> 비부도 회원의 부도기금 출연금
+  - 고객 포지션 및 담보물의 분리 및 이전 가능성
+  - 사업연속성 및 재해복구
+  - 상호운용 약정 (NCA/ESMA 승인 대상)
+- **주요 EU CCP**: Eurex Clearing (독일), LCH SA (프랑스), CC&G (이탈리아), BME Clearing (스페인), ICE Clear Netherlands, European Commodity Clearing (독일)
+
+### 5.2 제3국 CCP 인정 (Third-Country CCP Recognition)
+- 제3국 CCP는 EU 회원/거래소에 청산 서비스를 제공하기 위해 ESMA의 인정을 받아야 한다
+- **전제조건**:
+  - 제3국 규제 프레임워크에 대한 유럽위원회 동등성 결정
+  - ESMA와 제3국 기관 간 협력 약정
+  - 본국 관할권에서의 CCP 인가
+- **계층 결정** (EMIR 2.2에 의해 도입):
+  - **Tier 1**: 시스템적으로 중요하지 않은 CCP; 본국 규정에 대한 지속적 준수를 조건으로 인정
+  - **Tier 2**: EU/회원국 금융안정에 시스템적으로 중요한(또는 중요해질 가능성이 있는) CCP
+    - 관련 EMIR 요건(또는 비교 가능한 준수 프레임워크)을 준수해야 한다
+    - ESMA의 직접 감독 대상: 리스크 모델 검토, 스트레스 테스트, 유동성 모니터링, 연례 검토
+    - ESMA는 EU 금융안정을 보전하기 위해 시정 조치를 제안할 수 있다
+- 2026년 1월 기준, ESMA는 다수 관할권(미국, 영국, 일본, 홍콩, 싱가포르, 호주 등)의 CCP를 인정하였다
+
+### 5.3 브렉시트의 영국 CCP에 대한 영향 (Brexit Implications for UK CCPs)
+- 브렉시트 이후(2021년 1월 1일): 영국 CCP는 EMIR에 따라 제3국 CCP가 되었다
+- **ESMA가 인정한 주요 영국 CCP**:
+  - **LCH Ltd** (런던): Tier 2 — 유로화 표시 IRS 청산에서 지배적
+  - **ICE Clear Europe Ltd**: Tier 2 — CDS 및 에너지 파생상품 청산이 중요
+  - **LME Clear Ltd**: Tier 1 — 금속 파생상품
+- **동등성 일정**:
+  - 최초 일시적 동등성: 2022년 6월 30일까지
+  - 2025년 6월 30일까지 연장
+  - **최근 연장** (2025년 1월): **2028년 6월 30일**까지 연장 (3년 연장)
+  - 목적: EMIR 3.0 조치의 이행을 위한 시간을 제공하여 영국 CCP에 대한 의존도를 줄인다
+- 핵심 정책 긴장: EU 기업들이 유로 IRS 청산에서 LCH Ltd에 크게 의존하고 있으나, EU 정책은 청산을 EU CCP(Eurex, LCH SA)로 본국 귀환시키는 것을 목표로 한다
+
+### 5.4 EMIR 3.0 활성계좌 요건 (Active Account Requirement)
+- 상당한 시스템적 중요성을 지닌 파생상품에 대해 청산의무가 있는 EU 거래상대방은 다음을 해야 한다:
+  - EU 인가 CCP에서 활성 계좌를 개설하고 유지한다
+  - 관련 파생상품의 대표적 비율을 이 계좌를 통해 청산한다
+  - 계좌가 운영적으로 기능적임을 보장한다 (스트레스 테스트 참여 포함)
+- 주요 적용 대상: 유로화 표시 IRS, 단기금리파생상품, 특정 CDS 유형
+- 2025년 6월부터 보고를 통한 단계적 이행
+- ESMA가 운영 조건, 대표성, 보고에 관한 상세 RTS를 개발 중이다
+
+---
+
+## 6. 보고 요건 (Reporting Requirements)
+
+### 6.1 EMIR 거래보고 (Trade Reporting, 제9조)
+- **범위**: 모든 파생상품 계약(OTC 및 장내거래)을 EU 등록 거래저장소(TR)에 보고해야 한다
+- **보고 주체**:
+  - 양 거래상대방이 모두 보고해야 한다 (양면 보고)
+  - EMIR Refit에 따라: FC가 NFC- 거래상대방을 대신하여 보고할 책임이 있다
+  - 보고는 거래상대방, CCP 또는 제3자 서비스 제공자에게 위임할 수 있다
+- **기한**: 체결, 수정 또는 종료 후 T+1 (영업일 1일 이내)에 보고한다
+- **내용**: 거래상대방 데이터, 계약 데이터, 평가 데이터, 담보 데이터
+
+### 6.2 주요 식별자 (Key Identifiers)
+| 식별자 | 목적 | 표준 |
+|--------|------|------|
+| **LEI** (법인식별기호, Legal Entity Identifier) | 거래상대방 식별 | ISO 17442 (GLEIF 시스템) |
+| **UTI** (고유거래식별자, Unique Transaction Identifier) | 각 거래의 고유 식별 | CPMI-IOSCO / ISO 23897 |
+| **UPI** (고유상품식별자, Unique Product Identifier) | ISIN으로 식별되지 않는 OTC 파생상품의 상품 분류 | CPMI-IOSCO / ANNA DSB |
+| **ISIN** | 규제시장, MTF, OTF, SI에서 거래되는 파생상품 식별 | ISO 6166 |
+
+### 6.3 EMIR Refit 보고 변경 (2024년 4월 29일부터 적용)
+- CPMI-IOSCO 글로벌 데이터 표준(CDE — 핵심 데이터 요소)과 정합
+- 보고 필드 확대 (약 129개에서 약 203개로)
+- ISO 20022 기반 XML 보고 형식
+- 강화된 데이터 품질 요건: TR 수준의 검증 규칙, 조정 프로세스
+- 생애주기 이벤트 보고 표준화
+- 거래상대방 간 매칭(pairing and matching) 요건
+- ESMA가 2023년 10월에 EMIR Refit 보고에 관한 지침을 발표하였다
+
+### 6.4 거래저장소 (Trade Repositories)
+- ESMA에 등록해야 한다 (또는 제3국 TR인 경우 인정을 받아야 한다)
+- 책임: 데이터 수집, 검증, 조정, 안전한 저장, 기관에 대한 접근 제공
+- **EU 등록 TR** 포함: DTCC Derivatives Repository (DDRL), Regis-TR, UnaVista (LSEG), KDPW (폴란드), CME TR
+- TR은 관련 기관(NCA, ESMA, ECB, ESRB)에 데이터 접근을 제공해야 한다
+
+### 6.5 EMIR 3.0 보고의무 (Reporting Obligations)
+- AAR 준수에 관한 새로운 보고를 ESMA에 제출한다 (2025년 6월 25일부터)
+- ESMA는 향후 EMIR 3 보고의무에 관한 공개 성명을 발표하였다 (2025년 12월)
+- EU vs. 제3국 CCP에서의 청산 거래량에 관한 강화된 보고
+
+### 6.6 MiFID II 포지션 보고 (Position Reporting)
+- 회원의 거래소에 대한 일일 포지션 보고
+- 거래소가 발표하는 주간 종합 거래자약정(CoT) 보고서
+- NCA 및 ESMA와의 포지션 데이터 공유
+
+### 6.7 MiFIR 거래보고 (Transaction Reporting, 제26조)
+- 투자회사가 파생상품 거래를 NCA에 보고한다
+- 고객, 의사결정자 및 체결에 관한 상세 정보를 포함한다
+- NCA 간 및 ESMA와의 데이터 공유를 통한 교차 국경 감시
+
+---
+
+## 7. 국경간 프레임워크 (Cross-Border Framework)
+
+### 7.1 제3국 CCP 인정 (Third-Country CCP Recognition)
+- ESMA 인정 절차에는 다음이 필요하다:
+  1. 제3국 CCP 규제 프레임워크에 대한 위원회 동등성 결정
+  2. ESMA와 제3국 기관 간 협력 약정(MoU)
+  3. 제3국 CCP의 신청
+  4. ESMA의 계층 평가 (Tier 1 또는 Tier 2)
+- 인정된 제3국 CCP는 ESMA 등록부에 기재된다 (정기적으로 갱신)
+
+### 7.2 동등성 결정 (Equivalence Decisions)
+- 위원회는 다수 관할권의 CCP 프레임워크에 대해 동등성 결정을 채택하였다:
+  - **완전 동등성**: 미국(CFTC 규제), 일본, 홍콩, 싱가포르, 호주, 브라질, 캐나다, 멕시코, 한국, 인도 등
+  - **영국**: 2028년 6월 30일까지의 기한부 동등성
+- 동등성은 결과 기반 접근법(outcomes-based approach)으로 평가된다 (조문별 규제 대조가 아님)
+- 위원회는 조건이 변경되면 동등성 결정을 철회할 수 있다
+
+### 7.3 제3국 거래소 인정 (Third-Country Trading Venue Recognition)
+- MiFIR 거래의무에 따라, 동등성 결정은 파생상품이 동등한 것으로 간주된 제3국 거래소에서 거래되는 것을 허용한다
+- 현재까지 거래소에 대해 채택된 동등성 결정은 제한적이다
+
+### 7.4 IOSCO 공조 (IOSCO Coordination)
+- EU 프레임워크는 IOSCO 금융시장인프라 원칙(PFMIs)과 정합된다
+- CPMI-IOSCO 데이터 조화 표준(UTI, UPI, CDE)이 EMIR Refit에 채택되었다
+- 국경간 CCP 감독 및 회복/정리에 관한 IOSCO 공조
+
+### 7.5 브렉시트 이후 영국-EU 파생상품 환경 (Post-Brexit UK-EU Derivatives Landscape)
+- **EU 거래소에 대한 영국 동등성**: 영국(FCA)이 거래의무 목적으로 EU 규제시장에 동등성을 부여하였다
+- **영국 CCP에 대한 EU 동등성**: 2028년 6월 30일까지의 기한부
+- **규제 분화 리스크**:
+  - 영국은 독립적인 파생상품 규제를 발전시켰다 (UK EMIR, UK MiFIR)
+  - 청산의무 범위, 보고 형식, CCP 요건에서의 차이가 나타나고 있다
+  - 영국은 EU 규정을 국내법으로 전환한 후 영국 고유의 개정을 추가하였다
+- **시장 영향**: 일부 파생상품 시장에서의 유동성 분열; 국경간 참여자에 대한 이중 보고의무
+- **양해각서**: CCP 감독, TR 데이터 공유 및 시장감시를 위한 ESMA-FCA 협력 약정
+
+---
+
+## 8. 최근 동향 (2023-2026) (Recent Developments)
+
+### 8.1 EMIR 3.0 이행 일정 (Implementation Timeline)
+| 일자 | 주요 일정 |
+|------|----------|
+| 2022년 12월 | 위원회의 EMIR 개정(EMIR 3.0) 입법 제안 |
+| 2024년 11월 | 유럽의회 및 이사회 채택 |
+| 2024년 12월 4일 | 관보 게재 (Regulation 2024/2987) |
+| 2024년 12월 24일 | 시행 |
+| 2025년 6월 25일 | AAR 보고의무 개시 |
+| 2025년 6월 | ESMA의 AAR 최종 보고서 |
+| 2025년 10월 | ESMA의 참여 요건 RTS 초안 의견수렴 |
+| 2025년 12월 | ESMA의 향후 EMIR 3 보고의무 공개 성명 |
+| 2026년 2월 | ESMA의 청산 기준 RTS 최종 보고서 |
+| 2026-2027년 | 전체 AAR 운영 요건 적용 예상 |
+
+### 8.2 활성계좌 요건 논의 (Active Account Requirement Debates)
+- AAR의 범위 및 조정에 관한 상당한 업계 논의
+- 시장 분열 및 EU 참여자에 대한 비용 증가 우려
+- LCH Ltd (런던)가 유로화 표시 IRS 청산에서 지배적이다 (역사적으로 시장 점유율 90% 이상)
+- EU CCP(특히 Eurex)가 청산 거래량을 유치하기 위해 수용력 및 인센티브 프로그램에 투자하고 있다
+- 대표성 기준이 적절한 수준으로 설정되었는지에 관한 지속적 논의
+- EU 최종사용자의 청산 유동성 및 가격에 대한 잠재적 영향
+
+### 8.3 통합시세정보제공자 (Consolidated Tape Provider, CTP)
+- MiFIR 개정이 자산유형별 CTP 프레임워크를 수립한다
+- **OTC 파생상품 CTP**: ESMA가 2026년 1월 5일에 선정 절차를 개시하였다
+  - 제출 기한: 2026년 2월 11일
+  - ESMA가 CTP를 선정, 인가, 감독한다
+- CTP는 OTC 파생상품에 대한 사후거래 데이터를 통합하여 가격 투명성을 강화할 것으로 기대된다
+- 데이터 기여자와 CTP 간의 수익 공유 모델
+
+### 8.4 ESG 파생상품 규제 (ESG Derivatives Regulation)
+- ESG 연계 파생상품 시장의 성장 (지속가능성 연계 스왑, 탄소 파생상품, 녹색채권 선물)
+- EU ETS 배출허용량 파생상품이 MiFID II 포지션한도 체제의 적용을 받는다
+- **EU 택소노미 규정** 및 **SFDR**: 파생상품 포트폴리오에 대한 ESG 관련 공시에 대한 관심 증가
+- **ESG 등급 규정**: 적용일 2026년 7월 2일; ESMA가 지원 기술표준을 개발 중이다
+- 탄소국경조정메커니즘(CBAM)이 새로운 파생상품 상품을 창출할 수 있다
+- ESMA가 파생상품 시장에서의 ESG 관련 그린워싱 리스크를 모니터링하고 있다
+
+### 8.5 디지털/암호자산 파생상품 (Digital / Crypto Derivatives)
+- **MiCA** (2024년 12월 전면 적용): 암호자산 프레임워크; MiFID II에 따라 금융상품으로 분류되는 암호자산은 MiFID II/EMIR의 적용을 받는다
+- 암호자산 파생상품은 기초자산이 MiFID II에 따라 해당되는 경우 전통적 파생상품과 동일한 청산, 보고 및 투명성 요건을 적용받는다
+- **DLT 파일럿 체제** (Regulation 2022/858): 파생상품을 포함한 DLT 기반 금융상품의 거래 및 결제를 위한 샌드박스 (제한적 범위)
+- **DAC8**: 2026년 1월 1일부터 암호자산 거래에 대한 세무 투명성
+- ESMA가 일관된 NCA 해석을 보장하기 위해 암호자산의 금융상품 분류에 관한 지침을 발행하였다
+
+### 8.6 CCP 회복 및 정리 (CCP Recovery and Resolution)
+- **CCPRRR** — CCP 회복 및 정리 규정 (EU) 2021/23:
+  - EU CCP에 대한 회복 계획, 정리 계획 및 정리기관
+  - 정리 수단: 포지션 배분, 강제 계약 종료, 지분/부채 감액
+  - 청산회원의 정리기금 출연
+- CCP 스트레스 테스트 및 정리 준비에 관한 ESMA의 지속적 작업
+
+### 8.7 ESMA 2026 업무 프로그램 (주요 파생상품 항목)
+- Tier 2 CCP에 대한 지속적 감독 (리스크 모델 모니터링, 스트레스 테스트, 유동성 및 운영리스크)
+- EMIR 3.0 RTS 개발 및 이행
+- MiFIR 개정 기술표준 확정
+- CTP 선정 및 인가 절차
+- 금융거래 보고의 간소화 (2025년 6월 의견수렴 개시)
+
+---
+
+## 9. 한국과의 비교 (Comparison with Korea)
+
+### 9.1 규제 구조 (Regulatory Architecture)
+
+| 측면 | EU | 한국 |
+|------|-----|------|
+| **주요 규제기관** | ESMA (조율) + NCA (각국) | FSC (금융위원회) + FSS (금융감독원) |
+| **거래소 운영자** | 복수 (Eurex, Euronext, ICE, Nasdaq Nordic 등) | KRX (한국거래소) — 단일 통합 거래소 |
+| **CCP 모델** | 복수 인가 CCP (Eurex Clearing, LCH SA 등) | KRX CCP — 장내 및 OTC 파생상품 단일 CCP |
+| **법적 프레임워크** | EMIR, MiFID II/MiFIR (EU 규정/지침) | 자본시장과 금융투자업에 관한 법률 (자본시장법, FSCMA, 2013년 3월 개정) |
+| **감독 방식** | 다층적 (ESMA + 27개 NCA + ECB) | 중앙집중형 (FSC/FSS) |
+
+### 9.2 포지션한도 접근방식 (Position Limit Approaches)
+
+| 측면 | EU | 한국 |
+|------|-----|------|
+| **법적 근거** | MiFID II 제57조 | 자본시장법 + KRX 규정 |
+| **범위** | 상품 및 배출권 파생상품 | 모든 상장 파생상품 (주식, 지수, 상품) |
+| **설정 기관** | NCA (ESMA 조율) | KRX (FSC/FSS 감독 하) |
+| **방법론** | 인도가능공급량 및 미결제약정 기반 | 미결제약정 및 명목가치 기반 |
+| **헤지 면제** | NCA 부여 면제 | KRX 부여 면제 |
+| **투기 한도** | 계약별 한도 | 계좌별 및 상품별 한도 |
+
+### 9.3 청산의무 비교 (Clearing Mandates Comparison)
+
+| 측면 | EU | 한국 |
+|------|-----|------|
+| **OTC 청산의무** | 표준화 IRS 및 CDS (2016-2019년 단계적 도입) | KRW IRS, CRS (2014년 도입) |
+| **CCP** | 복수 EU CCP + 인정된 제3국 CCP | KRX CCP (단일) |
+| **거래상대방 범위** | FC, NFC+ (청산 기준 초과) | 금융기관 (은행, 증권회사) |
+| **청산 기준** | 있음 (자산유형별 명목금액 기준) | 있음 (거래량 기반) |
+| **G20 정합** | 완전 (EMIR이 G20 피츠버그 공약을 이행) | 완전 (자본시장법 개정이 G20 공약을 이행) |
+| **거래보고** | 양면 보고, TR에 | KRX TR(한국 거래저장소)에 |
+| **리스크 경감(비청산)** | 양자간 증거금, 확인, 조정, 압축 | 양자간 증거금, 유사한 리스크 경감 요건 |
+
+### 9.4 주요 구조적 차이 (Key Structural Differences)
+- **시장 구조**: EU는 분산된 다중 거래소, 다중 CCP 환경을 가지고 있는 반면, 한국은 KRX 하의 중앙집중형 단일 거래소 모델이다
+- **규제 복잡성**: EU의 다층적 프레임워크(EU 수준 규정 + 국내법 전환 + NCA 이행)에 비해 한국의 FSC/FSS-KRX 구조는 간소화되어 있다
+- **국경간 차원**: EU 프레임워크는 제3국 CCP 인정 및 동등성에 크게 초점을 맞추고 있으나 (브렉시트 및 글로벌 상호연결로 인해), 한국의 프레임워크는 주로 국내에 초점을 맞추고 IOSCO/FSB를 통한 국제 공조를 활용한다
+- **활성계좌 개념**: EU의 EMIR 3.0 AAR에 직접적으로 대응하는 한국의 규정은 없다 (KRX CCP가 국내 독점 청산 제공자)
+- **보고 표준**: 양 관할권 모두 CPMI-IOSCO 글로벌 데이터 표준(UTI, UPI, LEI)과 정합되어 있다
+
+---
+
+## 참고문헌 (References)
+
+### 주요 법률 (Primary Legislation, EUR-Lex)
+- [EMIR — Regulation (EU) No 648/2012](https://eur-lex.europa.eu/eli/reg/2012/648/oj/eng)
+- [EMIR 3.0 — Regulation (EU) 2024/2987](https://eur-lex.europa.eu/eli/reg/2024/2987/oj/eng)
+- [MiFIR Review — Regulation (EU) 2024/791](https://eur-lex.europa.eu/eli/reg/2024/791/oj/eng)
+
+### ESMA
+- [EMIR Reporting](https://www.esma.europa.eu/data-reporting/emir-reporting)
+- [Clearing Obligation and Risk Mitigation Techniques under EMIR](https://www.esma.europa.eu/post-trading/clearing-obligation-and-risk-mitigation-techniques-under-emir)
+- [Third-Country CCPs](https://www.esma.europa.eu/central-counterparties/third-country-ccps)
+- [Clearing Thresholds](https://www.esma.europa.eu/post-trading/clearing-thresholds)
+- [Final Report on EMIR 3 Active Account Requirement](https://www.esma.europa.eu/press-news/esma-news/esma-publishes-final-report-active-account-requirement-under-emir-3)
+- [MiFIR Review Final Report on Derivatives Transparency](https://www.esma.europa.eu/press-news/esma-news/esma-finalises-technical-standards-derivatives-transparency-and-otc)
+- [Consolidated Tape Providers](https://www.esma.europa.eu/esmas-activities/markets-and-infrastructure/consolidated-tape-providers)
+- [Commodity Derivatives — Position Limits (MiFID II Article 57)](https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/mifid-ii/article-57-position-limits-commodity)
+- [MiCA — Markets in Crypto-Assets Regulation](https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica)
+- [ESMA 2026 Annual Work Programme](https://www.esma.europa.eu/sites/default/files/2025-10/ESMA22-50751485-1604_Annual_Work_Programme_2026.pdf)
+
+### 유럽위원회 (European Commission)
+- [Derivatives / EMIR — Finance](https://finance.ec.europa.eu/financial-markets/financial-markets-policy/post-trade-services/derivatives-emir_en)
+- [UK CCP Equivalence Extension (January 2025)](https://finance.ec.europa.eu/news/commission-extends-time-limited-equivalence-uk-central-counterparties-2025-01-31_en)
+- [Benchmarks Regulation](https://finance.ec.europa.eu/news/benchmarks-2025-01-30_en)
+- [Crypto-Assets](https://finance.ec.europa.eu/digital-finance/crypto-assets_en)
+
+### 한국 (Korea)
+- [KRX OTC Derivatives Clearing](https://global.krx.co.kr/contents/GLB/02/0202/0202030201/GLB0202030201.jsp)
+- [FSC Press Release on OTC Clearing](https://www.fsc.go.kr/eng/pr010101/22219)

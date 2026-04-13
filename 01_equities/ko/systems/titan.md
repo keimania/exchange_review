@@ -1,0 +1,312 @@
+# SGX Titan / SGX REACH -- 싱가포르거래소 (Singapore Exchange)
+
+> **최종 업데이트:** 2026-04-06
+> **시스템 분류:** 매매시스템 (Trading System)
+
+---
+
+## 1. 시스템 개요 (System Overview)
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 시스템명 (파생상품) | SGX Titan DT (Derivatives Trading) / SGX Titan DC (Derivatives Clearing) |
+| 시스템명 (증권) | SGX REACH (Securities Trading) |
+| 시스템명 (장외) | SGX Titan OTC (장외 거래 등록 및 청산) |
+| 운영 기관 | Singapore Exchange Limited (SGX Group) |
+| 목적 | SGX 파생상품 및 증권 시장을 위한 주문 매칭, 시장 데이터 배포, 청산, 리스크 관리 |
+| 출시 연도 (Titan DT/DC) | 2016년 11월 14일 (QUEST 및 SGXClear 대체) |
+| 출시 연도 (REACH) | 2008년 (초기); 2019년 6월 3일 Nasdaq Financial Framework 다중 매매체결엔진 (매칭엔진)으로 업그레이드 |
+| 차세대 (증권) | Iris-ST -- 2027년 하반기 가동 계획 (SGX REACH 대체) |
+| 벤더 | Nasdaq, Inc. (2003년 이후 기술 파트너십) |
+| 기술 기반 | Nasdaq Genium INET v4 (Titan DT/DC); Nasdaq Financial Framework / Genium INET (REACH) |
+
+SGX는 매매 인프라에 이중 플랫폼 아키텍처를 운영한다: **Titan**이 파생상품 사업(매매, 청산, 장외)을, **SGX REACH**가 증권(현물주식) 시장을 담당한다. 양 플랫폼 모두 Nasdaq의 Genium INET 기술 계열 위에 구축되어, 자산군 전반에 걸쳐 통합된 기술 기반을 제공하면서 각 시장에 최적화된 별도 엔진을 유지한다.
+
+Nasdaq 파트너십은 2003년으로 거슬러 올라가며, 아시아에서 가장 오래 지속되는 거래소 기술 관계 중 하나이다. SGX는 초기 Genium 배포에서 현재 Nasdaq Financial Framework까지 Nasdaq 기술의 여러 세대를 거쳐 점진적으로 업그레이드해왔다.
+
+[Source: SGX, "Platforms", https://www.sgx.com/derivatives/platforms, accessed 2026-04-06]
+[Source: Nasdaq, "Singapore Exchange Launches New Multi-Matching Trading Engine from Nasdaq", 12 July 2019, https://ir.nasdaq.com/news-releases/news-release-details/singapore-exchange-launches-new-multi-matching-trading-engine]
+
+### 시스템 변천사 (System Evolution)
+
+| 연도 | 시스템 | 주요 변경사항 |
+|------|--------|-------------|
+| 2003년 이전 | 레거시 SES/SIMEX 시스템 | 합병 이전의 원래 매매시스템 |
+| 2003년 | Nasdaq 파트너십 개시 | SGX가 매매 인프라에 Nasdaq 기술 채택 |
+| 2004년 | QUEST | 파생상품 매매시스템 |
+| 2008년 | SGX REACH (v1) | 증권 매매가 Nasdaq Genium 플랫폼으로 이관; SGX의 신규 데이터센터 및 코로케이션 (전산센터 공동입주)을 포함한 ~2.5억 SGD 인프라 투자의 일환 |
+| 2011년 | SGX REACH 인프라 업그레이드 | 90 마이크로초 미만 지연시간의 초저지연 플랫폼; Mellanox InfiniBand 스위치 및 HP 블레이드 서버 배포 |
+| 2014년 | Titan DT/DC 발표 | SGX와 Nasdaq이 Genium INET v4 기반 차세대 파생상품 플랫폼 발표 |
+| 2016년 11월 14일 | **Titan DT/DC 가동** | QUEST (매매) 및 SGXClear (청산) 대체; 파생상품에 OUCH 프로토콜 (주문 입력 규약)/ITCH 프로토콜 (시장 데이터 피드) 도입; 100 마이크로초 미만 지연시간 |
+| 2019년 6월 3일 | **REACH, Nasdaq Financial Framework로 업그레이드** | 증권용 다중 매매체결엔진; 현물 및 파생상품 전반에 표준화된 API; 통합 메시징 및 데이터 인프라 |
+| 2023년 7월 3일 | GIFT Connect 전면 운영 | NSE IFSC-SGX Connect가 싱가포르와 인도 자본시장 연결; Nifty 파생상품 주문이 SGX 인프라를 통해 NSE IFSC 매매체결엔진으로 라우팅 |
+| 2025년 11월 | Iris-ST 발표 | SGX RegCo가 차세대 증권 매매엔진에 대한 의견 수렴 개시 |
+| 2027년 하반기 (계획) | **Iris-ST 가동** | SGX REACH 대체; 신규 주문 유형, 경매 가격 칼라, 강화된 사전 매매 리스크 통제, 보다 직관적인 카운터 코드 |
+
+[Source: Nasdaq, "NASDAQ OMX to Deliver World's Fastest Trading Platform to Singapore Exchange", https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-omx-deliver-worlds-fastest-trading-platform-singapore]
+
+---
+
+## 2. 아키텍처 (Architecture)
+
+### 2.1 상위 수준 설계 (High-Level Design)
+
+- **배포 모델:** 온프레미스, 싱가포르 전용 SGX 데이터센터
+- **토폴로지:** 파생상품(Titan DT)과 증권(REACH)의 별도 매매체결엔진, 통합 연결 및 시장 데이터 계층
+- **설계 패턴:** 이벤트 기반, 결정론적 처리; 종목 그룹별 단일 스레드 매칭의 Nasdaq Genium INET 핵심
+- **다자산 범위:** Titan이 주식 파생상품, 원자재 파생상품(철광석, 고무, 운임), FX 파생상품, 금리 파생상품 포괄; REACH가 모든 현물주식(메인보드, Catalist, GlobalQuote), REIT, ETF, 채권, 구조화워런트 포괄
+- **기술 기반:** Nasdaq Genium INET 아키텍처 -- Nasdaq Nordic, HKEX(과거), 전 세계 130개 이상의 시장을 구동하는 동일 기술 계열
+
+### 2.2 핵심 구성요소 (Core Components)
+
+#### Titan DT (파생상품 매매) (Derivatives Trading)
+
+| 구성요소 | 기능 | 기술 |
+|-----------|----------|------------|
+| **Titan 매매체결엔진** | 가격-시간 우선을 사용한 파생상품 주문 매칭; 연속매매 및 경매 메커니즘 지원 | Nasdaq Genium INET v4; 종목 그룹별 단일 스레드; 100 마이크로초 미만 지연시간 |
+| **OUCH Gateway** | 초저지연 네이티브 바이너리 주문 입력; 확인 메시지와 독립적인 비동기 주문 입력 | SoupBinTCP 위 OUCH 프로토콜; 코로케이션 전용; 포트당 50 TPS |
+| **Titan DT API Gateway** | 독자적 Genium INET v4 주문 입력 인터페이스; OUCH보다 풍부한 기능 | Genium INET v4 네이티브 프로토콜; 10-50 TPS 구성 가능 |
+| **ITCH Market Data Engine** | 전체 호가잔량의 실시간 시장 데이터 배포 | MoldUDP64 멀티캐스트 위 ITCH 프로토콜; MBO(Market-by-Order) 및 MBP(Market-by-Price) 지원 |
+| **GLIMPSE Server** | ITCH 시장 데이터의 스냅샷 복구 서비스; 요청 시 호가장 현재 상태 제공 | TCP 기반 요청/응답; 누락 멀티캐스트 메시지 복구용 |
+| **리스크 엔진** | 사전 매매 리스크 통제, 포지션 모니터링, 자기거래방지 | 매매체결엔진에 통합; Titan DC로 실시간 포지션 업데이트 |
+| **Drop Copy Server** | 준법감시 및 대사를 위한 실시간 체결 사본 | 독자적 프로토콜; 다수 호가장에 걸친 통합 뷰 |
+
+#### SGX REACH (증권 매매) (Securities Trading)
+
+| 구성요소 | 기능 | 기술 |
+|-----------|----------|------------|
+| **다중 매매체결엔진** | 종목 그룹별 파티셔닝된 병렬 매매체결엔진; 수평적 확장 가능 | Nasdaq Financial Framework; 다수 매칭 파티션이 병렬 운영 |
+| **SGXAccess API Gateway** | 증권용 독자적 고속 주문 입력 | OMnet (Genium) 프로토콜; 20-100 TPS 구성 가능 |
+| **SGXAccess FIX Gateway** | 증권용 표준 FIX 프로토콜 주문 입력 | FIX 5.0; 참가자의 최소 재개발; 폭넓은 호환성 |
+| **ITCH Market Data Engine** | 실시간 증권 시장 데이터 | MoldUDP64 멀티캐스트 위 ITCH; MBO 및 MBP 피드 |
+
+[Source: SGX, "Market Access", https://www.sgx.com/data-connectivity/market-access, accessed 2026-04-06]
+
+### 2.3 기술 스택 (Technology Stack)
+
+| 계층 | 기술 |
+|-------|-----------|
+| **핵심 플랫폼** | Nasdaq Genium INET v4 (Titan DT/DC); Nasdaq Financial Framework (REACH) |
+| **프로그래밍 언어** | C/C++ (매매체결엔진 핵심 -- Nasdaq INET 플랫폼의 표준) [SGX 전용 빌드 미검증] |
+| **운영체제** | Linux (상용 서버; 저지연 운영 최적화 커널 -- Nasdaq 표준 배포) [SGX 전용 구성 미검증] |
+| **네트워킹** | InfiniBand (내부 패브릭 -- REACH 인프라에 Mellanox 스위치 확인); 이더넷 (참가자 대면: 1G/10G 옵션) |
+| **하드웨어** | HP 블레이드 서버 (REACH에 확인); 상용 Linux 서버 (Titan) [현 세대 미검증] |
+| **시장 데이터 전송** | ITCH 피드용 MoldUDP64 (멀티캐스트); OUCH 주문 입력용 SoupBinTCP (점대점) |
+| **스트리밍 인프라** | 실시간 데이터 스트리밍 및 이벤트 처리를 위한 내부 Apache Kafka (Confluent Platform) |
+| **바이트 순서** | Big Endian (Genium INET 표준) |
+
+---
+
+## 3. 성능 사양 (Performance Specifications)
+
+### 3.1 지연시간 (Latency)
+
+| 플랫폼 | 지표 | 값 | 조건 |
+|----------|--------|-------|------------|
+| **Titan DT (파생상품)** | 왕복 지연시간 (Tier 1 코로케이션) | < 100 마이크로초 | 운영; 코로케이션 Tier 1 |
+| **Titan DT** | OUCH 주문 라우팅 지연시간 | ~100-150 마이크로초 | 운영 추정치 |
+| **Titan DT** | Nasdaq Genium INET 벤치마크 | < 90 마이크로초 평균 | SGX 벤치마크 테스트 (출시 시 발표) |
+| **SGX REACH (증권)** | 왕복 지연시간 (Tier 1 코로케이션) | < 100 마이크로초 | 운영; 코로케이션 Tier 1 |
+| **SGX REACH** | Nasdaq 매매체결엔진 역량 | 40 마이크로초 미만 door-to-door | Nasdaq 발표 INET 기반 엔진 역량 |
+
+### 3.2 처리량 및 용량 (Throughput and Capacity)
+
+| 플랫폼 | 지표 | 값 |
+|----------|--------|-------|
+| **Genium INET (엔진 역량)** | 메시지 처리량 | > 1,000,000건/초 |
+| **Titan DT API** | 포트당 주문 속도 | 10-50 TPS (구성 가능) |
+| **Titan DT OUCH** | 포트당 주문 속도 | 50 TPS |
+| **SGXAccess API (REACH)** | 포트당 주문 속도 | 20-100 TPS (구성 가능) |
+
+---
+
+## 4. 인터페이스 및 프로토콜 (Interfaces & Protocols)
+
+### 4.1 주문 입력 -- 파생상품 (Titan DT) (Order Entry -- Derivatives)
+
+| 프로토콜 | 버전 | 지연시간 | 속도 제한 | 설명 |
+|----------|---------|---------|------------|-------------|
+| **OUCH** | Nasdaq OUCH (SGX 변형) | 최저 | 50 TPS | 네이티브 바이너리 주문 입력; 비동기 -- 주문 입력(tx)이 확인(ack)과 독립; 입력, 정정, 취소 지원; 코로케이션 접근 전용 |
+| **Titan DT API** | Genium INET v4 | 저 | 10-50 TPS | 독자적 Genium 인터페이스; 복합 주문, 전략 매매 등 풍부한 주문 기능; 폭넓은 연결 옵션 |
+| **FIX** | FIX 4.2 / 5.0 [DT 정확 버전 미검증] | 표준 | 가변 | 폭넓은 호환성을 위한 표준 FIX 프로토콜 |
+
+### 4.2 주문 입력 -- 증권 (SGX REACH) (Order Entry -- Securities)
+
+| 프로토콜 | 버전 | 속도 제한 | 설명 |
+|----------|---------|------------|-------------|
+| **SGXAccess API** | OMnet (Genium 독자적) | 20-100 TPS | 독자적 고속 인터페이스; 증권용 최저 지연시간 |
+| **SGXAccess FIX** | FIX 5.0 | 20-100 TPS | SGX 확장이 포함된 표준 FIX 프로토콜; 참가자의 최소 시스템 재개발; 세분화된 구독 및 복구를 위한 FIX Application Sequencing 사용 |
+
+### 4.3 주문 입력 -- 장외 (Titan OTC) (Order Entry -- OTC)
+
+| 프로토콜 | 버전 | 설명 |
+|----------|---------|-------------|
+| **Titan OTC FIX** | FIX 5.0 SP2 | 장외 파생상품의 거래 등록 및 워크플로우 관리; Flex Futures(사용자 지정 만기), 스트립 매매(분기/연간 스트립), 브로커 지원 주문관리(Titan OTC Pro) 지원 |
+
+### 4.4 주문 입력 -- GIFT Connect (인도 접근) (Order Entry -- GIFT Connect)
+
+| 프로토콜 | 설명 |
+|----------|-------------|
+| **GIFT Connect FIX** | FIX 5.0 SP2; NSE IFSC 매매체결엔진으로 Nifty 파생상품 주문 라우팅; Level 2 시장 데이터 (5단계 호가잔량) |
+| **GIFT Connect DMA (직접시장접근)** | NSE IFSC NNF 축소 프로토콜; GIFT City 내 인도 코로케이션을 통한 초저지연 |
+
+### 4.5 시장 데이터 배포 (Market Data Dissemination)
+
+| 피드 | 프로토콜 | 전송 | 설명 |
+|------|----------|-----------|-------------|
+| **Titan ITCH** (파생상품) | ITCH (Nasdaq 바이너리) | MoldUDP64 멀티캐스트 | 실시간 파생상품 시장 데이터; MBO(개별 주문 수준) 및 MBP(집계 가격 수준) 지원 |
+| **SGX ITCH** (증권) | ITCH (Nasdaq 바이너리) | MoldUDP64 멀티캐스트 | 실시간 증권 시장 데이터; MBO 및 MBP |
+| **GLIMPSE** (파생상품) | GLIMPSE (Nasdaq) | TCP 요청/응답 | Titan ITCH의 스냅샷 복구; 요청 시 호가장 현재 상태 제공; 누락 멀티캐스트 메시지 복구용 |
+
+---
+
+## 5. 복원력 및 업무연속성 (Resilience & Business Continuity)
+
+### 5.1 데이터센터 인프라 (Data Center Infrastructure)
+
+SGX는 싱가포르에 전용 데이터센터를 운영하며, 매매 플랫폼 업그레이드 및 코로케이션 시설을 포함한 ~2.5억 SGD 인프라 투자의 일환으로 건설되었다.
+
+| 사양 | 세부 내용 |
+|---------------|---------|
+| **위치** | 싱가포르 (보안상 정확한 주소 미공개) |
+| **전력** | 이중 전력 공급 및 2N Dynamic Rotary UPS 시스템; 72시간 이상 디젤 발전기 백업 |
+| **냉각** | N+2 전산실 공조 및 FM 200 소화 장치 |
+| **보안** | 24/7 감시; 3단계 접근 통제(정문, 건물, 데이터센터); 이중 카드, 맨트랩, 생체인식 |
+| **인증** | ISO 22301(업무연속성), ISO 27001(정보보안), SSAE 3402(SOC), TIA-942 Tier 3 Standard |
+
+### 5.2 이중화 (Redundancy)
+
+- **매매체결엔진:** 결정론적 설계로 일관된 상태 복제; Nasdaq Genium INET 아키텍처가 핫 스탠바이 장애 전환 지원 [SGX 전용 구현 미검증]
+- **시장 데이터:** GLIMPSE 스냅샷 복구가 포함된 MoldUDP64 멀티캐스트; 이중 멀티캐스트 그룹 아키텍처 [미검증]
+- **네트워크:** 다수 서비스 제공업체 및 거래소와의 크로스 커넥트가 있는 통신사 중립, 벤더 중립 환경
+- **전력:** 72시간 이상 발전기 백업의 2N UPS 구성 -- 일반적 거래소 요건 초과
+
+### 5.3 재해복구 (Disaster Recovery)
+
+- SGX는 재해복구를 위한 지리적으로 분리된 보조 사이트를 유지하는 것으로 알려짐 [미검증 -- 구체적 DR 사이트 위치 미공개]
+- MAS 기술리스크관리 가이드라인(TRM)에 따라 금융기관에 적정한 DR 역량 의무화
+- 정기적 BCP 훈련 실시 -- SGX Titan 업계 전체 BCP 훈련이 회원 서한에 문서화
+- 구체적 장애 전환 시간(RTO/RPO) 미공개
+
+### 5.4 용량 관리 (Capacity Management)
+
+- 코로케이션 Tier 1/2/3 구조로 지연시간 민감도에 따라 참가자 부하 분배
+- 포트당 TPS 스로틀(프로토콜에 따라 10-100 TPS)로 개별 참가자의 시스템 과부하 방지
+- 다중 매매체결엔진 아키텍처(REACH 2019)가 증권에 대한 수평적 확장 기능 제공
+- 고처리량 참가자를 위한 10 Gbps 매매 연결 업그레이드 이용 가능
+
+---
+
+## 6. 주요 기술적 특징 (Notable Technical Features)
+
+### 6.1 다자산 기능 (Multi-Asset Capability)
+
+SGX Titan은 단일 플랫폼 계열에서 현저히 넓은 범위의 파생상품을 처리한다:
+
+| 자산군 | 상품 |
+|-------------|----------|
+| **주식 파생상품** | Nifty 50 선물/옵션(GIFT Connect 경유), MSCI 지수 선물(싱가포르, 아시아, EM), STI 선물, 개별주식 선물 |
+| **원자재 파생상품** | 철광석(세계 최대 거래소), 고무, 운임(FFA), 석유화학 |
+| **FX 파생상품** | USD/SGD, USD/CNH, INR, KRW, JPY 및 기타 아시아 통화쌍 |
+| **금리 파생상품** | 싱가포르 국채 선물, SOFR 선물 |
+| **암호화폐 파생상품** | Bitcoin 및 Ether 영구 선물 (2024-2025 출시) |
+
+### 6.2 GIFT Connect (인도 NSE와의 연결) (GIFT Connect with NSE India)
+
+GIFT(Gujarat International Finance Tec-City) Connect는 SGX와 인도의 National Stock Exchange (NSE)를 연결하는 획기적인 교차 국경 이니셔티브이다:
+
+| 항목 | 세부 내용 |
+|------|---------|
+| **출시** | 2022년 7월 29일 (NSE IFSC-SGX Connect); GIFT Nifty 2023년 7월 3일 전면 운영 |
+| **메커니즘** | SGX 회원의 주문이 인도 GIFT City의 NSE IFSC 주문 매칭 엔진으로 라우팅되어 매칭 |
+| **상품** | Nifty 50 주식 파생상품 (선물 및 옵션) |
+| **접근 프로토콜** | FIX 5.0 SP2 (표준); 인도 코로케이션을 통한 NNF 축소 프로토콜 (DMA) |
+| **의의** | 이전 SGX Nifty 상품을 대체; 국제(SGX 경유) 및 국내(NSE IFSC 경유) 참가자가 단일 주문장에서 매매 가능 |
+
+### 6.3 Titan OTC (청산) (Titan OTC for Clearing)
+
+Titan OTC는 장외(OTC/블록) 파생상품에 대한 거래 등록 및 사후 매매 서비스를 제공한다:
+- **범위:** SGX 상장 파생상품(주식, FX, 원자재)의 장외 거래 등록
+- **Flex Futures:** 표준 선물 계약에 사용자 지정 만기일
+- **스트립 매매:** 다수 계약 월의 동시 매매(분기 스트립, 연간 스트립)
+- **Titan OTC Pro:** 원자재 상품용 브로커 지원 주문관리시스템
+- **프로토콜:** FIX 5.0 SP2
+- **통합:** 등록된 거래가 중앙청산상대방(CCP) 리스크 저감을 위해 Titan DC로 직접 유입
+
+### 6.4 싱가포르 코로케이션 (Co-Location in Singapore)
+
+SGX의 코로케이션 시설은 아시아태평양에서 핵심 경쟁 우위이다:
+
+| 등급 | 대상 사용자 | 지연시간 | 특징 |
+|------|-------------|---------|----------|
+| **Tier 1** | 고빈도매매 (HFT), 마켓메이커, 자기매매 | < 100 마이크로초 왕복 | 최저 지연시간; 매매체결엔진과 직접 광섬유 연결 |
+| **Tier 2** | 기관 브로커, 알고 매매 | 경쟁적 (미공개) | 지연시간과 비용의 균형 |
+| **Tier 3** | 백오피스, 비매매 시스템 | 표준 | 비용 효율적; 24/7 지원 |
+
+### 6.5 Iris-ST: 차세대 증권 엔진 (2027년 하반기 계획) (Iris-ST: Next-Generation Securities Engine)
+
+Iris-ST가 SGX REACH를 증권 매매엔진으로 대체할 예정이다. 주요 계획 강화 사항:
+
+| 기능 | 설명 |
+|---------|-------------|
+| **신규 주문 유형** | 현재 지정가/시장가/역지정가 외 추가 주문 유형 (의견 수렴 중 구체화) |
+| **경매 가격 칼라** | 극단적 가격 이탈 방지와 가격 발견 지원을 위한 시가, 중간, 종가 경매용 가격 칼라 메커니즘; 경매용 Forced Order Range 대체 |
+| **사전 매매 리스크 통제 (PTRC)** | 회원이 규제 의무를 충족하는 데 사용할 수 있는 새 거래소 수준 PTRC 시스템; 기존 Forced Order Range 및 "Force Key" 오류 방지 기능 대체 |
+| **카운터 코드** | 보다 직관적인 증권 카운터 코드 |
+| **기술 기반** | Nasdaq Eqlipse (4세대 플랫폼) 또는 최신 Nasdaq Financial Framework 기반 예상 [미검증] |
+
+---
+
+## 7. 비교 분석 -- KRX Exture+ 대비 (Comparison Notes -- vs KRX Exture+)
+
+### 7.1 요약 비교 (Summary Comparison)
+
+| 항목 | SGX Titan / REACH | KRX Exture+ |
+|-----------|-------------------|-------------|
+| **운영 기관** | Singapore Exchange (SGX Group) | 한국거래소 (KRX) |
+| **기술 원천** | Nasdaq (벤더 -- Genium INET / NFF) | 자체 개발 (KRX/Koscom) |
+| **아키텍처** | 별도 엔진: Titan DT (파생상품), REACH (증권) | 통합 단일 플랫폼: 주식, 채권, 선물, 옵션, ETF, 워런트, 원자재를 하나의 시스템에서 |
+| **매매체결엔진 지연시간** | < 100 마이크로초 (코로케이션 Tier 1); Nasdaq 벤치마크 < 90 마이크로초 | ~70 마이크로초 (매매체결엔진) |
+| **지연시간 비교** | 비교 가능 | 비교 가능; KRX가 공표된 매매체결엔진 지연시간에서 약간 빠름 |
+| **처리량 (엔진)** | > 1,000,000건/초 (Nasdaq Genium INET 사양) | 일일 4,000만 호가 용량 (~462건/초 지속, 피크 시 대폭 상회) [미검증 정확 피크] |
+| **주문 입력 프로토콜** | OUCH (네이티브 바이너리), Genium API (독자적), FIX 5.0 -- 모두 Nasdaq 유래 | KRX 독자적 API (Koscom 개발); FIX 게이트웨이 |
+| **시장 데이터 프로토콜** | MoldUDP64 위 ITCH (Nasdaq 바이너리) | KRX 독자적 시장 데이터 프로토콜 |
+| **벤더 종속** | 높음 -- 핵심 엔진 개발, 업그레이드, 지원에 Nasdaq 의존 | 없음 -- 개발 로드맵 및 일정에 대한 완전한 자체 통제 |
+| **교차 국경 연결** | GIFT Connect (인도), 도쿄/홍콩 지역 코로케이션 연결 | 제한적; 주로 국내 시장 |
+| **데이터센터** | 싱가포르 (도시국가 -- DR을 위한 제한된 지리적 분리) | 부산 주; 별도 위치에 DR |
+
+### 7.2 아키텍처 철학 (Architectural Philosophy)
+
+**SGX (Nasdaq 벤더 모델):**
+- **장점:** Nasdaq의 글로벌 R&D 투자 활용; 130개 이상 시장에 배포된 검증된 기술; 벤더 로드맵을 통한 빠른 신규 역량 출시; 업계 표준 프로토콜(OUCH/ITCH/FIX)로 참가자 온보딩 마찰 감소
+- **단점:** 핵심 시스템 변경에 대한 벤더 종속; 업그레이드 시기가 Nasdaq 글로벌 제품 일정에 부분적으로 좌우; 라이선스 비용; 깊은 커스터마이징 제한; 벤더 전략 변경 리스크
+- **철학:** "최고 수준을 구매하고 커스터마이징" -- 기술에 Nasdaq의 글로벌 규모를 활용하면서 내부 자원을 시장 개발, 상품, 규제에 집중
+
+**KRX (자체 개발 모델):**
+- **장점:** 기술 로드맵 및 우선순위에 대한 완전한 통제; 벤더 라이선스 비용 없음; 한국 시장 요구사항(예: 일일 가격제한, 고유 경매 메커니즘)에 대한 깊은 커스터마이징; 모든 자산군에 걸친 통합 단일 플랫폼 아키텍처
+- **단점:** 전체 R&D 부담을 (Koscom을 통해) 내부 부담; 글로벌 프로토콜 표준 채택이 느림; Nasdaq의 글로벌 엔지니어링 조직 대비 소규모 개발팀; 기술 이식성 저하
+- **철학:** "직접 구축하고 보유" -- 거래소 기술 스택에 대한 완전한 주권 유지; 국내 시장 특성에 특화 최적화
+
+### 7.3 지연시간 맥락 (Latency Context)
+
+양 거래소 모두 100 마이크로초 미만 지연시간 등급을 달성하여, Nasdaq (~20-30 마이크로초), NYSE Pillar (~25-40 마이크로초), LSE Millennium (~20-30 마이크로초)과 함께 글로벌 최상위에 위치한다. SGX의 ~90 마이크로초와 KRX의 ~70 마이크로초 간의 차이는 상대적으로 미미하며 -- 양쪽 모두 "초저지연" 범주에 해당한다. 실질적 영향은 코로케이션 품질, 네트워크 인프라, 참가자 측 기술에 크게 좌우된다.
+
+주목할 점: KRX는 Exture (20,000 마이크로초)에서 Exture+ (70 마이크로초)로 ~285배 개선을 달성한 반면, SGX는 REACH 2008 (~200 마이크로초)에서 REACH 2019 (~100 마이크로초)로 ~2배 개선을 달성하였다 -- 다만 SGX는 Nasdaq의 Genium INET 기술 덕분에 훨씬 낮은 기준선에서 출발하였다.
+
+---
+
+## 부록: 프로토콜 빠른 참조 (Appendix: Protocol Quick Reference)
+
+| 프로토콜 | 기원 | 계층 | SGX 사용처 | 전송 |
+|----------|--------|-------|-----------|-----------|
+| **OUCH** | Nasdaq (Island ECN 계보) | 주문 입력 | Titan DT 파생상품 (초저지연) | SoupBinTCP (TCP) |
+| **ITCH** | Nasdaq (Island ECN 계보) | 시장 데이터 | 증권 및 파생상품 실시간 데이터 | MoldUDP64 (UDP 멀티캐스트) |
+| **GLIMPSE** | Nasdaq | 시장 데이터 복구 | Titan DT 스냅샷 복구 | TCP 요청/응답 |
+| **MoldUDP64** | Nasdaq | 전송 | ITCH용 멀티캐스트 전달 계층 | UDP 멀티캐스트 |
+| **SoupBinTCP** | Nasdaq | 전송 | OUCH용 점대점 세션 계층 | TCP |
+| **OMnet / Genium API** | Nasdaq (OMX 계보) | 주문 입력 | 증권용 SGXAccess API; 파생상품용 Titan DT API | 독자적 TCP |
+| **FIX** | FIX Protocol Ltd (업계 표준) | 주문 입력 | 증권용 SGXAccess FIX (5.0); Titan OTC (5.0 SP2); GIFT Connect (5.0 SP2) | TCP |
+
+---
+
+*본 문서는 SGX Titan (파생상품), SGX REACH (증권), Titan OTC (장외 청산), 계획 중인 Iris-ST (차세대 증권)를 다룬다. 시장 구조, 규제, 상장 요건을 포함한 SGX 거래소 전체 프로필은 [sgx.md](../exchanges/sgx.md)를 참조하라. Nasdaq INET 기술 심층 분석은 [inet.md](inet.md)를 참조하라.*

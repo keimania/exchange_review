@@ -1,0 +1,513 @@
+# New York Stock Exchange (NYSE)
+
+> **Last Updated:** 2026-04-03
+> **Research Tier:** Tier 1
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | New York Stock Exchange LLC |
+| Abbreviation | NYSE |
+| Website | https://www.nyse.com |
+| Year Established | 1792 (Buttonwood Agreement); formalized 1817 as New York Stock & Exchange Board |
+| Country / City | United States / New York, NY (trading floor at 11 Wall Street) |
+| Ownership Structure | Wholly-owned subsidiary of Intercontinental Exchange, Inc. (ICE); ICE is publicly traded (NYSE: ICE) with widely held institutional ownership |
+| Parent Company / Group | Intercontinental Exchange, Inc. (ICE) — acquired NYSE Euronext in November 2013 for approximately $11 billion |
+| Regulatory Authority | U.S. Securities and Exchange Commission (SEC); NYSE is itself a Self-Regulatory Organization (SRO) with regulatory services agreements with FINRA |
+| Market Capitalization (listed companies) | ~$28 trillion (NYSE-listed equities, 2025); total domestic market cap exceeding $44 trillion when combined with all U.S. exchanges as of January 2026 [Source: Statista, Siblis Research] |
+| Total Listed Instruments | ~2,400+ listed companies (including 530+ international companies); additionally hosts 2,000+ ETPs on NYSE Arca |
+| Average Daily Trading Volume | ~1.54 billion shares (November 2025) [Source: NYSE equity volumes data] |
+| Average Daily Trading Value | ~$80.6 billion (November 2025) [estimated] |
+
+### Key Historical Milestones
+- **1792:** Buttonwood Agreement signed on May 17 by 24 stockbrokers under a buttonwood tree at 68 Wall Street, establishing organized securities trading in New York
+- **1817:** Formalized as the "New York Stock & Exchange Board" on March 8; adopted a constitution and rules
+- **1863:** Renamed to "New York Stock Exchange"
+- **1867:** Introduction of stock ticker by Edward Calahan
+- **1903:** NYSE moves to its current location at 18 Broad Street (11 Wall Street)
+- **1929:** Stock market crash (Black Tuesday, October 29) triggers the Great Depression
+- **1934:** SEC created under the Securities Exchange Act; NYSE registers as a national securities exchange
+- **1971:** NYSE incorporates as a not-for-profit corporation
+- **1980:** Market capitalization of NYSE-listed securities tops $1 trillion for the first time
+- **1987:** "Black Monday" (October 19) — Dow plunges 508 points (22%); market-wide circuit breakers subsequently introduced
+- **1995:** Wireless handheld computers introduced on the trading floor, beginning electronic automation
+- **2005-2006:** NYSE Hybrid Market launched, blending floor-based auction with electronic trading; NYSE merges with Archipelago Exchange (Arca)
+- **2006:** NYSE Group goes public via IPO; becomes NYSE Group, Inc.
+- **2007:** NYSE Group merges with Euronext to form NYSE Euronext
+- **2010:** Mahwah, NJ data center opens (396,000 sq ft facility)
+- **2012:** Superstorm Sandy forces NYSE to close for two consecutive days (first weather-related two-day closure since 1888)
+- **2013:** Intercontinental Exchange (ICE) completes acquisition of NYSE Euronext
+- **2017:** NYSE Pillar trading platform begins rollout
+- **2024:** NYSE announces plan to extend NYSE Arca trading to 22 hours/day
+- **2025:** NYSE Texas launches (March 2025), rebranding and relocating NYSE Chicago to Dallas
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| NYSE (Main Board) | Premier listing venue for large-cap and blue-chip companies; hybrid auction/electronic market with physical trading floor | Global market cap >= $200M; share price >= $4; pre-tax income >= $10M aggregate over 3 years (or alternative standards); 400+ round-lot holders; 1.1M+ publicly held shares |
+| NYSE American | Exchange for small-cap companies (formerly NYSE MKT / AMEX) | Market cap >= $50M (30-day consecutive); share price >= $1; stockholders' equity >= $4M; 1M+ publicly held shares with market value >= $2.5M |
+| NYSE Arca Equities | Fully electronic exchange; premier venue for ETPs (ETFs, ETNs) | 500,000+ publicly held shares; market value >= $3M; suited for small, mid, and large-cap companies and ETPs |
+| NYSE National | All-electronic equities exchange with inverted fee model (rebates for taking liquidity) | Trades NMS stocks; no primary listings |
+| NYSE Texas | All-electronic equities exchange headquartered in Dallas, TX (launched March 2025; rebranded from NYSE Chicago) | Pending listing capability; currently trades NMS stocks |
+
+### 2.2 Trading Sessions
+| Session | Local Time (ET) | UTC (ET = UTC-4 / UTC-5) | Description |
+|---------|----------------|--------------------------|-------------|
+| Pre-Opening | 6:30 AM | 10:30 / 11:30 UTC | Orders accepted and queued; no executions until opening auction |
+| Early Trading (Tapes B&C only) | 7:00 AM – 9:30 AM | 11:00–13:30 / 12:00–14:30 UTC | Continuous trading for non-Tape A securities |
+| Opening Auction | 9:30 AM | 13:30 / 14:30 UTC | DMM-facilitated price discovery auction to determine opening prices for NYSE-listed securities |
+| Core Continuous Trading | 9:30 AM – 4:00 PM | 13:30–20:00 / 14:30–21:00 UTC | Main trading session; continuous order matching |
+| Closing Imbalance Period | 3:50 PM – 4:00 PM | 19:50–20:00 / 20:50–21:00 UTC | Closing auction imbalance information disseminated; MOC/LOC order entry cutoff |
+| Closing Auction | 4:00 PM | 20:00 / 21:00 UTC | DMM-facilitated closing auction determining official closing prices |
+| After-Hours / Late Trading | 4:00 PM – 8:00 PM | 20:00–00:00 / 21:00–01:00 UTC | Extended-hours electronic trading (available on NYSE Arca, NYSE American) |
+
+**Note on NYSE Arca Extended Hours:** NYSE Arca currently supports early trading from 4:00 AM ET and late trading until 8:00 PM ET. SEC approval has been granted for 22-hour trading (1:30 AM – 11:30 PM ET Mon-Thu; 1:30 AM – 8:00 PM ET Fri), targeted for launch in late 2026 pending SIP and DTCC readiness.
+
+### 2.3 Tick Sizes
+| Price Range | Tick Size |
+|-------------|-----------|
+| Stocks >= $1.00 | $0.01 (1 cent) — per SEC Regulation NMS Rule 612 (Sub-Penny Rule) |
+| Stocks < $1.00 | $0.0001 (1/100th of a cent) |
+
+**Note:** The SEC adopted amendments in September 2024 to allow sub-penny quoting in certain circumstances and adjusting tick sizes based on time-weighted average spread. These changes are phasing in through 2025-2026. Tick sizes of $0.005, $0.01, and $0.025 may apply depending on security characteristics under the new framework.
+
+### 2.4 Lot Sizes
+- **Standard (round) lot:** Historically 100 shares
+- **New variable round lot definition (effective November 2025):** Based on stock price:
+  - Share price >= $250.00: round lot = 40 shares
+  - Share price >= $1,000.00: round lot = 10 shares
+  - Share price >= $10,000.00: round lot = 1 share
+  - Share price < $250.00: round lot = 100 shares (unchanged)
+- **Odd lot trading:** Supported; odd lots (less than round lot) are executable but historically excluded from NBBO. SEC reforms effective 2025 require odd-lot information to be included in consolidated market data.
+
+### 2.5 Market Maker / Liquidity Provider Programs
+
+**Designated Market Makers (DMMs):**
+- Unique to NYSE; one DMM assigned per NYSE-listed security
+- Obligated to maintain fair and orderly markets; must meet stringent depth and continuity standards
+- Facilitate price discovery during openings, closings, and periods of significant trading imbalances
+- Operate both manually (on floor) and electronically
+- Current DMM firms: Citadel Securities LLC, GTS Securities LLC, Virtu Americas LLC
+
+**Supplemental Liquidity Providers (SLPs):**
+- High-volume electronic liquidity providers trading for proprietary accounts only
+- Must maintain bid or offer at NBBO in assigned securities >= 10% of the trading day
+- Must add liquidity averaging > 10 million shares ADV monthly across assigned securities
+- Two categories: SLP-Prop (proprietary trading units) and SLMM (registered market makers at the Exchange)
+- Receive rebates when their posted liquidity executes
+
+**Retail Liquidity Program (RLP):**
+- Offers price improvement for individual (retail) investor orders
+- Retail Price Improvement (RPI) orders provide non-displayed interest priced better than the public best bid/offer
+- Minimum price improvement of $0.001 per share
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+- **Opening Auction:** Conducted at 9:30 AM ET for NYSE primary-listed securities. DMMs facilitate price discovery by balancing accumulated buy/sell interest from pre-opening session. Imbalance information is disseminated starting at 8:30 AM ET. The auction establishes the official opening price. Orders eligible include Market-on-Open (MOO), Limit-on-Open (LOO), and other limit orders.
+- **Closing Auction:** Conducted at 4:00 PM ET. Closing imbalance period begins at 3:50 PM ET; MOC/LOC orders must be entered by 3:50 PM. DMMs set the official closing price — the most widely referenced price in financial publications, index calculations, and mutual fund NAV calculations. NYSE's closing auction handles a significant percentage (~10-15%) of daily consolidated volume.
+- **Intraday Auction:** No scheduled intraday auctions on NYSE. However, trading halts followed by re-openings function similarly to auctions, with DMMs facilitating orderly re-openings.
+- **Volatility Auction:** When a Limit Up-Limit Down (LULD) trading pause occurs, the security enters a limit state and may trigger a 5-minute trading pause. Re-opening after the pause follows an auction-like process facilitated by the DMM.
+
+### 3.2 Continuous Trading
+- **Hybrid model:** Order-driven electronic matching combined with floor-based trading and DMM participation — "high tech, high touch"
+- **Priority rules:** Parity/Priority model (unique to NYSE):
+  1. **Price priority:** Best-priced orders execute first
+  2. **Parity allocation:** At the same price level, incoming orders are allocated across multiple resting orders at parity, rather than strict time priority
+  3. This model rewards aggressive price improvement and encourages multiple participants to post competitive quotes, promoting deeper liquidity
+- For non-displayed orders, price-time priority applies
+
+### 3.3 Price Discovery
+- **Pre-open:** Indicative opening prices and imbalance information published starting at 8:30 AM ET
+- **DMM role:** DMMs have unique visibility into order flow and are obligated to use this information to facilitate orderly price discovery, particularly during openings, closings, and volatile periods
+- **Floor brokers:** Physical presence on the trading floor allows for human judgment in price discovery, particularly for large block orders and complex situations
+- **Closing price:** NYSE's closing auction is the industry standard reference price for index calculations, derivatives settlement, and portfolio valuations
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Market Order | Executes immediately at the best available price; no price protection |
+| Limit Order | Executes at the specified price or better; can be displayed or non-displayed |
+| Market-on-Open (MOO) | Market order to be executed only in the opening auction |
+| Limit-on-Open (LOO) | Limit order to be executed only in the opening auction at specified price or better |
+| Market-on-Close (MOC) | Market order to be executed only in the closing auction |
+| Limit-on-Close (LOC) | Limit order to be executed only in the closing auction at specified price or better |
+
+### 4.2 Advanced Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Reserve Order | Limit order with a displayed portion and a non-displayed (reserve) quantity; reserve quantity replenishes displayed quantity as it executes |
+| Non-Displayed Limit Order | Fully hidden limit order; eligible for execution but not visible on the order book |
+| Add Liquidity Only (ALO) | Order that will only post to the book and add liquidity; will not execute against resting orders (prevents taking liquidity and incurring taker fees) |
+| Intermarket Sweep Order (ISO) | Limit order asserting the sender has simultaneously routed to all protected quotes at better prices at other venues; bypasses Order Protection Rule routing |
+| Primary Pegged Order | Pegs to the NBB (for buy orders) or NBO (for sell orders); reprices as the NBBO changes |
+| Midpoint Liquidity (MPL) Order | Non-displayed order that executes at the midpoint of the NBBO; eligible for price improvement |
+| Retail Price Improvement (RPI) Order | Non-displayed order offering price improvement to retail flow; must improve the NBBO by at least $0.001 |
+| D-Order (Floor Broker Discretion) | Order entered by floor brokers with discretionary price range |
+| Closing D-Order | Discretionary order specifically for the closing auction |
+| Stop Order | Triggered when the market reaches a specified price; becomes a market order upon trigger |
+| Stop Limit Order | Triggered when the market reaches a specified price; becomes a limit order upon trigger |
+
+### 4.3 Time-in-Force Options
+| TIF | Description |
+|-----|-------------|
+| Day | Order valid only for the current trading day; expires at market close if unfilled |
+| Good Till Cancelled (GTC) | No longer permitted on NYSE due to potential risks from temporary volatility spikes triggering automatic execution; brokers may simulate GTC orders internally |
+| Immediate or Cancel (IOC) | Must execute immediately (in whole or in part); any unfilled portion is cancelled |
+| Fill or Kill (FOK) | Must execute in full immediately or the entire order is cancelled; no partial fills |
+| At the Open (OPG) | Valid only for the opening auction |
+| At the Close | Valid only for the closing auction |
+| Good Till Date (GTD) | Valid until a specified date [unverified — broker-level implementation] |
+
+### 4.4 Order Modification / Cancellation
+- Orders can be modified or cancelled electronically via Pillar Binary or FIX gateway at any time before execution
+- MOC/LOC orders cannot be cancelled or reduced after 3:50 PM ET except to correct a legitimate error (with exchange approval)
+- During LULD limit states, certain order modifications may be restricted
+- NYSE provides a Trade Ops Portal (TOP) for order management, risk control configuration, and clearing functions
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | NYSE Pillar |
+| Vendor / In-house | In-house (developed by ICE/NYSE) |
+| Architecture | Fully integrated, high-throughput, low-latency, deterministic matching platform using binary multicast UDP for market data and binary/FIX gateways for order entry |
+| Matching Engine | Deterministic matching engine; supports parity/priority allocation (NYSE) and price-time priority (Arca, American, National, Texas) |
+| Round-trip Latency (Binary Gateway, NYSE, P50) | ~34 microseconds (4Q 2025, excluding ~10 μs edge network) |
+| Round-trip Latency (FIX Gateway, NYSE, P50) | ~48 microseconds (4Q 2025, excluding ~10 μs edge network) |
+| Round-trip Latency (Binary, NYSE Arca, P50) | ~31 microseconds (4Q 2025) |
+| Round-trip Latency (Binary, NYSE Texas, P50) | ~21 microseconds (4Q 2025) |
+| Order Processing Capacity | Not publicly disclosed; handles peak volumes exceeding 10 billion shares/day during volatile periods [estimated] |
+| Messages Per Second | OPRA SIP peak microbursts have exceeded 40 million messages/second; during April 2025 volatility, peak 1ms bursts exceeded 187 million messages/second across options [Source: Databento/OPRA] |
+| Launch Year | Pillar rollout began 2017; migration completed for all NYSE equities and options markets by 2022 |
+
+### System History
+| Period | System | Notes |
+|--------|--------|-------|
+| 1792–1995 | Open outcry / manual auction | Paper-based transactions; specialists on trading floor |
+| 1995 | Wireless handheld computers | First electronic order entry on the floor |
+| 1996–2000 | SuperDOT (Super Designated Order Turnaround) | Electronic order routing system; up to 2,100 shares, later expanded |
+| 2000–2009 | Display Book | Electronic specialist system replacing paper-based books |
+| 2006 | NYSE Hybrid Market | Combined floor-based auction with electronic matching; sub-second execution |
+| 2009–2017 | Universal Trading Platform (UTP) / SFTI infrastructure | Migration to co-located matching engines in Mahwah |
+| 2017–present | NYSE Pillar | Current-generation integrated platform; standardized protocol across all NYSE markets; latency reduced from ~592 μs to ~32 μs (Binary) — a 95% improvement |
+
+### Technology Stack
+- **Matching Engine:** Custom deterministic matching engine; runs on commodity hardware
+- **Gateway Protocols:** Pillar Binary Gateway Protocol, Pillar FIX Gateway Protocol, Floor Broker FIX, Algo Provider FIX, Stream Protocol
+- **Market Data Distribution:** Binary Multicast UDP (XDP — Exchange Data Protocol); symbols split across multiple multicast channels for bandwidth management
+- **Consolidated Data:** CTS (Consolidated Tape System — trades) and CQS (Consolidated Quotation System — quotes) via the Consolidated Tape Association (CTA)
+- **Network:** ICE Global Network (IGN); SFTI (Secure Financial Transaction Infrastructure)
+- **Operating Environment:** Linux-based [unverified]
+
+### Disaster Recovery / Business Continuity
+- **Primary site:** US Liquidity Center (USLC), Mahwah, New Jersey
+- **DR site:** Cermak Data Center, Chicago, Illinois
+- **Configuration:** Active/passive — only one site operational at a time; DR site uses different port numbers for all Pillar Native Gateway, UGW FIX & Binary connections
+- **Failover:** Manual activation; daily trading data backed up at the DR site
+- **Incident (June 2024):** A manual error left the DR backup system running improperly, causing trading anomalies in certain securities — highlighting the manual nature of the failover process
+- **High Availability:** ICE also operates a "High Availability SLC" (Secondary Liquidity Center) that provides access to the same NYSE services (Production/DR/test/certification) as the Mahwah facility
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+| Protocol | Description | Use Case |
+|----------|-------------|----------|
+| XDP (Exchange Data Protocol) | Binary multicast UDP protocol; Pillar-native market data | Low-latency proprietary feed for direct consumers |
+| CTS (Consolidated Tape System) | Consolidated last-sale/trade data — Network A (NYSE-listed) and Network B (NYSE Arca/American/regional) | Regulatory SIP feed for trade data |
+| CQS (Consolidated Quotation System) | Consolidated quote data with NBBO calculation | Regulatory SIP feed for quote data |
+| NYSE BBO Feed | Top-of-book best bid/offer data | Cost-effective display data |
+| NYSE Trades Feed | Real-time last-sale data | Trade-only applications |
+| NYSE Integrated Feed | Combined depth-of-book quotes and trades | Full-depth market data |
+| NYSE ArcaBook (ARCA) | Full depth-of-book for NYSE Arca | Arca-specific order book data |
+| NYSE OpenBook | Aggregated limit-order book data for NYSE | NYSE-specific depth data |
+| NYSE Alerts | Imbalance and auction information, regulatory halts | Auction participation, compliance |
+| Daily TAQ (Trade and Quote) | End-of-day historical trade and quote data | Research and backtesting |
+
+### 6.2 Data Levels
+- **Level 1 (Top of Book / BBO):** Best bid price, best offer price, last sale price, volume — available via CTS/CQS SIP and NYSE BBO Feed
+- **Level 2 (Depth of Book):** Full order book depth showing all price levels and aggregate size — available via NYSE Integrated Feed, OpenBook, ArcaBook
+- **Level 3 (Full Order-by-Order):** Individual order information for eligible participants [available to members and authorized data consumers]
+
+### 6.3 Distribution Infrastructure
+- **Primary distribution:** ICE Global Network (IGN) — private, low-latency fiber and wireless network
+- **Co-located distribution:** Direct multicast feeds available in Mahwah USLC and Cermak DR site
+- **Wireless connectivity:** Purpose-built microwave/millimeter-wave routes connecting Mahwah to major trading hubs in NJ metro area for ultra-low latency
+- **Vendor redistribution:** Major data vendors (Bloomberg, Refinitiv, FactSet, etc.) redistribute NYSE data
+- **Cloud distribution:** NYSE data available via cloud platforms [unverified — growing initiative]
+
+### 6.4 Historical Data
+- **Daily TAQ:** End-of-day trades and quotes, available from NYSE Market Data; specification version 4.2 (August 2025)
+- **NYSE Historical Volumes:** Monthly and daily volume summaries available on nyse.com
+- **Third-party providers:** Historical tick data available through vendors such as Databento, Tick Data (now ICE), and others
+- **Research data:** NYSE Research publishes market quality statistics, insights, and analysis
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+- **Trading permit:** Required to directly access NYSE; firms must be registered broker-dealers with SEC and FINRA members
+- **DMM membership:** Specialized permit for Designated Market Maker firms (limited number of DMM organizations)
+- **Floor broker membership:** Permits for physical trading floor access
+- **Electronic access:** Member firms can access electronically without floor presence
+- **Sponsored access:** Non-member firms can access NYSE through a sponsoring member firm (subject to risk controls)
+
+### 7.2 Connection Methods
+- **Pillar Binary Gateway:** Lowest-latency order entry protocol; fixed-length binary messages
+- **Pillar FIX Gateway:** FIX protocol-based order entry; wider compatibility but slightly higher latency (~48 μs vs ~34 μs median)
+- **Floor Broker FIX:** Specialized FIX protocol for floor broker order entry
+- **Algo Provider FIX:** FIX protocol for algorithmic trading providers
+- **Stream Protocol:** Additional connectivity option for market data
+- **UGW (Universal Gateway):** Legacy gateway; supports FIX and Binary [being phased out in favor of Pillar Native]
+
+### 7.3 Co-location / Proximity Services
+- **Primary facility:** US Liquidity Center (USLC), 1700 MacArthur Blvd, Mahwah, New Jersey
+  - 396,000 sq ft, Tier 4-guided data center on 28-acre site
+  - Up to 100,000 sq ft of scalable white space at 15 watts/sq ft
+  - 28 MW total site power; redundant fiber connectivity
+  - 48 hours of emergency generator fuel storage
+  - 34 miles from Wall Street
+  - Carrier Meet Me Room (MMR) for telecom provider flexibility
+- **Secondary facility:** High Availability SLC — provides access to the same NYSE services
+- **Cross-connect:** Direct fiber cross-connects to NYSE matching engines within USLC
+- **Wireless routes:** Ultra-low latency microwave/millimeter-wave connections between Mahwah and NJ/NY trading hubs
+- **Managed services:** ICE provides managed infrastructure, network, and monitoring services for co-located participants
+
+### 7.4 API Protocols
+- Pillar Binary Gateway Protocol (proprietary binary)
+- Pillar FIX Gateway Protocol (FIX 4.2-based with Pillar extensions)
+- XDP Market Data Protocol (binary multicast UDP)
+- DROP (Direct Reporting of Portfolios) for portfolio and clearing data [unverified]
+
+### 7.5 Certification / Testing
+- **Customer Integration Testing (CIT):** Mandatory testing environment for all new connections and system changes
+- **Industry-wide tests:** NYSE participates in industry-wide disaster recovery and business continuity tests
+- **Test environment:** Available at both Mahwah USLC and Cermak DR sites
+- **Trade Ops Portal (TOP):** Web-based tool for order management testing, risk control configuration, and clearing functions
+- **Symbol addition testing:** Regular test cycles for new symbol additions and corporate actions
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits (Limit Up-Limit Down / LULD)
+| Type | Threshold | Action |
+|------|-----------|--------|
+| Tier 1 NMS Stocks (S&P 500, Russell 1000, select ETPs) — price > $3.00 | 5% above/below reference price | Limit state: orders cannot execute outside price bands |
+| Tier 2 NMS Stocks (all other NMS stocks) — price > $3.00 | 10% above/below reference price | Limit state: orders cannot execute outside price bands |
+| Stocks priced $0.75 – $3.00 | 20% above/below reference price | Limit state |
+| Stocks priced < $0.75 | Lesser of $0.15 or 75% | Limit state |
+| Last 25 minutes of trading (3:35 PM – 4:00 PM ET) | Price bands double | Wider bands during close |
+| 15-second limit state | If LULD band is touched and no trades occur for 15 seconds | 5-minute trading pause triggered |
+
+- Reference price is the average price over the preceding 5-minute trading period
+- LULD applies during regular trading hours only (9:30 AM – 4:00 PM ET)
+- LULD Plan updated effective January 2, 2026
+
+### 8.2 Market-Wide Circuit Breakers (MWCB)
+| Level | Trigger (S&P 500 decline from prior close) | Halt Duration |
+|-------|---------------------------------------------|---------------|
+| Level 1 | 7% decline | 15-minute halt (triggered only before 3:25 PM ET; if triggered at or after 3:25 PM, no halt) |
+| Level 2 | 13% decline | 15-minute halt (triggered only before 3:25 PM ET; if triggered at or after 3:25 PM, no halt) |
+| Level 3 | 20% decline | Trading halted for the remainder of the day (any time) |
+
+- Circuit breaker levels are recalculated daily based on the prior day's S&P 500 closing price
+- A Level 1 or Level 2 halt can only be triggered once per day
+- After a Level 1 or Level 2 halt, trading resumes with a re-opening auction
+
+### 8.3 Pre-trade Risk Controls
+- **Price collars / Price reasonability checks:** Orders that would execute significantly away from the current market price are rejected or held
+- **Order size limits:** Maximum order size restrictions configurable by member firms
+- **Credit/position limits:** Real-time monitoring of aggregate exposure
+- **Erroneous trade policy:** NYSE can break (bust) clearly erroneous trades based on defined price deviation thresholds
+- **Short sale restrictions:** SEC Rule 201 (Alternative Uptick Rule) — short sale circuit breaker triggers when a stock declines 10% from prior close; once triggered, short sales must be at a price above the national best bid for remainder of day and following day
+
+### 8.4 Kill Switch
+- **Member-level kill switch:** Firms can request immediate cancellation of all open orders across all NYSE markets via the Trade Ops Portal (TOP) or by contacting NYSE Operations
+- **Exchange-level controls:** NYSE can halt trading in individual securities, groups of securities, or market-wide
+- **Regulatory halt:** NYSE can declare a regulatory halt to disseminate material news
+- **MWCB activation:** Acts as a market-wide kill switch for extreme declines (see Section 8.2)
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+- **Primary regulator:** U.S. Securities and Exchange Commission (SEC)
+- NYSE is registered as a national securities exchange under Section 6 of the Securities Exchange Act of 1934
+- NYSE is itself a Self-Regulatory Organization (SRO) with authority to establish and enforce rules governing its members
+- All NYSE rules and amendments must be filed with and approved by the SEC pursuant to Section 19(b) of the Exchange Act and Rule 19b-4
+
+### 9.2 Key Regulations
+- **Securities Exchange Act of 1934:** Foundation of U.S. securities regulation; establishes SEC authority over exchanges
+- **Regulation NMS (2005):** Modernized U.S. equity market structure:
+  - Order Protection Rule (Rule 611): Trade-through protection requiring routing to best available prices
+  - Access Rule (Rule 610): Fair access and fee caps for accessing protected quotations
+  - Sub-Penny Rule (Rule 612): Minimum pricing increments
+  - Market Data Rules (Rules 601, 603): Consolidated data distribution
+- **Regulation SHO:** Short selling rules, including locate requirements and close-out obligations
+- **Rule 201 (Alternative Uptick Rule):** Short sale circuit breaker
+- **Regulation ATS:** Framework for alternative trading systems
+- **CAT (Consolidated Audit Trail):** Comprehensive order tracking system; CAT Fee assessed at $0.000009 per executed equivalent share (2025-2)
+- **SEC Rule 15c3-5 (Market Access Rule):** Risk management controls and supervisory procedures for broker-dealers with market access
+- **Dodd-Frank Act (2010):** Enhanced oversight of financial markets and systemic risk
+- **Reg NMS Amendments (2024-2026):** Tick size reforms, access fee cap reductions, round lot redefinition, odd-lot transparency improvements — phasing in through 2026
+
+### 9.3 Market Surveillance
+- **NYSE Market Regulation:** Internal team responsible for enforcing compliance with NYSE Exchange rules and federal securities laws
+- **FINRA RSA (Regulatory Services Agreements):** FINRA conducts significant market surveillance on behalf of NYSE Exchanges
+- **Cross-market surveillance:** NYSE Market Regulation and FINRA regularly bring cross-market enforcement actions on behalf of multiple SROs
+- **CAT reporting:** All orders and executions reported to the Consolidated Audit Trail for regulatory analysis
+- **Real-time surveillance:** Automated surveillance systems monitor for insider trading, market manipulation, spoofing, layering, and other abusive practices
+
+### 9.4 Reporting Requirements
+- **Trade reporting:** All transactions reported in real-time via CTS/CQS consolidated tape
+- **Large trader reporting:** SEC Rule 13h-1 requires registration of large traders (>= 2 million shares or $20 million in a day, or >= 20 million shares or $200 million in a month)
+- **Form 13F:** Institutional investment managers with >= $100 million in qualifying securities must file quarterly
+- **Short interest reporting:** FINRA collects short interest data twice monthly
+- **CAT reporting:** All broker-dealers report order lifecycle events to the Consolidated Audit Trail
+- **Listed company obligations:** Continuous disclosure (10-K, 10-Q, 8-K); corporate governance standards; annual CEO certification
+
+### 9.5 Cross-border Arrangements
+- **Foreign Private Issuers (FPIs):** NYSE lists 530+ international companies from ~45 countries; FPIs can use home-country governance standards with limited exceptions
+- **ADR/GDR programs:** NYSE is the leading venue for American Depositary Receipt listings
+- **Memoranda of Understanding (MOUs):** SEC maintains MOUs with foreign securities regulators under IOSCO framework for cross-border enforcement and information sharing
+- **Exempt foreign private issuer status:** Allows simplified reporting and governance compliance for non-U.S. companies
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees (NYSE Equities — stocks priced >= $1.00, 2026)
+| Fee Type | Structure | Rate (per share) |
+|----------|-----------|------------------|
+| Removing liquidity (taking) — standard | Per share charge | $0.0030 |
+| Removing liquidity — Market-on-Open/Limit-on-Open | Per share charge | $0.0010 |
+| Removing liquidity — Limit-on-Close | Per share charge | $0.0011 |
+| Removing liquidity — Market-on-Close | Per share charge | $0.0010 |
+| Removing liquidity — routed orders | Per share charge | $0.0035 |
+| Adding displayed liquidity — Tape A (non-retail) | Per share rebate | ($0.0012) |
+| Adding displayed liquidity — Tape A (retail) | Per share rebate | ($0.0032) |
+| Adding displayed liquidity — Tape B/C (non-retail) | Per share rebate | ($0.0020) |
+| Adding displayed liquidity — Tape B/C (retail) | Per share rebate | ($0.0032) |
+| Adding non-displayed liquidity | Per share rebate | ($0.0000) + additional ($0.0002) |
+| Midpoint Liquidity (MPL) — retail | Per share rebate | ($0.0030) |
+| Midpoint Liquidity (MPL) — standard | Per share rebate | ($0.0010) |
+| Cross orders | Per share | $0.0000 |
+| Stocks < $1.00 — removing | % of trade value | 0.30% |
+| CAT Fee | Per executed equivalent share | $0.000009 |
+
+**Note:** NYSE operates a maker-taker fee model where liquidity providers (makers) receive rebates and liquidity takers pay fees. Volume-based tiers offer additional rebates for high-volume participants. NYSE National uses an inverted model (takers get rebates). Parentheses indicate rebates.
+
+[Source: NYSE Price List 2026; Interactive Brokers NYSE fee schedule]
+
+### 10.2 Other Fees
+
+**Listing Fees:**
+| Fee Type | Amount |
+|----------|--------|
+| Application fee | $25,000 |
+| Initial listing fee (first class of common shares) | $325,000 |
+| Annual maintenance fee (minimum) | $80,000 (increases with shares listed) |
+| Annual fee cap | $500,000 per issuer per year |
+| Additional class of common stock listing | $5,000 flat |
+| Additional shares listing fee | Tiered per-share rate, minimum $10,000 |
+| Company name or symbol change | $2,500 |
+
+**Market Data Fees:**
+- Proprietary data feed subscriptions (XDP, BBO, Trades, Integrated Feed, etc.) — priced based on feed type, usage, and number of connections
+- Professional vs. non-professional subscriber distinctions
+- Enterprise license options for large consumers
+
+**Connectivity Fees:**
+- Co-location cabinet and power fees at Mahwah USLC
+- Cross-connect fees
+- ICE Global Network access charges
+- Port fees for gateway connections
+
+**Regulatory Fees:**
+- Options Regulatory Fee (ORF): $0.0026 per contract (effective January 2026, reduced from $0.0038)
+- Trading Activity Fee (TAF): Passed through to FINRA
+
+**Revenue Model Summary:**
+ICE/NYSE generates revenue from four main streams:
+1. **Transaction and clearing fees:** Trading commissions and execution fees
+2. **Data services:** Market data subscriptions and analytics
+3. **Listings:** Initial and annual listing fees from ~2,400+ companies
+4. **Technology and connectivity:** Co-location, network access, and connectivity services
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+- **2022:** Completion of NYSE Pillar migration for all NYSE equities markets; latency reduced from ~592 μs to ~32 μs for Binary gateway (95% improvement), and from ~96 μs to ~26 μs for FIX [Source: NYSE Pillar migration insights]
+- **2023-2024:** Continued Pillar optimization; options markets migrated to Pillar Options platform
+- **2024:** NYSE Pillar Options Gateway Binary Protocol specification updated; enhanced deterministic matching
+- **2025:** NYSE Texas launched on Pillar platform with industry-leading latency (P50 ~21 μs Binary)
+- **2025 (4Q):** Published latency metrics showing NYSE Binary P50 at 34 μs, NYSE Arca Binary P50 at 31 μs
+
+### New Products / Segments
+- **NYSE Texas (March 2025):** Launched as NYSE's sixth equities exchange, rebranded from NYSE Chicago and relocated to Dallas; plans for listing capability pending regulatory filings
+- **22-Hour Trading (NYSE Arca):** SEC approved NYSE Arca's proposal to extend trading to 22 hours/day (1:30 AM – 11:30 PM ET Mon-Thu); targeted for launch late 2026 pending SIP readiness and DTCC Universal Trade Capture (UTC) 24x5 support (client testing from January 2026, production targeted June 2026)
+- **Retail Liquidity Program expansion:** Continued growth of retail-focused price improvement offerings
+- **ETF/ETP listings growth:** NYSE Arca continues to be the dominant listing venue for ETFs, with U.S. ETF AUM exceeding $10 trillion and 4,000+ products
+
+### Regulatory Changes
+- **Reg NMS Amendments (SEC, September 2024):** Tick size reforms (variable tick sizes of $0.005, $0.01, $0.025), access fee cap reduction, variable round lot definition, odd-lot transparency — phasing in November 2025 through 2026
+- **LULD Plan update (January 2, 2026):** Updated Limit Up-Limit Down parameters
+- **Options Regulatory Fee reduction (January 2026):** ORF decreased from $0.0038 to $0.0026 per contract
+- **Listing fee restructuring (2025-2026):** Proposals to simplify listing fee tiers, including a flat $75,000 original listing fee for NYSE American stock issues
+- **First 5-year listing fee waiver:** New issuers only subject to initial and annual listing fees for their primary class of equity during first five years
+
+### Strategic Initiatives
+- **Extended trading hours:** NYSE is actively leading the U.S. industry push toward near-24x5 equity trading; collaborating with SIPs (proposing 8:00 PM Sunday to 8:00 PM Friday operations) and DTCC for clearing infrastructure readiness
+- **Competition with TXSE:** Texas Stock Exchange (TXSE) received SEC approval in September 2025, backed by BlackRock, Citadel Securities, and Charles Schwab; represents the first significant new competitor to the NYSE-Nasdaq duopoly in decades; operational launch expected Q1 2026
+- **NYSE Texas:** Proactive competitive positioning in Texas market; provides ICE/NYSE with a presence in the growing Texas financial ecosystem
+- **Data and analytics:** Expanding market data and research offerings; NYSE Research publishes market insights and statistics
+- **ESG and sustainability:** NYSE-listed companies increasingly adopting sustainability reporting frameworks [unverified]
+
+---
+
+## Sources
+1. [Source: NYSE Official Website, "The History of NYSE", accessed 2026-04-03] — https://www.nyse.com/history-of-nyse
+2. [Source: NYSE Official Website, "NYSE Market Model", accessed 2026-04-03] — https://www.nyse.com/market-model
+3. [Source: NYSE Official Website, "NYSE Pillar", accessed 2026-04-03] — https://www.nyse.com/trade/pillar
+4. [Source: NYSE Official Website, "Trading Information", accessed 2026-04-03] — https://www.nyse.com/trade/trading-information
+5. [Source: NYSE Official Website, "NYSE Pillar migration—adding efficiency to the marketplace", accessed 2026-04-03] — https://www.nyse.com/data-insights/nyse-pillar-migration-adding-efficiency-to-the-marketplace
+6. [Source: NYSE Official Website, "Connectivity & Co-location", accessed 2026-04-03] — https://www.nyse.com/connectivity/colo
+7. [Source: NYSE Official Website, "Market-Wide Circuit Breakers FAQ", accessed 2026-04-03] — https://www.nyse.com/publicdocs/nyse/NYSE_MWCB_FAQ.pdf
+8. [Source: NYSE Official Website, "Disaster Recovery FAQ", accessed 2026-04-03] — https://www.nyse.com/publicdocs/nyse/DisasterRecoveryFAQs.pdf
+9. [Source: NYSE Official Website, "NYSE Price List 2026", accessed 2026-04-03] — https://www.nyse.com/publicdocs/nyse/markets/nyse/NYSE_Price_List.pdf
+10. [Source: NYSE Official Website, "Listing Process & Requirements", accessed 2026-04-03] — https://www.nyse.com/listings-process
+11. [Source: NYSE Official Website, "Liquidity Programs", accessed 2026-04-03] — https://www.nyse.com/markets/liquidity-programs
+12. [Source: NYSE Official Website, "Extended Hours Trading FAQ", accessed 2026-04-03] — https://www.nyse.com/publicdocs/nyse/NYSE_Extended_Hours_Trading_FAQ.pdf
+13. [Source: ICE Press Release, "NYSE Plans 22-Hour Trading on Arca", October 2024] — https://ir.theice.com/press/news-details/2024/The-New-York-Stock-Exchange-Plans-to-Extend-Weekday-Trading-on-its-NYSE-Arca-Equities-Exchange-to-22-Hours-a-Day/
+14. [Source: ICE Press Release, "NYSE to Launch NYSE Texas", February 2025] — https://ir.theice.com/press/news-details/2025/The-New-York-Stock-Exchange-to-Launch-NYSE-Texas/
+15. [Source: Interactive Brokers, "NYSE Exchange Fees", accessed 2026-04-03] — https://www.interactivebrokers.com/en/accounts/fees/NYSEstkfee.php
+16. [Source: Databento, "What is NYSE Pillar?", accessed 2026-04-03] — https://databento.com/microstructure/nyse-pillar
+17. [Source: SEC, "Regulation NMS Amendments", September 2024] — https://www.sec.gov/files/rules/final/2024/34-101070.pdf
+18. [Source: Statista, "NYSE and Nasdaq market cap comparison 2025", accessed 2026-04-03] — https://www.statista.com/statistics/1277195/nyse-nasdaq-comparison-market-capitalization-listed-companies/
+19. [Source: LULD Plan, "Limit Up-Limit Down", accessed 2026-04-03] — https://www.luldplan.com/
+20. [Source: Baker McKenzie, "NYSE Listing Fees", accessed 2026-04-03] — https://resourcehub.bakermckenzie.com/en/resources/cross-border-listings-guide/north-america/new-york-stock-exchange/topics/fees
+21. [Source: Wikipedia, "New York Stock Exchange", accessed 2026-04-03] — https://en.wikipedia.org/wiki/New_York_Stock_Exchange
+22. [Source: Exegy, "The Consolidated Tape: Get to Know NYSE's CTA Feeds", accessed 2026-04-03] — https://www.exegy.com/consolidated-tape-nyse-feeds/

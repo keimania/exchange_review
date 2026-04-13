@@ -1,0 +1,670 @@
+# 아시아태평양 주식시장 규제 (Asia-Pacific Equities Market Regulation)
+
+> **최종 수정일:** 2026-04-06
+> **연구 등급:** Tier 1
+> **분야:** 주식 — 규제 프레임워크
+
+---
+
+## 목차 (Table of Contents)
+
+1. [일본 (FSA/JFSA + JPX)](#1-일본-fsajfsa--jpx)
+2. [홍콩 (SFC + HKEX)](#2-홍콩-sfc--hkex)
+3. [싱가포르 (MAS + SGX)](#3-싱가포르-mas--sgx)
+4. [한국과의 비교 (FSC/FSS/KRX)](#4-한국과의-비교-fscfsskrx)
+
+---
+
+## 1. 일본 (FSA/JFSA + JPX)
+
+### 1.1 규제 기관 구조 (Regulatory Authority Structure)
+
+일본의 증권시장 규제는 정부 규제기관, 감시위원회, 거래소 차원의 자율규제로 구성된 다층적 구조를 따른다.
+
+| 기관 | 정식명칭 | 역할 |
+|-----------|-----------|------|
+| **JFSA** | 일본 금융청 (Financial Services Agency of Japan, 金融庁) | 주요 규제기관; 규칙 제정, 인가, 금융기관 및 시장 감독 |
+| **SESC** | 증권거래등감시위원회 (Securities and Exchange Surveillance Commission, 証券取引等監視委員会) | JFSA 산하 조사·감시 기관; 검사, 시장감시, 형사 고발 |
+| **JPX-R** | 일본거래소 자율규제법인 (Japan Exchange Regulation, Inc.) | JPX의 자율규제기구(SRO); TSE와 OSE를 대신하여 상장심사, 매매참가자 검사, 시장감시 수행 |
+| **MOF** | 재무성 (Ministry of Finance, 財務省) | 외국환 및 외국무역법(FEFTA) 관할; 외국인투자 심사 |
+
+[Source: JFSA, "About FSA", accessed 2026-04-06; JPX, "Self-Regulation", accessed 2026-04-06]
+
+**JFSA**는 2000년에 설립(1998년에 원래 설립된 금융감독청에서 재편)되어 증권시장, 은행, 보험에 대한 포괄적 규제 권한을 행사한다. JFSA는 정책 수립, 법률 기초, 인허가 발급, 준수 감독을 수행한다. 총리 및 내각에 직접 보고한다.
+
+**SESC**는 1992년에 JFSA 내 독립 위원회로 설립되었다(미국 SEC의 집행국과 전체 위원회 간의 관계와 구조적으로 유사). SESC는 다음을 수행한다:
+- 내부자거래, 시장조작, 기타 불공정거래 행위에 대한 시장감시
+- 금융상품거래업자(브로커-딜러, 자산운용사)에 대한 검사
+- 공시 위반 조사
+- 행정 제재 권고 및 형사 고발
+
+2026년 2월 기준, SESC는 향후 금융상품거래법(FIEA) 개정에 따라 암호자산 내부자거래에 대한 집행 역량 확대를 포함한 집행 능력을 계속 확대하고 있다.
+
+[Source: SESC, "Overview", published February 2026, accessed 2026-04-06]
+
+**JPX-R**(일본거래소 자율규제법인)은 TSE와 오사카거래소(OSE)의 전용 자율규제기구로서 일본거래소그룹의 완전 자회사로 설립되었다. JPX-R은 거래소의 "품질관리센터"로 설명되며 다음을 수행한다:
+- **상장심사:** 신규 상장 신청 및 지속적 상장 적격성 검토
+- **상장회사 규정준수:** 기업 공시, 거버넌스 준수, 적시공시 의무 감시
+- **매매참가자 심사 및 검사:** 거래소 규칙 준수에 대한 브로커-딜러(매매참가자) 심사 및 검사
+- **시장감시:** 조작, 내부자거래, 기타 이상 거래에 대한 실시간 매매활동 감시; 2025년 4월부터 JPX-R은 AI 기반 시장감시 도구를 도입
+
+[Source: JPX, "Outline of Self-Regulatory Operations", accessed 2026-04-06; Mondovisione, "Japan Exchange Regulation Annual Report 2025", August 2025]
+
+### 1.2 주요 법률 (Key Legislation)
+
+#### 금융상품거래법 (Financial Instruments and Exchange Act, FIEA / 金融商品取引法)
+
+FIEA(1948년 법률 제25호, 2006년에 대폭 개정)는 일본 증권시장을 규율하는 주요 법률이다. 원래 증권거래법(미국의 1933년 증권법 및 1934년 증권거래법을 모델로 함)으로 제정되었으며, 전통적 증권을 넘어 더 넓은 범위의 금융상품을 포괄하기 위해 2006년에 포괄적으로 개혁·개칭되어 금융상품거래법이 되었다(2007년 9월 시행).
+
+[Source: JFSA, "Financial Instruments and Exchange Act", accessed 2026-04-06]
+
+**주요 규정:**
+
+| 분야 | FIEA 규정 |
+|------|----------------|
+| 등록 | 제1종(증권 브로커-딜러), 제2종(펀드 판매), 투자자문, 투자운용 — 모두 JFSA 등록 필요 |
+| 공시 | 계속공시(유가증권보고서/有価証券報告書, 분기보고서, TDnet을 통한 적시공시), 대량보유보고서(5% 규칙) |
+| 불공정거래 | 내부자거래 금지(제166, 167조), 시장조작 금지(제159조), 사기행위 금지(제157조) |
+| 공개매수 | 상장기업 30% 이상 취득 시 의무적 공개매수(TOB) 규칙(2026년 5월 1일 시행, 종전 1/3에서 하향) |
+| 시장 인프라 | 금융상품거래소, 청산기관, 계좌대체기관의 규제 |
+| 투자자보호 | 적합성 의무, 고객자산 분별관리, 이해상충 관리 |
+
+#### 2024년 FIEA 개정 (2026년 5월 1일 시행)
+
+2024년에 제정된 주요 개정사항은 다음과 같다:
+
+- **공개매수(TOB) 기준:** 의무적 공개매수 기준이 1/3에서 30%로 하향
+- **"30% 규칙" 면제:** 지분 증가분이 0.5% 미만인 소규모 매수의 경우, 직전 6개월간 취득이 없었다면 TOB에서 면제
+- **대량보유보고 명확화:** "공동보유자" 및 "실질적 제안행위"의 범위 명확화; EDINET 갱신을 통한 보고서 형식 현대화
+- **암호자산 재분류:** JFSA가 암호자산을 FIEA 감독하("제1종 금융상품"으로)에 두는 것을 제안하여, 2026년을 목표로 입법 기초 중
+
+[Source: Funds-Axis, "Japan's 2024 FIEA Amendments", accessed 2026-04-06; DLA Piper, "Recent developments on TOB rules and shareholding transparency in Japan", January 2026]
+
+#### 기타 주요 법률
+
+| 법률 | 범위 |
+|---------|-------|
+| 외국환 및 외국무역법 (FEFTA / 外為法) | 외국인투자 심사; 지정 분야 투자에 대한 사전통지 요건 |
+| 회사법 (会社法) | 기업지배구조, 이사의 의무, 주주의 권리 |
+| 사채주식등의 계좌대체에 관한 법률 | 증권의 무권화 |
+| 금융상품거래법 시행령 (政令) | FIEA의 상세 시행규칙 |
+
+### 1.3 시장구조 규칙 (Market Structure Rules)
+
+**매매 규정:**
+- **주문 유형:** 지정가주문, 시장가주문, 각종 조건부주문이 arrowhead 매매체결엔진(매칭엔진)을 통해 처리
+- **가격제한:** 전일 종가 기준 일일가격제한(値幅制限); 100엔 미만 주식의 +/-30엔부터 30,000-50,000엔 수준 주식의 +/-7,000엔까지, 고가 주식에는 더 넓은 제한 적용
+- **호가단위(최소가격변동폭):** 가격 수준 및 지수 편입 여부에 따른 다단계 (TOPIX 500 구성종목은 더 세밀한 호가단위)
+- **매매단위:** 2018년 10월부터 모든 상장주식에 대해 100주로 표준화
+- **폐장경매:** 2024년 11월 도입. 5분간 폐장 전 접수기간(15:25-15:30)에 이어 판자매매(Itayose) 체결
+
+**상장 요건:** TSE 상장규칙에 의해 규율되며 JPX-R이 심사. 2022년 4월 시장 재편으로 설립된 3개 주요 시장 구분(프라임, 스탠다드, 그로스)과 전문투자자용 TOKYO PRO Market이 있다.
+
+### 1.4 시장감시 (Market Surveillance)
+
+일본은 2단계 감시 모델을 채택한다:
+
+**JPX-R (제1선):**
+- TSE와 OSE에서의 모든 매매에 대한 실시간 감시
+- 의심스러운 매매 패턴을 식별하기 위한 AI 기반 탐지 시스템 (2025년 4월 도입)
+- 매매참가자와 상장회사에 의한 잠재적 규칙 위반 조사
+- 의심되는 위반을 SESC에 회부
+
+**SESC (제2선):**
+- JPX-R 회부 또는 자체 판단에 따른 공식 조사 수행
+- JFSA에 과징금(課徴金) 부과 권고 권한
+- 중대한 위반에 대한 검찰 형사 고발
+- 금융상품거래업자에 대한 검사
+- 해외 규제기관과의 국경간 협력
+- 2024년 4분기, SESC는 은행과 증권 계열사 간의 고객정보 부적절한 공유를 조사
+
+[Source: JPX, "JPX-R Inspection Plan for FY2025", March 2025; SESC overview, February 2026]
+
+### 1.5 보고 및 공시 요건 (Reporting and Disclosure Requirements)
+
+| 요건 | 세부사항 |
+|-------------|---------|
+| 유가증권보고서 (有価証券報告書) | 사업연도 종료 후 3개월 이내 EDINET을 통해 제출; 포괄적 재무 및 운영 공시 |
+| 분기보고서 | 각 분기 종료 후 45일 이내 제출 |
+| 적시공시 (適時開示) | TDnet(TSE 적시공시 네트워크)을 통해 중요정보 즉시 공시; 결정사항, 발생사실, 경영실적 포함 |
+| 대량보유보고서 | 5% 기준; 5영업일 이내 EDINET을 통해 제출; 1% 변동 시 변경보고 발동 |
+| 공매도잔고 보고 | 0.2% 이상 포지션 TSE에 보고; 0.5% 이상 포지션 투자자명과 함께 공개 |
+| 내부자거래 보고 | 임원, 주요 주주 및 기타 내부자는 발행인 주식 매매를 보고해야 함 |
+
+### 1.6 공매도 규제 (Short Selling Regulations)
+
+일본은 FIEA 및 시행령에 따른 상설 공매도 규제 체계를 유지한다:
+
+| 규칙 | 세부사항 |
+|------|---------|
+| **무차입 공매도 금지** | 상시 금지 (원래 2008년 위기 시 임시 조치였으나 상시화); 매도인은 공매도 전 증권을 확보해야 함 |
+| **업틱규칙 (발동 기반)** | 주가가 기준가 대비 10% 이상 하락 시 가격제한 발동; 발동 시 공매도는 최종체결가격 상위에서만 체결 가능; 제한은 다음 거래일 종료까지 지속 |
+| **표시 요건** | 모든 공매도 주문은 공매도로 표시/식별되어야 함 |
+| **포지션 보고** | 0.2% 이상 포지션은 TSE에 보고; 0.5% 이상은 공개 |
+| **집계** | 투자자별·종목별 기준으로 공매도 포지션 산출 |
+
+[Source: JPX, "Short Selling Restrictions", accessed 2026-04-06; Clifford Chance, "Significant changes to the Japanese short selling regulations", 2013]
+
+### 1.7 외국인투자자 접근 (Foreign Investor Access)
+
+일본 증권시장은 일반적으로 외국인투자자에게 개방되어 있으며 포트폴리오 투자에 대한 주요 제한이 없다:
+
+- 일반적 포트폴리오 투자에 대한 **사전등록 요건 없음**
+- 대부분 상장기업에 대한 **외국인소유 제한 없음** (국방, 원자력, 통신 등 국가안보 분야에 대해서는 FEFTA에 따른 분야별 제한 적용)
+- 자본 및 수익의 **자유로운 본국 송금**
+
+**2025년 FEFTA 개정 (2025년 5월 19일 시행):**
+- 외국 정부에 대한 정보공개 의무가 있는 투자자를 대상으로 하는 새로운 "특정외국투자자" 분류 (특히 외국 정보기관과 연계된 주체를 겨냥)
+- 특정외국투자자는 상장주식 1% 이상 취득 시 사전통지를 해야 하며, 면제 대상이 되지 않음
+- 지정 민감 분야 투자에 대한 심사 강화
+
+[Source: Lexology, "Japan's 2025 FEFTA Amendments", accessed 2026-04-06; Norton Rose Fulbright, "Global rules on foreign direct investment: Japan", accessed 2026-04-06]
+
+### 1.8 기업지배구조코드 및 스튜어드십코드 (Corporate Governance Code and Stewardship Code)
+
+#### 기업지배구조코드 (コーポレートガバナンス・コード)
+
+2015년 6월 최초 도입되고 2018년 6월과 2021년 6월에 개정된 기업지배구조코드는 JFSA와 TSE가 공동 발행하는 원칙 기반 프레임워크이다. "준수하거나 설명(comply or explain)" 기준으로 적용된다.
+
+**주요 원칙:**
+- 이사회 독립성: 프라임시장 기업에 대해 최소 1/3 이상 독립 사외이사 (과반수 권장)
+- 정책보유주식(상호보유주식): 기업은 전략적 상호보유주식의 근거를 공시하고 축소해야 함; 주요 보험사는 전량 매각을 약속
+- 자본비용 의식: TSE의 2023년 1월 이니셔티브로 모든 프라임·스탠다드시장 기업에 자본비용 및 주가 개선 계획 공시를 요청(PBR 이니셔티브); 2025년 3월 기준 프라임시장 기업의 90% 이상이 해당 계획을 공시
+
+**2025-2026 개정 절차:**
+- JPX와 JFSA가 기업지배구조코드 개정에 관한 전문가 패널을 소집 (제3차 회의 2026년 4월 3일 개최)
+- 검토 중인 주요 주제: 이사회 실효성 추가 강화, 지속가능성 공시, 주주와의 대화, 상호보유주식 해소
+
+[Source: JPX, "Follow-up Council", accessed 2026-04-06; Harvard Law School Forum on Corporate Governance, "Tokyo Stock Exchange Initiative on Cost of Capital", October 2025]
+
+#### 스튜어드십코드 (Version 3.0, 2025년 6월 26일)
+
+일본의 스튜어드십코드는 2014년 2월 최초 도입되고 2017년 5월과 2020년 3월에 개정되었다. Version 3.0은 2025년 6월 26일에 공표되었다.
+
+**Version 3.0의 주요 변경사항:**
+- "형식에서 실질로"의 전환 강조 — 형식적 체크박스 접근법을 지양
+- **실질적 주주 투명성:** 기관투자자는 요청 시 투자대상 기업에 보유주식 세부사항을 공시할 준비가 되어야 함 (Guidance 4-2)
+- **공동 관여(Collaborative engagement):** Principle 4.5가 거버넌스 및 지속가능성 과제 해결을 위한 투자자 간 공동 관여를 장려
+- **원칙 기반 유연성:** 지속가능한 가치 창출이 공식적 접근법으로 환원될 수 없음을 인정
+
+[Source: JFSA, "Revision of the Stewardship Code", June 26, 2025; ACGA, "Decoding Japan's New Stewardship Code and 2025 FSA Action Programme", accessed 2026-04-06]
+
+### 1.9 최근 변경 사항 (2023-2026) (Recent Changes)
+
+| 일자 | 변경 |
+|------|--------|
+| 2023년 1월 | TSE가 프라임/스탠다드시장 기업에 자본비용 및 주가 개선 계획 공시를 요청 (PBR 이니셔티브) |
+| 2024년 4월 | arrowhead 4.0 출시; 거래시간 15:30까지 연장 및 폐장경매 도입 |
+| 2024년 11월 | 5분간 폐장 전 접수기간과 함께 거래시간 30분 공식 연장 |
+| 2025년 4월 | JPX-R이 AI 기반 시장감시 도입 |
+| 2025년 5월 | 2025년 FEFTA 개정 시행 — "특정외국투자자" 분류 |
+| 2025년 6월 | 스튜어드십코드 Version 3.0 공표 |
+| 2025-2026 | 기업지배구조코드 개정에 관한 전문가 패널 소집 |
+| 2026년 5월 1일 | 2024년 FIEA 개정 시행 — TOB 기준 30%로 하향, 대량보유보고 개혁 |
+| 2026 (예상) | FIEA 하 암호자산 규제 — 입법 기초 진행 중 |
+
+---
+
+## 2. 홍콩 (SFC + HKEX)
+
+### 2.1 규제 기관 구조 (Regulatory Authority Structure)
+
+홍콩은 법정 규제기관(SFC)과 HKEX 상장부를 통한 거래소 기반 규제를 결합한 이원적 규제 모델로 운영된다.
+
+| 기관 | 정식명칭 | 역할 |
+|-----------|-----------|------|
+| **SFC** | 증권선물사무감찰위원회 (Securities and Futures Commission, 證券及期貨事務監察委員會) | 법정 규제기관; 인가, 감독, 집행, 시장행위 |
+| **HKEX 상장부** | 홍콩증권거래소 상장부 (Listing Division of The Stock Exchange of Hong Kong Limited) | SFC로부터 위임된 권한에 따른 전선 상장규제; 상장 신청 심사, 상장 후 규정준수 |
+| **FSTB** | 재경사무국 (Financial Services and the Treasury Bureau) | 정부 정책 부서; 입법 제안 |
+| **HKMA** | 홍콩금융관리국 (Hong Kong Monetary Authority) | 은행 규제기관; 은행의 증권활동 감독 |
+
+[Source: SFC, "About the SFC", accessed 2026-04-06]
+
+**SFC**는 1987년 주식시장 붕괴를 계기로 1989년에 설립되었다. 거래부과금과 수수료로 운영되는 독립 법정기관이다. SFC의 기능은 다음을 포함한다:
+- 중개인의 인허가 및 감독 (10종의 규제활동, 제1종 — 증권거래, 제4종 — 증권자문, 제9종 — 자산운용 포함)
+- 증권선물조례(SFO) 관리
+- 시장감시 및 집행
+- 집합투자기구 규제
+- 상장규칙 승인 및 HKEX의 상장 기능에 대한 감독 행사
+
+**HKEX 상장부**는 SFC로부터 위임된 권한에 따라 상장기업에 대한 전선 규제기관으로서 활동한다. 상장위원회(시장 전문가 및 독립 위원으로 구성)가 상장 결정을 내린다. SFC는 다음의 권한을 보유한다:
+- 상장 신청에 대한 이의제기
+- HKEX에 상장규칙 수정을 지시
+- 상장문서에 대한 "이중제출(dual filing)" 감독 행사
+
+### 2.2 주요 법률 (Key Legislation)
+
+#### 증권선물조례 (Securities and Futures Ordinance, SFO / Cap. 571)
+
+SFO(2002년 제정, 2003년 4월 1일 시행)는 홍콩의 증권선물시장을 규율하는 주요 법률이다. 이전의 10개 조례를 단일 포괄적 법률로 통합하였다.
+
+[Source: SFC, "Securities and Futures Ordinance", accessed 2026-04-06; Hong Kong e-Legislation, Cap. 571]
+
+**주요 규정:**
+
+| 편 | 내용 |
+|------|----------|
+| Part II | SFC 구성, 권한, 기능 |
+| Part III | 조사 및 개입 권한 |
+| Part IV | 증권 및 집합투자기구의 공모 |
+| Part V | 중개인의 인허가 및 등록 |
+| Part VI | 실질적 주주 및 이사의 지분 공시 |
+| Part VIII | 증권, 선물, 레버리지 외환거래와 관련한 범죄 |
+| Part XIII | 시장비위: 내부자거래(민사 및 형사 경로), 시장조작, 허위거래, 가격조작, 금지거래 관련 정보공개 |
+| Part XIV | 공매도에 관한 규정 |
+
+**10종의 규제활동 (Regulated Activities, RAs):**
+
+| RA 유형 | 활동 |
+|---------|----------|
+| 제1종 | 증권거래 |
+| 제2종 | 선물계약거래 |
+| 제3종 | 레버리지 외환거래 |
+| 제4종 | 증권자문 |
+| 제5종 | 선물계약자문 |
+| 제6종 | 기업재무자문 |
+| 제7종 | 자동매매서비스 제공 |
+| 제8종 | 증권담보금융 |
+| 제9종 | 자산운용 |
+| 제10종 | 신용평가서비스 제공 |
+
+각 RA는 SFC의 별도 인가를 요구한다. 규제활동을 수행하는 개인은 인가대표인으로 등록되어야 한다.
+
+#### 기타 주요 법률
+
+| 법률 | 범위 |
+|---------|-------|
+| 회사조례 (Companies Ordinance, Cap. 622) | 회사 설립, 거버넌스, 재무보고 |
+| 상장규칙 (주식시장 규칙 / GEM 규칙) | HKEX가 관리하는 상세 상장 요건 |
+| 자금세탁방지 및 테러자금조달방지조례 (AMLO / Cap. 615) | 금융기관의 AML/CFT 의무 |
+| 스테이블코인조례 (Cap. 656, 2025년 8월 1일 시행) | 법정화폐 연동 스테이블코인 발행인의 인허가 및 규제 |
+
+### 2.3 시장구조 및 인허가 (Market Structure and Licensing)
+
+**시장구조:**
+- **주식시장(Main Board):** 기성 기업을 위한 프리미어 시장 (IPO 시 최소 시가총액 HK$500 million)
+- **GEM (Growth Enterprise Market):** 소규모 기업을 위한 성장시장
+- **Chapter 18A (2018):** 수익 전 바이오테크 기업
+- **Chapter 18B (2022):** SPAC 상장 (최소 HK$10억 IPO 조달금; 36개월 내 de-SPAC)
+- **Chapter 18C (2023):** 전문기술기업 (상업화단계: 2024년 9월 이후 임시 인하로 HK$40억 최소시가총액, 기존 HK$60억에서; 상업화 전단계: HK$80억, 기존 HK$100억에서, 2027년 8월까지 유효)
+- **Chapter 19C:** 적격 해외상장 기업의 2차 상장
+
+**인허가:** 규제활동을 수행하는 모든 중개인은 SFC의 인가를 받아야 한다. 회사는 지속적인 자본 요건, 행위 규칙, 정기 검사를 받는다.
+
+### 2.4 중국 본토와의 Stock Connect (Stock Connect with Mainland China)
+
+Stock Connect는 홍콩을 상하이 및 선전증권거래소와 연결하는 획기적인 국경간 시장접근 제도이다.
+
+| 프로그램 | 개시일 | 방향 | 범위 |
+|-----------|------------|-----------|-------|
+| 상하이-홍콩 Stock Connect | 2014년 11월 17일 | 북향(HK -> SSE) 및 남향(SSE -> HK) | 적격 SSE 및 SEHK 주식 |
+| 선전-홍콩 Stock Connect | 2016년 12월 5일 | 북향(HK -> SZSE) 및 남향(SZSE -> HK) | 적격 SZSE 및 SEHK 주식 |
+| ETF Connect | 2022년 7월 4일 | 양방향 | Stock Connect에 적격 ETF 추가 |
+| Swap Connect (북향) | 2023년 5월 15일 | 북향 | 금리스왑 |
+| Bond Connect | 2017년 7월 3일(북향); 2021년 9월 24일(남향) | 양방향 | 적격 채권 |
+
+**주요 규칙:**
+- **일일 한도:** 북향 일일 한도 RMB 520억; 남향 일일 한도 HK$420억 (개시 이후 여러 차례 확대)
+- **결제:** 북향은 T+0 (주식 사전 인도 필요); 남향은 T+2
+- **사전매매확인:** 북향 투자자는 매도 전 충분한 주식을 보유해야 함 (무차입 공매도 금지)
+- **Stock Connect를 통한 공매도:** 적격 A주에 대한 차입 공매도가 북향 투자자에게 허용되며, SSE/SZSE 요건(전선 모니터링 및 물량 제한 포함)을 준수해야 함
+- **휴일 체계:** 양 시장이 모두 개장하고 양 시장에서 결제가 가능한 날에만 매매 실시
+
+[Source: HKEX, "Stock Connect", accessed 2026-04-06; IFEC, "Trading rules and arrangement", accessed 2026-04-06]
+
+### 2.5 시장감시 (Market Surveillance)
+
+**SFC 시장감시:**
+- 모든 SEHK 상장 증권에 걸친 매매활동의 실시간 감시 수행
+- 내부자거래, 시장조작, 허위거래, 기타 시장비위의 혐의 조사
+- 2024년 3분기, SFC는 기업공시, 내부자거래, 중개인비위, 시장조작을 포괄하는 468건의 조사를 수행
+- **이원적 집행 경로:** 시장비위는 (a) 시장비위심판소(민사 경로) 또는 (b) 법원에서의 형사기소를 통해 기소 가능
+
+**최근 집행 하이라이트 (2025):**
+- 2025년 7월, SFC-ICAC 합동 작전이 상장기업 임원이 관여한 시장조작 조직을 겨냥; 14개 장소 수색, 다수 체포
+- SFC가 수십 개 상장기업에 대한 정보 유출과 관련하여 HKEX와 SFC 직원 자체의 내부자거래 의혹을 조사 [Source: Bloomberg, September 2025]
+- **시장사운딩 지침**이 2025년 5월 시행되어, 인가를 받은 자가 시장사운딩(블록거래, 사모 배정) 시 정보차단 프로토콜을 시행하도록 요구
+
+[Source: SFC, "Regulatory update", accessed 2026-04-06; A&O Shearman, "Hong Kong White-Collar/Financial Crime", 2025]
+
+### 2.6 공매도 규칙 (Short Selling Rules)
+
+홍콩은 **차입 공매도만** 허용한다 — 무차입 공매도는 SFO Part XIV에 따른 형사범죄이다.
+
+| 규칙 | 세부사항 |
+|------|---------|
+| **차입 공매도만** | 매도인은 공매도 전에 현재 행사 가능하고 무조건적인 증권의 귀속 권리를 보유해야 함 |
+| **지정증권** | HKEX "공매도 적격 지정증권" 목록에 있는 증권에 대해서만 공매도 허용 (정기 갱신; 고유동성 종목 포함) |
+| **호가규칙** | 공매도는 현재 최우선매도호가 이상의 가격으로만 체결해야 함 |
+| **보고** | 순공매도 포지션이 발행주식의 0.02% 이상 (또는 HK$3,000만) 이상인 지정주식에 대해 매주 SFC에 보고 |
+| **Stock Connect** | 적격 A주에 대한 차입 공매도가 북향 투자자에게 허용되며, SSE/SZSE의 물량 제한을 준수 |
+| **처벌** | 불법 공매도(무차입)는 형사기소, 최대 HK$100,000 벌금, 최대 2년 징역형 |
+
+[Source: HKEX, "Regulated Short Selling", accessed 2026-04-06; SFC, "Aggregated reportable short positions", accessed 2026-04-06]
+
+### 2.7 외국인투자자 접근 (Foreign Investor Access)
+
+홍콩은 아시아에서 가장 개방적인 증권시장 중 하나를 운영한다:
+
+- 외국인투자자에 대한 **사전등록 요건 없음**
+- 홍콩 상장 증권에 대한 **외국인소유 제한 없음** (Stock Connect를 통한 본토 A주는 총량 및 일일 한도 적용)
+- **자유로운 자본 이동:** 외환통제 없음; HKD 자유 태환
+- **세제 우대:** 양도차익세 없음, 홍콩 상장 증권에 대한 배당원천세 없음, 인지세 매매 당 0.1% (2023년 11월 0.13%에서 인하)
+- **결제:** CCASS(중앙결제시스템) 증권에 대해 T+2
+
+### 2.8 최근 변경 사항 (2022-2026) (Recent Changes)
+
+| 일자 | 변경 |
+|------|--------|
+| 2022년 1월 1일 | SPAC 상장 체제(Chapter 18B) 시행 |
+| 2023년 3월 | 전문기술기업 규칙(Chapter 18C) 도입 |
+| 2023년 11월 | 인지세 0.13%에서 0.1%로 인하 |
+| 2024년 9월 1일 | Chapter 18C 시가총액 기준 임시 인하 (3년간 2027년 8월까지 유효) |
+| 2025년 5월 | 시장사운딩 지침 시행 |
+| 2025년 8월 5일 | 최소 호가단위 축소 Phase 1 — HK$10-50 범위 호가단위(최소가격변동폭) 축소 |
+| 2025년 8월 1일 | 스테이블코인조례(Cap. 656) 시행 |
+| 2025년 8월 4일 | HKEX 상장규칙 변경 시행 (40% 배정 트렌치 배분 포함, Chapter 18C 면제) |
+| 2026년 중반 (예정) | 최소 호가단위 축소 Phase 2 — HK$0.50-10 범위 호가단위(최소가격변동폭) |
+| 2026 (예상) | 가상자산 딜러 및 수탁업자 인허가 법안이 입법회에 제출 예정 |
+
+---
+
+## 3. 싱가포르 (MAS + SGX)
+
+### 3.1 규제 기관 구조 (Regulatory Authority Structure)
+
+싱가포르는 중앙은행(MAS)이 단일 금융규제기관으로서 기능하고, SGX RegCo가 거래소 차원의 자율규제를 제공하는 통합적 규제 모델을 채택한다.
+
+| 기관 | 정식명칭 | 역할 |
+|-----------|-----------|------|
+| **MAS** | 싱가포르통화청 (Monetary Authority of Singapore) | 통합 금융규제기관(중앙은행 + 증권규제 + 은행규제 + 보험규제); 인허가, 감독, 집행, 통화정책 |
+| **SGX RegCo** | SGX 자율규제법인 (SGX Regulation, SGX RegCo Pte. Ltd.) | SGX 그룹의 독립 규제 자회사; 상장규제, 시장감시, 회원감독 |
+| **CAD** | 상업사무부 (Commercial Affairs Department, 싱가포르 경찰) | 금융범죄 형사수사 (MAS와 공동) |
+
+[Source: MAS, "About MAS", accessed 2026-04-06]
+
+**MAS**는 주요 금융규제기관 중 중앙은행 기능과 증권규제, 은행감독, 보험감독을 단일 기관에 결합하는 독특한 기관이다. 1971년에 설립되어 증권선물법(SFA)을 관리하며 다음의 권한을 보유한다:
+- 자본시장서비스(CMS) 인가 보유자의 인허가 및 감독
+- 시장비위의 조사 및 집행
+- 거래소 및 청산기관 규칙의 승인
+- 개인에 대한 금지 명령 발행
+- 시장남용에 대한 민사과태료 부과
+
+**SGX RegCo**는 2016년에 설립되어 2018년부터 SGX 그룹의 독립 규제 자회사로서 운영을 시작하였다. SGX의 상업적 기능으로부터 운영 독립성을 유지하며 규제이해상충위원회(Regulatory Conflicts Committee)의 거버넌스를 받는다. SGX RegCo의 기능은 다음을 포함한다:
+- 메인보드 및 Catalist에 대한 상장 신청 심사 및 상장규칙 관리
+- 상장기업의 지속적 규정준수 감시
+- 시장감시 수행
+- 매매회원(증권 및 파생상품) 감독
+
+[Source: SGX, "About SGX RegCo", accessed 2026-04-06]
+
+### 3.2 주요 법률 (Key Legislation)
+
+#### 증권선물법 2001 (Securities and Futures Act 2001, SFA)
+
+SFA(2001년 법률 42호, 개정)는 싱가포르의 자본시장을 규율하는 주요 법률이다. 2005년과 2012년에 대폭 개정되었으며, 추가 개정이 진행 중이다.
+
+[Source: MAS, "Securities and Futures Act 2001", accessed 2026-04-06; Singapore Statutes Online, sso.agc.gov.sg]
+
+**주요 규정:**
+
+| 편 | 내용 |
+|------|----------|
+| Part II | 시장, 청산시설, 거래정보저장소의 규제 |
+| Part IV | 자본시장상품 취급 인허가 |
+| Part VII | CMS 인가 보유자의 영업행위 |
+| Part XII | 시장행위 — 내부자거래(Division 3), 시장조작, 허위거래, 시장조종 |
+| Part XIII | 증권 및 집합투자기구의 공모(투자설명서 요건) |
+
+**자본시장서비스 (CMS) 인가:**
+
+| 활동 | 요건 |
+|----------|-------------|
+| 자본시장상품 거래 | CMS 인가 필요 |
+| 기업재무자문 | CMS 인가 필요 |
+| 펀드운용 | CMS 인가 필요 |
+| 부동산투자신탁(REIT) 운용 | CMS 인가 필요 |
+| 수탁서비스 제공 | CMS 인가 필요 |
+| 신용평가서비스 | CMS 인가 필요 |
+
+#### 기타 주요 법률
+
+| 법률 | 범위 |
+|---------|-------|
+| 금융자문법 (Financial Advisers Act, Cap. 110) | 금융자문업자 규제 |
+| 싱가포르 공개매수 및 합병 코드 | 의무 공개매수 규칙 (30% 기준 발동) |
+| 회사법 (Companies Act, Cap. 50) | 회사법, 이사의 의무 |
+| 거래소(법인전환 및 합병)법 1999 | SGX 설립의 법적 기반 |
+
+### 3.3 시장구조 및 인허가 (Market Structure and Licensing)
+
+**시장 구분:**
+- **메인보드:** 기성 기업을 위한 주요 시장; 수익 기록 및/또는 시가총액을 포함한 정량적 진입 기준; 최소 25% 유통물량
+- **Catalist:** 스폰서 감독 하의 중소기업 성장시장; SGX가 정하는 정량적 진입 기준 없음 (스폰서가 적합성 결정)
+- **GlobalQuote:** 외국기업의 2차 상장용
+- **글로벌상장보드 (Global Listing Board, 제안):** 2025년 11월 19일 발표 — SGX와 Nasdaq 간 시가총액 SGD 20억 이상 기업을 위한 새로운 이중상장 연결
+
+[Source: MAS, "MAS Proposes Legislative and Regulatory Changes to Facilitate Dual Listings on Global Listing Board", January 2026]
+
+**글로벌상장보드 — 주요 SFA 개정안 제안 (의견수렴 2026년 2월 8일 마감):**
+- SGX와 Nasdaq의 이중상장에 대한 단일 투자설명서
+- 미국과 싱가포르 간 IPO 일정 조율
+- 미래예측 진술, 자기주식 매입, 사전결정 매매에 대한 안전항 규정
+- 개인투자자의 IPO 절차 조기 참여 허용
+
+### 3.4 시장감시 (Market Surveillance)
+
+**MAS-SGX 합동 감시 체계:**
+
+MAS와 SGX RegCo는 조율된 감시 체계를 운영한다:
+- **SGX RegCo**가 비정상적 매매 패턴을 탐지하기 위한 자동화 시스템을 사용하여 제1선 실시간 시장감시 수행
+- **MAS**가 제2선 감독 및 공식 집행 조사 수행
+- **MAS-SGX 매매감시 실무 가이드:** MAS와 SGX가 공동 발행하며, 중개인의 매매감시 관행에 대한 지침 제공
+
+**집행 조치 (2025):**
+- 2025년 4분기, MAS가 163건의 검토 및 조사 사건을 개시하였으며, 58건이 시장비위(내부자거래 및 허위거래) 관련
+- Tan Tee Beng에 대해 Tee International 및 Tee Land 주식 내부자거래로 S$50,000 민사과태료 부과
+- Ang Yew Jin Eugene에 대해 Alpha Energy Holdings 주식 내부자거래로 S$137,000 민사과태료 부과
+- Xie Jianfeng에 대해 SFA에 따른 내부자거래 및 기만 행위로 형사 기소 (2025년 10월)
+
+**집행 우선순위 (2025-2026):**
+MAS는 시장비위(내부자거래, 허위거래), 중개인비위, 기술 관련 리스크를 포함한 집행 우선순위를 제시.
+
+[Source: MAS, "Key Enforcement Actions Taken by MAS in Q4 2025", January 2026; Sidley Austin, "Monetary Authority of Singapore Outlines Enforcement Priorities for 2025-26", April 2025]
+
+### 3.5 보고 요건 (Reporting Requirements)
+
+| 요건 | 세부사항 |
+|-------------|---------|
+| 연차보고서 | 상장회사는 사업연도 종료 후 4개월(메인보드) 또는 5개월(Catalist) 이내에 발행 |
+| 분기/반기 보고 | 시가총액 SGD 7,500만 미만 메인보드 기업은 분기보고 필요; 기타는 반기; Catalist: 반기 |
+| 즉시공시 | 중요정보는 SGXNet을 통해 즉시 공시 |
+| 실질적 지분보유 | 5% 기준; 2영업일 이내에 회사 및 SGX에 통지 |
+| 공매도잔고 보고 | 의무적 공개 공매도잔고 보고 체제 없음 (일본, 홍콩, 한국과 달리) [미확인 — MAS가 논의하였으나 2026년 기준 시행하지 않음] |
+| 투자설명서 | SFA Part XIII에 따른 증권 공모 시 필요 |
+
+### 3.6 외국인투자자 접근 (Foreign Investor Access)
+
+싱가포르는 아시아에서 가장 개방적인 자본시장 중 하나를 유지한다:
+
+- 외국인투자자에 대한 **사전등록 요건 없음**
+- SGX 상장 증권에 대한 **외국인소유 제한 없음** (은행, 미디어 등 기타 법률에 따른 분야별 제한이 적용될 수 있음)
+- **자유로운 자본 이동:** 외환통제 없음; SGD 자유 태환
+- **세제:** 양도차익세 없음; 배당원천세 일반적으로 미적용 (1단계 법인세 체계에서 지급되는 배당금은 주주에게 비과세)
+- **결제:** 메인보드 및 Catalist 증권에 대해 T+2
+
+### 3.7 최근 변경 사항 (2023-2026) (Recent Changes)
+
+| 일자 | 변경 |
+|------|--------|
+| 2023년 7월 3일 | NSE IX-SGX GIFT Connect 완전 가동 (싱가포르-인도 시장 연결) |
+| 2025 | SGX RegCo가 상장규칙 변경으로 공시 기반 체제를 진전 |
+| 2025년 11월 19일 | 글로벌상장보드 (SGX-Nasdaq 이중상장 연결) 발표 |
+| 2026년 1월 9일 | SGX RegCo의 글로벌상장보드 상장규칙 의견수렴서 |
+| 2026년 1월 | MAS의 글로벌상장보드를 위한 SFA 개정 의견수렴 (2026년 2월 8일 마감) |
+| 2027 (예정) | 새 매매체결엔진(매칭엔진) "Iris-ST" 가동 예상 (2027년 하반기) |
+
+---
+
+## 4. 한국과의 비교 (FSC/FSS/KRX) (Comparison with Korea)
+
+### 4.1 규제 구조 비교 (Regulatory Structure Comparison)
+
+한국은 정부 차원에서 **이원적 규제기관 모델**(FSC가 정책/규칙 제정, FSS가 감독/집행)을 독특하게 운영하며, 이는 일본(JFSA), 홍콩(SFC), 싱가포르(MAS)의 단일 규제기관 모델과 다르다.
+
+| 차원 | 한국 | 일본 | 홍콩 | 싱가포르 |
+|-----------|-------|-------|-----------|-----------|
+| **정부 규제기관** | FSC (금융위원회) — 정책/규칙 제정; FSS (금융감독원) — 감독/검사 | JFSA (정책 + 감독을 위한 단일 규제기관) | SFC (증권시장을 위한 단일 법정 규제기관) | MAS (통합 규제기관: 중앙은행 + 모든 금융감독) |
+| **이원/단일 구조** | 이원: FSC (정부 위원회) + FSS (집행기관, 비정부) | 단일 JFSA이며 SESC는 내부 전문 감시위원회 | 단일 SFC (+ 상장규제를 위한 HKEX 상장부) | 단일 MAS (+ 거래소 차원 규제를 위한 SGX RegCo) |
+| **거래소 SRO** | KRX (한국거래소) — 유일한 거래소이자 SRO로 운영 | JPX-R (JPX의 전용 SRO 자회사) | HKEX 상장부 (SFC로부터 위임된 권한) | SGX RegCo (SGX의 독립 규제 자회사) |
+| **규제 철학** | 규범적/규칙 기반; 적극적 정부 개입 (예: 공매도 금지) | 원칙 기반(기업지배구조) + 규칙 기반(매매 규정); 시장 기반 해법 강조 확대 | SFC 감독에 따른 공시 기반; SFO가 민사 및 형사 집행 경로 모두 제공 | 공시 기반; MAS는 억제에 중점을 둔 비례적 집행 선호 |
+| **최근 구조 논의** | 2025년 9월, 한국이 FSC와 FSS 통합 제안을 보류하여 이원 구조 유지 | 주요 구조 변경 없음 | HKEX 자체상장 이해상충에 대한 정기적 논의 | 2018년 이후 SGX RegCo 독립성 강화 |
+
+[Source: FSC, "About FSC", accessed 2026-04-06; KED Global, "S.Korea shelves financial regulator shake-up", September 2025]
+
+### 4.2 주요 규정: 자본시장법 (FSCMA)
+
+한국의 주요 증권 법률은 **자본시장과 금융투자업에 관한 법률(자본시장법, FSCMA / Financial Investment Services and Capital Markets Act)**이며, 2007년에 제정(2009년 2월 4일 시행)되었다. FSCMA는 6개의 기존 법률을 증권, 파생상품, 투자서비스를 포괄하는 단일 종합 법률로 통합하였다.
+
+**주요 법률 비교:**
+
+| 한국 (FSCMA) | 일본 (FIEA) | 홍콩 (SFO) | 싱가포르 (SFA) |
+|---------------|-------------|-----------------|-----------------|
+| 2007년 제정, 2009년 시행 | 원래 1948년, 2006년 개칭 (2007년 시행) | 2002년 제정, 2003년 시행 | 2001년 제정 |
+| 6개 기존 법률 통합 | 증권거래법에서 확대하여 더 넓은 금융상품 포괄 | 10개 기존 조례 통합 | 자본시장 주요 법률 |
+| 기능적 규제 접근 (기관이 아닌 활동을 규제) | 유사한 기능적 접근 | 활동 기반 (10종 규제활동) | CMS 인가 범주 |
+| 금융투자상품에 대한 포괄주의(네거티브 리스트) 접근 | 열거주의(포지티브 리스트) 접근 (정의된 범주) | 정의된 증권 및 선물 범주 | 정의된 "자본시장상품" |
+
+### 4.3 KRX의 SRO 기능 (KRX as SRO)
+
+KRX(한국거래소)는 한국의 유일한 인가 거래소 운영자이자 자율규제기구로서 기능한다. 다수의 거래소가 경쟁할 수 있는 다른 아태지역 시장과 달리, KRX는 모든 국내 주식, 파생상품, 채권 시장을 운영한다.
+
+**거래소 SRO 기능 비교:**
+
+| 기능 | KRX (한국) | JPX-R (일본) | HKEX 상장부 (홍콩) | SGX RegCo (싱가포르) |
+|----------|-------------|---------------|------------------------|----------------------|
+| 상장심사 | 예 | 예 | 예 | 예 |
+| 시장감시 | 예 (실시간) | 예 (2025년부터 AI 강화) | SFC가 주요 감시 수행 | 예 (제1선); MAS가 감독 |
+| 회원/참가자 검사 | 예 | 예 | SFC가 처리 | 예 |
+| 상업적 기능으로부터의 독립성 | 제한적 (KRX는 단일 법인) | 별도 자회사 (JPX-R) | HKEX 내 부서 (SFC 감독) | 규제이해상충위원회를 갖춘 별도 자회사 |
+| 징계 권한 | 예 | 예 | SFC가 최종 권한 보유 | 예, MAS 감독 하에 |
+
+### 4.4 외국인투자자 등록 (Foreign Investor Registration)
+
+한국의 외국인투자자 등록 제도는 역사적으로 아태지역 동류국보다 제한적이었다:
+
+| 측면 | 한국 | 일본 | 홍콩 | 싱가포르 |
+|--------|-------|-------|-----------|-----------|
+| **사전등록** | 과거: FSS에서 투자자등록증(IRC) 필요. 2023년 12월 14일 이후: 신규 투자자에 대한 IRC 제도 폐지; LEI(법인식별자) 필요 | 포트폴리오 투자에 대한 사전등록 없음 | 사전등록 없음 | 사전등록 없음 |
+| **고유 식별자** | IRC(기존 투자자) 또는 LEI(2023년 12월 이후 신규 투자자); 동시 사용 불가 | 포트폴리오 투자에 불필요 | 불필요 | 불필요 |
+| **옴니버스 계좌** | 개혁 조치로 도입; 글로벌 자산운용사가 고객 주문을 단일 계좌로 통합 가능 | 표준 관행 | 표준 관행 | 표준 관행 |
+| **외국인소유 제한** | 상장주식에 대해 일반적으로 없음; 분야별 제한 적용(예: 방송, 통신, 항공) | 일반적으로 없음; 지정 분야에 대한 FEFTA 심사 | 홍콩 상장에 대해 없음; A주에 Stock Connect 한도 | 일반적으로 없음; 분야별 제한 적용 가능 |
+| **개방성 순위** | 역사적으로 더 제한적; 상당한 자유화 진행 중 (선진국 재분류 관련 MSCI 관찰대상) | 개방적 | 매우 개방적 | 매우 개방적 |
+
+[Source: FSC, "Omnibus Account for Foreign Investors", accessed 2026-04-06; Clearstream, "Investment regulation — South Korea", accessed 2026-04-06]
+
+### 4.5 공매도 규칙: 한국의 보다 엄격한 접근법 (Short Selling Rules: Korea's Stricter Approach)
+
+한국은 4개 관할권 중 가장 개입적인 공매도 규제 접근법을 채택하여, 최근 수년간 여러 차례의 일시적 금지를 포함하였다.
+
+| 측면 | 한국 | 일본 | 홍콩 | 싱가포르 |
+|--------|-------|-------|-----------|-----------|
+| **무차입 공매도** | 금지(형사범죄; 2025년 자본시장법 개정에 따른 강화된 처벌: 부당이득 50억원 초과 시 최대 무기징역) | 상시 금지(2008년 위기 조치를 상시화) | SFO Part XIV에 따른 형사범죄(최대 HK$100,000 벌금 + 2년 징역) | SFA에 따라 금지 |
+| **일시적 금지** | 다수: 2020년 3월~2021년 5월(COVID); 2023년 11월~2025년 3월 30일(기관 무차입 공매도 스캔들) | 최근 이력 없음 | 최근 이력 없음 | 최근 이력 없음 |
+| **재개** | 2025년 3월 31일 모든 상장주식에 대해 공매도 재개 — 5년 만에 처음으로 모든 종목 적격 | 해당 없음 | 해당 없음 | 해당 없음 |
+| **업틱규칙** | 예 (모든 공매도에 대한 업틱규칙) | 발동 기반: 주가가 기준가 대비 10% 하락 시에만 발동 | 예: 공매도는 최우선매도호가 이상에서만 체결 | 예 [미확인] |
+| **포지션 보고** | 2025년 자본시장법 개정에 따라 강화 | 0.2% 이상 보고; 0.5% 이상 공개 | 발행주식의 0.02% 이상 또는 HK$3,000만 SFC에 보고 | 의무적 공개 보고 체제 없음 [미확인] |
+| **탐지 시스템** | KRX가 실시간 탐지를 위한 무차입 공매도 탐지시스템(NSDS) 출시 | JPX-R AI 감시 | SFC 감시 | SGX RegCo + MAS 감시 |
+| **비금전적 제재** | 2025년 자본시장법 신설: 최대 5년간 거래 제한; 최대 5년간 임원 선임 제한 | 행정과징금, 형사기소 | SFC 민사/형사 기소; 시장비위심판소 | MAS 민사과태료, 금지 명령, 형사기소 |
+
+**2025년 자본시장법 시행령 (2025년 4월 23일 시행):**
+- FSC가 규칙 위반자의 금융투자거래를 최대 5년간 제한할 권한을 인가
+- FSC가 규칙 위반자의 상장기업 임원 취임을 최대 5년간 제한할 권한을 인가
+- 강화된 형사처벌: 불법 공매도에 불공정거래와 동일한 강화된 징역형 적용
+
+[Source: FSC, "Capital Market Reform", accessed 2026-04-06; KED Global, "All listed stocks to be available for shorting", March 2025]
+
+### 4.6 서킷브레이커(매매거래중단) 비교 (Circuit Breaker Comparison)
+
+한국은 아태지역에서 가장 포괄적인 다층적 서킷브레이커(매매거래중단) 시스템을 운영한다.
+
+| 메커니즘 | 한국 (KRX) | 일본 (JPX) | 홍콩 (HKEX) | 싱가포르 (SGX) |
+|-----------|-------------|-------------|------------------|-----------------|
+| **시장 전체 서킷브레이커(매매거래중단, MWCB)** | **예 — 3단계:** 1단계: KOSPI 8% 이상 하락이 1분간 지속 → 20분간 매매중단; 2단계: 15% 이상 하락(+1%) → 20분간 매매중단; 3단계: 20% 이상 하락(+1%) → 당일 폐장 | **선물만:** Nikkei/TOPIX 선물의 ~8% 하락 시 SCB 발동 → 10분간 매매중단; 현물주식 매매는 계속 | **시장 전체 CB 없음;** VCM은 개별 종목 단위로 운영 | **시장 전체 CB 없음;** 개별 종목 단위 서킷브레이커 |
+| **사이드카(SSCB)** | **예:** KOSPI 200 선물이 전일종가 대비 5% 이상 변동이 1분간 지속 → 프로그램매매 5분간 중단 | 해당 없음 | 해당 없음 | 해당 없음 |
+| **변동성 완화장치 (VI)** | **예 — 이중 VI:** 동적 VI(일중 가격변동) + 정적 VI(기준가 대비 이탈); 개별 종목에 적용; 2분간 경매 발동 | 종목별 **일일가격제한**(일중 VI에 해당하는 것 없음); 가격제한은 가격수준에 따라 상이 | **VCM:** 참조가격(5분전)에서 10% 이탈 → 5분간 냉각기간; 가격범위 내 매매 계속; HSI/HSCEI 구성종목 및 파생상품에 적용 | **서킷브레이커:** 5분 기간 내 10% 이탈 → 5분간 냉각기간; 가격범위 내 매매; STI 및 MSCI Singapore Index 구성종목에 적용 |
+| **일일가격제한** | +/- 30% (2015년 6월 +/-15%에서 확대) | 예: 주가수준에 따른 단계별 제한 | **일일가격제한 없음** | **일일가격제한 없음** |
+| **최근 발동** | 2026년 3월: 지정학적 긴장으로 KOSPI에 MWCB 발동(KOSPI 8.11% 하락) | 2025년 4월: Nikkei 225 선물 SCB 발동(지수 ~9% 하락 개장) | VCM 개별 종목에 대해 정기적 발동 | 드물게 발동 |
+
+[Source: KRX, "Circuit Breaker", accessed 2026-04-06; Korea Times, "KRX issues circuit breaker on KOSPI trading", March 2026; HKEX, "VCM", accessed 2026-04-06]
+
+### 4.7 시장감시 비교 (Market Surveillance Comparison)
+
+| 측면 | 한국 (KRX/FSS) | 일본 (JPX-R/SESC) | 홍콩 (SFC) | 싱가포르 (MAS/SGX RegCo) |
+|--------|------------------|---------------------|-----------------|---------------------------|
+| **주요 감시기관** | KRX 시장감시부 | JPX-R | SFC | SGX RegCo (제1선) + MAS (감독) |
+| **기술** | NSDS(무차입 공매도 탐지시스템)을 통한 실시간 감시; AI 기반 매매감시 | 2025년 4월부터 AI 기반 감시 도입 | SFC 통합 감시 시스템 | 자동화 감시 시스템 |
+| **내부자거래 집행** | FSS 조사; FSC 제재 부과 | SESC 조사; 과징금은 JFSA에, 형사 사건은 검찰에 회부 | SFC: 이원적 경로 — 시장비위심판소(민사) 또는 형사기소 | MAS: 민사과태료 또는 형사기소(CAD와 공동) |
+| **시장조작 집행** | FSS 조사; FSC 제재 | SESC 조사 및 회부 | SFC 조사 및 기소; ICAC와 합동 작전 | MAS 조사; CAD와 합동 작전 |
+| **국경간 협력** | 주요 규제기관과 MOU; IOSCO 회원 | SESC 국제감시실(2015년 설립); IOSCO 회원 | SFC: 광범위한 국경간 MOU; IOSCO 회원 | MAS: IOSCO 회원; 양자 MOU |
+
+### 4.8 종합 비교표 (Summary Comparison Table)
+
+| 차원 | 한국 (FSC/FSS/KRX) | 일본 (JFSA/SESC/JPX-R) | 홍콩 (SFC/HKEX) | 싱가포르 (MAS/SGX RegCo) |
+|-----------|---------------------|--------------------------|----------------------|---------------------------|
+| **규제기관 모델** | 이원적 정부 규제기관 (FSC + FSS) | 단일 규제기관 (JFSA)이며 SESC 감시위원회 보유 | 단일 법정 규제기관 (SFC) | 단일 통합 규제기관 (MAS) |
+| **주요 법률** | 자본시장법 (FSCMA, 2009) | FIEA (1948/2006) | SFO (2003) | SFA (2001) |
+| **거래소 구조** | KRX (유일한 거래소, SRO) | JPX 그룹이며 JPX-R (전용 SRO) | HKEX (상장부 + SFC 감독) | SGX 그룹이며 SGX RegCo (독립 자회사) |
+| **외국인투자자 접근** | IRC/LEI 등록 필요; 자유화 진행 중 | 개방적 (등록 불필요; 민감분야에 FEFTA) | 매우 개방적 (등록 불필요; 외환통제 없음) | 매우 개방적 (등록 불필요; 외환통제 없음) |
+| **공매도 체제** | 가장 엄격: 다수의 금지; 강화된 처벌; NSDS 시스템 | 보통: 상시 무차입 금지; 발동 기반 업틱규칙; 포지션 보고 | 보통: 차입만; 지정증권; 호가규칙 | 보통: 무차입 금지; 표준 집행 |
+| **서킷브레이커(매매거래중단)** | 가장 포괄적: 3단계 MWCB + 사이드카 + 이중 VI + 일일가격제한 | 선물 SCB + 일일가격제한 (현물 MWCB 없음) | 종목별 VCM (MWCB 없음; 일일가격제한 없음) | 종목별 CB (MWCB 없음; 일일가격제한 없음) |
+| **기업지배구조** | 한국 기업지배구조코드(준수 또는 설명); FSC의 주주활동주의 개혁 강조 | 기업지배구조코드 + 스튜어드십코드 (모두 적극 개정 중); PBR 이니셔티브 | 기업지배구조코드(준수 또는 설명); 상장규칙 거버넌스 요건 | 기업지배구조코드(준수 또는 설명); SGX 상장규칙 |
+| **국경간 시장접근** | 제한적 (현재 공식 시장연결 프로그램 없음) | 공식 시장연결 없음 (그러나 개방적 접근) | Stock Connect (상하이, 선전); Bond Connect; Swap Connect; ETF Connect | GIFT Connect (인도); 글로벌상장보드 (Nasdaq, 제안) |
+| **상장기업 시가총액** | ~USD 1.8조 (2025) | ~USD 8.1조 (2026년 3월) | ~USD 6.2조 (2026년 2월) | ~USD 0.8조 (2025년 12월) |
+| **규제 동향** | 자유화(IRC 폐지, 옴니버스 계좌, 공매도 재개); 그러나 개입적 성향 지속 | 시장 기반 개혁(거버넌스 코드, PBR 이니셔티브); 암호자산 규제에 신중 | 경쟁력 유지(상장 개혁, 호가단위 축소, Stock Connect 확대) | 혁신 친화적(글로벌상장보드, 통합 규제기관 효율성) |
+
+---
+
+## 출처 (Sources)
+
+### 일본
+- [JFSA, "Financial Instruments and Exchange Act"](https://www.fsa.go.jp/en/policy/fiel/index.html)
+- [JPX, "Self-Regulation"](https://www.jpx.co.jp/english/regulation/index.html)
+- [JPX, "Outline of Self-Regulatory Operations"](https://www.jpx.co.jp/english/regulation/outline/about/)
+- [JPX, "Short Selling Restrictions"](https://www.jpx.co.jp/english/equities/trading/regulations/02.html)
+- [JPX, "JPX-R Inspection Plan for FY2025" (PDF)](https://www.jpx.co.jp/english/regulation/maintaining/inspection-plan/tvdivq0000000i5v-att/2025inspection-plan_e.pdf)
+- [SESC Overview (PDF, February 2026)](https://www.fsa.go.jp/sesc/english/aboutsesc/all.pdf)
+- [JFSA, "Revision of the Stewardship Code" (PDF, June 26, 2025)](https://www.fsa.go.jp/en/refer/councils/stewardship/20250626/03.pdf)
+- [ACGA, "Decoding Japan's New Stewardship Code and 2025 FSA Action Programme"](https://www.acga-asia.org/blog-detail.php?id=106)
+- [JPX, "Expert Panel on the Revision of the Corporate Governance Code (2025-2026)"](https://www.jpx.co.jp/english/news/1020/20260403-01.html)
+- [Funds-Axis, "Japan's 2024 FIEA Amendments"](https://funds-axis.com/japans-2024-fiea-amendments-key-shareholder-disclosure-reforms-coming-in-2026/)
+- [DLA Piper, "Recent developments on TOB rules and shareholding transparency in Japan" (January 2026)](https://www.dlapiper.com/en/insights/publications/2026/01/recent-developments-on-tob-rules-and-shareholding-transparency-in-japan)
+- [Lexology, "Japan's 2025 FEFTA Amendments"](https://www.lexology.com/library/detail.aspx?g=5e6022be-3f1e-40e0-9b3c-19834a4b4251)
+- [Harvard Law School Forum, "Tokyo Stock Exchange Initiative on Cost of Capital" (October 2025)](https://corpgov.law.harvard.edu/2025/10/21/tokyo-stock-exchange-initiative-on-cost-of-capital-and-stock-price-conscious-management/)
+- [Chambers and Partners, "Corporate Governance 2025 — Japan"](https://practiceguides.chambers.com/practice-guides/corporate-governance-2025/japan)
+
+### 홍콩
+- [SFC, "Securities and Futures Ordinance"](https://www.sfc.hk/en/Rules-and-standards/Laws/Securities-and-Futures-Ordinance-with-subsidiary-legislation)
+- [HKEX, "Regulated Short Selling"](https://www.hkex.com.hk/Services/Trading/Securities/Overview/Regulated-Short-Selling?sc_lang=en)
+- [HKEX, "Volatility Control Mechanism" (PDF)](https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Overview/Trading-Mechanism/Trading-Mechanism-for-VCM_E.pdf)
+- [HKEX, "Stock Connect"](https://www.hkex.com.hk/Mutual-Market/Stock-Connect)
+- [SFC, "Aggregated reportable short positions"](https://www.sfc.hk/en/Regulatory-functions/Market/Short-position-reporting/Aggregated-reportable-short-positions-of-specified-shares)
+- [A&O Shearman, "Hong Kong White-Collar/Financial Crime" (2025)](https://www.aoshearman.com/en/insights/cross-border-white-collar-crime-and-investigations-review-2025/hong-kong-authorities-intensify-crackdown-on-white-collar-crime-and-market-misconduct)
+- [Charltons, "HKEX Listing Rule Changes Effective 4 August 2025"](https://www.charltonslaw.com/hkex-listing-rule-changes-effective-4-august-2025-further-consultation-on-ongoing-public-float/)
+- [Skadden, "HKEX and SFC Reduce Barriers for Specialist Technology Company IPOs" (August 2024)](https://www.skadden.com/insights/publications/2024/08/hkex-and-sfc-reduce-barriers)
+
+### 싱가포르
+- [MAS, "Securities and Futures Act 2001"](https://www.mas.gov.sg/regulation/acts/securities-and-futures-act)
+- [MAS, "MAS Proposes Legislative and Regulatory Changes to Facilitate Dual Listings on Global Listing Board" (January 2026)](https://www.mas.gov.sg/news/media-releases/2026/mas-proposes-legislative-and-regulatory-changes-to-facilitate-dual-listings-on-global-listing-board)
+- [MAS, "Key Enforcement Actions Taken by MAS in Q4 2025"](https://www.mas.gov.sg/news/media-releases/2026/key-enforcement-actions-taken-by-mas-in-q4-2025)
+- [Sidley Austin, "Monetary Authority of Singapore Outlines Enforcement Priorities for 2025-26" (April 2025)](https://www.sidley.com/en/insights/newsupdates/2025/04/monetary-authority-of-singapore-outlines-enforcement-priorities-for-202526)
+- [SGX RuleBooks, "Practice Note 8.10A — Circuit Breaker"](https://rulebook.sgx.com/rulebook/practice-note-810a-circuit-breaker)
+- [Rajah & Tann, "SGX & MAS Consult on Changes to Listing Rules and SFA"](https://www.rajahtannasia.com/viewpoints/sgx-mas-consult-on-changes-to-listing-rules-and-sfa-to-facilitate-dual-listings-on-sgx-and-nasdaq/)
+
+### 한국
+- [FSC, "Capital Market Reform"](https://fsc.go.kr/eng/po110101/82797)
+- [FSC, "Omnibus Account for Foreign Investors"](https://www.fsc.go.kr/eng/pr010101/22123)
+- [KED Global, "S.Korea shelves financial regulator shake-up" (September 2025)](https://www.kedglobal.com/economy/newsView/ked202509250009)
+- [KED Global, "All listed stocks to be available for shorting" (March 2025)](https://www.kedglobal.com/short-selling/newsView/ked202503300002)
+- [Chambers and Partners, "Financial Services Regulation 2025 — South Korea"](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/south-korea)
+- [Clearstream, "Investment regulation — South Korea"](https://www.clearstream.com/clearstream-en/res-library/market-coverage/investment-regulation-south-korea-1283548)

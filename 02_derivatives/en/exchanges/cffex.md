@@ -1,0 +1,425 @@
+# China Financial Futures Exchange (CFFEX)
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | China Financial Futures Exchange (中国金融期货交易所) |
+| Abbreviation | CFFEX |
+| Website | http://www.cffex.com.cn |
+| Year Established | September 8, 2006 |
+| Country / City | China / Shanghai |
+| Ownership Structure | Joint venture equally held (20% each) by Shanghai Stock Exchange, Shenzhen Stock Exchange, Shanghai Futures Exchange, Dalian Commodity Exchange, and Zhengzhou Commodity Exchange |
+| Regulatory Authority | China Securities Regulatory Commission (CSRC) |
+| Chairman | He Qingwen (as of 2025) |
+| Products Listed | 4 stock index futures, 4 government bond (CGB) futures, 3 stock index options (11 total) |
+| Trading Model | Fully electronic; no floor trading |
+| Clearing Model | Multi-tiered clearing member system (trading members, trading & clearing members, general clearing members, special clearing members) |
+| Member of | China Futures Association |
+
+[Source: CFFEX, "Overview", http://www.cffex.com.cn/en_new/OverviewNew.html, accessed 2026-04-07]
+[Source: Wikipedia, "China Financial Futures Exchange", https://en.wikipedia.org/wiki/China_Financial_Futures_Exchange, accessed 2026-04-07]
+[Source: MarketsWiki, "China Financial Futures Exchange", https://www.marketswiki.com/wiki/China_Financial_Futures_Exchange, accessed 2026-04-07]
+
+### Key Historical Milestones
+
+- **2006-09-08:** CFFEX established in Shanghai with RMB 500 million capital, approved by the State Council and authorized by CSRC
+- **2010-04-16:** China's first stock index futures (CSI 300 Index Futures, IF) launched; initially restricted to institutions and high-net-worth individuals
+- **2013-09-06:** 5-year China Government Bond (CGB) Futures (TF) launched, marking the return of treasury bond futures after the 1995 suspension
+- **2015-03-20:** 10-year CGB Futures (T) launched
+- **2015-04-16:** SSE 50 Index Futures (IH) and CSI 500 Index Futures (IC) launched
+- **2015-08/09:** In response to the stock market crash, CFFEX imposed severe trading restrictions: margins raised to 40%, position limits cut to 10 contracts/day, intraday fees raised 100-fold to 23 bps
+- **2017-02:** First round of post-crisis relaxation: daily trading limit raised to 20 lots, margins for IF/IH reduced to 20%
+- **2017-09:** Second relaxation: margins further reduced to 15%, fees lowered to 0.069%
+- **2018-12:** Third relaxation: margins for IF/IH reduced to 10%, IC to 15%, daily limit raised to 50 lots, fees reduced to 0.046%
+- **2018-08:** 2-year CGB Futures (TS) launched
+- **2019:** Further relaxation of position limits and margin requirements
+- **2019-12-23:** CSI 300 Index Options (IO) launched -- CFFEX's first options product
+- **2022-07-22:** CSI 1000 Index Futures (IM) and CSI 1000 Index Options (MO) launched
+- **2022-12-19:** SSE 50 Index Options (HO) launched
+- **2023-04-21:** 30-year CGB Futures (TL) launched
+- **2024:** Tightened scrutiny of quantitative trading; banned Shanghai Weiwan Fund Management from opening positions for 12 months
+
+[Source: Wikipedia, "China Financial Futures Exchange", accessed 2026-04-07]
+[Source: FIA, "2019 shaping up to be a big year for Chinese equity index futures", https://www.fia.org/marketvoice/articles/2019-shaping-be-big-year-chinese-equity-index-futures, accessed 2026-04-07]
+[Source: China Daily, "China eases restrictions on stock index futures trading", http://www.chinadaily.com.cn/business/2017-02/17/content_28233637.htm, accessed 2026-04-07]
+[Source: Xinhua, "China eases curbs on stock-index futures trading", http://www.xinhuanet.com/english/2018-12/02/c_137646361.htm, accessed 2026-04-07]
+[Source: CFFEX, "Notice on Releasing CSI 1000 Index Futures and Index Options", http://www.cffex.com.cn/en_new/Notices/20220718/28862.html, accessed 2026-04-07]
+[Source: Mondovisione, "CFFEX Releases SSE 50 Index Options Contract Specifications", https://mondovisione.com/media-and-resources/news/cffex-releases-sse-50-index-options-contract-specifications-and-relevant-rules/, accessed 2026-04-07]
+[Source: CFFEX, "30-Year CGB Futures Listing Notice", http://www.cffex.com.cn/en_new/NewsReleases/20230414/32100.html, accessed 2026-04-07]
+
+### International Partnerships
+
+In 2017, a joint venture was created with the Shanghai Stock Exchange (40%), Deutsche Boerse (40%), and CFFEX (20%) aimed at offering CFFEX products internationally.
+
+[Source: Wikipedia, "China Financial Futures Exchange", accessed 2026-04-07]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Products Overview
+
+CFFEX is China's sole exchange for financial futures and options. It lists three categories of products:
+
+| Category | Products | Count |
+|----------|----------|-------|
+| **Stock Index Futures** | CSI 300 (IF), SSE 50 (IH), CSI 500 (IC), CSI 1000 (IM) | 4 |
+| **Government Bond Futures** | 2-year CGB (TS), 5-year CGB (TF), 10-year CGB (T), 30-year CGB (TL) | 4 |
+| **Stock Index Options** | CSI 300 Options (IO), CSI 1000 Options (MO), SSE 50 Options (HO) | 3 |
+
+[Source: CFFEX, http://www.cffex.com.cn/en_new/, accessed 2026-04-07]
+
+### 2.2 Trading Sessions / Hours
+
+All times are in China Standard Time (CST, UTC+8). CFFEX does not offer after-hours trading.
+
+#### Stock Index Futures & Options (IF, IH, IC, IM, IO, MO, HO)
+
+| Session | Time (CST) | Time (UTC) |
+|---------|-----------|------------|
+| Morning Session | 9:30 AM -- 11:30 AM | 01:30 -- 03:30 |
+| Lunch Break | 11:30 AM -- 1:00 PM | 03:30 -- 05:00 |
+| Afternoon Session | 1:00 PM -- 3:00 PM | 05:00 -- 07:00 |
+
+#### Government Bond Futures (TS, TF, T, TL)
+
+| Session | Time (CST) | Time (UTC) |
+|---------|-----------|------------|
+| Morning Session | 9:30 AM -- 11:30 AM | 01:30 -- 03:30 |
+| Lunch Break | 11:30 AM -- 1:00 PM | 03:30 -- 05:00 |
+| Afternoon Session | 1:00 PM -- 3:15 PM | 05:00 -- 07:15 |
+
+**Note:** CGB futures close 15 minutes later than index futures/options to align with the interbank bond market.
+
+[Source: TradingHours.com, "CCFX Market Hours", https://www.tradinghours.com/markets/ccfx, accessed 2026-04-07]
+[Source: CFFEX official website, accessed 2026-04-07]
+
+### 2.3 Membership Structure
+
+CFFEX employs a multi-tiered clearing system:
+
+| Member Type | Description |
+|-------------|-------------|
+| **Trading Member** | Can only trade; must clear through a clearing member |
+| **Trading & Clearing Member** | Can trade and clear its own trades |
+| **General Clearing Member** | Can trade, clear its own trades, and clear for trading members |
+| **Special Clearing Member** | Banks or other financial institutions that do not trade but provide clearing services for trading members |
+
+[Source: CFFEX, "System", http://www.cffex.com.cn/en_new/System/, accessed 2026-04-07]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Order Matching
+
+- **Matching algorithm:** Price priority, time priority
+- All trades are conducted via CFFEX's electronic trading system and are automatically matched
+- No floor trading or open outcry
+
+### 3.2 Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Limit Order** | Specifies a maximum buy or minimum sell price |
+| **Market Order** | Executes at best available price; converted to limit order if not immediately filled |
+
+### 3.3 Settlement
+
+- **Daily mark-to-market:** CFFEX performs daily settlement using the daily settlement price to clear all contracts for profits/losses, trading margin, fees, and taxes
+- **Index Futures:** Cash settled at the arithmetic average of the underlying index during the last two hours of trading on the last trading day
+- **CGB Futures:** Physical delivery of eligible government bonds
+
+### 3.4 Last Trading Day
+
+- **Stock Index Futures/Options:** Third Friday of the expiry month (postponed to next business day if on a public holiday)
+- **CGB Futures:** Second Friday of the delivery month
+
+### 3.5 Contract Months
+
+- **Stock Index Futures:** Current month, next month, and next two quarterly months (4 contracts listed at a time)
+- **CGB Futures:** Three consecutive quarterly months (March, June, September, December cycle)
+
+[Source: CFFEX, "CSI 300 Index Futures", http://www.cffex.com.cn/en_new/CSI300IndexFutures.html, accessed 2026-04-07]
+[Source: CFFEX, "System", http://www.cffex.com.cn/en_new/System/, accessed 2026-04-07]
+
+---
+
+## 5. Trading System
+
+### 5.1 Platform Overview
+
+CFFEX operates a fully electronic trading platform with no floor trading. Key characteristics:
+
+- **Order matching:** Automatic matching based on price priority and time priority
+- **Architecture:** Centralized matching engine processing all orders sequentially
+- **Data dissemination:** Real-time market data distribution to members and authorized data vendors
+- **System reliability:** Designed for high availability with disaster recovery capabilities
+
+### 5.2 Clearing & Settlement System
+
+- **Central Counterparty (CCP):** CFFEX itself acts as the central counterparty for all trades
+- **Multi-tiered clearing:** Risk is distributed through the tiered membership structure (trading members, trading & clearing members, general clearing members, special clearing members)
+- **Daily settlement:** Mark-to-market performed at each day's close using the daily settlement price
+- **Margin management:** Real-time monitoring of margin levels; margin calls issued when accounts fall below maintenance levels
+- **Settlement banks:** Major Chinese commercial banks serve as designated settlement banks
+
+### 5.3 PFMI Compliance
+
+CFFEX has published its compliance with the Principles for Financial Market Infrastructures (PFMI) issued by CPMI-IOSCO.
+
+[Source: CFFEX, "Principles for Financial Market Infrastructures", http://www.cffex.com.cn/u/cms/www/202305/311459055ti6.pdf, accessed 2026-04-07]
+[Source: CFFEX, "System", http://www.cffex.com.cn/en_new/System/, accessed 2026-04-07]
+
+---
+
+## 8. Risk Controls
+
+### 8.1 Daily Price Limits
+
+| Product | Daily Price Limit |
+|---------|------------------|
+| Stock Index Futures (IF, IH, IC, IM) | ±10% of previous settlement price |
+| CGB Futures (TS -- 2Y) | ±0.5% of previous settlement price |
+| CGB Futures (TF -- 5Y) | ±1.2% of previous settlement price |
+| CGB Futures (T -- 10Y) | ±2% of previous settlement price |
+| CGB Futures (TL -- 30Y) | ±3.5% of previous settlement price |
+| Stock Index Options (IO, MO, HO) | Based on underlying index futures price limits |
+
+**Note:** CGB futures price limits are narrower than equity index futures, reflecting lower volatility in the bond market. The price limits widen for longer-duration contracts.
+
+[Source: CFFEX, contract specifications pages, accessed 2026-04-07]
+[Source: CFFEX, "30-Year CGB Futures Contract Specifications", http://www.cffex.com.cn/en_new/30yearCGBFutures.html, accessed 2026-04-07]
+
+### 8.2 Position Limits
+
+CFFEX enforces strict position limits, particularly for stock index futures. These limits were dramatically tightened during the 2015 crisis and have been gradually relaxed since.
+
+#### Current Position Limits (Post-Relaxation)
+
+| Product | Client Position Limit (Single Contract) | Daily Opening Limit (Non-Hedging) |
+|---------|----------------------------------------|-----------------------------------|
+| CSI 300 Futures (IF) | 5,000 lots (unilateral) | 500 lots/day [unverified -- subject to periodic adjustment] |
+| SSE 50 Futures (IH) | 5,000 lots (unilateral) | 500 lots/day [unverified] |
+| CSI 500 Futures (IC) | 5,000 lots (unilateral) | 500 lots/day [unverified] |
+| CSI 1000 Futures (IM) | 1,200 lots (unilateral) | 500 lots/day [unverified] |
+| CGB Futures (each) | 6,000 lots (all contracts combined) | Varies by contract |
+
+**Hedging exemptions:** Members or clients requiring stock index futures for hedging purposes may apply to CFFEX for exemption from position limits. CFFEX decides whether to approve based on supporting documentation and market conditions.
+
+#### 2015 Crisis Restrictions vs. Gradual Normalization
+
+| Measure | Pre-Crisis (before Aug 2015) | Crisis Peak (Sep 2015) | Feb 2017 | Sep 2017 | Dec 2018 | Post-2019 |
+|---------|------------------------------|----------------------|----------|----------|----------|-----------|
+| Daily opening limit (non-hedging) | ~600 lots | 10 lots | 20 lots | 20 lots | 50 lots | Gradually increased |
+| Margin (IF/IH, non-hedging) | ~10% | 40% | 20% | 15% | 10% | ~10-12% |
+| Margin (IC, non-hedging) | ~10% | 40% | ~30% | ~30% | 15% | ~12-14% |
+| Intraday closing fee | ~1.15 bps | 23 bps | ~9.2 bps | 6.9 bps | 4.6 bps | ~3.45 bps |
+
+[Source: China Daily, "China eases restrictions on stock index futures trading", February 2017]
+[Source: Xinhua, "China eases curbs on stock-index futures trading", December 2018]
+[Source: FIA, "2019 shaping up to be a big year for Chinese equity index futures", 2019]
+[Source: CFFEX, "What Is Position Limit System?", http://www.cffex.com.cn/en_new/fxzs/20101124/15131.html, accessed 2026-04-07]
+
+### 8.3 Large Position Reporting
+
+CFFEX requires members and clients to report large positions when their holdings reach specified thresholds. Large position reporting applies to both stock index futures and CGB futures. CFFEX has issued specific "Implementing Guidance" for large position reporting for each product category.
+
+[Source: CFFEX, "Contract Rules", http://www.cffex.com.cn/en_new/fzhygz/, accessed 2026-04-07]
+
+### 8.4 Margin Framework
+
+CFFEX uses a percentage-of-contract-value margin system (not SPAN).
+
+#### Stock Index Futures -- Current Margin Rates
+
+| Product | Minimum Trading Margin | Typical Broker Margin |
+|---------|----------------------|----------------------|
+| CSI 300 Futures (IF) | 8% of contract value | ~12% |
+| SSE 50 Futures (IH) | 8% of contract value | ~12% |
+| CSI 500 Futures (IC) | 8% of contract value | ~14% |
+| CSI 1000 Futures (IM) | 8% of contract value | ~14% |
+
+#### CGB Futures -- Margin Rates
+
+| Product | Trading Margin | Pre-Delivery Margin |
+|---------|---------------|---------------------|
+| 2-year CGB (TS) | 0.5% of contract value | Raised before delivery month |
+| 5-year CGB (TF) | 1.0% of contract value | Raised before delivery month |
+| 10-year CGB (T) | 2.0% of contract value | Raised before delivery month |
+| 30-year CGB (TL) | 3.5% of contract value | 5.0% from 2nd trading day before delivery month |
+
+**Cross-margin netting:** For long and short positions under the same client number through the same member, in the same or different CGB futures products, margin is collected only from the side requiring the larger amount.
+
+[Source: CFFEX, "CSI 300 Index Futures", accessed 2026-04-07]
+[Source: CFFEX, "30-Year CGB Futures Listing Notice", http://www.cffex.com.cn/en_new/Notices/20230414/32103.html, accessed 2026-04-07]
+[Source: Orient Futures Singapore, "CFFEX Stock Index Futures (QFI)", https://www.orientfutures.com.sg/post-detail/CFFEX-Stock-Index-Futures-(QFI), accessed 2026-04-07]
+
+### 8.5 Other Risk Measures
+
+- **Forced liquidation:** CFFEX may force liquidation of positions when a member's margin falls below required levels
+- **Self-regulatory enforcement:** CFFEX regularly publishes circulars on disciplinary actions against members and clients violating trading rules (e.g., exceeding position limits, abnormal trading behavior)
+- **Circuit breakers:** While CFFEX uses daily price limits, China's broader market experimented with circuit breakers in January 2016 (triggered twice in one week) before suspending the mechanism
+
+[Source: CFFEX, "Circulars", http://www.cffex.com.cn/en_new/Circulars/20251212/46400.html, accessed 2026-04-07]
+[Source: Mondovisione, "Circular On Self-Regulatory Measures Taken By CFFEX", various months 2025]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Primary Regulator
+
+**China Securities Regulatory Commission (CSRC)** is the primary regulatory authority overseeing CFFEX. CFFEX was established with State Council approval and CSRC authorization.
+
+### 9.2 Legal Framework
+
+| Regulation | Description |
+|-----------|-------------|
+| **Regulations on the Administration of Futures Trading** | State Council regulation providing the overarching legal basis for futures trading in China |
+| **Measures for the Administration of Futures Exchanges** | CSRC regulation governing the establishment and operation of futures exchanges |
+| **CFFEX Trading Rules** | Exchange-level rules governing trading, clearing, delivery, and risk management |
+| **CFFEX Detailed Trading Rules** | Product-specific rules for each contract type |
+
+### 9.3 Self-Regulatory Functions
+
+CFFEX performs self-regulatory duties including:
+- Formulating and enforcing trading rules
+- Monitoring trading activity for abnormal behavior
+- Investigating and disciplining violations
+- Publishing monthly circulars on self-regulatory measures taken
+- Conducting investor education
+
+### 9.4 Market Access
+
+- **Domestic participants:** Futures companies licensed by CSRC serve as intermediaries; individuals and institutions trade through these futures companies
+- **Foreign access:** Qualified Foreign Institutional Investors (QFII) and RMB Qualified Foreign Institutional Investors (RQFII) may participate in CFFEX products, subject to CSRC approval and position limits
+- **QFI (Qualified Foreign Investors) scheme:** Since 2020 reforms (merging QFII and RQFII), foreign investors have broader access to CFFEX products for hedging purposes
+
+[Source: CFFEX, "Contract Rules", http://www.cffex.com.cn/en_new/fzhygz/, accessed 2026-04-07]
+[Source: China Law Insight, "A new chapter for (R)QFIIs", https://www.chinalawinsight.com/2020/10/articles/foreign-investment/a-new-chapter-for-rqfiis-more-than-meets-the-eyes/, accessed 2026-04-07]
+
+---
+
+## Product Catalog
+
+### Stock Index Futures
+
+| Code | Product | Underlying Index | Launch Date |
+|------|---------|-----------------|-------------|
+| IF | CSI 300 Index Futures | CSI 300 (沪深300) | 2010-04-16 |
+| IH | SSE 50 Index Futures | SSE 50 (上证50) | 2015-04-16 |
+| IC | CSI 500 Index Futures | CSI 500 (中证500) | 2015-04-16 |
+| IM | CSI 1000 Index Futures | CSI 1000 (中证1000) | 2022-07-22 |
+
+### Government Bond (CGB) Futures
+
+| Code | Product | Underlying | Launch Date |
+|------|---------|-----------|-------------|
+| TS | 2-year CGB Futures | Notional 2-year CGB | 2018-08-17 |
+| TF | 5-year CGB Futures | Notional 5-year CGB | 2013-09-06 |
+| T | 10-year CGB Futures | Notional 10-year CGB | 2015-03-20 |
+| TL | 30-year CGB Futures | Notional 30-year CGB | 2023-04-21 |
+
+### Stock Index Options
+
+| Code | Product | Underlying | Style | Launch Date |
+|------|---------|-----------|-------|-------------|
+| IO | CSI 300 Index Options | CSI 300 Index | European | 2019-12-23 |
+| MO | CSI 1000 Index Options | CSI 1000 Index | European | 2022-07-22 |
+| HO | SSE 50 Index Options | SSE 50 Index | European | 2022-12-19 |
+
+[Source: CFFEX official website, product pages, accessed 2026-04-07]
+[Source: Wikipedia, "China Financial Futures Exchange", accessed 2026-04-07]
+
+---
+
+## Contract Specifications
+
+### Stock Index Futures
+
+| Specification | CSI 300 (IF) | SSE 50 (IH) | CSI 500 (IC) | CSI 1000 (IM) |
+|--------------|-------------|-------------|-------------|--------------|
+| Contract Multiplier | RMB 300 per point | RMB 300 per point | RMB 200 per point | RMB 200 per point |
+| Tick Size | 0.2 index points | 0.2 index points | 0.2 index points | 0.2 index points |
+| Tick Value | RMB 60 | RMB 60 | RMB 40 | RMB 40 |
+| Daily Price Limit | ±10% | ±10% | ±10% | ±10% |
+| Contract Months | Current, next, + 2 quarterlies | Current, next, + 2 quarterlies | Current, next, + 2 quarterlies | Current, next, + 2 quarterlies |
+| Last Trading Day | 3rd Friday of expiry month | 3rd Friday of expiry month | 3rd Friday of expiry month | 3rd Friday of expiry month |
+| Settlement | Cash | Cash | Cash | Cash |
+| Final Settlement Price | Arithmetic average of underlying index in last 2 hours | Arithmetic average of underlying index in last 2 hours | Arithmetic average of underlying index in last 2 hours | Arithmetic average of underlying index in last 2 hours |
+| Minimum Trading Margin | 8% | 8% | 8% | 8% |
+| Trading Hours | 9:30-11:30, 13:00-15:00 | 9:30-11:30, 13:00-15:00 | 9:30-11:30, 13:00-15:00 | 9:30-11:30, 13:00-15:00 |
+
+### Government Bond (CGB) Futures
+
+| Specification | 2-year (TS) | 5-year (TF) | 10-year (T) | 30-year (TL) |
+|--------------|------------|------------|-------------|-------------|
+| Underlying | Notional 2Y CGB, 3% coupon | Notional 5Y CGB, 3% coupon | Notional 10Y CGB, 3% coupon | Notional 30Y CGB, 3% coupon |
+| Face Value | RMB 2,000,000 | RMB 1,000,000 | RMB 1,000,000 | RMB 1,000,000 |
+| Quotation | Per RMB 100 face value | Per RMB 100 face value | Per RMB 100 face value | Per RMB 100 face value |
+| Tick Size | RMB 0.002 | RMB 0.005 | RMB 0.005 | RMB 0.01 |
+| Tick Value | RMB 40 | RMB 50 | RMB 50 | RMB 100 |
+| Daily Price Limit | ±0.5% | ±1.2% | ±2.0% | ±3.5% |
+| Contract Months | 3 consecutive quarterlies (Mar/Jun/Sep/Dec) | 3 consecutive quarterlies | 3 consecutive quarterlies | 3 consecutive quarterlies |
+| Last Trading Day | 2nd Friday of delivery month | 2nd Friday of delivery month | 2nd Friday of delivery month | 2nd Friday of delivery month |
+| Settlement | Physical delivery | Physical delivery | Physical delivery | Physical delivery |
+| Delivery Method | Delivery of eligible CGBs via conversion factor | Delivery of eligible CGBs via conversion factor | Delivery of eligible CGBs via conversion factor | Delivery of eligible CGBs via conversion factor |
+| Minimum Trading Margin | 0.5% | 1.0% | 2.0% | 3.5% |
+| Trading Hours | 9:30-11:30, 13:00-15:15 | 9:30-11:30, 13:00-15:15 | 9:30-11:30, 13:00-15:15 | 9:30-11:30, 13:00-15:15 |
+
+**Deliverable bond criteria:** CGBs issued by the Ministry of Finance of the PRC, with remaining maturity within the specified range for each contract, are eligible for delivery.
+
+### Stock Index Options
+
+| Specification | CSI 300 Options (IO) | CSI 1000 Options (MO) | SSE 50 Options (HO) |
+|--------------|---------------------|----------------------|---------------------|
+| Contract Multiplier | RMB 100 per point | RMB 100 per point | RMB 100 per point |
+| Option Style | European | European | European |
+| Exercise | Cash settled | Cash settled | Cash settled |
+| Strike Price Interval | Varies by index level | Varies by index level | Varies by index level |
+| Expiry Months | Current, next 2 months, + next 3 quarterlies | Current, next 2 months, + next 3 quarterlies | Current, next 2 months, + next 3 quarterlies |
+| Last Trading Day | 3rd Friday of expiry month | 3rd Friday of expiry month | 3rd Friday of expiry month |
+| Trading Hours | 9:30-11:30, 13:00-15:00 | 9:30-11:30, 13:00-15:00 | 9:30-11:30, 13:00-15:00 |
+
+[Source: CFFEX, "CSI 300 Index Futures", http://www.cffex.com.cn/en_new/CSI300IndexFutures.html, accessed 2026-04-07]
+[Source: CFFEX, "CSI 500 Index Futures", http://www.cffex.com.cn/en_new/CSI500IndexFutures.html, accessed 2026-04-07]
+[Source: CFFEX, "CSI 1000 Index Futures", http://www.cffex.com.cn/en_new/CSI1000IndexFutures.html, accessed 2026-04-07]
+[Source: CFFEX, "10-year CGB Futures", http://www.cffex.com.cn/en_new/10t.html, accessed 2026-04-07]
+[Source: CFFEX, "2-year CGB Futures", http://www.cffex.com.cn/en_new/2ts.html, accessed 2026-04-07]
+[Source: CFFEX, "30-year CGB Futures", http://www.cffex.com.cn/en_new/30yearCGBFutures.html, accessed 2026-04-07]
+[Source: CFFEX, "CSI 300 Index Options", http://www.cffex.com.cn/en_new/CSI300IndexOptions.html, accessed 2026-04-07]
+[Source: CFFEX, "CSI 1000 Index Options", http://www.cffex.com.cn/en_new/CSI1000IndexOptions.html, accessed 2026-04-07]
+[Source: CFFEX, "SSE 50 Index Options", http://www.cffex.com.cn/en_new/SSE50IndexOptions.html, accessed 2026-04-07]
+[Source: Barchart, CFFEX contract specifications pages, accessed 2026-04-07]
+[Source: CFFEX, "Notice on Adjusting the Tick Size of 2-Year CGB Futures", http://cffex.com.cn/en_new/Notices/20231020/34775.html, accessed 2026-04-07]
+
+---
+
+## Margin Framework Summary
+
+CFFEX uses a **percentage-of-contract-value** margin methodology rather than a portfolio-based system like SPAN or PRISMA. Key features:
+
+1. **Exchange-set minimum margins** serve as the floor; futures companies (brokers) typically add a buffer of 2-6 percentage points above the exchange minimum
+2. **Margin escalation:** Margins are raised as contracts approach delivery/expiry
+3. **Cross-margining for CGB futures:** Offsetting long/short positions in the same or different CGB products under the same client can net margins
+4. **Regulatory adjustment:** CSRC and CFFEX retain the authority to adjust margin requirements in response to market conditions, as demonstrated during the 2015 crisis when margins were raised from ~10% to 40% for stock index futures
+5. **Variation margin:** Collected daily through mark-to-market settlement; settlement banks facilitate transfers between members and the exchange
+
+| Product Category | Exchange Minimum Margin | Typical Total (incl. broker add-on) |
+|-----------------|------------------------|-------------------------------------|
+| Stock Index Futures | 8% | 10-15% |
+| 2-year CGB Futures | 0.5% | 1-2% |
+| 5-year CGB Futures | 1.0% | 1.5-3% |
+| 10-year CGB Futures | 2.0% | 3-5% |
+| 30-year CGB Futures | 3.5% | 5-7% |
+
+[Source: CFFEX, contract specifications and trading rules, accessed 2026-04-07]
+[Source: Orient Futures Singapore, "CFFEX Stock Index Futures (QFI)", accessed 2026-04-07]

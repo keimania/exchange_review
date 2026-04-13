@@ -1,0 +1,306 @@
+# Clearing Corporation of India Limited (CCIL)
+
+> **최종 업데이트:** 2026-04-07
+> **조사 등급:** Tier 3 (개요)
+> **유형:** CCP (중앙청산소, Central Counterparty)
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 내용 |
+|------|------|
+| 정식 명칭 | The Clearing Corporation of India Limited |
+| 약칭 | CCIL |
+| 국가 / 도시 | 인도 / 뭄바이 |
+| 웹사이트 | [https://www.ccilindia.com](https://www.ccilindia.com) |
+| 설립연도 | 2001년 4월 설립; 2002년 2월 영업 개시 |
+| 소유 구조 | State Bank of India (SBI)가 주도하여 설립; 주주에는 주요 인도 은행, 프라이머리 딜러, 금융기관이 포함 [Source: [CCIL Promoters/Shareholders](https://www.ccilindia.com/promoters-stakeholders)] |
+| 납입우선주자본 | 50 crore 루피 (8.5% 상환비전환누적우선주 5 crore주) [Source: [CCIL Company Profile](https://www.ccilindia.com/companyprofile)] |
+| 순자산 | 5,903 crore 루피 (2024년 9월 30일 기준) [Source: [ICRA Rating Report Feb 2025](https://www.icra.in/Rating/ShowRationalReportFilePdf/132928)] |
+| 감독기관 | 인도중앙은행 (RBI, Reserve Bank of India) -- 2007년 지급결제시스템법에 따라 인가 |
+| QCCP 지위 | 예 -- PFMI 기준 준수를 근거로 RBI가 2014년 부여 [Source: [Global Custodian](https://www.globalcustodian.com/clearing-corporation-of-india-receives-qccp-status/)] |
+| PFMI 준수 | 2013년 7월 RBI에 의해 핵심 금융시장인프라(FMI)로 지정; PFMI 정성적·정량적 공시 발행 [Source: [CCIL PFMI Disclosures](https://www.ccilindia.com/documents/d/ccil/PFMI%20Qualitative%20Disclosures%2031st%20Mar%202024%20FINAL_290624-pdf)] |
+| 신용등급 | AAA (안정적), ICRA 및 CARE 부여 [Source: [CARE Rating Mar 2025](https://www.careratings.com/upload/CompanyFiles/PR/202503120310_The_Clearing_Corporation_of_India_Limited.pdf)] |
+| 자회사 | ClearCorp Dealing Systems (India) Ltd. -- 거래 플랫폼 (NDS-OM, TREPS, FX-CLEAR 등) 개발 및 운영 |
+
+> **KRX/KSD 비교:** CCIL은 채권, 외환, 단기금융시장에 특화된 CCP로서, 주식이나 거래소 상장 파생상품은 청산하지 않는다. 이는 모든 거래소 상장 상품(주식, 파생상품)의 CCP 역할을 수행하는 KRX와 대조적이다. 인도의 주식 청산은 NSCCL (NSE), ICCL (BSE), MCX-CCL (상품파생상품)이 각각 별도로 처리한다.
+
+### 주요 연혁 (Key Historical Milestones)
+
+| 연도 | 사건 |
+|------|------|
+| 2001 (4월) | CCIL 설립; SBI 및 주요 인도 은행이 주도 |
+| 2002 (2월) | 국채 거래의 청산 및 결제 업무 개시 |
+| 2002 (11월) | 외환 청산 부문 개시 (USD/INR 은행간 현물 및 선도 거래) |
+| 2003 | RBI의 RTGS 시스템을 통한 자금결제를 위해 INFINET 회원 자격 취득 |
+| 2004 | 담보부차입대출채무(CBLO) 부문 개시 |
+| 2005 | 루피 파생상품(IRS/FRA) 청산 개시 |
+| 2007 | 2007년 지급결제시스템법에 따라 결제시스템으로 인가 |
+| 2008 | CDS 부문 및 외환 선도/스왑 청산 도입 |
+| 2013 (7월) | RBI에 의해 PFMI 체계에 따른 감독 대상 핵심 FMI로 지정 |
+| 2014 | RBI로부터 적격중앙청산소(QCCP) 지위 부여 [Source: [MarketScreener](https://www.marketscreener.com/news/latest/Reserve-Bank-of-India-RBI-grants-Qualified-Central-Counterparty-Status-to-CCIL-17740350/)] |
+| 2018 (11월) | TREPS(삼자간 레포)가 CBLO를 대체하여 주요 단기금융시장 상품으로 전환 |
+| 2022 (10월) | ESMA (유럽증권시장감독청), RBI와의 협력 약정 부재를 이유로 CCIL(및 5개 기타 인도 CCP)의 EMIR 인정 거부 [Source: [ESMA](https://www.esma.europa.eu/press-news/esma-news/esma-withdraw-recognition-decisions-six-indian-ccps)] |
+| 2023 (4월) | ESMA 인정 취소 발효 -- 유럽 은행들의 CCIL 익스포저에 대한 자본부과 증가 |
+| 2026 | ESMA-RBI MoU 체결, CCIL의 EMIR 인정 재신청 가능 [Source: [Angel One](https://www.angelone.in/news/market-updates/rbi-esma-new-agreement-enables-ccil-to-seek-european-recognition-again)] |
+
+---
+
+## 2. 청산 모델 (Clearing Model)
+
+### 2.1 CCP 서비스 (CCP Services)
+
+CCIL은 다수의 시장 부문에서 각기 다른 청산 메커니즘으로 운영된다:
+
+| 부문 | 상품 | 결제주기 | 개시 |
+|------|------|---------|------|
+| **국채 (G-Sec)** | 국채, 재무부증권(T-Bills), 주정부개발대출, 국가금투자채권 | T+1 (아웃라이트); T+0~T+2 (레포) | 2002 |
+| **TREPS (삼자간 레포)** | 담보부 단기금융시장 차입/대출 (2018년 CBLO 대체) | T+0~T+1 | 2018 |
+| **외환 결제** | USD/INR 현물, 당일물, 익일물; 은행간 외환거래 | T+0 / T+1 / T+2 (현물) | 2002 |
+| **외환 선도** | USD/INR 선도, 스왑 | 계약 만기별 | 2008 |
+| **루피 파생상품** | OTC 이자율스왑(IRS) 및 선도금리계약(FRA), MIBOR, MIOIS, MIFOR, Modified MIFOR 기준; 최대 10년 만기 | 계약 만기별 | 2005 |
+| **CDS** | 신용부도스왑 [unverified -- 제한적 활동] | 계약 조건별 | 2008 |
+
+[Source: [CCIL Company Profile](https://www.ccilindia.com/companyprofile); [NISM - Role of CCIL](https://www.nism.ac.in/revamp-nism/blog/strengthening-indias-financial-backbone-the-vital-role-of-ccil-in-money-forex-and-bond-markets/)]
+
+**거래량 비중 (대략적 FY2022 기준):**
+- TREPS: 총 거래대금의 약 40%
+- 국채: 약 30%
+- 외환: 약 30%
+
+[Source: [ICRA Rating Report](https://www.icra.in/Rating/GetRationalReportFilePdf?id=110916)]
+
+### 2.3 차감 (Netting)
+
+CCIL은 부문별로 상이한 차감 메커니즘을 적용한다:
+
+| 부문 | 차감 방식 |
+|------|----------|
+| **국채 (아웃라이트)** | 다자간차감 -- 동일 결제일의 모든 거래를 차감하여 회원별·종목별 단일 순의무 산출 |
+| **TREPS** | 아웃라이트 및 시장레포 거래와 함께 자금의 다자간차감 |
+| **외환 (현물)** | USD와 INR 레그를 각각 다자간차감; 회원별 순 USD 및 순 INR 포지션 산출 |
+| **루피 파생상품** | 현금흐름의 양자간 차감; 거래 수락 시 채무인수(novation) |
+
+- 보증결제가 적용되는 모든 부문에서, CCIL은 **채무인수(novation)**를 통해 CCP로 개입 -- 원래의 양자간 거래가 CCIL과 각 거래상대방 간의 2건의 계약으로 대체
+- 차감은 결제 익스포저를 크게 감소시킨다; 외환 부문에서 차감 효율은 일반적으로 총의무의 80-90%를 감소시킨다 [unverified]
+
+[Source: [CCIL Securities Settlement FAQ](https://www.ccilindia.com/faqmodulesecurity-settlement); [CCIL Forex Settlement](https://www.ccilindia.com/usd/inr-settlement1)]
+
+### 2.4 청산 회원 자격 (Clearing Membership)
+
+CCIL은 부문별 회원 자격을 운영한다:
+
+| 회원 유형 | 적격 기관 |
+|----------|----------|
+| **국채 부문** | 지정상업은행, 프라이머리 딜러, 보험사, 연기금, 뮤추얼펀드, FPI |
+| **외환 부문** | 인가 딜러 은행 (AD Category I) |
+| **루피 파생상품** | 시장조성자(지정은행, 독립 프라이머리 딜러, AIFI); 비소매 기관; 소매 기관(기업, FPI) |
+| **TREPS** | 은행, 프라이머리 딜러, 뮤추얼펀드, 보험사, 기업 |
+
+- 모든 회원은 최소 순자산 요건을 충족하고 공동기금(Default Fund)에 출연해야 함
+- 회원은 증거금 및 결제 목적으로 CCIL에 적정 담보를 유지해야 함
+- 2023년 11월부터 증권 부문 SGF 담보 출연이 **부문 비구분(segment-agnostic)** (공통 풀)으로 전환
+
+[Source: [CCIL Rupee Derivatives](https://www.ccilindia.com/rmd-rupee-derivative); [CCIL Collateral Management](https://www.ccilindia.com/collateralmngmtintroduction5)]
+
+---
+
+## 3. 리스크 관리 (Risk Management)
+
+### 3.1 증거금 체계 (Margin Framework)
+
+CCIL은 모든 부문에 걸쳐 포괄적 증거금 체계를 적용한다:
+
+| 증거금 유형 | 설명 |
+|------------|------|
+| **개시증거금 (Initial Margin, IM)** | 잠재적 미래 익스포저(PFE) 보전; 99% 신뢰수준 및 적정 관측기간/보유기간의 VaR 기반 모델로 산출 |
+| **시가평가증거금 (Mark-to-Market Margin)** | 미결제 포지션의 일일(또는 일중) 재평가 기반 현재 익스포저 보전 |
+| **변동성증거금 (Volatility Margin)** | 시장 변동성 확대 기간 중 추가 부과 |
+| **집중도증거금 (Concentration Margin)** | 회원의 포지션이 시장 대비 불균형적으로 큰 경우 부과 |
+| **스프레드증거금 (Spread Margin)** | 루피 파생상품 부문의 스프레드 포지션에 적용 |
+
+[Source: [CCIL Risk Management Introduction](https://www.ccilindia.com/service-risk-management-introduction7)]
+
+**적격 담보 유형:**
+- 현금 (INR 및 USD, 부문별 상이)
+- 인도 정부 증권 및 재무부증권(Treasury Bills)
+- 2023년 11월부터 부문 비구분 공통 풀에 담보 제공 가능
+
+> **KRX 비교:** KRX는 파생상품에 SPAN 기반, 주식에 VaR 기반 증거금 시스템을 사용하며, 유사한 증거금 유형(개시증거금, 변동증거금, 추가증거금)을 적용한다. CCIL의 부문별 증거금 모델은 장외/도매 시장의 특성을 반영하는 반면, KRX의 모델은 거래소 상장 소매/기관 시장용으로 설계되었다.
+
+### 3.3 손실부담순서 (Default Waterfall)
+
+CCIL은 회원 불이행 손실을 흡수하기 위한 손실부담순서 구조를 유지한다:
+
+| 순위 | 재원 | 규모 (대략) |
+|------|------|------------|
+| 1 | **불이행 회원의 증거금** (IM, MTM, 변동성증거금) | 회원별 상이 |
+| 2 | **불이행 회원의 공동기금 출연분** | 회원별 상이 |
+| 3 | **CCIL 자기자본 -- "CCP 자기자본 출연분"** (Settlement Reserve Fund, SRF) | 2,600 crore 루피 (2024년 3월 31일 기준) |
+| 4 | **비불이행 회원의 공동기금 출연분** (손실 상호부담) | 총 공동기금 11,928 crore 루피의 일부 (2024년 9월 30일 기준) |
+| 5 | **생존 회원에 대한 추가분담금 부과** | CCIL 정관, 규칙 및 규정에 따름 |
+
+[Source: [CCIL PFMI Qualitative Disclosures Mar 2024](https://www.ccilindia.com/documents/d/ccil/PFMI%20Qualitative%20Disclosures%2031st%20Mar%202024%20FINAL_290624-pdf); [ICRA Rating Report Feb 2025](https://www.icra.in/Rating/ShowRationalReportFilePdf/132928)]
+
+**공동기금 구조 (Default Fund Structure):**
+- CCIL은 부문별로 **6개의 별도 공동기금** 유지
+- 총 공동기금: 11,928 crore 루피 (2024년 9월 30일 기준)
+- 회원은 현금 및 적격 인도 정부 증권 / 재무부증권으로 출연
+- 공동기금 적정성에 대해 정기적 스트레스 테스트 실시
+
+[Source: [CCIL Default Fund](https://www.ccilindia.com/web/ccil/default-fund)]
+
+> **KRX 비교:** KRX의 손실부담순서도 동일하게 불이행자 증거금 -> 불이행자 청산기금 출연분 -> KRX 자기자본 -> 비불이행 회원 청산기금 출연분 순서를 따른다. CCIL의 SRF 2,600 crore 루피(약 3억 1,000만 USD)의 CCP 자기자본 출연분은 신흥시장 CCP로서 상당한 규모이다. KRX의 손해배상공동기금도 유사한 상호부담 원칙을 따른다.
+
+### 3.6 회복 및 정리 (Recovery & Resolution)
+
+- CCIL은 2013년 7월부터 RBI에 의해 **핵심 금융시장인프라(FMI)**로 지정
+- RBI가 2007년 지급결제시스템법에 따라 감독 및 정리당국 역할 수행
+- CCIL의 회복 수단:
+  - 회원에 대한 추가자금 요구 / 추가분담금 부과
+  - 부분결제 / 결제 지연
+  - 생존 회원에 대한 손실 배분
+  - 자발적 포지션 해소(tear-up) [unverified]
+- 인도는 EU CCPRRR이나 미국 OLA에 상응하는 전용 CCP 정리 체계를 아직 보유하고 있지 않으나, RBI의 감독 체계가 사실상의 정리 권한을 제공 [unverified]
+- CCIL의 시스템적 중요성을 감안하여, 심각한 스트레스 상황에서 RBI가 직접 개입할 가능성이 높음
+
+---
+
+## 4. 결제 (Settlement)
+
+### 4.1 결제주기 (Settlement Cycle)
+
+| 부문 | 표준 주기 | 결제 방식 |
+|------|----------|----------|
+| 국채 (아웃라이트, NDS-OM) | T+1 | RBI RTGS를 통한 DVP |
+| 국채 (시장레포) | T+0~T+1 (첫 레그); 다양 (두번째 레그) | DVP |
+| TREPS | T+0 (당일); T+1 | 순액결제 |
+| 외환 현물 | T+2 | PvP (지급 대 지급) |
+| 외환 당일물 | T+0 | PvP |
+| 외환 익일물 | T+1 | PvP |
+| 외환 선도/스왑 | 계약 만기별 | 순액결제 |
+| 루피 파생상품 (IRS) | 현금흐름 발생일별 | 정기 현금흐름의 순액결제 |
+
+[Source: [CCIL Securities Settlement FAQ](https://www.ccilindia.com/faqmodulesecurity-settlement); [CCIL Forex Settlement](https://www.ccilindia.com/usd/inr-settlement1)]
+
+### 4.2 DVP 모델 (DVP Model)
+
+**국채:**
+- CCIL은 비차감 거래에 **DVP Model 1** (증권 건별 대 대금 건별), 차감 거래에 **DVP Model 3** (증권 순액 대 대금 순액)을 RBI의 RTGS 시스템을 통해 적용
+- 증권 레그는 RBI의 증권결제시스템(SSS) / 공채관리실(PDO)을 통해 결제
+- 대금 레그는 RBI의 실시간총액결제(RTGS) 시스템을 통해 결제
+- 양 레그가 RBI 시스템을 통해 완료되면 결제완결성 달성
+
+**외환 결제:**
+- USD/INR 결제에 **PvP (지급 대 지급, Payment versus Payment)** 메커니즘 사용
+- INR 레그는 RBI의 RTGS를 통해 결제
+- USD 레그는 지정 결제은행의 CCIL USD 결제계좌를 통해 결제
+- 결제 전 USD와 INR 의무를 각각 별도로 차감
+
+[Source: [CCIL PFMI Qualitative Disclosures](https://www.ccilindia.com/documents/d/ccil/PFMI%20Qualitative%20Disclosures%2031st%20Mar%202024%20FINAL_290624-pdf); [CCIL Guaranteed Settlement](https://www.ccilindia.com/web/ccil/guranteed-settlement)]
+
+> **KRX/KSD 비교:** KSD는 BOK-Wire+를 통해 주식 결제에 DVP Model 3 (순액/순액)을 사용한다. CCIL의 국채 건별결제에 대한 DVP Model 1 사용은 국채 거래의 도매·고액 성격을 반영하며, TREPS 및 외환의 차감결제는 KSD의 주식 접근 방식과 개념적으로 유사하다.
+
+---
+
+## 5. 기술 및 인프라 (Technology & Infrastructure)
+
+| 플랫폼 / 시스템 | 설명 | 운영 주체 |
+|----------------|------|----------|
+| **NDS-OM** (Negotiated Dealing System - Order Matching) | RBI 소유의 국채 익명 전자거래 플랫폼; OTC 거래 보고에도 사용 | ClearCorp (CCIL 자회사) |
+| **NDS-CALL** | 콜, 통지 및 기한부 단기금융시장 전자 딜링 플랫폼 | ClearCorp |
+| **FX-CLEAR** | 은행간 외환거래 전자 딜링 플랫폼 | ClearCorp |
+| **FX-SWAP** | 외환스왑 거래 플랫폼 | ClearCorp |
+| **TREPS** (Tri-Party Repo Dealing System) | CBLO 플랫폼 대체; 담보부 차입 및 대출 지원 | ClearCorp |
+| **ASTROID** | Automated System for Tendering, Reporting, Operations, Information and Data Dissemination -- 국채 발행입찰 시스템 | ClearCorp |
+| **SARVAM** | Service for Analysis of Risk, Valuation and Margining -- 비중앙청산 파생상품(NCCD)에 대한 평가, 증거금 산출, 담보관리, 리스크 분석 서비스 제공 | CCIL |
+| **F-TRAC** | 채권 및 단기금융시장 상품에 대한 기준금리 및 평가 제공 | CCIL |
+
+[Source: [CCIL Company Profile](https://www.ccilindia.com/companyprofile); [ClearCorp Company Profile](https://www.clearcorp.co.in/web/clearcorp/company-profile)]
+
+> **참고:** ClearCorp Dealing Systems (India) Ltd.는 CCIL의 완전자회사로, 대부분의 거래 플랫폼을 개발·운영한다. 이러한 매매와 청산 인프라의 수직통합은 독특한 구조로, CCIL이 ClearCorp를 통해 인도 도매 금융시장의 매매체결부터 청산·결제까지 엔드투엔드 인프라를 제공한다는 것을 의미한다.
+
+---
+
+## 6. 규제 체계 (Regulatory Framework)
+
+| 측면 | 내용 |
+|------|------|
+| **주요 규제기관** | 인도중앙은행 (RBI) |
+| **주요 법규** | 2007년 지급결제시스템법; 2008년 RBI (지급결제시스템) 규정 |
+| **인가** | 2007년 지급결제시스템법에 따라 RBI에 의해 결제시스템으로 인가 |
+| **FMI 지정** | 2013년 7월 RBI에 의해 핵심 금융시장인프라로 지정 |
+| **PFMI 감독** | CPSS-IOSCO PFMI 체계로 감독; 정성적·정량적 공시 발행 |
+| **QCCP 지위** | PFMI 준수를 근거로 RBI가 부여 (2014) |
+| **ESMA 인정** | 2023년 4월 EMIR 제3국 인정 상실; 2026년 ESMA-RBI MoU 체결로 재신청 가능 |
+| **지배구조 규칙** | CCIL 정관, 규칙 및 규정(BRR)이 청산 운영, 회원 자격, 리스크 관리, 불이행 절차를 규율 |
+
+**ESMA 인정 취소 문제:**
+- 2022년 10월, ESMA는 RBI와의 협력 약정 부재를 이유로 EMIR 제25조에 따른 CCIL 인정을 거부
+- 핵심 쟁점은 CCIL에 대한 직접 감사 및 조사 권한을 요구하는 ESMA와 이를 주권 침해로 거부한 RBI 간의 갈등
+- 2023년 4월 인정 취소 발효, 유럽 은행들의 CCIL 익스포저에 대해 비QCCP 기준의 높은 자본부과 적용
+- 2026년 ESMA와 RBI가 MoU를 체결하여 교착 상태를 해결, CCIL의 EMIR 인정 재신청 가능
+
+[Source: [ESMA Press Release](https://www.esma.europa.eu/press-news/esma-news/esma-withdraw-recognition-decisions-six-indian-ccps); [ESMA-RBI MoU](https://www.esma.europa.eu/press-news/esma-news/esma-signs-memorandum-understanding-reserve-bank-india)]
+
+> **KRX 비교:** KRX는 여러 관할권에서 QCCP 인정을 보유하고 있다. CCIL-ESMA 사태는 CCP에 대한 국내 규제 주권과 국제 규제 협력 간의 긴장을 부각시켰다 -- 한국이 EU/미국 당국과 협력적 규제 관계를 유지하고 있어 KRX에는 크게 영향을 미치지 않는 문제이다.
+
+---
+
+## 7. 상호운용성 (Interoperability)
+
+| 체계 | 내용 |
+|------|------|
+| **RBI 시스템** | RBI의 RTGS (자금결제), SSS/PDO (증권결제), e-Kuber 핵심 뱅킹시스템과 긴밀히 통합 |
+| **CLS Bank** | 인도는 외환결제를 위한 CLS Bank 회원이 아님; CCIL의 PvP 메커니즘이 국내 대안으로 기능 |
+| **SWIFT** | 특정 은행간 통신에 SWIFT 메시징 사용 |
+| **국제 링크** | 직접적인 CCP 간 링크는 제한적; 크로스보더 참여는 주로 인도에서 영업하는 외국 은행 지점의 CCIL 회원 자격을 통해 이루어짐 |
+
+- CCIL은 타 CCP와의 상호운용 체계를 보유하고 있지 않음 (주식 청산을 위한 CCP 링크를 가진 유럽 CCP와 상이)
+- 해외 투자자(FPI 등)의 인도 국채 및 외환시장 참여는 CCIL 회원(수탁은행)을 통해 이루어지며, 직접적인 CCP 링크를 통하지 않음
+- ESMA-RBI MoU (2026)가 더 깊은 국제적 통합의 발판이 될 수 있음
+
+---
+
+## 9. 최근 동향 (Recent Developments)
+
+| 일자 | 동향 |
+|------|------|
+| 2023 (11월) | 증권 부문 SGF 담보를 부문 비구분(공통 풀)으로 전환 |
+| 2024 | CCIL, 2024년 12월 기준 PFMI 정량적 공시 발행 [Source: [CCIL PQD Dec 2024](https://www.ccilindia.com/documents/d/ccil/ccil-_pfmi-quantitative-disclosures_-key-risk-areas_dec-2024)] |
+| 2025 (9월) | 제39차 MIBOR IRS 포트폴리오 압축: 적격 30,855건 중 27,622건 종료 (89.4% 압축률) [Source: [CCIL Derivatives Quarterly Q2 FY26](https://www.ccilindia.com/documents/d/ccil/Derivatives%20Quarterly_Q2FY26.pdf)] |
+| 2025 | RBI, 모든 OTC 루피 금리 및 외화 파생상품에 대한 고유거래식별자(UTI) 의무화 제안 |
+| 2025 | 독립 프라이머리 딜러, 루피 관련 비인도 파생상품 계약을 위한 AD Category-III 인가 |
+| 2026 | ESMA-RBI MoU 체결 -- CCIL의 EMIR 인정 재신청 가능, 3년 이상의 인정 취소 분쟁 해결 |
+| 진행 중 | SARVAM 플랫폼 확장 -- NCCD 증거금 산출, 담보관리, 리스크 분석 서비스 |
+| 진행 중 | CCIL Factbook 2024-25 발행, 부문별 종합 데이터 수록 [Source: [CCIL Factbook 2024-25](https://www.ccilindia.com/documents/d/ccil/Clearing_Corporation_of_India_Limited%20Annual-pdf)] |
+
+**주요 동향:**
+- ESMA 인정 분쟁 해결로 유럽 은행의 CCIL 익스포저에 대한 QCCP 취급 복원 예상
+- OTC 파생상품 청산 범위의 지속적 확대 (IRS, FRA, 잠재적으로 FX 옵션)
+- 포트폴리오 압축을 통한 IRS 시장 미결제잔액 감소
+- SARVAM 플랫폼으로 비중앙청산 파생상품의 리스크 인프라 분야에서 CCIL 역할 확대
+- 인도 국채의 글로벌 채권 지수 편입(예: JP Morgan GBI-EM)으로 CCIL 청산 인프라를 통한 외국인 참여 증가
+
+---
+
+## 출처 (Sources)
+
+- [CCIL Official Website](https://www.ccilindia.com/)
+- [CCIL Company Profile / Introduction](https://www.ccilindia.com/companyprofile)
+- [CCIL Promoters / Shareholders](https://www.ccilindia.com/promoters-stakeholders)
+- [CCIL PFMI Qualitative Disclosures (March 2024)](https://www.ccilindia.com/documents/d/ccil/PFMI%20Qualitative%20Disclosures%2031st%20Mar%202024%20FINAL_290624-pdf)
+- [CCIL PFMI Quantitative Disclosures (December 2024)](https://www.ccilindia.com/documents/d/ccil/ccil-_pfmi-quantitative-disclosures_-key-risk-areas_dec-2024)
+- [CCIL Factbook 2024-25](https://www.ccilindia.com/documents/d/ccil/Clearing_Corporation_of_India_Limited%20Annual-pdf)
+- [CCIL Risk Management Introduction](https://www.ccilindia.com/service-risk-management-introduction7)
+- [CCIL Default Fund](https://www.ccilindia.com/web/ccil/default-fund)
+- [ClearCorp Company Profile](https://www.clearcorp.co.in/web/clearcorp/company-profile)
+- [CARE Rating Report (March 2025)](https://www.careratings.com/upload/CompanyFiles/PR/202503120310_The_Clearing_Corporation_of_India_Limited.pdf)
+- [ICRA Rating Report (February 2025)](https://www.icra.in/Rating/ShowRationalReportFilePdf/132928)
+- [ESMA - Indian CCPs Derecognition](https://www.esma.europa.eu/press-news/esma-news/esma-withdraw-recognition-decisions-six-indian-ccps)
+- [ESMA - MoU with RBI](https://www.esma.europa.eu/press-news/esma-news/esma-signs-memorandum-understanding-reserve-bank-india)
+- [Global Custodian - CCIL QCCP Status](https://www.globalcustodian.com/clearing-corporation-of-india-receives-qccp-status/)
+- [NISM - Role of CCIL in India's Markets](https://www.nism.ac.in/revamp-nism/blog/strengthening-indias-financial-backbone-the-vital-role-of-ccil-in-money-forex-and-bond-markets/)
+- [IMF FSAP India - CPMI-IOSCO Assessment (2013)](https://www.imf.org/external/pubs/ft/scr/2013/cr13268.pdf)
+- [World Bank FSAP India - PFMI Assessment (2017)](https://documents1.worldbank.org/curated/en/502811516303508722/pdf/India-CPMI-IOSCO-principles-for-financial-market-infrastructures.pdf)

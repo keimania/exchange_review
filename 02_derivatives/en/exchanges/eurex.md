@@ -1,0 +1,929 @@
+# Eurex
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 1
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Eurex Frankfurt AG (operates Eurex Deutschland and Eurex Zurich) |
+| Abbreviation | EUREX |
+| Website | https://www.eurex.com |
+| Year Established | 1998 (merger of DTB Deutsche Terminborse and SOFFEX) |
+| Country / City | Germany / Frankfurt am Main (Mergenthalerallee 61, 65760 Eschborn); also Zurich, Switzerland |
+| Ownership Structure | Wholly owned subsidiary of Deutsche Borse AG (publicly listed, ticker DB1); Deutsche Borse acquired SIX Group's remaining stake in Eurex Zurich AG in January 2012 |
+| Parent Company / Group | Deutsche Borse Group -- vertically integrated group encompassing Eurex (derivatives), Xetra (cash equities), Eurex Clearing (CCP), Clearstream (settlement/custody), EEX (energy), 360T (FX), STOXX/Qontigo (indices/analytics) |
+| Regulatory Authority | Bundesanstalt fur Finanzdienstleistungsaufsicht (BaFin) as primary regulator; Hessische Borsaufsicht (Exchange Supervisory Authority of Hesse); European Securities and Markets Authority (ESMA) for CCP supervision under EMIR; FINMA (Switzerland) for Eurex Zurich |
+| Annual Trading Volume (2025) | 2,065.9 million contracts (down 1% YoY); interest rate derivatives up 8%, equity derivatives down 1%, index derivatives down 11% |
+| Annual Trading Volume (2024) | 2,080.5 million contracts (up 9% YoY) |
+| OTC Clearing Notional Outstanding | EUR 33,411 billion (end-2024, up 12% YoY); average daily cleared volume EUR 280 billion (2025, up 35% from 2024) |
+| Eurex Repo Volume | EUR 406.1 billion average term-adjusted volume (2025, record year, up 20% YoY) |
+| Listed Instruments | 1,000+ futures and 700+ options across 19 countries; 900+ single stock futures; 500+ equity options |
+| Asset Classes | 9 asset classes: Interest Rate, Equity Index, Equity (Single Stock), Volatility, Dividend, FX, ETF/ETC, Commodity, Cryptocurrency |
+
+[Source: Eurex, "Full year and December 2025 figures at Eurex", January 2026, https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494]
+[Source: Eurex, "Full year and December 2024 figures at Eurex", January 2025, https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2024-figures-at-Eurex-4250318]
+
+### Key Historical Milestones
+
+- **1990**: Deutsche Terminborse (DTB) launched as one of the world's first fully electronic derivatives exchanges in Frankfurt
+- **1988**: Swiss Options and Financial Futures Exchange (SOFFEX) established in Zurich
+- **1997**: DTB distributes electronic screens across Europe and the United States; begins capturing Bund futures liquidity from LIFFE's open outcry pit
+- **1998 (November 30)**: **Eurex established** through the merger of DTB and SOFFEX, creating the world's first cross-border electronic derivatives exchange linking Frankfurt and Zurich
+- **1999**: Eurex overtakes CBOT as the world's largest derivatives exchange by contract volume
+- **2000**: Launch of Eurex US initiative (later discontinued in 2007)
+- **2002**: Eurex Clearing AG established as a central counterparty
+- **2003**: Launch of Eurex Bonds (electronic fixed income trading platform)
+- **2007**: Eurex US operations wound down; Eurex Credit Clear initiative launched
+- **2010**: Launch of Eurex OTC Clear for interest rate swaps
+- **2012**: Deutsche Borse acquires SIX Group's remaining shares in Eurex Zurich AG, becoming sole owner
+- **2012**: Introduction of **Eurex Clearing Prisma** portfolio-based margining methodology
+- **2013**: European Commission blocks proposed merger of Deutsche Borse with NYSE Euronext
+- **2014**: Extended Asian trading hours introduced for key benchmark products (01:00 CET)
+- **2015**: Eurex Repo GC Pooling reaches record volumes
+- **2017**: **T7 trading system launched for Eurex** (shared platform with Xetra, replacing legacy systems)
+- **2018**: MiFID II/MiFIR comes into effect; Eurex EnLight RFQ platform launched
+- **2019**: Launch of ESG Index Derivatives (STOXX ESG-X futures and options)
+- **2020**: COVID-19 pandemic drives record volatility and trading volumes
+- **2021**: Launch of Credit Index Futures and Three-Month Euro STR Futures
+- **2022**: Record trading volumes; crypto derivatives initiative begins
+- **2023**: SimCorp acquisition by Deutsche Borse completed; ongoing T7 upgrades
+- **2024**: Revenue exceeds EUR 5.6 billion for Deutsche Borse Group; launch of D7 digital post-trade platform
+- **2025**: T7 Release 14.0 launched (November 10, 2025); Sponsored Access model introduced; Systematic QIS Index Futures launched; ESG derivatives notional exceeds EUR 30 billion cumulative; new Eurex Liquidity Provider framework for OESX
+
+[Source: Wikipedia, "Eurex", https://en.wikipedia.org/wiki/Eurex]
+[Source: MarketsWiki, "Eurex", https://www.marketswiki.com/wiki/Eurex]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+
+Eurex organizes its derivatives products across the following major segments:
+
+| Segment | Key Products | Description |
+|---------|-------------|-------------|
+| **Interest Rate Derivatives** | Euro-Bund, Euro-Bobl, Euro-Schatz, Euro-Buxl futures & options; Euribor futures; Euro STR futures; Credit Index Futures | Covers the entire euro yield curve from overnight to long-dated; includes government bond futures, money market futures, and OTC IRS clearing |
+| **Equity Index Derivatives** | EURO STOXX 50, DAX, MDAX, STOXX Europe 600, MSCI, FTSE | Benchmark index futures and options; includes standard, mini, and micro contracts; ESG and total return variants |
+| **Equity Derivatives (Single Stock)** | 900+ single stock futures, 500+ equity options | Covers STOXX Europe 600 components and major US/Canadian shares |
+| **Dividend Derivatives** | Index dividend futures (EURO STOXX 50, DAX); 80+ single stock dividend futures | Pure dividend exposure instruments |
+| **Volatility Derivatives** | VSTOXX futures and options; Variance futures (EVAR) | Implied volatility trading on EURO STOXX 50 via VSTOXX index |
+| **FX Derivatives** | Rolling Spot Futures, Classic FX Futures & Options | Value dates from spot to 3 years; deliverable and non-deliverable |
+| **ETF & ETC Derivatives** | Futures and options on ETFs and ETCs | Including commodity ETCs (Physical Gold, Crude Oil) |
+| **Commodity Derivatives** | Futures and options on commodity ETCs | Physical Gold ETC (AUM > EUR 4 billion) |
+| **Cryptocurrency Derivatives** | Bitcoin and Ether futures | Launched as part of digital assets expansion |
+
+[Source: Eurex, "Markets", https://www.eurex.com/ex-en/markets]
+
+### 2.2 Trading Sessions
+
+Eurex operates on Central European Time (CET/CEST) and covers three global time zones:
+
+| Session | Local Time (CET) | UTC (Winter) | Description |
+|---------|-------------------|--------------|-------------|
+| Asian Trading Hours | 01:00 - 08:00 | 00:00 - 07:00 | Extended hours for selected liquid futures (benchmark index and fixed income futures) |
+| Pre-Trading | 07:30 - 08:00 | 06:30 - 07:00 | System open; orders can be entered, modified, cancelled; no matching |
+| European Trading Hours (Main) | 08:00 - 17:30 | 07:00 - 16:30 | Core European session; opening auction, continuous trading, closing auction |
+| U.S. Trading Hours (Extended) | 17:30 - 22:00 | 16:30 - 21:00 | Extended evening session for benchmark products |
+| Post-Trading | 22:00 - 22:30 | 21:00 - 21:30 | Trade reporting; no new matching |
+
+**Product-Specific Variations:**
+- **Equity index futures/options (FESX, FDAX, etc.)**: 08:00 - 22:00 CET (with Asian hours for selected products from 01:00)
+- **Fixed income futures (FGBL, FGBM, FGBS)**: 08:00 - 22:00 CET (with Asian hours from 01:00)
+- **Equity options (single stock)**: 09:00 - 17:30 CET
+- **FX derivatives**: 08:00 - 18:00 CET [unverified]
+
+[Source: Eurex, "Trading hours", https://www.eurex.com/ex-en/trade/trading-hours]
+[Source: Eurex, "Trade Eurex Derivatives Across All Time Zones", https://www.eurex.com/ex-en/trade/trading-hours/thx]
+
+### 2.3 Tick Sizes
+
+Tick sizes vary by product. Representative examples:
+
+| Product | Tick Size | Tick Value (EUR) |
+|---------|-----------|-----------------|
+| EURO STOXX 50 Futures (FESX) | 1 index point | 10 |
+| DAX Futures (FDAX) | 0.5 index points | 12.50 |
+| Mini-DAX Futures (FDXM) | 1 index point | 5 |
+| Micro-DAX Futures (FDXS) | 1 index point | 1 |
+| Euro-Bund Futures (FGBL) | 0.01 (% of par) | 10 |
+| Euro-Bobl Futures (FGBM) | 0.01 (% of par) | 10 |
+| Euro-Schatz Futures (FGBS) | 0.005 (% of par) | 5 |
+| EURO STOXX 50 Options (OESX) | 0.1 index point | 1 |
+| DAX Options (ODAX) | 0.1 index point | 0.50 |
+
+Note: Tick sizes for index derivatives were updated effective March 3, 2025, with changes to minimum price gradations in selected products.
+
+[Source: Eurex, various product specification pages, https://www.eurex.com/ex-en/markets]
+
+### 2.4 Lot Sizes
+
+- **Standard lot size**: 1 contract for all derivatives products
+- **Block trade minimum sizes**: Vary by product; e.g., EURO STOXX 50 Options EnLight minimum block trade size is 1,000 contracts [unverified]
+- **Minimum block trade sizes (MBTS)** for T7 Entry Services and Eurex EnLight are published in TES parameter files
+
+### 2.5 Market Maker / Liquidity Provider Programs
+
+Eurex operates multiple market-making frameworks:
+
+- **Permanent Market Makers**: Provide continuous two-sided quotes; eligible for fee rebates and incentives
+- **Regular Market Makers**: Fulfill reduced quoting obligations compared to Permanent Market Makers
+- **Designated Market Makers**: Product-specific schemes; e.g., Euribor futures designated market-making scheme, single stock dividend futures designated market-making scheme
+
+**OESX (EURO STOXX 50 Options) Liquidity Provider Framework (effective July 2025):**
+
+Three-tier incentive structure:
+1. **Basis Building Block**: Requires quoting all maturities over a wide delta range in the first two years with 90% coverage; ensures consistent quotation throughout the day
+2. **Advanced Building Block (Sliding-Scale Rebate)**: Rewards based on time-weighted spread and size; LPs choose desired rebate level
+3. **Passive Volume Incentive**: Rewards passive executions; incentive pool open to a limited number of qualifying LPs
+
+Quotation performance and payout of incentives are calculated automatically for all Eurex products.
+
+[Source: Eurex, "Market-Making and Liquidity provisioning", https://www.eurex.com/ex-en/trade/market-making-and-liquidity-provisioning]
+[Source: Eurex, "Eurex introduces new liquidity framework", 2025, https://www.eurex.com/ex-en/find/news-center/news/oesx-new-lp-scheme-4321212]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+Eurex employs multiple auction types within the T7 trading system:
+
+- **Opening Auction**: Begins the main trading phase; orders are collected in a call phase with indicative prices displayed. An uncrossing match occurs at the price that maximizes executable volume. Opening-Auction-Only orders become active and receive a new priority timestamp when the instrument enters the Opening Auction state
+- **Closing Auction**: Concentrates liquidity at the end of the main trading phase; determines the official closing price. Similar call-phase and uncrossing mechanics as the opening auction
+- **Intraday Auction**: Scheduled around midday for certain instruments; interrupts continuous trading temporarily to provide additional price discovery points
+- **Volatility Auction**: Triggered automatically when the potential trade price of an incoming order breaches configured price deviation limits (volatility interruption). The instrument moves from continuous trading into an auction call phase for orderly price discovery. The potential trade price is checked against reference prices from all executed trades within configured lookback time windows
+- **Trade-at-Close**: After the closing auction, orders can be matched continuously at the fixed closing auction price (no further price discovery)
+
+[Source: Eurex, "Trading phases", https://www.eurex.com/ex-en/trade/trading-hours/trading-phases]
+
+### 3.2 Continuous Trading
+
+- **Central limit order book (CLOB)**: Fully electronic order-driven market
+- **Matching**: Continuous matching of buy and sell orders throughout the trading session
+- **Synthetic matching**: Calendar spreads are matched synthetically from outright contracts; T7 Release 14.0 extended this to Butterfly and Condor strategies for STIR futures (Euribor, Euro STR)
+- **Market makers**: Supplement order book liquidity via continuous quotes; not a quote-driven market
+
+### 3.3 Price Discovery
+
+- Primary price discovery occurs through the opening auction and continuous order book
+- **Auction uncrossing algorithm**: (1) Maximum executable volume, (2) Minimum surplus, (3) Reference price as tiebreaker
+- **Closing price**: Determined via closing auction; critical for derivatives settlement calculations, index calculations, and margin computation
+- **Indicative prices**: Displayed during auction call phases to guide price discovery
+
+### 3.4 Order Priority Rules
+
+- **Price-time priority**: Standard priority rule for most Eurex products -- best price first, then earliest time at the same price
+- **Market orders** have priority over limit orders
+- **Visible over hidden**: At the same price, visible order quantities have priority over hidden (iceberg reserve) quantities
+- **Pro-rata allocation**: Used for specific products (e.g., certain interest rate options and Euribor futures) where orders at the same price are filled proportionally to their size rather than by time priority [unverified -- pro-rata is common on European fixed income derivatives but exact Eurex product list requires confirmation]
+
+Note: The T7 system supports configurable matching algorithms per product, allowing the exchange to apply price-time or pro-rata matching as appropriate.
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Market Order** | Executed immediately at the best available price; no price limit specified. Not supported with IOC time-in-force |
+| **Limit Order** | Specifies a maximum buy price or minimum sell price; unfilled portion rests in the order book |
+| **Stop Market Order** | Held at the stop server until the trigger price is reached, then released as a Market Order |
+| **Stop Limit Order** | Held at the stop server until the trigger price is reached, then released as a Limit Order. Time priority counts from when the Limit order is received by Eurex after the stop is triggered |
+
+### 4.2 Advanced Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **OCO (One-Cancels-Other)** | Two linked orders where execution of one automatically cancels the other |
+| **Iceberg Order** | Only a portion of the total order volume is visible in the order book; a minimum of 5% of overall volume must be visible |
+| **Book or Cancel (BOC)** | Order that is rejected if it would immediately match upon entry; ensures passive (maker) execution only |
+| **Opening-Auction-Only** | Active only during the opening auction; automatically cancelled if not filled during the opening auction |
+| **Closing-Auction-Only** | Active only during the closing auction |
+
+### 4.3 Time-in-Force (TIF) Options
+
+| TIF | Description |
+|-----|-------------|
+| **Day** | Order valid for the current trading day only; cancelled at end of session |
+| **GTC (Good-Till-Cancelled)** | Order remains active until explicitly cancelled or expired (maximum duration applies) |
+| **GTDate (Good-Till-Date)** | Order remains active until a specified date |
+| **IOC (Immediate-Or-Cancel)** | Executes immediately as much as possible; any unfilled quantity is cancelled. Not available for Market orders or Stop orders |
+
+### 4.4 Order Modification & Cancellation
+
+- Orders can be modified (price, quantity, TIF) or cancelled at any time during appropriate trading phases
+- Modifications that change the price or increase quantity result in a new time priority
+- Modifications that decrease quantity preserve time priority
+- Mass cancellation functionality available for participants to cancel all orders in a product or across all products
+
+[Source: Eurex, "Order types", https://www.eurex.com/ex-en/trade/order-book-trading/order-types]
+[Source: Trading Technologies, "Eurex Supported Order Types", https://library.tradingtechnologies.com/user-setup/eur-eurex-supported-order-types.html]
+
+---
+
+## 5. Trading System Technology -- T7
+
+### 5.1 Overview
+
+| Item | Details |
+|------|---------|
+| System Name | T7 (also used for Xetra, EEX, and other Deutsche Borse Group venues) |
+| Current Version | T7 Release 14.0 (launched November 10, 2025 for Eurex); Release 14.1 planned for May 18, 2026 |
+| Architecture | Central matching engine with distributed gateway access; partition-based architecture allowing independent scaling |
+| Developer | Deutsche Borse AG (in-house) |
+
+### 5.2 Architecture
+
+- **Partition-based design**: Products are distributed across multiple partitions, each with its own matching engine, allowing horizontal scaling and fault isolation
+- **Gateway types**:
+  - **Partition-Specific (PS) Gateways**: Route to a specific partition only; lowest latency path for order and quote management via 10 Gbit/s cross-connects
+  - **Low-Frequency (LF) Gateways**: Allow access to all partitions via a single session; higher base latency (~12 microseconds additional compared to PS)
+- **Access Layer**: 10 Gbit/s switches operating in "cut-through" mode; first bytes of an ethernet frame reserve priority on the competitive network path
+- **Matching Engine**: Central deterministic matching; processes orders and quotes with sub-microsecond internal latency
+
+### 5.3 Latency & Throughput
+
+| Metric | Value |
+|--------|-------|
+| Minimum infrastructure latency (market data to request) | ~2,787 nanoseconds (~2.8 microseconds) |
+| PS Gateway to Matching Engine | ~1 microsecond for cross-side requests (reduced from ~45 microseconds pre-January 2025) |
+| LF Gateway additional latency | ~12 microseconds higher than PS path |
+| Typical throughput at t_3n | ~8,000 kHz |
+| Typical throughput at t_5 | ~500 kHz |
+| Typical throughput at t_7 | ~300 kHz |
+
+[Source: Eurex, "Insights into Trading System Dynamics", March 2025, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf]
+
+### 5.4 Technology Stack
+
+- **Protocol**: FIX 5.0 SP2 semantics with proprietary session layer and flat binary encoding (ETI)
+- **Market Data**: FIX/FAST encoded multicast data streams (EMDI, MDI, EOBI)
+- **Network**: 10 Gbit/s Ethernet infrastructure; mandatory TLS encryption for all interfaces (FIX LF and ETI)
+- **GUI**: New generation browser-based GUIs introduced in 2025 to replace legacy desktop applications
+
+### 5.5 Release History
+
+| Release | Date | Key Features |
+|---------|------|-------------|
+| T7 initial launch (Eurex) | 2017 | Replaced legacy Eurex trading system; shared platform with Xetra |
+| T7 Release 8.0 | 2018 | Enhanced Trading Interface improvements |
+| T7 Release 10.1 | 2021 | Transaction Size Limit amendments |
+| T7 Release 12.1 | 2023 | Enhanced Order Book Interface improvements |
+| T7 Release 13.0 | 2024 | Functional enhancements; updated market data services |
+| T7 Release 13.1 | 2025 (March) | Functional reference updates; documentation improvements |
+| **T7 Release 14.0** | **2025 (Nov 10)** | **Sponsored Access (SpA); synthetic matching for Butterfly/Condor strategies in STIRs; browser-based GUIs** |
+| T7 Release 14.1 | 2026 (May 18, planned) | Enhanced SpA risk monitoring; synthetic Packs & Bundles for STIR markets; additional GUI improvements |
+
+### 5.6 Disaster Recovery & Business Continuity (DR/BCP)
+
+- **Primary data center**: Equinix FR2, Frankfurt, Germany (houses T7 back-end and co-location facility)
+- **DR infrastructure**: T7 simulation environment serves as DR production infrastructure in the event of a disaster at the primary site
+- **DR scenario**: Renders the T7 back-end of Equinix FR2 inaccessible while co-location facility remains accessible, allowing co-location customers to still connect to DR infrastructure
+- **Regular testing**: Eurex conducts semi-annual T7 Disaster Recovery Tests (most recently October 2024, with tests in March and October each year). All Trading Participants are requested to participate
+- **DR test coordination**: Often coordinated with industry-wide tests organized by the Futures Industry Association (FIA)
+
+[Source: Eurex, "T7 Disaster Recovery Test", https://www.eurex.com/ex-en/support/initiatives/project-readiness/T7-Disaster-Recovery-Test-2442570]
+
+---
+
+## 6. Market Data
+
+### 6.1 Market Data Interfaces
+
+| Interface | Description | Use Case |
+|-----------|-------------|----------|
+| **EMDI (Enhanced Market Data Interface)** | Un-netted feed disseminating every order book change up to configured depth and all on-exchange trades | High-speed, real-time market data for algorithmic trading; multicast delivery |
+| **EOBI (Enhanced Order Book Interface)** | Full order book without depth limitation; provides side, price, priority timestamp, and displayed quantity of each order/quote, plus trade prices and volumes | Ultra-low latency order book data for co-located participants; provides complete L3 order-by-order data |
+| **MDI (Market Data Interface)** | Aggregated market data; statistical high/low, volume, and last trade info; order book updates at regular intervals (significantly less frequent than EMDI) | Cost-effective option for participants not requiring tick-by-tick data |
+| **RDI (Reference Data Interface)** | Reference data for all instruments (product definitions, contract specifications, trading parameters) | Pre-trade setup and instrument universe management |
+| **EMDS (Extended Market Data Service)** | Trade prices, settlement prices, and open interest data | End-of-day and historical data distribution |
+
+### 6.2 Technical Protocols
+
+- **Encoding**: FIX/FAST (FAST 1.1 and 1.2) for EMDI, MDI, RDI; proprietary binary encoding for EOBI
+- **Delivery**: IP Multicast with snapshot/incremental update model
+- **XML FAST template files and FIXML schema files** define the message formats
+
+### 6.3 Data Levels
+
+| Level | Content | Interface |
+|-------|---------|-----------|
+| Level 1 (Top of Book) | Best bid/offer, last trade price/volume | MDI |
+| Level 2 (Depth of Book) | Multiple price levels with aggregated quantities | EMDI (configurable depth) |
+| Level 3 (Full Order Book) | Every individual order with price, quantity, and priority timestamp | EOBI |
+
+### 6.4 Historical Data
+
+- **Market statistics**: Monthly statistics publications available on Eurex website
+- **Market statistics online**: Interactive query tool for historical volume, open interest, and pricing data
+- **Settlement prices**: Published daily via EMDS
+
+[Source: Eurex, "Market and Reference Data Interfaces", https://www.eurex.com/ex-en/support/initiatives/archive/release8/Market-and-Reference-Data-Interfaces-1546120]
+[Source: OnixS, "Eurex T7 Market and Reference Data", https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html]
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Exchange Membership
+
+**Trading Membership Types:**
+
+| Type | Description |
+|------|-------------|
+| **Trading Participant** | Full exchange membership; can trade on own account and for clients |
+| **Sponsored Access (SpA) User** | Non-member entity accessing T7 via a SpA Service Provider (introduced T7 Release 14.0, November 2025); low latency access without full membership |
+
+**Clearing Membership Types:**
+
+| Type | Description | Capital/Fees |
+|------|-------------|-------------|
+| **General Clearing Member (GCM)** | Clears own transactions, customer transactions, and transactions of non-clearing trading participants | Admission fee: EUR 50,000; annual fee: EUR 25,000; must meet minimum capital requirements and contribute to Clearing Fund |
+| **Direct Clearing Member (DCM)** | Clears only own transactions, customer transactions, and 100% affiliated exchange participants | Same fee structure as GCM |
+| **FCM Clearing Member** | Clears swap transactions; acts as agent for FCM clients | Specific to OTC clearing |
+| **ISA Direct Clearing Member** | Clears own business for OTC or Repo Market via a Clearing Agent | Specialized membership for individual segregated accounts |
+
+**Admission Requirements:**
+- Financial institutions within the EU or Switzerland
+- Authorized for custody business, credit operations, and receipt of margin (securities and cash)
+- Must comply with Eurex Clearing AG minimum capital requirements
+- Must contribute to the Clearing Fund
+
+[Source: Eurex, "Membership Types", https://www.eurex.com/ec-en/join/admission-requirements/Membership-Types-24040]
+[Source: Eurex, "Exchange membership", https://www.eurex.com/ex-en/trade/exchange-membership]
+
+### 7.2 Connection Methods
+
+| Method | Description |
+|--------|-------------|
+| **ETI (Enhanced Trading Interface)** | High-performance native binary interface; FIX 5.0 SP2 semantics with proprietary session layer and flat binary encoding. Supports HF (High Frequency) and LF (Low Frequency) sessions |
+| **FIX LF Interface** | Standard FIX protocol interface via Low Frequency gateways; suitable for participants not requiring lowest latency |
+| **T7 Trader GUI / Admin GUI** | Graphical user interfaces for manual trading and administration; new browser-based GUIs introduced in 2025 |
+| **Eurex EnLight API** | Programmatic access to the RFQ platform |
+
+**Gateway Types:**
+- **PS (Partition-Specific) Gateways**: Fastest path; 10 Gbit/s cross-connects; routes to a single partition
+- **LF (Low-Frequency) Gateways**: Access all partitions via a single session; suitable for broader market access
+
+**Mandatory Encryption:**
+- ETI LF payload encryption mandatory for connections outside Equinix FR2 (since October 2023)
+- FIX LF interface encryption mandatory (since May 2023)
+- TLS 1.3 support added
+
+### 7.3 Co-Location
+
+- **Primary facility**: Equinix FR2, Frankfurt, Germany
+- **Infrastructure**: 10 Gbit/s co-location cross-connects
+- **Latency advantage**: Direct access to PS gateways provides the fastest order routing path
+- **Eurex and Xetra services** available via separate physical connections within the co-location facility
+- **Contact**: Equinix (Germany) GmbH, Rebstocker Strasse 33, 60326 Frankfurt
+
+[Source: Eurex, "Connectivity", https://www.eurex.com/ex-en/support/technology/connectivity]
+[Source: Eurex, "Co-Location Services", https://www.eurexchange.com/exchange-en/technology/co-location-services]
+
+### 7.4 Certification
+
+- Trading participants must complete a **technical and functional certification process** before going live
+- Simulation environment available for testing (separate from production)
+- Member Section portal for account management, reporting, and administration
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Volatility Interruptions (Circuit Breakers)
+
+Eurex's primary safeguard mechanism to prevent erroneous trades and sudden price cascades:
+
+- **Dynamic Volatility Interruption**: The potential trade price of an incoming order is checked against all prices of previously executed trades within configured lookback time windows (reference prices)
+- **Trigger**: If the allowed price deviation is exceeded, the execution is prevented and the instrument (or all instruments in the affected product) is automatically moved from continuous trading to a **volatility auction**
+- **Duration**: The volatility auction runs for a defined period to allow orderly price discovery before returning to continuous trading
+- **Price Collars**: For Eurex EnLight off-book trading, price collars reject quotes or orders falling outside an entry interval defined by the Management Board. Price collars do **not** trigger a trading halt
+
+[Source: Eurex, "Volatility Interruption Functionality", https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality]
+
+### 8.2 Pre-Trade Risk Controls
+
+| Control | Description |
+|---------|-------------|
+| **Maximum Order Quantity / Transaction Size Limits (TSL)** | Exchange-level and member-level limits on the maximum number of contracts per order/quote. The lowest limit set (by exchange, Clearing Member, or Trading Participant) applies |
+| **Maximum Order Value** | Limits on the maximum notional value of a single order |
+| **Pre-Trade Risk (PTR) Limits** | Clearing members can define limits for themselves and their non-clearing participants (DCMPs); monitored in real-time |
+| **Price Reasonability Checks** | Orders are checked against reference prices to detect potentially erroneous prices |
+
+### 8.3 Post-Trade Risk Controls
+
+- **Position monitoring**: Real-time position monitoring by Eurex Clearing
+- **Intraday margin calls**: Eurex Clearing can directly debit Clearing Members when intraday risk thresholds are breached
+- **Stop/Kill functionality**: Emergency procedures for halting trading activity; details in the Eurex Emergency Playbook (published under Support > Emergencies and Safeguards)
+
+[Source: Eurex, "Trading Safeguards", October 2025, https://www.eurex.com/resource/blob/2448162/28033c3a73ea19078860573d526f8f33/data/presentation-trading-safeguards.pdf]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervisory Authorities
+
+| Authority | Jurisdiction | Role |
+|-----------|-------------|------|
+| **BaFin** (Bundesanstalt fur Finanzdienstleistungsaufsicht) | Germany | Primary regulator of Eurex Frankfurt AG as a regulated market; sets and monitors position limits for commodity derivatives traded predominantly on German venues |
+| **Hessische Borsaufsicht** | Hesse, Germany | Exchange Supervisory Authority for the State of Hesse; oversees exchange operations |
+| **ESMA** (European Securities and Markets Authority) | EU | Supervises trade repositories under EMIR; coordinates MiFID II/MiFIR implementation; oversees CCP supervision for Eurex Clearing under EMIR |
+| **FINMA** | Switzerland | Regulates Eurex Zurich operations |
+
+### 9.2 Key Regulations
+
+| Regulation | Description | Impact on Eurex |
+|-----------|-------------|-----------------|
+| **MiFID II / MiFIR** (effective January 3, 2018) | Markets in Financial Instruments Directive II / Regulation | Transaction reporting obligations; position limits for commodity derivatives; pre- and post-trade transparency; best execution requirements; algorithmic trading controls |
+| **EMIR** (European Market Infrastructure Regulation) | Regulation on OTC derivatives, CCPs, and trade repositories | Mandatory clearing of standardized OTC derivatives; trade reporting to trade repositories; CCP risk management requirements for Eurex Clearing |
+| **EMIR REFIT** | Updated EMIR reporting standards | Enhanced reporting format using XML/ISO 20022; new data fields; updated validation rules |
+| **CSDR** (Central Securities Depository Regulation) | Regulation on settlement discipline and CSDs | Settlement discipline regime affecting post-trade processing |
+| **MAR** (Market Abuse Regulation) | EU market abuse framework | Surveillance obligations; insider trading and market manipulation detection |
+
+### 9.3 Surveillance & Reporting
+
+- **Transaction Reporting**: Under MiFID II Article 26, all transactions must be reported to BaFin using RTS 22 format (XML schema based on ESMA Transaction Reporting XML Schema 1.1.0)
+- **Position Reporting**: Under MiFID II Article 58, Eurex Frankfurt AG must provide BaFin with daily end-of-day reports on positions held by clients (and clients of clients up to end client) in listed commodity derivatives and emission allowances
+- **EMIR Trade Reporting**: All derivative contracts (OTC and exchange-traded) must be reported to a trade repository no later than the working day following conclusion, modification, or termination
+- **Market Surveillance**: Eurex Market Supervision monitors trading activity for market abuse, manipulation, and unusual patterns
+
+### 9.4 Cross-Border Considerations
+
+- Eurex is recognized as a third-country CCP by regulators in multiple jurisdictions
+- CFTC registration: Eurex Clearing AG is registered as a Derivatives Clearing Organization (DCO) with the U.S. CFTC
+- Eurex has been granted equivalence determinations in several non-EU jurisdictions
+- Cross-border membership available for participants from numerous countries
+
+[Source: Eurex, "MiFID II/MiFIR", https://www.eurex.com/ex-en/rules-regs/regulations/mifid-mifir]
+[Source: BaFin, "Position limits for commodity derivatives", https://www.bafin.de/EN/Aufsicht/BoersenMaerkte/Derivate/PositionslimitsWarenderivate/positionslimits_warenderivate_node_en.html]
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+
+Eurex charges transaction fees per contract for both on-book and off-book (T7 Entry Service) trades:
+
+- **Standard fee per contract**: Varies by product class and whether trade is on-book or off-book
+- **Reduced fees**: May apply to volume above certain thresholds, depending on product and Position Account type (P-Account / M-Account)
+- **Fee tiers**: Participants can benefit from monthly rebates including:
+  - **Market-Making rebates**: For qualifying market makers meeting quotation obligations
+  - **Volume rebates**: Based on cumulative monthly trading volume
+- **2026 pricing changes** (effective January 1, 2026 and April 1, 2026):
+  - Standard fees, reduced fees, rebates, and thresholds amended for Equity Index Futures, EURO STOXX 50 Index Options, and Fixed Income Futures and Options
+  - Rebate levels for liquidity class 1 in Equity Index Options reduced by 5 percentage points per tier
+  - Interest Rate Options liquidity provisioning rebates lowered by 10 percentage points for all liquidity classes
+
+**Representative Fee Ranges** (indicative, subject to official Price List):
+
+| Product | Standard Fee (per contract) |
+|---------|---------------------------|
+| Equity Index Futures (e.g., FESX) | EUR 0.10 - 0.30 [unverified] |
+| Fixed Income Futures (e.g., FGBL) | EUR 0.05 - 0.20 [unverified] |
+| Equity Index Options (e.g., OESX) | EUR 0.10 - 0.40 [unverified] |
+| Single Stock Futures | EUR 0.15 - 0.50 [unverified] |
+
+Note: Actual fees depend on volume tier, member type, and current Price List. The full fee schedule is published in the "Price List of Eurex Clearing AG" (Chapter 3).
+
+### 10.2 Clearing Fees
+
+- Transaction-based clearing fees per contract
+- Admission fee: EUR 50,000 (one-off) for Clearing Members
+- Annual membership fee: EUR 25,000 for Clearing Members
+
+### 10.3 Connectivity & Market Data Fees
+
+- **Co-location fees**: Charged by Equinix for rack space and cross-connects at FR2
+- **Connectivity fees**: Charged for network connections (10 Gbit/s lines)
+- **Market data fees**: Charged for real-time market data (EMDI, EOBI, MDI) based on usage type (display, non-display, derived data)
+- **Fee schedule changes**: Connectivity fee schedules periodically amended via circulars
+
+[Source: Eurex, "Transaction fees", https://www.eurex.com/ex-en/trade/transaction-fees]
+[Source: Eurex, "Price List of Eurex Clearing AG", https://www.eurex.com/ec-en/rules-regs/rules-and-regulations/3.-Price-List-32640]
+
+---
+
+## 11. Recent Developments
+
+### 11.1 T7 System Upgrades
+
+- **T7 Release 14.0** (November 10, 2025): Introduced Sponsored Access (SpA) for non-disclosed trading participants; synthetic matching extended to Butterfly and Condor strategies for STIR futures; new browser-based GUIs
+- **T7 Release 14.1** (planned May 18, 2026): Enhanced SpA risk monitoring; synthetic Packs & Bundles for STIR markets (FEU3, FST3); additional GUI improvements
+
+### 11.2 New Products & Market Initiatives
+
+- **Systematic QIS Index Futures** (December 2025): Launched in collaboration with Premialab; allows trading of rules-based thematic strategies (e.g., "Fundamental Quality European", "Value European") previously only available as OTC swaps. The OTC QIS market estimated to reach USD 1 trillion by end of 2026
+- **Credit Index Futures**: Strong growth trajectory since 2021 launch; volumes surging as participants adopt listed credit derivatives
+- **Three-Month Euro STR Futures**: Continuing adoption as the euro risk-free rate benchmark replacement for EURIBOR
+- **Daily Options**: Expanded availability on EURO STOXX 50 and DAX (launched November 2025)
+- **ESG Index Derivatives**: Cumulated notional volume exceeded EUR 30 billion in Q1 2025 (up 76.5% vs. 2024); capital open interest in ESG products reached EUR 4.9 billion by early 2026, a 200% increase over 24 months
+
+### 11.3 Access & Membership Changes
+
+- **Sponsored Access Model** (November 2025): Lowers entry barriers for buy-side firms and non-member entities; provides low-latency T7 access via approved SpA Service Providers without requiring full exchange membership
+
+### 11.4 Regulatory Changes
+
+- **EMIR REFIT**: Updated trade reporting requirements with enhanced data fields and validation rules
+- **MiFID II position limits**: Ongoing refinement of commodity derivatives position limit framework
+- **Mandatory interface encryption**: Completed migration to encrypted connectivity for all ETI and FIX interfaces
+
+### 11.5 Strategic Initiatives
+
+- **Eurex Repo**: Record year in 2025 (EUR 406.1 billion average term-adjusted volume); expansion of secured funding capabilities
+- **OTC Clearing growth**: Average daily cleared volume EUR 280 billion in 2025 (up 35%); ~650 new clients joined Eurex Clearing's OTC IRD market
+- **Digital assets**: Expansion of cryptocurrency derivatives offerings; Deutsche Borse Group acquired majority stake in Crypto Finance AG (2023)
+- **D7 digital post-trade platform**: Launched in 2024 for digital securities issuance and settlement
+
+[Source: Eurex, "Our path for 2026", https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026--4867350]
+[Source: Eurex, "T7 Release 14.0", https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0]
+
+---
+
+## 12. Product Catalog (Derivatives-Specific)
+
+### 12.1 Interest Rate Derivatives
+
+**Fixed Income Futures (Government Bonds):**
+
+| Product | Code | Underlying | Residual Maturity | Contract Size |
+|---------|------|-----------|-------------------|---------------|
+| Euro-Schatz Futures | FGBS | German Federal bonds/notes | 1.75 - 2.25 years | EUR 100,000 |
+| Euro-Bobl Futures | FGBM | German Federal bonds/notes | 4.5 - 5.5 years | EUR 100,000 |
+| Euro-Bund Futures | FGBL | German Federal bonds (Bundesanleihen) | 8.5 - 10.5 years | EUR 100,000 |
+| Euro-Buxl Futures | FGBX | German Federal bonds | 24 - 35 years | EUR 100,000 |
+
+**Fixed Income Options:** Options on Euro-Schatz, Euro-Bobl, Euro-Bund, and Euro-Buxl futures
+
+**Money Market Futures:**
+
+| Product | Code | Underlying |
+|---------|------|-----------|
+| Three-Month Euribor Futures | FEU3 | 3-month EURIBOR |
+| Three-Month Euro STR Futures | FST3 | Compounded Euro STR over 3 months |
+| One-Month Euro STR Futures | -- | 1-month Euro STR |
+
+**Credit Index Futures:**
+- iTraxx Europe Main CDS Index Futures
+- iTraxx Europe Crossover CDS Index Futures
+- iTraxx Europe Senior Financials CDS Index Futures
+
+**OTC Cleared:**
+- Interest Rate Swaps (IRS)
+- Overnight Index Swaps (OIS)
+- Forward Rate Agreements (FRA)
+- Cross-currency swaps
+
+### 12.2 Equity Index Derivatives
+
+| Index Family | Products |
+|-------------|----------|
+| **EURO STOXX 50** | Futures (FESX), Mini Futures, Micro Futures (FSXE), Options (OESX), Daily Options, Weekly Options, End-of-Day Options, Total Return Futures (TESX), ESG Futures, Dividend Futures, Variance Futures |
+| **DAX** | Futures (FDAX), Mini-DAX Futures (FDXM), Micro-DAX Futures (FDXS), Options (ODAX), Daily Options, Weekly Options |
+| **MDAX** | Futures, Options |
+| **STOXX Europe 600** | Futures, Options; Sector Index derivatives (18 sectors including Banks, Technology, Healthcare) |
+| **MSCI** | 146 Futures and 23 Options covering MSCI World, MSCI Europe, MSCI EM, country indices, ESG variants |
+| **FTSE 100** | Futures and Options (introduced 2023) |
+| **ESG Indices** | STOXX ESG-X, STOXX Europe Climate Benchmark, DAX ESG variants |
+| **Systematic QIS Indices** | Rules-based thematic strategy futures (launched December 2025) |
+
+### 12.3 Equity Derivatives (Single Stock)
+
+- **Single Stock Futures**: 900+ contracts covering STOXX Europe 600 components plus major US and Canadian shares
+- **Equity Options**: 500+ contracts across all major industry segments globally
+- **Physical settlement** for single stock futures and options
+
+### 12.4 Dividend Derivatives
+
+- **Index Dividend Futures**: EURO STOXX 50 Dividend Futures, DAX Dividend Futures
+- **Single Stock Dividend Futures**: 80+ contracts on the largest Eurozone and pan-European companies
+- **Cash settlement** based on declared dividends
+
+### 12.5 Volatility Derivatives
+
+- **VSTOXX Futures**: Based on EURO STOXX 50 implied volatility (VSTOXX index)
+- **VSTOXX Options**: Options on VSTOXX futures
+- **EURO STOXX 50 Variance Futures (EVAR)**: Variance swaps in listed form
+
+### 12.6 FX Derivatives
+
+- **Rolling Spot Futures**: Continuous roll; value dates from spot
+- **Classic FX Futures**: Fixed settlement dates across serial months, quarterly, bi-annually, up to 3 years
+- **FX Options**: Options on major currency pairs
+- Deliverable and non-deliverable contracts available
+
+### 12.7 ETF & ETC Derivatives
+
+- Futures and options on major equity index ETFs
+- Futures and options on fixed income ETFs
+- **ETC derivatives**: Physical Gold ETC (AUM > EUR 4 billion), Crude Oil ETC
+
+### 12.8 Cryptocurrency Derivatives
+
+- Bitcoin futures [unverified -- specific products expanding]
+- Ether futures [unverified]
+
+---
+
+## 13. Key Contract Specifications (Top 5 Products by Volume)
+
+### 13.1 EURO STOXX 50 Index Futures (FESX)
+
+| Specification | Details |
+|--------------|---------|
+| Product Code | FESX |
+| Underlying | EURO STOXX 50 Index (50 leading Eurozone blue-chip stocks) |
+| Contract Size / Multiplier | EUR 10 per index point |
+| Minimum Price Change (Tick) | 1 index point |
+| Tick Value | EUR 10 |
+| Contract Months | Up to 36 months; twelve nearest quarterly months (March, June, September, December) |
+| Last Trading Day | Third Friday of the maturity month (or preceding exchange day) |
+| Settlement | Cash settlement |
+| Final Settlement Price | Based on average of EURO STOXX 50 index values calculated between 11:50 and 12:00 CET on final settlement day |
+| Trading Hours | 01:00 - 22:00 CET (including Asian hours) |
+| 2024 Volume | ~205 million contracts; EUR 39.5 billion notional ADV |
+
+### 13.2 EURO STOXX 50 Index Options (OESX)
+
+| Specification | Details |
+|--------------|---------|
+| Product Code | OESX |
+| Underlying | EURO STOXX 50 Index |
+| Contract Size / Multiplier | EUR 10 per index point |
+| Minimum Price Change (Tick) | 0.1 index point |
+| Tick Value | EUR 1 |
+| Exercise Style | European (exercisable only on final settlement day until 20:30 CET) |
+| Contract Months | Monthly, weekly, daily expiries available |
+| Settlement | Cash settlement |
+| Final Settlement Price | Average of EURO STOXX 50 index values between 11:50 and 12:00 CET |
+| Trading Hours | 08:00 - 22:00 CET |
+| 2024 Volume | ~242 million contracts; EUR 44 billion notional ADV |
+| Exercise Prices | At least 7 for terms up to 24 months (3 ITM, 1 ATM, 3 OTM); at least 5 for longer terms |
+
+### 13.3 Euro-Bund Futures (FGBL)
+
+| Specification | Details |
+|--------------|---------|
+| Product Code | FGBL |
+| Underlying | Notional German Federal Government bond (Bundesanleihe) with 6% coupon |
+| Deliverable Bonds | German Federal bonds with residual maturity of 8.5 to 10.5 years and minimum issue size EUR 5 billion |
+| Contract Size | EUR 100,000 nominal value |
+| Minimum Price Change (Tick) | 0.01 (percentage of par) |
+| Tick Value | EUR 10 |
+| Contract Months | Up to 9 months; three nearest quarterly months (March, June, September, December) |
+| Last Trading Day | Two exchange days before the delivery day of the relevant maturity month |
+| Delivery Day | 10th calendar day of the maturity month (or next exchange day) |
+| Settlement | Physical delivery |
+| Daily Settlement Price | Volume-weighted average of trades in the minute before 17:15 CET (if >5 trades) |
+| Final Settlement Price | Volume-weighted average at 12:30 CET on final settlement day (if >10 trades) |
+| Trading Hours | 01:00 - 22:00 CET (including Asian hours) |
+
+### 13.4 DAX Futures (FDAX)
+
+| Specification | Details |
+|--------------|---------|
+| Product Code | FDAX |
+| Underlying | DAX Index (40 leading German blue-chip stocks) |
+| Contract Size / Multiplier | EUR 25 per index point |
+| Minimum Price Change (Tick) | 0.5 index points |
+| Tick Value | EUR 12.50 |
+| Contract Months | Up to 9 months; three nearest quarterly months (March, June, September, December) |
+| Last Trading Day | Third Friday of the maturity month (or preceding exchange day) |
+| Settlement | Cash settlement |
+| Final Settlement Price | Based on intraday auction values of DAX constituent stocks |
+| Trading Hours | 01:00 - 22:00 CET (including Asian hours) |
+
+### 13.5 Euro-Bobl Futures (FGBM)
+
+| Specification | Details |
+|--------------|---------|
+| Product Code | FGBM |
+| Underlying | Notional German Federal Government bond/note with 6% coupon |
+| Deliverable Bonds | German Federal bonds/notes with residual maturity of 4.5 to 5.5 years |
+| Contract Size | EUR 100,000 nominal value |
+| Minimum Price Change (Tick) | 0.01 (percentage of par) |
+| Tick Value | EUR 10 |
+| Contract Months | Up to 9 months; three nearest quarterly months (March, June, September, December) |
+| Last Trading Day | Two exchange days before the delivery day |
+| Delivery Day | 10th calendar day of the maturity month (or next exchange day) |
+| Settlement | Physical delivery |
+| Trading Hours | 01:00 - 22:00 CET (including Asian hours) |
+
+[Source: Eurex, "EURO STOXX 50 Index Futures (FESX)", https://www.eurex.com/ex-en/markets/idx/stx/euro-stoxx-50-derivatives/products/EURO-STOXX-50-Index-Futures-160088]
+[Source: Eurex, "Euro-Bund Futures (FGBL)", https://www.eurex.com/ex-en/markets/int/fix/government-bonds/Euro-Bund-Futures-137298]
+[Source: Eurex, "DAX Futures (FDAX)", https://www.eurex.com/ex-en/markets/idx/dax/DAX-Futures-139902]
+
+---
+
+## 14. Margin Framework -- Eurex Clearing Prisma
+
+### 14.1 Overview
+
+Eurex Clearing Prisma is a **portfolio-based risk management methodology** applied to all exchange-traded derivatives (ETD) and OTC products cleared by Eurex Clearing AG. Unlike product-by-product margin calculation, Prisma determines margin requirements at the portfolio level, accounting for hedging and cross-correlation effects.
+
+### 14.2 Methodology
+
+**Core Approach:**
+- **Historical Value-at-Risk (VaR)**: Prisma uses a filtered historical simulation approach to estimate potential portfolio losses
+- **Liquidation Groups**: Products sharing similar risk characteristics are grouped into Liquidation Groups. Portfolio margining is applied within the same Liquidation Group and with the same holding period
+  - Example: EURO STOXX 50 Futures and DAX Futures may be in the same Liquidation Group, offering margin offsets for diversified portfolios
+- **Cross-Product Scenarios**: Enable a consistent way to account for portfolio correlation and diversification effects, resulting in more accurate risk netting
+- **Holding Periods**: Vary by product type; e.g., ETD may have a 2-day holding period while OTC IRS has a 5-day holding period
+
+### 14.3 Margin Types
+
+| Margin Type | Description |
+|------------|-------------|
+| **Initial Margin (Additional Margin)** | Covers potential liquidation risk for upcoming business days; based on Prisma historical VaR calculation at 99.x% confidence level |
+| **Premium Margin** | For options: covers the cost of the option premium (traditional-style options) |
+| **Current Liquidating Margin** | Reflects the immediate mark-to-market value of positions |
+| **Variation Margin** | Daily settlement of profits and losses on futures positions; must be paid in cash |
+| **Margin Floors** | Annual recalibration of Prisma initial margin floors (most recent recalibration effective June 16, 2025) |
+
+### 14.4 Cross-Margining
+
+- **Cross-product margining**: Offsets between products within the same Liquidation Group
+- **Cross-market margining**: Offsets between listed (ETD) and OTC positions cleared by Eurex Clearing
+- **Cross-holding-period margining**: Allows offsets between products with different holding periods (e.g., OTC IRS with 5-day holding period vs. listed fixed income with 2-day holding period)
+- **Key benefit**: More accurate risk netting leads to significantly lower initial margin requirements for diversified portfolios
+
+### 14.5 Margin Call Process
+
+- Margins are calculated **throughout the trading day** (intraday margin recalculations)
+- **Regular margin calls**: End-of-day margin requirements communicated to Clearing Members
+- **Intraday margin calls**: Eurex Clearing can directly debit Clearing Members if intraday risk thresholds are breached
+- **Payment**: Variation margin and premiums on traditional options must be paid in **cash**; initial margin can be posted in cash or eligible securities (with appropriate haircuts)
+
+### 14.6 Cloud Prisma Margin Estimator (cPME)
+
+- Web-based tool allowing participants to estimate margin requirements for hypothetical portfolios
+- Available via Deutsche Borse Risk GitHub: https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/
+
+[Source: Eurex Clearing, "Eurex Clearing Prisma", https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma]
+[Source: Eurex Clearing, "Margining process", https://www.eurex.com/ec-en/services/margining/margining-process]
+[Source: Eurex Clearing, "Cross-margining", https://www.eurex.com/ec-en/services/margining/cross-margining]
+
+---
+
+## 15. Position Limits
+
+### 15.1 Framework
+
+- **MiFID II Article 57**: Establishes position limits for commodity derivatives traded on EU trading venues
+- **BaFin** is the competent authority for setting and monitoring position limits for commodity derivatives traded exclusively or predominantly on German trading venues (including Eurex)
+- **Accountability levels**: Set for financial instruments to identify large positions and ensure orderly markets
+
+### 15.2 Commodity Derivatives Position Limits
+
+- Position limits set by BaFin based on deliverable supply and open interest
+- Apply to **net positions** held by any person in commodity derivatives and economically equivalent OTC contracts
+- Limits apply at both the **spot month** and the **other months combined** levels
+
+### 15.3 Hedge Exemptions
+
+- **Non-financial entities** may apply for exemption from position limits under MiFID II Article 57(1) if positions are objectively measurable as reducing risks directly relating to non-financial commercial activities
+- **Financial entities** must count hedging contracts toward position limits (no hedge exemption available)
+- Application process: Submit to BaFin pursuant to MiFID II Article 57(1) and Commission Delegated Regulation (EU) 2017/591 Article 8
+- Once approved, positions flagged as "hedge" fall outside the position limit regime
+
+### 15.4 Non-Commodity Position Limits
+
+- For equity index and interest rate derivatives, Eurex applies **position reporting** requirements rather than hard position limits
+- Large position reporting thresholds trigger enhanced monitoring by Eurex Market Supervision
+- Exchange rules may impose product-specific position limits in exceptional circumstances
+
+[Source: BaFin, "Position limits for commodity derivatives", https://www.bafin.de/EN/Aufsicht/BoersenMaerkte/Derivate/PositionslimitsWarenderivate/positionslimits_warenderivate_node_en.html]
+
+---
+
+## 16. Block Trading / EFP / EFS -- Off-Book Trading Facilities
+
+### 16.1 Eurex T7 Entry Services (TES)
+
+Eurex T7 Entry Services enable Trading Participants to enter off-book transactions into the Eurex system, combining the flexibility of customized trading with standardized clearing and settlement through Eurex Clearing.
+
+**Available TES Types:**
+
+| Service | Description |
+|---------|-------------|
+| **Block Trades** | Off-book execution of standard Eurex products at negotiated prices; subject to Minimum Block Trade Sizes (MBTS) |
+| **Exchange for Physicals -- Financial (EFP-F)** | Execute and clear the futures leg of an off-book fixed income trade; auto-approval functionality available for Fixed Income Futures |
+| **Exchange for Swaps (EFS)** | Exchange a futures position against an OTC swap position |
+| **Trade at Index Close (TAIC)** | Execute trades at the official closing price of an index |
+| **Multilateral Block Trades** | Registration of block trades with multiple counterparties (e.g., one buyer vs. three sellers) in a single transaction |
+| **Non-Disclosure Facility** | Allows participants to trade without disclosing identity |
+
+**TES Entry & Approval Times:**
+- For EFP and EFS on Fixed Income Futures, entry and approval times extended to the end of the trading day (22:00 CET)
+
+### 16.2 Eurex EnLight -- Selective RFQ Platform
+
+- **On-exchange, off-book** selective Request-for-Quote (RFQ) functionality
+- Fully integrated with straight-through processing (STP) into T7
+- **Key features**:
+  - **Anonymous Negotiation**: Requester can make RFQ anonymous; no identity disclosure during or after negotiation
+  - **Smart RFQ**: Suggests members most likely to respond favorably based on historical data
+  - **Leakage control**: Sales desks fully control which counterparties receive RFQs and how much information is included
+- **Minimum sizes**: EnLight Minimum Block Trade Sizes (EMBTS) apply; vary by product
+- **Access**: Available via API, Bloomberg Tradebook, Trading Technologies, and other ISV platforms
+
+[Source: Eurex, "Block Trades", https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades]
+[Source: Eurex, "Eurex EnLight", https://www.eurex.com/ex-en/trade/market-models/enlight]
+
+---
+
+## 17. Delivery & Settlement
+
+### 17.1 Cash Settlement
+
+Applies to **index derivatives, volatility derivatives, dividend derivatives, money market futures**:
+
+| Product Type | Final Settlement Price Determination |
+|-------------|--------------------------------------|
+| EURO STOXX 50 Futures/Options | Average of EURO STOXX 50 index values calculated between 11:50 and 12:00 CET on final settlement day |
+| DAX Futures/Options | Based on intraday auction values of DAX constituent stocks on final settlement day |
+| VSTOXX Futures | Based on VSTOXX index calculation on expiration day |
+| Euribor / Euro STR Futures | Based on reference rate fixing on final settlement day |
+
+### 17.2 Physical Delivery
+
+Applies to **fixed income futures, single stock futures, equity options**:
+
+**Fixed Income Futures Delivery Process:**
+1. **Notification**: Clearing members with open short positions must notify Eurex on the last trading day which specific bond (from the deliverable basket) they will deliver, by end of Post-Trading Full Period
+2. **Delivery day**: 10th calendar day of the maturity month (or next exchange day)
+3. **Conversion factors**: Applied to adjust for differences between the notional coupon (6%) and actual coupon of delivered bonds
+4. **Cheapest-to-deliver (CTD)**: Short position holders typically select the bond that is cheapest to deliver based on conversion factors and market conditions
+
+**Single Stock Futures/Options:**
+- Physical delivery of underlying shares
+- Settlement via Eurex Clearing through the respective CSD (Clearstream or other connected settlement systems)
+- Delivery occurs on the standard settlement cycle (T+2 for most European markets)
+
+### 17.3 Variation Margin (Daily Settlement)
+
+- **Futures**: Daily mark-to-market with cash variation margin payments
+- **Daily settlement prices** for current maturity months derived from volume-weighted average of trades in the minute before 17:15 CET (if >5 trades in that period)
+- Settlement via Eurex Clearing AG through designated payment banks
+
+[Source: Eurex, "Euro-Bund Futures (FGBL)", https://www.eurex.com/ex-en/markets/int/fix/government-bonds/Euro-Bund-Futures-137298]
+[Source: Eurex, "Contract Specifications", https://www.eurex.com/exchange-en/resources/rules-regulations/Contract-specifications/136774]
+
+---
+
+## Appendix: Comparison with KRX Derivatives Market
+
+| Feature | Eurex | KRX |
+|---------|-------|-----|
+| Flagship Equity Index Product | EURO STOXX 50 Futures/Options | KOSPI 200 Futures/Options |
+| Interest Rate Benchmark | Euro-Bund Futures | KTB Futures (3Y, 10Y) |
+| Margin Methodology | Prisma (portfolio-based historical VaR) | SPAN-based (transitioning to new methodology) |
+| Trading System | T7 (Deutsche Borse proprietary) | EXTURE+ (KRX proprietary) |
+| Clearing | Eurex Clearing AG (standalone CCP) | KRX as CCP (integrated exchange-clearing) |
+| Cross-Margining | ETD-OTC cross-margining available | Limited cross-margining |
+| Trading Hours | Up to 21 hours (01:00 - 22:00 CET) | ~6.5 hours (09:00 - 15:45 KST) for most products |
+| Off-Book Trading | T7 Entry Services, Eurex EnLight | Limited off-book facilities |
+
+---
+
+## Sources
+
+- [Eurex, "Full year and December 2025 figures at Eurex"](https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494)
+- [Eurex, "Full year and December 2024 figures at Eurex"](https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2024-figures-at-Eurex-4250318)
+- [Eurex, "Markets"](https://www.eurex.com/ex-en/markets)
+- [Eurex, "Trading hours"](https://www.eurex.com/ex-en/trade/trading-hours)
+- [Eurex, "Order types"](https://www.eurex.com/ex-en/trade/order-book-trading/order-types)
+- [Eurex, "T7"](https://www.eurex.com/ex-en/support/technology/t7)
+- [Eurex, "Insights into Trading System Dynamics", March 2025](https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf)
+- [Eurex, "T7 Release 14.0"](https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0)
+- [Eurex, "Connectivity"](https://www.eurex.com/ex-en/support/technology/connectivity)
+- [Eurex, "Market and Reference Data Interfaces"](https://www.eurex.com/ex-en/support/initiatives/archive/release8/Market-and-Reference-Data-Interfaces-1546120)
+- [Eurex, "Volatility Interruption Functionality"](https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality)
+- [Eurex, "Trading Safeguards", October 2025](https://www.eurex.com/resource/blob/2448162/28033c3a73ea19078860573d526f8f33/data/presentation-trading-safeguards.pdf)
+- [Eurex, "MiFID II/MiFIR"](https://www.eurex.com/ex-en/rules-regs/regulations/mifid-mifir)
+- [Eurex, "Transaction fees"](https://www.eurex.com/ex-en/trade/transaction-fees)
+- [Eurex Clearing, "Eurex Clearing Prisma"](https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma)
+- [Eurex Clearing, "Margining process"](https://www.eurex.com/ec-en/services/margining/margining-process)
+- [Eurex Clearing, "Cross-margining"](https://www.eurex.com/ec-en/services/margining/cross-margining)
+- [Eurex Clearing, "Membership Types"](https://www.eurex.com/ec-en/join/admission-requirements/Membership-Types-24040)
+- [Eurex, "Block Trades"](https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades)
+- [Eurex, "Eurex EnLight"](https://www.eurex.com/ex-en/trade/market-models/enlight)
+- [Eurex, "Market-Making and Liquidity provisioning"](https://www.eurex.com/ex-en/trade/market-making-and-liquidity-provisioning)
+- [BaFin, "Position limits for commodity derivatives"](https://www.bafin.de/EN/Aufsicht/BoersenMaerkte/Derivate/PositionslimitsWarenderivate/positionslimits_warenderivate_node_en.html)
+- [Eurex, "Contract Specifications"](https://www.eurex.com/exchange-en/resources/rules-regulations/Contract-specifications/136774)
+- [Eurex, "Our path for 2026"](https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026--4867350)
+- [Wikipedia, "Eurex"](https://en.wikipedia.org/wiki/Eurex)
+- [MarketsWiki, "Eurex"](https://www.marketswiki.com/wiki/Eurex)
+- [Deutsche Boerse Risk, "Cloud Prisma Margin Estimator"](https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/)

@@ -1,0 +1,425 @@
+# China Financial Futures Exchange (CFFEX, 중국금융선물거래소)
+
+> **최종 수정일:** 2026-04-07
+> **조사 단계:** Tier 3
+> **도메인:** 파생상품
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 공식 명칭 | China Financial Futures Exchange (中国金融期货交易所) |
+| 약칭 | CFFEX |
+| 웹사이트 | http://www.cffex.com.cn |
+| 설립 연도 | 2006년 9월 8일 |
+| 국가 / 도시 | 중국 / 상하이 |
+| 소유 구조 | 상해증권거래소, 심천증권거래소, 상해선물거래소, 대련상품거래소, 정주상품거래소가 각 20%씩 균등 출자한 합작법인 |
+| 감독 기관 | 중국증권감독관리위원회 (China Securities Regulatory Commission, CSRC) |
+| 이사장 | He Qingwen (2025년 기준) |
+| 상장 상품 | 주가지수 선물 4종, 국채 선물(CGB) 4종, 주가지수 옵션 3종 (총 11종) |
+| 매매 모델 | 완전 전자매매; 장내 호가 거래 없음 |
+| 청산 모델 | 다층 청산회원 체계 (매매회원, 매매·청산회원, 일반청산회원, 특별청산회원) |
+| 회원 자격 | China Futures Association |
+
+[Source: CFFEX, "Overview", http://www.cffex.com.cn/en_new/OverviewNew.html, accessed 2026-04-07]
+[Source: Wikipedia, "China Financial Futures Exchange", https://en.wikipedia.org/wiki/China_Financial_Futures_Exchange, accessed 2026-04-07]
+[Source: MarketsWiki, "China Financial Futures Exchange", https://www.marketswiki.com/wiki/China_Financial_Futures_Exchange, accessed 2026-04-07]
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **2006-09-08:** CFFEX 상하이에 설립, 자본금 5억 위안, 국무원 승인 및 CSRC 인가
+- **2010-04-16:** 중국 최초 주가지수 선물(CSI 300 지수 선물, IF) 출시; 초기에는 기관투자자 및 고액자산가로 제한
+- **2013-09-06:** 5년 국채 선물(CGB Futures, TF) 출시, 1995년 중단 이후 국채 선물 재개
+- **2015-03-20:** 10년 국채 선물(T) 출시
+- **2015-04-16:** SSE 50 지수 선물(IH) 및 CSI 500 지수 선물(IC) 출시
+- **2015-08/09:** 주식시장 폭락에 대응하여 CFFEX가 엄격한 거래 제한 부과: 증거금 40%로 인상, 포지션한도 (건옥제한) 일 10계약으로 축소, 일중 수수료 100배 인상하여 23 bps
+- **2017-02:** 위기 후 첫 번째 완화: 일일 거래한도 20 lot으로 인상, IF/IH 증거금 20%로 인하
+- **2017-09:** 두 번째 완화: 증거금 15%로 추가 인하, 수수료 0.069%로 인하
+- **2018-12:** 세 번째 완화: IF/IH 증거금 10%로 인하, IC는 15%, 일일 한도 50 lot으로 인상, 수수료 0.046%로 인하
+- **2018-08:** 2년 국채 선물(TS) 출시
+- **2019:** 포지션한도 (건옥제한) 및 증거금 요건 추가 완화
+- **2019-12-23:** CSI 300 지수 옵션(IO) 출시 -- CFFEX 최초의 옵션 상품
+- **2022-07-22:** CSI 1000 지수 선물(IM) 및 CSI 1000 지수 옵션(MO) 출시
+- **2022-12-19:** SSE 50 지수 옵션(HO) 출시
+- **2023-04-21:** 30년 국채 선물(TL) 출시
+- **2024:** 퀀트 트레이딩에 대한 감시 강화; Shanghai Weiwan Fund Management에 12개월 신규 포지션 진입 금지 조치
+
+[Source: Wikipedia, "China Financial Futures Exchange", accessed 2026-04-07]
+[Source: FIA, "2019 shaping up to be a big year for Chinese equity index futures", https://www.fia.org/marketvoice/articles/2019-shaping-be-big-year-chinese-equity-index-futures, accessed 2026-04-07]
+[Source: China Daily, "China eases restrictions on stock index futures trading", http://www.chinadaily.com.cn/business/2017-02/17/content_28233637.htm, accessed 2026-04-07]
+[Source: Xinhua, "China eases curbs on stock-index futures trading", http://www.xinhuanet.com/english/2018-12/02/c_137646361.htm, accessed 2026-04-07]
+[Source: CFFEX, "Notice on Releasing CSI 1000 Index Futures and Index Options", http://www.cffex.com.cn/en_new/Notices/20220718/28862.html, accessed 2026-04-07]
+[Source: Mondovisione, "CFFEX Releases SSE 50 Index Options Contract Specifications", https://mondovisione.com/media-and-resources/news/cffex-releases-sse-50-index-options-contract-specifications-and-relevant-rules/, accessed 2026-04-07]
+[Source: CFFEX, "30-Year CGB Futures Listing Notice", http://www.cffex.com.cn/en_new/NewsReleases/20230414/32100.html, accessed 2026-04-07]
+
+### 국제 파트너십 (International Partnerships)
+
+2017년 상해증권거래소(40%), Deutsche Boerse(40%), CFFEX(20%)가 합작법인을 설립하여 CFFEX 상품의 국제 제공을 추진하였다.
+
+[Source: Wikipedia, "China Financial Futures Exchange", accessed 2026-04-07]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 상품 개요 (Products Overview)
+
+CFFEX는 중국 유일의 금융 선물 및 옵션 거래소이다. 세 가지 범주의 상품을 상장하고 있다:
+
+| 범주 | 상품 | 수량 |
+|----------|----------|-------|
+| **주가지수 선물** | CSI 300 (IF), SSE 50 (IH), CSI 500 (IC), CSI 1000 (IM) | 4 |
+| **국채 선물** | 2년 국채 (TS), 5년 국채 (TF), 10년 국채 (T), 30년 국채 (TL) | 4 |
+| **주가지수 옵션** | CSI 300 옵션 (IO), CSI 1000 옵션 (MO), SSE 50 옵션 (HO) | 3 |
+
+[Source: CFFEX, http://www.cffex.com.cn/en_new/, accessed 2026-04-07]
+
+### 2.2 매매시간 (Trading Sessions / Hours)
+
+모든 시간은 중국 표준시(CST, UTC+8) 기준이다. CFFEX는 시간외 거래를 제공하지 않는다.
+
+#### 주가지수 선물 및 옵션 (IF, IH, IC, IM, IO, MO, HO)
+
+| 세션 | 시간 (CST) | 시간 (UTC) |
+|---------|-----------|------------|
+| 오전 세션 | 9:30 AM -- 11:30 AM | 01:30 -- 03:30 |
+| 점심 휴장 | 11:30 AM -- 1:00 PM | 03:30 -- 05:00 |
+| 오후 세션 | 1:00 PM -- 3:00 PM | 05:00 -- 07:00 |
+
+#### 국채 선물 (TS, TF, T, TL)
+
+| 세션 | 시간 (CST) | 시간 (UTC) |
+|---------|-----------|------------|
+| 오전 세션 | 9:30 AM -- 11:30 AM | 01:30 -- 03:30 |
+| 점심 휴장 | 11:30 AM -- 1:00 PM | 03:30 -- 05:00 |
+| 오후 세션 | 1:00 PM -- 3:15 PM | 05:00 -- 07:15 |
+
+**참고:** 국채 선물은 은행간 채권시장과의 정합성을 위해 주가지수 선물/옵션보다 15분 늦게 마감한다.
+
+[Source: TradingHours.com, "CCFX Market Hours", https://www.tradinghours.com/markets/ccfx, accessed 2026-04-07]
+[Source: CFFEX official website, accessed 2026-04-07]
+
+### 2.3 회원 구조 (Membership Structure)
+
+CFFEX는 다층 청산 체계를 채택하고 있다:
+
+| 회원 유형 | 설명 |
+|-------------|-------------|
+| **매매회원** | 매매만 가능; 청산회원을 통해 청산해야 함 |
+| **매매·청산회원** | 매매 및 자기거래 청산 가능 |
+| **일반청산회원** | 매매 및 자기거래 청산, 매매회원의 거래 청산 가능 |
+| **특별청산회원** | 매매를 하지 않고 매매회원에 대한 청산 서비스를 제공하는 은행 등 금융기관 |
+
+[Source: CFFEX, "System", http://www.cffex.com.cn/en_new/System/, accessed 2026-04-07]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 주문 체결 (Order Matching)
+
+- **체결 알고리즘:** 가격우선, 시간우선
+- 모든 거래는 CFFEX의 전자매매시스템을 통해 수행되며 자동으로 체결된다
+- 장내 호가 거래(floor trading, open outcry) 없음
+
+### 3.2 주문 유형 (Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| **지정가 주문** | 매수 최고가 또는 매도 최저가를 지정 |
+| **시장가 주문** | 최적 가격에 체결; 즉시 체결되지 않으면 지정가 주문으로 전환 |
+
+### 3.3 결제 (Settlement)
+
+- **일일 시가평가:** CFFEX는 일일 결제가격을 사용하여 모든 계약의 손익, 매매증거금, 수수료 및 세금을 일일 정산한다
+- **지수 선물:** 최종거래일 마지막 2시간 동안의 기초자산 지수 산술평균으로 현금 결제
+- **국채 선물:** 적격 국채의 실물 인도
+
+### 3.4 최종거래일 (Last Trading Day)
+
+- **주가지수 선물/옵션:** 만기월 셋째 금요일 (공휴일인 경우 다음 영업일로 연기)
+- **국채 선물:** 인도월 둘째 금요일
+
+### 3.5 계약 월물 (Contract Months)
+
+- **주가지수 선물:** 당월, 차월, 이후 2개 분기월 (한 번에 4개 계약 상장)
+- **국채 선물:** 연속 3개 분기월 (3월, 6월, 9월, 12월 주기)
+
+[Source: CFFEX, "CSI 300 Index Futures", http://www.cffex.com.cn/en_new/CSI300IndexFutures.html, accessed 2026-04-07]
+[Source: CFFEX, "System", http://www.cffex.com.cn/en_new/System/, accessed 2026-04-07]
+
+---
+
+## 5. 매매시스템 (Trading System)
+
+### 5.1 플랫폼 개요 (Platform Overview)
+
+CFFEX는 장내 호가 거래 없이 완전 전자 매매 플랫폼을 운영한다. 주요 특징:
+
+- **주문 체결:** 가격우선 및 시간우선에 기반한 자동 체결
+- **아키텍처:** 모든 주문을 순차적으로 처리하는 중앙집중식 매매체결엔진
+- **정보 전파:** 회원 및 인가된 정보 벤더에 실시간 시장 데이터 배포
+- **시스템 안정성:** 재해복구 기능을 갖춘 고가용성 설계
+
+### 5.2 청산 및 결제 시스템 (Clearing & Settlement System)
+
+- **중앙거래상대방 (CCP):** CFFEX 자체가 모든 거래의 중앙거래상대방 역할을 수행한다
+- **다층 청산:** 계층적 회원 구조(매매회원, 매매·청산회원, 일반청산회원, 특별청산회원)를 통해 리스크를 분산한다
+- **일일 결제:** 일일 결제가격을 이용하여 매일 장 마감 시 시가평가를 수행한다
+- **증거금 관리:** 증거금 수준의 실시간 모니터링; 유지증거금 이하로 하락 시 증거금 추가 납부 요구(margin call)
+- **결제은행:** 중국 주요 시중은행이 지정 결제은행으로 활동한다
+
+### 5.3 PFMI 준수 (PFMI Compliance)
+
+CFFEX는 CPMI-IOSCO가 발행한 금융시장인프라 원칙(Principles for Financial Market Infrastructures, PFMI) 준수 상황을 공개하였다.
+
+[Source: CFFEX, "Principles for Financial Market Infrastructures", http://www.cffex.com.cn/u/cms/www/202305/311459055ti6.pdf, accessed 2026-04-07]
+[Source: CFFEX, "System", http://www.cffex.com.cn/en_new/System/, accessed 2026-04-07]
+
+---
+
+## 8. 리스크 관리 (Risk Controls)
+
+### 8.1 일일 가격제한폭 (Daily Price Limits)
+
+| 상품 | 일일 가격제한폭 |
+|---------|------------------|
+| 주가지수 선물 (IF, IH, IC, IM) | 전일 결제가격의 ±10% |
+| 국채 선물 (TS -- 2년) | 전일 결제가격의 ±0.5% |
+| 국채 선물 (TF -- 5년) | 전일 결제가격의 ±1.2% |
+| 국채 선물 (T -- 10년) | 전일 결제가격의 ±2% |
+| 국채 선물 (TL -- 30년) | 전일 결제가격의 ±3.5% |
+| 주가지수 옵션 (IO, MO, HO) | 기초자산 지수 선물 가격제한폭에 기반 |
+
+**참고:** 국채 선물의 가격제한폭은 채권시장의 낮은 변동성을 반영하여 주가지수 선물보다 좁다. 장기물 계약일수록 가격제한폭이 넓어진다.
+
+[Source: CFFEX, contract specifications pages, accessed 2026-04-07]
+[Source: CFFEX, "30-Year CGB Futures Contract Specifications", http://www.cffex.com.cn/en_new/30yearCGBFutures.html, accessed 2026-04-07]
+
+### 8.2 포지션한도 (Position Limits)
+
+CFFEX는 특히 주가지수 선물에 대해 엄격한 포지션한도 (건옥제한)를 적용한다. 이 한도는 2015년 위기 당시 극적으로 강화되었으며, 이후 점진적으로 완화되고 있다.
+
+#### 현행 포지션한도 (완화 이후) (Current Position Limits, Post-Relaxation)
+
+| 상품 | 고객 포지션한도 (단일 계약) | 일일 신규 주문 한도 (비헤지) |
+|---------|----------------------------------------|-----------------------------------|
+| CSI 300 선물 (IF) | 5,000 lot (일방) | 500 lot/일 [unverified -- 주기적 조정 대상] |
+| SSE 50 선물 (IH) | 5,000 lot (일방) | 500 lot/일 [unverified] |
+| CSI 500 선물 (IC) | 5,000 lot (일방) | 500 lot/일 [unverified] |
+| CSI 1000 선물 (IM) | 1,200 lot (일방) | 500 lot/일 [unverified] |
+| 국채 선물 (각 종목) | 6,000 lot (전체 계약 합산) | 계약별 상이 |
+
+**헤지 면제:** 주가지수 선물을 헤지 목적으로 필요로 하는 회원 또는 고객은 CFFEX에 포지션한도 면제를 신청할 수 있다. CFFEX는 입증자료 및 시장상황을 기반으로 승인 여부를 결정한다.
+
+#### 2015년 위기 규제 vs. 단계적 정상화 (2015 Crisis Restrictions vs. Gradual Normalization)
+
+| 조치 | 위기 전 (2015년 8월 이전) | 위기 정점 (2015년 9월) | 2017년 2월 | 2017년 9월 | 2018년 12월 | 2019년 이후 |
+|---------|------------------------------|----------------------|----------|----------|----------|-----------|
+| 일일 신규 주문 한도 (비헤지) | ~600 lot | 10 lot | 20 lot | 20 lot | 50 lot | 점진적 확대 |
+| 증거금 (IF/IH, 비헤지) | ~10% | 40% | 20% | 15% | 10% | ~10-12% |
+| 증거금 (IC, 비헤지) | ~10% | 40% | ~30% | ~30% | 15% | ~12-14% |
+| 일중 청산 수수료 | ~1.15 bps | 23 bps | ~9.2 bps | 6.9 bps | 4.6 bps | ~3.45 bps |
+
+[Source: China Daily, "China eases restrictions on stock index futures trading", February 2017]
+[Source: Xinhua, "China eases curbs on stock-index futures trading", December 2018]
+[Source: FIA, "2019 shaping up to be a big year for Chinese equity index futures", 2019]
+[Source: CFFEX, "What Is Position Limit System?", http://www.cffex.com.cn/en_new/fxzs/20101124/15131.html, accessed 2026-04-07]
+
+### 8.3 대량포지션 보고 (Large Position Reporting)
+
+CFFEX는 보유 포지션이 지정 기준에 도달한 경우 회원 및 고객에게 대량포지션 보고를 의무화한다. 대량포지션 보고는 주가지수 선물과 국채 선물 모두에 적용된다. CFFEX는 각 상품 범주별로 별도의 "시행 지침"을 발행하였다.
+
+[Source: CFFEX, "Contract Rules", http://www.cffex.com.cn/en_new/fzhygz/, accessed 2026-04-07]
+
+### 8.4 증거금 체계 (Margin Framework)
+
+CFFEX는 SPAN이 아닌 계약가액 대비 비율 방식의 증거금 체계를 사용한다.
+
+#### 주가지수 선물 -- 현행 증거금률 (Stock Index Futures -- Current Margin Rates)
+
+| 상품 | 최소 매매증거금 | 일반 브로커 증거금 |
+|---------|----------------------|----------------------|
+| CSI 300 선물 (IF) | 계약가액의 8% | ~12% |
+| SSE 50 선물 (IH) | 계약가액의 8% | ~12% |
+| CSI 500 선물 (IC) | 계약가액의 8% | ~14% |
+| CSI 1000 선물 (IM) | 계약가액의 8% | ~14% |
+
+#### 국채 선물 -- 증거금률 (CGB Futures -- Margin Rates)
+
+| 상품 | 매매증거금 | 인도 전 증거금 |
+|---------|---------------|---------------------|
+| 2년 국채 (TS) | 계약가액의 0.5% | 인도월 전 인상 |
+| 5년 국채 (TF) | 계약가액의 1.0% | 인도월 전 인상 |
+| 10년 국채 (T) | 계약가액의 2.0% | 인도월 전 인상 |
+| 30년 국채 (TL) | 계약가액의 3.5% | 인도월 전 2영업일부터 5.0% |
+
+**교차증거금 상계:** 동일 회원을 통한 동일 고객번호 하에서의 동일 또는 상이한 국채 선물 상품의 매수·매도 포지션에 대해, 더 큰 금액이 필요한 쪽에서만 증거금을 징수한다.
+
+[Source: CFFEX, "CSI 300 Index Futures", accessed 2026-04-07]
+[Source: CFFEX, "30-Year CGB Futures Listing Notice", http://www.cffex.com.cn/en_new/Notices/20230414/32103.html, accessed 2026-04-07]
+[Source: Orient Futures Singapore, "CFFEX Stock Index Futures (QFI)", https://www.orientfutures.com.sg/post-detail/CFFEX-Stock-Index-Futures-(QFI), accessed 2026-04-07]
+
+### 8.5 기타 리스크 관리 조치 (Other Risk Measures)
+
+- **강제청산:** 회원의 증거금이 필요 수준 이하로 하락 시 CFFEX는 포지션을 강제 청산할 수 있다
+- **자율규제 집행:** CFFEX는 매매규칙을 위반한 회원 및 고객에 대한 징계 조치를 정기적으로 공표한다 (예: 포지션한도 초과, 비정상 매매 행위)
+- **서킷브레이커 (매매거래중단):** CFFEX는 일일 가격제한폭을 사용하지만, 중국 전체 시장에서는 2016년 1월 서킷브레이커를 도입(1주일 만에 2회 발동)한 후 동 제도를 정지한 바 있다
+
+[Source: CFFEX, "Circulars", http://www.cffex.com.cn/en_new/Circulars/20251212/46400.html, accessed 2026-04-07]
+[Source: Mondovisione, "Circular On Self-Regulatory Measures Taken By CFFEX", various months 2025]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 주요 규제기관 (Primary Regulator)
+
+**중국증권감독관리위원회(China Securities Regulatory Commission, CSRC)**가 CFFEX를 감독하는 주요 규제기관이다. CFFEX는 국무원 승인 및 CSRC 인가를 받아 설립되었다.
+
+### 9.2 법적 체계 (Legal Framework)
+
+| 규정 | 설명 |
+|-----------|-------------|
+| **선물거래 관리조례 (Regulations on the Administration of Futures Trading)** | 중국 내 선물거래에 대한 포괄적 법적 근거를 제공하는 국무원 규정 |
+| **선물거래소 관리방법 (Measures for the Administration of Futures Exchanges)** | 선물거래소의 설립 및 운영을 규율하는 CSRC 규정 |
+| **CFFEX 거래규칙 (CFFEX Trading Rules)** | 매매, 청산, 인도 및 리스크 관리를 규율하는 거래소 차원의 규칙 |
+| **CFFEX 세부 거래규칙 (CFFEX Detailed Trading Rules)** | 각 계약 유형별 상품별 규칙 |
+
+### 9.3 자율규제 기능 (Self-Regulatory Functions)
+
+CFFEX는 다음과 같은 자율규제 기능을 수행한다:
+- 거래규칙의 제정 및 집행
+- 비정상 행위에 대한 매매활동 모니터링
+- 위반사항 조사 및 징계
+- 자율규제 조치에 관한 월별 회보 공표
+- 투자자 교육 실시
+
+### 9.4 시장 접근 (Market Access)
+
+- **국내 참가자:** CSRC 인가를 받은 선물회사가 중개기관으로 활동하며, 개인 및 기관은 이들 선물회사를 통해 거래한다
+- **외국인 접근:** 적격외국기관투자자(QFII) 및 위안화적격외국기관투자자(RQFII)가 CSRC 승인 및 포지션한도 하에서 CFFEX 상품에 참가할 수 있다
+- **QFI (적격외국인투자자) 제도:** 2020년 개혁(QFII와 RQFII 통합) 이후 외국인 투자자의 CFFEX 상품에 대한 헤지 목적 접근이 확대되었다
+
+[Source: CFFEX, "Contract Rules", http://www.cffex.com.cn/en_new/fzhygz/, accessed 2026-04-07]
+[Source: China Law Insight, "A new chapter for (R)QFIIs", https://www.chinalawinsight.com/2020/10/articles/foreign-investment/a-new-chapter-for-rqfiis-more-than-meets-the-eyes/, accessed 2026-04-07]
+
+---
+
+## 상품 목록 (Product Catalog)
+
+### 주가지수 선물 (Stock Index Futures)
+
+| 코드 | 상품 | 기초자산 지수 | 출시일 |
+|------|---------|-----------------|-------------|
+| IF | CSI 300 지수 선물 | CSI 300 (沪深300) | 2010-04-16 |
+| IH | SSE 50 지수 선물 | SSE 50 (上证50) | 2015-04-16 |
+| IC | CSI 500 지수 선물 | CSI 500 (中证500) | 2015-04-16 |
+| IM | CSI 1000 지수 선물 | CSI 1000 (中证1000) | 2022-07-22 |
+
+### 국채(CGB) 선물 (Government Bond Futures)
+
+| 코드 | 상품 | 기초자산 | 출시일 |
+|------|---------|-----------|-------------|
+| TS | 2년 국채 선물 | 명목 2년 국채 | 2018-08-17 |
+| TF | 5년 국채 선물 | 명목 5년 국채 | 2013-09-06 |
+| T | 10년 국채 선물 | 명목 10년 국채 | 2015-03-20 |
+| TL | 30년 국채 선물 | 명목 30년 국채 | 2023-04-21 |
+
+### 주가지수 옵션 (Stock Index Options)
+
+| 코드 | 상품 | 기초자산 | 행사방식 | 출시일 |
+|------|---------|-----------|-------|-------------|
+| IO | CSI 300 지수 옵션 | CSI 300 지수 | 유럽형 | 2019-12-23 |
+| MO | CSI 1000 지수 옵션 | CSI 1000 지수 | 유럽형 | 2022-07-22 |
+| HO | SSE 50 지수 옵션 | SSE 50 지수 | 유럽형 | 2022-12-19 |
+
+[Source: CFFEX official website, product pages, accessed 2026-04-07]
+[Source: Wikipedia, "China Financial Futures Exchange", accessed 2026-04-07]
+
+---
+
+## 계약 명세 (Contract Specifications)
+
+### 주가지수 선물 (Stock Index Futures)
+
+| 명세 | CSI 300 (IF) | SSE 50 (IH) | CSI 500 (IC) | CSI 1000 (IM) |
+|--------------|-------------|-------------|-------------|--------------|
+| 거래승수 | 포인트당 RMB 300 | 포인트당 RMB 300 | 포인트당 RMB 200 | 포인트당 RMB 200 |
+| 호가단위 (최소가격변동폭) | 0.2 지수포인트 | 0.2 지수포인트 | 0.2 지수포인트 | 0.2 지수포인트 |
+| 호가단위 가치 | RMB 60 | RMB 60 | RMB 40 | RMB 40 |
+| 일일 가격제한폭 | ±10% | ±10% | ±10% | ±10% |
+| 계약 월물 | 당월, 차월, + 2개 분기월 | 당월, 차월, + 2개 분기월 | 당월, 차월, + 2개 분기월 | 당월, 차월, + 2개 분기월 |
+| 최종거래일 | 만기월 셋째 금요일 | 만기월 셋째 금요일 | 만기월 셋째 금요일 | 만기월 셋째 금요일 |
+| 결제 | 현금 결제 | 현금 결제 | 현금 결제 | 현금 결제 |
+| 최종결제가격 | 최종거래일 마지막 2시간 동안의 기초지수 산술평균 | 최종거래일 마지막 2시간 동안의 기초지수 산술평균 | 최종거래일 마지막 2시간 동안의 기초지수 산술평균 | 최종거래일 마지막 2시간 동안의 기초지수 산술평균 |
+| 최소 매매증거금 | 8% | 8% | 8% | 8% |
+| 매매시간 | 9:30-11:30, 13:00-15:00 | 9:30-11:30, 13:00-15:00 | 9:30-11:30, 13:00-15:00 | 9:30-11:30, 13:00-15:00 |
+
+### 국채(CGB) 선물 (Government Bond Futures)
+
+| 명세 | 2년 (TS) | 5년 (TF) | 10년 (T) | 30년 (TL) |
+|--------------|------------|------------|-------------|-------------|
+| 기초자산 | 명목 2년 국채, 3% 쿠폰 | 명목 5년 국채, 3% 쿠폰 | 명목 10년 국채, 3% 쿠폰 | 명목 30년 국채, 3% 쿠폰 |
+| 액면가 | RMB 2,000,000 | RMB 1,000,000 | RMB 1,000,000 | RMB 1,000,000 |
+| 호가 방식 | 액면 RMB 100당 | 액면 RMB 100당 | 액면 RMB 100당 | 액면 RMB 100당 |
+| 호가단위 (최소가격변동폭) | RMB 0.002 | RMB 0.005 | RMB 0.005 | RMB 0.01 |
+| 호가단위 가치 | RMB 40 | RMB 50 | RMB 50 | RMB 100 |
+| 일일 가격제한폭 | ±0.5% | ±1.2% | ±2.0% | ±3.5% |
+| 계약 월물 | 3개 연속 분기월 (3/6/9/12월) | 3개 연속 분기월 | 3개 연속 분기월 | 3개 연속 분기월 |
+| 최종거래일 | 인도월 둘째 금요일 | 인도월 둘째 금요일 | 인도월 둘째 금요일 | 인도월 둘째 금요일 |
+| 결제 | 실물 인도 | 실물 인도 | 실물 인도 | 실물 인도 |
+| 인도 방식 | 전환계수를 통한 적격 국채 인도 | 전환계수를 통한 적격 국채 인도 | 전환계수를 통한 적격 국채 인도 | 전환계수를 통한 적격 국채 인도 |
+| 최소 매매증거금 | 0.5% | 1.0% | 2.0% | 3.5% |
+| 매매시간 | 9:30-11:30, 13:00-15:15 | 9:30-11:30, 13:00-15:15 | 9:30-11:30, 13:00-15:15 | 9:30-11:30, 13:00-15:15 |
+
+**인도 적격 채권 기준:** 중화인민공화국 재정부가 발행한 국채로서, 각 계약별 지정 범위 내의 잔존 만기를 가진 국채가 인도 적격이다.
+
+### 주가지수 옵션 (Stock Index Options)
+
+| 명세 | CSI 300 옵션 (IO) | CSI 1000 옵션 (MO) | SSE 50 옵션 (HO) |
+|--------------|---------------------|----------------------|---------------------|
+| 거래승수 | 포인트당 RMB 100 | 포인트당 RMB 100 | 포인트당 RMB 100 |
+| 행사방식 | 유럽형 | 유럽형 | 유럽형 |
+| 행사 | 현금 결제 | 현금 결제 | 현금 결제 |
+| 행사가격 간격 | 지수 수준에 따라 상이 | 지수 수준에 따라 상이 | 지수 수준에 따라 상이 |
+| 만기 월물 | 당월, 차 2개월, + 차 3개 분기월 | 당월, 차 2개월, + 차 3개 분기월 | 당월, 차 2개월, + 차 3개 분기월 |
+| 최종거래일 | 만기월 셋째 금요일 | 만기월 셋째 금요일 | 만기월 셋째 금요일 |
+| 매매시간 | 9:30-11:30, 13:00-15:00 | 9:30-11:30, 13:00-15:00 | 9:30-11:30, 13:00-15:00 |
+
+[Source: CFFEX, "CSI 300 Index Futures", http://www.cffex.com.cn/en_new/CSI300IndexFutures.html, accessed 2026-04-07]
+[Source: CFFEX, "CSI 500 Index Futures", http://www.cffex.com.cn/en_new/CSI500IndexFutures.html, accessed 2026-04-07]
+[Source: CFFEX, "CSI 1000 Index Futures", http://www.cffex.com.cn/en_new/CSI1000IndexFutures.html, accessed 2026-04-07]
+[Source: CFFEX, "10-year CGB Futures", http://www.cffex.com.cn/en_new/10t.html, accessed 2026-04-07]
+[Source: CFFEX, "2-year CGB Futures", http://www.cffex.com.cn/en_new/2ts.html, accessed 2026-04-07]
+[Source: CFFEX, "30-year CGB Futures", http://www.cffex.com.cn/en_new/30yearCGBFutures.html, accessed 2026-04-07]
+[Source: CFFEX, "CSI 300 Index Options", http://www.cffex.com.cn/en_new/CSI300IndexOptions.html, accessed 2026-04-07]
+[Source: CFFEX, "CSI 1000 Index Options", http://www.cffex.com.cn/en_new/CSI1000IndexOptions.html, accessed 2026-04-07]
+[Source: CFFEX, "SSE 50 Index Options", http://www.cffex.com.cn/en_new/SSE50IndexOptions.html, accessed 2026-04-07]
+[Source: Barchart, CFFEX contract specifications pages, accessed 2026-04-07]
+[Source: CFFEX, "Notice on Adjusting the Tick Size of 2-Year CGB Futures", http://cffex.com.cn/en_new/Notices/20231020/34775.html, accessed 2026-04-07]
+
+---
+
+## 증거금 체계 요약 (Margin Framework Summary)
+
+CFFEX는 SPAN이나 PRISMA와 같은 포트폴리오 기반 시스템이 아닌 **계약가액 대비 비율** 증거금 방법론을 사용한다. 주요 특징:
+
+1. **거래소 설정 최소 증거금**이 하한선 역할을 하며, 선물회사(브로커)는 통상 거래소 최소 수준에 2~6%p를 추가한다
+2. **증거금 단계적 인상:** 계약이 인도/만기에 근접하면 증거금이 인상된다
+3. **국채 선물 교차증거금:** 동일 고객의 동일 또는 상이한 국채 선물 상품의 매수·매도 포지션 간 증거금 상계가 가능하다
+4. **규제 당국의 조정:** CSRC와 CFFEX는 시장상황에 따라 증거금 요건을 조정할 권한을 보유하며, 2015년 위기 당시 주가지수 선물 증거금이 ~10%에서 40%로 인상된 바 있다
+5. **변동증거금:** 일일 시가평가 결제를 통해 매일 징수되며, 결제은행이 회원과 거래소 간 자금 이전을 중개한다
+
+| 상품 범주 | 거래소 최소 증거금 | 일반 총 증거금 (브로커 가산 포함) |
+|-----------------|------------------------|-------------------------------------|
+| 주가지수 선물 | 8% | 10-15% |
+| 2년 국채 선물 | 0.5% | 1-2% |
+| 5년 국채 선물 | 1.0% | 1.5-3% |
+| 10년 국채 선물 | 2.0% | 3-5% |
+| 30년 국채 선물 | 3.5% | 5-7% |
+
+[Source: CFFEX, contract specifications and trading rules, accessed 2026-04-07]
+[Source: Orient Futures Singapore, "CFFEX Stock Index Futures (QFI)", accessed 2026-04-07]

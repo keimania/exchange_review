@@ -1,0 +1,273 @@
+# China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3 (Overview)
+> **Type:** CCP + CSD (Central Counterparty and Central Securities Depository)
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | China Securities Depository and Clearing Corporation Limited (中国证券登记结算有限责任公司) |
+| Abbreviation | CSDC, SD&C, ChinaClear (中国结算, 中证登) |
+| Country / City | China / Beijing (HQ), with branches in Shanghai, Shenzhen, and Beijing |
+| Website | [http://www.chinaclear.cn](http://www.chinaclear.cn) |
+| Year Established | 30 March 2001 |
+| Ownership | Shanghai Stock Exchange (50%) and Shenzhen Stock Exchange (50%) -- effectively state-owned |
+| Legal Status | Non-profit entity approved by the China Securities Regulatory Commission (CSRC) |
+| President | Zhuang Mu |
+| Regulatory Authority | China Securities Regulatory Commission (CSRC) |
+| Total Investor Accounts | ~237 million unified accounts (一码通) as of end-2024, with ~12.7 million new accounts opened in 2024 [Source: CSDC 2024 Statistical Yearbook via Sina Finance] |
+| Securities Under Custody | RMB 11.05 quadrillion (Shanghai + Shenzhen exchanges, end-2024) [Source: CSDC 2024 Statistical Yearbook] |
+| CPMI-IOSCO PFMI Compliance | China has undergone PFMI assessments; CSDC publishes limited public disclosures compared to Western CCPs [unverified -- full PQD availability unclear] |
+
+> **Comparison with KRX/KSD:** CSDC combines both CCP and CSD functions in a single entity, whereas Korea separates these roles -- KRX acts as the CCP for exchange-traded products and KSD (Korea Securities Depository) serves as the CSD. CSDC's dual role is more comparable to historical European models before functional unbundling.
+
+### Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 2001 (Mar) | CSDC established with approval of CSRC, headquartered in Beijing [Source: [Wikipedia](https://en.wikipedia.org/wiki/China_Securities_Depository_and_Clearing_Corporation)] |
+| 2001 (Sep) | Shanghai Securities Central Depository and Clearing Corporation and Shenzhen Securities Depository Corporation merged into CSDC [Source: [Wikipedia](https://en.wikipedia.org/wiki/China_Securities_Depository_and_Clearing_Corporation)] |
+| 2003 (Jun) | CSDC data warehouse prototype system went live |
+| 2007 (Dec) | Shanghai Branch real-time clearing system launched |
+| 2014 (Nov) | Shanghai-Hong Kong Stock Connect launched; CSDC and HKSCC established mutual clearing links [Source: [SFC HK Joint Announcement](https://www.sfc.hk/en/News-and-announcements/Policy-statements-and-announcements/Joint-announcement-of-the-CSRC-and-SFC)] |
+| 2016 (Dec) | Shenzhen-Hong Kong Stock Connect launched; CSDC extended clearing link with HKSCC |
+| 2022 (Jan) | CSRC officially launched DVP reform for A-share settlement [Source: [WFE Focus](https://focus.world-exchanges.org/articles/csdc-dvp)] |
+| 2024 (Apr) | CSDC reduced minimum settlement reserve fund ratio from 18% to 16% to lower market costs [Source: [Xinhua Silk Road](https://en.imsilkroad.com/p/326945.html)] |
+| 2024 | Bond Connect CSD linkage expanded -- PBOC and HKMA MoU on multi-currency settlement (CNY, HKD, USD, EUR) and extended settlement hours [Source: [Chambers Debt Finance 2025 Guide](https://practiceguides.chambers.com/practice-guides/debt-finance-2025/china/trends-and-developments)] |
+
+---
+
+## 2. Clearing Model
+
+### 2.1 CCP Services
+
+CSDC acts as the central counterparty for all exchange-traded securities in China, becoming the buyer to every seller and seller to every buyer upon trade execution. Its CCP function covers:
+
+| Segment | Products | Exchange |
+|---------|----------|----------|
+| Equities | A-shares, B-shares, CDRs | SSE, SZSE, BSE |
+| Fixed Income | Treasury bonds, corporate bonds, convertible bonds | SSE, SZSE |
+| Funds | ETFs, LOFs, closed-end funds | SSE, SZSE |
+| Derivatives | Stock options (e.g., SSE 50 ETF options, CSI 300 ETF options) | SSE, SZSE |
+| Other | Margin lending securities, asset-backed securities | SSE, SZSE |
+
+[Source: [CSDC Company Profile](http://www.chinaclear.cn/english/comp/about_lmtt.shtml); [SSE Clearing and Settlement](https://english.sse.com.cn/start/settlement/clearing/)]
+
+> **Note:** CSDC does **not** clear financial futures or commodity derivatives -- these are handled by China Financial Futures Exchange (CFFEX) and commodity exchanges (Shanghai Futures Exchange, Dalian Commodity Exchange, Zhengzhou Commodity Exchange) respectively, each with their own clearing houses. This contrasts with KRX, where a single CCP clears both equities and listed derivatives.
+
+### 2.3 Netting
+
+CSDC employs **multilateral netting** as its primary clearing method for exchange-traded securities:
+
+- **Securities netting:** Net obligations of the same security issue with the same settlement date are calculated for each clearing participant
+- **Funds netting:** Net payment obligations are computed across all transactions for each participant on a given settlement date
+- CSDC interposes itself as CCP, providing **guaranteed settlement** through multilateral netting
+- The netting process runs after market close, with net positions calculated for T+1 settlement
+
+[Source: [SSE Clearing and Settlement](https://english.sse.com.cn/start/settlement/clearing/); [CSDC Settlement Rules](http://www.chinaclear.cn/english/005/legal_list2.shtml)]
+
+> **Comparison with KRX/KSD:** Both CSDC and KRX use multilateral netting for equity trades. KRX similarly interposes as CCP and nets obligations across all participants. The netting methodology is conceptually similar, though KRX operates on a T+2 settlement cycle (since 2024) while CSDC uses T+1.
+
+### 2.4 Clearing Membership
+
+CSDC operates a tiered clearing participant structure:
+
+| Type | Description |
+|------|-------------|
+| **Clearing Participants** | Securities companies, banks, and other institutions that directly settle with CSDC |
+| **Settlement Banks** | Designated commercial banks that provide funds settlement services (including Industrial and Commercial Bank of China, China Construction Bank, Agricultural Bank of China, Bank of China, etc.) |
+| **Custodian Banks** | Banks approved to provide securities custody for QFII/RQFII investors |
+
+- CSDC's Shanghai Branch handles clearing for SSE-listed securities
+- CSDC's Shenzhen Branch handles clearing for SZSE-listed securities
+- CSDC's Beijing Data Branch handles BSE and NEEQ (New Third Board) clearing
+
+[Source: [CSDC Company Profile](http://www.chinaclear.cn/english/comp/about_lmtt.shtml)]
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework
+
+CSDC employs several risk management tools to ensure settlement integrity:
+
+| Tool | Description |
+|------|-------------|
+| **Settlement Reserve Fund (结算备付金)** | Mandatory minimum cash reserves that clearing participants must maintain with CSDC. Minimum ratio reduced from 18% to 16% in April 2024 for stock-related business [Source: [Xinhua Silk Road](https://en.imsilkroad.com/p/326945.html)] |
+| **Settlement Guarantee Fund (结算保证金)** | Collective fund contributed by clearing participants to cover potential default losses |
+| **Mark-to-Market** | Daily marking of open positions and margin calls |
+| **DVP Linkage** | Since 2022 reform, securities delivery is contingent on fund payment and vice versa, eliminating principal risk |
+
+- For **stock options clearing**, CSDC applies initial margin, maintenance margin, and variation margin requirements similar to international practices [unverified -- specific methodology details not publicly available in English]
+
+> **Comparison with KRX:** KRX's risk management framework includes initial margin (KOSPI200 options use SPAN-like methodology), settlement fund contributions, and a joint compensation fund. CSDC's settlement reserve fund ratio mechanism (percentage-based minimum) is a distinctive Chinese approach, while KRX calculates margin requirements based on portfolio risk models.
+
+### 3.3 Default Waterfall
+
+CSDC's default management follows a general sequence [unverified -- specific waterfall structure based on inferred regulatory framework]:
+
+1. **Defaulting member's settlement reserve fund** -- first applied to cover the default
+2. **Defaulting member's settlement guarantee fund contribution** -- used if reserve fund is insufficient
+3. **CSDC's own capital (skin in the game)** -- CSDC contributes its own resources
+4. **Non-defaulting members' settlement guarantee fund contributions** -- loss mutualization
+5. **Additional assessment powers** -- CSDC may call for additional contributions
+
+> **Note:** Detailed public quantitative disclosures of CSDC's default waterfall with specific monetary amounts are not readily available in English-language sources. This is a significant transparency gap compared to Western CCPs that publish detailed CPMI-IOSCO PQD reports.
+
+### 3.6 Recovery & Resolution
+
+- CSDC operates under Chinese securities law and CSRC regulations for recovery and resolution
+- The CSRC has authority over CSDC as the resolution authority
+- China has not adopted a formal CCP resolution regime equivalent to the EU's CCP Recovery and Resolution Regulation (CCPRRR) or the US Dodd-Frank Title II framework [unverified]
+- DVP reform (2022) significantly reduced settlement risk by linking securities and funds delivery
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle
+
+CSDC's settlement cycles vary by product type:
+
+| Product | Securities Settlement | Funds Settlement | Notes |
+|---------|----------------------|-----------------|-------|
+| A-shares | T+0 (securities transfer) | T+1 (funds) | Securities are available for sale on T+0 but funds settle on T+1 |
+| B-shares | T+3 | T+3 | Longer cycle due to foreign currency settlement |
+| Bonds (exchange-traded) | T+0 / T+1 | T+0 / T+1 | Varies by bond type |
+| ETFs | T+0 (securities) | T+1 (funds) | Similar to A-shares |
+| Stock Options | T+0 | T+0 | Real-time gross settlement |
+| Stock Connect (Northbound) | T+0 (securities) | T+1 (funds) | Follows A-share settlement rules |
+
+[Source: [WFE Focus - CSDC DVP](https://focus.world-exchanges.org/articles/csdc-dvp); [Clearstream Settlement Process - China](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-process-china-1281680)]
+
+**Key Feature -- T+0 Securities / T+1 Funds:**
+China's A-share market has a unique settlement arrangement where securities ownership transfers on T+0 (trade day), but funds settlement occurs on T+1. This means investors can sell purchased shares on the same day they are bought (from a depository perspective), though China's "T+1 trading rule" prevents same-day selling of newly purchased shares.
+
+> **Comparison with KRX/KSD:** Korea moved to T+2 settlement for equities in 2024 (from T+2 already in practice). CSDC's T+0 securities / T+1 funds model is unique globally. In Korea, both securities and funds settle simultaneously on T+2, which is a more conventional DVP approach.
+
+### 4.2 DVP Model
+
+**Pre-2022 (Non-DVP):**
+- Before January 2022, A-share settlement was not true DVP -- securities and funds were settled separately without a strict conditional linkage
+- Settlement could only occur at the end of T+1 (16:00), creating liquidity and counterparty risk
+
+**Post-2022 DVP Reform:**
+- CSRC launched the DVP reform on 14 January 2022
+- CSDC adopted **DVP Model 2** (gross securities settlement against net funds settlement):
+  - Securities are delivered on a trade-by-trade (gross) basis
+  - Funds are settled on a net basis after multilateral netting
+  - Securities delivery occurs if and only if funds are paid, and vice versa
+- After the reform, participants can provide funds earlier during T+1 to complete settlement, rather than waiting until 16:00
+- This reform aligned China's capital market closer to international PFMI standards (Principle 12: Exchange-of-value settlement systems)
+
+[Source: [WFE Focus - CSDC DVP Reform](https://focus.world-exchanges.org/articles/csdc-dvp)]
+
+> **Comparison with KRX/KSD:** KSD operates a DVP Model 3 (net securities against net funds) for equity settlement. CSDC's adoption of DVP Model 2 (gross securities, net funds) is more conservative and provides greater settlement finality at the individual trade level, though it requires more securities to be pre-positioned.
+
+---
+
+## 5. Technology & Infrastructure
+
+| Component | Description |
+|-----------|-------------|
+| **Unified Account System (一码通)** | One-code-through system linking all investor accounts across SSE, SZSE, BSE under a single identifier; over 237 million accounts as of end-2024 |
+| **Real-Time Clearing System** | Shanghai Branch launched real-time clearing in December 2007; processes multilateral netting after market close |
+| **Electronic Book-Entry System** | Fully dematerialized/immobilized securities depository -- all securities are held in electronic form |
+| **Cross-Border Systems** | Dedicated systems for Stock Connect (Shanghai-Hong Kong, Shenzhen-Hong Kong) clearing and settlement |
+| **Data Infrastructure** | Beijing Data Branch manages data warehousing and IT infrastructure; prototype data warehouse launched in 2003 |
+
+- CSDC operates a proprietary technology stack (not based on common platforms like Cinnober or NASDAQ OMX)
+- The system handles massive scale: ~237 million investor accounts, two major exchanges, and daily settlement volumes for one of the world's largest equity markets
+
+[Source: [CSDC Company Profile](http://www.chinaclear.cn/english/comp/about_lmtt.shtml); [SSE Registration and Depository](https://english.sse.com.cn/start/settlement/depository/)]
+
+---
+
+## 6. Regulatory Framework
+
+| Aspect | Details |
+|--------|---------|
+| **Primary Regulator** | China Securities Regulatory Commission (CSRC) |
+| **Key Legislation** | Securities Law of the People's Republic of China (revised 2019); Measures for the Administration of Securities Registration and Settlement |
+| **Settlement Rules** | CSDC Securities Registration and Settlement Rules (revised 2022 for DVP reform) |
+| **Oversight** | CSRC exercises comprehensive regulatory authority over CSDC's operations, rules, fee structures, and risk management |
+| **International Standards** | China has undergone CPMI-IOSCO assessments; CSDC aligns with PFMI principles (particularly following DVP reform) |
+| **PBoC Role** | PBoC oversees payment system aspects; issued regulatory measures on financial infrastructures in August 2025 |
+
+- CSDC as a non-profit entity has a unique governance structure where its two shareholders (SSE and SZSE) are themselves regulated by CSRC, creating a vertically integrated regulatory chain
+- CSDC does **not** currently hold QCCP status in any foreign jurisdiction [unverified]
+
+[Source: [CSRC](http://www.csrc.gov.cn/csrc_en/); [Chambers Debt Finance 2025 Guide](https://practiceguides.chambers.com/practice-guides/debt-finance-2025/china/trends-and-developments)]
+
+---
+
+## 7. Interoperability
+
+### Stock Connect Clearing Arrangements
+
+The most significant cross-border interoperability arrangement is the **Stock Connect** program linking Mainland China with Hong Kong:
+
+| Program | Launch | Clearing Link |
+|---------|--------|---------------|
+| Shanghai-Hong Kong Stock Connect | Nov 2014 | CSDC Shanghai Branch <-> HKSCC |
+| Shenzhen-Hong Kong Stock Connect | Dec 2016 | CSDC Shenzhen Branch <-> HKSCC |
+| Bond Connect (Northbound) | Jul 2017 | CSDC/CCDC <-> CMU (HKMA) |
+| Bond Connect (Southbound) | Sep 2021 | CSDC/CCDC <-> CMU (HKMA) |
+
+**Clearing Link Mechanism:**
+- CSDC and HKSCC became each other's clearing participant
+- For **Northbound trades** (international investors buying A-shares): HKSCC settles with CSDC on behalf of its clearing participants, following A-share settlement rules (T+0 securities / T+1 funds)
+- For **Southbound trades** (Mainland investors buying HK stocks): CSDC settles with HKSCC on behalf of its clearing participants, following HK settlement rules (T+2)
+- Each CCP bears the counterparty risk of its own members; CSDC and HKSCC do not guarantee each other's members
+
+[Source: [SSE Stock Connect Settlement](https://english.sse.com.cn/access/stockconnect/settlement/); [SFC Joint Announcement](https://www.sfc.hk/en/News-and-announcements/Policy-statements-and-announcements/Joint-announcement-of-the-CSRC-and-SFC)]
+
+### Other Linkages
+
+- **CCDC (China Central Depository & Clearing):** CSDC handles exchange-traded bonds while CCDC handles interbank bonds -- they are separate entities for different markets
+- **Beijing Stock Exchange / NEEQ:** CSDC provides clearing for BSE and the National Equities Exchange and Quotations system through its Beijing Data Branch
+
+> **Comparison with KRX/KSD:** KSD has established CSD links with numerous international CSDs (Euroclear, Clearstream, DTC) for cross-border settlement. CSDC's cross-border links are more limited, primarily operating through the Stock Connect and Bond Connect frameworks, reflecting China's managed capital account approach.
+
+---
+
+## 9. Recent Developments
+
+| Date | Development |
+|------|-------------|
+| 2022 (Jan) | DVP reform launched -- the most significant structural change to China's securities settlement system since CSDC's establishment |
+| 2024 (Jan) | PBOC-HKMA MoU strengthened Bond Connect CSD linkage cooperation |
+| 2024 (Apr) | Settlement reserve fund minimum ratio reduced from 18% to 16% for stock business |
+| 2024 | Multi-currency settlement (CNY, HKD, USD, EUR) supported through CSD linkage for Bond Connect |
+| 2024 | Extended settlement hours under CSD linkage for Bond Connect |
+| 2025 (Aug) | PBoC issued regulatory measures on financial infrastructures covering registration, depository, clearing and settlement systems [Source: [Chambers Guide](https://practiceguides.chambers.com/practice-guides/debt-finance-2025/china/trends-and-developments)] |
+| Ongoing | Expansion of eligible products under Stock Connect (ETFs added in 2022); gradual opening of China's capital markets |
+
+**Key Trends:**
+- Continued alignment with international PFMI standards following DVP reform
+- Incremental expansion of cross-border connectivity through Stock Connect and Bond Connect
+- Reduction of settlement costs for market participants (reserve fund ratio cuts)
+- Development of Beijing Stock Exchange clearing infrastructure for SME/innovation market
+
+---
+
+## Sources
+
+- [CSDC Official Website (English)](http://www.chinaclear.cn/english/en_index.shtml)
+- [CSDC Company Profile](http://www.chinaclear.cn/english/comp/about_lmtt.shtml)
+- [Wikipedia - CSDC](https://en.wikipedia.org/wiki/China_Securities_Depository_and_Clearing_Corporation)
+- [WFE Focus - Introducing the DVP Reform of China's Capital Market](https://focus.world-exchanges.org/articles/csdc-dvp)
+- [SSE - Clearing and Settlement](https://english.sse.com.cn/start/settlement/clearing/)
+- [SSE - Registration and Depository](https://english.sse.com.cn/start/settlement/depository/)
+- [SSE - Stock Connect Settlement](https://english.sse.com.cn/access/stockconnect/settlement/)
+- [Clearstream - Settlement Process China](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-process-china-1281680)
+- [Xinhua Silk Road - CSDC Settlement Reserve Fund Reduction](https://en.imsilkroad.com/p/326945.html)
+- [Chambers - Debt Finance 2025 China](https://practiceguides.chambers.com/practice-guides/debt-finance-2025/china/trends-and-developments)
+- [SFC HK - Joint Announcement on Stock Connect](https://www.sfc.hk/en/News-and-announcements/Policy-statements-and-announcements/Joint-announcement-of-the-CSRC-and-SFC)
+- [BIS CPSS Red Book - China (2012)](https://www.bis.org/cpmi/publ/d105_cn.pdf)
+- CSDC 2024 Statistical Yearbook (中国证券登记结算统计年鉴 2024)

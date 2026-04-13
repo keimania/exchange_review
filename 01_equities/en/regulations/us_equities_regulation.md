@@ -1,0 +1,943 @@
+# US Equities Market Regulation
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 1
+> **Domain:** Equities — Regulatory Framework
+
+---
+
+## Table of Contents
+
+1. [Regulatory Authority Structure](#1-regulatory-authority-structure)
+2. [Key Regulations](#2-key-regulations)
+3. [Market Structure Rules](#3-market-structure-rules)
+4. [Market Data Rules](#4-market-data-rules)
+5. [Market Surveillance](#5-market-surveillance)
+6. [Reporting Requirements](#6-reporting-requirements)
+7. [Cross-border Arrangements](#7-cross-border-arrangements)
+8. [Recent Changes (2021-2026)](#8-recent-changes-2021-2026)
+9. [Comparison with Korean Framework](#9-comparison-with-korean-framework)
+
+---
+
+## 1. Regulatory Authority Structure
+
+### 1.1 Securities and Exchange Commission (SEC)
+
+The SEC is the federal government agency that serves as the ultimate regulator of the United States securities industry. Established by the Securities Exchange Act of 1934 in response to the 1929 stock market crash and the Great Depression, the SEC's mission is to protect investors, maintain fair, orderly, and efficient markets, and facilitate capital formation.
+
+[Source: SEC, "About the SEC", accessed 2026-04-06]
+
+**Organizational Structure:**
+
+| Division / Office | Primary Function |
+|---|---|
+| Division of Trading and Markets | Oversight of exchanges, broker-dealers, SROs, clearing agencies, transfer agents |
+| Division of Corporation Finance | Review of corporate filings, disclosure requirements |
+| Division of Enforcement | Investigation and prosecution of securities law violations |
+| Division of Investment Management | Regulation of investment companies and advisers |
+| Division of Economic and Risk Analysis (DERA) | Economic analysis, data analytics, risk assessment |
+| Office of Compliance Inspections and Examinations (OCIE) | Examination programs for regulated entities |
+
+**Core Powers:**
+- Registration and regulation of national securities exchanges, broker-dealers, transfer agents, and clearing agencies
+- Rulemaking authority under the Securities Exchange Act of 1934 and other statutes
+- Enforcement authority including civil actions, administrative proceedings, and referrals for criminal prosecution
+- Oversight of SROs including approval/disapproval of proposed rule changes
+- Authority to issue no-action letters, interpretive guidance, and exemptive orders
+
+### 1.2 FINRA as Self-Regulatory Organization (SRO)
+
+The Financial Industry Regulatory Authority (FINRA) is a private, not-for-profit corporation that acts as the primary self-regulatory organization for broker-dealers in the United States. FINRA was created in 2007 through the consolidation of the National Association of Securities Dealers (NASD) and the member regulation, enforcement, and arbitration operations of the New York Stock Exchange.
+
+[Source: FINRA, "About FINRA", accessed 2026-04-06]
+
+**FINRA Key Statistics (as of 2025-2026):**
+
+| Metric | Value |
+|---|---|
+| Member brokerage firms | ~3,250+ |
+| Registered securities representatives | ~625,000 |
+| Registered branch offices | ~130,000+ [estimated] |
+| Annual disciplinary actions | ~600-800 [estimated] |
+| Annual arbitration cases | ~3,000-4,000 [estimated] |
+
+**FINRA Regulatory Functions:**
+- **Rulemaking:** Writes and enforces rules governing the activities of all registered broker-dealer firms and their registered representatives (subject to SEC approval)
+- **Examination:** Conducts regular and cause examinations of member firms
+- **Enforcement:** Investigates potential violations and imposes sanctions (fines, suspensions, bars, expulsions)
+- **Market Surveillance:** Operates cross-market surveillance to detect manipulation, insider trading, and other abuses
+- **Dispute Resolution:** Administers the largest securities dispute resolution forum in the United States
+- **Registration:** Administers qualification examinations (Series 7, Series 63, etc.) and maintains registration records through the Central Registration Depository (CRD) and BrokerCheck
+
+**Constitutional Status:** In June 2025, the U.S. Supreme Court declined to hear an argument that FINRA is unconstitutional, upholding its regulatory authority. However, Congress continues to debate FINRA's structure — notably, Republican Conference Chair Lisa McClain introduced legislation in the 119th Congress (2025) to transfer FINRA's rulemaking, examination, and enforcement authority directly to the SEC.
+
+[Source: Sidley Austin, "FINRA Issues 2026 Regulatory Oversight Report", December 2025, accessed 2026-04-06]
+
+### 1.3 Exchange SRO Model
+
+Under the Securities Exchange Act of 1934, each national securities exchange registered with the SEC is itself a Self-Regulatory Organization. Exchanges have the statutory obligation to enforce compliance by their members with both exchange rules and federal securities laws.
+
+**Currently Registered National Securities Exchanges (Equities):**
+
+| Exchange Group | Exchanges | SRO Status |
+|---|---|---|
+| NYSE Group (ICE) | NYSE, NYSE Arca, NYSE American, NYSE Chicago (NYSE Texas), NYSE National | SRO (regulatory services outsourced to FINRA) |
+| Nasdaq Group | Nasdaq Stock Market, Nasdaq BX, Nasdaq PHLX | SRO (regulatory services outsourced to FINRA) |
+| Cboe Global Markets | Cboe BZX, Cboe BYX, Cboe EDGX, Cboe EDGA | SRO (regulatory services outsourced to FINRA) |
+| MEMX | Members Exchange | SRO |
+| MIAX Group | MIAX Pearl Equities | SRO |
+| IEX | Investors Exchange | SRO |
+| LTSE | Long-Term Stock Exchange | SRO |
+
+**Regulatory Services Agreements (RSAs):**
+
+Most exchanges have entered into Regulatory Services Agreements with FINRA, under which FINRA performs market surveillance and member regulation on behalf of the exchange. This avoids duplication of regulatory efforts and leverages FINRA's cross-market surveillance capabilities. Under an RSA, the exchange retains ultimate SRO responsibility, but day-to-day regulatory functions are delegated to FINRA.
+
+[Source: SEC, "Staff Paper on Cross-Market Regulatory Coordination", accessed 2026-04-06]
+
+### 1.4 Regulatory Interplay
+
+The US equities market regulatory structure operates as a multi-layered framework:
+
+```
+┌─────────────────────────────────────────────┐
+│              U.S. Congress                   │
+│  (Securities Act 1933, Exchange Act 1934,   │
+│   Dodd-Frank 2010, etc.)                    │
+└─────────────────┬───────────────────────────┘
+                  │ Statutory Authority
+┌─────────────────▼───────────────────────────┐
+│     Securities and Exchange Commission      │
+│     (SEC) — Federal Regulator               │
+│  • Rulemaking  • Oversight of SROs          │
+│  • Enforcement • Registration               │
+└──────┬──────────────────────┬───────────────┘
+       │ Oversight             │ Oversight
+┌──────▼──────────┐   ┌───────▼──────────────┐
+│     FINRA       │   │  National Securities │
+│  (SRO for       │   │  Exchanges (SROs)    │
+│  Broker-Dealers)│◄──┤  NYSE, Nasdaq, Cboe, │
+│                 │RSA│  IEX, MEMX, etc.     │
+└──────┬──────────┘   └───────┬──────────────┘
+       │ Regulate              │ Regulate
+┌──────▼──────────────────────▼──────────────┐
+│         Broker-Dealers / Market Makers      │
+│         Market Participants                 │
+└────────────────────────────────────────────┘
+```
+
+**Key Coordination Mechanisms:**
+- **Intermarket Surveillance Group (ISG):** Cooperative organization of exchanges, market centers, and regulatory authorities that share surveillance information to detect and investigate cross-market trading abuses
+- **National Market System (NMS):** Regulatory framework mandating interconnection and competition among exchanges, ensuring best execution through trade-through protections
+- **SEC Review of SRO Rule Filings:** All SRO rule changes must be filed with the SEC under Section 19(b) of the Exchange Act, subject to public comment and SEC approval/disapproval
+
+---
+
+## 2. Key Regulations
+
+### 2.1 Securities Exchange Act of 1934
+
+The foundational statute governing US securities markets. Key provisions include:
+
+| Section | Subject | Description |
+|---|---|---|
+| Section 5 & 6 | Exchange Registration | Requires all national securities exchanges to register with the SEC and comply with SRO obligations |
+| Section 12 | Registration of Securities | Requires issuers meeting size thresholds to register their securities with the SEC |
+| Section 13 | Periodic Reporting | Mandates annual (10-K), quarterly (10-Q), and current (8-K) reporting by registered issuers |
+| Section 15 | Broker-Dealer Registration | Requires all brokers and dealers to register with the SEC (via Form BD and CRD) |
+| Section 15A | SRO for OTC | Authorizes registration of securities associations (basis for FINRA/NASD) |
+| Section 10(b) / Rule 10b-5 | Anti-Fraud | Prohibits manipulation and deception in connection with the purchase or sale of securities |
+| Section 13(d) | Beneficial Ownership | Requires disclosure when any person acquires >5% of a class of equity securities |
+| Section 16 | Short-Swing Profits | Requires officers, directors, and >10% owners to report transactions and disgorge short-swing profits |
+| Section 17A | Clearance and Settlement | Authorizes SEC regulation of clearing agencies, transfer agents |
+| Section 19 | SRO Oversight | Gives SEC authority over SRO rulemaking, disciplinary actions |
+
+[Source: Cornell Law Institute, "Securities Exchange Act of 1934", accessed 2026-04-06]
+
+### 2.2 Regulation NMS (National Market System)
+
+Adopted by the SEC in 2005 (effective 2007), Regulation NMS is the cornerstone regulation governing the structure of the US equities market. It was designed to modernize and strengthen the National Market System by fostering "competition among individual markets and competition among individual orders."
+
+[Source: SEC, "Final Rule: Regulation NMS", Release No. 34-51808, June 2005, accessed 2026-04-06]
+
+#### Rule 611 — Order Protection Rule (Trade-Through Rule)
+
+- **Purpose:** Ensures intermarket price priority for quotations that are immediately and automatically accessible
+- **Mechanism:** Requires trading centers (exchanges, ATSs, wholesalers) to establish, maintain, and enforce written policies and procedures reasonably designed to prevent "trade-throughs" — executing a trade at a price inferior to a protected quotation displayed at another trading center
+- **Protected Quotation:** Only "automated quotations" qualify for protection; manual quotations do not receive trade-through protection
+- **Exceptions:** Include intermarket sweep orders (ISOs), flickering quotations, single-priced opening/closing/reopening transactions, and quotations displaying a price not based on a current bid or offer
+- **Impact:** Created the framework for the current fragmented but interconnected US market structure, enabling multiple exchanges and ATSs to compete while ensuring investors receive the best available prices
+
+#### Rule 610 — Access Rule
+
+- **Purpose:** Ensures fair and non-discriminatory access to quotations
+- **Key Provisions:**
+  - Prohibits trading centers from imposing unfairly discriminatory terms that prevent or inhibit any person from accessing protected quotations
+  - **Access Fee Cap:** Originally limited fees to $0.003 per share (30 mils) for access to protected quotations in NMS stocks priced at or above $1.00
+  - As of the September 2024 amendments (compliance delayed to November 2026): new uniform cap of **$0.001 per share (10 mils)** for all stocks priced above $1.00
+  - Requires each SRO to establish, maintain, and enforce rules prohibiting its members from engaging in a pattern or practice of displaying quotations that lock or cross protected quotations
+
+#### Rule 612 — Sub-Penny Rule (Minimum Pricing Increments)
+
+- **Original Rule (2005):** Prohibited market participants from accepting, ranking, or displaying orders, quotations, or indications of interest in a pricing increment finer than $0.01 for NMS stocks priced at $1.00 or above, and $0.0001 for NMS stocks priced below $1.00
+- **2024 Amendments (compliance delayed to November 2026):** Establishes a variable minimum tick size based on the Time-Weighted Average Quoted Spread (TWAQS):
+  - **$0.01 tick** where TWAQS > $0.015
+  - **$0.005 tick (half-penny)** where TWAQS <= $0.015
+  - Tick assignments to be adjusted semi-annually (first business day of May and November)
+  - Approximately 74.3% of NMS stocks expected to move to half-penny increments
+
+#### Rule 603 — Distribution of Market Data
+
+- Governs the distribution, display, and use of consolidated market data
+- Requires SROs to act jointly to disseminate consolidated information on quotations and transactions
+- Forms the basis for the SIP/CTS/CQS/UTP frameworks (see Section 4)
+
+[Source: SEC, "Final Rule: Regulation NMS: Minimum Pricing Increments, Access Fees, and Transparency of Better Priced Orders", Release No. 34-101070, September 2024, accessed 2026-04-06]
+
+### 2.3 Regulation SHO (Short Sales)
+
+Adopted in 2004 (effective January 3, 2005), Regulation SHO governs short selling in the United States.
+
+**Key Provisions:**
+
+| Rule | Name | Description |
+|---|---|---|
+| Rule 200 | Order Marking | Requires broker-dealers to mark all sell orders as "long," "short," or "short exempt" |
+| Rule 203(b)(1) | Locate Requirement | Before effecting a short sale, a broker-dealer must "locate" available shares to borrow; bona fide market makers have limited exemptions |
+| Rule 203(b)(3) | Close-Out Requirement | Participants of clearing agencies must close out fail-to-deliver positions in "threshold securities" by purchasing or borrowing shares within specified timeframes (T+3 for short sales, T+5 for long sales) |
+| Rule 204 | Mandatory Close-Out (Amended 2008) | Strengthened close-out requirements: fail-to-deliver positions must be closed out by T+2 (market maker exception: T+5) |
+| Rule 201 | Alternative Uptick Rule (2010) | Short-sale circuit breaker: triggered when a stock's price declines by 10% or more from the prior day's close. Once triggered, short selling is restricted for the remainder of the trading day and the following trading day — short sales may only be executed at a price above the current national best bid ("short sale price test restriction") |
+
+**Threshold Securities:** Securities with significant fail-to-deliver positions (aggregate failures of 10,000+ shares per security per day for 5+ consecutive settlement days, and equal to at least 0.5% of shares outstanding) are designated as "threshold securities" and subject to enhanced close-out requirements.
+
+[Source: SEC, "Short Sales", 17 CFR 242.200-204, accessed 2026-04-06]
+[Source: NYSE, "Short Selling and Reg SHO Resource Guide", accessed 2026-04-06]
+
+### 2.4 Regulation ATS (Alternative Trading Systems)
+
+Adopted in 1998 under the Securities Exchange Act of 1934, Regulation ATS provides a regulatory framework for alternative trading systems (commonly known as "dark pools" and electronic communication networks, or ECNs).
+
+**Key Provisions:**
+
+- **Registration Choice:** An ATS may choose to register as either a national securities exchange or as a broker-dealer and comply with Regulation ATS
+- **Form ATS / Form ATS-N:** ATSs must file an initial operation report (Form ATS, or Form ATS-N for NMS stock ATSs) with the SEC and keep it updated
+- **Fair Access (Rule 301(b)(5)):** ATSs that reach 5% or more of average daily volume in any NMS stock during 4 of the preceding 6 months must provide fair access to all qualified participants and not unreasonably prohibit or limit access
+- **Capacity, Integrity, and Security:** ATSs must establish adequate safeguards and procedures to protect subscribers' confidential trading information
+- **Order Display / Integration:** ATSs displaying the best-priced orders in NMS stocks with 5% or more of the trading volume must provide those orders to a national securities exchange or association for public display
+
+**ATS Landscape (as of 2025-2026):**
+- Approximately 30-40 active NMS stock ATSs (dark pools) [estimated]
+- ATSs collectively handle approximately 12-15% of total US equity volume [estimated]
+- Major operators include Citadel Connect, UBS ATS, Virtu MatchIt, Goldman Sachs Sigma-X, Morgan Stanley MS Pool, JP Morgan JPM-X, and others
+
+[Source: SEC, "Regulation of Exchanges and Alternative Trading Systems", 17 CFR 242.300-304, accessed 2026-04-06]
+
+### 2.5 Dodd-Frank Wall Street Reform and Consumer Protection Act (2010)
+
+Signed into law on July 21, 2010, the Dodd-Frank Act was the most sweeping financial regulatory reform since the 1930s. While primarily focused on systemic risk and derivatives, it significantly impacted equities markets.
+
+**Key Provisions Affecting Equities Markets:**
+
+| Title / Provision | Impact on Equities |
+|---|---|
+| Title VI — Volcker Rule (Section 619) | Restricts banks and their affiliates from proprietary trading (with exceptions for market making, hedging, government securities) — reduced bank presence in equities market making |
+| Title VII — Derivatives | Mandated central clearing and exchange trading for standardized OTC derivatives; established swap execution facilities (SEFs). Relevant for equity derivatives (total return swaps, equity options clearing) |
+| Title IX — Investor Protection | Enhanced SEC enforcement tools; established SEC Office of the Investor Advocate; authorized SEC to impose fiduciary duty on broker-dealers (not yet fully implemented) |
+| Section 929X | Expanded aiding-and-abetting liability under the Exchange Act |
+| Section 929I | Enhanced SEC subpoena powers in cross-border investigations |
+| Section 975 | Supervision of security-based swap dealers and major security-based swap participants |
+| Title VIII — Financial Market Utilities | Designates systemically important clearing agencies (e.g., DTCC, OCC) for enhanced supervision by SEC and Federal Reserve |
+| Section 971 | Proxy access (SEC authorized to adopt rules facilitating shareholder nominations of directors) |
+
+[Source: Congress.gov, "The Dodd-Frank Wall Street Reform and Consumer Protection Act: Background and Summary", accessed 2026-04-06]
+
+---
+
+## 3. Market Structure Rules
+
+### 3.1 Limit Up-Limit Down (LULD) Mechanism
+
+The LULD Plan was initially approved by the SEC on May 31, 2012, on a pilot basis, following the May 6, 2010 Flash Crash. It became a permanent rule on April 11, 2019. The plan prevents trades in NMS stocks from occurring outside specified price bands and imposes trading pauses when necessary.
+
+[Source: LULD Plan, luldplan.com, accessed 2026-04-06]
+[Source: FINRA, "Limit Up/Limit Down (LULD) Plan", accessed 2026-04-06]
+
+**Security Tiers:**
+
+| Tier | Securities Included |
+|---|---|
+| Tier 1 | All securities in the S&P 500, Russell 1000 Index, and select ETPs (per the LULD Tier 1 ETP List) |
+| Tier 2 | All other NMS securities not included in Tier 1 |
+
+**Percentage Parameters (Price Bands):**
+
+| Security Tier | Price Range | 9:30-9:45 AM & 3:35-4:00 PM (Opening/Closing) | 9:45 AM - 3:35 PM (Regular Hours) |
+|---|---|---|---|
+| Tier 1 | > $3.00 | 10% | 5% |
+| Tier 1 | $0.75 - $3.00 | 40% | 20% |
+| Tier 1 | < $0.75 | Lesser of $0.30 or 150% | Lesser of $0.15 or 75% |
+| Tier 2 | > $3.00 | 20% | 10% |
+| Tier 2 | $0.75 - $3.00 | 40% | 20% |
+| Tier 2 | < $0.75 | Lesser of $0.30 or 150% | Lesser of $0.15 or 75% |
+
+**Reference Price:**
+- The reference price is the arithmetic mean price of the security over the immediately preceding 5-minute trading period
+- Price bands are calculated by applying the percentage parameter to the reference price (upper band = reference price + percentage; lower band = reference price - percentage)
+- Reference prices and bands are updated every 30 seconds during regular trading hours
+
+**LULD States and Trading Pauses:**
+
+```
+Normal Trading
+     │
+     ▼ Price touches upper/lower band
+Limit State (15 seconds)
+     │
+     ├─ Price moves back within bands → Normal Trading
+     │
+     └─ Price remains at limit after 15 seconds
+          │
+          ▼
+     Trading Pause (5 minutes)
+          │
+          ▼
+     Reopening Auction (Primary Listing Exchange)
+          │
+          ▼
+     Normal Trading Resumes
+```
+
+- **Limit State:** Entered when the National Best Bid (Offer) equals the lower (upper) price band. During a Limit State, trading can continue but only at prices within the bands. If trading cannot occur within the price band for 15 seconds, a Trading Pause is triggered.
+- **Trading Pause:** Lasts 5 minutes. The primary listing exchange conducts a reopening auction to re-establish an equilibrium price.
+- **Straddle State:** Occurs when the National Best Bid is below the lower price band or the National Best Offer is above the upper price band (typically due to one side of the market disappearing).
+
+### 3.2 Market-Wide Circuit Breakers (MWCB)
+
+Market-Wide Circuit Breakers halt trading across all US equity markets when the S&P 500 Index experiences severe declines. Originally introduced after the 1987 crash ("Black Monday"), the current framework was adopted on April 8, 2013 (replacing the Dow-based thresholds from the 1988 rules and the 2012 amendments).
+
+[Source: NYSE, "Market-Wide Circuit Breakers FAQ", accessed 2026-04-06]
+[Source: SEC/Investor.gov, "Stock Market Circuit Breakers", accessed 2026-04-06]
+
+**MWCB Thresholds:**
+
+| Level | Threshold (S&P 500 decline from prior close) | Before 3:25 PM ET | At or After 3:25 PM ET |
+|---|---|---|---|
+| Level 1 | **7%** | 15-minute trading halt across all markets | No halt |
+| Level 2 | **13%** | 15-minute trading halt across all markets | No halt |
+| Level 3 | **20%** | Trading halted for remainder of trading day | Trading halted for remainder of trading day |
+
+**Operational Details:**
+- Trigger levels are calculated daily based on the prior day's closing value of the S&P 500 Index and rounded to the nearest 25 basis points (published by NYSE)
+- A Level 1 or Level 2 halt may only be triggered once per trading day
+- After a Level 1 halt, trading resumes after 15 minutes; a subsequent decline to Level 2 would trigger another 15-minute halt
+- A Level 3 halt closes markets for the remainder of the day regardless of when it occurs
+- During a halt, all trading in equities, options, and single-stock futures is halted
+
+**Recent Triggering (2025-2026):**
+- On April 7, 2025, the MWCB was triggered following the announcement of US tariffs. [unverified — specific level and details require confirmation]
+- On March 9, 2026, the KRX issued a circuit breaker on KOSPI trading over market volatility, coinciding with global market turmoil. [Source: Korea Times, March 2026]
+
+### 3.3 Clearly Erroneous Trade Rules
+
+Exchanges and FINRA maintain rules to review and potentially nullify (break) or adjust trades that are executed at prices substantially away from the prevailing market price at the time of execution.
+
+[Source: FINRA, "Rule 11892 — Clearly Erroneous Transactions in Exchange-Listed Securities", accessed 2026-04-06]
+
+**Key Parameters:**
+
+| Reference Price Range | Percentage Threshold for Nullification |
+|---|---|
+| $0.00 - $25.00 | 10% |
+| $25.01 - $50.00 | 5% |
+| > $50.00 | 3% |
+| Multi-stock events (affecting 20+ securities) | 30% or greater from reference price |
+
+**Process:**
+1. A market participant may request a review of a transaction within 30 minutes of execution
+2. The exchange or FINRA reviews the transaction against the reference price (typically the last sale before the erroneous trade) and the applicable percentage threshold
+3. Additional factors considered: system malfunctions, volume/volatility, news events, whether trading was recently halted, overall market conditions
+4. The exchange/FINRA may nullify, adjust, or decline to act
+5. Appeals may be made to a panel of exchange officials
+
+**During Extraordinary Market Conditions:**
+FINRA will nullify all transactions at prices 30% or more away from the reference price during a review period selected by FINRA and other SROs.
+
+[Source: SEC, "Press Release: SEC Approves New Exchange Rules for Breaking Clearly Erroneous Trades", 2009-215, October 2009, accessed 2026-04-06]
+
+### 3.4 Short Sale Restrictions
+
+Beyond Regulation SHO (Section 2.3), additional short sale-related market structure rules include:
+
+**Rule 201 — Alternative Uptick Rule (Short Sale Circuit Breaker):**
+- **Trigger:** Activated when a stock's price declines by **10% or more** from the prior day's closing price
+- **Duration:** Restriction applies for the remainder of the current trading day and the entire following trading day
+- **Restriction:** During the restriction period, short sales may only be executed at a price above the current national best bid (the "short sale price test")
+- **Purpose:** Prevents short selling from further driving down a stock already experiencing significant price decline
+
+**Regulation SHO Threshold Securities List:**
+- Published daily by each SRO
+- Securities with aggregate fail-to-deliver positions meeting the threshold criteria are subject to mandatory close-out requirements
+- Broker-dealers must pre-borrow (not merely locate) shares before executing short sales in threshold securities with extended fails
+
+---
+
+## 4. Market Data Rules
+
+### 4.1 Securities Information Processors (SIPs)
+
+The SIP system provides the backbone for consolidated real-time market data dissemination across all US equity markets. Under Section 11A of the Securities Exchange Act and Regulation NMS Rule 603, exchanges are required to jointly operate plans for distributing consolidated quotation and transaction data.
+
+**Current SIP Architecture (pre-CT Plan transition):**
+
+| SIP | Operator | Securities Covered | Data Types |
+|---|---|---|---|
+| **CTS / CQS** (Network A & B) | CTA Plan / NYSE | NYSE-listed (Tape A) and NYSE American, Cboe, etc.-listed (Tape B) | CTS: last sale/trade data; CQS: quotation data (NBBO) |
+| **UTDF / UQDF** (Network C) | UTP Plan / Nasdaq | Nasdaq-listed (Tape C) | UTDF: last sale/trade data; UQDF: quotation data |
+
+[Source: CTA Plan, ctaplan.com, accessed 2026-04-06]
+[Source: UTP Plan, utpplan.com, accessed 2026-04-06]
+
+**SIP Data Elements:**
+- National Best Bid and Offer (NBBO)
+- Last sale price, volume, and reporting market center
+- Short sale restriction indicator
+- LULD price band indicators
+- Regulatory halt indicators
+
+### 4.2 CT Plan Reforms (New Consolidated Tape Plan)
+
+On November 24, 2024, the SEC approved the new "CT Plan" — a single, unified NMS Plan to govern the public dissemination of real-time consolidated equity market data for all NMS stocks. This plan will eventually replace both the CTA/CQ Plan and the UTP Plan.
+
+[Source: SEC, Release No. 34-101672, November 2024, accessed 2026-04-06]
+
+**Key Features of the New CT Plan:**
+- **Unified Governance:** A single plan replacing the current dual-plan structure (CTA/CQ and UTP)
+- **Competing Consolidators:** The new framework envisions the potential for multiple competing SIPs (competing consolidators), rather than a single exclusive SIP per tape
+- **Expanded Data Content:** Under the Market Data Infrastructure (MDI) Rules, the new CT Plan requires dissemination of:
+  - Odd-lot quotation information (best odd-lot bid/offer at or better than the NBBO)
+  - Depth-of-book data (aggregated at multiple price levels)
+  - Auction information
+  - Round lot redefinition based on stock price
+- **Implementation Timeline:** CT Plan participants have until **April 2027** to implement the new plan, at which point the CTA/CQ and UTP plans will cease to operate
+- **Temporary Exemption:** In March 2026, the SIPs filed an exemption request for a two-year delay (to May 2028) from the requirement to disseminate odd-lot depth-of-book data beyond each participant's best odd-lot bid or offer quotation
+
+[Source: SEC, Release No. 34-105125, 2026, accessed 2026-04-06]
+
+### 4.3 Proprietary Data Feeds
+
+In addition to the consolidated SIP feeds, exchanges operate proprietary data feeds that provide:
+
+| Feed Type | Description | Typical Latency |
+|---|---|---|
+| Direct feeds (depth-of-book) | Full order book data from individual exchanges (e.g., NYSE Integrated Feed, Nasdaq TotalView, Cboe Pitch) | ~10-50 microseconds from exchange |
+| Top-of-book feeds | Best bid/offer and last sale from individual exchanges | ~10-50 microseconds |
+| Aggregated feeds | Third-party vendors combining multiple exchange feeds | Varies |
+
+**Latency Differential:** Proprietary feeds are substantially faster than the SIP (which has inherent processing latency of ~200-500 microseconds [estimated]). This latency differential has been a subject of ongoing regulatory debate, as it creates informational advantages for firms with direct feed access.
+
+**Co-location Services:** Exchanges offer co-location services allowing market participants to place their trading servers in close physical proximity to exchange matching engines. The SEC requires that co-location services be offered on a fair, reasonable, and non-discriminatory basis.
+
+### 4.4 Market Data Infrastructure (MDI) Rule
+
+Adopted in December 2020, the MDI Rule (amendments to Regulation NMS) represents a significant overhaul of the US equity market data framework.
+
+**Key Components:**
+
+| Component | Description | Status |
+|---|---|---|
+| Expanded definition of "core data" | Includes depth-of-book, odd-lot information, auction data | Implementation in progress |
+| Round lot redefinition | Round lots defined by stock price: $0.01-$250.00 = 100 shares; $250.01-$1,000.00 = 40 shares; $1,000.01-$10,000.00 = 10 shares; >$10,000.00 = 1 share | Round lot/odd lot definition: May 2026 compliance |
+| Competing consolidator model | Allows multiple entities (not just the incumbent SIPs) to compete to collect and consolidate market data | Subsumed into CT Plan reforms |
+| Odd-lot transparency | Dissemination of odd-lot quotation information priced at or better than the NBBO | Phased implementation through 2026-2028 |
+| Self-aggregator model | Permits broker-dealers to self-aggregate data from individual exchange feeds rather than rely on a SIP | Under CT Plan framework |
+
+[Source: SEC, "Market Data Infrastructure Rule", Release No. 34-90610, December 2020, accessed 2026-04-06]
+
+---
+
+## 5. Market Surveillance
+
+### 5.1 Consolidated Audit Trail (CAT)
+
+The Consolidated Audit Trail is a comprehensive audit trail and central repository that tracks all activity in NMS securities (equities and options) from order origination through routing, modification, cancellation, and execution. It was mandated by SEC Rule 613, adopted in 2012 following the May 2010 Flash Crash.
+
+[Source: CAT NMS Plan, catnmsplan.com, accessed 2026-04-06]
+[Source: FINRA, "Consolidated Audit Trail (CAT)", accessed 2026-04-06]
+
+**CAT Overview:**
+
+| Item | Details |
+|---|---|
+| Governing Rule | SEC Rule 613 (adopted July 2012) |
+| Operator | CAT NMS, LLC (jointly owned by SROs) |
+| Plan Processor | FINRA CAT, LLC |
+| Coverage | All NMS equities and listed options |
+| Reporting Entities | All national securities exchanges, FINRA, and their member broker-dealers |
+| Data Captured | Customer and order event information, including: order receipt/origination, routing, modification, cancellation, execution (including allocation to customer accounts) |
+| Reporting Timelines | Exchange events: same-day (8:00 AM following day). Broker-dealer events: by 8:00 AM on T+1 |
+| Annual Budget (2026) | ~$156 million |
+
+**CAT Data Elements:**
+- Customer Account Information (via Customer Information System — CAIS)
+- Order events: new orders, routes, modifications, cancellations
+- Execution events: fills, partial fills
+- Time stamps (millisecond granularity)
+- Material terms of each order (security, side, quantity, price, order type, time-in-force)
+- Unique order identifiers enabling linkage across the full lifecycle
+- Broker-dealer identifying information
+
+**Recent Developments (2025-2026):**
+- **CAIS Relief (February-March 2025):** The SEC granted exemptive relief, and CAT LLC filed a proposed amendment to eliminate requirements for Industry Members to report customer names, addresses, and years of birth for certain categories of persons, addressing privacy concerns
+- **Cost Savings:** The SEC implemented cost-savings measures, with expected savings going into effect by end of Q1 2026
+- **Funding Dispute:** In July 2025, the Eleventh Circuit Court of Appeals vacated the SEC's 2023 funding order for CAT. Citadel Securities subsequently filed suit in January 2026 to freeze $119 million in disputed CAT fees
+- **SEC Exemptive Relief (2025):** The SEC issued an exemptive order granting relief from several CAT requirements while preserving its surveillance role, reducing operational complexity ("Declawing the CAT")
+
+[Source: FINRA, "2026 FINRA Annual Regulatory Oversight Report — CAT", December 2025, accessed 2026-04-06]
+[Source: Katten, "Declawing the CAT: SEC Trims Back Audit Trail Obligations", 2025, accessed 2026-04-06]
+
+### 5.2 FINRA Surveillance Programs
+
+FINRA operates the most comprehensive cross-market surveillance system in the United States, covering both exchange and off-exchange trading.
+
+**Key Surveillance Programs:**
+
+| Program | Description |
+|---|---|
+| Cross-Market Equities Supervision | Monitors for manipulative trading across all US equity venues (exchanges + ATSs + OTC) |
+| Cross-Product Surveillance | Monitors correlated securities (stocks, ETPs, options) for manipulation schemes |
+| Insider Trading Detection | Pattern-based analysis of trading around material non-public information events |
+| Market Manipulation | Detection of spoofing, layering, wash trading, marking the close, pump-and-dump |
+| Best Execution Review | Monitors broker-dealer order routing and execution quality |
+| Short Sale Monitoring | Compliance with Reg SHO locate, close-out, and price test requirements |
+| Regulation NMS Compliance | Monitoring for trade-throughs, locked/crossed markets, access fee compliance |
+
+**2025-2026 Surveillance Focus Areas (per FINRA 2026 Oversight Report):**
+- Rise in small-cap pump-and-dump schemes using nominee accounts, account-takeover purchases, and social media recruitment
+- Cross-product and cross-customer manipulation in exchange-listed equities
+- Surveillance gaps: under-tuned alerts, limited cross-product or cross-customer reviews, weak documentation
+- Use of AI and algorithmic tools in manipulation schemes
+- Targeted examination (initiated October 2025) of firm practices regarding public and private offerings of small-cap exchange-listed issuers with operations in foreign jurisdictions
+
+[Source: FINRA, "2026 Annual Regulatory Oversight Report — Manipulative Trading", December 2025, accessed 2026-04-06]
+[Source: FINRA, "Cross Market Equities Supervision: Potential Manipulation Report", accessed 2026-04-06]
+
+### 5.3 Exchange Surveillance
+
+While most exchanges have delegated day-to-day surveillance to FINRA via Regulatory Services Agreements, exchanges retain:
+
+- **Listing Standards Compliance:** Monitoring listed companies for continued compliance with listing requirements (financial standards, corporate governance, disclosure)
+- **Trading Halts:** Authority to halt trading in individual securities (regulatory halts, LULD trading pauses, news dissemination halts)
+- **Market Quality Monitoring:** Real-time monitoring of market maker obligations, odd-lot execution quality, opening/closing auction processes
+- **Rule Enforcement:** Investigation and enforcement of exchange-specific rules not covered by FINRA RSAs
+
+---
+
+## 6. Reporting Requirements
+
+### 6.1 Trade Reporting Facilities
+
+Off-exchange trades in NMS securities must be reported to FINRA through one of its trade reporting facilities within prescribed timeframes.
+
+**FINRA Trade Reporting Infrastructure:**
+
+| Facility | Full Name | Function | Securities Covered |
+|---|---|---|---|
+| **TRF** | Trade Reporting Facility | Reporting of off-exchange trades in NMS stocks | Exchange-listed equities |
+| **ADF** | Alternative Display Facility | Display of quotations, trade reporting, and trade comparison | Exchange-listed equities (display-only, no execution) |
+| **ORF** | OTC Reporting Facility | Reporting of trades in OTC equity securities (not exchange-listed) | OTC equities, Rule 144A restricted equities |
+
+**Active TRFs:**
+
+| TRF | Exchange Partner | Location |
+|---|---|---|
+| FINRA/Nasdaq TRF Carteret | Nasdaq | Carteret, NJ |
+| FINRA/Nasdaq TRF Chicago | Nasdaq | Chicago, IL |
+| FINRA/NYSE TRF | NYSE | New York, NY |
+
+[Source: FINRA, "Trade Reporting Facility (TRF)", accessed 2026-04-06]
+[Source: FINRA, "Alternative Display Facility (ADF)", accessed 2026-04-06]
+[Source: FINRA, "Over-the-Counter Reporting Facility (ORF)", accessed 2026-04-06]
+
+**Reporting Timelines:**
+- Trades executed during market hours (9:30 AM - 4:00 PM ET): must be reported within **10 seconds** of execution
+- Trades executed outside market hours: reported as specified by FINRA rules (generally before the opening of the next trading day)
+
+### 6.2 Large Trader Reporting (Rule 13h / Form 13H)
+
+SEC Rule 13h-1, adopted in 2011, requires "large traders" to identify themselves to the SEC and requires their broker-dealers to maintain transaction records and report them upon request.
+
+[Source: SEC, "Form 13H", accessed 2026-04-06]
+
+**Thresholds:**
+
+| Threshold | Condition |
+|---|---|
+| Daily | 2 million shares **or** $20 million in fair market value during any calendar day |
+| Monthly | 20 million shares **or** $200 million in fair market value during any calendar month |
+
+**Requirements:**
+- Large traders must file Form 13H with the SEC and obtain a Large Trader Identification Number (LTID)
+- Initial filing: within 10 business days of first crossing a threshold
+- Annual update: within 45 days after calendar year-end (e.g., February 17, 2026, for calendar year 2025)
+- Prompt amendments required for material changes
+- Broker-dealers must maintain records of all transactions by large traders and report them to the SEC upon request via electronic system
+
+### 6.3 Short Interest Reporting
+
+**FINRA Short Interest Reporting:**
+- FINRA member firms must report short interest positions in all equity securities to FINRA twice monthly (mid-month and end-of-month settlement dates)
+- Data is published with an approximately 10-business-day delay
+- Reports cover all customer and proprietary short positions
+
+**SEC Rule 13f-2 / Form SHO (Short Position Reporting by Institutional Investment Managers):**
+- Adopted by the SEC in October 2023 to enhance short-selling transparency
+- Requires institutional investment managers with significant short positions to report gross short positions monthly on Form SHO
+- **Current Status:** The SEC provided a temporary exemption from compliance with Rule 13f-2, effective January 2, 2026, ending January 2, 2028. The first Form SHO reports are due within 14 calendar days after the last day in January 2028
+- **Reporting Thresholds:**
+  - For equity securities of reporting issuers: $10 million or more in monthly average short position, or the lesser of a short position equal to 2.5% or more of shares outstanding
+  - For equity securities of non-reporting issuers: $500,000 or more in monthly average short position
+
+[Source: SEC, "Short Position and Short Activity Reporting by Institutional Investment Managers", Release No. 34-98738, October 2023, accessed 2026-04-06]
+[Source: Morgan Lewis, "Reminder: SEC's New Short Sale Reporting Filings Due February 2025", October 2024, accessed 2026-04-06]
+[Source: SEC, "Exemption From Exchange Act Rule 13f-2 and Related Form SHO", Press Release 2025-37, accessed 2026-04-06]
+
+### 6.4 Form 13F (Institutional Holdings)
+
+Section 13(f) of the Securities Exchange Act requires institutional investment managers exercising investment discretion over $100 million or more in Section 13(f) securities to file quarterly reports on Form 13F.
+
+| Item | Details |
+|---|---|
+| Filing threshold | $100 million aggregate fair market value in 13(f) securities |
+| Filing frequency | Quarterly (within 45 days after end of each calendar quarter) |
+| 2026 Filing dates | February 17, May 15, August 14, November 16 |
+| Content | Long positions in 13(f) securities (equities, certain options, convertible bonds on SEC list), including shares and market value; investment discretion type; voting authority |
+| Public availability | Filed on EDGAR; publicly available (with confidential treatment requests possible) |
+
+[Source: SEC, "Frequently Asked Questions About Form 13F", accessed 2026-04-06]
+
+### 6.5 Summary of Key Reporting Requirements
+
+| Report | Filer | Frequency | To Whom | Key Threshold |
+|---|---|---|---|---|
+| Trade Reports (TRF/ADF/ORF) | Broker-dealers | Real-time (10-second) | FINRA | All off-exchange trades |
+| Form 13H (Large Trader) | Large traders | Annual + amendments | SEC | 2M shares or $20M/day |
+| Form 13F (Holdings) | Institutional managers | Quarterly | SEC (EDGAR) | $100M AUM in 13(f) securities |
+| FINRA Short Interest | FINRA members | Bi-monthly | FINRA | All short positions |
+| Form SHO (Rule 13f-2) | Institutional managers | Monthly (deferred to 2028) | SEC | $10M/$500K thresholds |
+| Form 144 | Affiliates/insiders | Prior to sale | SEC | Restricted/control securities |
+| Schedule 13D/13G | Beneficial owners | Event-driven | SEC | >5% beneficial ownership |
+| Sections 16 (Forms 3/4/5) | Officers, directors, >10% owners | Event-driven / annual | SEC | Insider transactions |
+
+---
+
+## 7. Cross-border Arrangements
+
+### 7.1 Foreign Private Issuer (FPI) Rules
+
+The SEC provides an accommodative regulatory framework for non-US companies seeking to list or raise capital in US markets through the Foreign Private Issuer regime.
+
+[Source: SEC, "Accessing the U.S. Capital Markets — A Brief Overview for Foreign Private Issuers", accessed 2026-04-06]
+
+**FPI Eligibility Test:**
+A non-US issuer qualifies as an FPI if it meets BOTH of the following conditions:
+1. **Residency Test:** More than 50% of its outstanding voting securities are NOT directly or indirectly held by residents of the United States; **OR**
+2. **Business Contact Test (if >50% held by US residents):** None of the following conditions apply: (a) majority of executive officers or directors are US citizens or residents; (b) more than 50% of the issuer's assets are in the US; (c) the issuer's business is administered principally in the US
+
+**FPI Regulatory Accommodations:**
+
+| Area | FPI Treatment | Domestic Issuer Treatment |
+|---|---|---|
+| Financial reporting | Annual report on Form 20-F (reconciled to US GAAP or IFRS); no quarterly reports required | 10-K (annual), 10-Q (quarterly) |
+| Proxy rules | Exempt from proxy solicitation rules (Regulation 14A) | Full proxy rules apply |
+| Section 16 reporting | Exempt from insider reporting (Forms 3, 4, 5) and short-swing profit disgorgement | Full Section 16 obligations |
+| Regulation FD | Exempt from selective disclosure rules | Full Regulation FD applies |
+| Corporate governance | May follow home country practices for most listing standards (with disclosure of differences) | Must comply with exchange listing standards |
+| Tender offers | Can use Tier I or Tier II exemptions from US tender offer rules based on US shareholder participation | Full tender offer rules apply |
+
+**2025 Concept Release on FPI Definition:**
+In 2025, the SEC issued a Concept Release seeking public comment on potential changes to the FPI definition. Key proposals under consideration:
+- Conditioning FPI eligibility on the issuer being subject to the oversight of a jurisdiction that has signed the **IOSCO Multilateral Memorandum of Understanding (MMoU)** or the Enhanced MMoU (130+ jurisdictions are signatories)
+- Potential tightening of the residency test
+- Addressing the growth of foreign companies with predominantly US investor bases
+
+[Source: SEC, "Concept Release on Foreign Private Issuer Eligibility", Release No. 33-11376, 2025, accessed 2026-04-06]
+
+### 7.2 American Depositary Receipts (ADR) / American Depositary Shares (ADS)
+
+ADRs are negotiable certificates issued by US depositary banks representing shares in a non-US company. They enable US investors to invest in foreign companies through US markets.
+
+**ADR Program Types:**
+
+| Level | Registration | Trading Venue | Capital Raising | SEC Filing |
+|---|---|---|---|---|
+| Level I (Unsponsored/Sponsored) | Exempt (Rule 12g3-2(b)) | OTC / Pink Sheets | No | Form F-6 only |
+| Level II (Listed) | Full registration | NYSE / Nasdaq / other exchange | No | Form 20-F, Form F-6 |
+| Level III (Public Offering) | Full registration + Securities Act registration | NYSE / Nasdaq / other exchange | Yes (public offering) | Form 20-F, Form F-6, Form F-1 |
+| Rule 144A ADR | Exempt | PORTAL / QIBs only | Yes (private placement) | None with SEC (only to QIBs) |
+
+**Key Requirements:**
+- Depositary bank (e.g., BNY Mellon, JPMorgan, Citibank, Deutsche Bank) holds underlying foreign shares in custody
+- ADR ratio: determines how many foreign shares one ADR represents (e.g., 1 ADR = 10 underlying shares)
+- Form F-6: Securities Act registration statement for depositary shares (ADRs)
+- Sponsored ADRs: foreign issuer has a direct agreement with the depositary bank
+- Unsponsored ADRs: created by a depositary bank without a formal agreement with the foreign issuer
+
+### 7.3 SEC Memoranda of Understanding (MOUs)
+
+The SEC maintains an extensive network of international cooperative arrangements:
+
+| Arrangement | Scope | Parties |
+|---|---|---|
+| **IOSCO MMoU** | Consultation, cooperation, exchange of information for enforcement purposes | 130+ jurisdictions (SEC is a signatory) |
+| **IOSCO Enhanced MMoU (EMMoU)** | Enhanced cooperation framework with additional enforcement tools | Expanding membership |
+| **Bilateral MOUs** | Specific bilateral arrangements for supervisory and enforcement cooperation | SEC maintains MOUs with major jurisdictions (e.g., UK FCA, EU ESMA, Japan FSA/JFSA, Korea FSC/FSS, etc.) |
+| **Multijurisdictional Disclosure System (MJDS)** | Mutual recognition for US-Canada cross-border offerings | US (SEC) and Canada (CSA) |
+
+**SEC Cross-Border Enforcement Powers (Dodd-Frank Enhanced):**
+- Section 929I of the Dodd-Frank Act expanded SEC subpoena powers for cross-border investigations
+- SEC can bring enforcement actions against foreign entities and individuals with US market connections
+- SEC regularly cooperates with foreign regulators on insider trading, market manipulation, and accounting fraud investigations
+
+### 7.4 Regulation S
+
+Regulation S provides a safe harbor from Securities Act registration requirements for offers and sales of securities that occur outside the United States:
+- **Issuer Safe Harbor:** Offers and sales must be made in an "offshore transaction" with no "directed selling efforts" in the US
+- **Distribution Compliance Period:** Equity securities of US reporting issuers are subject to a 6-month distribution compliance period (1 year for non-reporting issuers) during which flow-back to the US is restricted
+- **Category 1/2/3:** Securities are classified based on the likelihood of flow-back to the US, with progressively stricter requirements
+
+---
+
+## 8. Recent Changes (2021-2026)
+
+### 8.1 T+1 Settlement (May 28, 2024)
+
+On February 15, 2023, the SEC adopted rule amendments to shorten the standard settlement cycle for most broker-dealer transactions from T+2 (two business days) to **T+1 (one business day)**. The new cycle took effect on **May 28, 2024**.
+
+[Source: SEC, "Shortening the Securities Transaction Settlement Cycle", Press Release 2024-62, May 2024, accessed 2026-04-06]
+
+**Key Details:**
+
+| Item | Description |
+|---|---|
+| Effective date | May 28, 2024 |
+| Previous cycle | T+2 (since September 5, 2017; before that, T+3) |
+| New cycle | T+1 |
+| Applicable transactions | Most secondary market transactions in equities, corporate bonds, unit investment trusts, municipal securities, and financial instruments involving these |
+| Exceptions | Some transactions (e.g., certain firm commitment offerings, securities lending transactions) have different settlement conventions |
+| Goal | Reduce credit, market, and liquidity risks from unsettled trades; reduce margin requirements at clearing agencies |
+
+**Impact:**
+- DTCC (Depository Trust & Clearing Corporation) modified its systems and processes to support T+1
+- Margin requirements at NSCC reduced by an estimated 41% [unverified]
+- International investors (especially in Asian time zones) faced operational challenges due to compressed timelines for FX settlement and securities delivery
+- Same-day affirmation rates increased significantly
+- Discussion of further shortening to T+0 has emerged but no formal proposals as of April 2026
+
+### 8.2 Tick Size and Access Fee Reform (2024 — Compliance Delayed to November 2026)
+
+On September 18, 2024, the SEC unanimously adopted amendments to Regulation NMS Rules 610 and 612.
+
+[Source: SEC, "SEC Adopts Rules to Amend Minimum Pricing Increments and Access Fee Caps", Press Release 2024-137, September 2024, accessed 2026-04-06]
+
+**Summary of Changes:**
+
+| Element | Previous Rule | New Rule (November 2026 compliance) |
+|---|---|---|
+| Minimum tick (high-spread stocks, TWAQS > $0.015) | $0.01 | $0.01 (unchanged) |
+| Minimum tick (low-spread stocks, TWAQS <= $0.015) | $0.01 | **$0.005 (half-penny)** |
+| Access fee cap | $0.003/share (30 mils) | **$0.001/share (10 mils)** |
+| Round lot definition | 100 shares (universal) | Price-tiered (see MDI Rule) |
+| Odd-lot transparency | Not required | Odd-lot quotes at or better than NBBO must be disseminated |
+| Tick size reassessment | None | **Semi-annual** (May and November, based on 3-month TWAQS evaluation) |
+
+**Implementation Timeline:**
+- September 18, 2024: Rules adopted
+- October 14, 2025: D.C. Circuit upholds the rules, denying industry petition for review
+- October 31, 2025: SEC issues exemptive order delaying tick size and access fee compliance from November 3, 2025 to **first business day of November 2026**
+- May 2026: Round lot/odd-lot definition compliance date (not delayed)
+- November 2026: Tick size and access fee compliance date
+
+[Source: Sidley Austin, "D.C. Circuit Upholds SEC Tick Size/Fee-Cap Rule", October 2025, accessed 2026-04-06]
+[Source: SEC, "SEC Issues Exemptive Order Regarding Compliance with Certain Rules Under Regulation NMS", Press Release 2025-130, October 2025, accessed 2026-04-06]
+
+### 8.3 Best Execution and PFOF Proposals — Withdrawn (June 2025)
+
+The SEC, under Chair Gary Gensler, proposed four major equity market structure reforms in December 2022 and early 2023:
+
+| Proposal | Description | Status (as of April 2026) |
+|---|---|---|
+| Regulation Best Execution (Rules 1100-1102) | Federal best execution standard; heightened obligations for conflicted transactions (PFOF, principal trading) | **Withdrawn** (June 12, 2025) |
+| Order Competition Rule (Rule 615) | Required certain retail orders to be exposed to order-by-order competition in qualified auctions | **Withdrawn** (June 12, 2025) |
+| Regulation NMS Amendments (Tick Size/Access Fees) | Variable tick sizes, lower access fee caps | **Adopted** (September 2024) |
+| Rule 605 Amendments (Execution Quality Disclosure) | Modernized execution quality statistics; expanded to cover broker-dealers | **Adopted** (March 2024) |
+
+On **June 12, 2025**, the SEC (under Chair Paul Atkins, appointed by President Trump in 2025) formally withdrew 14 outstanding rule proposals, including Regulation Best Execution and the Order Competition Rule. Any future rulemaking on these topics must start anew with a fresh proposal and comment period.
+
+[Source: SEC, "Regulation Best Execution — Withdrawal", June 2025, accessed 2026-04-06]
+[Source: Proskauer, "SEC Formally Withdraws Fourteen Rule Proposals", June 2025, accessed 2026-04-06]
+
+**PFOF Status:**
+- Payment for order flow remains legal in the United States as of April 2026
+- The EU agreed to phase out PFOF by mid-2026 under MiFID II reforms
+- The SEC's December 2022 Order Competition Rule, which would have required auction exposure for retail orders (indirectly targeting PFOF), was withdrawn in June 2025
+- FINRA continues to monitor broker-dealer best execution obligations and order routing disclosures under its existing framework
+
+### 8.4 Rule 605 Amendments (Execution Quality Disclosure)
+
+Adopted in March 2024, amendments to Rule 605 of Regulation NMS modernize execution quality reporting:
+
+- **Expanded Coverage:** Requires not only market centers but also broker-dealers (including wholesalers) to publish monthly execution quality statistics
+- **Enhanced Metrics:** Includes new statistical measures such as effective-over-quoted spread ratios, size improvement, and fill rates
+- **Order Size Categories:** Updated to reflect modern trading patterns (including fractional shares and odd lots)
+- **Compliance:** Market centers by early 2026; broker-dealers phased in through 2026 [estimated]
+
+### 8.5 Consolidated Tape and Market Data Reforms (2024-2027)
+
+See Section 4.2 (CT Plan Reforms) for details. Key milestones:
+
+| Date | Event |
+|---|---|
+| December 2020 | MDI Rule adopted |
+| November 2024 | CT Plan approved by SEC |
+| May 2026 | Round lot / odd-lot definition compliance |
+| November 2026 | Tick size / access fee compliance |
+| April 2027 | Full CT Plan implementation; CTA/CQ and UTP plans sunset |
+| May 2028 | Odd-lot depth-of-book dissemination (if exemption granted) |
+
+### 8.6 Other Significant Regulatory Developments (2021-2026)
+
+| Year | Development | Description |
+|---|---|---|
+| 2021 | GameStop / Meme Stock Events | Led to congressional hearings, SEC report on market structure (October 2021), and proposals for reforms to PFOF, short selling transparency, and market plumbing |
+| 2022 | SEC Private Fund Reforms | Enhanced reporting and disclosure for private funds (impacting equity capital formation) |
+| 2023 | Rule 13f-2 / Form SHO Adopted | Short position reporting by institutional managers (compliance deferred to 2028) |
+| 2023 | SEC Climate Disclosure Rules | Adopted then paused; required climate-related disclosures by public companies (stayed by court as of 2025) |
+| 2024 | T+1 Settlement | Standard settlement cycle shortened from T+2 to T+1 (effective May 28, 2024) |
+| 2024 | Tick Size / Access Fee Rule Adopted | Variable tick sizes and lower access fee caps (compliance delayed to November 2026) |
+| 2024 | Rule 605 Amendments | Enhanced execution quality disclosure requirements |
+| 2024 | CT Plan Approved | Single consolidated tape plan to replace CTA/CQ and UTP plans |
+| 2025 | SEC Leadership Change | Paul Atkins confirmed as SEC Chair (April 2025); shift toward deregulatory posture |
+| 2025 | 14 Rule Proposals Withdrawn | Including Regulation Best Execution and Order Competition Rule |
+| 2025 | CAT Funding Dispute | 11th Circuit vacated SEC's CAT funding order; Citadel Securities lawsuit |
+| 2025 | FPI Concept Release | SEC seeks comment on potential changes to Foreign Private Issuer definition |
+| 2025 | FINRA Constitutionality Upheld | Supreme Court declines to hear challenge to FINRA's regulatory authority |
+| 2025 | NYSE Texas Launch | NYSE Chicago rebranded and relocated to Dallas (March 2025) |
+| 2025 | NYSE 22-hour Trading | NYSE Arca announced plan to extend trading to 22 hours/day [unverified — implementation status uncertain] |
+
+---
+
+## 9. Comparison with Korean Framework
+
+### 9.1 Regulatory Structure Comparison
+
+| Aspect | United States | South Korea |
+|---|---|---|
+| **Primary Regulator** | SEC (independent federal agency) | FSC (Financial Services Commission) — government agency under Prime Minister's Office |
+| **Supervisory/Examination Body** | SEC (OCIE) + FINRA (for broker-dealers) | FSS (Financial Supervisory Service) — executive arm of FSC |
+| **SRO for Broker-Dealers** | FINRA (private, not-for-profit SRO) | No equivalent SRO; FSS directly supervises securities firms |
+| **Exchange Operator** | Multiple competing exchanges (NYSE, Nasdaq, Cboe, IEX, MEMX, etc.) — each a separate SRO | **KRX (Korea Exchange)** — single, unified exchange operating KOSPI, KOSDAQ, KONEX markets |
+| **Exchange SRO Status** | Each exchange is an SRO with regulatory obligations | KRX has market surveillance and listed company oversight functions, but is not a full SRO in the US sense |
+| **Enforcement** | SEC Enforcement Division (civil/administrative); DOJ (criminal) | FSC/FSS investigation → prosecution referral to prosecutors; fragmented across FSC, FSS, KRX |
+| **Dispute Resolution** | FINRA Arbitration/Mediation | Financial Dispute Resolution Committee under FSS; courts |
+
+[Source: FSC, "Introduction", fsc.go.kr, accessed 2026-04-06]
+[Source: Korea Herald, "Korea weighs SEC-style agency to tackle unfair trading", 2025, accessed 2026-04-06]
+
+### 9.2 Market Structure Comparison
+
+| Aspect | United States | South Korea |
+|---|---|---|
+| **Number of Exchanges** | 16 registered national securities exchanges | 1 (KRX — operating KOSPI, KOSDAQ, KONEX) |
+| **Market Fragmentation** | Highly fragmented: ~60% on-exchange, ~40% off-exchange (ATSs, wholesalers, OTC) [estimated] | Centralized: virtually all exchange trading on KRX; limited OTC market (K-OTC) |
+| **Dark Pools / ATSs** | 30-40+ active NMS stock ATSs [estimated] | No equivalent dark pool market |
+| **Order Routing** | Complex multi-venue routing with SOR (Smart Order Routing) required for best execution | Single-venue routing to KRX |
+| **Consolidated Tape** | SIP system (CTS/CQS, UTDF/UQDF) aggregating data from all venues | KRX provides single consolidated feed (no need for separate tape) |
+| **Trading Hours** | 9:30 AM - 4:00 PM ET (some extended hours / 22-hour proposals) | 9:00 AM - 3:30 PM KST (pre-market 8:00-9:00, post-market 3:40-4:00) |
+| **Settlement Cycle** | T+1 (since May 2024) | T+2 |
+| **Market Maker System** | Competitive market making (DMMs on NYSE; multiple market makers on Nasdaq) | Limited market maker system on KOSDAQ; competitive auction model on KOSPI |
+
+### 9.3 Circuit Breaker / Volatility Mechanism Comparison
+
+| Mechanism | United States | South Korea (KRX) |
+|---|---|---|
+| **Market-Wide Circuit Breaker** | 3 levels: 7% / 13% / 20% decline in S&P 500 | 3 phases: 8% / 15% / 20% decline in KOSPI or KOSDAQ index |
+| **MWCB Halt Duration** | Level 1 & 2: 15 min (before 3:25 PM); Level 3: rest of day | Phase 1: 20 min (order entry suspended); Phase 2: 20 min; Phase 3: market closed for day |
+| **MWCB Reference** | Prior day's S&P 500 closing value | Prior day's KOSPI/KOSDAQ closing value |
+| **Individual Stock Mechanism** | LULD (5%/10%/20% bands depending on tier and time) | **Volatility Interruption (VI)**: static VI (10% from prior close) and dynamic VI (sudden price change from recent trades); 2-minute cooling period + call auction |
+| **Program Trading Control** | No specific US equivalent | **Sidecar**: suspends program trading orders for 5 minutes when KOSPI 200 futures move 5%+ |
+| **Daily Price Limits** | None (US relies on LULD and MWCB) | **+/- 30%** daily price limit from prior close (KOSPI and KOSDAQ) |
+
+[Source: Korea Times, "KRX issues circuit breaker on KOSPI trading", March 2026, accessed 2026-04-06]
+
+### 9.4 Regulatory Process Comparison
+
+| Aspect | United States | South Korea |
+|---|---|---|
+| **Rulemaking** | Notice-and-comment process (proposed rule → public comment → final rule); SRO rules require SEC approval | FSC/FSS regulatory directives; KRX rules subject to FSC approval |
+| **Enforcement Speed** | SEC can bring civil actions relatively quickly; average investigation duration ~2-3 years [estimated] | Fragmented investigation across FSC/FSS/KRX leads to ~1 year to sanctions, up to 3 years for court rulings |
+| **Market Surveillance** | FINRA cross-market surveillance + CAT | KRX Market Surveillance Division + FSS investigation |
+| **Audit Trail** | CAT (Consolidated Audit Trail) — comprehensive, covers all venues | KRX maintains internal audit trail for all orders on its platform |
+| **Investor Protection** | SIPC (Securities Investor Protection Corporation) — up to $500,000 per customer | Korea Investor Protection Fund |
+
+### 9.5 Korea's Ongoing Reform Discussions
+
+As of 2025-2026, South Korea is actively discussing restructuring its financial regulatory framework:
+
+- **SEC-Style Consolidated Agency:** Proposals to create a single agency with both investigative and prosecutorial powers for unfair financial trading (similar to SEC), replacing the current fragmented structure across FSC, FSS, and KRX
+- **Rationale:** The SEC model's "one-stop system" enables swifter response to stock manipulation and insider trading; Korea's current process involves handoffs between multiple agencies causing procedural delays
+- **Corporate Value-Up Program:** Launched in 2024 to address the "Korea Discount" — encouraging companies to improve corporate governance, shareholder returns, and disclosure (influenced by Japan's similar initiative)
+
+[Source: Korea Herald, "Korea weighs SEC-style agency to tackle unfair trading", 2025, accessed 2026-04-06]
+
+---
+
+## Appendix A: Key Regulatory References
+
+| Regulation / Rule | Citation | Year |
+|---|---|---|
+| Securities Act of 1933 | 15 U.S.C. 77a et seq. | 1933 |
+| Securities Exchange Act of 1934 | 15 U.S.C. 78a et seq. | 1934 |
+| Regulation NMS | 17 CFR 242.600-612 | 2005 (amended 2024) |
+| Regulation SHO | 17 CFR 242.200-204 | 2004 (amended 2010) |
+| Regulation ATS | 17 CFR 242.300-304 | 1998 (amended 2018) |
+| Dodd-Frank Act | Pub. L. 111-203 | 2010 |
+| SEC Rule 613 (CAT) | 17 CFR 242.613 | 2012 |
+| LULD Plan | NMS Plan (SEC approved) | 2012 (permanent 2019) |
+| Market Data Infrastructure Rule | 17 CFR 242.600 et seq. | 2020 |
+| T+1 Settlement Rule | 17 CFR 240.15c6-1 | 2023 (effective May 2024) |
+| Rule 13f-2 / Form SHO | 17 CFR 240.13f-2 | 2023 (compliance deferred to 2028) |
+| Tick Size / Access Fee Amendments | 17 CFR 242.610, 612 | 2024 (compliance November 2026) |
+| CT Plan (New) | NMS Plan (SEC approved) | 2024 (implementation by April 2027) |
+
+## Appendix B: Glossary of Key Terms
+
+| Term | Definition |
+|---|---|
+| **ATS** | Alternative Trading System — non-exchange trading venue registered as a broker-dealer |
+| **CAT** | Consolidated Audit Trail — comprehensive repository tracking all NMS securities activity |
+| **CQS** | Consolidated Quotation System — disseminates quotation data for Tape A and B securities |
+| **CTS** | Consolidated Tape System — disseminates last sale data for Tape A and B securities |
+| **DMM** | Designated Market Maker — NYSE's primary market maker for assigned securities |
+| **FPI** | Foreign Private Issuer — non-US company eligible for accommodative SEC reporting regime |
+| **ISG** | Intermarket Surveillance Group — cooperative organization sharing surveillance information |
+| **LULD** | Limit Up-Limit Down — mechanism preventing trades outside specified price bands |
+| **MDI** | Market Data Infrastructure — SEC rule expanding the definition of core market data |
+| **MWCB** | Market-Wide Circuit Breaker — halts all trading when S&P 500 declines by 7%/13%/20% |
+| **NBBO** | National Best Bid and Offer — best available bid and ask prices across all exchanges |
+| **NMS** | National Market System — regulatory framework for interconnected US equity markets |
+| **ORF** | OTC Reporting Facility — FINRA facility for reporting OTC equity trades |
+| **PFOF** | Payment for Order Flow — compensation paid by wholesalers to brokers for directing retail orders |
+| **RSA** | Regulatory Services Agreement — contract delegating exchange surveillance functions to FINRA |
+| **SIP** | Securities Information Processor — entity that consolidates and disseminates market data |
+| **SRO** | Self-Regulatory Organization — entity authorized to regulate its members (exchanges, FINRA) |
+| **TRF** | Trade Reporting Facility — FINRA facility for reporting off-exchange trades in listed securities |
+| **TWAQS** | Time-Weighted Average Quoted Spread — metric used to determine tick size assignments |
+| **UTP** | Unlisted Trading Privileges — plan governing data dissemination for Nasdaq-listed securities |
+
+---
+
+> **Note:** This document is based on publicly available information as of April 2026. Regulatory frameworks are subject to change. Information marked [unverified] or [estimated] should be confirmed against official sources before reliance. The regulatory landscape is particularly dynamic following the SEC leadership transition in 2025, with several major policy shifts underway.
+
+> **Prepared for:** KRX Exchange Research Project — Equities Domain
+> **Research Tier:** Tier 1 (Deep Dive)

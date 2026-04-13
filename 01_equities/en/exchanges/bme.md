@@ -1,0 +1,388 @@
+# Bolsas y Mercados Espanoles (BME)
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 3
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Bolsas y Mercados Espanoles, Sociedad Holding de Mercados y Sistemas Financieros, S.A. (BME) |
+| Abbreviation | BME |
+| Website | https://www.bolsasymercados.es |
+| Year Established | 2002 (as holding company; Madrid Stock Exchange origins date to 1831) |
+| Country / City | Spain / Madrid (Plaza de la Lealtad, 1) |
+| Ownership Structure | Wholly-owned subsidiary of SIX Group AG (since 2020) |
+| Parent Company / Group | SIX Group AG (Swiss financial infrastructure operator) |
+| Regulatory Authority | Comision Nacional del Mercado de Valores (CNMV) |
+| Market Capitalization (listed companies) | ~EUR 1.2 trillion (end of 2023); IBEX 35 companies alone exceed EUR 700 billion [estimated based on Statista and index component data] |
+| Total Listed Instruments | ~655 companies across all segments (end of 2023); ~120 on the main electronic order book (SIBE) |
+| Average Daily Trading Volume | ~200,000-400,000 trades per day [unverified] |
+| Average Daily Trading Value | ~EUR 1.5-2.5 billion [unverified; estimated from SIX exchange figures] |
+
+### Key Historical Milestones
+- 1831: Madrid Stock Exchange (Bolsa de Madrid) officially established
+- 1915: Barcelona Stock Exchange formalized
+- 1995: SIBE (Sistema de Interconexion Bursatil Espanol) launched, electronically connecting the four Spanish stock exchanges (Madrid, Barcelona, Bilbao, Valencia)
+- 2001: Latibex launched as an international market for Latin American securities traded in euros
+- 2002: **BME formed** as a holding company integrating Spain's stock exchanges, MEFF (derivatives), AIAF (fixed income), Iberclear (CSD), and related entities
+- 2003: Iberclear formed through merger of the Bank of Spain's CADE system and SCLV
+- 2006: BME listed on its own exchange (14 July 2006); became IBEX 35 constituent in 2007
+- 2012: SIBE-Smart platform upgrade launched (April 2012), reducing latency by more than 10x
+- 2016: Central counterparty (BME Clearing) introduced for equities; settlement cycle reduced from T+3 to T+2
+- 2017: Iberclear completed migration to Eurosystem's TARGET2-Securities (T2S) platform
+- 2020: **SIX Group acquires BME** for EUR 2.57 billion (93.16% of shares accepted); completed June 2020; BME delisted from IBEX 35
+- 2023: SIX scraps plans to integrate BME's SIBE trading platform with its own due to legal and technological complexity
+- 2025: SIX announces integration of SIX x-clear and BME Clearing into a single multi-asset CCP headquartered in Madrid; BME Easy Access IPO mechanism launched; European-style stock options launched in Spain
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| **Main Market (SIBE)** | Primary regulated market for large and mid-cap Spanish and foreign equities; flagship segment for IBEX 35 companies | Fully audited financial statements, FCA-approved prospectus, minimum 25% free float [unverified], CNMV authorization, compliance with Spanish securities law |
+| **BME Growth** (formerly MAB) | Multilateral Trading Facility (MTF) for SMEs; established 2006; renamed from Mercado Alternativo Bursatil (MAB) in 2020 | Fully paid-up capital, audited accounts, minimum free float of EUR 2 million, appointment of a Registered Adviser (Asesor Registrado) |
+| **Latibex** | International market for Latin American securities traded in euros; provides European investors access to LatAm companies | Must be listed on a Latin American exchange, market cap > EUR 300 million, information disclosure same as primary listing |
+| **BME Growth Segments** | Subdivided into: (i) growth companies (including REITs/SOCIMIs), (ii) early-stage companies, (iii) collective investment institutions, (iv) venture capital firms | Varies by segment; lighter requirements than Main Market |
+
+### 2.2 Trading Sessions
+| Session | Local Time (CET/CEST) | UTC (Winter) | Description |
+|---------|----------------------|--------------|-------------|
+| Opening Auction | 08:30 - 09:00 | 07:30 - 08:00 | Order entry and price formation; order book partially visible (equilibrium price and volumes shown); ends with random close period of up to 30 seconds |
+| Continuous Trading | 09:00 - 17:30 | 08:00 - 16:30 | Order-driven continuous matching on SIBE; price/time priority |
+| Closing Auction | 17:30 - 17:35 | 16:30 - 16:35 | Closing price determination via call auction; random end period of up to 30 seconds |
+| Post-close | 17:35 - 17:40 [unverified] | 16:35 - 16:40 [unverified] | Trade reporting; orders can trade at established closing price |
+
+Note: Spain observes CET (UTC+1) in winter and CEST (UTC+2) from late March to late October.
+
+### 2.3 Tick Sizes
+
+BME follows the **MiFID II tick size regime** (RTS 11), effective since January 2018. Tick sizes depend on both the price level and the liquidity band of the instrument (based on average daily number of transactions).
+
+| Price Range (EUR) | Liquidity Band 1 (< 10 ADNT) | Liquidity Band 3 (80-600 ADNT) | Liquidity Band 6 (>= 9000 ADNT) |
+|-------------------|-------------------------------|--------------------------------|----------------------------------|
+| 0 - 0.4999 | 0.005 | 0.002 | 0.0005 |
+| 0.5 - 0.9999 | 0.01 | 0.005 | 0.001 |
+| 1 - 1.9999 | 0.02 | 0.01 | 0.002 |
+| 2 - 4.9999 | 0.05 | 0.02 | 0.005 |
+| 5 - 9.9999 | 0.1 | 0.05 | 0.01 |
+| 10 - 19.9999 | 0.2 | 0.1 | 0.02 |
+| 20 - 49.9999 | 0.5 | 0.2 | 0.05 |
+| 50 - 99.9999 | 1.0 | 0.5 | 0.1 |
+
+[Source: ESMA RTS 11; representative values -- full table contains 6 liquidity bands and 13 price ranges]
+
+### 2.4 Lot Sizes
+- Standard lot: **1 share** for most equities on SIBE
+- No minimum lot size for continuous order book trading
+- Block trade thresholds defined under MiFID II Large-in-Scale (LIS) waivers, varying by instrument liquidity
+
+### 2.5 Market Maker / Liquidity Provider Programs
+- **Market Maker Agreements**: Members that sign market-making deals must comply with spread and turnover parameters set by Operating Instruction
+- **Liquidity Provider Schemes**: BME offers incentive schemes with reduced execution fees for firms providing continuous liquidity at visible best bid/offer in continuous trading of pre-defined instruments (particularly IBEX 35 securities)
+- **BME Growth**: Liquidity contracts are common for smaller companies to ensure continuous two-sided quotes
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+- **Opening Auction (08:30-09:00 CET)**: 30-minute order accumulation period. The order book is partially visible, showing the equilibrium auction price, bid and ask volumes tradable at that price, and the number of corresponding orders. Ends with a random period of up to 30 seconds to prevent manipulation. The uncrossing algorithm maximizes executable volume
+- **Closing Auction (17:30-17:35 CET)**: At 17:30, continuous trading halts and a closing auction period begins. The closing auction determines the official closing price used by index providers and fund managers. Followed by a random end period of up to 30 seconds
+- **Volatility Auctions**: Triggered when a potential execution would breach static or dynamic price ranges (see Section 8). A 5-minute call auction is initiated with a 30-second random end period to allow orderly price discovery
+
+### 3.2 Continuous Trading
+- **Order-driven market** with price/time priority on SIBE
+- All orders submitted to SIBE go to a single central matching engine and are prioritized by price, then by time of entry
+- SIBE handles more than 90% of all Spanish equity transactions
+- Optional market maker participation provides additional liquidity for less liquid securities
+- **SpainAtMid**: Dark pool/midpoint matching functionality available during the open market phase [unverified]
+
+### 3.3 Price Discovery
+- Price discovery occurs primarily through the opening and closing auctions and continuous order book interaction on SIBE
+- The auction uncrossing algorithm maximizes executable volume, then minimizes surplus, then references the prior price to determine the auction price
+- Reference prices for circuit breakers are derived from auction uncrossing prices (static reference) and dynamically updated during continuous trading (dynamic reference)
+- The closing auction price is the official closing price for the session and is used for index calculation and NAV purposes
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Limit Order | Order to buy/sell at a specified price or better; rests on the book if not immediately matched |
+| Market Order | Executes at the best available price(s); sweeps through the order book |
+| Market-to-Limit Order | Enters as a market order and, after partial or full execution at the best available price, any remaining quantity converts to a limit order at that execution price |
+
+### 4.2 Advanced Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Iceberg Order | Only a portion (visible peak) is displayed; as the visible quantity fills, a new peak is automatically replenished from hidden reserve; can be combined with limit, market, or market-to-limit conditions |
+| Combined Block Order | Orders that combine specific execution conditions [unverified] |
+| Sweep Order | Can be entered during any market phase; on SpainAtMid, executions only during open market phase [unverified] |
+
+### 4.3 Time-in-Force Options
+| TIF | Description |
+|-----|-------------|
+| Day | Valid for current trading day only; cancelled at end of session |
+| Good till Cancelled (GTC) | Remains active until executed or cancelled (up to maximum days set by exchange) [unverified] |
+| Good till Date (GTD) | Valid until a specified expiry date [unverified] |
+| Immediate or Cancel (IOC) | Execute as much as possible immediately; cancel remainder |
+| Fill or Kill (FOK) | Must be executed in full immediately or entire order cancelled |
+| Minimum Volume | Requires a minimum execution size; if not met, the order is not executed [unverified] |
+
+### 4.4 Order Modification / Cancellation
+- Orders can be amended (price, quantity) or cancelled during trading sessions
+- Price amendments that improve priority typically result in a new timestamp (loss of time priority)
+- During auction call periods, orders can be entered, amended, and cancelled but no matching occurs
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | SIBE (Sistema de Interconexion Bursatil Espanol) / SIBE-Smart |
+| Vendor / In-house | In-house development by BME (Sociedad de Bolsas manages the platform) |
+| Architecture | Centralized matching engine connecting four Spanish exchanges via a single order book |
+| Matching Engine | Central matching engine with price/time priority |
+| Round-trip Latency | Sub-millisecond range after 2012 upgrade (latency reduced by more than 10x from prior generation) [exact current figures not publicly disclosed] |
+| Order Processing Capacity | Tripled capacity with 2012 SIBE-Smart upgrade [exact current msgs/sec not publicly disclosed] |
+| Messages Per Second | Not publicly disclosed; described as supporting "maximum capacity and minimum latency" |
+| Launch Year | 1995 (original SIBE); 2012 (SIBE-Smart upgrade) |
+
+### System History
+| Period | System | Notes |
+|--------|--------|-------|
+| Pre-1995 | Floor trading (corros) | Open-outcry trading on the physical floors of Madrid, Barcelona, Bilbao, and Valencia exchanges |
+| 1995-2012 | SIBE (original) | Electronic interconnection system linking four regional exchanges into a single order book; replaced floor trading for most equities |
+| 2012-present | SIBE-Smart | Major technology upgrade (April 2012); latency reduced by >10x; capacity tripled; designed for low latency, high scalability, and resilience under volatile conditions |
+
+### Technology Stack
+- **Platform Characteristics**: Described as combining "low latency and resiliency in even the most volatile market conditions"
+- **Connectivity Options**: FIX protocol and native binary protocol for trading; multiple interface options available for members to select speed/capacity configuration
+- **Sponsored Access**: Low-latency solution allowing market members to offer clients direct connection to BME's front-end servers without using the member's own infrastructure
+- **Network**: Dedicated lines and managed connectivity services
+
+### Disaster Recovery / Business Continuity
+- BME maintains business continuity plans in compliance with CNMV and MiFID II requirements
+- Redundant infrastructure for critical systems [specific DR details not publicly disclosed]
+- Note: SIX decided in 2023 not to migrate BME's SIBE platform to SIX's own trading infrastructure due to legal and technological complexity, meaning SIBE continues to operate independently
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+| Protocol | Description | Use Case |
+|----------|-------------|----------|
+| BME Multicast Binary Feed | Native binary market data via multicast | Low-latency market data for algorithmic trading |
+| SIX MDDX | Market data dissemination via SIX infrastructure | Standardized data distribution |
+| BME Gate Server | Server-based market data access | Firms requiring managed connectivity |
+
+### 6.2 Data Levels
+- Level 1: Best bid/offer (BBO), last trade price, volume
+- Level 2: Full order book depth [unverified]
+
+### 6.3 Distribution Infrastructure
+- Market data distributed via co-location, proximity services, and third-party providers
+- BME Market Data Services (bmemarketdata.es) provides comprehensive data access and documentation
+
+### 6.4 Historical Data
+- Available through BME Market Data services and third-party vendors (e.g., Refinitiv/LSEG, Bloomberg)
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+- Market members must be authorized investment firms or credit institutions
+- Authorization from CNMV required for Spanish entities; passporting available for EU/EEA-authorized firms under MiFID II
+- Members can provide sponsored access to their clients
+
+### 7.2 Connection Methods
+| Method | Description |
+|--------|-------------|
+| Direct Market Access (DMA) | Standard member connection to SIBE |
+| Sponsored Access | Low-latency direct connection to BME's front-end servers via member sponsorship |
+| Third-Party Providers | Connection via authorized technology and connectivity providers |
+
+### 7.3 Co-location / Proximity Services
+- **Co-location**: BME provides rack space and communications infrastructure at its primary data center for installation of member hardware and software
+- **Proximity Hosting**: Available for firms requiring close proximity without full co-location
+- **London Hub**: Interxion data centre campus in London provides co-location services for BME (announced 2012)
+- **Third-Party Providers**: TNS and other managed hosting providers offer co-location access in the BME data center
+
+### 7.4 API Protocols
+| Protocol | Use Case |
+|----------|----------|
+| FIX | Standard trading and order management connectivity |
+| Native Binary | Lower-latency trading access |
+| Market Data Feeds | BME Multicast Binary Feed for real-time data |
+
+### 7.5 Certification / Testing
+- Members must complete connectivity and conformance testing before going live
+- BME provides a test environment for system certification [unverified]
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+| Type | Threshold | Action |
+|------|-----------|--------|
+| **Static Range** | Set per security based on historical volatility; calculated relative to the last auction price (static reference price) | Breach triggers a 5-minute volatility auction with 30-second random end |
+| **Dynamic Range** | Set per security based on historical volatility; calculated relative to the last traded price (dynamic reference price); always <= static range | Breach triggers a 5-minute volatility auction with 30-second random end |
+
+- Static reference price: established at the most recent auction uncrossing (opening or volatility auction)
+- Dynamic reference price: updated continuously based on the last trade price (whether from an auction or continuous session)
+- Both static and dynamic ranges are expressed as percentages and are calibrated per security based on recent historical volatility
+- Specific percentage values vary by instrument and are set by BME via Operating Instructions [exact thresholds not publicly listed in general documentation]
+
+### 8.2 Circuit Breakers
+| Level | Trigger | Action |
+|-------|---------|--------|
+| Individual Security -- Static | Price breaches the static range relative to the static reference price | Volatility auction: 5 minutes + 30-second random end |
+| Individual Security -- Dynamic | Price breaches the dynamic range relative to the dynamic reference price | Volatility auction: 5 minutes + 30-second random end |
+| Market-wide | Extraordinary circumstances determined by BME/CNMV | Trading may be suspended for all or specific securities; no fixed automatic market-wide percentage threshold publicly documented [unverified] |
+
+### 8.3 Pre-trade Risk Controls
+- **Fat-finger checks**: Maximum order size and value limits configurable by members and enforced by SIBE [unverified]
+- **Order size limits**: Maximum quantity and notional value per order
+- **Throttling**: Rate controls on order submission to prevent excessive message traffic, as required by MiFID II algorithmic trading provisions
+
+### 8.4 Kill Switch
+- Market members have the ability to cancel all outstanding orders rapidly, in compliance with MiFID II requirements for kill switch functionality [unverified]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+- **CNMV** (Comision Nacional del Mercado de Valores): Primary supervisory authority for securities markets in Spain, responsible for oversight of BME, market participants, listed companies, and market conduct
+- **Banco de Espana**: Oversees payment systems and settlement infrastructure (Iberclear)
+- **European Securities and Markets Authority (ESMA)**: EU-level coordination and harmonization
+
+### 9.2 Key Regulations
+- **Ley de los Mercados de Valores y de los Servicios de Inversion (LMVSI)** -- Law 6/2023: Principal Spanish securities market legislation; replaced the prior Ley del Mercado de Valores (Law 24/1988); transposes MiFID II into Spanish law
+- **MiFID II / MiFIR** (Directive 2014/65/EU and Regulation 600/2014): EU-wide framework governing markets in financial instruments; directly applicable in Spain; covers transparency, algorithmic trading, tick sizes (RTS 11), market structure, best execution, and investor protection
+- **Market Abuse Regulation (MAR)** (Regulation 596/2014): EU-wide rules on insider dealing, market manipulation, and disclosure of inside information
+- **Central Securities Depositories Regulation (CSDR)**: Governs Iberclear as Spain's CSD
+- **EMIR** (European Market Infrastructure Regulation): Governs BME Clearing as a CCP
+
+### 9.3 Market Surveillance
+- CNMV conducts ongoing market surveillance using automated systems to detect insider trading, market manipulation, and other abuses
+- BME operates its own first-line surveillance function, monitoring trading activity on SIBE and reporting suspicious activity to CNMV
+- Post-trade transparency requirements under MiFID II/MiFIR; all trades must be reported to Approved Publication Arrangements (APAs) and trade repositories
+
+### 9.4 Reporting Requirements
+- Transaction reporting to CNMV under MiFIR Article 26 (all investment firms must report transactions within T+1)
+- Listed company disclosure obligations: periodic financial reporting (annual, semi-annual), ad hoc disclosure of inside information (MAR), major shareholding notifications
+- Short selling disclosure under EU Short Selling Regulation
+- Penalties: CNMV can impose fines ranging from EUR 60,000-5,000,000 for "serious" infractions to EUR 300,000-10,000,000 (or 10% of turnover) for "very serious" infractions; fines can be tripled for aggravating factors
+
+### 9.5 Cross-border Arrangements
+- EU passporting under MiFID II allows EEA-authorized firms to access BME without separate Spanish authorization
+- CNMV maintains Memoranda of Understanding (MoUs) with securities regulators worldwide
+- BME/Iberclear connected to Eurosystem's T2S for cross-border settlement
+- Latibex provides a specific cross-border listing framework for Latin American companies
+- Tender offer rules now extended to companies listed on MTFs (including BME Growth) domiciled in Spain
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+| Fee Type | Structure | Rate |
+|----------|-----------|------|
+| Equity Trading Fees | Variable per trade, tiered by volume | Detailed schedule available in BME's "Equities Trading Fees 2026" document |
+| Liquidity Provider Rebates | Reduced fees for designated liquidity providers meeting spread/volume thresholds | Specific rates set by Operating Instruction |
+| Market Maker Fees | Differentiated fee structure for registered market makers | Conditional on compliance with spread and turnover parameters |
+
+[Source: BME Equities Trading Fees 2026 document at bolsasymercados.es]
+
+### 10.2 Other Fees
+- **Listing fees**: Issuers of equity securities pay EUR 750 for listing on trading rings [unverified; additional initial and annual listing fees apply on Main Market and BME Growth]
+- **Market data fees**: Available through BME Market Data Services; tiered by data level and redistribution rights
+- **Co-location fees**: Based on rack space and connectivity provisioned at BME's data center
+- **BME corporate revenue (2024)**: EUR 312 million total revenue; 1,033 employees
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+- 2023: SIX abandoned plans to migrate BME's SIBE platform to SIX's trading infrastructure, citing unexpected legal and technological complexity; SIBE continues as an independent platform
+- 2025: Ongoing technology enhancements to SIBE-Smart for capacity and resilience [unverified]
+
+### New Products / Segments
+- 2025: Launch of **BME Easy Access** -- a simplified IPO mechanism allowing shares to be admitted without requiring minimum share distribution; approved by CNMV
+- 2025: Launch of **European-style stock options** in Spain
+- 2020: MAB rebranded as **BME Growth** to align with European SME growth market branding
+
+### Regulatory Changes
+- 2023: **Law 6/2023 (LMVSI)** enacted, replacing the prior securities market law and completing MiFID II transposition
+- 2025: Tender offer rules extended to MTF-listed companies (BME Growth) domiciled in Spain
+- MiFID II/MiFIR ongoing: Continued regulatory evolution affecting transparency, algorithmic trading, and market structure
+
+### Strategic Initiatives
+- **CCP Integration**: SIX announced (December 2025) the merger of SIX x-clear and BME Clearing into a single international multi-asset CCP, headquartered in Madrid with offices in Zurich and Oslo
+- **SIX Group Synergies**: Despite the trading platform integration being abandoned, SIX and BME continue to pursue synergies in clearing, settlement, data services, and index products
+- **Retail Participation**: Extended trading hours and simplified access mechanisms (BME Easy Access) to encourage retail investor participation
+- **Latin American Bridge**: Continued operation of Latibex as a unique EUR-denominated market for Latin American securities; BME holds participations in clearing houses in Colombia and the Mexican Stock Exchange
+
+---
+
+## Key Index: IBEX 35
+
+| Item | Details |
+|------|---------|
+| Full Name | Indice Bursatil Espanol 35 |
+| Administered by | Sociedad de Bolsas (BME subsidiary) |
+| Composition | 35 most liquid Spanish stocks traded on the continuous market |
+| Weighting | Market capitalization-weighted (free-float adjusted) |
+| Top Constituents (2025-2026) | Inditex (~EUR 206B), Banco Santander (~EUR 177B), Iberdrola (~EUR 146B), BBVA (~EUR 137B) |
+| 2025 Performance | Near record highs (~17,315 at year-end 2025); ~50% annual gain, best since 1993 and Europe's top-performing major market |
+
+---
+
+## Post-Trade Infrastructure
+
+| Entity | Role | Notes |
+|--------|------|-------|
+| **BME Clearing** | Central Counterparty (CCP) | Clears equities, derivatives, fixed income repos, energy derivatives, interest rate derivatives; to be merged with SIX x-clear |
+| **Iberclear** | Central Securities Depository (CSD) | Spanish CSD for equities, fixed income, and Latibex securities; migrated to T2S in September 2017; settlement via ARCO platform |
+| Settlement Cycle | T+2 | Reduced from T+3 in April 2016 |
+
+---
+
+## Sources
+
+1. [BME Official Website](https://www.bolsasymercados.es/en/home.html) -- accessed 2026-04-06
+2. [BME Exchange -- Trading Hours](https://www.bolsasymercados.es/bme-exchange/en/Trading/Trading-Hours) -- accessed 2026-04-06
+3. [BME Exchange -- Trading Platforms / SIBE SMART](https://www.bolsasymercados.es/bme-exchange/en/Trading/Trading-Platform/SIBE-SMART-Equities) -- accessed 2026-04-06
+4. [BME Exchange -- Equities Market Model (PDF)](https://www.bolsasymercados.es/bme-exchange/docs/docsSubidos/Trading/Equity/Equities-Rigths-Market-Model-BME-Exchange.pdf) -- accessed 2026-04-06
+5. [BME Exchange -- Equities Trading Fees 2026 (PDF)](https://www.bolsasymercados.es/bme-exchange/docs/docsSubidos/Trading/equities-trading-fees.pdf) -- accessed 2026-04-06
+6. [BME Market Data Services](https://www.bmemarketdata.es/ing/Access-And-Connectivity/BME-Co-Location) -- accessed 2026-04-06
+7. [BME Growth Official Website](https://www.bmegrowth.es/ing/Home.aspx) -- accessed 2026-04-06
+8. [Latibex -- General Information](https://www.latibex.com/ing/About-Latibex/General-Information) -- accessed 2026-04-06
+9. [Bolsas y Mercados Espanoles -- Wikipedia](https://en.wikipedia.org/wiki/Bolsas_y_Mercados_Espa%C3%B1oles) -- accessed 2026-04-06
+10. [IBEX 35 -- Wikipedia](https://en.wikipedia.org/wiki/IBEX_35) -- accessed 2026-04-06
+11. [SIX Group -- Completion of BME Acquisition (June 2020)](https://www.six-group.com/en/newsroom/media-releases/2020/20200611-completion-acquisition-controlling-stake-bme.html) -- accessed 2026-04-06
+12. [SIX Group -- Integration of SIX x-clear and BME Clearing (December 2025)](https://www.six-group.com/en/newsroom/media-releases/2025/20251204-six-clearing.html) -- accessed 2026-04-06
+13. [SIX Exchanges Figures: December and Full Year 2025](https://www.six-group.com/en/newsroom/media-releases/2026/20260105-keyfigures-exchange-december-2025.html) -- accessed 2026-04-06
+14. [SIX Scraps BME Trading Platform Integration Plans -- The TRADE](https://www.thetradenews.com/six-scraps-multi-year-bme-trading-platform-integration-plans-due-to-unexpected-complexity/) -- accessed 2026-04-06
+15. [Baker McKenzie -- Spanish Stock Exchange Overview](https://resourcehub.bakermckenzie.com/en/resources/cross-border-listings-guide/europe-middle-east--africa/spanish-stock-exchange/topics/overview-of-exchange) -- accessed 2026-04-06
+16. [Lexology -- Key Elements of the New Spanish Securities Markets Law](https://www.lexology.com/library/detail.aspx?g=290d1b3c-21bc-42be-bfba-d235db1b608a) -- accessed 2026-04-06
+17. [Statista -- Spanish Stock Exchange Market Cap 2023](https://www.statista.com/statistics/1232528/spanish-stock-exchange-market-cap/) -- accessed 2026-04-06
+18. [Disfold -- Largest IBEX 35 Companies by Market Cap 2026](https://disfold.com/stock-index/ibex35/companies/) -- accessed 2026-04-06
+19. [Finextra -- BME Upgrades Spanish Stock Exchange Trading Platform (2012)](https://www.finextra.com/pressarticle/44233/bme-upgrades-spanish-stock-exchange-trading-platform) -- accessed 2026-04-06
+20. [Global Custodian -- Spanish Stock Exchange Triples Trading Capacity of SIBE Platform](https://www.globalcustodian.com/spanish-stock-exchange-triples-trading-capacity-of-sibe-platform/) -- accessed 2026-04-06
+21. [Iberclear -- Migration to T2S (September 2017)](https://www.iberclear.es/ing/Press/Press-Release/20170918/nota_20170918_2/Iberclear_successfully_completes_migration_to_T2S) -- accessed 2026-04-06
+22. [BME Clearing -- Equities Settlement Process](https://www.bmeclearing.es/ing/Segments/Equities/Settlement-Process) -- accessed 2026-04-06

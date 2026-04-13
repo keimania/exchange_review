@@ -1,0 +1,1091 @@
+# HKEX Derivatives Market
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 1
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Hong Kong Futures Exchange Limited (HKFE), a wholly owned subsidiary of Hong Kong Exchanges and Clearing Limited (HKEX) |
+| Abbreviation | HKFE (futures/index options); SEHK Options (stock options) |
+| Website | https://www.hkex.com.hk |
+| Year Established | 1976 (as Hong Kong Commodities Exchange; renamed Hong Kong Futures Exchange in 1985) |
+| Country / City | Hong Kong SAR, China / Central (registered office: 8/F, Two Exchange Square, 8 Connaught Place, Central) |
+| Ownership Structure | HKFE is a wholly owned subsidiary of HKEX, which is publicly traded on SEHK (stock code: 0388.HK). The Hong Kong SAR Government is the single largest shareholder with the right to appoint 6 of 13 board directors |
+| Parent Company / Group | Hong Kong Exchanges and Clearing Limited (HKEX) -- vertically integrated group comprising SEHK (cash equities), HKFE (derivatives), LME (London Metal Exchange, acquired 2012), four clearing houses (HKSCC, HKCC, SEOCH, OTC Clear), and data services |
+| Regulatory Authority | Securities and Futures Commission (SFC) of Hong Kong, under the Securities and Futures Ordinance (SFO, Cap. 571) |
+| Market Capitalization (HKEX Group) | ~HK$340 billion (as of early 2026) |
+| HKEX Group Revenue (2025) | HK$29,161 million |
+| HKEX Group Net Income (2025) | HK$17,754 million |
+| Derivatives Annual Volume (2024) | 334 million contracts (third consecutive record year) |
+| Derivatives ADV (Q1 2025) | 1,866 thousand contracts (quarterly record, +24% YoY) |
+| Derivatives Single-Day Record | 4.26 million contracts (September 27, 2024) |
+| Clearing Houses | HKFE Clearing Corporation Limited (HKCC) for futures; The SEHK Options Clearing House Limited (SEOCH) for stock options; OTC Clear for OTC derivatives |
+
+[Source: HKEX, "About HKEX", https://www.hkex.com.hk, accessed 2026-04-06]
+[Source: Wikipedia, "Hong Kong Exchanges and Clearing", accessed 2026-04-06]
+[Source: HKEX, "Q1 2025 Quarterly Results", April 2025]
+[Source: FOW, "HKEX to list single stock options in March after record 2024", February 2025]
+
+### Key Historical Milestones
+
+- **1976:** Hong Kong Commodities Exchange established; initially traded cotton, sugar, soybean, and gold futures
+- **1985:** Renamed to Hong Kong Futures Exchange Limited (HKFE)
+- **1986:** Hang Seng Index Futures launched (became flagship product); four stock exchanges merged into Stock Exchange of Hong Kong (SEHK)
+- **1987:** October stock market crash; HKFE closed for four days; subsequent Davison Commission reforms
+- **1989:** HKFE Clearing Corporation (HKCC) assumed clearing functions, replacing the previous guarantee corporation
+- **1993:** Stock options introduced on SEHK; Hang Seng Index Options launched on HKFE
+- **1995:** HKATS (Hong Kong Futures Automatic Trading System) launched in November -- electronic trading replaces open outcry
+- **1997:** H-shares Index (HSCEI) Futures launched; Asian Financial Crisis tests market resilience
+- **1999:** HKFE trading floor closed; all trading migrated to electronic HKATS platform
+- **2000:** HKFE, SEHK, and HKSCC demutualized and merged under HKEX holding company (listed June 27, 2000, stock code 0388)
+- **2000:** Mini-HSI Futures launched (October) to serve retail investors
+- **2003:** Stock Futures introduced
+- **2008:** After-Hours Futures Trading (T+1 Session) introduced
+- **2012:** HKEX acquires London Metal Exchange (LME) for GBP 1.388 billion; USD/CNH Currency Futures launched
+- **2013:** HKATS and DCASS upgraded to Nasdaq's Genium INET platform (October), dramatically improving latency and capacity
+- **2017:** MSCI Index Futures suite launched, covering Asia and Emerging Markets
+- **2019:** HKATS upgraded to newer Genium INET version (May); LME London Metal Mini Futures introduced (August)
+- **2020:** Hang Seng TECH Index Futures and Options launched (November)
+- **2021:** MSCI China A 50 Connect Index Futures launched (October)
+- **2023:** Swap Connect (Northbound) launched (May 15) for interbank rate swaps; Weekly stock options expiries introduced (November 2024)
+- **2024:** Bonnie Chan Yiting becomes CEO (March 1); Carlson Tong Ka-shing becomes Chairman (May 3); derivatives volume sets third consecutive annual record at 334 million contracts; single-day record of 4.26 million contracts (September 27)
+- **2025:** Q1 derivatives ADV reaches quarterly record of 1,866K contracts; stock options Q1 ADV reaches record 964,803 contracts; position limit enhancements effective July 2, 2025; HKEX deploys system enhancements for increased position limits
+- **2026 (ongoing):** Continued expansion of MSCI derivatives suite; Southbound Swap Connect enhancements; RMB-denominated derivatives expansion
+
+[Source: Wikipedia, "Hong Kong Futures Exchange", accessed 2026-04-06]
+[Source: HKEX, "History of HKEX and its Market", https://www.hkexgroup.com, accessed 2026-04-06]
+[Source: MarketsWiki, "Hong Kong Exchanges and Clearing Ltd.", accessed 2026-04-06]
+[Source: HKEX quarterly results and press releases, 2024-2025]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Sub-Exchanges / Market Segments
+
+HKEX's derivatives market operates through two exchange subsidiaries and two clearing houses:
+
+| Entity | Role | Products |
+|--------|------|----------|
+| **Hong Kong Futures Exchange (HKFE)** | Exchange for futures and index options | Equity index futures/options, interest rate futures, currency futures, commodity futures, volatility index futures, dividend futures |
+| **Stock Exchange of Hong Kong (SEHK) -- Options** | Exchange for single stock options | Stock options on ~100 underlying Hong Kong-listed stocks and ETFs |
+| **HKFE Clearing Corporation (HKCC)** | CCP for HKFE products | Clears all HKFE-traded futures and index options |
+| **SEHK Options Clearing House (SEOCH)** | CCP for SEHK stock options | Clears all stock options traded on SEHK |
+
+Both HKCC and SEOCH use the shared Derivatives Clearing and Settlement System (DCASS) for clearing and settlement.
+
+[Source: HKEX, "Clearing Services -- Listed Derivatives Overview", accessed 2026-04-06]
+
+### 2.2 Trading Sessions / Hours
+
+HKEX derivatives operate with a **lunch break** (a characteristic feature of Asian markets) and an **After-Hours Trading (AHT / T+1) Session** for select products.
+
+#### Equity Index Futures & Options (HSI, HSCEI, HSTECH, MSCI)
+
+| Session | Time (HKT) | Time (UTC) |
+|---------|-----------|------------|
+| Pre-Market Opening (AM) | 8:45 AM -- 9:15 AM | 00:45 -- 01:15 |
+| Morning Session | 9:15 AM -- 12:00 PM | 01:15 -- 04:00 |
+| Lunch Break | 12:00 PM -- 12:30 PM | 04:00 -- 04:30 |
+| Pre-Market Opening (PM) | 12:30 PM -- 1:00 PM | 04:30 -- 05:00 |
+| Afternoon Session | 1:00 PM -- 4:30 PM | 05:00 -- 08:30 |
+| After-Hours Trading (T+1) | 5:15 PM -- 3:00 AM (+1) | 09:15 -- 19:00 |
+
+**Note:** On expiry day, the expiring contract month closes at 4:00 PM HKT (no AHT session).
+
+#### Single Stock Futures & Options
+
+| Session | Time (HKT) | Time (UTC) |
+|---------|-----------|------------|
+| Morning Session | 9:30 AM -- 12:00 PM | 01:30 -- 04:00 |
+| Afternoon Session | 1:00 PM -- 4:00 PM | 05:00 -- 08:00 |
+
+**Note:** No after-hours trading session for stock futures and stock options.
+
+#### Currency Futures (USD/CNH and other pairs)
+
+| Session | Time (HKT) | Time (UTC) |
+|---------|-----------|------------|
+| Day Session | 8:30 AM -- 6:30 PM | 00:30 -- 10:30 |
+| After-Hours Trading | 7:15 PM -- 3:00 AM (+1) | 11:15 -- 19:00 |
+
+#### Interest Rate Futures (HIBOR)
+
+| Session | Time (HKT) | Time (UTC) |
+|---------|-----------|------------|
+| Morning Session | 8:30 AM -- 12:00 PM | 00:30 -- 04:00 |
+| Afternoon Session | 1:30 PM -- 5:00 PM | 05:30 -- 09:00 |
+
+#### Commodity Futures (Gold, Silver, Iron Ore, LME Minis)
+
+| Session | Time (HKT) | Time (UTC) |
+|---------|-----------|------------|
+| Day Session | 8:30 AM -- 4:30 PM (gold/silver) | 00:30 -- 08:30 |
+| Day Session | 9:00 AM -- 4:30 PM (LME metals) | 01:00 -- 08:30 |
+| After-Hours Trading | 5:15 PM -- 3:00 AM (+1) | 09:15 -- 19:00 |
+
+[Source: HKEX, "Trading Hours -- Derivatives Market", https://www.hkex.com.hk/Services/Trading-hours-and-Severe-Weather-Arrangements/Trading-Hours/Derivatives-Market, accessed 2026-04-06]
+
+### 2.3 Tick Sizes / Minimum Fluctuations
+
+| Product | Tick Size | Tick Value |
+|---------|-----------|------------|
+| HSI Futures (HSIF) | 1 index point | HK$50 |
+| Mini-HSI Futures (MHI) | 1 index point | HK$10 |
+| HSCEI Futures (HHI) | 1 index point | HK$50 |
+| Mini-HSCEI Futures (MCH) | 1 index point | HK$10 |
+| HS TECH Futures (HTI) | 1 index point | HK$50 |
+| HSI Options | 1 index point | HK$50 |
+| Stock Options | HK$0.01 (varies by price range) | Varies by contract size |
+| USD/CNH Futures | RMB 0.0001 per USD | RMB 10 |
+| USD Gold Futures | USD 0.01/troy oz | USD 0.10 |
+| CNH Gold Futures | RMB 0.01/gram | RMB 0.10 |
+
+### 2.4 Contract Units / Lot Sizes
+
+| Product | Contract Multiplier / Unit |
+|---------|--------------------------|
+| HSI Futures | HK$50 per index point |
+| Mini-HSI Futures | HK$10 per index point (1/5 of standard) |
+| HSCEI Futures | HK$50 per index point |
+| Mini-HSCEI Futures | HK$10 per index point (1/5 of standard) |
+| HS TECH Futures | HK$50 per index point |
+| HSI Options | HK$50 per index point |
+| Stock Options | Varies by underlying (typically 1 board lot = contract size) |
+| Stock Futures | Varies by underlying (typically 1 board lot) |
+| USD/CNH Futures | USD 100,000 |
+| Mini USD/CNH Futures | USD 20,000 |
+| USD Gold Futures | 10 troy ounces |
+| CNH Gold Futures | 10 grams |
+| HIBOR Futures | HK$5,000,000 notional |
+
+**Fungibility:** Mini-HSI and standard HSI futures are fungible at a 5:1 ratio (5 mini contracts offset 1 standard contract). The same applies for Mini-HSCEI and standard HSCEI futures.
+
+[Source: HKEX, "Hang Seng Index Futures" product page, accessed 2026-04-06]
+[Source: HKEX, "Mini-Hang Seng Index Futures" product page, accessed 2026-04-06]
+
+### 2.5 Market Maker / Liquidity Provider Programs
+
+HKEX operates both a formal **Market Maker (MM) Program** and a commercial **Liquidity Provider (LP) Program**.
+
+**Market Maker Types:**
+- **Primary Market Maker (PMM):** Enhanced obligations for index options with higher quoting requirements
+- **Continuous Quote Market Maker (CQMM):** Provides standing two-sided quotes during trading hours
+- **Quote Request Market Maker (QRMM):** Responds to specific quote requests from other participants
+
+**Key Obligations (example -- HSI Futures CQMM):**
+- Continuous quotes for no less than 70% of trading hours per calendar month
+- Maximum bid/offer spread: 15 minimum fluctuations (15 index points)
+- Minimum display time: 10 seconds
+- Minimum quote size: 5 contracts
+- Assigned months: Spot month + next calendar month
+- 70% compliance rate for quote responses (50% for T+1 sessions)
+- Maximum 20-second response time for quote requests
+
+**Incentive Structure (examples):**
+- HSI Futures MM: Exchange fee waived (HK$0 vs. HK$10 standard)
+- HSI Options MM: HK$2 per contract (vs. HK$10 standard)
+- Stock Futures Tier 1 MM: HK$0.50 per contract (vs. HK$3.00 standard)
+- MSCI Index Tier 1 MM: HK$25,000 per contract per trading session per month (cash incentive) + USD 0.30 per-contract fee discount
+
+**Block Trade Participant Program:** Top performers (minimum 20,000 contracts quarterly) receive additional cash incentives:
+- 1st place: HK$1.2 million
+- 2nd place: HK$450K
+- 3rd place: HK$150K
+
+**Eligibility:** HKFE Exchange Participant, or corporate entity meeting criteria including SFC regulation (or equivalent), licensed bank status, A-/A3+ credit rating, minimum HK$50 million paid-up capital and HK$100 million shareholder funds.
+
+[Source: HKEX, "Market Making/Liquidity Providing Obligations and Incentives", accessed 2026-04-06]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Pre-Market Opening Period
+
+During the Pre-Market Opening (PMO) period (8:45--9:15 AM and 12:30--1:00 PM for index products), the system collects orders and calculates the **Calculated Opening Price (COP)**. At the transition to continuous trading, orders are matched at the COP.
+
+- **Auction Orders:** Orders without a specified price, matched at COP on a time-priority basis. They have higher matching priority than limit orders during auction.
+- **Limit Orders in PMO:** Entered with a price limit and matched at the COP if the limit price is at or better than the COP.
+
+### 3.2 Continuous Trading Session
+
+- **Matching algorithm:** Strict **price/time priority** -- the best-priced order is matched first; among orders at the same price, earlier orders have priority.
+- HKATS processes orders synchronously and sequentially, one transaction at a time.
+- All participants receive identical execution on a centralized electronic marketplace with no time/place advantages.
+- Trade data is transmitted simultaneously to the relevant clearing house (HKCC or SEOCH) upon execution.
+
+### 3.3 After-Hours Trading (T+1 Session)
+
+- Available for major equity index products, currency futures, and commodity futures.
+- Orders with the **T+1 attribute** remain active during the AHT session (5:15 PM -- 3:00 AM HKT for index products).
+- Orders without the T+1 attribute are automatically inactivated during AHT and reactivated in the next regular session.
+- T+1 trades are cleared and settled on the next trading day.
+
+### 3.4 Price Controls
+
+**Dynamic Price Banding (DPB):**
+- Prevents erroneous orders by enforcing floating price bands around a reference price.
+- Reference price adjusts dynamically based on actual traded prices.
+- Orders outside the band are rejected.
+
+**Volatility Control Mechanism (VCM):**
+- Applies to individual instruments (not the entire market).
+- Trigger level: +/- 5% from the last traded price for derivatives (compared to +/- 10% for securities).
+- Upon triggering, a **cooling-off period** is invoked during which trading continues within a price band.
+- The VCM applies to major products including HSI futures, HSCEI futures, HS TECH futures, and Mini variants.
+
+**Price Limit Up/Down Mechanism:**
+- Additional price band restrictions to control extreme volatility within pre-defined ranges.
+
+### 3.5 Order Priority
+
+1. **Price priority** -- Best price always executed first
+2. **Time priority** -- Among orders at the same price, the earliest order is executed first
+3. **Auction orders** have priority over limit orders during the pre-market opening period
+
+[Source: HKEX, "Trading Mechanism Overview", https://www.hkex.com.hk/-/media/hkex-market/services/trading/derivatives/trading-mechanism/overview/tradingmechanismoverview_e, accessed 2026-04-06]
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Limit Order (LO)** | Specifies a maximum buy or minimum sell price; executes when market price reaches or improves on the limit |
+| **Auction Order (AAO)** | No specified price; used exclusively during Pre-Market Opening; matched at COP with higher priority than limit orders |
+| **At-Auction Limit Order (AALO)** | Limit order entered during auction periods; matched at COP if within the limit price |
+
+### 4.2 Advanced Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Enhanced Limit Order (ELO)** | Matches up to a specified number of price queues (up to 10 ticks) away from the best price; unmatched portion remains as limit order |
+| **Special Limit Order (SLO)** | Similar to ELO but unmatched portion is cancelled |
+| **Stop Loss Limit Order (SLLO)** | Triggered when market reaches a specified stop price; converts to a limit order |
+| **Good Till Date (GTD)** | Remains active until the specified date or until executed/cancelled |
+
+### 4.3 Combination Orders
+
+| Order Type | Description |
+|-----------|-------------|
+| **Standard Combination** | Pre-defined strategies for roll-over activities (e.g., calendar spreads); supports Day/FAK/FOK validities |
+| **Tailor-Made Combination (TMC)** | Enables creation of self-defined multi-leg futures and options strategies via a single order; matched by price/time priority like regular orders |
+
+### 4.4 Time-in-Force Conditions
+
+| Validity | Description |
+|----------|-------------|
+| **Day** | Active until market close of the current trading day |
+| **FOK (Fill or Kill)** | Must be fully executed immediately or entirely cancelled |
+| **FAK (Fill and Kill)** | Partial execution accepted; unfilled remainder cancelled |
+| **EXP (Expiry)** | Remains active until the product's expiry date |
+| **Date (GTD)** | Active until the specified trading date |
+
+### 4.5 Order Attributes
+
+| Attribute | Description |
+|-----------|-------------|
+| **T+1** | Order remains active through AHT (After-Hours Trading) session; without this, orders are inactivated during T+1 |
+| **Give Up** | Trade transferred to another specified company post-execution |
+| **Active / Inactive** | Active orders sit in the Central Orderbook; Inactive orders are held locally on the participant's system |
+
+### 4.6 Order Modification & Cancellation
+
+- Orders can be modified (price, quantity) or cancelled at any time during the relevant trading session.
+- Modifying the price of an order resets its time priority.
+- Quantity reduction does not affect time priority.
+- During the lunch break, the trading system is closed and no order entry, modification, or cancellation is permitted.
+
+[Source: HKEX, "Trading Mechanism -- Order Types", accessed 2026-04-06]
+
+---
+
+## 5. Trading System / Technology
+
+### 5.1 System Overview
+
+| Item | Details |
+|------|---------|
+| System Name | **HKATS** (Hong Kong Futures Automatic Trading System) |
+| Vendor | Nasdaq (Genium INET platform) |
+| Original Launch | November 1995 (proprietary HKATS) |
+| Genium INET Migration | October 2013 (HKATS and DCASS upgraded to Genium INET) |
+| Latest Upgrade | May 2019 (newer Genium INET version) |
+| Architecture | Centralized matching engine; transaction-based trading system processing orders synchronously and sequentially |
+| Latency | Sub-100 microseconds average latency (Genium INET specification); sub-80 microseconds at 1 million messages/second |
+| Throughput | 1 million+ messages per second (platform capability); volume testing at 4,000 series updates per second [unverified -- this may refer to a specific test scenario] |
+| Uptime Target | 99.999% (five nines) |
+
+### 5.2 Clearing System
+
+| Item | Details |
+|------|---------|
+| System Name | **DCASS** (Derivatives Clearing and Settlement System) |
+| Vendor | Nasdaq (Genium INET platform, shared with HKATS) |
+| Products Covered | All HKFE and SEHK options products (single system for both HKCC and SEOCH) |
+| Integration | Seamless interface between HKATS trading and DCASS clearing -- trade data transmitted automatically and electronically upon execution |
+
+### 5.3 Access Methods
+
+| Access Method | Description |
+|---------------|-------------|
+| **HKATS Online** | Browser-based frontend application (supported browser: Google Chrome v142+); used for order entry, trade management, market monitoring |
+| **OAPI (OMnet API)** | Programmatic interface for direct system-to-system connectivity; used by algo trading and automated systems |
+| **Central Gateway** | Primary access point connecting participant systems to HKEX host servers via high-speed message bus |
+
+### 5.4 Network Infrastructure
+
+- **Primary and Backup Central Gateways** provide redundancy
+- Minimum hardware: one PC, two SDNet/2 lines, two routers, one switch, and application software
+- SDNet/2 circuits operate at 1 Gbps physical speed
+- Dual data center architecture (Primary + Secondary) for failover
+
+### 5.5 System History
+
+| Year | Milestone |
+|------|-----------|
+| 1995 | HKATS launched, replacing open outcry |
+| 1999 | Trading floor closed; full electronic migration |
+| 2008 | After-Hours Trading (T+1) session added |
+| 2013 | Migration to Nasdaq Genium INET platform (trading + clearing) |
+| 2019 | Upgraded to newer Genium INET version with enhanced capacity |
+
+### 5.6 Disaster Recovery / Business Continuity
+
+- HKEX operates a **Primary Data Center** and **Secondary Data Center**
+- Failover is triggered if the Primary Data Center fails, bringing up HKATS/DCASS at the Secondary site
+- HKATS connectivity tests are conducted periodically to ensure failover readiness
+- Both OMD-D (market data) and HKATS have dual-site architecture
+
+[Source: HKEX, "HKATS" infrastructure page, https://www.hkex.com.hk/Services/Trading/Derivatives/Infrastructure/HKATS, accessed 2026-04-06]
+[Source: Nasdaq, "Hong Kong Exchange Renews Contract With NASDAQ OMX and Upgrades to INET-Based Trading Platform", 2013]
+[Source: Finextra, "HKEx moves derivatives clearing and trading platforms to Genium Inet", 2013]
+
+---
+
+## 6. Market Data
+
+### 6.1 Feed Protocols
+
+| Feed | Protocol | Description |
+|------|----------|-------------|
+| **OMD-D** (Orion Market Data -- Derivatives) | Binary (proprietary HKEX format) | Primary market data feed for all derivatives; uses IP multicast over UDP for real-time dissemination |
+| **OMD-D Retransmission** | Unicast TCP | Recovery service for missed multicast messages |
+| **OMD-D DLite** | Simplified binary | Lighter-weight version for smaller participants |
+
+### 6.2 Data Levels
+
+| Level | Content |
+|-------|---------|
+| Level 1 | Best bid/ask, last traded price, volume, open interest |
+| Level 2 | Full order book depth (multiple price levels) |
+| Trade Ticker | Individual trade reports with timestamps |
+| Statistics | Daily high, low, settlement price, open interest |
+
+### 6.3 Technical Specifications
+
+- **Transmission:** IP multicast with IGMP v2 at SDNet/2 routers
+- **Bandwidth:** SDNet/2 circuit at 1 Gbps; client systems must support 1 Gbps interfaces
+- **Recovery:** Retransmission server via unicast for gap recovery
+- **Failover:** OMD-D operates at both Primary and Secondary Data Centers; failover triggers automatic switchover
+
+### 6.4 Distribution
+
+- **Real-time data** available via licensed Information Vendors (Bloomberg, Refinitiv, etc.)
+- **Delayed data** available on HKEX website (15-minute delay)
+- **Historical data** available via HKEX data products and third-party vendors
+
+### 6.5 Market Data Products
+
+- Intra-day series created in HKATS are disseminated in real-time via OMD-D
+- Block trade data is included in overall volume but excluded from day-high/low, last traded price, and settlement price calculations
+- Settlement prices are disseminated at end of day
+
+[Source: HKEX, "HKEX Orion Market Data Platform -- Derivatives Market (OMD-D)", https://www.hkex.com.hk/Services/Market-Data-Services/Infrastructure/HKEX-Orion-Market-Data-Platform-Derivatives-Market-OMD-D, accessed 2026-04-06]
+[Source: HKEX, "OMD-D Connectivity Guide v1.20"]
+[Source: HKEX, "OMD Derivatives Binary Interface Specifications v2.0"]
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+
+| Participant Type | Description |
+|-----------------|-------------|
+| **Futures Exchange Participant (FEP)** | Licensed to trade futures and index options on HKFE; must be registered with SFC as Type 2 licensed corporation |
+| **Options Trading Exchange Participant (OTEP)** | Licensed to trade stock options on SEHK; requires SFC Type 1 and/or Type 2 license |
+| **HKCC Clearing Participant** | Authorized to clear trades through HKCC; must maintain minimum liquid capital and contribute to reserve fund |
+| **SEOCH Clearing Participant** | Authorized to clear stock options through SEOCH |
+
+**Requirements to become an Exchange Participant:**
+- Minimum paid-up capital: HK$10 million (for FEP) [unverified -- subject to current rules]
+- SFC registration as a licensed corporation
+- Designated responsible officers and compliance staff
+- Adequate systems and connectivity infrastructure
+- Clearing participant status (direct or via a General Clearing Participant)
+
+### 7.2 Connection Methods
+
+| Method | Description |
+|--------|-------------|
+| **SDNet/2** | HKEX's dedicated network for market access; operated by accredited vendors; designed for high resilience, higher bandwidth, and low network round-trip latency |
+| **HKEX Hosting Services (Co-location)** | Physical rack space within the HKEX Data Centre at Tseung Kwan O |
+| **OAPI (OMnet API)** | Programmatic order entry for algorithmic/automated trading |
+| **HKATS Online** | Browser-based GUI for manual trading |
+
+### 7.3 Co-Location / Hosting Services
+
+| Item | Details |
+|------|---------|
+| Data Centre Location | Tseung Kwan O (TKO) Industrial Estate, Hong Kong |
+| Facility Size | 31,400 square meters total floor area |
+| Design Standard | Tier 4 specifications |
+| Power | Dual incoming utility power from separate substations |
+| Hosting Capacity | 2 floors dedicated to Hosting Services, supporting up to 1,200 racks |
+| Ecosystem | Access to exchange participants, technology vendors, information vendors, and network service providers |
+| Telecom | Dual TBE rooms and risers for telco diversity; multiple accredited carrier vendors |
+
+The HKEX Data Centre serves as the primary enterprise data center and production site for both Securities and Derivatives markets, market data, and clearing.
+
+### 7.4 API Protocols
+
+| Protocol | Use Case |
+|----------|----------|
+| **OAPI (OMnet API)** | Order entry, trade management, market data access for HKATS |
+| **OMD-D Binary Protocol** | Market data consumption (multicast UDP) |
+| **FIX Protocol** | Supported for certain connectivity scenarios [unverified] |
+| **DCASS API** | Clearing and settlement operations |
+
+### 7.5 Certification / Testing
+
+- New participants and system upgrades require **connectivity testing** with HKEX
+- Volume testing scenarios include tests at 4,000 series updates per second
+- HKEX conducts periodic **market rehearsals** for product launches and system upgrades
+- SDNet/2 connectivity test includes verification of primary and backup gateway connections
+
+[Source: HKEX, "Hosting Services", https://www.hkex.com.hk/Services/Connectivity/Hosting-Services, accessed 2026-04-06]
+[Source: HKEX, "Derivatives Trading (HKATS) -- SDNet/2", accessed 2026-04-06]
+[Source: Baxtel, "HKEX Data Center", accessed 2026-04-06]
+[Source: Beeks Group, "HKEX Data Centre", accessed 2026-04-06]
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Volatility Control Mechanism (VCM)
+
+| Parameter | Details |
+|-----------|---------|
+| Scope | Applies to individual instruments (not market-wide) |
+| Trigger Level | +/- 5% from the last traded price (dynamic, not static) |
+| Cooling-Off Period | Trading continues within a restricted price band during cool-off |
+| Applicable Products | HSI Futures/Options, Mini-HSI, HSCEI Futures/Options, Mini-HSCEI, HS TECH Futures/Options |
+| Design Philosophy | Triggered infrequently; intended only for extreme moves |
+
+### 8.2 Dynamic Price Banding (DPB)
+
+- Floating bands around a reference price (adjusted after each trade)
+- Orders outside the band are automatically rejected
+- Prevents erroneous "fat finger" orders from distorting the market
+- Reference price resets with actual trade executions
+
+### 8.3 Price Limit Up/Down Mechanism
+
+- Pre-defined price ranges restrict trading within allowable bounds
+- Applied to specific products to control extreme volatility
+- Works in conjunction with VCM and DPB
+
+### 8.4 Pre-Trade Risk Management (PTRM)
+
+- **PTRM System** is integrated into HKATS
+- Manages trading risk at the participant level before orders enter the central order book
+- Features include order size limits, position limits, and margin-based controls
+- Clearing Participants can set risk parameters for their Non-Clearing Participants
+
+### 8.5 Self-Match Prevention (SMP)
+
+- Prevents a participant's buy and sell orders from matching against each other
+- Helps compliance with wash-trade regulations
+
+### 8.6 Error Trade Handling
+
+- **Error Trade Handling Procedures** for handling trades executed at erroneous prices
+- **Large-Scale Error Trade Handling Procedures** for systemic issues affecting multiple trades
+- Exchange may cancel or adjust trades under prescribed rules
+
+### 8.7 Kill Switch
+
+- Exchange and Clearing Participants have the ability to cancel all orders for a participant in emergency situations
+- HKEX can suspend trading in individual products or market-wide if necessary
+
+[Source: HKEX, "Trading Mechanism -- Volatility Control Mechanism", accessed 2026-04-06]
+[Source: HKEX/SFC, "Volatility Control Mechanism and Closing Auction Session Consultation", 2015]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authorities
+
+| Authority | Role |
+|-----------|------|
+| **Securities and Futures Commission (SFC)** | Primary regulator for Hong Kong securities and futures markets under the Securities and Futures Ordinance (SFO, Cap. 571) |
+| **Hong Kong Monetary Authority (HKMA)** | Regulates banks' derivatives activities; co-supervises OTC derivatives reporting |
+| **Financial Services and the Treasury Bureau (FSTB)** | Government policy authority for financial markets |
+| **HKEX (as SRO)** | Self-regulatory organization functions including exchange rule enforcement, market surveillance, and disciplinary actions |
+
+### 9.2 Key Regulations
+
+| Regulation | Scope |
+|-----------|-------|
+| **Securities and Futures Ordinance (SFO, Cap. 571)** | Primary legislation governing securities and futures markets, licensing, market conduct, and enforcement |
+| **Securities and Futures (Contracts Limits and Reportable Positions) Rules (Cap. 571Y)** | Statutory position limits and large open position reporting |
+| **HKFE Rules** | Exchange rules governing trading conduct, position limits (Rules 628, 633), block trades, and market integrity |
+| **Options Trading Rules** | Exchange rules governing stock options trading and market making |
+| **Securities and Futures (OTC Derivatives -- Reporting and Record Keeping) Rules** | OTC derivatives reporting regime (enhanced regime effective September 29, 2025) |
+
+### 9.3 Market Surveillance
+
+- HKEX operates dedicated market surveillance systems monitoring real-time trading activity
+- Surveillance covers abnormal price movements, unusual volume, potential market manipulation, and insider trading
+- Automated alerts trigger investigation by compliance teams
+- HKEX Rule Enforcement conducts disciplinary proceedings for rule breaches
+
+### 9.4 Reporting Requirements
+
+- **Large Open Position (LOP) Reporting:** Required when positions exceed specified thresholds (see Section on Position Limits below)
+- **Transaction Reporting:** All derivatives trades automatically reported to the clearing house
+- **OTC Derivatives Reporting:** Enhanced regime from September 2025 requires Unique Transaction Identifier (UTI), Unique Product Identifier (UPI), Critical Data Elements (CDE), and ISO 20022 format
+- **Short Position Reporting:** Applicable to stock-related positions
+
+### 9.5 Cross-Border Arrangements
+
+| Initiative | Description |
+|-----------|-------------|
+| **Stock Connect** (Northbound/Southbound) | Mutual market access for equities with Shanghai and Shenzhen exchanges (launched 2014/2016) |
+| **Swap Connect** (Northbound) | Access to mainland China's interbank rate swap market via OTC Clear, CFETS, and SHCH (launched May 2023) |
+| **Bond Connect** | Access to China's interbank bond market (launched 2017) |
+| **Mutual Recognition of Funds** | Cross-border fund distribution with mainland China |
+| **MSCI Derivatives** | Licensed MSCI index derivatives providing offshore hedging for China and Asia exposure |
+
+Stock Connect volumes reached record half-yearly highs in 1H 2025, driven by increased participation by international and mainland China investors.
+
+[Source: SFC, "Guidance Note on Position Limits and Large Open Position Reporting Requirements", accessed 2026-04-06]
+[Source: ICLG, "Derivatives Laws and Regulations Report 2025-2026 Hong Kong", accessed 2026-04-06]
+[Source: EY, "Evolving HKTR Requirements", March 2025]
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Derivatives Trading Fees
+
+#### Index Futures & Options
+
+| Product | Exchange Fee (per side) | Commission Levy (per side) | Total (per side) |
+|---------|----------------------|--------------------------|-----------------|
+| HSI Futures | HK$10.00 | HK$0.54 | HK$10.54 |
+| HSI Options | HK$10.00 | HK$0.54 | HK$10.54 |
+| Mini-HSI Futures | HK$3.50 | HK$0.10 | HK$3.60 |
+| Mini-HSI Options | HK$2.00 | HK$0.10 | HK$2.10 |
+| HSCEI Futures | HK$10.00 | HK$0.54 | HK$10.54 |
+| Mini-HSCEI Futures | HK$3.50 | HK$0.10 | HK$3.60 |
+| HS TECH Futures | HK$5.00 (50% discount = HK$2.50) | HK$0.54 | HK$5.54 (HK$3.04 with discount) |
+| HS TECH Options | HK$5.00 (50% discount = HK$2.50) | HK$0.54 | HK$5.54 (HK$3.04 with discount) |
+
+#### Stock Derivatives (Tiered by Underlying)
+
+| Tier | Stock Futures Fee (per side) | Stock Options Fee (per side) |
+|------|----------------------------|------------------------------|
+| Tier 1 | HK$3.10 | HK$3.00 |
+| Tier 2 | HK$1.10 | HK$1.00 |
+| Tier 3 | HK$0.60 | HK$0.50 |
+
+#### Interest Rate & Currency Products
+
+| Product | Exchange Fee (per side) |
+|---------|----------------------|
+| HIBOR Futures | HK$5.00 + HK$0.54 levy |
+| USD/CNH Futures | RMB 8.00 |
+| EUR/CNH, JPY/CNH, AUD/CNH Futures | RMB 5.00 |
+| CNH/USD Futures | USD 0.60 |
+
+#### Commodity Products
+
+| Product | Exchange Fee (per side) |
+|---------|----------------------|
+| USD Gold Futures | USD 1.00 + USD 0.07 levy |
+| CNH Gold Futures | RMB 7.00 + RMB 0.50 levy |
+| London Metal Mini Futures | USD 0.50 -- 0.60 |
+
+### 10.2 Key Fee Notes
+
+- **No stamp duty** on derivatives transactions (stamp duty applies only to physical share transfers)
+- **Investor Compensation Levy** has been suspended since 2005
+- **SFC Transaction Levy** of 0.0027% is not imposed on options trades
+- **Commission rates** are fully negotiable between participants and clients
+- **Market maker trades** receive significant fee reductions (see Section 2.5)
+
+### 10.3 Clearing Fees
+
+- HKCC and SEOCH charge clearing fees per contract in addition to exchange fees
+- Clearing fees vary by product type and participant status (Clearing Participant vs. Non-Clearing Participant)
+
+### 10.4 Market Data Fees
+
+- OMD-D data feeds are subject to licensing fees from HKEX Information Services
+- Fees vary by data level (Level 1/Level 2), redistribution rights, and number of users
+- Real-time data redistribution requires licensing agreement with HKEX
+
+### 10.5 Connectivity Fees
+
+- SDNet/2 line rental charges (via accredited vendors)
+- Hosting Services rack rental and power charges at TKO Data Centre
+- OAPI sub-license fees (waived for certain market makers)
+
+[Source: HKEX, "Fees -- Listed Derivatives -- Trading -- Transaction", https://www.hkex.com.hk/Services/Rules-and-Forms-and-Fees/Fees/Listed-Derivatives/Trading/Transaction, accessed 2026-04-06]
+
+---
+
+## 11. Recent Developments
+
+### 11.1 Record Trading Volumes (2024--2025)
+
+- **2024 Full Year:** 334 million derivatives contracts traded -- third consecutive record year. Stock options ADV reached record 720,297 contracts. Single-day volume record of 4.26 million contracts (September 27, 2024).
+- **Q1 2025:** Quarterly record ADV of 1,866K contracts (+24% YoY). Stock options ADV reached record 964,803 contracts (+50% YoY). Stock options open interest reached daily record of 19,697,919 contracts (March 27, 2025).
+- **Q3 2025 YTD:** Stock options nine-month ADV record of 886,323 contracts (+27% YoY). HS TECH Index Futures Options OI reached daily record of 172,961 contracts (September 18, 2025). HS TECH Index Options OI reached record 132,130 contracts (September 26, 2025).
+
+### 11.2 Product Launches & Enhancements
+
+- **Weekly Stock Options Expiries** introduced November 2024 for selected contracts, increasing flexibility for short-term hedging
+- **New Stock Option Classes** announced February 2025 for March listing
+- **MSCI Index Derivatives Suite** continues expansion with new single-country and regional contracts
+- **MSCI China A 50 Connect Index Futures** (launched October 2021) -- key product for offshore A-share hedging
+- **Hang Seng TECH Index Derivatives** (launched November 2020) -- growing rapidly with record OI levels in 2025
+
+### 11.3 Regulatory Changes
+
+- **Enhanced Position Limits** for three Hang Seng Index derivative product suites effective July 2, 2025 (following December 2023 initial changes and SFC adjustments)
+- **OTC Derivatives Reporting Enhancement** effective September 29, 2025: mandatory UTI, UPI, CDE, and ISO 20022 adoption
+- **Swap Connect Enhancements** in 2024 increased participation; Southbound functionality targeting future rollout
+
+### 11.4 Strategic Initiatives
+
+- **Mainland China Connectivity:** Continued deepening of Stock Connect, Bond Connect, and Swap Connect; expansion of RMB-denominated product offerings
+- **RMB Dual-Counter Listings** expanded post-June 2023; target rollout of additional RMB counters and derivatives across 2024--2026
+- **LME Integration:** London Metal Mini Futures on HKEX providing Asian-hours access to base metals; battery-materials contracts in development
+- **Technology Roadmap:** Automation across Connect mechanisms, settlement efficiency improvements, and API-first services for brokers and fintechs
+- **ESG/Sustainability:** Development of carbon and green finance-related products aligned with regional decarbonization mandates [unverified]
+
+### 11.5 Leadership
+
+- **CEO:** Bonnie Chan Yiting (since March 1, 2024)
+- **Chairman:** Carlson Tong Ka-shing (since May 3, 2024)
+
+[Source: HKEX, Q1 2025 Quarterly Results, April 2025]
+[Source: HKEX, Q3 2025 Nine-Month Results, November 2025]
+[Source: HKEX, "HKEX to Implement Enhancements to Derivatives Market Position Limits", November 2023]
+[Source: SFC, "New position limits for key exchange-traded derivatives", PR25/100, 2025]
+
+---
+
+## Derivatives-Specific Sections
+
+### D1. Product Catalog
+
+#### Equity Index Futures & Options
+
+| Product | HKATS Code | Contract Multiplier | Settlement | AHT |
+|---------|-----------|--------------------|-----------|----|
+| Hang Seng Index Futures | HSI | HK$50/point | Cash | Yes |
+| Mini-HSI Futures | MHI | HK$10/point | Cash | Yes |
+| HSI Options | HSI | HK$50/point | Cash | Yes |
+| Mini-HSI Options | MHI | HK$10/point | Cash | Yes |
+| HSI Weekly Options | HSI | HK$50/point | Cash | Yes |
+| HSCEI Futures | HHI | HK$50/point | Cash | Yes |
+| Mini-HSCEI Futures | MCH | HK$10/point | Cash | Yes |
+| HSCEI Options | HHI | HK$50/point | Cash | Yes |
+| HS TECH Index Futures | HTI | HK$50/point | Cash | Yes |
+| HS TECH Index Options | HTI | HK$50/point | Cash | Yes |
+| HSI Dividend Point Index Futures | DHI | HK$50/point | Cash | No |
+| HSI Volatility Index Futures | VHS | HK$5,000/point | Cash | No |
+| Hang Seng Index Options on Futures | -- | HK$50/point | Futures delivery | Yes |
+
+#### MSCI Index Futures (Selected)
+
+| Product | Currency | Contract Multiplier |
+|---------|----------|---------------------|
+| MSCI China A 50 Connect Index Futures | USD | USD 5/point |
+| MSCI China Free (USD) Index Futures | USD | USD 5/point |
+| MSCI Emerging Markets (USD) Index Futures | USD | USD 5/point |
+| MSCI India (USD) Index Futures | USD | USD 2/point |
+| MSCI Japan (USD) Index Futures | USD | USD 5/point |
+| MSCI Taiwan (USD) Index Futures | USD | USD 2/point |
+| MSCI Singapore Free (SGD) Index Futures | SGD | SGD 10/point |
+
+#### Single Stock Derivatives
+
+| Product | Details |
+|---------|---------|
+| Stock Futures | Futures on selected Hong Kong-listed stocks; physical delivery |
+| Stock Options | Options on ~100 underlying stocks and ETFs; American-style (can exercise any business day before expiry); physical delivery |
+| Weekly Stock Options | Weekly expiry cycles for selected classes (introduced November 2024) |
+
+#### Interest Rate Derivatives
+
+| Product | Contract Size | Settlement |
+|---------|--------------|------------|
+| 1-Month HIBOR Futures | HK$15,000,000 notional | Cash |
+| 3-Month HIBOR Futures | HK$5,000,000 notional | Cash |
+
+#### Currency Derivatives
+
+| Product | Contract Size | Settlement |
+|---------|--------------|------------|
+| USD/CNH Futures | USD 100,000 | Physical (CNH delivery) |
+| Mini USD/CNH Futures | USD 20,000 | Physical (CNH delivery) |
+| CNH/USD Futures | CNH 500,000 | Cash (USD settlement) |
+| EUR/CNH Futures | EUR 100,000 | Physical (CNH delivery) |
+| JPY/CNH Futures | JPY 6,000,000 | Physical (CNH delivery) |
+| AUD/CNH Futures | AUD 100,000 | Physical (CNH delivery) |
+| INR/CNH Futures | INR 5,000,000 | Cash (CNH settlement) |
+| INR/USD Futures | INR 5,000,000 | Cash (USD settlement) |
+| USD/CNH Options | USD 100,000 | Physical |
+
+#### Commodity Derivatives
+
+| Product | Contract Size | Settlement |
+|---------|--------------|------------|
+| USD Gold Futures | 10 troy ounces | Physical delivery |
+| CNH Gold Futures | 10 grams (~0.32 troy oz) | Physical delivery |
+| USD Silver Futures | 100 troy ounces | Physical delivery |
+| CNH Silver Futures | 100 grams | Physical delivery |
+| Iron Ore Futures (TSI) | 50 metric tons | Cash |
+| London Metal Mini Futures (Aluminium) | 5 tonnes | Cash |
+| London Metal Mini Futures (Copper) | 5 tonnes | Cash |
+| London Metal Mini Futures (Zinc) | 5 tonnes | Cash |
+| London Metal Mini Futures (Nickel) | 1 tonne | Cash |
+| London Metal Mini Futures (Tin) | 1 tonne | Cash |
+| London Metal Mini Futures (Lead) | 5 tonnes | Cash |
+
+[Source: HKEX, "Listed Derivatives" product pages, accessed 2026-04-06]
+[Source: HKEX, "MSCI Index Futures & Options" product page, accessed 2026-04-06]
+[Source: HKEX, "Commodities FAQ", accessed 2026-04-06]
+
+### D2. Key Contract Specifications (Top 5 by Volume)
+
+#### 1. Hang Seng Index (HSI) Futures
+
+| Specification | Details |
+|---------------|---------|
+| Underlying | Hang Seng Index |
+| HKATS Code | HSI |
+| Contract Multiplier | HK$50 per index point |
+| Tick Size | 1 index point (HK$50) |
+| Contract Months | **Short-dated:** Spot month, next 3 calendar months, next 3 quarterly months. **Long-dated:** June & December + subsequent 3 December months |
+| Trading Hours | PMO: 8:45--9:15 AM, 12:30--1:00 PM; Regular: 9:15 AM--12:00 PM, 1:00--4:30 PM; AHT: 5:15 PM--3:00 AM |
+| Last Trading Day | Second last Trading Day of the Contract Month |
+| Settlement | Cash settlement |
+| Final Settlement Price | Average of HSI quotations at 5-minute intervals during SEHK continuous trading + close on last trading day |
+| Exchange Fee | HK$10.00 per contract per side |
+| Position Limit | 15,000 contracts (delta-adjusted, combined with HSI options, all months) |
+
+#### 2. Hang Seng China Enterprises Index (HSCEI) Futures
+
+| Specification | Details |
+|---------------|---------|
+| Underlying | Hang Seng China Enterprises Index (HSCEI / H-shares Index) |
+| HKATS Code | HHI |
+| Contract Multiplier | HK$50 per index point |
+| Tick Size | 1 index point (HK$50) |
+| Contract Months | Spot month, next calendar month, next 2 quarterly months |
+| Trading Hours | Same as HSI Futures |
+| Last Trading Day | Second last Trading Day of the Contract Month |
+| Settlement | Cash settlement |
+| Final Settlement Price | Average of HSCEI quotations at 5-minute intervals during SEHK session |
+| Exchange Fee | HK$10.00 per contract per side |
+| Position Limit | 25,000 contracts (delta-adjusted, combined with HSCEI options, all months) |
+
+#### 3. Stock Options (Aggregate)
+
+| Specification | Details |
+|---------------|---------|
+| Underlying | ~100 Hong Kong-listed stocks and ETFs |
+| Style | American (exercisable any business day before expiry) |
+| Contract Size | Varies by underlying (typically 1 board lot) |
+| Expiry Months | Spot month, next 2 calendar months, next 3 quarterly months |
+| Weekly Expiries | Available for selected classes (since November 2024) |
+| Settlement | Physical delivery (shares exchanged) |
+| Exercise | By 6:30 PM on any business day; auto-exercise for in-the-money at expiry |
+| Exchange Fee | HK$0.50 -- HK$3.00 per contract per side (tiered) |
+| Position Limit | 50,000 -- 250,000 open contracts per class per direction (varies by underlying) |
+
+#### 4. Hang Seng TECH Index (HSTECH) Futures
+
+| Specification | Details |
+|---------------|---------|
+| Underlying | Hang Seng TECH Index |
+| HKATS Code | HTI |
+| Contract Multiplier | HK$50 per index point |
+| Tick Size | 1 index point (HK$50) |
+| Contract Months | Spot month, next 3 calendar months, next 3 quarterly months |
+| Trading Hours | Same as HSI Futures |
+| Settlement | Cash settlement |
+| Exchange Fee | HK$2.50 per side (with 50% market-wide discount) |
+| Position Limit | 30,000 contracts (delta-adjusted, combined with HSTECH options) |
+
+#### 5. Mini-Hang Seng Index (Mini-HSI) Futures
+
+| Specification | Details |
+|---------------|---------|
+| Underlying | Hang Seng Index |
+| HKATS Code | MHI |
+| Contract Multiplier | HK$10 per index point (1/5 of standard HSI) |
+| Tick Size | 1 index point (HK$10) |
+| Contract Months | Spot month, next calendar month, next 2 quarterly months |
+| Trading Hours | Same as HSI Futures |
+| Settlement | Cash settlement |
+| Final Settlement Price | Same as HSI Futures |
+| Exchange Fee | HK$3.50 per contract per side |
+| Fungibility | 5 Mini-HSI = 1 standard HSI (offsets allowed) |
+
+[Source: HKEX, product pages for HSI Futures, HSCEI Futures, HSTECH Futures, Mini-HSI Futures, Stock Options, accessed 2026-04-06]
+
+### D3. Margin Framework
+
+#### Margining Methodology: PRiME (Portfolio Risk Margining System)
+
+HKCC and SEOCH use **PRiME** (Portfolio Risk Margining System), which is **SPAN 1 compatible**. PRiME is the margining methodology implemented in DCASS.
+
+| Component | Details |
+|-----------|---------|
+| Algorithm | PRiME (SPAN 1 compatible) |
+| Scenarios | 16 simulated scenarios assessing maximum potential losses |
+| Confidence Level | Defined confidence level over a one-day holding period |
+| Clearing House Margin | Base margin calculated by the clearing house using Risk Parameter Files (RPF) |
+| Client Margin Multiplier | **1.33x** (effective March 20, 2017) -- Client Risk Margin = Clearing House Margin x 1.33 |
+| Long Option Cap | When a portfolio contains solely long option positions, margin is capped by the position's market value |
+| SEOCH Additional Component | Mark-to-Market Margin for premium-paid options |
+| Risk Parameter Files | Distributed by HKEX for calculation of clearing house margins; participants access via DCASS |
+| Monitoring | Daily monitoring of margin levels to ensure adequacy relative to market conditions |
+
+#### Margin Rates (Indicative -- Subject to Change)
+
+Margin rates vary based on market volatility and are reviewed regularly by HKCC/SEOCH. Approximate ranges:
+
+| Product | Initial Margin (Clearing House) | Client Margin (~1.33x) |
+|---------|---------------------------------|----------------------|
+| HSI Futures | ~HK$100,000 -- 130,000 per contract | ~HK$133,000 -- 173,000 |
+| Mini-HSI Futures | ~HK$20,000 -- 26,000 per contract | ~HK$26,600 -- 34,600 |
+| HSCEI Futures | ~HK$50,000 -- 70,000 per contract | ~HK$66,500 -- 93,100 |
+
+[Note: Exact margin rates change frequently based on market conditions. The above are approximate ranges based on broker-published data and should be verified with the latest HKEX RPF.]
+
+#### Variation Margin
+
+- Marked-to-market daily based on the official daily settlement price
+- **Intra-day margin calls** may be issued if market moves significantly
+- Variation margin settled via fund transfers between HKCC and participant bank accounts
+- Settlement/Designated Bank processes Direct Debit and Direct Credit instructions
+
+#### Eligible Collateral
+
+- Cash (HKD, USD, RMB, and other approved currencies)
+- Government securities (with haircuts)
+- Bank guarantees
+- Other approved securities (with haircuts as specified by the clearing house)
+
+[Source: HKEX, "Margin -- Risk Management -- Listed Derivatives Clearing", https://www.hkex.com.hk/Services/Clearing/Listed-Derivatives/Risk-Management/Margin, accessed 2026-04-06]
+[Source: HKEX, "Clearing, Settlement and Collateral Management FAQ", accessed 2026-04-06]
+
+### D4. Position Limits & Large Open Position Reporting
+
+#### Position Limits by Product
+
+| Product | Position Limit | Basis |
+|---------|---------------|-------|
+| HSI Futures + Options (combined) | 15,000 long or short | Delta-adjusted, all contract months |
+| HSCEI Futures + Options (combined) | 25,000 long or short | Delta-adjusted, all contract months |
+| HS TECH Futures + Options (combined) | 30,000 long or short | Delta-adjusted, all contract months and weeks |
+| Stock Options | 50,000 -- 250,000 open contracts | Per option class, per market direction, all expiries |
+| Stock Futures | 5,000 -- 25,000 net contracts | All contract months combined, varies by stock |
+
+Position limits may be increased under bona fide hedging exemptions, subject to SFC/Exchange approval.
+
+#### Large Open Position (LOP) Reporting Thresholds
+
+| Product Type | Reporting Threshold |
+|-------------|-------------------|
+| Index Futures/Options | 500 open contracts in any single contract month |
+| Stock Options | 1,000 open contracts, per option class per expiry |
+| Stock Futures | 1,000 open contracts in any single contract month |
+
+#### Reporting Requirements
+
+- LOP reports must be submitted via **Electronic Communication Platform (ECP 2.0)**
+- Filing deadline: **12:00 noon of the next Trading Day** after the threshold is first exceeded
+- Reporting continues for each trading day while positions exceed thresholds
+- Holiday trading contracts require reporting by the next trading day (including Hong Kong public holidays)
+- Regulatory basis: HKFE Rules 628, 633; Securities and Futures (Contracts Limits and Reportable Positions) Rules (Cap. 571Y); SFC Guidance Note
+
+#### Recent Changes
+
+- December 22, 2023: Enhanced position limits implemented following HKEX consultation conclusions (July 2022) and SFC adjustments
+- July 2, 2025: Further increases to position limits for three Hang Seng Index derivative product suites, with HKEX system enhancements deployed to support the changes
+
+[Source: HKEX, "Large Open Positions and Position Limits", https://www.hkex.com.hk/Services/Trading/Derivatives/Overview/Trading-Mechanism/Large-Open-Positions-and-Position-Limits, accessed 2026-04-06]
+[Source: HKEX FAQ, "Position Limits and Large Open Position Reporting", accessed 2026-04-06]
+[Source: SFC, "Guidance Note on Position Limits and Large Open Position Reporting Requirements", accessed 2026-04-06]
+
+### D5. Block Trading Rules
+
+#### Overview
+
+The Block Trade Facility enables large privately negotiated transactions executed outside the central order book but cleared through the clearing house, providing price certainty, execution certainty, and CCP guarantee.
+
+#### Eligible Products
+
+All HKFE and SEHK derivatives products **except**:
+- Listed combination orders
+- Mini-HSI futures and options
+- Mini-HSCEI futures and options
+
+#### Minimum Volume Thresholds (MVT)
+
+| Product | MVT (contracts) |
+|---------|----------------|
+| HSI/HSCEI Futures (front 4 months) | 100 |
+| HSI/HSCEI Futures (back months) | 50 |
+| Stock Index Futures (other) | 100 |
+| Stock Futures | 100 |
+| Stock Options | 500 |
+| MSCI Index Futures | 25 -- 50 (varies by product) |
+| Currency Futures | 50 |
+| Gold/Silver Futures | 30 |
+| HSI Volatility Index Futures | [unverified] |
+
+#### Pricing Rules
+
+- Execution prices must be **"fair and reasonable"**
+- Must fall within specified **permissible price ranges**:
+  - Stock Index Futures: 1--3% (depending on contract maturity)
+  - Stock Futures/Options: 3% or maximum market maker spread (whichever narrower)
+  - MSCI Futures: 3%
+  - Currency Futures: 3%
+  - HSI Volatility Index Futures: 1%
+
+#### Order Entry Windows
+
+- **Stock Index Futures/Options:** 4:30 PM -- 4:45 PM on regular trading days
+- **Stock Futures/Options:** 4:00 PM -- 4:25 PM on regular trading days
+- MSCI Futures referencing official closing values: within 30 minutes of next session opening
+
+#### Clearing & Registration
+
+- Registration occurs only after clearing house validation
+- If no rejection notice within 30 minutes: block trade deemed registered
+- Clearing house may call **additional margin** if price appears unreasonable or triggers 25% margin erosion (HKCC) or 50% (SEOCH)
+
+#### Information Dissemination
+
+- Block trade prices are **excluded** from: day-high, day-low, last traded price, and settlement price calculations
+- Trades marked "EMP 1 BR" or "EMP D BR" in HKATS
+- Volume included in overall daily statistics
+
+#### Record Keeping
+
+- Participants must retain **telephone recordings** of all block trade orders and confirmations for at least 3 months
+- Evidence must be provided to the Exchange upon request
+
+**Note:** HKEX does not currently operate a formal EFP (Exchange for Physical) or EFS (Exchange for Swap) facility comparable to CME Group. Off-exchange transactions are primarily handled through the Block Trade Facility. [unverified -- participants should consult current HKFE Rules for latest provisions]
+
+[Source: HKEX, "Block Trade Facility", https://www.hkex.com.hk/Services/Trading/Derivatives/Overview/Trading-Mechanism/Block-Trade-Facility, accessed 2026-04-06]
+
+### D6. Delivery & Settlement Process
+
+#### Cash-Settled Products (Index Futures/Options, HIBOR, Iron Ore)
+
+| Step | Details |
+|------|---------|
+| Daily Settlement Price | Published by HKEX at end of each trading day |
+| Variation Margin | Calculated daily; settled via HKCC/SEOCH bank account transfers |
+| Final Settlement Price (HSI/HSCEI/HSTECH) | Average of index quotations at 5-minute intervals during SEHK continuous trading session + the close on the last trading day |
+| Final Settlement Day | Business day following the last trading day |
+| Money Settlement | Direct Debit/Credit instructions issued by HKCC to Settlement/Designated Banks |
+
+#### Physically Delivered Products (Stock Futures/Options, Currency Futures, Gold Futures)
+
+| Step | Details |
+|------|---------|
+| Stock Options Exercise | By 6:30 PM on any business day (American-style); auto-exercise for ITM at expiry |
+| Stock Delivery | Physical delivery of underlying shares via CCASS (Central Clearing and Settlement System); settlement T+2 |
+| Currency Futures | Physical delivery of CNH (for USD/CNH, EUR/CNH, etc.) on the third business day after the last trading day |
+| Gold Futures | Physical delivery of gold at designated vault; loco Hong Kong delivery |
+| Silver Futures | Physical delivery of silver at designated vault |
+
+#### Settlement Cycle
+
+- **Derivatives margin/variation:** T+0 (same day) for regular margin calls; intra-day calls possible
+- **Cash settlement:** T+1 (next business day after last trading day) for final settlement of index futures
+- **Physical delivery:** T+2 for stock options; T+3 for currency futures
+- **Gold delivery:** As specified in contract rules
+
+#### Default Management
+
+- HKCC and SEOCH act as CCP -- guarantee settlement of all transactions
+- Reserve Fund contributions from Clearing Participants provide first-loss absorption
+- Waterfall: Defaulting participant's margin and collateral -> Reserve Fund contribution -> HKCC/SEOCH own resources -> Non-defaulting participants' Reserve Fund contributions
+- HKEX has the power to suspend trading and impose emergency measures
+
+[Source: HKEX, "Clearing Services -- Listed Derivatives Overview", accessed 2026-04-06]
+[Source: HKEX, "Clearing, Settlement and Collateral Management FAQ", accessed 2026-04-06]
+
+---
+
+## Appendix: Comparison with KRX Derivatives
+
+| Feature | HKEX Derivatives | KRX Derivatives |
+|---------|-----------------|-----------------|
+| Flagship Product | HSI Futures (HK$50/point) | KOSPI 200 Futures (KRW 250,000/point) |
+| Options Style | European (index), American (stock) | European (KOSPI 200 Options) |
+| Trading System | HKATS (Genium INET, Nasdaq) | EXTURE+ (proprietary) |
+| Clearing House | HKCC / SEOCH | KRX CCP |
+| Margin Methodology | PRiME (SPAN 1 compatible) | KOSCOM SPAN-based |
+| After-Hours Trading | Yes (T+1, 5:15 PM -- 3:00 AM) | Yes (Night session, 6:00 PM -- 6:00 AM for KOSPI 200) |
+| Lunch Break | Yes (12:00 -- 1:00 PM) | No (continuous since 2016) |
+| China Connectivity | Stock Connect, Swap Connect, Bond Connect | None (direct) |
+| MSCI Derivatives | Extensive suite (~39 contracts) | Limited |
+
+---
+
+## Data Sources & References
+
+1. HKEX Official Website -- https://www.hkex.com.hk
+2. HKEX, "Trading Hours -- Derivatives Market" -- accessed 2026-04-06
+3. HKEX, "HKATS Infrastructure" -- accessed 2026-04-06
+4. HKEX, "OMD-D Market Data Platform" -- accessed 2026-04-06
+5. HKEX, "Hosting Services" -- accessed 2026-04-06
+6. HKEX, "Block Trade Facility" -- accessed 2026-04-06
+7. HKEX, "Large Open Positions and Position Limits" -- accessed 2026-04-06
+8. HKEX, "Market Making Obligations and Incentives" -- accessed 2026-04-06
+9. HKEX, "Margin -- Risk Management" -- accessed 2026-04-06
+10. HKEX, "Fees -- Listed Derivatives -- Transaction" -- accessed 2026-04-06
+11. HKEX, "Clearing Services -- Listed Derivatives Overview" -- accessed 2026-04-06
+12. HKEX, Quarterly Results Press Releases (Q1, Q2, Q3 2025) -- 2025
+13. SFC, "Guidance Note on Position Limits and LOP Reporting" -- accessed 2026-04-06
+14. Wikipedia, "Hong Kong Exchanges and Clearing" -- accessed 2026-04-06
+15. Wikipedia, "Hong Kong Futures Exchange" -- accessed 2026-04-06
+16. Nasdaq, "Hong Kong Exchange Renews Contract With NASDAQ OMX" -- 2013
+17. Finextra, "HKEx moves derivatives clearing and trading platforms to Genium Inet" -- 2013
+18. FOW, "HKEX to list single stock options in March after record 2024" -- February 2025
+19. ICLG, "Derivatives Laws and Regulations 2025-2026 -- Hong Kong" -- accessed 2026-04-06
+20. EY, "Evolving HKTR Requirements" -- March 2025

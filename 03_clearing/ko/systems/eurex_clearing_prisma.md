@@ -1,0 +1,531 @@
+# Eurex Clearing — C7 아키텍처 및 PRISMA 증거금 엔진 (C7 Architecture & PRISMA Margin Engine)
+
+> **최종 수정일:** 2026-04-07
+> **시스템 분류:** 청산시스템
+
+---
+
+## 1. 시스템 개요 (System Overview)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 시스템명 | C7 / Eurex Clearing Prisma |
+| 운영기관 | Eurex Clearing AG (Deutsche Borse Group) |
+| 목적 | CCP 청산, 후선(post-trade) 처리, 포트폴리오 기반 리스크 관리 / 증거금 산출 |
+| 가동연도 | C7: 2017년경부터 단계적 출시(파생상품), 2021년(증권); Prisma: 2012년 |
+| 현재 버전 | C7 Release 11.1+(파생상품 청산); C7 CAS Release 2.293; Prisma Release 15.0 |
+| 개발 | 자체 개발(Deutsche Borse Group), TCS(Tata Consultancy Services)가 C7 SCS 현대화 기술 파트너 |
+
+### 시스템 발전 과정 (System Evolution)
+
+| 시기 | 시스템명 | 주요 변화 |
+|--------|-------------|-------------|
+| 2012년 이전 | Eurex Clearing Classic | 모놀리식 레거시 청산시스템; 상품별 증거금 산출(Risk-Based Margining) |
+| 2012 | Prisma 출시 | 필터 역사적 시뮬레이션(FHS) VaR을 활용한 포트폴리오 기반 증거금 산출 도입; 초기에는 상장 파생상품 대상 |
+| 2012-2017 | Prisma 확장 | OTC IRS(EurexOTC Clear)로 확대, PFI01 청산그룹(liquidation group) 내에서 상장 FI와 OTC IRS 간 교차 증거금 산출 |
+| ~2017 이후 | C7 Core | Eurex Clearing Classic을 대체하는 차세대 청산 아키텍처; 파생상품 청산의 단계적 마이그레이션 |
+| 2021 | C7 SCS 출시 | C7 증권청산서비스(Securities Clearing Service) 가동(2021년 9월), Xetra 및 XFRA 현물시장 청산 |
+| 2022-2025 | C7 CAS | C7 고객관리서비스(Client Administration Service) 출시; 회원 관리 및 보고를 위한 다수 릴리스 |
+| 2025 | C7 Release 11.1 | Total Return Futures 전략, 음수 거래/결제 가격, 미국 FCM 고객을 위한 상품 교차 증거금(2025년 5월) |
+| 2025 | Prisma Bonds | Prisma 방법론을 채권 및 레포로 확대; 2025년 12월 8일부터 Risk-Based Margining에서 의무 전환 |
+| 2025 | Prisma Release 15.0 | 2025년 6월 16일 발효 증거금 하한 연례 재보정; OTC IRS 포트폴리오의 증거금 집중 부가금 |
+| 2026 | 진행 중 | 청산 아키텍처 추가 발전, 규제 준수(EMIR 3.0), 담보 금융 개선 |
+
+[Source: [Eurex C7 Releases](https://www.eurex.com/ec-en/support/initiatives/c7-releases); [Eurex Clearing Prisma](https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma); [C7 Introduction Circular](https://www.eurex.com/ec-en/find/circulars/Introduction-of-C7-Eurex-Clearing-s-new-clearing-architecture-Information-on-scope-and-timeline-213474); [Prisma Bonds Circular](https://www.eurex.com/ec-en/find/circulars/clearing-circular-4609908)]
+
+---
+
+## 2. 아키텍처 (Architecture)
+
+### 2.1 상위 설계 (High-Level Design)
+
+Eurex Clearing 기술 생태계는 서로 구분되지만 통합된 여러 플랫폼으로 구성된다:
+
+```
++--------------------------------------------------------------+
+|                  Eurex Clearing Infrastructure                |
+|                                                               |
+|  +------------------+   +-------------------+                 |
+|  |   C7 Core        |   |  EurexOTC Clear   |                |
+|  |  (파생상품        |   |  (OTC IRS/NDF     |                |
+|  |   청산)           |   |   청산)           |                |
+|  +--------+---------+   +--------+----------+                |
+|           |                       |                           |
+|  +--------+---------+   +--------+----------+                 |
+|  |  C7 SCS          |   |  F7 Repo          |                |
+|  |  (증권            |   |  (레포 거래       |                |
+|  |   청산)           |   |   & 청산)         |                |
+|  +--------+---------+   +--------+----------+                |
+|           |                       |                           |
+|  +--------+----------+-----------+----------+                 |
+|  |           Eurex Clearing Prisma          |                 |
+|  |        (증거금 & 리스크 엔진)            |                 |
+|  +--------+----------+-----------+----------+                |
+|           |                       |                           |
+|  +--------+---------+   +--------+----------+                 |
+|  |  C7 ARP          |   |  C7 CAS           |                |
+|  |  (고급 리스크     |   |  (고객 관리       |                |
+|  |   방어)           |   |   서비스)         |                |
+|  +------------------+   +-------------------+                 |
+|                                                               |
+|  +---------+  +--------+  +--------+  +----------+           |
+|  |  CRE    |  |  ERS   |  | Prisma |  | Clearing |           |
+|  | 보고서  |  |  리스크|  | 계산기 |  |   GUI    |           |
+|  +---------+  +--------+  +--------+  +----------+           |
++--------------------------------------------------------------+
+         |                      |                    |
+    Clearstream            T2S / T2           청산회원
+   (결제)               (현금/증권)         (연결)
+```
+
+**아키텍처 유형:** 하이브리드 — 모놀리식 레거시에서 **마이크로서비스 기반 아키텍처**로 전환 중(C7 SCS는 Red Hat OpenShift 기반); 온프레미스 코어에 선택적 클라우드 도입(D7, cPME, 분석에 Google Cloud 활용).
+
+[Source: [TCS Eurex Case Study](https://www.tcs.com/what-we-do/industries/capital-markets/case-study/eurex-central-counterparty-clearing-legacy-modernization)]
+
+### 2.2 핵심 구성요소 (Core Components)
+
+#### C7 청산 플랫폼 (C7 Clearing Platform)
+
+C7은 Eurex Clearing의 차세대 청산 아키텍처로, 레거시 "Eurex Clearing Classic" 시스템을 단계적 마이그레이션 방식으로 대체한다.
+
+| 구성요소 | 기능 | 현황 |
+|-----------|----------|--------|
+| **C7 Core** | 상장 파생상품(선물, 옵션)의 중앙 청산 엔진; 채무인수(novation), 포지션 관리, 결제 지시 생성 | 운영 중(다수 릴리스) |
+| **C7 Securities Clearing Service (C7 SCS)** | 프랑크푸르트 증권거래소(XETR, XFRA) 및 Eurex 증권(XEUR)의 증권 청산; 거래 수집, 차감, 결제 지시 생성, 기업행위 처리 | 2021년 9월부터 운영 |
+| **C7 Client Administration Service (C7 CAS)** | 회원 및 계좌 관리, 보고 구성, 사용자 권한, OTC 보고 수신자 관리 | 운영 중; CAS Release 2.293 2025년 10월 가동 |
+| **C7 Advanced Risk Protection (C7 ARP)** | 사전거래(pre-trade) 및 실시간 리스크 통제; 회원 리스크 한도 유지; Prisma와 연계한 한도 위반 감지; 회원 Stop/Release 기능 | C7에 통합 |
+
+**C7 SCS 현대화 세부사항 (TCS 파트너십):**
+
+Eurex Clearing Classic에서 C7 SCS로의 마이그레이션은 TCS와의 파트너십으로 수행되었다:
+
+- **Phase 1:** 증권시장 및 파생상품 결제 거래의 청산. TCS가 높은 처리량과 저지연 요건을 처리하는 견고하고 고성능 시스템 구성요소를 설계하였다.
+- **Phase 2:** 레포 시장 거래의 청산. 복잡한 기능성과 신규 담보관리시스템으로의 마이그레이션을 처리하였다.
+- **아키텍처:** **Red Hat OpenShift** 컨테이너 플랫폼에 배포된 마이크로서비스 기반. 독립적으로 확장 가능한 구성요소가 모놀리식 레거시 애플리케이션을 대체한다.
+- **효과:** 증가하는 거래 트래픽에 대한 유연한 확장; 신규 상품 및 서비스(추가 통화 지원, 거래시간 연장 등)의 빠른 출시; 운영 오버헤드 감소.
+- **개발 방법론:** 테스트 자동화를 갖춘 분산 애자일 방법.
+
+[Source: [TCS Eurex Case Study](https://www.tcs.com/what-we-do/industries/capital-markets/case-study/eurex-central-counterparty-clearing-legacy-modernization)]
+
+**최근 C7 릴리스:**
+
+| 릴리스 | 운영 일자 | 주요 기능 |
+|---------|----------------|--------------|
+| C7 Release 11.1 | 2025년 5월 19일 | Total Return Futures 전략 지원; 음수 거래/결제 가격; 미국 FCM 고객을 위한 상품 교차 증거금 |
+| C7 CAS Release 2.289.7 | 2025년 5월 15일 | Reporting ID 개선; 시스템 개선 |
+| C7 CAS Release 2.293 | 2025년 10월 20일 | 새로운 OTC Report Receiver 가입 유형; 보고 개선 |
+| C7 SCS 개선 | 2025년 11월 | 기업행위 처리 개선 |
+| C7 Release Notes | 2026년 3월 18일 | 기능 및 기술 개선사항 개요 공표 |
+
+[Source: [C7 Releases](https://www.eurex.com/ec-en/support/initiatives/c7-releases); [C7 CAS Releases](https://www.eurex.com/ec-en/support/initiatives/c7-client-administration-service/C7-CAS-Releases-2900566)]
+
+---
+
+#### PRISMA 증거금 엔진 — 포트폴리오 리스크 통합 시스템 및 증거금 접근방식 (Portfolio Risk Integrated System and Margin Approach)
+
+**Eurex Clearing Prisma** (Portfolio-based Risk management by Simulating scenario Matrices and Assessing market risks)는 Eurex Clearing의 독자 포트폴리오 기반 증거금 방법론으로, 2012년에 도입되었다. 이는 상품별 증거금 산출에서 포트폴리오 수준 리스크 평가로의 근본적 전환을 나타낸다.
+
+##### 핵심 방법론: 필터 역사적 시뮬레이션 (Filtered Historical Simulation, FHS)
+
+FHS 접근방식은 역사적 시뮬레이션의 장점(분포 가정 불필요, 팻 테일 및 비선형 수익 포착)과 GARCH 유형 변동성 필터링을 결합하여 모델이 변화하는 시장 상황에 빠르게 반응하도록 한다.
+
+**시나리오 생성 과정:**
+
+1. **원시 역사적 수익률:** 3년 룩백 구간(약 750 거래일)에 걸쳐 모든 리스크 요소의 일별 수익률을 수집한다.
+2. **변동성 필터링:** GARCH 유형 필터를 적용하여 각 관측일의 역사적 변동성 대비 현재 조건부 변동성의 비율로 역사적 수익률을 스케일링한다. 이를 통해 고변동성 체제에서는 시나리오가 현재의 높은 리스크를 반영하고, 저변동성 체제에서는 필터링된 시나리오가 반응성을 유지한다.
+3. **필터링된 시나리오:** 750개의 필터링된 역사적 시나리오가 현재 시장 상황에 보정된 잠재적 포트폴리오 손익 결과를 나타낸다.
+4. **스트레스 기간 시나리오:** 식별된 역사적 스트레스 에피소드(예: 2008년 금융위기, 2011년 유럽 부채위기, 2020년 COVID-19 폭락)에서 추가 250개 시나리오를 추출한다. 일관성을 위해 이 시나리오도 필터링된다.
+5. **완전 재평가(Full revaluation):** 각 포트폴리오를 전체 1,000개 시나리오 하에서 완전한 가격 모델(델타-감마 근사가 아닌)을 사용하여 재평가하며, 옵션 및 복잡한 상품의 비선형 리스크를 포착한다.
+6. **VaR 산출:** 개시증거금은 다음의 **최대값**으로 설정한다:
+   - 목표 신뢰수준(상장 99%, OTC 99.5%)에서의 필터 역사적 시뮬레이션 VaR
+   - 동일 신뢰수준에서의 스트레스 기간 VaR
+7. **부분표본(Subsampling) 기법:** 필터링된 역사적 및 스트레스 기간 시나리오 가격을 비중첩(non-overlapping) 시나리오 부분표본으로 분할하여 견고한 VaR 추정을 수행한다.
+
+[Source: [Eurex Clearing Prisma](https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma); [Eurex Clearing Prisma Brochure (2014)](https://www.eurex.com/resource/blob/2287018/05702c2d06312fc083c9419d81414db5/data/2014-Brosch-re-Eurex-Clearing-Prisma-E.pdf); [Part 8: Forward Looking Margin Simulations](https://www.eurex.com/ec-en/find/news/Part-8-Forward-looking-margin-simulations-into-periods-of-stress-3193710)]
+
+##### 주요 파라미터 (Key Parameters)
+
+| 파라미터 | 사양 |
+|-----------|--------------|
+| 모델 유형 | VaR(Value-at-Risk)을 적용한 필터 역사적 시뮬레이션(FHS) |
+| 신뢰수준 | 상장 상품 99%; OTC 상품 99.5% |
+| 역사적 시나리오 | 750개 필터-역사적 시나리오(3년 룩백) |
+| 스트레스 시나리오 | 식별된 역사적 스트레스 에피소드의 250개 스트레스 기간 시나리오 |
+| 총 시나리오 | 1,000개(750 + 250) |
+| 리스크 지표 | FHS VaR과 스트레스 기간 VaR의 최대값 |
+| 재평가 | 각 시나리오 하 완전 재평가(델타-감마 근사가 아닌) |
+| 보유기간 — 상장 주식 파생상품 | 2-3일(PEQ01 청산그룹) |
+| 보유기간 — 상장 채권 | 2일(PFI01_HP2 분할) |
+| 보유기간 — OTC IRS | 5일(PFI01_HP5 분할) |
+| 경기순응성 완화 | 스트레스 기간 VaR이 저변동성 체제에서 신중한 증거금 하한 역할 |
+| 하한 재보정 | 연례 재보정(예: 2025년 6월 16일 발효) |
+| 스트레스 기간 선정 | 안정적 하한을 보장하기 위해 장기(최소 10년), 99% VaR에 보정 |
+
+##### 증거금 구성요소 (Margin Components)
+
+Prisma 개시증거금은 다수의 가산적 구성요소로 이루어진다:
+
+| 구성요소 | 설명 |
+|-----------|-------------|
+| **시장리스크 개시증거금(Market Risk Initial Margin, MRIM)** | FHS 기반 핵심 리스크 구성요소; 완전 재평가를 통해 역사적 및 스트레스 시나리오 하에서 잠재적 포트폴리오 가치 변화를 포착 |
+| **유동성 조정(Liquidity Adjustment, LA)** | 집중된 포지션의 청산 비용을 반영; 포트폴리오 청산 시 매수-매도 스프레드 확대 및 시장 영향을 조정 |
+| **KnockIn / 이벤트 리스크 구성요소** | 특정 리스크 이벤트에 대한 추가 증거금(예: 구조화상품의 배리어 이벤트, 개별주식 파생상품의 배당 이벤트 리스크) |
+| **증거금 집중 부가금(Margin Concentration Add-on)** | 집중된 OTC IRS 포트폴리오에 대한 보충 증거금; 2025년 12월 도입 |
+| **상관관계 붕괴 조정(Correlation Break Adjustment)** | 스트레스 기간 중 역사적 상관관계의 잠재적 붕괴를 반영하는 조정 [미확인 — 방법론에서 언급되나 세부사항 제한] |
+
+후향적 구성요소(필터 역사적 VaR)는 변화하는 시장 상황에 대한 모델 반응성을 보장하고, 전향적 구성요소(스트레스 기간 VaR)는 증거금 안정성을 보장하며 경기순응성에 대항한다.
+
+##### 청산그룹 (Liquidation Groups)
+
+상품은 공유된 리스크 특성에 따라 청산그룹으로 조직된다. 증거금 상쇄(교차 증거금)는 청산그룹 내에서 허용되나 청산그룹 간에는 허용되지 않는다.
+
+| 청산그룹 | 상품 | 보유기간 | 비고 |
+|-------------------|----------|---------------|-------|
+| **PFI01** (채권) | 상장 FI 선물/옵션 + OTC IRS, OIS, FRA, 베이시스 스왑, 무이표 인플레이션 스왑 | 분할: 상장 HP2(2일); OTC HP5(5일) | 이 그룹 내 상장-OTC 교차 증거금 |
+| **PEQ01** (주식) | 상장 주식/지수 파생상품 | 2-3일 | 4일에서 3일로, 이후 일부 상품은 2일로 축소 |
+| **FX 청산그룹** | OTC FX NDF | 2일 [미확인] | |
+| **레포/채권** | 레포, GC Pooling, 채권 | 가변 | Risk-Based Margining에서 Prisma Bonds로 전환(2025년 12월 8일부터 의무) |
+
+##### 교차 증거금 알고리즘 (Cross-Margining Algorithm)
+
+교차 증거금 산출은 Prisma의 경제적으로 중요한 차별화 특성으로, 동일 청산그룹 내에서 상이한 보유기간을 가진 상품 간 증거금 상쇄를 가능하게 한다:
+
+1. **포트폴리오 평가:** 시스템이 PFI01 내 상장 FI/단기금융 포지션이 OTC 포트폴리오에 대해 경제적으로 합리적인 헤지인지 평가한다.
+2. **보유기간 최적화:** 상장 포지션이 헤지로 인정되면 2일 보유기간 분할에서 5일 분할로 이동한다. 해당 포지션의 보유기간이 증가하지만, OTC 포지션과 결합함으로써 얻는 포트폴리오 수준의 분산 효과가 증가된 시간 기간을 상쇄하고도 남는다.
+3. **순증거금 산출:** 결합 포트폴리오를 5일 기간에서 평가하여, 별도의 상장(2일) 및 OTC(5일) 증거금 합계보다 낮은 총 증거금을 산출한다.
+4. **증거금 절감:** 포트폴리오 구성에 따라 **최대 70%**까지 절감 가능(예: OTC EUR IRS를 헤지하는 상장 Euro-Bund 선물 포트폴리오).
+
+**SPAN 대비 장점:** CME의 SPAN 방법론(16개 스캐닝 시나리오로 상품별 증거금을 산출하고 제한적인 상품간 스프레드 크레딧을 적용)과 달리, Prisma는 1,000개 역사적 시나리오 하에서 완전 재평가를 사용하여 포트폴리오 수준에서 리스크를 평가함으로써 헤지 효과와 꼬리 리스크를 보다 정확하게 포착한다.
+
+[Source: [Eurex Clearing Cross-Margining](https://www.eurex.com/ec-en/services/margining/cross-margining)]
+
+---
+
+#### EurexOTC Clear
+
+EurexOTC Clear는 금리 파생상품을 중심으로 OTC 파생상품 거래에 대한 중앙청산을 제공한다.
+
+| 파라미터 | 세부사항 |
+|-----------|---------|
+| 상품 | 일반(plain vanilla) IRS, OIS, FRA, 베이시스 스왑, 무이표 인플레이션 스왑(ZCIS), FX NDF |
+| 통화 | EUR, USD, GBP, CHF, JPY, DKK, NOK, SEK, PLN, CZK, HUF (11개 통화) |
+| 거래 소스 | MarkitWire, Bloomberg, Tradeweb 포함 승인된 거래소스(ATS) |
+| 압축 | 라인 항목 및 총명목금액 축소를 위한 포트폴리오 압축 서비스 |
+| 증거금 방법론 | Prisma(PFI01 청산그룹, 5일 보유기간, 99.5% 신뢰수준) |
+| 명목금액 잔액 | EUR 43,668조(2025년 말, 전년대비 +31%) |
+| 일평균 청산 거래량 | EUR 2,800억(2025년, 전년대비 +35%) |
+
+EurexOTC Clear는 C7과 별도의 릴리스 트랙을 가지며, 신규 상품 지원, 규제 준수, 연결성 개선을 위한 정기 업데이트를 제공한다.
+
+[Source: [EurexOTC Clear](https://www.eurex.com/ec-en/clear/eurex-otc-clear/about-eurex-otc-clear); [EurexOTC Clear Technology](https://www.eurex.com/ec-en/technology/eurexotc-clear)]
+
+---
+
+#### Cloud Prisma Margin Estimator (cPME)
+
+cPME는 Eurex Clearing의 회원 및 비회원 모두에게 제공되는 클라우드 기반 증거금 시뮬레이션 도구로, Prisma 증거금 산출에 대한 투명성을 제공한다.
+
+| 파라미터 | 세부사항 |
+|-----------|---------|
+| 접근 방법 | 브라우저 기반 GUI 및 RESTful API |
+| 호스팅 | Deutsche Borse VPC에서 **Google Cloud Platform**(EU 데이터센터) 기반; 2023년 기존 인프라에서 이전 |
+| 가용성 | 24시간(스냅샷 로딩 중 일시 중단) |
+| API 성능 | 요청의 95%가 **1초 미만**으로 응답 |
+| ETD 증거금 정확도 | 운영 Prisma 환경과 동일한 코드; 동일 일자/시점에서 CC050 보고서와 일치 |
+| OTC 증거금 정확도 | 증거금 방법론의 독립 구현; 공식 EurexOTC 증거금과 수 퍼센트 차이 가능 |
+| 입력 형식 | CB202 회원 보고서; 추가 거래가 포함된 CSV 파일; 동시 형식 지원 |
+| 비용 | 무료 |
+| 활용 사례 | 사전 거래 증거금 추정; 가정 변경(what-if) 분석; 포트폴리오 최적화; 청산회원 온보딩 평가 |
+
+cPME API 문서는 GitHub에서 OpenAPI 사양을 포함하여 공개적으로 제공된다.
+
+[Source: [Cloud Prisma Margin Estimator](https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/); [GitHub Repository](https://github.com/Deutsche-Boerse-Risk/CloudPrismaMarginEstimator); [cPME GCP Migration Circular](https://www.eurex.com/ec-en/find/circulars/Eurex-Clearing-Readiness-Newsflash-Cloud-Prisma-Margin-Estimator-CPME-migration-to-Google-Cloud-Platform-3931142)]
+
+---
+
+#### 리스크 엔진 — 실시간 리스크 모니터링 (Risk Engine -- Real-Time Risk Monitoring)
+
+Eurex Clearing의 리스크 모니터링 인프라는 2개의 주요 구성요소로 이루어진다:
+
+**Enhanced Risk Solution (ERS):**
+
+| 파라미터 | 세부사항 |
+|-----------|---------|
+| 목적 | 청산회원 및 비청산회원에 대한 실시간 리스크 데이터 배포 |
+| 범위 | 전 자산 클래스: 파생상품, 현물 주식, 채권, 레포 |
+| 배포 데이터 | 리스크 관련 증거금 파라미터, 포지션 정보, 전체 증거금 요건, 상세 증거금 구성요소, 현금흐름, 담보 평가, 증거금 부족/잉여 |
+| 표준 | 회원 내부 리스크 시스템 통합을 위한 개방 표준 기반 |
+| 비용 | 무료 |
+| 인터페이스 | 리스크 관리자 대시보드를 갖춘 웹 기반 GUI(ERS GUI); 프로그래밍 방식 소비를 위한 데이터 피드 |
+
+**C7 Advanced Risk Protection (ARP):**
+
+| 파라미터 | 세부사항 |
+|-----------|---------|
+| 목적 | 사전거래 및 실시간 리스크 한도 관리 |
+| 기능 | 회원 리스크 한도 유지; 한도 위반 감지(Prisma와 연계); 회원 Stop/Release 기능 |
+| 접근 | C7 Clearing GUI; 프로그래밍 방식 API |
+| 범위 | 모든 C7 청산 상품 |
+
+[Source: [Eurex ERS Press Release](https://mondovisione.com/media-and-resources/news/eurex-clearing-introduces-realtime-risk-management-for-all-customers-clearing-an-2011124/); [C7 ARP Functional Reference Guide](https://www.eurex.com/resource/blob/3202446/5c50f388c13754438fe0c7b26c5f9cc4/data/Eurex-Clearing-ARP-Functional-Reference-Guide-Rel.-9.0.pdf)]
+
+### 2.3 기술 스택 (Technology Stack)
+
+| 계층 | 기술 | 비고 |
+|-------|-----------|-------|
+| 컨테이너 플랫폼 | Red Hat OpenShift | C7 SCS 마이크로서비스 배포에 사용 |
+| 아키텍처 패턴 | 마이크로서비스(C7 SCS); 기타 구성요소는 전환 중 | 레거시 모놀리식 구성요소를 점진적으로 퇴역 |
+| 클라우드 플랫폼 | Google Cloud Platform(GCP) | 10년 전략적 파트너십(2023년 2월 발표); cPME, D7, 분석에 사용 |
+| 클라우드 서비스 | Google Cloud VMware Engine, BigQuery, Analytics Hub | Deutsche Borse가 GCP VMware Engine 초기 사용자 |
+| 메시징/연결 | 독자 프로토콜(ETI), FIX/FIXML, SFTP(CRE) | 다양한 연결 옵션 |
+| 리스크 산출 엔진 | Eurex Clearing Prisma(독자) | 완전 재평가를 적용한 필터 역사적 시뮬레이션 |
+| 보고 인프라 | Common Report Engine(CRE) — SFTP 기반 | OpenSSH 인증 |
+| 개발 방법론 | TCS 파트너십을 통한 분산 애자일 + 테스트 자동화 | |
+| 프로그래밍 언어 | 공개 미공표 | [미확인 — 청산시스템 업계 표준에 따라 Java/C++ 추정] |
+| 운영체제 | Linux 기반(OpenShift가 RHEL/CoreOS에서 운영) | |
+| DLT / 블록체인 | 담보 유동화를 위한 HQLAx DLT 통합; 토큰화 증권을 위한 D7 DLT | |
+
+[Source: [TCS Eurex Case Study](https://www.tcs.com/what-we-do/industries/capital-markets/case-study/eurex-central-counterparty-clearing-legacy-modernization); [Deutsche Borse Google Cloud Partnership](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Deutsche-B-rse-Group-and-Google-Cloud-Announce-Strategic-Partnership-to-Accelerate-Innovation-3405724); [Google Cloud Deutsche Borse Case Study](https://cloud.google.com/customers/deutsche-boerse)]
+
+---
+
+## 3. 성능 사양 (Performance Specifications)
+
+| 지표 | 수치 | 조건 / 비고 |
+|--------|-------|--------------------|
+| 일일 호가 처리량 | 8억건 이상/일 | Eurex Exchange T7 플랫폼(매매 측) |
+| 일평균 계약수 | 약 700만 계약/일 | Eurex Exchange 상장 파생상품 |
+| 연간 청산 계약수 | 20억 6,590만 계약(2025년) | 연간 상장 파생상품 전체 |
+| OTC 일평균 청산량 | EUR 2,800억 평균(2025년) | OTC IRS 명목금액 |
+| 레포 일일 거래량 | EUR 4,061억 평균 만기 조정(2025년) | 기록적 연도 |
+| cPME API 응답시간 | 요청의 95%가 1초 미만 | 증거금 추정 API |
+| T7 주문 응답시간 | 약 6밀리초 | Enhanced Transaction Interface 경유(매매 측) |
+| 월간 청산 금액 | EUR 11조 이상 | 전 자산 클래스 |
+| 증거금 재산출 | 일말 전체; 장중 준실시간 | Prisma 증거금 엔진 |
+
+참고: 청산 측의 구체적 처리량 지표(초당 거래수, 청산 지연시간)는 Eurex Clearing에 의해 공개되지 않는다. 위 지표는 매매 측과 청산 측의 공개 데이터를 결합한 것이다.
+
+[Source: [Eurex Exchange Marketplace](https://www.eurex.com/ex-en/find/about-us/the-market-place); [Eurex Full Year 2025 Figures](https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494)]
+
+---
+
+## 4. 인터페이스 및 프로토콜 (Interfaces & Protocols)
+
+### 4.1 청산 연결 (Clearing Connectivity)
+
+| 인터페이스 | 프로토콜 | 설명 |
+|-----------|----------|-------------|
+| **Enhanced Transaction Solution (ETS)** | 독자 바이너리 | 선택적 고성능 매매/청산 인터페이스; Eurex Release 10.0에서 도입 |
+| **Enhanced Trading Interface (ETI)** | 독자 바이너리 | 매매 및 청산을 위한 저지연 API; 약 6ms 주문 응답시간 |
+| **FIX / FIXML** | FIX 4.2/4.4, FIXML | 후선 청산 및 결제 메시징; ISV에서 널리 사용 |
+| **C7 API** | 독자 | C7 SCS 및 C7 CAS 통합용 API |
+| **Common Report Engine (CRE)** | SFTP(OpenSSH) | 모든 매매 및 청산 보고서 수신을 위한 중앙 솔루션; TXT 및 XML 형식의 일말 보고서; 비거래 파일의 단일 소스 |
+| **연결 옵션** | 전용선, 인터넷, Multi-Member-Service Operator | 회원이 선호 하드웨어 플랫폼 및 OS 선택 |
+
+[Source: [Eurex CRE](https://www.eurex.com/ex-en/support/technology/common-report-engine); [ETS Circular](https://www.eurex.com/ex-en/find/circulars/Enhanced-Transaction-Solution-ETS-Introduction-of-new-optional-Trading-Interface-Eurex-Release-10.0-Changes-to-Legal-Documents-due-to-new-Features-Introduction-of-new-Reports-and-Discontinuation-of-Eurex-Reports--196272)]
+
+### 4.2 Eurex Clearing GUI / Prisma 계산기
+
+| 도구 | 설명 | 접근 |
+|------|-------------|--------|
+| **Clearing GUI** | 상장 파생상품, 증권, OTC 업무의 청산 활동을 위한 웹 기반 GUI; C7 ARP 서비스 포함 | 회원 전용; Eurex 연결 경유 |
+| **ERS GUI** | 실시간 리스크 모니터링을 위한 웹 기반 대시보드; 증거금 커버리지, 익스포저 뷰 | 회원 전용 |
+| **Prisma Online Margin Calculator** | 상장 및 OTC 상품의 브라우저 기반 증거금 시뮬레이션 | 회원; Eurex 웹사이트 경유 |
+| **Cloud Prisma Margin Estimator (cPME)** | 증거금 추정을 위한 클라우드 기반 GUI 및 RESTful API; GCP 호스팅 | 회원 및 비회원; 무료 |
+
+[Source: [Eurex Prisma Calculators](https://www.eurex.com/ex-en/trade/margin-calculators/eurexotc-clear-prisma-margin-calculator); [cPME Documentation](https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/)]
+
+### 4.3 SWIFT / FIX / XML 인터페이스
+
+| 인터페이스 | 용도 |
+|-----------|-------|
+| **SWIFT** | Clearstream 및 기타 CSD와의 결제 메시징; 증권 결제용 표준 MT5xx 메시지 |
+| **FIX/FIXML** | 후선 청산 메시지; 거래 확인; 포지션 보고 |
+| **XML 보고서** | Eurex Clearing XML Reports(참조 매뉴얼 V7.1.0); CRE를 통해 배포되는 상세 청산, 증거금, 결제 보고서 |
+| **ISO 20022** | T2S 및 T2 메시징 표준과의 정합으로 중앙은행화폐 결제 |
+
+[Source: [Eurex Clearing XML Reports Reference Manual](https://www.eurex.com/resource/blob/2559052/1d7c5d0b9ca7a34198cab317c7af8914/data/Eurex-Clearing-XML-Reports-Reference-Manual.pdf)]
+
+### 4.4 기준정보 (Reference Data)
+
+| 데이터 유형 | 설명 |
+|-----------|-------------|
+| 상품 기준정보 | 상품 정의, 계약명세, 만기 일정 |
+| 리스크 파라미터 | Prisma 시나리오 파일, 증거금 파라미터, 변동성 곡면 |
+| 회원/계좌 데이터 | C7 CAS 경유; 회원 구성, 계좌 구조 |
+| 가격 데이터 | 일말 정산가격; 증거금 모니터링을 위한 장중 참조가격 |
+
+---
+
+## 5. 복원력 및 업무연속성 (Resilience & Business Continuity)
+
+### 5.1 이중화 및 재해복구 (Redundancy & Disaster Recovery)
+
+| 측면 | 세부사항 |
+|--------|---------|
+| 데이터센터 아키텍처 | 이중 사이트 아키텍처; 주 운영 및 시뮬레이션/DR 인프라 |
+| DR 인프라 | T7 시뮬레이션 인프라가 재해 시 DR 운영 환경으로 활용 |
+| 코로케이션 연속성 | 코로케이션 고객이 기존 연결을 사용하여 DR 환경에 접근 가능 |
+| 복구 목표시간(RTO) | 핵심 서비스에 대해 EMIR 요건 **2시간 RTO** 충족 설계 |
+| DR 테스트 | 정기 재해복구 테스트(통상 반기별); 참여를 통해 전환 요건 충족 및 비상 절차 검증 |
+| BCP 프레임워크 | Deutsche Borse Group 수준의 사고 및 위기관리 프로세스; IT, 업무공간, 인력 손실 시나리오 커버 |
+| BCP 테스트 | 업무연속성 체계의 정기적이고 포괄적인 테스트 |
+
+[Source: [Eurex BCP](https://www.eurex.com/ec-en/find/about-us/business-continuity-planning); [T7 DR Concept 2025](https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf)]
+
+### 5.2 규제 복원력 요건 (Regulatory Resilience Requirements)
+
+| 규제 | 요건 |
+|-----------|-------------|
+| **유럽시장인프라규정(EMIR)** | 2시간 복구시간; 견고한 거버넌스 및 운영 리스크 관리 |
+| **DORA** (Digital Operational Resilience Act, 디지털운영복원력법) | ICT 리스크 관리, 사고 보고, 디지털 운영 복원력 테스트, 제3자 리스크 관리; 2025년 1월부터 적용 |
+| **CPMI-IOSCO PFMI** | 원칙 17(운영 리스크): FMI는 운영 리스크를 식별, 모니터링, 관리해야 하며; 2시간 이내 복구 달성 |
+
+### 5.3 용량 관리 (Capacity Management)
+
+- C7 SCS 마이크로서비스 아키텍처는 OpenShift 기반으로 개별 구성요소의 **독립적 수평 확장**이 가능하다
+- 운영 또는 개발팀에 부담을 주지 않으면서 거래 트래픽의 상당한 증가를 처리하도록 설계되었다
+- 시장 성장 전망에 맞춘 정기 용량 계획
+- 릴리스 관리 프로세스의 일환으로 부하 테스트 [미확인 — 업계 표준 관행]
+
+---
+
+## 6. 주요 기술 특징 (Notable Technical Features)
+
+### 6.1 PRISMA 방법론 심층분석 (PRISMA Methodology Deep-Dive)
+
+**필터 역사적 시뮬레이션(FHS) 접근방식:**
+
+Barone-Adesi, Engle, Mancini(2008)가 원래 개발한 FHS 방법론은 Eurex Clearing Prisma에서 역사적 시뮬레이션의 비모수적 장점과 GARCH 유형 변동성 모델의 반응성을 결합하는 데 사용된다. 핵심 특성:
+
+- **분포 가정 불필요:** 모수적 VaR이나 몬테카를로 접근방식과 달리, FHS는 팻 테일, 비대칭성, 복잡한 의존 구조를 포함한 수익률의 경험적 분포를 보존한다.
+- **변동성 조건부:** GARCH 유형 필터링이 현재 대 역사적 조건부 변동성의 비율로 역사적 수익률을 스케일링한다. 변동성이 상승하는 시기에는 필터링된 시나리오가 더 큰 잠재적 손실을 산출하며; 안정 시기에는 스트레스 기간 VaR이 하한을 제공한다.
+- **완전 재평가:** 각 포트폴리오를 전체 1,000개 시나리오 하에서 완전한 가격 모델을 사용하여 재평가하며, 비선형 리스크(감마, 베가, 채권의 볼록성(convexity))를 정확히 포착한다.
+- **부분표본:** 비중첩 부분표본이 VaR 추정의 견고성을 개선하고 개별 극단 관측치에 대한 민감도를 줄인다.
+
+**경기순응성 방지 조치:**
+
+Eurex Clearing은 안정 시장에서 증거금이 과도하게 낮아지다가 스트레스 시 급등하는 것을 방지하기 위해 여러 메커니즘을 사용한다:
+
+1. **스트레스 기간 VaR 하한:** 증거금은 항상 스트레스 기간 VaR 이상으로 유지되어, 양호한 시장 상황에서 증거금이 지나치게 낮아지는 것을 방지한다.
+2. **연례 하한 재보정:** 스트레스 기간 파라미터 및 증거금 하한을 최소 10년의 장기 역사적 데이터에 기반하여 연례 재보정한다(예: 2025년 6월 16일 발효).
+3. **점진적 조정:** FHS 변동성 필터는 급격한 점프가 아닌 점진적 증거금 조정을 보장한다.
+4. **EMIR 준수:** Eurex는 2가지 경기순응성 지표를 모니터링한다: 최대 상대적 증거금 증가(단기) 및 최고-최저 비율(장기 자금 불확실성).
+
+**스트레스 증거금 구성요소:**
+
+250개 스트레스 시나리오는 다양한 자산 클래스에 걸쳐 식별된 역사적 스트레스 에피소드에서 선정한다. 스트레스 기간 일자는 안정적 하한을 보장하기 위해 장기(최소 10년) 99% VaR에 보정한다. 스트레스 기간 파라미터의 연례 업데이트는 청산 회보(clearing circular)를 통해 공표된다(예: 2020년 6월 29일 발효 연례 업데이트 및 이후 연도).
+
+[Source: [Eurex Clearing Prisma](https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma); [Part 8: Forward Looking Margin Simulations](https://www.eurex.com/ec-en/find/news/Part-8-Forward-looking-margin-simulations-into-periods-of-stress-3193710); [CFTC Eurex Clearing Margin Performance During 2020](https://www.cftc.gov/media/5501/GMAC_121720Eurex/download)]
+
+### 6.2 D7 — 디지털 후선 플랫폼 (D7 -- Digital Post-Trade Platform)
+
+D7은 Deutsche Borse Group의 증권 완전 디지털 발행 및 처리를 위한 차세대 플랫폼으로, Clearstream이 운영하며 Eurex Clearing 인프라와 통합된다.
+
+| 구성요소 | 설명 |
+|-----------|-------------|
+| **D7 Digital** | 종단간 디지털 증권 발행을 위한 클라우드 지원 서비스(Google Cloud 기반); 기존 최대 2일에서 수 초 이내 증권 생성 및 등록 |
+| **D7 DLT** | 분산원장기술 기반 토큰화 증권 플랫폼; 완전 CSDR 준수 |
+| **규모** | 주당 45,000건 이상 디지털 발행 처리; 발행 증권 200만건 이상; 총 금액 EUR 440억 이상 |
+| **상품** | 리테일 구조화상품, 채무자본시장 상품, 디지털 기업어음 |
+| **통합** | D7 디지털 기업어음이 Eurex Repo F7에서 거래되고 Eurex Clearing을 통해 청산 |
+| **DLT 담보** | Eurex Clearing이 전 세계 CCP 최초로 DLT 기반 담보 유동화를 출시(2025년 7월, HQLAx 및 Clearstream과) |
+
+[Source: [Deutsche Borse D7](https://www.deutsche-boerse.com/dbg-en/markets-services/ps-technology/ps-7-market-technology/ps-d7); [D7 DLT Launch](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/D7-DLT-Clearstream-Launches-Tokenized-Securities-Platform-4757912); [WFE Clearstream D7 Article](https://focus.world-exchanges.org/articles/clearstream-db-d7)]
+
+### 6.3 클라우드 도입 전략 (Cloud Adoption Strategy)
+
+Deutsche Borse Group의 클라우드 전략은 Google Cloud와의 10년 전략적 파트너십(2023년 2월 발표)을 중심으로 한다:
+
+| 프로젝트 | 세부사항 |
+|-----------|---------|
+| **클라우드 마이그레이션** | 멀티클라우드 인프라; 2019년 이후 상당한 워크로드 이전 |
+| **GCP 기반 cPME** | Cloud Prisma Margin Estimator가 EU 내 Deutsche Borse VPC에서 GCP 기반 배포 |
+| **GCP 기반 D7** | D7 Digital이 BigQuery 및 Analytics Hub를 포함한 Google Cloud 보안 인프라에 구축 |
+| **클라우드 네이티브 매매 엔진** | 24/7 가용성과 인터넷 API 접근을 갖춘 디지털 거래 플랫폼용 신규 클라우드 네이티브 매매 엔진 |
+| **디지털 자산 플랫폼** | 암호화폐 현물 및 파생상품을 위한 중앙화 및 탈중앙화 금융을 결합하는 클라우드 네이티브 시장 인프라 |
+| **데이터 분석** | 시장 데이터 배포 및 분석 활용 사례를 위한 Google Cloud 데이터 및 분석 역량 |
+| **VMware Engine** | Deutsche Borse가 기존 VMware 워크로드 이전을 위한 Google Cloud VMware Engine 초기 사용자 |
+
+[Source: [Deutsche Borse Google Cloud Partnership](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Deutsche-B-rse-Group-and-Google-Cloud-Announce-Strategic-Partnership-to-Accelerate-Innovation-3405724); [Google Cloud Blog](https://cloud.google.com/blog/topics/financial-services/lessons-from-deutsche-borse-groups-cloud-native-trading-engine)]
+
+### 6.4 파트너십 프로젝트(ISV 생태계) (Partnership Initiatives)
+
+| 파트너 | 분야 | 통합 |
+|---------|--------|-------------|
+| **TCS** | 기술 | C7 SCS 현대화; 마이크로서비스 아키텍처; 지속적 개발 파트너십 |
+| **Google Cloud** | 인프라 | 10년 전략적 파트너십; D7, cPME, 분석의 클라우드 호스팅 |
+| **HQLAx** | DLT 담보 | Eurex Clearing 증거금을 위한 DLT 기반 담보 유동화 |
+| **Pirum** | 후선 | Lending CCP를 위한 후선 자동화 |
+| **EquiLend** | 대차거래 | Lending CCP를 위한 거래 소싱 |
+| **CLS** | FX 결제 | OTC FX 관련 현금흐름 결제 |
+| **ISV 커뮤니티** | 연결 | 다수의 ISV가 청산회원을 위한 FIX 기반 연결 솔루션 제공 |
+
+---
+
+## 7. 비교 참고사항 (Comparison Notes)
+
+### KRX/KSD 시스템과의 비교 (vs. KRX/KSD Systems)
+
+| 측면 | Eurex C7 / PRISMA | KRX / KSD 대응 |
+|--------|-------------------|---------------------|
+| **청산시스템** | C7(OpenShift 기반 마이크로서비스); 레거시 모놀리스에서 단계적 전환 | KRX 통합 청산시스템(EXTURE+ 플랫폼 생태계의 일부) |
+| **증거금 방법론** | PRISMA: 필터 역사적 시뮬레이션 VaR; 포트폴리오 기반; 1,000개 시나리오(역사적 750 + 스트레스 250) | 파생상품에 SPAN 기반 증거금(Standard Portfolio Analysis of Net Risk); 상품별 16개 스캐닝 시나리오; 제한적 상품간 스프레드 크레딧을 적용한 상품별 산출 |
+| **신뢰수준** | 99%(상장) / 99.5%(OTC) | KOSPI 200 파생상품에 99% [미확인] |
+| **교차 증거금** | 가능 — 청산그룹 내; 상장-OTC 교차 증거금으로 최대 70% 절감 | 제한적 교차 증거금; KRX가 SPAN 체계 내 일부 상품간 스프레드 크레딧 제공 |
+| **리스크 접근방식** | 역사적 시나리오 하 포트폴리오 수준 완전 재평가 | 매개변수화된 리스크 배열을 사용한 시나리오 기반 스캐닝 |
+| **경기순응성 방지** | 스트레스 기간 VaR 하한; 연례 재보정 | 증거금 하한 메커니즘 [미확인 — 세부사항 공개 불가] |
+| **OTC 청산** | EurexOTC Clear — IRS, OIS, FRA, 인플레이션 스왑, NDF 11개 통화 | KRX CCP가 KRW 표시 OTC IRS 및 CRS(자본시장법에 따라 인가) |
+| **증거금 시뮬레이션 도구** | cPME(무료, 클라우드 기반, API + GUI, Google Cloud) | KRX 증거금 계산기(회원 대상) [미확인] |
+| **아키텍처** | 마이크로서비스(OpenShift 기반 C7 SCS); 하이브리드 클라우드 | 통합 플랫폼(EXTURE+ 생태계); 주로 온프레미스 |
+| **DLT/디지털** | D7 DLT 토큰화 증권; HQLAx DLT 담보 | KSD가 DLT 기반 채권 발행 및 보안토큰 플랫폼 탐색 중 [미확인] |
+| **클라우드 전략** | 10년 Google Cloud 파트너십; 선택적 이전 | 선택적 클라우드 탐색이 중심인 온프레미스 [미확인] |
+| **CSD 통합** | Clearstream(동일 그룹)과 수직 통합; T2S를 통한 결제 | KSD(한국예탁결제원)가 별도 법인이나 KRX와 깊이 통합 |
+| **손실부담순서** | EUR 17억 총 Eurex/Deutsche Borse 투입(SITG + SSITG + 자본 + 백스톱) | 자본시장법에 따른 KRX 공동기금 구조 [세부사항 상이] |
+| **규제 체계** | 유럽시장인프라규정(EMIR, EU); DORA; CFTC DCO 등록 | 자본시장법(한국); 금융위원회(FSC)/금융감독원(FSS) 감독 |
+
+> **[KRX/KSD 비교 참고]** Eurex C7/PRISMA와 KRX 시스템의 가장 근본적인 차이는 증거금 방법론에 있다. PRISMA의 FHS 접근방식은 1,000개 시나리오 하에서 완전 재평가를 통해 포트폴리오 수준의 리스크를 평가하며, 이를 통해 헤지된 포트폴리오에서 최대 70% 증거금 절감이 가능하다. 이에 비해 KRX의 SPAN 기반 방법론은 상품별 16개 스캐닝 시나리오와 제한적인 포트폴리오 수준 상쇄를 적용한다. KRX가 향후 파생상품 증거금 고도화를 검토할 경우, PRISMA의 FHS + 스트레스 기간 VaR 하한 구조는 경기순응성 완화와 리스크 포착 정확도 측면에서 중요한 참고 모델이 된다. 또한 C7 SCS의 Red Hat OpenShift 기반 마이크로서비스 아키텍처는 레거시 모놀리스에서 현대적 컨테이너 기반 아키텍처로 전환하는 모범 사례로, KRX/KOSCOM의 차세대 시스템 설계 시 참고할 수 있다. cPME와 같은 무료 클라우드 기반 증거금 시뮬레이션 도구의 제공은 청산시장의 투명성 제고 및 신규 참가자 유치를 위한 혁신적 접근으로, KRX에서도 유사한 서비스 도입을 고려해볼 만하다.
+
+### Eurex C7/PRISMA의 핵심 차별 요소 (Key Differentiators)
+
+1. **포트폴리오 기반 vs. 상품 기반 증거금:** PRISMA의 FHS 접근방식은 1,000개 시나리오 하에서 완전 재평가를 사용하여 포트폴리오 수준에서 리스크를 평가하며, 헤지 및 분산을 인식하는 보다 정확한 증거금 요건을 산출한다. KRX의 SPAN 기반 접근방식은 상품별 16개 스캐닝 시나리오와 제한적인 포트폴리오 수준 상쇄를 사용한다. 이는 근본적인 방법론적 차이로 — PRISMA는 헤지된 포트폴리오에서 최대 70%의 증거금 절감을 제공할 수 있다.
+
+2. **마이크로서비스 아키텍처:** C7 SCS의 Red Hat OpenShift 배포는 구성요소의 독립적 확장, 빠른 기능 제공, 운영 유연성을 가능하게 하는 현대적 컨테이너화 접근방식이다. 이는 KRX가 사용하는 보다 전통적인 통합 플랫폼 방식과 대조적이다.
+
+3. **클라우드 네이티브 증거금 도구:** cPME는 RESTful API를 통해 운영 수준 동등 코드로 무료 클라우드 기반 증거금 시뮬레이션을 제공하여 사전 거래 증거금 최적화를 가능하게 한다. 이 수준의 증거금 시뮬레이션 도구 투명성 및 접근성은 차별화된 제안이다.
+
+4. **상장-OTC 교차 증거금:** PFI01 청산그룹 내에서 상장 채권 상품과 OTC IRS 간 교차 증거금 산출 능력은 핵심 경쟁우위로, 특히 EU 기반 청산을 촉진하는 EMIR 3.0 활성계좌 요건과 관련이 깊다.
+
+5. **DLT 통합:** Eurex Clearing의 DLT 기반 담보 유동화 조기 도입(전 세계 CCP 최초, 2025년 7월) 및 D7 토큰화 증권 플랫폼과의 통합은 후선 디지털 전환의 최전선에 위치한다.
+
+6. **수직 통합:** Deutsche Borse Group의 수직 통합(Eurex Exchange 매매, Eurex Clearing CCP, Clearstream CSD/ICSD)은 특히 레포(Eurex Repo F7 매매 -> Eurex Clearing CCP -> Clearstream 결제)에서 원활한 가치사슬을 형성한다. KRX도 KSD와 유사한 수직 통합 모델을 보유하고 있다.
+
+---
+
+## 출처 (Sources)
+
+1. [Eurex Clearing C7 Releases](https://www.eurex.com/ec-en/support/initiatives/c7-releases) -- 공식 C7 릴리스 정보 및 문서
+2. [Eurex Clearing Prisma](https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma) -- PRISMA 방법론 개요
+3. [Eurex Clearing Cross-Margining](https://www.eurex.com/ec-en/services/margining/cross-margining) -- 교차 증거금 방법론
+4. [TCS Eurex Case Study](https://www.tcs.com/what-we-do/industries/capital-markets/case-study/eurex-central-counterparty-clearing-legacy-modernization) -- C7 SCS 현대화 기술 세부사항
+5. [Cloud Prisma Margin Estimator Documentation](https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/) -- cPME 기술 문서
+6. [cPME GitHub Repository](https://github.com/Deutsche-Boerse-Risk/CloudPrismaMarginEstimator) -- API 사양 및 문서
+7. [Deutsche Borse Google Cloud Partnership](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Deutsche-B-rse-Group-and-Google-Cloud-Announce-Strategic-Partnership-to-Accelerate-Innovation-3405724) -- 전략적 클라우드 파트너십 발표
+8. [Google Cloud Deutsche Borse Case Study](https://cloud.google.com/customers/deutsche-boerse) -- 클라우드 도입 세부사항
+9. [Google Cloud Blog: Cloud-Native Trading Engine](https://cloud.google.com/blog/topics/financial-services/lessons-from-deutsche-borse-groups-cloud-native-trading-engine) -- 클라우드 네이티브 아키텍처 세부사항
+10. [Deutsche Borse D7 Platform](https://www.deutsche-boerse.com/dbg-en/markets-services/ps-technology/ps-7-market-technology/ps-d7) -- D7 디지털 후선 플랫폼
+11. [D7 DLT Launch](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/D7-DLT-Clearstream-Launches-Tokenized-Securities-Platform-4757912) -- 토큰화 증권 플랫폼
+12. [WFE Clearstream D7 Article](https://focus.world-exchanges.org/articles/clearstream-db-d7) -- D7 플랫폼 개요
+13. [Eurex Clearing Prisma Brochure (2014)](https://www.eurex.com/resource/blob/2287018/05702c2d06312fc083c9419d81414db5/data/2014-Brosch-re-Eurex-Clearing-Prisma-E.pdf) -- 원본 PRISMA 방법론 문서
+14. [CFTC: Eurex Clearing Margin Performance During 2020](https://www.cftc.gov/media/5501/GMAC_121720Eurex/download) -- COVID-19 시 증거금 모델 성능
+15. [Part 8: Forward Looking Margin Simulations](https://www.eurex.com/ec-en/find/news/Part-8-Forward-looking-margin-simulations-into-periods-of-stress-3193710) -- 스트레스 기간 VaR 방법론
+16. [Eurex Clearing BCP](https://www.eurex.com/ec-en/find/about-us/business-continuity-planning) -- 업무연속성 계획
+17. [T7 Disaster Recovery Concept 2025](https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf) -- DR 인프라
+18. [Eurex Full Year 2025 Figures](https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494) -- 거래량 및 성능 통계
+19. [EurexOTC Clear](https://www.eurex.com/ec-en/clear/eurex-otc-clear/about-eurex-otc-clear) -- OTC 청산 서비스 개요
+20. [Eurex Common Report Engine](https://www.eurex.com/ex-en/support/technology/common-report-engine) -- CRE 기술 문서
+21. [C7 ARP Functional Reference Guide](https://www.eurex.com/resource/blob/3202446/5c50f388c13754438fe0c7b26c5f9cc4/data/Eurex-Clearing-ARP-Functional-Reference-Guide-Rel.-9.0.pdf) -- Advanced Risk Protection 문서
+22. [Eurex 2026 Roadmap](https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026--4867350) -- 2026년 개발 계획
+23. [Prisma Margin Floor Recalibration Circular (2025)](https://www.eurex.com/ec-en/find/circulars/clearing-circular-4441804) -- 연례 증거금 하한 업데이트
+24. [Prisma Bonds Circular](https://www.eurex.com/ec-en/find/circulars/clearing-circular-4609908) -- Prisma의 채권 및 레포 확대
+25. [cPME GCP Migration Circular](https://www.eurex.com/ec-en/find/circulars/Eurex-Clearing-Readiness-Newsflash-Cloud-Prisma-Margin-Estimator-CPME-migration-to-Google-Cloud-Platform-3931142) -- 클라우드 마이그레이션 세부사항

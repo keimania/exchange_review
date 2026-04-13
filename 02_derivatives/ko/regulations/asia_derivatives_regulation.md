@@ -1,0 +1,426 @@
+# 아시아태평양 파생상품 규제 (Asia-Pacific Derivatives Regulation)
+
+> **최종 업데이트:** 2026-04-07
+> **분야:** 파생상품 — 규제 프레임워크 (Regulatory Framework)
+> **대상 관할권:** 일본, 홍콩, 싱가포르, 한국 (비교)
+
+---
+
+## 1. 일본 (Japan)
+
+### 1.1 규제 기관 (Regulatory Authorities)
+
+| 기관 | 역할 | 범위 |
+|------|------|------|
+| **JFSA** (금융청, Financial Services Agency) | 주요 규제기관 | 증권, 은행, 보험, 파생상품; 내각부 소속 |
+| **SESC** (증권거래등감시위원회, Securities and Exchange Surveillance Commission) | 집행 및 감시 | 시장조작, 내부자거래, FIBO 검사 |
+| **JPX-R** (JPX Regulation) | 자율규제기관 | JPX 상장시장에 대한 시장감시, 회원 준수 |
+| **일본은행 (Bank of Japan)** | 중앙은행 / 시스템 감독 | JSCC에 대한 시스템리스크 감독; 통화정책 관련 |
+| **METI** (경제산업성, Ministry of Economy, Trade and Industry) | 상품 감독 (역사적) | 상품파생상품 (2012년 통합 이전); 현재 대부분 JFSA에 통합 |
+
+- 일본은 **부처 수준(ministry-level)** 규제 모델을 운용한다: JFSA는 내각부의 외청(external bureau)으로서 광범위한 행정 권한을 가진다.
+- SESC는 조직적으로 JFSA 산하에 있으나, 집행 조치에 있어 운영상 독립성을 유지한다.
+- JPX-R은 오사카거래소(OSE) 및 도쿄상품거래소(TOCOM) 파생상품 시장에 대한 일선 감시를 제공한다.
+
+> 출처: [JFSA 공식 웹사이트](https://www.fsa.go.jp/en/); [Chambers Derivatives 2025 — Japan](https://practiceguides.chambers.com/practice-guides/derivatives-2025/japan)
+
+### 1.2 주요 법률 (Key Legislation)
+
+| 법률 | 연도 | 범위 |
+|------|------|------|
+| **금융상품거래법 (Financial Instruments and Exchange Act, FIEA)** | 2006년 (최초), 다수 개정 | 증권 및 파생상품을 규율하는 주요 법률; 금융상품거래업자(FIBOs) 정의 |
+| **상품파생상품법 (Commodity Derivatives Act)** | 2009년 (최초) | 상품파생상품 규율; 2012년 이후 대부분 FIEA 프레임워크에 통합 |
+| **2012년 종합 개혁** | 2012년 | 증권파생상품과 상품파생상품의 규제를 JFSA 하에 통합; 이전에는 상품파생상품이 METI/MAFF 관할 |
+| **2024년 FIEA 개정** | 2024년 (제정); 2026년 5월 시행 | 주주공시 개혁; 현금결제 주식파생상품으로 보고의무 확대; "공동보유자" 정의 명확화 |
+
+**파생상품에 대한 FIEA 주요 조항:**
+- 파생상품을 거래하는 금융상품거래업자(FIBOs)의 등록 요건
+- 인가된 청산소를 통한 지정 OTC 파생상품의 의무청산
+- 거래저장소에 대한 거래보고의무 (2024년 4월 개정으로 LEI, UTI, CDE 보고 의무화)
+- 행위 규칙: 적합성 의무, 리스크 공시, 고객자산 분리보관
+- 거래소 규정에 위임된 포지션한도 프레임워크
+
+> 출처: [ICLG Derivatives 2025-2026 — Japan](https://iclg.com/practice-areas/derivatives-laws-and-regulations/japan); [Funds-Axis — FIEA 2024 Amendments](https://funds-axis.com/japans-2024-fiea-amendments-key-shareholder-disclosure-reforms-coming-in-2026/)
+
+### 1.3 청산 프레임워크 (Clearing Framework)
+
+**중앙청산소(CCP):** 일본증권청산기구(Japan Securities Clearing Corporation, JSCC) — 상장 및 OTC 파생상품의 유일한 CCP
+
+| 서비스 | 상품 | 의무 여부 |
+|--------|------|----------|
+| 상장파생상품 청산 | 모든 OSE/TOCOM 상장 선물 및 옵션 | 예 (모든 장내거래) |
+| OTC IRS 청산 | 엔화 표시 금리스왑 (TONA compounded in arrears) | 예 (지정 FIBO 대상) |
+| OTC CDS 청산 | iTraxx Japan 지수 CDS | 예 (지정 FIBO 대상) |
+
+- JSCC는 **엔화 표시** OTC 상품(IRS 및 CDS)만 청산한다.
+- 의무청산은 내각부령에 따라 JFSA 장관이 지정한 기준을 충족하는 FIBO 및 등록 금융기관에 적용된다.
+- **2025년 동향:** 미국 CFTC가 Staff Letter No. 25-32 (2025년 9월 12일) 및 수정 면제 명령을 발행하여, 미국 적격계약참여자(eligible contract participants)가 JSCC 청산회원을 통해 JPY-IRS를 청산하는 것을 허용하였다. 이는 국경간 중요한 이정표이다.
+
+> 출처: [JSCC — OTC Derivatives Clearing](https://www.jpx.co.jp/jscc/en/otc/index.html); [CFTC Letter No. 25-32](https://www.cftc.gov/csl/25-32/download); [Gibson Dunn — CFTC/JSCC](https://www.gibsondunn.com/cftc-will-permit-us-customers-to-clear-yen-interest-rate-swaps-at-jscc/)
+
+### 1.4 포지션한도 및 보고 (Position Limits & Reporting)
+
+- **포지션한도**는 오사카거래소(OSE)가 거래소 규정 수준에서 설정하며, 법률로 규정되지는 않는다.
+- 한도는 계약별로 상이하며, 계약 수(순포지션)로 표시된다.
+- 포지션이 거래소가 정한 기준을 초과하는 경우 **대규모 포지션 보고**가 요구된다.
+- 거래소 신청을 통한 헤지 면제가 가능하다.
+- JFSA는 시스템적 우려가 보증하는 경우 거래소에 포지션한도 규정의 수정을 지시할 권한을 보유한다.
+
+> 출처: [JPX — Index Futures Specifications (May 2025)](https://www.jpx.co.jp/english/derivatives/rules/outline/dreu250000001ove-att/dreu250000001oyj.pdf)
+
+### 1.5 거래보고 (Trade Reporting)
+
+- **2024년 4월 개혁:** 거래 데이터 보고 요건에 대한 개정이 시행되어 다음을 요구한다:
+  - 인가된 거래저장소를 통한 보고 (JFSA에 직접 보고하는 것이 아닌)
+  - 법인식별기호(LEI) 의무 사용
+  - 고유거래식별자(UTI) 의무 사용
+  - CPMI-IOSCO 표준에 정합된 개선된 핵심 데이터 요소(CDE)
+
+> 출처: [ICLG Derivatives 2025-2026 — Japan](https://iclg.com/practice-areas/derivatives-laws-and-regulations/japan)
+
+### 1.6 최근 동향 (Recent Developments)
+
+| 동향 | 일자 | 세부사항 |
+|------|------|---------|
+| **연장 거래시간** | 2016년 (야간세션 오전 5:30 JST까지) | 야간세션이 총 선물 및 옵션 거래량의 약 40%를 차지한다 |
+| **휴일 거래** | 2022년 9월 | OSE/TOCOM이 선별 파생상품 상품에 대해 휴일 거래를 개시하였다 |
+| **TONA 선물 성장** | 2023-2025년 | 3개월 TONA 선물 미결제약정이 100,000계약을 돌파(2025년 3월); 2025년 10월 거래량이 약 250,000계약에 도달(월간 신기록); BOJ의 금리 정상화에 의해 뒷받침 (2024년 3월 마이너스금리 해제, 2024년 7월 0.25%로 금리 인상) |
+| **JSCC IRS 청산 신기록** | 2025년 10월 | JPY IRS 청산 거래량이 약 1,526조 엔에 도달, 신기록 |
+| **CFTC 국경간 접근** | 2025년 9월 | 미국 고객이 JSCC에서 JPY-IRS를 청산하는 것이 허용됨 |
+| **2024년 FIEA 개정** | 2024년 제정; 2026년 5월 시행 | 현금결제 주식파생상품이 주주공시 보고에 포함됨 |
+
+> 출처: [JPX — TONA Futures Record (Mar 2025)](https://www.jpx.co.jp/english/corporate/news/news-releases/2041/20250314-01.html); [JPX — Oct 2025 Records](https://www.jpx.co.jp/english/news/2041/20251107-01.html); [FIA — JPX Extended Hours Success](https://www.fia.org/marketvoice/articles/market-never-sleeps-success-extended-trading-hours-jpx)
+
+---
+
+## 2. 홍콩 (Hong Kong)
+
+### 2.1 규제 기관 (Regulatory Authorities)
+
+| 기관 | 역할 | 범위 |
+|------|------|------|
+| **SFC** (증권선물사무감찰위원회, Securities and Futures Commission) | 주요 시장 규제기관 | 증권, 선물, OTC 파생상품 규제; 독립적 법정기관 |
+| **HKMA** (홍콩금융관리국, Hong Kong Monetary Authority) | 은행/금융 규제기관 | 인가기관(은행)의 OTC 파생상품 규제; SFC와 공동 규제 |
+| **HKEX** | 거래소 및 CCP 운영자 | 거래소와 3개 청산소를 운영하며; 일선 규제도 수행한다 |
+| **FSTB** (재경사무국, Financial Services and the Treasury Bureau) | 정책 | 입법 정책 방향을 설정한다 |
+
+- 홍콩은 **독립적 법정기관** 모델을 사용한다. SFC는 정부 부처가 아니라 준사법적 권한을 가진 독립 기관이다.
+- OTC 파생상품 규제에 있어 SFC와 HKMA가 관할권을 공유한다: SFC는 인가법인을 감독하고, HKMA는 인가기관(은행)을 감독한다.
+- HKEX는 상업적 거래소 운영자와 시장 규제기관의 이중 역할을 수행한다.
+
+> 출처: [SFC — About the SFC](https://www.sfc.hk/en/About-the-SFC); [ICLG Derivatives 2025-2026 — Hong Kong](https://iclg.com/practice-areas/derivatives-laws-and-regulations/hong-kong)
+
+### 2.2 주요 법률 (Key Legislation)
+
+| 법률 | 연도 | 범위 |
+|------|------|------|
+| **증권선물조례 (Securities and Futures Ordinance, SFO)** | 2003년 | 증권 및 선물 시장을 규율하는 주요 법률; 인가, 시장행위, 파생상품 규제 |
+| **증권선물(장외파생상품거래 — 보고 및 기록보관의무) 규칙** | 2015년 이후 (단계적) | OTC 파생상품의 의무 보고 |
+| **증권선물(장외파생상품거래 — 청산 및 기록보관의무 및 중앙청산소 지정) 규칙** | 2016년 이후 (단계적) | 지정 OTC 파생상품의 의무청산 |
+| **증권선물(계약한도 및 보고대상 포지션) 규칙** | 다양 | 장내 파생상품의 포지션한도 및 대규모 미결제 포지션 보고 |
+
+> 출처: [SFC — OTC Derivatives Regime FAQ](https://www.sfc.hk/en/faqs/OTC-derivatives)
+
+### 2.3 청산 프레임워크 (Clearing Framework)
+
+**HKEX 산하 청산소:**
+
+| 청산소 | 범위 | 상품 |
+|--------|------|------|
+| **HKCC** (HKFE Clearing Corporation) | 상장 파생상품 | HKEX의 모든 장내 선물 및 옵션 |
+| **SEOCH** (SEHK Options Clearing House) | 상장 주식옵션 | HKEX의 주식옵션 |
+| **OTC Clear** (OTC Clearing Hong Kong Limited) | OTC 파생상품 | IRS (HKD, USD, EUR, GBP, CNY), 통화간 스왑, NDF |
+
+**의무 OTC 청산:**
+- 의무청산은 "지정인(prescribed persons)"과 "금융서비스제공자(Financial Services Providers, FSPs — 홍콩 외부의 주요 딜러)" 간의 IRS 거래에 적용된다.
+- 대상 통화: HKD, USD, EUR, GBP 고정-변동 IRS.
+- FSP 목록은 매년 갱신되며; 2025년 갱신은 2025년 4분기에 관보에 게재되어 2026년 1월 1일부터 시행되었다.
+- **2026년 의견수렴:** 2026년 1월, HKMA와 SFC가 OTC 파생상품 청산 규칙에 따른 표준 산정 기간에 관해 공동으로 의견수렴을 실시하여, 2027년 3월 1일부터 시행되는 연간 2회 산정 기간(3-5월 및 9-11월)을 제안하였다.
+
+**비중앙청산 파생상품에 대한 증거금:**
+- 비중앙청산 OTC 개별주식옵션, 주식바스켓 옵션, 주가지수 옵션에 대한 증거금 요건이 2026년 1월 4일로 연기되어 영국 및 EU 일정과 맞추었다.
+
+> 출처: [HKEX — OTC Clear Clearing Services](https://www.hkex.com.hk/Services/Clearing/OTC-Clear/Overview/Clearing-Services?sc_lang=en); [HKMA — FSP List Update (Apr 2025)](https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/04/20250417-3/); [HKMA — Clearing Rules Consultation (Jan 2026)](https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/01/20260129-4/)
+
+### 2.4 포지션한도 (Position Limits)
+
+SFC는 장내 파생상품에 대해 법정 포지션한도를 규정한다:
+
+**주요 포지션한도 (2025년 7월 2일 시행):**
+
+| 계약 | 포지션한도 (델타) | 변동 |
+|------|----------------|------|
+| 항셍지수(HSI) 선물 및 옵션 | 15,000 | +50% 증가 |
+| 항셍중국기업지수(HSCEI) 선물 및 옵션 | 25,000 | +108% 증가 |
+| 항셍테크지수(Hang Seng TECH Index) 선물 및 옵션 | 30,000 | +43% 증가 |
+
+- 포지션한도는 **포지션 델타(position delta)**(선물 및 옵션에 걸친 순 델타)로 표시된다.
+- **보고대상 포지션 기준**은 더 낮은 수준으로 설정되며; 이를 초과하면 SFC에 대규모 미결제 포지션(LOP) 보고가 발동된다.
+- 헤지 면제 및 시장조성자 면제가 신청 시 가능하다.
+- SFC는 2025년 초에 이러한 증가에 관해 의견수렴을 실시하였으며, 국내외 시장 참여자로부터 25건의 제출을 받아 강한 지지를 확인하였다.
+
+> 출처: [SFC — Position Limit Increases (Jun 2025)](https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=25PR100); [SFC — Consultation Paper 25CP2](https://apps.sfc.hk/edistributionWeb/api/consultation/openFile?lang=EN&refNo=25CP2)
+
+### 2.5 거래보고 (Trade Reporting)
+
+- **2025년 9월 29일:** 강화된 HKTR(홍콩 거래저장소) 보고 요건이 시행되었다:
+  - 고유거래식별자(UTI) 의무화
+  - 고유상품식별자(UPI) 의무화
+  - CPMI-IOSCO 표준에 정합된 핵심 데이터 요소(CDE) 의무화
+
+> 출처: [EY — Evolving HKTR Requirements (Mar 2025)](https://www.ey.com/content/dam/ey-unified-site/ey-com/en-cn/technical/hong-kong-fsrm-insights/documents/ey-evolving-hktr-requirements-adapting-to-international-standards-and-revamping-reporting-capabilities.pdf)
+
+### 2.6 최근 동향 (Recent Developments)
+
+| 동향 | 일자 | 세부사항 |
+|------|------|---------|
+| **Swap Connect 출범** | 2023년 5월 15일 | 국제 투자자가 중국본토 은행간 IRS 시장에 접근할 수 있는 노스바운드 거래 채널; OTC Clear / 상하이청산소를 통해 청산 |
+| **Swap Connect 개선** | 2024년 5월 | IMM 날짜 거래, 단독 압축 서비스, 소급 거래 도입 |
+| **Swap Connect 채권 담보** | 2025년 1월 | 역외 투자자가 중앙정부채 및 정책은행채(Bond Connect를 통해 보유)를 담보로 사용하는 것이 허용됨 |
+| **Swap Connect 30년물** | 2025년 6월 | 노스바운드 Swap Connect에 30년 만기 추가 |
+| **Swap Connect 누적 거래량** | 2025년 4월 기준 | 15개 시장에서 79개 기관; 12,000건 이상 거래; 총명목금액 약 6.5조 위안 |
+| **포지션한도 증가** | 2025년 7월 2일 | HSI/HSCEI/HSTECH 포지션한도 50-108% 증가 |
+| **HKTR 보고 개선** | 2025년 9월 29일 | UTI, UPI, CDE 의무화 |
+| **Synapse 플랫폼** | 2023년 이후 | DAML 스마트계약을 활용한 Stock Connect 결제 가속 플랫폼; DTCC와 협력 |
+| **Orion Derivatives Platform (ODP)** | 개발 중 | 차세대 파생상품 거래 플랫폼 |
+| **사우스바운드 Swap Connect** | 검토 중 | SFC가 사우스바운드 기능을 검토 중이다 |
+
+> 출처: [HKEX — Swap Connect Launch](https://www.hkex.com.hk/News/News-Release/2025/250630news?sc_lang=en); [Reed Smith — Swap Connect](https://www.reedsmith.com/en/perspectives/2023/05/hong-kong-stock-exchange-launched-swap-connect); [SFC Speech — Bond Connect Anniversary (Jul 2025)](https://www.sfc.hk/-/media/EN/files/COM/Speech/EN_Bond-Connect-Anniversary_CEO-Speech_Jul-2025.pdf)
+
+---
+
+## 3. 싱가포르 (Singapore)
+
+### 3.1 규제 기관 (Regulatory Authorities)
+
+| 기관 | 역할 | 범위 |
+|------|------|------|
+| **MAS** (싱가포르 통화청, Monetary Authority of Singapore) | 통합 규제기관 + 중앙은행 | 증권, 은행, 보험, 파생상품, 통화정책 — 단일 통합 규제기관 |
+| **SGX RegCo** | 자율규제기관 | SGX 상장시장의 일선 규제; SGX Group의 자회사 |
+
+- 싱가포르는 **완전 통합형** 규제 모델을 사용한다: MAS가 중앙은행이자 금융 규제기관이다.
+- SGX RegCo는 2017년에 별도 자회사로 설립되어 SGX의 상업적 운영으로부터 규제 기능의 독립성을 강화하였다.
+
+> 출처: [MAS — About MAS](https://www.mas.gov.sg); [SGX RegCo](https://www.sgx.com/regulation/sgx-regco)
+
+### 3.2 주요 법률 (Key Legislation)
+
+| 법률 | 연도 | 범위 |
+|------|------|------|
+| **증권선물법 (Securities and Futures Act, SFA)** | 2001년 (현행) | 증권, 선물 및 파생상품 시장을 규율하는 주요 법률; 인가, 시장행위, 청산 |
+| **증권선물(파생상품계약 보고) 규칙 2013** | 2013년 (2024년 개정) | OTC 파생상품 계약의 의무 보고 |
+| **증권선물(인가 및 영업행위) 규칙** | 다양 | 자본시장서비스에 대한 인가 요건 |
+
+> 출처: [MAS — Securities and Futures Act 2001](https://www.mas.gov.sg/regulation/acts/securities-and-futures-act); [Singapore Statutes Online — SFA](https://sso.agc.gov.sg/SL/SFA2001-RG10)
+
+### 3.3 청산 프레임워크 (Clearing Framework)
+
+**중앙청산소(CCP):** SGX Derivatives Clearing Limited (SGX-DC)
+
+| 서비스 | 상품 | 비고 |
+|--------|------|------|
+| 상장파생상품 청산 | 모든 SGX 상장 선물 및 옵션 | 주가지수, FX, 상품, 금리 파생상품 |
+| OTC IRS 청산 | SGD 및 USD IRS | S$200억 기준 초과 기관에 의무화 |
+| OTC FX 청산 | NDF, FX 옵션 | 자발적 청산 가능 |
+
+**의무청산 범위:**
+- MAS는 특정 IRS 계약에 대해 의무청산을 시행하였다 (당초 SGD 고정-변동 SOR IRS 및 USD 고정-변동 LIBOR IRS; SORA 기반 벤치마크로 전환).
+- 싱가포르에서 기장된 파생상품에 대해 연속 4개 분기에 걸쳐 측정한 총명목잔액이 S$200억을 초과하는 은행 및 기타 지정인에게 적용된다.
+- 기준 미만의 은행 및 비은행 기관은 면제된다.
+
+**SGX-DC는 CFTC에 등록된** 파생상품청산기관(DCO)으로서, 미국 고객이 SGX 청산 상품에 접근하는 것을 가능하게 한다.
+
+> 출처: [MAS — Consultation Paper on Mandatory Clearing](https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Consultation-Papers/Consultation-Paper-on-Draft-Regulations-for-Mandatory-Clearing-of-Derivatives-Contracts.pdf); [CFTC — SGX-DC Registration](https://www.cftc.gov/PressRoom/PressReleases/6812-13)
+
+### 3.4 포지션한도 (Position Limits)
+
+- 포지션한도는 **SGX**가 거래소 규정 수준에서 설정한다.
+- SGX는 이중 프레임워크를 사용한다:
+  - **포지션한도(Position limits):** 투기 계좌의 순포지션에 대한 경성 상한.
+  - **책임수준(Accountability levels):** 거래소 조회를 발동하지만 추가 포지션을 자동으로 금지하지는 않는 연성 기준.
+- 포지션이 규정 기준을 초과하는 경우 대규모 포지션 보고가 요구된다.
+- SGX 신청을 통한 헤지 면제가 가능하다.
+
+> 출처: [SGX-DC Clearing Rules](https://rulebook.sgx.com/rulebook/sgx-dc-clearing-rules)
+
+### 3.5 거래보고 (Trade Reporting)
+
+**2024년 10월 21일 개혁 (MAS Rewrite):**
+- CPMI-IOSCO 표준과 조화하는 OTC 파생상품 보고 요건의 대대적 개편:
+  - ISO 20022 메시징 표준 채택
+  - 영업일 2일 이내 인가 거래저장소에 대한 의무 보고
+  - 대상: 싱가포르에서 기장 또는 거래된 금리, 신용, FX, 상품 및 주식 파생상품 계약
+- **재보고 요건:** 2024년 10월 21일 기준 잔존 만기 6개월 이상인 모든 미결제 지정 파생상품 계약은 2025년 4월 21일까지 재보고해야 하였다.
+
+> 출처: [MAS — Reporting Guidelines (May 2024)](https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulations-guidance-and-licensing/securities-futures-and-fund-management/regulations-guidance-and-licensing/guidelines/guidelines-to-the-securities-and-futures-reporting-of-derivatives-contracts-regulations_31-may-2024.pdf); [Rajah & Tann — OTC Reporting Changes (Oct 2024)](https://www.rajahtannasia.com/viewpoints/changes-to-the-otc-derivatives-reporting-regime-commencing-on-21-october-2024/)
+
+### 3.6 최근 동향 (Recent Developments)
+
+| 동향 | 일자 | 세부사항 |
+|------|------|---------|
+| **GIFT Connect (NSE 연계)** | 2023년 7월 | GIFT Nifty 출범 — SGX Nifty 파생상품의 인도 GIFT City NSE IX로의 이전; 출범 시 미결제약정 $90억; SGX 회원이 연결 약정을 통해 접근 |
+| **연장 거래시간** | 2024년 11월 | SGX 닛케이 파생상품 및 FTSE Blossom Japan Index 선물 거래시간 30분 연장 |
+| **OTC 보고 개혁** | 2024년 10월 | OTC 파생상품 보고 대대적 개편 (ISO 20022, UTI, UPI, CDE) |
+| **FX 선물 선도적 지위** | 지속 | SGX는 아시아 최대 FX 선물 및 옵션 거래소이며; 신규 통화 쌍을 지속 추가 중이다 |
+| **CME 상호상쇄** | 지속 | CME Group과의 약정으로 한 거래소에서 개설된 선물 포지션을 다른 거래소에서 청산 가능 (유로달러/유로엔 및 닛케이 225 선물) |
+
+> 출처: [SGX — GIFT Connect](https://www.sgx.com/derivatives/products/gift-connect); [Phillip Nova — SGX Extended Hours (Nov 2024)](https://www.phillipnova.com.sg/announcement/extension-of-t-session-trading-hours-for-sgx-nikkei-derivatives-and-sgx-ftse-blossom-japan-index-futures/)
+
+---
+
+## 4. 비교 분석 (Comparative Analysis)
+
+### 4.1 규제 구조 비교 (Regulatory Structure Comparison)
+
+| 차원 | 일본 | 홍콩 | 싱가포르 | 한국 |
+|------|------|------|---------|------|
+| **주요 규제기관** | JFSA (금융청) | SFC (증권선물사무감찰위원회) | MAS (싱가포르 통화청) | FSC (금융위원회) |
+| **규제기관 유형** | 내각부 외청 (부처 수준) | 독립적 법정기관 | 통합 규제기관 + 중앙은행 | 국무총리실 소속 정부 위원회 |
+| **감독 조직** | SESC (집행) | SFC 집행부 | MAS (통합) | FSS (금융감독원) |
+| **SRO** | JPX-R | HKEX (이중 역할) | SGX RegCo | KRX (이중 역할: 거래소 + SRO) |
+| **중앙은행 역할** | BOJ — JSCC에 대한 시스템 감독 | HKMA — OTC 파생상품(은행)에 대한 공동 규제 | MAS가 중앙은행 | BOK — 파생상품 규제에서 제한적 직접 역할 |
+| **이중 규제기관?** | 아니오 (2012년 JFSA 통합 이후) | 예 (OTC 파생상품에 대해 SFC + HKMA) | 아니오 (MAS가 완전 통합) | 예 (FSC 정책 + FSS 감독) |
+
+**주요 구별점:**
+- **싱가포르**는 중앙은행이 금융 규제기관이기도 한 유일한 완전 통합형 모델이다.
+- **한국**은 고유한 이중 구조를 가진다: FSC가 정책을 수립하고 FSS(별도 조직)가 감독 및 검사를 집행한다. 이는 기관 유형(인가법인 vs. 은행)에 기반한 홍콩의 SFC/HKMA 분할과 다르며, 기능(정책 vs. 집행)에 기반한다.
+- **일본**은 2012년에 통합을 완료하여, 상품파생상품을 METI/MAFF에서 JFSA로 이관하였다.
+
+### 4.2 포지션한도 접근방식 (Position Limit Approaches)
+
+| 차원 | 일본 | 홍콩 | 싱가포르 | 한국 |
+|------|------|------|---------|------|
+| **한도 설정 기관** | 거래소(OSE) | 법정(SFC) | 거래소(SGX) | 거래소(KRX) + FSC 감독 |
+| **표시** | 계약 수(순) | 포지션 델타 | 계약 수 + 책임수준 | 계약 수(순); 투자자 유형별 상이 |
+| **법정 vs. 거래소 규정** | 거래소 규정 | 법정 (SFO 하위법령) | 거래소 규정 | FSC 승인에 따른 KRX 규정 |
+| **최근 변경** | 주요 변경 없음 | HSI/HSCEI/HSTECH 한도 50-108% 증가 (2025년 7월) | [최근 주요 변경 보고 없음] | 행사가격 범위 확대 (2026년 3월) |
+| **외국인 투자자 대우** | 동일한 한도; 등록 필요 | 동일한 한도; SFC 인가 필요 | 동일한 한도; MAS 인가 필요 | 별도 등록; 외국인 ID 시스템; 역사적으로 더 엄격한 검토 |
+| **헤지 면제** | 가능 (거래소 신청) | 가능 (SFC 신청) | 가능 (SGX 신청) | 가능 (KRX 신청) |
+
+### 4.3 청산의무 비교 (Clearing Mandate Comparison)
+
+| 차원 | 일본 | 홍콩 | 싱가포르 | 한국 |
+|------|------|------|---------|------|
+| **상장파생상품 CCP** | JSCC | HKCC, SEOCH | SGX-DC | KRX (수직 통합) |
+| **OTC 파생상품 CCP** | JSCC | OTC Clear | SGX-DC | KRX (제한적 OTC 청산) |
+| **의무 OTC 청산 — IRS** | 예 (JPY IRS) | 예 (HKD, USD, EUR, GBP IRS) | 예 (SGD, USD IRS — 기준 초과) | 제한적 |
+| **의무 OTC 청산 — CDS** | 예 (iTraxx Japan) | 의무 CDS 청산 없음 | 의무 CDS 청산 없음 | 의무 CDS 청산 없음 |
+| **청산 기준** | 지정 FIBO에 적용 | 지정인과 FSP 간 거래 | S$200억 총명목잔액 기준 | [규정별 상이] |
+| **거래보고** | 예 (2024년 4월부터 LEI, UTI, CDE) | 예 (2025년 9월부터 UTI, UPI, CDE) | 예 (2024년 10월부터 ISO 20022, UTI, CDE) | 예 (KRX/FSS에) |
+
+**주요 패턴:**
+- 4개 관할권 모두 의무 OTC IRS 청산을 시행하였으며, 홍콩이 가장 넓은 통화 범위를 포괄한다.
+- 일본은 CDS 청산(iTraxx Japan)을 의무화한 유일한 관할권이다.
+- 싱가포르는 청산의무를 결정하기 위해 정량적 기준(S$200억)을 적용한다.
+- 4개 관할권 모두 최근 CPMI-IOSCO CDE 표준에 맞추어 거래보고를 업그레이드하였다 (2024-2025년 시행 물결).
+
+### 4.4 국경간 약정 (Cross-Border Arrangements)
+
+| 약정 | 참여자 | 현황 |
+|------|-------|------|
+| **IOSCO MMOU** | 4개 관할권 모두 (JFSA, SFC, MAS, FSC/FSS) | 정회원 |
+| **IOSCO APRC Supervisory MMoU** | JFSA, SFC, MAS, FSC/FSS (APRC 전체 12개 서명국) | 정회원; 집행뿐만 아니라 감독 정보 교환을 가능하게 한다 |
+| **CFTC — JSCC 면제** | 일본 / 미국 | JSCC는 DCO 등록 면제; 미국 고객이 JPY-IRS 청산 가능 (2025년 9월) |
+| **CFTC — SGX-DC 등록** | 싱가포르 / 미국 | SGX-DC가 CFTC DCO로 완전 등록 |
+| **CFTC — OTC Clear 면제** | 홍콩 / 미국 | OTC Clear가 DCO 등록 면제 (2015년 12월) |
+| **ESMA 동등성** | 일본, 홍콩, 싱가포르 | ESMA가 EMIR에 따라 3개 관할권 모두의 CCP 규제 동등성을 평가하였다 |
+| **Swap Connect** | 홍콩 / 중국본토 | 노스바운드 운영 중 (2023년 5월); 사우스바운드 검토 중 |
+| **GIFT Connect** | 싱가포르 / 인도 | SGX-NSE IX 연결 (2023년 7월) |
+
+- 4개 관할권 모두 **IOSCO MMOU** 및 **APRC Supervisory MMoU** 서명국으로서, 국경간 집행 및 감독 협력을 촉진한다.
+- 국경간 CCP 인정이 잘 확립되어 있다: JSCC, OTC Clear, SGX-DC 모두 CFTC 면제/등록 지위를 가지고 있으며 ESMA 동등성 평가를 받았다.
+- 한국의 KRX는 KOSPI 200 상품에 대해 Eurex와 협력 약정을 맺은 바 있으나, Eurex는 자사 KOSPI 파생상품의 거래 승인을 취소하였다 [미확인 — 구체적 시점].
+
+> 출처: [JFSA — APRC MMoU (Nov 2022)](https://www.fsa.go.jp/en/news/2022/20221111-3/20221111-3.html); [SFC — IOSCO MMOU](https://www.sfc.hk/en/About-the-SFC/Regulatory-collaboration/International/IOSCO-MMOU); [FSC — APRC MMoU](https://www.fsc.go.kr/eng/pr010101/81856)
+
+### 4.5 한국 프레임워크와의 주요 차이 (Key Differences from Korean Framework)
+
+한국의 파생상품 규제 프레임워크는 다른 3개 관할권과 비교하여 여러 특징적인 요소를 가지고 있다:
+
+#### 4.5.1 FSC/FSS 이중 구조
+
+- 한국의 **FSC** (정책 수립)와 **FSS** (감독/검사) 분리는 홍콩의 SFC/HKMA 분리와 기능적으로 다르다. 홍콩은 기관 유형(인가법인 vs. 은행)으로 구분하고, 한국은 기능(정책 vs. 집행)으로 구분한다.
+- FSS는 정부기관이 아닌 특수법인으로서, 독특한 제도적 역학을 만들어낸다.
+- 일본과 싱가포르에서는 이러한 기능이 단일 기관(JFSA와 MAS)에 통합되어 있다.
+
+#### 4.5.2 수직 통합형 거래소 + CCP로서의 KRX
+
+- **KRX는 거래소와 CCP를 모두 운영한다** (수직 사일로 모델), HKEX의 구조와 유사하다.
+- 이는 JPX(거래소 지주회사)와 JSCC(CCP)가 별도 법인인 일본과 대조된다 (다만 JSCC는 JPX 자회사).
+- SGX도 수직 사일로 모델을 사용하나(SGX-DC가 자회사), MAS는 SGX RegCo를 통해 규제적 분리를 유지해 왔다.
+- 수직 통합 논의는 KRX가 한국 파생상품의 유일한 거래소이자 CCP로서 독점적 지위를 가지고 있다는 점에서 특히 관련이 있다.
+
+#### 4.5.3 KOSPI 200 파생상품 포지션한도
+
+- 한국은 역사적으로 **투자자 유형별(개인, 기관, 외국인) 차별화된 포지션한도**를 적용해 왔으며, 2011년 옵션 승수 인상(100,000원에서 500,000원) 이후 개인투자자에 대해 특히 엄격한 KOSPI 200 옵션 한도를 적용하고 있다.
+- 이러한 투자자 유형별 접근방식은 일본, 홍콩, 싱가포르보다 세분화되어 있으며, 이 관할권들에서는 투자자 유형에 관계없이 한도가 일반적으로 동일하다 (시장조성자 면제는 어디에서나 적용).
+- **2026년 3월:** KRX가 KOSPI 200 옵션의 행사가격 범위를 +/-80에서 +/-120포인트로 확대하였다 (최근월물 제1~제3, Mini KOSPI 200 옵션에도 유사하게 적용).
+
+#### 4.5.4 외국인 투자자 접근
+
+- 한국은 외국인 투자자가 파생상품을 거래하기 전에 FSS로부터 고유한 **투자자등록증(Investor Registration Certificate, IRC)**을 취득하도록 요구한다.
+- 이는 다음과 대조된다:
+  - **일본:** 외국인 투자자가 인가 FIBO를 통해 접근; 별도 투자자 등록 없음
+  - **홍콩:** 인가 중개기관을 통해 접근; 별도 투자자 등록 없음
+  - **싱가포르:** 인가 자본시장서비스 제공자를 통해 접근; 별도 투자자 등록 없음
+- 한국의 IRC 제도는 외국인 포지션의 계좌 수준 추적을 가능하게 하지만, 다른 3개 시장에는 없는 행정적 계층을 추가한다.
+
+#### 4.5.5 규제 거버넌스 (Regulatory Governance)
+
+| 차원 | 한국 (FSC/FSS/KRX) | 일본 | 홍콩 | 싱가포르 |
+|------|---------------------|------|------|---------|
+| 자본시장법 | 자본시장법 (FSCMA, 2009년) | FIEA (2006년) | SFO (2003년) | SFA (2001년) |
+| 거래소 거버넌스 | KRX (회원소유, 준공공) | JPX (상장) | HKEX (상장) | SGX (상장) |
+| CCP 거버넌스 | KRX (동일 법인) | JSCC (JPX 자회사) | HKCC/OTC Clear (HKEX 자회사) | SGX-DC (SGX 자회사) |
+| 시장감시 | KRX (계좌 기반) | JPX-R | HKEX + SFC | SGX RegCo + MAS |
+| OTC 청산 발전 | 제한적 | 확립 (IRS, CDS) | 확립 (IRS, NDF, CCS) | 확립 (IRS, FX) |
+
+---
+
+## 5. 요약 및 전망 (Summary & Outlook)
+
+### 5.1 수렴 추세 (Convergence Trends)
+
+4개 관할권 모두 여러 측면에서 수렴하고 있다:
+1. **거래보고 조화:** 2024-2025년에 모두 CPMI-IOSCO CDE, UTI, UPI 표준을 채택하였다.
+2. **OTC 청산의무:** 모두 의무 IRS 청산을 시행하고 있으나, 범위와 기준은 상이하다.
+3. **IOSCO 참여:** 모두 MMOU 및 APRC Supervisory MMoU의 정회원이다.
+4. **국경간 CCP 인정:** 주요 서방 상대기관(CFTC, ESMA)과의 상호인정 프레임워크가 잘 확립되어 있다.
+
+### 5.2 분화 지점 (Divergence Points)
+
+1. **규제 구조:** 완전 통합형(싱가포르/MAS)부터 기능 분리형(한국/FSC+FSS), 기관유형 분리형(홍콩/SFC+HKMA)까지 다양하다.
+2. **포지션한도 권한:** 법정(홍콩) vs. 거래소 수준(일본, 싱가포르, 한국).
+3. **외국인 투자자 접근:** 한국의 IRC 제도는 다른 3개 관할권보다 제한적이다.
+4. **거래소 구조:** KRX의 독점적 준공공 모델은 다른 3개 관할권의 상장 거래소 그룹과 다르다.
+
+### 5.3 주요 관전포인트 (2026-2027) (Key Watchpoints)
+
+- **일본:** FIEA 2024년 개정 2026년 5월 시행; TONA 선물 시장의 지속적 발전
+- **홍콩:** 사우스바운드 Swap Connect 개발; 청산 규칙 산정 기간 개정 (2027년 3월 시행 제안); ODP 플랫폼 출시
+- **싱가포르:** FX 선물 상품군의 지속적 확대; 의무청산 기준 갱신 가능성
+- **한국:** KRX IPO가 규제 구조에 미칠 잠재적 영향; 지속적인 파생상품 시장 개혁; 외국인 투자자 접근 현대화
+
+---
+
+## 출처 (Sources)
+
+- [Chambers — Derivatives 2025: Japan](https://practiceguides.chambers.com/practice-guides/derivatives-2025/japan)
+- [ICLG — Derivatives 2025-2026: Japan](https://iclg.com/practice-areas/derivatives-laws-and-regulations/japan)
+- [ICLG — Derivatives 2025-2026: Hong Kong](https://iclg.com/practice-areas/derivatives-laws-and-regulations/hong-kong)
+- [Chambers — Financial Services Regulation 2025: South Korea](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/south-korea)
+- [JSCC — OTC Derivatives Clearing](https://www.jpx.co.jp/jscc/en/otc/index.html)
+- [SFC — OTC Derivatives Regime](https://www.sfc.hk/en/faqs/OTC-derivatives)
+- [MAS — Securities and Futures Act](https://www.mas.gov.sg/regulation/acts/securities-and-futures-act)
+- [HKMA — Clearing Rules Consultation (Jan 2026)](https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/01/20260129-4/)
+- [SFC — Position Limit Increases (Jun 2025)](https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=25PR100)
+- [CFTC — JSCC Letter No. 25-32 (Sep 2025)](https://www.cftc.gov/csl/25-32/download)
+- [JPX — TONA Futures Records](https://www.jpx.co.jp/english/corporate/news/news-releases/2041/20250314-01.html)
+- [HKEX — Swap Connect 30-Year Launch (Jun 2025)](https://www.hkex.com.hk/News/News-Release/2025/250630news?sc_lang=en)
+- [SGX — GIFT Connect](https://www.sgx.com/derivatives/products/gift-connect)
+- [MAS — OTC Derivatives Reporting Guidelines](https://www.mas.gov.sg/regulation/guidelines/guidelines-on-reporting-of-otc-derivatives-contracts-sfa-06a-g01)
+- [Rajah & Tann — MAS OTC Reporting Changes (Oct 2024)](https://www.rajahtannasia.com/viewpoints/changes-to-the-otc-derivatives-reporting-regime-commencing-on-21-october-2024/)
+- [JFSA — APRC Supervisory MMoU](https://www.fsa.go.jp/en/news/2022/20221111-3/20221111-3.html)
+- [FSC Korea — Press Releases](https://www.fsc.go.kr/eng/pr010101)
+- [FIA — JPX Extended Hours](https://www.fia.org/marketvoice/articles/market-never-sleeps-success-extended-trading-hours-jpx)
+- [KRX — KOSPI 200 Options Expansion (Mar 2026)](https://en.sedaily.com/news/2026/03/11/krx-expands-kospi-200-options-strike-prices-to-ease-trading)

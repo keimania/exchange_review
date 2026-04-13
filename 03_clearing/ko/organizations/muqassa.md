@@ -1,0 +1,251 @@
+# Securities Clearing Center Company (Muqassa, 무까사)
+
+> **최종 업데이트:** 2026-04-07
+> **조사 등급:** Tier 3
+> **유형:** CCP (중앙청산소, Central Counterparty)
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 내용 |
+|------|------|
+| 정식 명칭 | Securities Clearing Center Company (Muqassa) |
+| 약칭 | Muqassa |
+| 웹사이트 | [https://www.muqassa.sa](https://www.muqassa.sa) |
+| 설립연도 | 2018년 (법인 설립); 2020년 CCP 영업 개시 |
+| 국가 / 도시 | 사우디아라비아 / 리야드 |
+| 소유 구조 | 비공개 주식회사, Saudi Tadawul Group (사우디 타다울 그룹)의 완전자회사 |
+| 모회사 / 그룹 | Saudi Tadawul Group Holding Company (Saudi Exchange/Tadawul, Edaa/증권예탁센터, Wamid도 소유) |
+| 감독기관 | 사우디아라비아 자본시장위원회 (CMA, Capital Market Authority) |
+| CPMI-IOSCO PFMI 준수 | 준수를 위해 노력 중; CMA 규정에 PFMI 원칙 반영 [unverified -- 공개된 PFMI 자체평가 미확인] |
+| QCCP 지위 | **예** -- CMA에 의해 적격중앙청산소(QCCP)로 지정 [Source: [CMA News](https://cma.gov.sa/en/MediaCenter/NEWS/pages/CMA_N_2688.aspx)] |
+| 자본금 | 6억 SAR (약 1억 6,000만 USD) |
+
+### 주요 연혁 (Key Historical Milestones)
+
+| 연도 | 사건 |
+|------|------|
+| 2018 | 사우디 비전 2030(Vision 2030)의 금융부문개발프로그램(FSDP)의 일환으로, 자본금 6억 SAR의 비공개 주식회사로 **Muqassa 설립** [Source: [Tadawul 2018 Annual Report](https://annualreport2018.tadawul.com.sa/Resources/AnnualReport/strategy_in_action/post_trade.html)] |
+| 2020 (3월) | **CCP 영업 개시** -- Saudi Exchange 주식시장(현물시장) 청산 서비스 시작 [Source: [GlobalComplianceNews](https://www.globalcompliancenews.com/2020/10/29/saudi-arabia-a-new-dawn-for-saudi-arabias-capital-markets-the-commencement-of-muqassas-operations-and-implications-for-market-participants22092020/)] |
+| 2020 | 파생상품시장 청산 업무가 NASDAQ 기술에서 Muqassa로 이관 |
+| 2020 | T+2 결제주기, DVP 모델, 보관과 결제의 분리 도입 |
+| 2022 (4월) | **모든 거래소 상장 상품**(현물시장, 파생상품, OTC 상품인 레포)으로 청산 서비스 확대 [Source: [Tadawul Group 2022 AR](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2022/putting_group_principles/muqassa.html)] |
+| 2022 | 현금 수쿠크(sukuk) 및 샤리아(Sharia) 적합 담보를 활용한 레포 청산 개시 |
+| 2022 | 정부 수쿠크 및 채권이 증거금 적격 담보로 승인 |
+| 2023 | CMA에 의해 **적격중앙청산소(QCCP)**로 지정 [Source: [CMA](https://cma.gov.sa/en/MediaCenter/NEWS/pages/CMA_N_2688.aspx)] |
+| 2024 | 청산회원 기반 지속 확대; SNB Capital이 청산회원으로 가입 [Source: [Securities Finance Times](https://www.securitiesfinancetimes.com/securitieslendingnews/industryarticle.php?article_id=227226)] |
+
+> **KRX/KSD 비교:** Muqassa는 비교적 신생 CCP(2020년 영업 개시)로, 2005년부터 청산자회사를 통해 CCP 역할을 수행해 온 KRX와 비교된다. KRX와 마찬가지로 Muqassa는 매매, 청산, 결제 기능을 분리하는 광범위한 거래소 그룹 구조조정의 일환으로 설립되었다. Saudi Tadawul Group의 구조(거래소 + Muqassa CCP + Edaa CSD + Wamid)는 한국 모델(KRX 거래소/CCP + KSD 예탁/결제)을 반영한다.
+
+---
+
+## 2. 청산 모델 (Clearing Model)
+
+### 2.1 CCP 서비스 (CCP Services)
+
+Muqassa는 Saudi Exchange에서 거래되는 모든 증권에 대해 CCP 청산을 제공한다 [Source: [Muqassa Home](https://www.muqassa.sa); [Tadawul Group 2022 AR](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2022/putting_group_principles/muqassa.html)]:
+
+| 상품군 | 청산 서비스 | 비고 |
+|--------|-----------|------|
+| **주식** | CCP 청산 | Saudi Exchange (TASI, Nomu) 상장 전 주식 |
+| **ETF** | CCP 청산 | Saudi Exchange 상장 상장지수펀드 |
+| **REIT** | CCP 청산 | 부동산투자신탁 |
+| **수쿠크 및 채권** | CCP 청산 | 정부 및 기업 수쿠크/채권 |
+| **파생상품** | CCP 청산 | 개별주식선물, 지수선물(MT30), 지수옵션 [unverified -- 정확한 상품 목록] |
+| **레포 (OTC)** | CCP 청산 | 2022년 4월 개시; 수쿠크를 샤리아 적합 담보로 활용 |
+
+- Muqassa는 거래소 거래 및 OTC 모두 **모든 자산군**을 보증할 수 있다 [Source: [Tadawul Why CCP](https://www.tadawul.com.sa/wps/wcm/connect/f86f2e1b-1f2a-4ae8-8a64-1c208e8be5c8/Why+CCP+en.pdf?MOD=AJPERES)]
+
+**채무인수 절차 (Novation Process):**
+- Muqassa는 거래소 거래를 **공개청약(open offer)** 방식으로 청산 -- 매매 체결 시점에 거래상대방 사이에 Muqassa가 개입 [Source: [GlobalComplianceNews](https://www.globalcompliancenews.com/2020/10/29/saudi-arabia-a-new-dawn-for-saudi-arabias-capital-markets-the-commencement-of-muqassas-operations-and-implications-for-market-participants22092020/)]
+- 이는 전 세계 대부분의 거래소 연계 CCP가 사용하는 채무인수 모델과 유사
+
+### 2.3 차감 (Netting)
+
+- Muqassa는 거래소 상장 상품에 대해 **다자간차감(multilateral netting)** 수행
+- 차감을 통해 결제지시 건수 및 교환해야 할 증권/대금의 가치를 감소
+- 최종 순포지션은 Edaa(CSD)를 통한 결제를 위해 확정 [unverified -- 구체적 차감 방법론 비공개]
+
+### 2.4 청산 회원 자격 (Clearing Membership)
+
+Muqassa는 청산회원에게 특정 계좌 구조 유지를 요구한다 [Source: [Al Tamimi & Company](https://www.tamimi.com/news/ksa-securities-central-counterparties-regulation-and-the-central-counterparty-clearing-house-muqassa/)]:
+
+| 계좌 유형 | 설명 |
+|----------|------|
+| **자기계좌 (House Account)** | 청산회원의 자기매매용 |
+| **총괄고객계좌 (Omnibus Client Account)** | 청산회원 고객들의 혼장계좌 |
+| **개별고객계좌 (Individual Client Account)** | 개별 고객별 분리보관계좌 |
+
+- 청산회원에는 주요 사우디 금융기관 포함 (예: SNB Capital, 기타 인가 브로커-딜러)
+- 회원 자격에는 CMA 인가 및 Muqassa의 재무·운영 요건 충족 필요 [unverified -- 구체적 자본 기준 미확인]
+
+> **KRX/KSD 비교:** KRX도 자기포지션과 고객포지션 간의 청산회원 계좌 분리를 요구한다. 사우디의 개별고객계좌 모델은 총괄계좌 전용 모델보다 강력한 고객자산 보호를 제공하며, KRX도 준수하는 국제 모범사례에 부합한다.
+
+---
+
+## 3. 리스크 관리 (Risk Management)
+
+### 3.1 증거금 체계 (Margin Framework)
+
+Muqassa의 증거금 체계는 신용 기반이 아닌 리스크 기반이다 [Source: [Muqassa Risk Management](https://www.muqassa.sa/wps/portal/muqassa/risk-management/)]:
+
+| 구성요소 | 설명 |
+|----------|------|
+| **개시증거금 (Initial Margin)** | 포트폴리오 리스크(시장리스크, 유동성 리스크)에 기반하여 청산회원으로부터 징수; 청산회원 신용리스크 기반이 아님 |
+| **변동증거금 (Variation Margin)** | Saudi Exchange가 산출한 일일정산가격 또는 최종정산가격을 사용하여 모든 미결제 포지션에 대해 일일 산출 |
+| **청산회원 거래한도 (Clearing Member Trading Limit)** | 리스크 기반 거래활동 한도; 활용 비율 정기 검토 |
+
+**적격 담보:**
+- SAR 현금 및 비SAR 통화
+- SAR 표시 사우디아라비아 정부 수쿠크 및 채권 (샤리아 적합 담보)
+- 비현금 담보에는 시장리스크에 대한 헤어컷 적용
+- **공동기금 출연:** SAR 현금만 가능 [Source: [Muqassa Risk Management](https://www.muqassa.sa/wps/portal/muqassa/risk-management/)]
+
+> **샤리아 적합 특성:** 정부 수쿠크를 담보로 수용하는 것(통상적 채권 대신)은 사우디아라비아의 이슬람 금융 체계를 반영하는 독특한 특성이다. 이를 통해 시장참가자는 청산 과정 전반에 걸쳐 샤리아 적합성을 유지할 수 있다.
+
+### 3.3 손실부담순서 (Default Waterfall)
+
+Muqassa는 국제 CCP 기준에 부합하는 손실부담순서를 유지한다 [unverified -- 각 순위별 구체적 규모 비공개]:
+
+| 순위 | 설명 |
+|------|------|
+| 1 | **불이행 회원의 증거금** (개시증거금 및 변동증거금) |
+| 2 | **불이행 회원의 공동기금(Default Fund) 출연분** |
+| 3 | **Muqassa 자기자본** (CCP 자기자본 출연분) |
+| 4 | **비불이행 회원의 공동기금 출연분** |
+| 5 | **추가분담금 부과 권한** [unverified] |
+
+- 공동기금 출연: SAR 현금만 가능
+- CMA의 증권중앙청산소규정이 불이행 관리 체계를 규정 [Source: [Al Tamimi & Company](https://www.tamimi.com/news/ksa-securities-central-counterparties-regulation-and-the-central-counterparty-clearing-house-muqassa/)]
+
+### 3.6 회복 및 정리 (Recovery & Resolution)
+
+- **정리당국:** 사우디아라비아 자본시장위원회 (CMA)
+- CMA의 증권중앙청산소규정이 회복 및 정리 조항을 포함하여 CCP 감독의 법적 체계 제공
+- Muqassa의 QCCP 지정은 리스크 관리 및 운영에 관한 CMA 규제 기준 충족을 확인 [Source: [CMA](https://cma.gov.sa/en/MediaCenter/NEWS/pages/CMA_N_2688.aspx)]
+- 구체적 회복 수단(예: VMGH, 포지션 해소, 추가분담금 부과)은 Muqassa 규칙 및 CMA 규정에 의해 규율 [unverified -- 상세 회복계획 비공개]
+
+---
+
+## 4. 결제 (Settlement)
+
+### 4.1 결제주기 (Settlement Cycle)
+
+| 상품 | 결제주기 | 비고 |
+|------|---------|------|
+| 주식 | **T+2** | Saudi Exchange 현물시장 표준 |
+| ETF / REIT | **T+2** | 주식과 동일 |
+| 수쿠크 및 채권 | **T+2** | [unverified -- 상품별 상이 가능] |
+| 파생상품 | **일일 시가평가** | 변동증거금 일일 결제; 최종결제는 계약별 상이 |
+| 레포 | **다양** | 2022년 4월부터 OTC 레포 청산 |
+
+- T+2 결제주기는 2020년 Muqassa 영업 개시와 함께 거래후처리 인프라 전면 개편의 일환으로 도입 [Source: [Tadawul 200 Listed Securities](https://200listedsecurities.saudiexchange.sa/Resources/200ListedSecurities/overview/inside_200_listed_securities.html)]
+
+> **KRX/KSD 비교:** Saudi Exchange와 KRX 모두 주식에 T+2를 적용한다. 양측 모두 미국 및 캐나다(2024년 5월)와 달리 아직 T+1로 전환하지 않았다. 향후 사우디의 T+1 전환에는 Muqassa, Edaa, 시장참가자 간의 공조가 필요하다.
+
+### 4.2 DVP 모델 (DVP Model)
+
+- Saudi Exchange는 2020년 Muqassa CCP 개시와 함께 **증권과대금의 동시결제(DVP)** 모델을 시행 [Source: [Tadawul 200 Listed Securities](https://200listedsecurities.saudiexchange.sa/Resources/200ListedSecurities/overview/inside_200_listed_securities.html)]
+- 증권결제는 Saudi Tadawul Group 내 CSD인 **Edaa** (증권예탁센터)가 처리
+- 대금결제는 사우디중앙은행(SAMA) 결제시스템을 통해 지원 [unverified -- 구체적 DVP 모델 유형(BIS Model 1/2/3) 미확인]
+
+---
+
+## 5. 기술 및 인프라 (Technology & Infrastructure)
+
+| 항목 | 내용 |
+|------|------|
+| **청산 시스템** | 자체 청산 플랫폼 (2020년 NASDAQ 운영 시스템을 대체) |
+| **CSD 파트너** | Edaa (증권예탁센터) -- 증권 보관 및 결제 처리 |
+| **거래소 통합** | Saudi Exchange (Tadawul) 매매 플랫폼과 직접 통합 |
+| **파생상품 플랫폼** | 원래 NASDAQ이 운영; 2020년 Muqassa로 이관 |
+
+- Muqassa는 Saudi Tadawul Group 내 완전통합 거래후처리 생태계의 일부: 매매체결(Saudi Exchange) -> 청산(Muqassa) -> 결제 및 보관(Edaa)
+- 사우디 비전 2030 금융부문 개발의 일환으로 기술 현대화 진행 중 [unverified]
+
+---
+
+## 6. 규제 체계 (Regulatory Framework)
+
+### 6.1 감독기관 (Supervising Authority)
+
+| 규제기관 | 역할 |
+|----------|------|
+| **자본시장위원회 (CMA)** | 주요 규제기관 -- Muqassa 인가 및 감독; QCCP 지정 |
+| **사우디중앙은행 (SAMA)** | 지급 및 결제시스템 감독 [unverified -- Muqassa 감독에서 SAMA 역할의 범위] |
+
+### 6.2 주요 규정 (Key Regulations)
+
+- **증권중앙청산소규정 (CMA):** CCP 인가, 운영, 리스크 관리, 증거금 요건, 불이행 관리, 회원 의무를 규율 [Source: [Al Tamimi & Company](https://www.tamimi.com/news/ksa-securities-central-counterparties-regulation-and-the-central-counterparty-clearing-house-muqassa/)]
+- **자본시장법:** 사우디아라비아의 포괄적 증권 법규
+- CMA 규정은 CCP가 청산 상품의 리스크 및 특성에 비례하는 모델 및 파라미터를 포함한 증거금 요건을 명시하도록 요구
+
+### 6.3 PFMI 준수 (PFMI Compliance)
+
+- Muqassa의 QCCP 지정은 국제 기준과의 정렬을 나타냄
+- CMA 규정에 CPMI-IOSCO PFMI와 일관된 원칙 반영
+- 공개된 PFMI 자체평가 또는 CPMI-IOSCO PQD 공시 미확인 [unverified -- Muqassa가 CMA 또는 기타 채널을 통해 발행할 수 있음]
+
+---
+
+## 7. 상호운용성 (Interoperability)
+
+### 7.1 크로스보더 체계 (Cross-border Arrangements)
+
+- Muqassa는 현재 Saudi Exchange 거래 상품을 청산하는 **국내 전용 CCP**로 운영
+- 해외 CCP와의 알려진 CCP 상호운용 체계 없음 [unverified]
+- 사우디 시장에 대한 크로스보더 접근은 CCP 차원의 상호운용이 아닌, 적격외국인투자자(QFI) 체계 및 Saudi Exchange의 스왑 계약을 통해 지원
+
+### 7.2 Edaa (CSD)와의 관계 (Relationship with Edaa)
+
+- **Edaa** (증권예탁센터)는 Muqassa가 청산하는 모든 증권의 CSD 역할 수행
+- Edaa는 증권 보관, 소유권 등록, 결제, 기업 이벤트(corporate actions) 처리
+- Muqassa(CCP)와 Edaa(CSD)가 함께 사우디 자본시장의 완전한 거래후처리 인프라를 구성
+
+> **KRX/KSD 비교:** Muqassa-Edaa 관계는 한국의 KRX-KSD 관계와 긴밀히 유사하다. 양측 모두 동일 거래소 그룹 내 별도 법인으로 조직되어, CCP 청산과 CSD 결제/보관 간의 명확한 기능 분리가 이루어져 있다.
+
+---
+
+## 9. 최근 동향 (Recent Developments)
+
+### QCCP 지정 (2023)
+- CMA가 Muqassa를 적격중앙청산소로 지정, 리스크 관리 및 운영의 국제 기준 충족 확인 [Source: [CMA](https://cma.gov.sa/en/MediaCenter/NEWS/pages/CMA_N_2688.aspx)]
+
+### 청산 서비스 확대 (2022-2024)
+- 2022년 4월: 모든 거래소 상장 상품 및 OTC 레포로 청산 서비스 확대
+- 정부 수쿠크 및 채권의 적격 담보 도입
+- DVP 모델을 통한 커버드 공매도 지원 [Source: [Tadawul Group 2022 AR](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2022/putting_group_principles/muqassa.html)]
+
+### 회원 기반 확대 (2024-2025)
+- 청산회원의 지속적 온보딩 (예: SNB Capital) [Source: [Securities Finance Times](https://www.securitiesfinancetimes.com/securitieslendingnews/industryarticle.php?article_id=227226)]
+- Muqassa, 2025년 8월 발효 예정으로 청산회원 거래한도의 증거금 파라미터 및 리스크 비율 업데이트
+
+### 비전 2030 정렬 (Vision 2030 Alignment)
+- Muqassa는 사우디 비전 2030의 금융부문개발프로그램(FSDP)의 핵심 축
+- 자본시장 심화, 외국인 투자 유치, 국제 모범사례 정렬 목표 지원 [Source: [Tadawul Group 2024 AR](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2024/assets/img/pdfs/Muqassa.pdf)]
+
+### 샤리아 적합 인프라 (Sharia-Compliant Infrastructure)
+- 수쿠크 기반 담보 및 레포 청산 등 샤리아 적합 청산 기능의 지속적 개발
+- 성장하는 글로벌 이슬람 금융 산업에 서비스를 제공하기 위한 사우디 시장인프라 포지셔닝 [Source: [Chambers -- Islamic Finance 2025](https://practiceguides.chambers.com/practice-guides/islamic-finance-2025/saudi-arabia)]
+
+---
+
+## 출처 (Sources)
+
+1. [Muqassa Official Website](https://www.muqassa.sa) -- 홈페이지 및 서비스
+2. [Muqassa -- Our Story](https://muqassa.sa/wps/portal/muqassa/about/our-story?locale=en) -- 연혁
+3. [Muqassa -- Risk Management](https://www.muqassa.sa/wps/portal/muqassa/risk-management/) -- 증거금 및 담보 체계
+4. [Saudi Tadawul Group -- Muqassa](https://www.tadawulgroup.sa/wps/portal/tadawulgroup/portfolio/muqassa) -- 그룹 개요
+5. [Saudi Tadawul Group -- 2022 Annual Report (Muqassa)](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2022/putting_group_principles/muqassa.html) -- 운영 이정표
+6. [Saudi Tadawul Group -- 2023 Annual Report (Muqassa)](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2023/assets/img/pdfs/Muqassa.pdf) -- PDF 보고서
+7. [Saudi Tadawul Group -- 2024 Annual Report (Muqassa)](https://annualreport.tadawulgroup.sa/Resources/AnnualReport2024/assets/img/pdfs/Muqassa.pdf) -- PDF 보고서
+8. [CMA -- QCCP Designation](https://cma.gov.sa/en/MediaCenter/NEWS/pages/CMA_N_2688.aspx) -- 규제 발표
+9. [Al Tamimi & Company -- Securities Central Counterparties Regulation](https://www.tamimi.com/news/ksa-securities-central-counterparties-regulation-and-the-central-counterparty-clearing-house-muqassa/) -- 법률 분석
+10. [GlobalComplianceNews -- Muqassa Operations Commencement](https://www.globalcompliancenews.com/2020/10/29/saudi-arabia-a-new-dawn-for-saudi-arabias-capital-markets-the-commencement-of-muqassas-operations-and-implications-for-market-participants22092020/) -- 개시 세부사항
+11. [Tadawul 2018 Annual Report -- Post-Trade](https://annualreport2018.tadawul.com.sa/Resources/AnnualReport/strategy_in_action/post_trade.html) -- 설립 배경
+12. [Saudi Exchange -- Why CCP (PDF)](https://www.tadawul.com.sa/wps/wcm/connect/f86f2e1b-1f2a-4ae8-8a64-1c208e8be5c8/Why+CCP+en.pdf?MOD=AJPERES) -- CCP 도입 근거
+13. [Edaa -- Muqassa Fact Sheet (PDF)](https://www.edaa.sa/wps/wcm/connect/b06fe1a5-c6ae-4aa4-b9ed-5c678ad2e27e/MuqassaPTTPFactSheetEN.pdf?MOD=AJPERES) -- 거래후처리 개요
+14. [Chambers -- Islamic Finance 2025 Saudi Arabia](https://practiceguides.chambers.com/practice-guides/islamic-finance-2025/saudi-arabia) -- 샤리아 적합 청산
+15. [Securities Finance Times -- SNB Capital Clearing Membership](https://www.securitiesfinancetimes.com/securitieslendingnews/industryarticle.php?article_id=227226)
+16. [Tadawul 200 Listed Securities](https://200listedsecurities.saudiexchange.sa/Resources/200ListedSecurities/overview/inside_200_listed_securities.html) -- 시장인프라 개요

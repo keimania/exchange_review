@@ -1,0 +1,577 @@
+# Singapore Exchange (SGX)
+
+> **최종 수정일:** 2026-04-06
+> **조사 등급:** Tier 1
+> **영역:** 주식시장
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 상세내용 |
+|------|---------|
+| 공식 명칭 | Singapore Exchange Limited (SGX Group) |
+| 약칭 | SGX (싱가포르거래소) |
+| 웹사이트 | https://www.sgx.com |
+| 설립연도 | 1999년 (SES와 SIMEX 합병) |
+| 소재지 | 싱가포르 / 싱가포르 (2 Shenton Way, SGX Centre) |
+| 소유구조 | 자체 거래소에 상장 (종목코드: S68) |
+| 모회사/그룹 | SGX Group (자체 상장 지주회사) |
+| 감독기관 | 싱가포르 통화청(MAS, Monetary Authority of Singapore) |
+| 시가총액 (상장기업) | ~8,240억 USD / ~1.1조 SGD (2025년 12월 기준) |
+| 총 상장종목 수 | ~622개 상장증권 (Mainboard 385개 + Catalist 거래가능 188개, 거래정지 ~49개 포함) (2025년 1월 기준) |
+| 일평균 거래량 | 증권 SDAV 13.4억 SGD (FY2025: 2024년 7월-2025년 6월); 2025년 11월 18억 SGD로 상승 |
+| 일평균 거래대금 | FY2025 증권 총 거래대금 3,364억 SGD (+27.5% YoY) |
+
+### 주요 연혁 (Key Historical Milestones)
+- 1973년: 말레이시아 증권거래소에서 분리, Stock Exchange of Singapore(SES) 설립
+- 1984년: 아시아 최초 금융선물거래소 Singapore International Monetary Exchange(SIMEX) 설립
+- 1999년: 거래소(주식회사화 및 합병)법 1999에 의해 SES, SIMEX, Securities Clearing and Computer Services Pte Ltd 합병으로 12월 1일 SGX 형성
+- 2000년: 11월 23일 SGX 자체 주식을 Mainboard에 상장, 아시아-태평양 최초로 공모 및 사모를 통한 자체 상장 거래소
+- 2000년: SGX Derivatives Trading(SGX-DT) 및 SGX Securities Trading(SGX-ST)을 별도 부문으로 설립
+- 2003년: Nasdaq과 매매시스템 기술 파트너십 시작
+- 2007년: OTC 상품 청산서비스 AsiaClear 출시
+- 2010년: Australian Securities Exchange(ASX)와 84억 AUD 합병 제안; 2011년 호주 정부가 차단
+- 2013년: Baltic Exchange 24.9% 지분 인수
+- 2014년: 증권시장 유동성 개선을 위한 시장조성자 (마켓메이커) 및 활발한 트레이더 프로그램 출시
+- 2015년: 보드 랏 1,000주에서 100주로 축소
+- 2016년: 독립 규제 자회사 SGX RegCo 설립
+- 2017년: Baltic Exchange 잔여 지분 인수(100%)
+- 2018년: SGX RegCo 완전 독립 규제 부문으로 출범; FTSE-SGX 지수 출시
+- 2019년: 증권 매매엔진을 Nasdaq의 multi-matching trading engine으로 업그레이드(2019년 6월 3일 가동)
+- 2023년: NSE IX-SGX GIFT Connect 7월 3일 완전 가동, 싱가포르와 인도 자본시장 연결
+- 2025년: SGX Group 기록적 매출(13억 SGD, +11.7% YoY) 및 기록적 순이익 달성
+- 2025년: SGX와 Nasdaq이 시가총액 20억 SGD 이상 기업을 위한 Global Listing Board/이중상장 브릿지 발표
+- 2025년: SGX RegCo가 공시 기반 체계로 상장규칙 변경 추진
+- 2026년: MAS가 Global Listing Board 이중상장 촉진을 위한 법률 변경 제안
+- 2027년 (예정): 차세대 매매엔진 "Iris-ST" 2027년 하반기 가동 예정
+
+---
+
+## 2. 시장구조 (Market Structure)
+
+### 2.1 시장 세그먼트 (Market Segments)
+| 세그먼트 | 설명 | 상장요건 (요약) |
+|---------|------|----------------|
+| **Mainboard** | 기성 수익기업을 위한 주 시장; STI 구성종목을 포함한 우량주 및 지역 선도기업 | 최소 수익 실적 및/또는 시가총액 기준의 정량적 진입기준; 최소 25% 공개부유; 3년 실적 또는 수익성 요건; FCA/MAS 승인 투자설명서; 사외이사 필수 |
+| **Catalist** | Mainboard 기준을 충족하지 못할 수 있는 중소기업 및 고잠재 스타트업을 위한 스폰서 감독 성장 보드 | SGX가 설정한 정량적 진입기준 없음; Full Sponsor가 적합성을 판단하여 SGX에 확인; 1차 상장이어야 함; 수익성 실적 요건 없음; 높은 투자 리스크 공시 |
+| **GlobalQuote** | 공인 거래소에 이미 상장된 해외기업의 이차상장 보드 | 승인 거래소 1차 상장기업의 간소화된 상장절차; SGX 공시기준 충족 필수 |
+
+### 2.2 매매시간 (Trading Sessions)
+
+**참고:** 싱가포르는 연중 UTC+8(SGT)이다(서머타임 없음).
+
+**정상일 거래 (08:30 - 17:16 SGT)**
+
+| 세션 | 현지시간 (SGT) | UTC | 설명 |
+|------|---------------|-----|------|
+| 개장 전 (Opening Routine) | 08:30 - 08:58/59 | 00:30 - 00:58/59 | 주문 입력, 정정, 취소 가능; 체결 없음 |
+| 취소금지 (개장) | 08:58/59 - 09:00 | 00:58/59 - 01:00 | 무작위 종료; 취소 불가; 단일가 체결로 시가 결정 |
+| 오전 접속매매 (연속매매) | 09:00 - 12:00 | 01:00 - 04:00 | 가격-시간 우선원칙에 의한 연속 주문 체결 |
+| **점심시간** | **12:00 - 13:00** | **04:00 - 05:00** | **1시간 점심 휴식; 개장 전(12:00-12:58/59) 후 취소금지(12:58/59-13:00)** |
+| 오후 접속매매 (연속매매) | 13:00 - 17:00 | 05:00 - 09:00 | 가격-시간 우선원칙에 의한 연속 주문 체결 |
+| 장마감 전 (Closing Routine) | 17:00 - 17:04/05 | 09:00 - 09:04/05 | 주문 입력, 정정, 취소 가능; 체결 없음; 무작위 종료 |
+| 취소금지 (종가) | 17:04/05 - 17:06 | 09:04/05 - 09:06 | 취소 불가; 단일가 체결로 종가(균형가) 결정 |
+| 종가매매 (시간외) | 17:06 - 17:16 | 09:06 - 09:16 | 균형가에서만 주문 입력 가능; 종가에서만 체결 |
+
+**반일 거래 (08:30 - 12:16 SGT)**
+
+| 세션 | 현지시간 (SGT) | UTC | 설명 |
+|------|---------------|-----|------|
+| 개장 전 | 08:30 - 08:58/59 | 00:30 - 00:58/59 | 주문 입력 기간 |
+| 취소금지 (개장) | 08:58/59 - 09:00 | 00:58/59 - 01:00 | 시가 결정 |
+| 접속매매 (연속매매) | 09:00 - 12:00 | 01:00 - 04:00 | 연속 체결 |
+| 장마감 전 | 12:00 - 12:04/05 | 04:00 - 04:04/05 | 종가루틴 시작 |
+| 취소금지 (종가) | 12:04/05 - 12:06 | 04:04/05 - 04:06 | 종가 결정 |
+| 종가매매 | 12:06 - 12:16 | 04:06 - 04:16 | 종가에서만 거래 |
+
+**아시아 특징 — 점심시간:** SGX는 HKEX, JPX/TSE 등 주요 아시아 거래소와 유사하게 1시간 점심 휴식(12:00-13:00 SGT)을 유지한다. 휴식 중 개장 전 단계에서 주문 입력 및 정정이 가능하며, 오후 세션 개시 전 취소금지 단계에서 단일가 체결이 이루어진다.
+
+### 2.3 호가단위 (최소가격변동폭) (Tick Sizes)
+
+**표준 증권 (주식, REIT, 비즈니스 트러스트, 회사 워런트)**
+
+| 가격 범위 (SGD) | 호가단위 (SGD) |
+|----------------|---------------|
+| $0.20 미만 | $0.001 |
+| $0.20 - $0.995 | $0.005 |
+| $1.00 이상 | $0.01 |
+
+**Structured Warrants**
+
+| 가격 범위 (SGD) | 호가단위 (SGD) |
+|----------------|---------------|
+| $0.20 미만 | $0.001 |
+| $0.20 - $1.995 | $0.005 |
+| $2.00 이상 | $0.01 |
+
+**기타 상품**
+
+| 상품유형 | 호가단위 |
+|---------|---------|
+| ETF/ETN | $0.01 또는 $0.001 (SGX-ST 결정) |
+| 사채, 채권, 차입증권, 우선주 | $0.001 (전 가격범위) |
+
+**통화 예외:** HKD, RMB, 또는 JPY로 거래되는 상품의 호가단위 (최소가격변동폭)는 홍콩 및 일본의 최소 호가단위에 맞추어 조정된다.
+
+### 2.4 매매단위 (거래단위) (Lot Sizes)
+
+- **표준 보드 랏:** 100주 (2015년 1월 1,000주에서 축소)
+- **단주:** Unit Share Market에서 1주 단위 거래 가능
+- **변경 제안:** SGX는 SGD 10 초과 종목은 보드 랏 10단위, SGD 100 초과 종목은 1단위로 축소하는 자문 실시 [2025년 기준 자문 중]
+
+### 2.5 시장조성자 (마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)
+
+SGX는 2014년 출시한 **Designated Market Maker(DMM)** 프로그램을 운영한다:
+
+- **목적:** 유동성 개선, 경쟁적 매수-매도 스프레드에서의 거래 촉진, 시장 깊이 강화
+- **의무:** DMM은 매매시스템을 통해 경쟁적 매수 및 매도 호가를 지속적으로 공시해야 하며, SGX-ST가 규정한 적절한 스프레드 및 최소 호가 규모 유지
+- **인센티브:** 성과 지표에 기반한 청산수수료 및 기타 비용 리베이트 및 면제
+- **커버리지:** DMM 및 활발한 트레이더가 증권시장의 90% 이상 커버 [추정치]
+- **승인:** SGX-ST가 DMM 신청의 승인 또는 거부에 대한 절대 재량
+- **범위:** Mainboard 및 Catalist의 지정 증권에 적용
+
+---
+
+## 3. 매매메커니즘 (Trading Mechanism)
+
+### 3.1 경매 메커니즘 (Auction Mechanisms)
+
+- **시가단일가매매 (개장 경매):** 개장 전(08:30-08:58/59) 주문이 체결 없이 축적된다. 취소금지 단계(08:58-08:59 무작위 시작)에서 단일가 경매 알고리즘으로 균형가를 산출한다. 균형가는 거래 가능 수량을 최대화하고 주문 불균형을 최소화한다. 이 단일가에서 주문이 체결되어 시가를 결정한다.
+
+- **종가단일가매매 (장마감 경매):** 시가 경매와 유사하다. 장마감 전(17:00-17:04/05) 주문이 축적된다. 취소금지 단계(17:04-17:05 무작위 시작)에서 단일가 체결로 종가 균형가를 결정한다. 이 종가는 지수산출, NAV 계산, 결제에 사용된다.
+
+- **점심시간 경매:** 점심 휴식에 자체 개장 전(12:00-12:58/59) 및 취소금지(12:58/59-13:00) 단계가 포함되어, 오후 거래 전 가격을 재설정하는 장중 경매를 효과적으로 형성한다.
+
+- **변동성완화장치 (VI) 발동 시 단일가매매:** 서킷브레이커 (매매거래중단) 발동 시 5분간 냉각기간이 시작되며, 이 기간 동안 가격밴드 내에서 거래가 계속되나 밴드 외 주문은 거부된다. 공식적 변동성 중단 경매는 없으며, 메커니즘이 가격변동을 완화한다.
+
+### 3.2 접속매매 (연속매매) (Continuous Trading)
+
+- **체결 알고리즘:** 가격-시간 우선원칙(최우선가 우선 체결, 동일 가격 내 최선착 주문 우선)
+- **오전 세션:** 09:00 - 12:00 SGT (3시간)
+- **오후 세션:** 13:00 - 17:00 SGT (4시간)
+- **총 접속매매 (연속매매):** 정상 거래일 7시간
+
+### 3.3 가격발견 (Price Discovery)
+
+**균형가 알고리즘:**
+1. 균형가는 최대 거래 가능 수량의 가격이다
+2. 복수 가격이 최대 수량을 산출하면, 최소 불균형(매수-매도 누적 수량 간 순 차이) 가격이 선정된다
+3. 시장가주문 잉여(한 쪽 시장가주문 수량이 반대쪽 누적 수량 초과)가 있으면, 잉여 측에 1 틱을 더하여 균형가를 결정한다
+4. 최대 거래 가능 수량과 최소 불균형이 복수 가격에서 발생하면(가격 중첩), 시장 압력이 결과를 결정:
+   - 매수 압력만: 중첩 내 최고가
+   - 매도 압력만: 중첩 내 최저가
+   - 양쪽 또는 중립 압력: 최종 체결가에 가장 근접한 가격
+
+**Forced Order Range:** 기준가 대비 +/- 30 호가 이상의 주문을 방지하는 체결 전 안전장치(2017년 11월 13일 +/- 20 호가에서 확대), 투자자의 오류 거래 방지를 지원한다.
+
+---
+
+## 4. 주문유형 (Order Types)
+
+### 4.1 기본 주문유형 (Standard Order Types)
+
+| 주문유형 | 설명 |
+|---------|------|
+| **지정가주문** | 지정 가격 이상/이하로 매수 또는 매도 주문 |
+| **시장가주문** | 최우선 가용 가격으로 즉시 매수 또는 매도 |
+| **시장가-지정가 전환 주문** | 부분체결 시 체결가격에서 지정가주문으로 전환되는 시장가주문 |
+
+### 4.2 고급 주문유형 (Advanced Order Types)
+
+| 주문유형 | 설명 |
+|---------|------|
+| **Stop Limit** | 정지가격 도달 시 발동; 지정가에서 지정가주문으로 전환 |
+| **Stop Market** | 정지가격 도달 시 발동; 시장가주문으로 전환 |
+| **Stop Market-to-Limit** | 정지가격 도달 시 발동; 시장가-지정가 전환 주문으로 전환 |
+
+**Iris-ST 예정 (2027년):** 차세대 매매엔진에서 추가 주문유형 및 강화된 사전 리스크 관리 도입 예정.
+
+### 4.3 유효기간 (Time-in-Force Options)
+
+| TIF 옵션 | 설명 |
+|---------|------|
+| **Day** | 당일만 유효; 장 마감 시 만료 |
+| **IOC (Immediate or Cancel)** | 즉시 체결(전부 또는 일부); 미체결분 취소 |
+| **FOK (Fill or Kill)** | 전량 즉시 체결 또는 전량 취소 |
+| **GTC (Good-till-Cancel)** | 체결 또는 명시적 취소까지 유효 |
+| **GTDate (Good-till-Date)** | 지정일(SGX REACH에서 최대 30일)까지 또는 체결/취소까지 유효 |
+| **On Open** | 시가단일가매매 (개장 경매)에만 참여 |
+| **On Close** | 종가단일가매매 (장마감 경매)에만 참여 |
+
+**주문유형/TIF 호환성:**
+- 지정가주문: 모든 TIF 옵션 지원(Day, IOC, FOK, GTC, GTDate, On Open, On Close)
+- 시장가주문: IOC, FOK, On Open, On Close 지원
+- 시장가-지정가 전환 주문: IOC, FOK, Day, GTC, GTDate 지원
+
+### 4.4 주문 정정/취소 (Order Modification / Cancellation)
+
+- 개장 전 및 접속매매 (연속매매) 단계에서 주문 정정(가격, 수량) 또는 취소 가능
+- 취소금지 단계(개장, 점심, 종가)에서는 정정 또는 취소 불허
+- 종가매매 단계에서는 균형가의 주문만 접수
+- 가격 변경 주문 정정은 시간 우선순위 상실
+
+---
+
+## 5. 매매시스템 (Trading System)
+
+| 항목 | 상세내용 |
+|------|---------|
+| 시스템 명칭 (증권) | SGX REACH (Nasdaq Genium INET / Nasdaq Financial Framework 기반) |
+| 시스템 명칭 (파생상품) | SGX Titan DT (Nasdaq Genium INET 기반) |
+| 개발 주체 | Nasdaq 기술 (2003년부터 장기 파트너십) |
+| 아키텍처 | Nasdaq Financial Framework의 멀티매칭엔진 아키텍처; 통합 메시징 및 데이터 인프라 |
+| 매매체결엔진 (매칭엔진) | Nasdaq 멀티매칭 매매엔진; 가격-시간 우선원칙 |
+| 왕복 지연시간 | < 100마이크로초 (코로케이션 (전산센터 공동입주) Tier 1); Nasdaq 매매체결엔진 (매칭엔진) 도어투도어 서브40마이크로초 가능 |
+| 주문 처리 용량 | 20-100 TPS (SGXAccess API, 증권); 10-50 TPS (Titan DT API); 50 TPS (OUCH) |
+| 초당 메시지 수 | 총 처리량 미공개 |
+| 출시연도 (현 시스템) | 2019년 (Nasdaq 멀티매칭엔진으로 증권엔진 업그레이드, 2019년 6월 3일 가동) |
+
+### 시스템 변천사 (System History)
+
+| 연도 | 시스템 | 비고 |
+|------|--------|------|
+| 2003년 이전 | 레거시 매매시스템 | SES 및 SIMEX 시대 시스템 |
+| 2003 | Nasdaq 파트너십 시작 | SGX가 매매 인프라에 Nasdaq 기술 채택 |
+| 2008 | SGX REACH | Nasdaq Genium 플랫폼 기반 증권 거래 |
+| 2011 | SGX Titan DT | Nasdaq Genium INET v4 기반 파생상품 거래 |
+| 2019 | REACH, Nasdaq Financial Framework로 업그레이드 | 증권용 멀티매칭 매매엔진; 현물 및 파생상품 표준화 API; 2019년 6월 3일 가동 |
+| 2027 (예정) | **Iris-ST** | 증권용 차세대 매매엔진; 새 주문유형, 강화된 사전 리스크 관리, 직관적 종목코드, MBO 데이터 강화 |
+
+### 기술 스택 (Technology Stack)
+
+- **증권 주문입력:** SGXAccess API(Genium 기반 독점 OMnet 인터페이스), SGXAccess FIX(FIX 5.0 프로토콜)
+- **파생상품 주문입력:** Titan DT API(Genium INET v4 독점), Titan DT OUCH(초저지연 네이티브 OUCH 프로토콜)
+- **시장데이터:** ITCH 프로토콜(바이너리, 멀티캐스트); Market-by-Order(MBO) 및 Market-by-Price(MBP) 피드 지원
+- **리스크 관리:** 거래소 수준 Pre-Trade Risk Controls(PTRC); 실시간 통합 거래/주문 모니터링을 위한 Drop Copy API
+- **스트리밍 인프라:** 실시간 데이터 스트리밍 및 이벤트 처리에 Apache Kafka(Confluent Platform) 내부 사용
+
+### 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)
+
+- SGX 데이터센터는 싱가포르 최신 시설 중 하나에 수용
+- **전력:** 2N Dynamic Rotary UPS 이중 전력공급; 72시간 이상 디젤발전기 백업
+- **냉각:** N+2 컴퓨터룸 공조, FM 200 소화설비
+- **보안:** 24/7 감시, 3단계 접근통제(게이트, 건물, 데이터센터); 이중 카드, 맨트랩, 생체인식 접근통제
+- **인증:** ISO 22301(업무연속성), ISO 27001(정보보안), SSAE 3402(SOC), TIA-942 Tier 3 Standard
+- 구체적 재해복구 사이트 세부사항 미공개 [미확인: 지리적 분리 보조 사이트 유지로 추정]
+
+---
+
+## 6. 시장데이터 (Market Data)
+
+### 6.1 데이터 피드 프로토콜 (Data Feed Protocols)
+
+| 프로토콜 | 용도 | 설명 |
+|---------|------|------|
+| **ITCH** | 시장데이터 (증권 & 파생상품) | Nasdaq 개발 바이너리 애플리케이션 레벨 프로토콜; 멀티캐스트 전달; MBO 및 MBP 지원 |
+| **OUCH** | 주문입력 (파생상품) | 네이티브 초저지연 주문 라우팅 프로토콜; 코로케이션 (전산센터 공동입주) 전용 |
+| **OMnet / SGXAccess API** | 주문입력 (증권) | 향상된 매매속도를 위한 Genium 독점 인터페이스 |
+| **FIX 5.0** | 주문입력 (증권) | SGXAccess FIX를 통한 표준 FIX 프로토콜 (금융정보교환 규약); 참가자의 최소 시스템 재개발 |
+
+### 6.2 데이터 수준 (Data Levels)
+
+| 수준 | 내용 | 설명 |
+|------|------|------|
+| **Level 1** | 최우선 매수/매도호가, 최종 체결가, 거래량 | 표준 실시간 호가 데이터 |
+| **Market-by-Price (MBP)** | 각 가격 수준의 집계 심도 | 가격별 집계 수량을 보여주는 전체 시장 심도 |
+| **Market-by-Order (MBO)** | 각 가격 수준의 개별 주문 상세 | 개별 주문을 보여주는 전체 호가창 투명성 |
+| **참조 데이터 피드** | 종목 참조데이터 | 종목코드, 매매단위 (거래단위), 호가단위 (최소가격변동폭) 등 정적 데이터 |
+
+### 6.3 배포 인프라 (Distribution Infrastructure)
+
+- **실시간 가격 피드:** 코로케이션 (전산센터 공동입주) 및 관리 네트워크 서비스를 통한 저지연 차별화 피드
+- **지연 가격 피드:** 증권 및 파생상품의 15분 지연 데이터를 제공하는 SGX Data Source API
+- **데이터 벤더:** LSEG(Refinitiv), Bloomberg 등 주요 벤더를 통해 배포
+- **과거 데이터:** SGX 웹사이트 및 제3자 제공자(예: EOD Data, TickData)를 통해 이용 가능
+- **SGX Data Source API:** 지연 시장데이터 접근을 위한 REST API
+
+### 6.4 과거 데이터 (Historical Data)
+
+- SGX Group이 월간 시장통계 보고서 발간
+- SGX의 Market Statistics 페이지를 통해 과거 가격 및 거래량 데이터 이용 가능
+- 인가 데이터 벤더(예: TickData/BMLL)를 통해 틱 수준 과거 데이터 이용 가능
+- MAS가 가격지수, 상장기업 수, 거래량, 시가총액 등 SGX-ST 통계 발간
+
+---
+
+## 7. 접속 및 참가 (Connectivity & Access)
+
+### 7.1 회원자격 / 참가 (Membership / Participation)
+
+- **매매 회원 (SGX-ST):** MAS 인가를 받아 SGX-ST에서 증권 거래; Capital Markets Services Licence(CMSL) 보유 필수
+- **청산 회원 (CDP):** Central Depository(Pte) Limited(CDP)가 청산 및 결제 제공; 청산 회원은 자본 및 운영 요건 충족 필수
+- **스폰서 (Catalist):** Full Sponsor가 Catalist 상장기업 감독; 실사 및 지속적 컴플라이언스 책임
+- **해외 참가자:** Securities and Futures Act 국경간 조항에 따름; 적격 해외 기관에 면제 규정 존재
+
+### 7.2 접속 방법 (Connection Methods)
+
+| 방법 | 설명 |
+|------|------|
+| **코로케이션 (전산센터 공동입주)** | SGX 데이터센터에서 직접 저지연 접속 |
+| **관리 네트워크 서비스** | SGX 승인 네트워크 제공자를 통한 원격 접속 |
+| **유동성 허브** | 싱가포르 및 기타 지역의 제3자 근접 호스팅 |
+| **승인 네트워크 제공자** | 인증된 제3자 네트워크 서비스 제공자 |
+
+### 7.3 코로케이션 (전산센터 공동입주) / 근접 서비스 (Co-location / Proximity Services)
+
+SGX는 3단계의 전용 코로케이션 (전산센터 공동입주) 시설을 운영한다:
+
+| 단계 | 설명 | 지연시간 |
+|------|------|---------|
+| **Tier 1** | SGX 매매 및 시장데이터 엔진에 최저 지연시간 | 왕복 < 100마이크로초 |
+| **Tier 2** | 경쟁적 호스팅; 비코로케이션 대비 현저히 빠름 | 경쟁적(정확한 수치 미공개) |
+| **Tier 3** | 비거래 및 비시장데이터 시스템용 비용효율 호스팅 | 표준 |
+
+**시설 특징:**
+- 통신사, 벤더, 캐리어 중립 환경
+- 복수 서비스 제공자, 거래소, 클라우드 서비스에 크로스 커넥트
+- 10 Gbps 매매 접속 옵션 업그레이드 가능
+- 24/7 기술지원과 확장 가능 랙 공간
+- 최신 보안 및 환경 모니터링
+
+### 7.4 API 프로토콜 (API Protocols)
+
+| API | 프로토콜 | 활용 |
+|-----|---------|------|
+| SGXAccess API | 독점 OMnet(Genium) | 증권 주문입력 — 향상된 속도 및 저지연 |
+| SGXAccess FIX | FIX 5.0 | 증권 주문입력 — 표준 프로토콜, 최소 재개발 |
+| Titan DT API | Genium INET v4 독점 | 파생상품 주문입력 — 10-50 TPS |
+| Titan DT OUCH | OUCH 프로토콜 | 파생상품 주문입력 — 초저지연, 50 TPS, 코로케이션 (전산센터 공동입주) 전용 |
+| ITCH | ITCH(멀티캐스트) | 시장데이터 — 증권 및 파생상품 MBO 피드 |
+| Drop Copy API | 독점 | 복수 장부에 걸친 실시간 통합 거래/주문 모니터링 |
+| GIFT Connect FIX | FIX 5.0 SP2 | NSE IFSC 접속 — Level 2 시장데이터(5단계 심도) |
+| GIFT Connect DMA | NSE IFSC NNF trimmed protocol | NSE IFSC 접속 — 인도 코로케이션을 통한 초저지연 |
+
+### 7.5 인증 / 테스트 (Certification / Testing)
+
+- 매매 회원은 운영 시스템 접속 전 접속 테스트 및 인증을 완료해야 한다
+- SGX가 시스템 통합 및 적합성 테스트를 위한 테스트 환경 제공
+- Pre-Trade Risk Control(PTRC) 시스템은 실거래 전 검증 필수
+- 시스템 업그레이드(예: 2027년 Iris-ST 전환) 전 주기적 재인증 필요 가능
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 가격제한 (Price Limits)
+
+- **Forced Order Range(FOR):** 기준가 대비 +/- 30 호가 이상의 주문을 거부하는 체결 전 메커니즘(2017년 11월 13일 +/- 20 호가에서 확대)
+- 우선주, 구조화 워런트, ETF, ETN, 사채, 채권, 차입증권을 제외한 SGX 거래 모든 증권에 적용
+- 현재 시장가격에서의 최대 이탈을 제한하여 오류 거래를 방지하도록 설계
+
+### 8.2 서킷브레이커 (매매거래중단) (Circuit Breakers)
+
+SGX는 **동적 서킷브레이커 (매매거래중단)**(변동성완화장치)를 사용한다:
+
+| 매개변수 | 상세 |
+|---------|------|
+| **가격밴드** | 동적 기준가 대비 +/- 10% |
+| **동적 기준가** | 각 잠재적 거래의 5분 전 최종 체결가 |
+| **발동** | 가격밴드 밖 거래를 초래할 유입 주문 |
+| **조치** | 유입 주문 거부; 5분 냉각기간 시작 |
+| **냉각기간 중** | 기존 가격밴드 내 거래 계속; 밴드 외 주문 거부 |
+| **범위** | Straits Times Index(STI) 및 MSCI Singapore Free Index(SiMSCI) 구성종목, 해당 지수 기반 ETF, 해당 종목 Extended Settlement Contracts |
+| **기간** | 5분 냉각기간 |
+
+**KRX 비교:** SGX의 동적 서킷브레이커 (매매거래중단)는 일부 아시아 거래소의 정적 일일 가격제한(예: KRX의 +/- 30%, JPX/TSE의 일일 가격제한)과 다르다. SGX의 접근방식은 장중 동적 방식으로 급격한 가격변동 시에만 발동되어 시장이 지속 개장 상태를 유지한다. KRX는 일일 가격제한 +/- 30%와 변동성완화장치(VI)를 함께 운용한다.
+
+### 8.3 사전 리스크 관리 (Pre-trade Risk Controls)
+
+- **거래소 수준 PTRC:** SGX가 사전 설정 기준 초과 주문을 방지하는 Pre-Trade Risk Controls 제공
+- **회원 수준 관리:** 매매 회원 및 청산 회원은 주문 수탁, 체결, 결제로부터의 리스크를 관리하기 위한 적절한 정책 및 통제 채택 의무
+- **Iris-ST 강화 (2027년):** 차세대 매매엔진에 회원이 규제 의무 이행에 사용할 수 있는 내장형 사전 리스크 관리 시스템 포함
+- **오입력 방지:** Forced Order Range 메커니즘이 크게 잘못된 가격의 주문 방지
+- **포지션 한도:** 청산 회원은 포지션 한도를 모니터링하고 관리해야 한다
+
+### 8.4 킬 스위치 (Kill Switch)
+
+- SGX는 매매 회원이 비상시 모든 미체결 주문을 취소할 수 있는 메커니즘 제공
+- Drop Copy API가 복수 장부에 걸친 실시간 모니터링을 가능하게 하여 리스크관리 의사결정 지원
+- 구체적 킬 스위치 구현 세부사항은 미공개
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독기관 (Supervising Authority)
+
+| 기관 | 역할 |
+|------|------|
+| **싱가포르 통화청(MAS)** | 법정 감독기관; 싱가포르 금융산업의 통합 감독자; Securities and Futures Act(SFA)에 따른 승인 거래소로 SGX 감독 |
+| **SGX RegCo** | SGX의 독립 규제 자회사; 상장심사, 거래감시, 회원감독, 집행 등 일선 규제기능 수행; 자체 이사회 및 MAS에 보고 |
+
+### 9.2 주요 규제 (Key Regulations)
+
+| 규제 | 설명 |
+|------|------|
+| **Securities and Futures Act 2001(SFA)** | 싱가포르 자본시장을 규율하는 주 입법; 인가, 시장행위, 투자설명서 요건, 시장 부정행위, 국경간 조항 포괄 |
+| **Exchanges (Demutualisation and Merger) Act 1999** | SES와 SIMEX의 SGX 합병 및 거래소 주식회사화를 가능하게 한 법률 |
+| **SGX-ST Mainboard Rules** | Mainboard 세그먼트의 상장 및 거래 규칙 |
+| **SGX-ST Catalist Rules** | Catalist 성장 보드의 상장 및 거래 규칙 |
+| **Securities and Futures (Licensing and Conduct of Business) Regulations** | 자본시장 서비스 인가 보유자의 상세 요건 |
+| **Financial Advisers Act 2001** | 금융자문사 및 그 대리인 규제 |
+
+### 9.3 시장감시 (Market Surveillance)
+
+- **3단계 감시 모델:** 브로커(1선), SGX RegCo(일선 거래소 감시), MAS(법정 감독)
+- **MAS-SGX 거래감시 실무 가이드:** 브로커의 거래감시 운영 개발을 지원하기 위해 공동 발간한 가이드
+- SGX RegCo가 잠재적 시장 부정행위(내부자거래, 시장조작, 선행매매)에 대해 거래활동을 실시간 모니터링
+- SGX RegCo가 정기 검사, 검토, 기업 방문 실시
+- 집행 조치: 매매정지, 거래정지, 공개 견책, 과징금, MAS 법정 집행 의뢰
+
+### 9.4 보고 요건 (Reporting Requirements)
+
+- **계속 공시:** 상장기업은 증권가격에 영향을 미칠 중요 정보를 신속히 공시해야 한다
+- **정기 보고:** 분기별(해당 시) 및 연간 재무보고 요건
+- **대량 지분 공시:** 5% 소유기준 초과 시 공시 필요
+- **공매도 보고:** 지정 공매도 체계에 따른 보고 의무
+- **거래보고:** 장외 거래는 규정된 기한 내 보고 필수
+
+### 9.5 국제 협력 (Cross-border Arrangements)
+
+- **역외 적용 (SFA Section 339):** 싱가포르 밖에서의 행위로 싱가포르에 실질적이고 예견 가능한 영향이 있는 경우 SFA 규제 대상
+- **국경간 면제 규정 (2021년):** 국경간 약정에 따라 적격 사업을 수행하는 해외 관계법인 및 해외 사무소에 대한 면제
+- **GIFT Connect:** 닛프티 파생상품 거래를 위한 SGX와 NSE IFSC(인도) 간 국경간 접속
+- **Global Listing Board (2025-2026년):** 시가총액 20억 SGD 이상 기업을 위한 SGX-Nasdaq 이중상장 프레임워크; MAS가 SFA 개정 법안 제안
+- **상호인정 약정:** SGX가 복수 국제 거래소 및 감독기관과 규제 협력 유지
+
+---
+
+## 10. 수수료 및 수익모델 (Fees & Revenue Model)
+
+### 10.1 매매수수료 (Trading Fees)
+
+| 수수료 유형 | 요율 | 비고 |
+|------------|------|------|
+| **SGX 매매 접속 수수료** | 계약가치의 0.0075% | SGX-ST가 거래당 부과; 9% GST 적용 |
+| **청산수수료** | 계약가치의 0.0325% | CDP 부과; 9% GST 적용 |
+| **결제지시 수수료** | 계약당 SGD 0.35 | 결제지시당 |
+| **Structured Warrants 청산수수료** | 계약가치의 0.004% | 구조화상품에 대한 낮은 요율 |
+
+**참고:** SGX 거래소 수수료에는 2024년 1월부터 9% Goods and Services Tax(GST)가 적용된다(GST 요율 8%에서 9%로 인상).
+
+### 10.2 기타 수수료 (Other Fees)
+
+**상장수수료 (Mainboard):**
+
+| 수수료 유형 | 범위 |
+|------------|------|
+| 심사수수료 (환불불가) | SGD 20,000 |
+| 최초 상장수수료 | SGD 100,000 - SGD 200,000 (시가총액 기준) |
+| 추가 상장수수료 | SGD 30,000 - SGD 200,000 (시가총액 기준) |
+| 연간 상장수수료 | SGD 35,000 - SGD 150,000 (시가총액 기준) |
+
+**상장수수료 (Catalist):**
+
+| 수수료 유형 | 금액 |
+|------------|------|
+| 연간 상장수수료 | SGD 15,000 |
+
+**시장데이터 수수료:**
+- 실시간 데이터 피드: 등급 및 심도에 따라 가격 책정
+- 지연 데이터: SGX Data Source API를 통해 이용 가능
+- 과거 데이터: 인가 벤더를 통해 이용 가능
+
+**코로케이션 (전산센터 공동입주) 수수료:**
+- Tier 1/2/3 호스팅에 따른 단계별 가격; 정확한 가격 미공개
+
+**인지세 (정부):**
+- 주식 매수 또는 매도 시 0.2% (매수자 및 매도자 각각 납부)
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 시스템 업그레이드 (최근 5년) (System Upgrades)
+
+| 연도 | 개발사항 |
+|------|---------|
+| 2019 | 증권 매매엔진이 Nasdaq 멀티매칭 매매엔진으로 업그레이드(2019년 6월 3일 가동); 현물 및 파생상품 표준화 API |
+| 2023 | SGX와 NSE IFSC(인도) 연결 GIFT Connect 인프라 출시 |
+| 2025 | SGX Group이 증권시장 차세대 매매엔진 Iris-ST 공개; 2025년 12월 31일까지 자문 개방 |
+| 2025 | 내부 실시간 데이터 스트리밍에 Apache Kafka(Confluent Platform) 채택 |
+| 2027 (예정) | Iris-ST 2027년 하반기 가동 예상; 새 주문유형, 강화된 사전 리스크 관리, 직관적 종목코드, MBO 데이터 강화 |
+
+### 신규 상품/세그먼트 (New Products / Segments)
+
+- **GIFT Connect 닛프티 선물 & 옵션:** NSE IFSC와의 접속을 통한 USD 표시 닛프티 지수 파생상품; 미결제약정 80억 USD 이상 기록
+- **Depository Receipts & DLCs:** 예탁증서, ETF, Daily Leverage Certificates(DLCs) 서비스 확대
+- **암호화/디지털자산 파생상품:** CoinDesk 및 SGX의 iEdge 브랜드와 공동 개발한 지수 연동 영구선물, SGX를 디지털자산 리스크관리 기관 허브로 포지셔닝 [개발 중]
+- **Global Listing Board:** 시가총액 20억 SGD 이상 기업을 위한 SGX-Nasdaq 공동 조화 이중상장 이니셔티브; 2026년 중반 예상
+
+### 규제 변화 (Regulatory Changes)
+
+- **2025년:** SGX RegCo가 상장규칙 변경으로 공시 기반 체계 추진
+- **2025년:** MAS가 상장절차 간소화를 위해 상장심사 기능을 SGX RegCo로 통합 제안
+- **2025년:** SGD 10 초과 종목 보드 랏 100에서 10으로, SGD 100 초과 종목 100에서 1로 축소 자문
+- **2025년:** Iris-ST 규칙 강화 자문(새 종목코드, 주문유형, 리스크 관리)
+- **2026년:** MAS가 Global Listing Board 이중상장 촉진을 위한 SFA 법적 및 규제적 변경 제안
+
+### 전략적 이니셔티브 (Strategic Initiatives)
+
+- **SGX-Nasdaq 파트너십:** 2025년 11월 발표된 Global Listing Board/이중상장 브릿지; 단일 서류셋으로 간소화된 규제의무 및 자금조달
+- **IPO 파이프라인 활성화:** 5년간 상장기업 20% 감소(782개에서 622개)를 해소하기 위한 전면적 상장규칙 변경으로 신규 상장 유치 마찰 축소
+- **ASEAN 허브 전략:** 싱가포르를 ASEAN 및 아시아-태평양 시장 최고 다중자산 거래소로 포지셔닝
+- **인도 접속:** 선구적 국경간 연결인 GIFT Connect; SGX-TCS 기술 전략 파트너십
+- **기록적 재무실적:** FY2025 순수입 11.7% 증가, 13억 SGD; 기록적 순이익; 증권 SDAV 26.5% 증가, 13.4억 SGD
+- **기술 현대화:** Iris-ST는 강화된 기능의 세대적 업그레이드; 더 넓은 상품 범위 및 개선된 소매/기관 접근 지원 예상
+
+---
+
+## 출처 (Sources)
+
+[Source: SGX Official Website, "Singapore Exchange", https://www.sgx.com, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "Regulatory Notice 8.2.1 — Trading Hours, Market Phases", https://rulebook.sgx.com/rulebook/regulatory-notice-821-trading-hours-market-phases-application-market-phases-and-principles, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "Regulatory Notice 8.5.2 — Minimum Bid Size", https://rulebook.sgx.com/rulebook/regulatory-notice-852-minimum-bid-size, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "Practice Note 8.10A — Circuit Breaker", https://rulebook.sgx.com/rulebook/practice-note-810a-circuit-breaker, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "Practice Note 8.2.1 — Application of Market Phases and Algorithm", https://rulebook.sgx.com/rulebook/practice-note-821-application-market-phases-and-algorithm, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "18.12 Transaction Costs", https://rulebook.sgx.com/rulebook/1812-transaction-costs, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "18.12.2 Clearing Fees", https://rulebook.sgx.com/rulebook/18122-clearing-fees, accessed 2026-04-06]
+
+[Source: SGX Official Website, "Co-Location", https://www.sgx.com/data-connectivity/co-location, accessed 2026-04-06]
+
+[Source: SGX Official Website, "Market Access", https://www.sgx.com/data-connectivity/market-access, accessed 2026-04-06]
+
+[Source: SGX Official Website, "Data & Connectivity", https://www.sgx.com/data-connectivity, accessed 2026-04-06]
+
+[Source: SGX RegCo, "About SGX RegCo", https://regco.sgx.com/about-sgx-regco, accessed 2026-04-06]
+
+[Source: Nasdaq Inc., "Singapore Exchange Launches New Multi-Matching Trading Engine from Nasdaq", https://ir.nasdaq.com/news-releases/news-release-details/singapore-exchange-launches-new-multi-matching-trading-engine, 12 July 2019]
+
+[Source: SGX Investor Relations, "2025 SGX Annual Report", https://links.sgx.com/FileOpen/2025_SGX_Annual_Report.ashx?App=Announcement&FileID=859054, accessed 2026-04-06]
+
+[Source: The Edge Singapore, "SGX posts record revenue, net profit in FY2025", https://www.theedgesingapore.com/capital/results/sgx-posts-record-revenue-net-profit-fy2025-proposes-final-quarterly-dividend-105, accessed 2026-04-06]
+
+[Source: SGX Group, "SGX Group Unveils Iris-ST Trading Engine", via Minichart.com.sg, https://www.minichart.com.sg/2025/11/06/sgx-group-unveils-iris-st-trading-engine-and-seeks-feedback-on-rule-enhancements-for-singapore-stock-market-1/, 6 November 2025]
+
+[Source: Regulation Asia, "SGX to Launch Next Gen Trading Engine 'Iris-ST' in 2027", https://www.regulationasia.com/articles/sgx-to-launch-next-gen-trading-engine-iris-st-in-2027, accessed 2026-04-06]
+
+[Source: CNBC, "Singapore's SGX ties up with Nasdaq for dual listings", https://www.cnbc.com/2025/11/20/singapore-mas-sgx-nasdaq-partner-for-dual-listings.html, 20 November 2025]
+
+[Source: MAS, "MAS Proposes to Consolidate Listing Review Functions under SGX RegCo", https://www.mas.gov.sg/news/media-releases/2025/mas-proposes-to-consolidate-listing-review-functions, accessed 2026-04-06]
+
+[Source: MAS, "MAS-SGX Trade Surveillance Practice Guide", https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/MAS-SGX-Trade-Surveillance-Practice-Guide.pdf, accessed 2026-04-06]
+
+[Source: Singapore Statutes Online, "Securities and Futures Act 2001", https://sso.agc.gov.sg/act/sfa2001, accessed 2026-04-06]
+
+[Source: CEIC Data, "Singapore Market Capitalization, 1999-2026", https://www.ceicdata.com/en/indicator/singapore/market-capitalization, accessed 2026-04-06]
+
+[Source: Conyers, "SGX Mainboard & Catalist Public Companies Report H1 2025", https://www.conyers.com/publications/view/sgx-mainboard-catalist-public-companies-report-l-h1-2025/, accessed 2026-04-06]
+
+[Source: WFE Focus, "SGX Takes a Deep Look at Circuit Breakers", https://focus.world-exchanges.org/articles/sgx-circuit-breakers, accessed 2026-04-06]
+
+[Source: WFE Focus, "SGX Outlook for 2025", https://focus.world-exchanges.org/articles/sgx-outlook-2025, accessed 2026-04-06]
+
+[Source: Trading Technologies, "SGX Supported Order Types", https://library.tradingtechnologies.com/user-setup/sgx-supported-order-types.html, accessed 2026-04-06]
+
+[Source: Confluent, "Singapore Exchange Customer Story", https://www.confluent.io/customers/singapore-exchange/, accessed 2026-04-06]
+
+[Source: Beeks Group, "SGX Data Centre in Singapore", https://beeksgroup.com/services/connectivity/data-centres/asiapac/sgx-singapore-sgx/, accessed 2026-04-06]
+
+[Source: OnixS, "SGX Titan DT ITCH and OUCH API SDKs", https://www.onixs.biz/insights/sgx-titan-dt-itch-ouch-api-sdk, accessed 2026-04-06]

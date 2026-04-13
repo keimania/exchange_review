@@ -1,0 +1,693 @@
+# Eurex Clearing AG (유렉스 청산소)
+
+> **최종 업데이트:** 2026-04-07
+> **조사 등급:** Tier 1 (심층 분석)
+> **유형:** CCP (중앙청산소, Central Counterparty)
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+### 1.1 기관 프로필 (Corporate Profile)
+
+| 항목 | 내용 |
+|------|------|
+| 공식 명칭 | Eurex Clearing AG |
+| 약칭 | ECAG |
+| 웹사이트 | [https://www.eurex.com/ec-en](https://www.eurex.com/ec-en) |
+| 설립연도 | 1998년 (Eurex Exchange의 청산소로 설립); 1998년 4월 6일 BaFin에 신용기관으로 등록 (등록 ID: 119203) |
+| 소재지 | 독일 / 프랑크푸르트 암 마인 (Mergenthalerallee 61, 65760 Eschborn) |
+| 소유 구조 | Eurex Frankfurt AG의 완전 자회사이며, Deutsche Borse Group (상장법인, 티커 DB1)에 소속 |
+| 모회사/그룹 | Deutsche Borse Group -- Eurex (파생상품), Xetra (현물주식), Eurex Clearing (CCP), Clearstream (중앙예탁기관(CSD)/국제예탁기관(ICSD)), EEX (에너지), 360T (외환), STOXX/Qontigo (지수)를 포괄하는 수직통합 그룹 |
+| 감독기관 | BaFin (독일 연방금융감독청)이 주요 감독기관; Deutsche Bundesbank (독일 연방은행); ESMA (유럽증권시장감독청, 유럽시장인프라규정(EMIR)에 따른 CCP 감독 위원회) |
+| CPMI-IOSCO PFMI 준수 | 예 -- 2015년부터 CPMI-IOSCO 자체평가 및 분기별 공개 정량 공시(PQD) 발행 ([Eurex Clearing Regulatory Standards](https://www.eurex.com/ec-en/find/about-us/regulatory-standards)) |
+| 적격중앙청산소(QCCP) 지위 | 유럽시장인프라규정(EMIR)에 따라 EU 인가 CCP (2014년 4월 10일); 바젤 III / CRD IV에 따른 적격중앙청산소(QCCP) ([Eurex Clearing Licensing & Supervision](https://www.eurex.com/ec-en/find/about-us/licensing-supervision)) |
+| 청산회원 | 22개국 약 200개 청산회원 ([Eurex Clearing About](https://www.eurex.com/ex-en/find/about-us/eurex-clearing)) |
+| 월간 청산 금액 | 월 EUR 11조 이상 ([Eurex Clearing About](https://www.eurex.com/ex-en/find/about-us/eurex-clearing)) |
+| 시장 지위 | 거래량 기준 유럽 최대 CCP; 세계 최고 수준의 중앙청산소 중 하나 |
+
+### 1.2 국제 인정 및 제3국 지위 (International Recognitions & Third-Country Status)
+
+| 관할권 | 기관 | 지위 | 일자 |
+|--------|------|------|------|
+| 유럽연합 | ESMA / BaFin | EMIR에 따른 인가 CCP | 2014년 4월 10일 |
+| 미국 | CFTC | 등록 파생상품청산기관(DCO) | 2016년 2월 1일 |
+| 캐나다 (온타리오) | OSC | 면제 명령 | 2017년 7월 14일 (2020년 2월 6일 확대) |
+| 스위스 | FINMA | 인정된 외국 CCP | 2018년 3월 29일 |
+| 싱가포르 | MAS | 인정 청산소(RCH) | 2018년 9월 14일 |
+| 일본 | JFSA (일본 금융청) | 외국 금융상품 청산기관 | 2020년 3월 12일 |
+| 캐나다 (퀘벡) | AMF | 파생상품법에 따른 면제 | 2022년 6월 20일 |
+| 홍콩 | SFC (증권선물위원회) | 자동 매매 서비스 인가 | 2022년 9월 7일 |
+| 영국 | Bank of England (영란은행) | UK EMIR Article 25에 따른 인정 비영국 CCP | 2023년 7월 26일 |
+
+Source: [Eurex Clearing Licensing & Supervision](https://www.eurex.com/ec-en/find/about-us/licensing-supervision)
+
+### 1.3 주요 연혁 (Key Historical Milestones)
+
+| 연도 | 사건 |
+|------|------|
+| 1998 | Eurex Clearing AG가 Eurex Exchange (DTB-SOFFEX 합병으로 출범)의 청산소로 설립 |
+| 2002 | Eurex Clearing AG가 중앙청산소(CCP)로 공식 설립 |
+| 2010 | OTC 금리스왑을 위한 EurexOTC Clear 출범 |
+| 2012 | **Eurex Clearing Prisma** 포트폴리오 기반 증거금 방법론 도입 |
+| 2012 | Deutsche Borse가 Eurex Zurich AG에 대한 SIX Group의 잔여 지분 인수, 단독 소유자가 됨 |
+| 2014 | EMIR에 따른 CCP 인가 (2014년 4월 10일) |
+| 2015 | Eurex Repo GC Pooling 사상 최대 거래량 기록 |
+| 2016 | CFTC에 파생상품청산기관(DCO)으로 등록 |
+| 2017 | OTC IRS를 위한 Eurex Clearing Partnership Program 출범 |
+| 2018 | Partnership Program 상업적 출범; 미국, 영국, 아시아, 유럽 대륙에서 27개 참가기관 가입 |
+| 2021 | 증권 청산을 위한 C7 Securities Clearing Service (C7 SCS) 도입 |
+| 2023 | EU CCP 회복 및 정리 규정 (Regulation (EU) 2021/23) 전면 적용 |
+| 2024 | OTC 청산 명목 잔액 EUR 33,411억에 도달 (전년 대비 12% 증가) |
+| 2025 | OTC 청산 명목 잔액 EUR 43,668억에 도달 (전년 대비 31% 증가); 일평균 청산 금액 EUR 2,800억 (전년 대비 35% 증가) |
+| 2025 | EMIR 3.0 활성 계좌 요건(Active Account Requirement) 발효 (2025년 6월 24일) |
+| 2025 | Eurex Clearing이 전 세계 CCP 최초로 DLT 기반 담보 유동화 서비스 출범 (2025년 7월, HQLAx 및 Clearstream과 공동) |
+| 2025 | Prisma 방법론이 채권 및 레포로 확대 (Prisma Bonds, 2025년 12월 8일부터 의무 적용) |
+
+Sources: [Eurex Full Year 2025 Figures](https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494); [Eurex Full Year 2024 Figures](https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2024-figures-at-Eurex-4250318); [Eurex Clearing Prisma Bonds Circular](https://www.eurex.com/ec-en/find/circulars/clearing-circular-4609908)
+
+### 1.4 경영진 (2025년 4월 기준) (Executive Leadership)
+
+| 직위 | 성명 |
+|------|------|
+| 금융 파생상품 매매 및 청산 총괄 | Robbert Booij (Eurex Clearing AG CEO Erik Muller의 퇴임에 따름) |
+| Eurex Clearing AG 이사회 임원 (2014년 8월부터) | Matthias Graulich (2025년 7월 Eurex Frankfurt AG 이사회에도 합류) |
+
+Source: [Deutsche Borse Press Release, April 2025](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Eurex-implements-organizational-changes-to-drive-future-growth-4355160)
+
+---
+
+## 2. 청산 모델 (Clearing Model)
+
+### 2.1 CCP 서비스 (CCP Services)
+
+Eurex Clearing은 복수의 자산군 및 거래장에 걸쳐 중앙청산소 서비스를 제공한다:
+
+| 서비스 | 상품군 | 설명 | 주요 통계 |
+|--------|--------|------|----------|
+| **장내 파생상품** | 주식/지수 옵션 및 선물, 채권 선물 및 옵션, 배당 파생상품, 상품 파생상품, FX 파생상품, 변동성 파생상품, ETF/ETC 파생상품 | Eurex Exchange (T7 플랫폼) 상장 전 상품에 대한 CCP; 19개국에 걸쳐 약 1,700개 이상의 선물 및 옵션 | 2025년(연간) 20억 6,590만 계약 청산; 2024년 20억 8,050만 계약 |
+| **EurexOTC Clear** | OTC 금리 파생상품 | OTC IRS, OIS, FRA, 베이시스 스왑, 제로쿠폰 스왑 등 11개 통화 (EUR, USD, GBP, CHF, JPY, SEK, NOK, DKK, PLN, CZK, HUF) | 명목 잔액 EUR 43,668억 (2025년 말, 전년 대비 +31%); 일평균 청산 금액 EUR 2,800억 (2025년, 전년 대비 +35%) |
+| **EurexOTC Clear NDF** | OTC FX 역외 선도환(NDF) | NDF 거래 청산 | OTC 청산 서비스에 포함 |
+| **레포 청산** | GC Pooling, Special Repo, GC Repo | Eurex Repo (F7 플랫폼)의 CCP 청산; EUR, USD, GBP, CHF 표시; 결제를 위해 Clearstream 및 Euroclear 연결 | 2025년 평균 잔존기간 조정 거래량 EUR 4,061억 (사상 최고, 전년 대비 +20%) |
+| **대차 CCP (Lending CCP)** | 증권대차 | 국제 채권, 유럽 주식, ETF를 대상으로 하는 CCP 증권대차 서비스; Eurex Repo SecLend 시장을 통해 운영 | 수익적 소유자를 위한 Specific Lender License; 장중 준실시간 위험 산정 |
+| **현물시장 청산** | 주식, 채권, ETF/ETC | Frankfurt Stock Exchange (Xetra, XFRA) 거래에 대한 CCP | C7 Securities Clearing Service를 통해 운영 |
+
+Sources: [Eurex Full Year 2025 Figures](https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494); [EurexOTC Clear](https://www.eurex.com/ec-en/clear/eurex-otc-clear/about-eurex-otc-clear); [Eurex Repo](https://www.eurex.com/ex-en/markets/eurex-repo)
+
+#### GC Pooling
+
+GC Pooling은 중앙청산을 활용한 표준화된 담보부 자금조달의 유럽 기준이다. 주요 특징:
+
+- 사전 정의된 바스켓 (예: GC Pooling ECB Basket -- ECB 적격 약 3,000개 증권 포함)
+- Eurex Clearing AG (CCP) 및 Clearstream Banking (결제)에 대한 자동 연결
+- EUR, USD, GBP, CHF 이용 가능
+- 매도 및 매수 측 160개 이상 기관 참여
+- 수취한 담보의 재사용 허용: 추가 단기금융시장 거래, Eurex Clearing 증거금, ECB 공개시장 조작에 활용 가능
+- 2005년부터 운영
+
+Source: [Eurex GC Pooling](https://www.eurex.com/ex-en/markets/eurex-repo/gc-pooling)
+
+#### 대차 CCP (Lending CCP)
+
+대차 CCP는 다음과 같은 차별화된 특징을 갖춘 중앙청산 증권대차를 제공한다:
+
+- Eurex Clearing이 모든 거래의 단일 거래상대방으로 기능하여 양자 간 신용위험 제거
+- **Specific Lender License**: 수익적 소유자(연기금, 자산운용사)가 정식 청산회원 자격 없이 CCP에 직접 접근 가능
+- 장중 준실시간 위험 산정 및 담보 부족 시 장중 증거금 징수
+- 비현금 담보 관리를 위한 삼자간(Triparty) 담보 대리인 연결
+- 국제 채권, 유럽 주식, ETF 적용
+- 매매 후 자동화를 위한 Pirum과의 파트너십; 거래 소싱을 위한 EquiLend과의 통합
+
+Sources: [Eurex Lending CCP](https://www.eurex.com/ec-en/find/news/Clearstream-Eurex-Repo-and-Eurex-Clearing-offer-clients-joint-agency-securities-lending-141856); [Eurex Clearing Lending CCP Enhancements](https://www.eurex.com/ec-en/find/news/Eurex-Clearing-enhances-the-marketplace-for-securities-lending-central-clearing-155016)
+
+### 2.2 채무인수 절차 (Novation Process)
+
+- **공개 제안에 의한 채무인수(Novation by open offer)**: Eurex Exchange 및 Frankfurt Stock Exchange의 장내 상품에 대해, Eurex Clearing은 거래 체결 시점에 모든 매도자에 대한 매수자 및 모든 매수자에 대한 매도자로 개입한다.
+- **OTC 상품에 대한 채무인수**: OTC IRS 및 레포 거래의 경우, 양자 간 거래가 거래 등록/승인 시 Eurex Clearing을 CCP로 하는 두 개의 별도 계약으로 대체된다.
+- **자동일괄처리(STP)**: GC Pooling 및 레포 청산은 거래 체결부터 CCP 청산, Clearstream에서의 결제까지 완전 자동화된 자동일괄처리(Straight-Through Processing)를 제공한다.
+
+### 2.3 차감(네팅) (Netting)
+
+- **다자간차감(Multilateral Netting)**: Eurex Clearing은 모든 청산 포지션에 대해 다자간차감을 수행하여, 총노출액을 청산회원별 상품/결제일 기준의 단일 순의무로 축소한다.
+- **포트폴리오 압축(Portfolio Compression)**: OTC IRS의 경우 압축 서비스를 통해 라인아이템 수와 총명목 잔액을 축소한다.
+- **Prisma 교차증거금 차감**: 청산그룹(Liquidation Group) 내에서 Prisma는 상관관계가 있는 상품 간의 헤지 및 분산 효과를 인식하는 포트폴리오 수준의 차감을 제공한다.
+
+### 2.4 청산회원 (Clearing Membership)
+
+#### 회원 유형 (Membership Types)
+
+| 유형 | 범위 | 설명 |
+|------|------|------|
+| **총괄청산회원 (GCM)** | 최광범위 | 자기 업무, 고객 업무, 비청산회원(NCM)의 업무 청산 가능 |
+| **직접청산회원 (DCM)** | 자기 + 계열사 | 자기 업무 및 계열 직접청산 시장참가자의 업무 청산 가능; OTC DCM은 자기 업무만 가능 |
+| **FCM 청산회원** | 미국 규제 대상 | 미국 FCM 모델에 따라 대리인으로 활동하는 미국 선물위탁상 |
+| **ISA 직접청산회원** | 자기 업무만 | 청산 대리인(CA)을 통해 자기 업무 청산; ISA Direct Indemnified (레포용) 및 ISA Direct Light (GC Pooling 전용) 변형 존재 |
+
+Source: [Eurex Clearing Membership Types](https://www.eurex.com/ec-en/join/admission-requirements/clearing-member)
+
+#### 자본 요건 (최소 자기자본) (Capital Requirements)
+
+| 시장 | DCM | GCM / FCM |
+|------|-----|-----------|
+| Eurex Exchange (장내 파생상품) | EUR 750만 | EUR 3,000만 |
+| EurexOTC IRD | EUR 750만 | EUR 3,000만 |
+| EurexOTC NDF | EUR 750만 | EUR 3,000만 |
+| 현물시장 (주식) | EUR 375만 | EUR 1,500만 |
+| 레포 시장 | EUR 5,000만 | EUR 2억 |
+
+참고: 자본 요건은 시장별로 **합산 적용**되며, (a) 30일 평균 개시증거금의 20%, (b) 250일 평균 개시증거금의 20%, (c) 위 최소 기준 중 가장 높은 금액을 적용한다.
+
+Source: [Eurex Clearing Member Admission](https://www.eurex.com/ec-en/join/admission-requirements/clearing-member)
+
+#### 공동기금 최소 분담금 (Default Fund Minimum Contributions)
+
+| 회원 유형 | 최소 분담금 |
+|-----------|-----------|
+| GCM / FCM | EUR 500만 |
+| DCM / ISA Direct | EUR 100만 |
+| 투자/연기금 (ISA Direct) | EUR 10만 |
+
+공동기금(Default Fund) 분담금은 월 단위로 검토되며 각 회원의 상대적 위험 노출에 따라 재산정된다.
+
+#### 운영 요건 (Operational Requirements)
+
+- 증거금 결제를 위한 EUR/GBP/CHF 현금 계좌 (USD 권장)
+- 인정된 CSD에서의 증권 담보 계좌
+- 매매 플랫폼 및 보고 시스템에 대한 기술적 연결
+- OTC 청산을 위한 인정된 거래 소스(Approved Trade Source, ATS)에 대한 연결
+- Clearer Test, Certified Clearing Specialist 인증, 또는 Core Clearing Knowledge 세미나를 통해 입증된 최소 1명의 등록 적격 청산 담당자(QCS)
+
+---
+
+## 3. 위험관리 (Risk Management)
+
+### 3.1 증거금 체계: Eurex Clearing Prisma (Margin Framework: Eurex Clearing Prisma)
+
+**Eurex Clearing Prisma** (Portfolio-based Risk management by Simulating scenario Matrices and Assessing market risks)는 Eurex Clearing의 독자적 포트폴리오 기반 증거금 방법론으로, 2012년에 도입되었다.
+
+#### 핵심 방법론 (Core Methodology)
+
+| 파라미터 | 사양 |
+|----------|------|
+| 모델 유형 | 필터링된 과거 시뮬레이션(Filtered Historical Simulation, FHS) + VaR(Value-at-Risk) |
+| 신뢰수준 | 장내 상품 99%; OTC 상품 99.5% |
+| 실효 신뢰수준 | 목표 수준 초과 (백테스트를 통해 검증) |
+| 과거 시나리오 | 3년 소급 기간의 필터링된 과거 시나리오 750개 |
+| 스트레스 시나리오 | 식별된 과거 스트레스 기간의 시나리오 250개 |
+| 이벤트 위험 시나리오 | 특정 위험 요인(예: 개별주식 배당선물)에 대한 보충 시나리오 |
+| 보유기간 -- 장내 주식 파생상품 | 2-3일 (PEQ01 청산그룹: 4일에서 3일로, 이후 일부는 2일로 축소) |
+| 보유기간 -- 장내 채권 | 2일 (PFI01_HP2 분리) |
+| 보유기간 -- OTC IRS | 5일 (PFI01_HP5 분리) |
+| 위험 측정치 | 필터링된 과거 표본 VaR과 스트레스 기간 표본 VaR 중 최대값 |
+| 경기순응성 완화 | 저변동성 국면에서 스트레스 기간 VaR이 보수적 증거금 하한으로 기능; 증거금 하한의 연간 재보정 |
+
+Sources: [Eurex Clearing Prisma](https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma); [ECC Prisma for Commodities](https://www.ecc.de/en/risk-management/ecc-prisma-for-commodities); [Part 8: Forward Looking Margin Simulations](https://www.eurex.com/ec-en/find/news/Part-8-Forward-looking-margin-simulations-into-periods-of-stress-3193710)
+
+#### 증거금 구성요소 (Margin Components)
+
+Prisma 개시증거금은 복수의 구성요소로 이루어진다:
+
+1. **시장위험 개시증거금(Market Risk Initial Margin, MRIM)**: 필터링된 과거 시뮬레이션에 기반한 핵심 위험 요소; 과거 및 스트레스 시나리오 하에서의 잠재적 포트폴리오 가치 변동 포착
+2. **유동성 조정(Liquidity Adjustment, LA)**: 집중 포지션의 청산 비용 반영; 포트폴리오 청산 시 매수-매도 스프레드 확대 및 시장 충격 조정
+3. **녹인/이벤트 위험 요소(KnockIn / Event Risk Component)**: 특정 위험 이벤트에 대한 추가 증거금 (예: 구조화상품의 배리어 이벤트, 개별주식 파생상품의 배당 이벤트 위험)
+
+후향적 요소(필터링된 과거 VaR)는 변화하는 시장 상황에 대한 모델 반응성을 보장하고, 전향적 요소(스트레스 기간 VaR)는 증거금 안정성을 보장하며 경기순응성에 대응한다.
+
+#### 청산그룹 (Liquidation Groups)
+
+상품은 공유된 위험 특성에 따라 청산그룹으로 편성된다. 주요 청산그룹은 다음과 같다:
+
+| 청산그룹 | 상품 | 보유기간 |
+|----------|------|----------|
+| **PFI01** (채권) | 장내 채권 선물/옵션 + OTC IRS | 분리: HP2 (2일) -- 장내; HP5 (5일) -- OTC |
+| **PEQ01** (주식) | 장내 주식/지수 파생상품 | 2-3일 |
+| **FX 청산그룹** | OTC FX NDF | 2일 [미검증] |
+| **레포/GC Pooling** | 레포 및 담보부 자금조달 (현재 Risk-Based Margining 적용; 2025년 12월부터 Prisma Bonds로 이전) | 상품별 상이 |
+
+Source: [Eurex Clearing Prisma Circular on PEQ01](https://www.eurex.com/ec-en/find/circulars/Eurex-Clearing-Prisma-Reduction-of-the-risk-horizon-for-Equity-Liquidation-Group-PEQ01-228482); [Prisma Bonds Circular](https://www.eurex.com/ec-en/find/circulars/clearing-circular-4609908)
+
+#### 교차증거금 (Cross-Margining)
+
+교차증거금은 Prisma의 차별화된 특징으로, 보유기간이 상이한 상품 간의 증거금 상계를 가능하게 한다:
+
+- **장내-OTC 교차증거금**: PFI01 내에서 OTC IRS (5일 보유기간)와 장내 채권 상품 (2일 보유기간) 간 교차증거금 제공
+- **알고리즘**: 시스템이 장내 채권/단기금융시장 포지션이 OTC 포트폴리오에 대한 경제적으로 합리적인 헤지인지 확인; 그렇다면 해당 포지션을 5일 분리로 이동하여 총증거금 절감
+- **증거금 효율성**: 포트폴리오 구성에 따라 **최대 70%**의 증거금 절감 가능
+- **SPAN 대비 우위**: CME의 SPAN 방법론(상품별 증거금 산정에 제한적 상품간 스프레드 적용)과 달리, Prisma는 과거 시나리오 하에서 완전 재평가(full revaluation)를 통해 포트폴리오 수준에서 위험을 평가하여 헤지 효과를 보다 정확히 포착
+
+Source: [Eurex Clearing Cross-Margining](https://www.eurex.com/ec-en/services/margining/cross-margining)
+
+#### 다른 증거금 방법론과의 비교 (Comparison with Other Margin Methodologies)
+
+| 특성 | Eurex Clearing Prisma | CME SPAN | OCC STANS |
+|------|----------------------|----------|-----------|
+| 접근법 | 포트폴리오 기반 필터링된 과거 시뮬레이션 | 시나리오 기반 (상품당 16개 위험 배열) | 몬테카를로 시뮬레이션 |
+| 위험 측정치 | VaR (필터링된 과거 VaR과 스트레스 기간 VaR 중 최대값) | 스캐닝 시나리오 중 최악 손실 | 기대손실(Expected Shortfall, ES) |
+| 신뢰수준 | 99% (장내) / 99.5% (OTC) | ~99% (거래소별 상이) | 99.5% (2일, ES) |
+| 교차증거금 | 예, 청산그룹 내 장내 및 OTC 간 | 제한적 상품간 공제 | 주식 상품 간 포트폴리오 증거금 |
+| 시나리오 | 과거 750개 + 스트레스 250개 = 총 1,000개 | 상품당 16개 스캐닝 시나리오 | 완전 몬테카를로 재평가 |
+| 경기순응성 | 스트레스 기간 VaR 하한 | APC (경기순응성 방지) 조치 | 과거 평균 기반 하한 |
+
+#### 증거금 징수 일정 (Margin Call Schedule)
+
+| 유형 | 시점 | 설명 |
+|------|------|------|
+| 정기 증거금 징수 | 장종료(야간) | 장종료 포지션 및 가격 기반 표준 일일 증거금 산정 |
+| 장중 증거금 징수 | 거래일 중 수회 | 유의미한 시장 변동 또는 포지션 변동에 의해 발동; Eurex Clearing이 준실시간 장중 위험 산정 수행 |
+| 비정기 증거금 징수 | 수시 | 극단적 시장 상황 또는 특정 회원의 위험 관련 비상 징수 |
+
+### 3.2 손실부담순서 (Default Waterfall)
+
+Eurex Clearing은 구체적인 EUR 금액이 명시된 명확한 손실부담순서를 유지한다:
+
+| 단계 | 재원 | 금액 |
+|------|------|------|
+| **1** | 채무불이행 회원의 증거금 담보 | 가변 (보유 증거금) |
+| **2** | 채무불이행 회원의 공동기금(Default Fund) 분담금 | 가변 |
+| **3** | **Eurex Clearing SITG** (CCP 자기자본 출연분 -- 전용 금액) | **EUR 1억 4,300만** |
+| **4** | 비채무불이행 회원의 공동기금 분담금 + **Eurex Clearing SSITG** (2차 자기자본 출연분) | 공동기금 (가변) + **EUR 5,700만** SSITG |
+| **5** | **추가분담금 부과(Recovery Cash Call)** (비채무불이행 회원) + **추가 전용 금액** (Eurex Clearing, 비례·동시) | 회원: 공동기금 분담금의 최대 2배; Eurex: 최대 **EUR 3억** |
+| **6** | **Eurex Clearing 자기자본** | **EUR 6억** (현재) |
+| **7** | **Deutsche Borse 후원보증(Letter of Comfort)** | 최대 **EUR 6억** |
+
+**Eurex Clearing / Deutsche Borse의 총 최대 약정: EUR 17억** (1.43 + 0.57 + 3 + 6 + 6)
+
+Source: [Eurex Clearing Default Waterfall](https://www.eurex.com/ec-en/services/risk-management/default-waterfall); [Contribution of Eurex Clearing](https://www.eurex.com/ec-en/services/risk-management/default-waterfall/contribution-of-eurex_clearing)
+
+#### ISA Direct Indemnified 모델 (ISA Direct Indemnified Model)
+
+채무불이행한 ISA Direct Indemnified 청산회원의 경우, 손실부담순서가 단순화된다: 해당 회원의 증거금과 공동기금 분담금을 먼저 소진한 후, 잔여 손실 전액은 보상 청산 대리인(Indemnifying Clearing Agent)이 제공하는 보상으로 충당한다.
+
+#### 공동기금 세부사항 (Default Fund Details)
+
+| 파라미터 | 세부 내용 |
+|----------|----------|
+| 구조 | 전 자산군을 포괄하는 단일 합동 공동기금 |
+| 산정 기준 | **Cover-2**: 99.9% 신뢰수준의 극단적이나 발생 가능한 스트레스 시나리오에서 최대 2개 청산회원 그룹의 동시 채무불이행을 감당할 수 있는 규모 |
+| 산정 방법 | 최대 2개 청산회원 그룹에 대한 보충증거금 제외 총스트레스 손실 초과 증거금(gSLOM)의 60일 평균 |
+| 재산정 빈도 | 월별 (월말 기준); Cover-2 적정성의 일별 검증 |
+| 과거 규모 참고 | EUR 30억 (2016년 4분기 PQD 데이터) |
+| 회원 분담금 | 상대적 위험 노출 기반; 최소 EUR 100만 (DCM) 또는 EUR 500만 (GCM) |
+
+Source: [Eurex Clearing Default Fund](https://www.eurex.com/ec-en/services/risk-management/default-waterfall/default-fund); [Eurex PQD Part 1](https://www.eurex.com/ec-en/find/news/Part-1-Spotlight-on-initial-margins-and-other-default-resources-144726)
+
+#### 과거 재무 자원 데이터 (PQD 기반) (Historical Financial Resources Data)
+
+| 지표 | 2016년 4분기 | 2017년 1분기 | 2025년 1분기 (일부) |
+|------|-------------|-------------|-------------------|
+| 총 개시증거금 | EUR 358억 | EUR 470억 | EUR 392억 (OTC IRS만); EUR 41억 (채권); EUR 11억 (기타) [미검증 -- Clarus 분석의 부분 데이터] |
+| 공동기금 | EUR 30억 | -- | -- |
+| SITG | EUR 1억 5,000만 | EUR 1억 5,000만 | EUR 1억 4,300만 (현재 공시) |
+| 초과담보율 | -- | 24% | -- |
+| 상위 5개 청산회원 집중도 | 총 증거금의 32% | -- | -- |
+| 상위 10개 청산회원 집중도 | 총 증거금의 53% | -- | -- |
+
+참고: 보다 최근의 포괄적 PQD 데이터는 Eurex Clearing 웹사이트의 분기별 공시를 통해 이용 가능하나, 본 조사에서는 전체 접근이 이루어지지 않았다. 위 수치는 Eurex 자체 투명성 기사 및 제3자 분석에서 인용된 공개 데이터 포인트이다.
+
+Sources: [PQD Part 1](https://www.eurex.com/ec-en/find/news/Part-1-Spotlight-on-initial-margins-and-other-default-resources-144726); [PQD Part 2](https://www.eurex.com/ec-en/find/news/Part-2-Initial-margin-trends-and-skin-in-the-game-161844); [Clarus Q1 2025](https://www.clarusft.com/whats-new-in-ccp-disclosures-q1-2025/)
+
+### 3.3 스트레스 테스트 및 백테스트 (Stress Testing & Back-Testing)
+
+| 요건 | 시행 사항 |
+|------|----------|
+| **스트레스 테스트** | 극단적이나 발생 가능한 시나리오에 대한 전 청산회원 포트폴리오의 일일 스트레스 테스트; 과거 시나리오(예: 2008년 리먼, 2020년 코로나19, 2022년 우크라이나 위기) 및 가상 시나리오 포함 |
+| **공동기금 규모 산정** | 보정된 기금 규모 대비 Cover-2 일별 검증; 부족 발견 시 즉각적 위험완화 조치 실행 |
+| **백테스트** | 실제 시장 변동에 대한 증거금 모델 성과의 정기적 백테스트; EMIR은 장내 상품에 대해 99% 커버리지 요구 |
+| **경기순응성 모니터링** | 두 가지 핵심 지표: 최대 상대적 증거금 증가율(단기) 및 최고-최저 비율(장기 자금조달 불확실성) |
+| **역(逆)스트레스 테스트** | 손실부담순서를 소진시킬 수 있는 시나리오 식별 |
+| **EMIR 준수** | 증거금(Article 41), 공동기금(Article 42), 스트레스 테스트 요건에 대한 EMIR RTS 전면 준수 |
+
+Source: [Eurex Clearing Default Fund Dimensioning](https://www.eurex.com/ec-en/services/risk-management/stress-testing/default-fund-dimensioning)
+
+### 3.4 회복 및 정리 (Recovery & Resolution)
+
+Eurex Clearing은 **EU CCP 회복 및 정리 규정** (Regulation (EU) 2021/23)에 따라 운영되며, 2023년 2월 12일부터 전면 적용되었다.
+
+**회복 수단:**
+- **변동증거금 이익 삭감(VMGH)**: 미보전 손실 충당을 위한 비채무불이행 회원에 대한 변동증거금 지급액 축소
+- **현금 징수/추가분담금 부과**: 비채무불이행 회원에게 추가 자금 출연 요구 가능 (공동기금 분담금의 최대 2배)
+- **포지션 배분/강제 배분**: 채무불이행 회원 포트폴리오의 이전 또는 종결
+- **부분적 계약 종결(Partial Tear-up)**: 정합된 장부 복구를 위해 필요한 경우 계약 종결
+
+**정리 수단 (BaFin이 정리기관):**
+- **정리 현금 징수(Resolution Cash Calls)**: BaFin이 비채무불이행 회원에게 해당 분담 요건의 최대 2배까지 추가 출연 요구 가능
+- **감액 및 전환 수단(Write-down and Conversion Tools)**: 부채 감액 또는 채권 전환 권한
+- **포지션 및 손실 배분 수단**: BaFin이 포지션과 손실을 배분할 수 있는 권한
+- **이전 수단(Transfer Tools)**: 청산회원 포지션을 가교 CCP(bridge CCP) 또는 다른 CCP로 이전
+
+청산회원은 BaFin이 취하는 모든 정리 수단에 대해 계약적으로 구속되며, 이는 자산, 권리, 의무, 부채에 영향을 미치는 수단을 포함한다.
+
+Source: [Eurex Clearing CCP RRR Circular](https://www.eurex.com/ec-en/find/circulars/clearing-circular-3140368)
+
+---
+
+## 4. 결제 (Settlement)
+
+### 4.1 상품별 결제주기 (Settlement Cycle by Product)
+
+| 상품 | 결제주기 | 비고 |
+|------|----------|------|
+| 장내 파생상품 (선물) | 일별 변동증거금 결제; 만기 시 실물인도 또는 현금결제 | 현금결제: 최종결제일 후 T+1; 실물인도: 상품별 상이 |
+| 장내 파생상품 (옵션) | 행사 결제는 상품별 상이 | 유럽식: 만기 시; 미국식: 모든 영업일 |
+| 현물 주식 / ETF | T+2 (EU 표준, CSDR 기준) | EU 내 T+1 전환 검토 중 |
+| OTC IRS | 변동증거금 일별 결제; 지급일에 현금흐름 발생 | CLS 또는 직접 결제를 통해 |
+| 레포 (GC Pooling, Special Repo) | T+0 ~ T+N (기한부 레포) | GC Pooling은 익일물 및 기한부 지원 |
+| 채권 | T+2 | EU 표준 결제주기 |
+
+### 4.2 DVP 모델 및 결제 인프라 (DVP Model & Settlement Infrastructure)
+
+| 파라미터 | 세부 내용 |
+|----------|----------|
+| DVP 모델 | DVP Model 1 (총액, 동시) -- 증권 대 현금 결제 |
+| 사용 CSD | **Clearstream Banking Frankfurt** (CBF) -- 법인 구조조정을 거쳐 현재 **Clearstream Europe AG** (CEU)로 운영 |
+| T2S 참여 | 예 -- Clearstream Europe AG가 중앙은행 화폐 기반 증권 결제를 ECB의 T2S 플랫폼에 아웃소싱 |
+| CSD 연계 | Clearstream (ICSD), Euroclear -- Special 및 GC Repo의 국가간 결제용 |
+| 현금 결제 | T2 (TARGET2)를 통한 EUR 중앙은행 화폐; 상업은행 화폐도 이용 가능 |
+| NTS 처리 | T2S 순차적 야간 결제(2회 주기) |
+| RTS 처리 | 일중 최대 2회의 실시간 결제 주기 |
+| DVP 마감시한 | DvP/RvP 거래의 경우 중부유럽시간(CET) 16:00 |
+
+Source: [Clearstream T2S Settlement Cycles](https://www.clearstream.com/clearstream-en/securities-services/custody-and-investor-solutions/cascade-t2s-settlement-cycles-1276176); [Eurex Clearing Settlement Times](https://www.eurex.com/ec-en/services/transaction-management/delivery-management/information-on-settlement-times)
+
+### 4.3 결제완결성 (Settlement Finality)
+
+- **법적 근거**: 독일법 (특히 EU 결제완결성지침(Settlement Finality Directive) 98/26/EC의 독일 국내법 이행)
+- **EU 결제완결성지침(SFD)**: Eurex Clearing AG는 SFD에 따른 지정 시스템으로서, 시스템에 입력된 이전 지시가 참가자의 도산 시에도 법적으로 집행 가능하고 취소 불가함을 보장
+- **T2S에서의 완결성 시점**: Clearstream Europe AG의 일반 거래 약관에 의해 결정; 결제 지시가 T2S에서 매칭되어 결제되면 해당 이전은 최종적이고 취소 불가
+- **중앙은행 화폐 완결성**: T2를 통한 EUR 결제는 유로시스템(Eurosystem) 규정에 따른 중앙은행 화폐 완결성 제공
+
+---
+
+## 5. 기술 및 인프라 (Technology & Infrastructure)
+
+### 5.1 C7 청산 아키텍처 (C7 Clearing Architecture)
+
+C7은 Eurex Clearing의 차세대 청산 아키텍처로, 기존 "Eurex Clearing Classic" 시스템을 단계적으로 대체하고 있다.
+
+| 구성요소 | 설명 | 상태 |
+|----------|------|------|
+| **C7 Core** | 파생상품 및 증권 청산을 위한 중앙 청산 엔진 | 다수 릴리스 이후 운영 중 |
+| **C7 Securities Clearing Service (C7 SCS)** | Frankfurt Stock Exchange (XETR, XFRA) 및 Eurex (XEUR) 증권 거래의 증권 청산 | 2021년 9월부터 운영 중 |
+| **C7 Client Administration Service (C7 CAS)** | 회원 관리, 계좌 관리, 보고 | 지속적 릴리스 (CAS Release 2.293 운영 중) |
+| **C7 Advanced Risk Protection (ARP)** | 사전 거래 위험 통제 및 실시간 위험 모니터링 | C7 아키텍처에 통합 |
+
+**최근 C7 개선사항 (2025-2026):**
+- C7 Release 11.1 (2025년 5월): Total Return Futures 전략 지원, 음수 거래/결제가격, 미국 FCM 고객에 대한 상품간 증거금 산정
+- C7 SCS Release: 기업행사(corporate action) 처리 개선 (2025년 11월)
+- C7 CAS Release 2.293: 2025년 10월 운영 개시
+- 2026년 로드맵: 매매 및 청산 아키텍처, 규제 준수, 담보부 자금조달의 추가 발전
+
+Source: [Eurex Clearing C7 Releases](https://www.eurex.com/ec-en/support/initiatives/c7-releases); [Eurex 2026 Roadmap](https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026--4867350)
+
+### 5.2 Prisma 위험 엔진 (Prisma Risk Engine)
+
+| 파라미터 | 세부 내용 |
+|----------|----------|
+| 엔진 | Eurex Clearing Prisma 산정 엔진 |
+| 방법론 | 750+250개 시나리오에 의한 필터링된 과거 시뮬레이션 |
+| 재산정 | 장종료 전체 재산정; 장중 준실시간 위험 모니터링 |
+| 온라인 계산기 | Cloud Prisma Margin Estimator (cPME) -- 회원용 API 및 GUI로 이용 가능 |
+| Prisma 릴리스 | 정기적 릴리스 (예: 2025년 Prisma Release 15.0) -- 보정 업데이트, 신상품, 방법론 개선 포함 |
+| 증거금 하한 재보정 | 스트레스 기간 VaR 증거금 하한의 연간 재보정 (예: 2025년 6월 16일 시행) |
+
+Source: [Eurex Prisma Technology](https://www.eurex.com/ec-en/technology/prisma); [GitHub Cloud Prisma Margin Estimator](https://github.com/Deutsche-Boerse-Risk/CloudPrismaMarginEstimator)
+
+### 5.3 인터페이스 프로토콜 및 연결 (Interface Protocols & Connectivity)
+
+| 인터페이스 | 설명 |
+|-----------|------|
+| **Common Report Engine (CRE)** | 매매 및 청산 리포트 조회를 위한 중앙 솔루션; SFTP 기반; 모든 리포트와 비거래 파일의 단일 소스 |
+| **Enhanced Risk Solution (ERS) GUI** | 실시간 위험 모니터링을 위한 웹 기반 GUI; 증거금 커버리지, 익스포저 뷰, 위험관리자 대시보드 |
+| **Clearing GUI** | 장내 파생상품, 증권, OTC 업무 전반에 걸친 청산 활동을 위한 웹 기반 GUI |
+| **FIX / FIXML** | 매매 후 청산 및 결제 메시징을 위한 FIX 프로토콜(FIX Protocol) 및 FIXML 인코딩 |
+| **Eurex Enhanced Trading Interface (ETI)** | 매매 및 청산을 위한 저지연 전용 API |
+| **C7 API** | C7 SCS 및 C7 CAS 통합을 위한 전용 API |
+| **연결 옵션** | 전용선(Leased line), 인터넷 회선, Multi-Member-Service Operator |
+
+Source: [Eurex CRE](https://www.eurex.com/ex-en/support/technology/common-report-engine); [Eurex Connectivity](https://www.eurex.com/ec-en/support/technology/connectivity/Connectivity-options-2398080)
+
+### 5.4 복원력 및 재해복구 (Resilience & Disaster Recovery)
+
+| 항목 | 세부 내용 |
+|------|----------|
+| 업무연속성 | 고가용성을 위한 이중 데이터센터 아키텍처 [미검증 -- 시스템적으로 중요한 금융시장인프라의 표준] |
+| 복구 시간 | EMIR 요건인 2시간 복구 시간 목표(RTO) 충족을 위해 설계 |
+| 운영 복원력 | 정기적 DR 테스트 및 업무연속성 훈련 |
+| 사이버보안 | 2025년 1월부터 DORA (디지털 운영 복원력법, Digital Operational Resilience Act) 요건 적용 |
+
+---
+
+## 6. 규제 체계 (Regulatory Framework)
+
+### 6.1 국가 감독 (National Supervision)
+
+| 감독기관 | 역할 |
+|----------|------|
+| **BaFin** (독일 연방금융감독청) | 주요 감독기관; 은행 인가 기관; CCP 회복 및 정리 규정에 따른 정리기관 |
+| **Deutsche Bundesbank** (독일 연방은행) | 지급결제 시스템 감독; 통화정책적 함의 |
+| **Hessische Borsaufsicht** (헤센주 거래소감독청) | Eurex Exchange 운영에 대한 헤센주 거래소 감독기관 |
+
+### 6.2 EU 수준 감독 (EU-Level Supervision)
+
+| 체계 | 세부 내용 |
+|------|----------|
+| **EMIR** | Regulation (EU) No 648/2012에 따른 인가 CCP (2014년 4월 10일) |
+| **EMIR Refit** | Regulation (EU) 2019/834 (EMIR 2.2) 준수 -- 강화된 제3국 CCP 체계 포함 |
+| **EMIR 3.0** | Regulation (EU) 2024/2987; 활성 계좌 요건 2025년 6월 24일 발효 |
+| **ESMA 감독 위원회** | ESMA가 BaFin, Bundesbank 및 관련 EU 각국 감독당국을 포함하는 Eurex Clearing CCP 감독 위원회를 주재 |
+| **CCP RRR** | CCP 회복 및 정리에 관한 Regulation (EU) 2021/23, 2023년 2월부터 전면 적용 |
+| **CSDR** | 증권 청산에 적용되는 결제규율제도(Settlement Discipline Regime) |
+| **DORA** | 2025년 1월부터 디지털 운영 복원력법 요건 적용 |
+
+### 6.3 CPMI-IOSCO 준수 (CPMI-IOSCO Compliance)
+
+| 공시 | 세부 내용 |
+|------|----------|
+| PFMI 자체평가 | 정기적으로 발행 및 업데이트; 최신 평가는 Eurex Clearing 웹사이트에서 열람 가능 |
+| 공개 정량 공시(PQD) | 2015년부터 분기별 발행; 신용위험, 담보, 증거금, 유동성 위험, 채무불이행 규정에 관한 약 200개 항목의 정량 데이터 포함 |
+| PQD 웨비나 | 2026년까지 14회의 웨비나 발행, 추세 및 방법론 설명 |
+| 투명성 노트 | "Pioneering CCP Transparency" 시리즈 (Part 1-10) -- PQD 추세에 대한 심층 분석 제공 |
+
+Source: [Eurex Clearing Regulatory Standards](https://www.eurex.com/ec-en/find/about-us/regulatory-standards); [Eurex CCP Transparency](https://www.eurex.com/ec-en/services/risk-management/ccp-transparency)
+
+---
+
+## 7. 상호운용성 및 CCP 간 약정 (Interoperability & Cross-CCP Arrangements)
+
+### 7.1 CCP 간 연계 (Cross-CCP Links)
+
+Eurex Clearing은 현재 현물주식 청산에 대해 다른 CCP와의 공식적 CCP 상호운용 연계를 운영하지 않는다 (EuroCCP-SIX x-clear-Cboe Clear Europe 상호운용 약정과는 다름). Eurex Clearing은 자사 청산 대상 거래장의 단독 CCP로 기능한다.
+
+### 7.2 교차증거금 약정 (Cross-Margin Arrangements)
+
+| 약정 | 세부 내용 |
+|------|----------|
+| **내부 장내-OTC 교차증거금** | PFI01 청산그룹 내 OTC IRS (5일 보유기간)와 장내 채권 (2일 보유기간) 간 교차증거금; 최대 70% 절감 가능 |
+| **상품간 증거금(CPM)** | C7 Release 11.1에서 미국 FCM 고객용 CPM 도입 (2025년 5월) |
+| **Eurex/OCC 약정** | Eurex Clearing과 OCC 간의 공식적 CCP 간 교차증거금 약정은 현재 확인되지 않음 [미검증 -- 과거 논의가 있었을 수 있으나 활성화된 프로그램은 발견되지 않음] |
+
+### 7.3 Clearstream과의 관계 (Relationship with Clearstream)
+
+Eurex Clearing과 Clearstream (양사 모두 Deutsche Borse Group 소속)은 긴밀한 통합 관계를 유지한다:
+
+| 측면 | 세부 내용 |
+|------|----------|
+| 결제 | Clearstream Europe AG (구 CBF)가 Eurex Clearing 전 증권 결제의 주요 CSD |
+| 담보 관리 | Clearstream이 Eurex Clearing 증거금 및 공동기금 담보에 대한 담보 관리 서비스 제공 |
+| GC Pooling | 통합 가치사슬: Eurex Repo (매매) -> Eurex Clearing (CCP) -> Clearstream (결제 및 보관) |
+| DLT 담보 | HQLAx 및 Clearstream과 공동으로 DLT 기반 담보 유동화 이니셔티브 (2025년 7월 출범) |
+| D7 플랫폼 | Clearstream의 D7 디지털 증권 플랫폼이 디지털 CP 매매 및 청산을 위해 Eurex Repo F7과 통합 |
+
+### 7.4 기타 파트너십 (Other Partnerships)
+
+| 파트너 | 약정 |
+|--------|------|
+| **HQLAx** | DLT 기반 담보 유동화 서비스; Eurex Clearing이 전 세계 CCP 최초로 출범 (2025년 7월) |
+| **Pirum** | 대차 CCP를 위한 매매 후 자동화 |
+| **EquiLend** | 증권대차 거래 소싱 협력 |
+| **CLS** | OTC FX 관련 현금흐름 결제 |
+
+Source: [Eurex Clearing DLT Collateral](https://www.eurex.com/ex-en/find/news-center/news/Eurex-Clearing-paving-the-way-for-digital-collateral-mobilization-4265674); [HQLAx Partnership](https://www.hqla-x.com/post/eurex-clearing-collaborates-with-hqlax-on-digital-collateral-mobilization)
+
+---
+
+## 8. 수수료 (Fees)
+
+### 8.1 수수료 구조 개요 (Fee Structure Overview)
+
+모든 거래 수수료 및 적용 리베이트는 **Eurex Clearing AG Price List** (Chapter 3)에 상세히 기술되어 있으며, Eurex 웹사이트 Rules & Regulations 항목에서 공시된다.
+
+수수료는 **계약당** 부과되며 다음에 따라 차이가 있다:
+- 상품군
+- 체결 유형 (호가장 vs. 장외/TES)
+- 포지션 계좌 (자기 vs. 고객)
+- 거래량 등급 (대량 참가자를 위한 리베이트 프로그램)
+
+### 8.2 대표적 수수료 수준 (Representative Fee Levels)
+
+| 상품군 | 수수료 유형 | 대략적 범위 |
+|--------|-----------|-----------|
+| 주가지수선물 (예: EURO STOXX 50) | 계약당 청산 수수료 | 표준 수수료에 거래량 기반 리베이트 등급 적용; 대량 참가자에게 인하된 수수료 이용 가능 |
+| 채권선물 (예: Euro-Bund, Euro-Bobl) | 계약당 청산 수수료 | 2026년 가격 로드맵 변경 적용 대상 |
+| 주식옵션 | 계약당 청산 수수료 | 거래량 의존적 등급 |
+| OTC 금리 파생상품 | 건당 및 명목 기반 | OTC IRS Pricing & Fees 문서에 별도 공시 |
+| 레포 / GC Pooling | 건당 청산 수수료 | 주기적으로 조정 |
+| 증권대차 (대차 CCP) | 건당 기준 | [미검증] |
+
+참고: 구체적인 EUR 센트/계약 금액은 공식 Price List PDF에서 확인 가능하나 본 조사에서는 추출되지 않았다. 2025년 10월 기준 최신 Price List는 [Eurex Clearing Price List](https://www.eurex.com/ec-en/rules-regs/rules-and-regulations/3.-Price-List-32640)에서 열람 가능하다.
+
+### 8.3 2026년 가격 변경 (2026 Pricing Changes)
+
+2026년 1월 1일 및 4월 1일 시행 변경사항:
+- **주가지수선물**, **EURO STOXX 50 지수옵션**, **채권선물 및 옵션**의 표준 수수료, 인하 수수료, 리베이트, 기준치 변경
+- 주가지수옵션 유동성 등급 1의 리베이트 수준이 등급별 5%p 인하
+- 금리옵션에 대한 유동성 공급 리베이트가 전 유동성 등급에 걸쳐 10%p 인하
+
+Source: [Eurex Pricing Roadmap 2026 Circular](https://www.eurex.com/ec-en/find/circulars/clearing-circular-4800548)
+
+### 8.4 회원 수수료 (Membership Fees)
+
+회원 관련 수수료에는 가입 수수료, 연간 회원 수수료, 연결 요금이 포함된다. 이는 거래 기반 청산 수수료와 별도이며 해당 수수료 일정에 상세히 기술되어 있다.
+
+### 8.5 Prisma 증거금 차감 혜택 (Prisma Margin Netting Benefits)
+
+Prisma 포트폴리오 기반 증거금 산정 방식은 청산회원에게 상당한 경제적 혜택을 제공한다:
+- **교차증거금 절감**: 상계되는 장내 채권 및 OTC IRS 포지션이 있는 포트폴리오에 대해 최대 70% 증거금 감소
+- **포트폴리오 증거금**: 청산그룹 내 완전한 차감으로 헤지 및 상관관계 효과 인식
+- **자본효율성**: 보다 정확한 위험 평가로 표준화 또는 양자 간 접근법 대비 바젤 III/CRD IV에 따른 낮은 자본 요건 실현
+- **단일 담보 풀**: 장내 및 OTC 포지션에 걸친 하나의 증거금 풀로 운영 복잡성과 담보 분산 감소
+
+---
+
+## 9. 최근 동향 (Recent Developments)
+
+### 9.1 C7 시스템 발전 (C7 System Evolution)
+
+C7 청산 아키텍처는 다년간의 적용을 지속하고 있다:
+- **C7 SCS** (Securities Clearing Service)는 2021년 9월부터 운영 중
+- **C7 Release 11.1** (2025년 5월): Total Return Futures 전략, 음수 거래/결제가격, 미국 FCM 고객용 상품간 증거금
+- **C7 CAS Release 2.293** (2025년 10월): 강화된 회원 관리
+- **2026년 로드맵**: 청산 아키텍처, 규제 이니셔티브, 담보부 자금조달 역량의 추가 발전
+- TCS (Tata Consultancy Services)가 청산 플랫폼 현대화의 기술 파트너로 참여
+
+Source: [Eurex C7 Releases](https://www.eurex.com/ec-en/support/initiatives/c7-releases); [TCS Case Study](https://www.tcs.com/what-we-do/industries/capital-markets/case-study/eurex-central-counterparty-clearing-legacy-modernization)
+
+### 9.2 D7 매매 후 플랫폼 (디지털 증권) (D7 Post-Trade Platform)
+
+- **D7**은 Deutsche Borse Group의 완전 디지털 증권 발행 및 처리를 위한 차세대 플랫폼
+- Clearstream의 D7 플랫폼에서 발행된 네이티브 디지털 CP(ABN Amro 발행)가 Eurex Repo F7에서 거래
+- Eurex Clearing이 ECB의 도매 디지털 화폐 시범사업에 성공적으로 참여
+- D7과 Eurex Clearing 인프라의 통합으로 디지털 증권 청산 실현
+
+Source: [Deutsche Borse D7](https://www.deutsche-boerse.com/dbg-en/markets-services/ps-technology/ps-7-market-technology/ps-d7); [Eurex Digital Money Pilot](https://www.eurex.com/ex-en/find/news-center/news/Eurex-Clearing-successfully-participates-in-ECB-trials-for-wholesale-digital-money-pilot--4151738)
+
+### 9.3 Partnership Program (OTC IRS)
+
+2017년 10월에 출범한 Eurex Clearing Partnership Program은 Eurex의 OTC 청산 위상을 변모시켰다:
+
+| 지표 | 세부 내용 |
+|------|----------|
+| 참가기관 | 미국, 영국, 아시아, 유럽 대륙에서 27개 창립 참가기관 |
+| 등록 고객 | 500개 이상의 은행 및 매수 측(buy-side) 기관이 스왑 청산에 가입 |
+| 거래량 성장 | 일평균 청산 금액: EUR 50억 (2017년) -> EUR 2,800억 (2025년) |
+| 거버넌스 | 최활발 상위 10개 참가기관은 경제적 이익에 대한 영구 지분 및 거버넌스/위원회 구조 참여 자격 |
+| 고객 인센티브 | OTC IRD Client Activation Program: 적격 고객에 최대 EUR 50,000 보상 |
+| CCP 전환 인센티브 | 지정 전환일의 OTC IRD 거래에 대한 정규 booking 수수료 50% 할인 (2026년 3월 31일까지) |
+
+Source: [FIA Partnership Program](https://www.fia.org/marketvoice/articles/eurex-clearing-partnership-program); [Eurex Partnership Program](https://www.eurex.com/ec-en/join/partnership-program-otc-ird)
+
+### 9.4 OTC 청산 성장 (OTC Clearing Growth)
+
+Eurex OTC Clear는 괄목할 만한 성장 궤적을 달성하였다:
+
+| 연도 | 명목 잔액 (연말) | 일평균 청산 금액 | 전년 대비 성장 |
+|------|-----------------|-----------------|--------------|
+| 2023 | ~EUR 29,800억 | ~EUR 1,850억 | -- |
+| 2024 | EUR 33,411억 | EUR 2,090억 | +12% / +13% |
+| 2025 | EUR 43,668억 | EUR 2,800억 | +31% / +35% |
+
+2025년 10월에는 명목 잔액이 EUR 49,407억에 도달하였다 (전년 동월 대비 41% 증가). IRS 거래량은 전년 대비 90% 증가하였고, OIS 잔액은 50% 증가하였다. 신규 참가기관에는 EU 및 비EU 기관이 모두 포함된다.
+
+주요 이정표: 유럽안정메커니즘(European Stability Mechanism, ESM)이 금리스왑의 자발적 청산을 위해 Eurex Clearing을 선정하였다.
+
+Sources: [Eurex Full Year 2025](https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494); [Eurex OTC Momentum](https://www.eurex.com/ex-en/find/news-center/news/clearing-otc-ird-momentum-grows-with-new-participants-4725500); [ESM Selection](https://www.eurex.com/ex-en/find/news-center/news/European-Stability-Mechanism-selects-Eurex-Clearing-for-voluntary-clearing-of-interest-rate-swaps--4441824)
+
+### 9.5 Eurex Repo F7 플랫폼 (Eurex Repo F7 Platform)
+
+- **F7**은 BaFin의 감독을 받는 다자간거래시설(Multilateral Trading Facility, MTF)로 운영되는 Eurex Repo의 웹 기반 매매 시스템
+- 전자거래, CCP 청산, 담보 관리, 결제를 통합한 시장
+- F7 Release 4.3 (2025년 4월): FIX 업그레이드 및 선택적 API 업그레이드
+- F7 Release 4.4 (2025년 9월 시뮬레이션): 필수 API 업데이트를 포함한 FIX 업그레이드
+- 추가 인프라 개선을 포함한 2026년 릴리스 일정 발표
+- 레포 사상 최대 거래량: 2025년 평균 잔존기간 조정 거래량 EUR 4,061억 (전년 대비 +20%)
+
+Source: [Eurex Repo F7](https://www.eurex.com/ex-en/support/f7); [F7 Release Schedule 2026](https://www.eurex.com/ex-en/markets/eurex-repo/repo-circulars/Eurex-Repo-Readiness-Newsflash-Eurex-Repo-F7-Release-schedule-for-2026-4827004)
+
+### 9.6 지속가능성 파생상품 청산 (Sustainability Derivatives Clearing)
+
+Eurex는 확대되는 ESG/지속가능성 파생상품을 청산하고 있다:
+
+| 지표 | 2025년 1분기 데이터 |
+|------|-------------------|
+| ESG 지수 파생상품 총 명목금액 | EUR 300억 초과 (2025년 1분기, 분기 기준 사상 최고) |
+| 최초 EUR 200억 달성 | 2025년 3월 (EUR 201억) |
+| EURO STOXX 50 ESG Options (OSSX) | 명목금액 EUR 16억 (2025년 1분기, 전년 동기 대비 +38.1%) |
+| Bloomberg MSCI Euro Corporate SRI Futures (FECX) | 명목금액 EUR 138억 (2025년 1분기) |
+| 상품 범위 | 글로벌, 유럽, 지역 벤치마크의 지속가능 버전으로 ESG-X, SRI, CTB, PAB 방법론 적용 |
+
+Source: [Eurex ESG Index Derivatives Q1 2025](https://www.eurex.com/ex-en/find/news-center/news/ESG-Index-Derivatives-Development-Update-Q1-2025-4265764)
+
+### 9.7 EMIR 3.0 영향 및 활성 계좌 요건 (EMIR 3.0 Implications & Active Account Requirement)
+
+EMIR 3.0 (Regulation (EU) 2024/2987)은 **활성 계좌 요건(Active Account Requirement, AAR)**을 도입하였다 -- 이는 Eurex Clearing에 직접적으로 유리한 중요한 규제 변화이다:
+
+| 측면 | 세부 내용 |
+|------|----------|
+| 시행일 | 활성 계좌 유지 의무: 2025년 6월 24일 |
+| RTS 시행 | 2026년 2월 26일 |
+| 대상 상품 | EUR 및 PLN 표시 OTC IRD; Euro STIR (유리보 및 eSTR 선물) |
+| 준수 대상 | IRD 청산 기준을 초과하는 EU 시장참가자 |
+| 요건 | 상시 기능: IT 연결, 내부 절차, 법적 문서, EU CCP에서의 현금/담보 계좌 |
+| 최초 보고 | 2026년 7월 말 |
+| Eurex의 지위 | 포괄적 장내 및 OTC IRD 청산을 제공하는 유일한 EU 기반 CCP로서 주요 수혜자 |
+| 인센티브 | CCP Switch Incentive Program: 전환일 booking 수수료 50% 할인 (2026년 3월 31일까지); 시장참가자 교육을 위한 Eurex Focus Days |
+
+Source: [Eurex EMIR 3.0](https://www.eurex.com/ec-en/rules-regs/emir3-0); [ESMA EMIR 3 AAR Final Report](https://www.esma.europa.eu/sites/default/files/2025-06/ESMA91-1505572268-4201_Final_Report_on_EMIR_3_Active_Account_Requirement.pdf)
+
+### 9.8 DLT 기반 담보 유동화 (DLT-Enabled Collateral Mobilisation)
+
+2025년 7월, Eurex Clearing은 **전 세계 CCP 최초로** DLT 기반 담보 유동화 서비스를 출범하였다:
+- **HQLAx** (분산원장기술) 및 **Clearstream** (결제 인프라)과의 파트너십으로 개발
+- 담보 자산의 물리적 소재지로 인한 운영 마찰 해소
+- **J.P. Morgan**이 시범 청산회원으로 계획
+- 분산원장 상에서 물리적 결제 없이 담보 소유권 기록을 이동, 시간 및 비용 절감
+
+Source: [Eurex DLT Collateral](https://www.eurex.com/ex-en/find/news-center/news/Eurex-Clearing-paving-the-way-for-digital-collateral-mobilization-4265674); [HQLAx Announcement](https://www.hqla-x.com/post/eurex-clearing-collaborates-with-hqlax-on-digital-collateral-mobilization)
+
+### 9.9 Prisma Bonds 확대 (Prisma Bonds Extension)
+
+2025년 12월 8일(의무 적용)부터 Eurex Clearing은 Prisma 방법론을 **채권 및 레포** (Prisma Bonds)로 확대하였다:
+- 대상 채권 및 레포에 대한 기존 Risk-Based Margining (RBM) 방식 대체
+- 후향적 및 개선된 전향적 증거금 요소 통합
+- 채권 담보 헤어컷(haircut)에도 개선된 방법론 적용
+- ESMA 및 BaFin의 규제 승인을 2025년 6월 3일 획득
+
+Source: [Eurex Prisma Bonds Circular](https://www.eurex.com/ec-en/find/circulars/clearing-circular-4609908)
+
+---
+
+## 부록: KRX 청산과의 비교 (Appendix: Comparison with KRX Clearing)
+
+| 특성 | Eurex Clearing | KRX (한국거래소, CCP) |
+|------|---------------|---------------------|
+| 법적 구조 | 독립 법인 (Eurex Clearing AG), 거래소의 자회사 | KRX 자체가 CCP 역할 수행; 한국예탁결제원(KSD)이 CSD |
+| 증거금 방법론 | Prisma (필터링된 과거 시뮬레이션, 포트폴리오 기반) | KOSPI 200 옵션: SPAN 유사; 선물: SPAN; KTB 선물: SPAN |
+| 교차증거금 | 예 (장내 채권 및 OTC IRS, 최대 70% 절감) | 상품군 간 제한적 교차증거금 |
+| OTC 청산 | 예 (IRS, FX NDF) | 예 (2014년부터 KRX OTC IRS 청산) |
+| 공동기금 구조 | 전 자산군 포괄 단일 합동 기금, Cover-2 기준 | 시장별 별도 손해배상공동기금 |
+| 결제 CSD | Clearstream Europe AG / T2S | 한국예탁결제원 (KSD) |
+
+---
+
+*본 문서는 글로벌 거래소 조사 프로젝트 -- 청산결제 도메인의 일부이다.*
+*문의 또는 업데이트 사항은 프로젝트 CLAUDE.md 지침을 참조한다.*

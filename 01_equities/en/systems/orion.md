@@ -1,0 +1,427 @@
+# Orion Trading Platform -- Cash (OTP-C) — HKEX
+
+> **Last Updated:** 2026-04-06
+> **System Category:** Trading System
+
+---
+
+## 1. System Overview
+
+| Item | Details |
+|------|---------|
+| System Name | Orion Trading Platform -- Securities Market (OTP-C) |
+| Operated By | Hong Kong Exchanges and Clearing Limited (HKEX) |
+| Purpose | Core matching engine and order processing platform for the HKEX securities (cash equities) market, handling order routing, matching, and execution for all securities listed on the Stock Exchange of Hong Kong (SEHK) |
+| Launch Year | 5 February 2018 |
+| Current Version | OTP-C with Orion Central Gateway (OCG-C) since September 2021 |
+| Vendor / In-house | In-house (developed by HKEX technology teams as part of the "Orion Technology Initiatives") |
+
+OTP-C is the current-generation securities trading platform operated by HKEX, replacing the legacy AMS/3.8 system. It is part of a broader technology transformation program known as the "Orion Technology Initiatives," which aims to modernize HKEX's entire market infrastructure across trading, market data, and connectivity. The platform is described as "a scalable high performance system based on open systems technology" designed to support new business functionalities and meet capacity requirements for the next decade.
+
+OTP-C initially supported up to 60,000 order transactions per second at launch -- a 100% increase over AMS/3.8's capacity of 30,000 orders per second -- with scope for further increases.
+
+[Source: HKEX, "HKEX Sets Launch Date for New Securities Trading System", 23 January 2018, https://www.hkex.com.hk/News/Market-Communications/2018/180123news?sc_lang=en]
+[Source: HKEX, "OTP-C System Overview", https://www.hkex.com.hk/Services/Trading/Securities/Infrastructure/Overview?sc_lang=en, accessed 2026-04-06]
+
+### System Evolution
+
+| Period | System Name | Key Changes |
+|--------|-------------|-------------|
+| November 1993 | AMS/1 (Automatic Order Matching and Execution System) | First electronic trading system; replaced open-outcry trading on the exchange floor |
+| January 1996 | AMS/2 | Upgraded matching system |
+| October 2000 | AMS/3 | Third-generation system; developed by PCCW Solutions; introduced Order Routing System, Multi-Workstation System, and real-time trading network |
+| ~2005--2011 | AMS/3.5 | Incremental upgrade; average latency ~150 milliseconds |
+| December 2011 | AMS/3.8 | Major upgrade; latency reduced to ~1.4 milliseconds (target was 2 ms); ~70x faster than AMS/3.5; capacity 30,000 orders/sec scalable to 150,000 orders/sec |
+| 5 February 2018 | OTP-C (Orion Trading Platform -- Securities Market) | Replaced AMS/3.8; in-house developed; 60,000 orders/sec; open systems architecture; SDNet/3 backbone network |
+| 27 September 2021 | OCG-C (Orion Central Gateway -- Securities Market) | New centralized order gateway replacing vendor-supplied gateway; fully integrated with OTP-C; improved performance and reduced latency; supports Binary and FIX protocols |
+| 19 June 2023 | HKD-RMB Dual Counter Model | OTP-C enhanced to support dual-counter trading and settlement in HKD and RMB |
+
+[Source: The TRADE, "New HKEx platform beats latency expectations", http://www.thetradenews.com/new-hkex-platform-beats-latency-expectations/]
+[Source: Wikipedia, "Hong Kong Stock Exchange", https://en.wikipedia.org/wiki/Hong_Kong_Stock_Exchange, accessed 2026-04-06]
+[Source: HKEX, "HKEX Launches Orion Central Gateway -- Securities Market", September 2021, https://www.hkex.com.hk/Global/Exchange/FAQ/Securities-Market/Trading/Orion-Central-Gateway-Securities-Market-(OCGC)?sc_lang=en]
+
+---
+
+## 2. Architecture
+
+### 2.1 High-Level Design
+
+- **Deployment model:** On-premise, purpose-built data center at Tseung Kwan O (TKO) Industrial Estate, Hong Kong
+- **Topology:** Centralized matching engine with centralized gateway access (OCG-C) via SDNet/3 network
+- **Design pattern:** High-performance, event-driven order processing; open systems technology architecture
+- **Scope:** Single platform serving all SEHK-listed securities (Main Board and GEM), including equities, ETFs, REITs, warrants, CBBCs, and debt securities
+
+OTP-C employs a centralized architecture where all order flow is routed through the Orion Central Gateway (OCG-C) to the matching engine. The system is designed around open systems technology for flexibility and scalability. The network backbone (SDNet/3) provides dedicated, partitioned connectivity separating trading traffic from clearing and market data traffic.
+
+[Source: HKEX, "HKEX Orion Trading Platform Overview" (PDF), https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Infrastructure/Orion-Trading-Platform-Securities-Market-OTP-C/OTPC/HKEX_Orion_Trading_Platform_Overview.pdf]
+
+### 2.2 Core Components
+
+| Component | Function | Technology |
+|-----------|----------|------------|
+| OTP-C Matching Engine | Central order book management, price-time priority matching, auction processing (opening, closing CAS, VCM cooldown), order validation and price checks | In-house developed; open systems technology; processes up to 60,000 orders/sec at launch |
+| Orion Central Gateway -- Securities Market (OCG-C) | Centralized order entry gateway; session management; throttle enforcement; protocol translation (Binary and FIX); replaced vendor-supplied gateway in September 2021 | In-house developed; supports Binary and FIX 5.0 SP2-based protocols; TCP/IP; max 500 messages/sec per session |
+| Orion Market Data Platform -- Securities Market (OMD-C) | Real-time market data dissemination for all SEHK-listed securities; full depth-of-book and trade data | Binary multicast protocol over UDP/IP; dual-channel redundancy (Channel A / Channel B); max packet size 1,500 bytes |
+| Risk / Pre-trade Controls | Order price validation (9x nominal price deviation check); throttle rate enforcement; self-match prevention (SMP) | Integrated into OCG-C and OTP-C; configurable throttle behavior |
+| Surveillance | Market surveillance for detecting manipulation, insider trading, and abnormal trading patterns | Operated by HKEX; details not publicly disclosed |
+| Volatility Control Mechanism (VCM) Engine | Dynamic price band monitoring; triggers 5-minute cooling-off period when price deviates beyond threshold | Integrated into OTP-C; reference price updated every 1 minute; triggers at +/-10% for securities |
+| Closing Auction Session (CAS) Engine | Manages end-of-day price discovery via structured auction with reference price fixing, order input, no-cancellation, and random closing periods | Integrated into OTP-C; reference price calculated as median of 5 snapshots from 15:59:00 at 15-second intervals |
+
+### 2.3 Technology Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Programming Language | Not publicly disclosed; industry inference suggests C/C++ for matching engine [unverified] |
+| Operating System | Linux-based (implied by "open systems technology") [unverified] |
+| Hardware | Commodity server hardware; no confirmed use of FPGA acceleration [unverified] |
+| Network | SDNet/3 backbone (dedicated optical Ethernet); lower latency and higher bandwidth than predecessor SDNet/2; improved partitioning capabilities; 1 Gbps physical circuit speed for SDNet/2 connections |
+| Database | Not publicly disclosed |
+| Messaging/Middleware | Binary multicast UDP/IP for market data (OMD-C); TCP/IP for order entry (OCG-C); dual-path redundancy for market data |
+| Byte Order | Little Endian for OMD-C binary protocol fields [unverified for OCG-C] |
+
+[Source: HKEX, "OCG-C Connectivity Guide v3.0", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Infrastructure/OCGC/HKEX_OCGC_Connectivity_Guide-(v3,-d-,0)-(20210917)-(clean).pdf]
+[Source: HKEX, "OMD-C Binary Interface Specifications v1.39b", https://www.hkex.com.hk/eng/prod/dataprod/Documents/HKEX_OMD-C_Binary_Interface_Specifications_v1.39b.pdf]
+
+---
+
+## 3. Performance Specifications
+
+| Metric | Value | Conditions |
+|--------|-------|------------|
+| Order Processing Capacity | 60,000 orders/second (at launch) | Initial design capacity; 100% increase over AMS/3.8; scalable for further increases |
+| AMS/3.8 Capacity (predecessor) | 30,000 orders/second | Scalable to 150,000 orders/sec |
+| Round-trip Latency (OTP-C) | Sub-millisecond [unverified] | HKEX has not published specific microsecond-level latency figures for OTP-C; industry reports suggest significant improvement over AMS/3.8 |
+| Round-trip Latency (AMS/3.8) | ~1.4 milliseconds (average on first day); ~2 milliseconds (typical) | Measured December 2011; target was 2 milliseconds |
+| Round-trip Latency (AMS/3.5) | ~150 milliseconds | Pre-AMS/3.8 |
+| OCG-C Session Throttle Rate | 500 messages/second (max per session) | 1 throttle unit = 2 messages/sec; max 250 units per session |
+| Network Availability SLA (SDNet/2) | 99.999% | Per HKEX SDNet/2 operating requirements |
+| Daily Trading Capacity | Not publicly disclosed | System designed for "next decade" capacity requirements |
+| Uptime | Near 100% target [unverified] | HKEX operates under SFC regulatory oversight; specific SLA not publicly disclosed |
+
+**Notes:**
+- HKEX does not publicly disclose specific microsecond-level latency metrics for OTP-C, unlike some Western exchanges (e.g., NYSE publishes per-venue percentile latency). The sub-millisecond claim is based on the significant architectural improvement over AMS/3.8 (1.4 ms) and industry reporting that OTP-C "beats latency expectations."
+- The OCG-C gateway (launched September 2021) further reduced latency compared to the vendor-supplied gateway it replaced, though specific figures are not published.
+
+### Performance History
+
+| Year | System | Latency | Throughput | Notes |
+|------|--------|---------|------------|-------|
+| 1993 | AMS/1 | Not available | Not available | First electronic system |
+| 2000 | AMS/3 | Not available | Not available | Third-generation |
+| ~2005 | AMS/3.5 | ~150 milliseconds | Not available | Pre-upgrade baseline |
+| 2011 | AMS/3.8 | ~1.4 ms (avg) / ~2 ms (typical) | 30,000 orders/sec | 70x latency reduction vs AMS/3.5; 10x capacity increase |
+| 2018 | OTP-C | Sub-millisecond [unverified] | 60,000 orders/sec | 100% capacity increase vs AMS/3.8; in-house platform |
+| 2021 | OTP-C + OCG-C | Further improved [unverified] | 60,000+ orders/sec | New in-house gateway replacing vendor-supplied gateway |
+
+[Source: The TRADE, "New HKEx platform beats latency expectations", http://www.thetradenews.com/new-hkex-platform-beats-latency-expectations/]
+[Source: HKEX, "HKEX Sets Launch Date for New Securities Trading System", January 2018, https://www.hkex.com.hk/News/Market-Communications/2018/180123news?sc_lang=en]
+[Source: HKEX, "Explanatory Note -- OCG-C Throttle Rate", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Rules-and-Forms-and-Fees/Forms/Securities-(Hong-Kong)/Trading/Operations/Throttle-Rate/Explanatory-Note_OCG-Throttle-Rate.pdf]
+
+---
+
+## 4. Interfaces & Protocols
+
+### 4.1 Order Entry -- Orion Central Gateway (OCG-C)
+
+| Protocol | Version | Description |
+|----------|---------|-------------|
+| OCG-C Binary Trading Protocol | v3.1+ | Lowest-latency order entry; fixed-length binary messages; TCP/IP stream-based; supports all SEHK order types; heartbeat interval 20 seconds; inactivity detection after 3 heartbeat intervals |
+| OCG-C FIX Trading Protocol | FIX 5.0 SP2-based | Standard FIX protocol with HKEX extensions; broader compatibility with existing BSS infrastructure; slightly higher latency than Binary |
+| BSS (Broker Supplied System) | N/A | Exchange Participants connect their proprietary or vendor-supplied order management systems (BSS) to OCG-C; each BSS connects via one or more OCG-C sessions from pre-registered IP addresses |
+
+**Session Architecture:**
+- Each EP subscribes to one or more OCG-C sessions
+- A session supports either Binary or FIX protocol (not both simultaneously)
+- Sessions connect from pre-registered IP addresses; one IP can be registered for multiple sessions
+- Each session has a configurable throttle rate (max 250 units x 2 msg/sec = 500 msg/sec)
+- CompID of OCG-C is "HKEXCO" (used as TargetCompID for client messages, SenderCompID for OCG-C messages)
+- Two physical routers provide network redundancy; HKEX recommends fully redundant SDNet connections from both routers
+- EPs direct BSS traffic to a virtual gateway IP at the SDNet EP connection
+
+**Self-Match Prevention (SMP):**
+- Configurable per session to prevent self-trades within an EP's order flow
+- Supported on both Binary and FIX protocols
+
+[Source: HKEX, "OCG-C Binary Trading Interface Specifications v3.1", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Infrastructure/OCGC/HKEX_OCGC_Binary_Trading_Interface_Specifications_v3_1-(20210923)-(clean).pdf]
+[Source: HKEX, "OCG-C FIX Trading Interface Specifications", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Overview/Trading-Mechanism/Self-Match-Prevention/Interface-Specifications-HKEX-OCGC-FIX-Trading-Protocol-(version-3,-d-,2)-(Markedup).pdf]
+
+### 4.2 Market Data Dissemination -- Orion Market Data Platform (OMD-C)
+
+| Feed | Protocol | Description | Data Content |
+|------|----------|-------------|-------------|
+| OMD-C Securities Market Feed | Binary multicast UDP/IP | Real-time market data for all SEHK-listed securities | Full depth-of-book, trades, auction data, index data, broker queue, reference data |
+| OMD-CC (China Connect Securities) | Binary multicast UDP/IP | Market data for China Connect eligible securities | Northbound/Southbound security data |
+
+**OMD-C Architecture:**
+- Messages published via IP multicast over UDP transport protocol (one-to-many)
+- Dual-channel redundancy: messages duplicated and sent over two separate multicast channels to mitigate packet loss
+- Multicast packets contain a common header followed by zero or more messages laid out sequentially (no gaps)
+- Maximum packet size: 1,500 bytes; packets contain only complete messages
+- Packet header includes: total packet length, number of messages, sequence number of first message, send timestamp
+- Each multicast channel maintains its own session limited to one business day
+- Message sequence numbers are strictly increasing and unique within a channel per session
+- TCP-based retransmission/recovery mechanism available for missed messages
+
+**OMD-C Data Content:**
+- Securities market data: nominal prices, order book depth, trades, broker queue
+- Index data: real-time index values for Hang Seng family of indices
+- Reference data: security master, trading parameters
+- Market status and trading session information
+
+[Source: HKEX, "OMD-C Binary Interface Specifications v1.39b", https://www.hkex.com.hk/eng/prod/dataprod/Documents/HKEX_OMD-C_Binary_Interface_Specifications_v1.39b.pdf]
+[Source: HKEX, "OMD-C Connectivity Guide -- Securities Market & Index Datafeed v2.7", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Market-Data-Services/Infrastructure/HKEX-Orion-Market-Data-Platform-Securities-Market-OMD-C/OMDC_Connectivity_Guide_Securities_Market-_Index_datafeed_v2_7.pdf]
+[Source: HKEX, "OMD-C Developers Guide v1.14", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Market-Data-Services/Infrastructure/HKEX-Orion-Market-Data-Platform-Securities-Market-OMD-C/HKEX_OMDC_Developers_Guide_1_14.pdf]
+
+### 4.3 Drop Copy
+
+- Drop copy sessions available through both OCG-C Binary and FIX protocols
+- Dedicated Drop Copy protocol specifications published by HKEX
+- Provides real-time copy of trade executions and order status updates to a separate session
+- Used for compliance, risk management, and back-office reconciliation
+
+[Source: HKEX, "OCG-C FIX Drop Copy Interface Specifications v3.1", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Infrastructure/OCGC/HKEX_OCGC_FIX_Drop_Copy_Interface_Specifications_v3_1-(20210923)-(clean).pdf]
+[Source: HKEX, "OCG-C Binary Drop Copy Interface Specifications", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Overview/Trading-Mechanism/Self-Match-Prevention/Interface-Specifications-HKEX-OCGC-Binary-Drop-Copy-Protocol-(version-3,-d-,2)-(Markedup-Version).pdf]
+
+### 4.4 Network Connectivity -- SDNet/2 and SDNet/3
+
+| Aspect | SDNet/2 | SDNet/3 |
+|--------|---------|---------|
+| Purpose | Integrated optical Ethernet network for HKEX trading, clearing, settlement, and market data | Next-generation backbone network for OTP-C trading traffic |
+| Physical Speed | 1 Gbps | Higher bandwidth than SDNet/2 [specific speed not publicly disclosed] |
+| Availability | 99.999% | 99.999%+ [unverified] |
+| Latency | Baseline | Lower latency than SDNet/2 |
+| Operated By | Multiple Accredited Vendors (carriers meeting HKEX technical/commercial requirements) | WTT (appointed July 2018 to design, build, operate, and maintain) |
+| Partitioning | Shared across trading and clearing | Improved partitioning -- separation of trading traffic from other services |
+
+**Colocation / Hosting Services:**
+- HKEX offers hosting (colocation) services at its purpose-built data center at Tseung Kwan O Industrial Estate
+- Low-latency co-location with direct access to HKEX core matching systems
+- Ecosystem includes exchange participants, technology service providers, information vendors, and network service providers
+- Clients provide their own routers to connect to the HKEX network within the hosting facility
+
+[Source: HKEX, "SDNet/2", https://www.hkex.com.hk/services/connectivity/sdnet_2?sc_lang=en]
+[Source: BusinessWire, "WTT Is Appointed to Design, Build, Operate and Maintain the Network Infrastructure Of OTP-C", July 2018, https://www.businesswire.com/news/home/20180726006084/en/]
+[Source: HKEX, "Hosting Services", https://www.hkex.com.hk/Services/Connectivity/Hosting-Services?sc_lang=en]
+
+---
+
+## 5. Resilience & Business Continuity
+
+### 5.1 Redundancy
+
+- **Network redundancy:** Two physical routers at the SDNet/2 EP connection provide network isolation and failover; HKEX recommends dual-circuit connections utilizing both routers
+- **Gateway redundancy:** EPs can subscribe to multiple OCG-C sessions and distribute order flow; sessions can connect from multiple pre-registered IP addresses
+- **Market data redundancy:** OMD-C publishes on dual multicast channels (Channel A and Channel B); clients should subscribe to both and arbitrate to handle packet loss
+- **Power redundancy:** HKEX data center at Tseung Kwan O meets Tier 4 data center specifications, implying 2N power redundancy and fault tolerance [unverified specific configuration]
+
+### 5.2 Primary Data Center
+
+| Specification | Details |
+|---------------|---------|
+| Location | Tseung Kwan O (TKO) Industrial Estate, New Territories, Hong Kong |
+| Facility | Purpose-built, state-of-the-art data center; owned and operated by HKEX |
+| Opened | January 2013 |
+| Total Floor Area | 31,400 square meters |
+| Rack Capacity | Up to 1,200 racks |
+| Design Standard | Tier 4 Data Centre Specification |
+| Colocation | Available to exchange participants and authorized market participants |
+
+[Source: HKEX, "HKEx Opens New State-of-the-Art Data Centre in Tseung Kwan O", January 2013, https://www.hkex.com.hk/News/News-Release/2013/130131news?sc_lang=en]
+[Source: Baxtel, "HKEX Data Center", https://baxtel.com/data-center/hkex-data-center]
+
+### 5.3 Disaster Recovery
+
+| Aspect | Details |
+|--------|---------|
+| DR Site | Not publicly disclosed in detail; industry assumption is a geographically separated facility within Hong Kong [unverified] |
+| DR Model | Not publicly disclosed; likely active/standby given centralized architecture [unverified] |
+| Failover Time | Not publicly disclosed |
+| RPO / RTO | Not publicly disclosed |
+| DR Testing | Conducted periodically; HKEX performs regular contingency drills with exchange participants [unverified frequency] |
+
+**Notes:**
+- HKEX is less transparent than some Western exchanges (e.g., NYSE) about DR site locations and failover mechanisms
+- The Tseung Kwan O area hosts multiple Tier 3/4 data centers (Telehouse, HKT SkyExchange, Equinix) that could serve as DR or business continuity sites
+- Telehouse Hong Kong CCC, located near HKEX data center, is the only Tier 4 certified data center in Hong Kong and offers DR and business continuity services to financial firms
+
+### 5.4 Capacity Management
+
+- OCG-C throttle rate system manages per-session throughput: 1 unit = 2 msg/sec, max 250 units = 500 msg/sec per session
+- EPs can apply for additional throttle units based on business justification
+- Market data distributed across multiple multicast channels for bandwidth management
+- System designed with headroom for capacity scaling beyond initial 60,000 orders/sec
+
+---
+
+## 6. Notable Technical Features
+
+### 6.1 Stock Connect Support (Northbound and Southbound)
+
+OTP-C is tightly integrated with HKEX's Stock Connect infrastructure, supporting the landmark mutual market access program between Hong Kong and Mainland China:
+
+- **Southbound Trading:** Mainland Chinese investors trade SEHK-listed securities through the Shenzhen-Hong Kong and Shanghai-Hong Kong Stock Connect links; orders processed by OTP-C
+- **Northbound Trading:** Hong Kong and international investors trade SSE/SZSE-listed A-shares via the China Connect Central Gateway (CCCG), which connects to OTP-CSC (Orion Trading Platform -- China Stock Connect)
+- **CCCG:** Centralized, highly resilient, low-latency gateway for northbound trading; supports Binary and FIX protocols; dual-circuit connection required
+- **OTP-CSC:** Dedicated Orion platform for China Stock Connect order routing and matching coordination with Mainland exchanges
+
+Stock Connect processed an expanding volume of cross-border trades, and the technical infrastructure has been continuously enhanced to handle growing demand and new features (e.g., Northbound Investor ID model, expanded eligible stocks).
+
+[Source: HKEX, "Stock Connect", https://www.hkex.com.hk/Mutual-Market/Stock-Connect?sc_lang=en]
+[Source: HKEX, "CCCG FIX Trading Interface Specifications", https://www.hkex.com.hk/-/media/HKEX-Market/Mutual-Market/Stock-Connect/Reference-Materials/Northbound-Investor-ID-Model/HKEx_CCCG_FIX_Trading_Interface_Specifications_v1_3-(tracked_changes).pdf]
+[Source: HKEX, "OTP-CSC Information Paper", https://www.hkex.com.hk/-/media/HKEX-Market/Mutual-Market/Stock-Connect/Reference-Materials/Technical-Documents/OTP-CSC/OTPCSC_Information_Paper_e.pdf]
+
+### 6.2 Volatility Control Mechanism (VCM) Integration
+
+The VCM is a market-wide circuit breaker mechanism integrated directly into OTP-C:
+
+- **Scope:** Applies to Hang Seng Index and Hang Seng China Enterprises Index constituents, and other designated securities
+- **Trigger:** Dynamic reference price updated by OTP-C every 1 minute; VCM triggers when a potential trade price deviates +/-10% from the reference price
+- **Cooling-off period:** 5-minute period during which trading continues within the price band; at the end, any remaining orders outside the band are rejected
+- **Exclusions:** VCM monitoring starts at 9:45 AM; excluded from the first 15 minutes and last 15 minutes of each trading session; does not apply during auction sessions
+- **Design purpose:** Safeguards market integrity from extreme price volatility arising from automated/algorithmic trading
+
+[Source: HKEX, "Information Paper -- Volatility Control Mechanism in Hong Kong's Securities Market", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Overview/Trading-Mechanism/Trading-Mechanism-for-VCM_E.pdf]
+
+### 6.3 Closing Auction Session (CAS) Support
+
+OTP-C implements a structured closing auction mechanism:
+
+- **Duration:** Approximately 8--10 minutes (16:00--16:08/16:10)
+- **Phases:** Reference Price Fixing Period, Order Input Period, No-Cancellation Period, Random Closing Period
+- **Reference price calculation:** Median of 5 snapshot nominal prices taken from 15:59:00 at 15-second intervals
+- **Order types:** At-auction orders and at-auction limit orders accepted
+- **Price controls:** Built into the auction design to prevent manipulation
+
+[Source: HKEX, "Trading Mechanism of Closing Auction Session (CAS) in the Securities Market", https://www.hkex.com.hk/eng/market/sec_tradinfra/vcm_cas/Documents/Trading%20Mechanism%20of%20the%20CAS%20in%20the%20Securities%20Market.pdf]
+[Source: HKEX, "CAS FAQ", https://www.hkex.com.hk/Global/Exchange/FAQ/Securities-Market/Trading/CAS?sc_lang=en]
+
+### 6.4 Multi-Currency Trading (HKD-RMB Dual Counter Model)
+
+OTP-C supports the HKD-RMB Dual Counter Model, launched 19 June 2023:
+
+- Selected securities can be traded and settled in either HKD or RMB under different stock codes
+- All shares from multiple currency tranches are of the same class with identical shareholder rights
+- OTP-C performs order-level validation against the parameters of each specific counter (currency)
+- Price deviation checks (9x nominal price) applied at the individual counter level
+- Single tranche multiple counter (STMC) settlement enhancement implemented in first half of 2025, consolidating settlement across currency counters
+- Securities can also be listed with USD counters (primarily for ETFs)
+
+[Source: HKEX, "HKD-RMB Dual Counter Model", https://www.hkex.com.hk/Services/Trading/Securities/Overview/Trading-Mechanism/HKD-RMB-Dual-Counter-Model?sc_lang=en]
+[Source: HKEX, "HKD-RMB Dual Counter Model, Explained", https://www.hkexgroup.com/Media-Centre/Insight/Insight/2023/HKEX-Insight/HKD-RMB-Dual-Counter-Model-Explained?sc_lang=en]
+
+### 6.5 Orion Platform Ecosystem
+
+OTP-C is part of a broader "Orion" technology ecosystem at HKEX:
+
+| Platform | Market | Status |
+|----------|--------|--------|
+| OTP-C | Securities (cash equities) | Live since February 2018 |
+| OCG-C | Securities order gateway | Live since September 2021 |
+| OMD-C | Securities market data | Live |
+| OTP-CSC | China Stock Connect (northbound) | Live |
+| CCCG | China Connect Central Gateway | Live |
+| OMD-CC | China Connect market data | Live |
+| ODP (Orion Derivatives Platform) | Derivatives (futures and options) | Under development; expected launch 2028 |
+| OMD-D | Derivatives market data | Live |
+
+HKEX announced the Orion Derivatives Platform (ODP) in April 2024 as a proprietary, in-house built platform to replace the current HKATS (based on Nasdaq technology). This signals HKEX's strategic direction toward full technology independence across all asset classes.
+
+[Source: HKEX, "HKEX to Develop Orion Derivatives Platform", April 2024, https://www.hkexgroup.com/Media-Centre/News-Release/HKEX-Group/2024/240418news?sc_lang=en]
+
+---
+
+## 7. Comparison Notes
+
+### vs. KRX Exture+
+
+| Aspect | HKEX OTP-C | KRX Exture+ |
+|--------|-----------|-------------|
+| Launch Year | February 2018 (matching engine); September 2021 (OCG-C gateway) | 2014 |
+| Developer | In-house (HKEX technology teams) | In-house (KRX with Koscom subsidiary) |
+| Predecessor | AMS/3.8 (vendor-developed) | EXTURE (2009) |
+| Order Capacity | 60,000 orders/sec (at launch; scalable) | ~70,000 [unverified]; designed for scalability |
+| Matching Engine Latency | Sub-millisecond [unverified; specific figures not published] | ~70 microseconds [unverified] |
+| Previous Latency | ~1.4 milliseconds (AMS/3.8) | ~20 milliseconds (EXTURE) |
+| Gateway Session Throughput | 500 messages/sec per session (OCG-C) | Not publicly disclosed at per-session level |
+| Matching Model | Price-time priority | Price-time priority |
+| Order Entry Protocols | Binary + FIX 5.0 SP2-based (via OCG-C) | FIX-based + proprietary API [unverified] |
+| Market Data Protocol | OMD-C: Binary multicast UDP/IP; dual-channel | Proprietary binary [unverified]; Solace PubSub+ messaging middleware |
+| Network Infrastructure | SDNet/3 (dedicated backbone) + SDNet/2 (shared services) | Dedicated network [unverified] |
+| Primary Data Center | Tseung Kwan O, Hong Kong (31,400 sqm; Tier 4; 1,200 racks) | Busan Data Center (primary since 2014 relocation) |
+| DR Site | Not publicly disclosed | Seoul DR site [unverified] |
+| Colocation | Hosting services at TKO data center | Co-location available at Busan [unverified] |
+| Asset Class Coverage | Securities only (separate HKATS for derivatives, migrating to ODP by 2028) | Unified platform: equities, bonds, derivatives (futures/options), ETFs, warrants |
+| Cross-border Trading | Stock Connect (northbound/southbound) via OTP-CSC/CCCG -- unique feature | None (single domestic market) |
+| Multi-currency | HKD, RMB, USD (Dual Counter Model since June 2023) | KRW only |
+| VCM / Circuit Breaker | Dynamic VCM with 1-minute reference price updates; +/-10% trigger; 5-minute cooling-off | Static and dynamic circuit breakers (SIDECAR) |
+| Closing Mechanism | CAS (structured auction: ~8-10 minutes, median-based reference price) | Closing auction (random end) |
+| Regulatory Oversight | Securities and Futures Commission (SFC), Hong Kong | Financial Services Commission (FSC) / Financial Supervisory Service (FSS), Korea |
+| Technology Export | Not exported (though ODP is described as providing competitive advantage) | Exported to multiple countries (Laos, Cambodia, others) |
+
+### Key Differentiators
+
+**HKEX OTP-C Strengths:**
+1. **Stock Connect integration:** Unique cross-border mutual market access with Mainland China; technical infrastructure (CCCG, OTP-CSC) purpose-built for this use case -- no other exchange has equivalent
+2. **Multi-currency trading:** HKD-RMB Dual Counter Model enables same securities to trade in multiple currencies, supporting Hong Kong's role as an offshore RMB center
+3. **Orion ecosystem approach:** Unified "Orion" brand across trading, gateway, and market data platforms with consistent architecture
+4. **Tier 4 data center:** Purpose-built facility at Tseung Kwan O with 1,200-rack capacity and Tier 4 specification
+5. **In-house technology pivot:** Strategic move from vendor-supplied systems (AMS/3.8, HKATS) to fully in-house platforms (OTP-C, OCG-C, upcoming ODP)
+
+**KRX Exture+ Strengths:**
+1. **Lower published latency:** ~70 microseconds matching engine latency vs. HKEX's undisclosed (but likely higher) figures
+2. **Unified asset class coverage:** Single platform handles equities, bonds, and all derivatives -- HKEX still operates separate HKATS for derivatives
+3. **Technology export capability:** Proven exportable platform deployed in multiple countries
+4. **Transparent performance metrics:** KRX publishes more specific latency/throughput data than HKEX
+5. **Simpler market structure:** Single domestic market without cross-border complexity
+
+**Architectural Comparison:**
+- Both exchanges developed their current platforms in-house, reflecting a strategic shift from vendor dependence
+- HKEX's architecture is partitioned by asset class (OTP-C for cash, HKATS/ODP for derivatives) while KRX uses a unified platform -- HKEX is converging toward unification with ODP (2028)
+- HKEX's unique challenge is supporting cross-border trading (Stock Connect) which adds complexity to order routing, risk management, and regulatory compliance
+- Both use binary multicast for market data dissemination; KRX's use of Solace PubSub+ as messaging middleware is a notable differentiator from HKEX's likely custom middleware
+- HKEX's OCG-C gateway throttle (500 msg/sec) is comparable to but lower than NYSE Pillar's (5,000 msg/sec), reflecting different market microstructure and participant density
+- HKEX's lack of published latency metrics makes precise comparison difficult; this opacity may reflect regulatory or competitive considerations unique to the Hong Kong market
+
+---
+
+## Sources
+
+### Official HKEX Documentation
+- [Source: HKEX, "OTP-C System Overview", https://www.hkex.com.hk/Services/Trading/Securities/Infrastructure/Overview?sc_lang=en, accessed 2026-04-06]
+- [Source: HKEX, "HKEX Sets Launch Date for New Securities Trading System", January 2018, https://www.hkex.com.hk/News/Market-Communications/2018/180123news?sc_lang=en, accessed 2026-04-06]
+- [Source: HKEX, "HKEX Orion Trading Platform Overview" (PDF), https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Infrastructure/Orion-Trading-Platform-Securities-Market-OTP-C/OTPC/HKEX_Orion_Trading_Platform_Overview.pdf, accessed 2026-04-06]
+- [Source: HKEX, "OCG-C Connectivity Guide v3.0", September 2021, https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Infrastructure/OCGC/HKEX_OCGC_Connectivity_Guide-(v3,-d-,0)-(20210917)-(clean).pdf, accessed 2026-04-06]
+- [Source: HKEX, "OCG-C Binary Trading Interface Specifications v3.1", September 2021, https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Infrastructure/OCGC/HKEX_OCGC_Binary_Trading_Interface_Specifications_v3_1-(20210923)-(clean).pdf, accessed 2026-04-06]
+- [Source: HKEX, "OCG-C FIX Trading Interface Specifications v3.2", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Overview/Trading-Mechanism/Self-Match-Prevention/Interface-Specifications-HKEX-OCGC-FIX-Trading-Protocol-(version-3,-d-,2)-(Markedup).pdf, accessed 2026-04-06]
+- [Source: HKEX, "OCG-C FIX Drop Copy Interface Specifications v3.1", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Infrastructure/OCGC/HKEX_OCGC_FIX_Drop_Copy_Interface_Specifications_v3_1-(20210923)-(clean).pdf, accessed 2026-04-06]
+- [Source: HKEX, "OCG-C Binary Drop Copy Interface Specifications v3.2", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Overview/Trading-Mechanism/Self-Match-Prevention/Interface-Specifications-HKEX-OCGC-Binary-Drop-Copy-Protocol-(version-3,-d-,2)-(Markedup-Version).pdf, accessed 2026-04-06]
+- [Source: HKEX, "Explanatory Note -- OCG-C Throttle Rate", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Rules-and-Forms-and-Fees/Forms/Securities-(Hong-Kong)/Trading/Operations/Throttle-Rate/Explanatory-Note_OCG-Throttle-Rate.pdf, accessed 2026-04-06]
+- [Source: HKEX, "OMD-C Binary Interface Specifications v1.39b", https://www.hkex.com.hk/eng/prod/dataprod/Documents/HKEX_OMD-C_Binary_Interface_Specifications_v1.39b.pdf, accessed 2026-04-06]
+- [Source: HKEX, "OMD-C Connectivity Guide v2.7", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Market-Data-Services/Infrastructure/HKEX-Orion-Market-Data-Platform-Securities-Market-OMD-C/OMDC_Connectivity_Guide_Securities_Market-_Index_datafeed_v2_7.pdf, accessed 2026-04-06]
+- [Source: HKEX, "OMD-C Developers Guide v1.14", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Market-Data-Services/Infrastructure/HKEX-Orion-Market-Data-Platform-Securities-Market-OMD-C/HKEX_OMDC_Developers_Guide_1_14.pdf, accessed 2026-04-06]
+- [Source: HKEX, "Information Paper -- Volatility Control Mechanism", https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Overview/Trading-Mechanism/Trading-Mechanism-for-VCM_E.pdf, accessed 2026-04-06]
+- [Source: HKEX, "Trading Mechanism of CAS", https://www.hkex.com.hk/eng/market/sec_tradinfra/vcm_cas/Documents/Trading%20Mechanism%20of%20the%20CAS%20in%20the%20Securities%20Market.pdf, accessed 2026-04-06]
+- [Source: HKEX, "HKD-RMB Dual Counter Model", https://www.hkex.com.hk/Services/Trading/Securities/Overview/Trading-Mechanism/HKD-RMB-Dual-Counter-Model?sc_lang=en, accessed 2026-04-06]
+- [Source: HKEX, "HKD-RMB Dual Counter Model, Explained", https://www.hkexgroup.com/Media-Centre/Insight/Insight/2023/HKEX-Insight/HKD-RMB-Dual-Counter-Model-Explained?sc_lang=en, accessed 2026-04-06]
+- [Source: HKEX, "Stock Connect", https://www.hkex.com.hk/Mutual-Market/Stock-Connect?sc_lang=en, accessed 2026-04-06]
+- [Source: HKEX, "OTP-CSC Information Paper", https://www.hkex.com.hk/-/media/HKEX-Market/Mutual-Market/Stock-Connect/Reference-Materials/Technical-Documents/OTP-CSC/OTPCSC_Information_Paper_e.pdf, accessed 2026-04-06]
+- [Source: HKEX, "SDNet/2", https://www.hkex.com.hk/services/connectivity/sdnet_2?sc_lang=en, accessed 2026-04-06]
+- [Source: HKEX, "Hosting Services", https://www.hkex.com.hk/Services/Connectivity/Hosting-Services?sc_lang=en, accessed 2026-04-06]
+- [Source: HKEX, "HKEx Opens New State-of-the-Art Data Centre in Tseung Kwan O", January 2013, https://www.hkex.com.hk/News/News-Release/2013/130131news?sc_lang=en, accessed 2026-04-06]
+- [Source: HKEX, "HKEX to Develop Orion Derivatives Platform", April 2024, https://www.hkexgroup.com/Media-Centre/News-Release/HKEX-Group/2024/240418news?sc_lang=en, accessed 2026-04-06]
+- [Source: HKEX, "OCG-C FAQ", https://www.hkex.com.hk/Global/Exchange/FAQ/Securities-Market/Trading/Orion-Central-Gateway-Securities-Market-(OCGC)?sc_lang=en, accessed 2026-04-06]
+
+### Third-Party Sources
+- [Source: The TRADE, "New HKEx platform beats latency expectations", http://www.thetradenews.com/new-hkex-platform-beats-latency-expectations/, accessed 2026-04-06]
+- [Source: The TRADE, "HKEx trading platform completes right of passage", https://www.thetradenews.com/hkex-trading-platform-completes-right-of-passage/, accessed 2026-04-06]
+- [Source: The TRADE, "HKEx reaches for stars in tech transformation", https://www.thetradenews.com/hkex-reaches-for-stars-in-tech-transformation/, accessed 2026-04-06]
+- [Source: WatersTechnology, "HKEx to Deploy Orion Trading System on February 5", https://www.waterstechnology.com/exchanges-trading-venues/3475316/hkex-to-deploy-orion-trading-system-on-february-5, accessed 2026-04-06]
+- [Source: BusinessWire, "WTT Appointed for OTP-C Network Infrastructure", July 2018, https://www.businesswire.com/news/home/20180726006084/en/, accessed 2026-04-06]
+- [Source: Finextra, "HKEX opens Orion Central Gateway", https://www.finextra.com/pressarticle/89472/hkex-opens-orion-central-gateway, accessed 2026-04-06]
+- [Source: Baxtel, "HKEX Data Center", https://baxtel.com/data-center/hkex-data-center, accessed 2026-04-06]
+- [Source: Wikipedia, "Hong Kong Stock Exchange", https://en.wikipedia.org/wiki/Hong_Kong_Stock_Exchange, accessed 2026-04-06]
+
+### KRX/Exture+ Sources
+- [Source: KRX, "EXTURE+ Trading", https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp, accessed 2026-04-06]
+- [Source: Koscom, "KRX Trading System", https://english.koscom.co.kr/eng/main/contents.do?menuNo=300005, accessed 2026-04-06]
+- [Source: PRWeb/Solace, "Korea Exchange Deploys Solace Systems", October 2013, https://www.prweb.com/releases/2013/10/prweb11191574.htm, accessed 2026-04-06]

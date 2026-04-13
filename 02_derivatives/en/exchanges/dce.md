@@ -1,0 +1,425 @@
+# Dalian Commodity Exchange (DCE)
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Dalian Commodity Exchange (大连商品交易所) |
+| Abbreviation | DCE |
+| Website | http://www.dce.com.cn/DCE/ |
+| Year Established | February 28, 1993; standardized futures trading launched November 18, 1993 |
+| Country / City | China / Dalian, Liaoning Province |
+| Ownership Structure | Non-profit, self-regulatory organization |
+| Parent Company / Group | Independent; operates under supervision of the China Securities Regulatory Commission (CSRC) |
+| Regulatory Authority | China Securities Regulatory Commission (CSRC) |
+| Annual Trading Volume (CY2023) | Approximately 2.5 billion contracts (ranked 9th globally by FIA) |
+| Listed Instruments | 22 futures products, 17 options products (as of 2025) |
+| Key Products | Iron ore futures (flagship international product), soybean meal, corn, palm oil, LLDPE, PP, PVC, ethylene glycol, coking coal, coke, live hog |
+
+[Source: Wikipedia, "Dalian Commodity Exchange", https://en.wikipedia.org/wiki/Dalian_Commodity_Exchange]
+[Source: Baidu Baike, "Dalian Commodity Exchange", https://baike.baidu.com/en/item/Dalian%20Commodity%20Exchange/1442477]
+[Source: FIA, Global Derivatives Volume Rankings, 2023]
+
+### Key Historical Milestones
+
+- **1993 (February 28)**: Dalian Commodity Exchange established
+- **1993 (November 18)**: Standardized futures contract trading officially launched
+- **2004**: Corn futures listed; soybean meal futures become the most actively traded agricultural contract in China
+- **2005**: Dalian Futures Information Technology Co., Ltd. established as a wholly owned subsidiary for IT systems development and maintenance
+- **2007**: LLDPE (Linear Low-Density Polyethylene) futures listed — DCE's first industrial/petrochemical product
+- **2009**: PVC (Polyvinyl Chloride) futures listed
+- **2011**: Coke futures listed
+- **2013 (October 18)**: Iron ore futures listed — becomes the world's largest iron ore derivatives market
+- **2013**: Coking coal futures listed
+- **2014**: PP (Polypropylene) futures listed
+- **2017**: Soybean meal options listed — China's first commodity options product
+- **2018 (May 4)**: Iron ore futures opened to overseas traders — DCE's first internationalized product
+- **2019**: Ethylene glycol futures listed; night trading session expanded to include corn, corn starch, and others
+- **2021 (January 8)**: Live hog futures listed — China's first livestock futures product
+- **2021**: RBD palm olein futures opened to overseas traders (December 22)
+- **2024 (August 23)**: Egg, corn starch, and live hog options listed
+- **2024 (November 18)**: Log futures and options listed
+- **2025 (July 8)**: Benzene futures and options listed
+- **2025 (October)**: Monthly average price futures for LLDPE, PVC, and PP launched; QFI trading access expanded
+
+[Source: Wikipedia, "Dalian Commodity Exchange", https://en.wikipedia.org/wiki/Dalian_Commodity_Exchange]
+[Source: Baidu Baike, "Dalian Commodity Exchange", https://baike.baidu.com/en/item/Dalian%20Commodity%20Exchange/1442477]
+[Source: FIA, "China further expands international access to its commodity markets", https://www.fia.org/marketvoice/articles/china-further-expands-international-access-its-commodity-markets]
+[Source: DCE, "RBD Palm Olein Futures Will Be Open to Overseas Traders from December 22", http://www.dce.com.cn/DCEENMO/Media_Center44/Exchange_News9/6251713/index.html]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+
+| Segment | Key Products | Description |
+|---------|-------------|-------------|
+| **Agricultural Futures** | No.1 Soybean (non-GMO), No.2 Soybean (GMO), Soybean Meal, Soybean Oil, RBD Palm Olein, Corn, Corn Starch, Egg, Live Hog, Log | Agricultural commodity futures; soybean meal is one of the world's most actively traded agricultural contracts |
+| **Petrochemical Futures** | LLDPE, PP, PVC, Ethylene Glycol, Styrene (Ethenylbenzene), Benzene, Liquid Petroleum Gas (LPG) | Plastics and chemical raw materials futures |
+| **Ferrous / Black Materials Futures** | Iron Ore, Coking Coal, Coke | Steelmaking raw materials; iron ore futures is the world's largest iron ore derivatives market |
+| **Agricultural Options** | Soybean Meal Options, Corn Options, Soybean Oil Options, Palm Olein Options, Egg Options, Corn Starch Options, Live Hog Options, Log Options | Options on key agricultural futures |
+| **Industrial Options** | Iron Ore Options, PP Options, PVC Options, LLDPE Options, Ethylene Glycol Options, Styrene Options, Coking Coal Options, Coke Options, LPG Options | Options on industrial and petrochemical futures |
+
+[Source: DCE Official Website, http://www.dce.com.cn/DCE/]
+[Source: Wikipedia, "Dalian Commodity Exchange", https://en.wikipedia.org/wiki/Dalian_Commodity_Exchange]
+
+### 2.2 Trading Sessions
+
+DCE operates in China Standard Time (CST, Beijing Time, UTC+8). All times below are for standard trading days (Monday through Friday).
+
+| Session | Beijing Time (CST) | UTC | Description |
+|---------|-------------------|-----|-------------|
+| **Morning Session I** | 09:00 - 10:15 | 01:00 - 02:15 | First morning trading period |
+| **Morning Session II** | 10:30 - 11:30 | 02:30 - 03:30 | Second morning trading period (15-min break between sessions) |
+| **Afternoon Session** | 13:30 - 15:00 | 05:30 - 07:00 | Afternoon trading period |
+| **Night Session** | 21:00 - 23:00 | 13:00 - 15:00 | Night trading for selected products (same calendar day settlement) |
+
+**Night Session Products:**
+The night session (21:00-23:00 CST) covers a wide range of products including:
+- **Agricultural**: No.1 Soybean, No.2 Soybean, Soybean Meal, Soybean Oil, RBD Palm Olein, Corn, Corn Starch
+- **Petrochemical**: LLDPE, PP, PVC, Ethylene Glycol, Styrene, LPG
+- **Ferrous**: Iron Ore, Coking Coal, Coke
+
+**Note:** Night session trades are included in the next trading day's settlement. The night session does not operate on the evening before a holiday.
+
+[Source: DCE, "DCE Adjusts After-hours Trading Time", http://www.dce.com.cn/DCEENMO/Media_Center44/Exchange_News9/5007478/index.html]
+[Source: Pocket Option, "DCE Trading Hours: Complete Overview", https://pocketoption.com/blog/en/knowledge-base/markets/dce-trading-hours/]
+[Source: TradingHours.com, "DCE Market Hours", https://www.tradinghours.com/markets/dce]
+
+### 2.3 Tick Sizes and Contract Specifications (Selected Products)
+
+| Product | Contract Size | Tick Size | Tick Value | Price Quotation | Delivery |
+|---------|--------------|-----------|------------|-----------------|----------|
+| Iron Ore (I) | 100 tons/lot | 0.5 CNY/ton | CNY 50 | CNY/ton | Physical |
+| Soybean Meal (M) | 10 tons/lot | 1 CNY/ton | CNY 10 | CNY/ton | Physical |
+| Corn (C) | 10 tons/lot | 1 CNY/ton | CNY 10 | CNY/ton | Physical |
+| No.1 Soybean (A) | 10 tons/lot | 1 CNY/ton | CNY 10 | CNY/ton | Physical |
+| Soybean Oil (Y) | 10 tons/lot | 2 CNY/ton | CNY 20 | CNY/ton | Physical |
+| RBD Palm Olein (P) | 10 tons/lot | 2 CNY/ton | CNY 20 | CNY/ton | Physical |
+| LLDPE (L) | 5 tons/lot | 5 CNY/ton | CNY 25 | CNY/ton | Physical |
+| PP (PP) | 5 tons/lot | 1 CNY/ton | CNY 5 | CNY/ton | Physical |
+| PVC (V) | 5 tons/lot | 5 CNY/ton | CNY 25 | CNY/ton | Physical |
+| Ethylene Glycol (EG) | 10 tons/lot | 1 CNY/ton | CNY 10 | CNY/ton | Physical |
+| Styrene (EB) | 5 tons/lot | 1 CNY/ton | CNY 5 | CNY/ton | Physical |
+| Coking Coal (JM) | 60 tons/lot | 0.5 CNY/ton | CNY 30 | CNY/ton | Physical |
+| Coke (J) | 100 tons/lot | 0.5 CNY/ton | CNY 50 | CNY/ton | Physical |
+| Live Hog (LH) | 16 tons/lot | 5 CNY/ton | CNY 80 | CNY/ton | Physical |
+| Egg (JD) | 5 tons/lot | 1 CNY/500kg | CNY 10 | CNY/500kg | Physical |
+
+[Source: DCE Official Website, Contract Specifications, http://www.dce.com.cn/DCE/Products/]
+[Source: Orient Futures Singapore, "DCE Iron Ore Futures", https://www.orientfutures.com.sg/financial-glossary-dce-iron-ore-futures/]
+[Source: KGI World, "DCE Iron Ore Futures", https://www.kgieworld.sg/futures/dce-iron-ore-futures/]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Order Matching
+
+- **Matching Method**: Computerized matching using price-time priority
+- **Priority Rules**: Price priority first (higher bids and lower offers matched first), then time priority (earlier orders at the same price matched first)
+- **Opening/Closing**: Opening and closing prices determined via call auction (aggregate matching); continuous trading via continuous auction during regular sessions
+
+### 3.2 Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Limit Order** | Order to buy or sell at a specified price or better |
+| **Market Order** | Order executed immediately at the best available price; any unfilled portion automatically cancelled |
+| **Market-to-Limit Order** | Submitted as market order; unfilled portion converts to limit order at the last execution price [unverified] |
+
+### 3.3 Price Discovery
+
+- **Call Auction**: Used at the opening of each session; orders accumulated during pre-opening period and matched at a single price that maximizes volume
+- **Continuous Auction**: After opening, incoming orders matched against resting orders on a continuous basis
+- **Settlement Price**: The volume-weighted average price of a contract during the last hour of trading on the trading day (for iron ore and other products)
+
+### 3.4 Spread Trading
+
+- DCE supports calendar spread trading (inter-month spreads) for selected products
+- Spread orders submitted as a single combined order
+
+[Source: DCE, "Trading at DCE", http://www.dce.com.cn/DCEENMO/Education37/Trading_at_DCE40/index.html]
+
+---
+
+## 5. Trading System / Technology
+
+### 5.1 Electronic Trading Platform
+
+DCE operates a fully electronic trading system. Unlike many Western exchanges that historically evolved from open-outcry trading, DCE was established as an electronic exchange from its inception.
+
+| Item | Details |
+|------|---------|
+| System Type | Proprietary electronic trading platform |
+| Technology Subsidiary | Dalian Futures Information Technology Co., Ltd. (established 2005, wholly owned subsidiary) |
+| Architecture | Central matching engine with distributed access gateways |
+| Matching Method | Centralized order matching with price-time priority |
+| Access Protocols | Proprietary API; third-party ISV access available |
+
+### 5.2 System Capabilities
+
+- **Core Trading System**: Handles order entry, matching, and trade reporting for all listed futures and options products
+- **OTC Comprehensive Service Platform**: Supports standard warehouse receipts, non-standard warehouse receipts, swaps, OTC options, and basis trading
+- **Electronic Delivery System**: Provides delivery order registration, management, and settlement services
+- **Risk Management System**: Real-time position monitoring, margin calculation, and forced liquidation execution
+
+### 5.3 Infrastructure
+
+- The Information Technology Department manages the development and operation of trading systems, business systems, internet systems, and office systems
+- Infrastructure includes server rooms, UPS, air conditioning, servers, storage, networks, databases, and information security systems
+- Co-location/proximity hosting services available at the exchange's data center for low-latency access [unverified — specific details]
+
+### 5.4 Disaster Recovery
+
+- DCE maintains business continuity plans with backup systems [unverified — specific DR details not publicly disclosed]
+
+[Source: Baidu Baike, "Dalian Commodity Exchange", https://baike.baidu.com/en/item/Dalian%20Commodity%20Exchange/1442477]
+[Source: DCE, "Technology", http://m.dce.com.cn/DCEENMO/Trading_&_Clearing/Guidelines/Technology/index.html]
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Daily Price Limits
+
+DCE applies daily price limits to all futures contracts, calculated as a percentage of the previous trading day's settlement price. Limits vary by product and may be adjusted during holidays or periods of high volatility.
+
+**Standard Price Limits (Normal Conditions):**
+
+| Product Category | Typical Daily Price Limit | Notes |
+|-----------------|--------------------------|-------|
+| Agricultural (Corn, Soybeans, Soybean Meal, etc.) | ±4% | Of previous settlement price |
+| Soybean Oil, Palm Olein | ±5% | Of previous settlement price |
+| Iron Ore | ±7-8% | Frequently adjusted; raised to ±10-13% during holidays |
+| Coking Coal, Coke | ±6-8% | Frequently adjusted based on volatility |
+| LLDPE, PP, PVC | ±4-5% | Of previous settlement price |
+| Ethylene Glycol, Styrene | ±5% | Of previous settlement price |
+| Live Hog | ±5% | Of previous settlement price |
+| Log | ±6% | First trading day: ±12% of listing benchmark price |
+
+**Expansion Mechanism:**
+- If a futures contract settles at its price limit for consecutive trading days, DCE may expand the price limit range and increase trading margin requirements
+- DCE can also adjust limits on an ad hoc basis before holidays or during periods of extreme market volatility (e.g., iron ore limits raised to ±10-13% with margins at 12-17% during National Day 2024 holidays)
+
+### 8.2 Trading Margin Requirements
+
+DCE requires trading margins as a percentage of contract value. Margins vary by product, contract delivery month proximity, and market conditions.
+
+**Standard Minimum Trading Margins:**
+
+| Product | Minimum Margin Rate | Notes |
+|---------|-------------------|-------|
+| Iron Ore | 5% (base); typically 8-12% in practice | Frequently adjusted; raised to 12-17% during volatile periods |
+| Soybean Meal | 5% | Base rate |
+| Corn | 5% | Base rate |
+| Coking Coal | 5% (base); typically 8-13% in practice | Subject to holiday adjustments |
+| Coke | 5% (base); typically 8-10% in practice | Subject to holiday adjustments |
+| LLDPE, PP, PVC | 5% | Base rate |
+| Log | 8% | Recently listed product |
+
+**Margin Adjustment Rules:**
+- Margins increase as a contract approaches its delivery month (stepped increases at defined intervals)
+- Margins increase when open interest exceeds specified thresholds
+- DCE raises margins before long holidays (e.g., National Day, Spring Festival, Labor Day)
+- The higher of the contractual margin rate or the adjusted rate applies
+
+### 8.3 Position Limits
+
+- DCE imposes speculative position limits on non-hedging positions for each product
+- Position limits are specified as maximum number of lots per client or per non-futures-company member
+- Hedging positions can be approved for higher limits upon application
+- Large trader reporting requirements apply when positions exceed specified thresholds
+
+### 8.4 Forced Liquidation
+
+- If a member's margin falls below the required level and is not replenished by the next trading day's opening, DCE may forcibly close positions
+- Positions may also be forcibly liquidated if position limits are exceeded
+
+### 8.5 Risk Warning and Emergency Measures
+
+- DCE may issue risk warnings when abnormal trading activity is detected
+- Emergency measures include adjusting margins, price limits, position limits, or suspending trading
+- The exchange can invoke special measures during extreme market conditions
+
+[Source: DCE, "Notice on Adjustments to Price Limits and Trading Margins During 2024 National Day Holidays", https://mondovisione.com/news/dalian-commodity-exchange-notice-on-adjustments-to-price-limits-and-trading-mar-7-2024924/]
+[Source: DCE, "Notice on Adjustments to Price Limits and Trading Margins During 2025 International Labor Day Holiday", https://mondovisione.com/media-and-resources/news/dalian-commodity-exchange-notice-on-adjustments-to-price-limits-and-trading-mar-2025424/]
+[Source: Shanghai Metal Market, "DCE Adjustments to Price Limit and Trading Margin Levels for 2025 Labor Day", https://www.metal.com/en/newscontent/103299960]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+
+| Regulator | Role |
+|-----------|------|
+| **China Securities Regulatory Commission (CSRC)** | Primary regulator; oversees all futures and derivatives exchanges in China; approves new product listings |
+
+### 9.2 Key Regulations
+
+- **Regulations on the Administration of Futures Trading (State Council)**: Primary national regulation governing futures markets in China
+- **Futures and Derivatives Law (2022)**: China's first comprehensive law on futures and derivatives, effective August 1, 2022; provides legal foundation for market development, investor protection, and cross-border activities
+- **DCE Trading Rules**: Exchange-level rules governing trading conduct, order management, price limits, and market operations
+- **DCE Clearing Rules**: Rules governing margin, settlement, delivery, and default management
+- **DCE Risk Management Measures**: Rules on margins, price limits, position limits, large trader reporting, and forced liquidation
+
+### 9.3 Market Surveillance
+
+- DCE conducts real-time market surveillance monitoring for abnormal trading patterns
+- Monitors for wash trading, spoofing, and other manipulative behaviors
+- Coordinates with CSRC on enforcement actions
+- Reports large positions and unusual trading activity
+
+### 9.4 Internationalization and Foreign Access
+
+DCE has progressively opened specific products to overseas traders through multiple channels:
+
+| Access Channel | Description |
+|---------------|-------------|
+| **Specified Products (Direct)** | Iron Ore (May 2018), RBD Palm Olein (December 2021) — overseas traders can participate directly through designated intermediaries |
+| **QFII/RQFII** | Qualified Foreign Institutional Investors can trade designated DCE products including No.1 Soybean, No.2 Soybean, Soybean Meal, Soybean Oil, Palm Olein, Iron Ore, LLDPE, and corresponding options (since September 2022) |
+| **Overseas Intermediary** | Foreign brokers registered with DCE can provide access to international clients |
+
+### 9.5 Self-Regulatory Organization
+
+- DCE functions as a self-regulatory organization (SRO) under CSRC supervision
+- Has 160 member units and approximately 2.48 million valid clients (as of 2024)
+- Operates 581 delivery warehouses across China
+- Member firms include futures commission merchants (FCMs), proprietary trading firms, and other qualified entities
+
+[Source: FIA, "China further expands international access to its commodity markets", https://www.fia.org/marketvoice/articles/china-further-expands-international-access-its-commodity-markets]
+[Source: FIA, "China continues to expand international derivatives access", https://www.fia.org/marketvoice/articles/china-continues-expand-international-derivatives-access]
+[Source: WilmerHale, "China Moves to Open Commodity Futures Trading to Foreign Participants", https://www.wilmerhale.com/en/insights/client-alerts/20190514-china-moves-to-open-commodity-futures-trading-to-foreign-participants]
+[Source: Orient Futures Singapore, "DCE Futures & Options Trading", https://www.orientfutures.com.sg/china-market-access/dalian-commodity-exchange-dce/]
+
+---
+
+## Product Catalog
+
+### Futures Products (22 listed as of 2025)
+
+| Category | Product | Ticker | Contract Size | Listed Year |
+|----------|---------|--------|--------------|-------------|
+| **Agriculture** | No.1 Soybean (non-GMO) | A | 10 tons/lot | 1993 |
+| | No.2 Soybean (GMO) | B | 10 tons/lot | 2004 |
+| | Soybean Meal | M | 10 tons/lot | 2000 |
+| | Soybean Oil | Y | 10 tons/lot | 2006 |
+| | RBD Palm Olein | P | 10 tons/lot | 2007 |
+| | Corn | C | 10 tons/lot | 2004 |
+| | Corn Starch | CS | 10 tons/lot | 2014 |
+| | Egg | JD | 5 tons/lot | 2013 |
+| | Live Hog | LH | 16 tons/lot | 2021 |
+| | Log | LG | 50 m³/lot [unverified] | 2024 |
+| **Petrochemical** | LLDPE | L | 5 tons/lot | 2007 |
+| | PVC | V | 5 tons/lot | 2009 |
+| | PP | PP | 5 tons/lot | 2014 |
+| | Ethylene Glycol | EG | 10 tons/lot | 2018 |
+| | Styrene (Ethenylbenzene) | EB | 5 tons/lot | 2019 |
+| | LPG | PG | 20 tons/lot [unverified] | 2020 |
+| | Benzene | BZ | [unverified] | 2025 |
+| **Ferrous / Black** | Iron Ore | I | 100 tons/lot | 2013 |
+| | Coking Coal | JM | 60 tons/lot | 2013 |
+| | Coke | J | 100 tons/lot | 2011 |
+
+### Options Products (17 listed as of 2025)
+
+Options are available on: Soybean Meal, Corn, Soybean Oil, Palm Olein, Iron Ore, PP, PVC, LLDPE, Ethylene Glycol, Styrene, LPG, Coking Coal, Coke, Egg, Corn Starch, Live Hog, Log, and others.
+
+[Source: DCE Official Website, http://www.dce.com.cn/DCE/]
+[Source: Baidu Baike, "Dalian Commodity Exchange", https://baike.baidu.com/en/item/Dalian%20Commodity%20Exchange/1442477]
+
+---
+
+## Contract Specifications (Key Products Detail)
+
+### Iron Ore Futures (I) — Flagship International Product
+
+| Item | Specification |
+|------|--------------|
+| Trading Unit | 100 metric tons per lot |
+| Price Quotation | CNY per ton |
+| Minimum Price Fluctuation | 0.5 CNY/ton |
+| Daily Price Limit | ±7-8% of previous settlement price (adjusted frequently) |
+| Contract Months | Monthly (January through December) |
+| Last Trading Day | 10th trading day of the contract month |
+| Delivery Period | 3 business days following the last trading day |
+| Delivery Method | Physical delivery |
+| Deliverable Grades | Fine iron ore (imported), including BRBF Fines, PB Fines, Yandi Fines, Mac Fines, Newman Fines, Robe River Fines, Rocket Fines, and others |
+| Trading Margin | 5% minimum (typically 8-12% in practice) |
+| International Access | Open to overseas traders since May 4, 2018 |
+| Average Daily Volume | ~2 million contracts [unverified — approximate, world's largest iron ore derivatives market] |
+
+### Soybean Meal Futures (M)
+
+| Item | Specification |
+|------|--------------|
+| Trading Unit | 10 metric tons per lot |
+| Price Quotation | CNY per ton |
+| Minimum Price Fluctuation | 1 CNY/ton |
+| Daily Price Limit | ±4% of previous settlement price |
+| Contract Months | January, March, May, July, August, September, November, December |
+| Delivery Method | Physical delivery |
+| Trading Margin | 5% minimum |
+
+### Corn Futures (C)
+
+| Item | Specification |
+|------|--------------|
+| Trading Unit | 10 metric tons per lot |
+| Price Quotation | CNY per ton |
+| Minimum Price Fluctuation | 1 CNY/ton |
+| Daily Price Limit | ±4% of previous settlement price |
+| Contract Months | January, March, May, July, September, November |
+| Delivery Method | Physical delivery |
+| Trading Margin | 5% minimum |
+
+[Source: DCE, "Iron Ore Futures Trading Manual", http://www.dce.com.cn/dceg/file/2025-05-25/1748165227597ff8080819701ddb31019706c4744d21b2.pdf]
+[Source: KGI World, "DCE Iron Ore Futures Contract Specs", https://www.kgieworld.sg/docs/DCE%20Iron%20Ore%20Futures%20Contract%20Specs.pdf]
+[Source: MarketsWiki, "DCE Soybean Meal", https://www.marketswiki.com/wiki/DCE_Soybean_Meal]
+
+---
+
+## Margin Framework
+
+### Margin Methodology
+
+DCE uses a **fixed-percentage margin system** (not SPAN or VaR). Trading margins are calculated as a percentage of contract value, with the percentage varying by product, delivery month proximity, position size, and market conditions.
+
+### Margin Calculation
+
+- **Initial Margin** = Contract Price x Contract Size x Margin Rate
+- Example: Iron ore at CNY 800/ton, 100 tons/lot, 10% margin = CNY 8,000 per lot
+
+### Margin Escalation Rules
+
+| Condition | Effect |
+|-----------|--------|
+| **Approaching Delivery Month** | Margin rate increases in stepped increments (e.g., from T-3 months to delivery month) |
+| **High Open Interest** | When total open interest exceeds specified thresholds, margin rate increases |
+| **Consecutive Limit Moves** | If a contract settles at its price limit for consecutive days, margin increases |
+| **Holiday Periods** | DCE routinely raises margins before long holidays (Spring Festival, National Day, Labor Day) |
+| **Exchange Discretion** | DCE can adjust margins at any time based on market conditions |
+
+### Variation Margin
+
+- Settled daily (mark-to-market) based on the daily settlement price
+- Settlement price is typically the volume-weighted average price of trades during the last trading hour
+- Gains credited and losses debited to the member's margin account daily
+- If margin falls below the maintenance level, a margin call is issued; failure to replenish may result in forced liquidation
+
+### Delivery Margin
+
+- During the delivery month, margin requirements increase significantly (typically to 20-40% of contract value) [unverified — exact rates vary by product]
+- Both buyers and sellers must deposit delivery margins
+
+[Source: DCE, Risk Management Measures]
+[Source: Shanghai Metal Market, "DCE Adjustments to Price Limit and Trading Margin Levels", https://www.metal.com/en/newscontent/103299960]
+[Source: Mondovisione, "DCE Notice on Adjustments to Price Limits During 2026 New Year's Day Holiday", https://mondovisione.com/media-and-resources/news/dalian-commodity-exchange-notice-on-adjustments-to-price-limits-during-2026-new-20251225]

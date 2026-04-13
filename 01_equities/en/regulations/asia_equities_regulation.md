@@ -1,0 +1,670 @@
+# Asia-Pacific Equities Market Regulation
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 1
+> **Domain:** Equities â Regulatory Framework
+
+---
+
+## Table of Contents
+
+1. [Japan (FSA/JFSA + JPX)](#1-japan-fsajfsa--jpx)
+2. [Hong Kong (SFC + HKEX)](#2-hong-kong-sfc--hkex)
+3. [Singapore (MAS + SGX)](#3-singapore-mas--sgx)
+4. [Comparison with Korea (FSC/FSS/KRX)](#4-comparison-with-korea-fscfsskrx)
+
+---
+
+## 1. Japan (FSA/JFSA + JPX)
+
+### 1.1 Regulatory Authority Structure
+
+Japan's securities market regulation follows a multi-layered structure comprising a government regulator, a surveillance commission, and exchange-level self-regulation.
+
+| Authority | Full Name | Role |
+|-----------|-----------|------|
+| **JFSA** | Financial Services Agency of Japan (éèåº) | Primary regulator; rulemaking, licensing, supervision of financial institutions and markets |
+| **SESC** | Securities and Exchange Surveillance Commission (è¨¼å¸åå¼ç­ç£è¦å§å¡ä¼) | Investigative and surveillance arm under JFSA; inspections, market monitoring, criminal referrals |
+| **JPX-R** | Japan Exchange Regulation, Inc. | Self-regulatory organization (SRO) of JPX; conducts listing examinations, trading participant inspections, market surveillance on behalf of TSE and OSE |
+| **MOF** | Ministry of Finance (è²¡åç) | Oversees Foreign Exchange and Foreign Trade Act (FEFTA); foreign investment screening |
+
+[Source: JFSA, "About FSA", accessed 2026-04-06; JPX, "Self-Regulation", accessed 2026-04-06]
+
+**JFSA** was established in 2000 (reorganized from the Financial Supervisory Agency, originally created in 1998) and exercises comprehensive regulatory authority over securities markets, banking, and insurance. The JFSA sets policy, drafts legislation, issues licenses, and supervises compliance. It reports directly to the Prime Minister and the Cabinet.
+
+**SESC** was established in 1992 as an independent commission within the JFSA (structurally analogous to the relationship between the SEC's Division of Enforcement and the full Commission in the US). The SESC conducts:
+- Market surveillance for insider trading, market manipulation, and other unfair trading practices
+- Inspections of financial instruments business operators (broker-dealers, asset managers)
+- Investigations of disclosure violations
+- Recommendations for administrative sanctions and criminal referrals to prosecutors
+
+As of February 2026, the SESC continues to expand its enforcement capabilities, including proposed authority over crypto-asset insider trading under forthcoming FIEA amendments.
+
+[Source: SESC, "Overview", published February 2026, accessed 2026-04-06]
+
+**JPX-R** (Japan Exchange Regulation, Inc.) was established as a wholly-owned subsidiary of Japan Exchange Group to serve as the dedicated self-regulatory organization for TSE and Osaka Exchange (OSE). JPX-R is described as the "quality control center" of the exchanges and performs:
+- **Listing examinations:** Reviews applications for new listings and continued listing compliance
+- **Listed company compliance:** Monitors corporate disclosure, governance compliance, and timely disclosure obligations
+- **Trading participant examination and inspection:** Examines and inspects broker-dealers (trading participants) for compliance with exchange rules
+- **Market surveillance:** Real-time monitoring of trading activity for manipulation, insider trading, and other anomalies; as of April 2025, JPX-R has introduced AI-powered market surveillance tools
+
+[Source: JPX, "Outline of Self-Regulatory Operations", accessed 2026-04-06; Mondovisione, "Japan Exchange Regulation Annual Report 2025", August 2025]
+
+### 1.2 Key Legislation
+
+#### Financial Instruments and Exchange Act (FIEA / éèåååå¼æ³)
+
+The FIEA (Act No. 25 of 1948, substantially revised in 2006) is the principal statute governing Japan's securities markets. Originally enacted as the Securities and Exchange Act (modeled on the US Securities Act of 1933 and Securities Exchange Act of 1934), it was comprehensively reformed and renamed the Financial Instruments and Exchange Act in 2006 (effective September 2007) to broaden its scope to cover a wider range of financial instruments beyond traditional securities.
+
+[Source: JFSA, "Financial Instruments and Exchange Act", accessed 2026-04-06]
+
+**Key Provisions:**
+
+| Area | FIEA Provisions |
+|------|----------------|
+| Registration | Type 1 (securities broker-dealer), Type 2 (fund sales), Investment Advisory, Investment Management â all require JFSA registration |
+| Disclosure | Continuous disclosure (annual securities reports/æä¾¡è¨¼å¸å ±åæ¸, quarterly reports, timely disclosure via TDnet), large shareholding reports (5% rule) |
+| Unfair trading | Prohibition of insider trading (Art. 166, 167), market manipulation (Art. 159), fraudulent acts (Art. 157) |
+| Tender offers | Mandatory TOB rules for acquiring >30% of a listed company (effective May 1, 2026, lowered from one-third) |
+| Market infrastructure | Regulation of financial instruments exchanges, clearing organizations, book-entry transfer institutions |
+| Investor protection | Suitability obligations, segregation of customer assets, conflict-of-interest management |
+
+#### 2024 FIEA Amendments (Effective May 1, 2026)
+
+Major amendments enacted in 2024 include:
+
+- **Tender Offer Bid (TOB) threshold:** Lowered from one-third to 30% for mandatory tender offers
+- **"30% Rule" exemption:** Small-scale purchases increasing shareholding by less than 0.5% are exempt from TOB, provided no acquisitions occurred in the previous six months
+- **Large shareholding reporting clarifications:** Scope of "joint holders" and "acts of material proposal" clarified; format of reports modernized through EDINET updates
+- **Crypto-asset reclassification:** JFSA proposed bringing crypto-assets under FIEA oversight (as "Type 1 Financial Instruments"), with legislative drafting targeted for 2026
+
+[Source: Funds-Axis, "Japan's 2024 FIEA Amendments", accessed 2026-04-06; DLA Piper, "Recent developments on TOB rules and shareholding transparency in Japan", January 2026]
+
+#### Other Key Legislation
+
+| Statute | Scope |
+|---------|-------|
+| Foreign Exchange and Foreign Trade Act (FEFTA / å¤çºæ³) | Foreign investment screening; prior notification requirements for investments in designated sectors |
+| Companies Act (ä¼ç¤¾æ³) | Corporate governance, directors' duties, shareholder rights |
+| Act on Book-Entry Transfer of Company Bonds, Shares, etc. | Dematerialization of securities |
+| Financial Instruments Exchange Act Enforcement Order (æ¿ä»¤) | Detailed implementing rules for FIEA |
+
+### 1.3 Market Structure Rules
+
+**Trading Regulations:**
+- **Order types:** Limit orders, market orders, and various conditional orders processed through the arrowhead trading engine
+- **Price limits:** Daily price limits (å¤å¹å¶é) based on the previous day's closing price; limits range from +/-30 yen (for stocks under 100 yen) to +/-7,000 yen (for stocks at 30,000-50,000 yen level), with wider limits for higher-priced stocks
+- **Tick sizes:** Multi-tiered based on price level and index membership (TOPIX 500 constituents have finer ticks)
+- **Trading unit:** Standardized at 100 shares for all listed stocks since October 2018
+- **Closing auction:** Introduced November 2024 with a 5-minute pre-closing period (15:25-15:30) followed by Itayose matching
+
+**Listing Requirements:** Governed by TSE listing rules and examined by JPX-R. Three main market segments (Prime, Standard, Growth) established in April 2022 market restructuring, plus TOKYO PRO Market for professional investors.
+
+### 1.4 Market Surveillance
+
+Japan employs a two-tier surveillance model:
+
+**JPX-R (First Line):**
+- Real-time surveillance of all trading on TSE and OSE
+- AI-powered detection systems (introduced April 2025) for identifying suspicious trading patterns
+- Investigation of potential rule violations by trading participants and listed companies
+- Referral of suspected violations to SESC
+
+**SESC (Second Line):**
+- Conducts formal investigations upon referral from JPX-R or on its own initiative
+- Authority to recommend administrative monetary penalties (èª²å¾´é) to JFSA
+- Criminal referrals to public prosecutors for serious violations
+- Inspection of financial instruments business operators
+- Cross-border coordination with overseas regulators
+- In Q4 2024, the SESC investigated inappropriate sharing of customer information between banks and securities affiliates
+
+[Source: JPX, "JPX-R Inspection Plan for FY2025", March 2025; SESC overview, February 2026]
+
+### 1.5 Reporting and Disclosure Requirements
+
+| Requirement | Details |
+|-------------|---------|
+| Annual securities report (æä¾¡è¨¼å¸å ±åæ¸) | Filed via EDINET within 3 months of fiscal year-end; comprehensive financial and operational disclosure |
+| Quarterly reports | Filed within 45 days of each quarter-end |
+| Timely disclosure (é©æéç¤º) | Material information disclosed immediately via TDnet (TSE Timely Disclosure Network); covering decisions, events, and financial results |
+| Large shareholding reports | 5% threshold; filing within 5 business days via EDINET; 1% change triggers amendment |
+| Short position reporting | Positions >= 0.2% reported to TSE; positions >= 0.5% publicly disclosed with investor name |
+| Insider trading reporting | Officers, major shareholders, and other insiders must report trading in issuer shares |
+
+### 1.6 Short Selling Regulations
+
+Japan maintains a permanent regulatory framework for short selling under the FIEA and its Enforcement Order:
+
+| Rule | Details |
+|------|---------|
+| **Naked short selling ban** | Permanent prohibition (originally a temporary crisis measure in 2008, made permanent); sellers must secure securities before selling short |
+| **Uptick rule (trigger-based)** | Price restriction activated when a stock's price drops 10% or more from the base price; once triggered, short sales may only be executed at a price above the last traded price; restriction lasts until the end of the next trading day |
+| **Marking requirement** | All short sale orders must be flagged/marked as short sales |
+| **Position reporting** | Positions >= 0.2% must be reported to TSE; >= 0.5% publicly disclosed |
+| **Aggregation** | Short positions calculated on a per-investor, per-issue basis |
+
+[Source: JPX, "Short Selling Restrictions", accessed 2026-04-06; Clifford Chance, "Significant changes to the Japanese short selling regulations", 2013]
+
+### 1.7 Foreign Investor Access
+
+Japan's securities market is generally open to foreign investors with no major restrictions on portfolio investment:
+
+- **No pre-registration requirement** for general portfolio investment in listed securities
+- **No foreign ownership limits** on most listed companies (sector-specific restrictions apply under FEFTA for national security sectors such as defense, nuclear energy, telecommunications)
+- **Free repatriation** of capital and profits
+
+**2025 FEFTA Amendments (effective May 19, 2025):**
+- New "Specified Foreign Investors" classification for investors with obligations to disclose information to foreign governments (particularly targeting entities linked to foreign intelligence services)
+- Specified Foreign Investors must file prior notification when acquiring >= 1% of listed shares, with no eligibility for exemptions
+- Enhanced screening for investments in designated sensitive sectors
+
+[Source: Lexology, "Japan's 2025 FEFTA Amendments", accessed 2026-04-06; Norton Rose Fulbright, "Global rules on foreign direct investment: Japan", accessed 2026-04-06]
+
+### 1.8 Corporate Governance Code and Stewardship Code
+
+#### Corporate Governance Code (ã³ã¼ãã¬ã¼ãã¬ããã³ã¹ã»ã³ã¼ã)
+
+First introduced in June 2015 and revised in June 2018 and June 2021, the Corporate Governance Code is a principles-based framework jointly published by the JFSA and TSE. It applies on a "comply or explain" basis.
+
+**Key Principles:**
+- Board independence: At least one-third independent outside directors for Prime Market companies (majority encouraged)
+- Cross-shareholding: Companies should disclose rationale and reduce strategic cross-shareholdings; major insurance companies committed to full divestment
+- Cost of capital awareness: TSE's January 2023 initiative requesting all Prime and Standard Market companies to disclose plans for improving cost of capital and stock price (PBR initiative); as of March 2025, over 90% of Prime Market companies have disclosed such plans
+
+**2025-2026 Revision Process:**
+- JPX and JFSA convened the Expert Panel on the Revision of the Corporate Governance Code (third meeting held April 3, 2026)
+- Key topics under review include: further strengthening board effectiveness, sustainability disclosure, engagement with shareholders, and cross-shareholding unwinding
+
+[Source: JPX, "Follow-up Council", accessed 2026-04-06; Harvard Law School Forum on Corporate Governance, "Tokyo Stock Exchange Initiative on Cost of Capital", October 2025]
+
+#### Stewardship Code (Version 3.0, June 26, 2025)
+
+Japan's Stewardship Code was first introduced in February 2014 and revised in May 2017 and March 2020. Version 3.0 was published on June 26, 2025.
+
+**Key Changes in Version 3.0:**
+- Emphasis on moving from "form to substance" â discouraging box-ticking approaches
+- **Beneficial shareholder transparency:** Institutional investors should be prepared to disclose shareholding details to investee companies upon request (Guidance 4-2)
+- **Collaborative engagement:** Principle 4.5 encourages joint investor engagement to address governance and sustainability challenges
+- **Principles-based flexibility:** Recognition that sustainable value creation cannot be reduced to formulaic approaches
+
+[Source: JFSA, "Revision of the Stewardship Code", June 26, 2025; ACGA, "Decoding Japan's New Stewardship Code and 2025 FSA Action Programme", accessed 2026-04-06]
+
+### 1.9 Recent Changes (2023-2026)
+
+| Date | Change |
+|------|--------|
+| January 2023 | TSE requests Prime/Standard Market companies to disclose plans for improving cost of capital and stock price (PBR initiative) |
+| April 2024 | arrowhead 4.0 launched; trading hours extended to 15:30 with closing auction |
+| November 2024 | Trading hours officially extended by 30 minutes with 5-minute pre-closing period |
+| April 2025 | JPX-R introduces AI-powered market surveillance |
+| May 2025 | 2025 FEFTA Amendments take effect â "Specified Foreign Investors" classification |
+| June 2025 | Stewardship Code Version 3.0 published |
+| 2025-2026 | Expert Panel on Corporate Governance Code Revision convened |
+| May 1, 2026 | 2024 FIEA Amendments take effect â TOB threshold lowered to 30%, large shareholding reporting reforms |
+| 2026 (expected) | Crypto-asset regulation under FIEA â legislative drafting in progress |
+
+---
+
+## 2. Hong Kong (SFC + HKEX)
+
+### 2.1 Regulatory Authority Structure
+
+Hong Kong operates under a dual regulatory model combining a statutory regulator (SFC) and exchange-based regulation through HKEX's Listing Division.
+
+| Authority | Full Name | Role |
+|-----------|-----------|------|
+| **SFC** | Securities and Futures Commission (è­å¸åæè²¨äºåç£å¯å§å¡æ) | Statutory regulator; licensing, supervision, enforcement, market conduct |
+| **HKEX Listing Division** | Listing Division of The Stock Exchange of Hong Kong Limited | Front-line listing regulation under delegated authority from SFC; listing applications review, post-listing compliance |
+| **FSTB** | Financial Services and the Treasury Bureau | Government policy bureau; legislative proposals |
+| **HKMA** | Hong Kong Monetary Authority | Banking regulator; oversees banks' securities activities |
+
+[Source: SFC, "About the SFC", accessed 2026-04-06]
+
+**SFC** was established in 1989 following the 1987 stock market crash. It is an independent statutory body funded by transaction levies and fees. The SFC's functions include:
+- Licensing and supervising intermediaries (10 types of regulated activities, including Type 1 â dealing in securities, Type 4 â advising on securities, Type 9 â asset management)
+- Administering the Securities and Futures Ordinance (SFO)
+- Market surveillance and enforcement
+- Regulating collective investment schemes
+- Approving listing rules and exercising oversight of HKEX's listing function
+
+**HKEX Listing Division** acts as the front-line regulator for listed companies under authority delegated by the SFC. The Listing Committee (comprising market practitioners and independent members) makes listing decisions. The SFC retains the power to:
+- Object to listing applications
+- Direct HKEX to amend listing rules
+- Exercise "dual filing" oversight of listing documents
+
+### 2.2 Key Legislation
+
+#### Securities and Futures Ordinance (SFO / Cap. 571)
+
+The SFO (enacted 2002, effective April 1, 2003) is the principal legislation governing Hong Kong's securities and futures markets. It consolidated 10 former ordinances into a single comprehensive statute.
+
+[Source: SFC, "Securities and Futures Ordinance", accessed 2026-04-06; Hong Kong e-Legislation, Cap. 571]
+
+**Key Provisions:**
+
+| Part | Coverage |
+|------|----------|
+| Part II | SFC constitution, powers, and functions |
+| Part III | Authority to investigate and intervene |
+| Part IV | Offers of securities and collective investment schemes |
+| Part V | Licensing and registration of intermediaries |
+| Part VI | Disclosure of interests by substantial shareholders and directors |
+| Part VIII | Offences relating to dealings in securities, futures, and leveraged foreign exchange |
+| Part XIII | Market misconduct: insider dealing (civil and criminal routes), market manipulation, false trading, price rigging, disclosure of information about prohibited transactions |
+| Part XIV | Provisions concerning short selling |
+
+**Ten Types of Regulated Activities (RAs):**
+
+| RA Type | Activity |
+|---------|----------|
+| Type 1 | Dealing in securities |
+| Type 2 | Dealing in futures contracts |
+| Type 3 | Leveraged foreign exchange trading |
+| Type 4 | Advising on securities |
+| Type 5 | Advising on futures contracts |
+| Type 6 | Advising on corporate finance |
+| Type 7 | Providing automated trading services |
+| Type 8 | Securities margin financing |
+| Type 9 | Asset management |
+| Type 10 | Providing credit rating services |
+
+Each RA requires a separate license from the SFC. Individuals carrying out regulated activities must be registered as licensed representatives.
+
+#### Other Key Legislation
+
+| Statute | Scope |
+|---------|-------|
+| Companies Ordinance (Cap. 622) | Company incorporation, governance, financial reporting |
+| Listing Rules (Main Board Rules / GEM Rules) | Detailed listing requirements administered by HKEX |
+| Anti-Money Laundering and Counter-Terrorist Financing Ordinance (AMLO / Cap. 615) | AML/CFT obligations for financial institutions |
+| Stablecoins Ordinance (Cap. 656, effective August 1, 2025) | Licensing and regulation of fiat-referenced stablecoin issuers |
+
+### 2.3 Market Structure and Licensing
+
+**Market Structure:**
+- **Main Board:** Premier market for established companies (HK$500 million minimum market cap at IPO)
+- **GEM (Growth Enterprise Market):** Growth board for smaller companies
+- **Chapter 18A (2018):** Pre-revenue biotech companies
+- **Chapter 18B (2022):** SPAC listings (minimum HK$1 billion IPO proceeds; de-SPAC within 36 months)
+- **Chapter 18C (2023):** Specialist Technology Companies (commercial: HK$4 billion min cap after September 2024 temporary reduction from HK$6 billion; pre-commercial: HK$8 billion, reduced from HK$10 billion, valid until August 2027)
+- **Chapter 19C:** Secondary listings of qualifying overseas-listed companies
+
+**Licensing:** All intermediaries conducting regulated activities must be licensed by the SFC. Firms are subject to ongoing capital requirements, conduct rules, and regular examinations.
+
+### 2.4 Stock Connect with Mainland China
+
+Stock Connect is a landmark cross-border market access scheme linking Hong Kong with the Shanghai and Shenzhen stock exchanges.
+
+| Programme | Launch Date | Direction | Scope |
+|-----------|------------|-----------|-------|
+| Shanghai-Hong Kong Stock Connect | November 17, 2014 | Northbound (HK -> SSE) and Southbound (SSE -> HK) | Eligible SSE and SEHK stocks |
+| Shenzhen-Hong Kong Stock Connect | December 5, 2016 | Northbound (HK -> SZSE) and Southbound (SZSE -> HK) | Eligible SZSE and SEHK stocks |
+| ETF Connect | July 4, 2022 | Both directions | Eligible ETFs added to Stock Connect |
+| Swap Connect (Northbound) | May 15, 2023 | Northbound | Interest rate swaps |
+| Bond Connect | July 3, 2017 (NB); September 24, 2021 (SB) | Both directions | Eligible bonds |
+
+**Key Rules:**
+- **Daily quota:** Northbound daily quota of RMB 52 billion; Southbound daily quota of HK$42 billion (expanded multiple times since launch)
+- **Settlement:** T+0 for Northbound (pre-delivery of shares required); T+2 for Southbound
+- **Pre-trade checking:** Northbound investors must have sufficient shares before selling (no naked short selling)
+- **Short selling via Stock Connect:** Covered short selling of eligible A-shares is permitted for Northbound investors, subject to SSE/SZSE requirements including front-end monitoring and volume limits
+- **Holiday arrangement:** Trading only occurs on days when both markets are open and settlement is available in both markets
+
+[Source: HKEX, "Stock Connect", accessed 2026-04-06; IFEC, "Trading rules and arrangement", accessed 2026-04-06]
+
+### 2.5 Market Surveillance
+
+**SFC Market Surveillance:**
+- Conducts real-time monitoring of trading activity across all SEHK-listed securities
+- Investigates suspected insider dealing, market manipulation, false trading, and other market misconduct
+- In Q3 2024, the SFC conducted 468 investigations spanning corporate disclosure, insider dealing, intermediary misconduct, and market manipulation
+- **Dual enforcement routes:** Market misconduct can be prosecuted through either (a) the Market Misconduct Tribunal (civil route) or (b) criminal prosecution before the courts
+
+**Recent Enforcement Highlights (2025):**
+- In July 2025, joint SFC-ICAC operation targeted a market manipulation syndicate involving listed company executives; searches at 14 locations, multiple arrests
+- SFC probed alleged insider dealing involving staff at HKEX and SFC themselves, concerning leaks about dozens of listed companies [Source: Bloomberg, September 2025]
+- **Market Sounding Guidelines** took effect in May 2025, requiring licensed persons to implement information barrier protocols during market soundings (block trades, private placements)
+
+[Source: SFC, "Regulatory update", accessed 2026-04-06; A&O Shearman, "Hong Kong White-Collar/Financial Crime", 2025]
+
+### 2.6 Short Selling Rules
+
+Hong Kong permits only **covered short selling** â naked short selling is a criminal offence under Part XIV of the SFO.
+
+| Rule | Details |
+|------|---------|
+| **Covered short selling only** | Sellers must have a presently exercisable and unconditional right to vest the securities before executing a short sale |
+| **Designated securities** | Short selling permitted only for securities on the HKEX "Designated Securities Eligible for Short Selling" list (updated regularly; covers high-liquidity stocks) |
+| **Tick rule** | Short sales must be executed at or above the best current ask price |
+| **Reporting** | Net short positions >= 0.02% of issued shares (or HK$30 million) in specified shares must be reported to the SFC weekly |
+| **Stock Connect** | Covered short selling of eligible A-shares permitted for Northbound investors, subject to SSE/SZSE volume limits |
+| **Penalties** | Illegal short selling (naked) can result in criminal prosecution, fines up to HK$100,000, and imprisonment up to 2 years |
+
+[Source: HKEX, "Regulated Short Selling", accessed 2026-04-06; SFC, "Aggregated reportable short positions", accessed 2026-04-06]
+
+### 2.7 Foreign Investor Access
+
+Hong Kong operates one of the most open securities markets in Asia:
+
+- **No pre-registration requirement** for foreign investors
+- **No foreign ownership limits** on Hong Kong-listed securities (mainland China A-shares via Stock Connect are subject to aggregate and daily quotas)
+- **Free capital movement:** No foreign exchange controls; HKD freely convertible
+- **Tax advantages:** No capital gains tax, no dividend withholding tax on Hong Kong-listed securities, stamp duty of 0.1% per side (reduced from 0.13% in November 2023)
+- **Settlement:** T+2 for CCASS (Central Clearing and Settlement System) securities
+
+### 2.8 Recent Changes (2022-2026)
+
+| Date | Change |
+|------|--------|
+| January 1, 2022 | SPAC listing regime (Chapter 18B) takes effect |
+| March 2023 | Specialist Technology Company rules (Chapter 18C) introduced |
+| November 2023 | Stamp duty reduced from 0.13% to 0.1% |
+| September 1, 2024 | Temporary reduction in Chapter 18C market cap thresholds (valid 3 years to August 2027) |
+| May 2025 | Market Sounding Guidelines take effect |
+| August 5, 2025 | Minimum spread reduction Phase 1 â tick sizes reduced for HK$10-50 range |
+| August 1, 2025 | Stablecoins Ordinance (Cap. 656) takes effect |
+| August 4, 2025 | HKEX listing rule changes effective (including new 40% placing tranche allocation, with Chapter 18C exempted) |
+| Mid-2026 (planned) | Minimum spread reduction Phase 2 â tick sizes for HK$0.50-10 range |
+| 2026 (expected) | Virtual asset dealer and custodian licensing legislation to be introduced to Legislative Council |
+
+---
+
+## 3. Singapore (MAS + SGX)
+
+### 3.1 Regulatory Authority Structure
+
+Singapore adopts an integrated regulatory model where the central bank (MAS) serves as the single financial regulator, with SGX RegCo providing exchange-level self-regulation.
+
+| Authority | Full Name | Role |
+|-----------|-----------|------|
+| **MAS** | Monetary Authority of Singapore | Integrated financial regulator (central bank + securities regulator + banking regulator + insurance regulator); licensing, supervision, enforcement, monetary policy |
+| **SGX RegCo** | SGX Regulation (SGX RegCo Pte. Ltd.) | Independent regulatory subsidiary of SGX Group; listing regulation, market surveillance, member supervision |
+| **CAD** | Commercial Affairs Department, Singapore Police Force | Criminal investigation of financial crimes (works jointly with MAS) |
+
+[Source: MAS, "About MAS", accessed 2026-04-06]
+
+**MAS** is unique among major financial regulators as it combines central banking functions with securities regulation, banking supervision, and insurance oversight in a single institution. Established in 1971, MAS administers the Securities and Futures Act (SFA) and has authority to:
+- License and supervise capital markets services (CMS) license holders
+- Investigate and enforce market misconduct
+- Approve exchange and clearing house rules
+- Issue prohibition orders against individuals
+- Impose civil penalties for market abuse
+
+**SGX RegCo** was established in 2016 and began operations in 2018 as an independent regulatory subsidiary of SGX Group. It maintains operational independence from SGX's commercial functions and is governed by a Regulatory Conflicts Committee. SGX RegCo's functions include:
+- Reviewing listing applications and administering listing rules for Mainboard and Catalist
+- Monitoring ongoing compliance of listed companies
+- Conducting market surveillance
+- Supervising trading members (securities and derivatives)
+
+[Source: SGX, "About SGX RegCo", accessed 2026-04-06]
+
+### 3.2 Key Legislation
+
+#### Securities and Futures Act 2001 (SFA)
+
+The SFA (Act 42 of 2001, as amended) is Singapore's principal legislation governing capital markets. It was significantly amended in 2005 and 2012, with further amendments ongoing.
+
+[Source: MAS, "Securities and Futures Act 2001", accessed 2026-04-06; Singapore Statutes Online, sso.agc.gov.sg]
+
+**Key Provisions:**
+
+| Part | Coverage |
+|------|----------|
+| Part II | Regulation of markets, clearing facilities, and trade repositories |
+| Part IV | Licensing of persons dealing in capital markets products |
+| Part VII | Conduct of business by holders of CMS licenses |
+| Part XII | Market conduct â insider trading (Division 3), market manipulation, false trading, market rigging |
+| Part XIII | Offers of securities and collective investment schemes (prospectus requirements) |
+
+**Capital Markets Services (CMS) Licenses:**
+
+| Activity | Requirement |
+|----------|-------------|
+| Dealing in capital markets products | CMS license required |
+| Advising on corporate finance | CMS license required |
+| Fund management | CMS license required |
+| Real estate investment trust management | CMS license required |
+| Providing custodial services | CMS license required |
+| Credit rating services | CMS license required |
+
+#### Other Key Legislation
+
+| Statute | Scope |
+|---------|-------|
+| Financial Advisers Act (Cap. 110) | Regulation of financial advisers |
+| Singapore Code on Take-overs and Mergers | Mandatory offer rules (>30% trigger) |
+| Companies Act (Cap. 50) | Company law, directors' duties |
+| Exchanges (Demutualisation and Merger) Act 1999 | Legal foundation for SGX's creation |
+
+### 3.3 Market Structure and Licensing
+
+**Market Segments:**
+- **Mainboard:** Primary market for established companies; quantitative entry criteria including profit track record and/or market capitalization; minimum 25% public float
+- **Catalist:** Sponsor-supervised growth board for SMEs; no quantitative entry criteria set by SGX (sponsor determines suitability)
+- **GlobalQuote:** For secondary listings of foreign companies
+- **Global Listing Board (proposed):** Announced November 19, 2025 â a new dual-listing bridge between SGX and Nasdaq for companies with market cap above SGD 2 billion
+
+[Source: MAS, "MAS Proposes Legislative and Regulatory Changes to Facilitate Dual Listings on Global Listing Board", January 2026]
+
+**Global Listing Board â Key Proposed SFA Amendments (consultation closed February 8, 2026):**
+- Single prospectus for dual listings on SGX and Nasdaq
+- Aligned IPO timelines between US and Singapore
+- Safe harbours for forward-looking statements, share repurchases, and pre-determined trades
+- Retail investors permitted to engage earlier in the IPO process
+
+### 3.4 Market Surveillance
+
+**MAS-SGX Joint Surveillance Framework:**
+
+MAS and SGX RegCo operate a coordinated surveillance framework:
+- **SGX RegCo** conducts first-line real-time market surveillance using automated systems to detect unusual trading patterns
+- **MAS** conducts second-line oversight and formal enforcement investigations
+- **MAS-SGX Trade Surveillance Practice Guide:** Published jointly by MAS and SGX, provides guidance on trade surveillance practices for intermediaries
+
+**Enforcement Actions (2025):**
+- In Q4 2025, MAS opened 163 review and investigation cases, with 58 cases pertaining to market misconduct (insider trading and false trading)
+- Civil penalty of S$50,000 imposed on Tan Tee Beng for insider trading in Tee International and Tee Land shares
+- Civil penalty of S$137,000 imposed on Ang Yew Jin Eugene for insider trading in Alpha Energy Holdings shares
+- Criminal charges filed against Xie Jianfeng for insider trading and deception under the SFA (October 2025)
+
+**Enforcement Priorities (2025-2026):**
+MAS outlined enforcement priorities including: market misconduct (insider trading, false trading), intermediary misconduct, and technology-related risks.
+
+[Source: MAS, "Key Enforcement Actions Taken by MAS in Q4 2025", January 2026; Sidley Austin, "Monetary Authority of Singapore Outlines Enforcement Priorities for 2025-26", April 2025]
+
+### 3.5 Reporting Requirements
+
+| Requirement | Details |
+|-------------|---------|
+| Annual report | Listed companies must issue annual reports within 4 months (Mainboard) or 5 months (Catalist) of fiscal year-end |
+| Quarterly/half-yearly reporting | Quarterly reporting required for companies with market cap < SGD 75 million on Mainboard; half-yearly for others; Catalist: half-yearly |
+| Immediate disclosure | Material information must be disclosed immediately via SGXNet |
+| Substantial shareholding | 5% threshold; notification to company and SGX within 2 business days |
+| Short position reporting | No mandatory public short position reporting regime (unlike Japan, Hong Kong, Korea) [unverified â MAS has discussed but not implemented as of 2026] |
+| Prospectus | Required for public offers of securities under Part XIII of the SFA |
+
+### 3.6 Foreign Investor Access
+
+Singapore maintains one of the most open capital markets in Asia:
+
+- **No pre-registration requirement** for foreign investors
+- **No foreign ownership limits** on SGX-listed securities (sector-specific restrictions may apply under other legislation, e.g., banking, media)
+- **Free capital movement:** No foreign exchange controls; SGD freely convertible
+- **Tax:** No capital gains tax; dividend withholding tax generally not applicable (dividends paid from one-tier corporate tax system are tax-exempt to shareholders)
+- **Settlement:** T+2 for Mainboard and Catalist securities
+
+### 3.7 Recent Changes (2023-2026)
+
+| Date | Change |
+|------|--------|
+| July 3, 2023 | NSE IX-SGX GIFT Connect fully operational (Singapore-India market link) |
+| 2025 | SGX RegCo advances disclosure-based regime with listing rule changes |
+| November 19, 2025 | Global Listing Board (SGX-Nasdaq dual-listing bridge) announced |
+| January 9, 2026 | SGX RegCo consultation paper on Global Listing Board listing rules |
+| January 2026 | MAS consultation on SFA amendments for Global Listing Board (closed February 8, 2026) |
+| 2027 (planned) | New trading engine "Iris-ST" expected to go live (H2 2027) |
+
+---
+
+## 4. Comparison with Korea (FSC/FSS/KRX)
+
+### 4.1 Regulatory Structure Comparison
+
+Korea uniquely operates a **dual-regulator model** at the government level (FSC for policy/rulemaking, FSS for supervision/enforcement), which differs from the single-regulator models of Japan (JFSA), Hong Kong (SFC), and Singapore (MAS).
+
+| Dimension | Korea | Japan | Hong Kong | Singapore |
+|-----------|-------|-------|-----------|-----------|
+| **Government regulator** | FSC (Financial Services Commission, ê¸ìµììí) â policy/rulemaking; FSS (Financial Supervisory Service, ê¸ìµê°ëì) â supervision/examination | JFSA (single regulator for policy + supervision) | SFC (single statutory regulator for securities markets) | MAS (integrated regulator: central bank + all financial supervision) |
+| **Dual/single structure** | Dual: FSC (government commission) + FSS (executive body, non-governmental) | Single JFSA with SESC as specialized surveillance commission within it | Single SFC (plus HKEX Listing Division for listing regulation) | Single MAS (plus SGX RegCo for exchange-level regulation) |
+| **Exchange SRO** | KRX (Korea Exchange, íêµ­ê±°ëì) â operates as sole exchange and SRO | JPX-R (dedicated SRO subsidiary of JPX) | HKEX Listing Division (delegated authority from SFC) | SGX RegCo (independent regulatory subsidiary of SGX) |
+| **Regulatory philosophy** | Prescriptive/rules-based; active government intervention (e.g., short selling bans) | Principles-based (corporate governance) + rules-based (trading regulations); increasing emphasis on market-based solutions | Disclosure-based with SFC oversight; SFO provides both civil and criminal enforcement routes | Disclosure-based; MAS favors proportionate enforcement with emphasis on deterrence |
+| **Recent structural debate** | In September 2025, Korea shelved proposed merger of FSC and FSS, keeping dual structure in place | No major structural changes | Periodic debate about HKEX self-listing conflict | SGX RegCo independence strengthened since 2018 |
+
+[Source: FSC, "About FSC", accessed 2026-04-06; KED Global, "S.Korea shelves financial regulator shake-up", September 2025]
+
+### 4.2 Key Regulations: FSCMA (ìë³¸ìì¥ë²)
+
+Korea's principal securities legislation is the **Financial Investment Services and Capital Markets Act (FSCMA / ìë³¸ìì¥ê³¼ ê¸ìµí¬ììì ê´í ë²ë¥ )**, enacted in 2007 (effective February 4, 2009). The FSCMA consolidated six prior laws into a single comprehensive statute covering securities, derivatives, and investment services.
+
+**Comparison of Principal Legislation:**
+
+| Korea (FSCMA) | Japan (FIEA) | Hong Kong (SFO) | Singapore (SFA) |
+|---------------|-------------|-----------------|-----------------|
+| Enacted 2007, effective 2009 | Originally 1948, renamed 2006 (effective 2007) | Enacted 2002, effective 2003 | Enacted 2001 |
+| Consolidated 6 prior laws | Expanded from Securities and Exchange Act to cover broader financial instruments | Consolidated 10 prior ordinances | Principal statute for capital markets |
+| Functional regulation approach (regulates activities, not institutions) | Similarly functional | Activity-based (10 regulated activity types) | CMS license categories |
+| Negative-list approach for financial investment products | Positive-list approach (defined categories) | Defined categories of securities and futures | Defined "capital markets products" |
+
+### 4.3 KRX as SRO
+
+KRX (Korea Exchange) serves as the sole licensed exchange operator and self-regulatory organization in Korea. Unlike other Asia-Pacific markets where multiple exchanges may compete, KRX operates all domestic equities, derivatives, and bond markets.
+
+**Comparison of Exchange SRO Functions:**
+
+| Function | KRX (Korea) | JPX-R (Japan) | HKEX Listing Div. (HK) | SGX RegCo (Singapore) |
+|----------|-------------|---------------|------------------------|----------------------|
+| Listing examination | Yes | Yes | Yes | Yes |
+| Market surveillance | Yes (real-time) | Yes (AI-enhanced since 2025) | SFC conducts primary surveillance | Yes (first-line); MAS oversees |
+| Member/participant inspection | Yes | Yes | SFC handles | Yes |
+| Corporate independence from commercial arm | Limited (KRX is a single entity) | Separate subsidiary (JPX-R) | Division within HKEX (SFC oversight) | Separate subsidiary with Regulatory Conflicts Committee |
+| Disciplinary authority | Yes | Yes | SFC retains final authority | Yes, with MAS oversight |
+
+### 4.4 Foreign Investor Registration
+
+Korea's foreign investor registration system has historically been more restrictive than its Asia-Pacific peers:
+
+| Aspect | Korea | Japan | Hong Kong | Singapore |
+|--------|-------|-------|-----------|-----------|
+| **Pre-registration** | Previously: IRC (Investor Registration Certificate) required from FSS. Since December 14, 2023: IRC system abolished for new investors; LEI (Legal Entity Identifier) required instead | No pre-registration for portfolio investment | No pre-registration | No pre-registration |
+| **Unique identifiers** | IRC (legacy investors) or LEI (new investors since December 2023); cannot use both simultaneously | None required for portfolio investment | None required | None required |
+| **Omnibus accounts** | Introduced as a reform measure; allows global asset managers to consolidate client orders under a single account | Standard practice | Standard practice | Standard practice |
+| **Foreign ownership limits** | Generally none for listed equities; sector-specific limits apply (e.g., broadcasting, telecommunications, airlines) | Generally none; FEFTA screening for designated sectors | None for HK-listed; Stock Connect quotas for A-shares | Generally none; sector-specific limits may apply |
+| **Openness ranking** | Historically more restrictive; undergoing significant liberalization (MSCI watch for EM -> DM reclassification) | Open | Very open | Very open |
+
+[Source: FSC, "Omnibus Account for Foreign Investors", accessed 2026-04-06; Clearstream, "Investment regulation â South Korea", accessed 2026-04-06]
+
+### 4.5 Short Selling Rules: Korea's Stricter Approach
+
+Korea has taken the most interventionist approach to short selling regulation among the four jurisdictions, including multiple temporary bans over recent years.
+
+| Aspect | Korea | Japan | Hong Kong | Singapore |
+|--------|-------|-------|-----------|-----------|
+| **Naked short selling** | Prohibited (criminal offence; enhanced penalties under 2025 FSCMA revision: up to life imprisonment for illicit gains > KRW 5 billion) | Permanently prohibited (since 2008 crisis measures made permanent) | Criminal offence under SFO Part XIV (up to HK$100,000 fine + 2 years imprisonment) | Prohibited under SFA |
+| **Temporary bans** | Multiple: March 2020 â May 2021 (COVID); November 2023 â March 30, 2025 (institutional naked short selling scandal) | None in recent history | None in recent history | None in recent history |
+| **Resumption** | Short selling resumed March 31, 2025 for all listed stocks â first time all stocks eligible in five years | N/A | N/A | N/A |
+| **Uptick rule** | Yes (uptick rule for all short sales) | Trigger-based: activated only when stock drops 10% from base price | Yes: short sales must be at or above best ask price | Yes [unverified] |
+| **Position reporting** | Enhanced under 2025 FSCMA revision | >= 0.2% reported; >= 0.5% publicly disclosed | >= 0.02% of issued shares or HK$30 million reported to SFC | No mandatory public reporting regime [unverified] |
+| **Detection system** | KRX launched Naked Short Selling Detection System (NSDS) for real-time detection | JPX-R AI surveillance | SFC surveillance | SGX RegCo + MAS surveillance |
+| **Non-monetary sanctions** | New under 2025 FSCMA: trading restrictions up to 5 years; executive appointment restrictions up to 5 years | Administrative monetary penalties, criminal prosecution | SFC civil/criminal prosecution; Market Misconduct Tribunal | MAS civil penalties, prohibition orders, criminal prosecution |
+
+**2025 FSCMA Enforcement Decree (effective April 23, 2025):**
+- FSC authorized to restrict rule-breakers from engaging in financial investment transactions for up to 5 years
+- FSC authorized to restrict rule-breakers from serving as executives at listed companies for up to 5 years
+- Enhanced criminal penalties: illegal short selling subject to same enhanced prison terms as unfair trading
+
+[Source: FSC, "Capital Market Reform", accessed 2026-04-06; KED Global, "All listed stocks to be available for shorting", March 2025]
+
+### 4.6 Circuit Breaker Comparison
+
+Korea operates the most comprehensive multi-layered circuit breaker system in the Asia-Pacific region.
+
+| Mechanism | Korea (KRX) | Japan (JPX) | Hong Kong (HKEX) | Singapore (SGX) |
+|-----------|-------------|-------------|------------------|-----------------|
+| **Market-Wide Circuit Breaker (MWCB)** | **Yes â 3 stages:** Stage 1: KOSPI drops >= 8% for 1 min â 20-min halt; Stage 2: drops >= 15% (+1%) â 20-min halt; Stage 3: drops >= 20% (+1%) â market closed for the day | **Futures only:** SCB triggered at ~8% decline for Nikkei/TOPIX futures â 10-min halt; cash equity trading continues | **No market-wide CB;** VCM operates at individual security level | **No market-wide CB;** circuit breaker at individual stock level |
+| **Sidecar (SSCB)** | **Yes:** Triggered when KOSPI 200 futures move >= 5% from previous close for 1 min â program trading halted for 5 min | Not applicable | Not applicable | Not applicable |
+| **Volatility Interruption (VI)** | **Yes â dual VI:** Dynamic VI (intra-day price movement) + Static VI (deviation from reference price); applied to individual stocks; triggers 2-minute auction | **Daily price limits** per stock (no intra-day VI equivalent); price limits vary by price level | **VCM:** 10% deviation from reference price (5 min ago) â 5-min cooling-off period; trading within price band continues; applies to HSI/HSCEI constituent stocks and derivatives | **Circuit Breaker:** 10% deviation within 5-min period â 5-min cooling-off; trading within price band; applies to STI and MSCI Singapore Index components |
+| **Daily price limits** | +/- 30% (expanded from +/-15% in June 2015) | Yes: tiered limits based on stock price level | **No daily price limits** | **No daily price limits** |
+| **Recent activation** | March 2026: MWCB triggered on KOSPI amid geopolitical tensions (KOSPI dropped 8.11%) | April 2025: Nikkei 225 futures SCB triggered (index opened down ~9%) | VCM triggered periodically on individual stocks | Rarely triggered |
+
+[Source: KRX, "Circuit Breaker", accessed 2026-04-06; Korea Times, "KRX issues circuit breaker on KOSPI trading", March 2026; HKEX, "VCM", accessed 2026-04-06]
+
+### 4.7 Market Surveillance Comparison
+
+| Aspect | Korea (KRX/FSS) | Japan (JPX-R/SESC) | Hong Kong (SFC) | Singapore (MAS/SGX RegCo) |
+|--------|------------------|---------------------|-----------------|---------------------------|
+| **Primary surveillance entity** | KRX Market Surveillance Division | JPX-R | SFC | SGX RegCo (first-line) + MAS (oversight) |
+| **Technology** | NSDS (Naked Short Selling Detection System) for real-time monitoring; AI-based trade surveillance | AI-powered surveillance introduced April 2025 | SFC integrated surveillance systems | Automated surveillance systems |
+| **Insider trading enforcement** | FSS investigates; FSC imposes sanctions | SESC investigates; refers to JFSA for monetary penalties or prosecutors for criminal cases | SFC: dual track â Market Misconduct Tribunal (civil) or criminal prosecution | MAS: civil penalties or criminal prosecution (joint with CAD) |
+| **Market manipulation enforcement** | FSS investigates; FSC sanctions | SESC investigates and refers | SFC investigates and prosecutes; joint operations with ICAC | MAS investigates; joint operations with CAD |
+| **Cross-border cooperation** | MOUs with major regulators; IOSCO member | SESC International Surveillance Office (est. 2015); IOSCO member | SFC: extensive cross-border MOUs; IOSCO member | MAS: IOSCO member; bilateral MOUs |
+
+### 4.8 Summary Comparison Table
+
+| Dimension | Korea (FSC/FSS/KRX) | Japan (JFSA/SESC/JPX-R) | Hong Kong (SFC/HKEX) | Singapore (MAS/SGX RegCo) |
+|-----------|---------------------|--------------------------|----------------------|---------------------------|
+| **Regulator model** | Dual government regulator (FSC + FSS) | Single regulator (JFSA) with SESC surveillance commission | Single statutory regulator (SFC) | Single integrated regulator (MAS) |
+| **Principal legislation** | FSCMA (2009) | FIEA (1948/2006) | SFO (2003) | SFA (2001) |
+| **Exchange structure** | KRX (sole exchange, SRO) | JPX Group with JPX-R (dedicated SRO) | HKEX (Listing Division + SFC oversight) | SGX Group with SGX RegCo (independent subsidiary) |
+| **Foreign investor access** | IRC/LEI registration required; liberalizing | Open (no registration; FEFTA for sensitive sectors) | Very open (no registration; no FX controls) | Very open (no registration; no FX controls) |
+| **Short selling regime** | Strictest: multiple bans; enhanced penalties; NSDS system | Moderate: permanent naked ban; trigger-based uptick rule; position reporting | Moderate: covered only; designated securities; tick rule | Moderate: prohibited naked; standard enforcement |
+| **Circuit breakers** | Most comprehensive: 3-stage MWCB + SSCB + dual VI + daily limits | Futures SCB + daily price limits (no equity MWCB) | VCM per security (no MWCB; no daily limits) | Per-security CB (no MWCB; no daily limits) |
+| **Corporate governance** | Korean CG Code (comply-or-explain); FSC emphasis on shareholder activism reforms | CG Code + Stewardship Code (both actively revised); PBR initiative | Corporate Governance Code (comply-or-explain); Listing Rules governance requirements | Code of Corporate Governance (comply-or-explain); SGX listing rules |
+| **Cross-border market access** | Limited (no formal market link programs currently) | No formal market link (but open access) | Stock Connect (Shanghai, Shenzhen); Bond Connect; Swap Connect; ETF Connect | GIFT Connect (India); Global Listing Board (Nasdaq, proposed) |
+| **Market cap of listed companies** | ~USD 1.8 trillion (2025) | ~USD 8.1 trillion (March 2026) | ~USD 6.2 trillion (February 2026) | ~USD 0.8 trillion (December 2025) |
+| **Regulatory trend** | Liberalization (IRC abolition, omnibus accounts, short selling resumption); but interventionist streak persists | Market-based reforms (governance codes, PBR initiative); cautious on crypto regulation | Maintaining competitiveness (listing reforms, spread reduction, Stock Connect expansion) | Innovation-friendly (Global Listing Board, integrated regulator efficiency) |
+
+---
+
+## Sources
+
+### Japan
+- [JFSA, "Financial Instruments and Exchange Act"](https://www.fsa.go.jp/en/policy/fiel/index.html)
+- [JPX, "Self-Regulation"](https://www.jpx.co.jp/english/regulation/index.html)
+- [JPX, "Outline of Self-Regulatory Operations"](https://www.jpx.co.jp/english/regulation/outline/about/)
+- [JPX, "Short Selling Restrictions"](https://www.jpx.co.jp/english/equities/trading/regulations/02.html)
+- [JPX, "JPX-R Inspection Plan for FY2025" (PDF)](https://www.jpx.co.jp/english/regulation/maintaining/inspection-plan/tvdivq0000000i5v-att/2025inspection-plan_e.pdf)
+- [SESC Overview (PDF, February 2026)](https://www.fsa.go.jp/sesc/english/aboutsesc/all.pdf)
+- [JFSA, "Revision of the Stewardship Code" (PDF, June 26, 2025)](https://www.fsa.go.jp/en/refer/councils/stewardship/20250626/03.pdf)
+- [ACGA, "Decoding Japan's New Stewardship Code and 2025 FSA Action Programme"](https://www.acga-asia.org/blog-detail.php?id=106)
+- [JPX, "Expert Panel on the Revision of the Corporate Governance Code (2025-2026)"](https://www.jpx.co.jp/english/news/1020/20260403-01.html)
+- [Funds-Axis, "Japan's 2024 FIEA Amendments"](https://funds-axis.com/japans-2024-fiea-amendments-key-shareholder-disclosure-reforms-coming-in-2026/)
+- [DLA Piper, "Recent developments on TOB rules and shareholding transparency in Japan" (January 2026)](https://www.dlapiper.com/en/insights/publications/2026/01/recent-developments-on-tob-rules-and-shareholding-transparency-in-japan)
+- [Lexology, "Japan's 2025 FEFTA Amendments"](https://www.lexology.com/library/detail.aspx?g=5e6022be-3f1e-40e0-9b3c-19834a4b4251)
+- [Harvard Law School Forum, "Tokyo Stock Exchange Initiative on Cost of Capital" (October 2025)](https://corpgov.law.harvard.edu/2025/10/21/tokyo-stock-exchange-initiative-on-cost-of-capital-and-stock-price-conscious-management/)
+- [Chambers and Partners, "Corporate Governance 2025 â Japan"](https://practiceguides.chambers.com/practice-guides/corporate-governance-2025/japan)
+
+### Hong Kong
+- [SFC, "Securities and Futures Ordinance"](https://www.sfc.hk/en/Rules-and-standards/Laws/Securities-and-Futures-Ordinance-with-subsidiary-legislation)
+- [HKEX, "Regulated Short Selling"](https://www.hkex.com.hk/Services/Trading/Securities/Overview/Regulated-Short-Selling?sc_lang=en)
+- [HKEX, "Volatility Control Mechanism" (PDF)](https://www.hkex.com.hk/-/media/HKEX-Market/Services/Trading/Securities/Overview/Trading-Mechanism/Trading-Mechanism-for-VCM_E.pdf)
+- [HKEX, "Stock Connect"](https://www.hkex.com.hk/Mutual-Market/Stock-Connect)
+- [SFC, "Aggregated reportable short positions"](https://www.sfc.hk/en/Regulatory-functions/Market/Short-position-reporting/Aggregated-reportable-short-positions-of-specified-shares)
+- [A&O Shearman, "Hong Kong White-Collar/Financial Crime" (2025)](https://www.aoshearman.com/en/insights/cross-border-white-collar-crime-and-investigations-review-2025/hong-kong-authorities-intensify-crackdown-on-white-collar-crime-and-market-misconduct)
+- [Charltons, "HKEX Listing Rule Changes Effective 4 August 2025"](https://www.charltonslaw.com/hkex-listing-rule-changes-effective-4-august-2025-further-consultation-on-ongoing-public-float/)
+- [Skadden, "HKEX and SFC Reduce Barriers for Specialist Technology Company IPOs" (August 2024)](https://www.skadden.com/insights/publications/2024/08/hkex-and-sfc-reduce-barriers)
+
+### Singapore
+- [MAS, "Securities and Futures Act 2001"](https://www.mas.gov.sg/regulation/acts/securities-and-futures-act)
+- [MAS, "MAS Proposes Legislative and Regulatory Changes to Facilitate Dual Listings on Global Listing Board" (January 2026)](https://www.mas.gov.sg/news/media-releases/2026/mas-proposes-legislative-and-regulatory-changes-to-facilitate-dual-listings-on-global-listing-board)
+- [MAS, "Key Enforcement Actions Taken by MAS in Q4 2025"](https://www.mas.gov.sg/news/media-releases/2026/key-enforcement-actions-taken-by-mas-in-q4-2025)
+- [Sidley Austin, "Monetary Authority of Singapore Outlines Enforcement Priorities for 2025-26" (April 2025)](https://www.sidley.com/en/insights/newsupdates/2025/04/monetary-authority-of-singapore-outlines-enforcement-priorities-for-202526)
+- [SGX RuleBooks, "Practice Note 8.10A â Circuit Breaker"](https://rulebook.sgx.com/rulebook/practice-note-810a-circuit-breaker)
+- [Rajah & Tann, "SGX & MAS Consult on Changes to Listing Rules and SFA"](https://www.rajahtannasia.com/viewpoints/sgx-mas-consult-on-changes-to-listing-rules-and-sfa-to-facilitate-dual-listings-on-sgx-and-nasdaq/)
+
+### Korea
+- [FSC, "Capital Market Reform"](https://fsc.go.kr/eng/po110101/82797)
+- [FSC, "Omnibus Account for Foreign Investors"](https://www.fsc.go.kr/eng/pr010101/22123)
+- [KED Global, "S.Korea shelves financial regulator shake-up" (September 2025)](https://www.kedglobal.com/economy/newsView/ked202509250009)
+- [KED Global, "All listed stocks to be available for shorting" (March 2025)](https://www.kedglobal.com/short-selling/newsView/ked202503300002)
+- [Chambers and Partners, "Financial Services Regulation 2025 â South Korea"](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/south-korea)
+- [Clearstream, "Investment regulation â South Korea"](https://www.clearstream.com/clearstream-en/res-library/market-coverage/investment-regulation-south-korea-1283548)

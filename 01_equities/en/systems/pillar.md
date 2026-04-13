@@ -1,0 +1,426 @@
+# NYSE Pillar -- New York Stock Exchange
+
+> **Last Updated:** 2026-04-06
+> **System Category:** Trading System
+
+---
+
+## 1. System Overview
+
+| Item | Details |
+|------|---------|
+| System Name | NYSE Pillar |
+| Operated By | New York Stock Exchange LLC (subsidiary of Intercontinental Exchange, Inc.) |
+| Purpose | Unified matching engine and trading technology platform for all NYSE Group equities and options markets |
+| Launch Year | 2016 (NYSE Arca Equities first migration); full completion October 2023 |
+| Current Version | Continuously updated; latest public specs dated 2026 |
+| Vendor / In-house | In-house (developed by ICE/NYSE technology teams) |
+
+NYSE Pillar is ICE's integrated trading technology platform that enables member firms to connect to all NYSE equities and options markets using a single, standardized protocol. It replaced multiple legacy systems with a common architecture designed to reduce complexity, enhance consistency, and deliver deterministic low-latency performance across seven exchange venues.
+
+The platform is described officially as "fully integrated, high throughput, low latency, deterministic, and highly redundant."
+
+[Source: NYSE, "NYSE Pillar" product page, https://www.nyse.com/trade/pillar, accessed 2026-04-06]
+
+### System Evolution
+
+| Period | System Name | Key Changes |
+|--------|-------------|-------------|
+| 1976--1984 | DOT (Designated Order Turnaround) | First electronic order routing; automated routing of small (100-share) orders directly to specialists on the floor; not true electronic execution |
+| 1984--2009 | SuperDOT (Super Designated Order Turnaround) | Orders up to 2,000 shares electronically routed to specialists; by 1999, handled 90% of exchange volume; capable of processing 1 billion shares/day; standard response time 60 seconds or less |
+| 2000--2009 | Display Book / Super Display Book (SDBK) | Electronic specialist workstation replacing paper-based order books; SDBK replaced SuperDOT in 2009 |
+| 2001 | Direct+ | First true electronic execution on NYSE; immediate automatic execution of limit orders up to 1,099 shares |
+| 2006 | NYSE Hybrid Market | Combined traditional floor-based auction with electronic matching; sub-second execution; coincided with NYSE-Archipelago merger creating NYSE Arca |
+| 2009--2017 | Universal Trading Platform (UTP) / SFTI | Migration to co-located matching engines at Mahwah data center; standardized infrastructure across NYSE markets |
+| 2016--2023 | NYSE Pillar (phased rollout) | Current-generation unified platform; single protocol across all markets; 95% latency reduction vs. predecessor |
+
+#### Pillar Migration Timeline (Detailed)
+
+| Date | Milestone |
+|------|-----------|
+| Q3 2015 | NYSE Arca Equities begins migration (first market on Pillar) |
+| February 22, 2016 | NYSE Arca Equities goes live on Pillar with initial 3 symbols |
+| February 25, 2016 | 183 symbols migrated |
+| March 16, 2016 | 8,066 symbols migrated; NYSE Arca Equities migration substantially complete |
+| July 24, 2017 | NYSE MKT migrates to Pillar and is rebranded as NYSE American; transitions from floor-based parity model to fully automated price-time priority |
+| 2018 | NYSE National migrates to Pillar |
+| August 2019 | NYSE Equities (main board) completes migration to Pillar |
+| July 26, 2021 | Pillar SIP platform goes live, replacing legacy SIP architecture; new binary protocol based on Pillar wire protocol improves OPRA latency |
+| July 2022 | NYSE Arca Options migrates to Pillar |
+| October 2023 | NYSE American Options completes migration -- final market; all NYSE Group exchanges now on Pillar |
+| March 2025 | NYSE Texas (formerly NYSE Chicago) launches on Pillar |
+
+[Source: MarketsWiki, "NYSE Pillar", https://www.marketswiki.com/wiki/NYSE_Pillar, accessed 2026-04-06]
+[Source: NYSE, "NYSE Pillar migration--adding efficiency to the marketplace", September 2019, https://www.nyse.com/data-insights/nyse-pillar-migration-adding-efficiency-to-the-marketplace, accessed 2026-04-06]
+[Source: NYSE, "NYSE Pillar Options", https://www.nyse.com/pillar-options, accessed 2026-04-06]
+[Source: Markets Media, "NYSE Preps for Final Pillar-Migration Phase", https://www.marketsmedia.com/nyse-preps-for-final-pillar-migration-phase/, accessed 2026-04-06]
+
+---
+
+## 2. Architecture
+
+### 2.1 High-Level Design
+
+- **Deployment model:** On-premise, dedicated data center infrastructure
+- **Topology:** Centralized matching with distributed gateway access
+- **Design pattern:** Event-driven, deterministic processing pipeline
+- **Multi-venue:** Single platform serving 7 exchange venues (NYSE, NYSE American Equities, NYSE Arca Equities, NYSE National, NYSE Texas, NYSE American Options, NYSE Arca Options)
+
+Pillar's architecture resembles modern electronic matching engines, using binary message formats with fixed-length fields for maximum efficiency. The platform employs a distributed channel architecture where market data is partitioned across multiple multicast groups for capacity management.
+
+[Source: Databento, "What is NYSE Pillar?", https://databento.com/microstructure/nyse-pillar, accessed 2026-04-06]
+
+### 2.2 Core Components
+
+| Component | Function | Technology |
+|-----------|----------|------------|
+| Matching Engine | Deterministic order matching for equities and options across all NYSE Group venues; supports auction mechanisms (opening, closing, halt resumption), continuous trading, and complex order types | Custom-built deterministic engine on commodity hardware; binary message processing with fixed-length fields |
+| Pillar Binary Gateway | Lowest-latency order entry; fixed-length binary protocol modeled on FIX semantics; supports TCP/IP with stream-based messaging | Proprietary binary protocol; TCP/IP; stream-oriented with SeqMsgId unique identifiers |
+| Pillar FIX Gateway | FIX 4.2-based order entry with Pillar extensions; broader compatibility at slightly higher latency | FIX 4.2 protocol with NYSE-specific extensions |
+| Pillar Stream Protocol | Underlying transport layer for gateway connections; manages session lifecycle, heartbeats, sequencing | TCP-based stream protocol with Login/Logout, sequenced messaging |
+| Market Data Publisher | Real-time market data dissemination via multicast UDP; supports Top, Deep, and Integrated feeds | Binary multicast UDP; dual redundant multicast groups (Line A / Line B) per channel; TCP-based request server for snapshot recovery |
+| Risk Engine | Pre-trade risk controls including Self-Trade Prevention (STP) using MPID-based or ClientID-based identifiers; session-level throttling | Integrated into gateway layer; 500 messages per rolling 100ms throttle rate |
+| Auction Engine | Opening, closing, and halt/resumption auctions with imbalance dissemination; DMM integration for NYSE-listed securities | Publishes imbalance messages during auction periods; DMM facilitation for price discovery |
+| Surveillance | Market surveillance and regulatory oversight; NYSE is an SRO with regulatory services agreements with FINRA | Separate surveillance infrastructure [details not publicly disclosed] |
+| Trade Operations Portal (TOP) | Web-based management tool for firms to manage functions across NYSE equities and options markets | Web application with customizable interface and unified login |
+
+### 2.3 Technology Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Programming Language | Not publicly disclosed; industry inference suggests C/C++ for matching engine and gateway components [unverified] |
+| Operating System | Linux-based [unverified; consistent with industry standard for exchange matching engines] |
+| Hardware | Commodity server hardware; custom-built deterministic matching engine; no confirmed use of FPGA acceleration [unverified] |
+| Network | ICE Global Network (IGN); SFTI (Secure Financial Transaction Infrastructure); 1G/10G/40G/100G Ethernet connectivity options; multicast UDP for market data; TCP/IP for order entry |
+| Database | Not publicly disclosed |
+| Messaging/Middleware | Binary multicast UDP for market data distribution; TCP stream-based messaging for order entry; dual-path redundancy (Line A/B) for market data |
+| Byte Order | Little Endian for binary protocol fields |
+
+[Source: NYSE, "NYSE Pillar Gateway Binary Protocol Specification", https://www.nyse.com/publicdocs/nyse/NYSE_Pillar_Gateway_Binary_Protocol_Specification.pdf, accessed 2026-04-06]
+[Source: NYSE, "Pillar Common Client Specification", https://www.nyse.com/publicdocs/nyse/data/Pillar_Common_Client_Specification_v2.6c.pdf, accessed 2026-04-06]
+
+---
+
+## 3. Performance Specifications
+
+### Current Latency (Q4 2025 Production Data)
+
+All figures in microseconds; measured at gateway level (excludes NYSE edge network of approximately 10 microseconds additional).
+
+| Market | Protocol | P01 | P50 (Median) | P90 | P99 | P99.9 |
+|--------|----------|-----|--------------|-----|-----|-------|
+| NYSE | Binary | 27 | 34 | 51 | 136 | 1,240 |
+| NYSE | FIX | 37 | 48 | 70 | 109 | 1,477 |
+| NYSE American | Binary | 33 | 40 | 49 | 87 | 373 |
+| NYSE American | FIX | 53 | 75 | 112 | 133 | 742 |
+| NYSE Arca | Binary | 25 | 31 | 44 | 91 | 258 |
+| NYSE Arca | FIX | 34 | 43 | 63 | 98 | 130 |
+| NYSE Texas | Binary | 17 | 21 | 35 | 48 | 77 |
+| NYSE Texas | FIX | 21 | 27 | 66 | 108 | 4,953 |
+| NYSE National | Binary | 30 | 36 | 46 | 81 | 343 |
+| NYSE National | FIX | 46 | 61 | 101 | 117 | 129 |
+
+**Notes:**
+- Measurement period: 9:30 AM -- 4:00 PM ET (core trading hours)
+- NYSE Texas shows fastest median latency (21 microseconds Binary) -- likely due to lower symbol count and traffic volume
+- NYSE Arca shows second-best median (31 microseconds Binary)
+- NYSE main board at 34 microseconds median (Binary) reflects higher complexity from DMM integration and floor broker interaction
+
+[Source: NYSE, "NYSE Pillar" product page, gateway latency metrics Q4 2025, https://www.nyse.com/trade/pillar, accessed 2026-04-06]
+
+### Aggregate Performance Metrics
+
+| Metric | Value | Conditions |
+|--------|-------|------------|
+| Round-trip Latency (median, Binary) | 21--40 microseconds | Varies by venue; Q4 2025 production |
+| Round-trip Latency (median, FIX) | 27--75 microseconds | Varies by venue; Q4 2025 production |
+| Round-trip Latency (99th percentile, Binary) | 48--136 microseconds | Varies by venue; Q4 2025 production |
+| Order Processing Rate (per session) | 5,000 messages/second | 500 messages per rolling 100 milliseconds |
+| Pre-Pillar Session Rate | 1,000 messages/second | Legacy system comparison |
+| Throughput Improvement | 5x increase | Per session; session fees unchanged |
+| Peak Daily Trading Volume | ~1.54 billion shares/day | November 2025 across NYSE markets |
+| Uptime SLA | 99.99%+ target | NYSE regulatory obligation as SRO [estimated] |
+
+### Performance History (Latency Improvement from Pre-Pillar)
+
+| Year | Latency (FIX) | Latency (Binary) | Notes |
+|------|---------------|-------------------|-------|
+| Pre-2019 (UTP) | ~592 microseconds | ~96 microseconds | Legacy Universal Trading Platform |
+| 2019 (post-migration) | ~32 microseconds | ~26 microseconds | Initial Pillar deployment; 95% reduction |
+| 2025 Q4 | 48 microseconds (NYSE median) | 34 microseconds (NYSE median) | Production statistics across all venues |
+
+**99th Percentile Improvement:** 92% improvement in P99 latency consistency compared to pre-Pillar systems, providing more deterministic performance regardless of market conditions.
+
+[Source: NYSE, "NYSE Pillar migration--adding efficiency to the marketplace", September 2019, https://www.nyse.com/data-insights/nyse-pillar-migration-adding-efficiency-to-the-marketplace, accessed 2026-04-06]
+
+---
+
+## 4. Interfaces & Protocols
+
+### 4.1 Order Entry
+
+| Protocol | Version | Description |
+|----------|---------|-------------|
+| Pillar Binary Gateway | Latest (2025/2026 spec) | Lowest-latency order entry; fixed-length binary messages; modeled on FIX semantics but optimized for performance; TCP/IP stream-based; supports all NYSE Group equities and options markets |
+| Pillar FIX Gateway | FIX 4.2-based | Standard FIX protocol with NYSE Pillar extensions; broader compatibility with existing firm infrastructure; slightly higher latency than Binary (~14 microseconds additional at median) |
+| Floor Broker OMS FIX | FIX 4.2-based | Specialized protocol for NYSE floor broker order management systems; supports floor-based order entry for NYSE-listed securities |
+| Algo Provider FIX | FIX 4.2-based | Protocol for algorithmic trading providers connecting to NYSE |
+| IOI FIX | FIX-based | Indications of Interest protocol for pre-trade communication |
+
+**Session Architecture:**
+- All inbound/outbound messaging conducted over streams
+- Two primary streams: TG (Trader to Gateway) and GT (Gateway to Trader)
+- REF (Reference Data) stream provides Symbol Reference Data with SymbolID for security identification
+- SeqMsgId provides globally unique message identification across all firms and indefinitely across time
+- TCP/IP connectivity with Login authentication
+- Configurable throttle behavior: Queue-and-Process or Queue-and-Reject when session is throttled
+
+**Self-Trade Prevention (STP):**
+- MPID-based STP: prevents self-trades based on Market Participant Identifier
+- ClientID-based STP: finer-grained prevention using client-assigned identifiers
+- Configurable per session
+
+[Source: NYSE, "NYSE Pillar Gateway Binary Protocol Specification", 2025, https://www.nyse.com/publicdocs/nyse/NYSE_Pillar_Gateway_Binary_Protocol_Specification.pdf]
+[Source: NYSE, "NYSE Pillar Gateway FIX Protocol Specification", https://www.nyse.com/publicdocs/nyse/NYSE_Pillar_Gateway_FIX_Protocol_Specification.pdf]
+[Source: NYSE, "Pillar Gateway FAQ", https://www.nyse.com/publicdocs/NYSE_Pillar_Gateway_Frequently_Asked_Questions_(FAQ).pdf]
+
+### 4.2 Market Data Dissemination
+
+| Feed | Protocol | Description | Data Content |
+|------|----------|-------------|-------------|
+| NYSE Pillar Top (BBO) | Binary multicast UDP | Top-of-book best bid/offer | Best bid/ask prices, sizes, last sale |
+| NYSE Pillar Deep | Binary multicast UDP | Full depth-of-book | All price levels with aggregate sizes |
+| NYSE Pillar Integrated Feed | Binary multicast UDP | Combined depth + trades | Full order book depth plus trade reports |
+| NYSE Alerts | Binary multicast UDP | Auction and regulatory information | Imbalance data, regulatory halts, auction indicators |
+| NYSE ArcaBook | Binary multicast UDP | Full depth-of-book for NYSE Arca | Arca-specific order book data |
+| NYSE OpenBook | Binary multicast UDP | Aggregated limit-order book for NYSE | NYSE-specific depth data |
+
+**Market Data Architecture:**
+- Distributed channel architecture with data partitioned across multiple multicast groups
+- Dual redundant multicast groups per channel (Line A and Line B) for failover
+- All Pillar feeds published from Mahwah data center
+- TCP-based Request Server for snapshot recovery and retransmission (missed message recovery)
+- Binary message format with fixed-length fields; most fields binary, small number in ASCII
+- Messages bundled into application packets for efficient network utilization
+- Little Endian byte ordering
+
+**XDP to Pillar Data Feed Migration:**
+- Legacy XDP (Exchange Data Protocol) feeds have been replaced by Pillar-native proprietary data feeds
+- XDP market data feed handlers are NOT compatible with Pillar feeds; participants must recode to Pillar specifications
+- New IP addresses required for Pillar data feeds
+
+[Source: NYSE, "Pillar Common Client Specification v2.6c", https://www.nyse.com/publicdocs/nyse/data/Pillar_Common_Client_Specification_v2.6c.pdf]
+[Source: Databento, "What is NYSE Pillar?", https://databento.com/microstructure/nyse-pillar, accessed 2026-04-06]
+
+### 4.3 Consolidated Data (SIP)
+
+| Feed | Description |
+|------|-------------|
+| CTS (Consolidated Tape System) | Consolidated last-sale/trade data -- Network A (NYSE-listed), Network B (NYSE Arca/American/regional) |
+| CQS (Consolidated Quotation System) | Consolidated quote data with NBBO calculation |
+| OPRA (Options Price Reporting Authority) | Consolidated options market data; migrated to Pillar SIP platform July 2021 with significant latency improvement |
+
+The Pillar SIP platform replaced the legacy SIP architecture on July 26, 2021, introducing a new binary protocol based on the Pillar wire protocol.
+
+### 4.4 Drop Copy / Trade Reporting
+
+- Drop copy sessions available through Pillar FIX and Binary gateways
+- FINRA/NYSE Trade Reporting Facility (TRF) for off-exchange trade reporting
+- Technology migration of TRF to Pillar platform ongoing [Source: NYSE, "FINRA/NYSE TRF Technology Migration", https://www.nyse.com/trf-migration]
+
+### 4.5 Reference Data
+
+- Symbol Reference Data published on the REF stream at session start
+- SymbolID serves as the unique security identifier within Pillar
+- Reference data includes trading parameters, lot sizes, tick sizes, and other governing information
+- IP addresses and port numbers for all feeds published at: https://www.nyse.com/publicdocs/nyse/data/IP_Addresses.xlsx
+
+---
+
+## 5. Resilience & Business Continuity
+
+### 5.1 Redundancy
+
+- **Matching engine redundancy:** Deterministic design allows for consistent state replication [unverified -- specific internal redundancy mechanism not publicly disclosed]
+- **Market data redundancy:** Dual multicast groups (Line A and Line B) per channel; clients should subscribe to both and arbitrate between them
+- **Gateway redundancy:** Multiple gateway sessions available per firm; firms can distribute order flow across sessions
+- **Network redundancy:** ICE Global Network (IGN) provides redundant fiber connectivity; multiple carrier options via Carrier Meet Me Room (MMR) at Mahwah
+- **Power redundancy:** 28 MW total site power at Mahwah; 48 hours of emergency generator fuel storage; 2N power configuration at Cermak DR
+
+### 5.2 Disaster Recovery
+
+| Aspect | Details |
+|--------|---------|
+| Primary Site | US Liquidity Center (USLC), 1700 MacArthur Blvd, Mahwah, NJ |
+| DR Site | 350 East Cermak, Chicago, IL (ICE leases ~4,000 sq ft caged space) |
+| Configuration | Active/Passive -- only one site operational at a time |
+| Failover Type | Cold start at DR site; manual activation process |
+| IP Addressing | DR site uses different IP addresses and ports; connections to production IPs are NOT redirected to DR |
+| Client Action | Firms must proactively target DR IP and Port for sessions at the DR site |
+| DR Power | Up to 540 kW in 2N configuration; one 2,000 kW backup generator |
+
+**Key Characteristics:**
+- When primary site is up, the DR site is down (and vice versa)
+- All Pillar feeds will be cold-started at Cermak in case of catastrophic failure at Mahwah
+- Firms must maintain separate DR connectivity configurations
+- DR testing conducted periodically [schedule not publicly disclosed]
+
+**Notable Incident (June 2024):** A manual error left the DR backup system running improperly, causing trading anomalies in certain securities -- highlighting the manual nature of the failover process and the operational risk inherent in the active/passive DR model.
+
+[Source: NYSE, "Disaster Recovery FAQ", September 2025, https://www.nyse.com/publicdocs/nyse/DisasterRecoveryFAQs.pdf]
+
+### 5.3 Primary Data Center: Mahwah USLC
+
+| Specification | Details |
+|---------------|---------|
+| Location | 1700 MacArthur Blvd, Mahwah, NJ (34 miles from Wall Street) |
+| Building Size | 396,000 sq ft, two-story facility on 28-acre site |
+| White Space | Scalable to 100,000 sq ft at 15 watts/sq ft |
+| Total Power | 28 MW site power |
+| Backup Power | 48 hours emergency generator fuel storage |
+| Design Standard | Tier 4-guided |
+| Opened | 2010 |
+| Connectivity | 1G, 10G, 40G, 100G Ethernet; Carrier Meet Me Room |
+| Colocation | Available to member firms and authorized participants; direct cross-connects to matching engines |
+| Wireless | Purpose-built microwave/millimeter-wave routes to NJ/NY trading hubs |
+
+[Source: NYSE, "Data Center Colocation Services", https://www.nyse.com/connectivity/colo]
+[Source: ICE, "IGN Colocation Mahwah Technical Specifications", September 2024, https://www.nyse.com/publicdocs/IGN_Colocation_Mahwah_Technical_Specs.pdf]
+
+### 5.4 Capacity Management
+
+- Session throttle rate: 500 messages per rolling 100 milliseconds (5,000 msg/sec)
+- Configurable throttle handling: Queue-and-Process or Queue-and-Reject
+- Market data distributed across multiple multicast channels to manage bandwidth
+- Symbol distribution across channels for load balancing
+- 5x throughput improvement over predecessor system at no additional session cost
+
+---
+
+## 6. Notable Technical Features
+
+### 6.1 Multi-Exchange Platform
+Pillar is unique in serving as the single technology platform for seven distinct exchange venues, each with its own market model, fee schedule, and regulatory framework:
+- **NYSE** -- Hybrid auction/electronic with DMMs and floor brokers; parity/priority allocation
+- **NYSE American Equities** -- Fully automated; price-time priority (transitioned from floor-based parity model in 2017)
+- **NYSE Arca Equities** -- All-electronic; price-time priority; premier ETP venue
+- **NYSE National** -- All-electronic with inverted fee model (rebates for taking liquidity)
+- **NYSE Texas** -- All-electronic (launched March 2025; rebranded from NYSE Chicago)
+- **NYSE American Options** -- Options exchange
+- **NYSE Arca Options** -- Options exchange
+
+### 6.2 DMM (Designated Market Maker) Integration
+NYSE is the only U.S. equity exchange with physical floor-based trading integrated into an electronic matching engine. The Pillar platform supports:
+- Electronic and manual DMM interaction on the NYSE main board
+- DMM-facilitated opening and closing auctions with imbalance dissemination
+- Floor broker order entry via specialized FIX protocol
+- Supplemental Liquidity Provider (SLP) programs
+- Current DMM firms: Citadel Securities, GTS Securities, Virtu Americas
+
+### 6.3 Parity/Priority Allocation Model
+NYSE's unique allocation model, supported within Pillar:
+- Rewards participants who set the best price (priority to first-to-set-price)
+- Remaining shares at that price allocated via parity among: floor broker interest, DMM interest, and electronic limit order book
+- Contrasts with pure price-time priority used by most other U.S. exchanges
+- NYSE American transitioned from parity to price-time priority upon Pillar migration (July 2017)
+
+[Source: NYSE, "Parity/Priority Explainer", https://beta.nyse.com/trade/parity-priority-explainer]
+
+### 6.4 Auction Mechanism
+- Opening auction with DMM facilitation for NYSE-listed securities
+- Closing auction with imbalance publication starting at 3:50 PM ET
+- Halt resumption auctions
+- Imbalance messages published during auction periods for transparency
+- MOC (Market-on-Close) and LOC (Limit-on-Close) order support
+
+### 6.5 Deterministic Processing
+- Fixed processing pipeline designed for consistent, predictable latency
+- 92% improvement in 99th percentile latency consistency over predecessor
+- Deterministic matching ensures fair and reproducible order processing
+
+### 6.6 Single Protocol Connectivity
+- One Binary or FIX protocol specification covers all NYSE Group equities and options markets
+- Reduces integration complexity and time-to-market for member firms
+- Symbol Reference Data (SymbolID) provides unified security identification
+
+---
+
+## 7. Comparison Notes
+
+### vs. KRX Systems
+
+| Aspect | NYSE Pillar | KRX Exture+ |
+|--------|------------|----------------|
+| Launch Year | 2016 (phased); completion 2023 | 2014 |
+| Developer | In-house (ICE/NYSE) | In-house (KRX with Koscom subsidiary) |
+| Venues Served | 7 exchange venues (equities + options) | Single unified platform (KOSPI, KOSDAQ, derivatives, bonds) |
+| Median Latency (order entry) | 21--40 microseconds (Binary, varies by venue) | ~70 microseconds (matching engine) |
+| Latency Improvement vs. Prior | 95% reduction (from ~592 microseconds FIX / ~96 microseconds Binary) | ~285x improvement (from 20,000 microseconds on EXTURE) |
+| Session Throughput | 5,000 messages/second per session | Not publicly disclosed at per-session level |
+| Matching Model | Multiple models per venue (parity/priority for NYSE, price-time for others) | Price-time priority |
+| Floor Trading Integration | Yes -- unique DMM and floor broker integration on NYSE main board | No -- fully electronic |
+| Market Data Protocol | Proprietary binary multicast UDP (Pillar feeds) | Proprietary binary [unverified]; Solace PubSub+ messaging middleware |
+| Order Entry Protocol | Pillar Binary Gateway + FIX 4.2 | FIX-based + proprietary API [unverified] |
+| Primary Data Center | Mahwah, NJ (396,000 sq ft) | Busan Data Center (primary since 2014 relocation) |
+| DR Site | Cermak, Chicago (cold start) | Seoul DR site [unverified] |
+| DR Model | Active/Passive (cold start) | Active/Standby [unverified] |
+| Asset Class Coverage | Equities and listed options only | Equities, bonds, derivatives (futures/options on indices, currencies, interest rates, metals, agriculture), ETFs, warrants |
+| Regulatory Model | SRO (self-regulatory) with FINRA agreements | Under Financial Services Commission (FSC) / Financial Supervisory Service (FSS) oversight |
+| Technology Export | NYSE technology not directly exported (ICE operates global exchanges) | KRX exports Exture+ to other countries (Laos, Cambodia, others); one of few exchanges globally with this capability |
+
+### Key Differentiators
+
+**NYSE Pillar Strengths:**
+1. **Ultra-low latency**: Median Binary latency of 21--40 microseconds across venues is competitive with global best-in-class
+2. **Multi-venue unification**: Single protocol serving 7 distinct exchange venues with different market models -- operationally unique
+3. **DMM/floor integration**: Only U.S. equity exchange maintaining physical floor-based auction combined with electronic matching
+4. **Parity allocation model**: Unique allocation mechanism promoting deeper liquidity and diversity of participation
+5. **Scale**: Supports ~$80+ billion daily notional value and ~1.5+ billion shares daily across NYSE Group
+6. **Deterministic performance**: 92% P99 improvement provides high confidence in execution quality
+
+**KRX Exture+ Strengths:**
+1. **Broader asset class coverage**: Single platform handles equities, bonds, and all derivatives classes
+2. **Technology independence**: Fully in-house development with exportable technology platform
+3. **Simpler DR model**: [unverified] Potentially more robust DR given single-venue architecture
+4. **Global competitiveness**: 70-microsecond latency competitive at global top-tier level
+5. **Unified market**: Single exchange covering all Korean capital market products reduces cross-venue complexity
+
+**Architectural Comparison:**
+- NYSE Pillar prioritizes protocol unification across multiple independent venues with different market models -- a "many-to-one" technology approach
+- KRX Exture+ prioritizes asset-class unification within a single venue -- an "all-in-one" approach
+- NYSE's cold-start DR model is simpler but carries longer recovery time compared to warm/hot standby approaches used by some Asian exchanges
+- KRX's use of Solace PubSub+ as messaging middleware is a notable infrastructure choice; NYSE uses custom binary multicast
+
+---
+
+## Sources
+
+### Official NYSE/ICE Documentation
+- [Source: NYSE, "NYSE Pillar" product page, https://www.nyse.com/trade/pillar, accessed 2026-04-06]
+- [Source: NYSE, "NYSE Pillar migration--adding efficiency to the marketplace", September 2019, https://www.nyse.com/data-insights/nyse-pillar-migration-adding-efficiency-to-the-marketplace, accessed 2026-04-06]
+- [Source: NYSE, "NYSE Pillar Options", https://www.nyse.com/pillar-options, accessed 2026-04-06]
+- [Source: NYSE, "NYSE Pillar Gateway Binary Protocol Specification", 2025, https://www.nyse.com/publicdocs/nyse/NYSE_Pillar_Gateway_Binary_Protocol_Specification.pdf, accessed 2026-04-06]
+- [Source: NYSE, "NYSE Pillar Gateway FIX Protocol Specification", https://www.nyse.com/publicdocs/nyse/NYSE_Pillar_Gateway_FIX_Protocol_Specification.pdf, accessed 2026-04-06]
+- [Source: NYSE, "Pillar Common Client Specification v2.6c", https://www.nyse.com/publicdocs/nyse/data/Pillar_Common_Client_Specification_v2.6c.pdf, accessed 2026-04-06]
+- [Source: NYSE, "Pillar Gateway FAQ", https://www.nyse.com/publicdocs/NYSE_Pillar_Gateway_Frequently_Asked_Questions_(FAQ).pdf, accessed 2026-04-06]
+- [Source: NYSE, "Disaster Recovery FAQ", September 2025, https://www.nyse.com/publicdocs/nyse/DisasterRecoveryFAQs.pdf, accessed 2026-04-06]
+- [Source: NYSE, "Parity/Priority Explainer", https://beta.nyse.com/trade/parity-priority-explainer, accessed 2026-04-06]
+- [Source: NYSE, "NYSE Pillar Stream Protocol Specification", https://www.nyse.com/publicdocs/nyse/NYSE_Pillar_Stream_Protocol_Specification.pdf, accessed 2026-04-06]
+- [Source: ICE, "IGN Colocation Mahwah Technical Specifications", September 2024, https://www.nyse.com/publicdocs/IGN_Colocation_Mahwah_Technical_Specs.pdf, accessed 2026-04-06]
+- [Source: NYSE, "Data Center Colocation Services", https://www.nyse.com/connectivity/colo, accessed 2026-04-06]
+- [Source: NYSE, "FINRA/NYSE TRF Technology Migration", https://www.nyse.com/trf-migration, accessed 2026-04-06]
+
+### Third-Party Sources
+- [Source: Databento, "What is NYSE Pillar?", https://databento.com/microstructure/nyse-pillar, accessed 2026-04-06]
+- [Source: MarketsWiki, "NYSE Pillar", https://www.marketswiki.com/wiki/NYSE_Pillar, accessed 2026-04-06]
+- [Source: Markets Media, "NYSE Preps for Final Pillar-Migration Phase", https://www.marketsmedia.com/nyse-preps-for-final-pillar-migration-phase/, accessed 2026-04-06]
+- [Source: FinTech Futures, "NYSE launches new trading tech platform, NYSE Pillar", https://www.fintechfutures.com/fintech/nyse-launches-new-trading-tech-platform-nyse-pillar/, accessed 2026-04-06]
+- [Source: Wikipedia, "SuperDot", https://en.wikipedia.org/wiki/SuperDot, accessed 2026-04-06]
+- [Source: Pico, "NYSE Pillar", https://www.pico.net/kb/nyse-pillar/, accessed 2026-04-06]
+- [Source: Federal Register, "NYSE MKT LLC Pillar Migration Rule Change", https://www.federalregister.gov/documents/2017/05/10/2017-09419/, accessed 2026-04-06]
+
+### KRX/Exture+ Sources
+- [Source: KRX, "EXTURE+ Trading", https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp, accessed 2026-04-06]
+- [Source: Koscom, "KRX Trading System", https://english.koscom.co.kr/eng/main/contents.do?menuNo=300005, accessed 2026-04-06]
+- [Source: PRWeb/Solace, "Korea Exchange Deploys Solace Systems", October 2013, https://www.prweb.com/releases/2013/10/prweb11191574.htm, accessed 2026-04-06]
+- [Source: The Korea Times, "KRX globally recognized as leading bourse operator", March 2020, https://www.koreatimes.co.kr/economy/20200301/interview-krx-globally-recognized-as-leading-bourse-operator, accessed 2026-04-06]

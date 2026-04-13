@@ -1,0 +1,832 @@
+# ASX Derivatives (Australian Securities Exchange)
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 2
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | ASX Limited — Derivatives Markets (operating ASX 24 and ASX Trade equity options) |
+| Abbreviation | ASX Derivatives / ASX 24 |
+| Website | https://www.asx.com.au/markets/trade-our-derivatives-market |
+| Year Established | 1960 (Sydney Greasy Wool Futures Exchange, predecessor); 1972 renamed Sydney Futures Exchange (SFE); 2006 merged into ASX Limited |
+| Country / City | Australia / Sydney (Exchange Centre, 20 Bridge Street, Sydney NSW 2000) |
+| Ownership Structure | Part of ASX Limited, which is publicly listed on its own exchange (ticker: ASX); ~50% retail investors, ~49% institutional |
+| Parent Company / Group | ASX Limited (self-listed holding company) |
+| Regulatory Authority | Australian Securities and Investments Commission (ASIC); Reserve Bank of Australia (RBA) for clearing and settlement stability |
+| CEO (ASX Limited) | Helen Lofthouse (appointed August 2022) |
+| FY2025 Operating Revenue (ASX Group) | AUD 1,107.2 million (+7.0% YoY) |
+| FY2025 Underlying Net Profit (ASX Group) | AUD 510.0 million (+7.5% YoY) |
+| Derivatives Trading Platforms | ASX 24 (futures and options on interest rates, equity indices, commodities, energy, environmental products); ASX Trade (equity options — Exchange Traded Options / ETOs) |
+| Clearing Houses | ASX Clear (equity options, equity-related derivatives); ASX Clear (Futures) (exchange-traded futures, OTC interest rate derivatives) |
+| Listed Derivatives Instruments | Futures and options across interest rates, equity indices (SPI 200), equity options (ETOs on ~70 underlying stocks and indices), grain, energy, and environmental products |
+| Annual Derivatives Volume (CY2025) | Interest rate futures: record Q4 2025 volumes (+23% YoY); equity derivatives: ~13.6 million futures and options/month (mid-2025); OTC Clearing: A$2.19 trillion notional in Q4 2025 |
+| OTC Interest Rate Open Interest | A$4.124 trillion notional (end December 2025) |
+
+[Source: ASX Annual Report FY2025; ASX Rates Highlights Q4 2025; ASX Equity Derivatives Statistics; ASX website, "Trade our derivatives market"]
+
+### Key Historical Milestones
+
+- **1960:** Sydney Greasy Wool Futures Exchange established — Australia's first futures exchange
+- **1972:** Renamed Sydney Futures Exchange (SFE)
+- **1979:** SFE launched 90-Day Bank Accepted Bill Futures — the first financial futures contract listed outside the United States
+- **1980:** SFE introduced US dollar futures — among the first futures contracts globally to incorporate cash settlement
+- **1983:** SFE launched the All Ordinaries Share Price Index (SPI) futures contract — the first stock index futures product outside the United States
+- **1989:** SFE launched SYCOM (Sydney Computerised Overnight Market), the first after-hours electronic trading platform for an Australian exchange
+- **1992:** SFE launched 3 Year and 10 Year Commonwealth Treasury Bond Futures
+- **1998:** SFE demutualised and listed on ASX
+- **1999:** SFE transitioned to fully electronic trading, closing its floor-based open outcry trading pits
+- **2000:** SFE adopted the OM (now Nasdaq) CLICK trading platform
+- **2005:** SFE launched d-cypha Trade, its electricity and environmental derivatives trading platform
+- **2006 (7 July):** ASX merged with SFE to form ASX Limited, creating a vertically integrated multi-asset exchange group; the Australian Competition and Consumer Commission (ACCC) approved the merger on 24 May 2006
+- **2010:** ASX launched ASX Trade (powered by Nasdaq OMX Genium INET) for equities and equity options; latency improved from 30 milliseconds to 300 microseconds; capacity increased from 20,000 to 100,000 orders per second
+- **2012:** ASIC assumed direct market supervision of ASX and ASX 24, ending ASX's self-regulatory role; Chi-X (now Cboe Australia) launched as a competing market
+- **2013:** ASX launched the Australian Liquidity Centre (ALC), a purpose-built data centre and co-location facility at Gore Hill, Sydney
+- **2014:** ASX established OTC clearing for interest rate derivatives via ASX Clear (Futures)
+- **2016:** ASX launched ASX 24 New Trading Platform (NTP), a technology upgrade for the derivatives trading platform
+- **2025 (July):** ASX re-established 3 Year Treasury Bond Futures tick size to 0.5 basis points (from 1 basis point); Bond-Roll De-Linking implemented to improve market microstructure
+- **2025 (Q4):** Record interest rate derivatives trading volumes — Q4 2025 up 23% vs Q4 2024
+- **2026 (March):** ASX and LSEG announced agreement to modernise and upgrade ASX 24 trading platform; target go-live first half 2028
+- **2026 (April):** CHESS Release 1 (clearing component replacement) targeted for go-live on 20 April 2026
+
+[Source: Wikipedia, "Australian Securities Exchange"; MarketsWiki, "Australian Securities Exchange"; ASX website, "ASX Story"; ACCC media release, May 2006; ASX press releases 2025-2026; FinanceFeeds, "ASX and LSEG Agree Technology Upgrade", March 2026; The TRADE, "ASX introduces high-speed trading platform", 2010]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments / Asset Classes
+
+ASX Derivatives is organised across two main trading platforms and multiple asset classes:
+
+| Platform | Asset Class | Products | Key Contracts |
+|----------|-------------|----------|---------------|
+| **ASX 24** | Interest Rate — Short-Term | Futures and options | 30-Day Interbank Cash Rate (IB) Futures, 90-Day Bank Accepted Bill Futures |
+| **ASX 24** | Interest Rate — Bonds | Futures and options | 3 Year, 5 Year, 10 Year, 20 Year Commonwealth Treasury Bond Futures; Term Options; One Session Options |
+| **ASX 24** | Equity Index | Futures | ASX SPI 200 Futures, Mini SPI 200 Futures |
+| **ASX Trade** | Equity Options (ETOs) | Options on individual stocks and indices | ~70 underlying equity classes; ASX 200 Index Options |
+| **ASX 24** | Grain | Futures and options | Eastern Australia Wheat, Eastern Australia Feed Barley, WA Wheat |
+| **ASX 24** | Energy | Futures and options | Australian Electricity Base Load Futures (NSW, VIC, QLD, SA nodes); NZ Electricity Futures (Otahuhu, Benmore nodes); Australian Morning/Evening Peak Electricity Futures |
+| **ASX 24** | Environmental | Futures | Australian Carbon Credit Unit (ACCU) Futures, NZ Emissions Unit (NZU) Futures, Large-scale Generation Certificate (LGC) Futures |
+| **ASX Clear (Futures)** | OTC Interest Rates | Cleared OTC derivatives | AUD and NZD interest rate swaps, overnight index swaps, forward rate agreements |
+
+[Source: ASX website, "Trade our derivatives market"; ASX website, "Interest rate derivatives"; ASX website, "Grain derivatives"; ASX Energy website; ASX Environmental Futures fact sheet 2024]
+
+### 2.2 Trading Sessions / Hours
+
+**Note:** Australian Eastern Standard Time (AEST) is UTC+10; Australian Eastern Daylight Time (AEDT) is UTC+11 (first Sunday in October to first Sunday in April). Times below are expressed in AEST/AEDT with UTC equivalents.
+
+ASX 24 operates near-24-hour trading for key products, with separate day and night sessions.
+
+**Interest Rate Derivatives (3Y, 10Y Bond Futures, 90-Day Bills, IB Futures)**
+
+| Session | Local Time (AEST) | UTC (AEST period) | Description |
+|---------|-------------------|---------------------|-------------|
+| **Night Session** | 5:10 PM – 7:00 AM +1 | 07:10 – 21:00 | Extended trading spanning European and U.S. hours |
+| **Day Pre-Open** | 8:28 AM – 8:30 AM | 22:28 – 22:30 | Order entry; price discovery auction |
+| **Day Session** | 8:30 AM – 4:30 PM | 22:30 – 06:30 | Main trading session aligned with Australian business hours |
+
+**ASX SPI 200 Index Futures**
+
+| Session | Local Time (AEST) | UTC (AEST period) | Description |
+|---------|-------------------|---------------------|-------------|
+| **Night Session** | 5:10 PM – 7:00 AM +1 | 07:10 – 21:00 | Extended hours (adjusted for U.S. daylight saving: to 8:00 AM during U.S. non-DST) |
+| **Day Pre-Open** | 9:50 AM | 23:50 | Pre-open |
+| **Day Session** | 9:50 AM – 4:30 PM | 23:50 – 06:30 | Main session aligned with ASX cash market |
+
+**Equity Options (ETOs) — Traded on ASX Trade**
+
+| Session | Local Time (AEST) | UTC (AEST period) |
+|---------|-------------------|---------------------|
+| **Pre-Open** | 9:50 AM – 10:00 AM | 23:50 – 00:00 |
+| **Trading** | 10:00 AM – 4:00 PM | 00:00 – 06:00 |
+| **Post-Trading Adjustments** | 4:00 PM – 4:20 PM | 06:00 – 06:20 |
+
+**Grain Futures** — Day session only, generally 10:00 AM – 3:00 PM AEST [unverified]
+
+**Energy and Environmental Derivatives** — Variable by product; electricity futures generally follow ASX 24 standard sessions
+
+[Source: ASX website, "Trading hours and calendars"; ASX website, "Index derivatives trading hours"; ASX website, "Interest rate derivatives trading hours"; SPI Futures website, "Contract Specifications"; ASX 24 Schedule Timings v1.02, October 2023]
+
+### 2.3 Tick Sizes (Selected Products)
+
+| Product | Tick Size | Tick Value (approx.) |
+|---------|-----------|---------------------|
+| ASX SPI 200 Futures | 1 index point | A$25.00 |
+| Mini SPI 200 Futures | 1 index point | A$5.00 |
+| 3 Year Treasury Bond Futures | 0.005% (0.5 basis points) — changed July 2025 | ~A$14.19 (varies with yield) |
+| 10 Year Treasury Bond Futures | 0.005% (0.5 basis points); 0.002% during expiry period | ~A$30.90 (varies with yield) |
+| 20 Year Treasury Bond Futures | 0.005% (0.5 basis points) [unverified] | Varies with yield |
+| 30-Day Interbank Cash Rate (IB) Futures | 0.005% (0.5 basis points) | ~A$12.33 |
+| 90-Day Bank Bill Futures | 0.01% (1 basis point) | ~A$24.66 |
+| Eastern Australia Wheat Futures | A$0.50 per tonne [unverified] | A$10.00 [unverified] |
+| NZ Electricity Futures (Base Load) | NZ$0.05 per MWh | Varies by contract quarter |
+
+**Note:** For ASX bond futures, the tick value is not constant — it varies with the level of yields because the contract is quoted as 100 minus yield. The values above are approximate mid-range estimates.
+
+[Source: ASX 24 Contract Specifications document; ASX 3 Year Treasury Bond Futures tick change notice (May 2025); ASX NZ Electricity Derivatives fact sheet; SPI Futures website]
+
+### 2.4 Lot Sizes / Contract Units
+
+| Product | Contract Unit |
+|---------|--------------|
+| ASX SPI 200 Futures | A$25 x S&P/ASX 200 Index |
+| Mini SPI 200 Futures | A$5 x S&P/ASX 200 Index |
+| 3 Year Treasury Bond Futures | A$100,000 face value of Commonwealth Treasury Bonds |
+| 10 Year Treasury Bond Futures | A$100,000 face value of Commonwealth Treasury Bonds |
+| 20 Year Treasury Bond Futures | A$100,000 face value of Commonwealth Treasury Bonds |
+| 30-Day Interbank Cash Rate Futures | A$3,000,000 face value [unverified] |
+| 90-Day Bank Bill Futures | A$1,000,000 face value |
+| Eastern Australia Wheat Futures | 20 metric tonnes |
+| NZ Electricity Futures (Base Load) | 0.1 MW per trading period (= 2.4 MWh per day; quarterly contract ~220.8 MWh for 92-day quarter) |
+| Australian Electricity Base Load Futures | 1 MW per trading period [unverified] |
+| ACCU Futures | 1,000 Australian Carbon Credit Units |
+
+[Source: ASX 24 Contract Specifications; ASX 3 and 10 Year Treasury Bond Futures factsheet; ASX NZ Electricity fact sheet; ASX Grains contract specifications]
+
+### 2.5 Market Maker / Liquidity Provider Programs
+
+**ETO (Equity Options) Market Maker Scheme:**
+
+- ASX contracts market makers into one or more classes (underlying securities) with specific volume and spread obligations
+- Market makers must quote buy and sell prices for a designated number of series across maturities extending to at least one year
+- Minimum contract quantities are set by ASX based on the underlying security's liquidity, volatility, and historical options volumes
+- Market makers must respond to quote requests from other participants
+- Fee rebates and incentive structures apply
+
+**ASX 24 Derivatives Market Making:**
+
+- Market maker programs exist for key interest rate and equity index products
+- Designated Market Makers (DMMs) are obligated to provide continuous two-sided quotes meeting spread and size requirements
+- Programs cover interest rate futures, SPI 200 futures, and selected commodity products
+- Fee discounts and volume-based incentives apply [unverified]
+
+[Source: ASX ETO Market Maker Scheme document; ASX website, "Equity options market trading"]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+**Opening Auction (ASX 24):**
+- Pre-open phase allows order entry and amendment
+- At session open, accumulated orders are matched at a single equilibrium price
+- The algorithm maximises matched volume at the equilibrium price
+- Separate opening auctions for day and night sessions
+
+**Opening Auction (ASX Trade — ETOs):**
+- Pre-open from 9:50 AM to 10:00 AM AEST
+- Orders entered and amended but not matched
+- Opening price determined by equilibrium algorithm at 10:00 AM
+
+**Closing / Settlement (ASX 24):**
+- Daily settlement prices determined based on trading activity during defined settlement windows
+- For bond futures: weighted average of trade prices calculated to 4 decimal places, rounded to 3
+- For SPI 200: daily settlement based on fair value calculation referencing the ASX 200 closing index level
+
+### 3.2 Continuous Trading
+
+- ASX 24: continuous electronic order matching during both day and night sessions
+- Supports outright orders and spread strategies (calendar spreads, inter-commodity spreads)
+- Night sessions provide near-24-hour coverage; liquidity typically thinner outside Australian business hours
+- ASX Trade ETOs: continuous matching from 10:00 AM to 4:00 PM AEST
+
+### 3.3 Price Discovery
+
+- ASX 3 Year and 10 Year Treasury Bond Futures are benchmark derivative products ranking among the most liquid and actively traded interest rate futures globally
+- SPI 200 futures provide overnight price discovery for the Australian equity market during the extended night session
+- 30-Day Interbank Cash Rate Futures are the primary market instrument for pricing Reserve Bank of Australia (RBA) cash rate expectations
+- OTC interest rate clearing enhances price transparency in AUD/NZD rates markets
+
+### 3.4 Order Priority Rules / Matching Algorithms
+
+| Algorithm | Description | Application |
+|-----------|-------------|-------------|
+| **Price-Time Priority (FIFO)** | Strict price priority, then time priority at each price level | Default for all ASX 24 futures |
+| **Pro-Rata** | Allocation proportional to order size at each price level | Selected options products [unverified] |
+| **Price-Time Priority** | Standard FIFO matching | ASX Trade ETOs |
+
+**Key Rules:**
+- Price priority is absolute — better-priced orders always fill first
+- Within the same price, time priority determines allocation (FIFO)
+- Self-Trade Prevention (STP) functionality available
+- During opening routines, orders are matched at a single equilibrium price
+
+[Source: ASX 24 Operating Rules Section 4 (February 2026); ASX 24 Trading Platform Guide v1.05 (April 2018); ASX website, "ETO crossing on ASX Trade"]
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Limit** | Buy/sell at a specified price or better; unfilled quantity rests on the order book. This is the primary order type on ASX 24 |
+| **Market** | Executes immediately at the best available price [ASX Trade ETOs] |
+| **Market to Limit** | Executes at best available price; unfilled portion converts to a limit order at the last execution price [ASX Trade ETOs] |
+
+**Note:** ASX 24 Operating Rules specify that only individual Limit Orders at a specified price may be entered, amended or cancelled on the ASX 24 Trading Platform. Market orders are not natively supported on ASX 24 — participants achieve market-like execution through aggressively priced limit orders.
+
+### 4.2 Advanced Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Spread Orders** | Calendar spreads and inter-commodity spread strategies; submitted as a single order with implied spread pricing |
+| **Stop Limit** | Triggered when stop price is reached; becomes a limit order [unverified for ASX 24] |
+| **Fill and Kill (FAK)** | Executes immediately for any available quantity; unfilled portion cancelled |
+| **Fill or Kill (FOK)** | Must be filled in its entirety immediately or cancelled entirely |
+| **Mass Quote** | Allows market makers to submit multiple two-sided quotes in a single message |
+| **Custom Market Orders** | Pre-negotiated off-market trades reported through the system |
+
+### 4.3 Time-in-Force (TIF) Conditions
+
+| TIF | Description |
+|-----|-------------|
+| **Day / Good for Session** | Valid for the current trading session only; cancelled at session end |
+| **Good Till Cancel (GTC)** | Remains active until filled or explicitly cancelled |
+| **Good Till Date (GTD)** | Remains active until a specified date |
+| **Good Till Expiry (GTE)** | Remains active until the instrument's expiry date |
+| **Fill and Kill (FAK)** | Immediate execution; unfilled portion cancelled |
+| **Fill or Kill (FOK)** | Immediate full execution or cancel |
+
+### 4.4 Order Modification / Cancellation
+
+- Orders may be modified (price, quantity) or cancelled during active trading sessions
+- Time priority is lost when price is amended; retained when quantity is reduced
+- Orders are subject to purge in accordance with their Time in Force
+- ASX 24 supports mass cancellation functionality
+
+[Source: ASX 24 Operating Rules Section 4 (February 2026); ASX 24 Trading Platform Guide v1.05 (April 2018); ASX Trade New Order Types document; ASX Operating Rules Procedures (October 2025)]
+
+---
+
+## 5. Trading System / Technology
+
+### 5.1 Current Platform — ASX 24 (Derivatives)
+
+| Item | Details |
+|------|---------|
+| Platform Name | ASX 24 Trading Platform (New Trading Platform — NTP) |
+| Technology Base | Proprietary platform; originally based on elements of Nasdaq OMX technology; upgraded in 2016 (NTP) |
+| Latency | ~300 microseconds (as of 2010 ASX Trade launch); current ASX 24 latency figures not publicly disclosed but in sub-millisecond range [unverified] |
+| Throughput Capacity | Up to 100,000 orders per second (ASX Trade benchmark, 2010); ASX 24 capacity comparable [unverified] |
+| Protocol Support | FIX 5.0 (order routing), ITCH (market data), OUCH (order entry), OMNet C++ API (Open Interface) |
+| Deployment | Hosted at the Australian Liquidity Centre (ALC), Gore Hill, Sydney |
+| Redundancy | Active-active configuration with failover capabilities [unverified] |
+
+### 5.2 ASX Trade (Equity Options)
+
+| Item | Details |
+|------|---------|
+| Platform Name | ASX Trade (integrated equities and equity options platform) |
+| Technology Base | Nasdaq OMX Genium INET |
+| Launch | 2010 |
+| Performance | Latency improved from 30ms (legacy SEATS/ITS) to 300 microseconds; capacity from 20,000 to 100,000 orders per second |
+| Matching Engines | TradeMatch (lit market), CentrePoint (dark pool — equities only) |
+| Protocol Support | ITCH (market data), OUCH (order entry), FIX (order routing), OMNet C++ API |
+
+### 5.3 Planned Upgrade — LSEG Partnership (Announced March 2026)
+
+| Item | Details |
+|------|---------|
+| Announcement | March 2026 |
+| Technology Provider | LSEG Markets Technology |
+| Scope | Complete modernisation of the ASX 24 derivatives trading platform |
+| Target Go-Live | First half of 2028 |
+| Key Objectives | Improved performance, system resilience, operational reliability, and capacity for growth |
+| 2026 Activities | Platform design, testing, migration planning, and participant readiness work |
+| 2027 Activities | Testing, migration, and participant onboarding |
+
+[Source: The TRADE, "ASX introduces high-speed trading platform"; Nasdaq press release, "ASX Launches Next Generation Trading Platform Powered by NASDAQ OMX's Genium INET"; LSEG press release, "LSEG and ASX partner to modernise derivatives market trading platform", March 2026; FinanceFeeds, "ASX and LSEG Agree Technology Upgrade"; ASX 24 Trading Platform Guide v1.05]
+
+---
+
+## 6. Market Data
+
+### 6.1 Feed Protocols
+
+| Protocol | Type | Description |
+|----------|------|-------------|
+| **ASX ITCH** | Market data | Ultra-low latency binary protocol; MoldUDP64 transport; nanosecond time-stamping; provides full depth-of-book |
+| **Glimpse** | Market data snapshot | Point-to-point connection providing current state of the order book; uses same message format as ITCH |
+| **FIX** | Market data (standard) | Industry-standard FIX protocol for market data distribution; higher latency than ITCH |
+| **OUCH** | Order entry | Low-latency binary order entry protocol |
+| **FIX 5.0** | Order routing | Industry-standard protocol for order management |
+
+### 6.2 Data Levels
+
+| Level | Content |
+|-------|---------|
+| **Level 1** | Best bid/offer, last traded price, volume |
+| **Level 2** | Full depth of book with individual orders; available via ITCH |
+| **Trades** | Trade reports including price, volume, and time |
+| **Index Data** | S&P/ASX 200 and related index values |
+
+### 6.3 Data Distribution
+
+- **Direct connection** at the ALC for lowest latency
+- **ASX Net** — ASX's high-performance optical fibre network connecting the ALC to external sites
+- **Information Vendors** — over 100 authorised data vendors distribute ASX data globally (per ASX Information Vendors Guide, November 2025)
+- **MarketSource** — ASX's market data distribution platform
+
+### 6.4 Historical Data
+
+- ASX provides historical end-of-day data for derivatives products
+- Daily Trading Reports published for ASX 24 products
+- Tick-by-tick historical data available through authorised vendors
+- ASX Rates Highlights reports published quarterly with volume and market dynamics analysis
+
+[Source: ASX Trade ITCH Specification (September 2025); ASX website, "Real time data"; ASX website, "How to access ASX Price data"; ASX Information Vendors Guide (November 2025); Trading Technologies, "ASX Overview"]
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+
+| Category | Description |
+|----------|-------------|
+| **ASX 24 Trading Participant** | Licensed to trade on ASX 24; must hold an Australian Financial Services Licence (AFSL) or be exempt |
+| **ASX Trading Participant** | Licensed to trade equities and equity options on ASX Trade |
+| **ASX Clear Participant** | Clearing participant for cash equities and equity options (ASX Clear) |
+| **ASX Clear (Futures) Participant** | Clearing participant for futures and OTC derivatives; subject to capital and risk management requirements |
+| **Foreign Participant** | Subject to minimum presence requirements in Australia per ASIC Market Integrity Rules |
+
+### 7.2 Connection Methods
+
+| Method | Description |
+|--------|-------------|
+| **Co-location at ALC** | Direct rack space in the Australian Liquidity Centre for lowest latency access to ASX Trade and ASX 24 |
+| **ASX Net** | ASX's dedicated high-performance optical fibre network connecting customer premises to the ALC |
+| **Cross-connects** | Peer-to-peer connections within the ALC to counterparties, vendors, and service providers |
+| **Carrier-neutral access** | ALC is carrier-neutral; customers can connect via preferred telecom provider |
+| **Third-party ISV platforms** | Independent Software Vendors (e.g., Trading Technologies, ION, Fidessa) provide trading access |
+
+### 7.3 Australian Liquidity Centre (ALC)
+
+| Item | Details |
+|------|---------|
+| Location | Gore Hill Technology Park, Sydney, NSW |
+| Purpose | Purpose-built data centre and co-location facility specifically for Australian financial markets |
+| Tenants | Over 100 financial institutions and service providers — including international investment banks, Australian brokers, market makers, proprietary firms, data vendors, software vendors, and major telecom carriers |
+| Access Points | ASX Trade (equities), ASX TradeMatch, ASX CentrePoint, ASX 24 (derivatives) |
+| Infrastructure Partner | Beeks Group (co-location infrastructure partner) |
+| IaaS | ASX offers Infrastructure-as-a-Service (IaaS) hosted at the ALC |
+
+### 7.4 API Protocols
+
+| Protocol | Use | Notes |
+|----------|-----|-------|
+| **OUCH** | Low-latency order entry | Binary protocol; optimised for high-frequency applications |
+| **FIX 5.0** | Order routing | Industry-standard; broader functionality |
+| **ITCH** | Market data | Ultra-low latency; full book depth |
+| **OMNet C++ API** | Open Interface | Nasdaq Genium INET native API |
+
+### 7.5 Certification / Conformance
+
+- All participants must complete conformance testing before connecting to ASX production systems
+- Conformance testing verifies correct implementation of messaging protocols (ITCH, OUCH, FIX)
+- ASX provides development and test environments for participant integration testing
+- Pre-production environments available at the ALC and via remote access
+
+[Source: ASX website, "Australian Liquidity Centre (ALC)"; ASX ALC Connectivity Guide; Beeks Group, "ASX Australian Liquidity Centre"; ASX website, "Connectivity services"; Trading Technologies, "ASX Overview"; DataCenterDynamics, "ASX launches IaaS hosted in ALC"]
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 ASX Approach to Circuit Breakers
+
+ASX does not employ market-wide circuit breakers in the style of some international exchanges (e.g., NYSE, KRX). Instead, ASX uses a combination of:
+
+- **Anomalous Order Thresholds (AOTs):** Reference prices updated every minute from a 2-minute VWAP; prevents aggressive orders that are more than 10% above/below the reference price
+- **Extreme Trade Range (ETR):** Unique per instrument; triggers a 2-minute trading pause if the price moves beyond the ETR threshold
+- These mechanisms are applied primarily on the ASX Trade (equities/ETOs) platform
+
+### 8.2 Pre-Trade Risk Controls
+
+| Control | Description |
+|---------|-------------|
+| **Pre-Trade Risk Management (PTRM) Software** | Provided as part of the ASX 24 Trading Platform; acts as a second layer of risk management |
+| **Participant Obligation** | Participants are required to have their own independent risk management systems in addition to ASX PTRM |
+| **Order Size Limits** | Maximum order quantity and value limits configurable per participant |
+| **Price Collars** | Rejection of orders outside defined price bands from the reference price |
+| **Kill Switch** | Capability for participants and clearing members to cancel all resting orders for a given account or session [unverified] |
+
+### 8.3 Intraday Margin Triggers
+
+- ASX Clear (Futures) triggers ad hoc intraday margin runs if:
+  - The price change of an individual contract exceeds 100% of its margin rate, or
+  - The ASX SPI 200 index price changes by 1% or more intraday
+- Intraday margin calls are issued to participants whose positions have deteriorated beyond defined thresholds
+
+### 8.4 Market Volatility Measures
+
+- ASX may impose trading halts on individual securities or derivatives if necessary
+- The ASX Market Operator has discretion to impose trading restrictions in the event of, or to prevent, an undesirable market situation
+- Coordination with ASIC on market-wide stress events
+
+[Source: ASX website, "An Australian perspective on circuit breakers and market quality"; ASX website, "Market volatility FAQs"; ASXOnline Notice 0738.19.07, "Market Operator Software — Pre-Trade Risk Management Software Use"; RBA Assessment of ASX Clear (Futures), Standard 6: Margin]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Primary Regulators
+
+| Regulator | Role |
+|-----------|------|
+| **Australian Securities and Investments Commission (ASIC)** | Primary market regulator; sets and enforces Market Integrity Rules (MIRs) for all Australian securities and futures markets |
+| **Reserve Bank of Australia (RBA)** | Oversees clearing and settlement facilities (ASX Clear, ASX Clear (Futures), ASX Settlement, Austraclear) for financial stability |
+| **ASX (as Market Operator)** | Operates the markets; enforces ASX Operating Rules and ASX 24 Operating Rules; monitors trading conduct (subject to ASIC oversight) |
+
+### 9.2 Key Regulations and Rules
+
+| Regulation | Description |
+|------------|-------------|
+| **Corporations Act 2001 (Cth)** | Primary legislation governing financial markets, Australian Financial Services Licences (AFSLs), and market infrastructure |
+| **ASIC Market Integrity Rules (Futures Markets) 2017** | Rules governing trading conduct on ASX 24 and FEX; covers pre-trade risk, order handling, manipulative trading, best execution |
+| **ASIC Market Integrity Rules (Capital) 2021** | Capital and reporting requirements for participants of securities and futures markets; effective from 17 June 2022 |
+| **ASIC Market Integrity Rules (Securities Markets and Futures Markets) Amendment 2022/74** | Technological and operational resilience rules; effective 10 March 2023; sets minimum expectations for technology risk management |
+| **ASIC CS Services Rules 2025** | New rules governing cash equities clearing, settlement, and issuer services; includes revenue capping mechanism |
+| **ASX 24 Operating Rules** | Exchange-level rules governing trading on ASX 24; covering order types, trading sessions, crossings, position reporting, and market maker obligations |
+| **ASX Clear (Futures) Operating Rules** | Rules governing clearing and risk management for futures and OTC derivatives |
+| **RG 265 / RG 266** | ASIC Regulatory Guides providing guidance on MIRs for participants of securities markets (RG 265) and futures markets (RG 266) |
+
+### 9.3 Regulatory Developments
+
+- **2025 (October):** ASIC consultation (CP 386) on proposed amendments to Market Integrity Rules
+- **2026 (March):** ASIC published ASX Inquiry Panel Final Report (26-059MR) with observations on ASX's regulatory obligations
+- **2025 (September):** RBA published Assessment of ASX Clearing and Settlement Facilities
+
+[Source: ASIC website, "Market integrity rules"; ASIC RG 266; The TRADE, "ASIC issues market integrity rules for ASX 24"; FIA, "Australia's ASIC consolidates market integrity rules"; RBA media release, September 2025; ASIC media release 26-059MR, March 2026]
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Fee Structure
+
+ASX derives derivatives-related revenue from trading fees, clearing fees, market data fees, and connectivity/technology fees.
+
+**Trading Fees (ASX 24 — Interest Rate Derivatives):**
+
+| Fee Component | Rate (Indicative) |
+|---------------|-------------------|
+| Exchange trading fee | Per contract; varies by product and volume tier |
+| Clearing fee | Per contract; charged by ASX Clear (Futures) |
+| ASIC market supervision levy | Cost recovery levy passed to participants |
+
+**ETO (Equity Options) Fees:**
+
+| Fee Component | Rate (Indicative) |
+|---------------|-------------------|
+| Trading fee | Per contract per side |
+| Clearing fee | Per contract |
+| Exercise/Assignment fee | Per contract |
+| Market maker incentive rebates | Available for qualifying market makers |
+
+**OTC Clearing Fees (ASX Clear (Futures)):**
+
+| Fee Component | Description |
+|---------------|-------------|
+| Registration fee | Per trade notional |
+| Maintenance fee | Based on portfolio size |
+| Compression fee | For portfolio compression services |
+
+**Note:** Detailed fee schedules are published in the ASX Clearing & Settlement Schedule of Fees (effective 1 July 2025) and updated periodically. A new Pricing Policy effective 1 July 2025 introduced revenue capping for cash equities clearing and settlement services, ensuring ASX revenue does not exceed the amount required to efficiently deliver those services plus a reasonable rate of return. The revenue sharing scheme for clearing and settlement participants was removed.
+
+### 10.2 Revenue Breakdown (ASX Group FY2025)
+
+| Segment | Revenue |
+|---------|---------|
+| Listings | Part of overall AUD 1,107.2 million |
+| Markets (including derivatives trading) | Part of overall revenue |
+| Technology & Data | Part of overall revenue |
+| Securities & Payments | AUD 274.4 million (+7.4% YoY) |
+| **Total Group Revenue** | **AUD 1,107.2 million (+7.0% YoY)** |
+
+**Note:** ASX does not publicly disaggregate derivatives-only trading revenue from its segment reporting. The Securities & Payments segment includes clearing and settlement across both cash and derivatives. ASX Group total revenue reached approximately AUD 1.2 billion for CY2025.
+
+[Source: ASX Clearing & Settlement Schedule of Fees (effective 1 July 2025); ASXOnline Notice 0673.25.06; ASX Annual Report FY2025; ASX IRD Pricing Guide 2025]
+
+---
+
+## 11. Recent Developments
+
+### 11.1 CHESS Replacement Project
+
+The replacement of CHESS (Clearing House Electronic Subregister System) is ASX's most significant technology transformation:
+
+| Milestone | Details |
+|-----------|---------|
+| **Original approach** | DLT-based replacement using Digital Asset's DAML platform; announced 2015 |
+| **November 2022** | ASX abandoned the DLT approach after cost overruns and delays; wrote off A$250 million |
+| **2023–2024** | ASX began redesign using conventional technology (not DLT) |
+| **Two-phase delivery** | Release 1 (clearing replacement, FIX messaging) and Release 2 (settlement and sub-register) |
+| **Release 1 scope** | Replace clearing component of CHESS; introduce FIX messaging for trade registration |
+| **Release 1 target go-live** | 20 April 2026 |
+| **Release 1 ITE opened** | February 2025; AMO Build and Test phase commenced |
+| **Release 1 Cutover Runbook** | Published 13 March 2026 |
+| **Release 2 target** | 2029 (settlement and sub-register functions) |
+| **ASIC oversight** | ASIC Inquiry Panel Final Report published March 2026 (26-059MR) |
+
+### 11.2 ASX 24 Platform Modernisation (LSEG Partnership)
+
+- **March 2026:** ASX and LSEG announced agreement to modernise and upgrade the ASX 24 derivatives trading platform
+- LSEG Markets Technology to provide a high-performance, low-latency platform engineered for speed, resilience, and capacity
+- Collaborative design and testing throughout 2026-2027
+- Target go-live: first half of 2028
+- Will replace the current ASX 24 NTP (launched 2016)
+
+### 11.3 Market Microstructure Improvements (2025)
+
+- **3 Year Bond Futures tick change (July 2025):** Re-established minimum tick increment to 0.5 basis points (from 1 basis point), improving price granularity and tightening spreads
+- **Bond-Roll De-Linking:** Structural change to the roll process for 3Y and 10Y bond futures, improving roll execution and reducing market impact
+- These changes contributed to record Q4 2025 interest rate derivatives volumes
+
+### 11.4 Record Trading Volumes (2025)
+
+- Q4 2025 interest rate derivatives volumes up 14% vs Q3 2025 and up 23% vs Q4 2024
+- October and November 2025 were the second and third highest non-roll months for interest rate futures on record
+- 3 Year (YT) roll activity: 1.309 million contracts in Q4 2025 (+13% QoQ)
+- 10 Year (XT) roll activity: 1.921 million contracts in Q4 2025 (-16% QoQ)
+- OTC Clearing: A$2.19 trillion notional value in Q4 2025; Open Interest A$4.124 trillion at end-December 2025
+- April 2025 was the highest single month for interest rate futures activity, driven by tariff-related macroeconomic volatility
+
+### 11.5 Environmental Derivatives Expansion
+
+- ASX continues to expand its environmental futures suite: ACCU Futures, NZU Futures, and LGC Futures
+- Physical delivery of environmental certificates through ASX Clear (Futures) accounts at relevant environmental registries
+- Supports Australia's decarbonisation transition and compliance markets
+
+[Source: ASX website, "CHESS Project"; WatersTechnology, "ASX CHESS replacement to be delivered in phases"; Markets Media, "ASX Confirms Staged Implementation of CHESS Replacement"; FX News Group, "ASX confirms plans for staged implementation"; ASIC 26-059MR; LSEG press release, March 2026; ASX Rates Highlights Q4 2025; ASX 3 Year Bond Futures tick change notice; ASX Environmental Futures fact sheet]
+
+---
+
+## Derivatives-Specific Items
+
+### D.1 Product Catalog
+
+**Interest Rate Derivatives (ASX 24):**
+
+| Product | Type | Underlying |
+|---------|------|------------|
+| 30-Day Interbank Cash Rate (IB) Futures | Futures | RBA interbank overnight cash rate (monthly average) |
+| 30-Day Interbank Cash Rate Options | Options | IB Futures |
+| 90-Day Bank Accepted Bill Futures | Futures | 90-day bank accepted bill rate |
+| 90-Day Bank Bill Options | Options | 90-day bank bill futures |
+| 3 Year Treasury Bond Futures | Futures | Basket of Commonwealth Government Bonds (3Y tenor) |
+| 3 Year Bond Options (Term & One Session) | Options | 3 Year Bond Futures |
+| 5 Year Treasury Bond Futures | Futures | Basket of Commonwealth Government Bonds (5Y tenor) |
+| 10 Year Treasury Bond Futures | Futures | Basket of Commonwealth Government Bonds (10Y tenor) |
+| 10 Year Bond Options (Term & One Session) | Options | 10 Year Bond Futures |
+| 20 Year Treasury Bond Futures | Futures | Basket of Commonwealth Government Bonds (20Y tenor) |
+
+**Equity Derivatives:**
+
+| Product | Type | Platform |
+|---------|------|----------|
+| ASX SPI 200 Futures | Futures | ASX 24 |
+| Mini SPI 200 Futures | Futures | ASX 24 |
+| SPI 200 Options | Options | ASX 24 |
+| Exchange Traded Options (ETOs) | Options on ~70 underlying equities | ASX Trade |
+| ASX 200 Index Options | Index options | ASX Trade |
+
+**Commodity — Grain (ASX 24):**
+
+| Product | Type | Settlement |
+|---------|------|------------|
+| Eastern Australia Wheat Futures | Futures | Physical delivery |
+| Eastern Australia Wheat Options | Options | Exercise into futures |
+| Eastern Australia Feed Barley Futures | Futures | Physical delivery |
+| WA Wheat Futures | Futures | Physical delivery |
+
+**Energy (ASX 24):**
+
+| Product | Type | Settlement |
+|---------|------|------------|
+| AU Base Load Electricity Futures (NSW, VIC, QLD, SA) | Futures | Cash settled (CFD) |
+| AU Morning/Evening Peak Electricity Futures | Futures | Cash settled |
+| NZ Electricity Futures (Otahuhu, Benmore) | Futures | Cash settled (CFD) |
+| NZ Electricity Options | Options | Exercise into futures |
+
+**Environmental (ASX 24):**
+
+| Product | Type | Settlement |
+|---------|------|------------|
+| Australian Carbon Credit Unit (ACCU) Futures | Futures | Physical delivery (registry transfer) |
+| NZ Emissions Unit (NZU) Futures | Futures | Physical delivery (registry transfer) |
+| Large-scale Generation Certificate (LGC) Futures | Futures | Physical delivery (registry transfer) |
+
+**OTC Cleared Products (ASX Clear (Futures)):**
+
+| Product | Type |
+|---------|------|
+| AUD Interest Rate Swaps | OTC (cleared) |
+| NZD Interest Rate Swaps | OTC (cleared) |
+| Overnight Index Swaps (OIS) | OTC (cleared) |
+| Forward Rate Agreements (FRA) | OTC (cleared) |
+
+[Source: ASX website, "Trade our derivatives market" — all sub-pages; ASX 24 Contract Specifications; ASX Energy website; ASX Environmental Futures fact sheet]
+
+### D.2 Key Contract Specifications (Top 5 by Volume)
+
+#### 1. 3 Year Treasury Bond Futures (YT)
+
+| Specification | Details |
+|---------------|---------|
+| Contract Unit | A$100,000 face value of Commonwealth Government Treasury Bonds |
+| Quotation | 100 minus yield per cent per annum |
+| Tick Size | 0.005% (0.5 basis points) — effective July 2025 |
+| Tick Value | Approximately A$14.19 (varies with yield level) |
+| Contract Months | March, June, September, December (nearest 2 quarters) |
+| Settlement | Cash settled against the average price of a basket of physical Treasury Bonds |
+| Last Trading Day | 15th day of the contract month (or next business day) |
+| Trading Hours | Night: 5:10 PM – 7:00 AM +1; Day: 8:30 AM – 4:30 PM AEST |
+
+#### 2. 10 Year Treasury Bond Futures (XT)
+
+| Specification | Details |
+|---------------|---------|
+| Contract Unit | A$100,000 face value of Commonwealth Government Treasury Bonds |
+| Quotation | 100 minus yield per cent per annum |
+| Tick Size | 0.005% (0.5 basis points); 0.002% during expiry period (5:12 PM 8th of expiry month to 4:30 PM last trading day) |
+| Tick Value | Approximately A$30.90 (varies with yield level) |
+| Contract Months | March, June, September, December (nearest 2 quarters) |
+| Settlement | Cash settled against the average price of a basket of physical Treasury Bonds |
+| Last Trading Day | 15th day of the contract month (or next business day) |
+| Trading Hours | Night: 5:10 PM – 7:00 AM +1; Day: 8:30 AM – 4:30 PM AEST |
+
+#### 3. 90-Day Bank Accepted Bill Futures (IR)
+
+| Specification | Details |
+|---------------|---------|
+| Contract Unit | A$1,000,000 face value |
+| Quotation | 100 minus yield per cent per annum |
+| Tick Size | 0.01% (1 basis point) |
+| Tick Value | Approximately A$24.66 |
+| Contract Months | March, June, September, December (up to 5 years out) [unverified] |
+| Settlement | Cash settled |
+| Last Trading Day | Second Friday of the contract month [unverified] |
+| Trading Hours | Night: 5:10 PM – 7:00 AM +1; Day: 8:30 AM – 4:30 PM AEST |
+
+#### 4. ASX SPI 200 Futures (AP)
+
+| Specification | Details |
+|---------------|---------|
+| Contract Unit | A$25 x S&P/ASX 200 Index |
+| Quotation | Index points |
+| Tick Size | 1 index point |
+| Tick Value | A$25.00 |
+| Contract Months | March, June, September, December |
+| Settlement | Cash settled at a Special Opening Quotation of the S&P/ASX 200 Index on the last trading day |
+| Last Trading Day | Third Thursday of the contract month; trading ceases at 12:00 PM AEST |
+| Trading Hours | Night: 5:10 PM – 7:00 AM +1 (or 8:00 AM during U.S. non-DST); Day: 9:50 AM – 4:30 PM AEST |
+
+#### 5. 30-Day Interbank Cash Rate Futures (IB)
+
+| Specification | Details |
+|---------------|---------|
+| Contract Unit | A$3,000,000 face value [unverified] |
+| Quotation | 100 minus RBA cash rate per cent per annum |
+| Tick Size | 0.005% (0.5 basis points) |
+| Tick Value | Approximately A$12.33 |
+| Contract Months | Monthly (up to 18 months out) [unverified] |
+| Settlement | Cash settled against the monthly average of the Interbank Overnight Cash Rate as published by the RBA |
+| Last Trading Day | Last business day of the contract month |
+| Trading Hours | Night: 5:10 PM – 7:00 AM +1; Day: 8:30 AM – 4:30 PM AEST |
+
+[Source: ASX 24 Contract Specifications; ASX 3 and 10 Year Treasury Bond Futures factsheet; SPI Futures website, "Contract Specifications"; ASX 30-Day Interbank Cash Rate Futures factsheet; ASX 3 Year Bond Futures tick change notice (May 2025)]
+
+### D.3 Margin Framework
+
+**Clearing Houses:**
+- **ASX Clear:** Clears equity options (ETOs) and equity-related derivatives
+- **ASX Clear (Futures):** Clears all ASX 24 exchange-traded futures and options, plus OTC interest rate derivatives
+
+**Initial Margin Methodology — ASX Clear (Futures): CME SPAN**
+
+| Item | Details |
+|------|---------|
+| Methodology | CME SPAN (Standard Portfolio Analysis of Risk) |
+| Approach | Risk-based portfolio approach calculating maximum potential loss for a combined commodity (portfolio of derivatives grouped by product) |
+| Calibration | Initial margin rates set to cover the higher of 3 standard deviations of: (a) 60-day historical distribution or (b) 252-day historical distribution of price movements; using the higher of one- or two-day movements |
+| Components | Scanning Risk, Intracommodity Spread Charge, Intercommodity Spread Concession (credit), Short Option Minimum Charge, Delivery Risk |
+| Margin Formula | Total Initial Margin = max(Delivery Risk + Intracommodity Spread Charge + Short Option Minimum Charge, Scanning Risk - Intercommodity Concession) |
+| Risk Arrays | Multiple risk arrays (sets of numeric values) calculating gains and losses under different market conditions |
+| Portfolio Recognition | Recognises intra-commodity (inter-month) and inter-commodity spread relationships |
+| Margin Calculation Frequency | End-of-day; plus ad hoc intraday runs triggered by significant price movements |
+
+**Initial Margin Methodology — ASX Clear (Equity Options): CME SPAN**
+
+- ASX Clear also uses SPAN-based margining for equity options portfolios
+- Margin parameters calibrated to Australian equity market volatility characteristics
+
+**Variation Margin:**
+- Marked to market daily based on settlement prices
+- Variation margin calls issued end-of-day; intraday calls in stressed conditions
+- All margin flows processed through ASX Clear (Futures) participant accounts
+
+**Intraday Margin Triggers:**
+- Triggered if individual contract price change exceeds 100% of its margin rate
+- Triggered if ASX SPI 200 index changes by 1% or more intraday
+- ASX Clear (Futures) may issue intraday margin calls at its discretion
+
+**Acceptable Collateral:**
+- Cash (AUD)
+- Commonwealth Government Securities
+- Bank guarantees
+- Other approved collateral subject to haircuts [unverified]
+
+[Source: ASX Clear (Futures) SPAN Margining Examples; ASX website, "Margining"; RBA Assessment of ASX Clear (Futures), Standard 6: Margin (2017-2018); ASX website, "Understanding Margins — ASX Clear"; ASX Energy, "Initial Margins"]
+
+### D.4 Position Limits
+
+**ASX 24 Operating Rules Framework:**
+
+| Item | Details |
+|------|---------|
+| Expiry Concentration Limits | Hard limits applicable to all market users (with beneficial ownership at "group" level) regardless of trading style |
+| Discretionary Powers | The Market Operator may vary limits on an exceptional case-by-case basis; exercised infrequently |
+| Market Intervention | In the event of (or to prevent) an undesirable market situation, the Market Operator may instruct participants to trade in a particular manner, including holding no more than a certain number of positions |
+| Exercise Limits | No exercise limits set under Rule 3410; exercise limits set out separately in Clearing Rules |
+| Position Reporting | Reporting obligations for large positions; ASX 24 Operating Rules include position reporting requirements (DBOR — Daily Beneficial Ownership Reporting) |
+| Consultation (2024) | ASX consulted on amendments to ASX 24 Operating Rules regarding DBOR position reporting (May 2024 draft) |
+
+**ETO (Equity Options) Position Limits:**
+- ASIC Market Integrity Rules set position limits for equity options
+- Limits vary by underlying security based on liquidity and market capitalisation
+- Hedge exemptions available upon application to ASIC / ASX
+
+[Source: ASX 24 Operating Rules Section 3 (June 2025); ASX 24 Operating Rules Guidance Note 10; Consultation draft May 2024 — ASX 24 Operating Rules DBOR Position Reporting; ASX 24 Operating Rules Schedules & Appendices (November 2025)]
+
+### D.5 Block Trading / Special Crossings
+
+**ASX 24 — Off-Market and Block Trades:**
+
+| Feature | Details |
+|---------|---------|
+| Facility | Off-market trades with block trade reporting available on ASX 24 |
+| Reporting | Block trades may be reported directly to market if they meet specified criteria |
+| Eligible Products | Interest rate futures, SPI 200 futures, grain futures, energy futures |
+| Negotiation | Parties negotiate price and quantity bilaterally; trade is then reported through ASX for clearing |
+
+**ASX Trade — ETO Crossings and Special Size (Block) Transactions:**
+
+| Feature | Details |
+|---------|---------|
+| Special Size Thresholds | Two qualification methods: (1) Premium value — meets ASIC MIR thresholds ($1 million, $500,000, or $200,000 depending on product type); or (2) Number of contracts — 15x the minimum Market Maker quote size, subject to a minimum $50,000 premium |
+| Reporting | Special size crossings may be reported directly to market without prior exposure |
+| Non-Special Size Crossings | Must be shown to the market (exposed) before being reported |
+| SPI Options Block Minimum | 200 contracts per individual series |
+
+**2025 Consultation:**
+- In October 2025, ASX consulted on changes to equity options trade cancellation and Special Size (Block) levels
+
+[Source: ASX website, "ETO crossings and Special Size (Block) Transactions on ASX Trade"; ASX website, "Off-market with block trade"; ASX Operating Rules Section 22 — Crossings; ASXOnline Notice 1185.18.10 (SPI Options Block Trades); ASXOnline Notice 1344.25.10 (October 2025 consultation)]
+
+---
+
+## Sources
+
+- [ASX — Trade our derivatives market](https://www.asx.com.au/markets/trade-our-derivatives-market)
+- [ASX — Interest rate derivatives](https://www.asx.com.au/markets/trade-our-derivatives-market/overview/interest-rate-derivatives)
+- [ASX — Equity derivatives](https://www.asx.com.au/markets/trade-our-derivatives-market/overview/equity-derivatives)
+- [ASX — Grain derivatives](https://www.asx.com.au/markets/trade-our-derivatives-market/overview/grain-derivatives)
+- [ASX — Environmental futures](https://www.asx.com.au/markets/trade-our-derivatives-market/environmental-futures)
+- [ASX Energy](https://www.asxenergy.com.au)
+- [ASX — Trading hours and calendars](https://www.asx.com.au/markets/market-resources/trading-hours-calendar)
+- [ASX — Australian Liquidity Centre](https://www.asx.com.au/alc)
+- [ASX — Connectivity services](https://www.asx.com.au/connectivity-and-data/connectivity-services)
+- [ASX — Market data](https://www.asx.com.au/connectivity-and-data/information-services/real-time-data)
+- [ASX — ASX Clear (Futures)](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear-futures)
+- [ASX — Margining](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear/risk-management/margining)
+- [ASX — CHESS Project](https://www.asx.com.au/markets/clearing-and-settlement-services/chess-project)
+- [ASX — Schedule of Fees](https://www.asx.com.au/markets/market-resources/asx-schedule-of-fees)
+- [ASX Annual Report FY2025](https://www.asx.com.au/content/dam/asx/annual-reports/asx-2025-annual-report.pdf)
+- [ASX Rates Highlights Q4 2025](https://www.asx.com.au/content/dam/asx/markets/trade-our-derivatives-market/derivatives-market-overview/interest-rate-derivatives/rates-highlights/q4-2025/asx-rates-highlights-q4-2025.pdf)
+- [ASX 24 Contract Specifications](https://www.asx.com.au/content/dam/asx/participants/derivatives-market/ird/asx24-contract-specifications.pdf)
+- [ASX 3 and 10 Year Treasury Bond Futures factsheet](https://www.asx.com.au/content/dam/asx/participants/derivatives-market/3-and-10-year-treasury-bond-futures-factsheet.pdf)
+- [ASX 24 Trading Platform Guide v1.05](https://www.asx.com.au/content/dam/asx/participants/trading-platforms/futures/asx-24-trading-platform-guide.pdf)
+- [ASX 24 Operating Rules Section 3 (June 2025)](https://www.asx.com.au/content/dam/asx/rules-guidance-notes-waivers/asx-24-operating-rules/rules/ASX-24-Operating-Rules-Section-03.pdf)
+- [ASX 24 Operating Rules Section 4 (February 2026)](https://www.asx.com.au/content/dam/asx/rules-guidance-notes-waivers/asx-24-operating-rules/rules/ASX-24-Operating-Rules-Section-04.pdf)
+- [ASX Trade ITCH Specification (September 2025)](https://www.asxonline.com/content/dam/asxonline/public/documents/asx-trade-refresh-manuals/asx-trade-itch-message-specification.pdf)
+- [ASIC — Market integrity rules](https://www.asic.gov.au/regulatory-resources/markets/market-integrity-rules/)
+- [RBA — Assessment of ASX Clearing and Settlement Facilities](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/)
+- [LSEG — LSEG and ASX partner to modernise derivatives market trading platform (March 2026)](https://www.lseg.com/en/media-centre/press-releases/2026/lseg-and-asx-partner-modernise-derivatives-market-trading-platform)
+- [FinanceFeeds — ASX and LSEG Agree Technology Upgrade](https://financefeeds.com/asx-and-lseg-agree-technology-upgrade-for-asx-24-derivatives-trading-platform/)
+- [The TRADE — ASX introduces high-speed trading platform](https://www.thetradenews.com/asx-introduces-high-speed-trading-platform/)
+- [Wikipedia — Australian Securities Exchange](https://en.wikipedia.org/wiki/Australian_Securities_Exchange)
+- [MarketsWiki — Australian Securities Exchange](https://www.marketswiki.com/wiki/Australian_Securities_Exchange)
+- [SPI Futures — Contract Specifications](https://www.spifutures.com.au/contract-specifications/)
+- [WatersTechnology — ASX CHESS replacement to be delivered in phases](https://www.waterstechnology.com/trading-tech/7951687/asx-chess-replacement-to-be-delivered-in-phases-with-clearing-first-in-2026)
+- [Trading Technologies — ASX Overview](https://library.tradingtechnologies.com/user-setup/asx-overview.html)
+- [Beeks Group — ASX Australian Liquidity Centre](https://beeksgroup.com/services/connectivity/data-centres/asiapac/asx-alc/)
+- [FOW — ASX pledges derivatives innovation as CHESS legacy lingers](https://www.fow.com/insights/analysis-asx-pledges-derivatives-innovation-as-chess-legacy-lingers)

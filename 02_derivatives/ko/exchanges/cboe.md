@@ -1,0 +1,719 @@
+# Cboe Global Markets (Cboe 글로벌 마켓)
+
+> **최종 수정일:** 2026-04-06
+> **조사 등급:** Tier 2
+> **분야:** 파생상품 (Derivatives)
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 상세 |
+|------|------|
+| 정식 명칭 | Cboe Global Markets, Inc. |
+| 약칭 | Cboe (하위 거래소: C1/Cboe Options, C2, BZX Options, EDGX Options; 주식: BZX, BYX, EDGX, EDGA; 선물: CFE) |
+| 웹사이트 | https://www.cboe.com |
+| 설립 연도 | 1973년 (Chicago Board Options Exchange로); 2017년 Cboe Global Markets로 개명 |
+| 소재지 | 미국 / 일리노이주 시카고 (본사); 주 데이터센터 뉴저지주 Secaucus |
+| 소유 구조 | Cboe BZX Exchange에 상장 (티커: CBOE); 기관투자자 광범위 보유 |
+| 모회사 / 그룹 | Cboe Global Markets, Inc. |
+| 감독 기관 | 미국 증권거래위원회(SEC) — 옵션 및 주식 거래소; 미국 상품선물거래위원회(CFTC) — Cboe Futures Exchange (CFE); 각 거래소는 별도 등록된 자율규제기관(SRO) |
+| 시가총액 | ~290-310억 달러 (2026년 3월 기준) [출처: MacroTrends, Yahoo Finance] |
+| 연간 순매출 (2025) | 24억 달러 (역대 최고, 전년 대비 +17%) [출처: Cboe 2025년 4분기 실적 발표, 2026년 2월] |
+| 총 옵션 일평균 거래량 (2025) | 4개 옵션 거래소에서 1,840만 계약 — 6년 연속 최고 기록 [출처: Cboe 2025년 연간 거래량 보고서] |
+| SPX 옵션 일평균 거래량 (2025) | 390만 계약 (역대 최고, 전년 대비 +25%); 59%가 0DTE 옵션 [출처: Cboe 2025년 연간 거래량 보고서] |
+| 청산소 (Clearing House) | Options Clearing Corporation (OCC) — 옵션용; OCC는 CFE 선물도 청산 |
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **1973년:** Chicago Board Options Exchange (CBOE), Chicago Board of Trade (CBOT)에 의해 설립; 표준화된 장내 주식 옵션을 최초로 상장한 거래소. 1973년 4월 26일 16개 기초주식에 대한 콜 옵션으로 매매 개시
+- **1975년:** CBOE에서 풋 옵션 도입
+- **1977년:** 개별 주식에 대한 옵션 대폭 확대
+- **1983년:** S&P 100 지수 옵션 (OEX) 출시 — 최초의 지수 옵션
+- **1993년:** Cboe 변동성지수(VIX) 도입, Robert E. Whaley 교수가 개발; 최초에는 S&P 100 옵션의 내재변동성 측정
+- **2003년:** VIX 산출 방법론 개정, 더 넓은 행사가 범위 및 모델 비의존 방식을 사용하여 S&P 500 (SPX) 옵션 기반으로 변경
+- **2004년:** Cboe Futures Exchange (CFE)에서 VIX 선물 출시
+- **2006년:** Cboe Options Exchange에서 VIX 옵션 출시 — 5년 내 가장 활발히 거래되는 지수 옵션으로 성장
+- **2010년:** Cboe 주식회사 전환; Cboe Holdings IPO 완료 (티커: CBOE) NASDAQ 상장 (6월)
+- **2015년:** SPX 주간 옵션이 월, 수, 금 만기로 확대 — 0DTE 성장의 전조
+- **2016년:** Cboe Holdings, BATS Global Markets 인수 발표 (~32억 달러, 9월)
+- **2017년:** BATS 인수 완료 (3월); Cboe Global Markets, Inc.로 개명 (10월); 4개 추가 거래소 (BZX, BYX, EDGX, EDGA) 및 상당한 기술 역량 확보
+- **2019년:** SPX 옵션이 화, 목 만기 추가 포함으로 확대, 매일 만기 (모든 거래일에 0DTE) 가능
+- **2020년:** Cboe, Hanweck 및 FT Options (데이터 분석 기업) 인수
+- **2021년:** Cboe, Chi-X Asia Pacific 인수하여 일본 및 호주 진출; Cboe, ErisX (디지털 자산 거래소) 인수
+- **2022년:** 0DTE 옵션 거래 폭발적 성장 — SPX 0DTE가 전체 SPX 거래량의 40% 초과; Cboe Titanium 플랫폼 브랜딩
+- **2023-2024년:** 0DTE 지속 성장; 시장 데이터 배포를 위한 Cboe Global Cloud 출시; Cboe Europe Derivatives 출시
+- **2025년:** 순매출 24억 달러 역대 최고 기록; SPX 옵션 일평균 거래량 390만 계약 (기록); 0DTE SPX 거래량 비중 59%; Magnificent 10 Index (MGTN) 선물 및 옵션 출시 (2025년 12월); 전략 검토 개시 — Cboe Australia 및 Cboe Canada 매각 절차
+- **2026년 (진행 중):** 2026년 2분기 Mini-SPX 예측시장 계약 계획; 유럽 FLEX 옵션 출시 (2026년 1분기); 거래시간 확대 이니셔티브 개발 중
+
+[출처: Cboe Global Markets, Wikipedia; Cboe 투자자관계; Cboe 보도자료 2025-2026, 2026-04-06 접속]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 거래소 부문 (Exchange Segments)
+
+Cboe는 옵션, 주식, 선물에 걸쳐 별도로 등록된 다수의 거래소를 운영한다:
+
+**옵션 거래소 (SEC 규제):**
+
+| 거래소 | MIC 코드 | 설명 | 주요 상품 |
+|--------|----------|------|-----------|
+| **Cboe Options Exchange (C1)** | XCBO | 주력 옵션 거래소; SPX, VIX 옵션의 독점 시장 | SPX, VIX, RUT, 독자 지수 옵션 |
+| **Cboe C2 Exchange (C2)** | C2OX | 제2 옵션 거래소; 복수상장 및 독자 상품 지원 | 복수상장 주식 옵션, 일부 지수 옵션 |
+| **Cboe BZX Options** | BATO | 메이커-테이커 수수료 모델 | 복수상장 주식 옵션 |
+| **Cboe EDGX Options** | EDGO | 고객 우선을 갖춘 메이커-테이커 수수료 모델 | 복수상장 주식 옵션 |
+
+**주식 거래소 (SEC 규제):**
+
+| 거래소 | 설명 |
+|--------|------|
+| **Cboe BZX Equities** | 메이커-테이커 가격; Cboe Market Close (CMC) 단일가매매 |
+| **Cboe BYX Equities** | 역전 가격 (테이커-메이커) |
+| **Cboe EDGX Equities** | 메이커-테이커 가격 |
+| **Cboe EDGA Equities** | 역전 가격 (테이커-메이커) |
+
+**선물 거래소 (CFTC 규제):**
+
+| 거래소 | 설명 | 주요 상품 |
+|--------|------|-----------|
+| **Cboe Futures Exchange (CFE)** | 변동성 및 기타 선물을 위한 지정계약시장(DCM) | VIX 선물, Mini VIX 선물, MGTN 선물 |
+
+### 2.2 매매 세션 / 거래시간 (Trading Sessions / Hours)
+
+**옵션 거래소 (C1, C2, BZX Options, EDGX Options):**
+
+| 세션 | 시간 (CT) | 시간 (UTC) | 설명 |
+|------|-----------|------------|------|
+| **글로벌 거래시간 (GTH)** | 오전 2:00 – 8:15 | 07:00–13:15 UTC | C1의 일부 지수 옵션 (SPX, VIX, OEX, RUT, XSP)에 대한 연장 시간 |
+| **사전 개장 / 대기** | ~오전 8:20 – 8:30 | ~13:20–13:30 UTC | 개장 로테이션 이전 주문 대기 |
+| **정규 거래시간 (RTH)** | 오전 8:30 – 오후 3:15 | 13:30–20:15 UTC | 모든 옵션의 표준 세션 |
+| **연장 종료** | 오후 3:15 – 4:15 | 20:15–21:15 UTC | 일부 지수 옵션 (SPX, VIX, RUT) 매매 계속 |
+
+**Cboe Futures Exchange (CFE):**
+
+| 세션 | 시간 (CT) | 시간 (UTC) | 설명 |
+|------|-----------|------------|------|
+| **연장 거래시간** | 오후 5:00 (일) – 오전 8:30 (월); 오후 3:30 – 오전 8:30 (화~금) | 22:00–13:30 UTC | VIX 선물 RTH 이전 세션 |
+| **정규 거래시간** | 오전 8:30 – 오후 3:15 | 13:30–20:15 UTC | 표준 세션 |
+| **폐장 후** | 오후 3:15 – 3:30 | 20:15–20:30 UTC | 거래 보고 |
+
+[출처: Cboe, "Hours & Holidays"; Cboe Options Exchange 규칙, 2026-04-06 접속]
+
+### 2.3 호가단위 (최소가격변동폭) (Tick Sizes) — 주요 상품
+
+| 상품 | 최소 호가단위 (프리미엄 < $3.00) | 최소 호가단위 (프리미엄 >= $3.00) | 틱 가치 |
+|------|-------------------------------|--------------------------------|---------|
+| SPX 옵션 | $0.05 | $0.10 | $5.00 / $10.00 |
+| VIX 옵션 | $0.05 | $0.10 | $5.00 / $10.00 |
+| XSP (Mini-SPX) 옵션 | $0.01 | $0.05 | $1.00 / $5.00 |
+| 복수상장 주식 옵션 (페니 파일럿) | $0.01 | $0.05 | $1.00 / $5.00 |
+| 복수상장 주식 옵션 (비페니) | $0.05 | $0.10 | $5.00 / $10.00 |
+| VIX 선물 (VX) | 0.05 지수포인트 | 0.05 지수포인트 | $50.00 |
+| Mini VIX 선물 | 0.05 지수포인트 | 0.05 지수포인트 | $5.00 |
+
+### 2.4 계약 승수 / 거래단위 (Contract Multipliers / Lot Sizes)
+
+| 상품 | 승수 / 계약 규모 |
+|------|------------------|
+| SPX 옵션 | $100 x S&P 500 지수 |
+| XSP (Mini-SPX) 옵션 | $100 x 1/10 S&P 500 지수 |
+| VIX 옵션 | $100 x VIX 지수 |
+| RUT (Russell 2000) 옵션 | $100 x Russell 2000 지수 |
+| 주식 옵션 | 계약당 100주 (표준) |
+| VIX 선물 (VX) | $1,000 x VIX 지수 |
+| Mini VIX 선물 | $100 x VIX 지수 |
+
+### 2.5 시장조성자 (마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)
+
+Cboe는 옵션 거래소 전반에 걸쳐 다수의 시장조성자 지정을 운영한다:
+
+**시장조성자 유형 (C1 - Cboe Options Exchange):**
+
+| 유형 | 설명 |
+|------|------|
+| **지정 대표 시장조성자 (DPMs)** | 배정된 종목에 대한 독점적 지정; 가장 높은 호가 의무 및 참여 권한; 지속적 양방향 시장 제공 필수 |
+| **선도 시장조성자 (LMMs)** | 특정 종목에 지정; 우선 배분 권한 (예: 배정 종목의 공개 고객 주문에 대해 최대 50%); 호가 의무 |
+| **시장조성자 (MMs)** | 특정 종목에 등록; 폭 및 수량 요건을 충족하는 지속적 양방향 호가 유지 필수 |
+| **보조 유동성공급자 (SLPs)** | SPX 및 VIX 종목에서의 추가 유동성 |
+
+**인센티브 구조:**
+- 거래량 기준에 따른 단계별 수수료 감면
+- 호가 성과에 보상하는 SPX 및 VIX 특화 인센티브 프로그램
+- SCORe (Select Customer Options Rebate) 프로그램 — 소매 고객 거래량에 대한 단계별 수수료 환급 제공
+- 빈번 거래자 프로그램 (FTID) — TPH 간 고객 거래량 집계하여 단계별 환급
+
+[출처: Cboe Exchange Rule Book; Cboe 수수료표, 2026-04-06 접속]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 단일가매매 (경매) 메커니즘 (Auction Mechanisms)
+
+Cboe는 가격 개선 및 주문 상호작용을 위한 여러 전자 단일가매매 메커니즘을 운영한다:
+
+| 단일가매매 유형 | 설명 | 기간 |
+|----------------|------|------|
+| **개장 로테이션 (Opening Rotation)** | 각 시리즈의 개장가를 결정하는 전자 개장 과정; 대기 주문이 거래량 최대화 단일 산출가에서 체결 | 시장 개장 시 |
+| **자동 개선 메커니즘 (AIM)** | 쌍대 (위탁/자기) 주문에 대한 전자 단일가매매; 가격 개선 기회 제공; 개시 회원은 참여 권한 수령 (최대 40%) | 통상 100ms–1초 |
+| **권유 단일가매매 메커니즘 (SAM)** | AIM과 유사하나 권유 주문용; 회원이 가격 개선 노출과 함께 상대방 주문 권유 가능 | 통상 100ms–1초 |
+| **복합 주문 단일가매매 (COA)** | 복합 (다중 레그) 주문에 대한 단일가매매; 잠재적 가격 개선을 위해 복합 주문 노출 | 거래소 결정 기간 |
+| **스텝업 메커니즘 (SUM)** | 시장조성자가 스텝업하여 가격 개선을 제공할 수 있게 함 | 설정 가능 |
+| **FLEX 단일가매매** | FLEX (맞춤형) 옵션에 대한 단일가매매 과정 | FLEX 규칙에 따름 |
+
+추가로 Complex AIM (C-AIM), Complex SAM (C-SAM), FLEX AIM, FLEX SAM 변형이 이용 가능하다.
+
+### 3.2 접속매매 (연속매매) (Continuous Trading)
+
+- 주요 방식: Cboe Titanium 플랫폼에서의 접속 전자 체결
+- 가격 우선 및 해당 배분 알고리즘에 따라 주문 실시간 체결
+- 단순 (단일 레그) 주문, 복합 (다중 레그) 주문, 주식-옵션 주문 지원
+- 복합 주문장 (COB)은 다중 레그 전략을 위한 별도 호가장 유지; 복합 주문은 COB에서 체결되거나 순가격이 유리할 때 단순 호가장에서 "레그별" 체결 가능
+
+### 3.3 가격 발견 (Price Discovery)
+
+- **개장 로테이션:** 전자 가격 발견 과정을 통해 개장가 설정
+- **NBBO 통합:** 옵션 거래소는 Options Order Protection and Locked/Crossed Markets Plan (Options Linkage Plan)에 따라 운영; 전국최우선호가(NBBO) 존중 필수
+- **복합 주문 가격 결정:** 복합 주문은 순가격 요건 하에 개별 레그 NBBO를 개선할 수 있는 순가격으로 체결 가능
+- **VIX 정산:** 특별개장호가(SOQ) 과정은 만기 당일 아침 선별된 SPX 옵션의 시가를 사용하여 VIX 정산 가치를 산출
+
+### 3.4 주문 우선순위 규칙 / 매칭 알고리즘 (Order Priority Rules / Matching Algorithms)
+
+Cboe는 옵션 거래소 전반에 가격/시간 우선 (FIFO)을 주요 매칭 알고리즘으로 사용한다:
+
+**우선순위 계층:**
+1. **가격 우선** — 더 좋은 가격의 주문이 항상 먼저 체결
+2. **고객 우선** — 공개 고객 주문이 전문가 및 회사 주문보다 동일 가격에서 우선 (C1 및 EDGX Options)
+3. **시장조성자 참여 권한** — DPM/LMM은 특정 주문 흐름에 대해 참여 권리 수령 (설정 가능 %, 최대 50%)
+4. **시간 우선 (FIFO)** — 동일 우선순위, 동일 가격의 주문 중 가장 빠른 주문 먼저 체결
+5. **비례 배분 (Pro-Rata)** — 특정 거래소의 특정 종목에 사용 [unverified — 현행 상품 세트]
+
+**핵심 규칙:**
+- 공개 고객 주문은 전문 고객, 브로커-딜러, 시장조성자 주문보다 동일 가격에서 우선
+- 지정 시장조성자 (DPM/LMM)는 보장된 참여 비율 수령 가능
+- 특정 적격 주문에 대해 소량 주문 체결 보장이 적용될 수 있음
+
+[출처: Cboe Exchange Rule Book, Rules 5.32-5.35; Cboe 옵션 매매 문서, 2026-04-06 접속]
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 기본 주문 유형 (Standard Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|------|
+| **지정가주문 (Limit)** | 지정된 가격 또는 그보다 유리한 가격으로 매수/매도; 미체결 수량은 호가장에 잔류 |
+| **시장가주문 (Market)** | 최우선 가격으로 체결; 각 거래소의 시장가 처리 규칙에 따름 |
+| **역지정가 주문 (Stop)** | 지정된 역지정가에 도달하면 발동; 시장가주문으로 전환 |
+| **역지정가-지정가 주문 (Stop-Limit)** | 역지정가에서 발동; 지정된 가격의 지정가주문으로 전환 |
+
+### 4.2 고급 주문 유형 (Advanced Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|------|
+| **복합 / 스프레드 주문 (Complex / Spread Orders)** | 단일 전략으로 제출되는 다중 레그 주문 (예: 수직 스프레드, 스트래들, 버터플라이, 콘도르, 캘린더); 순 차변/대변 가격으로 체결 |
+| **주식-옵션 주문 (Stock-Option Orders)** | 쌍을 이루는 주식 및 옵션 레그를 함께 제출 |
+| **AIM 주문** | 자동 개선 메커니즘 단일가매매를 위한 쌍대 주문 |
+| **SAM 주문** | 권유 단일가매매 메커니즘을 위한 쌍대 주문 |
+| **FLEX 주문** | 사용자 정의 행사가, 만기일, 행사 방식, 결제 유형을 갖춘 맞춤형 옵션 |
+| **전량충족 (AON)** | 전량 체결되거나 전혀 체결되지 않아야 함 |
+| **최소 수량 (Minimum Quantity)** | 최소 체결 수량 요구 |
+| **예비 / 아이스버그 (Reserve / Iceberg)** | 총 주문 수량의 일부만 표시 |
+| **조건부 교차 (QCC)** | 주식 부수 조건을 갖춘 쌍대 옵션 주문; 노출 요건 면제; 최소 1,000계약 |
+
+### 4.3 주문 유효조건 (Time-in-Force, TIF)
+
+| TIF | 설명 |
+|-----|------|
+| **Day** | 현재 매매 세션에만 유효 |
+| **Good Till Cancel (GTC)** | 체결되거나 취소될 때까지 유지 |
+| **Good Till Date (GTD)** | 지정된 날짜까지 유지 |
+| **Immediate or Cancel (IOC)** | 가용 수량만큼 즉시 체결; 미체결 잔량 취소 |
+| **Fill or Kill (FOK)** | 전량 즉시 체결되거나 전량 취소 |
+| **개장 전용 (Opening Only)** | 개장 로테이션에만 참여 |
+
+### 4.4 주문 수정 및 취소 (Order Modification & Cancellation)
+
+- BOE (Binary Order Entry) 프로토콜을 통해 매매 세션 중 주문의 가격, 수량 수정 또는 취소 가능
+- **일괄 취소 (Mass Cancel):** 세션, 상품 또는 기초자산별 모든 미체결 주문 취소 기능
+- **접속 해제 시 취소 (Cancel on Disconnect):** 매매 세션 연결 해제 시 미체결 주문을 취소하는 설정 가능 기능
+- **킬 스위치 / 퍼지 (Kill Switch / Purge):** 모든 대기 주문 및 호가의 즉시 취소 (리스크 관리 도구는 8장 참조)
+- **자기거래 방지 (Self-Trade Prevention):** 동일 회사 주문 간 체결 방지 설정 가능
+
+[출처: Cboe US Options BOE Specification; Cboe Exchange Rule Book, 2026-04-06 접속]
+
+---
+
+## 5. 매매시스템 기술 — Cboe Titanium (Trading System Technology — Cboe Titanium)
+
+### 5.1 시스템 개요 (System Overview)
+
+| 항목 | 상세 |
+|------|------|
+| 플랫폼 명칭 | Cboe Titanium (Cboe Ti) |
+| 기원 | BATS Exchange 기술에서 발전 (2017년 인수); 원래 처음부터 설계된 전자 거래소 |
+| 아키텍처 | 거래소당 다수 매칭 유닛을 갖춘 분산 매매체결엔진 아키텍처; 주문 핸들러와 매매체결엔진 간 지연 균등화 연결 |
+| 주 데이터센터 | Equinix NY5, 뉴저지주 Secaucus (미국 운영); NY4 및 NY6에서 지연 균등화 접근 |
+| 보조 데이터센터 | 재해복구 사이트 (비공개 위치) [unverified] |
+| 지연시간 | Dedicated Cores 서비스로 ~60% 지연 감소 달성 (미국); 서브 100 마이크로초 주문 처리 [unverified — 정확한 수치] |
+| 처리량 | 27개 글로벌 시장에서 하루 ~2,000억 건의 주문 및 호가 처리 (최고 일간 기록); 미국 옵션 접근 아키텍처에서 일일 ~1,000억 건의 호가 및 주문 |
+| 가동시간 | 27개 글로벌 플랫폼 중 25개에서 100% 가동; 전체 >99.9% (2024년) |
+| 글로벌 플랫폼 | 미국, 영국, 유럽, 일본, 호주에 걸쳐 27개 시장 운영 |
+
+### 5.2 시스템 연혁 (System History)
+
+| 연도 | 사건 |
+|------|------|
+| 2005 | BATS Exchange, 완전 전자 거래소, 특수 설계 기술로 설립 |
+| 2006-2016 | BATS 기술 10년 이상 개선; 저지연, 고신뢰성 아키텍처로 인정 |
+| 2017 | Cboe, BATS 인수; 레거시 CBOE 시스템의 BATS 파생 기술로의 이전 개시 |
+| 2019 | Cboe Options (C1), BATS 기술 플랫폼으로 이전 (Feature Pack 4 통합) |
+| 2022-2023 | 플랫폼 "Cboe Titanium"으로 리브랜딩 |
+| 2024-2025 | 60% 지연 감소의 Dedicated Cores 서비스 출시; 영국, EU, 호주로 확장; 캐나다 이전 완료 (~45.5% FIX 지연 개선) |
+
+### 5.3 프로토콜 스택 (Protocol Stack)
+
+| 프로토콜 | 용도 | 설명 |
+|----------|------|------|
+| **BOE (Binary Order Entry)** | 주문 입력 | 주문 제출, 수정, 취소를 위한 독자 바이너리 프로토콜; 현재 버전 BOE v2 및 BOE v3 |
+| **FIX** | 주문 입력 (대안) | FIX 4.2 기반 주문 입력 프로토콜; BOE보다 높은 지연 |
+| **Multicast PITCH** | 시장 데이터 (L3 깊이) | UDP 멀티캐스트를 통한 전체 호가장 깊이 데이터; 개별 주문 추가, 수정, 취소, 체결 제공 |
+| **Multicast TOP** | 시장 데이터 (L1 상단) | UDP 멀티캐스트를 통한 최우선호가; PITCH 대비 대폭 감소된 대역폭 |
+| **Complex PITCH** | 시장 데이터 (복합 호가장) | 복합 주문장 깊이 데이터 |
+| **TCP PITCH** | 시장 데이터 (TCP) | 갭 복구 및 저대역폭 연결을 위한 TCP를 통한 PITCH 데이터 |
+
+### 5.4 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)
+
+- 장애 조치 운영을 위한 보조 데이터센터
+- Cboe Global Cloud (AWS 기반)가 시장 데이터 배포를 위한 지리적 다양성 제공
+- 거래소당 다수 매칭 유닛 설계; 단일 매칭 유닛 장애 시 전체 거래소 중단 없음
+- 정기적 DR 테스트 및 BCP 훈련 [unverified — 구체적 빈도]
+- NY4, NY5, NY6 데이터센터 간 지연 균등화로 인프라 이중화 제공
+
+[출처: Cboe Titanium 페이지; Cboe 접속 매뉴얼; Cboe 보도자료; StockTitan 뉴스, 2026-04-06 접속]
+
+---
+
+## 6. 시장 데이터 (Market Data)
+
+### 6.1 피드 프로토콜 (Feed Protocols)
+
+| 피드 | 유형 | 설명 |
+|------|------|------|
+| **Multicast PITCH** | L3 호가장 깊이 | 추가, 수정, 취소, 체결을 포함한 전체 주문별 데이터; 매칭 유닛별 UDP 멀티캐스트 전달 |
+| **Multicast TOP** | L1 최우선호가 | 최우선 매수/매도호가 및 최근 체결 데이터; PITCH 대비 축소된 대역폭 |
+| **Complex Multicast PITCH** | 복합 호가장 깊이 | 복합 주문장의 깊이 데이터 |
+| **Complex Auction Multicast PITCH** | 단일가매매 알림 | 복합 주문 단일가매매의 실시간 알림 |
+| **Cboe One Options Feed** | 통합 L1 | 4개 Cboe 옵션 거래소 전체의 최우선호가 데이터를 집계하는 단일 피드 |
+| **TCP PITCH** | 복구 | 갭 채우기를 위한 TCP를 통한 PITCH 데이터; Gap Request Proxy (GRP) 서버가 재전송 제공 |
+
+### 6.2 데이터 수준 (Data Levels)
+
+| 수준 | 내용 | 용도 |
+|------|------|------|
+| **Level 1 (TOP)** | 최우선호가, 최근 체결, 거래량 | 소매 매매, 디스플레이 시스템 |
+| **Level 2 (PITCH 요약)** | 가격 수준별 집계 깊이 | 전문 매매 |
+| **Level 3 (PITCH 전체)** | 개별 주문별 데이터 | HFT, 시장조성, 감시 |
+
+### 6.3 데이터 배포 (Data Distribution)
+
+- **직접 피드:** Cboe 데이터센터 (NY4, NY5, NY6)의 코로케이션 연결을 통해 이용 가능
+- **Cboe Global Cloud:** AWS 기반 글로벌 배포 플랫폼; 지리적으로 다양한 위치에서 Cboe 시장 데이터 전달; 클라우드 계정 불필요 — 온프레미스 및 제3자 인프라 연결 지원
+- **증권정보처리기관 (SIPs):** Cboe 데이터가 통합 옵션 테이프를 위해 OPRA (Options Price Reporting Authority)에 기여
+- **제3자 벤더:** 주요 시장 데이터 벤더 (Bloomberg, Refinitiv/LSEG, ICE 등)를 통해 Cboe 데이터 이용 가능
+
+### 6.4 과거 데이터 (Historical Data)
+
+- **Cboe DataShop** (datashop.cboe.com): 과거 시장 데이터를 위한 셀프서비스 플랫폼
+- 상품 포함: 과거 PITCH 데이터, 일말 옵션 데이터, VIX 지수 이력, 옵션 정산 데이터
+- **Cboe LiveVol:** 옵션 분석 및 과거 데이터 플랫폼 (LiveVol 인수를 통해 확보)
+- **Cboe Data Vantage:** 데이터 및 분석 사업 부문; 2026년 중-고 한 자릿수 순매출 성장 가이던스
+
+[출처: Cboe 시장 데이터 사양; Cboe Global Cloud FAQ; Cboe DataShop, 2026-04-06 접속]
+
+---
+
+## 7. 접속 및 접근 (Connectivity & Access)
+
+### 7.1 회원 / 접근 (Membership / Access)
+
+**옵션 거래소:**
+- Cboe 옵션 거래소에서 직접 매매하려면 매매허가보유자(TPH) 자격 필요
+- 신청 과정에 운영 역량, 인력 경험, 재무 상태 평가 포함
+- TPH 범주: 시장조성자, 플로어 브로커 (C1만 — 제한적 플로어 매매), 전자 접근 허가
+
+**Cboe Futures Exchange:**
+- CFE에 대한 직접 접근을 위해 매매권한보유자(TPH) 자격 필요
+- 청산회원은 OCC 회원이어야 함
+
+### 7.2 접속 방법 (Connection Methods)
+
+| 방법 | 설명 |
+|------|------|
+| **Cboe Connect** | 경쟁적 마이크로초 왕복 지연을 제공하는 Cboe 관리형 네트워크; 다수 Cboe 시장 간 연결 제공 |
+| **크로스커넥트 (Cross-Connect)** | Cboe 데이터센터 (NY4, NY5, NY6) 내 직접 물리적 연결 |
+| **엑스트라넷 / 제3자 네트워크** | 금융 엑스트라넷 (예: TNS, IPC, Avelacom)을 통한 접근 |
+| **Cboe Global Cloud** | 시장 데이터 접근을 위한 AWS 통한 클라우드 기반 연결 (주문 입력에는 미사용) |
+
+### 7.3 코로케이션 (Co-Location)
+
+- 주 코로케이션 시설: Equinix NY5, 뉴저지주 Secaucus
+- 추가 지연 균등화 접근점: Equinix NY4 및 NY6
+- Cboe는 데이터센터 간 주문 핸들러와 매매체결엔진 간 동일 광섬유 길이 보장
+- **유럽:** Cboe Europe 운영을 위한 Equinix LD4 (주), Equinix LD3 (보조)
+
+### 7.4 API 프로토콜 (API Protocols)
+
+| 프로토콜 | 용도 | 설명 |
+|----------|------|------|
+| **BOE v2 / BOE v3** | 주문 입력 | 독자 바이너리 프로토콜; 최저 지연 |
+| **FIX 4.2** | 주문 입력 | 업계 표준 프로토콜; BOE보다 높은 지연 |
+| **Multicast UDP** | 시장 데이터 | PITCH 및 TOP 피드 |
+| **TCP** | 시장 데이터 복구 | 갭 요청 및 재전송을 위한 TCP PITCH |
+| **Web API / REST** | 참조 데이터, 단일가매매 데이터 | 지연 민감도가 낮은 운영을 위한 Cboe 웹 기반 API [unverified] |
+
+### 7.5 인증 / 테스트 (Certification / Testing)
+
+- 신규 회원은 프로덕션 접근 허가 전 인증 테스트 완료 필수
+- Cboe는 모든 프로토콜 (BOE, FIX, PITCH)에 대한 테스트 환경 (인증 환경) 제공
+- 각 거래소 및 프로토콜 유형별 별도 인증 필요
+- 리스크 관리 도구 설정 테스트 필요
+
+[출처: Cboe 접속 매뉴얼; Cboe 회원 페이지; Cboe Global Cloud FAQ, 2026-04-06 접속]
+
+---
+
+## 8. 리스크 통제 및 서킷브레이커 (매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 시장 전체 서킷브레이커 (MWCB) (Market-Wide Circuit Breakers)
+
+Cboe는 모든 미국 주식, 옵션, 선물 거래소 간 조율되는 미국 시장 전체 서킷브레이커 프로그램에 참여한다:
+
+| 수준 | 기준 (S&P 500 하락) | 중단 기간 | 시간 조건 |
+|------|---------------------|-----------|-----------|
+| **레벨 1** | 7% | 15분 중단 | ET 오후 3:25 이전에만 |
+| **레벨 2** | 13% | 15분 중단 | ET 오후 3:25 이전에만 |
+| **레벨 3** | 20% | 잔여 시간 매매 중단 | 모든 시간 |
+
+### 8.2 제한가-하한가 (LULD) (Limit Up-Limit Down)
+
+- Cboe는 개별 증권에 대한 LULD 계획에 참여
+- 기초 주식이 LULD에 따라 중단되면 옵션 매매 중단 발동
+- 참조 가격에 기반한 가격 밴드 산출; 밴드 내에서 매매가 없으면 5분간 해당 증권 중단
+
+### 8.3 사전 매매 리스크 통제 (Pre-Trade Risk Controls)
+
+Cboe는 모든 매매허가보유자에게 포괄적 리스크 관리 도구를 제공한다:
+
+| 도구 | 설명 |
+|------|------|
+| **퍼지 (킬 스위치) (Purge)** | 지정된 거래소의 모든 대기 주문 및 호가 즉시 취소 |
+| **리스크 모니터 메커니즘** | 체결 계약 수량, 명목 거래량, 시간 구간에 기반한 원치 않는 체결 방지를 위한 설정 가능 매개변수 |
+| **팻 핑거 / 가격 합리성** | 유입 주문에 대한 거래소 수준 가격 합리성 검사 |
+| **주문 크기 한도** | 회원별 설정 가능한 최대 주문 크기 한도 |
+| **드릴스루 보호 (Drill-Through Protection)** | 설정 가능 기준을 초과하여 다수 가격 수준을 관통하는 주문 체결 방지 |
+| **접속 해제 시 취소** | 세션 연결 해제 시 미체결 주문 자동 취소 |
+| **반복 자동 체결 보호** | 빠른 시장에서 시장조성자가 반복적으로 포착되는 것을 방지 |
+
+### 8.4 포지션한도 및 행사한도 (Position and Exercise Limits)
+
+- 주식 옵션의 포지션한도는 Cboe Exchange 규칙에 따라 설정 (기초자산 유동성 및 시가총액에 따라 통상 25,000~250,000계약)
+- 지수 옵션 (SPX, VIX) — 포지션한도가 특정 종목에 대해 대폭 확대 또는 사실상 폐지:
+  - SPX 옵션: 포지션한도 없음 (SEC 승인으로 제거) [unverified — 현행 상태]
+  - VIX 옵션: 포지션한도 적용, 헤지 면제 신청 가능
+- 행사한도는 일반적으로 포지션한도와 동일
+- 지정 기준 초과 시 대규모 거래자 보고 필요 (CFTC 및 SEC 대규모 거래자 보고)
+
+[출처: Cboe Market-Wide Circuit Breaker FAQ; Cboe US Options Risk Management Specification; Cboe Exchange Rule Book, 2026-04-06 접속]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관 (Supervising Authorities)
+
+| 기관 | 범위 |
+|------|------|
+| **SEC (증권거래위원회)** | 등록된 국가 증권 거래소로서 모든 Cboe 옵션 및 주식 거래소 감독 |
+| **CFTC (상품선물거래위원회)** | 지정계약시장(DCM)으로서 Cboe Futures Exchange (CFE) 감독 |
+| **OCC (Options Clearing Corporation)** | 모든 Cboe 옵션 및 CFE 선물의 중앙청산소(CCP); 자체적으로 시스템적으로 중요한 금융시장인프라(SIFMU)로서 SEC 및 CFTC의 규제를 받음 |
+
+### 9.2 자율규제기관 (SRO) 지위 (Self-Regulatory Organization Status)
+
+- 각 Cboe 거래소는 별도로 등록된 SRO
+- SRO 책임 포함: 규정 집행, 회원 감독, 시장 감시, 징계 절차
+- Cboe 규제부가 매매 활동을 모니터링하고, 잠재적 시장 조작을 감지하며, 의심스러운 활동을 조사
+
+### 9.3 주요 규정 (Key Regulations)
+
+| 규정 | 설명 |
+|------|------|
+| **Regulation SHO** | 주식 옵션 행사에 적용되는 공매도 규정 |
+| **Regulation NMS** | 전국시장시스템 규칙; Options Linkage Plan이 거래소 간 가격 보호 보장 |
+| **Regulation SCI** | 시스템 준수 및 무결성 — SCI 대상 기관에 대한 강건한 기술 거버넌스 요구 |
+| **SEC Rule 15c3-5** | 시장 접근 규칙 — 브로커-딜러 접근에 대한 리스크 통제 요구 |
+| **CFTC Part 38** | CFE에 대한 지정계약시장 규칙 |
+| **도드-프랭크법** | 스왑에 적용되는 Title VII 조항; OCC에 적용되는 Title VIII (SIFMU) |
+
+### 9.4 감시 및 시장 건전성 (Surveillance & Market Integrity)
+
+- Cboe 시장규제부가 첨단 기술 시스템을 사용하여 실시간 감시 수행
+- 시장간감시그룹(ISG)을 통한 교차시장 감시
+- 포지션 모니터링을 위한 OCC에 대한 대규모 옵션 포지션 보고 (LOPR)
+- 옵션규제감시기관(ORSA) — 거래소 간 상장 옵션에 대한 통합 감시
+
+### 9.5 국경간 운영 (Cross-Border Operations)
+
+- Cboe Europe: 영국에서 인가투자거래소(RIE)로, EU (네덜란드)에서 MiFID II에 따른 규제시장으로 운영
+- Cboe Japan: 사설매매시스템(PTS)으로 운영
+- Cboe Australia: 호주시장면허에 따라 운영 (2025년 매각 절차 개시)
+- Cboe Canada: 대안매매시스템(ATS) 및 거래소로 운영 (2025년 매각 절차 개시)
+
+[출처: Cboe Exchange Rule Book; SEC 등록; Cboe 규제 페이지, 2026-04-06 접속]
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 매매 수수료 — 옵션 거래소 (Trading Fees — Options Exchanges)
+
+Cboe 옵션 거래소는 차별화된 수수료 모델로 운영된다:
+
+**Cboe Options Exchange (C1) — 수수료 예시 (2026년 3월 기준):**
+
+| 분류 | SPX (계약당) | VIX (계약당) | 복수상장 주식 (계약당) |
+|------|-------------|-------------|----------------------|
+| 고객 | $0.18–$0.47 (단계별) | $0.15–$0.45 (단계별) | $0.00–$0.25 (단계별) |
+| 시장조성자 | 종목/등급별 상이 | 종목/등급별 상이 | 지정에 따라 상이 |
+| 회사 / 브로커-딜러 | $0.15–$0.50 | $0.15–$0.50 | $0.02–$0.50 |
+
+주: 정확한 수수료는 거래량 등급, 자격 (고객/전문가/시장조성자), 특정 프로그램 참여에 따라 크게 상이하다. 정확한 요율은 현행 수수료표를 참조.
+
+**거래소별 수수료 모델:**
+- **C1 (Cboe Options):** 비례 배분 가격; 독자 상품에 대한 명시적 메이커-테이커 없음
+- **BZX Options:** 유동성 추가에 대한 환급이 있는 메이커-테이커 가격
+- **EDGX Options:** 고객 우선을 갖춘 메이커-테이커 가격
+- **C2:** 상품 분류별 수수료 구조 상이
+
+### 10.2 매매 수수료 — CFE 선물 (Trading Fees — CFE Futures)
+
+| 상품 | 거래 수수료 |
+|------|-----------|
+| VIX 선물 (VX) | 계약당 $0.47–$1.32 (거래량 단계별) |
+| Mini VIX 선물 | 계약당 $0.10–$0.30 (단계별) [unverified] |
+| 부과금 | 규제 수수료, 청산 수수료, 거래소 수수료가 추가로 적용 |
+
+### 10.3 시장 데이터 수수료 (Market Data Fees)
+
+- PITCH (깊이), TOP (최우선호가), 통합 피드에 대한 실시간 데이터 수수료
+- Cboe One Options Feed: 4개 옵션 거래소 전체의 통합 L1 데이터
+- Cboe DataShop을 통한 과거 데이터 이용 가능
+- Cboe Data Vantage 부문: 성장하는 매출 동력 (~2026년 중-고 한 자릿수 유기적 성장 목표)
+
+### 10.4 접속 수수료 (Connectivity Fees)
+
+- Cboe 데이터센터 (NY4, NY5, NY6)의 코로케이션 수수료
+- Cboe Connect 네트워크 접근 수수료
+- 거래소별 논리적 연결에 대한 포트 수수료
+- 시장 데이터 배포를 위한 Cboe Global Cloud 접근 수수료
+
+### 10.5 수익 분류 (2025) (Revenue Breakdown)
+
+| 부문 | 설명 |
+|------|------|
+| **옵션** | 최대 부문; SPX, VIX, 복수상장 주식 옵션에 의해 좌우; 2025년 순매출 34% 증가 |
+| **북미 주식** | 4개 주식 거래소; 거래 및 시장 데이터 수수료 |
+| **선물** | CFE — VIX 선물 및 관련 상품 |
+| **유럽 및 아시아태평양** | Cboe Europe, Japan, Australia 주식/파생상품 |
+| **Data Vantage** | 시장 데이터, 분석, 지수 라이선스 |
+| **합계** | 24억 달러 순매출 (2025년 기록) |
+
+[출처: Cboe 수수료표 (C1, C2, BZX, EDGX, CFE); Cboe 2025년 4분기 실적 발표, 2026-04-06 접속]
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 11.1 기술 업그레이드 (Technology Upgrades)
+
+- **Cboe Titanium Dedicated Cores:** 미국 고객을 위한 60% 지연 감소로 출시; 유럽 및 아시아태평양으로 확장
+- **BOE v3:** 차세대 바이너리 주문 입력 프로토콜, 거래소 전반에 걸쳐 배포 중
+- **NY6 통합:** Cboe, Secaucus Equinix NY6 데이터센터로의 지연 균등화 연결 확대
+- **Cboe Global Cloud 확장:** AWS를 통한 클라우드 기반 시장 데이터 배포 지속 확장
+
+### 11.2 신규 상품 (New Products)
+
+- **Magnificent 10 Index (MGTN):** 2025년 12월 8일 선물 및 옵션 출시, 미국 대형 기술/성장주 10종목을 추종하는 Cboe Magnificent 10 지수
+- **Mini-SPX 예측시장:** 2026년 2분기 계획; 고정수익 결과 기반 매매를 위한 전통적 옵션 구조 사용; C1에 상장되고 OCC에서 청산 예정
+- **유럽 FLEX 옵션:** Cboe Europe Derivatives, 2026년 1분기 FLEX 옵션 출시, 행사가, 만기, 결제, 행사 방식의 기관 맞춤화 가능
+- **VIX 선물 옵션:** CFE에서 이용 가능, 추가적인 VIX 복합 매매 상품 제공
+- **거래시간 확대 이니셔티브:** 주요 상품에 대한 잠재적 거래시간 연장을 위해 개발 중
+
+### 11.3 규제 변경 (Regulatory Changes)
+
+- **예측시장 체계:** Cboe, 예/아니오 결과를 넘어서 확장하는 혁신적 예측시장 체계 도입 (2026년 초 발표)
+- **단일가매매 응답 처리:** C1의 단일가매매 응답 처리 관련 제안된 규칙 변경에 대한 SEC 절차 진행 중 (SR-CBOE-2025-090)
+- **포지션한도 검토:** 지수 옵션에 대한 포지션 및 행사한도의 지속적 규제 검토
+
+### 11.4 전략적 이니셔티브 (Strategic Initiatives)
+
+- **전략적 재편:** Cboe Australia 및 Cboe Canada 매각 절차 개시; 미국 및 유럽 기업 상장에서 철수; 핵심 파생상품 및 데이터 사업에 집중
+- **0DTE 성장:** 당일 만기 옵션 지속 확장 — 2025년 0DTE SPX 옵션이 전체 SPX 거래량의 59% (일평균 거래량 230만 계약); 개별주식 옵션으로의 0DTE 확장 탐색
+- **Data Vantage 성장:** 2026년 중-고 한 자릿수 유기적 성장 목표; 지수 라이선스 및 분석
+- **2026년 매출 가이던스:** 중 한 자릿수 유기적 총 순매출 성장; 조정 운영 비용 $864-$879M
+
+[출처: Cboe 보도자료 2025-2026; Cboe 2025년 4분기 실적 발표; SEC 제출 서류, 2026-04-06 접속]
+
+---
+
+## 파생상품 특화: 상품 카탈로그 및 계약 사양 (Derivatives-Specific: Product Catalog & Contract Specifications)
+
+### 주요 상품 분류 (Key Product Categories)
+
+| 분류 | 상품 | 거래소 |
+|------|------|--------|
+| **독자 지수 옵션** | SPX, XSP (Mini-SPX), VIX, RUT, MRUT, MGTN, DJX, OEX, XEO | C1 (독점) |
+| **복수상장 주식 옵션** | ~3,500개 이상 미국 개별 주식 옵션 | C1, C2, BZX Options, EDGX Options |
+| **ETF 옵션** | SPY, QQQ, IWM 및 기타 ETF 옵션 (복수상장) | 4개 옵션 거래소 전체 |
+| **변동성 선물** | VIX 선물 (VX), Mini VIX 선물 | CFE |
+| **선물 변동성 옵션** | VX 선물에 대한 옵션 | CFE |
+| **FLEX 옵션** | 맞춤형 지수 및 주식 옵션 | C1 |
+
+### 계약 사양 — 주요 상품 (Contract Specifications — Top Products)
+
+**SPX 옵션 (S&P 500 지수 옵션):**
+
+| 사양 | 상세 |
+|------|------|
+| 기초자산 | S&P 500 지수 |
+| 승수 | $100 |
+| 행사 방식 | 유럽식 (조기 행사 불가) |
+| 결제 | 현금결제; AM 정산 (표준 월간/분기) 또는 PM 정산 (주간, 월말, 0DTE) |
+| 만기 | 일일 (월~금), 주간, 월간, 분기, 월말; LEAPS 최대 5년 |
+| 행사가 간격 | 근월 $5, 원월 $25; 근월 등가격 부근 $1 간격 이용 가능 |
+| 호가단위 (Tick Size) | $0.05 (프리미엄 < $3.00); $0.10 (프리미엄 >= $3.00) |
+| 매매시간 | GTH: CT 오전 2:00 – 8:15; RTH: CT 오전 8:30 – 오후 3:15; 연장 종료: CT 오후 3:15 – 4:15 |
+| 정산 산출 | AM: 구성종목 시가를 사용한 특별개장호가(SOQ); PM: 구성종목 종가 |
+| 일평균 거래량 (2025) | 390만 계약 (기록); 0DTE가 59% (~일평균 230만) 차지 |
+
+**VIX 옵션 (Cboe 변동성지수 옵션):**
+
+| 사양 | 상세 |
+|------|------|
+| 기초자산 | Cboe 변동성지수 (VIX) |
+| 승수 | $100 |
+| 행사 방식 | 유럽식 |
+| 결제 | 현금결제; VIX의 특별개장호가(SOQ)를 사용한 AM 정산 |
+| 만기 | 주간, 월간, 주간 시리즈 |
+| 행사가 간격 | 근월 0.50 지수포인트; 원월 1.00 |
+| 호가단위 (Tick Size) | $0.05 (프리미엄 < $3.00); $0.10 (프리미엄 >= $3.00) |
+| 매매시간 | GTH: CT 오전 2:00 – 8:15; RTH: CT 오전 8:30 – 오후 3:15; 연장 종료: CT 오후 3:15 – 4:15 |
+
+**VIX 선물:**
+
+| 사양 | 상세 |
+|------|------|
+| 기초자산 | Cboe 변동성지수 (VIX) |
+| 계약 규모 | $1,000 x VIX |
+| 호가단위 (Tick Size) | 0.05 지수포인트 (틱당 $50.00) |
+| 결제 | 현금결제; VIX의 SOQ를 사용하여 최종결제가 산출 |
+| 만기 | 최대 6개 근월 주간, 9개 근월 월간, 5개 분기 만기 |
+| 매매시간 | 연장: CT 일요일 오후 5:00 – 월요일 오전 8:30; CT 오후 3:30 – 오전 8:30 (화~금); RTH: CT 오전 8:30 – 오후 3:15 |
+| 거래소 | Cboe Futures Exchange (CFE) |
+
+**0DTE (당일 만기) 옵션 (Zero Days to Expiration):**
+
+| 사양 | 상세 |
+|------|------|
+| 정의 | 거래 당일 만기되는 옵션 |
+| 이용 가능성 | SPX 옵션은 매 거래일 (월~금) 만기 |
+| 핵심 동인 | 일일 SPX 만기 도입 (2022년 화/목 추가로 완성) |
+| 2025년 거래량 | 일평균 ~230만 계약; 전체 SPX 거래량의 59%; 2025년 8월 62% 도달 |
+| 결제 | PM 정산 (구성종목 종가) |
+| 용도 | 장중 헤지, 프리미엄 매도, 감마 스캘핑, 이벤트일 거래, 소매 투기 |
+| 리스크 주의 | 급속한 시간가치 감소 및 감마 가속; OCC 및 감독기관이 시스템적 리스크 모니터링 |
+
+### VIX 지수 — 독자 방법론 (VIX Index — Proprietary Methodology)
+
+VIX 지수는 S&P 500 지수의 30일 예상 변동성에 대한 Cboe의 독자 지표이다:
+
+- **산출:** 2개 근월 만기에 걸쳐 광범위한 SPX 옵션 (풋 및 콜) 실시간 가격을 사용하는 모델 비의존 방법론
+- **공식:** 가중된 외가격 SPX 옵션 가격을 집계하여 예상 분산을 도출; 연율 변동성으로 전환
+- **배포:** 매매시간 중 15초마다 업데이트
+- **의의:** "공포지수" 또는 "공포 지표"로 알려짐; 글로벌 변동성 매매의 핵심 벤치마크
+- **라이선스:** Cboe가 VIX 방법론을 라이선스; 지수 라이선스 수익은 Data Vantage 부문의 일부
+
+### 증거금 체계 (Margin Framework)
+
+**옵션 증거금:**
+- 고객 증거금은 Regulation T 및 거래소 규칙에 의해 규율
+- **표준 (전략 기반) 증거금:** 정의된 전략별 (커버드 콜, 스프레드, 매도 옵션 등) 증거금 산출; Cboe Margin Manual이 상세 요건 제공
+- **포트폴리오 증거금:** 적격 계좌에 이용 가능; 다수 가격 시나리오를 사용한 최대 예상 순손실에 기반한 증거금 설정 (OCC의 TIMS — Theoretical Intermarket Margin System); 헤지된 포트폴리오에 대해 일반적으로 낮은 증거금 요건
+- **청산회원 증거금:** OCC가 STANS (System for Theoretical Analysis and Numerical Simulations) — 몬테카를로 기반 증거금 시스템을 사용하여 청산 수준 증거금 산출
+
+**선물 증거금 (CFE):**
+- 청산소로서 OCC가 개시 및 유지 증거금 설정
+- VIX 선물 증거금은 STANS 방법론에 기반하여 설정
+- 이행보증 요건은 계약 및 시장 상황에 따라 변동
+
+### 포지션한도 (Position Limits)
+
+- **SPX 옵션:** 포지션한도가 대폭 확대; 표준 SPX 옵션에 대한 총합 포지션한도 사실상 없음 [unverified — 현행 규칙 상태 확인 필요]
+- **VIX 옵션:** 포지션한도 적용; 신청 절차를 통해 헤지 면제 이용 가능
+- **주식 옵션:** 기초자산의 거래량 및 유통주식수에 따라 통상 25,000~250,000 계약
+- **VIX 선물:** CFTC 투기적 포지션한도 및 보고 가능 포지션 기준 적용; CFE 고유 한도 적용
+- **대규모 거래자 보고:** 보고 기준을 초과하는 포지션은 OCC (옵션) 및 CFTC (선물)에 보고 필요
+
+### 블록거래 (대량매매) 및 복합 주문 처리 (Block Trading and Complex Order Handling)
+
+**복합 주문:**
+- 복합 주문장 (COB)은 다중 레그 전략을 위한 전용 호가장 유지
+- C1에서 복합 주문당 최대 16개 레그 (Complex AIM을 통한 주식-옵션 주문)
+- 복합 주문은 COB의 다른 복합 주문에 대해 체결되거나 유리할 때 개별 단순 호가장에서 "레그별" 체결 가능
+- 복합 주문 단일가매매 (COA)가 노출 및 가격 개선 기회 제공
+
+**조건부 교차 (QCC):**
+- 레그당 최소 1,000 계약
+- 주식 구성 요소 포함 필수
+- 표준 단일가매매 노출 면제; 지정 가격에서 즉시 체결
+- 대규모 기관 블록사이즈 옵션 거래에 일반적으로 사용
+
+**FLEX 옵션:**
+- 완전 맞춤형 계약 조건: 임의의 행사가, 임의의 만기일 (한도 내), 행사 방식 선택 (미국식/유럽식), 결제 선택 (현금/실물)
+- 최소 초기 포지션 250 계약 (주식 FLEX) 또는 100 계약 (지수 FLEX) [unverified — 현행 기준]
+- OCC에서 청산
+
+**CFE 블록거래:**
+- VIX 선물에 대한 블록거래 이용 가능
+- CFE 규칙에 따른 최소 블록 규모 및 보고 요건
+
+[출처: Cboe 상품 사양 페이지; Cboe Margin Manual; Cboe Exchange Rule Book; Cboe VIX 방법론 백서; Cboe 보도자료, 2026-04-06 접속]
+
+---
+
+## 출처 (Sources)
+
+- [Cboe Global Markets IR — Full Year 2025 Volume Report](https://ir.cboe.com/news/news-details/2026/Cboe-Global-Markets-Reports-Trading-Volume-for-December-and-Full-Year-2025/default.aspx)
+- [Cboe Global Markets IR — Q4 2025 & Full Year Earnings](https://ir.cboe.com/news/news-details/2026/Cboe-Global-Markets-Reports-Results-for-Fourth-Quarter-2025-and-Full-Year/default.aspx)
+- [Cboe SPX Options Product Specifications](https://www.cboe.com/tradable-products/sp-500/spx-options/spx-specifications/)
+- [Cboe VIX Futures Contract Specifications](https://www.cboe.com/tradable-products/vix/vix-futures/specifications/)
+- [Cboe VIX Options Product Specifications](https://www.cboe.com/tradable-products/vix/vix-options/specifications/)
+- [Cboe US Options Exchange Complex Orders](https://www.cboe.com/us/options/trading/complex_orders/)
+- [Cboe US Options Exchange Risk Management Tools](https://www.cboe.com/us/options/trading/risk_management/)
+- [Cboe Options Exchange Fee Schedule](https://www.cboe.com/us/options/membership/fee_schedule/)
+- [Cboe Titanium Platform](https://www.cboe.com/titanium/)
+- [Cboe Global Cloud](https://www.cboe.com/cboe_global_cloud/)
+- [Cboe Connectivity Manual](https://cdn.cboe.com/resources/membership/US_Equities_Options_Connectivity_Manual.pdf)
+- [Cboe Market-Wide Circuit Breaker FAQ](https://cdn.cboe.com/resources/membership/US_Market_Wide_Circuit_Breaker_FAQ.pdf)
+- [Cboe Margin Manual](https://cdn.cboe.com/resources/membership/Margin_Manual.pdf)
+- [Cboe Exchange Rule Book](https://cdn.cboe.com/resources/regulation/rule_book/C1_Exchange_Rule_Book.pdf)
+- [Cboe Options Membership](https://www.cboe.com/markets/us/options/membership/)
+- [Cboe Hours & Holidays](https://www.cboe.com/about/hours/)
+- [Wikipedia — Cboe Global Markets](https://en.wikipedia.org/wiki/Cboe_Global_Markets)
+- [Finance Magnates — Cboe 2025 Revenue](https://www.financemagnates.com/institutional-forex/cboe-posts-24b-in-2025-revenue-as-options-volumes-stay-elevated-across-institutional-and-retail/)
+- [MacroTrends — Cboe Market Cap](https://www.macrotrends.net/stocks/charts/CBOE/cboe-global-markets/market-cap)
+- [Cboe DataShop](https://datashop.cboe.com/)
+- [StockTitan — Cboe Titanium Announcement](https://www.stocktitan.net/news/CBOE/cboe-unveils-new-brand-for-exchange-technology-platform-marking-new-ba2swduralf0.html)

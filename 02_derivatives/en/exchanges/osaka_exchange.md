@@ -1,0 +1,679 @@
+# Osaka Exchange (OSE)
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 2
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Osaka Exchange, Inc. (株式会社大阪取引所) |
+| Abbreviation | OSE |
+| Website | https://www.jpx.co.jp/english/derivatives/ |
+| Year Established | 1878 (as Osaka Stock Exchange); renamed Osaka Exchange, Inc. on March 24, 2014 |
+| Country / City | Japan / Osaka (registered office); trading systems operated from Tokyo data center |
+| Ownership Structure | Wholly owned subsidiary of Japan Exchange Group, Inc. (JPX, TSE: 8697) |
+| Parent Company / Group | Japan Exchange Group (JPX) — vertically integrated group comprising Tokyo Stock Exchange (TSE, cash equities), Osaka Exchange (OSE, derivatives), Tokyo Commodity Exchange (TOCOM, commodity derivatives), Japan Securities Clearing Corporation (JSCC, CCP), and JPX Market Innovation & Research |
+| Regulatory Authority | Japan Financial Services Agency (JFSA); Securities and Exchange Surveillance Commission (SESC); Ministry of Economy, Trade and Industry (METI) for commodity derivatives |
+| Annual Trading Volume (CY2024) | 464,165,639 contracts (record high); trading value of JPY 4,156 trillion |
+| Average Daily Trading Volume (FY2024) | 1.86 million contracts (record high, +8.4% YoY) |
+| Listed Instruments | Equity index futures & options, JGB futures & options, interest rate futures, commodity futures & options, securities options |
+| Key Products | Nikkei 225 Futures/Mini/Micro, TOPIX Futures/Mini, JGB Futures (10-year, 20-year), Nikkei 225 Options, 3-Month TONA Futures |
+
+[Source: JPX, "Trading Overview in Year 2024 & December 2024", December 2024, https://www.jpx.co.jp/english/corporate/news/news-releases/0063/20241230-01.html]
+[Source: JPX, "Trading Overview in FY2024 & March 2025", April 2025, https://www.jpx.co.jp/english/corporate/news/news-releases/0063/20250401-01.html]
+
+### Key Historical Milestones
+
+- **1697**: Rice trading moved to Dojima district in Osaka
+- **1730**: Dojima Rice Exchange officially approved by the Tokugawa shogunate — recognized as the origin of futures transactions in Japan (cho-gomai forward contracts)
+- **1878 (June)**: Osaka Stock Exchange Co., Ltd. established
+- **1988**: Nikkei 225 Futures launched at Osaka Securities Exchange (OSE) — becomes internationally recognized benchmark index futures
+- **1988**: 20-year JGB Futures launched
+- **2001**: J-GATE 1.0 derivatives trading system launched (developed with Nasdaq/OMX technology)
+- **2006**: Nikkei 225 mini Futures launched (1/10th size of standard contract)
+- **2011**: J-GATE 2.0 upgraded system launched (February)
+- **2013 (January 1)**: Japan Exchange Group (JPX) formed through merger of Tokyo Stock Exchange Group and Osaka Securities Exchange
+- **2013 (July 16)**: OSE cash equity market integrated into TSE; OSE becomes dedicated derivatives exchange
+- **2014 (March 24)**: Osaka Securities Exchange renamed to **Osaka Exchange, Inc.**; TSE derivatives market integrated into OSE, consolidating all JPX derivatives under one venue
+- **2016**: Next-generation J-GATE (J-GATE 2.5) launched with ITCH market data feed
+- **2018**: OSE registered as a Foreign Board of Trade (FBOT) with the U.S. CFTC, permitting direct access from U.S. participants
+- **2020**: TOCOM commodity derivatives (precious metals, rubber, agricultural) integrated into OSE
+- **2021 (September 21)**: **J-GATE 3.0** launched — merged OSE and TOCOM onto a single Nasdaq Genium INET platform
+- **2022 (May)**: Nikkei 225 micro Futures launched (1/100th size of standard contract, targeting retail investors)
+- **2022 (September 23)**: Holiday trading launched for derivatives
+- **2023 (May)**: Nikkei 225 mini Options launched; JSCC migrates margin methodology from SPAN to VaR (November)
+- **2024**: Record annual derivatives volume of 464 million contracts; 3-Month TONA Futures gain significant traction following BOJ rate hikes
+- **2025**: 3-Month TONA Futures open interest exceeds 100,000 contracts (March 2025, record high); 20-year JGB Futures set annual volume record; J-GATE 4.0 announced (Nasdaq Eqlipse platform, launch ~2028)
+
+[Source: Wikipedia, "Osaka Exchange", https://en.wikipedia.org/wiki/Osaka_Exchange]
+[Source: JPX, "Before JPX Launched | History (OSE)", https://www.jpx.co.jp/english/corporate/about-jpx/history/02-01.html]
+[Source: Nasdaq, "OSE's New Derivatives Trading System, J-GATE, Launched", https://ir.nasdaq.com/news-releases/news-release-details/oses-new-derivatives-trading-system-j-gate-launched]
+[Source: CFTC, "Orders of Registration to Osaka Exchange", 2018, https://www.cftc.gov/PressRoom/PressReleases/7772-18]
+[Source: Mondovisione, "3-Month TONA Futures Open Interest Surpasses 100,000 Contracts", March 2025, https://mondovisione.com/media-and-resources/news/osaka-exchange-3-month-tona-futures-open-interest-surpasses-100000-contracts-2025314/]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+
+| Segment | Key Products | Description |
+|---------|-------------|-------------|
+| **Equity Index Futures** | Nikkei 225 Futures, Nikkei 225 mini, Nikkei 225 micro, TOPIX Futures, mini-TOPIX, JPX-Nikkei 400 Futures, TOPIX Core30 Futures, TOPIX Banks Index Futures, TSE Mothers Index Futures, TSE REIT Index Futures, Nikkei 225 VI Futures | Full range of Japanese equity index futures from large to micro-sized contracts |
+| **Equity Index Options** | Nikkei 225 Options, Nikkei 225 mini Options (incl. weekly), TOPIX Options, JPX-Nikkei 400 Options, TOPIX Banks Index Options, TSE REIT Index Options | European-style options on Japanese equity indices |
+| **JGB Derivatives** | 10-year JGB Futures, 20-year JGB Futures, mini-10-year JGB Futures (cash-settled), Options on 10-year JGB Futures | Interest rate derivatives on Japanese government bonds |
+| **Interest Rate Futures** | 3-Month TONA Futures | Overnight rate futures based on Tokyo Overnight Average Rate (TONA); growing rapidly post-BOJ rate normalization |
+| **Securities Options** | Equity options on individual stocks | Options on selected individual equities listed on TSE |
+| **Commodity Futures & Options** | Gold, Silver, Platinum, Palladium, Rubber (RSS3, TSR20), Corn, Soybean, Azuki Beans, Electricity Futures | Integrated from TOCOM in 2020; precious metals and agricultural commodities |
+
+[Source: JPX, "Derivatives Products", https://www.jpx.co.jp/english/derivatives/products/]
+
+### 2.2 Trading Sessions
+
+OSE operates in Japan Standard Time (JST, UTC+9). A key distinguishing feature is the extensive **Night Session** covering European and U.S. trading hours.
+
+| Session | JST | UTC | Description |
+|---------|-----|-----|-------------|
+| **Pre-Opening (Day)** | 08:00 - 08:45 | 23:00 - 23:45 (prev. day) | Order entry period; no matching; opening auction preparation |
+| **Day Session** | 08:45 - 15:15 | 23:45 - 06:15 (prev. day) | Opening auction followed by continuous trading |
+| **Pre-Opening (Night)** | 16:15 - 16:30 | 07:15 - 07:30 | Order entry for night session |
+| **Night Session** | 16:30 - 06:00 (+1) | 07:30 - 21:00 | Extended session covering European and U.S. hours; runs until 6:00 AM next day |
+
+**Product-Specific Variations:**
+- **Index Futures/Options (Nikkei 225, TOPIX, etc.)**: Day 08:45–15:15; Night 16:30–06:00 (+1 day)
+- **JGB Futures/Options**: Day 08:45–15:02; Night 16:30–06:00 (+1 day)
+- **3-Month TONA Futures**: Day 08:45–15:02; Night 16:30–06:00 (+1 day)
+- **Nikkei 225 VI Futures**: Day 08:45–15:15; Night 16:30–19:00 (shortened night)
+- **Commodity Futures (Gold, Platinum, etc.)**: Day 08:45–15:15; Night 16:30–06:00 (+1 day)
+- **Rubber Futures**: Day 08:45–15:15; Night 16:30–19:00 (shortened night)
+- **Electricity Futures**: Day 08:45–15:15; Night 16:30–19:00 (shortened night)
+- **Securities Options**: Day 08:45–15:15; Night 16:30–06:00 (+1 day) [unverified]
+
+**Night Session Significance:** In FY2024, the night session accounted for **40.5%** of total derivatives trading volume (184,167,267 contracts), the second-highest ratio on record, demonstrating its critical importance for global investors.
+
+**Holiday Trading:** Since September 2022, OSE conducts derivatives trading on selected national holidays (excluding Saturdays, Sundays, and January 1) to provide hedging opportunities during international market hours.
+
+[Source: JPX, "Trading Hours | Derivatives", https://www.jpx.co.jp/english/derivatives/rules/trading-hours/index.html]
+[Source: JPX, "Night Session | Derivatives", https://www.jpx.co.jp/english/derivatives/rules/trading-hours/01.html]
+[Source: FIA, "The Market Never Sleeps: The Success of Extended Trading Hours at JPX", https://www.fia.org/marketvoice/articles/market-never-sleeps-success-extended-trading-hours-jpx]
+
+### 2.3 Tick Sizes and Lot Sizes
+
+| Product | Tick Size | Tick Value | Contract Multiplier | Lot Size |
+|---------|-----------|------------|---------------------|----------|
+| Nikkei 225 Futures | 10 yen | JPY 10,000 | 1,000x index | 1 contract |
+| Nikkei 225 mini | 5 yen | JPY 500 | 100x index | 1 contract |
+| Nikkei 225 micro | 5 yen | JPY 50 | 10x index | 1 contract |
+| TOPIX Futures | 0.5 pts | JPY 5,000 | 10,000x index | 1 contract |
+| mini-TOPIX Futures | 0.25 pts | JPY 250 | 1,000x index | 1 contract |
+| 10-year JGB Futures | JPY 0.01 per 100 | JPY 10,000 | JPY 100 million face value | 1 contract |
+| mini-10-year JGB Futures | JPY 0.005 per 100 | JPY 500 | JPY 10 million face value | 1 contract |
+| 20-year JGB Futures | JPY 0.01 per 100 | JPY 10,000 | JPY 100 million face value | 1 contract |
+| Nikkei 225 Options | 1 yen (when premium < 100); 5 yen (100-1,000); 10 yen (>= 1,000) | Varies | 1,000x index | 1 contract |
+
+[Source: JPX, "Contract Specifications | Nikkei 225 Futures", https://www.jpx.co.jp/english/derivatives/products/domestic/225futures/01.html]
+[Source: JPX, "Contract Specifications | JGB Futures", https://www.jpx.co.jp/english/derivatives/products/jgb/jgb-futures/01.html]
+
+### 2.4 Market Maker Programs
+
+OSE operates market maker (MM) and liquidity provider (LP) programs for selected products to ensure tight bid-ask spreads and continuous liquidity. Designated market makers receive fee discounts or incentive payments in exchange for maintaining two-sided quotes within specified parameters (maximum spread, minimum size, minimum quote time).
+
+Products covered include Nikkei 225 Options, TOPIX Options, JGB Futures Options, securities options, and newer products like Nikkei 225 micro Futures and 3-Month TONA Futures. [unverified — specific program details]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+- **Opening Auction (Itayose)**: At the start of each session (day and night), orders are matched via a single-price auction (Itayose method). All accumulated orders during the pre-opening period are matched at a single equilibrium price that maximizes volume.
+- **Closing Auction**: At the end of each session, a closing auction determines the settlement price. For certain products, closing prices are determined by the Itayose method.
+
+### 3.2 Continuous Trading (Zaraba)
+
+After the opening auction, trading proceeds via continuous matching (Zaraba method):
+- Incoming orders are matched against the order book on a price-time priority basis
+- If no match is available, the order rests in the book at its limit price
+- Market orders have highest priority and are matched at the best available price
+
+### 3.3 Price Discovery
+
+- **Special Quotation (SQ)**: For final settlement of index futures and options, a Special Quotation value is calculated based on the opening prices of each component stock on the business day following the last trading day. This SQ value serves as the final settlement price.
+- **Theoretical Opening Price (TOP)**: During pre-opening periods, a theoretical opening price is disseminated indicating likely opening level.
+
+### 3.4 Order Priority
+
+1. **Price Priority**: Better-priced orders (higher bids, lower offers) have priority
+2. **Time Priority**: Among orders at the same price, earlier orders have priority
+
+[Source: JPX, "Trading | Derivatives", https://www.jpx.co.jp/english/derivatives/rules/]
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Limit Order** | Order to buy or sell at a specified price or better |
+| **Market Order** | Order to buy or sell at the best available price; executed immediately during continuous trading |
+| **Market-to-Limit Order** | Submitted as market order; any unexecuted portion converts to limit order at the execution price |
+
+### 4.2 Advanced / Conditional Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Stop Order (Trigger Order)** | Order activated when a specified trigger price is reached |
+| **Stop-Limit Order** | Stop order that converts to a limit order once triggered |
+| **Spread/Combination Order** | Simultaneous buy and sell orders across different contract months or products (calendar spreads, inter-commodity spreads) |
+| **Iceberg Order** | Large order where only a portion of the total quantity is displayed in the order book [unverified] |
+
+### 4.3 Time-in-Force Conditions
+
+| TIF | Description |
+|-----|-------------|
+| **GFD (Good for Day)** | Order valid for the current trading session only |
+| **GFS (Good for Session)** | Order valid for the current session (day or night) |
+| **GTC (Good till Cancelled)** | Order remains active until executed or cancelled |
+| **FAK (Fill and Kill)** | Execute immediately as much as possible; cancel any unfilled portion |
+| **FOK (Fill or Kill)** | Execute the entire order immediately or cancel entirely |
+
+### 4.4 Modification / Cancellation
+
+- Orders can be modified (price, quantity) or cancelled during the trading session
+- During pre-opening periods, orders can be entered, modified, and cancelled but not matched
+- **TradeGuard** pre-trade risk checks apply to all order submissions
+
+[Source: JPX, "J-GATE", https://www.jpx.co.jp/english/systems/derivatives-trading/01.html]
+
+---
+
+## 5. Trading System / Technology
+
+### 5.1 J-GATE (Current: Version 3.0)
+
+| Item | Details |
+|------|---------|
+| System Name | J-GATE (Global Access Trading Engine) |
+| Current Version | J-GATE 3.0 (launched September 21, 2021) |
+| Technology Vendor | Nasdaq (Genium INET platform) |
+| Architecture | Central matching engine with distributed access gateways |
+| Order Processing Latency | Less than 100 microseconds (average response time) — 20x improvement over previous system [unverified exact figure for 3.0] |
+| Throughput | ~100,000 orders per second (8x improvement over previous system) |
+| Trading Protocols | OUCH (order entry), ITCH (market data), OMnet API |
+| Pre-trade Risk | TradeGuard — mandatory pre-trade risk check for all trading participants |
+
+### 5.2 System History
+
+| Version | Year | Platform | Key Changes |
+|---------|------|----------|-------------|
+| J-GATE 1.0 | 2001 | Nasdaq OMX | First electronic derivatives platform for OSE |
+| J-GATE 2.0 | 2011 | Nasdaq OMX | System refresh; improved latency and capacity |
+| J-GATE 2.5 | 2016 | Nasdaq Genium INET | Added ITCH market data feed; enhanced API |
+| J-GATE 3.0 | 2021 | Nasdaq Genium INET | Merged OSE and TOCOM onto unified platform; TradeGuard mandatory |
+| J-GATE 4.0 | ~2028 (planned) | Nasdaq Eqlipse | Next-generation platform with Eqlipse Trading and Nasdaq Market Surveillance technology; sub-40 microsecond latency target |
+
+### 5.3 Tech Stack
+
+- **Matching Engine**: Nasdaq Genium INET — used globally by multiple exchanges
+- **Market Surveillance**: Nasdaq SMARTS (current); migrating to Nasdaq Market Surveillance with J-GATE 4.0
+- **Order Entry API**: OUCH protocol (binary, low-latency)
+- **Market Data Feed**: ITCH protocol (multicast)
+- **Legacy API**: OMnet (C++ library-based API)
+
+### 5.4 Disaster Recovery / BCP
+
+- JPX operates a primary data center and backup site for business continuity
+- J-GATE is designed for high availability with failover mechanisms
+- In the event of a system failure, OSE can halt trading and resume from the backup system
+- Specific DR site location and RTO/RPO details are not publicly disclosed [unverified]
+
+[Source: Nasdaq, "Japan's Osaka Exchange Adopts Nasdaq Eqlipse Trading and Surveillance Technology", https://ir.nasdaq.com/news-releases/news-release-details/japans-osaka-exchange-adopts-nasdaq-eqlipse-trading-and]
+[Source: JPX, "J-GATE | Derivatives Trading Services", https://www.jpx.co.jp/english/systems/derivatives-trading/01.html]
+[Source: FinanceFeeds, "Osaka Exchange Selects Nasdaq to Build Next-Generation Derivatives Trading System", https://financefeeds.com/osaka-exchange-selects-nasdaq-to-build-next-generation-derivatives-trading-system/]
+
+---
+
+## 6. Market Data
+
+### 6.1 Feed Protocols
+
+| Feed | Protocol | Description |
+|------|----------|-------------|
+| **Real-Time Market Data** | ITCH (multicast) | Level 1 and Level 2 order book data; deterministic dissemination via multicast |
+| **Order Entry** | OUCH | Binary protocol for order submission, modification, and cancellation |
+| **Legacy API** | OMnet | C++ library-based API for both market data and order entry |
+| **FIX Protocol** | FIX 4.2/4.4 | Available through third-party ISV gateways [unverified version] |
+
+### 6.2 Data Levels
+
+| Level | Content |
+|-------|---------|
+| **Level 1** | Best bid/offer, last trade price, volume, high/low |
+| **Level 2** | Full order book depth (multiple price levels) |
+| **Level 3 (FLEX Historical)** | Tick-by-tick historical data in packet capture format (.pcap) with nanosecond timestamps; available from JPX Market Innovation & Research |
+
+### 6.3 Distribution
+
+- **Real-time data** distributed via co-location multicast and managed network connections
+- **Information vendors**: Major global data vendors (Bloomberg, Refinitiv, etc.) redistribute OSE market data
+- **JPX Market Data Cloud**: Cloud-based distribution service for market data [unverified]
+
+### 6.4 Historical Data
+
+- **FLEX Historical**: Tick data stored in .pcap format with reception time timestamps (data available from May 24, 2021 onward)
+- **Daily Reports**: Open, high, low, close prices and volume published on JPX website
+- **Alternative Data Service (J-GATE)**: Order-level data for academic and quantitative research
+
+[Source: JPX, "Real Time Market Data | Paid Information Services (Derivatives)", https://www.jpx.co.jp/english/markets/paid-info-derivatives/realtime/index.html]
+[Source: JPX, "Alternative Data Service (J-GATE)", https://www.jpx.co.jp/english/markets/paid-info-alternative/j-gate/index.html]
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Trading Participant Types
+
+To trade on OSE, firms must be registered as one of the following Trading Participant types:
+
+| Participant Type | Scope |
+|-----------------|-------|
+| **Futures Trading Participant** | Equity index and securities derivatives |
+| **Government Bond Futures Trading Participant** | JGB futures and options |
+| **Commodity Futures Trading Participant** | Commodity derivatives (gold, rubber, etc.) |
+
+**Requirements:**
+- Must be registered as a Financial Instruments Business Operator, Registered Financial Institution, or Commodity Derivatives Business Operator under the FIEA
+- Must acquire JSCC clearing qualifications or designate an agency clearing participant
+- Must pass the exchange's qualification examination
+- Foreign firms can participate through remote trading participant status or through the CFTC FBOT registration (for U.S.-based participants, since 2018)
+
+### 7.2 Connection Methods
+
+| Method | Description |
+|--------|-------------|
+| **Co-Location** | Rack space at the JPX Primary Data Center (operated at @Tokyo CC2 facility); same floor as matching engines for arrowhead (TSE) and J-GATE (OSE) |
+| **Proximity Hosting** | Third-party facilities near the JPX data center (e.g., Pico, Colt) |
+| **Managed Network** | Dedicated leased lines connecting participant offices to JPX |
+| **Internet VPN** | Lower-cost connectivity option for smaller participants [unverified] |
+
+### 7.3 Co-Location Details
+
+- Located at the JPX Primary Site in Tokyo
+- Provides direct connection to J-GATE (derivatives), arrowhead (equities), ToSTNeT (off-auction equities), and market information systems
+- Pico, Colt, and other infrastructure providers offer Layer 1 (physical cross-connect) connectivity within the co-location facility, achieving ultra-low latency access
+- Latency from co-location to matching engine: sub-microsecond network latency (5 nanoseconds for market data delivery claimed) [unverified — likely refers to switch-level latency]
+
+### 7.4 API Protocols
+
+- **OUCH**: Primary low-latency binary order entry protocol
+- **ITCH**: Primary market data dissemination protocol
+- **OMnet**: Legacy C++ API for order entry and market data
+- Third-party ISV connectivity available from Trading Technologies (TT), CQG, Fidessa, and others
+
+### 7.5 Certification
+
+- Trading participants must complete system connectivity testing and certification before going live
+- Separate certification required for each API (OUCH, ITCH, OMnet)
+
+[Source: JPX, "Connectivity Services", https://www.jpx.co.jp/english/systems/connectivity/index.html]
+[Source: JPX, "Trading Participants", https://www.jpx.co.jp/english/rules-participants/participants/index.html]
+[Source: Pico, "Pico Expands its Services at Japan Exchange Group Colocation Facility", https://www.pico.net/press-release/pico-expands-its-services-at-japan-exchange-group-colocation-facility-with-layer-1-connectivity/]
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits (Static Circuit Breakers)
+
+OSE applies daily price limit ranges to futures and options contracts. These limits are calculated by multiplying a base price by predetermined rates and are recalculated quarterly (March, June, September, December).
+
+**Expansion Mechanism:**
+- If a futures contract hits its price limit, trading in all related contracts (same underlying index) is temporarily halted for approximately **10 minutes**
+- After the halt, trading resumes with expanded price limits (1st expansion)
+- If limits are hit again, a further expansion (2nd expansion) is applied
+
+**Example (Nikkei 225 Futures):** Under normal conditions, the initial price limit is approximately 8% of the base price. After the 1st expansion, the limit widens further. [unverified — exact percentages vary by period]
+
+### 8.2 Immediately Executable Price Range (Dynamic Circuit Breakers)
+
+A dynamic circuit breaker mechanism (Immediately Executable Price Range rule) prevents sudden large price moves within continuous trading:
+- If an incoming order would result in execution at a price outside the "immediately executable price range" from the last traded price, a temporary trading halt is triggered
+- This functions similarly to a volatility interruption mechanism
+- Trading resumes after a brief cooling-off period with a single-price auction
+
+### 8.3 Pre-Trade Risk Controls
+
+- **TradeGuard**: Mandatory pre-trade risk check system implemented in J-GATE 3.0 for all trading participants
+  - Maximum order size limits
+  - Maximum position limits
+  - Order price reasonability checks
+  - Configured by each trading participant with exchange-mandated minimums
+
+### 8.4 Kill Switch
+
+- Trading participants can use TradeGuard or manual procedures to cancel all resting orders and prevent new order entry
+- OSE can also intervene to halt a participant's trading in emergency situations
+
+[Source: JPX, "Price Limits / Circuit Breaker Rule | Derivatives", https://www.jpx.co.jp/english/derivatives/rules/price-limit-cb/]
+[Source: JPX, "Immediately Executable Price Range Rule", https://www.jpx.co.jp/english/derivatives/rules/price-range/]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+
+| Regulator | Role |
+|-----------|------|
+| **Japan Financial Services Agency (JFSA)** | Primary regulator; oversees securities and derivatives markets under the FIEA |
+| **Securities and Exchange Surveillance Commission (SESC)** | Conducts on-site and off-site inspections of market participants; investigates market misconduct |
+| **Ministry of Economy, Trade and Industry (METI)** | Co-regulates commodity derivatives alongside JFSA |
+| **Ministry of Agriculture, Forestry and Fisheries (MAFF)** | Co-regulates agricultural commodity derivatives |
+
+### 9.2 Key Regulations
+
+- **Financial Instruments and Exchange Act (FIEA)**: Primary statute governing securities and derivatives in Japan; promulgated June 14, 2006 (replacing the Securities and Exchange Law)
+- **Commodity Derivatives Act**: Governs commodity futures trading
+- **OSE Business Regulations**: Exchange-level rules governing trading conduct, participant obligations, listing standards, and market operations
+- **JSCC Rules**: Clearing rules governing margin, settlement, and default management
+
+### 9.3 Market Surveillance
+
+- OSE conducts real-time market surveillance using Nasdaq SMARTS technology
+- Monitors for market manipulation, insider trading, and unusual trading patterns
+- Cross-market surveillance coordination between TSE (cash) and OSE (derivatives)
+- Planned upgrade to Nasdaq Market Surveillance technology with J-GATE 4.0
+
+### 9.4 Reporting Requirements
+
+- Large position reporting obligations for trading participants
+- Daily margin reporting to JSCC
+- Transaction reporting to JFSA
+
+### 9.5 Cross-Border Access
+
+- OSE registered as a **Foreign Board of Trade (FBOT)** with the U.S. CFTC in 2018, permitting direct access by U.S.-located market participants
+- Bilateral recognition arrangements with other jurisdictions [unverified — specific jurisdictions]
+- CME Group/OSE cross-listing partnership for Nikkei 225 futures
+
+[Source: JFSA, "Financial Instruments and Exchange Act", https://www.fsa.go.jp/en/policy/fiel/index.html]
+[Source: CFTC, "CFTC Issues Orders of Registration to Osaka Exchange", https://www.cftc.gov/PressRoom/PressReleases/7772-18]
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Participant Fee Structure (As of January 2026)
+
+Fees are charged to trading participants (not end investors directly). End-investor fees depend on their broker's commission structure.
+
+**Basic Fees:**
+
+| Fee Type | Amount |
+|----------|--------|
+| Trading Participation Fee (one-time) | Varies by participant type [unverified exact amount] |
+| Monthly Basic Fee | Charged per connection/terminal [unverified exact amount] |
+
+**Trading Fees (per contract, charged to trading participants):**
+
+| Product Category | Approximate Fee Range |
+|-----------------|----------------------|
+| Nikkei 225 Futures (standard) | JPY 50–110 per contract (volume-tiered) |
+| Nikkei 225 mini Futures | Lower per-contract fee due to smaller size |
+| Nikkei 225 micro Futures | Lowest per-contract fee |
+| TOPIX Futures | JPY 20–50 per contract (volume-tiered) |
+| JGB Futures (10-year) | JPY 225–500 per contract (volume-tiered) |
+| Mini-10-year JGB Futures | JPY 38–85 per contract (volume-tiered) |
+| Options | Varies by premium level and product |
+
+**Clearing Fees:**
+- JSCC charges clearing fees separately, up to JPY 35 per contract maximum
+- Exchange fee minimum per contract: JPY 5; maximum: JPY 350
+
+**Fee Incentives:**
+- 3-Month TONA Futures: Trading and clearing fee 50% discount campaign extended through September 30, 2026
+- Market maker fee rebates and incentive programs for designated products
+- Volume-based tiered discounts for high-volume participants
+
+### 10.2 Market Data Fees
+
+- Real-time derivatives market data is a paid service
+- Fee structure varies by data level (Level 1 vs. full depth), number of terminals, and distribution scope
+- Historical data (FLEX Historical) available from JPX Market Innovation & Research at separate fees
+
+### 10.3 Co-Location Fees
+
+- Rack space rental at JPX Primary Site
+- Network connection fees for managed lines
+- Cross-connect fees for Layer 1 connectivity
+
+[Source: JPX, "Trading Participation Fees", https://www.jpx.co.jp/english/rules-participants/participants/fees/index.html]
+[Source: Interactive Brokers, "OSE Exchange and Regulatory Fees", https://www.interactivebrokers.com/en/accounts/fees/OSE-JPN.php]
+
+---
+
+## 11. Recent Developments
+
+### 11.1 System Upgrades
+
+- **J-GATE 4.0 Announced (2025)**: OSE selected Nasdaq's Eqlipse Trading platform and Nasdaq Market Surveillance technology for the next-generation derivatives system. J-GATE 4.0 is scheduled for launch around the latter half of 2028 and will deliver sub-40 microsecond latency, enhanced scalability, and AI-powered market surveillance.
+- **J-GATE 3.0 Continuing Enhancements**: Ongoing updates to the current Genium INET-based platform for stability and performance.
+
+### 11.2 New Products & Volumes
+
+- **3-Month TONA Futures Growth (2024–2025)**: Following the BOJ's exit from negative interest rates (March 2024) and subsequent rate hikes (July 2024, January 2025), demand for JPY interest rate hedging has surged. Open interest surpassed 100,000 contracts in March 2025. OSE introduced Pack and Bundle trading for TONA Futures.
+- **Nikkei 225 micro Futures Success**: Launched May 2022 to attract retail investors; achieved record trading volumes in 2025.
+- **Nikkei 225 mini Options**: Launched May 2023 with weekly expirations, enabling more granular risk management.
+- **20-Year JGB Futures**: Set annual volume record in 2025 (196,682 contracts), driven by increased yield curve trading.
+- **Record Overall Volumes**: CY2024 total of 464 million contracts (record); night session ratio at 40.5%.
+
+### 11.3 Regulatory Changes
+
+- **JSCC Margin Migration to VaR (November 2023)**: JSCC transitioned from SPAN-based margining to a VaR (Value-at-Risk) methodology using Historical Simulation (HS-VaR) for all listed derivatives. The VaR method uses 1,250+ historical data points vs. SPAN's 16 simplified scenarios, providing more accurate risk-based margin calculations at a 99% confidence level.
+- **Securities Options Revitalization**: Regulatory improvements in 2024–2025 to promote Japan's single stock options market, including relaxed position limits and enhanced market maker programs.
+
+### 11.4 Strategic Initiatives
+
+- **Cryptocurrency Derivatives Exploration**: OSE CEO Ryosuke Yokoyama has signaled plans to explore crypto futures, options, and crypto ETFs as part of JPX's medium-term strategy to diversify into new asset classes.
+- **Holiday Trading Expansion**: Continuing to expand the derivatives holiday trading calendar to maximize global accessibility.
+- **CME Group Partnership**: Ongoing cross-listing and mutual offset arrangement for Nikkei 225 products.
+- **Global Access Promotion**: Leveraging FBOT status and extending night session hours to attract international institutional participation.
+
+[Source: Nasdaq, "Japan's Osaka Exchange Adopts Nasdaq Eqlipse Trading and Surveillance Technology", https://ir.nasdaq.com/news-releases/news-release-details/japans-osaka-exchange-adopts-nasdaq-eqlipse-trading-and]
+[Source: JPX, "JGB and JPY Interest Rate Derivatives Reach Annual Record Highs in 2025", January 2026, https://www.jpx.co.jp/english/news/2041/20260113-01.html]
+[Source: CoinGape, "Osaka Exchange Could Bring Crypto Futures and Options to Japanese Markets Soon", https://coingape.com/osaka-exchange-could-bring-crypto-futures-and-options-to-japanese-markets-soon/]
+[Source: The TRADE, "Japan's equity derivatives market set to grow in 2025", https://www.thetradenews.com/thought-leadership/japans-equity-derivatives-market-set-to-grow-in-2025/]
+
+---
+
+## Derivatives-Specific Sections
+
+### D1. Product Catalog
+
+#### Equity Index Derivatives
+
+| Product | Contract Size | Settlement | Launch Year |
+|---------|--------------|------------|-------------|
+| Nikkei 225 Futures | 1,000 x Nikkei 225 | Cash (SQ) | 1988 |
+| Nikkei 225 mini Futures | 100 x Nikkei 225 | Cash (SQ) | 2006 |
+| Nikkei 225 micro Futures | 10 x Nikkei 225 | Cash (SQ) | 2022 |
+| TOPIX Futures | 10,000 x TOPIX | Cash (SQ) | 1988 |
+| mini-TOPIX Futures | 1,000 x TOPIX | Cash (SQ) | 2008 |
+| JPX-Nikkei 400 Futures | 100 x JPX-Nikkei 400 | Cash (SQ) | 2014 |
+| Nikkei 225 Options | 1,000 x Nikkei 225 | Cash (SQ) | 1989 |
+| Nikkei 225 mini Options | 100 x Nikkei 225 | Cash (SQ) | 2023 |
+| TOPIX Options | 10,000 x TOPIX | Cash (SQ) | 1989 |
+| Nikkei 225 VI Futures | 10,000 x Nikkei VI | Cash | 2012 |
+
+#### JGB & Interest Rate Derivatives
+
+| Product | Contract Size | Settlement | Launch Year |
+|---------|--------------|------------|-------------|
+| 10-Year JGB Futures | JPY 100 million face value | Physical delivery (6% coupon standard bond) | 1985 |
+| 20-Year JGB Futures | JPY 100 million face value | Physical delivery | 1988 |
+| Mini-10-Year JGB Futures | JPY 10 million face value | Cash (based on 10-year JGB Futures settlement price) | 2009 |
+| Options on 10-Year JGB Futures | 1 JGB Futures contract | Physical (delivery of futures position) | 1990 |
+| 3-Month TONA Futures | JPY 100 million notional | Cash (based on compounded TONA rate) | 2023 |
+
+#### Commodity Derivatives (TOCOM Products on OSE)
+
+| Product | Contract Size | Settlement |
+|---------|--------------|------------|
+| Gold Futures | 1 kg | Physical delivery |
+| Gold mini Futures | 100 g | Cash |
+| Silver Futures | 10 kg | Physical delivery |
+| Platinum Futures | 500 g | Physical delivery |
+| Palladium Futures | 500 g | Physical delivery [unverified] |
+| Rubber (RSS3) Futures | 5,000 kg | Physical delivery |
+| Rubber (TSR20) Futures | 5,000 kg | Cash |
+| Corn Futures | 50 tonnes | Cash |
+| Soybean Futures | 25 tonnes | Cash [unverified] |
+| Electricity (East Area Base Load) Futures | Varies | Cash |
+
+### D2. Key Contract Specifications (Top Products)
+
+#### Nikkei 225 Futures (Standard)
+
+| Specification | Details |
+|--------------|---------|
+| Contract Multiplier | JPY 1,000 per index point |
+| Tick Size | 10 yen (= JPY 10,000 per tick) |
+| Contract Months | 19 months: quarterly (Mar, Jun, Sep, Dec) — 8-year max for Jun/Dec, 1.5-year for Mar/Sep |
+| Last Trading Day | Business day preceding the 2nd Friday of the contract month |
+| Final Settlement | Cash settlement based on SQ (Special Quotation) |
+| Trading Hours | Day: 08:45–15:15 JST; Night: 16:30–06:00 (+1) JST |
+| Notional Value (approx.) | ~JPY 40 million per contract (at Nikkei 225 = 40,000) |
+
+#### Nikkei 225 mini Futures
+
+| Specification | Details |
+|--------------|---------|
+| Contract Multiplier | JPY 100 per index point (1/10th of standard) |
+| Tick Size | 5 yen (= JPY 500 per tick) |
+| Contract Months | Nearest 3 quarterly months plus nearest 3 serial months |
+| Last Trading Day | Business day preceding the 2nd Friday of the contract month |
+| Final Settlement | Cash settlement based on SQ |
+| Significance | 3rd largest equity index futures contract globally by volume (2020 FIA data) |
+
+#### Nikkei 225 micro Futures
+
+| Specification | Details |
+|--------------|---------|
+| Contract Multiplier | JPY 10 per index point (1/100th of standard) |
+| Tick Size | 5 yen (= JPY 50 per tick) |
+| Contract Months | Nearest 2 quarterly months plus nearest 2 serial months |
+| Last Trading Day | Business day preceding the 2nd Friday of the contract month |
+| Final Settlement | Cash settlement based on SQ |
+| Target Users | Retail investors and small-scale hedgers; low margin requirements |
+
+#### TOPIX Futures (Standard)
+
+| Specification | Details |
+|--------------|---------|
+| Contract Multiplier | JPY 10,000 per index point |
+| Tick Size | 0.5 points (= JPY 5,000 per tick) |
+| Contract Months | Quarterly (Mar, Jun, Sep, Dec) |
+| Last Trading Day | Business day preceding the 2nd Friday of the contract month |
+| Final Settlement | Cash settlement based on SQ |
+
+#### 10-Year JGB Futures
+
+| Specification | Details |
+|--------------|---------|
+| Contract Size | JPY 100 million face value (standardized bond with 6% coupon) |
+| Tick Size | JPY 0.01 per JPY 100 face value (= JPY 10,000 per tick) |
+| Contract Months | Quarterly (Mar, Jun, Sep, Dec) — nearest 3 contract months |
+| Last Trading Day | Depends on contract month [unverified — typically 5 business days before the 20th] |
+| Settlement | Physical delivery of eligible JGB issues |
+| 2025 Annual Volume | 10,750,902 contracts (2nd consecutive year exceeding 10 million) |
+
+### D3. Margin Framework
+
+#### JSCC VaR-Based Margining (Since November 2023)
+
+| Item | Details |
+|------|---------|
+| Clearing House | Japan Securities Clearing Corporation (JSCC) — CCP for all OSE listed derivatives |
+| Methodology | Value-at-Risk (VaR) — replaced SPAN on November 6, 2023 |
+| VaR Approach | Historical Simulation (HS-VaR): portfolio P&L calculated using 1,250+ historical scenarios; Alternative Simulation (AS-VaR) used for products with insufficient history |
+| Confidence Level | At least 99% of potential future exposures |
+| Lookback Period | At least 1,250 trading days (~5 years) of historical data |
+| Margin Types | Initial margin (upfront deposit) + Variation margin (daily mark-to-market settlement) |
+| Eligible Collateral | Cash (JPY), government bonds, listed equities, and other approved securities |
+| Margin Call Process | Intraday margin calls possible during extreme volatility; regular margin calls at end of day |
+| Portfolio Margining | Cross-margining across correlated positions (e.g., Nikkei 225 futures and options) |
+
+**Comparison with Previous SPAN Method:**
+- VaR uses 1,250+ historical scenarios vs. SPAN's 16 simplified scenarios
+- VaR provides more accurate risk-based margins, especially for complex portfolios
+- VaR can result in lower margins for hedged positions and higher margins for concentrated risk
+
+### D4. Position Limits
+
+- Position limits apply to speculative positions in selected products
+- Hedge exemptions available upon application with documented hedging rationale
+- Large position reporting thresholds trigger reporting obligations to OSE and JFSA
+- Specific position limit levels vary by product and are set by OSE Business Regulations [unverified — exact limits not publicly summarized in a single source]
+
+### D5. J-NET Trading (Off-Auction Facility)
+
+| Item | Details |
+|------|---------|
+| Description | Off-auction (negotiated) trading facility for derivatives, independent of the central order book |
+| Eligible Products | All futures and options listed on OSE |
+| Mechanism | Participants negotiate bilaterally and submit matched orders to J-NET; executed when price, volume, and counterparty details match |
+| Price Constraints | Must be within specified price bands relative to the auction market |
+| Trading Hours | Available during both day and night sessions; also available on holiday trading days |
+| Flexible Contracts | J-NET supports flexible terms (e.g., non-standard expiration dates, settlement methods) for certain products |
+| Reporting | J-NET trade prices (open, high, low, close) and volumes published daily |
+| Use Cases | Block trading, basis trades, portfolio rebalancing, and other off-exchange negotiated transactions |
+
+[Source: JPX, "J-NET Trading | Derivatives", https://www.jpx.co.jp/english/derivatives/rules/j-net/index.html]
+[Source: JPX, "Outline of J-NET Trading Rules", November 2025, https://www.jpx.co.jp/english/derivatives/rules/outline/dreu250000001ove-att/dreu250000001oxp.pdf]
+
+### D6. Delivery & Settlement
+
+#### Cash-Settled Products (Majority)
+
+- **Equity Index Futures/Options**: Settled against the Special Quotation (SQ) value, calculated from the opening prices of all component stocks on the business day after the last trading day
+- **Mini/Micro Futures**: Cash-settled using the same SQ methodology
+- **Commodity Futures (some)**: Cash-settled based on reference prices
+
+#### Physically-Delivered Products
+
+- **10-Year JGB Futures**: Physical delivery of eligible JGB issues; delivery month is the contract month; the deliverable basket consists of JGBs with remaining maturity of 7–11 years (approximate); conversion factor system used
+- **20-Year JGB Futures**: Physical delivery of eligible JGBs with remaining maturity of 15–21 years (approximate) [unverified]
+- **Gold/Platinum/Silver Futures**: Physical delivery through designated warehouses
+
+#### Central Counterparty
+
+- **JSCC (Japan Securities Clearing Corporation)** acts as the CCP for all OSE listed derivatives
+- JSCC interposes itself between buyer and seller, guaranteeing settlement
+- JSCC also clears OTC JPY interest rate swaps (separate clearing service; annual clearing value reached approximately JPY 12,202 trillion in 2025, a record)
+- JSCC maintains a default fund (clearing fund) contributed by all clearing members
+
+[Source: JSCC, "Margin on Futures and Options", https://www.jpx.co.jp/jscc/en/cash/futures/marginsystem/margin.html]
+[Source: JSCC, "Margin Calculation Method (VaR Method)", https://www.jpx.co.jp/jscc/en/cash/futures/marginsystem/VaR.html]
+[Source: JPX, "JGB and JPY Interest Rate Derivatives Reach Annual Record Highs in 2025", January 2026, https://www.jpx.co.jp/english/news/2041/20260113-01.html]
+
+---
+
+## Appendix: Comparison with KRX Derivatives
+
+| Item | OSE (JPX) | KRX |
+|------|-----------|-----|
+| Trading System | J-GATE 3.0 (Nasdaq Genium INET) | EXTURE+ |
+| Flagship Product | Nikkei 225 Futures/Options | KOSPI 200 Futures/Options |
+| Margin Methodology | VaR (JSCC, since Nov 2023) | SPAN (KRX, PC-SPAN) |
+| CCP | JSCC | KRX Clearing |
+| Night Session | 16:30–06:00 JST (13.5 hours) | 18:00–06:00 KST (extended session) |
+| Holiday Trading | Yes (since Sep 2022, national holidays) | No |
+| FBOT Registration (U.S.) | Yes (since 2018) | Yes |
+
+[Note: KRX comparison based on general knowledge; specific KRX details should be verified separately]

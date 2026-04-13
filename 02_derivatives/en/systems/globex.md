@@ -1,0 +1,376 @@
+# CME Globex — CME Group
+
+> **Last Updated:** 2026-04-07
+> **System Category:** Trading System
+
+---
+
+## 1. System Overview
+
+| Attribute | Detail |
+|---|---|
+| **System Name** | CME Globex |
+| **Operated By** | CME Group (CME, CBOT, NYMEX, COMEX) |
+| **Purpose** | Electronic trading of futures and options on futures |
+| **Launch Date** | June 25, 1992 |
+| **Current Platform** | Globex (NSC-derived, proprietary evolution); migration to Google Cloud planned by 2028 |
+| **Vendor / In-House** | Originally Reuters (1992); then NSC from Paris Bourse/MATIF (1998); subsequently evolved in-house |
+| **Trading Hours** | Nearly 24 hours, 6 days/week (Sunday evening through Friday afternoon CT) |
+| **Products** | Futures, options on futures, spreads, combinations across interest rates, equity indices, FX, energy, metals, agriculture |
+
+### System Evolution
+
+| Year | Milestone | Technology / Notes |
+|---|---|---|
+| 1987 | Concept and development begins | CME Chairman Leo Melamed and economist William Brodsky champion electronic trading |
+| 1992 | Globex 1.0 launches (June 25) | Reuters technology and network; initially treasury notes and FX products |
+| 1997 | E-mini S&P 500 futures launch | First product designed exclusively for electronic trading on Globex |
+| 1998 | Globex 2.0 (second generation) | Migrated to modified NSC (Nouveau Systeme de Cotation) matching engine from Paris Bourse/MATIF |
+| 2000 | Open access rule adopted | Direct client access without mandatory broker intermediation |
+| 2002 | ADV exceeds 1 million contracts/day | First time daily electronic volume crosses this threshold |
+| 2004 | 1 billionth contract traded on Globex | Electronic volume surpasses pit volume for the first time |
+| 2006 | CME-CBOT merger agreement | CBOT products begin migration to Globex platform |
+| 2007 | CME Group formed (CME + CBOT) | Globex annual volume exceeds 1 billion contracts; NYMEX added in 2008 |
+| 2012 | 20th anniversary | 84% of CME Group volume traded electronically on Globex |
+| 2012 | Major performance release | 98% reduction in latency at the 99th percentile for both order entry and market data |
+| 2014 | iLink 2 protocol deployed | Binary order entry protocol on Market Segment Gateways (MSGW) |
+| 2019 | MDP 3.0 fully deployed | SBE-encoded market data replaces legacy FAST feed |
+| 2021 | iLink 3 launched on MSGW | FIX SBE encoding with FIXP session layer |
+| 2024 | iLink 3 on CGW goes live (Jan 28) | Convenience Gateway migration to iLink 3; iLink 2 end-of-life |
+| 2025 | DR enhancements; Google Cloud prep | GTC/GTD order persistence in DR; schema version 13 for MDP 3.0 |
+| 2026 | Google Cloud Sandbox (mid-year) | Sandbox environment in private Google Cloud Dallas region |
+| 2028 | Full Google Cloud migration (planned) | Production markets move to private Google Cloud Chicago region in Aurora, IL |
+
+---
+
+## 2. Architecture
+
+### 2.1 High-Level Design
+
+CME Globex employs a **distributed, multi-engine architecture** where products are organized into **market segments**, each served by a dedicated matching engine instance. The architecture separates concerns across order entry, matching, market data dissemination, and risk management layers.
+
+```
+                        ┌─────────────────────────────┐
+                        │    CME Globex Platform       │
+                        │                              │
+  ┌──────────┐          │  ┌────────────────────────┐  │
+  │ Trading  │──iLink──►│  │  Gateway Layer          │  │
+  │ Firms    │  3/FIX   │  │  (MSGW / CGW)          │  │
+  │          │◄─────────│  └──────┬─────────────────┘  │
+  └──────────┘          │         │                     │
+                        │  ┌──────▼─────────────────┐  │
+                        │  │  Matching Engines       │  │
+                        │  │  (per market segment)   │  │
+                        │  └──────┬─────────────────┘  │
+                        │         │                     │
+                        │  ┌──────▼─────────────────┐  │
+  ┌──────────┐          │  │  Market Data Publisher  │  │
+  │ Market   │◄─MDP────│  │  (MDP 3.0 Gateway)     │  │
+  │ Data     │  3.0     │  └────────────────────────┘  │
+  │ Consumers│          │                              │
+  └──────────┘          │  ┌────────────────────────┐  │
+                        │  │  Risk / Credit Controls │  │
+  ┌──────────┐          │  │  (GC2 / ICC)           │  │
+  │ Risk     │◄─────────│  └────────────────────────┘  │
+  │ Admin    │  GUI/API │                              │
+  └──────────┘          │  ┌────────────────────────┐  │
+                        │  │  Surveillance / Audit   │  │
+  ┌──────────┐          │  └────────────────────────┘  │
+  │ Drop     │◄─FIX────│                              │
+  │ Copy     │  4.2     └─────────────────────────────┘
+  └──────────┘
+```
+
+**Key design principles:**
+- **Market Segment isolation**: Each matching engine handles a defined product group, enabling independent scaling and maintenance
+- **Gateway abstraction**: Market Segment Gateways (MSGW) connect to specific market segments; Convenience Gateways (CGW) provide transparent routing across all segments
+- **Implied pricing integration**: Matching engines calculate implied prices across related spreads and outrights in real-time within the engine
+- **Deterministic processing**: Single-threaded matching per instrument to ensure price-time priority fairness
+
+### 2.2 Core Components
+
+| Component | Name / Version | Description |
+|---|---|---|
+| **Matching Engine** | Globex ME (NSC-derived, proprietary) | Per-market-segment engines; supports multiple matching algorithms (FIFO, pro-rata, hybrid); integrated implied pricing |
+| **Order Gateway** | iLink 3 (MSGW & CGW) | Binary order entry using FIX SBE encoding with FIXP session layer; sub-millisecond latency |
+| **Market Data Publisher** | MDP 3.0 | SBE-encoded market data; UDP multicast distribution with TCP snapshot recovery; supports MBP and MBO feeds |
+| **Risk Engine** | Globex Credit Controls (GC2) | Pre-execution exposure limits by clearing firm; real-time order blocking, cancellation, and email alerts |
+| **Granular Risk** | Inline Credit Controls (ICC) | Per-product, per-account daily position limits managed through Account Management Service (AMS) |
+| **Drop Copy** | Drop Copy 4.0 | FIX 4.2-based read-only feed of execution reports; real-time trade monitoring for risk management |
+| **Surveillance** | CME Group Market Regulation | Automated surveillance integrated with trading data; post-trade analysis and real-time monitoring |
+| **Order Entry API** | OE API (REST / WebSocket) | HTTPS RESTful and WSS connections for non-latency-sensitive programmatic access; JSON messaging |
+
+### 2.3 Technology Stack
+
+| Layer | Technology |
+|---|---|
+| **Matching Engine Origin** | NSC (Nouveau Systeme de Cotation) from Paris Bourse / MATIF, heavily modified and evolved in-house |
+| **Programming Languages** | C/C++ (core matching engine, gateways); Java (ancillary systems, APIs) |
+| **Operating System** | Linux (production matching engines and gateways) |
+| **Hardware** | Commodity x86 server infrastructure (current); transitioning to Google Cloud specialized hardware (2026-2028) |
+| **Network** | Dedicated low-latency network fabric within Aurora data center; 10/40 GbE interconnects; UDP multicast for market data |
+| **Message Encoding** | FIX Simple Binary Encoding (SBE) for iLink 3 and MDP 3.0; FIX 4.2 for Drop Copy; JSON for OE API |
+| **Session Protocol** | FIXP (FIX Performance) for iLink 3 |
+| **Messaging Transport** | UDP multicast (market data); TCP (order entry, recovery, Drop Copy) |
+| **Reference Data** | SBE schema files distributed via SFTP (sftpng.cmegroup.com); XML instrument definitions |
+| **Cloud (future)** | Google Cloud private region (Aurora, IL production; Dallas, TX DR) |
+
+---
+
+## 3. Performance Specifications
+
+| Metric | Value | Notes |
+|---|---|---|
+| **Inbound Order Entry Latency (median)** | ~5 microseconds (matching engine) | Router-to-match-engine; post-2012 performance release |
+| **Inbound Order Entry Latency (99th pct)** | ~50 microseconds | Significantly reduced from pre-2012 levels |
+| **Outbound Market Data Latency** | Low single-digit microseconds (engine exit to MDP gateway exit) | SBE encoding reduces serialization overhead |
+| **Latency Variability (order entry)** | ~39 microseconds (median to 95th percentile spread) | Measured router through iLink gateway to match engine |
+| **Latency Variability (market data)** | ~58 microseconds (median to 95th percentile spread) | Match engine exit to MDP gateway exit |
+| **Messaging Controls** | Per-session TPS limits | Enforced at iLink session level; product-specific rate limits |
+| **Daily Volume Capacity** | 60+ million contracts/day (demonstrated) | Peak volumes regularly exceed 30 million contracts/day |
+| **Uptime** | 99.99%+ (target) | Two-data-center model (Aurora + NYDC) |
+| **Timestamp Granularity** | Nanosecond | Applied at matching engine event level |
+
+### Performance History
+
+| Year | Milestone | Detail |
+|---|---|---|
+| 1992 | Launch | Seconds-level latency; limited product coverage |
+| 2004 | Electronic volume dominance | Globex electronic volume surpasses open outcry pit volume |
+| 2007 | Annual volume > 1 billion | Growth driven by CME-CBOT merger and product expansion |
+| 2012 | 98% latency reduction at p99 | Major platform performance release; both order entry and market data paths optimized |
+| 2014 | Sub-millisecond matching | Continued hardware and software optimization |
+| 2019 | MDP 3.0 full rollout | SBE encoding replaces FAST; lower CPU overhead for consumers |
+| 2024 | Record daily volumes | Multiple days exceeding 50 million contracts; ADV growth across asset classes |
+| 2025 | Schema v13 deployment | Enhanced message types for FX Spot+ and new product suites |
+
+---
+
+## 4. Interfaces & Protocols
+
+### 4.1 Order Entry
+
+#### iLink 3 (Primary — Low Latency)
+
+| Attribute | Detail |
+|---|---|
+| **Encoding** | FIX Simple Binary Encoding (SBE) v1.0 RC4 |
+| **Session Layer** | FIXP (FIX Performance) |
+| **Transport** | TCP |
+| **Gateway Types** | Market Segment Gateway (MSGW) — dedicated to specific market segment; Convenience Gateway (CGW) — routes to all market segments |
+| **Schema Version** | v9 (current production); v13 for MDP extensions |
+| **Features** | New Order Single, Cancel, Cancel/Replace, Mass Quote, Order Status, Execution Reports |
+| **Framing** | Simple Open Framing Header (SOFH) — provides message length and encoding identifier |
+
+#### OE API (Alternative — Non-Latency-Sensitive)
+
+| Attribute | Detail |
+|---|---|
+| **REST API** | HTTPS; JSON messaging; request-response pattern |
+| **WebSocket API** | WSS; JSON messaging; bidirectional streaming |
+| **Use Case** | Programmatic trading for less latency-sensitive strategies |
+| **Risk Controls** | Full suite of GC2 and ICC controls applied |
+
+#### Legacy / Migration Notes
+- iLink 2 (FIX-based) was retired; all MSGW and CGW sessions now use iLink 3
+- Template Extension supported during migration periods to allow schema version coexistence
+
+### 4.2 Market Data — MDP 3.0
+
+| Attribute | Detail |
+|---|---|
+| **Encoding** | FIX Simple Binary Encoding (SBE) |
+| **Schema Spec** | FIX 5.0 SP2 message specification |
+| **Transport** | UDP multicast (real-time incremental); TCP (snapshot recovery) |
+| **Feed Types** | Market By Price (MBP) — aggregated depth per price level; Market By Order (MBO) — individual order book granularity |
+| **Data Content** | Bid, ask, trade, statistical data; event-based delivery |
+| **Channel Structure** | Products organized into multicast channel groups (e.g., Channel ID 324 for new equity index products in 2026) |
+| **Advantages over FAST** | Lower latency dissemination; less CPU intensive; nanosecond timestamp granularity; improved market state granularity |
+| **Recovery** | TCP-based snapshot feed for book state recovery; instrument replay on channel |
+
+### 4.3 Drop Copy / Trade Reporting
+
+| Attribute | Detail |
+|---|---|
+| **Protocol** | FIX 4.2 |
+| **Version** | Drop Copy 4.0 |
+| **Function** | Read-only real-time copy of execution reports, acknowledgements, heartbeats, and trade bust messages |
+| **Delivery** | ASCII-encoded copies of iLink execution reports encapsulated in XML within FIX non-FIX message type (35=n) |
+| **Use Case** | Risk monitoring, compliance, back-office reconciliation |
+| **Scope** | Covers one or many source iLink sessions per Drop Copy connection |
+
+### 4.4 Reference Data
+
+| Attribute | Detail |
+|---|---|
+| **Instrument Definitions** | Disseminated via MDP 3.0 channel at start of session; includes contract specifications, tick sizes, trading hours |
+| **Schema Files** | SBE schema XML files available via SFTP (sftpng.cmegroup.com) for all environments |
+| **Security Definition** | MDP 3.0 SecurityDefinition message (Tag 35=d equivalent in SBE) |
+| **Updates** | Intraday instrument additions via MDP 3.0; reference data refreshed daily |
+| **Formats** | SBE schema templates, XML instrument files, FTP-distributed CSV files |
+
+---
+
+## 5. Resilience & Business Continuity
+
+### 5.1 Redundancy
+
+| Aspect | Detail |
+|---|---|
+| **Primary Data Center** | CyrusOne facility, Aurora, Illinois (~50 miles west of Chicago) |
+| **DR Data Center** | New York Data Center (NYDC) |
+| **Future Production** | Private Google Cloud Chicago region (Aurora, IL campus); planned 2028 |
+| **Future DR** | Google Cloud Dallas, Texas region |
+| **Model** | Two-data-center active/standby for all CME Group applications (iLink, MDP, Clearing) |
+| **Gateway Redundancy** | Multiple MSGW and CGW instances per market segment; automatic failover |
+| **Network Redundancy** | Dual-path network connectivity; diverse fiber routes |
+
+**Data Center Ownership Note:** In 2016, CME Group sold the Aurora data center to CyrusOne for $130 million under a 15-year leaseback agreement. CME continues to host Globex from this facility.
+
+### 5.2 Disaster Recovery
+
+| Metric | Detail |
+|---|---|
+| **RPO (Recovery Point Objective)** | Near-zero for order state; GTC/GTD orders persisted in DR (enhanced 2025) |
+| **RTO (Recovery Time Objective)** | Minutes-level failover; dependent on scenario (planned vs. unplanned) |
+| **DR Testing** | Regular scheduled failover drills; customer participation encouraged |
+| **Order Persistence** | Resting GTC and GTD orders now survive DR transitions (2025 enhancement) |
+| **Session Recovery** | iLink 3 FIXP session layer supports sequence-based recovery and re-establishment |
+
+**Notable Incident (2024):** A cooling system failure at the CyrusOne Aurora facility caused temperatures to exceed 100 degrees F. The decision to continue on-site repair rather than failover to NYDC extended the disruption to approximately 10 hours, highlighting the complexity of failover decision-making.
+
+### 5.3 Capacity Management
+
+| Aspect | Detail |
+|---|---|
+| **Messaging Efficiency Program (MEP)** | Scoring system based on message type, time of day, front/back month, outright/spread |
+| **TPS Limits** | Per-session transaction-per-second rate limits enforced at iLink level |
+| **Volume Tiers** | Firms submitting 50,000 or fewer daily messages excluded from MEP scoring |
+| **Scaling** | Market segment isolation enables independent horizontal scaling of matching engines |
+| **Monitoring** | Real-time capacity dashboards; proactive throttling before saturation |
+
+---
+
+## 6. Notable Technical Features
+
+### Implied Pricing Engine
+
+CME Globex's matching engine calculates **implied prices** in real-time, integrating bids and offers across related spread and outright contracts to maximize liquidity and price discovery.
+
+- **Implied-in**: Outright orders generate implied spread prices
+- **Implied-out**: Spread orders generate implied outright prices
+- **Inter-commodity implied spreads**: Ratio-based implied pricing across related products (e.g., interest rate futures)
+- **Limitation**: Self-Match Prevention (SMP) does not apply to trades involving implied liquidity
+
+### Matching Algorithms
+
+CME Globex supports **multiple matching algorithms** configurable per product group:
+
+| Algorithm | Description | Example Products |
+|---|---|---|
+| **FIFO (Price-Time)** | Strict price priority, then time priority; first order at a price level is first filled | Livestock outright futures, Black Sea Wheat/Corn futures |
+| **Pro-Rata** | Fills proportional to resting order quantity at the price level; larger orders receive larger fills | Eurodollar/SOFR options, certain interest rate products |
+| **Split FIFO / Pro-Rata (Hybrid)** | Configurable split (e.g., 40% FIFO / 60% Pro-Rata); balances time priority with broader participation | Grain and oilseed futures/spreads, livestock spreads |
+| **Allocation** | Specialized allocation logic for certain product types | Select OTC-style products |
+| **Top Order + Pro-Rata** | Best resting order receives priority fill; remainder allocated pro-rata | Select interest rate futures |
+| **Threshold Pro-Rata** | Minimum fill quantity threshold before pro-rata allocation applies | Select options products |
+
+### Market with Protection (MKT w/ Protection)
+
+Market orders include built-in price protection — if the market moves beyond a configurable band, the unfilled remainder becomes a limit order at the band boundary, preventing excessive slippage.
+
+### Self-Trade Prevention (SMP)
+
+- Prevents matching of opposing orders from the same firm/trader identified by SMP ID
+- Configurable actions: cancel resting order, cancel incoming order, or cancel both
+- **Limitation**: SMP does not prevent self-matches involving implied liquidity (e.g., outright order matching against an implied leg from a spread)
+
+### Mass Quote Functionality
+
+- Designed for market makers to simultaneously submit two-sided quotes across multiple instruments
+- Efficient use of bandwidth — single message updates many quotes
+- Cancel-on-disconnect protection for mass quotes
+
+### Globex Credit Controls (GC2)
+
+- Pre-execution risk controls managed by clearing firm risk administrators
+- Exposure limits for both long and short trades/positions per executing firm per exchange
+- Real-time actions on breach: email notification, order blocking, order cancellation
+- Applied at executing firm ID / exchange group level
+
+### Inline Credit Controls (ICC)
+
+- Granular per-product, per-account daily position limits
+- Managed through Account Management Service (AMS)
+- Positions reset to flat at end of day
+- Configurable threshold alerts (e.g., 80% utilization warning)
+
+### CME SPAN / SPAN 2
+
+- **SPAN (Standard Portfolio Analysis of Risk)**: Industry-standard margin methodology developed by CME; calculates portfolio-level margin requirements
+- **SPAN 2**: Next-generation risk methodology incorporating more granular scenarios and improved modeling
+- Integrated with GC2 for pre-trade and intraday margin assessment
+
+### Co-location Services
+
+- Co-location available at the CyrusOne Aurora facility for proximity to matching engines
+- Equal-latency access for all co-located participants
+- Future co-location options in Google Cloud private region: traditional rack space, Google infrastructure-as-a-service, or hybrid
+
+---
+
+## 7. Comparison Notes
+
+### vs. KRX Systems (Exture+)
+
+| Dimension | CME Globex | KRX Exture+ |
+|---|---|---|
+| **Matching Engine Latency** | ~5 microseconds (median, post-2012 optimizations) | ~70 microseconds (2014 launch; 285x improvement over original Exture) |
+| **Latency at p99** | ~50 microseconds | Not publicly disclosed |
+| **Throughput** | 60+ million contracts/day demonstrated | High capacity; specific TPS not publicly disclosed |
+| **Architecture** | Distributed multi-engine (per market segment) | Unified platform supporting all instrument types |
+| **Matching Algorithms** | Multiple per product (FIFO, pro-rata, hybrid, allocation) | Primarily price-time priority (FIFO) |
+| **Order Entry Protocol** | iLink 3 (FIX SBE + FIXP); OE API (REST/WS) | FIX-based proprietary protocol |
+| **Market Data Protocol** | MDP 3.0 (SBE, UDP multicast + TCP recovery) | Proprietary binary feed |
+| **Co-location** | CyrusOne Aurora, IL; future Google Cloud | KRX data center (Busan) |
+| **Products Supported** | Futures and options on futures only (derivatives-focused) | Equities, bonds, ETFs, derivatives — all in single platform |
+| **Implied Pricing** | Yes — real-time implied spread/outright engine | Limited — primarily for options market making |
+| **Platform Origin** | Reuters (1992) then NSC/Paris Bourse (1998), evolved in-house | In-house development (Koscom); memory-based, open-source architecture |
+| **Launch Year** | 1992 (current generation ~2012+) | 2014 (preceded by Exture, 2009) |
+| **Cloud Strategy** | Google Cloud migration by 2028 | On-premises |
+
+### Key Differentiators
+
+1. **Matching algorithm diversity**: CME Globex's product-specific matching algorithms (FIFO, pro-rata, hybrid) are a major differentiator. KRX Exture+ primarily uses FIFO. The hybrid algorithms at CME are specifically designed to balance execution priority with market-maker participation incentives in less liquid products.
+
+2. **Implied pricing engine**: Globex's real-time implied pricing across spreads and outrights is one of the most sophisticated in the industry. It creates synthetic liquidity by connecting related instruments, which is critical for derivatives markets with large product catalogs (thousands of listed instruments).
+
+3. **Protocol maturity**: iLink 3's use of FIX SBE with FIXP represents a purpose-built binary protocol for ultra-low-latency order entry. MDP 3.0's SBE encoding for market data similarly optimizes for direct memory access patterns, reducing serialization overhead compared to text-based protocols.
+
+4. **Multi-asset-class vs. derivatives-focused**: KRX Exture+ covers equities, bonds, and derivatives in a single unified platform, while CME Globex is purpose-built for derivatives. This specialization allows Globex to optimize deeply for derivatives-specific features (implied pricing, spread trading, mass quotes) at the cost of broader asset coverage.
+
+5. **Cloud migration trajectory**: CME Group's planned migration to a private Google Cloud region represents a significant strategic shift. If successful, it could redefine the infrastructure model for exchange technology, moving from owned/leased data centers to cloud-based matching infrastructure while maintaining deterministic latency requirements.
+
+6. **Scale of product catalog**: CME Globex lists millions of instruments (including all option strikes and expirations), requiring the implied pricing engine and market data infrastructure to scale horizontally across an extremely large product universe.
+
+---
+
+## Sources
+
+- [CME Globex — Databento Microstructure Guide](https://databento.com/microstructure/cme-globex)
+- [A Brief History of CME Globex — OnixS](https://www.onixs.biz/insights/a-brief-history-of-cme-globex)
+- [CME Globex — MarketsWiki](https://marketswiki.com/wiki/CME_Globex)
+- [Develop to Globex — CME Group](https://www.cmegroup.com/solutions/market-access/globex/develop-to-globex.html)
+- [CME Globex Matching Algorithm Overview — CME Group](https://www.cmegroup.com/education/matching-algorithm-overview)
+- [CME Matching Algorithms Explained — Databento Blog](https://databento.com/blog/cme-matching-algorithms-explained)
+- [Risk Management Tools — CME Group](https://www.cmegroup.com/globex/trade-on-cme-globex/risk-management-tools.html)
+- [FAQ: Self-Match Prevention — CME Group](https://www.cmegroup.com/globex/trade-on-cme-globex/self-match-faq.html)
+- [CME Group DR Scenarios — Confluence](https://cmegroupclientsite.atlassian.net/wiki/spaces/EPICSANDBOX/pages/457412249/Disaster+Recovery+Scenarios)
+- [Inside CME Group's Strategic Migration to Google Cloud — A-Team](https://a-teaminsight.com/blog/inside-cme-groups-strategic-migration-moving-globex-to-google-cloud/)
+- [CME Globex Migration to Google Cloud — 28stone](https://www.28stone.com/news/cme-globex-migration-to-google-cloud-preparing-for-your-2028-trading-infrastructure-opportunity/)
+- [Google Cloud Private Region for CME Group — DCD](https://www.datacenterdynamics.com/en/news/google-cloud-provides-private-cloud-region-and-colocation-facility-for-cme-group-in-aurora-illinois/)
+- [Cooling Crisis at CME — Network World](https://www.networkworld.com/article/4099088/cooling-crisis-at-cme-a-wakeup-call-for-modern-infrastructure-governance.html)
+- [Drop Copy FAQ — CME Group](https://www.cmegroup.com/globex/trade-on-cme-globex/dropcopy-faq.html)
+- [KRX Exture+ Trading — Global KRX](https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp)
+- [CME Globex MDP 3.0 Data Feed Specifications — Databento](https://databento.com/docs/venues-and-datasets/glbx-mdp3)
+- [Messaging Efficiency Program v11.7 — CME Group](https://www.cmegroup.com/globex/files/2024-revised-mep.pdf)

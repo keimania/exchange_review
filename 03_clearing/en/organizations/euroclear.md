@@ -1,0 +1,295 @@
+# Euroclear Group (Euroclear)
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3 (Overview)
+> **Type:** ICSD (International Central Securities Depository) + CSDs
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Euroclear Group (holding: Euroclear Holding SA/NV; main ICSD: Euroclear Bank SA/NV) |
+| Abbreviation | Euroclear |
+| Website | [https://www.euroclear.com](https://www.euroclear.com) |
+| Year Established | 1968 (Euroclear System launched by Morgan Guaranty Trust); Euroclear Bank incorporated 2000 |
+| Country / City | Belgium / Brussels (Euroclear Bank and group headquarters) |
+| Ownership Structure | Euroclear Holding SA/NV -- largely owned by its major users (banks and financial institutions); top 10 shareholders hold ~80.67% of equity (as of 31 Jan 2025) |
+| Key Shareholders | Sicovam Holding SA (15.89%), Caisse des Depots et Consignations (11.41%), JPMorgan Chase, Citigroup, ICE, LSEG among top holders |
+| Parent Company / Group | Euroclear plc (UK-incorporated parent); Euroclear Holding SA/NV (Belgian operating holding) |
+| Regulatory Authority | National Bank of Belgium (NBB) -- prudential supervision and oversight; Belgian FSMA -- conduct of business supervision |
+| CPMI-IOSCO PFMI Compliance | Yes -- publishes PFMI self-assessments and PQD; assessed by IMF in Belgium FSAP 2023 |
+| CSDR Authorization | Euroclear Bank authorized under CSDR in December 2019 (core CSD services, non-banking and banking ancillary services) |
+| Assets Under Custody | EUR 42.5 trillion (representing ~50% of European CSD market) |
+| Securities Settled | Transactions in domestic securities of 48 markets, against payment in 51 settlement currencies |
+| Position | Largest European CSD group; one of two global ICSDs (alongside Clearstream) |
+
+[Source: Euroclear -- Our Business, https://www.euroclear.com/about/en/business.html]
+[Source: Wikipedia -- Euroclear, https://en.wikipedia.org/wiki/Euroclear]
+[Source: IMF -- Belgium FSAP 2023, https://www.imf.org/-/media/files/publications/cr/2023/english/1belea2023012.pdf]
+
+### Euroclear Group Entities
+
+| Entity | Type | Location | Markets |
+|--------|------|----------|---------|
+| **Euroclear Bank SA/NV** | ICSD | Brussels, Belgium | International securities (Eurobonds) + domestic securities of 48 markets |
+| **Euroclear Belgium** | CSD | Brussels, Belgium | Belgian securities |
+| **Euroclear France** | CSD | Paris, France | French securities |
+| **Euroclear Nederland** | CSD | Amsterdam, Netherlands | Dutch securities |
+| **Euroclear Finland** | CSD | Helsinki, Finland | Finnish securities |
+| **Euroclear Sweden** | CSD | Stockholm, Sweden | Swedish securities |
+| **Euroclear UK & International** | CSD | London, UK | UK and Irish securities (operates CREST system) |
+
+*Note: Euroclear Belgium, Euroclear France, and Euroclear Nederland are collectively known as the "ESES" CSDs, operating on a shared platform.*
+
+[Source: Euroclear -- Our Business]
+
+### Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 1967 | Belgian branch of Morgan Guaranty Trust launches pilot securities settlement service for the Brussels Eurobond market |
+| 1968 | Euroclear System formally launched by Morgan Guaranty Trust Company of New York (December 1968) |
+| 1972 | Morgan Brussels sells certain rights to Euroclear Clearance System Public Limited Company (UK); users gain governance role |
+| 2000 | Euroclear Bank SA/NV incorporated in Belgium; takes over operations from Morgan Guaranty (JP Morgan) |
+| 2001 | Merger with Sicovam SA (French CSD); creation of Euroclear France |
+| 2002 | Merger with CRESTCo (UK CSD); creation of Euroclear UK & Ireland |
+| 2002 | Acquisition of Necigef (Dutch CSD); creation of Euroclear Nederland |
+| 2007 | Acquisition of Finnish CSD (APK); creation of Euroclear Finland |
+| 2008 | Acquisition of Swedish CSD (VPC); creation of Euroclear Sweden |
+| 2015-2016 | ESES CSDs (Belgium, France, Netherlands) connect to T2S |
+| 2019 | Euroclear Bank authorized under CSDR (December 2019) |
+| 2022-2024 | Immobilization of Russian sovereign assets (~EUR 191 billion) following EU sanctions; generates significant windfall income from reinvestment |
+| 2023 | Euroclear Bank and Euroclear Finland connect to T2S (September 2023) |
+| 2025 | Euroclear and Clearstream announce initiative to digitize Eurobond market (dematerialized issuance from Q1 2026) |
+| 2025 | Euroclear Bank accelerates T2S connection for central bank money access |
+
+[Source: Euroclear -- Our History, https://www.euroclear.com/about/en/history.html]
+[Source: Euroclear -- Connecting EU Markets, https://www.euroclear.com/newsandinsights/en/press/2025/mr-19-connecting-eu-markets-across-asset-classes.html]
+[Source: Euroclear -- Eurobond Digitization, https://www.euroclear.com/newsandinsights/en/press/2025/mr-25-euroclear-and-clearstream-to-digitise-eurobond-market.html]
+
+---
+
+## 2. Settlement Model
+
+### 2.1 Euroclear Bank (ICSD)
+
+Euroclear Bank serves as the primary ICSD for international securities, particularly Eurobonds. Its settlement model operates as follows:
+
+- **Book-Entry Settlement:** All securities are held in dematerialized or immobilized form; settlement occurs through book-entry transfers in Euroclear Bank's accounts
+- **Batch and Real-Time Processing:** Settlement occurs during overnight batch processing cycles and during the daytime real-time settlement window
+- **Multi-Currency:** Settles transactions against payment in 51 currencies
+- **Multi-Market Access:** Provides access to domestic securities of 48 markets through a single account (via links with local CSDs and agent banks)
+
+### 2.2 Core CSD Services (under CSDR)
+
+Euroclear Bank is authorized to perform three core CSD services:
+1. **Notary Service** -- initial recording of securities in book-entry form
+2. **Central Maintenance Service** -- maintaining securities accounts at the top tier level
+3. **Settlement Service** -- operating a securities settlement system
+
+### 2.3 The Bridge (Euroclear-Clearstream)
+
+The Bridge is the electronic settlement link between Euroclear Bank and Clearstream Banking Luxembourg, the two global ICSDs:
+
+- Facilitates settlement of securities transactions between counterparties holding accounts at different ICSDs
+- Operates on a DVP Model 1 basis (simultaneous, final transfer of securities and cash)
+- Multiple overnight settlement exchanges plus an Automated Daytime Bridge during business hours
+- Critical infrastructure for the Eurobond market, where securities may be held in either ICSD
+
+### 2.4 Euroclear Group CSDs
+
+Each national CSD operates settlement services for its domestic market:
+- **ESES CSDs** (Belgium, France, Netherlands): Shared settlement platform; connected to T2S since 2015-2016
+- **Euroclear Finland:** Connected to T2S since September 2023
+- **Euroclear Sweden:** Not connected to T2S (Swedish krona market)
+- **Euroclear UK & International:** Operates the CREST real-time gross settlement system; not connected to T2S (post-Brexit)
+
+[Source: Euroclear -- Settlement Services, https://www.euroclear.com/services/en/settlement.html]
+[Source: Euroclear -- Settlement Euroclear Bank, https://www.euroclear.com/services/en/settlement/settlement-euroclear-bank.html]
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework
+
+Euroclear Bank is not a CCP and does not collect margins in the traditional CCP sense. However, it manages credit and liquidity risk through:
+
+- **DVP Settlement:** Simultaneous exchange of securities and cash eliminates principal risk
+- **Credit Extensions:** Euroclear Bank provides intraday and overnight credit to participants to facilitate settlement; credit is secured by pledged collateral (securities in participant accounts)
+- **Collateral Haircuts:** Securities pledged as collateral are subject to haircuts based on asset type, maturity, and market risk
+- **Credit Limits:** Each participant has defined credit limits; exposures are monitored in real time
+- **Pre-Settlement Risk:** Managed through mark-to-market valuation and collateral requirements
+
+### 3.3 Default Waterfall
+
+As a CSD/ICSD (not a CCP), Euroclear Bank does not have a traditional default waterfall. Instead:
+
+- **Secured Credit:** All credit extensions are backed by collateral with appropriate haircuts
+- **Loss Absorption:** In the event of a participant default, Euroclear Bank has the right to liquidate pledged collateral
+- **Capital Buffers:** Euroclear Bank maintains capital in accordance with CRR/CRD requirements as a licensed Belgian credit institution
+- **No Mutualized Default Fund:** Unlike CCPs, there is no mutualized default fund; losses are absorbed by the defaulter's collateral first, then by Euroclear Bank's own capital
+
+### 3.6 Recovery & Resolution
+
+- **CSD Recovery & Resolution:** Subject to the EU CSD Recovery and Resolution framework
+- **Banking Recovery:** As a licensed credit institution, Euroclear Bank is also subject to the Bank Recovery and Resolution Directive (BRRD)
+- **Supervisor:** National Bank of Belgium (NBB) is the resolution authority
+- **Systemic Importance:** Euroclear Bank is designated as a systemically important FMI in Belgium and globally
+
+[Source: Euroclear -- Risk Management / Pillar 3 Disclosure, https://www.euroclear.com/dam/Brochures/Pillar3_2012.pdf]
+[Source: IMF -- Belgium FSAP 2023]
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle
+
+| Market / Entity | Standard Cycle | Notes |
+|----------------|---------------|-------|
+| Euroclear Bank (ICSD) | T+2 | Standard for most international securities; follows market convention |
+| ESES CSDs (BE, FR, NL) | T+2 | Aligned with EU CSDR; connected to T2S |
+| Euroclear Finland | T+2 | Connected to T2S since September 2023 |
+| Euroclear Sweden | T+2 | Implemented in line with EU harmonization |
+| Euroclear UK & International | T+1 | UK migrated to T+1 on 11 October 2027 [unverified -- UK T+1 timeline under discussion as of 2026] |
+| Eurobonds (primary market) | Various | New issuance typically T+5 to T+7 for syndicated deals; secondary market T+2 |
+
+**T+1 Transition:** The EU is planning to move to T+1 settlement. Euroclear's CSDs will need to adapt their systems and processes accordingly. The exact EU T+1 implementation date was under discussion as of early 2026. [unverified]
+
+### 4.2 DVP Model
+
+| Entity | DVP Model | Description |
+|--------|-----------|-------------|
+| Euroclear Bank | Model 1 | Gross, simultaneous, final transfer of securities and cash on a trade-by-trade basis |
+| ESES CSDs (via T2S) | Model 1 | Real-time gross settlement on T2S platform with central bank money (EUR) |
+| Euroclear Finland (via T2S) | Model 1 | Same as ESES on T2S |
+| Euroclear UK & International | Model 1 | CREST system -- real-time DVP in central bank money (GBP via BoE) and commercial bank money |
+| Bridge (Euroclear-Clearstream) | Model 1 | Simultaneous, final transfer between the two ICSDs |
+
+[Source: Euroclear -- Settlement Services]
+[Source: Euroclear -- Euroclear Bank Joining T2S, https://www.euroclear.com/services/en/settlement/settlement-euroclear-bank/euroclear-bank-joining-t2s.html]
+
+---
+
+## 5. Technology & Infrastructure
+
+- **Single Platform Strategy:** Euroclear has progressively consolidated its CSD operations onto shared platforms (ESES for Belgium/France/Netherlands)
+- **T2S Connection:** Five of seven group CSDs are connected to or in the process of connecting to the Eurosystem's T2S platform
+- **CREST System:** Euroclear UK & International operates the CREST real-time settlement system, a legacy UK infrastructure
+- **Eurobond Digitization (2025-2026):** Joint initiative with Clearstream to support dematerialized Eurobond issuance from Q1 2026, eliminating paper certificates
+- **Post-Trade Transformation:** Euroclear Bank is undergoing a multi-year technology transformation in partnership with TCS (Tata Consultancy Services) to modernize its post-trade processing platform
+
+[Source: Euroclear -- Eurobond Digitization Press Release]
+[Source: TCS -- Euroclear Post Trade Transformation, https://www.tcs.com/what-we-do/products-platforms/tcs-bancs/interview/euroclear-post-trade-processing-transformation]
+
+---
+
+## 6. Regulatory Framework
+
+| Aspect | Details |
+|--------|---------|
+| Primary Legislation | EU Central Securities Depositories Regulation (CSDR, Regulation 909/2014) |
+| Banking Legislation | EU CRR/CRD; Belgian Banking Act |
+| Primary Supervisor | National Bank of Belgium (NBB) -- prudential supervision and oversight |
+| Conduct Supervisor | Belgian FSMA (Financial Services and Markets Authority) |
+| CSDR Authorization | Euroclear Bank authorized December 2019 (core CSD + banking ancillary services) |
+| ESES CSDs | Authorized under CSDR by respective national authorities |
+| Banking License | Euroclear Bank is a licensed Belgian credit institution |
+| UK Status | Euroclear Bank recognized as third-country CSD under UK CSDR (May 2023) |
+| Settlement Finality | Belgian law implements EU Settlement Finality Directive (98/26/EC); Euroclear Bank's system is designated under this directive |
+
+### National CSD Regulators
+
+| CSD | Regulator |
+|-----|-----------|
+| Euroclear Belgium | NBB / FSMA |
+| Euroclear France | AMF / Banque de France |
+| Euroclear Nederland | AFM / DNB |
+| Euroclear Finland | Bank of Finland / FIN-FSA |
+| Euroclear Sweden | Finansinspektionen / Riksbank |
+| Euroclear UK & International | Bank of England / FCA |
+
+[Source: Euroclear -- Wikipedia]
+[Source: IMF -- Belgium FSAP 2023]
+
+---
+
+## 7. Interoperability
+
+### 7.1 The Bridge (Euroclear-Clearstream)
+
+The most critical interoperability link in international securities markets:
+- Connects the two ICSDs for Eurobond and international securities settlement
+- Real-time and batch settlement exchanges
+- DVP Model 1 settlement
+- Jointly operated since the 1970s; continuously enhanced
+
+### 7.2 CSD Links
+
+Euroclear Bank maintains an extensive network of links with national and regional CSDs globally:
+- **Direct Links:** Connections to major CSDs worldwide for cross-border settlement
+- **48 Markets:** Euroclear Bank provides access to domestic securities of 48 markets
+- **T2S Links:** Euroclear's T2S-connected CSDs benefit from harmonized cross-CSD settlement within the T2S ecosystem
+
+### 7.3 T2S Participation
+
+| Entity | T2S Connected | Connection Date |
+|--------|--------------|-----------------|
+| Euroclear Belgium | Yes | 2016 (Wave 3) |
+| Euroclear France | Yes | 2016 (Wave 3) |
+| Euroclear Nederland | Yes | 2016 (Wave 3) |
+| Euroclear Finland | Yes | September 2023 |
+| Euroclear Bank | In progress | Accelerating connection for central bank money access |
+| Euroclear Sweden | No | Not migrating (non-euro market) |
+| Euroclear UK & International | No | Not migrating (post-Brexit, non-euro) |
+
+### 7.4 Strategic Vision: Pan-EU Market Access
+
+Euroclear Bank aims to complete commercial bank money access to all 27 EU member states by 2026, followed by central bank money access via T2S. This would create a single access point for settlement across the entire EU.
+
+[Source: Euroclear -- Connecting EU Markets, https://www.euroclear.com/newsandinsights/en/press/2025/mr-19-connecting-eu-markets-across-asset-classes.html]
+[Source: Euroclear -- Euroclear Bank Joining T2S]
+
+---
+
+## 9. Recent Developments
+
+| Date | Development |
+|------|-------------|
+| Q1 2025 | Euroclear and Clearstream announce joint initiative to digitize Eurobond market; dematerialized issuance support from Q1 2026 |
+| 2025 | Euroclear Bank accelerates T2S connection for central bank money settlement access |
+| 2025 | Euroclear announces plan for commercial bank money access to all 27 EU member states by 2026 |
+| Sep 2023 | Euroclear Bank and Euroclear Finland connect to T2S |
+| 2022-2025 | Immobilization of ~EUR 191 billion in Russian sovereign assets following EU sanctions; Euroclear generates significant windfall income from reinvesting cash flows; politically sensitive topic |
+| Dec 2019 | Euroclear Bank receives CSDR authorization |
+
+### Key Strategic Themes
+
+1. **Pan-European Access:** Building a single gateway for settlement across all EU markets through commercial bank money and eventually central bank money (T2S)
+2. **Eurobond Modernization:** Eliminating paper certificates through dematerialization, jointly with Clearstream
+3. **Russian Assets:** Managing the operational, legal, and political complexities of frozen Russian sovereign assets
+4. **T+1 Readiness:** Preparing systems and processes for the eventual EU transition to T+1 settlement
+5. **Technology Modernization:** Multi-year platform transformation to improve efficiency and resilience
+
+[Source: Euroclear -- Press Releases 2025]
+[Source: IFRI -- Central Securities Depositories Study 2025, https://www.ifri.org/sites/default/files/2025-11/ifri_havrylchyk_central_securities_depositories_2025_0.pdf]
+
+---
+
+## Sources
+
+- [Euroclear -- Our Business](https://www.euroclear.com/about/en/business.html)
+- [Euroclear -- Our History](https://www.euroclear.com/about/en/history.html)
+- [Euroclear -- Settlement Services](https://www.euroclear.com/services/en/settlement.html)
+- [Euroclear -- Settlement Euroclear Bank](https://www.euroclear.com/services/en/settlement/settlement-euroclear-bank.html)
+- [Euroclear -- Euroclear Bank Joining T2S](https://www.euroclear.com/services/en/settlement/settlement-euroclear-bank/euroclear-bank-joining-t2s.html)
+- [Euroclear -- Connecting EU Markets (2025)](https://www.euroclear.com/newsandinsights/en/press/2025/mr-19-connecting-eu-markets-across-asset-classes.html)
+- [Euroclear -- Eurobond Digitization (2025)](https://www.euroclear.com/newsandinsights/en/press/2025/mr-25-euroclear-and-clearstream-to-digitise-eurobond-market.html)
+- [Euroclear -- Risk Management / Pillar 3 Disclosure](https://www.euroclear.com/dam/Brochures/Pillar3_2012.pdf)
+- [Wikipedia -- Euroclear](https://en.wikipedia.org/wiki/Euroclear)
+- [IMF -- Belgium FSAP 2023 (Euroclear Bank Assessment)](https://www.imf.org/-/media/files/publications/cr/2023/english/1belea2023012.pdf)
+- [IFRI -- Central Securities Depositories Study (Nov 2025)](https://www.ifri.org/sites/default/files/2025-11/ifri_havrylchyk_central_securities_depositories_2025_0.pdf)
+- [TCS -- Euroclear Post Trade Transformation](https://www.tcs.com/what-we-do/products-platforms/tcs-bancs/interview/euroclear-post-trade-processing-transformation)
