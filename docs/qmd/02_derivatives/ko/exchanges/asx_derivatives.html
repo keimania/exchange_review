@@ -1,0 +1,2829 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ASX Derivatives (호주증권거래소 파생상품) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">ASX Derivatives (호주증권거래소 파생상품)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 (Global Derivatives Markets) — 개요 (Overview)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 — 비교 분석 (Global Derivatives Markets – Comparative Analysis)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">거래소</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">ASX Derivatives (호주증권거래소 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cboe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cboe Global Markets (Cboe 글로벌 마켓)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX, 중국금융선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group (CME 그룹)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE, 다롄상품거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME, 두바이상업거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/eurex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex (유렉스)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext Derivatives (유로넥스트 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX (홍콩거래소) 파생상품 시장</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange 선물)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX 파생상품시장 (한국거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX, 몬트리올거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O, 인도국립증권거래소 선물옵션)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (오사카거래소, OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX (싱가포르거래소) 파생상품</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE, 상하이선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX, 대만선물거래소)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">규제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">아시아태평양 파생상품 규제 (Asia-Pacific Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU 파생상품 규제 (EU Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">미국 파생상품 규제 (U.S. Derivatives Regulation)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">매매시스템</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#개요-및-프로필-overview-profile" id="toc-개요-및-프로필-overview-profile" class="nav-link active" data-scroll-target="#개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</a>
+  <ul class="collapse">
+  <li><a href="#주요-연혁-key-historical-milestones" id="toc-주요-연혁-key-historical-milestones" class="nav-link" data-scroll-target="#주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</a></li>
+  </ul></li>
+  <li><a href="#시장-구조-market-structure" id="toc-시장-구조-market-structure" class="nav-link" data-scroll-target="#시장-구조-market-structure">2. 시장 구조 (Market Structure)</a>
+  <ul class="collapse">
+  <li><a href="#시장-구분-자산-유형-market-segments-asset-classes" id="toc-시장-구분-자산-유형-market-segments-asset-classes" class="nav-link" data-scroll-target="#시장-구분-자산-유형-market-segments-asset-classes">2.1 시장 구분 / 자산 유형 (Market Segments / Asset Classes)</a></li>
+  <li><a href="#거래-세션-거래-시간-trading-sessions-hours" id="toc-거래-세션-거래-시간-trading-sessions-hours" class="nav-link" data-scroll-target="#거래-세션-거래-시간-trading-sessions-hours">2.2 거래 세션 / 거래 시간 (Trading Sessions / Hours)</a></li>
+  <li><a href="#호가단위-tick-sizes-주요-상품" id="toc-호가단위-tick-sizes-주요-상품" class="nav-link" data-scroll-target="#호가단위-tick-sizes-주요-상품">2.3 호가단위 (Tick Sizes, 주요 상품)</a></li>
+  <li><a href="#로트-단위-계약-단위-lot-sizes-contract-units" id="toc-로트-단위-계약-단위-lot-sizes-contract-units" class="nav-link" data-scroll-target="#로트-단위-계약-단위-lot-sizes-contract-units">2.4 로트 단위 / 계약 단위 (Lot Sizes / Contract Units)</a></li>
+  <li><a href="#시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs" id="toc-시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 / 유동성 공급자 프로그램 (Market Maker / Liquidity Provider Programs)</a></li>
+  </ul></li>
+  <li><a href="#매매-메커니즘-trading-mechanism" id="toc-매매-메커니즘-trading-mechanism" class="nav-link" data-scroll-target="#매매-메커니즘-trading-mechanism">3. 매매 메커니즘 (Trading Mechanism)</a>
+  <ul class="collapse">
+  <li><a href="#경매-방식-auction-mechanisms" id="toc-경매-방식-auction-mechanisms" class="nav-link" data-scroll-target="#경매-방식-auction-mechanisms">3.1 경매 방식 (Auction Mechanisms)</a></li>
+  <li><a href="#접속매매-연속-거래-continuous-trading" id="toc-접속매매-연속-거래-continuous-trading" class="nav-link" data-scroll-target="#접속매매-연속-거래-continuous-trading">3.2 접속매매 (연속 거래, Continuous Trading)</a></li>
+  <li><a href="#가격-발견-price-discovery" id="toc-가격-발견-price-discovery" class="nav-link" data-scroll-target="#가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</a></li>
+  <li><a href="#주문-우선순위-규칙-체결-알고리즘-order-priority-rules-matching-algorithms" id="toc-주문-우선순위-규칙-체결-알고리즘-order-priority-rules-matching-algorithms" class="nav-link" data-scroll-target="#주문-우선순위-규칙-체결-알고리즘-order-priority-rules-matching-algorithms">3.4 주문 우선순위 규칙 / 체결 알고리즘 (Order Priority Rules / Matching Algorithms)</a></li>
+  </ul></li>
+  <li><a href="#주문-유형-order-types" id="toc-주문-유형-order-types" class="nav-link" data-scroll-target="#주문-유형-order-types">4. 주문 유형 (Order Types)</a>
+  <ul class="collapse">
+  <li><a href="#표준-주문-유형-standard-order-types" id="toc-표준-주문-유형-standard-order-types" class="nav-link" data-scroll-target="#표준-주문-유형-standard-order-types">4.1 표준 주문 유형 (Standard Order Types)</a></li>
+  <li><a href="#고급-주문-유형-advanced-order-types" id="toc-고급-주문-유형-advanced-order-types" class="nav-link" data-scroll-target="#고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</a></li>
+  <li><a href="#주문-유효조건-time-in-force-tif" id="toc-주문-유효조건-time-in-force-tif" class="nav-link" data-scroll-target="#주문-유효조건-time-in-force-tif">4.3 주문 유효조건 (Time-in-Force, TIF)</a></li>
+  <li><a href="#주문-수정-취소-order-modification-cancellation" id="toc-주문-수정-취소-order-modification-cancellation" class="nav-link" data-scroll-target="#주문-수정-취소-order-modification-cancellation">4.4 주문 수정 / 취소 (Order Modification / Cancellation)</a></li>
+  </ul></li>
+  <li><a href="#매매시스템-기술-trading-system-technology" id="toc-매매시스템-기술-trading-system-technology" class="nav-link" data-scroll-target="#매매시스템-기술-trading-system-technology">5. 매매시스템 / 기술 (Trading System / Technology)</a>
+  <ul class="collapse">
+  <li><a href="#현행-플랫폼-asx-24-파생상품" id="toc-현행-플랫폼-asx-24-파생상품" class="nav-link" data-scroll-target="#현행-플랫폼-asx-24-파생상품">5.1 현행 플랫폼 — ASX 24 (파생상품)</a></li>
+  <li><a href="#asx-trade-주식-옵션" id="toc-asx-trade-주식-옵션" class="nav-link" data-scroll-target="#asx-trade-주식-옵션">5.2 ASX Trade (주식 옵션)</a></li>
+  <li><a href="#예정된-업그레이드-lseg-파트너십-2026년-3월-발표" id="toc-예정된-업그레이드-lseg-파트너십-2026년-3월-발표" class="nav-link" data-scroll-target="#예정된-업그레이드-lseg-파트너십-2026년-3월-발표">5.3 예정된 업그레이드 — LSEG 파트너십 (2026년 3월 발표)</a></li>
+  </ul></li>
+  <li><a href="#시장-데이터-market-data" id="toc-시장-데이터-market-data" class="nav-link" data-scroll-target="#시장-데이터-market-data">6. 시장 데이터 (Market Data)</a>
+  <ul class="collapse">
+  <li><a href="#피드-프로토콜-feed-protocols" id="toc-피드-프로토콜-feed-protocols" class="nav-link" data-scroll-target="#피드-프로토콜-feed-protocols">6.1 피드 프로토콜 (Feed Protocols)</a></li>
+  <li><a href="#데이터-수준-data-levels" id="toc-데이터-수준-data-levels" class="nav-link" data-scroll-target="#데이터-수준-data-levels">6.2 데이터 수준 (Data Levels)</a></li>
+  <li><a href="#데이터-배포-data-distribution" id="toc-데이터-배포-data-distribution" class="nav-link" data-scroll-target="#데이터-배포-data-distribution">6.3 데이터 배포 (Data Distribution)</a></li>
+  </ul></li>
+  <li><a href="#연결성-및-접근-connectivity-access" id="toc-연결성-및-접근-connectivity-access" class="nav-link" data-scroll-target="#연결성-및-접근-connectivity-access">7. 연결성 및 접근 (Connectivity &amp; Access)</a>
+  <ul class="collapse">
+  <li><a href="#회원-참가-membership-participation" id="toc-회원-참가-membership-participation" class="nav-link" data-scroll-target="#회원-참가-membership-participation">7.1 회원 / 참가 (Membership / Participation)</a></li>
+  <li><a href="#연결-방식-connection-methods" id="toc-연결-방식-connection-methods" class="nav-link" data-scroll-target="#연결-방식-connection-methods">7.2 연결 방식 (Connection Methods)</a></li>
+  <li><a href="#australian-liquidity-centre-alc" id="toc-australian-liquidity-centre-alc" class="nav-link" data-scroll-target="#australian-liquidity-centre-alc">7.3 Australian Liquidity Centre (ALC)</a></li>
+  </ul></li>
+  <li><a href="#리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" id="toc-리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (Risk Controls &amp; Circuit Breakers)</a>
+  <ul class="collapse">
+  <li><a href="#asx의-서킷브레이커-매매거래중단-접근방식" id="toc-asx의-서킷브레이커-매매거래중단-접근방식" class="nav-link" data-scroll-target="#asx의-서킷브레이커-매매거래중단-접근방식">8.1 ASX의 서킷브레이커 (매매거래중단) 접근방식</a></li>
+  <li><a href="#사전거래-리스크-관리-pre-trade-risk-controls" id="toc-사전거래-리스크-관리-pre-trade-risk-controls" class="nav-link" data-scroll-target="#사전거래-리스크-관리-pre-trade-risk-controls">8.2 사전거래 리스크 관리 (Pre-Trade Risk Controls)</a></li>
+  <li><a href="#장중-증거금-발동-intraday-margin-triggers" id="toc-장중-증거금-발동-intraday-margin-triggers" class="nav-link" data-scroll-target="#장중-증거금-발동-intraday-margin-triggers">8.3 장중 증거금 발동 (Intraday Margin Triggers)</a></li>
+  <li><a href="#시장-변동성-조치-market-volatility-measures" id="toc-시장-변동성-조치-market-volatility-measures" class="nav-link" data-scroll-target="#시장-변동성-조치-market-volatility-measures">8.4 시장 변동성 조치 (Market Volatility Measures)</a></li>
+  </ul></li>
+  <li><a href="#규제-체계-regulatory-framework" id="toc-규제-체계-regulatory-framework" class="nav-link" data-scroll-target="#규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</a>
+  <ul class="collapse">
+  <li><a href="#주요-감독기관-primary-regulators" id="toc-주요-감독기관-primary-regulators" class="nav-link" data-scroll-target="#주요-감독기관-primary-regulators">9.1 주요 감독기관 (Primary Regulators)</a></li>
+  <li><a href="#주요-법규-및-규칙-key-regulations-and-rules" id="toc-주요-법규-및-규칙-key-regulations-and-rules" class="nav-link" data-scroll-target="#주요-법규-및-규칙-key-regulations-and-rules">9.2 주요 법규 및 규칙 (Key Regulations and Rules)</a></li>
+  </ul></li>
+  <li><a href="#최근-동향-recent-developments" id="toc-최근-동향-recent-developments" class="nav-link" data-scroll-target="#최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</a>
+  <ul class="collapse">
+  <li><a href="#chess-교체-프로젝트" id="toc-chess-교체-프로젝트" class="nav-link" data-scroll-target="#chess-교체-프로젝트">11.1 CHESS 교체 프로젝트</a></li>
+  <li><a href="#asx-24-플랫폼-현대화-lseg-파트너십" id="toc-asx-24-플랫폼-현대화-lseg-파트너십" class="nav-link" data-scroll-target="#asx-24-플랫폼-현대화-lseg-파트너십">11.2 ASX 24 플랫폼 현대화 (LSEG 파트너십)</a></li>
+  <li><a href="#시장-미시구조-개선-2025" id="toc-시장-미시구조-개선-2025" class="nav-link" data-scroll-target="#시장-미시구조-개선-2025">11.3 시장 미시구조 개선 (2025)</a></li>
+  <li><a href="#기록적-거래량-2025" id="toc-기록적-거래량-2025" class="nav-link" data-scroll-target="#기록적-거래량-2025">11.4 기록적 거래량 (2025)</a></li>
+  <li><a href="#환경-파생상품-확장" id="toc-환경-파생상품-확장" class="nav-link" data-scroll-target="#환경-파생상품-확장">11.5 환경 파생상품 확장</a></li>
+  </ul></li>
+  <li><a href="#파생상품-전용-항목-derivatives-specific-items" id="toc-파생상품-전용-항목-derivatives-specific-items" class="nav-link" data-scroll-target="#파생상품-전용-항목-derivatives-specific-items">파생상품 전용 항목 (Derivatives-Specific Items)</a>
+  <ul class="collapse">
+  <li><a href="#d.1-상품-목록-product-catalog" id="toc-d.1-상품-목록-product-catalog" class="nav-link" data-scroll-target="#d.1-상품-목록-product-catalog">D.1 상품 목록 (Product Catalog)</a></li>
+  <li><a href="#d.2-주요-계약-명세-key-contract-specifications-거래량-상위-5개" id="toc-d.2-주요-계약-명세-key-contract-specifications-거래량-상위-5개" class="nav-link" data-scroll-target="#d.2-주요-계약-명세-key-contract-specifications-거래량-상위-5개">D.2 주요 계약 명세 (Key Contract Specifications, 거래량 상위 5개)</a></li>
+  <li><a href="#d.3-증거금-체계-margin-framework" id="toc-d.3-증거금-체계-margin-framework" class="nav-link" data-scroll-target="#d.3-증거금-체계-margin-framework">D.3 증거금 체계 (Margin Framework)</a></li>
+  <li><a href="#d.4-포지션한도-position-limits" id="toc-d.4-포지션한도-position-limits" class="nav-link" data-scroll-target="#d.4-포지션한도-position-limits">D.4 포지션한도 (Position Limits)</a></li>
+  <li><a href="#d.5-블록거래-특별-교차거래-block-trading-special-crossings" id="toc-d.5-블록거래-특별-교차거래-block-trading-special-crossings" class="nav-link" data-scroll-target="#d.5-블록거래-특별-교차거래-block-trading-special-crossings">D.5 블록거래 / 특별 교차거래 (Block Trading / Special Crossings)</a></li>
+  </ul></li>
+  <li><a href="#출처-sources" id="toc-출처-sources" class="nav-link" data-scroll-target="#출처-sources">출처 (Sources)</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">ASX Derivatives (호주증권거래소 파생상품)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">ASX Derivatives (호주증권거래소 파생상품)</h1>
+<p class="subtitle lead">파생상품 &gt; 거래소</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 4월 17일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>최종 수정일:</strong> 2026-04-07 <strong>조사 등급:</strong> Tier 2 <strong>분야:</strong> 파생상품</p>
+</blockquote>
+<hr>
+<section id="개요-및-프로필-overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>정식 명칭</td>
+<td>ASX Limited — Derivatives Markets (ASX 24 및 ASX Trade 주식 옵션 운영)</td>
+</tr>
+<tr class="even">
+<td>약칭</td>
+<td>ASX Derivatives / ASX 24</td>
+</tr>
+<tr class="odd">
+<td>웹사이트</td>
+<td>https://www.asx.com.au/markets/trade-our-derivatives-market</td>
+</tr>
+<tr class="even">
+<td>설립연도</td>
+<td>1960년 (Sydney Greasy Wool Futures Exchange, 전신); 1972년 Sydney Futures Exchange (SFE)로 개칭; 2006년 ASX Limited로 합병</td>
+</tr>
+<tr class="odd">
+<td>소재지</td>
+<td>호주 / 시드니 (Exchange Centre, 20 Bridge Street, Sydney NSW 2000)</td>
+</tr>
+<tr class="even">
+<td>지배구조</td>
+<td>ASX Limited 소속, 자사 거래소에 상장된 상장회사 (티커: ASX); 개인 투자자 약 50%, 기관 투자자 약 49%</td>
+</tr>
+<tr class="odd">
+<td>모회사 / 그룹</td>
+<td>ASX Limited (자체 상장 지주회사)</td>
+</tr>
+<tr class="even">
+<td>감독기관</td>
+<td>Australian Securities and Investments Commission (ASIC); 청산 및 결제 안정성에 대해서는 Reserve Bank of Australia (RBA)</td>
+</tr>
+<tr class="odd">
+<td>CEO (ASX Limited)</td>
+<td>Helen Lofthouse (2022년 8월 취임)</td>
+</tr>
+<tr class="even">
+<td>FY2025 영업수익 (ASX 그룹)</td>
+<td>AUD 11억 720만 (전년 대비 +7.0%)</td>
+</tr>
+<tr class="odd">
+<td>FY2025 기본 순이익 (ASX 그룹)</td>
+<td>AUD 5억 1,000만 (전년 대비 +7.5%)</td>
+</tr>
+<tr class="even">
+<td>파생상품 거래 플랫폼</td>
+<td>ASX 24 (금리, 주가지수, 상품, 에너지, 환경 상품의 선물 및 옵션); ASX Trade (주식 옵션 — Exchange Traded Options / ETOs)</td>
+</tr>
+<tr class="odd">
+<td>청산기관</td>
+<td>ASX Clear (주식 옵션, 주식관련 파생상품); ASX Clear (Futures) (장내 선물, 장외 금리 파생상품)</td>
+</tr>
+<tr class="even">
+<td>상장 파생상품 종목</td>
+<td>금리, 주가지수(SPI 200), 주식 옵션(약 70개 기초자산 주식 및 지수에 대한 ETO), 곡물, 에너지, 환경 상품의 선물 및 옵션</td>
+</tr>
+<tr class="odd">
+<td>연간 파생상품 거래량 (CY2025)</td>
+<td>금리 선물: 2025년 4분기 기록적 거래량 (전년 대비 +23%); 주식 파생상품: 월 약 1,360만 선물 및 옵션 (2025년 중반); OTC 청산: 2025년 4분기 A$2.19조 명목금액</td>
+</tr>
+<tr class="even">
+<td>OTC 금리 미결제약정</td>
+<td>A$4.124조 명목금액 (2025년 12월 말)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: ASX Annual Report FY2025; ASX Rates Highlights Q4 2025; ASX Equity Derivatives Statistics; ASX website, “Trade our derivatives market”]</p>
+<section id="주요-연혁-key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</h3>
+<ul>
+<li><strong>1960년:</strong> Sydney Greasy Wool Futures Exchange 설립 — 호주 최초의 선물 거래소</li>
+<li><strong>1972년:</strong> Sydney Futures Exchange (SFE)로 개칭</li>
+<li><strong>1979년:</strong> SFE가 90-Day Bank Accepted Bill Futures를 출시 — 미국 외 지역에서 최초로 상장된 금융 선물 계약</li>
+<li><strong>1980년:</strong> SFE가 미국 달러 선물 도입 — 세계 최초로 현금결제를 도입한 선물 계약 중 하나</li>
+<li><strong>1983년:</strong> SFE가 All Ordinaries Share Price Index (SPI) 선물 계약 출시 — 미국 외 최초의 주가지수 선물 상품</li>
+<li><strong>1989년:</strong> SFE가 SYCOM (Sydney Computerised Overnight Market) 출시, 호주 거래소 최초의 시간외 전자거래 플랫폼</li>
+<li><strong>1992년:</strong> SFE가 3년 및 10년 호주 국채 선물 출시</li>
+<li><strong>1998년:</strong> SFE 주식회사 전환(비상호화) 및 ASX 상장</li>
+<li><strong>1999년:</strong> SFE가 완전 전자거래로 전환, 장내 공개호가 거래 폐지</li>
+<li><strong>2000년:</strong> SFE가 OM (현 Nasdaq) CLICK 거래 플랫폼 도입</li>
+<li><strong>2005년:</strong> SFE가 전력 및 환경 파생상품 거래 플랫폼 d-cypha Trade 출시</li>
+<li><strong>2006년 (7월 7일):</strong> ASX와 SFE가 합병하여 ASX Limited 형성, 수직 통합 다자산 거래소 그룹 창설; 호주경쟁소비자위원회(ACCC)가 2006년 5월 24일 합병 승인</li>
+<li><strong>2010년:</strong> ASX가 ASX Trade (Nasdaq OMX Genium INET 기반) 출시; 지연시간이 30밀리초에서 300마이크로초로 개선; 용량이 초당 20,000건에서 100,000건으로 확대</li>
+<li><strong>2012년:</strong> ASIC이 ASX 및 ASX 24의 직접 시장감독을 인수하여 ASX의 자율규제 역할 종료; Chi-X (현 Cboe Australia)가 경쟁 시장으로 출범</li>
+<li><strong>2013년:</strong> ASX가 시드니 Gore Hill에 Australian Liquidity Centre (ALC) 개설, 특수 목적 데이터센터 및 코로케이션 시설</li>
+<li><strong>2014년:</strong> ASX가 ASX Clear (Futures)를 통해 금리 파생상품 OTC 청산 개시</li>
+<li><strong>2016년:</strong> ASX가 ASX 24 New Trading Platform (NTP) 출시, 파생상품 거래 플랫폼 기술 업그레이드</li>
+<li><strong>2025년 (7월):</strong> ASX가 3년 국채 선물 호가단위 (최소가격변동폭)를 0.5bp로 재설정 (1bp에서); Bond-Roll De-Linking 시행으로 시장 미시구조 개선</li>
+<li><strong>2025년 (4분기):</strong> 기록적 금리 파생상품 거래량 — 2025년 4분기 전년 동기 대비 23% 증가</li>
+<li><strong>2026년 (3월):</strong> ASX와 LSEG가 ASX 24 거래 플랫폼 현대화 및 업그레이드 합의 발표; 2028년 상반기 가동 목표</li>
+<li><strong>2026년 (4월):</strong> CHESS Release 1 (청산 구성요소 교체) 2026년 4월 20일 가동 목표</li>
+</ul>
+<p>[Source: Wikipedia, “Australian Securities Exchange”; MarketsWiki, “Australian Securities Exchange”; ASX website, “ASX Story”; ACCC media release, May 2006; ASX press releases 2025-2026; FinanceFeeds, “ASX and LSEG Agree Technology Upgrade”, March 2026; The TRADE, “ASX introduces high-speed trading platform”, 2010]</p>
+<hr>
+</section>
+</section>
+<section id="시장-구조-market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="시장-구조-market-structure">2. 시장 구조 (Market Structure)</h2>
+<section id="시장-구분-자산-유형-market-segments-asset-classes" class="level3">
+<h3 class="anchored" data-anchor-id="시장-구분-자산-유형-market-segments-asset-classes">2.1 시장 구분 / 자산 유형 (Market Segments / Asset Classes)</h3>
+<p>ASX Derivatives는 두 개의 주요 거래 플랫폼과 다수의 자산 유형으로 구성된다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 27%">
+<col style="width: 20%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>플랫폼</th>
+<th>자산 유형</th>
+<th>상품</th>
+<th>주요 계약</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ASX 24</strong></td>
+<td>금리 — 단기</td>
+<td>선물 및 옵션</td>
+<td>30-Day Interbank Cash Rate (IB) Futures, 90-Day Bank Accepted Bill Futures</td>
+</tr>
+<tr class="even">
+<td><strong>ASX 24</strong></td>
+<td>금리 — 채권</td>
+<td>선물 및 옵션</td>
+<td>3년, 5년, 10년, 20년 호주 국채 선물; Term Options; One Session Options</td>
+</tr>
+<tr class="odd">
+<td><strong>ASX 24</strong></td>
+<td>주가지수</td>
+<td>선물</td>
+<td>ASX SPI 200 Futures, Mini SPI 200 Futures</td>
+</tr>
+<tr class="even">
+<td><strong>ASX Trade</strong></td>
+<td>주식 옵션 (ETO)</td>
+<td>개별주식 및 지수 옵션</td>
+<td>약 70개 기초자산 주식; ASX 200 Index Options</td>
+</tr>
+<tr class="odd">
+<td><strong>ASX 24</strong></td>
+<td>곡물</td>
+<td>선물 및 옵션</td>
+<td>Eastern Australia Wheat, Eastern Australia Feed Barley, WA Wheat</td>
+</tr>
+<tr class="even">
+<td><strong>ASX 24</strong></td>
+<td>에너지</td>
+<td>선물 및 옵션</td>
+<td>Australian Electricity Base Load Futures (NSW, VIC, QLD, SA 노드); NZ Electricity Futures (Otahuhu, Benmore 노드); Australian Morning/Evening Peak Electricity Futures</td>
+</tr>
+<tr class="odd">
+<td><strong>ASX 24</strong></td>
+<td>환경</td>
+<td>선물</td>
+<td>Australian Carbon Credit Unit (ACCU) Futures, NZ Emissions Unit (NZU) Futures, Large-scale Generation Certificate (LGC) Futures</td>
+</tr>
+<tr class="even">
+<td><strong>ASX Clear (Futures)</strong></td>
+<td>OTC 금리</td>
+<td>청산 OTC 파생상품</td>
+<td>AUD 및 NZD 금리 스왑, 익일물 지수 스왑, 선도금리계약</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: ASX website, “Trade our derivatives market”; ASX website, “Interest rate derivatives”; ASX website, “Grain derivatives”; ASX Energy website; ASX Environmental Futures fact sheet 2024]</p>
+</section>
+<section id="거래-세션-거래-시간-trading-sessions-hours" class="level3">
+<h3 class="anchored" data-anchor-id="거래-세션-거래-시간-trading-sessions-hours">2.2 거래 세션 / 거래 시간 (Trading Sessions / Hours)</h3>
+<p><strong>참고:</strong> 호주 동부표준시(AEST)는 UTC+10; 호주 동부일광절약시(AEDT)는 UTC+11 (10월 첫째 일요일~4월 첫째 일요일). 아래 시간은 AEST/AEDT 기준이며 UTC도 병기한다.</p>
+<p>ASX 24는 주요 상품에 대해 거의 24시간 거래를 운영하며, 주간 및 야간 세션이 분리되어 있다.</p>
+<p><strong>금리 파생상품 (3Y, 10Y 국채 선물, 90-Day Bills, IB Futures)</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 30%">
+<col style="width: 33%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>현지 시간 (AEST)</th>
+<th>UTC (AEST 기간)</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>야간 세션</strong></td>
+<td>5:10 PM – 7:00 AM +1</td>
+<td>07:10 – 21:00</td>
+<td>유럽 및 미국 시간대를 포괄하는 연장 거래</td>
+</tr>
+<tr class="even">
+<td><strong>주간 사전개장</strong></td>
+<td>8:28 AM – 8:30 AM</td>
+<td>22:28 – 22:30</td>
+<td>주문 접수; 가격 발견 경매</td>
+</tr>
+<tr class="odd">
+<td><strong>주간 세션</strong></td>
+<td>8:30 AM – 4:30 PM</td>
+<td>22:30 – 06:30</td>
+<td>호주 영업시간에 맞춘 주요 거래 세션</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ASX SPI 200 지수 선물</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 30%">
+<col style="width: 33%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>현지 시간 (AEST)</th>
+<th>UTC (AEST 기간)</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>야간 세션</strong></td>
+<td>5:10 PM – 7:00 AM +1</td>
+<td>07:10 – 21:00</td>
+<td>연장 시간 (미국 비DST 기간: 8:00 AM까지)</td>
+</tr>
+<tr class="even">
+<td><strong>주간 사전개장</strong></td>
+<td>9:50 AM</td>
+<td>23:50</td>
+<td>사전개장</td>
+</tr>
+<tr class="odd">
+<td><strong>주간 세션</strong></td>
+<td>9:50 AM – 4:30 PM</td>
+<td>23:50 – 06:30</td>
+<td>ASX 현물시장과 맞춘 주요 세션</td>
+</tr>
+</tbody>
+</table>
+<p><strong>주식 옵션 (ETO) — ASX Trade에서 거래</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>현지 시간 (AEST)</th>
+<th>UTC (AEST 기간)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>사전개장</strong></td>
+<td>9:50 AM – 10:00 AM</td>
+<td>23:50 – 00:00</td>
+</tr>
+<tr class="even">
+<td><strong>거래</strong></td>
+<td>10:00 AM – 4:00 PM</td>
+<td>00:00 – 06:00</td>
+</tr>
+<tr class="odd">
+<td><strong>거래후 조정</strong></td>
+<td>4:00 PM – 4:20 PM</td>
+<td>06:00 – 06:20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>곡물 선물</strong> — 주간 세션만, 일반적으로 AEST 10:00 AM – 3:00 PM [unverified]</p>
+<p><strong>에너지 및 환경 파생상품</strong> — 상품별 상이; 전력 선물은 일반적으로 ASX 24 표준 세션을 따름</p>
+<p>[Source: ASX website, “Trading hours and calendars”; ASX website, “Index derivatives trading hours”; ASX website, “Interest rate derivatives trading hours”; SPI Futures website, “Contract Specifications”; ASX 24 Schedule Timings v1.02, October 2023]</p>
+</section>
+<section id="호가단위-tick-sizes-주요-상품" class="level3">
+<h3 class="anchored" data-anchor-id="호가단위-tick-sizes-주요-상품">2.3 호가단위 (Tick Sizes, 주요 상품)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 26%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>호가단위 (최소가격변동폭)</th>
+<th>틱 가치 (대략)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ASX SPI 200 Futures</td>
+<td>1 지수포인트</td>
+<td>A$25.00</td>
+</tr>
+<tr class="even">
+<td>Mini SPI 200 Futures</td>
+<td>1 지수포인트</td>
+<td>A$5.00</td>
+</tr>
+<tr class="odd">
+<td>3년 국채 선물</td>
+<td>0.005% (0.5bp) — 2025년 7월 변경</td>
+<td>약 A$14.19 (수익률에 따라 변동)</td>
+</tr>
+<tr class="even">
+<td>10년 국채 선물</td>
+<td>0.005% (0.5bp); 만기 기간 중 0.002%</td>
+<td>약 A$30.90 (수익률에 따라 변동)</td>
+</tr>
+<tr class="odd">
+<td>20년 국채 선물</td>
+<td>0.005% (0.5bp) [unverified]</td>
+<td>수익률에 따라 변동</td>
+</tr>
+<tr class="even">
+<td>30-Day Interbank Cash Rate (IB) Futures</td>
+<td>0.005% (0.5bp)</td>
+<td>약 A$12.33</td>
+</tr>
+<tr class="odd">
+<td>90-Day Bank Bill Futures</td>
+<td>0.01% (1bp)</td>
+<td>약 A$24.66</td>
+</tr>
+<tr class="even">
+<td>Eastern Australia Wheat Futures</td>
+<td>A$0.50/톤 [unverified]</td>
+<td>A$10.00 [unverified]</td>
+</tr>
+<tr class="odd">
+<td>NZ Electricity Futures (Base Load)</td>
+<td>NZ$0.05/MWh</td>
+<td>분기 계약에 따라 변동</td>
+</tr>
+</tbody>
+</table>
+<p><strong>참고:</strong> ASX 채권 선물의 경우 틱 가치는 일정하지 않다 — 계약이 100에서 수익률을 차감하는 방식으로 호가되므로 수익률 수준에 따라 달라진다. 위 값은 대략적 중간 범위 추정치이다.</p>
+<p>[Source: ASX 24 Contract Specifications document; ASX 3 Year Treasury Bond Futures tick change notice (May 2025); ASX NZ Electricity Derivatives fact sheet; SPI Futures website]</p>
+</section>
+<section id="로트-단위-계약-단위-lot-sizes-contract-units" class="level3">
+<h3 class="anchored" data-anchor-id="로트-단위-계약-단위-lot-sizes-contract-units">2.4 로트 단위 / 계약 단위 (Lot Sizes / Contract Units)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>계약 단위</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ASX SPI 200 Futures</td>
+<td>A$25 x S&amp;P/ASX 200 Index</td>
+</tr>
+<tr class="even">
+<td>Mini SPI 200 Futures</td>
+<td>A$5 x S&amp;P/ASX 200 Index</td>
+</tr>
+<tr class="odd">
+<td>3년 국채 선물</td>
+<td>호주 국채 액면가 A$100,000</td>
+</tr>
+<tr class="even">
+<td>10년 국채 선물</td>
+<td>호주 국채 액면가 A$100,000</td>
+</tr>
+<tr class="odd">
+<td>20년 국채 선물</td>
+<td>호주 국채 액면가 A$100,000</td>
+</tr>
+<tr class="even">
+<td>30-Day Interbank Cash Rate Futures</td>
+<td>액면가 A$3,000,000 [unverified]</td>
+</tr>
+<tr class="odd">
+<td>90-Day Bank Bill Futures</td>
+<td>액면가 A$1,000,000</td>
+</tr>
+<tr class="even">
+<td>Eastern Australia Wheat Futures</td>
+<td>20미터톤</td>
+</tr>
+<tr class="odd">
+<td>NZ Electricity Futures (Base Load)</td>
+<td>거래 기간당 0.1 MW (= 일 2.4 MWh; 92일 분기 계약 약 220.8 MWh)</td>
+</tr>
+<tr class="even">
+<td>Australian Electricity Base Load Futures</td>
+<td>거래 기간당 1 MW [unverified]</td>
+</tr>
+<tr class="odd">
+<td>ACCU Futures</td>
+<td>1,000 Australian Carbon Credit Units</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: ASX 24 Contract Specifications; ASX 3 and 10 Year Treasury Bond Futures factsheet; ASX NZ Electricity fact sheet; ASX Grains contract specifications]</p>
+</section>
+<section id="시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 / 유동성 공급자 프로그램 (Market Maker / Liquidity Provider Programs)</h3>
+<p><strong>ETO (주식 옵션) 시장조성자 (마켓메이커) 제도:</strong></p>
+<ul>
+<li>ASX는 시장조성자 (마켓메이커)에게 하나 이상의 종목(기초증권)에 대한 특정 물량 및 스프레드 의무를 부과하는 계약을 체결</li>
+<li>시장조성자 (마켓메이커)는 최소 1년 이상의 만기에 걸쳐 지정 시리즈 수에 대해 매수 및 매도 가격을 제시해야 한다</li>
+<li>최소 계약 수량은 기초증권의 유동성, 변동성, 과거 옵션 거래량에 따라 ASX가 설정</li>
+<li>시장조성자 (마켓메이커)는 다른 참가자의 호가 요청에 응답해야 한다</li>
+<li>수수료 환급 및 인센티브 구조 적용</li>
+</ul>
+<p><strong>ASX 24 파생상품 시장조성 (마켓메이킹):</strong></p>
+<ul>
+<li>주요 금리 및 주가지수 상품에 시장조성자 (마켓메이커) 프로그램 운영</li>
+<li>Designated Market Makers (DMM)는 스프레드 및 규모 요건을 충족하는 연속적 양방향 호가 제시 의무</li>
+<li>금리 선물, SPI 200 선물, 일부 상품 파생상품을 대상으로 함</li>
+<li>수수료 할인 및 거래량 기반 인센티브 적용 [unverified]</li>
+</ul>
+<p>[Source: ASX ETO Market Maker Scheme document; ASX website, “Equity options market trading”]</p>
+<hr>
+</section>
+</section>
+<section id="매매-메커니즘-trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="매매-메커니즘-trading-mechanism">3. 매매 메커니즘 (Trading Mechanism)</h2>
+<section id="경매-방식-auction-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="경매-방식-auction-mechanisms">3.1 경매 방식 (Auction Mechanisms)</h3>
+<p><strong>개장 경매 (ASX 24):</strong> - 사전개장 단계에서 주문 접수 및 수정 허용 - 세션 개시 시 누적된 주문이 단일 균형 가격으로 체결 - 알고리즘은 균형 가격에서 체결 물량을 극대화 - 주간 및 야간 세션에 대해 별도 개장 경매 실시</p>
+<p><strong>개장 경매 (ASX Trade — ETO):</strong> - AEST 9:50 AM~10:00 AM 사전개장 - 주문 접수 및 수정은 가능하나 체결되지 않음 - AEST 10:00 AM에 균형 알고리즘으로 시가 결정</p>
+<p><strong>마감 / 정산 (ASX 24):</strong> - 일일 정산가격은 정의된 정산 시간대의 거래 활동을 기반으로 결정 - 채권 선물: 소수점 4자리로 산출된 거래 가격의 가중평균, 3자리로 반올림 - SPI 200: ASX 200 종가 지수 수준을 참조한 공정가치 산출 기반 일일 정산</p>
+</section>
+<section id="접속매매-연속-거래-continuous-trading" class="level3">
+<h3 class="anchored" data-anchor-id="접속매매-연속-거래-continuous-trading">3.2 접속매매 (연속 거래, Continuous Trading)</h3>
+<ul>
+<li>ASX 24: 주간 및 야간 세션 모두에서 연속 전자 주문 체결</li>
+<li>단순 주문 및 스프레드 전략(캘린더 스프레드, 상품간 스프레드) 지원</li>
+<li>야간 세션이 거의 24시간 거래를 제공; 호주 영업시간 외에는 유동성이 통상 얇음</li>
+<li>ASX Trade ETO: AEST 10:00 AM~4:00 PM 연속 체결</li>
+</ul>
+</section>
+<section id="가격-발견-price-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</h3>
+<ul>
+<li>ASX 3년 및 10년 국채 선물은 전 세계에서 가장 유동적이고 활발히 거래되는 금리 선물에 속하는 벤치마크 파생상품이다</li>
+<li>SPI 200 선물은 연장 야간 세션 동안 호주 주식시장의 야간 가격 발견을 제공한다</li>
+<li>30-Day Interbank Cash Rate Futures는 Reserve Bank of Australia (RBA) 기준금리 기대치를 가격화하는 주요 시장 수단이다</li>
+<li>OTC 금리 청산이 AUD/NZD 금리 시장의 가격 투명성을 제고한다</li>
+</ul>
+</section>
+<section id="주문-우선순위-규칙-체결-알고리즘-order-priority-rules-matching-algorithms" class="level3">
+<h3 class="anchored" data-anchor-id="주문-우선순위-규칙-체결-알고리즘-order-priority-rules-matching-algorithms">3.4 주문 우선순위 규칙 / 체결 알고리즘 (Order Priority Rules / Matching Algorithms)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 35%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>알고리즘</th>
+<th>설명</th>
+<th>적용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>가격-시간 우선 (FIFO)</strong></td>
+<td>엄격한 가격 우선, 이후 각 가격 수준에서 시간 우선</td>
+<td>모든 ASX 24 선물의 기본</td>
+</tr>
+<tr class="even">
+<td><strong>비례배분 (Pro-Rata)</strong></td>
+<td>각 가격 수준에서 주문 규모에 비례한 배분</td>
+<td>일부 옵션 상품 [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>가격-시간 우선</strong></td>
+<td>표준 FIFO 체결</td>
+<td>ASX Trade ETO</td>
+</tr>
+</tbody>
+</table>
+<p><strong>주요 규칙:</strong> - 가격 우선은 절대적 — 더 유리한 가격의 주문이 항상 먼저 체결 - 동일 가격 내에서 시간 우선이 배분을 결정 (FIFO) - Self-Trade Prevention (STP) 기능 이용 가능 - 개장 루틴 중에는 주문이 단일 균형 가격으로 체결</p>
+<p>[Source: ASX 24 Operating Rules Section 4 (February 2026); ASX 24 Trading Platform Guide v1.05 (April 2018); ASX website, “ETO crossing on ASX Trade”]</p>
+<hr>
+</section>
+</section>
+<section id="주문-유형-order-types" class="level2">
+<h2 class="anchored" data-anchor-id="주문-유형-order-types">4. 주문 유형 (Order Types)</h2>
+<section id="표준-주문-유형-standard-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="표준-주문-유형-standard-order-types">4.1 표준 주문 유형 (Standard Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>지정가</strong></td>
+<td>지정 가격 또는 그보다 유리한 가격으로 매수/매도; 미체결 수량은 호가창에 잔류. ASX 24의 기본 주문 유형</td>
+</tr>
+<tr class="even">
+<td><strong>시장가</strong></td>
+<td>최우선 가격에서 즉시 체결 [ASX Trade ETO]</td>
+</tr>
+<tr class="odd">
+<td><strong>Market to Limit</strong></td>
+<td>최우선 가격에서 체결; 미체결 수량은 마지막 체결 가격의 지정가 주문으로 전환 [ASX Trade ETO]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>참고:</strong> ASX 24 Operating Rules는 ASX 24 Trading Platform에서 지정 가격의 개별 지정가 주문만 접수, 수정 또는 취소할 수 있다고 규정한다. 시장가 주문은 ASX 24에서 기본 지원되지 않으며 — 참가자는 공격적으로 가격을 설정한 지정가 주문으로 시장가 유사 체결을 달성한다.</p>
+</section>
+<section id="고급-주문-유형-advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>스프레드 주문</strong></td>
+<td>캘린더 스프레드 및 상품간 스프레드 전략; 내포 스프레드 가격으로 단일 주문 제출</td>
+</tr>
+<tr class="even">
+<td><strong>Stop Limit</strong></td>
+<td>스톱 가격 도달 시 발동; 지정가 주문으로 전환 [ASX 24에서 unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>Fill and Kill (FAK)</strong></td>
+<td>이용 가능한 수량에 대해 즉시 체결; 미체결 수량 취소</td>
+</tr>
+<tr class="even">
+<td><strong>Fill or Kill (FOK)</strong></td>
+<td>전량 즉시 체결 필수, 그렇지 않으면 전량 취소</td>
+</tr>
+<tr class="odd">
+<td><strong>Mass Quote</strong></td>
+<td>시장조성자 (마켓메이커)가 단일 메시지로 다수의 양방향 호가 제출 가능</td>
+</tr>
+<tr class="even">
+<td><strong>Custom Market Orders</strong></td>
+<td>사전 협상된 장외 거래를 시스템을 통해 보고</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-유효조건-time-in-force-tif" class="level3">
+<h3 class="anchored" data-anchor-id="주문-유효조건-time-in-force-tif">4.3 주문 유효조건 (Time-in-Force, TIF)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TIF</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Day / Good for Session</strong></td>
+<td>현재 거래 세션에만 유효; 세션 종료 시 취소</td>
+</tr>
+<tr class="even">
+<td><strong>Good Till Cancel (GTC)</strong></td>
+<td>체결 또는 명시적 취소 시까지 유효</td>
+</tr>
+<tr class="odd">
+<td><strong>Good Till Date (GTD)</strong></td>
+<td>지정된 날짜까지 유효</td>
+</tr>
+<tr class="even">
+<td><strong>Good Till Expiry (GTE)</strong></td>
+<td>해당 종목의 만기일까지 유효</td>
+</tr>
+<tr class="odd">
+<td><strong>Fill and Kill (FAK)</strong></td>
+<td>즉시 체결; 미체결 수량 취소</td>
+</tr>
+<tr class="even">
+<td><strong>Fill or Kill (FOK)</strong></td>
+<td>즉시 전량 체결 또는 취소</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-수정-취소-order-modification-cancellation" class="level3">
+<h3 class="anchored" data-anchor-id="주문-수정-취소-order-modification-cancellation">4.4 주문 수정 / 취소 (Order Modification / Cancellation)</h3>
+<ul>
+<li>활성 거래 세션 중 주문 수정(가격, 수량) 또는 취소 가능</li>
+<li>가격 수정 시 시간 우선순위 상실; 수량 감소 시 유지</li>
+<li>유효조건에 따라 주문이 자동 삭제</li>
+<li>ASX 24는 대량 취소 기능을 지원</li>
+</ul>
+<p>[Source: ASX 24 Operating Rules Section 4 (February 2026); ASX 24 Trading Platform Guide v1.05 (April 2018); ASX Trade New Order Types document; ASX Operating Rules Procedures (October 2025)]</p>
+<hr>
+</section>
+</section>
+<section id="매매시스템-기술-trading-system-technology" class="level2">
+<h2 class="anchored" data-anchor-id="매매시스템-기술-trading-system-technology">5. 매매시스템 / 기술 (Trading System / Technology)</h2>
+<section id="현행-플랫폼-asx-24-파생상품" class="level3">
+<h3 class="anchored" data-anchor-id="현행-플랫폼-asx-24-파생상품">5.1 현행 플랫폼 — ASX 24 (파생상품)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>플랫폼 명칭</td>
+<td>ASX 24 Trading Platform (New Trading Platform — NTP)</td>
+</tr>
+<tr class="even">
+<td>기술 기반</td>
+<td>독자 플랫폼; 원래 Nasdaq OMX 기술 요소에 기반; 2016년 업그레이드 (NTP)</td>
+</tr>
+<tr class="odd">
+<td>지연시간</td>
+<td>약 300마이크로초 (2010년 ASX Trade 출시 기준); 현재 ASX 24 지연시간 수치 비공개이나 서브밀리초 범위 [unverified]</td>
+</tr>
+<tr class="even">
+<td>처리 용량</td>
+<td>초당 최대 100,000건 (2010년 ASX Trade 벤치마크); ASX 24도 유사 수준 [unverified]</td>
+</tr>
+<tr class="odd">
+<td>프로토콜 지원</td>
+<td>FIX 5.0 (주문 라우팅), ITCH (시장 데이터), OUCH (주문 접수), OMNet C++ API (Open Interface)</td>
+</tr>
+<tr class="even">
+<td>배치</td>
+<td>Australian Liquidity Centre (ALC), 시드니 Gore Hill 호스팅</td>
+</tr>
+<tr class="odd">
+<td>이중화</td>
+<td>페일오버 기능을 갖춘 액티브-액티브 구성 [unverified]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="asx-trade-주식-옵션" class="level3">
+<h3 class="anchored" data-anchor-id="asx-trade-주식-옵션">5.2 ASX Trade (주식 옵션)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>플랫폼 명칭</td>
+<td>ASX Trade (통합 주식 및 주식 옵션 플랫폼)</td>
+</tr>
+<tr class="even">
+<td>기술 기반</td>
+<td>Nasdaq OMX Genium INET</td>
+</tr>
+<tr class="odd">
+<td>출시</td>
+<td>2010년</td>
+</tr>
+<tr class="even">
+<td>성능</td>
+<td>지연시간이 30ms (레거시 SEATS/ITS)에서 300마이크로초로 개선; 용량이 초당 20,000건에서 100,000건으로 확대</td>
+</tr>
+<tr class="odd">
+<td>매매체결엔진</td>
+<td>TradeMatch (조명시장), CentrePoint (다크풀 — 주식만)</td>
+</tr>
+<tr class="even">
+<td>프로토콜 지원</td>
+<td>ITCH (시장 데이터), OUCH (주문 접수), FIX (주문 라우팅), OMNet C++ API</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="예정된-업그레이드-lseg-파트너십-2026년-3월-발표" class="level3">
+<h3 class="anchored" data-anchor-id="예정된-업그레이드-lseg-파트너십-2026년-3월-발표">5.3 예정된 업그레이드 — LSEG 파트너십 (2026년 3월 발표)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>발표</td>
+<td>2026년 3월</td>
+</tr>
+<tr class="even">
+<td>기술 제공자</td>
+<td>LSEG Markets Technology</td>
+</tr>
+<tr class="odd">
+<td>범위</td>
+<td>ASX 24 파생상품 거래 플랫폼의 전면 현대화</td>
+</tr>
+<tr class="even">
+<td>가동 목표</td>
+<td>2028년 상반기</td>
+</tr>
+<tr class="odd">
+<td>주요 목표</td>
+<td>성능, 시스템 회복력, 운영 신뢰성, 성장 역량 개선</td>
+</tr>
+<tr class="even">
+<td>2026년 활동</td>
+<td>플랫폼 설계, 테스트, 이관 계획, 참가자 준비 작업</td>
+</tr>
+<tr class="odd">
+<td>2027년 활동</td>
+<td>테스트, 이관, 참가자 온보딩</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: The TRADE, “ASX introduces high-speed trading platform”; Nasdaq press release, “ASX Launches Next Generation Trading Platform Powered by NASDAQ OMX’s Genium INET”; LSEG press release, “LSEG and ASX partner to modernise derivatives market trading platform”, March 2026; FinanceFeeds, “ASX and LSEG Agree Technology Upgrade”; ASX 24 Trading Platform Guide v1.05]</p>
+<hr>
+</section>
+</section>
+<section id="시장-데이터-market-data" class="level2">
+<h2 class="anchored" data-anchor-id="시장-데이터-market-data">6. 시장 데이터 (Market Data)</h2>
+<section id="피드-프로토콜-feed-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="피드-프로토콜-feed-protocols">6.1 피드 프로토콜 (Feed Protocols)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 20%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>프로토콜</th>
+<th>유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ASX ITCH</strong></td>
+<td>시장 데이터</td>
+<td>초저지연 바이너리 프로토콜; MoldUDP64 전송; 나노초 타임스탬프; 전체 호가창 심도 제공</td>
+</tr>
+<tr class="even">
+<td><strong>Glimpse</strong></td>
+<td>시장 데이터 스냅샷</td>
+<td>호가창 현재 상태를 제공하는 지점간 연결; ITCH와 동일한 메시지 형식 사용</td>
+</tr>
+<tr class="odd">
+<td><strong>FIX</strong></td>
+<td>시장 데이터 (표준)</td>
+<td>산업 표준 FIX 프로토콜; ITCH보다 높은 지연시간</td>
+</tr>
+<tr class="even">
+<td><strong>OUCH</strong></td>
+<td>주문 접수</td>
+<td>저지연 바이너리 주문 접수 프로토콜</td>
+</tr>
+<tr class="odd">
+<td><strong>FIX 5.0</strong></td>
+<td>주문 라우팅</td>
+<td>주문 관리를 위한 산업 표준 프로토콜</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="데이터-수준-data-levels" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-수준-data-levels">6.2 데이터 수준 (Data Levels)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>수준</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Level 1</strong></td>
+<td>최우선 매수/매도호가, 최종 거래 가격, 거래량</td>
+</tr>
+<tr class="even">
+<td><strong>Level 2</strong></td>
+<td>개별 주문이 포함된 전체 호가창 심도; ITCH를 통해 이용 가능</td>
+</tr>
+<tr class="odd">
+<td><strong>거래</strong></td>
+<td>가격, 거래량, 시간이 포함된 거래 보고서</td>
+</tr>
+<tr class="even">
+<td><strong>지수 데이터</strong></td>
+<td>S&amp;P/ASX 200 및 관련 지수 값</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="데이터-배포-data-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-배포-data-distribution">6.3 데이터 배포 (Data Distribution)</h3>
+<ul>
+<li><strong>직접 연결</strong> — ALC에서 최저지연으로</li>
+<li><strong>ASX Net</strong> — ALC를 외부 사이트에 연결하는 ASX의 고성능 광섬유 네트워크</li>
+<li><strong>정보 벤더</strong> — 100개 이상의 인가 데이터 벤더가 ASX 데이터를 전 세계에 배포 (ASX Information Vendors Guide, 2025년 11월 기준)</li>
+<li><strong>MarketSource</strong> — ASX의 시장 데이터 배포 플랫폼</li>
+</ul>
+<p>[Source: ASX Trade ITCH Specification (September 2025); ASX website, “Real time data”; ASX website, “How to access ASX Price data”; ASX Information Vendors Guide (November 2025); Trading Technologies, “ASX Overview”]</p>
+<hr>
+</section>
+</section>
+<section id="연결성-및-접근-connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="연결성-및-접근-connectivity-access">7. 연결성 및 접근 (Connectivity &amp; Access)</h2>
+<section id="회원-참가-membership-participation" class="level3">
+<h3 class="anchored" data-anchor-id="회원-참가-membership-participation">7.1 회원 / 참가 (Membership / Participation)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ASX 24 Trading Participant</strong></td>
+<td>ASX 24에서 거래할 수 있는 라이선스 보유; 호주금융서비스면허(AFSL) 보유 또는 면제 필요</td>
+</tr>
+<tr class="even">
+<td><strong>ASX Trading Participant</strong></td>
+<td>ASX Trade에서 주식 및 주식 옵션을 거래할 수 있는 라이선스 보유</td>
+</tr>
+<tr class="odd">
+<td><strong>ASX Clear Participant</strong></td>
+<td>현물 주식 및 주식 옵션(ASX Clear)의 청산 참가자</td>
+</tr>
+<tr class="even">
+<td><strong>ASX Clear (Futures) Participant</strong></td>
+<td>선물 및 OTC 파생상품의 청산 참가자; 자본 및 리스크 관리 요건 적용</td>
+</tr>
+<tr class="odd">
+<td><strong>해외 참가자</strong></td>
+<td>ASIC Market Integrity Rules에 따른 호주 내 최소 현지 요건 충족 필요</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="연결-방식-connection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="연결-방식-connection-methods">7.2 연결 방식 (Connection Methods)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>방식</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ALC 코로케이션</strong></td>
+<td>ASX Trade 및 ASX 24에 최저지연 접속을 위한 Australian Liquidity Centre 내 직접 랙 공간</td>
+</tr>
+<tr class="even">
+<td><strong>ASX Net</strong></td>
+<td>고객 사업장을 ALC에 연결하는 ASX 전용 고성능 광섬유 네트워크</td>
+</tr>
+<tr class="odd">
+<td><strong>크로스커넥트</strong></td>
+<td>ALC 내 거래상대방, 벤더, 서비스 제공자와의 지점간 연결</td>
+</tr>
+<tr class="even">
+<td><strong>통신사 중립 접근</strong></td>
+<td>ALC는 통신사 중립; 고객이 선호하는 통신 제공자로 연결 가능</td>
+</tr>
+<tr class="odd">
+<td><strong>제3자 ISV 플랫폼</strong></td>
+<td>독립 소프트웨어 벤더(예: Trading Technologies, ION, Fidessa)가 거래 접근 제공</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="australian-liquidity-centre-alc" class="level3">
+<h3 class="anchored" data-anchor-id="australian-liquidity-centre-alc">7.3 Australian Liquidity Centre (ALC)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>위치</td>
+<td>시드니 NSW Gore Hill Technology Park</td>
+</tr>
+<tr class="even">
+<td>목적</td>
+<td>호주 금융시장을 위해 특수 목적으로 건설된 데이터센터 및 코로케이션 시설</td>
+</tr>
+<tr class="odd">
+<td>입주자</td>
+<td>100개 이상의 금융기관 및 서비스 제공자 — 국제 투자은행, 호주 브로커, 시장조성자 (마켓메이커), 자기매매회사, 데이터 벤더, 소프트웨어 벤더, 주요 통신사 포함</td>
+</tr>
+<tr class="even">
+<td>접근 지점</td>
+<td>ASX Trade (주식), ASX TradeMatch, ASX CentrePoint, ASX 24 (파생상품)</td>
+</tr>
+<tr class="odd">
+<td>인프라 파트너</td>
+<td>Beeks Group (코로케이션 인프라 파트너)</td>
+</tr>
+<tr class="even">
+<td>IaaS</td>
+<td>ASX가 ALC에 호스팅되는 Infrastructure-as-a-Service (IaaS) 제공</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: ASX website, “Australian Liquidity Centre (ALC)”; ASX ALC Connectivity Guide; Beeks Group, “ASX Australian Liquidity Centre”; ASX website, “Connectivity services”; Trading Technologies, “ASX Overview”; DataCenterDynamics, “ASX launches IaaS hosted in ALC”]</p>
+<hr>
+</section>
+</section>
+<section id="리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (Risk Controls &amp; Circuit Breakers)</h2>
+<section id="asx의-서킷브레이커-매매거래중단-접근방식" class="level3">
+<h3 class="anchored" data-anchor-id="asx의-서킷브레이커-매매거래중단-접근방식">8.1 ASX의 서킷브레이커 (매매거래중단) 접근방식</h3>
+<p>ASX는 일부 해외 거래소(예: NYSE, KRX)와 같은 시장 전체 서킷브레이커 (매매거래중단)를 사용하지 않는다. 대신 ASX는 다음의 조합을 사용한다:</p>
+<ul>
+<li><strong>Anomalous Order Thresholds (AOTs):</strong> 2분 VWAP에서 매분 갱신되는 기준가격; 기준가격에서 10% 이상 벗어나는 공격적 주문을 방지</li>
+<li><strong>Extreme Trade Range (ETR):</strong> 종목별 고유; 가격이 ETR 임계치를 넘어 이동하면 2분간 거래 일시정지 발동</li>
+<li>이러한 메커니즘은 주로 ASX Trade (주식/ETO) 플랫폼에 적용</li>
+</ul>
+</section>
+<section id="사전거래-리스크-관리-pre-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="사전거래-리스크-관리-pre-trade-risk-controls">8.2 사전거래 리스크 관리 (Pre-Trade Risk Controls)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>관리 항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>사전거래 리스크 관리 (PTRM) 소프트웨어</strong></td>
+<td>ASX 24 Trading Platform의 일부로 제공; 리스크 관리의 2차 계층으로 기능</td>
+</tr>
+<tr class="even">
+<td><strong>참가자 의무</strong></td>
+<td>참가자는 ASX PTRM 외에 자체 독립 리스크 관리 시스템을 보유해야 한다</td>
+</tr>
+<tr class="odd">
+<td><strong>주문 수량 한도</strong></td>
+<td>참가자별 설정 가능한 최대 주문 수량 및 가치 한도</td>
+</tr>
+<tr class="even">
+<td><strong>가격밴드</strong></td>
+<td>기준가격에서 정의된 가격대를 벗어나는 주문 거부</td>
+</tr>
+<tr class="odd">
+<td><strong>Kill Switch</strong></td>
+<td>참가자 및 청산회원이 특정 계좌 또는 세션의 모든 잔류 주문을 취소할 수 있는 기능 [unverified]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="장중-증거금-발동-intraday-margin-triggers" class="level3">
+<h3 class="anchored" data-anchor-id="장중-증거금-발동-intraday-margin-triggers">8.3 장중 증거금 발동 (Intraday Margin Triggers)</h3>
+<ul>
+<li>ASX Clear (Futures)는 다음 경우 임시 장중 증거금 산출을 실행한다:
+<ul>
+<li>개별 계약의 가격 변동이 증거금률의 100%를 초과하거나,</li>
+<li>ASX SPI 200 지수 가격이 장중 1% 이상 변동하는 경우</li>
+</ul></li>
+<li>포지션이 정의된 임계치를 넘어 악화된 참가자에게 장중 마진콜 발행</li>
+</ul>
+</section>
+<section id="시장-변동성-조치-market-volatility-measures" class="level3">
+<h3 class="anchored" data-anchor-id="시장-변동성-조치-market-volatility-measures">8.4 시장 변동성 조치 (Market Volatility Measures)</h3>
+<ul>
+<li>ASX는 필요시 개별 증권 또는 파생상품에 대한 거래 중단을 부과할 수 있다</li>
+<li>시장운영자는 바람직하지 않은 시장 상황의 발생 또는 방지를 위해 참가자에게 특정 방식으로 거래하도록 지시할 재량권을 보유</li>
+<li>시장 전체 스트레스 이벤트에 대해 ASIC과 협력</li>
+</ul>
+<p>[Source: ASX website, “An Australian perspective on circuit breakers and market quality”; ASX website, “Market volatility FAQs”; ASXOnline Notice 0738.19.07, “Market Operator Software — Pre-Trade Risk Management Software Use”; RBA Assessment of ASX Clear (Futures), Standard 6: Margin]</p>
+<hr>
+</section>
+</section>
+<section id="규제-체계-regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</h2>
+<section id="주요-감독기관-primary-regulators" class="level3">
+<h3 class="anchored" data-anchor-id="주요-감독기관-primary-regulators">9.1 주요 감독기관 (Primary Regulators)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 64%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>감독기관</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Australian Securities and Investments Commission (ASIC)</strong></td>
+<td>주요 시장 감독기관; 모든 호주 증권 및 선물 시장에 대한 시장건전성규칙(MIR) 설정 및 집행</td>
+</tr>
+<tr class="even">
+<td><strong>Reserve Bank of Australia (RBA)</strong></td>
+<td>금융 안정을 위해 청산 및 결제 시설(ASX Clear, ASX Clear (Futures), ASX Settlement, Austraclear) 감독</td>
+</tr>
+<tr class="odd">
+<td><strong>ASX (시장운영자)</strong></td>
+<td>시장 운영; ASX Operating Rules 및 ASX 24 Operating Rules 집행; 거래 행위 모니터링 (ASIC 감독 하)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주요-법규-및-규칙-key-regulations-and-rules" class="level3">
+<h3 class="anchored" data-anchor-id="주요-법규-및-규칙-key-regulations-and-rules">9.2 주요 법규 및 규칙 (Key Regulations and Rules)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>법규</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Corporations Act 2001 (Cth)</strong></td>
+<td>금융시장, 호주금융서비스면허(AFSL), 시장 인프라를 규율하는 주요 법률</td>
+</tr>
+<tr class="even">
+<td><strong>ASIC Market Integrity Rules (Futures Markets) 2017</strong></td>
+<td>ASX 24 및 FEX의 거래 행위를 규율하는 규칙; 사전거래 리스크, 주문 처리, 시세조종 거래, 최선집행 포괄</td>
+</tr>
+<tr class="odd">
+<td><strong>ASIC Market Integrity Rules (Capital) 2021</strong></td>
+<td>증권 및 선물시장 참가자의 자본 및 보고 요건; 2022년 6월 17일 시행</td>
+</tr>
+<tr class="even">
+<td><strong>ASIC Market Integrity Rules (Securities Markets and Futures Markets) Amendment 2022/74</strong></td>
+<td>기술 및 운영 회복력 규칙; 2023년 3월 10일 시행; 기술 리스크 관리에 대한 최소 기대치 설정</td>
+</tr>
+<tr class="odd">
+<td><strong>ASIC CS Services Rules 2025</strong></td>
+<td>현물 주식 청산, 결제, 발행인 서비스를 규율하는 신규 규칙; 수익 상한 메커니즘 포함</td>
+</tr>
+<tr class="even">
+<td><strong>ASX 24 Operating Rules</strong></td>
+<td>ASX 24 거래를 규율하는 거래소 수준 규칙; 주문 유형, 거래 세션, 교차거래, 포지션 보고, 시장조성자 (마켓메이커) 의무 포괄</td>
+</tr>
+<tr class="odd">
+<td><strong>ASX Clear (Futures) Operating Rules</strong></td>
+<td>선물 및 OTC 파생상품의 청산 및 리스크 관리를 규율하는 규칙</td>
+</tr>
+<tr class="even">
+<td><strong>RG 265 / RG 266</strong></td>
+<td>증권시장 참가자(RG 265) 및 선물시장 참가자(RG 266)에 대한 MIR 가이던스를 제공하는 ASIC 규제 가이드</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: ASIC website, “Market integrity rules”; ASIC RG 266; The TRADE, “ASIC issues market integrity rules for ASX 24”; FIA, “Australia’s ASIC consolidates market integrity rules”; RBA media release, September 2025; ASIC media release 26-059MR, March 2026]</p>
+<hr>
+</section>
+</section>
+<section id="최근-동향-recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</h2>
+<section id="chess-교체-프로젝트" class="level3">
+<h3 class="anchored" data-anchor-id="chess-교체-프로젝트">11.1 CHESS 교체 프로젝트</h3>
+<p>CHESS (Clearing House Electronic Subregister System) 교체는 ASX의 가장 중대한 기술 전환이다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>연혁</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>원래 접근방식</strong></td>
+<td>Digital Asset의 DAML 플랫폼을 사용한 DLT 기반 교체; 2015년 발표</td>
+</tr>
+<tr class="even">
+<td><strong>2022년 11월</strong></td>
+<td>비용 초과 및 지연으로 DLT 접근방식 포기; A$2.5억 상각</td>
+</tr>
+<tr class="odd">
+<td><strong>2023-2024</strong></td>
+<td>기존 기술(DLT 아닌)을 사용한 재설계 착수</td>
+</tr>
+<tr class="even">
+<td><strong>2단계 인도</strong></td>
+<td>Release 1 (청산 교체, FIX 메시징) 및 Release 2 (결제 및 서브레지스터)</td>
+</tr>
+<tr class="odd">
+<td><strong>Release 1 범위</strong></td>
+<td>CHESS의 청산 구성요소 교체; 거래 등록을 위한 FIX 메시징 도입</td>
+</tr>
+<tr class="even">
+<td><strong>Release 1 가동 목표</strong></td>
+<td>2026년 4월 20일</td>
+</tr>
+<tr class="odd">
+<td><strong>Release 2 목표</strong></td>
+<td>2029년 (결제 및 서브레지스터 기능)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="asx-24-플랫폼-현대화-lseg-파트너십" class="level3">
+<h3 class="anchored" data-anchor-id="asx-24-플랫폼-현대화-lseg-파트너십">11.2 ASX 24 플랫폼 현대화 (LSEG 파트너십)</h3>
+<ul>
+<li><strong>2026년 3월:</strong> ASX와 LSEG가 ASX 24 파생상품 거래 플랫폼 현대화 및 업그레이드 합의 발표</li>
+<li>LSEG Markets Technology가 속도, 회복력, 용량에 최적화된 고성능, 저지연 플랫폼 제공</li>
+<li>2026-2027년에 걸쳐 협력적 설계 및 테스트</li>
+<li>가동 목표: 2028년 상반기</li>
+<li>현행 ASX 24 NTP (2016년 출시) 대체 예정</li>
+</ul>
+</section>
+<section id="시장-미시구조-개선-2025" class="level3">
+<h3 class="anchored" data-anchor-id="시장-미시구조-개선-2025">11.3 시장 미시구조 개선 (2025)</h3>
+<ul>
+<li><strong>3년 국채 선물 틱 변경 (2025년 7월):</strong> 최소 틱을 0.5bp로 재설정(1bp에서), 가격 세분성 개선 및 스프레드 축소</li>
+<li><strong>Bond-Roll De-Linking:</strong> 3Y 및 10Y 국채 선물 롤 프로세스의 구조적 변경으로 롤 체결 개선 및 시장 영향 감소</li>
+<li>이러한 변화가 2025년 4분기 기록적 금리 파생상품 거래량에 기여</li>
+</ul>
+</section>
+<section id="기록적-거래량-2025" class="level3">
+<h3 class="anchored" data-anchor-id="기록적-거래량-2025">11.4 기록적 거래량 (2025)</h3>
+<ul>
+<li>2025년 4분기 금리 파생상품 거래량이 2025년 3분기 대비 14%, 2024년 4분기 대비 23% 증가</li>
+<li>2025년 10월과 11월은 금리 선물의 비롤 월 기준 역대 2위 및 3위</li>
+<li>3년(YT) 롤 활동: 2025년 4분기 130.9만 계약 (전분기 대비 +13%)</li>
+<li>10년(XT) 롤 활동: 2025년 4분기 192.1만 계약 (전분기 대비 -16%)</li>
+<li>OTC 청산: 2025년 4분기 A$2.19조 명목금액; 2025년 12월 말 미결제약정 A$4.124조</li>
+<li>2025년 4월은 관세 관련 거시경제 변동성에 힘입어 금리 선물 활동의 단일 월 최고치</li>
+</ul>
+</section>
+<section id="환경-파생상품-확장" class="level3">
+<h3 class="anchored" data-anchor-id="환경-파생상품-확장">11.5 환경 파생상품 확장</h3>
+<ul>
+<li>ASX는 환경 선물 라인업을 지속 확장: ACCU Futures, NZU Futures, LGC Futures</li>
+<li>관련 환경 레지스트리의 ASX Clear (Futures) 계좌를 통한 환경 인증서 실물 인수도</li>
+<li>호주의 탈탄소화 전환 및 규제준수 시장을 지원</li>
+</ul>
+<p>[Source: ASX website, “CHESS Project”; WatersTechnology, “ASX CHESS replacement to be delivered in phases”; LSEG press release, March 2026; ASX Rates Highlights Q4 2025; ASX 3 Year Bond Futures tick change notice; ASX Environmental Futures fact sheet]</p>
+<hr>
+</section>
+</section>
+<section id="파생상품-전용-항목-derivatives-specific-items" class="level2">
+<h2 class="anchored" data-anchor-id="파생상품-전용-항목-derivatives-specific-items">파생상품 전용 항목 (Derivatives-Specific Items)</h2>
+<section id="d.1-상품-목록-product-catalog" class="level3">
+<h3 class="anchored" data-anchor-id="d.1-상품-목록-product-catalog">D.1 상품 목록 (Product Catalog)</h3>
+<p><strong>금리 파생상품 (ASX 24):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 22%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>유형</th>
+<th>기초자산</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>30-Day Interbank Cash Rate (IB) Futures</td>
+<td>선물</td>
+<td>RBA 은행간 익일물 기준금리 (월평균)</td>
+</tr>
+<tr class="even">
+<td>30-Day Interbank Cash Rate Options</td>
+<td>옵션</td>
+<td>IB Futures</td>
+</tr>
+<tr class="odd">
+<td>90-Day Bank Accepted Bill Futures</td>
+<td>선물</td>
+<td>90일 은행인수어음 금리</td>
+</tr>
+<tr class="even">
+<td>90-Day Bank Bill Options</td>
+<td>옵션</td>
+<td>90일 은행어음 선물</td>
+</tr>
+<tr class="odd">
+<td>3년 국채 선물</td>
+<td>선물</td>
+<td>호주 국채 바스켓 (3년 만기)</td>
+</tr>
+<tr class="even">
+<td>3년 국채 옵션 (Term &amp; One Session)</td>
+<td>옵션</td>
+<td>3년 국채 선물</td>
+</tr>
+<tr class="odd">
+<td>5년 국채 선물</td>
+<td>선물</td>
+<td>호주 국채 바스켓 (5년 만기)</td>
+</tr>
+<tr class="even">
+<td>10년 국채 선물</td>
+<td>선물</td>
+<td>호주 국채 바스켓 (10년 만기)</td>
+</tr>
+<tr class="odd">
+<td>10년 국채 옵션 (Term &amp; One Session)</td>
+<td>옵션</td>
+<td>10년 국채 선물</td>
+</tr>
+<tr class="even">
+<td>20년 국채 선물</td>
+<td>선물</td>
+<td>호주 국채 바스켓 (20년 만기)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>주식 파생상품:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 24%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>유형</th>
+<th>플랫폼</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ASX SPI 200 Futures</td>
+<td>선물</td>
+<td>ASX 24</td>
+</tr>
+<tr class="even">
+<td>Mini SPI 200 Futures</td>
+<td>선물</td>
+<td>ASX 24</td>
+</tr>
+<tr class="odd">
+<td>SPI 200 Options</td>
+<td>옵션</td>
+<td>ASX 24</td>
+</tr>
+<tr class="even">
+<td>Exchange Traded Options (ETO)</td>
+<td>약 70개 기초자산 주식 옵션</td>
+<td>ASX Trade</td>
+</tr>
+<tr class="odd">
+<td>ASX 200 Index Options</td>
+<td>지수 옵션</td>
+<td>ASX Trade</td>
+</tr>
+</tbody>
+</table>
+<p><strong>상품 — 곡물 (ASX 24):</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>유형</th>
+<th>결제 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Eastern Australia Wheat Futures</td>
+<td>선물</td>
+<td>실물 인수도</td>
+</tr>
+<tr class="even">
+<td>Eastern Australia Wheat Options</td>
+<td>옵션</td>
+<td>행사 시 선물로 전환</td>
+</tr>
+<tr class="odd">
+<td>Eastern Australia Feed Barley Futures</td>
+<td>선물</td>
+<td>실물 인수도</td>
+</tr>
+<tr class="even">
+<td>WA Wheat Futures</td>
+<td>선물</td>
+<td>실물 인수도</td>
+</tr>
+</tbody>
+</table>
+<p><strong>에너지 (ASX 24):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 22%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>유형</th>
+<th>결제 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AU Base Load Electricity Futures (NSW, VIC, QLD, SA)</td>
+<td>선물</td>
+<td>현금결제 (CFD)</td>
+</tr>
+<tr class="even">
+<td>AU Morning/Evening Peak Electricity Futures</td>
+<td>선물</td>
+<td>현금결제</td>
+</tr>
+<tr class="odd">
+<td>NZ Electricity Futures (Otahuhu, Benmore)</td>
+<td>선물</td>
+<td>현금결제 (CFD)</td>
+</tr>
+<tr class="even">
+<td>NZ Electricity Options</td>
+<td>옵션</td>
+<td>행사 시 선물로 전환</td>
+</tr>
+</tbody>
+</table>
+<p><strong>환경 (ASX 24):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 22%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>유형</th>
+<th>결제 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Australian Carbon Credit Unit (ACCU) Futures</td>
+<td>선물</td>
+<td>실물 인수도 (레지스트리 이전)</td>
+</tr>
+<tr class="even">
+<td>NZ Emissions Unit (NZU) Futures</td>
+<td>선물</td>
+<td>실물 인수도 (레지스트리 이전)</td>
+</tr>
+<tr class="odd">
+<td>Large-scale Generation Certificate (LGC) Futures</td>
+<td>선물</td>
+<td>실물 인수도 (레지스트리 이전)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>OTC 청산 상품 (ASX Clear (Futures)):</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>유형</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AUD 금리 스왑</td>
+<td>OTC (청산)</td>
+</tr>
+<tr class="even">
+<td>NZD 금리 스왑</td>
+<td>OTC (청산)</td>
+</tr>
+<tr class="odd">
+<td>Overnight Index Swaps (OIS)</td>
+<td>OTC (청산)</td>
+</tr>
+<tr class="even">
+<td>Forward Rate Agreements (FRA)</td>
+<td>OTC (청산)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: ASX website, “Trade our derivatives market” — all sub-pages; ASX 24 Contract Specifications; ASX Energy website; ASX Environmental Futures fact sheet]</p>
+</section>
+<section id="d.2-주요-계약-명세-key-contract-specifications-거래량-상위-5개" class="level3">
+<h3 class="anchored" data-anchor-id="d.2-주요-계약-명세-key-contract-specifications-거래량-상위-5개">D.2 주요 계약 명세 (Key Contract Specifications, 거래량 상위 5개)</h3>
+<section id="년-국채-선물-yt" class="level4">
+<h4 class="anchored" data-anchor-id="년-국채-선물-yt">1. 3년 국채 선물 (YT)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>명세</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>계약 단위</td>
+<td>호주 국채 액면가 A$100,000</td>
+</tr>
+<tr class="even">
+<td>가격 표시</td>
+<td>100 - 연간 수익률(%)</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (최소가격변동폭)</td>
+<td>0.005% (0.5bp) — 2025년 7월 시행</td>
+</tr>
+<tr class="even">
+<td>틱 가치</td>
+<td>약 A$14.19 (수익률 수준에 따라 변동)</td>
+</tr>
+<tr class="odd">
+<td>계약월</td>
+<td>3월, 6월, 9월, 12월 (최근 2개 분기)</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>실물 국채 바스켓의 평균가격에 대한 현금결제</td>
+</tr>
+<tr class="odd">
+<td>최종 거래일</td>
+<td>계약월 15일 (또는 다음 영업일)</td>
+</tr>
+<tr class="even">
+<td>거래 시간</td>
+<td>야간: 5:10 PM – 7:00 AM +1; 주간: 8:30 AM – 4:30 PM AEST</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="년-국채-선물-xt" class="level4">
+<h4 class="anchored" data-anchor-id="년-국채-선물-xt">2. 10년 국채 선물 (XT)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>명세</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>계약 단위</td>
+<td>호주 국채 액면가 A$100,000</td>
+</tr>
+<tr class="even">
+<td>가격 표시</td>
+<td>100 - 연간 수익률(%)</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (최소가격변동폭)</td>
+<td>0.005% (0.5bp); 만기 기간 중 0.002% (만기월 8일 5:12 PM~최종 거래일 4:30 PM)</td>
+</tr>
+<tr class="even">
+<td>틱 가치</td>
+<td>약 A$30.90 (수익률 수준에 따라 변동)</td>
+</tr>
+<tr class="odd">
+<td>계약월</td>
+<td>3월, 6월, 9월, 12월 (최근 2개 분기)</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>실물 국채 바스켓의 평균가격에 대한 현금결제</td>
+</tr>
+<tr class="odd">
+<td>최종 거래일</td>
+<td>계약월 15일 (또는 다음 영업일)</td>
+</tr>
+<tr class="even">
+<td>거래 시간</td>
+<td>야간: 5:10 PM – 7:00 AM +1; 주간: 8:30 AM – 4:30 PM AEST</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-bank-accepted-bill-futures-ir" class="level4">
+<h4 class="anchored" data-anchor-id="day-bank-accepted-bill-futures-ir">3. 90-Day Bank Accepted Bill Futures (IR)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>명세</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>계약 단위</td>
+<td>액면가 A$1,000,000</td>
+</tr>
+<tr class="even">
+<td>가격 표시</td>
+<td>100 - 연간 수익률(%)</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (최소가격변동폭)</td>
+<td>0.01% (1bp)</td>
+</tr>
+<tr class="even">
+<td>틱 가치</td>
+<td>약 A$24.66</td>
+</tr>
+<tr class="odd">
+<td>계약월</td>
+<td>3월, 6월, 9월, 12월 (최대 5년 선행) [unverified]</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>현금결제</td>
+</tr>
+<tr class="odd">
+<td>최종 거래일</td>
+<td>계약월 둘째 금요일 [unverified]</td>
+</tr>
+<tr class="even">
+<td>거래 시간</td>
+<td>야간: 5:10 PM – 7:00 AM +1; 주간: 8:30 AM – 4:30 PM AEST</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="asx-spi-200-futures-ap" class="level4">
+<h4 class="anchored" data-anchor-id="asx-spi-200-futures-ap">4. ASX SPI 200 Futures (AP)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>명세</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>계약 단위</td>
+<td>A$25 x S&amp;P/ASX 200 Index</td>
+</tr>
+<tr class="even">
+<td>가격 표시</td>
+<td>지수포인트</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (최소가격변동폭)</td>
+<td>1 지수포인트</td>
+</tr>
+<tr class="even">
+<td>틱 가치</td>
+<td>A$25.00</td>
+</tr>
+<tr class="odd">
+<td>계약월</td>
+<td>3월, 6월, 9월, 12월</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>최종 거래일 S&amp;P/ASX 200 Index의 Special Opening Quotation에 대한 현금결제</td>
+</tr>
+<tr class="odd">
+<td>최종 거래일</td>
+<td>계약월 셋째 목요일; AEST 12:00 PM에 거래 종료</td>
+</tr>
+<tr class="even">
+<td>거래 시간</td>
+<td>야간: 5:10 PM – 7:00 AM +1 (미국 비DST 기간 8:00 AM까지); 주간: 9:50 AM – 4:30 PM AEST</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-interbank-cash-rate-futures-ib" class="level4">
+<h4 class="anchored" data-anchor-id="day-interbank-cash-rate-futures-ib">5. 30-Day Interbank Cash Rate Futures (IB)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>명세</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>계약 단위</td>
+<td>액면가 A$3,000,000 [unverified]</td>
+</tr>
+<tr class="even">
+<td>가격 표시</td>
+<td>100 - 연간 RBA 기준금리(%)</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (최소가격변동폭)</td>
+<td>0.005% (0.5bp)</td>
+</tr>
+<tr class="even">
+<td>틱 가치</td>
+<td>약 A$12.33</td>
+</tr>
+<tr class="odd">
+<td>계약월</td>
+<td>월물 (최대 18개월 선행) [unverified]</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>RBA가 발표한 은행간 익일물 기준금리의 월평균에 대한 현금결제</td>
+</tr>
+<tr class="odd">
+<td>최종 거래일</td>
+<td>계약월 마지막 영업일</td>
+</tr>
+<tr class="even">
+<td>거래 시간</td>
+<td>야간: 5:10 PM – 7:00 AM +1; 주간: 8:30 AM – 4:30 PM AEST</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: ASX 24 Contract Specifications; ASX 3 and 10 Year Treasury Bond Futures factsheet; SPI Futures website, “Contract Specifications”; ASX 30-Day Interbank Cash Rate Futures factsheet; ASX 3 Year Bond Futures tick change notice (May 2025)]</p>
+</section>
+</section>
+<section id="d.3-증거금-체계-margin-framework" class="level3">
+<h3 class="anchored" data-anchor-id="d.3-증거금-체계-margin-framework">D.3 증거금 체계 (Margin Framework)</h3>
+<p><strong>청산기관:</strong> - <strong>ASX Clear:</strong> 주식 옵션(ETO) 및 주식관련 파생상품 청산 - <strong>ASX Clear (Futures):</strong> 모든 ASX 24 장내 선물 및 옵션, 그리고 OTC 금리 파생상품 청산</p>
+<p><strong>개시증거금 방법론 — ASX Clear (Futures): CME SPAN</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>방법론</td>
+<td>CME SPAN (Standard Portfolio Analysis of Risk)</td>
+</tr>
+<tr class="even">
+<td>접근방식</td>
+<td>결합 상품(상품별로 그룹화된 파생상품 포트폴리오)의 최대 잠재 손실을 산출하는 리스크 기반 포트폴리오 접근</td>
+</tr>
+<tr class="odd">
+<td>보정</td>
+<td>개시증거금률은 (a) 60일 과거 분포 또는 (b) 252일 과거 분포의 가격 변동에 대해 3 표준편차 중 높은 값을 커버하도록 설정; 1일 또는 2일 변동 중 높은 값 사용</td>
+</tr>
+<tr class="even">
+<td>구성요소</td>
+<td>Scanning Risk, Intracommodity Spread Charge, Intercommodity Spread Concession (차감), Short Option Minimum Charge, Delivery Risk</td>
+</tr>
+<tr class="odd">
+<td>증거금 산식</td>
+<td>총 개시증거금 = max(Delivery Risk + Intracommodity Spread Charge + Short Option Minimum Charge, Scanning Risk - Intercommodity Concession)</td>
+</tr>
+<tr class="even">
+<td>리스크 배열</td>
+<td>다양한 시장 조건에서 손익을 산출하는 복수의 리스크 배열(수치 집합)</td>
+</tr>
+<tr class="odd">
+<td>포트폴리오 인식</td>
+<td>상품내(월간) 및 상품간 스프레드 관계 인식</td>
+</tr>
+<tr class="even">
+<td>증거금 산출 빈도</td>
+<td>일일 마감; 유의미한 가격 변동 시 임시 장중 산출 추가</td>
+</tr>
+</tbody>
+</table>
+<p><strong>개시증거금 방법론 — ASX Clear (주식 옵션): CME SPAN</strong></p>
+<ul>
+<li>ASX Clear도 주식 옵션 포트폴리오에 SPAN 기반 증거금 산출을 사용</li>
+<li>증거금 변수는 호주 주식시장 변동성 특성에 맞게 보정</li>
+</ul>
+<p><strong>변동증거금:</strong> - 정산가격 기준으로 매일 mark-to-market - 일일 마감 시 변동증거금 콜 발행; 스트레스 상황에서는 장중 콜 - 모든 증거금 흐름은 ASX Clear (Futures) 참가자 계좌를 통해 처리</p>
+<p><strong>장중 증거금 발동:</strong> - 개별 계약 가격 변동이 증거금률의 100%를 초과하면 발동 - ASX SPI 200 지수가 장중 1% 이상 변동하면 발동 - ASX Clear (Futures)는 재량으로 장중 마진콜을 발행할 수 있다</p>
+<p><strong>적격 담보:</strong> - 현금 (AUD) - 호주 국채 - 은행 보증 - 기타 인가 담보 (헤어컷 적용) [unverified]</p>
+<p>[Source: ASX Clear (Futures) SPAN Margining Examples; ASX website, “Margining”; RBA Assessment of ASX Clear (Futures), Standard 6: Margin (2017-2018); ASX website, “Understanding Margins — ASX Clear”; ASX Energy, “Initial Margins”]</p>
+</section>
+<section id="d.4-포지션한도-position-limits" class="level3">
+<h3 class="anchored" data-anchor-id="d.4-포지션한도-position-limits">D.4 포지션한도 (Position Limits)</h3>
+<p><strong>ASX 24 Operating Rules 체계:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>만기 집중 한도</td>
+<td>거래 방식과 무관하게 모든 시장 참가자(수익적 소유권 “그룹” 수준)에 적용되는 경성 한도</td>
+</tr>
+<tr class="even">
+<td>재량권</td>
+<td>시장운영자가 예외적 사안별로 한도를 변경할 수 있으나 드물게 행사</td>
+</tr>
+<tr class="odd">
+<td>시장 개입</td>
+<td>바람직하지 않은 시장 상황의 발생 시 또는 방지를 위해, 시장운영자가 참가자에게 일정 수 이상의 포지션 보유 금지 등 특정 방식으로 거래하도록 지시 가능</td>
+</tr>
+<tr class="even">
+<td>행사 한도</td>
+<td>Rule 3410에 따라 별도의 행사 한도 미설정; 행사 한도는 Clearing Rules에 별도 규정</td>
+</tr>
+<tr class="odd">
+<td>포지션 보고</td>
+<td>대규모 포지션에 대한 보고 의무; ASX 24 Operating Rules에 포지션 보고 요건(DBOR — Daily Beneficial Ownership Reporting) 포함</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ETO (주식 옵션) 포지션한도:</strong> - ASIC Market Integrity Rules이 주식 옵션에 대한 포지션한도 (건옥제한) 설정 - 한도는 기초증권의 유동성 및 시가총액에 따라 상이 - ASIC/ASX에 대한 신청을 통해 헤지 면제 가능</p>
+<p>[Source: ASX 24 Operating Rules Section 3 (June 2025); ASX 24 Operating Rules Guidance Note 10; ASX 24 Operating Rules Schedules &amp; Appendices (November 2025)]</p>
+</section>
+<section id="d.5-블록거래-특별-교차거래-block-trading-special-crossings" class="level3">
+<h3 class="anchored" data-anchor-id="d.5-블록거래-특별-교차거래-block-trading-special-crossings">D.5 블록거래 / 특별 교차거래 (Block Trading / Special Crossings)</h3>
+<p><strong>ASX 24 — 장외 및 블록거래 (대량매매):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기능</td>
+<td>ASX 24에서 블록거래 (대량매매) 보고 가능한 장외 거래</td>
+</tr>
+<tr class="even">
+<td>보고</td>
+<td>블록거래 (대량매매)는 지정 기준 충족 시 시장에 직접 보고 가능</td>
+</tr>
+<tr class="odd">
+<td>적격 상품</td>
+<td>금리 선물, SPI 200 선물, 곡물 선물, 에너지 선물</td>
+</tr>
+<tr class="even">
+<td>협상</td>
+<td>당사자가 가격 및 수량을 양자간 협상; 이후 ASX를 통해 청산을 위한 거래 보고</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ASX Trade — ETO 교차거래 및 Special Size (블록) 거래:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Special Size 임계치</td>
+<td>두 가지 자격 방법: (1) 프리미엄 가치 — ASIC MIR 임계치 충족 ($1,000,000, $500,000, 또는 $200,000, 상품 유형에 따라); 또는 (2) 계약 수 — 최소 시장조성자 (마켓메이커) 호가 수량의 15배, 최소 $50,000 프리미엄 충족</td>
+</tr>
+<tr class="even">
+<td>보고</td>
+<td>Special Size 교차거래는 사전 노출 없이 시장에 직접 보고 가능</td>
+</tr>
+<tr class="odd">
+<td>Non-Special Size 교차거래</td>
+<td>보고 전 시장에 제시(노출)되어야 함</td>
+</tr>
+<tr class="even">
+<td>SPI 옵션 블록 최소</td>
+<td>개별 시리즈당 200계약</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: ASX website, “ETO crossings and Special Size (Block) Transactions on ASX Trade”; ASX website, “Off-market with block trade”; ASX Operating Rules Section 22 — Crossings; ASXOnline Notice 1185.18.10 (SPI Options Block Trades); ASXOnline Notice 1344.25.10 (October 2025 consultation)]</p>
+<hr>
+</section>
+</section>
+<section id="출처-sources" class="level2">
+<h2 class="anchored" data-anchor-id="출처-sources">출처 (Sources)</h2>
+<ul>
+<li><a href="https://www.asx.com.au/markets/trade-our-derivatives-market">ASX — Trade our derivatives market</a></li>
+<li><a href="https://www.asx.com.au/markets/trade-our-derivatives-market/overview/interest-rate-derivatives">ASX — Interest rate derivatives</a></li>
+<li><a href="https://www.asx.com.au/markets/trade-our-derivatives-market/overview/equity-derivatives">ASX — Equity derivatives</a></li>
+<li><a href="https://www.asx.com.au/markets/trade-our-derivatives-market/overview/grain-derivatives">ASX — Grain derivatives</a></li>
+<li><a href="https://www.asx.com.au/markets/trade-our-derivatives-market/environmental-futures">ASX — Environmental futures</a></li>
+<li><a href="https://www.asxenergy.com.au">ASX Energy</a></li>
+<li><a href="https://www.asx.com.au/markets/market-resources/trading-hours-calendar">ASX — Trading hours and calendars</a></li>
+<li><a href="https://www.asx.com.au/alc">ASX — Australian Liquidity Centre</a></li>
+<li><a href="https://www.asx.com.au/connectivity-and-data/connectivity-services">ASX — Connectivity services</a></li>
+<li><a href="https://www.asx.com.au/connectivity-and-data/information-services/real-time-data">ASX — Market data</a></li>
+<li><a href="https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear-futures">ASX — ASX Clear (Futures)</a></li>
+<li><a href="https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear/risk-management/margining">ASX — Margining</a></li>
+<li><a href="https://www.asx.com.au/markets/clearing-and-settlement-services/chess-project">ASX — CHESS Project</a></li>
+<li><a href="https://www.asx.com.au/markets/market-resources/asx-schedule-of-fees">ASX — Schedule of Fees</a></li>
+<li><a href="https://www.asx.com.au/content/dam/asx/annual-reports/asx-2025-annual-report.pdf">ASX Annual Report FY2025</a></li>
+<li><a href="https://www.asx.com.au/content/dam/asx/markets/trade-our-derivatives-market/derivatives-market-overview/interest-rate-derivatives/rates-highlights/q4-2025/asx-rates-highlights-q4-2025.pdf">ASX Rates Highlights Q4 2025</a></li>
+<li><a href="https://www.asx.com.au/content/dam/asx/participants/derivatives-market/ird/asx24-contract-specifications.pdf">ASX 24 Contract Specifications</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Australian_Securities_Exchange">Wikipedia — Australian Securities Exchange</a></li>
+<li><a href="https://www.lseg.com/en/media-centre/press-releases/2026/lseg-and-asx-partner-modernise-derivatives-market-trading-platform">LSEG — LSEG and ASX partner to modernise derivatives market trading platform (March 2026)</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

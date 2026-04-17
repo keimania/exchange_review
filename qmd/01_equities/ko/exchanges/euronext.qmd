@@ -1,0 +1,460 @@
+---
+title: "Euronext N.V. (Euronext)"
+subtitle: "주식시장 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 업데이트:** 2026-04-06
+> **조사 등급:** Tier 2
+> **분야:** 주식
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 내용 |
+|------|------|
+| 정식 명칭 | Euronext N.V. (European New Exchange Technology) |
+| 약칭 | ENX |
+| 웹사이트 | https://www.euronext.com |
+| 설립 연도 | 2000년 (Amsterdam, Brussels, Paris 거래소 합병으로 2000년 9월 22일 설립) |
+| 국가 / 도시 | 네덜란드 등록 (Amsterdam); 운영 본부 프랑스 Paris. Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, Paris에서 거래소 운영; 2025년 Athens 추가 |
+| 소유 구조 | Euronext Paris에 상장 (티커: ENX); 주요 참조주주로 Caisse des Depots et Consignations (CDC), Euroclear 및 기타 기관투자자 포함 |
+| 모회사 / 그룹 | Euronext N.V. (독립, 자기상장) |
+| 감독 기관 | 다국적: AMF (프랑스), AFM (네덜란드), FSMA (벨기에), CMVM (포르투갈), CBI (아일랜드), Finanstilsynet (노르웨이), CONSOB (이탈리아), HCMC (그리스) -- Euronext 규제기관 협의체(College of Euronext Regulators)를 통해 조율 |
+| 시가총액 (상장기업 기준) | 전체 Euronext 시장 합산 약 EUR 6.8조 (2025년 말 기준) |
+| 상장 종목 수 | 전체 시장 주식 약 1,900개 이상 발행사; ETF, 채권, 워런트, 구조화상품 포함 |
+| 일평균 거래량 | 현물주식 일평균 약 EUR 110억~138억 (2025년 분기별 범위; 2024년 연간 평균 약 EUR 105억) |
+| 일평균 거래대금 | 약 EUR 120억 ADV (2025년 4분기), 전년 동기 대비 +14.0% |
+
+### 주요 연혁 (Key Historical Milestones)
+- 1602: Amsterdam Stock Exchange (Amsterdamse Beurs) 설립 -- 세계 최초의 공식 증권거래소로 널리 인정됨
+- 1724: Paris Bourse 왕실 칙령에 의해 공식 조직
+- 1801: Brussels Stock Exchange 설립
+- 1891: Lisbon Stock Exchange (Bolsa de Valores de Lisboa) 설립
+- 2000: Amsterdam Exchanges, Brussels Exchanges, Paris Bourse SBF 합병으로 **Euronext N.V. 설립**
+- 2002: Euronext가 LIFFE (London International Financial Futures and Options Exchange) 인수 및 Bolsa de Valores de Lisboa e Porto (BVLP)와 합병하여 Lisbon 추가
+- 2007: Euronext와 NYSE Group 합병으로 **NYSE Euronext** 설립, 최초의 대서양 횡단 거래소 그룹 탄생
+- 2013: IntercontinentalExchange (ICE)가 NYSE Euronext를 약 USD 110억에 인수
+- 2014: **Euronext 재상장(re-IPO)** -- 독립 기업으로 Euronext Amsterdam 및 Paris에 상장 (2014년 6월); ICE는 NYSE 보유
+- 2018: Euronext가 **Irish Stock Exchange** 인수 (Euronext Dublin으로 명칭 변경); Optiq 매매체결시스템(거래 플랫폼)이 현물시장에서 가동 개시
+- 2019: Euronext가 **Oslo Bors VPS** (Oslo Stock Exchange 및 중앙예탁결제기관) 인수 완료
+- 2020: Nord Pool (유럽 전력거래소) 및 VP Securities (덴마크 CSD) 인수
+- 2021: Euronext가 LSEG로부터 **Borsa Italiana Group** (MTS 및 CC&G 포함, 현 Euronext Clearing) 인수 완료 -- EUR 44.44억에 달하는 변혁적 거래로 이탈리아가 최대 수익 기여국이 됨
+- 2022: 핵심 데이터센터를 Basildon (영국)에서 **Bergamo, 이탈리아** (Aruba IT3)로 이전; 2022년 6월 6일 완료
+- 2023: Borsa Italiana 현물시장 Optiq 플랫폼 이전 (Phase 1 및 Phase 2)
+- 2024: Borsa Italiana 파생상품 Optiq 이전 (Phase 3, 최종); Euronext Clearing이 모든 Euronext 금융파생상품 시장으로 확대, LCH SA와의 분리 완료
+- 2025: **ATHEX Group** (Athens Stock Exchange, 연말 기준 약 75.6% 지분) 인수; Admincontrol (북유럽 SaaS) 인수; 유럽 국채 Mini Bond Futures 출시; Nasdaq Nordic 전력선물 인수 발표; 연간 조정 EBITDA EUR 11.431억 (+13.6%)
+- 2026: 전력선물 출시 (2026년 3월); 유럽 CSD 표준화 및 Repo 시장 확대 진행 중
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 (Market Segments)
+| 구분 | 설명 | 상장 요건 (요약) |
+|------|------|-----------------|
+| **Euronext 정규시장 -- Compartment A** | 대형주 (시가총액 EUR 10억 초과); EU 정규시장 요건을 완전히 적용받는 주력 시장 | 최소 3년 감사 재무이력, 최소 25% 유동비율(free float), EU 투자설명서 규정 준수 투자설명서, 스폰서/상장대리인 필요 |
+| **Euronext 정규시장 -- Compartment B** | 중형주 (시가총액 EUR 1.5억~10억) | Compartment A와 동일; 시가총액 기준 자동 분류 |
+| **Euronext 정규시장 -- Compartment C** | 소형주 (시가총액 EUR 1.5억 미만) | Compartment A와 동일 |
+| **Euronext Growth** | MiFID II에 따른 SME 성장시장(MTF)으로 간소화된 상장을 원하는 중소기업 대상 | 최소 시가총액 없음, 2년 재무제표 (일부 관할권에서 1년), 유동비율 협의 가능, Listing Sponsor 필요, 경량화된 공시 의무 |
+| **Euronext Access** | 스타트업 및 SME를 위한 진입단계 MTF; EU 지침상 정규시장이 아님 | 간소화된 입회 기준, 최소 재무이력 없음, Listing Sponsor 필요 |
+| **Euronext Access+** | Euronext Access 내 특별 구분으로 고성장 SME 대상; Euronext Growth로의 도약대 역할 | 표준 Access 대비 추가 지배구조 및 보고 의무 |
+| **Professional Segment** | 적격/기관투자자 전용 정규시장 구분 | 특정 자격 기준; 전문 채무증권 및 구조화상품에 활용 |
+
+### 2.2 매매 시간 (Trading Sessions)
+| 구분 | 현지 시간 (CET/CEST) | UTC (겨울) | 설명 |
+|------|----------------------|------------|------|
+| 프리오프닝 (주문 접수) | 07:15 - 09:00 | 06:15 - 08:00 | 주문 입력, 정정, 취소 가능; 예시호가 산출되나 체결 없음 |
+| 시가단일가매매 (개장 경매) (호가 수집 + 체결) | 09:00 (+랜덤 종료) | 08:00 (+랜덤 종료) | 누적 주문이 단일 균형가격으로 체결; 조작 방지를 위해 최대 30초의 랜덤 종료 구간 |
+| 접속매매 (연속매매) | ~09:00 - 17:30 | ~08:00 - 16:30 | 가격-시간 우선원칙(가격·시간 우선)에 따른 주문주도형 연속 체결 |
+| 프리클로징 (주문 접수) | 17:30 - 17:35 | 16:30 - 16:35 | 종가단일가매매(장마감 경매)를 위한 주문 축적; 체결 없음 |
+| 종가단일가매매 (장마감 경매) (체결) | 17:35 (+랜덤 종료) | 16:35 (+랜덤 종료) | 공식 종가 결정; 랜덤 종료 구간 |
+| 종가매매 (Trading at Last, TAL) | ~17:35 - 17:40 | ~16:35 - 16:40 | 확정된 종가에서만 주문 체결; 추가 장마감 유동성 제공 |
+
+참고: 위 시간은 Amsterdam, Brussels, Paris, Lisbon의 통합 시간표 기준이다. Oslo는 CET 기준 09:00-16:20에 접속매매를 운영하며 종가단일가매매는 16:20-16:25이다. Milan (Borsa Italiana)은 CET 09:00-17:30에 별도 경매 시간을 운영한다. Dublin은 통합 시간표를 따른다. CET = UTC+1 (겨울), CEST = UTC+2 (여름).
+
+### 2.3 호가단위 (Tick Sizes)
+
+Euronext는 **MiFID II 호가단위 체계(최소가격변동폭 체계)**(RTS 11, 위임규정 EU 2017/588)를 따른다. 호가단위(최소가격변동폭)는 가격 수준과 해당 종목의 일평균 거래건수(ADNT) 유동성 구간에 따라 결정된다.
+
+| 가격 범위 (EUR) | 유동성 구간 1 (ADNT < 10) | 유동성 구간 3 (ADNT 80-600) | 유동성 구간 6 (ADNT >= 9000) |
+|----------------|--------------------------|---------------------------|----------------------------|
+| 0 - 0.4999 | 0.005 | 0.002 | 0.0005 |
+| 0.5 - 0.9999 | 0.01 | 0.005 | 0.001 |
+| 1 - 1.9999 | 0.02 | 0.01 | 0.002 |
+| 2 - 4.9999 | 0.05 | 0.02 | 0.005 |
+| 5 - 9.9999 | 0.1 | 0.05 | 0.01 |
+| 10 - 19.9999 | 0.2 | 0.1 | 0.02 |
+| 20 - 49.9999 | 0.5 | 0.2 | 0.05 |
+| 50 - 99.9999 | 1.0 | 0.5 | 0.1 |
+
+[출처: Euronext가 적용하는 ESMA RTS 11; 대표값 표시 -- 전체 표는 6개 유동성 구간과 13개 가격 범위로 구성]
+
+**KRX 비교:** KRX는 자체 호가단위 체계를 사용하며, 가격 구간별로 고정된 호가단위를 적용한다. Euronext의 MiFID II 기반 체계는 유동성 구간까지 고려하는 점에서 보다 세분화되어 있다.
+
+### 2.4 매매단위 (Lot Sizes)
+- 표준 매매단위(거래단위): 대부분 주식에 대해 **1주**
+- 호가창 매매를 위한 최소 매매단위 없음
+- 대량매매 기준은 MiFID II 대량주문(Large-in-Scale, LIS) 면제에 의해 종목 유동성에 따라 정의
+- 단주(odd lot) 거래는 중앙호가창에서 지원
+
+### 2.5 시장조성자 (Market Maker) / 유동성공급자 프로그램
+- **유동성공급자(LP) 프로그램**: Euronext가 특정 종목(특히 중소형주, ETF)에 대해 유동성공급자(마켓메이커)를 지정하며, 이들은 최대 스프레드 및 최소 호가 규모 의무를 준수하면서 양방향 호가를 지속 제시해야 한다; 그 대가로 매매 수수료를 감면받음
+- **시장조성자 프로그램**: ETF, 구조화상품, 워런트, 파생상품 대상 전용 프로그램으로, 호가제시 성과에 따른 단계별 수수료 리베이트 제공
+- **보충유동성공급자(SLP)**: 우량주 및 지수구성종목을 대상으로 좁은 스프레드와 깊은 유동성을 확보하기 위한 추가 제도
+- **Euronext Block**: 기관투자자의 대량 블록주문을 위한 중간가격(midpoint) 체결 시설로, 정보 유출 없이 중간가격에서 거래 가능
+
+---
+
+## 3. 매매 체결 방식 (Trading Mechanism)
+
+### 3.1 단일가매매 (경매) 방식 (Auction Mechanisms)
+- **시가단일가매매 (개장 경매)**: CET 07:15부터 프리오프닝 단계에서 주문을 축적한다. 09:00에 체결 알고리즘이 실행 가능 거래량을 최대화하는 시초가를 결정한다. 최종 순간 조작을 방지하기 위해 최대 30초의 랜덤 종료 구간이 적용된다. 미체결 주문은 접속매매(연속매매)로 이월됨
+- **종가단일가매매 (장마감 경매)**: 17:30에 접속매매가 중단되고 프리클로징 주문 축적 단계가 시작된다 (통상 5분). 종가단일가매매 체결은 지수 산출사 및 펀드 NAV 계산에 사용되는 공식 종가를 결정한다. 랜덤 종료 구간 적용
+- **장중 변동성완화장치 (VI) 발동 시 단일가매매 (변동성 경매)**: 잠재 체결가가 동적 또는 정적 가격제한(collar)을 위반할 경우 자동 발동된다. 해당 종목은 "거래보류(reservation)" 상태에 진입하며 (통상 5분) 주문이 축적된 후, 새로운 균형가격에서 체결하여 거래를 재개한다
+- **경매 가격 발견 알고리즘**: 실행 가능 거래량 최대화; 동일 거래량이 여러 가격에서 산출될 경우 잔여(미체결) 물량 최소화; 여전히 동률인 경우 최종 참조가격에 가장 가까운 가격 선택
+
+### 3.2 접속매매 (연속매매) (Continuous Trading)
+- 가격-시간 우선원칙(가격·시간 우선)에 의한 **주문주도형 시장** (제1 우선: 최우선 가격; 제2 우선: 동일 가격에서 가장 빠른 시간)
+- 유동성 높은 주식에 대한 순수 중앙지정가호가창(CLOB) 모델
+- 시장조성자(마켓메이커)가 보충 유동성을 제공하나 의무적 딜러로 기능하지는 않음
+- **Euronext Block**: 기관투자자의 블록 규모 주문을 위한 비공개(dark) 중간가격 체결 서비스로 MTF로 운영
+- 모든 Euronext 현물시장이 Optiq 플랫폼을 통해 단일 통합 매매체결엔진(매칭엔진)을 공유
+
+### 3.3 가격 발견 (Price Discovery)
+- 시가단일가매매, 종가단일가매매 및 접속매매 중 호가창 상호작용을 통한 1차 가격 발견
+- 체결 알고리즘은 단일 균형가격에서 거래량 최대화를 목적으로 설계
+- 서킷브레이커(매매거래중단) 가격제한의 참조가격은 경매 가격에서 도출되며, 접속매매 중 동적으로 갱신 (최종 체결가가 새로운 동적 참조가격이 됨)
+- 종가단일가매매를 통해 확정된 종가가 결제, 지수 산출, 파생상품 평가의 공식 참조가격
+- **종가매매(TAL)** 세션에서 추가 물량이 종가에 체결되어 장마감 유동성을 집중시킴
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 기본 주문 유형 (Standard Order Types)
+| 주문 유형 | 설명 |
+|----------|------|
+| 지정가주문 (Limit Order) | 지정가 또는 그보다 유리한 가격으로 매수/매도하는 주문; 즉시 체결되지 않으면 호가창에 잔류 |
+| 시장가주문 (Market Order) | 최우선 가격에서 전량 체결 시까지 실행; 미체결 잔량은 최종 체결가의 지정가주문으로 전환 (Euronext 고유 방식) |
+| 시장가-지정가전환주문 (Market-to-Limit Order) | 최우선 가격에서 실행; 미체결 수량은 최초 체결가격의 지정가주문으로 전환 |
+| 역지정가주문 (Stop Loss Order) | 시장가격이 지정된 정지가격(stop price)에 도달하면 발동; 활성화 시 시장가주문이 됨 |
+| 역지정가조건부주문 (Stop Limit Order) | 시장가격이 지정된 정지가격에 도달하면 발동; 활성화 시 지정된 가격의 지정가주문이 됨 |
+
+### 4.2 고급 주문 유형 (Advanced Order Types)
+| 주문 유형 | 설명 |
+|----------|------|
+| 빙산주문 (Iceberg Order) | 총 주문량의 일부(표시수량)만 공개; 표시 부분이 체결되면 숨겨진 잔량에서 자동으로 새 표시수량이 갱신; 갱신 시마다 새로운 시간 우선순위 부여 |
+| 추적주문 (Pegged Order) | 참조가격(최우선 매수호가, 최우선 매도호가, 또는 중간가격)을 자동 추적; BBO 변동에 따라 실시간 조정 |
+| 중간가격추적주문 (Pegged-to-Midpoint Order) | 최우선 매수·매도호가의 중간가격에 연동; Euronext Block에서 비공개 매매에 주로 사용 |
+| 중간가격주문 (Mid-Point Order, Euronext Block) | 주시장 BBO의 중간가격에서 체결; 시장 충격을 줄이기 위해 설계된 대형 기관 블록매매용 |
+| 추적역지정가주문 (Trailing Stop Order) | 정지가격이 유리한 시장 움직임에 따라 정해진 간격으로 조정; 불리한 움직임에 발동 [미검증] |
+
+### 4.3 주문 유효기간 (Time-in-Force Options)
+| TIF | 설명 |
+|-----|------|
+| 당일 (DAY) | 당일 매매시간에만 유효; 장 종료 시 취소 |
+| 취소시까지 (GTC) | 체결 또는 취소 시까지 유효 (거래소가 설정한 최대 기간, 통상 365일 적용) |
+| 지정일까지 (GTD) | 지정된 만기일까지 유효 |
+| 즉시체결잔량취소 (IOC) | 가능한 만큼 즉시 체결; 미체결 잔량 취소 |
+| 전량체결아니면취소 (FOK) | 즉시 전량 체결되어야 하며, 그렇지 않으면 전체 주문 취소 |
+| 종가단일가매매 전용 (Valid for Closing Auction) | 종가단일가매매에서만 참여 |
+| 시가단일가매매 전용 (Valid for Opening Auction) | 시가단일가매매에서만 참여 [미검증] |
+
+### 4.4 주문 정정 / 취소 (Order Modification / Cancellation)
+- FIX 5.0 또는 네이티브 SBE 프로토콜을 사용하여 OEG (Order Entry Gateway)를 통해 모든 단계에서 주문 정정(가격, 수량) 또는 취소 가능
+- 가격을 개선(보다 적극적인 가격)하는 정정은 새로운 시간 우선순위 부여 (기존 시간 우선순위 상실)
+- 수량 감소는 시간 우선순위 유지; 수량 증가는 주문 유형에 따라 유지 여부가 다름
+- 경매 호가 수집 기간에는 주문 입력, 정정, 취소가 가능하나 체결은 발생하지 않음
+- 리스크 관리를 위한 대량 취소(mass cancellation) 기능 제공; Kill Switch를 통해 회원사의 모든 미체결 주문을 일괄 취소 가능
+
+---
+
+## 5. 매매 시스템 (기술) (Trading System / Technology)
+
+| 항목 | 내용 |
+|------|------|
+| 시스템명 | **Optiq** |
+| 개발 주체 | Euronext 자체 개발 |
+| 아키텍처 | 모듈형, 저지연 아키텍처; 이벤트 기반의 최신세대 구성요소; 모든 Euronext 시장(현물 및 파생상품)을 아우르는 단일 통합 플랫폼 |
+| 매매체결엔진 (매칭엔진) | 가격-시간 우선원칙에 의한 중앙 매매체결엔진; 다시장·다자산 처리 가능 |
+| 왕복 지연시간 | 평균 약 15마이크로초 (주문 왕복 및 시세정보) |
+| 주문 처리 용량 | 초당 최대 100만 메시지 수신 처리 가능 |
+| 초당 메시지 수 | 고도로 확장 가능한 처리량 설계; 이전 시스템 대비 10배 용량 증가 |
+| 가동 연도 | 2016-2018 (MDG 2017년 7월; 현물시장 2018년 7월 가동; 파생상품 2019년) |
+
+### 시스템 변천사 (System History)
+| 기간 | 시스템 | 비고 |
+|------|--------|------|
+| 2000년 이전 | 각국 자체 시스템 | 각 거래소가 고유 플랫폼 운영 (예: Paris NSC, Amsterdam AEB) |
+| 2000-2007 | NSC (Nouveau Systeme de Cotation) | Paris, Amsterdam, Brussels 간 통합 플랫폼; SBF/Paris Bourse가 최초 개발 |
+| 2007-2014 | UTP (Universal Trading Platform) | NYSE Euronext 시대; NSC의 발전형으로 용량 강화 |
+| 2016-2018 | Optiq (단계적 전환) | MDG 2017년 7월 가동; 채권 2018년 4월; 현물시장 전면 가동 2018년 7월 |
+| 2019 | Optiq 파생상품 | 파생상품 주문 접수 및 체결이 Optiq로 이전 |
+| 2020-2021 | Oslo Bors용 Optiq | Oslo Bors 시장 Optiq 이전 |
+| 2022-2024 | Borsa Italiana용 Optiq | 3단계 이전: 현물 Phase 1 (2023), 현물 Phase 2 (2023), 파생상품 Phase 3 (2024년 4월) |
+
+### 기술 스택 (Technology Stack)
+- **프로그래밍 언어**: 독자적 저지연 C/C++ 스택 [미검증]
+- **영속성 계층**: Confluent Platform과 Apache Kafka를 활용한 스트리밍/영속성 계층; 메시지 무손실로 밀리초 단위 지연시간을 지원하는 안정적·확장 가능 스트리밍 인프라
+- **네트워크 프로토콜**: Order Entry Gateway (OEG)용 TCP/IP; Market Data Gateway (MDG)용 UDP/IP 멀티캐스트
+- **인코딩**: 네이티브 저지연 접속을 위한 SBE (Simple Binary Encoding, 바이너리 인코딩 FIX 표준); 표준 주문 접수를 위한 FIX 5.0
+- **시세정보**: Optiq MDG는 UDP 멀티캐스트를 통한 SBE 사용; 저대역폭 연결을 위한 LZ4 압축 지원
+- **하드웨어**: 이탈리아 Bergamo의 Aruba IT3 데이터센터에서 호스팅되는 범용 서버 인프라
+
+### 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)
+- 주 데이터센터: Aruba Global Cloud Data Centre IT3, Bergamo, 이탈리아 (2022년 6월부터 운영)
+- 실시간 복제를 갖춘 완전 이중화 아키텍처
+- 클라이언트 측 중재를 위한 이중 시세정보 피드
+- 모든 관할권에 걸친 다국적 규제 요건에 부합하는 업무연속성 계획
+- 현지 감독기관(AMF, CONSOB, AFM 등)이 명령하는 정기적 재해복구 테스트
+
+---
+
+## 6. 시세정보 (Market Data)
+
+### 6.1 데이터 피드 프로토콜 (Data Feed Protocols)
+| 프로토콜 | 설명 | 용도 |
+|----------|------|------|
+| Optiq MDG (Market Data Gateway) | UDP 멀티캐스트를 통한 SBE 인코딩의 네이티브 바이너리 시세정보 피드; 전체 호가 깊이 및 체결 데이터 제공 | 알고리즘 및 HFT 업체를 위한 초저지연 실시간 시세정보 |
+| Optiq MDG Lite | MDG의 경량 버전으로 데이터 범위 축소 | 간소화된 실시간 데이터를 필요로 하는 업체 |
+| Optiq MDG Cloud | 클라우드 전달 시세정보 서비스 | 코로케이션(전산센터 공동입주)하지 않는 원격 참가자 |
+| FIX Market Data | FIX 프로토콜(금융정보교환 규약)을 통한 시세정보 | 표준화된 FIX 연결을 선호하는 업체 |
+| Reference Data Feed | 일별 종목 참조 데이터 (호가단위 테이블, 매매 달력, 종목 파라미터) | 매매 전 설정 및 정적 데이터 관리 |
+
+### 6.2 데이터 수준 (Data Levels)
+- **Level 1 (최종가)**: 최종 체결가, 체결 수량, 타임스탬프; 화면 표시 및 모니터링에 적합
+- **Level 2 (전체 호가 깊이)**: 매수·매도 양측 상위 10개 가격 수준(MBP -- Market by Price) 또는 상위 10개 개별 주문(MBO -- Market by Order)의 전체 호가창 깊이
+- **Continental Cash Consolidated Pack**: 전체 Euronext 현물시장의 Level 1 및 Level 2 데이터 번들 상품
+
+### 6.3 배포 인프라 (Distribution Infrastructure)
+- Bergamo 데이터센터로부터 **UDP 멀티캐스트**(IPv4)를 통해 시세정보 배포
+- 복원력을 위한 이중 리던던트 피드
+- MBO 및 MBP 스냅샷 서비스는 핵심 MDG와 동일한 배포 방식으로 멀티캐스트 UDP를 통해 제공
+- Optiq MDG는 종목별 호가 깊이 수준의 동적 식별 지원 (다중 깊이 호가창 지원)
+- 저대역폭 연결(100 Mbps) 및 모든 스냅샷에 **LZ4 압축** 사용 가능
+- 데이터 벤더(Refinitiv/LSEG, Bloomberg, ICE 등) 및 직접 연결을 통한 배포
+
+### 6.4 과거 데이터 (Historical Data)
+- Euronext는 Euronext Data Services 부문을 통해 과거 틱 데이터, 종가 데이터, 기업 행위 데이터를 제공한다
+- 파일 다운로드 또는 API를 통해 이용 가능
+- MiFID II 준거 데이터 상품 (매매 전·후 투명성 데이터)
+- 지연 데이터 (15분 지연)는 내부 사용 시 무료 제공
+
+---
+
+## 7. 접속 및 이용 (Connectivity & Access)
+
+### 7.1 회원 자격 / 참가 (Membership / Participation)
+- 직접 매매 접속을 위해 회원 자격 필요; 회원은 EEA 관할권에서 인가된 투자회사 또는 신용기관이어야 함
+- 다른 EEA 국가에서 규제를 받는 업체를 위한 원격 회원 자격 제공 (MiFID II에 따른 여권제도)
+- 역외 업체는 기존 회원을 통한 후원접속(sponsored access)으로 이용 가능
+- 현물시장과 파생상품시장에 대한 별도 회원 제도
+- 회원은 Euronext Rule Book (통합 규칙, Book I) 및 현지 보충 규칙 (Book II)을 준수해야 함
+
+### 7.2 접속 방법 (Connection Methods)
+| 방법 | 설명 |
+|------|------|
+| Optiq OEG (Order Entry Gateway) -- SBE | SBE 인코딩을 사용하는 네이티브 바이너리 프로토콜; 최저 지연시간의 주문 제출 방식 |
+| Optiq OEG -- FIX 5.0 | 주문 접수를 위한 산업 표준 FIX 5.0 프로토콜; SBE보다 약간 높은 지연시간 |
+| Optiq MDG | UDP 멀티캐스트를 통한 직접 시세정보 피드 |
+| 후원접속 (Sponsored Access) | 브로커/회원이 자사 인프라를 통해 비회원 고객에게 직접시장접속(DMA) 제공 |
+| ISV (Independent Software Vendor) 접속 | Euronext에 사전 인증된 제3자 매매 플랫폼 연결 |
+
+### 7.3 코로케이션 (전산센터 공동입주) / 근접 서비스 (Co-location / Proximity Services)
+- **위치**: Aruba Global Cloud Data Centre IT3, Bergamo, 이탈리아 (2022년 6월부터 주 데이터센터)
+- **서비스**: 매매체결엔진과 동일 시설 내 풀랙 및 부분랙 코로케이션; 최저 지연시간 제공 (왕복 약 15마이크로초)
+- **통신사**: 복수의 인증된 데이터센터 통신사가 Bergamo 시설로의 직접 연결 제공
+- **크로스커넥트**: 데이터센터 내에서 매매 참가자, ISV, 시세정보 벤더에 대한 직접 크로스커넥트 옵션
+- **근접 호스팅**: 완전한 코로케이션이 필요하지 않으나 지연시간을 줄이고자 하는 업체를 위해 제공
+
+### 7.4 API 프로토콜 (API Protocols)
+| 프로토콜 | 용도 |
+|----------|------|
+| FIX 5.0 (OEG) | 표준 주문 접수, 정정, 취소; 체결 확인 |
+| SBE 네이티브 (OEG) | HFT 및 알고리즘 매매를 위한 저지연 바이너리 주문 접수 |
+| FIX Drop Copy | 규정 준수를 위한 실시간 체결 캡처 및 모니터링 |
+| MDG SBE (UDP) | 실시간 시세정보 수신 |
+| REST API | 참조 데이터, 기업 행위, 상장 정보 (Euronext Data Services) [미검증] |
+
+### 7.5 인증 / 테스트 (Certification / Testing)
+- 모든 회원 및 ISV는 운영 환경 접속 전에 **적합성 테스트(conformance testing)**를 완료해야 함
+- Euronext는 운영 환경의 Optiq를 복제한 전용 테스트 환경(External Customer Testing, ECT)을 제공
+- SBE 네이티브 및 FIX 프로토콜에 대한 별도 인증 필요
+- 주요 플랫폼 업그레이드 또는 신규 시장 편입에 앞서 이전 테스트 기간 제공
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 가격 제한 (Price Limits)
+
+Euronext는 동적 및 정적 가격제한을 결합한 다층적 안전장치 체계를 운용한다:
+
+| 유형 | 참조 가격 | 기준 | 조치 |
+|------|----------|------|------|
+| 동적 가격제한 (Dynamic Collar) | 최종 체결가 (매 체결 후 갱신) | 종목 유동성/지수 편입에 따라 비율 상이 (예: +/-2%~+/-5% 일반적) [미검증] | 잠재 체결이 가격제한을 위반할 경우 해당 종목이 거래보류(변동성완화장치 발동 시 단일가매매)에 진입 |
+| 정적 가격제한 (Static Collar) | 당일 시초가 또는 전일 최종 참조가격 | 주요 지수구성종목 +/-8%; 기타 종목 +/-10% (일반적) | 잠재 체결이 일별 참조가격 기준 정적 가격제한을 위반할 경우 거래보류에 진입 |
+
+**KRX 비교:** KRX는 주식에 대해 +/-30%의 일일 가격제한폭(상·하한가)을 적용하며, 이에 더해 변동성완화장치(VI)를 운용한다. Euronext는 일일 절대 가격제한이 없으며, 동적·정적 가격제한(collar)에 의존하는 점이 KRX와 다르다.
+
+### 8.2 서킷브레이커 (매매거래중단) (Circuit Breakers)
+| 단계 | 발동 조건 | 중단 기간 |
+|------|----------|----------|
+| 동적 가격제한 위반 | 잠재 체결이 최종 체결가 기준 동적 가격 범위를 위반 | 거래보류 기간 (약 5분) 후 랜덤 종료가 포함된 변동성완화장치 발동 시 단일가매매 체결 |
+| 정적 가격제한 위반 | 잠재 체결이 일별 참조가격 기준 정적 가격 범위를 위반 | 거래보류 기간 (약 5분) 후 변동성완화장치 발동 시 단일가매매 체결 |
+| 연속 다회 발동 | 동일 종목에서 반복적 거래보류 발동 | 기간 연장 가능; 시장운영부서 수동 개입 가능 |
+| 시장 전체 거래중단 | 이례적 상황 (감독기관과 협의) | 감독기관이 기간 결정; Euronext 시장운영부서가 규제기관 협의체와 조율 |
+
+### 8.3 매매 전 리스크 관리 (Pre-trade Risk Controls)
+- **비정상 주문 거부**: 비정상적으로 큰 수량, 금액 또는 가격의 주문은 호가창 진입 전 자동 거부
+- **최대 주문 크기 제한**: 종목별 설정 가능하여 대량 오류주문(fat-finger) 방지
+- **스로틀링**: 시스템 과부하 방지를 위해 연결당 메시지 전송에 대한 속도 제한
+- **가격제한 검증**: 현행 가격제한 범위 밖의 가격으로 입력된 주문은 거부되거나 거래보류를 유발
+- **회원 수준 관리**: 회원은 MiFID II/RTS 6 요건(알고리즘 매매 관리)에 따라 자체 매매 전 리스크 관리를 시행해야 함
+
+### 8.4 Kill Switch
+- Euronext는 회원(또는 Euronext 시장운영부서)이 단일 조치로 특정 회원/연결의 모든 미체결 주문을 취소할 수 있는 **Kill Switch** 기능을 제공한다
+- MiFID II 제48조의 서킷브레이커 및 kill switch 메커니즘 요건 준수
+- 회원은 OEG 대량 취소 메시지를 통해 자체 kill switch 구현도 가능
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관 (Supervising Authority)
+- **Euronext 규제기관 협의체 (College of Euronext Regulators)**: 다국적 조율 기구로 다음 기관으로 구성:
+  - **AMF** (Autorite des Marches Financiers) -- 프랑스 (수석 감독기관)
+  - **AFM** (Autoriteit Financiele Markten) -- 네덜란드
+  - **FSMA** (Financial Services and Markets Authority) -- 벨기에
+  - **CMVM** (Comissao do Mercado de Valores Mobiliarios) -- 포르투갈
+  - **CBI** (Central Bank of Ireland) -- 아일랜드
+  - **Finanstilsynet** (Financial Supervisory Authority) -- 노르웨이
+  - **CONSOB** (Commissione Nazionale per le Societa e la Borsa) -- 이탈리아
+  - **HCMC** (Hellenic Capital Market Commission) -- 그리스 (2025년부터)
+- 협의체는 모든 Euronext 관할권에 걸친 감독을 조율하는 양해각서(MoU)에 따라 운영된다
+
+### 9.2 주요 규제 (Key Regulations)
+- **MiFID II / MiFIR** (Markets in Financial Instruments Directive/Regulation): 정규시장 운영자 및 MTF로서의 Euronext를 규율하는 핵심 체계
+- **시장남용규정 (MAR)**: 내부자거래, 시세조종, 공시를 규율하는 EU 규정 596/2014
+- **EU 투자설명서 규정**: Euronext 정규시장에 상장되는 증권의 투자설명서 요건 규율
+- **CSDR** (Central Securities Depositories Regulation): Euronext Securities (덴마크, 이탈리아, 노르웨이의 CSD) 규율
+- **EMIR** (European Market Infrastructure Regulation): Euronext Clearing (구 CC&G) 규율
+- **Euronext Rule Book**: 통합 규칙 (Book I, 전 시장 적용) 및 현지 보충 규칙 (Book II, 시장별)
+- **RTS 6** (알고리즘 매매): 알고리즘 매매 관리, 테스트, 기록 보존 요건
+- **RTS 11** (호가단위 체계): 가격 및 유동성에 기반한 표준화된 호가단위
+
+### 9.3 시장 감시 (Market Surveillance)
+- Euronext는 모든 시장을 실시간 모니터링하는 중앙집중형 **시장감시** 부서를 운영한다
+- 감시 범위는 잠재적 시장남용(내부자거래, 시세조종, 스푸핑, 레이어링)을 포괄
+- 모든 Euronext 거래장소(정규시장, Growth, Access, Block)에 걸친 교차시장 감시
+- 자동화된 경보 시스템이 이상 매매 패턴, 비정상 가격 변동, 호가창 이상을 감지
+- 조사 결과는 관련 국가 감독기관(AMF, CONSOB 등)에 보고하여 집행 조치 시행
+- Euronext는 MiFID II에 따라 거래보고를 위한 **ARM (Approved Reporting Mechanism)** 및 **APA (Approved Publication Arrangement)**로도 운영
+
+### 9.4 보고 의무 (Reporting Requirements)
+- 회원은 MiFIR 제26조에 따라 국가 감독기관에 거래를 보고해야 함
+- 매매 후 투명성: 거래가 실시간 공개 (MiFID II 면제에 따른 대규모 거래는 지연 공개)
+- 매매 전 투명성: 공개시장(lit market)에 대해 전체 호가창 공개; 비공개 매매를 위한 면제 가능 (참조가격 면제, 협상 거래 면제, LIS 면제)
+- 상장기업은 지속적 공시 의무 (규제 정보, MAR에 따른 내부정보) 대상
+
+### 9.5 국경 간 협정 (Cross-border Arrangements)
+- 단일 규정집(통합 규칙)이 모든 Euronext 시장에 걸친 통합 규제 프레임워크를 구성
+- MiFID II에 따른 여권제도로 EEA 규제 대상 업체가 원격 회원을 통해 모든 Euronext 시장 접속 가능
+- 비EEA 업체에 대해서는 역외국 동등성 결정이 적용될 수 있음
+- Euronext의 다국적 관할 구조는 주요 거래소 중 유일하며, 8개 국가 감독기관 간 조율이 필요
+- 브렉시트 이후: Euronext는 2022년 주 데이터센터를 Basildon (영국)에서 Bergamo (이탈리아)로 이전하여 영국 인프라에 대한 의존도를 낮춤
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 매매 수수료 (Trading Fees)
+| 수수료 유형 | 구조 | 요율 |
+|------------|------|------|
+| 표준 현물주식 | 종가 기준(basis points) | 거래당 0.50 bps (2025년 2월 시행); 거래당 최소 EUR 0.70 |
+| 시장조성자(마켓메이커) / 유동성공급자 | 메이커-테이커(유동성 제공-소비 수수료 모델) 단계별 리베이트 | 패시브(maker) 거래에 대한 감면 수수료; 프로그램 단계 및 자산 유형에 따라 구체적 요율 상이 |
+| Euronext Block (비공개) | 거래당 수수료 | 별도 수수료표 [미검증] |
+| ETF | ETF 매매를 위한 감면 수수료표 | 유동성 프로그램 참여에 따라 상이 |
+| 구조화상품 | EUR 6,000 이하 거래는 무료; 거래당 EUR 20 상한 | 거래당 상한 적용; 거래당 5건의 무료 주문 |
+| 청산 수수료 | Euronext Clearing을 통한 거래당 청산 수수료 | 종목 및 거래량 단계에 따라 상이 |
+
+### 10.2 기타 수수료 (Other Fees)
+- **상장 수수료**: 시가총액 기준 연간 상장유지 수수료; 시장 구분(정규시장, Growth, Access)에 따라 초기 상장 수수료 상이. 2025년판 상장수수료 안내서가 Euronext 웹사이트에서 제공됨
+- **시세정보 수수료**: 실시간 데이터는 정보상품 수수료표 적용; 지연 데이터(15분)는 내부 사용 시 무료; 재배포 시 라이선스 및 추가 수수료 필요
+- **코로케이션 수수료**: Bergamo 데이터센터의 랙 공간 임대; 크로스커넥트 수수료; 구체적 가격은 비공개(고객별 협상)
+- **접속 수수료**: OEG 및 MDG 연결에 대한 월정 수수료; 연결 유형 및 대역폭에 따라 상이
+- **기술 라이선스**: Euronext는 Optiq 플랫폼을 제3자 거래소 운영자에게 라이선스 [미검증]
+
+### 수익 구성 (FY 2025) (Revenue Breakdown)
+- Euronext N.V. 총 매출: 약 EUR 17억 [조정 EBITDA EUR 11.43억 기준 약 67% 마진으로 추정]
+- 수익 다각화: 매매 수익 (약 30%), 매매후/청산 (약 25%), 상장 (약 10%), 기술/데이터 (약 20%), 기타 (약 15%) [대략적, 미검증]
+- "Innovate for Growth 2027" 전략하에 비거래량 기반 수익 성장이 전략적 우선사항
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 시스템 업그레이드 (최근 5년) (System Upgrades)
+- **2022**: 핵심 데이터센터를 Basildon (영국)에서 Bergamo, 이탈리아 (Aruba IT3)로 이전; 2022년 6월 완료
+- **2023**: Borsa Italiana 현물시장(주식, ETF, 채권) 2단계에 걸쳐 Optiq로 이전
+- **2024**: Borsa Italiana 파생상품 Optiq 이전 (Phase 3, 2024년 4월) -- Borsa Italiana 기술 통합 완료; Euronext Clearing이 모든 Euronext 금융파생상품으로 확대
+- **2025**: Optiq 플랫폼 지속 개선; ATHEX Group 통합 계획 진행; MDG 및 OEG 버전 업그레이드 (v5.38.0 사양서 공개)
+- **지속**: Optiq 플랫폼이 제3자 거래소 및 매매장소 운영자를 위한 기술 솔루션으로 제공
+
+### 신규 상품 / 시장 구분 (New Products / Segments)
+- **2024**: 통합 유럽 ETF 시장 플랫폼 출시 (유럽 ETF AUM의 90% 이상을 대표하는 발행사 지원)
+- **2025**: 이탈리아, 프랑스, 독일, 스페인 국채에 대한 현금결제 **Mini Bond Futures** 출시 (2025년 9월)
+- **2026**: 전력선물 출시 (2026년 3월), Nasdaq Nordic 전력선물 인수 이후 상품 프랜차이즈 다각화
+- **2026**: 유럽 Repo 시장 확대 (2026년 6월 완료 목표)
+- **Euronext Block**: 기관 블록매매를 위한 비공개 중간가격 매매장소로 지속 성장
+
+### 규제 변화 (Regulatory Changes)
+- **MiFID II/MiFIR 개정**: EU 집행위원회가 규제 프레임워크 간소화 및 EU 수준 감독으로의 전환을 목표로 시장 통합 입법 패키지 발표 (2025년 12월); Euronext의 다국적 관할 구조에 잠재적 영향
+- **CSDR 개정**: Euronext Securities (CSD)에 영향을 미치는 지속적 시행
+- **통합시세정보 제공자(CTP)**: EU의 주식 통합시세정보에 대한 규제 추진; Euronext는 잠재적 기여자/운영자로 위치
+- **T+1 결제**: 유럽 시장의 T+2에서 T+1 결제주기 이전에 관한 업계 논의; Euronext 인프라 준비 중
+
+### 전략적 이니셔티브 (Strategic Initiatives)
+- **"Innovate for Growth 2027"**: 비거래량 기반 사업 성장, 기술 확장, 유럽 입지 확대에 초점을 맞춘 전략 계획
+- **유럽 CSD 모델**: 2025년 12월 발표; 덴마크, 이탈리아, 노르웨이, 포르투갈의 CSD 운영을 통합하여 비용 절감 및 국경 간 결제 개선. Euronext Securities가 2026년 9월까지 Amsterdam, Brussels, Paris 현물주식 결제 개시
+- **ATHEX 통합**: Athens Stock Exchange 인수 (2025년 말 75.6% 지분); 2028년까지 연간 EUR 1,200만 시너지 목표
+- **Admincontrol 인수**: 이사회 포털을 위한 북유럽 SaaS 플랫폼; 기업 솔루션 사업을 8,500개 이상 기업으로 확대
+- **전력선물 / 상품 확대**: Nord Pool 인수를 기반으로 2026년 3월 전력선물 출시; 에너지 매매 프랜차이즈 확대
+- **Euronext Clearing 확대**: LCH SA와 분리 후, Euronext Clearing이 현재 모든 Euronext 금융파생상품 처리; 현물주식 청산으로의 추가 확대 계획
+
+---
+
+## 출처 (Sources)
+
+1. Euronext Official Website -- About, Trading, Technology, Regulation: https://www.euronext.com (accessed 2026-04-06)
+2. Euronext -- Trading Hours & Holidays: https://www.euronext.com/en/trading/trading-hours-holidays (accessed 2026-04-06)
+3. Euronext -- Trading Safeguards: https://www.euronext.com/en/trading/market-quality/trading-safeguards-euronext-markets (accessed 2026-04-06)
+4. Euronext -- Optiq Technology Platform: https://www.euronext.com/en/technology/optiq-tech-solutions-for-exchanges-and-venue-operators (accessed 2026-04-06)
+5. Euronext -- Trading Fees and Charges: https://www.euronext.com/en/trading/fees-charges (accessed 2026-04-06)
+6. Euronext -- Cash Markets Trading Fee Guide (Effective 01 Feb 2025): https://www.euronext.com/sites/default/files/2025-02/Euronext%20Cash%20Markets%20Trading%20Fee%20Guide_Effective%2001FEB2025.pdf (accessed 2026-04-06)
+7. Euronext -- Q4 and Full Year 2025 Results: https://www.euronext.com/en/about/media/euronext-press-releases/euronext-publishes-q4-and-full-year-2025-results (accessed 2026-04-06)
+8. Euronext -- Delivering on Strategy 2025: https://www.euronext.com/en/news/delivering-strategy-and-strengthening-european-capital-markets-2025 (accessed 2026-04-06)
+9. Euronext -- Data Centre: https://www.euronext.com/en/technology/euronext-data-centre (accessed 2026-04-06)
+10. Euronext -- Borsa Italiana Acquisition Completion: https://www.euronext.com/en/about/media/euronext-press-releases/acquisition-borsa-italiana-group-and-q1-2021-results (accessed 2026-04-06)
+11. Euronext -- Regulatory Framework / Regulatory Bodies: https://www.euronext.com/en/regulation (accessed 2026-04-06)
+12. Euronext -- Market Data Products: https://www.euronext.com/en/data/market-data/market-data-products (accessed 2026-04-06)
+13. Euronext -- Choosing a Market (Listing): https://www.euronext.com/en/listing/raise-capital/how-go-public/choosing-market (accessed 2026-04-06)
+14. Confluent -- Euronext Case Study (Optiq/Kafka): https://www.confluent.io/customers/euronext/ (accessed 2026-04-06)
+15. OnixS -- Euronext Optiq MDG Market Data Handler: https://www.onixs.biz/euronext-optiq-market-data-gateway-feed-handler.html (accessed 2026-04-06)
+16. Euronext -- Optiq OEG FIX 5.0 / SBE Interface Specifications (v5.38.0): https://connect.euronext.com (accessed 2026-04-06)
+17. Wikipedia -- Euronext: https://en.wikipedia.org/wiki/Euronext (accessed 2026-04-06)
+18. TradingBrokers -- Euronext Trading Hours: https://tradingbrokers.com/euronext-trading-hours/ (accessed 2026-04-06)
+19. ESMA -- MiFID II / RTS 11 Tick Size Regime: https://www.esma.europa.eu (accessed 2026-04-06)
+20. The TRADE News -- Euronext Data Centre Migration: https://www.thetradenews.com/inside-europes-new-fortress-euronexts-continental-data-centre-and-trading-floor/ (accessed 2026-04-06)

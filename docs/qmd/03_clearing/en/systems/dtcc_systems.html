@@ -1,0 +1,2439 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>DTCC Core Systems — NSCC/DTC Settlement &amp; Clearing Infrastructure – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/systems/dtcc_systems.html">Trading Systems</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/systems/dtcc_systems.html">DTCC Core Systems — NSCC/DTC Settlement &amp; Clearing Infrastructure</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Clearing &amp; Settlement — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Clearing &amp; Settlement -- Comparative Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Organizations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/asx_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Clear / ASX Clear (Futures)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ccil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearing Corporation of India Limited (CCIL)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cdp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Central Depository Pte Ltd (CDP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cds_canada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CDS Clearing and Depository Services (CDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/clearstream.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearstream (Clearstream)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cme_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Clearing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/csdc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/dtcc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Depository Trust &amp; Clearing Corporation (DTCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/eurex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing AG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/euroccp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/euroclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euroclear Group (Euroclear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/hkex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Clearing – HKSCC / HKCC / SEOCH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ice_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Clear (ICE Clear U.S. / ICE Clear Europe / ICE Clear Credit)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/jscc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japan Securities Clearing Corporation (JSCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/krx_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX Clearing (Korea Exchange CCP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ksd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KSD (Korea Securities Depository)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/lch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH (LCH Limited &amp; LCH SA)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/muqassa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Securities Clearing Center Company (Muqassa)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/occ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Options Clearing Corporation (OCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/six_xclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SIX x-clear AG (SIX x-clear)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/asia_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/eu_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/us_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">U.S. Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/dtcc_systems.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">DTCC Core Systems — NSCC/DTC Settlement &amp; Clearing Infrastructure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/eurex_clearing_prisma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing -- C7 Architecture &amp; PRISMA Margin Engine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/lch_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH Clearing Platforms &amp; Margin Engines</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#system-overview" id="toc-system-overview" class="nav-link active" data-scroll-target="#system-overview">1. System Overview</a>
+  <ul class="collapse">
+  <li><a href="#system-evolution" id="toc-system-evolution" class="nav-link" data-scroll-target="#system-evolution">System Evolution</a></li>
+  </ul></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">2. Architecture</a>
+  <ul class="collapse">
+  <li><a href="#high-level-design" id="toc-high-level-design" class="nav-link" data-scroll-target="#high-level-design">2.1 High-Level Design</a></li>
+  <li><a href="#core-components" id="toc-core-components" class="nav-link" data-scroll-target="#core-components">2.2 Core Components</a></li>
+  <li><a href="#technology-stack" id="toc-technology-stack" class="nav-link" data-scroll-target="#technology-stack">2.3 Technology Stack</a></li>
+  </ul></li>
+  <li><a href="#performance-specifications" id="toc-performance-specifications" class="nav-link" data-scroll-target="#performance-specifications">3. Performance Specifications</a>
+  <ul class="collapse">
+  <li><a href="#volume-growth-history" id="toc-volume-growth-history" class="nav-link" data-scroll-target="#volume-growth-history">Volume Growth History</a></li>
+  </ul></li>
+  <li><a href="#interfaces-protocols" id="toc-interfaces-protocols" class="nav-link" data-scroll-target="#interfaces-protocols">4. Interfaces &amp; Protocols</a>
+  <ul class="collapse">
+  <li><a href="#trade-entry-and-capture" id="toc-trade-entry-and-capture" class="nav-link" data-scroll-target="#trade-entry-and-capture">4.1 Trade Entry and Capture</a></li>
+  <li><a href="#settlement-messages" id="toc-settlement-messages" class="nav-link" data-scroll-target="#settlement-messages">4.2 Settlement Messages</a></li>
+  <li><a href="#swift-connectivity" id="toc-swift-connectivity" class="nav-link" data-scroll-target="#swift-connectivity">4.3 SWIFT Connectivity</a></li>
+  <li><a href="#smart-network-mq-connectivity" id="toc-smart-network-mq-connectivity" class="nav-link" data-scroll-target="#smart-network-mq-connectivity">4.4 SMART Network &amp; MQ Connectivity</a></li>
+  <li><a href="#reference-data-services" id="toc-reference-data-services" class="nav-link" data-scroll-target="#reference-data-services">4.5 Reference Data Services</a></li>
+  <li><a href="#connectivity-transformation-timeline" id="toc-connectivity-transformation-timeline" class="nav-link" data-scroll-target="#connectivity-transformation-timeline">4.6 Connectivity Transformation Timeline</a></li>
+  </ul></li>
+  <li><a href="#resilience-business-continuity" id="toc-resilience-business-continuity" class="nav-link" data-scroll-target="#resilience-business-continuity">5. Resilience &amp; Business Continuity</a>
+  <ul class="collapse">
+  <li><a href="#redundancy" id="toc-redundancy" class="nav-link" data-scroll-target="#redundancy">5.1 Redundancy</a></li>
+  <li><a href="#disaster-recovery" id="toc-disaster-recovery" class="nav-link" data-scroll-target="#disaster-recovery">5.2 Disaster Recovery</a></li>
+  <li><a href="#capacity-management" id="toc-capacity-management" class="nav-link" data-scroll-target="#capacity-management">5.3 Capacity Management</a></li>
+  <li><a href="#cyber-resilience" id="toc-cyber-resilience" class="nav-link" data-scroll-target="#cyber-resilience">5.4 Cyber Resilience</a></li>
+  <li><a href="#aws-cloud-resiliency-architecture" id="toc-aws-cloud-resiliency-architecture" class="nav-link" data-scroll-target="#aws-cloud-resiliency-architecture">5.5 AWS Cloud Resiliency Architecture</a></li>
+  </ul></li>
+  <li><a href="#notable-technical-features" id="toc-notable-technical-features" class="nav-link" data-scroll-target="#notable-technical-features">6. Notable Technical Features</a>
+  <ul class="collapse">
+  <li><a href="#project-ion-dlt-based-settlement" id="toc-project-ion-dlt-based-settlement" class="nav-link" data-scroll-target="#project-ion-dlt-based-settlement">6.1 Project Ion — DLT-Based Settlement</a></li>
+  <li><a href="#composerx-canton-network-tokenization" id="toc-composerx-canton-network-tokenization" class="nav-link" data-scroll-target="#composerx-canton-network-tokenization">6.2 ComposerX &amp; Canton Network Tokenization</a></li>
+  <li><a href="#t1-technology-changes-may-2024" id="toc-t1-technology-changes-may-2024" class="nav-link" data-scroll-target="#t1-technology-changes-may-2024">6.3 T+1 Technology Changes (May 2024)</a></li>
+  <li><a href="#clearing-settlement-transformation-2025-2027" id="toc-clearing-settlement-transformation-2025-2027" class="nav-link" data-scroll-target="#clearing-settlement-transformation-2025-2027">6.4 Clearing &amp; Settlement Transformation (2025-2027)</a></li>
+  <li><a href="#cloud-migration-strategy" id="toc-cloud-migration-strategy" class="nav-link" data-scroll-target="#cloud-migration-strategy">6.5 Cloud Migration Strategy</a></li>
+  <li><a href="#treasury-clearing-mandate-preparation" id="toc-treasury-clearing-mandate-preparation" class="nav-link" data-scroll-target="#treasury-clearing-mandate-preparation">6.6 Treasury Clearing Mandate Preparation</a></li>
+  </ul></li>
+  <li><a href="#comparison-notes" id="toc-comparison-notes" class="nav-link" data-scroll-target="#comparison-notes">7. Comparison Notes</a>
+  <ul class="collapse">
+  <li><a href="#vs.-krxksd-systems" id="toc-vs.-krxksd-systems" class="nav-link" data-scroll-target="#vs.-krxksd-systems">vs.&nbsp;KRX/KSD Systems</a></li>
+  <li><a href="#key-differentiators" id="toc-key-differentiators" class="nav-link" data-scroll-target="#key-differentiators">Key Differentiators</a></li>
+  </ul></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/systems/dtcc_systems.html">Trading Systems</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/systems/dtcc_systems.html">DTCC Core Systems — NSCC/DTC Settlement &amp; Clearing Infrastructure</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">DTCC Core Systems — NSCC/DTC Settlement &amp; Clearing Infrastructure</h1>
+<p class="subtitle lead">Clearing &amp; Settlement &gt; Systems</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-07 <strong>System Category:</strong> Clearing System / Settlement System</p>
+</blockquote>
+<hr>
+<section id="system-overview" class="level2">
+<h2 class="anchored" data-anchor-id="system-overview">1. System Overview</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>System Name</td>
+<td>DTCC Core Systems (multiple integrated platforms)</td>
+</tr>
+<tr class="even">
+<td>Operated By</td>
+<td>DTCC / NSCC / DTC / FICC</td>
+</tr>
+<tr class="odd">
+<td>Purpose</td>
+<td>Clearing, settlement, netting, depository services, and risk management for U.S. capital markets</td>
+</tr>
+<tr class="even">
+<td>Launch Year</td>
+<td>1973 (DTC); 1976 (NSCC/CNS); 2003 (FICC); ongoing modernization</td>
+</tr>
+<tr class="odd">
+<td>Current Version</td>
+<td>Legacy mainframe core with distributed overlays; modernized CNS targeted Q4 2026</td>
+</tr>
+<tr class="even">
+<td>Vendor / In-house</td>
+<td>In-house (proprietary development); DLT components built with R3 Corda (Project Ion); ComposerX built with Digital Asset (Daml/Canton); cloud infrastructure on AWS</td>
+</tr>
+</tbody>
+</table>
+<section id="system-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="system-evolution">System Evolution</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 47%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>System / Initiative</th>
+<th>Key Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1973</td>
+<td>DTC Settlement System</td>
+<td>Established to immobilize physical certificates and enable book-entry transfers, resolving the “paperwork crisis”</td>
+</tr>
+<tr class="even">
+<td>1976</td>
+<td>CNS (Continuous Net Settlement)</td>
+<td>NSCC’s core netting engine created via merger of NYSE, AMEX, and NASD clearing subsidiaries</td>
+</tr>
+<tr class="odd">
+<td>1986</td>
+<td>GSCC Trade Comparison</td>
+<td>Government Securities Clearing Corporation established real-time trade comparison</td>
+</tr>
+<tr class="even">
+<td>1990s</td>
+<td>ACATS</td>
+<td>Automated Customer Account Transfer Service launched for automated account transfers</td>
+</tr>
+<tr class="odd">
+<td>2003</td>
+<td>FICC RTTM</td>
+<td>Real-Time Trade Matching introduced for government securities and MBS upon FICC formation (merger of GSCC and MBSCC)</td>
+</tr>
+<tr class="even">
+<td>2005</td>
+<td>RTTM for Municipals/Corporates</td>
+<td>RTTM service extended to municipal and corporate bonds</td>
+</tr>
+<tr class="odd">
+<td>2012</td>
+<td>SIFMU Designation</td>
+<td>DTC, NSCC, FICC designated as Systemically Important Financial Market Utilities under Dodd-Frank Title VIII</td>
+</tr>
+<tr class="even">
+<td>2014</td>
+<td>CTM / ITP Suite</td>
+<td>Institutional Trade Processing suite matured with Central Trade Manager (CTM) and TradeSuite ID</td>
+</tr>
+<tr class="odd">
+<td>2017</td>
+<td>T+2 Systems Update</td>
+<td>Settlement cycle shortened from T+3 to T+2 (September 2017)</td>
+</tr>
+<tr class="even">
+<td>2020</td>
+<td>Project Ion Pilot</td>
+<td>DLT-based bilateral settlement pilot launched on R3 Corda</td>
+</tr>
+<tr class="odd">
+<td>2022</td>
+<td>Project Ion Live (Parallel)</td>
+<td>DLT platform went live in parallel production, processing 100,000+ equity transactions daily</td>
+</tr>
+<tr class="even">
+<td>2024 (May)</td>
+<td>T+1 Systems Update</td>
+<td>Settlement cycle shortened from T+2 to T+1; UTC, CNS, ITP timing changes; NSCC clearing fund reduced ~23%</td>
+</tr>
+<tr class="odd">
+<td>2024 (June)</td>
+<td>ACATS Modernized Interface</td>
+<td>New web-based client interfaces launched for account transfers</td>
+</tr>
+<tr class="even">
+<td>2025 (Nov)</td>
+<td>ISO 20022 Corporate Actions (SR2025)</td>
+<td>DTC converted corporate actions messaging to ISO 20022 SR2025 version</td>
+</tr>
+<tr class="odd">
+<td>2025-2026</td>
+<td>Clearing Transformation</td>
+<td>Multi-year initiative to migrate CNS and clearing systems off mainframe to distributed architecture; modernized CNS go-live targeted Q4 2026</td>
+</tr>
+<tr class="even">
+<td>2025-2027</td>
+<td>Settlement Transformation</td>
+<td>Migration of DTC settlement platform to ISO 20022 and distributed infrastructure; legacy format decommission Q3 2027</td>
+</tr>
+<tr class="odd">
+<td>2025-2026</td>
+<td>Canton Network / ComposerX</td>
+<td>DTC authorized to tokenize custodied assets on Canton Network; MVP in controlled production H1 2026</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC 2024 Annual Report (dtcc.com/annuals/2024); DTCC Transformation Overview (dtcc.com/-/media/Files/Downloads/Transformation/DTCC-Transformation-Overview-and-Current-vs-Future-State.pdf); DTCC press releases]</p>
+<hr>
+</section>
+</section>
+<section id="architecture" class="level2">
+<h2 class="anchored" data-anchor-id="architecture">2. Architecture</h2>
+<section id="high-level-design" class="level3">
+<h3 class="anchored" data-anchor-id="high-level-design">2.1 High-Level Design</h3>
+<p><strong>Current State (as of 2026):</strong> - <strong>Centralized mainframe-based core</strong> with distributed overlays and web front-ends - <strong>Monolithic architecture</strong> for legacy CNS, DTC Settlement, and FICC clearing engines running on proprietary mainframe infrastructure - <strong>On-premise</strong> primary operations with two data centers: Brooklyn, NY (primary) and Dallas, TX (backup/DR) - <strong>Cloud adoption in progress:</strong> DTCC received SEC No-Objection to host core RegSCI clearing, settlement, and risk applications on AWS public cloud without hybrid infrastructure [Source: DTCC-AWS resiliency prototype (dtcc.com/dtcc-connection/articles/2023/december/07/bulletproof-building-dtcc-aws-debut-app-resiliency-prototype)] - <strong>DLT layer:</strong> Project Ion (R3 Corda) running in parallel production for bilateral equity settlement - <strong>Tokenization layer:</strong> ComposerX suite on Canton Network for digital asset services</p>
+<p><strong>Future State (targeted 2026-2027):</strong> - Migration from mainframe to <strong>modern distributed infrastructure</strong> - Standardized <strong>ISO 20022 messaging</strong> replacing proprietary formats - <strong>Unified enterprise platform</strong> with simplified client interfaces - <strong>Cloud-native</strong> core applications on AWS public cloud regions - <strong>DLT-integrated</strong> settlement pathways for both traditional and tokenized assets</p>
+<p>[Source: DTCC Transformation Overview and Current vs Future State, September 2025 (dtcc.com/-/media/Files/Downloads/Transformation/DTCC-Transformation-Overview-and-Current-vs-Future-State.pdf)]</p>
+</section>
+<section id="core-components" class="level3">
+<h3 class="anchored" data-anchor-id="core-components">2.2 Core Components</h3>
+<section id="cns-continuous-net-settlement-nscc" class="level4">
+<h4 class="anchored" data-anchor-id="cns-continuous-net-settlement-nscc">CNS (Continuous Net Settlement) — NSCC</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Function</strong></td>
+<td>Core netting, allotting, and fail-control engine for U.S. equities, ETFs, corporate/municipal bonds, ADRs, UITs</td>
+</tr>
+<tr class="even">
+<td><strong>Netting Model</strong></td>
+<td>Multilateral netting: all compared trades in CNS-eligible securities are netted by CUSIP into a single net long or net short position per participant per settlement date</td>
+</tr>
+<tr class="odd">
+<td><strong>Netting Efficiency</strong></td>
+<td>Reduces payment value by an average of <strong>98% each day</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Novation</strong></td>
+<td>NSCC becomes legal counterparty to both buyer and seller upon trade acceptance</td>
+</tr>
+<tr class="odd">
+<td><strong>Settlement Integration</strong></td>
+<td>Net delivery obligations settled through DTC book-entry system</td>
+</tr>
+<tr class="even">
+<td><strong>Stock Borrow Program</strong></td>
+<td>Automated securities borrowing within CNS to reduce fails-to-deliver</td>
+</tr>
+<tr class="odd">
+<td><strong>Fail Rate</strong></td>
+<td>Average CNS fail rate of <strong>2.12%</strong> post-T+1 (July 2024), consistent with T+2 levels</td>
+</tr>
+<tr class="even">
+<td><strong>Modernization</strong></td>
+<td>Modernized CNS application scheduled for go-live <strong>Q4 2026</strong>; moves off mainframe to distributed architecture with standardized interfaces</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC CNS page (dtcc.com/clearing-services/equities-clearing-services/cns); SIFMA/ICI/DTCC T+1 After Action Report; Clearing Transformation Client Roadmap, November 2025]</p>
+</section>
+<section id="dtc-settlement-system" class="level4">
+<h4 class="anchored" data-anchor-id="dtc-settlement-system">DTC Settlement System</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Function</strong></td>
+<td>Book-entry settlement, securities custody, DVP processing, corporate actions, asset servicing</td>
+</tr>
+<tr class="even">
+<td><strong>DVP Model</strong></td>
+<td>BIS DVP Model 2: gross securities transfers (individual security-by-security) with net funds settlement</td>
+</tr>
+<tr class="odd">
+<td><strong>Settlement Cycles</strong></td>
+<td>Night Cycle (pre-positioning for next-day) and Day Cycle (real-time delivery processing)</td>
+</tr>
+<tr class="even">
+<td><strong>Money Settlement</strong></td>
+<td>Net obligations settled end-of-day through Federal Reserve’s <strong>National Settlement Service (NSS)</strong> (central bank money)</td>
+</tr>
+<tr class="odd">
+<td><strong>Custody</strong></td>
+<td>$100+ trillion in assets under custody (exceeded June 2025); 1.44 million+ securities issues from 170+ countries</td>
+</tr>
+<tr class="even">
+<td><strong>Registered Holder</strong></td>
+<td><strong>Cede &amp; Co.</strong> (DTC nominee) is registered holder of deposited securities</td>
+</tr>
+<tr class="odd">
+<td><strong>Key Interfaces</strong></td>
+<td>Settlement Web (primary user interface); Inventory Management System (delivery ordering)</td>
+</tr>
+<tr class="even">
+<td><strong>Modernization</strong></td>
+<td>Settlement transformation migrating to ISO 20022; legacy format decommission <strong>Q3 2027</strong></td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTC Disclosure Framework (dtcc.com); DTCC 2024 Annual Report; Settlement Transformation FAQ]</p>
+</section>
+<section id="acats-automated-customer-account-transfer-service" class="level4">
+<h4 class="anchored" data-anchor-id="acats-automated-customer-account-transfer-service">ACATS (Automated Customer Account Transfer Service)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Function</strong></td>
+<td>Centralized, automated transfer of customer account assets between broker-dealers and banks</td>
+</tr>
+<tr class="even">
+<td><strong>Operated By</strong></td>
+<td>NSCC</td>
+</tr>
+<tr class="odd">
+<td><strong>Asset Coverage</strong></td>
+<td>Equities, corporate/municipal bonds, UITs, mutual funds, options, annuities, cash</td>
+</tr>
+<tr class="even">
+<td><strong>Processing Time</strong></td>
+<td>Approximately 6 business days per transfer</td>
+</tr>
+<tr class="odd">
+<td><strong>Eligibility</strong></td>
+<td>All qualified NSCC full-service members and DTC bank participants</td>
+</tr>
+<tr class="even">
+<td><strong>Modernization</strong></td>
+<td>New advanced client interfaces launched June 2024; ACATS transformation underway (September 2025) with settlement cycle reduction planned</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC ACATS page (dtcc.com/clearing-and-settlement-services/equities-clearing-services/acats); ACATS Modernization article, June 2024; ACATS Transformation article, September 2025]</p>
+</section>
+<section id="ficc-gsd-government-securities-division" class="level4">
+<h4 class="anchored" data-anchor-id="ficc-gsd-government-securities-division">FICC GSD (Government Securities Division)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Function</strong></td>
+<td>Trade comparison, netting, CCP clearing, and risk management for U.S. government securities (Treasuries, agency debt, repos)</td>
+</tr>
+<tr class="even">
+<td><strong>Trade Matching</strong></td>
+<td><strong>RTTM (Real-Time Trade Matching)</strong> — standardized electronic platform for collecting and matching government securities trade data in real-time; matched trades immediately locked in with FICC guarantee</td>
+</tr>
+<tr class="odd">
+<td><strong>Securities Covered</strong></td>
+<td>Treasury bills, bonds, notes, zero-coupon securities, agency securities, inflation-indexed securities, repos (incl.&nbsp;GCF Repo, Sponsored GC, Triparty)</td>
+</tr>
+<tr class="even">
+<td><strong>Membership Models</strong></td>
+<td>Netting Member, Sponsoring Member, Sponsored Member (buy-side access), Comparison-Only</td>
+</tr>
+<tr class="odd">
+<td><strong>Peak Volume</strong></td>
+<td>$13.2 trillion daily (December 1, 2025); 1.206 million transactions peak (April 9, 2025)</td>
+</tr>
+<tr class="even">
+<td><strong>Treasury Clearing Mandate</strong></td>
+<td>SEC rule requires expanded central clearing of U.S. Treasury cash (by Dec 31, 2026) and repo (by June 30, 2027) transactions through FICC</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: FICC GSD RTTM page (dtcc.com/clearing-and-settlement-services/ficc-gov/gov-rttm); DTCC record volumes press release, April 2025; SEC Treasury clearing rule]</p>
+</section>
+<section id="ficc-mbsd-mortgage-backed-securities-division" class="level4">
+<h4 class="anchored" data-anchor-id="ficc-mbsd-mortgage-backed-securities-division">FICC MBSD (Mortgage-Backed Securities Division)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Function</strong></td>
+<td>Trade comparison, netting, pool notification, and CCP clearing for mortgage-backed securities</td>
+</tr>
+<tr class="even">
+<td><strong>Trade Types</strong></td>
+<td>TBA (To-Be-Announced) trades and specified pool MBS</td>
+</tr>
+<tr class="odd">
+<td><strong>Key Services</strong></td>
+<td>Electronic Pool Notification (EPN); RTTM for MBS; netting of TBA and specified pool trades</td>
+</tr>
+<tr class="even">
+<td><strong>Settlement</strong></td>
+<td>Net delivery obligations for forward settlement dates</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: FICC MBSD RTTM page (dtcc.com/clearing-and-settlement-services/ficc-mbsd/mbsd-rttm)]</p>
+</section>
+<section id="itp-institutional-trade-processing" class="level4">
+<h4 class="anchored" data-anchor-id="itp-institutional-trade-processing">ITP (Institutional Trade Processing)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Function</strong></td>
+<td>End-to-end STP solution for institutional trade allocation, matching, affirmation, and settlement instruction</td>
+</tr>
+<tr class="even">
+<td><strong>CTM (Central Trade Manager)</strong></td>
+<td>Central matching platform for buy-side, sell-side, and custodians to allocate and centrally match securities transactions post-trade globally across multiple asset classes and 42+ countries</td>
+</tr>
+<tr class="odd">
+<td><strong>TradeSuite ID</strong></td>
+<td>Trade affirmation service enabling institutions to affirm broker confirmations in an automated manner; affirmation cutoff 9:00 PM ET on trade date for T+1</td>
+</tr>
+<tr class="even">
+<td><strong>Match to Instruct (M2i)</strong></td>
+<td>Workflow combining CTM, TradeSuite ID, and ALERT SSI enrichment; matched trades automatically trigger affirmation and delivery instructions to DTC</td>
+</tr>
+<tr class="odd">
+<td><strong>ALERT</strong></td>
+<td>Standing Settlement Instructions (SSI) database used to auto-enrich settlement instructions</td>
+</tr>
+<tr class="even">
+<td><strong>T+1 Impact</strong></td>
+<td>Same-day affirmation rate target of <strong>95%</strong> by 9:00 PM ET achieved for T+1 transition</td>
+</tr>
+<tr class="odd">
+<td><strong>Capacity</strong></td>
+<td>1 million+ trades per day across 42 countries</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC ITP page (dtcclearning.com/products-and-services/itp.html); ITP Services Catalog (dtcc.com); T+1 Affirmation Report, January 2024]</p>
+</section>
+<section id="utc-universal-trade-capture" class="level4">
+<h4 class="anchored" data-anchor-id="utc-universal-trade-capture">UTC (Universal Trade Capture)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Function</strong></td>
+<td>Trade capture and comparison system for NSCC; receives and validates trade submissions from exchanges, ATSes, and other trade sources</td>
+</tr>
+<tr class="even">
+<td><strong>T+1 Changes</strong></td>
+<td>Coding changes to update settlement date assignment rules for T+1 cycle; accelerated end-of-day pricing to approximately 6:30 PM ET</td>
+</tr>
+<tr class="odd">
+<td><strong>ETF Integration</strong></td>
+<td>Processes ETF creation and redemption orders via Datatrak File Input; near real-time submission capability added for T+1</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC T+1 Functional Changes document (dtcc.com/-/media/Files/PDFs/T2/T1-Functional-Changes.pdf)]</p>
+</section>
+<section id="clearing-fund-management" class="level4">
+<h4 class="anchored" data-anchor-id="clearing-fund-management">Clearing Fund Management</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Function</strong></td>
+<td>Real-time collateral management portal for margin/clearing fund deposits across NSCC and FICC</td>
+</tr>
+<tr class="even">
+<td><strong>NSCC Clearing Fund</strong></td>
+<td>Daily average $11.24 billion (2024); post-T+1 average ~$9.8 billion</td>
+</tr>
+<tr class="odd">
+<td><strong>FICC GSD Initial Margin</strong></td>
+<td>$65.5 billion (Q4 2024 PQD data)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: CPMI-IOSCO PQD Q4 2024; NSCC Financial Statements 2024]</p>
+</section>
+</section>
+<section id="technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="technology-stack">2.3 Technology Stack</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 29%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Current State</th>
+<th>Future State (2026-2027)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Core Processing</strong></td>
+<td>Proprietary mainframe (IBM zSeries) [unverified specific hardware]</td>
+<td>Distributed servers on modern infrastructure; cloud-native on AWS</td>
+</tr>
+<tr class="even">
+<td><strong>Programming Languages</strong></td>
+<td>COBOL, Assembler (legacy mainframe) [unverified]; Java, C++ (distributed components) [unverified]</td>
+<td>Java, modern languages on distributed platform [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>DLT Platform</strong></td>
+<td>R3 Corda (Project Ion); Daml / Canton Network (ComposerX / tokenization)</td>
+<td>Expanded DLT integration</td>
+</tr>
+<tr class="even">
+<td><strong>Operating System</strong></td>
+<td>z/OS (mainframe) [unverified]; Linux (distributed)</td>
+<td>Linux-based; cloud-native</td>
+</tr>
+<tr class="odd">
+<td><strong>Cloud</strong></td>
+<td>AWS (SEC No-Objection received for RegSCI systems); Snowflake (data resiliency)</td>
+<td>AWS public cloud regions as primary hosting</td>
+</tr>
+<tr class="even">
+<td><strong>Messaging/Middleware</strong></td>
+<td>IBM MQ Series; SMART proprietary network; SWIFT FIN</td>
+<td>ISO 20022 messaging; distributed connections; lightweight messaging</td>
+</tr>
+<tr class="odd">
+<td><strong>Database</strong></td>
+<td>Proprietary mainframe databases [unverified]; Snowflake (analytics/data)</td>
+<td>Modern distributed databases [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>Network</strong></td>
+<td>SMART dedicated circuits (no per-message cost, circuit-based); MQ automated transfer protocol</td>
+<td>Distributed connections replacing legacy SMART connectivity</td>
+</tr>
+<tr class="odd">
+<td><strong>Message Formats</strong></td>
+<td>Proprietary formats; ISO 15022 (settlement); FIX (trade capture); ISO 20022 (corporate actions as of SR2025)</td>
+<td>ISO 20022 (all settlement and corporate actions); FIX (trade capture)</td>
+</tr>
+<tr class="even">
+<td><strong>Web Interfaces</strong></td>
+<td>Settlement Web; Clearing Fund Management portal; RTTM Web</td>
+<td>Modernized web-based interfaces</td>
+</tr>
+<tr class="odd">
+<td><strong>APIs</strong></td>
+<td>Emerging RESTful APIs for digital asset services</td>
+<td>Expanded API connectivity</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC Transformation Overview; DTCC Client Interfaces FAQ (dtcc.com/-/media/Files/Downloads/Transformation/Client-Interface-FAQs.pdf); DTCC Connectivity Repository (dtcclearning.com)]</p>
+<hr>
+</section>
+</section>
+<section id="performance-specifications" class="level2">
+<h2 class="anchored" data-anchor-id="performance-specifications">3. Performance Specifications</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 20%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+<th>Date / Conditions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>NSCC Peak Value (single day)</strong></td>
+<td>$5.55 trillion</td>
+<td>April 9, 2025 (6.4% increase from prior peak of $5.22T on Dec 20, 2024)</td>
+</tr>
+<tr class="even">
+<td><strong>NSCC Peak Volume (single day)</strong></td>
+<td>545 million transactions</td>
+<td>April 7, 2025 (33% increase from prior peak of 409M during Jan 2021 meme-stock event)</td>
+</tr>
+<tr class="odd">
+<td><strong>FICC GSD Peak Value (single day)</strong></td>
+<td>$13.2 trillion</td>
+<td>December 1, 2025</td>
+</tr>
+<tr class="even">
+<td><strong>FICC GSD Peak Volume (single day)</strong></td>
+<td>1.206 million transactions</td>
+<td>April 9, 2025 (23% increase from prior peak of 978K on April 7, 2025)</td>
+</tr>
+<tr class="odd">
+<td><strong>FICC GSD Daily Average</strong></td>
+<td>$9.1 trillion (end-2024) to $13.2 trillion (Dec 2025)</td>
+<td>Year-end 2024 through 2025; 42% YoY activity increase in 2024</td>
+</tr>
+<tr class="even">
+<td><strong>ITP/CTM Daily Capacity</strong></td>
+<td>1 million+ trades per day</td>
+<td>Across 42 countries</td>
+</tr>
+<tr class="odd">
+<td><strong>Project Ion Daily Volume</strong></td>
+<td>100,000+ transactions (average); 160,000+ (peak days)</td>
+<td>Parallel production since August 2022</td>
+</tr>
+<tr class="even">
+<td><strong>DTC Assets Under Custody</strong></td>
+<td>$100+ trillion</td>
+<td>Exceeded June 2025</td>
+</tr>
+<tr class="odd">
+<td><strong>DTC Securities Issues</strong></td>
+<td>1.44 million+</td>
+<td>From 170+ countries/territories</td>
+</tr>
+<tr class="even">
+<td><strong>Total Value Processed (Annual)</strong></td>
+<td>$3.7 quadrillion</td>
+<td>2024</td>
+</tr>
+<tr class="odd">
+<td><strong>CNS Netting Efficiency</strong></td>
+<td>98% reduction in payment values</td>
+<td>Daily average</td>
+</tr>
+<tr class="even">
+<td><strong>CNS Fail Rate (post-T+1)</strong></td>
+<td>2.12%</td>
+<td>July 2024 average (consistent with T+2 levels)</td>
+</tr>
+<tr class="odd">
+<td><strong>DTC Non-CNS Fail Rate</strong></td>
+<td>3.31%</td>
+<td>July 2024 average (consistent with T+2 levels)</td>
+</tr>
+<tr class="even">
+<td><strong>Same-Day Affirmation Rate (T+1)</strong></td>
+<td>95%+ by 9:00 PM ET</td>
+<td>Achieved from T+1 go-live (May 2024)</td>
+</tr>
+<tr class="odd">
+<td><strong>NSCC Backtesting Coverage</strong></td>
+<td>99.9%</td>
+<td>12-month coverage level (Q4 2024 PQD)</td>
+</tr>
+<tr class="even">
+<td><strong>Q1 2025 NSCC Volume Growth</strong></td>
+<td>+15% QoQ; +29% YoY</td>
+<td>Monthly average</td>
+</tr>
+<tr class="odd">
+<td><strong>Q1 2025 FICC Volume Growth</strong></td>
+<td>+4% QoQ; +32% YoY</td>
+<td>Monthly average</td>
+</tr>
+</tbody>
+</table>
+<section id="volume-growth-history" class="level3">
+<h3 class="anchored" data-anchor-id="volume-growth-history">Volume Growth History</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 27%">
+<col style="width: 35%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year / Period</th>
+<th>NSCC Peak Value</th>
+<th>FICC GSD Daily Avg</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jan 2021</td>
+<td>–</td>
+<td>–</td>
+<td>Meme-stock event: 409M NSCC transactions peak</td>
+</tr>
+<tr class="even">
+<td>2022</td>
+<td>–</td>
+<td>–</td>
+<td>Project Ion goes live in parallel production</td>
+</tr>
+<tr class="odd">
+<td>Mar 2024</td>
+<td>–</td>
+<td>$7.0 trillion</td>
+<td>FICC Treasury clearing volumes +31% YoY</td>
+</tr>
+<tr class="even">
+<td>May 2024</td>
+<td>–</td>
+<td>–</td>
+<td>T+1 go-live; NSCC clearing fund reduced ~23% (~$3B)</td>
+</tr>
+<tr class="odd">
+<td>Dec 2024</td>
+<td>$5.22 trillion</td>
+<td>$9.1 trillion</td>
+<td>End-of-year peaks</td>
+</tr>
+<tr class="even">
+<td>Apr 2025</td>
+<td>$5.55 trillion</td>
+<td>$11.4 trillion (Apr 9)</td>
+<td>Record volumes across all services amid market volatility</td>
+</tr>
+<tr class="odd">
+<td>Dec 2025</td>
+<td>–</td>
+<td>$13.2 trillion</td>
+<td>New GSD peak; buy-side activity peak $3.1 trillion</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC record volumes press release, April 23, 2025 (dtcc.com/news/2025/april/23/dtcc-processes-record-volumes-across-services-amid-market-volatility); DTCC FICC volumes press release, March 2024; SIFMA/ICI/DTCC T+1 After Action Report; CPMI-IOSCO PQD Q4 2024]</p>
+<hr>
+</section>
+</section>
+<section id="interfaces-protocols" class="level2">
+<h2 class="anchored" data-anchor-id="interfaces-protocols">4. Interfaces &amp; Protocols</h2>
+<section id="trade-entry-and-capture" class="level3">
+<h3 class="anchored" data-anchor-id="trade-entry-and-capture">4.1 Trade Entry and Capture</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 34%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Protocol</th>
+<th>Use Case</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>FIX Protocol</strong></td>
+<td>Trade submission and comparison</td>
+<td>Used for trade capture at NSCC (UTC) and FICC (RTTM); real-time trade matching</td>
+</tr>
+<tr class="even">
+<td><strong>Proprietary Formats</strong></td>
+<td>Legacy trade submission</td>
+<td>Current mainframe-based formats; scheduled for decommission with transformation</td>
+</tr>
+<tr class="odd">
+<td><strong>RTTM Web</strong></td>
+<td>Government securities trade matching</td>
+<td>Web-based interface for FICC GSD and MBSD trade monitoring and exception management</td>
+</tr>
+<tr class="even">
+<td><strong>Datatrak</strong></td>
+<td>ETF creation/redemption</td>
+<td>File Input 11300 for near real-time ETF order submission</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="settlement-messages" class="level3">
+<h3 class="anchored" data-anchor-id="settlement-messages">4.2 Settlement Messages</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 20%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Protocol / Standard</th>
+<th>Use Case</th>
+<th>Migration Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Proprietary Formats</strong></td>
+<td>Current DTC settlement instructions and confirmations</td>
+<td>To be decommissioned <strong>Q3 2027</strong></td>
+</tr>
+<tr class="even">
+<td><strong>ISO 15022</strong></td>
+<td>Settlement messaging (MTU delivers in ISO 15022 for cash and securities)</td>
+<td>To be decommissioned <strong>Q3 2027</strong> alongside proprietary formats</td>
+</tr>
+<tr class="odd">
+<td><strong>ISO 20022</strong></td>
+<td>Future standard for all settlement and corporate actions messaging</td>
+<td>Corporate actions: live (SR2025 version, November 2025). Settlement: PSE testing from <strong>Q2 2026</strong>; production from <strong>Q4 2026</strong>; full migration by <strong>Q3 2027</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Fedwire</strong></td>
+<td>Government securities settlement</td>
+<td>Direct interface for Fed-eligible securities via Fedwire Securities Service</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="swift-connectivity" class="level3">
+<h3 class="anchored" data-anchor-id="swift-connectivity">4.3 SWIFT Connectivity</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Service</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SWIFT FIN (ISO 15022)</strong></td>
+<td>Cross-border settlement messaging, custody notifications for international participants</td>
+</tr>
+<tr class="even">
+<td><strong>ISO 20022 (Corporate Actions)</strong></td>
+<td>SWIFT clients must notify DTCC by August 29, 2025 for SR2025 subscription enablement</td>
+</tr>
+<tr class="odd">
+<td><strong>BIC-based Distribution</strong></td>
+<td>MTU delivers settlement messages to subscribers using Bank Identifier Code (BIC)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="smart-network-mq-connectivity" class="level3">
+<h3 class="anchored" data-anchor-id="smart-network-mq-connectivity">4.4 SMART Network &amp; MQ Connectivity</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SMART Network</strong></td>
+<td>DTCC’s proprietary dedicated telecommunications network; circuit-based (no per-message cost); high-volume message transmission between participants and DTCC systems</td>
+</tr>
+<tr class="even">
+<td><strong>MQ Series</strong></td>
+<td>IBM MQ automated transfer protocol over SMART dedicated circuits</td>
+</tr>
+<tr class="odd">
+<td><strong>Circuit Setup</strong></td>
+<td>New circuits: 12-14 weeks; bandwidth increase: 4 weeks; MQ setup on existing bandwidth: 2 weeks</td>
+</tr>
+<tr class="even">
+<td><strong>Future Connectivity</strong></td>
+<td>Distributed connections replacing legacy SMART/MQ; lightweight messaging; standardized ISO/FIX interfaces</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="reference-data-services" class="level3">
+<h3 class="anchored" data-anchor-id="reference-data-services">4.5 Reference Data Services</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Service</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>DTCC Data Services</strong></td>
+<td>Reference data for securities identification, corporate actions announcements</td>
+</tr>
+<tr class="even">
+<td><strong>CA 20022 Service</strong></td>
+<td>ISO 20022-formatted corporate actions announcements, entitlements, allocations</td>
+</tr>
+<tr class="odd">
+<td><strong>ALERT</strong></td>
+<td>Standing Settlement Instructions (SSI) database; auto-enrichment of settlement instructions</td>
+</tr>
+<tr class="even">
+<td><strong>Securities Data Experiences</strong></td>
+<td>New platform being developed as part of transformation initiative</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="connectivity-transformation-timeline" class="level3">
+<h3 class="anchored" data-anchor-id="connectivity-transformation-timeline">4.6 Connectivity Transformation Timeline</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 26%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Date</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Clearing (CNS)</strong></td>
+<td>Q1 2026</td>
+<td>Connectivity testing begins</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Q2 2026</td>
+<td>UAT / functional testing</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Q3 2026</td>
+<td>Production connectivity testing</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>Q4 2026</strong></td>
+<td><strong>Modernized CNS go-live; legacy clearing connectivity decommissioned</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Settlement (DTC)</strong></td>
+<td>Q1 2026</td>
+<td>Connectivity testing (PSE) begins</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Q2 2026</td>
+<td>ISO 20022 test facility available</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Q4 2026</td>
+<td>ISO 20022 available in production</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>Q3 2027</strong></td>
+<td><strong>Legacy proprietary and ISO 15022 formats decommissioned</strong></td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC Client Interfaces FAQ; Clearing Transformation Client Roadmap, November 2025; Settlement Transformation Client Roadmap, February 2026; DTCC Settlement Transformation FAQ; DTCC Connectivity Repository (dtcclearning.com)]</p>
+<hr>
+</section>
+</section>
+<section id="resilience-business-continuity" class="level2">
+<h2 class="anchored" data-anchor-id="resilience-business-continuity">5. Resilience &amp; Business Continuity</h2>
+<section id="redundancy" class="level3">
+<h3 class="anchored" data-anchor-id="redundancy">5.1 Redundancy</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Data Centers</strong></td>
+<td>Two primary data centers: <strong>Brooklyn, NY</strong> (primary) and <strong>Dallas, TX</strong> (backup/DR)</td>
+</tr>
+<tr class="even">
+<td><strong>Configuration</strong></td>
+<td>Currently operates as primary/backup; evolving toward <strong>active-active</strong> with periodic rotation between sites</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Center Rotation</strong></td>
+<td>Full swing of data centers beginning <strong>January 2026</strong> — all production processing will periodically operate live from Dallas</td>
+</tr>
+<tr class="even">
+<td><strong>Global Presence</strong></td>
+<td>DTCC operates from 20+ locations worldwide for various services</td>
+</tr>
+<tr class="odd">
+<td><strong>Cloud Redundancy</strong></td>
+<td>AWS multi-region design; regional availability as guiding principle</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="disaster-recovery" class="level3">
+<h3 class="anchored" data-anchor-id="disaster-recovery">5.2 Disaster Recovery</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>RTO (Recovery Time Objective)</strong></td>
+<td>&lt; <strong>2 hours</strong> for critical applications (regulatory requirement for SIFMUs under SEC Rule 17Ad-22(e)(17))</td>
+</tr>
+<tr class="even">
+<td><strong>RPO (Recovery Point Objective)</strong></td>
+<td>&lt; <strong>30 seconds</strong> for critical applications</td>
+</tr>
+<tr class="odd">
+<td><strong>DR Testing</strong></td>
+<td>Regular DR testing; comprehensive BCP maintained and tested for site failures, cyber incidents, pandemic, and natural disasters</td>
+</tr>
+<tr class="even">
+<td><strong>Data Center Rotation Testing</strong></td>
+<td>DTCC published data center rotation test plan for April 2025; periodic rotations planned from January 2026</td>
+</tr>
+<tr class="odd">
+<td><strong>Regulatory Requirement</strong></td>
+<td>As SIFMUs, DTC/NSCC/FICC must maintain systems with high degree of security, resiliency, operational reliability, and adequate scalable capacity per SEC Rule 17Ad-22(e)(17)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="capacity-management" class="level3">
+<h3 class="anchored" data-anchor-id="capacity-management">5.3 Capacity Management</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Scalability Approach</strong></td>
+<td>Proven capacity to handle record volumes — NSCC processed 545M transactions in single day (April 2025) without incident</td>
+</tr>
+<tr class="even">
+<td><strong>Cloud Scalability</strong></td>
+<td>AWS cloud migration intended to improve elastic scalability for peak volumes</td>
+</tr>
+<tr class="odd">
+<td><strong>Stress Events</strong></td>
+<td>April 2025 market volatility produced simultaneous record peaks across NSCC, FICC GSD, and DTC with successful processing</td>
+</tr>
+<tr class="even">
+<td><strong>Load Testing</strong></td>
+<td>Industry-wide testing coordinated for transformation initiatives (clearing testing Q1-Q3 2026; settlement testing Q1-Q3 2027)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cyber-resilience" class="level3">
+<h3 class="anchored" data-anchor-id="cyber-resilience">5.4 Cyber Resilience</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Industry Exercises</strong></td>
+<td>DTCC participates in industry-wide cyber resilience exercises</td>
+</tr>
+<tr class="even">
+<td><strong>SIFMU Requirements</strong></td>
+<td>Extensive cybersecurity controls as required for Systemically Important FMUs</td>
+</tr>
+<tr class="odd">
+<td><strong>Participant Disruption</strong></td>
+<td>SEC approved DTC/FICC/NSCC rule changes (November 2025) for managing participant system disruptions (SR-DTC-2025-006, SR-FICC-2025-006, SR-NSCC-2025-006)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="aws-cloud-resiliency-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="aws-cloud-resiliency-architecture">5.5 AWS Cloud Resiliency Architecture</h3>
+<p>DTCC and AWS jointly developed an application resiliency prototype for financial services:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Principle</th>
+<th>Implementation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Auto-correct during failures</strong></td>
+<td>AWS Health Check API validates service health; automated recovery runbooks</td>
+</tr>
+<tr class="even">
+<td><strong>Regional availability</strong></td>
+<td>Multi-region deployment across AWS regions</td>
+</tr>
+<tr class="odd">
+<td><strong>Multi-regional efficiency</strong></td>
+<td>Active processing in multiple regions to minimize recovery time</td>
+</tr>
+<tr class="even">
+<td><strong>Testing and monitoring</strong></td>
+<td>AWS Route 53 Application Recovery Controller (ARC) readiness checks; continuous infrastructure validation</td>
+</tr>
+<tr class="odd">
+<td><strong>Snowflake Integration</strong></td>
+<td>DTCC uses Snowflake’s Snowgrid for data resiliency and cross-region data replication</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC Data Center Rotation Test Plan, April 2025 (dtcc.com/-/media/Files/Downloads/Operational-Resilience/DTCC-Data-Center-Rotation-Test-Plan.pdf); DTCC-AWS Resiliency Prototype (dtcc.com/dtcc-connection/articles/2023/december/07/bulletproof-building-dtcc-aws-debut-app-resiliency-prototype); Snowflake Snowgrid case study (snowflake.com/en/blog/how-dtcc-achieves-data-resiliency/); SEC Rule 17Ad-22(e)(17); Federal Register 2025-20384]</p>
+<hr>
+</section>
+</section>
+<section id="notable-technical-features" class="level2">
+<h2 class="anchored" data-anchor-id="notable-technical-features">6. Notable Technical Features</h2>
+<section id="project-ion-dlt-based-settlement" class="level3">
+<h3 class="anchored" data-anchor-id="project-ion-dlt-based-settlement">6.1 Project Ion — DLT-Based Settlement</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Status</strong></td>
+<td>Live in parallel production since August 2022</td>
+</tr>
+<tr class="even">
+<td><strong>Technology</strong></td>
+<td>Built on <strong>R3 Corda</strong> enterprise blockchain</td>
+</tr>
+<tr class="odd">
+<td><strong>Function</strong></td>
+<td>DLT-based bilateral equity settlement running parallel to existing settlement systems; existing systems remain authoritative record of legal ownership</td>
+</tr>
+<tr class="even">
+<td><strong>Volume</strong></td>
+<td>Average 100,000+ bilateral equity trades daily; 160,000+ on peak days</td>
+</tr>
+<tr class="odd">
+<td><strong>Settlement Models</strong></td>
+<td>Supports netted <strong>T+0</strong> settlement as well as T+1 and longer cycles</td>
+</tr>
+<tr class="even">
+<td><strong>Expansion</strong></td>
+<td>Phased expansion planned to extend range of DTC activities and potentially include NSCC central clearing activities</td>
+</tr>
+<tr class="odd">
+<td><strong>Significance</strong></td>
+<td>First major CSD to operate a DLT-based settlement platform at production scale alongside traditional infrastructure</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC Project Ion articles (dtcc.com); Hedgeweek coverage; Ledger Insights coverage; FIF coverage]</p>
+</section>
+<section id="composerx-canton-network-tokenization" class="level3">
+<h3 class="anchored" data-anchor-id="composerx-canton-network-tokenization">6.2 ComposerX &amp; Canton Network Tokenization</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ComposerX Suite</strong></td>
+<td>DTCC Digital Assets’ comprehensive tokenization platform</td>
+</tr>
+<tr class="even">
+<td><strong>ComposerX CMP</strong></td>
+<td>Capital Markets Platform — DLT-agnostic solution for token lifecycle management (onboarding, trading, corporate actions, transfer agency)</td>
+</tr>
+<tr class="odd">
+<td><strong>ComposerX Factory</strong></td>
+<td>Tokenization engine with automated data management; supports ERC-20 and ERC-3643 standards; creates “self-describing” smart tokens with embedded verifiable data schemas</td>
+</tr>
+<tr class="even">
+<td><strong>ComposerX LedgerScan</strong></td>
+<td>Token activity monitoring and reconciliation tool for tracking transactions across networks</td>
+</tr>
+<tr class="odd">
+<td><strong>Compliance Aware Token Framework</strong></td>
+<td>Real-time enforcement of regulatory rules validated at transaction execution; automates multi-jurisdictional regulatory and transactional policies</td>
+</tr>
+<tr class="even">
+<td><strong>Canton Network</strong></td>
+<td>Privacy-focused blockchain; DTCC co-chairs Canton Foundation alongside Euroclear</td>
+</tr>
+<tr class="odd">
+<td><strong>Technology Partner</strong></td>
+<td>Digital Asset Holdings (Daml smart contract language)</td>
+</tr>
+<tr class="even">
+<td><strong>Initial Asset</strong></td>
+<td>U.S. Treasury securities custodied at DTC</td>
+</tr>
+<tr class="odd">
+<td><strong>Timeline</strong></td>
+<td>MVP in controlled production: <strong>H1 2026</strong>; broader rollout including additional DTC- and Fed-eligible assets: <strong>H2 2026</strong></td>
+</tr>
+<tr class="even">
+<td><strong>SEC Authorization</strong></td>
+<td>No-Action Letter received December 2025 authorizing DTC to offer tokenization services</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC ComposerX page (dtcc.com/digital-assets/composerx); DTCC-Digital Asset partnership announcement, December 2025; Canton Network press release]</p>
+</section>
+<section id="t1-technology-changes-may-2024" class="level3">
+<h3 class="anchored" data-anchor-id="t1-technology-changes-may-2024">6.3 T+1 Technology Changes (May 2024)</h3>
+<p>Key system modifications implemented for the T+2 to T+1 transition:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>System</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>NSCC/UTC</strong></td>
+<td>Settlement date assignment rules updated for T+1 cycle</td>
+</tr>
+<tr class="even">
+<td><strong>NSCC/CNS</strong></td>
+<td>CNS processing timelines compressed; end-of-day pricing accelerated to ~6:30 PM ET</td>
+</tr>
+<tr class="odd">
+<td><strong>ITP/TradeSuite ID</strong></td>
+<td>Affirmation cutoff moved to <strong>9:00 PM ET on trade date</strong> (from 11:30 AM on T+1)</td>
+</tr>
+<tr class="even">
+<td><strong>ITP/CTM</strong></td>
+<td>Match to Instruct (M2i) workflow promoted for same-day affirmation</td>
+</tr>
+<tr class="odd">
+<td><strong>NSCC Clearing Fund</strong></td>
+<td>Reduced ~23% (~$3 billion) from pre-T+1 average of ~$12.2-12.8B to ~$9.8B post-T+1</td>
+</tr>
+<tr class="even">
+<td><strong>ETF Processing</strong></td>
+<td>Near real-time submission of ETF Create/Redeem orders via Datatrak File Input 11300</td>
+</tr>
+<tr class="odd">
+<td><strong>Night Cycle</strong></td>
+<td>DTC night cycle timing adjustments to accommodate compressed settlement</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Result:</strong> CNS fail rate of 2.12% and DTC non-CNS fail rate of 3.31% in July 2024 — both consistent with prior T+2 levels, indicating successful transition.</p>
+<p>[Source: DTCC T+1 Functional Changes document; DTCC T+1 Conversion Guide, May 2024; SIFMA/ICI/DTCC T+1 After Action Report]</p>
+</section>
+<section id="clearing-settlement-transformation-2025-2027" class="level3">
+<h3 class="anchored" data-anchor-id="clearing-settlement-transformation-2025-2027">6.4 Clearing &amp; Settlement Transformation (2025-2027)</h3>
+<p>The most significant infrastructure modernization in DTCC’s history:</p>
+<p><strong>Clearing Transformation (primarily NSCC/CNS):</strong> - Migration from mainframe to <strong>modern distributed infrastructure</strong> - Modernized CNS with enhanced resilience, simplifications, and modern client interfaces - Standardized interfaces using ISO and FIX where possible - <strong>Go-live: Q4 2026</strong> - Current mainframe-based connectivity decommissioned Q4 2026</p>
+<p><strong>Settlement Transformation (primarily DTC):</strong> - Migration to <strong>ISO 20022</strong> messaging for all settlement transactions - Support for future capabilities: partial settlement, fractional shares - Distributed connectivity replacing legacy SMART/MQ connections - ISO 20022 available in production: <strong>Q4 2026</strong> - Legacy format decommission: <strong>Q3 2027</strong></p>
+<p><strong>Additional Clearing Enhancements:</strong> - Extended trading hours for UTC - Reduced ACATS settlement cycle by one full business day - Improved ETF clearing process with OCC for options-containing ETFs - New Securities Data Experiences platform</p>
+<p>[Source: DTCC Transformation Overview, September 2025; Clearing Transformation Client Roadmap, November 2025; Settlement Transformation Client Roadmap, February 2026; Settlement Transformation FAQ]</p>
+</section>
+<section id="cloud-migration-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="cloud-migration-strategy">6.5 Cloud Migration Strategy</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SEC Approval</strong></td>
+<td>No-Objection received to host core RegSCI systems on public cloud</td>
+</tr>
+<tr class="even">
+<td><strong>Cloud Provider</strong></td>
+<td>AWS (primary)</td>
+</tr>
+<tr class="odd">
+<td><strong>Scope</strong></td>
+<td>Core clearance, settlement, and risk applications — running on AWS public cloud regions without hybrid infrastructure</td>
+</tr>
+<tr class="even">
+<td><strong>Objectives</strong></td>
+<td>Improved resiliency, security, scalability; better risk management; support for evolving market needs</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Resiliency</strong></td>
+<td>Snowflake Snowgrid for cross-region data replication and analytics</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: DTCC-AWS resiliency prototype; AWS Cloud Adoption Update for Financial Market Infrastructure Providers 1H25]</p>
+</section>
+<section id="treasury-clearing-mandate-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="treasury-clearing-mandate-preparation">6.6 Treasury Clearing Mandate Preparation</h3>
+<p>FICC GSD is preparing for SEC-mandated expansion of central clearing: - <strong>Cash Treasuries:</strong> Compliance by December 31, 2026 - <strong>Repo Transactions:</strong> Compliance by June 30, 2027 - <strong>Sponsored Member model</strong> being expanded to accommodate broader buy-side access - Peak buy-side activity already reached $3.1 trillion (December 31, 2025) - Daily GSD activity grew from ~$9.1 trillion (end-2024) to $13.2 trillion (December 2025)</p>
+<p>[Source: SEC Treasury clearing rule; DTCC record volumes press release, April 2025]</p>
+<hr>
+</section>
+</section>
+<section id="comparison-notes" class="level2">
+<h2 class="anchored" data-anchor-id="comparison-notes">7. Comparison Notes</h2>
+<section id="vs.-krxksd-systems" class="level3">
+<h3 class="anchored" data-anchor-id="vs.-krxksd-systems">vs.&nbsp;KRX/KSD Systems</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 32%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>DTCC Systems</th>
+<th>KRX/KSD Equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Trading System</strong></td>
+<td>N/A (DTCC is post-trade only; exchanges operate their own matching engines)</td>
+<td><strong>Exture+</strong> — KRX’s proprietary trading system handling order matching for equities, derivatives, bonds</td>
+</tr>
+<tr class="even">
+<td><strong>Clearing (Equities)</strong></td>
+<td><strong>NSCC/CNS</strong> — multilateral netting by CUSIP per participant; separate CCP from exchange</td>
+<td><strong>KRX</strong> acts as CCP directly; netting integrated with exchange operations</td>
+</tr>
+<tr class="odd">
+<td><strong>Settlement/Depository</strong></td>
+<td><strong>DTC</strong> — CSD with book-entry settlement; BIS DVP Model 2 (gross securities, net funds)</td>
+<td><strong>KSD SAFE+</strong> — central securities depository and settlement system; DVP settlement</td>
+</tr>
+<tr class="even">
+<td><strong>Settlement Cycle</strong></td>
+<td>T+1 (since May 2024) for equities, corporate/muni bonds</td>
+<td>T+2 for equities (KRX); T+1 for government bonds [unverified current status]</td>
+</tr>
+<tr class="odd">
+<td><strong>Government Securities</strong></td>
+<td><strong>FICC GSD</strong> — separate CCP with RTTM for Treasuries; peak $13.2T daily</td>
+<td>KRX/KSD handles government bond settlement; Bank of Korea for monetary policy bonds</td>
+</tr>
+<tr class="even">
+<td><strong>Netting Efficiency</strong></td>
+<td>CNS: 98% reduction in payment values daily</td>
+<td>KRX netting: high efficiency but specific percentage not publicly comparable [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>Institutional Trade Processing</strong></td>
+<td><strong>ITP/CTM/TradeSuite ID</strong> — separate institutional workflow with M2i</td>
+<td>Integrated within KRX/KSD systems; less separation between retail and institutional flow [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>Account Transfer</strong></td>
+<td><strong>ACATS</strong> — dedicated automated system (~6 business days)</td>
+<td>Account transfer handled through KSD participant processes [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>Core Technology</strong></td>
+<td>Legacy mainframe migrating to distributed/cloud (AWS); DLT parallel (Corda)</td>
+<td><strong>Exture+</strong> is modern distributed architecture; KSD <strong>SAFE+</strong> is modern integrated platform</td>
+</tr>
+<tr class="even">
+<td><strong>Modernization Status</strong></td>
+<td>Multi-year transformation underway (2025-2027) — migrating off mainframe</td>
+<td>KSD developing next-generation “KSD Innovative Financial Platform” with AI and cloud</td>
+</tr>
+<tr class="odd">
+<td><strong>DLT/Tokenization</strong></td>
+<td>Project Ion (R3 Corda, live parallel); ComposerX/Canton (tokenization H1 2026)</td>
+<td>KSD exploring blockchain for securities services [unverified specific initiatives]</td>
+</tr>
+<tr class="even">
+<td><strong>Message Standards</strong></td>
+<td>Migrating from proprietary to ISO 20022 (target Q3 2027 full migration)</td>
+<td>KSD uses proprietary formats with ISO standards adoption in progress [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>Cloud Strategy</strong></td>
+<td>AWS public cloud (SEC approved for RegSCI systems)</td>
+<td>Cloud and AI exploration underway at KSD</td>
+</tr>
+<tr class="even">
+<td><strong>Organizational Structure</strong></td>
+<td>Separate entities: NSCC (CCP), DTC (CSD), FICC (CCP) under DTCC holding company</td>
+<td>Integrated: KRX (exchange + CCP), KSD (CSD) — fewer organizational boundaries</td>
+</tr>
+<tr class="odd">
+<td><strong>Market Scale</strong></td>
+<td>$3.7 quadrillion annual; $100T+ in custody; 545M peak daily transactions</td>
+<td>KRX: significantly smaller by value but highly efficient per-transaction processing</td>
+</tr>
+<tr class="even">
+<td><strong>Regulatory Framework</strong></td>
+<td>SEC-regulated SIFMUs; Dodd-Frank Title VIII</td>
+<td>Financial Services Commission (FSC) / Financial Supervisory Service (FSS) oversight</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-differentiators" class="level3">
+<h3 class="anchored" data-anchor-id="key-differentiators">Key Differentiators</h3>
+<ol type="1">
+<li><p><strong>Scale:</strong> DTCC operates the largest post-trade infrastructure in the world by value ($3.7 quadrillion annually, $100T+ in custody). No other CSD/CCP complex approaches this scale.</p></li>
+<li><p><strong>Organizational Separation:</strong> DTCC maintains separate legal entities for clearing (NSCC, FICC) and depository (DTC) functions, each independently regulated as clearing agencies and SIFMUs. KRX/KSD has a more integrated model with fewer organizational boundaries, which can be more operationally efficient but creates different risk profiles.</p></li>
+<li><p><strong>Legacy Technology Challenge:</strong> DTCC’s core systems are still mainframe-based (being modernized 2025-2027), whereas KRX’s Exture+ and KSD’s SAFE+ were built as modern distributed systems from the start. DTCC’s transformation is one of the most significant FMI technology migrations globally.</p></li>
+<li><p><strong>DLT Integration Strategy:</strong> DTCC is uniquely running a DLT settlement platform (Project Ion) in parallel production at scale while maintaining legacy systems as the authoritative record — a pragmatic dual-track approach that no other major CSD has replicated.</p></li>
+<li><p><strong>Treasury Clearing Mandate:</strong> The SEC’s requirement for expanded central clearing of U.S. Treasuries and repos through FICC (2026-2027) will dramatically increase FICC GSD volumes and represents a structural change in U.S. fixed income market infrastructure with no direct KRX parallel.</p></li>
+<li><p><strong>T+1 Achievement:</strong> Both the U.S. (through DTCC) and Korea (through KRX/KSD) have been leaders in settlement cycle acceleration, though the U.S. T+1 transition in May 2024 was a significantly larger undertaking given market complexity and the number of participants.</p></li>
+<li><p><strong>Cloud-Native CCP/CSD:</strong> DTCC’s SEC-approved migration of RegSCI systems to AWS public cloud (without hybrid) is a first among major CCPs/CSDs globally and may serve as a model for other FMIs including KSD.</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<ol type="1">
+<li>DTCC 2024 Annual Report — <a href="https://www.dtcc.com/annuals/2024">dtcc.com/annuals/2024</a></li>
+<li>DTCC CNS Page — <a href="https://www.dtcc.com/clearing-services/equities-clearing-services/cns">dtcc.com/clearing-services/equities-clearing-services/cns</a></li>
+<li>DTCC Record Volumes Press Release, April 23, 2025 — <a href="https://www.dtcc.com/news/2025/april/23/dtcc-processes-record-volumes-across-services-amid-market-volatility">dtcc.com/news/2025/april/23/dtcc-processes-record-volumes-across-services-amid-market-volatility</a></li>
+<li>DTCC Transformation Overview and Current vs Future State, September 2025 — <a href="https://www.dtcc.com/-/media/Files/Downloads/Transformation/DTCC-Transformation-Overview-and-Current-vs-Future-State.pdf">dtcc.com/-/media/Files/Downloads/Transformation/DTCC-Transformation-Overview-and-Current-vs-Future-State.pdf</a></li>
+<li>Clearing Transformation Client Roadmap, November 2025 — <a href="https://www.dtcc.com/-/media/Files/Downloads/Transformation/Clearing-Transformation-Client-Roadmap.pdf">dtcc.com/-/media/Files/Downloads/Transformation/Clearing-Transformation-Client-Roadmap.pdf</a></li>
+<li>Settlement Transformation Client Roadmap, February 2026 — <a href="https://www.dtcc.com/-/media/Files/Downloads/Transformation/Settlement-Transformation-Client-Roadmap.pdf">dtcc.com/-/media/Files/Downloads/Transformation/Settlement-Transformation-Client-Roadmap.pdf</a></li>
+<li>DTCC Settlement Transformation FAQ — <a href="https://www.dtcc.com/-/media/Files/Downloads/Transformation/Settlement-Transformation-FAQ.pdf">dtcc.com/-/media/Files/Downloads/Transformation/Settlement-Transformation-FAQ.pdf</a></li>
+<li>DTCC T+1 Functional Changes, March 2024 — <a href="https://www.dtcc.com/-/media/Files/PDFs/T2/T1-Functional-Changes.pdf">dtcc.com/-/media/Files/PDFs/T2/T1-Functional-Changes.pdf</a></li>
+<li>DTCC T+1 Conversion Guide, May 2024 — <a href="https://www.dtcc.com/-/media/Files/PDFs/T2/T1-Conversion-Document-March-2024.pdf">dtcc.com/-/media/Files/PDFs/T2/T1-Conversion-Document-March-2024.pdf</a></li>
+<li>SIFMA/ICI/DTCC T+1 After Action Report — <a href="https://www.sifma.org/news/press-releases/sifma-ici-and-dtcc-release-t1-after-action-report-industry-coordination-led-to-successful-transition-reducing-risk-and-costs-in-the-system">sifma.org/news/press-releases/sifma-ici-and-dtcc-release-t1-after-action-report</a></li>
+<li>DTCC Project Ion — DTCC Connection Medium — <a href="https://dtcc-connection.medium.com/innovation-insight-dtccs-project-ion-9aabda5be247">dtcc-connection.medium.com/innovation-insight-dtccs-project-ion</a></li>
+<li>DTCC Project Ion 100K Transactions — Hedgeweek — <a href="https://www.hedgeweek.com/dtccs-project-ion-platform-now-processing-over-100000-transactions-day-dlt/">hedgeweek.com/dtccs-project-ion-platform-now-processing-over-100000-transactions-day-dlt/</a></li>
+<li>DTCC ComposerX — <a href="https://www.dtcc.com/digital-assets/composerx">dtcc.com/digital-assets/composerx</a></li>
+<li>DTCC and Digital Asset Canton Network Partnership, December 2025 — <a href="https://www.dtcc.com/news/2025/december/17/dtcc-and-digital-asset-partner-to-tokenize-dtc-custodied-us-treasury-securities">dtcc.com/news/2025/december/17/dtcc-and-digital-asset-partner-to-tokenize-dtc-custodied-us-treasury-securities</a></li>
+<li>DTCC SEC Tokenization Authorization, December 2025 — <a href="https://www.dtcc.com/news/2025/december/11/paving-the-way-to-tokenized-dtc-custodied-assets">dtcc.com/news/2025/december/11/paving-the-way-to-tokenized-dtc-custodied-assets</a></li>
+<li>DTCC-AWS App Resiliency Prototype — <a href="https://www.dtcc.com/dtcc-connection/articles/2023/december/07/bulletproof-building-dtcc-aws-debut-app-resiliency-prototype">dtcc.com/dtcc-connection/articles/2023/december/07/bulletproof-building-dtcc-aws-debut-app-resiliency-prototype</a></li>
+<li>DTCC Data Center Rotation Test Plan, April 2025 — <a href="https://www.dtcc.com/-/media/Files/Downloads/Operational-Resilience/DTCC-Data-Center-Rotation-Test-Plan.pdf">dtcc.com/-/media/Files/Downloads/Operational-Resilience/DTCC-Data-Center-Rotation-Test-Plan.pdf</a></li>
+<li>Snowflake Data Resiliency Case Study — <a href="https://www.snowflake.com/en/blog/how-dtcc-achieves-data-resiliency/">snowflake.com/en/blog/how-dtcc-achieves-data-resiliency/</a></li>
+<li>DTCC FICC GSD RTTM — <a href="https://www.dtcc.com/clearing-and-settlement-services/ficc-gov/gov-rttm">dtcc.com/clearing-and-settlement-services/ficc-gov/gov-rttm</a></li>
+<li>DTCC ACATS — <a href="https://www.dtcc.com/clearing-and-settlement-services/equities-clearing-services/acats">dtcc.com/clearing-and-settlement-services/equities-clearing-services/acats</a></li>
+<li>DTCC ACATS Modernization, June 2024 — <a href="https://www.dtcc.com/dtcc-connection/articles/2024/june/04/acats-modernization-dtcc-launches-new-client-interface">dtcc.com/dtcc-connection/articles/2024/june/04/acats-modernization-dtcc-launches-new-client-interface</a></li>
+<li>DTCC ITP Services — <a href="https://dtcclearning.com/products-and-services/itp.html">dtcclearning.com/products-and-services/itp.html</a></li>
+<li>DTCC ISO 20022 Corporate Actions — <a href="https://www.dtcc.com/asset-services/corporate-actions-processing/iso-20022-messaging-specifications">dtcc.com/asset-services/corporate-actions-processing/iso-20022-messaging-specifications</a></li>
+<li>DTCC Client Interfaces FAQ — <a href="https://www.dtcc.com/-/media/Files/Downloads/Transformation/Client-Interface-FAQs.pdf">dtcc.com/-/media/Files/Downloads/Transformation/Client-Interface-FAQs.pdf</a></li>
+<li>CPMI-IOSCO Public Quantitative Disclosures Q4 2024 — <a href="https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/CPMI-IOSCO-Public-Quantitative-Disclosures---Q4-2024.pdf">dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/CPMI-IOSCO-Public-Quantitative-Disclosures—Q4-2024.pdf</a></li>
+<li>NSCC Disclosure Framework — <a href="https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/NSCC_Disclosure_Framework.pdf">dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/NSCC_Disclosure_Framework.pdf</a></li>
+<li>DTC Disclosure Framework — <a href="https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/DTC_Disclosure_Framework.pdf">dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/DTC_Disclosure_Framework.pdf</a></li>
+<li>SEC Rule 17Ad-22(e) — <a href="https://www.sec.gov/files/rules/final/2016/34-78961.pdf">sec.gov/files/rules/final/2016/34-78961.pdf</a></li>
+<li>SEC Treasury Clearing Rule — <a href="https://www.federalregister.gov/documents/2024/01/16/2023-27860">federalregister.gov/documents/2024/01/16/2023-27860</a></li>
+<li>DTCC Looks Ahead to 2025 — WFE Focus — <a href="https://focus.world-exchanges.org/articles/dtcc-2025-2024">focus.world-exchanges.org/articles/dtcc-2025-2024</a></li>
+<li>DTCC Connectivity Repository — <a href="https://dtcclearning.com/products-and-services/cross-product/smart-network.html">dtcclearning.com/products-and-services/cross-product/smart-network.html</a></li>
+<li>DTCC Equities Clearing Transformation — <a href="https://dtcclearning.com/products-and-services/equities-clearing/equities-clearing-transformation.html">dtcclearning.com/products-and-services/equities-clearing/equities-clearing-transformation.html</a></li>
+<li>DTCC FICC Treasury Clearing Volumes, March 2024 — <a href="https://www.dtcc.com/news/2024/march/12/dtccs-ficc-treasury-clearing-volumes-grow-31-percent">dtcc.com/news/2024/march/12/dtccs-ficc-treasury-clearing-volumes-grow-31-percent</a></li>
+<li>KSD Official Website — <a href="https://www.ksd.or.kr/en/">ksd.or.kr/en/</a></li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

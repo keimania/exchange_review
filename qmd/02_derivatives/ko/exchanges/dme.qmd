@@ -1,0 +1,336 @@
+---
+title: "Dubai Mercantile Exchange (DME, 두바이상업거래소)"
+subtitle: "파생상품 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-07
+> **조사 등급:** Tier 3
+> **분야:** 파생상품
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | Gulf Mercantile Exchange Limited (구 Dubai Mercantile Exchange) |
+| 약칭 | GME (구 DME) |
+| 웹사이트 | https://www.gulfmerc.com |
+| 설립연도 | 2007년 (2007년 6월 1일 출범; 최초 합작투자 계약은 2005년 체결) |
+| 소재지 | 아랍에미리트 / 두바이 (Dubai International Financial Centre — DIFC) |
+| 지배구조 | 합작투자 — Saudi Tadawul Group (32.6%), CME Group (STG와 공동 최대주주), Oman Investment Authority, Dubai Holding, 기관투자자 (Vitol, Shell, JPMorgan, Morgan Stanley, Goldman Sachs) |
+| 모회사 / 그룹 | DME Holdings Limited |
+| 감독기관 | DIFC 내 Dubai Financial Services Authority (DFSA) |
+| 상장 종목 | Oman Crude Oil Futures (OQD — 대표 상품), Oman Crude Oil Options (OQE), Micro Oman Crude Oil Futures |
+| 청산기관 | CME Clearing (CME Group) |
+| 거래 플랫폼 | CME Globex |
+| 리브랜딩 | 2024년 9월 2일자로 Dubai Mercantile Exchange에서 Gulf Mercantile Exchange (GME)로 명칭 변경 |
+
+[Source: [Wikipedia — Dubai Mercantile Exchange](https://en.wikipedia.org/wiki/Dubai_Mercantile_Exchange); [GME — About GME](https://www.gulfmerc.com/about-gme); [CME Group — GME Strategic Partnership](https://www.cmegroup.com/international/partnership-resources/gme-resources.html); [LiquidityFinder — DME to Rebrand as Gulf Mercantile Exchange](https://liquidityfinder.com/news/dme-to-rebrand-as-gulf-mercantile-exchange-after-saudi-tadawul-group-becomes-joint-largest-shareholder-in-dme-alongside-cme-group-ebf36); [CME Group Press Release — Saudi Tadawul Group Acquires Strategic Stake](https://www.cmegroup.com/media-room/press-releases/2024/1/18/saudi_tadawul_groupacquiresastrategicstakeindubaimercantileexcha.html)]
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **2005년:** Tatweer (Dubai Holding 자회사)와 NYMEX가 중동 상품거래소 설립을 위한 합작투자 계약 체결
+- **2007년 (6월 1일):** Dubai Mercantile Exchange가 Oman Crude Oil Futures Contract (OQD)을 대표 상품으로 출범, 수에즈 이동 원유 시장의 투명한 벤치마크 구축 목표
+- **2007년:** DME Oman이 출범 당시 아시아행 중동 원유의 약 8%를 차지
+- **2008년:** Concord Energy, Goldman Sachs, JPMorgan Chase, Morgan Stanley, Shell, Vitol 등 글로벌 금융기관이 DME 주주로 참여; NYMEX가 CME Group에 인수되어 DME가 CME Group 체제로 편입
+- **2009년 (2월):** DME 선물 계약이 NYMEX ACCESS에서 CME Globex 전자거래 플랫폼으로 이관, 세계 3대 원유 벤치마크(WTI, Brent, DME Oman)를 동일 플랫폼에서 거래 가능
+- **2012년 (2월):** CME Group의 NYMEX 부문이 지분을 약 50%로 확대; Oman Investment Fund 약 29%; Dubai Holding 약 9%; 기관투자자 약 12%
+- **2016년:** 오만 석유가스부가 DME Oman을 오만 원유 수출 공식판매가격(OSP) 벤치마크로 채택
+- **2018년:** 두바이 최고에너지위원회가 DME Oman을 두바이 원유 OSP 가격 벤치마크로 채택
+- **2024년 (1월):** Saudi Tadawul Group (STG)이 DME Holdings의 32.6% 전략적 지분을 인수, CME Group과 공동 최대주주로 등극
+- **2024년 (9월 2일):** Dubai Mercantile Exchange에서 Gulf Mercantile Exchange (GME)로 공식 리브랜딩
+- **2024년:** DME Oman이 아시아행 중동 원유의 36%를 차지 (2007년 8%에서 상승)
+
+[Source: [Wikipedia — Dubai Mercantile Exchange](https://en.wikipedia.org/wiki/Dubai_Mercantile_Exchange); [Wikipedia — DME Oman Crude Oil Futures Contract](https://en.wikipedia.org/wiki/DME_Oman_Crude_Oil_Futures_Contract); [MarketsWiki — Dubai Mercantile Exchange](https://www.marketswiki.com/wiki/Dubai_Mercantile_Exchange); [Logistics Middle East — Gulf Mercantile Exchange launched](https://www.logisticsmiddleeast.com/business/gulf-mercantile-exchange-launched-as-saudi-tadawul-group-acquires-major-stake); [PR Newswire — Saudi Tadawul Group acquires strategic stake](https://www.prnewswire.com/news-releases/saudi-tadawul-group-acquires-a-strategic-stake-in-dubai-mercantile-exchange-creating-gulf-mercantile-exchange-302038438.html)]
+
+### 전략적 중요성 (Strategic Importance)
+
+DME Oman은 ICE Brent (유럽 벤치마크) 및 NYMEX WTI (북미 벤치마크)와 함께 세계 3대 원유 벤치마크이다. 주요 전략적 중요성은 다음과 같다:
+
+- **아시아 사워 원유 가격결정:** DME Oman은 오만 및 두바이 원유 공식판매가격(OSP)의 명시적이고 유일한 벤치마크로, 아시아 수출 중동 원유의 역사적으로 확립된 가격 기준 역할을 한다
+- **실물 인수도:** 세계 최대 실물 인수도 원유 계약으로, 가격 발견에 실물 기반을 제공한다
+- **지리적 이점:** 수출항 Mina al Fahal (Petroleum Development Oman 운영)은 호르무즈 해협을 지나 오만만에 위치하여 지정학적 병목 리스크를 회피한다
+- **시장 점유율 성장:** 2007년 아시아행 중동 원유의 8%에서 2024년 36%로 확대
+
+[Source: [GME — About GME](https://www.gulfmerc.com/about-gme); [Oxford Energy — Prospects of the DME Oman Crude Oil Futures Contract](https://www.oxfordenergy.org/wpcms/wp-content/uploads/2011/01/March2008-DMECrudeOil-BassamFattouh.pdf); [Ursa Space — DME Oman crude in the spotlight](https://ursaspace.com/wp-content/uploads/2021/09/Oman-Crude-Futures-and-Storage.pdf)]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 / 자산 유형 (Market Segments / Asset Classes)
+
+| 자산 유형 | 상품 | 주요 계약 |
+|-------------|----------|---------------|
+| **에너지 — 원유** | 오만 사워 원유 선물 및 옵션 | Oman Crude Oil Futures (OQD), Oman Crude Oil Options (OQE), Micro Oman Crude Oil Futures |
+
+DME/GME는 오만 원유 파생상품에 전문화된 단일 상품 거래소이다. 이러한 좁은 집중은 광범위한 다자산 시장이 아닌 가격결정 벤치마크로서의 전략적 역할을 반영한다.
+
+### 2.2 거래 세션 / 거래 시간 (Trading Sessions / Hours)
+
+**참고:** 두바이 표준시(GST)는 연중 UTC+4이다 (일광절약시간 없음). DME/GME 상품은 미국 동부시간으로 운영되는 CME Globex에서 거래된다.
+
+**Oman Crude Oil Futures (OQD) on CME Globex**
+
+| 세션 | 미국 동부시간 | 두바이 시간 (GST) | UTC | 설명 |
+|---------|-------------------|-------------------|-----|-------------|
+| **전자거래 개시** | 18:00 (일요일) | 02:00 +1 (월요일) | 23:00 (일요일) | 일요일 저녁 ET에 주간 개시 |
+| **연속 거래** | 18:00 – 17:15 +1 | 02:00 +1 – 01:15 +2 | 23:00 – 22:15 +1 | 거의 연속 거래 (일일 약 23.25시간) |
+| **일일 점검 시간** | 17:15 – 18:00 | 01:15 – 02:00 | 22:15 – 23:00 | 45분 일일 점검 |
+| **주간 마감** | 17:15 (금요일) | 01:15 (토요일) | 22:15 (금요일) | 금요일 오후 ET에 주간 마감 |
+
+**정산 시간대:**
+- 일일 정산가격은 EST 14:30에 선언되며, EST 14:25~14:30 사이의 GME Oman 시장 관련 값을 기준으로 한다
+
+**Oman Marker Price:**
+- Marker Window 동안 근월물 OQD 계약에 대한 일일 마커 가격이 발표된다: 싱가포르 시간 16:25 – 16:30 (GST 08:25 – 08:30 / UTC 04:25 – 04:30)
+
+[Source: [GME — Trading Hours and Holiday Calendar](https://www.gulfmerc.com/gme-product-services/gme-trading-trading-hours-and-holiday-calendar); [GME — Settlements](https://www.gulfmerc.com/gme-product-services/gme-trading-settlements); [CME Group — Trading Hours](https://www.cmegroup.com/trading-hours.html); [GME — Oman Crude Oil Futures TAM](https://d2744r28dxz36a.cloudfront.net/Trading%20and%20clearing/Trade%20at%20Marker%20(TAM)/TAM.pdf)]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 거래 플랫폼 — CME Globex
+
+DME/GME 상품은 NYMEX WTI 및 기타 CME Group 에너지 상품과 동일한 플랫폼인 CME Globex 전자 매매체결엔진에 상장되어 거래된다. 이는 다음과 같은 이점을 제공한다:
+
+- **단일 플랫폼 접근:** 거래자가 동일한 전자 플랫폼에서 세계 3대 원유 벤치마크(WTI, Brent, DME Oman)에 모두 접근 가능
+- **체결 알고리즘:** 가격-시간 우선 (FIFO) — 표준 CME Globex 체결 로직
+- **주문 유형:** 지정가, 시장가, 스톱, 스톱-지정가, Market-if-Touched, 아이스버그 주문 등 CME Globex의 전체 주문 유형 이용 가능
+- **스프레드 거래:** OQD와 기타 CME Group 에너지 계약 간 상품간 스프레드 이용 가능 (예: WTI-Oman 스프레드)
+
+### 3.2 Trade at Marker (TAM)
+
+GME는 Trade at Marker (TAM) 기능을 제공한다:
+- 시장 참가자가 일일 Oman Marker Price로 거래를 체결할 수 있다
+- Marker Window: 각 거래일 싱가포르 시간 16:25 – 16:30
+- 마커 가격은 Marker Window 중 근월물(M1) 계약에서 체결된 거래로 결정된다
+
+### 3.3 청산 — CME Clearing
+
+- 모든 GME 상품은 CME Clearing (구 NYMEX Clearing)을 통해 청산된다
+- 채무인수(Novation): CME Clearing이 모든 매도자에 대한 매수자, 모든 매수자에 대한 매도자가 된다
+- 차감결제(Netting): CME Group 상품 전반에 걸쳐 청산 수준에서 포지션 차감
+- 결제은행: CME Group 인가 결제은행의 글로벌 네트워크
+
+### 3.4 실물 인수도 (Physical Delivery)
+
+- Oman Crude Oil Futures Contract은 **실물 인수도** 방식이다
+- 인수도 지점: 오만 무스카트 Mina al Fahal 수출 터미널 FOB (Free on Board)
+- 근월물은 항상 2개월 선행 (예: 1월 거래 중 3월물이 근월물)
+- 실물 인수도가 벤치마크로서의 계약 신뢰성을 뒷받침한다 — 현금결제 계약과 차별화
+
+[Source: [CME Group — GME Strategic Partnership](https://www.cmegroup.com/international/partnership-resources/gme-resources.html); [Wikipedia — DME Oman Crude Oil Futures Contract](https://en.wikipedia.org/wiki/DME_Oman_Crude_Oil_Futures_Contract); [GME — OQD Contract Summary](https://www.gulfmerc.com/gme-product-services/gme-contracts-contract-summary-oqd); [Rigzone — DME's Contracts Migrate to CME Group Trading Platform](https://www.rigzone.com/news/oil_gas/a/72413/dmes_contracts_migrate_to_cme_group_trading_platform/)]
+
+---
+
+## 5. 매매시스템 기술 (Trading System Technology)
+
+### 5.1 시스템 개요 (System Overview)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 거래 플랫폼 | CME Globex (CME Group이 호스팅 및 운영) |
+| 매매체결엔진 | CME Globex 매매체결엔진 — 중앙집중형 고성능 전자 플랫폼 |
+| 청산 시스템 | CME Clearing (블록/EFP 제출은 CME ClearPort) |
+| 기술 제공자 | CME Group (전체 기술 스택) |
+| 주문 접수 프로토콜 | CME iLink (FIX 기반), CME Market Data (MDP 3.0) |
+| 코로케이션 | 미국 일리노이주 오로라 CME Group 데이터센터 (기본); 전 세계 연결 허브 |
+
+### 5.2 플랫폼 변천 (Platform History)
+
+| 연도 | 연혁 |
+|------|-----------|
+| 2007 | DME가 NYMEX ACCESS 전자거래 플랫폼으로 출범 |
+| 2009 (2월) | CME Group의 NYMEX 인수 후 CME Globex 전자거래 플랫폼으로 이관 |
+| 2009~현재 | 모든 거래, 청산, 결제가 CME Group 인프라를 통해 처리 |
+
+### 5.3 연결성 (Connectivity)
+
+- **CME Globex 직접 접속:** 참가자는 CME의 글로벌 네트워크를 통해 CME iLink 프로토콜로 접속
+- **코로케이션:** 최저지연 접속을 위해 미국 일리노이주 오로라 CME Group 데이터센터에서 이용 가능
+- **글로벌 네트워크 허브:** CME는 런던, 도쿄, 싱가포르, 홍콩, 두바이 등 주요 금융 중심지에 연결 거점을 운영
+- **ISV 지원:** CME Globex을 지원하는 모든 주요 독립 소프트웨어 벤더가 DME/GME 상품도 지원
+
+**참고:** DME/GME가 CME Globex을 사용하므로, 거래소 자체는 독자적인 거래 기술을 운영하지 않는다. 모든 기술 인프라는 CME Group이 제공하고 유지관리한다.
+
+[Source: [CME Group — GME Strategic Partnership](https://www.cmegroup.com/international/partnership-resources/gme-resources.html); [CME Group Press Release — Dubai Mercantile Exchange Contracts Migrate to CME Group Platform](http://investor.cmegroup.com/news-releases/news-release-details/dubai-mercantile-exchange-contracts-migrate-cme-group-platform); [Rigzone — DME's Contracts Migrate to CME Group Trading Platform](https://www.rigzone.com/news/oil_gas/a/72413/dmes_contracts_migrate_to_cme_group_trading_platform/)]
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (Risk Controls & Circuit Breakers)
+
+### 8.1 가격제한 (Price Limits)
+
+DME/GME 상품은 CME Group의 표준 에너지 상품 가격제한 메커니즘의 적용을 받는다:
+
+| 메커니즘 | 설명 |
+|-----------|-------------|
+| **Price Banding (Velocity Logic)** | CME Globex의 동적 가격밴드 시스템으로, 극단적 가격에서의 주문 체결을 방지; 현재 시장가 주변의 동적 가격 범위를 벗어나는 주문을 거부 |
+| **Stop Logic** | 스톱 주문 연쇄가 시장을 정의된 임계치 이상으로 이동시킬 경우 짧은 일시정지를 발동 |
+| **일일 가격제한** | CME Group 규칙에 따른 상품별 일일 가격제한; 극단적 움직임 시 단계적으로 확대 [unverified] |
+
+### 8.2 포지션한도 (Position Limits)
+
+- CME Group이 DME Oman 계약에 대한 포지션한도 (건옥제한) 및 책임 수준을 설정
+- CME Group 및 CFTC 규칙(미국 관련 참가자 대상)에 따른 대량거래자 보고 의무 적용
+- CME Group의 시장규제부서를 통해 헤지 면제 가능
+
+### 8.3 CME Clearing 리스크 관리 (CME Clearing Risk Management)
+
+| 항목 | 세부사항 |
+|------|---------|
+| CCP | CME Clearing이 모든 GME 거래의 중앙거래상대방(CCP)으로 기능 |
+| 증거금 산출 방법론 | CME SPAN (Standard Portfolio Analysis of Risk) |
+| 일일정산 | 일일 결제; 필요시 장중 마진콜 |
+| 채무불이행 분담 순서 | CME Clearing의 표준 채무불이행 분담 순서 — 채무불이행 회원 자원, CME 출연금("skin in the game"), 청산기금(상호부담), 추가분담금 |
+| 재무 안전장치 | GME 상품은 CME Clearing의 전체 재무 안전장치 패키지(청산회원 자산 약 USD 350억)의 혜택을 받는다 [unverified] |
+
+[Source: [CME Group — GME Strategic Partnership](https://www.cmegroup.com/international/partnership-resources/gme-resources.html); [GME — About GME](https://www.gulfmerc.com/about-gme)]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 주요 감독기관 (Primary Regulator)
+
+- **Dubai Financial Services Authority (DFSA):** DIFC (Dubai International Financial Centre)의 독립 감독기관; DIFC 자유지구 내에서 허가된 거래소로서 DME/GME를 감독
+- **DIFC:** DIFC는 본토 UAE 규제와 별도의 독자적인 법률 및 규제 체계를 가진 금융 자유지구로 운영된다
+
+### 9.2 규제 환경 (Regulatory Environment)
+
+| 규정 | 설명 |
+|-----------|-------------|
+| **DIFC Markets Law** | DIFC 내 거래소 및 시장 중개기관을 규율하는 주요 법률 |
+| **DFSA Market Rules** | DIFC 규제 거래소에서의 거래, 행위, 시장남용, 보고를 규율하는 규칙 |
+| **CME Group Rules** | CME Group의 규칙집이 CME Globex에서의 DME/GME 상품 거래 및 CME Clearing을 통한 청산에 적용 |
+| **CFTC 감독** | 미국 CFTC 감독은 CME Clearing (등록 DCO)과 DME/GME 상품을 거래하는 미국인에게 적용 |
+
+### 9.3 국경간 인정 (Cross-Border Recognition)
+
+- DME/GME 상품은 CME Globex을 통해 전 세계 참가자에게 접근 가능하다
+- 미국 CFTC 등록 DCO이자 EU EMIR 하 인정 CCP인 CME Clearing의 지위가 DME/GME 상품에 대한 규제적 인정을 확대한다
+- DFSA는 다수의 국제 감독기관과 협력 협정을 유지한다
+
+### 9.4 시장 건전성 (Market Integrity)
+
+- DFSA와 CME Group 시장규제부서가 공동으로 시장감시를 수행
+- 포지션 보고 및 대량거래자 보고 의무 적용
+- DFSA 및 CME Group 규칙에 따른 시세조종 방지 및 시장남용 조항
+
+[Source: [GME — About GME](https://www.gulfmerc.com/about-gme); [Wikipedia — Dubai Mercantile Exchange](https://en.wikipedia.org/wiki/Dubai_Mercantile_Exchange); [CFTC — DME Contract Specifications](https://www.cftc.gov/sites/default/files/stellent/groups/public/@requestsandactions/documents/ifdocs/nymex_dme_4d_ex2_contr_specs.pdf)]
+
+---
+
+## 파생상품 전용 섹션 (Derivatives-Specific Sections)
+
+---
+
+## D1. 상품 목록 (Product Catalog)
+
+| 상품 | 심볼 | 계약 단위 | 결제 방식 | 상태 |
+|---------|--------|---------------|------------|--------|
+| Oman Crude Oil Futures | OQD | 1,000 배럴 | 실물 인수도 (FOB Mina al Fahal) | 활성 — 대표 상품 |
+| Oman Crude Oil European Style Options | OQE | 1,000 배럴 (선물 1계약) | 행사 시 선물 포지션으로 전환 | 활성 |
+| Micro Oman Crude Oil Futures | — | 100 배럴 | 현금결제 [unverified] | 활성 |
+
+**참고:** DME/GME는 오만 원유를 중심으로 한 좁은 상품 구성을 의도적으로 유지하는 거래소이다. 다자산 거래소와 달리, GME의 가치 제안은 상품 다양성보다는 오만 원유를 아시아 사워 원유의 확정적 벤치마크로 확립하는 데 초점을 맞추고 있다.
+
+[Source: [GME — OQD Contract Summary](https://www.gulfmerc.com/gme-product-services/gme-contracts-contract-summary-oqd); [GME — OQE Contract Summary](https://www.gulfmerc.com/gme-product-services/gme-contracts-contract-summary-oqe); [Wikipedia — DME Oman Crude Oil Futures Contract](https://en.wikipedia.org/wiki/DME_Oman_Crude_Oil_Futures_Contract); [DFM — Micro Oman Crude Oil Futures](https://www.dfm.ae/investing/products/oil-futures)]
+
+---
+
+## D2. 주요 계약 명세 (Key Contract Specifications)
+
+### 1. Oman Crude Oil Futures (OQD) — 대표 상품
+
+| 항목 | 명세 |
+|------|---------------|
+| 기초자산 | Oman Crude Oil (사워 원유 등급) |
+| 계약 단위 | 1,000 배럴 |
+| 가격 표시 | 배럴당 미국 달러 및 센트 |
+| 호가단위 (최소가격변동폭) | 배럴당 USD 0.01 |
+| 틱 가치 | USD 10.00 (= USD 0.01 x 1,000 배럴) |
+| 계약월 | 최대 72개 연속 월물 [unverified] |
+| 근월물 | 항상 2개월 선행 (예: 1월 거래 중 3월물이 근월물) |
+| 거래 시간 | 일요일 18:00 – 금요일 17:15 ET (CME Globex); 일일 45분 점검 17:15 – 18:00 ET |
+| 최종 거래일 | 계약월 2개월 전 월의 마지막 영업일 [unverified] |
+| 결제 방식 | 실물 인수도 |
+| 인수도 지점 | 오만 무스카트 FOB Mina al Fahal 터미널 (Petroleum Development Oman 운영) |
+| 결제 통화 | USD |
+| 일일 마커 가격 | 싱가포르 시간 Marker Window 16:25 – 16:30에 결정 |
+| 일일 정산 | EST 14:30 (EST 14:25 – 14:30 사이 값 기준) |
+| 블록거래 (대량매매) 최소 수량 | CME Group 규칙에 따른 상품별 임계치 [unverified] |
+
+### 2. Oman Crude Oil European Style Options (OQE)
+
+| 항목 | 명세 |
+|------|---------------|
+| 기초자산 | Oman Crude Oil Futures 1계약 (OQD) |
+| 계약 단위 | 1,000 배럴 |
+| 행사 유형 | 유러피안 (만기 시에만 행사 가능) |
+| 가격 표시 | 배럴당 미국 달러 및 센트 |
+| 호가단위 (최소가격변동폭) | 배럴당 USD 0.01 |
+| 틱 가치 | USD 10.00 |
+| 결제 | 행사 시 기초자산 OQD 계약의 선물 포지션으로 전환 |
+
+### 3. Micro Oman Crude Oil Futures
+
+| 항목 | 명세 |
+|------|---------------|
+| 계약 단위 | 100 배럴 (표준 OQD의 1/10) |
+| 가격 표시 | 배럴당 미국 달러 및 센트 |
+| 결제 | 현금결제 [unverified] |
+| 목적 | 개인 및 소규모 기관 참가자를 위한 소형 계약 |
+
+[Source: [GME — OQD Contract Summary](https://www.gulfmerc.com/gme-product-services/gme-contracts-contract-summary-oqd); [GME — OQE Contract Summary](https://www.gulfmerc.com/gme-product-services/gme-contracts-contract-summary-oqe); [Wikipedia — DME Oman Crude Oil Futures Contract](https://en.wikipedia.org/wiki/DME_Oman_Crude_Oil_Futures_Contract); [CFTC — DME Contract Specifications](https://www.cftc.gov/sites/default/files/stellent/groups/public/@requestsandactions/documents/ifdocs/nymex_dme_4d_ex2_contr_specs.pdf); [DFM — Micro Oman Crude Oil Futures](https://www.dfm.ae/investing/products/oil-futures)]
+
+---
+
+## D3. 증거금 체계 (Margin Framework)
+
+### 증거금 산출 방법론 (Margin Methodology)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 방법론 | CME SPAN (Standard Portfolio Analysis of Risk) |
+| 관리 주체 | CME Clearing |
+| 증거금 산출 | 포트폴리오 기반 리스크 평가; 가격 리스크, 변동성, 월간 스프레드, 상품간 상관관계를 고려 |
+| 개시증거금 | CME Clearing이 설정; 시장 변동성에 따라 조정; 일일 스캐닝 범위 발표 |
+| 유지증거금 | 통상 개시증거금의 일정 비율로 설정 (CME 표준 관행) |
+| 변동증거금 | 손익의 일일 mark-to-market 결제 |
+| 장중 증거금 | CME Clearing은 극단적 변동성 기간에 장중 마진콜을 발행할 수 있다 |
+
+### 증거금 처리 절차 (Margin Process)
+
+1. **일일 마감:** CME Clearing이 GME 상품을 포함한 광범위한 포트폴리오의 모든 미결제 포지션에 대해 SPAN을 사용하여 증거금 요건을 산출
+2. **교차증거금:** GME Oman 포지션이 동일 포트폴리오 내 다른 CME Group 에너지 상품(예: WTI 원유, Brent 원유)과 함께 보유될 때 잠재적 증거금 상계 가능
+3. **결제:** CME Group의 결제은행 네트워크를 통한 변동증거금의 일일 현금 결제
+4. **마진콜:** CME Clearing 규칙에 따라 정해진 시한 내에 충족해야 하며; 마진콜 미충족 시 포지션 청산으로 이어질 수 있다
+
+### 적격 담보 (CME Clearing 기준)
+
+- 현금 (USD 및 일부 외화)
+- 미국 재무부 증권
+- 국채 (승인 목록)
+- 신용장 (한도 적용)
+- 기타 CME 인가 담보 (헤어컷 적용)
+
+[Source: [CME Group — GME Strategic Partnership](https://www.cmegroup.com/international/partnership-resources/gme-resources.html); [GME — About GME](https://www.gulfmerc.com/about-gme)]
+
+---
+
+*본 조사는 GME/DME 공식 자료, CME Group 자료, CFTC 제출 서류, 업계 참고자료를 기반으로 작성되었다. [unverified]로 표기된 항목은 1차 출처를 통한 확인이 필요하다.*

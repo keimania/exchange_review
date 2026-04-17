@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Deutsche Borse / Xetra (XETR) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/ko/exchanges/asx.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/ko/exchanges/deutsche_borse.html">Deutsche Borse / Xetra (XETR)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 주식시장 — 개요 (Global Equities Markets — Overview)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 주식거래소 비교 분석 (Comparative Analysis of Global Equities Exchanges)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">거래소</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/asx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Australian Securities Exchange (ASX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/bme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bolsas y Mercados Espanoles (BME)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/borsa_italiana.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Borsa Italiana (Euronext Milan)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/bse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BSE Ltd (구 Bombay Stock Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/bursa_malaysia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bursa Malaysia Berhad (Bursa Malaysia)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/deutsche_borse.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Deutsche Borse / Xetra (XETR)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/euronext.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext N.V. (Euronext)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/hkex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hong Kong Exchanges and Clearing Limited (HKEX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/jpx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japan Exchange Group / Tokyo Stock Exchange (JPX / TSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/jse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Johannesburg Stock Exchange (JSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/krx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Korea Exchange (KRX, 한국거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/lse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">London Stock Exchange (LSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/nasdaq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NASDAQ Stock Market (NASDAQ)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/nasdaq_nordic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Nasdaq Nordic (OMX 북유럽 거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/nse_india.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India (NSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/nyse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">New York Stock Exchange (NYSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/sgx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Singapore Exchange (SGX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/six.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SIX Swiss Exchange (SIX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/sse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Stock Exchange (SSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/szse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shenzhen Stock Exchange (SZSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/tadawul.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Saudi Exchange (Tadawul)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/tmx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TMX Group / Toronto Stock Exchange (TSX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/twse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Stock Exchange (TWSE)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">규제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/regulations/asia_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">아시아태평양 주식시장 규제 (Asia-Pacific Equities Market Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/regulations/eu_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU/UK 주식시장 규제 (EU/UK Equities Market Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/regulations/us_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">미국 주식시장 규제 (US Equities Market Regulation)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">매매시스템</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/arrowhead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">arrowhead – 일본거래소그룹(JPX) / 도쿄증권거래소(TSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/exture_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exture 3.0 — 한국거래소 (Korea Exchange, KRX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NASDAQ INET – NASDAQ 주식시장 (NASDAQ Stock Market)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/millennium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Millennium Exchange – 런던증권거래소 (London Stock Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/optiq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Optiq – Euronext (유로넥스트)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/orion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Orion Trading Platform – Cash (OTP-C) – HKEX (홍콩거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/pillar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NYSE Pillar – 뉴욕증권거래소 (New York Stock Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/t7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 매매시스템 – Deutsche Boerse (Xetra)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/titan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX Titan / SGX REACH – 싱가포르거래소 (Singapore Exchange)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#개요-및-프로필-overview-profile" id="toc-개요-및-프로필-overview-profile" class="nav-link active" data-scroll-target="#개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</a>
+  <ul class="collapse">
+  <li><a href="#주요-연혁-key-historical-milestones" id="toc-주요-연혁-key-historical-milestones" class="nav-link" data-scroll-target="#주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</a></li>
+  </ul></li>
+  <li><a href="#시장-구조-market-structure" id="toc-시장-구조-market-structure" class="nav-link" data-scroll-target="#시장-구조-market-structure">2. 시장 구조 (Market Structure)</a>
+  <ul class="collapse">
+  <li><a href="#시장-구분-market-segments" id="toc-시장-구분-market-segments" class="nav-link" data-scroll-target="#시장-구분-market-segments">2.1 시장 구분 (Market Segments)</a></li>
+  <li><a href="#매매-시간-trading-sessions" id="toc-매매-시간-trading-sessions" class="nav-link" data-scroll-target="#매매-시간-trading-sessions">2.2 매매 시간 (Trading Sessions)</a></li>
+  <li><a href="#호가단위-tick-sizes" id="toc-호가단위-tick-sizes" class="nav-link" data-scroll-target="#호가단위-tick-sizes">2.3 호가단위 (Tick Sizes)</a></li>
+  <li><a href="#매매단위-lot-sizes" id="toc-매매단위-lot-sizes" class="nav-link" data-scroll-target="#매매단위-lot-sizes">2.4 매매단위 (Lot Sizes)</a></li>
+  <li><a href="#시장조성자-유동성공급자-프로그램-designated-sponsor-market-maker-liquidity-provider-programs" id="toc-시장조성자-유동성공급자-프로그램-designated-sponsor-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#시장조성자-유동성공급자-프로그램-designated-sponsor-market-maker-liquidity-provider-programs">2.5 시장조성자 / 유동성공급자 프로그램 – Designated Sponsor (Market Maker / Liquidity Provider Programs)</a></li>
+  </ul></li>
+  <li><a href="#매매-체결-방식-trading-mechanism" id="toc-매매-체결-방식-trading-mechanism" class="nav-link" data-scroll-target="#매매-체결-방식-trading-mechanism">3. 매매 체결 방식 (Trading Mechanism)</a>
+  <ul class="collapse">
+  <li><a href="#단일가매매-경매-방식-auction-mechanisms" id="toc-단일가매매-경매-방식-auction-mechanisms" class="nav-link" data-scroll-target="#단일가매매-경매-방식-auction-mechanisms">3.1 단일가매매 (경매) 방식 (Auction Mechanisms)</a></li>
+  <li><a href="#접속매매-연속매매-continuous-trading" id="toc-접속매매-연속매매-continuous-trading" class="nav-link" data-scroll-target="#접속매매-연속매매-continuous-trading">3.2 접속매매 (연속매매) (Continuous Trading)</a></li>
+  <li><a href="#가격-발견-price-discovery" id="toc-가격-발견-price-discovery" class="nav-link" data-scroll-target="#가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</a></li>
+  <li><a href="#주문-우선순위-order-priority" id="toc-주문-우선순위-order-priority" class="nav-link" data-scroll-target="#주문-우선순위-order-priority">3.4 주문 우선순위 (Order Priority)</a></li>
+  </ul></li>
+  <li><a href="#주문-유형-order-types" id="toc-주문-유형-order-types" class="nav-link" data-scroll-target="#주문-유형-order-types">4. 주문 유형 (Order Types)</a>
+  <ul class="collapse">
+  <li><a href="#기본-주문-유형-standard-order-types" id="toc-기본-주문-유형-standard-order-types" class="nav-link" data-scroll-target="#기본-주문-유형-standard-order-types">4.1 기본 주문 유형 (Standard Order Types)</a></li>
+  <li><a href="#고급-주문-유형-advanced-order-types" id="toc-고급-주문-유형-advanced-order-types" class="nav-link" data-scroll-target="#고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</a></li>
+  <li><a href="#주문-유효기간-time-in-force-options" id="toc-주문-유효기간-time-in-force-options" class="nav-link" data-scroll-target="#주문-유효기간-time-in-force-options">4.3 주문 유효기간 (Time-in-Force Options)</a></li>
+  <li><a href="#주문-정정-취소-order-modification-cancellation" id="toc-주문-정정-취소-order-modification-cancellation" class="nav-link" data-scroll-target="#주문-정정-취소-order-modification-cancellation">4.4 주문 정정 / 취소 (Order Modification / Cancellation)</a></li>
+  </ul></li>
+  <li><a href="#매매-시스템-기술-trading-system-technology" id="toc-매매-시스템-기술-trading-system-technology" class="nav-link" data-scroll-target="#매매-시스템-기술-trading-system-technology">5. 매매 시스템 (기술) (Trading System / Technology)</a>
+  <ul class="collapse">
+  <li><a href="#시스템-변천사-system-history" id="toc-시스템-변천사-system-history" class="nav-link" data-scroll-target="#시스템-변천사-system-history">시스템 변천사 (System History)</a></li>
+  <li><a href="#기술-스택-technology-stack" id="toc-기술-스택-technology-stack" class="nav-link" data-scroll-target="#기술-스택-technology-stack">기술 스택 (Technology Stack)</a></li>
+  <li><a href="#재해복구-업무연속성-disaster-recovery-business-continuity" id="toc-재해복구-업무연속성-disaster-recovery-business-continuity" class="nav-link" data-scroll-target="#재해복구-업무연속성-disaster-recovery-business-continuity">재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)</a></li>
+  </ul></li>
+  <li><a href="#시세정보-market-data" id="toc-시세정보-market-data" class="nav-link" data-scroll-target="#시세정보-market-data">6. 시세정보 (Market Data)</a>
+  <ul class="collapse">
+  <li><a href="#데이터-피드-프로토콜-data-feed-protocols" id="toc-데이터-피드-프로토콜-data-feed-protocols" class="nav-link" data-scroll-target="#데이터-피드-프로토콜-data-feed-protocols">6.1 데이터 피드 프로토콜 (Data Feed Protocols)</a></li>
+  <li><a href="#데이터-수준-data-levels" id="toc-데이터-수준-data-levels" class="nav-link" data-scroll-target="#데이터-수준-data-levels">6.2 데이터 수준 (Data Levels)</a></li>
+  <li><a href="#배포-인프라-distribution-infrastructure" id="toc-배포-인프라-distribution-infrastructure" class="nav-link" data-scroll-target="#배포-인프라-distribution-infrastructure">6.3 배포 인프라 (Distribution Infrastructure)</a></li>
+  <li><a href="#과거-데이터-historical-data" id="toc-과거-데이터-historical-data" class="nav-link" data-scroll-target="#과거-데이터-historical-data">6.4 과거 데이터 (Historical Data)</a></li>
+  </ul></li>
+  <li><a href="#접속-및-이용-connectivity-access" id="toc-접속-및-이용-connectivity-access" class="nav-link" data-scroll-target="#접속-및-이용-connectivity-access">7. 접속 및 이용 (Connectivity &amp; Access)</a>
+  <ul class="collapse">
+  <li><a href="#회원-자격-참가-membership-participation" id="toc-회원-자격-참가-membership-participation" class="nav-link" data-scroll-target="#회원-자격-참가-membership-participation">7.1 회원 자격 / 참가 (Membership / Participation)</a></li>
+  <li><a href="#접속-방법-connection-methods" id="toc-접속-방법-connection-methods" class="nav-link" data-scroll-target="#접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</a></li>
+  <li><a href="#코로케이션-전산센터-공동입주-근접-서비스-co-location-proximity-services" id="toc-코로케이션-전산센터-공동입주-근접-서비스-co-location-proximity-services" class="nav-link" data-scroll-target="#코로케이션-전산센터-공동입주-근접-서비스-co-location-proximity-services">7.3 코로케이션 (전산센터 공동입주) / 근접 서비스 (Co-location / Proximity Services)</a></li>
+  <li><a href="#api-프로토콜-api-protocols" id="toc-api-프로토콜-api-protocols" class="nav-link" data-scroll-target="#api-프로토콜-api-protocols">7.4 API 프로토콜 (API Protocols)</a></li>
+  <li><a href="#인증-테스트-certification-testing" id="toc-인증-테스트-certification-testing" class="nav-link" data-scroll-target="#인증-테스트-certification-testing">7.5 인증 / 테스트 (Certification / Testing)</a></li>
+  </ul></li>
+  <li><a href="#리스크-관리-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" id="toc-리스크-관리-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#리스크-관리-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (매매거래중단) (Risk Controls &amp; Circuit Breakers)</a>
+  <ul class="collapse">
+  <li><a href="#가격-제한-price-limits" id="toc-가격-제한-price-limits" class="nav-link" data-scroll-target="#가격-제한-price-limits">8.1 가격 제한 (Price Limits)</a></li>
+  <li><a href="#서킷브레이커-매매거래중단-변동성완화장치-volatility-interruptions" id="toc-서킷브레이커-매매거래중단-변동성완화장치-volatility-interruptions" class="nav-link" data-scroll-target="#서킷브레이커-매매거래중단-변동성완화장치-volatility-interruptions">8.2 서킷브레이커 (매매거래중단) – 변동성완화장치 (Volatility Interruptions)</a></li>
+  <li><a href="#매매-전-리스크-관리-pre-trade-risk-controls" id="toc-매매-전-리스크-관리-pre-trade-risk-controls" class="nav-link" data-scroll-target="#매매-전-리스크-관리-pre-trade-risk-controls">8.3 매매 전 리스크 관리 (Pre-trade Risk Controls)</a></li>
+  <li><a href="#kill-switch" id="toc-kill-switch" class="nav-link" data-scroll-target="#kill-switch">8.4 Kill Switch</a></li>
+  </ul></li>
+  <li><a href="#규제-체계-regulatory-framework" id="toc-규제-체계-regulatory-framework" class="nav-link" data-scroll-target="#규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</a>
+  <ul class="collapse">
+  <li><a href="#감독-기관-supervising-authority" id="toc-감독-기관-supervising-authority" class="nav-link" data-scroll-target="#감독-기관-supervising-authority">9.1 감독 기관 (Supervising Authority)</a></li>
+  <li><a href="#주요-규제-key-regulations" id="toc-주요-규제-key-regulations" class="nav-link" data-scroll-target="#주요-규제-key-regulations">9.2 주요 규제 (Key Regulations)</a></li>
+  <li><a href="#시장-감시-market-surveillance" id="toc-시장-감시-market-surveillance" class="nav-link" data-scroll-target="#시장-감시-market-surveillance">9.3 시장 감시 (Market Surveillance)</a></li>
+  <li><a href="#보고-의무-reporting-requirements" id="toc-보고-의무-reporting-requirements" class="nav-link" data-scroll-target="#보고-의무-reporting-requirements">9.4 보고 의무 (Reporting Requirements)</a></li>
+  <li><a href="#국경-간-협정-cross-border-arrangements" id="toc-국경-간-협정-cross-border-arrangements" class="nav-link" data-scroll-target="#국경-간-협정-cross-border-arrangements">9.5 국경 간 협정 (Cross-border Arrangements)</a></li>
+  </ul></li>
+  <li><a href="#수수료-및-수익-모델-fees-revenue-model" id="toc-수수료-및-수익-모델-fees-revenue-model" class="nav-link" data-scroll-target="#수수료-및-수익-모델-fees-revenue-model">10. 수수료 및 수익 모델 (Fees &amp; Revenue Model)</a>
+  <ul class="collapse">
+  <li><a href="#매매-수수료-trading-fees" id="toc-매매-수수료-trading-fees" class="nav-link" data-scroll-target="#매매-수수료-trading-fees">10.1 매매 수수료 (Trading Fees)</a></li>
+  <li><a href="#기타-수수료-other-fees" id="toc-기타-수수료-other-fees" class="nav-link" data-scroll-target="#기타-수수료-other-fees">10.2 기타 수수료 (Other Fees)</a></li>
+  <li><a href="#수익-구성-deutsche-borse-group-revenue-breakdown" id="toc-수익-구성-deutsche-borse-group-revenue-breakdown" class="nav-link" data-scroll-target="#수익-구성-deutsche-borse-group-revenue-breakdown">10.3 수익 구성 (Deutsche Borse Group) (Revenue Breakdown)</a></li>
+  </ul></li>
+  <li><a href="#최근-동향-recent-developments" id="toc-최근-동향-recent-developments" class="nav-link" data-scroll-target="#최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</a>
+  <ul class="collapse">
+  <li><a href="#시스템-업그레이드-최근-5년-system-upgrades" id="toc-시스템-업그레이드-최근-5년-system-upgrades" class="nav-link" data-scroll-target="#시스템-업그레이드-최근-5년-system-upgrades">시스템 업그레이드 (최근 5년) (System Upgrades)</a></li>
+  <li><a href="#신규-상품-시장-구분-new-products-segments" id="toc-신규-상품-시장-구분-new-products-segments" class="nav-link" data-scroll-target="#신규-상품-시장-구분-new-products-segments">신규 상품 / 시장 구분 (New Products / Segments)</a></li>
+  <li><a href="#규제-변화-regulatory-changes" id="toc-규제-변화-regulatory-changes" class="nav-link" data-scroll-target="#규제-변화-regulatory-changes">규제 변화 (Regulatory Changes)</a></li>
+  <li><a href="#전략적-이니셔티브-strategic-initiatives" id="toc-전략적-이니셔티브-strategic-initiatives" class="nav-link" data-scroll-target="#전략적-이니셔티브-strategic-initiatives">전략적 이니셔티브 (Strategic Initiatives)</a></li>
+  </ul></li>
+  <li><a href="#출처-sources" id="toc-출처-sources" class="nav-link" data-scroll-target="#출처-sources">출처 (Sources)</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/ko/exchanges/asx.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/ko/exchanges/deutsche_borse.html">Deutsche Borse / Xetra (XETR)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Deutsche Borse / Xetra (XETR)</h1>
+<p class="subtitle lead">주식시장 &gt; 거래소</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 4월 17일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>최종 업데이트:</strong> 2026-04-06 <strong>조사 등급:</strong> Tier 2 <strong>분야:</strong> 주식</p>
+</blockquote>
+<hr>
+<section id="개요-및-프로필-overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>정식 명칭</td>
+<td>Deutsche Borse AG (Frankfurter Wertpapierborse / Frankfurt Stock Exchange 및 Xetra 전자매매장소 운영)</td>
+</tr>
+<tr class="even">
+<td>약칭</td>
+<td>XETR (Xetra), FWB (Frankfurt Stock Exchange)</td>
+</tr>
+<tr class="odd">
+<td>웹사이트</td>
+<td>https://www.deutsche-boerse.com / https://www.xetra.com</td>
+</tr>
+<tr class="even">
+<td>설립 연도</td>
+<td>1585년 (프랑크푸르트 무역박람회 기원); Deutsche Borse AG 1992년 법인 설립</td>
+</tr>
+<tr class="odd">
+<td>국가 / 도시</td>
+<td>독일 / Frankfurt am Main (Mergenthalerallee 61, 65760 Eschborn)</td>
+</tr>
+<tr class="even">
+<td>소유 구조</td>
+<td>자사 거래소에 상장 (티커: DB1, Xetra/FWB); 기관투자자가 광범위하게 보유</td>
+</tr>
+<tr class="odd">
+<td>모회사 / 그룹</td>
+<td>Deutsche Borse Group – 매매(Xetra, Eurex, EEX), 청산(Eurex Clearing), 결제·예탁(Clearstream), 지수(STOXX/DAX 지수), 데이터·분석(Qontigo), 펀드서비스(IFS)를 포괄하는 수직통합형 거래소 그룹</td>
+</tr>
+<tr class="even">
+<td>감독 기관</td>
+<td>Bundesanstalt fur Finanzdienstleistungsaufsicht (BaFin) 및 Hessisches Ministerium fur Wirtschaft (헤센주 거래소감독청)</td>
+</tr>
+<tr class="odd">
+<td>시가총액 (상장기업 기준)</td>
+<td>상장기업 국내 시가총액 약 EUR 2.1조 (2025년 중반 기준) [미검증]</td>
+</tr>
+<tr class="even">
+<td>상장 종목 수</td>
+<td>Xetra 및 FWB 합산 주식 약 3,500개 이상, ETF/ETP 약 1,800개, 구조화상품(워런트, 인증서) 약 490,000개 이상, 채권 약 30,000개 이상 [미검증]</td>
+</tr>
+<tr class="odd">
+<td>일평균 거래량</td>
+<td>Xetra: 주식 일평균 약 500만~700만 건; Xetra 호가창 일평균 거래대금 약 EUR 45억~55억 (2024-2025) [추정]</td>
+</tr>
+<tr class="even">
+<td>일평균 거래대금</td>
+<td>Xetra 주식: 약 EUR 45억~55억/일; 구조화상품 포함 FWB 전체 구간은 이보다 상당히 높음 [추정]</td>
+</tr>
+</tbody>
+</table>
+<section id="주요-연혁-key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</h3>
+<ul>
+<li>1585: 프랑크푸르트 상인들이 무역박람회에서 고정 환율을 설정 – Frankfurt Stock Exchange (Frankfurter Wertpapierborse)의 기원</li>
+<li>1820: Frankfurt Stock Exchange 공식 조직, 채권·주식 공식 상장</li>
+<li>1949: 제2차 세계대전 후 Frankfurt Stock Exchange 재개장</li>
+<li>1969: 최초의 전산화 후선업무 결제 시스템 도입</li>
+<li>1988: DAX 30 지수 출시 (이후 2021년 DAX 40으로 확대)</li>
+<li>1992: Frankfurt Stock Exchange, Deutsche Terminborse (DTB, 이후 Eurex), Clearstream (결제)을 포괄하는 지주회사로 Deutsche Borse AG 법인 설립</li>
+<li>1997: <strong>Xetra 전자매매 플랫폼 출시</strong> (1997년 11월 28일), IBIS 시스템 대체; 완전 전자화된 주문주도형 시장</li>
+<li>2001: Deutsche Borse AG 상장 – 자사 Frankfurt Stock Exchange에 상장</li>
+<li>2002: DTB와 SOFFEX 합병으로 세계 최대 파생상품거래소 Eurex 설립</li>
+<li>2003: Cedel과 Deutsche Borse Clearing 합병으로 Clearstream International 설립</li>
+<li>2007: Xetra Release 9.0 도입; ICSD (International Central Securities Depository) 기능 강화</li>
+<li>2012-2013: 유럽집행위원회가 Deutsche Borse와 NYSE Euronext 간 합병을 반독점 사유로 불허</li>
+<li>2015: Deutsche Borse Group이 360T (FX 매매 플랫폼)를 인수하고 STOXX/DAX 지수 부문 재편</li>
+<li>2017: <strong>T7 매매 시스템 Xetra에 출시</strong> (2017년 6월), 기존 Xetra 시스템 대체; Eurex와 공유 플랫폼</li>
+<li>2018: MiFID II 시행; Deutsche Borse가 Xetra 최선집행 시장 구분 출시</li>
+<li>2020: DAX 지수 개편 발표; Qontigo 설립 (STOXX + Axioma 분석 합병)</li>
+<li>2021: DAX 구성종목 30개에서 40개로 확대 (2021년 9월)</li>
+<li>2022: SimCorp (투자운용 소프트웨어) EUR 39억 인수 발표</li>
+<li>2023: SimCorp 인수 완료; Crypto Finance AG 과반수 지분 인수</li>
+<li>2024: 매출 EUR 56억 돌파; T7 추가 업그레이드; D7 디지털 매매후 플랫폼 출시</li>
+<li>2025: 순매출 지속 성장 (약 EUR 60억 이상); 클라우드 네이티브 이니셔티브; 디지털자산 확대 [추정]</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="시장-구조-market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="시장-구조-market-structure">2. 시장 구조 (Market Structure)</h2>
+<section id="시장-구분-market-segments" class="level3">
+<h3 class="anchored" data-anchor-id="시장-구분-market-segments">2.1 시장 구분 (Market Segments)</h3>
+<p>Deutsche Borse는 주식을 위한 두 개의 주요 매매장소를 운영한다: <strong>Xetra</strong> 전자매매장소와 <strong>Frankfurt Stock Exchange 장내매매</strong> (Borse Frankfurt).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>설명</th>
+<th>상장 요건 (요약)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Xetra (정규시장 – Prime Standard)</strong></td>
+<td>최고 투명성 시장 구분; DAX 지수 편입 필수 조건; 국제회계기준(IFRS), 분기 보고, 연례 애널리스트 컨퍼런스, 영문 수시공시</td>
+<td>BaFin 승인 EU 투자설명서; 최소 3년 영업 이력; 최소 25% 유동비율 (지수 편입용); IFRS 재무제표</td>
+</tr>
+<tr class="even">
+<td><strong>Xetra (정규시장 – General Standard)</strong></td>
+<td>표준 투명성 요건을 갖춘 EU 정규시장</td>
+<td>BaFin 승인 EU 투자설명서; EU 투명성지침 최소 기준 충족; 반기 보고</td>
+</tr>
+<tr class="odd">
+<td><strong>Scale (Open Market – SME 시장 구분)</strong></td>
+<td>중소형 기업을 위한 성장 시장 구분; 거래소 규제 (EU 정규시장이 아님)</td>
+<td>Deutsche Borse를 통한 간소화 입회; 최소 시가총액 EUR 3,000만 [미검증]; 2년 재무 이력; Designated Sponsor (유동성공급자) 필요</td>
+</tr>
+<tr class="even">
+<td><strong>Basic Board (Open Market)</strong></td>
+<td>Open Market (Freiverkehr)의 진입단계 시장 구분; 경량화된 상장 의무</td>
+<td>Deutsche Borse에 신청; 입회문서(전체 투자설명서가 아님); 최소한의 지속적 의무</td>
+</tr>
+<tr class="odd">
+<td><strong>Borse Frankfurt (장내매매)</strong></td>
+<td>FWB에 상장된 모든 종목(주식, 채권, ETF, 구조화상품)에 대한 스페셜리스트 지원 장내/전자매매</td>
+<td>FWB 입회와 동일; 스페셜리스트(구 Skontrofuhrer)가 예시호가 및 확정호가 제시</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="매매-시간-trading-sessions" class="level3">
+<h3 class="anchored" data-anchor-id="매매-시간-trading-sessions">2.2 매매 시간 (Trading Sessions)</h3>
+<p>Xetra는 중부유럽시간(CET/CEST)으로 운영된다. 아래 시간은 CET (겨울 UTC+1 / 여름 UTC+2) 기준이다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 40%">
+<col style="width: 30%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>현지 시간 (CET)</th>
+<th>UTC (겨울)</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>매매 전</td>
+<td>07:30 - 08:50</td>
+<td>06:30 - 07:50</td>
+<td>시스템 개방; 주문 입력, 정정, 취소 가능; 체결 없음</td>
+</tr>
+<tr class="even">
+<td>시가단일가매매 (개장 경매) (호가 수집)</td>
+<td>08:50 - 09:00 (+랜덤 종료)</td>
+<td>07:50 - 08:00</td>
+<td>주문 축적; 예시호가 표시; 09:00 이후 약 30초 이내 랜덤 체결</td>
+</tr>
+<tr class="odd">
+<td>접속매매 (연속매매)</td>
+<td>~09:00 - 17:30</td>
+<td>~08:00 - 16:30</td>
+<td>가격-시간 우선원칙에 의한 연속 주문 체결</td>
+</tr>
+<tr class="even">
+<td>종가단일가매매 (장마감 경매) (호가 수집)</td>
+<td>17:30 - 17:35 (+랜덤 종료)</td>
+<td>16:30 - 16:35</td>
+<td>종가 결정; 최대 30초의 랜덤 종료</td>
+</tr>
+<tr class="odd">
+<td>매매 후</td>
+<td>17:35 - 20:30</td>
+<td>16:35 - 19:30</td>
+<td>거래 보고; 신규 체결 없음</td>
+</tr>
+<tr class="even">
+<td>장중 단일가매매</td>
+<td>종목별 예정 (예: DAX 종목 CET 13:00)</td>
+<td>상이</td>
+<td>특정 종목에 대한 예정된 장중 단일가매매</td>
+</tr>
+</tbody>
+</table>
+<p>참고: Xetra의 ETF 및 ETP는 CET 09:00-17:30에 거래된다. Borse Frankfurt 장내매매 시간은 주식 CET 08:00-20:00, 구조화상품 CET 08:00-22:00이다.</p>
+</section>
+<section id="호가단위-tick-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="호가단위-tick-sizes">2.3 호가단위 (Tick Sizes)</h3>
+<p>Xetra는 다른 EU 매매장소와 동일하게 <strong>MiFID II 호가단위 체계(최소가격변동폭 체계)</strong> (ESMA RTS 11)를 따른다. 호가단위는 종목의 가격 수준과 유동성 구간(일평균 거래건수, ADNT 기준)의 조합에 의해 결정된다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 26%">
+<col style="width: 27%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>가격 범위 (EUR)</th>
+<th>유동성 구간 1 (ADNT &lt; 10)</th>
+<th>유동성 구간 3 (ADNT 80-600)</th>
+<th>유동성 구간 6 (ADNT &gt;= 9000)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0 - 0.4999</td>
+<td>0.005</td>
+<td>0.002</td>
+<td>0.0005</td>
+</tr>
+<tr class="even">
+<td>0.5 - 0.9999</td>
+<td>0.01</td>
+<td>0.005</td>
+<td>0.001</td>
+</tr>
+<tr class="odd">
+<td>1 - 1.9999</td>
+<td>0.02</td>
+<td>0.01</td>
+<td>0.002</td>
+</tr>
+<tr class="even">
+<td>2 - 4.9999</td>
+<td>0.05</td>
+<td>0.02</td>
+<td>0.005</td>
+</tr>
+<tr class="odd">
+<td>5 - 9.9999</td>
+<td>0.1</td>
+<td>0.05</td>
+<td>0.01</td>
+</tr>
+<tr class="even">
+<td>10 - 19.9999</td>
+<td>0.2</td>
+<td>0.1</td>
+<td>0.02</td>
+</tr>
+<tr class="odd">
+<td>20 - 49.9999</td>
+<td>0.5</td>
+<td>0.2</td>
+<td>0.05</td>
+</tr>
+<tr class="even">
+<td>50 - 99.9999</td>
+<td>1.0</td>
+<td>0.5</td>
+<td>0.1</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: Xetra 적용 ESMA RTS 11; 대표값 – 전체 표는 6개 유동성 구간과 13개 가격 범위]</p>
+</section>
+<section id="매매단위-lot-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="매매단위-lot-sizes">2.4 매매단위 (Lot Sizes)</h3>
+<ul>
+<li><strong>표준 매매단위(거래단위)</strong>: Xetra 주식의 경우 1주</li>
+<li>Xetra 호가창 접속매매에서 최소 주문 크기 없음</li>
+<li><strong>대량매매 기준</strong>: MiFID II 대량주문(LIS) 면제에 따라 정의; 종목 유동성 등급에 따라 상이</li>
+<li><strong>구조화상품 거래단위</strong>: 상품별 상이 (통상 1단위)</li>
+</ul>
+</section>
+<section id="시장조성자-유동성공급자-프로그램-designated-sponsor-market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="시장조성자-유동성공급자-프로그램-designated-sponsor-market-maker-liquidity-provider-programs">2.5 시장조성자 / 유동성공급자 프로그램 – Designated Sponsor (Market Maker / Liquidity Provider Programs)</h3>
+<p><strong>Designated Sponsor</strong> 모델은 Xetra의 핵심 특징이다:</p>
+<ul>
+<li><strong>Designated Sponsor</strong>: 발행사(또는 지수구성종목의 경우 Deutsche Borse)와 계약하여 매매 시간 중 최소 유동성 및 최대 스프레드 요건을 준수하면서 양방향 호가를 지속 제시하는 등록 시장조성 업체</li>
+<li><strong>의무사항</strong>: Designated Sponsor는 Deutsche Borse가 정한 최소 호가 수량 및 최대 스프레드를 제시해야 하며; 종목 유동성 범주(A, B, C, D)에 따라 요건이 상이; 정해진 시간 내에 Quote Request에 응답해야 함</li>
+<li><strong>인센티브</strong>: 매매 수수료 감면; XLM (Xetra Liquidity Measure) 보고 우선권; 마케팅 가시성</li>
+<li><strong>XLM (Xetra Liquidity Measure)</strong>: 암묵적 매매비용(시장충격)에 대한 Deutsche Borse의 독자적 측정 지표로 Designated Sponsor 성과 평가에 사용; 월별 발표</li>
+<li><strong>특정 시장 구분의 요건</strong>: Scale 시장 구분 및 유동성이 낮은 주식은 입회 시 최소 1개의 Designated Sponsor가 필요한 경우가 일반적</li>
+<li><strong>Designated Sponsor 수</strong>: Xetra에서 20개 이상의 활성 Designated Sponsor 업체 [미검증]</li>
+</ul>
+<p><strong>KRX 비교:</strong> KRX의 유동성공급자(LP) 제도와 유사하나, Xetra의 Designated Sponsor는 종목 유동성 등급에 따라 보다 세분화된 의무사항을 갖추고 있으며, XLM이라는 독자적 유동성 측정 지표를 활용하는 점이 특징적이다.</p>
+<hr>
+</section>
+</section>
+<section id="매매-체결-방식-trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="매매-체결-방식-trading-mechanism">3. 매매 체결 방식 (Trading Mechanism)</h2>
+<section id="단일가매매-경매-방식-auction-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="단일가매매-경매-방식-auction-mechanisms">3.1 단일가매매 (경매) 방식 (Auction Mechanisms)</h3>
+<ul>
+<li><strong>시가단일가매매 (개장 경매)</strong>: CET 08:50에 호가 수집 단계가 시작되어 주문을 모으되 체결은 하지 않는다. 예시 경매 가격과 물량이 실시간 표시된다. CET 09:00에 최대 30초의 랜덤 종료 구간에 진입하며, 이후 실행 가능 거래량을 최대화하는 가격으로 체결된다. 가격이 결정되지 않으면 최우선 매수·매도호가가 표시되고 체결 없이 접속매매가 시작됨</li>
+<li><strong>종가단일가매매 (장마감 경매)</strong>: CET 17:30에 시작된다. 약 2분의 호가 수집 단계에서 주문을 모은다. 조작 방지를 위한 최대 30초의 랜덤 종료 구간이 이어진다. 체결은 지수 산출, 펀드 NAV, 파생상품 결제에 핵심적인 공식 종가를 결정한다</li>
+<li><strong>장중 단일가매매</strong>: 특정 종목군에 대해 예정 (예: DAX 구성종목 CET 13:00 장중 경매). 정기적 재평가가 필요한 종목에 추가 가격발견 기회를 제공하기 위한 목적</li>
+<li><strong>변동성완화장치 (VI) 발동 시 단일가매매 (변동성 경매)</strong>: 잠재 체결가가 동적 또는 정적 가격 범위를 위반할 경우 자동 발동된다. 해당 종목은 질서 있는 가격 발견을 위해 연장 호가 수집 경매에 진입한다. 변동성완화장치 발동 시 단일가매매는 정해진 기간(통상 2분) 후 랜덤 종료 구간이 이어진다</li>
+</ul>
+</section>
+<section id="접속매매-연속매매-continuous-trading" class="level3">
+<h3 class="anchored" data-anchor-id="접속매매-연속매매-continuous-trading">3.2 접속매매 (연속매매) (Continuous Trading)</h3>
+<ul>
+<li><strong>주문주도형 시장</strong>: Xetra는 접속매매 시간(CET 09:00-17:30) 중 순수 전자식 주문주도형 시장이다</li>
+<li><strong>가격-시간 우선원칙</strong>: 주문은 가격 우선(최우선 가격이 우선)으로 체결되고, 동일 가격에서는 시간 우선(먼저 입력된 주문이 우선)으로 체결된다. 동일 가격에서 공개 주문이 빙산주문의 비공개 부분보다 우선</li>
+<li><strong>Designated Sponsor</strong>가 양방향 호가를 제시하여 보충적 유동성을 제공하나, 접속매매는 근본적으로 호가창 모델이며 호가주도형 시장이 아님</li>
+<li><strong>Borse Frankfurt 장내매매</strong>는 스페셜리스트(Skontrofuhrer)가 예시호가를 설정하고 호가창 지원을 통해 매매를 촉진하는 하이브리드 모델로 운영</li>
+</ul>
+</section>
+<section id="가격-발견-price-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</h3>
+<ul>
+<li>1차 가격 발견은 Xetra의 <strong>시가 및 종가 단일가매매</strong>와 접속매매 호가창을 통해 이루어진다</li>
+<li>경매 체결 알고리즘은 다음 원칙을 따른다: (1) 실행 가능 거래량 최대화, (2) 잔여(미체결) 물량 최소화, (3) 동률 시 참조가격(이전 가격) 활용</li>
+<li><strong>Xetra 종가</strong>는 독일 주식의 가장 널리 참조되는 가격이며 DAX/MDAX/SDAX 지수 산출에 사용</li>
+<li>Xetra는 독일 내 전체 장내 주식 매매 거래량의 약 <strong>90%</strong>를 점유하여 지배적 가격발견 장소</li>
+<li>변동성완화장치를 위한 <strong>참조가격</strong>은 최종 경매 가격(정적)과 최종 체결가(동적)에서 설정되며, 접속매매 중 지속적으로 갱신</li>
+</ul>
+</section>
+<section id="주문-우선순위-order-priority" class="level3">
+<h3 class="anchored" data-anchor-id="주문-우선순위-order-priority">3.4 주문 우선순위 (Order Priority)</h3>
+<ul>
+<li><strong>가격 우선</strong>: 최우선 가격의 주문이 항상 먼저 체결</li>
+<li><strong>공개 우선</strong>: 동일 가격에서 공개 주문 수량이 비공개(빙산 잔량) 수량보다 우선</li>
+<li><strong>시간 우선</strong>: 동일 가격 및 동일 공개 상태에서는 가장 빠른 입력 시간이 우선</li>
+<li><strong>시장가주문</strong>은 지정가주문보다 우선 (최우선 가격을 가진 것으로 간주)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="주문-유형-order-types" class="level2">
+<h2 class="anchored" data-anchor-id="주문-유형-order-types">4. 주문 유형 (Order Types)</h2>
+<section id="기본-주문-유형-standard-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="기본-주문-유형-standard-order-types">4.1 기본 주문 유형 (Standard Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시장가주문 (Market Order)</td>
+<td>최우선 가격에서 체결; 무제한 가격 유효성; 경매에서는 상대방이 있으면 체결 보장; 접속매매에서는 잔류 주문에 대해 즉시 체결</td>
+</tr>
+<tr class="even">
+<td>지정가주문 (Limit Order)</td>
+<td>최대 매수가 또는 최소 매도가를 지정; 즉시 체결되지 않으면 호가창에 잔류</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="고급-주문-유형-advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시장가-지정가전환주문 (Market-to-Limit Order)</td>
+<td>시장가주문으로 진입; 최초 체결이 지정가격을 설정; 미체결 잔량은 해당 가격의 지정가주문으로 잔류</td>
+</tr>
+<tr class="even">
+<td>빙산주문 (Iceberg Order)</td>
+<td>지정된 표시수량만 호가창에 공개; 숨겨진 잔량이 표시 부분 전량 체결 시 자동으로 갱신; 갱신된 표시수량은 새로운 시간 우선순위 부여</td>
+</tr>
+<tr class="odd">
+<td>비공개주문 (Hidden Order)</td>
+<td>전체 주문 수량이 공개 호가창에서 비공개; 유입되는 적극적 주문에 대해서만 체결; 최소 주문 금액 통상 EUR 10,000 [미검증]</td>
+</tr>
+<tr class="even">
+<td>역지정가주문 (Stop Order / Stop Market)</td>
+<td>지정된 발동가격 도달 시까지 비활성; 활성화 시 시장가주문이 됨</td>
+</tr>
+<tr class="odd">
+<td>역지정가조건부주문 (Stop Limit Order)</td>
+<td>발동가격 도달 시까지 비활성; 활성화 시 지정된 가격의 지정가주문이 됨</td>
+</tr>
+<tr class="even">
+<td>양자택일주문 (One-Cancels-Other, OCO)</td>
+<td>한쪽이 체결되면 다른 쪽이 자동 취소되는 주문 쌍 [미검증 – T7에서 네이티브가 아닌 브로커 측에서 지원할 수 있음]</td>
+</tr>
+<tr class="odd">
+<td>추적역지정가주문 (Trailing Stop Order)</td>
+<td>정지가격이 유리한 가격 변동에 따라 지정된 추적 금액만큼 자동 조정 [미검증]</td>
+</tr>
+<tr class="even">
+<td>중간가격주문 (Midpoint Order)</td>
+<td>최우선 매수·매도호가의 중간가격에 연동; 특정 비공개 호가창 구분에서 사용 가능 [미검증]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-유효기간-time-in-force-options" class="level3">
+<h3 class="anchored" data-anchor-id="주문-유효기간-time-in-force-options">4.3 주문 유효기간 (Time-in-Force Options)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TIF</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>당일 (GFD)</td>
+<td>당일 매매시간에만 유효; 매매 종료 시 취소</td>
+</tr>
+<tr class="even">
+<td>취소시까지 (GTC)</td>
+<td>체결, 참가자 취소 또는 최대 유효기간(통상 360일)까지 유효</td>
+</tr>
+<tr class="odd">
+<td>지정일까지 (GTD)</td>
+<td>지정 날짜까지 유효</td>
+</tr>
+<tr class="even">
+<td>즉시체결잔량취소 (IOC)</td>
+<td>가능한 수량만큼 즉시 체결; 미체결 잔량 취소</td>
+</tr>
+<tr class="odd">
+<td>전량체결아니면취소 (FOK)</td>
+<td>즉시 전량 체결되어야 하며, 그렇지 않으면 전체 주문 취소</td>
+</tr>
+<tr class="even">
+<td>시가단일가매매 전용 (OA)</td>
+<td>시가단일가매매 호가 수집 및 체결 시에만 유효</td>
+</tr>
+<tr class="odd">
+<td>종가단일가매매 전용 (CA)</td>
+<td>종가단일가매매 호가 수집 및 체결 시에만 유효</td>
+</tr>
+<tr class="even">
+<td>경매 전용 (Auction Only)</td>
+<td>모든 경매(시가, 장중, 종가)에서 유효</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-정정-취소-order-modification-cancellation" class="level3">
+<h3 class="anchored" data-anchor-id="주문-정정-취소-order-modification-cancellation">4.4 주문 정정 / 취소 (Order Modification / Cancellation)</h3>
+<ul>
+<li>T7 ETI (Enhanced Trading Interface) 또는 FIX 게이트웨이를 통해 유효 매매 단계 중 언제든지 주문 정정(가격, 수량 및 기타 속성) 또는 취소 가능</li>
+<li><strong>가격 정정</strong>: 가격 변경 시 새로운 시간 우선순위 부여 (대기열 순위 상실)</li>
+<li><strong>수량 감소</strong>: 시간 우선순위 유지</li>
+<li><strong>수량 증가</strong>: 새로운 시간 우선순위 부여 (우선순위 상실)</li>
+<li><strong>자기체결방지</strong>: T7은 자기체결방지(SMP) 기능을 지원하여 업체가 자사 주문 간 의도치 않은 교차체결 방지 가능</li>
+<li><strong>대량 취소</strong>: T7 ETI를 통해 지원; 특정 세션, 종목, 또는 종목군에 대한 전체 주문 취소 가능</li>
+<li><strong>영구주문과 비영구주문</strong>: T7은 영구주문(시스템 장애조치 시 유지)과 비영구주문(장애조치 시 취소)을 구분; 비영구주문은 보다 낮은 지연시간 제공</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="매매-시스템-기술-trading-system-technology" class="level2">
+<h2 class="anchored" data-anchor-id="매매-시스템-기술-trading-system-technology">5. 매매 시스템 (기술) (Trading System / Technology)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시스템명</td>
+<td><strong>T7</strong> (공식 명칭 “T7 trading architecture”)</td>
+</tr>
+<tr class="even">
+<td>개발 주체</td>
+<td>Deutsche Borse가 Xetra (현물시장) 및 Eurex (파생상품) 양쪽을 위해 자체 공동 개발</td>
+</tr>
+<tr class="odd">
+<td>아키텍처</td>
+<td>고성능, 저지연, 이벤트 기반 아키텍처; 파티션 기반 설계로 각 종목군이 전용 매매체결엔진(매칭엔진) 파티션에 할당되어 병렬 처리</td>
+</tr>
+<tr class="even">
+<td>매매체결엔진 (매칭엔진)</td>
+<td>가격-시간-공개 우선원칙의 중앙지정가호가창(CLOB); 각 파티션이 종목 부분집합을 독립적으로 처리</td>
+</tr>
+<tr class="odd">
+<td>왕복 지연시간</td>
+<td>중앙값 <strong>저단위 마이크로초 범위</strong> (코로케이션 참가자 기준 약 5마이크로초); 99백분위 통상 10마이크로초 미만 [Deutsche Borse 발표 기반 추정]</td>
+</tr>
+<tr class="even">
+<td>주문 처리 용량</td>
+<td>일별 수백만 건의 주문 거래 처리가 가능하도록 설계; 최대 용량은 일반적 일별 부하를 크게 초과</td>
+</tr>
+<tr class="odd">
+<td>초당 메시지 수</td>
+<td>T7은 파티션당 <strong>초당 수십만 건</strong>의 메시지 처리량 지원; 시스템 전체 용량은 초당 수백만 건 [미검증 구체적 수치]</td>
+</tr>
+<tr class="even">
+<td>가동 연도</td>
+<td>2012년 (Eurex 파생상품용 T7); <strong>2017년</strong> (Xetra 현물시장용 T7, 기존 Xetra 시스템 대체)</td>
+</tr>
+</tbody>
+</table>
+<section id="시스템-변천사-system-history" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-변천사-system-history">시스템 변천사 (System History)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>기간</th>
+<th>시스템</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1991년 이전</td>
+<td>장내매매 전용</td>
+<td>Frankfurt Stock Exchange의 수동 매매 장내</td>
+</tr>
+<tr class="even">
+<td>1991-1997</td>
+<td>IBIS (Integriertes Borsenhandels- und Informationssystem)</td>
+<td>독일 주식을 위한 최초의 전자매매 시스템; 화면 기반이나 완전 자동 체결은 아님</td>
+</tr>
+<tr class="odd">
+<td>1997-2017</td>
+<td>Xetra (원래 플랫폼)</td>
+<td>완전 전자식 주문주도형 매매; 1997년 11월 28일 출시; 독일 주식 매매의 지배적 장소; 다수의 릴리스(Xetra 7.0~17.0)</td>
+</tr>
+<tr class="even">
+<td>2012-현재</td>
+<td>T7 (Eurex)</td>
+<td>2012년 12월 Eurex 파생상품에 출시; 통합 아키텍처</td>
+</tr>
+<tr class="odd">
+<td>2017-현재</td>
+<td><strong>T7 (Xetra)</strong></td>
+<td>2017년 6월 Xetra 현물시장을 T7으로 이전 (T7 Release 5.0); 현물과 파생상품이 단일 플랫폼에서 통합</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="기술-스택-technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="기술-스택-technology-stack">기술 스택 (Technology Stack)</h3>
+<ul>
+<li><strong>아키텍처</strong>: 파티션 기반으로, 각 매매체결엔진 파티션이 전용 하드웨어에서 구동되어 격리성과 결정론적 성능 보장</li>
+<li><strong>프로그래밍 언어</strong>: C++ (핵심 매매체결엔진) [미검증]</li>
+<li><strong>운영체제</strong>: Linux 기반</li>
+<li><strong>네트워크</strong>: 코로케이션 시설 내 고속·저지연 네트워크 패브릭; 10GbE 및 40GbE 연결 [미검증]</li>
+<li><strong>매매 게이트웨이</strong>:
+<ul>
+<li><strong>T7 ETI (Enhanced Trading Interface)</strong>: 최저 지연시간 주문 접수를 위한 네이티브 바이너리 프로토콜; 세션 기반, 비동기식</li>
+<li><strong>T7 FIX Gateway</strong>: 주문 접수 및 체결 보고를 위한 FIX 4.2/4.4 프로토콜</li>
+</ul></li>
+<li><strong>시세정보</strong>:
+<ul>
+<li><strong>T7 EMDI (Enhanced Market Data Interface)</strong>: UDP 멀티캐스트를 통한 전체 호가 깊이, 비집계 시세정보</li>
+<li><strong>T7 MDI (Market Data Interface)</strong>: UDP 멀티캐스트를 통한 집계/축약 최우선호가 시세정보</li>
+<li><strong>T7 EOBI (Enhanced Order Book Interface)</strong>: 매매체결엔진 파티션에서 직접 전달되는 초저지연 주문별 시세정보 피드; 코로케이션 참가자에게 제공</li>
+</ul></li>
+<li><strong>시뮬레이션 환경</strong>: T7은 회원 테스트를 위한 포괄적 시뮬레이션 환경 제공</li>
+</ul>
+</section>
+<section id="재해복구-업무연속성-disaster-recovery-business-continuity" class="level3">
+<h3 class="anchored" data-anchor-id="재해복구-업무연속성-disaster-recovery-business-continuity">재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)</h3>
+<ul>
+<li><strong>이중 데이터센터 아키텍처</strong>: 실시간 복제를 갖춘 주 및 보조 데이터센터</li>
+<li><strong>장애조치(Failover)</strong>: T7은 투명한 장애조치 지원; 영구주문은 게이트웨이 또는 매매체결엔진 장애조치 시 유지</li>
+<li><strong>비영구주문</strong>: 장애조치 시 취소 (저지연과의 상충 관계)</li>
+<li><strong>정기 DR 테스트</strong>: Deutsche Borse가 참가자와 함께 의무적 재해복구 훈련 실시</li>
+<li><strong>시세정보 이중화</strong>: 모든 시세정보 인터페이스에 이중 피드(A/B) 아키텍처</li>
+<li><strong>RPO/RTO</strong>: BaFin 및 ESMA의 핵심 시장 인프라 규제 요건에 부합 [구체적 수치 비공개]</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="시세정보-market-data" class="level2">
+<h2 class="anchored" data-anchor-id="시세정보-market-data">6. 시세정보 (Market Data)</h2>
+<section id="데이터-피드-프로토콜-data-feed-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-피드-프로토콜-data-feed-protocols">6.1 데이터 피드 프로토콜 (Data Feed Protocols)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 27%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>프로토콜</th>
+<th>설명</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T7 EOBI (Enhanced Order Book Interface)</td>
+<td>매매체결엔진 파티션에서 직접 제공되는 주문별, 비집계, 초저지연 시세정보; UDP 멀티캐스트를 통한 바이너리 프로토콜</td>
+<td>최저 지연시간이 필요한 HFT 및 알고리즘 매매; 코로케이션 전용</td>
+</tr>
+<tr class="even">
+<td>T7 EMDI (Enhanced Market Data Interface)</td>
+<td>전체 호가 깊이, 비집계 시세정보; UDP 멀티캐스트를 통한 바이너리 프로토콜</td>
+<td>비코로케이션 참가자를 위한 전체 호가창 복원</td>
+</tr>
+<tr class="odd">
+<td>T7 MDI (Market Data Interface)</td>
+<td>집계/축약 최우선호가 데이터 (최우선 매수·매도호가, 최종 체결가); UDP 멀티캐스트</td>
+<td>감시, 화면 시스템, 저대역폭 애플리케이션</td>
+</tr>
+<tr class="even">
+<td>T7 RDI (Reference Data Interface)</td>
+<td>종목 참조 데이터, 매매 파라미터, 상품 정의</td>
+<td>매매 전 설정, 정적 데이터 관리</td>
+</tr>
+<tr class="odd">
+<td>CEF (Common Exchange Format)</td>
+<td>과거 및 종가 데이터 파일</td>
+<td>후선업무, 대사, 과거 분석</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="데이터-수준-data-levels" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-수준-data-levels">6.2 데이터 수준 (Data Levels)</h3>
+<ul>
+<li><strong>Level 1 (최우선호가)</strong>: 최우선 매수·매도호가(BBO), 최종 체결가 및 수량, 누적 거래량, VWAP; T7 MDI를 통해 제공; xetra.com에서 지연 데이터(15분) 무료 제공</li>
+<li><strong>Level 2 (전체 호가 깊이)</strong>: 모든 가격 수준의 전체 호가창 깊이; T7 EMDI (전체 참가자) 및 T7 EOBI (코로케이션 참가자)를 통해 제공</li>
+<li><strong>주문별 데이터 (Order-by-Order)</strong>: EOBI를 통해 개별 주문 추가, 정정, 삭제가 표시; 시장 미시구조 분석을 위한 최고 수준의 세분성</li>
+</ul>
+</section>
+<section id="배포-인프라-distribution-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="배포-인프라-distribution-infrastructure">6.3 배포 인프라 (Distribution Infrastructure)</h3>
+<ul>
+<li>모든 실시간 시세정보 피드(EOBI, EMDI, MDI, RDI)에 대해 <strong>UDP 멀티캐스트</strong> 전달</li>
+<li><strong>이중 피드 이중화</strong>: Feed A와 Feed B가 동일한 순번의 데이터를 전달하여 클라이언트 측 중재 및 누락 감지</li>
+<li><strong>TCP 복구 서비스</strong>: 누락된 멀티캐스트 패킷의 재전송 요청용</li>
+<li><strong>스냅샷 서비스</strong>: 초기 상태 복구 또는 재접속을 위한 전체 호가창 스냅샷 제공</li>
+<li><strong>코로케이션 배포</strong>: EOBI 피드는 코로케이션 시설 내에서만 제공 (매매체결엔진으로부터 최저 지연 경로)</li>
+<li><strong>제3자 벤더</strong>: Bloomberg, Refinitiv/LSEG, ICE 등 주요 데이터 벤더를 통해 시세정보 제공</li>
+</ul>
+</section>
+<section id="과거-데이터-historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="과거-데이터-historical-data">6.4 과거 데이터 (Historical Data)</h3>
+<ul>
+<li><strong>Deutsche Borse Market Data + Services</strong>: 과거 틱 데이터, 종가 데이터, 참조 데이터, 기업 행위 제공</li>
+<li><strong>A7 Analytics Platform</strong>: 거래비용 분석(TCA) 및 시장 품질 지표를 위한 Deutsche Borse의 분석 서비스</li>
+<li><strong>CEF 파일</strong>: 전체 매매일 재구성을 위한 종가 공통 거래소 형식 파일</li>
+<li><strong>학술 이용</strong>: 파트너십 및 데이터 라이선스 프로그램을 통해 제공</li>
+<li><strong>XLM 데이터</strong>: 모든 Xetra 거래 종목에 대한 월별 Xetra Liquidity Measure 데이터 발표</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="접속-및-이용-connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="접속-및-이용-connectivity-access">7. 접속 및 이용 (Connectivity &amp; Access)</h2>
+<section id="회원-자격-참가-membership-participation" class="level3">
+<h3 class="anchored" data-anchor-id="회원-자격-참가-membership-participation">7.1 회원 자격 / 참가 (Membership / Participation)</h3>
+<ul>
+<li><strong>인가 매매 참가자</strong>: Xetra 매매 참가자로의 입회를 위해 Deutsche Borse에 신청해야 함; 자국 감독기관(독일 업체는 BaFin, 또는 MiFID II 여권제도에 따른 동등한 EU/EEA 기관)으로부터 인가 필요</li>
+<li><strong>유형</strong>: 직접 매매 참가자, Designated Sponsor (시장조성자), 후원접속(DEA – Direct Electronic Access)을 통해 후원회원으로 접속하는 참가자</li>
+<li><strong>요건</strong>: 적정 재무자원, 적격 매매인력(매매인 시험 필수), 견고한 IT 시스템 및 통제, 준법감시 및 리스크 관리 인프라</li>
+<li><strong>참가자 수</strong>: 20개국 이상에서 200명 이상의 매매 참가자가 Xetra에서 활동 [미검증]</li>
+</ul>
+</section>
+<section id="접속-방법-connection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>방법</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Deutsche Borse Network (N7)</strong></td>
+<td>관리형 네트워크 서비스(구 “Member Section Network”); 참가자 사무실과 T7 매매 인프라를 연결하는 전용 임대 회선</td>
+</tr>
+<tr class="even">
+<td><strong>코로케이션 크로스커넥트</strong></td>
+<td>코로케이션 시설 내에서 코로케이션 랙에서 T7 매매체결엔진 인프라로의 직접 광섬유 크로스커넥트</td>
+</tr>
+<tr class="odd">
+<td><strong>제3자 네트워크 제공자</strong></td>
+<td>승인된 네트워크 서비스 제공자(예: BT, Colt, IPC/Connexus)를 통해 Deutsche Borse의 접속 지점에 연결</td>
+</tr>
+<tr class="even">
+<td><strong>인터넷 (GUI)</strong></td>
+<td>수동 매매 및 모니터링을 위해 인터넷으로 접속 가능한 웹 기반 매매인 GUI (T7 Trader GUI) [미검증]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="코로케이션-전산센터-공동입주-근접-서비스-co-location-proximity-services" class="level3">
+<h3 class="anchored" data-anchor-id="코로케이션-전산센터-공동입주-근접-서비스-co-location-proximity-services">7.3 코로케이션 (전산센터 공동입주) / 근접 서비스 (Co-location / Proximity Services)</h3>
+<ul>
+<li><strong>주요 위치</strong>: equinix FR2 데이터센터, Frankfurt 지역 (Xetra 및 Eurex 양쪽의 T7 매매체결엔진이 여기에 호스팅) [미검증 – Deutsche Borse는 Frankfurt 지역 복수 시설 사용]</li>
+<li><strong>코로케이션 서비스</strong>: 랙 공간, 전력, 냉각, T7 인프라에 대한 직접 크로스커넥트; 다양한 랙 구성 가능</li>
+<li><strong>근접 서비스</strong>: 완전한 코로케이션이 필요하지 않은 업체를 위해 인근 데이터센터에서 T7까지 관리형 연결을 통한 근접 호스팅 제공</li>
+<li><strong>지연시간 이점</strong>: 코로케이션 참가자는 최저 지연시간 달성 (왕복 한 자릿수 마이크로초)</li>
+<li><strong>네트워크 장비</strong>: 참가자가 코로케이션 랙에 자체 서버 및 네트워크 장비 설치 가능</li>
+<li><strong>복수 크로스커넥트 옵션</strong>: T7 ETI 게이트웨이, 시세정보(EOBI) 스위치 및 기타 서비스에 대한 전용 광섬유 링크</li>
+</ul>
+</section>
+<section id="api-프로토콜-api-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="api-프로토콜-api-protocols">7.4 API 프로토콜 (API Protocols)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>프로토콜</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>T7 ETI (Enhanced Trading Interface)</strong></td>
+<td>네이티브 바이너리, 세션 지향; 최저 지연시간 주문 접수, 정정, 취소 및 체결 보고; 고빈도 전략 지원</td>
+</tr>
+<tr class="even">
+<td><strong>T7 FIX Gateway</strong></td>
+<td>FIX 4.2/4.4 준수; 주문 전달을 위한 표준 프로토콜; ETI보다 높은 지연시간이나 산업 표준</td>
+</tr>
+<tr class="odd">
+<td><strong>T7 GUI (Trader GUI)</strong></td>
+<td>수동 주문 입력, 시장 모니터링, 체결 관리를 위한 Java 기반 그래픽 인터페이스</td>
+</tr>
+<tr class="even">
+<td><strong>T7 Admin GUI</strong></td>
+<td>세션 관리, 리스크 파라미터 설정, 사용자 관리를 위한 관리자 인터페이스</td>
+</tr>
+<tr class="odd">
+<td><strong>Common Report Engine</strong></td>
+<td>XML/CSV 기반 매매후 보고; 체결 확인, 결제 지시, 규제 보고</td>
+</tr>
+<tr class="even">
+<td><strong>T7 RDI</strong></td>
+<td>종목 마스터 데이터를 위한 참조 데이터 인터페이스</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="인증-테스트-certification-testing" class="level3">
+<h3 class="anchored" data-anchor-id="인증-테스트-certification-testing">7.5 인증 / 테스트 (Certification / Testing)</h3>
+<ul>
+<li><strong>T7 시뮬레이션 환경</strong>: 운영 환경의 완전 기능 복제; 주문 접수, 시세정보 수신, 장애조치 시나리오에 대한 회원 테스트에 사용 가능</li>
+<li><strong>적합성/인증 테스트</strong>: 운영 환경 가동 전 필수; Deutsche Borse가 T7 프로토콜(ETI, FIX, 시세정보)의 올바른 구현을 검증</li>
+<li><strong>릴리스 테스트</strong>: T7 소프트웨어 릴리스에 대한 사전 통지 제공; 시뮬레이션에서의 전용 테스트 기간</li>
+<li><strong>회원 준비 프로그램</strong>: Deutsche Borse가 주요 시스템 업그레이드를 위한 회원 준비 상태 조율</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="리스크-관리-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="리스크-관리-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (매매거래중단) (Risk Controls &amp; Circuit Breakers)</h2>
+<section id="가격-제한-price-limits" class="level3">
+<h3 class="anchored" data-anchor-id="가격-제한-price-limits">8.1 가격 제한 (Price Limits)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>유형</th>
+<th>기준</th>
+<th>조치</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>정적 가격 범위 (Static Price Range)</td>
+<td>최종 경매 가격 대비 종목별 백분율 편차 (예: DAX 주식 약 10%) [미검증 구체적 비율]</td>
+<td>정적 범위 밖의 잠재 체결가는 변동성완화장치 발동을 유발</td>
+</tr>
+<tr class="even">
+<td>동적 가격 범위 (Dynamic Price Range)</td>
+<td>최종 체결가 또는 최우선 매수·매도호가 대비 종목별 백분율 편차; 정적 범위보다 좁음 (예: 유동주식 약 2~5%) [미검증]</td>
+<td>동적 범위 밖의 잠재 체결가는 변동성완화장치 발동을 유발</td>
+</tr>
+<tr class="odd">
+<td>확장 가격 범위 (Extended Price Range)</td>
+<td>변동성완화장치 발동 시 단일가매매 중 종목의 최대 허용 가격 범위; 경매 체결이 이를 위반하면 경매 연장</td>
+<td>경매 연장</td>
+</tr>
+</tbody>
+</table>
+<p>참고: Xetra는 고정 일일 가격제한(일일 상·하한가 비율)을 부과하지 않는다. 대신 아래 설명하는 변동성완화장치를 사용한다.</p>
+</section>
+<section id="서킷브레이커-매매거래중단-변동성완화장치-volatility-interruptions" class="level3">
+<h3 class="anchored" data-anchor-id="서킷브레이커-매매거래중단-변동성완화장치-volatility-interruptions">8.2 서킷브레이커 (매매거래중단) – 변동성완화장치 (Volatility Interruptions)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 38%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>유형</th>
+<th>발동 조건</th>
+<th>중단 기간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>변동성완화장치 (동적)</strong></td>
+<td>잠재 접속매매 체결 또는 경매 체결가가 동적 가격 범위(최종 체결가 기준)를 위반</td>
+<td>자동으로 호가 수집 경매로 전환; 통상 2분 후 최대 30초의 랜덤 종료 구간</td>
+</tr>
+<tr class="even">
+<td><strong>변동성완화장치 (정적)</strong></td>
+<td>잠재 가격이 정적 가격 범위(최종 경매 가격 기준)를 위반</td>
+<td>자동으로 호가 수집 경매로 전환; 통상 2분 + 랜덤 종료</td>
+</tr>
+<tr class="odd">
+<td><strong>확장 변동성완화장치</strong></td>
+<td>변동성완화장치 발동 시 단일가매매의 예시 체결가 자체가 확장 가격 범위를 위반</td>
+<td>경매가 추가 기간 연장; 반복 가능</td>
+</tr>
+<tr class="even">
+<td><strong>시장 전체 서킷브레이커</strong></td>
+<td>거래소 차원의 명시적 시장 전체 거래중단 메커니즘 없음 [미검증]; 개별 종목 수준의 변동성완화장치가 동일 목적 수행</td>
+<td>종목별; 전체 시장을 중단시키지 않음</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>변동성완화장치는 투명하다: T7 시스템은 변동성완화장치 발동 및 종료 시 모든 참가자에게 전용 메시지를 발행한다</li>
+<li>변동성완화장치 기간 중 주문 입력, 정정, 취소가 가능하나 경매 체결 전까지 매매는 발생하지 않는다</li>
+</ul>
+<p><strong>KRX 비교:</strong> KRX의 변동성완화장치(VI)는 동적 VI와 정적 VI로 구분되며, 발동 시 2분간 단일가매매를 실시한다. Xetra와 유사한 구조이나, KRX는 이에 더해 +/-30% 일일 가격제한폭을 병행 적용하는 점이 다르다.</p>
+</section>
+<section id="매매-전-리스크-관리-pre-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="매매-전-리스크-관리-pre-trade-risk-controls">8.3 매매 전 리스크 관리 (Pre-trade Risk Controls)</h3>
+<ul>
+<li><strong>최대 주문 금액</strong>: 세션/종목별 설정 가능; 기준 초과 주문은 T7에서 거부</li>
+<li><strong>최대 주문 수량</strong>: 주문당 최대 주식/계약 수 제한</li>
+<li><strong>가격 합리성 검사</strong>: T7이 현재 시장 대비 유입 주문 가격을 검증하고 비합리적 가격(극단적 지정가)의 주문을 거부</li>
+<li><strong>스로틀링 / 메시지 속도 제한</strong>: T7이 세션당 메시지 속도 제한 적용 (예: 초당 최대 거래 건수); 과도한 메시지 속도는 스로틀링 또는 세션 단절 초래</li>
+<li><strong>고급 리스크 보호(ARP)</strong>: 시간 구간별 누적 체결 모니터링; 롤링 시간 윈도우 내에서 업체의 체결 물량/금액이 설정 기준을 초과하면 추가 주문이 자동 거부되거나 세션이 정지</li>
+<li><strong>청산회원별 매매 전 리스크 한도</strong>: 청산회원(Eurex Clearing 경유)이 고객에 대한 매매 전 한도를 실시간으로 설정·모니터링 가능</li>
+<li><strong>자기체결방지</strong>: 업체의 자사 매수·매도 주문 간 체결 방지</li>
+</ul>
+</section>
+<section id="kill-switch" class="level3">
+<h3 class="anchored" data-anchor-id="kill-switch">8.4 Kill Switch</h3>
+<ul>
+<li><strong>T7 Kill Switch (Stop Button)</strong>: T7 Admin GUI를 통해 사용 가능; 인가된 리스크 관리자가 특정 세션, 사용자, 또는 사업부의 모든 주문 및 호가 삭제 가능</li>
+<li><strong>청산회원 정지</strong>: 청산회원이 Eurex Clearing 인터페이스를 통해 비청산회원 고객에 대한 긴급 정지 발동 가능</li>
+<li><strong>범위</strong>: 특정 매매인, 세션, 사업부, 또는 전체 업체의 모든 미체결 주문 취소 가능</li>
+<li><strong>시장운영부서 긴급 정지</strong>: 참가자가 Deutsche Borse 시장운영부서에 전화로 매매 활동 긴급 중단 요청 가능</li>
+<li><strong>자동 발동</strong>: ARP가 누적 기준 위반 시 kill switch로 자동 기능 가능</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="규제-체계-regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</h2>
+<section id="감독-기관-supervising-authority" class="level3">
+<h3 class="anchored" data-anchor-id="감독-기관-supervising-authority">9.1 감독 기관 (Supervising Authority)</h3>
+<ul>
+<li><strong>BaFin (Bundesanstalt fur Finanzdienstleistungsaufsicht)</strong>: 독일 연방 금융감독청; Deutsche Borse AG를 시장 운영자로 규제하고 매매 참가자를 감독</li>
+<li><strong>거래소감독청 (Borsennaufsichtsbehorde)</strong>: Hessisches Ministerium fur Wirtschaft, Energie, Verkehr und Wohnen (헤센주 경제부)가 독일 거래소법(Borsengesetz)에 따라 주 차원에서 Frankfurt Stock Exchange를 직접 감독</li>
+<li><strong>ECB / Bundesbank</strong>: 시스템적으로 중요한 금융시장 인프라로서 Clearstream 및 Eurex Clearing 감독</li>
+<li><strong>ESMA</strong>: EU 차원 조율; Deutsche Borse 매매장소는 독일법으로 이행된 MiFID II/MiFIR 체계 하에서 운영</li>
+</ul>
+</section>
+<section id="주요-규제-key-regulations" class="level3">
+<h3 class="anchored" data-anchor-id="주요-규제-key-regulations">9.2 주요 규제 (Key Regulations)</h3>
+<ul>
+<li><strong>Borsengesetz (독일 거래소법)</strong>: 독일 내 거래소의 조직 및 운영을 규율하는 주요 법률</li>
+<li><strong>Wertpapierhandelsgesetz (WpHG – 증권거래법)</strong>: EU MiFID II/MiFIR을 독일법으로 이행; 증권매매, 시장남용, 투명성을 규율</li>
+<li><strong>MiFID II / MiFIR</strong>: 매매장소, 투명성, 투자자 보호, 시장 구조를 위한 EU 전역 체계; 직접 적용(MiFIR) 및 이행(MiFID II)</li>
+<li><strong>시장남용규정 (MAR)</strong>: EU 규정 596/2014; 내부자거래, 시세조종, 내부정보의 불법 공개 금지</li>
+<li><strong>EU 투자설명서 규정</strong>: 공모 및 정규시장 입회를 규율</li>
+<li><strong>EMIR (European Market Infrastructure Regulation)</strong>: 청산 의무 및 CCP 규제 규율 (Eurex Clearing 관련)</li>
+<li><strong>CSDR (Central Securities Depositories Regulation)</strong>: 결제 및 CSD 운영 규율 (Clearstream 관련)</li>
+<li><strong>투명성지침이행법 (Transparenzrichtlinie-Umsetzungsgesetz)</strong>: 발행사 지속적 공시를 위한 EU 투명성지침 이행</li>
+</ul>
+</section>
+<section id="시장-감시-market-surveillance" class="level3">
+<h3 class="anchored" data-anchor-id="시장-감시-market-surveillance">9.3 시장 감시 (Market Surveillance)</h3>
+<ul>
+<li><strong>매매감시실 (HuSt – Handelsuberwachungsstelle)</strong>: 거래소법에 따라 법적으로 요구되는 거래소 내 독립 부서로, 잠재적 시세조종, 내부자거래, 규칙 위반에 대해 실시간 매매 활동을 모니터링</li>
+<li><strong>BaFin의 시장 감시</strong>: BaFin은 MiFIR 제26조에 따라 투자회사가 보고한 데이터를 활용하여 자체 거래 모니터링 운영</li>
+<li><strong>자동화 감시</strong>: 주문 흐름, 체결 실행, 참가자 행위를 분석하는 독자적 감시 시스템을 사용한 실시간 패턴 감지</li>
+<li><strong>의심 거래 및 주문 보고 (STORs)</strong>: 회원사는 의심스러운 매매 활동을 BaFin에 보고해야 함</li>
+<li><strong>교차시장 조율</strong>: Deutsche Borse는 거래소 간 감시 프로그램에 참여하고 ESMA 및 기타 EU 국가 감독기관과 협력</li>
+</ul>
+</section>
+<section id="보고-의무-reporting-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="보고-의무-reporting-requirements">9.4 보고 의무 (Reporting Requirements)</h3>
+<ul>
+<li><strong>거래 보고</strong>: 투자회사는 MiFIR 제26조에 따라 T+1 이내에 국가 감독기관(독일 업체는 BaFin)에 보고; 거래당 65개 데이터 항목</li>
+<li><strong>매매 후 투명성</strong>: 기술적으로 가능한 한 실시간에 가깝게 체결 상세(가격, 물량, 시간) 공개; 대량매매 및 비유동성 종목에 대해 지연 가능</li>
+<li><strong>매매 전 투명성</strong>: 정규시장 종목에 대한 매수·매도호가 및 호가창 깊이 표시</li>
+<li><strong>공매도 공시</strong>: 순공매도 포지션 0.2% 초과 시 BaFin에 보고; 0.5% 초과 시 공개 (EU 공매도 규정)</li>
+<li><strong>대량 보유 통지</strong>: 의결권 3%, 5%, 10%, 15%, 20%, 25%, 30%, 50%, 75% 기준 초과 시 공시 필요 (EU 투명성지침을 이행하는 독일 WpHG)</li>
+<li><strong>임원 거래 (PDMR 거래)</strong>: 경영책임자는 발행사 증권에 대한 거래를 BaFin 및 발행사에 보고해야 함</li>
+</ul>
+</section>
+<section id="국경-간-협정-cross-border-arrangements" class="level3">
+<h3 class="anchored" data-anchor-id="국경-간-협정-cross-border-arrangements">9.5 국경 간 협정 (Cross-border Arrangements)</h3>
+<ul>
+<li><strong>EU MiFID II 여권제도</strong>: EU/EEA 회원국에서 인가된 투자회사는 독일 지점 설립 없이 원격 회원으로 Xetra에 접속 가능</li>
+<li><strong>역외국 접속</strong>: 비EU 업체는 BaFin과 해당 업체의 본국 감독기관 간 동등성 평가 및 양자 MoU에 따라 Xetra에 접속 가능</li>
+<li><strong>ESMA 협력</strong>: Deutsche Borse는 범유럽 감독 수렴에 관해 ESMA와 협력</li>
+<li><strong>IOSCO MMOU</strong>: BaFin은 서명국으로서 국경 간 정보 공유를 촉진</li>
+<li><strong>브렉시트 이후</strong>: 영국 업체는 역외국 협정에 따라 Xetra에 접속; BaFin과 FCA 간 양해각서 존재</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="수수료-및-수익-모델-fees-revenue-model" class="level2">
+<h2 class="anchored" data-anchor-id="수수료-및-수익-모델-fees-revenue-model">10. 수수료 및 수익 모델 (Fees &amp; Revenue Model)</h2>
+<section id="매매-수수료-trading-fees" class="level3">
+<h3 class="anchored" data-anchor-id="매매-수수료-trading-fees">10.1 매매 수수료 (Trading Fees)</h3>
+<p>Xetra 매매 수수료는 주로 <strong>거래대금 기반(ad valorem)</strong>이며 특정 시장 구분에 메이커-테이커(유동성 제공-소비 수수료 모델) 가격체계를 적용한다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>수수료 유형</th>
+<th>구조</th>
+<th>요율</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>표준 체결 수수료 (주식)</td>
+<td>체결 주문당 가치 기반</td>
+<td>거래대금의 약 0.48 bps (거래량 단계 및 가격 모델에 따라 상이) [미검증 – Xetra Price List에 게재]</td>
+</tr>
+<tr class="even">
+<td>적극적 (테이커) 수수료</td>
+<td>유동성을 소비하는 체결 가능 주문에 높은 수수료</td>
+<td>패시브 수수료보다 통상 0.1-0.3 bps 높음 [미검증]</td>
+</tr>
+<tr class="odd">
+<td>소극적 (메이커) 수수료 / 리베이트</td>
+<td>유동성을 공급하는 주문에 감면 수수료 또는 리베이트</td>
+<td>테이커 수수료보다 낮음; 특정 프로그램에서 제로 또는 리베이트 가능 [미검증]</td>
+</tr>
+<tr class="even">
+<td>최소 수수료</td>
+<td>체결 주문당</td>
+<td>체결당 최소 EUR 0.60 [미검증]</td>
+</tr>
+<tr class="odd">
+<td>Designated Sponsor 수수료</td>
+<td>Designated Sponsor 주문 흐름에 대한 감면 수수료</td>
+<td>표준 요율 대비 대폭 감면</td>
+</tr>
+<tr class="even">
+<td>ETF/ETP 매매 수수료</td>
+<td>가치 기반</td>
+<td>주식과 유사한 구조; ETF 유치를 위한 경쟁력 있는 수준</td>
+</tr>
+<tr class="odd">
+<td>장내매매 (Borse Frankfurt)</td>
+<td>체결 거래당 거래 수수료</td>
+<td>별도 수수료표; 스페셜리스트 지원 매매</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="기타-수수료-other-fees" class="level3">
+<h3 class="anchored" data-anchor-id="기타-수수료-other-fees">10.2 기타 수수료 (Other Fees)</h3>
+<ul>
+<li><strong>상장 수수료 (초기)</strong>: 시장 구분 및 시가총액에 따른 입회 수수료; Prime Standard 초기 상장 수수료는 수천 EUR부터 시작하여 시가총액에 따라 증가 [미검증 구체적 일정]</li>
+<li><strong>상장 수수료 (연간)</strong>: 상장/편입 유지를 위한 연간 수수료; 시장 구분(Prime Standard, General Standard, Scale, Basic Board)에 따라 상이</li>
+<li><strong>접속 수수료</strong>: T7 ETI 세션, FIX 세션, 시세정보 연결, 코로케이션 크로스커넥트에 대한 월정 수수료</li>
+<li><strong>시세정보 수수료</strong>: 실시간 데이터(Level 1, Level 2, EOBI)에 대한 사용자별 및 기업 라이선스 수수료; 화면용 vs.&nbsp;비화면용 별도 가격; xetra.com에서 지연 데이터 무료 제공</li>
+<li><strong>코로케이션 수수료</strong>: 코로케이션 시설 내 월별 랙 임대, 전력, 크로스커넥트 수수료</li>
+<li><strong>청산 수수료</strong>: Eurex Clearing이 Xetra 거래의 CCP 청산에 대해 거래당 수수료 부과; 전체 비용 체인에 포함</li>
+</ul>
+</section>
+<section id="수익-구성-deutsche-borse-group-revenue-breakdown" class="level3">
+<h3 class="anchored" data-anchor-id="수익-구성-deutsche-borse-group-revenue-breakdown">10.3 수익 구성 (Deutsche Borse Group) (Revenue Breakdown)</h3>
+<p>Deutsche Borse Group의 FY 2024 연결 순매출은 약 <strong>EUR 56억</strong>이며 [출처: Deutsche Borse AG Annual Report 2024], 부문별 구성은 다음과 같다: - <strong>매매 및 청산 (Eurex, Xetra, EEX, 360T)</strong>: 순매출의 약 40% [추정] - <strong>증권서비스 (Clearstream)</strong>: 순매출의 약 25% [추정] - <strong>펀드서비스 (IFS)</strong>: 순매출의 약 10% [추정] - <strong>데이터 및 분석 (Qontigo, ISS)</strong>: 순매출의 약 15% [추정] - <strong>SimCorp</strong>: 순매출의 약 10% [추정]</p>
+<p>참고: Xetra 현물주식 매매는 매매 및 청산 부문의 일부이며, 해당 부문에는 Eurex 파생상품, EEX 상품/에너지, 360T FX도 포함된다.</p>
+<hr>
+</section>
+</section>
+<section id="최근-동향-recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</h2>
+<section id="시스템-업그레이드-최근-5년-system-upgrades" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-업그레이드-최근-5년-system-upgrades">시스템 업그레이드 (최근 5년) (System Upgrades)</h3>
+<ul>
+<li><strong>2021</strong>: T7 Release 9.1 – 매매체결엔진 성능 강화; 신규 주문 유형 및 리스크 관리; Borse Frankfurt Zertifikate (구조화상품) T7 이전</li>
+<li><strong>2022</strong>: T7 Release 10.0 – 지연시간 개선; 자기체결방지 확대; EOBI 피드 기능 강화</li>
+<li><strong>2023</strong>: T7 Release 11.0 – 추가 성능 최적화; 클라우드 준비 인프라 개선; 신규 종목 유형 지원</li>
+<li><strong>2024</strong>: T7 Release 12.0 – 매매 전 리스크 관리 개선; 고급 리스크 보호(ARP) 확대; GUI 매매인 기능 강화</li>
+<li><strong>2025</strong>: T7 성능 점진적 업그레이드 지속; 클라우드 네이티브 인프라 및 하이브리드 배포 모델에 주력 [미검증 구체적 릴리스 번호]</li>
+<li><strong>D7 매매후 플랫폼</strong>: DLT (분산원장기술) 기반 디지털/토큰화 증권 결제를 위해 2024년 출시; 2024년 D7에서 최초 발행 결제 처리</li>
+</ul>
+</section>
+<section id="신규-상품-시장-구분-new-products-segments" class="level3">
+<h3 class="anchored" data-anchor-id="신규-상품-시장-구분-new-products-segments">신규 상품 / 시장 구분 (New Products / Segments)</h3>
+<ul>
+<li><strong>D7 디지털 매매후 플랫폼</strong>: 독일 eWpG (전자증권법)에 따른 DLT 기반 디지털증권 발행·결제 플랫폼; 최초 암호증권 및 디지털 채권 처리 [출처: Deutsche Borse 보도자료]</li>
+<li><strong>Crypto Finance AG</strong>: Deutsche Borse가 스위스 규제 암호자산 서비스 제공자의 과반수 지분 인수, 디지털자산 매매·수탁·결제 가능</li>
+<li><strong>ESG 데이터 및 분석</strong>: ISS ESG (2021년 인수) 데이터 범위 확대; ESG 등급 및 스크리닝 도구가 Qontigo 분석 제품군에 통합</li>
+<li><strong>DAX 40 확대</strong>: DAX 지수가 2021년 9월 구성종목 30개에서 40개로 확대, 지수 분산 개선</li>
+<li><strong>Xetra ETF 시장 구분</strong>: 지속 성장; Xetra는 1,800개 이상의 ETF/ETP가 상장된 유럽 최대 ETF 매매장소 [미검증 정확한 현재 수치]</li>
+</ul>
+</section>
+<section id="규제-변화-regulatory-changes" class="level3">
+<h3 class="anchored" data-anchor-id="규제-변화-regulatory-changes">규제 변화 (Regulatory Changes)</h3>
+<ul>
+<li><strong>MiFID II/MiFIR 개정</strong>: EU 공동입법자가 2024-2025년 MiFIR 개정안을 채택, EU 내 주식 통합시세정보 제공자(CTP) 신설 포함; Deutsche Borse가 잠재적 CTP 운영자 또는 기여자로 위치 [미검증]</li>
+<li><strong>DORA (Digital Operational Resilience Act)</strong>: 2025년 1월 시행 EU 규정으로 금융기관(거래소 포함)에 ICT 리스크 관리, 복원력 테스트, 제3자 리스크 감독 강화 요구</li>
+<li><strong>EU 상장법 (EU Listing Act)</strong>: 2024년 채택된 EU 상장 규칙 개혁으로 SME의 공개시장 접근 용이화; 투자설명서 요건 완화 및 투명성 규칙 조정</li>
+<li><strong>eWpG (전자증권법)</strong>: 물리적 증서 없이 DLT 기반 증권 발행을 가능하게 하는 독일 법률; D7 플랫폼의 기반</li>
+<li><strong>결제주기 (T+1)</strong>: T+2에서 T+1으로의 결제 이전에 관한 EU 업계 논의 진행 중; 목표 시기 2027-2028년 예상 [미검증]</li>
+</ul>
+</section>
+<section id="전략적-이니셔티브-strategic-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="전략적-이니셔티브-strategic-initiatives">전략적 이니셔티브 (Strategic Initiatives)</h3>
+<ul>
+<li><strong>“Horizon 2026” 전략</strong>: 데이터/분석, 펀드서비스, 디지털자산 확대 및 유기적 매매 성장을 통한 구조적 성장을 목표로 하는 Deutsche Borse의 중기 전략</li>
+<li><strong>SimCorp 인수</strong>: 2023년 완료된 EUR 39억 인수; 그룹 서비스에 투자운용 소프트웨어를 추가하여 바이사이드를 위한 프런트-투-백 솔루션 구축</li>
+<li><strong>ISS 인수</strong>: 2022년 완료; Institutional Shareholder Services가 지배구조 및 ESG 데이터 역량 추가</li>
+<li><strong>클라우드 전략</strong>: 비지연민감성 인프라의 클라우드로의 점진적 이전; 주요 클라우드 제공자와 파트너십 [미검증 구체적 파트너]</li>
+<li><strong>디지털자산 생태계</strong>: 규제된 엔드-투-엔드 디지털자산 인프라 구축: 매매(Crypto Finance), 발행·결제(D7), 수탁; 토큰화 증권 시장 대비 포지셔닝</li>
+<li><strong>지속가능성 / ESG</strong>: 지수(STOXX ESG 지수), 데이터(ISS ESG), 매매(EEX 탄소 관련 상품) 전반에 걸쳐 ESG 상품 서비스 확대</li>
+<li><strong>통합시세정보</strong>: Deutsche Borse가 EU 통합시세정보 논의에 적극 참여; EU 주식 CTP의 잠재적 운영자 또는 데이터 기여자</li>
+<li><strong>매출 성장</strong>: 그룹 순매출이 약 EUR 35억 (2021년)에서 약 EUR 56억 (2024년)으로 성장, 인수(SimCorp, ISS) 및 유기적 성장에 기인; 중·고 한 자릿수 성장 지속 목표</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="출처-sources" class="level2">
+<h2 class="anchored" data-anchor-id="출처-sources">출처 (Sources)</h2>
+<p>[Source: Deutsche Borse AG Official Website, “deutsche-boerse.com – About Us / Company History”, accessed 2026-04-06] [Source: Xetra Official Website, “xetra.com – Trading / Market Model / Rules and Regulations”, accessed 2026-04-06] [Source: Deutsche Borse AG, “Annual Report 2024”, accessed 2026-04-06] [Source: Deutsche Borse AG, “Xetra Market Model Equities”, Version dated 2024, accessed 2026-04-06] [Source: Deutsche Borse AG, “T7 Functional and Interface Overview”, accessed 2026-04-06] [Source: Deutsche Borse AG, “T7 ETI – Enhanced Trading Interface Manual”, accessed 2026-04-06] [Source: Deutsche Borse AG, “T7 EMDI / MDI / EOBI – Market Data Interfaces Manual”, accessed 2026-04-06] [Source: Deutsche Borse AG, “Xetra Price List”, effective 2025, accessed 2026-04-06] [Source: Deutsche Borse AG, “Xetra Designated Sponsor Guide”, accessed 2026-04-06] [Source: Deutsche Borse AG, “D7 Digital Post-Trade Platform Press Release”, 2024, accessed 2026-04-06] [Source: ESMA, “MiFID II RTS 11 – Tick Sizes”, accessed 2026-04-06] [Source: BaFin, “Supervision of Stock Exchanges and Markets”, accessed 2026-04-06] [Source: Deutsche Borse AG, “Investor Presentation / Capital Markets Day 2024”, accessed 2026-04-06] [Source: Deutsche Borse AG, “SimCorp Acquisition Completion Press Release”, October 2023, accessed 2026-04-06] [Source: Deutsche Borse AG, “Crypto Finance AG Acquisition Press Release”, 2023, accessed 2026-04-06] [Source: European Commission, “MiFIR Review – Consolidated Tape”, 2024-2025, accessed 2026-04-06] [Source: German Federal Ministry of Finance, “eWpG – Electronic Securities Act”, 2021, accessed 2026-04-06]</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,390 @@
+---
+title: "CME Globex — CME Group"
+subtitle: "파생상품 > 매매시스템"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-07
+> **시스템 분류:** 매매시스템 (Trading System)
+
+---
+
+## 1. 시스템 개요 (System Overview)
+
+| 항목 | 상세 |
+|---|---|
+| **시스템명** | CME Globex |
+| **운영 주체** | CME Group (CME, CBOT, NYMEX, COMEX) |
+| **목적** | 선물 및 선물옵션의 전자 매매 |
+| **출시일** | 1992년 6월 25일 |
+| **현재 플랫폼** | Globex (NSC 기반, 독자 발전); 2028년까지 Google Cloud 이전 계획 |
+| **벤더 / 자체개발** | 최초 Reuters (1992); 이후 Paris Bourse/MATIF의 NSC (1998); 이후 자체 발전 |
+| **거래시간** | 거의 24시간, 주 6일 (일요일 저녁~금요일 오후, 미국 중부시간 기준) |
+| **상품** | 금리, 주가지수, 외환, 에너지, 금속, 농산물 등 전 자산군의 선물, 선물옵션, 스프레드, 조합주문 |
+
+### 시스템 발전 과정 (System Evolution)
+
+| 연도 | 주요 사건 | 기술 / 비고 |
+|---|---|---|
+| 1987 | 개념 수립 및 개발 착수 | CME 의장 Leo Melamed과 경제학자 William Brodsky가 전자거래를 주도 |
+| 1992 | Globex 1.0 출시 (6월 25일) | Reuters 기술 및 네트워크; 초기에는 국채 및 외환 상품 |
+| 1997 | E-mini S&P 500 선물 출시 | Globex 전용으로 설계된 최초의 상품 |
+| 1998 | Globex 2.0 (2세대) | Paris Bourse/MATIF의 수정된 NSC (Nouveau Systeme de Cotation) 매매체결엔진으로 이전 |
+| 2000 | 오픈 액세스 규칙 도입 | 의무적 브로커 중개 없이 고객의 직접 접속 허용 |
+| 2002 | 일평균 거래량 100만 계약 돌파 | 일일 전자거래 거래량이 최초로 이 기준을 초과 |
+| 2004 | Globex에서 10억 번째 계약 체결 | 전자거래 거래량이 최초로 장내거래(pit) 거래량을 초과 |
+| 2006 | CME-CBOT 합병 합의 | CBOT 상품이 Globex 플랫폼으로 이전 시작 |
+| 2007 | CME Group 출범 (CME + CBOT) | Globex 연간 거래량 10억 계약 초과; 2008년 NYMEX 추가 |
+| 2012 | 20주년 | CME Group 거래량의 84%가 Globex에서 전자적으로 거래 |
+| 2012 | 대규모 성능 개선 릴리스 | 주문 입력 및 시장데이터 모두에서 99번째 백분위수 지연시간 98% 감소 |
+| 2014 | iLink 2 프로토콜 배포 | Market Segment Gateway (MSGW)에서의 바이너리 주문 입력 프로토콜 |
+| 2019 | MDP 3.0 완전 배포 | SBE 인코딩 시장데이터가 레거시 FAST 피드를 대체 |
+| 2021 | MSGW에서 iLink 3 출시 | FIX SBE 인코딩과 FIXP 세션 레이어 |
+| 2024 | CGW에서 iLink 3 가동 (1월 28일) | Convenience Gateway의 iLink 3 이전; iLink 2 서비스 종료 |
+| 2025 | DR 기능 강화; Google Cloud 준비 | DR에서 GTC/GTD 주문 지속성; MDP 3.0 스키마 버전 13 |
+| 2026 | Google Cloud Sandbox (연중) | Dallas 지역 프라이빗 Google Cloud에서 Sandbox 환경 구축 |
+| 2028 | 완전한 Google Cloud 이전 (계획) | Aurora, IL 소재 프라이빗 Google Cloud Chicago 지역으로 운영 시장 이전 |
+
+---
+
+## 2. 아키텍처 (Architecture)
+
+### 2.1 상위 수준 설계 (High-Level Design)
+
+CME Globex는 상품이 **마켓 세그먼트(market segment)**별로 구성되고, 각 마켓 세그먼트가 전용 매매체결엔진 인스턴스에 의해 처리되는 **분산형 다중 엔진 아키텍처(distributed, multi-engine architecture)**를 채택하고 있다. 이 아키텍처는 주문 입력, 매매체결, 시장데이터 배포, 리스크 관리 계층을 분리한다.
+
+```
+                        ┌─────────────────────────────┐
+                        │    CME Globex Platform       │
+                        │                              │
+  ┌──────────┐          │  ┌────────────────────────┐  │
+  │ Trading  │──iLink──►│  │  Gateway Layer          │  │
+  │ Firms    │  3/FIX   │  │  (MSGW / CGW)          │  │
+  │          │◄─────────│  └──────┬─────────────────┘  │
+  └──────────┘          │         │                     │
+                        │  ┌──────▼─────────────────┐  │
+                        │  │  Matching Engines       │  │
+                        │  │  (per market segment)   │  │
+                        │  └──────┬─────────────────┘  │
+                        │         │                     │
+                        │  ┌──────▼─────────────────┐  │
+  ┌──────────┐          │  │  Market Data Publisher  │  │
+  │ Market   │◄─MDP────│  │  (MDP 3.0 Gateway)     │  │
+  │ Data     │  3.0     │  └────────────────────────┘  │
+  │ Consumers│          │                              │
+  └──────────┘          │  ┌────────────────────────┐  │
+                        │  │  Risk / Credit Controls │  │
+  ┌──────────┐          │  │  (GC2 / ICC)           │  │
+  │ Risk     │◄─────────│  └────────────────────────┘  │
+  │ Admin    │  GUI/API │                              │
+  └──────────┘          │  ┌────────────────────────┐  │
+                        │  │  Surveillance / Audit   │  │
+  ┌──────────┐          │  └────────────────────────┘  │
+  │ Drop     │◄─FIX────│                              │
+  │ Copy     │  4.2     └─────────────────────────────┘
+  └──────────┘
+```
+
+**핵심 설계 원칙:**
+- **마켓 세그먼트 격리**: 각 매매체결엔진이 정의된 상품 그룹을 처리하여 독립적인 확장 및 유지보수가 가능하다
+- **게이트웨이 추상화**: Market Segment Gateway (MSGW)는 특정 마켓 세그먼트에 연결되고, Convenience Gateway (CGW)는 모든 세그먼트에 대한 투명한 라우팅을 제공한다
+- **내재가격(Implied pricing) 통합**: 매매체결엔진이 관련 스프레드와 아웃라이트 간의 내재가격을 엔진 내부에서 실시간으로 계산한다
+- **결정론적 처리**: 가격-시간 우선순위의 공정성을 보장하기 위해 종목별 단일 스레드 매칭을 수행한다
+
+### 2.2 핵심 구성요소 (Core Components)
+
+| 구성요소 | 명칭 / 버전 | 설명 |
+|---|---|---|
+| **매매체결엔진** | Globex ME (NSC 기반, 독자 개발) | 마켓 세그먼트별 엔진; 다중 매칭 알고리즘(FIFO, pro-rata, 하이브리드) 지원; 내재가격 엔진 통합 |
+| **주문 게이트웨이** | iLink 3 (MSGW & CGW) | FIX SBE 인코딩과 FIXP 세션 레이어를 사용하는 바이너리 주문 입력; 서브밀리초 지연시간 |
+| **시장데이터 퍼블리셔** | MDP 3.0 | SBE 인코딩 시장데이터; UDP multicast 배포 및 TCP 스냅샷 복구; MBP 및 MBO 피드 지원 |
+| **리스크 엔진** | Globex Credit Controls (GC2) | 청산회원별 사전체결 익스포저 한도; 실시간 주문 차단, 취소 및 이메일 알림 |
+| **세분화된 리스크** | Inline Credit Controls (ICC) | 상품별, 계좌별 일일 포지션 한도; Account Management Service (AMS)를 통해 관리 |
+| **Drop Copy** | Drop Copy 4.0 | FIX 4.2 기반의 읽기 전용 체결 보고서 피드; 리스크 관리를 위한 실시간 매매 모니터링 |
+| **감시** | CME Group Market Regulation | 매매 데이터와 통합된 자동 감시; 사후 분석 및 실시간 모니터링 |
+| **주문 입력 API** | OE API (REST / WebSocket) | 지연시간 비민감 프로그래매틱 접근을 위한 HTTPS RESTful 및 WSS 연결; JSON 메시징 |
+
+### 2.3 기술 스택 (Technology Stack)
+
+| 계층 | 기술 |
+|---|---|
+| **매매체결엔진 기원** | Paris Bourse / MATIF의 NSC (Nouveau Systeme de Cotation), 대폭 수정 및 자체 발전 |
+| **프로그래밍 언어** | C/C++ (핵심 매매체결엔진, 게이트웨이); Java (부수 시스템, API) |
+| **운영체제** | Linux (운영 매매체결엔진 및 게이트웨이) |
+| **하드웨어** | 범용 x86 서버 인프라 (현재); Google Cloud 전용 하드웨어로 전환 중 (2026-2028) |
+| **네트워크** | Aurora 데이터센터 내 전용 저지연 네트워크 패브릭; 10/40 GbE 인터커넥트; 시장데이터용 UDP multicast |
+| **메시지 인코딩** | iLink 3 및 MDP 3.0용 FIX Simple Binary Encoding (SBE); Drop Copy용 FIX 4.2; OE API용 JSON |
+| **세션 프로토콜** | iLink 3용 FIXP (FIX Performance) |
+| **메시징 전송** | UDP multicast (시장데이터); TCP (주문 입력, 복구, Drop Copy) |
+| **기준정보** | SFTP (sftpng.cmegroup.com)를 통해 배포되는 SBE 스키마 파일; XML 종목 정의 |
+| **클라우드 (향후)** | Google Cloud 프라이빗 리전 (Aurora, IL 운영; Dallas, TX DR) |
+
+---
+
+## 3. 성능 사양 (Performance Specifications)
+
+| 지표 | 수치 | 비고 |
+|---|---|---|
+| **인바운드 주문 입력 지연시간 (중앙값)** | ~5 마이크로초 (매매체결엔진) | 라우터에서 매매체결엔진까지; 2012년 성능 개선 릴리스 이후 |
+| **인바운드 주문 입력 지연시간 (99번째 백분위수)** | ~50 마이크로초 | 2012년 이전 수준 대비 크게 감소 |
+| **아웃바운드 시장데이터 지연시간** | 한 자릿수 마이크로초 초반 (엔진 출구~MDP 게이트웨이 출구) | SBE 인코딩이 직렬화 오버헤드를 감소시킴 |
+| **지연시간 변동성 (주문 입력)** | ~39 마이크로초 (중앙값~95번째 백분위수 스프레드) | 라우터에서 iLink 게이트웨이를 거쳐 매매체결엔진까지 측정 |
+| **지연시간 변동성 (시장데이터)** | ~58 마이크로초 (중앙값~95번째 백분위수 스프레드) | 매매체결엔진 출구에서 MDP 게이트웨이 출구까지 |
+| **메시징 제어** | 세션별 TPS 한도 | iLink 세션 수준에서 적용; 상품별 속도 제한 |
+| **일일 거래량 용량** | 6,000만+ 계약/일 (실증) | 최대 거래량이 정기적으로 3,000만 계약/일을 초과 |
+| **가동률** | 99.99%+ (목표) | 2개 데이터센터 모델 (Aurora + NYDC) |
+| **타임스탬프 정밀도** | 나노초 | 매매체결엔진 이벤트 수준에서 적용 |
+
+### 성능 이력 (Performance History)
+
+| 연도 | 주요 사건 | 상세 |
+|---|---|---|
+| 1992 | 출시 | 초 단위 지연시간; 제한적 상품 범위 |
+| 2004 | 전자거래 거래량 우위 | Globex 전자거래 거래량이 공개호가(open outcry) 장내거래(pit) 거래량을 초과 |
+| 2007 | 연간 거래량 > 10억 | CME-CBOT 합병 및 상품 확대로 인한 성장 |
+| 2012 | p99에서 98% 지연시간 감소 | 대규모 플랫폼 성능 개선 릴리스; 주문 입력 및 시장데이터 경로 모두 최적화 |
+| 2014 | 서브밀리초 매칭 | 지속적인 하드웨어 및 소프트웨어 최적화 |
+| 2019 | MDP 3.0 전면 도입 | SBE 인코딩이 FAST를 대체; 소비자 측 CPU 오버헤드 감소 |
+| 2024 | 사상 최대 일일 거래량 기록 | 5,000만 계약을 초과하는 다수의 거래일; 전 자산군에 걸친 일평균 거래량 성장 |
+| 2025 | 스키마 v13 배포 | FX Spot+ 및 신규 상품군을 위한 향상된 메시지 유형 |
+
+---
+
+## 4. 인터페이스 및 프로토콜 (Interfaces & Protocols)
+
+### 4.1 주문 입력 (Order Entry)
+
+#### iLink 3 (주요 -- 저지연)
+
+| 항목 | 상세 |
+|---|---|
+| **인코딩** | FIX Simple Binary Encoding (SBE) v1.0 RC4 |
+| **세션 레이어** | FIXP (FIX Performance) |
+| **전송** | TCP |
+| **게이트웨이 유형** | Market Segment Gateway (MSGW) -- 특정 마켓 세그먼트 전용; Convenience Gateway (CGW) -- 모든 마켓 세그먼트로 라우팅 |
+| **스키마 버전** | v9 (현재 운영); MDP 확장용 v13 |
+| **기능** | New Order Single, Cancel, Cancel/Replace, Mass Quote, Order Status, Execution Reports |
+| **프레이밍** | Simple Open Framing Header (SOFH) -- 메시지 길이 및 인코딩 식별자 제공 |
+
+#### OE API (대안 -- 지연시간 비민감)
+
+| 항목 | 상세 |
+|---|---|
+| **REST API** | HTTPS; JSON 메시징; 요청-응답 패턴 |
+| **WebSocket API** | WSS; JSON 메시징; 양방향 스트리밍 |
+| **사용 사례** | 지연시간 민감도가 낮은 전략을 위한 프로그래매틱 거래 |
+| **리스크 제어** | GC2 및 ICC 제어 전체 적용 |
+
+#### 레거시 / 마이그레이션 참고사항
+- iLink 2 (FIX 기반)는 폐지되었으며, 모든 MSGW 및 CGW 세션은 현재 iLink 3를 사용한다
+- 마이그레이션 기간 동안 스키마 버전 공존을 허용하기 위해 Template Extension이 지원되었다
+
+### 4.2 시장데이터 -- MDP 3.0 (Market Data -- MDP 3.0)
+
+| 항목 | 상세 |
+|---|---|
+| **인코딩** | FIX Simple Binary Encoding (SBE) |
+| **스키마 사양** | FIX 5.0 SP2 메시지 사양 |
+| **전송** | UDP multicast (실시간 증분); TCP (스냅샷 복구) |
+| **피드 유형** | Market By Price (MBP) -- 가격 수준별 집계 호가잔량; Market By Order (MBO) -- 개별 주문장 세분화 |
+| **데이터 내용** | 매수, 매도, 체결, 통계 데이터; 이벤트 기반 전달 |
+| **채널 구조** | 상품이 multicast 채널 그룹으로 조직됨 (예: 2026년 신규 주가지수 상품용 Channel ID 324) |
+| **FAST 대비 장점** | 더 낮은 지연시간 배포; 더 적은 CPU 부하; 나노초 타임스탬프 정밀도; 향상된 시장 상태 세분화 |
+| **복구** | 호가장 상태 복구를 위한 TCP 기반 스냅샷 피드; 채널상 종목 재생 |
+
+### 4.3 Drop Copy / 매매 보고 (Drop Copy / Trade Reporting)
+
+| 항목 | 상세 |
+|---|---|
+| **프로토콜** | FIX 4.2 |
+| **버전** | Drop Copy 4.0 |
+| **기능** | 체결 보고서, 확인 응답, 하트비트, 매매 취소 메시지의 읽기 전용 실시간 복사본 |
+| **전달** | iLink 체결 보고서의 ASCII 인코딩 복사본이 FIX non-FIX 메시지 유형(35=n) 내 XML로 캡슐화되어 전달 |
+| **사용 사례** | 리스크 모니터링, 컴플라이언스, 백오피스 대사 |
+| **범위** | Drop Copy 연결당 하나 이상의 소스 iLink 세션을 커버 |
+
+### 4.4 기준정보 (Reference Data)
+
+| 항목 | 상세 |
+|---|---|
+| **종목 정의** | 세션 시작 시 MDP 3.0 채널을 통해 배포; 계약 사양, 호가 단위, 거래시간 포함 |
+| **스키마 파일** | 모든 환경에 대한 SBE 스키마 XML 파일이 SFTP (sftpng.cmegroup.com)를 통해 제공 |
+| **보안 정의** | MDP 3.0 SecurityDefinition 메시지 (SBE에서 Tag 35=d에 해당) |
+| **업데이트** | MDP 3.0을 통한 장중 종목 추가; 기준정보는 매일 갱신 |
+| **형식** | SBE 스키마 템플릿, XML 종목 파일, FTP 배포 CSV 파일 |
+
+---
+
+## 5. 복원력 및 업무연속성 (Resilience & Business Continuity)
+
+### 5.1 이중화 (Redundancy)
+
+| 항목 | 상세 |
+|---|---|
+| **주 데이터센터** | CyrusOne 시설, Aurora, Illinois (시카고 서쪽 약 50마일) |
+| **DR 데이터센터** | New York Data Center (NYDC) |
+| **향후 운영** | 프라이빗 Google Cloud Chicago 지역 (Aurora, IL 캠퍼스); 2028년 계획 |
+| **향후 DR** | Google Cloud Dallas, Texas 지역 |
+| **모델** | 모든 CME Group 애플리케이션(iLink, MDP, 청산)에 대한 2개 데이터센터 액티브/스탠바이 모델 |
+| **게이트웨이 이중화** | 마켓 세그먼트별 다수의 MSGW 및 CGW 인스턴스; 자동 페일오버 |
+| **네트워크 이중화** | 이중 경로 네트워크 연결; 다양한 광섬유 경로 |
+
+**데이터센터 소유권 참고:** 2016년, CME Group은 15년 리스백 계약 하에 Aurora 데이터센터를 CyrusOne에 1억 3,000만 달러에 매각하였다. CME는 이 시설에서 계속 Globex를 호스팅하고 있다.
+
+### 5.2 재해복구 (Disaster Recovery)
+
+| 지표 | 상세 |
+|---|---|
+| **RPO (복구 시점 목표)** | 주문 상태에 대해 거의 제로; GTC/GTD 주문이 DR에서 지속 (2025년 강화) |
+| **RTO (복구 시간 목표)** | 분 단위 페일오버; 시나리오에 따라 상이 (계획 vs. 비계획) |
+| **DR 테스트** | 정기 예정 페일오버 훈련; 고객 참여 권장 |
+| **주문 지속성** | 대기 중인 GTC 및 GTD 주문이 이제 DR 전환 시에도 유지됨 (2025년 기능 강화) |
+| **세션 복구** | iLink 3 FIXP 세션 레이어가 시퀀스 기반 복구 및 재설정을 지원 |
+
+**주목할 사건 (2024):** CyrusOne Aurora 시설의 냉각 시스템 장애로 온도가 화씨 100도를 초과하였다. NYDC로의 페일오버 대신 현장 수리를 계속하기로 결정한 것이 장애를 약 10시간으로 연장시켰으며, 이는 페일오버 의사결정의 복잡성을 부각시켰다.
+
+### 5.3 용량 관리 (Capacity Management)
+
+| 항목 | 상세 |
+|---|---|
+| **Messaging Efficiency Program (MEP)** | 메시지 유형, 시간대, 근월/원월, 아웃라이트/스프레드에 기반한 점수 체계 |
+| **TPS 한도** | iLink 수준에서 적용되는 세션별 초당 거래 건수 제한 |
+| **거래량 등급** | 일일 50,000건 이하의 메시지를 제출하는 회사는 MEP 점수 산정에서 제외 |
+| **확장** | 마켓 세그먼트 격리로 매매체결엔진의 독립적 수평 확장이 가능 |
+| **모니터링** | 실시간 용량 대시보드; 포화 전 선제적 쓰로틀링 |
+
+---
+
+## 6. 주요 기술 특징 (Notable Technical Features)
+
+### 내재가격 엔진 (Implied Pricing Engine)
+
+CME Globex의 매매체결엔진은 관련 스프레드 및 아웃라이트 계약 간의 매수·매도 호가를 통합하여 유동성과 가격 발견을 극대화하기 위해 실시간으로 **내재가격(implied prices)**을 계산한다.
+
+- **Implied-in**: 아웃라이트 주문이 내재 스프레드 가격을 생성
+- **Implied-out**: 스프레드 주문이 내재 아웃라이트 가격을 생성
+- **상품간 내재 스프레드**: 관련 상품 간 비율 기반 내재가격 산출 (예: 금리 선물)
+- **제한사항**: Self-Match Prevention (SMP)은 내재 유동성이 관여하는 거래에는 적용되지 않는다
+
+### 매칭 알고리즘 (Matching Algorithms)
+
+CME Globex는 상품 그룹별로 구성 가능한 **다중 매칭 알고리즘**을 지원한다:
+
+| 알고리즘 | 설명 | 적용 상품 예시 |
+|---|---|---|
+| **FIFO (가격-시간)** | 엄격한 가격 우선, 이후 시간 우선; 한 가격 수준에서 최초 주문이 최우선 체결 | 축산물 아웃라이트 선물, Black Sea 밀/옥수수 선물 |
+| **Pro-Rata** | 해당 가격 수준의 대기 주문 수량에 비례하여 체결 배분; 큰 주문이 더 큰 체결량을 수령 | Eurodollar/SOFR 옵션, 특정 금리 상품 |
+| **Split FIFO / Pro-Rata (하이브리드)** | 구성 가능한 비율 (예: 40% FIFO / 60% Pro-Rata); 시간 우선과 광범위한 참여 간 균형 | 곡물 및 유지작물 선물/스프레드, 축산물 스프레드 |
+| **Allocation** | 특정 상품 유형을 위한 전문 배분 로직 | 일부 OTC 형식 상품 |
+| **Top Order + Pro-Rata** | 최우선 대기 주문이 우선 체결을 받고, 나머지는 pro-rata로 배분 | 일부 금리 선물 |
+| **Threshold Pro-Rata** | pro-rata 배분이 적용되기 전 최소 체결 수량 기준 | 일부 옵션 상품 |
+
+### Market with Protection (MKT w/ Protection)
+
+시장가 주문에는 내장된 가격 보호가 포함되어 있다 — 시장이 설정 가능한 범위를 넘어 움직이면, 미체결 잔량은 해당 범위 경계에서의 지정가 주문으로 전환되어 과도한 슬리피지를 방지한다.
+
+### 자기거래 방지 (Self-Trade Prevention, SMP)
+
+- 동일 회사/트레이더(SMP ID로 식별)의 반대 주문 간 매칭을 방지
+- 구성 가능한 조치: 대기 주문 취소, 유입 주문 취소, 또는 양쪽 모두 취소
+- **제한사항**: SMP는 내재 유동성이 관여하는 자기 매칭을 방지하지 못한다 (예: 스프레드의 내재 다리에 대한 아웃라이트 주문의 매칭)
+
+### Mass Quote 기능 (Mass Quote Functionality)
+
+- 마켓 메이커가 여러 종목에 걸쳐 양방향 호가를 동시에 제출하도록 설계
+- 대역폭의 효율적 사용 — 단일 메시지로 다수의 호가 업데이트
+- Mass quote에 대한 연결 해제 시 취소(cancel-on-disconnect) 보호
+
+### Globex Credit Controls (GC2)
+
+- 청산회원 리스크 관리자가 관리하는 사전체결 리스크 제어
+- 거래소별 위탁매매회원별 매수 및 매도 거래/포지션에 대한 익스포저 한도
+- 위반 시 실시간 조치: 이메일 통보, 주문 차단, 주문 취소
+- 위탁매매회원 ID / 거래소 그룹 수준에서 적용
+
+### Inline Credit Controls (ICC)
+
+- 상품별, 계좌별 세분화된 일일 포지션 한도
+- Account Management Service (AMS)를 통해 관리
+- 일말에 포지션을 평탄화(flat)로 재설정
+- 구성 가능한 임계값 알림 (예: 80% 활용도 경고)
+
+### CME SPAN / SPAN 2
+
+- **SPAN (Standard Portfolio Analysis of Risk)**: CME가 개발한 업계 표준 증거금 방법론; 포트폴리오 수준의 증거금 요건을 계산
+- **SPAN 2**: 더 세분화된 시나리오와 개선된 모델링을 통합한 차세대 리스크 방법론
+- 사전거래 및 장중 증거금 평가를 위해 GC2와 통합
+
+### 코로케이션 서비스 (Co-location Services)
+
+- 매매체결엔진에 근접하기 위한 CyrusOne Aurora 시설에서의 코로케이션 이용 가능
+- 모든 코로케이션 참가자에 대한 균등 지연시간 접근
+- Google Cloud 프라이빗 리전에서의 향후 코로케이션 옵션: 전통적 랙 공간, Google 인프라 서비스, 또는 하이브리드
+
+---
+
+## 7. 비교 참고사항 (Comparison Notes)
+
+### vs. KRX 시스템 (Exture+)
+
+| 비교 항목 | CME Globex | KRX Exture+ |
+|---|---|---|
+| **매매체결엔진 지연시간** | ~5 마이크로초 (중앙값, 2012년 이후 최적화) | ~70 마이크로초 (2014년 출시; 원래 Exture 대비 285배 개선) |
+| **p99 지연시간** | ~50 마이크로초 | 공개되지 않음 |
+| **처리량** | 6,000만+ 계약/일 실증 | 높은 용량; 구체적 TPS 비공개 |
+| **아키텍처** | 분산형 다중 엔진 (마켓 세그먼트별) | 모든 종목 유형을 지원하는 통합 플랫폼 |
+| **매칭 알고리즘** | 상품별 다중 (FIFO, pro-rata, 하이브리드, allocation) | 주로 가격-시간 우선(FIFO) |
+| **주문 입력 프로토콜** | iLink 3 (FIX SBE + FIXP); OE API (REST/WS) | FIX 기반 독자 프로토콜 |
+| **시장데이터 프로토콜** | MDP 3.0 (SBE, UDP multicast + TCP 복구) | 독자 바이너리 피드 |
+| **코로케이션** | CyrusOne Aurora, IL; 향후 Google Cloud | KRX 데이터센터 (부산) |
+| **지원 상품** | 선물 및 선물옵션만 (파생상품 특화) | 주식, 채권, ETF, 파생상품 — 단일 플랫폼에서 모두 지원 |
+| **내재가격** | 있음 — 실시간 내재 스프레드/아웃라이트 엔진 | 제한적 — 주로 옵션 마켓 메이킹용 |
+| **플랫폼 기원** | Reuters (1992) 이후 NSC/Paris Bourse (1998), 자체 발전 | 자체 개발 (Koscom); 메모리 기반, 오픈소스 아키텍처 |
+| **출시 연도** | 1992 (현 세대 ~2012+) | 2014 (Exture, 2009 이후) |
+| **클라우드 전략** | 2028년까지 Google Cloud 이전 | 온프레미스 |
+
+### 주요 차별화 요소 (Key Differentiators)
+
+1. **매칭 알고리즘의 다양성**: CME Globex의 상품별 매칭 알고리즘(FIFO, pro-rata, 하이브리드)은 주요 차별화 요소이다. KRX Exture+는 주로 FIFO를 사용한다. CME의 하이브리드 알고리즘은 유동성이 낮은 상품에서 체결 우선순위와 마켓 메이커 참여 인센티브 간의 균형을 맞추기 위해 특별히 설계되었다.
+
+2. **내재가격 엔진**: Globex의 스프레드와 아웃라이트 간 실시간 내재가격 산출은 업계에서 가장 정교한 수준이다. 관련 종목을 연결하여 합성 유동성을 창출하는데, 이는 대규모 상품 카탈로그(수천 개의 상장 종목)를 보유한 파생상품 시장에서 매우 중요하다.
+
+3. **프로토콜 성숙도**: iLink 3의 FIX SBE와 FIXP 사용은 초저지연 주문 입력을 위해 목적에 맞게 구축된 바이너리 프로토콜을 나타낸다. MDP 3.0의 시장데이터용 SBE 인코딩도 마찬가지로 직접 메모리 접근 패턴에 최적화되어 텍스트 기반 프로토콜 대비 직렬화 오버헤드를 줄인다.
+
+4. **멀티에셋 vs. 파생상품 특화**: KRX Exture+는 주식, 채권, 파생상품을 단일 통합 플랫폼에서 다루는 반면, CME Globex는 파생상품 전용으로 구축되었다. 이러한 전문화는 Globex가 파생상품 고유 기능(내재가격, 스프레드 거래, mass quote)에 깊이 최적화할 수 있게 하지만, 폭넓은 자산 커버리지를 희생한다.
+
+5. **클라우드 이전 궤적**: CME Group의 프라이빗 Google Cloud 리전 이전 계획은 중대한 전략적 전환을 나타낸다. 성공할 경우 결정론적 지연시간 요건을 유지하면서 자체/임차 데이터센터에서 클라우드 기반 매칭 인프라로 이동하여 거래소 기술의 인프라 모델을 재정의할 수 있다.
+
+6. **상품 카탈로그의 규모**: CME Globex는 수백만 개의 종목(모든 옵션 행사가격 및 만기 포함)을 상장하고 있어, 내재가격 엔진과 시장데이터 인프라가 극히 방대한 상품 유니버스에 걸쳐 수평적으로 확장되어야 한다.
+
+---
+
+## 출처 (Sources)
+
+- [CME Globex — Databento Microstructure Guide](https://databento.com/microstructure/cme-globex)
+- [A Brief History of CME Globex — OnixS](https://www.onixs.biz/insights/a-brief-history-of-cme-globex)
+- [CME Globex — MarketsWiki](https://marketswiki.com/wiki/CME_Globex)
+- [Develop to Globex — CME Group](https://www.cmegroup.com/solutions/market-access/globex/develop-to-globex.html)
+- [CME Globex Matching Algorithm Overview — CME Group](https://www.cmegroup.com/education/matching-algorithm-overview)
+- [CME Matching Algorithms Explained — Databento Blog](https://databento.com/blog/cme-matching-algorithms-explained)
+- [Risk Management Tools — CME Group](https://www.cmegroup.com/globex/trade-on-cme-globex/risk-management-tools.html)
+- [FAQ: Self-Match Prevention — CME Group](https://www.cmegroup.com/globex/trade-on-cme-globex/self-match-faq.html)
+- [CME Group DR Scenarios — Confluence](https://cmegroupclientsite.atlassian.net/wiki/spaces/EPICSANDBOX/pages/457412249/Disaster+Recovery+Scenarios)
+- [Inside CME Group's Strategic Migration to Google Cloud — A-Team](https://a-teaminsight.com/blog/inside-cme-groups-strategic-migration-moving-globex-to-google-cloud/)
+- [CME Globex Migration to Google Cloud — 28stone](https://www.28stone.com/news/cme-globex-migration-to-google-cloud-preparing-for-your-2028-trading-infrastructure-opportunity/)
+- [Google Cloud Private Region for CME Group — DCD](https://www.datacenterdynamics.com/en/news/google-cloud-provides-private-cloud-region-and-colocation-facility-for-cme-group-in-aurora-illinois/)
+- [Cooling Crisis at CME — Network World](https://www.networkworld.com/article/4099088/cooling-crisis-at-cme-a-wakeup-call-for-modern-infrastructure-governance.html)
+- [Drop Copy FAQ — CME Group](https://www.cmegroup.com/globex/trade-on-cme-globex/dropcopy-faq.html)
+- [KRX Exture+ Trading — Global KRX](https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp)
+- [CME Globex MDP 3.0 Data Feed Specifications — Databento](https://databento.com/docs/venues-and-datasets/glbx-mdp3)
+- [Messaging Efficiency Program v11.7 — CME Group](https://www.cmegroup.com/globex/files/2024-revised-mep.pdf)

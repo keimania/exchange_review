@@ -1,0 +1,295 @@
+---
+title: "Global Exchange Research"
+subtitle: "글로벌 거래소 조사 — 주식·파생상품·청산결제"
+date: "2026-04-17"
+toc: false
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    self-contained: false
+---
+
+# 글로벌 거래소 조사 (Global Exchange Research)
+
+주요 글로벌 거래소의 주식·파생상품·청산결제 시장 구조, 매매 시스템, 규제 체계를 심층 조사한 자료입니다.
+KRX(한국거래소)를 포함하여 총 **50개 이상의 거래소·청산기관**을 규정 원문 기반으로 분석하였습니다.
+
+---
+
+## 주식시장 (Equities) {.unnumbered}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### English
+
+| 문서 | 설명 |
+|------|------|
+| [Overview](qmd/01_equities/en/01_overview.qmd) | 전체 개요 및 조사 현황 |
+| [Comparative Analysis](qmd/01_equities/en/02_comparative_analysis.qmd) | 거래소 간 비교분석 |
+| **Exchanges** | |
+| [NYSE](qmd/01_equities/en/exchanges/nyse.qmd) | New York Stock Exchange |
+| [NASDAQ](qmd/01_equities/en/exchanges/nasdaq.qmd) | NASDAQ |
+| [LSE](qmd/01_equities/en/exchanges/lse.qmd) | London Stock Exchange |
+| [JPX](qmd/01_equities/en/exchanges/jpx.qmd) | Japan Exchange Group |
+| [HKEX](qmd/01_equities/en/exchanges/hkex.qmd) | Hong Kong Exchanges |
+| [SGX](qmd/01_equities/en/exchanges/sgx.qmd) | Singapore Exchange |
+| [KRX](qmd/01_equities/en/exchanges/krx.qmd) | Korea Exchange |
+| [Euronext](qmd/01_equities/en/exchanges/euronext.qmd) | Euronext |
+| [Deutsche Börse](qmd/01_equities/en/exchanges/deutsche_borse.qmd) | Xetra |
+| [ASX](qmd/01_equities/en/exchanges/asx.qmd) | Australian Securities Exchange |
+| [TMX](qmd/01_equities/en/exchanges/tmx.qmd) | Toronto Stock Exchange |
+| [SIX](qmd/01_equities/en/exchanges/six.qmd) | SIX Swiss Exchange |
+| [SSE](qmd/01_equities/en/exchanges/sse.qmd) | Shanghai Stock Exchange |
+| [SZSE](qmd/01_equities/en/exchanges/szse.qmd) | Shenzhen Stock Exchange |
+| [BSE](qmd/01_equities/en/exchanges/bse.qmd) | Bombay Stock Exchange |
+| [NSE India](qmd/01_equities/en/exchanges/nse_india.qmd) | National Stock Exchange of India |
+| [TWSE](qmd/01_equities/en/exchanges/twse.qmd) | Taiwan Stock Exchange |
+| [Tadawul](qmd/01_equities/en/exchanges/tadawul.qmd) | Saudi Exchange |
+| [JSE](qmd/01_equities/en/exchanges/jse.qmd) | Johannesburg Stock Exchange |
+| [Bursa Malaysia](qmd/01_equities/en/exchanges/bursa_malaysia.qmd) | Bursa Malaysia |
+| [Borsa Italiana](qmd/01_equities/en/exchanges/borsa_italiana.qmd) | Borsa Italiana |
+| [BME](qmd/01_equities/en/exchanges/bme.qmd) | Bolsas y Mercados Españoles |
+| [Nasdaq Nordic](qmd/01_equities/en/exchanges/nasdaq_nordic.qmd) | Nasdaq Nordic |
+| **Trading Systems** | |
+| [Pillar](qmd/01_equities/en/systems/pillar.qmd) | NYSE Pillar |
+| [iNET](qmd/01_equities/en/systems/inet.qmd) | NASDAQ iNET |
+| [Millennium](qmd/01_equities/en/systems/millennium.qmd) | LSE Millennium IT |
+| [Arrowhead](qmd/01_equities/en/systems/arrowhead.qmd) | JPX Arrowhead |
+| [Orion](qmd/01_equities/en/systems/orion.qmd) | HKEX Orion |
+| [Titan](qmd/01_equities/en/systems/titan.qmd) | SGX Titan |
+| [Optiq](qmd/01_equities/en/systems/optiq.qmd) | Euronext Optiq |
+| [T7](qmd/01_equities/en/systems/t7.qmd) | Deutsche Börse T7 |
+| [Exture 3.0](qmd/01_equities/en/systems/exture_3.qmd) | KRX Exture+ 3.0 |
+| **Regulations** | |
+| [US Equities Regulation](qmd/01_equities/en/regulations/us_equities_regulation.qmd) | Reg NMS, SEC/FINRA |
+| [EU Equities Regulation](qmd/01_equities/en/regulations/eu_equities_regulation.qmd) | MiFID II/MiFIR |
+| [Asia Equities Regulation](qmd/01_equities/en/regulations/asia_equities_regulation.qmd) | JPX, HKEX, SGX, KRX |
+:::
+
+::: {.column width="50%"}
+### 한국어
+
+| 문서 | 설명 |
+|------|------|
+| [개요](qmd/01_equities/ko/01_overview.qmd) | 전체 개요 및 조사 현황 |
+| [비교분석](qmd/01_equities/ko/02_comparative_analysis.qmd) | 거래소 간 비교분석 |
+| **거래소** | |
+| [NYSE](qmd/01_equities/ko/exchanges/nyse.qmd) | 뉴욕증권거래소 |
+| [NASDAQ](qmd/01_equities/ko/exchanges/nasdaq.qmd) | 나스닥 |
+| [LSE](qmd/01_equities/ko/exchanges/lse.qmd) | 런던증권거래소 |
+| [JPX](qmd/01_equities/ko/exchanges/jpx.qmd) | 일본거래소그룹 |
+| [HKEX](qmd/01_equities/ko/exchanges/hkex.qmd) | 홍콩거래소 |
+| [SGX](qmd/01_equities/ko/exchanges/sgx.qmd) | 싱가포르거래소 |
+| [KRX](qmd/01_equities/ko/exchanges/krx.qmd) | 한국거래소 |
+| [Euronext](qmd/01_equities/ko/exchanges/euronext.qmd) | 유로넥스트 |
+| [Deutsche Börse](qmd/01_equities/ko/exchanges/deutsche_borse.qmd) | 독일거래소 |
+| [ASX](qmd/01_equities/ko/exchanges/asx.qmd) | 호주증권거래소 |
+| [TMX](qmd/01_equities/ko/exchanges/tmx.qmd) | 토론토증권거래소 |
+| [SIX](qmd/01_equities/ko/exchanges/six.qmd) | SIX 스위스거래소 |
+| [SSE](qmd/01_equities/ko/exchanges/sse.qmd) | 상하이증권거래소 |
+| [SZSE](qmd/01_equities/ko/exchanges/szse.qmd) | 선전증권거래소 |
+| [BSE](qmd/01_equities/ko/exchanges/bse.qmd) | 봄베이증권거래소 |
+| [NSE India](qmd/01_equities/ko/exchanges/nse_india.qmd) | 인도국립증권거래소 |
+| [TWSE](qmd/01_equities/ko/exchanges/twse.qmd) | 대만증권거래소 |
+| [Tadawul](qmd/01_equities/ko/exchanges/tadawul.qmd) | 사우디거래소 |
+| [JSE](qmd/01_equities/ko/exchanges/jse.qmd) | 요하네스버그증권거래소 |
+| [Bursa Malaysia](qmd/01_equities/ko/exchanges/bursa_malaysia.qmd) | 부르사말레이시아 |
+| [Borsa Italiana](qmd/01_equities/ko/exchanges/borsa_italiana.qmd) | 이탈리아거래소 |
+| [BME](qmd/01_equities/ko/exchanges/bme.qmd) | 스페인거래소 |
+| [Nasdaq Nordic](qmd/01_equities/ko/exchanges/nasdaq_nordic.qmd) | 나스닥 노르딕 |
+| **매매시스템** | |
+| [Pillar](qmd/01_equities/ko/systems/pillar.qmd) | NYSE Pillar |
+| [iNET](qmd/01_equities/ko/systems/inet.qmd) | NASDAQ iNET |
+| [Millennium](qmd/01_equities/ko/systems/millennium.qmd) | LSE Millennium IT |
+| [Arrowhead](qmd/01_equities/ko/systems/arrowhead.qmd) | JPX Arrowhead |
+| [Orion](qmd/01_equities/ko/systems/orion.qmd) | HKEX Orion |
+| [Titan](qmd/01_equities/ko/systems/titan.qmd) | SGX Titan |
+| [Optiq](qmd/01_equities/ko/systems/optiq.qmd) | Euronext Optiq |
+| [T7](qmd/01_equities/ko/systems/t7.qmd) | Deutsche Börse T7 |
+| [Exture 3.0](qmd/01_equities/ko/systems/exture_3.qmd) | KRX Exture+ 3.0 |
+| **규제** | |
+| [미국 주식 규제](qmd/01_equities/ko/regulations/us_equities_regulation.qmd) | Reg NMS, SEC/FINRA |
+| [EU 주식 규제](qmd/01_equities/ko/regulations/eu_equities_regulation.qmd) | MiFID II/MiFIR |
+| [아시아 주식 규제](qmd/01_equities/ko/regulations/asia_equities_regulation.qmd) | JPX, HKEX, SGX, KRX |
+:::
+
+::::
+
+---
+
+## 파생상품 (Derivatives) {.unnumbered}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### English
+
+| 문서 | 설명 |
+|------|------|
+| [Overview](qmd/02_derivatives/en/01_overview.qmd) | 전체 개요 |
+| [Comparative Analysis](qmd/02_derivatives/en/02_comparative_analysis.qmd) | 비교분석 |
+| **Exchanges** | |
+| [CME Group](qmd/02_derivatives/en/exchanges/cme_group.qmd) | CME, CBOT, NYMEX, COMEX |
+| [Eurex](qmd/02_derivatives/en/exchanges/eurex.qmd) | Eurex |
+| [Cboe](qmd/02_derivatives/en/exchanges/cboe.qmd) | Cboe Global Markets |
+| [ICE Futures](qmd/02_derivatives/en/exchanges/ice_futures.qmd) | ICE Futures |
+| [Osaka Exchange](qmd/02_derivatives/en/exchanges/osaka_exchange.qmd) | JPX Osaka |
+| [HKEX Derivatives](qmd/02_derivatives/en/exchanges/hkex_derivatives.qmd) | HKEX Derivatives |
+| [SGX Derivatives](qmd/02_derivatives/en/exchanges/sgx_derivatives.qmd) | SGX Derivatives |
+| [KRX Derivatives](qmd/02_derivatives/en/exchanges/krx_derivatives.qmd) | KRX 파생상품 |
+| [Euronext Derivatives](qmd/02_derivatives/en/exchanges/euronext_derivatives.qmd) | Euronext Derivatives |
+| [ASX Derivatives](qmd/02_derivatives/en/exchanges/asx_derivatives.qmd) | ASX Derivatives |
+| [Montreal Exchange](qmd/02_derivatives/en/exchanges/montreal_exchange.qmd) | MX |
+| [CFFEX](qmd/02_derivatives/en/exchanges/cffex.qmd) | China Financial Futures |
+| [DCE](qmd/02_derivatives/en/exchanges/dce.qmd) | Dalian Commodity Exchange |
+| [SHFE](qmd/02_derivatives/en/exchanges/shfe.qmd) | Shanghai Futures Exchange |
+| [NSE F&O](qmd/02_derivatives/en/exchanges/nse_fo.qmd) | NSE Futures & Options |
+| [TAIFEX](qmd/02_derivatives/en/exchanges/taifex.qmd) | Taiwan Futures Exchange |
+| [DME](qmd/02_derivatives/en/exchanges/dme.qmd) | Dubai Mercantile Exchange |
+| **Systems** | |
+| [Globex](qmd/02_derivatives/en/systems/globex.qmd) | CME Globex |
+| [T7 Derivatives](qmd/02_derivatives/en/systems/t7_derivatives.qmd) | Eurex T7 |
+| [Genium iNET](qmd/02_derivatives/en/systems/genium_inet.qmd) | Nasdaq Genium iNET |
+| **Regulations** | |
+| [US Derivatives Regulation](qmd/02_derivatives/en/regulations/us_derivatives_regulation.qmd) | CFTC, Dodd-Frank |
+| [EU Derivatives Regulation](qmd/02_derivatives/en/regulations/eu_derivatives_regulation.qmd) | EMIR, MiFID II |
+| [Asia Derivatives Regulation](qmd/02_derivatives/en/regulations/asia_derivatives_regulation.qmd) | Asia |
+:::
+
+::: {.column width="50%"}
+### 한국어
+
+| 문서 | 설명 |
+|------|------|
+| [개요](qmd/02_derivatives/ko/01_overview.qmd) | 전체 개요 |
+| [비교분석](qmd/02_derivatives/ko/02_comparative_analysis.qmd) | 비교분석 |
+| **거래소** | |
+| [CME Group](qmd/02_derivatives/ko/exchanges/cme_group.qmd) | CME, CBOT, NYMEX, COMEX |
+| [Eurex](qmd/02_derivatives/ko/exchanges/eurex.qmd) | 유렉스 |
+| [Cboe](qmd/02_derivatives/ko/exchanges/cboe.qmd) | Cboe |
+| [ICE Futures](qmd/02_derivatives/ko/exchanges/ice_futures.qmd) | ICE 선물 |
+| [Osaka Exchange](qmd/02_derivatives/ko/exchanges/osaka_exchange.qmd) | 오사카거래소 |
+| [HKEX Derivatives](qmd/02_derivatives/ko/exchanges/hkex_derivatives.qmd) | HKEX 파생상품 |
+| [SGX Derivatives](qmd/02_derivatives/ko/exchanges/sgx_derivatives.qmd) | SGX 파생상품 |
+| [KRX Derivatives](qmd/02_derivatives/ko/exchanges/krx_derivatives.qmd) | KRX 파생상품 |
+| [Euronext Derivatives](qmd/02_derivatives/ko/exchanges/euronext_derivatives.qmd) | 유로넥스트 파생 |
+| [ASX Derivatives](qmd/02_derivatives/ko/exchanges/asx_derivatives.qmd) | ASX 파생상품 |
+| [Montreal Exchange](qmd/02_derivatives/ko/exchanges/montreal_exchange.qmd) | 몬트리올거래소 |
+| [CFFEX](qmd/02_derivatives/ko/exchanges/cffex.qmd) | 중국금융선물거래소 |
+| [DCE](qmd/02_derivatives/ko/exchanges/dce.qmd) | 대련상품거래소 |
+| [SHFE](qmd/02_derivatives/ko/exchanges/shfe.qmd) | 상하이선물거래소 |
+| [NSE F&O](qmd/02_derivatives/ko/exchanges/nse_fo.qmd) | NSE 선물옵션 |
+| [TAIFEX](qmd/02_derivatives/ko/exchanges/taifex.qmd) | 대만선물거래소 |
+| [DME](qmd/02_derivatives/ko/exchanges/dme.qmd) | 두바이상업거래소 |
+| **매매시스템** | |
+| [Globex](qmd/02_derivatives/ko/systems/globex.qmd) | CME Globex |
+| [T7 Derivatives](qmd/02_derivatives/ko/systems/t7_derivatives.qmd) | Eurex T7 |
+| [Genium iNET](qmd/02_derivatives/ko/systems/genium_inet.qmd) | Genium iNET |
+| **규제** | |
+| [미국 파생상품 규제](qmd/02_derivatives/ko/regulations/us_derivatives_regulation.qmd) | CFTC, Dodd-Frank |
+| [EU 파생상품 규제](qmd/02_derivatives/ko/regulations/eu_derivatives_regulation.qmd) | EMIR |
+| [아시아 파생상품 규제](qmd/02_derivatives/ko/regulations/asia_derivatives_regulation.qmd) | 아시아 |
+:::
+
+::::
+
+---
+
+## 청산결제 (Clearing & Settlement) {.unnumbered}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### English
+
+| 문서 | 설명 |
+|------|------|
+| [Overview](qmd/03_clearing/en/01_overview.qmd) | 전체 개요 |
+| [Comparative Analysis](qmd/03_clearing/en/02_comparative_analysis.qmd) | 비교분석 |
+| **Organizations** | |
+| [DTCC](qmd/03_clearing/en/organizations/dtcc.qmd) | DTC/NSCC/FICC |
+| [LCH](qmd/03_clearing/en/organizations/lch.qmd) | LCH Ltd & SA |
+| [OCC](qmd/03_clearing/en/organizations/occ.qmd) | Options Clearing Corporation |
+| [CME Clearing](qmd/03_clearing/en/organizations/cme_clearing.qmd) | CME Clearing |
+| [Eurex Clearing](qmd/03_clearing/en/organizations/eurex_clearing.qmd) | Eurex Clearing |
+| [JSCC](qmd/03_clearing/en/organizations/jscc.qmd) | Japan Securities Clearing |
+| [HKEX Clearing](qmd/03_clearing/en/organizations/hkex_clearing.qmd) | HKSCC/HKCC/SEOCH |
+| [CDP](qmd/03_clearing/en/organizations/cdp.qmd) | CDP (SGX) |
+| [KRX Clearing](qmd/03_clearing/en/organizations/krx_clearing.qmd) | KRX 청산 |
+| [KSD](qmd/03_clearing/en/organizations/ksd.qmd) | Korea Securities Depository |
+| [EuroCCP](qmd/03_clearing/en/organizations/euroccp.qmd) | EuroCCP |
+| [Euroclear](qmd/03_clearing/en/organizations/euroclear.qmd) | Euroclear |
+| [Clearstream](qmd/03_clearing/en/organizations/clearstream.qmd) | Clearstream |
+| [ICE Clear](qmd/03_clearing/en/organizations/ice_clear.qmd) | ICE Clear |
+| [ASX Clear](qmd/03_clearing/en/organizations/asx_clear.qmd) | ASX Clear |
+| [SIX x-clear](qmd/03_clearing/en/organizations/six_xclear.qmd) | SIX x-clear |
+| [CDS Canada](qmd/03_clearing/en/organizations/cds_canada.qmd) | CDS |
+| [CSDC](qmd/03_clearing/en/organizations/csdc.qmd) | China Securities Depository |
+| [CCIL](qmd/03_clearing/en/organizations/ccil.qmd) | CCIL (India) |
+| [Muqassa](qmd/03_clearing/en/organizations/muqassa.qmd) | Muqassa (Saudi) |
+| **Systems** | |
+| [DTCC Systems](qmd/03_clearing/en/systems/dtcc_systems.qmd) | DTCC Technology |
+| [LCH Systems](qmd/03_clearing/en/systems/lch_systems.qmd) | LCH Technology |
+| [Eurex Clearing Prisma](qmd/03_clearing/en/systems/eurex_clearing_prisma.qmd) | PRISMA |
+| **Regulations** | |
+| [US Clearing Regulation](qmd/03_clearing/en/regulations/us_clearing_regulation.qmd) | CFTC, SEC |
+| [EU Clearing Regulation](qmd/03_clearing/en/regulations/eu_clearing_regulation.qmd) | EMIR, CSDR |
+| [Asia Clearing Regulation](qmd/03_clearing/en/regulations/asia_clearing_regulation.qmd) | Asia |
+:::
+
+::: {.column width="50%"}
+### 한국어
+
+| 문서 | 설명 |
+|------|------|
+| [개요](qmd/03_clearing/ko/01_overview.qmd) | 전체 개요 |
+| [비교분석](qmd/03_clearing/ko/02_comparative_analysis.qmd) | 비교분석 |
+| **청산기관** | |
+| [DTCC](qmd/03_clearing/ko/organizations/dtcc.qmd) | DTC/NSCC/FICC |
+| [LCH](qmd/03_clearing/ko/organizations/lch.qmd) | LCH Ltd & SA |
+| [OCC](qmd/03_clearing/ko/organizations/occ.qmd) | 옵션청산기구 |
+| [CME Clearing](qmd/03_clearing/ko/organizations/cme_clearing.qmd) | CME Clearing |
+| [Eurex Clearing](qmd/03_clearing/ko/organizations/eurex_clearing.qmd) | Eurex Clearing |
+| [JSCC](qmd/03_clearing/ko/organizations/jscc.qmd) | 일본증권청산기구 |
+| [HKEX Clearing](qmd/03_clearing/ko/organizations/hkex_clearing.qmd) | HKSCC/HKCC/SEOCH |
+| [CDP](qmd/03_clearing/ko/organizations/cdp.qmd) | CDP (SGX) |
+| [KRX 청산](qmd/03_clearing/ko/organizations/krx_clearing.qmd) | 한국거래소 청산 |
+| [KSD](qmd/03_clearing/ko/organizations/ksd.qmd) | 한국예탁결제원 |
+| [EuroCCP](qmd/03_clearing/ko/organizations/euroccp.qmd) | EuroCCP |
+| [Euroclear](qmd/03_clearing/ko/organizations/euroclear.qmd) | 유로클리어 |
+| [Clearstream](qmd/03_clearing/ko/organizations/clearstream.qmd) | 클리어스트림 |
+| [ICE Clear](qmd/03_clearing/ko/organizations/ice_clear.qmd) | ICE Clear |
+| [ASX Clear](qmd/03_clearing/ko/organizations/asx_clear.qmd) | ASX Clear |
+| [SIX x-clear](qmd/03_clearing/ko/organizations/six_xclear.qmd) | SIX x-clear |
+| [CDS Canada](qmd/03_clearing/ko/organizations/cds_canada.qmd) | CDS 캐나다 |
+| [CSDC](qmd/03_clearing/ko/organizations/csdc.qmd) | 중국증권등기결산 |
+| [CCIL](qmd/03_clearing/ko/organizations/ccil.qmd) | 인도청산결제 |
+| [Muqassa](qmd/03_clearing/ko/organizations/muqassa.qmd) | 무카사 (사우디) |
+| **시스템** | |
+| [DTCC 시스템](qmd/03_clearing/ko/systems/dtcc_systems.qmd) | DTCC 기술 |
+| [LCH 시스템](qmd/03_clearing/ko/systems/lch_systems.qmd) | LCH 기술 |
+| [Eurex Clearing Prisma](qmd/03_clearing/ko/systems/eurex_clearing_prisma.qmd) | PRISMA |
+| **규제** | |
+| [미국 청산 규제](qmd/03_clearing/ko/regulations/us_clearing_regulation.qmd) | CFTC, SEC |
+| [EU 청산 규제](qmd/03_clearing/ko/regulations/eu_clearing_regulation.qmd) | EMIR, CSDR |
+| [아시아 청산 규제](qmd/03_clearing/ko/regulations/asia_clearing_regulation.qmd) | 아시아 |
+:::
+
+::::
+
+---
+
+## 용어집 & 최종 리뷰 (Glossary & Final Review) {.unnumbered}
+
+| 문서 | 설명 |
+|------|------|
+| [Glossary (EN)](qmd/reference/glossary_en.qmd) | 영어 용어집 |
+| [용어집 (KO)](qmd/reference/glossary_ko.qmd) | 한국어 용어집 |
+| [Final Review (EN)](qmd/reference/final_review.qmd) | 최종 검토 및 벤치마킹 |
+| [최종 리뷰 (KO)](qmd/reference/ko/final_review.qmd) | 최종 검토 (한국어) |
+
+---
+
+*최종 업데이트: 2026-04-17 | 총 50개 이상의 거래소·청산기관 수록*

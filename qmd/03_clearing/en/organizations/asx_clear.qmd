@@ -1,0 +1,704 @@
+---
+title: "ASX Clear / ASX Clear (Futures)"
+subtitle: "Clearing & Settlement > Organizations"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 2
+> **Type:** CCP (two separate legal entities under ASX Group)
+
+---
+
+## 1. Overview & Profile
+
+### 1.1 Organization Profiles
+
+| Item | ASX Clear | ASX Clear (Futures) |
+|------|-----------|-------------------|
+| Official Name | ASX Clear Pty Limited | ASX Clear (Futures) Pty Limited |
+| ABN | 48 001 314 503 | 91 050 615 864 |
+| Website | [asx.com.au/clearing](https://www.asx.com.au/markets/clearing-and-settlement-services) | [asx.com.au/clearing](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear-futures) |
+| Year Established | 1969 (as Options Clearing House Pty Ltd, later renamed Australian Clearing House / ACH); renamed ASX Clear in 2010 | 1999 (as SFE Clearing Corporation / SFECC); renamed ASX Clear (Futures) following the 2006 ASX-SFE merger |
+| Country / City | Australia / Sydney, NSW |  Australia / Sydney, NSW |
+| Ownership Structure | Wholly owned subsidiary of ASX Clear Pty Limited, which is a subsidiary of ASX Limited | Wholly owned subsidiary of ASX Clearing Corporation Limited, which is a subsidiary of ASX Limited |
+| Parent Company / Group | ASX Limited (ASX: ASX) -- publicly listed on its own exchange | ASX Limited (ASX: ASX) |
+| Regulatory Authority | ASIC (Australian Securities and Investments Commission) and RBA (Reserve Bank of Australia) | ASIC and RBA |
+| CPMI-IOSCO PFMI Compliance | Yes -- publishes PFMI qualitative disclosures and quarterly Public Quantitative Disclosures (PQD) | Yes -- publishes PFMI disclosures and quarterly PQD |
+| QCCP Status | Yes -- recognised by ESMA as a third-country CCP under EU EMIR (effective 27 April 2015); also recognised as Qualifying CCP by APRA under APS 112 | Yes -- recognised by ESMA as a third-country CCP under EU EMIR (effective 27 April 2015); QCCP under APS 112 |
+
+**Vertical Integration:** ASX operates one of the world's few fully vertically integrated exchange groups, spanning listings, trading (ASX Trade for cash equities, ASX 24 for derivatives), clearing (ASX Clear and ASX Clear (Futures)), settlement (ASX Settlement via CHESS), and depository services (Austraclear for debt securities). This vertical integration is a defining feature of the Australian financial market infrastructure. Unlike many global markets where trading, clearing, and settlement functions are operated by separate entities (e.g., US markets with exchanges, DTCC/NSCC, and DTC), ASX controls the entire post-trade value chain for the Australian market.
+
+**Comparison with KRX/KSD:** Korea's post-trade infrastructure is similarly concentrated but split across two entities: KRX (Korea Exchange) acts as the CCP for both securities and derivatives, while KSD (Korea Securities Depository) handles settlement and depository functions. ASX's model consolidates both clearing and settlement under a single corporate group with separate legal entities for each function.
+
+[Source: ASX PFMI Disclosure Framework, https://www.asx.com.au/content/dam/asx/about/pfmi-disclosure-framework.pdf]
+[Source: ASX ESMA Recognition, https://www.asx.com.au/regulation/regulatory-compliance/esma.htm]
+
+### 1.2 Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 1969 | Options Clearing House Pty Ltd established (predecessor to ASX Clear) |
+| 1987 | Six state-based stock exchanges merge to form the Australian Stock Exchange (ASX) |
+| 1996 | CHESS (Clearing House Electronic Subregister System) launched for electronic settlement and subregistry |
+| 1998 | ASX demutualises and lists on its own exchange |
+| 1999 | SFE Clearing Corporation (SFECC) established as CCP for Sydney Futures Exchange |
+| 2005 | National Guarantee Fund (NGF) capital transferred to ASX Clear (AUD 71.5M restricted capital reserve) |
+| 2006 | ASX merges with Sydney Futures Exchange (SFE) to form ASX Limited; SFECC and ACH continue as separate CCPs |
+| 2010 | Australian Clearing House (ACH) renamed to ASX Clear; SFECC renamed to ASX Clear (Futures); CHESS begins operating under "ASX Settlement Pty Limited" |
+| 2013 | ASX Clear (Futures) launches OTC interest rate derivative clearing using Calypso platform (September) |
+| 2014 | Genium INET Clearing replaces SECUR system for exchange-traded derivatives clearing at ASX Clear (Futures) (May) |
+| 2015 | ESMA recognises both ASX Clear and ASX Clear (Futures) as third-country CCPs under EMIR (27 April) |
+| 2017 | ASX introduces recovery rules for both CCPs, including assessment powers and contract termination |
+| 2022 | ASX abandons DLT-based CHESS replacement project (November); writes off ~AUD 250 million |
+| 2023 | ASX selects Tata Consultancy Services (TCS) as new CHESS replacement partner |
+| 2024 | December CHESS batch settlement failure (20 December) -- memory allocation error from 2014 triggers failure |
+| 2025 | RBA downgrades ASX Clear and ASX Settlement to "not observed" on Operational Risk standard; ASIC launches formal Inquiry into ASX Group (June); Calypso OTC clearing upgrade delivered under ClearStar program (May) |
+| 2026 | CHESS Release 1 (clearing replacement) planned for go-live 20 April 2026 |
+
+[Source: RBA Assessment of ASX Clearing and Settlement Facilities 2024/25, September 2025]
+[Source: ASX Story, https://www.asx.com.au/about/asx-story]
+[Source: RBA 2009/10 Assessment of ASX Clear, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2009-2010/asx-clear.html]
+
+---
+
+## 2. Clearing Model
+
+### 2.1 CCP Services
+
+ASX operates two separate CCPs, each serving distinct product classes:
+
+**ASX Clear -- Cash Market and Equity Derivatives:**
+
+| Product Class | Description | Notes |
+|---------------|-------------|-------|
+| Cash Equities | All shares, ETFs, warrants traded on ASX Trade and Cboe Australia | Monopoly position -- sole CCP for Australian cash equities |
+| Equity Options (ETOs) | Exchange-traded options on equities and indices traded on ASX Trade | Includes options on ASX 200 index and single-stock options |
+| Structured Products | Warrants and other structured products | |
+| mFund | Managed fund settlement | |
+
+**ASX Clear (Futures) -- Derivatives and OTC:**
+
+| Product Class | Description | Volume / Open Interest |
+|---------------|-------------|----------------------|
+| Futures & Options on Futures | Interest rate futures (90-day Bank Bill, 3/10/20-year bonds), equity index futures (SPI 200), commodity futures | Traded on ASX 24 |
+| OTC Interest Rate Derivatives | AUD and NZD interest rate swaps, basis swaps, FRAs | Open notional cleared: ~AUD 4,482 billion (January 2025); ~5.6% market share vs LCH's ~94.4% for AUD swaps |
+| Energy & Environmental Derivatives | Electricity futures, gas, renewable energy certificates | Traded on ASX 24 / ASX Energy |
+| Agricultural Derivatives | Grain futures, wool futures | |
+| NZ Derivatives | NZX-traded products cleared by ASX Clear (Futures) under agreement | |
+
+[Source: ASX Clearing and Settlement Services, https://www.asx.com.au/markets/clearing-and-settlement-services]
+[Source: Clarus Financial Technology, "What's New in AUD Swaps in 2024?", https://www.clarusft.com/whats-new-in-aud-swaps-in-2024/]
+
+### 2.2 Novation Process
+
+Upon acceptance of a trade for clearing, the relevant ASX CCP interposes itself as the legal counterparty to both sides of every transaction through the process of **novation**. The original bilateral contract between buyer and seller is extinguished and replaced by two new contracts: one between the CCP and the buyer, and one between the CCP and the seller.
+
+- **ASX Clear:** Novation occurs automatically for all trades executed on ASX Trade and Cboe Australia that are registered with ASX Clear. Novation takes place at the point of trade registration.
+- **ASX Clear (Futures):** Novation occurs when a trade is matched on ASX 24 or when an OTC transaction is submitted through an approved affirmation platform and accepted for clearing.
+
+Through novation, each clearing participant only faces the CCP as its counterparty, eliminating bilateral counterparty credit risk. This is the standard CCP model consistent with PFMI Principle 4 (Credit Risk).
+
+[Source: ASX Clearing, https://www.asx.com.au/about/regulation/clearing-and-settlement-of-cash-equities-in-australia/clearing]
+
+### 2.3 Netting
+
+**ASX Clear (Cash Equities):**
+- Employs **multilateral netting** of settlement obligations
+- For each settlement participant, all buys and sells in each individual cash market product are netted into one net buy or sell obligation per security
+- All payment obligations (pays and collects) are netted into one net pay or collect per settlement participant
+- Settlement occurs in a single daily multilateral net batch via CHESS (DvP Model 3)
+- Netting arrangements are approved under the **Payment Systems and Netting Act 1998**
+- Netting efficiency is high -- significantly reduces the gross value of settlement obligations
+
+**ASX Clear (Futures):**
+- Multilateral netting of variation margin across all positions within a clearing participant's account
+- Portfolio-based margining via CME SPAN recognises offsets between correlated positions
+- OTC interest rate derivative positions are also netted within the same clearing account
+
+**Comparison with KRX:** KRX similarly employs multilateral netting for both securities and derivatives, settling net obligations through KSD. However, KRX's netting occurs within a single CCP entity, whereas ASX maintains separate netting pools for cash (ASX Clear) and derivatives (ASX Clear (Futures)).
+
+[Source: ASX Settlement services and pricing, https://www.asx.com.au/about/regulation/clearing-and-settlement-of-cash-equities-in-australia/settlement/settlement-services-and-pricing.html]
+
+### 2.4 Clearing Membership
+
+**ASX Clear (Cash Market) -- Participant Categories:**
+
+| Tier | Requirements | Approx. Number |
+|------|-------------|----------------|
+| Direct Clearing Participant | Clears own trades; must meet Risk-Based Capital Requirements (for equities/options) or Other Capital Regime (for ADIs); ongoing capital adequacy monitoring via financial returns | ~30 participants [unverified -- based on ASX participant list, approximately 30 entities listed as of 2025] |
+| General Clearing Participant | Clears own trades and trades on behalf of third parties (NCMs); must meet same capital requirements plus additional requirements for third-party clearing | Subset of Direct Clearing Participants |
+| Non-Clearing Participant | Does not clear directly; must use a General Clearing Participant under a Clearing Agreement | N/A (clears via GCP) |
+
+**ASX Clear (Futures) -- Participant Categories:**
+
+| Tier | Requirements | Approx. Number |
+|------|-------------|----------------|
+| Direct Clearing Participant | Clears own trades; must meet minimum capital requirements | ~20 participants [unverified -- based on ASX participant list, approximately 20 entities listed as of 2025] |
+| General Clearing Participant | Clears own and third-party trades; higher capital requirements | Subset of Direct Clearing Participants |
+
+**Capital Requirements (ASX Clear):**
+- Two capital regimes: **Risk-Based Capital Requirements** (for participants clearing equities or options, unless an ADI eligible for Other Capital Regime) and **Other Capital Regime** (for authorised deposit-taking institutions / ADIs)
+- Risk-Based Capital Requirements calculated based on the participant's risk exposures, including market risk, counterparty risk, and operational risk
+- Capital adequacy is monitored via end-of-day financial returns; intraday monitoring may apply during periods of high volatility
+- ASX Clear published a consultation in January 2026 on third-party clearing capital requirements
+
+**Note:** Unlike many global CCPs (e.g., CME Clearing with its USD 5M minimum net capital for non-bank FCMs), ASX Clear's capital requirements are more principles-based and risk-proportionate, reflecting the smaller number of clearing participants in the Australian market.
+
+[Source: ASX Capital Requirements Guidance, https://www.asxonline.com/content/dam/asxonline/public/documents/manuals/capital-liquidity-handbook/capital-requirements-guidance.pdf]
+[Source: ASX Capital Liquidity Handbook, February 2025, https://www.asxonline.com/content/dam/asxonline/public/documents/manuals/capital-liquidity-handbook/asx_046913.pdf]
+[Source: ASX Clear Third Party Clearing Consultation, January 2026, https://www.asx.com.au/content/dam/asx/about/regulations/public-consultations/2026/260116-tpc-consultation-paper-and-appendix.pdf]
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework
+
+**ASX Clear (Cash Equities) -- Cash Market Margining (CMM):**
+
+| Component | Methodology | Details |
+|-----------|-------------|---------|
+| Initial Margin | **Filtered Historical Simulation VaR (FHSVaR)** | Covers potential losses at a high confidence level; calibrated using historical price data |
+| Mark-to-Market Margin | Daily mark-to-market | Reflects unrealised gains/losses on open positions |
+| Additional Margin (Cash Equities) | Concentration, liquidity, wrong-way risk add-ons | Applied when positions are concentrated or in illiquid securities |
+| CMM Methodology Update (Aug 2025) | HSVaR parameters recalibrated | Average increase in HSVaR margins across all clearing participants of ~12%, effective 22 August 2025 |
+
+**ASX Clear (Equity Derivatives / ETOs) -- SPAN-based:**
+
+| Component | Methodology | Details |
+|-----------|-------------|---------|
+| Initial Margin | **CME SPAN (Standard Portfolio Analysis of Risk)** | Calculates maximum potential loss for a portfolio of derivatives grouped by product; adopted from the Chicago Mercantile Exchange |
+| Calibration | 3 standard deviations of 60-day historical price distribution | For exchange-traded options and OTC equity/index options |
+| Review Cycle | Quarterly | CME SPAN margin parameters reviewed on a three-monthly cycle |
+
+**ASX Clear (Futures) -- Exchange-Traded Derivatives:**
+
+| Component | Methodology | Details |
+|-----------|-------------|---------|
+| Initial Margin | **CME SPAN** | Calculates maximum potential loss for a portfolio; evaluates margin rates against multiple look-back periods (7 business days, 120 business days, and 12 months) |
+| Calibration | 3 standard deviations of historical price distributions | Incorporates both short-term and long-term volatility |
+| Review Cycle | Quarterly | Regular parameter reviews; ad-hoc reviews during high volatility |
+
+**ASX Clear (Futures) -- OTC Derivatives:**
+
+| Component | Methodology | Details |
+|-----------|-------------|---------|
+| Initial Margin | **Filtered Historical Simulation VaR (FHSVaR)** | Uses a distribution of simulated changes in portfolio value to calculate potential loss at a given confidence level |
+| Variation Margin | Daily mark-to-market | Covers unrealised P&L changes on OTC positions |
+
+**Comparison with KRX:** KRX uses KOSCOM-TIMS (Theoretical Intermarket Margin System, based on OMS -- Options Margin System) for derivatives margining, while ASX uses CME SPAN for derivatives. Both are scenario-based approaches, but SPAN is more widely adopted globally. For cash equities, KRX uses a similar VaR-based approach to ASX Clear's CMM.
+
+[Source: ASX Clear Margining, https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear/risk-management/margining]
+[Source: Understanding Margins -- ASX Clear, https://www.asx.com.au/content/dam/asx/participants/clearing-and-settlement/asx-clear/understanding-margins.pdf]
+[Source: RBA Special Topic on Margin, 2021/22 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2021-2022/special-topics-margin.html]
+
+### 3.2 Margin Call Schedule
+
+**ASX Clear (Cash Equities and Equity Derivatives):**
+
+| Call Type | Timing | Settlement |
+|-----------|--------|------------|
+| End-of-Day (Regular) | Calculated after market close; margin obligations reported to participants | Payment due by start of business next day |
+| Intraday (Ad-hoc) | Triggered when S&P/ASX 200 index moves +/- 1% or more; during heightened volatility, ASX reviews exposures up to 3 times per day | Must be met within **2 hours** of the call |
+| Threshold | Intraday call issued when participant's margin shortfall > AUD 100,000 AND represents an erosion of initial margin of 40% or more | Within 2 hours |
+
+**ASX Clear (Futures):**
+
+| Call Type | Timing | Settlement |
+|-----------|--------|------------|
+| End-of-Day | Calculated after Day Session close | Payment due next morning |
+| Scheduled Intraday | **3 scheduled intraday margin runs** during the Day Session | As per schedule |
+| Overnight Call | Shortly after 2:00am AEST; covers change in margin requirements since last intraday run; accounts for Night Session exposures | Due before market open |
+| Ad-hoc / Extraordinary | At ASX's discretion during extreme market conditions | As specified |
+
+[Source: ASX Clear Daily Processes and Deadlines, https://www.asx.com.au/content/dam/asx/participants/clearing-and-settlement/asx-clear/daily-processes-and-deadlines.pdf]
+[Source: ASX Clear (Futures) Daily Processes and Deadlines, https://www.asx.com.au/documents/clearing/ASX_Clear_(Futures)__Daily_Processes_and_Deadlines.pdf]
+[Source: RBA Standard 6: Margin, 2015/16 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2015-2016/asx-clear/standard-06.html]
+
+### 3.3 Default Waterfall
+
+**ASX Clear (Cash Market) Default Waterfall:**
+
+| Layer | Description | Size (approx.) |
+|-------|-------------|----------------|
+| 1 | Defaulter's margin (initial margin + mark-to-market) | Variable (position-dependent) |
+| 2 | ASX Clear's own capital (SITG -- Skin-in-the-Game) | Included in AUD 250M default fund |
+| 3 | ASX Clear Default Fund (100% funded by ASX Clear / ASX capital) | **AUD 250 million** total |
+| 4 | Recovery Assessments on non-defaulting participants | Up to **AUD 300 million** (for one or multiple defaults) |
+| 5 | Contract termination / partial tear-up | As required |
+
+**Key feature:** ASX Clear's default fund for cash equities is **entirely funded by ASX's own capital** -- clearing participants do not make upfront default fund contributions. This is unusual compared to most global CCPs (e.g., CME, Eurex, LCH) where participants contribute to the default fund proportional to their risk. The historical basis for this structure includes AUD 71.5M in restricted capital transferred from the National Guarantee Fund (NGF) in 2005, plus subordinated loans from ASX Clearing Corporation.
+
+**ASX Clear (Futures) Default Waterfall:**
+
+| Layer | Description | Size (approx.) |
+|-------|-------------|----------------|
+| 1 | Defaulter's margin (initial margin + variation margin) | Variable |
+| 2 | Defaulter's default fund contribution | Proportional share of AUD 200M participant pool |
+| 3 | ASX capital -- Tranche 1 (SITG) | Part of AUD 450M ASX capital |
+| 4 | Non-defaulting participants' default fund contributions -- Tranche 1 | Part of AUD 200M participant pool |
+| 5 | ASX capital -- Tranche 2 | Part of AUD 450M ASX capital |
+| 6 | Non-defaulting participants' default fund contributions -- Tranche 2 | Remainder of AUD 200M participant pool |
+| 7 | ASX capital -- Tranche 3 | **AUD 180 million** |
+| 8 | Recovery Assessments on non-defaulting participants | Up to **AUD 200 million** per default (max AUD 600M for multiple defaults) |
+| 9 | Payment haircutting (variation margin haircutting) | Reduces outgoing payments to allocate losses |
+| 10 | Contract termination / partial tear-up | As required |
+
+**Total ASX Clear (Futures) Default Fund:** **AUD 650 million** pre-funded
+- ASX capital contribution: AUD 450 million (across 3 tranches)
+- Participant contributions: AUD 200 million (across 2 tranches, commingled across futures and OTC products)
+
+**Juniorisation mechanism:** In the auction process for the defaulter's portfolio, participants' default fund contributions are applied in order related to the size of their auction bids -- the auction winner's contribution is applied last (best protected), while the lowest bidder's contribution is applied first. This incentivises aggressive bidding in the default management auction.
+
+**Comparison with other CCPs:**
+
+| CCP | Total Default Fund | ASX Capital (SITG) | Participant Contributions |
+|-----|-------------------|--------------------|--------------------------|
+| ASX Clear (cash) | AUD 250M | AUD 250M (100%) | AUD 0 |
+| ASX Clear (Futures) | AUD 650M | AUD 450M (69%) | AUD 200M (31%) |
+| CME Clearing (Base) | ~USD 4.8B | USD 100M | ~USD 4.7B |
+| LCH Ltd (SwapClear) | ~GBP 6.0B+ | GBP 35M+ | ~GBP 6.0B |
+
+ASX's model is notable for the very high proportion of CCP-funded resources relative to participant contributions, reflecting the vertically integrated ownership model.
+
+[Source: RBA Standard 12, 2016/17 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2016-2017/asx-central-counterparties/standard-12.html]
+[Source: RBA Standard 12, 2015/16 Assessment of ASX Clear (Futures), https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2015-2016/asx-clear-futures/standard-12.html]
+[Source: FIA, "FIA supports ASX default management proposals", https://www.fia.org/fia/articles/fia-supports-asx-default-management-proposals]
+
+### 3.4 Default Fund / Guarantee Fund
+
+**ASX Clear:**
+- Total size: **AUD 250 million** (100% funded by ASX)
+- No participant contributions to the default fund
+- Participants are instead subject to Recovery Assessments (up to AUD 300M) if the default fund is exhausted
+- Additional contingent resources: **AUD 300 million** available beyond the default fund [unverified -- exact structure of contingent resources]
+- Review frequency: Reviewed periodically by ASX and assessed annually by the RBA
+
+**ASX Clear (Futures):**
+- Total size: **AUD 650 million** pre-funded
+- ASX capital: AUD 450 million (3 tranches)
+- Participant contributions: AUD 200 million (2 tranches)
+- Contribution methodology: Participant contributions are proportional to risk brought to the CCP (based on initial margin requirements)
+- Contributions commingled across futures and OTC derivative products
+- Review frequency: Reviewed periodically; RBA assesses annually
+- Replenishment: After a default event and a 22-business-day cooling-off period, default funds are replenished to up to AUD 400 million for ASX Clear (Futures) and AUD 150 million for ASX Clear
+
+[Source: RBA 2024/25 Assessment of ASX Clearing and Settlement Facilities]
+[Source: ASX PFMI Disclosure Framework]
+
+### 3.5 Stress Testing & Back-testing
+
+**Credit Stress Testing (CST):**
+
+- Both CCPs conduct daily **credit stress tests** to assess the adequacy of financial resources
+- **Cover 2 standard:** ASX Clear (Futures) sizes its financial resources to cover the default of the two participants with the largest exposures under extreme but plausible market conditions (consistent with PFMI Principle 4)
+- ASX Clear also targets a Cover 2 standard for its default fund sizing
+
+**Stress Test Methodology:**
+
+| Scenario Type | Description |
+|---------------|-------------|
+| Historical | Based on observed market events (e.g., GFC 2008, COVID-19 March 2020) |
+| Hypothetical | Constructed by ASX risk management to cover extreme but plausible scenarios |
+| Theoretical | Mathematical/statistical extreme scenarios |
+| Volatility Skew (Phase 3, Sep 2024) | Scaling factors to account for equity volatility skew on out-of-the-money index and equity options |
+| Specific Wrong-Way Risk (Nov 2024) | Additional scenarios to address wrong-way risk exposures |
+
+**Back-testing:**
+- Regular back-testing of margin models to assess the adequacy of margin rates
+- Comparison of margin held against actual portfolio losses
+
+**RBA Concerns (2024/25 Assessment):**
+- The RBA was "disappointed by the number of issues identified with ASX's financial risk models" during the assessment period
+- **Errors were identified in ASX's credit stress tests**, leading to the downgrade of the Credit Risk Standard to "partly observed" for both CCPs
+- RBA expects ASX to prioritise improving its **model validation and control testing frameworks**, particularly data and reporting controls
+
+[Source: ASX Clear Credit Stress Test methodology, August 2024, https://asxonline.com/content/asxonline/public/notices/2024/august/0954.24.08.html]
+[Source: ASX Clear Credit Stress Test parameters, March 2024, https://www.asxonline.com/content/asxonline/public/notices/2024/march/0226.24.03.html]
+[Source: RBA 2024/25 Assessment Executive Summary, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/executive-summary.html]
+
+### 3.6 Recovery & Resolution
+
+**Recovery Tools:**
+
+Both ASX Clear and ASX Clear (Futures) have formal **ASX Recovery Rules** (effective from November 2017, amended since), which provide the following tools:
+
+| Tool | ASX Clear | ASX Clear (Futures) |
+|------|-----------|-------------------|
+| **Recovery Assessments** | Up to AUD 300 million for one or multiple defaults | Up to AUD 200 million per default; max AUD 600 million for multiple defaults within a defined default period |
+| **Variation Margin Haircutting** | **Not available** -- variation margin is applied differently in cash equities (collected on losses but not paid out on gains in the same way as derivatives) | **Available** -- ASX Clear (Futures) can reduce (haircut) outgoing payments to participants to allocate losses |
+| **Partial Tear-up** | Available -- forced termination of some open contracts to restore a matched book | Available |
+| **Complete Termination** | Available -- termination of all open contracts with haircutting of settlement payments | Available |
+| **Auction / Default Management** | ASX can auction the defaulter's portfolio | ASX can auction the defaulter's portfolio; juniorisation mechanism incentivises bidding |
+
+**Resolution Authority:**
+- Australia does not currently have a dedicated CCP resolution regime comparable to the EU's CCP Recovery and Resolution Regulation (CCPRRR) or the US Dodd-Frank Title II
+- The RBA and ASIC would coordinate any resolution actions under existing powers in the **Corporations Act 2001** and the **Reserve Bank Act 1959**
+- The Council of Financial Regulators (CFR) has considered the need for a dedicated CCP resolution framework, but as of 2026 no formal legislation has been enacted [unverified]
+
+[Source: ASX Recovery Rules Handbook, https://www.asx.com.au/content/dam/asx/rules-guidance-notes-waivers/asx-recovery-rules/asx-recovery-rules-handbook.pdf]
+[Source: ASX Recovery and Resolution, https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear/risk-management/recovery-and-resolution]
+[Source: RBA Special Topic on Default Management and Recovery, 2019/20, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2019-2020/special-topic-default-management-and-recovery.html]
+[Source: RBA Recovery and Resolution Bulletin, December 2013, https://www.rba.gov.au/publications/bulletin/2013/dec/5.html]
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle
+
+| Product | Settlement Cycle | Notes |
+|---------|-----------------|-------|
+| Cash Equities | **T+2** | Standard cycle since March 2016 (moved from T+3) |
+| Equity Options (ETOs) | T+1 (premium); exercise settlement varies | Premium paid T+1; exercise settlement follows underlying equity cycle |
+| Government Bonds (Austraclear) | T+2 | Settled via Austraclear RTGS |
+| Futures | Daily mark-to-market (variation margin); final settlement varies by contract | No physical settlement for most financial futures |
+| OTC Derivatives | Daily variation margin; maturity settlement as per contract | |
+
+**T+1 Transition Plans:**
+- ASX published an industry whitepaper in April 2024; T+1 Working Group established December 2023
+- Industry consensus: T+1 is desirable but should not proceed until CHESS replacement is complete
+- No confirmed T+1 implementation date; earliest feasible timeline likely **2029+** (after CHESS Phase 2 delivery)
+- International context: US moved to T+1 in May 2024; EU targeting 2027; UK targeting 2027
+
+[Source: ASX T+1 Settlement Cycle, https://www.asx.com.au/markets/clearing-and-settlement-services/t1-settlement-cycle]
+
+### 4.2 DVP Model
+
+**ASX Settlement (CHESS) -- Cash Equities:**
+- **BIS DvP Model 3:** Multilateral net batch settlement
+- Settlement of all transactions due on a given business day occurs in a **single daily batch** that completes at approximately **12:30pm AEST**
+- Securities and cash obligations are settled simultaneously on a net basis
+- CHESS also has functionality for DvP Model 1 (item-by-item RTGS settlement), but this **is not currently used** by any settlement participant
+
+**Austraclear -- Debt Securities:**
+- **BIS DvP Model 1:** Simultaneous exchange of assets (cash and securities) on an item-by-item basis in real time
+- Interbank cash element settled via RITS (Reserve Bank Information and Transfer System) using **real-time gross settlement (RTGS)** across Exchange Settlement Accounts (ESAs) at the RBA
+- Settlement in central bank money
+
+**Comparison with KRX/KSD:** KSD uses DvP Model 1 for government bonds (real-time settlement via BOK-Wire+) and a combination of DvP Model 2/3 for equities (multilateral netting with same-day settlement). ASX's single daily batch for equities (DvP Model 3) is less granular than some Asian markets but provides high netting efficiency.
+
+[Source: RBA Standard 10, 2017/18 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2017-2018/asx-securities-settlement-facilities/standard-10.html]
+[Source: RBA Standard 7, 2017/18 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2017-2018/asx-securities-settlement-facilities/standard-07.html]
+
+### 4.3 Settlement Finality
+
+- **Legal basis:** Payment Systems and Netting Act 1998 (PSN Act) -- provides legal protections for payments and transfers of assets through approved RTGS systems
+- **CHESS:** The RBA has declared CHESS an approved RTGS system under the PSN Act, providing protection from reversal or invalidation under insolvency law
+- **Point of finality (CHESS):** Settlement is final and irrevocable upon completion of the daily batch settlement process (~12:30pm AEST)
+- **Austraclear:** Also an approved RTGS system; settlement is final when the security record amendments are made and RITS confirms the cash transfer has been effected
+- **Irrevocability:** Once settlement is completed, it cannot be unwound, even in the event of a participant's insolvency
+
+[Source: RBA Standard 7: Settlement Finality, 2017/18 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2017-2018/asx-securities-settlement-facilities/standard-07.html]
+
+### 4.4 CSD / Settlement Infrastructure
+
+| System | Function | Details |
+|--------|----------|---------|
+| **CHESS** (Clearing House Electronic Subregister System) | CSD and settlement system for cash equities | Launched 1996; handles settlement, subregistry, and corporate actions for all ASX-listed securities; operates as ASX Settlement Pty Limited |
+| **ASX Settlement** | Settlement facility licensee | Licensed under the Corporations Act 2001; holds a CS facility licence |
+| **Austraclear** | CSD for debt securities and depository for government bonds | Handles settlement and registry for fixed income instruments; uses RTGS via RITS |
+| **Cash Settlement** | **Central bank money** (via RITS/ESAs at RBA) | Both CHESS and Austraclear settle the cash leg through ESAs at the Reserve Bank of Australia -- settlement in central bank money, providing the highest level of safety |
+
+**CHESS as Subregister:** A unique feature of the Australian market is that CHESS acts as an electronic subregister for securities holdings. Rather than having a separate share registry system, CHESS maintains a subregister of all holdings that have been "CHESS-sponsored" (i.e., held in the CHESS system under a HIN -- Holder Identification Number). This differs from most other markets where the CSD/depository function is separate from the share registry.
+
+[Source: ASX Clearing and Settlement Services, https://www.asx.com.au/markets/clearing-and-settlement-services]
+
+### 4.5 CSD Linkages
+
+| Linked CSD/ICSD | Type of Link | Products |
+|-----------------|-------------|----------|
+| NZX / NZ Clearing Limited | Cross-border clearing link | NZX-traded products cleared by ASX Clear (Futures) |
+
+ASX does not maintain extensive CSD linkages with international CSDs/ICSDs such as Euroclear or Clearstream. Australian securities are primarily held domestically within CHESS. International investors typically access the Australian market through custodian banks or nominee arrangements rather than direct CSD links.
+
+[Source: ASX PFMI Disclosure Framework]
+
+### 4.6 Securities Lending & Borrowing
+
+- **Facility available:** Yes, through ASX Collateral
+- **ASX Collateral** provides:
+  - **Free of Payment (FoP) mechanism** for collateralisation and maintenance of various exposure types, including securities lending and borrowing, CSA margining, and CCP margining with ASX Clear (Futures)
+  - **Delivery versus Delivery (DvD) mechanism** for principal settlement of securities-versus-securities transactions, including securities lending and borrowing
+- The securities lending market in Australia is primarily an OTC bilateral market between institutional participants, facilitated by custodian banks and prime brokers
+- ASX's role is primarily in providing the settlement infrastructure for securities lending transactions rather than operating a centralised lending facility
+
+[Source: ASX Collateral, https://www.asx.com.au/markets/clearing-and-settlement-services/collateral-services]
+
+---
+
+## 5. Technology & Infrastructure
+
+### 5.1 System Overview
+
+| System | Function | Technology | Status |
+|--------|----------|------------|--------|
+| **CHESS** | Settlement, subregistry, and clearing for cash equities | Legacy mainframe-based system (launched 1996) | Being replaced -- Release 1 (clearing) targeted 20 April 2026 |
+| **Genium INET Clearing** | Exchange-traded derivatives clearing for ASX Clear (Futures) | NASDAQ Genium INET platform | Operational since May 2014 (replaced SECUR system) |
+| **Calypso** | OTC interest rate derivative clearing | Calypso Technology platform | Upgraded to v18 under ClearStar program (May 2025) |
+| **DCS (Derivatives Clearing System)** | Legacy equity derivatives clearing for ASX Clear | | Being modernised |
+| **ASX Trade** | Cash equities trading platform | NASDAQ Genium INET | Operational since November 2010 |
+| **ASX 24** | Derivatives trading platform | NASDAQ Genium INET | Operational since October 2010 |
+
+### CHESS Replacement Project (Major)
+
+The CHESS replacement is one of the most significant and troubled technology projects in global exchange history:
+
+**Phase 1 -- DLT/Blockchain Approach (2015-2022):**
+- 2015: ASX selected Digital Asset Holdings (DA) to explore DLT for CHESS replacement
+- 2017: ASX formally announced CHESS replacement using DA's distributed ledger technology
+- 2018-2022: Repeated delays -- go-live date pushed from 2020 to 2021, 2022, then 2023
+- November 2022: ASX abandoned the DLT project after an independent Accenture review found software was only 63% complete with uncertain timeline and overly complex design
+- Financial impact: **~AUD 250 million write-off**
+- August 2024: **ASIC commenced Federal Court proceedings** against ASX, alleging misleading statements about the DLT project's progress (particularly the February 2022 claim that the project was "on-track" and "progressing well")
+
+**Phase 2 -- Conventional Technology with TCS (2023-present):**
+- November 2023: ASX selected **Tata Consultancy Services (TCS)** as new implementation partner
+- Architecture: Modular, cloud-based platform using conventional technology
+- **Release 1 (Clearing):** Targeted go-live **20 April 2026**; estimated cost AUD 105-125 million; replaces clearing component of CHESS; introduces more efficient netting process and FIX messaging for trade registrations
+- **Release 2 (Settlement and Subregister):** Targeted for **2029**; estimated cost AUD 270-320 million; replaces remaining CHESS functionality
+- March 2026: ASX released the CHESS Release 1 Cutover Runbook and progress updates; appears on track
+
+### ClearStar Program
+
+The ClearStar Program is a portfolio of projects to modernise and replace the technology underpinning ASX's derivatives clearing services over a six-year period:
+- **OTC Clearing (Calypso Upgrade):** Upgraded from Calypso v13 to v18; delivered 26 May 2025
+- **Exchange-Traded Derivatives Futures Clearing:** Platform upgrade planned as part of the program
+- Objective: Improve operational efficiency, enhance risk management capabilities, modernise clearing infrastructure
+
+[Source: ASX CHESS Project, https://www.asx.com.au/markets/clearing-and-settlement-services/chess-project]
+[Source: ASX ClearStar Program, https://www.asx.com.au/markets/clearing-and-settlement-services/clearstar-program]
+[Source: WatersTechnology, "ASX CHESS replacement to be delivered in phases", https://www.waterstechnology.com/trading-tech/7951687/asx-chess-replacement-to-be-delivered-in-phases-with-clearing-first-in-2026]
+[Source: The Fintech Times, "Blockchain Project Gone Wrong: ASIC Takes ASX to Court", https://thefintechtimes.com/blockchain-project-gone-wrong-asic-takes-asx-to-court-over-chess-replacement/]
+
+### 5.2 Interface Protocols
+
+| Protocol | Use Case |
+|----------|----------|
+| **SWIFT (FIN/ISO 15022)** | Used for Austraclear settlement messaging |
+| **ISO 20022** | Being adopted as part of CHESS replacement and broader industry modernisation |
+| **FIX Protocol** | CHESS Release 1 introduces FIX messaging for trade registrations; also used for ASX Trade order entry |
+| **CHESS EIS (External Interface Specification)** | Proprietary messaging protocol for CHESS -- used by settlement and clearing participants |
+| **OUCH / ITCH** | Ultra-low latency protocols for ASX Trade (trading, not clearing) |
+
+### 5.3 Resilience
+
+- **Data Centre:** Australian Liquidity Centre (ALC), Gore Hill, Sydney -- purpose-built Tier III financial markets data centre
+- **DR site:** ASX operates a secondary data centre for disaster recovery [specific location not publicly disclosed]
+- **RTO / RPO:** Target RTO of 2 hours for critical systems; specific RPO not publicly disclosed
+- **Uptime SLA:** Not publicly disclosed; however, operational incidents are reported to the RBA
+
+**Critical Concern -- December 2024 CHESS Incident:**
+- On 20 December 2024, a **memory allocation coding error introduced in 2014** caused the CHESS batch settlement to fail
+- The error went undetected for 10 years until specific conditions triggered it
+- All settlements were pushed to the following Monday, disrupting the entire Australian cash equities market
+- This incident led the RBA to downgrade ASX Clear and ASX Settlement's Operational Risk standard to **"not observed"** -- the lowest possible rating
+- The RBA noted the incident "reinforced concerns about risk management at ASX and underscored that there is still substantial work to be done"
+
+[Source: RBA Out-of-cycle Assessment, March 2025, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/march/]
+
+---
+
+## 6. Regulatory Framework
+
+### 6.1 Supervising Authority
+
+| Authority | Role |
+|-----------|------|
+| **ASIC** (Australian Securities and Investments Commission) | Primary regulator -- market supervision, licensing of market operators and participants, enforcement of market integrity rules, consumer protection; commenced formal Inquiry into ASX Group in June 2025 |
+| **RBA** (Reserve Bank of Australia) | Oversees clearing and settlement facility licensees under the **Financial Stability Standards (FSS)**; assesses ASX Clear, ASX Clear (Futures), ASX Settlement, and Austraclear annually; focuses on systemic risk and financial stability |
+| **CFR** (Council of Financial Regulators) | Coordinating body comprising RBA, ASIC, APRA, and Treasury; oversees financial system stability |
+| **APRA** (Australian Prudential Regulation Authority) | Regulates ADIs that are clearing participants; sets capital requirements for bank participants' CCP exposures |
+
+### 6.2 Key Regulations
+
+- **Corporations Act 2001 (Cth):** Part 7.3 -- clearing and settlement facility licences; Part 7.3A -- CS facility rules
+- **Financial Stability Standards (FSS):** Set by the RBA under Section 827D of the Corporations Act; based on CPMI-IOSCO PFMI principles
+- **Payment Systems and Netting Act 1998:** Provides settlement finality protections
+- **ASIC CS Services Rules 2025:** New regulatory framework for clearing and settlement service pricing; implements **revenue-capping methodology** reflecting ASX's monopoly position in cash equity clearing and settlement
+- **ASX Clear Operating Rules / ASX Clear (Futures) Operating Rules:** Govern clearing participation, margining, default management
+- **ASX Recovery Rules:** Govern recovery tools including assessment powers, haircutting, and contract termination
+
+### 6.3 PFMI Compliance
+
+**RBA 2024/25 Assessment (September 2025) -- Compliance Ratings:**
+
+| Standard | ASX Clear | ASX Clear (Futures) |
+|----------|-----------|-------------------|
+| Governance | Partly Observed | Partly Observed |
+| Framework for Comprehensive Management of Risks | Partly Observed | Partly Observed |
+| Credit Risk | **Partly Observed** (downgraded -- errors in credit stress tests) | **Partly Observed** (downgraded) |
+| Operational Risk | **Not Observed** (downgraded -- Dec 2024 CHESS incident) | Partly Observed |
+| Settlement Finality | Partly Observed (ASX Settlement) | N/A |
+
+Five FSS standards were rated as "partly observed" or "not observed" across the ASX clearing and settlement facilities -- an unprecedented level of regulatory concern.
+
+The RBA stated it was "disappointed by the number of issues identified with ASX's financial risk models" and expects ASX to prioritise improving its model validation and control testing frameworks.
+
+### 6.4 Reporting Requirements
+
+- **PQD (Public Quantitative Disclosures):** Both CCPs publish quarterly CPMI-IOSCO PQD data covering credit risk, margin, collateral, liquidity risk, default procedures, and other metrics
+- **PFMI Disclosure Framework:** Qualitative self-assessment published and periodically updated
+- **RBA Annual Assessment:** Comprehensive annual review of compliance with Financial Stability Standards
+- **Financial Returns:** Clearing participants submit regular financial returns to ASX for capital adequacy monitoring
+
+[Source: RBA 2024/25 Assessment Overview of Ratings, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/overview-of-ratings-recommendations-and-areas-of-supervisory-focus.html]
+[Source: RBA Media Release MR-25-25, September 2025, https://www.rba.gov.au/media-releases/2025/mr-25-25.html]
+[Source: ASX Regulatory Compliance, https://www.asx.com.au/regulation/regulatory-compliance/cpss-iosco.htm]
+
+---
+
+## 7. Interoperability
+
+### 7.1 CCP Interoperability Arrangements
+
+ASX Clear and ASX Clear (Futures) do **not** participate in any CCP interoperability arrangements. This is a direct consequence of ASX's vertically integrated monopoly model for cash equity clearing -- there is no competing CCP for Australian cash equities, so interoperability has not been required.
+
+The Australian government has periodically considered introducing competition in clearing (e.g., the 2015 Review of Competition in Clearing Australian Cash Equities by Treasury), but no competing CCP has been authorised.
+
+### 7.2 Cross-border Arrangements
+
+| Arrangement | Details |
+|-------------|---------|
+| **ESMA Recognition** | Both CCPs recognised as third-country CCPs under EU EMIR (effective 27 April 2015) -- allows EU-based participants to use ASX CCPs with concessional capital treatment |
+| **APRA QCCP Recognition** | Both CCPs confirmed as Qualifying CCPs under APS 112 -- allows Australian ADIs to apply concessional risk weightings |
+| **NZX Clearing** | ASX Clear (Futures) provides clearing services for NZX-traded products under a cross-border arrangement |
+
+**Comparison with KRX:** KRX also does not participate in CCP interoperability arrangements. Both ASX and KRX operate as monopoly CCPs in their respective domestic markets, reflecting the concentrated market structure of their regions.
+
+[Source: ESMA list of recognised third-country CCPs, https://www.esma.europa.eu/sites/default/files/library/third-country_ccps_recognised_under_emir.pdf]
+
+---
+
+## 8. Fees
+
+### 8.1 Clearing Fees
+
+**ASX Clear (Cash Equities) -- Effective 1 July 2025:**
+
+| Fee Type | Structure | Notes |
+|----------|-----------|-------|
+| Clearing Fee | Ad valorem on cleared value | Subject to new **revenue-capping pricing policy** under ASIC CS Services Rules 2025 |
+| Revenue-Capping Policy | ASX's revenue from cash equity clearing, settlement, and issuer services is capped to the amount required to efficiently deliver services plus a reasonable rate of return | Reflects ASX's monopoly position; former revenue-sharing scheme removed |
+
+**ASX Clear (Futures) -- Schedule effective from 30 June 2025:**
+
+| Fee Type | Structure | Notes |
+|----------|-----------|-------|
+| Futures Clearing Fee | Per-lot fee varying by product type | Fee schedule published by ASX 24 and ASX Clear (Futures) |
+| OTC Clearing Fee | Based on notional value and/or per-trade | Varies by product type (IRS, basis swaps, etc.) |
+| Margin Interest | Interest paid/charged on cash margin balances | Details published on ASX website |
+
+### 8.2 Membership Fees
+
+- Clearing participant application fees and ongoing participation fees apply
+- Specific fee amounts are set out in the ASX Clear and ASX Clear (Futures) fee schedules
+- Fees are reviewed periodically and subject to regulatory oversight under the new ASIC CS Services Rules 2025
+
+[Source: ASX Clearing and Settlement Schedule of Fees, 1 July 2025, https://asxonline.com/content/dam/asxonline/public/documents/schedule-of-fees/asx-clearing-and-settlement-schedule-of-fees.pdf]
+[Source: ASX 24 and ASX Clear (Futures) Schedule of Fees, https://asxonline.com/content/dam/asxonline/public/documents/schedule-of-fees/asx-24-and-asx-clear-futures-schedule-of-fees.pdf]
+[Source: ASX Clearing Services and Pricing, https://www.asx.com.au/about/regulation/clearing-and-settlement-of-cash-equities-in-australia/clearing/clearing-services-and-pricing]
+
+---
+
+## 9. Recent Developments
+
+### CHESS Replacement Saga (2015-2026)
+
+The failed CHESS replacement project is one of the most significant technology failures in global exchange history. See Section 5.1 for full details.
+
+**Current Status (as of April 2026):**
+- **CHESS Release 1 (Clearing):** Go-live planned for **20 April 2026**; cutover runbook published 13 March 2026; on track
+- **CHESS Release 2 (Settlement and Subregister):** Targeted for **2029**; estimated cost AUD 270-320 million
+- **ASIC Federal Court Action:** ASIC commenced proceedings against ASX in August 2024 alleging misleading statements about the DLT project; case ongoing
+
+### December 2024 CHESS Settlement Failure
+
+- **20 December 2024:** CHESS batch settlement failed to complete due to a memory allocation coding error introduced in 2014
+- Error went undetected for 10 years; all settlements pushed to the following Monday
+- **March 2025:** RBA and ASIC issued joint letter expressing "deep concerns" about ASX's operational risk management
+- Led to RBA downgrading Operational Risk to "not observed"
+
+### ASIC Inquiry into ASX Group (2025-2026)
+
+- **June 2025:** ASIC launched formal Inquiry into ASX Group covering governance, capability, and risk management across all licensed entities
+- **December 2025:** ASIC announced a "transformational package" to safeguard financial markets based on interim report
+- **March 2026:** ASIC published the ASX Inquiry Panel Final Report with observations and recommendations for change
+
+### RBA 2024/25 Assessment (September 2025)
+
+Five FSS standards rated as "partly observed" or "not observed" -- an unprecedented level of regulatory concern:
+- Credit Risk Standard downgraded to **partly observed** (errors in credit stress tests)
+- Operational Risk Standard downgraded to **not observed** (December 2024 CHESS incident)
+- Governance and Framework for Comprehensive Management of Risks also rated **partly observed**
+
+### ClearStar Program -- Technology Modernisation
+
+- **Calypso OTC Upgrade:** v13 to v18 delivered 26 May 2025; first major delivery under ClearStar
+- **Futures Clearing Platform:** Upgrade planned as part of multi-year program
+- Program to modernise derivatives clearing infrastructure over a six-year period
+
+### ASIC CS Services Rules 2025
+
+- New regulatory framework implementing **revenue-capping pricing methodology** for ASX's cash equity clearing, settlement, and issuer services
+- Reflects ASX's monopoly position in post-trade services for Australian cash equities
+- Revenue sharing scheme removed; replaced with cost-of-service-plus-reasonable-return model
+- Effective July 2025
+
+### Margin Model Updates (2025-2026)
+
+- ASX Clear (Futures): Changes to account for outstanding margin payments in stress test calculations; expected finalised by September 2025
+- ASX Clear: Similar changes expected by June 2026
+- ASX Clear Cash Market Margining (CMM) methodology recalibrated in August 2025; average 12% increase in HSVaR margins
+
+### Other Developments
+
+- **Tokenised Government Bond Settlement:** ASX launched a pilot in March 2026
+- **T+1 Settlement:** Under consideration but deferred until CHESS replacement complete; earliest feasible timeline 2029+
+- **Third-Party Clearing Capital Requirements:** ASX published consultation paper in January 2026
+
+[Source: RBA 2024/25 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/executive-summary.html]
+[Source: ASIC ASX Inquiry, https://www.asic.gov.au/regulatory-resources/markets/inquiry-into-asx/]
+[Source: ASIC MR 26-059MR, https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-059mr-asic-publishes-asx-inquiry-panel-final-report-and-acknowledges-observations/]
+
+---
+
+## Sources
+
+1. [ASX Clearing and Settlement Services](https://www.asx.com.au/markets/clearing-and-settlement-services) -- overview of ASX Clear, ASX Clear (Futures), ASX Settlement, Austraclear
+2. [ASX Clear (Futures)](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear-futures) -- products, services, and risk management
+3. [ASX Clear Risk Management -- Margining](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear/risk-management/margining) -- margin methodology details
+4. [ASX Clear Recovery and Resolution](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear/risk-management/recovery-and-resolution) -- recovery tools and rules
+5. [ASX Recovery Rules Handbook](https://www.asx.com.au/content/dam/asx/rules-guidance-notes-waivers/asx-recovery-rules/asx-recovery-rules-handbook.pdf) -- formal recovery rule documentation
+6. [ASX PFMI Disclosure Framework](https://www.asx.com.au/content/dam/asx/about/pfmi-disclosure-framework.pdf) -- CPMI-IOSCO qualitative disclosures
+7. [ASX CHESS Project](https://www.asx.com.au/markets/clearing-and-settlement-services/chess-project) -- CHESS replacement status and documentation
+8. [ASX ClearStar Program](https://www.asx.com.au/markets/clearing-and-settlement-services/clearstar-program) -- derivatives clearing technology modernisation
+9. [RBA 2024/25 Assessment of ASX Clearing and Settlement Facilities](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/asx/) -- comprehensive regulatory assessment (September 2025)
+10. [RBA Assessment Executive Summary 2024/25](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/executive-summary.html) -- summary of ratings and concerns
+11. [RBA Overview of Ratings 2024/25](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/overview-of-ratings-recommendations-and-areas-of-supervisory-focus.html) -- detailed compliance ratings
+12. [RBA Out-of-cycle Assessment (March 2025)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/march/) -- response to December 2024 CHESS incident
+13. [RBA Special Topic on Default Management and Recovery (2019/20)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2019-2020/special-topic-default-management-and-recovery.html) -- default waterfall and recovery analysis
+14. [RBA Special Topic on Margin (2021/22)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2021-2022/special-topics-margin.html) -- margin methodology review
+15. [RBA Standard 12: Participant Default (2016/17)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2016-2017/asx-central-counterparties/standard-12.html) -- default waterfall details
+16. [ASIC Inquiry into ASX](https://www.asic.gov.au/regulatory-resources/markets/inquiry-into-asx/) -- 2025-2026 inquiry
+17. [ASIC MR 26-059MR: ASX Inquiry Panel Final Report](https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-059mr-asic-publishes-asx-inquiry-panel-final-report-and-acknowledges-observations/) -- inquiry conclusions
+18. [ASX Clearing and Settlement Schedule of Fees (July 2025)](https://asxonline.com/content/dam/asxonline/public/documents/schedule-of-fees/asx-clearing-and-settlement-schedule-of-fees.pdf) -- current fee schedule
+19. [ASX Capital Liquidity Handbook (February 2025)](https://www.asxonline.com/content/dam/asxonline/public/documents/manuals/capital-liquidity-handbook/asx_046913.pdf) -- capital requirements
+20. [Understanding Margins -- ASX Clear](https://www.asx.com.au/content/dam/asx/participants/clearing-and-settlement/asx-clear/understanding-margins.pdf) -- margin framework guide
+21. [ASX Collateral Services](https://www.asx.com.au/markets/clearing-and-settlement-services/collateral-services) -- collateral and securities lending
+22. [FIA: "FIA supports ASX default management proposals"](https://www.fia.org/fia/articles/fia-supports-asx-default-management-proposals) -- industry perspective on default management
+23. [Clarus Financial Technology: "What's New in AUD Swaps in 2024?"](https://www.clarusft.com/whats-new-in-aud-swaps-in-2024/) -- OTC clearing market share data
+24. [WatersTechnology: "ASX CHESS replacement to be delivered in phases"](https://www.waterstechnology.com/trading-tech/7951687/asx-chess-replacement-to-be-delivered-in-phases-with-clearing-first-in-2026) -- CHESS replacement timeline
+25. [The Fintech Times: "Blockchain Project Gone Wrong: ASIC Takes ASX to Court"](https://thefintechtimes.com/blockchain-project-gone-wrong-asic-takes-asx-to-court-over-chess-replacement/) -- ASIC legal action
+26. [ESMA: List of recognised third-country CCPs](https://www.esma.europa.eu/sites/default/files/library/third-country_ccps_recognised_under_emir.pdf) -- EMIR recognition

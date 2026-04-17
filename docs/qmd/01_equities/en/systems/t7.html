@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>T7 Trading System – Deutsche BÃ¶rse (Xetra) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/en/systems/arrowhead.html">Trading Systems</a></li><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/en/systems/t7.html">T7 Trading System – Deutsche BÃ¶rse (Xetra)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Equities Markets — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comparative Analysis of Global Equities Exchanges</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exchanges</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/asx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Australian Securities Exchange (ASX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/bme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bolsas y Mercados Espanoles (BME)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/borsa_italiana.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Borsa Italiana (Euronext Milan)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/bse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BSE Ltd (formerly Bombay Stock Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/bursa_malaysia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bursa Malaysia Berhad (Bursa Malaysia)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/deutsche_borse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Deutsche Borse / Xetra (XETR)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/euronext.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext N.V. (Euronext)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/hkex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hong Kong Exchanges and Clearing Limited (HKEX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/jpx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japan Exchange Group / Tokyo Stock Exchange (JPX / TSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/jse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Johannesburg Stock Exchange (JSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/krx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Korea Exchange (KRX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/lse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">London Stock Exchange (LSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/nasdaq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NASDAQ Stock Market (NASDAQ)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/nasdaq_nordic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Nasdaq Nordic (OMX Nordic Exchanges)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/nse_india.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India (NSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/nyse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">New York Stock Exchange (NYSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/sgx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Singapore Exchange (SGX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/six.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SIX Swiss Exchange (SIX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/sse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Stock Exchange (SSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/szse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shenzhen Stock Exchange (SZSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/tadawul.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Saudi Exchange (Tadawul)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/tmx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TMX Group / Toronto Stock Exchange (TSX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/twse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Stock Exchange (TWSE)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/regulations/asia_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Equities Market Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/regulations/eu_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU/UK Equities Market Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/regulations/us_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">US Equities Market Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/arrowhead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">arrowhead – Japan Exchange Group (JPX) / Tokyo Stock Exchange (TSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/exture_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exture 3.0 — Korea Exchange (KRX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NASDAQ INET — NASDAQ Stock Market</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/millennium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Millennium Exchange — London Stock Exchange</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/optiq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Optiq – Euronext</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/orion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Orion Trading Platform – Cash (OTP-C) — HKEX</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/pillar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NYSE Pillar – New York Stock Exchange</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/t7.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">T7 Trading System – Deutsche BÃ¶rse (Xetra)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/titan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX Titan / SGX REACH – Singapore Exchange</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#system-overview" id="toc-system-overview" class="nav-link active" data-scroll-target="#system-overview">1. System Overview</a>
+  <ul class="collapse">
+  <li><a href="#system-evolution" id="toc-system-evolution" class="nav-link" data-scroll-target="#system-evolution">System Evolution</a></li>
+  </ul></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">2. Architecture</a>
+  <ul class="collapse">
+  <li><a href="#high-level-design" id="toc-high-level-design" class="nav-link" data-scroll-target="#high-level-design">2.1 High-Level Design</a></li>
+  <li><a href="#core-components" id="toc-core-components" class="nav-link" data-scroll-target="#core-components">2.2 Core Components</a></li>
+  <li><a href="#technology-stack" id="toc-technology-stack" class="nav-link" data-scroll-target="#technology-stack">2.3 Technology Stack</a></li>
+  </ul></li>
+  <li><a href="#performance-specifications" id="toc-performance-specifications" class="nav-link" data-scroll-target="#performance-specifications">3. Performance Specifications</a>
+  <ul class="collapse">
+  <li><a href="#current-latency-production-data-februarymarch-2025" id="toc-current-latency-production-data-februarymarch-2025" class="nav-link" data-scroll-target="#current-latency-production-data-februarymarch-2025">Current Latency (Production Data, February/March 2025)</a></li>
+  <li><a href="#throughput-capacity" id="toc-throughput-capacity" class="nav-link" data-scroll-target="#throughput-capacity">Throughput &amp; Capacity</a></li>
+  <li><a href="#performance-evolution" id="toc-performance-evolution" class="nav-link" data-scroll-target="#performance-evolution">Performance Evolution</a></li>
+  </ul></li>
+  <li><a href="#interfaces-protocols" id="toc-interfaces-protocols" class="nav-link" data-scroll-target="#interfaces-protocols">4. Interfaces &amp; Protocols</a>
+  <ul class="collapse">
+  <li><a href="#order-entry" id="toc-order-entry" class="nav-link" data-scroll-target="#order-entry">4.1 Order Entry</a></li>
+  <li><a href="#market-data-dissemination" id="toc-market-data-dissemination" class="nav-link" data-scroll-target="#market-data-dissemination">4.2 Market Data Dissemination</a></li>
+  <li><a href="#drop-copy-trade-reporting" id="toc-drop-copy-trade-reporting" class="nav-link" data-scroll-target="#drop-copy-trade-reporting">4.3 Drop Copy / Trade Reporting</a></li>
+  <li><a href="#reference-data" id="toc-reference-data" class="nav-link" data-scroll-target="#reference-data">4.4 Reference Data</a></li>
+  </ul></li>
+  <li><a href="#resilience-business-continuity" id="toc-resilience-business-continuity" class="nav-link" data-scroll-target="#resilience-business-continuity">5. Resilience &amp; Business Continuity</a>
+  <ul class="collapse">
+  <li><a href="#redundancy" id="toc-redundancy" class="nav-link" data-scroll-target="#redundancy">5.1 Redundancy</a></li>
+  <li><a href="#disaster-recovery" id="toc-disaster-recovery" class="nav-link" data-scroll-target="#disaster-recovery">5.2 Disaster Recovery</a></li>
+  <li><a href="#primary-data-center" id="toc-primary-data-center" class="nav-link" data-scroll-target="#primary-data-center">5.3 Primary Data Center</a></li>
+  </ul></li>
+  <li><a href="#notable-technical-features" id="toc-notable-technical-features" class="nav-link" data-scroll-target="#notable-technical-features">6. Notable Technical Features</a>
+  <ul class="collapse">
+  <li><a href="#shared-platform-with-eurex-derivatives" id="toc-shared-platform-with-eurex-derivatives" class="nav-link" data-scroll-target="#shared-platform-with-eurex-derivatives">6.1 Shared Platform with Eurex Derivatives</a></li>
+  <li><a href="#volatility-interruption-mechanism" id="toc-volatility-interruption-mechanism" class="nav-link" data-scroll-target="#volatility-interruption-mechanism">6.2 Volatility Interruption Mechanism</a></li>
+  <li><a href="#designated-sponsor-integration" id="toc-designated-sponsor-integration" class="nav-link" data-scroll-target="#designated-sponsor-integration">6.3 Designated Sponsor Integration</a></li>
+  <li><a href="#t7-entry-services-tes" id="toc-t7-entry-services-tes" class="nav-link" data-scroll-target="#t7-entry-services-tes">6.4 T7 Entry Services (TES)</a></li>
+  <li><a href="#n7-network-and-cloud-connectivity" id="toc-n7-network-and-cloud-connectivity" class="nav-link" data-scroll-target="#n7-network-and-cloud-connectivity">6.5 N7 Network and Cloud Connectivity</a></li>
+  <li><a href="#technology-licensing-export" id="toc-technology-licensing-export" class="nav-link" data-scroll-target="#technology-licensing-export">6.6 Technology Licensing / Export</a></li>
+  </ul></li>
+  <li><a href="#comparison-notes" id="toc-comparison-notes" class="nav-link" data-scroll-target="#comparison-notes">7. Comparison Notes</a>
+  <ul class="collapse">
+  <li><a href="#vs.-krx-exture" id="toc-vs.-krx-exture" class="nav-link" data-scroll-target="#vs.-krx-exture">vs.&nbsp;KRX Exture+</a></li>
+  <li><a href="#key-differentiators" id="toc-key-differentiators" class="nav-link" data-scroll-target="#key-differentiators">Key Differentiators</a></li>
+  </ul></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a>
+  <ul class="collapse">
+  <li><a href="#official-deutsche-bãrse-xetra-eurex-documentation" id="toc-official-deutsche-bãrse-xetra-eurex-documentation" class="nav-link" data-scroll-target="#official-deutsche-bãrse-xetra-eurex-documentation">Official Deutsche BÃ¶rse / Xetra / Eurex Documentation</a></li>
+  <li><a href="#third-party-sources" id="toc-third-party-sources" class="nav-link" data-scroll-target="#third-party-sources">Third-Party Sources</a></li>
+  <li><a href="#krxexture-sources" id="toc-krxexture-sources" class="nav-link" data-scroll-target="#krxexture-sources">KRX/Exture+ Sources</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/en/systems/arrowhead.html">Trading Systems</a></li><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/en/systems/t7.html">T7 Trading System – Deutsche BÃ¶rse (Xetra)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">T7 Trading System – Deutsche BÃ¶rse (Xetra)</h1>
+<p class="subtitle lead">Equities &gt; Trading Systems</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-06 <strong>System Category:</strong> Trading System</p>
+</blockquote>
+<hr>
+<section id="system-overview" class="level2">
+<h2 class="anchored" data-anchor-id="system-overview">1. System Overview</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>System Name</td>
+<td>T7</td>
+</tr>
+<tr class="even">
+<td>Operated By</td>
+<td>Deutsche BÃ¶rse AG (Xetra cash market) / Eurex Frankfurt AG (derivatives)</td>
+</tr>
+<tr class="odd">
+<td>Purpose</td>
+<td>Unified high-performance trading platform serving the Xetra cash market, Eurex derivatives exchange, European Energy Exchange (EEX), BÃ¶rse Frankfurt, and Nodal Exchange</td>
+</tr>
+<tr class="even">
+<td>Launch Year</td>
+<td>December 2012 (Eurex derivatives – first deployment); July 2017 (Xetra cash market migration)</td>
+</tr>
+<tr class="odd">
+<td>Current Version</td>
+<td>T7 Release 14.0 (introduced 10 November 2025 for Xetra and BÃ¶rse Frankfurt)</td>
+</tr>
+<tr class="even">
+<td>Vendor / In-house</td>
+<td>In-house (developed by Deutsche BÃ¶rse Group technology teams; built largely in-house at Eurex)</td>
+</tr>
+</tbody>
+</table>
+<p>T7 is Deutsche BÃ¶rse Group’s core trading platform, designed to deliver low latency, high throughput, and flexibility across multiple asset classes and trading venues. The platform replaced Xetra’s legacy trading infrastructure (which had operated for nearly two decades across 16 release versions) and the previous Eurex derivatives system. A key differentiator is the shared platform architecture: the same T7 technology underpins both cash equities trading on Xetra and derivatives trading on Eurex, enabling synergies for participants active in both markets.</p>
+<p>When first deployed at Eurex in 2012, T7 was reported to be 14 times faster than the previous platform.</p>
+<p>[Source: Xetra, “T7 trading architecture”, https://www.xetra.com/xetra-en/technology/t7, accessed 2026-04-06] [Source: Xetra, “Xetra – the electronic trading platform of Deutsche BÃ¶rse”, https://live.deutsche-boerse.com/en/know-how/about/geschichte-der-frankfurter-wertpapierboerse/xetra-der-elektronische-handelsplatz-der-deutschen-boerse, accessed 2026-04-06] <span class="citation" data-cites="otherif/documents/ifdocs/eub53formfbotexhibitd-tradin.pdf">[Source: CFTC, "Eurex Exhibit D -- Automated Trading System", https://www.cftc.gov/sites/default/files/idc/groups/public/@otherif/documents/ifdocs/eub53formfbotexhibitd-tradin.pdf, accessed 2026-04-06]</span></p>
+<section id="system-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="system-evolution">System Evolution</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 44%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>System / Version</th>
+<th>Key Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1997</td>
+<td>Xetra (original)</td>
+<td>Launch of electronic trading on Xetra; replaced Frankfurt floor-based trading for most instruments</td>
+</tr>
+<tr class="even">
+<td>1997–2017</td>
+<td>Xetra Releases 1.0–16.0</td>
+<td>16 successive releases over ~20 years; incremental improvements to latency, capacity, and functionality</td>
+</tr>
+<tr class="odd">
+<td>December 2012</td>
+<td>T7 Release 1.0 (Eurex)</td>
+<td>First deployment of T7 at Eurex derivatives exchange; stepwise product migration; 14x faster than predecessor</td>
+</tr>
+<tr class="even">
+<td>November 2016</td>
+<td>T7 Release 4.0 (Eurex)</td>
+<td>Major Eurex upgrade</td>
+</tr>
+<tr class="odd">
+<td>July 2017</td>
+<td>T7 Release 5.0 (Xetra)</td>
+<td>Xetra cash market migrated to T7; replaced legacy Xetra infrastructure</td>
+</tr>
+<tr class="even">
+<td>Q1 2018</td>
+<td>Partition-Specific (PS) Gateway</td>
+<td>Introduction of PS gateway; significantly lowered latency variability</td>
+</tr>
+<tr class="odd">
+<td>Q1 2020</td>
+<td>Matching Engine hardware upgrade</td>
+<td>Completion of server hardware upgrade for matching engines</td>
+</tr>
+<tr class="even">
+<td>H1 2021</td>
+<td>Consolidated matcher/gateway</td>
+<td>Matching Engine and PS Gateway processes consolidated on the same server; faster order processing and improved stability</td>
+</tr>
+<tr class="odd">
+<td>May 2025</td>
+<td>T7 Release 13.1</td>
+<td>Introduced for Xetra and BÃ¶rse Frankfurt</td>
+</tr>
+<tr class="even">
+<td>November 2025</td>
+<td>T7 Release 14.0</td>
+<td>Current production release for Xetra and BÃ¶rse Frankfurt; new web-based GUIs introduced</td>
+</tr>
+<tr class="odd">
+<td>2026–2027</td>
+<td>Web GUI transition</td>
+<td>T7 Web Admin (Q2/Q3 2026), T7 Web Trader (not before 2027); phased replacement of Java-based GUIs</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Xetra, “Release 14.0”, https://www.eurexgroup.com/xetra-en/technology/t7/system-documentation/release14-0, accessed 2026-04-06] [Source: Xetra, “Introduction of Next Generation T7 Web Based GUIs”, https://www.xetra.com/xetra-en/newsroom/circulars-newsletters/xetra-circulars/Introduction-of-Next-Generation-T7-Web-Based-GUIs-4673928, accessed 2026-04-06] [Source: Eurex, “Completion of the T7 matching engine server hardware upgrade”, https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="architecture" class="level2">
+<h2 class="anchored" data-anchor-id="architecture">2. Architecture</h2>
+<section id="high-level-design" class="level3">
+<h3 class="anchored" data-anchor-id="high-level-design">2.1 High-Level Design</h3>
+<ul>
+<li><strong>Deployment model:</strong> On-premise, hosted at Equinix colocation facility in Frankfurt</li>
+<li><strong>Topology:</strong> Partition-based distributed matching architecture</li>
+<li><strong>Design pattern:</strong> High-performance, event-driven matching with independent product partitions</li>
+<li><strong>Multi-venue:</strong> Single platform serving Xetra (cash equities), Eurex (derivatives), EEX (energy), BÃ¶rse Frankfurt, and Nodal Exchange</li>
+</ul>
+<p>T7 employs a <strong>partition-based architecture</strong> in which market services are separated into completely independent groups of products (partitions). Each partition operates its own matching engine and partition-specific gateway, providing both performance isolation and resilience benefits. If one partition experiences an issue, other partitions continue operating independently. Instruments are distributed across partitions (e.g., Xetra cash market uses multiple partitions, with German equities and non-German equities on separate partitions).</p>
+<p>[Source: Xetra, “T7 Simulation: Increase in the number of partitions”, https://www.eurexgroup.com/dbcm-en/newsroom/circulars-newsletters/Xetra-circulars-mailings/T7-Simulation-Increase-in-the-number-of-partitions-and-change-of-the-Partition-ID-for-some-products-3836718, accessed 2026-04-06]</p>
+</section>
+<section id="core-components" class="level3">
+<h3 class="anchored" data-anchor-id="core-components">2.2 Core Components</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 30%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Function</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Matching Engine (per partition)</td>
+<td>Order matching for instruments assigned to the partition; price-time priority; supports auction and continuous trading</td>
+<td>Custom-built; runs on dedicated server hardware; each partition has its own matching engine with a standby partner</td>
+</tr>
+<tr class="even">
+<td>Partition-Specific (PS) Gateway</td>
+<td>Lowest-latency order entry path; FIFO processing; one PS gateway per partition, consolidated on the same server as the matching engine since H1 2021</td>
+<td>Proprietary binary; TCP/IP; introduced Q1 2018</td>
+</tr>
+<tr class="odd">
+<td>Low-Frequency (LF) Gateway</td>
+<td>Order entry for participants not requiring ultra-low latency; connects to all partitions; ~12 microseconds additional latency vs.&nbsp;PS gateway</td>
+<td>Proprietary binary (ETI); TCP/IP</td>
+</tr>
+<tr class="even">
+<td>Enhanced Trading Interface (ETI)</td>
+<td>Primary high-performance trading interface; asynchronous message-based; FIX 5.0 SP2 semantics with proprietary session protocol</td>
+<td>Binary over TCP/IP; no special hardware required; OS/language agnostic</td>
+</tr>
+<tr class="odd">
+<td>FIX Gateway</td>
+<td>Standard FIX protocol access (FIX 4.2 and FIX 4.4); trading and back-office sessions</td>
+<td>FIX 4.2/4.4 over TCP/IP; FIX LF interface (FIX 4.4 only) introduced with Release 9.0</td>
+</tr>
+<tr class="even">
+<td>Market Data Interfaces (EMDI/MDI/EOBI/RDI)</td>
+<td>Real-time market data dissemination via multicast</td>
+<td>UDP multicast; FAST 1.1/1.2 encoding (except EOBI); dual service paths (A and B)</td>
+</tr>
+<tr class="odd">
+<td>Risk Engine</td>
+<td>Pre-trade risk controls; session-level throttling; position limits</td>
+<td>Integrated into gateway layer</td>
+</tr>
+<tr class="even">
+<td>Surveillance</td>
+<td>Market surveillance and regulatory oversight under BaFin/ESMA framework</td>
+<td>Separate surveillance infrastructure [details not publicly disclosed]</td>
+</tr>
+<tr class="odd">
+<td>T7 GUI (Trader/Admin/Clearer)</td>
+<td>Graphical user interfaces for trading, administration, and clearing operations</td>
+<td>Transitioning from Java-based to web-based GUIs (2025–2027)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="technology-stack">2.3 Technology Stack</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programming Language</td>
+<td>C/C++ [unverified; consistent with Deutsche BÃ¶rse technical presentations and industry standard]</td>
+</tr>
+<tr class="even">
+<td>Operating System</td>
+<td>Linux [unverified; consistent with industry standard for exchange matching engines]</td>
+</tr>
+<tr class="odd">
+<td>Hardware</td>
+<td>Commodity server hardware with custom optimization; matching engine hardware upgraded in 2020; PTP (Precision Time Protocol) timing at 4–5 ns RMS accuracy</td>
+</tr>
+<tr class="even">
+<td>FPGA Acceleration</td>
+<td>Not confirmed in T7 core matching engine; third-party vendors (e.g., NanoSpeed) offer FPGA-based connectivity solutions to T7</td>
+</tr>
+<tr class="odd">
+<td>Network</td>
+<td>N7 network infrastructure; provides thousands of connections in 35+ countries across Europe, North America, and Asia; 10G/100G Ethernet connectivity</td>
+</tr>
+<tr class="even">
+<td>Messaging Format</td>
+<td>Binary messages following FIX 5.0 SP2 semantics; FAST 1.1/1.2 encoding for market data (except EOBI)</td>
+</tr>
+<tr class="odd">
+<td>Byte Order</td>
+<td>Little Endian</td>
+</tr>
+<tr class="even">
+<td>Colocation</td>
+<td>Equinix FR2 data center, Frankfurt, Germany</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Eurex, “T7 R.13.1 Enhanced Trading Interface Manual”, https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-06] [Source: Deutsche BÃ¶rse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation-insights-into-trading-system-dynamics.pdf, accessed 2026-04-06] [Source: Databento, “What is the T7 trading platform?”, https://databento.com/microstructure/t7, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="performance-specifications" class="level2">
+<h2 class="anchored" data-anchor-id="performance-specifications">3. Performance Specifications</h2>
+<section id="current-latency-production-data-februarymarch-2025" class="level3">
+<h3 class="anchored" data-anchor-id="current-latency-production-data-februarymarch-2025">Current Latency (Production Data, February/March 2025)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 25%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+<th>Conditions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Minimum internal matching latency</td>
+<td>~2,787 ns (~2.8 microseconds)</td>
+<td>Measured from market data timestamp to request processing; production data February 2025</td>
+</tr>
+<tr class="even">
+<td>Median round-trip (High Frequency session)</td>
+<td>~60 microseconds</td>
+<td>Via PS gateway; includes network traversal</td>
+</tr>
+<tr class="odd">
+<td>LF gateway additional latency</td>
+<td>~12 microseconds</td>
+<td>Compared to PS gateway path</td>
+</tr>
+<tr class="even">
+<td>PTP timing accuracy</td>
+<td>4–5 ns RMS</td>
+<td>Precision Time Protocol synchronization</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notes:</strong> - The 2,787 ns minimum represents the internal matching engine processing time between market data generation and order request handling - Round-trip latency measured at the gateway level includes network stack overhead; actual matching engine internal latency is significantly lower - PS gateway (partition-specific) provides the lowest-latency path as it connects directly to a single partition’s matching engine</p>
+<p>[Source: Deutsche BÃ¶rse, “Internal T7 Latency Performance Updates”, https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-06] [Source: Deutsche BÃ¶rse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation-insights-into-trading-system-dynamics.pdf, accessed 2026-04-06]</p>
+</section>
+<section id="throughput-capacity" class="level3">
+<h3 class="anchored" data-anchor-id="throughput-capacity">Throughput &amp; Capacity</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 31%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typical throughput (t_3n)</td>
+<td>~8,000 kHz (8 million msgs/sec)</td>
+<td>Internal matching engine throughput rate; March 2025 data</td>
+</tr>
+<tr class="even">
+<td>Typical throughput (t_5)</td>
+<td>~500 kHz</td>
+<td>Throughput at gateway level [unverified interpretation]</td>
+</tr>
+<tr class="odd">
+<td>Typical throughput (t_7)</td>
+<td>~300 kHz</td>
+<td>Throughput including external network [unverified interpretation]</td>
+</tr>
+<tr class="even">
+<td>Peak daily requests</td>
+<td>1.25 billion</td>
+<td>Recorded 7 April 2025 (vs.&nbsp;857 million in 2023)</td>
+</tr>
+<tr class="odd">
+<td>Peak input rate</td>
+<td>201,000 requests/second</td>
+<td>Recorded 5 June 2025 [unverified – may be across all T7 venues]</td>
+</tr>
+<tr class="even">
+<td>Uptime</td>
+<td>99.99%+</td>
+<td>Industry-standard target for major European exchanges [unverified – specific SLA not publicly disclosed]</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Deutsche BÃ¶rse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation-insights-into-trading-system-dynamics.pdf, accessed 2026-04-06]</p>
+</section>
+<section id="performance-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="performance-evolution">Performance Evolution</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 44%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>Improvement</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>December 2012 (T7 launch at Eurex)</td>
+<td>14x faster than predecessor</td>
+<td>First T7 deployment</td>
+</tr>
+<tr class="even">
+<td>Q1 2018</td>
+<td>PS gateway introduced</td>
+<td>Significantly lowered latency variability; increased determinism</td>
+</tr>
+<tr class="odd">
+<td>Q1 2020</td>
+<td>Matching engine hardware upgrade</td>
+<td>New server hardware for matching engines</td>
+</tr>
+<tr class="even">
+<td>H1 2021</td>
+<td>Consolidated matcher/gateway</td>
+<td>PS Gateway and Matching Engine on same server; further latency reduction</td>
+</tr>
+<tr class="odd">
+<td>2025</td>
+<td>PTP accuracy 4–5 ns RMS</td>
+<td>Improved timestamping precision</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="interfaces-protocols" class="level2">
+<h2 class="anchored" data-anchor-id="interfaces-protocols">4. Interfaces &amp; Protocols</h2>
+<section id="order-entry" class="level3">
+<h3 class="anchored" data-anchor-id="order-entry">4.1 Order Entry</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 29%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Interface</th>
+<th>Protocol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Enhanced Trading Interface (ETI)</td>
+<td>Proprietary binary; FIX 5.0 SP2 semantics</td>
+<td>Primary high-performance interface; asynchronous message-based; TCP/IP; supports order handling, quote handling, RFQs, strategy creation, off-book trade entry; no special hardware required</td>
+</tr>
+<tr class="even">
+<td>FIX Gateway</td>
+<td>FIX 4.2 and FIX 4.4</td>
+<td>Standard FIX protocol access for broader compatibility; Trading sessions (order management, risk control, cross trade) and Back-office sessions (trade confirmations)</td>
+</tr>
+<tr class="odd">
+<td>FIX LF Interface</td>
+<td>FIX 4.4 only</td>
+<td>Newer FIX interface integrated closer to T7 architecture; provides similar infrastructure and performance characteristics as ETI; introduced with Release 9.0</td>
+</tr>
+<tr class="even">
+<td>T7 GUI (Trader)</td>
+<td>Web-based (transitioning from Java)</td>
+<td>Graphical trading interface for manual order entry; Java-based currently, web-based T7 Web Trader expected not before 2027</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ETI Key Characteristics:</strong> - Asynchronous, message-based interface following FIX 5.0 SP2 semantics including user-defined fields (UDF) - Connection via TCP/IP to Application Gateways that host client sessions - No special hardware or exchange software installation required - Free choice of operating system, programming language, and compiler version - Session-oriented with gateway-managed sessions</p>
+<p><strong>FIX Gateway Key Characteristics:</strong> - Supports FIX 4.2 and FIX 4.4 protocols - ClOrdID must be unique per business day and trading session - Two session types: Trading session and Back-office session - Slightly higher latency than ETI due to additional protocol translation</p>
+<p>[Source: Eurex, “T7 R.13.1 Enhanced Trading Interface Manual”, https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-06] [Source: Xetra, “T7 FIX Gateway Manual V5.0”, https://www.cashmarket.deutsche-boerse.com/resource/blob/1470996/f11fe366582ba35ddf9b388ccb544c84/data/T7_FIX_Gateway_Manual_V5.0.pdf, accessed 2026-04-06]</p>
+</section>
+<section id="market-data-dissemination" class="level3">
+<h3 class="anchored" data-anchor-id="market-data-dissemination">4.2 Market Data Dissemination</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 26%">
+<col style="width: 34%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feed</th>
+<th>Protocol</th>
+<th>Description</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EMDI (Enhanced Market Data Interface)</td>
+<td>UDP multicast; FAST 1.1/1.2 encoded</td>
+<td>Un-netted feed; disseminates every order book change up to configured depth</td>
+<td>Market-by-price (MBP) with aggregated depth at limited price levels; all on-exchange trades</td>
+</tr>
+<tr class="even">
+<td>MDI (Market Data Interface)</td>
+<td>UDP multicast; FAST encoded</td>
+<td>Netted/statistical market data</td>
+<td>Daily high/low price, total traded quantity, last trade information</td>
+</tr>
+<tr class="odd">
+<td>EOBI (Enhanced Order Book Interface)</td>
+<td>UDP multicast; native binary (not FAST encoded)</td>
+<td>Full market-by-order feed; no depth limitation</td>
+<td>Side, price, priority timestamp, displayed quantity of each individual order/quote; trade price and quantity</td>
+</tr>
+<tr class="even">
+<td>RDI (Reference Data Interface)</td>
+<td>UDP multicast; FAST encoded</td>
+<td>Reference/static data</td>
+<td>Instrument definitions, trading parameters, product assignments</td>
+</tr>
+<tr class="odd">
+<td>EMDS (Extended Market Data Service)</td>
+<td>UDP multicast</td>
+<td>Extended market data including settlement prices and open interest</td>
+<td>Trade prices, settlement prices, open interest data</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Market Data Architecture:</strong> - All interfaces distribute information via UDP multicast - Dual service paths (Service A and Service B) with different multicast addresses provide live-live redundancy - Clients should subscribe to both services and arbitrate between them - EOBI is the premium feed for latency-sensitive participants – provides full order-by-order book without depth limitation and is not FAST encoded (reducing decode overhead) - EMDI provides un-netted updates (every order book change affecting in-scope price levels), while MDI is netted - FIX 5.0 SP2 semantics used across feeds (except EOBI which uses native binary format)</p>
+<p>[Source: Eurex, “T7 R.12.1 EMDI/MDI/RDI Manual”, https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-06] [Source: Databento, “What is the T7 Enhanced Order Book Interface (EOBI)?”, https://databento.com/microstructure/t7-eobi, accessed 2026-04-06] [Source: OnixS, “Xetra T7 EMDI, EOBI, MDI, RDI Market Data Handler SDK”, https://www.onixs.biz/xetra-emdi-eobi-mdi-rdi.html, accessed 2026-04-06]</p>
+</section>
+<section id="drop-copy-trade-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="drop-copy-trade-reporting">4.3 Drop Copy / Trade Reporting</h3>
+<ul>
+<li>Back-office FIX sessions provide trade confirmation receipt at business unit level</li>
+<li>ETI supports trade notification and execution report messages</li>
+<li>OTC trade reporting available through T7 Entry Services (TES)</li>
+</ul>
+</section>
+<section id="reference-data" class="level3">
+<h3 class="anchored" data-anchor-id="reference-data">4.4 Reference Data</h3>
+<ul>
+<li>Reference Data Interface (RDI) publishes instrument definitions and trading parameters via UDP multicast</li>
+<li>Product and instrument reference data available for download from Deutsche BÃ¶rse website</li>
+<li>N7 Network Access Guide provides IP addresses and port configurations (updated v.2.5, January 2025)</li>
+</ul>
+<p>[Source: Eurex, “N7 Network Access Guide v.2.3.2”, https://www.eurex.com/resource/blob/3989230/c71235f6479bb30adb7268afabc2a5b5/data/N7_-_Network_Access_Guide.v.2.3.2.pdf, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="resilience-business-continuity" class="level2">
+<h2 class="anchored" data-anchor-id="resilience-business-continuity">5. Resilience &amp; Business Continuity</h2>
+<section id="redundancy" class="level3">
+<h3 class="anchored" data-anchor-id="redundancy">5.1 Redundancy</h3>
+<ul>
+<li><strong>Partition independence:</strong> Each partition operates independently; a failure in one partition does not affect other partitions</li>
+<li><strong>Matching engine failover:</strong> Every matching engine process has a standby partner that can take over immediately if the primary fails; a matching engine failover triggers a market reset – the secondary component loads persistent orders from the persistency layer; all non-persistent orders and quotes are deleted</li>
+<li><strong>Market data redundancy:</strong> Dual multicast service paths (Service A and Service B) with different multicast addresses; live-live concept</li>
+<li><strong>Gateway redundancy:</strong> Multiple gateway sessions available; PS and LF gateways provide different access paths</li>
+<li><strong>Network redundancy:</strong> N7 network provides redundant connectivity across 35+ countries</li>
+</ul>
+</section>
+<section id="disaster-recovery" class="level3">
+<h3 class="anchored" data-anchor-id="disaster-recovery">5.2 Disaster Recovery</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary Site</td>
+<td>Equinix FR2 data center, Frankfurt, Germany</td>
+</tr>
+<tr class="even">
+<td>DR Infrastructure</td>
+<td>T7 simulation environment infrastructure re-used as DR production infrastructure</td>
+</tr>
+<tr class="odd">
+<td>Failover Scenario</td>
+<td>Simulates partial outage of Equinix FR2 facility; DR infrastructure activated</td>
+</tr>
+<tr class="even">
+<td>Colocation Access</td>
+<td>Colocation facility remains accessible during DR; co-location customers can access DR infrastructure</td>
+</tr>
+<tr class="odd">
+<td>DR Testing</td>
+<td>Regular DR tests conducted (examples: 15 March 2025, 5 October 2024, 14 October 2023, 15 October 2022); Deutsche BÃ¶rse requests all Cash Market Trading Participants to participate</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Characteristics:</strong> - DR concept documented in the “T7 Disaster Recovery Concept” guide (updated with each major release) - In a DR scenario, the simulation environment infrastructure serves as backup production environment - Participants must be prepared to transition to DR environment; different IP addresses and configurations may apply - Regular testing ensures readiness; DR tests cover both Xetra and BÃ¶rse Frankfurt trading venues</p>
+<p>[Source: Xetra, “Deutsche BÃ¶rse Cash Market’s T7 Disaster Recovery Test on 15 March 2025”, https://www.xetra.com/xetra-en/newsroom/circulars-newsletters/xetra-circulars/Deutsche-B-rse-Cash-Market-s-T7-Disaster-Recovery-Test-on-15-March-2025-4251484, accessed 2026-04-06] [Source: Xetra, “Deutsche BÃ¶rse Cash Market T7 Disaster Recovery Test on 5 October 2024”, https://www.xetra.com/xetra-en/newsroom/circulars-newsletters/xetra-circulars/Deutsche-B-rse-Cash-Market-T7-Disaster-Recovery-Test-on-5-October-2024-4056822, accessed 2026-04-06]</p>
+</section>
+<section id="primary-data-center" class="level3">
+<h3 class="anchored" data-anchor-id="primary-data-center">5.3 Primary Data Center</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Facility</td>
+<td>Equinix FR2 (Friesstrasse, Frankfurt, Germany)</td>
+</tr>
+<tr class="even">
+<td>Operator</td>
+<td>Equinix (strategic partnership since 2010)</td>
+</tr>
+<tr class="odd">
+<td>Role</td>
+<td>Financial low-latency trading hub; hosts primary Eurex and Xetra back-ends</td>
+</tr>
+<tr class="even">
+<td>Services</td>
+<td>Rack space, cooling, power supply, smart hands</td>
+</tr>
+<tr class="odd">
+<td>Uptime Track Record</td>
+<td>99.999%+ globally (Equinix standard)</td>
+</tr>
+<tr class="even">
+<td>Colocation Tenants</td>
+<td>Deutsche BÃ¶rse Group, BATS Chi-X Europe, TMX Atrium, and numerous financial market participants</td>
+</tr>
+<tr class="odd">
+<td>Connectivity</td>
+<td>10G/100G Ethernet; N7 network access; direct cross-connects to T7 matching engines</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Equinix, “FR2 Data Center”, https://www.equinix.com/data-centers/europe-colocation/germany-colocation/frankfurt-data-centers/fr2, accessed 2026-04-06] [Source: Xetra, “Co-Location Services”, https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-06] [Source: Equinix/Investor Relations, “Deutsche Borse Systems Selects Equinix as Strategic Data Center”, https://investor.equinix.com/news-releases/news-release-details/deutsche-borse-systems-selects-equinix-strategic-data-center, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="notable-technical-features" class="level2">
+<h2 class="anchored" data-anchor-id="notable-technical-features">6. Notable Technical Features</h2>
+<section id="shared-platform-with-eurex-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="shared-platform-with-eurex-derivatives">6.1 Shared Platform with Eurex Derivatives</h3>
+<p>T7 is notable for being a truly shared technology platform across both cash equities (Xetra) and derivatives (Eurex). This provides: - Common interface specifications (ETI, FIX, market data feeds) across cash and derivatives - Reduced development and maintenance costs for participants active in both markets - Shared colocation infrastructure at Equinix FR2 - Unified technology release cycle (releases deployed across both venues) - Extended to additional venues: EEX (energy), BÃ¶rse Frankfurt, Nodal Exchange, and licensed to external exchanges (e.g., Bombay Stock Exchange)</p>
+</section>
+<section id="volatility-interruption-mechanism" class="level3">
+<h3 class="anchored" data-anchor-id="volatility-interruption-mechanism">6.2 Volatility Interruption Mechanism</h3>
+<p>T7 implements a sophisticated volatility interruption system to strengthen price continuity: - <strong>Single Volatility Interruption model:</strong> Used for equities and equity-like securities; triggers an unscheduled auction when the potential next price deviates too far from reference prices - <strong>Volatility Interruption with Automated Corridor Expansion (ACE):</strong> Used for ETFs, ETNs, and ETCs; multi-level price corridors (narrow to wide) defined per instrument; if no valid price is found within the current corridor, the interruption extends and switches to the next wider corridor - Operates in both auctions and continuous trading - Price determination during interruption follows the principle of most executable volume</p>
+<p>[Source: Xetra, “Volatility Interruption during continuous trading”, https://www.xetra.com/xetra-en/trading/protective-mechanisms/protective-mechanisms-in-continuous-trading, accessed 2026-04-06] [Source: Xetra, “Protective Mechanisms”, https://www.xetra.com/xetra-en/trading/protective-mechanisms, accessed 2026-04-06]</p>
+</section>
+<section id="designated-sponsor-integration" class="level3">
+<h3 class="anchored" data-anchor-id="designated-sponsor-integration">6.3 Designated Sponsor Integration</h3>
+<p>The Designated Sponsor program is a key liquidity mechanism integrated into T7: - Designated Sponsors post binding buy and sell offers for less liquid securities - Must observe maximum spread, minimum quote volume (lot size on both sides), and minimum quotation duration - Minimum presence requirements: 80% for ETFs/ETPs, 90% for equities (in both auctions and continuous trading) - All firm quotes and two-way limit orders must be flagged with a “Liquidity Provision Indicator” - Subject to MiFID II / MiFIR Regulated Market Maker obligations - Deutsche BÃ¶rse issues a performance rating comparing Designated Sponsors based on quote duration, spread, and turnover - Sponsors must register for every ISIN-currency combination separately</p>
+<p>[Source: Xetra, “Designated Sponsor and Market Maker”, https://www.cashmarket.deutsche-boerse.com/cash-en/trading/Xetra/Designated-Sponsor-and-Market-Maker, accessed 2026-04-06] [Source: Xetra, “Designated Sponsor Guide”, https://www.xetra.com/resource/blob/3452184/75f9eefb7b59e0464dc34c3658e1549b/data/designated-sponsor-guide.pdf, accessed 2026-04-06]</p>
+</section>
+<section id="t7-entry-services-tes" class="level3">
+<h3 class="anchored" data-anchor-id="t7-entry-services-tes">6.4 T7 Entry Services (TES)</h3>
+<p>T7 Entry Services enable participants to enter order/trade information into the T7 system, providing: - A channel for negotiated or off-book trades to be reported into the exchange - Two types of TES services offered - Integration with the clearing workflow through T7</p>
+<p>[Source: Xetra, “Xetra T7 Entry Service”, https://www.xetra.com/xetra-en/trading/trading-models/xetra-entry-service, accessed 2026-04-06]</p>
+</section>
+<section id="n7-network-and-cloud-connectivity" class="level3">
+<h3 class="anchored" data-anchor-id="n7-network-and-cloud-connectivity">6.5 N7 Network and Cloud Connectivity</h3>
+<ul>
+<li><strong>N7 network:</strong> Deutsche BÃ¶rse’s global network infrastructure providing connectivity to T7; thousands of connections across 35+ countries in Europe, North America, and Asia</li>
+<li><strong>Cloud simulation:</strong> T7 provides a cloud-based simulation environment for participants to test; current cloud simulation environment scheduled for migration on 28 March 2026</li>
+<li><strong>Connectivity options:</strong> Colocation at Equinix FR2 (lowest latency), proximity hosting, leased line via N7, and internet-based access for non-latency-sensitive use cases</li>
+</ul>
+<p>[Source: Deutsche BÃ¶rse, “N7”, https://www.deutsche-boerse.com/dbg-en/markets-services/ps-technology/ps-7-market-technology/ps-n7, accessed 2026-04-06]</p>
+</section>
+<section id="technology-licensing-export" class="level3">
+<h3 class="anchored" data-anchor-id="technology-licensing-export">6.6 Technology Licensing / Export</h3>
+<p>T7 technology has been licensed to external exchanges, including: - Bombay Stock Exchange (BSE, India) - This positions Deutsche BÃ¶rse alongside a small group of exchange operators (including KRX, Nasdaq, and LSE Group) that export their trading technology</p>
+<p>[Source: Xetra, “T7 trading architecture”, https://www.xetra.com/xetra-en/technology/t7, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="comparison-notes" class="level2">
+<h2 class="anchored" data-anchor-id="comparison-notes">7. Comparison Notes</h2>
+<section id="vs.-krx-exture" class="level3">
+<h3 class="anchored" data-anchor-id="vs.-krx-exture">vs.&nbsp;KRX Exture+</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 55%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Deutsche BÃ¶rse T7 (Xetra)</th>
+<th>KRX Exture+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Launch Year</td>
+<td>2012 (Eurex) / 2017 (Xetra cash)</td>
+<td>2014</td>
+</tr>
+<tr class="even">
+<td>Developer</td>
+<td>In-house (Deutsche BÃ¶rse Group)</td>
+<td>In-house (KRX with Koscom subsidiary)</td>
+</tr>
+<tr class="odd">
+<td>Architecture</td>
+<td>Partition-based; independent matching engines per partition with PS gateways</td>
+<td>Unified matching engine architecture [unverified – specific partition model not publicly detailed]</td>
+</tr>
+<tr class="even">
+<td>Venues Served</td>
+<td>Xetra (cash), Eurex (derivatives), EEX (energy), BÃ¶rse Frankfurt, Nodal Exchange</td>
+<td>Single unified platform (KOSPI, KOSDAQ, derivatives, bonds)</td>
+</tr>
+<tr class="odd">
+<td>Internal Matching Latency</td>
+<td>~2.8 microseconds minimum (Feb 2025)</td>
+<td>~70 microseconds (matching engine)</td>
+</tr>
+<tr class="even">
+<td>Round-trip Latency (median)</td>
+<td>~60 microseconds (High Frequency session via PS gateway)</td>
+<td>~70 microseconds (matching engine only)</td>
+</tr>
+<tr class="odd">
+<td>Peak Daily Messages</td>
+<td>1.25 billion requests (April 2025)</td>
+<td>Not publicly disclosed at comparable granularity</td>
+</tr>
+<tr class="even">
+<td>Matching Model</td>
+<td>Price-time priority</td>
+<td>Price-time priority</td>
+</tr>
+<tr class="odd">
+<td>Market Data Feeds</td>
+<td>EMDI (un-netted MBP), MDI (netted), EOBI (full MBO), RDI (reference) via UDP multicast</td>
+<td>Proprietary binary [unverified]; Solace PubSub+ messaging middleware</td>
+</tr>
+<tr class="even">
+<td>Order Entry Protocol</td>
+<td>ETI (proprietary binary, FIX 5.0 SP2 semantics) + FIX 4.2/4.4</td>
+<td>FIX-based + proprietary API [unverified]</td>
+</tr>
+<tr class="odd">
+<td>Primary Data Center</td>
+<td>Equinix FR2, Frankfurt, Germany (colocation facility)</td>
+<td>Busan Data Center (owned, primary since 2014 relocation)</td>
+</tr>
+<tr class="even">
+<td>DR Approach</td>
+<td>Simulation infrastructure re-used as DR; regular testing (2x/year)</td>
+<td>Active/Standby [unverified]</td>
+</tr>
+<tr class="odd">
+<td>Data Center Ownership</td>
+<td>Hosted at third-party Equinix facility</td>
+<td>KRX-owned facility</td>
+</tr>
+<tr class="even">
+<td>Volatility Protection</td>
+<td>Volatility Interruption + ACE model</td>
+<td>SVIH (Static/Dynamic Volatility Interruption)</td>
+</tr>
+<tr class="odd">
+<td>Liquidity Provider Program</td>
+<td>Designated Sponsor system with performance rating</td>
+<td>Liquidity Provider (LP) system</td>
+</tr>
+<tr class="even">
+<td>Technology Export</td>
+<td>Licensed to BSE India and others</td>
+<td>Exported to Laos, Cambodia, and others</td>
+</tr>
+<tr class="odd">
+<td>Asset Class Coverage</td>
+<td>Cash equities + derivatives + energy (shared platform)</td>
+<td>Equities, bonds, derivatives, ETFs, warrants (unified platform)</td>
+</tr>
+<tr class="even">
+<td>Regulatory Framework</td>
+<td>BaFin / ESMA (MiFID II/MiFIR)</td>
+<td>FSC / FSS</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-differentiators" class="level3">
+<h3 class="anchored" data-anchor-id="key-differentiators">Key Differentiators</h3>
+<p><strong>T7 Strengths:</strong> 1. <strong>Partition-based architecture:</strong> Independent partitions provide strong fault isolation – a failure in one product group does not cascade to others; each partition has its own matching engine and gateway 2. <strong>Shared cash/derivatives platform:</strong> Single technology serving both Xetra cash and Eurex derivatives reduces integration costs for cross-market participants 3. <strong>Extremely low internal latency:</strong> Minimum internal matching latency of ~2.8 microseconds is among the fastest globally 4. <strong>Comprehensive market data:</strong> Four distinct market data interfaces (EMDI, MDI, EOBI, RDI) offer participants flexibility to choose data granularity and latency profile 5. <strong>Volatility Interruption with ACE:</strong> Multi-level corridor expansion for ETFs/ETPs is a sophisticated safeguard mechanism 6. <strong>Global network reach:</strong> N7 network provides direct connectivity from 35+ countries 7. <strong>Extensive public documentation:</strong> Deutsche BÃ¶rse publishes unusually detailed technical documentation about T7 internals, latency performance, and system dynamics</p>
+<p><strong>KRX Exture+ Strengths:</strong> 1. <strong>Broader asset class unification:</strong> Single platform handles equities, bonds, and all derivatives classes within one exchange 2. <strong>Technology independence:</strong> Fully in-house development with owned data center infrastructure (Busan) 3. <strong>Technology export track record:</strong> KRX has established a broader export footprint (Laos, Cambodia, and others) 4. <strong>Simpler venue model:</strong> Single exchange covering all Korean capital market products reduces cross-venue complexity 5. <strong>Competitive latency:</strong> ~70 microseconds matching engine latency is globally competitive, though T7’s internal figures are faster</p>
+<p><strong>Architectural Comparison:</strong> - T7’s partition model provides strong fault isolation but requires careful instrument-to-partition assignment and may involve different latency profiles across partitions; KRX’s unified model may offer more uniform latency characteristics across all instruments - T7’s approach of hosting at a third-party Equinix facility differs from KRX’s owned Busan Data Center – the Equinix model provides access to a broader colocation ecosystem but introduces a dependency on a third-party facility operator - T7’s shared platform across cash and derivatives is architecturally similar to KRX’s unified approach, but spans legally separate exchanges (Xetra and Eurex) while KRX operates as a single integrated exchange - Both exchanges conduct regular DR testing; T7’s approach of re-using simulation infrastructure as DR is a pragmatic but potentially capacity-constrained design compared to dedicated DR facilities - T7’s EOBI (full order-by-order book feed) is comparable to KRX’s order book data feeds; both provide transparency for high-frequency participants</p>
+<hr>
+</section>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<section id="official-deutsche-bãrse-xetra-eurex-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="official-deutsche-bãrse-xetra-eurex-documentation">Official Deutsche BÃ¶rse / Xetra / Eurex Documentation</h3>
+<ul>
+<li>[Source: Xetra, “T7 trading architecture”, https://www.xetra.com/xetra-en/technology/t7, accessed 2026-04-06]</li>
+<li>[Source: Xetra, “System documentation”, https://www.xetra.com/xetra-en/technology/t7/system-documentation, accessed 2026-04-06]</li>
+<li>[Source: Xetra, “Release 14.0”, https://www.eurexgroup.com/xetra-en/technology/t7/system-documentation/release14-0, accessed 2026-04-06]</li>
+<li>[Source: Xetra, “Release 13.1”, https://www.xetra.com/xetra-en/technology/t7/system-documentation/release13-1, accessed 2026-04-06]</li>
+<li>[Source: Deutsche BÃ¶rse, “Internal T7 Latency Performance Updates”, https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-06]</li>
+<li>[Source: Deutsche BÃ¶rse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation-insights-into-trading-system-dynamics.pdf, accessed 2026-04-06]</li>
+<li>[Source: Eurex, “T7 R.13.1 Enhanced Trading Interface Manual”, https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-06]</li>
+<li>[Source: Xetra, “T7 FIX Gateway Manual V5.0”, https://www.cashmarket.deutsche-boerse.com/resource/blob/1470996/f11fe366582ba35ddf9b388ccb544c84/data/T7_FIX_Gateway_Manual_V5.0.pdf, accessed 2026-04-06]</li>
+<li>[Source: Eurex, “T7 R.12.1 EMDI/MDI/RDI Manual”, https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-06]</li>
+<li>[Source: Eurex, “N7 Network Access Guide v.2.3.2”, https://www.eurex.com/resource/blob/3989230/c71235f6479bb30adb7268afabc2a5b5/data/N7_-_Network_Access_Guide.v.2.3.2.pdf, accessed 2026-04-06]</li>
+<li>[Source: Deutsche BÃ¶rse, “T7 – high-speed trading solution for derivatives and cash products”, https://deutsche-boerse.com/dbg-en/our-company/insights-corporate-en/T7-high-speed-trading-solution-for-derivatives-and-cash-products-1621640, accessed 2026-04-06]</li>
+<li>[Source: Deutsche BÃ¶rse, “N7”, https://www.deutsche-boerse.com/dbg-en/markets-services/ps-technology/ps-7-market-technology/ps-n7, accessed 2026-04-06]</li>
+<li>[Source: Deutsche BÃ¶rse, “T7 Factsheet”, https://deutsche-boerse.com/resource/blob/320052/a4d10931561b1cdeb0a68f177826f785/Factsheet_T7-data.pdf, accessed 2026-04-06]</li>
+<li>[Source: Xetra, “Volatility Interruption during continuous trading”, https://www.xetra.com/xetra-en/trading/protective-mechanisms/protective-mechanisms-in-continuous-trading, accessed 2026-04-06]</li>
+<li>[Source: Xetra, “Designated Sponsor and Market Maker”, https://www.cashmarket.deutsche-boerse.com/cash-en/trading/Xetra/Designated-Sponsor-and-Market-Maker, accessed 2026-04-06]</li>
+<li>[Source: Xetra, “Designated Sponsor Guide”, https://www.xetra.com/resource/blob/3452184/75f9eefb7b59e0464dc34c3658e1549b/data/designated-sponsor-guide.pdf, accessed 2026-04-06]</li>
+<li>[Source: Xetra, “Co-Location Services”, https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-06]</li>
+<li>[Source: Xetra, “Xetra T7 Entry Service”, https://www.xetra.com/xetra-en/trading/trading-models/xetra-entry-service, accessed 2026-04-06]</li>
+<li>[Source: Xetra, “Introduction of Next Generation T7 Web Based GUIs”, https://www.xetra.com/xetra-en/newsroom/circulars-newsletters/xetra-circulars/Introduction-of-Next-Generation-T7-Web-Based-GUIs-4673928, accessed 2026-04-06]</li>
+<li>[Source: Eurex, “Completion of the T7 matching engine server hardware upgrade”, https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-06]</li>
+<li>[Source: Xetra, “DR Test 15 March 2025”, https://www.xetra.com/xetra-en/newsroom/circulars-newsletters/xetra-circulars/Deutsche-B-rse-Cash-Market-s-T7-Disaster-Recovery-Test-on-15-March-2025-4251484, accessed 2026-04-06]</li>
+</ul>
+</section>
+<section id="third-party-sources" class="level3">
+<h3 class="anchored" data-anchor-id="third-party-sources">Third-Party Sources</h3>
+<ul>
+<li>[Source: Databento, “What is the T7 trading platform?”, https://databento.com/microstructure/t7, accessed 2026-04-06]</li>
+<li>[Source: Databento, “What is the T7 Enhanced Order Book Interface (EOBI)?”, https://databento.com/microstructure/t7-eobi, accessed 2026-04-06]</li>
+<li>[Source: OnixS, “Xetra T7 EMDI, EOBI, MDI, RDI Market Data Handler SDK”, https://www.onixs.biz/xetra-emdi-eobi-mdi-rdi.html, accessed 2026-04-06]</li>
+<li>[Source: Equinix, “FR2 Data Center”, https://www.equinix.com/data-centers/europe-colocation/germany-colocation/frankfurt-data-centers/fr2, accessed 2026-04-06]</li>
+<li>[Source: Equinix/Investor Relations, “Deutsche Borse Systems Selects Equinix”, https://investor.equinix.com/news-releases/news-release-details/deutsche-borse-systems-selects-equinix-strategic-data-center, accessed 2026-04-06]</li>
+<li>[Source: MarketsWiki, “Eurex”, https://www.marketswiki.com/wiki/Eurex, accessed 2026-04-06]</li>
+<li>[Source: A-Team Insight, “NanoSpeed Adds Ultra-Low Latency Connectivity to Eurex T7 Using FPGA Technology”, https://a-teaminsight.com/blog/nanospeed-adds-ultra-low-latency-connectivity-to-eurex-t7-using-fpga-technology/, accessed 2026-04-06]</li>
+</ul>
+</section>
+<section id="krxexture-sources" class="level3">
+<h3 class="anchored" data-anchor-id="krxexture-sources">KRX/Exture+ Sources</h3>
+<ul>
+<li>[Source: KRX, “EXTURE+ Trading”, https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp, accessed 2026-04-06]</li>
+<li>[Source: Koscom, “KRX Trading System”, https://english.koscom.co.kr/eng/main/contents.do?menuNo=300005, accessed 2026-04-06]</li>
+<li>[Source: PRWeb/Solace, “Korea Exchange Deploys Solace Systems”, October 2013, https://www.prweb.com/releases/2013/10/prweb11191574.htm, accessed 2026-04-06]</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

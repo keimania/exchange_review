@@ -1,0 +1,406 @@
+---
+title: "KRX Clearing (Korea Exchange CCP)"
+subtitle: "Clearing & Settlement > Organizations"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-13
+> **Research Tier:** Tier 1 (Deep Dive)
+> **Type:** CCP (Integrated Exchange-CCP)
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Korea Exchange (한국거래소) — Clearing Division |
+| Abbreviation | KRX |
+| Website | [https://global.krx.co.kr](https://global.krx.co.kr) |
+| Year Established | 2005 (as KRX); clearing function inherited from predecessor exchanges (KOFEX 1999, KSE 1956) |
+| Country / City | South Korea / Busan (headquarters); Seoul (market operations) |
+| Ownership Structure | Public institution under the Financial Services Commission (FSC); not a stock corporation but a member-based self-regulatory organization established by statute |
+| Parent Company / Group | None (independent statutory entity) |
+| Regulatory Authority | FSC (Financial Services Commission) as primary regulator; FSS (Financial Supervisory Service) conducts examination; BOK (Bank of Korea) provides systemic oversight |
+| Clearing Model | Integrated exchange-CCP — KRX serves as both trading venue and central counterparty for all exchange-traded products |
+| Products Cleared | Equities (KOSPI, KOSDAQ), listed derivatives (futures & options), bonds, OTC IRS/CRS |
+| Clearing / Settlement Agent | KSD (Korea Securities Depository, 한국예탁결제원) handles settlement and custody as CSD |
+| CPMI-IOSCO PFMI Compliance | IMF FSAP assessment conducted (2014); publishes regulatory disclosures per FSC requirements |
+| QCCP Status | Recognized as a Qualifying CCP under Basel III framework |
+
+*[Source: KRX Global Website, https://global.krx.co.kr]; [Source: IMF, "Republic of Korea FSAP", 2014]; [Source: Capital Market Act (자본시장과 금융투자업에 관한 법률)]*
+
+### Key Historical Milestones
+
+- **1956:** Korea Stock Exchange (KSE) established with basic clearing function for equities.
+- **1996:** Derivatives clearing function added with the launch of KOSPI 200 futures/options — one of the world's first index derivatives products to achieve massive retail participation.
+- **1999:** Korea Futures Exchange (KOFEX) established in Busan with dedicated derivatives clearing.
+- **2005 (January 27):** Korea Exchange (KRX) formed through merger of KSE, KOFEX, and KOSDAQ; unified clearing across all market segments under one CCP.
+- **2009:** EXTURE (Exchange Trading Using Revolutionary Engine) trading/clearing system launched.
+- **2014:** IMF FSAP assessment completed, evaluating KRX's clearing and risk management against PFMI standards.
+- **2016:** EXTURE+ next-generation platform deployed with enhanced clearing capabilities.
+- **2021:** Split settlement system introduced for equity settlement (10 billion KRW units).
+- **2024:** Split settlement units reduced from KRW 10 billion to KRW 5 billion (15-20% deposit reduction for members); derivatives daily settlement volume up 47.9% YoY.
+- **2025 (April):** KRX clearing/settlement technology exported to Thai Stock Exchange (SET).
+- **2025 (June):** Night session clearing operational (18:00-06:00 KST) for derivatives.
+- **2026 (February):** Settlement operating hours expanded from 9:00-16:10 to 7:00-16:10.
+- **2026 (Late April):** Further split settlement reduction from KRW 5 billion to KRW 1 billion units.
+
+*[Source: KRX, https://global.krx.co.kr]; [Source: WFE, "KRX Clearing Milestone"]; [Source: KRX, "증권시장 청산결제 업무규정_전문_20260304"]*
+
+### Key Market Data (2026 YTD)
+
+| Metric | Value |
+|--------|-------|
+| Average Daily Equity Trading Value (Jan-Mar 2026) | KRW 29.6 trillion (~USD 22 billion) |
+| YoY Change in Daily Trading Value | +138.7% |
+| Derivatives Daily Settlement Growth (2024) | +47.9% YoY |
+| Listed Products | KOSPI 200 futures/options, single stock futures/options, sector index products, commodity futures, currency futures, bond futures, OTC IRS/CRS |
+| KOSPI 200 Options | Historically the world's most actively traded options contract by volume (prior to contract size adjustment in 2012) |
+
+*[Source: KRX, "증권시장 청산결제 업무규정_전문_20260304"]*
+
+---
+
+## 2. Clearing Model
+
+### 2.1 CCP Services
+
+KRX operates as an integrated exchange-CCP, a model common among Asian exchanges (similar to pre-reform structures at HKEX, SGX, and historical structures at JPX before the JSCC spin-off):
+
+- **Novation:** KRX interposes itself as the counterparty to all matched trades — becoming the buyer to every seller and the seller to every buyer upon trade matching.
+- **Scope:** All exchange-traded products across KOSPI Market, KOSDAQ Market, derivatives market, bond market, and mandated OTC products (IRS/CRS).
+- **Multilateral Netting:** Net obligations calculated by settlement category (equity trading, bond trading, repo, derivatives).
+- **Guarantee Function:** KRX guarantees settlement of all matched trades through its default waterfall and clearing fund structure.
+
+*[Source: KRX, "증권시장 청산결제 업무규정_전문_20260304"]*
+
+### 2.2 Clearing Membership
+
+From KRX regulations (업무규정):
+
+| Category | Description |
+|----------|-------------|
+| Clearing Members (결제회원) | Securities companies and other financial institutions meeting capital requirements set by FSC regulations; directly participate in KRX clearing |
+| Membership Tiers | Based on capital adequacy and business scope — different requirements for equity, derivatives, and bond clearing |
+| Capital Requirements | Per FSC regulations; minimum net capital requirement varies by business scope (e.g., KRW 20 billion+ for derivatives clearing) |
+| Non-Clearing Participants | Must clear through a clearing member; the clearing member assumes guarantee obligation for the non-clearing participant's trades |
+| Clearing Member Obligations | Maintain clearing deposits, contribute to Joint Compensation Fund, meet margin requirements, comply with position limits |
+
+*[Source: KRX, "파생상품시장 업무규정_전문_20250609"]*
+
+### 2.3 Netting
+
+From 증권시장 청산결제 업무규정, Article 9:
+
+| Netting Category | Description |
+|-----------------|-------------|
+| Equity Trading (주식매매) | Multilateral netting of all buy/sell obligations per settlement date |
+| Government Bond Market (국채시장) | Special netting provisions with separate calculation |
+| Repo Transactions (환매채거래) | Netted independently from outright bond trades |
+| Bond Market (채권시장) | Separate netting cycle from equity market |
+| Derivatives | Daily mark-to-market with cash settlement of variation margin |
+
+- Settlement amounts calculated to KRW 1 precision.
+- Netting is legally enforceable under the Capital Market Act, providing protection against insolvency claw-back.
+
+*[Source: KRX, "증권시장 청산결제 업무규정_전문_20260304"]*
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework
+
+#### Listed Derivatives — KRX-SPAN (Modified SPAN)
+
+KRX employs a modified SPAN (Standard Portfolio Analysis of Risk) methodology for listed derivatives margin calculation:
+
+- **Methodology:** Scenario-based approach drawing on CME SPAN portfolio risk concepts, adapted for Korean market characteristics.
+- **Calculation Frequency:** Daily at market close; positions marked to settlement price.
+- **Margin Formula:** Position x Price x Multiplier x Margin Rate.
+- **Typical Initial Margin Rate:** ~8-10% for KOSPI 200 futures.
+- **Maintenance Margin Rate:** ~5-6% (lower than initial margin threshold).
+
+*[Source: KRX, "파생상품시장 업무규정_전문_20250609"]*
+
+#### Margin Types
+
+| Type | Korean Term | Description |
+|------|-------------|-------------|
+| Initial Margin | 개시증거금 | Required when opening new positions; must be deposited before or at time of order |
+| Maintenance Margin | 유지증거금 | Minimum balance required to maintain positions; breach triggers margin call |
+| Trading Margin | 거래증거금 | Cleared by exchange; due by 11:00 next trading day for member-level settlement |
+| Client Margin | 위탁증거금 | Pre-funded before order entry for retail; post-funded (due by 11:00 next day) for qualified institutional investors |
+| Spread Margin | 스프레드증거금 | Reduced rate for recognized spread positions (calendar, inter-commodity) |
+
+*[Source: KRX, "파생상품시장 업무규정_전문_20250609"]*
+
+#### Options Margin
+
+- **Buy Orders:** Full premium must be deposited in cash.
+- **Sell Orders:** Margin is the greater of three calculations involving theoretical price + volatility scenarios.
+- **Spread Trading:** Reduced margin with substitute securities allowed within limits.
+
+#### Eligible Collateral (대용증권)
+
+| Collateral Type | Haircut / Acceptance Rate |
+|----------------|--------------------------|
+| Cash (현금) | 100% |
+| Listed Stocks (meeting liquidity criteria) | 70-80% of market value (quarterly adjusted) |
+| Government Bonds (국채) | Varies by maturity; generally 95-98% |
+| Corporate Bonds (BBB+ minimum rating) | Varies by maturity and rating; generally 80-90% |
+| ETFs and Index Securities | Accepted with restrictions on leveraged/inverse products |
+| Foreign Currency (10 types) | USD, JPY, EUR, GBP, HKD, AUD, SGD, CHF, CAD, CNY — haircuts vary by currency |
+
+**Concentration Limits:**
+- Individual stock: Maximum 50% of average daily trading volume.
+- Corporate bonds: Maximum 10% of total issuance amount.
+- Fund securities: Maximum 10% of fund size.
+
+**Cash Requirement:** Minimum 50% of total margin must be in cash; remainder may be substitute securities.
+
+**Qualified Institutional Investor Exception:** May defer margin deposit until 10:00 next trading day.
+
+*[Source: KRX, "파생상품시장 업무규정 시행세칙"]*
+
+### 3.2 Margin Call Schedule
+
+| Type | Korean Term | Trigger | Deadline |
+|------|-------------|---------|----------|
+| Regular Margin Call | 정규증거금 | Daily mark-to-market at close | 11:00 next trading day |
+| Intraday Margin Call | 장중추가증거금 | KOSPI 200 index volatility >= 80% of futures margin rate, OR member's intraday requirement >= 120% of deposit | 2 hours from notification |
+| Additional Margin Call | 추가증거금 | Mark-to-market losses exceed thresholds beyond regular margin | 1 hour after 2-hour buffer period |
+
+- Intraday margin call is released if triggering conditions ease within 30 minutes of notification.
+- Failure to meet margin call within deadline results in position liquidation and potential clearing membership suspension.
+
+*[Source: KRX, "파생상품시장 업무규정_전문_20250609"]*
+
+### 3.3 Default Waterfall (손해배상 체계)
+
+The default waterfall for derivatives clearing follows a "defaulter pays first" principle:
+
+| Layer | Resource | Korean Term | Estimated Size |
+|-------|----------|-------------|----------------|
+| 1 | Defaulter's margin deposits | 위탁증거금 | Per-position (varies) |
+| 2 | Defaulter's clearing deposit / contribution | 회원증거금 | Per-member (varies) |
+| 3 | Joint Compensation Fund | 손해배상공동기금 | ~KRW 100 billion (~USD 75 million) [estimated] |
+| 4 | KRX's own capital contribution (SITG) | 거래소 자기자본 | [data not publicly disclosed] |
+| 5 | Non-defaulting members' additional contributions | 회원 추가분담금 | Assessed pro-rata based on clearing activity |
+
+**Key Features:**
+- KRX places Skin-in-the-Game (SITG) before non-defaulting members' resources, consistent with PFMI guidance.
+- Joint Compensation Fund contributions follow a Fixed + Variable model: fixed base contribution plus variable component based on clearing volume/risk.
+- Replenishment of the Joint Compensation Fund is required after usage in a default event.
+- Recovery tools include: asset liquidation, securities sales, netting of claims against the defaulter, and assessment powers on surviving members.
+
+*[Source: KRX, "파생상품시장 업무규정_전문_20250609"; IMF, "Republic of Korea FSAP", 2014]*
+
+### 3.4 Stress Testing
+
+| Item | Details |
+|------|---------|
+| Frequency | Quarterly stress testing per regulatory requirements; real-time position monitoring |
+| Scenarios | Historical stress scenarios (e.g., 2008 GFC, 2020 COVID crash, 2022 LUNA/Terra incident) and hypothetical extreme-but-plausible scenarios |
+| Coverage | Liquidity risk, credit risk, concentration risk, wrong-way risk |
+| Back Testing | Daily back testing of margin model adequacy |
+| FSAP Recommendations (2014) | IMF recommended enhancements to back testing methodology, sensitivity analysis, and reverse stress testing |
+| Reporting | Results reported to FSC/FSS; BOK reviews systemic risk implications |
+
+*[Source: IMF, "Republic of Korea FSAP", 2014]*
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycles
+
+| Product | Settlement Cycle | Settlement Time |
+|---------|-----------------|-----------------|
+| Equities (KOSPI, KOSDAQ) | T+2 | 9:00 AM |
+| Government Bonds | T+1 | 9:00 AM |
+| Bonds (general) | T+1 to T+2 | 3:30 PM |
+| Derivatives (daily margin) | T+0 / T+1 | Daily mark-to-market; margin by 11:00 next day |
+| Derivatives (final settlement) | T+1 | Cash settlement or physical delivery per contract spec |
+| OTC IRS/CRS | Per payment schedule | As per swap terms |
+
+*[Source: KRX, "증권시장 청산결제 업무규정_전문_20260304"]*
+
+### 4.2 DVP Model
+
+- KRX/KSD employ a DVP (Delivery versus Payment) model for securities settlement.
+- **Securities leg:** KSD (Korea Securities Depository) acts as CSD, handling book-entry transfer of securities.
+- **Cash leg:** Settlement through Bank of Korea (BOK) for large-value government bond transactions; settlement banks (KEB Hana Bank, KB Kookmin Bank, etc.) for equity and other settlement.
+- **Central bank money:** Used for government bond settlement to eliminate settlement bank credit risk.
+- **Simultaneous exchange:** Securities delivery and payment occur simultaneously to eliminate principal risk.
+
+*[Source: KRX, "증권시장 청산결제 업무규정 시행세칙_전문_20250304"]*
+
+### 4.3 Settlement Finality
+
+| Item | Details |
+|------|---------|
+| Legal Framework | Capital Market Act (자본시장과 금융투자업에 관한 법률) |
+| Finality Point | Transfer orders entered into KRX/KSD system are legally enforceable and irrevocable |
+| Insolvency Protection | Netting and settlement finality provisions protect against insolvency claw-back under Korean law |
+| Derivatives | Same-day finality for derivatives margin settlement |
+| Regulatory Basis | Article 390 et seq. of FSCMA provides legal certainty for settlement finality |
+
+*[Source: Capital Market Act; IMF, "Republic of Korea FSAP", 2014]*
+
+### 4.4 Settlement System Overhaul (2021-2026)
+
+KRX has been progressively reforming its equity settlement system through "split settlement" (분할결제):
+
+| Year | Change | Impact |
+|------|--------|--------|
+| 2021 | Split settlement introduced | Settlement obligations divided into KRW 10 billion units, settled sequentially throughout the day |
+| 2024 | Units reduced from KRW 10B to KRW 5B | 15-20% reduction in settlement deposit requirements for members |
+| 2026 (February) | Operating hours expanded | Settlement window extended from 9:00-16:10 to 7:00-16:10 |
+| 2026 (Late April) | Units reduced from KRW 5B to KRW 1B | Further reduction in member deposit burden; more granular liquidity management |
+
+**Rationale:** Split settlement reduces the peak liquidity requirement for clearing members by distributing settlement obligations throughout the day, lowering systemic risk and member funding costs.
+
+**Market Context:** Average daily equity trading value reached KRW 29.6 trillion (Jan-Mar 2026), up 138.7% YoY, necessitating the infrastructure upgrade.
+
+*[Source: KRX, "증권시장 청산결제 업무규정_전문_20260304"]*
+
+---
+
+## 5. Technology & Infrastructure
+
+| Item | Details |
+|------|---------|
+| Clearing System | Integrated within EXTURE+ (Exchange Trading Using Revolutionary Engine Plus) platform |
+| Developed By | KOSCOM (코스콤, KRX subsidiary / IT affiliate) |
+| Architecture | Memory-based, real-time processing on x86 Linux infrastructure |
+| Risk Engine | Real-time margin calculation and position monitoring; KRX-SPAN engine for derivatives |
+| STP Rate | Very high — integrated exchange-CCP model eliminates trade matching delays between exchange and CCP |
+| Protocols | FIX/FAST protocols for member connectivity |
+| Disaster Recovery | Redundant systems with zero-data-loss failover capability; backup site in separate geographic location |
+| Night Session (2025) | Extended clearing infrastructure to support 18:00-06:00 KST derivatives night session |
+| Technology Export | KRX clearing/settlement system technology sold to Thai Stock Exchange (SET) in April 2025 — validating international competitiveness of EXTURE+ platform |
+| Capacity | Designed to handle peak volumes exceeding 2x historical maximums |
+
+*[Source: KRX Global Website, https://global.krx.co.kr; WFE, "KRX Clearing Milestone"]*
+
+---
+
+## 6. Regulatory Framework
+
+| Item | Details |
+|------|---------|
+| Primary Regulator | Financial Services Commission (금융위원회, FSC) — policy-making and rule approval |
+| Examination Authority | Financial Supervisory Service (금융감독원, FSS) — on-site examination and off-site surveillance |
+| Systemic Oversight | Bank of Korea (한국은행, BOK) — oversight of systemically important payment and settlement systems |
+| Governing Law | Financial Investment Services and Capital Markets Act (자본시장과 금융투자업에 관한 법률, FSCMA) |
+| Clearing Regulations | 파생상품시장 업무규정 (Derivatives Market Business Regulations); 증권시장 청산결제 업무규정 (Securities Market Clearing & Settlement Regulations) |
+| PFMI Compliance | IMF FSAP 2014 assessment completed; Korea assessed as largely observant of PFMI principles |
+| CCP Recovery & Resolution | No dedicated CCP recovery and resolution regime as of 2026 (similar to Japan, Hong Kong, Singapore) |
+| OTC Clearing Mandate | KRW-denominated IRS (Interest Rate Swap) and CRS (Currency Rate Swap) mandated for central clearing through KRX |
+| Self-Regulatory Function | KRX has SRO status; conducts market surveillance and member supervision alongside FSS |
+
+**Korea's Dual Regulatory Structure:**
+Korea's FSC/FSS dual structure is distinctive — the FSC handles policy-making, licensing, and regulatory approvals while the FSS conducts day-to-day supervision, examination, and enforcement. This separation of policy from execution is unusual among major markets and provides a form of checks and balances in financial regulation.
+
+*[Source: IMF, "Republic of Korea FSAP", 2014; Capital Market Act]*
+
+---
+
+## 7. Interoperability
+
+| Item | Details |
+|------|---------|
+| CCP Interoperability Links | None — KRX operates as a domestic monopoly CCP (similar to Japan/JSCC model) |
+| CSD Cross-Border Links | KSD maintains CSD links with Euroclear, Clearstream, and DTC for cross-border settlement |
+| Stock Connect | None currently; KRX monitoring developments in China-Hong Kong Stock Connect and potential replication |
+| OTC Clearing Scope | KRW IRS and KRW CRS only (narrower than JSCC which clears JGB repos, or LCH which clears multi-currency IRS) |
+| MSCI Inclusion Considerations | Enhanced foreign investor access to clearing/settlement infrastructure is relevant to Korea's MSCI Developed Market reclassification efforts |
+| Mutual Recognition | KRX recognized as QCCP by major jurisdictions for bank capital treatment purposes |
+
+*[Source: KRX Global Website, https://global.krx.co.kr]*
+
+---
+
+## 8. Fees
+
+| Item | Details |
+|------|---------|
+| Fee Structure | Clearing fees bundled with exchange trading fees — no separate clearing fee invoice |
+| Derivatives Clearing Component | Approximately 0.0001% to 0.001% of notional value |
+| Example: Semiconductor Index Products | Clearing fee rate of 0.0001161% |
+| Equity Clearing | Included in exchange transaction levy |
+| Clearing Fund Contributions | Required from all clearing members; Fixed + Variable model |
+| Fee Transparency | Fee schedules published on KRX website; changes require FSC approval |
+
+**Note:** The bundled fee model is a characteristic of the integrated exchange-CCP structure — users do not see separate clearing and trading fees as they would with standalone CCPs like LCH or OCC.
+
+*[Source: KRX Global Website, https://global.krx.co.kr]*
+
+---
+
+## 9. Recent Developments
+
+| Date | Development |
+|------|-------------|
+| 2024 | Derivatives daily settlement volume increased 47.9% YoY, reflecting growth in KOSPI 200 options and mini-KOSPI futures activity |
+| 2025 (April) | KRX clearing/settlement technology exported to Thai Stock Exchange (SET) — first major international technology export by KRX |
+| 2025 (June) | Night session clearing becomes operational (18:00-06:00 KST) for derivatives, extending Korean market access to overlap with European/US trading hours |
+| 2026 (February) | Settlement operating hours expanded from 9:00-16:10 to 7:00-16:10, adding early-morning settlement windows |
+| 2026 (Late April) | Split settlement units further reduced from KRW 5 billion to KRW 1 billion, dramatically lowering member deposit requirements |
+| Ongoing | KRX evaluating margin methodology upgrade from KRX-SPAN to VaR-based approach (following JSCC's 2023 precedent of transitioning to historical simulation VaR) |
+| Ongoing | Monitoring global T+1 settlement transition trends (US moved to T+1 in May 2024; EU targeting October 2027) for potential Korean adoption |
+| Ongoing | MSCI Developed Market reclassification efforts driving clearing/settlement infrastructure improvements for foreign investors |
+
+*[Source: KRX Global Website, https://global.krx.co.kr; WFE, "KRX Clearing Milestone"]*
+
+---
+
+## 10. KRX Comparison with Global Peers
+
+| Dimension | KRX Clearing | JSCC (Japan) | HKEX Clearing | CME Clearing |
+|-----------|-------------|--------------|---------------|--------------|
+| **Model** | Integrated exchange-CCP | Standalone CCP (subsidiary of JPX) | Integrated exchange-CCP (HKCC, HKSCC, SEOCH under HKEX) | Standalone CCP (division of CME Group) |
+| **Margin Methodology** | KRX-SPAN (modified SPAN); evaluating VaR transition | Historical simulation VaR (transitioned 2023) | PRiME (Portfolio Risk Margining using Expected shortfall) | SPAN for listed; HVaR for OTC |
+| **Default Fund Size** | ~KRW 100B (~USD 75M) [estimated] | ~JPY 50B+ (~USD 350M) for derivatives | ~HKD 3.5B (~USD 450M) across clearing houses | ~USD 11.5B (IRS segment alone) |
+| **Settlement Cycle (Equities)** | T+2 | T+2 (T+1 planned for 2026-2027) | T+2 | N/A (derivatives-focused) |
+| **OTC Clearing Scope** | KRW IRS, KRW CRS only | JGB repos, IRS, CDS | OTC derivatives via OTC Clear | IRS, CDS, FX (multi-currency, global scope) |
+| **Technology Platform** | EXTURE+ (KOSCOM-developed) | J-GATE clearing / CJCS | DCASS / CCASS | CME Globex / clearing engine |
+| **Night Session** | Yes (2025, 18:00-06:00 KST) | Yes (extended hours) | Yes (after-hours futures) | Nearly 24-hour trading/clearing |
+| **PFMI Status** | IMF FSAP 2014; QCCP recognized | CPMI-IOSCO self-assessment; QCCP | CPMI-IOSCO self-assessment; QCCP | CPMI-IOSCO PQD published quarterly; QCCP |
+| **CCP R&R Regime** | No dedicated regime | No dedicated regime | No dedicated regime | Dodd-Frank Title II (US FDIC-based) |
+| **CCP Interoperability** | None (domestic monopoly) | None (domestic monopoly) | Limited (Stock Connect link with CSDC) | Limited (links for specific products) |
+
+**Key Observations:**
+- KRX's default fund size is notably smaller than global peers, reflecting the domestic-only scope and integrated exchange-CCP model where exchange revenue provides an implicit backstop.
+- KRX's OTC clearing scope is narrower than peers, limited to KRW-denominated products — expansion could enhance systemic risk management.
+- The integrated exchange-CCP model provides operational efficiency (high STP, no trade matching delays) but raises governance questions about conflicts of interest between commercial and risk management functions.
+- KRX's planned transition from SPAN to VaR-based margining would align it with global best practice trends.
+
+*[Source: KRX Global Website; JSCC PFMI Disclosures; HKEX Annual Report; CME Group PQD Disclosures]*
+
+---
+
+## Sources
+
+[Source: KRX, "증권시장 청산결제 업무규정_전문_20260304"]
+[Source: KRX, "증권시장 청산결제 업무규정 시행세칙_전문_20250304"]
+[Source: KRX, "파생상품시장 업무규정_전문_20250609"]
+[Source: KRX Global Website, https://global.krx.co.kr]
+[Source: IMF, "Republic of Korea — Financial Sector Assessment Program (FSAP)", 2014]
+[Source: WFE, "KRX Clearing Milestone"]
+[Source: Capital Market Act (자본시장과 금융투자업에 관한 법률)]
+[Source: JSCC PFMI Quantitative Disclosures]
+[Source: HKEX Annual Report 2024]
+[Source: CME Group CPMI-IOSCO PQD Disclosures]

@@ -1,0 +1,343 @@
+---
+title: "Bursa Malaysia Berhad (Bursa Malaysia)"
+subtitle: "주식시장 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 업데이트:** 2026-04-06
+> **조사 등급:** Tier 3
+> **도메인:** 주식
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | Bursa Malaysia Berhad |
+| 약칭 | Bursa Malaysia (구 KLSE) |
+| 웹사이트 | https://www.bursamalaysia.com |
+| 설립 연도 | 1973년 Kuala Lumpur Stock Exchange(KLSE)로 설립; 2004년 4월 Bursa Malaysia로 개명 |
+| 소재지 | 말레이시아 / 쿠알라룸푸르 (Exchange Square, Bukit Kewangan) |
+| 소유 구조 | 자사 Main Market에 상장 (종목코드: BURSA, 코드 1818) |
+| 모회사 / 그룹 | 자체 상장 거래소 지주회사 |
+| 감독 기관 | Securities Commission Malaysia (SC) |
+| 시가총액 (상장기업) | 2025년 상반기 기준 약 1.9조 링깃 (약 4,300억 달러); 2024년 5월 잠시 2조 링깃 돌파 |
+| 총 상장기업 수 | 전 시장 합산 약 1,051개 상장기업 + 22개 비기업 상장(ETF, REITs, SPACs, 사업신탁) |
+| 일평균 거래량 | [미확인] 약 30~50억 주 |
+| 일평균 거래대금 | 약 25~30억 링깃; 소매 SDAV 약 4.5억 링깃(2025년) [미확인] |
+
+**Bursa Malaysia Berhad 시가총액 (거래소 자체):** 2026년 2월 기준 약 72.5억 링깃 (약 16억 달러).
+
+### 주요 연혁 (Key Historical Milestones)
+- **1930년:** 말라야 최초의 공식 증권거래(Singapore Stockbrokers' Association 경유)
+- **1964년:** Stock Exchange of Malaysia 설립 (싱가포르와 공동 거래소)
+- **1973년:** 말레이시아-싱가포르 간 통화 분리에 따라 Kuala Lumpur Stock Exchange(KLSE) 별도 설립
+- **2004년 (1월 5일):** 2003년 KLSE 상호회사 전환법에 의거 KLSE 상호회사 전환; 주식회사로 전환
+- **2004년 (4월 14일):** Bursa Malaysia Berhad로 개명; 증권거래 사업은 자회사 Bursa Malaysia Securities Berhad(BMSB)에 귀속
+- **2005년 (3월 18일):** Bursa Malaysia, IPO를 통해 자사 Main Board에 상장
+- **2009년 (8월 3일):** 유동성 개선 및 매수-매도 스프레드 축소를 위한 호가단위(최소가격변동폭) 인하
+- **2013년 (12월 2일):** Nasdaq의 X-Stream INET 기반 Bursa Trade Securities 2 (BTS2) 출시, NYSE Technologies의 NSC 엔진 대체
+- **2019년 (4월 29일):** 결제주기 T+3에서 T+2로 단축
+- **2021년 (4월 1일):** FCPO 실물 인도에 MSPO (Malaysian Sustainable Palm Oil) 인증 의무화 -- 상품 파생상품 실물 인도에 지속가능성 인증을 요구한 세계 최초의 거래소
+- **2025년:** Bursa Malaysia, 2025년 상반기 전체 시가총액 1.9조 링깃 기록; ASEAN IPO 활동에서 지속적 선도
+
+### 주요 지수 (Key Indices)
+| 지수 | 설명 |
+|-------|-------------|
+| **FTSE Bursa Malaysia KLCI (FBM KLCI)** | 대표 벤치마크; 시가총액 기준 상위 30개사 (유동주식 가중); FTSE Russell과 Bursa Malaysia 공동 운영; 최소 15% 유동주식비율 요구 |
+| **FBM Emas** | FBM KLCI + FBM Small Cap 구성종목을 포괄하는 광범위 지수 |
+| **FBM ACE** | ACE Market 전 적격 기업 추적 |
+| **FBM Hijrah Shariah** | 이슬람 투자자를 위한 샤리아 적합 지수 |
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 (Market Segments)
+
+| 구분 | 설명 | 상장 요건 (요약) |
+|---------|-------------|-------------------------------|
+| **Main Market** | 안정적 영업 및 수익 실적을 가진 기성 기업을 위한 주요 시장 | 상장 시 최소 시가총액 5억 링깃; 수익 실적 또는 시가총액 기준; 최소 25% 공모비율(대형주는 15%); 승인된 투자설명서 필요 |
+| **ACE Market** | 성장 잠재력을 가진 기업을 위한 스폰서 주도 대안시장; 최소 규모 또는 수익 요건 없음 | 스폰서 감독; Bursa가 정량적 기준 미설정(스폰서가 적합성 판단); 주요 상장이어야 함; 높은 위험 공시 필요 |
+| **LEAP Market** | 자금조달 접근을 원하는 신흥기업 및 SME를 위한 자문사 주도 시장 | 적격투자자에게만 제공; 영업 또는 재무 실적 불요; 자문사 주도(스폰서 주도가 아님); 적격 기관 및 고액순자산 투자자에 한정 |
+
+**샤리아 적합 시장의 중요성:** 2025년 5월 기준, 상장 증권 1,056개 중 약 850개(약 80%)가 SC 산하 Shariah Advisory Council(SAC)에 의해 샤리아 적합으로 분류된다. 샤리아 적합 자산은 2.6조 링깃을 초과하며 2024년 말 기준 국가 자본시장의 약 63%를 차지한다. 말레이시아는 세계 최대 이슬람 자본시장 중 하나이며, 이 샤리아 분류는 Bursa Malaysia를 대부분의 다른 거래소와 구별짓는 특징이다. SAC는 매년 5월과 11월에 목록을 갱신한다.
+
+### 2.2 매매시간 (Trading Sessions)
+
+**참고:** 말레이시아는 연중 UTC+8 (MYT -- Malaysia Time) (일광절약시간제 없음).
+
+**정규 매매일**
+
+| 세션 | 현지시간 (MYT) | UTC | 설명 |
+|---------|------------------|-----|-------------|
+| 장전 세션 | 08:30 - 09:00 | 00:30 - 01:00 | 주문 입력, 수정, 취소 가능; 매칭 없음; 이론적 시가(TOP) 및 거래량(TOV) 배포 |
+| 오전 접속매매(연속매매) | 09:00 - 12:30 | 01:00 - 04:30 | 가격-시간 우선원칙에 의한 연속 주문 매칭 |
+| **점심시간** | **12:30 - 14:00** | **04:30 - 06:00** | **매매 없음; 1.5시간 점심시간** |
+| 장전 세션 (오후) | 14:00 - 14:30 | 06:00 - 06:30 | 오후 세션 주문 입력; 오전 미체결 주문 이월 |
+| 오후 접속매매(연속매매) | 14:30 - 16:45 | 06:30 - 08:45 | 가격-시간 우선원칙에 의한 연속 주문 매칭 |
+| 장전마감 | 16:45 - 16:50 | 08:45 - 08:50 | 주문 입력 가능; 종가 경매가 산출 |
+| 종가단일가매매(장마감 경매) | 16:50 | 08:50 | 단일가매매에 의한 종가 결정 |
+| 종가매매 (Trading at Last) | 16:50 - 17:00 | 08:50 - 09:00 | 종가에서만 연속 매칭 |
+
+**아시아 특유의 특징 -- 점심시간:** Bursa Malaysia는 다른 주요 아시아 거래소와 유사하게 1.5시간 점심시간(12:30-14:00 MYT)을 유지한다.
+
+**반일 매매:** 반일에는 오전 세션만 운영(08:30-12:30 MYT, 마감 루틴 포함).
+
+### 2.3 호가단위 (Tick Sizes)
+
+**증권 (주식, 워런트, ETF)**
+
+| 가격 범위 (링깃) | 호가단위(최소가격변동폭) (센) |
+|------------------|-----------------|
+| 1.00 링깃 미만 | 0.5 센 (0.005 링깃) |
+| 1.00 링깃 이상 | 1.0 센 (0.01 링깃) |
+
+*참고: 간소화된 2단계 호가단위(최소가격변동폭) 구조는 2009년 8월 3일 도입되었으며, 이전의 최대 6개 가격대 다단계 구조를 대체하였다. 호가단위(최소가격변동폭) 축소는 유동성 개선 및 매수-매도 스프레드 감소를 목표로 하였다.*
+
+### 2.4 매매단위 (Lot Sizes)
+- **표준 매매단위(거래단위):** 100주 (Main, ACE, LEAP 전 시장)
+- **단주 매매:** 이용 가능; 100주 미만 단주는 단주 시장에서 별도 거래 가능
+- **소수점 매매:** 말레이시아 정부가 2023년 Bursa Malaysia에서 소수점 주식 매매 도입을 공약 [2026년 기준 시행 상태 미확인]
+
+### 2.5 시장조성자(마켓메이커) / 유동성공급자 프로그램
+- Bursa Malaysia는 ETF, 구조화 워런트, 선정된 저유동성 증권에 대한 **지정시장조성자(DMM)** 프로그램 운영 [미확인 -- 세부사항 제한적]
+- 시장조성자(마켓메이커)는 매매시간 중 지속적 양방향 호가 제공 의무
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 경매 메커니즘
+- **시가단일가매매(개장 경매):** 장전 단계(오전 08:30-09:00; 오후 14:00-14:30) 동안 매칭 없이 주문 집적. 자동매매시스템(ATS)이 이론적 시가(TOP) 및 이론적 거래량(TOV)을 산출·배포. 장전 단계 종료 시 단일가매매로 체결 가능 거래량을 최대화하는 시가 결정
+- **종가단일가매매(장마감 경매):** 장전마감 단계(16:45-16:50) 동안 주문 집적. 16:50에 단일가매매로 종가 결정. 이어서 "Trading at Last" 단계(16:50-17:00)에서 고정된 종가에서만 연속 매칭
+
+### 3.2 접속매매 (Continuous Trading)
+- **시장 유형:** 주문주도형
+- **매칭 알고리즘:** 가격-시간 우선원칙
+- **오전 세션:** 09:00 - 12:30 MYT (3.5시간)
+- **오후 세션:** 14:30 - 16:45 MYT (2.25시간)
+- **총 접속매매(연속매매):** 정규 매매일당 약 5.75시간
+- 오전 세션의 전 미체결 주문은 오후 세션으로 자동 이월
+
+### 3.3 가격 발견
+- 시가 및 종가는 거래 가능 수량을 최대화하고 주문 불균형을 최소화하는 단일가매매 알고리즘에 의해 결정
+- 접속매매(연속매매) 중 가격은 최우선 가격에서의 실시간 주문 매칭을 통해 발견
+- 이론적 시가(TOP)는 장전 단계 동안 지속 갱신·배포되어 시장 참가자에게 투명성 제공
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 표준 주문 유형
+| 주문 유형 | 설명 |
+|------------|-------------|
+| **지정가주문** | 지정 가격 이상/이하로 매수/매도 |
+| **시장가주문** | 최우선 가격으로 즉시 체결 [미확인 -- Market-to-Limit으로 대체되었을 수 있음] |
+
+### 4.2 고급 주문 유형
+| 주문 유형 | 설명 |
+|------------|-------------|
+| **Market-to-Limit (MTL)** | 현재 시장가에서 매칭; 미매칭 잔량은 체결 가격의 지정가주문으로 전환 |
+| **Fill and Kill (FAK)** | 원하는 가격으로 매칭되지 않은 거래는 호가장에서 자동 삭제; 부분 체결 허용 |
+| **최소수량** | 체결을 위한 최소 수량 기준 지정 가능 |
+
+### 4.3 주문 유효기간
+| TIF | 설명 |
+|-----|-------------|
+| DAY | 당일에만 유효 |
+| GTC | 취소시까지유효 [미확인] |
+| IOC | 즉시체결-잔량취소 |
+
+*참고: MTL 및 FAK 주문 유형의 도입은 2013년 BTS2 시스템 업그레이드의 일부로, 이전의 시장가 및 지정가주문만 제공하던 제한된 주문 유형을 확장하였다.*
+
+---
+
+## 5. 매매시스템 (기술) (Trading System / Technology)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 시스템 명칭 | Bursa Trade Securities 2 (BTS2) |
+| 벤더 / 자체 개발 | Nasdaq (구 NASDAQ OMX) -- X-Stream INET 플랫폼 |
+| 이전 시스템 | NYSE Technologies(구 Atos Euronext)의 NSC 매매 엔진 |
+| 매매체결엔진 (Matching Engine) | Nasdaq X-Stream INET 매매체결엔진(매칭엔진) |
+| 왕복 지연시간 | 밀리초 미만 [미확인 -- 구체적 수치 미공개; Nasdaq 참조 구현에서 40마이크로초 미만 달성] |
+| 주문 처리 용량 | 전작 BTS1 대비 10배 높은 용량 |
+| 체결 속도 | 전작 BTS1 대비 주문/거래 체결에서 1,000배 빠른 것으로 기술 |
+| 출시 연도 | 2013년 12월 2일 (당초 2014년 1분기 목표보다 조기 출시) |
+
+### 시스템 연혁
+| 기간 | 시스템 | 비고 |
+|--------|--------|-------|
+| 2000년대 이전 | SCORE | KLSE의 초기 전자매매 시스템 [미확인] |
+| ~2000년대 | NSC (Nouveau Systeme de Cotation) | NYSE Technologies (Atos Euronext)에서 라이선스; 다수 글로벌 거래소가 사용하는 동일 플랫폼 |
+| 2013년-현재 | Bursa Trade Securities 2 (BTS2) | Nasdaq X-Stream INET; 전작 대비 1,000배 빠른 속도, 10배 용량 |
+
+### 기술 스택
+- **매매 엔진:** Nasdaq X-Stream INET
+- **접속:** Bursa Data Access(BDA) 게이트웨이를 통한 주문 라우팅 및 시장 정보에 FIX 프로토콜 지원
+- **파생상품 플랫폼:** FCPO를 포함한 Bursa Malaysia Derivatives 상품에 CME Globex 전자매매 플랫폼 사용
+
+---
+
+## 6. 시장 데이터 (Market Data)
+
+### 6.1 데이터 피드 프로토콜
+| 프로토콜 | 설명 | 용도 |
+|----------|-------------|----------|
+| FIX 프로토콜 | BDA 게이트웨이를 통한 표준 메시징 | 주문 라우팅 및 시장 정보 |
+| 독자적 피드 | Bursa Malaysia Information(BMI) 데이터 피드 [미확인] | 실시간 시장 데이터 배포 |
+
+### 6.2 데이터 수준
+- Level 1: 최우선 매수/매도 호가, 최근 체결가, 거래량
+- Level 2: 호가 깊이 (복수 가격 수준)
+- 전체 깊이: 완전한 호가장 [미확인 -- 구독에 따라 이용 가능 여부 상이]
+
+---
+
+## 7. 접속 및 접근 (Connectivity & Access)
+
+### 7.1 회원 / 참가
+- SC Malaysia 인가 주식중개회사인 Participating Organisations(PO)를 통한 매매 접근
+- PO 및 ISV는 BTS2 운영 환경 접속 전 적합성 테스트 완료 필수
+
+### 7.4 API 프로토콜
+| 프로토콜 | 용도 |
+|----------|----------|
+| FIX 4.2+ | 주문 라우팅, 체결, 시장 데이터 |
+| 독자적 | BDA 게이트웨이 특정 프로토콜 [미확인] |
+
+---
+
+## 8. 위험 통제 및 서킷브레이커(매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 가격제한 (Price Limits)
+
+| 유형 | 기준 | 조치 |
+|------|-----------|--------|
+| **정적 가격제한 (상한)** | 전일 종가 대비 +30% (1.00 링깃 이상 증권) | 제한 초과 주문 거부 |
+| **정적 가격제한 (하한)** | 전일 종가 대비 -30% (1.00 링깃 이상 증권) | 제한 초과 주문 거부 |
+| **정적 가격제한 (저가)** | 1.00 링깃 미만 증권에 대해 +/- 30 센 | 백분율이 아닌 절대 센 단위 제한 |
+| **동적 가격제한 (상한)** | 최근 체결가 대비 +8% (1.00 링깃 이상 증권) | 세션 내 급격한 가격 상승 방지 |
+| **동적 가격제한 (하한)** | 최근 체결가 대비 -8% (1.00 링깃 이상 증권) | 세션 내 급격한 가격 하락 방지 |
+| **동적 가격제한 (저가)** | 1.00 링깃 미만 증권에 대해 +/- 8 센 | 절대 동적 센 단위 제한 |
+
+*참고: 이 파라미터는 COVID-19 시장 변동성 기간 중 2020년 7월 시행된 임시 개정 후 2021년 5월 31일 복원되었다.*
+
+### 8.2 서킷브레이커(매매거래중단) (Circuit Breakers)
+
+시장 전체 서킷브레이커(매매거래중단)는 FBM KLCI가 전일 종가 대비 지정된 기준만큼 하락할 때 자동 발동된다:
+
+| 수준 | 발동 기준 | 중단 기간 |
+|-------|---------|---------------|
+| **Level 1** | FBM KLCI 10% 하락 | 09:00-11:15 또는 14:30-15:30 발동 시: **1시간 중단**. 11:15-12:30 또는 15:30-17:00 발동 시: **잔여 세션 중단** |
+| **Level 2** | FBM KLCI 15% 하락 (누적) | **잔여 거래일 매매 중단** |
+| **Level 3** | FBM KLCI 20% 하락 (누적) | **잔여 거래일 매매 중단** (추가 안전장치) |
+
+- 서킷브레이커(매매거래중단)는 Bursa Malaysia Securities Berhad와 Bursa Malaysia Derivatives Berhad의 주식 연계 파생상품 모두 매매 중단
+- 목적: 정보 배포를 위한 냉각 기간 제공, 시장 참가자의 신중한 투자 결정 지원
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관
+- **Securities Commission Malaysia (SC):** 1993년 증권위원회법에 의해 1993년 3월 1일 설립; 말레이시아 자본시장에 대한 규제 및 발전 책임을 가진 자체 재원 법정 기관
+- **Bank Negara Malaysia (BNM):** 중앙은행; 통화 정책 및 은행 부문 감독; 금융 안정성 관련 SC와 조율
+- **Bursa Malaysia** 자체가 최전선 규제기관(자율규제기관/SRO)으로 기능, 시장 감시, 상장 규정 집행, Participating Organisations 규제 수행
+
+### 9.2 주요 규정
+| 법령 / 규정 | 설명 |
+|--------------------|-------------|
+| **자본시장서비스법 2007 (CMSA)** | 증권시장을 관할하는 주요 법률; 주식중개, 펀드관리, 파생상품, 증권 공모 규제 |
+| **증권위원회법 1993** | SC를 설립하고 규제 권한 정의 |
+| **상호회사 전환 (Kuala Lumpur Stock Exchange)법 2003** | KLSE의 회원 소유에서 주식회사 전환 가능 |
+| **Bursa Malaysia Securities 규정** | 매매, 상장, 시장 행위를 관할하는 거래소 규정 |
+| **상장 요건 (Main Market / ACE Market / LEAP Market)** | IPO 및 지속적 의무에 관한 상세 요건 |
+
+### 9.5 샤리아 적합 증권 프레임워크 (Shariah-Compliant Securities Framework)
+
+이것은 Bursa Malaysia 규제 환경의 고유한 특징이다:
+
+- **Shariah Advisory Council (SAC):** SC 산하 설립, Bursa Malaysia 상장 증권의 샤리아 적합 분류를 위한 유일한 권위 기관
+- **스크리닝 방법론:** 2단계 정량적 접근:
+  - **사업 활동 벤치마크:** 비허용 활동(예: 전통적 은행업, 도박, 주류, 담배)이 기준 수준 이하여야 함
+  - **재무비율 벤치마크:** 전통적 부채 및 이자 관련 지표가 총자산 대비 지정 기준 이하여야 함
+- **반기별 갱신:** 샤리아 적합 증권 목록은 매년 5월과 11월에 갱신
+- **규모:** Bursa 상장 증권의 약 80%가 샤리아 적합 (2025년 5월 기준 1,056개 중 약 850개), 말레이시아는 세계 최대 이슬람 자본시장 중 하나
+- **2024년 4월 시행:** 상장 신청 기업이 별도 SAC 신청서를 제출할 필요 없음; SAC가 전 신규 상장을 자동 검토
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 매매 수수료
+| 수수료 유형 | 구조 | 요율 |
+|----------|-----------|------|
+| 위탁매매 수수료 | 협의; 규정에 의한 상한 | 온라인 최대 0.7%; 기관은 협의 [미확인] |
+| 청산 수수료 | 거래대금 대비 | 계약금액의 0.03%, 거래당 최대 1,000 링깃 [미확인] |
+| 인지세 | 정부 부과금 | 계약금액 1,000 링깃당 1 링깃, 거래당 최대 200 링깃 [미확인] |
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 시스템 업그레이드 (최근 5년)
+- BTS2 플랫폼에 대한 용량 및 기능의 점진적 업그레이드 지속
+- Trading Manual, Version 37(2025년 7월)로 갱신, 지속적 파라미터 조정 반영
+
+### 신상품 / 신시장
+- **FCPO MSPO 의무화 (2021년):** Bursa Malaysia Derivatives가 실물 인도 상품 선물에 지속가능성 인증(MSPO)을 의무화한 세계 최초의 거래소
+- **USD 크루드 팜유 선물 (FUPO):** 링깃 표시 FCPO의 현금결제 달러 표시 보완 계약
+- **Bursa Carbon Exchange (BCX):** 자발적 탄소 크레딧 거래소로 출시 [미확인 -- 출시 시점 확인 필요]
+
+### 규제 변화
+- **T+2 결제 (2019년):** 글로벌 기준에 맞추어 T+3에서 단축
+- **샤리아 스크리닝 간소화 (2024년):** 신규 상장에 대한 별도 SAC 신청 요건 제거
+- **서킷브레이커(매매거래중단) 복원 (2021년):** COVID-19 임시 확대 후 원래 파라미터로 복원
+
+### 전략적 이니셔티브
+- **이슬람 자본시장 선도:** 이슬람 금융 및 샤리아 적합 자본시장의 글로벌 허브로 포지셔닝; 샤리아 적합 자산 2.6조 링깃 초과
+- **ASEAN IPO 선도:** 2025년 동남아시아 IPO 활동에서 선도적 위치 유지
+- **팜유 파생상품:** FCPO(1980년 매매 개시, CME Globex 경유 글로벌 접근)를 통한 크루드 팜유 가격 결정의 글로벌 벤치마크 지위
+- **소매 투자자 참여:** 일일 거래대금에서 상당한 비중의 활발한 소매 투자자 기반
+
+### 팜유 선물 -- 파생상품 하이라이트
+
+이 파일은 주식 도메인에 초점을 맞추지만, Bursa Malaysia의 파생상품 부문(Bursa Malaysia Derivatives Berhad)은 글로벌 차원에서 중요하다:
+
+- **FCPO (크루드 팜유 선물):** 1980년 10월 출시; 크루드 팜유 가격 결정의 글로벌 벤치마크. 링깃 표시, 실물 인도. 농장회사, 정유소, 밀러, 수출업자, 글로벌 펀드 매니저, CTA가 활발히 사용
+- **글로벌 접근:** FCPO 및 기타 Bursa 파생상품은 CME Globex 전자매매 플랫폼을 통해 전 세계 참여 가능
+- **MSPO 인증:** 2021년 4월 1일부터 모든 FCPO 실물 인도에 MSPO 인증 필요 -- 거래소 상장 상품 파생상품 최초
+- **계약 규모:** 계약당 25메트릭톤; 메트릭톤당 최소 가격 변동폭 1.00 링깃
+
+---
+
+## 출처 (Sources)
+
+1. Bursa Malaysia Official Website -- https://www.bursamalaysia.com (2026년 4월 접근)
+2. Bursa Malaysia -- Trading Sessions -- https://www.bursamalaysia.com/trade/trading_resources/equities/trading_sessions
+3. Bursa Malaysia -- Board Lot -- https://www.bursamalaysia.com/trade/trading_resources/equities/board_lot
+4. Bursa Malaysia -- Order Types -- https://www.bursamalaysia.com/trade/trading_resources/equities/order_types
+5. Bursa Malaysia -- FAQs on Circuit Breaker -- https://www.bursamalaysia.com/reference/faqs/securities/faqs_on_circuit_breaker
+6. Bursa Malaysia -- BTS2 On-Boarding -- https://www.bursamalaysia.com/trade/our_products_services/bts2_on_boarding/overview
+7. Bursa Malaysia -- POs Trading Manual V37 (14 July 2025)
+8. Bursa Malaysia -- Crude Palm Oil Futures (FCPO)
+9. Securities Commission Malaysia -- Shariah-Compliant Securities -- https://www.sc.com.my/development/icm/shariah-compliant-securities
+10. BERNAMA -- "Bursa Malaysia Records RM1.9 Trillion Overall Market Cap in 1H2025"
+11. BusinessToday -- "Bursa Malaysia Champions RM2.6 Trillion Islamic Market Push" (August 2025)
+12. Nasdaq IR -- "Bursa Malaysia Goes Live With Its New Trading Engine Powered by NASDAQ OMX"
+13. Wikipedia -- Bursa Malaysia -- https://en.wikipedia.org/wiki/Bursa_Malaysia
+14. FTSE Russell -- FTSE Bursa Malaysia KLCI Factsheet
+15. Capital Markets Malaysia -- Public Equities -- https://www.capitalmarketsmalaysia.com/public-equities/

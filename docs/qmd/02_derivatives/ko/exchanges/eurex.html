@@ -1,0 +1,2951 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Eurex (유렉스) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/eurex.html">Eurex (유렉스)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 (Global Derivatives Markets) — 개요 (Overview)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 — 비교 분석 (Global Derivatives Markets – Comparative Analysis)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">거래소</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Derivatives (호주증권거래소 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cboe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cboe Global Markets (Cboe 글로벌 마켓)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX, 중국금융선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group (CME 그룹)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE, 다롄상품거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME, 두바이상업거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/eurex.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Eurex (유렉스)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext Derivatives (유로넥스트 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX (홍콩거래소) 파생상품 시장</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange 선물)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX 파생상품시장 (한국거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX, 몬트리올거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O, 인도국립증권거래소 선물옵션)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (오사카거래소, OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX (싱가포르거래소) 파생상품</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE, 상하이선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX, 대만선물거래소)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">규제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">아시아태평양 파생상품 규제 (Asia-Pacific Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU 파생상품 규제 (EU Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">미국 파생상품 규제 (U.S. Derivatives Regulation)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">매매시스템</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#개요-및-프로필-overview-profile" id="toc-개요-및-프로필-overview-profile" class="nav-link active" data-scroll-target="#개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</a>
+  <ul class="collapse">
+  <li><a href="#주요-연혁-key-historical-milestones" id="toc-주요-연혁-key-historical-milestones" class="nav-link" data-scroll-target="#주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</a></li>
+  </ul></li>
+  <li><a href="#시장-구조-market-structure" id="toc-시장-구조-market-structure" class="nav-link" data-scroll-target="#시장-구조-market-structure">2. 시장 구조 (Market Structure)</a>
+  <ul class="collapse">
+  <li><a href="#시장-부문-market-segments" id="toc-시장-부문-market-segments" class="nav-link" data-scroll-target="#시장-부문-market-segments">2.1 시장 부문 (Market Segments)</a></li>
+  <li><a href="#매매-세션-trading-sessions" id="toc-매매-세션-trading-sessions" class="nav-link" data-scroll-target="#매매-세션-trading-sessions">2.2 매매 세션 (Trading Sessions)</a></li>
+  <li><a href="#호가단위-최소가격변동폭-tick-sizes" id="toc-호가단위-최소가격변동폭-tick-sizes" class="nav-link" data-scroll-target="#호가단위-최소가격변동폭-tick-sizes">2.3 호가단위 (최소가격변동폭) (Tick Sizes)</a></li>
+  <li><a href="#거래단위-lot-sizes" id="toc-거래단위-lot-sizes" class="nav-link" data-scroll-target="#거래단위-lot-sizes">2.4 거래단위 (Lot Sizes)</a></li>
+  <li><a href="#시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs" id="toc-시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 (마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)</a></li>
+  </ul></li>
+  <li><a href="#매매-메커니즘-trading-mechanism" id="toc-매매-메커니즘-trading-mechanism" class="nav-link" data-scroll-target="#매매-메커니즘-trading-mechanism">3. 매매 메커니즘 (Trading Mechanism)</a>
+  <ul class="collapse">
+  <li><a href="#단일가매매-경매-메커니즘-auction-mechanisms" id="toc-단일가매매-경매-메커니즘-auction-mechanisms" class="nav-link" data-scroll-target="#단일가매매-경매-메커니즘-auction-mechanisms">3.1 단일가매매 (경매) 메커니즘 (Auction Mechanisms)</a></li>
+  <li><a href="#접속매매-연속매매-continuous-trading" id="toc-접속매매-연속매매-continuous-trading" class="nav-link" data-scroll-target="#접속매매-연속매매-continuous-trading">3.2 접속매매 (연속매매) (Continuous Trading)</a></li>
+  <li><a href="#가격-발견-price-discovery" id="toc-가격-발견-price-discovery" class="nav-link" data-scroll-target="#가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</a></li>
+  <li><a href="#주문-우선순위-규칙-order-priority-rules" id="toc-주문-우선순위-규칙-order-priority-rules" class="nav-link" data-scroll-target="#주문-우선순위-규칙-order-priority-rules">3.4 주문 우선순위 규칙 (Order Priority Rules)</a></li>
+  </ul></li>
+  <li><a href="#주문-유형-order-types" id="toc-주문-유형-order-types" class="nav-link" data-scroll-target="#주문-유형-order-types">4. 주문 유형 (Order Types)</a>
+  <ul class="collapse">
+  <li><a href="#기본-주문-유형-standard-order-types" id="toc-기본-주문-유형-standard-order-types" class="nav-link" data-scroll-target="#기본-주문-유형-standard-order-types">4.1 기본 주문 유형 (Standard Order Types)</a></li>
+  <li><a href="#고급-주문-유형-advanced-order-types" id="toc-고급-주문-유형-advanced-order-types" class="nav-link" data-scroll-target="#고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</a></li>
+  <li><a href="#주문-유효조건-time-in-force-tif" id="toc-주문-유효조건-time-in-force-tif" class="nav-link" data-scroll-target="#주문-유효조건-time-in-force-tif">4.3 주문 유효조건 (Time-in-Force, TIF)</a></li>
+  <li><a href="#주문-수정-및-취소-order-modification-cancellation" id="toc-주문-수정-및-취소-order-modification-cancellation" class="nav-link" data-scroll-target="#주문-수정-및-취소-order-modification-cancellation">4.4 주문 수정 및 취소 (Order Modification &amp; Cancellation)</a></li>
+  </ul></li>
+  <li><a href="#매매시스템-기술-t7-trading-system-technology-t7" id="toc-매매시스템-기술-t7-trading-system-technology-t7" class="nav-link" data-scroll-target="#매매시스템-기술-t7-trading-system-technology-t7">5. 매매시스템 기술 – T7 (Trading System Technology – T7)</a>
+  <ul class="collapse">
+  <li><a href="#개요-overview" id="toc-개요-overview" class="nav-link" data-scroll-target="#개요-overview">5.1 개요 (Overview)</a></li>
+  <li><a href="#아키텍처-architecture" id="toc-아키텍처-architecture" class="nav-link" data-scroll-target="#아키텍처-architecture">5.2 아키텍처 (Architecture)</a></li>
+  <li><a href="#지연시간-및-처리량-latency-throughput" id="toc-지연시간-및-처리량-latency-throughput" class="nav-link" data-scroll-target="#지연시간-및-처리량-latency-throughput">5.3 지연시간 및 처리량 (Latency &amp; Throughput)</a></li>
+  <li><a href="#기술-스택-technology-stack" id="toc-기술-스택-technology-stack" class="nav-link" data-scroll-target="#기술-스택-technology-stack">5.4 기술 스택 (Technology Stack)</a></li>
+  <li><a href="#릴리스-이력-release-history" id="toc-릴리스-이력-release-history" class="nav-link" data-scroll-target="#릴리스-이력-release-history">5.5 릴리스 이력 (Release History)</a></li>
+  <li><a href="#재해복구-및-업무연속성-drbcp-disaster-recovery-business-continuity" id="toc-재해복구-및-업무연속성-drbcp-disaster-recovery-business-continuity" class="nav-link" data-scroll-target="#재해복구-및-업무연속성-drbcp-disaster-recovery-business-continuity">5.6 재해복구 및 업무연속성 (DR/BCP) (Disaster Recovery &amp; Business Continuity)</a></li>
+  </ul></li>
+  <li><a href="#시장-데이터-market-data" id="toc-시장-데이터-market-data" class="nav-link" data-scroll-target="#시장-데이터-market-data">6. 시장 데이터 (Market Data)</a>
+  <ul class="collapse">
+  <li><a href="#시장-데이터-인터페이스-market-data-interfaces" id="toc-시장-데이터-인터페이스-market-data-interfaces" class="nav-link" data-scroll-target="#시장-데이터-인터페이스-market-data-interfaces">6.1 시장 데이터 인터페이스 (Market Data Interfaces)</a></li>
+  <li><a href="#기술-프로토콜-technical-protocols" id="toc-기술-프로토콜-technical-protocols" class="nav-link" data-scroll-target="#기술-프로토콜-technical-protocols">6.2 기술 프로토콜 (Technical Protocols)</a></li>
+  <li><a href="#데이터-수준-data-levels" id="toc-데이터-수준-data-levels" class="nav-link" data-scroll-target="#데이터-수준-data-levels">6.3 데이터 수준 (Data Levels)</a></li>
+  <li><a href="#과거-데이터-historical-data" id="toc-과거-데이터-historical-data" class="nav-link" data-scroll-target="#과거-데이터-historical-data">6.4 과거 데이터 (Historical Data)</a></li>
+  </ul></li>
+  <li><a href="#접속-및-접근-connectivity-access" id="toc-접속-및-접근-connectivity-access" class="nav-link" data-scroll-target="#접속-및-접근-connectivity-access">7. 접속 및 접근 (Connectivity &amp; Access)</a>
+  <ul class="collapse">
+  <li><a href="#거래소-회원-exchange-membership" id="toc-거래소-회원-exchange-membership" class="nav-link" data-scroll-target="#거래소-회원-exchange-membership">7.1 거래소 회원 (Exchange Membership)</a></li>
+  <li><a href="#접속-방법-connection-methods" id="toc-접속-방법-connection-methods" class="nav-link" data-scroll-target="#접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</a></li>
+  <li><a href="#코로케이션-co-location" id="toc-코로케이션-co-location" class="nav-link" data-scroll-target="#코로케이션-co-location">7.3 코로케이션 (Co-Location)</a></li>
+  <li><a href="#인증-certification" id="toc-인증-certification" class="nav-link" data-scroll-target="#인증-certification">7.4 인증 (Certification)</a></li>
+  </ul></li>
+  <li><a href="#리스크-통제-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" id="toc-리스크-통제-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#리스크-통제-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers">8. 리스크 통제 및 서킷브레이커 (매매거래중단) (Risk Controls &amp; Circuit Breakers)</a>
+  <ul class="collapse">
+  <li><a href="#변동성-중단-서킷브레이커-volatility-interruptions" id="toc-변동성-중단-서킷브레이커-volatility-interruptions" class="nav-link" data-scroll-target="#변동성-중단-서킷브레이커-volatility-interruptions">8.1 변동성 중단 (서킷브레이커) (Volatility Interruptions)</a></li>
+  <li><a href="#사전-매매-리스크-통제-pre-trade-risk-controls" id="toc-사전-매매-리스크-통제-pre-trade-risk-controls" class="nav-link" data-scroll-target="#사전-매매-리스크-통제-pre-trade-risk-controls">8.2 사전 매매 리스크 통제 (Pre-Trade Risk Controls)</a></li>
+  <li><a href="#사후-매매-리스크-통제-post-trade-risk-controls" id="toc-사후-매매-리스크-통제-post-trade-risk-controls" class="nav-link" data-scroll-target="#사후-매매-리스크-통제-post-trade-risk-controls">8.3 사후 매매 리스크 통제 (Post-Trade Risk Controls)</a></li>
+  </ul></li>
+  <li><a href="#규제-체계-regulatory-framework" id="toc-규제-체계-regulatory-framework" class="nav-link" data-scroll-target="#규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</a>
+  <ul class="collapse">
+  <li><a href="#감독-기관-supervisory-authorities" id="toc-감독-기관-supervisory-authorities" class="nav-link" data-scroll-target="#감독-기관-supervisory-authorities">9.1 감독 기관 (Supervisory Authorities)</a></li>
+  <li><a href="#주요-규정-key-regulations" id="toc-주요-규정-key-regulations" class="nav-link" data-scroll-target="#주요-규정-key-regulations">9.2 주요 규정 (Key Regulations)</a></li>
+  <li><a href="#감시-및-보고-surveillance-reporting" id="toc-감시-및-보고-surveillance-reporting" class="nav-link" data-scroll-target="#감시-및-보고-surveillance-reporting">9.3 감시 및 보고 (Surveillance &amp; Reporting)</a></li>
+  <li><a href="#국경간-고려사항-cross-border-considerations" id="toc-국경간-고려사항-cross-border-considerations" class="nav-link" data-scroll-target="#국경간-고려사항-cross-border-considerations">9.4 국경간 고려사항 (Cross-Border Considerations)</a></li>
+  </ul></li>
+  <li><a href="#수수료-및-수익-모델-fees-revenue-model" id="toc-수수료-및-수익-모델-fees-revenue-model" class="nav-link" data-scroll-target="#수수료-및-수익-모델-fees-revenue-model">10. 수수료 및 수익 모델 (Fees &amp; Revenue Model)</a>
+  <ul class="collapse">
+  <li><a href="#매매-수수료-trading-fees" id="toc-매매-수수료-trading-fees" class="nav-link" data-scroll-target="#매매-수수료-trading-fees">10.1 매매 수수료 (Trading Fees)</a></li>
+  <li><a href="#청산-수수료-clearing-fees" id="toc-청산-수수료-clearing-fees" class="nav-link" data-scroll-target="#청산-수수료-clearing-fees">10.2 청산 수수료 (Clearing Fees)</a></li>
+  <li><a href="#접속-및-시장-데이터-수수료-connectivity-market-data-fees" id="toc-접속-및-시장-데이터-수수료-connectivity-market-data-fees" class="nav-link" data-scroll-target="#접속-및-시장-데이터-수수료-connectivity-market-data-fees">10.3 접속 및 시장 데이터 수수료 (Connectivity &amp; Market Data Fees)</a></li>
+  </ul></li>
+  <li><a href="#최근-동향-recent-developments" id="toc-최근-동향-recent-developments" class="nav-link" data-scroll-target="#최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</a>
+  <ul class="collapse">
+  <li><a href="#t7-시스템-업그레이드-t7-system-upgrades" id="toc-t7-시스템-업그레이드-t7-system-upgrades" class="nav-link" data-scroll-target="#t7-시스템-업그레이드-t7-system-upgrades">11.1 T7 시스템 업그레이드 (T7 System Upgrades)</a></li>
+  <li><a href="#신규-상품-및-시장-이니셔티브-new-products-market-initiatives" id="toc-신규-상품-및-시장-이니셔티브-new-products-market-initiatives" class="nav-link" data-scroll-target="#신규-상품-및-시장-이니셔티브-new-products-market-initiatives">11.2 신규 상품 및 시장 이니셔티브 (New Products &amp; Market Initiatives)</a></li>
+  <li><a href="#접근-및-회원-변경-access-membership-changes" id="toc-접근-및-회원-변경-access-membership-changes" class="nav-link" data-scroll-target="#접근-및-회원-변경-access-membership-changes">11.3 접근 및 회원 변경 (Access &amp; Membership Changes)</a></li>
+  <li><a href="#규제-변경-regulatory-changes" id="toc-규제-변경-regulatory-changes" class="nav-link" data-scroll-target="#규제-변경-regulatory-changes">11.4 규제 변경 (Regulatory Changes)</a></li>
+  <li><a href="#전략적-이니셔티브-strategic-initiatives" id="toc-전략적-이니셔티브-strategic-initiatives" class="nav-link" data-scroll-target="#전략적-이니셔티브-strategic-initiatives">11.5 전략적 이니셔티브 (Strategic Initiatives)</a></li>
+  </ul></li>
+  <li><a href="#상품-카탈로그-파생상품-특화-product-catalog-derivatives-specific" id="toc-상품-카탈로그-파생상품-특화-product-catalog-derivatives-specific" class="nav-link" data-scroll-target="#상품-카탈로그-파생상품-특화-product-catalog-derivatives-specific">12. 상품 카탈로그 (파생상품 특화) (Product Catalog — Derivatives-Specific)</a>
+  <ul class="collapse">
+  <li><a href="#금리-파생상품-interest-rate-derivatives" id="toc-금리-파생상품-interest-rate-derivatives" class="nav-link" data-scroll-target="#금리-파생상품-interest-rate-derivatives">12.1 금리 파생상품 (Interest Rate Derivatives)</a></li>
+  <li><a href="#주가지수-파생상품-equity-index-derivatives" id="toc-주가지수-파생상품-equity-index-derivatives" class="nav-link" data-scroll-target="#주가지수-파생상품-equity-index-derivatives">12.2 주가지수 파생상품 (Equity Index Derivatives)</a></li>
+  <li><a href="#주식-파생상품-개별주식-equity-derivatives" id="toc-주식-파생상품-개별주식-equity-derivatives" class="nav-link" data-scroll-target="#주식-파생상품-개별주식-equity-derivatives">12.3 주식 파생상품 (개별주식) (Equity Derivatives)</a></li>
+  <li><a href="#배당-파생상품-dividend-derivatives" id="toc-배당-파생상품-dividend-derivatives" class="nav-link" data-scroll-target="#배당-파생상품-dividend-derivatives">12.4 배당 파생상품 (Dividend Derivatives)</a></li>
+  <li><a href="#변동성-파생상품-volatility-derivatives" id="toc-변동성-파생상품-volatility-derivatives" class="nav-link" data-scroll-target="#변동성-파생상품-volatility-derivatives">12.5 변동성 파생상품 (Volatility Derivatives)</a></li>
+  <li><a href="#fx-파생상품-fx-derivatives" id="toc-fx-파생상품-fx-derivatives" class="nav-link" data-scroll-target="#fx-파생상품-fx-derivatives">12.6 FX 파생상품 (FX Derivatives)</a></li>
+  <li><a href="#etf-및-etc-파생상품-etf-etc-derivatives" id="toc-etf-및-etc-파생상품-etf-etc-derivatives" class="nav-link" data-scroll-target="#etf-및-etc-파생상품-etf-etc-derivatives">12.7 ETF 및 ETC 파생상품 (ETF &amp; ETC Derivatives)</a></li>
+  <li><a href="#암호화폐-파생상품-cryptocurrency-derivatives" id="toc-암호화폐-파생상품-cryptocurrency-derivatives" class="nav-link" data-scroll-target="#암호화폐-파생상품-cryptocurrency-derivatives">12.8 암호화폐 파생상품 (Cryptocurrency Derivatives)</a></li>
+  </ul></li>
+  <li><a href="#주요-계약-사양-거래량-상위-5개-상품-key-contract-specifications" id="toc-주요-계약-사양-거래량-상위-5개-상품-key-contract-specifications" class="nav-link" data-scroll-target="#주요-계약-사양-거래량-상위-5개-상품-key-contract-specifications">13. 주요 계약 사양 (거래량 상위 5개 상품) (Key Contract Specifications)</a>
+  <ul class="collapse">
+  <li><a href="#euro-stoxx-50-지수-선물-fesx" id="toc-euro-stoxx-50-지수-선물-fesx" class="nav-link" data-scroll-target="#euro-stoxx-50-지수-선물-fesx">13.1 EURO STOXX 50 지수 선물 (FESX)</a></li>
+  <li><a href="#euro-stoxx-50-지수-옵션-oesx" id="toc-euro-stoxx-50-지수-옵션-oesx" class="nav-link" data-scroll-target="#euro-stoxx-50-지수-옵션-oesx">13.2 EURO STOXX 50 지수 옵션 (OESX)</a></li>
+  <li><a href="#euro-bund-선물-fgbl" id="toc-euro-bund-선물-fgbl" class="nav-link" data-scroll-target="#euro-bund-선물-fgbl">13.3 Euro-Bund 선물 (FGBL)</a></li>
+  <li><a href="#dax-선물-fdax" id="toc-dax-선물-fdax" class="nav-link" data-scroll-target="#dax-선물-fdax">13.4 DAX 선물 (FDAX)</a></li>
+  <li><a href="#euro-bobl-선물-fgbm" id="toc-euro-bobl-선물-fgbm" class="nav-link" data-scroll-target="#euro-bobl-선물-fgbm">13.5 Euro-Bobl 선물 (FGBM)</a></li>
+  </ul></li>
+  <li><a href="#증거금-체계-eurex-clearing-prisma-margin-framework-eurex-clearing-prisma" id="toc-증거금-체계-eurex-clearing-prisma-margin-framework-eurex-clearing-prisma" class="nav-link" data-scroll-target="#증거금-체계-eurex-clearing-prisma-margin-framework-eurex-clearing-prisma">14. 증거금 체계 – Eurex Clearing Prisma (Margin Framework – Eurex Clearing Prisma)</a>
+  <ul class="collapse">
+  <li><a href="#개요-overview-1" id="toc-개요-overview-1" class="nav-link" data-scroll-target="#개요-overview-1">14.1 개요 (Overview)</a></li>
+  <li><a href="#방법론-methodology" id="toc-방법론-methodology" class="nav-link" data-scroll-target="#방법론-methodology">14.2 방법론 (Methodology)</a></li>
+  <li><a href="#증거금-유형-margin-types" id="toc-증거금-유형-margin-types" class="nav-link" data-scroll-target="#증거금-유형-margin-types">14.3 증거금 유형 (Margin Types)</a></li>
+  <li><a href="#교차-증거금-cross-margining" id="toc-교차-증거금-cross-margining" class="nav-link" data-scroll-target="#교차-증거금-cross-margining">14.4 교차 증거금 (Cross-Margining)</a></li>
+  <li><a href="#마진콜-절차-margin-call-process" id="toc-마진콜-절차-margin-call-process" class="nav-link" data-scroll-target="#마진콜-절차-margin-call-process">14.5 마진콜 절차 (Margin Call Process)</a></li>
+  <li><a href="#cloud-prisma-margin-estimator-cpme" id="toc-cloud-prisma-margin-estimator-cpme" class="nav-link" data-scroll-target="#cloud-prisma-margin-estimator-cpme">14.6 Cloud Prisma Margin Estimator (cPME)</a></li>
+  </ul></li>
+  <li><a href="#포지션한도-건옥제한-position-limits" id="toc-포지션한도-건옥제한-position-limits" class="nav-link" data-scroll-target="#포지션한도-건옥제한-position-limits">15. 포지션한도 (건옥제한) (Position Limits)</a>
+  <ul class="collapse">
+  <li><a href="#체계-framework" id="toc-체계-framework" class="nav-link" data-scroll-target="#체계-framework">15.1 체계 (Framework)</a></li>
+  <li><a href="#상품-파생상품-포지션한도-commodity-derivatives-position-limits" id="toc-상품-파생상품-포지션한도-commodity-derivatives-position-limits" class="nav-link" data-scroll-target="#상품-파생상품-포지션한도-commodity-derivatives-position-limits">15.2 상품 파생상품 포지션한도 (Commodity Derivatives Position Limits)</a></li>
+  <li><a href="#헤지-면제-hedge-exemptions" id="toc-헤지-면제-hedge-exemptions" class="nav-link" data-scroll-target="#헤지-면제-hedge-exemptions">15.3 헤지 면제 (Hedge Exemptions)</a></li>
+  <li><a href="#비상품-포지션한도-non-commodity-position-limits" id="toc-비상품-포지션한도-non-commodity-position-limits" class="nav-link" data-scroll-target="#비상품-포지션한도-non-commodity-position-limits">15.4 비상품 포지션한도 (Non-Commodity Position Limits)</a></li>
+  </ul></li>
+  <li><a href="#블록거래-대량매매-efp-efs-장외-매매-시설-block-trading-efp-efs-off-book-trading-facilities" id="toc-블록거래-대량매매-efp-efs-장외-매매-시설-block-trading-efp-efs-off-book-trading-facilities" class="nav-link" data-scroll-target="#블록거래-대량매매-efp-efs-장외-매매-시설-block-trading-efp-efs-off-book-trading-facilities">16. 블록거래 (대량매매) / EFP / EFS – 장외 매매 시설 (Block Trading / EFP / EFS – Off-Book Trading Facilities)</a>
+  <ul class="collapse">
+  <li><a href="#eurex-t7-entry-services-tes" id="toc-eurex-t7-entry-services-tes" class="nav-link" data-scroll-target="#eurex-t7-entry-services-tes">16.1 Eurex T7 Entry Services (TES)</a></li>
+  <li><a href="#eurex-enlight-선택적-rfq-플랫폼" id="toc-eurex-enlight-선택적-rfq-플랫폼" class="nav-link" data-scroll-target="#eurex-enlight-선택적-rfq-플랫폼">16.2 Eurex EnLight – 선택적 RFQ 플랫폼</a></li>
+  </ul></li>
+  <li><a href="#인도-및-결제-delivery-settlement" id="toc-인도-및-결제-delivery-settlement" class="nav-link" data-scroll-target="#인도-및-결제-delivery-settlement">17. 인도 및 결제 (Delivery &amp; Settlement)</a>
+  <ul class="collapse">
+  <li><a href="#현금결제-cash-settlement" id="toc-현금결제-cash-settlement" class="nav-link" data-scroll-target="#현금결제-cash-settlement">17.1 현금결제 (Cash Settlement)</a></li>
+  <li><a href="#실물인도-physical-delivery" id="toc-실물인도-physical-delivery" class="nav-link" data-scroll-target="#실물인도-physical-delivery">17.2 실물인도 (Physical Delivery)</a></li>
+  <li><a href="#변동증거금-일일-정산-variation-margin-daily-settlement" id="toc-변동증거금-일일-정산-variation-margin-daily-settlement" class="nav-link" data-scroll-target="#변동증거금-일일-정산-variation-margin-daily-settlement">17.3 변동증거금 (일일 정산) (Variation Margin / Daily Settlement)</a></li>
+  </ul></li>
+  <li><a href="#부록-krx-파생상품-시장과의-비교-appendix-comparison-with-krx-derivatives-market" id="toc-부록-krx-파생상품-시장과의-비교-appendix-comparison-with-krx-derivatives-market" class="nav-link" data-scroll-target="#부록-krx-파생상품-시장과의-비교-appendix-comparison-with-krx-derivatives-market">부록: KRX 파생상품 시장과의 비교 (Appendix: Comparison with KRX Derivatives Market)</a></li>
+  <li><a href="#출처-sources" id="toc-출처-sources" class="nav-link" data-scroll-target="#출처-sources">출처 (Sources)</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/eurex.html">Eurex (유렉스)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Eurex (유렉스)</h1>
+<p class="subtitle lead">파생상품 &gt; 거래소</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 4월 17일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>최종 수정일:</strong> 2026-04-06 <strong>조사 등급:</strong> Tier 1 <strong>분야:</strong> 파생상품 (Derivatives)</p>
+</blockquote>
+<hr>
+<section id="개요-및-프로필-overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>정식 명칭</td>
+<td>Eurex Frankfurt AG (Eurex Deutschland 및 Eurex Zurich 운영)</td>
+</tr>
+<tr class="even">
+<td>약칭</td>
+<td>EUREX</td>
+</tr>
+<tr class="odd">
+<td>웹사이트</td>
+<td>https://www.eurex.com</td>
+</tr>
+<tr class="even">
+<td>설립 연도</td>
+<td>1998년 (DTB Deutsche Terminborse와 SOFFEX의 합병)</td>
+</tr>
+<tr class="odd">
+<td>소재지</td>
+<td>독일 / 프랑크푸르트 암 마인 (Mergenthalerallee 61, 65760 Eschborn); 스위스 취리히</td>
+</tr>
+<tr class="even">
+<td>소유 구조</td>
+<td>Deutsche Borse AG (상장, 티커 DB1)의 100% 자회사; Deutsche Borse는 2012년 1월 Eurex Zurich AG에 대한 SIX Group의 잔여 지분 인수</td>
+</tr>
+<tr class="odd">
+<td>모회사 / 그룹</td>
+<td>Deutsche Borse Group – Eurex (파생상품), Xetra (현물 주식), Eurex Clearing (CCP), Clearstream (결제/보관), EEX (에너지), 360T (FX), STOXX/Qontigo (지수/분석)를 포괄하는 수직 통합 그룹</td>
+</tr>
+<tr class="even">
+<td>감독 기관</td>
+<td>Bundesanstalt fur Finanzdienstleistungsaufsicht (BaFin) 주요 감독; Hessische Borsaufsicht (헤센주 거래소감독청); European Securities and Markets Authority (ESMA) EMIR에 따른 CCP 감독; FINMA (스위스) Eurex Zurich 감독</td>
+</tr>
+<tr class="odd">
+<td>연간 거래량 (2025)</td>
+<td>20억 6,590만 계약 (전년 대비 -1%); 금리 파생상품 +8%, 주식 파생상품 -1%, 지수 파생상품 -11%</td>
+</tr>
+<tr class="even">
+<td>연간 거래량 (2024)</td>
+<td>20억 8,050만 계약 (전년 대비 +9%)</td>
+</tr>
+<tr class="odd">
+<td>OTC 청산 미결제 명목</td>
+<td>EUR 33,411억 (2024년 말, 전년 대비 +12%); 일평균 청산 거래량 EUR 2,800억 (2025년, 2024년 대비 +35%)</td>
+</tr>
+<tr class="even">
+<td>Eurex Repo 거래량</td>
+<td>EUR 4,061억 평균 기간조정 거래량 (2025년, 역대 최고, 전년 대비 +20%)</td>
+</tr>
+<tr class="odd">
+<td>상장 상품</td>
+<td>19개국에 걸쳐 1,000개 이상 선물 및 700개 이상 옵션; 900개 이상 개별주식 선물; 500개 이상 주식 옵션</td>
+</tr>
+<tr class="even">
+<td>자산군</td>
+<td>9개 자산군: 금리, 주가지수, 주식 (개별주식), 변동성, 배당, FX, ETF/ETC, 상품, 암호화폐</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: Eurex, “Full year and December 2025 figures at Eurex”, January 2026, https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494] [출처: Eurex, “Full year and December 2024 figures at Eurex”, January 2025, https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2024-figures-at-Eurex-4250318]</p>
+<section id="주요-연혁-key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</h3>
+<ul>
+<li><strong>1990년</strong>: Deutsche Terminborse (DTB), 세계 최초의 완전 전자 파생상품 거래소 중 하나로 프랑크푸르트에서 출범</li>
+<li><strong>1988년</strong>: Swiss Options and Financial Futures Exchange (SOFFEX), 취리히에 설립</li>
+<li><strong>1997년</strong>: DTB, 유럽 및 미국 전역에 전자 스크린 배포; LIFFE의 플로어 매매에서 Bund 선물 유동성 흡수 시작</li>
+<li><strong>1998년 (11월 30일)</strong>: <strong>Eurex 설립</strong> — DTB와 SOFFEX의 합병으로 프랑크푸르트와 취리히를 연결하는 세계 최초의 국경간 전자 파생상품 거래소 탄생</li>
+<li><strong>1999년</strong>: Eurex, 계약 거래량 기준 세계 최대 파생상품 거래소로 CBOT 추월</li>
+<li><strong>2000년</strong>: Eurex US 이니셔티브 개시 (2007년 중단)</li>
+<li><strong>2002년</strong>: Eurex Clearing AG, 중앙청산소(CCP)로 설립</li>
+<li><strong>2003년</strong>: Eurex Bonds (전자 채권 매매 플랫폼) 출시</li>
+<li><strong>2007년</strong>: Eurex US 운영 종료; Eurex Credit Clear 이니셔티브 출시</li>
+<li><strong>2010년</strong>: 금리 스왑에 대한 Eurex OTC Clear 출시</li>
+<li><strong>2012년</strong>: Deutsche Borse, Eurex Zurich AG에 대한 SIX Group의 잔여 주식 인수, 단독 소유자</li>
+<li><strong>2012년</strong>: <strong>Eurex Clearing Prisma</strong> 포트폴리오 기반 증거금 방법론 도입</li>
+<li><strong>2013년</strong>: 유럽위원회, Deutsche Borse와 NYSE Euronext의 합병 제안 거부</li>
+<li><strong>2014년</strong>: 주요 벤치마크 상품에 대한 아시아 거래시간 확대 도입 (01:00 CET)</li>
+<li><strong>2015년</strong>: Eurex Repo GC Pooling 역대 최고 거래량 달성</li>
+<li><strong>2017년</strong>: <strong>T7 매매시스템 Eurex에 출시</strong> (Xetra와 공유 플랫폼, 레거시 시스템 대체)</li>
+<li><strong>2018년</strong>: MiFID II/MiFIR 시행; Eurex EnLight RFQ 플랫폼 출시</li>
+<li><strong>2019년</strong>: ESG 지수 파생상품 (STOXX ESG-X 선물 및 옵션) 출시</li>
+<li><strong>2020년</strong>: COVID-19 팬데믹으로 역대 최고 변동성 및 거래량 기록</li>
+<li><strong>2021년</strong>: Credit Index Futures 및 Three-Month Euro STR Futures 출시</li>
+<li><strong>2022년</strong>: 역대 최고 거래량; 암호화폐 파생상품 이니셔티브 시작</li>
+<li><strong>2023년</strong>: Deutsche Borse의 SimCorp 인수 완료; T7 지속적 업그레이드</li>
+<li><strong>2024년</strong>: Deutsche Borse Group 매출 EUR 56억 초과; D7 디지털 사후거래 플랫폼 출시</li>
+<li><strong>2025년</strong>: T7 Release 14.0 출시 (2025년 11월 10일); Sponsored Access 모델 도입; Systematic QIS Index Futures 출시; ESG 파생상품 누적 명목 EUR 300억 초과; OESX에 대한 새로운 Eurex 유동성공급자 체계</li>
+</ul>
+<p>[출처: Wikipedia, “Eurex”, https://en.wikipedia.org/wiki/Eurex] [출처: MarketsWiki, “Eurex”, https://www.marketswiki.com/wiki/Eurex]</p>
+<hr>
+</section>
+</section>
+<section id="시장-구조-market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="시장-구조-market-structure">2. 시장 구조 (Market Structure)</h2>
+<section id="시장-부문-market-segments" class="level3">
+<h3 class="anchored" data-anchor-id="시장-부문-market-segments">2.1 시장 부문 (Market Segments)</h3>
+<p>Eurex는 파생상품을 다음 주요 부문으로 구성한다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 47%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>부문</th>
+<th>주요 상품</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>금리 파생상품 (Interest Rate Derivatives)</strong></td>
+<td>Euro-Bund, Euro-Bobl, Euro-Schatz, Euro-Buxl 선물 및 옵션; Euribor 선물; Euro STR 선물; Credit Index Futures</td>
+<td>익일물부터 장기까지 유로 수익률 곡선 전체 커버; 국채 선물, 단기금융 선물, OTC IRS 청산 포함</td>
+</tr>
+<tr class="even">
+<td><strong>주가지수 파생상품 (Equity Index Derivatives)</strong></td>
+<td>EURO STOXX 50, DAX, MDAX, STOXX Europe 600, MSCI, FTSE</td>
+<td>벤치마크 지수 선물 및 옵션; 표준, 미니, 마이크로 계약 포함; ESG 및 총수익 변형</td>
+</tr>
+<tr class="odd">
+<td><strong>주식 파생상품 (개별주식) (Equity Derivatives)</strong></td>
+<td>900개 이상 개별주식 선물, 500개 이상 주식 옵션</td>
+<td>STOXX Europe 600 구성종목 및 주요 미국/캐나다 종목 커버</td>
+</tr>
+<tr class="even">
+<td><strong>배당 파생상품 (Dividend Derivatives)</strong></td>
+<td>지수 배당 선물 (EURO STOXX 50, DAX); 80개 이상 개별주식 배당 선물</td>
+<td>순수 배당 노출 상품</td>
+</tr>
+<tr class="odd">
+<td><strong>변동성 파생상품 (Volatility Derivatives)</strong></td>
+<td>VSTOXX 선물 및 옵션; 분산 선물 (EVAR)</td>
+<td>VSTOXX 지수를 통한 EURO STOXX 50 내재변동성 거래</td>
+</tr>
+<tr class="even">
+<td><strong>FX 파생상품 (FX Derivatives)</strong></td>
+<td>Rolling Spot Futures, Classic FX Futures 및 옵션</td>
+<td>현물부터 3년까지의 결제일; 인도형 및 비인도형</td>
+</tr>
+<tr class="odd">
+<td><strong>ETF 및 ETC 파생상품</strong></td>
+<td>ETF 및 ETC에 대한 선물 및 옵션</td>
+<td>상품 ETC (Physical Gold, Crude Oil) 포함</td>
+</tr>
+<tr class="even">
+<td><strong>상품 파생상품 (Commodity Derivatives)</strong></td>
+<td>상품 ETC에 대한 선물 및 옵션</td>
+<td>Physical Gold ETC (AUM EUR 40억 이상)</td>
+</tr>
+<tr class="odd">
+<td><strong>암호화폐 파생상품 (Cryptocurrency Derivatives)</strong></td>
+<td>Bitcoin 및 Ether 선물</td>
+<td>디지털 자산 확장의 일환으로 출시</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: Eurex, “Markets”, https://www.eurex.com/ex-en/markets]</p>
+</section>
+<section id="매매-세션-trading-sessions" class="level3">
+<h3 class="anchored" data-anchor-id="매매-세션-trading-sessions">2.2 매매 세션 (Trading Sessions)</h3>
+<p>Eurex는 중부유럽시간(CET/CEST)으로 운영되며 3개 글로벌 시간대를 커버한다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 41%">
+<col style="width: 29%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>현지 시간 (CET)</th>
+<th>UTC (겨울)</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>아시아 거래시간</td>
+<td>01:00 - 08:00</td>
+<td>00:00 - 07:00</td>
+<td>주요 유동성 선물 (벤치마크 지수 및 채권 선물)에 대한 연장 시간</td>
+</tr>
+<tr class="even">
+<td>사전 매매 (Pre-Trading)</td>
+<td>07:30 - 08:00</td>
+<td>06:30 - 07:00</td>
+<td>시스템 개방; 주문 입력, 수정, 취소 가능; 체결 없음</td>
+</tr>
+<tr class="odd">
+<td>유럽 거래시간 (메인)</td>
+<td>08:00 - 17:30</td>
+<td>07:00 - 16:30</td>
+<td>핵심 유럽 세션; 개장 단일가매매, 접속매매, 종가 단일가매매</td>
+</tr>
+<tr class="even">
+<td>미국 거래시간 (연장)</td>
+<td>17:30 - 22:00</td>
+<td>16:30 - 21:00</td>
+<td>벤치마크 상품에 대한 연장 야간 세션</td>
+</tr>
+<tr class="odd">
+<td>사후 매매 (Post-Trading)</td>
+<td>22:00 - 22:30</td>
+<td>21:00 - 21:30</td>
+<td>거래 보고; 신규 체결 없음</td>
+</tr>
+</tbody>
+</table>
+<p><strong>상품별 변동:</strong> - <strong>주가지수 선물/옵션 (FESX, FDAX 등)</strong>: 08:00 - 22:00 CET (일부 상품은 01:00부터 아시아 시간) - <strong>채권 선물 (FGBL, FGBM, FGBS)</strong>: 08:00 - 22:00 CET (01:00부터 아시아 시간) - <strong>주식 옵션 (개별주식)</strong>: 09:00 - 17:30 CET - <strong>FX 파생상품</strong>: 08:00 - 18:00 CET [unverified]</p>
+<p>[출처: Eurex, “Trading hours”, https://www.eurex.com/ex-en/trade/trading-hours] [출처: Eurex, “Trade Eurex Derivatives Across All Time Zones”, https://www.eurex.com/ex-en/trade/trading-hours/thx]</p>
+</section>
+<section id="호가단위-최소가격변동폭-tick-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="호가단위-최소가격변동폭-tick-sizes">2.3 호가단위 (최소가격변동폭) (Tick Sizes)</h3>
+<p>호가단위는 상품별로 상이하다. 대표적 예시:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>호가단위 (Tick Size)</th>
+<th>틱 가치 (EUR)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EURO STOXX 50 선물 (FESX)</td>
+<td>1 지수포인트</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>DAX 선물 (FDAX)</td>
+<td>0.5 지수포인트</td>
+<td>12.50</td>
+</tr>
+<tr class="odd">
+<td>Mini-DAX 선물 (FDXM)</td>
+<td>1 지수포인트</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Micro-DAX 선물 (FDXS)</td>
+<td>1 지수포인트</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Euro-Bund 선물 (FGBL)</td>
+<td>0.01 (액면의 %)</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Euro-Bobl 선물 (FGBM)</td>
+<td>0.01 (액면의 %)</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Euro-Schatz 선물 (FGBS)</td>
+<td>0.005 (액면의 %)</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>EURO STOXX 50 옵션 (OESX)</td>
+<td>0.1 지수포인트</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>DAX 옵션 (ODAX)</td>
+<td>0.1 지수포인트</td>
+<td>0.50</td>
+</tr>
+</tbody>
+</table>
+<p>주: 지수 파생상품의 호가단위가 2025년 3월 3일부로 업데이트되었으며, 일부 상품의 최소가격단위가 변경되었다.</p>
+<p>[출처: Eurex, 각종 상품 사양 페이지, https://www.eurex.com/ex-en/markets]</p>
+</section>
+<section id="거래단위-lot-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="거래단위-lot-sizes">2.4 거래단위 (Lot Sizes)</h3>
+<ul>
+<li><strong>표준 거래단위</strong>: 모든 파생상품에 대해 1계약</li>
+<li><strong>블록거래 (대량매매) 최소 규모</strong>: 상품별 상이; 예: EURO STOXX 50 옵션 EnLight 최소 블록거래 규모 1,000계약 [unverified]</li>
+<li><strong>최소 블록거래 규모 (MBTS)</strong>: T7 Entry Services 및 Eurex EnLight용은 TES 매개변수 파일에 게시</li>
+</ul>
+</section>
+<section id="시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 (마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)</h3>
+<p>Eurex는 다수의 시장조성 체계를 운영한다:</p>
+<ul>
+<li><strong>상설 시장조성자 (Permanent Market Makers)</strong>: 지속적인 양방향 호가 제공; 수수료 환급 및 인센티브 적격</li>
+<li><strong>일반 시장조성자 (Regular Market Makers)</strong>: 상설 시장조성자 대비 축소된 호가 의무 이행</li>
+<li><strong>지정 시장조성자 (Designated Market Makers)</strong>: 상품별 특화 제도; 예: Euribor 선물 지정 시장조성 제도, 개별주식 배당 선물 지정 시장조성 제도</li>
+</ul>
+<p><strong>OESX (EURO STOXX 50 옵션) 유동성공급자 체계 (2025년 7월 시행):</strong></p>
+<p>3단계 인센티브 구조: 1. <strong>기본 구성요소 (Basis Building Block)</strong>: 처음 2년 동안 넓은 델타 범위의 모든 만기에 대해 90% 커버리지로 호가 의무; 하루 종일 일관된 호가 보장 2. <strong>고급 구성요소 (Advanced Building Block, 슬라이딩 스케일 환급)</strong>: 시간가중 스프레드 및 수량에 기반한 보상; LP가 원하는 환급 수준 선택 3. <strong>수동 거래량 인센티브 (Passive Volume Incentive)</strong>: 수동 체결에 대한 보상; 적격 LP 중 제한된 수에게 인센티브 풀 개방</p>
+<p>호가 성과 및 인센티브 지급은 모든 Eurex 상품에 대해 자동으로 산출된다.</p>
+<p>[출처: Eurex, “Market-Making and Liquidity provisioning”, https://www.eurex.com/ex-en/trade/market-making-and-liquidity-provisioning] [출처: Eurex, “Eurex introduces new liquidity framework”, 2025, https://www.eurex.com/ex-en/find/news-center/news/oesx-new-lp-scheme-4321212]</p>
+<hr>
+</section>
+</section>
+<section id="매매-메커니즘-trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="매매-메커니즘-trading-mechanism">3. 매매 메커니즘 (Trading Mechanism)</h2>
+<section id="단일가매매-경매-메커니즘-auction-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="단일가매매-경매-메커니즘-auction-mechanisms">3.1 단일가매매 (경매) 메커니즘 (Auction Mechanisms)</h3>
+<p>Eurex는 T7 매매시스템 내에서 다수의 단일가매매 유형을 사용한다:</p>
+<ul>
+<li><strong>개장 단일가매매 (Opening Auction)</strong>: 주 매매 단계를 시작; 호가 수집 단계에서 주문 수집 및 예상가 표시. 체결 가능 거래량을 최대화하는 가격에서 개봉(언크로싱) 체결 진행. Opening-Auction-Only 주문은 종목이 Opening Auction 상태에 진입하면 활성화되어 새로운 우선순위 타임스탬프 수령</li>
+<li><strong>종가 단일가매매 (Closing Auction)</strong>: 주 매매 단계 종료 시 유동성 집중; 공식 종가 결정. 개장 단일가매매와 유사한 호가 수집 및 개봉 메커니즘</li>
+<li><strong>장중 단일가매매 (Intraday Auction)</strong>: 특정 종목에 대해 정오 무렵 예정; 접속매매를 일시 중단하여 추가 가격 발견 기회 제공</li>
+<li><strong>변동성 단일가매매 (Volatility Auction)</strong>: 유입 주문의 잠재 체결가가 설정된 가격편차 한도 (변동성 중단)를 위반할 때 자동 발동. 종목이 접속매매에서 단일가매매 호가 수집 단계로 이동하여 질서 있는 가격 발견 진행. 잠재 체결가는 설정된 회고 시간 내 모든 체결 거래의 참조 가격과 대비 확인</li>
+<li><strong>종가 매매 (Trade-at-Close)</strong>: 종가 단일가매매 후, 고정된 종가 단일가매매 가격에서 주문의 접속 체결 가능 (추가 가격 발견 없음)</li>
+</ul>
+<p>[출처: Eurex, “Trading phases”, https://www.eurex.com/ex-en/trade/trading-hours/trading-phases]</p>
+</section>
+<section id="접속매매-연속매매-continuous-trading" class="level3">
+<h3 class="anchored" data-anchor-id="접속매매-연속매매-continuous-trading">3.2 접속매매 (연속매매) (Continuous Trading)</h3>
+<ul>
+<li><strong>중앙지정가호가장 (CLOB)</strong>: 완전 전자화된 주문주도형 시장</li>
+<li><strong>체결</strong>: 매매 세션 동안 매수 및 매도 주문의 지속적 체결</li>
+<li><strong>합성 체결 (Synthetic matching)</strong>: 캘린더 스프레드가 직접 계약으로부터 합성적으로 체결; T7 Release 14.0에서 STIR 선물 (Euribor, Euro STR)의 Butterfly 및 Condor 전략으로 확장</li>
+<li><strong>시장조성자</strong>: 지속적 호가를 통해 호가장 유동성 보완; 호가주도형 시장은 아님</li>
+</ul>
+</section>
+<section id="가격-발견-price-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</h3>
+<ul>
+<li>주요 가격 발견은 개장 단일가매매 및 접속 호가장을 통해 이루어짐</li>
+<li><strong>단일가매매 개봉 알고리즘</strong>: (1) 최대 체결 가능 거래량, (2) 최소 잉여, (3) 참조 가격을 동점 결정 기준으로</li>
+<li><strong>종가</strong>: 종가 단일가매매를 통해 결정; 파생상품 정산 계산, 지수 산출, 증거금 계산에 핵심</li>
+<li><strong>예상가</strong>: 단일가매매 호가 수집 단계에서 가격 발견을 안내하기 위해 표시</li>
+</ul>
+</section>
+<section id="주문-우선순위-규칙-order-priority-rules" class="level3">
+<h3 class="anchored" data-anchor-id="주문-우선순위-규칙-order-priority-rules">3.4 주문 우선순위 규칙 (Order Priority Rules)</h3>
+<ul>
+<li><strong>가격-시간 우선</strong>: 대부분의 Eurex 상품에 대한 표준 우선순위 규칙 – 최우선 가격 먼저, 이후 동일 가격에서 가장 빠른 시간</li>
+<li><strong>시장가주문</strong>이 지정가주문보다 우선</li>
+<li><strong>표시 우선 비표시</strong>: 동일 가격에서 표시된 주문 수량이 비표시 (아이스버그 예비) 수량보다 우선</li>
+<li><strong>비례 배분 (Pro-rata)</strong>: 특정 상품 (예: 특정 금리 옵션 및 Euribor 선물)에 대해 사용되며, 동일 가격의 주문이 시간 우선이 아닌 수량에 비례하여 체결 [unverified – 유럽 채권 파생상품에서 비례 배분은 일반적이나 정확한 Eurex 상품 목록 확인 필요]</li>
+</ul>
+<p>주: T7 시스템은 상품별 설정 가능한 매칭 알고리즘을 지원하여, 거래소가 적절하게 가격-시간 또는 비례 배분 매칭을 적용할 수 있다.</p>
+<hr>
+</section>
+</section>
+<section id="주문-유형-order-types" class="level2">
+<h2 class="anchored" data-anchor-id="주문-유형-order-types">4. 주문 유형 (Order Types)</h2>
+<section id="기본-주문-유형-standard-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="기본-주문-유형-standard-order-types">4.1 기본 주문 유형 (Standard Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 64%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>시장가주문 (Market Order)</strong></td>
+<td>최우선 가격으로 즉시 체결; 가격 제한 미지정. IOC 주문 유효조건과 함께 지원 불가</td>
+</tr>
+<tr class="even">
+<td><strong>지정가주문 (Limit Order)</strong></td>
+<td>최대 매수가 또는 최소 매도가 지정; 미체결 잔량은 호가장에 잔류</td>
+</tr>
+<tr class="odd">
+<td><strong>역지정가 시장가주문 (Stop Market Order)</strong></td>
+<td>발동가에 도달할 때까지 역지정가 서버에 보관, 이후 시장가주문으로 발출</td>
+</tr>
+<tr class="even">
+<td><strong>역지정가 지정가주문 (Stop Limit Order)</strong></td>
+<td>발동가에 도달할 때까지 역지정가 서버에 보관, 이후 지정가주문으로 발출. 시간 우선순위는 역지정가 발동 후 Eurex가 지정가주문을 수신한 시점부터 산정</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="고급-주문-유형-advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 64%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>OCO (One-Cancels-Other)</strong></td>
+<td>연결된 두 주문으로 하나 체결 시 다른 하나 자동 취소</td>
+</tr>
+<tr class="even">
+<td><strong>아이스버그 주문 (Iceberg Order)</strong></td>
+<td>총 주문량의 일부만 호가장에 표시; 전체 수량의 최소 5%가 표시되어야 함</td>
+</tr>
+<tr class="odd">
+<td><strong>Book or Cancel (BOC)</strong></td>
+<td>입력 시 즉시 체결될 경우 거부되는 주문; 수동 (메이커) 체결만 보장</td>
+</tr>
+<tr class="even">
+<td><strong>개장 단일가매매 전용 (Opening-Auction-Only)</strong></td>
+<td>개장 단일가매매 중에만 활성; 개장 단일가매매에서 미체결 시 자동 취소</td>
+</tr>
+<tr class="odd">
+<td><strong>종가 단일가매매 전용 (Closing-Auction-Only)</strong></td>
+<td>종가 단일가매매 중에만 활성</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-유효조건-time-in-force-tif" class="level3">
+<h3 class="anchored" data-anchor-id="주문-유효조건-time-in-force-tif">4.3 주문 유효조건 (Time-in-Force, TIF)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TIF</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Day</strong></td>
+<td>현재 거래일에만 유효; 세션 종료 시 취소</td>
+</tr>
+<tr class="even">
+<td><strong>GTC (Good-Till-Cancelled)</strong></td>
+<td>명시적으로 취소되거나 만료될 때까지 유지 (최대 기간 적용)</td>
+</tr>
+<tr class="odd">
+<td><strong>GTDate (Good-Till-Date)</strong></td>
+<td>지정된 날짜까지 유지</td>
+</tr>
+<tr class="even">
+<td><strong>IOC (Immediate-Or-Cancel)</strong></td>
+<td>가능한 만큼 즉시 체결; 미체결 잔량 취소. 시장가주문이나 역지정가주문에는 이용 불가</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-수정-및-취소-order-modification-cancellation" class="level3">
+<h3 class="anchored" data-anchor-id="주문-수정-및-취소-order-modification-cancellation">4.4 주문 수정 및 취소 (Order Modification &amp; Cancellation)</h3>
+<ul>
+<li>적절한 매매 단계에서 언제든지 주문의 가격, 수량, TIF 수정 또는 취소 가능</li>
+<li>가격 변경 또는 수량 증가를 수반하는 수정은 새로운 시간 우선순위 부여</li>
+<li>수량 감소를 수반하는 수정은 시간 우선순위 유지</li>
+<li>참여자가 하나의 상품 또는 모든 상품에 대한 주문을 취소할 수 있는 일괄 취소 기능 이용 가능</li>
+</ul>
+<p>[출처: Eurex, “Order types”, https://www.eurex.com/ex-en/trade/order-book-trading/order-types] [출처: Trading Technologies, “Eurex Supported Order Types”, https://library.tradingtechnologies.com/user-setup/eur-eurex-supported-order-types.html]</p>
+<hr>
+</section>
+</section>
+<section id="매매시스템-기술-t7-trading-system-technology-t7" class="level2">
+<h2 class="anchored" data-anchor-id="매매시스템-기술-t7-trading-system-technology-t7">5. 매매시스템 기술 – T7 (Trading System Technology – T7)</h2>
+<section id="개요-overview" class="level3">
+<h3 class="anchored" data-anchor-id="개요-overview">5.1 개요 (Overview)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시스템 명칭</td>
+<td>T7 (Xetra, EEX 및 기타 Deutsche Borse Group 시장에서도 사용)</td>
+</tr>
+<tr class="even">
+<td>현재 버전</td>
+<td>T7 Release 14.0 (2025년 11월 10일 Eurex 출시); Release 14.1은 2026년 5월 18일 예정</td>
+</tr>
+<tr class="odd">
+<td>아키텍처</td>
+<td>분산 게이트웨이 접근이 가능한 중앙 매매체결엔진; 독립적 확장이 가능한 파티션 기반 아키텍처</td>
+</tr>
+<tr class="even">
+<td>개발사</td>
+<td>Deutsche Borse AG (자체 개발)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="아키텍처-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="아키텍처-architecture">5.2 아키텍처 (Architecture)</h3>
+<ul>
+<li><strong>파티션 기반 설계</strong>: 상품이 복수의 파티션에 분산되며, 각 파티션은 자체 매매체결엔진을 보유하여 수평적 확장 및 장애 격리 가능</li>
+<li><strong>게이트웨이 유형</strong>:
+<ul>
+<li><strong>파티션별 (PS) 게이트웨이</strong>: 특정 파티션에만 라우팅; 10 Gbit/s 크로스커넥트를 통한 주문 및 호가 관리의 최저 지연 경로</li>
+<li><strong>저빈도 (LF) 게이트웨이</strong>: 단일 세션으로 모든 파티션에 접근 허용; PS 대비 ~12마이크로초 추가 기본 지연</li>
+</ul></li>
+<li><strong>접근 계층</strong>: 10 Gbit/s 스위치가 “컷스루” 모드로 운영; 이더넷 프레임의 첫 바이트가 경쟁 네트워크 경로에서 우선권 확보</li>
+<li><strong>매매체결엔진</strong>: 중앙 결정론적 매칭; 서브마이크로초 내부 지연으로 주문 및 호가 처리</li>
+</ul>
+</section>
+<section id="지연시간-및-처리량-latency-throughput" class="level3">
+<h3 class="anchored" data-anchor-id="지연시간-및-처리량-latency-throughput">5.3 지연시간 및 처리량 (Latency &amp; Throughput)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 54%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>지표</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>최소 인프라 지연 (시장 데이터에서 요청까지)</td>
+<td>~2,787 나노초 (~2.8 마이크로초)</td>
+</tr>
+<tr class="even">
+<td>PS 게이트웨이에서 매매체결엔진까지</td>
+<td>교차측 요청의 경우 ~1 마이크로초 (2025년 1월 이전 ~45 마이크로초에서 개선)</td>
+</tr>
+<tr class="odd">
+<td>LF 게이트웨이 추가 지연</td>
+<td>PS 경로 대비 ~12 마이크로초 높음</td>
+</tr>
+<tr class="even">
+<td>t_3n에서의 일반 처리량</td>
+<td>~8,000 kHz</td>
+</tr>
+<tr class="odd">
+<td>t_5에서의 일반 처리량</td>
+<td>~500 kHz</td>
+</tr>
+<tr class="even">
+<td>t_7에서의 일반 처리량</td>
+<td>~300 kHz</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: Eurex, “Insights into Trading System Dynamics”, March 2025, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf]</p>
+</section>
+<section id="기술-스택-technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="기술-스택-technology-stack">5.4 기술 스택 (Technology Stack)</h3>
+<ul>
+<li><strong>프로토콜</strong>: FIX 5.0 SP2 시맨틱스, 독자 세션 레이어 및 플랫 바이너리 인코딩 (ETI)</li>
+<li><strong>시장 데이터</strong>: FIX/FAST 인코딩 멀티캐스트 데이터 스트림 (EMDI, MDI, EOBI)</li>
+<li><strong>네트워크</strong>: 10 Gbit/s 이더넷 인프라; 모든 인터페이스 (FIX LF 및 ETI)에 대한 필수 TLS 암호화</li>
+<li><strong>GUI</strong>: 레거시 데스크탑 애플리케이션을 대체하는 차세대 브라우저 기반 GUI 2025년 도입</li>
+</ul>
+</section>
+<section id="릴리스-이력-release-history" class="level3">
+<h3 class="anchored" data-anchor-id="릴리스-이력-release-history">5.5 릴리스 이력 (Release History)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 24%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>릴리스</th>
+<th>날짜</th>
+<th>주요 기능</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T7 최초 출시 (Eurex)</td>
+<td>2017</td>
+<td>레거시 Eurex 매매시스템 대체; Xetra와 공유 플랫폼</td>
+</tr>
+<tr class="even">
+<td>T7 Release 8.0</td>
+<td>2018</td>
+<td>Enhanced Trading Interface 개선</td>
+</tr>
+<tr class="odd">
+<td>T7 Release 10.1</td>
+<td>2021</td>
+<td>거래 규모 제한 수정</td>
+</tr>
+<tr class="even">
+<td>T7 Release 12.1</td>
+<td>2023</td>
+<td>Enhanced Order Book Interface 개선</td>
+</tr>
+<tr class="odd">
+<td>T7 Release 13.0</td>
+<td>2024</td>
+<td>기능 강화; 시장 데이터 서비스 업데이트</td>
+</tr>
+<tr class="even">
+<td>T7 Release 13.1</td>
+<td>2025 (3월)</td>
+<td>기능 참조 업데이트; 문서 개선</td>
+</tr>
+<tr class="odd">
+<td><strong>T7 Release 14.0</strong></td>
+<td><strong>2025 (11월 10일)</strong></td>
+<td><strong>Sponsored Access (SpA); STIR의 Butterfly/Condor 전략 합성 매칭; 브라우저 기반 GUI</strong></td>
+</tr>
+<tr class="even">
+<td>T7 Release 14.1</td>
+<td>2026 (5월 18일, 예정)</td>
+<td>SpA 리스크 모니터링 강화; STIR 시장 합성 Packs &amp; Bundles; 추가 GUI 개선</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="재해복구-및-업무연속성-drbcp-disaster-recovery-business-continuity" class="level3">
+<h3 class="anchored" data-anchor-id="재해복구-및-업무연속성-drbcp-disaster-recovery-business-continuity">5.6 재해복구 및 업무연속성 (DR/BCP) (Disaster Recovery &amp; Business Continuity)</h3>
+<ul>
+<li><strong>주 데이터센터</strong>: Equinix FR2, 독일 프랑크푸르트 (T7 백엔드 및 코로케이션 시설 수용)</li>
+<li><strong>DR 인프라</strong>: T7 시뮬레이션 환경이 주 사이트 재해 발생 시 DR 프로덕션 인프라로 기능</li>
+<li><strong>DR 시나리오</strong>: Equinix FR2의 T7 백엔드를 접근 불가로 전환하되 코로케이션 시설은 접근 가능하게 유지하여, 코로케이션 고객이 DR 인프라에 여전히 연결 가능</li>
+<li><strong>정기 테스트</strong>: Eurex는 반기별 T7 재해복구 테스트 실시 (가장 최근 2024년 10월, 매년 3월 및 10월). 모든 매매참가자에게 참여 요청</li>
+<li><strong>DR 테스트 조율</strong>: Futures Industry Association (FIA)이 주관하는 업계 전체 테스트와 조율되는 경우가 많음</li>
+</ul>
+<p>[출처: Eurex, “T7 Disaster Recovery Test”, https://www.eurex.com/ex-en/support/initiatives/project-readiness/T7-Disaster-Recovery-Test-2442570]</p>
+<hr>
+</section>
+</section>
+<section id="시장-데이터-market-data" class="level2">
+<h2 class="anchored" data-anchor-id="시장-데이터-market-data">6. 시장 데이터 (Market Data)</h2>
+<section id="시장-데이터-인터페이스-market-data-interfaces" class="level3">
+<h3 class="anchored" data-anchor-id="시장-데이터-인터페이스-market-data-interfaces">6.1 시장 데이터 인터페이스 (Market Data Interfaces)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>인터페이스</th>
+<th>설명</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>EMDI (Enhanced Market Data Interface)</strong></td>
+<td>설정된 깊이까지의 모든 호가장 변경 및 모든 장내 거래를 배포하는 비순화 피드</td>
+<td>알고리즘 매매를 위한 고속 실시간 시장 데이터; 멀티캐스트 전달</td>
+</tr>
+<tr class="even">
+<td><strong>EOBI (Enhanced Order Book Interface)</strong></td>
+<td>깊이 제한 없는 전체 호가장; 각 주문/호가의 방향, 가격, 우선순위 타임스탬프, 표시 수량과 거래 가격 및 거래량 제공</td>
+<td>코로케이션 참여자를 위한 초저지연 호가장 데이터; 완전한 L3 주문별 데이터 제공</td>
+</tr>
+<tr class="odd">
+<td><strong>MDI (Market Data Interface)</strong></td>
+<td>집계된 시장 데이터; 통계적 고/저가, 거래량, 최근 거래 정보; 정기적 간격의 호가장 업데이트 (EMDI보다 현저히 낮은 빈도)</td>
+<td>틱별 데이터가 불필요한 참여자를 위한 비용 효율적 옵션</td>
+</tr>
+<tr class="even">
+<td><strong>RDI (Reference Data Interface)</strong></td>
+<td>모든 종목의 참조 데이터 (상품 정의, 계약 사양, 매매 매개변수)</td>
+<td>사전 매매 설정 및 종목 유니버스 관리</td>
+</tr>
+<tr class="odd">
+<td><strong>EMDS (Extended Market Data Service)</strong></td>
+<td>거래 가격, 정산 가격, 미결제약정 데이터</td>
+<td>일말 및 과거 데이터 배포</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="기술-프로토콜-technical-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="기술-프로토콜-technical-protocols">6.2 기술 프로토콜 (Technical Protocols)</h3>
+<ul>
+<li><strong>인코딩</strong>: EMDI, MDI, RDI에 대한 FIX/FAST (FAST 1.1 및 1.2); EOBI에 대한 독자 바이너리 인코딩</li>
+<li><strong>전달</strong>: 스냅샷/증분 업데이트 모델을 사용한 IP 멀티캐스트</li>
+<li><strong>XML FAST 템플릿 파일 및 FIXML 스키마 파일</strong>이 메시지 형식 정의</li>
+</ul>
+</section>
+<section id="데이터-수준-data-levels" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-수준-data-levels">6.3 데이터 수준 (Data Levels)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>수준</th>
+<th>내용</th>
+<th>인터페이스</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Level 1 (호가 상단)</td>
+<td>최우선 매수/매도호가, 최근 거래 가격/거래량</td>
+<td>MDI</td>
+</tr>
+<tr class="even">
+<td>Level 2 (호가 깊이)</td>
+<td>집계 수량이 포함된 복수 가격 수준</td>
+<td>EMDI (설정 가능 깊이)</td>
+</tr>
+<tr class="odd">
+<td>Level 3 (전체 호가장)</td>
+<td>가격, 수량, 우선순위 타임스탬프가 포함된 모든 개별 주문</td>
+<td>EOBI</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="과거-데이터-historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="과거-데이터-historical-data">6.4 과거 데이터 (Historical Data)</h3>
+<ul>
+<li><strong>시장 통계</strong>: Eurex 웹사이트에서 월간 통계 발행물 이용 가능</li>
+<li><strong>시장 통계 온라인</strong>: 과거 거래량, 미결제약정, 가격 데이터에 대한 대화형 조회 도구</li>
+<li><strong>정산 가격</strong>: EMDS를 통해 매일 게시</li>
+</ul>
+<p>[출처: Eurex, “Market and Reference Data Interfaces”, https://www.eurex.com/ex-en/support/initiatives/archive/release8/Market-and-Reference-Data-Interfaces-1546120] [출처: OnixS, “Eurex T7 Market and Reference Data”, https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html]</p>
+<hr>
+</section>
+</section>
+<section id="접속-및-접근-connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="접속-및-접근-connectivity-access">7. 접속 및 접근 (Connectivity &amp; Access)</h2>
+<section id="거래소-회원-exchange-membership" class="level3">
+<h3 class="anchored" data-anchor-id="거래소-회원-exchange-membership">7.1 거래소 회원 (Exchange Membership)</h3>
+<p><strong>매매 회원 유형:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>매매참가자 (Trading Participant)</strong></td>
+<td>정식 거래소 회원; 자기 계좌 및 고객을 위한 매매 가능</td>
+</tr>
+<tr class="even">
+<td><strong>Sponsored Access (SpA) 사용자</strong></td>
+<td>SpA 서비스 제공자를 통해 T7에 접근하는 비회원 주체 (T7 Release 14.0, 2025년 11월 도입); 정식 회원 없이 저지연 접근</td>
+</tr>
+</tbody>
+</table>
+<p><strong>청산 회원 유형:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>유형</th>
+<th>설명</th>
+<th>자본/수수료</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>일반청산회원 (GCM)</strong></td>
+<td>자기 거래, 고객 거래, 비청산 매매참가자의 거래 청산</td>
+<td>가입비: EUR 50,000; 연회비: EUR 25,000; 최소 자본 요건 충족 및 청산기금 출연 필요</td>
+</tr>
+<tr class="even">
+<td><strong>직접청산회원 (DCM)</strong></td>
+<td>자기 거래, 고객 거래, 100% 관계사 거래소 참여자의 거래만 청산</td>
+<td>GCM과 동일 수수료 구조</td>
+</tr>
+<tr class="odd">
+<td><strong>FCM 청산회원</strong></td>
+<td>스왑 거래 청산; FCM 고객 대리인 역할</td>
+<td>OTC 청산에 특화</td>
+</tr>
+<tr class="even">
+<td><strong>ISA 직접청산회원</strong></td>
+<td>청산 에이전트를 통해 OTC 또는 Repo 시장의 자기 업무 청산</td>
+<td>개별분리계좌를 위한 전문 회원</td>
+</tr>
+</tbody>
+</table>
+<p><strong>가입 요건:</strong> - EU 또는 스위스 내 금융기관 - 수탁 업무, 신용 운영, 증거금 (유가증권 및 현금) 수령 인가 - Eurex Clearing AG 최소 자본 요건 준수 필수 - 청산기금 출연 필수</p>
+<p>[출처: Eurex, “Membership Types”, https://www.eurex.com/ec-en/join/admission-requirements/Membership-Types-24040] [출처: Eurex, “Exchange membership”, https://www.eurex.com/ex-en/trade/exchange-membership]</p>
+</section>
+<section id="접속-방법-connection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>방법</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ETI (Enhanced Trading Interface)</strong></td>
+<td>고성능 네이티브 바이너리 인터페이스; FIX 5.0 SP2 시맨틱스, 독자 세션 레이어 및 플랫 바이너리 인코딩. HF (고빈도) 및 LF (저빈도) 세션 지원</td>
+</tr>
+<tr class="even">
+<td><strong>FIX LF Interface</strong></td>
+<td>저빈도 게이트웨이를 통한 표준 FIX 프로토콜 인터페이스; 최저 지연이 불필요한 참여자에 적합</td>
+</tr>
+<tr class="odd">
+<td><strong>T7 Trader GUI / Admin GUI</strong></td>
+<td>수동 매매 및 관리를 위한 그래픽 사용자 인터페이스; 2025년 브라우저 기반 신규 GUI 도입</td>
+</tr>
+<tr class="even">
+<td><strong>Eurex EnLight API</strong></td>
+<td>RFQ 플랫폼에 대한 프로그래밍 방식 접근</td>
+</tr>
+</tbody>
+</table>
+<p><strong>게이트웨이 유형:</strong> - <strong>PS (파티션별) 게이트웨이</strong>: 가장 빠른 경로; 10 Gbit/s 크로스커넥트; 단일 파티션으로 라우팅 - <strong>LF (저빈도) 게이트웨이</strong>: 단일 세션으로 모든 파티션에 접근; 광범위한 시장 접근에 적합</p>
+<p><strong>필수 암호화:</strong> - ETI LF 페이로드 암호화 Equinix FR2 외부 연결에 필수 (2023년 10월부터) - FIX LF 인터페이스 암호화 필수 (2023년 5월부터) - TLS 1.3 지원 추가</p>
+</section>
+<section id="코로케이션-co-location" class="level3">
+<h3 class="anchored" data-anchor-id="코로케이션-co-location">7.3 코로케이션 (Co-Location)</h3>
+<ul>
+<li><strong>주 시설</strong>: Equinix FR2, 독일 프랑크푸르트</li>
+<li><strong>인프라</strong>: 10 Gbit/s 코로케이션 크로스커넥트</li>
+<li><strong>지연 이점</strong>: PS 게이트웨이에 대한 직접 접근으로 가장 빠른 주문 라우팅 경로 제공</li>
+<li><strong>Eurex 및 Xetra 서비스</strong> 코로케이션 시설 내 별도 물리적 연결을 통해 이용 가능</li>
+<li><strong>연락처</strong>: Equinix (Germany) GmbH, Rebstocker Strasse 33, 60326 Frankfurt</li>
+</ul>
+<p>[출처: Eurex, “Connectivity”, https://www.eurex.com/ex-en/support/technology/connectivity] [출처: Eurex, “Co-Location Services”, https://www.eurexchange.com/exchange-en/technology/co-location-services]</p>
+</section>
+<section id="인증-certification" class="level3">
+<h3 class="anchored" data-anchor-id="인증-certification">7.4 인증 (Certification)</h3>
+<ul>
+<li>매매참가자는 운영 개시 전 <strong>기술 및 기능 인증 프로세스</strong> 완료 필요</li>
+<li>시뮬레이션 환경 테스트용 이용 가능 (프로덕션과 분리)</li>
+<li>계좌 관리, 보고 및 행정을 위한 Member Section 포털</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="리스크-통제-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="리스크-통제-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers">8. 리스크 통제 및 서킷브레이커 (매매거래중단) (Risk Controls &amp; Circuit Breakers)</h2>
+<section id="변동성-중단-서킷브레이커-volatility-interruptions" class="level3">
+<h3 class="anchored" data-anchor-id="변동성-중단-서킷브레이커-volatility-interruptions">8.1 변동성 중단 (서킷브레이커) (Volatility Interruptions)</h3>
+<p>잘못된 거래를 방지하고 급격한 가격 급락을 차단하기 위한 Eurex의 주요 안전장치:</p>
+<ul>
+<li><strong>동적 변동성 중단 (Dynamic Volatility Interruption)</strong>: 유입 주문의 잠재 체결가가 설정된 회고 시간 내 모든 기존 체결 거래 가격 (참조 가격)과 대비하여 확인</li>
+<li><strong>발동</strong>: 허용 가격편차가 초과되면 체결이 방지되고 해당 종목 (또는 영향 받는 상품의 모든 종목)이 접속매매에서 <strong>변동성 단일가매매</strong>로 자동 전환</li>
+<li><strong>기간</strong>: 변동성 단일가매매가 정의된 기간 동안 운영되어 접속매매 복귀 전 질서 있는 가격 발견 허용</li>
+<li><strong>가격 칼라 (Price Collars)</strong>: Eurex EnLight 장외 거래의 경우, 이사회가 정의한 진입 구간 밖의 호가 또는 주문을 거부하는 가격 칼라 적용. 가격 칼라는 매매 중단을 <strong>발동하지 않음</strong></li>
+</ul>
+<p>[출처: Eurex, “Volatility Interruption Functionality”, https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality]</p>
+</section>
+<section id="사전-매매-리스크-통제-pre-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="사전-매매-리스크-통제-pre-trade-risk-controls">8.2 사전 매매 리스크 통제 (Pre-Trade Risk Controls)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>통제</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>최대 주문 수량 / 거래 규모 제한 (TSL)</strong></td>
+<td>주문/호가당 최대 계약 수에 대한 거래소 수준 및 회원 수준 한도. 설정된 한도 (거래소, 청산회원, 매매참가자) 중 가장 낮은 한도 적용</td>
+</tr>
+<tr class="even">
+<td><strong>최대 주문 가치</strong></td>
+<td>단일 주문의 최대 명목 가치에 대한 한도</td>
+</tr>
+<tr class="odd">
+<td><strong>사전 매매 리스크 (PTR) 한도</strong></td>
+<td>청산회원이 자신 및 비청산 참여자 (DCMP)에 대한 한도를 정의; 실시간 모니터링</td>
+</tr>
+<tr class="even">
+<td><strong>가격 합리성 검사</strong></td>
+<td>잠재적 오류 가격 감지를 위해 주문이 참조 가격과 대비 검사</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="사후-매매-리스크-통제-post-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="사후-매매-리스크-통제-post-trade-risk-controls">8.3 사후 매매 리스크 통제 (Post-Trade Risk Controls)</h3>
+<ul>
+<li><strong>포지션 모니터링</strong>: Eurex Clearing에 의한 실시간 포지션 모니터링</li>
+<li><strong>장중 마진콜</strong>: 장중 리스크 기준 초과 시 Eurex Clearing이 청산회원 계좌에서 직접 인출 가능</li>
+<li><strong>중지/킬 기능</strong>: 매매 활동 중단을 위한 비상 절차; 상세 내용은 Eurex Emergency Playbook (지원 &gt; 비상 및 안전장치에 게시)</li>
+</ul>
+<p>[출처: Eurex, “Trading Safeguards”, October 2025, https://www.eurex.com/resource/blob/2448162/28033c3a73ea19078860573d526f8f33/data/presentation-trading-safeguards.pdf]</p>
+<hr>
+</section>
+</section>
+<section id="규제-체계-regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</h2>
+<section id="감독-기관-supervisory-authorities" class="level3">
+<h3 class="anchored" data-anchor-id="감독-기관-supervisory-authorities">9.1 감독 기관 (Supervisory Authorities)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>기관</th>
+<th>관할</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>BaFin</strong> (Bundesanstalt fur Finanzdienstleistungsaufsicht)</td>
+<td>독일</td>
+<td>Eurex Frankfurt AG의 규제시장으로서의 주요 감독; 독일 시장에서 주로 거래되는 상품 파생상품의 포지션한도 설정 및 모니터링</td>
+</tr>
+<tr class="even">
+<td><strong>Hessische Borsaufsicht</strong></td>
+<td>독일 헤센주</td>
+<td>헤센주 거래소감독청; 거래소 운영 감독</td>
+</tr>
+<tr class="odd">
+<td><strong>ESMA</strong> (European Securities and Markets Authority)</td>
+<td>EU</td>
+<td>EMIR에 따른 거래정보저장소 감독; MiFID II/MiFIR 이행 조율; EMIR에 따른 Eurex Clearing CCP 감독</td>
+</tr>
+<tr class="even">
+<td><strong>FINMA</strong></td>
+<td>스위스</td>
+<td>Eurex Zurich 운영 감독</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주요-규정-key-regulations" class="level3">
+<h3 class="anchored" data-anchor-id="주요-규정-key-regulations">9.2 주요 규정 (Key Regulations)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>규정</th>
+<th>설명</th>
+<th>Eurex에 대한 영향</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>MiFID II / MiFIR</strong> (2018년 1월 3일 시행)</td>
+<td>금융상품시장지침 II / 규정</td>
+<td>거래 보고 의무; 상품 파생상품 포지션한도; 매매 전후 투명성; 최선집행 요건; 알고리즘 매매 통제</td>
+</tr>
+<tr class="even">
+<td><strong>EMIR</strong> (유럽시장인프라규정)</td>
+<td>OTC 파생상품, CCP, 거래정보저장소에 관한 규정</td>
+<td>표준화 OTC 파생상품의 의무적 청산; 거래정보저장소에 대한 거래 보고; Eurex Clearing의 CCP 리스크 관리 요건</td>
+</tr>
+<tr class="odd">
+<td><strong>EMIR REFIT</strong></td>
+<td>EMIR 보고 기준 업데이트</td>
+<td>XML/ISO 20022를 사용한 향상된 보고 형식; 신규 데이터 필드; 업데이트된 검증 규칙</td>
+</tr>
+<tr class="even">
+<td><strong>CSDR</strong> (중앙예탁기관규정)</td>
+<td>결제 규율 및 CSD에 관한 규정</td>
+<td>사후거래 처리에 영향을 미치는 결제 규율 체제</td>
+</tr>
+<tr class="odd">
+<td><strong>MAR</strong> (시장남용규정)</td>
+<td>EU 시장남용 체계</td>
+<td>감시 의무; 내부자거래 및 시장조작 탐지</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="감시-및-보고-surveillance-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="감시-및-보고-surveillance-reporting">9.3 감시 및 보고 (Surveillance &amp; Reporting)</h3>
+<ul>
+<li><strong>거래 보고</strong>: MiFID II 제26조에 따라 모든 거래를 RTS 22 형식 (ESMA Transaction Reporting XML Schema 1.1.0 기반 XML 스키마)으로 BaFin에 보고 필요</li>
+<li><strong>포지션 보고</strong>: MiFID II 제58조에 따라 Eurex Frankfurt AG는 상장 상품 파생상품 및 배출권에서 고객 (및 최종 고객까지의 고객의 고객) 포지션에 대한 일말 보고서를 BaFin에 제공 필요</li>
+<li><strong>EMIR 거래 보고</strong>: 모든 파생상품 계약 (OTC 및 장내)은 체결, 수정, 종료 후 다음 영업일까지 거래정보저장소에 보고 필요</li>
+<li><strong>시장 감시</strong>: Eurex Market Supervision이 시장남용, 조작, 이상 패턴에 대한 매매 활동 모니터링</li>
+</ul>
+</section>
+<section id="국경간-고려사항-cross-border-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="국경간-고려사항-cross-border-considerations">9.4 국경간 고려사항 (Cross-Border Considerations)</h3>
+<ul>
+<li>Eurex는 다수 관할권에서 제3국 CCP로 인정</li>
+<li>CFTC 등록: Eurex Clearing AG, 미국 CFTC에 파생상품청산기관(DCO)으로 등록</li>
+<li>Eurex는 다수 비EU 관할권에서 동등성 결정 획득</li>
+<li>다수 국가의 참여자에게 국경간 회원 자격 이용 가능</li>
+</ul>
+<p>[출처: Eurex, “MiFID II/MiFIR”, https://www.eurex.com/ex-en/rules-regs/regulations/mifid-mifir] [출처: BaFin, “Position limits for commodity derivatives”, https://www.bafin.de/EN/Aufsicht/BoersenMaerkte/Derivate/PositionslimitsWarenderivate/positionslimits_warenderivate_node_en.html]</p>
+<hr>
+</section>
+</section>
+<section id="수수료-및-수익-모델-fees-revenue-model" class="level2">
+<h2 class="anchored" data-anchor-id="수수료-및-수익-모델-fees-revenue-model">10. 수수료 및 수익 모델 (Fees &amp; Revenue Model)</h2>
+<section id="매매-수수료-trading-fees" class="level3">
+<h3 class="anchored" data-anchor-id="매매-수수료-trading-fees">10.1 매매 수수료 (Trading Fees)</h3>
+<p>Eurex는 장내 및 장외 (T7 Entry Service) 거래에 대해 계약당 거래 수수료를 부과한다:</p>
+<ul>
+<li><strong>계약당 표준 수수료</strong>: 상품 분류 및 장내/장외 거래 여부에 따라 상이</li>
+<li><strong>감면 수수료</strong>: 상품 및 포지션 계좌 유형 (P-Account / M-Account)에 따라 일정 기준 이상 거래량에 적용 가능</li>
+<li><strong>수수료 등급</strong>: 참여자는 월간 환급 혜택 가능:
+<ul>
+<li><strong>시장조성 환급</strong>: 호가 의무를 충족하는 적격 시장조성자 대상</li>
+<li><strong>거래량 환급</strong>: 누적 월간 거래량 기반</li>
+</ul></li>
+<li><strong>2026년 가격 변경</strong> (2026년 1월 1일 및 4월 1일 시행):
+<ul>
+<li>주가지수 선물, EURO STOXX 50 지수 옵션, 채권 선물 및 옵션에 대한 표준 수수료, 감면 수수료, 환급, 기준 수정</li>
+<li>주가지수 옵션 유동성 클래스 1의 환급 수준이 등급별 5 퍼센트포인트 인하</li>
+<li>금리 옵션 유동성공급 환급이 모든 유동성 클래스에서 10 퍼센트포인트 인하</li>
+</ul></li>
+</ul>
+<p><strong>대표적 수수료 범위</strong> (예시, 공식 가격표에 따름):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>표준 수수료 (계약당)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주가지수 선물 (예: FESX)</td>
+<td>EUR 0.10 - 0.30 [unverified]</td>
+</tr>
+<tr class="even">
+<td>채권 선물 (예: FGBL)</td>
+<td>EUR 0.05 - 0.20 [unverified]</td>
+</tr>
+<tr class="odd">
+<td>주가지수 옵션 (예: OESX)</td>
+<td>EUR 0.10 - 0.40 [unverified]</td>
+</tr>
+<tr class="even">
+<td>개별주식 선물</td>
+<td>EUR 0.15 - 0.50 [unverified]</td>
+</tr>
+</tbody>
+</table>
+<p>주: 실제 수수료는 거래량 등급, 회원 유형, 현행 가격표에 따라 달라진다. 전체 수수료표는 “Price List of Eurex Clearing AG” (제3장)에 게시된다.</p>
+</section>
+<section id="청산-수수료-clearing-fees" class="level3">
+<h3 class="anchored" data-anchor-id="청산-수수료-clearing-fees">10.2 청산 수수료 (Clearing Fees)</h3>
+<ul>
+<li>계약당 거래 기반 청산 수수료</li>
+<li>가입비: EUR 50,000 (일회) 청산회원 대상</li>
+<li>연간 회비: EUR 25,000 청산회원 대상</li>
+</ul>
+</section>
+<section id="접속-및-시장-데이터-수수료-connectivity-market-data-fees" class="level3">
+<h3 class="anchored" data-anchor-id="접속-및-시장-데이터-수수료-connectivity-market-data-fees">10.3 접속 및 시장 데이터 수수료 (Connectivity &amp; Market Data Fees)</h3>
+<ul>
+<li><strong>코로케이션 수수료</strong>: FR2의 랙 공간 및 크로스커넥트에 대해 Equinix가 부과</li>
+<li><strong>접속 수수료</strong>: 네트워크 연결 (10 Gbit/s 회선)에 부과</li>
+<li><strong>시장 데이터 수수료</strong>: 실시간 시장 데이터 (EMDI, EOBI, MDI) 사용 유형 (디스플레이, 비디스플레이, 파생 데이터)에 따라 부과</li>
+<li><strong>수수료표 변경</strong>: 접속 수수료표는 회보를 통해 정기적으로 수정</li>
+</ul>
+<p>[출처: Eurex, “Transaction fees”, https://www.eurex.com/ex-en/trade/transaction-fees] [출처: Eurex, “Price List of Eurex Clearing AG”, https://www.eurex.com/ec-en/rules-regs/rules-and-regulations/3.-Price-List-32640]</p>
+<hr>
+</section>
+</section>
+<section id="최근-동향-recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</h2>
+<section id="t7-시스템-업그레이드-t7-system-upgrades" class="level3">
+<h3 class="anchored" data-anchor-id="t7-시스템-업그레이드-t7-system-upgrades">11.1 T7 시스템 업그레이드 (T7 System Upgrades)</h3>
+<ul>
+<li><strong>T7 Release 14.0</strong> (2025년 11월 10일): 비공개 매매참가자를 위한 Sponsored Access (SpA) 도입; STIR 선물의 Butterfly 및 Condor 전략으로 합성 매칭 확장; 브라우저 기반 신규 GUI</li>
+<li><strong>T7 Release 14.1</strong> (2026년 5월 18일 예정): SpA 리스크 모니터링 강화; STIR 시장 (FEU3, FST3)을 위한 합성 Packs &amp; Bundles; 추가 GUI 개선</li>
+</ul>
+</section>
+<section id="신규-상품-및-시장-이니셔티브-new-products-market-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="신규-상품-및-시장-이니셔티브-new-products-market-initiatives">11.2 신규 상품 및 시장 이니셔티브 (New Products &amp; Market Initiatives)</h3>
+<ul>
+<li><strong>Systematic QIS Index Futures</strong> (2025년 12월): Premialab과 협력하여 출시; 이전에 OTC 스왑으로만 이용 가능했던 규칙 기반 테마 전략 (예: “Fundamental Quality European”, “Value European”) 거래 가능. OTC QIS 시장은 2026년 말까지 USD 1조에 달할 것으로 추정</li>
+<li><strong>Credit Index Futures</strong>: 2021년 출시 이후 강한 성장 궤적; 참여자들이 장내 신용 파생상품을 채택하면서 거래량 급증</li>
+<li><strong>Three-Month Euro STR Futures</strong>: EURIBOR 대체 유로 무위험금리 벤치마크로서 채택 지속</li>
+<li><strong>일일 옵션 (Daily Options)</strong>: EURO STOXX 50 및 DAX에 대한 이용 가능 범위 확대 (2025년 11월 출시)</li>
+<li><strong>ESG 지수 파생상품</strong>: 2025년 1분기 누적 명목 거래량 EUR 300억 초과 (2024년 대비 +76.5%); ESG 상품 자본 미결제약정 2026년 초 EUR 49억에 달해 24개월 간 200% 증가</li>
+</ul>
+</section>
+<section id="접근-및-회원-변경-access-membership-changes" class="level3">
+<h3 class="anchored" data-anchor-id="접근-및-회원-변경-access-membership-changes">11.3 접근 및 회원 변경 (Access &amp; Membership Changes)</h3>
+<ul>
+<li><strong>Sponsored Access 모델</strong> (2025년 11월): 바이사이드 기업 및 비회원 주체의 진입 장벽 완화; 승인된 SpA 서비스 제공자를 통해 정식 거래소 회원 없이 저지연 T7 접근 제공</li>
+</ul>
+</section>
+<section id="규제-변경-regulatory-changes" class="level3">
+<h3 class="anchored" data-anchor-id="규제-변경-regulatory-changes">11.4 규제 변경 (Regulatory Changes)</h3>
+<ul>
+<li><strong>EMIR REFIT</strong>: 향상된 데이터 필드 및 검증 규칙을 포함한 거래 보고 요건 업데이트</li>
+<li><strong>MiFID II 포지션한도</strong>: 상품 파생상품 포지션한도 체계의 지속적 개선</li>
+<li><strong>필수 인터페이스 암호화</strong>: 모든 ETI 및 FIX 인터페이스에 대한 암호화 연결 이전 완료</li>
+</ul>
+</section>
+<section id="전략적-이니셔티브-strategic-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="전략적-이니셔티브-strategic-initiatives">11.5 전략적 이니셔티브 (Strategic Initiatives)</h3>
+<ul>
+<li><strong>Eurex Repo</strong>: 2025년 역대 최고 연도 (EUR 4,061억 평균 기간조정 거래량); 담보부 자금조달 역량 확대</li>
+<li><strong>OTC 청산 성장</strong>: 2025년 일평균 청산 거래량 EUR 2,800억 (+35%); Eurex Clearing의 OTC IRD 시장에 ~650개 신규 고객 가입</li>
+<li><strong>디지털 자산</strong>: 암호화폐 파생상품 제공 확대; Deutsche Borse Group이 Crypto Finance AG 과반 지분 인수 (2023년)</li>
+<li><strong>D7 디지털 사후거래 플랫폼</strong>: 디지털 증권 발행 및 결제를 위해 2024년 출시</li>
+</ul>
+<p>[출처: Eurex, “Our path for 2026”, https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026–4867350] [출처: Eurex, “T7 Release 14.0”, https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0]</p>
+<hr>
+</section>
+</section>
+<section id="상품-카탈로그-파생상품-특화-product-catalog-derivatives-specific" class="level2">
+<h2 class="anchored" data-anchor-id="상품-카탈로그-파생상품-특화-product-catalog-derivatives-specific">12. 상품 카탈로그 (파생상품 특화) (Product Catalog — Derivatives-Specific)</h2>
+<section id="금리-파생상품-interest-rate-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="금리-파생상품-interest-rate-derivatives">12.1 금리 파생상품 (Interest Rate Derivatives)</h3>
+<p><strong>채권 선물 (국채) (Fixed Income Futures):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 20%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>코드</th>
+<th>기초자산</th>
+<th>잔존 만기</th>
+<th>계약 규모</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Euro-Schatz 선물</td>
+<td>FGBS</td>
+<td>독일 연방 채권/노트</td>
+<td>1.75 - 2.25년</td>
+<td>EUR 100,000</td>
+</tr>
+<tr class="even">
+<td>Euro-Bobl 선물</td>
+<td>FGBM</td>
+<td>독일 연방 채권/노트</td>
+<td>4.5 - 5.5년</td>
+<td>EUR 100,000</td>
+</tr>
+<tr class="odd">
+<td>Euro-Bund 선물</td>
+<td>FGBL</td>
+<td>독일 연방 채권 (Bundesanleihen)</td>
+<td>8.5 - 10.5년</td>
+<td>EUR 100,000</td>
+</tr>
+<tr class="even">
+<td>Euro-Buxl 선물</td>
+<td>FGBX</td>
+<td>독일 연방 채권</td>
+<td>24 - 35년</td>
+<td>EUR 100,000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>채권 옵션:</strong> Euro-Schatz, Euro-Bobl, Euro-Bund, Euro-Buxl 선물에 대한 옵션</p>
+<p><strong>단기금융 선물 (Money Market Futures):</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>코드</th>
+<th>기초자산</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Three-Month Euribor 선물</td>
+<td>FEU3</td>
+<td>3개월 EURIBOR</td>
+</tr>
+<tr class="even">
+<td>Three-Month Euro STR 선물</td>
+<td>FST3</td>
+<td>3개월 복리 Euro STR</td>
+</tr>
+<tr class="odd">
+<td>One-Month Euro STR 선물</td>
+<td>–</td>
+<td>1개월 Euro STR</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Credit Index Futures:</strong> - iTraxx Europe Main CDS Index Futures - iTraxx Europe Crossover CDS Index Futures - iTraxx Europe Senior Financials CDS Index Futures</p>
+<p><strong>OTC 청산:</strong> - 금리 스왑 (IRS) - 익일물 금리 스왑 (OIS) - 선도금리계약 (FRA) - 통화간 스왑</p>
+</section>
+<section id="주가지수-파생상품-equity-index-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="주가지수-파생상품-equity-index-derivatives">12.2 주가지수 파생상품 (Equity Index Derivatives)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 57%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>지수군</th>
+<th>상품</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>EURO STOXX 50</strong></td>
+<td>선물 (FESX), Mini 선물, Micro 선물 (FSXE), 옵션 (OESX), 일일 옵션, 주간 옵션, End-of-Day 옵션, Total Return 선물 (TESX), ESG 선물, 배당 선물, 분산 선물</td>
+</tr>
+<tr class="even">
+<td><strong>DAX</strong></td>
+<td>선물 (FDAX), Mini-DAX 선물 (FDXM), Micro-DAX 선물 (FDXS), 옵션 (ODAX), 일일 옵션, 주간 옵션</td>
+</tr>
+<tr class="odd">
+<td><strong>MDAX</strong></td>
+<td>선물, 옵션</td>
+</tr>
+<tr class="even">
+<td><strong>STOXX Europe 600</strong></td>
+<td>선물, 옵션; 업종지수 파생상품 (은행, 기술, 헬스케어 등 18개 업종)</td>
+</tr>
+<tr class="odd">
+<td><strong>MSCI</strong></td>
+<td>146개 선물 및 23개 옵션, MSCI World, MSCI Europe, MSCI EM, 국가 지수, ESG 변형 커버</td>
+</tr>
+<tr class="even">
+<td><strong>FTSE 100</strong></td>
+<td>선물 및 옵션 (2023년 도입)</td>
+</tr>
+<tr class="odd">
+<td><strong>ESG 지수</strong></td>
+<td>STOXX ESG-X, STOXX Europe Climate Benchmark, DAX ESG 변형</td>
+</tr>
+<tr class="even">
+<td><strong>Systematic QIS 지수</strong></td>
+<td>규칙 기반 테마 전략 선물 (2025년 12월 출시)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주식-파생상품-개별주식-equity-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="주식-파생상품-개별주식-equity-derivatives">12.3 주식 파생상품 (개별주식) (Equity Derivatives)</h3>
+<ul>
+<li><strong>개별주식 선물</strong>: STOXX Europe 600 구성종목 및 주요 미국/캐나다 종목을 커버하는 900개 이상 계약</li>
+<li><strong>주식 옵션</strong>: 글로벌 모든 주요 산업 부문에 걸쳐 500개 이상 계약</li>
+<li>개별주식 선물 및 옵션에 대한 <strong>실물인도</strong></li>
+</ul>
+</section>
+<section id="배당-파생상품-dividend-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="배당-파생상품-dividend-derivatives">12.4 배당 파생상품 (Dividend Derivatives)</h3>
+<ul>
+<li><strong>지수 배당 선물</strong>: EURO STOXX 50 배당 선물, DAX 배당 선물</li>
+<li><strong>개별주식 배당 선물</strong>: 유로존 및 범유럽 최대 기업 80개 이상 계약</li>
+<li>선언된 배당금에 기반한 <strong>현금결제</strong></li>
+</ul>
+</section>
+<section id="변동성-파생상품-volatility-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="변동성-파생상품-volatility-derivatives">12.5 변동성 파생상품 (Volatility Derivatives)</h3>
+<ul>
+<li><strong>VSTOXX 선물</strong>: EURO STOXX 50 내재변동성 (VSTOXX 지수) 기반</li>
+<li><strong>VSTOXX 옵션</strong>: VSTOXX 선물에 대한 옵션</li>
+<li><strong>EURO STOXX 50 분산 선물 (EVAR)</strong>: 장내형 분산 스왑</li>
+</ul>
+</section>
+<section id="fx-파생상품-fx-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="fx-파생상품-fx-derivatives">12.6 FX 파생상품 (FX Derivatives)</h3>
+<ul>
+<li><strong>Rolling Spot Futures</strong>: 연속 롤오버; 현물부터의 결제일</li>
+<li><strong>Classic FX Futures</strong>: 연속월, 분기, 반기, 최대 3년에 걸친 고정 결제일</li>
+<li><strong>FX 옵션</strong>: 주요 통화 쌍에 대한 옵션</li>
+<li>인도형 및 비인도형 계약 이용 가능</li>
+</ul>
+</section>
+<section id="etf-및-etc-파생상품-etf-etc-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="etf-및-etc-파생상품-etf-etc-derivatives">12.7 ETF 및 ETC 파생상품 (ETF &amp; ETC Derivatives)</h3>
+<ul>
+<li>주요 주가지수 ETF에 대한 선물 및 옵션</li>
+<li>채권 ETF에 대한 선물 및 옵션</li>
+<li><strong>ETC 파생상품</strong>: Physical Gold ETC (AUM EUR 40억 이상), Crude Oil ETC</li>
+</ul>
+</section>
+<section id="암호화폐-파생상품-cryptocurrency-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="암호화폐-파생상품-cryptocurrency-derivatives">12.8 암호화폐 파생상품 (Cryptocurrency Derivatives)</h3>
+<ul>
+<li>Bitcoin 선물 [unverified – 구체적 상품 확대 중]</li>
+<li>Ether 선물 [unverified]</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="주요-계약-사양-거래량-상위-5개-상품-key-contract-specifications" class="level2">
+<h2 class="anchored" data-anchor-id="주요-계약-사양-거래량-상위-5개-상품-key-contract-specifications">13. 주요 계약 사양 (거래량 상위 5개 상품) (Key Contract Specifications)</h2>
+<section id="euro-stoxx-50-지수-선물-fesx" class="level3">
+<h3 class="anchored" data-anchor-id="euro-stoxx-50-지수-선물-fesx">13.1 EURO STOXX 50 지수 선물 (FESX)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>사양</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>상품 코드</td>
+<td>FESX</td>
+</tr>
+<tr class="even">
+<td>기초자산</td>
+<td>EURO STOXX 50 지수 (유로존 50대 우량주)</td>
+</tr>
+<tr class="odd">
+<td>계약 규모 / 승수</td>
+<td>지수포인트당 EUR 10</td>
+</tr>
+<tr class="even">
+<td>최소가격변동 (호가단위)</td>
+<td>1 지수포인트</td>
+</tr>
+<tr class="odd">
+<td>틱 가치</td>
+<td>EUR 10</td>
+</tr>
+<tr class="even">
+<td>결제월</td>
+<td>최대 36개월; 가장 가까운 12개 분기월 (3, 6, 9, 12월)</td>
+</tr>
+<tr class="odd">
+<td>최종 거래일</td>
+<td>만기월 셋째 금요일 (또는 직전 거래소 영업일)</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>현금결제</td>
+</tr>
+<tr class="odd">
+<td>최종결제가</td>
+<td>최종결제일 CET 11:50~12:00 사이 산출된 EURO STOXX 50 지수값의 평균</td>
+</tr>
+<tr class="even">
+<td>매매시간</td>
+<td>01:00 - 22:00 CET (아시아 시간 포함)</td>
+</tr>
+<tr class="odd">
+<td>2024년 거래량</td>
+<td>~2억 500만 계약; 일평균 명목 EUR 395억</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="euro-stoxx-50-지수-옵션-oesx" class="level3">
+<h3 class="anchored" data-anchor-id="euro-stoxx-50-지수-옵션-oesx">13.2 EURO STOXX 50 지수 옵션 (OESX)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>사양</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>상품 코드</td>
+<td>OESX</td>
+</tr>
+<tr class="even">
+<td>기초자산</td>
+<td>EURO STOXX 50 지수</td>
+</tr>
+<tr class="odd">
+<td>계약 규모 / 승수</td>
+<td>지수포인트당 EUR 10</td>
+</tr>
+<tr class="even">
+<td>최소가격변동 (호가단위)</td>
+<td>0.1 지수포인트</td>
+</tr>
+<tr class="odd">
+<td>틱 가치</td>
+<td>EUR 1</td>
+</tr>
+<tr class="even">
+<td>행사 방식</td>
+<td>유럽식 (최종결제일 CET 20:30까지만 행사 가능)</td>
+</tr>
+<tr class="odd">
+<td>결제월</td>
+<td>월간, 주간, 일일 만기 이용 가능</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>현금결제</td>
+</tr>
+<tr class="odd">
+<td>최종결제가</td>
+<td>CET 11:50~12:00 사이 EURO STOXX 50 지수값의 평균</td>
+</tr>
+<tr class="even">
+<td>매매시간</td>
+<td>08:00 - 22:00 CET</td>
+</tr>
+<tr class="odd">
+<td>2024년 거래량</td>
+<td>~2억 4,200만 계약; 일평균 명목 EUR 440억</td>
+</tr>
+<tr class="even">
+<td>행사가</td>
+<td>24개월 이하 기간에 최소 7개 (내가격 3개, 등가격 1개, 외가격 3개); 장기에는 최소 5개</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="euro-bund-선물-fgbl" class="level3">
+<h3 class="anchored" data-anchor-id="euro-bund-선물-fgbl">13.3 Euro-Bund 선물 (FGBL)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>사양</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>상품 코드</td>
+<td>FGBL</td>
+</tr>
+<tr class="even">
+<td>기초자산</td>
+<td>6% 쿠폰의 명목 독일 연방 국채 (Bundesanleihe)</td>
+</tr>
+<tr class="odd">
+<td>인도 적격 채권</td>
+<td>잔존 만기 8.5~10.5년, 최소 발행 규모 EUR 50억의 독일 연방 채권</td>
+</tr>
+<tr class="even">
+<td>계약 규모</td>
+<td>명목 EUR 100,000</td>
+</tr>
+<tr class="odd">
+<td>최소가격변동 (호가단위)</td>
+<td>0.01 (액면의 백분율)</td>
+</tr>
+<tr class="even">
+<td>틱 가치</td>
+<td>EUR 10</td>
+</tr>
+<tr class="odd">
+<td>결제월</td>
+<td>최대 9개월; 가장 가까운 3개 분기월 (3, 6, 9, 12월)</td>
+</tr>
+<tr class="even">
+<td>최종 거래일</td>
+<td>해당 만기월 인도일 2거래소 영업일 전</td>
+</tr>
+<tr class="odd">
+<td>인도일</td>
+<td>만기월 10번째 역일 (또는 다음 거래소 영업일)</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>실물인도</td>
+</tr>
+<tr class="odd">
+<td>일일정산가</td>
+<td>CET 17:15 직전 1분간 거래의 거래량 가중 평균 (5건 이상 거래 시)</td>
+</tr>
+<tr class="even">
+<td>최종결제가</td>
+<td>최종결제일 CET 12:30의 거래량 가중 평균 (10건 이상 거래 시)</td>
+</tr>
+<tr class="odd">
+<td>매매시간</td>
+<td>01:00 - 22:00 CET (아시아 시간 포함)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dax-선물-fdax" class="level3">
+<h3 class="anchored" data-anchor-id="dax-선물-fdax">13.4 DAX 선물 (FDAX)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>사양</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>상품 코드</td>
+<td>FDAX</td>
+</tr>
+<tr class="even">
+<td>기초자산</td>
+<td>DAX 지수 (독일 40대 우량주)</td>
+</tr>
+<tr class="odd">
+<td>계약 규모 / 승수</td>
+<td>지수포인트당 EUR 25</td>
+</tr>
+<tr class="even">
+<td>최소가격변동 (호가단위)</td>
+<td>0.5 지수포인트</td>
+</tr>
+<tr class="odd">
+<td>틱 가치</td>
+<td>EUR 12.50</td>
+</tr>
+<tr class="even">
+<td>결제월</td>
+<td>최대 9개월; 가장 가까운 3개 분기월 (3, 6, 9, 12월)</td>
+</tr>
+<tr class="odd">
+<td>최종 거래일</td>
+<td>만기월 셋째 금요일 (또는 직전 거래소 영업일)</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>현금결제</td>
+</tr>
+<tr class="odd">
+<td>최종결제가</td>
+<td>DAX 구성종목의 장중 단일가매매 가격에 기반</td>
+</tr>
+<tr class="even">
+<td>매매시간</td>
+<td>01:00 - 22:00 CET (아시아 시간 포함)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="euro-bobl-선물-fgbm" class="level3">
+<h3 class="anchored" data-anchor-id="euro-bobl-선물-fgbm">13.5 Euro-Bobl 선물 (FGBM)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>사양</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>상품 코드</td>
+<td>FGBM</td>
+</tr>
+<tr class="even">
+<td>기초자산</td>
+<td>6% 쿠폰의 명목 독일 연방 채권/노트</td>
+</tr>
+<tr class="odd">
+<td>인도 적격 채권</td>
+<td>잔존 만기 4.5~5.5년의 독일 연방 채권/노트</td>
+</tr>
+<tr class="even">
+<td>계약 규모</td>
+<td>명목 EUR 100,000</td>
+</tr>
+<tr class="odd">
+<td>최소가격변동 (호가단위)</td>
+<td>0.01 (액면의 백분율)</td>
+</tr>
+<tr class="even">
+<td>틱 가치</td>
+<td>EUR 10</td>
+</tr>
+<tr class="odd">
+<td>결제월</td>
+<td>최대 9개월; 가장 가까운 3개 분기월 (3, 6, 9, 12월)</td>
+</tr>
+<tr class="even">
+<td>최종 거래일</td>
+<td>인도일 2거래소 영업일 전</td>
+</tr>
+<tr class="odd">
+<td>인도일</td>
+<td>만기월 10번째 역일 (또는 다음 거래소 영업일)</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>실물인도</td>
+</tr>
+<tr class="odd">
+<td>매매시간</td>
+<td>01:00 - 22:00 CET (아시아 시간 포함)</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: Eurex, “EURO STOXX 50 Index Futures (FESX)”, https://www.eurex.com/ex-en/markets/idx/stx/euro-stoxx-50-derivatives/products/EURO-STOXX-50-Index-Futures-160088] [출처: Eurex, “Euro-Bund Futures (FGBL)”, https://www.eurex.com/ex-en/markets/int/fix/government-bonds/Euro-Bund-Futures-137298] [출처: Eurex, “DAX Futures (FDAX)”, https://www.eurex.com/ex-en/markets/idx/dax/DAX-Futures-139902]</p>
+<hr>
+</section>
+</section>
+<section id="증거금-체계-eurex-clearing-prisma-margin-framework-eurex-clearing-prisma" class="level2">
+<h2 class="anchored" data-anchor-id="증거금-체계-eurex-clearing-prisma-margin-framework-eurex-clearing-prisma">14. 증거금 체계 – Eurex Clearing Prisma (Margin Framework – Eurex Clearing Prisma)</h2>
+<section id="개요-overview-1" class="level3">
+<h3 class="anchored" data-anchor-id="개요-overview-1">14.1 개요 (Overview)</h3>
+<p>Eurex Clearing Prisma는 Eurex Clearing AG가 청산하는 모든 장내 파생상품(ETD) 및 OTC 상품에 적용되는 <strong>포트폴리오 기반 리스크 관리 방법론</strong>이다. 상품별 증거금 계산과 달리, Prisma는 헤지 및 교차상관 효과를 고려하여 포트폴리오 수준에서 증거금 요건을 결정한다.</p>
+</section>
+<section id="방법론-methodology" class="level3">
+<h3 class="anchored" data-anchor-id="방법론-methodology">14.2 방법론 (Methodology)</h3>
+<p><strong>핵심 접근법:</strong> - <strong>과거 VaR (Historical Value-at-Risk)</strong>: Prisma는 필터링된 과거 시뮬레이션 접근법을 사용하여 잠재적 포트폴리오 손실 추정 - <strong>청산 그룹 (Liquidation Groups)</strong>: 유사한 리스크 특성을 공유하는 상품이 청산 그룹으로 분류. 동일 청산 그룹 내, 동일 보유 기간에서 포트폴리오 증거금 적용 - 예: EURO STOXX 50 선물과 DAX 선물이 동일 청산 그룹에 속할 수 있어, 분산된 포트폴리오에 대한 증거금 상쇄 제공 - <strong>교차상품 시나리오 (Cross-Product Scenarios)</strong>: 포트폴리오 상관관계 및 분산 효과를 일관되게 반영하여 보다 정확한 리스크 상계 가능 - <strong>보유 기간 (Holding Periods)</strong>: 상품 유형별 상이; 예: ETD는 2일 보유 기간, OTC IRS는 5일 보유 기간</p>
+</section>
+<section id="증거금-유형-margin-types" class="level3">
+<h3 class="anchored" data-anchor-id="증거금-유형-margin-types">14.3 증거금 유형 (Margin Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 68%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>증거금 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>개시증거금 (Initial Margin / Additional Margin)</strong></td>
+<td>향후 영업일의 잠재적 청산 리스크 커버; Prisma 과거 VaR 계산에 기반, 99.x% 신뢰수준</td>
+</tr>
+<tr class="even">
+<td><strong>프리미엄 증거금 (Premium Margin)</strong></td>
+<td>옵션: 옵션 프리미엄 비용 커버 (전통 방식 옵션)</td>
+</tr>
+<tr class="odd">
+<td><strong>현재 청산 증거금 (Current Liquidating Margin)</strong></td>
+<td>포지션의 즉시 시가평가 가치 반영</td>
+</tr>
+<tr class="even">
+<td><strong>변동증거금 (Variation Margin)</strong></td>
+<td>선물 포지션의 일일 손익 정산; 현금으로 납부 필요</td>
+</tr>
+<tr class="odd">
+<td><strong>증거금 하한 (Margin Floors)</strong></td>
+<td>Prisma 개시증거금 하한의 연간 재보정 (가장 최근 재보정 2025년 6월 16일 시행)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="교차-증거금-cross-margining" class="level3">
+<h3 class="anchored" data-anchor-id="교차-증거금-cross-margining">14.4 교차 증거금 (Cross-Margining)</h3>
+<ul>
+<li><strong>교차상품 증거금</strong>: 동일 청산 그룹 내 상품 간 상쇄</li>
+<li><strong>교차시장 증거금</strong>: Eurex Clearing이 청산하는 장내 (ETD)와 OTC 포지션 간 상쇄</li>
+<li><strong>교차보유기간 증거금</strong>: 서로 다른 보유 기간의 상품 간 상쇄 허용 (예: 5일 보유 기간의 OTC IRS vs.&nbsp;2일 보유 기간의 장내 채권)</li>
+<li><strong>핵심 혜택</strong>: 보다 정확한 리스크 상계로 분산된 포트폴리오의 개시증거금 요건 대폭 감소</li>
+</ul>
+</section>
+<section id="마진콜-절차-margin-call-process" class="level3">
+<h3 class="anchored" data-anchor-id="마진콜-절차-margin-call-process">14.5 마진콜 절차 (Margin Call Process)</h3>
+<ul>
+<li>증거금은 <strong>매매일 동안</strong> 산출 (장중 증거금 재계산)</li>
+<li><strong>정기 마진콜</strong>: 일말 증거금 요건이 청산회원에게 통보</li>
+<li><strong>장중 마진콜</strong>: 장중 리스크 기준 초과 시 Eurex Clearing이 청산회원 계좌에서 직접 인출 가능</li>
+<li><strong>납부</strong>: 변동증거금 및 전통 옵션 프리미엄은 <strong>현금</strong>으로 납부 필수; 개시증거금은 현금 또는 적격 유가증권 (적절한 헤어컷 적용)으로 납부 가능</li>
+</ul>
+</section>
+<section id="cloud-prisma-margin-estimator-cpme" class="level3">
+<h3 class="anchored" data-anchor-id="cloud-prisma-margin-estimator-cpme">14.6 Cloud Prisma Margin Estimator (cPME)</h3>
+<ul>
+<li>참여자가 가상 포트폴리오에 대한 증거금 요건을 추정할 수 있는 웹 기반 도구</li>
+<li>Deutsche Borse Risk GitHub를 통해 이용 가능: https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/</li>
+</ul>
+<p>[출처: Eurex Clearing, “Eurex Clearing Prisma”, https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma] [출처: Eurex Clearing, “Margining process”, https://www.eurex.com/ec-en/services/margining/margining-process] [출처: Eurex Clearing, “Cross-margining”, https://www.eurex.com/ec-en/services/margining/cross-margining]</p>
+<hr>
+</section>
+</section>
+<section id="포지션한도-건옥제한-position-limits" class="level2">
+<h2 class="anchored" data-anchor-id="포지션한도-건옥제한-position-limits">15. 포지션한도 (건옥제한) (Position Limits)</h2>
+<section id="체계-framework" class="level3">
+<h3 class="anchored" data-anchor-id="체계-framework">15.1 체계 (Framework)</h3>
+<ul>
+<li><strong>MiFID II 제57조</strong>: EU 매매시장에서 거래되는 상품 파생상품에 대한 포지션한도 설정</li>
+<li><strong>BaFin</strong>이 독일 매매시장에서 독점적 또는 주로 거래되는 상품 파생상품 (Eurex 포함)의 포지션한도 설정 및 모니터링 관할 당국</li>
+<li><strong>책임 수준 (Accountability levels)</strong>: 대규모 포지션 파악 및 질서 있는 시장 확보를 위해 금융상품에 설정</li>
+</ul>
+</section>
+<section id="상품-파생상품-포지션한도-commodity-derivatives-position-limits" class="level3">
+<h3 class="anchored" data-anchor-id="상품-파생상품-포지션한도-commodity-derivatives-position-limits">15.2 상품 파생상품 포지션한도 (Commodity Derivatives Position Limits)</h3>
+<ul>
+<li>BaFin이 인도 가능 공급량 및 미결제약정에 기반하여 포지션한도 설정</li>
+<li>상품 파생상품 및 경제적으로 동등한 OTC 계약에서 보유한 <strong>순 포지션</strong>에 적용</li>
+<li><strong>최근월</strong> 및 <strong>기타 월 합산</strong> 수준 모두에서 한도 적용</li>
+</ul>
+</section>
+<section id="헤지-면제-hedge-exemptions" class="level3">
+<h3 class="anchored" data-anchor-id="헤지-면제-hedge-exemptions">15.3 헤지 면제 (Hedge Exemptions)</h3>
+<ul>
+<li><strong>비금융 주체</strong>는 비금융 상업 활동에 직접 관련된 리스크를 객관적으로 측정 가능하게 감소시키는 포지션에 대해 MiFID II 제57(1)조에 따라 포지션한도 면제 신청 가능</li>
+<li><strong>금융 주체</strong>는 헤지 계약을 포지션한도에 산입해야 함 (헤지 면제 불가)</li>
+<li>신청 절차: MiFID II 제57(1)조 및 위원회 위임 규정 (EU) 2017/591 제8조에 따라 BaFin에 제출</li>
+<li>승인되면 “헤지”로 표시된 포지션은 포지션한도 체제 외에 해당</li>
+</ul>
+</section>
+<section id="비상품-포지션한도-non-commodity-position-limits" class="level3">
+<h3 class="anchored" data-anchor-id="비상품-포지션한도-non-commodity-position-limits">15.4 비상품 포지션한도 (Non-Commodity Position Limits)</h3>
+<ul>
+<li>주가지수 및 금리 파생상품에 대해서는 경성 포지션한도 대신 <strong>포지션 보고</strong> 요건 적용</li>
+<li>대규모 포지션 보고 기준은 Eurex Market Supervision의 강화된 모니터링 발동</li>
+<li>거래소 규정은 예외적 상황에서 상품별 포지션한도를 부과할 수 있음</li>
+</ul>
+<p>[출처: BaFin, “Position limits for commodity derivatives”, https://www.bafin.de/EN/Aufsicht/BoersenMaerkte/Derivate/PositionslimitsWarenderivate/positionslimits_warenderivate_node_en.html]</p>
+<hr>
+</section>
+</section>
+<section id="블록거래-대량매매-efp-efs-장외-매매-시설-block-trading-efp-efs-off-book-trading-facilities" class="level2">
+<h2 class="anchored" data-anchor-id="블록거래-대량매매-efp-efs-장외-매매-시설-block-trading-efp-efs-off-book-trading-facilities">16. 블록거래 (대량매매) / EFP / EFS – 장외 매매 시설 (Block Trading / EFP / EFS – Off-Book Trading Facilities)</h2>
+<section id="eurex-t7-entry-services-tes" class="level3">
+<h3 class="anchored" data-anchor-id="eurex-t7-entry-services-tes">16.1 Eurex T7 Entry Services (TES)</h3>
+<p>Eurex T7 Entry Services는 매매참가자가 장외 거래를 Eurex 시스템에 입력하여, 맞춤형 매매의 유연성과 Eurex Clearing을 통한 표준화된 청산 및 결제를 결합할 수 있게 한다.</p>
+<p><strong>이용 가능한 TES 유형:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 57%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>서비스</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>블록거래 (대량매매) (Block Trades)</strong></td>
+<td>협의된 가격으로 표준 Eurex 상품의 장외 체결; 최소 블록거래 규모 (MBTS) 적용</td>
+</tr>
+<tr class="even">
+<td><strong>현물 교환 — 금융 (EFP-F)</strong></td>
+<td>장외 채권 거래의 선물 레그 체결 및 청산; 채권 선물에 대한 자동 승인 기능 이용 가능</td>
+</tr>
+<tr class="odd">
+<td><strong>스왑 교환 (EFS)</strong></td>
+<td>선물 포지션과 OTC 스왑 포지션 교환</td>
+</tr>
+<tr class="even">
+<td><strong>지수종가 매매 (TAIC)</strong></td>
+<td>지수의 공식 종가에서 거래 체결</td>
+</tr>
+<tr class="odd">
+<td><strong>다자간 블록거래 (Multilateral Block Trades)</strong></td>
+<td>복수 상대방과의 블록거래를 단일 거래로 등록 (예: 매수자 1명 vs.&nbsp;매도자 3명)</td>
+</tr>
+<tr class="even">
+<td><strong>비공개 시설 (Non-Disclosure Facility)</strong></td>
+<td>참여자가 신원을 공개하지 않고 거래 가능</td>
+</tr>
+</tbody>
+</table>
+<p><strong>TES 입력 및 승인 시간:</strong> - 채권 선물의 EFP 및 EFS에 대한 입력 및 승인 시간이 매매일 종료 (CET 22:00)까지 연장</p>
+</section>
+<section id="eurex-enlight-선택적-rfq-플랫폼" class="level3">
+<h3 class="anchored" data-anchor-id="eurex-enlight-선택적-rfq-플랫폼">16.2 Eurex EnLight – 선택적 RFQ 플랫폼</h3>
+<ul>
+<li><strong>장내, 장외</strong> 선택적 호가요청(RFQ) 기능</li>
+<li>T7과의 완전한 직행처리(STP)를 통한 통합</li>
+<li><strong>주요 기능</strong>:
+<ul>
+<li><strong>익명 협상</strong>: 요청자가 RFQ를 익명으로 수행 가능; 협상 중 또는 후에 신원 공개 없음</li>
+<li><strong>스마트 RFQ</strong>: 과거 데이터에 기반하여 유리하게 응답할 가능성이 높은 회원 제안</li>
+<li><strong>유출 통제</strong>: 영업 데스크가 RFQ를 수신할 상대방 및 포함할 정보량을 전적으로 통제</li>
+</ul></li>
+<li><strong>최소 규모</strong>: EnLight 최소 블록거래 규모 (EMBTS) 적용; 상품별 상이</li>
+<li><strong>접근</strong>: API, Bloomberg Tradebook, Trading Technologies 및 기타 ISV 플랫폼을 통해 이용 가능</li>
+</ul>
+<p>[출처: Eurex, “Block Trades”, https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades] [출처: Eurex, “Eurex EnLight”, https://www.eurex.com/ex-en/trade/market-models/enlight]</p>
+<hr>
+</section>
+</section>
+<section id="인도-및-결제-delivery-settlement" class="level2">
+<h2 class="anchored" data-anchor-id="인도-및-결제-delivery-settlement">17. 인도 및 결제 (Delivery &amp; Settlement)</h2>
+<section id="현금결제-cash-settlement" class="level3">
+<h3 class="anchored" data-anchor-id="현금결제-cash-settlement">17.1 현금결제 (Cash Settlement)</h3>
+<p><strong>지수 파생상품, 변동성 파생상품, 배당 파생상품, 단기금융 선물</strong>에 적용:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품 유형</th>
+<th>최종결제가 결정</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EURO STOXX 50 선물/옵션</td>
+<td>최종결제일 CET 11:50~12:00 사이 산출된 EURO STOXX 50 지수값의 평균</td>
+</tr>
+<tr class="even">
+<td>DAX 선물/옵션</td>
+<td>최종결제일 DAX 구성종목의 장중 단일가매매 가격에 기반</td>
+</tr>
+<tr class="odd">
+<td>VSTOXX 선물</td>
+<td>만기일 VSTOXX 지수 계산에 기반</td>
+</tr>
+<tr class="even">
+<td>Euribor / Euro STR 선물</td>
+<td>최종결제일 기준금리 고시에 기반</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="실물인도-physical-delivery" class="level3">
+<h3 class="anchored" data-anchor-id="실물인도-physical-delivery">17.2 실물인도 (Physical Delivery)</h3>
+<p><strong>채권 선물, 개별주식 선물, 주식 옵션</strong>에 적용:</p>
+<p><strong>채권 선물 인도 절차:</strong> 1. <strong>통지</strong>: 미결제 매도 포지션을 보유한 청산회원은 최종 거래일에 인도할 특정 채권 (인도 가능 바스켓 중)을 사후매매 풀 기간 종료까지 Eurex에 통지 필요 2. <strong>인도일</strong>: 만기월 10번째 역일 (또는 다음 거래소 영업일) 3. <strong>전환계수</strong>: 명목 쿠폰 (6%)과 인도 채권의 실제 쿠폰 간 차이를 조정하기 위해 적용 4. <strong>최저비용 인도 (CTD)</strong>: 매도 포지션 보유자가 통상 전환계수 및 시장 상황에 기반하여 인도 비용이 가장 낮은 채권을 선택</p>
+<p><strong>개별주식 선물/옵션:</strong> - 기초 주식의 실물인도 - 해당 CSD (Clearstream 또는 기타 연결 결제 시스템)를 통한 Eurex Clearing 경유 결제 - 표준 결제 주기 (대부분의 유럽 시장에서 T+2)에 인도</p>
+</section>
+<section id="변동증거금-일일-정산-variation-margin-daily-settlement" class="level3">
+<h3 class="anchored" data-anchor-id="변동증거금-일일-정산-variation-margin-daily-settlement">17.3 변동증거금 (일일 정산) (Variation Margin / Daily Settlement)</h3>
+<ul>
+<li><strong>선물</strong>: 현금 변동증거금 지급을 통한 일일 시가평가</li>
+<li><strong>일일정산가</strong>: 현행 만기월에 대해 CET 17:15 직전 1분간 거래의 거래량 가중 평균으로 산출 (해당 기간 5건 이상 거래 시)</li>
+<li>지정 결제은행을 통한 Eurex Clearing AG 경유 결제</li>
+</ul>
+<p>[출처: Eurex, “Euro-Bund Futures (FGBL)”, https://www.eurex.com/ex-en/markets/int/fix/government-bonds/Euro-Bund-Futures-137298] [출처: Eurex, “Contract Specifications”, https://www.eurex.com/exchange-en/resources/rules-regulations/Contract-specifications/136774]</p>
+<hr>
+</section>
+</section>
+<section id="부록-krx-파생상품-시장과의-비교-appendix-comparison-with-krx-derivatives-market" class="level2">
+<h2 class="anchored" data-anchor-id="부록-krx-파생상품-시장과의-비교-appendix-comparison-with-krx-derivatives-market">부록: KRX 파생상품 시장과의 비교 (Appendix: Comparison with KRX Derivatives Market)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 38%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>특성</th>
+<th>Eurex</th>
+<th>KRX</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>대표 주가지수 상품</td>
+<td>EURO STOXX 50 선물/옵션</td>
+<td>KOSPI 200 선물/옵션</td>
+</tr>
+<tr class="even">
+<td>금리 벤치마크</td>
+<td>Euro-Bund 선물</td>
+<td>KTB 선물 (3년, 10년)</td>
+</tr>
+<tr class="odd">
+<td>증거금 방법론</td>
+<td>Prisma (포트폴리오 기반 과거 VaR)</td>
+<td>SPAN 기반 (신규 방법론 전환 중)</td>
+</tr>
+<tr class="even">
+<td>매매시스템</td>
+<td>T7 (Deutsche Borse 자체 개발)</td>
+<td>EXTURE+ (KRX 자체 개발)</td>
+</tr>
+<tr class="odd">
+<td>청산</td>
+<td>Eurex Clearing AG (독립 CCP)</td>
+<td>KRX CCP (통합형 거래소-청산)</td>
+</tr>
+<tr class="even">
+<td>교차 증거금</td>
+<td>ETD-OTC 교차 증거금 이용 가능</td>
+<td>제한적 교차 증거금</td>
+</tr>
+<tr class="odd">
+<td>매매시간</td>
+<td>최대 21시간 (01:00 - 22:00 CET)</td>
+<td>대부분 상품 ~6.5시간 (09:00 - 15:45 KST)</td>
+</tr>
+<tr class="even">
+<td>장외 매매</td>
+<td>T7 Entry Services, Eurex EnLight</td>
+<td>제한적 장외 시설</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="출처-sources" class="level2">
+<h2 class="anchored" data-anchor-id="출처-sources">출처 (Sources)</h2>
+<ul>
+<li><a href="https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494">Eurex, “Full year and December 2025 figures at Eurex”</a></li>
+<li><a href="https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2024-figures-at-Eurex-4250318">Eurex, “Full year and December 2024 figures at Eurex”</a></li>
+<li><a href="https://www.eurex.com/ex-en/markets">Eurex, “Markets”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/trading-hours">Eurex, “Trading hours”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/order-book-trading/order-types">Eurex, “Order types”</a></li>
+<li><a href="https://www.eurex.com/ex-en/support/technology/t7">Eurex, “T7”</a></li>
+<li><a href="https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf">Eurex, “Insights into Trading System Dynamics”, March 2025</a></li>
+<li><a href="https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0">Eurex, “T7 Release 14.0”</a></li>
+<li><a href="https://www.eurex.com/ex-en/support/technology/connectivity">Eurex, “Connectivity”</a></li>
+<li><a href="https://www.eurex.com/ex-en/support/initiatives/archive/release8/Market-and-Reference-Data-Interfaces-1546120">Eurex, “Market and Reference Data Interfaces”</a></li>
+<li><a href="https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality">Eurex, “Volatility Interruption Functionality”</a></li>
+<li><a href="https://www.eurex.com/resource/blob/2448162/28033c3a73ea19078860573d526f8f33/data/presentation-trading-safeguards.pdf">Eurex, “Trading Safeguards”, October 2025</a></li>
+<li><a href="https://www.eurex.com/ex-en/rules-regs/regulations/mifid-mifir">Eurex, “MiFID II/MiFIR”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/transaction-fees">Eurex, “Transaction fees”</a></li>
+<li><a href="https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma">Eurex Clearing, “Eurex Clearing Prisma”</a></li>
+<li><a href="https://www.eurex.com/ec-en/services/margining/margining-process">Eurex Clearing, “Margining process”</a></li>
+<li><a href="https://www.eurex.com/ec-en/services/margining/cross-margining">Eurex Clearing, “Cross-margining”</a></li>
+<li><a href="https://www.eurex.com/ec-en/join/admission-requirements/Membership-Types-24040">Eurex Clearing, “Membership Types”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades">Eurex, “Block Trades”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/market-models/enlight">Eurex, “Eurex EnLight”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/market-making-and-liquidity-provisioning">Eurex, “Market-Making and Liquidity provisioning”</a></li>
+<li><a href="https://www.bafin.de/EN/Aufsicht/BoersenMaerkte/Derivate/PositionslimitsWarenderivate/positionslimits_warenderivate_node_en.html">BaFin, “Position limits for commodity derivatives”</a></li>
+<li><a href="https://www.eurex.com/exchange-en/resources/rules-regulations/Contract-specifications/136774">Eurex, “Contract Specifications”</a></li>
+<li><a href="https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026--4867350">Eurex, “Our path for 2026”</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Eurex">Wikipedia, “Eurex”</a></li>
+<li><a href="https://www.marketswiki.com/wiki/Eurex">MarketsWiki, “Eurex”</a></li>
+<li><a href="https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/">Deutsche Boerse Risk, “Cloud Prisma Margin Estimator”</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

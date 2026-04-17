@@ -1,0 +1,994 @@
+---
+title: "SGX Derivatives"
+subtitle: "Derivatives > Exchanges"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 1
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Singapore Exchange Derivatives Trading Limited (SGX-DT) / Singapore Exchange Derivatives Clearing Limited (SGX-DC) |
+| Abbreviation | SGX Derivatives |
+| Website | https://www.sgx.com/derivatives |
+| Year Established | 1984 (as SIMEX — Singapore International Monetary Exchange); 1999 merged into SGX; SGX-DT and SGX-DC as separate entities within SGX Group |
+| Country / City | Singapore / Singapore (2 Shenton Way, SGX Centre 1) |
+| Ownership Structure | Part of SGX Group, which is publicly listed on its own exchange (ticker: S68) |
+| Parent Company / Group | Singapore Exchange Limited (SGX Group) |
+| Regulatory Authority | Monetary Authority of Singapore (MAS) |
+| Annual Revenue (FY2025) | Equities — Derivatives: SGD 345.9 million (+13.8% YoY); Currencies & Commodities: SGD 312.5 million (+8.6% YoY); SGX Group total: SGD 1.30 billion (record) |
+| Annual Derivatives Volume (CY2025) | 329 million contracts (record) across equities, FX, and commodities |
+| Average Daily Volume (Feb 2025) | ~1.4 million contracts/day (derivatives DAV +8% YoY) |
+| Listed Instruments | Futures and options across equity indices (>15 Asian markets), FX (6+ currency pairs), commodities (iron ore, freight, rubber, coking coal, steel), interest rates (JGB, APAC bonds), and digital assets (BTC, ETH perpetual futures) |
+| Clearing House | SGX Derivatives Clearing Limited (SGX-DC) — central counterparty |
+
+[Source: SGX Group FY2025 Annual Report; SGX Group market statistics press releases, February 2025; TipRanks, "SGX Ends 2025 With Record Derivatives Volumes", January 2026]
+
+### Key Historical Milestones
+
+- **1984:** Singapore International Monetary Exchange (SIMEX) established as Asia's first financial futures exchange; launched Eurodollar futures via mutual offset with CME
+- **1986:** SIMEX launches Nikkei 225 futures — pioneering offshore access to Japanese equity markets; first offshore listing of a major Asian equity index
+- **1999 (1 December):** SGX formed through merger of Stock Exchange of Singapore (SES), SIMEX, and Securities Clearing and Computer Services Pte Ltd, enabled by the Exchanges (Demutualisation and Merger) Act 1999
+- **2000:** SGX listed on its own Mainboard (23 November); established SGX Derivatives Trading (SGX-DT) and SGX Securities Trading (SGX-ST) as separate arms
+- **2002:** Launched Japanese Government Bond (JGB) futures
+- **2003:** Technology partnership with Nasdaq for trading systems commenced
+- **2006:** Launched FTSE China A50 Index Futures — the first and only USD-denominated A-share futures contract globally
+- **2007:** Launched AsiaClear, OTC clearing service for commodities; launched iron ore swaps
+- **2009:** Launched SGX iron ore futures — now the global benchmark for seaborne iron ore derivatives
+- **2010:** Proposed merger with ASX for AUD 8.4 billion; blocked by Australian government in 2011
+- **2013:** Acquired 24.9% stake in the Baltic Exchange (full acquisition in 2017)
+- **2014:** Launched FX futures (USD/CNH, INR/USD, and other Asian currency pairs)
+- **2015:** Announced next-generation derivatives platform (Titan) using Nasdaq Genium INET technology
+- **2016–2017:** SGX Titan DT/DC derivatives trading and clearing platform goes live, replacing legacy systems
+- **2018:** Launched FTSE-SGX indices; expanded iron ore and commodity suite
+- **2019:** Upgraded securities trading engine to Nasdaq multi-matching engine
+- **2020:** Extended FX derivatives product suite; record iron ore volumes
+- **2022:** Signed GIFT Connect agreement with NSE (India) for Nifty derivatives transition
+- **2023 (3 July):** NSE IX-SGX GIFT Connect became fully operational — Nifty derivatives migrated to NSE International Exchange in GIFT City, India
+- **2025 (November):** Launched institutional-grade Bitcoin and Ethereum perpetual futures tied to iEdge-CoinDesk Cryptocurrency Indices
+- **2025:** Record annual derivatives volume of 329 million contracts; record FX futures volumes; record OTC FX ADV of USD 143 billion; record MSCI Singapore OI
+- **2026 (April, planned):** Launch of Asia Pacific Government Bond Futures covering India, Indonesia, Malaysia, Thailand, and the Philippines
+- **2027 (planned):** New securities trading engine "Iris-ST" expected to go live in second half of 2027
+
+[Source: SGX website, "About SGX"; Wikipedia, "Singapore Exchange"; SGX press releases 2022–2026; SGX FY2025 Annual Report; PR Newswire, "SGX Derivatives breaks new ground with institutional-grade crypto perpetual futures", November 2025; Markets Media, "SGX Derivatives to Launch Asia Pacific Government Bond Futures", March 2026]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments / Asset Classes
+
+SGX Derivatives offers one of Asia's broadest multi-asset derivatives platforms, organized by underlying asset class:
+
+| Asset Class | Products | Key Contracts |
+|-------------|----------|---------------|
+| **Equity Index** | Futures and options on major Asian indices; covers >80% of Asia's economies | FTSE China A50, Nikkei 225 (JPY & USD), MSCI Singapore, MSCI Taiwan, MSCI Indonesia, MSCI India, MSCI Thailand, MSCI Philippines, Hang Seng Index, Hang Seng China Enterprises Index, S&P/ASX 200 |
+| **FX Derivatives** | Futures and options on Asian currency pairs (listed) + OTC FX | USD/CNH, INR/USD, KRW/USD, AUD/USD, AUD/JPY, USD/SGD |
+| **Commodities** | Futures, swaps, and options on bulk commodities and freight | TSI Iron Ore CFR China 62% Fe, Iron Ore 65% Fe, Coking Coal, Steel Rebar, Rubber (TSR20, RSS3), Freight (FFA), Energy (fuel oil, naphtha) |
+| **Interest Rates** | Government bond futures | Japanese Government Bond (JGB) Futures; Asia Pacific Government Bond Futures (India, Indonesia, Malaysia, Thailand, Philippines — launching April 2026) |
+| **Digital Assets** | Perpetual futures | Bitcoin Perpetual Futures, Ethereum Perpetual Futures (launched November 2025) |
+| **GIFT Connect** | India Nifty index derivatives via NSE IX | GIFT Nifty 50, GIFT Nifty Bank, GIFT Nifty Financial Services, GIFT Nifty IT (traded on NSE IX, accessible via SGX) |
+
+[Source: SGX website, "Derivatives Products"; Exegy, "Singapore Exchange Links Traders to Diverse APAC Products"; SGX press releases 2025–2026]
+
+### 2.2 Trading Sessions / Hours
+
+**Note:** Singapore Standard Time (SST/SGT) is UTC+8 year-round (no daylight saving time).
+
+SGX Derivatives operates extended trading hours — up to approximately 22 hours per day for many products — providing coverage across Asian, European, and North American time zones.
+
+**Equity Index Derivatives (Representative: FTSE China A50, Nikkei 225)**
+
+| Session | Local Time (SGT) | UTC | Description |
+|---------|------------------|-----|-------------|
+| **Pre-Open (T Session)** | 08:45 – 09:00 | 00:45 – 01:00 | Order entry; no matching. Cancellations blocked in final 2 minutes |
+| **T Session (Day)** | 09:00 – 16:30 | 01:00 – 08:30 | Continuous trading |
+| **Break** | 16:30 – 17:00 | 08:30 – 09:00 | Session break |
+| **Pre-Open (T+1 Session)** | 16:55 – 17:00 | 08:55 – 09:00 | Order entry for T+1 session |
+| **T+1 Session (Extended)** | 17:00 – 05:15 +1 | 09:00 – 21:15 | Extended trading covering European and U.S. hours |
+
+**Nikkei 225 Specific:**
+- T Session: 07:30 – 14:55 SGT (23:30 – 06:55 UTC)
+- T+1 Session: 15:10 – 05:15 +1 SGT (07:10 – 21:15 UTC)
+- Extended hours cover through the close of London markets
+
+**FX Derivatives (USD/CNH, INR/USD)**
+
+| Session | Local Time (SGT) | UTC |
+|---------|------------------|-----|
+| T Session | 07:25 – 19:55 | 23:25 – 11:55 |
+| Break | 19:55 – 20:15 | 11:55 – 12:15 |
+| T+1 Session | 20:15 – 05:15 +1 | 12:15 – 21:15 |
+
+**Commodity Derivatives (Iron Ore)**
+
+| Session | Local Time (SGT) | UTC |
+|---------|------------------|-----|
+| T Session | 07:25 – 19:55 | 23:25 – 11:55 |
+| Break | 19:55 – 20:15 | 11:55 – 12:15 |
+| T+1 Session | 20:15 – 04:45 +1 | 12:15 – 20:45 |
+
+**Order Entry Rules:**
+- Orders accepted starting 15 minutes before the opening of the T session
+- Orders accepted starting 5 minutes before the opening of the T+1 session
+- In the final 2 minutes before each session opens: only new order placements are accepted — no price modifications or cancellations allowed
+
+[Source: SGX website, "Trading"; QuantConnect, "SGX Market Hours"; Trading Technologies, "SGX Overview"; Capital Futures Corp., "SGX Contract Specifications"]
+
+### 2.3 Tick Sizes (Selected Products)
+
+| Product | Tick Size | Tick Value |
+|---------|-----------|------------|
+| FTSE China A50 Futures | 5 index points | USD 5.00 |
+| Nikkei 225 Futures (JPY) | 5 index points | JPY 2,500 |
+| Nikkei 225 Futures (USD) | 5 index points | USD 25.00 |
+| MSCI Singapore Futures | 0.05 index points | SGD 10.00 |
+| TSI Iron Ore 62% Futures | USD 0.01/metric tonne | USD 1.00 |
+| USD/CNH Futures | 0.0001 CNH | Approx. USD 10.00 per tick [unverified] |
+| INR/USD Futures | 0.01 US cents per 100 INR | USD 2.00 |
+| Bitcoin Perpetual Futures | USD 5.00 | USD 5.00 [unverified] |
+
+### 2.4 Lot Sizes / Contract Units
+
+| Product | Contract Unit |
+|---------|--------------|
+| FTSE China A50 Futures | USD 1 x Index |
+| Nikkei 225 Futures (JPY) | JPY 500 x Index |
+| Nikkei 225 Futures (USD) | USD 5 x Index |
+| Nikkei 225 Mini Futures | JPY 100 x Index |
+| MSCI Singapore Futures | SGD 200 x Index |
+| TSI Iron Ore 62% Futures | 100 metric tonnes |
+| INR/USD Futures | INR 2,000,000 |
+| USD/CNH Futures | USD 100,000 |
+
+[Source: Barchart.com, "SGX Contract Specifications"; SGX website, "Derivatives Products"; Capital Futures Corp., "SGX Contract Specifications"]
+
+### 2.5 Market Maker / Liquidity Provider Programs
+
+SGX operates designated market maker programs across its derivatives markets:
+
+**Program Structure:**
+- **Designated Market Makers (DMMs):** Obligated to provide continuous two-sided quotes for assigned products; must meet quoting obligations in terms of spread width, minimum quantity, and time in market
+- SGX-DT may reduce or waive fees, levies, and charges for qualifying DMMs as incentive
+- Performance measured against KPIs typically tied to volume, spread maintenance, and market presence
+
+**Key Features:**
+- Fee discounts and rebates for qualifying market makers
+- Volume-based incentive tiers — higher volumes unlock greater incentives
+- Programs cover equity index derivatives, FX futures, commodity derivatives, and options
+- Market maker participation was critical during market stress events (e.g., Covid-19 pandemic), supporting liquidity in key contracts
+
+**Coverage:**
+- Equity index futures and options (FTSE China A50, Nikkei 225, MSCI suite)
+- FX futures (USD/CNH, INR/USD)
+- Iron ore and commodity derivatives
+- Options markets across asset classes
+
+[Source: SGX Rulebook, "Chapter 5 — Designated Market-Maker"; SGX Rulebook, "6.6 Obligations of a Designated Market-Maker"; The Edge Singapore, "Where's the liquidity?"]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+**Opening Auction (Pre-Open / Non-Cancel):**
+- Pre-Open phase allows order entry, amendment, and cancellation
+- In the final 2 minutes before session open, only new order placements are accepted (no modifications or cancellations)
+- At session open, accumulated orders are matched at a single equilibrium price computed by SGX's matching algorithm
+- The algorithm maximizes matched volume at the equilibrium price
+
+**Closing / Settlement:**
+- Daily settlement prices are determined based on trading activity during defined settlement windows
+- For equity index contracts, final settlement price is typically based on the official closing price of the underlying index on the last trading day
+
+### 3.2 Continuous Trading
+
+- Primary mechanism: continuous electronic matching on the SGX Titan DT platform
+- Orders matched in real-time during T and T+1 sessions
+- Supports outright orders and spread strategies (calendar spreads, inter-commodity spreads)
+- T+1 sessions provide extended hours with continuous matching but typically have thinner order books
+
+### 3.3 Price Discovery
+
+- Extended trading hours (up to ~22 hours/day for key products) provide continuous price discovery spanning Asian, European, and U.S. market hours
+- SGX's position as the primary offshore listing venue for major Asian indices (Nikkei 225, FTSE China A50) makes it a key price discovery venue outside home market hours
+- Nikkei 225 futures on SGX often lead price discovery during non-Japan trading hours
+- FTSE China A50 futures serve as the primary price discovery mechanism for China A-share exposure when mainland markets are closed
+
+### 3.4 Order Priority Rules / Matching Algorithms
+
+All orders on SGX Derivatives are matched using **Price-Time Priority** (FIFO) as the default algorithm:
+
+| Algorithm | Description | Application |
+|-----------|-------------|-------------|
+| **Price-Time Priority (FIFO)** | Strict price priority, then time priority at each price level; earliest order at best price is filled first | Default for most futures products |
+| **Price Point Maker (PPM)** | Alternative algorithm giving priority to resting passive orders | Selected products [unverified] |
+| **Pro-Rata** | Allocation proportional to order size at each price level | Selected options markets [unverified] |
+| **Market Maker (MM)** | Market maker receives priority allocation | Applicable where DMM program is in effect |
+
+**Key Rules:**
+- Price priority is absolute — better-priced orders always fill first
+- Within the same price, time priority determines allocation (FIFO)
+- During opening/closing routines, orders are matched at a single equilibrium price
+- Self-Trade Prevention (STP) functionality available to prevent matching of orders from the same firm
+
+[Source: SGX Rulebook, "Practice Note 8.2.1 — Application of Market Phases and Algorithm"; SGX Rulebook, "Regulatory Notice 8.2.1 — Trading Hours, Market Phases, Application of Market Phases and Principles and Rules for Trade Matching"; Trading Technologies, "SGX Overview"]
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Limit** | Buy/sell at a specified price or better; unfilled quantity rests on the book |
+| **Market** | Executes immediately at the best available price; any unfilled portion is cancelled or rests depending on configuration |
+| **Market to Limit** | Executes at the best available price; unfilled quantity converts to a limit order at the last execution price |
+
+### 4.2 Advanced Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Stop Limit** | Triggered when the stop price is reached; once triggered, becomes a limit order at the specified limit price |
+| **Stop Market** | Triggered when the stop price is reached; once triggered, becomes a market order |
+| **Stop Market to Limit** | Triggered when the stop price is reached; once triggered, becomes a market-to-limit order |
+| **Spread Orders** | Calendar spreads and inter-commodity spread strategies |
+| **Mass Quote** | Allows market makers to submit multiple two-sided quotes in a single message via OUCH protocol |
+
+### 4.3 Time-in-Force (TIF) Conditions
+
+| TIF | Description |
+|-----|-------------|
+| **Day** | Valid for the current trading session only; cancelled at session end |
+| **Good Till Cancel (GTC)** | Remains active until filled or explicitly cancelled |
+| **Good Till Date (GTD)** | Remains active until a specified date |
+| **Fill and Kill (FAK)** | Executes immediately for any available quantity; unfilled portion is cancelled |
+| **Fill or Kill (FOK)** | Must be filled entirely and immediately, or the entire order is cancelled |
+
+### 4.4 Order Modification & Cancellation
+
+- Orders can be modified (price, quantity) or cancelled at any time during trading sessions via the OUCH protocol
+- **Replace Order:** Modifies an existing order (price/quantity change) while maintaining or updating time priority
+- **Cancel Order:** Cancels a specific order by order token
+- **Cancel by Order ID:** Alternative cancellation method using the exchange-assigned order ID
+- **Self-Trade Prevention (STP):** Enhanced in 2024/2025 to allow configurable prevention of self-matching within the same firm
+
+[Source: Trading Technologies, "SGX Supported Order Types"; OnixS, "SGX Titan OUCH Trading Handler — EnterOrder"; SGX Titan OUCH Protocol Specifications; Trading Technologies, "SGX Self-Trade Prevention Enhancement"]
+
+---
+
+## 5. Trading System Technology — SGX Titan
+
+### 5.1 System Overview
+
+| Item | Details |
+|------|---------|
+| Platform Name | SGX Titan DT (Derivatives Trading) / SGX Titan DC (Derivatives Clearing) |
+| Technology Vendor | Nasdaq (Genium INET version 4) |
+| First Announced | December 2014 |
+| Go-Live | 2016–2017 (phased migration from legacy platform) |
+| Architecture | High-performance, low-latency matching engine with product-level partitioning |
+| Primary Data Center | Co-location facility in Singapore |
+| Order Entry Protocol | OUCH (Nasdaq native binary protocol for asynchronous order entry) |
+| Market Data Protocol | ITCH (Nasdaq native binary multicast protocol for market data) |
+| Recovery Protocol | GLIMPSE (order book snapshot recovery for ITCH) |
+| Average Latency | Sub-90 microseconds (benchmark average); sub-200 microseconds round-trip in production |
+| Throughput | >1 million messages per second |
+
+### 5.2 Architecture
+
+- **Matching Engine:** Product-partitioned matching engines running on dedicated hardware optimized for deterministic, low-latency processing
+- **Order Entry Gateway:** OUCH protocol servers providing direct, asynchronous order entry with minimal overhead
+- **Market Data Dissemination:** ITCH multicast feed providing real-time, full-depth order book data to all connected participants
+- **Clearing Engine (Titan DC):** Integrated clearing platform processing trades in near-real-time for risk management and settlement
+- **Deterministic Processing:** Designed for consistent, predictable latency with minimal jitter
+
+### 5.3 Latency
+
+- **Benchmark Latency:** Sub-90 microseconds average (gate-to-gate) — among the fastest derivatives trading platforms globally at time of launch
+- **Production Round-Trip:** Sub-200 microseconds for co-located participants
+- **Order Routing Latency:** Approximately 100–150 microseconds via OUCH protocol
+- **Compared to Predecessor:** Significant improvement over previous SGX derivatives platform; Nasdaq marketing described Titan as "the world's fastest trading platform" at announcement
+
+### 5.4 Platform History & Evolution
+
+| Year | Milestone |
+|------|-----------|
+| 1984 | SIMEX trading floor opens — open outcry for financial futures |
+| 1999 | SGX formed; electronic trading introduced alongside open outcry |
+| 2003 | Nasdaq technology partnership begins for SGX trading systems |
+| 2014 (Dec) | SGX announces next-generation Titan platform using Nasdaq Genium INET v4 |
+| 2015 | Development and testing phase; originally targeted for late 2015 go-live |
+| 2016 | Vendor certification for Titan connectivity (OUCH/ITCH) completed May 2016; go-live postponed to end of 2016 |
+| 2017 | Full production migration to Titan DT/DC completed; legacy platform decommissioned |
+| 2019 | Securities trading engine upgraded to Nasdaq multi-matching engine (SGX-ST, 3 June 2019) |
+| 2025 | Self-Trade Prevention enhancement deployed on Titan DT |
+| 2027 (planned) | New securities trading engine "Iris-ST" planned; derivatives platform evolution TBD |
+
+### 5.5 Technology Stack
+
+| Component | Technology |
+|-----------|-----------|
+| **Order Entry** | OUCH — Nasdaq native binary protocol for low-latency, asynchronous order submission; supports Enter Order, Replace Order, Cancel Order, Cancel by Order ID messages |
+| **Market Data** | ITCH — Nasdaq native binary multicast protocol; provides full order-by-order depth-of-book data; supports incremental updates and order book reconstruction |
+| **Order Book Recovery** | GLIMPSE — snapshot recovery protocol for ITCH data; allows participants to rebuild full order book state after connection loss |
+| **ITCH Rewinder** | Replay of historical ITCH messages for recovery of lost packets |
+| **FIX Gateway** | FIX protocol access available for participants preferring standard FIX connectivity [unverified] |
+| **Clearing Integration** | Titan DC provides integrated clearing with real-time position and risk management |
+
+### 5.6 Disaster Recovery & Business Continuity
+
+- **Primary Data Center:** Co-location facility in Singapore
+- **DR Site:** Geographically separate backup site in Singapore [unverified]
+- **Recovery Model:** Real-time data replication between primary and backup environments
+- **Operational Support:** SGX operates follow-the-sun support model given extended trading hours (up to ~22 hours/day)
+- **System Resilience:** Nasdaq Genium INET platform designed with built-in redundancy and failover capabilities
+- **Regulatory Requirement:** MAS requires all approved exchange operators to maintain robust BCP and DR capabilities under its Technology Risk Management Guidelines
+
+[Source: Nasdaq Inc., "NASDAQ OMX to Deliver World's Fastest Trading Platform to Singapore Exchange", December 2014; OnixS, "SGX Titan DT ITCH and OUCH API SDKs"; WatersTechnology, "SGX Plans Titan for Derivatives"; SGX Titan ITCH & GLIMPSE Protocol Specifications, Release 1.4; Markets Media, "Object Trading Conforms to Upgraded SGX Titan Platform"]
+
+---
+
+## 6. Market Data
+
+### 6.1 Market Data Platform — ITCH
+
+| Feature | Details |
+|---------|---------|
+| Protocol | ITCH (Nasdaq native binary protocol) |
+| Encoding | Fixed-length binary messages for ultra-low-latency processing |
+| Transport | UDP multicast (primary dissemination) |
+| Recovery | GLIMPSE protocol for order book snapshots; ITCH Rewinder for packet replay |
+| Depth | Full order-by-order depth (Market by Order) |
+
+### 6.2 Feed Types / Data Levels
+
+| Feed Type | Description | Transport |
+|-----------|-------------|-----------|
+| **ITCH Real-Time** | Full depth, order-by-order market data including every order addition, modification, execution, and cancellation | UDP multicast |
+| **GLIMPSE** | Point-in-time snapshot of the full order book; used for recovery and initialization | TCP (request/response) |
+| **ITCH Rewinder** | Replay of historical ITCH messages from a specified sequence number; used for gap recovery | TCP |
+| **End-of-Day Files** | Settlement prices, volumes, open interest published daily | File-based download |
+
+### 6.3 Data Distribution
+
+- **Direct connectivity:** Co-located participants receive ITCH multicast data within the SGX data center at the lowest possible latency
+- **Managed Network:** Participants not co-located can access via SGX-approved network service providers or managed network services
+- **Redistributors:** Major data vendors (Bloomberg, Refinitiv, ICE Data Services, etc.) redistribute SGX market data under license
+- **SGX Data Services:** SGX provides historical data, analytics, and index data through its data products division
+- **Delayed Data:** Available through various financial portals and SGX's own website
+
+### 6.4 Market Data Licensing
+
+- SGX charges separate fees for real-time market data, delayed data redistribution, and historical data
+- Professional and non-professional fee tiers apply
+- Specific fee schedules available from SGX upon request or through the SGX website
+
+[Source: SGX Titan ITCH & GLIMPSE Protocol Specifications, Release 1.4; OnixS, "SGX Titan DT ITCH and OUCH API SDKs"; SGX website, "Data & Connectivity"]
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Access Types
+
+| Membership Type | Description | Key Requirements |
+|----------------|-------------|-----------------|
+| **Derivatives Trading Member** | Direct electronic access to SGX-DT for trading derivatives | MAS Capital Markets Services (CMS) license; meet SGX fit and proper criteria; minimum financial requirements |
+| **Derivatives Clearing Member — General** | Can clear own trades and trades of third parties (non-clearing members and customers) | Higher capital requirements; participation in SGX-DC clearing fund; MAS approval |
+| **Derivatives Clearing Member — Bank** | Bank-specific clearing membership; can clear own and third-party trades; access to Mutual Offset Systems | Must be a licensed bank; additional financial requirements |
+| **Non-Clearing Member** | Trades through a General Clearing Member or Bank Clearing Member | Must establish clearing arrangement with a clearing member |
+
+**Membership Statistics:**
+- SGX derivatives clearing is supported by major global banks and brokers
+- Eight prominent clearing members supported the November 2025 Bitcoin/Ethereum perpetual futures launch
+
+[Source: SGX website, "Memberships"; SGX Rulebook, "SGX-DC Clearing Rules"; SGX RegCo, "Memberships"]
+
+### 7.2 Connection Methods
+
+| Connection Type | Description |
+|----------------|-------------|
+| **Co-Location** | Direct physical proximity to SGX Titan matching engines within the SGX data center; lowest latency option |
+| **Managed Network Service** | Connectivity via SGX-approved network service providers |
+| **Offshore Hubs** | Access points in key financial centers (London, Chicago, Tokyo) for international participants [unverified] |
+| **Approved Network Service Providers** | Third-party network providers certified by SGX for derivatives market access |
+
+**Note:** SGX derivatives connectivity is effectively **co-location only** for participants requiring the lowest latency. All market access routes ultimately connect to the Titan DT platform within the SGX data center.
+
+### 7.3 Co-Location Services
+
+- **Location:** SGX data center in Singapore
+- **Facility:** Purpose-built co-location environment with proximity to Titan DT matching engines
+- **Benefits:** Unparalleled speed and efficiency for direct market access; minimized network latency
+- **Cabinet Options:** Standard rack space with power and cooling; specific configurations available on request
+- **Cross-Connects:** Direct fiber connections within the facility to SGX infrastructure
+
+### 7.4 API Protocols
+
+| API / Protocol | Purpose | Direction |
+|---------------|---------|-----------|
+| **Titan OUCH** | Order entry, modification, cancellation, execution reports | Inbound (client to exchange) and outbound (exchange to client) |
+| **Titan ITCH** | Real-time market data dissemination | Outbound (exchange to client) — UDP multicast |
+| **GLIMPSE** | Order book snapshot recovery | Request/response — TCP |
+| **FIX** | Alternative order entry for participants not using native OUCH [unverified] | Bidirectional — TCP |
+
+### 7.5 Certification (Conformance Testing)
+
+- **Mandatory:** All client systems connecting via Titan OUCH and ITCH must complete SGX conformance testing before production access
+- **Test Scope:** Covers OUCH order entry (enter, replace, cancel, cancel by order ID), ITCH market data processing, and GLIMPSE recovery
+- **Environment:** SGX provides a dedicated conformance test environment
+- **Recertification:** Required for significant system changes or protocol version upgrades
+- **ISV Support:** Multiple independent software vendors (OnixS, Trading Technologies, Object Trading, etc.) offer pre-certified SDKs and trading handlers for SGX Titan
+
+[Source: SGX website, "Market Access"; SGX website, "Co-Location"; SGX Titan ITCH and OUCH Conformance Test Scope, Version 1.0; OnixS, "SGX Titan DT ITCH and OUCH API SDKs"]
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Circuit Breaker Mechanism
+
+SGX's derivatives circuit breakers operate as dynamic price bands:
+
+- **Price Band Thresholds:** Upper and lower thresholds set as a prescribed percentage from a reference price
+- **Trigger:** When an incoming order seeks to match against a resting order at a price outside the threshold, a **Cooling-Off Period** is activated and the incoming order is rejected
+- **Cooling-Off Period:** A brief pause (typically 5 minutes) allowing the market to analyze conditions before resuming; designed to moderate the pace of large price movements without halting price discovery entirely
+- **Reference Price Calculation:**
+  - At the start of each Trading Phase: derived from the prior session's settlement or last traded price
+  - After the first 5 minutes: rolling reference price based on the last traded price as of 5 minutes prior to each potential trade
+  - If no trade in the preceding 5 minutes, the reference price at the start of the Trading Phase applies
+
+**Purpose:** The circuit breaker guards against disorderly situations from rapid, unchecked market movements. It is not intended to halt price movement but rather to allow market participants and regulators a pause to assess conditions. It also helps avert contagion risk to other markets.
+
+### 8.2 Price Limits (Selected Products)
+
+Specific price limit thresholds vary by product and are published by SGX in regulatory notices. Representative thresholds include:
+
+| Product Category | Typical Price Limit | Notes |
+|-----------------|---------------------|-------|
+| Equity Index Futures | +/- 10% to 15% from reference price | Varies by specific contract [unverified] |
+| Commodity Futures | +/- 15% to 20% from reference price | Iron ore, rubber, etc. [unverified] |
+| FX Futures | Product-specific bands | Wider bands for volatile EM currencies [unverified] |
+
+### 8.3 Pre-Trade Risk Controls
+
+| Control | Description |
+|---------|-------------|
+| **Price Banding** | Rejects orders outside an acceptable dynamic price range around the current market price |
+| **Maximum Order Size** | Limits on maximum quantity per order, configurable by clearing member |
+| **Credit Controls** | Real-time credit limit monitoring by clearing members for each trading participant |
+| **Self-Trade Prevention (STP)** | Configurable to prevent matching of orders from the same firm; enhanced in 2024/2025 |
+| **Cancel on Disconnect** | Optional feature to cancel all working orders upon connection loss |
+
+### 8.4 SGX-DC Clearing Financial Safeguards (Default Waterfall)
+
+| Layer | Description |
+|-------|-------------|
+| 1. Defaulted Member's Resources | Margin/collateral + clearing fund contribution of the defaulted member |
+| 2. SGX-DC's Contribution ("Skin in the Game") | SGD 200 million (increased from SGD 150 million; represents ~25% of clearing fund — higher than all U.S. and European CCPs) |
+| 3. Clearing Fund (Non-Defaulting Members) | Mutualized fund contributions from all non-defaulting clearing members, sized based on stress testing |
+| 4. Assessments | Additional capped financial contributions from clearing members |
+
+**Key Risk Management Features:**
+- Daily mark-to-market settlement through approved Settlement Banks
+- Intraday margin calls to cover shortfalls in margin requirements and potential mark-to-market losses
+- Clearing members must meet margin calls via Settlement Banks following intraday cycles
+- Clearing fund contributions scaled to the risks each member brings, based on stress losses over specified periods
+- SGX-DC is registered as a Derivatives Clearing Organization (DCO) with the U.S. CFTC, enabling access by U.S. market participants
+
+[Source: SGX Rulebook, "Practice Note 8.10A — Circuit Breaker"; SGX Rulebook, "Regulatory Notice 8.14.1 — Circuit Breaker"; WFE, "SGX Takes a Deep Look at Circuit Breakers"; SGX website, "Risk Management"; Hong Kong Lawyer, "Singapore Exchange Eyes Increase in Skin in the Game for OTC Derivatives Clearing"; CFTC, "SGX-DC Regulatory Compliance Chart"]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Primary Regulator
+
+- **Monetary Authority of Singapore (MAS):** Central bank and integrated financial regulator; supervises SGX as an Approved Exchange (AE) and SGX-DC as an Approved Clearing House (ACH) under the Securities and Futures Act 2001
+- **SGX RegCo:** Established in 2016 as an independent regulatory subsidiary of SGX Group; performs front-line regulatory functions including market surveillance, member regulation, listing regulation, and enforcement
+
+### 9.2 Key Legislation and Regulations
+
+| Regulation | Description |
+|-----------|-------------|
+| **Securities and Futures Act 2001 (SFA)** | Primary legislation governing securities and derivatives markets in Singapore; covers licensing, trading, clearing, market conduct, and market abuse |
+| **Securities and Futures (Trading of Derivatives Contracts) Regulations 2019** | Mandatory platform trading requirements for certain derivatives contracts |
+| **Securities and Futures (Reporting of Derivatives Contracts) Regulations 2013** | OTC derivatives reporting requirements to licensed trade repositories |
+| **MAS Technology Risk Management Guidelines** | Requirements for technology governance, IT security, availability, and disaster recovery for financial institutions including exchanges |
+| **SGX-DT Futures Trading Rules** | Exchange-specific rules governing trading conduct, order types, market phases, and member obligations |
+| **SGX-DC Clearing Rules** | Rules governing clearing membership, margin, settlement, default management, and the clearing fund |
+
+### 9.3 Market Surveillance
+
+- **SGX RegCo** conducts real-time market surveillance for manipulation, spoofing, wash trading, insider trading, and other forms of market abuse
+- Surveillance systems monitor trading patterns across both securities and derivatives markets
+- SGX RegCo has powers to investigate, discipline, and sanction members and listed companies
+- Cross-market surveillance capabilities spanning equity, derivatives, and OTC markets
+
+### 9.4 Reporting Requirements
+
+- **Large Position Reporting:** Members must have automated processes to monitor positions at the firm level; must report if at risk of breaching prudential limits on exposures to a single customer and a single contract
+- **OTC Derivatives Reporting:** Under the 2013 Regulations, counterparties must report OTC derivative contracts to a licensed trade repository (exchange-traded derivatives subject to different treatment)
+- **Clearing Member Reporting:** Daily reporting of margin, collateral, and financial position to SGX-DC
+- **Transaction Reporting:** Trade details reported to MAS as required
+
+### 9.5 Cross-Border Recognition
+
+- **U.S. CFTC:** SGX-DC is registered as a Derivatives Clearing Organization (DCO), enabling U.S. FCMs and customers to clear on SGX-DC; SGX-DT has been granted "no-action" relief for direct access by certain U.S. persons
+- **EU/EMIR:** SGX-DC recognized as a third-country CCP under EMIR for EU clearing member access
+- **GIFT Connect (India):** Regulatory framework established between MAS and SEBI/IFSCA for the NSE IX-SGX GIFT Connect
+- **Mutual Offset System (MOS):** Historically maintained with CME Group for Nikkei 225 and Eurodollar futures — enables positions opened on one exchange to be transferred to the other for close-out
+- **CPMI-IOSCO:** SGX-DC publishes disclosure documents in accordance with Principles for Financial Market Infrastructures (PFMI)
+- **Multiple bilateral MOUs** with regulators in Japan (JFSA), Hong Kong (SFC), Australia (ASIC), and others
+
+[Source: MAS website, "Securities and Futures Act 2001"; SGX Rulebook, "Futures Trading Rules"; SGX Rulebook, "SGX-DC Clearing Rules"; CFTC, "Industry Filings: Derivatives Clearing Organizations"; SGX website, "Memberships"]
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading & Clearing Fees
+
+SGX charges trading fees (to SGX-DT) and clearing fees (to SGX-DC) on a per-contract basis. Fees vary by product, membership type, and volume tier. Representative rates:
+
+| Product Category | Approximate Fee per Contract (per side) | Notes |
+|-----------------|----------------------------------------|-------|
+| Equity Index Futures (e.g., FTSE China A50) | USD 0.50 – 1.50 | Member rates substantially lower; volume discounts apply |
+| Nikkei 225 Futures | JPY 40 – 100 | Varies by JPY vs USD denomination |
+| FX Futures | USD 0.30 – 1.00 | High volume drives lower effective rate |
+| Iron Ore Futures | USD 0.50 – 1.50 | Volume incentive programs available |
+| Options on Futures | USD 0.50 – 2.00 | Premium-based clearing fee may also apply (0.05% of premium, max $200) |
+| NLT (Block) Trades | Separate fee schedule | Generally higher than electronic exchange fees |
+
+*Note: Exact fees are subject to change. SGX publishes detailed fee schedules on its website and through clearing member communications. The fees shown above are approximate ranges based on publicly available information from brokers.* [unverified — specific rates not confirmed from official SGX fee schedule]
+
+**Fee Tiers:**
+- **Member rates:** Substantially reduced compared to non-member rates
+- **Volume incentive programs:** Tiered discounts for high-volume participants
+- **Market maker discounts:** Fee reductions for designated market makers meeting quoting obligations
+- **Clearing fees:** Charged separately from trading fees; payable to SGX-DC
+
+### 10.2 Market Data Fees
+
+- Professional and non-professional fee tiers for real-time ITCH market data
+- Historical data available through SGX Data Services
+- Redistribution licenses for data vendors
+- Index licensing fees (FTSE, MSCI, Nikkei) embedded in product economics
+
+### 10.3 Connectivity & Co-Location Fees
+
+- Co-location rack space and power charges
+- Cross-connect fees within the SGX data center
+- Network connectivity fees for managed network service access
+- Specific fee schedules available from SGX upon request
+
+### 10.4 Revenue Breakdown (FY2025)
+
+SGX Group's record total net revenue of SGD 1.30 billion breaks down as follows across derivatives-related segments:
+
+| Segment | Revenue (SGD) | YoY Growth | % of Total |
+|---------|--------------|------------|------------|
+| Equities — Derivatives | 345.9 million | +13.8% | 26.6% |
+| Currencies & Commodities | 312.5 million | +8.6% | 24.0% |
+| Platform & Others | 238.0 million | +3.0% | 18.3% |
+| Equities — Cash | ~400+ million | +27.5% (SDAV) | ~31% |
+
+Derivatives-related revenue (equities derivatives + currencies & commodities) totalled approximately SGD 658 million, representing roughly 50.6% of SGX Group's total net revenue — underscoring SGX's identity as a derivatives-led exchange group.
+
+**OTC FX ADV:** Record USD 143 billion (+28% YoY in FY2025)
+
+[Source: SGX FY2025 Annual Report; SGX FY2025 Results Presentation; Yahoo Finance, "SGX posts record revenue, net profit in FY2025"; Interactive Brokers, "SGX Exchange and Regulatory Fees"]
+
+---
+
+## 11. Recent Developments
+
+### 11.1 System Upgrades & Technology
+
+- **Titan DT Enhancements:** Self-Trade Prevention (STP) enhancement deployed on Titan DT (2024/2025) — allows more granular configuration of self-match prevention
+- **Iris-ST (Planned 2027):** New securities trading engine planned for the second half of 2027; derivatives platform evolution likely to follow
+- **SGX-Nasdaq Global Listing Board:** Joint initiative announced in 2025 for companies with market cap above SGD 2 billion; dual-listing bridge between SGX and Nasdaq
+
+### 11.2 New Products & Market Developments
+
+- **Crypto Perpetual Futures (November 2025):** Launched Bitcoin and Ethereum perpetual futures — continuous, no-expiry structure with institutional-grade clearing and margining; supported by eight clearing members; debuted with ~2,000 lots (~USD 35 million notional) on day one; tied to iEdge-CoinDesk Cryptocurrency Indices
+- **Asia Pacific Government Bond Futures (April 2026):** First exchange-listed regional government bond futures covering India, Indonesia, Malaysia, Thailand, and the Philippines; USD-denominated; designed for sovereign rate risk hedging; trading commences 20 April 2026
+- **Record Derivatives Volumes (2025):** 329 million contracts — record year across equities, FX, and commodities
+  - FTSE China A50 futures: ~84 million lots in first 9 months (+20%)
+  - FX futures: 73.6 million contracts (+49.7% YoY); February 2025 alone saw 6.1 million contracts — all-time monthly high
+  - Commodity derivatives: 65.3 million contracts (+6.2%)
+  - Iron ore futures: 43.6 million contracts (+15%) — global volume record
+  - MSCI Singapore OI: record notional USD 6.1 billion (+80% YoY)
+  - FTSE China A50 OI: USD 13.8 billion (+24% YoY as of Feb 2025)
+- **GIFT Connect Growth:** GIFT Nifty monthly turnover exceeded USD 102 billion as of May 2025, with over 2 million contracts traded in that month
+
+### 11.3 Regulatory Changes
+
+- **MAS Legislative Proposals (2026):** MAS proposes legislative changes to facilitate dual listings on the SGX-Nasdaq Global Listing Board
+- **SGX RegCo ETF Market Maker Streamlining (2025):** Simplified designated market maker requirements for ETFs
+- **Enhanced Default Management:** SGX proposed changes to SGX-DC Clearing Rules to enhance default management capabilities, consistent with international best practices
+
+### 11.4 Strategic Initiatives
+
+- **Pan-Asian Gateway Strategy:** SGX continues to position itself as the primary international gateway for Asian derivatives exposure, covering >80% of Asia's economies through its equity index derivatives suite
+- **Iron Ore Global Benchmark:** SGX now clears over 90% of the world's seaborne iron ore derivatives, firmly establishing the SGX TSI Iron Ore 62% contract as the global benchmark
+- **Multi-Asset Expansion:** Strategic expansion across all asset classes — equities, FX, commodities, interest rates, digital assets — creating a comprehensive multi-asset platform
+- **GIFT Connect Deepening:** Continued growth of the NSE IX-SGX GIFT Connect with expanding product shelf (Nifty 50, Nifty Bank, Nifty Financial Services, Nifty IT) and growing volumes
+- **Interest Rate Product Expansion:** Leveraging existing JGB futures franchise and new APAC government bond futures to build a rates franchise complementing the multi-asset platform
+
+[Source: PR Newswire, "SGX Derivatives breaks new ground with institutional-grade crypto perpetual futures", November 2025; Markets Media, "SGX Derivatives to Launch Asia Pacific Government Bond Futures", March 2026; TipRanks, "SGX Ends 2025 With Record Derivatives Volumes", January 2026; FIA, "SGX iron ore futures set volume record"; SGX FY2025 Annual Report; FOW, "SGX weighs opportunities, in rates and new products"]
+
+---
+
+## Derivatives-Specific Sections
+
+---
+
+## D1. Product Catalog
+
+### By Asset Class
+
+#### Equity Index Derivatives
+
+| Product | Symbol | Contract Size | Settlement | Exchange/Venue |
+|---------|--------|---------------|------------|---------------|
+| FTSE China A50 Index Futures | CN | USD 1 x Index | Cash | SGX-DT |
+| FTSE China A50 Index Options | — | USD 1 x Index | Cash | SGX-DT |
+| Nikkei 225 Index Futures (JPY) | NK | JPY 500 x Index | Cash | SGX-DT |
+| Nikkei 225 Index Futures (USD) | NU | USD 5 x Index | Cash | SGX-DT |
+| Nikkei 225 Mini Futures | NM | JPY 100 x Index | Cash | SGX-DT |
+| Nikkei 225 Index Options | — | JPY 500 x Index | Cash | SGX-DT |
+| Nikkei 225 Total Return Futures | NR | JPY 10,000 x Index | Cash | SGX-DT |
+| MSCI Singapore Index Futures | SGP | SGD 200 x Index | Cash | SGX-DT |
+| MSCI Singapore Index Options | — | SGD 200 x Index | Cash | SGX-DT |
+| MSCI Taiwan Index Futures | TW | USD 100 x Index | Cash | SGX-DT |
+| MSCI Indonesia Index Futures | ID | USD 100 x Index | Cash | SGX-DT |
+| MSCI India Index Futures | — | USD 5 x Index | Cash | SGX-DT [unverified] |
+| MSCI Thailand Index Futures | — | USD 100 x Index | Cash | SGX-DT [unverified] |
+| MSCI Philippines Index Futures | — | USD 100 x Index | Cash | SGX-DT [unverified] |
+| Hang Seng Index Futures | — | HKD 50 x Index | Cash | SGX-DT [unverified] |
+| FTSE China H50 Index Futures | — | HKD 50 x Index | Cash | SGX-DT [unverified] |
+| S&P/ASX 200 Futures | — | AUD 25 x Index | Cash | SGX-DT [unverified] |
+| GIFT Nifty 50 Futures | IN | USD 2 x Index | Cash | NSE IX (via GIFT Connect) |
+| GIFT Nifty Bank Futures | — | USD 2 x Index | Cash | NSE IX (via GIFT Connect) |
+
+#### FX Derivatives
+
+| Product | Symbol | Contract Size | Settlement |
+|---------|--------|---------------|------------|
+| USD/CNH Futures | UC | USD 100,000 | Cash |
+| INR/USD Futures | IU | INR 2,000,000 | Cash |
+| KRW/USD Futures | KU | KRW 125,000,000 | Cash [unverified] |
+| AUD/USD Futures | AU | AUD 100,000 | Cash [unverified] |
+| AUD/JPY Futures | — | AUD 100,000 | Cash [unverified] |
+| USD/SGD Futures | — | USD 100,000 | Cash [unverified] |
+| FX Options | — | Various | Cash |
+
+#### Commodity Derivatives
+
+| Product | Symbol | Contract Size | Settlement |
+|---------|--------|---------------|------------|
+| TSI Iron Ore CFR China 62% Fe Futures | FEF | 100 metric tonnes | Cash (vs. TSI index) |
+| MB Iron Ore CFR China 65% Fe Futures | — | 100 metric tonnes | Cash (vs. Fastmarkets index) |
+| Iron Ore 62% Options | — | 100 metric tonnes | Cash |
+| TSI Coking Coal Futures | — | 100 metric tonnes | Cash |
+| Steel Rebar Futures | — | 10 metric tonnes | Cash [unverified] |
+| TSR20 Rubber Futures | — | 5 metric tonnes | Physical delivery |
+| RSS3 Rubber Futures | — | 5 metric tonnes | Physical delivery [unverified] |
+| Freight Futures (FFA) | — | Various | Cash |
+| Fuel Oil Futures | — | Various | Cash [unverified] |
+| Naphtha Futures | — | Various | Cash [unverified] |
+
+#### Interest Rate Derivatives
+
+| Product | Symbol | Contract Size | Settlement |
+|---------|--------|---------------|------------|
+| Japanese Government Bond (JGB) Futures | JB | JPY 100,000,000 face value | Cash [unverified] |
+| APAC Government Bond Futures — India | — | USD-denominated | Cash (launching April 2026) |
+| APAC Government Bond Futures — Indonesia | — | USD-denominated | Cash (launching April 2026) |
+| APAC Government Bond Futures — Malaysia | — | USD-denominated | Cash (launching April 2026) |
+| APAC Government Bond Futures — Thailand | — | USD-denominated | Cash (launching April 2026) |
+| APAC Government Bond Futures — Philippines | — | USD-denominated | Cash (launching April 2026) |
+
+#### Digital Asset Derivatives
+
+| Product | Symbol | Contract Size | Settlement |
+|---------|--------|---------------|------------|
+| Bitcoin Perpetual Futures | — | 0.1 BTC [unverified] | Cash (USD) |
+| Ethereum Perpetual Futures | — | 1.0 ETH [unverified] | Cash (USD) |
+
+[Source: SGX website, "Derivatives Products"; Barchart.com, "SGX Contract Specifications"; Capital Futures Corp., "SGX Contract Specifications"; SGX press releases 2025–2026]
+
+---
+
+## D2. Key Contract Specifications (Top 5 Products by Volume)
+
+### 1. FTSE China A50 Index Futures (CN)
+
+| Item | Specification |
+|------|---------------|
+| Underlying | FTSE China A50 Index (top 50 A-share companies by market cap) |
+| Contract Size | USD 1 x FTSE China A50 Index |
+| Tick Size | 5 index points |
+| Tick Value | USD 5.00 |
+| Contract Months | 2 nearest serial months + 4 quarterly months (March, June, September, December cycle) |
+| Trading Hours (T Session) | 09:00 – 16:30 SGT |
+| Trading Hours (T+1 Session) | 17:00 – 05:15 +1 SGT |
+| Last Trading Day | Second-to-last business day of the contract month |
+| Final Settlement | Cash settled; based on official closing price of FTSE China A50 Index on the last trading day |
+| Settlement Currency | USD |
+| Position | No physical delivery |
+| 2025 Volume | ~84 million lots (first 9 months); February 2025 alone: 9.4 million contracts (+18% YoY) |
+| Open Interest (Feb 2025) | Notional USD 13.8 billion (+24% YoY) |
+
+### 2. TSI Iron Ore CFR China 62% Fe Futures (FEF)
+
+| Item | Specification |
+|------|---------------|
+| Underlying | Platts TSI Iron Ore CFR China 62% Fe Fines Index |
+| Contract Size | 100 metric tonnes |
+| Tick Size | USD 0.01 per metric tonne |
+| Tick Value | USD 1.00 |
+| Contract Months | Monthly contracts for up to 72 consecutive months |
+| Trading Hours (T Session) | 07:25 – 19:55 SGT |
+| Trading Hours (T+1 Session) | 20:15 – 04:45 +1 SGT |
+| Last Trading Day | Last publication day of TSI iron ore reference prices in the contract month |
+| Final Settlement | Cash settled; based on the arithmetic average of TSI Iron Ore CFR China 62% Fe Fines assessments during the contract month |
+| Settlement Currency | USD |
+| 2025 Volume | 43.6 million contracts (+15% YoY) — global volume record |
+| Market Share | SGX clears >90% of world's seaborne iron ore derivatives |
+
+### 3. Nikkei 225 Index Futures — JPY (NK)
+
+| Item | Specification |
+|------|---------------|
+| Underlying | Nikkei 225 Stock Average |
+| Contract Size | JPY 500 x Nikkei 225 Index |
+| Tick Size | 5 index points |
+| Tick Value | JPY 2,500 |
+| Contract Months | 5 quarterly months (March cycle) + 3 nearest serial months |
+| Trading Hours (T Session) | 07:30 – 14:55 SGT |
+| Trading Hours (T+1 Session) | 15:10 – 05:15 +1 SGT |
+| Last Trading Day | The business day preceding the second Friday of the contract month |
+| Final Settlement | Cash settled; based on the Special Quotation (SQ) of the Nikkei 225 Index |
+| Settlement Currency | JPY |
+| MOS | Eligible for Mutual Offset System with CME Group |
+| Historical Significance | Launched 1986 — first offshore Nikkei 225 listing; pioneer product for SGX |
+
+### 4. USD/CNH Futures (UC)
+
+| Item | Specification |
+|------|---------------|
+| Underlying | USD/CNH (offshore Chinese renminbi) exchange rate |
+| Contract Size | USD 100,000 |
+| Tick Size | 0.0001 CNH per USD [unverified] |
+| Contract Months | Monthly contracts for 13 consecutive months |
+| Trading Hours (T Session) | 07:25 – 19:55 SGT |
+| Trading Hours (T+1 Session) | 20:15 – 05:15 +1 SGT |
+| Last Trading Day | Two Hong Kong business days prior to the settlement date |
+| Final Settlement | Cash settled; based on the USD/CNH(HK) fixing published by TMA |
+| Settlement Currency | USD |
+| 2025 Volume | Part of record 73.6 million FX futures contracts (+49.7% YoY) |
+
+### 5. INR/USD Futures (IU)
+
+| Item | Specification |
+|------|---------------|
+| Underlying | INR/USD exchange rate |
+| Contract Size | INR 2,000,000 |
+| Tick Size | 0.01 US cents per 100 Indian Rupees |
+| Tick Value | USD 2.00 |
+| Contract Months | Monthly contracts for up to 13 consecutive months |
+| Trading Hours (T Session) | 07:25 – 19:30 SGT [unverified] |
+| Trading Hours (T+1 Session) | 20:15 – 05:15 +1 SGT [unverified] |
+| Last Trading Day | Two Mumbai business days prior to the settlement date |
+| Final Settlement | Cash settled; based on the RBI Reference Rate |
+| Settlement Currency | USD |
+| Point Value | USD 200 |
+
+[Source: SGX website, "FTSE China A50 Index Futures"; SGX website, "Iron Ore"; SGX website, "Nikkei 225 Index Futures and Options"; Barchart.com, "SGX Contract Specifications"; FIA, "SGX iron ore futures set volume record"; SGX market statistics, February 2025]
+
+---
+
+## D3. Margin Framework
+
+### Methodology: SPAN (Standard Portfolio Analysis of Risk)
+
+SGX-DC uses SPAN as its primary margining system — a risk-based, portfolio approach to computing margin requirements.
+
+**Key Features:**
+
+| Feature | Description |
+|---------|-------------|
+| Model | SPAN (Standard Portfolio Analysis of Risk), originally developed by CME Group |
+| Approach | Evaluates the worst possible portfolio loss over a specified time horizon (typically 1 day for futures, 1–2 days for options) under multiple market scenarios |
+| Risk Scenarios | 16 standard scenarios combining price moves and volatility shifts |
+| Price Scan Range | Set based on a confidence level (typically 99% or higher), calibrated using historical price data with volatility scaling |
+| Volatility Scan Range | Scenarios include shifts in implied volatility |
+| Portfolio Offsets | Cross-margining credits for correlated positions within the same combined commodity group |
+
+### SGX-DC's Enhanced SPAN Parameters
+
+SGX-DC has enhanced the standard SPAN methodology with specific modifications:
+
+1. **Volatility Scaling:** SGX replaced the legacy standard deviation approach (which gave equal weight to all price observations during the prior year) with a volatility-scaling methodology. Margins are now more responsive to the prevailing volatility regime — increasing during high-volatility periods and decreasing during calm periods.
+
+2. **Anti-Procyclicality Floor:** A floor ensures that margins cannot dip below those that would be calculated using a **10-year lookback period**, even during extended benign/low-volatility periods. This prevents the buildup of under-margined risk during calm markets.
+
+3. **Stress Testing:** SGX-DC regularly performs stress tests beyond SPAN scenarios to ensure clearing fund adequacy under extreme but plausible market conditions.
+
+### Margin Types
+
+| Margin Type | Description |
+|-------------|-------------|
+| **Initial Margin (Performance Bond)** | Required deposit to open a position; covers the estimated maximum one-day loss under SPAN scenarios |
+| **Maintenance Margin** | Minimum margin level that must be maintained; typically set at a lower level than initial margin |
+| **Variation Margin** | Daily mark-to-market settlement; calculated at the end of each trading day and settled in cash through Settlement Banks |
+| **Intraday Margin** | Additional margin calls during the trading day if positions incur significant unrealized losses or volatility spikes |
+| **Spread Margin** | Reduced margin for spread positions (calendar, inter-commodity) that benefit from offsetting risk |
+
+### Margin Call Process
+
+1. **End-of-Day:** Settlement prices determined; variation margin and any margin shortfalls calculated
+2. **Margin Call Issued:** Clearing members notified of margin obligations via SGX-DC systems
+3. **Settlement:** Cash transfers through approved Settlement Banks
+4. **Intraday Cycles:** Additional intraday margin calls may be issued (and must be met promptly) to cover shortfalls arising from market movements during the trading session
+5. **Accepted Collateral:** Cash (multi-currency), government securities, bank guarantees, and other approved collateral forms
+
+### Industry Context
+
+While the broader derivatives industry is migrating from SPAN to VaR-based margin models (e.g., CME SPAN 2, Eurex PRISMA), SGX-DC continues to use its enhanced SPAN framework. The anti-procyclicality measures and volatility scaling represent meaningful improvements over basic SPAN, providing margin stability while maintaining risk responsiveness.
+
+[Source: SGX website, "Risk Management"; SGX Rulebook, "Practice Note 6A.5.2 Calculation of Amount of Clearing Member Required Margins"; Risk.net, "SGX's Koh defends clearing methods post-Nasdaq"; CME Group, "SPAN Methodology Overview"; FIA, "Navigating a New Era in Derivatives Clearing"]
+
+---
+
+## D4. Position Limits & Large Position Reporting
+
+### Position Limits
+
+SGX imposes position limits on derivatives contracts to manage systemic risk and prevent excessive concentration:
+
+- **Position limits** are defined per contract in the SGX Rulebook (Section 18.4.2) and vary by product
+- Members must have **automated processes** in place to monitor at the firm level if they are at risk of breaching prudential limits on exposures to a single customer and a single contract
+- Position limits apply to **speculative positions** — positions held for trading/investment purposes without an underlying commercial hedging need
+
+### Hedge Exemptions
+
+- Market participants with bona fide hedging needs may apply for exemptions from speculative position limits
+- Applications for exemption must be submitted to SGX-DT, demonstrating the hedging rationale and underlying commercial exposure
+- Exempted positions must be monitored and reported on an ongoing basis
+
+### Large Position Reporting
+
+- Clearing members are required to report large positions to SGX-DC when positions exceed specified thresholds
+- Large position reports enable SGX to monitor concentration risk and potential market manipulation
+- Thresholds are set on a product-by-product basis
+
+### Accountability Levels
+
+SGX may set **accountability levels** (as distinct from hard position limits) for certain contracts, requiring participants exceeding these levels to provide additional information about their positions and trading intentions upon request.
+
+[Source: SGX Rulebook, "18.4.2 Position Limits"; SGX Rulebook, "Practice Note 7.22 — Margins of Third Parties"; SGX website, "Risk Management"]
+
+---
+
+## D5. Block Trading / Negotiated Large Trades (NLT) / EFP / EFS
+
+### Negotiated Large Trades (NLT)
+
+SGX's equivalent of block trades is the **Negotiated Large Trade (NLT)** facility:
+
+**Key Rules:**
+- NLTs are privately negotiated transactions executed off the central order book at a price agreed between two parties
+- Each NLT must meet the **minimum volume threshold** specified per contract in Appendix A of Regulatory Notice 4.1.11
+- Representative minimum thresholds:
+  - Nikkei 225 Options: 25 lots
+  - Other products: varies by contract (specific thresholds published in the Regulatory Notice)
+- A multi-leg NLT within the same underlying is deemed compliant if **at least one leg** meets the minimum volume threshold
+- Members shall **not** combine individual customers' orders solely to meet the minimum volume threshold
+- However, individual orders that each independently exceed the threshold may be combined to match a larger NLT counter bid/offer
+
+**Reporting and Registration:**
+- NLTs must be reported to SGX within the prescribed timeframe
+- Both the seller and buyer must have satisfied the credit and position thresholds prescribed by their respective clearing members
+- NLTs are registered with SGX-DC for clearing upon successful validation
+
+### Exchange for Physical (EFP)
+
+- **EFP transactions** allow the exchange of a derivatives position for a corresponding physical or cash market position
+- Must meet procedures prescribed by SGX
+- The physical leg must be a bona fide transaction in the underlying or related commodity/instrument
+- Clearing member credit and position thresholds must be satisfied
+
+### Exchange for Swap (EFS)
+
+- **EFS transactions** allow the exchange of a listed derivatives position for an equivalent OTC swap position
+- Subject to similar rules as EFP transactions regarding procedures, credit thresholds, and reporting
+
+### Registration Requirements
+
+For NLT, EFP, and EFS transactions involving contracts listed on a "Relevant Market" (i.e., contracts that are also listed on another exchange), Rule 7.04A requires compliance with additional registration procedures to ensure cross-market integrity.
+
+[Source: SGX Rulebook, "Regulatory Notice 2.1.3A(4); 4.1.11 — Negotiated Large Trades"; SGX Rulebook, "4.1.11 Negotiated Large Trades"; SGX Rulebook, "7.04A Registration of an NLT, EFP or EFS in Respect of Contracts Listed on a Relevant Market"; SGX website, "Negotiated Large Trade (NLT)"]
+
+---
+
+## D6. Delivery & Settlement Process
+
+### Daily Settlement (Mark-to-Market)
+
+1. **Daily Settlement Prices:** SGX-DC determines daily settlement prices for all listed derivatives contracts at the end of each trading day
+2. **Variation Margin:** The difference between the current day's settlement price and the prior day's settlement price (or the trade price for new positions) is settled in cash
+3. **Settlement Banks:** Cash transfers are effected through approved Settlement Banks; clearing members must maintain accounts with approved banks
+4. **Intraday Settlement:** Intraday margin calls and mark-to-market may be triggered during volatile market conditions
+
+### Final Settlement — Cash-Settled Contracts
+
+The majority of SGX derivatives are **cash-settled:**
+
+| Product | Final Settlement Price Methodology |
+|---------|-----------------------------------|
+| FTSE China A50 Futures | Based on the official closing price of the FTSE China A50 Index on the last trading day |
+| Nikkei 225 Futures | Based on the Special Quotation (SQ) of the Nikkei 225 Index |
+| Iron Ore Futures | Arithmetic average of TSI Iron Ore CFR China 62% Fe Fines assessments during the contract month |
+| FX Futures (USD/CNH) | Based on the USD/CNH(HK) fixing published by TMA |
+| FX Futures (INR/USD) | Based on the RBI Reference Rate |
+| MSCI Index Futures | Based on the official closing price of the respective MSCI Index |
+
+### Final Settlement — Physically Delivered Contracts
+
+A small number of SGX commodity contracts (e.g., rubber futures — TSR20, RSS3) settle via physical delivery:
+
+- **Delivery obligations** fall to the trading counterparties, not to SGX-DC
+- SGX-DC acts as the central counterparty for financial settlement but has **no liability for the actual delivery process**
+- Delivery locations, quality specifications, and procedures are defined in each contract's specifications
+- Clearing members must ensure their customers are prepared to make or take delivery if holding positions into the delivery period
+
+### Settlement Currency
+
+- Most SGX derivatives contracts are denominated and settled in **USD**, making them accessible to international participants without currency conversion
+- Selected contracts settle in JPY (Nikkei 225 JPY), SGD (MSCI Singapore), HKD (Hang Seng products), or AUD (S&P/ASX 200)
+
+[Source: SGX website, "Clearing Information"; CFTC, "SGX-DC Regulatory Compliance Chart"; SGX Rulebook, "SGX-DC Clearing Rules"; Capital Futures Corp., "SGX Contract Specifications"]
+
+---
+
+## Appendix: SGX Derivatives — Comparison with KRX
+
+| Feature | SGX Derivatives | KRX Derivatives |
+|---------|----------------|-----------------|
+| Primary Focus | Pan-Asian gateway; offshore access to Asian equity markets, commodities, FX | Domestic Korean market (KOSPI 200, KOSDAQ 150, KTB) |
+| Top Product | FTSE China A50 Futures | KOSPI 200 Options (historically world's most active by contract count) |
+| Clearing House | SGX-DC | KRX CCP |
+| Trading Platform | Titan DT (Nasdaq Genium INET) | Exture+ |
+| Margin Model | SPAN (enhanced with volatility scaling) | SPAN-based (KRX SPAN) |
+| International Access | Broad international participation; CFTC-registered DCO | More limited international direct access |
+| Trading Hours | Up to ~22 hours/day for key products | Primarily Korean business hours with limited night session |
+| Currency | Predominantly USD-denominated | KRW-denominated |
+| Settlement | T+1 cash settlement (most products) | T+1 cash settlement |
+
+*Note: KRX comparison based on publicly available information; specific details should be verified against KRX documentation.*
+
+---
+
+*This research file was compiled from publicly available sources including the SGX official website, SGX Rulebook, SGX annual reports, regulatory filings, financial news sources, and technology vendor documentation. Information marked [unverified] could not be confirmed from primary official sources and should be verified before use in formal analysis.*

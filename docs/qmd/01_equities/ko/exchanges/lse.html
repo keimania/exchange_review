@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>London Stock Exchange (LSE) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/ko/exchanges/asx.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/ko/exchanges/lse.html">London Stock Exchange (LSE)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 주식시장 — 개요 (Global Equities Markets — Overview)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 주식거래소 비교 분석 (Comparative Analysis of Global Equities Exchanges)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">거래소</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/asx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Australian Securities Exchange (ASX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/bme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bolsas y Mercados Espanoles (BME)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/borsa_italiana.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Borsa Italiana (Euronext Milan)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/bse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BSE Ltd (구 Bombay Stock Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/bursa_malaysia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bursa Malaysia Berhad (Bursa Malaysia)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/deutsche_borse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Deutsche Borse / Xetra (XETR)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/euronext.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext N.V. (Euronext)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/hkex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hong Kong Exchanges and Clearing Limited (HKEX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/jpx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japan Exchange Group / Tokyo Stock Exchange (JPX / TSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/jse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Johannesburg Stock Exchange (JSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/krx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Korea Exchange (KRX, 한국거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/lse.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">London Stock Exchange (LSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/nasdaq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NASDAQ Stock Market (NASDAQ)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/nasdaq_nordic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Nasdaq Nordic (OMX 북유럽 거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/nse_india.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India (NSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/nyse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">New York Stock Exchange (NYSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/sgx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Singapore Exchange (SGX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/six.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SIX Swiss Exchange (SIX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/sse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Stock Exchange (SSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/szse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shenzhen Stock Exchange (SZSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/tadawul.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Saudi Exchange (Tadawul)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/tmx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TMX Group / Toronto Stock Exchange (TSX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/exchanges/twse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Stock Exchange (TWSE)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">규제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/regulations/asia_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">아시아태평양 주식시장 규제 (Asia-Pacific Equities Market Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/regulations/eu_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU/UK 주식시장 규제 (EU/UK Equities Market Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/regulations/us_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">미국 주식시장 규제 (US Equities Market Regulation)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">매매시스템</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/arrowhead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">arrowhead – 일본거래소그룹(JPX) / 도쿄증권거래소(TSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/exture_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exture 3.0 — 한국거래소 (Korea Exchange, KRX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NASDAQ INET – NASDAQ 주식시장 (NASDAQ Stock Market)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/millennium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Millennium Exchange – 런던증권거래소 (London Stock Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/optiq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Optiq – Euronext (유로넥스트)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/orion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Orion Trading Platform – Cash (OTP-C) – HKEX (홍콩거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/pillar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NYSE Pillar – 뉴욕증권거래소 (New York Stock Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/t7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 매매시스템 – Deutsche Boerse (Xetra)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/ko/systems/titan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX Titan / SGX REACH – 싱가포르거래소 (Singapore Exchange)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#개요-및-프로필-overview-profile" id="toc-개요-및-프로필-overview-profile" class="nav-link active" data-scroll-target="#개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</a>
+  <ul class="collapse">
+  <li><a href="#주요-연혁-key-historical-milestones" id="toc-주요-연혁-key-historical-milestones" class="nav-link" data-scroll-target="#주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</a></li>
+  </ul></li>
+  <li><a href="#시장구조-market-structure" id="toc-시장구조-market-structure" class="nav-link" data-scroll-target="#시장구조-market-structure">2. 시장구조 (Market Structure)</a>
+  <ul class="collapse">
+  <li><a href="#시장-세그먼트-market-segments" id="toc-시장-세그먼트-market-segments" class="nav-link" data-scroll-target="#시장-세그먼트-market-segments">2.1 시장 세그먼트 (Market Segments)</a></li>
+  <li><a href="#매매시간-trading-sessions" id="toc-매매시간-trading-sessions" class="nav-link" data-scroll-target="#매매시간-trading-sessions">2.2 매매시간 (Trading Sessions)</a></li>
+  <li><a href="#호가단위-최소가격변동폭-tick-sizes" id="toc-호가단위-최소가격변동폭-tick-sizes" class="nav-link" data-scroll-target="#호가단위-최소가격변동폭-tick-sizes">2.3 호가단위 (최소가격변동폭) (Tick Sizes)</a></li>
+  <li><a href="#매매단위-거래단위-lot-sizes" id="toc-매매단위-거래단위-lot-sizes" class="nav-link" data-scroll-target="#매매단위-거래단위-lot-sizes">2.4 매매단위 (거래단위) (Lot Sizes)</a></li>
+  <li><a href="#시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs" id="toc-시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 (마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)</a></li>
+  </ul></li>
+  <li><a href="#매매메커니즘-trading-mechanism" id="toc-매매메커니즘-trading-mechanism" class="nav-link" data-scroll-target="#매매메커니즘-trading-mechanism">3. 매매메커니즘 (Trading Mechanism)</a>
+  <ul class="collapse">
+  <li><a href="#경매-메커니즘-auction-mechanisms" id="toc-경매-메커니즘-auction-mechanisms" class="nav-link" data-scroll-target="#경매-메커니즘-auction-mechanisms">3.1 경매 메커니즘 (Auction Mechanisms)</a></li>
+  <li><a href="#접속매매-연속매매-continuous-trading" id="toc-접속매매-연속매매-continuous-trading" class="nav-link" data-scroll-target="#접속매매-연속매매-continuous-trading">3.2 접속매매 (연속매매) (Continuous Trading)</a></li>
+  <li><a href="#가격발견-price-discovery" id="toc-가격발견-price-discovery" class="nav-link" data-scroll-target="#가격발견-price-discovery">3.3 가격발견 (Price Discovery)</a></li>
+  </ul></li>
+  <li><a href="#주문유형-order-types" id="toc-주문유형-order-types" class="nav-link" data-scroll-target="#주문유형-order-types">4. 주문유형 (Order Types)</a>
+  <ul class="collapse">
+  <li><a href="#기본-주문유형-standard-order-types" id="toc-기본-주문유형-standard-order-types" class="nav-link" data-scroll-target="#기본-주문유형-standard-order-types">4.1 기본 주문유형 (Standard Order Types)</a></li>
+  <li><a href="#고급-주문유형-advanced-order-types" id="toc-고급-주문유형-advanced-order-types" class="nav-link" data-scroll-target="#고급-주문유형-advanced-order-types">4.2 고급 주문유형 (Advanced Order Types)</a></li>
+  <li><a href="#유효기간-time-in-force-options" id="toc-유효기간-time-in-force-options" class="nav-link" data-scroll-target="#유효기간-time-in-force-options">4.3 유효기간 (Time-in-Force Options)</a></li>
+  <li><a href="#주문-정정취소-order-modification-cancellation" id="toc-주문-정정취소-order-modification-cancellation" class="nav-link" data-scroll-target="#주문-정정취소-order-modification-cancellation">4.4 주문 정정/취소 (Order Modification / Cancellation)</a></li>
+  </ul></li>
+  <li><a href="#매매시스템-trading-system" id="toc-매매시스템-trading-system" class="nav-link" data-scroll-target="#매매시스템-trading-system">5. 매매시스템 (Trading System)</a>
+  <ul class="collapse">
+  <li><a href="#시스템-변천사-system-history" id="toc-시스템-변천사-system-history" class="nav-link" data-scroll-target="#시스템-변천사-system-history">시스템 변천사 (System History)</a></li>
+  <li><a href="#기술-스택-technology-stack" id="toc-기술-스택-technology-stack" class="nav-link" data-scroll-target="#기술-스택-technology-stack">기술 스택 (Technology Stack)</a></li>
+  <li><a href="#재해복구-업무연속성-disaster-recovery-business-continuity" id="toc-재해복구-업무연속성-disaster-recovery-business-continuity" class="nav-link" data-scroll-target="#재해복구-업무연속성-disaster-recovery-business-continuity">재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)</a></li>
+  </ul></li>
+  <li><a href="#시장데이터-market-data" id="toc-시장데이터-market-data" class="nav-link" data-scroll-target="#시장데이터-market-data">6. 시장데이터 (Market Data)</a>
+  <ul class="collapse">
+  <li><a href="#데이터-피드-프로토콜-data-feed-protocols" id="toc-데이터-피드-프로토콜-data-feed-protocols" class="nav-link" data-scroll-target="#데이터-피드-프로토콜-data-feed-protocols">6.1 데이터 피드 프로토콜 (Data Feed Protocols)</a></li>
+  <li><a href="#데이터-수준-data-levels" id="toc-데이터-수준-data-levels" class="nav-link" data-scroll-target="#데이터-수준-data-levels">6.2 데이터 수준 (Data Levels)</a></li>
+  <li><a href="#배포-인프라-distribution-infrastructure" id="toc-배포-인프라-distribution-infrastructure" class="nav-link" data-scroll-target="#배포-인프라-distribution-infrastructure">6.3 배포 인프라 (Distribution Infrastructure)</a></li>
+  <li><a href="#과거-데이터-historical-data" id="toc-과거-데이터-historical-data" class="nav-link" data-scroll-target="#과거-데이터-historical-data">6.4 과거 데이터 (Historical Data)</a></li>
+  </ul></li>
+  <li><a href="#접속-및-참가-connectivity-access" id="toc-접속-및-참가-connectivity-access" class="nav-link" data-scroll-target="#접속-및-참가-connectivity-access">7. 접속 및 참가 (Connectivity &amp; Access)</a>
+  <ul class="collapse">
+  <li><a href="#회원자격-참가-membership-participation" id="toc-회원자격-참가-membership-participation" class="nav-link" data-scroll-target="#회원자격-참가-membership-participation">7.1 회원자격 / 참가 (Membership / Participation)</a></li>
+  <li><a href="#접속-방법-connection-methods" id="toc-접속-방법-connection-methods" class="nav-link" data-scroll-target="#접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</a></li>
+  <li><a href="#코로케이션-전산센터-공동입주-근접-서비스-co-location-proximity-services" id="toc-코로케이션-전산센터-공동입주-근접-서비스-co-location-proximity-services" class="nav-link" data-scroll-target="#코로케이션-전산센터-공동입주-근접-서비스-co-location-proximity-services">7.3 코로케이션 (전산센터 공동입주) / 근접 서비스 (Co-location / Proximity Services)</a></li>
+  <li><a href="#api-프로토콜-api-protocols" id="toc-api-프로토콜-api-protocols" class="nav-link" data-scroll-target="#api-프로토콜-api-protocols">7.4 API 프로토콜 (API Protocols)</a></li>
+  <li><a href="#인증-테스트-certification-testing" id="toc-인증-테스트-certification-testing" class="nav-link" data-scroll-target="#인증-테스트-certification-testing">7.5 인증 / 테스트 (Certification / Testing)</a></li>
+  </ul></li>
+  <li><a href="#리스크-관리-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" id="toc-리스크-관리-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#리스크-관리-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (매매거래중단) (Risk Controls &amp; Circuit Breakers)</a>
+  <ul class="collapse">
+  <li><a href="#가격제한-price-limits" id="toc-가격제한-price-limits" class="nav-link" data-scroll-target="#가격제한-price-limits">8.1 가격제한 (Price Limits)</a></li>
+  <li><a href="#서킷브레이커-매매거래중단-circuit-breakers" id="toc-서킷브레이커-매매거래중단-circuit-breakers" class="nav-link" data-scroll-target="#서킷브레이커-매매거래중단-circuit-breakers">8.2 서킷브레이커 (매매거래중단) (Circuit Breakers)</a></li>
+  <li><a href="#사전-리스크-관리-pre-trade-risk-controls" id="toc-사전-리스크-관리-pre-trade-risk-controls" class="nav-link" data-scroll-target="#사전-리스크-관리-pre-trade-risk-controls">8.3 사전 리스크 관리 (Pre-trade Risk Controls)</a></li>
+  <li><a href="#킬-스위치-kill-switch" id="toc-킬-스위치-kill-switch" class="nav-link" data-scroll-target="#킬-스위치-kill-switch">8.4 킬 스위치 (Kill Switch)</a></li>
+  </ul></li>
+  <li><a href="#규제-체계-regulatory-framework" id="toc-규제-체계-regulatory-framework" class="nav-link" data-scroll-target="#규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</a>
+  <ul class="collapse">
+  <li><a href="#감독기관-supervising-authority" id="toc-감독기관-supervising-authority" class="nav-link" data-scroll-target="#감독기관-supervising-authority">9.1 감독기관 (Supervising Authority)</a></li>
+  <li><a href="#주요-규제-key-regulations" id="toc-주요-규제-key-regulations" class="nav-link" data-scroll-target="#주요-규제-key-regulations">9.2 주요 규제 (Key Regulations)</a></li>
+  <li><a href="#시장감시-market-surveillance" id="toc-시장감시-market-surveillance" class="nav-link" data-scroll-target="#시장감시-market-surveillance">9.3 시장감시 (Market Surveillance)</a></li>
+  <li><a href="#보고-요건-reporting-requirements" id="toc-보고-요건-reporting-requirements" class="nav-link" data-scroll-target="#보고-요건-reporting-requirements">9.4 보고 요건 (Reporting Requirements)</a></li>
+  <li><a href="#국제-협력-cross-border-arrangements" id="toc-국제-협력-cross-border-arrangements" class="nav-link" data-scroll-target="#국제-협력-cross-border-arrangements">9.5 국제 협력 (Cross-border Arrangements)</a></li>
+  </ul></li>
+  <li><a href="#수수료-및-수익모델-fees-revenue-model" id="toc-수수료-및-수익모델-fees-revenue-model" class="nav-link" data-scroll-target="#수수료-및-수익모델-fees-revenue-model">10. 수수료 및 수익모델 (Fees &amp; Revenue Model)</a>
+  <ul class="collapse">
+  <li><a href="#매매수수료-trading-fees" id="toc-매매수수료-trading-fees" class="nav-link" data-scroll-target="#매매수수료-trading-fees">10.1 매매수수료 (Trading Fees)</a></li>
+  <li><a href="#기타-수수료-other-fees" id="toc-기타-수수료-other-fees" class="nav-link" data-scroll-target="#기타-수수료-other-fees">10.2 기타 수수료 (Other Fees)</a></li>
+  </ul></li>
+  <li><a href="#최근-동향-recent-developments" id="toc-최근-동향-recent-developments" class="nav-link" data-scroll-target="#최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</a>
+  <ul class="collapse">
+  <li><a href="#시스템-업그레이드-최근-5년-system-upgrades" id="toc-시스템-업그레이드-최근-5년-system-upgrades" class="nav-link" data-scroll-target="#시스템-업그레이드-최근-5년-system-upgrades">시스템 업그레이드 (최근 5년) (System Upgrades)</a></li>
+  <li><a href="#신규-상품세그먼트-new-products-segments" id="toc-신규-상품세그먼트-new-products-segments" class="nav-link" data-scroll-target="#신규-상품세그먼트-new-products-segments">신규 상품/세그먼트 (New Products / Segments)</a></li>
+  <li><a href="#규제-변화-regulatory-changes" id="toc-규제-변화-regulatory-changes" class="nav-link" data-scroll-target="#규제-변화-regulatory-changes">규제 변화 (Regulatory Changes)</a></li>
+  <li><a href="#전략적-이니셔티브-strategic-initiatives" id="toc-전략적-이니셔티브-strategic-initiatives" class="nav-link" data-scroll-target="#전략적-이니셔티브-strategic-initiatives">전략적 이니셔티브 (Strategic Initiatives)</a></li>
+  </ul></li>
+  <li><a href="#출처-sources" id="toc-출처-sources" class="nav-link" data-scroll-target="#출처-sources">출처 (Sources)</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/ko/exchanges/asx.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/ko/exchanges/lse.html">London Stock Exchange (LSE)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">London Stock Exchange (LSE)</h1>
+<p class="subtitle lead">주식시장 &gt; 거래소</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 4월 17일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>최종 수정일:</strong> 2026-04-03 <strong>조사 등급:</strong> Tier 1 <strong>영역:</strong> 주식시장</p>
+</blockquote>
+<hr>
+<section id="개요-및-프로필-overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>상세내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>공식 명칭</td>
+<td>London Stock Exchange</td>
+</tr>
+<tr class="even">
+<td>약칭</td>
+<td>LSE (런던증권거래소)</td>
+</tr>
+<tr class="odd">
+<td>웹사이트</td>
+<td>https://www.londonstockexchange.com</td>
+</tr>
+<tr class="even">
+<td>설립연도</td>
+<td>1801년 (기원은 1690년대 커피하우스 거래로 소급)</td>
+</tr>
+<tr class="odd">
+<td>소재지</td>
+<td>영국 / 런던 (Paternoster Square, City of London)</td>
+</tr>
+<tr class="even">
+<td>소유구조</td>
+<td>LSEG (런던증권거래소 그룹)의 상장 자회사 (종목코드: LSEG, LSE 상장)</td>
+</tr>
+<tr class="odd">
+<td>모회사/그룹</td>
+<td>London Stock Exchange Group plc (LSEG)</td>
+</tr>
+<tr class="even">
+<td>감독기관</td>
+<td>Financial Conduct Authority (FCA)</td>
+</tr>
+<tr class="odd">
+<td>시가총액 (상장기업)</td>
+<td>~4.5조 GBP / ~5.9조 USD (2025년 중반 기준) [추정치]</td>
+</tr>
+<tr class="even">
+<td>총 상장종목 수</td>
+<td>60개국 이상에서 ~1,900개 이상 기업 (~1,025개 Main Market, ~680개 AIM, IOB 및 기타 세그먼트 포함)</td>
+</tr>
+<tr class="odd">
+<td>일평균 거래량</td>
+<td>호가창 전체에서 일 ~500,000 ~ 2,000,000건 거래 [추정치]</td>
+</tr>
+<tr class="even">
+<td>일평균 거래대금</td>
+<td>전체 세그먼트 합산 ~40-45억 GBP (FTSE 100 2025년 YTD: 일 33.65억 GBP; FTSE 250: 일 4.59억 GBP)</td>
+</tr>
+</tbody>
+</table>
+<section id="주요-연혁-key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</h3>
+<ul>
+<li>1698년: John Castaing이 Change Alley의 Jonathan’s Coffee House에서 주식 및 상품 가격 발간 시작</li>
+<li>1801년: London Stock Exchange가 규제된 회원제로 공식 설립</li>
+<li>1812년: 최초의 성문 규칙집 발간</li>
+<li>1973년: 영국 지역 거래소들이 통합하여 Great Britain and Ireland 통합증권거래소 형성; 최초 여성 회원 승인</li>
+<li>1986년: <strong>빅뱅</strong> 규제완화 — 고정수수료 폐지, 브로커-조버 분리 종료, 공개호가에서 SEAQ를 통한 전자거래로 전환</li>
+<li>1997년: SETS (Stock Exchange Electronic Trading Service) 출시, 주력 전자 호가창으로 운영</li>
+<li>2000년: LSE 주식회사화, London Stock Exchange plc가 됨</li>
+<li>2004년: LSE 본사를 Paternoster Square로 이전</li>
+<li>2007년: Borsa Italiana와 16억 EUR에 합병, London Stock Exchange Group(LSEG) 형성; SETSqx 하이브리드 매매 플랫폼 출시</li>
+<li>2009년: MillenniumIT(스리랑카) 1,800만 GBP에 인수, 차세대 매매기술 개발</li>
+<li>2011년: Millennium Exchange 매매 플랫폼 출시(2011년 2월 14일), TradElect 대체</li>
+<li>2012년: LCH.Clearnet(현 LCH) 지분 과반 인수, 주요 중앙청산소 (중앙거래상대방)</li>
+<li>2014년: LSEG가 Frank Russell Company(Russell 지수) 인수</li>
+<li>2021년: Refinitiv 270억 달러 인수 완료, LSEG를 데이터 및 분석 분야로 전환(현재 매출의 ~70%)</li>
+<li>2024년: Workspace 플랫폼 대폭 강화; Microsoft 파트너십 첫 상품 출시</li>
+<li>2025년: LSEG가 금융데이터를 ChatGPT에 통합; 자사주 매입을 통해 주주에 21억 GBP 환원</li>
+<li>2026년: LSEG Sustainability Ratings and Data 출시; 블록체인 결제 이니셔티브(Digital Markets Infrastructure) 규제 승인 대기 중 발표</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="시장구조-market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="시장구조-market-structure">2. 시장구조 (Market Structure)</h2>
+<section id="시장-세그먼트-market-segments" class="level3">
+<h3 class="anchored" data-anchor-id="시장-세그먼트-market-segments">2.1 시장 세그먼트 (Market Segments)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 19%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>세그먼트</th>
+<th>설명</th>
+<th>상장요건 (요약)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Main Market (Premium Listing)</strong></td>
+<td>대형 기성기업을 위한 주력 시장; 가장 엄격한 요건; FTSE UK Index Series 편입 적격</td>
+<td>최소 3년 실적, 25% 유통주식비율, FCA 승인 투자설명서, UK Corporate Governance Code 준수, 스폰서 필요</td>
+</tr>
+<tr class="even">
+<td><strong>Main Market (Standard Listing)</strong></td>
+<td>EU 최소 규제 요건으로 상장</td>
+<td>EU 투자설명서 지침 최소 요건 충족; Premium보다 덜 엄격하나 FCA 승인 투자설명서 필요</td>
+</tr>
+<tr class="odd">
+<td><strong>AIM (Alternative Investment Market)</strong></td>
+<td>소형 및 신흥기업을 위한 국제 성장시장; MiFID에 따른 MTF로 분류</td>
+<td>최소 시가총액 없음, 영업실적 요건 없음, 최소 유통주식비율 없음; Nominated Adviser(Nomad) 선임 필수</td>
+</tr>
+<tr class="even">
+<td><strong>International Order Book (IOB)</strong></td>
+<td>신흥시장(인도, 중국, 중동 등)의 Global Depositary Receipts(GDR) 거래</td>
+<td>GDR 관련 상장요건; 국제 자본시장 접근 제공</td>
+</tr>
+<tr class="odd">
+<td><strong>Specialist Fund Segment (SFS)</strong></td>
+<td>기관/전문 투자자 대상 전문 투자펀드</td>
+<td>정교한 투자자 대상; 경감된 규제 요건</td>
+</tr>
+<tr class="even">
+<td><strong>High Growth Segment</strong></td>
+<td>고성장, 매출 단계 기업용 (2021년 도입)</td>
+<td>매출 최소 2,000만 GBP, 최소 시가총액 3,000만 GBP [미확인]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="매매시간-trading-sessions" class="level3">
+<h3 class="anchored" data-anchor-id="매매시간-trading-sessions">2.2 매매시간 (Trading Sessions)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 45%">
+<col style="width: 26%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>현지시간 (GMT/BST)</th>
+<th>UTC (겨울)</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>개장 전 / 주문입력</td>
+<td>07:50 - 08:00</td>
+<td>07:50 - 08:00</td>
+<td>주문 입력, 정정, 취소 가능; 체결 없음</td>
+</tr>
+<tr class="even">
+<td>시가단일가매매 (개장 경매)</td>
+<td>08:00</td>
+<td>08:00</td>
+<td>단일가 경매 체결을 통한 시가 결정</td>
+</tr>
+<tr class="odd">
+<td>접속매매 (연속매매)</td>
+<td>08:00 - 16:30</td>
+<td>08:00 - 16:30</td>
+<td>SETS에서 주문주도 연속 체결</td>
+</tr>
+<tr class="even">
+<td>종가단일가매매 (장마감 경매)</td>
+<td>16:30 - 16:35</td>
+<td>16:30 - 16:35</td>
+<td>단일가 경매를 통한 종가 결정</td>
+</tr>
+<tr class="odd">
+<td>Closing Price Crossing</td>
+<td>16:35 - 16:40</td>
+<td>16:35 - 16:40</td>
+<td>확정된 종가에서만 거래 가능</td>
+</tr>
+<tr class="even">
+<td>장 마감 후 (거래보고)</td>
+<td>16:40 - 17:15</td>
+<td>16:40 - 17:15</td>
+<td>장외거래 보고 시간</td>
+</tr>
+<tr class="odd">
+<td>SETSqx 경매</td>
+<td>08:00, 09:00, 11:00, 14:00, 16:35</td>
+<td>동일</td>
+<td>SETSqx 종목의 정기 경매 체결</td>
+</tr>
+</tbody>
+</table>
+<p>참고: 영국은 3월 하순부터 10월 하순까지 BST(UTC+1)를 적용한다. 표시 시간은 GMT 기준이다.</p>
+</section>
+<section id="호가단위-최소가격변동폭-tick-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="호가단위-최소가격변동폭-tick-sizes">2.3 호가단위 (최소가격변동폭) (Tick Sizes)</h3>
+<p>LSE는 2018년 1월부터 시행된 <strong>MiFID II 호가단위 체계</strong> (RTS 11)를 따른다. 호가단위 (최소가격변동폭)는 가격 수준과 해당 종목의 유동성 밴드(일평균 거래건수 기준)에 따라 결정된다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 25%">
+<col style="width: 26%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>가격 범위 (EUR 환산)</th>
+<th>유동성 밴드 1 (&lt; 10 ADNT)</th>
+<th>유동성 밴드 3 (80-600 ADNT)</th>
+<th>유동성 밴드 6 (&gt;= 9000 ADNT)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0 - 0.4999</td>
+<td>0.005</td>
+<td>0.002</td>
+<td>0.0005</td>
+</tr>
+<tr class="even">
+<td>0.5 - 0.9999</td>
+<td>0.01</td>
+<td>0.005</td>
+<td>0.001</td>
+</tr>
+<tr class="odd">
+<td>1 - 1.9999</td>
+<td>0.02</td>
+<td>0.01</td>
+<td>0.002</td>
+</tr>
+<tr class="even">
+<td>2 - 4.9999</td>
+<td>0.05</td>
+<td>0.02</td>
+<td>0.005</td>
+</tr>
+<tr class="odd">
+<td>5 - 9.9999</td>
+<td>0.1</td>
+<td>0.05</td>
+<td>0.01</td>
+</tr>
+<tr class="even">
+<td>10 - 19.9999</td>
+<td>0.2</td>
+<td>0.1</td>
+<td>0.02</td>
+</tr>
+<tr class="odd">
+<td>20 - 49.9999</td>
+<td>0.5</td>
+<td>0.2</td>
+<td>0.05</td>
+</tr>
+<tr class="even">
+<td>50 - 99.9999</td>
+<td>1.0</td>
+<td>0.5</td>
+<td>0.1</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: ESMA RTS 11, as applied by LSE; 대표 값 표시 — 전체 표에는 6개 유동성 밴드와 13개 가격 범위가 포함됨]</p>
+<p><strong>KRX 비교:</strong> KRX도 가격대별 호가단위 (최소가격변동폭) 체계를 적용하나, LSE와 달리 유동성 밴드를 사용하지 않고 가격 수준만으로 호가단위를 결정한다.</p>
+</section>
+<section id="매매단위-거래단위-lot-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="매매단위-거래단위-lot-sizes">2.4 매매단위 (거래단위) (Lot Sizes)</h3>
+<ul>
+<li>SETS 대부분 주식의 표준 매매단위 (거래단위): <strong>1주</strong></li>
+<li>SETS 연속 호가창 거래에 최소 매매단위 (거래단위) 없음</li>
+<li>MiFID II Large-in-Scale(LIS) 면제에 따른 블록거래 기준은 종목 유동성에 따라 다름</li>
+</ul>
+</section>
+<section id="시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 (마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)</h3>
+<ul>
+<li><strong>SETS</strong>: 특정 종목에 등록된 시장조성자 (마켓메이커)가 지속적 양방향 호가 제공 가능; 의무는 아니나 특정 혜택(수수료 할인, 공매도 면제 등) 수령</li>
+<li><strong>SETSqx</strong>: 지정 시장조성자 (마켓메이커)가 거래일 동안 지속적 호가 제공 의무; 호가창 체결은 정기 경매를 통해 발생</li>
+<li><strong>SEAQ</strong>: 시장조성자 (마켓메이커) 호가에 전적으로 의존하는 순수 호가주도 시스템; 공개 지정가주문 호가창 없음; 최저 유동성 종목에 사용</li>
+<li><strong>유동성공급자 스킴</strong>: LSE는 지정 종목에 지속적 유동성을 제공하는 기업에 체결수수료 인하 인센티브 프로그램 제공</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="매매메커니즘-trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="매매메커니즘-trading-mechanism">3. 매매메커니즘 (Trading Mechanism)</h2>
+<section id="경매-메커니즘-auction-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="경매-메커니즘-auction-mechanisms">3.1 경매 메커니즘 (Auction Mechanisms)</h3>
+<ul>
+<li><strong>시가단일가매매 (개장 경매):</strong> 10분간의 주문입력 기간(07:50-08:00) 후 08:00에 시작된다. 주문이 축적되고 체결 알고리즘이 최대 거래량을 체결할 수 있는 가격을 결정한다. 조작 방지를 위한 무작위 종료 기간(최대 30초)이 뒤따른다.</li>
+<li><strong>종가단일가매매 (장마감 경매):</strong> 16:30에 접속매매 (연속매매)가 중단되고 종가단일가매매 (장마감 경매) 기간이 시작된다. 종가단일가매매 체결이 공식 종가를 결정하며(지수 제공자, 펀드 매니저가 사용), 무작위 종료 기간이 뒤따른다.</li>
+<li><strong>장중 경매 (SETSqx):</strong> 08:00, 09:00, 11:00, 14:00, 16:35에 SETSqx 종목에 대해 실시된다. 경매 사이에 주문이 축적되고 예정 시간에 체결된다.</li>
+<li><strong>변동성완화장치 (VI) 발동 시 단일가매매:</strong> 잠재적 체결이 가격모니터링 기준(서킷브레이커 (매매거래중단))을 위반할 때 발동된다. 매매가 중단되고 질서 있는 가격발견을 위한 단일가 경매가 개시된다.</li>
+</ul>
+</section>
+<section id="접속매매-연속매매-continuous-trading" class="level3">
+<h3 class="anchored" data-anchor-id="접속매매-연속매매-continuous-trading">3.2 접속매매 (연속매매) (Continuous Trading)</h3>
+<ul>
+<li><strong>SETS (Stock Exchange Electronic Trading Service):</strong> FTSE 100, FTSE 250, FTSE SmallCap 및 기타 유동성 종목의 주 호가창. 시장조성자 (마켓메이커)의 선택적 참여가 가능한 순수 주문주도 시장. 08:00-16:30 연속 세션 동안 가격-시간 우선원칙 체결 알고리즘 적용.</li>
+<li><strong>SETSqx:</strong> 정기 경매와 시장조성자 (마켓메이커)의 지속적 호가를 결합한 하이브리드 시스템. 경매 사이에 투자자는 시장조성자 (마켓메이커) 호가를 상대로 거래 가능. 호가창 체결은 경매 시에만 발생.</li>
+<li><strong>SEAQ:</strong> 유동성이 낮은 종목을 위한 호가주도 시스템. 전자 주문 체결 없이 화면에 표시되는 시장조성자 (마켓메이커) 호가를 통해 거래 체결.</li>
+</ul>
+</section>
+<section id="가격발견-price-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="가격발견-price-discovery">3.3 가격발견 (Price Discovery)</h3>
+<ul>
+<li>가격발견은 주로 시가 및 종가 단일가매매와 SETS의 연속 호가창 상호작용을 통해 이루어진다</li>
+<li>체결 알고리즘은 체결 가능 수량을 최대화한 후 잉여를 최소화하고, 이전 가격을 참조하여 경매가를 결정한다</li>
+<li>Closing Price Crossing 세션(16:35-16:40)은 확정된 종가에서 추가 거래량의 체결을 허용한다</li>
+<li>서킷브레이커 (매매거래중단) 기준가격은 경매 체결가에서 파생되고 접속매매 (연속매매) 중 동적으로 갱신된다</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="주문유형-order-types" class="level2">
+<h2 class="anchored" data-anchor-id="주문유형-order-types">4. 주문유형 (Order Types)</h2>
+<section id="기본-주문유형-standard-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="기본-주문유형-standard-order-types">4.1 기본 주문유형 (Standard Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>지정가주문</td>
+<td>지정 가격 이상/이하로 매수/매도 주문; 즉시 체결되지 않으면 호가창에 잔류</td>
+</tr>
+<tr class="even">
+<td>시장가주문</td>
+<td>최우선 가용 가격으로 체결; 미체결분은 취소됨 (호가창에 잔류하지 않음)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="고급-주문유형-advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="고급-주문유형-advanced-order-types">4.2 고급 주문유형 (Advanced Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Iceberg Order</td>
+<td>일부분(공개 피크)만 호가창에 표시; 공개 수량 체결 시 비공개 예비에서 자동 보충</td>
+</tr>
+<tr class="even">
+<td>Hidden Order</td>
+<td>전체 주문수량이 공개 호가창에서 비표시; 동일 가격의 공개 주문보다 낮은 우선순위</td>
+</tr>
+<tr class="odd">
+<td>Mid-Price Pegged Order</td>
+<td>최우선 매수/매도호가(BBO) 중간가격에 연동; BBO 변동에 따라 자동 조정; SETS 다크풀 (비공개 거래소) 호가창에서 이용 가능</td>
+</tr>
+<tr class="even">
+<td>Stop Order</td>
+<td>시장가가 지정 정지가격에 도달하면 발동, 활성 주문으로 전환</td>
+</tr>
+<tr class="odd">
+<td>Passive Only Order</td>
+<td>입력 시 즉시 체결되지 않도록 보장; 호가창에 수동 주문으로 등록되거나 공격적일 경우 거부 [미확인]</td>
+</tr>
+<tr class="even">
+<td>Named Order</td>
+<td>SETSqx에서 사용 — 시장조성자 (마켓메이커) 호가가 지정 체결 가능 주문으로 입력</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="유효기간-time-in-force-options" class="level3">
+<h3 class="anchored" data-anchor-id="유효기간-time-in-force-options">4.3 유효기간 (Time-in-Force Options)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TIF</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Good for Day (GFD)</td>
+<td>당일 매매시간에만 유효; 장 마감 시 취소</td>
+</tr>
+<tr class="even">
+<td>Good till Cancelled (GTC)</td>
+<td>체결 또는 명시적 취소까지 유효 (거래소가 정한 최대 일수까지)</td>
+</tr>
+<tr class="odd">
+<td>Good till Date (GTD)</td>
+<td>지정 만료일까지 유효</td>
+</tr>
+<tr class="even">
+<td>Immediate or Cancel (IOC)</td>
+<td>가능한 만큼 즉시 체결; 잔여분 취소</td>
+</tr>
+<tr class="odd">
+<td>Fill or Kill (FOK)</td>
+<td>전량 즉시 체결 또는 전량 취소</td>
+</tr>
+<tr class="even">
+<td>At the Open (ATO)</td>
+<td>시가단일가매매 (개장 경매)에서만 유효</td>
+</tr>
+<tr class="odd">
+<td>At the Close (ATC)</td>
+<td>종가단일가매매 (장마감 경매)에서만 유효</td>
+</tr>
+<tr class="even">
+<td>Execute and Eliminate (EaE)</td>
+<td>IOC와 유사 — 가용 수량 체결 후 잔여분 취소</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-정정취소-order-modification-cancellation" class="level3">
+<h3 class="anchored" data-anchor-id="주문-정정취소-order-modification-cancellation">4.4 주문 정정/취소 (Order Modification / Cancellation)</h3>
+<ul>
+<li>FIX 또는 Native 게이트웨이를 통해 매매시간 중 언제든 주문 정정(가격, 수량) 또는 취소 가능</li>
+<li>우선순위를 개선하는 가격 정정은 새 타임스탬프 발생 (시간 우선순위 상실)</li>
+<li>수량 감소는 시간 우선순위에 영향 없음</li>
+<li>경매 호가기간 중 주문 입력, 정정, 취소 가능하나 체결은 발생하지 않음</li>
+<li>대량 취소 기능 이용 가능; Kill Switch로 회사의 모든 미체결 주문 취소 가능</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="매매시스템-trading-system" class="level2">
+<h2 class="anchored" data-anchor-id="매매시스템-trading-system">5. 매매시스템 (Trading System)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>상세내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시스템 명칭</td>
+<td>Millennium Exchange</td>
+</tr>
+<tr class="even">
+<td>개발 주체</td>
+<td>자체 개발 (LSEG의 완전 자회사인 스리랑카 소재 MillenniumIT 개발)</td>
+</tr>
+<tr class="odd">
+<td>아키텍처</td>
+<td>범용 하드웨어 기반 분산형 저지연 아키텍처; 이벤트 주도형</td>
+</tr>
+<tr class="even">
+<td>매매체결엔진 (매칭엔진)</td>
+<td>가격-시간 우선원칙의 중앙 매매체결엔진 (매칭엔진); 복수 자산군 지원</td>
+</tr>
+<tr class="odd">
+<td>왕복 지연시간</td>
+<td>~126마이크로초 (네이티브 API); ~196마이크로초 (FIX 5.0) — 2011년 출시 시 측정값</td>
+</tr>
+<tr class="even">
+<td>주문 처리 용량</td>
+<td>초당 수만 건의 주문 처리 가능 [추정치]</td>
+</tr>
+<tr class="odd">
+<td>초당 메시지 수</td>
+<td>고처리량 용량 설계; 정확한 현재 수치 미공개 [미확인]</td>
+</tr>
+<tr class="even">
+<td>출시연도</td>
+<td>2011년 (2011년 2월 14일 가동)</td>
+</tr>
+</tbody>
+</table>
+<section id="시스템-변천사-system-history" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-변천사-system-history">시스템 변천사 (System History)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>기간</th>
+<th>시스템</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1986년 이전</td>
+<td>플로어 거래 (공개호가)</td>
+<td>물리적 트레이딩 플로어</td>
+</tr>
+<tr class="even">
+<td>1986-1997</td>
+<td>SEAQ</td>
+<td>빅뱅 시 도입된 화면 기반 호가 표시 시스템; 호가주도</td>
+</tr>
+<tr class="odd">
+<td>1997-2007</td>
+<td>SETS</td>
+<td>전자 호가창; 주문주도 체결</td>
+</tr>
+<tr class="even">
+<td>2007-2011</td>
+<td>TradElect</td>
+<td>Microsoft .NET 기반; 출시 시 평균 지연시간 ~2밀리초, 이후 부하 문제로 ~6ms</td>
+</tr>
+<tr class="odd">
+<td>2011-현재</td>
+<td>Millennium Exchange</td>
+<td>C++/Linux 기반; 서브밀리초 지연시간; TradElect 대체</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="기술-스택-technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="기술-스택-technology-stack">기술 스택 (Technology Stack)</h3>
+<ul>
+<li><strong>운영체제:</strong> Novell SUSE Linux Enterprise</li>
+<li><strong>프로그래밍 언어:</strong> C++</li>
+<li><strong>네트워크 프로토콜:</strong> 매매 게이트웨이용 TCP/IP; 시장데이터 배포용 UDP/IP 멀티캐스트</li>
+<li><strong>하드웨어:</strong> 범용 x86 서버 (독점 하드웨어 의존성 없음)</li>
+<li><strong>매매 게이트웨이:</strong> Native (바이너리, 최저 지연시간) 및 FIX 5.0 SP2 (업계 표준)</li>
+<li><strong>시장데이터 배포:</strong> MITCH 프로토콜 (ITCH의 LSE 변형) UDP 멀티캐스트 방식</li>
+</ul>
+</section>
+<section id="재해복구-업무연속성-disaster-recovery-business-continuity" class="level3">
+<h3 class="anchored" data-anchor-id="재해복구-업무연속성-disaster-recovery-business-continuity">재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)</h3>
+<ul>
+<li>실시간 복제가 이루어지는 완전 이중화 매매체결엔진 (매칭엔진) 아키텍처</li>
+<li>장애전환 기능을 갖춘 주 전산센터 및 보조 전산센터</li>
+<li>이중 시장데이터 피드 (Feed A 및 Feed B) — 클라이언트 측 중재를 위해 동일 시퀀스</li>
+<li>FCA 규정에 따라 업무연속성 계획을 정기적으로 테스트</li>
+<li>복구시점목표(RPO) 및 복구시간목표(RTO)가 규제 기대에 부합 [구체적 수치 미공개]</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="시장데이터-market-data" class="level2">
+<h2 class="anchored" data-anchor-id="시장데이터-market-data">6. 시장데이터 (Market Data)</h2>
+<section id="데이터-피드-프로토콜-data-feed-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-피드-프로토콜-data-feed-protocols">6.1 데이터 피드 프로토콜 (Data Feed Protocols)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 28%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>프로토콜</th>
+<th>설명</th>
+<th>활용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MITCH (Level 2)</td>
+<td>ITCH 기반 LSE 네이티브 바이너리 시장데이터 프로토콜; 주문별 전체 심도</td>
+<td>알고리즘 및 고빈도매매(HFT)를 위한 초저지연 시장데이터</td>
+</tr>
+<tr class="even">
+<td>MITCH (Level 1)</td>
+<td>MITCH 바이너리 형식의 집계 최우선호가 및 체결 데이터</td>
+<td>거래 애플리케이션용 실시간 최우선호가</td>
+</tr>
+<tr class="odd">
+<td>FIX Market Data</td>
+<td>FIX 프로토콜을 통한 시장데이터</td>
+<td>표준화된 FIX 접속을 선호하는 기업</td>
+</tr>
+<tr class="even">
+<td>RDF (Reference Data Feed)</td>
+<td>종목 매개변수, 호가단위 (최소가격변동폭) 표, 매매일정의 일일 참조데이터 파일</td>
+<td>사전 거래 설정, 종목 정적 데이터</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="데이터-수준-data-levels" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-수준-data-levels">6.2 데이터 수준 (Data Levels)</h3>
+<ul>
+<li><strong>Level 1:</strong> 최우선 매수/매도호가(BBO), 최종 체결가, 거래량, VWAP; 실시간 또는 지연(무료 15분 지연)으로 이용 가능</li>
+<li><strong>Level 2:</strong> 전체 호가창 심도 (모든 가격 수준의 모든 공개 주문); MITCH를 통한 주문별 세분화</li>
+<li><strong>Level 3:</strong> 해당 없음 (LSE에서는 Level 2가 전체 심도 제공)</li>
+</ul>
+</section>
+<section id="배포-인프라-distribution-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="배포-인프라-distribution-infrastructure">6.3 배포 인프라 (Distribution Infrastructure)</h3>
+<ul>
+<li>시장데이터는 IP 버전 4(IPv4) 기반 <strong>UDP 멀티캐스트</strong>로 배포</li>
+<li>이중화 피드: Feed A 및 Feed B (동일 시퀀스)</li>
+<li>각 UDP 패킷에 하나의 Unit Header 포함</li>
+<li>복수 IP 멀티캐스트 채널에 걸쳐 부하 분산</li>
+<li>갭 복구를 위한 TCP/IP 재생 서비스 (최근 65,000개 메시지까지)</li>
+<li>초기 상태 재구성을 위한 스냅샷 복구 서비스</li>
+</ul>
+</section>
+<section id="과거-데이터-historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="과거-데이터-historical-data">6.4 과거 데이터 (Historical Data)</h3>
+<ul>
+<li>LSEG(Refinitiv) Tick History를 통해 과거 틱 데이터 이용 가능</li>
+<li>일말 데이터, 기업행위, 참조데이터 이용 가능</li>
+<li>LSEG Data Platform, Workspace, 제3자 벤더를 통해 데이터 접근</li>
+<li>파트너십을 통한 학술 및 연구 접근 이용 가능</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="접속-및-참가-connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="접속-및-참가-connectivity-access">7. 접속 및 참가 (Connectivity &amp; Access)</h2>
+<section id="회원자격-참가-membership-participation" class="level3">
+<h3 class="anchored" data-anchor-id="회원자격-참가-membership-participation">7.1 회원자격 / 참가 (Membership / Participation)</h3>
+<ul>
+<li><strong>회원사:</strong> FCA(또는 패스포팅 약정을 통한 동등 EU/EEA 감독기관)의 인가를 받아야 하며, LSE에 회원자격 신청</li>
+<li><strong>회원 유형:</strong> 매매 회원(직접 전자 접속), 시장조성자 (마켓메이커), 후원 접속(후원 회원사를 통해)</li>
+<li><strong>요건:</strong> 적절한 재무자원, 유능한 인력, 견고한 시스템 및 통제, 컴플라이언스 체계</li>
+<li><strong>일반청산회원(GCM):</strong> 거래 청산을 위해 지정 중앙청산소 (중앙거래상대방)(LCH 등)의 회원이어야 함</li>
+</ul>
+</section>
+<section id="접속-방법-connection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</h3>
+<ul>
+<li><strong>LSE Extranet:</strong> 안정적 접속을 위한 전용 관리 네트워크 서비스</li>
+<li><strong>코로케이션 (전산센터 공동입주) / 근접 호스팅:</strong> 주 전산센터 내 코로케이션 랙에서의 직접 크로스 커넥트</li>
+<li><strong>제3자 네트워크:</strong> 승인된 네트워크 제공자(BT Radianz, IPC 등)를 통해</li>
+<li><strong>VPN:</strong> 소규모 참가자를 위한 보안 VPN 접속 옵션 [미확인]</li>
+<li><strong>인터넷:</strong> 일반적으로 운영 거래에 사용되지 않음; 테스트/UAT에 이용 가능할 수 있음</li>
+</ul>
+</section>
+<section id="코로케이션-전산센터-공동입주-근접-서비스-co-location-proximity-services" class="level3">
+<h3 class="anchored" data-anchor-id="코로케이션-전산센터-공동입주-근접-서비스-co-location-proximity-services">7.3 코로케이션 (전산센터 공동입주) / 근접 서비스 (Co-location / Proximity Services)</h3>
+<ul>
+<li><strong>주 전산센터:</strong> Interxion LON1(City of London)에 위치하여 매매체결엔진 (매칭엔진)과 근접 [미확인 — 일부 출처에서는 특정 LSEG 시장에 대해 LD4 Slough 인용]</li>
+<li><strong>크로스 커넥트:</strong> 최저 지연시간을 위한 직접 광섬유 크로스 커넥트 이용 가능</li>
+<li><strong>근접 호스팅:</strong> 매매체결엔진 (매칭엔진)과 동일 데이터센터 내 랙 공간, 전력, 냉각</li>
+<li><strong>추가 시장:</strong> Equinix LD4(Slough)에 Turquoise 및 BATS Chi-X Europe 포함 관련 시장 호스팅</li>
+<li>제3자 제공자(예: Beeks Group)를 통한 관리형 호스팅 서비스 이용 가능</li>
+</ul>
+</section>
+<section id="api-프로토콜-api-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="api-프로토콜-api-protocols">7.4 API 프로토콜 (API Protocols)</h3>
+<ul>
+<li><strong>Native Trading Gateway:</strong> 독점 바이너리 프로토콜(SAIL); 최저 지연시간(~126마이크로초); MIT203 사양</li>
+<li><strong>FIX 5.0 SP2 Trading Gateway:</strong> 주문입력 및 체결을 위한 업계 표준 FIX 프로토콜 (금융정보교환 규약); MIT202 사양</li>
+<li><strong>Drop Copy Gateway:</strong> FIX 5.0 기반; 체결 및 주문 갱신의 실시간 사본; MIT205 사양</li>
+<li><strong>MITCH Market Data:</strong> Level 1 및 Level 2 시장데이터용 바이너리 프로토콜(MIT303)</li>
+<li><strong>Reference Data Service:</strong> 종목 참조데이터용 MIT401 사양</li>
+</ul>
+</section>
+<section id="인증-테스트-certification-testing" class="level3">
+<h3 class="anchored" data-anchor-id="인증-테스트-certification-testing">7.5 인증 / 테스트 (Certification / Testing)</h3>
+<ul>
+<li><strong>Customer Development Service(CDS):</strong> 회원사의 접속 및 주문관리 테스트를 위한 운영 기능 복제 테스트 환경</li>
+<li><strong>적합성 테스트:</strong> 운영 접속 전 필수; 올바른 메시지 처리, 주문관리, 오류 처리 검증</li>
+<li><strong>신규 릴리즈 테스트:</strong> 시스템 업그레이드에 대해 회원사에 사전 통보 및 테스트 시간 제공</li>
+<li><strong>기술 계정관리팀:</strong> londontam@lseg.com — 온보딩 및 인증 지원</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="리스크-관리-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="리스크-관리-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (매매거래중단) (Risk Controls &amp; Circuit Breakers)</h2>
+<section id="가격제한-price-limits" class="level3">
+<h3 class="anchored" data-anchor-id="가격제한-price-limits">8.1 가격제한 (Price Limits)</h3>
+<ul>
+<li>LSE는 고정 일일 가격제한을 부과하지 않는다 (상한/하한 없음)</li>
+<li>대신 비정상적 가격변동 탐지를 위한 <strong>동적 및 정적 가격모니터링 밴드</strong>를 사용</li>
+<li>가격모니터링 기준은 종목별로 설정되며 정기적으로 검토</li>
+</ul>
+</section>
+<section id="서킷브레이커-매매거래중단-circuit-breakers" class="level3">
+<h3 class="anchored" data-anchor-id="서킷브레이커-매매거래중단-circuit-breakers">8.2 서킷브레이커 (매매거래중단) (Circuit Breakers)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 42%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>유형</th>
+<th>발동조건</th>
+<th>대응</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>동적 서킷브레이커 (매매거래중단)</td>
+<td>잠재 체결가가 지속 갱신되는 기준가(최근 거래 기반)로부터 동적 기준 이상 이탈</td>
+<td>매매 자동 중단; 해당 종목 변동성완화장치 (VI) 발동 시 단일가매매 진입</td>
+</tr>
+<tr class="even">
+<td>정적 서킷브레이커 (매매거래중단)</td>
+<td>잠재 체결가가 직전 경매 체결가(시가/종가)로부터 정적 기준 이상 이탈</td>
+<td>매매 자동 중단; 해당 종목 변동성완화장치 (VI) 발동 시 단일가매매 진입</td>
+</tr>
+<tr class="odd">
+<td>FTSE 100 종목</td>
+<td>시가 대비 ~8% 이탈 시 정적 서킷브레이커 (매매거래중단) 발동</td>
+<td>변동성완화장치 (VI) 발동 시 단일가매매 개시</td>
+</tr>
+<tr class="even">
+<td>경매 연장</td>
+<td>변동성완화장치 (VI) 발동 시 단일가매매의 예상 체결가가 다시 모니터링 기준 위반 시</td>
+<td>경매 호가기간 연장</td>
+</tr>
+<tr class="odd">
+<td>시장가주문 연장</td>
+<td>최종 가격모니터링 이벤트(PME) 종료 시 시장가주문이 미체결 상태일 경우 2분 연장</td>
+<td>최대 30초의 무작위 종료 기간 뒤따름</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="사전-리스크-관리-pre-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="사전-리스크-관리-pre-trade-risk-controls">8.3 사전 리스크 관리 (Pre-trade Risk Controls)</h3>
+<ul>
+<li><strong>최대 주문가치:</strong> 회사/게이트웨이별 설정 가능; 기준 초과 주문 거부</li>
+<li><strong>최대 주문수량:</strong> 단일 주문의 최대 주식 수 제한</li>
+<li><strong>최대 총 대금:</strong> 금일 전체 거래가치 합계와 모든 미체결 주문/호가의 가치 합계; 글로벌 및 종목군 수준에서 관리 가능</li>
+<li><strong>메시지 스로틀링:</strong> 시스템 과부하 방지를 위한 초당 주문 제출 건수 제한</li>
+<li><strong>가격 칼라 점검:</strong> 현재 시장가와 크게 괴리된 주문은 거부될 수 있음</li>
+<li><strong>리스크 관리자:</strong> 일반적으로 일반청산회원(GCM), 중앙청산소 (중앙거래상대방), 또는 회원사 자체가 GUI를 통해 실시간으로 사전 거래 한도를 설정하고 모니터링 가능</li>
+</ul>
+</section>
+<section id="킬-스위치-kill-switch" class="level3">
+<h3 class="anchored" data-anchor-id="킬-스위치-kill-switch">8.4 킬 스위치 (Kill Switch)</h3>
+<ul>
+<li><strong>GUI 킬 스위치:</strong> 리스크관리 인터페이스를 통해 이용 가능; 권한 있는 인력이 특정 CompID 또는 사용자의 모든 미체결 주문 취소 가능</li>
+<li><strong>전화 킬 스위치:</strong> LSE 시장운영팀에 연락하여 활성화 가능; 감사 목적으로 서면(이메일) 확인이 뒤따라야 함</li>
+<li><strong>범위:</strong> 매매 게이트웨이 CompID, Native UserID, 또는 전체 회사에 걸친 모든 주문 취소 가능</li>
+<li><strong>실시간 모니터링:</strong> 리스크 익스포저가 실시간 모니터링됨; 설정 기준 위반 시 경보 전송</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="규제-체계-regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</h2>
+<section id="감독기관-supervising-authority" class="level3">
+<h3 class="anchored" data-anchor-id="감독기관-supervising-authority">9.1 감독기관 (Supervising Authority)</h3>
+<ul>
+<li><strong>Financial Conduct Authority(FCA):</strong> 금융서비스 및 시장법 2000(FSMA)에 따라 공인투자거래소(RIE)로서 LSE의 주 감독기관</li>
+<li><strong>Bank of England / Prudential Regulation Authority(PRA):</strong> 시스템적으로 중요한 금융 인프라의 건전성 감독</li>
+<li><strong>HM Treasury:</strong> 입법 체계 수립 (예: 브렉시트 후 EU 규정 국내법화)</li>
+</ul>
+</section>
+<section id="주요-규제-key-regulations" class="level3">
+<h3 class="anchored" data-anchor-id="주요-규제-key-regulations">9.2 주요 규제 (Key Regulations)</h3>
+<ul>
+<li><strong>UK MiFID 체계:</strong> 브렉시트 후 국내법화된 MiFID II/MiFIR 버전, 거래시장, 투명성, 투자자 보호 규율</li>
+<li><strong>Market Abuse Regulation(UK MAR):</strong> 내부자거래, 시장조작, 내부정보의 불법 공개 금지</li>
+<li><strong>Financial Services and Markets Act 2000(FSMA):</strong> 영국 금융서비스를 규율하는 주 입법; RIE 인가 체계 제공</li>
+<li><strong>Listing Rules / Prospectus Regulation:</strong> FCA Listing Rules가 공식 목록 편입 규율; UK Prospectus Regulation이 증권 공모 규율</li>
+<li><strong>Transparency Directive(DTRs):</strong> 상장증권 발행인에 대한 공시 및 투명성 규칙</li>
+<li><strong>Settlement Discipline Regime:</strong> 결제 효율성을 위한 UK CSDR 규정</li>
+</ul>
+</section>
+<section id="시장감시-market-surveillance" class="level3">
+<h3 class="anchored" data-anchor-id="시장감시-market-surveillance">9.3 시장감시 (Market Surveillance)</h3>
+<ul>
+<li><strong>LSE 시장감시:</strong> Millennium Surveillance 기술을 활용하여 의심스러운 패턴, 잠재적 시장남용, 규칙 위반에 대한 거래활동 실시간 모니터링</li>
+<li><strong>FCA 시장모니터링:</strong> FCA는 UK MiFIR Article 26에 따라 기업이 제출한 거래보고 데이터를 사용하여 자체 감시 수행</li>
+<li><strong>의심거래 및 주문보고(STOR):</strong> 회원사는 의심스러운 활동을 FCA에 보고해야 함</li>
+<li><strong>교차시장 감시:</strong> 영국 및 국제 감독기관과의 조율</li>
+</ul>
+</section>
+<section id="보고-요건-reporting-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="보고-요건-reporting-requirements">9.4 보고 요건 (Reporting Requirements)</h3>
+<ul>
+<li><strong>거래보고:</strong> 투자기업은 UK MiFIR Article 26에 따라 거래당 65개 데이터 필드를 T+1(익영업일 종료까지)에 FCA에 보고 필수</li>
+<li><strong>사후 거래 투명성:</strong> 체결 세부정보(가격, 거래량, 시간) 가능한 실시간에 가깝게 공시; 대규모 및 비유동성 종목에 대한 공시 유예 가능</li>
+<li><strong>사전 거래 투명성:</strong> 호가창 종목에 대한 매수/매도호가 및 심도 공시</li>
+<li><strong>공매도 공시:</strong> 순 공매도 포지션이 발행주식 자본금의 0.2% 초과 시 FCA에 보고; 0.5% 초과 시 공개 공시</li>
+<li><strong>대량 지분 공시:</strong> 의결권의 3% 및 이후 1%씩 초과 시 공시 필요 (DTR 5)</li>
+<li><strong>연간/반기 재무보고:</strong> DTR에 따라 발행인에게 요구</li>
+</ul>
+</section>
+<section id="국제-협력-cross-border-arrangements" class="level3">
+<h3 class="anchored" data-anchor-id="국제-협력-cross-border-arrangements">9.5 국제 협력 (Cross-border Arrangements)</h3>
+<ul>
+<li>브렉시트 후 영국은 독립적 규제 체계를 운영; EU 동등성 결정은 제한적</li>
+<li>영국 소재 기업은 현지 EU 회원국 규칙에 따라 EU 시장에 접근 가능 (포괄적 패스포팅 없음)</li>
+<li>해외 기업은 FCA 인가를 신청하여 LSE에 접근 가능</li>
+<li>정보공유 및 감독 협력을 위한 국제 감독기관과의 양해각서(MoU)</li>
+<li>IOSCO MMOU 서명</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="수수료-및-수익모델-fees-revenue-model" class="level2">
+<h2 class="anchored" data-anchor-id="수수료-및-수익모델-fees-revenue-model">10. 수수료 및 수익모델 (Fees &amp; Revenue Model)</h2>
+<section id="매매수수료-trading-fees" class="level3">
+<h3 class="anchored" data-anchor-id="매매수수료-trading-fees">10.1 매매수수료 (Trading Fees)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>수수료 유형</th>
+<th>구조</th>
+<th>요율</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>체결수수료 (주식/ETF)</td>
+<td>가치 기반 (종가 기준)</td>
+<td>거래대금의 ~0.45 bps (가격 패키지 및 거래량 등급에 따라 변동) [추정치]</td>
+</tr>
+<tr class="even">
+<td>거래소 수수료 (Interactive Brokers 경유)</td>
+<td>건당, 가치 기반</td>
+<td>거래대금 x 0.000045 (0.45 bps), 최소 0.10-0.11 GBP/건</td>
+</tr>
+<tr class="odd">
+<td>Hidden/Iceberg 주문 수수료</td>
+<td>가치 기반</td>
+<td>거래대금 x 0.000025 (0.25 bps), 최소 없음</td>
+</tr>
+<tr class="even">
+<td>소매 주문 수수료</td>
+<td>지정 소매 주문흐름에 대해 경감/면제</td>
+<td>거래대금 x 0.0000 (특정 스킴 경유 무료)</td>
+</tr>
+<tr class="odd">
+<td>청산수수료</td>
+<td>건당</td>
+<td>건당 0.06 GBP (LCH EquityClear)</td>
+</tr>
+<tr class="even">
+<td>SETSqx / SEAQ 거래</td>
+<td>가치 기반</td>
+<td>SETS와 다른 수수료 체계 [구체적 요율 미공개 확인]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="기타-수수료-other-fees" class="level3">
+<h3 class="anchored" data-anchor-id="기타-수수료-other-fees">10.2 기타 수수료 (Other Fees)</h3>
+<ul>
+<li><strong>회원자격 / 연회비:</strong> 연간 매매 회원수수료; 회사 유형별 차등 [구체적 금액 미공개]</li>
+<li><strong>접속 수수료:</strong> 매매 게이트웨이 접속, 시장데이터 접속, 코로케이션 (전산센터 공동입주) 크로스 커넥트별 요금</li>
+<li><strong>시장데이터 수수료:</strong> Level 1 및 Level 2 데이터의 사용자별 및 엔터프라이즈 라이선싱; 실시간 vs.&nbsp;지연 별도 가격</li>
+<li><strong>상장수수료 (최초):</strong> 시가총액에 따라 변동; Main Market 최초 상장수수료는 수천 GBP부터 시작</li>
+<li><strong>상장수수료 (연간):</strong> 상장 유지를 위한 연간수수료; 소규모 발행인의 경우 상장년도에 GBP 1,525 비례배분으로 시작; 시가총액에 따라 증가</li>
+<li><strong>테스트/인증 수수료:</strong> Customer Development Service(CDS) 테스트 환경 사용 요금</li>
+<li><strong>가격 패키지:</strong> LSE는 거래량 기반 가격 패키지 제공; 기업은 전월 마지막 영업일 15:00까지 clients@lseg.com에 통지하여 매월 패키지 변경 가능</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="최근-동향-recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</h2>
+<section id="시스템-업그레이드-최근-5년-system-upgrades" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-업그레이드-최근-5년-system-upgrades">시스템 업그레이드 (최근 5년) (System Upgrades)</h3>
+<ul>
+<li><strong>2021-2022년:</strong> Millennium Exchange 지속 강화; LCH EquityClear가 신규 LSEG Technology 사후거래 플랫폼으로 이전</li>
+<li><strong>2023년:</strong> 매매체결엔진 (매칭엔진) 지연시간 감소 및 용량 업그레이드 지속 [미확인 세부사항]</li>
+<li><strong>2024년:</strong> LSEG Workspace 플랫폼 대폭 강화; Microsoft Cloud 파트너십 첫 상품 출시; 2025년 클라우드 기반 데이터 전달 파이프라인 강화</li>
+<li><strong>2025년:</strong> 매매시스템 안정성 개선; 시장데이터 인프라 강화 [미확인]</li>
+<li><strong>2026년:</strong> Digital Markets Infrastructure(DMI) 블록체인 결제 이니셔티브 발표, Microsoft Azure 분산원장 기술 활용, 규제 승인 대기 중</li>
+</ul>
+</section>
+<section id="신규-상품세그먼트-new-products-segments" class="level3">
+<h3 class="anchored" data-anchor-id="신규-상품세그먼트-new-products-segments">신규 상품/세그먼트 (New Products / Segments)</h3>
+<ul>
+<li><strong>Voluntary Carbon Market(VCM):</strong> LSE가 2024년 자발적 탄소시장 출시 [미확인]</li>
+<li><strong>PISCES (Private Intermittent Securities and Capital Exchange System):</strong> LSE를 통한 비상장기업 주식거래를 위한 영국 정부 후원 이니셔티브; 2024년 샌드박스 출시 [미확인]</li>
+<li><strong>LSEG Sustainability Ratings and Data:</strong> 2026년 3월 출시, 투자자를 위한 ESG 점수 및 지속가능성 분석 제공</li>
+<li><strong>Closing Price Crossing 세션:</strong> 종가단일가매매 (장마감 경매) 프로세스 강화</li>
+</ul>
+</section>
+<section id="규제-변화-regulatory-changes" class="level3">
+<h3 class="anchored" data-anchor-id="규제-변화-regulatory-changes">규제 변화 (Regulatory Changes)</h3>
+<ul>
+<li><strong>UK Listing Rules 개혁:</strong> FCA가 2024년 주요 상장 체계 개혁 완료, Premium과 Standard 세그먼트를 2024년 7월부 단일 상장 카테고리로 통합</li>
+<li><strong>UK MiFIR 검토:</strong> FCA가 영국 거래보고 체계 개선에 관한 토론문서 발간(의견 접수 2025년 2월 마감); 2025-2026년 자문서 발간 예정</li>
+<li><strong>Edinburgh Reforms:</strong> 브렉시트 후 영국 정부의 광범위한 금융서비스 개혁 패키지, 상장, 투자설명서, 거래시장 규제에 영향</li>
+<li><strong>결제주기:</strong> 영국에서 T+2에서 T+1 결제로의 전환에 대한 업계 논의 (EU 일정과 잠재적 연계, 2027년 예상)</li>
+<li><strong>공매도 규제:</strong> 영국이 브렉시트 후 갱신된 FCA 규칙으로 공매도 체계 개혁 중</li>
+</ul>
+</section>
+<section id="전략적-이니셔티브-strategic-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="전략적-이니셔티브-strategic-initiatives">전략적 이니셔티브 (Strategic Initiatives)</h3>
+<ul>
+<li><strong>Microsoft 파트너십:</strong> 클라우드 인프라, 데이터 전달, AI 통합을 위한 심층 전략적 파트너십; Microsoft Azure 및 Teams를 통해 상품 전달</li>
+<li><strong>AI &amp; ChatGPT 통합:</strong> LSEG 금융데이터가 OpenAI ChatGPT에 통합 (2025년 12월 발표); AI 소비를 위한 데이터 및 분석 포지셔닝</li>
+<li><strong>자사주 매입 프로그램:</strong> 2025년에 주주에 21억 GBP 환원; 2027년 2월까지 30억 GBP 프로그램 완료 예정</li>
+<li><strong>2027-2029 성장 프레임워크:</strong> 총 수입의 연간 중고 한자릿수 유기적 고정환율 성장 목표; 구독 기반 매출 가속</li>
+<li><strong>IPO 파이프라인:</strong> 2025년 4분기부터 2026년까지 런던 IPO 시장 회복, 수년간의 침체 후 파이프라인 개선</li>
+<li><strong>데이터 및 분석 주도:</strong> Refinitiv 인수 후 데이터 및 분석이 LSEG 매출의 ~70% 차지; 데이터셋, 클라우드 전달, 실시간 역량에 지속 투자</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="출처-sources" class="level2">
+<h2 class="anchored" data-anchor-id="출처-sources">출처 (Sources)</h2>
+<p>[Source: London Stock Exchange Official Website, “londonstockexchange.com”, accessed 2026-04-03] [Source: LSEG Official Website, “lseg.com - About Us / History”, accessed 2026-04-03] [Source: LSEG, “Preliminary Results for Year Ended 31 December 2025”, accessed 2026-04-03] [Source: LSEG, “Preliminary Results for Year Ended 31 December 2024”, accessed 2026-04-03] [Source: LSE Docs, “MIT201 - Guide to the Trading System Issue 15.6”, accessed 2026-04-03] [Source: LSE Docs, “Trading Services Price List, Effective 01 January 2025”, accessed 2026-04-03] [Source: LSE Docs, “Fees for Issuers, Effective 01 January 2026”, accessed 2026-04-03] [Source: LSE Docs, “MIT303 - Level 2 MITCH Specification Issue 11.9”, accessed 2026-04-03] [Source: LSE Docs, “MIT202 - FIX Trading Gateway (FIX 5.0) Issue 13.1”, accessed 2026-04-03] [Source: LSE Docs, “MIT203 - Native Trading Gateway Specification Issue 17”, accessed 2026-04-03] [Source: LSE Docs, “MIT301 - Guide to Market Data Services Issue 10.1”, accessed 2026-04-03] [Source: LSE Docs, “MIT401 - Guide to Reference Data Services Issue 18.1”, accessed 2026-04-03] [Source: LSE Docs, “MIT1001 - Connectivity Guide Issue 4.2”, accessed 2026-04-03] [Source: LSE Docs, “Maintaining Orderly Markets - Circuit Breakers Explained”, accessed 2026-04-03] [Source: LSE Docs, “ETP Price Monitoring Mechanisms”, accessed 2026-04-03] [Source: LSE Docs, “Exchange Level Controls - Enhanced Pre-Trade Risk Controls Technical Description”, accessed 2026-04-03] [Source: LSE Docs, “Secondary Markets Factsheet June 2025”, accessed 2026-04-03] [Source: Interactive Brokers, “LSE Stock Exchange Fees”, accessed 2026-04-03] [Source: AIM-Watch, “LSE Auctions Explained”, accessed 2026-04-03] [Source: AIM-Watch, “SEAQ, SETS &amp; SETSqx Trading Systems Explained”, accessed 2026-04-03] [Source: Computerworld, “London Stock Exchange declares Millennium IT migration successful”, accessed 2026-04-03] [Source: IEEE Spectrum, “London Stock Exchange New Trading Platform Twice as Fast as Rivals”, accessed 2026-04-03] [Source: Statista, “London Stock Exchange statistics &amp; facts”, accessed 2026-04-03] [Source: FCA, “Regulation of markets in financial instruments”, accessed 2026-04-03] [Source: ESMA, “MiFID II Article 49 Tick Sizes / RTS 11”, accessed 2026-04-03] [Source: Crowdfund Insider, “LSEG Enhances Digital Markets Infrastructure With On-Chain Settlement”, February 2026, accessed 2026-04-03] [Source: Ballotpedia News, “LSEG launches new ESG scores”, March 2026, accessed 2026-04-03] [Source: EY UK, “IPO Eye Q4 2025 - London Stock Exchange”, January 2026, accessed 2026-04-03] [Source: TS2 Tech, “LSEG Stock: ChatGPT Deal, Buyback and 2026 Price Targets”, December 2025, accessed 2026-04-03]</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

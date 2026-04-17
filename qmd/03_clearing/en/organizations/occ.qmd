@@ -1,0 +1,569 @@
+---
+title: "Options Clearing Corporation (OCC)"
+subtitle: "Clearing & Settlement > Organizations"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 1 (Deep Dive)
+> **Type:** Central Counterparty (CCP) — world's largest equity derivatives clearing organization
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | The Options Clearing Corporation |
+| Abbreviation | OCC |
+| Website | [https://www.theocc.com](https://www.theocc.com) |
+| Year Established | 1973 |
+| Country / City | United States / Chicago, Illinois |
+| Ownership Structure | Jointly owned by stockholder exchanges: Cboe Global Markets, Intercontinental Exchange (NYSE Arca, NYSE American), and Nasdaq (which holds ~40% following ISE acquisition). Originally five equal shareholders; Nasdaq's stake increased from 20% to 40% with ISE acquisition. |
+| Parent Company / Group | None (independent market utility) |
+| Regulatory Authority | SEC (primary regulator as a registered clearing agency), CFTC (secondary, as a registered Derivatives Clearing Organization), Federal Reserve Board (oversight under Dodd-Frank Title VIII as SIFMU) |
+| CPMI-IOSCO PFMI Compliance | Yes — publishes PFMI Disclosure Framework and CPMI-IOSCO Public Quantitative Disclosures (PQD) quarterly |
+| QCCP Status | Yes — recognized as a Qualifying CCP under Basel III framework for bank capital purposes |
+| SIFMU Designation | Designated as a Systemically Important Financial Market Utility (SIFMU) by FSOC in July 2012 under Dodd-Frank Title VIII |
+
+*Sources: [OCC — What Is OCC?](https://www.theocc.com/company-information/what-is-occ); [Wikipedia — Options Clearing Corporation](https://en.wikipedia.org/wiki/Options_Clearing_Corporation); [OCC SIFMU Designation Press Release (2012)](https://www.theocc.com/about/newsroom/releases/2012/07_19.jsp); [OCC PFMI Disclosures](https://www.theocc.com/risk-management/pfmi-disclosures)*
+
+### Participant Exchanges and Futures Markets
+
+OCC provides CCP clearing and settlement services to approximately 21 exchanges and trading platforms, including:
+
+**Options Exchanges:**
+- BOX Options Exchange LLC
+- Cboe BZX Exchange, Inc.
+- Cboe C2 Exchange, Inc.
+- Cboe EDGX Exchange, Inc.
+- Cboe Exchange, Inc.
+- MIAX Emerald, LLC
+- Miami International Securities Exchange, LLC (MIAX)
+- MIAX PEARL, LLC
+- Nasdaq BX, Inc.
+- Nasdaq GEMX, LLC
+- Nasdaq ISE, LLC
+- Nasdaq MRX, LLC
+- Nasdaq Options Market, LLC
+- Nasdaq PHLX, LLC
+- NYSE American Options, LLC
+- NYSE Arca, Inc.
+
+**Futures Exchanges:**
+- Cboe Futures Exchange (CFE)
+
+*Sources: [Wikipedia — Options Clearing Corporation](https://en.wikipedia.org/wiki/Options_Clearing_Corporation); [OCC 2024 Annual Report](https://annualreport.theocc.com/2024/about-occ)*
+
+### Key Historical Milestones
+
+- **1973:** OCC founded as a clearing house for listed equity options on five exchanges, coinciding with the launch of the Chicago Board Options Exchange (CBOE).
+- **1975:** OCC began clearing put options (previously only calls were listed).
+- **1985:** OCC began clearing index options.
+- **1993:** OCC launched its Stock Loan/Hedge Program for securities lending transactions.
+- **2000:** ENCORE clearing platform launched, replacing legacy systems.
+- **2000:** Monthly volume record of 75.3 million contracts set in October.
+- **2006:** STANS (System for Theoretical Analysis and Numerical Simulations) margin methodology implemented, replacing TIMS (Theoretical Intermarket Margin System).
+- **2011 (August):** Record monthly volume of 550 million contracts; S&P lowered OCC credit rating to AA+ from AAA.
+- **2012 (July):** Designated as SIFMU by FSOC under Dodd-Frank Title VIII.
+- **2015:** OCC submitted Capital Plan to SEC for enhanced capitalization; subsequently challenged by non-shareholder exchanges.
+- **2019 (February):** SEC disapproved OCC's Capital Plan on procedural and substantive grounds, citing insufficient information and governance concerns.
+- **2019 (September):** SEC and CFTC charged OCC with failing to establish and maintain adequate risk management policies.
+- **2019–2021:** Clearing Fund underfunding incident — OCC's Clearing Fund was underfunded by $200 million to $588 million at various times between October 2019 and May 2021 due to errors in the Liquidation Cost Model.
+- **2022 (October):** SEC issued no-objection notice for OCC's Renaissance Initiative cloud infrastructure proposal.
+- **2023 (February):** OCC settled with SEC ($17 million penalty) and CFTC ($5 million penalty) over Clearing Fund underfunding and operational risk management failures.
+- **2024 (May 28):** Transition to T+1 settlement cycle for underlying equity securities.
+- **2024:** Record-breaking annual volume — 12.2 billion options contracts cleared (+10.6% YoY), 60.1 million futures contracts (+7.7% YoY).
+- **2025 (April 4):** Daily volume record of 102.6 million contracts, the first time exceeding 100 million in a single day.
+- **2025 (October 10):** New daily volume record of 110 million option contracts cleared.
+
+*Sources: [Wikipedia — Options Clearing Corporation](https://en.wikipedia.org/wiki/Options_Clearing_Corporation); [OCC 2024 Volume Release](https://www.theocc.com/newsroom/views/2025/01-03-occ-annual-2024-and-december-2024-volume); [SEC Charges OCC (2023)](https://www.sec.gov/newsroom/press-releases/2023-31); [CFTC Penalty Order (2023)](https://www.cftc.gov/PressRoom/PressReleases/8661-23); [SEC Capital Plan Disapproval (2019)](https://www.federalregister.gov/documents/2019/02/20/2019-02731/self-regulatory-organizations-the-options-clearing-corporation-order-disapproving-proposed-rule)*
+
+### Key Financial Data (2024)
+
+| Metric | Value |
+|--------|-------|
+| Revenue | ~$468–500 million [unverified — sources vary] |
+| Employees | ~800+ [unverified] |
+| Options Contracts Cleared (2024) | 12.2 billion (record) |
+| Futures Contracts Cleared (2024) | 60.1 million |
+| Average Daily Options Volume (2024) | ~48.6 million contracts |
+| Total Margin Held (year-end 2023) | $231.7 billion |
+| Clearing Fund Size (average Q3 2024–Q2 2025) | ~$19.5 billion |
+| Clearing Fund Size (year-end 2023) | ~$16.9 billion |
+| Initial Margin (Q3 2025, PQD) | $180 billion (+59% YoY) |
+| Regulatory Capital Target | $303 million |
+| Persistent Minimum SITG | $69 million (OCC capital) / ~$76 million (including deferred compensation) |
+| Clearing Members | ~115 |
+
+*Sources: [OCC 2024 Volume Release](https://www.theocc.com/newsroom/views/2025/01-03-occ-annual-2024-and-december-2024-volume); [2024 OCC Annual Report](https://annualreport.theocc.com/); [CCP Global PQD Quarterly Trends Report Q3 2025](https://ccp-global.org/); [SEC Filing SR-OCC-2021 (SITG)](https://www.federalregister.gov/documents/2021/03/01/2021-04087/self-regulatory-organizations-the-options-clearing-corporation-notice-of-filing-of-advance-notice)*
+
+---
+
+## 2. Clearing Model
+
+### 2.1 CCP Services
+
+OCC serves as the sole CCP for standardized equity options listed on U.S. national securities exchanges. It also clears futures, securities lending transactions, and certain OTC products.
+
+| Product Class | Description | Volume / Scale (2024) |
+|---------------|-------------|----------------------|
+| **Equity Options** | Puts and calls on individual equities, ETFs | Majority of 12.2 billion total |
+| **Index Options** | Options on equity indexes (e.g., SPX, NDX, VIX) | Included in total; SPX alone ~2+ billion |
+| **Futures** | Futures on CBOE Futures Exchange (VIX futures, etc.) | 60.1 million contracts |
+| **Securities Lending** | Stock Loan/Hedge Program and Market Loan Program | ~$139 billion average daily loan balance (June 2023 peak); ~9,800 transactions/day |
+| **Single-Stock Futures** | Futures on individual equities | Minimal volume (largely dormant) |
+
+*Sources: [OCC 2024 Volume Release](https://www.theocc.com/newsroom/views/2025/01-03-occ-annual-2024-and-december-2024-volume); [OCC Stock Loan Programs](https://www.theocc.com/clearance-and-settlement/stock-loan-programs); [FOW — OCC Securities Lending 30th Anniversary](https://www.fow.com/insights/3700860-occs-30th-anniversary-of-its-securities-lending-programme)*
+
+### 2.2 Short-Dated and 0DTE Options
+
+Short-dated options (contracts with less than one week to expiration) represent a rapidly growing segment of OCC's cleared volume:
+
+- Short-dated options represented approximately **40% of total volume** in 2024
+- Zero-day-to-expiry (0DTE) options represented approximately **20% of total volume** in 2024
+- In SPX options specifically, 0DTE accounted for **48% of volume** in Q1 2024 (up from 11% five years prior)
+- This rapid growth creates significant intraday risk management challenges, as 0DTE positions are currently uncollateralized intraday under traditional end-of-day margining
+
+*Sources: [OCC 2024 Volume Release](https://www.theocc.com/newsroom/views/2025/01-03-occ-annual-2024-and-december-2024-volume); [SEC Filing SR-OCC-2024-010](https://www.sec.gov/files/rules/sro/occ/2025/34-102202.pdf)*
+
+### 2.3 Novation Process
+
+OCC uses an **open offer** model for novation. When an options trade is executed on a participant exchange and reported to OCC, OCC interposes itself as the CCP:
+
+- OCC becomes the **buyer to every seller and seller to every buyer**
+- This novation occurs at the point of trade acceptance
+- OCC guarantees the performance of every cleared contract
+- Positions are maintained at the clearing member account level
+
+### 2.4 Netting
+
+OCC performs multilateral netting:
+
+- **Position Netting:** Long and short positions in the same series are netted at the account level
+- **Premium Netting:** Daily premiums receivable and payable are netted into a single payment per clearing member
+- **Exercise/Assignment Netting:** Delivery obligations from exercise and assignment are netted with NSCC through the "Accord" agreement
+
+### 2.5 Clearing Membership
+
+| Category | Details |
+|----------|---------|
+| Number of Clearing Members | ~115 |
+| Member Types | U.S. broker-dealers, futures commission merchants (FCMs), U.S. banks (newly eligible), non-U.S. securities firms |
+| Minimum Net Capital | $10,000,000 |
+| Operational Requirements | Qualified staff, adequate facilities, ability to interface with OCC systems |
+| Clearing Fund Contribution | Required; allocated based on risk-based methodology proportional to stress exposure |
+
+In May 2023, the SEC approved OCC's amendment to expand eligible membership to include certain U.S. banks, in addition to the traditional broker-dealer and FCM categories.
+
+*Sources: [OCC — Becoming a Clearing Member](https://www.theocc.com/company-information/becoming-a-clearing-member); [SEC Approval of Membership Standards Amendment (2023)](https://www.federalregister.gov/documents/2023/05/11/2023-10029/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed)*
+
+### 2.6 Securities Lending Programs
+
+OCC operates two distinct securities lending programs, established in 1993:
+
+| Program | Model | Description |
+|---------|-------|-------------|
+| **Hedge Program** | Bilateral | Supports transactions executed bilaterally between counterparties; OCC acts as CCP guarantor |
+| **Market Loan Program** | Exchange-based | Supports transactions originating through participating loan markets (e.g., AQS) |
+
+- Since 2012, stock loan clearing volumes have grown at a **CAGR of 16%**, with open interest growing at **22%**
+- OCC is the world's largest U.S. equities lending CCP
+- OCC selected Axoni (DLT platform) to modernize securities lending infrastructure
+
+*Sources: [OCC Stock Loan Programs](https://www.theocc.com/clearance-and-settlement/stock-loan-programs); [Axoni — OCC Modernization](https://axoni.com/press/occ-selects-axoni-to-modernize-securities-lending-infrastructure/)*
+
+---
+
+## 3. Risk Management
+
+### 3.1 STANS Margin Methodology
+
+OCC's **System for Theoretical Analysis and Numerical Simulations (STANS)** is the primary margin methodology, implemented in August 2006 to replace TIMS (Theoretical Intermarket Margin System). OCC was the **first derivatives clearinghouse in the world** to use a large-scale Monte Carlo-based risk management methodology.
+
+#### STANS Technical Details
+
+| Parameter | Details |
+|-----------|---------|
+| Methodology | Monte Carlo simulation — full portfolio margining |
+| Risk Measure | 99% Expected Shortfall (ES) — average of all losses beyond the 99% VaR point |
+| Enhanced Measure | 99.5% ES for the two single-factor sub-portfolios with greatest exposure; 99% ES for residual portfolio |
+| Holding Period | **2-day liquidation horizon** (one day longer than U.S. competitors like CME) |
+| Simulation Paths | Large-scale Monte Carlo simulations across all risk factors |
+| Risk Factors | Equity prices, implied volatilities (by strike/maturity), interest rates, dividend yields, correlation structures |
+| Pricing Models | Sophisticated options pricing models for all listed derivatives |
+| Margin Components | Base component (ES) + Stress test add-on component |
+| Stress Add-On | Considers ES increases from especially large market moves, perfect/zero correlations replacing estimated correlations, and extreme adverse idiosyncratic movements |
+| Calculation Frequency | Daily (end-of-day), with intraday monitoring |
+
+#### STANS vs. SPAN Comparison
+
+| Feature | OCC STANS | CME SPAN |
+|---------|-----------|----------|
+| Methodology | Monte Carlo simulation | Scenario-based (16 risk scenarios) |
+| Risk Measure | Expected Shortfall (99%) | Worst-case loss across scenarios |
+| Portfolio Approach | Full portfolio margining with correlations | Product-group scanning with inter-commodity spreads |
+| Holding Period | 2 days | 1 day (typically) |
+| Non-linearity | Fully captured through simulation | Approximated via scanning range |
+| Correlation Treatment | Dynamically estimated from historical data | Fixed inter-commodity spread credits |
+| Computational Intensity | High (Monte Carlo) | Lower (parametric scenarios) |
+| Historical Context | Introduced 2006 | Introduced 1988 |
+
+*Sources: [OCC — Margin Methodology](https://www.theocc.com/Risk-Management/Margin-Methodology); [Risk.net — Clearing House of the Year: OCC](https://www.risk.net/awards/7930416/clearing-house-of-the-year-occ); [SEC STANS Approval Order (2006)](https://www.sec.gov/files/rules/sro/occ/34-53322.pdf)*
+
+### 3.2 Margin Call Schedule
+
+- **End-of-Day Margin:** Calculated daily after market close using STANS; margin calls issued overnight for next-morning settlement
+- **Intraday Monitoring:** OCC monitors positions and market movements intraday and may issue intraday margin calls
+- **Intraday Risk Charge (proposed/approved 2025):** New margin add-on to address uncollateralized intraday exposure, particularly from 0DTE options and overnight trading activity
+
+*Sources: [SEC Approval of Intraday Risk Charge (April 2025)](https://www.federalregister.gov/documents/2025/04/09/2025-06041/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed)*
+
+### 3.3 Default Waterfall
+
+OCC's default waterfall describes the order in which financial resources are used to address losses arising from a clearing member default:
+
+| Layer | Resource | Approximate Size |
+|-------|----------|-----------------|
+| 1 | **Defaulting member's margin deposits** | Varies by member (total margin pool ~$180–232 billion) |
+| 2 | **Defaulting member's Clearing Fund contribution** | Proportional share of ~$19.5 billion total |
+| 3 | **OCC's Skin-in-the-Game (SITG)** — OCC's own capital contribution | Persistent minimum of $69 million (capital) / ~$76 million (including deferred compensation); at least 25% of target regulatory capital |
+| 4 | **Non-defaulting members' Clearing Fund contributions** (mutualized loss sharing) | Remainder of ~$19.5 billion Clearing Fund |
+| 5 | **Assessments on non-defaulting members** (powers of assessment) | Up to the amount of each member's required Clearing Fund contribution (effectively doubling the mutualized pool) |
+| 6 | **Recovery tools** (VMGH, partial tear-up, etc.) | See Section 3.5 |
+
+**Cover 2 Standard:** OCC sizes its financial resources (margin + Clearing Fund) to cover the default of its **two largest clearing members and their affiliates** under extreme but plausible market conditions. This is consistent with CPMI-IOSCO PFMI Principle 4 for systemically important CCPs.
+
+*Sources: [OCC — Default Rules & Procedures](https://www.theocc.com/risk-management/default-rules-and-procedures); [SEC Filing on Default Waterfall Amendments (2024)](https://www.federalregister.gov/documents/2024/07/09/2024-14971/self-regulatory-organizations-the-options-clearing-corporation-order-approving-proposed-rule-change); [Risk.net — OCC Cover 2](https://www.risk.net/risk-management/5843281/occs-move-to-cover-2-wont-cost-members-more-cro-says)*
+
+### 3.4 Stress Testing & Back-Testing
+
+**Stress Testing:**
+- OCC performs **daily stress testing** of its financial resources
+- Two categories of scenarios:
+  - **Sizing Scenarios:** Assess whether collected resources are adequate and inform the size of OCC's financial resources
+  - **Sufficiency Scenarios:** Measure potential exposures to determine whether additional margin or Clearing Fund calls are needed
+- Scenarios include historical (e.g., 2008 financial crisis rally/decline variations), hypothetical, and reverse stress tests
+- In 2024, OCC recategorized certain 2008-based Informational Scenarios as Sufficiency Scenarios after finding they consistently generated higher exposures
+- In January 2025, SEC approved enhancements to STANS and Comprehensive Stress Testing (CST) methodology to better capture risks from short-dated options
+
+**Back-Testing:**
+- OCC conducts daily back-testing of its margin model
+- In September 2024, SEC approved OCC's updated backtesting framework and establishment of a Resource Backtesting Margin Charge
+- Back-testing compares actual portfolio P&L against margin requirements to validate model coverage
+
+*Sources: [SEC Approval of Stress Testing Amendments (July 2024)](https://www.federalregister.gov/documents/2024/07/09/2024-14971/self-regulatory-organizations-the-options-clearing-corporation-order-approving-proposed-rule-change); [SEC Approval of STANS/CST Enhancements (January 2025)](https://www.federalregister.gov/documents/2025/01/22/2025-01414/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed); [SEC Approval of Backtesting Framework (September 2024)](https://www.federalregister.gov/documents/2024/09/17/2024-21035/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed)*
+
+### 3.5 Recovery & Resolution Tools
+
+OCC maintains a **Recovery and Orderly Wind-Down (RWD) Plan** that describes tools for managing losses and liquidity shortfalls beyond routine risk management:
+
+| Tool | Description |
+|------|-------------|
+| **Assessments** | OCC may assess non-defaulting clearing members up to their required Clearing Fund contribution amount |
+| **Variation Margin Gains Haircutting (VMGH)** | OCC can allocate losses to clearing participants that experience mark-to-market gains on their positions; provides incentive for members to participate in default management |
+| **Voluntary Partial Tear-Up** | Members may voluntarily extinguish contracts to help OCC return to a matched book |
+| **Mandatory Partial Tear-Up** | OCC authority to extinguish remaining contracts of a defaulted clearing member at OCC's marking price; used after other default management tools have been exhausted |
+| **Orderly Wind-Down** | Planned cessation of critical services with transfer of positions to alternative clearing arrangements |
+
+The RWD Plan was most recently amended and approved by the SEC in August 2025.
+
+*Sources: [OCC Recovery and Orderly Wind-Down Plan](https://www.theocc.com/getmedia/e2cb031f-f53e-4c0b-981b-c3817bff79c9/GenUse_PartGuide_06182021.pdf); [SEC Approval of RWD Plan Modifications (August 2025)](https://www.federalregister.gov/documents/2025/08/04/2025-14669/self-regulatory-organizations-the-options-clearing-corporation-order-approving-proposed-rule-change); [FSB OCC Questionnaire](https://www.fsb.org/uploads/OCC-1.pdf)*
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle
+
+| Settlement Type | Cycle | Details |
+|-----------------|-------|---------|
+| **Premium Settlement** | T+1 | Payment of options premium is settled the next business day after trade date |
+| **Exercise/Assignment (Equity Options)** | T+1 | Following the transition on May 28, 2024; previously T+2 |
+| **Exercise/Assignment (Index Options)** | Cash settlement on T+1 | Cash-settled index options pay/receive cash difference |
+| **Futures** | Daily mark-to-market | Variation margin settled daily; final settlement at expiration |
+| **Stock Loan** | Same-day or T+1 | Depending on program and initiation time |
+
+### 4.2 DVP and Settlement Finality
+
+- **Exercise/Assignment of Equity Options:** When equity options are exercised/assigned, the resulting stock delivery obligation is processed through the **Accord** — an agreement between OCC and NSCC (National Securities Clearing Corporation)
+- Under the Accord, NSCC accepts "E&A/Delivery Transactions" resulting from OCC exercise and assignment for clearing and settlement through NSCC's Continuous Net Settlement (CNS) system
+- Settlement of underlying shares occurs at the **Depository Trust Company (DTC)** on a DVP (Delivery versus Payment) basis
+- Settlement is considered **final and irrevocable** once completed through DTC's book-entry system
+
+### 4.3 Premium Settlement Process
+
+1. At end of each trading day, OCC calculates net premium obligations for each clearing member
+2. Net premiums receivable and payable are aggregated across all cleared trades
+3. Settlement occurs on T+1 through Fedwire or commercial bank payment systems
+4. OCC may call for intraday premium settlement during periods of high volatility
+
+### 4.4 Exercise and Assignment Process
+
+1. **Exercise Notice:** Option holder's clearing member submits exercise notice to OCC (either by instruction or automatic exercise for in-the-money options)
+2. **Assignment:** OCC uses a **random assignment algorithm** to distribute exercise notices fairly among clearing members with short positions in the assigned series
+3. **Delivery/Cash Settlement:** For equity options, the resulting buy/sell obligations flow to NSCC via the Accord for settlement at DTC. For index options, cash settlement amounts are calculated and settled directly through OCC
+4. **Automatic Exercise:** Options expiring in-the-money by $0.01 or more are automatically exercised unless contrary instructions are received
+
+*Sources: [OCC Equity Options Product Specifications](https://www.theocc.com/clearance-and-settlement/clearing/equity-options-product-specifications); [OCC T+1 Info Memo #54580](https://infomemo.theocc.com/infomemos?number=54580); [SEC — OCC/NSCC Accord Modifications (2024)](https://www.federalregister.gov/documents/2024/03/19/2024-05734/self-regulatory-organizations-the-options-clearing-corporation-notice-of-no-objection-to-advance)*
+
+---
+
+## 5. Technology & Infrastructure
+
+### 5.1 Core Systems
+
+| System | Function | Status |
+|--------|----------|--------|
+| **ENCORE** | Core clearing, risk management, and data management platform; real-time processing engine | Legacy — operational since 2000; scheduled for replacement by Ovation |
+| **Ovation** | Next-generation cloud-based clearing, settlement, risk management, and data platform | In testing; external beta testing began July 2024; launch targeted for mid-2025 [unverified if completed] |
+| **STANS** | Margin calculation engine (Monte Carlo-based) | Active — continuously enhanced |
+| **CLEARS** | Clearing member reporting and inquiry system | Active [unverified current status] |
+
+### 5.2 ENCORE Architecture
+
+- **Monolithic architecture** — tightly coupled components making change difficult
+- Runs in traditional on-premises data centers
+- Receives trade and post-trade data from exchanges on a transaction-by-transaction basis in real time
+- Maintains clearing member positions, calculates margin and Clearing Fund requirements
+- Provides reporting to OCC staff, regulators, and clearing members
+
+### 5.3 Ovation Architecture (Renaissance Initiative)
+
+OCC's **Renaissance Initiative** is a multi-year technology modernization program to replace ENCORE with the Ovation platform:
+
+| Feature | Details |
+|---------|---------|
+| Cloud Provider | Amazon Web Services (AWS) |
+| Architecture | Modular, cloud-native; three pillars — Clearing & Settlement, Data, Risk Management |
+| Real-Time Processing | Stream processing using Apache Kafka and Apache Flink |
+| Data Processing | Prices for over 2 million financial instruments per second; billions of open option positions |
+| Disaster Recovery | Isolated Kafka + Flink infrastructure in both AWS and on-premises data center |
+| Key Benefits | Enhanced resiliency, security, scalability; real-time risk measurement using current prices (vs. prior-day close) |
+
+**Renaissance Timeline:**
+- **October 2022:** SEC no-objection notice for cloud infrastructure proposal
+- **2023:** Ovation development and internal testing
+- **July 2024:** External beta testing commenced (Beta 1)
+- **October 2024:** Beta 2 launched with expanded functionality
+- **January 2025:** Beta 3 — collateral management testing
+- **Mid-2025:** Planned Ovation launch (ENCORE-to-Ovation conversion in single processing cycle)
+
+### 5.4 Processing Capacity
+
+| Metric | Value |
+|--------|-------|
+| Daily Peak Volume (record) | 110 million contracts (October 10, 2025) |
+| Data Ingestion | >2 million instrument prices per second |
+| Open Positions Tracked | Billions of open option positions |
+| Participant Exchanges Supported | ~21 exchanges and trading platforms |
+
+### 5.5 Interface Protocols
+
+- **FIX/FIXML:** Industry-standard messaging for trade submission and reporting
+- **Proprietary APIs:** OCC-specific interfaces for clearing member connectivity
+- **Market Data Feeds:** Real-time position and margin data delivery
+
+*Sources: [OCC Transformation](https://www.theocc.com/company-information/occ-transformation); [OCC — Clearing, Risk and Data Changes](https://www.theocc.com/company-information/occ-transformation/clearing-risk-and-data-changes); [Confluent Current 2024 — OCC Stream Processing](https://current.confluent.io/2024-sessions/how-the-worlds-largest-options-clearinghouse-moved-from-batch-to-stream-processing-to-manage-risk); [Built In Chicago — OCC Tech Infrastructure](https://www.builtinchicago.org/articles/chicago-options-clearing-corporation-tech-infrastructure); [Traders Magazine — OCC Ovation Testing](https://www.tradersmagazine.com/featured_articles/occ-gets-ready-for-ovations-testing/); [IBM — OCC Case Study](https://www.ibm.com/case-studies/options-clearing-corporation)*
+
+---
+
+## 6. Regulatory Framework
+
+### 6.1 Regulatory Structure
+
+| Regulator | Jurisdiction | Scope |
+|-----------|-------------|-------|
+| **SEC** | Primary regulator | Registered clearing agency under Section 17A of the Securities Exchange Act of 1934; clears put/call options on equity issues, stock indexes, foreign currencies, interest rate composites, and single-stock futures |
+| **CFTC** | Secondary regulator | Registered Derivatives Clearing Organization (DCO); clears futures and options on futures |
+| **Federal Reserve Board** | SIFMU oversight | Prudential oversight under Dodd-Frank Title VIII; access to Federal Reserve discount window and payment system services |
+| **FSOC** | Designation authority | Designated OCC as SIFMU in July 2012 |
+
+### 6.2 Key Regulatory Requirements
+
+- **SEC Rule 17Ad-22(e):** Enhanced standards for covered clearing agencies (effective April 2017); establishes requirements for risk management, financial resources, governance, operations, and recovery planning
+- **CFTC Core Principles:** Requirements for DCOs under the Commodity Exchange Act
+- **PFMI Compliance:** OCC publishes PFMI Disclosure Framework and quarterly PQD data in accordance with CPMI-IOSCO guidance
+- **Annual Financial Audit:** OCC's financial statements are audited annually
+- **Regulatory Reporting:** Regular reporting to SEC, CFTC, and Federal Reserve on risk metrics, financial resources, and operational performance
+
+### 6.3 Notable Regulatory Actions
+
+| Year | Action | Details |
+|------|--------|---------|
+| **2019** | SEC & CFTC charges | Failure to establish and maintain adequate risk management policies; SEC fined OCC in connection with risk management deficiencies |
+| **2019** | SEC Capital Plan disapproval | SEC disapproved OCC's proposed Capital Plan; cited insufficient information, governance concerns, competitive impact on non-shareholder exchanges |
+| **2023 (Feb)** | SEC settlement | $17 million penalty for Clearing Fund underfunding (Oct 2019–May 2021); Clearing Fund was underfunded by $200M–$588M at various times |
+| **2023 (Feb)** | CFTC settlement | $5 million penalty for operational risk management violations related to automated systems |
+
+*Sources: [SEC Press Release — OCC Charges (2023)](https://www.sec.gov/newsroom/press-releases/2023-31); [SEC/CFTC Press Release (2019)](https://www.sec.gov/newsroom/press-releases/2019-171); [CFTC Press Release (2023)](https://www.cftc.gov/PressRoom/PressReleases/8661-23); [SEC Capital Plan Disapproval (2019)](https://www.federalregister.gov/documents/2019/02/20/2019-02731/self-regulatory-organizations-the-options-clearing-corporation-order-disapproving-proposed-rule)*
+
+---
+
+## 7. Interoperability
+
+### 7.1 Cross-Margining Programs
+
+OCC maintains cross-margining agreements that allow hedged positions cleared at separate clearinghouses to be combined into a single portfolio for margin purposes:
+
+| Program | Counterpart CCP | Description |
+|---------|----------------|-------------|
+| **OCC-CME Cross-Margin Program** | CME Clearing | Allows qualifying clearing members to offset equity option positions (OCC) against related equity index futures positions (CME); established after 1987 Black Monday crash; second amended and restated agreement approved in 2020 |
+
+Cross-margining uses OCC's STANS methodology to calculate the combined portfolio risk, typically resulting in lower margin requirements than if margins were calculated separately at each CCP.
+
+### 7.2 Cross-Guaranty and Linkages
+
+| Arrangement | Details |
+|-------------|---------|
+| **OCC-NSCC Accord** | Governs the processing of physically settled equity options; NSCC accepts exercise/assignment delivery transactions for settlement through its CNS system at DTC |
+| **Exchange Linkages** | OCC maintains Participant Exchange Agreements with all 16+ options exchanges; the Amended and Restated Participant Exchange Agreement was approved by the SEC in July 2025 |
+
+### 7.3 Ongoing Coordination
+
+OCC is evaluating adjustments to existing cross-CCP agreements and exploring potential new arrangements to support aligned margin cycles and risk management, particularly in light of:
+- Extended trading hours initiatives
+- T+1 settlement transition
+- Growing intraday risk from 0DTE options
+
+*Sources: [OCC — Cross Margin Programs](https://www.theocc.com/Risk-Management/Cross-Margin-Programs); [Yale SOM — Cross-Margining and Financial Stability](https://som.yale.edu/blog/cross-margining-and-financial-stability); [SEC Approval of Participant Exchange Agreement (July 2025)](https://www.federalregister.gov/documents/2025/07/16/2025-13263/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed)*
+
+---
+
+## 8. Fees
+
+### 8.1 Clearing Fee Schedule
+
+OCC's fee schedule has undergone several changes in 2024–2025:
+
+| Fee Type | Amount | Effective Date |
+|----------|--------|---------------|
+| **Per Contract Clearing Fee (Options)** | $0.025 | Effective February 14, 2025 (increased from $0.02) |
+| **Per Contract Clearing Fee (Futures)** | $0.025 [unverified — may differ] | -- |
+| **Per Transaction Clearing Fee** | Removed | Previously $55.00 for transactions of 2,751+ contracts; eliminated February 2025 |
+| **Minimum Monthly Clearing Fee** | $200.00 | Current |
+| **Operational Loss Fee** | Variable; updated per Capital Management Policy | Per SEC filing SR-OCC-2024 |
+| **Clearing Fee Holiday** | $0.00 (temporary) | December 1–31, 2025 |
+
+**Fee History:**
+- The average clearing fee per contract from June 2021 through November 2024 was approximately **$0.019 per contract** (including the effect of the now-removed Per Transaction Fee cap)
+- The increase to $0.025 and removal of the per-transaction cap was designed to address OCC's anticipated cash flow needs based on interest rate forecasts, projected operating expenses, projected volumes, and capital needs
+- OCC occasionally implements "fee holidays" when accumulated revenue exceeds targets — a one-month holiday was implemented in December 2025
+
+### 8.2 Exercise and Assignment Fees
+
+Specific exercise and assignment fees per contract are published in OCC's Schedule of Fees on [theocc.com](https://www.theocc.com/company-information/schedule-of-fees). [Exact amounts not publicly available in search results — refer to official schedule]
+
+### 8.3 Membership Fees
+
+- Initial and ongoing membership fees are assessed per OCC's By-Laws
+- Clearing Fund contributions are required based on risk-based allocation methodology (not a flat fee)
+- In 2016, OCC announced a $39 million refund to clearing members and ~$17 million dividend to stockholder exchanges, reflecting revenue surplus
+
+*Sources: [OCC — Schedule of Fees](https://www.theocc.com/company-information/schedule-of-fees); [SEC Filing SR-OCC-2024-017 (Fee Change)](https://www.federalregister.gov/documents/2024/12/27/2024-31089/self-regulatory-organizations-the-options-clearing-corporation-notice-of-filing-and-immediate); [SEC Filing SR-OCC-2025-002 (Fee Update)](https://www.federalregister.gov/documents/2025/02/24/2025-02944/self-regulatory-organizations-the-options-clearing-corporation-notice-of-filing-and-immediate); [OCC Fee Holiday Info Memo #57379](https://infomemo.theocc.com/infomemos?number=57379)*
+
+---
+
+## 9. Recent Developments
+
+### 9.1 Renaissance Initiative / Technology Modernization
+
+OCC's multi-year **Renaissance Initiative** is the most significant technology transformation in its history:
+
+- **Ovation platform** built on AWS cloud with modular architecture (clearing & settlement, data, risk management pillars)
+- Transition from batch processing (ENCORE) to real-time **stream processing** using Apache Kafka and Flink
+- Enables intraday risk calculation using current market prices rather than prior-day closing prices
+- External industry testing began July 2024 with progressive beta releases
+- Planned conversion from ENCORE to Ovation in a single processing cycle [target: mid-2025; completion status unverified as of April 2026]
+- SEC no-objection on cloud infrastructure received October 2022
+
+### 9.2 Extended Trading Hours
+
+- Cboe and other exchanges have expanded or proposed extended trading sessions (pre-market and post-market) for equity options
+- Cboe extended trading includes 7:30–9:25 a.m. ET and 4:00–4:15 p.m. ET sessions for select options classes
+- OCC infrastructure must support clearing and risk management across extended hours
+- Creates challenges for margin calculation timing, intraday risk exposure, and settlement cycle alignment
+
+### 9.3 0DTE Options Growth Impact
+
+The explosive growth of zero-day-to-expiry options has driven significant risk management adaptations:
+
+- **Intraday Risk Charge:** SEC approved (April 2025) a new margin add-on applied to all clearing member accounts to mitigate risks from intraday and overnight trading activity
+- **STANS Enhancements:** SEC approved (January 2025) changes to STANS and CST methodology to better capture short-dated options risks; average daily margin impact estimated at +0.58%
+- **Volatility Adjustments:** OCC proposed (October 2024) a mechanism to adjust margin parameters during periods of high volatility
+- OCC's intraday exposure to 0DTE options was previously **uncollateralized** — the new Intraday Risk Charge addresses this gap
+
+### 9.4 Securities Lending Expansion
+
+- OCC selected **Axoni** (distributed ledger technology platform) to modernize its securities lending infrastructure
+- Stock loan clearing volumes have grown at a 16% CAGR since 2012
+- OCC is now the world's largest U.S. equities lending CCP
+- Programs expanded to support broader market participation and operational efficiency
+
+### 9.5 2021 Capital Plan / Governance Crisis and Resolution
+
+This episode represents a significant chapter in OCC's history:
+
+**Timeline:**
+1. **2015:** OCC submitted Capital Plan to SEC proposing significant capitalization increase through dividends to stockholder exchanges, funded by clearing fee increases
+2. **2017:** SEC initially approved the Capital Plan
+3. **2017:** D.C. Circuit Court of Appeals remanded the decision back to the SEC following challenge by non-shareholder exchanges (e.g., MIAX) who argued they were denied fair notice and opportunity to present views
+4. **2019 (February):** SEC **disapproved** the Capital Plan, finding:
+   - Insufficient evidence that the Plan was consistent with the Securities Exchange Act
+   - Governance concerns — conflicts of interest between OCC management/board and stockholder exchanges
+   - Failure to notify non-shareholder exchanges of the Plan's competitive significance
+   - Questions about whether fee-funded dividends to owner-exchanges were appropriate for a market utility
+5. **2019 (September):** SEC and CFTC separately charged OCC with risk management policy failures unrelated to the Capital Plan but occurring during the same period
+6. **2019–2021:** Errors in OCC's Liquidation Cost Model led to Clearing Fund underfunding of **$200M–$588M** at various times
+7. **2023 (February):** OCC settled with SEC ($17M) and CFTC ($5M); total penalties of $22M
+8. **Post-2023:** OCC implemented remedial measures including enhanced governance, improved internal controls, new Capital Management Policy with regulatory capital target of $303 million, and persistent minimum SITG of $69 million
+
+**Lessons:**
+- Highlighted tensions in OCC's ownership model — stockholder exchanges as both owners and competitors of non-shareholder exchanges
+- Led to enhanced regulatory scrutiny of OCC governance
+- Prompted OCC to adopt more transparent capital management and fee-setting processes
+- Reinforced the importance of robust internal controls at SIFMUs
+
+### 9.6 Clearing Fund Methodology Reform (2025)
+
+- In October 2025, OCC filed a proposed rule change to reform its Clearing Fund **allocation methodology** to better align contributions with the stress risk each clearing member poses to OCC
+- In December 2025, SEC granted accelerated approval of the reformed methodology
+- The new methodology ensures that stress-based risk is "fairly allotted to market participants that expose OCC to such stress risk"
+
+### 9.7 Volume Records and Market Growth
+
+- **2024:** 12.2 billion options contracts cleared (record; +10.6% YoY)
+- **2025 (January):** 1.16 billion monthly contracts (+17.8% YoY)
+- **2025 (April 4):** First-ever 100M+ daily volume — 102.6 million contracts
+- **2025 (October 10):** New daily record of 110 million contracts
+- Driven by retail participation, zero-commission trading platforms, 0DTE growth, and economic uncertainty
+
+*Sources: [OCC Transformation](https://www.theocc.com/company-information/occ-transformation); [SEC Approval of Intraday Risk Charge (April 2025)](https://www.federalregister.gov/documents/2025/04/09/2025-06041/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed); [SEC Approval of STANS/CST Enhancements (January 2025)](https://www.federalregister.gov/documents/2025/01/22/2025-01414/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed); [SEC Capital Plan Disapproval (2019)](https://www.federalregister.gov/documents/2019/02/20/2019-02731/self-regulatory-organizations-the-options-clearing-corporation-order-disapproving-proposed-rule); [SEC Charges OCC (2023)](https://www.sec.gov/newsroom/press-releases/2023-31); [Compliance Week — OCC Penalties](https://www.complianceweek.com/regulatory-enforcement/sec-cftc-order-options-clearing-corp-to-pay-22m-over-internal-rule-failures/32696.article); [FIA — OCC Capital Plan](https://www.fia.org/fia/articles/fia-questions-new-occ-capital-management-plan-sec-letter); [OCC 2024 Volume Release](https://www.theocc.com/newsroom/views/2025/01-03-occ-annual-2024-and-december-2024-volume); [SEC Clearing Fund Allocation Approval (December 2025)](https://www.federalregister.gov/documents/2025/12/16/2025-22855/self-regulatory-organizations-the-options-clearing-corporation-notice-of-filing-of-partial-amendment); [Cboe Extended Trading Hours FAQ](https://cdn.cboe.com/resources/membership/Equity_Options_Extended_Trading_Hours_FAQ.pdf)*
+
+---
+
+## Comparison with KRX Clearing
+
+| Feature | OCC (U.S.) | KRX (Korea) |
+|---------|------------|-------------|
+| Role | CCP for listed options and futures | CCP for all KRX-listed products (equities, derivatives, bonds) |
+| CSD | DTC (separate entity via NSCC Accord) | KSD (Korea Securities Depository — separate entity) |
+| Margin Methodology | STANS (Monte Carlo, 99% ES, 2-day horizon) | KOSPI 200 options: SPAN-like; equities: VaR-based |
+| Default Standard | Cover 2 (two largest members + affiliates) | Cover 1 [unverified] |
+| SIFMU Equivalent | Yes (Dodd-Frank Title VIII) | Designated as systemically important by FSC/FSS |
+| Settlement Cycle | T+1 (options premium, exercise/assignment) | T+2 for equities; T+1 for derivatives |
+| Ownership | Exchange-owned (Cboe, NYSE, Nasdaq) | Part of Korea Exchange (government-designated) |
+
+---
+
+*This document was prepared as part of the Global Exchange Research Project — Clearing & Settlement domain. All data sourced from publicly available materials as cited. Items marked [unverified] require additional confirmation from official sources.*

@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>CME Clearing – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/asx_clear.html">Organizations</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/cme_clearing.html">CME Clearing</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Clearing &amp; Settlement — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Clearing &amp; Settlement -- Comparative Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Organizations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/asx_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Clear / ASX Clear (Futures)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ccil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearing Corporation of India Limited (CCIL)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cdp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Central Depository Pte Ltd (CDP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cds_canada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CDS Clearing and Depository Services (CDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/clearstream.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearstream (Clearstream)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cme_clearing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">CME Clearing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/csdc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/dtcc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Depository Trust &amp; Clearing Corporation (DTCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/eurex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing AG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/euroccp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/euroclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euroclear Group (Euroclear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/hkex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Clearing – HKSCC / HKCC / SEOCH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ice_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Clear (ICE Clear U.S. / ICE Clear Europe / ICE Clear Credit)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/jscc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japan Securities Clearing Corporation (JSCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/krx_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX Clearing (Korea Exchange CCP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ksd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KSD (Korea Securities Depository)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/lch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH (LCH Limited &amp; LCH SA)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/muqassa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Securities Clearing Center Company (Muqassa)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/occ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Options Clearing Corporation (OCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/six_xclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SIX x-clear AG (SIX x-clear)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/asia_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/eu_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/us_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">U.S. Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/dtcc_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DTCC Core Systems — NSCC/DTC Settlement &amp; Clearing Infrastructure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/eurex_clearing_prisma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing -- C7 Architecture &amp; PRISMA Margin Engine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/lch_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH Clearing Platforms &amp; Margin Engines</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview-profile" id="toc-overview-profile" class="nav-link active" data-scroll-target="#overview-profile">1. Overview &amp; Profile</a>
+  <ul class="collapse">
+  <li><a href="#organization-profile" id="toc-organization-profile" class="nav-link" data-scroll-target="#organization-profile">1.1 Organization Profile</a></li>
+  <li><a href="#key-historical-milestones" id="toc-key-historical-milestones" class="nav-link" data-scroll-target="#key-historical-milestones">1.2 Key Historical Milestones</a></li>
+  </ul></li>
+  <li><a href="#clearing-model" id="toc-clearing-model" class="nav-link" data-scroll-target="#clearing-model">2. Clearing Model</a>
+  <ul class="collapse">
+  <li><a href="#ccp-services" id="toc-ccp-services" class="nav-link" data-scroll-target="#ccp-services">2.1 CCP Services</a></li>
+  <li><a href="#novation-process" id="toc-novation-process" class="nav-link" data-scroll-target="#novation-process">2.2 Novation Process</a></li>
+  <li><a href="#netting" id="toc-netting" class="nav-link" data-scroll-target="#netting">2.3 Netting</a></li>
+  <li><a href="#clearing-membership-tiers-requirements" id="toc-clearing-membership-tiers-requirements" class="nav-link" data-scroll-target="#clearing-membership-tiers-requirements">2.4 Clearing Membership Tiers &amp; Requirements</a></li>
+  </ul></li>
+  <li><a href="#risk-management" id="toc-risk-management" class="nav-link" data-scroll-target="#risk-management">3. Risk Management</a>
+  <ul class="collapse">
+  <li><a href="#margin-framework-span" id="toc-margin-framework-span" class="nav-link" data-scroll-target="#margin-framework-span">3.1 Margin Framework: SPAN</a></li>
+  <li><a href="#span-2-transition" id="toc-span-2-transition" class="nav-link" data-scroll-target="#span-2-transition">3.2 SPAN 2 Transition</a></li>
+  <li><a href="#comparison-span-vs.-prisma-vs.-stans" id="toc-comparison-span-vs.-prisma-vs.-stans" class="nav-link" data-scroll-target="#comparison-span-vs.-prisma-vs.-stans">3.3 Comparison: SPAN vs.&nbsp;PRISMA vs.&nbsp;STANS</a></li>
+  <li><a href="#margin-call-schedule" id="toc-margin-call-schedule" class="nav-link" data-scroll-target="#margin-call-schedule">3.4 Margin Call Schedule</a></li>
+  <li><a href="#default-waterfall" id="toc-default-waterfall" class="nav-link" data-scroll-target="#default-waterfall">3.5 Default Waterfall</a></li>
+  <li><a href="#stress-testing-back-testing" id="toc-stress-testing-back-testing" class="nav-link" data-scroll-target="#stress-testing-back-testing">3.6 Stress Testing &amp; Back-Testing</a></li>
+  <li><a href="#recovery-resolution-tools" id="toc-recovery-resolution-tools" class="nav-link" data-scroll-target="#recovery-resolution-tools">3.7 Recovery &amp; Resolution Tools</a></li>
+  <li><a href="#cross-margining-programs" id="toc-cross-margining-programs" class="nav-link" data-scroll-target="#cross-margining-programs">3.8 Cross-Margining Programs</a></li>
+  </ul></li>
+  <li><a href="#settlement" id="toc-settlement" class="nav-link" data-scroll-target="#settlement">4. Settlement</a>
+  <ul class="collapse">
+  <li><a href="#settlement-cycle" id="toc-settlement-cycle" class="nav-link" data-scroll-target="#settlement-cycle">4.1 Settlement Cycle</a></li>
+  <li><a href="#dvp-model" id="toc-dvp-model" class="nav-link" data-scroll-target="#dvp-model">4.2 DVP Model</a></li>
+  <li><a href="#settlement-finality" id="toc-settlement-finality" class="nav-link" data-scroll-target="#settlement-finality">4.3 Settlement Finality</a></li>
+  <li><a href="#cash-settlement-process" id="toc-cash-settlement-process" class="nav-link" data-scroll-target="#cash-settlement-process">4.4 Cash Settlement Process</a></li>
+  <li><a href="#settlement-banks" id="toc-settlement-banks" class="nav-link" data-scroll-target="#settlement-banks">4.5 Settlement Banks</a></li>
+  </ul></li>
+  <li><a href="#technology-infrastructure" id="toc-technology-infrastructure" class="nav-link" data-scroll-target="#technology-infrastructure">5. Technology &amp; Infrastructure</a>
+  <ul class="collapse">
+  <li><a href="#core-systems" id="toc-core-systems" class="nav-link" data-scroll-target="#core-systems">5.1 Core Systems</a></li>
+  <li><a href="#interface-protocols" id="toc-interface-protocols" class="nav-link" data-scroll-target="#interface-protocols">5.2 Interface Protocols</a></li>
+  <li><a href="#data-center-resilience" id="toc-data-center-resilience" class="nav-link" data-scroll-target="#data-center-resilience">5.3 Data Center &amp; Resilience</a></li>
+  <li><a href="#google-cloud-partnership" id="toc-google-cloud-partnership" class="nav-link" data-scroll-target="#google-cloud-partnership">5.4 Google Cloud Partnership</a></li>
+  </ul></li>
+  <li><a href="#regulatory-framework" id="toc-regulatory-framework" class="nav-link" data-scroll-target="#regulatory-framework">6. Regulatory Framework</a>
+  <ul class="collapse">
+  <li><a href="#primary-regulatory-status" id="toc-primary-regulatory-status" class="nav-link" data-scroll-target="#primary-regulatory-status">6.1 Primary Regulatory Status</a></li>
+  <li><a href="#cftc-dco-core-principles-part-39" id="toc-cftc-dco-core-principles-part-39" class="nav-link" data-scroll-target="#cftc-dco-core-principles-part-39">6.2 CFTC DCO Core Principles (Part 39)</a></li>
+  <li><a href="#sifmu-oversight" id="toc-sifmu-oversight" class="nav-link" data-scroll-target="#sifmu-oversight">6.3 SIFMU Oversight</a></li>
+  <li><a href="#pfmi-public-quantitative-disclosures" id="toc-pfmi-public-quantitative-disclosures" class="nav-link" data-scroll-target="#pfmi-public-quantitative-disclosures">6.4 PFMI &amp; Public Quantitative Disclosures</a></li>
+  </ul></li>
+  <li><a href="#interoperability" id="toc-interoperability" class="nav-link" data-scroll-target="#interoperability">7. Interoperability</a>
+  <ul class="collapse">
+  <li><a href="#cme-occ-cross-margining-program" id="toc-cme-occ-cross-margining-program" class="nav-link" data-scroll-target="#cme-occ-cross-margining-program">7.1 CME-OCC Cross-Margining Program</a></li>
+  <li><a href="#cme-ficc-cross-margining-arrangement" id="toc-cme-ficc-cross-margining-arrangement" class="nav-link" data-scroll-target="#cme-ficc-cross-margining-arrangement">7.2 CME-FICC Cross-Margining Arrangement</a></li>
+  <li><a href="#mutualization-across-cmecbotnymexcomex" id="toc-mutualization-across-cmecbotnymexcomex" class="nav-link" data-scroll-target="#mutualization-across-cmecbotnymexcomex">7.3 Mutualization Across CME/CBOT/NYMEX/COMEX</a></li>
+  <li><a href="#global-ccp-links" id="toc-global-ccp-links" class="nav-link" data-scroll-target="#global-ccp-links">7.4 Global CCP Links</a></li>
+  </ul></li>
+  <li><a href="#fees" id="toc-fees" class="nav-link" data-scroll-target="#fees">8. Fees</a>
+  <ul class="collapse">
+  <li><a href="#fee-structure-overview" id="toc-fee-structure-overview" class="nav-link" data-scroll-target="#fee-structure-overview">8.1 Fee Structure Overview</a></li>
+  <li><a href="#representative-clearing-fees-by-product-category" id="toc-representative-clearing-fees-by-product-category" class="nav-link" data-scroll-target="#representative-clearing-fees-by-product-category">8.2 Representative Clearing Fees by Product Category</a></li>
+  <li><a href="#membership-seat-costs" id="toc-membership-seat-costs" class="nav-link" data-scroll-target="#membership-seat-costs">8.3 Membership / Seat Costs</a></li>
+  <li><a href="#volume-incentive-programs" id="toc-volume-incentive-programs" class="nav-link" data-scroll-target="#volume-incentive-programs">8.4 Volume Incentive Programs</a></li>
+  </ul></li>
+  <li><a href="#recent-developments" id="toc-recent-developments" class="nav-link" data-scroll-target="#recent-developments">9. Recent Developments</a>
+  <ul class="collapse">
+  <li><a href="#span-2-rollout-2023-2025" id="toc-span-2-rollout-2023-2025" class="nav-link" data-scroll-target="#span-2-rollout-2023-2025">9.1 SPAN 2 Rollout (2023-2025)</a></li>
+  <li><a href="#google-cloud-partnership-1" id="toc-google-cloud-partnership-1" class="nav-link" data-scroll-target="#google-cloud-partnership-1">9.2 Google Cloud Partnership</a></li>
+  <li><a href="#cme-securities-clearing-treasury-clearing" id="toc-cme-securities-clearing-treasury-clearing" class="nav-link" data-scroll-target="#cme-securities-clearing-treasury-clearing">9.3 CME Securities Clearing &amp; Treasury Clearing</a></li>
+  <li><a href="#record-volumes-2024-2025" id="toc-record-volumes-2024-2025" class="nav-link" data-scroll-target="#record-volumes-2024-2025">9.4 Record Volumes (2024-2025)</a></li>
+  <li><a href="#trading-expansion" id="toc-trading-expansion" class="nav-link" data-scroll-target="#trading-expansion">9.5 24/7 Trading Expansion</a></li>
+  <li><a href="#financial-performance" id="toc-financial-performance" class="nav-link" data-scroll-target="#financial-performance">9.6 Financial Performance</a></li>
+  <li><a href="#november-2025-data-center-outage" id="toc-november-2025-data-center-outage" class="nav-link" data-scroll-target="#november-2025-data-center-outage">9.7 November 2025 Data Center Outage</a></li>
+  </ul></li>
+  <li><a href="#key-data-summary" id="toc-key-data-summary" class="nav-link" data-scroll-target="#key-data-summary">Key Data Summary</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/asx_clear.html">Organizations</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/cme_clearing.html">CME Clearing</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">CME Clearing</h1>
+<p class="subtitle lead">Clearing &amp; Settlement &gt; Organizations</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-07 <strong>Research Tier:</strong> Tier 1 (Deep Dive) <strong>Type:</strong> CCP (Central Counterparty)</p>
+</blockquote>
+<hr>
+<section id="overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="overview-profile">1. Overview &amp; Profile</h2>
+<section id="organization-profile" class="level3">
+<h3 class="anchored" data-anchor-id="organization-profile">1.1 Organization Profile</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Official Name</td>
+<td>Chicago Mercantile Exchange Inc.&nbsp;(operating CME Clearing)</td>
+</tr>
+<tr class="even">
+<td>Abbreviation</td>
+<td>CME Clearing</td>
+</tr>
+<tr class="odd">
+<td>Website</td>
+<td><a href="https://www.cmegroup.com/clearing">https://www.cmegroup.com/clearing</a></td>
+</tr>
+<tr class="even">
+<td>Year Established</td>
+<td>1898 (as Chicago Butter and Egg Board); clearing house established 1919; CME Group formed via CME-CBOT merger in 2007</td>
+</tr>
+<tr class="odd">
+<td>Country / City</td>
+<td>United States / Chicago, Illinois</td>
+</tr>
+<tr class="even">
+<td>Ownership Structure</td>
+<td>Division of CME Group Inc.&nbsp;(NASDAQ: CME). CME Group also owns CBOT, NYMEX, and COMEX exchanges. CME Clearing is operated by Chicago Mercantile Exchange Inc., a wholly owned subsidiary of CME Group Inc.</td>
+</tr>
+<tr class="odd">
+<td>Regulatory Authority</td>
+<td>CFTC (primary, as registered Derivatives Clearing Organization under CEA Part 39); Board of Governors of the Federal Reserve System (under Dodd-Frank Title VIII SIFMU oversight); SEC (secondary, for security-based products via CME Securities Clearing Inc.)</td>
+</tr>
+<tr class="even">
+<td>CPMI-IOSCO PFMI Compliance</td>
+<td>Yes – publishes PFMI qualitative self-assessment disclosures and quarterly Public Quantitative Disclosures (PQD) (<a href="https://www.cmegroup.com/clearing/risk-management/files/cme-clearing-principles-for-financial-market-infrastructures-disclosure.pdf">CME PFMI Disclosure, November 2023</a>)</td>
+</tr>
+<tr class="odd">
+<td>QCCP Status</td>
+<td>Yes – recognised by ESMA as a third-country CCP under EU EMIR since June 2016, granting QCCP status for EU-regulated participants (<a href="https://www.cmegroup.com/clearing/files/faq-ccp-final.pdf">CME QCCP FAQ</a>; <a href="http://europa.eu/rapid/press-release_IP-16-807_en.htm">European Commission Equivalence Decision, March 2016</a>)</td>
+</tr>
+<tr class="even">
+<td>SIFMU Designation</td>
+<td>Designated as a Systemically Important Financial Market Utility (SIFMU) by the Financial Stability Oversight Council (FSOC) under Title VIII of the Dodd-Frank Act in July 2012</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="key-historical-milestones">1.2 Key Historical Milestones</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1898</td>
+<td>Chicago Butter and Egg Board established as a commodity exchange</td>
+</tr>
+<tr class="even">
+<td>1919</td>
+<td>Reorganised as the Chicago Mercantile Exchange; clearing house established</td>
+</tr>
+<tr class="odd">
+<td>1972</td>
+<td>CME launched the International Monetary Market (IMM), creating the first financial futures (currency futures)</td>
+</tr>
+<tr class="even">
+<td>1981</td>
+<td>Eurodollar futures launched, becoming the world’s most-traded futures contract</td>
+</tr>
+<tr class="odd">
+<td>1992</td>
+<td>CME Globex electronic trading platform launched – the first global electronic trading system for futures and options</td>
+</tr>
+<tr class="even">
+<td>2000</td>
+<td>CME demutualized</td>
+</tr>
+<tr class="odd">
+<td>2002</td>
+<td>CME Holdings Inc.&nbsp;became the first U.S. exchange to IPO on the NYSE</td>
+</tr>
+<tr class="even">
+<td>2003</td>
+<td>CBOT transferred all clearing from independent Board of Trade Clearing Corp.&nbsp;to CME Clearing, creating capital efficiencies (<a href="https://www.marketswiki.com/wiki/CME_Group_History_Timeline">MarketsWiki</a>)</td>
+</tr>
+<tr class="odd">
+<td>2007</td>
+<td>CME and CBOT officially merged to form CME Group Inc.&nbsp;(July)</td>
+</tr>
+<tr class="even">
+<td>2008</td>
+<td>CME Group acquired NYMEX Holdings Inc.&nbsp;(including NYMEX and COMEX)</td>
+</tr>
+<tr class="odd">
+<td>2010</td>
+<td>CME Clearing began clearing OTC interest rate swaps</td>
+</tr>
+<tr class="even">
+<td>2011</td>
+<td>CME Clearing Europe launched in London for European OTC clearing</td>
+</tr>
+<tr class="odd">
+<td>2012</td>
+<td>CME designated as SIFMU by FSOC under Dodd-Frank Title VIII</td>
+</tr>
+<tr class="even">
+<td>2016</td>
+<td>ESMA recognised CME as third-country CCP (QCCP) under EU EMIR</td>
+</tr>
+<tr class="odd">
+<td>2017</td>
+<td>CME Clearing Europe wound down and closed (October 12, 2017); all clearing consolidated to CME Clearing in the U.S. (<a href="https://www.cmegroup.com/media-room/press-releases/2017/4/12/cme_group_intendstoclosecmeeuropeandcmeclearingeuropebyyear-end.html">CME Press Release, April 2017</a>)</td>
+</tr>
+<tr class="even">
+<td>2022</td>
+<td>CME Group announced 10-year strategic partnership with Google Cloud</td>
+</tr>
+<tr class="odd">
+<td>2023</td>
+<td>SPAN 2 margin framework went live for energy products (September 2023)</td>
+</tr>
+<tr class="even">
+<td>2024</td>
+<td>CME-FICC cross-margining arrangement launched for proprietary accounts (January 2024); record ADV of 26.5 million contracts</td>
+</tr>
+<tr class="odd">
+<td>2025</td>
+<td>Record annual ADV of 28.1 million contracts; CME Securities Clearing Inc.&nbsp;received SEC approval (December 2025) for U.S. Treasury and repo clearing (<a href="https://www.cmegroup.com/media-room/press-releases/2025/12/02/cme_group_announcesregulatoryapprovalofnewsecuritiesclearinghous.html">CME Press Release, December 2025</a>)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="clearing-model" class="level2">
+<h2 class="anchored" data-anchor-id="clearing-model">2. Clearing Model</h2>
+<section id="ccp-services" class="level3">
+<h3 class="anchored" data-anchor-id="ccp-services">2.1 CCP Services</h3>
+<p>CME Clearing acts as the central counterparty (CCP) for all trades executed on or submitted through CME Group’s four exchanges and OTC platforms. It clears the following product categories:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 43%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product Category</th>
+<th>Exchange / Platform</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interest Rate Derivatives</td>
+<td>CME, CBOT</td>
+<td>SOFR futures, U.S. Treasury futures &amp; options, Eurodollar futures (legacy)</td>
+</tr>
+<tr class="even">
+<td>Equity Index Derivatives</td>
+<td>CME</td>
+<td>E-mini S&amp;P 500, E-mini Nasdaq-100, Micro E-mini, Nikkei 225 futures</td>
+</tr>
+<tr class="odd">
+<td>Foreign Exchange</td>
+<td>CME</td>
+<td>EUR/USD, JPY/USD, and 40+ FX pairs in futures &amp; options</td>
+</tr>
+<tr class="even">
+<td>Agricultural Commodities</td>
+<td>CBOT, CME</td>
+<td>Corn, Soybeans, Wheat, Live Cattle, Lean Hogs, Dairy</td>
+</tr>
+<tr class="odd">
+<td>Energy Products</td>
+<td>NYMEX</td>
+<td>WTI Crude Oil, Henry Hub Natural Gas, Refined Products</td>
+</tr>
+<tr class="even">
+<td>Metals</td>
+<td>COMEX, NYMEX</td>
+<td>Gold, Silver, Copper, Platinum, Palladium, Aluminum</td>
+</tr>
+<tr class="odd">
+<td>OTC Interest Rate Swaps</td>
+<td>CME ClearPort</td>
+<td>SOFR swaps, USD IRS, cross-currency swaps, swaptions</td>
+</tr>
+<tr class="even">
+<td>OTC FX</td>
+<td>CME ClearPort</td>
+<td>OTC FX forwards and swaps (select currency pairs)</td>
+</tr>
+<tr class="odd">
+<td>Cryptocurrency</td>
+<td>CME</td>
+<td>Bitcoin futures &amp; options, Ether futures &amp; options</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="novation-process" class="level3">
+<h3 class="anchored" data-anchor-id="novation-process">2.2 Novation Process</h3>
+<p>Upon acceptance of a trade for clearing, CME Clearing interposes itself as the legal counterparty to both sides of every transaction through the process of novation. The original bilateral contract between buyer and seller is extinguished and replaced by two new contracts: one between CME Clearing and the buyer, and one between CME Clearing and the seller. This ensures that each clearing member only faces CME Clearing as its counterparty, eliminating bilateral counterparty credit risk.</p>
+</section>
+<section id="netting" class="level3">
+<h3 class="anchored" data-anchor-id="netting">2.3 Netting</h3>
+<p>CME Clearing provides multilateral netting across all products within each clearing member’s account. Variation margin (settlement variation) is netted across all positions within a given account, resulting in a single net pay or collect amount per settlement cycle. For performance bonds (initial margin), CME applies portfolio-based margining via SPAN / SPAN 2 that recognises offsets between correlated positions.</p>
+</section>
+<section id="clearing-membership-tiers-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="clearing-membership-tiers-requirements">2.4 Clearing Membership Tiers &amp; Requirements</h3>
+<p>CME, CBOT, NYMEX, and COMEX clearing memberships are entirely separate from one another. A firm must hold the appropriate division-specific clearing membership to clear products traded on that exchange.</p>
+<p><strong>Membership Categories:</strong></p>
+<p>Each exchange division recognises multiple categories of clearing members (<a href="https://www.cmegroup.com/rulebook/CME/I/9/9.pdf">CME Rulebook Chapter 9</a>; <a href="https://www.cmegroup.com/rulebook/NYMEX/1/9.pdf">NYMEX Rulebook Chapter 9</a>):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CME Clearing Member</td>
+<td>Authorised to clear all CME-listed products</td>
+</tr>
+<tr class="even">
+<td>CBOT Clearing Member</td>
+<td>Authorised to clear all CBOT-listed products</td>
+</tr>
+<tr class="odd">
+<td>NYMEX Clearing Member</td>
+<td>Authorised to clear all NYMEX-listed products</td>
+</tr>
+<tr class="even">
+<td>COMEX Clearing Member</td>
+<td>Authorised to clear all COMEX-listed products</td>
+</tr>
+<tr class="odd">
+<td>IRS Clearing Member</td>
+<td>Separate membership for OTC interest rate swap clearing (distinct guaranty fund)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Minimum Capital Requirements:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 42%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Member Type</th>
+<th>Exchange-Traded Products</th>
+<th>OTC-Traded Products</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Non-bank FCM</td>
+<td>$5 million Adjusted Net Capital (per CFTC Reg. 1.17)</td>
+<td>$50 million Adjusted Net Capital</td>
+</tr>
+<tr class="even">
+<td>Bank</td>
+<td>$5 billion Tier I Capital</td>
+<td>$50 million Tier I Capital</td>
+</tr>
+<tr class="odd">
+<td>IRS Clearing Member</td>
+<td>N/A</td>
+<td>Capital &gt;= 20% of aggregate IRS performance bond requirement</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.cmegroup.com/company/membership/files/summary-cme-group-clearing-membership-requirements.pdf">CME Group Clearing Membership Requirements Summary</a></p>
+<p><strong>Number of Clearing Members:</strong> Approximately 50-55 clearing firms across all divisions [unverified – exact current count not publicly disclosed in aggregate; the CME Group clearing firms directory lists individual members (<a href="https://www.cmegroup.com/clearing/financial-and-regulatory-surveillance/clearing-firms.html">Clearing Firms</a>)].</p>
+<hr>
+</section>
+</section>
+<section id="risk-management" class="level2">
+<h2 class="anchored" data-anchor-id="risk-management">3. Risk Management</h2>
+<section id="margin-framework-span" class="level3">
+<h3 class="anchored" data-anchor-id="margin-framework-span">3.1 Margin Framework: SPAN</h3>
+<p>CME Clearing developed the <strong>SPAN (Standard Portfolio Analysis of Risk)</strong> methodology, which has become the global standard for portfolio-based margin calculation, adopted by over 50 exchanges and clearing organisations worldwide (<a href="https://www.cmegroup.com/solutions/risk-management/performance-bonds-margins/span-methodology-overview.html">SPAN Methodology Overview</a>).</p>
+<p><strong>How SPAN Works:</strong></p>
+<p>SPAN evaluates overall portfolio risk by calculating the worst reasonable loss that a portfolio of derivative and physical instruments might incur over a specified time period (typically one trading day for exchange-traded products, five days for OTC).</p>
+<p><strong>16 Risk Scenarios:</strong></p>
+<p>SPAN constructs 16 hypothetical risk scenarios based on two key parameters: - <strong>Price Scanning Range</strong> – calibrated to the distribution of price movements under normal market conditions (typically a 1-day, 99% confidence interval) - <strong>Volatility Scanning Range</strong> – calibrated to the distribution of implied volatility movements</p>
+<p>The 16 scenarios represent combinations of: - Price changes at fractions of the price scanning range (0, 1/3, 2/3, 1x, 2x, and 3x – with 3x given reduced weight) - Volatility changes (up and down by the volatility scanning range)</p>
+<p><strong>Five Components of SPAN Risk:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Scanning Risk</strong></td>
+<td>The largest loss from the 16 risk scenarios for a given combined commodity group</td>
+</tr>
+<tr class="even">
+<td><strong>Intra-Commodity Spread Charge</strong></td>
+<td>Captures basis risk between different expiration months within the same commodity (calendar spread risk)</td>
+</tr>
+<tr class="odd">
+<td><strong>Inter-Commodity Spread Credit</strong></td>
+<td>Recognises risk-reducing offsets between correlated commodity groups (e.g., WTI vs.&nbsp;Brent crude)</td>
+</tr>
+<tr class="even">
+<td><strong>Delivery Month Charge</strong></td>
+<td>Additional charge for positions approaching physical delivery</td>
+</tr>
+<tr class="odd">
+<td><strong>Short Option Minimum</strong></td>
+<td>Floor margin requirement for deep out-of-the-money short options to capture tail risk</td>
+</tr>
+</tbody>
+</table>
+<p><strong>SPAN Margin Calculation:</strong></p>
+<pre><code>Performance Bond = MAX(Scanning Risk + Intra-Commodity Spread Charge + Delivery Month Charge
+                       - Inter-Commodity Spread Credit,
+                       Short Option Minimum)</code></pre>
+<p>Source: <a href="https://www.cmegroup.com/solutions/risk-management/performance-bonds-margins/span-methodology.html">CME SPAN Methodology</a></p>
+</section>
+<section id="span-2-transition" class="level3">
+<h3 class="anchored" data-anchor-id="span-2-transition">3.2 SPAN 2 Transition</h3>
+<p>CME is transitioning to <strong>SPAN 2</strong>, a next-generation VaR-based (Historical Value-at-Risk) margin framework. Key differences from legacy SPAN:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 46%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>SPAN (Legacy)</th>
+<th>SPAN 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Methodology</td>
+<td>16 parametric scenarios</td>
+<td>Thousands of HVaR scenarios from historical data</td>
+</tr>
+<tr class="even">
+<td>Risk Symmetry</td>
+<td>Same margin for long and short positions</td>
+<td><strong>Asymmetric</strong> – long and short margins differ based on historical risk profiles</td>
+</tr>
+<tr class="odd">
+<td>Offset Calculation</td>
+<td>Explicit inter-commodity spread credits</td>
+<td>Offsets inherent in VaR calculation via portfolio covariance</td>
+</tr>
+<tr class="even">
+<td>Tail Risk</td>
+<td>Short option minimum</td>
+<td>Expected Shortfall (ES) component capturing tail losses beyond VaR threshold</td>
+</tr>
+<tr class="odd">
+<td>Additional Factors</td>
+<td>N/A</td>
+<td>Seasonality, options term structure, liquidity/concentration costs</td>
+</tr>
+</tbody>
+</table>
+<p><strong>SPAN 2 Rollout Schedule (phased):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Asset Class</th>
+<th>Go-Live Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Energy Products</td>
+<td>September 8, 2023 (completed)</td>
+</tr>
+<tr class="even">
+<td>Equity Products</td>
+<td>October 18, 2024 (primary) / November 15, 2024 (backup)</td>
+</tr>
+<tr class="odd">
+<td>Interest Rate &amp; FX Products</td>
+<td>Second half of 2024</td>
+</tr>
+<tr class="even">
+<td>Agricultural &amp; Remaining Products</td>
+<td>Second half of 2025</td>
+</tr>
+</tbody>
+</table>
+<p>During the multi-year transition, both SPAN and SPAN 2 run in parallel. Cross-model offsets between SPAN- and SPAN 2-margined products are supported via covariance. Legacy SPAN will continue to be supported for the foreseeable future.</p>
+<p>Source: <a href="https://www.cmegroup.com/solutions/risk-management/performance-bonds-margins/span-methodology-overview/launching-span-2.html">SPAN 2 Framework Rollout</a>; <a href="https://www.cmegroup.com/clearing/risk-management/span-overview/span-2-methodology.html">SPAN 2 Methodology</a></p>
+</section>
+<section id="comparison-span-vs.-prisma-vs.-stans" class="level3">
+<h3 class="anchored" data-anchor-id="comparison-span-vs.-prisma-vs.-stans">3.3 Comparison: SPAN vs.&nbsp;PRISMA vs.&nbsp;STANS</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 35%">
+<col style="width: 26%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>CME SPAN / SPAN 2</th>
+<th>Eurex PRISMA</th>
+<th>OCC STANS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Operator</td>
+<td>CME Clearing</td>
+<td>Eurex Clearing</td>
+<td>Options Clearing Corporation</td>
+</tr>
+<tr class="even">
+<td>Methodology</td>
+<td>Parametric scenarios (SPAN) / HVaR + ES (SPAN 2)</td>
+<td>Filtered Historical Simulation VaR + stress add-ons</td>
+<td>Monte Carlo simulation</td>
+</tr>
+<tr class="odd">
+<td>Confidence Level</td>
+<td>99%+ (SPAN); 99.7%+ (SPAN 2) [unverified]</td>
+<td>99.7% (2-day MPOR)</td>
+<td>99% (2-day MPOR)</td>
+</tr>
+<tr class="even">
+<td>Portfolio Scope</td>
+<td>Futures, options, OTC swaps</td>
+<td>Listed + OTC derivatives</td>
+<td>Equity options, futures</td>
+</tr>
+<tr class="odd">
+<td>Cross-Product Offsets</td>
+<td>SPAN credits / VaR covariance (SPAN 2)</td>
+<td>Full portfolio-based</td>
+<td>Full portfolio-based</td>
+</tr>
+<tr class="even">
+<td>Liquidation Period</td>
+<td>1 day (ETD), 5 days (OTC IRS)</td>
+<td>2 days (listed), 5 days (OTC)</td>
+<td>2 days</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="margin-call-schedule" class="level3">
+<h3 class="anchored" data-anchor-id="margin-call-schedule">3.4 Margin Call Schedule</h3>
+<p>CME Clearing recalculates performance bond (margin) requirements at least once daily, but typically twice daily for exchange-traded derivatives:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 28%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cycle</th>
+<th>Timing</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>End-of-Day (EOD)</strong></td>
+<td>After market close (~4:00 PM CT)</td>
+<td>Full recalculation of all positions against settlement prices; settlement variation pays/collects calculated</td>
+</tr>
+<tr class="even">
+<td><strong>Intraday</strong></td>
+<td>Mid-morning (~10:00-11:00 AM CT)</td>
+<td>Intraday mark-to-market; additional performance bond calls issued if needed</td>
+</tr>
+<tr class="odd">
+<td><strong>Ad-hoc / Extraordinary</strong></td>
+<td>As needed</td>
+<td>CME Clearing has authority to issue additional margin calls at any time based on market conditions</td>
+</tr>
+</tbody>
+</table>
+<p>For OTC IRS and FX swaps, settlement variation is calculated at least once daily at end-of-day.</p>
+<p>USD settlement cycles run twice daily (EOD and intraday) through CME’s settlement banks. CME has authority to run additional cycles if market conditions warrant.</p>
+<p>Source: <a href="https://www.cmegroup.com/clearing/risk-management/files/cme-clearing-principles-for-financial-market-infrastructures-disclosure.pdf">CME PFMI Disclosure, November 2023</a></p>
+</section>
+<section id="default-waterfall" class="level3">
+<h3 class="anchored" data-anchor-id="default-waterfall">3.5 Default Waterfall</h3>
+<p>CME Clearing maintains <strong>two distinct financial safeguards waterfalls</strong>, each with its own guaranty fund:</p>
+<ol type="1">
+<li><strong>Base Products Waterfall</strong> – covering futures, options, and OTC FX across CME, CBOT, NYMEX, and COMEX</li>
+<li><strong>IRS Products Waterfall</strong> – covering OTC interest rate swaps and swaptions</li>
+</ol>
+<p><strong>Base Products Default Waterfall (sequential application):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 29%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Resource</th>
+<th>Approximate Size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Defaulting Clearing Member’s Performance Bonds</strong> (initial margin)</td>
+<td>Varies by portfolio</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Defaulting Clearing Member’s Guaranty Fund Contribution</strong></td>
+<td>Pro-rata share</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>CME Clearing’s Own Contribution (Skin-in-the-Game / SITG)</strong></td>
+<td><strong>$100 million</strong> (pre-funded)</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Non-Defaulting Clearing Members’ Guaranty Fund Contributions</strong></td>
+<td>Mutualized pool (sized to Cover 2 standard)</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Assessment Powers</strong></td>
+<td>Up to <strong>2.75x</strong> each non-defaulting member’s guaranty fund contribution per single default event</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>Recovery Tools</strong></td>
+<td>Voluntary contributions, variation margin haircutting, mandatory tear-ups</td>
+</tr>
+</tbody>
+</table>
+<p><strong>IRS Products Default Waterfall (sequential application):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 29%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Resource</th>
+<th>Approximate Size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Defaulting IRS Clearing Member’s Performance Bonds</strong></td>
+<td>Varies by portfolio</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Defaulting IRS Clearing Member’s Guaranty Fund Contribution</strong></td>
+<td>Pro-rata share</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>CME Clearing’s Own Contribution (SITG)</strong></td>
+<td><strong>$150 million</strong> (pre-funded)</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Non-Defaulting IRS Clearing Members’ Guaranty Fund Contributions</strong></td>
+<td>Mutualized pool (sized to Cover 2 standard)</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Assessment Powers</strong></td>
+<td>Capped assessment on non-defaulting IRS clearing members</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>Recovery Tools</strong></td>
+<td>Gains haircutting, mandatory tear-ups, voluntary contributions, voluntary tear-ups</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Guaranty Fund Sizing:</strong></p>
+<ul>
+<li>Each guaranty fund is sized to cover the default of the <strong>two clearing members (and their affiliates) with the largest anticipated stress shortfalls</strong> – the “Cover 2” standard.</li>
+<li>As of December 31, 2024, guaranty fund contributions available to collateralise facilities totalled approximately <strong>$10.1 billion</strong> (<a href="https://www.cmegroup.com/investor-relations/files/cme-inc-financial-statements.pdf">CME Inc.&nbsp;Financial Statements 2024</a>).</li>
+<li>CME Clearing maintained approximately <strong>$87.4 billion</strong> in cash within accounts at the Federal Reserve Bank of Chicago as of December 31, 2024 (representing performance bond and guaranty fund deposits).</li>
+<li>A <strong>guaranty fund buffer</strong> is maintained above the Cover 2 minimum to mitigate potential breaches.</li>
+</ul>
+<p>Source: <a href="https://www.cmegroup.com/education/articles-and-reports/cme-clearing-financial-safeguards-waterfalls.html">CME Clearing Financial Safeguards Waterfalls</a>; <a href="https://www.cmegroup.com/solutions/risk-management/financial-safeguards/cme-clearings-financial-safeguards-system.html">Financial Safeguards System</a>; <a href="https://www.cmegroup.com/rulebook/CME/I/8/8.pdf">CME Rulebook Chapter 8</a></p>
+</section>
+<section id="stress-testing-back-testing" class="level3">
+<h3 class="anchored" data-anchor-id="stress-testing-back-testing">3.6 Stress Testing &amp; Back-Testing</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Practice</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Stress Testing Frequency</strong></td>
+<td>Daily</td>
+</tr>
+<tr class="even">
+<td><strong>Scenario Types</strong></td>
+<td>Historical scenarios and hypothetical (extreme but plausible) market conditions</td>
+</tr>
+<tr class="odd">
+<td><strong>Confidence Level</strong></td>
+<td>At least 99.9%</td>
+</tr>
+<tr class="even">
+<td><strong>Cover Standard</strong></td>
+<td>Cover 2 – sized to withstand simultaneous default of the two clearing members with the largest stress shortfalls</td>
+</tr>
+<tr class="odd">
+<td><strong>Reverse Stress Testing</strong></td>
+<td>Conducted routinely; results reviewed at least monthly to identify conditions that could exhaust guaranty fund resources</td>
+</tr>
+<tr class="even">
+<td><strong>Backtesting</strong></td>
+<td>Performance bond adequacy backtested against actual market movements; reported quarterly via PQD</td>
+</tr>
+<tr class="odd">
+<td><strong>Independent Validation</strong></td>
+<td>Annual validation by independent experts</td>
+</tr>
+<tr class="even">
+<td><strong>Regulatory Examination</strong></td>
+<td>CFTC and Federal Reserve Board conduct annual examinations of risk management practices</td>
+</tr>
+<tr class="odd">
+<td><strong>CFTC Supervisory Stress Tests</strong></td>
+<td>CFTC conducts periodic supervisory stress tests of major DCOs including CME (<a href="https://www.cftc.gov/system/files?file=2019/05/02/cftcstresstest042019.pdf">CFTC Stress Test Report 2019</a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.cmegroup.com/articles/2025/cme-clearing-stress-testing-practices.html">CME Clearing Stress Testing Practices</a></p>
+</section>
+<section id="recovery-resolution-tools" class="level3">
+<h3 class="anchored" data-anchor-id="recovery-resolution-tools">3.7 Recovery &amp; Resolution Tools</h3>
+<p>CME Clearing has adopted specific recovery tools, particularly for the IRS waterfall, to address “end of waterfall” scenarios (<a href="https://www.cmegroup.com/notices/clearing/2019/11/Chadv19-365.html">CME Advisory 19-365</a>):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Variation Margin Gains Haircutting (VMGH)</strong></td>
+<td>Pro-rata reduction in amounts owed to non-defaulting members with net gains for the relevant settlement cycle</td>
+</tr>
+<tr class="even">
+<td><strong>Mandatory Tear-Up</strong></td>
+<td>Forced termination of contracts to re-establish a matched book; designed to localise impact to affected markets</td>
+</tr>
+<tr class="odd">
+<td><strong>Voluntary Contributions</strong></td>
+<td>IRS clearing members (and customers) may voluntarily contribute resources; only effective if aggregate contributions are sufficient to fully cover losses</td>
+</tr>
+<tr class="even">
+<td><strong>Voluntary Tear-Up</strong></td>
+<td>Clearing members (and customers) may voluntarily terminate positions</td>
+</tr>
+<tr class="odd">
+<td><strong>Assessment Powers</strong></td>
+<td>Capped additional contributions from non-defaulting members (up to 2.75x guaranty fund contribution for Base products)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Resolution Authority:</strong> The FDIC is the designated resolution authority for SIFMUs under Title II of the Dodd-Frank Act, though Title VIII provides a framework for the Federal Reserve to provide emergency lending to SIFMUs in extremis.</p>
+</section>
+<section id="cross-margining-programs" class="level3">
+<h3 class="anchored" data-anchor-id="cross-margining-programs">3.8 Cross-Margining Programs</h3>
+<p>See Section 7 (Interoperability) for details on CME-OCC and CME-FICC cross-margining arrangements.</p>
+<hr>
+</section>
+</section>
+<section id="settlement" class="level2">
+<h2 class="anchored" data-anchor-id="settlement">4. Settlement</h2>
+<section id="settlement-cycle" class="level3">
+<h3 class="anchored" data-anchor-id="settlement-cycle">4.1 Settlement Cycle</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 43%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product Type</th>
+<th>Settlement Cycle</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Futures (Variation Margin)</strong></td>
+<td>Daily (T+0 or T+1 intraday)</td>
+<td>Settlement variation (mark-to-market pays/collects) calculated and settled at least twice daily (EOD and intraday)</td>
+</tr>
+<tr class="even">
+<td><strong>Options on Futures</strong></td>
+<td>Daily premium settlement; exercise/assignment T+1</td>
+<td>Premium paid/received next business day; exercise results in futures position</td>
+</tr>
+<tr class="odd">
+<td><strong>OTC IRS</strong></td>
+<td>Daily (variation margin)</td>
+<td>At least once daily at end-of-day</td>
+</tr>
+<tr class="even">
+<td><strong>Physical Delivery (Futures)</strong></td>
+<td>Delivery period varies by contract</td>
+<td>Delivery occurs during designated delivery months per contract specifications</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dvp-model" class="level3">
+<h3 class="anchored" data-anchor-id="dvp-model">4.2 DVP Model</h3>
+<p>For physically-delivered securities (e.g., U.S. Treasury futures expiry):</p>
+<ul>
+<li>Settlement occurs on a <strong>DVP Model 1 (gross, real-time)</strong> basis</li>
+<li>Delivery of U.S. Treasury securities occurs via <strong>book-entry transfer in Fedwire Securities</strong> between banks that are members of the Federal Reserve System</li>
+<li>Transfer of funds is conditional on delivery of the securities (true DVP)</li>
+<li>Clearing participants must make funds available to designated settlement banks the day prior to delivery</li>
+</ul>
+<p>Source: <a href="https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/chicago-mercantile-exchange/2014/standard-11.html">RBA Assessment – Standard 11: Exchange-of-Value Settlements</a></p>
+</section>
+<section id="settlement-finality" class="level3">
+<h3 class="anchored" data-anchor-id="settlement-finality">4.3 Settlement Finality</h3>
+<p>Settlement finality is achieved when the settlement variation payment is debited/credited through the settlement bank accounts. Under CME rules, once a settlement cycle is completed and payments are effected, the transfers are final and irrevocable. CME Clearing’s status as a SIFMU provides additional legal certainty under Title VIII of Dodd-Frank, which provides protections against potential legal challenges to netting and settlement finality.</p>
+</section>
+<section id="cash-settlement-process" class="level3">
+<h3 class="anchored" data-anchor-id="cash-settlement-process">4.4 Cash Settlement Process</h3>
+<p>For cash-settled contracts (e.g., E-mini S&amp;P 500, Eurodollar/SOFR futures), final settlement prices are determined by reference to an external index or fixing rate on the last trading day. The cash settlement amount is calculated as the difference between the final settlement price and the prior day’s settlement price, and is collected/paid through the standard variation margin settlement cycle.</p>
+</section>
+<section id="settlement-banks" class="level3">
+<h3 class="anchored" data-anchor-id="settlement-banks">4.5 Settlement Banks</h3>
+<p>CME Clearing uses the following <strong>concentration banks</strong> for settlement:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bank</th>
+<th>Currencies</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>BMO Harris Bank</strong></td>
+<td>USD, MXN</td>
+</tr>
+<tr class="even">
+<td><strong>JPMorgan Chase (London)</strong></td>
+<td>AUD, NOK, CHF, GBP, NZD, SEK, TRY, SGD, HKD, ZAR</td>
+</tr>
+<tr class="odd">
+<td><strong>Citibank (London)</strong></td>
+<td>EUR, CNH, DKK, PLN, CZK, HUF</td>
+</tr>
+<tr class="even">
+<td><strong>Citibank (Canada)</strong></td>
+<td>CAD</td>
+</tr>
+</tbody>
+</table>
+<p>CME Clearing holds accounts at each settlement bank, and clearing members must maintain demand deposit cash accounts at one or more approved settlement banks. CME runs two USD settlement cycles daily (EOD and intraday).</p>
+<p>Source: <a href="https://www.cmegroup.com/solutions/clearing/financial-and-collateral-management/custodian-and-settlement-banks.html">Custodian and Settlement Banks</a></p>
+<hr>
+</section>
+</section>
+<section id="technology-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="technology-infrastructure">5. Technology &amp; Infrastructure</h2>
+<section id="core-systems" class="level3">
+<h3 class="anchored" data-anchor-id="core-systems">5.1 Core Systems</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>System</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CME Globex</strong></td>
+<td>Electronic trading platform providing virtually 24-hour global market access for futures and options across all asset classes; housed at Aurora, IL data center</td>
+</tr>
+<tr class="even">
+<td><strong>CME Clearing Systems</strong></td>
+<td>Post-trade clearing, risk management, and settlement processing infrastructure – processes more than <strong>1 billion trades per year</strong> worth more than <strong>$1 quadrillion</strong> in notional value (<a href="https://www.cmegroup.com/solutions/clearing.html">CME Group</a>)</td>
+</tr>
+<tr class="odd">
+<td><strong>CME CORE</strong></td>
+<td>Interactive margin calculator for clearing members and market participants to calculate margin requirements, access margin models, and run SPAN/SPAN 2 scenarios</td>
+</tr>
+<tr class="even">
+<td><strong>CME ClearPort</strong></td>
+<td>OTC trade submission and clearing platform supporting block trades, EFPs/EFRs, and OTC derivatives clearing</td>
+</tr>
+<tr class="odd">
+<td><strong>CME Direct</strong></td>
+<td>Front-end platform providing trading and clearing member functionality</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="interface-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="interface-protocols">5.2 Interface Protocols</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Protocol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CME STP FIX</strong></td>
+<td>Standard FIX 4.4 API with CME extensions for trade confirmation, query, and subscription streaming over TCP/IP</td>
+</tr>
+<tr class="even">
+<td><strong>CME STP FIXML</strong></td>
+<td>FIXML 5.0 SP2 messaging over RESTful web services for cleared trade information retrieval</td>
+</tr>
+<tr class="odd">
+<td><strong>CME ClearPort API</strong></td>
+<td>API for OTC trade submission and management</td>
+</tr>
+<tr class="even">
+<td><strong>CME Globex iLink</strong></td>
+<td>Order entry and management interface for electronic trading</td>
+</tr>
+<tr class="odd">
+<td><strong>Market Data Platform (MDP)</strong></td>
+<td>Real-time and historical market data feeds</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.cmegroup.com/solutions/processing-and-reporting/straight-through-processing.html">CME Straight Through Processing</a>; <a href="https://cmegroupclientsite.atlassian.net/wiki/spaces/EPICSANDBOX/pages/599162891/CME+STP+FIX">CME STP FIX</a></p>
+</section>
+<section id="data-center-resilience" class="level3">
+<h3 class="anchored" data-anchor-id="data-center-resilience">5.3 Data Center &amp; Resilience</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Primary Data Center</strong></td>
+<td>Aurora, Illinois – 450,000 sq ft facility; operated by CyrusOne (owned by KKR/GIP since CME sold in 2016); serves as hub for CME Globex and all production applications</td>
+</tr>
+<tr class="even">
+<td><strong>Disaster Recovery</strong></td>
+<td>New York Data Center (NYDC) – DR site for all CME applications including iLink, Market Data, Clearing, and support applications</td>
+</tr>
+<tr class="odd">
+<td><strong>DR Failover</strong></td>
+<td>Manual activation process; CME can transfer operations to NYDC if Aurora is unavailable</td>
+</tr>
+<tr class="even">
+<td><strong>Notable Incident</strong></td>
+<td>November 2025: 10+ hour outage due to cooling system failure at Aurora data center. DR site was available but failover threshold was set too high and activation was manually gated. CyrusOne subsequently installed additional cooling redundancy (<a href="https://www.chicagobusiness.com/finance-banking/cmes-data-center-adds-more-cooling-after-outage">Crain’s Chicago Business, 2025</a>)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="google-cloud-partnership" class="level3">
+<h3 class="anchored" data-anchor-id="google-cloud-partnership">5.4 Google Cloud Partnership</h3>
+<p>CME Group entered a <strong>10-year strategic partnership</strong> with Google Cloud to transform its technology infrastructure:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Initiative</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Private Cloud Region</strong></td>
+<td>Announced June 2024 – new private Google Cloud region and co-location facility in Aurora, IL, designed for ultra-low-latency networking and high-performance computing for futures and options trading (<a href="https://www.cmegroup.com/media-room/press-releases/2024/6/26/cme_group_and_googlecloudannouncenewchicagoareaprivatecloudregio.html">CME Press Release, June 2024</a>)</td>
+</tr>
+<tr class="even">
+<td><strong>Google Cloud Universal Ledger (GCUL)</strong></td>
+<td>Announced March 2025 – CME Group piloting tokenisation technology using GCUL for seamless wholesale payments and asset tokenisation. Phase 1 completed; Phase 2 (settlement focus) underway with target market solutions in 2026 (<a href="https://www.cmegroup.com/media-room/press-releases/2025/3/25/cme_group_will_introducetokenizationtechnologytoenhancecapitalma.html">CME Press Release, March 2025</a>)</td>
+</tr>
+<tr class="odd">
+<td><strong>Cloud Migration</strong></td>
+<td>Overall goal to migrate all technology to Google Cloud infrastructure</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="regulatory-framework">6. Regulatory Framework</h2>
+<section id="primary-regulatory-status" class="level3">
+<h3 class="anchored" data-anchor-id="primary-regulatory-status">6.1 Primary Regulatory Status</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 36%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Designation</th>
+<th>Authority</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Derivatives Clearing Organization (DCO)</strong></td>
+<td>CFTC</td>
+<td>Commodity Exchange Act (CEA); CFTC Part 39 regulations</td>
+</tr>
+<tr class="even">
+<td><strong>SIFMU</strong></td>
+<td>FSOC / Federal Reserve Board</td>
+<td>Dodd-Frank Act Title VIII (designated July 2012)</td>
+</tr>
+<tr class="odd">
+<td><strong>Recognised Third-Country CCP</strong></td>
+<td>ESMA</td>
+<td>EU EMIR; recognised June 2016 (Tier 1 CCP)</td>
+</tr>
+<tr class="even">
+<td><strong>Registered Clearing Agency</strong></td>
+<td>SEC</td>
+<td>CME Securities Clearing Inc.&nbsp;(approved December 2025) – for U.S. Treasury and repo clearing</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cftc-dco-core-principles-part-39" class="level3">
+<h3 class="anchored" data-anchor-id="cftc-dco-core-principles-part-39">6.2 CFTC DCO Core Principles (Part 39)</h3>
+<p>CME Clearing must comply with all DCO Core Principles under the CEA, including but not limited to:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 53%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Core Principle</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Financial Resources</td>
+<td>Sufficient to cover default of two largest clearing members (Cover 2)</td>
+</tr>
+<tr class="even">
+<td>Participant &amp; Product Eligibility</td>
+<td>Appropriate admission and product eligibility standards</td>
+</tr>
+<tr class="odd">
+<td>Risk Management</td>
+<td>Comprehensive risk management framework with margin, stress testing, default management</td>
+</tr>
+<tr class="even">
+<td>Settlement Procedures</td>
+<td>Timely completion of settlement obligations</td>
+</tr>
+<tr class="odd">
+<td>Treatment of Funds</td>
+<td>Segregation of customer funds from proprietary funds</td>
+</tr>
+<tr class="even">
+<td>Default Rules &amp; Procedures</td>
+<td>Clear rules for handling clearing member defaults</td>
+</tr>
+<tr class="odd">
+<td>System Safeguards</td>
+<td>Robust IT systems, business continuity, and cybersecurity</td>
+</tr>
+<tr class="even">
+<td>Reporting</td>
+<td>Regulatory reporting to CFTC</td>
+</tr>
+<tr class="odd">
+<td>Public Information</td>
+<td>Transparent disclosure of rules, procedures, and risks</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sifmu-oversight" class="level3">
+<h3 class="anchored" data-anchor-id="sifmu-oversight">6.3 SIFMU Oversight</h3>
+<p>As a designated SIFMU, CME is subject to enhanced supervisory standards:</p>
+<ul>
+<li><strong>Federal Reserve Board</strong> oversight under Title VIII (delegated by FSOC)</li>
+<li>Annual joint examinations by CFTC and Federal Reserve Board</li>
+<li>Comprehensive evaluation of operations and risk management relative to DCO Core Principles</li>
+<li>Access to Federal Reserve discount window lending in extremis</li>
+<li>Enhanced recovery and resolution planning requirements</li>
+</ul>
+</section>
+<section id="pfmi-public-quantitative-disclosures" class="level3">
+<h3 class="anchored" data-anchor-id="pfmi-public-quantitative-disclosures">6.4 PFMI &amp; Public Quantitative Disclosures</h3>
+<p>CME publishes: - <strong>CPMI-IOSCO Qualitative Self-Assessment</strong> – comprehensive PFMI disclosure document (last published November 2023) - <strong>Quarterly PQD Reports</strong> – public quantitative disclosures with key risk metrics (available at <a href="https://www.cmegroup.com/clearing/cpmi-iosco-reporting.html">CME CPMI-IOSCO Reporting</a>) - <strong>Annual Financial Statements</strong> – CME Inc.&nbsp;audited financials</p>
+<hr>
+</section>
+</section>
+<section id="interoperability" class="level2">
+<h2 class="anchored" data-anchor-id="interoperability">7. Interoperability</h2>
+<section id="cme-occ-cross-margining-program" class="level3">
+<h3 class="anchored" data-anchor-id="cme-occ-cross-margining-program">7.1 CME-OCC Cross-Margining Program</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Established</strong></td>
+<td>1989 – one of the earliest cross-margining arrangements globally</td>
+</tr>
+<tr class="even">
+<td><strong>Participants</strong></td>
+<td>OCC (Options Clearing Corporation) and CME Clearing</td>
+</tr>
+<tr class="odd">
+<td><strong>Purpose</strong></td>
+<td>Combine hedged positions in equity index options (cleared by OCC) with equity index futures (cleared by CME) into a single portfolio for margin purposes</td>
+</tr>
+<tr class="even">
+<td><strong>Margin Model</strong></td>
+<td>Combined positions margined using OCC’s STANS (System for Theoretical Analysis and Numerical Simulations) portfolio methodology</td>
+</tr>
+<tr class="odd">
+<td><strong>Eligibility</strong></td>
+<td>Open to clearing members and their affiliates, market makers, and futures locals. Not generally available to retail customers due to differing securities vs.&nbsp;futures customer protection requirements</td>
+</tr>
+<tr class="even">
+<td><strong>Key Benefit</strong></td>
+<td>SPX options (OCC) combined with E-mini S&amp;P 500 futures (CME) for portfolio-level margin offsets</td>
+</tr>
+<tr class="odd">
+<td><strong>Milestone</strong></td>
+<td>20th anniversary of partnership celebrated in 2019 (<a href="https://investor.cmegroup.com/news-releases/news-release-details/options-clearing-corporation-and-cme-group-mark-20-years-cross">CME-OCC 20 Years</a>)</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.theocc.com/risk-management/cross-margin-programs">OCC Cross-Margin Programs</a></p>
+</section>
+<section id="cme-ficc-cross-margining-arrangement" class="level3">
+<h3 class="anchored" data-anchor-id="cme-ficc-cross-margining-arrangement">7.2 CME-FICC Cross-Margining Arrangement</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Launched</strong></td>
+<td>January 2024 (proprietary/house accounts)</td>
+</tr>
+<tr class="even">
+<td><strong>Participants</strong></td>
+<td>FICC (Fixed Income Clearing Corporation, a DTCC subsidiary) and CME Clearing</td>
+</tr>
+<tr class="odd">
+<td><strong>Purpose</strong></td>
+<td>Capital efficiencies for clearing members trading and clearing both U.S. Treasury securities (FICC) and Interest Rate futures (CME)</td>
+</tr>
+<tr class="even">
+<td><strong>Eligible Products</strong></td>
+<td>FICC-cleared U.S. Treasury Notes and Bonds (&gt;1 year maturity) from buy/sell or repo/reverse repo transactions, paired with CME Treasury futures</td>
+</tr>
+<tr class="odd">
+<td><strong>Margin Methodology</strong></td>
+<td>Both CCPs calculate margins on combined portfolios using their respective models; the more conservative result is applied with a joint margin savings percentage</td>
+</tr>
+<tr class="even">
+<td><strong>Customer Extension</strong></td>
+<td>Proposed rule change filed May 2025 to extend program to end-user customers of dually-registered broker-dealers/FCMs; target go-live December 2025, subject to regulatory approval</td>
+</tr>
+<tr class="odd">
+<td><strong>Significance</strong></td>
+<td>A critical element for the upcoming SEC U.S. Treasury clearing mandate (effective December 31, 2026 for cash; June 30, 2027 for repo)</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.cmegroup.com/trading/interest-rates/cleared-otc/faq-cme-ficc-cross-margining-arrangement-expansion.html">CME-FICC Cross-Margining FAQ</a>; <a href="https://www.newyorkfed.org/medialibrary/microsites/tmpg/files/CME-Group-FICC-Cross-Margining-April2025.pdf">DTCC-CME Cross-Margining Forum, April 2025</a></p>
+</section>
+<section id="mutualization-across-cmecbotnymexcomex" class="level3">
+<h3 class="anchored" data-anchor-id="mutualization-across-cmecbotnymexcomex">7.3 Mutualization Across CME/CBOT/NYMEX/COMEX</h3>
+<p>All four exchange divisions share the <strong>Base Products</strong> financial safeguards waterfall. This means: - A single Base guaranty fund covers futures, options, and OTC FX across all four divisions - Clearing member default losses in any division can draw on the common Base guaranty fund - IRS products have their own separate guaranty fund and waterfall - This structure creates mutualization of default risk across all Base product clearing members regardless of which division they clear on</p>
+</section>
+<section id="global-ccp-links" class="level3">
+<h3 class="anchored" data-anchor-id="global-ccp-links">7.4 Global CCP Links</h3>
+<p>CME Clearing does not operate formal interoperability links (shared CCP clearing arrangements) with other global CCPs in the European sense (e.g., EuroCCP-LCH interoperability). Instead, CME maintains its position as a standalone CCP with: - Cross-margining agreements (OCC, FICC) - QCCP recognition in multiple jurisdictions - Global client access via its clearing member network</p>
+<hr>
+</section>
+</section>
+<section id="fees" class="level2">
+<h2 class="anchored" data-anchor-id="fees">8. Fees</h2>
+<section id="fee-structure-overview" class="level3">
+<h3 class="anchored" data-anchor-id="fee-structure-overview">8.1 Fee Structure Overview</h3>
+<p>CME Group charges clearing and transaction fees on a <strong>per-side, per-contract</strong> basis. Rates vary by: - Product category and specific contract - Member status (exchange member vs.&nbsp;non-member) - Volume-based incentive program participation - Transaction type (electronic, open outcry, block, EFP/EFR)</p>
+<p><strong>Average Rate Per Contract:</strong> $0.707 per side (Q4 2025) (<a href="https://www.cmegroup.com/media-room/press-releases/2026/2/04/cme_group_inc_reportsfourthconsecutiveyearofrecordannualrevenuea.html">CME Q4 2025 Earnings</a>)</p>
+</section>
+<section id="representative-clearing-fees-by-product-category" class="level3">
+<h3 class="anchored" data-anchor-id="representative-clearing-fees-by-product-category">8.2 Representative Clearing Fees by Product Category</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Product Category</th>
+<th>Representative Contract</th>
+<th>Exchange Fee (approx.)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Equity Index</strong></td>
+<td>E-mini S&amp;P 500 (ES)</td>
+<td>$0.60 per side (exchange fee, effective Feb 2025) + NFA $0.02</td>
+<td>Non-member all-in ~$1.18/side including surcharges</td>
+</tr>
+<tr class="even">
+<td><strong>Interest Rates</strong></td>
+<td>Treasury Futures, SOFR</td>
+<td>Varies; volume incentive programs available</td>
+<td>Aggregate volume-based incentives across IR products</td>
+</tr>
+<tr class="odd">
+<td><strong>Energy</strong></td>
+<td>WTI Crude Oil, Natural Gas</td>
+<td>Product-specific; member discounts apply</td>
+<td>NYMEX division fees</td>
+</tr>
+<tr class="even">
+<td><strong>Metals</strong></td>
+<td>Gold, Silver, Copper</td>
+<td>Product-specific; member discounts apply</td>
+<td>COMEX division fees</td>
+</tr>
+<tr class="odd">
+<td><strong>Agricultural</strong></td>
+<td>Corn, Soybeans, Wheat</td>
+<td>Product-specific; member discounts apply</td>
+<td>CBOT division fees</td>
+</tr>
+<tr class="even">
+<td><strong>OTC IRS</strong></td>
+<td>SOFR Swaps</td>
+<td>Varies by notional and tenor</td>
+<td>Client fee schedules available (<a href="https://www.cmegroup.com/markets/cleared-swaps/cleared-otc-irs-client-fee-schedules.html">CME OTC IRS Fees</a>)</td>
+</tr>
+<tr class="odd">
+<td><strong>Cryptocurrency</strong></td>
+<td>Bitcoin, Ether Futures</td>
+<td>Product-specific</td>
+<td>24/7 trading supported (from May 2026)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="membership-seat-costs" class="level3">
+<h3 class="anchored" data-anchor-id="membership-seat-costs">8.3 Membership / Seat Costs</h3>
+<p>CME Group memberships (seats) can be purchased or leased. Holding a seat provides reduced exchange fees:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 32%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Membership Type</th>
+<th>Trading Rights</th>
+<th>Impact on Fees</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CME (Full)</td>
+<td>All CME-listed products</td>
+<td>Lowest fee tier for CME products</td>
+</tr>
+<tr class="even">
+<td>CBOT (Full)</td>
+<td>All CBOT-listed products</td>
+<td>Lowest fee tier for CBOT products</td>
+</tr>
+<tr class="odd">
+<td>NYMEX</td>
+<td>All NYMEX-listed products</td>
+<td>Lowest fee tier for NYMEX products</td>
+</tr>
+<tr class="even">
+<td>COMEX</td>
+<td>All COMEX-listed products</td>
+<td>Lowest fee tier for COMEX products</td>
+</tr>
+</tbody>
+</table>
+<p>Seat prices fluctuate based on market conditions. Leasing is an alternative to outright purchase.</p>
+</section>
+<section id="volume-incentive-programs" class="level3">
+<h3 class="anchored" data-anchor-id="volume-incentive-programs">8.4 Volume Incentive Programs</h3>
+<p>CME Group offers various volume-based incentive programs that reduce effective per-contract costs: - <strong>Interest Rate Product Incentives</strong> – aggregate volume-based incentives across multiple IR products (expanded August 2025) - <strong>FX Volume Incentives</strong> – modified volume thresholds (effective August 2025); reduced EFP/block surcharge (effective July 2025) - <strong>Market Maker Programs</strong> – reduced fees for registered market makers</p>
+<p>Source: <a href="https://www.cmegroup.com/company/clearing-fees.html">Exchange Fees for Clearing &amp; Trading</a>; <a href="https://www.cmegroup.com/company/files/cme-fee-schedule-2025-02-01.pdf">CME Fee Schedule, February 2025</a></p>
+<hr>
+</section>
+</section>
+<section id="recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="recent-developments">9. Recent Developments</h2>
+<section id="span-2-rollout-2023-2025" class="level3">
+<h3 class="anchored" data-anchor-id="span-2-rollout-2023-2025">9.1 SPAN 2 Rollout (2023-2025)</h3>
+<p>The next-generation SPAN 2 margin framework has been rolling out in a phased, multi-year approach: - <strong>Energy products</strong> went live September 2023 - <strong>Equity products</strong> went live October/November 2024 - <strong>Interest rate and FX products</strong> (including cleared swaps) targeted for second half of 2024 - <strong>Agricultural and remaining products</strong> targeted for second half of 2025 - Both SPAN and SPAN 2 run in parallel during the transition</p>
+<p>Source: <a href="https://www.cmegroup.com/solutions/risk-management/performance-bonds-margins/span-methodology-overview/launching-span-2.html">SPAN 2 Framework Rollout</a></p>
+</section>
+<section id="google-cloud-partnership-1" class="level3">
+<h3 class="anchored" data-anchor-id="google-cloud-partnership-1">9.2 Google Cloud Partnership</h3>
+<ul>
+<li><strong>June 2024:</strong> Announced new private Google Cloud region and co-location facility in Aurora, IL for ultra-low-latency trading infrastructure</li>
+<li><strong>March 2025:</strong> Piloting tokenisation technology using Google Cloud Universal Ledger (GCUL) for wholesale payments and asset tokenisation; Phase 1 completed, Phase 2 (settlement) underway with 2026 target for market solutions</li>
+<li>Long-term: 10-year strategic partnership to migrate all CME Group technology to Google Cloud</li>
+</ul>
+</section>
+<section id="cme-securities-clearing-treasury-clearing" class="level3">
+<h3 class="anchored" data-anchor-id="cme-securities-clearing-treasury-clearing">9.3 CME Securities Clearing &amp; Treasury Clearing</h3>
+<ul>
+<li><strong>December 2025:</strong> SEC approved registration of <strong>CME Securities Clearing Inc.</strong> as a clearing agency for U.S. Treasury cash and repo securities</li>
+<li><strong>Q2 2026:</strong> Target launch for CME Securities Clearing operations</li>
+<li>This positions CME as a <strong>direct competitor to FICC (DTCC)</strong> in the U.S. Treasury clearing space, in advance of the SEC’s clearing mandate:
+<ul>
+<li>Cash Treasury transactions: clearing mandate effective <strong>December 31, 2026</strong></li>
+<li>Repo transactions: clearing mandate effective <strong>June 30, 2027</strong></li>
+</ul></li>
+<li>CME Securities Clearing will integrate with existing CME Group clearing services and extend cross-margining with FICC</li>
+</ul>
+<p>Source: <a href="https://www.cmegroup.com/solutions/clearing/cme-securities-clearing.html">CME Securities Clearing</a>; <a href="https://www.cmegroup.com/media-room/press-releases/2025/12/02/cme_group_announcesregulatoryapprovalofnewsecuritiesclearinghous.html">CME Press Release, December 2025</a></p>
+</section>
+<section id="record-volumes-2024-2025" class="level3">
+<h3 class="anchored" data-anchor-id="record-volumes-2024-2025">9.4 Record Volumes (2024-2025)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>2024</th>
+<th>2025</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Annual ADV</strong></td>
+<td>26.5 million contracts</td>
+<td>28.1 million contracts</td>
+<td>+6%</td>
+</tr>
+<tr class="even">
+<td><strong>International ADV</strong></td>
+<td>7.8 million contracts</td>
+<td>8.4 million contracts</td>
+<td>+8%</td>
+</tr>
+<tr class="odd">
+<td><strong>Interest Rate ADV</strong></td>
+<td>~13.7 million</td>
+<td>14.2 million (record)</td>
+<td>+4%</td>
+</tr>
+<tr class="even">
+<td><strong>Metals ADV</strong></td>
+<td>–</td>
+<td>Record (up 34% YoY)</td>
+<td>+34%</td>
+</tr>
+<tr class="odd">
+<td><strong>Agricultural ADV</strong></td>
+<td>–</td>
+<td>Record (up 8% YoY)</td>
+<td>+8%</td>
+</tr>
+<tr class="even">
+<td><strong>Energy ADV</strong></td>
+<td>–</td>
+<td>Record (up 8% YoY)</td>
+<td>+8%</td>
+</tr>
+<tr class="odd">
+<td><strong>Q4 2025 ADV</strong></td>
+<td>–</td>
+<td>27.4 million (record Q4)</td>
+<td>+7% YoY</td>
+</tr>
+</tbody>
+</table>
+<p>Volume growth was broad-based across all six asset classes in both years.</p>
+<p>Source: <a href="https://www.cmegroup.com/media-room/press-releases/2025/1/03/cme_group_reportsrecordannualadvof265millioncontractsin2024drive.html">CME 2024 ADV Press Release</a>; <a href="https://www.cmegroup.com/media-room/press-releases/2026/1/05/cme_group_reportsrecordannualadvof281millioncontractsin2025up6ye.html">CME 2025 ADV Press Release</a></p>
+</section>
+<section id="trading-expansion" class="level3">
+<h3 class="anchored" data-anchor-id="trading-expansion">9.5 24/7 Trading Expansion</h3>
+<ul>
+<li><strong>May 2026:</strong> CME Group launching <strong>24/7 trading</strong> for cryptocurrency futures and options (Bitcoin, Ether) on CME Globex, pending regulatory review</li>
+<li>Trading will be continuous with at least a 2-hour weekly maintenance window</li>
+<li>Weekend/holiday trades carry next business day trade date for clearing, settlement, and reporting</li>
+<li>This follows record crypto derivatives volumes: $3 trillion notional in 2025 and 2026 YTD ADV of 407,200 contracts (up 46% YoY)</li>
+</ul>
+<p>Source: <a href="https://www.cmegroup.com/media-room/press-releases/2025/10/02/cme_group_to_offeraround-the-clocktradingforcryptocurrencyfuture.html">CME Press Release, October 2025</a></p>
+</section>
+<section id="financial-performance" class="level3">
+<h3 class="anchored" data-anchor-id="financial-performance">9.6 Financial Performance</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>2024</th>
+<th>2025</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Total Revenue</strong></td>
+<td>$6.1 billion</td>
+<td>$6.5 billion</td>
+</tr>
+<tr class="even">
+<td><strong>Operating Income</strong></td>
+<td>$3.9 billion</td>
+<td>$4.2 billion</td>
+</tr>
+<tr class="odd">
+<td><strong>Net Income</strong></td>
+<td>$3.5 billion</td>
+<td>$4.0 billion [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>Adjusted Operating Margin</strong></td>
+<td>~68%</td>
+<td>69.4%</td>
+</tr>
+<tr class="odd">
+<td><strong>Clearing &amp; Transaction Fee Revenue (Q4)</strong></td>
+<td>–</td>
+<td>$1.3 billion</td>
+</tr>
+</tbody>
+</table>
+<p>Fourth consecutive year of record annual revenue, operating income, and EPS in 2025.</p>
+<p>Source: <a href="https://www.cmegroup.com/media-room/press-releases/2025/2/12/cme_group_inc_reportsall-timerecordannualrevenueadjustedoperatin.html">CME 2024 Earnings</a>; <a href="https://www.cmegroup.com/media-room/press-releases/2026/2/04/cme_group_inc_reportsfourthconsecutiveyearofrecordannualrevenuea.html">CME 2025 Earnings</a></p>
+</section>
+<section id="november-2025-data-center-outage" class="level3">
+<h3 class="anchored" data-anchor-id="november-2025-data-center-outage">9.7 November 2025 Data Center Outage</h3>
+<p>On November 28, 2025, CME markets were down for more than 10 hours following a cooling system failure at the Aurora, IL data center (operated by CyrusOne). Although the New York DR site was available, the manual failover process and high activation thresholds prevented a swift switch. CyrusOne subsequently installed additional cooling redundancy. The incident prompted industry discussion about data center governance and failover procedures for critical financial infrastructure.</p>
+<p>Source: <a href="https://www.chicagobusiness.com/finance-banking/cmes-data-center-adds-more-cooling-after-outage">Crain’s Chicago Business</a>; <a href="https://www.networkworld.com/article/4099088/cooling-crisis-at-cme-a-wakeup-call-for-modern-infrastructure-governance.html">Network World</a></p>
+<hr>
+</section>
+</section>
+<section id="key-data-summary" class="level2">
+<h2 class="anchored" data-anchor-id="key-data-summary">Key Data Summary</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 53%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Products Cleared</td>
+<td>Futures, options, OTC IRS, OTC FX across CME, CBOT, NYMEX, COMEX</td>
+</tr>
+<tr class="even">
+<td>Annual ADV (2025)</td>
+<td>28.1 million contracts</td>
+</tr>
+<tr class="odd">
+<td>Trades Processed Annually</td>
+<td>&gt;1 billion</td>
+</tr>
+<tr class="even">
+<td>Notional Value Processed Annually</td>
+<td>&gt;$1 quadrillion</td>
+</tr>
+<tr class="odd">
+<td>Cash Held at Fed (Dec 2024)</td>
+<td>~$87.4 billion</td>
+</tr>
+<tr class="even">
+<td>Guaranty Fund Contributions (Dec 2024)</td>
+<td>~$10.1 billion</td>
+</tr>
+<tr class="odd">
+<td>CME SITG (Base Waterfall)</td>
+<td>$100 million</td>
+</tr>
+<tr class="even">
+<td>CME SITG (IRS Waterfall)</td>
+<td>$150 million</td>
+</tr>
+<tr class="odd">
+<td>SIFMU Designation</td>
+<td>Yes (July 2012)</td>
+</tr>
+<tr class="even">
+<td>QCCP Status (EU)</td>
+<td>Yes (June 2016)</td>
+</tr>
+<tr class="odd">
+<td>Clearing Revenue (FY 2025)</td>
+<td>Part of $6.5 billion total revenue</td>
+</tr>
+<tr class="even">
+<td>Margin Methodology</td>
+<td>SPAN (legacy) transitioning to SPAN 2 (HVaR + ES)</td>
+</tr>
+<tr class="odd">
+<td>Cover Standard</td>
+<td>Cover 2</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>This document is based on publicly available information from CME Group, CFTC filings, CPMI-IOSCO disclosures, and third-party sources. All figures are approximate and sourced as noted. Information marked [unverified] could not be confirmed from official sources at the time of research.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,549 @@
+---
+title: "Hong Kong Exchanges and Clearing Limited (HKEX)"
+subtitle: "Equities > Exchanges"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 1
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Hong Kong Exchanges and Clearing Limited |
+| Abbreviation | HKEX |
+| Website | https://www.hkex.com.hk |
+| Year Established | 2000 (merger of SEHK, HKFE, and HKSCC); SEHK originally established 1891 |
+| Country / City | Hong Kong SAR, China / Central, Hong Kong (Head Office); Tseung Kwan O (Data Centre) |
+| Ownership Structure | Publicly listed on its own exchange (SEHK: 0388); widely held by institutional investors; Hong Kong SAR Government holds a 5.87% stake via the Financial Secretary |
+| Parent Company / Group | HKEX is the listed holding company; principal subsidiaries include The Stock Exchange of Hong Kong Limited (SEHK), Hong Kong Futures Exchange Limited (HKFE), Hong Kong Securities Clearing Company Limited (HKSCC), and LME Holdings Limited (London Metal Exchange) |
+| Regulatory Authority | Securities and Futures Commission (SFC) of Hong Kong |
+| Market Capitalization (listed companies) | ~HK$48.5 trillion (~US$6.2 trillion) as of February 2026; HK$44.9 trillion as of July 2025 (YoY +44%) [Source: HKEX Monthly Market Highlights] |
+| Total Listed Instruments | 2,673 listed companies (as of February 2026); Main Board: ~2,283, GEM: ~326 [data as of 2024]; plus ~2,600+ ETPs, warrants, and structured products |
+| Average Daily Trading Volume | Cash market ADT: HK$230.7 billion (~US$29.6 billion) for Jan-Nov 2025, up 43% YoY; record monthly ADT of HK$316.7 billion in September 2025 [Source: HKEX 2025 Year in Review] |
+| Average Daily Trading Value | HK$230.7 billion (Jan-Nov 2025); ETPs ADT: HK$37.6 billion (doubled YoY) [Source: HKEX 2025 Year in Review] |
+
+### Key Historical Milestones
+- **1891:** Association of Stockbrokers in Hong Kong established, the earliest formal securities trading organization
+- **1914:** Renamed to the Hong Kong Stock Exchange
+- **1947:** Hong Kong Stock Exchange re-established after World War II
+- **1969–1972:** Three additional exchanges established (Far East Exchange, Kam Ngan Stock Exchange, Kowloon Stock Exchange), creating the "four exchanges" era
+- **1986:** Four exchanges unified into The Stock Exchange of Hong Kong Limited (SEHK); trading floor opened at Exchange Square in Central
+- **1993:** Automatic Order Matching and Execution System (AMS) introduced in November, beginning electronic trading
+- **1997:** Asian Financial Crisis severely impacts Hong Kong markets; government intervenes with HK$118 billion stock-buying operation in 1998
+- **1999:** Hong Kong government announces reform plan to merge and demutualize the stock and futures exchanges
+- **2000 (March 6):** Hong Kong Exchanges and Clearing Limited (HKEX) established through merger of SEHK, HKFE, and HKSCC
+- **2000 (June 27):** HKEX lists on its own exchange (IPO raised ~HK$4.3 billion)
+- **2000 (October):** AMS/3 trading system launched, replacing AMS/2
+- **2003:** SARS outbreak disrupts markets; HKEX introduces Closing Auction Session (CAS) concept development
+- **2007:** Average daily turnover exceeds HK$100 billion for the first time amid China bull market
+- **2012 (December):** HKEX completes acquisition of London Metal Exchange (LME) for £1.39 billion (~US$2.2 billion)
+- **2014 (November 17):** Shanghai-Hong Kong Stock Connect launches, enabling cross-border equity trading
+- **2016 (August):** Volatility Control Mechanism (VCM) introduced for the securities market
+- **2016 (December 5):** Shenzhen-Hong Kong Stock Connect launches
+- **2017 (July 3):** Northbound Bond Connect launches
+- **2018 (February 5):** Orion Trading Platform - Securities Market (OTP-C) goes live, replacing AMS/3.8
+- **2018 (April):** New listing regime takes effect (Chapter 18A for biotech, weighted voting rights structures)
+- **2022 (July 4):** ETF Connect launches (ETFs included in Stock Connect)
+- **2023 (May 15):** Swap Connect (Northbound) launches — world's first derivatives mutual market access programme
+- **2023 (November):** Stamp duty on stock transactions reduced from 0.13% to 0.1%
+- **2024 (April):** HKEX announces in-house development of Orion Derivatives Platform (ODP), targeted for 2028 launch
+- **2025:** HKEX becomes global leader in IPO proceeds; ADT surges 43% YoY; new minimum spread reduction (Phase 1) takes effect August 5
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| Main Board | Premier market for established companies; accounts for vast majority of market capitalization and trading volume | Market cap >= HK$500 million at IPO; profit test: aggregate profit >= HK$50 million over 3 years (with >= HK$20 million in most recent year); or market cap/revenue test: market cap >= HK$4 billion with revenue >= HK$500 million; or market cap/revenue/cashflow test: market cap >= HK$2 billion with revenue >= HK$500 million and positive aggregate cashflow >= HK$100 million over 3 years; minimum public float 25% (or 15-25% for large-cap); >= 300 public shareholders |
+| GEM (Growth Enterprise Market) | Market for smaller, high-growth companies and startups with less stringent requirements | Trading record >= 2 financial years; cashflow test: market cap >= HK$150 million with positive 2-year aggregate operating cashflow >= HK$30 million; or R&D company test: 2-year revenue >= HK$100 million (with YoY growth), R&D expenditure >= HK$30 million (>= 15% of total operating expenditure each year); minimum public float 25%; >= 100 public shareholders |
+| Chapter 18A (Biotech) | Specialist listing pathway for pre-revenue biotech companies on the Main Board (introduced 2018) | Market cap >= HK$1.5 billion at IPO; must have at least one core product beyond concept stage; experienced management; adequate working capital for >= 125% of group costs for next 12 months |
+| Chapter 18C (Specialist Technology) | Listing route for specialist technology companies in certain industries (introduced 2023) | Commercial Companies: market cap >= HK$6 billion; Pre-Commercial Companies: market cap >= HK$10 billion with revenue >= HK$250 million |
+| Chapter 19C (Secondary Listings) | Allows qualifying overseas-listed companies to secondary list in Hong Kong | Primarily targets Greater China and international companies already listed on a qualifying exchange (NYSE, NASDAQ, LSE Main Market); market cap >= HK$3 billion (or HK$10 billion for non-Greater China issuers without WVR) |
+
+### 2.2 Trading Sessions
+| Session | Local Time (HKT) | UTC (HKT = UTC+8) | Description |
+|---------|-----------|-----|-------------|
+| Pre-Opening Session (POS) | 9:00 AM – 9:30 AM | 01:00 – 01:30 | Order input period (9:00–9:15), pre-order matching period (9:15–9:20), order matching period (9:20–9:28), blocking period (9:28–9:30); At-auction Orders and At-auction Limit Orders accepted; single-price auction determines opening price |
+| Morning Continuous Trading | 9:30 AM – 12:00 PM | 01:30 – 04:00 | Continuous order matching on price-time priority; all continuous session order types accepted |
+| **Lunch Break** | **12:00 PM – 1:00 PM** | **04:00 – 05:00** | **No trading occurs; orders cannot be submitted, modified, or cancelled during this period. This is a distinctive feature of Asian exchanges including HKEX, unlike Western exchanges that trade continuously** |
+| Afternoon Continuous Trading | 1:00 PM – 4:00 PM | 05:00 – 08:00 | Continuation of morning session; continuous order matching resumes |
+| Closing Auction Session (CAS) | 4:00 PM – ~4:10 PM | 08:00 – ~08:10 | Four phases: (1) Reference Price Fixing Period (4:00–4:01); (2) Order Input Period (4:01–4:06); (3) No-Cancellation Period (4:06–4:08); (4) Random Closing Period (4:08–4:10, closes randomly within 2 min to prevent manipulation); At-auction Orders and At-auction Limit Orders only |
+
+**Notes:**
+- Total trading hours: ~5.5 hours (excluding lunch break) plus ~10 minutes CAS
+- **Lunch break** is maintained per Hong Kong market tradition, though there has been periodic discussion about its elimination (the break was shortened from 1.5 hours to 1 hour in 2011)
+- Half-day trading sessions (e.g., before holidays) end at 12:00 PM with no afternoon session, and CAS runs from 12:00–12:10 PM
+- Hong Kong does not observe daylight saving time; HKT is fixed at UTC+8
+
+### 2.3 Tick Sizes
+**Spread Table Code 01 (applicable to equities, REITs, equity warrants)**
+
+| Price Range (HK$) | Tick Size (HK$) | Notes |
+|-------------|-----------|-------|
+| 0.01 – 0.25 | 0.001 | |
+| 0.25 – 0.50 | 0.005 | |
+| 0.50 – 10.00 | 0.010 | Phase 2 (mid-2026): will reduce to 0.005 |
+| 10.00 – 20.00 | 0.010 | Reduced from 0.020 in Phase 1 (August 5, 2025) |
+| 20.00 – 100.00 | 0.020 | Reduced from 0.050 in Phase 1 (August 5, 2025) |
+| 100.00 – 200.00 | 0.050 | Reduced from 0.100 [unverified] |
+| 200.00 – 500.00 | 0.100 | Reduced from 0.200 [unverified] |
+| 500.00 – 1,000.00 | 0.500 | |
+| 1,000.00 – 2,000.00 | 1.000 | |
+| 2,000.00 – 5,000.00 | 2.000 | |
+| 5,000.00 – 9,995.00 | 5.000 | |
+
+**Note:** HKEX implemented Phase 1 of minimum spread reduction on August 5, 2025, reducing tick sizes for the HK$10–50 range by 50–60%. Phase 2 (HK$0.50–10 range, 50% reduction) is targeted for mid-2026. These changes align Hong Kong with international peers. Separate spread tables (codes 03, 04, 05) apply to debt securities, ETPs, and structured products.
+
+### 2.4 Lot Sizes
+- **Board lot (trading unit):** Varies by issuer; currently 44+ different board lot units are in use (e.g., 100, 200, 400, 500, 1,000, 2,000 shares per lot)
+- **Most common:** 100, 500, and 1,000 shares per lot
+- **Board lot value guidance:** Floor of HK$2,000 per lot (proposed reduction to HK$1,000)
+- **Odd lot trading:** Odd lots (less than one board lot) can be traded on the exchange via a separate odd-lot order book, typically at a discount to board lot prices
+- **Reform proposal (December 2025):** HKEX published a consultation paper proposing to reduce board lot options from 44+ to 8 standard choices (1, 50, 100, 500, 1,000, 2,000, 5,000, 10,000 shares) and introducing a board lot value ceiling of HK$50,000 for lots larger than 100 shares. Consultation closed March 12, 2026
+- **Northbound Stock Connect:** Board lot of 100 shares for A-shares
+
+### 2.5 Market Maker / Liquidity Provider Programs
+- **Securities Market Makers (SMMs):** Registered market makers provide liquidity for specific securities, including structured products (derivative warrants, callable bull/bear contracts)
+- **Designated Specialist Programme for ETPs:** Allows global liquidity providers (not just HKEX SMMs) to act as market makers for exchange-traded products, with minimum quotation obligations
+- **Dual Counter Designated Specialists (DCS-DS):** Market makers for HKD-RMB dual counter securities; must maintain credit rating of A- (S&P) or A3 (Moody's) or above, paid-up capital >= HK$50 million, shareholders' funds >= HK$100 million
+- **Stock Options Market Makers:** Appointed for individual stock options series with continuous two-sided quotation obligations
+- **Derivatives Market Maker/Liquidity Provider Programme:** Commercial arrangements for futures and options products; Market Maker Programme governed by exchange rules, LP Programme offering more flexible terms for new products
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+- **Opening Auction (Pre-Opening Session):**
+  - Single-price auction mechanism during 9:00–9:30 AM
+  - At-auction Orders (AAO, no price specified) have higher matching priority than At-auction Limit Orders (AALO, price specified)
+  - Indicative Equilibrium Price (IEP) is calculated and disseminated during the session
+  - Orders matched at the final IEP at ~9:20–9:28 AM
+  - Unmatched At-auction Limit Orders with prices at or better than IEP are converted to limit orders and carried into continuous trading
+  - Opening quotation rule: orders limited to ±5% (or 24 spreads, whichever is greater) from the previous closing price
+
+- **Closing Auction (Closing Auction Session):**
+  - Four-phase mechanism (4:00–~4:10 PM) designed to determine the official closing price
+  - Reference Price Fixing Period: establishes the reference price (typically the nominal price from the last 5 minutes of continuous trading)
+  - Order Input Period: at-auction orders accepted within ±5% of the reference price
+  - No-Cancellation Period: new orders accepted but cancellations not permitted
+  - Random Closing Period: session ends at a random time between 4:08 and 4:10 PM to prevent last-second manipulation
+  - The final IEP becomes the official closing price for index calculation and settlement
+
+- **Volatility Control Mechanism (VCM):** See Section 8.2
+
+### 3.2 Continuous Trading
+- **Matching method:** Order-driven, continuous matching on strict price-time priority (no specialist/DMM system)
+- **Price priority:** Best price matched first (highest buy / lowest sell)
+- **Time priority:** Among orders at the same price, earliest order matched first
+- **Maximum order size:** 3,000 board lots for automatch orders
+- **Quotation rules:** During continuous trading, incoming orders cannot deviate more than 24 spreads from the current nominal price (for securities with a previous closing price of HK$0.01–HK$0.50, this is relaxed to 9 spreads below the bid and above the ask)
+
+### 3.3 Price Discovery
+- Opening price determined via pre-opening auction IEP
+- Continuous price discovery through order-driven matching during the trading day
+- Closing price determined via closing auction session IEP (replacing the previous median-of-five-snapshots method)
+- No formal price limits (daily limit up/down) — HKEX does not impose statutory daily price limits on securities, unlike mainland China exchanges (SSE/SZSE have ±10% daily limits); instead, HKEX uses the VCM as a targeted cooling-off mechanism for constituent stocks
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+| Order Type | Description |
+|------------|-------------|
+| Limit Order (LO) | Executes only at the specified limit price; unexecuted portion remains in the order book at the limit price until end of day or cancelled |
+| Enhanced Limit Order (ELO) | Matches at up to 10 price queues better than or equal to the specified limit price; unexecuted portion remains in the order book as a limit order at the original input price |
+| Special Limit Order (SLO) | Matches at up to 10 best price queues not worse than the specified limit price; unexecuted portion is **cancelled** (not queued) — effectively a fill-or-kill up to 10 levels |
+| At-auction Order (AAO) | No price specified; for use during Pre-Opening and Closing Auction Sessions only; matched at the final IEP; highest priority among auction orders |
+| At-auction Limit Order (AALO) | Price specified; for use during Pre-Opening and Closing Auction Sessions; matched at the final IEP if order price is at or better than IEP; lower priority than AAO |
+
+### 4.2 Advanced Order Types
+| Order Type | Description |
+|------------|-------------|
+| Good Till Date Order (GTD) | Order remains active in the order book until the specified date (up to a maximum number of calendar days) or until fully executed or cancelled |
+| Stop Loss Limit Order (SLLO) | Triggered when the last traded price reaches or passes the specified trigger price; converts to a limit order at the specified limit price upon activation |
+| Session Order | An order that applies to a specific trading session (morning or afternoon); automatically cancelled at the end of the designated session |
+
+### 4.3 Time-in-Force Options
+- **Day order:** Default; valid for the current trading day only
+- **Good Till Date (GTD):** Valid until a specified future date
+- **Session:** Valid for the current trading session only (morning or afternoon)
+- **Fill-and-Kill (FAK):** Immediate partial execution with remaining portion cancelled (via SLO behavior)
+- **Note:** HKEX does not support Fill-or-Kill (FOK) or Immediate-or-Cancel (IOC) as explicitly named TIF options in the securities market; SLO provides similar functionality
+
+### 4.4 Order Modification / Cancellation
+- Orders can be amended (price, quantity) or cancelled during continuous trading sessions
+- During the No-Cancellation Period of CAS (4:06–4:08 PM), order cancellation is not permitted
+- During the lunch break (12:00–1:00 PM), no order amendments or cancellations are processed
+- Order amendments that change price result in loss of time priority
+- OTP-C supports Self-Match Prevention (SMP) functionality to prevent an Exchange Participant's orders from matching against each other
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | Orion Trading Platform – Securities Market (OTP-C) |
+| Vendor / In-house | In-house development by HKEX |
+| Architecture | Scalable, high-performance platform based on open systems technology; modular design allowing phased introduction of new functionalities |
+| Matching Engine | Central matching engine with price-time priority; supports multiple instrument types |
+| Round-trip Latency | Information not publicly available in exact microseconds; SDNet/3 network described as providing "lower latency" than predecessor SDNet/2 [estimated sub-millisecond for co-located participants] |
+| Order Processing Capacity | 60,000 order transactions per second at launch (100% increase over AMS/3.8), with scope for further increases [Source: HKEX, February 2018] |
+| Messages Per Second | Information not publicly available (order capacity of 60,000/sec implies comparable message throughput) |
+| Launch Year | February 5, 2018 |
+
+### System History
+| Year | System | Notes |
+|------|--------|-------|
+| 1986 | Manual floor trading | Unified exchange opens at Exchange Square |
+| 1993 | AMS (Automatic Order Matching and Execution System) | First electronic trading system |
+| 1996 | AMS/2 | Upgraded version with enhanced capacity |
+| 2000 | AMS/3 | Deployed October 23, 2000; multi-workstation architecture |
+| 2008–2011 | AMS/3.8 | Progressive upgrades to AMS/3 with capacity enhancements |
+| 2013 | HKEX Data Centre | State-of-the-art facility opens in Tseung Kwan O |
+| 2018 | OTP-C (Orion Trading Platform – Securities Market) | Go-live February 5; replaced AMS/3.8; development began 2012 |
+| 2018 | SDNet/3 | New backbone network; lower latency, higher bandwidth vs SDNet/2 |
+| 2024 | ODP announced | Orion Derivatives Platform (in-house) development commenced; target launch 2028 |
+
+### Technology Stack
+- **Trading Platform:** OTP-C — open systems technology (Linux-based), designed for flexibility and scalability
+- **Derivatives Trading:** HKATS (Hong Kong Automated Trading System) — based on NASDAQ's Genium INET technology; to be replaced by Orion Derivatives Platform (ODP) in 2028
+- **Order Gateway:** Orion Central Gateway – Securities Market (OCG-C); FIX protocol-based connectivity for exchange participants
+- **Market Data:** Orion Market Data Platform (OMD-C for securities, OMD-D for derivatives) — binary multicast protocol over UDP/IP
+- **Network:** SDNet/2 (Securities and Derivatives Network) for derivatives and some services; SDNet/3 for OTP-C securities trading; Optical Ethernet, 1 Gbps physical speed
+- **Clearing:** CCASS (Central Clearing and Settlement System) for securities settlement; DCASS for derivatives
+- **Stock Connect Trading:** OTP-CSC (Orion Trading Platform – China Stock Connect) and CCCG (China Connect Central Gateway)
+
+### Disaster Recovery / Business Continuity
+- HKEX maintains disaster recovery facilities with full replication capability
+- Regular system rehearsals conducted for OTP-C and CSC system recovery (multiple rehearsals per year)
+- SDNet/2 and SDNet/3 networks designed for high resilience with redundant paths
+- Co-location and hosting services at Tseung Kwan O Data Centre provide direct access with redundancy
+- Regular market rehearsals (MR) conducted before major system changes; documented in publicly available information packages
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+- **OMD-C (Orion Market Data Platform – Securities Market):** Primary market data feed for securities
+  - Binary message format designed for high throughput and low latency
+  - IP multicast and UDP transport protocols for one-to-many distribution
+  - Retransmission recovery service running on Unicast TCP
+- **OMD-D (Orion Market Data Platform – Derivatives Market):** Equivalent feed for derivatives
+- **OMD-CC (Orion Market Data Platform – China Connect):** Market data for Stock Connect securities
+- **MMDH (Mainland Market Data Hub):** Market data distribution for mainland securities via Stock Connect
+- **IIS (Index Information Service):** Hang Seng Index data feeds
+
+### 6.2 Data Levels
+| Product | Description |
+|---------|-------------|
+| Securities Standard (OMD-C) | Conflated/snapshot data; periodic updates |
+| Securities Premium (OMD-C) | Streaming real-time data |
+| Securities FullTick (OMD-C) | Streaming tick-by-tick data including every order book change |
+| Index Feed | Real-time Hang Seng and other index data |
+| Derivatives Market Data (OMD-D) | Real-time futures and options data |
+
+### 6.3 Distribution Infrastructure
+- Market data distributed via SDNet/2 network to Exchange Participants, Information Vendors, and direct subscribers
+- Co-located participants at Tseung Kwan O Data Centre receive lowest-latency feeds
+- HKEX licenses market data to approximately 100+ Information Vendors globally
+- Data available through major terminal providers (Bloomberg, Refinitiv, etc.)
+
+### 6.4 Historical Data
+- HKEX Data Products offers historical tick data, end-of-day data, and reference data via the HKEX website
+- Historical data available for securities, derivatives, and index products
+- Data formats include CSV downloads and API-accessible datasets
+- Third-party vendors (TickData, Refinitiv, etc.) also provide HKEX historical data
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+- **Stock Exchange (SEHK) Participant:** Must be a corporation licensed or registered under the Securities and Futures Ordinance; minimum liquid capital requirements apply; application assessed by SEHK Listing Committee
+- **Types:** Exchange Participant (EP), China Connect Exchange Participant (CCEP) for Stock Connect trading
+- **Requirements:** SFC Type 1 licence (dealing in securities); adequate financial resources; fit and proper criteria; competency requirements for responsible officers
+- **Non-Exchange Participant access:** Through Direct Market Access (DMA) arrangements with Exchange Participants
+
+### 7.2 Connection Methods
+- **OCG-C (Orion Central Gateway – Securities Market):** Primary order submission interface; TCP/IP point-to-point connection using FIX protocol
+- **BSS (Broker Supplied Systems):** Exchange Participants connect proprietary or vendor trading systems to OCG-C
+- **HKEX Terminal:** HKEX-provided trading terminals for smaller participants
+- **CCCG (China Connect Central Gateway):** Dedicated gateway for Northbound Stock Connect order routing
+- **DMA (Direct Market Access):** Exchange Participants may offer DMA to qualified clients subject to SFC requirements
+
+### 7.3 Co-location / Proximity Services
+- **HKEX Hosting Services:** Co-location at the HKEX Data Centre, 1 Chun Ying Street, Tseung Kwan O Industrial Estate, Hong Kong
+- **Facility:** Purpose-built state-of-the-art data centre opened January 2013; houses HKEX core trading, clearing, and market data systems
+- **Ecosystem:** Co-located Exchange Participants, technology service providers, Information Vendors, and network service providers
+- **Benefits:** Lowest-latency access to OTP-C matching engine, OMD-C market data, and clearing systems
+- **Network:** Multiple Accredited Vendors provide cross-connect services within the facility
+- **Third-party proximity providers:** IPC, Beeks, and others offer managed hosting and connectivity within the HKEX Data Centre
+
+### 7.4 API Protocols
+- **FIX Protocol:** Primary API for order submission via OCG-C; FIX 4.4-based with HKEX-specific extensions; CompID "HKEXCO" for OCG-C sessions
+- **Binary Protocol:** Used for OMD market data feeds (OMD-C, OMD-D)
+- **HKATS API:** Derivatives trading API for the Hong Kong Automated Trading System
+- **Session management:** FIX sessions reset daily (sequence numbers initialize to 1 each trading day); each EP can register multiple sessions with IP address pre-registration
+
+### 7.5 Certification / Testing
+- **Readiness testing:** Mandatory connectivity and system readiness testing before go-live for new Exchange Participants or system changes
+- **Market rehearsals:** Regular rehearsals conducted for OTP-C, OTP-CSC, and other systems; participation by EPs is expected
+- **Test environment:** HKEX provides dedicated test environments for OCG-C and OMD-C connectivity testing
+- **Conformance testing:** Exchange Participants must pass conformance testing for FIX protocol implementation before production access
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+- **No statutory daily price limits:** Unlike mainland China exchanges (SSE/SZSE: ±10%, ±20% for ChiNext/STAR), HKEX does **not** impose daily price limit bands on securities trading
+- **Quotation rules:** Orders during continuous trading are subject to a ±24 spread deviation limit from the nominal price (reduced to ±9 spreads for low-priced securities HK$0.01–0.50)
+- **Opening auction price limit:** ±5% from previous closing price (or 24 spreads, whichever is greater)
+- **Closing auction price limit:** ±5% from reference price established during CAS
+
+### 8.2 Circuit Breakers (Volatility Control Mechanism)
+- **Introduction:** August 22, 2016
+- **Mechanism:** Individual stock-level cooling-off mechanism (not a market-wide trading halt)
+- **Applicable securities:** Constituent stocks of the Hang Seng Index (~50 stocks) and Hang Seng China Enterprises Index (~80 securities); ~80 securities total (with overlap)
+- **Trigger:** If potential trade price deviates by more than **±10%** from the reference price (last traded price 5 minutes ago), VCM is triggered
+- **Cooling-off period:** **5 minutes** during which trading in the security continues but only within ±10% of the reference price
+- **Frequency:** Only one VCM trigger per trading session (morning and afternoon) per security
+- **Exclusion periods:** VCM does not apply during the first 15 minutes of each session, the first 15 minutes after market reopening, or the last 20 minutes of the afternoon session
+- **Key distinction:** VCM is NOT a trading halt — the security continues to trade within the price band during the cooling-off period
+- **Derivatives VCM:** Separate VCM for futures with ±5% trigger threshold
+
+### 8.3 Pre-trade Risk Controls
+- **Securities market:**
+  - Maximum order size: 3,000 board lots per order
+  - Order price deviation limits (±24 spreads from nominal price)
+  - Position limit monitoring through OTP-C
+  - Self-Match Prevention (SMP): prevents an EP's buy and sell orders from matching against each other
+- **Derivatives market (PTRM - Pre-Trade Risk Management):**
+  - PTRM 2.0 system within HKATS monitors exposure across multiple Prescribed Risk Controls
+  - Execution Throttle: at-trade risk check for exposure limits over configurable periods (300–600 seconds)
+  - Four exposure limit types; order breaching any limit triggers PTLG (Post-Trade Limit Group) blocking
+  - Clearing Participants (CPs) and Exchange Participants (EPs) can set risk limits for their trading units
+
+### 8.4 Kill Switch
+- **Derivatives market:** Kill Switch function available for Risk Limit Managers and Trading Units; blocks the PTLG and performs mass order cancellation on all outstanding orders in a single action; prevents further order submission while activated
+- **Securities market:** Exchange Participants can perform mass cancellation via OCG-C sessions; HKEX can intervene to suspend an EP's trading access if necessary
+- **Note:** After Kill Switch activation in derivatives, order cancellations can still be processed but new orders and block trades are rejected
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+- **Securities and Futures Commission (SFC):** Independent statutory body established under the Securities and Futures Commission Ordinance; primary regulator of Hong Kong's securities and futures markets
+- **Financial Services and the Treasury Bureau (FSTB):** Government policy bureau overseeing financial services regulation
+- **Hong Kong Monetary Authority (HKMA):** Regulates banking aspects; jointly supervises OTC derivatives clearing with SFC
+- **Three-tiered regulatory structure:**
+  1. Government (FSTB) — policy and legislation
+  2. SFC — market regulation, licensing, enforcement
+  3. HKEX — front-line regulation of listed companies and exchange participants (as a recognized exchange controller)
+
+### 9.2 Key Regulations
+- **Securities and Futures Ordinance (SFO, Cap. 571):** Primary legislation governing securities and futures markets; covers licensing, market conduct, disclosure, and enforcement
+- **Rules of the Exchange (Main Board Listing Rules):** Comprehensive listing and continuing obligations rules for Main Board issuers
+- **GEM Listing Rules:** Equivalent rules for GEM-listed companies
+- **Code on Corporate Governance:** Comply-or-explain code incorporated into Listing Rules; enhanced climate-related disclosure requirements effective 2025
+- **Securities and Futures (Stock Market Listing) Rules:** Subsidiary legislation under SFO
+- **Anti-Money Laundering and Counter-Terrorist Financing Ordinance:** AML/CFT requirements for licensed corporations
+
+### 9.3 Market Surveillance
+- HKEX operates a dedicated Market Surveillance team using advanced technology for real-time monitoring of trading activities
+- Surveillance covers detection of potential market misconduct including insider dealing, market manipulation, false trading, and price rigging
+- Close cooperation with SFC Enforcement Division for investigation and prosecution
+- SFC has powers to impose disciplinary measures, seek court orders, and prosecute offenders under the SFO
+- HKEX monitors listed company compliance with disclosure obligations (price-sensitive information, connected transactions, etc.)
+
+### 9.4 Reporting Requirements
+- **Listed company disclosures:** Inside information disclosure (continuous disclosure obligation under SFO Part XIVA); annual reports, interim reports, quarterly reports (GEM); connected transaction announcements; results announcements
+- **Short selling reporting:** Daily short selling turnover reports published by HKEX; short position reporting (bimonthly) for positions exceeding specified thresholds
+- **Substantial shareholder disclosure:** Notification required when crossing 5% threshold (and each subsequent 1% change)
+- **Trade reporting:** All on-exchange trades automatically reported; off-exchange reportable trades must be reported to HKEX
+
+### 9.5 Cross-border Arrangements (Stock Connect, Bond Connect, etc.)
+- **Shanghai-Hong Kong Stock Connect (November 2014):**
+  - Northbound: Hong Kong and international investors trade eligible SSE-listed A-shares
+  - Southbound: Mainland investors trade eligible SEHK-listed stocks
+  - Daily Northbound quota: RMB 52 billion; Daily Southbound quota: RMB 52 billion
+  - No aggregate quota (abolished August 2016 for Shanghai Connect)
+  - Eligible stocks: SSE 180 Index / SSE 380 Index constituents and dual-listed A+H shares (Northbound); Hang Seng Composite LargeCap/MidCap Index constituents and dual-listed A+H shares (Southbound)
+
+- **Shenzhen-Hong Kong Stock Connect (December 2016):**
+  - Similar structure to Shanghai Connect
+  - Daily Northbound quota: RMB 52 billion; Daily Southbound quota: RMB 52 billion
+  - Eligible stocks: SZSE Component Index / SZSE Small/Mid Cap Innovation Index constituents with market cap >= RMB 6 billion (Northbound)
+
+- **ETF Connect (July 2022):**
+  - Eligible ETFs included in Stock Connect for cross-border trading
+  - Northbound: 225 eligible mainland-listed ETFs; Southbound: 8 eligible Hong Kong-listed ETFs [data as of 2024]
+
+- **Bond Connect (July 2017 Northbound; September 2021 Southbound):**
+  - Access to China Interbank Bond Market (CIBM) for international investors
+  - Operated through Bond Connect Company Limited (joint venture of HKEX subsidiary and CFETS)
+  - Service fees reduced by 60% effective January 1, 2025
+
+- **Swap Connect (May 2023):**
+  - World's first derivatives mutual market access programme
+  - Northbound: international investors access mainland interbank financial derivatives (interest rate swaps)
+  - Cleared through Shanghai Clearing House with HKEX subsidiary OTC Clear as correspondent clearing house
+
+- **Technical infrastructure:**
+  - OTP-CSC (Orion Trading Platform – China Stock Connect) for Stock Connect order routing
+  - CCCG (China Connect Central Gateway) for Northbound trading connectivity
+  - SEHK subsidiary acts as Special Participant of SSE/SZSE for order routing
+  - ChinaClear and HKSCC maintain cross-participantship for settlement
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+| Fee Type | Rate | Paid By |
+|----------|------|---------|
+| **Stamp Duty** | 0.1% of trade value (rounded up to nearest HK$1; minimum HK$1) | Buyer and Seller each |
+| **SFC Transaction Levy** | 0.0027% of trade value | Buyer and Seller each |
+| **FRC Transaction Levy** | 0.00015% of trade value | Buyer and Seller each |
+| **HKEX Trading Fee** | 0.00565% of trade value | Buyer and Seller each |
+| **CCASS Stock Settlement Fee** | 0.002% of trade value (min HK$2, max HK$100 per side per stock per day) | Buyer and Seller each |
+| **Transfer Deed Stamp Duty** | HK$5.00 per transaction | Seller |
+| **Transfer Fee** | HK$2.50 per transaction | Buyer |
+
+**Notes:**
+- Stamp duty constitutes approximately 90% of total official transaction costs
+- Stamp duty was reduced from 0.13% to 0.1% effective November 17, 2023
+- ETF trades are exempt from stamp duty
+- Stock Connect Northbound trades are subject to mainland stamp duty (0.05% seller only) plus Hong Kong levies
+- Brokerage commission (negotiable, typically 0.03%–0.25%) is separate and set by individual brokers
+
+### 10.2 Other Fees
+| Fee Category | Description |
+|-------------|-------------|
+| **Listing Fees** | Initial listing fee: HK$150,000 (Main Board); Annual listing fee: based on market cap, ranging from HK$175,000 to HK$1,587,000+ |
+| **Market Data Fees** | OMD-C subscription fees vary by product tier (Standard, Premium, FullTick); Information Vendor redistribution fees |
+| **Hosting Services** | Co-location rack space and connectivity fees at Tseung Kwan O Data Centre |
+| **Network Fees** | SDNet/2 and SDNet/3 circuit subscription fees via Accredited Vendors; bandwidth-based pricing |
+| **OCG-C Session Fees** | Per-session fees for order gateway connectivity |
+| **Derivatives Trading Fees** | Per-contract fees for futures and options; vary by product |
+| **LME Fees** | Trading, clearing, and membership fees for London Metal Exchange products |
+
+**Revenue Breakdown (HKEX Group):**
+- Trading fees and trading tariff: largest revenue segment
+- Stock Exchange listing fees
+- Market data fees
+- Depository, custody, and nominee services fees
+- Clearing and settlement fees
+- Investment income (margin and clearing house funds)
+- Other revenue (hosting, network, technology services)
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+- **2021:** Pre-Trade Risk Management (PTRM) 2.0 deployed for derivatives market with enhanced Kill Switch and risk limit functions
+- **2022:** Value-at-Risk (VaR) based margining model implemented for the cash market, replacing previous TIMS methodology
+- **2023:** System enhancements for expanded position limits for Hang Seng Index derivative product suites
+- **2024 (April):** HKEX announces in-house development of Orion Derivatives Platform (ODP) to replace HKATS; modular architecture supporting near-24-hour trading, expanded product range, industry-standard interfaces; targeted launch 2028
+- **2024 (December):** Fund Repository launched as part of the Integrated Fund Platform (IFP)
+- **2025:** System enhancements deployed for minimum spread reduction (Phase 1, August 5, 2025); systems readiness for potential T+1 settlement cycle by end of 2025
+- **2025 (July):** IFP Order Routing Service launched to streamline fund message transmission
+- **2025 (August):** Minimum spread reduction Phase 1 implemented for HK$10–50 price range
+
+### New Products / Segments
+- **2022 (July):** ETF Connect launched — ETFs included in Stock Connect programme
+- **2023 (May):** Swap Connect (Northbound) launched — world's first derivatives mutual market access
+- **2023 (March):** Chapter 18C listing regime introduced for specialist technology companies
+- **2023 (June):** HKD-RMB Dual Counter model launched, allowing select securities to trade in both HKD and RMB with Designated Specialists ensuring interchangeability
+- **2024:** Virtual asset-related products expanded; crypto ETFs approved for listing
+- **2025:** Record IPO year with HK$276.4 billion raised from 106 IPO listings; HKEX becomes global leader in IPO proceeds
+- **2025 (July):** Proposed launch of HKEX Issuer Access Platform (HKEX IAP) announced for 2026, to become primary communication channel between listed issuers and HKEX
+- **2025 (December):** Board Lot Framework Enhancements consultation published (reduce lot variations from 44+ to 8)
+
+### Regulatory Changes
+- **2023 (November):** Stamp duty reduced from 0.13% to 0.1% of trade value
+- **2024:** Enhanced Corporate Governance Code requirements; new diversity rules requiring elimination of single-gender boards
+- **2025 (January 1):** Single-gender board prohibition takes effect — all listed issuers must have at least one director of the opposite gender
+- **2025 (January 1):** New climate-related disclosure rules (aligned with ISSB/TCFD standards) take effect for listed companies
+- **2025 (January 1):** Bond Connect service fees reduced by 60%
+- **2025 (August 4):** Revised Main Board Listing Rule 8.08(1) implements tiered initial public float thresholds based on market value at listing
+- **2026 (planned):** Minimum spread reduction Phase 2 (HK$0.50–10 range) targeted for mid-2026
+
+### Strategic Initiatives
+- **Connect expansion:** Continuous enhancement of Stock Connect scope — including broader eligible stock universe, inclusion of REITs, expansion of block trading, and holiday trading arrangements
+- **MoU with CMU OmniClear (March 2025):** Collaboration to enhance Hong Kong's post-trade securities infrastructure, including cross-asset class efficiencies and development of an international central securities depository (ICSD) in Asia
+- **T+1 settlement readiness:** HKEX ensuring systems are technically ready for T+1 stock settlement cycle by end of 2025, though actual implementation timeline subject to market-wide coordination
+- **Orion Derivatives Platform (ODP):** Major strategic investment in proprietary derivatives trading platform; will enable near-24-hour trading, wider product range, VaR-based margining, and industry-standard interfaces
+- **Integrated Fund Platform (IFP):** Building a comprehensive fund distribution ecosystem from Fund Repository to Order Routing to full platform
+- **HKEX Issuer Access Platform (IAP):** Digital transformation of listed issuer regulatory communications, targeted 2026
+
+---
+
+## Sources
+
+[Source: HKEX Official Website, "About HKEX", https://www.hkex.com.hk, accessed 2026-04-06]
+
+[Source: HKEX, "Trading Mechanism", https://www.hkex.com.hk/Services/Trading/Securities/Overview/Trading-Mechanism?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "OTP-C System Overview", https://www.hkex.com.hk/Services/Trading/Securities/Infrastructure/Overview?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "HKEX Sets Launch Date for New Securities Trading System", https://www.hkex.com.hk/News/Market-Communications/2018/180123news?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Reduction of Minimum Spreads", https://www.hkex.com.hk/Services/Trading/Securities/Overview/Trading-Mechanism/Reduction-of-Minimum-Spreads?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Volatility Control Mechanism (VCM) FAQ", https://www.hkex.com.hk/Global/Exchange/FAQ/Securities-Market/Trading/VCM?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Stock Connect Explained", https://www.hkex.com.hk/Mutual-Market/Connect-Hub/Stock-Connect?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Connect Hub", https://www.hkex.com.hk/Mutual-Market/Connect-Hub?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Hosting Services", https://www.hkex.com.hk/Services/Connectivity/Hosting-Services?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "OMD-C Platform", https://www.hkex.com.hk/Services/Market-Data-Services/Infrastructure/HKEX-Orion-Market-Data-Platform-Securities-Market-OMD-C?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "HKEX in 2025: Year in Review", https://www.hkex.com.hk/News/News-Release/2025/251222news?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Board Lot Framework Enhancements Consultation Paper December 2025", https://www.hkex.com.hk/News/Market-Communications/2025/251218news?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Become a Participant", https://www.hkex.com.hk/Services/Become-a-Participant/Guide-to-Becoming-an-Exchange-Participant?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Pre-Trade Risk Management (PTRM) System in Derivatives Markets", https://www.hkex.com.hk/Services/Trading/Derivatives/Overview/Trading-Mechanism/Pre_Trade-Risk-Management-(PTRM)-System-in-Derivatives-Markets?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Introduction to Regulatory Framework", https://www.hkex.com.hk/Services/Rules-and-Forms-and-Fees/Regulatory-Framework/Introduction?sc_lang=en, accessed 2026-04-06]
+
+[Source: SFC, "Securities and Futures Commission of Hong Kong", https://www.sfc.hk/en/, accessed 2026-04-06]
+
+[Source: HKEX, "Orion Derivatives Platform (ODP)", https://www.hkex.com.hk/Services/Platform-Services/Orion-Derivatives-Platform?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Annual Market Statistics 2024", https://www.hkex.com.hk/Market-Data/Statistics/Consolidated-Reports/Annual-Market-Statistics?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "2025 Interim Results", https://www.hkex.com.hk/-/media/HKEX-Market/News/News-Release/2025/250820news/250820news_e.pdf, accessed 2026-04-06]
+
+[Source: Caproasia, "Hong Kong Exchange (HKEX) 2025 Review", https://www.caproasia.com/2025/12/23/hong-kong-exchange-hkex-2025-review/, accessed 2026-04-06]
+
+[Source: Wikipedia, "Hong Kong Exchanges and Clearing", https://en.wikipedia.org/wiki/Hong_Kong_Exchanges_and_Clearing, accessed 2026-04-06]
+
+[Source: Securities and Futures Ordinance (Cap. 571), https://www.elegislation.gov.hk/hk/cap571, accessed 2026-04-06]

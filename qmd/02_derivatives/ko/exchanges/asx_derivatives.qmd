@@ -1,0 +1,746 @@
+---
+title: "ASX Derivatives (호주증권거래소 파생상품)"
+subtitle: "파생상품 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-07
+> **조사 등급:** Tier 2
+> **분야:** 파생상품
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | ASX Limited — Derivatives Markets (ASX 24 및 ASX Trade 주식 옵션 운영) |
+| 약칭 | ASX Derivatives / ASX 24 |
+| 웹사이트 | https://www.asx.com.au/markets/trade-our-derivatives-market |
+| 설립연도 | 1960년 (Sydney Greasy Wool Futures Exchange, 전신); 1972년 Sydney Futures Exchange (SFE)로 개칭; 2006년 ASX Limited로 합병 |
+| 소재지 | 호주 / 시드니 (Exchange Centre, 20 Bridge Street, Sydney NSW 2000) |
+| 지배구조 | ASX Limited 소속, 자사 거래소에 상장된 상장회사 (티커: ASX); 개인 투자자 약 50%, 기관 투자자 약 49% |
+| 모회사 / 그룹 | ASX Limited (자체 상장 지주회사) |
+| 감독기관 | Australian Securities and Investments Commission (ASIC); 청산 및 결제 안정성에 대해서는 Reserve Bank of Australia (RBA) |
+| CEO (ASX Limited) | Helen Lofthouse (2022년 8월 취임) |
+| FY2025 영업수익 (ASX 그룹) | AUD 11억 720만 (전년 대비 +7.0%) |
+| FY2025 기본 순이익 (ASX 그룹) | AUD 5억 1,000만 (전년 대비 +7.5%) |
+| 파생상품 거래 플랫폼 | ASX 24 (금리, 주가지수, 상품, 에너지, 환경 상품의 선물 및 옵션); ASX Trade (주식 옵션 — Exchange Traded Options / ETOs) |
+| 청산기관 | ASX Clear (주식 옵션, 주식관련 파생상품); ASX Clear (Futures) (장내 선물, 장외 금리 파생상품) |
+| 상장 파생상품 종목 | 금리, 주가지수(SPI 200), 주식 옵션(약 70개 기초자산 주식 및 지수에 대한 ETO), 곡물, 에너지, 환경 상품의 선물 및 옵션 |
+| 연간 파생상품 거래량 (CY2025) | 금리 선물: 2025년 4분기 기록적 거래량 (전년 대비 +23%); 주식 파생상품: 월 약 1,360만 선물 및 옵션 (2025년 중반); OTC 청산: 2025년 4분기 A$2.19조 명목금액 |
+| OTC 금리 미결제약정 | A$4.124조 명목금액 (2025년 12월 말) |
+
+[Source: ASX Annual Report FY2025; ASX Rates Highlights Q4 2025; ASX Equity Derivatives Statistics; ASX website, "Trade our derivatives market"]
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **1960년:** Sydney Greasy Wool Futures Exchange 설립 — 호주 최초의 선물 거래소
+- **1972년:** Sydney Futures Exchange (SFE)로 개칭
+- **1979년:** SFE가 90-Day Bank Accepted Bill Futures를 출시 — 미국 외 지역에서 최초로 상장된 금융 선물 계약
+- **1980년:** SFE가 미국 달러 선물 도입 — 세계 최초로 현금결제를 도입한 선물 계약 중 하나
+- **1983년:** SFE가 All Ordinaries Share Price Index (SPI) 선물 계약 출시 — 미국 외 최초의 주가지수 선물 상품
+- **1989년:** SFE가 SYCOM (Sydney Computerised Overnight Market) 출시, 호주 거래소 최초의 시간외 전자거래 플랫폼
+- **1992년:** SFE가 3년 및 10년 호주 국채 선물 출시
+- **1998년:** SFE 주식회사 전환(비상호화) 및 ASX 상장
+- **1999년:** SFE가 완전 전자거래로 전환, 장내 공개호가 거래 폐지
+- **2000년:** SFE가 OM (현 Nasdaq) CLICK 거래 플랫폼 도입
+- **2005년:** SFE가 전력 및 환경 파생상품 거래 플랫폼 d-cypha Trade 출시
+- **2006년 (7월 7일):** ASX와 SFE가 합병하여 ASX Limited 형성, 수직 통합 다자산 거래소 그룹 창설; 호주경쟁소비자위원회(ACCC)가 2006년 5월 24일 합병 승인
+- **2010년:** ASX가 ASX Trade (Nasdaq OMX Genium INET 기반) 출시; 지연시간이 30밀리초에서 300마이크로초로 개선; 용량이 초당 20,000건에서 100,000건으로 확대
+- **2012년:** ASIC이 ASX 및 ASX 24의 직접 시장감독을 인수하여 ASX의 자율규제 역할 종료; Chi-X (현 Cboe Australia)가 경쟁 시장으로 출범
+- **2013년:** ASX가 시드니 Gore Hill에 Australian Liquidity Centre (ALC) 개설, 특수 목적 데이터센터 및 코로케이션 시설
+- **2014년:** ASX가 ASX Clear (Futures)를 통해 금리 파생상품 OTC 청산 개시
+- **2016년:** ASX가 ASX 24 New Trading Platform (NTP) 출시, 파생상품 거래 플랫폼 기술 업그레이드
+- **2025년 (7월):** ASX가 3년 국채 선물 호가단위 (최소가격변동폭)를 0.5bp로 재설정 (1bp에서); Bond-Roll De-Linking 시행으로 시장 미시구조 개선
+- **2025년 (4분기):** 기록적 금리 파생상품 거래량 — 2025년 4분기 전년 동기 대비 23% 증가
+- **2026년 (3월):** ASX와 LSEG가 ASX 24 거래 플랫폼 현대화 및 업그레이드 합의 발표; 2028년 상반기 가동 목표
+- **2026년 (4월):** CHESS Release 1 (청산 구성요소 교체) 2026년 4월 20일 가동 목표
+
+[Source: Wikipedia, "Australian Securities Exchange"; MarketsWiki, "Australian Securities Exchange"; ASX website, "ASX Story"; ACCC media release, May 2006; ASX press releases 2025-2026; FinanceFeeds, "ASX and LSEG Agree Technology Upgrade", March 2026; The TRADE, "ASX introduces high-speed trading platform", 2010]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 / 자산 유형 (Market Segments / Asset Classes)
+
+ASX Derivatives는 두 개의 주요 거래 플랫폼과 다수의 자산 유형으로 구성된다:
+
+| 플랫폼 | 자산 유형 | 상품 | 주요 계약 |
+|----------|-------------|----------|---------------|
+| **ASX 24** | 금리 — 단기 | 선물 및 옵션 | 30-Day Interbank Cash Rate (IB) Futures, 90-Day Bank Accepted Bill Futures |
+| **ASX 24** | 금리 — 채권 | 선물 및 옵션 | 3년, 5년, 10년, 20년 호주 국채 선물; Term Options; One Session Options |
+| **ASX 24** | 주가지수 | 선물 | ASX SPI 200 Futures, Mini SPI 200 Futures |
+| **ASX Trade** | 주식 옵션 (ETO) | 개별주식 및 지수 옵션 | 약 70개 기초자산 주식; ASX 200 Index Options |
+| **ASX 24** | 곡물 | 선물 및 옵션 | Eastern Australia Wheat, Eastern Australia Feed Barley, WA Wheat |
+| **ASX 24** | 에너지 | 선물 및 옵션 | Australian Electricity Base Load Futures (NSW, VIC, QLD, SA 노드); NZ Electricity Futures (Otahuhu, Benmore 노드); Australian Morning/Evening Peak Electricity Futures |
+| **ASX 24** | 환경 | 선물 | Australian Carbon Credit Unit (ACCU) Futures, NZ Emissions Unit (NZU) Futures, Large-scale Generation Certificate (LGC) Futures |
+| **ASX Clear (Futures)** | OTC 금리 | 청산 OTC 파생상품 | AUD 및 NZD 금리 스왑, 익일물 지수 스왑, 선도금리계약 |
+
+[Source: ASX website, "Trade our derivatives market"; ASX website, "Interest rate derivatives"; ASX website, "Grain derivatives"; ASX Energy website; ASX Environmental Futures fact sheet 2024]
+
+### 2.2 거래 세션 / 거래 시간 (Trading Sessions / Hours)
+
+**참고:** 호주 동부표준시(AEST)는 UTC+10; 호주 동부일광절약시(AEDT)는 UTC+11 (10월 첫째 일요일~4월 첫째 일요일). 아래 시간은 AEST/AEDT 기준이며 UTC도 병기한다.
+
+ASX 24는 주요 상품에 대해 거의 24시간 거래를 운영하며, 주간 및 야간 세션이 분리되어 있다.
+
+**금리 파생상품 (3Y, 10Y 국채 선물, 90-Day Bills, IB Futures)**
+
+| 세션 | 현지 시간 (AEST) | UTC (AEST 기간) | 설명 |
+|---------|-------------------|---------------------|-------------|
+| **야간 세션** | 5:10 PM – 7:00 AM +1 | 07:10 – 21:00 | 유럽 및 미국 시간대를 포괄하는 연장 거래 |
+| **주간 사전개장** | 8:28 AM – 8:30 AM | 22:28 – 22:30 | 주문 접수; 가격 발견 경매 |
+| **주간 세션** | 8:30 AM – 4:30 PM | 22:30 – 06:30 | 호주 영업시간에 맞춘 주요 거래 세션 |
+
+**ASX SPI 200 지수 선물**
+
+| 세션 | 현지 시간 (AEST) | UTC (AEST 기간) | 설명 |
+|---------|-------------------|---------------------|-------------|
+| **야간 세션** | 5:10 PM – 7:00 AM +1 | 07:10 – 21:00 | 연장 시간 (미국 비DST 기간: 8:00 AM까지) |
+| **주간 사전개장** | 9:50 AM | 23:50 | 사전개장 |
+| **주간 세션** | 9:50 AM – 4:30 PM | 23:50 – 06:30 | ASX 현물시장과 맞춘 주요 세션 |
+
+**주식 옵션 (ETO) — ASX Trade에서 거래**
+
+| 세션 | 현지 시간 (AEST) | UTC (AEST 기간) |
+|---------|-------------------|---------------------|
+| **사전개장** | 9:50 AM – 10:00 AM | 23:50 – 00:00 |
+| **거래** | 10:00 AM – 4:00 PM | 00:00 – 06:00 |
+| **거래후 조정** | 4:00 PM – 4:20 PM | 06:00 – 06:20 |
+
+**곡물 선물** — 주간 세션만, 일반적으로 AEST 10:00 AM – 3:00 PM [unverified]
+
+**에너지 및 환경 파생상품** — 상품별 상이; 전력 선물은 일반적으로 ASX 24 표준 세션을 따름
+
+[Source: ASX website, "Trading hours and calendars"; ASX website, "Index derivatives trading hours"; ASX website, "Interest rate derivatives trading hours"; SPI Futures website, "Contract Specifications"; ASX 24 Schedule Timings v1.02, October 2023]
+
+### 2.3 호가단위 (Tick Sizes, 주요 상품)
+
+| 상품 | 호가단위 (최소가격변동폭) | 틱 가치 (대략) |
+|---------|-----------|---------------------|
+| ASX SPI 200 Futures | 1 지수포인트 | A$25.00 |
+| Mini SPI 200 Futures | 1 지수포인트 | A$5.00 |
+| 3년 국채 선물 | 0.005% (0.5bp) — 2025년 7월 변경 | 약 A$14.19 (수익률에 따라 변동) |
+| 10년 국채 선물 | 0.005% (0.5bp); 만기 기간 중 0.002% | 약 A$30.90 (수익률에 따라 변동) |
+| 20년 국채 선물 | 0.005% (0.5bp) [unverified] | 수익률에 따라 변동 |
+| 30-Day Interbank Cash Rate (IB) Futures | 0.005% (0.5bp) | 약 A$12.33 |
+| 90-Day Bank Bill Futures | 0.01% (1bp) | 약 A$24.66 |
+| Eastern Australia Wheat Futures | A$0.50/톤 [unverified] | A$10.00 [unverified] |
+| NZ Electricity Futures (Base Load) | NZ$0.05/MWh | 분기 계약에 따라 변동 |
+
+**참고:** ASX 채권 선물의 경우 틱 가치는 일정하지 않다 — 계약이 100에서 수익률을 차감하는 방식으로 호가되므로 수익률 수준에 따라 달라진다. 위 값은 대략적 중간 범위 추정치이다.
+
+[Source: ASX 24 Contract Specifications document; ASX 3 Year Treasury Bond Futures tick change notice (May 2025); ASX NZ Electricity Derivatives fact sheet; SPI Futures website]
+
+### 2.4 로트 단위 / 계약 단위 (Lot Sizes / Contract Units)
+
+| 상품 | 계약 단위 |
+|---------|--------------|
+| ASX SPI 200 Futures | A$25 x S&P/ASX 200 Index |
+| Mini SPI 200 Futures | A$5 x S&P/ASX 200 Index |
+| 3년 국채 선물 | 호주 국채 액면가 A$100,000 |
+| 10년 국채 선물 | 호주 국채 액면가 A$100,000 |
+| 20년 국채 선물 | 호주 국채 액면가 A$100,000 |
+| 30-Day Interbank Cash Rate Futures | 액면가 A$3,000,000 [unverified] |
+| 90-Day Bank Bill Futures | 액면가 A$1,000,000 |
+| Eastern Australia Wheat Futures | 20미터톤 |
+| NZ Electricity Futures (Base Load) | 거래 기간당 0.1 MW (= 일 2.4 MWh; 92일 분기 계약 약 220.8 MWh) |
+| Australian Electricity Base Load Futures | 거래 기간당 1 MW [unverified] |
+| ACCU Futures | 1,000 Australian Carbon Credit Units |
+
+[Source: ASX 24 Contract Specifications; ASX 3 and 10 Year Treasury Bond Futures factsheet; ASX NZ Electricity fact sheet; ASX Grains contract specifications]
+
+### 2.5 시장조성자 / 유동성 공급자 프로그램 (Market Maker / Liquidity Provider Programs)
+
+**ETO (주식 옵션) 시장조성자 (마켓메이커) 제도:**
+
+- ASX는 시장조성자 (마켓메이커)에게 하나 이상의 종목(기초증권)에 대한 특정 물량 및 스프레드 의무를 부과하는 계약을 체결
+- 시장조성자 (마켓메이커)는 최소 1년 이상의 만기에 걸쳐 지정 시리즈 수에 대해 매수 및 매도 가격을 제시해야 한다
+- 최소 계약 수량은 기초증권의 유동성, 변동성, 과거 옵션 거래량에 따라 ASX가 설정
+- 시장조성자 (마켓메이커)는 다른 참가자의 호가 요청에 응답해야 한다
+- 수수료 환급 및 인센티브 구조 적용
+
+**ASX 24 파생상품 시장조성 (마켓메이킹):**
+
+- 주요 금리 및 주가지수 상품에 시장조성자 (마켓메이커) 프로그램 운영
+- Designated Market Makers (DMM)는 스프레드 및 규모 요건을 충족하는 연속적 양방향 호가 제시 의무
+- 금리 선물, SPI 200 선물, 일부 상품 파생상품을 대상으로 함
+- 수수료 할인 및 거래량 기반 인센티브 적용 [unverified]
+
+[Source: ASX ETO Market Maker Scheme document; ASX website, "Equity options market trading"]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 경매 방식 (Auction Mechanisms)
+
+**개장 경매 (ASX 24):**
+- 사전개장 단계에서 주문 접수 및 수정 허용
+- 세션 개시 시 누적된 주문이 단일 균형 가격으로 체결
+- 알고리즘은 균형 가격에서 체결 물량을 극대화
+- 주간 및 야간 세션에 대해 별도 개장 경매 실시
+
+**개장 경매 (ASX Trade — ETO):**
+- AEST 9:50 AM~10:00 AM 사전개장
+- 주문 접수 및 수정은 가능하나 체결되지 않음
+- AEST 10:00 AM에 균형 알고리즘으로 시가 결정
+
+**마감 / 정산 (ASX 24):**
+- 일일 정산가격은 정의된 정산 시간대의 거래 활동을 기반으로 결정
+- 채권 선물: 소수점 4자리로 산출된 거래 가격의 가중평균, 3자리로 반올림
+- SPI 200: ASX 200 종가 지수 수준을 참조한 공정가치 산출 기반 일일 정산
+
+### 3.2 접속매매 (연속 거래, Continuous Trading)
+
+- ASX 24: 주간 및 야간 세션 모두에서 연속 전자 주문 체결
+- 단순 주문 및 스프레드 전략(캘린더 스프레드, 상품간 스프레드) 지원
+- 야간 세션이 거의 24시간 거래를 제공; 호주 영업시간 외에는 유동성이 통상 얇음
+- ASX Trade ETO: AEST 10:00 AM~4:00 PM 연속 체결
+
+### 3.3 가격 발견 (Price Discovery)
+
+- ASX 3년 및 10년 국채 선물은 전 세계에서 가장 유동적이고 활발히 거래되는 금리 선물에 속하는 벤치마크 파생상품이다
+- SPI 200 선물은 연장 야간 세션 동안 호주 주식시장의 야간 가격 발견을 제공한다
+- 30-Day Interbank Cash Rate Futures는 Reserve Bank of Australia (RBA) 기준금리 기대치를 가격화하는 주요 시장 수단이다
+- OTC 금리 청산이 AUD/NZD 금리 시장의 가격 투명성을 제고한다
+
+### 3.4 주문 우선순위 규칙 / 체결 알고리즘 (Order Priority Rules / Matching Algorithms)
+
+| 알고리즘 | 설명 | 적용 |
+|-----------|-------------|-------------|
+| **가격-시간 우선 (FIFO)** | 엄격한 가격 우선, 이후 각 가격 수준에서 시간 우선 | 모든 ASX 24 선물의 기본 |
+| **비례배분 (Pro-Rata)** | 각 가격 수준에서 주문 규모에 비례한 배분 | 일부 옵션 상품 [unverified] |
+| **가격-시간 우선** | 표준 FIFO 체결 | ASX Trade ETO |
+
+**주요 규칙:**
+- 가격 우선은 절대적 — 더 유리한 가격의 주문이 항상 먼저 체결
+- 동일 가격 내에서 시간 우선이 배분을 결정 (FIFO)
+- Self-Trade Prevention (STP) 기능 이용 가능
+- 개장 루틴 중에는 주문이 단일 균형 가격으로 체결
+
+[Source: ASX 24 Operating Rules Section 4 (February 2026); ASX 24 Trading Platform Guide v1.05 (April 2018); ASX website, "ETO crossing on ASX Trade"]
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 표준 주문 유형 (Standard Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| **지정가** | 지정 가격 또는 그보다 유리한 가격으로 매수/매도; 미체결 수량은 호가창에 잔류. ASX 24의 기본 주문 유형 |
+| **시장가** | 최우선 가격에서 즉시 체결 [ASX Trade ETO] |
+| **Market to Limit** | 최우선 가격에서 체결; 미체결 수량은 마지막 체결 가격의 지정가 주문으로 전환 [ASX Trade ETO] |
+
+**참고:** ASX 24 Operating Rules는 ASX 24 Trading Platform에서 지정 가격의 개별 지정가 주문만 접수, 수정 또는 취소할 수 있다고 규정한다. 시장가 주문은 ASX 24에서 기본 지원되지 않으며 — 참가자는 공격적으로 가격을 설정한 지정가 주문으로 시장가 유사 체결을 달성한다.
+
+### 4.2 고급 주문 유형 (Advanced Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| **스프레드 주문** | 캘린더 스프레드 및 상품간 스프레드 전략; 내포 스프레드 가격으로 단일 주문 제출 |
+| **Stop Limit** | 스톱 가격 도달 시 발동; 지정가 주문으로 전환 [ASX 24에서 unverified] |
+| **Fill and Kill (FAK)** | 이용 가능한 수량에 대해 즉시 체결; 미체결 수량 취소 |
+| **Fill or Kill (FOK)** | 전량 즉시 체결 필수, 그렇지 않으면 전량 취소 |
+| **Mass Quote** | 시장조성자 (마켓메이커)가 단일 메시지로 다수의 양방향 호가 제출 가능 |
+| **Custom Market Orders** | 사전 협상된 장외 거래를 시스템을 통해 보고 |
+
+### 4.3 주문 유효조건 (Time-in-Force, TIF)
+
+| TIF | 설명 |
+|-----|-------------|
+| **Day / Good for Session** | 현재 거래 세션에만 유효; 세션 종료 시 취소 |
+| **Good Till Cancel (GTC)** | 체결 또는 명시적 취소 시까지 유효 |
+| **Good Till Date (GTD)** | 지정된 날짜까지 유효 |
+| **Good Till Expiry (GTE)** | 해당 종목의 만기일까지 유효 |
+| **Fill and Kill (FAK)** | 즉시 체결; 미체결 수량 취소 |
+| **Fill or Kill (FOK)** | 즉시 전량 체결 또는 취소 |
+
+### 4.4 주문 수정 / 취소 (Order Modification / Cancellation)
+
+- 활성 거래 세션 중 주문 수정(가격, 수량) 또는 취소 가능
+- 가격 수정 시 시간 우선순위 상실; 수량 감소 시 유지
+- 유효조건에 따라 주문이 자동 삭제
+- ASX 24는 대량 취소 기능을 지원
+
+[Source: ASX 24 Operating Rules Section 4 (February 2026); ASX 24 Trading Platform Guide v1.05 (April 2018); ASX Trade New Order Types document; ASX Operating Rules Procedures (October 2025)]
+
+---
+
+## 5. 매매시스템 / 기술 (Trading System / Technology)
+
+### 5.1 현행 플랫폼 — ASX 24 (파생상품)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 플랫폼 명칭 | ASX 24 Trading Platform (New Trading Platform — NTP) |
+| 기술 기반 | 독자 플랫폼; 원래 Nasdaq OMX 기술 요소에 기반; 2016년 업그레이드 (NTP) |
+| 지연시간 | 약 300마이크로초 (2010년 ASX Trade 출시 기준); 현재 ASX 24 지연시간 수치 비공개이나 서브밀리초 범위 [unverified] |
+| 처리 용량 | 초당 최대 100,000건 (2010년 ASX Trade 벤치마크); ASX 24도 유사 수준 [unverified] |
+| 프로토콜 지원 | FIX 5.0 (주문 라우팅), ITCH (시장 데이터), OUCH (주문 접수), OMNet C++ API (Open Interface) |
+| 배치 | Australian Liquidity Centre (ALC), 시드니 Gore Hill 호스팅 |
+| 이중화 | 페일오버 기능을 갖춘 액티브-액티브 구성 [unverified] |
+
+### 5.2 ASX Trade (주식 옵션)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 플랫폼 명칭 | ASX Trade (통합 주식 및 주식 옵션 플랫폼) |
+| 기술 기반 | Nasdaq OMX Genium INET |
+| 출시 | 2010년 |
+| 성능 | 지연시간이 30ms (레거시 SEATS/ITS)에서 300마이크로초로 개선; 용량이 초당 20,000건에서 100,000건으로 확대 |
+| 매매체결엔진 | TradeMatch (조명시장), CentrePoint (다크풀 — 주식만) |
+| 프로토콜 지원 | ITCH (시장 데이터), OUCH (주문 접수), FIX (주문 라우팅), OMNet C++ API |
+
+### 5.3 예정된 업그레이드 — LSEG 파트너십 (2026년 3월 발표)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 발표 | 2026년 3월 |
+| 기술 제공자 | LSEG Markets Technology |
+| 범위 | ASX 24 파생상품 거래 플랫폼의 전면 현대화 |
+| 가동 목표 | 2028년 상반기 |
+| 주요 목표 | 성능, 시스템 회복력, 운영 신뢰성, 성장 역량 개선 |
+| 2026년 활동 | 플랫폼 설계, 테스트, 이관 계획, 참가자 준비 작업 |
+| 2027년 활동 | 테스트, 이관, 참가자 온보딩 |
+
+[Source: The TRADE, "ASX introduces high-speed trading platform"; Nasdaq press release, "ASX Launches Next Generation Trading Platform Powered by NASDAQ OMX's Genium INET"; LSEG press release, "LSEG and ASX partner to modernise derivatives market trading platform", March 2026; FinanceFeeds, "ASX and LSEG Agree Technology Upgrade"; ASX 24 Trading Platform Guide v1.05]
+
+---
+
+## 6. 시장 데이터 (Market Data)
+
+### 6.1 피드 프로토콜 (Feed Protocols)
+
+| 프로토콜 | 유형 | 설명 |
+|----------|------|-------------|
+| **ASX ITCH** | 시장 데이터 | 초저지연 바이너리 프로토콜; MoldUDP64 전송; 나노초 타임스탬프; 전체 호가창 심도 제공 |
+| **Glimpse** | 시장 데이터 스냅샷 | 호가창 현재 상태를 제공하는 지점간 연결; ITCH와 동일한 메시지 형식 사용 |
+| **FIX** | 시장 데이터 (표준) | 산업 표준 FIX 프로토콜; ITCH보다 높은 지연시간 |
+| **OUCH** | 주문 접수 | 저지연 바이너리 주문 접수 프로토콜 |
+| **FIX 5.0** | 주문 라우팅 | 주문 관리를 위한 산업 표준 프로토콜 |
+
+### 6.2 데이터 수준 (Data Levels)
+
+| 수준 | 내용 |
+|-------|---------|
+| **Level 1** | 최우선 매수/매도호가, 최종 거래 가격, 거래량 |
+| **Level 2** | 개별 주문이 포함된 전체 호가창 심도; ITCH를 통해 이용 가능 |
+| **거래** | 가격, 거래량, 시간이 포함된 거래 보고서 |
+| **지수 데이터** | S&P/ASX 200 및 관련 지수 값 |
+
+### 6.3 데이터 배포 (Data Distribution)
+
+- **직접 연결** — ALC에서 최저지연으로
+- **ASX Net** — ALC를 외부 사이트에 연결하는 ASX의 고성능 광섬유 네트워크
+- **정보 벤더** — 100개 이상의 인가 데이터 벤더가 ASX 데이터를 전 세계에 배포 (ASX Information Vendors Guide, 2025년 11월 기준)
+- **MarketSource** — ASX의 시장 데이터 배포 플랫폼
+
+[Source: ASX Trade ITCH Specification (September 2025); ASX website, "Real time data"; ASX website, "How to access ASX Price data"; ASX Information Vendors Guide (November 2025); Trading Technologies, "ASX Overview"]
+
+---
+
+## 7. 연결성 및 접근 (Connectivity & Access)
+
+### 7.1 회원 / 참가 (Membership / Participation)
+
+| 유형 | 설명 |
+|----------|-------------|
+| **ASX 24 Trading Participant** | ASX 24에서 거래할 수 있는 라이선스 보유; 호주금융서비스면허(AFSL) 보유 또는 면제 필요 |
+| **ASX Trading Participant** | ASX Trade에서 주식 및 주식 옵션을 거래할 수 있는 라이선스 보유 |
+| **ASX Clear Participant** | 현물 주식 및 주식 옵션(ASX Clear)의 청산 참가자 |
+| **ASX Clear (Futures) Participant** | 선물 및 OTC 파생상품의 청산 참가자; 자본 및 리스크 관리 요건 적용 |
+| **해외 참가자** | ASIC Market Integrity Rules에 따른 호주 내 최소 현지 요건 충족 필요 |
+
+### 7.2 연결 방식 (Connection Methods)
+
+| 방식 | 설명 |
+|--------|-------------|
+| **ALC 코로케이션** | ASX Trade 및 ASX 24에 최저지연 접속을 위한 Australian Liquidity Centre 내 직접 랙 공간 |
+| **ASX Net** | 고객 사업장을 ALC에 연결하는 ASX 전용 고성능 광섬유 네트워크 |
+| **크로스커넥트** | ALC 내 거래상대방, 벤더, 서비스 제공자와의 지점간 연결 |
+| **통신사 중립 접근** | ALC는 통신사 중립; 고객이 선호하는 통신 제공자로 연결 가능 |
+| **제3자 ISV 플랫폼** | 독립 소프트웨어 벤더(예: Trading Technologies, ION, Fidessa)가 거래 접근 제공 |
+
+### 7.3 Australian Liquidity Centre (ALC)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 위치 | 시드니 NSW Gore Hill Technology Park |
+| 목적 | 호주 금융시장을 위해 특수 목적으로 건설된 데이터센터 및 코로케이션 시설 |
+| 입주자 | 100개 이상의 금융기관 및 서비스 제공자 — 국제 투자은행, 호주 브로커, 시장조성자 (마켓메이커), 자기매매회사, 데이터 벤더, 소프트웨어 벤더, 주요 통신사 포함 |
+| 접근 지점 | ASX Trade (주식), ASX TradeMatch, ASX CentrePoint, ASX 24 (파생상품) |
+| 인프라 파트너 | Beeks Group (코로케이션 인프라 파트너) |
+| IaaS | ASX가 ALC에 호스팅되는 Infrastructure-as-a-Service (IaaS) 제공 |
+
+[Source: ASX website, "Australian Liquidity Centre (ALC)"; ASX ALC Connectivity Guide; Beeks Group, "ASX Australian Liquidity Centre"; ASX website, "Connectivity services"; Trading Technologies, "ASX Overview"; DataCenterDynamics, "ASX launches IaaS hosted in ALC"]
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (Risk Controls & Circuit Breakers)
+
+### 8.1 ASX의 서킷브레이커 (매매거래중단) 접근방식
+
+ASX는 일부 해외 거래소(예: NYSE, KRX)와 같은 시장 전체 서킷브레이커 (매매거래중단)를 사용하지 않는다. 대신 ASX는 다음의 조합을 사용한다:
+
+- **Anomalous Order Thresholds (AOTs):** 2분 VWAP에서 매분 갱신되는 기준가격; 기준가격에서 10% 이상 벗어나는 공격적 주문을 방지
+- **Extreme Trade Range (ETR):** 종목별 고유; 가격이 ETR 임계치를 넘어 이동하면 2분간 거래 일시정지 발동
+- 이러한 메커니즘은 주로 ASX Trade (주식/ETO) 플랫폼에 적용
+
+### 8.2 사전거래 리스크 관리 (Pre-Trade Risk Controls)
+
+| 관리 항목 | 설명 |
+|---------|-------------|
+| **사전거래 리스크 관리 (PTRM) 소프트웨어** | ASX 24 Trading Platform의 일부로 제공; 리스크 관리의 2차 계층으로 기능 |
+| **참가자 의무** | 참가자는 ASX PTRM 외에 자체 독립 리스크 관리 시스템을 보유해야 한다 |
+| **주문 수량 한도** | 참가자별 설정 가능한 최대 주문 수량 및 가치 한도 |
+| **가격밴드** | 기준가격에서 정의된 가격대를 벗어나는 주문 거부 |
+| **Kill Switch** | 참가자 및 청산회원이 특정 계좌 또는 세션의 모든 잔류 주문을 취소할 수 있는 기능 [unverified] |
+
+### 8.3 장중 증거금 발동 (Intraday Margin Triggers)
+
+- ASX Clear (Futures)는 다음 경우 임시 장중 증거금 산출을 실행한다:
+  - 개별 계약의 가격 변동이 증거금률의 100%를 초과하거나,
+  - ASX SPI 200 지수 가격이 장중 1% 이상 변동하는 경우
+- 포지션이 정의된 임계치를 넘어 악화된 참가자에게 장중 마진콜 발행
+
+### 8.4 시장 변동성 조치 (Market Volatility Measures)
+
+- ASX는 필요시 개별 증권 또는 파생상품에 대한 거래 중단을 부과할 수 있다
+- 시장운영자는 바람직하지 않은 시장 상황의 발생 또는 방지를 위해 참가자에게 특정 방식으로 거래하도록 지시할 재량권을 보유
+- 시장 전체 스트레스 이벤트에 대해 ASIC과 협력
+
+[Source: ASX website, "An Australian perspective on circuit breakers and market quality"; ASX website, "Market volatility FAQs"; ASXOnline Notice 0738.19.07, "Market Operator Software — Pre-Trade Risk Management Software Use"; RBA Assessment of ASX Clear (Futures), Standard 6: Margin]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 주요 감독기관 (Primary Regulators)
+
+| 감독기관 | 역할 |
+|-----------|------|
+| **Australian Securities and Investments Commission (ASIC)** | 주요 시장 감독기관; 모든 호주 증권 및 선물 시장에 대한 시장건전성규칙(MIR) 설정 및 집행 |
+| **Reserve Bank of Australia (RBA)** | 금융 안정을 위해 청산 및 결제 시설(ASX Clear, ASX Clear (Futures), ASX Settlement, Austraclear) 감독 |
+| **ASX (시장운영자)** | 시장 운영; ASX Operating Rules 및 ASX 24 Operating Rules 집행; 거래 행위 모니터링 (ASIC 감독 하) |
+
+### 9.2 주요 법규 및 규칙 (Key Regulations and Rules)
+
+| 법규 | 설명 |
+|------------|-------------|
+| **Corporations Act 2001 (Cth)** | 금융시장, 호주금융서비스면허(AFSL), 시장 인프라를 규율하는 주요 법률 |
+| **ASIC Market Integrity Rules (Futures Markets) 2017** | ASX 24 및 FEX의 거래 행위를 규율하는 규칙; 사전거래 리스크, 주문 처리, 시세조종 거래, 최선집행 포괄 |
+| **ASIC Market Integrity Rules (Capital) 2021** | 증권 및 선물시장 참가자의 자본 및 보고 요건; 2022년 6월 17일 시행 |
+| **ASIC Market Integrity Rules (Securities Markets and Futures Markets) Amendment 2022/74** | 기술 및 운영 회복력 규칙; 2023년 3월 10일 시행; 기술 리스크 관리에 대한 최소 기대치 설정 |
+| **ASIC CS Services Rules 2025** | 현물 주식 청산, 결제, 발행인 서비스를 규율하는 신규 규칙; 수익 상한 메커니즘 포함 |
+| **ASX 24 Operating Rules** | ASX 24 거래를 규율하는 거래소 수준 규칙; 주문 유형, 거래 세션, 교차거래, 포지션 보고, 시장조성자 (마켓메이커) 의무 포괄 |
+| **ASX Clear (Futures) Operating Rules** | 선물 및 OTC 파생상품의 청산 및 리스크 관리를 규율하는 규칙 |
+| **RG 265 / RG 266** | 증권시장 참가자(RG 265) 및 선물시장 참가자(RG 266)에 대한 MIR 가이던스를 제공하는 ASIC 규제 가이드 |
+
+[Source: ASIC website, "Market integrity rules"; ASIC RG 266; The TRADE, "ASIC issues market integrity rules for ASX 24"; FIA, "Australia's ASIC consolidates market integrity rules"; RBA media release, September 2025; ASIC media release 26-059MR, March 2026]
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 11.1 CHESS 교체 프로젝트
+
+CHESS (Clearing House Electronic Subregister System) 교체는 ASX의 가장 중대한 기술 전환이다:
+
+| 연혁 | 세부사항 |
+|-----------|---------|
+| **원래 접근방식** | Digital Asset의 DAML 플랫폼을 사용한 DLT 기반 교체; 2015년 발표 |
+| **2022년 11월** | 비용 초과 및 지연으로 DLT 접근방식 포기; A$2.5억 상각 |
+| **2023-2024** | 기존 기술(DLT 아닌)을 사용한 재설계 착수 |
+| **2단계 인도** | Release 1 (청산 교체, FIX 메시징) 및 Release 2 (결제 및 서브레지스터) |
+| **Release 1 범위** | CHESS의 청산 구성요소 교체; 거래 등록을 위한 FIX 메시징 도입 |
+| **Release 1 가동 목표** | 2026년 4월 20일 |
+| **Release 2 목표** | 2029년 (결제 및 서브레지스터 기능) |
+
+### 11.2 ASX 24 플랫폼 현대화 (LSEG 파트너십)
+
+- **2026년 3월:** ASX와 LSEG가 ASX 24 파생상품 거래 플랫폼 현대화 및 업그레이드 합의 발표
+- LSEG Markets Technology가 속도, 회복력, 용량에 최적화된 고성능, 저지연 플랫폼 제공
+- 2026-2027년에 걸쳐 협력적 설계 및 테스트
+- 가동 목표: 2028년 상반기
+- 현행 ASX 24 NTP (2016년 출시) 대체 예정
+
+### 11.3 시장 미시구조 개선 (2025)
+
+- **3년 국채 선물 틱 변경 (2025년 7월):** 최소 틱을 0.5bp로 재설정(1bp에서), 가격 세분성 개선 및 스프레드 축소
+- **Bond-Roll De-Linking:** 3Y 및 10Y 국채 선물 롤 프로세스의 구조적 변경으로 롤 체결 개선 및 시장 영향 감소
+- 이러한 변화가 2025년 4분기 기록적 금리 파생상품 거래량에 기여
+
+### 11.4 기록적 거래량 (2025)
+
+- 2025년 4분기 금리 파생상품 거래량이 2025년 3분기 대비 14%, 2024년 4분기 대비 23% 증가
+- 2025년 10월과 11월은 금리 선물의 비롤 월 기준 역대 2위 및 3위
+- 3년(YT) 롤 활동: 2025년 4분기 130.9만 계약 (전분기 대비 +13%)
+- 10년(XT) 롤 활동: 2025년 4분기 192.1만 계약 (전분기 대비 -16%)
+- OTC 청산: 2025년 4분기 A$2.19조 명목금액; 2025년 12월 말 미결제약정 A$4.124조
+- 2025년 4월은 관세 관련 거시경제 변동성에 힘입어 금리 선물 활동의 단일 월 최고치
+
+### 11.5 환경 파생상품 확장
+
+- ASX는 환경 선물 라인업을 지속 확장: ACCU Futures, NZU Futures, LGC Futures
+- 관련 환경 레지스트리의 ASX Clear (Futures) 계좌를 통한 환경 인증서 실물 인수도
+- 호주의 탈탄소화 전환 및 규제준수 시장을 지원
+
+[Source: ASX website, "CHESS Project"; WatersTechnology, "ASX CHESS replacement to be delivered in phases"; LSEG press release, March 2026; ASX Rates Highlights Q4 2025; ASX 3 Year Bond Futures tick change notice; ASX Environmental Futures fact sheet]
+
+---
+
+## 파생상품 전용 항목 (Derivatives-Specific Items)
+
+### D.1 상품 목록 (Product Catalog)
+
+**금리 파생상품 (ASX 24):**
+
+| 상품 | 유형 | 기초자산 |
+|---------|------|------------|
+| 30-Day Interbank Cash Rate (IB) Futures | 선물 | RBA 은행간 익일물 기준금리 (월평균) |
+| 30-Day Interbank Cash Rate Options | 옵션 | IB Futures |
+| 90-Day Bank Accepted Bill Futures | 선물 | 90일 은행인수어음 금리 |
+| 90-Day Bank Bill Options | 옵션 | 90일 은행어음 선물 |
+| 3년 국채 선물 | 선물 | 호주 국채 바스켓 (3년 만기) |
+| 3년 국채 옵션 (Term & One Session) | 옵션 | 3년 국채 선물 |
+| 5년 국채 선물 | 선물 | 호주 국채 바스켓 (5년 만기) |
+| 10년 국채 선물 | 선물 | 호주 국채 바스켓 (10년 만기) |
+| 10년 국채 옵션 (Term & One Session) | 옵션 | 10년 국채 선물 |
+| 20년 국채 선물 | 선물 | 호주 국채 바스켓 (20년 만기) |
+
+**주식 파생상품:**
+
+| 상품 | 유형 | 플랫폼 |
+|---------|------|----------|
+| ASX SPI 200 Futures | 선물 | ASX 24 |
+| Mini SPI 200 Futures | 선물 | ASX 24 |
+| SPI 200 Options | 옵션 | ASX 24 |
+| Exchange Traded Options (ETO) | 약 70개 기초자산 주식 옵션 | ASX Trade |
+| ASX 200 Index Options | 지수 옵션 | ASX Trade |
+
+**상품 — 곡물 (ASX 24):**
+
+| 상품 | 유형 | 결제 방식 |
+|---------|------|------------|
+| Eastern Australia Wheat Futures | 선물 | 실물 인수도 |
+| Eastern Australia Wheat Options | 옵션 | 행사 시 선물로 전환 |
+| Eastern Australia Feed Barley Futures | 선물 | 실물 인수도 |
+| WA Wheat Futures | 선물 | 실물 인수도 |
+
+**에너지 (ASX 24):**
+
+| 상품 | 유형 | 결제 방식 |
+|---------|------|------------|
+| AU Base Load Electricity Futures (NSW, VIC, QLD, SA) | 선물 | 현금결제 (CFD) |
+| AU Morning/Evening Peak Electricity Futures | 선물 | 현금결제 |
+| NZ Electricity Futures (Otahuhu, Benmore) | 선물 | 현금결제 (CFD) |
+| NZ Electricity Options | 옵션 | 행사 시 선물로 전환 |
+
+**환경 (ASX 24):**
+
+| 상품 | 유형 | 결제 방식 |
+|---------|------|------------|
+| Australian Carbon Credit Unit (ACCU) Futures | 선물 | 실물 인수도 (레지스트리 이전) |
+| NZ Emissions Unit (NZU) Futures | 선물 | 실물 인수도 (레지스트리 이전) |
+| Large-scale Generation Certificate (LGC) Futures | 선물 | 실물 인수도 (레지스트리 이전) |
+
+**OTC 청산 상품 (ASX Clear (Futures)):**
+
+| 상품 | 유형 |
+|---------|------|
+| AUD 금리 스왑 | OTC (청산) |
+| NZD 금리 스왑 | OTC (청산) |
+| Overnight Index Swaps (OIS) | OTC (청산) |
+| Forward Rate Agreements (FRA) | OTC (청산) |
+
+[Source: ASX website, "Trade our derivatives market" — all sub-pages; ASX 24 Contract Specifications; ASX Energy website; ASX Environmental Futures fact sheet]
+
+### D.2 주요 계약 명세 (Key Contract Specifications, 거래량 상위 5개)
+
+#### 1. 3년 국채 선물 (YT)
+
+| 명세 | 세부사항 |
+|---------------|---------|
+| 계약 단위 | 호주 국채 액면가 A$100,000 |
+| 가격 표시 | 100 - 연간 수익률(%) |
+| 호가단위 (최소가격변동폭) | 0.005% (0.5bp) — 2025년 7월 시행 |
+| 틱 가치 | 약 A$14.19 (수익률 수준에 따라 변동) |
+| 계약월 | 3월, 6월, 9월, 12월 (최근 2개 분기) |
+| 결제 | 실물 국채 바스켓의 평균가격에 대한 현금결제 |
+| 최종 거래일 | 계약월 15일 (또는 다음 영업일) |
+| 거래 시간 | 야간: 5:10 PM – 7:00 AM +1; 주간: 8:30 AM – 4:30 PM AEST |
+
+#### 2. 10년 국채 선물 (XT)
+
+| 명세 | 세부사항 |
+|---------------|---------|
+| 계약 단위 | 호주 국채 액면가 A$100,000 |
+| 가격 표시 | 100 - 연간 수익률(%) |
+| 호가단위 (최소가격변동폭) | 0.005% (0.5bp); 만기 기간 중 0.002% (만기월 8일 5:12 PM~최종 거래일 4:30 PM) |
+| 틱 가치 | 약 A$30.90 (수익률 수준에 따라 변동) |
+| 계약월 | 3월, 6월, 9월, 12월 (최근 2개 분기) |
+| 결제 | 실물 국채 바스켓의 평균가격에 대한 현금결제 |
+| 최종 거래일 | 계약월 15일 (또는 다음 영업일) |
+| 거래 시간 | 야간: 5:10 PM – 7:00 AM +1; 주간: 8:30 AM – 4:30 PM AEST |
+
+#### 3. 90-Day Bank Accepted Bill Futures (IR)
+
+| 명세 | 세부사항 |
+|---------------|---------|
+| 계약 단위 | 액면가 A$1,000,000 |
+| 가격 표시 | 100 - 연간 수익률(%) |
+| 호가단위 (최소가격변동폭) | 0.01% (1bp) |
+| 틱 가치 | 약 A$24.66 |
+| 계약월 | 3월, 6월, 9월, 12월 (최대 5년 선행) [unverified] |
+| 결제 | 현금결제 |
+| 최종 거래일 | 계약월 둘째 금요일 [unverified] |
+| 거래 시간 | 야간: 5:10 PM – 7:00 AM +1; 주간: 8:30 AM – 4:30 PM AEST |
+
+#### 4. ASX SPI 200 Futures (AP)
+
+| 명세 | 세부사항 |
+|---------------|---------|
+| 계약 단위 | A$25 x S&P/ASX 200 Index |
+| 가격 표시 | 지수포인트 |
+| 호가단위 (최소가격변동폭) | 1 지수포인트 |
+| 틱 가치 | A$25.00 |
+| 계약월 | 3월, 6월, 9월, 12월 |
+| 결제 | 최종 거래일 S&P/ASX 200 Index의 Special Opening Quotation에 대한 현금결제 |
+| 최종 거래일 | 계약월 셋째 목요일; AEST 12:00 PM에 거래 종료 |
+| 거래 시간 | 야간: 5:10 PM – 7:00 AM +1 (미국 비DST 기간 8:00 AM까지); 주간: 9:50 AM – 4:30 PM AEST |
+
+#### 5. 30-Day Interbank Cash Rate Futures (IB)
+
+| 명세 | 세부사항 |
+|---------------|---------|
+| 계약 단위 | 액면가 A$3,000,000 [unverified] |
+| 가격 표시 | 100 - 연간 RBA 기준금리(%) |
+| 호가단위 (최소가격변동폭) | 0.005% (0.5bp) |
+| 틱 가치 | 약 A$12.33 |
+| 계약월 | 월물 (최대 18개월 선행) [unverified] |
+| 결제 | RBA가 발표한 은행간 익일물 기준금리의 월평균에 대한 현금결제 |
+| 최종 거래일 | 계약월 마지막 영업일 |
+| 거래 시간 | 야간: 5:10 PM – 7:00 AM +1; 주간: 8:30 AM – 4:30 PM AEST |
+
+[Source: ASX 24 Contract Specifications; ASX 3 and 10 Year Treasury Bond Futures factsheet; SPI Futures website, "Contract Specifications"; ASX 30-Day Interbank Cash Rate Futures factsheet; ASX 3 Year Bond Futures tick change notice (May 2025)]
+
+### D.3 증거금 체계 (Margin Framework)
+
+**청산기관:**
+- **ASX Clear:** 주식 옵션(ETO) 및 주식관련 파생상품 청산
+- **ASX Clear (Futures):** 모든 ASX 24 장내 선물 및 옵션, 그리고 OTC 금리 파생상품 청산
+
+**개시증거금 방법론 — ASX Clear (Futures): CME SPAN**
+
+| 항목 | 세부사항 |
+|------|---------|
+| 방법론 | CME SPAN (Standard Portfolio Analysis of Risk) |
+| 접근방식 | 결합 상품(상품별로 그룹화된 파생상품 포트폴리오)의 최대 잠재 손실을 산출하는 리스크 기반 포트폴리오 접근 |
+| 보정 | 개시증거금률은 (a) 60일 과거 분포 또는 (b) 252일 과거 분포의 가격 변동에 대해 3 표준편차 중 높은 값을 커버하도록 설정; 1일 또는 2일 변동 중 높은 값 사용 |
+| 구성요소 | Scanning Risk, Intracommodity Spread Charge, Intercommodity Spread Concession (차감), Short Option Minimum Charge, Delivery Risk |
+| 증거금 산식 | 총 개시증거금 = max(Delivery Risk + Intracommodity Spread Charge + Short Option Minimum Charge, Scanning Risk - Intercommodity Concession) |
+| 리스크 배열 | 다양한 시장 조건에서 손익을 산출하는 복수의 리스크 배열(수치 집합) |
+| 포트폴리오 인식 | 상품내(월간) 및 상품간 스프레드 관계 인식 |
+| 증거금 산출 빈도 | 일일 마감; 유의미한 가격 변동 시 임시 장중 산출 추가 |
+
+**개시증거금 방법론 — ASX Clear (주식 옵션): CME SPAN**
+
+- ASX Clear도 주식 옵션 포트폴리오에 SPAN 기반 증거금 산출을 사용
+- 증거금 변수는 호주 주식시장 변동성 특성에 맞게 보정
+
+**변동증거금:**
+- 정산가격 기준으로 매일 mark-to-market
+- 일일 마감 시 변동증거금 콜 발행; 스트레스 상황에서는 장중 콜
+- 모든 증거금 흐름은 ASX Clear (Futures) 참가자 계좌를 통해 처리
+
+**장중 증거금 발동:**
+- 개별 계약 가격 변동이 증거금률의 100%를 초과하면 발동
+- ASX SPI 200 지수가 장중 1% 이상 변동하면 발동
+- ASX Clear (Futures)는 재량으로 장중 마진콜을 발행할 수 있다
+
+**적격 담보:**
+- 현금 (AUD)
+- 호주 국채
+- 은행 보증
+- 기타 인가 담보 (헤어컷 적용) [unverified]
+
+[Source: ASX Clear (Futures) SPAN Margining Examples; ASX website, "Margining"; RBA Assessment of ASX Clear (Futures), Standard 6: Margin (2017-2018); ASX website, "Understanding Margins — ASX Clear"; ASX Energy, "Initial Margins"]
+
+### D.4 포지션한도 (Position Limits)
+
+**ASX 24 Operating Rules 체계:**
+
+| 항목 | 세부사항 |
+|------|---------|
+| 만기 집중 한도 | 거래 방식과 무관하게 모든 시장 참가자(수익적 소유권 "그룹" 수준)에 적용되는 경성 한도 |
+| 재량권 | 시장운영자가 예외적 사안별로 한도를 변경할 수 있으나 드물게 행사 |
+| 시장 개입 | 바람직하지 않은 시장 상황의 발생 시 또는 방지를 위해, 시장운영자가 참가자에게 일정 수 이상의 포지션 보유 금지 등 특정 방식으로 거래하도록 지시 가능 |
+| 행사 한도 | Rule 3410에 따라 별도의 행사 한도 미설정; 행사 한도는 Clearing Rules에 별도 규정 |
+| 포지션 보고 | 대규모 포지션에 대한 보고 의무; ASX 24 Operating Rules에 포지션 보고 요건(DBOR — Daily Beneficial Ownership Reporting) 포함 |
+
+**ETO (주식 옵션) 포지션한도:**
+- ASIC Market Integrity Rules이 주식 옵션에 대한 포지션한도 (건옥제한) 설정
+- 한도는 기초증권의 유동성 및 시가총액에 따라 상이
+- ASIC/ASX에 대한 신청을 통해 헤지 면제 가능
+
+[Source: ASX 24 Operating Rules Section 3 (June 2025); ASX 24 Operating Rules Guidance Note 10; ASX 24 Operating Rules Schedules & Appendices (November 2025)]
+
+### D.5 블록거래 / 특별 교차거래 (Block Trading / Special Crossings)
+
+**ASX 24 — 장외 및 블록거래 (대량매매):**
+
+| 항목 | 세부사항 |
+|---------|---------|
+| 기능 | ASX 24에서 블록거래 (대량매매) 보고 가능한 장외 거래 |
+| 보고 | 블록거래 (대량매매)는 지정 기준 충족 시 시장에 직접 보고 가능 |
+| 적격 상품 | 금리 선물, SPI 200 선물, 곡물 선물, 에너지 선물 |
+| 협상 | 당사자가 가격 및 수량을 양자간 협상; 이후 ASX를 통해 청산을 위한 거래 보고 |
+
+**ASX Trade — ETO 교차거래 및 Special Size (블록) 거래:**
+
+| 항목 | 세부사항 |
+|---------|---------|
+| Special Size 임계치 | 두 가지 자격 방법: (1) 프리미엄 가치 — ASIC MIR 임계치 충족 ($1,000,000, $500,000, 또는 $200,000, 상품 유형에 따라); 또는 (2) 계약 수 — 최소 시장조성자 (마켓메이커) 호가 수량의 15배, 최소 $50,000 프리미엄 충족 |
+| 보고 | Special Size 교차거래는 사전 노출 없이 시장에 직접 보고 가능 |
+| Non-Special Size 교차거래 | 보고 전 시장에 제시(노출)되어야 함 |
+| SPI 옵션 블록 최소 | 개별 시리즈당 200계약 |
+
+[Source: ASX website, "ETO crossings and Special Size (Block) Transactions on ASX Trade"; ASX website, "Off-market with block trade"; ASX Operating Rules Section 22 — Crossings; ASXOnline Notice 1185.18.10 (SPI Options Block Trades); ASXOnline Notice 1344.25.10 (October 2025 consultation)]
+
+---
+
+## 출처 (Sources)
+
+- [ASX — Trade our derivatives market](https://www.asx.com.au/markets/trade-our-derivatives-market)
+- [ASX — Interest rate derivatives](https://www.asx.com.au/markets/trade-our-derivatives-market/overview/interest-rate-derivatives)
+- [ASX — Equity derivatives](https://www.asx.com.au/markets/trade-our-derivatives-market/overview/equity-derivatives)
+- [ASX — Grain derivatives](https://www.asx.com.au/markets/trade-our-derivatives-market/overview/grain-derivatives)
+- [ASX — Environmental futures](https://www.asx.com.au/markets/trade-our-derivatives-market/environmental-futures)
+- [ASX Energy](https://www.asxenergy.com.au)
+- [ASX — Trading hours and calendars](https://www.asx.com.au/markets/market-resources/trading-hours-calendar)
+- [ASX — Australian Liquidity Centre](https://www.asx.com.au/alc)
+- [ASX — Connectivity services](https://www.asx.com.au/connectivity-and-data/connectivity-services)
+- [ASX — Market data](https://www.asx.com.au/connectivity-and-data/information-services/real-time-data)
+- [ASX — ASX Clear (Futures)](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear-futures)
+- [ASX — Margining](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear/risk-management/margining)
+- [ASX — CHESS Project](https://www.asx.com.au/markets/clearing-and-settlement-services/chess-project)
+- [ASX — Schedule of Fees](https://www.asx.com.au/markets/market-resources/asx-schedule-of-fees)
+- [ASX Annual Report FY2025](https://www.asx.com.au/content/dam/asx/annual-reports/asx-2025-annual-report.pdf)
+- [ASX Rates Highlights Q4 2025](https://www.asx.com.au/content/dam/asx/markets/trade-our-derivatives-market/derivatives-market-overview/interest-rate-derivatives/rates-highlights/q4-2025/asx-rates-highlights-q4-2025.pdf)
+- [ASX 24 Contract Specifications](https://www.asx.com.au/content/dam/asx/participants/derivatives-market/ird/asx24-contract-specifications.pdf)
+- [Wikipedia — Australian Securities Exchange](https://en.wikipedia.org/wiki/Australian_Securities_Exchange)
+- [LSEG — LSEG and ASX partner to modernise derivatives market trading platform (March 2026)](https://www.lseg.com/en/media-centre/press-releases/2026/lseg-and-asx-partner-modernise-derivatives-market-trading-platform)

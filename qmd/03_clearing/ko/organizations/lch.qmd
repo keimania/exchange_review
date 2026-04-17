@@ -1,0 +1,710 @@
+---
+title: "LCH (LCH Limited & LCH SA, 런던청산소)"
+subtitle: "청산결제 > 청산기관"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 갱신일:** 2026-04-07
+> **조사 단계:** Tier 1 (심층 분석)
+> **유형:** 중앙청산소 (CCP, Central Counterparty)
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+### 1.1 LCH 그룹 (LCH Group)
+
+| 항목 | 내용 |
+|------|------|
+| 정식 명칭 | LCH Group Holdings Limited |
+| 운영 법인 | LCH Limited (런던); LCH SA (파리) |
+| 웹사이트 | [https://www.lch.com](https://www.lch.com) |
+| 설립 연도 | 1888년 (London Produce Clearing House로 설립); 2003년 (합병에 따라 LCH.Clearnet으로 출범) |
+| 소유구조 | LSEG (London Stock Exchange Group, 런던증권거래소그룹)가 LCH Group Holdings Limited의 82.61%를 보유 ([Wikipedia](https://en.wikipedia.org/wiki/LCH_(clearing_house))) |
+| 기타 운영 법인 | SwapAgent Ltd (영국) |
+| CPMI-IOSCO 금융시장인프라에 관한 원칙 (PFMI) 준수 | 예 -- LCH Ltd와 LCH SA 모두 CPMI-IOSCO 자체 평가 및 공적정량공시(PQD)를 발표한다 ([LSEG CCP Disclosures](https://www.lseg.com/en/post-trade/clearing/clearing-resources/ccp-disclosures)) |
+
+### 1.2 LCH Limited (LCH Ltd)
+
+| 항목 | 내용 |
+|------|------|
+| 정식 명칭 | LCH Limited |
+| 약칭 | LCH Ltd |
+| 소재지 | 영국 / 런던 |
+| 감독기관 | Bank of England (잉글랜드은행, 주요 감독기관); 미국 CFTC (상품선물거래위원회)에 DCO로 등록; 유럽증권시장감독청(ESMA)에 의해 EU EMIR에 따른 제3국 CCP (Tier 2)로 인정 |
+| 적격중앙청산소 (QCCP) 지위 | 예 -- EU, 미국, 스위스(FINMA), 홍콩, 싱가포르, 일본, 캐나다, 호주 등 다수 관할권에서 QCCP로 인정 ([LSEG Company Structure](https://www.lseg.com/en/post-trade/clearing/about-lch/structure-and-governance/company-structure); [LSEG QCCP Document](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/structure-and-governance/lch-qccp-status-dec-22-clean-latest-0.pdf)) |
+| 청산 서비스 | SwapClear, ForexClear, RepoClear (Ltd), EquityClear (Ltd), Listed Rates (상장 금리 파생상품) |
+
+### 1.3 LCH SA
+
+| 항목 | 내용 |
+|------|------|
+| 정식 명칭 | Banque Centrale de Compensation SA, LCH SA로 운영 |
+| 약칭 | LCH SA |
+| 소재지 | 프랑스 / 파리 |
+| 감독기관 | ACPR (건전성감독정리청); Banque de France (프랑스은행); AMF (금융시장청); 유럽중앙은행(ECB)에 의한 간접 감독 ([LCH SA CPMI-IOSCO Self-Assessment 2024](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/lch-sa-cpmi-iosco-self-qualitative-assessment-q1-2025.pdf)) |
+| 적격중앙청산소 (QCCP) 지위 | 예 -- EU EMIR에 따라 CCP로 인가됨; 미국 CFTC에 DCO로 등록 (CDSClear용) 및 미국 SEC에 청산기관으로 등록 |
+| 청산 서비스 | CDSClear, RepoClear SA, DigitalAssetClear (2024년 출시, 기존 EquityClear SA 및 CommodityClear SA 대체) |
+
+### 1.4 주요 연혁 (Key Historical Milestones)
+
+| 연도 | 사건 |
+|------|------|
+| 1888년 | London Produce Clearing House (LPCH) 설립. 상품선물 청산 목적 ([LCH History](https://www.lch.com/about-us/our-history)) |
+| 1969년 | 파리에서 상품시장 청산을 위한 Banque Centrale de Compensation SA 설립 |
+| 1971년 | LPCH가 ICCH (International Commodities Clearing House)로 개칭 |
+| 1988년 | 6개 은행 컨소시엄이 사업 인수 |
+| 1992년 | London Clearing House Ltd로 개칭 |
+| 1996년 | 다수 지분이 청산회원으로 이전 |
+| 1998년 | RepoClear 출시 -- 레포 및 채권 청산 |
+| 1999년 | SwapClear 출시 -- 세계 최초의 OTC 금리스왑 CCP; 파리에서 Clearnet SA 브랜드 채택 |
+| 2001년 | Clearnet이 Euronext 청산소들과 합병 |
+| 2003년 | London Clearing House와 Clearnet SA의 합병으로 LCH.Clearnet Group 설립 (지분 구조: 회원 45.1%, 거래소 45.1%, Euroclear 9.8%) |
+| 2008년 | Lehman Brothers 부도를 성공적으로 관리 -- 66,390건, 9조 USD 규모의 OTC IRS 포트폴리오를 Lehman의 개시증거금(Initial Margin)의 35%만 사용하여 처리. 비부도 회원이나 공동기금에 대한 손실 부과 없음 ([LCH SwapClear Risk Management](https://www.lseg.com/en/post-trade/clearing/lch-services/swapclear/risk-management)) |
+| 2009년 | CDSClear 출시; 미국 사업 개시 |
+| 2012년 | LSE (런던증권거래소)가 8.13억 EUR에 60% 지분 인수 |
+| 2013년 | LSEG가 과반 지배권(54%) 확보 |
+| 2016년 | "Clearnet" 브랜드 삭제; 단순히 "LCH"로 변경 |
+| 2023년 | LCH Group이 Euronext의 LCH SA 지분 11.1%를 1.11억 EUR에 인수, 완전 소유 달성 ([LSEG Press Release](https://www.lseg.com/en/media-centre/press-releases/2023/lch-group-to-acquire-euronexts-stake-in-lch-sa)) |
+| 2023년 (11월) | Euronext 현물시장 청산이 LCH SA에서 Euronext Clearing으로 이관 |
+| 2024년 (7월) | Euronext 상품 파생상품이 LCH SA에서 이관 |
+| 2024년 (9월) | Euronext 금융 파생상품이 LCH SA에서 Euronext Clearing으로 이관 완료; LCH SA의 EquityClear 및 CommodityClear 서비스 종료 ([Euronext Press Release](https://www.euronext.com/en/about/media/euronext-press-releases/successful-expansion-euronext-clearing-all-euronext-financial)) |
+| 2024년 (9월) | FMX Futures Exchange 출범, LCH Ltd가 SOFR 선물 청산 담당 |
+| 2024년 | LCH SA가 DigitalAssetClear 서비스 출시 (GFO-X와 파트너십으로 디지털 자산 파생상품) |
+
+---
+
+## 2. 청산 모델 (Clearing Model)
+
+### 2.1 CCP 서비스 (CCP Services)
+
+#### LCH Ltd 서비스
+
+| 서비스 | 상품군 | 설명 | 주요 통계 (2024년) |
+|--------|--------|------|-------------------|
+| **SwapClear** | OTC 금리 파생상품 | 세계 최대 OTC IRS 청산 서비스; 28개 통화, USD/GBP/EUR 기준 최대 51년 만기 | 2024년 상반기 779조 USD 명목원금 청산 (전년 대비 15%↑); 약 2,400억 USD 개시증거금 보유 (2024년 Q4); EMEA IRS 시장 점유율 99.4% ([Clarus FT](https://www.clarusft.com/2024-ccp-volumes-and-share-in-ird/); [Clarus Q4 2024](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)) |
+| **ForexClear** | OTC FX 파생상품 | NDF, FX 옵션, FX 선도 청산 | 2024년 Q2 말 개시증거금 107억 USD (32%↑); 25개 이상 NDF 통화; 92개 고객사; 약 30개 청산회원 ([LCH ForexClear Factsheet](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/fact-sheets/lch-forexclear-factsheet-a-global-leader.pdf)) |
+| **RepoClear (Ltd)** | 채권 / 레포 | 영국 길트(gilts) 및 기타 시장의 현물채권·레포 청산 | 다수의 유럽 국채 시장 커버 |
+| **EquityClear (Ltd)** | 현물 주식 | LSE, SIX Swiss Exchange, Cboe Europe, Aquis의 주식 청산 | SIX x-clear 및 Cboe Clear Europe와 상호운용 |
+| **Listed Rates** | 상장 금리 파생상품 | 금리 선물 및 옵션 (FMX SOFR 선물 포함) | 2024년 말 청산회원 6개, 고객 8개; 총미결제명목원금 36억 USD ([Clarus Q4 2024](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)) |
+
+#### LCH SA 서비스
+
+| 서비스 | 상품군 | 설명 | 주요 통계 (2024년) |
+|--------|--------|------|-------------------|
+| **CDSClear** | OTC 신용 파생상품 | CDS 지수 및 개별 종목 청산 | 28개 회원 (2024년); 총 청산 명목원금 5,437억 EUR (전년 대비 9%↑); 2024년 상반기 고객 명목원금 426억 EUR (88%↑); 개시증거금 102억 USD (2024년 Q4) ([Risk.net](https://www.risk.net/awards/7960370/clearing-house-of-the-year-lch); [Clarus Q4 2024](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)) |
+| **RepoClear SA** | 채권 / 레포 | 프랑스, 독일, 벨기에, 네덜란드 및 기타 유로존 국채 레포의 유로화 청산 | 2024년 Q4 미결제 현물채권 총명목원금 19억 EUR |
+| **DigitalAssetClear** | 디지털 자산 파생상품 | 비트코인 지수 선물 및 옵션 (GFO-X와 파트너십); 기존 EquityClear SA/CommodityClear SA를 대체하여 2024년 출시 | 신규 서비스 -- 초기 단계 |
+
+> **참고:** LCH SA의 EquityClear 및 CommodityClear 서비스는 Euronext 청산의 Euronext Clearing (CC&G 기반)으로의 전면 이관에 따라 2024년에 종료되었다. Euronext는 LCH SA에 약 3,600만 EUR의 계약 해지 수수료를 지급하였다. ([Euronext](https://www.euronext.com/en/about/media/euronext-press-releases/successful-expansion-euronext-clearing-all-euronext-financial); [Finadium](https://finadium.com/euronext-completes-lch-sa-migration-and-borsa-italiana-integration/))
+
+### 2.2 채무인수 절차 (Novation Process)
+
+- **공개 청약에 의한 채무인수 (Novation by Open Offer):** 거래소 상장 상품 및 상호운용 청산의 경우, 거래 등록 시점에 LCH가 모든 매도자의 매수자이자 모든 매수자의 매도자가 된다.
+- **OTC 파생상품의 채무인수:** 거래 등록·수용 시, 원래의 상대거래 계약이 소멸되고 CCP와 각 원거래 상대방 사이에 두 개의 새로운 계약으로 대체된다.
+- **SwapClear 실시간 거래 등록:** 거래는 제출 후 약 10초 이내에 채무인수된다. 이를 위해 전용 6억 GBP 규모의 RTTR (Real-Time Trade Registration) 공동기금이 운용된다. ([RBA Assessment 2020](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html))
+
+### 2.3 차감 및 압축 (Netting & Compression)
+
+**다자간차감 (Multilateral Netting):**
+- LCH는 모든 청산 포지션에 대해 다자간차감을 수행하여, 총쌍무적 익스포저를 청산회원당 CCP에 대한 단일 순익스포저로 축소한다.
+- RepoClear는 현물채권 및 레포 거래에 대한 차감을 제공하여 결제 의무를 대폭 줄인다.
+
+**포트폴리오 압축 (SwapClear):**
+- 압축은 호환 가능한 경제적 조건의 거래를 결합하거나 상계하여 항목 수와 총명목원금을 줄인다.
+- 압축 대상 상품: IRS, OIS, FRA, 베이시스 스왑, 제로쿠폰 인플레이션 스왑.
+- 기법: 혼합금리 압축(blended rate compression), 미래현금흐름 차감(future cash flow netting) 등.
+- 2015년에만 SwapClear가 323조 USD의 거래를 압축, 순명목원금 107조 USD 감소. ([LCH Compression](https://www.lch.com/services/swapclear/enhancements/compression))
+- LCH SwapClear의 누적 압축 명목원금은 1경(quadrillion) USD를 초과한다. ([LeapRate](https://www.leaprate.com/news/lchs-swapclear-compresses-more-than-1-quadrillion-of-cleared-notional/))
+- 다자간 압축(OSTTRA triReduce 활용)은 2022년 9월 한 달 동안 약 1조 USD의 추가 총명목원금 감소를 달성하였다. ([OSTTRA](https://osttra.com/articles/trade-refactoring-unlocks-additional-compression-benefits/))
+
+### 2.4 청산회원 제도 (Clearing Membership)
+
+#### LCH Ltd 회원 제도
+
+| 구분 | 요건 | 가입 수수료 |
+|------|------|-------------|
+| 청산회원 (Clearing Member) | 규정집 Procedures Section 1에 따른 최소 순자본; 적절한 은행 거래 관계; 경험 있는 인력; 적절한 시스템 및 인프라; KYC/AML 준수; 청산회원 계약 서명 | GBP 10,000 (영국 신청자는 VAT 별도) |
+
+**서비스별 공동기금 최소 출연액 (LCH Ltd):**
+
+| 서비스 | 최소 출연액 |
+|--------|-------------|
+| SwapClear | GBP 1,000만 + GBP 400만 허용 출연분(tolerance contribution) |
+| RepoClear (Ltd) | GBP 200만 |
+| ForexClear | USD 500만 |
+| EquityClear (Ltd) | GBP 50만 |
+| Listed Interest Rates | 스트레스 손실 계산액과 회원당 GBP 200만 중 큰 금액; 전체 기금 최소 GBP 1,000만 |
+
+출처: [LCH Ltd Membership](https://www.lseg.com/en/post-trade/clearing/membership/ltd-membership)
+
+**운영 요건:**
+- 청산 절차에 정통한 최소 2명의 인력 배치
+- 영국 및 미국 PPS (Protected Payments System) 위임 및 비상 대책
+- 연간 KYC/AML 갱신
+- 승인 소요 기간: 완전한 서류 제출 후 약 8주
+
+#### LCH SA 회원 제도 (CDSClear)
+
+| 구분 | 주요 요건 |
+|------|-----------|
+| CDSClear 총괄청산회원 (General Clearing Member) | 최소 공동기금 출연액 EUR 1,000만 (현금만); 연회비 EUR 400,000 |
+| CDSClear 선택형 회원 (Select Member) | 변동 요율; 첫해 수수료 면제 가능 |
+
+출처: [LCH SA Fees](https://www.lseg.com/en/post-trade/clearing/membership/sa-membership/sa-fees)
+
+**청산회원 수 (대략, 2024년):**
+
+| 서비스 | 회원 수 |
+|--------|---------|
+| SwapClear (Ltd) | 약 120 [미확인 -- 과거 데이터 기준] |
+| ForexClear (Ltd) | 직접 회원 약 30개; 고객 92개 |
+| RepoClear (Ltd) | 약 20 [미확인] |
+| EquityClear (Ltd) | 약 15 [미확인] |
+| Listed Rates (Ltd) | 회원 6개, 고객 8개 |
+| CDSClear (SA) | 28개 회원 (GCM 20개, 2023년 25개에서 증가) |
+| RepoClear SA | 약 20 [미확인] |
+| SwapAgent | 36개 회원 (2023년 29개에서 증가) |
+
+---
+
+## 3. 리스크 관리 (Risk Management)
+
+### 3.1 증거금 체계 (Margin Framework)
+
+#### PAIRS 방법론 (Portfolio Approach to Interest Rate Scenarios)
+
+PAIRS는 LCH의 독자적 증거금 방법론으로, SwapClear, ForexClear, Listed Rates 서비스에 적용된다. ([LCH Ltd Margin Methodology](https://www.lseg.com/en/post-trade/clearing/risk-management/ltd-risk-management/ltd-margin-methodology))
+
+| 파라미터 | 사양 |
+|----------|------|
+| 모델 유형 | 변동성 조정을 포함한 필터드 역사적 시뮬레이션 기반 기대손실(Expected Shortfall, ES) 모델 |
+| 신뢰수준 | 99.7% (약 2.75 표준편차에 해당) |
+| 보유기간 (회원) | 5일 청산기간 |
+| 보유기간 (고객) | 7일 청산기간 (5일 + 포트폴리오 이전을 위한 추가 2일) |
+| 회고기간 | 수익률곡선 및 환율의 변동성 조정 변동분을 포함한 10년 역사적 시장 데이터 |
+| 하한 보정 | 비조정(unscaled) 10년 역사적 회고 + 글로벌 금융위기(2007~2009년) 포함 추가 2.5년 |
+
+출처: [RBA Assessment 2020 Appendix B](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html)
+
+**PAIRS 프로세스:**
+1. 10년간 일일 시장 데이터(수익률곡선, 환율, 서비스에 따라 신용스프레드) 수집
+2. EWMA 기반 변동성 조정을 역사적 수익률에 적용하여 현재 시장 상황 반영
+3. 시뮬레이션된 포트폴리오 손익(P&L) 변화의 분포 생성
+4. 보유기간에 걸쳐 99.7% 신뢰수준의 기대손실(ES) 산출
+5. 개시증거금(Initial Margin)을 99.7% VaR 임계치를 초과하는 손실의 조건부 기대손실로 결정
+
+**증거금 부가금(Add-ons):**
+- **신용리스크 부가금:** 기본 PAIRS 모델에서 회원의 신용 익스포저가 완전히 포착되지 않는 경우 적용
+- **유동성리스크 부가금:** 대규모 또는 집중 포지션의 청산 비용 반영
+- **집중리스크 부가금:** 특정 만기 또는 통화에 비례적으로 큰 포지션을 가진 포트폴리오용
+- **스트레스 증거금 부가금:** 시장 스트레스 고조기에 적용될 수 있음
+
+#### CDSClear 증거금 (LCH SA)
+
+| 파라미터 | 사양 |
+|----------|------|
+| 모델 유형 | 조정 수익률을 포함한 역사적 시뮬레이션; 기대손실(ES) 방법론 |
+| 신뢰수준 | 99.7% |
+| 보유기간 | 5일 |
+| 회고기간 | 2007년 4월부터 (글로벌 금융위기 기간 포함) |
+
+출처: [LCH CDSClear Risk Management](https://www.lseg.com/en/post-trade/clearing/lch-services/cdsclear/risk-management)
+
+#### 보유 개시증거금 (2024년 Q4 CPMI-IOSCO PQD 데이터)
+
+| 서비스 | 개시증거금 보유액 |
+|--------|------------------|
+| SwapClear (Ltd) | 약 2,400억 USD (1,920억 GBP) |
+| CDSClear (SA) | 약 102억 USD (98억 EUR) |
+| ForexClear (Ltd) | 약 107억 USD (2024년 Q2 최대치) |
+| Listed Rates (Ltd) | 약 300만 USD (신규 출시) |
+
+출처: [Clarus FT Q4 2024](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)
+
+### 3.2 증거금 징수 일정 (Margin Call Schedule)
+
+| 징수 유형 | 시점 | 세부 내용 |
+|-----------|------|-----------|
+| 장 마감(EOD) | 매 영업일 마감 | 모든 포지션에 대한 개시증거금 및 변동증거금(Variation Margin)의 전면 재산출 |
+| 장중 증거금 징수 (Intraday Margin Call) | 영업시간 중 수시 | 회원의 총합 증거금 부채가 참가자별 사전 설정 신용 임계치를 초과할 때 발동 |
+| 임시 / 특별 (Ad-hoc / Extraordinary) | 필요시 | LCH는 극심한 시장 스트레스 또는 대규모 포지션 변동 시 추가 증거금을 징수할 수 있다 |
+
+출처: [RBA Assessment 2020](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html)
+
+- **변동증거금:** 포지션의 시가평가 변동을 반영하여 일일 및 장중 현금으로 징수
+- **SwapClear:** 변동증거금은 일일 교환; 자동 징수를 통한 장중 모니터링
+
+### 3.3 손실부담순서 (Default Waterfall)
+
+#### LCH Ltd 손실부담순서
+
+손실부담순서는 서비스별로 운영된다. 각 청산 서비스는 별도의 분리된 공동기금(Default Fund)을 보유한다. 계층은 순차적으로 소진된다:
+
+| 계층 | 설명 | 대략적 규모 |
+|------|------|-------------|
+| 1 | **부도회원의 개시증거금** | 회원에 따라 상이 (SwapClear 전체: 약 1,920억 GBP) |
+| 2 | **부도회원의 공동기금 출연분** | 회원에 따라 상이 (SwapClear 최소 GBP 1,000만) |
+| 3 | **LCH CCP 자기자본 출연분 (SITG)** | LCH 최소 규제자본 요건의 25%; 약 GBP 3,500만 [미확인 -- Clarus FT 추정 기준] |
+| 4 | **비부도회원의 공동기금 출연분** | SwapClear: 최대 GBP 54억 (핵심 구성요소, Cover 2 기준으로 산정); RepoClear Ltd 및 ForexClear: 별도 기금 |
+| 5 | **RTTR 공동기금 구성요소** | GBP 6억 (실시간 거래 등록 리스크용) |
+| 6 | **추가분담금 부과 권한 (미적립)** | 비부도회원의 최종 공동기금 출연액에 상응하는 금액까지 (부도당); 6개월 내 최대 3건 부도 적용 |
+| 7 | **LCH 추가 자본 / 회복 수단** | 추가 CCP 자원; 최종 수단으로 VMGH 및 tear-up |
+
+**SwapClear 공동기금 규모 산정:**
+- 핵심 구성요소 상한: GBP 54억 (2020년 평가 기준; 2019년 9월 GBP 50억에서 인상)
+- RTTR 구성요소: GBP 6억
+- Rates Service 공동기금 총 상한: 약 GBP 60억
+- **Cover 2 기준** 산정: 극단적이지만 현실적인 스트레스 시나리오에서 최대 익스포저를 발생시키는 두 청산참가자(계열사 및 고객 포함)의 동시 부도를 견딜 수 있도록 함
+- 매월 첫 영업일에 재조정. 60일 회고기간 동안 개시증거금 초과 스트레스 테스트 손실(STLOIM)이 가장 큰 두 참가자를 기준으로, 완충분을 더하여 산정
+
+출처: [RBA Assessment 2020](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html); [Clarus FT](https://www.clarusft.com/swap-default-funds-at-the-cme-lch/)
+
+**공동기금 출연 방법론 (SwapClear):**
+- 약 90%는 잠재적 잔여 손실(개시증거금 초과 스트레스 테스트 손실) 기준
+- 약 10%는 총명목 스왑 포지션 기준
+- 월별 재산출
+
+#### LCH SA 손실부담순서
+
+LCH SA는 각 청산 서비스(CDSClear, RepoClear SA, DigitalAssetClear)에 대해 별도의 공동기금을 운영한다.
+
+| 계층 | 설명 | 대략적 규모 |
+|------|------|-------------|
+| 1 | **부도회원의 개시증거금** | 회원에 따라 상이 |
+| 2 | **부도회원의 공동기금 출연분** | CDSClear 최소 EUR 1,000만 |
+| 3 | **LCH SA 제1차 CCP 자기자본 출연분 (SITG)** | 서비스당 EUR 2,000만 |
+| 4 | **비부도회원의 공동기금 출연분** | CDSClear: 약 EUR 27.7억 (2023년 Q2 최대치, 37.6%↑); EquityClear: 약 EUR 42.4억 (2023년 Q2, 종료 전) |
+| 5 | **LCH SA 제2차 SITG (변동 출연분)** | 추가 CCP 자본 계층 |
+| 6 | **추가분담금 부과 권한 / 손실 귀속** | 비부도회원에 대한 비례 배분 |
+| 7 | **회복 수단** | VMGH, 부분적 tear-up |
+
+출처: [Risk.net](https://www.risk.net/risk-quantum/7957808/lch-sas-default-funds-hit-record-highs); [LCH SA Default Waterfall PDF](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-sa-default-waterfall.pdf)
+
+> **참고:** LCH SA 자체의 SITG 출연분은 세 청산 서비스 전체 공동기금 자원의 1% 미만을 차지한다. ([Risk.net](https://www.risk.net/risk-quantum/7957808/lch-sas-default-funds-hit-record-highs))
+
+### 3.4 스트레스 테스트 및 사후검증 (Stress Testing & Back-testing)
+
+| 항목 | 세부 내용 |
+|------|-----------|
+| 스트레스 테스트 기준 | **Cover 2** -- 극단적이지만 현실적인 조건에서 최대 익스포저를 발생시키는 두 청산참가자(계열사 및 고객 포함)의 동시 부도를 견딜 수 있도록 공동기금 규모 산정 |
+| 스트레스 시나리오 | 과거 시나리오 (글로벌 금융위기, 유럽 재정위기, COVID-19 등); 가상 시나리오 (금리 충격, 신용스프레드 변동, 환율 변동); 역스트레스 테스트(reverse stress test) |
+| 사후검증 주기 | **일일 및 월별** 증거금 모델 성과 사후검증 |
+| 민감도 분석 | 월별 민감도 분석 |
+| 모델 검증 | 연간 독립 모델 검증 |
+| 보고 | 결과를 리스크위원회 및 이사회에 보고; 감독기관과 공유 |
+
+출처: [RBA Assessment 2020](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html)
+
+### 3.5 부도관리 절차 (Default Management Process)
+
+LCH의 부도관리 절차는 세 단계로 진행된다:
+
+1. **리스크 중립화 및 고객 이관 (Risk Neutralization & Client Porting):** 부도회원 포트폴리오의 시장리스크를 억제하기 위한 즉시 헤지; 고객 포지션과 담보를 비부도 청산회원으로 이전(porting) 시도
+2. **포트폴리오 경매 (Portfolio Auction):** 부도회원의 포트폴리오를 상품 및 통화별로 분할한 후, 구조화된 경매 절차를 통해 생존 청산회원에 매각
+3. **손실 귀속 (Loss Attribution):** 변동증거금/헤지 비용의 손실은 비례 배분; 경매 손실은 입찰 결과에 따라 배분
+
+**검증된 실적:**
+- **Lehman Brothers (2008년):** LCH는 Lehman Brothers의 66,390건, 9조 USD 규모 IRS 포트폴리오 부도를 Lehman이 예치한 개시증거금의 35%만 사용하여 관리하였다. 비부도회원이나 공동기금에 대한 손실 부과는 없었다. ([LCH SwapClear Risk Management](https://www.lseg.com/en/post-trade/clearing/lch-services/swapclear/risk-management))
+
+### 3.6 회복 및 정리 (Recovery & Resolution)
+
+#### 회복 수단 (LCH Ltd)
+
+| 수단 | 설명 |
+|------|------|
+| **변동증거금 이익 삭감 (VMGH, Variation Margin Gains Haircutting)** | LCH는 포지션 가치가 상승한 비부도 참가자에게 지급해야 할 변동증거금에 비례적 삭감을 적용할 수 있다 |
+| **추가분담금 부과 권한 (Cash Calls)** | 비부도회원으로부터의 미적립 출연분; 부도당 최종 공동기금 출연액까지; 6개월 내 최대 3건 부도 적용 |
+| **부분적 Tear-up** | 매칭된 장부를 복원하기 위한 특정 계약 종료; 최종 수단으로 사용 |
+| **전면 Tear-up** | 극단적 상황에서 해당 서비스의 모든 미결제 계약 종료 |
+| **축소된 이익 배분 (RGD, Reduced Gains Distribution)** | 자금 유출을 줄이기 위한 이익 삭감 |
+
+#### 정리 체계 (Resolution Framework)
+
+| 항목 | 세부 내용 |
+|------|-----------|
+| LCH Ltd 정리 당국 | **Bank of England (잉글랜드은행)** -- 영국 법률에 따라 현금 징수, VMGH, tear-up, 핵심 기능 이전 등 CCP 정리를 위한 법적 권한 보유 ([Bank of England](https://www.bankofengland.co.uk/prudential-regulation/publication/2013/supervisory-tools-recovery-and-resolution-plans)) |
+| LCH SA 정리 당국 | **ACPR** (건전성감독정리청), EU CCP 회복·정리 규정(EU CCPRR)에 따름 |
+| FSB 준수 | 양 법인 모두 금융시장인프라 정리에 관한 FSB 핵심 특성(Key Attributes) 준수 |
+| 정리 계획 현황 | LCH Ltd 및 LCH SA 모두 각 정리 당국의 검토를 받는 정리 계획을 유지 |
+
+출처: [FSB 2024 Resolution Report](https://www.fsb.org/uploads/P051224.pdf); [LCH Response to FSB](https://www.fsb.org/uploads/LCH.pdf)
+
+---
+
+## 4. 결제 (Settlement)
+
+### 4.1 상품별 결제주기 (Settlement Cycle by Product)
+
+| 상품 / 서비스 | 결제주기 | 법인 |
+|---------------|----------|------|
+| SwapClear (OTC IRS) | 변동증거금: 일일 현금결제(T+0); 개시증거금: T+0/T+1 | LCH Ltd |
+| ForexClear (OTC FX) | 변동증거금: 일일; CLS/표준 FX 관례에 따른 실물결제 | LCH Ltd |
+| RepoClear (Ltd) | 상품에 따라 T+0~T+2; CSD를 통한 표준 레포 결제 | LCH Ltd |
+| EquityClear (Ltd) | T+2 (영국 표준; T+1 검토 중) | LCH Ltd |
+| CDSClear | 변동증거금: 일일 현금; ISDA 프로토콜에 따른 이벤트 결제 | LCH SA |
+| RepoClear SA | T+0~T+2; 표준 레포 결제 | LCH SA |
+
+### 4.2 DVP 모델 (DVP Model)
+
+| 법인 / 서비스 | DVP 모델 | 세부 내용 |
+|---------------|----------|-----------|
+| RepoClear (Ltd & SA) | BIS DVP 모델 1 (건별-건별) / 모델 3 (차감-차감) | CSD 및 결제 방식에 따라 상이; 일부 구성에서는 증권의 건별 인도에 대한 자금의 차감 결제 |
+| EquityClear (Ltd) | BIS DVP 모델 3 (차감-차감) | 증권과 자금 모두의 다자간 차감결제 |
+| SwapClear | 해당 없음 (현금결제) | 증권 인도 없음; 증거금 및 변동증거금은 현금으로 결제 |
+| CDSClear | 해당 없음 (현금결제) | 증거금의 현금 결제; 신용 이벤트 시 ISDA 프로토콜에 따른 실물결제 |
+
+### 4.3 결제완결성 (Settlement Finality)
+
+**LCH Ltd:**
+- **법적 근거:** 영국 금융시장 및 도산(결제완결성) 규정 1999 (SI 1999/2979), 브렉시트 이후 개정본. LCH Ltd는 Bank of England에 의해 "지정 시스템(designated system)"으로 지정되었다. ([Settlement Finality Regulations](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/rulebooks/lch-ltd/settlement-finality-regulations.pdf))
+- **완결 시점:** 시스템에 입력된 이전 지시는 철회 불가능하며, 참가자의 도산 절차에 의해 무효화될 수 없다.
+- **보호:** 결제완결성 규정은 이전 지시 및 관련 담보를 도산 절차로부터 보호한다.
+
+**LCH SA:**
+- **법적 근거:** EU 결제완결성 지침(Directive 98/26/EC)의 프랑스 국내법 이행; LCH SA는 프랑스 법에 따른 지정 시스템이다.
+- **완결 시점:** LCH SA 규칙에 정의된 바에 따라 시스템에 입력된 시점에 완결; 참가자의 도산 절차로부터 보호.
+
+### 4.4 CSD / 결제 인프라 (CSD / Settlement Infrastructure)
+
+**자금 결제:**
+- **LCH Ltd:** 주로 PPS (Protected Payments System)를 통한 결제은행 경유 상업은행 화폐; 적용 가능한 경우 Bank of England 지준 (GBP 결제)
+- **LCH SA:** 유로화 결제는 Banque de France (TARGET 시스템)를 통한 중앙은행 화폐; 적용 가능한 경우 상업은행 화폐
+
+**증권 결제:**
+- 시장 및 자산군에 따라 해당 CSD를 통해 결제
+
+### 4.5 CSD 연계 (CSD Linkages)
+
+| 법인 | CSD 파트너 | 상품 / 시장 |
+|------|-----------|-------------|
+| LCH Ltd | CREST (Euroclear UK & International) | 영국 주식, 길트(gilts) |
+| LCH Ltd | SIX SIS | 스위스 주식 (EquityClear 상호운용 경유) |
+| LCH SA | Euroclear France / ESES | 프랑스 국채, 레포 |
+| LCH SA | Euroclear Bank | 다중시장 결제, 국제채권 |
+| LCH SA | Clearstream Banking Luxembourg | 독일 국채, 유럽 국채 |
+| RepoClear Ltd | Euroclear, Clearstream | 유럽 국채 결제 |
+| RepoClear SA | Euroclear France, Clearstream | 유로존 국채 레포 결제 |
+
+출처: [Euroclear RepoClear Settlement](https://www.euroclear.com/services/en/settlement/repoclear.html); [LeapRate on Clearstream](https://www.leaprate.com/forex/institutional/lch-repoclear-expands-dutch-debt-settlement-through-clearstream/)
+
+### 4.6 대차거래 (Securities Lending & Borrowing)
+
+- LCH는 대차거래 시설을 직접 운영하지 않는다.
+- 회원은 외부 대차 프로그램을 이용하여 증거금 의무를 위한 담보를 조달할 수 있다.
+- LCH는 광범위한 비현금 담보(국채, 커버드본드 등)를 수용하여 회원의 담보 최적화를 지원한다.
+- 2024년에 HSBC와 BNP Paribas가 비현금 담보 수탁은행으로 추가되었으며, 적격 담보가 덴마크 커버드본드와 중국 국채(2025년 예정)로 확대되었다. ([Risk.net](https://www.risk.net/awards/7960370/clearing-house-of-the-year-lch))
+
+---
+
+## 5. 기술 및 인프라 (Technology & Infrastructure)
+
+### 5.1 핵심 시스템 (Core Systems)
+
+| 항목 | 내용 |
+|------|------|
+| 핵심 청산 플랫폼 | **Millennium Clearing & Risk (MCCP)** -- LSEG Technology가 개발; EquityClear에 구현 후 다른 서비스로 점진적 확대 ([FinTech Futures](https://www.fintechfutures.com/fintech-innovation/lch-implements-clearing-and-settlement-solution-from-lseg-technology); [Finance Magnates](https://www.financemagnates.com/trading-room/industry-news/lch-equityclear-goes-live-with-new-lseg-technology-post-trade-platform/)) |
+| 아키텍처 | 무접촉 자동일괄처리(STP); 하드웨어 가속을 활용한 병렬 실시간 처리; 실시간 증거금 계산 |
+| 처리 능력 | 높은 처리량, 저지연 설계; SwapClear는 약 10초 이내 채무인수 처리 |
+| STP 비율 | 표준 상품에 대해 거의 100% [미확인 -- LCH는 완전 STP를 목표로 함] |
+
+### 5.2 인터페이스 프로토콜 (Interface Protocols)
+
+| 프로토콜 | 용도 |
+|----------|------|
+| SWIFT (FIN / ISO 15022) | 담보 관리, 결제 지시, 결제 메시징 |
+| ISO 20022 | 담보 관리 (LCH는 담보 부문 ISO 20022 초기 도입자) ([SWIFT](https://www.swift.com/swift-resource/15021/download)) |
+| FIX 프로토콜 | 거래소 상장 상품의 거래 제출 |
+| 독자 API | OTC 거래 제출을 위한 직접 연결 (SwapClear, CDSClear, ForexClear) |
+| SFTP | 회원에 대한 리포트 전달 |
+| 웹 포털 | 포지션, 증거금 보고서, 리스크 분석에 대한 회원 접근 |
+| MarkitWire / 미들웨어 | OTC 파생상품 거래 확인 및 라우팅 |
+
+### 5.3 증거금 계산기 및 도구 (Margin Calculators & Tools)
+
+- **LCH Rates 온라인 증거금 계산기:** 회원 및 고객이 SwapClear 거래 청산 전 담보 요건을 사전 계산할 수 있다. ([LCH Margin Calculator](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-rates-online-margin-calculator.pdf))
+- **CDSClear 증거금 시뮬레이터:** CDS 회원이 증거금 요건을 사전 계산할 수 있다.
+
+### 5.4 복원력 및 재해복구 (Resilience & Disaster Recovery)
+
+| 항목 | 내용 |
+|------|------|
+| DR 사이트 | LCH Ltd 및 LCH SA 모두 지리적으로 분리된 재해복구 사이트 보유 [미확인 -- 시스템적으로 중요한 CCP의 표준] |
+| RTO | 핵심 시스템 2시간 목표 (PFMI 준수 CCP의 업계 표준) [미확인] |
+| RPO | 핵심 청산·결제 데이터에 대해 제로에 가까움 [미확인] |
+| 업무연속성 | 팬데믹, 사이버 사고, 물리적 장애 시나리오를 포함한 포괄적 BCP; 회원과의 정기 테스트 |
+| 사이버 복원력 | Bank of England CBEST (영국) 및 ECB/유로시스템 사이버 복원력 프레임워크의 적용 대상 |
+
+---
+
+## 6. 규제 체계 (Regulatory Framework)
+
+### 6.1 감독 당국 (Supervising Authorities)
+
+#### LCH Ltd
+
+| 감독기관 | 역할 |
+|----------|------|
+| **Bank of England (잉글랜드은행)** | 영국 금융서비스시장법(Financial Services and Markets Act)에 따른 주요 감독기관 및 정리 당국; 시스템적으로 중요한 금융시장인프라로서 감독 |
+| **미국 CFTC** | SwapClear 및 ForexClear에 대해 DCO (Derivatives Clearing Organization)로 등록 |
+| **ESMA (유럽증권시장감독청)** | EU EMIR Article 25에 따른 제3국 CCP (Tier 2)로 인정; 인정 기간 2028년 6월 30일까지 연장 |
+| **FINMA (스위스)** | 스위스 시장 청산을 위한 인정 |
+| **RBA (호주)** | SwapClear에 대한 해외 CS 시설 면허 |
+| **기타** | 홍콩(SFC), 싱가포르(MAS), 일본(JFSA), 캐나다(OSC, AMF Quebec)의 감독기관에 의해 인정 |
+
+출처: [LSEG Company Structure](https://www.lseg.com/en/post-trade/clearing/about-lch/structure-and-governance/company-structure); [ESMA Recognition Extension](https://www.esma.europa.eu/press-news/esma-news/esma-extends-tiering-and-recognition-three-uk-based-ccps)
+
+#### LCH SA
+
+| 감독기관 | 역할 |
+|----------|------|
+| **ACPR** | 프랑스 통화금융법(Monetary and Financial Code)에 따라 신용기관으로서의 주요 감독 |
+| **Banque de France (프랑스은행)** | 결제·결제 시스템 감독 |
+| **AMF** | 증권시장 규제 감독 |
+| **ECB (유럽중앙은행)** | 유로시스템 감독 프레임워크를 통한 간접 감독 |
+| **ESMA** | EU EMIR (Regulation 648/2012)에 따라 인가 |
+| **미국 CFTC** | CDSClear에 대해 DCO로 등록 |
+| **미국 SEC** | CDSClear에 대해 청산기관으로 등록 |
+| **감독 칼리지 (Regulatory College)** | 프랑스, 네덜란드, 벨기에, 포르투갈을 포함한 다국적 감독 칼리지 |
+
+출처: [LCH SA CPMI-IOSCO Self-Assessment 2024](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/lch-sa-cpmi-iosco-self-qualitative-assessment-q1-2025.pdf)
+
+### 6.2 주요 규제 (Key Regulations)
+
+| 규제 | 적용 대상 | 세부 내용 |
+|------|-----------|-----------|
+| **UK EMIR** (EU EMIR 국내화) | LCH Ltd | 브렉시트 이후 영국의 CCP 규제 프레임워크; 인가, 지속적 준수, 보고 의무 |
+| **EU EMIR** (Regulation 648/2012) | LCH SA | EU CCP 인가, 청산 의무, 증거금 요건 |
+| **EU CCP 회복·정리 규정 (CCPRR)** | LCH SA | 회복 계획, 정리 수단, 손실배분 체계 |
+| **영국 금융서비스시장법 (Financial Services & Markets Act)** | LCH Ltd | 포괄적 규제 프레임워크; Bank of England 감독 권한 |
+| **도드-프랭크법 (Dodd-Frank Act)** | 양쪽 (미국 등록) | CFTC DCO 등록 요건; SEC 청산기관 요건 |
+| **영국 결제완결성 규정 1999** | LCH Ltd | 결제완결성 보호 |
+| **EU 결제완결성 지침** | LCH SA | 결제완결성 보호 |
+| **Basel III** | 양쪽 (간접) | CCP 익스포저에 대한 은행 자본 요건 (KCCP 계산) |
+
+### 6.3 PFMI 준수 (PFMI Compliance)
+
+| 법인 | 최근 자체 평가 | 주요 결과 |
+|------|----------------|-----------|
+| LCH Ltd | 2024년 Q3 ([CPMI-IOSCO Qualitative Assessment](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/cpmi-iosco-qualitative-assessment-of-lch-limited-q3-2024.pdf)) | 적용 가능한 24개 PFMI 원칙을 모두 준수(observes) 또는 대체로 준수(broadly observes) |
+| LCH SA | 2025년 Q1 ([CPMI-IOSCO Self-Assessment](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/lch-sa-cpmi-iosco-self-qualitative-assessment-q1-2025.pdf)) | 적용 가능한 모든 PFMI 원칙을 준수 또는 대체로 준수 |
+
+### 6.4 보고 요건 (Reporting Requirements)
+
+| 요건 | 세부 내용 |
+|------|-----------|
+| 거래 보고 | 회원은 UK EMIR / EU EMIR에 따라 인가된 거래정보저장소(Trade Repository)에 파생상품 거래를 보고해야 한다 |
+| 포지션 보고 | LCH는 포지션 수준 데이터를 회원에게 제공; 감독기관은 포지션 및 리스크 데이터에 직접 접근 가능 |
+| CPMI-IOSCO PQD | 분기별 발행; [LCH CCP Disclosures page](https://www.lseg.com/en/post-trade/clearing/clearing-resources/ccp-disclosures)에서 열람 가능 |
+| PQD 문의 연락처 | Reg.reporting@lch.com |
+
+---
+
+## 7. 상호운용성 (Interoperability)
+
+### 7.1 CCP 상호운용성 약정 (LCH Ltd EquityClear)
+
+LCH Ltd EquityClear는 유럽 주식 청산에 대한 상호운용성 약정에 참여하여, 시장 참가자가 선호하는 CCP를 선택할 수 있도록 한다.
+
+| 상대 CCP | 상품 | 거래소 | 상태 |
+|----------|------|--------|------|
+| SIX x-clear | 현물 주식 | SIX Swiss Exchange | 운영 중 |
+| Cboe Clear Europe (구 EuroCCP) | 현물 주식 | Cboe Europe, 기타 MTF | 운영 중 |
+
+출처: [LCH EquityClear Interoperability](https://www.lseg.com/en/post-trade/clearing/lch-services/equityclear/equityclear-ltd/essentials/ccp-interoperability); [Cboe European Equities Clearing](https://www.cboe.com/europe/equities/clearing/central_counterparties/)
+
+**상호운용성 체계:**
+- 각 상호운용 CCP는 상호운용 연계에서 발생하는 순익스포저를 충당하기 위해 상대 CCP에 증거금(inter-CCP margin)을 예치한다.
+- EU/UK EMIR 및 CCP 상호운용성에 관한 ESRB/ESMA 지침의 구체적 리스크 관리 요건 적용.
+- ESRB는 CCP 상호운용성에 관한 리스크 및 안전장치 분석을 발표하였다. ([ESRB Report 2019](https://www.esrb.europa.eu/pub/pdf/reports/esrb.report190131_CCP_interoperability_arrangements~99908a78e7.en.pdf))
+
+### 7.2 국제 약정 (Cross-border Arrangements)
+
+| 약정 | 세부 내용 |
+|------|-----------|
+| ESMA-BoE MoU | EU EMIR에 따른 인정 제3국 CCP로서의 LCH Ltd(및 기타 영국 CCP)에 대한 협력 및 정보 교환을 위한 개정 양해각서(MoU) ([ESMA](https://www.esma.europa.eu/press-news/esma-news/esma-and-bank-england-conclude-revised-mou-respect-uk-based-ccps-under-emir)) |
+| 영국 CCP에 대한 EU 동등성 | 유럽위원회에 의해 2028년 6월 30일까지 연장; LCH Ltd는 Tier 2 (시스템적으로 중요한) 제3국 CCP로 분류 |
+| 미국 CFTC 등록 | LCH Ltd (SwapClear, ForexClear, Listed Rates) 및 LCH SA (CDSClear) 모두 DCO로 등록 |
+| 다국적 인정 | LCH Ltd: 스위스, 홍콩, 싱가포르, 일본, 캐나다, 호주에서 인정; LCH SA: 미국 및 캐나다에서 인정 |
+
+### 7.3 브렉시트 이후 역학 (Post-Brexit Dynamics)
+
+LCH에 있어 가장 중요한 상호운용성 및 국제 이슈는 브렉시트 이후의 규제 역학이다:
+
+- **LCH Ltd (영국)**는 브렉시트(2020년 1월 31일 / 전환기간 종료 2020년 12월 31일) 이후 EU 인가 CCP 지위를 상실하였다. ESMA가 EU EMIR Article 25에 따른 제3국 CCP로 임시 인정을 부여하였다.
+- **Tier 2 분류:** ESMA가 LCH Ltd를 Tier 2 (시스템적으로 중요한) 제3국 CCP로 지정하여, 강화된 ESMA 감독 및 특정 유로화 청산 활동의 이전 요구 가능성에 노출되었다.
+- **동등성 연장:** EU는 영국 CCP에 대한 동등성 결정을 반복적으로 연장하였으며, 가장 최근에는 2028년 6월 30일까지 연장. 이는 인정 철회의 갑작스러운 시스템 리스크를 인정한 것이다.
+- **EU 활성 계좌 요건 (Active Account Requirement):** EMIR 3.0 (제안)에 따라 EU 청산회원은 시스템적으로 중요한 특정 상품(특히 유로화 표시 IRS)에 대해 EU 인가 CCP에 활성 계좌를 유지해야 할 수 있으며, 이는 LCH Ltd SwapClear에서 EU 기반 대안으로 일부 거래량이 이동할 가능성이 있다.
+- **LCH SA 재포지셔닝:** Euronext 청산 상실 이후, LCH SA는 CDSClear, RepoClear SA, 신규 DigitalAssetClear 서비스에 집중하며 EU 인가 CCP 지위를 유지하는 방향으로 전환하였다.
+
+---
+
+## 8. 수수료 (Fees)
+
+### 8.1 서비스별 청산 수수료 (Clearing Fees by Service)
+
+#### SwapClear (LCH Ltd)
+
+| 수수료 유형 | 금액 |
+|-------------|------|
+| 자기청산 연회비 (LCH LLC - 미국) | 연 250,000 USD (12개월 분할 징수) |
+| 고객 청산 수수료 | 단계별 거래 등록 모델 및 단계별 유지 수수료 (2024년 7월 도입, HTO 수수료 제도의 부적절한 이용 억제 목적) |
+| 압축 수수료 | 서비스에 포함; 기법에 따라 구체적 요율 상이 |
+| 문의 | RatesClientServices@lch.com |
+
+출처: [LCH SwapClear Fees](https://www.lseg.com/en/post-trade/clearing/lch-services/swapclear/fees)
+
+#### CDSClear (LCH SA)
+
+| 수수료 유형 | 금액 |
+|-------------|------|
+| 연간 회원 및 청산 고정 수수료 (딜러 지위) | 연 EUR 400,000 (모든 자기청산 활동 포함) |
+| 일반회원 변동 요율 | 신규 회원 첫해 수수료 면제 가능 (2026년까지) |
+| 문의 | CDSClearSales@lch.com |
+
+출처: [LCH CDSClear Fees](https://www.lseg.com/en/post-trade/clearing/lch-services/cdsclear/fees)
+
+#### RepoClear SA (LCH SA)
+
+| 수수료 유형 | 금액 |
+|-------------|------|
+| 최소 월간 활동 수수료 (MAC) | 회원당 EUR 8,500 (현재 추가 공지 시까지 면제) |
+| 신규 회원 온보딩 수수료 | EUR 20,000 (1회) |
+
+출처: [LCH RepoClear SA Fees](https://www.lseg.com/en/post-trade/clearing/lch-services/repoclear/repoclear-sa/fees)
+
+#### EquityClear (LCH Ltd)
+
+| 수수료 유형 | 금액 |
+|-------------|------|
+| 결제 수수료 | 2025년 1월 1일 시행 공개 수수료표 기준 |
+
+출처: [LCH EquityClear Settlement Fee Schedule](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-ltd-equityclear-settlement-fee-schedule.pdf)
+
+### 8.2 회원 및 계좌 구조 수수료 (LCH SA)
+
+| 수수료 유형 | 금액 |
+|-------------|------|
+| LCH Ltd 가입 신청 수수료 | GBP 10,000 (영국은 VAT 별도) |
+| LCH SA 신규 회원 코드 | EUR 1,000 (1회) |
+| 추가 회원 코드 (동일 법인) | EUR 2,000 (1회) |
+| 청산 변경 (Clearer Change) | EUR 2,000 (1회) |
+| ISA/OSA 계좌 수수료 (CDSClear) | 6개월당 EUR 3,500 |
+| ISA/OSA 계좌 수수료 (RepoClear) | 6개월당 EUR 3,500 (ISA) / EUR 1,200 (OSA Net) |
+| DigitalAssetClear 계좌 수수료 | 6개월당 EUR 3,500 (ISA) / EUR 1,200 (OSA Net) |
+| 연결(CMC) | 등급 및 대역폭에 따라 월 EUR 593~3,061 |
+
+출처: [LCH SA Fees](https://www.lseg.com/en/post-trade/clearing/membership/sa-membership/sa-fees) (2025년 5월 7일 시행)
+
+---
+
+## 9. 최근 동향 (Recent Developments)
+
+### 9.1 시스템 업그레이드 (최근 5년) (System Upgrades)
+
+| 연도 | 개발 사항 |
+|------|-----------|
+| 2020년 | LCH가 LSEG Technology의 Millennium Clearing & Risk (MCCP) 플랫폼을 청산·결제 운영에 구현 ([FinTech Futures](https://www.fintechfutures.com/fintech-innovation/lch-implements-clearing-and-settlement-solution-from-lseg-technology)) |
+| 2022년 | MCCP 플랫폼을 EquityClear (Ltd)에 배포 -- 무접촉 STP, 하드웨어 가속 활용 실시간 병렬 처리 ([Finance Magnates](https://www.financemagnates.com/trading-room/industry-news/lch-equityclear-goes-live-with-new-lseg-technology-post-trade-platform/)) |
+| 2024년 | FMX SOFR 선물에 대한 Listed Rates 청산 신규 플랫폼 출시 |
+| 2024년 | 담보 관리 분야 ISO 20022 도입 확대 |
+| 진행 중 | 나머지 서비스의 MCCP 플랫폼 점진적 이전 |
+
+### 9.2 신규 서비스 (New Services)
+
+| 연도 | 서비스 |
+|------|--------|
+| 2023년 | ForexClear가 Quantile과 함께 스마트 청산 솔루션 출시, FX 장부의 선별적 청산 가능 |
+| 2024년 | **Listed Rates:** 상장 금리 파생상품 청산 개시, 최초 FMX SOFR 선물 (2024년 9월); 2025년에 미국 국채 선물 청산 추가 |
+| 2024년 | **DigitalAssetClear (LCH SA):** GFO-X 거래소와 파트너십으로 디지털 자산 파생상품에 대한 신규 분리형 CCP 청산 서비스 ([LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/digitalassetclear)) |
+| 2024년 | **포트폴리오 증거금 서비스:** FMX 선물과 SwapClear IRS 포트폴리오 간 교차증거금; Marex가 최초로 고객 접근을 제공하는 청산사 ([Marex](https://www.marex.com/news/2025/10/marex-first-clearing-firm-to-enable-client-access-to-competitive-margin-benefits-with-fmx-futures-exchange-and-lch-ltd/)) |
+| 2025년 | 적격 담보 확대: 덴마크 커버드본드; 중국 국채 (EUR 및 USD 표시) |
+| 2025년 | EUR 인플레이션 스왑 청산 신기록: 2025년 상반기 명목원금 2.9조 EUR (전년 대비 26%↑) |
+
+### 9.3 규제 변화 (Regulatory Changes)
+
+| 연도 | 변경 사항 |
+|------|-----------|
+| 2022년 | ESMA가 LCH Ltd를 **Tier 2 시스템적으로 중요한 제3국 CCP**로 분류 |
+| 2022~2025년 | 영국 CCP에 대한 EU 동등성이 반복적으로 연장; 현재 **2028년 6월 30일**까지 연장 |
+| 2024년 | ESMA와 Bank of England이 영국 CCP 감독 협력에 관한 개정 MoU 체결 |
+| 2025년 | EU EMIR 3.0 제안(활성 계좌 요건) 논의 중 -- LCH Ltd SwapClear의 유로화 청산 거래량에 잠재적 영향 |
+| 2025년 | LCH SA CPMI-IOSCO PFMI 자체 평가 발행 (2025년 Q1) |
+| 2026년 | LCH SA가 AMF 외부위탁, EMIR SITG 요건, EU CCPRR 준수 관련 CDS 청산 규칙 변경을 제안 ([Federal Register](https://regulations.justia.com/regulations/fedreg/2026/03/26/2026-05851.html)) |
+
+### 9.4 전략적 이니셔티브 (Strategic Initiatives)
+
+| 이니셔티브 | 세부 내용 |
+|-----------|-----------|
+| **FMX 파트너십** | BGC Group의 FMX와 전략적 파트너십을 통해 미국 국채 및 SOFR 선물에서 CME의 지배적 지위에 도전; LCH가 청산 및 SwapClear OTC 포지션과의 포트폴리오 증거금 제공 |
+| **EU CCP 전략** | Euronext 이탈 이후 LCH SA 재포지셔닝: CDSClear 성장 (28개 회원, 고객 거래량 88% 증가) 및 DigitalAssetClear 출시에 집중 |
+| **담보 확대** | 비전통적 자산을 포함한 적격 담보 범위 확대; HSBC와 BNP Paribas를 수탁은행으로 추가 |
+| **고객 청산 성장** | CDSClear: 1,753개 계좌에 걸친 217개 고객 법인; ForexClear: 92개 고객 |
+| **압축 혁신** | 혼합금리 압축, 현금흐름 차감, 제3자 다자간 압축 파트너십 등 압축 도구에 대한 지속적 투자 |
+| **SwapAgent 성장** | 회원 수 29개에서 36개로 증가; 2024년 등록 명목원금 21.4조 USD (13.4조 USD에서 증가) |
+
+### 9.5 브렉시트가 Ltd 대 SA 구조에 미친 영향 (Brexit Impact on Ltd vs SA Structure)
+
+최근 LCH에 대한 가장 중대한 구조적 변화는 브렉시트 이후 LCH Ltd와 LCH SA의 분기이다:
+
+**LCH Ltd (영국):**
+- EU 인가 지위 상실에도 불구하고 OTC IRS 청산(SwapClear)에서의 지배적 위치 유지
+- ESMA로부터 임시 동등성 및 Tier 2 인정 획득, 2028년까지 연장
+- EU 당국으로부터 유로화 표시 청산을 EU로 이전하라는 지속적인 정치적 압력에 직면
+- 경쟁력 강화를 위해 신규 사업(Listed Rates/FMX) 출시하여 다각화
+- 지속적 성장: 2024년 상반기 SwapClear만으로 779조 USD 명목원금 청산
+
+**LCH SA (파리):**
+- 2023~2024년 Euronext의 자체 CCP로의 이관으로 최대 수익원(Euronext EquityClear 및 CommodityClear) 상실
+- LSEG가 Euronext의 잔여 지분 11.1%를 1.11억 EUR에 인수, 완전 소유 달성
+- CDSClear (강력한 성장: 28개 회원, 고객 거래량 88% 증가) 및 DigitalAssetClear를 미래 성장 동력으로 삼아 방향 전환
+- EU 인가 CCP 지위를 유지하여, EU 활성 계좌 요건이 현실화될 경우 유로화 청산 이전의 수용 기관으로 자리매김할 가능성
+- RepoClear SA가 유로존 국채 레포 시장에 대한 서비스를 지속
+
+---
+
+## 출처 (Sources)
+
+1. [LCH Company Structure - LSEG](https://www.lseg.com/en/post-trade/clearing/about-lch/structure-and-governance/company-structure)
+2. [LCH (clearing house) - Wikipedia](https://en.wikipedia.org/wiki/LCH_(clearing_house))
+3. [LCH History - LSEG](https://www.lch.com/about-us/our-history)
+4. [LCH Ltd Margin Methodology - LSEG](https://www.lseg.com/en/post-trade/clearing/risk-management/ltd-risk-management/ltd-margin-methodology)
+5. [LCH SwapClear Risk Management - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/swapclear/risk-management)
+6. [LCH CDSClear Risk Management - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/cdsclear/risk-management)
+7. [LCH Ltd Membership - LSEG](https://www.lseg.com/en/post-trade/clearing/membership/ltd-membership)
+8. [LCH SA Fees - LSEG](https://www.lseg.com/en/post-trade/clearing/membership/sa-membership/sa-fees)
+9. [LCH SwapClear Fees - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/swapclear/fees)
+10. [LCH CDSClear Fees - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/cdsclear/fees)
+11. [LCH RepoClear SA Fees - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/repoclear/repoclear-sa/fees)
+12. [RBA Assessment of LCH Limited SwapClear Service, December 2020, Appendix B](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html)
+13. [LCH Ltd Default Waterfall (October 2024)](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-ltd-default-waterfall-oct-2024.pdf)
+14. [LCH SA Default Waterfall](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-sa-default-waterfall.pdf)
+15. [ESMA extends tiering and recognition of UK CCPs](https://www.esma.europa.eu/press-news/esma-news/esma-extends-tiering-and-recognition-three-uk-based-ccps)
+16. [ESMA-BoE Revised MoU on UK CCPs](https://www.esma.europa.eu/press-news/esma-news/esma-and-bank-england-conclude-revised-mou-respect-uk-based-ccps-under-emir)
+17. [LCH QCCP Status Document (Dec 2022)](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/structure-and-governance/lch-qccp-status-dec-22-clean-latest-0.pdf)
+18. [LCH CCP Disclosures - LSEG](https://www.lseg.com/en/post-trade/clearing/clearing-resources/ccp-disclosures)
+19. [LCH Ltd CPMI-IOSCO Qualitative Assessment Q3 2024](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/cpmi-iosco-qualitative-assessment-of-lch-limited-q3-2024.pdf)
+20. [LCH SA CPMI-IOSCO Self-Assessment Q1 2025](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/ccp-disclosures/lch-sa-cpmi-iosco-self-qualitative-assessment-q1-2025.pdf)
+21. [Clarus FT - What's New in CCP Disclosures Q4 2024](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)
+22. [Clarus FT - 2024 CCP Volumes and Share in IRD](https://www.clarusft.com/2024-ccp-volumes-and-share-in-ird/)
+23. [Clarus FT - Swap Default Funds at CME & LCH](https://www.clarusft.com/swap-default-funds-at-the-cme-lch/)
+24. [Risk.net - LCH SA default funds hit record highs](https://www.risk.net/risk-quantum/7957808/lch-sas-default-funds-hit-record-highs)
+25. [Risk.net - Clearing House of the Year: LCH](https://www.risk.net/awards/7960370/clearing-house-of-the-year-lch)
+26. [LCH Group Holdings Limited Financial Statements 2024](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/annual-reports/lch-group-holdings-limited-financial-statements-2024.pdf)
+27. [LCH Limited Financial Statements 2025](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/annual-reports/2025-lch-limited-financial-statements.pdf)
+28. [LSEG 2024 Preliminary Results](https://www.lseg.com/content/dam/lseg/en_us/documents/investor-relations/financial-results/preliminary-results/rns/lseg-2024-preliminary-results-rns-27feb2025.pdf)
+29. [Euronext - Successful Expansion of Euronext Clearing](https://www.euronext.com/en/about/media/euronext-press-releases/successful-expansion-euronext-clearing-all-euronext-financial)
+30. [LCH Group acquires Euronext's stake in LCH SA - LSEG](https://www.lseg.com/en/media-centre/press-releases/2023/lch-group-to-acquire-euronexts-stake-in-lch-sa)
+31. [LSEG Technology implements new clearing platform for EquityClear](https://www.fintechfutures.com/fintech-innovation/lch-implements-clearing-and-settlement-solution-from-lseg-technology)
+32. [LCH EquityClear Interoperability - LSEG](https://www.lseg.com/en/post-trade/clearing/lch-services/equityclear/equityclear-ltd/essentials/ccp-interoperability)
+33. [ESRB Report on CCP Interoperability Arrangements (Jan 2019)](https://www.esrb.europa.eu/pub/pdf/reports/esrb.report190131_CCP_interoperability_arrangements~99908a78e7.en.pdf)

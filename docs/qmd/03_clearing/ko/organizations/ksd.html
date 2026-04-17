@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>KSD (한국예탁결제원, Korea Securities Depository) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/ko/organizations/asx_clear.html">청산기관</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/ko/organizations/ksd.html">KSD (한국예탁결제원, Korea Securities Depository)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 청산결제 — 개요 (Global Clearing &amp; Settlement — Overview)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 청산결제 — 비교 분석 (Global Clearing &amp; Settlement -- Comparative Analysis)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">청산기관</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/asx_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Clear / ASX Clear (Futures) (호주증권거래소 청산소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/ccil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearing Corporation of India Limited (CCIL)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/cdp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Central Depository Pte Ltd (CDP, 싱가포르 중앙예탁청산기관)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/cds_canada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CDS Clearing and Depository Services (CDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/clearstream.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearstream (클리어스트림)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/cme_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Clearing (CME 청산소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/csdc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/dtcc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DTCC (Depository Trust &amp; Clearing Corporation, 미국예탁결제공사)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/eurex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing AG (유렉스 청산소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/euroccp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe (유럽중앙청산소 / Cboe 클리어 유럽)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/euroclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euroclear Group (Euroclear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/hkex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Clearing (홍콩거래소 청산) – HKSCC / HKCC / SEOCH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/ice_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Clear (ICE Clear U.S. / ICE Clear Europe / ICE Clear Credit)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/jscc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japan Securities Clearing Corporation (JSCC, 일본증권청산기관)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/krx_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX 청산 (한국거래소 CCP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/ksd.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">KSD (한국예탁결제원, Korea Securities Depository)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/lch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH (LCH Limited &amp; LCH SA, 런던청산소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/muqassa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Securities Clearing Center Company (Muqassa, 무까사)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/occ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">OCC (Options Clearing Corporation, 옵션청산공사)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/six_xclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SIX x-clear AG (SIX x-clear)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">규제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/regulations/asia_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">아시아-태평양 청산 및 결제 규제 (Asia-Pacific Clearing &amp; Settlement Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/regulations/eu_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU 청산 및 결제 규제 (EU Clearing &amp; Settlement Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/regulations/us_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">미국 청산 및 결제 규제 (U.S. Clearing &amp; Settlement Regulation)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">매매시스템</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/systems/dtcc_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DTCC 핵심 시스템 (DTCC Core Systems) — NSCC/DTC 결제 및 청산 인프라</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/systems/eurex_clearing_prisma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing — C7 아키텍처 및 PRISMA 증거금 엔진 (C7 Architecture &amp; PRISMA Margin Engine)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/systems/lch_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH 청산 플랫폼 및 증거금 엔진 (LCH Clearing Platforms &amp; Margin Engines)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#개요-및-기본-정보-overview-profile" id="toc-개요-및-기본-정보-overview-profile" class="nav-link active" data-scroll-target="#개요-및-기본-정보-overview-profile">1. 개요 및 기본 정보 (Overview &amp; Profile)</a>
+  <ul class="collapse">
+  <li><a href="#주요-연혁-key-historical-milestones" id="toc-주요-연혁-key-historical-milestones" class="nav-link" data-scroll-target="#주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</a></li>
+  </ul></li>
+  <li><a href="#핵심-서비스-core-services" id="toc-핵심-서비스-core-services" class="nav-link" data-scroll-target="#핵심-서비스-core-services">2. 핵심 서비스 (Core Services)</a>
+  <ul class="collapse">
+  <li><a href="#증권-예탁-securities-depository" id="toc-증권-예탁-securities-depository" class="nav-link" data-scroll-target="#증권-예탁-securities-depository">2.1 증권 예탁 (Securities Depository)</a></li>
+  <li><a href="#결제-서비스-settlement-services" id="toc-결제-서비스-settlement-services" class="nav-link" data-scroll-target="#결제-서비스-settlement-services">2.2 결제 서비스 (Settlement Services)</a></li>
+  <li><a href="#펀드-결제-fund-settlement" id="toc-펀드-결제-fund-settlement" class="nav-link" data-scroll-target="#펀드-결제-fund-settlement">2.3 펀드 결제 (Fund Settlement)</a></li>
+  <li><a href="#증권-정보-서비스-securities-information-services" id="toc-증권-정보-서비스-securities-information-services" class="nav-link" data-scroll-target="#증권-정보-서비스-securities-information-services">2.4 증권 정보 서비스 (Securities Information Services)</a></li>
+  </ul></li>
+  <li><a href="#결제-인프라-settlement-infrastructure" id="toc-결제-인프라-settlement-infrastructure" class="nav-link" data-scroll-target="#결제-인프라-settlement-infrastructure">3. 결제 인프라 (Settlement Infrastructure)</a>
+  <ul class="collapse">
+  <li><a href="#결제-프로세스-settlement-process" id="toc-결제-프로세스-settlement-process" class="nav-link" data-scroll-target="#결제-프로세스-settlement-process">3.1 결제 프로세스 (Settlement Process)</a></li>
+  <li><a href="#결제-시간-settlement-timing" id="toc-결제-시간-settlement-timing" class="nav-link" data-scroll-target="#결제-시간-settlement-timing">3.2 결제 시간 (Settlement Timing)</a></li>
+  <li><a href="#결제-은행-settlement-banks" id="toc-결제-은행-settlement-banks" class="nav-link" data-scroll-target="#결제-은행-settlement-banks">3.3 결제 은행 (Settlement Banks)</a></li>
+  <li><a href="#결제-시스템-개편-settlement-system-overhaul-2021-2026" id="toc-결제-시스템-개편-settlement-system-overhaul-2021-2026" class="nav-link" data-scroll-target="#결제-시스템-개편-settlement-system-overhaul-2021-2026">3.4 결제 시스템 개편 (Settlement System Overhaul, 2021-2026)</a></li>
+  </ul></li>
+  <li><a href="#기술-및-인프라-technology-infrastructure" id="toc-기술-및-인프라-technology-infrastructure" class="nav-link" data-scroll-target="#기술-및-인프라-technology-infrastructure">4. 기술 및 인프라 (Technology &amp; Infrastructure)</a></li>
+  <li><a href="#dlt-블록체인-이니셔티브-dlt-blockchain-initiatives" id="toc-dlt-블록체인-이니셔티브-dlt-blockchain-initiatives" class="nav-link" data-scroll-target="#dlt-블록체인-이니셔티브-dlt-blockchain-initiatives">5. DLT / 블록체인 이니셔티브 (DLT / Blockchain Initiatives)</a>
+  <ul class="collapse">
+  <li><a href="#증권형-토큰-프레임워크-security-token-framework" id="toc-증권형-토큰-프레임워크-security-token-framework" class="nav-link" data-scroll-target="#증권형-토큰-프레임워크-security-token-framework">5.1 증권형 토큰 프레임워크 (Security Token Framework)</a></li>
+  <li><a href="#디지털-자산-인프라-digital-asset-infrastructure" id="toc-디지털-자산-인프라-digital-asset-infrastructure" class="nav-link" data-scroll-target="#디지털-자산-인프라-digital-asset-infrastructure">5.2 디지털 자산 인프라 (Digital Asset Infrastructure)</a></li>
+  </ul></li>
+  <li><a href="#규제-체계-regulatory-framework" id="toc-규제-체계-regulatory-framework" class="nav-link" data-scroll-target="#규제-체계-regulatory-framework">6. 규제 체계 (Regulatory Framework)</a></li>
+  <li><a href="#국제-연계-cross-border-linkages" id="toc-국제-연계-cross-border-linkages" class="nav-link" data-scroll-target="#국제-연계-cross-border-linkages">7. 국제 연계 (Cross-Border Linkages)</a></li>
+  <li><a href="#글로벌-csd-비교-comparison-with-global-csds" id="toc-글로벌-csd-비교-comparison-with-global-csds" class="nav-link" data-scroll-target="#글로벌-csd-비교-comparison-with-global-csds">8. 글로벌 CSD 비교 (Comparison with Global CSDs)</a></li>
+  <li><a href="#최근-동향-recent-developments" id="toc-최근-동향-recent-developments" class="nav-link" data-scroll-target="#최근-동향-recent-developments">9. 최근 동향 (Recent Developments)</a></li>
+  <li><a href="#수수료-fees" id="toc-수수료-fees" class="nav-link" data-scroll-target="#수수료-fees">10. 수수료 (Fees)</a></li>
+  <li><a href="#출처-sources" id="toc-출처-sources" class="nav-link" data-scroll-target="#출처-sources">출처 (Sources)</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/ko/organizations/asx_clear.html">청산기관</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/ko/organizations/ksd.html">KSD (한국예탁결제원, Korea Securities Depository)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">KSD (한국예탁결제원, Korea Securities Depository)</h1>
+<p class="subtitle lead">청산결제 &gt; 청산기관</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 4월 17일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>최종 업데이트:</strong> 2026-04-13 <strong>조사 등급:</strong> Tier 1 <strong>유형:</strong> CSD (중앙예탁결제기관, Central Securities Depository)</p>
+</blockquote>
+<hr>
+<section id="개요-및-기본-정보-overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="개요-및-기본-정보-overview-profile">1. 개요 및 기본 정보 (Overview &amp; Profile)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>공식 명칭</td>
+<td>한국예탁결제원 (Korea Securities Depository)</td>
+</tr>
+<tr class="even">
+<td>약칭</td>
+<td>KSD</td>
+</tr>
+<tr class="odd">
+<td>웹사이트</td>
+<td><a href="https://www.ksd.or.kr">https://www.ksd.or.kr</a></td>
+</tr>
+<tr class="even">
+<td>설립 연도</td>
+<td>1974년 12월 6일 (한국증권대체결제주식회사로 설립); 이후 수차례 개편</td>
+</tr>
+<tr class="odd">
+<td>국가 / 도시</td>
+<td>대한민국 / 부산 (본사)</td>
+</tr>
+<tr class="even">
+<td>소유 구조</td>
+<td>금융위원회 산하 공공기관</td>
+</tr>
+<tr class="odd">
+<td>감독 기관</td>
+<td>금융위원회 (FSC, Financial Services Commission) / 금융감독원 (FSS, Financial Supervisory Service)</td>
+</tr>
+<tr class="even">
+<td>LEI</td>
+<td>9884008RRMX1X5HV6625</td>
+</tr>
+<tr class="odd">
+<td>SWIFT BIC</td>
+<td>KSDCKRSEXXX</td>
+</tr>
+<tr class="even">
+<td>핵심 기능</td>
+<td>증권 예탁, 결제대리, 명의개서대리, 펀드 결제</td>
+</tr>
+<tr class="odd">
+<td>수탁 자산 규모</td>
+<td>3,149조 원 (2014년 기준); 2026년 현재 상당히 증가했을 것으로 추정</td>
+</tr>
+<tr class="even">
+<td>일평균 자금 처리 규모</td>
+<td>약 70조 원 (2014년 기준)</td>
+</tr>
+</tbody>
+</table>
+<section id="주요-연혁-key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>연도</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1974</td>
+<td>한국증권대체결제주식회사 설립</td>
+</tr>
+<tr class="even">
+<td>1994</td>
+<td>한국예탁결제원으로 재편</td>
+</tr>
+<tr class="odd">
+<td>2005</td>
+<td>KRX (한국거래소) 그룹 구조에 편입</td>
+</tr>
+<tr class="even">
+<td>2009</td>
+<td>자본시장법 (FSCMA, Financial Investment Services and Capital Markets Act) 에 따라 독립 기관으로 재설립</td>
+</tr>
+<tr class="odd">
+<td>2016</td>
+<td>본사를 부산으로 이전</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>분할결제 제도 도입 (1,000억 원 단위)</td>
+</tr>
+<tr class="odd">
+<td>2024</td>
+<td>결제 단위를 1,000억 원에서 500억 원으로 축소</td>
+</tr>
+<tr class="even">
+<td>2026</td>
+<td>결제 단위를 100억 원으로 추가 축소; 운영 시간 확대</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: Wikipedia, “Korea Securities Depository”] [출처: 한국예탁결제원 공식 홈페이지, https://www.ksd.or.kr]</p>
+<hr>
+</section>
+</section>
+<section id="핵심-서비스-core-services" class="level2">
+<h2 class="anchored" data-anchor-id="핵심-서비스-core-services">2. 핵심 서비스 (Core Services)</h2>
+<section id="증권-예탁-securities-depository" class="level3">
+<h3 class="anchored" data-anchor-id="증권-예탁-securities-depository">2.1 증권 예탁 (Securities Depository)</h3>
+<ul>
+<li>상장 증권 전체 보관 (KOSPI, KOSDAQ, 채권, ETF)</li>
+<li>증권의 부동화(Immobilization) 및 전자화(Dematerialization)</li>
+<li>계좌부 대체 방식 (Book-entry Transfer System)</li>
+<li>기업 행위 처리 (배당, 유상증자, 주식 분할 등)</li>
+</ul>
+</section>
+<section id="결제-서비스-settlement-services" class="level3">
+<h3 class="anchored" data-anchor-id="결제-서비스-settlement-services">2.2 결제 서비스 (Settlement Services)</h3>
+<ul>
+<li>KRX (한국거래소) 청산 거래의 결제 대리</li>
+<li>주식 DVP (Delivery vs.&nbsp;Payment) 결제 (T+2), 채권 DVP 결제 (T+1)</li>
+<li>거래소 거래 및 장외(OTC) 거래 결제</li>
+<li>결제촉진담보금 — 현금, 국채, 통화안정증권 등</li>
+<li>결제 이행 담보 제도 운영</li>
+</ul>
+</section>
+<section id="펀드-결제-fund-settlement" class="level3">
+<h3 class="anchored" data-anchor-id="펀드-결제-fund-settlement">2.3 펀드 결제 (Fund Settlement)</h3>
+<ul>
+<li>펀드 청약 및 환매 결제</li>
+<li>글로벌 펀드 플랫폼 연계 (Euroclear FundSettle, Clearstream Vestima)</li>
+<li>명의개서대리인 서비스</li>
+</ul>
+</section>
+<section id="증권-정보-서비스-securities-information-services" class="level3">
+<h3 class="anchored" data-anchor-id="증권-정보-서비스-securities-information-services">2.4 증권 정보 서비스 (Securities Information Services)</h3>
+<ul>
+<li>증권 기준 정보 관리</li>
+<li>기업 행위 통보</li>
+<li>실질주주 명부 관리</li>
+</ul>
+<p>[출처: 한국예탁결제원 공식 홈페이지, https://www.ksd.or.kr]</p>
+<hr>
+</section>
+</section>
+<section id="결제-인프라-settlement-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="결제-인프라-settlement-infrastructure">3. 결제 인프라 (Settlement Infrastructure)</h2>
+<section id="결제-프로세스-settlement-process" class="level3">
+<h3 class="anchored" data-anchor-id="결제-프로세스-settlement-process">3.1 결제 프로세스 (Settlement Process)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>단계</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>매매 확인</td>
+<td>KRX가 체결 거래 데이터를 한국예탁결제원에 전송</td>
+</tr>
+<tr class="even">
+<td>차감</td>
+<td>한국예탁결제원이 청산 참가자별 순결제 의무를 산출</td>
+</tr>
+<tr class="odd">
+<td>결제 지시</td>
+<td>결제 지시 자동 생성</td>
+</tr>
+<tr class="even">
+<td>DVP 결제</td>
+<td>증권 인도와 대금 지급의 동시 이행</td>
+</tr>
+<tr class="odd">
+<td>결제 확정</td>
+<td>계좌부 대체 완료 시 결제 확정력(Finality) 발생</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="결제-시간-settlement-timing" class="level3">
+<h3 class="anchored" data-anchor-id="결제-시간-settlement-timing">3.2 결제 시간 (Settlement Timing)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>결제 주기</th>
+<th>결제 시각</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주식</td>
+<td>T+2</td>
+<td>09:00</td>
+</tr>
+<tr class="even">
+<td>국채</td>
+<td>T+1</td>
+<td>09:00</td>
+</tr>
+<tr class="odd">
+<td>회사채</td>
+<td>T+1 ~ T+2</td>
+<td>15:30</td>
+</tr>
+<tr class="even">
+<td>환매채 (Repos)</td>
+<td>T+0 ~ T+2</td>
+<td>변동</td>
+</tr>
+<tr class="odd">
+<td>파생상품 증거금</td>
+<td>T+0/T+1</td>
+<td>11:00</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="결제-은행-settlement-banks" class="level3">
+<h3 class="anchored" data-anchor-id="결제-은행-settlement-banks">3.3 결제 은행 (Settlement Banks)</h3>
+<ul>
+<li>한국은행 (대규모·국채 결제를 위한 중앙은행 자금)</li>
+<li>상업 결제 은행: 자기자본비율 및 신용등급 요건 충족 필요</li>
+<li>한국은행 환매조건부매매 (RP) 제도 운영</li>
+<li>일일 자금 처리 규모: 약 70조 원 [2014년 기준 데이터]</li>
+</ul>
+</section>
+<section id="결제-시스템-개편-settlement-system-overhaul-2021-2026" class="level3">
+<h3 class="anchored" data-anchor-id="결제-시스템-개편-settlement-system-overhaul-2021-2026">3.4 결제 시스템 개편 (Settlement System Overhaul, 2021-2026)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>연도</th>
+<th>변경 내용</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2021</td>
+<td>분할결제 도입 (1,000억 원 단위)</td>
+<td>결제 최대 위험 감소</td>
+</tr>
+<tr class="even">
+<td>2024</td>
+<td>결제 단위 500억 원으로 축소</td>
+<td>담보금 15~20% 감소</td>
+</tr>
+<tr class="odd">
+<td>2026년 2월</td>
+<td>운영 시간 확대 (7:00~16:10)</td>
+<td>개장 전 준비 시간 개선</td>
+</tr>
+<tr class="even">
+<td>2026년 4월</td>
+<td>결제 단위 100억 원으로 축소</td>
+<td>담보금 추가 감소</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2026년 주요 지표:</strong></p>
+<ul>
+<li>일평균 거래 대금: 29.6조 원 (2026년 1~3월), 138.7% 증가</li>
+<li>기관 주식 결제 금액: 일평균 3.6조 원, 157.1% 증가</li>
+<li>참가사당 결제촉진담보금: 일평균 848억 원, 131% 증가</li>
+</ul>
+<p>[출처: 서울경제신문, “KSD 결제 시스템 개편”, 2026년 4월] [출처: KRX, “증권시장 청산결제 업무규정_전문_20260304”]</p>
+<hr>
+</section>
+</section>
+<section id="기술-및-인프라-technology-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="기술-및-인프라-technology-infrastructure">4. 기술 및 인프라 (Technology &amp; Infrastructure)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>핵심 시스템</td>
+<td>한국예탁결제원 증권결제시스템</td>
+</tr>
+<tr class="even">
+<td>ISO 20022</td>
+<td>CSD 연계, 명의개서대리, 글로벌 펀드 플랫폼에 도입</td>
+</tr>
+<tr class="odd">
+<td>SWIFT</td>
+<td>SWIFT 네트워크 연결 (BIC: KSDCKRSEXXX)</td>
+</tr>
+<tr class="even">
+<td>API</td>
+<td>증권 정보 서비스에 배포</td>
+</tr>
+<tr class="odd">
+<td>데이터 센터</td>
+<td>부산</td>
+</tr>
+<tr class="even">
+<td>STP 처리율</td>
+<td>높음 (거래소 거래의 자동 처리)</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: 한국예탁결제원 공식 홈페이지, https://www.ksd.or.kr]</p>
+<hr>
+</section>
+<section id="dlt-블록체인-이니셔티브-dlt-blockchain-initiatives" class="level2">
+<h2 class="anchored" data-anchor-id="dlt-블록체인-이니셔티브-dlt-blockchain-initiatives">5. DLT / 블록체인 이니셔티브 (DLT / Blockchain Initiatives)</h2>
+<section id="증권형-토큰-프레임워크-security-token-framework" class="level3">
+<h3 class="anchored" data-anchor-id="증권형-토큰-프레임워크-security-token-framework">5.1 증권형 토큰 프레임워크 (Security Token Framework)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>관련 법령</td>
+<td>전자증권법 및 자본시장법 개정</td>
+</tr>
+<tr class="even">
+<td>시행일</td>
+<td>2027년 1월</td>
+</tr>
+<tr class="odd">
+<td>한국예탁결제원의 역할</td>
+<td>모든 증권형 토큰의 한국예탁결제원 의무 등록</td>
+</tr>
+<tr class="even">
+<td>적용 범위</td>
+<td>광범위 — 상장 증권에 한정하지 않고 모든 증권형 토큰 포괄</td>
+</tr>
+<tr class="odd">
+<td>요건</td>
+<td>인가 중개기관 필수; 미인가 중개기관 금지</td>
+</tr>
+<tr class="even">
+<td>스마트 컨트랙트</td>
+<td>DLT의 장부 기재 및 스마트 컨트랙트 기능 법적 인정</td>
+</tr>
+<tr class="odd">
+<td>이전 시도</td>
+<td>2023년 법안 실패; 현행법은 장기간 논의 끝에 성립</td>
+</tr>
+<tr class="even">
+<td>미해결 과제</td>
+<td>디파이(DeFi) 플랫폼 관련 규율 미비</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="디지털-자산-인프라-digital-asset-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="디지털-자산-인프라-digital-asset-infrastructure">5.2 디지털 자산 인프라 (Digital Asset Infrastructure)</h3>
+<ul>
+<li>토큰 증권 중앙 등록기관으로서 한국예탁결제원 포지셔닝</li>
+<li>운영 체계 수립을 위한 규제 당국과의 협의 진행</li>
+</ul>
+<p>[출처: Ledger Insights, “Korea Tokenization Legislation”]</p>
+<hr>
+</section>
+</section>
+<section id="규제-체계-regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="규제-체계-regulatory-framework">6. 규제 체계 (Regulatory Framework)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주요 감독 기관</td>
+<td>금융위원회 (FSC) / 금융감독원 (FSS)</td>
+</tr>
+<tr class="even">
+<td>법적 근거</td>
+<td>자본시장법 (FSCMA, Financial Investment Services and Capital Markets Act)</td>
+</tr>
+<tr class="odd">
+<td>결제 확정력</td>
+<td>자본시장법 관련 조항</td>
+</tr>
+<tr class="even">
+<td>PFMI 역할</td>
+<td>KRX (CCP)를 보완하는 결제 대리 기관</td>
+</tr>
+<tr class="odd">
+<td>국제 표준</td>
+<td>ISO 20022 도입; SWIFT 연결</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: 한국예탁결제원 공식 홈페이지, https://www.ksd.or.kr]</p>
+<hr>
+</section>
+<section id="국제-연계-cross-border-linkages" class="level2">
+<h2 class="anchored" data-anchor-id="국제-연계-cross-border-linkages">7. 국제 연계 (Cross-Border Linkages)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상대방</th>
+<th>유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Euroclear</td>
+<td>CSD 연계</td>
+<td>한국 증권의 국가 간 결제</td>
+</tr>
+<tr class="even">
+<td>Clearstream</td>
+<td>CSD 연계</td>
+<td>국가 간 결제</td>
+</tr>
+<tr class="odd">
+<td>DTC (DTCC)</td>
+<td>CSD 연계</td>
+<td>한국·미국 증권의 국가 간 결제</td>
+</tr>
+<tr class="even">
+<td>Euroclear FundSettle</td>
+<td>펀드 플랫폼</td>
+<td>펀드 청약 및 환매</td>
+</tr>
+<tr class="odd">
+<td>Clearstream Vestima</td>
+<td>펀드 플랫폼</td>
+<td>펀드 청약 및 환매</td>
+</tr>
+<tr class="even">
+<td>SWIFT</td>
+<td>네트워크</td>
+<td>결제 지시를 위한 글로벌 메시징</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: 한국예탁결제원 공식 홈페이지, https://www.ksd.or.kr]</p>
+<hr>
+</section>
+<section id="글로벌-csd-비교-comparison-with-global-csds" class="level2">
+<h2 class="anchored" data-anchor-id="글로벌-csd-비교-comparison-with-global-csds">8. 글로벌 CSD 비교 (Comparison with Global CSDs)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 14%">
+<col style="width: 21%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>비교 항목</th>
+<th>KSD (한국)</th>
+<th>DTC (미국)</th>
+<th>Euroclear</th>
+<th>JASDEC (일본)</th>
+<th>CSDC (중국)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>설립 연도</td>
+<td>1974</td>
+<td>1973</td>
+<td>1968</td>
+<td>2002</td>
+<td>2001</td>
+</tr>
+<tr class="even">
+<td>수탁 자산</td>
+<td>3,149조 원 (2014)</td>
+<td>100조 달러 이상</td>
+<td>42.5조 유로</td>
+<td>[데이터 없음]</td>
+<td>11.05경 위안</td>
+</tr>
+<tr class="odd">
+<td>결제 주기 (주식)</td>
+<td>T+2</td>
+<td>T+1</td>
+<td>T+2</td>
+<td>T+2</td>
+<td>T+1</td>
+</tr>
+<tr class="even">
+<td>ISO 20022</td>
+<td>도입 완료</td>
+<td>도입 진행 중</td>
+<td>도입 완료</td>
+<td>도입 진행 중</td>
+<td>[데이터 없음]</td>
+</tr>
+<tr class="odd">
+<td>DLT 이니셔티브</td>
+<td>증권형 토큰 등록 (2027)</td>
+<td>Project Ion</td>
+<td>Canton Network</td>
+<td>파일럿 단계</td>
+<td>[데이터 없음]</td>
+</tr>
+<tr class="even">
+<td>국제 연계</td>
+<td>Euroclear, Clearstream, DTC 연계</td>
+<td>글로벌 네트워크</td>
+<td>Clearstream과의 브리지; 48개 시장</td>
+<td>Euroclear, Clearstream 연계</td>
+<td>Stock Connect (HKSCC)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="최근-동향-recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="최근-동향-recent-developments">9. 최근 동향 (Recent Developments)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>일자</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2026년</td>
+<td>결제 시스템 개편 (결제 단위 500억 원 → 100억 원; 운영 시간 확대)</td>
+</tr>
+<tr class="even">
+<td>2027년 1월</td>
+<td>증권형 토큰 의무 등록 체계 시행</td>
+</tr>
+<tr class="odd">
+<td>2026년 1분기</td>
+<td>거래 대금 급증: 일평균 29.6조 원, 138.7% 상승</td>
+</tr>
+<tr class="even">
+<td>지속 추진</td>
+<td>글로벌 연계를 위한 ISO 20022 도입</td>
+</tr>
+<tr class="odd">
+<td>지속 추진</td>
+<td>토큰 증권을 위한 DLT/블록체인 인프라 구축</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: 서울경제신문, “KSD 결제 시스템 개편”, 2026년 4월] [출처: Ledger Insights, “Korea Tokenization Legislation”]</p>
+<hr>
+</section>
+<section id="수수료-fees" class="level2">
+<h2 class="anchored" data-anchor-id="수수료-fees">10. 수수료 (Fees)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>수수료 유형</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>결제 수수료</td>
+<td>청산 참가자에게 부과</td>
+</tr>
+<tr class="even">
+<td>보관 수수료</td>
+<td>예탁 보관 증권에 대해 부과</td>
+</tr>
+<tr class="odd">
+<td>기업 행위 수수료</td>
+<td>배당, 유상증자 등의 처리 수수료</td>
+</tr>
+<tr class="even">
+<td>수수료 체계</td>
+<td>[영문으로 공개된 구체적인 수수료 체계 없음]</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="출처-sources" class="level2">
+<h2 class="anchored" data-anchor-id="출처-sources">출처 (Sources)</h2>
+<ul>
+<li>[출처: Wikipedia, “Korea Securities Depository”]</li>
+<li>[출처: 서울경제신문, “KSD 결제 시스템 개편”, 2026년 4월]</li>
+<li>[출처: Ledger Insights, “Korea Tokenization Legislation”]</li>
+<li>[출처: 한국예탁결제원 공식 홈페이지, https://www.ksd.or.kr]</li>
+<li>[출처: KRX, “증권시장 청산결제 업무규정_전문_20260304”]</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

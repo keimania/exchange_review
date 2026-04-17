@@ -1,0 +1,3375 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>SGX (싱가포르거래소) 파생상품 – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/sgx_derivatives.html">SGX (싱가포르거래소) 파생상품</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 (Global Derivatives Markets) — 개요 (Overview)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 — 비교 분석 (Global Derivatives Markets – Comparative Analysis)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">거래소</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Derivatives (호주증권거래소 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cboe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cboe Global Markets (Cboe 글로벌 마켓)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX, 중국금융선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group (CME 그룹)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE, 다롄상품거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME, 두바이상업거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/eurex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex (유렉스)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext Derivatives (유로넥스트 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX (홍콩거래소) 파생상품 시장</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange 선물)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX 파생상품시장 (한국거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX, 몬트리올거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O, 인도국립증권거래소 선물옵션)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (오사카거래소, OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">SGX (싱가포르거래소) 파생상품</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE, 상하이선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX, 대만선물거래소)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">규제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">아시아태평양 파생상품 규제 (Asia-Pacific Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU 파생상품 규제 (EU Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">미국 파생상품 규제 (U.S. Derivatives Regulation)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">매매시스템</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#개요-및-프로필-overview-profile" id="toc-개요-및-프로필-overview-profile" class="nav-link active" data-scroll-target="#개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</a>
+  <ul class="collapse">
+  <li><a href="#주요-연혁-key-historical-milestones" id="toc-주요-연혁-key-historical-milestones" class="nav-link" data-scroll-target="#주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</a></li>
+  </ul></li>
+  <li><a href="#시장-구조-market-structure" id="toc-시장-구조-market-structure" class="nav-link" data-scroll-target="#시장-구조-market-structure">2. 시장 구조 (Market Structure)</a>
+  <ul class="collapse">
+  <li><a href="#시장-부문-자산군-market-segments-asset-classes" id="toc-시장-부문-자산군-market-segments-asset-classes" class="nav-link" data-scroll-target="#시장-부문-자산군-market-segments-asset-classes">2.1 시장 부문 / 자산군 (Market Segments / Asset Classes)</a></li>
+  <li><a href="#매매시간-trading-sessions-hours" id="toc-매매시간-trading-sessions-hours" class="nav-link" data-scroll-target="#매매시간-trading-sessions-hours">2.2 매매시간 (Trading Sessions / Hours)</a></li>
+  <li><a href="#호가단위-일부-상품-tick-sizes-selected-products" id="toc-호가단위-일부-상품-tick-sizes-selected-products" class="nav-link" data-scroll-target="#호가단위-일부-상품-tick-sizes-selected-products">2.3 호가단위 (일부 상품) (Tick Sizes, Selected Products)</a></li>
+  <li><a href="#거래-단위-계약-단위-lot-sizes-contract-units" id="toc-거래-단위-계약-단위-lot-sizes-contract-units" class="nav-link" data-scroll-target="#거래-단위-계약-단위-lot-sizes-contract-units">2.4 거래 단위 / 계약 단위 (Lot Sizes / Contract Units)</a></li>
+  <li><a href="#시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs" id="toc-시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 / 유동성 공급자 프로그램 (Market Maker / Liquidity Provider Programs)</a></li>
+  </ul></li>
+  <li><a href="#매매-메커니즘-trading-mechanism" id="toc-매매-메커니즘-trading-mechanism" class="nav-link" data-scroll-target="#매매-메커니즘-trading-mechanism">3. 매매 메커니즘 (Trading Mechanism)</a>
+  <ul class="collapse">
+  <li><a href="#경매-메커니즘-auction-mechanisms" id="toc-경매-메커니즘-auction-mechanisms" class="nav-link" data-scroll-target="#경매-메커니즘-auction-mechanisms">3.1 경매 메커니즘 (Auction Mechanisms)</a></li>
+  <li><a href="#접속매매-continuous-trading" id="toc-접속매매-continuous-trading" class="nav-link" data-scroll-target="#접속매매-continuous-trading">3.2 접속매매 (Continuous Trading)</a></li>
+  <li><a href="#가격-발견-price-discovery" id="toc-가격-발견-price-discovery" class="nav-link" data-scroll-target="#가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</a></li>
+  <li><a href="#주문-우선순위-규칙-체결-알고리즘-order-priority-rules-matching-algorithms" id="toc-주문-우선순위-규칙-체결-알고리즘-order-priority-rules-matching-algorithms" class="nav-link" data-scroll-target="#주문-우선순위-규칙-체결-알고리즘-order-priority-rules-matching-algorithms">3.4 주문 우선순위 규칙 / 체결 알고리즘 (Order Priority Rules / Matching Algorithms)</a></li>
+  </ul></li>
+  <li><a href="#주문-유형-order-types" id="toc-주문-유형-order-types" class="nav-link" data-scroll-target="#주문-유형-order-types">4. 주문 유형 (Order Types)</a>
+  <ul class="collapse">
+  <li><a href="#표준-주문-유형-standard-order-types" id="toc-표준-주문-유형-standard-order-types" class="nav-link" data-scroll-target="#표준-주문-유형-standard-order-types">4.1 표준 주문 유형 (Standard Order Types)</a></li>
+  <li><a href="#고급-주문-유형-advanced-order-types" id="toc-고급-주문-유형-advanced-order-types" class="nav-link" data-scroll-target="#고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</a></li>
+  <li><a href="#유효기간-tif-조건-time-in-force-conditions" id="toc-유효기간-tif-조건-time-in-force-conditions" class="nav-link" data-scroll-target="#유효기간-tif-조건-time-in-force-conditions">4.3 유효기간 (TIF) 조건 (Time-in-Force Conditions)</a></li>
+  <li><a href="#주문-수정-및-취소-order-modification-cancellation" id="toc-주문-수정-및-취소-order-modification-cancellation" class="nav-link" data-scroll-target="#주문-수정-및-취소-order-modification-cancellation">4.4 주문 수정 및 취소 (Order Modification &amp; Cancellation)</a></li>
+  </ul></li>
+  <li><a href="#매매시스템-기술-sgx-titan-trading-system-technology" id="toc-매매시스템-기술-sgx-titan-trading-system-technology" class="nav-link" data-scroll-target="#매매시스템-기술-sgx-titan-trading-system-technology">5. 매매시스템 기술 — SGX Titan (Trading System Technology)</a>
+  <ul class="collapse">
+  <li><a href="#시스템-개요-system-overview" id="toc-시스템-개요-system-overview" class="nav-link" data-scroll-target="#시스템-개요-system-overview">5.1 시스템 개요 (System Overview)</a></li>
+  <li><a href="#아키텍처-architecture" id="toc-아키텍처-architecture" class="nav-link" data-scroll-target="#아키텍처-architecture">5.2 아키텍처 (Architecture)</a></li>
+  <li><a href="#지연시간-latency" id="toc-지연시간-latency" class="nav-link" data-scroll-target="#지연시간-latency">5.3 지연시간 (Latency)</a></li>
+  <li><a href="#플랫폼-연혁-및-발전-platform-history-evolution" id="toc-플랫폼-연혁-및-발전-platform-history-evolution" class="nav-link" data-scroll-target="#플랫폼-연혁-및-발전-platform-history-evolution">5.4 플랫폼 연혁 및 발전 (Platform History &amp; Evolution)</a></li>
+  <li><a href="#기술-스택-technology-stack" id="toc-기술-스택-technology-stack" class="nav-link" data-scroll-target="#기술-스택-technology-stack">5.5 기술 스택 (Technology Stack)</a></li>
+  <li><a href="#재해복구-및-업무연속성-disaster-recovery-business-continuity" id="toc-재해복구-및-업무연속성-disaster-recovery-business-continuity" class="nav-link" data-scroll-target="#재해복구-및-업무연속성-disaster-recovery-business-continuity">5.6 재해복구 및 업무연속성 (Disaster Recovery &amp; Business Continuity)</a></li>
+  </ul></li>
+  <li><a href="#시장-데이터-market-data" id="toc-시장-데이터-market-data" class="nav-link" data-scroll-target="#시장-데이터-market-data">6. 시장 데이터 (Market Data)</a>
+  <ul class="collapse">
+  <li><a href="#시장-데이터-플랫폼-itch-market-data-platform" id="toc-시장-데이터-플랫폼-itch-market-data-platform" class="nav-link" data-scroll-target="#시장-데이터-플랫폼-itch-market-data-platform">6.1 시장 데이터 플랫폼 — ITCH (Market Data Platform)</a></li>
+  <li><a href="#피드-유형-데이터-수준-feed-types-data-levels" id="toc-피드-유형-데이터-수준-feed-types-data-levels" class="nav-link" data-scroll-target="#피드-유형-데이터-수준-feed-types-data-levels">6.2 피드 유형 / 데이터 수준 (Feed Types / Data Levels)</a></li>
+  <li><a href="#데이터-배포-data-distribution" id="toc-데이터-배포-data-distribution" class="nav-link" data-scroll-target="#데이터-배포-data-distribution">6.3 데이터 배포 (Data Distribution)</a></li>
+  <li><a href="#시장-데이터-라이선스-market-data-licensing" id="toc-시장-데이터-라이선스-market-data-licensing" class="nav-link" data-scroll-target="#시장-데이터-라이선스-market-data-licensing">6.4 시장 데이터 라이선스 (Market Data Licensing)</a></li>
+  </ul></li>
+  <li><a href="#접속-및-접근-connectivity-access" id="toc-접속-및-접근-connectivity-access" class="nav-link" data-scroll-target="#접속-및-접근-connectivity-access">7. 접속 및 접근 (Connectivity &amp; Access)</a>
+  <ul class="collapse">
+  <li><a href="#회원-접근-유형-membership-access-types" id="toc-회원-접근-유형-membership-access-types" class="nav-link" data-scroll-target="#회원-접근-유형-membership-access-types">7.1 회원 / 접근 유형 (Membership / Access Types)</a></li>
+  <li><a href="#접속-방법-connection-methods" id="toc-접속-방법-connection-methods" class="nav-link" data-scroll-target="#접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</a></li>
+  <li><a href="#코로케이션-서비스-co-location-services" id="toc-코로케이션-서비스-co-location-services" class="nav-link" data-scroll-target="#코로케이션-서비스-co-location-services">7.3 코로케이션 서비스 (Co-Location Services)</a></li>
+  <li><a href="#api-프로토콜-api-protocols" id="toc-api-프로토콜-api-protocols" class="nav-link" data-scroll-target="#api-프로토콜-api-protocols">7.4 API 프로토콜 (API Protocols)</a></li>
+  <li><a href="#인증-적합성-테스트-certification-conformance-testing" id="toc-인증-적합성-테스트-certification-conformance-testing" class="nav-link" data-scroll-target="#인증-적합성-테스트-certification-conformance-testing">7.5 인증 (적합성 테스트) (Certification, Conformance Testing)</a></li>
+  </ul></li>
+  <li><a href="#리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" id="toc-리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (Risk Controls &amp; Circuit Breakers)</a>
+  <ul class="collapse">
+  <li><a href="#서킷브레이커-메커니즘-circuit-breaker-mechanism" id="toc-서킷브레이커-메커니즘-circuit-breaker-mechanism" class="nav-link" data-scroll-target="#서킷브레이커-메커니즘-circuit-breaker-mechanism">8.1 서킷브레이커 메커니즘 (Circuit Breaker Mechanism)</a></li>
+  <li><a href="#가격제한-일부-상품-price-limits-selected-products" id="toc-가격제한-일부-상품-price-limits-selected-products" class="nav-link" data-scroll-target="#가격제한-일부-상품-price-limits-selected-products">8.2 가격제한 (일부 상품) (Price Limits, Selected Products)</a></li>
+  <li><a href="#사전-매매-리스크-관리-pre-trade-risk-controls" id="toc-사전-매매-리스크-관리-pre-trade-risk-controls" class="nav-link" data-scroll-target="#사전-매매-리스크-관리-pre-trade-risk-controls">8.3 사전 매매 리스크 관리 (Pre-Trade Risk Controls)</a></li>
+  <li><a href="#sgx-dc-청산-재무-안전장치-채무불이행-워터폴-default-waterfall" id="toc-sgx-dc-청산-재무-안전장치-채무불이행-워터폴-default-waterfall" class="nav-link" data-scroll-target="#sgx-dc-청산-재무-안전장치-채무불이행-워터폴-default-waterfall">8.4 SGX-DC 청산 재무 안전장치 (채무불이행 워터폴) (Default Waterfall)</a></li>
+  </ul></li>
+  <li><a href="#규제-체계-regulatory-framework" id="toc-규제-체계-regulatory-framework" class="nav-link" data-scroll-target="#규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</a>
+  <ul class="collapse">
+  <li><a href="#주요-규제기관-primary-regulator" id="toc-주요-규제기관-primary-regulator" class="nav-link" data-scroll-target="#주요-규제기관-primary-regulator">9.1 주요 규제기관 (Primary Regulator)</a></li>
+  <li><a href="#주요-법률-및-규정-key-legislation-and-regulations" id="toc-주요-법률-및-규정-key-legislation-and-regulations" class="nav-link" data-scroll-target="#주요-법률-및-규정-key-legislation-and-regulations">9.2 주요 법률 및 규정 (Key Legislation and Regulations)</a></li>
+  <li><a href="#시장-감시-market-surveillance" id="toc-시장-감시-market-surveillance" class="nav-link" data-scroll-target="#시장-감시-market-surveillance">9.3 시장 감시 (Market Surveillance)</a></li>
+  <li><a href="#보고-요건-reporting-requirements" id="toc-보고-요건-reporting-requirements" class="nav-link" data-scroll-target="#보고-요건-reporting-requirements">9.4 보고 요건 (Reporting Requirements)</a></li>
+  <li><a href="#국경간-인정-cross-border-recognition" id="toc-국경간-인정-cross-border-recognition" class="nav-link" data-scroll-target="#국경간-인정-cross-border-recognition">9.5 국경간 인정 (Cross-Border Recognition)</a></li>
+  </ul></li>
+  <li><a href="#수수료-및-수익-모델-fees-revenue-model" id="toc-수수료-및-수익-모델-fees-revenue-model" class="nav-link" data-scroll-target="#수수료-및-수익-모델-fees-revenue-model">10. 수수료 및 수익 모델 (Fees &amp; Revenue Model)</a>
+  <ul class="collapse">
+  <li><a href="#매매-및-청산-수수료-trading-clearing-fees" id="toc-매매-및-청산-수수료-trading-clearing-fees" class="nav-link" data-scroll-target="#매매-및-청산-수수료-trading-clearing-fees">10.1 매매 및 청산 수수료 (Trading &amp; Clearing Fees)</a></li>
+  <li><a href="#시장-데이터-수수료-market-data-fees" id="toc-시장-데이터-수수료-market-data-fees" class="nav-link" data-scroll-target="#시장-데이터-수수료-market-data-fees">10.2 시장 데이터 수수료 (Market Data Fees)</a></li>
+  <li><a href="#접속-및-코로케이션-수수료-connectivity-co-location-fees" id="toc-접속-및-코로케이션-수수료-connectivity-co-location-fees" class="nav-link" data-scroll-target="#접속-및-코로케이션-수수료-connectivity-co-location-fees">10.3 접속 및 코로케이션 수수료 (Connectivity &amp; Co-Location Fees)</a></li>
+  <li><a href="#수익-구조-fy2025-revenue-breakdown" id="toc-수익-구조-fy2025-revenue-breakdown" class="nav-link" data-scroll-target="#수익-구조-fy2025-revenue-breakdown">10.4 수익 구조 (FY2025) (Revenue Breakdown)</a></li>
+  </ul></li>
+  <li><a href="#최근-동향-recent-developments" id="toc-최근-동향-recent-developments" class="nav-link" data-scroll-target="#최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</a>
+  <ul class="collapse">
+  <li><a href="#시스템-업그레이드-및-기술-system-upgrades-technology" id="toc-시스템-업그레이드-및-기술-system-upgrades-technology" class="nav-link" data-scroll-target="#시스템-업그레이드-및-기술-system-upgrades-technology">11.1 시스템 업그레이드 및 기술 (System Upgrades &amp; Technology)</a></li>
+  <li><a href="#신규-상품-및-시장-발전-new-products-market-developments" id="toc-신규-상품-및-시장-발전-new-products-market-developments" class="nav-link" data-scroll-target="#신규-상품-및-시장-발전-new-products-market-developments">11.2 신규 상품 및 시장 발전 (New Products &amp; Market Developments)</a></li>
+  <li><a href="#규제-변경-regulatory-changes" id="toc-규제-변경-regulatory-changes" class="nav-link" data-scroll-target="#규제-변경-regulatory-changes">11.3 규제 변경 (Regulatory Changes)</a></li>
+  <li><a href="#전략적-이니셔티브-strategic-initiatives" id="toc-전략적-이니셔티브-strategic-initiatives" class="nav-link" data-scroll-target="#전략적-이니셔티브-strategic-initiatives">11.4 전략적 이니셔티브 (Strategic Initiatives)</a></li>
+  </ul></li>
+  <li><a href="#파생상품-전용-섹션-derivatives-specific-sections" id="toc-파생상품-전용-섹션-derivatives-specific-sections" class="nav-link" data-scroll-target="#파생상품-전용-섹션-derivatives-specific-sections">파생상품 전용 섹션 (Derivatives-Specific Sections)</a></li>
+  <li><a href="#d1.-상품-목록-product-catalog" id="toc-d1.-상품-목록-product-catalog" class="nav-link" data-scroll-target="#d1.-상품-목록-product-catalog">D1. 상품 목록 (Product Catalog)</a>
+  <ul class="collapse">
+  <li><a href="#자산군별-by-asset-class" id="toc-자산군별-by-asset-class" class="nav-link" data-scroll-target="#자산군별-by-asset-class">자산군별 (By Asset Class)</a></li>
+  </ul></li>
+  <li><a href="#d2.-주요-계약-명세-거래량-상위-5개-상품-key-contract-specifications-top-5-products-by-volume" id="toc-d2.-주요-계약-명세-거래량-상위-5개-상품-key-contract-specifications-top-5-products-by-volume" class="nav-link" data-scroll-target="#d2.-주요-계약-명세-거래량-상위-5개-상품-key-contract-specifications-top-5-products-by-volume">D2. 주요 계약 명세 (거래량 상위 5개 상품) (Key Contract Specifications, Top 5 Products by Volume)</a>
+  <ul class="collapse">
+  <li><a href="#ftse-china-a50-index-선물-cn" id="toc-ftse-china-a50-index-선물-cn" class="nav-link" data-scroll-target="#ftse-china-a50-index-선물-cn">1. FTSE China A50 Index 선물 (CN)</a></li>
+  <li><a href="#tsi-iron-ore-cfr-china-62-fe-선물-fef" id="toc-tsi-iron-ore-cfr-china-62-fe-선물-fef" class="nav-link" data-scroll-target="#tsi-iron-ore-cfr-china-62-fe-선물-fef">2. TSI Iron Ore CFR China 62% Fe 선물 (FEF)</a></li>
+  <li><a href="#nikkei-225-index-선물-jpy-nk" id="toc-nikkei-225-index-선물-jpy-nk" class="nav-link" data-scroll-target="#nikkei-225-index-선물-jpy-nk">3. Nikkei 225 Index 선물 — JPY (NK)</a></li>
+  <li><a href="#usdcnh-선물-uc" id="toc-usdcnh-선물-uc" class="nav-link" data-scroll-target="#usdcnh-선물-uc">4. USD/CNH 선물 (UC)</a></li>
+  <li><a href="#inrusd-선물-iu" id="toc-inrusd-선물-iu" class="nav-link" data-scroll-target="#inrusd-선물-iu">5. INR/USD 선물 (IU)</a></li>
+  </ul></li>
+  <li><a href="#d3.-증거금-체계-margin-framework" id="toc-d3.-증거금-체계-margin-framework" class="nav-link" data-scroll-target="#d3.-증거금-체계-margin-framework">D3. 증거금 체계 (Margin Framework)</a>
+  <ul class="collapse">
+  <li><a href="#방법론-span-standard-portfolio-analysis-of-risk" id="toc-방법론-span-standard-portfolio-analysis-of-risk" class="nav-link" data-scroll-target="#방법론-span-standard-portfolio-analysis-of-risk">방법론: SPAN (Standard Portfolio Analysis of Risk)</a></li>
+  <li><a href="#sgx-dc의-강화된-span-파라미터-sgx-dcs-enhanced-span-parameters" id="toc-sgx-dc의-강화된-span-파라미터-sgx-dcs-enhanced-span-parameters" class="nav-link" data-scroll-target="#sgx-dc의-강화된-span-파라미터-sgx-dcs-enhanced-span-parameters">SGX-DC의 강화된 SPAN 파라미터 (SGX-DC’s Enhanced SPAN Parameters)</a></li>
+  <li><a href="#증거금-유형-margin-types" id="toc-증거금-유형-margin-types" class="nav-link" data-scroll-target="#증거금-유형-margin-types">증거금 유형 (Margin Types)</a></li>
+  <li><a href="#증거금-추가-납부-절차-margin-call-process" id="toc-증거금-추가-납부-절차-margin-call-process" class="nav-link" data-scroll-target="#증거금-추가-납부-절차-margin-call-process">증거금 추가 납부 절차 (Margin Call Process)</a></li>
+  <li><a href="#산업-맥락-industry-context" id="toc-산업-맥락-industry-context" class="nav-link" data-scroll-target="#산업-맥락-industry-context">산업 맥락 (Industry Context)</a></li>
+  </ul></li>
+  <li><a href="#d4.-포지션한도-및-대량포지션-보고-position-limits-large-position-reporting" id="toc-d4.-포지션한도-및-대량포지션-보고-position-limits-large-position-reporting" class="nav-link" data-scroll-target="#d4.-포지션한도-및-대량포지션-보고-position-limits-large-position-reporting">D4. 포지션한도 및 대량포지션 보고 (Position Limits &amp; Large Position Reporting)</a>
+  <ul class="collapse">
+  <li><a href="#포지션한도-position-limits" id="toc-포지션한도-position-limits" class="nav-link" data-scroll-target="#포지션한도-position-limits">포지션한도 (Position Limits)</a></li>
+  <li><a href="#헤지-면제-hedge-exemptions" id="toc-헤지-면제-hedge-exemptions" class="nav-link" data-scroll-target="#헤지-면제-hedge-exemptions">헤지 면제 (Hedge Exemptions)</a></li>
+  <li><a href="#대량포지션-보고-large-position-reporting" id="toc-대량포지션-보고-large-position-reporting" class="nav-link" data-scroll-target="#대량포지션-보고-large-position-reporting">대량포지션 보고 (Large Position Reporting)</a></li>
+  <li><a href="#책임수준-accountability-levels" id="toc-책임수준-accountability-levels" class="nav-link" data-scroll-target="#책임수준-accountability-levels">책임수준 (Accountability Levels)</a></li>
+  </ul></li>
+  <li><a href="#d5.-블록거래-협상대량거래-nlt-efp-efs-block-trading-nlt-efp-efs" id="toc-d5.-블록거래-협상대량거래-nlt-efp-efs-block-trading-nlt-efp-efs" class="nav-link" data-scroll-target="#d5.-블록거래-협상대량거래-nlt-efp-efs-block-trading-nlt-efp-efs">D5. 블록거래 / 협상대량거래 (NLT) / EFP / EFS (Block Trading / NLT / EFP / EFS)</a>
+  <ul class="collapse">
+  <li><a href="#협상대량거래-negotiated-large-trades-nlt" id="toc-협상대량거래-negotiated-large-trades-nlt" class="nav-link" data-scroll-target="#협상대량거래-negotiated-large-trades-nlt">협상대량거래 (Negotiated Large Trades, NLT)</a></li>
+  <li><a href="#실물교환-exchange-for-physical-efp" id="toc-실물교환-exchange-for-physical-efp" class="nav-link" data-scroll-target="#실물교환-exchange-for-physical-efp">실물교환 (Exchange for Physical, EFP)</a></li>
+  <li><a href="#스왑교환-exchange-for-swap-efs" id="toc-스왑교환-exchange-for-swap-efs" class="nav-link" data-scroll-target="#스왑교환-exchange-for-swap-efs">스왑교환 (Exchange for Swap, EFS)</a></li>
+  <li><a href="#등록-요건-registration-requirements" id="toc-등록-요건-registration-requirements" class="nav-link" data-scroll-target="#등록-요건-registration-requirements">등록 요건 (Registration Requirements)</a></li>
+  </ul></li>
+  <li><a href="#d6.-인도-및-결제-절차-delivery-settlement-process" id="toc-d6.-인도-및-결제-절차-delivery-settlement-process" class="nav-link" data-scroll-target="#d6.-인도-및-결제-절차-delivery-settlement-process">D6. 인도 및 결제 절차 (Delivery &amp; Settlement Process)</a>
+  <ul class="collapse">
+  <li><a href="#일일-결제-시가평가-daily-settlement-mark-to-market" id="toc-일일-결제-시가평가-daily-settlement-mark-to-market" class="nav-link" data-scroll-target="#일일-결제-시가평가-daily-settlement-mark-to-market">일일 결제 (시가평가) (Daily Settlement, Mark-to-Market)</a></li>
+  <li><a href="#최종-결제-현금결제-계약-final-settlement-cash-settled-contracts" id="toc-최종-결제-현금결제-계약-final-settlement-cash-settled-contracts" class="nav-link" data-scroll-target="#최종-결제-현금결제-계약-final-settlement-cash-settled-contracts">최종 결제 — 현금결제 계약 (Final Settlement — Cash-Settled Contracts)</a></li>
+  <li><a href="#최종-결제-실물인도-계약-final-settlement-physically-delivered-contracts" id="toc-최종-결제-실물인도-계약-final-settlement-physically-delivered-contracts" class="nav-link" data-scroll-target="#최종-결제-실물인도-계약-final-settlement-physically-delivered-contracts">최종 결제 — 실물인도 계약 (Final Settlement — Physically Delivered Contracts)</a></li>
+  <li><a href="#결제-통화-settlement-currency" id="toc-결제-통화-settlement-currency" class="nav-link" data-scroll-target="#결제-통화-settlement-currency">결제 통화 (Settlement Currency)</a></li>
+  </ul></li>
+  <li><a href="#부록-sgx-파생상품-krx와의-비교-appendix-sgx-derivatives-comparison-with-krx" id="toc-부록-sgx-파생상품-krx와의-비교-appendix-sgx-derivatives-comparison-with-krx" class="nav-link" data-scroll-target="#부록-sgx-파생상품-krx와의-비교-appendix-sgx-derivatives-comparison-with-krx">부록: SGX 파생상품 — KRX와의 비교 (Appendix: SGX Derivatives — Comparison with KRX)</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/sgx_derivatives.html">SGX (싱가포르거래소) 파생상품</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">SGX (싱가포르거래소) 파생상품</h1>
+<p class="subtitle lead">파생상품 &gt; 거래소</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 4월 17일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>최종 수정일:</strong> 2026-04-06 <strong>조사 단계:</strong> Tier 1 <strong>도메인:</strong> 파생상품</p>
+</blockquote>
+<hr>
+<section id="개요-및-프로필-overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>공식 명칭</td>
+<td>Singapore Exchange Derivatives Trading Limited (SGX-DT) / Singapore Exchange Derivatives Clearing Limited (SGX-DC)</td>
+</tr>
+<tr class="even">
+<td>약칭</td>
+<td>SGX Derivatives</td>
+</tr>
+<tr class="odd">
+<td>웹사이트</td>
+<td>https://www.sgx.com/derivatives</td>
+</tr>
+<tr class="even">
+<td>설립 연도</td>
+<td>1984년 (SIMEX — Singapore International Monetary Exchange로 설립); 1999년 SGX로 합병; SGX-DT 및 SGX-DC는 SGX Group 내 별도 법인</td>
+</tr>
+<tr class="odd">
+<td>국가 / 도시</td>
+<td>싱가포르 / 싱가포르 (2 Shenton Way, SGX Centre 1)</td>
+</tr>
+<tr class="even">
+<td>소유 구조</td>
+<td>SGX Group의 일부이며, 자체 거래소에 상장 (종목코드: S68)</td>
+</tr>
+<tr class="odd">
+<td>모회사 / 그룹</td>
+<td>Singapore Exchange Limited (SGX Group)</td>
+</tr>
+<tr class="even">
+<td>감독 기관</td>
+<td>싱가포르 통화관리국 (Monetary Authority of Singapore, MAS)</td>
+</tr>
+<tr class="odd">
+<td>연간 매출 (FY2025)</td>
+<td>주식 – 파생상품: SGD 3억 4,590만 (전년 대비 +13.8%); 통화 &amp; 상품: SGD 3억 1,250만 (전년 대비 +8.6%); SGX Group 합계: SGD 13억 (역대 최고)</td>
+</tr>
+<tr class="even">
+<td>연간 파생상품 거래량 (CY2025)</td>
+<td>3억 2,900만 계약 (역대 최고), 주식, 외환, 상품 전 분야</td>
+</tr>
+<tr class="odd">
+<td>일평균 거래량 (2025년 2월)</td>
+<td>약 140만 계약/일 (파생상품 DAV 전년 대비 +8%)</td>
+</tr>
+<tr class="even">
+<td>상장 종목</td>
+<td>주가지수 (아시아 15개 이상 시장), 외환 (6개 이상 통화쌍), 상품 (철광석, 해운, 고무, 코킹석탄, 철강), 금리 (JGB, APAC 채권), 디지털 자산 (BTC, ETH 무기한 선물) 등 선물 및 옵션</td>
+</tr>
+<tr class="odd">
+<td>청산기관</td>
+<td>SGX Derivatives Clearing Limited (SGX-DC) — 중앙거래상대방</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: SGX Group FY2025 Annual Report; SGX Group market statistics press releases, February 2025; TipRanks, “SGX Ends 2025 With Record Derivatives Volumes”, January 2026]</p>
+<section id="주요-연혁-key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</h3>
+<ul>
+<li><strong>1984년:</strong> Singapore International Monetary Exchange (SIMEX) 설립, 아시아 최초의 금융 선물 거래소; CME와의 상호상쇄(Mutual Offset)를 통해 유로달러 선물 출시</li>
+<li><strong>1986년:</strong> SIMEX가 Nikkei 225 선물 출시 — 일본 주식시장에 대한 역외 접근의 선구적 사례; 주요 아시아 주가지수의 최초 역외 상장</li>
+<li><strong>1999년 (12월 1일):</strong> SGX는 Stock Exchange of Singapore (SES), SIMEX, Securities Clearing and Computer Services Pte Ltd의 합병으로 설립, Exchanges (Demutualisation and Merger) Act 1999에 의해 가능</li>
+<li><strong>2000년:</strong> SGX 자체 Mainboard에 상장 (11월 23일); SGX Derivatives Trading (SGX-DT)과 SGX Securities Trading (SGX-ST)을 별도 부문으로 설립</li>
+<li><strong>2002년:</strong> 일본 국채(JGB) 선물 출시</li>
+<li><strong>2003년:</strong> Nasdaq과의 매매시스템 기술 파트너십 개시</li>
+<li><strong>2006년:</strong> FTSE China A50 Index 선물 출시 — 전 세계 유일의 달러표시 A주 선물 계약</li>
+<li><strong>2007년:</strong> AsiaClear 출시, 상품에 대한 장외 청산 서비스; 철광석 스왑 출시</li>
+<li><strong>2009년:</strong> SGX 철광석 선물 출시 — 현재 해상 철광석 파생상품의 글로벌 벤치마크</li>
+<li><strong>2010년:</strong> ASX와 AUD 84억 합병 제안; 2011년 호주 정부에 의해 차단</li>
+<li><strong>2013년:</strong> Baltic Exchange 24.9% 지분 인수 (2017년 전량 인수)</li>
+<li><strong>2014년:</strong> 외환 선물 출시 (USD/CNH, INR/USD 등 아시아 통화쌍)</li>
+<li><strong>2015년:</strong> Nasdaq Genium INET 기술을 활용한 차세대 파생상품 플랫폼 (Titan) 발표</li>
+<li><strong>2016–2017년:</strong> SGX Titan DT/DC 파생상품 매매 및 청산 플랫폼 가동, 레거시 시스템 대체</li>
+<li><strong>2018년:</strong> FTSE-SGX 지수 출시; 철광석 및 상품 제품군 확대</li>
+<li><strong>2019년:</strong> 증권 매매 엔진을 Nasdaq 다중 매매체결엔진으로 업그레이드</li>
+<li><strong>2020년:</strong> 외환 파생상품 제품군 확대; 철광석 역대 최고 거래량</li>
+<li><strong>2022년:</strong> NSE (인도)와 GIFT Connect 계약 체결, Nifty 파생상품 전환</li>
+<li><strong>2023년 (7월 3일):</strong> NSE IX-SGX GIFT Connect 완전 운영 — Nifty 파생상품이 인도 GIFT City의 NSE International Exchange로 이전</li>
+<li><strong>2025년 (11월):</strong> iEdge-CoinDesk Cryptocurrency Indices에 연동된 기관 등급 Bitcoin 및 Ethereum 무기한 선물 출시</li>
+<li><strong>2025년:</strong> 연간 파생상품 거래량 3억 2,900만 계약 역대 최고; 외환 선물 역대 최고; 장외 외환 ADV USD 1,430억 역대 최고; MSCI Singapore OI 역대 최고</li>
+<li><strong>2026년 (4월, 예정):</strong> 인도, 인도네시아, 말레이시아, 태국, 필리핀을 커버하는 아시아태평양 국채 선물 출시</li>
+<li><strong>2027년 (예정):</strong> 신규 증권 매매 엔진 “Iris-ST” 2027년 하반기 가동 예정</li>
+</ul>
+<p>[Source: SGX website, “About SGX”; Wikipedia, “Singapore Exchange”; SGX press releases 2022–2026; SGX FY2025 Annual Report; PR Newswire, “SGX Derivatives breaks new ground with institutional-grade crypto perpetual futures”, November 2025; Markets Media, “SGX Derivatives to Launch Asia Pacific Government Bond Futures”, March 2026]</p>
+<hr>
+</section>
+</section>
+<section id="시장-구조-market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="시장-구조-market-structure">2. 시장 구조 (Market Structure)</h2>
+<section id="시장-부문-자산군-market-segments-asset-classes" class="level3">
+<h3 class="anchored" data-anchor-id="시장-부문-자산군-market-segments-asset-classes">2.1 시장 부문 / 자산군 (Market Segments / Asset Classes)</h3>
+<p>SGX Derivatives는 아시아에서 가장 광범위한 다자산 파생상품 플랫폼 중 하나를 제공하며, 기초자산 유형별로 구성된다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 26%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>자산군</th>
+<th>상품</th>
+<th>주요 계약</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>주가지수</strong></td>
+<td>아시아 주요 지수에 대한 선물 및 옵션; 아시아 경제의 80% 이상 커버</td>
+<td>FTSE China A50, Nikkei 225 (JPY &amp; USD), MSCI Singapore, MSCI Taiwan, MSCI Indonesia, MSCI India, MSCI Thailand, MSCI Philippines, Hang Seng Index, Hang Seng China Enterprises Index, S&amp;P/ASX 200</td>
+</tr>
+<tr class="even">
+<td><strong>외환 파생상품</strong></td>
+<td>아시아 통화쌍 선물 및 옵션 (상장) + 장외 외환</td>
+<td>USD/CNH, INR/USD, KRW/USD, AUD/USD, AUD/JPY, USD/SGD</td>
+</tr>
+<tr class="odd">
+<td><strong>상품</strong></td>
+<td>벌크 상품 및 해운에 대한 선물, 스왑, 옵션</td>
+<td>TSI Iron Ore CFR China 62% Fe, Iron Ore 65% Fe, Coking Coal, Steel Rebar, Rubber (TSR20, RSS3), Freight (FFA), Energy (fuel oil, naphtha)</td>
+</tr>
+<tr class="even">
+<td><strong>금리</strong></td>
+<td>국채 선물</td>
+<td>Japanese Government Bond (JGB) 선물; 아시아태평양 국채 선물 (인도, 인도네시아, 말레이시아, 태국, 필리핀 — 2026년 4월 출시)</td>
+</tr>
+<tr class="odd">
+<td><strong>디지털 자산</strong></td>
+<td>무기한 선물</td>
+<td>Bitcoin 무기한 선물, Ethereum 무기한 선물 (2025년 11월 출시)</td>
+</tr>
+<tr class="even">
+<td><strong>GIFT Connect</strong></td>
+<td>NSE IX를 통한 인도 Nifty 지수 파생상품</td>
+<td>GIFT Nifty 50, GIFT Nifty Bank, GIFT Nifty Financial Services, GIFT Nifty IT (NSE IX에서 거래, SGX를 통해 접근 가능)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: SGX website, “Derivatives Products”; Exegy, “Singapore Exchange Links Traders to Diverse APAC Products”; SGX press releases 2025–2026]</p>
+</section>
+<section id="매매시간-trading-sessions-hours" class="level3">
+<h3 class="anchored" data-anchor-id="매매시간-trading-sessions-hours">2.2 매매시간 (Trading Sessions / Hours)</h3>
+<p><strong>참고:</strong> 싱가포르 표준시(SST/SGT)는 연중 UTC+8이다 (서머타임 없음).</p>
+<p>SGX Derivatives는 주요 상품에 대해 일일 약 22시간까지의 연장 매매시간을 운영하여 아시아, 유럽, 북미 시간대를 커버한다.</p>
+<p><strong>주가지수 파생상품 (대표: FTSE China A50, Nikkei 225) (Equity Index Derivatives)</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 40%">
+<col style="width: 11%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>현지시간 (SGT)</th>
+<th>UTC</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>개장 전 (T 세션)</strong></td>
+<td>08:45 – 09:00</td>
+<td>00:45 – 01:00</td>
+<td>주문 접수; 체결 없음. 마지막 2분간 취소 차단</td>
+</tr>
+<tr class="even">
+<td><strong>T 세션 (주간)</strong></td>
+<td>09:00 – 16:30</td>
+<td>01:00 – 08:30</td>
+<td>접속매매 (연속매매)</td>
+</tr>
+<tr class="odd">
+<td><strong>휴장</strong></td>
+<td>16:30 – 17:00</td>
+<td>08:30 – 09:00</td>
+<td>세션 간 휴장</td>
+</tr>
+<tr class="even">
+<td><strong>개장 전 (T+1 세션)</strong></td>
+<td>16:55 – 17:00</td>
+<td>08:55 – 09:00</td>
+<td>T+1 세션 주문 접수</td>
+</tr>
+<tr class="odd">
+<td><strong>T+1 세션 (연장)</strong></td>
+<td>17:00 – 05:15 +1</td>
+<td>09:00 – 21:15</td>
+<td>유럽 및 미국 시간대를 커버하는 연장 매매</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nikkei 225 전용:</strong> - T 세션: 07:30 – 14:55 SGT (23:30 – 06:55 UTC) - T+1 세션: 15:10 – 05:15 +1 SGT (07:10 – 21:15 UTC) - 연장 시간은 런던 시장 마감까지 커버</p>
+<p><strong>외환 파생상품 (USD/CNH, INR/USD) (FX Derivatives)</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>현지시간 (SGT)</th>
+<th>UTC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T 세션</td>
+<td>07:25 – 19:55</td>
+<td>23:25 – 11:55</td>
+</tr>
+<tr class="even">
+<td>휴장</td>
+<td>19:55 – 20:15</td>
+<td>11:55 – 12:15</td>
+</tr>
+<tr class="odd">
+<td>T+1 세션</td>
+<td>20:15 – 05:15 +1</td>
+<td>12:15 – 21:15</td>
+</tr>
+</tbody>
+</table>
+<p><strong>상품 파생상품 (철광석) (Commodity Derivatives)</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>현지시간 (SGT)</th>
+<th>UTC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T 세션</td>
+<td>07:25 – 19:55</td>
+<td>23:25 – 11:55</td>
+</tr>
+<tr class="even">
+<td>휴장</td>
+<td>19:55 – 20:15</td>
+<td>11:55 – 12:15</td>
+</tr>
+<tr class="odd">
+<td>T+1 세션</td>
+<td>20:15 – 04:45 +1</td>
+<td>12:15 – 20:45</td>
+</tr>
+</tbody>
+</table>
+<p><strong>주문 접수 규칙:</strong> - T 세션 개장 15분 전부터 주문 접수 - T+1 세션 개장 5분 전부터 주문 접수 - 각 세션 개장 전 마지막 2분간: 신규 주문만 접수 – 가격 수정 또는 취소 불가</p>
+<p>[Source: SGX website, “Trading”; QuantConnect, “SGX Market Hours”; Trading Technologies, “SGX Overview”; Capital Futures Corp., “SGX Contract Specifications”]</p>
+</section>
+<section id="호가단위-일부-상품-tick-sizes-selected-products" class="level3">
+<h3 class="anchored" data-anchor-id="호가단위-일부-상품-tick-sizes-selected-products">2.3 호가단위 (일부 상품) (Tick Sizes, Selected Products)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>호가단위 (최소가격변동폭)</th>
+<th>호가단위 가치</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FTSE China A50 선물</td>
+<td>5 지수포인트</td>
+<td>USD 5.00</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 선물 (JPY)</td>
+<td>5 지수포인트</td>
+<td>JPY 2,500</td>
+</tr>
+<tr class="odd">
+<td>Nikkei 225 선물 (USD)</td>
+<td>5 지수포인트</td>
+<td>USD 25.00</td>
+</tr>
+<tr class="even">
+<td>MSCI Singapore 선물</td>
+<td>0.05 지수포인트</td>
+<td>SGD 10.00</td>
+</tr>
+<tr class="odd">
+<td>TSI Iron Ore 62% 선물</td>
+<td>미터톤당 USD 0.01</td>
+<td>USD 1.00</td>
+</tr>
+<tr class="even">
+<td>USD/CNH 선물</td>
+<td>0.0001 CNH</td>
+<td>약 USD 10.00/틱 [unverified]</td>
+</tr>
+<tr class="odd">
+<td>INR/USD 선물</td>
+<td>100 INR당 0.01 US 센트</td>
+<td>USD 2.00</td>
+</tr>
+<tr class="even">
+<td>Bitcoin 무기한 선물</td>
+<td>USD 5.00</td>
+<td>USD 5.00 [unverified]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="거래-단위-계약-단위-lot-sizes-contract-units" class="level3">
+<h3 class="anchored" data-anchor-id="거래-단위-계약-단위-lot-sizes-contract-units">2.4 거래 단위 / 계약 단위 (Lot Sizes / Contract Units)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>계약 단위</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FTSE China A50 선물</td>
+<td>USD 1 x 지수</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 선물 (JPY)</td>
+<td>JPY 500 x 지수</td>
+</tr>
+<tr class="odd">
+<td>Nikkei 225 선물 (USD)</td>
+<td>USD 5 x 지수</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 Mini 선물</td>
+<td>JPY 100 x 지수</td>
+</tr>
+<tr class="odd">
+<td>MSCI Singapore 선물</td>
+<td>SGD 200 x 지수</td>
+</tr>
+<tr class="even">
+<td>TSI Iron Ore 62% 선물</td>
+<td>100 미터톤</td>
+</tr>
+<tr class="odd">
+<td>INR/USD 선물</td>
+<td>INR 2,000,000</td>
+</tr>
+<tr class="even">
+<td>USD/CNH 선물</td>
+<td>USD 100,000</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Barchart.com, “SGX Contract Specifications”; SGX website, “Derivatives Products”; Capital Futures Corp., “SGX Contract Specifications”]</p>
+</section>
+<section id="시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 / 유동성 공급자 프로그램 (Market Maker / Liquidity Provider Programs)</h3>
+<p>SGX는 파생상품 시장 전반에 걸쳐 지정 시장조성자 프로그램을 운영한다:</p>
+<p><strong>프로그램 구조:</strong> - <strong>지정 시장조성자 (Designated Market Makers, DMMs):</strong> 배정 상품에 대해 연속 양방향 호가를 제공할 의무가 있으며, 스프레드 폭, 최소 수량, 시장 참여시간에 대한 호가 의무를 충족해야 한다 - SGX-DT는 자격 충족 DMM에 대해 수수료, 부담금, 비용을 감면 또는 면제할 수 있다 - 성과는 통상 거래량, 스프레드 유지, 시장 참여도에 연동된 KPI로 측정된다</p>
+<p><strong>주요 특징:</strong> - 자격 충족 시장조성자에 대한 수수료 할인 및 환급 - 거래량 기반 인센티브 등급 — 거래량이 높을수록 더 많은 인센티브 해제 - 프로그램은 주가지수 파생상품, 외환 선물, 상품 파생상품, 옵션을 커버 - 시장 스트레스 상황 (예: Covid-19 팬데믹) 중 핵심 계약의 유동성 지원에 시장조성자 참여가 중요한 역할</p>
+<p><strong>커버리지:</strong> - 주가지수 선물 및 옵션 (FTSE China A50, Nikkei 225, MSCI 제품군) - 외환 선물 (USD/CNH, INR/USD) - 철광석 및 상품 파생상품 - 전 자산군에 걸친 옵션 시장</p>
+<p>[Source: SGX Rulebook, “Chapter 5 — Designated Market-Maker”; SGX Rulebook, “6.6 Obligations of a Designated Market-Maker”; The Edge Singapore, “Where’s the liquidity?”]</p>
+<hr>
+</section>
+</section>
+<section id="매매-메커니즘-trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="매매-메커니즘-trading-mechanism">3. 매매 메커니즘 (Trading Mechanism)</h2>
+<section id="경매-메커니즘-auction-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="경매-메커니즘-auction-mechanisms">3.1 경매 메커니즘 (Auction Mechanisms)</h3>
+<p><strong>개시 단일가매매 (Opening Auction, Pre-Open / Non-Cancel):</strong> - 개장 전 단계에서 주문 접수, 수정, 취소 허용 - 세션 개장 전 마지막 2분간에는 신규 주문만 접수 (수정 또는 취소 불가) - 세션 개장 시, 누적된 주문이 SGX의 체결 알고리즘이 산출한 단일 균형가격에서 체결 - 알고리즘은 균형가격에서의 체결 수량을 극대화</p>
+<p><strong>종가 / 결제:</strong> - 일일 결제가격은 정의된 결제 시간대의 매매활동에 기반하여 결정 - 주가지수 계약의 경우, 최종결제가격은 통상 최종거래일 기초지수의 공식 종가에 기반</p>
+</section>
+<section id="접속매매-continuous-trading" class="level3">
+<h3 class="anchored" data-anchor-id="접속매매-continuous-trading">3.2 접속매매 (Continuous Trading)</h3>
+<ul>
+<li>주요 메커니즘: SGX Titan DT 플랫폼에서의 연속 전자 체결</li>
+<li>T 및 T+1 세션 중 실시간 주문 체결</li>
+<li>완전매매(outright) 및 스프레드 전략 (캘린더 스프레드, 상품간 스프레드) 지원</li>
+<li>T+1 세션은 연장 시간을 제공하지만, 통상 호가창이 얇다</li>
+</ul>
+</section>
+<section id="가격-발견-price-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</h3>
+<ul>
+<li>주요 상품에 대한 연장 매매시간 (일 최대 ~22시간)이 아시아, 유럽, 미국 시장 시간대에 걸친 연속적 가격 발견을 제공한다</li>
+<li>주요 아시아 지수 (Nikkei 225, FTSE China A50)의 주요 역외 상장 장소로서의 SGX의 위치는 자국 시장 시간 외 핵심 가격 발견 장소로 만든다</li>
+<li>SGX의 Nikkei 225 선물은 일본 비거래시간 중 종종 가격 발견을 주도한다</li>
+<li>FTSE China A50 선물은 중국 본토 시장 폐장 시 중국 A주 익스포저에 대한 주요 가격 발견 메커니즘으로 기능한다</li>
+</ul>
+</section>
+<section id="주문-우선순위-규칙-체결-알고리즘-order-priority-rules-matching-algorithms" class="level3">
+<h3 class="anchored" data-anchor-id="주문-우선순위-규칙-체결-알고리즘-order-priority-rules-matching-algorithms">3.4 주문 우선순위 규칙 / 체결 알고리즘 (Order Priority Rules / Matching Algorithms)</h3>
+<p>SGX Derivatives의 모든 주문은 기본 알고리즘으로 <strong>가격-시간 우선 (FIFO)</strong>을 사용하여 체결된다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 35%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>알고리즘</th>
+<th>설명</th>
+<th>적용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>가격-시간 우선 (FIFO)</strong></td>
+<td>엄격한 가격 우선, 이후 각 가격 수준에서 시간 우선; 최적 가격의 최선접수 주문이 먼저 체결</td>
+<td>대부분 선물 상품의 기본값</td>
+</tr>
+<tr class="even">
+<td><strong>Price Point Maker (PPM)</strong></td>
+<td>대기 중인 수동(passive) 주문에 우선순위를 부여하는 대안 알고리즘</td>
+<td>일부 상품 [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>비례배분 (Pro-Rata)</strong></td>
+<td>각 가격 수준에서 주문 규모에 비례한 배분</td>
+<td>일부 옵션 시장 [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>시장조성자 (MM)</strong></td>
+<td>시장조성자에게 우선 배분</td>
+<td>DMM 프로그램 적용 시</td>
+</tr>
+</tbody>
+</table>
+<p><strong>주요 규칙:</strong> - 가격 우선은 절대적 — 더 유리한 가격의 주문이 항상 먼저 체결 - 동일 가격 내에서 시간 우선이 배분을 결정 (FIFO) - 개장/마감 시에는 단일 균형가격으로 주문 체결 - 동일 회사 내 주문의 자기매매 방지를 위한 Self-Trade Prevention (STP) 기능 제공</p>
+<p>[Source: SGX Rulebook, “Practice Note 8.2.1 — Application of Market Phases and Algorithm”; SGX Rulebook, “Regulatory Notice 8.2.1 — Trading Hours, Market Phases, Application of Market Phases and Principles and Rules for Trade Matching”; Trading Technologies, “SGX Overview”]</p>
+<hr>
+</section>
+</section>
+<section id="주문-유형-order-types" class="level2">
+<h2 class="anchored" data-anchor-id="주문-유형-order-types">4. 주문 유형 (Order Types)</h2>
+<section id="표준-주문-유형-standard-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="표준-주문-유형-standard-order-types">4.1 표준 주문 유형 (Standard Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>지정가 (Limit)</strong></td>
+<td>지정 가격 또는 그보다 유리한 가격에 매수/매도; 미체결 수량은 호가창에 잔존</td>
+</tr>
+<tr class="even">
+<td><strong>시장가 (Market)</strong></td>
+<td>최적 가격에 즉시 체결; 미체결 부분은 설정에 따라 취소 또는 잔존</td>
+</tr>
+<tr class="odd">
+<td><strong>Market to Limit</strong></td>
+<td>최적 가격에 체결; 미체결 수량은 최종 체결가격의 지정가 주문으로 전환</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="고급-주문-유형-advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Stop Limit</strong></td>
+<td>스톱가격 도달 시 발동; 발동 후 지정 한도가격의 지정가 주문이 됨</td>
+</tr>
+<tr class="even">
+<td><strong>Stop Market</strong></td>
+<td>스톱가격 도달 시 발동; 발동 후 시장가 주문이 됨</td>
+</tr>
+<tr class="odd">
+<td><strong>Stop Market to Limit</strong></td>
+<td>스톱가격 도달 시 발동; 발동 후 market-to-limit 주문이 됨</td>
+</tr>
+<tr class="even">
+<td><strong>스프레드 주문 (Spread Orders)</strong></td>
+<td>캘린더 스프레드 및 상품간 스프레드 전략</td>
+</tr>
+<tr class="odd">
+<td><strong>일괄 호가 (Mass Quote)</strong></td>
+<td>시장조성자가 OUCH 프로토콜을 통해 단일 메시지로 다수의 양방향 호가를 제출 가능</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="유효기간-tif-조건-time-in-force-conditions" class="level3">
+<h3 class="anchored" data-anchor-id="유효기간-tif-조건-time-in-force-conditions">4.3 유효기간 (TIF) 조건 (Time-in-Force Conditions)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>TIF</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Day</strong></td>
+<td>현재 매매 세션에만 유효; 세션 종료 시 취소</td>
+</tr>
+<tr class="even">
+<td><strong>Good Till Cancel (GTC)</strong></td>
+<td>체결 또는 명시적으로 취소될 때까지 유효</td>
+</tr>
+<tr class="odd">
+<td><strong>Good Till Date (GTD)</strong></td>
+<td>지정 날짜까지 유효</td>
+</tr>
+<tr class="even">
+<td><strong>Fill and Kill (FAK)</strong></td>
+<td>가능 수량만큼 즉시 체결; 미체결 부분 취소</td>
+</tr>
+<tr class="odd">
+<td><strong>Fill or Kill (FOK)</strong></td>
+<td>전량 즉시 체결 또는 전량 취소</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-수정-및-취소-order-modification-cancellation" class="level3">
+<h3 class="anchored" data-anchor-id="주문-수정-및-취소-order-modification-cancellation">4.4 주문 수정 및 취소 (Order Modification &amp; Cancellation)</h3>
+<ul>
+<li>OUCH 프로토콜을 통해 매매 세션 중 언제든지 주문의 수정(가격, 수량) 또는 취소 가능</li>
+<li><strong>Replace Order:</strong> 시간 우선순위를 유지 또는 갱신하면서 기존 주문 수정 (가격/수량 변경)</li>
+<li><strong>Cancel Order:</strong> 주문 토큰으로 특정 주문 취소</li>
+<li><strong>Cancel by Order ID:</strong> 거래소 부여 주문 ID를 사용한 대안적 취소 방법</li>
+<li><strong>Self-Trade Prevention (STP):</strong> 2024/2025년에 강화되어 동일 회사 내 자기매매 방지를 설정 가능</li>
+</ul>
+<p>[Source: Trading Technologies, “SGX Supported Order Types”; OnixS, “SGX Titan OUCH Trading Handler — EnterOrder”; SGX Titan OUCH Protocol Specifications; Trading Technologies, “SGX Self-Trade Prevention Enhancement”]</p>
+<hr>
+</section>
+</section>
+<section id="매매시스템-기술-sgx-titan-trading-system-technology" class="level2">
+<h2 class="anchored" data-anchor-id="매매시스템-기술-sgx-titan-trading-system-technology">5. 매매시스템 기술 — SGX Titan (Trading System Technology)</h2>
+<section id="시스템-개요-system-overview" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-개요-system-overview">5.1 시스템 개요 (System Overview)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>플랫폼명</td>
+<td>SGX Titan DT (파생상품 매매) / SGX Titan DC (파생상품 청산)</td>
+</tr>
+<tr class="even">
+<td>기술 벤더</td>
+<td>Nasdaq (Genium INET version 4)</td>
+</tr>
+<tr class="odd">
+<td>최초 발표</td>
+<td>2014년 12월</td>
+</tr>
+<tr class="even">
+<td>가동</td>
+<td>2016–2017년 (레거시 플랫폼으로부터 단계적 전환)</td>
+</tr>
+<tr class="odd">
+<td>아키텍처</td>
+<td>상품 수준 파티셔닝을 갖춘 고성능, 저지연 매매체결엔진</td>
+</tr>
+<tr class="even">
+<td>주 데이터센터</td>
+<td>싱가포르 코로케이션 시설</td>
+</tr>
+<tr class="odd">
+<td>주문 입력 프로토콜</td>
+<td>OUCH (비동기 주문 입력을 위한 Nasdaq 네이티브 바이너리 프로토콜)</td>
+</tr>
+<tr class="even">
+<td>시장 데이터 프로토콜</td>
+<td>ITCH (시장 데이터를 위한 Nasdaq 네이티브 바이너리 멀티캐스트 프로토콜)</td>
+</tr>
+<tr class="odd">
+<td>복구 프로토콜</td>
+<td>GLIMPSE (ITCH를 위한 호가창 스냅샷 복구)</td>
+</tr>
+<tr class="even">
+<td>평균 지연시간</td>
+<td>90마이크로초 미만 (벤치마크 평균); 운영 환경에서 왕복 200마이크로초 미만</td>
+</tr>
+<tr class="odd">
+<td>처리량</td>
+<td>초당 100만+ 메시지</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="아키텍처-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="아키텍처-architecture">5.2 아키텍처 (Architecture)</h3>
+<ul>
+<li><strong>매매체결엔진:</strong> 확정적이고 저지연 처리에 최적화된 전용 하드웨어에서 실행되는 상품 파티셔닝된 매매체결엔진</li>
+<li><strong>주문 입력 게이트웨이:</strong> 최소 오버헤드로 직접적이고 비동기적인 주문 입력을 제공하는 OUCH 프로토콜 서버</li>
+<li><strong>시장 데이터 배포:</strong> 모든 접속 참가자에게 실시간 전체 깊이 호가창 데이터를 제공하는 ITCH 멀티캐스트 피드</li>
+<li><strong>청산 엔진 (Titan DC):</strong> 리스크 관리 및 결제를 위해 거의 실시간으로 거래를 처리하는 통합 청산 플랫폼</li>
+<li><strong>확정적 처리:</strong> 최소 지터(jitter)로 일관되고 예측 가능한 지연시간을 위해 설계</li>
+</ul>
+</section>
+<section id="지연시간-latency" class="level3">
+<h3 class="anchored" data-anchor-id="지연시간-latency">5.3 지연시간 (Latency)</h3>
+<ul>
+<li><strong>벤치마크 지연시간:</strong> 평균 90마이크로초 미만 (gate-to-gate) — 출시 당시 전 세계에서 가장 빠른 파생상품 매매 플랫폼 중 하나</li>
+<li><strong>운영 왕복:</strong> 코로케이션 참가자의 경우 200마이크로초 미만</li>
+<li><strong>주문 라우팅 지연시간:</strong> OUCH 프로토콜 통해 약 100–150마이크로초</li>
+<li><strong>전 플랫폼 대비:</strong> 이전 SGX 파생상품 플랫폼 대비 상당한 개선; Nasdaq 마케팅은 발표 시 Titan을 “세계 최고속 매매 플랫폼”으로 기술</li>
+</ul>
+</section>
+<section id="플랫폼-연혁-및-발전-platform-history-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="플랫폼-연혁-및-발전-platform-history-evolution">5.4 플랫폼 연혁 및 발전 (Platform History &amp; Evolution)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>연도</th>
+<th>주요 사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1984</td>
+<td>SIMEX 거래장 개장 — 금융 선물에 대한 호가장내거래</td>
+</tr>
+<tr class="even">
+<td>1999</td>
+<td>SGX 설립; 호가장내거래와 병행하여 전자매매 도입</td>
+</tr>
+<tr class="odd">
+<td>2003</td>
+<td>SGX 매매시스템을 위한 Nasdaq 기술 파트너십 개시</td>
+</tr>
+<tr class="even">
+<td>2014 (12월)</td>
+<td>SGX가 Nasdaq Genium INET v4를 사용한 차세대 Titan 플랫폼 발표</td>
+</tr>
+<tr class="odd">
+<td>2015</td>
+<td>개발 및 테스트 단계; 원래 2015년 말 가동 목표</td>
+</tr>
+<tr class="even">
+<td>2016</td>
+<td>Titan 접속 (OUCH/ITCH) 벤더 인증 2016년 5월 완료; 가동 2016년 말로 연기</td>
+</tr>
+<tr class="odd">
+<td>2017</td>
+<td>Titan DT/DC로의 전체 운영 전환 완료; 레거시 플랫폼 폐기</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>증권 매매 엔진을 Nasdaq 다중 매매체결엔진으로 업그레이드 (SGX-ST, 2019년 6월 3일)</td>
+</tr>
+<tr class="odd">
+<td>2025</td>
+<td>Titan DT에 Self-Trade Prevention 강화 배치</td>
+</tr>
+<tr class="even">
+<td>2027 (예정)</td>
+<td>신규 증권 매매 엔진 “Iris-ST” 계획; 파생상품 플랫폼 진화는 미정</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="기술-스택-technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="기술-스택-technology-stack">5.5 기술 스택 (Technology Stack)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>구성요소</th>
+<th>기술</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>주문 입력</strong></td>
+<td>OUCH — 저지연 비동기 주문 제출을 위한 Nasdaq 네이티브 바이너리 프로토콜; Enter Order, Replace Order, Cancel Order, Cancel by Order ID 메시지 지원</td>
+</tr>
+<tr class="even">
+<td><strong>시장 데이터</strong></td>
+<td>ITCH — Nasdaq 네이티브 바이너리 멀티캐스트 프로토콜; 주문별 전체 깊이 호가창 데이터 제공; 증분 업데이트 및 호가창 재구성 지원</td>
+</tr>
+<tr class="odd">
+<td><strong>호가창 복구</strong></td>
+<td>GLIMPSE — ITCH 데이터를 위한 스냅샷 복구 프로토콜; 접속 단절 후 전체 호가창 상태 재구축 가능</td>
+</tr>
+<tr class="even">
+<td><strong>ITCH Rewinder</strong></td>
+<td>손실 패킷 복구를 위한 과거 ITCH 메시지 재생</td>
+</tr>
+<tr class="odd">
+<td><strong>FIX Gateway</strong></td>
+<td>네이티브 OUCH를 사용하지 않는 참가자를 위한 FIX 프로토콜 접근 [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>청산 통합</strong></td>
+<td>Titan DC가 실시간 포지션 및 리스크 관리를 통한 통합 청산 제공</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="재해복구-및-업무연속성-disaster-recovery-business-continuity" class="level3">
+<h3 class="anchored" data-anchor-id="재해복구-및-업무연속성-disaster-recovery-business-continuity">5.6 재해복구 및 업무연속성 (Disaster Recovery &amp; Business Continuity)</h3>
+<ul>
+<li><strong>주 데이터센터:</strong> 싱가포르 코로케이션 시설</li>
+<li><strong>DR 사이트:</strong> 싱가포르 내 지리적으로 분리된 백업 사이트 [unverified]</li>
+<li><strong>복구 모델:</strong> 주 환경과 백업 환경 간 실시간 데이터 복제</li>
+<li><strong>운영 지원:</strong> 연장 매매시간 (일 최대 ~22시간)을 감안하여 SGX는 follow-the-sun 지원 모델 운영</li>
+<li><strong>시스템 회복력:</strong> Nasdaq Genium INET 플랫폼은 내장된 이중화 및 장애조치 기능으로 설계</li>
+<li><strong>규제 요건:</strong> MAS는 기술 리스크 관리 지침에 따라 거래소를 포함한 모든 인가 거래소 운영자에게 견고한 BCP 및 DR 역량을 유지하도록 요구</li>
+</ul>
+<p>[Source: Nasdaq Inc., “NASDAQ OMX to Deliver World’s Fastest Trading Platform to Singapore Exchange”, December 2014; OnixS, “SGX Titan DT ITCH and OUCH API SDKs”; WatersTechnology, “SGX Plans Titan for Derivatives”; SGX Titan ITCH &amp; GLIMPSE Protocol Specifications, Release 1.4; Markets Media, “Object Trading Conforms to Upgraded SGX Titan Platform”]</p>
+<hr>
+</section>
+</section>
+<section id="시장-데이터-market-data" class="level2">
+<h2 class="anchored" data-anchor-id="시장-데이터-market-data">6. 시장 데이터 (Market Data)</h2>
+<section id="시장-데이터-플랫폼-itch-market-data-platform" class="level3">
+<h3 class="anchored" data-anchor-id="시장-데이터-플랫폼-itch-market-data-platform">6.1 시장 데이터 플랫폼 — ITCH (Market Data Platform)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>특징</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>프로토콜</td>
+<td>ITCH (Nasdaq 네이티브 바이너리 프로토콜)</td>
+</tr>
+<tr class="even">
+<td>인코딩</td>
+<td>초저지연 처리를 위한 고정 길이 바이너리 메시지</td>
+</tr>
+<tr class="odd">
+<td>전송</td>
+<td>UDP 멀티캐스트 (주요 배포)</td>
+</tr>
+<tr class="even">
+<td>복구</td>
+<td>GLIMPSE 프로토콜을 통한 호가창 스냅샷; ITCH Rewinder를 통한 패킷 재생</td>
+</tr>
+<tr class="odd">
+<td>깊이</td>
+<td>주문별 전체 깊이 (Market by Order)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="피드-유형-데이터-수준-feed-types-data-levels" class="level3">
+<h3 class="anchored" data-anchor-id="피드-유형-데이터-수준-feed-types-data-levels">6.2 피드 유형 / 데이터 수준 (Feed Types / Data Levels)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 37%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>피드 유형</th>
+<th>설명</th>
+<th>전송</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ITCH 실시간</strong></td>
+<td>모든 주문 추가, 수정, 체결, 취소를 포함하는 전체 깊이 주문별 시장 데이터</td>
+<td>UDP 멀티캐스트</td>
+</tr>
+<tr class="even">
+<td><strong>GLIMPSE</strong></td>
+<td>전체 호가창의 특정 시점 스냅샷; 복구 및 초기화에 사용</td>
+<td>TCP (요청/응답)</td>
+</tr>
+<tr class="odd">
+<td><strong>ITCH Rewinder</strong></td>
+<td>지정 시퀀스 번호부터 과거 ITCH 메시지 재생; 갭 복구에 사용</td>
+<td>TCP</td>
+</tr>
+<tr class="even">
+<td><strong>장 마감 파일</strong></td>
+<td>결제가격, 거래량, 미결제약정 일일 공시</td>
+<td>파일 기반 다운로드</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="데이터-배포-data-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-배포-data-distribution">6.3 데이터 배포 (Data Distribution)</h3>
+<ul>
+<li><strong>직접 접속:</strong> 코로케이션 참가자는 SGX 데이터센터 내에서 최저 지연시간으로 ITCH 멀티캐스트 데이터 수신</li>
+<li><strong>관리 네트워크:</strong> 비코로케이션 참가자는 SGX 인가 네트워크 서비스 제공자 또는 관리 네트워크 서비스를 통해 접근 가능</li>
+<li><strong>재배포사:</strong> 주요 데이터 벤더 (Bloomberg, Refinitiv, ICE Data Services 등)가 라이선스 하에 SGX 시장 데이터 재배포</li>
+<li><strong>SGX Data Services:</strong> SGX는 데이터 상품 부문을 통해 과거 데이터, 분석, 지수 데이터 제공</li>
+<li><strong>지연 데이터:</strong> 다양한 금융 포털 및 SGX 자체 웹사이트를 통해 이용 가능</li>
+</ul>
+</section>
+<section id="시장-데이터-라이선스-market-data-licensing" class="level3">
+<h3 class="anchored" data-anchor-id="시장-데이터-라이선스-market-data-licensing">6.4 시장 데이터 라이선스 (Market Data Licensing)</h3>
+<ul>
+<li>SGX는 실시간 시장 데이터, 지연 데이터 재배포, 과거 데이터에 대해 별도 수수료 부과</li>
+<li>전문가 및 비전문가 수수료 등급 적용</li>
+<li>구체적 수수료 체계는 SGX에 요청하거나 SGX 웹사이트를 통해 확인 가능</li>
+</ul>
+<p>[Source: SGX Titan ITCH &amp; GLIMPSE Protocol Specifications, Release 1.4; OnixS, “SGX Titan DT ITCH and OUCH API SDKs”; SGX website, “Data &amp; Connectivity”]</p>
+<hr>
+</section>
+</section>
+<section id="접속-및-접근-connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="접속-및-접근-connectivity-access">7. 접속 및 접근 (Connectivity &amp; Access)</h2>
+<section id="회원-접근-유형-membership-access-types" class="level3">
+<h3 class="anchored" data-anchor-id="회원-접근-유형-membership-access-types">7.1 회원 / 접근 유형 (Membership / Access Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 28%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>회원 유형</th>
+<th>설명</th>
+<th>주요 요건</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>파생상품 매매회원</strong></td>
+<td>SGX-DT에서 파생상품 거래를 위한 직접 전자 접근</td>
+<td>MAS Capital Markets Services (CMS) 인가; SGX 적격성 기준 충족; 최소 재무 요건</td>
+</tr>
+<tr class="even">
+<td><strong>파생상품 청산회원 — 일반</strong></td>
+<td>자기 거래 및 제3자 (비청산회원 및 고객) 거래 청산 가능</td>
+<td>높은 자본 요건; SGX-DC 청산기금 참여; MAS 승인</td>
+</tr>
+<tr class="odd">
+<td><strong>파생상품 청산회원 — 은행</strong></td>
+<td>은행 전용 청산 회원; 자기 및 제3자 거래 청산 가능; 상호상쇄시스템 접근</td>
+<td>인가 은행이어야 함; 추가 재무 요건</td>
+</tr>
+<tr class="even">
+<td><strong>비청산회원</strong></td>
+<td>일반 청산회원 또는 은행 청산회원을 통해 거래</td>
+<td>청산회원과의 청산 약정 체결 필요</td>
+</tr>
+</tbody>
+</table>
+<p><strong>회원 통계:</strong> - SGX 파생상품 청산은 주요 글로벌 은행 및 브로커에 의해 지원 - 2025년 11월 Bitcoin/Ethereum 무기한 선물 출시를 8개 주요 청산회원이 지원</p>
+<p>[Source: SGX website, “Memberships”; SGX Rulebook, “SGX-DC Clearing Rules”; SGX RegCo, “Memberships”]</p>
+</section>
+<section id="접속-방법-connection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>접속 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>코로케이션</strong></td>
+<td>SGX 데이터센터 내 SGX Titan 매매체결엔진에 직접 물리적 근접; 최저 지연시간 옵션</td>
+</tr>
+<tr class="even">
+<td><strong>관리 네트워크 서비스</strong></td>
+<td>SGX 인가 네트워크 서비스 제공자를 통한 접속</td>
+</tr>
+<tr class="odd">
+<td><strong>해외 허브</strong></td>
+<td>국제 참가자를 위한 주요 금융 중심지 (런던, 시카고, 도쿄) 접근점 [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>인가 네트워크 서비스 제공자</strong></td>
+<td>SGX가 파생상품 시장 접근을 위해 인증한 제3자 네트워크 제공자</td>
+</tr>
+</tbody>
+</table>
+<p><strong>참고:</strong> SGX 파생상품 접속은 최저 지연시간을 요구하는 참가자의 경우 사실상 <strong>코로케이션 전용</strong>이다. 모든 시장 접근 경로는 궁극적으로 SGX 데이터센터 내 Titan DT 플랫폼에 연결된다.</p>
+</section>
+<section id="코로케이션-서비스-co-location-services" class="level3">
+<h3 class="anchored" data-anchor-id="코로케이션-서비스-co-location-services">7.3 코로케이션 서비스 (Co-Location Services)</h3>
+<ul>
+<li><strong>위치:</strong> 싱가포르 SGX 데이터센터</li>
+<li><strong>시설:</strong> Titan DT 매매체결엔진에 근접하도록 목적 설계된 코로케이션 환경</li>
+<li><strong>이점:</strong> DMA를 위한 비교할 수 없는 속도 및 효율성; 최소화된 네트워크 지연시간</li>
+<li><strong>캐비닛 옵션:</strong> 전력 및 냉각이 포함된 표준 랙 공간; 요청에 따른 특정 구성 가능</li>
+<li><strong>크로스커넥트:</strong> 시설 내 SGX 인프라로의 직접 광섬유 연결</li>
+</ul>
+</section>
+<section id="api-프로토콜-api-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="api-프로토콜-api-protocols">7.4 API 프로토콜 (API Protocols)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 25%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>API / 프로토콜</th>
+<th>목적</th>
+<th>방향</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Titan OUCH</strong></td>
+<td>주문 입력, 수정, 취소, 체결 보고</td>
+<td>인바운드 (클라이언트→거래소) 및 아웃바운드 (거래소→클라이언트)</td>
+</tr>
+<tr class="even">
+<td><strong>Titan ITCH</strong></td>
+<td>실시간 시장 데이터 배포</td>
+<td>아웃바운드 (거래소→클라이언트) — UDP 멀티캐스트</td>
+</tr>
+<tr class="odd">
+<td><strong>GLIMPSE</strong></td>
+<td>호가창 스냅샷 복구</td>
+<td>요청/응답 — TCP</td>
+</tr>
+<tr class="even">
+<td><strong>FIX</strong></td>
+<td>네이티브 OUCH를 사용하지 않는 참가자를 위한 대안적 주문 입력 [unverified]</td>
+<td>양방향 — TCP</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="인증-적합성-테스트-certification-conformance-testing" class="level3">
+<h3 class="anchored" data-anchor-id="인증-적합성-테스트-certification-conformance-testing">7.5 인증 (적합성 테스트) (Certification, Conformance Testing)</h3>
+<ul>
+<li><strong>의무사항:</strong> Titan OUCH 및 ITCH를 통해 접속하는 모든 클라이언트 시스템은 운영 접근 전 SGX 적합성 테스트를 완료해야 한다</li>
+<li><strong>테스트 범위:</strong> OUCH 주문 입력 (enter, replace, cancel, cancel by order ID), ITCH 시장 데이터 처리, GLIMPSE 복구를 포함</li>
+<li><strong>환경:</strong> SGX가 전용 적합성 테스트 환경 제공</li>
+<li><strong>재인증:</strong> 중대한 시스템 변경 또는 프로토콜 버전 업그레이드 시 필요</li>
+<li><strong>ISV 지원:</strong> 다수의 독립 소프트웨어 벤더 (OnixS, Trading Technologies, Object Trading 등)가 SGX Titan용 사전 인증 SDK 및 매매 핸들러 제공</li>
+</ul>
+<p>[Source: SGX website, “Market Access”; SGX website, “Co-Location”; SGX Titan ITCH and OUCH Conformance Test Scope, Version 1.0; OnixS, “SGX Titan DT ITCH and OUCH API SDKs”]</p>
+<hr>
+</section>
+</section>
+<section id="리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (Risk Controls &amp; Circuit Breakers)</h2>
+<section id="서킷브레이커-메커니즘-circuit-breaker-mechanism" class="level3">
+<h3 class="anchored" data-anchor-id="서킷브레이커-메커니즘-circuit-breaker-mechanism">8.1 서킷브레이커 메커니즘 (Circuit Breaker Mechanism)</h3>
+<p>SGX의 파생상품 서킷브레이커 (매매거래중단)는 동적 가격밴드로 운영된다:</p>
+<ul>
+<li><strong>가격밴드 기준:</strong> 기준가격에서 규정 비율로 설정된 상한 및 하한</li>
+<li><strong>발동:</strong> 유입 주문이 기준 외 가격의 대기 주문과 체결하려 할 때, <strong>냉각기간</strong>이 활성화되고 유입 주문은 거부</li>
+<li><strong>냉각기간:</strong> 시장이 재개 전 상황을 분석할 수 있도록 하는 짧은 일시중지 (통상 5분); 가격 발견을 완전히 중단하지 않고 대규모 가격 변동의 속도를 완화하도록 설계</li>
+<li><strong>기준가격 산출:</strong>
+<ul>
+<li>각 매매 단계 시작 시: 전 세션의 결제가 또는 최종 체결가에서 도출</li>
+<li>최초 5분 후: 잠재적 거래 시점으로부터 5분 전의 최종 체결가에 기반한 롤링 기준가격</li>
+<li>직전 5분간 거래가 없으면 매매 단계 시작 시의 기준가격 적용</li>
+</ul></li>
+</ul>
+<p><strong>목적:</strong> 서킷브레이커는 급격한 무통제 시장 변동으로 인한 무질서한 상황을 방지한다. 가격 변동을 중단시키기 위한 것이 아니라 시장 참가자와 규제기관이 상황을 평가할 수 있는 일시중지를 제공한다. 또한 다른 시장으로의 전염 위험을 방지하는 데 도움이 된다.</p>
+</section>
+<section id="가격제한-일부-상품-price-limits-selected-products" class="level3">
+<h3 class="anchored" data-anchor-id="가격제한-일부-상품-price-limits-selected-products">8.2 가격제한 (일부 상품) (Price Limits, Selected Products)</h3>
+<p>구체적인 가격제한 기준은 상품별로 상이하며 SGX가 규제 통지를 통해 공시한다. 대표적 기준:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 46%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품 범주</th>
+<th>일반적 가격제한</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주가지수 선물</td>
+<td>기준가격 대비 +/- 10%~15%</td>
+<td>구체적 계약에 따라 상이 [unverified]</td>
+</tr>
+<tr class="even">
+<td>상품 선물</td>
+<td>기준가격 대비 +/- 15%~20%</td>
+<td>철광석, 고무 등 [unverified]</td>
+</tr>
+<tr class="odd">
+<td>외환 선물</td>
+<td>상품별 밴드</td>
+<td>변동성 높은 EM 통화는 더 넓은 밴드 [unverified]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="사전-매매-리스크-관리-pre-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="사전-매매-리스크-관리-pre-trade-risk-controls">8.3 사전 매매 리스크 관리 (Pre-Trade Risk Controls)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>관리 항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>가격밴딩</strong></td>
+<td>현재 시장가격 주변의 수용 가능한 동적 가격 범위 밖의 주문 거부</td>
+</tr>
+<tr class="even">
+<td><strong>최대 주문 규모</strong></td>
+<td>주문당 최대 수량 제한, 청산회원이 설정 가능</td>
+</tr>
+<tr class="odd">
+<td><strong>신용 관리</strong></td>
+<td>청산회원에 의한 각 매매 참가자에 대한 실시간 신용한도 모니터링</td>
+</tr>
+<tr class="even">
+<td><strong>Self-Trade Prevention (STP)</strong></td>
+<td>동일 회사 내 주문의 자기매매 방지를 위한 설정 가능 기능; 2024/2025년 강화</td>
+</tr>
+<tr class="odd">
+<td><strong>접속 단절 시 취소 (Cancel on Disconnect)</strong></td>
+<td>접속 단절 시 모든 미체결 주문을 취소하는 선택적 기능</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sgx-dc-청산-재무-안전장치-채무불이행-워터폴-default-waterfall" class="level3">
+<h3 class="anchored" data-anchor-id="sgx-dc-청산-재무-안전장치-채무불이행-워터폴-default-waterfall">8.4 SGX-DC 청산 재무 안전장치 (채무불이행 워터폴) (Default Waterfall)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>계층</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. 채무불이행 회원의 재원</td>
+<td>채무불이행 회원의 증거금/담보 + 청산기금 분담금</td>
+</tr>
+<tr class="even">
+<td>2. SGX-DC의 자기기여금 (“Skin in the Game”)</td>
+<td>SGD 2억 (SGD 1.5억에서 증가; 청산기금의 ~25% — 모든 미국 및 유럽 CCP보다 높은 수준)</td>
+</tr>
+<tr class="odd">
+<td>3. 청산기금 (비채무불이행 회원)</td>
+<td>스트레스 테스트에 기반하여 규모가 결정된 모든 비채무불이행 청산회원의 상호기금 분담금</td>
+</tr>
+<tr class="even">
+<td>4. 추가 분담금</td>
+<td>청산회원의 상한 있는 추가 재무 분담금</td>
+</tr>
+</tbody>
+</table>
+<p><strong>주요 리스크 관리 특징:</strong> - 인가 결제은행을 통한 일일 시가평가 결제 - 증거금 요건 부족분 및 잠재적 시가평가 손실을 커버하기 위한 일중 증거금 추가 납부 요구 - 청산회원은 일중 주기에 따라 결제은행을 통해 증거금 추가 납부를 이행해야 한다 - 청산기금 분담금은 지정 기간에 걸친 스트레스 손실에 기반하여 각 회원이 가져오는 리스크에 비례하여 조정 - SGX-DC는 미국 CFTC에 Derivatives Clearing Organization (DCO)으로 등록되어 있어 미국 시장 참가자의 접근이 가능</p>
+<p>[Source: SGX Rulebook, “Practice Note 8.10A — Circuit Breaker”; SGX Rulebook, “Regulatory Notice 8.14.1 — Circuit Breaker”; WFE, “SGX Takes a Deep Look at Circuit Breakers”; SGX website, “Risk Management”; Hong Kong Lawyer, “Singapore Exchange Eyes Increase in Skin in the Game for OTC Derivatives Clearing”; CFTC, “SGX-DC Regulatory Compliance Chart”]</p>
+<hr>
+</section>
+</section>
+<section id="규제-체계-regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</h2>
+<section id="주요-규제기관-primary-regulator" class="level3">
+<h3 class="anchored" data-anchor-id="주요-규제기관-primary-regulator">9.1 주요 규제기관 (Primary Regulator)</h3>
+<ul>
+<li><strong>싱가포르 통화관리국 (Monetary Authority of Singapore, MAS):</strong> 중앙은행 겸 통합 금융규제기관; 증권선물법 2001(Securities and Futures Act 2001)에 따라 SGX를 인가 거래소(AE)로, SGX-DC를 인가 청산기관(ACH)으로 감독</li>
+<li><strong>SGX RegCo:</strong> 2016년 SGX Group의 독립 규제 자회사로 설립; 시장 감시, 회원 규제, 상장 규제, 집행 등 일선 규제 기능 수행</li>
+</ul>
+</section>
+<section id="주요-법률-및-규정-key-legislation-and-regulations" class="level3">
+<h3 class="anchored" data-anchor-id="주요-법률-및-규정-key-legislation-and-regulations">9.2 주요 법률 및 규정 (Key Legislation and Regulations)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>규정</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>증권선물법 2001 (Securities and Futures Act 2001, SFA)</strong></td>
+<td>싱가포르 증권 및 파생상품 시장을 규율하는 기본법; 인허가, 매매, 청산, 시장 행위, 시장 남용을 포괄</td>
+</tr>
+<tr class="even">
+<td><strong>증권선물(파생상품 거래) 규정 2019</strong></td>
+<td>특정 파생상품 계약에 대한 의무적 플랫폼 매매 요건</td>
+</tr>
+<tr class="odd">
+<td><strong>증권선물(파생상품 보고) 규정 2013</strong></td>
+<td>인가 거래정보저장소에 대한 장외 파생상품 보고 요건</td>
+</tr>
+<tr class="even">
+<td><strong>MAS 기술 리스크 관리 지침</strong></td>
+<td>거래소를 포함한 금융기관의 기술 거버넌스, IT 보안, 가용성, 재해복구 요건</td>
+</tr>
+<tr class="odd">
+<td><strong>SGX-DT 선물거래규칙</strong></td>
+<td>매매 행위, 주문 유형, 시장 단계, 회원 의무를 규율하는 거래소별 규칙</td>
+</tr>
+<tr class="even">
+<td><strong>SGX-DC 청산규칙</strong></td>
+<td>청산 회원, 증거금, 결제, 채무불이행 관리, 청산기금을 규율하는 규칙</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="시장-감시-market-surveillance" class="level3">
+<h3 class="anchored" data-anchor-id="시장-감시-market-surveillance">9.3 시장 감시 (Market Surveillance)</h3>
+<ul>
+<li><strong>SGX RegCo</strong>는 조작, 스푸핑, 가장매매, 내부자거래 및 기타 시장 남용에 대한 실시간 시장 감시를 수행한다</li>
+<li>감시 시스템은 증권 및 파생상품 시장 전반의 매매 패턴을 모니터링한다</li>
+<li>SGX RegCo는 회원 및 상장회사에 대한 조사, 징계, 제재 권한을 보유한다</li>
+<li>주식, 파생상품, 장외 시장에 걸친 교차시장 감시 역량</li>
+</ul>
+</section>
+<section id="보고-요건-reporting-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="보고-요건-reporting-requirements">9.4 보고 요건 (Reporting Requirements)</h3>
+<ul>
+<li><strong>대량포지션 보고:</strong> 회원은 회사 수준에서 포지션을 모니터링하는 자동화된 절차를 갖추어야 하며, 단일 고객 및 단일 계약에 대한 건전성 한도를 위반할 위험이 있는 경우 보고해야 한다</li>
+<li><strong>장외 파생상품 보고:</strong> 2013년 규정에 따라 거래상대방은 장외 파생상품 계약을 인가 거래정보저장소에 보고해야 한다 (거래소 거래 파생상품은 별도 처리)</li>
+<li><strong>청산회원 보고:</strong> SGX-DC에 대한 증거금, 담보, 재무상태의 일일 보고</li>
+<li><strong>거래 보고:</strong> 요구에 따라 MAS에 거래 세부사항 보고</li>
+</ul>
+</section>
+<section id="국경간-인정-cross-border-recognition" class="level3">
+<h3 class="anchored" data-anchor-id="국경간-인정-cross-border-recognition">9.5 국경간 인정 (Cross-Border Recognition)</h3>
+<ul>
+<li><strong>미국 CFTC:</strong> SGX-DC는 Derivatives Clearing Organization (DCO)으로 등록되어 있어 미국 FCM 및 고객이 SGX-DC에서 청산 가능; SGX-DT는 특정 미국인의 직접 접근을 위한 “no-action” 구제를 받음</li>
+<li><strong>EU/EMIR:</strong> SGX-DC는 EMIR에 따라 EU 청산회원 접근을 위한 제3국 CCP로 인정</li>
+<li><strong>GIFT Connect (인도):</strong> NSE IX-SGX GIFT Connect를 위한 MAS와 SEBI/IFSCA 간 규제 체계 수립</li>
+<li><strong>상호상쇄시스템 (Mutual Offset System, MOS):</strong> 역사적으로 CME Group과 Nikkei 225 및 유로달러 선물에 대해 유지 — 한 거래소에서 개시된 포지션을 다른 거래소로 이전하여 청산 가능</li>
+<li><strong>CPMI-IOSCO:</strong> SGX-DC는 금융시장인프라 원칙(PFMI)에 따른 공시 문서를 발간한다</li>
+<li>일본(JFSA), 홍콩(SFC), 호주(ASIC) 등의 규제기관과의 <strong>다수의 양자 MOU</strong></li>
+</ul>
+<p>[Source: MAS website, “Securities and Futures Act 2001”; SGX Rulebook, “Futures Trading Rules”; SGX Rulebook, “SGX-DC Clearing Rules”; CFTC, “Industry Filings: Derivatives Clearing Organizations”; SGX website, “Memberships”]</p>
+<hr>
+</section>
+</section>
+<section id="수수료-및-수익-모델-fees-revenue-model" class="level2">
+<h2 class="anchored" data-anchor-id="수수료-및-수익-모델-fees-revenue-model">10. 수수료 및 수익 모델 (Fees &amp; Revenue Model)</h2>
+<section id="매매-및-청산-수수료-trading-clearing-fees" class="level3">
+<h3 class="anchored" data-anchor-id="매매-및-청산-수수료-trading-clearing-fees">10.1 매매 및 청산 수수료 (Trading &amp; Clearing Fees)</h3>
+<p>SGX는 계약당 기준으로 매매 수수료(SGX-DT에) 및 청산 수수료(SGX-DC에)를 부과한다. 수수료는 상품, 회원 유형, 거래량 등급에 따라 상이하다. 대표적 요율:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 62%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품 범주</th>
+<th>대략적 계약당 수수료 (편도)</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주가지수 선물 (예: FTSE China A50)</td>
+<td>USD 0.50 – 1.50</td>
+<td>회원 요율 상당히 낮음; 거래량 할인 적용</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 선물</td>
+<td>JPY 40 – 100</td>
+<td>JPY 대 USD 표시에 따라 상이</td>
+</tr>
+<tr class="odd">
+<td>외환 선물</td>
+<td>USD 0.30 – 1.00</td>
+<td>대량 거래 시 실효 요율 인하</td>
+</tr>
+<tr class="even">
+<td>철광석 선물</td>
+<td>USD 0.50 – 1.50</td>
+<td>거래량 인센티브 프로그램 이용 가능</td>
+</tr>
+<tr class="odd">
+<td>선물옵션</td>
+<td>USD 0.50 – 2.00</td>
+<td>프리미엄 기반 청산 수수료도 적용 가능 (프리미엄의 0.05%, 최대 $200)</td>
+</tr>
+<tr class="even">
+<td>NLT (블록) 거래</td>
+<td>별도 수수료 체계</td>
+<td>일반적으로 전자 거래소 수수료보다 높음</td>
+</tr>
+</tbody>
+</table>
+<p><em>참고: 정확한 수수료는 변경 대상이다. SGX는 웹사이트 및 청산회원 통신을 통해 상세 수수료 체계를 공시한다. 위 수수료는 브로커로부터 공개된 정보에 기반한 대략적 범위이다.</em> [unverified — 구체적 요율은 공식 SGX 수수료 체계에서 미확인]</p>
+<p><strong>수수료 등급:</strong> - <strong>회원 요율:</strong> 비회원 요율 대비 상당히 인하 - <strong>거래량 인센티브 프로그램:</strong> 대량 참가자에 대한 단계별 할인 - <strong>시장조성자 할인:</strong> 호가 의무를 충족하는 지정 시장조성자에 대한 수수료 감면 - <strong>청산 수수료:</strong> 매매 수수료와 별도 부과; SGX-DC에 납부</p>
+</section>
+<section id="시장-데이터-수수료-market-data-fees" class="level3">
+<h3 class="anchored" data-anchor-id="시장-데이터-수수료-market-data-fees">10.2 시장 데이터 수수료 (Market Data Fees)</h3>
+<ul>
+<li>실시간 ITCH 시장 데이터에 대한 전문가 및 비전문가 수수료 등급</li>
+<li>SGX Data Services를 통한 과거 데이터 이용 가능</li>
+<li>데이터 벤더를 위한 재배포 라이선스</li>
+<li>지수 라이선스 수수료 (FTSE, MSCI, Nikkei)가 상품 경제에 포함</li>
+</ul>
+</section>
+<section id="접속-및-코로케이션-수수료-connectivity-co-location-fees" class="level3">
+<h3 class="anchored" data-anchor-id="접속-및-코로케이션-수수료-connectivity-co-location-fees">10.3 접속 및 코로케이션 수수료 (Connectivity &amp; Co-Location Fees)</h3>
+<ul>
+<li>코로케이션 랙 공간 및 전력 비용</li>
+<li>SGX 데이터센터 내 크로스커넥트 수수료</li>
+<li>관리 네트워크 서비스 접근을 위한 네트워크 접속 수수료</li>
+<li>구체적 수수료 체계는 SGX에 요청 시 이용 가능</li>
+</ul>
+</section>
+<section id="수익-구조-fy2025-revenue-breakdown" class="level3">
+<h3 class="anchored" data-anchor-id="수익-구조-fy2025-revenue-breakdown">10.4 수익 구조 (FY2025) (Revenue Breakdown)</h3>
+<p>SGX Group의 역대 최고 순수익 SGD 13억은 파생상품 관련 부문별로 다음과 같이 구성된다:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>부문</th>
+<th>매출 (SGD)</th>
+<th>전년 대비 성장</th>
+<th>전체 비중</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주식 — 파생상품</td>
+<td>3억 4,590만</td>
+<td>+13.8%</td>
+<td>26.6%</td>
+</tr>
+<tr class="even">
+<td>통화 &amp; 상품</td>
+<td>3억 1,250만</td>
+<td>+8.6%</td>
+<td>24.0%</td>
+</tr>
+<tr class="odd">
+<td>플랫폼 &amp; 기타</td>
+<td>2억 3,800만</td>
+<td>+3.0%</td>
+<td>18.3%</td>
+</tr>
+<tr class="even">
+<td>주식 — 현물</td>
+<td>~4억+</td>
+<td>+27.5% (SDAV)</td>
+<td>~31%</td>
+</tr>
+</tbody>
+</table>
+<p>파생상품 관련 매출 (주식 파생상품 + 통화 &amp; 상품)은 약 SGD 6억 5,800만으로, SGX Group 총 순수익의 약 50.6%를 차지한다 — 이는 SGX의 파생상품 주도 거래소 그룹으로서의 정체성을 보여준다.</p>
+<p><strong>장외 외환 ADV:</strong> 역대 최고 USD 1,430억 (FY2025 전년 대비 +28%)</p>
+<p>[Source: SGX FY2025 Annual Report; SGX FY2025 Results Presentation; Yahoo Finance, “SGX posts record revenue, net profit in FY2025”; Interactive Brokers, “SGX Exchange and Regulatory Fees”]</p>
+<hr>
+</section>
+</section>
+<section id="최근-동향-recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</h2>
+<section id="시스템-업그레이드-및-기술-system-upgrades-technology" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-업그레이드-및-기술-system-upgrades-technology">11.1 시스템 업그레이드 및 기술 (System Upgrades &amp; Technology)</h3>
+<ul>
+<li><strong>Titan DT 개선:</strong> Titan DT에 Self-Trade Prevention (STP) 강화 배치 (2024/2025년) — 자기매매 방지의 보다 세분화된 설정 가능</li>
+<li><strong>Iris-ST (2027년 예정):</strong> 2027년 하반기 신규 증권 매매 엔진 계획; 파생상품 플랫폼 진화는 후속 예정</li>
+<li><strong>SGX-Nasdaq 글로벌 리스팅 보드:</strong> 시가총액 SGD 20억 이상 기업을 위한 공동 이니셔티브 2025년 발표; SGX와 Nasdaq 간 이중상장 브릿지</li>
+</ul>
+</section>
+<section id="신규-상품-및-시장-발전-new-products-market-developments" class="level3">
+<h3 class="anchored" data-anchor-id="신규-상품-및-시장-발전-new-products-market-developments">11.2 신규 상품 및 시장 발전 (New Products &amp; Market Developments)</h3>
+<ul>
+<li><strong>암호화폐 무기한 선물 (2025년 11월):</strong> Bitcoin 및 Ethereum 무기한 선물 출시 — 만기 없는 연속 구조로 기관 등급 청산 및 증거금; 8개 청산회원 지원; 첫날 ~2,000 lot (~USD 3,500만 명목) 거래; iEdge-CoinDesk Cryptocurrency Indices에 연동</li>
+<li><strong>아시아태평양 국채 선물 (2026년 4월):</strong> 인도, 인도네시아, 말레이시아, 태국, 필리핀을 커버하는 최초의 거래소 상장 지역 국채 선물; 달러표시; 국가 금리 리스크 헤지를 위해 설계; 2026년 4월 20일 거래 개시</li>
+<li><strong>역대 최고 파생상품 거래량 (2025년):</strong> 주식, 외환, 상품 전 분야에 걸쳐 3억 2,900만 계약 — 역대 최고
+<ul>
+<li>FTSE China A50 선물: 9개월 기준 ~8,400만 lot (+20%)</li>
+<li>외환 선물: 7,360만 계약 (전년 대비 +49.7%); 2025년 2월에만 610만 계약 — 역대 월간 최고</li>
+<li>상품 파생상품: 6,530만 계약 (+6.2%)</li>
+<li>철광석 선물: 4,360만 계약 (+15%) — 글로벌 거래량 최고</li>
+<li>MSCI Singapore OI: 역대 최고 명목 USD 61억 (전년 대비 +80%)</li>
+<li>FTSE China A50 OI: USD 138억 (2025년 2월 기준 전년 대비 +24%)</li>
+</ul></li>
+<li><strong>GIFT Connect 성장:</strong> GIFT Nifty 월간 거래대금이 2025년 5월 기준 USD 1,020억을 초과, 해당 월 200만 계약 이상 거래</li>
+</ul>
+</section>
+<section id="규제-변경-regulatory-changes" class="level3">
+<h3 class="anchored" data-anchor-id="규제-변경-regulatory-changes">11.3 규제 변경 (Regulatory Changes)</h3>
+<ul>
+<li><strong>MAS 입법 제안 (2026년):</strong> MAS가 SGX-Nasdaq 글로벌 리스팅 보드에서의 이중상장을 촉진하기 위한 입법 변경 제안</li>
+<li><strong>SGX RegCo ETF 시장조성자 간소화 (2025년):</strong> ETF 지정 시장조성자 요건 간소화</li>
+<li><strong>채무불이행 관리 강화:</strong> SGX가 국제 모범사례와 일치하는 채무불이행 관리 역량 강화를 위한 SGX-DC 청산규칙 변경 제안</li>
+</ul>
+</section>
+<section id="전략적-이니셔티브-strategic-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="전략적-이니셔티브-strategic-initiatives">11.4 전략적 이니셔티브 (Strategic Initiatives)</h3>
+<ul>
+<li><strong>범아시아 관문 전략:</strong> SGX는 주가지수 파생상품 제품군을 통해 아시아 경제의 80% 이상을 커버하며, 아시아 파생상품 익스포저의 주요 국제 관문으로 계속 포지셔닝</li>
+<li><strong>철광석 글로벌 벤치마크:</strong> SGX는 현재 전 세계 해상 철광석 파생상품의 90% 이상을 청산하며, SGX TSI Iron Ore 62% 계약을 글로벌 벤치마크로 확고히 자리매김</li>
+<li><strong>다자산 확장:</strong> 주식, 외환, 상품, 금리, 디지털 자산 전 자산군에 걸친 전략적 확장으로 종합 다자산 플랫폼 구축</li>
+<li><strong>GIFT Connect 심화:</strong> NSE IX-SGX GIFT Connect의 지속적 성장, 확대되는 상품 진열대 (Nifty 50, Nifty Bank, Nifty Financial Services, Nifty IT) 및 증가하는 거래량</li>
+<li><strong>금리 상품 확대:</strong> 기존 JGB 선물 프랜차이즈와 신규 APAC 국채 선물을 활용하여 다자산 플랫폼을 보완하는 금리 프랜차이즈 구축</li>
+</ul>
+<p>[Source: PR Newswire, “SGX Derivatives breaks new ground with institutional-grade crypto perpetual futures”, November 2025; Markets Media, “SGX Derivatives to Launch Asia Pacific Government Bond Futures”, March 2026; TipRanks, “SGX Ends 2025 With Record Derivatives Volumes”, January 2026; FIA, “SGX iron ore futures set volume record”; SGX FY2025 Annual Report; FOW, “SGX weighs opportunities, in rates and new products”]</p>
+<hr>
+</section>
+</section>
+<section id="파생상품-전용-섹션-derivatives-specific-sections" class="level2">
+<h2 class="anchored" data-anchor-id="파생상품-전용-섹션-derivatives-specific-sections">파생상품 전용 섹션 (Derivatives-Specific Sections)</h2>
+<hr>
+</section>
+<section id="d1.-상품-목록-product-catalog" class="level2">
+<h2 class="anchored" data-anchor-id="d1.-상품-목록-product-catalog">D1. 상품 목록 (Product Catalog)</h2>
+<section id="자산군별-by-asset-class" class="level3">
+<h3 class="anchored" data-anchor-id="자산군별-by-asset-class">자산군별 (By Asset Class)</h3>
+<section id="주가지수-파생상품-equity-index-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="주가지수-파생상품-equity-index-derivatives">주가지수 파생상품 (Equity Index Derivatives)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 13%">
+<col style="width: 25%">
+<col style="width: 20%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>종목코드</th>
+<th>계약 단위</th>
+<th>결제</th>
+<th>거래소/장소</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FTSE China A50 Index 선물</td>
+<td>CN</td>
+<td>USD 1 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>FTSE China A50 Index 옵션</td>
+<td>—</td>
+<td>USD 1 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="odd">
+<td>Nikkei 225 Index 선물 (JPY)</td>
+<td>NK</td>
+<td>JPY 500 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 Index 선물 (USD)</td>
+<td>NU</td>
+<td>USD 5 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="odd">
+<td>Nikkei 225 Mini 선물</td>
+<td>NM</td>
+<td>JPY 100 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 Index 옵션</td>
+<td>—</td>
+<td>JPY 500 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="odd">
+<td>Nikkei 225 Total Return 선물</td>
+<td>NR</td>
+<td>JPY 10,000 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>MSCI Singapore Index 선물</td>
+<td>SGP</td>
+<td>SGD 200 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="odd">
+<td>MSCI Singapore Index 옵션</td>
+<td>—</td>
+<td>SGD 200 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>MSCI Taiwan Index 선물</td>
+<td>TW</td>
+<td>USD 100 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="odd">
+<td>MSCI Indonesia Index 선물</td>
+<td>ID</td>
+<td>USD 100 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>MSCI India Index 선물</td>
+<td>—</td>
+<td>USD 5 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="odd">
+<td>MSCI Thailand Index 선물</td>
+<td>—</td>
+<td>USD 100 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="even">
+<td>MSCI Philippines Index 선물</td>
+<td>—</td>
+<td>USD 100 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="odd">
+<td>Hang Seng Index 선물</td>
+<td>—</td>
+<td>HKD 50 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="even">
+<td>FTSE China H50 Index 선물</td>
+<td>—</td>
+<td>HKD 50 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="odd">
+<td>S&amp;P/ASX 200 선물</td>
+<td>—</td>
+<td>AUD 25 x 지수</td>
+<td>현금 결제</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="even">
+<td>GIFT Nifty 50 선물</td>
+<td>IN</td>
+<td>USD 2 x 지수</td>
+<td>현금 결제</td>
+<td>NSE IX (GIFT Connect 경유)</td>
+</tr>
+<tr class="odd">
+<td>GIFT Nifty Bank 선물</td>
+<td>—</td>
+<td>USD 2 x 지수</td>
+<td>현금 결제</td>
+<td>NSE IX (GIFT Connect 경유)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="외환-파생상품-fx-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="외환-파생상품-fx-derivatives">외환 파생상품 (FX Derivatives)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>종목코드</th>
+<th>계약 단위</th>
+<th>결제</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>USD/CNH 선물</td>
+<td>UC</td>
+<td>USD 100,000</td>
+<td>현금 결제</td>
+</tr>
+<tr class="even">
+<td>INR/USD 선물</td>
+<td>IU</td>
+<td>INR 2,000,000</td>
+<td>현금 결제</td>
+</tr>
+<tr class="odd">
+<td>KRW/USD 선물</td>
+<td>KU</td>
+<td>KRW 125,000,000</td>
+<td>현금 결제 [unverified]</td>
+</tr>
+<tr class="even">
+<td>AUD/USD 선물</td>
+<td>AU</td>
+<td>AUD 100,000</td>
+<td>현금 결제 [unverified]</td>
+</tr>
+<tr class="odd">
+<td>AUD/JPY 선물</td>
+<td>—</td>
+<td>AUD 100,000</td>
+<td>현금 결제 [unverified]</td>
+</tr>
+<tr class="even">
+<td>USD/SGD 선물</td>
+<td>—</td>
+<td>USD 100,000</td>
+<td>현금 결제 [unverified]</td>
+</tr>
+<tr class="odd">
+<td>외환 옵션</td>
+<td>—</td>
+<td>다양</td>
+<td>현금 결제</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="상품-파생상품-commodity-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="상품-파생상품-commodity-derivatives">상품 파생상품 (Commodity Derivatives)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 18%">
+<col style="width: 34%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>종목코드</th>
+<th>계약 단위</th>
+<th>결제</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TSI Iron Ore CFR China 62% Fe 선물</td>
+<td>FEF</td>
+<td>100 미터톤</td>
+<td>현금 결제 (TSI 지수 대비)</td>
+</tr>
+<tr class="even">
+<td>MB Iron Ore CFR China 65% Fe 선물</td>
+<td>—</td>
+<td>100 미터톤</td>
+<td>현금 결제 (Fastmarkets 지수 대비)</td>
+</tr>
+<tr class="odd">
+<td>Iron Ore 62% 옵션</td>
+<td>—</td>
+<td>100 미터톤</td>
+<td>현금 결제</td>
+</tr>
+<tr class="even">
+<td>TSI Coking Coal 선물</td>
+<td>—</td>
+<td>100 미터톤</td>
+<td>현금 결제</td>
+</tr>
+<tr class="odd">
+<td>Steel Rebar 선물</td>
+<td>—</td>
+<td>10 미터톤</td>
+<td>현금 결제 [unverified]</td>
+</tr>
+<tr class="even">
+<td>TSR20 Rubber 선물</td>
+<td>—</td>
+<td>5 미터톤</td>
+<td>실물 인도</td>
+</tr>
+<tr class="odd">
+<td>RSS3 Rubber 선물</td>
+<td>—</td>
+<td>5 미터톤</td>
+<td>실물 인도 [unverified]</td>
+</tr>
+<tr class="even">
+<td>Freight 선물 (FFA)</td>
+<td>—</td>
+<td>다양</td>
+<td>현금 결제</td>
+</tr>
+<tr class="odd">
+<td>Fuel Oil 선물</td>
+<td>—</td>
+<td>다양</td>
+<td>현금 결제 [unverified]</td>
+</tr>
+<tr class="even">
+<td>Naphtha 선물</td>
+<td>—</td>
+<td>다양</td>
+<td>현금 결제 [unverified]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="금리-파생상품-interest-rate-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="금리-파생상품-interest-rate-derivatives">금리 파생상품 (Interest Rate Derivatives)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 18%">
+<col style="width: 34%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>종목코드</th>
+<th>계약 단위</th>
+<th>결제</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Japanese Government Bond (JGB) 선물</td>
+<td>JB</td>
+<td>JPY 100,000,000 액면가</td>
+<td>현금 결제 [unverified]</td>
+</tr>
+<tr class="even">
+<td>APAC 국채 선물 — 인도</td>
+<td>—</td>
+<td>달러표시</td>
+<td>현금 결제 (2026년 4월 출시)</td>
+</tr>
+<tr class="odd">
+<td>APAC 국채 선물 — 인도네시아</td>
+<td>—</td>
+<td>달러표시</td>
+<td>현금 결제 (2026년 4월 출시)</td>
+</tr>
+<tr class="even">
+<td>APAC 국채 선물 — 말레이시아</td>
+<td>—</td>
+<td>달러표시</td>
+<td>현금 결제 (2026년 4월 출시)</td>
+</tr>
+<tr class="odd">
+<td>APAC 국채 선물 — 태국</td>
+<td>—</td>
+<td>달러표시</td>
+<td>현금 결제 (2026년 4월 출시)</td>
+</tr>
+<tr class="even">
+<td>APAC 국채 선물 — 필리핀</td>
+<td>—</td>
+<td>달러표시</td>
+<td>현금 결제 (2026년 4월 출시)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="디지털-자산-파생상품-digital-asset-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="디지털-자산-파생상품-digital-asset-derivatives">디지털 자산 파생상품 (Digital Asset Derivatives)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>종목코드</th>
+<th>계약 단위</th>
+<th>결제</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bitcoin 무기한 선물</td>
+<td>—</td>
+<td>0.1 BTC [unverified]</td>
+<td>현금 결제 (USD)</td>
+</tr>
+<tr class="even">
+<td>Ethereum 무기한 선물</td>
+<td>—</td>
+<td>1.0 ETH [unverified]</td>
+<td>현금 결제 (USD)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: SGX website, “Derivatives Products”; Barchart.com, “SGX Contract Specifications”; Capital Futures Corp., “SGX Contract Specifications”; SGX press releases 2025–2026]</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="d2.-주요-계약-명세-거래량-상위-5개-상품-key-contract-specifications-top-5-products-by-volume" class="level2">
+<h2 class="anchored" data-anchor-id="d2.-주요-계약-명세-거래량-상위-5개-상품-key-contract-specifications-top-5-products-by-volume">D2. 주요 계약 명세 (거래량 상위 5개 상품) (Key Contract Specifications, Top 5 Products by Volume)</h2>
+<section id="ftse-china-a50-index-선물-cn" class="level3">
+<h3 class="anchored" data-anchor-id="ftse-china-a50-index-선물-cn">1. FTSE China A50 Index 선물 (CN)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>명세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>FTSE China A50 Index (시가총액 기준 A주 상위 50개 기업)</td>
+</tr>
+<tr class="even">
+<td>계약 단위</td>
+<td>USD 1 x FTSE China A50 Index</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (최소가격변동폭)</td>
+<td>5 지수포인트</td>
+</tr>
+<tr class="even">
+<td>호가단위 가치</td>
+<td>USD 5.00</td>
+</tr>
+<tr class="odd">
+<td>계약 월물</td>
+<td>최근 2개 연속월 + 4개 분기월 (3월, 6월, 9월, 12월 주기)</td>
+</tr>
+<tr class="even">
+<td>매매시간 (T 세션)</td>
+<td>09:00 – 16:30 SGT</td>
+</tr>
+<tr class="odd">
+<td>매매시간 (T+1 세션)</td>
+<td>17:00 – 05:15 +1 SGT</td>
+</tr>
+<tr class="even">
+<td>최종거래일</td>
+<td>계약월의 끝에서 두 번째 영업일</td>
+</tr>
+<tr class="odd">
+<td>최종 결제</td>
+<td>현금 결제; 최종거래일 FTSE China A50 Index 공식 종가 기반</td>
+</tr>
+<tr class="even">
+<td>결제 통화</td>
+<td>USD</td>
+</tr>
+<tr class="odd">
+<td>포지션</td>
+<td>실물 인도 없음</td>
+</tr>
+<tr class="even">
+<td>2025년 거래량</td>
+<td>~8,400만 lot (9개월 기준); 2025년 2월에만: 940만 계약 (전년 대비 +18%)</td>
+</tr>
+<tr class="odd">
+<td>미결제약정 (2025년 2월)</td>
+<td>명목 USD 138억 (전년 대비 +24%)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tsi-iron-ore-cfr-china-62-fe-선물-fef" class="level3">
+<h3 class="anchored" data-anchor-id="tsi-iron-ore-cfr-china-62-fe-선물-fef">2. TSI Iron Ore CFR China 62% Fe 선물 (FEF)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>명세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>Platts TSI Iron Ore CFR China 62% Fe Fines Index</td>
+</tr>
+<tr class="even">
+<td>계약 단위</td>
+<td>100 미터톤</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (최소가격변동폭)</td>
+<td>미터톤당 USD 0.01</td>
+</tr>
+<tr class="even">
+<td>호가단위 가치</td>
+<td>USD 1.00</td>
+</tr>
+<tr class="odd">
+<td>계약 월물</td>
+<td>최대 72개 연속 월물</td>
+</tr>
+<tr class="even">
+<td>매매시간 (T 세션)</td>
+<td>07:25 – 19:55 SGT</td>
+</tr>
+<tr class="odd">
+<td>매매시간 (T+1 세션)</td>
+<td>20:15 – 04:45 +1 SGT</td>
+</tr>
+<tr class="even">
+<td>최종거래일</td>
+<td>계약월 내 TSI 철광석 기준가격의 마지막 발행일</td>
+</tr>
+<tr class="odd">
+<td>최종 결제</td>
+<td>현금 결제; 계약월 중 TSI Iron Ore CFR China 62% Fe Fines 평가의 산술평균 기반</td>
+</tr>
+<tr class="even">
+<td>결제 통화</td>
+<td>USD</td>
+</tr>
+<tr class="odd">
+<td>2025년 거래량</td>
+<td>4,360만 계약 (전년 대비 +15%) — 글로벌 거래량 최고</td>
+</tr>
+<tr class="even">
+<td>시장 점유율</td>
+<td>SGX가 전 세계 해상 철광석 파생상품의 90% 이상 청산</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="nikkei-225-index-선물-jpy-nk" class="level3">
+<h3 class="anchored" data-anchor-id="nikkei-225-index-선물-jpy-nk">3. Nikkei 225 Index 선물 — JPY (NK)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>명세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>Nikkei 225 Stock Average</td>
+</tr>
+<tr class="even">
+<td>계약 단위</td>
+<td>JPY 500 x Nikkei 225 Index</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (최소가격변동폭)</td>
+<td>5 지수포인트</td>
+</tr>
+<tr class="even">
+<td>호가단위 가치</td>
+<td>JPY 2,500</td>
+</tr>
+<tr class="odd">
+<td>계약 월물</td>
+<td>5개 분기월 (3월 주기) + 최근 3개 연속월</td>
+</tr>
+<tr class="even">
+<td>매매시간 (T 세션)</td>
+<td>07:30 – 14:55 SGT</td>
+</tr>
+<tr class="odd">
+<td>매매시간 (T+1 세션)</td>
+<td>15:10 – 05:15 +1 SGT</td>
+</tr>
+<tr class="even">
+<td>최종거래일</td>
+<td>계약월 둘째 금요일 전 영업일</td>
+</tr>
+<tr class="odd">
+<td>최종 결제</td>
+<td>현금 결제; Nikkei 225 Index의 Special Quotation (SQ) 기반</td>
+</tr>
+<tr class="even">
+<td>결제 통화</td>
+<td>JPY</td>
+</tr>
+<tr class="odd">
+<td>MOS</td>
+<td>CME Group과의 상호상쇄시스템 적격</td>
+</tr>
+<tr class="even">
+<td>역사적 의의</td>
+<td>1986년 출시 — 최초의 역외 Nikkei 225 상장; SGX의 선구적 상품</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="usdcnh-선물-uc" class="level3">
+<h3 class="anchored" data-anchor-id="usdcnh-선물-uc">4. USD/CNH 선물 (UC)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>명세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>USD/CNH (역외 위안화) 환율</td>
+</tr>
+<tr class="even">
+<td>계약 단위</td>
+<td>USD 100,000</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (최소가격변동폭)</td>
+<td>USD당 0.0001 CNH [unverified]</td>
+</tr>
+<tr class="even">
+<td>계약 월물</td>
+<td>13개 연속 월물</td>
+</tr>
+<tr class="odd">
+<td>매매시간 (T 세션)</td>
+<td>07:25 – 19:55 SGT</td>
+</tr>
+<tr class="even">
+<td>매매시간 (T+1 세션)</td>
+<td>20:15 – 05:15 +1 SGT</td>
+</tr>
+<tr class="odd">
+<td>최종거래일</td>
+<td>결제일 2 홍콩 영업일 전</td>
+</tr>
+<tr class="even">
+<td>최종 결제</td>
+<td>현금 결제; TMA가 발행하는 USD/CNH(HK) 고시환율 기반</td>
+</tr>
+<tr class="odd">
+<td>결제 통화</td>
+<td>USD</td>
+</tr>
+<tr class="even">
+<td>2025년 거래량</td>
+<td>역대 최고 7,360만 외환 선물 계약의 일부 (전년 대비 +49.7%)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="inrusd-선물-iu" class="level3">
+<h3 class="anchored" data-anchor-id="inrusd-선물-iu">5. INR/USD 선물 (IU)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>명세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>INR/USD 환율</td>
+</tr>
+<tr class="even">
+<td>계약 단위</td>
+<td>INR 2,000,000</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (최소가격변동폭)</td>
+<td>100 인도루피당 0.01 US 센트</td>
+</tr>
+<tr class="even">
+<td>호가단위 가치</td>
+<td>USD 2.00</td>
+</tr>
+<tr class="odd">
+<td>계약 월물</td>
+<td>최대 13개 연속 월물</td>
+</tr>
+<tr class="even">
+<td>매매시간 (T 세션)</td>
+<td>07:25 – 19:30 SGT [unverified]</td>
+</tr>
+<tr class="odd">
+<td>매매시간 (T+1 세션)</td>
+<td>20:15 – 05:15 +1 SGT [unverified]</td>
+</tr>
+<tr class="even">
+<td>최종거래일</td>
+<td>결제일 2 뭄바이 영업일 전</td>
+</tr>
+<tr class="odd">
+<td>최종 결제</td>
+<td>현금 결제; RBI Reference Rate 기반</td>
+</tr>
+<tr class="even">
+<td>결제 통화</td>
+<td>USD</td>
+</tr>
+<tr class="odd">
+<td>포인트 가치</td>
+<td>USD 200</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: SGX website, “FTSE China A50 Index Futures”; SGX website, “Iron Ore”; SGX website, “Nikkei 225 Index Futures and Options”; Barchart.com, “SGX Contract Specifications”; FIA, “SGX iron ore futures set volume record”; SGX market statistics, February 2025]</p>
+<hr>
+</section>
+</section>
+<section id="d3.-증거금-체계-margin-framework" class="level2">
+<h2 class="anchored" data-anchor-id="d3.-증거금-체계-margin-framework">D3. 증거금 체계 (Margin Framework)</h2>
+<section id="방법론-span-standard-portfolio-analysis-of-risk" class="level3">
+<h3 class="anchored" data-anchor-id="방법론-span-standard-portfolio-analysis-of-risk">방법론: SPAN (Standard Portfolio Analysis of Risk)</h3>
+<p>SGX-DC는 주요 증거금 시스템으로 SPAN을 사용한다 — 증거금 요건을 산출하기 위한 리스크 기반 포트폴리오 접근법이다.</p>
+<p><strong>주요 특징:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>특징</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>모델</td>
+<td>SPAN (Standard Portfolio Analysis of Risk), CME Group이 원래 개발</td>
+</tr>
+<tr class="even">
+<td>접근법</td>
+<td>다수의 시장 시나리오 하에서 지정 시간 범위 (통상 선물 1일, 옵션 1-2일)에 걸친 최악의 포트폴리오 손실을 평가</td>
+</tr>
+<tr class="odd">
+<td>리스크 시나리오</td>
+<td>가격 변동과 변동성 변화를 결합한 16개 표준 시나리오</td>
+</tr>
+<tr class="even">
+<td>가격 스캔 범위</td>
+<td>변동성 스케일링을 적용한 과거 가격 데이터를 사용하여 보정된 신뢰수준 (통상 99% 이상)에 기반 설정</td>
+</tr>
+<tr class="odd">
+<td>변동성 스캔 범위</td>
+<td>내재변동성의 변화를 포함하는 시나리오</td>
+</tr>
+<tr class="even">
+<td>포트폴리오 상쇄</td>
+<td>동일 결합상품군 내 상관된 포지션에 대한 교차증거금 크레딧</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sgx-dc의-강화된-span-파라미터-sgx-dcs-enhanced-span-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="sgx-dc의-강화된-span-파라미터-sgx-dcs-enhanced-span-parameters">SGX-DC의 강화된 SPAN 파라미터 (SGX-DC’s Enhanced SPAN Parameters)</h3>
+<p>SGX-DC는 표준 SPAN 방법론에 구체적인 수정을 가하여 강화하였다:</p>
+<ol type="1">
+<li><p><strong>변동성 스케일링:</strong> SGX는 직전 1년간 모든 가격 관찰에 동일 가중치를 부여하던 기존 표준편차 접근법을 변동성 스케일링 방법론으로 대체하였다. 증거금은 이제 현재의 변동성 체제에 보다 민감하게 반응하며 — 고변동성 기간에 증가하고 안정기에 감소한다.</p></li>
+<li><p><strong>경기순응성 완화 하한:</strong> 하한은 장기 저변동성 기간에도 증거금이 <strong>10년 룩백 기간</strong>을 사용하여 산출되는 수준 이하로 하락하지 않도록 보장한다. 이는 안정적 시장에서의 과소증거금 리스크 축적을 방지한다.</p></li>
+<li><p><strong>스트레스 테스트:</strong> SGX-DC는 극단적이지만 가능한 시장 상황에서의 청산기금 적정성을 확보하기 위해 SPAN 시나리오 이상의 스트레스 테스트를 정기적으로 수행한다.</p></li>
+</ol>
+</section>
+<section id="증거금-유형-margin-types" class="level3">
+<h3 class="anchored" data-anchor-id="증거금-유형-margin-types">증거금 유형 (Margin Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>증거금 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>개시증거금 (Performance Bond)</strong></td>
+<td>포지션 개시에 필요한 예치금; SPAN 시나리오 하에서의 추정 최대 1일 손실을 커버</td>
+</tr>
+<tr class="even">
+<td><strong>유지증거금</strong></td>
+<td>유지해야 하는 최소 증거금 수준; 통상 개시증거금보다 낮게 설정</td>
+</tr>
+<tr class="odd">
+<td><strong>변동증거금</strong></td>
+<td>일일 시가평가 결제; 각 영업일 종료 시 산출되며 결제은행을 통해 현금으로 정산</td>
+</tr>
+<tr class="even">
+<td><strong>일중 증거금</strong></td>
+<td>포지션에 상당한 미실현 손실이 발생하거나 변동성이 급등할 경우 매매일 중 추가 증거금 요구</td>
+</tr>
+<tr class="odd">
+<td><strong>스프레드 증거금</strong></td>
+<td>상쇄 리스크로부터 혜택을 받는 스프레드 포지션 (캘린더, 상품간)에 대한 감면된 증거금</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="증거금-추가-납부-절차-margin-call-process" class="level3">
+<h3 class="anchored" data-anchor-id="증거금-추가-납부-절차-margin-call-process">증거금 추가 납부 절차 (Margin Call Process)</h3>
+<ol type="1">
+<li><strong>장 마감:</strong> 결제가격 결정; 변동증거금 및 증거금 부족분 산출</li>
+<li><strong>증거금 추가 납부 통보:</strong> SGX-DC 시스템을 통해 청산회원에 증거금 의무 통보</li>
+<li><strong>결제:</strong> 인가 결제은행을 통한 현금 이전</li>
+<li><strong>일중 주기:</strong> 매매 세션 중 시장 변동으로 인한 부족분을 커버하기 위해 추가 일중 증거금 요구가 발행될 수 있으며 (신속히 이행해야 함)</li>
+<li><strong>적격 담보:</strong> 현금 (다통화), 정부채권, 은행보증, 기타 승인 담보 형태</li>
+</ol>
+</section>
+<section id="산업-맥락-industry-context" class="level3">
+<h3 class="anchored" data-anchor-id="산업-맥락-industry-context">산업 맥락 (Industry Context)</h3>
+<p>파생상품 업계가 SPAN에서 VaR 기반 증거금 모델 (예: CME SPAN 2, Eurex PRISMA)로 전환하고 있는 가운데, SGX-DC는 강화된 SPAN 체계를 계속 사용하고 있다. 경기순응성 완화 조치와 변동성 스케일링은 기본 SPAN 대비 의미 있는 개선을 나타내며, 리스크 대응성을 유지하면서 증거금 안정성을 제공한다.</p>
+<p>[Source: SGX website, “Risk Management”; SGX Rulebook, “Practice Note 6A.5.2 Calculation of Amount of Clearing Member Required Margins”; Risk.net, “SGX’s Koh defends clearing methods post-Nasdaq”; CME Group, “SPAN Methodology Overview”; FIA, “Navigating a New Era in Derivatives Clearing”]</p>
+<hr>
+</section>
+</section>
+<section id="d4.-포지션한도-및-대량포지션-보고-position-limits-large-position-reporting" class="level2">
+<h2 class="anchored" data-anchor-id="d4.-포지션한도-및-대량포지션-보고-position-limits-large-position-reporting">D4. 포지션한도 및 대량포지션 보고 (Position Limits &amp; Large Position Reporting)</h2>
+<section id="포지션한도-position-limits" class="level3">
+<h3 class="anchored" data-anchor-id="포지션한도-position-limits">포지션한도 (Position Limits)</h3>
+<p>SGX는 시스템 리스크를 관리하고 과도한 집중을 방지하기 위해 파생상품 계약에 포지션한도 (건옥제한)를 부과한다:</p>
+<ul>
+<li><strong>포지션한도</strong>는 SGX 규칙집 (Section 18.4.2)에서 계약별로 정의되며 상품에 따라 상이하다</li>
+<li>회원은 단일 고객 및 단일 계약에 대한 건전성 한도 위반 위험 시 회사 수준에서 모니터링하는 <strong>자동화된 절차</strong>를 갖추어야 한다</li>
+<li>포지션한도는 <strong>투기적 포지션</strong> — 기초 상업적 헤지 수요 없이 매매/투자 목적으로 보유하는 포지션에 적용된다</li>
+</ul>
+</section>
+<section id="헤지-면제-hedge-exemptions" class="level3">
+<h3 class="anchored" data-anchor-id="헤지-면제-hedge-exemptions">헤지 면제 (Hedge Exemptions)</h3>
+<ul>
+<li>선의의 헤지 수요가 있는 시장 참가자는 투기적 포지션한도로부터 면제를 신청할 수 있다</li>
+<li>면제 신청은 SGX-DT에 제출해야 하며, 헤지 근거 및 기초 상업적 익스포저를 입증해야 한다</li>
+<li>면제된 포지션은 지속적으로 모니터링 및 보고해야 한다</li>
+</ul>
+</section>
+<section id="대량포지션-보고-large-position-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="대량포지션-보고-large-position-reporting">대량포지션 보고 (Large Position Reporting)</h3>
+<ul>
+<li>청산회원은 포지션이 지정 기준을 초과할 때 SGX-DC에 대량포지션을 보고해야 한다</li>
+<li>대량포지션 보고는 SGX가 집중 리스크 및 잠재적 시장 조작을 모니터링할 수 있게 한다</li>
+<li>기준은 상품별로 설정된다</li>
+</ul>
+</section>
+<section id="책임수준-accountability-levels" class="level3">
+<h3 class="anchored" data-anchor-id="책임수준-accountability-levels">책임수준 (Accountability Levels)</h3>
+<p>SGX는 특정 계약에 대해 (경성 포지션한도와 구별되는) <strong>책임수준</strong>을 설정할 수 있으며, 이 수준을 초과하는 참가자에게 요청 시 포지션 및 매매 의도에 관한 추가 정보를 제공하도록 요구할 수 있다.</p>
+<p>[Source: SGX Rulebook, “18.4.2 Position Limits”; SGX Rulebook, “Practice Note 7.22 — Margins of Third Parties”; SGX website, “Risk Management”]</p>
+<hr>
+</section>
+</section>
+<section id="d5.-블록거래-협상대량거래-nlt-efp-efs-block-trading-nlt-efp-efs" class="level2">
+<h2 class="anchored" data-anchor-id="d5.-블록거래-협상대량거래-nlt-efp-efs-block-trading-nlt-efp-efs">D5. 블록거래 / 협상대량거래 (NLT) / EFP / EFS (Block Trading / NLT / EFP / EFS)</h2>
+<section id="협상대량거래-negotiated-large-trades-nlt" class="level3">
+<h3 class="anchored" data-anchor-id="협상대량거래-negotiated-large-trades-nlt">협상대량거래 (Negotiated Large Trades, NLT)</h3>
+<p>SGX의 블록거래에 해당하는 것은 <strong>협상대량거래(Negotiated Large Trade, NLT)</strong> 시설이다:</p>
+<p><strong>주요 규칙:</strong> - NLT는 중앙호가창 외부에서 두 당사자 간 합의된 가격으로 체결되는 사적 협상 거래이다 - 각 NLT는 Regulatory Notice 4.1.11의 Appendix A에서 계약별로 지정된 <strong>최소 거래량 기준</strong>을 충족해야 한다 - 대표적 최소 기준: - Nikkei 225 옵션: 25 lot - 기타 상품: 계약별 상이 (Regulatory Notice에 구체적 기준 공시) - 동일 기초자산 내 다중 레그 NLT는 <strong>하나 이상의 레그</strong>가 최소 거래량 기준을 충족하면 적격으로 간주 - 회원은 최소 거래량 기준을 충족하기 위해서만 개별 고객의 주문을 결합해서는 <strong>안 된다</strong> - 그러나 각각 독립적으로 기준을 초과하는 개별 주문은 더 큰 NLT 상대 매수·매도 호가에 대응하기 위해 결합할 수 있다</p>
+<p><strong>보고 및 등록:</strong> - NLT는 규정된 기한 내에 SGX에 보고해야 한다 - 매도자와 매수자 모두 각 청산회원이 정한 신용 및 포지션 기준을 충족해야 한다 - NLT는 검증 성공 후 SGX-DC에 등록되어 청산된다</p>
+</section>
+<section id="실물교환-exchange-for-physical-efp" class="level3">
+<h3 class="anchored" data-anchor-id="실물교환-exchange-for-physical-efp">실물교환 (Exchange for Physical, EFP)</h3>
+<ul>
+<li><strong>EFP 거래</strong>는 파생상품 포지션을 해당 실물 또는 현물시장 포지션으로 교환 가능하게 한다</li>
+<li>SGX가 정한 절차를 충족해야 한다</li>
+<li>실물 레그는 기초자산 또는 관련 상품/종목의 선의의 거래여야 한다</li>
+<li>청산회원의 신용 및 포지션 기준을 충족해야 한다</li>
+</ul>
+</section>
+<section id="스왑교환-exchange-for-swap-efs" class="level3">
+<h3 class="anchored" data-anchor-id="스왑교환-exchange-for-swap-efs">스왑교환 (Exchange for Swap, EFS)</h3>
+<ul>
+<li><strong>EFS 거래</strong>는 상장 파생상품 포지션을 동등한 장외 스왑 포지션으로 교환 가능하게 한다</li>
+<li>절차, 신용 기준, 보고에 관해 EFP 거래와 유사한 규칙이 적용된다</li>
+</ul>
+</section>
+<section id="등록-요건-registration-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="등록-요건-registration-requirements">등록 요건 (Registration Requirements)</h3>
+<p>“관련 시장”에 상장된 계약 (즉, 다른 거래소에도 상장된 계약)을 포함하는 NLT, EFP, EFS 거래의 경우, Rule 7.04A가 교차시장 건전성을 확보하기 위한 추가 등록 절차 준수를 요구한다.</p>
+<p>[Source: SGX Rulebook, “Regulatory Notice 2.1.3A(4); 4.1.11 — Negotiated Large Trades”; SGX Rulebook, “4.1.11 Negotiated Large Trades”; SGX Rulebook, “7.04A Registration of an NLT, EFP or EFS in Respect of Contracts Listed on a Relevant Market”; SGX website, “Negotiated Large Trade (NLT)”]</p>
+<hr>
+</section>
+</section>
+<section id="d6.-인도-및-결제-절차-delivery-settlement-process" class="level2">
+<h2 class="anchored" data-anchor-id="d6.-인도-및-결제-절차-delivery-settlement-process">D6. 인도 및 결제 절차 (Delivery &amp; Settlement Process)</h2>
+<section id="일일-결제-시가평가-daily-settlement-mark-to-market" class="level3">
+<h3 class="anchored" data-anchor-id="일일-결제-시가평가-daily-settlement-mark-to-market">일일 결제 (시가평가) (Daily Settlement, Mark-to-Market)</h3>
+<ol type="1">
+<li><strong>일일 결제가격:</strong> SGX-DC는 매 영업일 종료 시 모든 상장 파생상품 계약의 일일 결제가격을 결정한다</li>
+<li><strong>변동증거금:</strong> 당일 결제가격과 전일 결제가격 (또는 신규 포지션의 매매가격) 간 차이를 현금으로 정산한다</li>
+<li><strong>결제은행:</strong> 인가 결제은행을 통해 현금 이전이 이루어지며, 청산회원은 인가 은행에 계좌를 유지해야 한다</li>
+<li><strong>일중 결제:</strong> 변동성 높은 시장 상황에서 일중 증거금 추가 납부 및 시가평가가 발동될 수 있다</li>
+</ol>
+</section>
+<section id="최종-결제-현금결제-계약-final-settlement-cash-settled-contracts" class="level3">
+<h3 class="anchored" data-anchor-id="최종-결제-현금결제-계약-final-settlement-cash-settled-contracts">최종 결제 — 현금결제 계약 (Final Settlement — Cash-Settled Contracts)</h3>
+<p>SGX 파생상품의 대부분은 <strong>현금결제</strong>이다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 79%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>최종결제가격 방법론</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FTSE China A50 선물</td>
+<td>최종거래일 FTSE China A50 Index 공식 종가 기반</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 선물</td>
+<td>Nikkei 225 Index의 Special Quotation (SQ) 기반</td>
+</tr>
+<tr class="odd">
+<td>철광석 선물</td>
+<td>계약월 중 TSI Iron Ore CFR China 62% Fe Fines 평가의 산술평균</td>
+</tr>
+<tr class="even">
+<td>외환 선물 (USD/CNH)</td>
+<td>TMA가 발행하는 USD/CNH(HK) 고시환율 기반</td>
+</tr>
+<tr class="odd">
+<td>외환 선물 (INR/USD)</td>
+<td>RBI Reference Rate 기반</td>
+</tr>
+<tr class="even">
+<td>MSCI 지수 선물</td>
+<td>해당 MSCI Index의 공식 종가 기반</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="최종-결제-실물인도-계약-final-settlement-physically-delivered-contracts" class="level3">
+<h3 class="anchored" data-anchor-id="최종-결제-실물인도-계약-final-settlement-physically-delivered-contracts">최종 결제 — 실물인도 계약 (Final Settlement — Physically Delivered Contracts)</h3>
+<p>소수의 SGX 상품 계약 (예: 고무 선물 — TSR20, RSS3)은 실물 인도로 결제된다:</p>
+<ul>
+<li><strong>인도 의무</strong>는 매매 거래상대방에 있으며, SGX-DC에 있지 않다</li>
+<li>SGX-DC는 금전 결제에 대한 중앙거래상대방 역할을 하지만 <strong>실제 인도 절차에 대한 책임은 없다</strong></li>
+<li>인도 장소, 품질 사양, 절차는 각 계약의 명세에 정의되어 있다</li>
+<li>청산회원은 인도 기간까지 포지션을 보유하는 고객이 인도를 하거나 받을 준비가 되어 있도록 해야 한다</li>
+</ul>
+</section>
+<section id="결제-통화-settlement-currency" class="level3">
+<h3 class="anchored" data-anchor-id="결제-통화-settlement-currency">결제 통화 (Settlement Currency)</h3>
+<ul>
+<li>대부분의 SGX 파생상품 계약은 <strong>USD</strong>로 표시 및 결제되어, 국제 참가자가 통화 변환 없이 접근 가능하다</li>
+<li>일부 계약은 JPY (Nikkei 225 JPY), SGD (MSCI Singapore), HKD (Hang Seng 상품), AUD (S&amp;P/ASX 200)로 결제된다</li>
+</ul>
+<p>[Source: SGX website, “Clearing Information”; CFTC, “SGX-DC Regulatory Compliance Chart”; SGX Rulebook, “SGX-DC Clearing Rules”; Capital Futures Corp., “SGX Contract Specifications”]</p>
+<hr>
+</section>
+</section>
+<section id="부록-sgx-파생상품-krx와의-비교-appendix-sgx-derivatives-comparison-with-krx" class="level2">
+<h2 class="anchored" data-anchor-id="부록-sgx-파생상품-krx와의-비교-appendix-sgx-derivatives-comparison-with-krx">부록: SGX 파생상품 — KRX와의 비교 (Appendix: SGX Derivatives — Comparison with KRX)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 38%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>특성</th>
+<th>SGX 파생상품</th>
+<th>KRX 파생상품</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주요 초점</td>
+<td>범아시아 관문; 아시아 주식시장, 상품, 외환에 대한 역외 접근</td>
+<td>국내 한국 시장 (KOSPI 200, KOSDAQ 150, KTB)</td>
+</tr>
+<tr class="even">
+<td>대표 상품</td>
+<td>FTSE China A50 선물</td>
+<td>KOSPI 200 옵션 (역사적으로 계약 건수 기준 세계 최대 활발)</td>
+</tr>
+<tr class="odd">
+<td>청산기관</td>
+<td>SGX-DC</td>
+<td>KRX CCP</td>
+</tr>
+<tr class="even">
+<td>매매 플랫폼</td>
+<td>Titan DT (Nasdaq Genium INET)</td>
+<td>Exture+</td>
+</tr>
+<tr class="odd">
+<td>증거금 모델</td>
+<td>SPAN (변동성 스케일링으로 강화)</td>
+<td>SPAN 기반 (KRX SPAN)</td>
+</tr>
+<tr class="even">
+<td>국제 접근</td>
+<td>광범위한 국제 참여; CFTC 등록 DCO</td>
+<td>보다 제한적인 국제 직접 접근</td>
+</tr>
+<tr class="odd">
+<td>매매시간</td>
+<td>주요 상품 일 최대 ~22시간</td>
+<td>주로 한국 영업시간, 제한적 야간 세션</td>
+</tr>
+<tr class="even">
+<td>통화</td>
+<td>주로 USD 표시</td>
+<td>KRW 표시</td>
+</tr>
+<tr class="odd">
+<td>결제</td>
+<td>T+1 현금 결제 (대부분 상품)</td>
+<td>T+1 현금 결제</td>
+</tr>
+</tbody>
+</table>
+<p><em>참고: KRX 비교는 공개 정보에 기반한 것이며, 구체적 내용은 KRX 문서를 통해 확인해야 한다.</em></p>
+<hr>
+<p><em>본 조사 파일은 SGX 공식 웹사이트, SGX 규칙집, SGX 연차보고서, 규제 제출물, 금융뉴스 자료, 기술 벤더 문서 등 공개 자료를 기반으로 작성되었다. [unverified]로 표시된 정보는 공식 1차 자료에서 확인되지 않았으며, 공식 분석에 사용하기 전 검증이 필요하다.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

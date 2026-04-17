@@ -1,0 +1,2718 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>Eurex Clearing AG – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/asx_clear.html">Organizations</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/eurex_clearing.html">Eurex Clearing AG</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Clearing &amp; Settlement — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Clearing &amp; Settlement -- Comparative Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Organizations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/asx_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Clear / ASX Clear (Futures)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ccil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearing Corporation of India Limited (CCIL)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cdp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Central Depository Pte Ltd (CDP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cds_canada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CDS Clearing and Depository Services (CDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/clearstream.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearstream (Clearstream)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cme_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Clearing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/csdc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/dtcc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Depository Trust &amp; Clearing Corporation (DTCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/eurex_clearing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Eurex Clearing AG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/euroccp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/euroclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euroclear Group (Euroclear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/hkex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Clearing – HKSCC / HKCC / SEOCH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ice_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Clear (ICE Clear U.S. / ICE Clear Europe / ICE Clear Credit)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/jscc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japan Securities Clearing Corporation (JSCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/krx_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX Clearing (Korea Exchange CCP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ksd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KSD (Korea Securities Depository)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/lch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH (LCH Limited &amp; LCH SA)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/muqassa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Securities Clearing Center Company (Muqassa)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/occ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Options Clearing Corporation (OCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/six_xclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SIX x-clear AG (SIX x-clear)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/asia_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/eu_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/us_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">U.S. Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/dtcc_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DTCC Core Systems — NSCC/DTC Settlement &amp; Clearing Infrastructure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/eurex_clearing_prisma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing -- C7 Architecture &amp; PRISMA Margin Engine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/lch_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH Clearing Platforms &amp; Margin Engines</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview-profile" id="toc-overview-profile" class="nav-link active" data-scroll-target="#overview-profile">1. Overview &amp; Profile</a>
+  <ul class="collapse">
+  <li><a href="#corporate-profile" id="toc-corporate-profile" class="nav-link" data-scroll-target="#corporate-profile">1.1 Corporate Profile</a></li>
+  <li><a href="#international-recognitions-third-country-status" id="toc-international-recognitions-third-country-status" class="nav-link" data-scroll-target="#international-recognitions-third-country-status">1.2 International Recognitions &amp; Third-Country Status</a></li>
+  <li><a href="#key-historical-milestones" id="toc-key-historical-milestones" class="nav-link" data-scroll-target="#key-historical-milestones">1.3 Key Historical Milestones</a></li>
+  <li><a href="#executive-leadership-as-of-april-2025" id="toc-executive-leadership-as-of-april-2025" class="nav-link" data-scroll-target="#executive-leadership-as-of-april-2025">1.4 Executive Leadership (as of April 2025)</a></li>
+  </ul></li>
+  <li><a href="#clearing-model" id="toc-clearing-model" class="nav-link" data-scroll-target="#clearing-model">2. Clearing Model</a>
+  <ul class="collapse">
+  <li><a href="#ccp-services" id="toc-ccp-services" class="nav-link" data-scroll-target="#ccp-services">2.1 CCP Services</a></li>
+  <li><a href="#novation-process" id="toc-novation-process" class="nav-link" data-scroll-target="#novation-process">2.2 Novation Process</a></li>
+  <li><a href="#netting" id="toc-netting" class="nav-link" data-scroll-target="#netting">2.3 Netting</a></li>
+  <li><a href="#clearing-membership" id="toc-clearing-membership" class="nav-link" data-scroll-target="#clearing-membership">2.4 Clearing Membership</a></li>
+  </ul></li>
+  <li><a href="#risk-management" id="toc-risk-management" class="nav-link" data-scroll-target="#risk-management">3. Risk Management</a>
+  <ul class="collapse">
+  <li><a href="#margin-framework-eurex-clearing-prisma" id="toc-margin-framework-eurex-clearing-prisma" class="nav-link" data-scroll-target="#margin-framework-eurex-clearing-prisma">3.1 Margin Framework: Eurex Clearing Prisma</a></li>
+  <li><a href="#default-waterfall" id="toc-default-waterfall" class="nav-link" data-scroll-target="#default-waterfall">3.2 Default Waterfall</a></li>
+  <li><a href="#stress-testing-back-testing" id="toc-stress-testing-back-testing" class="nav-link" data-scroll-target="#stress-testing-back-testing">3.3 Stress Testing &amp; Back-Testing</a></li>
+  <li><a href="#recovery-resolution" id="toc-recovery-resolution" class="nav-link" data-scroll-target="#recovery-resolution">3.4 Recovery &amp; Resolution</a></li>
+  </ul></li>
+  <li><a href="#settlement" id="toc-settlement" class="nav-link" data-scroll-target="#settlement">4. Settlement</a>
+  <ul class="collapse">
+  <li><a href="#settlement-cycle-by-product" id="toc-settlement-cycle-by-product" class="nav-link" data-scroll-target="#settlement-cycle-by-product">4.1 Settlement Cycle by Product</a></li>
+  <li><a href="#dvp-model-settlement-infrastructure" id="toc-dvp-model-settlement-infrastructure" class="nav-link" data-scroll-target="#dvp-model-settlement-infrastructure">4.2 DVP Model &amp; Settlement Infrastructure</a></li>
+  <li><a href="#settlement-finality" id="toc-settlement-finality" class="nav-link" data-scroll-target="#settlement-finality">4.3 Settlement Finality</a></li>
+  </ul></li>
+  <li><a href="#technology-infrastructure" id="toc-technology-infrastructure" class="nav-link" data-scroll-target="#technology-infrastructure">5. Technology &amp; Infrastructure</a>
+  <ul class="collapse">
+  <li><a href="#c7-clearing-architecture" id="toc-c7-clearing-architecture" class="nav-link" data-scroll-target="#c7-clearing-architecture">5.1 C7 Clearing Architecture</a></li>
+  <li><a href="#prisma-risk-engine" id="toc-prisma-risk-engine" class="nav-link" data-scroll-target="#prisma-risk-engine">5.2 Prisma Risk Engine</a></li>
+  <li><a href="#interface-protocols-connectivity" id="toc-interface-protocols-connectivity" class="nav-link" data-scroll-target="#interface-protocols-connectivity">5.3 Interface Protocols &amp; Connectivity</a></li>
+  <li><a href="#resilience-disaster-recovery" id="toc-resilience-disaster-recovery" class="nav-link" data-scroll-target="#resilience-disaster-recovery">5.4 Resilience &amp; Disaster Recovery</a></li>
+  </ul></li>
+  <li><a href="#regulatory-framework" id="toc-regulatory-framework" class="nav-link" data-scroll-target="#regulatory-framework">6. Regulatory Framework</a>
+  <ul class="collapse">
+  <li><a href="#national-supervision" id="toc-national-supervision" class="nav-link" data-scroll-target="#national-supervision">6.1 National Supervision</a></li>
+  <li><a href="#eu-level-supervision" id="toc-eu-level-supervision" class="nav-link" data-scroll-target="#eu-level-supervision">6.2 EU-Level Supervision</a></li>
+  <li><a href="#cpmi-iosco-compliance" id="toc-cpmi-iosco-compliance" class="nav-link" data-scroll-target="#cpmi-iosco-compliance">6.3 CPMI-IOSCO Compliance</a></li>
+  </ul></li>
+  <li><a href="#interoperability-cross-ccp-arrangements" id="toc-interoperability-cross-ccp-arrangements" class="nav-link" data-scroll-target="#interoperability-cross-ccp-arrangements">7. Interoperability &amp; Cross-CCP Arrangements</a>
+  <ul class="collapse">
+  <li><a href="#cross-ccp-links" id="toc-cross-ccp-links" class="nav-link" data-scroll-target="#cross-ccp-links">7.1 Cross-CCP Links</a></li>
+  <li><a href="#cross-margin-arrangements" id="toc-cross-margin-arrangements" class="nav-link" data-scroll-target="#cross-margin-arrangements">7.2 Cross-Margin Arrangements</a></li>
+  <li><a href="#relationship-with-clearstream" id="toc-relationship-with-clearstream" class="nav-link" data-scroll-target="#relationship-with-clearstream">7.3 Relationship with Clearstream</a></li>
+  <li><a href="#other-partnerships" id="toc-other-partnerships" class="nav-link" data-scroll-target="#other-partnerships">7.4 Other Partnerships</a></li>
+  </ul></li>
+  <li><a href="#fees" id="toc-fees" class="nav-link" data-scroll-target="#fees">8. Fees</a>
+  <ul class="collapse">
+  <li><a href="#fee-structure-overview" id="toc-fee-structure-overview" class="nav-link" data-scroll-target="#fee-structure-overview">8.1 Fee Structure Overview</a></li>
+  <li><a href="#representative-fee-levels" id="toc-representative-fee-levels" class="nav-link" data-scroll-target="#representative-fee-levels">8.2 Representative Fee Levels</a></li>
+  <li><a href="#pricing-changes" id="toc-pricing-changes" class="nav-link" data-scroll-target="#pricing-changes">8.3 2026 Pricing Changes</a></li>
+  <li><a href="#membership-fees" id="toc-membership-fees" class="nav-link" data-scroll-target="#membership-fees">8.4 Membership Fees</a></li>
+  <li><a href="#prisma-margin-netting-benefits" id="toc-prisma-margin-netting-benefits" class="nav-link" data-scroll-target="#prisma-margin-netting-benefits">8.5 Prisma Margin Netting Benefits</a></li>
+  </ul></li>
+  <li><a href="#recent-developments" id="toc-recent-developments" class="nav-link" data-scroll-target="#recent-developments">9. Recent Developments</a>
+  <ul class="collapse">
+  <li><a href="#c7-system-evolution" id="toc-c7-system-evolution" class="nav-link" data-scroll-target="#c7-system-evolution">9.1 C7 System Evolution</a></li>
+  <li><a href="#d7-post-trade-platform-digital-securities" id="toc-d7-post-trade-platform-digital-securities" class="nav-link" data-scroll-target="#d7-post-trade-platform-digital-securities">9.2 D7 Post-Trade Platform (Digital Securities)</a></li>
+  <li><a href="#partnership-program-otc-irs" id="toc-partnership-program-otc-irs" class="nav-link" data-scroll-target="#partnership-program-otc-irs">9.3 Partnership Program (OTC IRS)</a></li>
+  <li><a href="#otc-clearing-growth" id="toc-otc-clearing-growth" class="nav-link" data-scroll-target="#otc-clearing-growth">9.4 OTC Clearing Growth</a></li>
+  <li><a href="#eurex-repo-f7-platform" id="toc-eurex-repo-f7-platform" class="nav-link" data-scroll-target="#eurex-repo-f7-platform">9.5 Eurex Repo F7 Platform</a></li>
+  <li><a href="#sustainability-derivatives-clearing" id="toc-sustainability-derivatives-clearing" class="nav-link" data-scroll-target="#sustainability-derivatives-clearing">9.6 Sustainability Derivatives Clearing</a></li>
+  <li><a href="#emir-3.0-implications-active-account-requirement" id="toc-emir-3.0-implications-active-account-requirement" class="nav-link" data-scroll-target="#emir-3.0-implications-active-account-requirement">9.7 EMIR 3.0 Implications &amp; Active Account Requirement</a></li>
+  <li><a href="#dlt-enabled-collateral-mobilisation" id="toc-dlt-enabled-collateral-mobilisation" class="nav-link" data-scroll-target="#dlt-enabled-collateral-mobilisation">9.8 DLT-Enabled Collateral Mobilisation</a></li>
+  <li><a href="#prisma-bonds-extension" id="toc-prisma-bonds-extension" class="nav-link" data-scroll-target="#prisma-bonds-extension">9.9 Prisma Bonds Extension</a></li>
+  </ul></li>
+  <li><a href="#appendix-comparison-with-krx-clearing" id="toc-appendix-comparison-with-krx-clearing" class="nav-link" data-scroll-target="#appendix-comparison-with-krx-clearing">Appendix: Comparison with KRX Clearing</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/asx_clear.html">Organizations</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/eurex_clearing.html">Eurex Clearing AG</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Eurex Clearing AG</h1>
+<p class="subtitle lead">Clearing &amp; Settlement &gt; Organizations</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-07 <strong>Research Tier:</strong> Tier 1 (Deep Dive) <strong>Type:</strong> CCP (Central Counterparty)</p>
+</blockquote>
+<hr>
+<section id="overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="overview-profile">1. Overview &amp; Profile</h2>
+<section id="corporate-profile" class="level3">
+<h3 class="anchored" data-anchor-id="corporate-profile">1.1 Corporate Profile</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Official Name</td>
+<td>Eurex Clearing AG</td>
+</tr>
+<tr class="even">
+<td>Abbreviation</td>
+<td>ECAG</td>
+</tr>
+<tr class="odd">
+<td>Website</td>
+<td><a href="https://www.eurex.com/ec-en">https://www.eurex.com/ec-en</a></td>
+</tr>
+<tr class="even">
+<td>Year Established</td>
+<td>1998 (as clearing house for Eurex Exchange); registered as credit institution with BaFin on 6 April 1998 (Registration ID: 119203)</td>
+</tr>
+<tr class="odd">
+<td>Country / City</td>
+<td>Germany / Frankfurt am Main (Mergenthalerallee 61, 65760 Eschborn)</td>
+</tr>
+<tr class="even">
+<td>Ownership Structure</td>
+<td>Wholly owned subsidiary of Eurex Frankfurt AG, which is part of Deutsche Borse Group (publicly listed, ticker DB1)</td>
+</tr>
+<tr class="odd">
+<td>Parent Company / Group</td>
+<td>Deutsche Borse Group – vertically integrated group encompassing Eurex (derivatives), Xetra (cash equities), Eurex Clearing (CCP), Clearstream (CSD/ICSD), EEX (energy), 360T (FX), STOXX/Qontigo (indices)</td>
+</tr>
+<tr class="even">
+<td>Regulatory Authority</td>
+<td>BaFin (Bundesanstalt fur Finanzdienstleistungsaufsicht) as primary supervisor; Deutsche Bundesbank; ESMA (CCP supervisory college under EMIR)</td>
+</tr>
+<tr class="odd">
+<td>CPMI-IOSCO PFMI Compliance</td>
+<td>Yes – publishes CPMI-IOSCO self-assessments and Public Quantitative Disclosures (PQD) quarterly since 2015 (<a href="https://www.eurex.com/ec-en/find/about-us/regulatory-standards">Eurex Clearing Regulatory Standards</a>)</td>
+</tr>
+<tr class="even">
+<td>QCCP Status</td>
+<td>EU-authorized CCP under EMIR (10 April 2014); qualifying CCP (QCCP) under Basel III / CRD IV (<a href="https://www.eurex.com/ec-en/find/about-us/licensing-supervision">Eurex Clearing Licensing &amp; Supervision</a>)</td>
+</tr>
+<tr class="odd">
+<td>Clearing Members</td>
+<td>~200 clearing members in 22 countries (<a href="https://www.eurex.com/ex-en/find/about-us/eurex-clearing">Eurex Clearing About</a>)</td>
+</tr>
+<tr class="even">
+<td>Monthly Cleared Value</td>
+<td>More than EUR 11 trillion per month (<a href="https://www.eurex.com/ex-en/find/about-us/eurex-clearing">Eurex Clearing About</a>)</td>
+</tr>
+<tr class="odd">
+<td>Position</td>
+<td>Europe’s largest CCP by volume; one of the world’s leading central counterparties</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="international-recognitions-third-country-status" class="level3">
+<h3 class="anchored" data-anchor-id="international-recognitions-third-country-status">1.2 International Recognitions &amp; Third-Country Status</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 28%">
+<col style="width: 21%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Jurisdiction</th>
+<th>Authority</th>
+<th>Status</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>European Union</td>
+<td>ESMA / BaFin</td>
+<td>Authorized CCP under EMIR</td>
+<td>10 April 2014</td>
+</tr>
+<tr class="even">
+<td>United States</td>
+<td>CFTC</td>
+<td>Registered Derivatives Clearing Organization (DCO)</td>
+<td>1 February 2016</td>
+</tr>
+<tr class="odd">
+<td>Canada (Ontario)</td>
+<td>OSC</td>
+<td>Exemption order</td>
+<td>14 July 2017 (expanded 6 February 2020)</td>
+</tr>
+<tr class="even">
+<td>Switzerland</td>
+<td>FINMA</td>
+<td>Recognized foreign CCP</td>
+<td>29 March 2018</td>
+</tr>
+<tr class="odd">
+<td>Singapore</td>
+<td>MAS</td>
+<td>Recognised Clearing House (RCH)</td>
+<td>14 September 2018</td>
+</tr>
+<tr class="even">
+<td>Japan</td>
+<td>JFSA</td>
+<td>Foreign Financial Instruments Clearing Organization</td>
+<td>12 March 2020</td>
+</tr>
+<tr class="odd">
+<td>Canada (Quebec)</td>
+<td>AMF</td>
+<td>Exemption under Derivatives Act</td>
+<td>20 June 2022</td>
+</tr>
+<tr class="even">
+<td>Hong Kong</td>
+<td>SFC</td>
+<td>Authorized for automated trading services</td>
+<td>7 September 2022</td>
+</tr>
+<tr class="odd">
+<td>United Kingdom</td>
+<td>Bank of England</td>
+<td>Recognized non-UK CCP under Article 25 UK EMIR</td>
+<td>26 July 2023</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.eurex.com/ec-en/find/about-us/licensing-supervision">Eurex Clearing Licensing &amp; Supervision</a></p>
+</section>
+<section id="key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="key-historical-milestones">1.3 Key Historical Milestones</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1998</td>
+<td>Eurex Clearing AG established as clearing house for Eurex Exchange (itself formed from DTB-SOFFEX merger)</td>
+</tr>
+<tr class="even">
+<td>2002</td>
+<td>Eurex Clearing AG formally incorporated as a central counterparty</td>
+</tr>
+<tr class="odd">
+<td>2010</td>
+<td>Launch of EurexOTC Clear for OTC interest rate swaps</td>
+</tr>
+<tr class="even">
+<td>2012</td>
+<td>Introduction of <strong>Eurex Clearing Prisma</strong> portfolio-based margining methodology</td>
+</tr>
+<tr class="odd">
+<td>2012</td>
+<td>Deutsche Borse acquires SIX Group’s remaining shares in Eurex Zurich AG, becoming sole owner</td>
+</tr>
+<tr class="even">
+<td>2014</td>
+<td>EMIR authorization as CCP (10 April 2014)</td>
+</tr>
+<tr class="odd">
+<td>2015</td>
+<td>Eurex Repo GC Pooling reaches record volumes</td>
+</tr>
+<tr class="even">
+<td>2016</td>
+<td>CFTC registration as Derivatives Clearing Organization (DCO)</td>
+</tr>
+<tr class="odd">
+<td>2017</td>
+<td>Launch of Eurex Clearing Partnership Program for OTC IRS</td>
+</tr>
+<tr class="even">
+<td>2018</td>
+<td>Partnership Program launches commercially; 27 participants join from US, UK, Asia, and Continental Europe</td>
+</tr>
+<tr class="odd">
+<td>2021</td>
+<td>C7 Securities Clearing Service (C7 SCS) introduced for securities clearing</td>
+</tr>
+<tr class="even">
+<td>2023</td>
+<td>EU CCP Recovery and Resolution Regulation (EU 2021/23) becomes fully applicable</td>
+</tr>
+<tr class="odd">
+<td>2024</td>
+<td>OTC clearing notional outstanding reaches EUR 33,411 billion (up 12% YoY)</td>
+</tr>
+<tr class="even">
+<td>2025</td>
+<td>OTC clearing notional outstanding reaches EUR 43,668 billion (up 31% YoY); average daily cleared volume EUR 280 billion (up 35%)</td>
+</tr>
+<tr class="odd">
+<td>2025</td>
+<td>EMIR 3.0 active account requirement enters into force (24 June 2025)</td>
+</tr>
+<tr class="even">
+<td>2025</td>
+<td>Eurex Clearing becomes first CCP globally to launch DLT-enabled collateral mobilisation service (July 2025, with HQLAx and Clearstream)</td>
+</tr>
+<tr class="odd">
+<td>2025</td>
+<td>Prisma methodology extended to Bonds and Repos (Prisma Bonds, mandatory from 8 December 2025)</td>
+</tr>
+</tbody>
+</table>
+<p>Sources: <a href="https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494">Eurex Full Year 2025 Figures</a>; <a href="https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2024-figures-at-Eurex-4250318">Eurex Full Year 2024 Figures</a>; <a href="https://www.eurex.com/ec-en/find/circulars/clearing-circular-4609908">Eurex Clearing Prisma Bonds Circular</a></p>
+</section>
+<section id="executive-leadership-as-of-april-2025" class="level3">
+<h3 class="anchored" data-anchor-id="executive-leadership-as-of-april-2025">1.4 Executive Leadership (as of April 2025)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Role</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Overall responsibility for financial derivatives trading and clearing</td>
+<td>Robbert Booij (following departure of Erik Muller as CEO of Eurex Clearing AG)</td>
+</tr>
+<tr class="even">
+<td>Executive Board Member, Eurex Clearing AG (since August 2014)</td>
+<td>Matthias Graulich (also joined Eurex Frankfurt AG Executive Board in July 2025)</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Eurex-implements-organizational-changes-to-drive-future-growth-4355160">Deutsche Borse Press Release, April 2025</a></p>
+<hr>
+</section>
+</section>
+<section id="clearing-model" class="level2">
+<h2 class="anchored" data-anchor-id="clearing-model">2. Clearing Model</h2>
+<section id="ccp-services" class="level3">
+<h3 class="anchored" data-anchor-id="ccp-services">2.1 CCP Services</h3>
+<p>Eurex Clearing provides central counterparty clearing across multiple asset classes and venues:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 26%">
+<col style="width: 25%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Service</th>
+<th>Product Class</th>
+<th>Description</th>
+<th>Key Statistics</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Listed Derivatives</strong></td>
+<td>Equity/index options &amp; futures, fixed income futures &amp; options, dividend derivatives, commodity derivatives, FX derivatives, volatility derivatives, ETF/ETC derivatives</td>
+<td>CCP for all products traded on Eurex Exchange (T7 platform); ~1,700+ listed futures and options across 19 countries</td>
+<td>2,065.9 million contracts cleared in 2025 (full year); 2,080.5 million in 2024</td>
+</tr>
+<tr class="even">
+<td><strong>EurexOTC Clear</strong></td>
+<td>OTC Interest Rate Derivatives</td>
+<td>OTC IRS, OIS, FRAs, basis swaps, zero-coupon swaps in 11 currencies (EUR, USD, GBP, CHF, JPY, SEK, NOK, DKK, PLN, CZK, HUF)</td>
+<td>EUR 43,668 billion notional outstanding (end-2025, +31% YoY); EUR 280 billion avg daily cleared volume (2025, +35%)</td>
+</tr>
+<tr class="odd">
+<td><strong>EurexOTC Clear NDF</strong></td>
+<td>OTC FX Non-Deliverable Forwards</td>
+<td>Clearing for NDF transactions</td>
+<td>Included in OTC clearing offering</td>
+</tr>
+<tr class="even">
+<td><strong>Repo Clearing</strong></td>
+<td>GC Pooling, Special Repo, GC Repo</td>
+<td>CCP clearing for Eurex Repo (F7 platform); EUR, USD, GBP, CHF denominations; connectivity to Clearstream and Euroclear for settlement</td>
+<td>EUR 406.1 billion average term-adjusted volume (2025, record year, +20% YoY)</td>
+</tr>
+<tr class="odd">
+<td><strong>Lending CCP</strong></td>
+<td>Securities Lending</td>
+<td>CCP service for securities lending covering international fixed income, European equities, and ETFs; operates via Eurex Repo SecLend market</td>
+<td>Specific Lender License for beneficial owners; near-time intraday risk calculations</td>
+</tr>
+<tr class="even">
+<td><strong>Cash Market Clearing</strong></td>
+<td>Equities, Bonds, ETFs/ETCs</td>
+<td>CCP for Frankfurt Stock Exchange (Xetra, XFRA) transactions</td>
+<td>Via C7 Securities Clearing Service</td>
+</tr>
+</tbody>
+</table>
+<p>Sources: <a href="https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494">Eurex Full Year 2025 Figures</a>; <a href="https://www.eurex.com/ec-en/clear/eurex-otc-clear/about-eurex-otc-clear">EurexOTC Clear</a>; <a href="https://www.eurex.com/ex-en/markets/eurex-repo">Eurex Repo</a></p>
+<section id="gc-pooling" class="level4">
+<h4 class="anchored" data-anchor-id="gc-pooling">GC Pooling</h4>
+<p>GC Pooling is the European benchmark for standardised secured funding with central clearing. Key features:</p>
+<ul>
+<li>Pre-defined baskets (e.g., GC Pooling ECB Basket covering ~3,000 ECB-eligible securities)</li>
+<li>Automated connectivity to Eurex Clearing AG (CCP) and Clearstream Banking (settlement)</li>
+<li>Available in EUR, USD, GBP, and CHF</li>
+<li>More than 160 sell-side and buy-side institutions participate</li>
+<li>Re-use of received collateral permitted for further money market transactions, Eurex Clearing margining, and ECB open market operations</li>
+<li>Operating since 2005</li>
+</ul>
+<p>Source: <a href="https://www.eurex.com/ex-en/markets/eurex-repo/gc-pooling">Eurex GC Pooling</a></p>
+</section>
+<section id="lending-ccp" class="level4">
+<h4 class="anchored" data-anchor-id="lending-ccp">Lending CCP</h4>
+<p>The Lending CCP provides centrally cleared securities lending with distinctive features:</p>
+<ul>
+<li>Eurex Clearing acts as single counterparty to all trades, eliminating bilateral credit risk</li>
+<li><strong>Specific Lender License</strong>: Direct CCP access for beneficial owners (pension funds, asset managers) without requiring full clearing membership</li>
+<li>Near-time intraday risk calculations with intraday margin calls for collateral shortfalls</li>
+<li>Triparty collateral agents connected for non-cash collateral management</li>
+<li>Covers international fixed income, European equities, and ETFs</li>
+<li>Partnership with Pirum for post-trade automation; integration with EquiLend for trade sourcing</li>
+</ul>
+<p>Sources: <a href="https://www.eurex.com/ec-en/find/news/Clearstream-Eurex-Repo-and-Eurex-Clearing-offer-clients-joint-agency-securities-lending-141856">Eurex Lending CCP</a>; <a href="https://www.eurex.com/ec-en/find/news/Eurex-Clearing-enhances-the-marketplace-for-securities-lending-central-clearing-155016">Eurex Clearing Lending CCP Enhancements</a></p>
+</section>
+</section>
+<section id="novation-process" class="level3">
+<h3 class="anchored" data-anchor-id="novation-process">2.2 Novation Process</h3>
+<ul>
+<li><strong>Novation by open offer</strong>: For exchange-traded products on Eurex Exchange and Frankfurt Stock Exchange, Eurex Clearing interposes itself as the buyer to every seller and the seller to every buyer at the point of trade execution.</li>
+<li><strong>Novation for OTC products</strong>: For OTC IRS and repo transactions, the bilateral trade is replaced by two separate contracts with Eurex Clearing as CCP upon trade registration/acceptance.</li>
+<li><strong>Straight-through processing</strong>: GC Pooling and repo clearing provide fully automated STP from trade execution through CCP clearing to settlement at Clearstream.</li>
+</ul>
+</section>
+<section id="netting" class="level3">
+<h3 class="anchored" data-anchor-id="netting">2.3 Netting</h3>
+<ul>
+<li><strong>Multilateral netting</strong>: Eurex Clearing performs multilateral netting across all cleared positions, reducing gross exposures to a single net obligation per clearing member per product/settlement date.</li>
+<li><strong>Portfolio compression</strong>: For OTC IRS, compression services reduce the number of line items and gross notional outstanding.</li>
+<li><strong>Prisma cross-margining netting</strong>: Within liquidation groups, Prisma provides portfolio-level netting that recognizes hedging and diversification effects across correlated products.</li>
+</ul>
+</section>
+<section id="clearing-membership" class="level3">
+<h3 class="anchored" data-anchor-id="clearing-membership">2.4 Clearing Membership</h3>
+<section id="membership-types" class="level4">
+<h4 class="anchored" data-anchor-id="membership-types">Membership Types</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 26%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Scope</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>General Clearing Member (GCM)</strong></td>
+<td>Broadest</td>
+<td>May clear own business, customer business, and business of Non-Clearing Members (NCMs)</td>
+</tr>
+<tr class="even">
+<td><strong>Direct Clearing Member (DCM)</strong></td>
+<td>Own + affiliated</td>
+<td>May clear own business and affiliated Direct Clearing Market Participants; OTC DCMs limited to proprietary business only</td>
+</tr>
+<tr class="odd">
+<td><strong>FCM Clearing Member</strong></td>
+<td>US-regulated</td>
+<td>US futures commission merchants acting as agents under US FCM model</td>
+</tr>
+<tr class="even">
+<td><strong>ISA Direct Clearing Member</strong></td>
+<td>Own only</td>
+<td>Clears own business through a Clearing Agent (CA); variants include ISA Direct Indemnified (for Repo) and ISA Direct Light (GC Pooling only)</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.eurex.com/ec-en/join/admission-requirements/clearing-member">Eurex Clearing Membership Types</a></p>
+</section>
+<section id="capital-requirements-minimum-equity-capital" class="level4">
+<h4 class="anchored" data-anchor-id="capital-requirements-minimum-equity-capital">Capital Requirements (Minimum Equity Capital)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 20%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Market</th>
+<th>DCM</th>
+<th>GCM / FCM</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Eurex Exchange (Listed Derivatives)</td>
+<td>EUR 7.5 million</td>
+<td>EUR 30 million</td>
+</tr>
+<tr class="even">
+<td>EurexOTC IRD</td>
+<td>EUR 7.5 million</td>
+<td>EUR 30 million</td>
+</tr>
+<tr class="odd">
+<td>EurexOTC NDF</td>
+<td>EUR 7.5 million</td>
+<td>EUR 30 million</td>
+</tr>
+<tr class="even">
+<td>Cash Market (Equities)</td>
+<td>EUR 3.75 million</td>
+<td>EUR 15 million</td>
+</tr>
+<tr class="odd">
+<td>Repo Market</td>
+<td>EUR 50 million</td>
+<td>EUR 200 million</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Capital requirements are <strong>additive</strong> across markets and represent the highest of: (a) 20% of 30-day average initial margin, (b) 20% of 250-day average initial margin, or (c) the minimum thresholds above.</p>
+<p>Source: <a href="https://www.eurex.com/ec-en/join/admission-requirements/clearing-member">Eurex Clearing Member Admission</a></p>
+</section>
+<section id="default-fund-minimum-contributions" class="level4">
+<h4 class="anchored" data-anchor-id="default-fund-minimum-contributions">Default Fund Minimum Contributions</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Membership Type</th>
+<th>Minimum Contribution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GCM / FCM</td>
+<td>EUR 5 million</td>
+</tr>
+<tr class="even">
+<td>DCM / ISA Direct</td>
+<td>EUR 1 million</td>
+</tr>
+<tr class="odd">
+<td>Investment/Pension Funds (ISA Direct)</td>
+<td>EUR 100,000</td>
+</tr>
+</tbody>
+</table>
+<p>Default fund contributions are reviewed monthly and recalculated based on each member’s relative risk exposure.</p>
+</section>
+<section id="operational-requirements" class="level4">
+<h4 class="anchored" data-anchor-id="operational-requirements">Operational Requirements</h4>
+<ul>
+<li>EUR/GBP/CHF cash accounts for margin settlement (USD recommended)</li>
+<li>Securities collateral accounts at recognized CSDs</li>
+<li>Technical connectivity to trading platforms and reporting systems</li>
+<li>Connection to Approved Trade Source (ATS) for OTC clearing</li>
+<li>At least one registered Qualified Clearing Staff (QCS), demonstrated via Clearer Test, Certified Clearing Specialist certification, or Core Clearing Knowledge seminar</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="risk-management" class="level2">
+<h2 class="anchored" data-anchor-id="risk-management">3. Risk Management</h2>
+<section id="margin-framework-eurex-clearing-prisma" class="level3">
+<h3 class="anchored" data-anchor-id="margin-framework-eurex-clearing-prisma">3.1 Margin Framework: Eurex Clearing Prisma</h3>
+<p><strong>Eurex Clearing Prisma</strong> (Portfolio-based Risk management by Simulating scenario Matrices and Assessing market risks) is Eurex Clearing’s proprietary portfolio-based margin methodology, introduced in 2012.</p>
+<section id="core-methodology" class="level4">
+<h4 class="anchored" data-anchor-id="core-methodology">Core Methodology</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model Type</td>
+<td>Filtered Historical Simulation (FHS) with Value-at-Risk (VaR)</td>
+</tr>
+<tr class="even">
+<td>Confidence Level</td>
+<td>99% for listed products; 99.5% for OTC instruments</td>
+</tr>
+<tr class="odd">
+<td>Effective Confidence Level</td>
+<td>Exceeds target levels (verified via backtesting)</td>
+</tr>
+<tr class="even">
+<td>Historical Scenarios</td>
+<td>750 filtered-historical scenarios with 3-year lookback period</td>
+</tr>
+<tr class="odd">
+<td>Stress Scenarios</td>
+<td>250 stress period scenarios from identified historical stress episodes</td>
+</tr>
+<tr class="even">
+<td>Event Risk Scenarios</td>
+<td>Supplementary scenarios for specific risk factors (e.g., single stock dividend futures)</td>
+</tr>
+<tr class="odd">
+<td>Holding Period – Listed Equity Derivatives</td>
+<td>2-3 days (PEQ01 liquidation group reduced from 4 to 3 days; subsequently to 2 days for some)</td>
+</tr>
+<tr class="even">
+<td>Holding Period – Listed Fixed Income</td>
+<td>2 days (PFI01_HP2 split)</td>
+</tr>
+<tr class="odd">
+<td>Holding Period – OTC IRS</td>
+<td>5 days (PFI01_HP5 split)</td>
+</tr>
+<tr class="even">
+<td>Risk Measure</td>
+<td>Maximum of VaR from filtered historical sample and VaR from stress period sample</td>
+</tr>
+<tr class="odd">
+<td>Procyclicality Mitigation</td>
+<td>Stress period VaR serves as prudent margin floor during low-volatility regimes; annual recalibration of margin floors</td>
+</tr>
+</tbody>
+</table>
+<p>Sources: <a href="https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma">Eurex Clearing Prisma</a>; <a href="https://www.ecc.de/en/risk-management/ecc-prisma-for-commodities">ECC Prisma for Commodities</a>; <a href="https://www.eurex.com/ec-en/find/news/Part-8-Forward-looking-margin-simulations-into-periods-of-stress-3193710">Part 8: Forward Looking Margin Simulations</a></p>
+</section>
+<section id="margin-components" class="level4">
+<h4 class="anchored" data-anchor-id="margin-components">Margin Components</h4>
+<p>Prisma initial margin consists of multiple components:</p>
+<ol type="1">
+<li><strong>Market Risk Initial Margin (MRIM)</strong>: Core risk component based on filtered historical simulation; captures potential portfolio value changes under historical and stress scenarios</li>
+<li><strong>Liquidity Adjustment (LA)</strong>: Accounts for the cost of liquidating concentrated positions; adjusts for bid-ask spread widening and market impact during portfolio close-out</li>
+<li><strong>KnockIn / Event Risk Component</strong>: Additional margin for specific risk events (e.g., barrier events for structured products, dividend event risk for single stock derivatives)</li>
+</ol>
+<p>The backward-looking component (filtered historical VaR) ensures model reactivity to changing market conditions, while the forward-looking component (stress period VaR) ensures margin stability and counters procyclicality.</p>
+</section>
+<section id="liquidation-groups" class="level4">
+<h4 class="anchored" data-anchor-id="liquidation-groups">Liquidation Groups</h4>
+<p>Products are organized into Liquidation Groups based on shared risk characteristics. Key liquidation groups include:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 22%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Liquidation Group</th>
+<th>Products</th>
+<th>Holding Period</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>PFI01</strong> (Fixed Income)</td>
+<td>Listed fixed income futures/options + OTC IRS</td>
+<td>Split: HP2 (2-day) for listed; HP5 (5-day) for OTC</td>
+</tr>
+<tr class="even">
+<td><strong>PEQ01</strong> (Equity)</td>
+<td>Listed equity/index derivatives</td>
+<td>2-3 days</td>
+</tr>
+<tr class="odd">
+<td><strong>FX Liquidation Group</strong></td>
+<td>OTC FX NDFs</td>
+<td>2 days [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>Repo/GC Pooling</strong></td>
+<td>Repo and secured funding (currently under Risk-Based Margining; migrating to Prisma Bonds from December 2025)</td>
+<td>Varies by product</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.eurex.com/ec-en/find/circulars/Eurex-Clearing-Prisma-Reduction-of-the-risk-horizon-for-Equity-Liquidation-Group-PEQ01-228482">Eurex Clearing Prisma Circular on PEQ01</a>; <a href="https://www.eurex.com/ec-en/find/circulars/clearing-circular-4609908">Prisma Bonds Circular</a></p>
+</section>
+<section id="cross-margining" class="level4">
+<h4 class="anchored" data-anchor-id="cross-margining">Cross-Margining</h4>
+<p>Cross-margining is a distinctive feature of Prisma, enabling margin offsets between products with different holding periods:</p>
+<ul>
+<li><strong>Listed-OTC Cross-Margining</strong>: Within PFI01, cross-margining is offered between OTC IRS (5-day holding period) and listed fixed income products (2-day holding period)</li>
+<li><strong>Algorithm</strong>: The system checks whether listed FI/MM positions are economically sensible hedges to the OTC portfolio; if so, these positions are moved to the 5-day split to lower total margin</li>
+<li><strong>Margin Efficiency</strong>: Potential margin savings of <strong>up to 70%</strong> depending on portfolio composition</li>
+<li><strong>Advantage over SPAN</strong>: Unlike CME’s SPAN methodology (which calculates margin product-by-product with limited inter-commodity spreads), Prisma assesses risk at the portfolio level using full revaluation under historical scenarios, enabling more accurate capture of hedging benefits</li>
+</ul>
+<p>Source: <a href="https://www.eurex.com/ec-en/services/margining/cross-margining">Eurex Clearing Cross-Margining</a></p>
+</section>
+<section id="comparison-with-other-margin-methodologies" class="level4">
+<h4 class="anchored" data-anchor-id="comparison-with-other-margin-methodologies">Comparison with Other Margin Methodologies</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 42%">
+<col style="width: 19%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Eurex Clearing Prisma</th>
+<th>CME SPAN</th>
+<th>OCC STANS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Approach</td>
+<td>Portfolio-based filtered historical simulation</td>
+<td>Scenario-based (16 risk arrays per product)</td>
+<td>Monte Carlo simulation</td>
+</tr>
+<tr class="even">
+<td>Risk Measure</td>
+<td>VaR (max of filtered historical and stress period)</td>
+<td>Worst-case loss across scanning scenarios</td>
+<td>Expected Shortfall (ES)</td>
+</tr>
+<tr class="odd">
+<td>Confidence Level</td>
+<td>99% (listed) / 99.5% (OTC)</td>
+<td>~99% (varies by exchange)</td>
+<td>99.5% (2-day, ES)</td>
+</tr>
+<tr class="even">
+<td>Cross-Margining</td>
+<td>Yes, within liquidation groups across listed and OTC</td>
+<td>Limited inter-commodity credits</td>
+<td>Portfolio margining across equity products</td>
+</tr>
+<tr class="odd">
+<td>Scenarios</td>
+<td>750 historical + 250 stress = 1,000 total</td>
+<td>16 scanning scenarios per product</td>
+<td>Full Monte Carlo revaluation</td>
+</tr>
+<tr class="even">
+<td>Procyclicality</td>
+<td>Stress period VaR floor</td>
+<td>APC (Anti-Procyclicality) measures</td>
+<td>Floor based on historical averages</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="margin-call-schedule" class="level4">
+<h4 class="anchored" data-anchor-id="margin-call-schedule">Margin Call Schedule</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 29%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Timing</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regular Margin Call</td>
+<td>End-of-day (overnight)</td>
+<td>Standard daily margin calculation based on end-of-day positions and prices</td>
+</tr>
+<tr class="even">
+<td>Intraday Margin Call</td>
+<td>Multiple times during trading day</td>
+<td>Triggered by significant market movements or position changes; Eurex Clearing performs near-time intraday risk calculations</td>
+</tr>
+<tr class="odd">
+<td>Ad-hoc Margin Call</td>
+<td>Any time</td>
+<td>Extraordinary calls in response to extreme market events or specific member risk concerns</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="default-waterfall" class="level3">
+<h3 class="anchored" data-anchor-id="default-waterfall">3.2 Default Waterfall</h3>
+<p>Eurex Clearing maintains a clearly defined default waterfall with specific EUR amounts:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 40%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Resource</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td>Defaulted member’s margin collateral</td>
+<td>Variable (margin held)</td>
+</tr>
+<tr class="even">
+<td><strong>2</strong></td>
+<td>Defaulted member’s Default Fund contribution</td>
+<td>Variable</td>
+</tr>
+<tr class="odd">
+<td><strong>3</strong></td>
+<td><strong>Eurex Clearing SITG</strong> (Skin in the Game – Dedicated Amount)</td>
+<td><strong>EUR 143 million</strong></td>
+</tr>
+<tr class="even">
+<td><strong>4</strong></td>
+<td>Non-defaulting members’ Default Fund contributions + <strong>Eurex Clearing SSITG</strong> (Second Skin in the Game)</td>
+<td>Default Fund (variable) + <strong>EUR 57 million</strong> SSITG</td>
+</tr>
+<tr class="odd">
+<td><strong>5</strong></td>
+<td><strong>Assessments</strong> (Recovery Cash Calls) from non-defaulting members + <strong>Further Dedicated Amount</strong> from Eurex Clearing (pro rata, simultaneously)</td>
+<td>Members: up to 2x their Default Fund contribution; Eurex: up to <strong>EUR 300 million</strong></td>
+</tr>
+<tr class="even">
+<td><strong>6</strong></td>
+<td><strong>Eurex Clearing equity capital</strong></td>
+<td><strong>EUR 600 million</strong> (current)</td>
+</tr>
+<tr class="odd">
+<td><strong>7</strong></td>
+<td><strong>Deutsche Borse backstop</strong> (Letter of Comfort)</td>
+<td>Up to <strong>EUR 600 million</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total maximum Eurex Clearing/Deutsche Borse commitment: EUR 1.7 billion</strong> (143 + 57 + 300 + 600 + 600)</p>
+<p>Source: <a href="https://www.eurex.com/ec-en/services/risk-management/default-waterfall">Eurex Clearing Default Waterfall</a>; <a href="https://www.eurex.com/ec-en/services/risk-management/default-waterfall/contribution-of-eurex_clearing">Contribution of Eurex Clearing</a></p>
+<section id="isa-direct-indemnified-model" class="level4">
+<h4 class="anchored" data-anchor-id="isa-direct-indemnified-model">ISA Direct Indemnified Model</h4>
+<p>For defaulted ISA Direct Indemnified Clearing Members, the waterfall simplifies: member margin and default fund contributions are exhausted first, then all remaining losses are covered by the indemnity provided by the Indemnifying Clearing Agent.</p>
+</section>
+<section id="default-fund-details" class="level4">
+<h4 class="anchored" data-anchor-id="default-fund-details">Default Fund Details</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Structure</td>
+<td>Single joint Default Fund covering all asset classes</td>
+</tr>
+<tr class="even">
+<td>Calibration Standard</td>
+<td><strong>Cover-2</strong>: Sized to cover simultaneous default of the two largest Clearing Member Groups under extreme but plausible stress scenarios with 99.9% confidence</td>
+</tr>
+<tr class="odd">
+<td>Calculation</td>
+<td>60-day average of Gross Stress Loss over Margin (gSLOM) excluding Supplementary Margin for the two largest Clearing Member Groups</td>
+</tr>
+<tr class="even">
+<td>Recalculation Frequency</td>
+<td>Monthly (per ultimo); daily validation of cover-2 adequacy</td>
+</tr>
+<tr class="odd">
+<td>Historical Size Reference</td>
+<td>EUR 3.0 billion (Q4 2016 PQD data)</td>
+</tr>
+<tr class="even">
+<td>Member Contributions</td>
+<td>Based on relative risk exposure; minimum EUR 1 million (DCM) or EUR 5 million (GCM)</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.eurex.com/ec-en/services/risk-management/default-waterfall/default-fund">Eurex Clearing Default Fund</a>; <a href="https://www.eurex.com/ec-en/find/news/Part-1-Spotlight-on-initial-margins-and-other-default-resources-144726">Eurex PQD Part 1</a></p>
+</section>
+<section id="historical-financial-resources-data-from-pqd" class="level4">
+<h4 class="anchored" data-anchor-id="historical-financial-resources-data-from-pqd">Historical Financial Resources Data (from PQD)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Q4 2016</th>
+<th>Q1 2017</th>
+<th>Q1 2025 (partial)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Total Initial Margin</td>
+<td>EUR 35.8 billion</td>
+<td>EUR 47 billion</td>
+<td>EUR 39.2 billion (OTC IRS only); EUR 4.1 billion (FI); EUR 1.1 billion (other) [unverified – partial data from Clarus analysis]</td>
+</tr>
+<tr class="even">
+<td>Default Fund</td>
+<td>EUR 3.0 billion</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr class="odd">
+<td>SITG</td>
+<td>EUR 150 million</td>
+<td>EUR 150 million</td>
+<td>EUR 143 million (current published)</td>
+</tr>
+<tr class="even">
+<td>Overcollateralization</td>
+<td>–</td>
+<td>24%</td>
+<td>–</td>
+</tr>
+<tr class="odd">
+<td>Top 5 CM Concentration</td>
+<td>32% of total margin</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr class="even">
+<td>Top 10 CM Concentration</td>
+<td>53% of total margin</td>
+<td>–</td>
+<td>–</td>
+</tr>
+</tbody>
+</table>
+<p>Note: More recent comprehensive PQD data is available through Eurex Clearing’s quarterly disclosures on their website but was not fully accessible for this research. The figures above represent publicly cited data points from Eurex’s own transparency articles and third-party analyses.</p>
+<p>Sources: <a href="https://www.eurex.com/ec-en/find/news/Part-1-Spotlight-on-initial-margins-and-other-default-resources-144726">PQD Part 1</a>; <a href="https://www.eurex.com/ec-en/find/news/Part-2-Initial-margin-trends-and-skin-in-the-game-161844">PQD Part 2</a>; <a href="https://www.clarusft.com/whats-new-in-ccp-disclosures-q1-2025/">Clarus Q1 2025</a></p>
+</section>
+</section>
+<section id="stress-testing-back-testing" class="level3">
+<h3 class="anchored" data-anchor-id="stress-testing-back-testing">3.3 Stress Testing &amp; Back-Testing</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Requirement</th>
+<th>Implementation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Stress Testing</strong></td>
+<td>Daily stress testing of all clearing member portfolios against extreme but plausible scenarios; includes historical scenarios (e.g., Lehman 2008, COVID-19 2020, Ukraine crisis 2022) and hypothetical scenarios</td>
+</tr>
+<tr class="even">
+<td><strong>Default Fund Dimensioning</strong></td>
+<td>Cover-2 validated daily against calibrated fund size; risk mitigating actions pursued immediately when breaches identified</td>
+</tr>
+<tr class="odd">
+<td><strong>Back-Testing</strong></td>
+<td>Regular back-testing of margin model performance against actual market movements; EMIR requires 99% coverage for listed products</td>
+</tr>
+<tr class="even">
+<td><strong>Procyclicality Monitoring</strong></td>
+<td>Two key metrics: maximum relative margin increase (short-term) and peak-to-trough ratio (long-term funding uncertainty)</td>
+</tr>
+<tr class="odd">
+<td><strong>Reverse Stress Testing</strong></td>
+<td>Identification of scenarios that would exhaust the default waterfall</td>
+</tr>
+<tr class="even">
+<td><strong>EMIR Compliance</strong></td>
+<td>Full compliance with EMIR RTS on margin (Article 41), default fund (Article 42), and stress testing requirements</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.eurex.com/ec-en/services/risk-management/stress-testing/default-fund-dimensioning">Eurex Clearing Default Fund Dimensioning</a></p>
+</section>
+<section id="recovery-resolution" class="level3">
+<h3 class="anchored" data-anchor-id="recovery-resolution">3.4 Recovery &amp; Resolution</h3>
+<p>Eurex Clearing operates under the <strong>EU CCP Recovery and Resolution Regulation</strong> (Regulation (EU) 2021/23), fully applicable since 12 February 2023.</p>
+<p><strong>Recovery Tools:</strong> - <strong>Variation Margin Gains Haircutting (VMGH)</strong>: Reduction of VM payments to non-defaulting members to cover uncovered losses - <strong>Cash calls / Assessments</strong>: Non-defaulting members can be required to contribute additional funds (up to 2x their Default Fund contribution) - <strong>Position allocation / Forced allocation</strong>: Transfer or termination of the defaulting member’s portfolio - <strong>Partial tear-up</strong>: Termination of contracts where necessary to restore matched book</p>
+<p><strong>Resolution Tools (BaFin as Resolution Authority):</strong> - <strong>Resolution Cash Calls</strong>: BaFin can require non-defaulting members to provide further contributions up to 2x their applicable contribution requirement - <strong>Write-down and conversion tools</strong>: Authority to write down liabilities or convert claims - <strong>Position and loss allocation tools</strong>: BaFin can allocate positions and losses - <strong>Transfer tools</strong>: Transfer of clearing member positions to a bridge CCP or another CCP</p>
+<p>Clearing members are contractually bound by any resolution tools taken by BaFin, including those affecting their assets, rights, obligations, and liabilities.</p>
+<p>Source: <a href="https://www.eurex.com/ec-en/find/circulars/clearing-circular-3140368">Eurex Clearing CCP RRR Circular</a></p>
+<hr>
+</section>
+</section>
+<section id="settlement" class="level2">
+<h2 class="anchored" data-anchor-id="settlement">4. Settlement</h2>
+<section id="settlement-cycle-by-product" class="level3">
+<h3 class="anchored" data-anchor-id="settlement-cycle-by-product">4.1 Settlement Cycle by Product</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 51%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Settlement Cycle</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Listed Derivatives (Futures)</td>
+<td>Daily variation margin settlement; physical delivery or cash settlement at expiry</td>
+<td>Cash-settled: T+1 after final settlement day; Physical: varies by product</td>
+</tr>
+<tr class="even">
+<td>Listed Derivatives (Options)</td>
+<td>Exercise settlement varies by product</td>
+<td>European-style: at expiry; American-style: any business day</td>
+</tr>
+<tr class="odd">
+<td>Cash Equities / ETFs</td>
+<td>T+2 (EU standard, aligned with CSDR)</td>
+<td>Moving toward T+1 assessment in EU</td>
+</tr>
+<tr class="even">
+<td>OTC IRS</td>
+<td>Variation margin settled daily; cash flows on payment dates</td>
+<td>Via CLS or direct settlement</td>
+</tr>
+<tr class="odd">
+<td>Repo (GC Pooling, Special Repo)</td>
+<td>T+0 to T+N (term repos)</td>
+<td>GC Pooling supports overnight and term</td>
+</tr>
+<tr class="even">
+<td>Bonds</td>
+<td>T+2</td>
+<td>Standard EU settlement cycle</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dvp-model-settlement-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="dvp-model-settlement-infrastructure">4.2 DVP Model &amp; Settlement Infrastructure</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DVP Model</td>
+<td>DVP Model 1 (gross, simultaneous) for securities vs.&nbsp;cash settlement</td>
+</tr>
+<tr class="even">
+<td>CSD Used</td>
+<td><strong>Clearstream Banking Frankfurt</strong> (CBF) – now operating as <strong>Clearstream Europe AG</strong> (CEU) since corporate restructuring</td>
+</tr>
+<tr class="odd">
+<td>T2S Participation</td>
+<td>Yes – Clearstream Europe AG has outsourced securities settlement in central bank money to the ECB’s T2S platform</td>
+</tr>
+<tr class="even">
+<td>CSD Linkages</td>
+<td>Clearstream (ICSD), Euroclear for cross-border settlement of Special and GC Repo</td>
+</tr>
+<tr class="odd">
+<td>Cash Settlement</td>
+<td>Via T2 (TARGET2) for EUR central bank money; commercial bank money also available</td>
+</tr>
+<tr class="even">
+<td>NTS Processing</td>
+<td>T2S sequential night-time settlement with two cycles</td>
+</tr>
+<tr class="odd">
+<td>RTS Processing</td>
+<td>Up to two real-time settlement cycles during the day</td>
+</tr>
+<tr class="even">
+<td>DVP Deadline</td>
+<td>16:00 CET for DvP/RvP transactions</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.clearstream.com/clearstream-en/securities-services/custody-and-investor-solutions/cascade-t2s-settlement-cycles-1276176">Clearstream T2S Settlement Cycles</a>; <a href="https://www.eurex.com/ec-en/services/transaction-management/delivery-management/information-on-settlement-times">Eurex Clearing Settlement Times</a></p>
+</section>
+<section id="settlement-finality" class="level3">
+<h3 class="anchored" data-anchor-id="settlement-finality">4.3 Settlement Finality</h3>
+<ul>
+<li><strong>Legal basis</strong>: German law (specifically the German implementation of the EU Settlement Finality Directive 98/26/EC)</li>
+<li><strong>EU Settlement Finality Directive (SFD)</strong>: Eurex Clearing AG is a designated system under the SFD, ensuring that transfer orders entered into the system are legally enforceable and irrevocable even in the event of insolvency of a participant</li>
+<li><strong>Point of finality on T2S</strong>: Determined by the General Terms and Conditions of Clearstream Europe AG; once a settlement instruction is matched and settled on T2S, the transfer is final and irrevocable</li>
+<li><strong>Central bank money finality</strong>: Settlement in EUR via T2 provides central bank money finality under Eurosystem rules</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="technology-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="technology-infrastructure">5. Technology &amp; Infrastructure</h2>
+<section id="c7-clearing-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="c7-clearing-architecture">5.1 C7 Clearing Architecture</h3>
+<p>C7 is Eurex Clearing’s next-generation clearing architecture, replacing the legacy “Eurex Clearing Classic” system in a stepwise approach.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 40%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>C7 Core</strong></td>
+<td>Central clearing engine for derivatives and securities</td>
+<td>Production since multiple releases</td>
+</tr>
+<tr class="even">
+<td><strong>C7 Securities Clearing Service (C7 SCS)</strong></td>
+<td>Securities clearing for Frankfurt Stock Exchange (XETR, XFRA) and Eurex (XEUR) securities transactions</td>
+<td>Production since September 2021</td>
+</tr>
+<tr class="odd">
+<td><strong>C7 Client Administration Service (C7 CAS)</strong></td>
+<td>Member administration, account management, and reporting</td>
+<td>Ongoing releases (CAS Release 2.293 in production)</td>
+</tr>
+<tr class="even">
+<td><strong>C7 Advanced Risk Protection (ARP)</strong></td>
+<td>Pre-trade risk controls and real-time risk monitoring</td>
+<td>Integrated into C7 architecture</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recent C7 Enhancements (2025-2026):</strong> - C7 Release 11.1 (May 2025): Total Return Futures strategy support, negative trade/settlement prices, cross-product margining for US FCM clients - C7 SCS Release: Handling of corporate actions enhancements (November 2025) - C7 CAS Release 2.293: Production launch October 2025 - 2026 roadmap: Further advances in trading and clearing architecture, regulatory compliance, and secured funding</p>
+<p>Source: <a href="https://www.eurex.com/ec-en/support/initiatives/c7-releases">Eurex Clearing C7 Releases</a>; <a href="https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026--4867350">Eurex 2026 Roadmap</a></p>
+</section>
+<section id="prisma-risk-engine" class="level3">
+<h3 class="anchored" data-anchor-id="prisma-risk-engine">5.2 Prisma Risk Engine</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Engine</td>
+<td>Eurex Clearing Prisma calculation engine</td>
+</tr>
+<tr class="even">
+<td>Methodology</td>
+<td>Filtered historical simulation with 750+250 scenarios</td>
+</tr>
+<tr class="odd">
+<td>Recalculation</td>
+<td>End-of-day full recalculation; intraday near-time risk monitoring</td>
+</tr>
+<tr class="even">
+<td>Online Calculator</td>
+<td>Cloud Prisma Margin Estimator (cPME) available via API and GUI for members</td>
+</tr>
+<tr class="odd">
+<td>Prisma Releases</td>
+<td>Regular releases (e.g., Prisma Release 15.0 in 2025) incorporating calibration updates, new products, and methodology enhancements</td>
+</tr>
+<tr class="even">
+<td>Margin Floor Recalibration</td>
+<td>Annual recalibration of stress period VaR margin floors (e.g., effective 16 June 2025)</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.eurex.com/ec-en/technology/prisma">Eurex Prisma Technology</a>; <a href="https://github.com/Deutsche-Boerse-Risk/CloudPrismaMarginEstimator">GitHub Cloud Prisma Margin Estimator</a></p>
+</section>
+<section id="interface-protocols-connectivity" class="level3">
+<h3 class="anchored" data-anchor-id="interface-protocols-connectivity">5.3 Interface Protocols &amp; Connectivity</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Interface</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Common Report Engine (CRE)</strong></td>
+<td>Central solution for trading and clearing report retrieval; SFTP-based; single source for all reports and non-transactional files</td>
+</tr>
+<tr class="even">
+<td><strong>Enhanced Risk Solution (ERS) GUI</strong></td>
+<td>Web-based GUI for real-time risk monitoring; margin coverage, exposure views, risk manager dashboards</td>
+</tr>
+<tr class="odd">
+<td><strong>Clearing GUI</strong></td>
+<td>Web-based GUI for clearing activities across listed derivatives, securities, and OTC business</td>
+</tr>
+<tr class="even">
+<td><strong>FIX / FIXML</strong></td>
+<td>FIX protocol and FIXML encoding for post-trade clearing and settlement messaging</td>
+</tr>
+<tr class="odd">
+<td><strong>Eurex Enhanced Trading Interface (ETI)</strong></td>
+<td>Low-latency proprietary API for trading and clearing</td>
+</tr>
+<tr class="even">
+<td><strong>C7 APIs</strong></td>
+<td>Proprietary APIs for C7 SCS and C7 CAS integration</td>
+</tr>
+<tr class="odd">
+<td><strong>Connectivity Options</strong></td>
+<td>Leased line, Internet line, Multi-Member-Service Operator</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.eurex.com/ex-en/support/technology/common-report-engine">Eurex CRE</a>; <a href="https://www.eurex.com/ec-en/support/technology/connectivity/Connectivity-options-2398080">Eurex Connectivity</a></p>
+</section>
+<section id="resilience-disaster-recovery" class="level3">
+<h3 class="anchored" data-anchor-id="resilience-disaster-recovery">5.4 Resilience &amp; Disaster Recovery</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Business Continuity</td>
+<td>Dual data center architecture for high availability [unverified – standard for systemically important FMIs]</td>
+</tr>
+<tr class="even">
+<td>Recovery Time</td>
+<td>Designed to meet EMIR requirements for 2-hour recovery time objective</td>
+</tr>
+<tr class="odd">
+<td>Operational Resilience</td>
+<td>Regular DR testing and business continuity exercises</td>
+</tr>
+<tr class="even">
+<td>Cybersecurity</td>
+<td>Subject to DORA (Digital Operational Resilience Act) requirements from January 2025</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="regulatory-framework">6. Regulatory Framework</h2>
+<section id="national-supervision" class="level3">
+<h3 class="anchored" data-anchor-id="national-supervision">6.1 National Supervision</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 64%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Regulator</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>BaFin</strong> (Bundesanstalt fur Finanzdienstleistungsaufsicht)</td>
+<td>Primary supervisor; banking license authority; resolution authority under CCP RRR</td>
+</tr>
+<tr class="even">
+<td><strong>Deutsche Bundesbank</strong></td>
+<td>Oversight of payment and settlement systems; monetary policy implications</td>
+</tr>
+<tr class="odd">
+<td><strong>Hessische Borsaufsicht</strong></td>
+<td>Exchange supervisory authority of Hesse for Eurex Exchange operations</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="eu-level-supervision" class="level3">
+<h3 class="anchored" data-anchor-id="eu-level-supervision">6.2 EU-Level Supervision</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Framework</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>EMIR</strong></td>
+<td>Authorized CCP under Regulation (EU) No 648/2012 since 10 April 2014</td>
+</tr>
+<tr class="even">
+<td><strong>EMIR Refit</strong></td>
+<td>Compliance with Regulation (EU) 2019/834 (EMIR 2.2) including enhanced third-country CCP framework</td>
+</tr>
+<tr class="odd">
+<td><strong>EMIR 3.0</strong></td>
+<td>Regulation (EU) 2024/2987; active account requirement entered into force 24 June 2025</td>
+</tr>
+<tr class="even">
+<td><strong>ESMA Supervisory College</strong></td>
+<td>ESMA chairs a CCP supervisory college for Eurex Clearing, including BaFin, Bundesbank, and relevant EU national competent authorities</td>
+</tr>
+<tr class="odd">
+<td><strong>CCP RRR</strong></td>
+<td>Regulation (EU) 2021/23 on CCP recovery and resolution, fully applicable since February 2023</td>
+</tr>
+<tr class="even">
+<td><strong>CSDR</strong></td>
+<td>Settlement discipline regime applicable to securities clearing</td>
+</tr>
+<tr class="odd">
+<td><strong>DORA</strong></td>
+<td>Digital Operational Resilience Act requirements from January 2025</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cpmi-iosco-compliance" class="level3">
+<h3 class="anchored" data-anchor-id="cpmi-iosco-compliance">6.3 CPMI-IOSCO Compliance</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Disclosure</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PFMI Self-Assessment</td>
+<td>Published and updated regularly; most recent assessment available on Eurex Clearing website</td>
+</tr>
+<tr class="even">
+<td>Public Quantitative Disclosure (PQD)</td>
+<td>Published quarterly since 2015; covers nearly 200 fields of quantitative data on credit risk, collateral, margin, liquidity risk, default rules</td>
+</tr>
+<tr class="odd">
+<td>PQD Webcasts</td>
+<td>14 webcasts published through 2026, explaining trends and methodology</td>
+</tr>
+<tr class="even">
+<td>Transparency Notes</td>
+<td>“Pioneering CCP Transparency” series (Parts 1-10) providing deep analysis of PQD trends</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.eurex.com/ec-en/find/about-us/regulatory-standards">Eurex Clearing Regulatory Standards</a>; <a href="https://www.eurex.com/ec-en/services/risk-management/ccp-transparency">Eurex CCP Transparency</a></p>
+<hr>
+</section>
+</section>
+<section id="interoperability-cross-ccp-arrangements" class="level2">
+<h2 class="anchored" data-anchor-id="interoperability-cross-ccp-arrangements">7. Interoperability &amp; Cross-CCP Arrangements</h2>
+<section id="cross-ccp-links" class="level3">
+<h3 class="anchored" data-anchor-id="cross-ccp-links">7.1 Cross-CCP Links</h3>
+<p>Eurex Clearing does not currently operate formal CCP interoperability links with other CCPs for cash equity clearing (unlike the EuroCCP-SIX x-clear-Cboe Clear Europe interoperable arrangement). Eurex Clearing acts as the sole CCP for its cleared venues.</p>
+</section>
+<section id="cross-margin-arrangements" class="level3">
+<h3 class="anchored" data-anchor-id="cross-margin-arrangements">7.2 Cross-Margin Arrangements</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 59%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Arrangement</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Internal Listed-OTC Cross-Margining</strong></td>
+<td>Cross-margining between OTC IRS (5-day HP) and listed fixed income (2-day HP) within PFI01 liquidation group; potential savings up to 70%</td>
+</tr>
+<tr class="even">
+<td><strong>Cross-Product Margining (CPM)</strong></td>
+<td>C7 Release 11.1 introduced CPM for US FCM Clients (May 2025)</td>
+</tr>
+<tr class="odd">
+<td><strong>Eurex/OCC Arrangement</strong></td>
+<td>No formal cross-CCP cross-margin arrangement currently identified between Eurex Clearing and OCC [unverified – historical discussions may have occurred but no active program found]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="relationship-with-clearstream" class="level3">
+<h3 class="anchored" data-anchor-id="relationship-with-clearstream">7.3 Relationship with Clearstream</h3>
+<p>Eurex Clearing and Clearstream (both part of Deutsche Borse Group) have deep integration:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Settlement</td>
+<td>Clearstream Europe AG (formerly CBF) is the primary CSD for all Eurex Clearing securities settlement</td>
+</tr>
+<tr class="even">
+<td>Collateral Management</td>
+<td>Clearstream provides collateral management services for Eurex Clearing margin and default fund collateral</td>
+</tr>
+<tr class="odd">
+<td>GC Pooling</td>
+<td>Integrated value chain: Eurex Repo (trading) -&gt; Eurex Clearing (CCP) -&gt; Clearstream (settlement &amp; custody)</td>
+</tr>
+<tr class="even">
+<td>DLT Collateral</td>
+<td>Joint initiative with HQLAx and Clearstream for DLT-enabled collateral mobilisation (launched July 2025)</td>
+</tr>
+<tr class="odd">
+<td>D7 Platform</td>
+<td>Clearstream’s D7 digital securities platform integrated with Eurex Repo F7 for digital commercial paper trading and clearing</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="other-partnerships" class="level3">
+<h3 class="anchored" data-anchor-id="other-partnerships">7.4 Other Partnerships</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Partner</th>
+<th>Arrangement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>HQLAx</strong></td>
+<td>DLT-enabled collateral mobilisation service; Eurex Clearing first CCP globally to launch this (July 2025)</td>
+</tr>
+<tr class="even">
+<td><strong>Pirum</strong></td>
+<td>Post-trade automation for Lending CCP</td>
+</tr>
+<tr class="odd">
+<td><strong>EquiLend</strong></td>
+<td>Cooperation in securities lending trade sourcing</td>
+</tr>
+<tr class="even">
+<td><strong>CLS</strong></td>
+<td>Settlement of OTC FX-related cash flows</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.eurex.com/ex-en/find/news-center/news/Eurex-Clearing-paving-the-way-for-digital-collateral-mobilization-4265674">Eurex Clearing DLT Collateral</a>; <a href="https://www.hqla-x.com/post/eurex-clearing-collaborates-with-hqlax-on-digital-collateral-mobilization">HQLAx Partnership</a></p>
+<hr>
+</section>
+</section>
+<section id="fees" class="level2">
+<h2 class="anchored" data-anchor-id="fees">8. Fees</h2>
+<section id="fee-structure-overview" class="level3">
+<h3 class="anchored" data-anchor-id="fee-structure-overview">8.1 Fee Structure Overview</h3>
+<p>All transaction fees and applicable rebates are detailed in the <strong>Price List of Eurex Clearing AG</strong> (Chapter 3), published on the Eurex website under Rules &amp; Regulations.</p>
+<p>Fees are charged <strong>per contract</strong> and vary by: - Product category - Execution type (order book vs.&nbsp;off-book/TES) - Position account (proprietary vs.&nbsp;client) - Volume tier (rebate programs for high-volume participants)</p>
+</section>
+<section id="representative-fee-levels" class="level3">
+<h3 class="anchored" data-anchor-id="representative-fee-levels">8.2 Representative Fee Levels</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 22%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product Category</th>
+<th>Fee Type</th>
+<th>Indicative Range</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equity Index Futures (e.g., EURO STOXX 50)</td>
+<td>Clearing fee per contract</td>
+<td>Standard fees with volume-based rebate tiers; reduced fees available for high-volume participants</td>
+</tr>
+<tr class="even">
+<td>Fixed Income Futures (e.g., Euro-Bund, Euro-Bobl)</td>
+<td>Clearing fee per contract</td>
+<td>Subject to 2026 pricing roadmap changes</td>
+</tr>
+<tr class="odd">
+<td>Equity Options</td>
+<td>Clearing fee per contract</td>
+<td>Volume-dependent tiers</td>
+</tr>
+<tr class="even">
+<td>OTC Interest Rate Derivatives</td>
+<td>Per-trade and notional-based</td>
+<td>Published separately in OTC IRS Pricing &amp; Fees document</td>
+</tr>
+<tr class="odd">
+<td>Repo / GC Pooling</td>
+<td>Clearing fee per transaction</td>
+<td>Adjusted periodically</td>
+</tr>
+<tr class="even">
+<td>Securities Lending (Lending CCP)</td>
+<td>Per-transaction basis</td>
+<td>[unverified]</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Specific EUR cent/contract amounts are available in the official Price List PDF but could not be extracted for this research. The most current Price List as of October 2025 is available at <a href="https://www.eurex.com/ec-en/rules-regs/rules-and-regulations/3.-Price-List-32640">Eurex Clearing Price List</a>.</p>
+</section>
+<section id="pricing-changes" class="level3">
+<h3 class="anchored" data-anchor-id="pricing-changes">8.3 2026 Pricing Changes</h3>
+<p>Effective 1 January 2026 and 1 April 2026, amendments include: - Changes to standard fees, reduced fees, rebates, and thresholds for <strong>Equity Index Futures</strong>, <strong>EURO STOXX 50 Index Options</strong>, and <strong>Fixed Income Futures and Options</strong> - Rebate levels for liquidity class 1 in Equity Index Options reduced by 5 percentage points per tier - Rebates for liquidity provisioning for Interest Rate Options lowered by 10 percentage points across all liquidity classes</p>
+<p>Source: <a href="https://www.eurex.com/ec-en/find/circulars/clearing-circular-4800548">Eurex Pricing Roadmap 2026 Circular</a></p>
+</section>
+<section id="membership-fees" class="level3">
+<h3 class="anchored" data-anchor-id="membership-fees">8.4 Membership Fees</h3>
+<p>Membership-related fees include application fees, annual membership fees, and connectivity charges. These are separate from transaction-based clearing fees and are detailed in the applicable fee schedules.</p>
+</section>
+<section id="prisma-margin-netting-benefits" class="level3">
+<h3 class="anchored" data-anchor-id="prisma-margin-netting-benefits">8.5 Prisma Margin Netting Benefits</h3>
+<p>The Prisma portfolio-based margining approach provides significant economic benefits to clearing members: - <strong>Cross-margining savings</strong>: Up to 70% margin reduction for portfolios with offsetting listed FI and OTC IRS positions - <strong>Portfolio margining</strong>: Full netting within liquidation groups, recognizing hedging and correlation effects - <strong>Capital efficiency</strong>: More accurate risk assessment leads to lower capital requirements under Basel III/CRD IV compared to standardized or bilateral approaches - <strong>Single collateral pool</strong>: One margin pool across listed and OTC positions reduces operational complexity and collateral fragmentation</p>
+<hr>
+</section>
+</section>
+<section id="recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="recent-developments">9. Recent Developments</h2>
+<section id="c7-system-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="c7-system-evolution">9.1 C7 System Evolution</h3>
+<p>The C7 clearing architecture continues its multi-year rollout: - <strong>C7 SCS</strong> (Securities Clearing Service) has been in production since September 2021 - <strong>C7 Release 11.1</strong> (May 2025): Total Return Futures strategy, negative trade/settlement prices, cross-product margining for US FCM clients - <strong>C7 CAS Release 2.293</strong> (October 2025): Enhanced member administration - <strong>2026 Roadmap</strong>: Further advances in clearing architecture, regulatory initiatives, and secured funding capabilities - TCS (Tata Consultancy Services) has been a technology partner in modernizing the clearing platform</p>
+<p>Source: <a href="https://www.eurex.com/ec-en/support/initiatives/c7-releases">Eurex C7 Releases</a>; <a href="https://www.tcs.com/what-we-do/industries/capital-markets/case-study/eurex-central-counterparty-clearing-legacy-modernization">TCS Case Study</a></p>
+</section>
+<section id="d7-post-trade-platform-digital-securities" class="level3">
+<h3 class="anchored" data-anchor-id="d7-post-trade-platform-digital-securities">9.2 D7 Post-Trade Platform (Digital Securities)</h3>
+<ul>
+<li><strong>D7</strong> is Deutsche Borse Group’s next-generation platform for fully digital issuance and processing of securities</li>
+<li>Native digital commercial paper issued on Clearstream’s D7 platform (by ABN Amro) and traded on Eurex Repo F7</li>
+<li>Eurex Clearing successfully participated in ECB trials for wholesale digital money pilot</li>
+<li>Integration of D7 with Eurex Clearing infrastructure enables digital securities clearing</li>
+</ul>
+<p>Source: <a href="https://www.deutsche-boerse.com/dbg-en/markets-services/ps-technology/ps-7-market-technology/ps-d7">Deutsche Borse D7</a>; <a href="https://www.eurex.com/ex-en/find/news-center/news/Eurex-Clearing-successfully-participates-in-ECB-trials-for-wholesale-digital-money-pilot--4151738">Eurex Digital Money Pilot</a></p>
+</section>
+<section id="partnership-program-otc-irs" class="level3">
+<h3 class="anchored" data-anchor-id="partnership-program-otc-irs">9.3 Partnership Program (OTC IRS)</h3>
+<p>The Eurex Clearing Partnership Program, launched in October 2017, has transformed Eurex’s OTC clearing position:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Participants</td>
+<td>27 founding participants from US, UK, Asia, and Continental Europe</td>
+</tr>
+<tr class="even">
+<td>On-boarded Clients</td>
+<td>500+ banks and buy-side firms for swaps clearing</td>
+</tr>
+<tr class="odd">
+<td>Volume Growth</td>
+<td>Average daily cleared volume from EUR 5 billion (2017) to EUR 280 billion (2025)</td>
+</tr>
+<tr class="even">
+<td>Governance</td>
+<td>Top 10 most active participants eligible for permanent share in economics and inclusion in governance/committee structure</td>
+</tr>
+<tr class="odd">
+<td>Client Incentives</td>
+<td>OTC IRD Client Activation Program: up to EUR 50,000 reward for qualifying clients</td>
+</tr>
+<tr class="even">
+<td>CCP Switch Incentive</td>
+<td>50% discount on regular booking fees for OTC IRD transactions on designated switch days (until 31 March 2026)</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.fia.org/marketvoice/articles/eurex-clearing-partnership-program">FIA Partnership Program</a>; <a href="https://www.eurex.com/ec-en/join/partnership-program-otc-ird">Eurex Partnership Program</a></p>
+</section>
+<section id="otc-clearing-growth" class="level3">
+<h3 class="anchored" data-anchor-id="otc-clearing-growth">9.4 OTC Clearing Growth</h3>
+<p>Eurex OTC Clear has achieved remarkable growth trajectory:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 41%">
+<col style="width: 33%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Notional Outstanding (end-year)</th>
+<th>Avg Daily Cleared Volume</th>
+<th>YoY Growth</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2023</td>
+<td>~EUR 29,800 billion</td>
+<td>~EUR 185 billion</td>
+<td>–</td>
+</tr>
+<tr class="even">
+<td>2024</td>
+<td>EUR 33,411 billion</td>
+<td>EUR 209 billion</td>
+<td>+12% / +13%</td>
+</tr>
+<tr class="odd">
+<td>2025</td>
+<td>EUR 43,668 billion</td>
+<td>EUR 280 billion</td>
+<td>+31% / +35%</td>
+</tr>
+</tbody>
+</table>
+<p>In October 2025, notional outstanding volumes reached EUR 49,407 billion (up 41% YoY). IRS volumes grew 90% year-on-year, and OIS outstanding increased 50%. New participants include both EU and non-EU firms.</p>
+<p>Key milestone: The European Stability Mechanism (ESM) selected Eurex Clearing for voluntary clearing of interest rate swaps.</p>
+<p>Sources: <a href="https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494">Eurex Full Year 2025</a>; <a href="https://www.eurex.com/ex-en/find/news-center/news/clearing-otc-ird-momentum-grows-with-new-participants-4725500">Eurex OTC Momentum</a>; <a href="https://www.eurex.com/ex-en/find/news-center/news/European-Stability-Mechanism-selects-Eurex-Clearing-for-voluntary-clearing-of-interest-rate-swaps--4441824">ESM Selection</a></p>
+</section>
+<section id="eurex-repo-f7-platform" class="level3">
+<h3 class="anchored" data-anchor-id="eurex-repo-f7-platform">9.5 Eurex Repo F7 Platform</h3>
+<ul>
+<li><strong>F7</strong> is Eurex Repo’s web-based trading system operating as a Multilateral Trading Facility (MTF) supervised by BaFin</li>
+<li>Integrated market for electronic trading, CCP clearing, collateral management, and settlement</li>
+<li>F7 Release 4.3 (April 2025): FIX upgrade and optional API upgrade</li>
+<li>F7 Release 4.4 (September 2025 simulation): FIX upgrade with mandatory API update</li>
+<li>2026 release schedule published with further infrastructure enhancements</li>
+<li>Record repo volumes: EUR 406.1 billion average term-adjusted volume in 2025 (+20% YoY)</li>
+</ul>
+<p>Source: <a href="https://www.eurex.com/ex-en/support/f7">Eurex Repo F7</a>; <a href="https://www.eurex.com/ex-en/markets/eurex-repo/repo-circulars/Eurex-Repo-Readiness-Newsflash-Eurex-Repo-F7-Release-schedule-for-2026-4827004">F7 Release Schedule 2026</a></p>
+</section>
+<section id="sustainability-derivatives-clearing" class="level3">
+<h3 class="anchored" data-anchor-id="sustainability-derivatives-clearing">9.6 Sustainability Derivatives Clearing</h3>
+<p>Eurex clears a growing range of ESG/sustainability derivatives:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Q1 2025 Data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Total ESG Index Derivatives Notional</td>
+<td>Exceeded EUR 30 billion (Q1 2025, record quarter)</td>
+</tr>
+<tr class="even">
+<td>First EUR 20 billion Milestone</td>
+<td>Achieved in March 2025 (EUR 20.1 billion)</td>
+</tr>
+<tr class="odd">
+<td>EURO STOXX 50 ESG Options (OSSX)</td>
+<td>EUR 1.6 billion notional (Q1 2025, +38.1% YoY)</td>
+</tr>
+<tr class="even">
+<td>Bloomberg MSCI Euro Corporate SRI Futures (FECX)</td>
+<td>EUR 13.8 billion notional (Q1 2025)</td>
+</tr>
+<tr class="odd">
+<td>Product Range</td>
+<td>Sustainable versions of global, European, and regional benchmarks covering ESG-X, SRI, CTB, and PAB methodologies</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.eurex.com/ex-en/find/news-center/news/ESG-Index-Derivatives-Development-Update-Q1-2025-4265764">Eurex ESG Index Derivatives Q1 2025</a></p>
+</section>
+<section id="emir-3.0-implications-active-account-requirement" class="level3">
+<h3 class="anchored" data-anchor-id="emir-3.0-implications-active-account-requirement">9.7 EMIR 3.0 Implications &amp; Active Account Requirement</h3>
+<p>EMIR 3.0 (Regulation (EU) 2024/2987) introduces the <strong>Active Account Requirement (AAR)</strong> – a significant regulatory development that directly benefits Eurex Clearing:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Effective Date</td>
+<td>Obligation to maintain active account: 24 June 2025</td>
+</tr>
+<tr class="even">
+<td>RTS Implementation</td>
+<td>26 February 2026</td>
+</tr>
+<tr class="odd">
+<td>Products in Scope</td>
+<td>OTC IRD in EUR and PLN; Euro STIR (Euribor and eSTR futures)</td>
+</tr>
+<tr class="even">
+<td>Who Must Comply</td>
+<td>EU market participants exceeding IRD clearing thresholds</td>
+</tr>
+<tr class="odd">
+<td>Requirements</td>
+<td>Permanent functionality: IT connectivity, internal processes, legal documentation, cash/collateral accounts at EU CCP</td>
+</tr>
+<tr class="even">
+<td>First Reporting</td>
+<td>End of July 2026</td>
+</tr>
+<tr class="odd">
+<td>Eurex Position</td>
+<td>As the only EU-based CCP offering comprehensive listed and OTC IRD clearing, Eurex Clearing is the primary beneficiary</td>
+</tr>
+<tr class="even">
+<td>Incentives</td>
+<td>CCP Switch Incentive Program: 50% discount on booking fees for switch days (until 31 March 2026); Eurex Focus Days educating market participants</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://www.eurex.com/ec-en/rules-regs/emir3-0">Eurex EMIR 3.0</a>; <a href="https://www.esma.europa.eu/sites/default/files/2025-06/ESMA91-1505572268-4201_Final_Report_on_EMIR_3_Active_Account_Requirement.pdf">ESMA EMIR 3 AAR Final Report</a></p>
+</section>
+<section id="dlt-enabled-collateral-mobilisation" class="level3">
+<h3 class="anchored" data-anchor-id="dlt-enabled-collateral-mobilisation">9.8 DLT-Enabled Collateral Mobilisation</h3>
+<p>In July 2025, Eurex Clearing became the <strong>first CCP globally</strong> to launch a DLT-enabled collateral mobilisation service: - Developed in partnership with <strong>HQLAx</strong> (distributed ledger technology) and <strong>Clearstream</strong> (settlement infrastructure) - Addresses operational friction caused by physical location of collateral assets - <strong>J.P. Morgan</strong> planned as pilot clearing member - Enables movement of collateral ownership records on distributed ledger without physical settlement, reducing time and cost</p>
+<p>Source: <a href="https://www.eurex.com/ex-en/find/news-center/news/Eurex-Clearing-paving-the-way-for-digital-collateral-mobilization-4265674">Eurex DLT Collateral</a>; <a href="https://www.hqla-x.com/post/eurex-clearing-collaborates-with-hqlax-on-digital-collateral-mobilization">HQLAx Announcement</a></p>
+</section>
+<section id="prisma-bonds-extension" class="level3">
+<h3 class="anchored" data-anchor-id="prisma-bonds-extension">9.9 Prisma Bonds Extension</h3>
+<p>As of 8 December 2025 (mandatory), Eurex Clearing extended the Prisma methodology to <strong>Bonds and Repos</strong> (Prisma Bonds): - Replaces the legacy Risk-Based Margining (RBM) approach for in-scope bonds and repos - Integrates backward-looking and improved forward-looking margin components - Fixed Income Securities Collateral haircuts also subject to improved methodology - Regulatory approval received from ESMA and BaFin on 3 June 2025</p>
+<p>Source: <a href="https://www.eurex.com/ec-en/find/circulars/clearing-circular-4609908">Eurex Prisma Bonds Circular</a></p>
+<hr>
+</section>
+</section>
+<section id="appendix-comparison-with-krx-clearing" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-comparison-with-krx-clearing">Appendix: Comparison with KRX Clearing</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 29%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Eurex Clearing</th>
+<th>KRX (Korea Exchange as CCP)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Legal Structure</td>
+<td>Separate legal entity (Eurex Clearing AG), subsidiary of exchange</td>
+<td>KRX acts as CCP itself; KSD (Korea Securities Depository) as CSD</td>
+</tr>
+<tr class="even">
+<td>Margin Methodology</td>
+<td>Prisma (filtered historical simulation, portfolio-based)</td>
+<td>KOSPI 200 options: SPAN-like; Futures: SPAN; KTB futures: SPAN</td>
+</tr>
+<tr class="odd">
+<td>Cross-Margining</td>
+<td>Yes (listed FI and OTC IRS, up to 70% savings)</td>
+<td>Limited cross-margining across product groups</td>
+</tr>
+<tr class="even">
+<td>OTC Clearing</td>
+<td>Yes (IRS, FX NDF)</td>
+<td>Yes (KRX OTC clearing for IRS since 2014)</td>
+</tr>
+<tr class="odd">
+<td>Default Fund Structure</td>
+<td>Single joint fund, Cover-2 standard</td>
+<td>Separate settlement guarantee funds per market</td>
+</tr>
+<tr class="even">
+<td>Settlement CSD</td>
+<td>Clearstream Europe AG / T2S</td>
+<td>KSD (Korea Securities Depository)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>This document is part of the Global Exchange Research Project – Clearing &amp; Settlement domain.</em> <em>For questions or updates, refer to the project CLAUDE.md instructions.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

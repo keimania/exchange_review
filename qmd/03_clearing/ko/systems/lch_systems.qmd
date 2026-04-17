@@ -1,0 +1,497 @@
+---
+title: "LCH 청산 플랫폼 및 증거금 엔진 (LCH Clearing Platforms & Margin Engines)"
+subtitle: "청산결제 > 시스템"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-07
+> **시스템 분류:** 청산시스템
+
+---
+
+## 1. 시스템 개요 (System Overview)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 시스템명 | LCH Clearing Platforms (다수) |
+| 운영기관 | LCH Ltd(런던) / LCH SA(파리), LSEG (런던증권거래소그룹) 자회사 |
+| 목적 | 다자산 클래스(OTC IRS, FX, 레포, 주식, CDS, 에너지, 디지털 자산)에 걸친 CCP 청산, 증거금 산출, 리스크 관리 및 결제 |
+| 가동연도 | SwapClear: 1999년; EquityClear MCCP: 2020년; AWS 기반 담보관리: 2025년 |
+| 현재 버전 | Millennium Clearing & Risk(MCCP) — EquityClear용; Murex MX.3 — SwapClear/SwapAgent용; CDSClear, RepoClear용 맞춤 플랫폼 |
+| 개발 | 하이브리드 — LSEG Technology(Millennium 플랫폼, 자체 개발), Murex(OTC 파생상품 처리용 MX.3), 독자 리스크 엔진(PAIRS), AWS/Azure 클라우드 인프라 |
+
+### 시스템 발전 과정 (System Evolution)
+
+| 시기 | 시스템 / 이정표 | 주요 변화 |
+|--------|--------------------|-------------|
+| 1999 | SwapClear 출시 | OTC 금리스왑(IRS)을 위한 최초의 CCP; 맞춤형 청산 플랫폼 |
+| 2003 | LCH.Clearnet 합병 | London Clearing House와 파리 소재 Clearnet SA 시스템 통합 |
+| 2009 | CDSClear 출시 | LCH SA를 위한 전용 CDS 청산 플랫폼 구축 |
+| ~2012 | ForexClear 출시 | 독자 API 연결을 갖춘 NDF 청산 플랫폼 |
+| 2016-2020 | LSEG Technology MCCP 출시 | Millennium Clearing & Risk 플랫폼 개발; EquityClear 2020년 3월 가동 [Source: FinTech Futures, Finance Magnates] |
+| ~2017 | SwapClear 플랫폼 업그레이드 | 거래 등록 및 증거금 산출 플랫폼 업그레이드; SwapAgent용 Murex MX.3 통합 [Source: Murex] |
+| 2022 | LSEG-Microsoft 10년 파트너십 | Azure 클라우드 마이그레이션을 위한 전략적 파트너십; Microsoft의 LSEG 지분투자 [Source: Microsoft News] |
+| 2024 | DigitalAssetClear 출시(LCH SA) | 디지털 자산 파생상품(GFO-X 파트너십)을 위한 신규 청산 서비스 |
+| 2025 (2분기) | 담보관리시스템 AWS 이전 | 최초의 LCH 핵심 청산 서비스 퍼블릭 클라우드 운영; 다중 리전 아키텍처, RTO 2시간, RPO 제로 [Source: AWS re:Invent 2025, AWS Industries Blog] |
+| 2025 | LSEG-AWS 협력 확대 | AWS가 Markets, Risk Intelligence, FTSE Russell 부문의 우선 클라우드 제공자로 선정; 멀티클라우드 전략, 1,300개 이상 AWS 계정 [Source: LSEG Press Release] |
+
+---
+
+## 2. 아키텍처 (Architecture)
+
+### 2.1 상위 설계 (High-Level Design)
+
+LCH는 각 청산 서비스가 해당 자산 클래스에 최적화된 플랫폼에서 운영되는 **이기종 서비스 지향 아키텍처(heterogeneous, service-oriented architecture)**를 운영한다. 전체 설계는 다음과 같다:
+
+- **하이브리드 클라우드 / 온프레미스:** 핵심 청산 및 리스크 엔진은 LCH 데이터센터에서 온프레미스로 유지하며, 지원 서비스(담보관리, 보고, 분석)를 퍼블릭 클라우드(AWS 주, Azure 데이터/분석)로 점진적 이전 중이다.
+- **자산 클래스별 서비스 모델:** 각 청산 서비스(SwapClear, ForexClear, RepoClear, CDSClear, EquityClear 등)가 자체 증거금 모델, 공동기금(default fund), 기술 스택을 갖춘 논리적으로 독립된 청산 단위로 운영되며, 연결성, 담보관리, 회원 포털은 공통 인프라를 공유한다.
+- **이벤트 기반 + 배치 혼합:** 실시간 거래 등록, 장중 증거금 모니터링, 포지션 업데이트는 이벤트 기반; 일말 증거금 재산출, 공동기금 규모 조정, 보고는 배치 처리를 사용한다.
+- **자동일괄처리(STP):** 표준 상품에 대해 거래 제출부터 채무인수(novation), 증거금 산출, 결제까지 무접촉(zero-touch) 자동화 워크플로로 거의 100% STP를 달성한다. [Source: LSEG Technology]
+
+### 2.2 핵심 구성요소 (Core Components)
+
+#### SwapClear — 세계 최대 OTC IRS 청산 서비스
+
+| 항목 | 세부사항 |
+|------|---------|
+| 자산 클래스 | OTC 금리 파생상품(IRS, OIS, FRA, 베이시스 스왑, 무이표 스왑, 인플레이션 스왑) |
+| 범위 | 28개 통화; USD/GBP/EUR 최대 51년 만기; 수십 개 벤치마크 금리 |
+| 시장점유율 | 전 세계 일반(vanilla) OTC IRS의 약 95%; EMEA에서 99.4% [Source: Clarus FT] |
+| 거래량 | 2024년 상반기 청산 명목금액 $779조(전년대비 15% 증가); 누적 청산 6,500만건 이상 [Source: LSEG, Clarus FT] |
+| 보유 개시증거금 | 약 $2,400억(GBP 1,920억), 2024년 4분기 기준 [Source: Clarus FT Q4 2024 PQD] |
+| 기술 플랫폼 | 거래 처리 및 가치 평가를 위한 Murex MX.3; 일 30,000건 이상 최대 거래량 관리 [Source: Murex] |
+| 증거금 엔진 | **PAIRS** (Portfolio Approach to Interest Rate Scenarios) — 6장에서 상세 분석 |
+| 거래 등록 | 실시간(제출에서 채무인수까지 약 10초); 전용 GBP 6억 RTTR 공동기금 구성요소로 지원 [Source: RBA Assessment 2020] |
+| 운영시간 | 영국시간 06:00~뉴욕시간 19:00 |
+| 연결성 | ClearLink API(FpML 기반) MQ 메시징 경유; MarkitWire/OSTTRA를 통한 미들웨어 통합 |
+| 압축(Compression) | 독자 압축 + OSTTRA triReduce 다자간 압축; 누적 압축 명목금액 $7,000조 이상(1경(quadrillion) 달러 초과) [Source: LeapRate, Finance Magnates] |
+
+#### ForexClear — FX 파생상품 청산
+
+| 항목 | 세부사항 |
+|------|---------|
+| 자산 클래스 | OTC FX 파생상품: NDF(25개 통화 쌍), NDO(9개 쌍), 실물인도 FX(현물, 선도, 옵션 — 8개 쌍) |
+| 출시 | 2012년 |
+| 보유 개시증거금 | $107억(2024년 2분기 최고치, 전년대비 32% 증가) [Source: LCH ForexClear Factsheet] |
+| 회원 | 직접 청산회원 약 30개; 고객 92개 [Source: LCH ForexClear Factsheet] |
+| 증거금 엔진 | PAIRS(SwapClear과 공유 방법론, FX 리스크 요소에 맞게 보정) |
+| 운영시간 | 주 5.5일, 24시간 거래 등록 |
+| 연결성 | ForexClear API(독자); 직접 거래소 연결; 24 Exchange 포함 승인된 거래 소스를 통한 거래 제출 [Source: Securities Finance Times] |
+| 결제 | 실물인도 FX는 CLS를 통한 실물 결제; Protected Payments System(PPS)을 통한 현금 변동증거금 |
+| 주요 특징 | Quantile과 파트너십으로 "FX Smart Clearing" — 최대 증거금 효율을 위해 청산 대상 거래를 최적화 [Source: LSEG Press Release 2023] |
+
+#### RepoClear — 채권 레포 청산
+
+| 항목 | 세부사항 |
+|------|---------|
+| 법인 | RepoClear Ltd(런던) — 영국 국채(gilts) 및 기타 시장; RepoClear SA(파리) — 13개 유로존 국채 시장 |
+| 자산 클래스 | 레포, 역레포, 현물 국채 거래 |
+| RepoClear SA 개시증거금 | EUR 19억 미결제 현물채권 총명목금액(2024년 4분기) [Source: Clarus FT] |
+| 증거금 엔진 | RepoClear SA는 변동성 스케일링을 적용한 역사적 시뮬레이션 기반 증거금 모델 사용(PAIRS와 유사한 원칙이나 채권/레포 리스크에 보정) [Source: LCH SA Margin Model Overview, May 2024] |
+| 결제 | 상품에 따라 T+0~T+2; CREST(영국), Euroclear, Clearstream을 통한 DVP |
+| 연결성 | LCAP 게이트웨이(LCH SA); FIX 프로토콜 및 독자 메시징 |
+
+#### EquityClear — 현물 주식 및 주식 파생상품
+
+| 항목 | 세부사항 |
+|------|---------|
+| 법인 | EquityClear Ltd(런던) |
+| 자산 클래스 | LSE, SIX Swiss Exchange, Cboe Europe, Aquis 및 기타 유럽 거래소의 현물 주식 |
+| 플랫폼 | **Millennium Clearing & Risk(MCCP)** — LSEG Technology의 주력 후선 플랫폼, 2020년 3월 가동 [Source: FinTech Futures] |
+| 처리량 | 일 2,000만 건(4,000만 거래면); 초당 1,600건 처리 [Source: LSEG Technology] |
+| 최대 거래량 | 운영 첫 5일간 약 8,000만 거래면 청산(2020년 3월, COVID 시장 변동성) [Source: FinanceFeeds] |
+| 연결 거래소 | 16개 거래소 |
+| CSD 연결 | 유럽 전역 19개 예탁기관 |
+| 참가자 | 약 250개 글로벌 참가자 |
+| 운영시간 | 24x6.5 |
+| 상호운용성(Interoperability) | SIX x-clear 및 Cboe Clear Europe과 상호운용 |
+| 핵심 기술 | GPU 가속 병렬 실시간 리스크 처리; 무접촉 STP; 거래별 익스포저 및 증거금 재산출 [Source: LSEG Technology, WatersTechnology AFTAs 2020] |
+| 효과 | 이전 플랫폼 대비 일말 처리시간을 대폭 단축 [Source: Securities Finance Times] |
+
+#### CDSClear — 신용부도스왑(CDS)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 법인 | LCH SA(파리) |
+| 자산 클래스 | CDS 지수(iTraxx, CDX) 및 개별종목 CDS |
+| 회원 | 2024년 기준 28개(총괄청산회원(GCM) 20개) [Source: Risk.net] |
+| 거래량 | 2024년 총청산 명목금액 EUR 5,437조(전년대비 9% 증가); 2024년 상반기 고객 명목금액 EUR 4,260억(88% 증가) [Source: Risk.net] |
+| 보유 개시증거금 | 약 $102억(EUR 98억), 2024년 4분기 [Source: Clarus FT Q4 2024] |
+| 증거금 엔진 | 스케일링된 수익률을 적용한 역사적 시뮬레이션; 99.7% 신뢰수준의 기대 손실액(Expected Shortfall); 5일 보유기간; 2007년 4월부터의 룩백(GFC 포함) [Source: LCH SA CDSClear Risk Management] |
+| 연결성 | ClearLink API; CDSClear PMC 및 Reporting API; MMTP(실시간) 및 SFTP(파일)를 지원하는 LCAP 접근 게이트웨이 [Source: LCH SA Connectivity Guide] |
+| 결제 | 일별 현금 변동증거금; ISDA 프로토콜에 따른 신용사건 결제 |
+
+#### EnClear — 에너지 및 상품 (과거 / 제한적)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 부문 | Energy Division, Freight Division, Precious Metals Division |
+| 에너지 상품 | OTC 배출권 현물/선도/옵션(EUA, CER 계약); OTC 전력 거래(Endex를 통한 네덜란드 전력) [Source: Global Custodian] |
+| 해운 상품 | Forward Freight Agreements(FFA), 컨테이너 운임 스왑, 철광석 스왑, 철강 스왑, 비료 스왑, 석탄 스왑/옵션 |
+| 현황 | Euronext 이전 이후 대부분 종료 또는 이관; LCH SA가 2024년 CommodityClear 종료; 잔여 에너지/상품 청산 최소화 [Source: Euronext Press Release 2024] |
+
+#### DigitalAssetClear (LCH SA) — 2024년 신규
+
+| 항목 | 세부사항 |
+|------|---------|
+| 자산 클래스 | 비트코인 지수 선물 및 옵션 |
+| 파트너 | GFO-X(규제된 디지털 자산 파생상품 거래소) |
+| 출시 | 2024년 |
+| 현황 | 초기 단계; LCH SA에서 기존 EquityClear SA/CommodityClear SA 역할을 대체 |
+| 연결성 | LCAP 게이트웨이 [Source: LCH SA Connectivity Guide] |
+
+#### PAIRS 증거금 엔진
+
+6장에서 전체 기술 심층 분석을 제공한다. 요약:
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식명칭 | Portfolio Approach to Interest Rate Scenarios |
+| 적용 대상 | SwapClear, ForexClear, Listed Rates |
+| 모델 유형 | EWMA 변동성 스케일링을 적용한 필터 역사적 시뮬레이션 기반 기대 손실액(Expected Shortfall, ES) |
+| 신뢰수준 | 99.7% |
+| 보유기간 | 5일(회원); 7일(고객) |
+| 룩백 기간 | 10년 일별 시장 데이터 |
+| 경기순응성 방지 하한(Anti-procyclicality Floor) | 비스케일링 10년 룩백 + 2.5년 GFC 구간(2007-2009) |
+
+#### 상장 파생상품용 SPAN 유사 모델
+
+| 항목 | 세부사항 |
+|------|---------|
+| 적용 대상 | Listed Rates(LCH Ltd가 청산하는 FMX SOFR 선물 및 옵션) |
+| 접근방식 | PAIRS 방법론을 상장 금리 파생상품으로 확장; 상장 선물과 OTC IRS 포지션 간 포트폴리오 증거금 산출 [Source: Coalition Greenwich] |
+| 포트폴리오 증거금 | LCH의 포트폴리오 증거금 서비스는 FMX Futures Exchange 상장 포지션과 SwapClear IRS 포트폴리오 간 교차 증거금 산출 가능; 2025년 9월 Marex를 통해 첫 고객 활성화 [Source: Marex Press Release] |
+
+### 2.3 기술 스택 (Technology Stack)
+
+| 계층 | 기술 | 세부사항 |
+|-------|-----------|---------|
+| 프로그래밍 언어 | Java(주), C++(성능 핵심 구성요소) | 서비스용 Java Spring Boot; 매칭 및 리스크 엔진용 C++ [Source: AWS re:Invent 2025; LCH 구체 구성요소는 미확인] |
+| 청산 플랫폼 | Millennium Clearing & Risk(MCCP) | LSEG Technology 자체 개발 플랫폼; GPU 가속 리스크 연산 [Source: LSEG Technology] |
+| OTC 파생상품 처리 | Murex MX.3 | SwapClear 및 SwapAgent의 거래 처리, 가치 평가, 증거금 산출 [Source: Murex] |
+| 리스크 엔진 | PAIRS(독자) | 자체 개발 기대 손실액 엔진 |
+| 클라우드 인프라(주) | AWS | Amazon EKS(컨테이너), Oracle RDS(데이터베이스), S3(스토리지), FSx for NetApp ONTAP(파일 시스템); 다중 리전 배포 [Source: AWS re:Invent 2025] |
+| 클라우드 인프라(분석) | Microsoft Azure | Synapse, Fabric, Purview 데이터 분석용; Copilot 통합; LSEG-Microsoft 10년 파트너십의 일환 [Source: Microsoft News] |
+| 프라이빗 클라우드 | Dell Technologies | 온프레미스 워크로드를 위한 프라이빗 클라우드 플랫폼 구축 [Source: The TRADE] |
+| Infrastructure as Code | Terraform | 보안/정책 준수를 위한 검증된 모듈로 표준화된 IaC [Source: AWS re:Invent 2025] |
+| 컨테이너화 | Amazon EKS(Kubernetes) | 클라우드 이전 구성요소의 컨테이너화된 마이크로서비스 |
+| 데이터베이스 | Oracle(RDS 및 EC2) | 청산 및 담보 시스템의 주요 데이터베이스 |
+| 메시징/미들웨어 | IBM MQ, FpML(ClearLink) | ClearLink API 연결용 MQ; OTC 거래 제출을 위한 FpML 메시징 표준 |
+| 네트워크 연결 | CMC(Customer Managed Connectivity) | CMC City PoP과 LCH 데이터센터 간 보안 IP 네트워크; 회원은 전용 "Last Mile" 연결을 통해 접속 [Source: LCH SA Connectivity Guide] |
+| 회원 포털 | 웹 기반(SSO) | 사용자 권한별 매개변수화된 애플리케이션을 갖춘 싱글 사인온 포털 |
+
+---
+
+## 3. 성능 사양 (Performance Specifications)
+
+| 지표 | 수치 | 조건 / 서비스 |
+|--------|-------|---------------------|
+| EquityClear 일일 처리량 | 2,000만 건(4,000만 거래면) | MCCP 플랫폼 [Source: LSEG Technology] |
+| EquityClear 처리속도 | 초당 1,600건 | 지속 처리량 [Source: LSEG Technology] |
+| EquityClear 최대(실적) | 일 약 1,600만 거래면 | 운영 첫 주(2020년 3월, COVID 변동성) |
+| SwapClear 거래 등록 | 약 10초(제출에서 채무인수까지) | 실시간 거래 등록 [Source: RBA Assessment 2020] |
+| SwapClear 일일 거래량 | 최대 일 30,000건 이상 | Murex MX.3 플랫폼 경유 [Source: Murex] |
+| SwapClear 2024년 상반기 거래량 | 명목금액 $779조 | 반기 기록 [Source: Clarus FT] |
+| 증거금 산출 빈도 | 실시간(장중) + 일말 전체 재산출 | 전 서비스 |
+| 담보관리 RTO | 2시간 | AWS 다중 리전 아키텍처 [Source: AWS re:Invent 2025] |
+| 담보관리 RPO | 데이터 무손실 | 다중 AZ 복제 [Source: AWS re:Invent 2025] |
+| 가동률 SLA | 99.9% 이상 [미확인] | PFMI 준수; 시스템적으로 중요한 인프라 |
+| 운영시간(EquityClear) | 24x6.5 | 글로벌 주식시장 커버 |
+| 운영시간(SwapClear) | 영국 06:00~뉴욕 19:00 | 일 약 13시간 |
+| 운영시간(ForexClear) | 24x5.5 | 거래 등록 |
+
+### 성능 이력 (Performance History)
+
+| 연도 | 이벤트 | 영향 |
+|------|-------|--------|
+| 2008 | 리먼 브라더스(Lehman Brothers) 부도 | $9조 IRS 포트폴리오(66,390건)를 개시증거금의 35%만 사용하여 처리; 공동기금 손실 없음 [Source: LSEG SwapClear Risk Management] |
+| 2020 (3월) | COVID-19 시장 변동성 | EquityClear MCCP가 운영 첫 5일간 약 8,000만 거래면을 처리; 시스템 무사고 [Source: FinanceFeeds] |
+| 2024 (상반기) | SwapClear 기록적 거래량 | 청산 명목금액 $779조, 전년대비 15% 증가 [Source: Clarus FT] |
+
+---
+
+## 4. 인터페이스 및 프로토콜 (Interfaces & Protocols)
+
+### 4.1 청산 연결 (Clearing Connectivity)
+
+| 인터페이스 | 프로토콜 / 기술 | 서비스 | 설명 |
+|-----------|----------------------|----------|-------------|
+| **ClearLink API** | FpML over IBM MQ | SwapClear, ForexClear, CDSClear | OTC 거래 제출, 청산 수락 및 실시간 상태 업데이트를 위한 주요 인터페이스; Financial products Markup Language(FpML) 산업 표준 기반 [Source: LCH ClearLink Overview] |
+| **ForexClear API** | 독자 | ForexClear | FX 거래 제출 및 청산 통지를 위한 직접 연결 |
+| **CDSClear PMC API** | 독자 | CDSClear | 포트폴리오 관리 및 인증; LCH Portal 보안 모델을 적용한 보고 API |
+| **LCAP Gateway** | MMTP(실시간) / SFTP(파일) | LCH SA 서비스(CDSClear, RepoClear SA, DigitalAssetClear) | 실시간 메시징 및 파일 기반 데이터 교환을 지원하는 접근 서버; 전송 중 데이터 압축 및 저장 [Source: LCH SA Connectivity Guide] |
+| **FIX Protocol** | FIX 4.x / 5.0 | 거래소 상품(EquityClear, Listed Rates) | 거래소로부터의 거래 제출을 위한 표준 프로토콜 |
+| **CMC Network** | 보안 IP(전용) | 전 서비스 | Customer Managed Connectivity — CMC City PoP과 LCH 데이터센터 간 보안 네트워크, 전용 "Last Mile" 회원 연결 [Source: LCH SA Connectivity Guide] |
+| **MarkitWire / OSTTRA** | 미들웨어 | SwapClear, ForexClear | OTC 파생상품의 거래 확인, 매칭, 라우팅 |
+| **Tradeweb STP** | 직접 거래소 연결 | SwapClear | Tradeweb 체결에서 LCH 청산까지 자동일괄처리 [Source: LSEG] |
+
+### 4.2 시장 데이터 피드 (Market Data Feeds)
+
+| 피드 | 설명 |
+|------|-------------|
+| 일말 가격 | LCH가 증거금 산출 및 가치 평가에 사용되는 일말 정산가격, 수익률 곡선, 무이표 곡선을 공표 |
+| 장중 리스크 데이터 | 포털 및 API를 통해 회원에게 실시간 리스크 분석 제공 |
+| 곡선 데이터 | PAIRS 모델에 사용되는 수익률 곡선, 할인 곡선, FX 환율을 회원에게 공표 |
+
+### 4.3 회원 포털 / 보고 (Member Portal / Reporting)
+
+| 기능 | 설명 |
+|---------|-------------|
+| **LCH 회원 포털** | 웹 기반 싱글 사인온(SSO) 플랫폼; 사용자 역할/권한별 매개변수화된 접근 [Source: LCH SA Connectivity Guide] |
+| 포지션 보고 | 실시간 및 일말 포지션, 거래, 증거금 보고 |
+| 증거금 계산기 | LCH Rates Online Margin Calculator(SwapClear 사전 개시증거금 추정); CDSClear Margin Simulator [Source: LCH Margin Calculator PDF] |
+| 파일 배포 | SFTP 기반 배치/일말 파일 보고 배포 |
+| 리스크 분석 | 회원 수준 리스크 대시보드, 스트레스 테스트 결과, 가정 변경(what-if) 분석 |
+
+### 4.4 SWIFT / FIX / 독자 프로토콜
+
+| 프로토콜 | 용도 |
+|----------|----------|
+| **SWIFT FIN / ISO 15022** | 담보관리 지시, 결제 메시지, 대금 메시징 |
+| **ISO 20022** | 담보관리 — LCH는 담보 워크플로에 ISO 20022를 조기 도입 [Source: SWIFT] |
+| **FIX Protocol** | 거래소 상품의 거래 제출; 거래소 연결 |
+| **FpML** | ClearLink API를 통한 OTC 파생상품 거래 메시징 |
+| **MMTP** | LCH SA 서비스용 실시간 메시징 프로토콜(LCAP 경유) |
+| **SFTP** | 배치 파일 배포(보고, 포지션, 증거금 데이터) |
+
+---
+
+## 5. 복원력 및 업무연속성 (Resilience & Business Continuity)
+
+### 5.1 이중화 (Redundancy)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 온프레미스 아키텍처 | LCH Ltd 및 LCH SA 모두 지리적으로 분리된 재해복구 사이트를 갖춘 활성 데이터센터 [Source: PFMI 준수 시스템적으로 중요한 CCP 표준] |
+| 클라우드 아키텍처(담보관리) | AWS 다중 리전 배포: 3개 가용영역의 주 리전; 데이터 복제를 위한 보조 리전(DR); 최대 5일간 독립 운영 가능한 AWS Outposts 3차 환경 [Source: AWS re:Invent 2025] |
+| 네트워크 이중화 | 이중 연결 경로를 제공하는 다수의 City PoP을 갖춘 CMC 네트워크 |
+| EquityClear | 16개 거래소 및 19개 예탁기관 연결; 24x6.5 지속 운영 설계 |
+
+### 5.2 재해복구 (Disaster Recovery)
+
+| 파라미터 | 사양 |
+|-----------|--------------|
+| RTO(복구 목표시간) | 핵심 청산 및 담보 시스템 **2시간**(AWS 담보관리시스템에서 확인) [Source: AWS re:Invent 2025] |
+| RPO(복구 목표시점) | **데이터 무손실** — 다중 AZ 및 다중 리전 복제로 거래 데이터 손실 없음 보장 [Source: AWS re:Invent 2025] |
+| DR 사이트 | 주 사이트와 지리적으로 분리; 클라우드 이전 서비스의 경우 보조 AWS 리전 + AWS Outposts 3차 사이트 [Source: AWS re:Invent 2025] |
+| 독립 운영 | 3차 AWS Outposts 환경이 전체 클라우드 리전 장애 시 최대 5일간 독립 운영 가능 [Source: AWS re:Invent 2025] |
+| 테스트 | 청산회원과의 정기 DR 테스트; 팬데믹, 사이버 사고, 물리적 장애를 다루는 BCP 훈련 |
+| 규제 프레임워크 | 영국 중앙은행 CBEST(사이버 복원력 테스트) 및 ECB/유로시스템 사이버 복원력 프레임워크 적용 |
+
+### 5.3 용량 관리 (Capacity Management)
+
+| 항목 | 세부사항 |
+|------|---------|
+| EquityClear 용량 | 일 2,000만 건 기본; 스트레스 시 일 약 1,600만 거래면 처리 능력 입증(2020년 3월) [Source: LSEG Technology, FinanceFeeds] |
+| SwapClear 확장성 | Murex MX.3 플랫폼이 일 30,000건 이상 최대 거래량을 관리하며, 전 세계 거래량 증가에 따라 SwapClear의 성장을 지원 [Source: Murex] |
+| 클라우드 확장성 | Amazon EKS의 컨테이너화된 클러스터 팟(pod)으로 탄력적 확장; 데이터베이스 복원력을 위한 다중 AZ RDS [Source: AWS re:Invent 2025] |
+| 스트레스 용량 | LSEG Autex Trade Route(거래 네트워크)가 Azure 이전 후 400% 거래량 급증을 무사고 처리 [Source: Microsoft; LSEG 전반에 적용, LCH 고유는 아님] |
+| 부하 테스트 | PFMI 준수의 일환으로 정기 용량 및 성능 테스트; 회원 연결 테스트 |
+
+---
+
+## 6. 주요 기술 특징 (Notable Technical Features)
+
+### 6.1 PAIRS 증거금 방법론 — 기술 심층분석 (PAIRS Margin Methodology -- Technical Deep-Dive)
+
+**PAIRS (Portfolio Approach to Interest Rate Scenarios)**는 SwapClear, ForexClear, Listed Rates에 사용되는 LCH의 독자 증거금 모델이다. $2,400억 이상의 개시증거금을 관리하는 세계에서 가장 정교한 CCP 증거금 모델 중 하나이다.
+
+#### 모델 아키텍처 (Model Architecture)
+
+| 구성요소 | 사양 |
+|-----------|--------------|
+| **모델 유형** | EWMA 변동성 스케일링을 적용한 필터 역사적 시뮬레이션 기반 기대 손실액(Expected Shortfall, ES) |
+| **신뢰수준** | 99.7%(정규분포 하에서 약 2.75 표준편차에 해당) |
+| **보유기간** | 청산회원 5일; 고객 7일(5일 + 포트폴리오 이전을 위한 2일) |
+| **룩백 기간** | 10년 일별 역사적 시장 데이터 |
+| **리스크 요소** | 수익률 곡선(통화 및 만기별), FX 환율, 신용 스프레드(서비스에 따라), 인플레이션율 |
+| **변동성 모델** | 역사적 수익률의 변동성 스케일링을 위한 EWMA(지수가중이동평균) |
+
+#### 산출 과정(단계별) (Calculation Process)
+
+1. **데이터 수집:** 수익률 곡선 변동, FX 환율 변화 및 기타 관련 리스크 요소를 포함한 10년 일별 시장 데이터를 수집한다.
+
+2. **변동성 스케일링:** 역사적 수익률에 EWMA 기반 변동성 스케일링을 적용한다. 이것이 "필터" 구성요소로 — 역사적 시나리오가 현재 시장 변동성 조건을 반영하도록 스케일링된다. 현재 변동성이 높으면 역사적 수익률이 증폭되고, 낮으면 감쇠된다. 이를 통해 모델이 변화하는 시장 상황에 반응한다.
+
+3. **시나리오 생성:** 보유기간(5일 또는 7일)에 걸쳐 각 변동성 스케일링된 역사적 시나리오 하에서 포트폴리오를 재평가하여 시뮬레이션된 포트폴리오 손익 변화의 분포를 생성한다.
+
+4. **기대 손실액 산출:** 99.7% 신뢰수준에서 ES를 산출한다 — 이는 99.7% VaR 임계값을 초과하는 손실의 조건부 기대 손실이다. ES는 VaR과 달리 임계값을 넘는 모든 손실을 평균하여 "팻 테일(fat tail)" 리스크를 반영하므로 더 보수적이다.
+
+5. **개시증거금 결정:** 개시증거금은 ES 수치로 설정하되, 하한(floor)을 적용한다.
+
+[Source: RBA Assessment 2020 Appendix B; LCH Ltd Margin Methodology page; Clarus FT]
+
+#### 경기순응성 방지 하한 (Anti-Procyclicality Floor)
+
+안정적 시장기에 증거금이 지나치게 낮아지다가 스트레스 시 급등하여 경기순응적 유동성 수요를 유발하는 것을 방지하기 위해:
+
+- LCH는 **비스케일링** 역사적 10년 룩백 **및 글로벌 금융위기(GFC)(2007-2009)를 특별히 포함하는 추가 2.5년 구간**에 기반한 개시증거금 **하한**을 부과한다.
+- 이를 통해 현재 변동성이 매우 낮더라도 하한이 변동성 감쇠 없이 GFC 수준의 스트레스 시나리오를 포착하도록 보장한다.
+
+[Source: RBA Assessment 2020 Appendix B]
+
+#### 증거금 부가금(Margin Add-ons)
+
+| 부가금 | 목적 |
+|--------|---------|
+| **신용리스크 부가금** | 기본 PAIRS 모델에 충분히 반영되지 않는 신용 익스포저를 포착 |
+| **유동성리스크 부가금** | 대규모 또는 집중된 포지션의 청산 잠재 비용을 반영 |
+| **집중리스크 부가금** | 특정 만기 또는 통화에 과도하게 집중된 포지션에 불이익 부과 |
+| **스트레스 증거금 부가금** | 시장 스트레스 고조 기간 중 재량적 부가금 |
+| **역방향리스크(Wrong-way Risk) 부가금** | 회원의 부도 리스크가 포트폴리오 리스크와 상관되는 경우 적용 [미확인] |
+
+[Source: RBA Assessment 2020 Appendix B]
+
+#### CDSClear 증거금 모델 (LCH SA)
+
+| 파라미터 | 사양 |
+|-----------|--------------|
+| 모델 유형 | 스케일링된 수익률을 적용한 역사적 시뮬레이션; 기대 손실액 방법론 |
+| 신뢰수준 | 99.7% |
+| 보유기간 | 5일 |
+| 룩백 기간 | 2007년 4월부터(GFC 기간 포함) |
+| 리스크 요소 | CDS 스프레드 변화, 회수율 변화, 급부도(jump-to-default) 리스크 |
+
+[Source: LCH SA CDSClear Risk Management]
+
+#### RepoClear SA 증거금 모델
+
+- 채권 및 레포 고유 리스크 요소(금리 리스크, 신용 스프레드 리스크, 결제 리스크)에 보정된 변동성 스케일링 적용 역사적 시뮬레이션 기반 증거금 모델이다.
+- 2024년 5월 업데이트된 증거금 모델 개요가 공개되었다.
+
+[Source: LCH SA Margin Model Overview, May 2024]
+
+### 6.2 자산 클래스 간 포트폴리오 증거금 (Portfolio Margining Across Asset Classes)
+
+LCH의 **포트폴리오 증거금 서비스(Portfolio Margining Service)**는 핵심 경쟁 차별화 요소로, 다음 간의 교차 증거금 산출을 가능하게 한다:
+
+- **상장 금리 선물**(FMX SOFR 선물)과 **OTC IRS**(SwapClear)
+- 거래소 상장 및 OTC 포지션 간의 상쇄 리스크를 인식하여 상당한 자본 효율을 제공한다
+
+주요 이정표:
+- **2025년 9월:** Marex가 FMX Futures Exchange와 LCH Ltd 포지션 간 포트폴리오 증거금 혜택에 대한 고객 접근을 활성화한 최초의 청산 기업이 됨 [Source: Marex Press Release]
+- 이 서비스는 완전 자동화되어 있으며 거래상대방 리스크를 줄이면서 증거금 절감을 제공한다
+
+[Source: Coalition Greenwich; Marex]
+
+### 6.3 압축 서비스(명목금액 축소) (Compression Services)
+
+LCH는 OTC IRS 시장의 거대한 총명목금액 잔액을 관리하는 데 핵심적인, 세계에서 가장 영향력 있는 포트폴리오 압축 프로그램 중 하나를 운영한다.
+
+| 지표 | 수치 |
+|--------|-------|
+| 누적 압축 명목금액(SwapClear) | $7,000조 이상($1경(quadrillion) 초과) [Source: LeapRate, Finance Magnates] |
+| 2015년 단일 연도 예시 | $323조 거래 압축; $107조 순명목금액 축소 [Source: LCH Compression page] |
+| OSTTRA triReduce 월간 기록 | 2022년 9월 약 $1조 추가 총명목금액 축소 [Source: OSTTRA] |
+
+**압축 기법:**
+- **독자 양자 압축:** 회원이 정의된 리스크 파라미터 내에서 자체 포트폴리오 내 거래를 취소하거나 상쇄
+- **다자간 압축(OSTTRA triReduce):** 다수 거래상대방에 걸친 상쇄 거래를 제거하는 교차 회원 압축 주기
+- **혼합 금리 압축:** 서로 다른 금리의 다수 거래를 더 적은 거래로 결합
+- **미래 현금흐름 차감:** 거래 간 불필요한 현금흐름 제거
+- **적격 상품:** IRS, OIS, FRA, 베이시스 스왑, 무이표 인플레이션 스왑
+
+**ForexClear 압축:** FX NDF 포트폴리오에도 적용 가능하여 거래 건수 및 명목금액을 축소한다. [Source: LCH ForexClear Compression Factsheet]
+
+### 6.4 클라우드 마이그레이션 프로젝트 (Cloud Migration Initiatives)
+
+LSEG는 LCH 시스템에 영향을 미치는 대규모 다년간 클라우드 전환을 추진하고 있다:
+
+| 프로젝트 | 세부사항 |
+|-----------|---------|
+| **LSEG-Microsoft 파트너십** | 10년 전략적 파트너십(2022년 12월 발표); LSEG 데이터 플랫폼을 Azure로 이전; Microsoft의 LSEG 지분투자 [Source: Microsoft News] |
+| **LSEG-AWS 협력** | 2025년 다년간 협력 확대; AWS가 Markets 부문(LCH 포함)의 우선 클라우드 제공자로 선정; LSEG 전체 1,300개 이상 AWS 계정 [Source: LSEG Press Release] |
+| **LCH 담보관리 AWS 이전** | 핵심 담보관리 서비스를 2025년 2분기 AWS로 이전; 최초의 LCH 청산 서비스 퍼블릭 클라우드 운영 [Source: AWS re:Invent 2025] |
+| **아키텍처 패턴** | 다중 리전: 주(EKS + Oracle RDS + S3 + FSx), 보조(DR 복제), 3차(AWS Outposts, 5일간 독립 운영) [Source: AWS re:Invent 2025] |
+| **Dell 프라이빗 클라우드** | 온프레미스 워크로드를 위한 Dell Technologies 다년간 협력을 통한 프라이빗 클라우드 플랫폼 구축 [Source: The TRADE] |
+| **멀티클라우드 전략** | AWS(청산 인프라 주), Azure(데이터/분석, Workspace), GCP(선택 워크로드); 상당한 온프레미스 잔존을 포함한 하이브리드 모델 [Source: AWS re:Invent 2025] |
+
+### 6.5 실시간 리스크 관리 역량 (Real-Time Risk Management Capabilities)
+
+- **장중 증거금 모니터링:** 통합 증거금 부채가 참가자별 신용 임계값을 초과하면 자동 증거금 콜 발동
+- **거래별 리스크 평가:** EquityClear MCCP가 개별 거래마다 익스포저 및 증거금 변동을 산출(GPU 가속)
+- **실시간 거래 등록:** SwapClear 채무인수가 제출 후 약 10초 이내
+- **Cover 2 스트레스 테스트:** 극단적이지만 타당한 시나리오 하에서 2대 최대 참가자의 동시 부도를 커버하도록 공동기금 규모를 산정; 스트레스 테스트를 일일 실시
+- **사후검증(Back-testing):** 실제 시장 변동 대비 증거금 모델 성능의 일별 및 월별 사후검증
+
+---
+
+## 7. 비교 참고사항 (Comparison Notes)
+
+### KRX/KSD 시스템과의 비교 (vs. KRX/KSD Systems)
+
+| 측면 | LCH 시스템 | KRX/KSD 대응 |
+|--------|------------|-------------------|
+| **CCP 운영기관** | LCH Ltd(영국) + LCH SA(프랑스); LSEG 소유 | KRX가 자체 시장의 CCP 역할; KSD(한국예탁결제원)가 결제 담당 |
+| **청산시스템 제공자** | LSEG Technology(Millennium), Murex, 독자 개발 | KOSCOM이 모든 KRX 청산, 결제, 매매 시스템에 IT 인프라 제공 [Source: KOSCOM] |
+| **증거금 방법론** | PAIRS(기대 손실액, 필터 역사적 시뮬레이션, 99.7%, 10년 룩백) | EWMA 기반 VaR 모델; 장중 증거금 콜 도입; 파생상품에 SPAN 유사 방법론 [Source: IMF FSAP Korea 2014] |
+| **자산 클래스 커버리지** | 별도 서비스별 다자산: OTC IRS, FX, 레포, 주식, CDS, 디지털 자산 | 통합: 주식(KOSPI, KOSDAQ), 파생상품(KOSPI 200 옵션/선물, 개별주식선물 등), 채권, KONEX |
+| **아키텍처** | 이기종 — 자산 클래스별 상이한 플랫폼; 하이브리드 클라우드 + 온프레미스 | 통합 — KOSCOM이 운영하는 단일 플랫폼으로 모든 KRX 시장 커버 |
+| **클라우드 도입** | AWS/Azure로 적극 이전 중; 2025년 2분기부터 AWS 담보관리 | 주로 온프레미스; KOSCOM 데이터센터 [미확인 — 클라우드 전략 공개 정보 제한] |
+| **OTC 청산** | 세계 최대 OTC IRS CCP(개시증거금 $2,400억); 전용 OTC 서비스 | KRX OTC CCP 기능을 비교적 최근 출시; 소규모 [Source: WFE article "A Milestone for Global Market Infrastructure in Seoul"] |
+| **압축** | 누적 $1경 이상 압축; OTC IRS 시장 구조에 핵심 | 비교 가능 규모 해당 없음(소규모 OTC 청산 거래량) |
+| **포트폴리오 증거금** | 상장 선물과 OTC IRS 간 자산 교차 증거금 | 시장 내 차감으로 제한 [미확인] |
+| **공동기금 규모** | SwapClear: 약 GBP 60억 총액; CDSClear: 약 EUR 28억 | 손해배상공동기금 + 결제적립금; 절대 금액은 상당히 소규모 [Source: IMF FSAP Korea] |
+| **GPU 가속** | EquityClear MCCP가 GPU 가속 병렬 리스크 처리 사용 | KRX/KOSCOM 시스템에 대해 공개 문서화되지 않음 |
+| **상호운용성** | SIX x-clear, Cboe Clear Europe과 CCP 상호운용 | Eurex-KRX 링크(KOSPI 200 옵션 교차상장) [Source: Eurex] |
+
+> **[KRX/KSD 비교 참고]** LCH와 KRX/KSD의 가장 근본적인 차이는 운영 모델에 있다. LCH는 자산 클래스별로 별도의 청산 서비스(SwapClear, ForexClear, CDSClear 등)를 독립 운영하는 반면, KRX는 단일 CCP로서 주식, 파생상품, 채권 시장을 통합 청산한다. 증거금 방법론 측면에서 PAIRS의 99.7% ES 필터 역사적 시뮬레이션은 KRX의 SPAN 유사 방법론보다 높은 정교성을 갖추나, 이는 주로 수조 달러 규모의 OTC IRS 포트폴리오 리스크를 관리하기 위한 필요에서 비롯된 것이다. KRX가 향후 OTC 청산 규모를 확대하거나 상장-OTC 교차 증거금을 도입하고자 할 경우, LCH PAIRS 모델의 포트폴리오 수준 리스크 평가 접근방식은 주요 벤치마크가 될 수 있다. 또한 LCH의 AWS 퍼블릭 클라우드 이전(담보관리시스템 2025년 2분기, RTO 2시간, RPO 제로)은 CCP 핵심 서비스의 클라우드 운영 가능성을 입증한 사례로, KSD/KOSCOM의 향후 클라우드 전략에 참고할 만하다.
+
+### 핵심 차별 요소 (Key Differentiators)
+
+1. **OTC 청산 규모:** LCH SwapClear는 약 95% 시장점유율과 $2,400억 개시증거금을 보유한 지배적 글로벌 IRS CCP이다 — 다른 단일 CCP 증거금 풀보다 한 자릿수(order of magnitude) 이상 크다. KRX는 주로 거래소 상품에서 운영한다.
+
+2. **다법인, 다관할권 구조:** LCH는 상이한 규제 체계(영국, EU) 하의 2개 법인(LCH Ltd, LCH SA)으로 운영되며, 10개 이상 관할권에서 적격중앙청산소(QCCP) 인정을 받았다. KRX는 한국 규제 체계 내 단일 CCP로 운영한다.
+
+3. **PAIRS 방법론의 정교성:** EWMA 변동성 스케일링을 적용한 필터 역사적 시뮬레이션, 99.7% ES 신뢰수준, 경기순응성 방지 하한은 거래소 상품에 일반적으로 사용되는 표준 SPAN 또는 VaR 모델보다 더 복잡한 증거금 접근방식을 나타낸다.
+
+4. **시스템 인프라로서의 압축:** LCH의 압축 서비스는 $1경 이상의 총명목금액을 축소한 글로벌 OTC 파생상품 시장 인프라의 핵심 구성요소이다. 이 기능은 거래소 시장에 대응 사례가 없다.
+
+5. **클라우드 우선 방향:** LSEG의 멀티클라우드 전략(AWS + Azure + 프라이빗 클라우드)과 핵심 청산 서비스의 퍼블릭 클라우드 이전은 업계 선도적 접근방식이다. KRX/KOSCOM을 포함한 대부분의 아시아 거래소 그룹은 주로 온프레미스 인프라를 유지한다.
+
+6. **자산 교차 포트폴리오 증거금:** OTC IRS와 상장 선물 간 교차 증거금 산출 능력은 LCH의 핵심 경쟁우위로, 단일 자산 CCP가 제공할 수 없는 자본 효율을 가능하게 한다.
+
+---
+
+## 출처 (Sources)
+
+1. [LSEG -- LCH Clearing Services](https://www.lseg.com/en/post-trade/clearing)
+2. [LCH Ltd Margin Methodology (PAIRS)](https://www.lseg.com/en/post-trade/clearing/risk-management/ltd-risk-management/ltd-margin-methodology)
+3. [LCH SA Margin Methodology](https://www.lseg.com/en/post-trade/clearing/risk-management/sa-risk-management/sa-margin-methodology)
+4. [RBA Assessment of LCH Ltd SwapClear -- Appendix B (2020)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/lch/2020/appendix-b.html)
+5. [Clarus FT -- 2024 CCP Volumes and Share in IRD](https://www.clarusft.com/2024-ccp-volumes-and-share-in-ird/)
+6. [Clarus FT -- What's New in CCP Disclosures Q4 2024](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)
+7. [FinTech Futures -- LCH Implements Clearing and Settlement Solution from LSEG Technology](https://www.fintechfutures.com/fintech-innovation/lch-implements-clearing-and-settlement-solution-from-lseg-technology)
+8. [FinanceFeeds -- LSEG Technology Implements New Clearing Platform for LCH EquityClear](https://financefeeds.com/lseg-technology-implements-new-clearing-platform-lchs-equityclear-service/)
+9. [Murex -- LCH SwapAgent Implements Murex](https://www.murex.com/en/news/lch-swapagent-implements-murex)
+10. [LCH ClearLink Overview (PDF)](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-swapclear-clearlink.pdf)
+11. [LCH SA Connectivity Guide (PDF)](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/lch-sa-connectivity-guide.pdf)
+12. [Microsoft -- LSEG and Microsoft Launch 10-Year Strategic Partnership (Dec 2022)](https://news.microsoft.com/source/2022/12/12/lseg-and-microsoft-launch-10-year-strategic-partnership-for-next-generation-data-and-analytics-and-cloud-infrastructure-solutions-microsoft-to-make-equity-investment-in-lseg-through-acquisition-of-sh/)
+13. [LSEG -- Extends Multi-Year Cloud Collaboration with AWS (2025)](https://www.lseg.com/en/media-centre/press-releases/2025/lseg-extends-multi-year-cloud-collaboration-with-aws)
+14. [AWS re:Invent 2025 -- LSEG's Migration & Modernization Journey (MAM206)](https://dev.to/kazuya_dev/aws-reinvent-2025-lsegs-migration-modernization-journey-blueprint-for-cloud-success-mam206-ipm)
+15. [AWS Industries Blog -- Cloud Adoption Update for FMI Providers 1H25](https://aws.amazon.com/blogs/industries/cloud-adoption-update-for-financial-market-infrastructure-providers-1h25/)
+16. [Risk.net -- Clearing House of the Year: LCH (2024)](https://www.risk.net/awards/7960370/clearing-house-of-the-year-lch)
+17. [LeapRate -- LCH SwapClear Compresses Over $1 Quadrillion](https://www.leaprate.com/news/lchs-swapclear-compresses-more-than-1-quadrillion-of-cleared-notional/)
+18. [OSTTRA -- Trade Refactoring Unlocks Additional Compression Benefits](https://osttra.com/articles/trade-refactoring-unlocks-additional-compression-benefits/)
+19. [Coalition Greenwich -- Portfolio Margining Imperative for Interest-Rate Derivatives](https://www.greenwich.com/market-structure-technology/portfolio-margining-imperative-interest-rate-derivatives)
+20. [Marex -- First Clearing Firm to Enable Client Access to Margin Benefits with FMX and LCH (2025)](https://www.marex.com/news/2025/10/marex-first-clearing-firm-to-enable-client-access-to-competitive-margin-benefits-with-fmx-futures-exchange-and-lch-ltd/)
+21. [WatersTechnology -- AFTAs 2020: Best New Technology -- LSEG Technology](https://www.waterstechnology.com/awards-rankings/7732176/aftas-2020-best-new-technology-introduced-over-the-last-12-months-trading-and-risk-lseg-technology)
+22. [LCH ForexClear Factsheet (PDF)](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/fact-sheets/lch-forexclear-factsheet-a-global-leader.pdf)
+23. [LCH SA Margin Model Overview (May 2024, PDF)](https://www.lseg.com/content/dam/post-trade/en_us/documents/lch/resources/margin-model-overview-may-2024.pdf)
+24. [KOSCOM -- KRX Trading System](https://www.koscom.co.kr/eng/main/contents.do?menuNo=300005)
+25. [IMF -- Republic of Korea FSAP 2014](https://www.imf.org/external/pubs/ft/scr/2014/cr14308.pdf)
+26. [WFE -- A Milestone for Global Market Infrastructure in Seoul (KRX Clearing)](https://focus.world-exchanges.org/articles/krx-clearing)
+27. [Eurex -- Eurex/KRX Link](https://www.eurex.com/ec-en/clear/eurex-krx-link)
+28. [The TRADE -- LSEG Embarks on Private Cloud Platform Build with Dell Technologies](https://www.thetradenews.com/lseg-embarks-on-private-cloud-platform-build-out-through-multi-year-dell-technologies-collaboration/)
+29. [Euromoney -- World's Best FX Clearing Venue 2025: LSEG FX and LCH ForexClear](https://www.euromoney.com/article/bbou8wzfesgg4g00c08gws0g8/awards/foreign-exchange-awards/the-worlds-best-fx-clearing-and-settlement-venue-2025-lseg-fx-and-lch-forexclear/)
+30. [SWIFT -- ISO 20022 and LCH Collateral Management](https://www.swift.com/swift-resource/15021/download)

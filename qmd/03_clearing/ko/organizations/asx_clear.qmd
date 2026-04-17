@@ -1,0 +1,704 @@
+---
+title: "ASX Clear / ASX Clear (Futures) (호주증권거래소 청산소)"
+subtitle: "청산결제 > 청산기관"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 업데이트:** 2026-04-07
+> **조사 수준:** Tier 2
+> **유형:** CCP (ASX 그룹 산하 두 개의 별도 법인)
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+### 1.1 조직 프로필 (Organization Profiles)
+
+| 항목 | ASX Clear | ASX Clear (Futures) |
+|------|-----------|-------------------|
+| 정식 명칭 | ASX Clear Pty Limited | ASX Clear (Futures) Pty Limited |
+| ABN | 48 001 314 503 | 91 050 615 864 |
+| 웹사이트 | [asx.com.au/clearing](https://www.asx.com.au/markets/clearing-and-settlement-services) | [asx.com.au/clearing](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear-futures) |
+| 설립 연도 | 1969년 (Options Clearing House Pty Ltd로 설립, 이후 Australian Clearing House / ACH로 개명); 2010년 ASX Clear로 개명 | 1999년 (SFE Clearing Corporation / SFECC로 설립); 2006년 ASX-SFE 합병 이후 ASX Clear (Futures)로 개명 |
+| 국가 / 도시 | 호주 / 시드니, NSW | 호주 / 시드니, NSW |
+| 소유 구조 | ASX Clear Pty Limited의 완전 자회사로, ASX Limited의 자회사 | ASX Clearing Corporation Limited의 완전 자회사로, ASX Limited의 자회사 |
+| 모회사 / 그룹 | ASX Limited (ASX: ASX) -- 자사 거래소에 상장 | ASX Limited (ASX: ASX) |
+| 감독기관 | ASIC (호주증권투자위원회) 및 RBA (호주준비은행) | ASIC 및 RBA |
+| CPMI-IOSCO PFMI 준수 | 준수 -- PFMI 정성적 공시 및 분기별 PQD(Public Quantitative Disclosures) 발행 | 준수 -- PFMI 공시 및 분기별 PQD 발행 |
+| QCCP 지위 | 인정 -- ESMA에 의해 EU EMIR에 따른 제3국 CCP로 인가(2015년 4월 27일 발효); APRA APS 112에 따른 적격중앙청산소 인정 | 인정 -- ESMA에 의해 EU EMIR에 따른 제3국 CCP로 인가(2015년 4월 27일 발효); APS 112에 따른 QCCP 인정 |
+
+**수직 통합:** ASX는 상장, 매매(현물주식용 ASX Trade, 파생상품용 ASX 24), 청산(ASX Clear 및 ASX Clear (Futures)), 결제(CHESS를 통한 ASX Settlement), 예탁 서비스(채권용 Austraclear)를 아우르는 세계적으로 보기 드문 완전 수직통합 거래소 그룹을 운영한다. 이러한 수직 통합은 호주 금융시장 인프라의 핵심적 특징이다. 매매, 청산, 결제 기능이 별도 법인에 의해 운영되는 많은 글로벌 시장(예: 미국 시장의 거래소, DTCC/NSCC, DTC)과 달리, ASX는 호주 시장의 전체 사후거래 가치사슬을 통제한다.
+
+**KRX/KSD와의 비교:** 한국의 사후거래 인프라는 유사하게 집중되어 있으나 두 기관으로 분리되어 있다: KRX(한국거래소)가 증권 및 파생상품 모두에 대해 CCP 역할을 수행하고, KSD(한국예탁결제원)가 결제 및 예탁 기능을 담당한다. ASX의 모델은 청산과 결제를 단일 기업 그룹 내 별도 법인으로 통합한다.
+
+[Source: ASX PFMI Disclosure Framework, https://www.asx.com.au/content/dam/asx/about/pfmi-disclosure-framework.pdf]
+[Source: ASX ESMA Recognition, https://www.asx.com.au/regulation/regulatory-compliance/esma.htm]
+
+### 1.2 주요 연혁 (Key Historical Milestones)
+
+| 연도 | 사건 |
+|------|------|
+| 1969 | Options Clearing House Pty Ltd 설립 (ASX Clear의 전신) |
+| 1987 | 6개 주별 증권거래소가 합병하여 Australian Stock Exchange (ASX) 설립 |
+| 1996 | CHESS (Clearing House Electronic Subregister System) 출시, 전자 결제 및 부등기부 시스템 |
+| 1998 | ASX 주식회사화(demutualise) 및 자사 거래소에 상장 |
+| 1999 | SFE Clearing Corporation (SFECC) 설립, Sydney Futures Exchange의 CCP 역할 |
+| 2005 | National Guarantee Fund (NGF) 자본 AUD 7,150만을 ASX Clear로 이전(제한자본준비금) |
+| 2006 | ASX와 Sydney Futures Exchange (SFE) 합병하여 ASX Limited 설립; SFECC와 ACH는 별도 CCP로 계속 운영 |
+| 2010 | Australian Clearing House (ACH)가 ASX Clear로 개명; SFECC가 ASX Clear (Futures)로 개명; CHESS가 "ASX Settlement Pty Limited" 명칭으로 운영 시작 |
+| 2013 | ASX Clear (Futures), Calypso 플랫폼을 활용하여 OTC 금리 파생상품 청산 개시 (9월) |
+| 2014 | Genium INET Clearing이 ASX Clear (Futures)의 장내거래 파생상품 청산을 위해 SECUR 시스템 대체 (5월) |
+| 2015 | ESMA, ASX Clear 및 ASX Clear (Futures)를 EMIR에 따른 제3국 CCP로 인가 (4월 27일) |
+| 2017 | ASX, 양 CCP에 대해 추가분담금 부과 권한 및 계약 해제를 포함한 회복 규칙 도입 |
+| 2022 | ASX, DLT 기반 CHESS 교체 프로젝트 포기 (11월); ~AUD 2억 5,000만 손실 처리 |
+| 2023 | ASX, 신규 CHESS 교체 파트너로 Tata Consultancy Services (TCS) 선정 |
+| 2024 | 12월 CHESS 배치 결제 장애 (12월 20일) -- 2014년에 도입된 메모리 할당 오류가 장애 유발 |
+| 2025 | RBA, ASX Clear 및 ASX Settlement의 운영리스크 기준을 "미준수(not observed)"로 하향; ASIC, ASX 그룹에 대한 공식 조사 착수 (6월); ClearStar 프로그램 하 Calypso OTC 청산 업그레이드 완료 (5월) |
+| 2026 | CHESS Release 1 (청산 교체) 2026년 4월 20일 가동 예정 |
+
+[Source: RBA Assessment of ASX Clearing and Settlement Facilities 2024/25, September 2025]
+[Source: ASX Story, https://www.asx.com.au/about/asx-story]
+[Source: RBA 2009/10 Assessment of ASX Clear, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2009-2010/asx-clear.html]
+
+---
+
+## 2. 청산 모델 (Clearing Model)
+
+### 2.1 CCP 서비스 (CCP Services)
+
+ASX는 각각 구별되는 상품군을 취급하는 두 개의 별도 CCP를 운영한다:
+
+**ASX Clear -- 현물시장 및 주식 파생상품:**
+
+| 상품 분류 | 설명 | 비고 |
+|----------|------|------|
+| 현물주식 | ASX Trade 및 Cboe Australia에서 거래되는 모든 주식, ETF, 워런트 | 독점적 지위 -- 호주 현물주식의 유일한 CCP |
+| 주식옵션 (ETO) | ASX Trade에서 거래되는 주식 및 지수 장내옵션 | ASX 200 지수옵션 및 개별주식옵션 포함 |
+| 구조화상품 | 워런트 및 기타 구조화상품 | |
+| mFund | 관리형 펀드 결제 | |
+
+**ASX Clear (Futures) -- 파생상품 및 OTC:**
+
+| 상품 분류 | 설명 | 거래량 / 미결제약정 |
+|----------|------|-------------------|
+| 선물 & 옵션 | 금리선물 (90일 Bank Bill, 3/10/20년 국채), 주가지수선물 (SPI 200), 상품선물 | ASX 24에서 거래 |
+| OTC 금리 파생상품 | AUD 및 NZD 금리 스왑, 베이시스 스왑, FRA | 청산 미결제 명목금액: ~AUD 4조 4,820억 (2025년 1월); AUD 스왑 시장점유율 ~5.6% (LCH ~94.4% 대비) |
+| 에너지 & 환경 파생상품 | 전력선물, 가스, 재생에너지인증서 | ASX 24 / ASX Energy에서 거래 |
+| 농산물 파생상품 | 곡물선물, 양모선물 | |
+| NZ 파생상품 | 약정에 따라 ASX Clear (Futures)가 청산하는 NZX 거래 상품 | |
+
+[Source: ASX Clearing and Settlement Services, https://www.asx.com.au/markets/clearing-and-settlement-services]
+[Source: Clarus Financial Technology, "What's New in AUD Swaps in 2024?", https://www.clarusft.com/whats-new-in-aud-swaps-in-2024/]
+
+### 2.2 채무인수 절차 (Novation Process)
+
+거래가 청산 대상으로 수용되면, 해당 ASX CCP는 **채무인수(경개, novation)** 과정을 통해 모든 거래의 양측에 대한 법적 거래상대방으로 개입한다. 매수자와 매도자 간의 원래 쌍무적 계약이 소멸되고, 두 개의 새로운 계약 -- CCP와 매수자, CCP와 매도자 -- 으로 대체된다.
+
+- **ASX Clear:** ASX Trade 및 Cboe Australia에서 체결되어 ASX Clear에 등록된 모든 거래에 대해 채무인수가 자동으로 발생한다. 채무인수는 거래 등록 시점에 이루어진다.
+- **ASX Clear (Futures):** ASX 24에서 매칭되거나 승인된 확인 플랫폼을 통해 제출되어 청산 수용된 OTC 거래에 대해 채무인수가 발생한다.
+
+채무인수를 통해, 각 청산참가자는 CCP만을 거래상대방으로 직면하게 되어 양자간 거래상대방 신용리스크가 제거된다. 이는 PFMI 원칙 4(신용리스크)와 일치하는 표준 CCP 모델이다.
+
+[Source: ASX Clearing, https://www.asx.com.au/about/regulation/clearing-and-settlement-of-cash-equities-in-australia/clearing]
+
+### 2.3 차감 (Netting)
+
+**ASX Clear (현물주식):**
+- **다자간차감** 적용
+- 각 결제참가자에 대해, 각 현물시장 상품별로 모든 매수와 매도를 하나의 순매수 또는 순매도 의무로 차감
+- 모든 지급 의무(수취 및 지급)를 결제참가자당 하나의 순수취 또는 순지급으로 차감
+- CHESS를 통한 단일 일일 다자간 순액 배치로 결제 (DVP Model 3)
+- 차감 약정은 **Payment Systems and Netting Act 1998**에 따라 승인
+- 높은 차감 효율성 -- 총결제 의무의 규모를 크게 축소
+
+**ASX Clear (Futures):**
+- 청산참가자 계좌 내 모든 포지션에 대한 변동증거금의 다자간차감
+- CME SPAN을 통한 포트폴리오 기반 증거금이 상관관계가 있는 포지션 간 상계를 인정
+- OTC 금리 파생상품 포지션도 동일 청산계좌 내에서 차감
+
+**KRX와의 비교:** KRX도 증권 및 파생상품 모두에 대해 다자간차감을 적용하며, KSD를 통해 순의무를 결제한다. 다만 KRX의 차감은 단일 CCP 법인 내에서 이루어지는 반면, ASX는 현물(ASX Clear)과 파생상품(ASX Clear (Futures))에 대해 별도의 차감 풀을 유지한다.
+
+[Source: ASX Settlement services and pricing, https://www.asx.com.au/about/regulation/clearing-and-settlement-of-cash-equities-in-australia/settlement/settlement-services-and-pricing.html]
+
+### 2.4 청산회원 (Clearing Membership)
+
+**ASX Clear (현물시장) -- 참가자 유형:**
+
+| 등급 | 요건 | 대략적 수 |
+|------|------|----------|
+| 직접청산참가자 (Direct Clearing Participant) | 자기 거래 청산; 리스크기반 자본요건(주식/옵션) 또는 기타 자본제도(ADI 대상) 충족 필요; 재무보고를 통한 지속적 자본적정성 모니터링 | ~30개사 [미확인 -- ASX 참가자 목록 기준, 2025년 기준 약 30개사] |
+| 총괄청산참가자 (General Clearing Participant) | 자기 거래 및 제3자(비청산회원) 거래 청산; 동일 자본요건 + 제3자 청산을 위한 추가 요건 | 직접청산참가자의 일부 |
+| 비청산참가자 (Non-Clearing Participant) | 직접 청산하지 않음; 청산계약에 따라 총괄청산참가자를 이용해야 함 | 해당 없음 (GCP를 통해 청산) |
+
+**ASX Clear (Futures) -- 참가자 유형:**
+
+| 등급 | 요건 | 대략적 수 |
+|------|------|----------|
+| 직접청산참가자 | 자기 거래 청산; 최소 자본요건 충족 필요 | ~20개사 [미확인 -- ASX 참가자 목록 기준, 2025년 기준 약 20개사] |
+| 총괄청산참가자 | 자기 및 제3자 거래 청산; 높은 자본요건 | 직접청산참가자의 일부 |
+
+**자본요건 (ASX Clear):**
+- 두 가지 자본제도: **리스크기반 자본요건** (기타 자본제도 적격 ADI를 제외한 주식 또는 옵션 청산 참가자 대상) 및 **기타 자본제도** (인가예금취급기관 / ADI 대상)
+- 리스크기반 자본요건은 시장리스크, 거래상대방리스크, 운영리스크를 포함한 참가자의 리스크 익스포저에 기반하여 산정
+- 자본적정성은 장마감 재무보고를 통해 모니터링; 높은 변동성 기간 동안 장중 모니터링이 적용될 수 있음
+- ASX Clear는 2026년 1월 제3자 청산 자본요건에 대한 협의서를 발행
+
+**참고:** CME Clearing의 비은행 FCM 대상 최소 순자본 500만 달러 등 많은 글로벌 CCP와 달리, ASX Clear의 자본요건은 보다 원칙 기반적이고 리스크에 비례하는 방식으로, 호주 시장의 상대적으로 적은 청산참가자 수를 반영한다.
+
+[Source: ASX Capital Requirements Guidance, https://www.asxonline.com/content/dam/asxonline/public/documents/manuals/capital-liquidity-handbook/capital-requirements-guidance.pdf]
+[Source: ASX Capital Liquidity Handbook, February 2025, https://www.asxonline.com/content/dam/asxonline/public/documents/manuals/capital-liquidity-handbook/asx_046913.pdf]
+[Source: ASX Clear Third Party Clearing Consultation, January 2026, https://www.asx.com.au/content/dam/asx/about/regulations/public-consultations/2026/260116-tpc-consultation-paper-and-appendix.pdf]
+
+---
+
+## 3. 리스크 관리 (Risk Management)
+
+### 3.1 증거금 체계 (Margin Framework)
+
+**ASX Clear (현물주식) -- 현물시장 증거금 (Cash Market Margining, CMM):**
+
+| 구성요소 | 방법론 | 상세 |
+|---------|--------|------|
+| 개시증거금 | **필터링된 역사적 시뮬레이션 VaR (FHSVaR)** | 높은 신뢰수준에서 잠재적 손실 커버; 역사적 가격 데이터를 활용하여 보정 |
+| 시가평가 증거금 | 일일 시가평가 | 미실현 손익 반영 |
+| 추가 증거금 (현물주식) | 집중리스크, 유동성리스크, 역방향리스크 추가분 | 포지션이 집중되거나 비유동적 증권에 대해 적용 |
+| CMM 방법론 업데이트 (2025년 8월) | HSVaR 파라미터 재보정 | 전체 청산참가자 평균 HSVaR 증거금 ~12% 인상, 2025년 8월 22일 시행 |
+
+**ASX Clear (주식 파생상품 / ETO) -- SPAN 기반:**
+
+| 구성요소 | 방법론 | 상세 |
+|---------|--------|------|
+| 개시증거금 | **CME SPAN (Standard Portfolio Analysis of Risk)** | 상품별로 그룹화된 파생상품 포트폴리오의 최대 잠재적 손실 산정; CME에서 채택 |
+| 보정 | 60일 역사적 가격 분포의 3 표준편차 | 장내옵션 및 OTC 주식/지수옵션 대상 |
+| 검토 주기 | 분기별 | CME SPAN 증거금 파라미터 3개월 주기로 검토 |
+
+**ASX Clear (Futures) -- 장내거래 파생상품:**
+
+| 구성요소 | 방법론 | 상세 |
+|---------|--------|------|
+| 개시증거금 | **CME SPAN** | 포트폴리오의 최대 잠재적 손실 산정; 복수 관찰 기간(7영업일, 120영업일, 12개월)에 대해 증거금율 평가 |
+| 보정 | 역사적 가격 분포의 3 표준편차 | 단기 및 장기 변동성 모두 반영 |
+| 검토 주기 | 분기별 | 정기 파라미터 검토; 높은 변동성 시 임시 검토 |
+
+**ASX Clear (Futures) -- OTC 파생상품:**
+
+| 구성요소 | 방법론 | 상세 |
+|---------|--------|------|
+| 개시증거금 | **필터링된 역사적 시뮬레이션 VaR (FHSVaR)** | 포트폴리오 가치 변동의 시뮬레이션 분포를 사용하여 주어진 신뢰수준에서 잠재적 손실 산정 |
+| 변동증거금 | 일일 시가평가 | OTC 포지션의 미실현 손익 변동 커버 |
+
+**KRX와의 비교:** KRX는 파생상품 증거금에 KOSCOM-TIMS (Theoretical Intermarket Margin System, OMS -- Options Margin System 기반)를 사용하는 반면, ASX는 CME SPAN을 사용한다. 두 방법 모두 시나리오 기반 접근법이나, SPAN이 전 세계적으로 더 널리 채택되어 있다. 현물주식의 경우, KRX는 ASX Clear의 CMM과 유사한 VaR 기반 접근법을 사용한다.
+
+[Source: ASX Clear Margining, https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear/risk-management/margining]
+[Source: Understanding Margins -- ASX Clear, https://www.asx.com.au/content/dam/asx/participants/clearing-and-settlement/asx-clear/understanding-margins.pdf]
+[Source: RBA Special Topic on Margin, 2021/22 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2021-2022/special-topics-margin.html]
+
+### 3.2 증거금 징수 일정 (Margin Call Schedule)
+
+**ASX Clear (현물주식 및 주식 파생상품):**
+
+| 징수 유형 | 시기 | 결제 |
+|----------|------|------|
+| 장마감 (정기) | 장 마감 후 산정; 참가자에게 증거금 의무 통지 | 익영업일 개장 시까지 납부 |
+| 장중 (임시) | S&P/ASX 200 지수가 +/- 1% 이상 변동 시 발동; 높은 변동성 기간 중 ASX는 일 최대 3회까지 익스포저 검토 | 징수로부터 **2시간** 이내 충족 |
+| 임계치 | 참가자의 증거금 부족이 AUD 100,000 초과이며 개시증거금의 40% 이상 잠식된 경우 장중 징수 발행 | 2시간 이내 |
+
+**ASX Clear (Futures):**
+
+| 징수 유형 | 시기 | 결제 |
+|----------|------|------|
+| 장마감 | 주간 세션 마감 후 산정 | 익일 오전 납부 |
+| 정기 장중 | 주간 세션 중 **3회 정기 장중 증거금 산정** | 일정에 따름 |
+| 야간 징수 | AEST 오전 2:00 직후; 최종 장중 산정 이후 증거금 요건 변동 커버; 야간 세션 익스포저 반영 | 시장 개장 전까지 납부 |
+| 임시 / 비상 | ASX의 재량에 따라 극단적 시장 상황 시 | 별도 지정 |
+
+[Source: ASX Clear Daily Processes and Deadlines, https://www.asx.com.au/content/dam/asx/participants/clearing-and-settlement/asx-clear/daily-processes-and-deadlines.pdf]
+[Source: ASX Clear (Futures) Daily Processes and Deadlines, https://www.asx.com.au/documents/clearing/ASX_Clear_(Futures)__Daily_Processes_and_Deadlines.pdf]
+[Source: RBA Standard 6: Margin, 2015/16 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2015-2016/asx-clear/standard-06.html]
+
+### 3.3 손실부담순서 (Default Waterfall)
+
+**ASX Clear (현물시장) 손실부담순서:**
+
+| 순서 | 설명 | 규모 (대략) |
+|------|------|-----------|
+| 1 | 부도자의 증거금 (개시증거금 + 시가평가) | 변동 (포지션 의존) |
+| 2 | ASX Clear 자기자본 (SITG -- Skin-in-the-Game) | AUD 2억 5,000만 공동기금에 포함 |
+| 3 | ASX Clear 공동기금 (100% ASX Clear / ASX 자본으로 충당) | **AUD 2억 5,000만** 총액 |
+| 4 | 비부도참가자에 대한 회복 추가분담금 | 1회 또는 복수 부도에 대해 최대 **AUD 3억** |
+| 5 | 계약 해제 / 부분 청산종결 (tear-up) | 필요 시 |
+
+**핵심 특징:** ASX Clear의 현물주식 공동기금은 **전액 ASX 자체 자본으로 충당된다** -- 청산참가자는 사전 공동기금 출연을 하지 않는다. 이는 대부분의 글로벌 CCP(예: CME, Eurex, LCH)에서 참가자가 리스크에 비례하여 공동기금에 출연하는 것과 대비되는 독특한 구조이다. 이 구조의 역사적 배경에는 2005년 National Guarantee Fund (NGF)로부터 이전된 AUD 7,150만의 제한자본과 ASX Clearing Corporation으로부터의 후순위대출이 포함된다.
+
+**ASX Clear (Futures) 손실부담순서:**
+
+| 순서 | 설명 | 규모 (대략) |
+|------|------|-----------|
+| 1 | 부도자의 증거금 (개시증거금 + 변동증거금) | 변동 |
+| 2 | 부도자의 공동기금 출연분 | AUD 2억 참가자 풀의 비례 배분분 |
+| 3 | ASX 자본 -- 1차 (SITG) | AUD 4억 5,000만 ASX 자본의 일부 |
+| 4 | 비부도참가자의 공동기금 출연분 -- 1차 | AUD 2억 참가자 풀의 일부 |
+| 5 | ASX 자본 -- 2차 | AUD 4억 5,000만 ASX 자본의 일부 |
+| 6 | 비부도참가자의 공동기금 출연분 -- 2차 | AUD 2억 참가자 풀의 잔여분 |
+| 7 | ASX 자본 -- 3차 | **AUD 1억 8,000만** |
+| 8 | 비부도참가자에 대한 회복 추가분담금 | 부도당 최대 **AUD 2억** (복수 부도 시 최대 AUD 6억) |
+| 9 | 지급 차감 (변동증거금 차감) | 손실 배분을 위해 지급금 축소 |
+| 10 | 계약 해제 / 부분 청산종결 | 필요 시 |
+
+**ASX Clear (Futures) 공동기금 총액:** **AUD 6억 5,000만** 사전 충당
+- ASX 자본 출연: AUD 4억 5,000만 (3개 트랜치)
+- 참가자 출연: AUD 2억 (2개 트랜치, 선물 및 OTC 상품 혼합)
+
+**열후순위화(Juniorisation) 메커니즘:** 부도자 포트폴리오 경매 과정에서, 참가자의 공동기금 출연분은 경매 입찰 규모에 따른 순서로 적용된다 -- 경매 낙찰자의 출연분이 가장 마지막에 적용(최우선 보호)되고, 최저 입찰자의 출연분이 가장 먼저 적용된다. 이는 부도 관리 경매에서 적극적 입찰을 유도하는 인센티브이다.
+
+**타 CCP와의 비교:**
+
+| CCP | 공동기금 총액 | ASX 자본 (SITG) | 참가자 출연분 |
+|-----|------------|----------------|-------------|
+| ASX Clear (현물) | AUD 2억 5,000만 | AUD 2억 5,000만 (100%) | AUD 0 |
+| ASX Clear (Futures) | AUD 6억 5,000만 | AUD 4억 5,000만 (69%) | AUD 2억 (31%) |
+| CME Clearing (Base) | ~USD 48억 | USD 1억 | ~USD 47억 |
+| LCH Ltd (SwapClear) | ~GBP 60억+ | GBP 3,500만+ | ~GBP 60억 |
+
+ASX의 모델은 수직통합 소유 모델을 반영하여, 참가자 출연분 대비 CCP가 충당한 자원의 비율이 매우 높다는 점이 특징적이다.
+
+[Source: RBA Standard 12, 2016/17 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2016-2017/asx-central-counterparties/standard-12.html]
+[Source: RBA Standard 12, 2015/16 Assessment of ASX Clear (Futures), https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2015-2016/asx-clear-futures/standard-12.html]
+[Source: FIA, "FIA supports ASX default management proposals", https://www.fia.org/fia/articles/fia-supports-asx-default-management-proposals]
+
+### 3.4 공동기금 (Default Fund / Guarantee Fund)
+
+**ASX Clear:**
+- 총 규모: **AUD 2억 5,000만** (100% ASX 충당)
+- 참가자의 공동기금 출연 없음
+- 대신 공동기금 소진 시 참가자에 대한 회복 추가분담금 부과 가능(최대 AUD 3억)
+- 추가 비상자원: 공동기금 이외 **AUD 3억** 가용 [미확인 -- 비상자원의 정확한 구조]
+- 검토 주기: ASX에 의해 주기적으로 검토되며 RBA가 연간 평가
+
+**ASX Clear (Futures):**
+- 총 규모: **AUD 6억 5,000만** 사전 충당
+- ASX 자본: AUD 4억 5,000만 (3개 트랜치)
+- 참가자 출연: AUD 2억 (2개 트랜치)
+- 출연 방법론: 참가자 출연분은 CCP에 가져오는 리스크에 비례(개시증거금 요건 기반)
+- 선물 및 OTC 파생상품 상품 간 혼합
+- 검토 주기: 주기적 검토; RBA 연간 평가
+- 보충: 부도 발생 및 22영업일 냉각기간 후, ASX Clear (Futures) AUD 4억, ASX Clear AUD 1억 5,000만까지 공동기금 보충
+
+[Source: RBA 2024/25 Assessment of ASX Clearing and Settlement Facilities]
+[Source: ASX PFMI Disclosure Framework]
+
+### 3.5 스트레스 테스트 및 사후검증 (Stress Testing & Back-testing)
+
+**신용 스트레스 테스트 (Credit Stress Testing, CST):**
+
+- 양 CCP 모두 재무 자원의 적정성을 평가하기 위해 일일 **신용 스트레스 테스트**를 실시
+- **Cover 2 기준:** ASX Clear (Futures)는 극단적이나 현실적인 시장 상황에서 최대 익스포저를 가진 2개 참가자의 부도를 커버하도록 재무 자원 규모를 산정(PFMI 원칙 4와 일치)
+- ASX Clear도 공동기금 규모 산정에 Cover 2 기준을 적용
+
+**스트레스 테스트 방법론:**
+
+| 시나리오 유형 | 설명 |
+|-------------|------|
+| 역사적 | 관찰된 시장 사건 기반 (예: 2008년 GFC, 2020년 3월 코로나19) |
+| 가설적 | ASX 리스크 관리팀이 구성한 극단적이나 현실적인 시나리오 |
+| 이론적 | 수학적/통계적 극단 시나리오 |
+| 변동성 스큐 (3단계, 2024년 9월) | 외가격 지수 및 주식 옵션에 대한 주식 변동성 스큐를 반영하는 스케일링 팩터 |
+| 특정 역방향리스크 (2024년 11월) | 역방향리스크 익스포저를 다루기 위한 추가 시나리오 |
+
+**사후검증 (Back-testing):**
+- 증거금율의 적정성을 평가하기 위한 정기적 증거금 모델 사후검증
+- 보유 증거금과 실제 포트폴리오 손실 비교
+
+**RBA 우려사항 (2024/25 평가):**
+- RBA는 평가 기간 중 "ASX의 재무리스크 모델에서 확인된 문제의 수에 실망"한다고 밝힘
+- **ASX의 신용 스트레스 테스트에서 오류가 발견되어**, 양 CCP의 신용리스크 기준을 "일부 준수(partly observed)"로 하향
+- RBA는 ASX가 **모델 검증 및 통제 테스트 체계**, 특히 데이터 및 보고 통제의 개선을 우선시할 것을 기대
+
+[Source: ASX Clear Credit Stress Test methodology, August 2024, https://asxonline.com/content/asxonline/public/notices/2024/august/0954.24.08.html]
+[Source: ASX Clear Credit Stress Test parameters, March 2024, https://www.asxonline.com/content/asxonline/public/notices/2024/march/0226.24.03.html]
+[Source: RBA 2024/25 Assessment Executive Summary, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/executive-summary.html]
+
+### 3.6 회복 및 정리 (Recovery & Resolution)
+
+**회복 수단:**
+
+ASX Clear 및 ASX Clear (Futures)는 모두 공식적인 **ASX 회복 규칙**(2017년 11월 시행, 이후 개정)을 보유하며, 다음과 같은 수단을 제공한다:
+
+| 수단 | ASX Clear | ASX Clear (Futures) |
+|------|-----------|-------------------|
+| **회복 추가분담금** | 1회 또는 복수 부도에 대해 최대 AUD 3억 | 부도당 최대 AUD 2억; 특정 부도 기간 내 복수 부도 시 최대 AUD 6억 |
+| **변동증거금 차감** | **불가** -- 현물주식에서 변동증거금은 파생상품과 다른 방식으로 적용됨 (손실 시 징수하나 이익 시 동일 방식으로 지급하지 않음) | **가능** -- ASX Clear (Futures)는 손실 배분을 위해 참가자에 대한 지급금을 축소(차감)할 수 있음 |
+| **부분 해제 (Partial Tear-up)** | 가능 -- 매칭 장부 복원을 위한 일부 미결제 계약의 강제 해제 | 가능 |
+| **완전 해제 (Complete Termination)** | 가능 -- 결제 지급금 차감과 함께 모든 미결제 계약 해제 | 가능 |
+| **경매 / 부도 관리** | ASX가 부도자의 포트폴리오를 경매할 수 있음 | ASX가 부도자의 포트폴리오를 경매할 수 있음; 열후순위화 메커니즘이 입찰을 유도 |
+
+**정리 기관 (Resolution Authority):**
+- 호주는 현재 EU의 CCP 회복 및 정리 규정(CCPRRR) 또는 미국의 도드-프랭크법 Title II에 상당하는 전용 CCP 정리 체계를 보유하고 있지 않다
+- RBA와 ASIC가 **회사법 2001** 및 **호주준비은행법 1959**의 기존 권한 하에서 정리 조치를 조정
+- 금융규제위원회(CFR)는 전용 CCP 정리 체계의 필요성을 검토하였으나, 2026년 현재 공식 입법은 이루어지지 않았다 [미확인]
+
+[Source: ASX Recovery Rules Handbook, https://www.asx.com.au/content/dam/asx/rules-guidance-notes-waivers/asx-recovery-rules/asx-recovery-rules-handbook.pdf]
+[Source: ASX Recovery and Resolution, https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear/risk-management/recovery-and-resolution]
+[Source: RBA Special Topic on Default Management and Recovery, 2019/20, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2019-2020/special-topic-default-management-and-recovery.html]
+[Source: RBA Recovery and Resolution Bulletin, December 2013, https://www.rba.gov.au/publications/bulletin/2013/dec/5.html]
+
+---
+
+## 4. 결제 (Settlement)
+
+### 4.1 결제주기 (Settlement Cycle)
+
+| 상품 | 결제주기 | 비고 |
+|------|---------|------|
+| 현물주식 | **T+2** | 2016년 3월 이후 표준 주기 (T+3에서 이행) |
+| 주식옵션 (ETO) | T+1 (프리미엄); 행사결제는 상이 | 프리미엄 T+1 납부; 행사결제는 기초자산 주식 주기를 따름 |
+| 국채 (Austraclear) | T+2 | Austraclear RTGS를 통한 결제 |
+| 선물 | 일일 시가평가 (변동증거금); 최종결제는 계약별 상이 | 대부분의 금융선물은 실물결제 없음 |
+| OTC 파생상품 | 일일 변동증거금; 만기결제는 계약에 따름 | |
+
+**T+1 전환 계획:**
+- ASX는 2024년 4월 산업 백서를 발행; T+1 작업반이 2023년 12월 설립
+- 업계 합의: T+1은 바람직하나 CHESS 교체가 완료될 때까지 진행해서는 안 됨
+- 확정된 T+1 시행일 없음; 최조 가능 일정은 **2029년 이후** (CHESS Phase 2 납품 이후)
+- 국제 동향: 미국은 2024년 5월 T+1 이행; EU는 2027년 목표; 영국은 2027년 목표
+
+[Source: ASX T+1 Settlement Cycle, https://www.asx.com.au/markets/clearing-and-settlement-services/t1-settlement-cycle]
+
+### 4.2 DVP 모델 (DVP Model)
+
+**ASX Settlement (CHESS) -- 현물주식:**
+- **BIS DVP Model 3:** 다자간 순액 배치 결제
+- 특정 영업일에 만기인 모든 거래의 결제가 **단일 일일 배치**로 약 **AEST 12:30**에 완료
+- 증권 및 자금 의무가 순액 기준으로 동시 결제
+- CHESS에는 DVP Model 1 (건별 RTGS 결제) 기능도 있으나, 현재 어떤 결제참가자도 **사용하지 않음**
+
+**Austraclear -- 채권:**
+- **BIS DVP Model 1:** 실시간으로 건별 자산(자금 및 증권) 동시 교환
+- 은행간 자금 요소는 RBA의 Exchange Settlement Account (ESA)를 통해 RITS (Reserve Bank Information and Transfer System) **실시간총액결제(RTGS)**로 결제
+- 중앙은행 화폐로 결제
+
+**KRX/KSD와의 비교:** KSD는 국채에 대해 DVP Model 1을 사용하며(BOK-Wire+를 통한 실시간 결제), 주식에 대해서는 DVP Model 2/3 조합을 사용한다(다자간차감과 당일 결제). ASX의 주식 단일 일일 배치(DVP Model 3)는 일부 아시아 시장보다 세분화 수준이 낮으나 높은 차감 효율성을 제공한다.
+
+[Source: RBA Standard 10, 2017/18 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2017-2018/asx-securities-settlement-facilities/standard-10.html]
+[Source: RBA Standard 7, 2017/18 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2017-2018/asx-securities-settlement-facilities/standard-07.html]
+
+### 4.3 결제완결성 (Settlement Finality)
+
+- **법적 근거:** Payment Systems and Netting Act 1998 (PSN Act) -- 승인된 RTGS 시스템을 통한 지급 및 자산 이전에 대한 법적 보호 제공
+- **CHESS:** RBA가 CHESS를 PSN Act에 따른 승인된 RTGS 시스템으로 선언하여, 도산법에 따른 취소 또는 무효화로부터 보호
+- **완결성 시점 (CHESS):** 일일 배치 결제 과정 완료 시(~AEST 12:30) 결제가 최종적이며 취소 불가
+- **Austraclear:** 역시 승인된 RTGS 시스템; 증권 기록 변경 및 RITS의 자금 이전 확인 시 결제 완결
+- **불가역성:** 결제가 완료되면 참가자의 도산 발생 시에도 번복 불가
+
+[Source: RBA Standard 7: Settlement Finality, 2017/18 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2017-2018/asx-securities-settlement-facilities/standard-07.html]
+
+### 4.4 CSD / 결제 인프라 (CSD / Settlement Infrastructure)
+
+| 시스템 | 기능 | 상세 |
+|--------|------|------|
+| **CHESS** (Clearing House Electronic Subregister System) | 현물주식 CSD 및 결제 시스템 | 1996년 출시; 모든 ASX 상장 증권의 결제, 부등기부 및 기업활동 처리; ASX Settlement Pty Limited로 운영 |
+| **ASX Settlement** | 결제시설 면허 보유자 | 회사법 2001에 따른 면허 보유; CS facility 면허 보유 |
+| **Austraclear** | 채권 CSD 및 국채 예탁기관 | 고정수익 상품의 결제 및 등기부 관리; RITS를 통한 RTGS 사용 |
+| **현금 결제** | **중앙은행 화폐** (RBA의 RITS/ESA를 통해) | CHESS와 Austraclear 모두 RBA의 Exchange Settlement Account를 통해 현금 구간 결제 -- 최고 수준의 안전성을 제공하는 중앙은행 화폐 결제 |
+
+**부등기부로서의 CHESS:** 호주 시장의 독특한 특징은 CHESS가 증권 보유에 대한 전자 부등기부(subregister) 역할을 한다는 것이다. 별도의 주식등기부 시스템을 두는 대신, CHESS는 "CHESS 후원(CHESS-sponsored)"된 모든 보유분(즉, HIN -- Holder Identification Number 하에서 CHESS 시스템에 보유된 것)에 대한 부등기부를 유지한다. 이는 CSD/예탁 기능이 주식등기부와 분리된 대부분의 다른 시장과 차별화된다.
+
+[Source: ASX Clearing and Settlement Services, https://www.asx.com.au/markets/clearing-and-settlement-services]
+
+### 4.5 CSD 연계 (CSD Linkages)
+
+| 연결 CSD/ICSD | 연결 유형 | 상품 |
+|--------------|----------|------|
+| NZX / NZ Clearing Limited | 국경 간 청산 연결 | ASX Clear (Futures)가 청산하는 NZX 거래 상품 |
+
+ASX는 Euroclear 또는 Clearstream 등 국제 CSD/ICSD와의 광범위한 CSD 연계를 유지하지 않는다. 호주 증권은 주로 CHESS 내에서 국내적으로 보유된다. 국제 투자자는 통상 직접 CSD 연결보다는 수탁은행 또는 명의인(nominee) 약정을 통해 호주 시장에 접근한다.
+
+[Source: ASX PFMI Disclosure Framework]
+
+### 4.6 증권대차 (Securities Lending & Borrowing)
+
+- **시설 제공:** ASX Collateral을 통해 가능
+- **ASX Collateral** 제공 서비스:
+  - 증권대차, CSA 증거금, ASX Clear (Futures) CCP 증거금을 포함한 다양한 익스포저 유형의 담보 설정 및 유지를 위한 **무상이전(Free of Payment, FoP) 메커니즘**
+  - 증권대차를 포함한 증권 대 증권 거래의 원본 결제를 위한 **증권 대 증권 인도(Delivery versus Delivery, DvD) 메커니즘**
+- 호주의 증권대차 시장은 주로 기관 참가자 간 OTC 쌍무적 시장이며, 수탁은행 및 프라임브로커가 촉진
+- ASX의 역할은 중앙집중형 대차 시설을 운영하는 것이 아니라 주로 증권대차 거래의 결제 인프라 제공
+
+[Source: ASX Collateral, https://www.asx.com.au/markets/clearing-and-settlement-services/collateral-services]
+
+---
+
+## 5. 기술 및 인프라 (Technology & Infrastructure)
+
+### 5.1 시스템 개요 (System Overview)
+
+| 시스템 | 기능 | 기술 | 상태 |
+|--------|------|------|------|
+| **CHESS** | 현물주식 결제, 부등기부 및 청산 | 레거시 메인프레임 기반 시스템 (1996년 출시) | 교체 진행 중 -- Release 1 (청산) 2026년 4월 20일 가동 목표 |
+| **Genium INET Clearing** | ASX Clear (Futures)의 장내거래 파생상품 청산 | NASDAQ Genium INET 플랫폼 | 2014년 5월 이후 운영 (SECUR 시스템 대체) |
+| **Calypso** | OTC 금리 파생상품 청산 | Calypso Technology 플랫폼 | ClearStar 프로그램 하 v18로 업그레이드 (2025년 5월) |
+| **DCS (Derivatives Clearing System)** | ASX Clear의 레거시 주식 파생상품 청산 | | 현대화 진행 중 |
+| **ASX Trade** | 현물주식 매매 플랫폼 | NASDAQ Genium INET | 2010년 11월 이후 운영 |
+| **ASX 24** | 파생상품 매매 플랫폼 | NASDAQ Genium INET | 2010년 10월 이후 운영 |
+
+### CHESS 교체 프로젝트 (주요 사안)
+
+CHESS 교체는 글로벌 거래소 역사상 가장 중요하면서도 난항을 겪은 기술 프로젝트 중 하나이다:
+
+**1단계 -- DLT/블록체인 접근 (2015-2022):**
+- 2015: ASX, CHESS 교체를 위해 Digital Asset Holdings (DA)를 DLT 탐색 파트너로 선정
+- 2017: ASX, DA의 분산원장 기술을 활용한 CHESS 교체를 공식 발표
+- 2018-2022: 반복적 지연 -- 가동일이 2020년에서 2021년, 2022년, 2023년으로 연기
+- 2022년 11월: 독립적인 Accenture 검토 결과 소프트웨어가 63% 완성에 불과하고 일정이 불확실하며 설계가 과도하게 복잡하다는 결론에 따라 ASX가 DLT 프로젝트 포기
+- 재무적 영향: **~AUD 2억 5,000만 손실 처리**
+- 2024년 8월: **ASIC, ASX를 상대로 연방법원 소송 개시**, DLT 프로젝트의 진행 상황에 대한 허위 기재(특히 2022년 2월 프로젝트가 "순조롭게 진행 중"이며 "양호한 진전"이라는 주장) 혐의
+
+**2단계 -- TCS와의 기존 기술 방식 (2023-현재):**
+- 2023년 11월: ASX, 신규 구현 파트너로 **Tata Consultancy Services (TCS)** 선정
+- 아키텍처: 기존 기술 기반 모듈형, 클라우드 기반 플랫폼
+- **Release 1 (청산):** 가동 목표 **2026년 4월 20일**; 예상 비용 AUD 1억 500만~1억 2,500만; CHESS의 청산 구성요소 교체; 보다 효율적인 차감 프로세스 및 거래 등록용 FIX 메시징 도입
+- **Release 2 (결제 및 부등기부):** **2029년** 목표; 예상 비용 AUD 2억 7,000만~3억 2,000만; 잔여 CHESS 기능 교체
+- 2026년 3월: ASX, CHESS Release 1 전환 실행계획서(Cutover Runbook) 및 진행 업데이트 공개; 일정 준수 진행 중
+
+### ClearStar 프로그램 (ClearStar Program)
+
+ClearStar 프로그램은 6년에 걸쳐 ASX 파생상품 청산 서비스의 기술 기반을 현대화하고 교체하는 프로젝트 포트폴리오이다:
+- **OTC 청산 (Calypso 업그레이드):** Calypso v13에서 v18로 업그레이드; 2025년 5월 26일 납품
+- **장내거래 파생상품 선물 청산:** 프로그램의 일부로 플랫폼 업그레이드 계획
+- 목표: 운영 효율성 개선, 리스크 관리 역량 강화, 청산 인프라 현대화
+
+[Source: ASX CHESS Project, https://www.asx.com.au/markets/clearing-and-settlement-services/chess-project]
+[Source: ASX ClearStar Program, https://www.asx.com.au/markets/clearing-and-settlement-services/clearstar-program]
+[Source: WatersTechnology, "ASX CHESS replacement to be delivered in phases", https://www.waterstechnology.com/trading-tech/7951687/asx-chess-replacement-to-be-delivered-in-phases-with-clearing-first-in-2026]
+[Source: The Fintech Times, "Blockchain Project Gone Wrong: ASIC Takes ASX to Court", https://thefintechtimes.com/blockchain-project-gone-wrong-asic-takes-asx-to-court-over-chess-replacement/]
+
+### 5.2 인터페이스 프로토콜 (Interface Protocols)
+
+| 프로토콜 | 용도 |
+|---------|------|
+| **SWIFT (FIN/ISO 15022)** | Austraclear 결제 메시징에 사용 |
+| **ISO 20022** | CHESS 교체 및 광범위한 산업 현대화의 일환으로 채택 중 |
+| **FIX 프로토콜** | CHESS Release 1에서 거래 등록용 FIX 메시징 도입; ASX Trade 주문 입력에도 사용 |
+| **CHESS EIS (External Interface Specification)** | CHESS용 독자 메시징 프로토콜 -- 결제 및 청산참가자가 사용 |
+| **OUCH / ITCH** | ASX Trade용 초저지연 프로토콜 (매매용, 청산용 아님) |
+
+### 5.3 복원력 (Resilience)
+
+- **데이터센터:** Australian Liquidity Centre (ALC), 고어힐, 시드니 -- 전용 Tier III 금융시장 데이터센터
+- **DR 사이트:** ASX는 재해복구용 보조 데이터센터 운영 [구체적 위치 비공개]
+- **RTO / RPO:** 핵심 시스템 RTO 목표 2시간; 구체적 RPO 비공개
+- **가동률 SLA:** 비공개; 다만 운영 장애는 RBA에 보고
+
+**중대 우려 -- 2024년 12월 CHESS 장애:**
+- 2024년 12월 20일, **2014년에 도입된 메모리 할당 코딩 오류**로 CHESS 배치 결제가 실패
+- 해당 오류는 특정 조건이 발동할 때까지 10년간 미감지
+- 모든 결제가 다음 주 월요일로 연기되어 호주 전체 현물주식 시장에 혼란 초래
+- 이 사건으로 RBA는 ASX Clear 및 ASX Settlement의 운영리스크 기준을 **"미준수(not observed)"** -- 가능한 최저 등급 -- 으로 하향
+- RBA는 이 사건이 "ASX의 리스크 관리에 대한 우려를 재확인시켰으며, 아직 수행해야 할 상당한 작업이 있음을 보여준다"고 밝힘
+
+[Source: RBA Out-of-cycle Assessment, March 2025, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/march/]
+
+---
+
+## 6. 규제 체계 (Regulatory Framework)
+
+### 6.1 감독 기관 (Supervising Authority)
+
+| 기관 | 역할 |
+|------|------|
+| **ASIC** (호주증권투자위원회) | 주요 감독기관 -- 시장 감시, 시장 운영자 및 참가자 인가, 시장 건전성 규칙 집행, 소비자 보호; 2025년 6월 ASX 그룹에 대한 공식 조사 착수 |
+| **RBA** (호주준비은행) | **금융안정성기준(Financial Stability Standards, FSS)** 하에서 청산 및 결제시설 면허 보유자 감독; ASX Clear, ASX Clear (Futures), ASX Settlement, Austraclear를 연간 평가; 시스템 리스크 및 금융 안정성에 초점 |
+| **CFR** (금융규제위원회) | RBA, ASIC, APRA, 재무부로 구성된 조정 기구; 금융 시스템 안정성 감독 |
+| **APRA** (호주건전성감독청) | 청산참가자인 ADI를 규제; 은행 참가자의 CCP 익스포저에 대한 자본요건 설정 |
+
+### 6.2 주요 규정 (Key Regulations)
+
+- **회사법 2001 (Cth):** Part 7.3 -- 청산 및 결제시설 면허; Part 7.3A -- CS 시설 규칙
+- **금융안정성기준 (FSS):** 회사법 제827D조에 따라 RBA가 설정; CPMI-IOSCO PFMI 원칙에 기반
+- **Payment Systems and Netting Act 1998:** 결제완결성 보호 제공
+- **ASIC CS Services Rules 2025:** 청산 및 결제 서비스 가격에 대한 새로운 규제 체계; ASX의 현물주식 청산 및 결제 독점적 지위를 반영한 **수익상한(revenue-capping) 방법론** 도입
+- **ASX Clear Operating Rules / ASX Clear (Futures) Operating Rules:** 청산 참여, 증거금, 부도 관리 규율
+- **ASX Recovery Rules:** 추가분담금 부과, 차감 및 계약 해제를 포함한 회복 수단 규율
+
+### 6.3 PFMI 준수 (PFMI Compliance)
+
+**RBA 2024/25 평가 (2025년 9월) -- 준수 등급:**
+
+| 기준 | ASX Clear | ASX Clear (Futures) |
+|------|-----------|-------------------|
+| 거버넌스 | 일부 준수 (Partly Observed) | 일부 준수 |
+| 종합적 리스크 관리 체계 | 일부 준수 | 일부 준수 |
+| 신용리스크 | **일부 준수** (하향 -- 신용 스트레스 테스트 오류) | **일부 준수** (하향) |
+| 운영리스크 | **미준수 (Not Observed)** (하향 -- 2024년 12월 CHESS 장애) | 일부 준수 |
+| 결제완결성 | 일부 준수 (ASX Settlement) | 해당 없음 |
+
+ASX 청산 및 결제시설 전반에 걸쳐 5개 FSS 기준이 "일부 준수" 또는 "미준수"로 평가되었다 -- 전례 없는 수준의 규제 우려이다.
+
+RBA는 "ASX의 재무리스크 모델에서 확인된 문제의 수에 실망"한다고 밝히고, ASX가 모델 검증 및 통제 테스트 체계의 개선을 우선시할 것을 기대한다고 밝혔다.
+
+### 6.4 보고 요건 (Reporting Requirements)
+
+- **PQD (Public Quantitative Disclosures):** 양 CCP 모두 신용리스크, 증거금, 담보, 유동성리스크, 부도 절차 등을 포함한 분기별 CPMI-IOSCO PQD 데이터 발행
+- **PFMI Disclosure Framework:** 정성적 자기평가 발행 및 주기적 업데이트
+- **RBA 연간 평가:** 금융안정성기준 준수에 대한 포괄적 연간 검토
+- **재무보고:** 청산참가자는 자본적정성 모니터링을 위해 ASX에 정기 재무보고 제출
+
+[Source: RBA 2024/25 Assessment Overview of Ratings, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/overview-of-ratings-recommendations-and-areas-of-supervisory-focus.html]
+[Source: RBA Media Release MR-25-25, September 2025, https://www.rba.gov.au/media-releases/2025/mr-25-25.html]
+[Source: ASX Regulatory Compliance, https://www.asx.com.au/regulation/regulatory-compliance/cpss-iosco.htm]
+
+---
+
+## 7. 상호운용성 (Interoperability)
+
+### 7.1 CCP 상호운용 약정 (CCP Interoperability Arrangements)
+
+ASX Clear 및 ASX Clear (Futures)는 어떠한 CCP 상호운용 약정에도 **참여하지 않는다**. 이는 ASX의 현물주식 청산에 대한 수직통합 독점 모델의 직접적 결과이다 -- 호주 현물주식에 대한 경쟁 CCP가 없으므로 상호운용성이 필요하지 않았다.
+
+호주 정부는 주기적으로 청산 경쟁 도입을 검토하였으나(예: 2015년 재무부의 호주 현물주식 청산 경쟁 검토), 경쟁 CCP가 인가된 적은 없다.
+
+### 7.2 국경 간 약정 (Cross-border Arrangements)
+
+| 약정 | 상세 |
+|------|------|
+| **ESMA 인가** | 양 CCP 모두 EU EMIR에 따른 제3국 CCP로 인가(2015년 4월 27일 발효) -- EU 소재 참가자가 우대 자본 취급을 받으며 ASX CCP를 이용 가능 |
+| **APRA QCCP 인정** | 양 CCP 모두 APS 112에 따른 적격중앙청산소로 확인 -- 호주 ADI가 우대 리스크 가중치를 적용 가능 |
+| **NZX 청산** | ASX Clear (Futures)가 국경 간 약정에 따라 NZX 거래 상품의 청산 서비스 제공 |
+
+**KRX와의 비교:** KRX도 CCP 상호운용 약정에 참여하지 않는다. ASX와 KRX 모두 각각의 국내 시장에서 독점 CCP로 운영되며, 이는 해당 지역의 집중된 시장 구조를 반영한다.
+
+[Source: ESMA list of recognised third-country CCPs, https://www.esma.europa.eu/sites/default/files/library/third-country_ccps_recognised_under_emir.pdf]
+
+---
+
+## 8. 수수료 (Fees)
+
+### 8.1 청산 수수료 (Clearing Fees)
+
+**ASX Clear (현물주식) -- 2025년 7월 1일 시행:**
+
+| 수수료 유형 | 구조 | 비고 |
+|------------|------|------|
+| 청산 수수료 | 청산 금액 기준 종가세(ad valorem) | ASIC CS Services Rules 2025에 따른 새로운 **수익상한(revenue-capping) 가격 정책** 적용 |
+| 수익상한 정책 | ASX의 현물주식 청산, 결제 및 발행인 서비스 수익이 효율적 서비스 제공에 필요한 금액과 합리적 수익률로 제한 | ASX의 독점적 지위 반영; 기존 수익분배 방식 폐지 |
+
+**ASX Clear (Futures) -- 2025년 6월 30일 시행 수수료표:**
+
+| 수수료 유형 | 구조 | 비고 |
+|------------|------|------|
+| 선물 청산 수수료 | 상품 유형별 계약당(per-lot) 수수료 | ASX 24 및 ASX Clear (Futures) 수수료표에 게시 |
+| OTC 청산 수수료 | 명목금액 기반 및/또는 거래건당 | 상품 유형(IRS, 베이시스 스왑 등)별 상이 |
+| 증거금 이자 | 현금 증거금 잔액에 대한 이자 수취/지급 | ASX 웹사이트에 상세 게시 |
+
+### 8.2 회원 수수료 (Membership Fees)
+
+- 청산참가자 신청 수수료 및 지속적 참여 수수료 적용
+- 구체적 수수료 금액은 ASX Clear 및 ASX Clear (Futures) 수수료표에 기재
+- 수수료는 주기적으로 검토되며 새로운 ASIC CS Services Rules 2025에 따른 규제 감독 대상
+
+[Source: ASX Clearing and Settlement Schedule of Fees, 1 July 2025, https://asxonline.com/content/dam/asxonline/public/documents/schedule-of-fees/asx-clearing-and-settlement-schedule-of-fees.pdf]
+[Source: ASX 24 and ASX Clear (Futures) Schedule of Fees, https://asxonline.com/content/dam/asxonline/public/documents/schedule-of-fees/asx-24-and-asx-clear-futures-schedule-of-fees.pdf]
+[Source: ASX Clearing Services and Pricing, https://www.asx.com.au/about/regulation/clearing-and-settlement-of-cash-equities-in-australia/clearing/clearing-services-and-pricing]
+
+---
+
+## 9. 최근 동향 (Recent Developments)
+
+### CHESS 교체 사가 (2015-2026)
+
+실패한 CHESS 교체 프로젝트는 글로벌 거래소 역사상 가장 중대한 기술 실패 사례 중 하나이다. 전체 상세 내용은 5.1절 참조.
+
+**현재 상태 (2026년 4월 기준):**
+- **CHESS Release 1 (청산):** **2026년 4월 20일** 가동 예정; 2026년 3월 13일 전환 실행계획서(cutover runbook) 공개; 일정 준수 진행 중
+- **CHESS Release 2 (결제 및 부등기부):** **2029년** 목표; 예상 비용 AUD 2억 7,000만~3억 2,000만
+- **ASIC 연방법원 소송:** ASIC가 2024년 8월 DLT 프로젝트에 대한 허위 기재 혐의로 ASX를 상대로 소송 개시; 진행 중
+
+### 2024년 12월 CHESS 결제 장애 (December 2024 CHESS Settlement Failure)
+
+- **2024년 12월 20일:** 2014년에 도입된 메모리 할당 코딩 오류로 CHESS 배치 결제 실패
+- 오류가 10년간 미감지; 모든 결제가 다음 주 월요일로 연기
+- **2025년 3월:** RBA와 ASIC가 ASX의 운영리스크 관리에 대한 "깊은 우려"를 표명하는 공동 서한 발송
+- RBA의 운영리스크 "미준수(not observed)" 하향으로 귀결
+
+### ASIC ASX 그룹 조사 (2025-2026)
+
+- **2025년 6월:** ASIC, 모든 면허 보유 법인에 대한 거버넌스, 역량, 리스크 관리를 포괄하는 ASX 그룹 공식 조사 착수
+- **2025년 12월:** ASIC, 중간 보고서에 기반하여 금융시장 보호를 위한 "변혁적 패키지" 발표
+- **2026년 3월:** ASIC, 관찰 사항 및 변화 권고를 담은 ASX 조사 패널 최종 보고서 발행
+
+### RBA 2024/25 평가 (2025년 9월)
+
+5개 FSS 기준이 "일부 준수" 또는 "미준수"로 평가 -- 전례 없는 수준의 규제 우려:
+- 신용리스크 기준 **일부 준수**로 하향 (신용 스트레스 테스트 오류)
+- 운영리스크 기준 **미준수**로 하향 (2024년 12월 CHESS 장애)
+- 거버넌스 및 종합적 리스크 관리 체계도 **일부 준수** 평가
+
+### ClearStar 프로그램 -- 기술 현대화 (ClearStar Program)
+
+- **Calypso OTC 업그레이드:** v13에서 v18으로, 2025년 5월 26일 납품; ClearStar 하 첫 번째 주요 납품
+- **선물 청산 플랫폼:** 다년간 프로그램의 일부로 업그레이드 계획
+- 6년에 걸친 파생상품 청산 인프라 현대화 프로그램
+
+### ASIC CS Services Rules 2025
+
+- ASX의 현물주식 청산, 결제 및 발행인 서비스에 대한 **수익상한(revenue-capping) 가격 방법론**을 도입하는 새로운 규제 체계
+- 호주 현물주식 사후거래 서비스에서의 ASX 독점적 지위 반영
+- 수익분배 방식 폐지; 서비스 비용 + 합리적 수익률 모델로 대체
+- 2025년 7월 시행
+
+### 증거금 모델 업데이트 (2025-2026)
+
+- ASX Clear (Futures): 스트레스 테스트 계산에 미납 증거금을 반영하는 변경; 2025년 9월까지 확정 예정
+- ASX Clear: 유사한 변경 2026년 6월까지 예정
+- ASX Clear 현물시장 증거금(CMM) 방법론 2025년 8월 재보정; 평균 HSVaR 증거금 12% 인상
+
+### 기타 동향
+
+- **토큰화 국채 결제:** ASX, 2026년 3월 파일럿 출시
+- **T+1 결제:** 검토 중이나 CHESS 교체 완료 시까지 연기; 최조 가능 일정 2029년 이후
+- **제3자 청산 자본요건:** ASX, 2026년 1월 협의서 발행
+
+[Source: RBA 2024/25 Assessment, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/executive-summary.html]
+[Source: ASIC ASX Inquiry, https://www.asic.gov.au/regulatory-resources/markets/inquiry-into-asx/]
+[Source: ASIC MR 26-059MR, https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-059mr-asic-publishes-asx-inquiry-panel-final-report-and-acknowledges-observations/]
+
+---
+
+## 출처 (Sources)
+
+1. [ASX Clearing and Settlement Services](https://www.asx.com.au/markets/clearing-and-settlement-services) -- ASX Clear, ASX Clear (Futures), ASX Settlement, Austraclear 개요
+2. [ASX Clear (Futures)](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear-futures) -- 상품, 서비스 및 리스크 관리
+3. [ASX Clear Risk Management -- Margining](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear/risk-management/margining) -- 증거금 방법론 상세
+4. [ASX Clear Recovery and Resolution](https://www.asx.com.au/markets/clearing-and-settlement-services/asx-clear/risk-management/recovery-and-resolution) -- 회복 수단 및 규칙
+5. [ASX Recovery Rules Handbook](https://www.asx.com.au/content/dam/asx/rules-guidance-notes-waivers/asx-recovery-rules/asx-recovery-rules-handbook.pdf) -- 공식 회복 규칙 문서
+6. [ASX PFMI Disclosure Framework](https://www.asx.com.au/content/dam/asx/about/pfmi-disclosure-framework.pdf) -- CPMI-IOSCO 정성적 공시
+7. [ASX CHESS Project](https://www.asx.com.au/markets/clearing-and-settlement-services/chess-project) -- CHESS 교체 현황 및 문서
+8. [ASX ClearStar Program](https://www.asx.com.au/markets/clearing-and-settlement-services/clearstar-program) -- 파생상품 청산 기술 현대화
+9. [RBA 2024/25 Assessment of ASX Clearing and Settlement Facilities](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/asx/) -- 포괄적 규제 평가 (2025년 9월)
+10. [RBA Assessment Executive Summary 2024/25](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/executive-summary.html) -- 등급 및 우려사항 요약
+11. [RBA Overview of Ratings 2024/25](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/overview-of-ratings-recommendations-and-areas-of-supervisory-focus.html) -- 상세 준수 등급
+12. [RBA Out-of-cycle Assessment (March 2025)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2024-2025/march/) -- 2024년 12월 CHESS 장애 대응
+13. [RBA Special Topic on Default Management and Recovery (2019/20)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2019-2020/special-topic-default-management-and-recovery.html) -- 손실부담순서 및 회복 분석
+14. [RBA Special Topic on Margin (2021/22)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2021-2022/special-topics-margin.html) -- 증거금 방법론 검토
+15. [RBA Standard 12: Participant Default (2016/17)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2016-2017/asx-central-counterparties/standard-12.html) -- 손실부담순서 상세
+16. [ASIC Inquiry into ASX](https://www.asic.gov.au/regulatory-resources/markets/inquiry-into-asx/) -- 2025-2026 조사
+17. [ASIC MR 26-059MR: ASX Inquiry Panel Final Report](https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-059mr-asic-publishes-asx-inquiry-panel-final-report-and-acknowledges-observations/) -- 조사 결론
+18. [ASX Clearing and Settlement Schedule of Fees (July 2025)](https://asxonline.com/content/dam/asxonline/public/documents/schedule-of-fees/asx-clearing-and-settlement-schedule-of-fees.pdf) -- 현행 수수료표
+19. [ASX Capital Liquidity Handbook (February 2025)](https://www.asxonline.com/content/dam/asxonline/public/documents/manuals/capital-liquidity-handbook/asx_046913.pdf) -- 자본요건
+20. [Understanding Margins -- ASX Clear](https://www.asx.com.au/content/dam/asx/participants/clearing-and-settlement/asx-clear/understanding-margins.pdf) -- 증거금 체계 안내서
+21. [ASX Collateral Services](https://www.asx.com.au/markets/clearing-and-settlement-services/collateral-services) -- 담보 및 증권대차
+22. [FIA: "FIA supports ASX default management proposals"](https://www.fia.org/fia/articles/fia-supports-asx-default-management-proposals) -- 부도 관리에 대한 업계 관점
+23. [Clarus Financial Technology: "What's New in AUD Swaps in 2024?"](https://www.clarusft.com/whats-new-in-aud-swaps-in-2024/) -- OTC 청산 시장점유율 데이터
+24. [WatersTechnology: "ASX CHESS replacement to be delivered in phases"](https://www.waterstechnology.com/trading-tech/7951687/asx-chess-replacement-to-be-delivered-in-phases-with-clearing-first-in-2026) -- CHESS 교체 일정
+25. [The Fintech Times: "Blockchain Project Gone Wrong: ASIC Takes ASX to Court"](https://thefintechtimes.com/blockchain-project-gone-wrong-asic-takes-asx-to-court-over-chess-replacement/) -- ASIC 법적 조치
+26. [ESMA: List of recognised third-country CCPs](https://www.esma.europa.eu/sites/default/files/library/third-country_ccps_recognised_under_emir.pdf) -- EMIR 인가

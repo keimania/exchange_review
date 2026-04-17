@@ -1,0 +1,487 @@
+---
+title: "T7 매매 아키텍처 (T7 Trading Architecture) -- Eurex (파생상품)"
+subtitle: "파생상품 > 매매시스템"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-07
+> **시스템 분류:** 매매시스템 (Trading System)
+
+---
+
+## 1. 시스템 개요 (System Overview)
+
+| 항목 | 상세 |
+|------|---------|
+| 시스템명 | T7 |
+| 운영 주체 | Eurex Frankfurt AG (Deutsche Boerse Group 소속) |
+| 목적 | 파생상품(선물, 옵션, 복합 전략)을 위한 고성능 전자매매 플랫폼; 동일 기술로 현물주식(Xetra), 에너지(EEX) 및 기타 거래소도 운영 |
+| 출시 연도 | 2012년 12월 (Eurex 파생상품 -- 최초 T7 배포); 2017년 7월 (Xetra 현물시장 이전) |
+| 현재 버전 | T7 Release 14.0 (2025년 11월 10일 Eurex 도입); T7 Release 14.1은 2026년 5월 18일 예정 |
+| 벤더 / 자체개발 | 자체개발 (Deutsche Boerse Group 기술 팀 개발) |
+
+T7은 Deutsche Boerse Group의 핵심 매매 플랫폼이다. 2012년 12월 Eurex에 최초 배포되었을 때, **선물의 경우 이전 시스템 대비 14배, 옵션의 경우 40배 빠른** 것으로 보고되었다. 이 플랫폼은 Eurex (파생상품), Xetra (현물주식), EEX (에너지), Boerse Frankfurt, Nodal Exchange에 걸쳐 공유 기술 기반으로 활용된다. 파생상품 참가자에게 있어 주요 차별화 요소는 내장된 복합 전략 거래, 내재가격, mass quoting, 통합 장외거래 입력(T7 Entry Services) 기능이다.
+
+[Source: Eurex, "T7 trading architecture", https://www.eurex.com/t7/, accessed 2026-04-07]
+[Source: Eurex, "T7", https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07]
+[Source: MarketsWiki, "Eurex", https://www.marketswiki.com/wiki/Eurex, accessed 2026-04-07]
+
+### 시스템 발전 과정 (System Evolution)
+
+| 기간 | 시스템 / 주요 사건 | 주요 변경사항 |
+|--------|-------------------|-------------|
+| 1988 | DTB (Deutsche Terminboerse) 설립 | Deutsche Boerse 최초의 전자 파생상품 거래소; 1990년 1월 26일 옵션으로 거래 개시, 이후 선물 |
+| 1993 | DTB GmbH가 Deutsche Boerse AG로 통합 | 조직 통합 |
+| 1998 | Eurex 출범 (DTB + SOFFEX 합병) | DTB가 Swiss Options and Financial Futures Exchange (SOFFEX)와 합병하여 Eurex를 설립; 세계 최대 파생상품 거래소 중 하나가 됨 |
+| 1998~2012 | Eurex System 1 (레거시 플랫폼) | 다수의 릴리스 업그레이드; 성장기 동안 Eurex를 지원 |
+| 2012년 12월 | T7 Release 1.0 (Eurex) | Eurex에 최초 T7 배포; 단계적 상품 이전; 이전 시스템 대비 14배/40배 빠름 (선물/옵션) |
+| 2018년 1분기 | Partition-Specific (PS) Gateway | PS 게이트웨이 도입; 지연시간 변동성을 크게 낮추고 결정론성을 향상 |
+| 2020년 1분기 | 매매체결엔진 하드웨어 업그레이드 | 매매체결엔진의 신규 서버 하드웨어 완료 |
+| 2021년 상반기 | 매칭/게이트웨이 통합 | PS Gateway와 매매체결엔진 프로세스가 동일 서버에 통합; 주문 처리 속도 향상, 안정성 개선 |
+| 2021년 하반기~2022 | Market Data Distributor 통합 | EMDI distributor 프로세스가 매매체결엔진 호스트에 통합; 페일오버 시나리오 감소, 더 결정론적 데이터 전달 |
+| 2022년 2월 | 파티션 13개로 확장 | Eurex 파생상품용 Partition 12 추가; 선물 상품 재배분 |
+| 2023년 11월 | T7 Release 12.0 | 주요 기능 릴리스 |
+| 2024년 3월 | T7 Release 12.1 | 정적 변동성 인터럽션 강화; Self-Match Prevention (SMP) 시장 전체 도입 |
+| 2024년 11월 | T7 Release 13.0 | 기능 및 성능 향상 |
+| 2025년 5월 | T7 Release 13.1 | Eurex용 도입 |
+| 2025년 11월 | T7 Release 14.0 | 현재 운영 릴리스; 신규 웹 기반 GUI 도입 |
+| 2026년 5월 (예정) | T7 Release 14.1 | 시뮬레이션 기간 2026년 3월 23일 시작; 운영 출시 2026년 5월 18일 예정 |
+| 2026~2027 | Web GUI 전환 | T7 Web Admin (2026년 2/3분기), T7 Web Trader (2027년 이전 불가); Java 기반 GUI의 단계적 교체 |
+
+[Source: WallStreetMojo, "Eurex Exchange -- What Is It, Rules, History & Benefits", https://www.wallstreetmojo.com/eurex-exchange/, accessed 2026-04-07]
+[Source: Eurex, "T7 Release 14.0", https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0, accessed 2026-04-07]
+[Source: Eurex, "T7 Release 14.1", https://www.eurex.com/ex-en/support/initiatives/t7release14-1, accessed 2026-04-07]
+[Source: Eurex, "Announcement of T7 Release 14.1", https://www.eurex.com/ex-en/find/circulars/circular-4803582, accessed 2026-04-07]
+[Source: Eurex, "Completion of the T7 matching engine server hardware upgrade", https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-07]
+[Source: Eurex, "T7: Introduction of a consolidated partition-specific Gateway and Matching Engine process", https://www.eurex.com/ex-en/find/circulars/circular-2404602, accessed 2026-04-07]
+[Source: Eurex, "T7: Consolidation of the Market Data Distributor and Matching Engine processes on the Matching Engine Host", https://www.eurex.com/ex-en/find/circulars/T7-Consolidation-of-the-Market-Data-Distributor-and-Matching-Engine-processes-on-the-Matching-Engine-Host-3682674, accessed 2026-04-07]
+
+---
+
+## 2. 아키텍처 (Architecture)
+
+### 2.1 상위 수준 설계 (High-Level Design)
+
+- **배포 모델:** 온프레미스, 독일 프랑크푸르트의 Equinix FR2 코로케이션 시설에 호스팅
+- **토폴로지:** 파티션 기반 분산 매칭 아키텍처 -- 각 파티션 내에서는 중앙집중형 매칭이지만, 파티션은 독립적으로 운영
+- **설계 패턴:** 독립적인 상품 파티션을 갖춘 고성능 이벤트 구동 매칭; 각 파티션이 자체 매매체결엔진, PS 게이트웨이, 시장데이터 배포기를 보유
+- **다중 거래소:** Eurex (파생상품), Xetra (현물주식), EEX (에너지), Boerse Frankfurt, Nodal Exchange를 지원하는 단일 플랫폼
+
+T7은 파생상품 시장이 완전히 독립적인 파티션으로 분할되는 **파티션 기반 아키텍처(partition-based architecture)**를 채택하고 있다. 각 파티션은 자체 매매체결엔진과 파티션 전용 게이트웨이를 운영한다. 한 파티션에 문제가 발생해도 다른 파티션은 독립적으로 계속 운영된다. Eurex 파생상품의 경우 **13개 파티션** (12개 XEUR 파티션 + 1개 XEEE 파티션(EEX용))이 있다. 상품은 자산군별로 파티션에 분배된다 -- 예를 들어 주가지수 선물 및 옵션, 금리 선물, 상품 파생상품이 각각 다른 파티션에 위치할 수 있다.
+
+2021년 상반기부터 PS Gateway와 매매체결엔진 프로세스가 동일 서버에 통합되었으며, 2021년 하반기 이후에는 Market Data Distributor 프로세스도 매매체결엔진 호스트에 통합되었다. 이러한 통합은 지연시간을 줄이고 페일오버 시나리오를 단순화하며 결정론성을 향상시킨다.
+
+[Source: Eurex, "T7", https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07]
+[Source: Eurex, "T7 Production environment: Increase in the number of partitions", https://www.eurex.com/ex-en/find/circulars/circular-2877730, accessed 2026-04-07]
+
+### 2.2 핵심 구성요소 (Core Components)
+
+| 구성요소 | 기능 | 기술 / 비고 |
+|-----------|----------|-------------------|
+| **매매체결엔진** (파티션별) | 해당 파티션에 배정된 모든 종목의 주문 및 호가 매칭; 가격-시간 우선; 연속 거래, 경매, 내재가격을 포함한 복합 전략 매칭 지원 | 맞춤 개발; 전용 서버 하드웨어에서 실행; 각 파티션은 페일오버를 위한 스탠바이 파트너와 함께 자체 매매체결엔진 보유 |
+| **Partition-Specific (PS) Gateway** | 최저 지연시간 주문 입력 경로; FIFO 처리; 파티션당 하나의 PS 게이트웨이 | 2021년 상반기부터 매매체결엔진과 동일 서버에 통합; 코로케이션에서 10 Gbit/s 크로스 커넥트 |
+| **Low-Frequency (LF) Gateway** | 초저지연이 불필요한 참가자를 위한 주문 입력; 모든 파티션에 연결; PS 게이트웨이 대비 ~12 마이크로초 추가 지연시간 | 독자 바이너리 (ETI); TCP/IP |
+| **Enhanced Trading Interface (ETI)** | 주요 고성능 매매 인터페이스; 비동기, 메시지 기반; FIX 5.0 SP2 시맨틱스와 독자 세션 프로토콜 및 플랫 바이너리 인코딩 | TCP/IP 기반 바이너리; 특수 하드웨어 불필요; OS/언어 무관 |
+| **FIX Gateway** | 표준 FIX 프로토콜 접근; 매매 및 백오피스 세션 | FIX 4.2 / FIX 4.4 over TCP/IP; FIX LF 인터페이스 (FIX 4.4)는 Release 9.0에서 도입 |
+| **EMDI** (Enhanced Market Data Interface) | 비넷팅 시장데이터; 구성된 호가 잔량 깊이까지의 모든 호가장 변경을 배포 | UDP multicast; FAST 1.1/1.2 인코딩; 이중 서비스 경로 (A 및 B) |
+| **EOBI** (Enhanced Order Book Interface) | 전체 주문별 (Level 3) 시장데이터; 깊이 제한 없음 | UDP multicast; 네이티브 바이너리 인코딩 (FAST 아님); 최저 지연시간 시장데이터 피드 |
+| **MDI** (Market Data Interface) | 넷팅/통계 시장데이터 (일일 고가/저가, 최종 체결, 총거래량) | UDP multicast; FAST 인코딩 |
+| **RDI** (Reference Data Interface) | 종목 정의, 매매 파라미터, 상품 배정 | UDP multicast; FAST 인코딩 |
+| **리스크 엔진** | 사전거래 리스크 제어; 세션 수준 쓰로틀링; 포지션 한도; Advanced Risk Protection (ARP) | 게이트웨이 레이어에 통합 |
+| **감시** | 시장 감시 및 규제 감독 (BaFin/ESMA 체계) | 별도 감시 인프라; 매매 감시 시스템이 시장 조작 및 남용을 모니터링 [상세 비공개] |
+| **T7 GUI** (Trader/Admin/Clearer) | 파생상품 매매, 관리, 청산 운영을 위한 그래픽 사용자 인터페이스 | Java 기반에서 웹 기반 GUI로 전환 중 (2025~2027) |
+
+[Source: Eurex, "T7 R.13.1 Enhanced Trading Interface Manual", https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07]
+[Source: OnixS, "Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK", https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]
+
+### 2.3 기술 스택 (Technology Stack)
+
+| 계층 | 기술 |
+|-------|-----------|
+| 프로그래밍 언어 | C/C++ [unverified; Deutsche Boerse 기술 프레젠테이션 및 매매체결엔진의 업계 표준과 일치] |
+| 운영체제 | Linux [unverified; 업계 표준과 일치] |
+| 하드웨어 | 맞춤 최적화된 범용 x86 서버 하드웨어; 매매체결엔진 하드웨어 2020년 업그레이드; PTP (Precision Time Protocol) 타이밍 4~5 ns RMS 정확도 |
+| FPGA 가속 | T7 핵심 매매체결엔진에서는 미확인; 제3자 벤더(예: NanoSpeed)가 T7용 FPGA 기반 연결 솔루션 제공 |
+| 네트워크 (내부) | 코로케이션 접근 레이어에서 cut-through 스위칭을 갖춘 10 Gbit/s Ethernet; PS 게이트웨이로의 10 Gbit/s 크로스 커넥트 |
+| 네트워크 (외부) | N7 네트워크 인프라; 유럽, 북미, 아시아 35개 이상 국가에서 수천 개의 연결; 10G/100G Ethernet 연결 |
+| 메시징 형식 | FIX 5.0 SP2 시맨틱스를 따르는 바이너리 메시지 (ETI); EMDI/MDI/RDI용 FAST 1.1/1.2 인코딩; EOBI용 네이티브 바이너리 |
+| 바이트 순서 | Little Endian |
+| 코로케이션 | Equinix FR2 데이터센터, 독일 프랑크푸르트 |
+| 인메모리 | 매매체결엔진은 호가장 상태를 인메모리로 운영; 지속성 주문은 페일오버 복구를 위해 지속성 레이어에 백업 |
+
+[Source: Deutsche Boerse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]
+[Source: Deutsche Boerse, "Open Day 2019 -- T7 infrastructure and latency", https://www.deutsche-boerse.com/resource/blob/1637232/da0ae611905acda0d7502260903a0835/data/Open-Day-2019_T7-Latency-Roadmap_Andreas-Lohr_final.pdf, accessed 2026-04-07]
+
+---
+
+## 3. 성능 사양 (Performance Specifications)
+
+### 현재 지연시간 (운영 데이터, 2025) (Current Latency — Production Data, 2025)
+
+| 지표 | 수치 | 조건 |
+|--------|-------|------------|
+| 최소 내부 매칭 지연시간 | ~2,787 ns (~2.8 마이크로초) | 시장데이터 타임스탬프에서 요청 처리까지 측정; 2025년 2월 운영 데이터 |
+| 중앙값 왕복시간 (HF 세션, 코로케이션) | ~60 마이크로초 | PS 게이트웨이를 통한 전체 순환; 네트워크 통과, 매칭, 응답 포함 |
+| LF 게이트웨이 추가 지연시간 | ~12 마이크로초 | PS 게이트웨이 경로 대비 |
+| EOBI가 EMDI보다 빠름 | ~1.5 마이크로초 (중앙값) | EOBI 시장데이터가 EMDI 업데이트보다 빠르게 도착 |
+| EOBI가 ETI 응답보다 빠름 | ~1.5 마이크로초 (중앙값) | 주문 발생 시장데이터 업데이트의 경우 |
+| EOBI의 EMDI 대비 우위 (DAX 선물) | ~15 마이크로초 빠름 (단순 업데이트), ~25 마이크로초 빠름 (체결) | Xetra DAX 상품에 대해 측정; Eurex 파생상품에서도 유사한 우위 예상 |
+| 이중 EMDI 피드 차이 (A vs B) | ~6~8 마이크로초 (중앙값) | 선물 상품의 A 및 B 증분 피드 간 지연시간 차이 |
+| PTP 타이밍 정확도 | 4~5 ns RMS | Precision Time Protocol 동기화 |
+
+**참고:**
+- 2,787 ns 최소값은 내부 매매체결엔진 처리 시간을 나타낸다
+- ~60 마이크로초의 왕복 지연시간은 고빈도 세션을 통해 PS 게이트웨이를 사용하는 코로케이션 참가자에 대해 측정된 것이다
+- T7은 각 응답에 최대 6개의 타임스탬프와 모든 시장데이터 업데이트에 핵심 타임스탬프를 제공하여 참가자가 지연시간을 상세하게 측정하고 분해할 수 있도록 한다
+- 10 Gbit/s 접근 레이어 스위치는 "cut-through" 모드로 운영되며, 경쟁 네트워크 경로에서 우선순위를 확보한다
+
+[Source: Deutsche Boerse, "Internal T7 Latency Performance Updates", https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-07]
+[Source: Deutsche Boerse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]
+
+### 처리량 및 용량 (Throughput & Capacity)
+
+| 지표 | 수치 | 비고 |
+|--------|-------|-------|
+| 일반적 처리량 (t_3n -- 내부 매칭) | ~8,000 kHz (800만 메시지/초) | 내부 매매체결엔진 처리량; 2025년 3월 데이터 |
+| 일반적 처리량 (t_5 -- 게이트웨이 수준) | ~500 kHz | 게이트웨이 수준의 처리량 [unverified interpretation] |
+| 일반적 처리량 (t_7 -- 외부) | ~300 kHz | 외부 네트워크를 포함한 처리량 [unverified interpretation] |
+| 최대 일일 요청 (T7 거래소 전체) | 12억 5,000만 | 2025년 4월 7일 기록 (2023년 8억 5,700만 대비) |
+| ETI HF 세션 쓰로틀 | 150 메시지/초 | 세션당; 고빈도 세션 유형 |
+| ETI LF 세션 쓰로틀 | 50 메시지/초 | 세션당; 저빈도 세션 유형 |
+| Eurex 파티션 | 13 (12 XEUR + 1 XEEE) | 2022년 기준; 필요에 따라 파티션 확장 가능 |
+
+[Source: Deutsche Boerse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]
+
+### 성능 발전 과정 (Performance Evolution)
+
+| 기간 | 개선사항 | 비고 |
+|--------|------------|-------|
+| 2012년 12월 (Eurex에서 T7 출시) | 이전 시스템 대비 14배 빠름 (선물), 40배 빠름 (옵션) | 최초 T7 배포 |
+| 2018년 1분기 | PS 게이트웨이 도입 | 지연시간 변동성을 크게 낮춤; 결정론성 향상 |
+| 2020년 1분기 | 매매체결엔진 하드웨어 업그레이드 | 신규 서버 하드웨어 |
+| 2021년 상반기 | 매칭/게이트웨이를 동일 서버에 통합 | 추가적 지연시간 감소 및 안정성 개선 |
+| 2021~2022 | Market data distributor를 매매체결엔진 호스트에 통합 | EMDI 지연시간 변동성 감소 |
+| 2025 | PTP 정확도 4~5 ns RMS | 타임스탬핑 정밀도 향상 |
+
+---
+
+## 4. 인터페이스 및 프로토콜 (Interfaces & Protocols)
+
+### 4.1 주문 입력 -- ETI (Enhanced Trading Interface) (Order Entry -- ETI)
+
+| 항목 | 상세 |
+|-----------|---------|
+| 프로토콜 | FIX 5.0 SP2 시맨틱스를 갖춘 독자 바이너리 |
+| 세션 레이어 | 독자 (표준 FIX 세션 프로토콜이 아님) |
+| 인코딩 | 플랫 바이너리 인코딩 (성능 최적화) |
+| 전송 | TCP/IP |
+| 바이트 순서 | Little Endian |
+| 세션 유형 | 고빈도 (HF) 및 저빈도 (LF); Standard (지속성 주문) 및 Lean (비지속성 주문) |
+| 쓰로틀 한도 | HF: 150 메시지/초; LF: 50 메시지/초 (세션당) |
+| 기능 | 주문 처리, 호가 처리 (mass quote), 전략 생성, RFQ 제출, 장외거래 입력 (TES), 크로스 요청 |
+| 하드웨어 요건 | 없음 -- OS/언어/컴파일러 무관; 거래소 소프트웨어 설치 불필요 |
+
+**ETI 파생상품 전용 기능:**
+- Mass quote 제출 및 유지 (마켓 메이커에게 핵심)
+- 복합 종목 생성 (사용자 정의 전략)
+- 크로스 요청 기능
+- T7 Entry Services (TES) 블록/EFP/EFS 거래 입력
+- Eurex EnLight RFQ 제출 및 응답
+- Self-Match Prevention (SMP) 태깅
+
+**FIX Gateway:**
+- FIX 4.2 및 FIX 4.4 지원
+- FIX LF 인터페이스 (FIX 4.4 전용) -- T7 아키텍처에 더 가까우며, ETI와 유사한 성능 특성 제공
+- 매매 세션 (주문 관리, 리스크 제어, 크로스 거래) 및 백오피스 세션 (체결 확인)
+- 프로토콜 변환으로 인해 ETI보다 약간 높은 지연시간
+
+[Source: Eurex, "T7 R.13.1 Enhanced Trading Interface Manual", https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07]
+
+### 4.2 시장데이터 (Market Data)
+
+| 피드 | 프로토콜 | 인코딩 | 내용 | 지연시간 프로파일 |
+|------|----------|----------|---------|-----------------|
+| **EMDI** (Enhanced Market Data Interface) | UDP multicast | FAST 1.1/1.2 | 비넷팅 피드; 구성된 깊이까지의 모든 호가장 변경; 모든 장내 체결; 집계된 가격 수준별 시장-가격별(MBP) | EOBI보다 ~1.5 마이크로초 느림 (중앙값) |
+| **EOBI** (Enhanced Order Book Interface) | UDP multicast | 네이티브 바이너리 (FAST 아님) | 전체 주문별 (Level 3); 깊이 제한 없음; 각 개별 주문/호가의 방향, 가격, 우선순위 타임스탬프, 표시 수량; 체결 가격 및 수량 | 최고속 시장데이터 피드; ETI 응답보다 ~1.5 마이크로초 빠름 |
+| **MDI** (Market Data Interface) | UDP multicast | FAST | 넷팅/통계 데이터; 일일 고가/저가, 총거래량, 최종 체결, 정산가, 미결제약정 | 지연시간 민감도가 낮은 애플리케이션에 적합 |
+| **RDI** (Reference Data Interface) | UDP multicast | FAST | 종목 정의, 매매 파라미터, 상품 배정, multicast 주소/포트 구성 | 거래일 개시 전 발행 |
+| **EMDS** (Extended Market Data Service) | UDP multicast | -- | 정산가 및 미결제약정을 포함한 확장 데이터 | 보조 피드 |
+
+**아키텍처 참고:**
+- 모든 피드는 다른 multicast 주소를 가진 이중 서비스 경로 (Service A 및 Service B)를 사용하여 실시간-실시간(live-live) 이중화를 제공한다
+- 클라이언트는 양쪽 서비스를 모두 구독하고 중재해야 한다
+- EOBI는 지연시간 민감 파생상품 참가자를 위한 프리미엄 피드이다 -- 전체 주문별 호가장, 네이티브 바이너리 인코딩 (FAST 디코딩 오버헤드 없음)을 제공하며, 일관되게 가장 빠른 데이터 경로이다
+- 파생상품 참가자의 경우, EMDI는 구성된 깊이까지의 비넷팅 업데이트를 제공하고 EOBI는 전체 호가장을 제공한다
+
+[Source: Eurex, "T7 R.12.1 EMDI/MDI/RDI Manual", https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-07]
+[Source: OnixS, "Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK", https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]
+
+### 4.3 Drop Copy / 매매 보고 -- T7 Entry Services (TES) (Drop Copy / Trade Reporting -- T7 Entry Services)
+
+T7 Entry Services는 Eurex 파생상품의 주요 장외거래 등록 메커니즘이다. 참가자가 Eurex Clearing을 통한 표준화된 청산 및 결제의 혜택을 받으면서 협의되거나 사전 합의된 거래 정보를 Eurex 시스템에 입력할 수 있도록 한다.
+
+| TES 거래 유형 | 설명 |
+|----------------|-------------|
+| **Block Trades** | 표준 Eurex 상품의 장외거래; 매수자와 매도자가 체결 리스크 없이 주문 정보를 실행; Bulk Load Panel이 대량 배치의 효율성을 향상 |
+| **Exchange for Physicals (EFP)** | 가격 상관관계를 가진 선물과 현물시장 증권의 동시 매수/매도 (예: 채권선물 vs. 채권); Tradeweb와 협력하여 자동 승인 기능 도입 |
+| **Exchange for Swaps (EFS)** | 선물 포지션과 OTC 스왑 등가물의 교환 |
+| **Multilateral Trades** | 다자간 Block Trade를 위한 주문 정보 처리 |
+| **Brokerage 기능** | 브로커 중개 거래 촉진 |
+
+**Eurex EnLight (선별적 RFQ):**
+- 장내, 장외(off-book) 선별적 RFQ(호가요청) 기능
+- 참가자가 특정 상대방에게 선별적으로 호가를 요청 가능
+- 가격 칼라를 통한 서킷 브레이커 구현
+- T7 거래 등록 워크플로우와 통합
+
+[Source: Eurex, "Eurex T7 Entry Services", https://www.eurex.com/ex-en/trade/eurex-t7-entry-services, accessed 2026-04-07]
+[Source: Eurex, "Block Trades", https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades, accessed 2026-04-07]
+[Source: Eurex, "Eurex EnLight", https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]
+
+### 4.4 기준정보 -- RDI 및 RDD (Reference Data -- RDI and RDD)
+
+| 출처 | 설명 |
+|--------|-------------|
+| **RDI** (Reference Data Interface) | 실시간 multicast 피드; 거래일 개시 전 종목 정의, 매매 파라미터, 상품별 파티션 배정, multicast 주소 구성 제공 |
+| **RDD** (Reference Data Download) | Eurex 웹사이트에서 다운로드 가능한 파일 기반 기준정보; 상품 및 종목 파라미터 파일, T7 Entry Service 파라미터 포함 |
+| **T7 GUI** | 관리 GUI가 기준정보 뷰 및 관리 기능 제공 |
+
+[Source: Eurex, "T7 Entry Service parameters", https://www.eurex.com/ex-en/data/trading-files/t7-entry-service-parameters, accessed 2026-04-07]
+
+---
+
+## 5. 복원력 및 업무연속성 (Resilience & Business Continuity)
+
+### 5.1 이중화 (Redundancy)
+
+- **파티션 독립성:** 13개 파티션 각각이 독립적으로 운영된다; 한 파티션의 장애가 다른 파티션에 영향을 미치지 않는다 -- 이것이 파티션 기반 아키텍처의 핵심 복원력 이점이다
+- **매매체결엔진 페일오버:** 모든 매매체결엔진은 주 엔진이 장애 시 인수할 수 있는 스탠바이 파트너를 보유한다; 페일오버 시 시장 리셋이 발생한다 -- 보조 엔진이 지속성 레이어에서 지속성 주문을 로드하며, 모든 비지속성 주문 및 호가는 삭제된다
+- **시장데이터 이중화:** 다른 multicast 주소를 가진 이중 multicast 서비스 경로 (Service A 및 Service B); 실시간-실시간(live-live) 개념
+- **게이트웨이 이중화:** 다수의 게이트웨이 세션 이용 가능; PS 및 LF 게이트웨이가 서로 다른 접근 경로를 제공; PS 게이트웨이 장애 시 LF 게이트웨이가 이용 가능하게 유지 (반대의 경우도 동일)
+- **네트워크 이중화:** N7 네트워크가 35개 이상 국가에 걸쳐 이중 연결 제공; 백본 회선은 주 및 보조 데이터센터 모두에서 종단
+
+### 5.2 재해복구 (Disaster Recovery)
+
+| 항목 | 상세 |
+|--------|---------|
+| 주 사이트 | Equinix FR2 데이터센터, 독일 프랑크푸르트 |
+| DR 인프라 | T7 시뮬레이션 환경 인프라를 DR 운영 인프라로 재활용 |
+| 페일오버 시나리오 | 주 데이터센터에 호스팅된 정규 T7 운영 시스템의 완전 장애를 시뮬레이션 |
+| 코로케이션 접근 | DR 중에도 코로케이션 시설 접근 유지; 코로케이션 고객이 DR 인프라에 접근 가능 |
+| 네트워크 연속성 | 프랑크푸르트로의 백본 회선이 보조 데이터센터에서 종단; 프랑크푸르트 접속점에 연결하는 참가자는 보조 데이터센터에 위치한 접속점 반쪽에 연결하는 동일한 전용 회선을 계속 사용 |
+| 호가장 상태 | DR 환경으로 전환 후 호가장은 비어 있음; 참가자가 주문을 재입력해야 함 |
+| 인터페이스 가용성 | DR 시나리오에서 대부분의 T7 인터페이스 이용 가능; 정규 운영 대비 일부 개념적 차이 |
+| DR 테스트 | 정기 테스트 실시 (일반적으로 연 2회); 예시: 2024년 3월 16일, 2023년 6월 17일, 2022년 10월 15일; Eurex는 모든 거래참가자의 참여를 요청 |
+
+**주요 참고사항:**
+- DR 개념은 "T7 Disaster Recovery Concept" 가이드에 문서화되어 있다 (각 주요 릴리스마다 갱신; 현재 버전: 2025 v1.2)
+- DR에서 시뮬레이션 환경 인프라가 백업 운영 환경이 된다 -- 이는 실용적이지만 잠재적으로 용량이 제한될 수 있는 설계이다
+- DR에서는 다른 IP 주소 및 구성이 적용될 수 있다
+- DR 테스트 참여는 업무연속성 프로세스 준수 및 시장 건전성 유지를 위해 필수적으로 간주된다
+
+[Source: Eurex, "T7 Disaster Recovery Concept 2025 Version 1.2", https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf, accessed 2026-04-07]
+[Source: Eurex, "T7 Disaster Recovery Test on 16 March 2024", https://www.eurex.com/ex-en/find/circulars/circular-3818172, accessed 2026-04-07]
+
+### 5.3 주 데이터센터 (Primary Data Center)
+
+| 사양 | 상세 |
+|---------------|---------|
+| 시설 | Equinix FR2 (Friesstrasse, 독일 프랑크푸르트) |
+| 운영자 | Equinix (2010년 이후 전략적 파트너십) |
+| 역할 | 금융 저지연 매매 허브; Eurex 및 Xetra 핵심 시스템 호스팅 |
+| 코로케이션 서비스 | 랙 공간, 냉각, 전원 공급, smart hands; 거래 및 시장데이터 서비스를 위한 별도 10 Gbit/s 연결 |
+| 네트워크 | cut-through 모드의 10 Gbit/s 접근 레이어 스위치; 지연시간 최적화 코로케이션 네트워크 |
+
+[Source: Xetra, "Co-Location Services", https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-07]
+
+---
+
+## 6. 주요 기술 특징 (Notable Technical Features)
+
+### 6.1 복합 전략 거래 (스프레드 엔진 / 내재가격) (Complex Strategy Trading — Spread Engine / Implied Pricing)
+
+이는 T7의 가장 파생상품 특화된 기능 중 하나이다. 이 플랫폼은 다음을 지원한다:
+
+- **복합 종목:** 참가자가 단일 다리 종목의 개별 조합을 생성하고 전체 시장에 해당 전략을 공표할 수 있는 확장된 조합 거래 기능
+- **전략 유형:**
+  - 선물 조합: 시간 스프레드, 팩 & 번들, 스트립, 상품간 스프레드
+  - 표준 옵션 전략: 광범위한 인정 옵션 전략 템플릿
+  - 사용자 정의 전략: 참가자가 맞춤형 다중 다리 조합 생성 가능
+- **내재가격:** T7은 다리의 최우선호가 가격을 기반으로 내재가격을 계산한다; 전략 주문에서 다리 호가장으로의 합성 매칭(implied-in)과 아웃라이트 다리 계약의 합성 조합에 대한 매칭(implied-out) 모두 지원
+- **상품간 스프레드 (IPS):** 각 다리 상품 호가장으로의 합성 매칭을 갖춘 별도 호가장에서 거래 (예: Euribor vs. Euro-STR 선물 IPS)
+- **자동 정규화:** 입력된 전략이 표준 옵션 전략과 일치하는 경우 자동으로 변환 및 정규화
+
+[Source: Eurex, "Strategy trading -- Trading in complex instruments", https://www.eurex.com/ex-en/trade/order-book-trading/trading-in-complex-instruments, accessed 2026-04-07]
+
+### 6.2 변동성 인터럽션 메커니즘 (Volatility Interruption Mechanism)
+
+T7은 파생상품의 가격 연속성을 강화하기 위해 변동성 인터럽션을 구현한다:
+
+- **작동 메커니즘:** 잠재적 체결가격이 참조가격으로부터 허용 가격 범위를 넘어 벗어나는 경우, 수신 주문의 체결이 방지되고 해당 종목(또는 해당 상품의 모든 종목)이 연속 거래에서 변동성 경매로 자동 전환된다
+- **정적 변동성 인터럽션** (T7 Release 12.1에서 도입): 거래소가 정의한 추가 참조가격 주위의 정적 가격 범위에 기반; 허용 정적 가격 편차를 초과할 때 발동
+- **동적 변동성 인터럽션:** 최종 체결가격 주위의 동적 가격 범위에 기반
+- **범위:** 구성에 따라 개별 종목 또는 전체 상품 그룹에 적용 가능
+
+[Source: Eurex, "Volatility Interruption Functionality", https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality, accessed 2026-04-07]
+[Source: Eurex, "Eurex T7 Functionality activations: Volatility Interruption enhancements", https://www.eurex.com/ex-en/find/circulars/circular-3989342, accessed 2026-04-07]
+
+### 6.3 장외거래를 위한 T7 Entry Services (TES) (T7 Entry Services for Off-Book Trades)
+
+상세 내용은 4.3절을 참조한다. 핵심 사항: TES는 블록 거래, EFP, EFS, 다자간 장외거래가 거래소를 통해 등록되고 청산될 수 있도록 규제적 및 운영적 체계를 제공한다.
+
+### 6.4 마켓 메이커를 위한 Mass Quote 기능 (Mass Quote Functionality for Market Makers)
+
+- **Mass quote:** 마켓 메이커가 단일 메시지로 다수의 종목에 대한 양방향 호가(매수 및 매도)를 제출 및 업데이트할 수 있어, 대규모 옵션 시리즈에 걸친 효율적 마켓 메이킹이 가능하다
+- **마켓 메이커 역할:** 모든 호가 및 주문 처리 기능, 크로스 요청, 복합 종목 생성을 가능하게 한다
+- **비지속성 호가:** Mass quote는 일반적으로 비지속성(lean)으로, 매매체결엔진 페일오버 시 삭제된다 -- 이는 지속성보다 성능을 우선하는 설계 트레이드오프이다
+
+### 6.5 자기거래 방지 (Self-Trade Prevention, SMP)
+
+- **도입:** T7 Release 12.1 (시장 전체 도입)
+- **메커니즘:** SMP Type A 기능은 동일 거래참가자가 동일 SMP ID로 태그한 동일 종목의 특정 주문 또는 호가가 연속 거래 시 서로 매칭되는 것을 방지한다
+- **목적:** 동일 참가자 내에서 운영되는 서로 다른 알고리즘 전략으로 인해 발생할 수 있는 의도하지 않은 자기거래를 방지한다
+
+[Source: Eurex, "Announcement of T7 Release 12.1", https://www.eurex.com/ex-en/find/circulars/circular-3723224, accessed 2026-04-07]
+
+### 6.6 Eurex EnLight (선별적 RFQ) (Eurex EnLight — Selective RFQ)
+
+- **유형:** 장내, 장외(off-book) 선별적 RFQ(호가요청) 플랫폼
+- **메커니즘:** 개시자가 (전체 시장에 방송하는 대신) 특정 상대방에게 선별적으로 호가를 요청
+- **안전장치:** 가격 칼라를 통한 서킷 브레이커 구현
+- **사용 사례:** 장내 거래 등록을 유지하면서 특정 유동성 공급자와 협상하고자 하는 대규모/복합 파생상품 거래
+
+[Source: Eurex, "Eurex EnLight | Selective RFQ Platform for Derivatives", https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]
+
+### 6.7 사전거래 리스크 제어 (Advanced Risk Protection) (Pre-Trade Risk Controls — Advanced Risk Protection)
+
+- **사전거래 리스크 포지션 한도:** Clearing Member (CM)가 Direct Clearing Member Participant (DCMP) 및 Non-Clearing Member에 대해 사전거래 리스크 한도를 설정 가능
+- **Advanced Risk Protection (ARP):** Eurex Clearing의 C7 시스템과 통합; 자동 보호 조치를 갖춘 실시간 리스크 모니터링 제공
+- **세션 수준 쓰로틀링:** ETI가 세션별 메시지 속도 제한을 적용 (HF 150 메시지/초, LF 50 메시지/초)
+- **주문 규모 한도:** 상품별 구성 가능한 최대 주문 수량
+- **Kill switch:** 참가자의 모든 주문 및 호가를 취소하는 비상 기능
+
+[Source: Eurex, "T7 Derivatives Markets -- Participant and User Maintenance Manual", https://www.eurex.com/resource/blob/4332334/61e2e29f08a63ff88d20ee30c4dc2049/data/T7_R.13.1_Derivatives_Market_-_Participant_and_User_Maintenance_Manual_Version_1.pdf, accessed 2026-04-07]
+
+### 6.8 스폰서드 액세스 (SpA) 모델 (Sponsored Access — SpA Model)
+
+- **목적:** 바이사이드 회사가 완전한 거래소 회원 자격 없이, 스폰서링 Eurex 참가자(FCM)를 접근 제공자로 하여 Eurex의 T7 플랫폼에 직접 접근 가능
+- **분류:** MiFID II에 따른 Direct Electronic Access (DEA)
+- **리스크 체계:** 스폰서링 참가자가 T7 시스템 내에서 스폰서드 회사 및 그 트레이더에 대한 사전거래 리스크 한도를 설정
+- **이점:** 바이사이드 회사가 T7 인프라 및 전체 연결 스위트에 대한 직접 접근으로 지연시간 민감 전자매매 전략을 구현 가능
+
+[Source: Eurex, "Sponsored Access: A new gateway for the buy-side", https://www.eurex.com/ex-en/trade/sponsored-access, accessed 2026-04-07]
+
+### 6.9 파티션 기반 매칭 아키텍처 (Partition-Based Matching Architecture)
+
+파티션 모델은 파생상품 특유의 영향을 가진 근본적인 아키텍처 선택이다:
+
+- **상품 격리:** 서로 다른 자산군(주가지수 파생상품, 금리 파생상품, 상품 파생상품)이 별도 파티션에 배정될 수 있어, 활동이 많은 상품이 다른 상품의 지연시간에 영향을 미치지 않도록 보장한다
+- **확장성:** 상품 오퍼링이 성장함에 따라 새로운 파티션을 추가할 수 있다 (2022년 Partition 12 추가로 입증)
+- **장애 격리:** 한 파티션의 기술적 문제가 다른 파티션으로 전파되지 않는다
+- **지연시간 결정론성:** 각 파티션이 자체 매매체결엔진과 PS 게이트웨이를 보유하므로, 파티션 내에서 지연시간이 더 예측 가능하다
+- **트레이드오프:** 파티션 간 거래를 하는 참가자는 모든 파티션에서 최적 지연시간을 위해 다수의 PS 게이트웨이 연결이 필요하다; 교차 파티션 전략은 매매체결엔진 내에서 네이티브로 지원되지 않는다
+
+[Source: Eurex, "Technical Upgrade of T7 partitions", https://www.eurex.com/ex-en/support/information-channels/implementation-news/Technical-Upgrade-of-T7-partitions--4079882, accessed 2026-04-07]
+
+---
+
+## 7. 비교 참고사항 (Comparison Notes)
+
+### vs. KRX 시스템 (Exture+ / Exture 3.0)
+
+| 항목 | Eurex T7 (파생상품) | KRX Exture+ / Exture 3.0 |
+|--------|----------------------|--------------------------|
+| **출시 연도** | 2012 (Eurex 파생상품) | 2014 (Exture+); Exture 3.0 최근 출시 |
+| **개발자** | 자체개발 (Deutsche Boerse Group) | 자체개발 (KRX 및 자회사 Koscom) |
+| **아키텍처** | 파티션 기반; 파생상품용 13개 독립 파티션, 각각 자체 매매체결엔진 및 PS 게이트웨이 보유 | 통합 매매체결엔진 아키텍처; 서울 DC (주식) + 부산 DC (파생상품) |
+| **내부 매칭 지연시간** | ~2.8 마이크로초 최소 (2025년 2월) | ~70 마이크로초 (Exture+); Exture 3.0에서 ~30% 개선 달성 |
+| **왕복 지연시간 (코로케이션)** | ~60 마이크로초 중앙값 (HF 세션, PS 게이트웨이 경유) | ~70 마이크로초 (매매체결엔진만; Exture+) |
+| **복합 전략 지원** | 내재가격(implied-in / implied-out)을 갖춘 네이티브 스프레드 엔진; 사용자 정의 전략; 상품간 스프레드 | 전략 주문 지원되나 내재가격 역량은 문서화가 덜 됨 [unverified] |
+| **시장데이터 피드** | UDP multicast를 통한 EMDI (비넷팅 MBP), MDI (넷팅), EOBI (전체 MBO/L3), RDI (기준정보) | 독자 바이너리; Solace PubSub+ 메시징 미들웨어 |
+| **주문 입력 프로토콜** | ETI (독자 바이너리, FIX 5.0 SP2 시맨틱스) + FIX 4.2/4.4 | FIX 기반 + 독자 API [unverified] |
+| **장외거래** | T7 Entry Services (TES): Block, EFP, EFS, Multilateral, Brokerage; Eurex EnLight (선별적 RFQ) | 협의 거래 지원; 구체적 장외거래 체계는 공개 문서화가 덜 됨 [unverified] |
+| **마켓 메이킹 지원** | Mass quote 기능; 비지속성 lean 호가; Designated Market Maker 프로그램 | Liquidity Provider (LP) 제도 |
+| **자기거래 방지** | SMP Type A (동일 참가자, 동일 SMP ID) -- Release 12.1 이후 시장 전체 | 이용 가능 [unverified -- 구체적 메커니즘 비공개] |
+| **변동성 보호** | Volatility Interruption (정적 + 동적 범위); 상품 전체 또는 종목 수준 | SVIH (Static/Dynamic Volatility Interruption) |
+| **주 데이터센터** | Equinix FR2, 프랑크푸르트 (제3자 시설에 호스팅) | KRX 소유 부산 데이터센터 (파생상품) |
+| **DR 접근법** | 시뮬레이션 인프라를 DR로 재활용; 정기 테스트 (연 2회); 페일오버 후 호가장 비어있음 | 서울과 부산 간 액티브/스탠바이 [unverified] |
+| **파티션 모델** | 13개 파티션; 상품이 파티션에 분배; 파티션 수준 장애 격리 | 통합 모델 [unverified -- 구체적 파티션 세부사항 비공개] |
+| **규제 체계** | BaFin / ESMA (MiFID II / MiFIR / EMIR) | FSC / FSS |
+| **기술 수출** | T7을 BSE India 및 기타에 라이선스 | Exture+를 라오스, 캄보디아, 아제르바이잔 등에 수출 |
+
+### 주요 차별화 요소 (Key Differentiators)
+
+**Eurex T7의 강점 (파생상품 특화):**
+
+1. **내재가격 및 스프레드 엔진:** 복합 전략 및 상품간 스프레드에 걸친 implied-in 및 implied-out 매칭의 네이티브 지원은 파생상품 거래를 위한 중요한 아키텍처 역량이다; 관련 상품 간 합성 유동성 발견을 가능하게 한다
+2. **극히 낮은 내부 지연시간:** ~2.8 마이크로초의 내부 매칭 지연시간은 전 세계적으로 가장 빠른 수준에 속한다; PS 게이트웨이 통합과 결합하여 높은 결정론적 성능을 제공한다
+3. **파티션 기반 장애 격리:** 독립적 파티션은 한 상품 그룹(예: 변동성 이벤트 시 주가지수 옵션)의 활동 급증이나 문제가 다른 상품(예: 금리 선물)의 성능을 저하시키지 않도록 보장한다
+4. **포괄적 장외거래 생태계:** TES (Block/EFP/EFS/Multilateral/Brokerage) + Eurex EnLight (선별적 RFQ)가 장내 청산과 통합된 풍부한 장외거래 체계를 제공한다
+5. **Mass quoting 최적화:** 플랫 바이너리 인코딩과 lean (비지속성) 호가가 대규모 옵션 시리즈에 걸친 고빈도 마켓 메이킹을 위해 특별히 설계되었다
+6. **EOBI 주문별 피드:** 깊이 제한이 없는 전체 Level 3 시장데이터, 네이티브 바이너리 인코딩 (FAST 디코딩 오버헤드 없음), 일관되게 가장 빠른 데이터 경로 -- 개별 주문/호가 활동을 확인해야 하는 파생상품 참가자에게 핵심적이다
+7. **광범위한 공개 문서:** Deutsche Boerse는 T7 내부 구조, 지연시간 성능, 시스템 역학에 대해 비정상적으로 상세한 기술 문서를 발행한다 -- 참가자 개발 팀에게 귀중한 자료이다
+
+**KRX Exture+ / Exture 3.0의 강점:**
+
+1. **통합 거래소 모델:** 단일 거래소가 모든 한국 자본시장 상품(주식, 채권, 파생상품)을 한 지붕 아래에서 커버하여 교차 거래소 복잡성을 줄인다
+2. **완전한 기술 독립성:** 제3자 시설 운영자에 대한 의존 없이 자체 보유 데이터센터 인프라 (파생상품용 부산)
+3. **폭넓은 기술 수출 실적:** KRX는 다수의 아시아 시장(라오스, 캄보디아, 아제르바이잔)에 걸쳐 수출 관계를 확립하였다
+4. **지리적 분리:** 서울 (주식)과 부산 (파생상품) 데이터센터가 자연적인 지리적 재해복구를 제공한다
+5. **Exture 3.0 현대화:** 최근 시스템 업그레이드가 용량 증대와 함께 거래 처리 속도 ~30% 개선을 달성하였다
+
+**아키텍처 관찰사항:**
+
+- T7의 파티션 모델은 수천 개의 종목 시리즈를 가진 파생상품 거래소에 적합하다 (옵션 체인이 대량의 종목을 생성); 파티션 수준 격리는 고변동성 시기 옵션 시장에서 흔한 "noisy neighbor" 효과를 방지한다
+- KRX의 통합 모델은 종목 간 더 균일한 지연시간을 제공할 수 있으나, 파생상품 거래량 급증이 공유 인프라에 영향을 미칠 때 어려움에 직면할 수 있다
+- T7의 Equinix 코로케이션 접근법은 더 폭넓은 연결 제공자 및 코로케이션 참가자 생태계에 대한 접근을 제공하는 반면, KRX의 자체 시설 모델은 인프라에 대한 더 직접적인 통제를 부여한다
+- T7의 시뮬레이션 인프라를 재활용하는 DR 모델은 비용 효율적인 접근법이지만, DR 용량이 운영 용량보다 낮을 수 있다는 것을 의미한다; KRX의 지리적 분리(서울/부산)는 자연적 복원력을 제공한다
+- 양 거래소 모두 전 세계적으로 경쟁력 있는 수준으로 지연시간을 줄이는 데 투자해 왔으나, T7의 공개된 내부 매칭 지연시간(~2.8 마이크로초)은 KRX의 공개 수치보다 현저히 빠르다
+
+---
+
+## 출처 (Sources)
+
+### 공식 Eurex / Deutsche Boerse 문서
+- [Source: Eurex, "T7 trading architecture", https://www.eurex.com/t7/, accessed 2026-04-07]
+- [Source: Eurex, "T7", https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07]
+- [Source: Eurex, "T7 Release 14.0", https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0, accessed 2026-04-07]
+- [Source: Eurex, "T7 Release 14.1", https://www.eurex.com/ex-en/support/initiatives/t7release14-1, accessed 2026-04-07]
+- [Source: Eurex, "Announcement of T7 Release 14.1", https://www.eurex.com/ex-en/find/circulars/circular-4803582, accessed 2026-04-07]
+- [Source: Eurex, "T7 R.13.1 Enhanced Trading Interface Manual", https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07]
+- [Source: Eurex, "T7 R.12.1 EMDI/MDI/RDI Manual", https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-07]
+- [Source: Eurex, "T7 Disaster Recovery Concept 2025 v1.2", https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf, accessed 2026-04-07]
+- [Source: Eurex, "Eurex T7 Entry Services", https://www.eurex.com/ex-en/trade/eurex-t7-entry-services, accessed 2026-04-07]
+- [Source: Eurex, "Block Trades", https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades, accessed 2026-04-07]
+- [Source: Eurex, "Eurex EnLight", https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]
+- [Source: Eurex, "Strategy trading -- Trading in complex instruments", https://www.eurex.com/ex-en/trade/order-book-trading/trading-in-complex-instruments, accessed 2026-04-07]
+- [Source: Eurex, "Volatility Interruption Functionality", https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality, accessed 2026-04-07]
+- [Source: Eurex, "Sponsored Access", https://www.eurex.com/ex-en/trade/sponsored-access, accessed 2026-04-07]
+- [Source: Eurex, "T7: Introduction of a consolidated partition-specific Gateway and Matching Engine process", https://www.eurex.com/ex-en/find/circulars/circular-2404602, accessed 2026-04-07]
+- [Source: Eurex, "T7: Consolidation of the Market Data Distributor and Matching Engine processes", https://www.eurex.com/ex-en/find/circulars/T7-Consolidation-of-the-Market-Data-Distributor-and-Matching-Engine-processes-on-the-Matching-Engine-Host-3682674, accessed 2026-04-07]
+- [Source: Eurex, "Technical Upgrade of T7 partitions", https://www.eurex.com/ex-en/support/information-channels/implementation-news/Technical-Upgrade-of-T7-partitions--4079882, accessed 2026-04-07]
+- [Source: Eurex, "Completion of the T7 matching engine server hardware upgrade", https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-07]
+- [Source: Deutsche Boerse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]
+- [Source: Deutsche Boerse, "Internal T7 Latency Performance Updates", https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-07]
+- [Source: Deutsche Boerse, "Open Day 2019 -- T7 infrastructure and latency", https://www.deutsche-boerse.com/resource/blob/1637232/da0ae611905acda0d7502260903a0835/data/Open-Day-2019_T7-Latency-Roadmap_Andreas-Lohr_final.pdf, accessed 2026-04-07]
+- [Source: Xetra, "Co-Location Services", https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-07]
+- [Source: Eurex, "T7 Derivatives Markets Participant and User Maintenance Manual R.13.1", https://www.eurex.com/resource/blob/4332334/61e2e29f08a63ff88d20ee30c4dc2049/data/T7_R.13.1_Derivatives_Market_-_Participant_and_User_Maintenance_Manual_Version_1.pdf, accessed 2026-04-07]
+- [Source: Eurex, "Readiness Newsflash -- Our path for 2026!", https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026--4867350, accessed 2026-04-07]
+
+### 제3자 출처 (Third-Party Sources)
+- [Source: OnixS, "Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK", https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]
+- [Source: MarketsWiki, "Eurex", https://www.marketswiki.com/wiki/Eurex, accessed 2026-04-07]
+- [Source: WallStreetMojo, "Eurex Exchange", https://www.wallstreetmojo.com/eurex-exchange/, accessed 2026-04-07]
+
+### KRX / Exture+ 출처
+- [Source: Koscom, "KRX Trading System", https://english.koscom.co.kr/eng/main/contents.do?menuNo=300005, accessed 2026-04-07]
+- [Source: Solace, "Korea Exchange Deploys Solace Systems", October 2013, https://www.prweb.com/releases/2013/10/prweb11191574.htm, accessed 2026-04-07]

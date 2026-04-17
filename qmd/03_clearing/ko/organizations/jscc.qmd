@@ -1,0 +1,428 @@
+---
+title: "Japan Securities Clearing Corporation (JSCC, 일본증권청산기관)"
+subtitle: "청산결제 > 청산기관"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 업데이트:** 2026-04-07
+> **조사 등급:** Tier 2 (Standard)
+> **유형:** CCP (중앙청산소, Central Counterparty)
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | Japan Securities Clearing Corporation (日本証券クリアリング機構) |
+| 약칭 | JSCC |
+| 웹사이트 | [https://www.jpx.co.jp/jscc/en/](https://www.jpx.co.jp/jscc/en/) |
+| 설립연도 | 2002년 (설립); 2003년 1월 (청산업무 개시) |
+| 소재지 | 일본 / 도쿄 |
+| 소유구조 | Japan Exchange Group, Inc. (JPX, 일본거래소그룹)의 완전자회사 |
+| 모회사 / 그룹 | Japan Exchange Group, Inc. (JPX) -- TSE 상장 (TYO: 8697) |
+| 감독기관 | Japan Financial Services Agency (JFSA, 일본금융청) -- 주 감독기관; Bank of Japan (BOJ, 일본은행) -- IRS 청산업무 감독 |
+| CPMI-IOSCO PFMI 준수 | 준수 -- PFMI 자체평가 공시(최신: 2025년 3월 31일) 및 분기별 정량공시 발간 ([JSCC PFMI Disclosure](https://www.jpx.co.jp/jscc/en/company/cimhll0000000osu-att/JSCC_PFMI_Disclosure_20250331_EN.pdf)) |
+| QCCP 지위 | 인정 -- EU CRR에 따른 적격중앙청산소(QCCP) 인정; US CFTC 면제 DCO (2015년 10월 최초, 2025년 9월 수정); 캐나다(Ontario Securities Commission), 호주, 홍콩, 싱가포르에서도 인정 ([Source: JSCC Regulatory Status page](https://www.jpx.co.jp/jscc/en/company/regulatory-status.html)) |
+
+> **JPX 그룹 구조:** JPX는 Tokyo Stock Exchange (TSE, 도쿄증권거래소), Osaka Exchange (OSE, 오사카거래소), JSCC를 3대 핵심 운영 자회사로 보유한 지주회사이다. JSCC는 TSE와 OSE의 모든 장내 상품에 대한 유일한 CCP 역할을 수행하며, OTC 파생상품(IRS, CDS) 및 OTC JGB(일본국채) 거래의 청산도 담당한다. JSCC는 JPX 연결 영업수익의 10% 이상을 차지한다. 이러한 수직통합 모델은 KRX가 내부 CCP 부서를 통해 청산 기능을 수행하는 것과 유사하나, JSCC는 JPX 그룹 내 별도 법인이라는 차이가 있다.
+
+### 주요 연혁 (Key Historical Milestones)
+
+| 연도 | 사건 |
+|------|------|
+| 2002 | JSCC 설립 -- 5개 일본 거래소(TSE, 오사카증권거래소, 나고야SE, 삿포로SE, 후쿠오카SE)와 일본증권업협회(JSDA)가 공동 출자 |
+| 2003 (1월) | 증권거래법에 따른 일본 최초의 "증권채무인수업무" 청산기관 인가 취득; 일본 증권거래소 현물주식 거래에 대한 청산업무 개시 |
+| 2004 | 오사카증권거래소 장내 파생상품(선물/옵션) 청산으로 업무 확대 |
+| 2007 | PTS (사설거래시스템) 거래 청산 개시 |
+| 2011 (7월) | CDS 청산서비스 개시 (TSE에서 시작, JSCC로 이관) |
+| 2012 (10월) | IRS (금리스왑) 청산서비스 개시 |
+| 2013 (1월) | TSE 그룹과 오사카증권거래소 합병으로 신설된 JPX의 완전자회사로 편입 |
+| 2013 (10월) | OTC JGB 청산서비스 개시 (일본국채청산기관(JGBCC)의 청산 기능 흡수) |
+| 2014 | 일본, 특정 OTC 파생상품에 대한 의무청산제도 시행 (iTraxx Japan 지수 CDS; 엔화 표시 IRS) |
+| 2018 (5월) | JGB 결제주기 T+1로 단축 (기존 T+2) |
+| 2019 (7월) | 주식 결제주기 T+3에서 T+2로 단축 |
+| 2020 (7월) | Japan Commodity Clearing House Co., Ltd. (JCCH)와 합병; 장내 상품 파생상품(TOCOM 상품: 금, 고무, 에너지 등) 청산으로 업무 확대 |
+| 2023 (11월) | 장내 선물·옵션 증거금 산출방법론을 SPAN에서 VaR로 전환 |
+| 2024 (3월) | IRS와 장내 파생상품 간 교차증거금(cross-margining) 기능 강화 (3개월 TONA 선물을 IRS 교차증거금에 포함) |
+| 2024 | Asia Risk Awards "올해의 청산기관(Clearing House of the Year)" 수상; IRS 청산 규모 사상 최대 ¥8.3경(US$56.3조)으로 2배 증가 |
+| 2025 (9월) | CFTC, 수정 면제 DCO 명령 및 노액션 레터 발행 -- 미국 고객의 JSCC에서의 엔화 IRS 청산 허용 |
+| 2026 (4월) | 장내 파생상품 2026년 4월 프로젝트 가동(4월 13일): VaR 증거금 소프트웨어 v4.0 업그레이드, 신규 상품 도입, 증거금 상쇄 기능 강화 |
+
+[Source: [JSCC History](https://www.jpx.co.jp/jscc/en/company/history.html); [Wikipedia](https://en.wikipedia.org/wiki/Japan_Securities_Clearing_Corporation); [Risk.net - Clearing house of the year: JSCC](https://www.risk.net/awards/7959892/clearing-house-of-the-year-jscc)]
+
+---
+
+## 2. 청산 모델 (Clearing Model)
+
+### 2.1 CCP 서비스 (CCP Services)
+
+JSCC는 각각 별도의 손실부담순서(default waterfall)와 청산기금을 보유한 5개의 독립적인 청산사업을 운영한다:
+
+| 상품군 | 서비스 설명 | 주요 통계 |
+|--------|------------|----------|
+| **현물상품** (주식) | TSE, 나고야SE, 삿포로SE, 후쿠오카SE 및 PTS 거래소(Japannext, Chi-X Japan 등)에서의 모든 현물주식, ETF, REIT, 채권 거래 청산 | 124개 청산참가자 (2024년 1월 기준, 장내 파생상품과 합산) |
+| **장내 파생상품** (선물 및 옵션) | Osaka Exchange의 모든 장내 금융·상품 파생상품 청산 (지수선물/옵션, JGB 선물/옵션, TONA 선물, 상품선물(금, 원유, 고무, 전력, LNG 포함)) | 지수선물, JGB 선물, 석유선물, 장내 상품 파생상품 각각 별도 공동기금 유지 |
+| **IRS (금리스왑)** | 엔화 표시 IRS(플레인바닐라, OIS/TONA 기반) OTC 청산; USD, EUR, AUD 표시 IRS도 청산 | 26개 청산참가자; 2024년 ¥8.3경 청산; 글로벌 엔화 IRS 청산의 약 60~70% 점유; 개시증거금(IM) 약 ¥1.5~1.6조 ([Source: Clarus FT Q1 2025](https://www.clarusft.com/whats-new-in-ccp-disclosures-q1-2025/)) |
+| **CDS (신용부도스왑)** | iTraxx Japan 지수 CDS OTC 청산 | 11개 청산참가자; IM 약 ¥620억 (2025년 1분기) ([Source: Clarus FT Q1 2025](https://www.clarusft.com/whats-new-in-ccp-disclosures-q1-2025/)) |
+| **OTC JGB** | OTC JGB 현물 및 레포 거래 청산 | 41개 청산참가자; 국내 JGB 거래의 약 80%를 JSCC에서 청산 (규제 의무 없음) |
+
+> **KRX와의 비교:** KRX는 자체 시장의 장내 주식 및 파생상품에 대해 내부적으로 CCP 역할을 수행하는 반면, JSCC는 복수의 거래소에 서비스를 제공하는 별도 법인이다. 양 기관 모두 각각의 장내 상품에 대한 유일한 국내 CCP 역할을 수행한다. JSCC의 OTC 청산 범위(IRS, CDS, JGB)는 KRX의 현재 CCP 서비스보다 넓다.
+
+### 2.2 채무인수 절차 (Novation Process)
+
+- **장내 상품(주식, 장내 파생상품):** JSCC는 거래소에서 매매가 체결되는 시점에 채무인수(novation)를 통해 의무를 인수한다. JSCC가 모든 매도자의 매수자, 모든 매수자의 매도자가 되어 거래 상대방 간의 원래 쌍무적 의무를 소멸시킨다.
+- **OTC 파생상품(IRS, CDS):** JSCC에 거래가 등록/수락되면 원래의 쌍무 계약이 소멸되고, JSCC와 각 원 거래상대방 간의 2개 신규 계약으로 대체된다.
+- **OTC JGB:** 등록 시 유사한 채무인수(novation) 수행; JSCC가 인도와 대금 지급 양쪽의 의무를 인수한다.
+
+[Source: [JSCC DVP Settlement System](https://www.jpx.co.jp/jscc/en/cash/cash/assumption-obligation/dvp.html)]
+
+### 2.3 차감 (Netting)
+
+- **현물상품:** 모든 청산참가자 간 인도 및 대금 지급 의무의 다자간차감. 증권 인도 의무와 대금 지급 의무는 종목별, 결제일별로 각각 차감되어 참가자당 종목당 단일 순의무가 산출된다.
+- **장내 파생상품:** 변동증거금의 일일 시가평가(mark-to-market) 차감. 만기/행사 시 실물인도 의무(예: JGB 선물)가 차감된다.
+- **IRS:** 각 지급일에 대금 지급 의무의 다자간차감.
+- **OTC JGB:** 증권 인도 및 현금 지급 의무 모두 다자간차감 (레포 거래는 쌍무 차감, 아웃라이트 거래는 다자간차감).
+
+### 2.4 청산회원 (Clearing Membership)
+
+JSCC는 각 청산사업별로 별도의 청산자격을 유지한다. 하나의 회사가 하나 이상의 사업에 대한 청산자격을 보유할 수 있다.
+
+| 청산사업 | 참가자 유형 | 요건 | 회원 수 (대략) |
+|---------|------------|------|--------------|
+| 현물상품 | 청산참가자; 비청산참가자 (청산참가자를 경유) | 순자산, 자기자본비율, 운영능력, BOJ 당좌계좌 또는 지정결제은행 | 약 100개 이상 (장내 파생상품 합산: 2024년 1월 기준 124개) |
+| 장내 파생상품 | 청산참가자 (지수선물, JGB 선물, 상품 파생상품 각각 별도 자격) | 최소 순자산, 충분한 재무자원, 운영 시스템, 청산기금 출연 | 상기 124개에 포함 |
+| IRS | IRS 청산참가자; 고객청산(Client Clearing, 바이사이드 접근을 위해 도입) | 최소 순자산 ¥100억 [미확인]; OTC 파생상품 운영능력; 통상 ISDA 회원 자격 | 26 |
+| CDS | CDS 청산참가자 | 최소 순자산; CDS 거래/리스크관리 역량 | 11 |
+| OTC JGB | JGB 청산참가자 | 재무 요건; 결제를 위한 BOJ-NET 접근 | 41 |
+
+> **참고:** JSCC의 2025년 9월 CFTC 수정 면제에 따라, 미국 소재 적격계약참가자(ECP)는 CFTC 등록 FCM의 계열사인 비미국 JSCC 청산회원을 통해 엔화 IRS를 청산할 수 있다. 이는 고객청산 방식이며, 직접 회원 가입이 아니다. [Source: [CFTC Letter No. 25-32](https://www.cftc.gov/csl/25-32/download)]
+
+---
+
+## 3. 리스크 관리 (Risk Management)
+
+### 3.1 증거금 체계 (Margin Framework)
+
+JSCC는 2023년 11월 장내 파생상품 증거금 산출방법론을 SPAN에서 VaR로 전환하였으며, 이는 수년간의 업계 협의를 거친 대규모 개혁이었다.
+
+| 상품군 | 방법론 | 신뢰수준 | 보유기간 | 주요 세부사항 |
+|--------|--------|---------|---------|-------------|
+| **현물상품** (주식) | VaR 기반 (결제 리스크에 대한 DVP 증거금) | 99% [미확인] | T+2 결제 익스포저 | 결제기간 동안의 잠재적 가격변동에 기반하여 증거금 산출; 담보로 현금 및 적격증권 수용 |
+| **장내 파생상품** (선물 및 옵션) | **VaR** (2023년 11월 이후; 이전 SPAN) -- 2가지 방식: Historical Simulation VaR (HS-VaR) 및 Alternative Simulation VaR (AS-VaR) | 99% 이상 | 1~2일 (상품별 상이) | VaR는 1,250개 이상의 과거 데이터 포인트 사용 (SPAN의 16개 시나리오 대비); 시장 민감도가 높은 증거금 산출; VaR Margin Software (VMA) v3.0, 2026년 4월 v4.0 업그레이드 예정 |
+| **IRS** | Historical Simulation -- Expected Shortfall (HS-ES) | 최악 1% 평균 (ES) | 5일 (자기계정); 7일 (고객) | 참조기간: 1,250 영업일; NPV의 금리변동 리스크 포괄; 집중도 부가금 및 유동성 리스크 수수료 포함 |
+| **CDS** | VaR / Expected Shortfall | 99.5% 이상 [미확인] | 5일 | 스프레드 리스크, 부도전이(jump-to-default) 리스크 포괄; 2011년 7월 VaR 최초 도입 |
+| **OTC JGB** | VaR 기반 | 99% 이상 [미확인] | 1~2일 [미확인] | 결제기간 중 가격변동 리스크 포괄 |
+
+**교차증거금(Cross-Margining):** 2024년 3월부터 JSCC는 IRS 포지션과 장내 파생상품(특히 3개월 TONA 선물 및 10년 JGB 선물) 간 교차증거금 기능을 제공한다. TONA OIS, TONA 선물, JGB 선물을 결합한 샘플 포트폴리오에서 증거금 절감 효과 추정치는 50~60%이다. [Source: [Risk.net - Clearing house of the year: JSCC](https://www.risk.net/awards/7959892/clearing-house-of-the-year-jscc)]
+
+> **KRX와의 비교:** KRX는 장내 파생상품에 수정 SPAN 기반 방법론(KRX-SPAN)을, OTC 청산에는 VaR 기반 방법을 사용한다. JSCC의 2023년 11월 SPAN에서 VaR로의 전환은 글로벌 추세(LCH, Eurex는 오래전부터 VaR/PRISMA 사용)에 부합하며, KRX는 장내 파생상품에 여전히 SPAN 파생 시스템을 사용하고 있다.
+
+### 3.2 증거금 징수 일정 (Margin Call Schedule)
+
+| 상품군 | 정기 증거금 징수 | 일중 증거금 징수 |
+|--------|----------------|----------------|
+| 현물상품 | 장마감 후 산출; 결제 전 익일 오전까지 납부 | 변동성 확대 시 일중 징수 가능 |
+| 장내 파생상품 | 장마감 후 산출; 익영업일 개시 전까지 납부 | 미실현손실이 임계값 초과 시 일중 증거금 징수 발동 |
+| IRS | 장마감 평가 기반 일일 증거금 징수 | 스트레스 상황 시 일중 증거금 징수 |
+| CDS | 일일 증거금 징수 | 일중 징수 가능 |
+| OTC JGB | 일일 증거금 징수 | 일중 징수 가능 |
+
+[Source: [JSCC Margin page](https://www.jpx.co.jp/jscc/en/risk/margin.html)]
+
+### 3.3 손실부담순서 (Default Waterfall)
+
+JSCC는 각 청산사업별로 **별도의 손실부담순서**를 유지한다. 기본 원칙은 "부도자 우선 부담(Defaulter Pays First)"으로, 부도 회원의 자기 재원이 모두 소진된 후에야 상호부담(mutualized) 재원이 사용된다. JSCC는 부도자 재원과 상호부담 청산기금 사이에 자기자본("skin in the game", CCP 자기자본 출연분)을 배치하여 인센티브 정합성을 유지한다.
+
+#### 일반적 손실부담순서 구조 (모든 청산사업에 적용):
+
+| 단계 | 재원 | 설명 | 대략적 규모 |
+|------|------|------|-----------|
+| **1** | 부도자 증거금 | 부도 청산참가자가 예치한 개시증거금, 변동증거금 및 기타 담보 | 참가자별 상이 |
+| **2** | 부도자 청산기금 출연분 | 부도 참가자의 해당 청산기금 출연분 | 참가자별 상이 |
+| **3** | JSCC 자기 재원 (1차 -- 결제보증적립금) | JSCC의 전용 자본 출연분("skin in the game") -- JSCC 주주자본에서 충당 | 사업별 상이; 예: IRS: 최대 ¥20억; 장내 파생상품: 총 ¥91억 결제보증적립금 중 일부(비에너지 상품선물 관련 ¥70억은 OSE 출연) |
+| **4** | 비부도 참가자 청산기금 + JSCC 추가 출연(2차) | 생존 회원의 상호부담 청산기금 출연분(비례 배분 소진) 및 JSCC 추가 자본 출연 | 하단 청산기금 규모 참조 |
+| **5** | 추가분담금 부과 권한 (특별청산수수료) | JSCC는 비부도 청산참가자에게 추가 분담금을 부과할 수 있음 (상한 있음, 통상 청산기금 출연분의 1배까지) | 청산기금 출연분의 최대 1배 [미확인] |
+| **6** | JSCC 잔여 자본 / 회복 수단 | JSCC의 잔여 자기자본; 변동증거금 이익 삭감(VMGH) 적용 가능; 포지션 부분 청산 가능 | JSCC 잔여 자기자본 |
+
+> **IRS 손실부담순서 세부사항 참고:** JSCC는 1차 IRS 결제보증적립금으로 최대 ¥20억을 출연하고, 비부도 참가자의 IRS 청산기금과 함께 비례 소진되는 추가 ¥20억을 출연한다 (IRS에 대한 JSCC 총 "보상자본": 최대 ¥40억). [Source: [JSCC Loss Compensation page](https://www.jpx.co.jp/jscc/en/risk/default-waterfall.html); [OSC JSCC Exemption Application](https://www.osc.ca/sites/default/files/2024-07/jscc_20240718_application-exemption_0.pdf)]
+
+### 3.4 공동기금 / 보증기금 (Default Fund / Guarantee Fund)
+
+JSCC는 각 청산사업별로 **별도의 청산기금**을 운영한다. 대부분의 상품에 대해 최대 2개 청산참가자의 동시 부도를 커버할 수 있는 규모(Cover 2 기준)로 산정된다.
+
+| 청산사업 | 부도 커버 기준 | 청산기금 대략적 규모 | 비고 |
+|---------|-------------|-------------------|------|
+| 현물상품 | Cover 2 | [미확인 -- 장내 전체 수치에 포함] | 청산참가자 출연으로 조성 |
+| 장내 파생상품 -- JGB 선물 및 옵션 | Cover 2 | ¥647억 ($4.35억, 2024년 4분기) -- 전년 대비 52.4% 증가 | BOJ 정책 정상화 및 JGB 변동성 확대로 대폭 증가 ([Source: Risk.net](https://www.risk.net/risk-quantum/7961205/jscc-dtcc-government-bond-units-see-default-fund-surge)) |
+| 장내 파생상품 -- 지수선물 | Cover 2 | [미확인 -- 별도 기금] | |
+| 장내 파생상품 -- 상품 | 비석유: Cover 1 (최대 단일 참가자); 석유: Cover 2 | [미확인] | 비에너지 상품 관련 OSE 출연 결제보증적립금 ¥70억 포함 |
+| IRS | Cover 2 | 참가자당 최소 출연: ¥1억; IRS 총 IM 약 ¥1.5조 | 상위 2개 부도 시 증거금 초과 손실을 커버하도록 청산기금 규모 산정 |
+| CDS | Cover 2 | [미확인 -- 참가자 11개사로 소규모] | |
+| OTC JGB | Cover 2 | ¥2,370억 (2025년 6월 기준) | 최대 단일 청산기금으로, 일본 JGB 시장의 방대한 규모를 반영 |
+
+> **JSCC는 장내 파생상품 부문의 10개 별도 공동기금 통합을 검토 중이며**(2026년 초 기준), 이는 보다 광범위한 회원 및 부도 관리 개혁의 일환이다. 통합 시 구조가 간소화되고 리스크의 상호부담(mutualization) 효율성이 향상될 수 있다. [Source: [Risk.net](https://www.risk.net/risk-management/7963158/jscc-considers-default-fund-consolidation)]
+
+### 3.5 스트레스 테스트 및 백테스트 (Stress Testing & Back-testing)
+
+- **스트레스 테스트:** JSCC는 과거 및 가상 시나리오를 활용하여 증거금 및 청산기금 적정성에 대한 정기 스트레스 테스트를 실시한다. 스트레스 시나리오에는 극단적 시장변동(예: 2008년 금융위기, 2011년 동일본대지진, 2020년 COVID 충격, BOJ 정책 변화)이 포함된다.
+- **백테스트:** 증거금 모델 적정성에 대한 일일 백테스트를 실시하며 결과는 PQD 공시에 발간된다. VaR 모델은 최소 99% 커버리지를 목표로 하며, 이는 99% 이상의 영업일에서 증거금이 실제 포트폴리오 손실을 커버해야 함을 의미한다.
+- **역스트레스 테스트:** JSCC는 부도 대응 재원을 소진시킬 수 있는 시나리오를 식별하기 위해 역스트레스 테스트를 실시한다.
+- **빈도:** 스트레스 테스트 및 백테스트는 청산기금 적정성에 대해 최소 월 1회, 증거금 적정성에 대해 매일 실시된다.
+
+[Source: [JSCC PFMI Disclosure](https://www.jpx.co.jp/jscc/en/company/cimhll0000000osu-att/JSCC_PFMI_Disclosure_20250331_EN.pdf)]
+
+### 3.6 회복 및 정리 (Recovery & Resolution)
+
+- **회복 수단:**
+  - **추가분담금 부과 권한:** JSCC는 비부도 참가자에게 특별청산수수료를 부과할 수 있다 (상한 있음).
+  - **변동증거금 이익 삭감(VMGH):** IRS 및 CDS 청산에 적용 가능; 이익 포지션(in-the-money) 참가자에 대한 변동증거금 지급액에 삭감을 적용한다.
+  - **부분적 포지션 청산(Partial tear-up):** JSCC는 경매 또는 생존 회원에 대한 강제배분을 통해 부도자의 일부 또는 전체 포지션을 종료할 권한을 보유한다.
+  - **포지션 경매:** IRS, CDS, OTC JGB의 경우, 비부도 참가자가 부도자의 포트폴리오를 인수하기 위한 경매 절차에 참여한다.
+- **정리 기관:** JFSA(일본금융청)가 금융상품거래법(FIEA)에 따라 JSCC에 대한 정리 권한을 보유한다. JFSA는 업무개선명령을 발할 수 있고, 검사를 실시할 수 있으며, 궁극적으로 JSCC의 인가를 취소할 수 있다.
+- **별도의 CCP 정리 체계 부재:** 일본에는 EU의 CCP 회복 및 정리 규정(CCPRRR)에 비견되는 전용 CCP 회복·정리 체계가 없다. 정리는 기존 FIEA의 권한에 의존한다. [미확인]
+
+> **KRX와의 비교:** KRX의 부도 관리는 부도자 증거금, KRX 자체 손해배상공동기금 출연분, 비부도 회원의 손해배상공동기금 순으로 진행된다. KRX는 결제적립금(Settlement Risk Fund)도 유지한다. KRX와 JSCC 모두 "부도자 우선 부담" 원칙을 따르나, JSCC의 체계는 상품군별 별도 손실부담순서로 더 세분화되어 있다.
+
+---
+
+## 4. 결제 (Settlement)
+
+### 4.1 결제주기 (Settlement Cycle)
+
+| 상품 | 결제주기 | 비고 |
+|------|---------|------|
+| 현물주식 (TSE 및 기타 거래소) | **T+2** | 2019년 7월 16일 T+3에서 단축 |
+| 장내 파생상품 | T+1 (일일 결제 / 변동증거금); 실물인도는 상이 | JGB 선물 실물인도는 인도일 T+2 |
+| IRS | 지급 빈도에 따라 상이 | 순대금 지급 의무의 현금결제 |
+| CDS | ISDA 표준 결제 조건에 따름 | |
+| OTC JGB (아웃라이트) | **T+1** | 2018년 5월 1일 T+2에서 단축 |
+| OTC JGB (레포) | 상이 (통상 T+0~T+1) | |
+
+> **주식 T+1 관련 참고:** 2026년 4월 기준, 일본은 미국(2024년 5월 T+1 전환)과 달리 현물주식의 T+1 전환을 공식 발표하지 않았다. 업계에서 글로벌 추세를 모니터링하고 있으나, 구체적 일정은 설정되지 않았다. [미확인]
+
+### 4.2 DVP 모델 (DVP Model)
+
+- **현물상품:** JSCC는 증권과 대금의 동시결제(DVP)를 보장하는 DVP 결제시스템을 운영한다. 증권은 대금 지급이 완료되는 조건에서만 인도될 수 있으며, 그 역도 마찬가지이다. 결제는 이전 시점에 확정(final)된다.
+- **DVP 모델:** JSCC는 장내 현물상품에 **DVP Model 3** 방식을 사용한다 -- 증권은 JASDEC의 장부대체 시스템을 통해 순액 기준으로, 대금은 BOJ-NET(BOJ 당좌계좌 보유자용) 또는 지정결제은행을 통해 순액 기준으로 결제된다.
+- **OTC JGB:** BOJ-NET을 통한 DVP 결제로, 증권과 현금이 동시에 결제된다.
+
+[Source: [JSCC DVP Settlement System](https://www.jpx.co.jp/jscc/en/cash/cash/assumption-obligation/dvp.html)]
+
+### 4.3 결제완결성 (Settlement Finality)
+
+- JSCC의 DVP 결제 체계하에서, 청산참가자와 JSCC 간의 현금 및 증권 결제는 **이전 시점에 최종적이며 취소 불가능하다**.
+- 결제완결성의 법적 근거는 금융상품거래법(FIEA) 및 사채·주식 등의 진흥에 관한 법률(장부대체법)에 의해 제공된다.
+- BOJ-NET 이체는 일본은행법에 따라 확정적이다.
+- JASDEC 장부대체는 장부대체법에 따라 확정적이다.
+
+[Source: [JSCC Settlement page](https://www.jpx.co.jp/jscc/en/risk/collateral/settlement.html)]
+
+### 4.4 중앙예탁기관 / 결제 인프라 (CSD / Settlement Infrastructure)
+
+| 인프라 | 역할 | 운영자 |
+|--------|------|--------|
+| **JASDEC** (Japan Securities Depository Center, Inc., 일본증권보관진흥기구) | 주식, 사채, 투자신탁 등의 중앙예탁기관(CSD); 장부대체 시스템 운영 | 민간 법인; 장부대체법에 따른 지정 CSD |
+| **BOJ-NET** (Bank of Japan Financial Network System) | 은행 간 자금결제를 위한 RTGS 시스템; JGB 장부대체도 처리 | 일본은행(Bank of Japan) |
+| **JDCC** (JASDEC DVP Clearing Corporation) | JASDEC의 DVP 시스템을 통한 장외(비거래소 거래, NETD) 증권결제를 위한 CCP | JASDEC 자회사 |
+
+> **장내 주식 결제 흐름:** TSE/기타 거래소에서 매매 --> JSCC에서 청산(채무인수 + 다자간차감) --> JASDEC 장부대체를 통한 증권 인도 --> BOJ-NET 또는 지정결제은행을 통한 대금 결제 --> DVP 완결
+
+> **KRX와의 비교:** 한국에서는 한국예탁결제원(KSD)이 CSD 겸 결제대행 기관으로, KRX가 CCP로 기능한다. 이 구조는 일본의 JASDEC + JSCC 체계와 유사하다. 양국 모두 주식 결제에 DVP Model 3 방식을 사용한다.
+
+### 4.5 CSD 연계 (CSD Linkages)
+
+- **JASDEC:** 모든 주식 및 사채 결제를 위한 주요 국내 CSD 연계.
+- **BOJ (JGB CSD 역할):** JGB 결제는 JASDEC이 아닌 BOJ-NET의 장부대체 시스템을 통해 이루어진다.
+- **국제 연계:** JASDEC은 일본 증권의 국경 간 결제를 위해 국제예탁기관(Euroclear, Clearstream)과 연계를 유지하나, 이는 JSCC가 아닌 JASDEC의 연계이다.
+
+### 4.6 증권 대차 (Securities Lending & Borrowing)
+
+- JSCC는 현물상품의 결제를 지원하기 위한 증권 대차 시설을 운영하며, 청산참가자가 인도 의무 이행을 위해 증권을 차입하여 결제 실패를 방지할 수 있도록 한다.
+- JGB 거래의 경우, BOJ도 시장 유동성을 지원하는 증권대차시설(SLF)을 운영한다.
+
+---
+
+## 5. 기술 및 인프라 (Technology & Infrastructure)
+
+### 5.1 인터페이스 프로토콜 (Interface Protocols)
+
+| 시스템 / 프로토콜 | 설명 |
+|-----------------|------|
+| **청산 시스템** | JSCC는 각 청산사업별 자체 청산 시스템을 운영; 거래소(TSE arrowhead, OSE J-GATE)와 거래 피드로 연결 |
+| **JASDEC 연결** | 증권결제를 위한 JASDEC 장부대체 시스템과의 인터페이스 (자체 프로토콜) |
+| **BOJ-NET 연결** | 자금결제 및 JGB 이체를 위한 BOJ-NET과의 인터페이스 |
+| **IRS 청산 플랫폼** | 거래 매칭 플랫폼(예: MarkitWire/DTCC, Tradeweb) 및 거래 체결 플랫폼(SEF)으로부터 거래 등록 수용 |
+| **VaR Margin Software (VMA)** | 자체 증거금 산출 엔진; 현재 v3.0, 2026년 4월 v4.0 업그레이드; 청산참가자도 사전 증거금 추정을 위해 동일 소프트웨어 실행 가능 |
+| **PTS 연결** | 장외 주식 거래 청산을 위해 복수의 PTS 거래소(Japannext, Chi-X Japan)와 연결 |
+| **FIX 프로토콜** | PTS 및 해외 참가자와의 일부 연결에 사용 [미확인] |
+
+### 5.2 복원력 (Resilience)
+
+- **업무연속성계획(BCP):** JSCC는 주 운영사이트와 지리적으로 분리된 보조 운영사이트(백업 센터)를 포함한 포괄적 BCP를 유지한다.
+- **RPO/RTO:** 핵심 시스템의 복구시간목표(RTO) 2시간 [미확인]; 복구시점목표(RPO)는 데이터 무손실을 목표로 한다.
+- **시스템 가용성:** JSCC의 시스템은 PFMI 원칙 17 요건에 부합하는 고가용성을 위해 설계되었다.
+- **사이버 보안:** JSCC는 JPX 그룹 차원의 사이버 보안 이니셔티브 및 정보공유 체계에 참여한다.
+- **담보 토큰화 파일럿:** JSCC는 CCP가 토큰화 기술을 활용하여 청산회원 및 바이사이드의 담보관리 프로세스(증거금 징수 자동화 포함)를 최적화하는 방안을 탐색하는 DTCC 업계 샌드박스에 참여하였다. [Source: [Risk.net](https://www.risk.net/awards/7959892/clearing-house-of-the-year-jscc)]
+
+---
+
+## 6. 규제 체계 (Regulatory Framework)
+
+### 6.1 감독기관 (Supervising Authority)
+
+| 기관 | 역할 |
+|------|------|
+| **JFSA (일본금융청)** | 주 규제·감독기관; FIEA에 따라 JSCC를 금융상품청산기관으로 인가; 검사 실시; 업무개선명령 발행 |
+| **Bank of Japan (BOJ, 일본은행)** | JSCC 감독, 특히 IRS 청산 및 시스템적으로 중요한 결제시스템; JFSA와 합동검사 실시 |
+| **경제산업성 (METI)** | 상품 파생상품 청산에 대한 감독 역할 (TOCOM 통합 이후 JFSA와 공동 감독) [미확인] |
+
+### 6.2 주요 규정 (Key Regulations)
+
+| 규정 | 설명 |
+|------|------|
+| **금융상품거래법 (FIEA)** | JSCC CCP 활동의 근거법; 제2조 제29항에서 "금융상품채무인수업무"를 정의 |
+| **금융상품청산기관에 관한 내각부령** | CCP 운영, 리스크 관리, 자본 요건에 관한 세부 규정 |
+| **JSCC 업무규정** | 각 청산사업의 청산자격, 증거금, 부도 관리, 결제, 수수료를 규율하는 JSCC 자체 규정집 |
+| **상품 파생상품 거래법** | 상품 파생상품 청산 관련 (TOCOM 통합 이후 적용) |
+| **사채·주식 등의 장부대체에 관한 법률** | 증권의 장부대체 및 결제완결성 관련 |
+
+### 6.3 PFMI 준수 (PFMI Compliance)
+
+- JSCC는 CCP에 적용되는 24개 PFMI 원칙 전체를 대상으로 포괄적인 금융시장인프라에 관한 원칙(PFMI) 자체평가 공시를 발간하며, 최신본은 2025년 3월 31일자이다.
+- JSCC는 또한 분기별 CPMI-IOSCO 정량공시(PQD)를 발간하여 증거금, 부도 대응 재원, 신용리스크, 담보, 유동성 리스크, 백테스트 등 200개 이상의 정량 데이터를 제공한다.
+- PQD 데이터는 [JSCC Quantitative Disclosure page](https://www.jpx.co.jp/jscc/en/company/fmi-pdf2.html)에서 확인할 수 있으며, CCP Global에서도 취합된다.
+
+[Source: [JSCC PFMI Disclosure (March 2025)](https://www.jpx.co.jp/jscc/en/company/cimhll0000000osu-att/JSCC_PFMI_Disclosure_20250331_EN.pdf)]
+
+### 6.4 보고 의무 (Reporting Requirements)
+
+- **거래보고:** OTC 파생상품 거래(IRS, CDS)는 G20 합의에 따라 JFSA 규정에 의거하여 인가된 거래정보저장소(trade repository)에 보고해야 한다.
+- **의무청산:** 일본은 특정 OTC 파생상품 -- 구체적으로 엔화 표시 플레인바닐라 IRS 및 iTraxx Japan CDS 지수 -- 에 대해 인가된 CCP(JSCC가 유일한 적격 CCP)에서의 청산을 의무화하고 있다.
+- **PQD 공시:** CPMI-IOSCO 기준에 따른 분기별 정량공시.
+- **연례 보고:** JSCC는 JFSA에 연례보고서 및 재무제표를 제출한다.
+
+---
+
+## 7. 상호운용성 (Interoperability)
+
+### 7.1 CCP 상호운용성 체계 (CCP Interoperability Arrangements)
+
+- JSCC는 현재 다른 CCP와의 CCP 상호운용성 체계(CCP 링크)를 운영하지 **않는다**.
+- 일본 장내 상품의 유일한 CCP이자 엔화 OTC 파생상품의 지배적 CCP로서, 상호운용성에 대한 수요가 제한적이었다.
+
+> **KRX와의 비교:** KRX와 마찬가지로, JSCC는 상호운용성 링크 없이 국내 독점 CCP로 운영된다. 이는 현물주식에 대해 상호운용 청산 체계를 운영하는 유럽 CCP들(예: LCH EquityClear, Eurex Clearing, Cboe Clear Europe)과 대조된다.
+
+### 7.2 국경 간 체계 (Cross-border Arrangements)
+
+| 관할권 | 지위 | 세부사항 |
+|--------|------|---------|
+| **미국 (CFTC)** | 면제 DCO | 2015년 10월 최초 면제 명령; 2025년 9월 수정하여 지정 조건하에 미국 고객의 엔화 IRS 청산 허용 ([Source: CFTC](https://www.cftc.gov/media/12671/JSCC%20AmendedExemptionOrder_09-12-2025/download)) |
+| **EU (ESMA)** | 제3국 CCP 인정; QCCP 지위 | EU 청산참가자가 유리한 자본 처리하에 JSCC에서 청산 가능 |
+| **캐나다 (Ontario)** | 면제 청산기관 | OSC가 JSCC에 면제 부여 (2024년 신청) ([Source: OSC](https://www.osc.ca/en/securities-law/orders-rulings-decisions/japan-securities-clearing-corporation-s-147)) |
+| **호주 (ASIC)** | 인정 [미확인] | 호주 참가자의 JSCC 접근 허용 |
+| **홍콩 (SFC)** | 인정 [미확인] | |
+| **싱가포르 (MAS)** | 인정 [미확인] | |
+
+---
+
+## 8. 수수료 (Fees)
+
+### 8.1 청산 수수료 (Clearing Fees)
+
+JSCC의 청산 수수료는 일반적으로 경쟁력이 있는 것으로 평가되며, 보도에 따르면 비슷한 OTC 상품에 대해 다른 주요 글로벌 CCP가 부과하는 수수료의 절반에서 3분의 1 수준이다.
+
+| 상품군 | 수수료 구조 | 주요 요율 |
+|--------|-----------|---------|
+| **현물상품** (주식) | 거래금액 기반 건당 수수료 | 거래소 및 거래 유형별 상이; 세부사항은 [JSCC fee schedule](https://www.jpx.co.jp/jscc/en/cash/futures/fee.html) 참조 |
+| **장내 파생상품** | 상품 유형별 계약당 수수료 | 상품별 상이; 예: JGB 선물, 지수선물, 상품선물 각각 별도 요율 |
+| **IRS** | 명목금액 기반 수수료 | 글로벌 CCP 대비 경쟁력 있음; 구체적 요율은 단일 출처에서 공개적으로 요약되지 않음 |
+| **CDS** | 명목금액 기반 수수료 | |
+| **OTC JGB** | 거래 기반 수수료 | |
+
+[Source: [JSCC Clearing Fee -- Listed Derivatives](https://www.jpx.co.jp/jscc/en/cash/futures/fee/derivativesfee.html)]
+
+### 8.2 회원 수수료 (Membership Fees)
+
+| 수수료 유형 | 금액 | 비고 |
+|------------|------|------|
+| JGB 선물 청산자격 -- 월 수수료 | ¥100,000 | 월간 청산수수료가 ¥100,000 초과 시 면제 |
+| 지수선물 청산자격 -- 월 수수료 | ¥120,000 | 월간 청산수수료가 ¥100,000 초과 시 면제 |
+| 기타 자격 수수료 | 상이 | 각 청산사업별 고유한 자격 및 월 수수료 구조 보유 |
+
+[Source: [JSCC Clearing Fee page](https://www.jpx.co.jp/jscc/en/cash/futures/fee.html)]
+
+---
+
+## 9. 최근 동향 (Recent Developments)
+
+### 2024
+- **IRS 청산 규모 사상 최대 기록:** JSCC는 2024년 엔화 IRS를 ¥8.3경(US$56.3조) 청산하여 2023년 기록의 2배를 달성하였다. 2024년 12월에는 월간 청산 규모가 최초로 ¥1,000조를 돌파하였다. 이러한 성장은 BOJ의 초완화 통화정책 탈피에 따른 일본의 금리환경 변화에 의해 주도되었다. [Source: [Risk.net](https://www.risk.net/insight/markets/7962837/japan%E2%80%99s-yen-swaps-go-global)]
+- **교차증거금 강화:** 2024년 3월 -- 3개월 TONA 선물을 IRS 교차증거금 기능에 포함하여 결합 포트폴리오에서 추정 50~60% 증거금 절감 가능.
+- **Asia Risk Award:** VaR 전환 및 교차증거금 혁신으로 Asia Risk Awards 2024 "올해의 청산기관" 수상.
+- **CFTC 협의:** 미국 고객의 JSCC IRS 청산서비스 접근에 관한 CFTC와의 논의 강화.
+
+### 2025
+- **CFTC 돌파구 (2025년 9월):** CFTC가 수정 면제 DCO 명령 및 노액션 레터(Letter No. 25-32)를 발행하여, 미국 고객(적격계약참가자)이 CFTC 등록 FCM 계열사인 비미국 청산회원을 통해 JSCC에서 엔화 IRS를 청산할 수 있게 되었다. 이는 오랜 장벽을 제거한 획기적 성과였다. [Source: [CFTC](https://www.cftc.gov/csl/25-32/download)]
+- **개시증거금 개혁 제안:** JSCC는 장내 파생상품에 대한 개시증거금 및 청산기금 산출방법 개선에 관해 청산회원과 협의를 진행하였다. [Source: [FIA](https://www.fia.org/fia/articles/fia-responds-jscc-consultation-initial-margin-and-clearing-fund-calculation-methods)]
+
+### 2026
+- **장내 파생상품 2026년 4월 프로젝트 (2026년 4월 13일 가동):** VaR Margin Software v3.0에서 v4.0으로의 업그레이드, 개선된 VaR 증거금 산출방법론, 신규 상품(Pocket Gold 100 선물, Pocket Platinum 100 선물) 도입, 자산군 간 증거금 상쇄 기능 강화를 포함하는 대규모 시스템 업그레이드. [Source: [JSCC News](https://www.jpx.co.jp/jscc/en/information/news/tsnlk000000121hh1.html)]
+- **공동기금 통합 검토:** JSCC는 회원 및 부도 관리에 대한 보다 광범위한 검토의 일환으로, 장내 파생상품 부문의 10개 별도 공동기금을 통합 구조로 재편하는 방안을 검토 중이다. [Source: [Risk.net](https://www.risk.net/risk-management/7963158/jscc-considers-default-fund-consolidation)]
+- **담보 토큰화:** JSCC는 증거금 최적화를 위한 담보 토큰화를 탐색하는 DTCC 주도 업계 샌드박스에 지속 참여 중이다.
+
+---
+
+## 출처 (Sources)
+
+### JSCC / JPX 공식 출처
+- [JSCC Official Website](https://www.jpx.co.jp/jscc/en/)
+- [JSCC Company Profile](https://www.jpx.co.jp/jscc/en/company/profile.html)
+- [JSCC History](https://www.jpx.co.jp/jscc/en/company/history.html)
+- [JSCC Regulatory Status](https://www.jpx.co.jp/jscc/en/company/regulatory-status.html)
+- [JSCC Loss Compensation (Default Waterfall)](https://www.jpx.co.jp/jscc/en/risk/default-waterfall.html)
+- [JSCC Clearing Fund](https://www.jpx.co.jp/jscc/en/risk/clearing-fund.html)
+- [JSCC Margin](https://www.jpx.co.jp/jscc/en/risk/margin.html)
+- [JSCC DVP Settlement System](https://www.jpx.co.jp/jscc/en/cash/cash/assumption-obligation/dvp.html)
+- [JSCC Clearing Fees -- Listed Derivatives](https://www.jpx.co.jp/jscc/en/cash/futures/fee/derivativesfee.html)
+- [JSCC PFMI Disclosure (March 31, 2025)](https://www.jpx.co.jp/jscc/en/company/cimhll0000000osu-att/JSCC_PFMI_Disclosure_20250331_EN.pdf)
+- [JSCC Quantitative Disclosure Page](https://www.jpx.co.jp/jscc/en/company/fmi-pdf2.html)
+- [JSCC Corporate Information (July 2025)](https://www.jpx.co.jp/jscc/en/company/rkra7f00000001jl-att/corporateinfo_202507_en.pdf)
+- [JSCC Listed Derivatives April 2026 Project](https://www.jpx.co.jp/jscc/en/information/news/tsnlk000000121hh1.html)
+- [JPX Working Paper: Migration to New Margin Calculation Method](https://www.jpx.co.jp/english/corporate/research-study/working-paper/JPXWP_Vol45e.pdf)
+
+### 규제 출처
+- [CFTC -- JSCC Amended Exemption Order (September 2025)](https://www.cftc.gov/media/12671/JSCC%20AmendedExemptionOrder_09-12-2025/download)
+- [CFTC Letter No. 25-32 -- No-Action (September 2025)](https://www.cftc.gov/csl/25-32/download)
+- [Ontario Securities Commission -- JSCC Exemption Application (July 2024)](https://www.osc.ca/sites/default/files/2024-07/jscc_20240718_application-exemption_0.pdf)
+- [JSDA -- Move to T+2 Settlement in Japan](https://www.jsda.or.jp/en/activities/research-studies/files/t2_en_cyukan_201603.pdf)
+
+### 업계 / 분석 출처
+- [Clarus FT -- What's New in CCP Disclosures Q1 2025](https://www.clarusft.com/whats-new-in-ccp-disclosures-q1-2025/)
+- [Clarus FT -- What's New in CCP Disclosures 4Q24](https://www.clarusft.com/whats-new-in-ccp-disclosures-4q24/)
+- [Risk.net -- Clearing House of the Year: JSCC (2024)](https://www.risk.net/awards/7959892/clearing-house-of-the-year-jscc)
+- [Risk.net -- Clearing Members Welcome JSCC Initial Margin Reforms](https://www.risk.net/risk-management/7959997/clearing-members-welcome-jscc-initial-margin-reforms)
+- [Risk.net -- JSCC Considers Default Fund Consolidation](https://www.risk.net/risk-management/7963158/jscc-considers-default-fund-consolidation)
+- [Risk.net -- JSCC, DTCC Government Bond Units See Default Funds Surge](https://www.risk.net/risk-quantum/7961205/jscc-dtcc-government-bond-units-see-default-fund-surge)
+- [Risk.net -- Japan's Yen Swaps Go Global](https://www.risk.net/insight/markets/7962837/japan%E2%80%99s-yen-swaps-go-global)
+- [CCP Global -- The Year in Clearing: 2024](https://ccp-global.org/sites/default/files/2025-07/CCPG_2024_Clearing%20Report_17.07.2025.pdf)
+- [FIA -- Response to JSCC Consultation on IM and Clearing Fund](https://www.fia.org/fia/articles/fia-responds-jscc-consultation-initial-margin-and-clearing-fund-calculation-methods)
+- [WFE Focus -- Addressing Global OTC Derivative Clearing Mandates](https://focus.world-exchanges.org/articles/jscc-derivatives-clearing)
+- [OpenGamma -- Clearing with JSCC for JPY IRS Trading](https://opengamma.com/clearing-with-jscc/)
+- [Wikipedia -- Japan Securities Clearing Corporation](https://en.wikipedia.org/wiki/Japan_Securities_Clearing_Corporation)
+
+### 결제 인프라 출처
+- [JASDEC -- DVP Settlement System](https://www.jasdec.com/en/system/dvp/)
+- [Clearstream -- Settlement Process Japan](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-process-japan-1283556)
+- [BIS -- Payment, Clearing and Settlement Systems in Japan (Red Book)](https://www.bis.org/publ/cpss105_jp.pdf)
+- [Bank of Japan -- Payment and Settlement Systems Report](https://www.boj.or.jp/en/research/brp/psr/data/psr190426.pdf)

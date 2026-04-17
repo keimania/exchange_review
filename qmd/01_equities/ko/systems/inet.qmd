@@ -1,0 +1,359 @@
+---
+title: "NASDAQ INET -- NASDAQ 주식시장 (NASDAQ Stock Market)"
+subtitle: "주식시장 > 매매시스템"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 업데이트:** 2026-04-06
+> **시스템 분류:** 매매시스템 (Trading System)
+
+---
+
+## 1. 시스템 개요 (System Overview)
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 시스템명 | NASDAQ INET (매매체결엔진 (매칭엔진) 핵심); Nasdaq Eqlipse (4세대 플랫폼 래퍼) |
+| 운영 기관 | Nasdaq, Inc. (NDAQ) |
+| 목적 | 미국 주식(Nasdaq, BX, PSX)에 대한 초저지연 주문 매칭, 시장 데이터 배포 및 매매 체결; 전 세계 130개 이상의 시장에 라이선스 제공 |
+| 출시 연도 | 2006년 (Instinet 인수 후 INET을 Nasdaq 주 매매체결엔진으로 채택); Eqlipse 플랫폼: 2024년 |
+| 현재 버전 | Nasdaq Eqlipse (4세대), INET 매매체결엔진 핵심 |
+| 개발 방식 | Nasdaq, Inc. 자체 개발. 원래 INET 엔진은 Instinet/Island ECN 기술(2005년 인수)에서 파생; 이후 세대는 스톡홀름(Genium INET), 시드니(X-Stream INET), 뉴욕/필라델피아 사무소에서 자체 개발 |
+
+### 시스템 변천사 (System Evolution)
+
+| 기간 | 시스템명 | 주요 변경사항 |
+|--------|-------------|-------------|
+| 1971--1982 | NASDAQ Automated Quotation System | 체결 기능 없는 호가 전용 시스템; CRT 단말기에 마켓메이커의 매수/매도 호가 표시 |
+| 1982--1990년대 | SOES (Small Order Execution System) | NASDAQ 최초의 전자 체결; 마켓메이커에 의무적; 소규모 주문만 해당 |
+| 1997--2002 | Island ECN / Instinet ECN | Island ECN 출범(1996년) -- 최초의 완전 전자 ECN 중 하나; 2002년 Instinet과 합병하여 Inet ECN 형성; 1초 미만 매칭; 표시 지정가 주문장을 선구적으로 도입 |
+| 2002--2006 | SuperMontage | 마켓메이커 호가와 공개 지정가 주문을 통합한 NASDAQ의 통합 지정가 주문장; 개발비 1억 700만 달러; 인수 후 INET으로 대체 |
+| 2005--2006 | INET 채택 | NASDAQ이 18.8억 달러에 Instinet 인수(2005년 12월 완료); Inet ECN 매매체결엔진 보유; SuperMontage에서 INET 플랫폼으로 모든 Nasdaq 매매 이관(2006년 완료); SuperMontage 퇴역 |
+| 2007--2010 | INET + OMX 기술 합병 | NASDAQ이 OMX Group 인수(2007년), Genium 매매 플랫폼(스웨덴 기원) 확보; INET과 결합하여 글로벌 라이선싱용 **Genium INET** 생성; **X-Stream INET** 변형(호주 개발)도 개발 |
+| 2010--2016 | Genium INET / X-Stream INET | 두 개의 병렬 제품 라인: Genium INET(복합 다자산 시장; SGX, HKEX, BrokerTec, Nasdaq Nordic에 배포)과 X-Stream INET(고성능 단일 자산 집중; SIX Swiss Exchange에 배포, <40 μs 매칭 달성). 매칭 지연시간이 밀리초에서 100 마이크로초 미만으로 개선 |
+| 2016--2018 | Nasdaq Financial Framework (NFF) | 모듈형 플랫폼 아키텍처 도입; 단일 운영 핵심이 다수의 비즈니스 애플리케이션 구동; 마이크로서비스 모델 채택; 클라우드 배포 기능 추가 |
+| 2018--2024 | NFF 성숙 | NFF를 은행 및 브로커에 확대; 엔진 최적화를 지속하여 40 μs 미만의 door-to-door 지연시간 달성; 시장 데이터 처리에 FPGA (현장프로그래머블게이트어레이) 가속 도입; 10G/40G 연결 확대 |
+| 2024--현재 | **Nasdaq Eqlipse** (4세대) | 매매, 청산, CSD, 데이터 인텔리전스를 아우르는 통합 제품군; 클라우드 대응 플랫폼 위의 마이크로서비스 아키텍처; 다년 주기 릴리스를 대체하는 "에버그린" 분기별 업그레이드 모델; AWS 파트너십으로 하이브리드 클라우드 배포; Nasdaq Eqlipse Intelligence (클라우드 기반 분석/AI); 요하네스버그 증권거래소, Grupo BMV (멕시코), Nasdaq Nordic에 배포; 오사카거래소(OSE)가 차세대 파생상품 플랫폼으로 Eqlipse 선정 (2026년 2월 발표) |
+
+---
+
+## 2. 아키텍처 (Architecture)
+
+### 2.1 상위 수준 설계 (High-Level Design)
+
+NASDAQ INET은 매매체결엔진 핵심에 **단일 스레드, 이벤트 기반 아키텍처**를 채택하여 엄격한 순서화를 통한 결정론적 주문 처리를 보장한다. 상위 Eqlipse 플랫폼은 이 핵심을 현대적 마이크로서비스 프레임워크로 감싼다.
+
+**설계 원칙:**
+- **순수 전자 매칭** -- 사람의 개입 없음 (NYSE와 달리 전문가/DMM 없음)
+- **엄격한 가격-시간 우선** -- 주문은 가격 기준으로 먼저, 동일 가격 수준에서는 진입 시간 순으로 매칭
+- **단일 스레드 매칭** -- 하나의 스레드가 특정 종목의 모든 주문을 처리하여 락 경합을 제거하고 결정론적 동작 보장
+- **커널 우회 네트워킹** -- 사용자 공간 네트워킹 스택이 Linux 커널을 우회하여 컨텍스트 스위칭 오버헤드 제거
+- **하드웨어 가속** -- FPGA 카드가 핵심 피드 처리 및 파싱 작업 수행
+- **불변 시퀀싱** -- 모든 이벤트에 단조 증가하는 시퀀스 번호 할당, 신뢰할 수 있는 재생 및 복구 지원
+
+**데이터 흐름 (간략):**
+1. 주문이 게이트웨이(OUCH 프로토콜 (주문 입력 규약)/FIX/RASH/FLITE)를 통해 SoupBinTCP로 도착
+2. 리스크/검증 확인 적용 (가격 합리성, 신용 한도, 과다주문 방지)
+3. 주문이 종목별 매칭 스레드에 할당
+4. 매매체결엔진이 가격-시간 우선 알고리즘 실행
+5. 체결 보고서가 동일 프로토콜로 참가자에게 반환
+6. 시장 데이터 업데이트가 ITCH 프로토콜 (시장 데이터 피드)을 통해 MoldUDP64(멀티캐스트) 및 SoupBinTCP(유니캐스트)로 발행
+
+### 2.2 핵심 구성요소 (Core Components)
+
+| 구성요소 | 기능 | 기술 |
+|-----------|----------|------------|
+| **INET 매매체결엔진** | 가격-시간 우선 알고리즘을 사용한 핵심 주문 매칭; 신규 주문, 취소, 수정 처리; 경매(시가/종가/거래중단 Cross) 처리 | 맞춤형 C/C++ 엔진; 종목별 단일 스레드; 커널 우회 네트워킹; 상용 Linux 서버에서 구동 |
+| **주문 게이트웨이** | 참가자의 인바운드 주문 수신 및 검증; 프로토콜 변환(FIX → 내부 포맷); 세션 관리 및 인증 | OUCH 4.2(네이티브 바이너리), FIX 4.0/4.1/4.2(업계 표준), RASH(라우팅 전략 지원 독자적), FLITE(FIX Lite -- OUCH급 속도의 FIX 부분집합) 지원 |
+| **시장 데이터 엔진** | 매매체결엔진 이벤트로부터 실시간 시장 데이터 생성 및 배포; 전체 호가잔량(TotalView) 및 BBO(Nasdaq Basic) | ITCH 5.0 프로토콜; FPGA 가속 피드 생성; MoldUDP64 멀티캐스트 전달; SoupBinTCP 유니캐스트 옵션 |
+| **FPGA 피드 핸들러** | 시장 데이터 메시지의 하드웨어 가속 파싱 및 생성; 최저 지연시간 데이터 경로 제공 | 맞춤형 FPGA 카드; 코로케이션 시설에서 10G 및 40G 연결로 이용 가능 |
+| **경매 엔진** | Opening Cross, Closing Cross, IPO Cross 및 Halt Cross 가격 발견 프로세스 관리 | 매매체결엔진에 통합; 경매 전 NOII(Net Order Imbalance Indicator) 배포 |
+| **리스크 관리 게이트웨이** | 최대 주문 금액, 누적 금액 확인, 신용 노출 모니터링, 킬 스위치 등 사전 매매 리스크 통제 | 실시간 처리; 참가자별 구성 가능; 임계치 위반 시 자동 주문 취소 |
+| **드롭 카피 서버** | 준법감시 및 대사를 위한 실시간 체결 사본을 참가자에게 제공 | FIX DROP 프로토콜; MMID, INET 포트, SenderSubID별 필터링 구성 가능 |
+| **세션/전송 계층** | TCP 연결, 프레이밍, 시퀀싱, 하트비트, 인증, 메시지 복구 관리 | SoupBinTCP 3.0/4.0 (점대점); MoldUDP64 (멀티캐스트); 갭 탐지 및 재생 제공 |
+| **기준 데이터 서버** | 증권 마스터 데이터, 매매 일정, 시스템 이벤트 알림 배포 | ITCH System Event 및 Stock Directory 메시지; 장 시작 전 매일 배포 |
+| **감시 인터페이스** | 모든 주문 및 매매 활동의 실시간 피드를 Nasdaq MarketWatch 감시 시스템에 전달 | Nasdaq SMARTS 감시 기술에 연동 |
+
+### 2.3 기술 스택 (Technology Stack)
+
+| 계층 | 기술 |
+|-------|-----------|
+| **프로그래밍 언어** | C/C++ (매매체결엔진 핵심, 게이트웨이 및 성능 핵심 구성요소) |
+| **운영체제** | Linux (상용 서버; 저지연 최적화 커널: CPU 격리, NUMA 인식 할당, 인터럽트 어피니티, 틱리스 커널) |
+| **네트워킹** | 커널 우회 (사용자 공간 TCP/UDP 스택); Solarflare/Xilinx OpenOnload 또는 동급; OS 커널 네트워킹 오버헤드 제거 |
+| **하드웨어 가속** | 시장 데이터 피드 처리 및 파싱용 FPGA 카드; 1 마이크로초 미만의 메시지 파싱 |
+| **네트워크 장비** | 10 Gbps 및 40 Gbps 이더넷 연결; <35 ns 스위칭 지연시간의 40G Express Connect; 맞춤형 저지연 스위치 |
+| **서버 하드웨어** | 고주파 Intel Xeon 프로세서; 상용 x86 서버; NUMA 최적화 메모리 배치 |
+| **전송 프로토콜** | SoupBinTCP 3.0/4.0 (신뢰성 있는 점대점), MoldUDP64 (재전송 기능이 있는 비신뢰성 멀티캐스트) |
+| **애플리케이션 프로토콜** | OUCH 4.2 (주문 입력), ITCH 5.0 (시장 데이터), FIX 4.0/4.1/4.2 (주문 입력), RASH (라우팅 포함 주문 입력), FLITE (FIX Lite 주문 입력) |
+| **플랫폼 아키텍처** | 마이크로서비스 기반 (Eqlipse 계층); 컨테이너화된 서비스; 표준화된 API 제품군 |
+| **클라우드 통합** | AWS 파트너십; Carteret 데이터센터 내 AWS Outposts; 하이브리드 클라우드/온프레미스 배포; Nasdaq Eqlipse Trading 클라우드 플랫폼 (2025년 5월 출시) |
+| **데이터 및 분석** | Nasdaq Eqlipse Intelligence -- 클라우드 기반 데이터 수명주기 플랫폼(수집, 처리, 정제, 분석); AI/ML 통합 기능 |
+
+---
+
+## 3. 성능 사양 (Performance Specifications)
+
+| 지표 | 값 | 조건 |
+|--------|-------|------------|
+| **매매체결엔진 지연시간** | ~570 나노초 [미검증] | 내부 매매체결엔진 처리 시간만; 네트워크 전송 제외 |
+| **시장 데이터 지연시간** | ~3 마이크로초 | 주문 수락부터 고객 포트(코로케이션)에서의 ITCH 시장 데이터 메시지 전달까지 [추정] |
+| **Door-to-Door 지연시간** | ~14 마이크로초 | 완전 왕복: 고객 포트 출발 → 코로케이션 네트워크 및 방화벽 통과 → 매매체결엔진 → 고객 포트 수신. 최고 속도 운영 환경 |
+| **일반 주문 지연시간 (OUCH)** | ~20 마이크로초 | 표준 조건에서의 OUCH 프로토콜 주문 확인 왕복 |
+| **99번째 백분위 지연시간** | ~78 마이크로초 | 전체 매매일 운영 환경 [추정] |
+| **99.9번째 백분위 지연시간** | ~150 마이크로초 | 전체 매매일 운영 환경 [추정] |
+| **40 μs 미만 주장** | < 40 마이크로초 | 배포 전반에 걸친 INET 매칭 기술에 대한 Nasdaq 공식 벤치마크 |
+| **메시지 처리량** | > 100만 건/초 | 지속 처리 속도; 운영 환경에서 113만 건/초 측정 [Source: NasdaqTrader.com] |
+| **최대 시장 데이터 속도** | ~850만 건/초 | 피크 시간대 TotalView-ITCH 멀티캐스트 피드 [추정] |
+| **일일 메시지 처리량** | ~16.8억 건 | 전체 매매일 처리 메시지 총량 [Source: NasdaqTrader.com] |
+| **일일 거래량** | ~90억 주 | Nasdaq 상장 증권 전체의 평균 일일 거래량 [추정, 2025년] |
+| **Closing Cross 처리량** | 0.871초 내 1,024.55억 달러 | 2025년 6월 Russell Reconstitution -- 역대 최대 Closing Cross 체결 |
+| **스위칭 지연시간 (40G)** | < 35 나노초 | Carteret 코로케이션 시설 Express Connect (40G) |
+| **스위칭 지연시간 (10G)** | < 40 나노초 | Carteret 코로케이션 시설 Direct Connect (10G) |
+| **피크 거래량 처리** | > 평균 일일 거래량의 10배 | 시스템이 정상 거래량 10배 이상의 지속적 피크 부하를 처리하도록 설계 |
+
+### 성능 이력 (Performance History)
+
+| 연도 | 지연시간 | 처리량 | 비고 |
+|------|---------|------------|-------|
+| 2005년 이전 | ~5 ms (Instinet INET) | 수천 건/초 | 인입 매매 주문에 대한 원래 Inet ECN 응답 시간 |
+| 2006년 | 1 밀리초 미만 | 수십만 건/초 | INET을 Nasdaq 주 엔진으로 채택; SuperMontage 대비 대폭 개선 |
+| 2007--2010 | ~250 μs | 증가 | Genium INET 출시; OMX 기술 합병; 북유럽 배포 |
+| 2010--2012 | < 90 μs | ~50만 건/초 | SGX 등에 Genium INET 배포; X-Stream INET 개발 |
+| 2012--2014 | < 40 μs | ~100만 건/초 | SIX Swiss Exchange에 X-Stream INET 배포; 업계 선도적 매칭 속도; Nasdaq 미국 시장 지속 최적화 |
+| 2014--2018 | < 30 μs (door-to-door) | > 100만 건/초 | 지속적 하드웨어 및 소프트웨어 최적화; FPGA 가속 도입 |
+| 2018--2023 | ~14 μs (door-to-door) | > 100만 건/초 지속 | NFF 플랫폼; 커널 우회 네트워킹 표준화; 40G 연결 |
+| 2024--현재 | ~14 μs (door-to-door), ~570 ns 엔진 [미검증] | > 100만 건/초 지속 | Eqlipse 플랫폼; 클라우드 하이브리드 배포 옵션; 분기별 업그레이드 주기; 2025년 Russell Recon 기록 |
+
+---
+
+## 4. 인터페이스 및 프로토콜 (Interfaces & Protocols)
+
+### 4.1 주문 입력 (Order Entry)
+
+| 프로토콜 | 유형 | 전송 | 설명 | 지연시간 프로필 |
+|----------|------|-----------|-------------|-----------------|
+| **OUCH 4.2** | 네이티브 바이너리 | SoupBinTCP | 최고 성능 주문 입력 프로토콜; 최소 오버헤드; 주문 입력, 취소, 정정, 수정 지원; 유연성을 희생하여 최대 처리량 추구 | 최저 지연시간 (~14 μs door-to-door, 코로케이션) |
+| **FIX 4.0/4.1/4.2** | 업계 표준 텍스트 | SoupBinTCP / TCP | FIX 프로토콜; 기존 매매 시스템과 폭넓은 호환성; Nasdaq FIX 게이트웨이가 FIX 메시지를 내부적으로 OUCH로 변환 | 텍스트 파싱으로 인해 OUCH보다 높은 지연시간; 코로케이션 기준 < 80 μs 추정 |
+| **RASH** | 독자적 바이너리 | SoupBinTCP | 추가 라우팅 전략을 지원하는 OUCH 대안; 참가자가 주문 라우팅 선호도 지정 가능 | OUCH와 유사; 약간 풍부한 기능 세트 |
+| **FLITE (FIX Lite)** | 하이브리드 (FIX 부분집합, 바이너리 유사) | SoupBinTCP | 선호하는 FIX 기능과 함께 OUCH급 속도 제공; FIX 4.2 부분집합 기반; 전체 FIX 오버헤드 없이 FIX 의미론을 원하는 회원사 대상 | OUCH에 근접한 성능 |
+
+**주요 주문 입력 기능:**
+- 취소-정정(Cancel-replace): 원자적 가격/수량 변경
+- 킬 스위치 -- 모든 종목의 미체결 주문 동시 취소
+- Drop-on-Disconnect -- 연결 끊김 시 모든 미체결 주문 자동 취소
+- 게이트웨이 수준에서 사전 매매 리스크 통제 통합
+- 참가자당 최대 5개 주문 입력 포트 (표준); 추가 이용 가능
+
+### 4.2 시장 데이터 배포 (Market Data Dissemination)
+
+| 프로토콜 | 유형 | 전송 | 설명 |
+|----------|------|-----------|-------------|
+| **TotalView-ITCH 5.0** | 네이티브 바이너리 | MoldUDP64 (멀티캐스트) 또는 SoupBinTCP (유니캐스트) | 전체 호가잔량(Full depth-of-book) 데이터 피드; 주문별 업데이트; 모든 가격 수준의 모든 주문; 경매 투명성을 위한 NOII 데이터 포함; 시스템 이벤트, 종목 디렉토리, 주문 수명주기, 매매 체결을 포괄하는 20개 이상의 메시지 유형 |
+| **ITCH FPGA 피드** | 하드웨어 가속 바이너리 | MoldUDP64 | TotalView-ITCH와 동일한 데이터이나 FPGA 최적화 경로로 전달; 가능한 최저 시장 데이터 지연시간; 10G 또는 40G 연결 필요 |
+| **Nasdaq Basic (Level 1)** | BBO + 최종 체결가 | 표준 배포 | 최우선 매수/매도 호가, 최종 체결가, 거래량; 개인투자자 및 비지연민감 애플리케이션에 적합 |
+
+**ITCH 5.0 메시지 유형 (주요):**
+- **System Event** -- 시장 개장/폐장, 시스템 시간 시작/종료
+- **Stock Directory** -- Nasdaq 상장 전 종목의 증권 마스터 데이터
+- **Add Order** -- 호가장에 새 주문 추가 (MPID 귀속 유/무)
+- **Order Executed** -- 기존 주문의 부분 또는 전체 체결
+- **Order Cancel** -- 기존 주문의 부분 취소
+- **Order Delete** -- 호가장에서 주문 완전 삭제
+- **Order Replace** -- 기존 주문 수정 (새 참조번호 할당)
+- **Trade (Non-Cross)** -- Cross 이외의 매매 체결
+- **Cross Trade** -- Opening, Closing 또는 Halt Cross에 의한 체결
+- **NOII** -- 경매 전 투명성을 위한 Net Order Imbalance Indicator
+- **Broken Trade** -- 매매 파기 통보
+
+**데이터 인코딩:**
+- 모든 정수 필드: 빅엔디안(네트워크 바이트 순서) 바이너리
+- 타임스탬프: 자정 이후 나노초
+- 단일 바이트 유형 식별자를 갖는 가변 길이 메시지
+
+### 4.3 드롭 카피 / 거래 보고 (Drop Copy / Trade Reporting)
+
+| 프로토콜 | 기능 | 설명 |
+|----------|----------|-------------|
+| **FIX DROP** | 드롭 카피 | FIX 4.2를 통한 모든 체결 및 주문 상태 업데이트의 실시간 사본 전달; MMID, INET 포트, SenderSubID별 구성 가능; 준법감시, 대사, 백오피스 통합용 |
+| **RASH DROP** | 드롭 카피 | FIX DROP과 동일한 기능이나 오버헤드 감소를 위해 RASH 바이너리 형식 사용 |
+| **FIX Trade Reporting** | FINRA/TRF 보고 | FINRA/Nasdaq Trade Reporting Facility (TRF Carteret 및 TRF Chicago)에 매매를 보고하기 위한 FIX 4.2 기반 인터페이스; 청산 및 규제 제출 지원 |
+
+### 4.4 기준 데이터 (Reference Data)
+
+| 데이터 유형 | 배포 방법 | 설명 |
+|-----------|-------------------|-------------|
+| **Stock Directory** | ITCH 시스템 메시지 (장 전) | 매일 장 시작 전 배포되는 종합 증권 마스터; 종목코드, 시장 구분, 재무 상태, 매매 단위 및 각종 플래그 포함 |
+| **Reg SHO Threshold List** | Nasdaq 웹사이트 / 데이터 피드 | Regulation SHO 결제의무 대상 증권 |
+| **LULD Price Bands** | ITCH / SIP | 매매일 중 지속 업데이트되는 Limit Up-Limit Down 기준가 및 가격대 |
+| **Trading Halt/Resume** | ITCH 시스템 메시지 | 매매 중단, 재개 및 IPO 호가 기간의 실시간 통보 |
+| **Corporate Actions** | Nasdaq Global Data Services | 배당, 분할, 합병, 종목코드 변경; 데이터 제품을 통해 배포 |
+
+---
+
+## 5. 복원력 및 업무연속성 (Resilience & Business Continuity)
+
+### 5.1 이중화 (Redundancy)
+
+- **매매체결엔진 이중화:** 각 매매체결엔진 파티션별 핫 스탠바이 인스턴스; 실시간 상태 복제; 최소 중단의 자동 장애 전환
+- **게이트웨이 이중화:** 다수의 주문 입력 및 시장 데이터 게이트웨이; 참가자는 주 및 백업 게이트웨이 연결 유지 권장
+- **네트워크 이중화:** 코로케이션 시설과 POP 간 이중 고속 광섬유 경로; 물리적으로 분리된 케이블 루트
+- **POP (Point of Presence) 노드:** 주요 금융 데이터센터에 다수의 접근점으로 지리적으로 분산된 연결
+- **전력:** Equinix NY11 시설에서 이중 전력 피드(A+B), UPS 및 디젤 발전기; Tier III+ 데이터센터 표준
+- **연결 다양성:** 참가자는 주(Carteret) 및 DR 시설 양쪽에 라우터 배치 가능하여 완전한 연결 이중화 확보
+
+### 5.2 재해복구 (Disaster Recovery)
+
+| 항목 | 세부 내용 |
+|--------|---------|
+| **주 데이터센터** | Equinix NY11, Carteret, NJ (91,413 sq ft 코로케이션 공간; 2000년 건설; 다수 확장) |
+| **DR 사이트 (Nasdaq 시장)** | Equinix CH4, 350 E. Cermak Road, Chicago, IL (2015년 Ashburn, VA에서 이전) |
+| **DR 사이트 (FINRA 애플리케이션)** | Ashburn, VA |
+| **지리적 분리** | 주(NJ)에서 DR(Chicago)까지: ~1,150 km / ~715 마일 -- 지역 재해(허리케인, 해안 범람, 지역 전력망 장애)에 대한 방어 |
+| **장애 전환 방식** | Active-Passive, 신속 절체 기능; 정기적으로 업계 전체 DR 장애 전환 테스트 실시 |
+| **복구 목표** | RTO (복구 시간 목표) 및 RPO (복구 시점 목표) 미공개; 최소 데이터 손실로 신속한 복구 설계 |
+| **DR 연결** | 참가자는 POP 연결을 통해 Chicago DR에 접속 가능; 주 및 DR 양쪽에 Direct Circuit Connect 이용 가능 |
+
+### 5.3 용량 관리 (Capacity Management)
+
+- **피크 부하 설계:** 시스템이 성능 저하 없이 평균 일일 거래량의 10배 이상 지속 부하 처리 가능하도록 설계
+- **확장 진행 중:** NY11-4 시설이 Carteret 캠퍼스 북쪽에 건설 중; 이용 가능한 코로케이션 공간을 약 2배로 확대 예정
+- **클라우드 확장성:** Nasdaq Eqlipse Trading 클라우드 플랫폼(2025년 5월 AWS와 출시)이 비지연민감 워크로드에 탄력적 용량 제공
+- **AWS Outposts 통합:** AWS Outposts가 Carteret 핵심 네트워크에 직접 배포 중이며, 하이브리드 클라우드/코로케이션 아키텍처 구현
+- **스트레스 테스트:** 정기적 용량 및 스트레스 테스트; 주기적으로 업데이트되는 OUCH 지연시간 측정치와 함께 성능 모니터링
+- **변동성 대응력:** 2025년 4월 거래량(관세 발 변동성)이 COVID-19 팬데믹 피크(2020년 3월)의 수배에 달했으나 성능 저하 없이 처리
+
+---
+
+## 6. 주요 기술적 특징 (Notable Technical Features)
+
+### 6.1 순수 전자 시장 -- 사람의 개입 없음 (Pure Electronic Market)
+NYSE(DMM이 수동 개입 기능 보유)와 달리, NASDAQ INET은 매칭 프로세스에 사람의 개입이 전혀 없는 완전 자동화 매매체결엔진이다. 모든 주문 매칭, 경매 처리, 매매 체결이 알고리즘적으로 처리된다. 이는 사람의 의사결정과 관련된 지연시간 변동성을 제거하고 일관되고 결정론적인 처리 시간을 보장한다.
+
+### 6.2 Opening 및 Closing Cross 경매 (Opening and Closing Cross Auctions)
+INET의 경매 메커니즘은 모든 적격 주문을 집계하고 체결량을 극대화하는 단일 청산 가격을 결정한다. Net Order Imbalance Indicator (NOII)는 각 Cross 직전 수분 동안 배포되어 수급 동향에 대한 전례 없는 투명성을 제공한다. Closing Cross는 Nasdaq 일일 거래량의 약 16%를 처리하며, 뮤추얼펀드 NAV, 지수 산출 및 결제에 사용되는 공식 종가를 결정한다. 2025년 6월 Russell Reconstitution Cross는 0.871초 만에 1,024.55억 달러를 체결 -- 역대 최대 기록이다.
+
+### 6.3 Eqlipse "에버그린" 업그레이드 모델 (Eqlipse "Evergreen" Upgrade Model)
+4세대 Eqlipse 플랫폼은 수년마다 주요 시스템을 업그레이드하던 전통적 접근방식을 대체하는 분기별 업그레이드 주기를 도입하였다. 이를 통해 파괴적인 이관 프로젝트 없이 개선사항, 보안 패치, 신규 기능의 지속적 배포가 가능하다. 고객 거래소는 예측 가능한 주기로 점진적 개선을 수령한다.
+
+### 6.4 다자산, 다거래소 아키텍처 (Multi-Asset, Multi-Venue Architecture)
+INET 매매체결엔진은 자산군에 구애받지 않으며 -- 단일 핵심 기술로 주식, 채권, FX, 원자재, 파생상품, 디지털 자산, 탄소 배출권을 지원한다. 이 동일 엔진이 Nasdaq의 자체 18개 글로벌 거래소를 구동하며, 130개 이상의 외부 시장에 라이선스된다. Eqlipse 제품군은 이를 전체 매매 수명주기로 확장한다: 매매 → 청산 → CSD → 데이터 인텔리전스.
+
+### 6.5 클라우드 하이브리드 배포 (Cloud-Hybrid Deployment)
+Nasdaq의 AWS 파트너십은 지연시간 핵심 구성요소(매매체결엔진, 주문 게이트웨이)는 Carteret 온프레미스에 유지하면서 분석, 감시, 보고 및 비지연민감 서비스는 클라우드에서 구동하는 독특한 배포 모델을 구현한다. Carteret 데이터센터 내에 물리적으로 위치한 AWS Outposts가 두 환경을 원활하게 연결한다.
+
+### 6.6 FPGA 가속 시장 데이터 (FPGA-Accelerated Market Data)
+코로케이션 시설의 FPGA 카드는 하드웨어 가속 ITCH 피드 생성을 제공하여, 소프트웨어만으로는 달성할 수 없는 시장 데이터 지연시간을 실현한다. 이를 통해 코로케이션 참가자에게 호가장 변동에 대한 가능한 한 가장 빠른 시야를 제공한다.
+
+### 6.7 성능 조정을 위한 프로토콜 계층 구조 (Protocol Hierarchy for Performance Tuning)
+NASDAQ은 참가자가 지연시간/복잡성 간의 균형을 선택할 수 있도록 의도적인 프로토콜 스펙트럼을 제공한다:
+- **OUCH** -- 최대 성능, 최소 유연성 (고빈도매매 (HFT) 회원사)
+- **FLITE** -- FIX 의미론을 갖춘 OUCH 근접 속도 (FIX 워크플로우를 원하는 정교한 회원사)
+- **RASH** -- 라우팅 전략을 지원하는 OUCH 유사
+- **FIX** -- 업계 표준, 가장 쉬운 통합, 가장 높은 지연시간 (기관 브로커)
+
+모든 비OUCH 프로토콜은 게이트웨이에서 내부적으로 OUCH로 변환되므로, 매매체결엔진 자체는 하나의 네이티브 포맷만 처리한다.
+
+### 6.8 24시간 매매 대비 (계획 중) (24-Hour Trading Readiness, Planned)
+NASDAQ은 주 5일 23시간/일 매매 계획을 발표하였다(SEC 승인 대기, H2 2026 목표). Eqlipse 플랫폼의 24/7 운영 능력 -- 이미 암호화폐 거래소 배포에서 검증 -- 이 1시간의 일일 유지보수 창을 갖는 확장 세션 모델을 지원할 수 있는 위치에 있다.
+
+---
+
+## 7. 비교 분석 (Comparison Notes)
+
+### KRX 시스템 대비 비교 (vs. KRX Systems)
+
+| 항목 | NASDAQ INET / Eqlipse | KRX Exture+ |
+|--------|----------------------|-------------|
+| **출시 연도** | INET: 2006년; Eqlipse: 2024년 | Exture+: 2014년 (원래 Exture 2009년을 대체) |
+| **매매체결엔진 지연시간** | ~14 μs door-to-door (최고 운영); ~570 ns 엔진 전용 [미검증] | ≤ 70 μs (원래 Exture의 20 ms 대비 285배 개선) |
+| **아키텍처** | 마이크로서비스(Eqlipse 계층); 종목별 단일 스레드 매칭 핵심; 커널 우회 네트워킹 | 메모리 기반 솔루션; 올인원 플랫폼; 오픈소스 아키텍처 구성요소 |
+| **기술 스택** | C/C++ on Linux; FPGA 가속; 커널 우회(사용자 공간 네트워킹); AWS 클라우드 하이브리드 | C/C++ [미검증]; 데이터 배포용 Solace PubSub+ 메시징 어플라이언스; 맞춤형 하드웨어 |
+| **자산 범위** | 다자산 가능하나 미국 배포는 주로 주식; 옵션은 별도 시스템(Nasdaq PHLX, NOM, BX Options) | 올인원: 주식(KOSPI, KOSDAQ, KONEX), 채권, 선물, 옵션, ETF, 워런트, 원자재를 단일 플랫폼에서 |
+| **데이터 배포** | ITCH 5.0 over MoldUDP64/SoupBinTCP; FPGA 가속 피드 | Solace 하드웨어 메시징 어플라이언스; 독자적 바이너리 프로토콜 |
+| **주문 입력 프로토콜** | OUCH(네이티브 바이너리), FIX, RASH, FLITE | FIX 기반; KOSCOM 게이트웨이를 통한 독자적 KRX 프로토콜 |
+| **시장 모델** | 경쟁 마켓메이커를 갖춘 순수 전자 주문 기반; 사람의 개입 없음 | 순수 전자 주문 기반; 일부 종목에 지정 유동성공급자(LP) |
+| **데이터센터** | Equinix NY11, Carteret, NJ (코로케이션 가능); DR은 Chicago | KRX 자체 데이터센터(부산); 서울에 백업 |
+| **시스템 개발** | 자체 개발 (Nasdaq, Inc.) | 자체 개발 (KRX), KOSCOM이 주요 IT 파트너 |
+| **클라우드 전략** | AWS 파트너십; 하이브리드 클라우드/온프레미스; 고객용 Eqlipse Trading 클라우드 플랫폼 | 온프레미스; 핵심 매매에 대한 퍼블릭 클라우드 전략 미발표 [미검증] |
+| **글로벌 라이선싱** | 전 세계 130개 이상의 거래소, 청산소, CSD에 기술 라이선스 | KOSCOM을 통해 일부 신흥시장 거래소에 Exture+ 기술 수출 |
+| **업그레이드 모델** | "에버그린" 분기별 업그레이드 주기(Eqlipse) | 다년 주기 주요 버전 업그레이드 |
+| **종가 경매** | Closing Cross: 일일 거래량의 ~16%; NOII 투명성이 포함된 단일가 경매 | 종가 경매: 단일가 콜 경매; 조작 방지를 위한 무작위 종료 시각 |
+| **매매 시간** | 4:00 AM -- 8:00 PM ET (시간 전후 시장); 23시간 매매 계획 중 (H2 2026) | 9:00 AM -- 3:30 PM KST; 시간 전 8:00--9:00 AM; 시간 후 3:40--6:00 PM |
+
+### 주요 차별화 요소 (Key Differentiators)
+
+**NASDAQ INET 강점:**
+- **지연시간 선도:** ~14 μs door-to-door는 Exture+의 ≤ 70 μs 보다 약 5배 빠르며, NASDAQ의 집중적인 HFT 기반 최적화와 FPGA 가속을 반영
+- **프로토콜 다양성:** 4가지 주문 입력 프로토콜(OUCH, FIX, RASH, FLITE)이 명시적 성능/유연성 균형 제공 vs. KRX의 보다 표준화된 접근 모델
+- **글로벌 기술 플랫폼:** INET/Eqlipse 기술이 전 세계 130개 이상의 시장을 구동하여 대규모 규모의 경제와 지속적 개선 압력 창출
+- **클라우드 하이브리드 혁신:** AWS 파트너십 및 Outposts 통합이 거래소 인프라 현대화의 선도적 접근방식
+- **코로케이션 생태계:** 35 ns 미만 스위칭과 대규모 HFT 참가자 기반을 갖춘 Carteret 시설이 깊고 유동적인 생태계 조성
+
+**KRX Exture+ 강점:**
+- **통합 다자산 플랫폼:** 단일 시스템이 모든 자산군(주식, 파생상품, 채권, 원자재) 처리 vs. NASDAQ의 별도 주식/옵션 매매체결엔진
+- **통합 가치사슬:** KRX가 한국 전체 자본시장 인프라(거래소, 청산, 결제, 예탁)를 조율된 기술 스택으로 운영
+- **종가 경매 설계:** 종가 경매의 무작위 종료 시각 메커니즘이 NASDAQ의 고정 시간 Closing Cross보다 나은 조작 저항성 제공
+- **단순한 접근 모델:** KOSCOM을 통한 표준화된 연결이 국내 참가자의 복잡성 감소
+- **Solace 하드웨어 메시징:** 전용 메시징 어플라이언스가 커널 우회 소프트웨어 스택의 복잡성 없이 보장된 결정론적 데이터 전달 제공
+
+**아키텍처 철학 차이:**
+- NASDAQ INET은 **분절된 시장에서의 최대 속도**에 최적화되어 있다. 14개 미국 증권거래소 + 30개 이상의 다크풀이 경쟁하는 환경에서 주문 흐름을 유치하기 위해 가능한 최저 지연시간을 요구한다.
+- KRX Exture+는 **통합 시장에서의 포괄적 커버리지**에 최적화되어 있다. KRX가 유일한 거래소로서 운영되므로, 원시적 속도 경쟁보다 자산군 지원의 폭과 시스템 안정성을 우선시한다.
+
+---
+
+## 출처 (Sources)
+
+- [Source: Nasdaq, Inc. IR, "NASDAQ Completes Acquisition of INET", accessed 2026-04-06](https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-completes-acquisition-inet)
+- [Source: Nasdaq, Inc. IR, "NASDAQ to Acquire Instinet", accessed 2026-04-06](https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-acquire-instinet)
+- [Source: Computerworld, "Nasdaq to Adopt Instinet's Engine", accessed 2026-04-06](https://www.computerworld.com/article/1712499/nasdaq-to-adopt-instinet-s-engine.html)
+- [Source: Computerworld, "Nasdaq CIO confirms move to open-source Instinet apps", accessed 2026-04-06](https://www.computerworld.com/article/2556008/nasdaq-cio-confirms-move-to-open-source-instinet-apps.html)
+- [Source: Nasdaq Newsroom, "Nasdaq Launches Eqlipse, Fourth Generation of its Marketplace Technology Platform", accessed 2026-04-06](https://www.nasdaq.com/newsroom/nasdaq-launches-eqlipse-fourth-generation-its-marketplace-technology-platform)
+- [Source: Nasdaq Solutions, "Exchange Matching Engine — Nasdaq Eqlipse Trading", accessed 2026-04-06](https://www.nasdaq.com/solutions/fintech/nasdaq-eqlipse/trading-technology/exchange-matching)
+- [Source: Nasdaq Solutions, "Capital Market Technology & Business Solutions — Nasdaq Eqlipse", accessed 2026-04-06](https://www.nasdaq.com/solutions/fintech/nasdaq-eqlipse)
+- [Source: Nasdaq Solutions, "Nasdaq Eqlipse Trading Technology Software Solutions", accessed 2026-04-06](https://www.nasdaq.com/solutions/fintech/nasdaq-eqlipse/trading-technology)
+- [Source: Nasdaq Articles, "Introducing Nasdaq Eqlipse", accessed 2026-04-06](https://www.nasdaq.com/articles/fintech/introducing-nasdaq-eqlipse)
+- [Source: Markets Media, "Nasdaq Reaches 'New Base Camp' with Eqlipse", accessed 2026-04-06](https://www.marketsmedia.com/nasdaq-reaches-new-base-camp-with-eqlipse/)
+- [Source: NasdaqTrader.com, "OUCH Measurements of Order Latency", accessed 2026-04-06](https://www.nasdaqtrader.com/snippets/inet2.html)
+- [Source: NasdaqTrader.com, "OUCH Protocol", accessed 2026-04-06](https://www.nasdaqtrader.com/Trader.aspx?id=OUCH)
+- [Source: NasdaqTrader.com, "FIX Protocol", accessed 2026-04-06](https://www.nasdaqtrader.com/Trader.aspx?id=FIX)
+- [Source: NasdaqTrader.com, "RASHport", accessed 2026-04-06](https://www.nasdaqtrader.com/Trader.aspx?id=rash)
+- [Source: NasdaqTrader.com, "FIX Lite (Flite)", accessed 2026-04-06](https://www.nasdaqtrader.com/Trader.aspx?id=Flite)
+- [Source: NasdaqTrader.com, "FIX DROP RASH Format Version 1.00", October 2024, accessed 2026-04-06](https://nasdaqtrader.com/content/technicalsupport/specifications/TradingProducts/drop_fix.pdf)
+- [Source: NasdaqTrader.com, "TotalView-ITCH 5.0 Specification", accessed 2026-04-06](https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification.pdf)
+- [Source: NasdaqTrader.com, "North American Markets Protocol Quick Reference", accessed 2026-04-06](https://www.nasdaqtrader.com/content/ProductsServices/Trading/Protocols_quickref.pdf)
+- [Source: NasdaqTrader.com, "Direct Connect", accessed 2026-04-06](https://www.nasdaqtrader.com/trader.aspx?id=directconnect)
+- [Source: NasdaqTrader.com, "Nasdaq POP", accessed 2026-04-06](https://www.nasdaqtrader.com/Trader.aspx?id=POPs)
+- [Source: Nasdaq Solutions, "Nasdaq Direct Connectivity", accessed 2026-04-06](https://www.nasdaq.com/solutions/nasdaq-direct-connectivity)
+- [Source: Nasdaq Solutions, "INET Nordic Protocol Specifications", accessed 2026-04-06](https://www.nasdaq.com/solutions/inet-nordic-protocol-specifications)
+- [Source: Nasdaq Solutions, "Genium INET Protocol Specifications", accessed 2026-04-06](https://www.nasdaq.com/solutions/genium-inet-protocol-specifications)
+- [Source: Nasdaq Solutions, "Nasdaq Financial Framework (NFF)", accessed 2026-04-06](https://www.nasdaq.com/solutions/nasdaq-financial-framework-nff)
+- [Source: Nasdaq Solutions, "Trading Technologies — Trade Matching System FAQs", accessed 2026-04-06](https://www.nasdaq.com/solutions/fintech/nasdaq-eqlipse/trading-technology/faqs)
+- [Source: A-Team Insight, "With SIX Rollout, Nasdaq OMX Pushes Matching Latency Below 40 Microseconds", accessed 2026-04-06](https://a-teaminsight.com/blog/with-six-rollout-nasdaq-omx-pushes-matching-latency-below-40-microseconds/)
+- [Source: Data Center Dynamics, "Nasdaq breaks ground on data center expansion at Equinix facility in New Jersey", accessed 2026-04-06](https://www.datacenterdynamics.com/en/news/nasdaq-breaks-ground-on-data-center-expansion-at-equinix-facility-in-new-jersey/)
+- [Source: GlobeNewsWire, "Nasdaq Financial Framework Technology Extended to Banks and Brokers", September 2018, accessed 2026-04-06](https://www.globenewswire.com/news-release/2018/09/11/1568959/0/en/Nasdaq-Financial-Framework-Technology-Extended-to-Banks-and-Brokers-Worldwide.html)
+- [Source: StockTitan, "Japan's Osaka Exchange Adopts Nasdaq Eqlipse Trading", February 2026, accessed 2026-04-06](https://www.stocktitan.net/news/NDAQ/japan-s-osaka-exchange-adopts-nasdaq-eqlipse-trading-and-od1cpdqs01a1.html)
+- [Source: Databento, "What is the ITCH protocol?", accessed 2026-04-06](https://databento.com/microstructure/itch)
+- [Source: Databento, "Nasdaq TotalView-ITCH: Data feed specifications", accessed 2026-04-06](https://databento.com/docs/venues-and-datasets/xnas-itch)
+- [Source: OnixS, "ITCH Protocol Overview", accessed 2026-04-06](https://www.onixs.biz/itch-protocol.html)
+- [Source: SIX Group, "X-Stream INET Performance Measurement Details", accessed 2026-04-06](https://www.six-group.com/dam/download/the-swiss-stock-exchange/trading/trading-platform/x-stream-inet-performance-measurement-details.pdf)
+- [Source: Wikipedia, "Inet", accessed 2026-04-06](https://en.wikipedia.org/wiki/Inet)
+- [Source: Solace, "KRX — Korea Exchange", accessed 2026-04-06](https://solace.com/company/customers/krx/)
+- [Source: KRX Global, "EXTURE+ Trading", accessed 2026-04-06](https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp)
+- [Source: KOSCOM, "KRX Trading System", accessed 2026-04-06](https://english.koscom.co.kr/eng/main/contents.do?menuNo=300005)
+- [Source: Traders Magazine, "Cover Sidebar: Nasdaq Claims to Be the Fastest", accessed 2026-04-06](https://www.tradersmagazine.com/departments/ecns_and_exchanges/cover-sidebar-nasdaq-claims-to-be-the-fastest/)
+- [Source: FFNews, "DXmatch vs Nasdaq Matching Engine Technology", accessed 2026-04-06](https://ffnews.com/thought-leader/dxmatch-vs-nasdaq-matching-engine-technology-comparing-two-standout-solutions/)
+- [Source: Nasdaq, "How Asset Marketplaces Benefit from Matching Engines", accessed 2026-04-06](https://www.nasdaq.com/solutions/fintech/marketplace-technology/about-matching-engines)
+- [Source: bobsguide, "Market Technology: Genium INET, X-stream, X-stream INET", accessed 2026-04-06](https://www.bobsguide.com/products/market-technology-genium-inet-x-stream-x-stream-inet/)
+- [Source: Nasdaq, Inc. IR, "NASDAQ OMX Announces INET Next Generation Trading Technology", accessed 2026-04-06](http://ir.nasdaqomx.com/news-releases/news-release-details/nasdaq-omx-announces-inet-next-generation-trading-technology)

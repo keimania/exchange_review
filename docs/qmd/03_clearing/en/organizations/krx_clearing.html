@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>KRX Clearing (Korea Exchange CCP) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/asx_clear.html">Organizations</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/krx_clearing.html">KRX Clearing (Korea Exchange CCP)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Clearing &amp; Settlement — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Clearing &amp; Settlement -- Comparative Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Organizations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/asx_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Clear / ASX Clear (Futures)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ccil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearing Corporation of India Limited (CCIL)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cdp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Central Depository Pte Ltd (CDP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cds_canada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CDS Clearing and Depository Services (CDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/clearstream.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearstream (Clearstream)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cme_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Clearing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/csdc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/dtcc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Depository Trust &amp; Clearing Corporation (DTCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/eurex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing AG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/euroccp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/euroclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euroclear Group (Euroclear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/hkex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Clearing – HKSCC / HKCC / SEOCH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ice_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Clear (ICE Clear U.S. / ICE Clear Europe / ICE Clear Credit)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/jscc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japan Securities Clearing Corporation (JSCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/krx_clearing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">KRX Clearing (Korea Exchange CCP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ksd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KSD (Korea Securities Depository)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/lch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH (LCH Limited &amp; LCH SA)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/muqassa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Securities Clearing Center Company (Muqassa)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/occ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Options Clearing Corporation (OCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/six_xclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SIX x-clear AG (SIX x-clear)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/asia_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/eu_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/us_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">U.S. Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/dtcc_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DTCC Core Systems — NSCC/DTC Settlement &amp; Clearing Infrastructure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/eurex_clearing_prisma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing -- C7 Architecture &amp; PRISMA Margin Engine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/lch_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH Clearing Platforms &amp; Margin Engines</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview-profile" id="toc-overview-profile" class="nav-link active" data-scroll-target="#overview-profile">1. Overview &amp; Profile</a>
+  <ul class="collapse">
+  <li><a href="#key-historical-milestones" id="toc-key-historical-milestones" class="nav-link" data-scroll-target="#key-historical-milestones">Key Historical Milestones</a></li>
+  <li><a href="#key-market-data-2026-ytd" id="toc-key-market-data-2026-ytd" class="nav-link" data-scroll-target="#key-market-data-2026-ytd">Key Market Data (2026 YTD)</a></li>
+  </ul></li>
+  <li><a href="#clearing-model" id="toc-clearing-model" class="nav-link" data-scroll-target="#clearing-model">2. Clearing Model</a>
+  <ul class="collapse">
+  <li><a href="#ccp-services" id="toc-ccp-services" class="nav-link" data-scroll-target="#ccp-services">2.1 CCP Services</a></li>
+  <li><a href="#clearing-membership" id="toc-clearing-membership" class="nav-link" data-scroll-target="#clearing-membership">2.2 Clearing Membership</a></li>
+  <li><a href="#netting" id="toc-netting" class="nav-link" data-scroll-target="#netting">2.3 Netting</a></li>
+  </ul></li>
+  <li><a href="#risk-management" id="toc-risk-management" class="nav-link" data-scroll-target="#risk-management">3. Risk Management</a>
+  <ul class="collapse">
+  <li><a href="#margin-framework" id="toc-margin-framework" class="nav-link" data-scroll-target="#margin-framework">3.1 Margin Framework</a></li>
+  <li><a href="#margin-call-schedule" id="toc-margin-call-schedule" class="nav-link" data-scroll-target="#margin-call-schedule">3.2 Margin Call Schedule</a></li>
+  <li><a href="#default-waterfall-손해배상-체계" id="toc-default-waterfall-손해배상-체계" class="nav-link" data-scroll-target="#default-waterfall-손해배상-체계">3.3 Default Waterfall (손해배상 체계)</a></li>
+  <li><a href="#stress-testing" id="toc-stress-testing" class="nav-link" data-scroll-target="#stress-testing">3.4 Stress Testing</a></li>
+  </ul></li>
+  <li><a href="#settlement" id="toc-settlement" class="nav-link" data-scroll-target="#settlement">4. Settlement</a>
+  <ul class="collapse">
+  <li><a href="#settlement-cycles" id="toc-settlement-cycles" class="nav-link" data-scroll-target="#settlement-cycles">4.1 Settlement Cycles</a></li>
+  <li><a href="#dvp-model" id="toc-dvp-model" class="nav-link" data-scroll-target="#dvp-model">4.2 DVP Model</a></li>
+  <li><a href="#settlement-finality" id="toc-settlement-finality" class="nav-link" data-scroll-target="#settlement-finality">4.3 Settlement Finality</a></li>
+  <li><a href="#settlement-system-overhaul-2021-2026" id="toc-settlement-system-overhaul-2021-2026" class="nav-link" data-scroll-target="#settlement-system-overhaul-2021-2026">4.4 Settlement System Overhaul (2021-2026)</a></li>
+  </ul></li>
+  <li><a href="#technology-infrastructure" id="toc-technology-infrastructure" class="nav-link" data-scroll-target="#technology-infrastructure">5. Technology &amp; Infrastructure</a></li>
+  <li><a href="#regulatory-framework" id="toc-regulatory-framework" class="nav-link" data-scroll-target="#regulatory-framework">6. Regulatory Framework</a></li>
+  <li><a href="#interoperability" id="toc-interoperability" class="nav-link" data-scroll-target="#interoperability">7. Interoperability</a></li>
+  <li><a href="#fees" id="toc-fees" class="nav-link" data-scroll-target="#fees">8. Fees</a></li>
+  <li><a href="#recent-developments" id="toc-recent-developments" class="nav-link" data-scroll-target="#recent-developments">9. Recent Developments</a></li>
+  <li><a href="#krx-comparison-with-global-peers" id="toc-krx-comparison-with-global-peers" class="nav-link" data-scroll-target="#krx-comparison-with-global-peers">10. KRX Comparison with Global Peers</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/asx_clear.html">Organizations</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/organizations/krx_clearing.html">KRX Clearing (Korea Exchange CCP)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">KRX Clearing (Korea Exchange CCP)</h1>
+<p class="subtitle lead">Clearing &amp; Settlement &gt; Organizations</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-13 <strong>Research Tier:</strong> Tier 1 (Deep Dive) <strong>Type:</strong> CCP (Integrated Exchange-CCP)</p>
+</blockquote>
+<hr>
+<section id="overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="overview-profile">1. Overview &amp; Profile</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Official Name</td>
+<td>Korea Exchange (한국거래소) — Clearing Division</td>
+</tr>
+<tr class="even">
+<td>Abbreviation</td>
+<td>KRX</td>
+</tr>
+<tr class="odd">
+<td>Website</td>
+<td><a href="https://global.krx.co.kr">https://global.krx.co.kr</a></td>
+</tr>
+<tr class="even">
+<td>Year Established</td>
+<td>2005 (as KRX); clearing function inherited from predecessor exchanges (KOFEX 1999, KSE 1956)</td>
+</tr>
+<tr class="odd">
+<td>Country / City</td>
+<td>South Korea / Busan (headquarters); Seoul (market operations)</td>
+</tr>
+<tr class="even">
+<td>Ownership Structure</td>
+<td>Public institution under the Financial Services Commission (FSC); not a stock corporation but a member-based self-regulatory organization established by statute</td>
+</tr>
+<tr class="odd">
+<td>Parent Company / Group</td>
+<td>None (independent statutory entity)</td>
+</tr>
+<tr class="even">
+<td>Regulatory Authority</td>
+<td>FSC (Financial Services Commission) as primary regulator; FSS (Financial Supervisory Service) conducts examination; BOK (Bank of Korea) provides systemic oversight</td>
+</tr>
+<tr class="odd">
+<td>Clearing Model</td>
+<td>Integrated exchange-CCP — KRX serves as both trading venue and central counterparty for all exchange-traded products</td>
+</tr>
+<tr class="even">
+<td>Products Cleared</td>
+<td>Equities (KOSPI, KOSDAQ), listed derivatives (futures &amp; options), bonds, OTC IRS/CRS</td>
+</tr>
+<tr class="odd">
+<td>Clearing / Settlement Agent</td>
+<td>KSD (Korea Securities Depository, 한국예탁결제원) handles settlement and custody as CSD</td>
+</tr>
+<tr class="even">
+<td>CPMI-IOSCO PFMI Compliance</td>
+<td>IMF FSAP assessment conducted (2014); publishes regulatory disclosures per FSC requirements</td>
+</tr>
+<tr class="odd">
+<td>QCCP Status</td>
+<td>Recognized as a Qualifying CCP under Basel III framework</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Source: KRX Global Website, https://global.krx.co.kr]; [Source: IMF, “Republic of Korea FSAP”, 2014]; [Source: Capital Market Act (자본시장과 금융투자업에 관한 법률)]</em></p>
+<section id="key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="key-historical-milestones">Key Historical Milestones</h3>
+<ul>
+<li><strong>1956:</strong> Korea Stock Exchange (KSE) established with basic clearing function for equities.</li>
+<li><strong>1996:</strong> Derivatives clearing function added with the launch of KOSPI 200 futures/options — one of the world’s first index derivatives products to achieve massive retail participation.</li>
+<li><strong>1999:</strong> Korea Futures Exchange (KOFEX) established in Busan with dedicated derivatives clearing.</li>
+<li><strong>2005 (January 27):</strong> Korea Exchange (KRX) formed through merger of KSE, KOFEX, and KOSDAQ; unified clearing across all market segments under one CCP.</li>
+<li><strong>2009:</strong> EXTURE (Exchange Trading Using Revolutionary Engine) trading/clearing system launched.</li>
+<li><strong>2014:</strong> IMF FSAP assessment completed, evaluating KRX’s clearing and risk management against PFMI standards.</li>
+<li><strong>2016:</strong> EXTURE+ next-generation platform deployed with enhanced clearing capabilities.</li>
+<li><strong>2021:</strong> Split settlement system introduced for equity settlement (10 billion KRW units).</li>
+<li><strong>2024:</strong> Split settlement units reduced from KRW 10 billion to KRW 5 billion (15-20% deposit reduction for members); derivatives daily settlement volume up 47.9% YoY.</li>
+<li><strong>2025 (April):</strong> KRX clearing/settlement technology exported to Thai Stock Exchange (SET).</li>
+<li><strong>2025 (June):</strong> Night session clearing operational (18:00-06:00 KST) for derivatives.</li>
+<li><strong>2026 (February):</strong> Settlement operating hours expanded from 9:00-16:10 to 7:00-16:10.</li>
+<li><strong>2026 (Late April):</strong> Further split settlement reduction from KRW 5 billion to KRW 1 billion units.</li>
+</ul>
+<p><em>[Source: KRX, https://global.krx.co.kr]; [Source: WFE, “KRX Clearing Milestone”]; [Source: KRX, “증권시장 청산결제 업무규정_전문_20260304”]</em></p>
+</section>
+<section id="key-market-data-2026-ytd" class="level3">
+<h3 class="anchored" data-anchor-id="key-market-data-2026-ytd">Key Market Data (2026 YTD)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 53%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Average Daily Equity Trading Value (Jan-Mar 2026)</td>
+<td>KRW 29.6 trillion (~USD 22 billion)</td>
+</tr>
+<tr class="even">
+<td>YoY Change in Daily Trading Value</td>
+<td>+138.7%</td>
+</tr>
+<tr class="odd">
+<td>Derivatives Daily Settlement Growth (2024)</td>
+<td>+47.9% YoY</td>
+</tr>
+<tr class="even">
+<td>Listed Products</td>
+<td>KOSPI 200 futures/options, single stock futures/options, sector index products, commodity futures, currency futures, bond futures, OTC IRS/CRS</td>
+</tr>
+<tr class="odd">
+<td>KOSPI 200 Options</td>
+<td>Historically the world’s most actively traded options contract by volume (prior to contract size adjustment in 2012)</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Source: KRX, “증권시장 청산결제 업무규정_전문_20260304”]</em></p>
+<hr>
+</section>
+</section>
+<section id="clearing-model" class="level2">
+<h2 class="anchored" data-anchor-id="clearing-model">2. Clearing Model</h2>
+<section id="ccp-services" class="level3">
+<h3 class="anchored" data-anchor-id="ccp-services">2.1 CCP Services</h3>
+<p>KRX operates as an integrated exchange-CCP, a model common among Asian exchanges (similar to pre-reform structures at HKEX, SGX, and historical structures at JPX before the JSCC spin-off):</p>
+<ul>
+<li><strong>Novation:</strong> KRX interposes itself as the counterparty to all matched trades — becoming the buyer to every seller and the seller to every buyer upon trade matching.</li>
+<li><strong>Scope:</strong> All exchange-traded products across KOSPI Market, KOSDAQ Market, derivatives market, bond market, and mandated OTC products (IRS/CRS).</li>
+<li><strong>Multilateral Netting:</strong> Net obligations calculated by settlement category (equity trading, bond trading, repo, derivatives).</li>
+<li><strong>Guarantee Function:</strong> KRX guarantees settlement of all matched trades through its default waterfall and clearing fund structure.</li>
+</ul>
+<p><em>[Source: KRX, “증권시장 청산결제 업무규정_전문_20260304”]</em></p>
+</section>
+<section id="clearing-membership" class="level3">
+<h3 class="anchored" data-anchor-id="clearing-membership">2.2 Clearing Membership</h3>
+<p>From KRX regulations (업무규정):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Clearing Members (결제회원)</td>
+<td>Securities companies and other financial institutions meeting capital requirements set by FSC regulations; directly participate in KRX clearing</td>
+</tr>
+<tr class="even">
+<td>Membership Tiers</td>
+<td>Based on capital adequacy and business scope — different requirements for equity, derivatives, and bond clearing</td>
+</tr>
+<tr class="odd">
+<td>Capital Requirements</td>
+<td>Per FSC regulations; minimum net capital requirement varies by business scope (e.g., KRW 20 billion+ for derivatives clearing)</td>
+</tr>
+<tr class="even">
+<td>Non-Clearing Participants</td>
+<td>Must clear through a clearing member; the clearing member assumes guarantee obligation for the non-clearing participant’s trades</td>
+</tr>
+<tr class="odd">
+<td>Clearing Member Obligations</td>
+<td>Maintain clearing deposits, contribute to Joint Compensation Fund, meet margin requirements, comply with position limits</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Source: KRX, “파생상품시장 업무규정_전문_20250609”]</em></p>
+</section>
+<section id="netting" class="level3">
+<h3 class="anchored" data-anchor-id="netting">2.3 Netting</h3>
+<p>From 증권시장 청산결제 업무규정, Article 9:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 56%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Netting Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equity Trading (주식매매)</td>
+<td>Multilateral netting of all buy/sell obligations per settlement date</td>
+</tr>
+<tr class="even">
+<td>Government Bond Market (국채시장)</td>
+<td>Special netting provisions with separate calculation</td>
+</tr>
+<tr class="odd">
+<td>Repo Transactions (환매채거래)</td>
+<td>Netted independently from outright bond trades</td>
+</tr>
+<tr class="even">
+<td>Bond Market (채권시장)</td>
+<td>Separate netting cycle from equity market</td>
+</tr>
+<tr class="odd">
+<td>Derivatives</td>
+<td>Daily mark-to-market with cash settlement of variation margin</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Settlement amounts calculated to KRW 1 precision.</li>
+<li>Netting is legally enforceable under the Capital Market Act, providing protection against insolvency claw-back.</li>
+</ul>
+<p><em>[Source: KRX, “증권시장 청산결제 업무규정_전문_20260304”]</em></p>
+<hr>
+</section>
+</section>
+<section id="risk-management" class="level2">
+<h2 class="anchored" data-anchor-id="risk-management">3. Risk Management</h2>
+<section id="margin-framework" class="level3">
+<h3 class="anchored" data-anchor-id="margin-framework">3.1 Margin Framework</h3>
+<section id="listed-derivatives-krx-span-modified-span" class="level4">
+<h4 class="anchored" data-anchor-id="listed-derivatives-krx-span-modified-span">Listed Derivatives — KRX-SPAN (Modified SPAN)</h4>
+<p>KRX employs a modified SPAN (Standard Portfolio Analysis of Risk) methodology for listed derivatives margin calculation:</p>
+<ul>
+<li><strong>Methodology:</strong> Scenario-based approach drawing on CME SPAN portfolio risk concepts, adapted for Korean market characteristics.</li>
+<li><strong>Calculation Frequency:</strong> Daily at market close; positions marked to settlement price.</li>
+<li><strong>Margin Formula:</strong> Position x Price x Multiplier x Margin Rate.</li>
+<li><strong>Typical Initial Margin Rate:</strong> ~8-10% for KOSPI 200 futures.</li>
+<li><strong>Maintenance Margin Rate:</strong> ~5-6% (lower than initial margin threshold).</li>
+</ul>
+<p><em>[Source: KRX, “파생상품시장 업무규정_전문_20250609”]</em></p>
+</section>
+<section id="margin-types" class="level4">
+<h4 class="anchored" data-anchor-id="margin-types">Margin Types</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 40%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Korean Term</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Initial Margin</td>
+<td>개시증거금</td>
+<td>Required when opening new positions; must be deposited before or at time of order</td>
+</tr>
+<tr class="even">
+<td>Maintenance Margin</td>
+<td>유지증거금</td>
+<td>Minimum balance required to maintain positions; breach triggers margin call</td>
+</tr>
+<tr class="odd">
+<td>Trading Margin</td>
+<td>거래증거금</td>
+<td>Cleared by exchange; due by 11:00 next trading day for member-level settlement</td>
+</tr>
+<tr class="even">
+<td>Client Margin</td>
+<td>위탁증거금</td>
+<td>Pre-funded before order entry for retail; post-funded (due by 11:00 next day) for qualified institutional investors</td>
+</tr>
+<tr class="odd">
+<td>Spread Margin</td>
+<td>스프레드증거금</td>
+<td>Reduced rate for recognized spread positions (calendar, inter-commodity)</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Source: KRX, “파생상품시장 업무규정_전문_20250609”]</em></p>
+</section>
+<section id="options-margin" class="level4">
+<h4 class="anchored" data-anchor-id="options-margin">Options Margin</h4>
+<ul>
+<li><strong>Buy Orders:</strong> Full premium must be deposited in cash.</li>
+<li><strong>Sell Orders:</strong> Margin is the greater of three calculations involving theoretical price + volatility scenarios.</li>
+<li><strong>Spread Trading:</strong> Reduced margin with substitute securities allowed within limits.</li>
+</ul>
+</section>
+<section id="eligible-collateral-대용증권" class="level4">
+<h4 class="anchored" data-anchor-id="eligible-collateral-대용증권">Eligible Collateral (대용증권)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Collateral Type</th>
+<th>Haircut / Acceptance Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cash (현금)</td>
+<td>100%</td>
+</tr>
+<tr class="even">
+<td>Listed Stocks (meeting liquidity criteria)</td>
+<td>70-80% of market value (quarterly adjusted)</td>
+</tr>
+<tr class="odd">
+<td>Government Bonds (국채)</td>
+<td>Varies by maturity; generally 95-98%</td>
+</tr>
+<tr class="even">
+<td>Corporate Bonds (BBB+ minimum rating)</td>
+<td>Varies by maturity and rating; generally 80-90%</td>
+</tr>
+<tr class="odd">
+<td>ETFs and Index Securities</td>
+<td>Accepted with restrictions on leveraged/inverse products</td>
+</tr>
+<tr class="even">
+<td>Foreign Currency (10 types)</td>
+<td>USD, JPY, EUR, GBP, HKD, AUD, SGD, CHF, CAD, CNY — haircuts vary by currency</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Concentration Limits:</strong> - Individual stock: Maximum 50% of average daily trading volume. - Corporate bonds: Maximum 10% of total issuance amount. - Fund securities: Maximum 10% of fund size.</p>
+<p><strong>Cash Requirement:</strong> Minimum 50% of total margin must be in cash; remainder may be substitute securities.</p>
+<p><strong>Qualified Institutional Investor Exception:</strong> May defer margin deposit until 10:00 next trading day.</p>
+<p><em>[Source: KRX, “파생상품시장 업무규정 시행세칙”]</em></p>
+</section>
+</section>
+<section id="margin-call-schedule" class="level3">
+<h3 class="anchored" data-anchor-id="margin-call-schedule">3.2 Margin Call Schedule</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 34%">
+<col style="width: 23%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Korean Term</th>
+<th>Trigger</th>
+<th>Deadline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regular Margin Call</td>
+<td>정규증거금</td>
+<td>Daily mark-to-market at close</td>
+<td>11:00 next trading day</td>
+</tr>
+<tr class="even">
+<td>Intraday Margin Call</td>
+<td>장중추가증거금</td>
+<td>KOSPI 200 index volatility &gt;= 80% of futures margin rate, OR member’s intraday requirement &gt;= 120% of deposit</td>
+<td>2 hours from notification</td>
+</tr>
+<tr class="odd">
+<td>Additional Margin Call</td>
+<td>추가증거금</td>
+<td>Mark-to-market losses exceed thresholds beyond regular margin</td>
+<td>1 hour after 2-hour buffer period</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Intraday margin call is released if triggering conditions ease within 30 minutes of notification.</li>
+<li>Failure to meet margin call within deadline results in position liquidation and potential clearing membership suspension.</li>
+</ul>
+<p><em>[Source: KRX, “파생상품시장 업무규정_전문_20250609”]</em></p>
+</section>
+<section id="default-waterfall-손해배상-체계" class="level3">
+<h3 class="anchored" data-anchor-id="default-waterfall-손해배상-체계">3.3 Default Waterfall (손해배상 체계)</h3>
+<p>The default waterfall for derivatives clearing follows a “defaulter pays first” principle:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Resource</th>
+<th>Korean Term</th>
+<th>Estimated Size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Defaulter’s margin deposits</td>
+<td>위탁증거금</td>
+<td>Per-position (varies)</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Defaulter’s clearing deposit / contribution</td>
+<td>회원증거금</td>
+<td>Per-member (varies)</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Joint Compensation Fund</td>
+<td>손해배상공동기금</td>
+<td>~KRW 100 billion (~USD 75 million) [estimated]</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>KRX’s own capital contribution (SITG)</td>
+<td>거래소 자기자본</td>
+<td>[data not publicly disclosed]</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Non-defaulting members’ additional contributions</td>
+<td>회원 추가분담금</td>
+<td>Assessed pro-rata based on clearing activity</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Features:</strong> - KRX places Skin-in-the-Game (SITG) before non-defaulting members’ resources, consistent with PFMI guidance. - Joint Compensation Fund contributions follow a Fixed + Variable model: fixed base contribution plus variable component based on clearing volume/risk. - Replenishment of the Joint Compensation Fund is required after usage in a default event. - Recovery tools include: asset liquidation, securities sales, netting of claims against the defaulter, and assessment powers on surviving members.</p>
+<p><em>[Source: KRX, “파생상품시장 업무규정_전문_20250609”; IMF, “Republic of Korea FSAP”, 2014]</em></p>
+</section>
+<section id="stress-testing" class="level3">
+<h3 class="anchored" data-anchor-id="stress-testing">3.4 Stress Testing</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Frequency</td>
+<td>Quarterly stress testing per regulatory requirements; real-time position monitoring</td>
+</tr>
+<tr class="even">
+<td>Scenarios</td>
+<td>Historical stress scenarios (e.g., 2008 GFC, 2020 COVID crash, 2022 LUNA/Terra incident) and hypothetical extreme-but-plausible scenarios</td>
+</tr>
+<tr class="odd">
+<td>Coverage</td>
+<td>Liquidity risk, credit risk, concentration risk, wrong-way risk</td>
+</tr>
+<tr class="even">
+<td>Back Testing</td>
+<td>Daily back testing of margin model adequacy</td>
+</tr>
+<tr class="odd">
+<td>FSAP Recommendations (2014)</td>
+<td>IMF recommended enhancements to back testing methodology, sensitivity analysis, and reverse stress testing</td>
+</tr>
+<tr class="even">
+<td>Reporting</td>
+<td>Results reported to FSC/FSS; BOK reviews systemic risk implications</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Source: IMF, “Republic of Korea FSAP”, 2014]</em></p>
+<hr>
+</section>
+</section>
+<section id="settlement" class="level2">
+<h2 class="anchored" data-anchor-id="settlement">4. Settlement</h2>
+<section id="settlement-cycles" class="level3">
+<h3 class="anchored" data-anchor-id="settlement-cycles">4.1 Settlement Cycles</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 39%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Settlement Cycle</th>
+<th>Settlement Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equities (KOSPI, KOSDAQ)</td>
+<td>T+2</td>
+<td>9:00 AM</td>
+</tr>
+<tr class="even">
+<td>Government Bonds</td>
+<td>T+1</td>
+<td>9:00 AM</td>
+</tr>
+<tr class="odd">
+<td>Bonds (general)</td>
+<td>T+1 to T+2</td>
+<td>3:30 PM</td>
+</tr>
+<tr class="even">
+<td>Derivatives (daily margin)</td>
+<td>T+0 / T+1</td>
+<td>Daily mark-to-market; margin by 11:00 next day</td>
+</tr>
+<tr class="odd">
+<td>Derivatives (final settlement)</td>
+<td>T+1</td>
+<td>Cash settlement or physical delivery per contract spec</td>
+</tr>
+<tr class="even">
+<td>OTC IRS/CRS</td>
+<td>Per payment schedule</td>
+<td>As per swap terms</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Source: KRX, “증권시장 청산결제 업무규정_전문_20260304”]</em></p>
+</section>
+<section id="dvp-model" class="level3">
+<h3 class="anchored" data-anchor-id="dvp-model">4.2 DVP Model</h3>
+<ul>
+<li>KRX/KSD employ a DVP (Delivery versus Payment) model for securities settlement.</li>
+<li><strong>Securities leg:</strong> KSD (Korea Securities Depository) acts as CSD, handling book-entry transfer of securities.</li>
+<li><strong>Cash leg:</strong> Settlement through Bank of Korea (BOK) for large-value government bond transactions; settlement banks (KEB Hana Bank, KB Kookmin Bank, etc.) for equity and other settlement.</li>
+<li><strong>Central bank money:</strong> Used for government bond settlement to eliminate settlement bank credit risk.</li>
+<li><strong>Simultaneous exchange:</strong> Securities delivery and payment occur simultaneously to eliminate principal risk.</li>
+</ul>
+<p><em>[Source: KRX, “증권시장 청산결제 업무규정 시행세칙_전문_20250304”]</em></p>
+</section>
+<section id="settlement-finality" class="level3">
+<h3 class="anchored" data-anchor-id="settlement-finality">4.3 Settlement Finality</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Legal Framework</td>
+<td>Capital Market Act (자본시장과 금융투자업에 관한 법률)</td>
+</tr>
+<tr class="even">
+<td>Finality Point</td>
+<td>Transfer orders entered into KRX/KSD system are legally enforceable and irrevocable</td>
+</tr>
+<tr class="odd">
+<td>Insolvency Protection</td>
+<td>Netting and settlement finality provisions protect against insolvency claw-back under Korean law</td>
+</tr>
+<tr class="even">
+<td>Derivatives</td>
+<td>Same-day finality for derivatives margin settlement</td>
+</tr>
+<tr class="odd">
+<td>Regulatory Basis</td>
+<td>Article 390 et seq. of FSCMA provides legal certainty for settlement finality</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Source: Capital Market Act; IMF, “Republic of Korea FSAP”, 2014]</em></p>
+</section>
+<section id="settlement-system-overhaul-2021-2026" class="level3">
+<h3 class="anchored" data-anchor-id="settlement-system-overhaul-2021-2026">4.4 Settlement System Overhaul (2021-2026)</h3>
+<p>KRX has been progressively reforming its equity settlement system through “split settlement” (분할결제):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 36%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Change</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2021</td>
+<td>Split settlement introduced</td>
+<td>Settlement obligations divided into KRW 10 billion units, settled sequentially throughout the day</td>
+</tr>
+<tr class="even">
+<td>2024</td>
+<td>Units reduced from KRW 10B to KRW 5B</td>
+<td>15-20% reduction in settlement deposit requirements for members</td>
+</tr>
+<tr class="odd">
+<td>2026 (February)</td>
+<td>Operating hours expanded</td>
+<td>Settlement window extended from 9:00-16:10 to 7:00-16:10</td>
+</tr>
+<tr class="even">
+<td>2026 (Late April)</td>
+<td>Units reduced from KRW 5B to KRW 1B</td>
+<td>Further reduction in member deposit burden; more granular liquidity management</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rationale:</strong> Split settlement reduces the peak liquidity requirement for clearing members by distributing settlement obligations throughout the day, lowering systemic risk and member funding costs.</p>
+<p><strong>Market Context:</strong> Average daily equity trading value reached KRW 29.6 trillion (Jan-Mar 2026), up 138.7% YoY, necessitating the infrastructure upgrade.</p>
+<p><em>[Source: KRX, “증권시장 청산결제 업무규정_전문_20260304”]</em></p>
+<hr>
+</section>
+</section>
+<section id="technology-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="technology-infrastructure">5. Technology &amp; Infrastructure</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Clearing System</td>
+<td>Integrated within EXTURE+ (Exchange Trading Using Revolutionary Engine Plus) platform</td>
+</tr>
+<tr class="even">
+<td>Developed By</td>
+<td>KOSCOM (코스콤, KRX subsidiary / IT affiliate)</td>
+</tr>
+<tr class="odd">
+<td>Architecture</td>
+<td>Memory-based, real-time processing on x86 Linux infrastructure</td>
+</tr>
+<tr class="even">
+<td>Risk Engine</td>
+<td>Real-time margin calculation and position monitoring; KRX-SPAN engine for derivatives</td>
+</tr>
+<tr class="odd">
+<td>STP Rate</td>
+<td>Very high — integrated exchange-CCP model eliminates trade matching delays between exchange and CCP</td>
+</tr>
+<tr class="even">
+<td>Protocols</td>
+<td>FIX/FAST protocols for member connectivity</td>
+</tr>
+<tr class="odd">
+<td>Disaster Recovery</td>
+<td>Redundant systems with zero-data-loss failover capability; backup site in separate geographic location</td>
+</tr>
+<tr class="even">
+<td>Night Session (2025)</td>
+<td>Extended clearing infrastructure to support 18:00-06:00 KST derivatives night session</td>
+</tr>
+<tr class="odd">
+<td>Technology Export</td>
+<td>KRX clearing/settlement system technology sold to Thai Stock Exchange (SET) in April 2025 — validating international competitiveness of EXTURE+ platform</td>
+</tr>
+<tr class="even">
+<td>Capacity</td>
+<td>Designed to handle peak volumes exceeding 2x historical maximums</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Source: KRX Global Website, https://global.krx.co.kr; WFE, “KRX Clearing Milestone”]</em></p>
+<hr>
+</section>
+<section id="regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="regulatory-framework">6. Regulatory Framework</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary Regulator</td>
+<td>Financial Services Commission (금융위원회, FSC) — policy-making and rule approval</td>
+</tr>
+<tr class="even">
+<td>Examination Authority</td>
+<td>Financial Supervisory Service (금융감독원, FSS) — on-site examination and off-site surveillance</td>
+</tr>
+<tr class="odd">
+<td>Systemic Oversight</td>
+<td>Bank of Korea (한국은행, BOK) — oversight of systemically important payment and settlement systems</td>
+</tr>
+<tr class="even">
+<td>Governing Law</td>
+<td>Financial Investment Services and Capital Markets Act (자본시장과 금융투자업에 관한 법률, FSCMA)</td>
+</tr>
+<tr class="odd">
+<td>Clearing Regulations</td>
+<td>파생상품시장 업무규정 (Derivatives Market Business Regulations); 증권시장 청산결제 업무규정 (Securities Market Clearing &amp; Settlement Regulations)</td>
+</tr>
+<tr class="even">
+<td>PFMI Compliance</td>
+<td>IMF FSAP 2014 assessment completed; Korea assessed as largely observant of PFMI principles</td>
+</tr>
+<tr class="odd">
+<td>CCP Recovery &amp; Resolution</td>
+<td>No dedicated CCP recovery and resolution regime as of 2026 (similar to Japan, Hong Kong, Singapore)</td>
+</tr>
+<tr class="even">
+<td>OTC Clearing Mandate</td>
+<td>KRW-denominated IRS (Interest Rate Swap) and CRS (Currency Rate Swap) mandated for central clearing through KRX</td>
+</tr>
+<tr class="odd">
+<td>Self-Regulatory Function</td>
+<td>KRX has SRO status; conducts market surveillance and member supervision alongside FSS</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Korea’s Dual Regulatory Structure:</strong> Korea’s FSC/FSS dual structure is distinctive — the FSC handles policy-making, licensing, and regulatory approvals while the FSS conducts day-to-day supervision, examination, and enforcement. This separation of policy from execution is unusual among major markets and provides a form of checks and balances in financial regulation.</p>
+<p><em>[Source: IMF, “Republic of Korea FSAP”, 2014; Capital Market Act]</em></p>
+<hr>
+</section>
+<section id="interoperability" class="level2">
+<h2 class="anchored" data-anchor-id="interoperability">7. Interoperability</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CCP Interoperability Links</td>
+<td>None — KRX operates as a domestic monopoly CCP (similar to Japan/JSCC model)</td>
+</tr>
+<tr class="even">
+<td>CSD Cross-Border Links</td>
+<td>KSD maintains CSD links with Euroclear, Clearstream, and DTC for cross-border settlement</td>
+</tr>
+<tr class="odd">
+<td>Stock Connect</td>
+<td>None currently; KRX monitoring developments in China-Hong Kong Stock Connect and potential replication</td>
+</tr>
+<tr class="even">
+<td>OTC Clearing Scope</td>
+<td>KRW IRS and KRW CRS only (narrower than JSCC which clears JGB repos, or LCH which clears multi-currency IRS)</td>
+</tr>
+<tr class="odd">
+<td>MSCI Inclusion Considerations</td>
+<td>Enhanced foreign investor access to clearing/settlement infrastructure is relevant to Korea’s MSCI Developed Market reclassification efforts</td>
+</tr>
+<tr class="even">
+<td>Mutual Recognition</td>
+<td>KRX recognized as QCCP by major jurisdictions for bank capital treatment purposes</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Source: KRX Global Website, https://global.krx.co.kr]</em></p>
+<hr>
+</section>
+<section id="fees" class="level2">
+<h2 class="anchored" data-anchor-id="fees">8. Fees</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fee Structure</td>
+<td>Clearing fees bundled with exchange trading fees — no separate clearing fee invoice</td>
+</tr>
+<tr class="even">
+<td>Derivatives Clearing Component</td>
+<td>Approximately 0.0001% to 0.001% of notional value</td>
+</tr>
+<tr class="odd">
+<td>Example: Semiconductor Index Products</td>
+<td>Clearing fee rate of 0.0001161%</td>
+</tr>
+<tr class="even">
+<td>Equity Clearing</td>
+<td>Included in exchange transaction levy</td>
+</tr>
+<tr class="odd">
+<td>Clearing Fund Contributions</td>
+<td>Required from all clearing members; Fixed + Variable model</td>
+</tr>
+<tr class="even">
+<td>Fee Transparency</td>
+<td>Fee schedules published on KRX website; changes require FSC approval</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> The bundled fee model is a characteristic of the integrated exchange-CCP structure — users do not see separate clearing and trading fees as they would with standalone CCPs like LCH or OCC.</p>
+<p><em>[Source: KRX Global Website, https://global.krx.co.kr]</em></p>
+<hr>
+</section>
+<section id="recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="recent-developments">9. Recent Developments</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Development</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2024</td>
+<td>Derivatives daily settlement volume increased 47.9% YoY, reflecting growth in KOSPI 200 options and mini-KOSPI futures activity</td>
+</tr>
+<tr class="even">
+<td>2025 (April)</td>
+<td>KRX clearing/settlement technology exported to Thai Stock Exchange (SET) — first major international technology export by KRX</td>
+</tr>
+<tr class="odd">
+<td>2025 (June)</td>
+<td>Night session clearing becomes operational (18:00-06:00 KST) for derivatives, extending Korean market access to overlap with European/US trading hours</td>
+</tr>
+<tr class="even">
+<td>2026 (February)</td>
+<td>Settlement operating hours expanded from 9:00-16:10 to 7:00-16:10, adding early-morning settlement windows</td>
+</tr>
+<tr class="odd">
+<td>2026 (Late April)</td>
+<td>Split settlement units further reduced from KRW 5 billion to KRW 1 billion, dramatically lowering member deposit requirements</td>
+</tr>
+<tr class="even">
+<td>Ongoing</td>
+<td>KRX evaluating margin methodology upgrade from KRX-SPAN to VaR-based approach (following JSCC’s 2023 precedent of transitioning to historical simulation VaR)</td>
+</tr>
+<tr class="odd">
+<td>Ongoing</td>
+<td>Monitoring global T+1 settlement transition trends (US moved to T+1 in May 2024; EU targeting October 2027) for potential Korean adoption</td>
+</tr>
+<tr class="even">
+<td>Ongoing</td>
+<td>MSCI Developed Market reclassification efforts driving clearing/settlement infrastructure improvements for foreign investors</td>
+</tr>
+</tbody>
+</table>
+<p><em>[Source: KRX Global Website, https://global.krx.co.kr; WFE, “KRX Clearing Milestone”]</em></p>
+<hr>
+</section>
+<section id="krx-comparison-with-global-peers" class="level2">
+<h2 class="anchored" data-anchor-id="krx-comparison-with-global-peers">10. KRX Comparison with Global Peers</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 19%">
+<col style="width: 20%">
+<col style="width: 22%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>KRX Clearing</th>
+<th>JSCC (Japan)</th>
+<th>HKEX Clearing</th>
+<th>CME Clearing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Model</strong></td>
+<td>Integrated exchange-CCP</td>
+<td>Standalone CCP (subsidiary of JPX)</td>
+<td>Integrated exchange-CCP (HKCC, HKSCC, SEOCH under HKEX)</td>
+<td>Standalone CCP (division of CME Group)</td>
+</tr>
+<tr class="even">
+<td><strong>Margin Methodology</strong></td>
+<td>KRX-SPAN (modified SPAN); evaluating VaR transition</td>
+<td>Historical simulation VaR (transitioned 2023)</td>
+<td>PRiME (Portfolio Risk Margining using Expected shortfall)</td>
+<td>SPAN for listed; HVaR for OTC</td>
+</tr>
+<tr class="odd">
+<td><strong>Default Fund Size</strong></td>
+<td>~KRW 100B (~USD 75M) [estimated]</td>
+<td>~JPY 50B+ (~USD 350M) for derivatives</td>
+<td>~HKD 3.5B (~USD 450M) across clearing houses</td>
+<td>~USD 11.5B (IRS segment alone)</td>
+</tr>
+<tr class="even">
+<td><strong>Settlement Cycle (Equities)</strong></td>
+<td>T+2</td>
+<td>T+2 (T+1 planned for 2026-2027)</td>
+<td>T+2</td>
+<td>N/A (derivatives-focused)</td>
+</tr>
+<tr class="odd">
+<td><strong>OTC Clearing Scope</strong></td>
+<td>KRW IRS, KRW CRS only</td>
+<td>JGB repos, IRS, CDS</td>
+<td>OTC derivatives via OTC Clear</td>
+<td>IRS, CDS, FX (multi-currency, global scope)</td>
+</tr>
+<tr class="even">
+<td><strong>Technology Platform</strong></td>
+<td>EXTURE+ (KOSCOM-developed)</td>
+<td>J-GATE clearing / CJCS</td>
+<td>DCASS / CCASS</td>
+<td>CME Globex / clearing engine</td>
+</tr>
+<tr class="odd">
+<td><strong>Night Session</strong></td>
+<td>Yes (2025, 18:00-06:00 KST)</td>
+<td>Yes (extended hours)</td>
+<td>Yes (after-hours futures)</td>
+<td>Nearly 24-hour trading/clearing</td>
+</tr>
+<tr class="even">
+<td><strong>PFMI Status</strong></td>
+<td>IMF FSAP 2014; QCCP recognized</td>
+<td>CPMI-IOSCO self-assessment; QCCP</td>
+<td>CPMI-IOSCO self-assessment; QCCP</td>
+<td>CPMI-IOSCO PQD published quarterly; QCCP</td>
+</tr>
+<tr class="odd">
+<td><strong>CCP R&amp;R Regime</strong></td>
+<td>No dedicated regime</td>
+<td>No dedicated regime</td>
+<td>No dedicated regime</td>
+<td>Dodd-Frank Title II (US FDIC-based)</td>
+</tr>
+<tr class="even">
+<td><strong>CCP Interoperability</strong></td>
+<td>None (domestic monopoly)</td>
+<td>None (domestic monopoly)</td>
+<td>Limited (Stock Connect link with CSDC)</td>
+<td>Limited (links for specific products)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Observations:</strong> - KRX’s default fund size is notably smaller than global peers, reflecting the domestic-only scope and integrated exchange-CCP model where exchange revenue provides an implicit backstop. - KRX’s OTC clearing scope is narrower than peers, limited to KRW-denominated products — expansion could enhance systemic risk management. - The integrated exchange-CCP model provides operational efficiency (high STP, no trade matching delays) but raises governance questions about conflicts of interest between commercial and risk management functions. - KRX’s planned transition from SPAN to VaR-based margining would align it with global best practice trends.</p>
+<p><em>[Source: KRX Global Website; JSCC PFMI Disclosures; HKEX Annual Report; CME Group PQD Disclosures]</em></p>
+<hr>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<p>[Source: KRX, “증권시장 청산결제 업무규정_전문_20260304”] [Source: KRX, “증권시장 청산결제 업무규정 시행세칙_전문_20250304”] [Source: KRX, “파생상품시장 업무규정_전문_20250609”] [Source: KRX Global Website, https://global.krx.co.kr] [Source: IMF, “Republic of Korea — Financial Sector Assessment Program (FSAP)”, 2014] [Source: WFE, “KRX Clearing Milestone”] [Source: Capital Market Act (자본시장과 금융투자업에 관한 법률)] [Source: JSCC PFMI Quantitative Disclosures] [Source: HKEX Annual Report 2024] [Source: CME Group CPMI-IOSCO PQD Disclosures]</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

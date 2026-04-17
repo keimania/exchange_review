@@ -1,0 +1,221 @@
+---
+title: "Global Clearing & Settlement — Overview"
+subtitle: "Clearing & Settlement"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-13
+> **Status:** Completed
+
+---
+
+## 1. Introduction
+
+This document provides a high-level overview of global clearing and settlement infrastructure — Central Counterparties (CCPs), Central Securities Depositories (CSDs), and related post-trade systems.
+
+---
+
+## 2. Post-Trade Landscape
+
+### 2.1 Post-Trade Value Chain
+```
+Trade Execution → Trade Capture → Clearing → Settlement → Custody
+                                    ↓
+                              Risk Management
+                              (Margining, Default Management)
+```
+
+### 2.2 Key Infrastructure Types
+| Type | Function | Examples |
+|------|----------|----------|
+| CCP | Interposes as counterparty, manages counterparty risk | LCH, CME Clearing, Eurex Clearing, KRX |
+| CSD | Holds securities, processes settlement | DTC, Euroclear, Clearstream, KSD |
+| ICSD | International settlement and custody | Euroclear Bank, Clearstream Banking |
+| Trade Repository | Stores trade data for regulatory transparency | DTCC GTR |
+
+### 2.3 Global Scale
+- **Number of CCPs covered in this research:** 20 organizations across 15 jurisdictions (U.S., UK, EU, Japan, Hong Kong, Singapore, Australia, Switzerland, China, India, Canada, Saudi Arabia, South Korea)
+- **Total initial margin held (selected CCPs):**
+  - CME Clearing: ~$200+ billion guaranty fund + performance bond (2024-2025)
+  - OCC: ~$180 billion IM (Q3 2025, +59% YoY); clearing fund ~$19.5 billion
+  - LCH SwapClear: ~$240 billion IM (Q4 2024); ForexClear: $10.7 billion IM
+  - Eurex Clearing: EUR 43,668 billion OTC notional outstanding (end-2025)
+  - DTCC/NSCC: Peak daily value $5.55 trillion (April 2025); FICC-GSD: $13.2 trillion peak daily
+- **Assets under custody (CSDs/ICSDs):**
+  - DTC: $100+ trillion (2025)
+  - Euroclear: EUR 42.5 trillion (~50% of European CSD market)
+  - Clearstream: EUR 20+ trillion; handles >50% of T2S volume
+  - CSDC (China): RMB 11.05 quadrillion in securities under custody
+  - CDS (Canada): ~CAD 4 trillion securities on deposit
+- **Annual volumes:**
+  - DTCC: $3.7 quadrillion in securities transactions processed (2024)
+  - OCC: 12.2 billion options contracts cleared (2024, record)
+  - Eurex Clearing: 2,065.9 million contracts cleared (2025)
+  - LCH SwapClear: $779 trillion notional cleared in H1 2024
+  - ICE Clear Credit: $2+ trillion CDS open interest
+- Source: CPMI-IOSCO PQD, CCP12, individual CCP annual reports and PQD disclosures (2024-2025)
+
+---
+
+## 3. Clearing Models
+
+### 3.1 CCP Clearing (Central Clearing)
+- Novation and open offer
+- Multilateral netting
+- Benefits: counterparty risk reduction, netting efficiency, transparency
+
+### 3.2 Bilateral Clearing
+- Still applies to certain OTC derivatives not subject to clearing mandates, bilateral repos, and some fixed income instruments
+- Trend toward central clearing: Dodd-Frank Title VII and EMIR mandated clearing for standardized OTC IRS and CDS; SEC Treasury clearing mandate (2024) requires expanded central clearing of U.S. Treasury cash (Dec 2026) and repo (Jun 2027) through FICC
+- CCIL (India) clears government securities, forex, and money market instruments that were historically bilateral
+- Muqassa (Saudi Arabia) introduced CCP clearing for equity and repo markets that previously settled bilaterally
+
+### 3.3 Hybrid Models
+- **Interoperability:** SIX x-clear and LCH Ltd operate interoperable CCP links for European cash equities, allowing clearing members to choose their preferred CCP while maintaining risk management across linked CCPs. Cboe Clear Europe also participates in interoperable arrangements.
+- **Client clearing / Sponsored access:** FICC's Sponsored Member model allows buy-side firms to access CCP clearing through sponsoring clearing members; JSCC opened client clearing for JPY IRS to U.S. participants via CFTC exemption (Sept 2025)
+- **Cross-margining:** CME-FICC cross-margining arrangement (Jan 2024) for Treasury futures vs. cash Treasuries; OCC cross-guaranty agreements with NSCC/FICC/DTC
+
+---
+
+## 4. Risk Management Frameworks
+
+### 4.1 Margin Methodologies Comparison
+| Methodology | Used By | Key Features |
+|-------------|---------|-------------|
+| SPAN | CME (legacy), CDCC, HKCC (PRiME) | 16 fixed risk scenarios; portfolio-based scanning of price/volatility shifts |
+| SPAN 2 | CME (phased rollout 2023-2025) | Historical VaR with Expected Shortfall; thousands of scenarios; concentration risk; anti-procyclicality |
+| PRISMA | Eurex Clearing | Filtered Historical Simulation (FHS) with 750 filtered + 250 stress scenarios; Expected Shortfall at 99%/99.5%; liquidation groups for cross-margining |
+| PAIRS | LCH SwapClear | Portfolio Approach to Interest Rate Scenarios; Expected Shortfall at 99.7%, 5-day holding period, 10-year lookback with GFC floor |
+| STANS | OCC | Monte Carlo simulation with 10,000+ scenarios; Expected Shortfall at 99%, 2-day holding period |
+| IRM 2 | ICE Clear (phased rollout 2022-2025) | Filtered Historical Simulation VaR at 99% confidence; replacing legacy scenario-based IRM |
+| VaR-based | JSCC (post-2023 migration from SPAN), SIX x-clear (Monte Carlo VaR), Cboe Clear Europe, NSCC/FICC, CDP | Various implementations including parametric, historical simulation, and Monte Carlo approaches |
+
+### 4.2 Default Waterfall — Standard Structure
+1. Defaulter's margin
+2. Defaulter's default fund contribution
+3. CCP Skin-in-the-Game (SITG)
+4. Non-defaulting members' default fund
+5. CCP additional capital / assessment powers
+
+### 4.3 Recovery & Resolution
+- **FSB Key Attributes** of Effective Resolution Regimes for Financial Institutions (2014, updated guidance for CCPs)
+- **CCP Recovery tools:** Variation Margin Gains Haircutting (VMGH), partial tear-up, assessment powers (cash calls on surviving members), forced position allocation, voluntary auction of defaulted portfolio
+- **EU CCP Recovery and Resolution Regulation (EU 2021/23):** Fully applicable since 2023; establishes comprehensive framework for CCP recovery planning and resolution tools
+- **U.S. framework:** SIFMUs (DTCC, OCC, CME, ICE Clear Credit) subject to Title VIII oversight by Federal Reserve; no dedicated CCP resolution legislation yet
+- **Resolution authorities:** Bank of England (for LCH Ltd), BaFin/SRB (for Eurex Clearing), SEC/CFTC/FDIC (for U.S. SIFMUs)
+- **Default insurance:** ICE Clear uses third-party default insurance as an additional layer in its waterfall
+- **Living wills / resolution plans:** Required under EU CCP RRR; FINMA approved SIX x-clear's first recovery plan in 2021; ASX introduced recovery rules in 2017
+
+---
+
+## 5. Settlement
+
+### 5.1 Settlement Cycles — Global Transition
+| Region | Previous | Current | Target |
+|--------|----------|---------|--------|
+| U.S. | T+2 | T+1 (May 2024) | |
+| EU | T+2 | T+2 | T+1 (planned) |
+| UK | T+2 | T+2 | T+1 (under review) |
+| India | T+2 | T+1 (Jan 2023) | |
+| China | T+0 / T+1 | T+0 / T+1 | |
+| Korea | T+2 | T+2 | |
+
+### 5.2 DVP Models
+- BIS Model 1: Gross-gross
+- BIS Model 2: Gross securities, net funds
+- BIS Model 3: Net-net
+
+### 5.3 Settlement Finality
+- **EU:** Settlement Finality Directive (SFD, 98/26/EC) ensures that transfer orders entered into designated systems are legally enforceable and irrevocable, even in insolvency
+- **UK:** Financial Markets and Insolvency (Settlement Finality) Regulations 1999
+- **U.S.:** NSCC/FICC/DTC settlement is final upon book-entry at DTC; legal certainty under UCC Article 8 and Dodd-Frank
+- **Hong Kong:** HKSCC settlement finality achieved on T+2 via CCASS with same-day finality for money settlement (introduced July 2011)
+- **Japan:** JGB settlement cycle shortened to T+1 in 2018; equities T+2 since 2019
+- **Australia:** ASX operates CHESS settlement with batch settlement finality; December 2024 batch failure highlighted operational risk concerns
+- **Singapore:** CDP achieved true DVP settlement finality in 2018 (Phase 2 of post-trade modernization)
+- **T2S (Europe):** Provides real-time gross settlement in central bank money with immediate finality for participating CSDs
+
+---
+
+## 6. Regulatory Framework
+
+### 6.1 International Standards
+- CPMI-IOSCO PFMI (2012)
+- FSB guidance on CCP recovery and resolution
+- Basel III CCP capital requirements
+
+### 6.2 Regional Regulations
+- U.S.: Dodd-Frank Title VII & VIII
+- EU: EMIR, CSDR
+- UK: UK EMIR
+- Asia: Varies by jurisdiction
+
+---
+
+## 7. Key Trends
+- CCP resilience and stress testing
+- T+1 / T+0 settlement acceleration
+- DLT/blockchain in post-trade
+- Cloud adoption in clearing systems
+- Interoperability between CCPs
+- Cross-border regulatory cooperation
+
+---
+
+## 8. Research Roadmap
+
+### Tier 1 — Deep Dive
+| Organization | File | Status |
+|-------------|------|--------|
+| DTCC | [dtcc.md](organizations/dtcc.md) | **Completed** (2026-04-07) |
+| LCH | [lch.md](organizations/lch.md) | **Completed** (2026-04-07) |
+| OCC | [occ.md](organizations/occ.md) | **Completed** (2026-04-07) |
+| CME Clearing | [cme_clearing.md](organizations/cme_clearing.md) | **Completed** (2026-04-07) |
+| Eurex Clearing | [eurex_clearing.md](organizations/eurex_clearing.md) | **Completed** (2026-04-07) |
+| KRX Clearing | [krx_clearing.md](organizations/krx_clearing.md) | **Completed** (2026-04-13) |
+| KSD | [ksd.md](organizations/ksd.md) | **Completed** (2026-04-13) |
+
+### Tier 2 — Standard
+| Organization | File | Status |
+|-------------|------|--------|
+| JSCC | [jscc.md](organizations/jscc.md) | **Completed** (2026-04-07) |
+| HKSCC/HKCC/SEOCH | [hkex_clearing.md](organizations/hkex_clearing.md) | **Completed** (2026-04-07) |
+| CDP (Singapore) | [cdp.md](organizations/cdp.md) | **Completed** (2026-04-07) |
+| EuroCCP / Cboe Clear Europe | [euroccp.md](organizations/euroccp.md) | **Completed** (2026-04-07) |
+| ICE Clear | [ice_clear.md](organizations/ice_clear.md) | **Completed** (2026-04-07) |
+| ASX Clear | [asx_clear.md](organizations/asx_clear.md) | **Completed** (2026-04-07) |
+
+### Tier 3 — Overview
+| Organization | File | Status |
+|-------------|------|--------|
+| SIX x-clear | [six_xclear.md](organizations/six_xclear.md) | **Completed** (2026-04-07) |
+| Euroclear | [euroclear.md](organizations/euroclear.md) | **Completed** (2026-04-07) |
+| Clearstream | [clearstream.md](organizations/clearstream.md) | **Completed** (2026-04-07) |
+| CSDC | [csdc.md](organizations/csdc.md) | **Completed** (2026-04-07) |
+| CCIL | [ccil.md](organizations/ccil.md) | **Completed** (2026-04-07) |
+| CDS Canada | [cds_canada.md](organizations/cds_canada.md) | **Completed** (2026-04-07) |
+| Muqassa | [muqassa.md](organizations/muqassa.md) | **Completed** (2026-04-07) |
+
+### Systems Deep-Dives
+| System | File | Status |
+|--------|------|--------|
+| DTCC Systems (NSCC CNS, FICC GSD/MBSD, DTC, Project Ion) | [dtcc_systems.md](systems/dtcc_systems.md) | **Completed** (2026-04-07) |
+| LCH Systems (SwapClear, ForexClear, RepoClear, CDSClear) | [lch_systems.md](systems/lch_systems.md) | **Completed** (2026-04-07) |
+| Eurex Clearing Prisma Margin Methodology | [eurex_clearing_prisma.md](systems/eurex_clearing_prisma.md) | **Completed** (2026-04-07) |
+
+### Regulatory Analysis
+| Topic | File | Status |
+|-------|------|--------|
+| U.S. Clearing Regulation (Dodd-Frank Title VII/VIII, SEC Rule 17Ad-22, Treasury Clearing Mandate) | [us_clearing_regulation.md](regulations/us_clearing_regulation.md) | **Completed** (2026-04-07) |
+| EU Clearing Regulation (EMIR, CSDR, CCP RRR, EMIR 3.0) | [eu_clearing_regulation.md](regulations/eu_clearing_regulation.md) | **Completed** (2026-04-07) |
+| Asia Clearing Regulation (Japan, Hong Kong, Singapore, China, India, Australia) | [asia_clearing_regulation.md](regulations/asia_clearing_regulation.md) | **Completed** (2026-04-07) |

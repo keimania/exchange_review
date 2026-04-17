@@ -1,0 +1,3633 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>HKEX (홍콩거래소) 파생상품 시장 – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/hkex_derivatives.html">HKEX (홍콩거래소) 파생상품 시장</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 (Global Derivatives Markets) — 개요 (Overview)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 — 비교 분석 (Global Derivatives Markets – Comparative Analysis)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">거래소</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Derivatives (호주증권거래소 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cboe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cboe Global Markets (Cboe 글로벌 마켓)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX, 중국금융선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group (CME 그룹)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE, 다롄상품거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME, 두바이상업거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/eurex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex (유렉스)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext Derivatives (유로넥스트 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">HKEX (홍콩거래소) 파생상품 시장</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange 선물)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX 파생상품시장 (한국거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX, 몬트리올거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O, 인도국립증권거래소 선물옵션)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (오사카거래소, OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX (싱가포르거래소) 파생상품</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE, 상하이선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX, 대만선물거래소)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">규제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">아시아태평양 파생상품 규제 (Asia-Pacific Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU 파생상품 규제 (EU Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">미국 파생상품 규제 (U.S. Derivatives Regulation)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">매매시스템</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#개요-및-프로필-overview-profile" id="toc-개요-및-프로필-overview-profile" class="nav-link active" data-scroll-target="#개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</a>
+  <ul class="collapse">
+  <li><a href="#주요-연혁-key-historical-milestones" id="toc-주요-연혁-key-historical-milestones" class="nav-link" data-scroll-target="#주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</a></li>
+  </ul></li>
+  <li><a href="#시장-구조-market-structure" id="toc-시장-구조-market-structure" class="nav-link" data-scroll-target="#시장-구조-market-structure">2. 시장 구조 (Market Structure)</a>
+  <ul class="collapse">
+  <li><a href="#하위-거래소-시장-부문-sub-exchanges-market-segments" id="toc-하위-거래소-시장-부문-sub-exchanges-market-segments" class="nav-link" data-scroll-target="#하위-거래소-시장-부문-sub-exchanges-market-segments">2.1 하위 거래소 / 시장 부문 (Sub-Exchanges / Market Segments)</a></li>
+  <li><a href="#매매시간-trading-sessions-hours" id="toc-매매시간-trading-sessions-hours" class="nav-link" data-scroll-target="#매매시간-trading-sessions-hours">2.2 매매시간 (Trading Sessions / Hours)</a></li>
+  <li><a href="#호가단위-최소변동폭-tick-sizes-minimum-fluctuations" id="toc-호가단위-최소변동폭-tick-sizes-minimum-fluctuations" class="nav-link" data-scroll-target="#호가단위-최소변동폭-tick-sizes-minimum-fluctuations">2.3 호가단위 / 최소변동폭 (Tick Sizes / Minimum Fluctuations)</a></li>
+  <li><a href="#계약-단위-거래-단위-contract-units-lot-sizes" id="toc-계약-단위-거래-단위-contract-units-lot-sizes" class="nav-link" data-scroll-target="#계약-단위-거래-단위-contract-units-lot-sizes">2.4 계약 단위 / 거래 단위 (Contract Units / Lot Sizes)</a></li>
+  <li><a href="#시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs" id="toc-시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 / 유동성 공급자 프로그램 (Market Maker / Liquidity Provider Programs)</a></li>
+  </ul></li>
+  <li><a href="#매매-메커니즘-trading-mechanism" id="toc-매매-메커니즘-trading-mechanism" class="nav-link" data-scroll-target="#매매-메커니즘-trading-mechanism">3. 매매 메커니즘 (Trading Mechanism)</a>
+  <ul class="collapse">
+  <li><a href="#개장-전-기간-pre-market-opening-period" id="toc-개장-전-기간-pre-market-opening-period" class="nav-link" data-scroll-target="#개장-전-기간-pre-market-opening-period">3.1 개장 전 기간 (Pre-Market Opening Period)</a></li>
+  <li><a href="#접속매매-세션-continuous-trading-session" id="toc-접속매매-세션-continuous-trading-session" class="nav-link" data-scroll-target="#접속매매-세션-continuous-trading-session">3.2 접속매매 세션 (Continuous Trading Session)</a></li>
+  <li><a href="#시간외-매매-t1-세션-after-hours-trading" id="toc-시간외-매매-t1-세션-after-hours-trading" class="nav-link" data-scroll-target="#시간외-매매-t1-세션-after-hours-trading">3.3 시간외 매매 (T+1 세션) (After-Hours Trading)</a></li>
+  <li><a href="#가격-관리-price-controls" id="toc-가격-관리-price-controls" class="nav-link" data-scroll-target="#가격-관리-price-controls">3.4 가격 관리 (Price Controls)</a></li>
+  <li><a href="#주문-우선순위-order-priority" id="toc-주문-우선순위-order-priority" class="nav-link" data-scroll-target="#주문-우선순위-order-priority">3.5 주문 우선순위 (Order Priority)</a></li>
+  </ul></li>
+  <li><a href="#주문-유형-order-types" id="toc-주문-유형-order-types" class="nav-link" data-scroll-target="#주문-유형-order-types">4. 주문 유형 (Order Types)</a>
+  <ul class="collapse">
+  <li><a href="#표준-주문-유형-standard-order-types" id="toc-표준-주문-유형-standard-order-types" class="nav-link" data-scroll-target="#표준-주문-유형-standard-order-types">4.1 표준 주문 유형 (Standard Order Types)</a></li>
+  <li><a href="#고급-주문-유형-advanced-order-types" id="toc-고급-주문-유형-advanced-order-types" class="nav-link" data-scroll-target="#고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</a></li>
+  <li><a href="#조합-주문-combination-orders" id="toc-조합-주문-combination-orders" class="nav-link" data-scroll-target="#조합-주문-combination-orders">4.3 조합 주문 (Combination Orders)</a></li>
+  <li><a href="#유효기간-조건-time-in-force-conditions" id="toc-유효기간-조건-time-in-force-conditions" class="nav-link" data-scroll-target="#유효기간-조건-time-in-force-conditions">4.4 유효기간 조건 (Time-in-Force Conditions)</a></li>
+  <li><a href="#주문-속성-order-attributes" id="toc-주문-속성-order-attributes" class="nav-link" data-scroll-target="#주문-속성-order-attributes">4.5 주문 속성 (Order Attributes)</a></li>
+  <li><a href="#주문-수정-및-취소-order-modification-cancellation" id="toc-주문-수정-및-취소-order-modification-cancellation" class="nav-link" data-scroll-target="#주문-수정-및-취소-order-modification-cancellation">4.6 주문 수정 및 취소 (Order Modification &amp; Cancellation)</a></li>
+  </ul></li>
+  <li><a href="#매매시스템-기술-trading-system-technology" id="toc-매매시스템-기술-trading-system-technology" class="nav-link" data-scroll-target="#매매시스템-기술-trading-system-technology">5. 매매시스템 / 기술 (Trading System / Technology)</a>
+  <ul class="collapse">
+  <li><a href="#시스템-개요-system-overview" id="toc-시스템-개요-system-overview" class="nav-link" data-scroll-target="#시스템-개요-system-overview">5.1 시스템 개요 (System Overview)</a></li>
+  <li><a href="#청산-시스템-clearing-system" id="toc-청산-시스템-clearing-system" class="nav-link" data-scroll-target="#청산-시스템-clearing-system">5.2 청산 시스템 (Clearing System)</a></li>
+  <li><a href="#접속-방법-access-methods" id="toc-접속-방법-access-methods" class="nav-link" data-scroll-target="#접속-방법-access-methods">5.3 접속 방법 (Access Methods)</a></li>
+  <li><a href="#네트워크-인프라-network-infrastructure" id="toc-네트워크-인프라-network-infrastructure" class="nav-link" data-scroll-target="#네트워크-인프라-network-infrastructure">5.4 네트워크 인프라 (Network Infrastructure)</a></li>
+  <li><a href="#시스템-연혁-system-history" id="toc-시스템-연혁-system-history" class="nav-link" data-scroll-target="#시스템-연혁-system-history">5.5 시스템 연혁 (System History)</a></li>
+  <li><a href="#재해복구-업무연속성-disaster-recovery-business-continuity" id="toc-재해복구-업무연속성-disaster-recovery-business-continuity" class="nav-link" data-scroll-target="#재해복구-업무연속성-disaster-recovery-business-continuity">5.6 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)</a></li>
+  </ul></li>
+  <li><a href="#시장-데이터-market-data" id="toc-시장-데이터-market-data" class="nav-link" data-scroll-target="#시장-데이터-market-data">6. 시장 데이터 (Market Data)</a>
+  <ul class="collapse">
+  <li><a href="#피드-프로토콜-feed-protocols" id="toc-피드-프로토콜-feed-protocols" class="nav-link" data-scroll-target="#피드-프로토콜-feed-protocols">6.1 피드 프로토콜 (Feed Protocols)</a></li>
+  <li><a href="#데이터-수준-data-levels" id="toc-데이터-수준-data-levels" class="nav-link" data-scroll-target="#데이터-수준-data-levels">6.2 데이터 수준 (Data Levels)</a></li>
+  <li><a href="#기술-사양-technical-specifications" id="toc-기술-사양-technical-specifications" class="nav-link" data-scroll-target="#기술-사양-technical-specifications">6.3 기술 사양 (Technical Specifications)</a></li>
+  <li><a href="#배포-distribution" id="toc-배포-distribution" class="nav-link" data-scroll-target="#배포-distribution">6.4 배포 (Distribution)</a></li>
+  <li><a href="#시장-데이터-상품-market-data-products" id="toc-시장-데이터-상품-market-data-products" class="nav-link" data-scroll-target="#시장-데이터-상품-market-data-products">6.5 시장 데이터 상품 (Market Data Products)</a></li>
+  </ul></li>
+  <li><a href="#접속-및-접근-connectivity-access" id="toc-접속-및-접근-connectivity-access" class="nav-link" data-scroll-target="#접속-및-접근-connectivity-access">7. 접속 및 접근 (Connectivity &amp; Access)</a>
+  <ul class="collapse">
+  <li><a href="#회원-참가-membership-participation" id="toc-회원-참가-membership-participation" class="nav-link" data-scroll-target="#회원-참가-membership-participation">7.1 회원 / 참가 (Membership / Participation)</a></li>
+  <li><a href="#접속-방법-connection-methods" id="toc-접속-방법-connection-methods" class="nav-link" data-scroll-target="#접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</a></li>
+  <li><a href="#코로케이션-호스팅-서비스-co-location-hosting-services" id="toc-코로케이션-호스팅-서비스-co-location-hosting-services" class="nav-link" data-scroll-target="#코로케이션-호스팅-서비스-co-location-hosting-services">7.3 코로케이션 / 호스팅 서비스 (Co-Location / Hosting Services)</a></li>
+  <li><a href="#api-프로토콜-api-protocols" id="toc-api-프로토콜-api-protocols" class="nav-link" data-scroll-target="#api-프로토콜-api-protocols">7.4 API 프로토콜 (API Protocols)</a></li>
+  <li><a href="#인증-테스트-certification-testing" id="toc-인증-테스트-certification-testing" class="nav-link" data-scroll-target="#인증-테스트-certification-testing">7.5 인증 / 테스트 (Certification / Testing)</a></li>
+  </ul></li>
+  <li><a href="#리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" id="toc-리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (Risk Controls &amp; Circuit Breakers)</a>
+  <ul class="collapse">
+  <li><a href="#변동성-관리-메커니즘-volatility-control-mechanism-vcm" id="toc-변동성-관리-메커니즘-volatility-control-mechanism-vcm" class="nav-link" data-scroll-target="#변동성-관리-메커니즘-volatility-control-mechanism-vcm">8.1 변동성 관리 메커니즘 (Volatility Control Mechanism, VCM)</a></li>
+  <li><a href="#동적-가격밴딩-dynamic-price-banding-dpb" id="toc-동적-가격밴딩-dynamic-price-banding-dpb" class="nav-link" data-scroll-target="#동적-가격밴딩-dynamic-price-banding-dpb">8.2 동적 가격밴딩 (Dynamic Price Banding, DPB)</a></li>
+  <li><a href="#가격상하한-메커니즘-price-limit-updown-mechanism" id="toc-가격상하한-메커니즘-price-limit-updown-mechanism" class="nav-link" data-scroll-target="#가격상하한-메커니즘-price-limit-updown-mechanism">8.3 가격상하한 메커니즘 (Price Limit Up/Down Mechanism)</a></li>
+  <li><a href="#사전-매매-리스크-관리-pre-trade-risk-management-ptrm" id="toc-사전-매매-리스크-관리-pre-trade-risk-management-ptrm" class="nav-link" data-scroll-target="#사전-매매-리스크-관리-pre-trade-risk-management-ptrm">8.4 사전 매매 리스크 관리 (Pre-Trade Risk Management, PTRM)</a></li>
+  <li><a href="#자기매매-방지-self-match-prevention-smp" id="toc-자기매매-방지-self-match-prevention-smp" class="nav-link" data-scroll-target="#자기매매-방지-self-match-prevention-smp">8.5 자기매매 방지 (Self-Match Prevention, SMP)</a></li>
+  <li><a href="#오류거래-처리-error-trade-handling" id="toc-오류거래-처리-error-trade-handling" class="nav-link" data-scroll-target="#오류거래-처리-error-trade-handling">8.6 오류거래 처리 (Error Trade Handling)</a></li>
+  <li><a href="#킬-스위치-kill-switch" id="toc-킬-스위치-kill-switch" class="nav-link" data-scroll-target="#킬-스위치-kill-switch">8.7 킬 스위치 (Kill Switch)</a></li>
+  </ul></li>
+  <li><a href="#규제-체계-regulatory-framework" id="toc-규제-체계-regulatory-framework" class="nav-link" data-scroll-target="#규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</a>
+  <ul class="collapse">
+  <li><a href="#감독-기관-supervising-authorities" id="toc-감독-기관-supervising-authorities" class="nav-link" data-scroll-target="#감독-기관-supervising-authorities">9.1 감독 기관 (Supervising Authorities)</a></li>
+  <li><a href="#주요-규정-key-regulations" id="toc-주요-규정-key-regulations" class="nav-link" data-scroll-target="#주요-규정-key-regulations">9.2 주요 규정 (Key Regulations)</a></li>
+  <li><a href="#시장-감시-market-surveillance" id="toc-시장-감시-market-surveillance" class="nav-link" data-scroll-target="#시장-감시-market-surveillance">9.3 시장 감시 (Market Surveillance)</a></li>
+  <li><a href="#보고-요건-reporting-requirements" id="toc-보고-요건-reporting-requirements" class="nav-link" data-scroll-target="#보고-요건-reporting-requirements">9.4 보고 요건 (Reporting Requirements)</a></li>
+  <li><a href="#국경간-제도-cross-border-arrangements" id="toc-국경간-제도-cross-border-arrangements" class="nav-link" data-scroll-target="#국경간-제도-cross-border-arrangements">9.5 국경간 제도 (Cross-Border Arrangements)</a></li>
+  </ul></li>
+  <li><a href="#수수료-및-수익-모델-fees-revenue-model" id="toc-수수료-및-수익-모델-fees-revenue-model" class="nav-link" data-scroll-target="#수수료-및-수익-모델-fees-revenue-model">10. 수수료 및 수익 모델 (Fees &amp; Revenue Model)</a>
+  <ul class="collapse">
+  <li><a href="#파생상품-매매-수수료-derivatives-trading-fees" id="toc-파생상품-매매-수수료-derivatives-trading-fees" class="nav-link" data-scroll-target="#파생상품-매매-수수료-derivatives-trading-fees">10.1 파생상품 매매 수수료 (Derivatives Trading Fees)</a></li>
+  <li><a href="#주요-수수료-참고사항-key-fee-notes" id="toc-주요-수수료-참고사항-key-fee-notes" class="nav-link" data-scroll-target="#주요-수수료-참고사항-key-fee-notes">10.2 주요 수수료 참고사항 (Key Fee Notes)</a></li>
+  <li><a href="#청산-수수료-clearing-fees" id="toc-청산-수수료-clearing-fees" class="nav-link" data-scroll-target="#청산-수수료-clearing-fees">10.3 청산 수수료 (Clearing Fees)</a></li>
+  <li><a href="#시장-데이터-수수료-market-data-fees" id="toc-시장-데이터-수수료-market-data-fees" class="nav-link" data-scroll-target="#시장-데이터-수수료-market-data-fees">10.4 시장 데이터 수수료 (Market Data Fees)</a></li>
+  <li><a href="#접속-수수료-connectivity-fees" id="toc-접속-수수료-connectivity-fees" class="nav-link" data-scroll-target="#접속-수수료-connectivity-fees">10.5 접속 수수료 (Connectivity Fees)</a></li>
+  </ul></li>
+  <li><a href="#최근-동향-recent-developments" id="toc-최근-동향-recent-developments" class="nav-link" data-scroll-target="#최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</a>
+  <ul class="collapse">
+  <li><a href="#역대-최고-거래량-20242025-record-trading-volumes" id="toc-역대-최고-거래량-20242025-record-trading-volumes" class="nav-link" data-scroll-target="#역대-최고-거래량-20242025-record-trading-volumes">11.1 역대 최고 거래량 (2024–2025) (Record Trading Volumes)</a></li>
+  <li><a href="#상품-출시-및-개선-product-launches-enhancements" id="toc-상품-출시-및-개선-product-launches-enhancements" class="nav-link" data-scroll-target="#상품-출시-및-개선-product-launches-enhancements">11.2 상품 출시 및 개선 (Product Launches &amp; Enhancements)</a></li>
+  <li><a href="#규제-변경-regulatory-changes" id="toc-규제-변경-regulatory-changes" class="nav-link" data-scroll-target="#규제-변경-regulatory-changes">11.3 규제 변경 (Regulatory Changes)</a></li>
+  <li><a href="#전략적-이니셔티브-strategic-initiatives" id="toc-전략적-이니셔티브-strategic-initiatives" class="nav-link" data-scroll-target="#전략적-이니셔티브-strategic-initiatives">11.4 전략적 이니셔티브 (Strategic Initiatives)</a></li>
+  <li><a href="#경영진-leadership" id="toc-경영진-leadership" class="nav-link" data-scroll-target="#경영진-leadership">11.5 경영진 (Leadership)</a></li>
+  </ul></li>
+  <li><a href="#파생상품-전용-섹션-derivatives-specific-sections" id="toc-파생상품-전용-섹션-derivatives-specific-sections" class="nav-link" data-scroll-target="#파생상품-전용-섹션-derivatives-specific-sections">파생상품 전용 섹션 (Derivatives-Specific Sections)</a>
+  <ul class="collapse">
+  <li><a href="#d1.-상품-목록-product-catalog" id="toc-d1.-상품-목록-product-catalog" class="nav-link" data-scroll-target="#d1.-상품-목록-product-catalog">D1. 상품 목록 (Product Catalog)</a></li>
+  <li><a href="#d2.-주요-계약-명세-거래량-상위-5개-key-contract-specifications-top-5-by-volume" id="toc-d2.-주요-계약-명세-거래량-상위-5개-key-contract-specifications-top-5-by-volume" class="nav-link" data-scroll-target="#d2.-주요-계약-명세-거래량-상위-5개-key-contract-specifications-top-5-by-volume">D2. 주요 계약 명세 (거래량 상위 5개) (Key Contract Specifications, Top 5 by Volume)</a></li>
+  <li><a href="#d3.-증거금-체계-margin-framework" id="toc-d3.-증거금-체계-margin-framework" class="nav-link" data-scroll-target="#d3.-증거금-체계-margin-framework">D3. 증거금 체계 (Margin Framework)</a></li>
+  <li><a href="#d4.-포지션한도-및-대량미결제포지션-보고-position-limits-large-open-position-reporting" id="toc-d4.-포지션한도-및-대량미결제포지션-보고-position-limits-large-open-position-reporting" class="nav-link" data-scroll-target="#d4.-포지션한도-및-대량미결제포지션-보고-position-limits-large-open-position-reporting">D4. 포지션한도 및 대량미결제포지션 보고 (Position Limits &amp; Large Open Position Reporting)</a></li>
+  <li><a href="#d5.-블록거래-규칙-block-trading-rules" id="toc-d5.-블록거래-규칙-block-trading-rules" class="nav-link" data-scroll-target="#d5.-블록거래-규칙-block-trading-rules">D5. 블록거래 규칙 (Block Trading Rules)</a></li>
+  <li><a href="#d6.-인도-및-결제-절차-delivery-settlement-process" id="toc-d6.-인도-및-결제-절차-delivery-settlement-process" class="nav-link" data-scroll-target="#d6.-인도-및-결제-절차-delivery-settlement-process">D6. 인도 및 결제 절차 (Delivery &amp; Settlement Process)</a></li>
+  </ul></li>
+  <li><a href="#부록-krx-파생상품과의-비교-appendix-comparison-with-krx-derivatives" id="toc-부록-krx-파생상품과의-비교-appendix-comparison-with-krx-derivatives" class="nav-link" data-scroll-target="#부록-krx-파생상품과의-비교-appendix-comparison-with-krx-derivatives">부록: KRX 파생상품과의 비교 (Appendix: Comparison with KRX Derivatives)</a></li>
+  <li><a href="#자료-출처-및-참고문헌-data-sources-references" id="toc-자료-출처-및-참고문헌-data-sources-references" class="nav-link" data-scroll-target="#자료-출처-및-참고문헌-data-sources-references">자료 출처 및 참고문헌 (Data Sources &amp; References)</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/hkex_derivatives.html">HKEX (홍콩거래소) 파생상품 시장</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">HKEX (홍콩거래소) 파생상품 시장</h1>
+<p class="subtitle lead">파생상품 &gt; 거래소</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 4월 17일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>최종 수정일:</strong> 2026-04-06 <strong>조사 단계:</strong> Tier 1 <strong>도메인:</strong> 파생상품</p>
+</blockquote>
+<hr>
+<section id="개요-및-프로필-overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>공식 명칭</td>
+<td>Hong Kong Futures Exchange Limited (HKFE), Hong Kong Exchanges and Clearing Limited (HKEX)의 완전자회사</td>
+</tr>
+<tr class="even">
+<td>약칭</td>
+<td>HKFE (선물/지수옵션); SEHK Options (주식옵션)</td>
+</tr>
+<tr class="odd">
+<td>웹사이트</td>
+<td>https://www.hkex.com.hk</td>
+</tr>
+<tr class="even">
+<td>설립 연도</td>
+<td>1976년 (Hong Kong Commodities Exchange로 설립; 1985년 Hong Kong Futures Exchange로 개명)</td>
+</tr>
+<tr class="odd">
+<td>국가 / 도시</td>
+<td>중국 홍콩특별행정구 / 센트럴 (등록사무소: 8/F, Two Exchange Square, 8 Connaught Place, Central)</td>
+</tr>
+<tr class="even">
+<td>소유 구조</td>
+<td>HKFE는 HKEX의 완전자회사이며, HKEX는 SEHK에 상장된 공개기업 (종목코드: 0388.HK). 홍콩특별행정구 정부가 최대 단일 주주로서 이사회 13인 중 6인 임명권 보유</td>
+</tr>
+<tr class="odd">
+<td>모회사 / 그룹</td>
+<td>Hong Kong Exchanges and Clearing Limited (HKEX) – SEHK (현물 주식), HKFE (파생상품), LME (London Metal Exchange, 2012년 인수), 4개 청산기관 (HKSCC, HKCC, SEOCH, OTC Clear), 데이터 서비스를 포괄하는 수직통합 그룹</td>
+</tr>
+<tr class="even">
+<td>감독 기관</td>
+<td>홍콩 증권선물위원회 (Securities and Futures Commission, SFC), 증권선물조례(Securities and Futures Ordinance, SFO, Cap. 571)에 근거</td>
+</tr>
+<tr class="odd">
+<td>시가총액 (HKEX 그룹)</td>
+<td>~HK$3,400억 (2026년 초 기준)</td>
+</tr>
+<tr class="even">
+<td>HKEX 그룹 매출 (2025년)</td>
+<td>HK$29,161백만</td>
+</tr>
+<tr class="odd">
+<td>HKEX 그룹 순이익 (2025년)</td>
+<td>HK$17,754백만</td>
+</tr>
+<tr class="even">
+<td>파생상품 연간 거래량 (2024년)</td>
+<td>3억 3,400만 계약 (3년 연속 최고 기록)</td>
+</tr>
+<tr class="odd">
+<td>파생상품 일평균 거래량 (2025년 1분기)</td>
+<td>1,866천 계약 (분기 최고 기록, 전년 대비 +24%)</td>
+</tr>
+<tr class="even">
+<td>파생상품 일일 최고 기록</td>
+<td>426만 계약 (2024년 9월 27일)</td>
+</tr>
+<tr class="odd">
+<td>청산기관</td>
+<td>HKFE Clearing Corporation Limited (HKCC, 선물); The SEHK Options Clearing House Limited (SEOCH, 주식옵션); OTC Clear (장외 파생상품)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: HKEX, “About HKEX”, https://www.hkex.com.hk, accessed 2026-04-06] [Source: Wikipedia, “Hong Kong Exchanges and Clearing”, accessed 2026-04-06] [Source: HKEX, “Q1 2025 Quarterly Results”, April 2025] [Source: FOW, “HKEX to list single stock options in March after record 2024”, February 2025]</p>
+<section id="주요-연혁-key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</h3>
+<ul>
+<li><strong>1976년:</strong> Hong Kong Commodities Exchange 설립; 초기에 면화, 설탕, 대두, 금 선물 거래</li>
+<li><strong>1985년:</strong> Hong Kong Futures Exchange Limited (HKFE)로 개명</li>
+<li><strong>1986년:</strong> Hang Seng Index 선물 출시 (대표 상품으로 자리매김); 4개 증권거래소가 Stock Exchange of Hong Kong (SEHK)로 합병</li>
+<li><strong>1987년:</strong> 10월 증시 폭락; HKFE 4일간 거래 중단; 이후 Davison 위원회 개혁</li>
+<li><strong>1989년:</strong> HKFE Clearing Corporation (HKCC)이 기존 보증공사를 대체하여 청산 기능 인수</li>
+<li><strong>1993년:</strong> SEHK에서 주식옵션 도입; HKFE에서 Hang Seng Index 옵션 출시</li>
+<li><strong>1995년:</strong> HKATS (Hong Kong Futures Automatic Trading System) 11월 출시 – 전자매매가 호가장내거래(open outcry)를 대체</li>
+<li><strong>1997년:</strong> H-shares Index (HSCEI) 선물 출시; 아시아 금융위기로 시장 회복력 검증</li>
+<li><strong>1999년:</strong> HKFE 거래장 폐쇄; 모든 거래가 전자 HKATS 플랫폼으로 전환</li>
+<li><strong>2000년:</strong> HKFE, SEHK, HKSCC가 탈상호화하여 HKEX 지주회사 하에 합병 (2000년 6월 27일 상장, 종목코드 0388)</li>
+<li><strong>2000년:</strong> Mini-HSI 선물 출시 (10월), 개인투자자 대상</li>
+<li><strong>2003년:</strong> 주식선물 도입</li>
+<li><strong>2008년:</strong> 시간외 선물거래 (T+1 세션) 도입</li>
+<li><strong>2012년:</strong> HKEX가 London Metal Exchange (LME)를 GBP 13.88억에 인수; USD/CNH 통화 선물 출시</li>
+<li><strong>2013년:</strong> HKATS와 DCASS를 Nasdaq의 Genium INET 플랫폼으로 업그레이드 (10월), 지연시간 및 용량 대폭 개선</li>
+<li><strong>2017년:</strong> MSCI 지수 선물 제품군 출시, 아시아 및 신흥시장 커버</li>
+<li><strong>2019년:</strong> HKATS를 최신 Genium INET 버전으로 업그레이드 (5월); LME London Metal Mini 선물 도입 (8월)</li>
+<li><strong>2020년:</strong> Hang Seng TECH Index 선물 및 옵션 출시 (11월)</li>
+<li><strong>2021년:</strong> MSCI China A 50 Connect Index 선물 출시 (10월)</li>
+<li><strong>2023년:</strong> Swap Connect (Northbound) 출시 (5월 15일), 은행간 금리스왑 대상; 주간 주식옵션 만기 도입 (2024년 11월)</li>
+<li><strong>2024년:</strong> Bonnie Chan Yiting CEO 취임 (3월 1일); Carlson Tong Ka-shing 이사회 의장 취임 (5월 3일); 파생상품 거래량 3년 연속 연간 최고 기록 3억 3,400만 계약; 일일 최고 426만 계약 (9월 27일)</li>
+<li><strong>2025년:</strong> 1분기 파생상품 ADV 분기 최고 기록 1,866K 계약; 주식옵션 1분기 ADV 최고 기록 964,803계약; 포지션한도 확대 2025년 7월 2일 시행; HKEX 포지션한도 확대를 위한 시스템 개선 실시</li>
+<li><strong>2026년 (진행 중):</strong> MSCI 파생상품 제품군 지속 확대; Southbound Swap Connect 개선; 위안화 표시 파생상품 확대</li>
+</ul>
+<p>[Source: Wikipedia, “Hong Kong Futures Exchange”, accessed 2026-04-06] [Source: HKEX, “History of HKEX and its Market”, https://www.hkexgroup.com, accessed 2026-04-06] [Source: MarketsWiki, “Hong Kong Exchanges and Clearing Ltd.”, accessed 2026-04-06] [Source: HKEX quarterly results and press releases, 2024-2025]</p>
+<hr>
+</section>
+</section>
+<section id="시장-구조-market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="시장-구조-market-structure">2. 시장 구조 (Market Structure)</h2>
+<section id="하위-거래소-시장-부문-sub-exchanges-market-segments" class="level3">
+<h3 class="anchored" data-anchor-id="하위-거래소-시장-부문-sub-exchanges-market-segments">2.1 하위 거래소 / 시장 부문 (Sub-Exchanges / Market Segments)</h3>
+<p>HKEX의 파생상품 시장은 2개의 거래소 자회사와 2개의 청산기관을 통해 운영된다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 25%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>법인</th>
+<th>역할</th>
+<th>상품</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Hong Kong Futures Exchange (HKFE)</strong></td>
+<td>선물 및 지수옵션 거래소</td>
+<td>주가지수 선물/옵션, 금리 선물, 통화 선물, 상품 선물, 변동성지수 선물, 배당 선물</td>
+</tr>
+<tr class="even">
+<td><strong>Stock Exchange of Hong Kong (SEHK) – Options</strong></td>
+<td>개별주식옵션 거래소</td>
+<td>홍콩 상장 주식 및 ETF ~100종목에 대한 주식옵션</td>
+</tr>
+<tr class="odd">
+<td><strong>HKFE Clearing Corporation (HKCC)</strong></td>
+<td>HKFE 상품의 CCP</td>
+<td>HKFE에서 거래되는 모든 선물 및 지수옵션 청산</td>
+</tr>
+<tr class="even">
+<td><strong>SEHK Options Clearing House (SEOCH)</strong></td>
+<td>SEHK 주식옵션의 CCP</td>
+<td>SEHK에서 거래되는 모든 주식옵션 청산</td>
+</tr>
+</tbody>
+</table>
+<p>HKCC와 SEOCH 모두 청산 및 결제를 위해 공유된 Derivatives Clearing and Settlement System (DCASS)을 사용한다.</p>
+<p>[Source: HKEX, “Clearing Services – Listed Derivatives Overview”, accessed 2026-04-06]</p>
+</section>
+<section id="매매시간-trading-sessions-hours" class="level3">
+<h3 class="anchored" data-anchor-id="매매시간-trading-sessions-hours">2.2 매매시간 (Trading Sessions / Hours)</h3>
+<p>HKEX 파생상품은 <strong>점심 휴장</strong> (아시아 시장의 특징적 요소) 및 일부 상품에 대한 <strong>시간외 매매(After-Hours Trading, AHT / T+1) 세션</strong>으로 운영된다.</p>
+<section id="주가지수-선물-및-옵션-hsi-hscei-hstech-msci" class="level4">
+<h4 class="anchored" data-anchor-id="주가지수-선물-및-옵션-hsi-hscei-hstech-msci">주가지수 선물 및 옵션 (HSI, HSCEI, HSTECH, MSCI)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>시간 (HKT)</th>
+<th>시간 (UTC)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>개장 전 (오전)</td>
+<td>8:45 AM – 9:15 AM</td>
+<td>00:45 – 01:15</td>
+</tr>
+<tr class="even">
+<td>오전 세션</td>
+<td>9:15 AM – 12:00 PM</td>
+<td>01:15 – 04:00</td>
+</tr>
+<tr class="odd">
+<td>점심 휴장</td>
+<td>12:00 PM – 12:30 PM</td>
+<td>04:00 – 04:30</td>
+</tr>
+<tr class="even">
+<td>개장 전 (오후)</td>
+<td>12:30 PM – 1:00 PM</td>
+<td>04:30 – 05:00</td>
+</tr>
+<tr class="odd">
+<td>오후 세션</td>
+<td>1:00 PM – 4:30 PM</td>
+<td>05:00 – 08:30</td>
+</tr>
+<tr class="even">
+<td>시간외 매매 (T+1)</td>
+<td>5:15 PM – 3:00 AM (+1)</td>
+<td>09:15 – 19:00</td>
+</tr>
+</tbody>
+</table>
+<p><strong>참고:</strong> 만기일에는 만기 계약월이 4:00 PM HKT에 마감된다 (AHT 세션 없음).</p>
+</section>
+<section id="개별주식-선물-및-옵션-single-stock-futures-options" class="level4">
+<h4 class="anchored" data-anchor-id="개별주식-선물-및-옵션-single-stock-futures-options">개별주식 선물 및 옵션 (Single Stock Futures &amp; Options)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>시간 (HKT)</th>
+<th>시간 (UTC)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>오전 세션</td>
+<td>9:30 AM – 12:00 PM</td>
+<td>01:30 – 04:00</td>
+</tr>
+<tr class="even">
+<td>오후 세션</td>
+<td>1:00 PM – 4:00 PM</td>
+<td>05:00 – 08:00</td>
+</tr>
+</tbody>
+</table>
+<p><strong>참고:</strong> 주식선물 및 주식옵션에는 시간외 매매 세션이 없다.</p>
+</section>
+<section id="통화-선물-usdcnh-등-currency-futures" class="level4">
+<h4 class="anchored" data-anchor-id="통화-선물-usdcnh-등-currency-futures">통화 선물 (USD/CNH 등) (Currency Futures)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>시간 (HKT)</th>
+<th>시간 (UTC)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주간 세션</td>
+<td>8:30 AM – 6:30 PM</td>
+<td>00:30 – 10:30</td>
+</tr>
+<tr class="even">
+<td>시간외 매매</td>
+<td>7:15 PM – 3:00 AM (+1)</td>
+<td>11:15 – 19:00</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="금리-선물-hibor-interest-rate-futures" class="level4">
+<h4 class="anchored" data-anchor-id="금리-선물-hibor-interest-rate-futures">금리 선물 (HIBOR) (Interest Rate Futures)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>시간 (HKT)</th>
+<th>시간 (UTC)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>오전 세션</td>
+<td>8:30 AM – 12:00 PM</td>
+<td>00:30 – 04:00</td>
+</tr>
+<tr class="even">
+<td>오후 세션</td>
+<td>1:30 PM – 5:00 PM</td>
+<td>05:30 – 09:00</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="상품-선물-금-은-철광석-lme-미니-commodity-futures" class="level4">
+<h4 class="anchored" data-anchor-id="상품-선물-금-은-철광석-lme-미니-commodity-futures">상품 선물 (금, 은, 철광석, LME 미니) (Commodity Futures)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>시간 (HKT)</th>
+<th>시간 (UTC)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주간 세션</td>
+<td>8:30 AM – 4:30 PM (금/은)</td>
+<td>00:30 – 08:30</td>
+</tr>
+<tr class="even">
+<td>주간 세션</td>
+<td>9:00 AM – 4:30 PM (LME 금속)</td>
+<td>01:00 – 08:30</td>
+</tr>
+<tr class="odd">
+<td>시간외 매매</td>
+<td>5:15 PM – 3:00 AM (+1)</td>
+<td>09:15 – 19:00</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: HKEX, “Trading Hours – Derivatives Market”, https://www.hkex.com.hk/Services/Trading-hours-and-Severe-Weather-Arrangements/Trading-Hours/Derivatives-Market, accessed 2026-04-06]</p>
+</section>
+</section>
+<section id="호가단위-최소변동폭-tick-sizes-minimum-fluctuations" class="level3">
+<h3 class="anchored" data-anchor-id="호가단위-최소변동폭-tick-sizes-minimum-fluctuations">2.3 호가단위 / 최소변동폭 (Tick Sizes / Minimum Fluctuations)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>호가단위 (최소가격변동폭)</th>
+<th>호가단위 가치</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HSI 선물 (HSIF)</td>
+<td>1 지수포인트</td>
+<td>HK$50</td>
+</tr>
+<tr class="even">
+<td>Mini-HSI 선물 (MHI)</td>
+<td>1 지수포인트</td>
+<td>HK$10</td>
+</tr>
+<tr class="odd">
+<td>HSCEI 선물 (HHI)</td>
+<td>1 지수포인트</td>
+<td>HK$50</td>
+</tr>
+<tr class="even">
+<td>Mini-HSCEI 선물 (MCH)</td>
+<td>1 지수포인트</td>
+<td>HK$10</td>
+</tr>
+<tr class="odd">
+<td>HS TECH 선물 (HTI)</td>
+<td>1 지수포인트</td>
+<td>HK$50</td>
+</tr>
+<tr class="even">
+<td>HSI 옵션</td>
+<td>1 지수포인트</td>
+<td>HK$50</td>
+</tr>
+<tr class="odd">
+<td>주식옵션</td>
+<td>HK$0.01 (가격대별 상이)</td>
+<td>계약 단위에 따라 상이</td>
+</tr>
+<tr class="even">
+<td>USD/CNH 선물</td>
+<td>USD당 RMB 0.0001</td>
+<td>RMB 10</td>
+</tr>
+<tr class="odd">
+<td>USD 금 선물</td>
+<td>트로이온스당 USD 0.01</td>
+<td>USD 0.10</td>
+</tr>
+<tr class="even">
+<td>CNH 금 선물</td>
+<td>그램당 RMB 0.01</td>
+<td>RMB 0.10</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="계약-단위-거래-단위-contract-units-lot-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="계약-단위-거래-단위-contract-units-lot-sizes">2.4 계약 단위 / 거래 단위 (Contract Units / Lot Sizes)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>거래승수 / 단위</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HSI 선물</td>
+<td>지수포인트당 HK$50</td>
+</tr>
+<tr class="even">
+<td>Mini-HSI 선물</td>
+<td>지수포인트당 HK$10 (표준의 1/5)</td>
+</tr>
+<tr class="odd">
+<td>HSCEI 선물</td>
+<td>지수포인트당 HK$50</td>
+</tr>
+<tr class="even">
+<td>Mini-HSCEI 선물</td>
+<td>지수포인트당 HK$10 (표준의 1/5)</td>
+</tr>
+<tr class="odd">
+<td>HS TECH 선물</td>
+<td>지수포인트당 HK$50</td>
+</tr>
+<tr class="even">
+<td>HSI 옵션</td>
+<td>지수포인트당 HK$50</td>
+</tr>
+<tr class="odd">
+<td>주식옵션</td>
+<td>기초자산별 상이 (통상 1 매매단위 = 계약 단위)</td>
+</tr>
+<tr class="even">
+<td>주식선물</td>
+<td>기초자산별 상이 (통상 1 매매단위)</td>
+</tr>
+<tr class="odd">
+<td>USD/CNH 선물</td>
+<td>USD 100,000</td>
+</tr>
+<tr class="even">
+<td>Mini USD/CNH 선물</td>
+<td>USD 20,000</td>
+</tr>
+<tr class="odd">
+<td>USD 금 선물</td>
+<td>10 트로이온스</td>
+</tr>
+<tr class="even">
+<td>CNH 금 선물</td>
+<td>10 그램</td>
+</tr>
+<tr class="odd">
+<td>HIBOR 선물</td>
+<td>HK$5,000,000 명목</td>
+</tr>
+</tbody>
+</table>
+<p><strong>대체가능성 (Fungibility):</strong> Mini-HSI와 표준 HSI 선물은 5:1 비율로 대체 가능하다 (Mini 5계약이 표준 1계약을 상쇄). Mini-HSCEI와 표준 HSCEI 선물에도 동일하게 적용된다.</p>
+<p>[Source: HKEX, “Hang Seng Index Futures” product page, accessed 2026-04-06] [Source: HKEX, “Mini-Hang Seng Index Futures” product page, accessed 2026-04-06]</p>
+</section>
+<section id="시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="시장조성자-유동성-공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 / 유동성 공급자 프로그램 (Market Maker / Liquidity Provider Programs)</h3>
+<p>HKEX는 공식적인 <strong>시장조성자 (마켓메이커, MM) 프로그램</strong>과 상업적인 <strong>유동성 공급자(LP) 프로그램</strong>을 모두 운영한다.</p>
+<p><strong>시장조성자 유형:</strong> - <strong>Primary Market Maker (PMM):</strong> 보다 높은 호가 요건을 갖춘 지수옵션에 대한 강화된 의무 - <strong>Continuous Quote Market Maker (CQMM):</strong> 매매시간 중 상시 양방향 호가 제공 - <strong>Quote Request Market Maker (QRMM):</strong> 다른 참가자의 특정 호가 요청에 응답</p>
+<p><strong>주요 의무 (예시 – HSI 선물 CQMM):</strong> - 월별 매매시간 중 70% 이상 연속 호가 제시 - 최대 매수·매도 스프레드: 15 최소변동폭 (15 지수포인트) - 최소 호가 유지시간: 10초 - 최소 호가 수량: 5계약 - 배정 월물: 당월 + 차월 - 호가 응답 준수율 70% (T+1 세션의 경우 50%) - 호가 요청에 대한 최대 20초 응답시간</p>
+<p><strong>인센티브 구조 (예시):</strong> - HSI 선물 MM: 거래소 수수료 면제 (HK$0 vs.&nbsp;표준 HK$10) - HSI 옵션 MM: 계약당 HK$2 (표준 HK$10 대비) - 주식선물 Tier 1 MM: 계약당 HK$0.50 (표준 HK$3.00 대비) - MSCI 지수 Tier 1 MM: 월별 매매 세션당 계약당 HK$25,000 (현금 인센티브) + 계약당 USD 0.30 수수료 할인</p>
+<p><strong>블록거래 (대량매매) 참가자 프로그램:</strong> 최우수 실적자 (분기 최소 20,000계약)는 추가 현금 인센티브를 수령한다: - 1위: HK$1.2백만 - 2위: HK$450K - 3위: HK$150K</p>
+<p><strong>자격 요건:</strong> HKFE 거래참가자, 또는 SFC 규제(또는 동등) 적용, 인가은행 지위, A-/A3+ 신용등급, 최소 HK$5천만 납입자본금 및 HK$1억 주주자본을 충족하는 법인.</p>
+<p>[Source: HKEX, “Market Making/Liquidity Providing Obligations and Incentives”, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="매매-메커니즘-trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="매매-메커니즘-trading-mechanism">3. 매매 메커니즘 (Trading Mechanism)</h2>
+<section id="개장-전-기간-pre-market-opening-period" class="level3">
+<h3 class="anchored" data-anchor-id="개장-전-기간-pre-market-opening-period">3.1 개장 전 기간 (Pre-Market Opening Period)</h3>
+<p>개장 전(PMO) 기간 (지수상품의 경우 8:45–9:15 AM 및 12:30–1:00 PM) 동안 시스템은 주문을 수집하고 <strong>산출개시가(Calculated Opening Price, COP)</strong>를 계산한다. 접속매매 전환 시 주문은 COP에서 체결된다.</p>
+<ul>
+<li><strong>경매 주문 (Auction Orders):</strong> 가격이 지정되지 않은 주문으로, PMO 기간 중 시간우선 원칙에 따라 COP에서 체결된다. 경매 시 지정가 주문보다 높은 체결 우선순위를 갖는다.</li>
+<li><strong>PMO 지정가 주문:</strong> 가격 제한을 지정하여 입력하며, COP가 제한가격 이내인 경우 COP에서 체결된다.</li>
+</ul>
+</section>
+<section id="접속매매-세션-continuous-trading-session" class="level3">
+<h3 class="anchored" data-anchor-id="접속매매-세션-continuous-trading-session">3.2 접속매매 세션 (Continuous Trading Session)</h3>
+<ul>
+<li><strong>체결 알고리즘:</strong> 엄격한 <strong>가격/시간 우선</strong> – 최적 가격의 주문이 먼저 체결되며, 동일 가격의 주문 간에는 선접수 주문이 우선한다.</li>
+<li>HKATS는 주문을 동기적이고 순차적으로 처리하며, 한 번에 하나의 거래를 처리한다.</li>
+<li>모든 참가자는 시간/장소 우위 없이 중앙집중 전자 시장에서 동일한 체결을 받는다.</li>
+<li>체결 데이터는 체결 즉시 관련 청산기관 (HKCC 또는 SEOCH)으로 동시 전송된다.</li>
+</ul>
+</section>
+<section id="시간외-매매-t1-세션-after-hours-trading" class="level3">
+<h3 class="anchored" data-anchor-id="시간외-매매-t1-세션-after-hours-trading">3.3 시간외 매매 (T+1 세션) (After-Hours Trading)</h3>
+<ul>
+<li>주요 주가지수 상품, 통화 선물, 상품 선물에 이용 가능하다.</li>
+<li><strong>T+1 속성</strong>이 있는 주문은 AHT 세션 (지수상품의 경우 5:15 PM – 3:00 AM HKT) 동안 활성 상태를 유지한다.</li>
+<li>T+1 속성이 없는 주문은 AHT 중 자동 비활성화되며 다음 정규 세션에서 재활성화된다.</li>
+<li>T+1 거래는 다음 영업일에 청산 및 결제된다.</li>
+</ul>
+</section>
+<section id="가격-관리-price-controls" class="level3">
+<h3 class="anchored" data-anchor-id="가격-관리-price-controls">3.4 가격 관리 (Price Controls)</h3>
+<p><strong>동적 가격밴딩 (Dynamic Price Banding, DPB):</strong> - 기준가격 주변에 변동 밴드를 적용하여 오류 주문을 방지한다. - 기준가격은 실제 체결 가격에 기반하여 동적으로 조정된다. - 밴드 외부의 주문은 거부된다.</p>
+<p><strong>변동성 관리 메커니즘 (Volatility Control Mechanism, VCM):</strong> - 개별 종목에 적용된다 (시장 전체가 아님). - 발동 수준: 파생상품의 경우 최종 체결가 대비 +/- 5% (증권의 +/- 10%와 비교). - 발동 시 <strong>냉각기간(cooling-off period)</strong>이 호출되며, 이 기간 중 가격밴드 내에서 거래가 계속된다. - VCM은 HSI 선물, HSCEI 선물, HS TECH 선물, Mini 상품을 포함한 주요 상품에 적용된다.</p>
+<p><strong>가격상하한 메커니즘 (Price Limit Up/Down Mechanism):</strong> - 사전 정의된 범위 내에서 극단적 변동성을 관리하기 위한 추가 가격밴드 제한.</p>
+</section>
+<section id="주문-우선순위-order-priority" class="level3">
+<h3 class="anchored" data-anchor-id="주문-우선순위-order-priority">3.5 주문 우선순위 (Order Priority)</h3>
+<ol type="1">
+<li><strong>가격 우선</strong> – 최적 가격이 항상 먼저 체결</li>
+<li><strong>시간 우선</strong> – 동일 가격의 주문 중 가장 먼저 접수된 주문이 먼저 체결</li>
+<li><strong>경매 주문</strong>은 개장 전 기간 중 지정가 주문보다 우선</li>
+</ol>
+<p>[Source: HKEX, “Trading Mechanism Overview”, https://www.hkex.com.hk/-/media/hkex-market/services/trading/derivatives/trading-mechanism/overview/tradingmechanismoverview_e, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="주문-유형-order-types" class="level2">
+<h2 class="anchored" data-anchor-id="주문-유형-order-types">4. 주문 유형 (Order Types)</h2>
+<section id="표준-주문-유형-standard-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="표준-주문-유형-standard-order-types">4.1 표준 주문 유형 (Standard Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>지정가 주문 (Limit Order, LO)</strong></td>
+<td>매수 최고가 또는 매도 최저가를 지정; 시장가격이 지정가에 도달하거나 유리해질 때 체결</td>
+</tr>
+<tr class="even">
+<td><strong>경매 주문 (Auction Order, AAO)</strong></td>
+<td>가격 미지정; 개장 전 기간에만 사용; COP에서 지정가 주문보다 높은 우선순위로 체결</td>
+</tr>
+<tr class="odd">
+<td><strong>경매 지정가 주문 (At-Auction Limit Order, AALO)</strong></td>
+<td>경매 기간 중 입력되는 지정가 주문; 지정가 이내인 경우 COP에서 체결</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="고급-주문-유형-advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Enhanced Limit Order (ELO)</strong></td>
+<td>최적가로부터 지정 가격단계 수(최대 10틱)까지 체결; 미체결 부분은 지정가 주문으로 잔존</td>
+</tr>
+<tr class="even">
+<td><strong>Special Limit Order (SLO)</strong></td>
+<td>ELO와 유사하지만 미체결 부분이 취소됨</td>
+</tr>
+<tr class="odd">
+<td><strong>Stop Loss Limit Order (SLLO)</strong></td>
+<td>시장이 지정 스톱가격에 도달하면 발동; 지정가 주문으로 전환</td>
+</tr>
+<tr class="even">
+<td><strong>Good Till Date (GTD)</strong></td>
+<td>지정 날짜까지 또는 체결/취소될 때까지 유효</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="조합-주문-combination-orders" class="level3">
+<h3 class="anchored" data-anchor-id="조합-주문-combination-orders">4.3 조합 주문 (Combination Orders)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Standard Combination</strong></td>
+<td>롤오버 활동을 위한 사전 정의된 전략 (예: 캘린더 스프레드); Day/FAK/FOK 유효기간 지원</td>
+</tr>
+<tr class="even">
+<td><strong>Tailor-Made Combination (TMC)</strong></td>
+<td>단일 주문을 통해 자체 정의한 다중 레그 선물 및 옵션 전략을 생성 가능; 일반 주문과 같이 가격/시간 우선으로 체결</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="유효기간-조건-time-in-force-conditions" class="level3">
+<h3 class="anchored" data-anchor-id="유효기간-조건-time-in-force-conditions">4.4 유효기간 조건 (Time-in-Force Conditions)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>유효기간</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Day</strong></td>
+<td>당일 장 마감까지 유효</td>
+</tr>
+<tr class="even">
+<td><strong>FOK (Fill or Kill)</strong></td>
+<td>전량 즉시 체결 또는 전량 취소</td>
+</tr>
+<tr class="odd">
+<td><strong>FAK (Fill and Kill)</strong></td>
+<td>일부 체결 허용; 미체결 잔여분 취소</td>
+</tr>
+<tr class="even">
+<td><strong>EXP (Expiry)</strong></td>
+<td>상품 만기일까지 유효</td>
+</tr>
+<tr class="odd">
+<td><strong>Date (GTD)</strong></td>
+<td>지정 거래일까지 유효</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-속성-order-attributes" class="level3">
+<h3 class="anchored" data-anchor-id="주문-속성-order-attributes">4.5 주문 속성 (Order Attributes)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>속성</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>T+1</strong></td>
+<td>AHT (시간외 매매) 세션 동안 주문 유효; 이 속성이 없으면 T+1 중 비활성화</td>
+</tr>
+<tr class="even">
+<td><strong>Give Up</strong></td>
+<td>체결 후 지정된 다른 회사로 거래 이전</td>
+</tr>
+<tr class="odd">
+<td><strong>Active / Inactive</strong></td>
+<td>활성 주문은 중앙호가창에 존재; 비활성 주문은 참가자 시스템에 로컬 보관</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-수정-및-취소-order-modification-cancellation" class="level3">
+<h3 class="anchored" data-anchor-id="주문-수정-및-취소-order-modification-cancellation">4.6 주문 수정 및 취소 (Order Modification &amp; Cancellation)</h3>
+<ul>
+<li>해당 매매 세션 중 언제든지 주문의 수정(가격, 수량) 또는 취소가 가능하다.</li>
+<li>주문 가격 수정 시 시간 우선순위가 초기화된다.</li>
+<li>수량 감소는 시간 우선순위에 영향을 미치지 않는다.</li>
+<li>점심 휴장 중에는 매매시스템이 폐쇄되며, 주문 입력, 수정, 취소가 허용되지 않는다.</li>
+</ul>
+<p>[Source: HKEX, “Trading Mechanism – Order Types”, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="매매시스템-기술-trading-system-technology" class="level2">
+<h2 class="anchored" data-anchor-id="매매시스템-기술-trading-system-technology">5. 매매시스템 / 기술 (Trading System / Technology)</h2>
+<section id="시스템-개요-system-overview" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-개요-system-overview">5.1 시스템 개요 (System Overview)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시스템명</td>
+<td><strong>HKATS</strong> (Hong Kong Futures Automatic Trading System)</td>
+</tr>
+<tr class="even">
+<td>벤더</td>
+<td>Nasdaq (Genium INET 플랫폼)</td>
+</tr>
+<tr class="odd">
+<td>최초 출시</td>
+<td>1995년 11월 (독자 HKATS)</td>
+</tr>
+<tr class="even">
+<td>Genium INET 전환</td>
+<td>2013년 10월 (HKATS 및 DCASS를 Genium INET으로 업그레이드)</td>
+</tr>
+<tr class="odd">
+<td>최신 업그레이드</td>
+<td>2019년 5월 (최신 Genium INET 버전)</td>
+</tr>
+<tr class="even">
+<td>아키텍처</td>
+<td>중앙집중식 매매체결엔진; 주문을 동기적이고 순차적으로 처리하는 거래 기반 매매시스템</td>
+</tr>
+<tr class="odd">
+<td>지연시간</td>
+<td>평균 100마이크로초 미만 (Genium INET 사양); 초당 100만 메시지 처리 시 80마이크로초 미만</td>
+</tr>
+<tr class="even">
+<td>처리량</td>
+<td>초당 100만+ 메시지 (플랫폼 용량); 초당 4,000 시리즈 갱신 부하 테스트 [unverified – 특정 테스트 시나리오일 수 있음]</td>
+</tr>
+<tr class="odd">
+<td>가동률 목표</td>
+<td>99.999% (파이브 나인)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="청산-시스템-clearing-system" class="level3">
+<h3 class="anchored" data-anchor-id="청산-시스템-clearing-system">5.2 청산 시스템 (Clearing System)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시스템명</td>
+<td><strong>DCASS</strong> (Derivatives Clearing and Settlement System)</td>
+</tr>
+<tr class="even">
+<td>벤더</td>
+<td>Nasdaq (Genium INET 플랫폼, HKATS와 공유)</td>
+</tr>
+<tr class="odd">
+<td>대상 상품</td>
+<td>모든 HKFE 및 SEHK 옵션 상품 (HKCC와 SEOCH 모두를 위한 단일 시스템)</td>
+</tr>
+<tr class="even">
+<td>통합</td>
+<td>HKATS 매매와 DCASS 청산 간 원활한 인터페이스 – 체결 시 거래 데이터가 자동으로 전자 전송</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="접속-방법-access-methods" class="level3">
+<h3 class="anchored" data-anchor-id="접속-방법-access-methods">5.3 접속 방법 (Access Methods)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 53%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>접속 방법</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>HKATS Online</strong></td>
+<td>브라우저 기반 프론트엔드 애플리케이션 (지원 브라우저: Google Chrome v142+); 주문 입력, 거래 관리, 시장 모니터링에 사용</td>
+</tr>
+<tr class="even">
+<td><strong>OAPI (OMnet API)</strong></td>
+<td>시스템 간 직접 접속을 위한 프로그래매틱 인터페이스; 알고리즘 매매 및 자동화 시스템에 사용</td>
+</tr>
+<tr class="odd">
+<td><strong>Central Gateway</strong></td>
+<td>고속 메시지 버스를 통해 참가자 시스템을 HKEX 호스트 서버에 연결하는 주요 접속점</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="네트워크-인프라-network-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="네트워크-인프라-network-infrastructure">5.4 네트워크 인프라 (Network Infrastructure)</h3>
+<ul>
+<li><strong>주 및 백업 Central Gateway</strong>로 이중화 제공</li>
+<li>최소 하드웨어: PC 1대, SDNet/2 회선 2개, 라우터 2대, 스위치 1대, 애플리케이션 소프트웨어</li>
+<li>SDNet/2 회선은 물리 속도 1 Gbps로 운영</li>
+<li>장애 복구를 위한 이중 데이터센터 아키텍처 (주 + 보조)</li>
+</ul>
+</section>
+<section id="시스템-연혁-system-history" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-연혁-system-history">5.5 시스템 연혁 (System History)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>연도</th>
+<th>주요 사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1995</td>
+<td>HKATS 출시, 호가장내거래 대체</td>
+</tr>
+<tr class="even">
+<td>1999</td>
+<td>거래장 폐쇄; 완전 전자매매 전환</td>
+</tr>
+<tr class="odd">
+<td>2008</td>
+<td>시간외 매매 (T+1) 세션 추가</td>
+</tr>
+<tr class="even">
+<td>2013</td>
+<td>Nasdaq Genium INET 플랫폼으로 전환 (매매 + 청산)</td>
+</tr>
+<tr class="odd">
+<td>2019</td>
+<td>향상된 용량의 최신 Genium INET 버전으로 업그레이드</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="재해복구-업무연속성-disaster-recovery-business-continuity" class="level3">
+<h3 class="anchored" data-anchor-id="재해복구-업무연속성-disaster-recovery-business-continuity">5.6 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)</h3>
+<ul>
+<li>HKEX는 <strong>주 데이터센터</strong>와 <strong>보조 데이터센터</strong>를 운영한다</li>
+<li>주 데이터센터 장애 시 보조 사이트에서 HKATS/DCASS를 구동하는 장애조치가 발동된다</li>
+<li>장애조치 대비를 위해 HKATS 접속 테스트가 정기적으로 실시된다</li>
+<li>OMD-D (시장 데이터)와 HKATS 모두 이중 사이트 아키텍처를 갖추고 있다</li>
+</ul>
+<p>[Source: HKEX, “HKATS” infrastructure page, https://www.hkex.com.hk/Services/Trading/Derivatives/Infrastructure/HKATS, accessed 2026-04-06] [Source: Nasdaq, “Hong Kong Exchange Renews Contract With NASDAQ OMX and Upgrades to INET-Based Trading Platform”, 2013] [Source: Finextra, “HKEx moves derivatives clearing and trading platforms to Genium Inet”, 2013]</p>
+<hr>
+</section>
+</section>
+<section id="시장-데이터-market-data" class="level2">
+<h2 class="anchored" data-anchor-id="시장-데이터-market-data">6. 시장 데이터 (Market Data)</h2>
+<section id="피드-프로토콜-feed-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="피드-프로토콜-feed-protocols">6.1 피드 프로토콜 (Feed Protocols)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 34%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>피드</th>
+<th>프로토콜</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>OMD-D</strong> (Orion Market Data – Derivatives)</td>
+<td>바이너리 (HKEX 독자 형식)</td>
+<td>모든 파생상품의 주요 시장 데이터 피드; 실시간 배포를 위해 UDP를 통한 IP 멀티캐스트 사용</td>
+</tr>
+<tr class="even">
+<td><strong>OMD-D Retransmission</strong></td>
+<td>유니캐스트 TCP</td>
+<td>누락된 멀티캐스트 메시지 복구 서비스</td>
+</tr>
+<tr class="odd">
+<td><strong>OMD-D DLite</strong></td>
+<td>간소화 바이너리</td>
+<td>소규모 참가자를 위한 경량 버전</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="데이터-수준-data-levels" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-수준-data-levels">6.2 데이터 수준 (Data Levels)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>수준</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Level 1</td>
+<td>최적 매수·매도호가, 최종 체결가, 거래량, 미결제약정</td>
+</tr>
+<tr class="even">
+<td>Level 2</td>
+<td>전체 호가창 깊이 (다수 가격 수준)</td>
+</tr>
+<tr class="odd">
+<td>Trade Ticker</td>
+<td>타임스탬프가 포함된 개별 체결 보고</td>
+</tr>
+<tr class="even">
+<td>Statistics</td>
+<td>일일 고가, 저가, 결제가격, 미결제약정</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="기술-사양-technical-specifications" class="level3">
+<h3 class="anchored" data-anchor-id="기술-사양-technical-specifications">6.3 기술 사양 (Technical Specifications)</h3>
+<ul>
+<li><strong>전송:</strong> SDNet/2 라우터의 IGMP v2를 통한 IP 멀티캐스트</li>
+<li><strong>대역폭:</strong> SDNet/2 회선 1 Gbps; 클라이언트 시스템은 1 Gbps 인터페이스 지원 필요</li>
+<li><strong>복구:</strong> 유니캐스트를 통한 갭 복구용 재전송 서버</li>
+<li><strong>장애조치:</strong> OMD-D는 주 및 보조 데이터센터 모두에서 운영; 장애 시 자동 전환 발동</li>
+</ul>
+</section>
+<section id="배포-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="배포-distribution">6.4 배포 (Distribution)</h3>
+<ul>
+<li><strong>실시간 데이터</strong>는 인가 정보벤더(Bloomberg, Refinitiv 등)를 통해 이용 가능</li>
+<li><strong>지연 데이터</strong>는 HKEX 웹사이트에서 이용 가능 (15분 지연)</li>
+<li><strong>과거 데이터</strong>는 HKEX 데이터 상품 및 제3자 벤더를 통해 이용 가능</li>
+</ul>
+</section>
+<section id="시장-데이터-상품-market-data-products" class="level3">
+<h3 class="anchored" data-anchor-id="시장-데이터-상품-market-data-products">6.5 시장 데이터 상품 (Market Data Products)</h3>
+<ul>
+<li>HKATS에서 일중 생성된 시리즈는 OMD-D를 통해 실시간 배포된다</li>
+<li>블록거래 (대량매매) 데이터는 전체 거래량에 포함되지만, 일일 고가/저가, 최종 체결가, 결제가격 계산에서는 제외된다</li>
+<li>결제가격은 장 마감 시 배포된다</li>
+</ul>
+<p>[Source: HKEX, “HKEX Orion Market Data Platform – Derivatives Market (OMD-D)”, https://www.hkex.com.hk/Services/Market-Data-Services/Infrastructure/HKEX-Orion-Market-Data-Platform-Derivatives-Market-OMD-D, accessed 2026-04-06] [Source: HKEX, “OMD-D Connectivity Guide v1.20”] [Source: HKEX, “OMD Derivatives Binary Interface Specifications v2.0”]</p>
+<hr>
+</section>
+</section>
+<section id="접속-및-접근-connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="접속-및-접근-connectivity-access">7. 접속 및 접근 (Connectivity &amp; Access)</h2>
+<section id="회원-참가-membership-participation" class="level3">
+<h3 class="anchored" data-anchor-id="회원-참가-membership-participation">7.1 회원 / 참가 (Membership / Participation)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 56%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>참가자 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>선물거래참가자 (Futures Exchange Participant, FEP)</strong></td>
+<td>HKFE에서 선물 및 지수옵션을 거래할 수 있는 인가; SFC Type 2 인가법인으로 등록 필요</td>
+</tr>
+<tr class="even">
+<td><strong>옵션거래참가자 (Options Trading Exchange Participant, OTEP)</strong></td>
+<td>SEHK에서 주식옵션을 거래할 수 있는 인가; SFC Type 1 및/또는 Type 2 인가 필요</td>
+</tr>
+<tr class="odd">
+<td><strong>HKCC 청산참가자</strong></td>
+<td>HKCC를 통해 거래를 청산할 수 있는 인가; 최소 유동자본 유지 및 적립금 출연 의무</td>
+</tr>
+<tr class="even">
+<td><strong>SEOCH 청산참가자</strong></td>
+<td>SEOCH를 통해 주식옵션을 청산할 수 있는 인가</td>
+</tr>
+</tbody>
+</table>
+<p><strong>거래참가자 자격 요건:</strong> - 최소 납입자본금: HK$1천만 (FEP의 경우) [unverified – 현행 규정에 따름] - SFC 인가법인으로 등록 - 지정 책임임원 및 준법 직원 배치 - 적절한 시스템 및 접속 인프라 구비 - 청산참가자 자격 (직접 또는 일반청산참가자를 통해)</p>
+</section>
+<section id="접속-방법-connection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>방법</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SDNet/2</strong></td>
+<td>시장 접근을 위한 HKEX 전용 네트워크; 인가 벤더가 운영; 고회복력, 높은 대역폭, 낮은 네트워크 왕복 지연시간을 위해 설계</td>
+</tr>
+<tr class="even">
+<td><strong>HKEX Hosting Services (코로케이션)</strong></td>
+<td>장관오(Tseung Kwan O)의 HKEX 데이터센터 내 물리적 랙 공간</td>
+</tr>
+<tr class="odd">
+<td><strong>OAPI (OMnet API)</strong></td>
+<td>알고리즘/자동화 매매를 위한 프로그래매틱 주문 입력</td>
+</tr>
+<tr class="even">
+<td><strong>HKATS Online</strong></td>
+<td>수동 매매를 위한 브라우저 기반 GUI</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="코로케이션-호스팅-서비스-co-location-hosting-services" class="level3">
+<h3 class="anchored" data-anchor-id="코로케이션-호스팅-서비스-co-location-hosting-services">7.3 코로케이션 / 호스팅 서비스 (Co-Location / Hosting Services)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>데이터센터 위치</td>
+<td>장관오(Tseung Kwan O, TKO) Industrial Estate, 홍콩</td>
+</tr>
+<tr class="even">
+<td>시설 규모</td>
+<td>총 바닥면적 31,400 평방미터</td>
+</tr>
+<tr class="odd">
+<td>설계 기준</td>
+<td>Tier 4 사양</td>
+</tr>
+<tr class="even">
+<td>전력</td>
+<td>별도 변전소로부터의 이중 유틸리티 전력</td>
+</tr>
+<tr class="odd">
+<td>호스팅 용량</td>
+<td>호스팅 서비스 전용 2개 층, 최대 1,200 랙 지원</td>
+</tr>
+<tr class="even">
+<td>생태계</td>
+<td>거래참가자, 기술 벤더, 정보 벤더, 네트워크 서비스 제공자 접근 가능</td>
+</tr>
+<tr class="odd">
+<td>통신</td>
+<td>텔레콤 다양성을 위한 이중 TBE 실 및 라이저; 다수의 인가 통신사 벤더</td>
+</tr>
+</tbody>
+</table>
+<p>HKEX 데이터센터는 증권 및 파생상품 시장, 시장 데이터, 청산을 위한 주요 엔터프라이즈 데이터센터 및 운영 사이트 역할을 한다.</p>
+</section>
+<section id="api-프로토콜-api-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="api-프로토콜-api-protocols">7.4 API 프로토콜 (API Protocols)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>프로토콜</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>OAPI (OMnet API)</strong></td>
+<td>HKATS에 대한 주문 입력, 거래 관리, 시장 데이터 접근</td>
+</tr>
+<tr class="even">
+<td><strong>OMD-D 바이너리 프로토콜</strong></td>
+<td>시장 데이터 수신 (멀티캐스트 UDP)</td>
+</tr>
+<tr class="odd">
+<td><strong>FIX Protocol</strong></td>
+<td>특정 접속 시나리오에 지원 [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>DCASS API</strong></td>
+<td>청산 및 결제 운영</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="인증-테스트-certification-testing" class="level3">
+<h3 class="anchored" data-anchor-id="인증-테스트-certification-testing">7.5 인증 / 테스트 (Certification / Testing)</h3>
+<ul>
+<li>신규 참가자 및 시스템 업그레이드 시 HKEX와의 <strong>접속 테스트</strong> 필요</li>
+<li>부하 테스트 시나리오에 초당 4,000 시리즈 갱신 테스트 포함</li>
+<li>HKEX는 상품 출시 및 시스템 업그레이드를 위한 정기 <strong>시장 리허설</strong> 실시</li>
+<li>SDNet/2 접속 테스트에 주 및 백업 게이트웨이 접속 검증 포함</li>
+</ul>
+<p>[Source: HKEX, “Hosting Services”, https://www.hkex.com.hk/Services/Connectivity/Hosting-Services, accessed 2026-04-06] [Source: HKEX, “Derivatives Trading (HKATS) – SDNet/2”, accessed 2026-04-06] [Source: Baxtel, “HKEX Data Center”, accessed 2026-04-06] [Source: Beeks Group, “HKEX Data Centre”, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (Risk Controls &amp; Circuit Breakers)</h2>
+<section id="변동성-관리-메커니즘-volatility-control-mechanism-vcm" class="level3">
+<h3 class="anchored" data-anchor-id="변동성-관리-메커니즘-volatility-control-mechanism-vcm">8.1 변동성 관리 메커니즘 (Volatility Control Mechanism, VCM)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>파라미터</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>범위</td>
+<td>개별 종목에 적용 (시장 전체가 아님)</td>
+</tr>
+<tr class="even">
+<td>발동 수준</td>
+<td>최종 체결가 대비 +/- 5% (동적, 정적이 아님)</td>
+</tr>
+<tr class="odd">
+<td>냉각기간</td>
+<td>냉각기간 중 제한된 가격밴드 내에서 거래 계속</td>
+</tr>
+<tr class="even">
+<td>적용 상품</td>
+<td>HSI 선물/옵션, Mini-HSI, HSCEI 선물/옵션, Mini-HSCEI, HS TECH 선물/옵션</td>
+</tr>
+<tr class="odd">
+<td>설계 원칙</td>
+<td>드물게 발동; 극단적 변동에만 적용 의도</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="동적-가격밴딩-dynamic-price-banding-dpb" class="level3">
+<h3 class="anchored" data-anchor-id="동적-가격밴딩-dynamic-price-banding-dpb">8.2 동적 가격밴딩 (Dynamic Price Banding, DPB)</h3>
+<ul>
+<li>기준가격 주변의 변동 밴드 (각 거래 후 조정)</li>
+<li>밴드 밖의 주문은 자동 거부</li>
+<li>“팻 핑거(fat finger)” 등 오류 주문이 시장을 왜곡하는 것을 방지</li>
+<li>기준가격은 실제 체결 시 재설정</li>
+</ul>
+</section>
+<section id="가격상하한-메커니즘-price-limit-updown-mechanism" class="level3">
+<h3 class="anchored" data-anchor-id="가격상하한-메커니즘-price-limit-updown-mechanism">8.3 가격상하한 메커니즘 (Price Limit Up/Down Mechanism)</h3>
+<ul>
+<li>허용 가능한 범위 내에서 거래를 제한하는 사전 정의 가격 범위</li>
+<li>극단적 변동성을 관리하기 위해 특정 상품에 적용</li>
+<li>VCM 및 DPB와 연동하여 작동</li>
+</ul>
+</section>
+<section id="사전-매매-리스크-관리-pre-trade-risk-management-ptrm" class="level3">
+<h3 class="anchored" data-anchor-id="사전-매매-리스크-관리-pre-trade-risk-management-ptrm">8.4 사전 매매 리스크 관리 (Pre-Trade Risk Management, PTRM)</h3>
+<ul>
+<li><strong>PTRM 시스템</strong>은 HKATS에 통합되어 있다</li>
+<li>주문이 중앙호가창에 진입하기 전 참가자 수준에서 매매 리스크를 관리한다</li>
+<li>주문 규모 제한, 포지션한도, 증거금 기반 관리 등의 기능 포함</li>
+<li>청산참가자는 비청산참가자에 대한 리스크 파라미터를 설정할 수 있다</li>
+</ul>
+</section>
+<section id="자기매매-방지-self-match-prevention-smp" class="level3">
+<h3 class="anchored" data-anchor-id="자기매매-방지-self-match-prevention-smp">8.5 자기매매 방지 (Self-Match Prevention, SMP)</h3>
+<ul>
+<li>참가자의 매수·매도 주문이 서로 체결되는 것을 방지한다</li>
+<li>가장매매 규정 준수에 도움</li>
+</ul>
+</section>
+<section id="오류거래-처리-error-trade-handling" class="level3">
+<h3 class="anchored" data-anchor-id="오류거래-처리-error-trade-handling">8.6 오류거래 처리 (Error Trade Handling)</h3>
+<ul>
+<li>오류 가격으로 체결된 거래를 처리하기 위한 <strong>오류거래 처리 절차</strong></li>
+<li>다수 거래에 영향을 미치는 시스템적 문제를 위한 <strong>대규모 오류거래 처리 절차</strong></li>
+<li>거래소는 규정된 규칙에 따라 거래를 취소 또는 조정할 수 있다</li>
+</ul>
+</section>
+<section id="킬-스위치-kill-switch" class="level3">
+<h3 class="anchored" data-anchor-id="킬-스위치-kill-switch">8.7 킬 스위치 (Kill Switch)</h3>
+<ul>
+<li>거래 및 청산 참가자는 긴급 상황에서 참가자의 모든 주문을 취소할 수 있는 권한을 가진다</li>
+<li>HKEX는 필요시 개별 상품 또는 시장 전체의 거래를 정지할 수 있다</li>
+</ul>
+<p>[Source: HKEX, “Trading Mechanism – Volatility Control Mechanism”, accessed 2026-04-06] [Source: HKEX/SFC, “Volatility Control Mechanism and Closing Auction Session Consultation”, 2015]</p>
+<hr>
+</section>
+</section>
+<section id="규제-체계-regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</h2>
+<section id="감독-기관-supervising-authorities" class="level3">
+<h3 class="anchored" data-anchor-id="감독-기관-supervising-authorities">9.1 감독 기관 (Supervising Authorities)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 64%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>기관</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>증권선물위원회 (Securities and Futures Commission, SFC)</strong></td>
+<td>증권선물조례(SFO, Cap. 571)에 따른 홍콩 증권 및 선물시장의 주요 규제기관</td>
+</tr>
+<tr class="even">
+<td><strong>홍콩금융관리국 (Hong Kong Monetary Authority, HKMA)</strong></td>
+<td>은행의 파생상품 활동 규제; 장외 파생상품 보고 공동 감독</td>
+</tr>
+<tr class="odd">
+<td><strong>재무서비스국 (Financial Services and the Treasury Bureau, FSTB)</strong></td>
+<td>금융시장에 대한 정부 정책 기관</td>
+</tr>
+<tr class="even">
+<td><strong>HKEX (SRO로서)</strong></td>
+<td>거래소 규칙 집행, 시장 감시, 징계 조치 등 자율규제기관 기능 수행</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주요-규정-key-regulations" class="level3">
+<h3 class="anchored" data-anchor-id="주요-규정-key-regulations">9.2 주요 규정 (Key Regulations)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 61%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>규정</th>
+<th>범위</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>증권선물조례 (Securities and Futures Ordinance, SFO, Cap. 571)</strong></td>
+<td>증권 및 선물시장, 인허가, 시장 행위, 집행을 규율하는 기본법</td>
+</tr>
+<tr class="even">
+<td><strong>증권선물(계약한도 및 신고대상 포지션) 규칙 (Cap. 571Y)</strong></td>
+<td>법정 포지션한도 및 대량 미결제포지션 보고</td>
+</tr>
+<tr class="odd">
+<td><strong>HKFE 규칙</strong></td>
+<td>매매 행위, 포지션한도 (Rules 628, 633), 블록거래, 시장 건전성을 규율하는 거래소 규칙</td>
+</tr>
+<tr class="even">
+<td><strong>옵션거래규칙 (Options Trading Rules)</strong></td>
+<td>주식옵션 거래 및 시장조성을 규율하는 거래소 규칙</td>
+</tr>
+<tr class="odd">
+<td><strong>증권선물(장외파생상품 – 보고 및 기록보관) 규칙</strong></td>
+<td>장외 파생상품 보고 체제 (2025년 9월 29일 시행 강화 체제)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="시장-감시-market-surveillance" class="level3">
+<h3 class="anchored" data-anchor-id="시장-감시-market-surveillance">9.3 시장 감시 (Market Surveillance)</h3>
+<ul>
+<li>HKEX는 실시간 매매활동을 모니터링하는 전담 시장 감시 시스템을 운영한다</li>
+<li>감시 범위: 비정상 가격 변동, 이상 거래량, 잠재적 시장 조작, 내부자 거래</li>
+<li>자동 경보가 준법 팀의 조사를 촉발한다</li>
+<li>HKEX 규칙 집행은 규칙 위반에 대한 징계 절차를 수행한다</li>
+</ul>
+</section>
+<section id="보고-요건-reporting-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="보고-요건-reporting-requirements">9.4 보고 요건 (Reporting Requirements)</h3>
+<ul>
+<li><strong>대량미결제포지션(LOP) 보고:</strong> 포지션이 지정 기준을 초과하는 경우 의무 (포지션한도 섹션 참조)</li>
+<li><strong>거래 보고:</strong> 모든 파생상품 거래는 청산기관에 자동 보고</li>
+<li><strong>장외 파생상품 보고:</strong> 2025년 9월부터의 강화 체제에서는 고유거래식별자(UTI), 고유상품식별자(UPI), 핵심 데이터 요소(CDE), ISO 20022 형식 사용 의무화</li>
+<li><strong>공매도 포지션 보고:</strong> 주식 관련 포지션에 적용</li>
+</ul>
+</section>
+<section id="국경간-제도-cross-border-arrangements" class="level3">
+<h3 class="anchored" data-anchor-id="국경간-제도-cross-border-arrangements">9.5 국경간 제도 (Cross-Border Arrangements)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>제도</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Stock Connect</strong> (Northbound/Southbound)</td>
+<td>상하이 및 심천 거래소와의 주식 상호시장접근 (2014/2016년 출시)</td>
+</tr>
+<tr class="even">
+<td><strong>Swap Connect</strong> (Northbound)</td>
+<td>OTC Clear, CFETS, SHCH를 통한 중국 본토 은행간 금리스왑 시장 접근 (2023년 5월 출시)</td>
+</tr>
+<tr class="odd">
+<td><strong>Bond Connect</strong></td>
+<td>중국 은행간 채권시장 접근 (2017년 출시)</td>
+</tr>
+<tr class="even">
+<td><strong>Mutual Recognition of Funds</strong></td>
+<td>중국 본토와의 국경간 펀드 배포</td>
+</tr>
+<tr class="odd">
+<td><strong>MSCI 파생상품</strong></td>
+<td>중국 및 아시아 익스포저에 대한 역외 헤지를 제공하는 인가 MSCI 지수 파생상품</td>
+</tr>
+</tbody>
+</table>
+<p>2025년 상반기 Stock Connect 거래량이 반기 최고 기록을 달성하였으며, 이는 국제 및 중국 본토 투자자의 참여 증가에 의해 주도되었다.</p>
+<p>[Source: SFC, “Guidance Note on Position Limits and Large Open Position Reporting Requirements”, accessed 2026-04-06] [Source: ICLG, “Derivatives Laws and Regulations Report 2025-2026 Hong Kong”, accessed 2026-04-06] [Source: EY, “Evolving HKTR Requirements”, March 2025]</p>
+<hr>
+</section>
+</section>
+<section id="수수료-및-수익-모델-fees-revenue-model" class="level2">
+<h2 class="anchored" data-anchor-id="수수료-및-수익-모델-fees-revenue-model">10. 수수료 및 수익 모델 (Fees &amp; Revenue Model)</h2>
+<section id="파생상품-매매-수수료-derivatives-trading-fees" class="level3">
+<h3 class="anchored" data-anchor-id="파생상품-매매-수수료-derivatives-trading-fees">10.1 파생상품 매매 수수료 (Derivatives Trading Fees)</h3>
+<section id="지수-선물-및-옵션-index-futures-options" class="level4">
+<h4 class="anchored" data-anchor-id="지수-선물-및-옵션-index-futures-options">지수 선물 및 옵션 (Index Futures &amp; Options)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 29%">
+<col style="width: 35%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>거래소 수수료 (편도)</th>
+<th>커미션 부담금 (편도)</th>
+<th>합계 (편도)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HSI 선물</td>
+<td>HK$10.00</td>
+<td>HK$0.54</td>
+<td>HK$10.54</td>
+</tr>
+<tr class="even">
+<td>HSI 옵션</td>
+<td>HK$10.00</td>
+<td>HK$0.54</td>
+<td>HK$10.54</td>
+</tr>
+<tr class="odd">
+<td>Mini-HSI 선물</td>
+<td>HK$3.50</td>
+<td>HK$0.10</td>
+<td>HK$3.60</td>
+</tr>
+<tr class="even">
+<td>Mini-HSI 옵션</td>
+<td>HK$2.00</td>
+<td>HK$0.10</td>
+<td>HK$2.10</td>
+</tr>
+<tr class="odd">
+<td>HSCEI 선물</td>
+<td>HK$10.00</td>
+<td>HK$0.54</td>
+<td>HK$10.54</td>
+</tr>
+<tr class="even">
+<td>Mini-HSCEI 선물</td>
+<td>HK$3.50</td>
+<td>HK$0.10</td>
+<td>HK$3.60</td>
+</tr>
+<tr class="odd">
+<td>HS TECH 선물</td>
+<td>HK$5.00 (50% 할인 = HK$2.50)</td>
+<td>HK$0.54</td>
+<td>HK$5.54 (할인 적용 시 HK$3.04)</td>
+</tr>
+<tr class="even">
+<td>HS TECH 옵션</td>
+<td>HK$5.00 (50% 할인 = HK$2.50)</td>
+<td>HK$0.54</td>
+<td>HK$5.54 (할인 적용 시 HK$3.04)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주식-파생상품-기초자산별-등급-stock-derivatives-tiered-by-underlying" class="level4">
+<h4 class="anchored" data-anchor-id="주식-파생상품-기초자산별-등급-stock-derivatives-tiered-by-underlying">주식 파생상품 (기초자산별 등급) (Stock Derivatives, Tiered by Underlying)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>등급</th>
+<th>주식선물 수수료 (편도)</th>
+<th>주식옵션 수수료 (편도)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tier 1</td>
+<td>HK$3.10</td>
+<td>HK$3.00</td>
+</tr>
+<tr class="even">
+<td>Tier 2</td>
+<td>HK$1.10</td>
+<td>HK$1.00</td>
+</tr>
+<tr class="odd">
+<td>Tier 3</td>
+<td>HK$0.60</td>
+<td>HK$0.50</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="금리-및-통화-상품-interest-rate-currency-products" class="level4">
+<h4 class="anchored" data-anchor-id="금리-및-통화-상품-interest-rate-currency-products">금리 및 통화 상품 (Interest Rate &amp; Currency Products)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>거래소 수수료 (편도)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HIBOR 선물</td>
+<td>HK$5.00 + HK$0.54 부담금</td>
+</tr>
+<tr class="even">
+<td>USD/CNH 선물</td>
+<td>RMB 8.00</td>
+</tr>
+<tr class="odd">
+<td>EUR/CNH, JPY/CNH, AUD/CNH 선물</td>
+<td>RMB 5.00</td>
+</tr>
+<tr class="even">
+<td>CNH/USD 선물</td>
+<td>USD 0.60</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="상품-파생상품-commodity-products" class="level4">
+<h4 class="anchored" data-anchor-id="상품-파생상품-commodity-products">상품 파생상품 (Commodity Products)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>거래소 수수료 (편도)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>USD 금 선물</td>
+<td>USD 1.00 + USD 0.07 부담금</td>
+</tr>
+<tr class="even">
+<td>CNH 금 선물</td>
+<td>RMB 7.00 + RMB 0.50 부담금</td>
+</tr>
+<tr class="odd">
+<td>London Metal Mini 선물</td>
+<td>USD 0.50 – 0.60</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="주요-수수료-참고사항-key-fee-notes" class="level3">
+<h3 class="anchored" data-anchor-id="주요-수수료-참고사항-key-fee-notes">10.2 주요 수수료 참고사항 (Key Fee Notes)</h3>
+<ul>
+<li>파생상품 거래에 <strong>인지세 없음</strong> (인지세는 실물 주식 이전에만 적용)</li>
+<li><strong>투자자보상부담금</strong>은 2005년부터 면제</li>
+<li>옵션 거래에 <strong>SFC 거래부담금</strong> 0.0027% 비부과</li>
+<li><strong>커미션율</strong>은 참가자와 고객 간 완전 협상 가능</li>
+<li><strong>시장조성자 거래</strong>에는 상당한 수수료 감면 적용 (제2.5절 참조)</li>
+</ul>
+</section>
+<section id="청산-수수료-clearing-fees" class="level3">
+<h3 class="anchored" data-anchor-id="청산-수수료-clearing-fees">10.3 청산 수수료 (Clearing Fees)</h3>
+<ul>
+<li>HKCC 및 SEOCH는 거래소 수수료 외에 계약당 청산 수수료를 부과한다</li>
+<li>청산 수수료는 상품 유형 및 참가자 지위 (청산참가자 vs.&nbsp;비청산참가자)에 따라 상이하다</li>
+</ul>
+</section>
+<section id="시장-데이터-수수료-market-data-fees" class="level3">
+<h3 class="anchored" data-anchor-id="시장-데이터-수수료-market-data-fees">10.4 시장 데이터 수수료 (Market Data Fees)</h3>
+<ul>
+<li>OMD-D 데이터 피드는 HKEX Information Services의 라이선스 수수료 대상이다</li>
+<li>수수료는 데이터 수준 (Level 1/Level 2), 재배포 권한, 사용자 수에 따라 상이하다</li>
+<li>실시간 데이터 재배포는 HKEX와의 라이선스 계약이 필요하다</li>
+</ul>
+</section>
+<section id="접속-수수료-connectivity-fees" class="level3">
+<h3 class="anchored" data-anchor-id="접속-수수료-connectivity-fees">10.5 접속 수수료 (Connectivity Fees)</h3>
+<ul>
+<li>SDNet/2 회선 대여료 (인가 벤더를 통해)</li>
+<li>TKO 데이터센터의 호스팅 서비스 랙 대여 및 전력 비용</li>
+<li>OAPI 서브라이선스 수수료 (특정 시장조성자에 대해 면제)</li>
+</ul>
+<p>[Source: HKEX, “Fees – Listed Derivatives – Trading – Transaction”, https://www.hkex.com.hk/Services/Rules-and-Forms-and-Fees/Fees/Listed-Derivatives/Trading/Transaction, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="최근-동향-recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</h2>
+<section id="역대-최고-거래량-20242025-record-trading-volumes" class="level3">
+<h3 class="anchored" data-anchor-id="역대-최고-거래량-20242025-record-trading-volumes">11.1 역대 최고 거래량 (2024–2025) (Record Trading Volumes)</h3>
+<ul>
+<li><strong>2024년 연간:</strong> 파생상품 3억 3,400만 계약 거래 – 3년 연속 최고 기록. 주식옵션 ADV 역대 최고 720,297계약. 일일 최고 거래량 426만 계약 (2024년 9월 27일).</li>
+<li><strong>2025년 1분기:</strong> 분기 최고 ADV 1,866K 계약 (전년 대비 +24%). 주식옵션 ADV 역대 최고 964,803계약 (전년 대비 +50%). 주식옵션 미결제약정 일일 최고 19,697,919계약 (2025년 3월 27일).</li>
+<li><strong>2025년 3분기 누적:</strong> 주식옵션 9개월 ADV 역대 최고 886,323계약 (전년 대비 +27%). HS TECH Index 선물옵션 OI 일일 최고 172,961계약 (2025년 9월 18일). HS TECH Index 옵션 OI 최고 132,130계약 (2025년 9월 26일).</li>
+</ul>
+</section>
+<section id="상품-출시-및-개선-product-launches-enhancements" class="level3">
+<h3 class="anchored" data-anchor-id="상품-출시-및-개선-product-launches-enhancements">11.2 상품 출시 및 개선 (Product Launches &amp; Enhancements)</h3>
+<ul>
+<li><strong>주간 주식옵션 만기</strong> 2024년 11월 일부 계약에 도입, 단기 헤지 유연성 강화</li>
+<li><strong>신규 주식옵션 종목</strong> 2025년 2월 발표, 3월 상장</li>
+<li><strong>MSCI 지수 파생상품 제품군</strong> 신규 단일국가 및 지역 계약으로 지속 확대</li>
+<li><strong>MSCI China A 50 Connect Index 선물</strong> (2021년 10월 출시) – 역외 A주 헤지를 위한 핵심 상품</li>
+<li><strong>Hang Seng TECH Index 파생상품</strong> (2020년 11월 출시) – 2025년 역대 최고 OI 수준으로 급성장</li>
+</ul>
+</section>
+<section id="규제-변경-regulatory-changes" class="level3">
+<h3 class="anchored" data-anchor-id="규제-변경-regulatory-changes">11.3 규제 변경 (Regulatory Changes)</h3>
+<ul>
+<li><strong>Hang Seng Index 파생상품 3개 상품군에 대한 포지션한도 확대</strong> 2025년 7월 2일 시행 (2023년 12월 초기 변경 및 SFC 조정 이후)</li>
+<li><strong>장외 파생상품 보고 강화</strong> 2025년 9월 29일 시행: UTI, UPI, CDE, ISO 20022 의무 채택</li>
+<li><strong>Swap Connect 개선</strong> 2024년 참여 확대; Southbound 기능 향후 도입 목표</li>
+</ul>
+</section>
+<section id="전략적-이니셔티브-strategic-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="전략적-이니셔티브-strategic-initiatives">11.4 전략적 이니셔티브 (Strategic Initiatives)</h3>
+<ul>
+<li><strong>중국 본토 연계:</strong> Stock Connect, Bond Connect, Swap Connect의 지속적 심화; 위안화 표시 상품 확대</li>
+<li><strong>위안화 듀얼카운터 상장</strong> 2023년 6월 이후 확대; 2024–2026년에 걸쳐 추가 위안화 카운터 및 파생상품 도입 목표</li>
+<li><strong>LME 통합:</strong> HKEX의 London Metal Mini 선물을 통한 아시아 시간대 비철금속 접근; 배터리 소재 계약 개발 중</li>
+<li><strong>기술 로드맵:</strong> Connect 메커니즘 자동화, 결제 효율성 향상, 브로커 및 핀테크를 위한 API 우선 서비스</li>
+<li><strong>ESG/지속가능성:</strong> 지역 탈탄소화 의무에 부합하는 탄소 및 녹색금융 관련 상품 개발 [unverified]</li>
+</ul>
+</section>
+<section id="경영진-leadership" class="level3">
+<h3 class="anchored" data-anchor-id="경영진-leadership">11.5 경영진 (Leadership)</h3>
+<ul>
+<li><strong>CEO:</strong> Bonnie Chan Yiting (2024년 3월 1일부터)</li>
+<li><strong>의장:</strong> Carlson Tong Ka-shing (2024년 5월 3일부터)</li>
+</ul>
+<p>[Source: HKEX, Q1 2025 Quarterly Results, April 2025] [Source: HKEX, Q3 2025 Nine-Month Results, November 2025] [Source: HKEX, “HKEX to Implement Enhancements to Derivatives Market Position Limits”, November 2023] [Source: SFC, “New position limits for key exchange-traded derivatives”, PR25/100, 2025]</p>
+<hr>
+</section>
+</section>
+<section id="파생상품-전용-섹션-derivatives-specific-sections" class="level2">
+<h2 class="anchored" data-anchor-id="파생상품-전용-섹션-derivatives-specific-sections">파생상품 전용 섹션 (Derivatives-Specific Sections)</h2>
+<section id="d1.-상품-목록-product-catalog" class="level3">
+<h3 class="anchored" data-anchor-id="d1.-상품-목록-product-catalog">D1. 상품 목록 (Product Catalog)</h3>
+<section id="주가지수-선물-및-옵션-equity-index-futures-options" class="level4">
+<h4 class="anchored" data-anchor-id="주가지수-선물-및-옵션-equity-index-futures-options">주가지수 선물 및 옵션 (Equity Index Futures &amp; Options)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 20%">
+<col style="width: 36%">
+<col style="width: 20%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>HKATS 코드</th>
+<th>거래승수</th>
+<th>결제</th>
+<th>AHT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hang Seng Index 선물</td>
+<td>HSI</td>
+<td>HK$50/포인트</td>
+<td>현금 결제</td>
+<td>예</td>
+</tr>
+<tr class="even">
+<td>Mini-HSI 선물</td>
+<td>MHI</td>
+<td>HK$10/포인트</td>
+<td>현금 결제</td>
+<td>예</td>
+</tr>
+<tr class="odd">
+<td>HSI 옵션</td>
+<td>HSI</td>
+<td>HK$50/포인트</td>
+<td>현금 결제</td>
+<td>예</td>
+</tr>
+<tr class="even">
+<td>Mini-HSI 옵션</td>
+<td>MHI</td>
+<td>HK$10/포인트</td>
+<td>현금 결제</td>
+<td>예</td>
+</tr>
+<tr class="odd">
+<td>HSI 주간옵션</td>
+<td>HSI</td>
+<td>HK$50/포인트</td>
+<td>현금 결제</td>
+<td>예</td>
+</tr>
+<tr class="even">
+<td>HSCEI 선물</td>
+<td>HHI</td>
+<td>HK$50/포인트</td>
+<td>현금 결제</td>
+<td>예</td>
+</tr>
+<tr class="odd">
+<td>Mini-HSCEI 선물</td>
+<td>MCH</td>
+<td>HK$10/포인트</td>
+<td>현금 결제</td>
+<td>예</td>
+</tr>
+<tr class="even">
+<td>HSCEI 옵션</td>
+<td>HHI</td>
+<td>HK$50/포인트</td>
+<td>현금 결제</td>
+<td>예</td>
+</tr>
+<tr class="odd">
+<td>HS TECH Index 선물</td>
+<td>HTI</td>
+<td>HK$50/포인트</td>
+<td>현금 결제</td>
+<td>예</td>
+</tr>
+<tr class="even">
+<td>HS TECH Index 옵션</td>
+<td>HTI</td>
+<td>HK$50/포인트</td>
+<td>현금 결제</td>
+<td>예</td>
+</tr>
+<tr class="odd">
+<td>HSI Dividend Point Index 선물</td>
+<td>DHI</td>
+<td>HK$50/포인트</td>
+<td>현금 결제</td>
+<td>아니오</td>
+</tr>
+<tr class="even">
+<td>HSI Volatility Index 선물</td>
+<td>VHS</td>
+<td>HK$5,000/포인트</td>
+<td>현금 결제</td>
+<td>아니오</td>
+</tr>
+<tr class="odd">
+<td>Hang Seng Index Options on Futures</td>
+<td>–</td>
+<td>HK$50/포인트</td>
+<td>선물 인도</td>
+<td>예</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="msci-지수-선물-일부-msci-index-futures-selected" class="level4">
+<h4 class="anchored" data-anchor-id="msci-지수-선물-일부-msci-index-futures-selected">MSCI 지수 선물 (일부) (MSCI Index Futures, Selected)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>통화</th>
+<th>거래승수</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MSCI China A 50 Connect Index 선물</td>
+<td>USD</td>
+<td>USD 5/포인트</td>
+</tr>
+<tr class="even">
+<td>MSCI China Free (USD) Index 선물</td>
+<td>USD</td>
+<td>USD 5/포인트</td>
+</tr>
+<tr class="odd">
+<td>MSCI Emerging Markets (USD) Index 선물</td>
+<td>USD</td>
+<td>USD 5/포인트</td>
+</tr>
+<tr class="even">
+<td>MSCI India (USD) Index 선물</td>
+<td>USD</td>
+<td>USD 2/포인트</td>
+</tr>
+<tr class="odd">
+<td>MSCI Japan (USD) Index 선물</td>
+<td>USD</td>
+<td>USD 5/포인트</td>
+</tr>
+<tr class="even">
+<td>MSCI Taiwan (USD) Index 선물</td>
+<td>USD</td>
+<td>USD 2/포인트</td>
+</tr>
+<tr class="odd">
+<td>MSCI Singapore Free (SGD) Index 선물</td>
+<td>SGD</td>
+<td>SGD 10/포인트</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="개별주식-파생상품-single-stock-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="개별주식-파생상품-single-stock-derivatives">개별주식 파생상품 (Single Stock Derivatives)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주식선물</td>
+<td>일부 홍콩 상장 주식에 대한 선물; 실물 인도</td>
+</tr>
+<tr class="even">
+<td>주식옵션</td>
+<td>주식 및 ETF ~100종목에 대한 옵션; 미국형 (만기 전 영업일에 행사 가능); 실물 인도</td>
+</tr>
+<tr class="odd">
+<td>주간 주식옵션</td>
+<td>일부 종목에 대한 주간 만기 주기 (2024년 11월 도입)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="금리-파생상품-interest-rate-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="금리-파생상품-interest-rate-derivatives">금리 파생상품 (Interest Rate Derivatives)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>계약 단위</th>
+<th>결제</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1-Month HIBOR 선물</td>
+<td>HK$15,000,000 명목</td>
+<td>현금 결제</td>
+</tr>
+<tr class="even">
+<td>3-Month HIBOR 선물</td>
+<td>HK$5,000,000 명목</td>
+<td>현금 결제</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="통화-파생상품-currency-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="통화-파생상품-currency-derivatives">통화 파생상품 (Currency Derivatives)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>계약 단위</th>
+<th>결제</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>USD/CNH 선물</td>
+<td>USD 100,000</td>
+<td>실물 인도 (CNH 인도)</td>
+</tr>
+<tr class="even">
+<td>Mini USD/CNH 선물</td>
+<td>USD 20,000</td>
+<td>실물 인도 (CNH 인도)</td>
+</tr>
+<tr class="odd">
+<td>CNH/USD 선물</td>
+<td>CNH 500,000</td>
+<td>현금 결제 (USD 결제)</td>
+</tr>
+<tr class="even">
+<td>EUR/CNH 선물</td>
+<td>EUR 100,000</td>
+<td>실물 인도 (CNH 인도)</td>
+</tr>
+<tr class="odd">
+<td>JPY/CNH 선물</td>
+<td>JPY 6,000,000</td>
+<td>실물 인도 (CNH 인도)</td>
+</tr>
+<tr class="even">
+<td>AUD/CNH 선물</td>
+<td>AUD 100,000</td>
+<td>실물 인도 (CNH 인도)</td>
+</tr>
+<tr class="odd">
+<td>INR/CNH 선물</td>
+<td>INR 5,000,000</td>
+<td>현금 결제 (CNH 결제)</td>
+</tr>
+<tr class="even">
+<td>INR/USD 선물</td>
+<td>INR 5,000,000</td>
+<td>현금 결제 (USD 결제)</td>
+</tr>
+<tr class="odd">
+<td>USD/CNH 옵션</td>
+<td>USD 100,000</td>
+<td>실물 인도</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="상품-파생상품-commodity-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="상품-파생상품-commodity-derivatives">상품 파생상품 (Commodity Derivatives)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>계약 단위</th>
+<th>결제</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>USD 금 선물</td>
+<td>10 트로이온스</td>
+<td>실물 인도</td>
+</tr>
+<tr class="even">
+<td>CNH 금 선물</td>
+<td>10 그램 (~0.32 트로이온스)</td>
+<td>실물 인도</td>
+</tr>
+<tr class="odd">
+<td>USD 은 선물</td>
+<td>100 트로이온스</td>
+<td>실물 인도</td>
+</tr>
+<tr class="even">
+<td>CNH 은 선물</td>
+<td>100 그램</td>
+<td>실물 인도</td>
+</tr>
+<tr class="odd">
+<td>철광석 선물 (TSI)</td>
+<td>50 미터톤</td>
+<td>현금 결제</td>
+</tr>
+<tr class="even">
+<td>London Metal Mini 선물 (알루미늄)</td>
+<td>5 톤</td>
+<td>현금 결제</td>
+</tr>
+<tr class="odd">
+<td>London Metal Mini 선물 (구리)</td>
+<td>5 톤</td>
+<td>현금 결제</td>
+</tr>
+<tr class="even">
+<td>London Metal Mini 선물 (아연)</td>
+<td>5 톤</td>
+<td>현금 결제</td>
+</tr>
+<tr class="odd">
+<td>London Metal Mini 선물 (니켈)</td>
+<td>1 톤</td>
+<td>현금 결제</td>
+</tr>
+<tr class="even">
+<td>London Metal Mini 선물 (주석)</td>
+<td>1 톤</td>
+<td>현금 결제</td>
+</tr>
+<tr class="odd">
+<td>London Metal Mini 선물 (납)</td>
+<td>5 톤</td>
+<td>현금 결제</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: HKEX, “Listed Derivatives” product pages, accessed 2026-04-06] [Source: HKEX, “MSCI Index Futures &amp; Options” product page, accessed 2026-04-06] [Source: HKEX, “Commodities FAQ”, accessed 2026-04-06]</p>
+</section>
+</section>
+<section id="d2.-주요-계약-명세-거래량-상위-5개-key-contract-specifications-top-5-by-volume" class="level3">
+<h3 class="anchored" data-anchor-id="d2.-주요-계약-명세-거래량-상위-5개-key-contract-specifications-top-5-by-volume">D2. 주요 계약 명세 (거래량 상위 5개) (Key Contract Specifications, Top 5 by Volume)</h3>
+<section id="hang-seng-index-hsi-선물" class="level4">
+<h4 class="anchored" data-anchor-id="hang-seng-index-hsi-선물">1. Hang Seng Index (HSI) 선물</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>명세</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>Hang Seng Index</td>
+</tr>
+<tr class="even">
+<td>HKATS 코드</td>
+<td>HSI</td>
+</tr>
+<tr class="odd">
+<td>거래승수</td>
+<td>지수포인트당 HK$50</td>
+</tr>
+<tr class="even">
+<td>호가단위 (최소가격변동폭)</td>
+<td>1 지수포인트 (HK$50)</td>
+</tr>
+<tr class="odd">
+<td>계약 월물</td>
+<td><strong>단기:</strong> 당월, 차 3개월, 차 3개 분기월. <strong>장기:</strong> 6월 &amp; 12월 + 이후 3개 12월물</td>
+</tr>
+<tr class="even">
+<td>매매시간</td>
+<td>PMO: 8:45–9:15 AM, 12:30–1:00 PM; 정규: 9:15 AM–12:00 PM, 1:00–4:30 PM; AHT: 5:15 PM–3:00 AM</td>
+</tr>
+<tr class="odd">
+<td>최종거래일</td>
+<td>계약월의 끝에서 두 번째 영업일</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>현금 결제</td>
+</tr>
+<tr class="odd">
+<td>최종결제가격</td>
+<td>SEHK 접속매매 중 5분 간격의 HSI 호가 평균 + 최종거래일 종가</td>
+</tr>
+<tr class="even">
+<td>거래소 수수료</td>
+<td>편도 계약당 HK$10.00</td>
+</tr>
+<tr class="odd">
+<td>포지션한도 (건옥제한)</td>
+<td>15,000계약 (델타 조정, HSI 옵션과 합산, 전 월물)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hang-seng-china-enterprises-index-hscei-선물" class="level4">
+<h4 class="anchored" data-anchor-id="hang-seng-china-enterprises-index-hscei-선물">2. Hang Seng China Enterprises Index (HSCEI) 선물</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>명세</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>Hang Seng China Enterprises Index (HSCEI / H-shares Index)</td>
+</tr>
+<tr class="even">
+<td>HKATS 코드</td>
+<td>HHI</td>
+</tr>
+<tr class="odd">
+<td>거래승수</td>
+<td>지수포인트당 HK$50</td>
+</tr>
+<tr class="even">
+<td>호가단위 (최소가격변동폭)</td>
+<td>1 지수포인트 (HK$50)</td>
+</tr>
+<tr class="odd">
+<td>계약 월물</td>
+<td>당월, 차월, 차 2개 분기월</td>
+</tr>
+<tr class="even">
+<td>매매시간</td>
+<td>HSI 선물과 동일</td>
+</tr>
+<tr class="odd">
+<td>최종거래일</td>
+<td>계약월의 끝에서 두 번째 영업일</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>현금 결제</td>
+</tr>
+<tr class="odd">
+<td>최종결제가격</td>
+<td>SEHK 세션 중 5분 간격의 HSCEI 호가 평균</td>
+</tr>
+<tr class="even">
+<td>거래소 수수료</td>
+<td>편도 계약당 HK$10.00</td>
+</tr>
+<tr class="odd">
+<td>포지션한도 (건옥제한)</td>
+<td>25,000계약 (델타 조정, HSCEI 옵션과 합산, 전 월물)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주식옵션-집합-stock-options-aggregate" class="level4">
+<h4 class="anchored" data-anchor-id="주식옵션-집합-stock-options-aggregate">3. 주식옵션 (집합) (Stock Options, Aggregate)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>명세</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>홍콩 상장 주식 및 ETF ~100종목</td>
+</tr>
+<tr class="even">
+<td>행사방식</td>
+<td>미국형 (만기 전 영업일에 행사 가능)</td>
+</tr>
+<tr class="odd">
+<td>계약 단위</td>
+<td>기초자산별 상이 (통상 1 매매단위)</td>
+</tr>
+<tr class="even">
+<td>만기 월물</td>
+<td>당월, 차 2개월, 차 3개 분기월</td>
+</tr>
+<tr class="odd">
+<td>주간 만기</td>
+<td>일부 종목 대상 (2024년 11월부터)</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>실물 인도 (주식 교환)</td>
+</tr>
+<tr class="odd">
+<td>행사</td>
+<td>영업일 6:30 PM까지; 만기 시 내가격(ITM) 자동 행사</td>
+</tr>
+<tr class="even">
+<td>거래소 수수료</td>
+<td>편도 계약당 HK$0.50 – HK$3.00 (등급별)</td>
+</tr>
+<tr class="odd">
+<td>포지션한도 (건옥제한)</td>
+<td>종목당 방향별 50,000 – 250,000 미결제계약 (기초자산에 따라 상이)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hang-seng-tech-index-hstech-선물" class="level4">
+<h4 class="anchored" data-anchor-id="hang-seng-tech-index-hstech-선물">4. Hang Seng TECH Index (HSTECH) 선물</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>명세</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>Hang Seng TECH Index</td>
+</tr>
+<tr class="even">
+<td>HKATS 코드</td>
+<td>HTI</td>
+</tr>
+<tr class="odd">
+<td>거래승수</td>
+<td>지수포인트당 HK$50</td>
+</tr>
+<tr class="even">
+<td>호가단위 (최소가격변동폭)</td>
+<td>1 지수포인트 (HK$50)</td>
+</tr>
+<tr class="odd">
+<td>계약 월물</td>
+<td>당월, 차 3개월, 차 3개 분기월</td>
+</tr>
+<tr class="even">
+<td>매매시간</td>
+<td>HSI 선물과 동일</td>
+</tr>
+<tr class="odd">
+<td>결제</td>
+<td>현금 결제</td>
+</tr>
+<tr class="even">
+<td>거래소 수수료</td>
+<td>편도 HK$2.50 (시장 전체 50% 할인 적용)</td>
+</tr>
+<tr class="odd">
+<td>포지션한도 (건옥제한)</td>
+<td>30,000계약 (델타 조정, HSTECH 옵션과 합산)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="mini-hang-seng-index-mini-hsi-선물" class="level4">
+<h4 class="anchored" data-anchor-id="mini-hang-seng-index-mini-hsi-선물">5. Mini-Hang Seng Index (Mini-HSI) 선물</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>명세</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>Hang Seng Index</td>
+</tr>
+<tr class="even">
+<td>HKATS 코드</td>
+<td>MHI</td>
+</tr>
+<tr class="odd">
+<td>거래승수</td>
+<td>지수포인트당 HK$10 (표준 HSI의 1/5)</td>
+</tr>
+<tr class="even">
+<td>호가단위 (최소가격변동폭)</td>
+<td>1 지수포인트 (HK$10)</td>
+</tr>
+<tr class="odd">
+<td>계약 월물</td>
+<td>당월, 차월, 차 2개 분기월</td>
+</tr>
+<tr class="even">
+<td>매매시간</td>
+<td>HSI 선물과 동일</td>
+</tr>
+<tr class="odd">
+<td>결제</td>
+<td>현금 결제</td>
+</tr>
+<tr class="even">
+<td>최종결제가격</td>
+<td>HSI 선물과 동일</td>
+</tr>
+<tr class="odd">
+<td>거래소 수수료</td>
+<td>편도 계약당 HK$3.50</td>
+</tr>
+<tr class="even">
+<td>대체가능성</td>
+<td>Mini-HSI 5계약 = 표준 HSI 1계약 (상쇄 허용)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: HKEX, product pages for HSI Futures, HSCEI Futures, HSTECH Futures, Mini-HSI Futures, Stock Options, accessed 2026-04-06]</p>
+</section>
+</section>
+<section id="d3.-증거금-체계-margin-framework" class="level3">
+<h3 class="anchored" data-anchor-id="d3.-증거금-체계-margin-framework">D3. 증거금 체계 (Margin Framework)</h3>
+<section id="증거금-방법론-prime-portfolio-risk-margining-system" class="level4">
+<h4 class="anchored" data-anchor-id="증거금-방법론-prime-portfolio-risk-margining-system">증거금 방법론: PRiME (Portfolio Risk Margining System)</h4>
+<p>HKCC와 SEOCH는 <strong>SPAN 1 호환</strong>인 <strong>PRiME</strong> (Portfolio Risk Margining System)을 사용한다. PRiME은 DCASS에 구현된 증거금 방법론이다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>구성요소</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>알고리즘</td>
+<td>PRiME (SPAN 1 호환)</td>
+</tr>
+<tr class="even">
+<td>시나리오</td>
+<td>최대 잠재 손실을 평가하는 16개 시뮬레이션 시나리오</td>
+</tr>
+<tr class="odd">
+<td>신뢰수준</td>
+<td>1일 보유기간에 대한 정의된 신뢰수준</td>
+</tr>
+<tr class="even">
+<td>청산기관 증거금</td>
+<td>리스크 파라미터 파일(RPF)을 사용하여 청산기관이 산출한 기본 증거금</td>
+</tr>
+<tr class="odd">
+<td>고객 증거금 배수</td>
+<td><strong>1.33배</strong> (2017년 3월 20일 시행) – 고객 리스크 증거금 = 청산기관 증거금 x 1.33</td>
+</tr>
+<tr class="even">
+<td>롱옵션 상한</td>
+<td>포트폴리오에 롱옵션 포지션만 있는 경우, 증거금은 포지션의 시장가치로 상한</td>
+</tr>
+<tr class="odd">
+<td>SEOCH 추가 요소</td>
+<td>프리미엄 납부 옵션에 대한 시가평가 증거금</td>
+</tr>
+<tr class="even">
+<td>리스크 파라미터 파일</td>
+<td>HKEX가 청산기관 증거금 산출을 위해 배포; 참가자는 DCASS를 통해 접근</td>
+</tr>
+<tr class="odd">
+<td>모니터링</td>
+<td>시장 상황 대비 적정성을 확보하기 위한 증거금 수준의 일일 모니터링</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="증거금률-참고용-변경-가능-margin-rates-indicative" class="level4">
+<h4 class="anchored" data-anchor-id="증거금률-참고용-변경-가능-margin-rates-indicative">증거금률 (참고용 – 변경 가능) (Margin Rates, Indicative)</h4>
+<p>증거금률은 시장 변동성에 따라 변동되며 HKCC/SEOCH가 정기적으로 검토한다. 대략적 범위:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>개시증거금 (청산기관)</th>
+<th>고객 증거금 (~1.33배)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HSI 선물</td>
+<td>~HK$100,000 – 130,000 /계약</td>
+<td>~HK$133,000 – 173,000</td>
+</tr>
+<tr class="even">
+<td>Mini-HSI 선물</td>
+<td>~HK$20,000 – 26,000 /계약</td>
+<td>~HK$26,600 – 34,600</td>
+</tr>
+<tr class="odd">
+<td>HSCEI 선물</td>
+<td>~HK$50,000 – 70,000 /계약</td>
+<td>~HK$66,500 – 93,100</td>
+</tr>
+</tbody>
+</table>
+<p>[참고: 정확한 증거금률은 시장 상황에 따라 빈번하게 변동된다. 위 수치는 브로커 공시 데이터에 기반한 대략적 범위이며, 최신 HKEX RPF를 통해 확인해야 한다.]</p>
+</section>
+<section id="변동증거금-variation-margin" class="level4">
+<h4 class="anchored" data-anchor-id="변동증거금-variation-margin">변동증거금 (Variation Margin)</h4>
+<ul>
+<li>공식 일일 결제가격에 기반한 일일 시가평가</li>
+<li>시장이 크게 변동하면 <strong>일중 증거금 추가 납부 요구</strong>가 발행될 수 있다</li>
+<li>변동증거금은 HKCC와 참가자 은행 계좌 간 자금 이전을 통해 정산</li>
+<li>결제/지정은행이 자동이체 지시를 처리</li>
+</ul>
+</section>
+<section id="적격-담보-eligible-collateral" class="level4">
+<h4 class="anchored" data-anchor-id="적격-담보-eligible-collateral">적격 담보 (Eligible Collateral)</h4>
+<ul>
+<li>현금 (HKD, USD, RMB 및 기타 승인 통화)</li>
+<li>정부채권 (할인율 적용)</li>
+<li>은행 보증</li>
+<li>기타 승인 유가증권 (청산기관이 지정한 할인율 적용)</li>
+</ul>
+<p>[Source: HKEX, “Margin – Risk Management – Listed Derivatives Clearing”, https://www.hkex.com.hk/Services/Clearing/Listed-Derivatives/Risk-Management/Margin, accessed 2026-04-06] [Source: HKEX, “Clearing, Settlement and Collateral Management FAQ”, accessed 2026-04-06]</p>
+</section>
+</section>
+<section id="d4.-포지션한도-및-대량미결제포지션-보고-position-limits-large-open-position-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="d4.-포지션한도-및-대량미결제포지션-보고-position-limits-large-open-position-reporting">D4. 포지션한도 및 대량미결제포지션 보고 (Position Limits &amp; Large Open Position Reporting)</h3>
+<section id="상품별-포지션한도-position-limits-by-product" class="level4">
+<h4 class="anchored" data-anchor-id="상품별-포지션한도-position-limits-by-product">상품별 포지션한도 (Position Limits by Product)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 48%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>포지션한도 (건옥제한)</th>
+<th>기준</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HSI 선물 + 옵션 (합산)</td>
+<td>매수 또는 매도 15,000</td>
+<td>델타 조정, 전 계약월</td>
+</tr>
+<tr class="even">
+<td>HSCEI 선물 + 옵션 (합산)</td>
+<td>매수 또는 매도 25,000</td>
+<td>델타 조정, 전 계약월</td>
+</tr>
+<tr class="odd">
+<td>HS TECH 선물 + 옵션 (합산)</td>
+<td>매수 또는 매도 30,000</td>
+<td>델타 조정, 전 계약월 및 주간</td>
+</tr>
+<tr class="even">
+<td>주식옵션</td>
+<td>50,000 – 250,000 미결제계약</td>
+<td>옵션 종목당, 시장 방향당, 전 만기</td>
+</tr>
+<tr class="odd">
+<td>주식선물</td>
+<td>5,000 – 25,000 순계약</td>
+<td>전 계약월 합산, 종목별 상이</td>
+</tr>
+</tbody>
+</table>
+<p>포지션한도는 선의의 헤지 면제(bona fide hedging exemptions)에 따라 SFC/거래소 승인 하에 증가될 수 있다.</p>
+</section>
+<section id="대량미결제포지션lop-보고-기준-large-open-position-reporting-thresholds" class="level4">
+<h4 class="anchored" data-anchor-id="대량미결제포지션lop-보고-기준-large-open-position-reporting-thresholds">대량미결제포지션(LOP) 보고 기준 (Large Open Position Reporting Thresholds)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품 유형</th>
+<th>보고 기준</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>지수 선물/옵션</td>
+<td>단일 계약월 500 미결제계약</td>
+</tr>
+<tr class="even">
+<td>주식옵션</td>
+<td>옵션 종목당 만기당 1,000 미결제계약</td>
+</tr>
+<tr class="odd">
+<td>주식선물</td>
+<td>단일 계약월 1,000 미결제계약</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="보고-요건-reporting-requirements-1" class="level4">
+<h4 class="anchored" data-anchor-id="보고-요건-reporting-requirements-1">보고 요건 (Reporting Requirements)</h4>
+<ul>
+<li>LOP 보고는 <strong>Electronic Communication Platform (ECP 2.0)</strong>을 통해 제출해야 한다</li>
+<li>제출 기한: 기준을 최초 초과한 <strong>다음 영업일 정오 12시</strong></li>
+<li>포지션이 기준을 초과하는 동안 매 영업일 보고를 계속해야 한다</li>
+<li>휴일 거래 계약은 다음 영업일까지 보고 (홍콩 공휴일 포함)</li>
+<li>규제 근거: HKFE Rules 628, 633; Securities and Futures (Contracts Limits and Reportable Positions) Rules (Cap. 571Y); SFC 지침서</li>
+</ul>
+</section>
+<section id="최근-변경-recent-changes" class="level4">
+<h4 class="anchored" data-anchor-id="최근-변경-recent-changes">최근 변경 (Recent Changes)</h4>
+<ul>
+<li>2023년 12월 22일: HKEX 컨설테이션 결론(2022년 7월) 및 SFC 조정에 따른 포지션한도 확대 시행</li>
+<li>2025년 7월 2일: Hang Seng Index 파생상품 3개 상품군에 대한 추가 포지션한도 증가, HKEX 시스템 개선 병행</li>
+</ul>
+<p>[Source: HKEX, “Large Open Positions and Position Limits”, https://www.hkex.com.hk/Services/Trading/Derivatives/Overview/Trading-Mechanism/Large-Open-Positions-and-Position-Limits, accessed 2026-04-06] [Source: HKEX FAQ, “Position Limits and Large Open Position Reporting”, accessed 2026-04-06] [Source: SFC, “Guidance Note on Position Limits and Large Open Position Reporting Requirements”, accessed 2026-04-06]</p>
+</section>
+</section>
+<section id="d5.-블록거래-규칙-block-trading-rules" class="level3">
+<h3 class="anchored" data-anchor-id="d5.-블록거래-규칙-block-trading-rules">D5. 블록거래 규칙 (Block Trading Rules)</h3>
+<section id="개요-overview" class="level4">
+<h4 class="anchored" data-anchor-id="개요-overview">개요 (Overview)</h4>
+<p>블록거래 (대량매매) 시설은 중앙호가창 외부에서 사적으로 협상된 대량 거래를 가능하게 하며, 청산기관을 통해 청산되어 가격 확정, 체결 확정, CCP 보증을 제공한다.</p>
+</section>
+<section id="적격-상품-eligible-products" class="level4">
+<h4 class="anchored" data-anchor-id="적격-상품-eligible-products">적격 상품 (Eligible Products)</h4>
+<p>다음을 <strong>제외한</strong> 모든 HKFE 및 SEHK 파생상품: - 상장 조합 주문 - Mini-HSI 선물 및 옵션 - Mini-HSCEI 선물 및 옵션</p>
+</section>
+<section id="최소-거래량-기준-minimum-volume-thresholds-mvt" class="level4">
+<h4 class="anchored" data-anchor-id="최소-거래량-기준-minimum-volume-thresholds-mvt">최소 거래량 기준 (Minimum Volume Thresholds, MVT)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>MVT (계약)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HSI/HSCEI 선물 (전방 4개월)</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>HSI/HSCEI 선물 (후방 월물)</td>
+<td>50</td>
+</tr>
+<tr class="odd">
+<td>기타 주가지수 선물</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>주식선물</td>
+<td>100</td>
+</tr>
+<tr class="odd">
+<td>주식옵션</td>
+<td>500</td>
+</tr>
+<tr class="even">
+<td>MSCI 지수 선물</td>
+<td>25 – 50 (상품별 상이)</td>
+</tr>
+<tr class="odd">
+<td>통화 선물</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>금/은 선물</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>HSI Volatility Index 선물</td>
+<td>[unverified]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="가격-규칙-pricing-rules" class="level4">
+<h4 class="anchored" data-anchor-id="가격-규칙-pricing-rules">가격 규칙 (Pricing Rules)</h4>
+<ul>
+<li>체결 가격은 <strong>“공정하고 합리적”</strong>이어야 한다</li>
+<li>지정된 <strong>허용 가격 범위</strong> 내여야 한다:
+<ul>
+<li>주가지수 선물: 1–3% (계약 만기에 따라 상이)</li>
+<li>주식선물/옵션: 3% 또는 최대 시장조성자 스프레드 (더 좁은 쪽)</li>
+<li>MSCI 선물: 3%</li>
+<li>통화 선물: 3%</li>
+<li>HSI Volatility Index 선물: 1%</li>
+</ul></li>
+</ul>
+</section>
+<section id="주문-입력-기간-order-entry-windows" class="level4">
+<h4 class="anchored" data-anchor-id="주문-입력-기간-order-entry-windows">주문 입력 기간 (Order Entry Windows)</h4>
+<ul>
+<li><strong>주가지수 선물/옵션:</strong> 정규 거래일 4:30 PM – 4:45 PM</li>
+<li><strong>주식선물/옵션:</strong> 정규 거래일 4:00 PM – 4:25 PM</li>
+<li>공식 종가를 참조하는 MSCI 선물: 다음 세션 개장 후 30분 이내</li>
+</ul>
+</section>
+<section id="청산-및-등록-clearing-registration" class="level4">
+<h4 class="anchored" data-anchor-id="청산-및-등록-clearing-registration">청산 및 등록 (Clearing &amp; Registration)</h4>
+<ul>
+<li>청산기관 검증 후에만 등록이 이루어진다</li>
+<li>30분 이내 거부 통지가 없으면: 블록거래가 등록된 것으로 간주</li>
+<li>가격이 비합리적으로 보이거나 25% 증거금 침식(HKCC) 또는 50% (SEOCH)를 유발하면 청산기관이 <strong>추가 증거금</strong>을 요구할 수 있다</li>
+</ul>
+</section>
+<section id="정보-공개-information-dissemination" class="level4">
+<h4 class="anchored" data-anchor-id="정보-공개-information-dissemination">정보 공개 (Information Dissemination)</h4>
+<ul>
+<li>블록거래 가격은 일일 고가, 저가, 최종 체결가, 결제가격 계산에서 <strong>제외</strong>된다</li>
+<li>HKATS에서 “EMP 1 BR” 또는 “EMP D BR”로 표시된다</li>
+<li>거래량은 전체 일일 통계에 포함된다</li>
+</ul>
+</section>
+<section id="기록-보관-record-keeping" class="level4">
+<h4 class="anchored" data-anchor-id="기록-보관-record-keeping">기록 보관 (Record Keeping)</h4>
+<ul>
+<li>참가자는 모든 블록거래 주문 및 확인의 <strong>전화 녹음</strong>을 최소 3개월간 보관해야 한다</li>
+<li>거래소 요청 시 증빙자료를 제공해야 한다</li>
+</ul>
+<p><strong>참고:</strong> HKEX는 현재 CME Group에 비견되는 공식 EFP (Exchange for Physical) 또는 EFS (Exchange for Swap) 시설을 운영하지 않는다. 거래소외 거래는 주로 블록거래 시설을 통해 처리된다. [unverified – 참가자는 최신 HKFE 규칙을 확인해야 한다]</p>
+<p>[Source: HKEX, “Block Trade Facility”, https://www.hkex.com.hk/Services/Trading/Derivatives/Overview/Trading-Mechanism/Block-Trade-Facility, accessed 2026-04-06]</p>
+</section>
+</section>
+<section id="d6.-인도-및-결제-절차-delivery-settlement-process" class="level3">
+<h3 class="anchored" data-anchor-id="d6.-인도-및-결제-절차-delivery-settlement-process">D6. 인도 및 결제 절차 (Delivery &amp; Settlement Process)</h3>
+<section id="현금결제-상품-지수-선물옵션-hibor-철광석-cash-settled-products" class="level4">
+<h4 class="anchored" data-anchor-id="현금결제-상품-지수-선물옵션-hibor-철광석-cash-settled-products">현금결제 상품 (지수 선물/옵션, HIBOR, 철광석) (Cash-Settled Products)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>단계</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>일일 결제가격</td>
+<td>HKEX가 매 거래일 종료 시 공표</td>
+</tr>
+<tr class="even">
+<td>변동증거금</td>
+<td>일일 산출; HKCC/SEOCH 은행 계좌 이체를 통해 정산</td>
+</tr>
+<tr class="odd">
+<td>최종결제가격 (HSI/HSCEI/HSTECH)</td>
+<td>SEHK 접속매매 세션 중 5분 간격의 지수 호가 평균 + 최종거래일 종가</td>
+</tr>
+<tr class="even">
+<td>최종결제일</td>
+<td>최종거래일 다음 영업일</td>
+</tr>
+<tr class="odd">
+<td>현금 결제</td>
+<td>HKCC가 결제/지정은행에 자동이체 지시 발행</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="실물인도-상품-주식선물옵션-통화선물-금선물-physically-delivered-products" class="level4">
+<h4 class="anchored" data-anchor-id="실물인도-상품-주식선물옵션-통화선물-금선물-physically-delivered-products">실물인도 상품 (주식선물/옵션, 통화선물, 금선물) (Physically Delivered Products)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>단계</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주식옵션 행사</td>
+<td>영업일 6:30 PM까지 (미국형); 만기 시 내가격(ITM) 자동 행사</td>
+</tr>
+<tr class="even">
+<td>주식 인도</td>
+<td>CCASS (Central Clearing and Settlement System)를 통한 기초주식 실물 인도; 결제 T+2</td>
+</tr>
+<tr class="odd">
+<td>통화 선물</td>
+<td>최종거래일 후 3영업일에 CNH 실물 인도 (USD/CNH, EUR/CNH 등)</td>
+</tr>
+<tr class="even">
+<td>금 선물</td>
+<td>지정 금고에서의 금 실물 인도; 홍콩 인도</td>
+</tr>
+<tr class="odd">
+<td>은 선물</td>
+<td>지정 금고에서의 은 실물 인도</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="결제-주기-settlement-cycle" class="level4">
+<h4 class="anchored" data-anchor-id="결제-주기-settlement-cycle">결제 주기 (Settlement Cycle)</h4>
+<ul>
+<li><strong>파생상품 증거금/변동:</strong> 정규 증거금 요구에 대해 T+0 (당일); 일중 요구 가능</li>
+<li><strong>현금 결제:</strong> 지수 선물 최종 결제에 T+1 (최종거래일 다음 영업일)</li>
+<li><strong>실물 인도:</strong> 주식옵션 T+2; 통화 선물 T+3</li>
+<li><strong>금 인도:</strong> 계약 규칙에 따라 지정</li>
+</ul>
+</section>
+<section id="채무불이행-관리-default-management" class="level4">
+<h4 class="anchored" data-anchor-id="채무불이행-관리-default-management">채무불이행 관리 (Default Management)</h4>
+<ul>
+<li>HKCC와 SEOCH는 CCP로서 모든 거래의 결제를 보증한다</li>
+<li>청산참가자의 적립금 출연이 초기 손실 흡수를 제공한다</li>
+<li>워터폴: 채무불이행 참가자의 증거금 및 담보 -&gt; 적립금 출연 -&gt; HKCC/SEOCH 자체 재원 -&gt; 비채무불이행 참가자의 적립금 출연</li>
+<li>HKEX는 거래 정지 및 긴급 조치를 부과할 수 있는 권한을 보유한다</li>
+</ul>
+<p>[Source: HKEX, “Clearing Services – Listed Derivatives Overview”, accessed 2026-04-06] [Source: HKEX, “Clearing, Settlement and Collateral Management FAQ”, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="부록-krx-파생상품과의-비교-appendix-comparison-with-krx-derivatives" class="level2">
+<h2 class="anchored" data-anchor-id="부록-krx-파생상품과의-비교-appendix-comparison-with-krx-derivatives">부록: KRX 파생상품과의 비교 (Appendix: Comparison with KRX Derivatives)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 39%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>특성</th>
+<th>HKEX 파생상품</th>
+<th>KRX 파생상품</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>대표 상품</td>
+<td>HSI 선물 (HK$50/포인트)</td>
+<td>KOSPI 200 선물 (KRW 250,000/포인트)</td>
+</tr>
+<tr class="even">
+<td>옵션 행사방식</td>
+<td>유럽형 (지수), 미국형 (주식)</td>
+<td>유럽형 (KOSPI 200 옵션)</td>
+</tr>
+<tr class="odd">
+<td>매매시스템</td>
+<td>HKATS (Genium INET, Nasdaq)</td>
+<td>EXTURE+ (자체 개발)</td>
+</tr>
+<tr class="even">
+<td>청산기관</td>
+<td>HKCC / SEOCH</td>
+<td>KRX CCP</td>
+</tr>
+<tr class="odd">
+<td>증거금 방법론</td>
+<td>PRiME (SPAN 1 호환)</td>
+<td>KOSCOM SPAN 기반</td>
+</tr>
+<tr class="even">
+<td>시간외 매매</td>
+<td>예 (T+1, 5:15 PM – 3:00 AM)</td>
+<td>예 (야간 세션, KOSPI 200의 경우 6:00 PM – 6:00 AM)</td>
+</tr>
+<tr class="odd">
+<td>점심 휴장</td>
+<td>예 (12:00 – 1:00 PM)</td>
+<td>아니오 (2016년부터 연속 매매)</td>
+</tr>
+<tr class="even">
+<td>중국 연계</td>
+<td>Stock Connect, Swap Connect, Bond Connect</td>
+<td>없음 (직접)</td>
+</tr>
+<tr class="odd">
+<td>MSCI 파생상품</td>
+<td>광범위한 제품군 (~39개 계약)</td>
+<td>제한적</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="자료-출처-및-참고문헌-data-sources-references" class="level2">
+<h2 class="anchored" data-anchor-id="자료-출처-및-참고문헌-data-sources-references">자료 출처 및 참고문헌 (Data Sources &amp; References)</h2>
+<ol type="1">
+<li>HKEX Official Website – https://www.hkex.com.hk</li>
+<li>HKEX, “Trading Hours – Derivatives Market” – accessed 2026-04-06</li>
+<li>HKEX, “HKATS Infrastructure” – accessed 2026-04-06</li>
+<li>HKEX, “OMD-D Market Data Platform” – accessed 2026-04-06</li>
+<li>HKEX, “Hosting Services” – accessed 2026-04-06</li>
+<li>HKEX, “Block Trade Facility” – accessed 2026-04-06</li>
+<li>HKEX, “Large Open Positions and Position Limits” – accessed 2026-04-06</li>
+<li>HKEX, “Market Making Obligations and Incentives” – accessed 2026-04-06</li>
+<li>HKEX, “Margin – Risk Management” – accessed 2026-04-06</li>
+<li>HKEX, “Fees – Listed Derivatives – Transaction” – accessed 2026-04-06</li>
+<li>HKEX, “Clearing Services – Listed Derivatives Overview” – accessed 2026-04-06</li>
+<li>HKEX, Quarterly Results Press Releases (Q1, Q2, Q3 2025) – 2025</li>
+<li>SFC, “Guidance Note on Position Limits and LOP Reporting” – accessed 2026-04-06</li>
+<li>Wikipedia, “Hong Kong Exchanges and Clearing” – accessed 2026-04-06</li>
+<li>Wikipedia, “Hong Kong Futures Exchange” – accessed 2026-04-06</li>
+<li>Nasdaq, “Hong Kong Exchange Renews Contract With NASDAQ OMX” – 2013</li>
+<li>Finextra, “HKEx moves derivatives clearing and trading platforms to Genium Inet” – 2013</li>
+<li>FOW, “HKEX to list single stock options in March after record 2024” – February 2025</li>
+<li>ICLG, “Derivatives Laws and Regulations 2025-2026 – Hong Kong” – accessed 2026-04-06</li>
+<li>EY, “Evolving HKTR Requirements” – March 2025</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

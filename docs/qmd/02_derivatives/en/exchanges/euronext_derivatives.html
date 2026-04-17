@@ -1,0 +1,2605 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>Euronext Derivatives – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html">Exchanges</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/euronext_derivatives.html">Euronext Derivatives</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Derivatives Markets — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Derivatives Markets – Comparative Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exchanges</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Derivatives (Australian Securities Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cboe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cboe Global Markets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/eurex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Euronext Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Derivatives Market</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange Futures)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX Derivatives (Korea Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Derivatives Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU Derivatives Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">U.S. Derivatives Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 Trading Architecture – Eurex (Derivatives)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview-profile" id="toc-overview-profile" class="nav-link active" data-scroll-target="#overview-profile">1. Overview &amp; Profile</a>
+  <ul class="collapse">
+  <li><a href="#key-historical-milestones" id="toc-key-historical-milestones" class="nav-link" data-scroll-target="#key-historical-milestones">Key Historical Milestones</a></li>
+  </ul></li>
+  <li><a href="#market-structure" id="toc-market-structure" class="nav-link" data-scroll-target="#market-structure">2. Market Structure</a>
+  <ul class="collapse">
+  <li><a href="#market-segments" id="toc-market-segments" class="nav-link" data-scroll-target="#market-segments">2.1 Market Segments</a></li>
+  <li><a href="#trading-sessions" id="toc-trading-sessions" class="nav-link" data-scroll-target="#trading-sessions">2.2 Trading Sessions</a></li>
+  <li><a href="#tick-sizes" id="toc-tick-sizes" class="nav-link" data-scroll-target="#tick-sizes">2.3 Tick Sizes</a></li>
+  <li><a href="#lot-sizes" id="toc-lot-sizes" class="nav-link" data-scroll-target="#lot-sizes">2.4 Lot Sizes</a></li>
+  <li><a href="#market-maker-liquidity-provider-programs" id="toc-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#market-maker-liquidity-provider-programs">2.5 Market Maker / Liquidity Provider Programs</a></li>
+  </ul></li>
+  <li><a href="#trading-mechanism" id="toc-trading-mechanism" class="nav-link" data-scroll-target="#trading-mechanism">3. Trading Mechanism</a>
+  <ul class="collapse">
+  <li><a href="#auction-mechanisms" id="toc-auction-mechanisms" class="nav-link" data-scroll-target="#auction-mechanisms">3.1 Auction Mechanisms</a></li>
+  <li><a href="#continuous-trading" id="toc-continuous-trading" class="nav-link" data-scroll-target="#continuous-trading">3.2 Continuous Trading</a></li>
+  <li><a href="#price-discovery" id="toc-price-discovery" class="nav-link" data-scroll-target="#price-discovery">3.3 Price Discovery</a></li>
+  <li><a href="#order-priority-rules" id="toc-order-priority-rules" class="nav-link" data-scroll-target="#order-priority-rules">3.4 Order Priority Rules</a></li>
+  </ul></li>
+  <li><a href="#order-types" id="toc-order-types" class="nav-link" data-scroll-target="#order-types">4. Order Types</a>
+  <ul class="collapse">
+  <li><a href="#standard-order-types" id="toc-standard-order-types" class="nav-link" data-scroll-target="#standard-order-types">4.1 Standard Order Types</a></li>
+  <li><a href="#advanced-order-types" id="toc-advanced-order-types" class="nav-link" data-scroll-target="#advanced-order-types">4.2 Advanced Order Types</a></li>
+  <li><a href="#time-in-force-tif-options" id="toc-time-in-force-tif-options" class="nav-link" data-scroll-target="#time-in-force-tif-options">4.3 Time-in-Force (TIF) Options</a></li>
+  <li><a href="#order-modification-cancellation" id="toc-order-modification-cancellation" class="nav-link" data-scroll-target="#order-modification-cancellation">4.4 Order Modification &amp; Cancellation</a></li>
+  </ul></li>
+  <li><a href="#trading-system-technology-optiq" id="toc-trading-system-technology-optiq" class="nav-link" data-scroll-target="#trading-system-technology-optiq">5. Trading System Technology – Optiq</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">5.1 Overview</a></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">5.2 Architecture</a></li>
+  <li><a href="#platform-history" id="toc-platform-history" class="nav-link" data-scroll-target="#platform-history">5.3 Platform History</a></li>
+  <li><a href="#performance-highlights" id="toc-performance-highlights" class="nav-link" data-scroll-target="#performance-highlights">5.4 Performance Highlights</a></li>
+  <li><a href="#disaster-recovery-business-continuity" id="toc-disaster-recovery-business-continuity" class="nav-link" data-scroll-target="#disaster-recovery-business-continuity">5.5 Disaster Recovery / Business Continuity</a></li>
+  </ul></li>
+  <li><a href="#market-data" id="toc-market-data" class="nav-link" data-scroll-target="#market-data">6. Market Data</a>
+  <ul class="collapse">
+  <li><a href="#feed-protocols" id="toc-feed-protocols" class="nav-link" data-scroll-target="#feed-protocols">6.1 Feed Protocols</a></li>
+  <li><a href="#data-levels" id="toc-data-levels" class="nav-link" data-scroll-target="#data-levels">6.2 Data Levels</a></li>
+  <li><a href="#data-distribution" id="toc-data-distribution" class="nav-link" data-scroll-target="#data-distribution">6.3 Data Distribution</a></li>
+  <li><a href="#historical-data" id="toc-historical-data" class="nav-link" data-scroll-target="#historical-data">6.4 Historical Data</a></li>
+  </ul></li>
+  <li><a href="#connectivity-access" id="toc-connectivity-access" class="nav-link" data-scroll-target="#connectivity-access">7. Connectivity &amp; Access</a>
+  <ul class="collapse">
+  <li><a href="#membership" id="toc-membership" class="nav-link" data-scroll-target="#membership">7.1 Membership</a></li>
+  <li><a href="#connection-methods" id="toc-connection-methods" class="nav-link" data-scroll-target="#connection-methods">7.2 Connection Methods</a></li>
+  <li><a href="#api-protocols" id="toc-api-protocols" class="nav-link" data-scroll-target="#api-protocols">7.3 API Protocols</a></li>
+  <li><a href="#certification-testing" id="toc-certification-testing" class="nav-link" data-scroll-target="#certification-testing">7.4 Certification &amp; Testing</a></li>
+  </ul></li>
+  <li><a href="#risk-controls-circuit-breakers" id="toc-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#risk-controls-circuit-breakers">8. Risk Controls &amp; Circuit Breakers</a>
+  <ul class="collapse">
+  <li><a href="#trading-safeguards-philosophy" id="toc-trading-safeguards-philosophy" class="nav-link" data-scroll-target="#trading-safeguards-philosophy">8.1 Trading Safeguards Philosophy</a></li>
+  <li><a href="#price-collar-mechanisms" id="toc-price-collar-mechanisms" class="nav-link" data-scroll-target="#price-collar-mechanisms">8.2 Price Collar Mechanisms</a></li>
+  <li><a href="#pre-trade-risk-controls-euronext-riskguard" id="toc-pre-trade-risk-controls-euronext-riskguard" class="nav-link" data-scroll-target="#pre-trade-risk-controls-euronext-riskguard">8.3 Pre-Trade Risk Controls – Euronext RiskGuard</a></li>
+  </ul></li>
+  <li><a href="#regulatory-framework" id="toc-regulatory-framework" class="nav-link" data-scroll-target="#regulatory-framework">9. Regulatory Framework</a>
+  <ul class="collapse">
+  <li><a href="#college-of-euronext-regulators" id="toc-college-of-euronext-regulators" class="nav-link" data-scroll-target="#college-of-euronext-regulators">9.1 College of Euronext Regulators</a></li>
+  <li><a href="#key-regulations" id="toc-key-regulations" class="nav-link" data-scroll-target="#key-regulations">9.2 Key Regulations</a></li>
+  <li><a href="#surveillance-reporting" id="toc-surveillance-reporting" class="nav-link" data-scroll-target="#surveillance-reporting">9.3 Surveillance &amp; Reporting</a></li>
+  <li><a href="#cross-border-coordination" id="toc-cross-border-coordination" class="nav-link" data-scroll-target="#cross-border-coordination">9.4 Cross-Border Coordination</a></li>
+  </ul></li>
+  <li><a href="#fees-revenue-model" id="toc-fees-revenue-model" class="nav-link" data-scroll-target="#fees-revenue-model">10. Fees &amp; Revenue Model</a>
+  <ul class="collapse">
+  <li><a href="#trading-fees" id="toc-trading-fees" class="nav-link" data-scroll-target="#trading-fees">10.1 Trading Fees</a></li>
+  <li><a href="#clearing-fees" id="toc-clearing-fees" class="nav-link" data-scroll-target="#clearing-fees">10.2 Clearing Fees</a></li>
+  <li><a href="#market-data-fees" id="toc-market-data-fees" class="nav-link" data-scroll-target="#market-data-fees">10.3 Market Data Fees</a></li>
+  <li><a href="#co-location-connectivity-fees" id="toc-co-location-connectivity-fees" class="nav-link" data-scroll-target="#co-location-connectivity-fees">10.4 Co-location &amp; Connectivity Fees</a></li>
+  </ul></li>
+  <li><a href="#recent-developments" id="toc-recent-developments" class="nav-link" data-scroll-target="#recent-developments">11. Recent Developments</a>
+  <ul class="collapse">
+  <li><a href="#euronext-clearing-migration-2023-2024" id="toc-euronext-clearing-migration-2023-2024" class="nav-link" data-scroll-target="#euronext-clearing-migration-2023-2024">11.1 Euronext Clearing Migration (2023-2024)</a></li>
+  <li><a href="#borsa-italiana-derivatives-migration-to-optiq-2024" id="toc-borsa-italiana-derivatives-migration-to-optiq-2024" class="nav-link" data-scroll-target="#borsa-italiana-derivatives-migration-to-optiq-2024">11.2 Borsa Italiana Derivatives Migration to Optiq (2024)</a></li>
+  <li><a href="#new-product-launches" id="toc-new-product-launches" class="nav-link" data-scroll-target="#new-product-launches">11.3 New Product Launches</a></li>
+  <li><a href="#strategic-initiatives" id="toc-strategic-initiatives" class="nav-link" data-scroll-target="#strategic-initiatives">11.4 Strategic Initiatives</a></li>
+  </ul></li>
+  <li><a href="#derivatives-specific-sections" id="toc-derivatives-specific-sections" class="nav-link" data-scroll-target="#derivatives-specific-sections">Derivatives-Specific Sections</a>
+  <ul class="collapse">
+  <li><a href="#d1.-product-catalog" id="toc-d1.-product-catalog" class="nav-link" data-scroll-target="#d1.-product-catalog">D1. Product Catalog</a></li>
+  <li><a href="#d2.-key-contract-specifications-top-5-products-by-volume" id="toc-d2.-key-contract-specifications-top-5-products-by-volume" class="nav-link" data-scroll-target="#d2.-key-contract-specifications-top-5-products-by-volume">D2. Key Contract Specifications (Top 5 Products by Volume)</a></li>
+  <li><a href="#d3.-margin-framework" id="toc-d3.-margin-framework" class="nav-link" data-scroll-target="#d3.-margin-framework">D3. Margin Framework</a></li>
+  <li><a href="#d4.-position-limits" id="toc-d4.-position-limits" class="nav-link" data-scroll-target="#d4.-position-limits">D4. Position Limits</a></li>
+  <li><a href="#d5.-block-trading-efp-efs-wholesale-trading" id="toc-d5.-block-trading-efp-efs-wholesale-trading" class="nav-link" data-scroll-target="#d5.-block-trading-efp-efs-wholesale-trading">D5. Block Trading / EFP / EFS / Wholesale Trading</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html">Exchanges</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/euronext_derivatives.html">Euronext Derivatives</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Euronext Derivatives</h1>
+<p class="subtitle lead">Derivatives &gt; Exchanges</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-07 <strong>Research Tier:</strong> Tier 2 <strong>Domain:</strong> Derivatives</p>
+</blockquote>
+<hr>
+<section id="overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="overview-profile">1. Overview &amp; Profile</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Official Name</td>
+<td>Euronext N.V. – Derivatives Markets</td>
+</tr>
+<tr class="even">
+<td>Abbreviation</td>
+<td>Euronext Derivatives (formerly NYSE Liffe / MONEP / MATIF / AEX-Options / IDEM)</td>
+</tr>
+<tr class="odd">
+<td>Website</td>
+<td>https://www.euronext.com ; https://live.euronext.com/en/products/derivatives</td>
+</tr>
+<tr class="even">
+<td>Year Established</td>
+<td>2000 (Euronext formed by merger of Amsterdam, Brussels, Paris exchanges); derivatives heritage dates to MONEP (1987), MATIF (1986), AEX-Optiebeurs (1978), IDEM (1994)</td>
+</tr>
+<tr class="odd">
+<td>Country / City</td>
+<td>Netherlands / Amsterdam (headquarters); derivatives markets operated in Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, Paris</td>
+</tr>
+<tr class="even">
+<td>Ownership Structure</td>
+<td>Publicly listed company (Euronext N.V., ticker ENX on Euronext Amsterdam and Paris)</td>
+</tr>
+<tr class="odd">
+<td>Parent Company / Group</td>
+<td>Euronext N.V. – pan-European market infrastructure group encompassing cash equities, fixed income, derivatives, commodities, post-trade (Euronext Clearing, Euronext Securities), technology (Optiq), and data services across 7 European markets</td>
+</tr>
+<tr class="even">
+<td>Regulatory Authority</td>
+<td>College of Euronext Regulators: AMF (France), AFM (Netherlands), FSMA (Belgium), CMVM (Portugal), CONSOB (Italy), Finanstilsynet (Norway), CBI (Ireland); ESMA for CCP supervision under EMIR</td>
+</tr>
+<tr class="odd">
+<td>Derivatives ADV (Jan 2025)</td>
+<td>606,267 lots/day (up 5.1% YoY)</td>
+</tr>
+<tr class="even">
+<td>Open Interest (Jan 2025)</td>
+<td>23,064,793 contracts (up 4.5% YoY)</td>
+</tr>
+<tr class="odd">
+<td>Contracts Cleared (Jan 2025)</td>
+<td>13,337,872 contracts (single counted)</td>
+</tr>
+<tr class="even">
+<td>Commodity Derivatives ADV (Oct 2025)</td>
+<td>114,307 lots/day</td>
+</tr>
+<tr class="odd">
+<td>Listed Derivatives Instruments</td>
+<td>Equity index futures/options, single stock options/futures, dividend derivatives, commodity futures/options (wheat, rapeseed, corn), fixed income derivatives (BTP, OAT, Bund futures – launched Sep 2025), ETF options, total return futures</td>
+</tr>
+<tr class="even">
+<td>Markets</td>
+<td>Amsterdam (AEX), Paris (CAC 40, MATIF commodities), Milan (FTSE MIB, IDEM), Brussels (BEL 20), Lisbon (PSI), Oslo (OBX), Dublin (ISEQ 20)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Euronext, “Trading Information”, https://www.euronext.com/en/trading] [Source: Euronext, “Euronext publishes Q4 and full year 2024 results”, February 2025, https://www.euronext.com/en/investor-relations/financial-information/news/euronext-publishes-q4-and-full-year-2024-results] [Source: Euronext Clearing, “Statistics”, https://www.euronext.com/en/clearing/about/statistics]</p>
+<section id="key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="key-historical-milestones">Key Historical Milestones</h3>
+<ul>
+<li><strong>1978</strong>: European Options Exchange (EOE) founded in Amsterdam – one of Europe’s first options exchanges</li>
+<li><strong>1986</strong>: MATIF (Marche a Terme International de France) launched in Paris for financial and commodity futures</li>
+<li><strong>1987</strong>: MONEP (Marche des Options Negociables de Paris) launched for equity options</li>
+<li><strong>1994</strong>: IDEM (Italian Derivatives Market) launched by Borsa Italiana in Milan</li>
+<li><strong>2000 (September)</strong>: <strong>Euronext formed</strong> through merger of Paris Bourse, Amsterdam Exchanges, and Brussels Exchanges</li>
+<li><strong>2001</strong>: Euronext acquires LIFFE (London International Financial Futures and Options Exchange), forming Euronext.liffe</li>
+<li><strong>2002</strong>: Merger with Bolsa de Valores de Lisboa e Porto (BVLP), now Euronext Lisbon</li>
+<li><strong>2003</strong>: Cash products integrated onto single NSC platform</li>
+<li><strong>2004</strong>: Derivatives products integrated onto LIFFE CONNECT platform</li>
+<li><strong>2006</strong>: NYSE Group and Euronext agree to merge, forming NYSE Euronext</li>
+<li><strong>2007</strong>: NYSE Euronext officially formed; combined derivatives and cash equities operations</li>
+<li><strong>2012</strong>: European Commission blocks proposed Deutsche Borse-NYSE Euronext merger over derivatives monopoly concerns</li>
+<li><strong>2013</strong>: Intercontinental Exchange (ICE) acquires NYSE Euronext for USD 11 billion</li>
+<li><strong>2014 (June 20)</strong>: Euronext spun off from ICE via IPO; becomes independent publicly listed company on Euronext Amsterdam and Paris</li>
+<li><strong>2018 (January)</strong>: MiFID II/MiFIR comes into effect; significant impact on derivatives trading, reporting, and position limits</li>
+<li><strong>2018 (June)</strong>: Optiq trading platform goes live for Euronext derivatives markets, replacing legacy LIFFE CONNECT/UTP systems</li>
+<li><strong>2018</strong>: Euronext acquires Irish Stock Exchange (now Euronext Dublin)</li>
+<li><strong>2019</strong>: Euronext acquires Oslo Bors (now Euronext Oslo)</li>
+<li><strong>2021 (April)</strong>: Euronext completes acquisition of Borsa Italiana Group (including IDEM, MTS, CC&amp;G) from LSEG for EUR 4.4 billion</li>
+<li><strong>2022 (June)</strong>: Core Data Centre migration from Basildon (UK) to Bergamo (Italy) completed</li>
+<li><strong>2023 (November)</strong>: Euronext Clearing expands to cash equity markets (migration from LCH SA)</li>
+<li><strong>2024 (April)</strong>: Borsa Italiana derivatives (IDEM) migrated to Optiq trading platform</li>
+<li><strong>2024 (July)</strong>: Euronext Clearing expands to commodity derivatives</li>
+<li><strong>2024 (September 9)</strong>: Euronext Clearing expands to all Euronext financial derivatives – migration from LCH SA completed</li>
+<li><strong>2025 (February)</strong>: Euronext announces launch of fixed income derivatives (mini cash-settled government bond futures)</li>
+<li><strong>2025 (May)</strong>: Launch of mini single stock options on French and Dutch underlyings</li>
+<li><strong>2025 (September)</strong>: First phase of fixed income derivatives goes live on Euronext Derivatives Milan (BTP, OAT, Bund, Bono futures)</li>
+<li><strong>2026 (March)</strong>: Launch of mini ETF options</li>
+</ul>
+<p>[Source: Euronext, “Our Journey”, https://www.euronext.com/en/about/our-journey] [Source: Wikipedia, “Euronext”, https://en.wikipedia.org/wiki/Euronext] [Source: Euronext press releases, various dates, https://www.euronext.com/en/about/media/euronext-press-releases]</p>
+<hr>
+</section>
+</section>
+<section id="market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="market-structure">2. Market Structure</h2>
+<section id="market-segments" class="level3">
+<h3 class="anchored" data-anchor-id="market-segments">2.1 Market Segments</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 41%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Segment</th>
+<th>Key Products</th>
+<th>Markets</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Equity Index Derivatives</strong></td>
+<td>CAC 40, AEX, BEL 20, PSI, OBX, ISEQ 20, FTSE MIB futures and options; mini and micro variants; weekly and daily options; ESG index futures (CAC 40 ESG)</td>
+<td>Paris, Amsterdam, Brussels, Lisbon, Oslo, Dublin, Milan</td>
+</tr>
+<tr class="even">
+<td><strong>Single Stock Derivatives</strong></td>
+<td>Options and futures on individual equities listed across Euronext markets; French, Dutch, Belgian, Portuguese, Italian, Norwegian, Irish, German underlyings</td>
+<td>All markets</td>
+</tr>
+<tr class="odd">
+<td><strong>Dividend Derivatives</strong></td>
+<td>Dividend index futures (CAC 40, AEX, FTSE MIB); single stock dividend futures</td>
+<td>Paris, Amsterdam, Milan</td>
+</tr>
+<tr class="even">
+<td><strong>Commodity Derivatives</strong></td>
+<td>Milling Wheat No.&nbsp;2 (EBM), Rapeseed (ECO), Corn (EMA) futures and options – physically delivered</td>
+<td>Paris (MATIF)</td>
+</tr>
+<tr class="odd">
+<td><strong>Fixed Income Derivatives</strong></td>
+<td>Mini cash-settled futures on BTP (Italy 10Y/30Y), OAT (France), Bund (Germany), Bono (Spain) – launched September 2025</td>
+<td>Milan, Paris</td>
+</tr>
+<tr class="even">
+<td><strong>ETF/ETC Derivatives</strong></td>
+<td>Options on ETFs; mini ETF options (launched March 2026)</td>
+<td>Amsterdam, Paris, Milan</td>
+</tr>
+<tr class="odd">
+<td><strong>Total Return Futures</strong></td>
+<td>TRF on FTSE MIB, CAC 40, AEX – replicate economics of OTC Total Return Swaps</td>
+<td>Paris, Milan</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Euronext, “Financial Derivatives trading”, https://www.euronext.com/en/for-investors/financial-derivatives] [Source: Euronext Live, “Equity derivatives”, https://live.euronext.com/en/products/derivatives]</p>
+</section>
+<section id="trading-sessions" class="level3">
+<h3 class="anchored" data-anchor-id="trading-sessions">2.2 Trading Sessions</h3>
+<p>Euronext derivatives operate on Central European Time (CET/CEST). Trading hours vary by product group:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 29%">
+<col style="width: 21%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Session / Product</th>
+<th>Local Time (CET)</th>
+<th>UTC (Winter)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Equity Index Futures (CAC 40, AEX, etc.)</strong></td>
+<td>08:00 - 22:00</td>
+<td>07:00 - 21:00</td>
+<td>Extended hours including US session overlap</td>
+</tr>
+<tr class="even">
+<td><strong>FTSE MIB Futures</strong></td>
+<td>08:00 - 22:00</td>
+<td>07:00 - 21:00</td>
+<td>Aligned with other index futures post-Optiq migration</td>
+</tr>
+<tr class="odd">
+<td><strong>Equity Options (Single Stock)</strong></td>
+<td>09:00 - 17:30</td>
+<td>08:00 - 16:30</td>
+<td>Standard European session</td>
+</tr>
+<tr class="even">
+<td><strong>Equity Index Options</strong></td>
+<td>09:00 - 17:30</td>
+<td>08:00 - 16:30</td>
+<td>Some products trade until 18:30 CET [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>Commodity Futures (Wheat, Rapeseed)</strong></td>
+<td>10:45 - 18:30</td>
+<td>09:45 - 17:30</td>
+<td>MATIF commodity session</td>
+</tr>
+<tr class="even">
+<td><strong>Daily/Weekly Options</strong></td>
+<td>09:00 - 17:30</td>
+<td>08:00 - 16:30</td>
+<td>Intraday expiration products</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notes:</strong> - Index futures settlement prices are typically calculated using an averaging method near market close (e.g., CAC 40: arithmetic mean of all index values between 15:40 and 16:00 CET) - Trading halts on the underlying equity market trigger corresponding halts in related derivatives - Holiday schedules vary by market; Euronext publishes annual holiday calendars per market</p>
+<p>[Source: Euronext, “Trading hours &amp; holidays”, https://www.euronext.com/en/trading/trading-hours-holidays] [Source: Euronext Live, “Derivatives trading hours”, https://live.euronext.com/en/media/295]</p>
+</section>
+<section id="tick-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="tick-sizes">2.3 Tick Sizes</h3>
+<p>Representative tick sizes for major products:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Tick Size</th>
+<th>Tick Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CAC 40 Futures (FCE)</td>
+<td>0.5 index points</td>
+<td>EUR 5</td>
+</tr>
+<tr class="even">
+<td>AEX Futures (FTI)</td>
+<td>0.05 index points</td>
+<td>EUR 10</td>
+</tr>
+<tr class="odd">
+<td>FTSE MIB Futures (FIB)</td>
+<td>5 index points</td>
+<td>EUR 25</td>
+</tr>
+<tr class="even">
+<td>FTSE MIB Mini Futures (MIN)</td>
+<td>5 index points</td>
+<td>EUR 5</td>
+</tr>
+<tr class="odd">
+<td>BEL 20 Futures</td>
+<td>1 index point</td>
+<td>[unverified]</td>
+</tr>
+<tr class="even">
+<td>CAC 40 Options (PXA)</td>
+<td>0.1 index points</td>
+<td>EUR 1</td>
+</tr>
+<tr class="odd">
+<td>AEX Options</td>
+<td>0.01 index points</td>
+<td>EUR 1</td>
+</tr>
+<tr class="even">
+<td>Single Stock Options</td>
+<td>Varies by price range</td>
+<td>Varies</td>
+</tr>
+<tr class="odd">
+<td>Milling Wheat Futures (EBM)</td>
+<td>EUR 0.25/tonne</td>
+<td>EUR 12.50</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Euronext Live, various contract specification pages, https://live.euronext.com/en/resources/contracts-specifications]</p>
+</section>
+<section id="lot-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="lot-sizes">2.4 Lot Sizes</h3>
+<ul>
+<li><strong>Standard lot size</strong>: 1 contract for all exchange-traded derivatives</li>
+<li><strong>Block trade minimum sizes</strong>: Vary by product and are defined in the Euronext Trading Procedures</li>
+<li><strong>Commodity contracts</strong>: Milling Wheat = 50 tonnes per contract; Rapeseed = 50 tonnes per contract</li>
+</ul>
+</section>
+<section id="market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="market-maker-liquidity-provider-programs">2.5 Market Maker / Liquidity Provider Programs</h3>
+<p>Euronext operates liquidity provision programs tailored per market and product class:</p>
+<ul>
+<li><strong>Primary Market Makers (PMM)</strong>: Continuous two-sided quoting obligations across assigned products; eligible for fee rebates and stipends</li>
+<li><strong>Competitive Market Makers (CMM)</strong>: Supplementary liquidity providers with reduced obligations</li>
+<li><strong>MiFID II Market Maker Schemes</strong>: Members meeting quoting obligations during Stressed Market Conditions (SMC) receive incentives of EUR 50/month per instrument (80% time threshold), capped at EUR 550/month</li>
+<li><strong>Commodity Options LP</strong>: 100% trading fee rebate; top performer receives EUR 5,000 monthly stipend</li>
+<li><strong>Power Futures LP</strong>: Trading fee rebate up to 100% and/or monthly stipend up to EUR 10,000</li>
+<li><strong>Mass Quote functionality</strong>: Allows market makers to submit batches of two-sided orders across multiple series in a single transaction</li>
+<li><strong>Pivot method</strong>: Flexibility to simultaneously adjust volume and spread within 50% limit for continuous quoting and RFQ obligations</li>
+</ul>
+<p>[Source: Euronext, “Liquidity provision”, https://www.euronext.com/en/trading/membership/liquidity-provision] [Source: Euronext, “Market Making Scheme for Derivatives Markets”, https://connect2.euronext.com/sites/default/files/documentation/membership/Euronext%20Market%20Making%20Scheme%20for%20Derivatives%20Markets%20-%20Nov19%20(1).pdf]</p>
+<hr>
+</section>
+</section>
+<section id="trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="trading-mechanism">3. Trading Mechanism</h2>
+<section id="auction-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="auction-mechanisms">3.1 Auction Mechanisms</h3>
+<p>Euronext derivatives markets employ the following auction types within the Optiq platform:</p>
+<ul>
+<li><strong>Opening Auction</strong>: Orders collected during a call phase; indicative prices displayed. Uncrossing occurs at the price maximizing executable volume. Applies to all derivatives products at market open</li>
+<li><strong>Closing Auction</strong>: Determines official closing/settlement prices; similar call-and-uncross mechanics</li>
+<li><strong>Volatility Interruption (Circuit Breaker Auction)</strong>: Triggered when potential trade price breaches dynamic or static price collars. Trading enters a reservation period (auction call phase) allowing orderly price discovery before resumption</li>
+<li><strong>Intraday Auctions</strong>: Scheduled auctions for specific products to provide additional price discovery points [unverified for derivatives – primarily used in cash equities]</li>
+</ul>
+</section>
+<section id="continuous-trading" class="level3">
+<h3 class="anchored" data-anchor-id="continuous-trading">3.2 Continuous Trading</h3>
+<ul>
+<li><strong>Central Limit Order Book (CLOB)</strong>: Fully electronic order-driven market for all derivatives products</li>
+<li><strong>Continuous matching</strong>: Orders matched throughout the trading session at the best available price</li>
+<li><strong>Market makers</strong>: Supplement order book liquidity via continuous quotes; market is order-driven, not quote-driven</li>
+<li><strong>Request for Cross (RFC)</strong>: Facility allowing members to cross client orders on-exchange with pre-arranged counterparties, subject to price improvement rules and minimum exposure to the order book</li>
+</ul>
+</section>
+<section id="price-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="price-discovery">3.3 Price Discovery</h3>
+<ul>
+<li>Primary price discovery through opening auction and continuous order book</li>
+<li><strong>Auction uncrossing</strong>: Maximum executable volume, then minimum surplus, then reference price as tiebreaker</li>
+<li><strong>Settlement prices</strong>: For index futures, calculated using averaging methodology near close (e.g., CAC 40: arithmetic mean of all index values between 15:40 and 16:00 CET on expiry day, rounded to two decimal places)</li>
+<li><strong>Indicative prices</strong>: Displayed during auction call phases</li>
+</ul>
+</section>
+<section id="order-priority-rules" class="level3">
+<h3 class="anchored" data-anchor-id="order-priority-rules">3.4 Order Priority Rules</h3>
+<ul>
+<li><strong>Price-time priority</strong>: Standard priority for all Euronext derivatives products – best price first, then earliest timestamp at the same price</li>
+<li><strong>Market orders</strong> have priority over limit orders at any price level</li>
+<li><strong>Visible over hidden</strong>: At the same price, visible quantities take priority over iceberg reserve quantities</li>
+<li><strong>Pro-rata allocation</strong>: Not standard on Euronext derivatives; price-time priority is the default matching algorithm [unverified – specific products may have alternative allocation]</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="order-types" class="level2">
+<h2 class="anchored" data-anchor-id="order-types">4. Order Types</h2>
+<section id="standard-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="standard-order-types">4.1 Standard Order Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Order Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Market Order</strong></td>
+<td>Executed immediately at the best available price; no price limit specified</td>
+</tr>
+<tr class="even">
+<td><strong>Limit Order</strong></td>
+<td>Specifies maximum buy / minimum sell price; unfilled portion rests in the order book</td>
+</tr>
+<tr class="odd">
+<td><strong>Stop Market Order</strong></td>
+<td>Triggered when a specified price is reached; released as a market order</td>
+</tr>
+<tr class="even">
+<td><strong>Stop Limit Order</strong></td>
+<td>Triggered when a specified price is reached; released as a limit order at the specified limit price</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-order-types">4.2 Advanced Order Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Order Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Iceberg Order</strong></td>
+<td>Only a portion of total order volume is visible in the order book</td>
+</tr>
+<tr class="even">
+<td><strong>Market-to-Limit (MTL)</strong></td>
+<td>Market order that, after partial execution, converts remaining quantity to a limit order at the last executed price</td>
+</tr>
+<tr class="odd">
+<td><strong>Spread / Strategy Orders</strong></td>
+<td>Calendar spreads, straddles, strangles, and other multi-leg strategies submitted as a single order</td>
+</tr>
+<tr class="even">
+<td><strong>Opening-Auction-Only</strong></td>
+<td>Active only during the opening auction; cancelled if unfilled</td>
+</tr>
+<tr class="odd">
+<td><strong>Closing-Auction-Only</strong></td>
+<td>Active only during the closing auction</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="time-in-force-tif-options" class="level3">
+<h3 class="anchored" data-anchor-id="time-in-force-tif-options">4.3 Time-in-Force (TIF) Options</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TIF</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Day</strong></td>
+<td>Valid for the current trading day only</td>
+</tr>
+<tr class="even">
+<td><strong>GTC (Good-Till-Cancelled)</strong></td>
+<td>Remains active until explicitly cancelled</td>
+</tr>
+<tr class="odd">
+<td><strong>GTDate (Good-Till-Date)</strong></td>
+<td>Remains active until a specified date</td>
+</tr>
+<tr class="even">
+<td><strong>IOC (Immediate-Or-Cancel)</strong></td>
+<td>Executes immediately as much as possible; unfilled quantity is cancelled</td>
+</tr>
+<tr class="odd">
+<td><strong>FOK (Fill-Or-Kill)</strong></td>
+<td>Entire order must be filled immediately or the entire order is cancelled</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="order-modification-cancellation" class="level3">
+<h3 class="anchored" data-anchor-id="order-modification-cancellation">4.4 Order Modification &amp; Cancellation</h3>
+<ul>
+<li>Orders can be modified (price, quantity) or cancelled during appropriate trading phases</li>
+<li>Price changes or quantity increases result in new time priority</li>
+<li>Quantity decreases preserve existing time priority</li>
+<li>Mass cancellation available for all orders in a product or across all products</li>
+<li>Self-Trade Prevention (STP) functionality available to prevent unintended self-trading</li>
+</ul>
+<p>[Source: Trading Technologies, “Euronext Supported Order Types”, https://library.tradingtechnologies.com/user-setup/enx-supported-order-types.html] [Source: Euronext, “Self-Trade Prevention Functional Overview”, https://connect2.euronext.com/sites/default/files/it-documentation/Self-Trade%20Prevention%20Functional%20Overview%20-%20v2.0.pdf]</p>
+<hr>
+</section>
+</section>
+<section id="trading-system-technology-optiq" class="level2">
+<h2 class="anchored" data-anchor-id="trading-system-technology-optiq">5. Trading System Technology – Optiq</h2>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">5.1 Overview</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>System Name</td>
+<td>Optiq</td>
+</tr>
+<tr class="even">
+<td>Developer</td>
+<td>Euronext (in-house development)</td>
+</tr>
+<tr class="odd">
+<td>Architecture</td>
+<td>Modular, partition-based architecture with Order Entry Gateway (OEG) and Matching Engine (ME) components</td>
+</tr>
+<tr class="even">
+<td>Persistence Layer</td>
+<td>Confluent Platform with Apache Kafka</td>
+</tr>
+<tr class="odd">
+<td>Protocols</td>
+<td>SBE (Simple Binary Encoding) and FIX 5.0 for order entry; SBE over UDP/IP for market data</td>
+</tr>
+<tr class="even">
+<td>Latency</td>
+<td>~15 microseconds average order roundtrip; ~15 microseconds for market data dissemination</td>
+</tr>
+<tr class="odd">
+<td>Throughput</td>
+<td>1 million+ messages per second ingestion capacity</td>
+</tr>
+<tr class="even">
+<td>Jitter</td>
+<td>Minimal standard deviation – architecture designed for predictable, stable latencies</td>
+</tr>
+<tr class="odd">
+<td>Asset Coverage</td>
+<td>Unified platform for cash equities and all derivatives (financial, commodity, fixed income)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="architecture" class="level3">
+<h3 class="anchored" data-anchor-id="architecture">5.2 Architecture</h3>
+<ul>
+<li><strong>Modular service structure</strong>: Flexible, modular design allowing independent scaling of components</li>
+<li><strong>Harmonised messaging</strong>: Unified cash and derivatives messaging model on a single platform</li>
+<li><strong>Order Entry Gateway (OEG)</strong>: Entry point for order submission; supports SBE and FIX 5.0 protocols</li>
+<li><strong>Matching Engine (ME)</strong>: Core matching component processing orders with price-time priority</li>
+<li><strong>Market Data Gateway (MDG)</strong>: Disseminates real-time market data via SBE over UDP multicast</li>
+<li><strong>Kafka-based persistence</strong>: Confluent Platform/Apache Kafka underpins the persistence layer, providing reliable message streaming and replay capabilities</li>
+</ul>
+</section>
+<section id="platform-history" class="level3">
+<h3 class="anchored" data-anchor-id="platform-history">5.3 Platform History</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2016</td>
+<td>Optiq development announced; first newsletter published</td>
+</tr>
+<tr class="even">
+<td>2017</td>
+<td>Optiq goes live for Euronext cash markets (phased rollout)</td>
+</tr>
+<tr class="odd">
+<td>2018 (June 25)</td>
+<td>Optiq goes live for Euronext derivatives markets (Amsterdam, Brussels, Lisbon, Paris) – replacing LIFFE CONNECT/UTP</td>
+</tr>
+<tr class="even">
+<td>2023</td>
+<td>Borsa Italiana cash equities migrated to Optiq</td>
+</tr>
+<tr class="odd">
+<td>2024 (April 3)</td>
+<td>Borsa Italiana derivatives (IDEM) – third and final phase – migrated to Optiq</td>
+</tr>
+<tr class="even">
+<td>Ongoing</td>
+<td>Regular version updates with new features, capacity enhancements, and MiFID II compliance updates</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="performance-highlights" class="level3">
+<h3 class="anchored" data-anchor-id="performance-highlights">5.4 Performance Highlights</h3>
+<p>Since going live for derivatives, Optiq has processed more than 14 billion messages and 18.8 million trades. The platform achieved a tenfold reduction in latency compared to the legacy LIFFE CONNECT system and unlimited overall capacity scaling.</p>
+</section>
+<section id="disaster-recovery-business-continuity" class="level3">
+<h3 class="anchored" data-anchor-id="disaster-recovery-business-continuity">5.5 Disaster Recovery / Business Continuity</h3>
+<ul>
+<li>Primary data center: Aruba Global Cloud Data Centre IT3, Bergamo, Italy (migrated June 2022 from Basildon, UK)</li>
+<li>Secondary/DR facility: Details not publicly disclosed [unverified]</li>
+<li>Euronext publishes business continuity procedures and conducts regular DR testing with members</li>
+<li>The Bergamo data center is entirely powered by renewable energy (solar photovoltaic and hydroelectric)</li>
+</ul>
+<p>[Source: Euronext, “Euronext introduces Optiq”, https://www.euronext.com/en/about/media/euronext-press-releases/euronext-introduces-optiq-new-technology-platform-powering-cash] [Source: Confluent, “Euronext builds high-speed trading platform”, https://www.confluent.io/customers/euronext/] [Source: Euronext, “Successful roll-out of Euronext Derivatives markets to Optiq”, https://www.euronext.com/en/about/media/euronext-press-releases/successful-roll-out-euronext-derivatives-markets-optiq-trading] [Source: Euronext, “Data Centre migration completed”, https://www.euronext.com/en/news/data-centre-migration]</p>
+<hr>
+</section>
+</section>
+<section id="market-data" class="level2">
+<h2 class="anchored" data-anchor-id="market-data">6. Market Data</h2>
+<section id="feed-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="feed-protocols">6.1 Feed Protocols</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 34%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feed</th>
+<th>Protocol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Optiq MDG (Market Data Gateway)</strong></td>
+<td>SBE over UDP/IP multicast</td>
+<td>Primary real-time market data feed; event-based bid/ask/trade/statistical data for cash and derivatives</td>
+</tr>
+<tr class="even">
+<td><strong>Optiq MDG Lite</strong></td>
+<td>SBE over UDP/IP</td>
+<td>Lighter-weight market data feed with reduced field set</td>
+</tr>
+<tr class="odd">
+<td><strong>FIX 5.0 Drop Copy</strong></td>
+<td>FIX 5.0</td>
+<td>Trade and order execution reports for participants</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-levels" class="level3">
+<h3 class="anchored" data-anchor-id="data-levels">6.2 Data Levels</h3>
+<ul>
+<li><strong>Level 1 (Top-of-Book)</strong>: Best bid/offer, last trade price, volume, statistics</li>
+<li><strong>Level 2 (Full Depth)</strong>: Full order book depth with all price levels and aggregate quantities</li>
+<li><strong>Trade Data</strong>: Individual trade reports with timestamps, prices, volumes</li>
+<li><strong>Settlement Prices</strong>: Daily and final settlement prices published per contract</li>
+<li><strong>Volume &amp; Open Interest</strong>: Daily volume and open interest data per product, available by account type</li>
+</ul>
+</section>
+<section id="data-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="data-distribution">6.3 Data Distribution</h3>
+<ul>
+<li><strong>Direct connectivity</strong>: Via co-location in Bergamo data center or Point of Presence (PoP) network connections</li>
+<li><strong>Data vendors</strong>: Distributed through major market data vendors (Bloomberg, Refinitiv/LSEG, ICE Data Services, etc.)</li>
+<li><strong>CME Group</strong>: Euronext derivatives data also distributed via CME Group data services</li>
+<li><strong>Euronext Data Services</strong>: Historical and real-time data products available through Euronext’s own data business</li>
+</ul>
+</section>
+<section id="historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="historical-data">6.4 Historical Data</h3>
+<ul>
+<li>Tick-by-tick historical data available for purchase</li>
+<li>Volume and open interest historical reports published monthly (“NextMonth” derivatives statistics reports)</li>
+<li>Settlement price archives available via Euronext Live website</li>
+</ul>
+<p>[Source: Euronext, “Optiq MDG Messages Interface Specification”, https://connect.euronext.com/sites/default/files/it-documentation/optiq-mdg-messages-interface-specification-euronext-cash-and-derivatives-markets-external-v636320.pdf] [Source: Euronext, “Derivatives Market Data”, https://www.euronext.com/en/data/market-data/market-data-products/derivatives-market-data] [Source: OnixS, “Euronext Optiq MDG Feed Handler”, https://www.onixs.biz/euronext-optiq-market-data-gateway-feed-handler.html]</p>
+<hr>
+</section>
+</section>
+<section id="connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="connectivity-access">7. Connectivity &amp; Access</h2>
+<section id="membership" class="level3">
+<h3 class="anchored" data-anchor-id="membership">7.1 Membership</h3>
+<ul>
+<li><strong>Derivatives Market Membership</strong>: Entities must apply for membership on each specific Euronext derivatives market (Amsterdam, Brussels, Lisbon, Milan, Oslo, Paris)</li>
+<li><strong>Cross-market access</strong>: A single membership can provide access to derivatives products across multiple Euronext markets</li>
+<li><strong>Membership categories</strong>: Trading Members, Clearing Members (through Euronext Clearing)</li>
+<li><strong>Regulatory framework</strong>: Members must be authorized investment firms under MiFID II in their home jurisdiction</li>
+</ul>
+</section>
+<section id="connection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="connection-methods">7.2 Connection Methods</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Co-location</strong></td>
+<td>Direct co-location in Euronext’s primary data center in Bergamo, Italy; lowest latency access</td>
+</tr>
+<tr class="even">
+<td><strong>Proximity Hosting</strong></td>
+<td>Rack space in the Bergamo data center for customer trading infrastructure</td>
+</tr>
+<tr class="odd">
+<td><strong>Points of Presence (PoP)</strong></td>
+<td>Network access points in major financial centers for remote connectivity</td>
+</tr>
+<tr class="even">
+<td><strong>Data Centre Carriers</strong></td>
+<td>Third-party network providers offering direct high-speed connections to Bergamo</td>
+</tr>
+<tr class="odd">
+<td><strong>Microwave connectivity</strong></td>
+<td>Available via satellite dishes on the Bergamo data center roof for ultra-low-latency connections</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="api-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="api-protocols">7.3 API Protocols</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Protocol</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SBE (Simple Binary Encoding)</strong></td>
+<td>Primary high-performance protocol for order entry and market data; fixed-position, fixed-length fields for ultra-low-latency processing</td>
+</tr>
+<tr class="even">
+<td><strong>FIX 5.0</strong></td>
+<td>Standard FIX protocol for order entry; also used for RiskGuard pre-trade risk management API</td>
+</tr>
+<tr class="odd">
+<td><strong>Optiq MDG</strong></td>
+<td>Market data dissemination protocol (SBE-based over UDP multicast)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="certification-testing" class="level3">
+<h3 class="anchored" data-anchor-id="certification-testing">7.4 Certification &amp; Testing</h3>
+<ul>
+<li>Members must pass conformance testing before receiving production access</li>
+<li>Euronext provides Customer Development Environment (CDE) / External User Acceptance Testing (EUA) environments</li>
+<li>Certification required separately for SBE and FIX connectivity</li>
+<li>Regular migration/upgrade testing windows provided before platform releases</li>
+</ul>
+<p>[Source: Euronext, “Infrastructure and Connectivity”, https://www.euronext.com/en/technology/infrastructure-and-connectivity] [Source: Euronext, “Euronext Data Centre”, https://www.euronext.com/en/technology/euronext-data-centre] [Source: Euronext, “Data Centre Carriers”, https://www.euronext.com/en/products-services/data-centre-carriers]</p>
+<hr>
+</section>
+</section>
+<section id="risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="risk-controls-circuit-breakers">8. Risk Controls &amp; Circuit Breakers</h2>
+<section id="trading-safeguards-philosophy" class="level3">
+<h3 class="anchored" data-anchor-id="trading-safeguards-philosophy">8.1 Trading Safeguards Philosophy</h3>
+<p>Euronext’s approach is to only halt trading under extreme circumstances, relying on a comprehensive set of trading safeguards rather than circuit breakers alone. The philosophy is to detect unusual events and prevent disorderly markets while maximizing continuous trading.</p>
+</section>
+<section id="price-collar-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="price-collar-mechanisms">8.2 Price Collar Mechanisms</h3>
+<ul>
+<li><strong>Dynamic Collar</strong>: Based on the dynamic reference price (last traded price); defines a permitted price range around the most recent trade. The dynamic reference price updates after each trade</li>
+<li><strong>Static Collar</strong>: Based on the static reference price (typically the previous day’s closing price or opening auction price); defines a wider permitted price range. The static reference remains fixed unless manually changed by Euronext Market Operations</li>
+<li><strong>Reservation Period</strong>: When the potential trade price breaches a collar, trading enters a reservation period (volatility interruption) – effectively an intraday auction. This gives market participants time to review orders before trading resumes</li>
+<li><strong>Trade Price Validation (TPV)</strong>: Additional safeguard layer for derivatives markets; validates trade prices before execution to prevent aberrant trades</li>
+</ul>
+</section>
+<section id="pre-trade-risk-controls-euronext-riskguard" class="level3">
+<h3 class="anchored" data-anchor-id="pre-trade-risk-controls-euronext-riskguard">8.3 Pre-Trade Risk Controls – Euronext RiskGuard</h3>
+<p>Euronext RiskGuard is a pre-trade risk management service for derivatives (and cash) markets, available via FIX 5.0 API and web-based GUI:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Control</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Order Size Limit</strong></td>
+<td>Maximum number of contracts per order; applies to new orders, revisions, and quotes; orders exceeding the limit are rejected</td>
+</tr>
+<tr class="even">
+<td><strong>Max Order Quantity</strong></td>
+<td>Per-contract limits for buy and/or sell orders, configurable per member or trader group</td>
+</tr>
+<tr class="odd">
+<td><strong>Daily Maximum Exposure Position</strong></td>
+<td>Position monitoring with email alerts when limits are approached or breached</td>
+</tr>
+<tr class="even">
+<td><strong>Kill Switch</strong></td>
+<td>Clearing Members can immediately halt all trading activity for a trading firm; all open orders and quotes are pulled; new orders rejected until explicitly reinstated by the Clearing Member</td>
+</tr>
+<tr class="odd">
+<td><strong>Self-Trade Prevention (STP)</strong></td>
+<td>Prevents unintended matching of orders from the same member/trader</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Scope:</strong> RiskGuard controls apply to financial and commodity derivatives markets. Delta-neutral trades, RFCs, and wholesale trades are excluded from certain controls.</p>
+<p>[Source: Euronext, “Trading safeguards on the Euronext markets”, https://www.euronext.com/en/trading/market-quality/trading-safeguards-euronext-markets] [Source: Euronext, “Euronext RiskGuard Service General Overview”, February 2019, https://www.euronext.com/sites/default/files/2019-04/euronext_riskguard_service_general_overview_feb_2019_0.pdf] [Source: Euronext, “Euronext RiskGuard”, https://www.euronext.com/en/trading/trading-services/riskguard]</p>
+<hr>
+</section>
+</section>
+<section id="regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="regulatory-framework">9. Regulatory Framework</h2>
+<section id="college-of-euronext-regulators" class="level3">
+<h3 class="anchored" data-anchor-id="college-of-euronext-regulators">9.1 College of Euronext Regulators</h3>
+<p>Euronext’s unique multi-jurisdictional structure is overseen by a <strong>College of Euronext Regulators</strong> established via a Memorandum of Understanding (MoU). The college coordinates supervision across all Euronext markets:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 40%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Regulator</th>
+<th>Jurisdiction</th>
+<th>Market</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>AMF</strong> (Autorite des Marches Financiers)</td>
+<td>France</td>
+<td>Euronext Paris, MATIF</td>
+</tr>
+<tr class="even">
+<td><strong>AFM</strong> (Autoriteit Financiele Markten)</td>
+<td>Netherlands</td>
+<td>Euronext Amsterdam</td>
+</tr>
+<tr class="odd">
+<td><strong>FSMA</strong> (Financial Services and Markets Authority)</td>
+<td>Belgium</td>
+<td>Euronext Brussels</td>
+</tr>
+<tr class="even">
+<td><strong>CMVM</strong> (Comissao do Mercado de Valores Mobiliarios)</td>
+<td>Portugal</td>
+<td>Euronext Lisbon</td>
+</tr>
+<tr class="odd">
+<td><strong>CONSOB</strong> (Commissione Nazionale per le Societa e la Borsa)</td>
+<td>Italy</td>
+<td>Euronext Milan / Borsa Italiana</td>
+</tr>
+<tr class="even">
+<td><strong>Finanstilsynet</strong></td>
+<td>Norway</td>
+<td>Euronext Oslo / Oslo Bors</td>
+</tr>
+<tr class="odd">
+<td><strong>CBI</strong> (Central Bank of Ireland)</td>
+<td>Ireland</td>
+<td>Euronext Dublin</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-regulations" class="level3">
+<h3 class="anchored" data-anchor-id="key-regulations">9.2 Key Regulations</h3>
+<ul>
+<li><strong>MiFID II / MiFIR</strong>: Euronext derivatives markets are Regulated Markets under MiFID II. Key implications include:
+<ul>
+<li>Pre- and post-trade transparency requirements for derivatives</li>
+<li>Position limits on commodity derivatives (set by national competent authorities with ESMA coordination)</li>
+<li>Transaction reporting obligations</li>
+<li>Algorithmic trading requirements (including market-making obligations during stressed conditions)</li>
+<li>Best execution obligations</li>
+</ul></li>
+<li><strong>EMIR (European Market Infrastructure Regulation)</strong>: Governs CCP supervision (Euronext Clearing supervised by CONSOB with ESMA coordination); mandates central clearing for certain OTC derivatives classes</li>
+<li><strong>MAR (Market Abuse Regulation)</strong>: Prohibits insider trading and market manipulation; Euronext operates market surveillance systems</li>
+<li><strong>Benchmark Regulation (BMR)</strong>: Applies to indices used as derivatives underlyings</li>
+</ul>
+</section>
+<section id="surveillance-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="surveillance-reporting">9.3 Surveillance &amp; Reporting</h3>
+<ul>
+<li>Euronext operates real-time market surveillance across all markets</li>
+<li>Transaction reporting to national competent authorities via Euronext ARM (Approved Reporting Mechanism) service</li>
+<li>Trade reporting for MiFID II post-trade transparency via Euronext APA (Approved Publication Arrangement)</li>
+<li>Suspicious transaction and order reports (STORs) submitted to regulators</li>
+</ul>
+</section>
+<section id="cross-border-coordination" class="level3">
+<h3 class="anchored" data-anchor-id="cross-border-coordination">9.4 Cross-Border Coordination</h3>
+<ul>
+<li>The College of Regulators ensures consistent rule application across Euronext’s seven markets</li>
+<li>Euronext Rule Book (Harmonised Rules) applies uniformly; supplemented by market-specific rules for each national market</li>
+<li>Single operational framework across markets facilitates cross-border trading and clearing</li>
+</ul>
+<p>[Source: Euronext, “Regulation”, https://www.euronext.com/en/regulation] [Source: Euronext, “Regulatory bodies”, https://www.euronext.com/en/trade/join-euronext/regulatory-framework]</p>
+<hr>
+</section>
+</section>
+<section id="fees-revenue-model" class="level2">
+<h2 class="anchored" data-anchor-id="fees-revenue-model">10. Fees &amp; Revenue Model</h2>
+<section id="trading-fees" class="level3">
+<h3 class="anchored" data-anchor-id="trading-fees">10.1 Trading Fees</h3>
+<p>Euronext publishes a detailed “Trading Fee Guide for Derivatives Market Members” (updated regularly; most recent effective March 1, 2026). Key fee structure:</p>
+<ul>
+<li><strong>Per-contract trading fees</strong>: Charged per lot executed; rates vary by product group (index futures/options, single stock options, commodity futures/options)</li>
+<li><strong>Market maker rebates</strong>: Reduced fees or rebates for members fulfilling market-making obligations</li>
+<li><strong>Wholesale trade fees</strong>: Separate fee schedules for TCS (Trade Confirmation System) and RFC (Request for Cross) trades</li>
+<li><strong>Membership fees</strong>: Annual membership fee; pro-rated fee of EUR 10,125 for members joining during the year (2026 rate)</li>
+</ul>
+<p>[Source: Euronext, “Trading fees and charges”, https://www.euronext.com/en/trading/fees-charges] [Source: Euronext, “Derivatives Markets Trading Fee Guide effective 01 March 2026”, https://www.euronext.com/sites/default/files/2026-02/euronext_derivatives_markets_trading_fee_guide_effective_01mar2026.pdf]</p>
+</section>
+<section id="clearing-fees" class="level3">
+<h3 class="anchored" data-anchor-id="clearing-fees">10.2 Clearing Fees</h3>
+<ul>
+<li>Euronext Clearing charges per-contract clearing fees (separate from trading fees)</li>
+<li>Clearing revenue was EUR 144.3 million in 2024 (up 19.0% YoY), reflecting the expansion of Euronext Clearing to derivatives</li>
+<li>Fee structure includes initial margin interest, default fund contributions, and clearing service fees</li>
+</ul>
+</section>
+<section id="market-data-fees" class="level3">
+<h3 class="anchored" data-anchor-id="market-data-fees">10.3 Market Data Fees</h3>
+<ul>
+<li><strong>Direct Access fees</strong>: Apply per contracting party per information product; waived for Trading Members with Direct Access</li>
+<li><strong>Real-time data</strong>: Tiered pricing based on connection type (co-location, PoP, vendor redistribution)</li>
+<li><strong>Historical data</strong>: Separately priced data products for tick data, volume/OI data, and settlement prices</li>
+<li>Published in the Euronext Information Product Fee Schedule (updated January 2026)</li>
+</ul>
+<p>[Source: Euronext, “Market Data Fees and Policies”, https://www.euronext.com/en/data/real-time-data/pricing-specs-agreements/market-data-pricing-policies]</p>
+</section>
+<section id="co-location-connectivity-fees" class="level3">
+<h3 class="anchored" data-anchor-id="co-location-connectivity-fees">10.4 Co-location &amp; Connectivity Fees</h3>
+<ul>
+<li>Co-location rack space in Bergamo data center (pricing not publicly disclosed in detail)</li>
+<li>Network connectivity fees for cross-connects and PoP access</li>
+<li>Microwave connectivity available (premium pricing) [unverified]</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="recent-developments">11. Recent Developments</h2>
+<section id="euronext-clearing-migration-2023-2024" class="level3">
+<h3 class="anchored" data-anchor-id="euronext-clearing-migration-2023-2024">11.1 Euronext Clearing Migration (2023-2024)</h3>
+<p>The most transformative recent development was the migration of derivatives clearing from LCH SA to Euronext Clearing (formerly CC&amp;G):</p>
+<ul>
+<li><strong>November 2023</strong>: Cash equity clearing migrated to Euronext Clearing</li>
+<li><strong>July 15, 2024</strong>: Commodity derivatives clearing migrated</li>
+<li><strong>September 9, 2024</strong>: All Euronext financial derivatives (including CAC 40, AEX futures, index options, single name options) migrated to Euronext Clearing – completing the full transition from LCH SA</li>
+<li><strong>Key benefit</strong>: ~20% margin efficiencies through VaR-based methodology and unified equity/derivatives default fund enabling cross-margining</li>
+<li><strong>Strategic significance</strong>: Euronext now controls end-to-end trading and clearing infrastructure, internalizing clearing revenue</li>
+</ul>
+<p>[Source: Euronext, “Successful expansion of Euronext Clearing to all Euronext financial derivatives”, September 2024, https://www.euronext.com/en/about/media/euronext-press-releases/successful-expansion-euronext-clearing-all-euronext-financial] [Source: FOW, “Euronext reflects on landmark clearing migration from LCH”, https://www.fow.com/insights/3702151-analysis-euronext-reflects-on-landmark-clearing-migration-from-lch]</p>
+</section>
+<section id="borsa-italiana-derivatives-migration-to-optiq-2024" class="level3">
+<h3 class="anchored" data-anchor-id="borsa-italiana-derivatives-migration-to-optiq-2024">11.2 Borsa Italiana Derivatives Migration to Optiq (2024)</h3>
+<ul>
+<li>On April 3, 2024, Borsa Italiana’s derivatives markets (IDEM) completed migration to Optiq – the third and final phase of the Borsa Italiana platform migration</li>
+<li>Achieved less than 3 years after the acquisition of Borsa Italiana Group</li>
+<li>All Euronext derivatives now trade on a single unified platform (Optiq)</li>
+</ul>
+<p>[Source: Euronext, “Successful completion of the migration of Borsa Italiana to the Optiq trading platform”, https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-borsa-italiana-optiqr-trading]</p>
+</section>
+<section id="new-product-launches" class="level3">
+<h3 class="anchored" data-anchor-id="new-product-launches">11.3 New Product Launches</h3>
+<ul>
+<li><strong>September 2025</strong>: Launch of fixed income derivatives – first-ever mini cash-settled futures on European government bonds (BTP 10Y/30Y, OAT, Bund, Bono) on Euronext Derivatives Milan</li>
+<li><strong>May 2025</strong>: Mini single stock options on French and Dutch underlyings</li>
+<li><strong>September 2025</strong>: First-ever mini cash-settled futures</li>
+<li><strong>March 2026</strong>: Mini ETF options</li>
+<li><strong>Ongoing</strong>: Quarterly product releases adding new single stock options from Germany, Ireland, Portugal, and other markets</li>
+<li><strong>Retail derivatives strategy</strong>: Euronext aims to become the European retail exchange for derivatives, targeting retail investor participation</li>
+</ul>
+<p>[Source: Euronext, “Euronext launches an innovative suite of fixed income derivatives”, February 2025, https://www.euronext.com/en/about/media/euronext-press-releases/euronext-launches-innovative-suite-fixed-income-derivatives] [Source: Markets Media, “Euronext Aims to Become European Retail Exchange for Derivatives”, https://www.marketsmedia.com/euronext-aims-to-become-european-retail-exchange-for-derivatives/]</p>
+</section>
+<section id="strategic-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="strategic-initiatives">11.4 Strategic Initiatives</h3>
+<ul>
+<li><strong>Euronext Clearing expansion</strong>: Post-migration focus on leveraging cross-margining and attracting new clearing members</li>
+<li><strong>Fixed income derivatives growth</strong>: Multi-year initiative to build a European government bond derivatives franchise</li>
+<li><strong>Repo expansion</strong>: First phase of multi-year Repo Expansion Initiative extending Italian repo offering across Europe</li>
+<li><strong>Nasdaq Nordic power futures acquisition</strong>: Reinforcing leadership in European energy markets</li>
+<li><strong>Technology platform licensing</strong>: Optiq offered as a technology solution for other exchanges and venue operators</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="derivatives-specific-sections" class="level2">
+<h2 class="anchored" data-anchor-id="derivatives-specific-sections">Derivatives-Specific Sections</h2>
+<section id="d1.-product-catalog" class="level3">
+<h3 class="anchored" data-anchor-id="d1.-product-catalog">D1. Product Catalog</h3>
+<section id="equity-index-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="equity-index-derivatives">Equity Index Derivatives</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 22%">
+<col style="width: 24%">
+<col style="width: 14%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Index</th>
+<th>Futures Code</th>
+<th>Options Code</th>
+<th>Market</th>
+<th>Contract Size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CAC 40</td>
+<td>FCE</td>
+<td>PXA</td>
+<td>Paris</td>
+<td>EUR 10 per index point</td>
+</tr>
+<tr class="even">
+<td>AEX</td>
+<td>FTI</td>
+<td>AEX</td>
+<td>Amsterdam</td>
+<td>EUR 200 per index point</td>
+</tr>
+<tr class="odd">
+<td>FTSE MIB</td>
+<td>FIB</td>
+<td>MIB (MIBO)</td>
+<td>Milan</td>
+<td>EUR 5 per index point</td>
+</tr>
+<tr class="even">
+<td>FTSE MIB Mini</td>
+<td>MIN</td>
+<td>–</td>
+<td>Milan</td>
+<td>EUR 1 per index point</td>
+</tr>
+<tr class="odd">
+<td>FTSE MIB Micro</td>
+<td>MICR</td>
+<td>–</td>
+<td>Milan</td>
+<td>EUR 0.20 per index point [unverified]</td>
+</tr>
+<tr class="even">
+<td>BEL 20</td>
+<td>BEL</td>
+<td>BXO</td>
+<td>Brussels</td>
+<td>EUR 5 per index point [unverified]</td>
+</tr>
+<tr class="odd">
+<td>PSI 20</td>
+<td>PSI</td>
+<td>–</td>
+<td>Lisbon</td>
+<td>EUR 1 per index point [unverified]</td>
+</tr>
+<tr class="even">
+<td>OBX</td>
+<td>OBX</td>
+<td>–</td>
+<td>Oslo</td>
+<td>NOK 100 per index point [unverified]</td>
+</tr>
+<tr class="odd">
+<td>ISEQ 20</td>
+<td>FES</td>
+<td>–</td>
+<td>Dublin</td>
+<td>EUR 10 per index point [unverified]</td>
+</tr>
+<tr class="even">
+<td>CAC 40 ESG</td>
+<td>–</td>
+<td>–</td>
+<td>Paris</td>
+<td>EUR 10 per index point [unverified]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Products:</strong> - AEX Daily Options (7th), AEX Weekly Options - CAC 40 Weekly Options - Total Return Futures on FTSE MIB, CAC 40, AEX - Dividend Index Futures (CAC 40, AEX, FTSE MIB)</p>
+</section>
+<section id="single-stock-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="single-stock-derivatives">Single Stock Derivatives</h4>
+<ul>
+<li>Options and futures on individual equities across all Euronext markets</li>
+<li>Coverage includes French (CAC 40 components), Dutch (AEX components), Belgian, Italian (FTSE MIB components), Norwegian, Portuguese, Irish, and German underlyings</li>
+<li>Mini single stock options available on selected French and Dutch names (since May 2025)</li>
+</ul>
+</section>
+<section id="commodity-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="commodity-derivatives">Commodity Derivatives</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 12%">
+<col style="width: 16%">
+<col style="width: 30%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Code</th>
+<th>Market</th>
+<th>Contract Size</th>
+<th>Settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Milling Wheat No.&nbsp;2</td>
+<td>EBM</td>
+<td>Paris (MATIF)</td>
+<td>50 tonnes</td>
+<td>Physical delivery</td>
+</tr>
+<tr class="even">
+<td>Rapeseed</td>
+<td>ECO</td>
+<td>Paris (MATIF)</td>
+<td>50 tonnes</td>
+<td>Physical delivery</td>
+</tr>
+<tr class="odd">
+<td>Corn</td>
+<td>EMA</td>
+<td>Paris (MATIF)</td>
+<td>50 tonnes</td>
+<td>Physical delivery</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notes:</strong> Milling Wheat is Euronext’s flagship commodity contract and a European benchmark for wheat pricing. Contract months: September, December, March, May. Expiration typically on the 10th of the contract month.</p>
+</section>
+<section id="fixed-income-derivatives-launched-september-2025" class="level4">
+<h4 class="anchored" data-anchor-id="fixed-income-derivatives-launched-september-2025">Fixed Income Derivatives (launched September 2025)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 19%">
+<col style="width: 28%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Market</th>
+<th>Settlement</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mini BTP Futures (Italy 10Y)</td>
+<td>Milan</td>
+<td>Cash-settled</td>
+<td>First-ever mini cash-settled government bond futures</td>
+</tr>
+<tr class="even">
+<td>Mini BTP Futures (Italy 30Y)</td>
+<td>Milan</td>
+<td>Cash-settled</td>
+<td>Long-dated Italian government bond exposure</td>
+</tr>
+<tr class="odd">
+<td>Mini OAT Futures (France)</td>
+<td>Milan/Paris</td>
+<td>Cash-settled</td>
+<td>French government bond futures</td>
+</tr>
+<tr class="even">
+<td>Mini Bund Futures (Germany)</td>
+<td>Milan/Paris</td>
+<td>Cash-settled</td>
+<td>German government bond futures</td>
+</tr>
+<tr class="odd">
+<td>Mini Bono Futures (Spain)</td>
+<td>Milan/Paris</td>
+<td>Cash-settled</td>
+<td>Spanish government bond futures</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Euronext, “Trading Equity Index Futures”, https://www.euronext.com/en/for-investors/financial-derivatives/equity-index-derivatives] [Source: Euronext, “Milling Wheat derivatives”, https://www.euronext.com/en/for-investors/commodities/milling-wheat]</p>
+</section>
+</section>
+<section id="d2.-key-contract-specifications-top-5-products-by-volume" class="level3">
+<h3 class="anchored" data-anchor-id="d2.-key-contract-specifications-top-5-products-by-volume">D2. Key Contract Specifications (Top 5 Products by Volume)</h3>
+<section id="cac-40-index-futures-fce" class="level4">
+<h4 class="anchored" data-anchor-id="cac-40-index-futures-fce">1. CAC 40 Index Futures (FCE)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exchange</td>
+<td>Euronext Paris</td>
+</tr>
+<tr class="even">
+<td>Contract Code</td>
+<td>FCE</td>
+</tr>
+<tr class="odd">
+<td>Underlying</td>
+<td>CAC 40 Index</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>EUR 10 per index point (e.g., EUR 80,000 at 8,000.0)</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>0.5 index points</td>
+</tr>
+<tr class="even">
+<td>Tick Value</td>
+<td>EUR 5</td>
+</tr>
+<tr class="odd">
+<td>Contract Months</td>
+<td>Monthly: 3 nearest months; Quarterly: March, June, September, December cycle out to 5 years [unverified]</td>
+</tr>
+<tr class="even">
+<td>Trading Hours</td>
+<td>08:00 - 22:00 CET</td>
+</tr>
+<tr class="odd">
+<td>Last Trading Day</td>
+<td>16:00 CET on the third Friday of the delivery month</td>
+</tr>
+<tr class="even">
+<td>Settlement Method</td>
+<td>Cash settlement</td>
+</tr>
+<tr class="odd">
+<td>Final Settlement Price</td>
+<td>Arithmetic mean of all CAC 40 index values calculated and disseminated between 15:40 and 16:00 CET, rounded to two decimal places</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="aex-index-futures-fti" class="level4">
+<h4 class="anchored" data-anchor-id="aex-index-futures-fti">2. AEX Index Futures (FTI)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exchange</td>
+<td>Euronext Amsterdam</td>
+</tr>
+<tr class="even">
+<td>Contract Code</td>
+<td>FTI</td>
+</tr>
+<tr class="odd">
+<td>Underlying</td>
+<td>AEX Index</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>EUR 200 per index point (e.g., EUR 180,000 at 900.00)</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>0.05 index points</td>
+</tr>
+<tr class="even">
+<td>Tick Value</td>
+<td>EUR 10</td>
+</tr>
+<tr class="odd">
+<td>Contract Months</td>
+<td>Monthly: 3 nearest months; Quarterly cycle [unverified]</td>
+</tr>
+<tr class="even">
+<td>Trading Hours</td>
+<td>08:00 - 22:00 CET</td>
+</tr>
+<tr class="odd">
+<td>Last Trading Day</td>
+<td>Third Friday of the delivery month</td>
+</tr>
+<tr class="even">
+<td>Settlement Method</td>
+<td>Cash settlement</td>
+</tr>
+<tr class="odd">
+<td>Final Settlement Price</td>
+<td>Based on AEX index calculation at expiration</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="aex-index-options-aex" class="level4">
+<h4 class="anchored" data-anchor-id="aex-index-options-aex">3. AEX Index Options (AEX)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exchange</td>
+<td>Euronext Amsterdam</td>
+</tr>
+<tr class="even">
+<td>Contract Code</td>
+<td>AEX</td>
+</tr>
+<tr class="odd">
+<td>Underlying</td>
+<td>AEX Index</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>EUR 100 per index point (e.g., EUR 90,000 at 900.00) [unverified]</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>0.01 index points</td>
+</tr>
+<tr class="even">
+<td>Tick Value</td>
+<td>EUR 1</td>
+</tr>
+<tr class="odd">
+<td>Exercise Style</td>
+<td>European</td>
+</tr>
+<tr class="even">
+<td>Contract Months</td>
+<td>Monthly; plus weekly and daily expiries available</td>
+</tr>
+<tr class="odd">
+<td>Trading Hours</td>
+<td>09:00 - 17:30 CET</td>
+</tr>
+<tr class="even">
+<td>Settlement Method</td>
+<td>Cash settlement</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ftse-mib-index-futures-fib" class="level4">
+<h4 class="anchored" data-anchor-id="ftse-mib-index-futures-fib">4. FTSE MIB Index Futures (FIB)</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exchange</td>
+<td>Euronext Milan (formerly IDEM)</td>
+</tr>
+<tr class="even">
+<td>Contract Code</td>
+<td>FIB</td>
+</tr>
+<tr class="odd">
+<td>Underlying</td>
+<td>FTSE MIB Index</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>EUR 5 per index point (e.g., EUR 175,000 at 35,000)</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>5 index points</td>
+</tr>
+<tr class="even">
+<td>Tick Value</td>
+<td>EUR 25</td>
+</tr>
+<tr class="odd">
+<td>Contract Months</td>
+<td>Quarterly: March, June, September, December</td>
+</tr>
+<tr class="even">
+<td>Trading Hours</td>
+<td>08:00 - 22:00 CET [unverified]</td>
+</tr>
+<tr class="odd">
+<td>Last Trading Day</td>
+<td>Third Friday of the delivery month</td>
+</tr>
+<tr class="even">
+<td>Settlement Method</td>
+<td>Cash settlement</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="milling-wheat-no.-2-futures-ebm" class="level4">
+<h4 class="anchored" data-anchor-id="milling-wheat-no.-2-futures-ebm">5. Milling Wheat No.&nbsp;2 Futures (EBM)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exchange</td>
+<td>Euronext Paris (MATIF)</td>
+</tr>
+<tr class="even">
+<td>Contract Code</td>
+<td>EBM</td>
+</tr>
+<tr class="odd">
+<td>Underlying</td>
+<td>Milling Wheat No.&nbsp;2 (EU origin)</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>50 tonnes</td>
+</tr>
+<tr class="odd">
+<td>Quotation</td>
+<td>EUR per tonne</td>
+</tr>
+<tr class="even">
+<td>Tick Size</td>
+<td>EUR 0.25 per tonne</td>
+</tr>
+<tr class="odd">
+<td>Tick Value</td>
+<td>EUR 12.50</td>
+</tr>
+<tr class="even">
+<td>Contract Months</td>
+<td>September, December, March, May</td>
+</tr>
+<tr class="odd">
+<td>Expiration</td>
+<td>10th of the contract month (or next business day)</td>
+</tr>
+<tr class="even">
+<td>Settlement Method</td>
+<td>Physical delivery</td>
+</tr>
+<tr class="odd">
+<td>Delivery Points</td>
+<td>Designated storage facilities in France [unverified]</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Euronext Live, “CAC 40 Index Future contract specification”, https://live.euronext.com/en/product/index-futures/FCE-DPAR/contract-specification] [Source: Euronext Live, “AEX Index Future contract specification”, https://live.euronext.com/en/product/index-futures/FTI-DAMS/contract-specification] [Source: Euronext Live, “Milling Wheat contract specifications”, https://live.euronext.com/en/resources/contracts-specifications/commodity-futures-milling-wheat]</p>
+</section>
+</section>
+<section id="d3.-margin-framework" class="level3">
+<h3 class="anchored" data-anchor-id="d3.-margin-framework">D3. Margin Framework</h3>
+<section id="euronext-clearing-margin-methodology" class="level4">
+<h4 class="anchored" data-anchor-id="euronext-clearing-margin-methodology">Euronext Clearing Margin Methodology</h4>
+<p>Following the migration from LCH SA (completed September 2024), all Euronext derivatives are cleared through <strong>Euronext Clearing</strong> (formerly CC&amp;G), which employs a VaR-based margin methodology:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Methodology</td>
+<td>Dynamic (auto-updating) VaR-like portfolio margining</td>
+</tr>
+<tr class="even">
+<td>Risk Measure</td>
+<td>Historical Simulation Expected Shortfall (ES) based on cash flow mapping on sovereign zero curves</td>
+</tr>
+<tr class="odd">
+<td>Confidence Level</td>
+<td>99.0% for most products [unverified – standard EMIR requirement]</td>
+</tr>
+<tr class="even">
+<td>Lookback Period</td>
+<td>Based on historical market data [specific period not publicly disclosed]</td>
+</tr>
+<tr class="odd">
+<td>Update Frequency</td>
+<td>Dynamic/auto-updating based on market conditions</td>
+</tr>
+<tr class="even">
+<td>Procyclicality</td>
+<td>EMIR-compliant measures to prevent excessive procyclical margin increases</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="margin-add-ons" class="level4">
+<h4 class="anchored" data-anchor-id="margin-add-ons">Margin Add-Ons</h4>
+<p>Euronext Clearing applies additional margin add-ons to address portfolio-specific risks beyond mid-price risk:</p>
+<ul>
+<li><strong>Idiosyncratic risk</strong>: Risk specific to individual securities</li>
+<li><strong>Liquidity risk</strong>: Accounts for varying liquidity across products</li>
+<li><strong>Concentration risk</strong>: Additional margins for large concentrated positions</li>
+<li><strong>Settlement risk</strong>: Risk related to settlement timing</li>
+<li><strong>Repo risk</strong>: For positions involving repo transactions</li>
+</ul>
+</section>
+<section id="methodology-timeline" class="level4">
+<h4 class="anchored" data-anchor-id="methodology-timeline">Methodology Timeline</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pre-October 2023</td>
+<td>MARS (SPAN-like methodology) used for Italian equity and derivatives</td>
+</tr>
+<tr class="even">
+<td>June 2022</td>
+<td>VaR-based methodology goes live for Italian, Portuguese, Spanish, Irish government bonds</td>
+</tr>
+<tr class="odd">
+<td>October 2023</td>
+<td>VaR-based methodology goes live for Italian equity, ETF, and equity derivatives (replacing MARS/SPAN-like model)</td>
+</tr>
+<tr class="even">
+<td>September 2024</td>
+<td>VaR-based methodology extended to all Euronext financial derivatives following migration from LCH SA</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cross-margining" class="level4">
+<h4 class="anchored" data-anchor-id="cross-margining">Cross-Margining</h4>
+<ul>
+<li><strong>Unified default fund</strong>: Single equity and derivatives default fund facilitating cross-margining between cash and derivatives positions</li>
+<li><strong>Margin efficiency</strong>: ~20% margin reduction achieved through portfolio margining across equity and derivatives products within the same default fund</li>
+</ul>
+<p>[Source: Euronext, “Euronext Clearing introduces an innovative VaR-based margin methodology”, https://www.euronext.com/en/about/media/euronext-press-releases/euronext-clearing-introduces-innovative-var-based-margin] [Source: Euronext, “Risk Management Methodologies”, https://www.euronext.com/en/post-trade/euronext-clearing/risk-management/methodologies] [Source: Euronext, “Model Validation”, May 2024, https://www.euronext.com/sites/default/files/2024-05/Euronext_Clearing_Model%20Validation_May24.pdf]</p>
+</section>
+</section>
+<section id="d4.-position-limits" class="level3">
+<h3 class="anchored" data-anchor-id="d4.-position-limits">D4. Position Limits</h3>
+<ul>
+<li><strong>MiFID II Position Limits</strong>: National competent authorities (coordinated by ESMA) set position limits on commodity derivatives</li>
+<li><strong>Milling Wheat position limits</strong>: ESMA publishes opinions on position limits for the EBM (Milling Wheat No.&nbsp;2) contract; limits are set by the AMF as the relevant national authority for the Paris MATIF market</li>
+<li><strong>Accountability levels</strong>: Position reporting thresholds apply to all derivatives; large position holders must report to the exchange and relevant regulator</li>
+<li><strong>Hedge exemptions</strong>: Available for bona fide hedgers who apply to the national competent authority</li>
+<li><strong>Financial derivatives</strong>: Position limits for equity/index derivatives are generally less restrictive than for commodity derivatives; specific limits vary by product [unverified]</li>
+</ul>
+<p>[Source: ESMA, “Opinion on position limits on Milling Wheat No.&nbsp;2 contract”, https://www.esma.europa.eu/sites/default/files/library/amf_milling_wheat_ebmobm.pdf]</p>
+</section>
+<section id="d5.-block-trading-efp-efs-wholesale-trading" class="level3">
+<h3 class="anchored" data-anchor-id="d5.-block-trading-efp-efs-wholesale-trading">D5. Block Trading / EFP / EFS / Wholesale Trading</h3>
+<p>Euronext operates several off-book and wholesale trading facilities for derivatives:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Facility</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>TCS (Trade Confirmation System)</strong></td>
+<td>Publication of regulated market trades including negotiated deals, block trades, and VWAP trades; used for post-trade registration and reporting</td>
+</tr>
+<tr class="even">
+<td><strong>Block Execution Service (BES)</strong></td>
+<td>Enables trading members to report off-book wholesale trades to the exchange for registration</td>
+</tr>
+<tr class="odd">
+<td><strong>EFP (Exchange for Physical)</strong></td>
+<td>Simultaneous exchange of a futures position for a basket of underlying shares weighted according to the index; can be entered directly on the Optiq order book via the AMR (Automated Market Reference) strategy</td>
+</tr>
+<tr class="even">
+<td><strong>EFS (Exchange for Swaps)</strong></td>
+<td>Exchange of futures for swap positions; eliminates execution risk associated with trading in the Central Order Book</td>
+</tr>
+<tr class="odd">
+<td><strong>RFC (Request for Cross)</strong></td>
+<td>Facility for crossing client orders on-exchange with pre-arranged counterparties; subject to price improvement rules (the cross must be at a price equal to or better than the best bid/offer in the order book)</td>
+</tr>
+<tr class="even">
+<td><strong>Auto-match RFC</strong></td>
+<td>Automated matching of RFC orders, introduced March 2024</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Rules:</strong> - All wholesale trades must be reported through TCS and are subject to post-trade transparency requirements under MiFID II - Minimum block trade sizes apply per product (defined in Euronext Trading Procedures) - EFP/EFS transactions must involve a genuine related position in the underlying or swap</p>
+<p>[Source: Euronext, “Wholesale trading &amp; RFC”, https://www.euronext.com/en/for-investors/financial-derivatives/wholesale-trading] [Source: Euronext, “Euronext Derivatives Markets: Trading Procedures”, https://www.euronext.com/sites/default/files/2025-02/trading_procedures_for_derivatives_-_dsp_fair_value_and_deferred_publication.pdf]</p>
+<hr>
+</section>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Euronext Derivatives is a pan-European derivatives exchange operating across seven markets (Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, Paris) on the unified Optiq trading platform. Its product range spans equity index futures/options, single stock derivatives, commodity futures/options (notably Milling Wheat as a European benchmark), dividend derivatives, total return futures, and newly launched fixed income derivatives.</p>
+<p>The period 2023-2024 marked a transformative era with two landmark migrations: (1) Borsa Italiana’s derivatives markets moved to the Optiq platform (April 2024), and (2) all derivatives clearing migrated from LCH SA to Euronext Clearing (completed September 2024). These changes gave Euronext full vertical control over its trading and clearing stack, enabling ~20% margin efficiencies through VaR-based portfolio margining and a unified default fund.</p>
+<p>Optiq delivers ~15 microsecond order roundtrip latency with 1M+ messages/second capacity, using SBE and FIX 5.0 protocols from the Bergamo, Italy data center. The exchange continues to expand its product offering with fixed income derivatives (launched September 2025), mini options, and a retail derivatives strategy.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

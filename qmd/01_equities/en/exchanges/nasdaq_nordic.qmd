@@ -1,0 +1,452 @@
+---
+title: "Nasdaq Nordic (OMX Nordic Exchanges)"
+subtitle: "Equities > Exchanges"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 3
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name(s) | Nasdaq Stockholm (Stockholmsborsen), Nasdaq Helsinki (Helsingin Porssi), Nasdaq Copenhagen (Kobenhavns Fondsbors), Nasdaq Iceland (Kaupholl Islands), Nasdaq Tallinn, Nasdaq Riga, Nasdaq Vilnius |
+| Common Name | Nasdaq Nordic (Nordic); Nasdaq Baltic (Baltic) |
+| Website | https://www.nasdaqomxnordic.com / https://www.nasdaqbaltic.com |
+| Year Established | Stockholm: 1863; Helsinki: 1912; Copenhagen: 1808; Iceland: 1985; OMX formed: 2003; Nasdaq acquired OMX: 2008 |
+| Countries / Cities | Sweden (Stockholm), Finland (Helsinki), Denmark (Copenhagen), Iceland (Reykjavik), Estonia (Tallinn), Latvia (Riga), Lithuania (Vilnius) |
+| Ownership Structure | Wholly-owned subsidiaries of Nasdaq, Inc. (publicly listed on Nasdaq US, ticker: NDAQ) |
+| Parent Company / Group | Nasdaq, Inc. |
+| Regulatory Authorities | **Sweden:** Finansinspektionen (FI); **Finland:** Finanssivalvonta (FIN-FSA); **Denmark:** Finanstilsynet; **Iceland:** Fjarmala- og tryggingaeftirlit (FME / Central Bank of Iceland); **Estonia:** Finantsinspektsioon (EFSA); **Latvia:** Finansu un kapitala tirgus komisija (FCMC); **Lithuania:** Lietuvos Bankas (Bank of Lithuania) |
+| Combined Market Capitalization | ~EUR 2,003 billion (end of 2025, Nordic + Baltic combined) |
+| Total Listed Companies | ~1,119 companies (end of 2025): ~675 on Main Markets (Nordic + Baltic), ~444 on First North Growth Markets |
+| Average Daily Trading Value | EUR 3.238 billion (2025 full year, shares), up 9.0% from EUR 2.971 billion in 2024 |
+| Key Indices | OMXS30 (Stockholm 30), OMXH25 (Helsinki 25), OMXC25 (Copenhagen 25), OMXN40 (Nordic 40), OMXN120 (Nordic 120), OMX All-Share indices |
+
+### Key Historical Milestones
+- 1808: Copenhagen Stock Exchange founded
+- 1863: Stockholm Stock Exchange (Stockholms Fondsbors) established
+- 1912: Helsinki Stock Exchange founded
+- 1985: Iceland Stock Exchange established
+- 1985: OM AB (Optionsmaklarna) founded by Olof Stenhammar as a Swedish options/futures exchange
+- 1998: OM AB acquires the Stockholm Stock Exchange
+- 2003: **OMX AB created** through the merger of OM AB and HEX plc (Finland), combining Stockholm and Helsinki exchanges
+- 2004: OMX acquires the Iceland Stock Exchange
+- 2005: OMX merges with/acquires the Copenhagen Stock Exchange
+- 2006: OMX launches the virtual Nordic Stock Exchange, merging the individual share lists of Stockholm, Helsinki, Copenhagen, and Iceland into a combined Nordic List with harmonized rules
+- 2007: **Nasdaq agrees to acquire OMX** for approximately USD 3.7 billion
+- 2008: Acquisition completed (27 February 2008); the combined entity renamed NASDAQ OMX Group
+- 2010: Baltic exchanges (Tallinn, Riga, Vilnius) fully integrated under the NASDAQ OMX umbrella (previously acquired by OMX in 2004-2007)
+- 2015: NASDAQ OMX Group renamed to Nasdaq, Inc.; OMX AB renamed to Nasdaq AB
+- 2018: MiFID II tick size regime implemented across all Nasdaq Nordic and Baltic markets (January 2, 2018)
+- 2025: Secondary data center relocation from PORT to STOCKHOLM SOUTH (Equinix SK2); record bond listings exceeding EUR 1.2 trillion; defense bond framework launched
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| **Large Cap** | Companies with market cap >= EUR 1 billion | Regulated Market admission; 3-year track record; 25% free float; audited financials (IFRS); prospectus approved by local FSA |
+| **Mid Cap** | Companies with market cap EUR 150 million - EUR 1 billion | Same as Large Cap; segmentation is based solely on market cap |
+| **Small Cap** | Companies with market cap < EUR 150 million | Same as Large Cap; segmentation is based solely on market cap |
+| **First North Growth Market** | MTF for smaller/growth companies; licensed as SME Growth Market under MiFID II | Must appoint a Certified Adviser; less stringent requirements than Main Market; no minimum market cap; simplified prospectus rules |
+| **First North Premier Growth Market** | Senior segment of First North for companies preparing for Main Market listing | Higher disclosure and accounting requirements than standard First North; IFRS-compliant financial statements required |
+| **Nasdaq Baltic Main Market** | Regulated markets in Tallinn, Riga, and Vilnius | Local listing rules aligned with EU directives; generally lower thresholds than Nordic Main Market |
+| **Nasdaq Baltic First North** | MTF segment in Baltic countries | Lighter requirements; Certified Adviser required |
+
+Market cap segment reviews are conducted annually based on the average market cap in November. As of January 2, 2026, 35 companies changed segment (22 to a larger segment, 13 to a smaller segment).
+
+### 2.2 Trading Sessions
+
+| Session | Time (CET) | Description |
+|---------|-----------|-------------|
+| Pre-Open / Order Entry | ~08:00 - 09:00 | Orders can be entered, amended, and cancelled; no matching occurs |
+| Opening Auction Call | within Pre-Open | Orders accumulate for price discovery |
+| Opening Auction Uncross | 09:00 | Order books uncross randomly between 09:00:00 and 09:00:05 to prevent gaming |
+| Continuous Trading | 09:00 - 17:25 | Order-driven continuous matching; no midday break |
+| Closing Auction Call | 17:25 - 17:30 | Orders accumulate for closing price determination [unverified exact times -- may vary by market] |
+| Closing Auction Uncross | ~17:30 | Closing price determined via auction uncross |
+| Trading@Closing Price | 17:30 - 17:40 | Orders can execute at the established closing price only (Copenhagen: 17:00-17:10 CET) [unverified] |
+
+Note: Iceland operates in GMT (UTC+0), which is CET-1. Specific trading hours may vary slightly by market (Stockholm, Helsinki, Copenhagen, Iceland, Baltic). Warrants and certificates may have extended hours from 08:15 CET. Times shown are representative of the standard Nordic equity schedule.
+
+### 2.3 Tick Sizes
+
+Nasdaq Nordic and Baltic markets follow the **MiFID II tick size regime** (Commission Delegated Regulation (EU) 2017/588, aka RTS 11), implemented since January 2, 2018.
+
+- Tick sizes are determined by a matrix of **price level** and **liquidity band** (based on Average Daily Number of Transactions, ADNT)
+- Six liquidity bands exist, ranging from fewer than 10 ADNT to 9,000+ ADNT
+- The tick size table is the same as used across all EU/EEA regulated markets (harmonized under MiFID II)
+- Nasdaq Iceland markets were **excluded** from the MiFID II tick size regime at initial implementation [unverified whether since adopted]
+- ETFs with equity underlyings also follow the MiFID II tick size table
+- Other products (warrants, certificates, equity rights) use exchange-specific tick size tables
+
+| Price Range (EUR) | Low Liquidity (< 10 ADNT) | Medium Liquidity (80-600 ADNT) | High Liquidity (>= 9000 ADNT) |
+|-------------------|---------------------------|-------------------------------|-------------------------------|
+| 0 - 0.4999 | 0.005 | 0.002 | 0.0005 |
+| 0.5 - 0.9999 | 0.01 | 0.005 | 0.001 |
+| 1 - 1.9999 | 0.02 | 0.01 | 0.002 |
+| 2 - 4.9999 | 0.05 | 0.02 | 0.005 |
+| 5 - 9.9999 | 0.1 | 0.05 | 0.01 |
+| 10 - 49.9999 | 0.2 - 0.5 | 0.1 - 0.2 | 0.02 - 0.05 |
+
+[Source: ESMA RTS 11; representative subset -- full table contains 13 price ranges x 6 liquidity bands]
+
+### 2.4 Lot Sizes
+- **Standard lot size**: 1 share for most equities
+- Odd lot trading is supported
+- Block trade thresholds defined under MiFID II Large-in-Scale (LIS) waivers, varying by instrument liquidity
+
+### 2.5 Market Maker / Liquidity Provider Programs
+- Nasdaq Nordic operates liquidity provider programs where market makers commit to maintaining continuous two-sided quotes within specified spread and size parameters
+- Registered market makers may receive reduced trading fees as incentives
+- First North Growth Market requires Certified Advisers (not market makers per se, but advisory role); some First North instruments also have liquidity providers
+- Less liquid instruments on First North Denmark have been moved to an **auction-only trading model** to support price discovery [unverified]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+- **Opening Auction**: During the pre-open phase, orders accumulate. At 09:00 CET, the opening uncross determines the opening price by maximizing executable volume. Each order book uncrosses randomly within a 5-second window (09:00:00 - 09:00:05) to prevent manipulation
+- **Closing Auction**: At the end of continuous trading (~17:25 CET), the market enters a closing call period. The closing uncross at ~17:30 CET determines the official closing price, which is used by index providers, fund managers, and for NAV calculations
+- **Scheduled Intraday Auctions**: For less liquid instruments in the "Auction Only" trading segment, scheduled intraday auctions occur at set intervals (e.g., 11:00, 13:00, 15:00 CET) without continuous trading between them
+- **Volatility Auctions**: Triggered when a potential execution price would breach Volatility Guard thresholds (see Section 8). Continuous trading is halted and an auction call period of 60-180 seconds is initiated to allow orderly price discovery
+
+### 3.2 Continuous Trading
+- **Order-driven market** with price/time priority
+- Continuous matching occurs between the opening and closing auctions (approximately 09:00 - 17:25 CET)
+- The INET matching engine processes incoming orders against the resting order book using strict price/time priority
+- Market makers (liquidity providers) can provide continuous quotes but the system is fundamentally order-driven, not quote-driven
+- Dark order functionality is available (hidden and midpoint orders)
+
+### 3.3 Price Discovery
+- Primary price discovery occurs through the opening and closing auctions
+- The uncrossing algorithm maximizes executable volume, then minimizes surplus, then references the prior price
+- Reference prices for Volatility Guards are dynamically updated based on recent trades (Dynamic) and the day's opening auction price (Static)
+- Trading@Closing session allows additional volume to trade at the established closing price, ensuring end-of-day liquidity
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Limit Order | Buy/sell at a specified price or better; rests on the order book if not immediately matched |
+| Market Order | Executes at the best available price; unmatched remainder is cancelled |
+
+### 4.2 Advanced Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Iceberg Order | Only a visible portion (peak) is displayed; hidden reserve replenishes automatically as the peak is filled |
+| Hidden Order | Entire quantity is hidden from the visible order book; lower priority than displayed orders at the same price |
+| Mid-Point Order | Pegged to the midpoint of the best bid and offer; executes in the dark book [unverified] |
+| Reserve Order | Similar to Iceberg; configurable visible and hidden quantities [unverified] |
+
+### 4.3 Time-in-Force Options
+| TIF | Description |
+|-----|-------------|
+| Day (DAY) | Valid for the current trading day; cancelled at end of day |
+| Good till Cancelled (GTC) | Remains active until executed or cancelled (subject to exchange maximum) |
+| Good till Date (GTD) | Valid until a specified expiry date |
+| Immediate or Cancel (IOC) | Execute available quantity immediately; cancel remainder |
+| Fill or Kill (FOK) | Must execute in full immediately or entire order is cancelled |
+| At the Open (ATO) | Valid only during the opening auction |
+| At the Close (ATC) | Valid only during the closing auction |
+
+### 4.4 Order Modification / Cancellation
+- Orders can be amended (price, quantity) or cancelled during trading sessions via OUCH or FIX gateway
+- Price improvements result in loss of time priority (new timestamp)
+- Quantity reductions preserve time priority
+- Mass cancellation functionality available through PRM Kill Switch
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | **INET Nordic** (for equities, ETFs, warrants, certificates); **Genium INET** (for derivatives, fixed income) |
+| Vendor / In-house | In-house (Nasdaq Technology) |
+| Architecture | Distributed, low-latency architecture; event-driven matching engine |
+| Matching Engine | Central matching engine with strict price/time priority; supports multiple asset classes |
+| Round-trip Latency | Sub-100 microseconds average (Genium INET backbone); FIX latency improved by co-locating FIX gateways near matching engine |
+| Order Processing Capacity | Over 1,000,000 messages per second throughput capability |
+| Messages Per Second | >1,000,000 (designed capacity) |
+| Launch Year | INET Nordic platform: incrementally deployed; Genium INET: 2010 for derivatives |
+
+### System History
+| Period | System | Notes |
+|--------|--------|-------|
+| Pre-1990s | Floor-based / early electronic | Individual national exchange systems |
+| 1990s-2003 | SAXESS | Common trading system for Nordic exchanges under NOREX alliance |
+| 2003-2010 | SAXESS (under OMX) | OMX harmonized trading across Stockholm, Helsinki, Copenhagen |
+| 2010-present | **Genium INET** (derivatives) | Nasdaq's next-generation platform; sub-100 microsecond latency |
+| 2010s-present | **INET Nordic** (equities) | INET-based matching for cash equities across all Nordic and Baltic markets |
+
+### Technology Stack
+- **Protocols**: OUCH (native order entry, lowest latency), FIX (industry standard order entry), ITCH (market data dissemination via UDP multicast), GLIMPSE (snapshot recovery), AMD (market data), FIX Drop Copy
+- **Market Data**: TotalView-ITCH provides full order depth with market participant attribution; delivered via UDP/IP multicast with MoldUDP64 packet format
+- **Network**: TCP/IP for order entry gateways; UDP/IP multicast for market data
+- **Timestamps**: Nanosecond precision (nanoseconds since midnight UTC)
+- **Protocol Versions** (as of 2025): OUCH 5.02.6, FIX Order Entry 2.02.2, FIX DROP 2.01.6, TotalView-ITCH 3.04.5
+
+### Disaster Recovery / Business Continuity
+- **Primary Data Center**: Vasby (Upplands Vasby), north of Stockholm
+- **Secondary Data Center**: STOCKHOLM SOUTH (Equinix SK2) -- relocated from PORT site during April-September 2025
+- Dual redundant market data feeds from two sites (co-location customers receive feeds from primary site only with redundant multicast flows)
+- Real-time replication between primary and secondary sites
+- Business continuity plans tested regularly as required by local regulators and MiFID II obligations
+- Dedicated gateways and co-location connections reside at primary Vasby site and retain their connectivity during failover
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+| Protocol | Description | Use Case |
+|----------|-------------|----------|
+| TotalView-ITCH | Full order-by-order depth with market participant attribution; native binary protocol via UDP multicast | Ultra-low latency market data for HFT and algorithmic trading |
+| ITCH Level 2 | Aggregated bid/ask at multiple price levels | Standard market data for trading applications |
+| AMD (Alternative Market Data) | Alternative multicast data feed | Market data distribution |
+| FIX Market Data | Market data via FIX protocol | Firms preferring standardized FIX connectivity |
+| GLIMPSE | Snapshot/recovery protocol over TCP | Initial state rebuild and gap recovery |
+
+### 6.2 Data Levels
+- **Level 1**: Best bid/offer (BBO), last trade price, volume
+- **Level 2**: Aggregated depth at 5 price levels with quotes, orders, and trades
+- **TotalView (Full Depth)**: Full order book depth, order-by-order granularity with attribution
+- **Delayed Data**: 15-minute delayed feeds available
+
+### 6.3 Distribution Infrastructure
+- UDP/IP multicast from primary and secondary data center sites
+- MoldUDP64 packet format for reliable multicast delivery
+- Co-location customers receive multicast from Vasby primary site with redundant flows
+- TCP-based replay/re-request service for gap recovery
+
+### 6.4 Historical Data
+- Historical tick data available through Nasdaq Data Link and third-party vendors
+- End-of-day data, reference data, corporate actions data available
+- Academic access available (e.g., Aalto University Datahub hosts Nasdaq Nordic Equity TotalView-ITCH)
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+- Members must be authorized by the relevant local financial supervisory authority (or equivalent EU/EEA regulator)
+- Nasdaq Nordic and Baltic membership list is publicly available
+- Types: Direct members, remote members (from other EU/EEA countries), sponsored access participants
+- Requirements: Adequate capital, competent personnel, robust systems and controls, compliance arrangements
+
+### 7.2 Connection Methods
+| Method | Description |
+|--------|-------------|
+| Direct Link | Dedicated network connection to Nasdaq Nordic |
+| Authorized Extranet/VPN | Via approved network providers |
+| Co-location | Direct cross-connect from co-located racks at Vasby primary data center |
+| Point-of-Presence (PoP) | Nasdaq PoP services in London and Frankfurt for remote access |
+
+### 7.3 Co-location / Proximity Services
+- **Location**: Vasby (Upplands Vasby), Stockholm, Sweden -- primary data center
+- **Services**: Rack space, power, cooling, direct cross-connect to matching engine
+- **Latency Advantage**: Lowest possible latency via co-location at the matching engine site
+- Co-location connectivity details available via Nasdaq Member Portal under "Technical Access"
+
+### 7.4 API Protocols
+| Protocol | Use Case |
+|----------|----------|
+| OUCH | Native binary order entry; lowest latency |
+| FIX | Industry-standard order entry and execution reporting |
+| FIX Drop Copy | Real-time copy of executions and order updates |
+| ITCH | Market data dissemination (outbound only) |
+| GLIMPSE | Snapshot recovery for market data |
+
+### 7.5 Certification / Testing
+- INET Nordic test environments available for member firms to validate connectivity and order management
+- Conformance testing required before production access
+- Technical connectivity details accessible through Nasdaq Member Portal ("Connectivity Guideline" section)
+- Advance notice provided for system upgrades and functional enhancements
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+- Nasdaq Nordic does **not** impose fixed daily price limits (no hard up/down percentage limit)
+- Instead, uses **Volatility Guards** (dynamic and static) to detect and manage abnormal price movements
+
+### 8.2 Circuit Breakers (Volatility Guards)
+
+| Type | Trigger | Response |
+|------|---------|----------|
+| **Dynamic Volatility Guard** | Potential execution price deviates beyond a percentage threshold from the **last traded price** (continuously updated reference) | Continuous trading halted; instrument enters a volatility auction lasting 60-180 seconds |
+| **Static Volatility Guard** | Potential execution price deviates beyond a percentage threshold from the **reference price** (typically the day's opening auction price) | Continuous trading halted; instrument enters a volatility auction lasting 60-180 seconds |
+| **Auction Safeguards** | Opening auction uncross price deviates beyond 2x the Dynamic Volatility Guard threshold; Scheduled intraday auction safeguard equals the Dynamic Volatility Guard value | Auction period is extended |
+
+- Volatility Guard thresholds are configured per instrument and reviewed periodically by the exchange
+- Specific percentage thresholds are defined in Appendix M of the Nasdaq Nordic Market Model and are not publicly disclosed in summary form [unverified]
+- After the volatility auction completes, the instrument returns to continuous trading
+
+### 8.3 Pre-trade Risk Controls (PRM)
+
+Nasdaq Nordic's **Pre-trade Risk Management (PRM)** service validates orders entered via OUCH and FIX protocols:
+
+| Control | Description |
+|---------|-------------|
+| **Blow-Through Protection** | Prevents orders from triggering Volatility Guards by checking price deviation before submission |
+| **Maximum Order Value** | Configurable per firm; orders exceeding the threshold are rejected |
+| **Maximum Order Quantity** | Limits on maximum shares per single order |
+| **Fat-Finger Protection** | Price and size reasonability checks to prevent erroneous orders |
+| **Message Throttling** | Rate limits on order submissions per second |
+| **FIX Drop On-Disconnect** | Automatically cancels all open orders and prevents new order entry upon client disconnect |
+
+PRM is designed for highly automated trading flows and adds **no latency** to order execution. It is compliant with ESMA guidelines on systems and controls in automated trading (MiFID II Article 48).
+
+### 8.4 Kill Switch
+- **Kill Switch for Mass Cancellation**: Administrator function that cancels all outstanding orders for a firm or user
+- Available through PRM interface
+- Can be activated by the member firm or by Nasdaq Market Operations upon request
+- Supports cancellation at the CompID, user, or firm-wide level [unverified]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authorities
+
+| Country | Regulator | Role |
+|---------|-----------|------|
+| **Sweden** | Finansinspektionen (FI) | Supervises Nasdaq Stockholm as a Regulated Market |
+| **Finland** | Finanssivalvonta (FIN-FSA) | Supervises Nasdaq Helsinki |
+| **Denmark** | Finanstilsynet | Supervises Nasdaq Copenhagen |
+| **Iceland** | Central Bank of Iceland (Sedlabanki Islands) / FME | Supervises Nasdaq Iceland |
+| **Estonia** | Finantsinspektsioon (EFSA) | Supervises Nasdaq Tallinn |
+| **Latvia** | Finansu un kapitala tirgus komisija (FCMC) | Supervises Nasdaq Riga |
+| **Lithuania** | Lietuvos Bankas (Bank of Lithuania) | Supervises Nasdaq Vilnius |
+
+Each exchange entity holds a Regulated Market license (Main Market) and/or MTF license (First North) in its respective jurisdiction. Although operated under common Nasdaq Nordic branding and harmonized rules, each entity is a separate legal entity supervised by its national regulator.
+
+### 9.2 Key Regulations
+- **MiFID II / MiFIR** (Markets in Financial Instruments Directive II / Regulation): Core regulatory framework for all Nasdaq Nordic and Baltic markets as EU/EEA Regulated Markets; governs transparency, best execution, investor protection, algorithmic trading controls, and tick sizes
+- **Market Abuse Regulation (MAR)**: EU-wide prohibition of insider dealing, market manipulation, and unlawful disclosure of inside information; directly applicable in all member states
+- **Prospectus Regulation**: EU regulation governing public offers of securities and admission to trading; prospectus must be approved by the home-country FSA
+- **Transparency Directive**: Disclosure requirements for issuers of listed securities (periodic financial reporting, major shareholding notifications)
+- **EU Takeover Directive**: Governs mandatory and voluntary takeover bids (transposed into local law)
+- **CSDR (Central Securities Depositories Regulation)**: Governs settlement discipline and CSD authorization; Nasdaq CSD SE operates across Baltic and Icelandic markets
+- **Nasdaq Nordic Main Market Rulebook for Issuers of Shares**: Harmonized listing rules applied across Stockholm, Helsinki, Copenhagen, and Iceland with local supplements per jurisdiction
+
+### 9.3 Market Surveillance
+- **Nasdaq Nordic Market Surveillance**: Centralized real-time surveillance monitoring trading activity across all Nordic and Baltic markets for potential market abuse, suspicious patterns, and rule violations
+- Nasdaq uses its own surveillance technology to monitor order flow, trading patterns, and price movements
+- Cooperation with national regulators: Suspicious Transaction and Order Reports (STORs) are filed with relevant FSAs
+- Nasdaq published its first European Financial Crime Report in 2025, and signed its first proof of concept with a Tier 1 European bank for anti-financial crime technology
+
+### 9.4 Reporting Requirements
+- **Transaction Reporting**: Investment firms report to their national competent authority under MiFIR Article 26 (65 data fields per transaction, by T+1)
+- **Post-trade Transparency**: Real-time publication of trade details (MiFID II pre- and post-trade transparency regime)
+- **Short Selling Disclosure**: Per EU Short Selling Regulation; net short positions above 0.1% reported to NCA, above 0.5% disclosed publicly
+- **Major Shareholding Notifications**: Varies by country but generally aligned with the EU Transparency Directive thresholds
+
+### 9.5 Cross-border Arrangements / Nordic Cooperation
+- **Harmonized Rulebook**: Nasdaq Nordic operates under a common Nordic Main Market Rulebook for Issuers of Shares, with local supplements (Supplement A for Stockholm, B for Copenhagen, C for Helsinki, D for Iceland) ensuring consistency while respecting local legal requirements
+- **EU/EEA Passporting**: Member firms authorized in one EU/EEA country can access other Nasdaq Nordic/Baltic markets under MiFID II passporting without additional local authorization
+- **Nordic Cooperation**: The Nordic and Baltic FSAs cooperate closely on cross-border supervision; joint memoranda of understanding facilitate information sharing
+- **Nasdaq CSD SE**: A single CSD entity authorized in Latvia, operating across Estonia, Latvia, Lithuania, and Iceland under EU CSDR passporting, facilitating harmonized post-trade infrastructure
+- **IOSCO MMOU**: All relevant Nordic and Baltic regulators are signatories to the IOSCO Multilateral Memorandum of Understanding
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+| Fee Type | Structure | Notes |
+|----------|-----------|-------|
+| Execution Fee (Equities) | Value-based (ad valorem) + possible fixed per-trade component | Varies by volume tier and pricing package; specific rates in Nasdaq Nordic Cash Market Fee List |
+| Routing Fee | Additional fee for orders routed to other venues | Applied on top of standard execution fee |
+| Market Maker Rebate | Reduced fees or rebates for registered liquidity providers | Incentivizes continuous quoting |
+
+Detailed fee schedules are published in the "Nasdaq Nordic Cash Market Fee List" (updated periodically; most recent version as of November 2024). Fee changes of approximately +2.4% for listed products were announced effective January 1, 2026, based on inflation and cost adjustments.
+
+### 10.2 Other Fees
+- **Listing Fees**: Initial and annual listing fees based on market cap and market segment
+- **Market Data Fees**: Per-user and enterprise licensing; separate pricing for real-time, delayed, and derived data. European Markets Exchange Data Price List updated January 2025 and January 2026
+- **Co-location Fees**: Charges for rack space, cross-connect, and power at Vasby data center
+- **Membership Fees**: Annual fees for exchange membership [specific amounts not publicly summarized]
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+- **2021**: Introduction of next-generation OUCH and FIX protocols for INET Nordic
+- **2022-2023**: Ongoing INET Nordic functional enhancements; capacity and latency improvements
+- **2025**: Relocation of secondary data center from PORT to STOCKHOLM SOUTH (Equinix SK2), April-September 2025; FIX gateway optimization for lower latency
+- **2025-2026**: Continued protocol version updates (OUCH 5.02.6, TotalView-ITCH 3.04.5)
+
+### New Products / Segments
+- **Defense Bond Framework** (2025): Europe's first defense bond framework launched; Lithuanian state-owned Valstybiu Investicinis Kapitalas became the first issuer (October 2025)
+- **Sustainable Bond Market**: Marked its 10th anniversary with over EUR 80 billion in listed volume; total bond listings exceeded EUR 1.2 trillion across Nordic markets
+- **Auction-Only Trading**: Introduced for less liquid shares on First North Denmark to support better price discovery
+- **First North 25 Index**: Semi-annual rebalancing continues
+
+### Regulatory Changes
+- **MiFID II Tick Size Regime**: Fully embedded since 2018; ongoing liquidity band recalibrations by ESMA
+- **Annual Market Cap Segment Review**: January 2026 review moved 35 companies across Large/Mid/Small Cap segments
+- **Nordic Main Market Rulebook Updates**: Supplements updated January 2026 for Stockholm (Supplement D) and Copenhagen (Supplement B)
+
+### Strategic Initiatives
+- **Anti-Financial Crime Technology**: Nasdaq signed its first proof of concept with a Tier 1 European bank; published its European Financial Crime Report (2025)
+- **Market Share**: Nasdaq Nordic Exchange Network held approximately 72% market share of Nordic equity trades in 2024
+- **IPO Activity**: Nordic IPO pipeline recovering into 2025-2026 after subdued years
+- **2026 Outlook**: Focus on scaling the Nordic market platform to enhance the strength of European financial markets; continued growth in bond and sustainable finance segments
+
+---
+
+## Sources
+
+[Source: Nasdaq Official, "Nordic About Us & Legal", https://www.nasdaq.com/european-markets/about-nordic-exchanges, accessed 2026-04-06]
+[Source: Nasdaq Official, "European Markets Trading Hours", https://www.nasdaq.com/european-market-activity/trading-hours, accessed 2026-04-06]
+[Source: Nasdaq Official, "Nordic Equities Exchange and Market", https://www.nasdaq.com/solutions/nordic-equities-exchange-and-market, accessed 2026-04-06]
+[Source: Nasdaq Official, "Nordic Main Market", https://www.nasdaq.com/solutions/listings/markets/nordic/main-market, accessed 2026-04-06]
+[Source: Nasdaq Official, "First North Growth Market", https://www.nasdaq.com/solutions/listings/markets/nordic/first-north, accessed 2026-04-06]
+[Source: Nasdaq Official, "INET Nordic Protocol Specifications", https://www.nasdaq.com/solutions/inet-nordic-protocol-specifications, accessed 2026-04-06]
+[Source: Nasdaq Official, "Technical Information - INET Nordic Trading Platform", https://www.nasdaq.com/solutions/technical-information-inet-nordic-trading-platform, accessed 2026-04-06]
+[Source: Nasdaq Official, "Nasdaq Nordic Market Model 2026-01", https://www.nasdaq.com/docs/2026/03/02/Nasdaq-Nordic-Market-Model-2026-01.pdf, accessed 2026-04-06]
+[Source: Nasdaq Official, "Pre-Trade Risk Management for INET Nordic", https://www.nasdaq.com/solutions/pre-trade-risk-management, accessed 2026-04-06]
+[Source: Nasdaq Official, "Nasdaq Nordic PRM Service Guide 3.5", https://www.nasdaq.com/docs/2024/05/29/Nasdaq-Nordic-PRM-Service-Guide-3.5.pdf, accessed 2026-04-06]
+[Source: Nasdaq Official, "Secondary Data Center Relocation 2025", https://www.nasdaq.com/solutions/european-market-services/secondary-dc-relocation, accessed 2026-04-06]
+[Source: Nasdaq Official, "Nasdaq Primary Datacenter Vasby Stockholm Overview", https://www.nasdaq.com/docs/nasdaq-primary-datacenter-vasby-stockholm-overview.pdf, accessed 2026-04-06]
+[Source: Nasdaq Official, "Nordic Cash Market Fee List (November 2024)", https://www.nasdaq.com/docs/nordic-cash-market-fee-list-1-november-2024, accessed 2026-04-06]
+[Source: Nasdaq Official, "European Markets Exchange Data Price List (January 2026)", https://www.nasdaq.com/docs/Nasdaq_European_Exchange_Market_Data_Price_List_January_2026, accessed 2026-04-06]
+[Source: Nasdaq Official, "Annual Trading Statistics 2025", https://view.news.eu.nasdaq.com/view?id=b47e42a5cfb6120f9859fdf9de6db83ef, accessed 2026-04-06]
+[Source: Nasdaq Official, "Market Cap Segment Review at Nasdaq Nordic Exchanges (December 2025)", https://view.news.eu.nasdaq.com/view?id=beea8b646fe73fc18cbd50835d7a6b6a6, accessed 2026-04-06]
+[Source: Nasdaq Official, "Nasdaq Europe in 2025: A Year of Market Leadership and Innovation", https://www.nasdaq.com/newsroom/nasdaq-europe-2025-year-market-leadership-and-innovation, accessed 2026-04-06]
+[Source: Nasdaq Official, "Rules & Regulations - European", https://www.nasdaq.com/market-regulation/nordic, accessed 2026-04-06]
+[Source: Nasdaq Official, "Rules & Regulations - Nordic Main Market Rules", https://www.nasdaq.com/market-regulation/nordic/main-market-rules, accessed 2026-04-06]
+[Source: Nasdaq IR, "NASDAQ OMX Nordic Introduces Updated Volatility Guards", https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-omx-nordic-introduces-updated-volatility-guards-protect, accessed 2026-04-06]
+[Source: Nasdaq Official, "MiFID II Tick Size Regime Implementation (IT Notice 78/17)", https://view.news.eu.nasdaq.com/view?id=b342eaa0fdc828c42823694e47fec1b57, accessed 2026-04-06]
+[Source: Nasdaq Baltic, "Tick Size and Trading Lots", https://nasdaqbaltic.com/market-information/tick-size-and-trading-lots/, accessed 2026-04-06]
+[Source: Wikipedia, "Nasdaq Nordic", https://en.wikipedia.org/wiki/Nasdaq_Nordic, accessed 2026-04-06]
+[Source: Wikipedia, "Nasdaq Stockholm", https://en.wikipedia.org/wiki/Nasdaq_Stockholm, accessed 2026-04-06]
+[Source: Baker McKenzie, "Overview of Exchange - Nasdaq Stockholm", https://resourcehub.bakermckenzie.com/en/resources/cross-border-listings-guide/europe-middle-east--africa/nasdaq-stockholm/topics/overview-of-exchange, accessed 2026-04-06]
+[Source: ESMA, "Commission Delegated Regulation (EU) 2017/588 (RTS 11) - MiFID II Tick Sizes"]
+[Source: Nasdaq Indexes, "OMXN120 Overview", https://indexes.nasdaqomx.com/Index/Overview/NOMXN120, accessed 2026-04-06]

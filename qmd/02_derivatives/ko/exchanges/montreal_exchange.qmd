@@ -1,0 +1,533 @@
+---
+title: "Montreal Exchange (MX, 몬트리올거래소)"
+subtitle: "파생상품 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-07
+> **조사 단계:** Tier 3
+> **도메인:** 파생상품
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 공식 명칭 | Bourse de Montréal Inc. (Montreal Exchange) |
+| 약칭 | MX |
+| 웹사이트 | https://www.m-x.ca |
+| 설립 연도 | 1832년 (비공식); 1874년 (공식 법인화); 1999년 (파생상품 전문화) |
+| 국가 / 도시 | 캐나다 / 몬트리올, 퀘벡 (Tour de la Bourse, 800 Victoria Square) |
+| 소유 구조 | TMX Group Limited (TSX: X)의 완전자회사 |
+| 모회사 / 그룹 | TMX Group Limited |
+| 감독 기관 | Autorité des marchés financiers (AMF, 퀘벡)가 주 규제기관; Canadian Investment Regulatory Organization (CIRO)가 시장 건전성 감독 |
+| 사장 겸 CEO | Luc Fortin (2016년 8월부터) |
+| 청산기관 | Canadian Derivatives Clearing Corporation (CDCC), MX의 완전자회사 |
+| 일평균 거래량 (2025년) | 합산 약 937,000계약/일 (금리 파생상품 ~520K + 주식 파생상품 ~417K); 양 부문 모두 전년 대비 ~20% 성장으로 역대 최고치 |
+| 주요 상품 분야 | 금리 파생상품 (CORRA 선물, 캐나다 국채 선물), 주가지수 파생상품, 주식옵션, ETF 옵션 |
+
+[Source: Wikipedia, "Montreal Exchange"; TMX Group website; MX website (m-x.ca); MX Q4 2025 Highlights report]
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **1832년:** 몬트리올 Exchange Coffee House에 비공식 증권거래소 설립 -- 캐나다 최초기 금융시장 중 하나
+- **1874년:** Lorn MacDougall 등이 Montreal Stock Exchange로 공식 법인화
+- **1903년:** George B. Post (NYSE 건물 설계자) 설계의 전용 거래소 건물 개관
+- **1926년:** 투기성 및 중소 종목을 위한 Montreal Curb Market 설립
+- **1953년:** Curb Market을 Canadian Stock Exchange로 개명
+- **1965년:** 몬트리올 세 번째 고층건물인 Tour de la Bourse (Stock Exchange Tower)로 이전
+- **1974년:** Canadian Stock Exchange와 Montreal Stock Exchange 합병
+- **1975년:** 캐나다 최초로 주식옵션 상장
+- **1982년:** 확대된 금융상품을 반영하여 "Montreal Stock Exchange"에서 "Montreal Exchange"로 명칭 변경
+- **1989년 (9월):** 10년 캐나다 국채 선물(CGB) 출시
+- **1999년:** 캐나다 거래소 간 구조조정 합의에 따라 MX가 캐나다 유일의 파생상품 거래소로 전환; 주식거래는 Toronto Stock Exchange로 이관
+- **2001년:** 호가장내거래(open outcry)에서 완전 자동 전자매매로 전환 완료 -- 북미 전통 거래소 중 최초
+- **2004년 (2월):** Boston Options Exchange (BOX)의 전자매매시스템 단독 제공자로 선정; 31.4% 지분 보유, 2009년까지 51% 이상으로 확대
+- **2006년 (7월):** Chicago Climate Exchange와의 합작으로 Montreal Climate Exchange 설립 -- 캐나다 최초의 규제 환경 시장
+- **2007년 (12월):** TSX Group이 C$13.1억에 MX 인수 발표
+- **2008년 (5월 1일):** 인수 완료; 합병 법인은 TMX Group Inc.로 명칭 변경
+- **2013년:** SOLA 매매 플랫폼 업그레이드, 매매 응답시간 ~300% 개선 및 메시지 처리 용량 100,000호가/초로 2배 증대
+- **2020년:** Three-Month CORRA 선물(CRA) 시장조성자 프로그램 출시
+- **2023년 (1월):** One-Month CORRA 선물(COA) 출시
+- **2024년 (4월 26일):** CDOR 폐지에 따라 기존 BAX 미결제포지션이 CRA 계약으로 1:1 전환
+- **2024년 (6월 28일):** CDOR 영구 발행 중단; BAX 계약 공식 폐지
+- **2025년:** 금리 및 주식 파생상품 양 부문 역대 최고치 달성; ETF 옵션 일평균 거래량 전년 대비 +80%
+- **2025년 (6월):** FTSE Canada Bank Credit Index 선물(CBC) 발표 -- 캐나다 시장 최초의 신용 파생상품, 2026년 1분기 출시 예정
+
+[Source: Wikipedia, "Montreal Exchange"; MX website; TMX press releases 2007–2025; Finextra, "Montreal Exchange upgrades Sola derivatives trading platform", 2013; MX Q4 2025 Highlights; Mondovisione, "Montréal Exchange To Launch FTSE Canada Bank Credit Index Futures", June 2025]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 부문 / 자산군 (Market Segments / Asset Classes)
+
+MX는 캐나다 유일의 상장 금융 파생상품 거래소로, 기초자산 유형별로 구성된다:
+
+| 자산군 | 상품 | 주요 계약 |
+|-------------|----------|---------------|
+| **금리 -- 단기** | CORRA 기반 선물 및 옵션 | Three-Month CORRA 선물 (CRA), One-Month CORRA 선물 (COA), Options on Three-Month CORRA Futures (OCR) |
+| **금리 -- 국채** | 캐나다 국채 선물 및 옵션 | 2년 (CGZ), 5년 (CGF), 10년 (CGB), 30년 (LGB) 채권 선물; Options on CGB (OGB) |
+| **주가지수** | 지수 선물 및 옵션 | S&P/TSX 60 Index Standard 선물 (SXF), S&P/TSX 60 Index Mini 선물 (SXM), S&P/TSX Composite Index Mini 선물 (SCF), S&P/TSX 60 Index 옵션 (SXO) |
+| **주식옵션** | 캐나다 개별주식 옵션 | 미국형 옵션; 300개 이상 옵션 대상 종목; 적격 종목에 대한 페니 단위 호가제 |
+| **ETF 옵션** | 캐나다 상장 ETF 옵션 | 주요 ETF (예: XIU, ZEB, HXT) 옵션; 2025년 일평균 거래량 전년 대비 +80%로 가장 빠르게 성장하는 부문 |
+| **주식선물** | 개별주식 선물 | 일부 캐나다 주식에 대한 선물 |
+| **통화** | 외환 파생상품 | 캐나다 달러 표시 통화 상품 |
+| **신용** (예정) | 신용지수 선물 | FTSE Canada Bank Credit Index 선물 (CBC) -- 2026년 1분기 예정 |
+
+[Source: MX website, "Equity Derivatives", "Interest Rate Derivatives"; MX Q4 2025 Highlights; Yahoo Finance, "Montreal Exchange to Launch FTSE Canada Bank Credit Index Futures"]
+
+### 2.2 매매시간 (Trading Sessions / Hours)
+
+**참고:** 모든 시간은 동부시간(ET) 기준이다. 캐나다는 서머타임을 적용한다 (EDT = UTC-4 하절기; EST = UTC-5 동절기).
+
+#### 금리 파생상품 (채권 선물, CORRA 선물) (Interest Rate Derivatives)
+
+| 세션 | 시간 (ET) | 설명 |
+|---------|-----------|-------------|
+| 조기 세션 | 6:00 AM – 9:30 AM | 장 전 매매; 가격제한 적용 (지수 선물의 경우 전일 결제가 대비 ±7%) |
+| 정규 세션 | 9:30 AM – 4:00 PM | 주요 매매 세션 |
+| 연장 세션 | 4:00 PM – 4:30 PM [unverified] | 장 후 매매 |
+
+#### 주식옵션 및 ETF 옵션 (Equity Options and ETF Options)
+
+| 세션 | 시간 (ET) | 설명 |
+|---------|-----------|-------------|
+| 개장 전 | 9:30 AM 이전 | 주문 접수; 체결 없음 |
+| 개장 | 9:30 AM | TSX에서 기초증권 체결 시 각 옵션 종목 개장; 9:35 AM까지 체결이 없으면 자동 개장 |
+| 접속매매 (연속매매) | 9:30 AM – 4:00 PM | 주요 매매 세션 |
+
+#### 지수 선물 (SXF, SXM, SCF) (Index Futures)
+
+| 세션 | 시간 (ET) | 설명 |
+|---------|-----------|-------------|
+| 조기 세션 | 6:00 AM – 9:15 AM | 조기 세션 가격범위 제한 적용 매매 (전일 결제가 대비 ±7%) |
+| 개장 전 | 9:15 AM – 9:30 AM | 정규 세션 주문 접수 |
+| 정규 세션 | 9:30 AM – 4:15 PM | 주요 매매 세션 |
+| 연장 세션 | 4:15 PM – 4:30 PM [unverified] | 장 후 매매 |
+
+[Source: MX website, "Trading Hours & Holidays"; MX "Products – Trading Hours & Stages" document; MX Equity Options Reference Manual]
+
+### 2.3 참가자 구조 (Participant Structure)
+
+| 참가자 유형 | 설명 |
+|------------------|-------------|
+| **인가 참가자 (Approved Participants)** | MX에서 매매가 인가된 회사; CIRO 회원사여야 하며, MX 규칙 및 규제부 감독 적용 |
+| **시장조성자 (Market Makers)** | 배정 상품에 대한 호가 의무가 있는 지정 회사; 호가 요건 충족 능력 및 과거 실적을 기반으로 거래소가 선정 |
+| **고객 (Clients)** | 인가 참가자를 통해 매매하는 최종 이용자 |
+
+**시장조성 프로그램 (Market Making Programs):**
+- MX는 주식옵션, ETF 옵션, 지수 파생상품, 금리 파생상품에 걸쳐 다수의 시장조성 인센티브 프로그램을 운영한다
+- 시장조성자 (마켓메이커)는 개장 시 및 접속매매 중 최소 호가 제시율 등의 기본 의무를 갖는다
+- 인가 참가자의 고객인 시장조성자도 MX 자율규제 관할 대상이다
+- 선정 기준에는 호가 능력, 과거 실적, 시장 활동 기여도가 포함된다
+
+[Source: MX website, "Market Making Programs"; MX website, "Accessing the Montréal Exchange"; MX Regulatory Division, "Approved Participants"]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 주문 유형 (Order Types)
+
+MX는 SOLA 매매 플랫폼에서 다양한 주문 유형을 지원한다:
+
+| 주문 유형 | 설명 |
+|------------|-------------|
+| **지정가 주문 (Limit Order)** | 매수 최고가 또는 매도 최저가를 지정하는 주문 |
+| **시장가 주문 (Market Order)** | 가용 전체 수량에 대해 최적 가격으로 체결 |
+| **스톱 주문 (Stop Order)** | 시장이 지정 가격 수준에 도달하면 발동 |
+| **스톱 지정가 주문 (Stop Limit Order)** | 발동 시 지정가 주문으로 전환되는 스톱 주문 |
+| **아이스버그 (숨김 수량) (Iceberg)** | 대량 주문의 미리 설정된 부분을 순차적으로 표시; 최소 표시: 25계약 (CGB의 경우 50계약) |
+
+**주문 유효기간 (Time-in-Force Instructions):**
+
+| 조건 | 설명 |
+|-----------|-------------|
+| **Day** | 당일 매매일 동안 유효 |
+| **GTC (Good Till Cancelled)** | 체결 또는 취소될 때까지 유효 |
+| **IOC (Immediate or Cancel)** | 즉시 체결 (전부 또는 일부); 미체결 부분 취소 |
+| **FOK (Fill or Kill)** | 전량 즉시 체결 또는 전량 취소 |
+
+[Source: MX SOLA Overview; Trading Technologies, "MX Overview"; MX Equity Options Reference Manual]
+
+### 3.2 주문 체결 / 우선순위 규칙 (Order Matching / Priority Rules)
+
+- **가격-시간 우선 (Price-Time Priority):** 주문은 먼저 최적 가격으로, 동일 가격 수준에서는 주문 접수 시간순(FIFO)으로 체결된다
+- **비례배분 (Pro-Rata Allocation):** 특정 상품에 대해 시장조성자 호가에 비례배분 체결이 적용될 수 있다 [unverified]
+- **접속매매 (연속매매):** 완전 전자 주문 주도형 중앙지정가호가창(Central Limit Order Book, CLOB)
+
+### 3.3 특수 거래 유형 (Special Transaction Types)
+
+MX는 거래소외 매매 시설을 지원한다:
+
+| 거래 유형 | 설명 |
+|------------------|-------------|
+| **교차거래 (Cross Trades)** | 동일 회사 또는 관계 회사 간의 두 주문 간 사전 합의된 거래; 현행 매수·매도호가 스프레드 이내 또는 그 범위에서 입력해야 함 |
+| **사전합의 거래 (Pre-Arranged Trades)** | 매매시스템 입력 전에 두 당사자 간 협상된 거래 |
+| **블록거래 (대량매매) (Block Trades)** | CLOB 외부에서 합의된 가격에 체결되는 대량 협상 거래; 최소 거래량 기준 적용 |
+
+[Source: MX website, "Cross, Prearranged and Block Trades Transactions"]
+
+---
+
+## 4. 지수 및 벤치마크 (Indices & Benchmarks)
+
+*(간략 처리 -- Tier 3)*
+
+MX 파생상품은 여러 주요 캐나다 지수를 참조한다:
+
+| 지수 | 설명 | 관련 MX 상품 |
+|-------|-------------|----------------------|
+| S&P/TSX 60 | TSX에서 가장 크고 유동성이 높은 60개 종목 | SXF, SXM, SXO |
+| S&P/TSX Composite | 가장 광범위한 캐나다 주식 벤치마크 (~230개 종목) | SCF |
+| CORRA (Canadian Overnight Repo Rate Average) | Bank of Canada의 선호 무위험 금리 | CRA, COA, OCR |
+| FTSE Canada Bank Credit Index | 캐나다 은행 신용 스프레드 벤치마크 | CBC (2026년 1분기 예정) |
+
+[Source: MX website; Bank of Canada CORRA documentation]
+
+---
+
+## 5. 매매시스템 및 기술 (Trading System & Technology)
+
+### 5.1 SOLA 매매 플랫폼 (SOLA Trading Platform)
+
+SOLA는 MX가 자체 개발한 저지연 전자매매 엔진이다. Boston Options Exchange (BOX) 등 외부 거래소에도 라이선스 제공된다.
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 플랫폼명 | SOLA |
+| 개발사 | Bourse de Montréal Inc. (자체 개발) |
+| 아키텍처 | 중앙집중식 매매체결엔진 |
+| 중앙값 응답시간 | ~460마이크로초 (네트워크 에지 기준, 2013년 업그레이드 후) |
+| 메시지 처리 용량 | 100,000+ 호가/초 |
+| 코로케이션 | TMX Data Centre, 마컴(Markham), 온타리오 |
+| 물리 접속 | 1 Gbps / 10 Gbps Ethernet |
+
+### 5.2 접속 프로토콜 (Connectivity Protocols)
+
+| 프로토콜 | 용도 | 설명 |
+|----------|----------|-------------|
+| **SAIL (SOLA Access Information Language)** | 주문 입력 (네이티브) | SOLA 네이티브 프로토콜; 주문 입력 브로커, HFT 회사, 지정 시장조성자를 위한 전 기능 지원 |
+| **FIX Protocol** | 주문 입력 (표준) | 주문 입력 브로커를 위한 업계 표준 접속 |
+| **HSVF (High Speed Vendor Feed)** | 시장 데이터 | 레거시 ASCII 형식 시장 데이터 피드 |
+| **OBF (Order Book Feed)** | 시장 데이터 | 바이너리 형식 호가창 데이터 피드 |
+
+### 5.3 사후 매매 시스템 (Post-Trade Systems)
+
+| 시스템 | 설명 |
+|--------|-------------|
+| **TMS (Trade Management System)** | 매매 배분, 회사 간 합의 관리, 포지션 처리 |
+| **Trade Manager FIX API** | 사후 매매 관리를 위한 FIX 기반 API |
+| **PAR Reports (Participant Activity Reports)** | 참가자를 위한 상세 활동 보고서 |
+| **TMX Connect** | 웹 기반 사후 매매 포털 |
+| **Drop Copy Services** | ATR (Automated Trade Report), SAIL Drop Copy, FIX Drop Copy |
+
+### 5.4 리스크 관리 도구 (Risk Management Tools)
+
+MX는 SOLA 플랫폼을 통해 접근 가능한 사전 매매 리스크 관리 및 킬 스위치 기능 등 실시간 리스크 관리 도구를 제공한다.
+
+[Source: MX website, "SOLA Overview", "Market Access", "Connection & Testing", "Risk Management Tools"; Finextra, "Montreal Exchange upgrades Sola derivatives trading platform", September 2013; PR Newswire, September 2013]
+
+---
+
+## 6. 상장 및 회원 (Listing & Membership)
+
+*(간략 처리 -- Tier 3)*
+
+### 6.1 인가 참가자 요건 (Approved Participant Requirements)
+
+MX의 인가 참가자가 되기 위해서는:
+- CIRO 회원사여야 한다
+- 충분한 전문성, 기술 인프라, 회사 자본을 입증해야 한다
+- MX 규칙 및 규제부 감독에 대한 지속적인 준수 의무가 있다
+- 파생상품법(퀘벡, CQLR, Chapter I-14.01)을 준수해야 한다
+
+### 6.2 접근 모델 (Access Models)
+
+- **DMA (Direct Market Access):** 인가 참가자는 SOLA 플랫폼을 통해 고객에게 DMA를 제공할 수 있다
+- **코로케이션:** 온타리오 마컴(Markham)의 TMX Data Centre에서 저지연 전략을 위해 이용 가능
+
+[Source: MX website, "Accessing the Montréal Exchange"; MX Regulatory Division]
+
+---
+
+## 7. 수수료 및 데이터 (Fees & Data)
+
+*(간략 처리 -- Tier 3)*
+
+MX는 다음을 포함하는 종합 수수료 체계를 공표한다:
+- 계약당 거래 수수료 (상품 및 참가자 유형별 상이)
+- 시장조성 인센티브 수수료 환급
+- 접속 및 코로케이션 수수료
+- 시장 데이터 구독료 (실시간 및 지연)
+
+가장 최근 수수료 회보 (2023년 1월 시행)는 다음에서 확인 가능: https://www.m-x.ca/f_circulaires_en/165-22_annx_en.pdf
+
+[Source: MX Fee Circular 165-22]
+
+---
+
+## 8. 리스크 관리 및 시장 건전성 (Risk Controls & Market Integrity)
+
+### 8.1 거래소 차원의 관리 (Exchange-Level Controls)
+
+| 관리 항목 | 설명 |
+|---------|-------------|
+| **주문 가격 필터** | 선물 및 선물옵션 유입 주문에 대해 전일 결제가격 대비 차등(±)으로 설정된 가격 기반 정적 검증 |
+| **최대 수량 기준** | 주문당 최대 수량 한도 대비 유입 주문 검증 |
+| **서킷브레이커 (매매거래중단) (주식 파생상품)** | TSX에서 기초 주식/지수의 서킷브레이커 발동 시 자동 매매 중단 |
+| **조기 세션 가격제한** | 지수 선물 (예: SXF)은 조기 세션 (6:00–9:15 AM ET) 중 전일 결제가 대비 ±7% 제한 |
+| **킬 스위치 (Kill Switch)** | 회사가 모든 주문을 취소하고 신규 주문 입력을 방지할 수 있는 사전 매매 리스크 도구 |
+| **아이스버그 최소 표시량** | 대부분 선물에 최소 25계약 표시; CGB의 경우 50계약 |
+
+### 8.2 서킷브레이커 연계 (Circuit Breaker Coordination)
+
+MX 파생상품의 서킷브레이커 (매매거래중단)는 기초 주식시장과 연계된다:
+- 기초 주식 또는 ETF가 TSX에서 거래 중단되면 주식옵션 거래 중단이 발동된다 (Single Stock Circuit Breaker / SSCB)
+- 지수 파생상품은 CIRO/거래소가 설정한 주식시장 전체 서킷브레이커 수준을 따른다
+- 거래 중단 후 재개장은 경매 유사 절차를 따른다
+
+### 8.3 청산 차원의 리스크 관리 (CDCC) (Clearing-Level Risk Controls)
+
+증거금 체계에 대한 상세 내용은 제11절 (증거금 체계)을 참조한다.
+
+[Source: MX website, "Exchange Market Thresholds and Controls"; MX Share Futures specifications; MX Equity Options Reference Manual]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 규제 구조 (Regulatory Structure)
+
+MX는 캐나다의 다층적 규제 체계 하에서 운영된다:
+
+| 규제기관 / 기구 | 역할 |
+|-------------------|------|
+| **Autorité des marchés financiers (AMF)** | 주 규제기관; 퀘벡 파생상품법(CQLR, Chapter I-14.01)에 따른 공인 거래소 및 자율규제기관(SRO) 지위 부여 |
+| **MX 규제부 (MX-R)** | MX 내 독립 부서; MX 파생상품 시장에 대한 감시, 준법, 집행 수행 |
+| **Canadian Investment Regulatory Organization (CIRO)** | 2023년 1월 IIROC와 MFDA 합병으로 설립된 전국 SRO; 시장 건전성 감독; MX 상장 파생상품과 기초증권 간 교차자산 감시 수행 |
+| **Bank of Canada** | 시스템 리스크 감독; CDCC를 시스템적으로 중요한 금융시장인프라로 감독 |
+| **Canadian Securities Administrators (CSA)** | 주/준주 규제기관의 우산 조직; 캐나다 전역의 규제 조화 |
+
+### 9.2 자율규제 기능 (Self-Regulatory Functions)
+
+공인 SRO로서 MX는 AMF에 의해 규제부(MX-R) 유지를 요구받으며, 동 부서는:
+- 매매활동을 실시간 모니터링한다
+- 잠재적 시장 남용(조작, 내부자거래, 선행매매)을 조사한다
+- 인가 참가자 및 시장조성자에 대해 MX 규칙을 집행한다
+- 준법 검사를 실시한다
+- 규제 통지 및 회보를 공표한다
+
+### 9.3 규칙 제정 절차 (Rule-Making Process)
+
+- MX 규칙 개정은 파생상품법에 규정된 자율인증(self-certification) 절차에 따라 처리된다
+- 중대한 규칙 변경은 AMF 심사 및 공개의견 수렴 대상이다
+- CIRO의 Universal Market Integrity Rules (UMIR)가 교차시장 매매활동에 적용된다
+
+### 9.4 주요 규제 변화 (Key Regulatory Developments)
+
+- **2023년:** IIROC-MFDA 합병으로 CIRO 설립 (2023년 1월 1일 시행; 2023년 6월 1일 CIRO로 명칭 변경)
+- **2024년:** 캐나다 시장 전체에 T+1 결제 시행 (2024년 5월 27일)
+- **2024년:** ISDA 체계 하에서 CDOR 폐지 및 BAX에서 CRA로의 전환 완료
+
+[Source: AMF website, "Self-Regulatory Organizations"; MX Regulatory Division website (reg.m-x.ca); CIRO website, "About CIRO"; MX "Accessing the Montréal Exchange" document]
+
+---
+
+## 10. 최근 동향 및 전망 (Recent Developments & Outlook)
+
+*(간략 처리 -- Tier 3)*
+
+- **2025년 역대 최고 거래량:** 금리 파생상품 (~520K ADV, 전년 대비 +20%)과 주식 파생상품 (~417K ADV, 전년 대비 +20%) 모두 역대 최고치 달성
+- **ETF 옵션 급성장:** 2025년 186K ADV (전년 대비 +80%)로 가장 빠르게 성장하는 부문
+- **CORRA 전환 완료:** BAX (CDOR 기반)에서 CRA (CORRA 기반) 상품으로의 원활한 전환; CRA 거래량 170K ADV (전년 대비 +33%)
+- **신용 파생상품 출시:** 2025년 6월 FTSE Canada Bank Credit Index 선물(CBC) 발표, 2026년 1분기 출시 예정 -- 캐나다 최초의 신용지수 파생상품
+- **CDCC 증거금 개선:** SPAN 기반 증거금 산출의 지속적 개선; 2026년 3월 기준 CORRA 상품 증거금 파일 수정
+
+[Source: MX Q4 2025 Highlights; Mondovisione, June 2025; CDCC notices, March 2026]
+
+---
+
+## 11. 상품 목록 및 주요 계약 명세 (Product Catalog & Key Contract Specifications)
+
+### 11.1 금리 파생상품 (Interest Rate Derivatives)
+
+#### Three-Month CORRA 선물 (CRA)
+
+| 명세 | 세부 내용 |
+|--------------|---------|
+| 기초자산 | 참조 분기 동안의 일일 복리 CORRA |
+| 계약 단위 | C$2,500 × 지수 (명목 ~C$250,000) |
+| 호가단위 (최소가격변동폭, 최근월) | 0.0025 = 계약당 C$6.25 |
+| 호가단위 (최소가격변동폭, 이연월) | 0.005 = 계약당 C$12.50 |
+| 계약 월물 | 최근 12개 분기월 (3월 주기) |
+| 결제 | 현금 결제 |
+| 베이시스포인트 가치 | 1 bp당 계약당 C$25 |
+| 일평균 거래량 (2025년) | ~170,000계약 |
+
+#### One-Month CORRA 선물 (COA)
+
+| 명세 | 세부 내용 |
+|--------------|---------|
+| 기초자산 | 계약월 동안의 일일 복리 CORRA |
+| 계약 단위 | C$2,500 × 지수 |
+| 호가단위 (최소가격변동폭) | 0.0025 = C$6.25 (최근월) |
+| 계약 월물 | 최근 4개 계약월 |
+| 결제 | 현금 결제 |
+| 베이시스포인트 가치 | 1 bp당 계약당 C$25 |
+
+#### 10년 캐나다 국채 선물 (CGB) (Ten-Year Government of Canada Bond Futures)
+
+| 명세 | 세부 내용 |
+|--------------|---------|
+| 기초자산 | 잔존 만기 8–10.5년 캐나다 국채 |
+| 계약 단위 | 명목가치 C$100,000 |
+| 호가단위 (최소가격변동폭) | 0.005포인트 = 계약당 C$5 |
+| 계약 월물 | 3월, 6월, 9월, 12월 |
+| 결제 | 실물 인도 (인도 가능 바스켓) |
+| 출시일 | 1989년 9월 |
+| 일평균 거래량 (2025년) | ~185,000계약 |
+
+#### 기타 채권 선물 (Other Bond Futures)
+
+| 계약 | 종목코드 | 만기 범위 | 일평균 거래량 (2025년) |
+|----------|--------|---------------|------------|
+| 2년 캐나다 국채 선물 | CGZ | 1.5–2.5년 | ~82,000 |
+| 5년 캐나다 국채 선물 | CGF | 3.75–5.25년 | ~82,000 |
+| 30년 캐나다 국채 선물 | LGB | 15년 이상 | 거래량 낮음 [unverified] |
+
+### 11.2 주가지수 파생상품 (Equity Index Derivatives)
+
+#### S&P/TSX 60 Index Standard 선물 (SXF)
+
+| 명세 | 세부 내용 |
+|--------------|---------|
+| 기초자산 | S&P/TSX 60 Index |
+| 거래승수 | C$200 × 지수 수준 |
+| 호가단위 (최소가격변동폭) | 0.01 지수포인트 = 계약당 C$2 [unverified] |
+| 계약 월물 | 3월, 6월, 9월, 12월 |
+| 결제 | 현금 결제 (최종결제일 지수 공식 시초가 기준) |
+| 포지션한도 (건옥제한) | 1,000계약 (표준 + 미니 합산), 총 매수 및 매도, 전 월물 |
+
+#### S&P/TSX 60 Index Mini 선물 (SXM)
+
+| 명세 | 세부 내용 |
+|--------------|---------|
+| 기초자산 | S&P/TSX 60 Index |
+| 거래승수 | C$50 × 지수 수준 (SXF의 1/4) |
+| 결제 | 현금 결제 |
+
+### 11.3 주식 및 ETF 옵션 (Equity & ETF Options)
+
+| 명세 | 세부 내용 |
+|--------------|---------|
+| 계약 단위 | 기초증권 100주 |
+| 행사방식 | 미국형 (만기일까지 언제든 행사 가능) |
+| 호가단위 (최소가격변동폭, 페니 프로그램) | 적격 종목 전 시리즈에 대해 C$0.01 |
+| 만기 | 계약월 셋째 금요일 |
+| 결제 | 실물 인도 (2024년 5월부터 T+1) |
+| 주간옵션 | 일부 기초자산에 대해 가능 |
+| 일평균 거래량 -- 주식옵션 (2025년) | ~170,000계약 |
+| 일평균 거래량 -- ETF 옵션 (2025년) | ~186,000계약 (전년 대비 +80%) |
+
+[Source: MX website, product specification pages for CRA, COA, CGB, SXF, SXM; MX Equity Options Reference Manual; MX Q4 2025 Highlights; Barchart.com; Interactive Brokers Canadian Index Futures webinar]
+
+---
+
+## 12. 증거금 체계 (CDCC) (Margin Framework)
+
+### 12.1 개요 (Overview)
+
+Canadian Derivatives Clearing Corporation (CDCC)는 MX의 모든 거래소 거래 파생상품 및 점차 확대되는 장외 맞춤형 금융상품에 대한 중앙거래상대방(CCP)이다.
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 정식 명칭 | Canadian Derivatives Clearing Corporation |
+| 소유 구조 | Bourse de Montréal Inc.의 완전자회사 |
+| 본사 | 100 Adelaide Street West, 3rd Floor, Toronto, Ontario |
+| 인가 | AMF에 의한 공인 청산기관; Bank of Canada에 의해 시스템적으로 중요한 금융시장인프라로 지정 |
+| 증거금 방법론 | SPAN 기반 (Standard Portfolio Analysis of Risk), 1997년 채택 |
+
+### 12.2 증거금 방법론 (Margin Methodology)
+
+**개시증거금 (SPAN 기반) (Initial Margin):**
+- CDCC는 1997년 SPAN을 개시증거금 산출의 핵심 체계로 채택하였다
+- 리스크 파라미터는 증거금 구간(Margin Interval) 및 동일상품 스프레드(Intra-Commodity Spreads)를 포함하여 일 단위로 보정된다
+- 일일 가격수익률의 과거 변동성을 반영한다
+- 변동성 추정기는 99%를 초과하는 신뢰수준을 사용한다
+- 상품 유동성에 따라 가변적인 증거금 리스크 기간(Margin Period of Risk, MPOR)이 적용된다
+
+**경기순응성 완화 조치 (Anti-Procyclicality Measures):**
+- 25% 가중치를 적용한 스트레스 VaR(SVaR)를 통해 스트레스 리스크 구성요소를 산출한다
+- 변동성 하한은 최근 10년간 관찰된 일일 변동성 추정기의 평균으로 산출한다
+- 이러한 조치는 안정기에 증거금이 지나치게 낮아지고 스트레스 기간에 과도하게 급등하는 것을 방지한다
+
+**증거금 경감 (상품간 스프레드) (Margin Relief, Inter-Commodity Spreads):**
+- 현재 높은 상관관계를 보이는 제한된 선물 상품 목록에 대해 적용 가능:
+  - 지수 선물 조합
+  - 단기금리(STIR) 선물 조합
+- 캐나다 고객은 다른 증거금 파일의 대안으로 CDCC SPAN 파일을 사용할 수 있다
+
+**추가 자본 증거금 (Additional Capital Margin):**
+- 청산회원의 신용 익스포저를 측정한다
+- 청산회원의 기본 개시증거금이 자본금을 초과하는 경우, 초과분의 최소 50%를 징수할 것을 요구한다
+
+### 12.3 변동증거금 (Variation Margin)
+
+- 일일 시가평가 결제 수행
+- 선물: 일일 결제가격을 이용한 손익 산출; 변동증거금 일일 징수/지급
+- 옵션: 주식 및 ETF 옵션에 대한 프리미엄 방식 증거금
+
+### 12.4 채무불이행 관리 (Default Management)
+
+CDCC는 다음을 포함하는 채무불이행 워터폴을 유지한다:
+1. 채무불이행 회원의 증거금 및 담보
+2. 채무불이행 회원의 청산기금 분담금
+3. CDCC 자체 전용 재원 (자기기여금, skin-in-the-game)
+4. 비채무불이행 회원의 청산기금 분담금
+5. 추가 분담금
+
+[Source: CDCC website, "Margining", "Risk Management"; CDCC Operations Manual (August 2025); OSC, "Canadian Derivatives Clearing Corporation" RFC document, February 2023; CDCC Notice 154-22; Bank of Canada, "Stress testing central counterparties for resolution planning", March 2025]
+
+---
+
+## 출처 (Sources)
+
+- [Montreal Exchange — Wikipedia](https://en.wikipedia.org/wiki/Montreal_Exchange)
+- [MX Official Website](https://www.m-x.ca/en)
+- [MX SOLA Overview](https://www.m-x.ca/en/trading/connectivity/sola-overview)
+- [MX Trading Hours & Holidays](https://www.m-x.ca/en/trading/data/trading-hours-and-holidays)
+- [MX Market Making Programs](https://www.m-x.ca/en/trading/programs/market-making)
+- [MX Exchange Market Thresholds and Controls](https://www.m-x.ca/en/trading/connectivity/exchange-market-thresholds-and-controls)
+- [MX Equity Options Reference Manual](https://www.m-x.ca/f_publications_en/en.guide.options.pdf)
+- [MX Equity Options Product Page](https://www.m-x.ca/en/markets/equity-derivatives/equity-options)
+- [MX Interest Rate Derivatives](https://www.m-x.ca/en/markets/interest-rate-derivatives)
+- [MX CRA Product Page](https://www.m-x.ca/en/markets/interest-rate-derivatives/cra)
+- [MX COA Product Page](https://www.m-x.ca/en/markets/interest-rate-derivatives/coa)
+- [MX CGB Product Page](https://www.m-x.ca/en/markets/interest-rate-derivatives/cgb)
+- [MX SXF Product Page](https://www.m-x.ca/en/markets/index-derivatives/sxf)
+- [MX Regulatory Division](https://reg.m-x.ca/en)
+- [AMF — Self-Regulatory Organizations](https://lautorite.qc.ca/en/professionals/market-structures/self-regulatory-organizations)
+- [CIRO — About](https://www.ciro.ca/about-ciro)
+- [CDCC Official Website](https://www.cdcc.ca/en/)
+- [CDCC Margining](https://cdcc.ca/en/risk/management/margining)
+- [CDCC Risk Management](https://www.cdcc.ca/en/risk/management)
+- [CDCC Operations Manual (August 2025)](https://www.cdcc.ca/f_rules_en/cdcc_operations_manual_en.pdf)
+- [MX Q4 2025 Highlights](https://www.m-x.ca/f_market_activity_en/mx_highlights_2025_q4_en.pdf)
+- [MX CORRA FAQ (February 2024)](https://www.m-x.ca/f_publications_en/corra_faq_en.pdf)
+- [Finextra — Montreal Exchange upgrades Sola derivatives trading platform (2013)](https://www.finextra.com/pressarticle/52603/montreal-exchange-upgrades-sola-derivatives-trading-platform)
+- [Mondovisione — FTSE Canada Bank Credit Index Futures (June 2025)](https://mondovisione.com/media-and-resources/news/montral-exchange-to-launch-ftse-canada-bank-credit-index-futures-a-first-of-2025617/)
+- [Bank of Canada — Stress testing CCPs for resolution planning (March 2025)](https://www.bankofcanada.ca/2025/03/staff-analytical-note-2025-11/)
+- [Trading Technologies — MX Overview](https://library.tradingtechnologies.com/user-setup/mx-overview.html)

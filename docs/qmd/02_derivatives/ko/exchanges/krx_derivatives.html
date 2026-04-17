@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>KRX 파생상품시장 (한국거래소) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/krx_derivatives.html">KRX 파생상품시장 (한국거래소)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 (Global Derivatives Markets) — 개요 (Overview)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 — 비교 분석 (Global Derivatives Markets – Comparative Analysis)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">거래소</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Derivatives (호주증권거래소 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cboe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cboe Global Markets (Cboe 글로벌 마켓)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX, 중국금융선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group (CME 그룹)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE, 다롄상품거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME, 두바이상업거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/eurex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex (유렉스)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext Derivatives (유로넥스트 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX (홍콩거래소) 파생상품 시장</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange 선물)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">KRX 파생상품시장 (한국거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX, 몬트리올거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O, 인도국립증권거래소 선물옵션)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (오사카거래소, OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX (싱가포르거래소) 파생상품</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE, 상하이선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX, 대만선물거래소)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">규제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">아시아태평양 파생상품 규제 (Asia-Pacific Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU 파생상품 규제 (EU Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">미국 파생상품 규제 (U.S. Derivatives Regulation)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">매매시스템</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#개요-및-프로필-overview-profile" id="toc-개요-및-프로필-overview-profile" class="nav-link active" data-scroll-target="#개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</a>
+  <ul class="collapse">
+  <li><a href="#주요-연혁-key-historical-milestones" id="toc-주요-연혁-key-historical-milestones" class="nav-link" data-scroll-target="#주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</a></li>
+  </ul></li>
+  <li><a href="#시장-구조-market-structure" id="toc-시장-구조-market-structure" class="nav-link" data-scroll-target="#시장-구조-market-structure">2. 시장 구조 (Market Structure)</a>
+  <ul class="collapse">
+  <li><a href="#시장-세그먼트-market-segments" id="toc-시장-세그먼트-market-segments" class="nav-link" data-scroll-target="#시장-세그먼트-market-segments">2.1 시장 세그먼트 (Market Segments)</a></li>
+  <li><a href="#매매거래-시간-trading-sessions-hours" id="toc-매매거래-시간-trading-sessions-hours" class="nav-link" data-scroll-target="#매매거래-시간-trading-sessions-hours">2.2 매매거래 시간 (Trading Sessions / Hours)</a></li>
+  <li><a href="#호가-단위-tick-sizes-주요-상품" id="toc-호가-단위-tick-sizes-주요-상품" class="nav-link" data-scroll-target="#호가-단위-tick-sizes-주요-상품">2.3 호가 단위 (Tick Sizes, 주요 상품)</a></li>
+  <li><a href="#계약-규모-거래-승수-lot-sizes-contract-units" id="toc-계약-규모-거래-승수-lot-sizes-contract-units" class="nav-link" data-scroll-target="#계약-규모-거래-승수-lot-sizes-contract-units">2.4 계약 규모 / 거래 승수 (Lot Sizes / Contract Units)</a></li>
+  <li><a href="#유동성공급자-프로그램-market-maker-liquidity-provider-programs" id="toc-유동성공급자-프로그램-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#유동성공급자-프로그램-market-maker-liquidity-provider-programs">2.5 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)</a></li>
+  </ul></li>
+  <li><a href="#매매거래-체결-방식-trading-mechanism" id="toc-매매거래-체결-방식-trading-mechanism" class="nav-link" data-scroll-target="#매매거래-체결-방식-trading-mechanism">3. 매매거래 체결 방식 (Trading Mechanism)</a>
+  <ul class="collapse">
+  <li><a href="#단일가매매-유형-auction-types" id="toc-단일가매매-유형-auction-types" class="nav-link" data-scroll-target="#단일가매매-유형-auction-types">3.1 단일가매매 유형 (Auction Types)</a></li>
+  <li><a href="#접속매매-continuous-trading" id="toc-접속매매-continuous-trading" class="nav-link" data-scroll-target="#접속매매-continuous-trading">3.2 접속매매 (Continuous Trading)</a></li>
+  <li><a href="#가격-발견-price-discovery" id="toc-가격-발견-price-discovery" class="nav-link" data-scroll-target="#가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</a></li>
+  </ul></li>
+  <li><a href="#주문-유형-order-types" id="toc-주문-유형-order-types" class="nav-link" data-scroll-target="#주문-유형-order-types">4. 주문 유형 (Order Types)</a></li>
+  <li><a href="#거래-시스템-trading-system-technology" id="toc-거래-시스템-trading-system-technology" class="nav-link" data-scroll-target="#거래-시스템-trading-system-technology">5. 거래 시스템 (Trading System / Technology)</a></li>
+  <li><a href="#시장-데이터-market-data" id="toc-시장-데이터-market-data" class="nav-link" data-scroll-target="#시장-데이터-market-data">6. 시장 데이터 (Market Data)</a></li>
+  <li><a href="#연결-및-접근-방법-connectivity-access" id="toc-연결-및-접근-방법-connectivity-access" class="nav-link" data-scroll-target="#연결-및-접근-방법-connectivity-access">7. 연결 및 접근 방법 (Connectivity &amp; Access)</a></li>
+  <li><a href="#리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" id="toc-리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (Risk Controls &amp; Circuit Breakers)</a>
+  <ul class="collapse">
+  <li><a href="#정적-가격-제한폭-일별-static-price-limits" id="toc-정적-가격-제한폭-일별-static-price-limits" class="nav-link" data-scroll-target="#정적-가격-제한폭-일별-static-price-limits">8.1 정적 가격 제한폭 (일별, Static Price Limits)</a></li>
+  <li><a href="#동적vi-dynamic-volatility-interruption" id="toc-동적vi-dynamic-volatility-interruption" class="nav-link" data-scroll-target="#동적vi-dynamic-volatility-interruption">8.2 동적VI (Dynamic Volatility Interruption)</a></li>
+  <li><a href="#정적vi-static-volatility-interruption" id="toc-정적vi-static-volatility-interruption" class="nav-link" data-scroll-target="#정적vi-static-volatility-interruption">8.3 정적VI (Static Volatility Interruption)</a></li>
+  <li><a href="#시장-전체-서킷브레이커-market-wide-circuit-breaker-sidecar" id="toc-시장-전체-서킷브레이커-market-wide-circuit-breaker-sidecar" class="nav-link" data-scroll-target="#시장-전체-서킷브레이커-market-wide-circuit-breaker-sidecar">8.4 시장 전체 서킷브레이커 (Market-wide Circuit Breaker / Sidecar)</a></li>
+  <li><a href="#사전-리스크-통제-pre-trade-risk-controls" id="toc-사전-리스크-통제-pre-trade-risk-controls" class="nav-link" data-scroll-target="#사전-리스크-통제-pre-trade-risk-controls">8.5 사전 리스크 통제 (Pre-trade Risk Controls)</a></li>
+  </ul></li>
+  <li><a href="#규제-체계-regulatory-framework" id="toc-규제-체계-regulatory-framework" class="nav-link" data-scroll-target="#규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</a></li>
+  <li><a href="#수수료-및-수익-구조-fees-revenue-model" id="toc-수수료-및-수익-구조-fees-revenue-model" class="nav-link" data-scroll-target="#수수료-및-수익-구조-fees-revenue-model">10. 수수료 및 수익 구조 (Fees &amp; Revenue Model)</a></li>
+  <li><a href="#최근-동향-recent-developments" id="toc-최근-동향-recent-developments" class="nav-link" data-scroll-target="#최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</a>
+  <ul class="collapse">
+  <li><a href="#포지션-한도-position-limits" id="toc-포지션-한도-position-limits" class="nav-link" data-scroll-target="#포지션-한도-position-limits">포지션 한도 (Position Limits)</a></li>
+  <li><a href="#협의대량매매-block-trading" id="toc-협의대량매매-block-trading" class="nav-link" data-scroll-target="#협의대량매매-block-trading">협의대량매매 (Block Trading)</a></li>
+  <li><a href="#계약-만기-및-결제-contract-expiration-settlement" id="toc-계약-만기-및-결제-contract-expiration-settlement" class="nav-link" data-scroll-target="#계약-만기-및-결제-contract-expiration-settlement">계약 만기 및 결제 (Contract Expiration &amp; Settlement)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/krx_derivatives.html">KRX 파생상품시장 (한국거래소)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">KRX 파생상품시장 (한국거래소)</h1>
+<p class="subtitle lead">파생상품 &gt; 거래소</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 4월 17일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>최종 업데이트:</strong> 2026-04-13 <strong>조사 등급:</strong> Tier 1 <strong>도메인:</strong> 파생상품</p>
+</blockquote>
+<hr>
+<section id="개요-및-프로필-overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>공식 명칭</td>
+<td>Korea Exchange (한국거래소)</td>
+</tr>
+<tr class="even">
+<td>약칭</td>
+<td>KRX</td>
+</tr>
+<tr class="odd">
+<td>웹사이트</td>
+<td>https://www.krx.co.kr (국내), https://global.krx.co.kr (영문)</td>
+</tr>
+<tr class="even">
+<td>설립 연도</td>
+<td>2005년 (KSE, KOSDAQ, KOFEX 합병으로 KRX 출범); 전신인 한국선물거래소(KOFEX)는 1999년 설립</td>
+</tr>
+<tr class="odd">
+<td>국가 / 도시</td>
+<td>대한민국 / 부산 (본사), 서울 (거래장)</td>
+</tr>
+<tr class="even">
+<td>소유 구조</td>
+<td>금융위원회(FSC) 산하 공공기관; 비상장</td>
+</tr>
+<tr class="odd">
+<td>규제 기관</td>
+<td>금융위원회 (FSC, Financial Services Commission) / 금융감독원 (FSS, Financial Supervisory Service)</td>
+</tr>
+<tr class="even">
+<td>연간 거래량 (2024년)</td>
+<td>약 15억 계약 (2023년 약 20억 계약, FIA 기준 세계 12위)</td>
+</tr>
+<tr class="odd">
+<td>역대 최고 기록</td>
+<td>2011년 39억 3천만 계약 — 거래량 기준 세계 최대 옵션거래소</td>
+</tr>
+<tr class="even">
+<td>청산기관</td>
+<td>KRX가 거래소-CCP 통합 운영(수직 통합); KRX 청산이 모든 장내 파생상품의 중앙청산소(CCP) 역할 수행</td>
+</tr>
+</tbody>
+</table>
+<section id="주요-연혁-key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</h3>
+<ul>
+<li><strong>1996년:</strong> KOSPI200선물 상장 (5월 3일) — 한국 최초의 장내 파생상품</li>
+<li><strong>1997년:</strong> KOSPI200옵션 상장 (7월 7일) — 이후 거래량 기준 세계 최다 거래 단일 계약으로 부상</li>
+<li><strong>1999년:</strong> 부산에 한국선물거래소(KOFEX) 별도 설립</li>
+<li><strong>2001년:</strong> USD선물 및 주식옵션 상장</li>
+<li><strong>2002년:</strong> CD금리선물, 국채3년선물(KTB 3Y) 상장</li>
+<li><strong>2004년:</strong> 국채10년선물(KTB 10Y) 상장</li>
+<li><strong>2005년:</strong> 한국증권거래소(KSE), KOSDAQ위원회, 한국선물거래소(KOFEX) 합병으로 KRX 출범 (1월 27일)</li>
+<li><strong>2008년:</strong> 돈육선물, 금선물 상장</li>
+<li><strong>2009년:</strong> KRX 세계 최대 거래소 등극 (31억 계약); 섹터지수선물/옵션 상장</li>
+<li><strong>2011년:</strong> 역대 최고 거래량 39억 3천만 계약 달성; KOSPI200옵션 단독으로 약 36억 7천만 계약 기록</li>
+<li><strong>2012년:</strong> KOSPI200옵션 승수 10만 원에서 50만 원으로 5배 인상 (6월); 이에 따라 연간 거래량 53.3% 급감</li>
+<li><strong>2014년:</strong> EXTURE+ 거래시스템 출범 (기존 EXTURE 시스템 대체)</li>
+<li><strong>2015년:</strong> 미니선물/미니옵션 상장; V-KOSPI200선물 상장</li>
+<li><strong>2017년:</strong> 위클리옵션 (주간 KOSPI200옵션) 상장</li>
+<li><strong>2019년:</strong> KOSDAQ150선물/옵션 상장</li>
+<li><strong>2022년:</strong> 섹터지수옵션 상품군 확대</li>
+<li><strong>2025년:</strong> 독립 야간거래 세션 출범 (6월 9일, Eurex 연계 시간외거래 세션 대체); KRX 기술 태국증권거래소(Thai Stock Exchange) 수출 (2025년 4월 계약 체결)</li>
+<li><strong>2026년:</strong> KOSPI200옵션 행사가격 확대 (4월 27일부터 48개 추가 행사가격 도입); 신규 주식선물/옵션 상장; TIGER반도체 ETF선물 상장</li>
+</ul>
+<p>[Source: KRX, “파생상품시장 업무규정_전문_20250609”] [Source: KRX Global Website, https://global.krx.co.kr] [Source: MarketsWiki, “Korea Exchange”] [Source: FIA, ETD Tracker]</p>
+<hr>
+</section>
+</section>
+<section id="시장-구조-market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="시장-구조-market-structure">2. 시장 구조 (Market Structure)</h2>
+<section id="시장-세그먼트-market-segments" class="level3">
+<h3 class="anchored" data-anchor-id="시장-세그먼트-market-segments">2.1 시장 세그먼트 (Market Segments)</h3>
+<p>KRX 파생상품시장은 모든 장내 파생상품을 아우르는 통합 세그먼트로 운영된다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>세그먼트</th>
+<th>상품</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>주가지수 파생상품</strong></td>
+<td>KOSPI200선물/옵션, 미니선물/미니옵션, KOSDAQ150선물/옵션, 섹터지수선물/옵션, KRX300선물, 위클리옵션</td>
+</tr>
+<tr class="even">
+<td><strong>금리 파생상품</strong></td>
+<td>국채3년선물, 국채10년선물, 국채30년선물</td>
+</tr>
+<tr class="odd">
+<td><strong>통화 파생상품</strong></td>
+<td>USD선물/옵션, JPY선물, EUR선물, CNY선물</td>
+</tr>
+<tr class="even">
+<td><strong>상품 파생상품</strong></td>
+<td>금선물, 돈육선물</td>
+</tr>
+<tr class="odd">
+<td><strong>변동성 파생상품</strong></td>
+<td>V-KOSPI200선물</td>
+</tr>
+<tr class="even">
+<td><strong>주식 파생상품</strong></td>
+<td>주식선물 약 274종목, 주식옵션 약 64종목 (2026년 4월 기준)</td>
+</tr>
+<tr class="odd">
+<td><strong>ETF 파생상품</strong></td>
+<td>ETF선물 (예: TIGER반도체TOP10 ETF선물)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="매매거래-시간-trading-sessions-hours" class="level3">
+<h3 class="anchored" data-anchor-id="매매거래-시간-trading-sessions-hours">2.2 매매거래 시간 (Trading Sessions / Hours)</h3>
+<p>업무규정 제4조 및 시행세칙 기준:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>시간 (KST)</th>
+<th>시간 (UTC)</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>장 개시 전 단일가</strong></td>
+<td>08:00–09:00</td>
+<td>23:00–00:00</td>
+<td>시가 결정을 위한 단일가매매 (접속매매 개시 전)</td>
+</tr>
+<tr class="even">
+<td><strong>정규거래</strong></td>
+<td>09:00–15:45</td>
+<td>00:00–06:45</td>
+<td>접속매매 (연속거래)</td>
+</tr>
+<tr class="odd">
+<td><strong>장 마감 단일가</strong></td>
+<td>15:35–15:45</td>
+<td>06:35–06:45</td>
+<td>종가 및 결제가격 결정을 위한 단일가매매</td>
+</tr>
+<tr class="even">
+<td><strong>야간거래</strong></td>
+<td>18:00–06:00</td>
+<td>09:00–21:00</td>
+<td>KRX 독립 운영 세션 (2025년 6월 9일 개시)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>야간거래 대상 상품 (총 10종):</strong> - KOSPI200선물, 미니선물, KOSDAQ150선물 - KOSPI200옵션, 미니옵션, 위클리옵션, KOSDAQ150옵션 - USD선물, 국채3년선물, 국채10년선물</p>
+<p><strong>총 거래 가능 시간:</strong> 하루 약 19시간 (정규거래 + 야간거래).</p>
+<p><strong>최종거래일:</strong> 09:00–14:50 (단축 운영, 야간거래 없음).</p>
+<p>[Source: KRX, “파생상품시장 업무규정_전문_20250609”; KRX, “파생상품시장 업무규정 시행세칙_전문_20251027”]</p>
+</section>
+<section id="호가-단위-tick-sizes-주요-상품" class="level3">
+<h3 class="anchored" data-anchor-id="호가-단위-tick-sizes-주요-상품">2.3 호가 단위 (Tick Sizes, 주요 상품)</h3>
+<p>규정 별표 기준:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>호가 단위</th>
+<th>틱 가치</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>KOSPI200선물</td>
+<td>0.05포인트</td>
+<td>25,000원</td>
+</tr>
+<tr class="even">
+<td>KOSPI200옵션 (프리미엄 3포인트 이상)</td>
+<td>0.05포인트</td>
+<td>25,000원</td>
+</tr>
+<tr class="odd">
+<td>KOSPI200옵션 (프리미엄 3포인트 미만)</td>
+<td>0.01포인트</td>
+<td>5,000원</td>
+</tr>
+<tr class="even">
+<td>미니선물</td>
+<td>0.05포인트</td>
+<td>5,000원</td>
+</tr>
+<tr class="odd">
+<td>국채3년선물</td>
+<td>0.01포인트</td>
+<td>10,000원</td>
+</tr>
+<tr class="even">
+<td>국채10년선물</td>
+<td>0.01포인트</td>
+<td>10,000원</td>
+</tr>
+<tr class="odd">
+<td>USD선물</td>
+<td>0.10 (원/달러)</td>
+<td>5,000원</td>
+</tr>
+<tr class="even">
+<td>금선물</td>
+<td>10원/g</td>
+<td>10,000원</td>
+</tr>
+<tr class="odd">
+<td>V-KOSPI200선물</td>
+<td>0.05포인트</td>
+<td>12,500원</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="계약-규모-거래-승수-lot-sizes-contract-units" class="level3">
+<h3 class="anchored" data-anchor-id="계약-규모-거래-승수-lot-sizes-contract-units">2.4 계약 규모 / 거래 승수 (Lot Sizes / Contract Units)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>계약 단위 / 승수</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>KOSPI200선물</td>
+<td>KOSPI200지수 × 500,000원</td>
+</tr>
+<tr class="even">
+<td>KOSPI200옵션</td>
+<td>KOSPI200지수 × 500,000원</td>
+</tr>
+<tr class="odd">
+<td>미니선물/미니옵션</td>
+<td>KOSPI200지수 × 100,000원</td>
+</tr>
+<tr class="even">
+<td>KOSDAQ150선물/옵션</td>
+<td>KOSDAQ150지수 × 100,000원</td>
+</tr>
+<tr class="odd">
+<td>국채3년선물</td>
+<td>액면가 100,000,000원 (표면이율 5% 기준)</td>
+</tr>
+<tr class="even">
+<td>국채10년선물</td>
+<td>액면가 100,000,000원 (표면이율 5% 기준)</td>
+</tr>
+<tr class="odd">
+<td>USD선물</td>
+<td>USD 50,000</td>
+</tr>
+<tr class="even">
+<td>JPY선물</td>
+<td>JPY 5,000,000</td>
+</tr>
+<tr class="odd">
+<td>EUR선물</td>
+<td>EUR 50,000</td>
+</tr>
+<tr class="even">
+<td>CNY선물</td>
+<td>CNY 200,000</td>
+</tr>
+<tr class="odd">
+<td>금선물</td>
+<td>1kg (1,000g)</td>
+</tr>
+<tr class="even">
+<td>돈육선물</td>
+<td>10,000kg</td>
+</tr>
+<tr class="odd">
+<td>주식선물</td>
+<td>1계약 = 10주</td>
+</tr>
+<tr class="even">
+<td>주식옵션</td>
+<td>1계약 = 10주</td>
+</tr>
+<tr class="odd">
+<td>V-KOSPI200선물</td>
+<td>지수 × 250,000원</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="유동성공급자-프로그램-market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="유동성공급자-프로그램-market-maker-liquidity-provider-programs">2.5 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)</h3>
+<p>KRX는 파생상품 전 상품에 걸쳐 유동성공급자(LP) 프로그램을 운영한다:</p>
+<p><strong>프로그램 구조:</strong> - KRX가 특정 상품에 대한 유동성공급자를 지정하며, 지정된 유동성공급자는 양방향 호가를 지속적으로 제공해야 한다 - 유동성공급자는 수수료 환급 및 거래량 기반 인센티브를 수령한다 - KRX가 정기적으로 성과를 평가하며, 미달 시 지정이 취소될 수 있다</p>
+<p><strong>운영 중인 프로그램:</strong> - KOSPI200옵션 (위클리옵션 및 미니옵션 포함) - 섹터지수옵션 - USD옵션 - 주식옵션 및 주식선물 - 미니선물/미니옵션 상품군 - KOSDAQ150옵션</p>
+<p>[Source: KRX, “파생상품시장 업무규정_전문_20250609”]</p>
+<hr>
+</section>
+</section>
+<section id="매매거래-체결-방식-trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="매매거래-체결-방식-trading-mechanism">3. 매매거래 체결 방식 (Trading Mechanism)</h2>
+<section id="단일가매매-유형-auction-types" class="level3">
+<h3 class="anchored" data-anchor-id="단일가매매-유형-auction-types">3.1 단일가매매 유형 (Auction Types)</h3>
+<p><strong>개시단일가 (Opening Single-Price Auction):</strong> - 정규거래 및 야간거래 세션 초반에 적용 - 체결 수량이 최대가 되는 가격에서 누적 주문을 일괄 체결 - 시세 조작 방지를 위한 임의종료시간 적용</p>
+<p><strong>종가단일가 (Closing Single-Price Auction):</strong> - 정규거래 및 야간거래 세션 마지막 10분 적용 (정규거래: 15:35–15:45 KST) - 단일가매매 알고리즘으로 결제가격 결정 - 임의종료시간 적용</p>
+<p><strong>변동성 완화장치 (Intraday Volatility Interruption):</strong> - 동적VI 또는 정적VI 발동 조건 충족 시 일시적 단일가매매로 전환 - 2분간 냉각 후 단일가매매 실시</p>
+</section>
+<section id="접속매매-continuous-trading" class="level3">
+<h3 class="anchored" data-anchor-id="접속매매-continuous-trading">3.2 접속매매 (Continuous Trading)</h3>
+<ul>
+<li><strong>가격우선·시간우선 원칙:</strong> 표준 FIFO 체결 방식 — 최우선 가격 주문이 먼저 체결되며, 동일 가격 내에서는 접수 시각이 빠른 주문이 우선 체결</li>
+<li><strong>주문주도형 시장:</strong> 스페셜리스트 또는 딜러 제도 없이, 유동성은 일반 투자자 및 유동성공급자 주문으로 구성</li>
+<li>EXTURE+ 플랫폼을 통한 완전 전자 체결</li>
+</ul>
+</section>
+<section id="가격-발견-price-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</h3>
+<ul>
+<li><strong>시가:</strong> 세션 개시 시 단일가매매 알고리즘으로 결정</li>
+<li><strong>결제가격:</strong> 결제 구간 내 최종 체결가 (일부 상품의 경우 최종결제에 VWAP 방식 적용)</li>
+<li><strong>KOSPI200선물 최종결제가격:</strong> 최종거래일 마지막 30분간 구성 종목 시가의 가중평균값으로 산출하며, 시세 조작 방지 목적의 계산 방식 적용</li>
+<li><strong>내재가격 산정:</strong> 미지원 — KRX는 직접 오더북 매칭 방식만 사용 (CME Globex의 내재 스프레드 기능과 상이)</li>
+</ul>
+<p>[Source: KRX, “파생상품시장 업무규정_전문_20250609”]</p>
+<hr>
+</section>
+</section>
+<section id="주문-유형-order-types" class="level2">
+<h2 class="anchored" data-anchor-id="주문-유형-order-types">4. 주문 유형 (Order Types)</h2>
+<p>업무규정 기준:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 44%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>한국어 명칭</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>지정가주문</strong></td>
+<td>지정가</td>
+<td>가격을 지정하여 지정가 또는 유리한 가격에 체결</td>
+</tr>
+<tr class="even">
+<td><strong>시장가주문</strong></td>
+<td>시장가</td>
+<td>접수 즉시 최우선 가격에 체결</td>
+</tr>
+<tr class="odd">
+<td><strong>최유리지정가주문</strong></td>
+<td>최유리지정가</td>
+<td>접수 시점의 최우선 상대방 호가로 지정가주문으로 전환되어 체결</td>
+</tr>
+<tr class="even">
+<td><strong>조건부지정가주문</strong></td>
+<td>조건부지정가</td>
+<td>접속매매 중에는 지정가로 작동하며, 종가단일가 시 시장가로 전환</td>
+</tr>
+<tr class="odd">
+<td><strong>IOC주문</strong></td>
+<td>즉시체결·잔량취소</td>
+<td>즉시 체결 가능한 수량만 체결하고 잔량은 취소</td>
+</tr>
+<tr class="even">
+<td><strong>FOK주문</strong></td>
+<td>전량체결·전량취소</td>
+<td>전량 체결이 불가능한 경우 주문 전체 취소</td>
+</tr>
+<tr class="odd">
+<td><strong>조건부주문</strong></td>
+<td>조건부주문</td>
+<td>기준가격이 지정 수준에 도달할 때 발동하는 스톱 주문</td>
+</tr>
+<tr class="even">
+<td><strong>스프레드주문</strong></td>
+<td>스프레드주문</td>
+<td>서로 다른 결제월 계약을 지정 가격 차이로 동시에 매수/매도</td>
+</tr>
+</tbody>
+</table>
+<p><strong>유효기간:</strong> 정규거래 세션은 당일(DAY)만 적용; 야간거래 주문은 별도로 관리되며 정규거래로 이월되지 않는다.</p>
+<p>[Source: KRX, “파생상품시장 업무규정_전문_20250609”]</p>
+<hr>
+</section>
+<section id="거래-시스템-trading-system-technology" class="level2">
+<h2 class="anchored" data-anchor-id="거래-시스템-trading-system-technology">5. 거래 시스템 (Trading System / Technology)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시스템명</td>
+<td>EXTURE+ (EXTURE Plus)</td>
+</tr>
+<tr class="even">
+<td>가동 연도</td>
+<td>2014년</td>
+</tr>
+<tr class="odd">
+<td>개발사</td>
+<td>KOSCOM (KRX 기술 자회사)</td>
+</tr>
+<tr class="even">
+<td>아키텍처</td>
+<td>메모리 기반 오더북, x86 Linux 서버상 계층형(tiered) 아키텍처</td>
+</tr>
+<tr class="odd">
+<td>지연시간</td>
+<td>평균 약 30–50마이크로초 (일부 자료에서 약 70마이크로초로 기재) [미확인]</td>
+</tr>
+<tr class="even">
+<td>처리 용량</td>
+<td>초당 100,000건 이상 (TPS)</td>
+</tr>
+<tr class="odd">
+<td>성능 개선</td>
+<td>기존 EXTURE 대비 약 285배 빠름</td>
+</tr>
+<tr class="even">
+<td>프로토콜</td>
+<td>FIX/FAST (시장 연결)</td>
+</tr>
+<tr class="odd">
+<td>데이터 인프라</td>
+<td>Solace PubSub+ (고속 데이터 전송)</td>
+</tr>
+<tr class="even">
+<td>적용 범위</td>
+<td>통합 플랫폼: 주식, 채권, 선물, 옵션, ETF, 워런트, 상품</td>
+</tr>
+<tr class="odd">
+<td>주요 기능</td>
+<td>오픈소스 아키텍처, 무중단 장애복구(zero-data-loss failover), 리스크 필터링 적용 DMA, 다단계 서킷브레이커, 알고리즘/HFT 지원</td>
+</tr>
+<tr class="even">
+<td>코로케이션</td>
+<td>부산 데이터센터 내 KRX 코로케이션 시설 운영</td>
+</tr>
+<tr class="odd">
+<td>기술 수출</td>
+<td>KRX는 EXTURE+ 기술을 해외 거래소에 수출 중 (태국증권거래소와 2025년 4월 계약 체결)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>이전 시스템:</strong> - <strong>EXTURE</strong> (2009년): KOSDAQ 및 파생상품 레거시 시스템을 통합 대체 - <strong>2009년 이전:</strong> 주식(KSE), KOSDAQ, KOFEX 파생상품별 별도 거래시스템 운영</p>
+<p>[Source: KRX Global Website; WFE, “Future of Korea Exchange”]</p>
+<hr>
+</section>
+<section id="시장-데이터-market-data" class="level2">
+<h2 class="anchored" data-anchor-id="시장-데이터-market-data">6. 시장 데이터 (Market Data)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>실시간 데이터 피드</td>
+<td>FIX/FAST 프로토콜 기반 EXTURE+ 데이터 피드</td>
+</tr>
+<tr class="even">
+<td>데이터 전송</td>
+<td>Solace PubSub+ 고속 멀티캐스트 방식</td>
+</tr>
+<tr class="odd">
+<td>데이터 레벨</td>
+<td>L1 (최우선 매수/매도 호가, 최근 체결가), L2 (오더북 심도 — 통상 5단계 또는 10단계)</td>
+</tr>
+<tr class="even">
+<td>과거 데이터</td>
+<td>KRX 데이터마켓플레이스 (data.krx.co.kr)</td>
+</tr>
+<tr class="odd">
+<td>시장 데이터 공급사</td>
+<td>Bloomberg, Refinitiv, KOSCOM (KRX 정보서비스)</td>
+</tr>
+<tr class="even">
+<td>기관 접근</td>
+<td>FIX/FAST 프로토콜 기반 직접 피드 구독</td>
+</tr>
+<tr class="odd">
+<td>공개 데이터</td>
+<td>KRX 웹사이트를 통한 무료 지연 데이터 제공; 실시간 데이터는 구독 계약 필요</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: KRX Global Website, https://global.krx.co.kr]</p>
+<hr>
+</section>
+<section id="연결-및-접근-방법-connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="연결-및-접근-방법-connectivity-access">7. 연결 및 접근 방법 (Connectivity &amp; Access)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>회원 자격</td>
+<td>직접 시장 참여를 위해 회원(회원) 자격 필요; 유형별 기준은 업무규정에 규정</td>
+</tr>
+<tr class="even">
+<td>회원 유형</td>
+<td>청산회원 및 비청산회원; 청산회원은 결제 의무를 보증</td>
+</tr>
+<tr class="odd">
+<td>접속 방법</td>
+<td>전용 전용회선, 부산 데이터센터 코로케이션</td>
+</tr>
+<tr class="even">
+<td>주문 전송 프로토콜</td>
+<td>FIX 프로토콜</td>
+</tr>
+<tr class="odd">
+<td>인증</td>
+<td>운영 시스템 접속 전 적합성 테스트(인증 테스트) 통과 필요</td>
+</tr>
+<tr class="even">
+<td>코로케이션</td>
+<td>KRX 부산 데이터센터 내 코로케이션 시설 이용 가능</td>
+</tr>
+<tr class="odd">
+<td>외국인 접근</td>
+<td>적격외국투자자(QFI) 제도를 통한 외국인 참여; 외국 법인의 경우 국내 회원 증권사를 통한 접근도 가능</td>
+</tr>
+<tr class="even">
+<td>DMA</td>
+<td>사전 리스크 필터링 적용 직접주문(DMA) 이용 가능</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: KRX Global Website; KRX, “파생상품시장 업무규정_전문_20250609”]</p>
+<hr>
+</section>
+<section id="리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="리스크-관리-및-서킷브레이커-risk-controls-circuit-breakers">8. 리스크 관리 및 서킷브레이커 (Risk Controls &amp; Circuit Breakers)</h2>
+<p>업무규정 및 시행세칙 기준:</p>
+<section id="정적-가격-제한폭-일별-static-price-limits" class="level3">
+<h3 class="anchored" data-anchor-id="정적-가격-제한폭-일별-static-price-limits">8.1 정적 가격 제한폭 (일별, Static Price Limits)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>가격 제한폭</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>KOSPI200선물</td>
+<td>전일 결제가격 대비 ±10%</td>
+</tr>
+<tr class="even">
+<td>주식선물</td>
+<td>±30% (기초자산인 주식의 일일 제한폭과 동일)</td>
+</tr>
+<tr class="odd">
+<td>국채선물</td>
+<td>±1.5% (3년물), ±2.1% (10년물) [미확인 — 규정 표 기반]</td>
+</tr>
+<tr class="even">
+<td>USD선물</td>
+<td>전일 결제가격 대비 지정 비율 기준</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="동적vi-dynamic-volatility-interruption" class="level3">
+<h3 class="anchored" data-anchor-id="동적vi-dynamic-volatility-interruption">8.2 동적VI (Dynamic Volatility Interruption)</h3>
+<ul>
+<li>체결가격이 기준가격 대비 ±3% 이상 이탈 시 발동 (KOSPI200선물 기준)</li>
+<li>2분간 냉각 후 단일가매매 실시</li>
+<li>선물 및 옵션 계약 모두에 적용</li>
+<li>VI 발동 후 기준가격 갱신</li>
+</ul>
+</section>
+<section id="정적vi-static-volatility-interruption" class="level3">
+<h3 class="anchored" data-anchor-id="정적vi-static-volatility-interruption">8.3 정적VI (Static Volatility Interruption)</h3>
+<ul>
+<li>가격이 전일 결제가격 대비 지정 비율을 초과하여 이탈할 경우 발동</li>
+<li>거래 중단 후 단일가매매 실시</li>
+<li>발동 기준은 상품별로 상이</li>
+</ul>
+</section>
+<section id="시장-전체-서킷브레이커-market-wide-circuit-breaker-sidecar" class="level3">
+<h3 class="anchored" data-anchor-id="시장-전체-서킷브레이커-market-wide-circuit-breaker-sidecar">8.4 시장 전체 서킷브레이커 (Market-wide Circuit Breaker / Sidecar)</h3>
+<ul>
+<li><strong>KOSPI200선물 사이드카(Sidecar):</strong> 최근월물 선물가격이 전일 결제가격 대비 ±5% 도달 후 1분간 유지되고, 이론가 대비 ±3% 이상 괴리가 지속될 경우 발동</li>
+<li>발동 시 전 파생상품 계약 5분간 거래 중단</li>
+<li><strong>3단계 구조:</strong> 5% → 10% → 20%</li>
+<li>각 단계는 당일 1회에 한해 발동 가능</li>
+</ul>
+</section>
+<section id="사전-리스크-통제-pre-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="사전-리스크-통제-pre-trade-risk-controls">8.5 사전 리스크 통제 (Pre-trade Risk Controls)</h3>
+<ul>
+<li>회원별 최대 주문 수량 제한</li>
+<li>실시간 포지션 추적 기반 일중 증거금 모니터링</li>
+<li>실시간 포지션 한도 점검</li>
+<li>회원사 대상 킬스위치(Kill Switch) 기능 운영</li>
+<li>주문 수락 전 자동화된 리스크 매개변수 점검</li>
+</ul>
+<p>[Source: KRX, “파생상품시장 업무규정_전문_20250609”; KRX, “파생상품시장 업무규정 시행세칙_전문_20251027”]</p>
+<hr>
+</section>
+</section>
+<section id="규제-체계-regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>감독 기관</td>
+<td>금융위원회 (FSC, Financial Services Commission) — 정책 입안 및 규칙 제정</td>
+</tr>
+<tr class="even">
+<td>검사 / 집행 기관</td>
+<td>금융감독원 (FSS, Financial Supervisory Service) — 검사 및 제재</td>
+</tr>
+<tr class="odd">
+<td>시스템 리스크 감시</td>
+<td>한국은행 (BOK, Bank of Korea) — 시스템 리스크 및 지급결제시스템 감시</td>
+</tr>
+<tr class="even">
+<td>주요 법령</td>
+<td>자본시장과 금융투자업에 관한 법률 (FSCMA, 자본시장법); 파생상품시장 업무규정</td>
+</tr>
+<tr class="odd">
+<td>시장 감시</td>
+<td>KRX 시장감시위원회가 거래 활동의 실시간 모니터링 실시 (스푸핑, 레이어링, 시세 조작 등 탐지 포함)</td>
+</tr>
+<tr class="even">
+<td>포지션 보고</td>
+<td>업무규정에서 정한 기준을 초과하는 대규모 포지션에 대한 보고 의무</td>
+</tr>
+<tr class="odd">
+<td>국경 간 거래 체계</td>
+<td>외국인 참여를 위한 적격외국투자자(QFI) 제도; 외국인 투자자는 금융감독원에 등록 필요</td>
+</tr>
+<tr class="even">
+<td>OTC 청산 의무화</td>
+<td>KRW IRS (이자율스왑) 및 KRW CRS (통화스왑)의 KRX CCP를 통한 청산 의무화</td>
+</tr>
+<tr class="odd">
+<td>자율 규제</td>
+<td>KRX는 금융위원회 감독 하에 자율규제기관(SRO)으로 기능</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: KRX Global Website; Financial Services Commission (FSC)]</p>
+<hr>
+</section>
+<section id="수수료-및-수익-구조-fees-revenue-model" class="level2">
+<h2 class="anchored" data-anchor-id="수수료-및-수익-구조-fees-revenue-model">10. 수수료 및 수익 구조 (Fees &amp; Revenue Model)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>거래 수수료 범위</td>
+<td>약 0.0018%–0.04995% (상품별 상이)</td>
+</tr>
+<tr class="even">
+<td>옵션 수수료</td>
+<td>프리미엄의 약 0.09%–1.5%</td>
+</tr>
+<tr class="odd">
+<td>예시 (반도체지수)</td>
+<td>거래 수수료 0.0005947% + 청산 수수료 0.0001161% = 합계 0.0007108%</td>
+</tr>
+<tr class="even">
+<td>유동성공급자 환급</td>
+<td>지정 유동성공급자 대상 수수료 환급 제도 운영</td>
+</tr>
+<tr class="odd">
+<td>수수료 개편 (2025년 12월)</td>
+<td>20년 만의 첫 수수료 개편 — 주식 부문에 메이커-테이커 모델 도입; 파생상품 수수료도 조정</td>
+</tr>
+<tr class="even">
+<td>경쟁 환경</td>
+<td>KRX는 대체거래소인 넥스트레이드(Nextrade, NXT)와 경쟁 (2025년 3월 주식 부문 영업 개시)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>수익 구조:</strong> - KRX는 거래 수수료, 청산 수수료, 시장 데이터 수수료, 상장 수수료, 기술서비스 수익으로 수익을 창출한다 - 비상장 공공기관으로서 잉여금은 시장 인프라 및 발전에 재투자된다 - 기술 수출 (예: 태국증권거래소에 EXTURE+ 수출)은 신흥 수익원으로 부상하고 있다</p>
+<p>[Source: KRX Global Website; KRX fee schedules]</p>
+<hr>
+</section>
+<section id="최근-동향-recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>날짜</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>2024년</strong></td>
+<td>일일 결제 금액 전년 대비 47.9% 증가; 주식선물/옵션 상장 종목 확대; KRX 파생상품 거래대금 기준 세계 8위 달성</td>
+</tr>
+<tr class="even">
+<td><strong>2025년 6월 9일</strong></td>
+<td>독립 야간거래 세션 출범 (Eurex 연계 시간외거래 세션 대체); 대상 상품 5종에서 10종으로 확대, 운영 시간 18:00–06:00 KST</td>
+</tr>
+<tr class="odd">
+<td><strong>2025년 4월</strong></td>
+<td>태국증권거래소(Thai Stock Exchange)와 EXTURE+ 플랫폼 기술 수출 계약 체결</td>
+</tr>
+<tr class="even">
+<td><strong>2025년 12월</strong></td>
+<td>20년 만의 첫 수수료 개편 — 메이커-테이커 모델 도입; 파생상품 수수료도 조정</td>
+</tr>
+<tr class="odd">
+<td><strong>2026년 3월</strong></td>
+<td>KOSPI200옵션 행사가격 확대 발표 (32개에서 48개 추가 행사가격으로 확대)</td>
+</tr>
+<tr class="even">
+<td><strong>2026년 4월 27일</strong></td>
+<td>신규 파생상품 시스템 가동 및 상품 확대 — 주식선물 24종목 신규 상장, 주식옵션 2종목 신규 상장, TIGER반도체TOP10 ETF선물 상장</td>
+</tr>
+<tr class="odd">
+<td><strong>2026년 (진행 중)</strong></td>
+<td>KRX, 가상자산 관련 ETF 및 파생상품 상장 검토 중 [미확인]</td>
+</tr>
+</tbody>
+</table>
+<section id="포지션-한도-position-limits" class="level3">
+<h3 class="anchored" data-anchor-id="포지션-한도-position-limits">포지션 한도 (Position Limits)</h3>
+<p>업무규정 제154조 기준:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>한도</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>전체 계약 (고객 기준)</td>
+<td>20,000계약</td>
+</tr>
+<tr class="even">
+<td>최종거래일 계약</td>
+<td>20,000계약</td>
+</tr>
+<tr class="odd">
+<td>금선물</td>
+<td>순포지션 3,000계약</td>
+</tr>
+<tr class="even">
+<td>돈육선물</td>
+<td>순포지션 3,000계약 (특정일 이후 최근월물은 900계약)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>헤지 목적의 경우 KRX에 신청하여 한도 예외 적용 가능</li>
+<li>대규모 포지션 보고 기준 적용; 회원사는 지정된 기준을 초과하는 포지션을 KRX에 보고해야 한다</li>
+</ul>
+</section>
+<section id="협의대량매매-block-trading" class="level3">
+<h3 class="anchored" data-anchor-id="협의대량매매-block-trading">협의대량매매 (Block Trading)</h3>
+<p>업무규정 제75조의2 기준:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>최소 수량 (KOSPI200선물)</td>
+<td>500계약 이상</td>
+</tr>
+<tr class="even">
+<td>최소 수량 (주식선물)</td>
+<td>50계약 이상</td>
+</tr>
+<tr class="odd">
+<td>최소 수량 (국채선물)</td>
+<td>100계약 이상</td>
+</tr>
+<tr class="even">
+<td>가격 요건</td>
+<td>현재 시장 상황을 고려하여 공정하고 합리적인 가격이어야 함</td>
+</tr>
+<tr class="odd">
+<td>호가 단위</td>
+<td>표준 호가 단위 요건 준수</td>
+</tr>
+<tr class="even">
+<td>신고</td>
+<td>거래소에 신고 의무; 협의는 제출 전 1시간 이내에 완료해야 함</td>
+</tr>
+<tr class="odd">
+<td>이용 가능 시간</td>
+<td>정규거래 및 야간거래 세션 모두 이용 가능</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="계약-만기-및-결제-contract-expiration-settlement" class="level3">
+<h3 class="anchored" data-anchor-id="계약-만기-및-결제-contract-expiration-settlement">계약 만기 및 결제 (Contract Expiration &amp; Settlement)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 21%">
+<col style="width: 32%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>결제월</th>
+<th>최종거래일</th>
+<th>결제 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>KOSPI200선물</td>
+<td>연속 4개 분기물 (3/6/9/12월)</td>
+<td>결제월 두 번째 목요일</td>
+<td>현금결제</td>
+</tr>
+<tr class="even">
+<td>KOSPI200옵션</td>
+<td>연속 3개 근월물 + 분기물</td>
+<td>두 번째 목요일</td>
+<td>현금결제 (유럽형)</td>
+</tr>
+<tr class="odd">
+<td>미니선물/미니옵션</td>
+<td>월물 + 분기물</td>
+<td>두 번째 목요일</td>
+<td>현금결제</td>
+</tr>
+<tr class="even">
+<td>위클리옵션</td>
+<td>매주</td>
+<td>매주 목요일</td>
+<td>현금결제</td>
+</tr>
+<tr class="odd">
+<td>국채3년선물</td>
+<td>분기물 (3/6/9/12월)</td>
+<td>세 번째 수요일 3영업일 전</td>
+<td>실물인수도</td>
+</tr>
+<tr class="even">
+<td>국채10년선물</td>
+<td>분기물 (3/6/9/12월)</td>
+<td>국채3년선물과 동일</td>
+<td>실물인수도</td>
+</tr>
+<tr class="odd">
+<td>USD선물</td>
+<td>월물</td>
+<td>결제월 세 번째 월요일</td>
+<td>현금결제</td>
+</tr>
+<tr class="even">
+<td>금선물</td>
+<td>격월물 (2/4/6/8/10/12월)</td>
+<td>결제월 마지막 영업일</td>
+<td>실물인수도</td>
+</tr>
+<tr class="odd">
+<td>주식선물</td>
+<td>분기물 (3/6/9/12월)</td>
+<td>두 번째 목요일</td>
+<td>현금결제</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: KRX, “파생상품시장 업무규정_전문_20250609”] [Source: KRX, “파생상품시장 업무규정 시행세칙_전문_20251027”] [Source: KRX Global Website, https://global.krx.co.kr] [Source: MarketsWiki, “Korea Exchange”] [Source: FIA, ETD Tracker] [Source: WFE, “Future of Korea Exchange”]</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,533 @@
+---
+title: "Montreal Exchange (MX)"
+subtitle: "Derivatives > Exchanges"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Bourse de Montréal Inc. (Montreal Exchange) |
+| Abbreviation | MX |
+| Website | https://www.m-x.ca |
+| Year Established | 1832 (informal); 1874 (formal incorporation); 1999 (derivatives specialization) |
+| Country / City | Canada / Montreal, Quebec (Tour de la Bourse, 800 Victoria Square) |
+| Ownership Structure | Wholly-owned subsidiary of TMX Group Limited (TSX: X) |
+| Parent Company / Group | TMX Group Limited |
+| Regulatory Authority | Autorité des marchés financiers (AMF, Quebec) as lead regulator; Canadian Investment Regulatory Organization (CIRO) for market integrity oversight |
+| President & CEO | Luc Fortin (since August 2016) |
+| Clearing House | Canadian Derivatives Clearing Corporation (CDCC), wholly-owned subsidiary of MX |
+| Average Daily Volume (2025) | ~937,000 contracts/day combined (~520K IRD + ~417K EQD); record year with ~20% YoY growth in both segments |
+| Key Product Areas | Interest rate derivatives (CORRA futures, Government of Canada bond futures), equity index derivatives, equity options, ETF options |
+
+[Source: Wikipedia, "Montreal Exchange"; TMX Group website; MX website (m-x.ca); MX Q4 2025 Highlights report]
+
+### Key Historical Milestones
+
+- **1832:** Informal stock exchange established at Exchange Coffee House in Montreal — one of Canada's earliest financial markets
+- **1874:** Formally incorporated as the Montreal Stock Exchange by Lorn MacDougall and partners
+- **1903:** Purpose-built exchange building opened, designed by George B. Post (architect of the NYSE building)
+- **1926:** Montreal Curb Market created for speculative and junior stocks
+- **1953:** Curb Market renamed to Canadian Stock Exchange
+- **1965:** Moved into Tour de la Bourse (Stock Exchange Tower), Montreal's third-tallest building
+- **1974:** Canadian Stock Exchange merged with Montreal Stock Exchange
+- **1975:** First exchange in Canada to list stock options
+- **1982:** Renamed from "Montreal Stock Exchange" to "Montreal Exchange" to reflect expanded financial instruments
+- **1989 (September):** Launched Ten-Year Government of Canada Bond Futures (CGB)
+- **1999:** Following restructuring agreement among Canadian exchanges, MX became Canada's sole derivatives exchange; equity trading transferred to Toronto Stock Exchange
+- **2001:** Completed migration from open outcry to fully automated electronic trading — first traditional exchange in North America to achieve this
+- **2004 (February):** Became sole provider of electronic trading systems for Boston Options Exchange (BOX); held 31.4% stake, increasing to over 51% by 2009
+- **2006 (July):** Established Montreal Climate Exchange (joint venture with Chicago Climate Exchange) — first regulated environmental market in Canada
+- **2007 (December):** TSX Group announced acquisition of MX for C$1.31 billion
+- **2008 (May 1):** Acquisition completed; combined entity renamed TMX Group Inc.
+- **2013:** Upgraded SOLA trading platform with ~300% improvement in trading response time and doubled messaging capacity to 100,000 quotes/second
+- **2020:** Launched Three-Month CORRA Futures (CRA) market-making program
+- **2023 (January):** Launched One-Month CORRA Futures (COA)
+- **2024 (April 26):** Open BAX positions converted to CRA contracts on a 1:1 basis following CDOR cessation
+- **2024 (June 28):** CDOR permanently ceased publication; BAX contracts formally discontinued
+- **2025:** Record year across both interest rate and equity derivatives; ETF options ADV +80% YoY
+- **2025 (June):** Announced FTSE Canada Bank Credit Index Futures (CBC) — first-of-its-kind credit derivatives product for Canadian market, planned Q1 2026 launch
+
+[Source: Wikipedia, "Montreal Exchange"; MX website; TMX press releases 2007–2025; Finextra, "Montreal Exchange upgrades Sola derivatives trading platform", 2013; MX Q4 2025 Highlights; Mondovisione, "Montréal Exchange To Launch FTSE Canada Bank Credit Index Futures", June 2025]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments / Asset Classes
+
+MX is Canada's sole exchange for listed financial derivatives, organized by underlying asset class:
+
+| Asset Class | Products | Key Contracts |
+|-------------|----------|---------------|
+| **Interest Rate — Short-Term** | CORRA-based futures and options | Three-Month CORRA Futures (CRA), One-Month CORRA Futures (COA), Options on Three-Month CORRA Futures (OCR) |
+| **Interest Rate — Government Bonds** | Government of Canada bond futures and options | Two-Year (CGZ), Five-Year (CGF), Ten-Year (CGB), Thirty-Year (LGB) bond futures; Options on CGB (OGB) |
+| **Equity Index** | Index futures and options | S&P/TSX 60 Index Standard Futures (SXF), S&P/TSX 60 Index Mini Futures (SXM), S&P/TSX Composite Index Mini Futures (SCF), S&P/TSX 60 Index Options (SXO) |
+| **Equity Options** | Options on individual Canadian equities | American-style options; ~300+ optionable classes; penny-increment pricing for eligible classes |
+| **ETF Options** | Options on Canadian-listed ETFs | Options on major ETFs (e.g., XIU, ZEB, HXT); fastest-growing segment (+80% ADV in 2025) |
+| **Share Futures** | Single-stock futures | Futures on select Canadian equities |
+| **Currency** | FX derivatives | Canadian dollar-denominated currency products |
+| **Credit** (planned) | Credit index futures | FTSE Canada Bank Credit Index Futures (CBC) — expected Q1 2026 |
+
+[Source: MX website, "Equity Derivatives", "Interest Rate Derivatives"; MX Q4 2025 Highlights; Yahoo Finance, "Montreal Exchange to Launch FTSE Canada Bank Credit Index Futures"]
+
+### 2.2 Trading Sessions / Hours
+
+**Note:** All times are Eastern Time (ET). Canada observes daylight saving time (EDT = UTC-4 in summer; EST = UTC-5 in winter).
+
+#### Interest Rate Derivatives (Bond Futures, CORRA Futures)
+
+| Session | Time (ET) | Description |
+|---------|-----------|-------------|
+| Early Session | 6:00 AM – 9:30 AM | Pre-market trading; price limits apply (±7% from previous settlement for index futures) |
+| Regular Session | 9:30 AM – 4:00 PM | Main trading session |
+| Extended Session | 4:00 PM – 4:30 PM [unverified] | Post-market trading |
+
+#### Equity Options and ETF Options
+
+| Session | Time (ET) | Description |
+|---------|-----------|-------------|
+| Pre-Open | Before 9:30 AM | Order entry; no executions |
+| Opening | 9:30 AM | Each option class opens when a trade occurs on its underlying security on TSX; if no trade by 9:35 AM, the class opens automatically |
+| Continuous Trading | 9:30 AM – 4:00 PM | Main trading session |
+
+#### Index Futures (SXF, SXM, SCF)
+
+| Session | Time (ET) | Description |
+|---------|-----------|-------------|
+| Early Session | 6:00 AM – 9:15 AM | Trading with early-session price range limits (±7% from previous settlement) |
+| Pre-Open | 9:15 AM – 9:30 AM | Order entry for regular session |
+| Regular Session | 9:30 AM – 4:15 PM | Main trading session |
+| Extended Session | 4:15 PM – 4:30 PM [unverified] | Post-market |
+
+[Source: MX website, "Trading Hours & Holidays"; MX "Products – Trading Hours & Stages" document; MX Equity Options Reference Manual]
+
+### 2.3 Participant Structure
+
+| Participant Type | Description |
+|------------------|-------------|
+| **Approved Participants** | Firms authorized by MX to trade on the exchange; must be CIRO member firms; subject to MX rules and Regulatory Division oversight |
+| **Market Makers** | Designated firms with quoting obligations for assigned products; selected by the Bourse based on ability to meet quoting requirements and past performance |
+| **Clients** | End-users trading through approved participants |
+
+**Market Making Programs:**
+- MX operates multiple market-making incentive programs across equity options, ETF options, index derivatives, and interest rate derivatives
+- Market makers have basic obligations including minimum rate of quote presence at the open and during continuous trading
+- Market makers who are clients of approved participants are subject to MX self-regulatory jurisdiction
+- Selection criteria include quoting ability, past performance, and contribution to market activity
+
+[Source: MX website, "Market Making Programs"; MX website, "Accessing the Montréal Exchange"; MX Regulatory Division, "Approved Participants"]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Order Types
+
+MX supports a variety of order types on the SOLA trading platform:
+
+| Order Type | Description |
+|------------|-------------|
+| **Limit Order** | Order with a specified maximum (buy) or minimum (sell) price |
+| **Market Order** | Executes at the best available price for the total quantity available |
+| **Stop Order** | Triggered when the market reaches a specified price level |
+| **Stop Limit Order** | Stop order that converts to a limit order once triggered |
+| **Iceberg (Hidden Quantity)** | Displays pre-determined portions of a larger order sequentially; minimum display: 25 contracts (50 for CGB) |
+
+**Time-in-Force Instructions:**
+
+| Qualifier | Description |
+|-----------|-------------|
+| **Day** | Valid for the trading day |
+| **GTC (Good Till Cancelled)** | Remains active until executed or cancelled |
+| **IOC (Immediate or Cancel)** | Executes immediately (full or partial); unfilled portion cancelled |
+| **FOK (Fill or Kill)** | Must be filled entirely and immediately, or cancelled entirely |
+
+[Source: MX SOLA Overview; Trading Technologies, "MX Overview"; MX Equity Options Reference Manual]
+
+### 3.2 Order Matching / Priority Rules
+
+- **Price-Time Priority:** Orders are matched first by best price, then by time of entry (FIFO) at the same price level
+- **Pro-Rata Allocation:** Certain products may use pro-rata matching for market maker quotes [unverified]
+- **Continuous Trading:** Fully electronic order-driven Central Limit Order Book (CLOB)
+
+### 3.3 Special Transaction Types
+
+MX supports off-exchange trading facilities:
+
+| Transaction Type | Description |
+|------------------|-------------|
+| **Cross Trades** | Pre-arranged trades between two orders from the same firm or between related firms; must be entered at or within the prevailing bid-ask spread |
+| **Pre-Arranged Trades** | Transactions negotiated between two parties before entry into the trading system |
+| **Block Trades** | Large-size negotiated transactions executed at an agreed price outside the CLOB; subject to minimum volume thresholds |
+
+[Source: MX website, "Cross, Prearranged and Block Trades Transactions"]
+
+---
+
+## 4. Indices & Benchmarks
+
+*(Lighter treatment — Tier 3)*
+
+MX derivatives reference several key Canadian indices:
+
+| Index | Description | Associated MX Products |
+|-------|-------------|----------------------|
+| S&P/TSX 60 | 60 largest and most liquid stocks on TSX | SXF, SXM, SXO |
+| S&P/TSX Composite | Broadest Canadian equity benchmark (~230 stocks) | SCF |
+| CORRA (Canadian Overnight Repo Rate Average) | Bank of Canada's preferred risk-free rate | CRA, COA, OCR |
+| FTSE Canada Bank Credit Index | Canadian bank credit spread benchmark | CBC (planned Q1 2026) |
+
+[Source: MX website; Bank of Canada CORRA documentation]
+
+---
+
+## 5. Trading System & Technology
+
+### 5.1 SOLA Trading Platform
+
+SOLA is MX's proprietary, low-latency electronic trading engine developed in-house. It is also licensed to external venues, including the Boston Options Exchange (BOX).
+
+| Item | Details |
+|------|---------|
+| Platform Name | SOLA |
+| Developer | Bourse de Montréal Inc. (in-house) |
+| Architecture | Centralized matching engine |
+| Median Response Time | ~460 microseconds (at network edge, post-2013 upgrade) |
+| Messaging Capacity | 100,000+ quotes per second |
+| Co-location | TMX Data Centre, Markham, Ontario |
+| Physical Connectivity | 1 Gbps / 10 Gbps Ethernet |
+
+### 5.2 Connectivity Protocols
+
+| Protocol | Use Case | Description |
+|----------|----------|-------------|
+| **SAIL (SOLA Access Information Language)** | Order entry (native) | Native protocol for SOLA; supports all functionalities for order entry brokers, HFT firms, and designated market makers |
+| **FIX Protocol** | Order entry (standard) | Industry-standard connectivity for order entry brokers |
+| **HSVF (High Speed Vendor Feed)** | Market data | Legacy ASCII-format market data feed |
+| **OBF (Order Book Feed)** | Market data | Binary-format order book data feed |
+
+### 5.3 Post-Trade Systems
+
+| System | Description |
+|--------|-------------|
+| **TMS (Trade Management System)** | Trade allocation, agreement management between firms, and position processing |
+| **Trade Manager FIX API** | FIX-based API for post-trade management |
+| **PAR Reports (Participant Activity Reports)** | Detailed activity reports for participants |
+| **TMX Connect** | Web-based post-trade portal |
+| **Drop Copy Services** | ATR (Automated Trade Report), SAIL Drop Copy, FIX Drop Copy |
+
+### 5.4 Risk Management Tools
+
+MX provides real-time risk management tools including pre-trade risk controls and kill-switch functionality accessible through the SOLA platform.
+
+[Source: MX website, "SOLA Overview", "Market Access", "Connection & Testing", "Risk Management Tools"; Finextra, "Montreal Exchange upgrades Sola derivatives trading platform", September 2013; PR Newswire, September 2013]
+
+---
+
+## 6. Listing & Membership
+
+*(Lighter treatment — Tier 3)*
+
+### 6.1 Approved Participant Requirements
+
+To become an approved participant on MX:
+- Must be a CIRO member firm
+- Must demonstrate sufficient expertise, technology infrastructure, and firm capital
+- Subject to ongoing compliance with MX rules and Regulatory Division oversight
+- Must comply with the Derivatives Act (Quebec, CQLR, Chapter I-14.01)
+
+### 6.2 Access Models
+
+- **Direct Market Access (DMA):** Approved participants may offer clients DMA through the SOLA platform
+- **Co-location:** Available at TMX Data Centre in Markham, Ontario for latency-sensitive strategies
+
+[Source: MX website, "Accessing the Montréal Exchange"; MX Regulatory Division]
+
+---
+
+## 7. Fees & Data
+
+*(Lighter treatment — Tier 3)*
+
+MX publishes a comprehensive fee schedule covering:
+- Transaction fees per contract (varies by product and participant category)
+- Market-making incentive fee rebates
+- Connectivity and co-location fees
+- Market data subscription fees (real-time and delayed)
+
+The most recent fee circular (effective January 2023) is published at: https://www.m-x.ca/f_circulaires_en/165-22_annx_en.pdf
+
+[Source: MX Fee Circular 165-22]
+
+---
+
+## 8. Risk Controls & Market Integrity
+
+### 8.1 Exchange-Level Controls
+
+| Control | Description |
+|---------|-------------|
+| **Order Price Filters** | Static validation of incoming futures and options-on-futures orders based on price; range set as a differential (±) from the previous day's settlement price |
+| **Maximum Volume Thresholds** | Incoming orders validated against maximum volume limits per order |
+| **Circuit Breakers (Equity Derivatives)** | Automatic trading halt triggered when circuit breakers are activated on the underlying equities/indices on TSX |
+| **Early Session Price Limits** | Index futures (e.g., SXF) restricted to ±7% from previous day's settlement during the early session (6:00–9:15 AM ET) |
+| **Kill Switch** | Pre-trade risk tool allowing firms to cancel all orders and prevent new order entry |
+| **Iceberg Minimum Display** | 25 contracts minimum display for most futures; 50 contracts for CGB |
+
+### 8.2 Circuit Breaker Coordination
+
+MX derivatives circuit breakers are coordinated with the underlying equity market:
+- Trading halts in equity options are invoked when the underlying stock or ETF is halted on TSX (Single Stock Circuit Breaker / SSCB)
+- Index derivatives follow equity market-wide circuit breaker levels set by CIRO/exchanges
+- After a halt, re-opening follows an auction-like process
+
+### 8.3 Clearing-Level Risk Controls (CDCC)
+
+See Section 11 (Margin Framework) for detailed CDCC risk management methodology.
+
+[Source: MX website, "Exchange Market Thresholds and Controls"; MX Share Futures specifications; MX Equity Options Reference Manual]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Regulatory Structure
+
+MX operates within a multi-layered Canadian regulatory framework:
+
+| Regulator / Body | Role |
+|-------------------|------|
+| **Autorité des marchés financiers (AMF)** | Lead regulator; recognized exchange and self-regulatory organization (SRO) status granted by AMF under Quebec's Derivatives Act (CQLR, Chapter I-14.01) |
+| **MX Regulatory Division (MX-R)** | Independent unit within MX; performs surveillance, compliance, and enforcement for MX derivative markets |
+| **Canadian Investment Regulatory Organization (CIRO)** | National SRO formed January 2023 (from merger of IIROC and MFDA); oversees market integrity; performs cross-asset surveillance between MX-listed derivatives and underlying securities |
+| **Bank of Canada** | Oversees systemic risk; supervises CDCC as a designated systemically important financial market infrastructure |
+| **Canadian Securities Administrators (CSA)** | Umbrella organization of provincial/territorial regulators; harmonizes regulation across Canada |
+
+### 9.2 Self-Regulatory Functions
+
+As a recognized SRO, MX is required by the AMF to maintain the Regulatory Division (MX-R), which:
+- Monitors trading activity in real time
+- Investigates potential market abuses (manipulation, insider trading, front-running)
+- Enforces MX rules against approved participants and market makers
+- Conducts compliance examinations
+- Publishes regulatory notices and circulars
+
+### 9.3 Rule-Making Process
+
+- MX rule amendments are self-certified under the self-certification process established in the Derivatives Act
+- Significant rule changes are subject to AMF review and public comment
+- CIRO's Universal Market Integrity Rules (UMIR) apply to cross-market trading activity
+
+### 9.4 Key Regulatory Developments
+
+- **2023:** CIRO formed from IIROC-MFDA merger (effective January 1, 2023; renamed CIRO on June 1, 2023)
+- **2024:** T+1 settlement implemented across Canadian markets (May 27, 2024)
+- **2024:** CDOR cessation and BAX-to-CRA transition completed under ISDA framework
+
+[Source: AMF website, "Self-Regulatory Organizations"; MX Regulatory Division website (reg.m-x.ca); CIRO website, "About CIRO"; MX "Accessing the Montréal Exchange" document]
+
+---
+
+## 10. Recent Developments & Outlook
+
+*(Lighter treatment — Tier 3)*
+
+- **2025 Record Volumes:** Both interest rate derivatives (~520K ADV, +20% YoY) and equity derivatives (~417K ADV, +20% YoY) reached record levels
+- **ETF Options Boom:** Fastest-growing segment at 186K ADV (+80% YoY) in 2025
+- **CORRA Transition Complete:** Smooth conversion from BAX (CDOR-based) to CRA (CORRA-based) products; CRA volumes at 170K ADV (+33% YoY)
+- **Credit Derivatives Launch:** FTSE Canada Bank Credit Index Futures (CBC) announced June 2025 for Q1 2026 launch — first credit index derivative in Canada
+- **CDCC Margin Enhancements:** Ongoing refinement of SPAN-based margin calculations; margin file corrections for CORRA products as of March 2026
+
+[Source: MX Q4 2025 Highlights; Mondovisione, June 2025; CDCC notices, March 2026]
+
+---
+
+## 11. Product Catalog & Key Contract Specifications
+
+### 11.1 Interest Rate Derivatives
+
+#### Three-Month CORRA Futures (CRA)
+
+| Specification | Details |
+|--------------|---------|
+| Underlying | Compounded daily CORRA during the Reference Quarter |
+| Contract Size | C$2,500 × Index (notional ~C$250,000) |
+| Tick Size (nearest month) | 0.0025 = C$6.25 per contract |
+| Tick Size (deferred months) | 0.005 = C$12.50 per contract |
+| Contract Months | Nearest 12 quarterly months (March cycle) |
+| Settlement | Cash-settled |
+| Basis Point Value | C$25 per contract per 1 bp |
+| ADV (2025) | ~170,000 contracts |
+
+#### One-Month CORRA Futures (COA)
+
+| Specification | Details |
+|--------------|---------|
+| Underlying | Compounded daily CORRA during the Contract Month |
+| Contract Size | C$2,500 × Index |
+| Tick Size | 0.0025 = C$6.25 (nearest month) |
+| Contract Months | 4 nearest contract months |
+| Settlement | Cash-settled |
+| Basis Point Value | C$25 per contract per 1 bp |
+
+#### Ten-Year Government of Canada Bond Futures (CGB)
+
+| Specification | Details |
+|--------------|---------|
+| Underlying | Government of Canada bonds with 8–10.5 years remaining to maturity |
+| Contract Size | C$100,000 nominal value |
+| Tick Size | 0.005 points = C$5 per contract |
+| Contract Months | March, June, September, December |
+| Settlement | Physical delivery (deliverable basket) |
+| Launch Date | September 1989 |
+| ADV (2025) | ~185,000 contracts |
+
+#### Other Bond Futures
+
+| Contract | Ticker | Maturity Range | ADV (2025) |
+|----------|--------|---------------|------------|
+| Two-Year GoC Bond Futures | CGZ | 1.5–2.5 years | ~82,000 |
+| Five-Year GoC Bond Futures | CGF | 3.75–5.25 years | ~82,000 |
+| Thirty-Year GoC Bond Futures | LGB | 15+ years | Lower volume [unverified] |
+
+### 11.2 Equity Index Derivatives
+
+#### S&P/TSX 60 Index Standard Futures (SXF)
+
+| Specification | Details |
+|--------------|---------|
+| Underlying | S&P/TSX 60 Index |
+| Multiplier | C$200 × index level |
+| Tick Size | 0.01 index points = C$2 per contract [unverified] |
+| Contract Months | March, June, September, December |
+| Settlement | Cash-settled (official opening level of index on final settlement day) |
+| Position Limit | 1,000 contracts (standard + mini combined), gross long and short, all months |
+
+#### S&P/TSX 60 Index Mini Futures (SXM)
+
+| Specification | Details |
+|--------------|---------|
+| Underlying | S&P/TSX 60 Index |
+| Multiplier | C$50 × index level (1/4 of SXF) |
+| Settlement | Cash-settled |
+
+### 11.3 Equity & ETF Options
+
+| Specification | Details |
+|--------------|---------|
+| Contract Size | 100 shares of underlying security |
+| Exercise Style | American-style (exercisable any time up to and including expiry) |
+| Tick Size (penny program) | C$0.01 for all series in eligible classes |
+| Expiry | Third Friday of the contract month |
+| Settlement | Physical delivery (T+1 as of May 2024) |
+| Weekly Options | Available on select underlyings |
+| ADV — Equity Options (2025) | ~170,000 contracts |
+| ADV — ETF Options (2025) | ~186,000 contracts (+80% YoY) |
+
+[Source: MX website, product specification pages for CRA, COA, CGB, SXF, SXM; MX Equity Options Reference Manual; MX Q4 2025 Highlights; Barchart.com; Interactive Brokers Canadian Index Futures webinar]
+
+---
+
+## 12. Margin Framework (CDCC)
+
+### 12.1 Overview
+
+The Canadian Derivatives Clearing Corporation (CDCC) is the central counterparty (CCP) for all exchange-traded derivatives on MX and for a growing range of OTC customized financial instruments.
+
+| Item | Details |
+|------|---------|
+| Full Name | Canadian Derivatives Clearing Corporation |
+| Ownership | Wholly-owned subsidiary of Bourse de Montréal Inc. |
+| Headquarters | 100 Adelaide Street West, 3rd Floor, Toronto, Ontario |
+| Designation | Recognized as a clearing house by AMF; designated as a systemically important financial market infrastructure by the Bank of Canada |
+| Margin Methodology | SPAN-based (Standard Portfolio Analysis of Risk), adopted 1997 |
+
+### 12.2 Margin Methodology
+
+**Initial Margin (SPAN-Based):**
+- CDCC adopted SPAN in 1997 as the core framework for calculating initial margin requirements
+- Risk parameters are calibrated on a daily basis, including Margin Interval and Intra-Commodity Spreads
+- Incorporates historical volatility of daily price returns
+- Volatility estimator uses a confidence level exceeding 99%
+- Variable Margin Period of Risk (MPOR) applied depending on product liquidity
+
+**Anti-Procyclicality Measures:**
+- Stress Risk component calculated via Stress Value at Risk (SVaR) with a 25% weighting factor
+- Volatility floor calculated as the average of the daily volatility estimator observed over the last 10 years
+- These measures prevent margin requirements from dropping too low during periods of calm and spiking excessively during stress
+
+**Margin Relief (Inter-Commodity Spreads):**
+- Currently available for a limited list of futures products exhibiting high correlation:
+  - Index Futures combinations
+  - Short-Term Interest Rate (STIR) Futures combinations
+- Canadian clients may use the CDCC SPAN file as an alternative to other margin files
+
+**Additional Capital Margin:**
+- Measures credit exposure of clearing members
+- Requires collection of a minimum of 50% of the excess when a clearing member's Base Initial Margin exceeds their capital amount
+
+### 12.3 Variation Margin
+
+- Mark-to-market settlement performed daily
+- Futures: daily settlement price used for P&L calculation; variation margin collected/paid daily
+- Options: premium-style margining for equity and ETF options
+
+### 12.4 Default Management
+
+CDCC maintains a default waterfall including:
+1. Defaulting member's margin and collateral
+2. Defaulting member's contribution to the clearing fund
+3. CDCC's own dedicated resources (skin-in-the-game)
+4. Non-defaulting members' clearing fund contributions
+5. Additional assessments
+
+[Source: CDCC website, "Margining", "Risk Management"; CDCC Operations Manual (August 2025); OSC, "Canadian Derivatives Clearing Corporation" RFC document, February 2023; CDCC Notice 154-22; Bank of Canada, "Stress testing central counterparties for resolution planning", March 2025]
+
+---
+
+## Sources
+
+- [Montreal Exchange — Wikipedia](https://en.wikipedia.org/wiki/Montreal_Exchange)
+- [MX Official Website](https://www.m-x.ca/en)
+- [MX SOLA Overview](https://www.m-x.ca/en/trading/connectivity/sola-overview)
+- [MX Trading Hours & Holidays](https://www.m-x.ca/en/trading/data/trading-hours-and-holidays)
+- [MX Market Making Programs](https://www.m-x.ca/en/trading/programs/market-making)
+- [MX Exchange Market Thresholds and Controls](https://www.m-x.ca/en/trading/connectivity/exchange-market-thresholds-and-controls)
+- [MX Equity Options Reference Manual](https://www.m-x.ca/f_publications_en/en.guide.options.pdf)
+- [MX Equity Options Product Page](https://www.m-x.ca/en/markets/equity-derivatives/equity-options)
+- [MX Interest Rate Derivatives](https://www.m-x.ca/en/markets/interest-rate-derivatives)
+- [MX CRA Product Page](https://www.m-x.ca/en/markets/interest-rate-derivatives/cra)
+- [MX COA Product Page](https://www.m-x.ca/en/markets/interest-rate-derivatives/coa)
+- [MX CGB Product Page](https://www.m-x.ca/en/markets/interest-rate-derivatives/cgb)
+- [MX SXF Product Page](https://www.m-x.ca/en/markets/index-derivatives/sxf)
+- [MX Regulatory Division](https://reg.m-x.ca/en)
+- [AMF — Self-Regulatory Organizations](https://lautorite.qc.ca/en/professionals/market-structures/self-regulatory-organizations)
+- [CIRO — About](https://www.ciro.ca/about-ciro)
+- [CDCC Official Website](https://www.cdcc.ca/en/)
+- [CDCC Margining](https://cdcc.ca/en/risk/management/margining)
+- [CDCC Risk Management](https://www.cdcc.ca/en/risk/management)
+- [CDCC Operations Manual (August 2025)](https://www.cdcc.ca/f_rules_en/cdcc_operations_manual_en.pdf)
+- [MX Q4 2025 Highlights](https://www.m-x.ca/f_market_activity_en/mx_highlights_2025_q4_en.pdf)
+- [MX CORRA FAQ (February 2024)](https://www.m-x.ca/f_publications_en/corra_faq_en.pdf)
+- [Finextra — Montreal Exchange upgrades Sola derivatives trading platform (2013)](https://www.finextra.com/pressarticle/52603/montreal-exchange-upgrades-sola-derivatives-trading-platform)
+- [Mondovisione — FTSE Canada Bank Credit Index Futures (June 2025)](https://mondovisione.com/media-and-resources/news/montral-exchange-to-launch-ftse-canada-bank-credit-index-futures-a-first-of-2025617/)
+- [Bank of Canada — Stress testing CCPs for resolution planning (March 2025)](https://www.bankofcanada.ca/2025/03/staff-analytical-note-2025-11/)
+- [Trading Technologies — MX Overview](https://library.tradingtechnologies.com/user-setup/mx-overview.html)

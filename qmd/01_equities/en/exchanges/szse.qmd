@@ -1,0 +1,477 @@
+---
+title: "Shenzhen Stock Exchange (SZSE)"
+subtitle: "Equities > Exchanges"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 3
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Shenzhen Stock Exchange (æ·±å³è¯å¸äº¤ææ) |
+| Abbreviation | SZSE |
+| Website | https://www.szse.cn |
+| Year Established | 1990 (founded December 1, 1990; formally opened July 3, 1991) |
+| Country / City | People's Republic of China / Shenzhen, Guangdong Province (Futian District) |
+| Ownership Structure | State-owned institution; not publicly listed; operates as a self-regulatory organization under CSRC supervision |
+| Parent Company / Group | None (independent, alongside SSE and BSE as mainland China's three stock exchanges) |
+| Regulatory Authority | China Securities Regulatory Commission (CSRC / ä¸­å½è¯çç®¡çå§åä¼) |
+| Market Capitalization (listed companies) | ~CNY 35.24 trillion (~USD 5.11 trillion) as of February 2026 â 9th largest globally [Source: Wikipedia / SZSE Market Overview] |
+| Total Listed Instruments | 2,879 listed companies as of February 2026 [Source: Wikipedia] |
+| Average Daily Trading Volume | ~CNY 500â600 billion [unverified â based on 2024-2025 estimates; official SZSE monthly reports should be consulted for precise figures] |
+| Average Daily Trading Value | ~CNY 50 billion (~USD 7 billion) in recent years [unverified] |
+
+**Key Characteristics:**
+- SZSE is positioned as China's exchange for **growth, innovation, and technology companies**, complementing the SSE which serves larger state-owned enterprises and blue chips.
+- Home to the **ChiNext (åä¸æ¿)** board, often compared to NASDAQ, which caters to high-growth, high-tech startups.
+- Headquarters building completed in 2013, standing 245.8 meters (49 floors) in Futian District, designed by Rem Koolhaas's Office for Metropolitan Architecture (OMA).
+- **Chairman:** Wu Lijun; **President & CEO:** Wang Jianjun [unverified â as of late 2025]
+
+### Key Historical Milestones
+- **1990 (December 1):** SZSE founded in Shenzhen, one of China's first Special Economic Zones.
+- **1991 (July 3):** Exchange formally opened for trading.
+- **1992 (January):** Deng Xiaoping's Southern Tour affirms the legitimacy of stock exchanges in China's socialist market economy, rescuing the fledgling capital market from political uncertainty.
+- **1997 (July):** State Council places SZSE under direct management of the CSRC, formalizing its regulatory structure (previously under municipal control as an "experimental point").
+- **2004:** SME Board (ä¸­å°ä¼ä¸æ¿) launched to serve small and medium-sized enterprises.
+- **2006:** Closing call auction mechanism adopted for determining closing prices.
+- **2009 (October 23):** ChiNext (åä¸æ¿) inaugurated â a NASDAQ-style board for high-growth, high-tech startups.
+- **2013:** New exchange building completed in Futian District.
+- **2016 (December 5):** Shenzhen-Hong Kong Stock Connect launched, enabling cross-border equity trading.
+- **2016:** Trading system upgraded â order-matching engine response time reduced to 1.1 milliseconds; order processing capacity tripled to 300,000 trades per second; new data center with 5,000 server cabinets installed.
+- **2020 (August):** Registration-based IPO system piloted on ChiNext; first batch of companies listed under new regime. ChiNext price limits widened from +/-10% to +/-20%.
+- **2021 (April 6):** SME Board officially merged into the Main Board, creating a two-board structure (Main Board + ChiNext).
+- **2023 (February):** Full rollout of registration-based IPO system across all boards (Main Board included), replacing the approval-based system.
+- **2025 (September-October):** QFIs (Qualified Foreign Institutional Investors) permitted to participate in ETF options trading on SZSE.
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+
+Following the April 2021 merger of the SME Board into the Main Board, SZSE operates a **two-board structure**:
+
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| **Main Board** (ä¸»æ¿) | Market for established, profitable enterprises; absorbed former SME Board companies in April 2021 | Under the registration-based system: (1) Estimated market value >= CNY 1 billion, positive net profit in most recent year, operating income >= CNY 100 million; OR (2) Estimated market value >= CNY 5 billion, operating income >= CNY 300 million in most recent year. Must have >= 3 years of continuous operation as a joint stock company. Net profit must be positive. |
+| **ChiNext** (åä¸æ¿) | NASDAQ-style board for innovative, high-growth enterprises â particularly technology, biotech, and new-economy companies. Lower entry barriers but strict ongoing operation requirements. | Under the registration-based system: (1) Net profit positive in last 2 years, cumulative >= CNY 50 million; OR (2) Estimated market value >= CNY 1 billion, positive net profit, operating income >= CNY 100 million; OR (3) Estimated market value >= CNY 5 billion, operating income >= CNY 300 million (for pre-profit companies). Focus on companies in strategic emerging industries, innovation-driven businesses. |
+
+**Note on SME Board Merger:** On April 6, 2021, with CSRC approval, the SME Board was fully merged into the Main Board. All previously SME-listed companies were reclassified as Main Board A-shares with unchanged ticker symbols and abbreviations. This merger streamlined the market structure and facilitated the comprehensive registration-based system reform.
+
+### 2.2 Trading Sessions
+
+| Session | Local Time (CST) | UTC (CST = UTC+8) | Description |
+|---------|-----------|-----|-------------|
+| Opening Call Auction | 9:15 AM â 9:25 AM | 01:15 â 01:25 | Order input and matching to determine opening price. Orders accepted 9:15â9:20; no cancellations allowed 9:20â9:25. Unmatched orders carry into continuous trading. |
+| Morning Continuous Trading | 9:30 AM â 11:30 AM | 01:30 â 03:30 | Continuous order matching on price-time priority. |
+| **Lunch Break** | **11:30 AM â 1:00 PM** | **03:30 â 05:00** | **No trading. 1.5-hour break (longer than HKEX's 1-hour break). Common feature of Asian exchanges.** |
+| Afternoon Continuous Trading | 1:00 PM â 2:57 PM | 05:00 â 06:57 | Continuation of continuous matching. |
+| Closing Call Auction | 2:57 PM â 3:00 PM | 06:57 â 07:00 | 3-minute closing auction to determine closing price. No order cancellations allowed during this period. |
+
+**Notes:**
+- Total continuous trading hours: ~4 hours (9:30â11:30 + 13:00â14:57), plus auction sessions.
+- China does not observe daylight saving time; CST is fixed at UTC+8.
+- Trading days: MondayâFriday, excluding national holidays declared in advance.
+- Half-day sessions apply before certain holidays.
+
+### 2.3 Tick Sizes
+
+| Price Range | Tick Size |
+|-------------|-----------|
+| All price levels | CNY 0.01 (uniform) |
+
+**Note:** Unlike HKEX or western exchanges that use tiered tick size tables, both SZSE and SSE apply a uniform tick size of CNY 0.01 for all equities regardless of price level.
+
+### 2.4 Lot Sizes
+- **Standard board lot:** 100 shares (ä¹°ååä½)
+- **Buy orders:** Must be in multiples of 100 shares (board lots).
+- **Sell orders:** Odd lots (fewer than 100 shares) may be sold in a single order but cannot be split.
+- **Maximum order size:** 1,000,000 shares per single order.
+- **ChiNext exception:** Under the 2020 reforms, ChiNext allows orders in increments of 1 share (for amounts above 200 shares), rather than strictly in board lots [unverified â consult SZSE trading rules for current specifics].
+
+### 2.5 Settlement
+
+| Item | Details |
+|------|---------|
+| Settlement Cycle | **T+1** for stock delivery; funds settlement also T+1 |
+| Key Rule | Stocks bought on T day **cannot be sold until T+1** (no same-day selling). Proceeds from selling on T can be used to purchase other stocks on the same day but cannot be withdrawn until T+1. |
+| Clearing House | China Securities Depository and Clearing Corporation (CSDC / ä¸­å½è¯å¸ç»è®°ç»ç®æéå¬å¸), Shenzhen branch |
+| Currency | Chinese Yuan (CNY / RMB) |
+
+### 2.6 Market Maker / Liquidity Provider Programs
+- SZSE operates primarily as an **order-driven market** without designated market makers for equities on the Main Board.
+- ChiNext introduced a **competitive market maker system** as part of the 2020 reforms to improve liquidity for smaller-cap stocks [unverified â details on implementation scope should be confirmed].
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+- **Opening Call Auction (9:15â9:25):**
+  - Orders entered during 9:15â9:20 may be submitted and cancelled.
+  - During 9:20â9:25, orders may be submitted but **not cancelled** (prevents manipulation of the indicative opening price).
+  - At 9:25, the system determines the opening price via a single-price auction algorithm that **maximizes executable volume** â the price at which the greatest number of shares can be traded.
+  - Unexecuted orders automatically carry forward into the continuous trading session at 9:30.
+
+- **Closing Call Auction (14:57â15:00):**
+  - Introduced in 2006, replacing the previous method (last-trade closing price).
+  - During this 3-minute window, orders are accepted but **cannot be cancelled**.
+  - At 15:00, a single-price auction determines the closing price using the same volume-maximization algorithm as the opening auction.
+  - This mechanism reduces susceptibility to closing price manipulation compared to last-trade methods.
+
+- **Intraday Auction:** Not applicable â SZSE uses continuous matching during regular trading hours.
+- **Volatility Auction:** Not currently implemented. China relied on market-wide circuit breakers briefly in January 2016 (linked to CSI 300 Index, with 5% and 7% triggers), but these were suspended after only 4 trading days due to exacerbating volatility. Individual stock price limits (Section 8) serve as the primary volatility control mechanism.
+
+### 3.2 Continuous Trading
+
+- **Order-driven market** â all trades matched by the exchange's electronic order book.
+- **Price-time priority:** Orders matched first by best price, then by earliest time of entry at the same price level.
+- No quote-driven or hybrid mechanism for equities (unlike HKEX or LSE).
+
+### 3.3 Price Discovery
+
+- **Opening price:** Determined by call auction at 9:25; if no trades occur, the opening price is carried from the most recent transaction price.
+- **Closing price:** Determined by closing call auction at 15:00.
+- **Intraday price:** Continuous matching on price-time priority during regular sessions.
+- The T+1 settlement rule and daily price limits (Section 8) significantly constrain intraday price discovery compared to western markets, reducing speculative volatility but also limiting rapid price adjustment to new information.
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| Limit Order | Specify price and quantity; executed at the specified price or better. Primary order type on SZSE. |
+| Market Order (Best-5 Limit) | Executes at best available prices up to 5 price levels; any unexecuted portion is automatically cancelled. Available during continuous trading only. |
+| Market Order (Best-5 Convert-to-Limit) | Executes at best available prices up to 5 price levels; unexecuted portion converts to a limit order at the last execution price. |
+| Counterparty Best Price | Executes at the best price on the opposite side of the order book; unexecuted portion converts to limit order. |
+| Own Best Price | Immediately priced at the best price of the order's own side; functions like an aggressive limit order. |
+
+### 4.2 Time-in-Force Options
+
+| TIF | Description |
+|-----|-------------|
+| DAY | Default; order valid for the trading day only, cancelled at session end. |
+| IOC (Immediate-or-Cancel) | Implicit in certain market order types (Best-5 Limit cancels remainder). |
+| FOK (Fill-or-Kill) | Not standard on SZSE [unverified]. |
+| GTC (Good-till-Cancelled) | Not available â all orders are day orders. |
+
+### 4.3 Order Modification / Cancellation
+- Orders may be cancelled during continuous trading sessions.
+- **No cancellations** allowed during: 9:20â9:25 (opening auction) and 14:57â15:00 (closing auction).
+- Order modification is typically implemented as cancel-and-replace.
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | SZSE proprietary trading platform (in-house developed; no third-party vendor like Nasdaq or LSEG) |
+| Vendor / In-house | **In-house developed** by SZSE's technology team |
+| Architecture | Distributed architecture with centralized matching [unverified] |
+| Matching Engine | Order-matching engine with response time of ~1.1 milliseconds (as of 2016 upgrade â reduced to 1/100th of previous system) |
+| Round-trip Latency | ~1.1 ms matching engine response (2016); likely further improved since [unverified] |
+| Order Processing Capacity | 300,000 orders per second (as of 2016 upgrade â tripled from previous system) |
+| Messages Per Second | [unverified â not publicly disclosed in English-language sources] |
+| Data Center | 5,000 server cabinets installed (as of 2016 upgrade); located in Shenzhen |
+
+### System History
+
+| Period | System | Notes |
+|--------|--------|-------|
+| 1990sâ2000s | Early electronic trading system | One of China's first fully electronic exchanges from inception (no open outcry history) |
+| ~2016 | Major system upgrade | Matching engine response time reduced to 1.1 ms; capacity tripled to 300,000 orders/sec; new 5,000-cabinet data center |
+| 2020 | ChiNext system enhancements | Technical upgrades to support registration-based IPO system, wider price limits (+/-20%), and new order types |
+| Ongoing | Continuous in-house development | SZSE develops and maintains its own trading technology stack |
+
+### Technology Stack
+- In-house developed proprietary systems (details not widely published in English).
+- Both SZSE and SSE have historically developed their own trading platforms rather than licensing from international vendors like Nasdaq or LSEG, in line with China's technology self-reliance policy.
+
+### Disaster Recovery / Business Continuity
+- SZSE maintains disaster recovery facilities, though specific locations and RTO/RPO targets are not publicly disclosed in English-language sources [unverified].
+- CSDC (clearing house) operates its own redundant systems for settlement continuity.
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+
+| Protocol | Description | Use Case |
+|----------|-------------|----------|
+| STEP (Securities Trading Exchange Protocol) | XML-based messaging protocol | Real-time market data distribution |
+| BINARY | Binary-format proprietary feed | Low-latency market data |
+| Data File Exchange | Batch/file-based data delivery | End-of-day and reference data |
+
+### 6.2 Data Levels
+- **Level 1:** Best bid/ask, last trade, volume, turnover.
+- **Level 2:** Full order book depth with additional detail.
+- Data services exclusively managed by **Shenzhen Securities Information Co., Ltd. (SSIC / æ·±å³è¯å¸ä¿¡æ¯æéå¬å¸)**, the authorized market data distributor for SZSE.
+
+### 6.3 Key Indices
+
+| Index | Description |
+|-------|-------------|
+| SZSE Component Index (æ·±è¯ææ, 399001) | Major index tracking large-cap SZSE stocks |
+| SZSE Composite Index (æ·±è¯ç»¼æ) | Broad market index of all SZSE-listed stocks |
+| ChiNext Index (åä¸æ¿æ, 399006) | Tracks ChiNext-listed companies â key tech/growth benchmark |
+| SZSE 100 | Top 100 blue-chip stocks |
+| SZSE 200 / 300 / 700 / 1000 | Various size-segment indices |
+| CNI indices | Various thematic and sector indices published by CNIndex (joint venture of SSE and SZSE) |
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+- Domestic securities firms licensed by CSRC serve as exchange members.
+- Foreign investors access SZSE primarily through:
+  - **QFII / RQFII** (Qualified Foreign Institutional Investor) schemes
+  - **Shenzhen-Hong Kong Stock Connect** (Northbound trading)
+  - Fund-based products (ETFs, mutual funds)
+
+### 7.2 Connection Methods
+
+| Method | Description |
+|--------|-------------|
+| Direct Connection | Members connect via dedicated lines to SZSE trading gateway |
+| Co-location | Available at SZSE data center (5,000 server cabinets) |
+| Stock Connect | Via HKEX infrastructure for international investors |
+
+### 7.3 Co-location / Proximity Services
+- **Location:** Shenzhen (specific data center address not publicly disclosed)
+- **Offerings:** Co-location services with 5,000 server cabinets available [unverified â details on pricing and terms not available in English]
+
+### 7.4 API Protocols
+
+| Protocol | Use Case |
+|----------|----------|
+| STEP | Order submission and market data (primary) |
+| Binary/Native | High-performance trading and data feeds |
+| FIX | Used by some international participants via intermediaries [unverified] |
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits (Daily Price Movement Limits)
+
+| Type | Threshold | Applicable Securities |
+|------|-----------|----------------------|
+| Standard daily limit | **+/-10%** from previous closing price | Main Board stocks, most securities |
+| ChiNext daily limit | **+/-20%** from previous closing price | ChiNext stocks (widened from +/-10% in August 2020 reform) |
+| New listing (Main Board) | **+44% / -36%** on first day (effective price range) | First trading day of new Main Board IPOs [unverified â confirm with SZSE rules] |
+| New listing (ChiNext) | **No price limit for first 5 trading days** | ChiNext IPOs under registration-based system (from August 2020); +/-20% limit applies from 6th day onward |
+| ST / *ST stocks | **+/-5%** | Special Treatment stocks (financially distressed companies) |
+
+**Notes:**
+- Price limits are calculated based on the previous day's closing price.
+- When a stock hits the daily limit (æ¶¨å/è·å), trading continues but only orders that would move the price back within the limit range are executable. The stock is not halted.
+- These static price limits serve as the primary volatility control mechanism in lieu of intraday circuit breakers.
+
+### 8.2 Circuit Breakers (Market-Wide)
+
+| Level | Trigger | Status |
+|-------|---------|--------|
+| Level 1 (5% decline in CSI 300) | 15-minute halt | **Suspended since January 8, 2016** |
+| Level 2 (7% decline in CSI 300) | Halt for remainder of day | **Suspended since January 8, 2016** |
+
+**Background:** In January 2016, CSRC introduced market-wide circuit breakers linked to the CSI 300 Index with 5% (15-min halt) and 7% (full halt) triggers. They were activated on January 4 and January 7, 2016, exacerbating panic selling (the "magnet effect" â traders rushed to sell before the circuit breaker triggered). CSRC suspended the mechanism after just 4 operating days. Individual stock daily price limits remain the primary risk control mechanism.
+
+### 8.3 Pre-trade Risk Controls
+- **Fat-finger checks:** Maximum order size of 1,000,000 shares per single order.
+- **Price validation:** Orders outside the daily price limit range are rejected.
+- **Order throttling:** Exchange-level controls on order submission rates [unverified â specific thresholds not publicly available in English].
+- **Member-level controls:** Brokers required to implement their own pre-trade risk management systems per CSRC requirements.
+- **Abnormal trading monitoring:** SZSE monitors for unusual trading patterns including suspected insider trading, market manipulation, and excessive order-to-trade ratios.
+
+### 8.4 Additional Risk Measures
+- **Mandatory margin trading controls:** Margin financing subject to specific collateral ratios set by CSRC and brokers.
+- **Short selling restrictions:** Short selling only permitted through regulated securities lending programs; naked short selling prohibited.
+- **Position limits:** Applied to index futures and options that reference SZSE stocks (managed by CFFEX).
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+
+| Authority | Role |
+|-----------|------|
+| **China Securities Regulatory Commission (CSRC)** | Primary regulator of all securities markets in mainland China. Approves exchange rules, oversees listing, supervises market participants. Directly manages SZSE since 1997. |
+| **State Council** | Ultimate governmental authority; CSRC reports to the State Council. |
+| **SZSE (self-regulatory)** | As a self-regulatory organization, SZSE conducts frontline regulation including listing review (under registration system), trading surveillance, member supervision, and enforcement of exchange rules. |
+
+### 9.2 Key Regulations
+
+| Regulation | Description |
+|------------|-------------|
+| **Securities Law of the PRC (2020 Revision)** | Fundamental law governing securities markets; effective March 1, 2020. Established legal framework for registration-based IPO system. |
+| **Company Law of the PRC** | Governs corporate structure, shareholder rights, and governance requirements for listed companies. |
+| **CSRC Administrative Measures** | Detailed implementing rules on IPO, disclosure, delisting, trading conduct, and market access. |
+| **SZSE Listing Rules** (Main Board and ChiNext) | Exchange-level rules for listing, ongoing disclosure, corporate governance, and delisting â revised under registration-based system (2023 Revision). |
+| **SZSE Trading Rules** | Govern order types, trading hours, price limits, lot sizes, and trading conduct. |
+| **Measures for the Administration of Stock Options Trading (Pilot)** | Rules governing ETF options trading on SZSE. |
+
+### 9.3 Registration-Based IPO System (æ³¨åå¶)
+
+A critical regulatory development:
+- **Pilot on ChiNext (April 2020):** Registration-based system first trialed on ChiNext, shifting vetting power from CSRC to the exchange. The exchange reviews listing applications, while CSRC checks alignment with national industrial policy and board positioning.
+- **Full rollout (February 2023):** Extended to SZSE Main Board (and SSE Main Board), completing China's transition from an approval-based (æ ¸åå¶) to registration-based system.
+- Under the new system, companies file registration statements with the exchange, which conducts inquiry-based review. CSRC performs registration (a formality) rather than substantive approval.
+
+### 9.4 Market Surveillance
+- SZSE operates real-time market surveillance systems monitoring for:
+  - Insider trading
+  - Market manipulation (including spoofing and layering)
+  - Abnormal trading patterns
+  - Unusual price and volume movements
+- Automated alerts trigger investigation by SZSE's enforcement division, which can refer cases to CSRC for formal action.
+
+### 9.5 Cross-border Arrangements
+
+#### Shenzhen-Hong Kong Stock Connect (æ·±æ¸¯é)
+
+| Item | Details |
+|------|---------|
+| Launch Date | December 5, 2016 |
+| Northbound (HK -> SZSE) | International investors trade SZSE-listed A-shares via HKEX infrastructure |
+| Southbound (SZSE -> HK) | Mainland investors trade HKEX-listed stocks via SZSE infrastructure |
+| Northbound Daily Quota | CNY 52 billion (net buy basis) |
+| Southbound Daily Quota | CNY 42 billion (net buy basis) |
+| Eligible Stocks (Northbound) | Main Board and ChiNext stocks meeting certain market cap and liquidity criteria. **ChiNext stocks limited to institutional professional investors** (individual investors excluded from ChiNext Northbound). |
+| Settlement | Trades settle in local currency; FX conversion handled by clearing houses |
+| Trading Hours | Aligned with SZSE trading hours; must be a trading day in both markets |
+
+**Notes:**
+- Daily quota operates on a "net buy" basis â sell orders and cancellations always permitted regardless of quota utilization.
+- Unused daily quota does not carry over.
+- ETF Connect added in July 2022, expanding eligible instruments.
+
+#### QFII / RQFII
+- Qualified Foreign Institutional Investors and RMB Qualified Foreign Institutional Investors may trade directly on SZSE through licensed domestic brokers.
+- As of September/October 2025, QFIs are also permitted to participate in SZSE ETF options trading.
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+
+| Fee Type | Rate | Notes |
+|----------|------|-------|
+| Transaction Handling Fee | 0.00487% of transaction value (equities) | Charged by SZSE [unverified â consult SZSE fee schedule for current rates] |
+| Stamp Duty | 0.05% (sell side only) | National tax; reduced from 0.1% to 0.05% in August 2023 to stimulate market activity |
+| Securities Regulatory Fee | 0.002% | CSRC regulatory levy |
+| Transfer Fee | 0.001% | CSDC settlement fee |
+| Brokerage Commission | Negotiable, typically 0.02%â0.03% | Charged by brokers; capped at 0.3% by regulation |
+
+### 10.2 Other Fees
+- **Listing fees:** Initial and annual listing fees charged to issuers (tiered by market cap) [unverified â specific rates not confirmed].
+- **Market data fees:** Managed by Shenzhen Securities Information Co., Ltd.; pricing not publicly disclosed.
+- **Co-location fees:** Not publicly disclosed in English-language sources.
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+- **2020:** Major technical upgrades for ChiNext registration-based IPO reform â supporting wider price limits (+/-20%), new order types, and enhanced surveillance systems.
+- **2016 (for context):** Core trading system upgrade achieving 1.1ms matching engine latency and 300,000 orders/sec capacity.
+- Ongoing investment in trading system modernization, though specific recent upgrade details are not widely published in English.
+
+### New Products / Segments
+- **ETF Options:** SZSE listed ETF option contracts; as of 2025, a total of 9 ETF options listed across SSE and SZSE combined. QFIs admitted to options trading from October 2025.
+- **REITs:** Penghua Qianhai REIT became SZSE's first publicly offered infrastructure REIT.
+- **Cross-border ETFs:** Expanded offerings including US market-tracking ETFs (S&P 500, S&P Healthcare, S&P Biotech, S&P IT).
+- **Money Market ETFs:** First transactional money market ETFs listed on SZSE.
+- **Commodity Futures Fund:** UBS Silver Fund LOF, SZSE's first commodity futures fund.
+
+### Regulatory Changes
+- **2023 (February):** Full implementation of registration-based IPO system on Main Board, completing the nationwide reform.
+- **2023 (August):** Stamp duty cut from 0.1% to 0.05% (sell side) â a significant fiscal stimulus for capital markets.
+- **2021 (April):** SME Board merged into Main Board, simplifying market structure.
+- **2020 (August):** ChiNext reformed with registration-based IPO system, +/-20% price limits, relaxed listing requirements.
+
+### Strategic Initiatives
+- **Technology self-reliance:** SZSE continues to develop all core trading technology in-house, aligned with China's broader technology independence strategy.
+- **Internationalization via Stock Connect:** Continued expansion of Shenzhen-Hong Kong Stock Connect scope, including ETF Connect (2022) and ongoing discussions about further broadening eligible securities.
+- **Green finance and ESG:** SZSE has promoted ESG disclosure and green bond listings as part of China's sustainable finance agenda [unverified].
+- **Support for "little giants" (ä¸ç²¾ç¹æ°):** SZSE, particularly through ChiNext, actively supports the listing of specialized, innovation-focused SMEs that the Chinese government designates as "little giant" companies.
+
+---
+
+## Comparison with SSE
+
+| Feature | SZSE | SSE |
+|---------|------|-----|
+| **Positioning** | Growth, innovation, tech companies | Large-cap, state-owned enterprises, blue chips |
+| **Signature Board** | ChiNext (åä¸æ¿) â NASDAQ-style | STAR Market (ç§åæ¿) â hard-tech focus |
+| **Market Cap** | ~CNY 35 trillion (Feb 2026) | ~CNY 50+ trillion [unverified] |
+| **Listed Companies** | ~2,879 (Feb 2026) | ~2,200+ [unverified] |
+| **Company Profile** | Smaller average market cap; more private enterprises | Larger average market cap; more SOEs |
+| **Price Limits** | +/-10% Main Board; +/-20% ChiNext | +/-10% Main Board; +/-20% STAR Market |
+| **Trading Hours** | Identical to SSE | Identical to SZSE |
+| **Settlement** | T+1 (same as SSE) | T+1 (same as SZSE) |
+| **Stock Connect** | Shenzhen-HK Stock Connect (Dec 2016) | Shanghai-HK Stock Connect (Nov 2014) |
+| **Trading System** | In-house developed | In-house developed |
+
+---
+
+## Comparison with KRX
+
+| Feature | SZSE | KRX (Korea Exchange) |
+|---------|------|----------------------|
+| **Market Structure** | Main Board + ChiNext | KOSPI + KOSDAQ |
+| **Growth Board** | ChiNext (comparable to KOSDAQ) | KOSDAQ |
+| **Price Limits** | +/-10% (Main), +/-20% (ChiNext) | +/-30% (unified since 2015) |
+| **Settlement** | T+1 (cannot sell same day) | T+2 |
+| **Trading Hours** | 9:30â11:30, 13:00â15:00 (4h continuous) | 9:00â15:30 (6h continuous, no lunch break since 2000) |
+| **Lunch Break** | 11:30â13:00 (1.5 hours) | None (eliminated in 2000) |
+| **Tick Size** | Uniform CNY 0.01 | Tiered by price level (8 tiers) |
+| **Foreign Access** | QFII/RQFII + Stock Connect | Relatively open; foreign ownership limits per company |
+| **Circuit Breaker** | Suspended (individual stock price limits only) | Active â sidecar (index futures) and market-wide SAPI |
+| **Regulatory Body** | CSRC | Financial Services Commission (FSC) / Financial Supervisory Service (FSS) |
+
+---
+
+## Sources
+
+1. [Shenzhen Stock Exchange â Wikipedia](https://en.wikipedia.org/wiki/Shenzhen_Stock_Exchange) â Historical overview, market data, establishment details
+2. [SZSE Official Website (English)](https://www.szse.cn/English/) â Market statistics, listing standards, trading overview
+3. [SZSE Market Overview](https://www.szse.cn/English/siteMarketData/marketStatistics/overview/) â Current market statistics
+4. [Merger of SZSE's SME Board and Main Board â AllBright Law Offices](https://www.allbrightlaw.com/EN/10531/485fbd8d9e62de06.aspx) â April 2021 board merger details
+5. [SZSE Merges Its Main and SME Boards â Seneca ESG](https://senecaesg.com/insights/szse-merges-its-main-and-sme-boards/) â Merger impact analysis
+6. [China's IPO Reform: New Rules for Registration-Based System â China Briefing](https://www.china-briefing.com/news/chinas-ipo-reforms-registration-based-mechanism/) â 2023 full rollout of registration system
+7. [CSRC Expanding Registration Based IPO Regime â National Law Review](https://natlawreview.com/article/people-s-republic-china-csrc-expanding-registration-based-ipo-regime) â Registration reform details
+8. [China New Securities Law â Library of Congress](https://www.loc.gov/item/global-legal-monitor/2020-03-17/china-new-securities-law-with-registration-based-ipo-system-takes-effect/) â 2020 Securities Law revision
+9. [ChiNext Market Overview â HKEX](https://www.hkex.com.hk/Mutual-Market/Stock-Connect/Getting-Started/Information-Booklet-and-FAQ/ChiNext-Market-Overview/Risks-for-SZSE-ChiNext-Market?sc_lang=en) â ChiNext risk factors and eligibility
+10. [HKEX Stock Connect FAQ (March 2026)](https://www.hkex.com.hk/-/media/HKEX-Market/Mutual-Market/Stock-Connect/Getting-Started/Information-Booklet-and-FAQ/FAQ/FAQ_En.pdf) â Daily quotas, eligible stocks, trading arrangements
+11. [SZSE Trading Rules (2018 English version)](http://docs.static.szse.cn/www/enSzhk/introduction/news/W020181124399984974002.pdf) â Trading rules reference
+12. [SZSE's Registration-Based IPO System â WFE Focus](https://focus.world-exchanges.org/articles/shenzhen-exchange-system) â Registration system supporting innovation
+13. [QFIs Permitted to Trade ETF Options â Lexology](https://www.lexology.com/library/detail.aspx?g=f3c30636-ab02-42e9-8678-245369678707) â September 2025 QFI options access
+14. [What You Should Know about ChiNext Market â China Legal Experts](https://www.chinalegalexperts.com/news/chinext) â ChiNext overview and listing requirements
+15. [Cross-Border Listings Guide: Shanghai, Shenzhen and Beijing â Baker McKenzie](https://resourcehub.bakermckenzie.com/en/resources/cross-border-listings-guide/asia-pacific/shanghai-shenzhen-and-beijing-stock-exchanges/topics/quick-summary) â Listing requirements summary
+16. [MarketsWiki â Shenzhen Stock Exchange](https://www.marketswiki.com/wiki/Shenzhen_Stock_Exchange) â Trading system capacity and technology details
+17. [Shenzhen Securities Information Co., Ltd. (SSIC)](http://www.szsi.cn/cpfw/overseas/) â Market data services and technical specifications

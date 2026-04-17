@@ -1,0 +1,245 @@
+---
+title: "Saudi Exchange (Tadawul)"
+subtitle: "주식시장 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 업데이트:** 2026-04-06
+> **조사 등급:** Tier 3
+> **도메인:** 주식
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | Saudi Exchange (구 Saudi Stock Exchange, Tadawul) |
+| 약칭 | Tadawul |
+| 웹사이트 | https://www.saudiexchange.sa |
+| 설립 연도 | 2007년 (주식회사 정식 설립; 전자매매는 2001년부터; 비공식 주식거래는 1954년부터) |
+| 소재지 | 사우디아라비아 / 리야드 (King Fahd Road) |
+| 소유 구조 | 2021년 12월 자사 거래소에 상장 (종목코드: 1111); PIF가 70% 지분 보유 |
+| 모회사 / 그룹 | Saudi Tadawul Group Holding Company (2021년 12월 8일 상장, 공모가 105리얄; IPO 시 시가총액 126억 리얄) |
+| 감독 기관 | Capital Market Authority (CMA), 2003년 자본시장법에 의해 설립 |
+| 시가총액 (상장기업) | 2026년 초 기준 약 10조 리얄 이상 (약 2.7조 달러); 중동 최대 거래소 |
+| 총 상장기업 수 | 약 390개사 이상 (메인마켓 약 230개 및 Nomu 약 80개), ETF, REITs, 수쿡/채권 별도 |
+| 일평균 거래대금 | 2026년 2월 기준 45.9억 리얄 (12.2억 달러) |
+
+### 주요 연혁 (Key Historical Milestones)
+- 1954년: 사우디아라비아에서 비공식 주식거래 시작
+- 1984년: Saudi Arabian Monetary Agency (SAMA)가 주식시장 규제 개시
+- 2001년: Tadawul 전자매매, 청산, 결제 시스템 출범(10월 16일), 수동 처리 대체
+- 2003년: 자본시장법(국왕 칙령 M/30호)에 의한 Capital Market Authority (CMA) 설립
+- 2007년: Saudi Exchange (Tadawul), 2007년 3월 19일 주식회사로 정식 설립, 사우디아라비아 유일의 증권거래소로 인가
+- 2008년: Tadawul, Nasdaq OMX의 SAXESS 매매 플랫폼 사용 개시
+- 2015년: 적격외국인투자자(QFI) 프로그램 출범, 기관 외국인 투자자에 최초 직접 시장 접근 개방; X-Stream INET 매매 플랫폼 출범(9월 13일), 중동 최초로 Nasdaq 최고속 매매 엔진 채택
+- 2017년: SME 상장을 위한 경량 요건의 Nomu -- Parallel Market 출범(2월 26일)
+- 2019년: Saudi Aramco IPO(12월 11일) -- 256억 달러 조달, 세계 최대 규모 IPO; MSCI 신흥시장 및 FTSE Russell EM 지수 편입 완료
+- 2020년: 종가단일가매매(장마감 경매) 및 Trade-at-Last 세션 도입; 결제주기 T+2로 변경
+- 2021년: Saudi Tadawul Group, 4개 자회사 체제의 지주회사로 재편 후 자사 거래소에 상장(12월 8일)
+- 2025년: 기록적 IPO 활동 -- 38건 상장; 2025년 6월 29일 시행 호가단위(최소가격변동폭) 개혁
+- 2026년: QFI 제도 폐지; 2026년 2월 1일부터 모든 외국인 투자자 범주에 장벽 없는 직접 접근 개방
+
+### 전략적 중요성 -- Vision 2030
+
+Saudi Exchange는 **사우디 비전 2030** 및 **금융부문 개발 프로그램(FSDP)**의 핵심 요소이다:
+- **석유 의존 탈피**: Aramco IPO는 비석유 경제 다각화를 위한 자본 조달 목적
+- **자본시장 심화**: 신상품(파생상품, 수쿡, REITs, ETF), 시장 부문(Nomu), 점진적 외국인 투자자 자유화
+- **글로벌 지수 편입**: MSCI 및 FTSE Russell EM 편입(2019년)으로 가시성, 외국 자금 유입, 제도적 발전의 선순환 창출
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 (Market Segments)
+
+| 구분 | 설명 | 상장 요건 (요약) |
+|---------|-------------|-------------------------------|
+| **메인마켓 (TASI)** | Saudi Aramco, SABIC, Al Rajhi Bank 등 우량 대형주를 포함하는 대형/중형주 주요 시장; Tadawul All Share Index (TASI)로 추적 | 최소 시가총액 3억 리얄; 3년 영업실적; 30% 최소 유동주식비율(시가총액 20억 리얄 초과 시 20%); CMA 승인 투자설명서; 수익성 및 기업지배구조 요건 |
+| **Nomu -- Parallel Market** | 경량 상장 요건의 SME 성장시장; 적격투자자(기관 및 고액순자산 개인)만 접근 가능 | 최소 시가총액 1,000만 리얄; 최소 20% 유동주식비율; 수익성 실적 불요; 재무 자문사 지정 필수; 1년 영업실적 |
+
+### 2.2 매매시간 (Trading Sessions)
+
+**참고:** 사우디아라비아는 연중 Arabia Standard Time (AST, UTC+3) 사용 (일광절약시간제 없음). 매매 주간은 **일요일~목요일** (금요일, 토요일 주말).
+
+| 세션 | 현지시간 (AST) | UTC | 설명 |
+|---------|------------------|-----|-------------|
+| 장전 | 09:30 - 10:00 | 06:30 - 07:00 | 주문 입력, 수정, 취소 가능; 매칭 없음; 예상 가격 표시 |
+| 시가단일가매매(개장 경매) | 10:00:00 - 10:00:30 | 07:00:00 - 07:00:30 | 30초 창 내 랜덤 언크로싱으로 시가 결정 |
+| 접속매매(연속매매) | 10:00 - 15:00 | 07:00 - 12:00 | 가격-시간 우선원칙에 의한 연속 주문 매칭 |
+| 장전마감 | 15:00 - 15:10 | 12:00 - 12:10 | 종가 경매 주문 집적 기간 |
+| 종가단일가매매(장마감 경매) 언크로싱 | 15:10:00 - 15:10:30 | 12:10:00 - 12:10:30 | 30초 창 내 랜덤 언크로싱으로 종가 결정 |
+| Trade-at-Last | 15:10 - 15:20 | 12:10 - 12:20 | 종가 경매가에서만 매매 허용 |
+
+- **총 접속매매(연속매매):** 일 5시간 (10:00-15:00 AST)
+- **점심시간 없음** (많은 아시아 거래소와 상이)
+- **랜덤 개장/마감:** 시장 건전성 강화를 위해 시가 및 종가 경매 언크로싱 시간 모두 30초 창 내 랜덤화
+
+### 2.3 호가단위 (Tick Sizes)
+
+**주식 호가단위(최소가격변동폭) 범위 (2025년 6월 29일 시행)**
+
+| 가격 범위 (리얄) | 호가단위(최소가격변동폭) (리얄) |
+|-------------------|-----------------|
+| 25.00 미만 | 0.01 |
+| 25.00 - 49.98 | 0.02 |
+| 50.00 - 99.95 | 0.05 |
+| 100.00 - 249.90 | 0.10 |
+| 250.00 - 499.75 | 0.25 |
+| 500.00 이상 | 0.50 |
+
+2025년 6월 개혁으로 25리얄 미만 증권의 최소 호가단위(최소가격변동폭)를 0.02리얄에서 0.01리얄로 인하하고, 고가 증권에 대한 새로운 밴드를 도입하였다. 이 개혁은 채무상품을 제외한 메인마켓 및 Nomu 모두에 적용된다.
+
+### 2.4 매매단위 (Lot Sizes)
+- **표준 매매단위(거래단위):** 1주 (최소 거래 가능 수량 1주) [미확인]
+- **단주 매매:** 이용 가능
+
+### 2.5 시장조성자(마켓메이커) / 유동성공급자 프로그램
+- Saudi Exchange는 상장 증권의 유동성 향상을 위한 시장조성 프레임워크 운영
+- 시장조성자(마켓메이커)는 CMA 인가를 받고 지속적 양방향 호가 제공
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 경매 메커니즘
+- **시가단일가매매(개장 경매):** 장전 단계(09:30-10:00 AST) 동안 매칭 없이 주문 집적. 10:00에 30초 창(10:00:00-10:00:30) 내 랜덤 언크로싱으로 체결 가능 수량을 최대화하는 단일가매매에 의해 시가 결정
+- **종가단일가매매(장마감 경매):** 15:00 AST에 장전마감 단계 시작. 10분간 주문 집적. 15:10에 30초 내 랜덤 언크로싱으로 종가 결정. 지수 산출, NAV 계산, 결제에 사용되는 공식 종가
+- **Trade-at-Last:** 종가 경매 언크로싱 후(15:10-15:20 AST) 확정된 종가에서만 주문 체결 가능
+- **변동성 경매(인터럽션):** 증권 가격이 +/-10% 정적 가격제한에 도달하면 접속매매(연속매매) 중단 후 5분간 단일가매매 실시. 경매 가격이 새로운 기준가가 되고 접속매매(연속매매) 재개
+
+### 3.2 접속매매 (Continuous Trading)
+- **유형:** 주문주도형 시장
+- **우선순위:** 가격-시간 우선원칙
+- **세션:** 10:00 - 15:00 AST (5시간)
+- **매칭:** X-Stream INET 엔진에 의한 연속 자동 매칭
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 표준 주문 유형
+| 주문 유형 | 설명 |
+|------------|-------------|
+| 지정가주문 | 지정 가격 이상/이하로 매수/매도 |
+| 시장가주문 | 최우선 가격으로 즉시 체결 |
+
+### 4.2 주문 유효기간
+| TIF | 설명 |
+|-----|-------------|
+| DAY | 당일 매매 세션에만 유효 |
+| IOC | 즉시체결-잔량취소 |
+| FOK | 전량체결-또는-취소 |
+
+---
+
+## 5. 매매시스템 (기술) (Trading System / Technology)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 시스템 명칭 | X-Stream INET |
+| 벤더 / 자체 개발 | Nasdaq Technology (Nasdaq, Inc.에서 라이선스) |
+| 아키텍처 | 주식, 수쿡, 채권, ETF를 지원하는 다중자산 매매 플랫폼 |
+| 매매체결엔진 (Matching Engine) | Nasdaq X-Stream INET -- 다중 매매체결엔진(매칭엔진) |
+| 왕복 지연시간 | 40마이크로초 미만 (2015년 출시 시) |
+| 주문 처리 용량 | 초당 40,000건 지속 처리량 (출시 시) |
+| 출시 연도 | 2015년 (2015년 9월 13일 가동) |
+
+### 시스템 연혁
+| 기간 | 시스템 | 비고 |
+|--------|--------|-------|
+| 2001년 이전 | 수동 매매 | 종이 기반, 중개인 매개 거래 |
+| 2001-2008년 | Tadawul 전자시스템 | 최초 전자매매, 청산, 결제 시스템; 2001년 10월 16일 출범 |
+| 2008-2015년 | SAXESS (Nasdaq OMX) | Nasdaq OMX 매매 플랫폼 |
+| 2015년-현재 | X-Stream INET (Nasdaq) | 당시 세계 최고속 다중자산 매매 엔진; 중동 최초; 초당 40K건, 40마이크로초 미만 |
+
+---
+
+## 6~7절: 시장 데이터 및 접속 (Market Data & Connectivity)
+
+- **시장 데이터:** Market Data Feed (MDF) 직접 피드 및 ICE Consolidated Feed 경유 서드파티 배포
+- **데이터 수준:** Best Price (Level 1), Market Depth (Level 2, 5단계), Premium (전체 깊이)
+- **접속:** 인가 사우디 중개기관을 통한 DMA; 2026년 2월부터 외국인 투자자가 QFI 자격 없이 인가 사우디 중개기관을 통해 직접 접근 가능
+
+---
+
+## 8. 위험 통제 및 서킷브레이커(매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 가격제한
+| 유형 | 기준 | 조치 |
+|------|-----------|--------|
+| 정적 일일 가격제한 | 기준가(전일 종가) 대비 +/- 10% | 제한 초과 주문 거부; 가격이 제한에 도달하면 변동성 인터럽션 발동 |
+
+### 8.2 서킷브레이커(매매거래중단)
+| 수준 | 발동 기준 | 중단 기간 |
+|-------|---------|---------------|
+| 변동성 인터럽션 (개별 증권) | 증권 가격이 +/- 10% 정적 가격제한 도달 | 5분 단일가매매; 경매 가격이 새 기준가; 접속매매(연속매매) 재개 |
+| 신규 상장 증권 (메인마켓) | 최초 3거래일 +/- 10% 제한 적용 | 발동 시 5분 단일가매매 |
+| Nomu -- Parallel Market (전 증권) | 지속적 +/- 10% 제한 | 발동 시 5분 단일가매매 |
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관
+- **Capital Market Authority (CMA)** -- 2003년 자본시장법(국왕 칙령 M/30호)에 의해 설립
+- CMA는 국무총리에 직접 보고하는 독립 정부 기관
+- 사우디 자본시장 규제 및 발전, 투자자 보호, 시장 공정성 및 투명성 보장 담당
+
+### 9.2 외국인 투자자 접근 변천
+
+| 연도 | 이정표 |
+|------|-----------|
+| 2015년 이전 | 스왑 계약 및 P-Notes를 통해서만 외국인 접근 가능 |
+| 2015년 | QFI 프로그램 출범 -- AUM 50억 달러 이상 기관투자자 |
+| 2018년 | QFI 기준 완화; 투자자당 보유 상한 5%에서 10%로 인상 |
+| 2019년 | Foreign Strategic Investor (FSI) 프레임워크 도입; MSCI EM 및 FTSE Russell EM 지수 편입 완료 |
+| 2026년 (2월 1일) | **QFI 제도 폐지** -- 모든 외국인 투자자에 인가 사우디 중개기관을 통한 장벽 없는 직접 접근 부여; 스왑 계약 프레임워크 중단 |
+
+**현행 외국인 보유 한도 (2026년 2월 기준):**
+- 상장기업당 총 외국인 보유 상한 49%
+- 단일 외국인 투자자당 10% 상한
+- 외국전략투자자는 표준 한도 초과 보유에 별도 규정 적용
+
+**외국인 보유 현황:** 2026년 2월 말 기준 총 외국인 보유 가치 4,437.8억 리얄(1,183.4억 달러) 도달.
+
+---
+
+## 10~11절: 수수료, 최근 동향 (Fees & Recent Developments)
+
+### 매매 수수료
+| 수수료 유형 | 요율 |
+|----------|------|
+| 거래소 수수료 | 거래대금의 약 0.00105 (10.5 bps) [미확인] |
+| CMA 수수료 | 거래대금의 약 0.0003 (3 bps) |
+
+### 최근 동향
+- **2025년:** 호가단위(최소가격변동폭) 개혁(6월 29일 시행); 기록적 38건 IPO 상장
+- **2026년 2월:** QFI 제도 폐지, 모든 외국인 투자자에 장벽 없는 직접 접근 부여
+- **비전 2030 / FSDP 연계:** 자본시장 심화, GDP 대비 시가총액 비율 증대, 석유 의존 탈피 경제 다각화를 위한 지속적 개혁
+
+---
+
+## 출처 (Sources)
+
+1. [Saudi Exchange Official Website](https://www.saudiexchange.sa)
+2. [Saudi Exchange -- Wikipedia](https://en.wikipedia.org/wiki/Saudi_Exchange)
+3. [Saudi Exchange -- Saudipedia](https://saudipedia.com/en/article/2003/economy-and-business/finance/saudi-exchange-tadawul)
+4. [Argaam -- X-Stream INET launch](https://www.argaam.com/en/article/articledetail/id/386855)
+5. [Nasdaq IR -- Tadawul extends contract](https://ir.nasdaq.com/news-releases/news-release-details/photo-release-tadawul-bolsters-trading-technology-extends)
+6. [Greenberg Traurig -- QFI Abolishment](https://www.gtlaw.com/en/insights/2026/01/saudi-arabia-abolishes-qfi-status-and-opens-the-market-to-all-foreign-investors)
+7. [CMA -- Foreign Investor Opening announcement](https://cma.gov.sa/en/MediaCenter/NEWS/Pages/CMA_N_3974.aspx)
+8. [Bloomberg/Tadawul -- Foreign Equity Flows](https://sponsored.bloomberg.com/article/tadawul/saudi-stock-exchange-is-a-top-destination-for-foreign-equity-flows)
+9. [Mondovisione -- Tick Size Amendment](https://mondovisione.com/media-and-resources/news/the-saudi-exchange-amends-tick-size-bands-of-securities-to-enhance-market-effici-2025626)
+10. [Sahm Capital -- Fee Schedule](https://www.sahmcapital.com/support/detail/saudi-arabia-stock-fees-schedule)

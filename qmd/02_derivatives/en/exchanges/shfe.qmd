@@ -1,0 +1,528 @@
+---
+title: "Shanghai Futures Exchange (SHFE)"
+subtitle: "Derivatives > Exchanges"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Shanghai Futures Exchange (上海期货交易所) |
+| Abbreviation | SHFE |
+| Website | https://www.shfe.com.cn/eng/ |
+| Year Established | December 1999 (formed from merger of three exchanges) |
+| Country / City | China / Shanghai (Lujiazui, Pudong district) |
+| Ownership Structure | Non-profit, self-regulatory organization |
+| Parent Company / Group | Independent; operates under supervision of the China Securities Regulatory Commission (CSRC) |
+| Subsidiary | Shanghai International Energy Exchange (INE, established 2013) — handles internationalized products |
+| Regulatory Authority | China Securities Regulatory Commission (CSRC) |
+| Global Ranking | 10th largest derivatives exchange globally (FIA 2023 ranking) |
+| Listed Instruments | 24+ futures contracts (SHFE + INE combined), plus options on multiple products |
+| Key Products | Copper, Aluminum, Zinc, Gold, Silver, Nickel, Natural Rubber, Steel Rebar, Crude Oil (INE), Fuel Oil |
+
+[Source: Wikipedia, "Shanghai Futures Exchange", https://en.wikipedia.org/wiki/Shanghai_Futures_Exchange]
+[Source: SHFE, "Overview", https://www.shfe.com.cn/eng/AboutSHFE/Introduction/Overview/]
+[Source: Grokipedia, "Shanghai Futures Exchange", https://grokipedia.com/page/Shanghai_Futures_Exchange]
+
+### Key Historical Milestones
+
+- **1992 (May 28)**: Shanghai Metal Exchange (SHME) established — one of the predecessor exchanges
+- **1993**: Shanghai Cereals and Oil Exchange and Shanghai Commodity Exchange also operating
+- **1999 (December)**: Shanghai Futures Exchange formed from the merger of Shanghai Metal Exchange, Shanghai Cereals and Oil Exchange, and Shanghai Commodity Exchange — part of China's nationwide restructuring of futures markets
+- **2004**: Fuel oil futures listed
+- **2007**: Zinc futures listed
+- **2008**: Gold futures listed (January 9) — first gold futures in mainland China
+- **2012**: Silver futures listed
+- **2013**: Shanghai International Energy Exchange (INE) established as a subsidiary for internationalized products
+- **2014**: Hot-rolled coil futures listed; nickel and tin futures listed
+- **2018 (March 26)**: INE crude oil futures (SC) launched — first commodity futures in mainland China open to overseas investors, priced in RMB
+- **2018**: Copper options listed (September 21) — SHFE's first options product
+- **2019**: Natural rubber options, stainless steel futures (September 25), TSR 20 rubber futures (INE) listed
+- **2020**: Low sulfur fuel oil futures listed on INE; INE bonded copper futures launched
+- **2022**: Cast aluminum alloy futures listed; alumina (aluminum oxide) futures listed
+- **2024**: SHFE wins three international awards at FOW Trading Amsterdam; containerized freight index futures (SCFIS) launched on INE
+- **2025**: Offset paper futures listed [unverified listing date]
+
+[Source: Wikipedia, "Shanghai Futures Exchange", https://en.wikipedia.org/wiki/Shanghai_Futures_Exchange]
+[Source: MarketsWiki, "Shanghai Futures Exchange", https://www.marketswiki.com/wiki/Shanghai_Futures_Exchange]
+[Source: SHFE, Official Website, https://www.shfe.com.cn/eng/]
+[Source: Orient Futures Singapore, "INE Futures & Options Trading", https://www.orientfutures.com.sg/china-market-access/shanghai-international-energy-exchange-ine/]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+
+#### SHFE (Domestic Market)
+
+| Segment | Key Products | Description |
+|---------|-------------|-------------|
+| **Base Metals Futures** | Copper (CU), Aluminum (AL), Zinc (ZN), Lead (PB), Nickel (NI), Tin (SN), Cast Aluminum Alloy (AD) | Major non-ferrous metals; copper and aluminum among the world's most liquid metals contracts |
+| **Precious Metals Futures** | Gold (AU), Silver (AG) | Physical delivery gold and silver futures |
+| **Ferrous Metals Futures** | Steel Rebar (RB), Hot-Rolled Coil (HC), Stainless Steel (SS) | Steel products futures |
+| **Energy Futures** | Fuel Oil (FU), Bitumen (BU), LPG (not confirmed on SHFE) [unverified] | Petroleum-related products |
+| **Chemical Futures** | Natural Rubber (RU), Alumina / Aluminum Oxide (AO) | Chemical and industrial raw materials |
+| **Other** | Offset Paper (OP) | Recently added product |
+| **Options** | Copper Options, Aluminum Options, Zinc Options, Gold Options, Natural Rubber Options, others | Options on key futures products |
+
+#### INE (International Market — SHFE Subsidiary)
+
+| Product | Ticker | Description | International Access |
+|---------|--------|-------------|---------------------|
+| Crude Oil | SC | Medium sour crude oil, 1,000 barrels/lot, RMB-denominated | Open to overseas traders (since March 2018) |
+| Low Sulfur Fuel Oil | LU | 10 tons/lot | Open to overseas traders |
+| TSR 20 Rubber | NR | 10 tons/lot, Technically Specified Rubber 20 | Open to overseas traders |
+| Bonded Copper | BC | 5 tons/lot, bonded zone copper cathode | Open to overseas traders |
+| Containerized Freight Index | SCFIS | Cash-settled, Shanghai Containerized Freight Index | Open to overseas traders |
+
+[Source: SHFE, Official Website Products, https://www.shfe.com.cn/eng/]
+[Source: INE, Official Website, https://www.ine.cn/eng/]
+[Source: KGI World, "INE International Copper Futures", https://www.kgieworld.sg/futures/ine-copper-launch]
+
+### 2.2 Trading Sessions
+
+SHFE operates in China Standard Time (CST, Beijing Time, UTC+8). All times below are for standard trading days (Monday through Friday).
+
+#### Day Sessions (All Products)
+
+| Session | Beijing Time (CST) | UTC | Description |
+|---------|-------------------|-----|-------------|
+| **Morning Session I** | 09:00 - 10:15 | 01:00 - 02:15 | First morning trading period |
+| **Morning Session II** | 10:30 - 11:30 | 02:30 - 03:30 | Second morning trading period (15-min break) |
+| **Afternoon Session** | 13:30 - 15:00 | 05:30 - 07:00 | Afternoon trading period |
+
+#### Night Sessions (Continuous Trading Program — Selected Products)
+
+| Product Group | Beijing Time (CST) | UTC | Products |
+|--------------|-------------------|-----|----------|
+| **Precious Metals** | 21:00 - 02:30 (+1) | 13:00 - 18:30 | Gold (AU), Silver (AG) |
+| **Base Metals (Group 1)** | 21:00 - 01:00 (+1) | 13:00 - 17:00 | Copper (CU), Aluminum (AL), Zinc (ZN), Lead (PB), Nickel (NI), Tin (SN) |
+| **Other SHFE Products** | 21:00 - 23:00 | 13:00 - 15:00 | Natural Rubber (RU), Fuel Oil (FU), Bitumen (BU), Steel Rebar (RB), Hot-Rolled Coil (HC), Stainless Steel (SS), Alumina (AO) [unverified — specific products in this tier] |
+| **INE Crude Oil** | 21:00 - 02:30 (+1) | 13:00 - 18:30 | Crude Oil (SC) |
+| **INE Bonded Copper** | 21:00 - 01:00 (+1) | 13:00 - 17:00 | Bonded Copper (BC) |
+| **INE Other** | 21:00 - 23:00 | 13:00 - 15:00 | Low Sulfur Fuel Oil (LU), TSR 20 Rubber (NR) |
+
+**Night Session Notes:**
+- Night session trades are included in the next trading day's settlement
+- The night session does not operate on the evening before a public holiday
+- Gold and silver have the longest night session (until 02:30) to overlap with London and New York precious metals trading hours
+- Base metals run until 01:00 to capture London Metal Exchange (LME) trading hours
+
+[Source: SHFE, "Trading Hours", https://www.shfe.com.cn/eng/reports/CalendarHolidays/TradingHours/]
+[Source: SHFE, "Continuous Trading Program", https://www.shfe.com.cn/content/lxjy/main_en.html]
+[Source: Nanhua Futures, "Trading Hours Overview", https://www.nanhua.net/cmsbigfile/2024/11/c7be3f53-3ee2-4e9d-a55f-c074f5165c5b/Trading%20Hours%202024.11.18.pdf]
+[Source: TradingHours.com, "SHFE Market Hours", https://www.tradinghours.com/markets/shfe]
+
+### 2.3 Tick Sizes and Contract Specifications (Selected Products)
+
+| Product | Contract Size | Tick Size | Tick Value | Price Quotation | Delivery |
+|---------|--------------|-----------|------------|-----------------|----------|
+| Copper (CU) | 5 tons/lot | 10 CNY/ton | CNY 50 | CNY/ton | Physical |
+| Aluminum (AL) | 5 tons/lot | 5 CNY/ton | CNY 25 | CNY/ton | Physical |
+| Zinc (ZN) | 5 tons/lot | 5 CNY/ton | CNY 25 | CNY/ton | Physical |
+| Lead (PB) | 5 tons/lot | 5 CNY/ton | CNY 25 | CNY/ton | Physical |
+| Nickel (NI) | 1 ton/lot | 10 CNY/ton | CNY 10 | CNY/ton | Physical |
+| Tin (SN) | 1 ton/lot | 10 CNY/ton | CNY 10 | CNY/ton | Physical |
+| Gold (AU) | 1,000 grams/lot | 0.02 CNY/gram | CNY 20 | CNY/gram | Physical |
+| Silver (AG) | 15 kg/lot | 1 CNY/kg | CNY 15 | CNY/kg | Physical |
+| Natural Rubber (RU) | 10 tons/lot | 5 CNY/ton | CNY 50 | CNY/ton | Physical |
+| Fuel Oil (FU) | 10 tons/lot | 1 CNY/ton | CNY 10 | CNY/ton | Physical |
+| Bitumen (BU) | 10 tons/lot | 1 CNY/ton | CNY 10 | CNY/ton | Physical |
+| Steel Rebar (RB) | 10 tons/lot | 1 CNY/ton | CNY 10 | CNY/ton | Physical |
+| Hot-Rolled Coil (HC) | 10 tons/lot | 1 CNY/ton | CNY 10 | CNY/ton | Physical |
+| Stainless Steel (SS) | 5 tons/lot | 5 CNY/ton | CNY 25 | CNY/ton | Physical |
+| INE Crude Oil (SC) | 1,000 barrels/lot | 0.1 CNY/barrel | CNY 100 | CNY/barrel | Physical |
+| INE Bonded Copper (BC) | 5 tons/lot | 10 CNY/ton | CNY 50 | CNY/ton | Physical |
+| INE TSR 20 Rubber (NR) | 10 tons/lot | 5 CNY/ton | CNY 50 | CNY/ton | Physical |
+
+[Source: SHFE, "Contract Text — Copper", https://www.shfe.com.cn/eng/Market/Futures/Metal/cu_f/ContractText/]
+[Source: SHFE, "Gold Contract Specification", https://www.shfe.com.cn/eng/Market/Futures/Metal/au_f/ContractText/]
+[Source: SHFE, "Silver Futures Contract Specifications", https://www.shfe.com.cn/eng/Market/Futures/Metal/ag_f/ContractText/]
+[Source: INE, "Crude Oil", https://www.ine.cn/eng/market/futures/energy/sc/]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Order Matching
+
+- **Matching Method**: Computerized centralized matching using price-time priority
+- **Priority Rules**: Price priority first (higher bids and lower offers matched first), then time priority (earlier orders at the same price have priority)
+- **Matching Engine**: Orders enter the mainframe for centralized matching; concluded deals feedback delivered to trading terminals
+
+### 3.2 Auction Mechanisms
+
+- **Call Auction (Opening)**: Used at the start of each session to determine the opening price. Orders accumulated during the pre-opening period are matched at a single price that maximizes volume.
+- **Continuous Auction**: After the opening, incoming orders are continuously matched against resting orders on the book.
+
+### 3.3 Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Limit Order** | Order to buy or sell at a specified price or better |
+| **Market Order** | Order executed at the best available price; unfilled portion cancelled |
+
+### 3.4 Settlement Price
+
+- The daily settlement price is typically the volume-weighted average price of all trades during the trading day (or a specified calculation window)
+- Used for daily mark-to-market margin calculations
+
+### 3.5 Spread Trading
+
+- Calendar spread (inter-month spread) trading is supported for selected products
+- Cross-commodity spreads may be available for related products [unverified]
+
+[Source: SHFE, "Application Report on Remote Trading Seat", https://www.shfe.com.cn/upload/20131120/1384924405429.doc]
+[Source: SHFE, "Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/]
+
+---
+
+## 5. Trading System / Technology
+
+### 5.1 CTP (Comprehensive Transaction Platform)
+
+SHFE operates the CTP (Comprehensive Transaction Platform) as its core trading system, which is widely used across China's futures industry.
+
+| Item | Details |
+|------|---------|
+| System Name | CTP (Comprehensive Transaction Platform) |
+| Architecture | Centralized matching engine with distributed access |
+| Data Center | Zhangjiang Data Center, Shanghai (primary site) |
+| Access Methods | CTP API (primary), Hang Seng, POBO (Bloomberg), Multicharts terminals |
+| HFT Access | CTP API, FPGA (Shengli), Femas, X1, Esunny Morningstar |
+| Trading Protocols | CTP proprietary API; third-party ISV access supported |
+
+### 5.2 System Capabilities
+
+- **Order Processing**: Centralized matching with price-time priority for all listed futures and options
+- **Risk Management**: Real-time position monitoring, margin calculation, and automated forced liquidation
+- **Market Data Distribution**: Real-time price and depth-of-market data distributed to members and information vendors
+- **Delivery System**: Electronic warehouse receipt management and physical delivery processing
+
+### 5.3 Infrastructure
+
+- Primary data center located in the VIP enclosure of the Zhangjiang Data Center, Shanghai
+- Co-location / hosting services available at the exchange's data center for low-latency trading access
+- Rapid trading platforms deployed in the hosting room for high-frequency trading participants
+- Standardized open interface access for individual investors, institutional investors, and professional HFT participants
+
+### 5.4 Disaster Recovery
+
+- SHFE maintains business continuity plans with backup systems
+- Specific DR site location and RTO/RPO details are not publicly disclosed [unverified]
+
+[Source: CCB Futures, "Advantages", https://www.ccbfutures.com/en/about_us/advantages/index.shtml]
+[Source: Min Futures, "Trading Access", https://www.minfutures.com/english/main_business/tradingaccess/index.shtml]
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Daily Price Limits
+
+SHFE applies daily price limits to all futures contracts, calculated as a percentage of the previous trading day's settlement price. Limits are adjusted based on market conditions and during holiday periods.
+
+**Standard Price Limits (Normal Conditions):**
+
+| Product Category | Standard Daily Price Limit | Notes |
+|-----------------|---------------------------|-------|
+| Copper (CU) | ±3% (base) | Raised to ±7-9% during volatile periods (e.g., 9% in January 2026) |
+| Aluminum (AL) | ±3% (base) | Raised to ±9% during volatile periods |
+| Zinc (ZN) | ±4% | Adjusted during holidays |
+| Lead (PB) | ±4% | Adjusted during holidays |
+| Nickel (NI) | ±5% | Higher base limit due to volatility |
+| Tin (SN) | ±4% | Adjusted during holidays |
+| Gold (AU) | ±3% (base) | Raised during volatile periods |
+| Silver (AG) | ±3% (base) | Raised during volatile periods |
+| Natural Rubber (RU) | ±3% | Standard |
+| Fuel Oil (FU) | ±5% | Standard |
+| Steel Rebar (RB) | ±4% | Standard |
+| Stainless Steel (SS) | ±5% (base) | Raised to ±8% during holidays |
+| INE Crude Oil (SC) | ±4% (base) | Adjusted based on international crude price volatility |
+
+**Expansion Mechanism:**
+- If a contract settles at its price limit for consecutive trading days, SHFE may expand the price limit range and increase margin requirements
+- SHFE can also implement ad hoc adjustments before holidays or during extreme market conditions
+- In January 2026, SHFE significantly tightened rules amid precious metals surge — expanded daily price limits for gold, silver, copper, and aluminum while raising margin requirements
+
+### 8.2 Trading Margin Requirements
+
+SHFE uses a **fixed-percentage margin system**. Margins are calculated as a percentage of contract value.
+
+**Standard Minimum Trading Margins:**
+
+| Product | Minimum Margin Rate | Notes |
+|---------|-------------------|-------|
+| Copper (CU) | 5% (base) | Raised to 8-11% during volatile periods; 11% for speculative positions in Jan 2026 |
+| Aluminum (AL) | 5% (base) | Adjusted during volatile periods |
+| Zinc (ZN) | 5% (base) | Standard |
+| Lead (PB) | 5% (base) | Standard |
+| Nickel (NI) | 8% (base) | Higher due to volatility |
+| Tin (SN) | 8% (base) | Higher due to volatility |
+| Gold (AU) | 4% (base) | Lower base rate; raised during volatile periods |
+| Silver (AG) | 4% (base) | Lower base rate; raised during volatile periods |
+| Natural Rubber (RU) | 5% (base) | Standard |
+| Steel Rebar (RB) | 5% (base) | Standard |
+| INE Crude Oil (SC) | 7% (base) | Higher base due to international nature and volatility |
+
+**Margin Adjustment Rules:**
+- Margins increase as a contract approaches its delivery month (stepped increases)
+- Margins increase when open interest exceeds specified thresholds
+- SHFE raises margins before long holidays (Spring Festival, National Day, Labor Day)
+- The exchange can raise margins at any time based on market conditions
+
+### 8.3 Position Limits
+
+- SHFE imposes speculative position limits specifying the maximum long or short position each member or client may hold
+- Position limits differ by product and are expressed as maximum lots
+- Daily opening position limits apply to certain products (e.g., silver and tin have reduced daily opening position limits)
+- Hedging positions can be approved for higher limits upon application
+- Large trader reporting requirements apply when positions exceed specified thresholds
+
+### 8.4 Risk Management Framework
+
+SHFE applies a comprehensive risk management regime including:
+
+| Measure | Description |
+|---------|-------------|
+| **Margin Requirement** | Percentage of contract value deposited as collateral |
+| **Price Limit** | Maximum daily price fluctuation range |
+| **Speculative Position Limit** | Maximum position size for non-hedging accounts |
+| **Large Trader Reporting** | Mandatory reporting when positions exceed thresholds |
+| **Forced Position Liquidation** | Compulsory closing of positions when margin requirements are not met |
+| **Risk Warning** | Alerts issued when abnormal trading patterns are detected |
+
+### 8.5 Forced Liquidation
+
+- If a member's margin falls below the required level and is not replenished by the next trading day's opening, SHFE may forcibly close positions
+- Positions may also be forcibly liquidated if position limits are exceeded
+- The exchange can invoke emergency measures including trading suspension during extreme conditions
+
+[Source: Caixin Global, "Shanghai Futures Exchange Tightens Rules Amid Precious Metals Surge", January 2026, https://www.caixinglobal.com/2026-01-21/shanghai-futures-exchange-tightens-rules-amid-precious-metals-surge-102406134.html]
+[Source: Caixin Global, "Shanghai Exchange Slaps New Limits on Metal Trading as Prices Soar", January 2026, https://www.caixinglobal.com/2026-01-27/shanghai-exchange-slaps-new-limits-on-metal-trading-as-prices-soar-102408262.html]
+[Source: SHFE, "Risk Management Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/202508/t20250807_828560.html]
+[Source: Mining.com, "Shanghai Futures Exchange lowers margin requirements for metals trading", https://www.mining.com/web/shanghai-futures-exchange-lowers-margin-requirements-for-metals-trading/]
+[Source: Swastika, "SHFE Raises Trading Margins: Market Impact Explained", https://www.swastika.co.in/blog/shanghai-futures-exchange-shfe-raises-trading-margins-what-it-means-for-commodities-and-indian-markets]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+
+| Regulator | Role |
+|-----------|------|
+| **China Securities Regulatory Commission (CSRC)** | Primary regulator; oversees all futures and derivatives exchanges in China; approves new product listings |
+
+### 9.2 Key Regulations
+
+- **Regulations on the Administration of Futures Trading (State Council)**: Primary national regulation governing futures markets in China
+- **Futures and Derivatives Law (2022)**: China's first comprehensive law on futures and derivatives, effective August 1, 2022; provides legal foundation for market development, investor protection, and cross-border activities
+- **SHFE Trading Rules**: Exchange-level rules governing trading conduct, order management, price limits, and market operations
+- **SHFE Clearing Rules**: Rules governing margin, settlement, delivery, and default management
+- **SHFE Risk Management Rules**: Rules on margins, price limits, position limits, large trader reporting, and forced liquidation
+- **INE Business Rules**: Separate but aligned rules for Shanghai International Energy Exchange operations and international participant access
+
+### 9.3 Market Surveillance
+
+- SHFE conducts real-time market surveillance monitoring for abnormal trading patterns, market manipulation, and insider trading
+- Coordinates with CSRC on enforcement actions
+- Reports large positions and unusual trading activity
+- Daily opening position limits enforced for certain products to control speculative activity
+
+### 9.4 Internationalization via INE
+
+The Shanghai International Energy Exchange (INE), established in 2013 as a subsidiary of SHFE, serves as the platform for internationalized commodity products:
+
+| Feature | Description |
+|---------|-------------|
+| **Purpose** | Provide a regulated venue for overseas investors to trade Chinese commodity futures |
+| **Currency** | All contracts denominated and settled in RMB |
+| **Access Channels** | Direct overseas participation through overseas intermediaries, or via QFII/RQFII channels |
+| **Products Open to Foreign Traders** | Crude Oil (SC), Low Sulfur Fuel Oil (LU), TSR 20 Rubber (NR), Bonded Copper (BC), Containerized Freight Index (SCFIS) |
+| **Bonded Delivery** | Physical delivery through bonded warehouses in Shanghai Free Trade Zone and other designated zones |
+| **Significance** | Crude oil futures (SC, launched March 2018) was the first commodity futures in mainland China open to overseas investors |
+
+### 9.5 Self-Regulatory Organization
+
+- SHFE functions as a self-regulatory organization (SRO) under CSRC supervision
+- Operates 224 delivery warehouses across China
+- Member firms include futures commission merchants (FCMs) and non-futures-company members
+- SHFE sets and enforces its own trading rules, clearing rules, and membership requirements
+
+[Source: SHFE, "Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/]
+[Source: SHFE, "Clearing Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/202508/t20250807_828555.html]
+[Source: INE, "Overview", https://www.ine.cn/eng/about/overview/]
+[Source: Orient Futures Singapore, "INE Futures & Options Trading", https://www.orientfutures.com.sg/china-market-access/shanghai-international-energy-exchange-ine/]
+
+---
+
+## Product Catalog
+
+### SHFE Futures Products
+
+| Category | Product | Ticker | Contract Size | Listed Year |
+|----------|---------|--------|--------------|-------------|
+| **Base Metals** | Copper Cathode | CU | 5 tons/lot | 1999 (inherited from SHME) |
+| | Aluminum | AL | 5 tons/lot | 1999 (inherited) |
+| | Zinc | ZN | 5 tons/lot | 2007 |
+| | Lead | PB | 5 tons/lot | 2011 |
+| | Nickel | NI | 1 ton/lot | 2015 |
+| | Tin | SN | 1 ton/lot | 2015 |
+| | Cast Aluminum Alloy | AD | 5 tons/lot [unverified] | 2022 |
+| **Precious Metals** | Gold | AU | 1,000 grams/lot | 2008 |
+| | Silver | AG | 15 kg/lot | 2012 |
+| **Ferrous Metals** | Steel Rebar | RB | 10 tons/lot | 2009 |
+| | Hot-Rolled Coil | HC | 10 tons/lot | 2014 |
+| | Stainless Steel | SS | 5 tons/lot | 2019 |
+| **Energy** | Fuel Oil | FU | 10 tons/lot | 2004 |
+| | Bitumen | BU | 10 tons/lot | 2013 |
+| **Chemical** | Natural Rubber | RU | 10 tons/lot | 1999 (inherited) |
+| | Alumina (Aluminum Oxide) | AO | 20 tons/lot [unverified] | 2022 |
+| | Offset Paper | OP | [unverified] | 2025 [unverified] |
+
+### INE Futures Products (Internationalized)
+
+| Product | Ticker | Contract Size | Listed Year | International Access |
+|---------|--------|--------------|-------------|---------------------|
+| Crude Oil | SC | 1,000 barrels/lot | 2018 | Yes (first mainland product open to overseas traders) |
+| Low Sulfur Fuel Oil | LU | 10 tons/lot | 2020 | Yes |
+| TSR 20 Rubber | NR | 10 tons/lot | 2019 | Yes |
+| Bonded Copper | BC | 5 tons/lot | 2020 | Yes |
+| Containerized Freight Index | SCFIS | Cash-settled | 2024 [unverified] | Yes |
+
+### Options Products
+
+Options are available on: Copper (CU), Aluminum (AL), Zinc (ZN), Gold (AU), Silver (AG), Natural Rubber (RU), and others on SHFE; Crude Oil options on INE.
+
+[Source: SHFE, Official Website, https://www.shfe.com.cn/eng/]
+[Source: INE, Official Website, https://www.ine.cn/eng/]
+[Source: CSI Data, "Commodity Factsheet — SHFE", https://apps.csidata.com/factsheets.php?type=commodity&format=htmltable&exchangeid=SHFE]
+
+---
+
+## Contract Specifications (Key Products Detail)
+
+### Copper Futures (CU) — Flagship Product
+
+| Item | Specification |
+|------|--------------|
+| Trading Unit | 5 metric tons per lot |
+| Price Quotation | CNY per ton |
+| Minimum Price Fluctuation | 10 CNY/ton |
+| Daily Price Limit | ±3% of previous settlement price (base; adjusted during volatile periods) |
+| Contract Months | Monthly (January through December) |
+| Delivery Method | Physical delivery |
+| Deliverable Grade | Standard copper cathode (Cu-CATH-2, GB/T467) with Cu+Ag content >= 99.95% |
+| Delivery Unit | 25 tons per warrant |
+| Trading Margin | 5% minimum (base) |
+
+### Gold Futures (AU)
+
+| Item | Specification |
+|------|--------------|
+| Trading Unit | 1,000 grams per lot |
+| Price Quotation | CNY per gram |
+| Minimum Price Fluctuation | 0.02 CNY/gram |
+| Daily Price Limit | ±3% of previous settlement price (base) |
+| Contract Months | Most months of the year |
+| Delivery Method | Physical delivery |
+| Deliverable Grade | Gold bars with fineness >= 99.95% |
+| Delivery Unit | 3,000 grams (fine weight) |
+| Trading Margin | 4% minimum (base) |
+
+### Silver Futures (AG)
+
+| Item | Specification |
+|------|--------------|
+| Trading Unit | 15 kg per lot |
+| Price Quotation | CNY per kg |
+| Minimum Price Fluctuation | 1 CNY/kg |
+| Daily Price Limit | ±3% of previous settlement price (base) |
+| Delivery Method | Physical delivery |
+| Delivery Unit | 30 kg |
+| Trading Margin | 4% minimum (base) |
+
+### INE Crude Oil Futures (SC)
+
+| Item | Specification |
+|------|--------------|
+| Trading Unit | 1,000 barrels per lot |
+| Price Quotation | CNY per barrel |
+| Minimum Price Fluctuation | 0.1 CNY/barrel |
+| Daily Price Limit | ±4% of previous settlement price (base) |
+| Contract Months | Monthly, covering 12-36 months forward |
+| Delivery Method | Physical delivery at bonded warehouses |
+| Deliverable Grade | Medium sour crude oil (API 32, sulfur 1.5%) |
+| Trading Margin | 7% minimum (base) |
+| Currency | RMB-denominated and settled |
+| International Access | Open to overseas traders since March 26, 2018 |
+
+[Source: SHFE, "Contract Text — Copper", https://www.shfe.com.cn/eng/Market/Futures/Metal/cu_f/ContractText/]
+[Source: SHFE, "Gold Contract Specification", https://www.shfe.com.cn/eng/Market/Futures/Metal/au_f/ContractText/]
+[Source: SHFE, "Silver Futures Contract Specifications", https://www.shfe.com.cn/eng/Market/Futures/Metal/ag_f/ContractText/]
+[Source: INE, "Crude Oil", https://www.ine.cn/eng/market/futures/energy/sc/]
+[Source: SHFE, "Crude Oil Futures", https://www.shfe.com.cn/content/2018-yyQH-en/index.html]
+
+---
+
+## Margin Framework
+
+### Margin Methodology
+
+SHFE uses a **fixed-percentage margin system** (not SPAN or VaR). Trading margins are calculated as a percentage of contract value, with the percentage varying by product, delivery month proximity, position size, and market conditions.
+
+### Margin Calculation
+
+- **Initial Margin** = Contract Price x Contract Size x Margin Rate
+- Example: Copper at CNY 70,000/ton, 5 tons/lot, 8% margin = CNY 28,000 per lot
+
+### Margin Escalation Rules
+
+| Condition | Effect |
+|-----------|--------|
+| **Approaching Delivery Month** | Margin rate increases in stepped increments as the contract nears the delivery month |
+| **High Open Interest** | When total open interest exceeds specified thresholds, margin rate increases |
+| **Consecutive Limit Moves** | If a contract settles at its price limit for consecutive days, margin increases |
+| **Holiday Periods** | SHFE routinely raises margins before long holidays (Spring Festival, National Day, Labor Day) |
+| **Exchange Discretion** | SHFE can adjust margins at any time; in January 2026, margins for copper raised from 7% to 8% (general) and 11% (speculative) amid precious metals surge |
+
+### Variation Margin
+
+- Settled daily (mark-to-market) based on the daily settlement price
+- Gains credited and losses debited to the member's margin account daily
+- If margin falls below the maintenance level, a margin call is issued; failure to replenish by the next trading day's opening may result in forced liquidation
+
+### Delivery Margin
+
+- During the delivery month, margin requirements increase significantly
+- Both buyers and sellers must deposit delivery margins
+- Physical delivery through SHFE-designated warehouses (224 warehouses across China)
+
+### INE Margin Specifics
+
+- INE products (crude oil, bonded copper, etc.) follow the same fixed-percentage methodology
+- Overseas participants can use foreign currency (USD) as margin collateral, subject to haircuts [unverified — specific haircut rates]
+- INE margin requirements are generally higher than domestic SHFE products due to the international nature of the contracts
+
+[Source: SHFE, "Risk Management Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/202508/t20250807_828560.html]
+[Source: SHFE, "Clearing Rules", https://www.shfe.com.cn/eng/services/Rules/SHFERules/202508/t20250807_828555.html]
+[Source: Caixin Global, "Shanghai Futures Exchange Tightens Rules Amid Precious Metals Surge", January 2026, https://www.caixinglobal.com/2026-01-21/shanghai-futures-exchange-tightens-rules-amid-precious-metals-surge-102406134.html]

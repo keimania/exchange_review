@@ -1,0 +1,591 @@
+---
+title: "Singapore Exchange (SGX)"
+subtitle: "Equities > Exchanges"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 1
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Singapore Exchange Limited (SGX Group) |
+| Abbreviation | SGX |
+| Website | https://www.sgx.com |
+| Year Established | 1999 (merger of SES and SIMEX) |
+| Country / City | Singapore / Singapore (2 Shenton Way, SGX Centre) |
+| Ownership Structure | Publicly listed on its own exchange (ticker: S68) |
+| Parent Company / Group | SGX Group (self-listed holding company) |
+| Regulatory Authority | Monetary Authority of Singapore (MAS) |
+| Market Capitalization (listed companies) | ~USD 824 billion / ~SGD 1.1 trillion (as of December 2025) |
+| Total Listed Instruments | ~622 listed securities (385 Mainboard + 188 Catalist tradeable, plus ~49 suspended) as of January 2025 |
+| Average Daily Trading Volume | Securities SDAV of SGD 1.34 billion (FY2025: July 2024 - June 2025); rose to SGD 1.8 billion in November 2025 |
+| Average Daily Trading Value | Total securities traded value of SGD 336.4 billion in FY2025 (+27.5% YoY) |
+
+### Key Historical Milestones
+- 1973: Stock Exchange of Singapore (SES) established following separation from the Stock Exchange of Malaysia
+- 1984: Singapore International Monetary Exchange (SIMEX) established as Asia's first financial futures exchange
+- 1999: SGX formed on 1 December through the merger of SES, SIMEX, and Securities Clearing and Computer Services Pte Ltd, enabled by the Exchanges (Demutualisation and Merger) Act 1999
+- 2000: SGX listed its own shares on its Mainboard on 23 November, becoming the first Asia-Pacific exchange to do so via public offer and private placement
+- 2000: SGX established SGX Derivatives Trading (SGX-DT) and SGX Securities Trading (SGX-ST) as separate arms
+- 2003: SGX began technology partnership with Nasdaq for trading systems
+- 2007: SGX launched AsiaClear, OTC clearing service for commodities
+- 2010: Proposed merger with Australian Securities Exchange (ASX) for AUD 8.4 billion; blocked by Australian government in 2011
+- 2013: Acquired a 24.9% stake in the Baltic Exchange
+- 2014: Launched market maker and active trader programmes to improve securities market liquidity
+- 2015: Board lot size reduced from 1,000 to 100 shares
+- 2016: SGX RegCo established as independent regulatory subsidiary
+- 2017: Acquired remaining stake in the Baltic Exchange (100%)
+- 2018: Launched SGX RegCo as fully independent regulatory arm; launched FTSE-SGX indices
+- 2019: Upgraded securities trading engine to Nasdaq's multi-matching trading engine (went live 3 June 2019)
+- 2023: NSE IX-SGX GIFT Connect became fully operational on 3 July, linking Singapore and India's capital markets
+- 2025: SGX Group reported record revenue (SGD 1.30 billion, +11.7% YoY) and record net profit in FY2025
+- 2025: SGX and Nasdaq announced Global Listing Board / dual-listing bridge for companies with market cap above SGD 2 billion
+- 2025: SGX RegCo advances disclosure-based regime with listing rule changes
+- 2026: MAS proposes legislative changes to facilitate dual listings on Global Listing Board
+- 2027 (planned): New trading engine "Iris-ST" expected to go live in second half of 2027
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| **Mainboard** | Primary market for established, profitable companies; home to blue-chip names and regional leaders including STI component stocks | Quantitative entry criteria including minimum profit track record and/or market capitalisation levels; minimum 25% public float; 3-year track record or profitability requirement; FCA/MAS-approved prospectus required; independent directors required |
+| **Catalist** | Sponsor-supervised growth board for SMEs and high-potential startups that may not meet Mainboard criteria | No quantitative entry criteria set by SGX; Full Sponsor determines suitability and provides confirmation to SGX; must be a primary listing; no profitability track record required; higher investment risk disclosure |
+| **GlobalQuote** | Board for secondary listings of foreign companies already listed on recognised exchanges | Simplified listing process for companies with primary listing on approved exchanges; must meet SGX disclosure standards |
+
+### 2.2 Trading Sessions
+
+**Note:** Singapore is UTC+8 (SGT) year-round (no daylight saving time).
+
+**Normal Day Trading (08:30 - 17:16 SGT)**
+
+| Session | Local Time (SGT) | UTC | Description |
+|---------|------------------|-----|-------------|
+| Pre-Open (Opening Routine) | 08:30 - 08:58/59 | 00:30 - 00:58/59 | Orders can be entered, amended, cancelled; no matching occurs |
+| Non-Cancel (Opening) | 08:58/59 - 09:00 | 00:58/59 - 01:00 | Random end time; no cancellations; single price matching determines opening price |
+| Morning Continuous Trading | 09:00 - 12:00 | 01:00 - 04:00 | Continuous order matching by price-time priority |
+| **Mid-Day Break (Lunch)** | **12:00 - 13:00** | **04:00 - 05:00** | **1-hour lunch break; Pre-Open phase (12:00-12:58/59) then Non-Cancel phase (12:58/59-13:00)** |
+| Afternoon Continuous Trading | 13:00 - 17:00 | 05:00 - 09:00 | Continuous order matching by price-time priority |
+| Pre-Close (Closing Routine) | 17:00 - 17:04/05 | 09:00 - 09:04/05 | Orders can be entered, amended, cancelled; no matching; random end time |
+| Non-Cancel (Closing) | 17:04/05 - 17:06 | 09:04/05 - 09:06 | No cancellations; single price matching determines closing (equilibrium) price |
+| Trade at Close (After-Hours) | 17:06 - 17:16 | 09:06 - 09:16 | Orders may only be entered at the equilibrium price; matched at closing price only |
+
+**Half-Day Trading (08:30 - 12:16 SGT)**
+
+| Session | Local Time (SGT) | UTC | Description |
+|---------|------------------|-----|-------------|
+| Pre-Open | 08:30 - 08:58/59 | 00:30 - 00:58/59 | Order entry period |
+| Non-Cancel (Opening) | 08:58/59 - 09:00 | 00:58/59 - 01:00 | Opening price determination |
+| Continuous Trading | 09:00 - 12:00 | 01:00 - 04:00 | Continuous matching |
+| Pre-Close | 12:00 - 12:04/05 | 04:00 - 04:04/05 | Closing routine begins |
+| Non-Cancel (Closing) | 12:04/05 - 12:06 | 04:04/05 - 04:06 | Closing price determination |
+| Trade at Close | 12:06 - 12:16 | 04:06 - 04:16 | Trade at closing price only |
+
+**Asia-Specific Feature — Lunch Break:** SGX maintains a 1-hour mid-day break (12:00-13:00 SGT), similar to other major Asian exchanges (HKEX, JPX/TSE). During the break, a Pre-Open phase allows order entry and modification, followed by a Non-Cancel phase with single price matching before the afternoon session opens.
+
+### 2.3 Tick Sizes
+
+**Standard Securities (Stocks, REITs, Business Trusts, Company Warrants)**
+
+| Price Range (SGD) | Tick Size (SGD) |
+|-------------------|-----------------|
+| Below $0.20 | $0.001 |
+| $0.20 - $0.995 | $0.005 |
+| $1.00 and above | $0.01 |
+
+**Structured Warrants**
+
+| Price Range (SGD) | Tick Size (SGD) |
+|-------------------|-----------------|
+| Below $0.20 | $0.001 |
+| $0.20 - $1.995 | $0.005 |
+| $2.00 and above | $0.01 |
+
+**Other Instruments**
+
+| Instrument Type | Tick Size |
+|-----------------|-----------|
+| Exchange Traded Funds / Notes | $0.01 or $0.001 (as determined by SGX-ST) |
+| Debentures, Bonds, Loan Stocks, Preference Shares | $0.001 (all price ranges) |
+
+**Currency Exceptions:** For instruments traded in HKD, RMB, or JPY, tick sizes are aligned as far as practicable with the minimum bid sizes applicable in Hong Kong and Japan respectively.
+
+### 2.4 Lot Sizes
+
+- **Standard Board Lot:** 100 shares (reduced from 1,000 in January 2015)
+- **Odd Lots:** Can be traded in the Unit Share Market in lots of 1 share
+- **Proposed Changes:** SGX has consulted on reducing board lot size to 10 units for securities priced above SGD 10, and to 1 unit for instruments priced above SGD 100 [under consultation as of 2025]
+
+### 2.5 Market Maker / Liquidity Provider Programs
+
+SGX operates a **Designated Market Maker (DMM)** programme launched in 2014:
+
+- **Purpose:** Improve liquidity, facilitate trading at competitive bid-ask spreads, and enhance market depth
+- **Obligations:** DMMs must publish competitive bid and offer quotations on a continuous basis via the trading system; maintain adequate spreads and minimum quote sizes as prescribed by SGX-ST
+- **Incentives:** Rebates and waivers on clearing fees and other costs, based on performance metrics
+- **Coverage:** DMMs and active traders cover over 90% of the securities market [estimated]
+- **Approval:** SGX-ST has absolute discretion to approve or reject DMM applications
+- **Scope:** Applies to specified securities on both Mainboard and Catalist
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+- **Opening Auction:** During the Pre-Open phase (08:30-08:58/59), orders accumulate without matching. At the Non-Cancel phase (random start between 08:58-08:59), the system computes an equilibrium price using a single-price auction algorithm. The equilibrium price maximises tradable volume and minimises order imbalance. Orders are matched at this single price to determine the opening price.
+
+- **Closing Auction:** Similar to the opening auction. During the Pre-Close phase (17:00-17:04/05), orders accumulate. The Non-Cancel phase (random start 17:04-17:05) determines the closing equilibrium price via single-price matching. This closing price is used for index calculations, NAV computations, and settlement purposes.
+
+- **Mid-Day Auction:** The lunch break includes its own Pre-Open (12:00-12:58/59) and Non-Cancel (12:58/59-13:00) phases, effectively creating a mid-session auction to re-establish prices before afternoon trading.
+
+- **Volatility Auction:** When the circuit breaker is triggered, a 5-minute cooling-off period begins during which trading continues within the price band but orders outside the band are rejected. There is no formal volatility interruption auction; rather, the mechanism moderates price movements.
+
+### 3.2 Continuous Trading
+
+- **Matching Algorithm:** Price-time priority (orders matched first by best price, then by earliest entry time at the same price level)
+- **Morning Session:** 09:00 - 12:00 SGT (3 hours)
+- **Afternoon Session:** 13:00 - 17:00 SGT (4 hours)
+- **Total Continuous Trading:** 7 hours per normal trading day
+
+### 3.3 Price Discovery
+
+**Equilibrium Price Algorithm:**
+1. The equilibrium price is the price with the largest tradable volume
+2. If multiple prices yield the largest volume, the price with the lowest imbalance (net difference between cumulative bid and ask volume) is selected
+3. If a Market Order Surplus exists (market order volume on one side exceeds cumulative order volume on the opposite side), one tick is added on the surplus side to determine the equilibrium price
+4. If highest tradable volume and lowest imbalance occur at multiple prices (price overlap), market pressure determines the result:
+   - With only buy pressure: highest price within the overlap
+   - With only sell pressure: lowest price within the overlap
+   - With both or neutral pressure: price closest to the last traded price
+
+**Forced Order Range:** A pre-execution safeguard that prevents orders beyond +/- 30 bids from the reference price (widened from +/- 20 bids since 13 November 2017), helping investors avoid error trades.
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+
+| Order Type | Description |
+|------------|-------------|
+| **Limit Order** | Order to buy or sell at a specified price or better |
+| **Market Order** | Order to buy or sell immediately at the best available price |
+| **Market-to-Limit Order** | Market order that converts to a limit order at the execution price if partially filled |
+
+### 4.2 Advanced Order Types
+
+| Order Type | Description |
+|------------|-------------|
+| **Stop Limit** | Triggered when stop price is reached; becomes a limit order at the specified limit price |
+| **Stop Market** | Triggered when stop price is reached; becomes a market order |
+| **Stop Market-to-Limit** | Triggered when stop price is reached; becomes a market-to-limit order |
+
+**Planned with Iris-ST (2027):** The new trading engine is expected to introduce additional order types and enhanced pre-trade risk controls.
+
+### 4.3 Time-in-Force Options
+
+| TIF Option | Description |
+|------------|-------------|
+| **Day** | Valid for the current trading day only; expires at end of day |
+| **IOC (Immediate or Cancel)** | Execute immediately (fully or partially); cancel any unfilled portion |
+| **FOK (Fill or Kill)** | Execute immediately in full or cancel the entire order |
+| **GTC (Good-till-Cancel)** | Remains active until executed or explicitly cancelled |
+| **GTDate (Good-till-Date)** | Remains active until specified date (up to 30 calendar days on SGX REACH) or until filled/cancelled |
+| **On Open** | Participates in the opening auction only |
+| **On Close** | Participates in the closing auction only |
+
+**Order Type / TIF Compatibility:**
+- Limit orders: support all TIF options (Day, IOC, FOK, GTC, GTDate, On Open, On Close)
+- Market orders: support IOC, FOK, On Open, On Close
+- Market-to-Limit orders: support IOC, FOK, Day, GTC, GTDate
+
+### 4.4 Order Modification / Cancellation
+
+- Orders can be modified (price, quantity) or cancelled during Pre-Open and Continuous Trading phases
+- During Non-Cancel phases (opening, mid-day, closing), no modifications or cancellations are permitted
+- During Trade-at-Close phase, only orders at the equilibrium price are accepted
+- Order modifications that change price result in loss of time priority
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name (Securities) | SGX REACH (based on Nasdaq Genium INET / Nasdaq Financial Framework) |
+| System Name (Derivatives) | SGX Titan DT (based on Nasdaq Genium INET) |
+| Vendor / In-house | Nasdaq technology (long-standing partnership since 2003) |
+| Architecture | Multi-matching engine architecture via Nasdaq Financial Framework; unified messaging and data infrastructure |
+| Matching Engine | Nasdaq multi-matching trading engine; price-time priority |
+| Round-trip Latency | < 100 microseconds (co-location Tier 1); Nasdaq matching engine capable of sub-40 microseconds door-to-door |
+| Order Processing Capacity | 20-100 transactions per second (SGXAccess API for securities); 10-50 TPS (Titan DT API); 50 TPS (OUCH) |
+| Messages Per Second | Information not publicly available for aggregate throughput |
+| Launch Year (Current System) | 2019 (securities engine upgrade to Nasdaq multi-matching engine, live 3 June 2019) |
+
+### System History
+
+| Year | System | Notes |
+|------|--------|-------|
+| Pre-2003 | Legacy trading systems | SES and SIMEX era systems |
+| 2003 | Nasdaq partnership begins | SGX adopts Nasdaq technology for trading infrastructure |
+| 2008 | SGX REACH | Securities trading on Nasdaq Genium platform |
+| 2011 | SGX Titan DT | Derivatives trading on Nasdaq Genium INET v4 |
+| 2019 | REACH upgrade to Nasdaq Financial Framework | Multi-matching trading engine for securities; standardised APIs for cash and derivatives; went live 3 June 2019 |
+| 2027 (planned) | **Iris-ST** | Next-generation trading engine for securities; new order types, enhanced pre-trade risk controls, more intuitive counter codes, MBO data enhancements |
+
+### Technology Stack
+
+- **Securities Order Entry:** SGXAccess API (proprietary OMnet interface on Genium), SGXAccess FIX (FIX 5.0 protocol)
+- **Derivatives Order Entry:** Titan DT API (proprietary Genium INET v4), Titan DT OUCH (native OUCH protocol for ultra-low latency)
+- **Market Data:** ITCH protocol (binary, multicast); supports Market-by-Order (MBO) and Market-by-Price (MBP) feeds
+- **Risk Management:** Pre-Trade Risk Controls (PTRC) at exchange level; Drop Copy API for real-time consolidated trade/order monitoring
+- **Streaming Infrastructure:** Apache Kafka (Confluent Platform) used internally for real-time data streaming and event processing
+
+### Disaster Recovery / Business Continuity
+
+- SGX data center is housed in one of Singapore's most advanced facilities
+- **Power:** Dual power feeds with 2N Dynamic Rotary UPS systems; 72+ hours diesel generator backup
+- **Cooling:** N+2 Computer Room Air-conditioning with FM 200 fire suppression
+- **Security:** 24/7 surveillance with three access levels (gate, building, data center); dual card, mantraps, and biometric access controls
+- **Certifications:** ISO 22301 (Business Continuity), ISO 27001 (Information Security), SSAE 3402 (SOC), TIA-942 Tier 3 Standard
+- Specific disaster recovery site details are not publicly disclosed [unverified: believed to maintain geographically separated secondary site]
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+
+| Protocol | Usage | Description |
+|----------|-------|-------------|
+| **ITCH** | Market Data (Securities & Derivatives) | Binary application-level protocol developed by Nasdaq; multicast delivery; supports MBO and MBP |
+| **OUCH** | Order Entry (Derivatives) | Native ultra-low latency order routing protocol; co-location only |
+| **OMnet / SGXAccess API** | Order Entry (Securities) | Proprietary Genium interface for enhanced trading speeds |
+| **FIX 5.0** | Order Entry (Securities) | Standard FIX protocol via SGXAccess FIX; minimal system redevelopment for participants |
+
+### 6.2 Data Levels
+
+| Level | Content | Description |
+|-------|---------|-------------|
+| **Level 1** | Best Bid/Offer, Last Traded Price, Volume | Standard real-time quote data |
+| **Market-by-Price (MBP)** | Aggregated depth at each price level | Full market depth showing aggregate volume per price |
+| **Market-by-Order (MBO)** | Individual order details at each price level | Full order book transparency showing each individual order |
+| **Reference Data Feed** | Instrument reference data | Static data including security codes, lot sizes, tick sizes |
+
+### 6.3 Distribution Infrastructure
+
+- **Real-Time Price Feeds:** Low-latency differentiated feeds available via co-location and managed network services
+- **Delayed Price Feed:** SGX Data Source API providing 15-minute delayed data for securities and derivatives
+- **Data Vendors:** Distributed through major vendors including LSEG (Refinitiv), Bloomberg, and others
+- **Historical Data:** Available via SGX website and third-party providers (e.g., EOD Data, TickData)
+- **SGX Data Source API:** REST API for delayed market data access
+
+### 6.4 Historical Data
+
+- Market statistics reports published monthly by SGX Group
+- Historical price and volume data available through SGX's Market Statistics page
+- Tick-level historical data available through authorised data vendors (e.g., TickData/BMLL for SGX equities)
+- MAS publishes SGX-ST statistics including price index, number of listed companies, turnover, and capitalisation
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+
+- **Trading Members (SGX-ST):** Licensed by MAS to trade securities on SGX-ST; must hold a Capital Markets Services Licence (CMSL)
+- **Clearing Members (CDP):** Central Depository (Pte) Limited (CDP) provides clearing and settlement; clearing members must meet capital and operational requirements
+- **Sponsor (Catalist):** Full Sponsors oversee Catalist-listed companies; responsible for due diligence and ongoing compliance
+- **Foreign Participants:** Subject to Securities and Futures Act cross-border provisions; exemption regulations exist for qualifying foreign entities
+
+### 7.2 Connection Methods
+
+| Method | Description |
+|--------|-------------|
+| **Co-Location** | Direct low-latency access from SGX data center |
+| **Managed Network Services** | SGX-approved network providers for remote connectivity |
+| **Liquidity Hubs** | Third-party proximity hosting in Singapore and other locations |
+| **Approved Network Providers** | Certified third-party network service providers |
+
+### 7.3 Co-location / Proximity Services
+
+SGX operates a purpose-built co-location facility with three tiers:
+
+| Tier | Description | Latency |
+|------|-------------|---------|
+| **Tier 1** | Lowest possible latency to SGX trading and market data engines | < 100 microseconds round-trip |
+| **Tier 2** | Competitive hosting; significantly faster than non-co-location | Competitive (exact figure not disclosed) |
+| **Tier 3** | Cost-effective hosting for non-trading and non-market data systems | Standard |
+
+**Facility Features:**
+- Telco, vendor, and carrier-neutral environment
+- Cross-connections to multiple service providers, exchanges, and cloud services
+- Optional upgrade to 10 Gbps trading connections
+- Scalable rack space with 24/7 technical support
+- State-of-the-art security and environmental monitoring
+
+### 7.4 API Protocols
+
+| API | Protocol | Use Case |
+|-----|----------|----------|
+| SGXAccess API | Proprietary OMnet (Genium) | Securities order entry — enhanced speed and low latency |
+| SGXAccess FIX | FIX 5.0 | Securities order entry — standard protocol, minimal redevelopment |
+| Titan DT API | Proprietary Genium INET v4 | Derivatives order entry — 10-50 TPS |
+| Titan DT OUCH | OUCH protocol | Derivatives order entry — ultra-low latency, 50 TPS, co-location only |
+| ITCH | ITCH (multicast) | Market data — MBO feed for securities and derivatives |
+| Drop Copy API | Proprietary | Real-time consolidated trade/order monitoring across multiple books |
+| GIFT Connect FIX | FIX 5.0 SP2 | NSE IFSC access — Level 2 market data (5 depths) |
+| GIFT Connect DMA | NSE IFSC NNF trimmed protocol | NSE IFSC access — ultra-low latency via India co-location |
+
+### 7.5 Certification / Testing
+
+- Trading members must complete connectivity testing and certification before accessing production systems
+- SGX provides a test environment for system integration and conformance testing
+- Pre-Trade Risk Control (PTRC) systems must be validated before live trading
+- Periodic recertification may be required following system upgrades (e.g., ahead of Iris-ST migration in 2027)
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+
+- **Forced Order Range (FOR):** Pre-execution mechanism that rejects orders beyond +/- 30 bids from the reference price (widened from +/- 20 bids since 13 November 2017)
+- Applies to all securities traded on SGX (excluding preference shares, structured warrants, ETFs, ETNs, debentures, bonds, and loan stocks)
+- Designed to prevent error trades by limiting the maximum deviation from the current market price
+
+### 8.2 Circuit Breakers
+
+SGX employs **dynamic circuit breakers** (Volatility Control Mechanism):
+
+| Parameter | Details |
+|-----------|---------|
+| **Price Band** | +/- 10% from the dynamic reference price |
+| **Dynamic Reference Price** | Last traded price as of 5 minutes prior to each potential trade |
+| **Trigger** | Incoming order that would result in a trade outside the price band |
+| **Action** | Incoming order is rejected; 5-minute cooling-off period begins |
+| **During Cooling-Off** | Trading continues within the existing price bands; orders outside bands are rejected |
+| **Scope** | Component stocks of the Straits Times Index (STI) and MSCI Singapore Free Index (SiMSCI), ETFs based on these indices, and Extended Settlement Contracts on these counters |
+| **Duration** | 5-minute cooling-off period |
+
+**Asia-Specific Context:** SGX's dynamic circuit breakers differ from the static daily price limits used by some other Asian exchanges (e.g., KRX's +/- 30%, JPX/TSE's daily price limits). SGX's approach is intraday and dynamic, triggering only when rapid price movement occurs, allowing the market to remain open throughout.
+
+### 8.3 Pre-trade Risk Controls
+
+- **Exchange-Level PTRC:** SGX provides Pre-Trade Risk Controls that prevent orders exceeding preset thresholds
+- **Member-Level Controls:** Trading members and clearing members are required to adopt adequate policies and controls to manage risks from order acceptance, execution, and settlement
+- **Iris-ST Enhancement (2027):** The new trading engine will include a built-in pre-trade risk control system that members can use to fulfil their regulatory obligations
+- **Fat-finger Controls:** Forced Order Range mechanism prevents grossly mispriced orders
+- **Position Limits:** Clearing members must monitor and manage position limits
+
+### 8.4 Kill Switch
+
+- SGX provides mechanisms for trading members to cancel all outstanding orders in emergency situations
+- Drop Copy API enables real-time monitoring across multiple books, supporting risk management decisions
+- Specific kill switch implementation details are not publicly available
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+
+| Authority | Role |
+|-----------|------|
+| **Monetary Authority of Singapore (MAS)** | Statutory regulator; integrated supervisor of Singapore's financial industry; oversees SGX as an Approved Exchange under the Securities and Futures Act (SFA) |
+| **SGX RegCo** | Independent regulatory subsidiary of SGX; carries out frontline regulatory functions including listing review, trade surveillance, member supervision, and enforcement; reports to its own Board and to MAS |
+
+### 9.2 Key Regulations
+
+| Regulation | Description |
+|------------|-------------|
+| **Securities and Futures Act 2001 (SFA)** | Primary legislation governing capital markets in Singapore; covers licensing, market conduct, prospectus requirements, market misconduct, and cross-border provisions |
+| **Exchanges (Demutualisation and Merger) Act 1999** | Enabled the merger of SES and SIMEX into SGX and the demutualization of the exchange |
+| **SGX-ST Mainboard Rules** | Listing and trading rules for the Mainboard segment |
+| **SGX-ST Catalist Rules** | Listing and trading rules for the Catalist growth board |
+| **Securities and Futures (Licensing and Conduct of Business) Regulations** | Detailed requirements for capital markets services licence holders |
+| **Financial Advisers Act 2001** | Regulates financial advisers and their representatives |
+
+### 9.3 Market Surveillance
+
+- **Three-tier surveillance model:** Brokers (first line), SGX RegCo (frontline exchange surveillance), and MAS (statutory oversight)
+- **MAS-SGX Trade Surveillance Practice Guide:** Jointly published guide to assist brokers in developing trade surveillance operations
+- SGX RegCo monitors trading activities in real-time for potential market misconduct (insider trading, market manipulation, front-running)
+- SGX RegCo conducts regular inspections, reviews, and company visits
+- Enforcement actions include trading halts, suspensions, public censures, fines, and referral to MAS for statutory enforcement
+
+### 9.4 Reporting Requirements
+
+- **Continuous Disclosure:** Listed companies must promptly disclose material information that would affect the price of their securities
+- **Periodic Reporting:** Quarterly (if applicable) and annual financial reporting requirements
+- **Substantial Shareholding:** Disclosure required when crossing 5% ownership threshold
+- **Short Selling Reporting:** Designated short selling regime with reporting obligations
+- **Trade Reporting:** Off-market trades must be reported within prescribed timeframes
+
+### 9.5 Cross-border Arrangements
+
+- **Extra-territorial Reach (SFA Section 339):** Acts outside Singapore with substantial and foreseeable effect in Singapore are subject to SFA regulation
+- **Cross-Border Exemption Regulations (2021):** Exemptions for foreign related corporations and foreign offices conducting qualifying businesses under cross-border arrangements
+- **GIFT Connect:** Cross-border connectivity between SGX and NSE IFSC (India) for Nifty derivatives trading
+- **Global Listing Board (2025-2026):** SGX-Nasdaq dual-listing framework for companies with market cap above SGD 2 billion; MAS proposing legislative amendments to SFA to facilitate
+- **Mutual Recognition Arrangements:** SGX maintains regulatory cooperation with multiple international exchanges and regulators
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+
+| Fee Type | Rate | Notes |
+|----------|------|-------|
+| **SGX Trading Access Fee** | 0.0075% of contract value | Charged by SGX-ST per trade; subject to 9% GST |
+| **Clearing Fee** | 0.0325% of contract value | Charged by CDP; subject to 9% GST |
+| **Settlement Instruction Fee** | SGD 0.35 per contract | Per settlement instruction |
+| **Structured Warrants Clearing Fee** | 0.004% of contract value | Lower rate for structured products |
+
+**Note:** SGX exchange fees are subject to 9% Goods and Services Tax (GST) effective from January 2024 (GST rate increased from 8% to 9%).
+
+### 10.2 Other Fees
+
+**Listing Fees (Mainboard):**
+
+| Fee Type | Range |
+|----------|-------|
+| Processing Fee (non-refundable) | SGD 20,000 |
+| Initial Listing Fee | SGD 100,000 - SGD 200,000 (based on market cap) |
+| Additional Listing Fee | SGD 30,000 - SGD 200,000 (based on market cap) |
+| Annual Listing Fee | SGD 35,000 - SGD 150,000 (based on market cap) |
+
+**Listing Fees (Catalist):**
+
+| Fee Type | Amount |
+|----------|--------|
+| Annual Listing Fee | SGD 15,000 |
+
+**Market Data Fees:**
+- Real-time data feeds: priced based on tier and depth of data
+- Delayed data: available via SGX Data Source API
+- Historical data: available through authorised vendors
+
+**Co-location Fees:**
+- Tiered pricing based on Tier 1/2/3 hosting; exact pricing not publicly disclosed
+
+**Stamp Duty (Government):**
+- 0.2% on the purchase or sale of shares (payable by buyer and seller each)
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+
+| Year | Development |
+|------|-------------|
+| 2019 | Securities trading engine upgraded to Nasdaq multi-matching trading engine (live 3 June 2019); standardised APIs for cash and derivatives |
+| 2023 | GIFT Connect infrastructure launched connecting SGX to NSE IFSC (India) |
+| 2025 | SGX Group unveiled Iris-ST, next-generation trading engine for securities market; consultation open until 31 December 2025 |
+| 2025 | Adoption of Apache Kafka (Confluent Platform) for internal real-time data streaming |
+| 2027 (planned) | Iris-ST expected go-live in H2 2027; features new order types, enhanced pre-trade risk controls, intuitive counter codes, enhanced MBO data |
+
+### New Products / Segments
+
+- **GIFT Connect Nifty Futures & Options:** USD-denominated Nifty index derivatives via connectivity with NSE IFSC; recorded >USD 8 billion open interest
+- **Depository Receipts & DLCs:** Expanded offerings in depository receipts, ETFs, and Daily Leverage Certificates (DLCs)
+- **Crypto/Digital Asset Derivatives:** Perpetual futures tied to indices co-developed with CoinDesk and SGX's iEdge brand, positioning SGX as institutional hub for digital asset risk management [under development]
+- **Global Listing Board:** Joint SGX-Nasdaq initiative for harmonised dual-listing for companies with market cap above SGD 2 billion; expected mid-2026
+
+### Regulatory Changes
+
+- **2025:** SGX RegCo advances disclosure-based regime with listing rule changes
+- **2025:** MAS proposes to consolidate listing review functions under SGX RegCo to streamline the listing process
+- **2025:** Consultation on board lot size reduction (100 to 10 for securities above SGD 10; 100 to 1 for securities above SGD 100)
+- **2025:** Iris-ST rule enhancement consultation (new counter codes, order types, risk controls)
+- **2026:** MAS proposes legislative and regulatory changes to SFA to facilitate dual listings on Global Listing Board
+
+### Strategic Initiatives
+
+- **SGX-Nasdaq Partnership:** Global Listing Board / dual-listing bridge announced November 2025; streamlined regulatory obligations and fundraising with single set of documents
+- **IPO Pipeline Revival:** Sweeping listing-rule changes aimed at reducing friction to attract new listings, addressing the 20% decline in listed companies over 5 years (from 782 to 622)
+- **ASEAN Hub Strategy:** Positioning Singapore as the premier multi-asset exchange for ASEAN and Asia-Pacific markets
+- **India Connectivity:** GIFT Connect as pioneering cross-border link; SGX-TCS strategic partnership for technology
+- **Record Financial Performance:** FY2025 net revenue increased 11.7% to SGD 1.30 billion; record net profit; securities SDAV up 26.5% to SGD 1.34 billion
+- **Technology Modernisation:** Iris-ST represents a generational upgrade with enhanced capabilities; expected to support broader product range and improved retail/institutional access
+
+---
+
+## Sources
+
+[Source: SGX Official Website, "Singapore Exchange", https://www.sgx.com, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "Regulatory Notice 8.2.1 — Trading Hours, Market Phases", https://rulebook.sgx.com/rulebook/regulatory-notice-821-trading-hours-market-phases-application-market-phases-and-principles, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "Regulatory Notice 8.5.2 — Minimum Bid Size", https://rulebook.sgx.com/rulebook/regulatory-notice-852-minimum-bid-size, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "Practice Note 8.10A — Circuit Breaker", https://rulebook.sgx.com/rulebook/practice-note-810a-circuit-breaker, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "Practice Note 8.2.1 — Application of Market Phases and Algorithm", https://rulebook.sgx.com/rulebook/practice-note-821-application-market-phases-and-algorithm, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "18.12 Transaction Costs", https://rulebook.sgx.com/rulebook/1812-transaction-costs, accessed 2026-04-06]
+
+[Source: SGX Rulebook, "18.12.2 Clearing Fees", https://rulebook.sgx.com/rulebook/18122-clearing-fees, accessed 2026-04-06]
+
+[Source: SGX Official Website, "Co-Location", https://www.sgx.com/data-connectivity/co-location, accessed 2026-04-06]
+
+[Source: SGX Official Website, "Market Access", https://www.sgx.com/data-connectivity/market-access, accessed 2026-04-06]
+
+[Source: SGX Official Website, "Data & Connectivity", https://www.sgx.com/data-connectivity, accessed 2026-04-06]
+
+[Source: SGX RegCo, "About SGX RegCo", https://regco.sgx.com/about-sgx-regco, accessed 2026-04-06]
+
+[Source: Nasdaq Inc., "Singapore Exchange Launches New Multi-Matching Trading Engine from Nasdaq", https://ir.nasdaq.com/news-releases/news-release-details/singapore-exchange-launches-new-multi-matching-trading-engine, 12 July 2019]
+
+[Source: SGX Investor Relations, "2025 SGX Annual Report", https://links.sgx.com/FileOpen/2025_SGX_Annual_Report.ashx?App=Announcement&FileID=859054, accessed 2026-04-06]
+
+[Source: The Edge Singapore, "SGX posts record revenue, net profit in FY2025", https://www.theedgesingapore.com/capital/results/sgx-posts-record-revenue-net-profit-fy2025-proposes-final-quarterly-dividend-105, accessed 2026-04-06]
+
+[Source: SGX Group, "SGX Group Unveils Iris-ST Trading Engine", via Minichart.com.sg, https://www.minichart.com.sg/2025/11/06/sgx-group-unveils-iris-st-trading-engine-and-seeks-feedback-on-rule-enhancements-for-singapore-stock-market-1/, 6 November 2025]
+
+[Source: Regulation Asia, "SGX to Launch Next Gen Trading Engine 'Iris-ST' in 2027", https://www.regulationasia.com/articles/sgx-to-launch-next-gen-trading-engine-iris-st-in-2027, accessed 2026-04-06]
+
+[Source: CNBC, "Singapore's SGX ties up with Nasdaq for dual listings", https://www.cnbc.com/2025/11/20/singapore-mas-sgx-nasdaq-partner-for-dual-listings.html, 20 November 2025]
+
+[Source: MAS, "MAS Proposes to Consolidate Listing Review Functions under SGX RegCo", https://www.mas.gov.sg/news/media-releases/2025/mas-proposes-to-consolidate-listing-review-functions, accessed 2026-04-06]
+
+[Source: MAS, "MAS-SGX Trade Surveillance Practice Guide", https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/MAS-SGX-Trade-Surveillance-Practice-Guide.pdf, accessed 2026-04-06]
+
+[Source: Singapore Statutes Online, "Securities and Futures Act 2001", https://sso.agc.gov.sg/act/sfa2001, accessed 2026-04-06]
+
+[Source: CEIC Data, "Singapore Market Capitalization, 1999-2026", https://www.ceicdata.com/en/indicator/singapore/market-capitalization, accessed 2026-04-06]
+
+[Source: Conyers, "SGX Mainboard & Catalist Public Companies Report H1 2025", https://www.conyers.com/publications/view/sgx-mainboard-catalist-public-companies-report-l-h1-2025/, accessed 2026-04-06]
+
+[Source: WFE Focus, "SGX Takes a Deep Look at Circuit Breakers", https://focus.world-exchanges.org/articles/sgx-circuit-breakers, accessed 2026-04-06]
+
+[Source: WFE Focus, "SGX Outlook for 2025", https://focus.world-exchanges.org/articles/sgx-outlook-2025, accessed 2026-04-06]
+
+[Source: Trading Technologies, "SGX Supported Order Types", https://library.tradingtechnologies.com/user-setup/sgx-supported-order-types.html, accessed 2026-04-06]
+
+[Source: Confluent, "Singapore Exchange Customer Story", https://www.confluent.io/customers/singapore-exchange/, accessed 2026-04-06]
+
+[Source: Beeks Group, "SGX Data Centre in Singapore", https://beeksgroup.com/services/connectivity/data-centres/asiapac/sgx-singapore-sgx/, accessed 2026-04-06]
+
+[Source: OnixS, "SGX Titan DT ITCH and OUCH API SDKs", https://www.onixs.biz/insights/sgx-titan-dt-itch-ouch-api-sdk, accessed 2026-04-06]

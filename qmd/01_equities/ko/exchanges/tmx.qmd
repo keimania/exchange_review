@@ -1,0 +1,521 @@
+---
+title: "TMX Group / Toronto Stock Exchange (TSX)"
+subtitle: "주식시장 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 업데이트:** 2026-04-06
+> **조사 등급:** Tier 2
+> **분야:** 주식
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 내용 |
+|------|------|
+| 정식 명칭 | TMX Group Limited |
+| 약칭 | TMX (모회사); TSX (Toronto Stock Exchange) |
+| 웹사이트 | https://www.tmx.com |
+| 설립 연도 | 1861년 (Toronto Stock Exchange); TMX Group 2008년 설립 |
+| 국가 / 도시 | 캐나다 / Toronto, Ontario (본사: 100 Adelaide Street West) |
+| 소유 구조 | TSX에 상장 (TSX: X); Maple Group Acquisition Corporation의 C$38억 인수(2012년) 이후 캐나다 주요 은행 및 연기금이 대주주 |
+| 모회사 / 그룹 | TMX Group Limited -- TSX, TSX Venture Exchange, TSX Alpha Exchange, Montreal Exchange (MX), Canadian Depository for Securities (CDS), TMX Datalinx, Trayport 및 기타 자회사 운영 |
+| 감독 기관 | Ontario Securities Commission (OSC)이 수석 감독기관; Canadian Securities Administrators (CSA)를 통해 각 주/준주 증권감독기관에 의해 인가; 시장 건전성 감독은 Canadian Investment Regulatory Organization (CIRO)이 담당 |
+| 시가총액 (TMX Group 회사) | 약 C$138억 (2026년 4월) [출처: companiesmarketcap.com, Investing.com] |
+| 시가총액 (TSX 상장 발행사) | 약 C$5.8조 (2025년 8월, 연초 대비 24.3% 상승); 2024년 1월 기준 C$4.16조 [출처: TMX Group Equity Financing Statistics, Wikipedia] |
+| 상장 종목 수 | TSX 약 1,800개 이상 발행사; TSXV 약 1,600개 이상 발행사; 광업 발행사만 1,073개로 합산 시가총액 C$1.1조 초과 (2025년 12월) [출처: TMX Group, StockTitan] |
+| 일평균 거래량 | 약 1.92억 주 (TSX, 2025년 12월 샘플일); 평균 거래 규모 약 410주 [출처: TSX Daily Trading Report, 2025년 12월 23일] |
+| 일평균 거래대금 | 약 C$74억 (TSX, 2025년 12월 샘플일) [출처: TSX Daily Trading Report] |
+
+### 주요 연혁 (Key Historical Milestones)
+- **1852:** Toronto 사업가들이 7월 26일 중개인 협회를 결성, Toronto Stock Exchange의 전신
+- **1861:** 24명의 중개인이 10월 25일 Masonic Hall에 모여 Toronto Stock Exchange를 공식 창설
+- **1878:** Ontario 입법부 법률에 의해 TSX 법인화
+- **1934:** TSX가 Standard Stock and Mining Exchange와 합병, Toronto의 주식 매매 통합
+- **1977:** 세계 최초의 자동매매 시스템 중 하나인 CATS (Computer Assisted Trading System) 도입
+- **1997:** TSX가 영리 목적의 주식회사로 전환
+- **1999:** 시장 구조조정의 일환으로 TSX가 캐나다 내 모든 대형주 상장·매매 책임 인수; 소형주는 Canadian Venture Exchange (이후 TSX Venture)로 이관
+- **2000:** TSX 장내매매 중단; 완전 전자화
+- **2001:** TSX Group Inc.이 모회사로 설립
+- **2002:** TSX Group이 TSX Venture Exchange 인수
+- **2005:** TSX Group이 자사 거래소에서 기업공개(IPO) (TSX: X)
+- **2008:** TSX Group이 Montreal Exchange (MX) 인수; 5월 1일부로 TMX Group Inc.으로 사명 변경
+- **2012:** Maple Group Acquisition Corporation (캐나다 주요 은행 및 연기금 컨소시엄)이 C$38억에 TMX Group 과반수 지분 인수
+- **2013-2014:** TMX Quantum XA 매매 플랫폼이 TMX Select, TSX, TSXV에 순차 가동
+- **2023:** CIRO (Canadian Investment Regulatory Organization)가 IIROC와 MFDA 합병으로 설립 (2023년 1월 1일 발효; 2023년 6월 1일 CIRO로 명칭 변경)
+- **2024:** 캐나다 T+1 결제 시행 (2024년 5월 27일)
+- **2025:** TMX Group 사상 최고 매출 C$17.2억 기록 (전년 대비 17.61% 증가); CDS 자회사를 통한 매매후 현대화 완료
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 (Market Segments)
+| 구분 | 설명 | 주요 특징 |
+|------|------|----------|
+| Toronto Stock Exchange (TSX) | 캐나다 대형주를 위한 최상위 상장 장소 | 최소 시가총액 통상 C$5,000만 이상; 기존 기업; 약 1,800개 이상 상장 발행사; 주요 은행, 에너지, 광업 기업이 상장 |
+| TSX Venture Exchange (TSXV) | 초기 단계 및 신흥 기업을 위한 공개 벤처캐피탈 시장 | 낮은 상장 요건; TSX 승격을 위한 관문; 약 1,600개 이상 발행사; 광업 탐사 및 소형 자원 기업에 강점 |
+| TSX Alpha Exchange (TSXA) | 다른 주문 우선순위 모델을 제공하는 TMX Group 내 대체 매매장소 | 수량-시간 우선순위 (대형 주문 우대) 적용; 역전 수수료 모델 이용 가능; 연장 매매 시간 (ET 8:00 AM - 5:00 PM) |
+| Montreal Exchange (MX) | 캐나다 파생상품 거래소 (금융 선물 및 옵션) | TMX 자회사 Bourse de Montreal Inc.이 운영; 주식옵션, 지수 선물/옵션, 금리 파생상품 거래 |
+| Canadian Depository for Securities (CDS) | 청산·결제 자회사 | 캐나다 자본시장을 위한 청산, 결제, 예탁 서비스 제공; 2025년부터 TCS BaNCS 플랫폼 기반 |
+
+### 2.2 매매 시간 (TSX) (Trading Sessions)
+| 구분 | 현지 시간 (ET) | UTC (ET = UTC-5 / UTC-4 DST) | 설명 |
+|------|---------------|-------------------------------|------|
+| 프리오픈 세션 | 7:00 AM - 9:30 AM | 12:00-14:30 / 11:00-13:30 UTC | 주문 접수 및 취소; COP (Calculated Opening Price) 방송 및 지속 갱신; 체결 없음 |
+| 시가단일가매매 (개장 경매, MOO) | 9:30 AM | 14:30 / 13:30 UTC | Market on Open 단일가매매; 단일가격 시가단일가매매; 모든 매칭 주문이 COP에서 체결 |
+| 접속매매 (CLOB) | 9:30 AM - 4:00 PM | 14:30-21:00 / 13:30-20:00 UTC | 주 매매 세션; 중앙지정가호가창에서 연속 주문 체결 |
+| MOC 불균형 공표 | 3:40 PM | 20:40 / 19:40 UTC | Market on Close 불균형 정보 배포 시작 |
+| 종가단일가매매 (장마감 경매, MOC) | 4:00 PM | 21:00 / 20:00 UTC | Market on Close 단일가매매; MOC Book과 CLOB 주문을 결합하여 Calculated Closing Price (CCP) 결정 |
+| 연장매매 세션 | 4:15 PM - 5:00 PM | 21:15-22:00 / 20:15-21:00 UTC | 최종 체결가에서만 주문 접수 및 거래 가능; 단위주, 단주, 크로스 허용 |
+
+**TSX Alpha Exchange 참고:** TSX Alpha는 ET 8:00 AM~5:00 PM 접속매매를 지원하여 TSX/TSXV보다 긴 매매 시간을 제공한다.
+
+**Must Be Filled (MBF) 세션 참고:** TSX에서만 지원; 만기 파생상품 포지션 상계를 위해 옵션 만기 직전 목요일에 월 1회 시행.
+
+### 2.3 호가단위 (Tick Sizes)
+| 가격 범위 | 호가단위 (최소가격변동폭) (매매 단위) |
+|----------|--------------------------------------|
+| C$0.50 이상 종목 | C$0.01 (1센트) |
+| C$0.50 미만 종목 | C$0.005 (0.5센트) |
+
+- 호가단위는 CIRO가 관리하는 UMIR (Universal Market Integrity Rules)에 의해 규율
+- CIRO는 미국과 교차상장된 종목에 대해 미국의 호가단위 규칙과 호가단위를 통일할 것을 제안함 [출처: CIRO, TMX 의견서, 2023년 12월]
+
+### 2.4 매매단위 (거래단위) (Board Lots)
+TSX 및 TSXV의 매매단위는 해당 종목의 전일 종가에 따라 결정된다:
+
+| 가격 범위 | 매매단위 |
+|----------|---------|
+| C$1.00 이상 종목 | 100주 |
+| C$0.10 - C$0.99 종목 | 500주 |
+| C$0.10 미만 종목 | 1,000주 |
+
+- **단주(odd lot)** (매매단위 미만): 별도 취급; 단주는 "전량체결(All or None)" 방식으로만 거래 (부분체결 불가); 참가조직은 대형 주문을 단주로 분할하는 것이 금지
+- **혼합주(mixed lot)** (매매단위 + 단주 부분): 입력 시점에 두 개의 별도 주문으로 분리; 매매단위 부분은 CLOB에서 거래; 단주 부분은 단주 주문으로 처리
+
+**KRX 비교:** KRX는 모든 주식에 대해 1주를 매매단위로 적용한다. TSX의 가격대별 차등 매매단위 체계는 KRX와 크게 다른 특징이다.
+
+### 2.5 시장조성자 (Market Maker) / 유동성공급자 프로그램
+
+**Responsible Trader (RT) / 시장조성자:**
+- 모든 TSX 상장 종목(사채/어음 제외)에 지정된 시장조성 업체 및 Registered Trader (RT)가 배정
+- RT는 배정 종목에서 유입 주문의 일정 비율에 대해 체결 우선권을 부여하는 선택적 "참여" 기능 보유
+- 시장조성자는 충분한 전문성, 기술, 업체 자본을 유지해야 함
+- 유동성이 높은 종목과 낮은 종목의 균형 잡힌 비율로 최소 종목 배정 수를 유지해야 함
+- 매매가 합리적이고 정당하며 공평한 원칙에 부합하고 시장 건전성에 해롭지 않아야 함
+
+**최소보장체결 (Minimum Guaranteed Fill, MGF):**
+- 시장조성자가 소규모 주문에 대한 최소보장체결 의무를 제공
+- 매매단위가 100주인 종목의 최소 MGF는 199주 [출처: TSX Order Types and Functionality Guide]
+- 단주 주문 및 소규모 단위주 주문은 RT가 제공하는 MGF 유동성의 혜택을 받음
+
+**TSX Alpha Exchange:**
+- 대형 표시 주문에 인센티브를 부여하는 수량-시간 우선순위 모델 적용
+- TSX와 동일한 구조의 전통적 RT/시장조성자 배정 제도가 아님
+
+---
+
+## 3. 매매 체결 방식 (Trading Mechanism)
+
+### 3.1 단일가매매 (경매) 방식 (Auction Mechanisms)
+
+**시가단일가매매 (Market on Open / MOO):**
+- ET 9:30 AM에 단일가 호가 수집 경매로 시행
+- 프리오픈 세션(7:00 AM - 9:30 AM) 중 Calculated Opening Price (COP)가 지속적으로 방송·갱신
+- COP 결정 로직 (우선순위순):
+  1. 최대 체결 가능 주식 수의 가격
+  2. 동률 시 불균형이 가장 적은 가격
+  3. 여전히 동률 시 전일 종가에 가장 가까운 가격
+- 시가단일가매매에서 거래가 체결되면 COP가 최종 체결가를 설정
+- 시가에서 거래가 체결되지 않으면 전일 종가가 시초가를 설정
+- 적격 주문 유형: Market on Open (MOO), Limit on Open (LOO), 이월 지정가주문
+
+**종가단일가매매 (Market on Close / MOC):**
+- 적격 TSX 상장 종목의 공식 종가를 결정하는 전자 호가 수집 매매
+- ET 3:40 PM부터 MOC 불균형 정보 배포
+- ET 4:00 PM에 MOC Book 주문과 중앙지정가호가창(CLOB) 주문을 결합하여 Calculated Closing Price (CCP) 결정
+- CCP는 COP와 유사한 로직 사용: 최대 거래량, 최소 불균형, 최종 체결가에 가장 근접
+- **Price Movement Extension (PME):** CCP가 PME 범위(직전 20분 VWAP 및 최종 단위주 체결가 대비 5 호가단위 또는 PME 비율 중 큰 값)를 위반할 경우, 추가 주문 입력 및 가격 발견을 위해 4:00 PM~4:10 PM 사이에 PME 기간 개시
+- MOC 시설은 종가 설정에 대한 균등 접근을 제공하고 종가 변동성을 줄임 [출처: TSX MOC FAQ]
+
+**변동성완화장치 발동 시 단일가매매:**
+- 단일종목 서킷브레이커(SSCB)가 발동되면 모든 캐나다 매매장소에서 5분간 매매가 중단된다
+- 중단 후 재개장은 시가 메커니즘과 유사한 경매형 프로세스를 따름
+
+### 3.2 접속매매 (연속매매) (Continuous Trading)
+- **주문주도형 모델:** 가격-시간 우선원칙의 완전 전자식 중앙지정가호가창(CLOB)
+- **우선순위 규칙:**
+  1. **가격 우선:** 최우선 가격의 주문이 먼저 체결
+  2. **시간 우선:** 동일 가격에서 먼저 입력된 주문이 먼저 체결 (FIFO)
+  3. **브로커 우선배정:** TSX는 UMIR에 정의된 특정 조건하에 의도적 크로스 및 브로커 우선배정 지원
+- **RT 참여:** Registered Trader는 배정 종목에서 유입 주문의 일정 비율에 대해 체결 우선권을 부여하는 참여 권한을 받을 수 있음
+- **비공개(Dark) 상호작용:** 비공개 주문(Dark Limit, Dark Pegged)은 호가창 내에 완전히 통합되어 있으나 표시되지 않음; 동일 또는 보다 유리한 가격의 모든 공개 물량 이후에 유입 주문과 상호작용
+
+### 3.3 가격 발견 (Price Discovery)
+- **프리오픈:** ET 7:00 AM~9:30 AM 동안 COP가 지속적으로 방송되어 예시 시초가 및 불균형 데이터 제공
+- **MOC 불균형:** ET 3:40 PM부터 불균형 정보 공개; PME 메커니즘이 종가가 실제 수급을 반영하도록 보장
+- **RT 역할:** Registered Trader가 배정 종목에서 양방향 호가를 유지하여 질서 있는 가격 발견 지원
+- **바이패스 주문:** 바이패스 플래그가 있는 주문은 비공개 물량(빙산주문의 비공개 수량, 비공개 주문, RT 참여 포함)과의 상호작용을 회피할 수 있어, 공개 유동성만을 선호하는 참가자에게 투명한 가격 발견 가능
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 기본 주문 유형 (Standard Order Types)
+| 주문 유형 | 설명 |
+|----------|------|
+| 지정가주문 (Limit Order) | 지정 가격 또는 그보다 유리한 가격으로 체결; CLOB에 표시 |
+| 시장가주문 (Market Order) | 최우선 가격에서 즉시 체결 |
+| Market on Open (MOO) | 9:30 AM 시가단일가매매에서만 체결되는 시장가주문 |
+| Limit on Open (LOO) | 시가단일가매매에서만 체결되는 지정가주문 |
+| Market on Close (MOC) | 종가단일가매매에서만 체결되는 시장가주문 |
+| Limit on Close (LOC) | 종가단일가매매에서만 체결되는 지정가주문 |
+
+### 4.2 고급 주문 유형 (Advanced Order Types)
+| 주문 유형 | 설명 |
+|----------|------|
+| 빙산주문 (Iceberg Order) | 공개 및 비공개 부분을 가진 주문; 공개 부분이 체결되면 비공개 물량이 자동으로 보충; 선택적 랜덤 표시범위(DisplayRange) 파라미터가 +/- 범위 내에서 갱신 규모를 무작위화 |
+| Dark Limit 주문 | 매매 전 투명성이 없는 완전 비공개 지정가주문; 동일 또는 보다 유리한 가격의 모든 공개 물량 이후에 유입 주문과 상호작용 |
+| Dark Pegged 주문 | 중간가격 또는 기타 참조가격에 연동된 비공개 주문; 완전한 매매 전 익명성 제공 |
+| 바이패스 주문 (Bypass Order) | 공개 가시 물량과만 거래하는 바이패스 플래그 주문, 비공개 물량(빙산 비공개 수량, 비공개 주문, RT 참여, RT MGF 의무) 회피 |
+| Must Be Filled (MBF) 주문 | 만기 파생상품 포지션 상계를 위한 특수 주문; 월간 MBF 세션 시 TSX에서만 사용 가능 |
+| Specialty Price Cross | 합의 가격의 크로스 주문; 특정 규칙 및 규제 승인 적용 |
+| Volume-Weighted Average Price (VWAP) Cross | 지정 기간의 가중평균가격으로 체결되는 크로스 |
+| Basis Cross | 산출된 기준가격에 기반한 크로스 거래 |
+
+### 4.3 주문 유효기간 (Time-in-Force Options)
+| TIF | 설명 |
+|-----|------|
+| 당일 (Day) | 당일 매매시간에만 유효; 미체결 시 세션 종료 시 만료 |
+| 취소시까지 (GTC) | 체결 또는 수동 취소 시까지 유효 |
+| 지정일까지 (GTD) | 지정 날짜까지 유효 |
+| 즉시체결잔량취소 (IOC) | 즉시(전량 또는 부분) 체결; 미체결 부분 취소 |
+| 전량체결아니면취소 (FOK) | 즉시 전량 체결 또는 전체 주문 취소 |
+| 시가 전용 (OPG) | 시가단일가매매에서만 유효 |
+| 종가 전용 (At the Close) | 종가단일가매매에서만 유효 |
+
+### 4.4 주문 정정 / 취소 (Order Modification / Cancellation)
+- 체결 전 FIX 또는 STAMP 프로토콜을 통해 전자적으로 주문 정정 또는 취소 가능
+- **MOC/LOC 제한:** MOC 및 LOC 주문은 입력 마감 시간 및 장마감 기간 중 취소 제한이 있어 경매 무결성을 보호
+- **접속해제 시 취소 (Cancel on Disconnect, COD):** 매매 세션이 단절되면 미체결 주문을 자동 취소하는 필수 기능으로, 관리되지 않는 노출 위험을 줄임; 각 참가조직이 TMX Account Manager에게 설정 및 제출해야 함
+- **단주 제한:** 참가조직은 대형 주문을 단주로 분할하거나 특정일 특정 종목의 동일 계좌에서 복수 단주를 입력할 수 없음
+
+---
+
+## 5. 매매 시스템 (기술) (Trading System / Technology)
+
+| 항목 | 내용 |
+|------|------|
+| 시스템명 | TMX Quantum XA (TMX Quantum Express Accelerated) |
+| 개발 주체 | 자체 개발 (TMX Group 독자 기술) |
+| 아키텍처 | 하드웨어 가속형, 초저지연 매매 엔진으로 독자적 네트워크 업그레이드 포함; 최적화된 게이트웨이 및 매매체결엔진(매칭엔진) 메시지 처리 |
+| 매매체결엔진 (매칭엔진) | 가격-시간 우선순위(TSX, TSXV) 및 수량-시간 우선순위(TSX Alpha)를 지원하는 결정론적 매매체결엔진 |
+| 중앙값 지연시간 (TMX Select 기준) | 중앙값 약 26마이크로초; 99백분위 약 38마이크로초 (전체 운영일 네트워크 엣지에서 측정) [출처: TMX Quantum XA FAQ] |
+| 성능 개선 | 이전 TMX Quantum 시스템 대비 중앙값 지연시간 20배 감소, 100마이크로초 미만 주문 체결 달성 [출처: TMX, Newswire] |
+| 주요 특징 | 초고성능 저지연 응답시간; 지연시간 지터 대폭 감소; 고도 최적화된 자원 활용; 최소 하드웨어로 고처리량 |
+| 가동 연도 | Quantum XA 가동은 2013년 시작 (TMX Select); 2014년까지 TSX 및 TSXV 완료 |
+
+### 시스템 변천사 (System History)
+| 기간 | 시스템 | 비고 |
+|------|--------|------|
+| 1861-1977 | 공개호가/장내매매 | TSX 매매장에서의 전통적 경매 기반 매매 |
+| 1977 | CATS (Computer Assisted Trading System) | 세계 최초의 자동매매 시스템 중 하나; 전자 주문 체결 개척 |
+| 1997 | TSE Trading System | 주식회사 전환 후 현대화 [미검증] |
+| 2000 | 완전 전자매매 | TSX 장내매매 중단; 완전 전자화 |
+| ~2000-2012 | STAMP / TMX Quantum | STAMP 프로토콜 기반 매매 엔진; TMX Quantum은 XA 이전 독자 플랫폼 |
+| 2013 | TMX Quantum (Alpha 이전) | Alpha 매매장소가 TMX Quantum 엔진으로 이전 (2013년 4월) |
+| 2013 | TMX Quantum XA (TMX Select) | TMX Select에 하드웨어 가속형 XA 플랫폼 최초 배포 (2013년 7~8월) |
+| 2014 | TMX Quantum XA (TSX) | TSX에 TMX Quantum XA 출시 (2014년 6월) |
+| 2014 | TMX Quantum XA (TSXV) | TSXV에 TMX Quantum XA 출시 (2014년 9월) |
+| 현재 | TMX Quantum XA | 모든 TMX 주식 매매장소의 현행 운영 플랫폼 |
+
+### 기술 스택 (Technology Stack)
+- **매매체결엔진:** 결정론적 처리의 독자적 하드웨어 가속형 매매체결엔진
+- **주문 접수 프로토콜:** FIX 4.3, STAMP (TMX 독자 프로토콜); TSX, TSXV, TSX Alpha 모두 지원
+- **시세정보 배포:** TMX QuantumFeed -- XMT (eXtreme Message Transfer) 프로토콜을 사용하는 바이너리 고정길이 메시지 형식; TCP/UDP를 통한 재전송 지원 멀티캐스트 IP
+- **네트워크:** Markham 데이터센터 내 TMX 독자 네트워크 인프라
+- **운영 환경:** Linux 기반 [미검증]
+
+### 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)
+- **주 사이트:** TMX Data Centre, 3500 Steeles Avenue East, Markham, Ontario
+- **DR 사이트:** 상세 비공개; TMX는 규제 의무에 따른 업무연속성 계획 유지
+- **접속해제 시 취소:** 세션 단절 시 자동 주문 취소로 기본 안전 메커니즘 제공
+
+---
+
+## 6. 시세정보 (Market Data)
+
+### 6.1 데이터 피드 프로토콜 (Data Feed Protocols)
+| 프로토콜 / 피드 | 설명 | 용도 |
+|----------------|------|------|
+| TMX QuantumFeed Level 1 (TQL1) | 저지연 바이너리 형식의 실시간 TSX 매매 전·후 데이터; 주식 호가, 체결, MOC 불균형 알림, 체결 취소, 종목/주식 상태 메시지 포함 | 저지연 화면표시 및 자동매매 |
+| TMX QuantumFeed Level 2 (TQL2) | 바이너리 형식의 TSX 전체 호가 깊이 데이터 | 호가창 깊이 분석, 알고리즘 매매 |
+| TMX Venture QuantumFeed Level 1 (VQL1) | 저지연 바이너리 형식의 실시간 TSXV Level 1 데이터 | 벤처시장 모니터링 |
+| TMX Venture QuantumFeed Level 2 (VQL2) | TSXV 전체 호가 깊이 데이터 | 벤처시장 호가 깊이 분석 |
+| TMX Alpha QuantumFeed Level 1 (AQL1) | 실시간 TSX Alpha Level 1 데이터 | 대체시장 모니터링 |
+| TMX Alpha QuantumFeed Level 2 (AQL2) | TSX Alpha 전체 호가 깊이 데이터 | Alpha 시장 호가 깊이 분석 |
+| Broadcast Feeds | 광범위 배포를 위한 표준 방송 데이터 피드 | 데이터 벤더, 화면 시스템 |
+| TMX QuantumFeed Binary Data | 통합 바이너리 데이터 피드 | 통합 TMX 시세정보 소비 |
+
+### 6.2 데이터 수준 (Data Levels)
+- **Level 1 (최우선호가 / BBO):** 최우선 매수호가, 최우선 매도호가, 최종 체결가, 거래량 -- TQL1/VQL1/AQL1 피드를 통해 제공
+- **Level 2 (호가 깊이):** 모든 가격 수준 및 집계 수량을 표시하는 전체 호가창 깊이 -- TQL2/VQL2/AQL2 피드를 통해 제공
+- **Level 3 / 주문별:** 참가조직에 제공되는 개별 주문 수준 상세 [미검증]
+
+### 6.3 TMX Datalinx (배포 인프라) (Distribution Infrastructure)
+- **TMX Datalinx:** TMX Group의 정보서비스 부문; 실시간 및 과거 시세정보의 배포, 라이선스, 판매 담당
+- **TMX Webstore:** 시세정보 상품, 과거 데이터, 분석 도구 구매를 위한 온라인 포털 (tmxwebstore.com)
+- **데이터 형식:** QuantumFeed는 XMT (eXtreme Message Transfer) 프로토콜 사용 -- ASCII 및 바이너리 필드를 갖춘 바이너리 고정 레코드 길이 메시지; 저지연 데이터 배포를 위한 글로벌 표준에 부합
+- **전달:** TCP/UDP를 통한 재전송 지원 멀티캐스트 IP; TMX Markham 코로케이션 시설에서 피드 제공
+- **벤더 재배포:** Bloomberg, Refinitiv/LSEG, FactSet 등 주요 데이터 벤더가 라이선스하에 TMX 데이터 재배포
+- **통합 피드:** TMX Information Processor (TMX IP)가 캐나다 통합 주식시장 데이터 제공 [미검증]
+
+### 6.4 과거 데이터 (Historical Data)
+- **TSX Trading Summary (일별):** TMX Datalinx Webstore를 통해 종가 거래 요약 제공
+- **Daily Trading Reports:** tsx.com에 거래량, 거래대금, 거래 통계 상세가 포함된 일별 보고서 게재
+- **제3자 제공자:** 상업 데이터 벤더를 통해 과거 틱 데이터 이용 가능
+
+---
+
+## 7. 접속 및 이용 (Connectivity & Access)
+
+### 7.1 회원 자격 / 참가 (Membership / Participation)
+- **참가조직 (Participating Organization, PO):** TSX 직접 접속에 필요; 등록 투자딜러이자 CIRO 회원이어야 함
+- **TSXV 회원:** TSXV 직접 접속에 필요; PO 자격과 유사한 요건
+- **TSX Alpha 회원:** TSX Alpha 직접 접속에 필요
+- **직접시장접속 (DMA):** 비회원 업체는 후원 참가조직을 통해 TSX/TSXV/TSXA에 접속 가능; DMA 세션은 접속해제 시 취소(COD) 설정 필요
+- **후원접속:** 매매 전 리스크 관리 적용; 후원 PO가 DMA 고객 활동에 대한 책임 유지
+
+### 7.2 접속 방법 (Connection Methods)
+- **FIX 4.3 Gateway:** 표준 FIX 프로토콜 기반 주문 접수; 전 세계 매매 시스템과 광범위하게 호환
+- **STAMP Protocol:** TMX 독자 주문 접수 프로토콜; 통합 시스템에 성능 이점 제공 가능
+- **TMX QuantumFeed (시세정보):** 저지연 시세정보 소비를 위한 XMT 프로토콜 바이너리 멀티캐스트 피드
+- **인증 요건:** 모든 신규 고객은 운영 환경 접속 전에 TMX 테스트 환경에서 인증을 완료해야 함; 기존 고객은 예정된 업그레이드 전에 재인증이 필요할 수 있음 [출처: TMX Market Access 페이지]
+
+### 7.3 코로케이션 (전산센터 공동입주) / 근접 서비스 (Co-location / Proximity Services)
+- **주요 시설:** TMX Data Centre, 3500 Steeles Avenue East, Markham, Ontario
+  - 최대 1.8 MW 전력 용량
+  - 평방피트당 150와트 전력 밀도, 고밀도 컴퓨팅 지원
+  - 코로케이션 캐비닛이 TMX 매매 엔진으로부터 저지연 데이터 피드를 직접 수신하도록 사전 배선
+  - TSX, TSXV, Montreal Exchange 매매 엔진 및 시세정보 피드에 대한 직접 고속 접속
+  - 시장 참가자 및 기술/네트워크 서비스 제공자 모두 이용 가능
+- **연결 설정:** 고객이 Technical Help Desk에 TMX Service Request Form을 요청; 작성된 양식을 제출하여 연결 설정
+- **제3자 코로케이션:** Toronto의 Equinix TR1/TR2 시설도 TMX에 대한 연결을 갖춘 근접 호스팅 제공 [출처: Options/Business Wire]
+- **네트워크 제공자:** TNS 및 기타 금융 인프라 제공자가 TMX 시장에 대한 관리형 연결 서비스 제공 [출처: TNS]
+
+### 7.4 API 프로토콜 (API Protocols)
+- FIX 4.3 (주문 접수)
+- STAMP (독자 주문 접수)
+- XMT (eXtreme Message Transfer) -- 바이너리 시세정보 프로토콜
+- TCP/UDP 재전송 지원 멀티캐스트 IP (시세정보 전달)
+
+### 7.5 인증 / 테스트 (Certification / Testing)
+- **필수 인증:** TSX, TSXV, TSX Alpha 모든 신규 연결에 필요
+- **테스트 환경:** 운영 전 테스트, 신규 종목 추가, 시스템 업그레이드를 위해 제공
+- **접속해제 시 취소 테스트:** COD 기능은 TMX Account Manager와 함께 테스트 및 확인 필요
+- **업그레이드 재인증:** 예정된 플랫폼 업그레이드 전에 기존 고객에게 필요할 수 있음
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 단일종목 서킷브레이커 (Single Stock Circuit Breaker, SSCB)
+| 시간대 | 발동 기준 | 조치 |
+|--------|----------|------|
+| 9:30 AM - 9:50 AM (첫 20분) | 5분 내 20% 가격 변동 (및 40 호가단위 이상) | 모든 캐나다 매매장소에서 5분간 매매 중단 |
+| 9:50 AM - 3:30 PM (핵심 세션) | 10% 가격 변동 | 모든 캐나다 매매장소에서 5분간 매매 중단 |
+| 전 시간 | 5분 내 20% 가격 변동 (및 40 호가단위 이상) | 모든 캐나다 매매장소에서 5분간 매매 중단 |
+
+- SSCB는 상승 및 하락 가격 변동 모두에 적용
+- CIRO (Canadian Investment Regulatory Organization)가 관리
+- 발동 시, 발동이 발생한 매매장소뿐 아니라 모든 캐나다 주식 매매장소에서 동시에 중단 적용
+- 중단 기간 후 경매형 재개장 프로세스를 통해 매매 재개 [출처: CIRO Guidance on Single-Stock Circuit Breakers]
+
+### 8.2 시장 전체 서킷브레이커 (Market-Wide Circuit Breaker, MWCB)
+| 단계 | 발동 조건 | 중단 기간 |
+|------|----------|----------|
+| Level 1 | S&P/TSX Composite Index (또는 미국 시장 개장 시 S&P 500) 7% 하락 | 15분 중단 |
+| Level 2 | 13% 하락 | 15분 중단 |
+| Level 3 | 20% 하락 | 잔여 거래일 매매 중단 |
+
+- 미국 시장 개장 시, 캐나다 MWCB는 미국 발동 기준(S&P 500 하락 기반)과 연동
+- 미국 시장 미개장 시, S&P/TSX Composite Index가 MWCB 기준 결정에 사용
+- 서킷브레이커 수준은 전일 종가 기준으로 매일 재산출 [출처: CIRO Market Volatility guidance, RBC]
+
+### 8.3 매매 전 리스크 관리 (Pre-Trade Risk Controls)
+- **접속해제 시 취소 (COD):** 필수 기능; 매매 세션 단절 시 모든 미체결 주문 자동 취소
+- **매매 전 리스크 관리 솔루션:** TMX가 참가자에게 주문 흐름에 리스크 점검, 매매 한도, 통제를 적용할 수 있는 포괄적 리스크 관리 시스템 제공; 모든 주요 캐나다 주식 매매장소에 걸쳐 약정 자본, 미체결 주문 노출, 장중 시장 리스크의 실시간 모니터링 제공 [출처: Markets Media]
+- **가격 합리성 관리:** TMX 시스템이 유입 주문 가격을 관리 파라미터에 대해 검증; 합리적 가격 범위를 크게 벗어나는 주문은 거부
+- **Montreal Exchange 관리 (MX):**
+  - "X" 한도: 산출된 관리가격 기반 가격 필터; 한도 초과 주문 자동 거부
+  - "Y" 한도: 다음 체결 가능 주문의 잠재 체결가를 검증하는 보다 좁은 가격 한도
+  - 최대 물량 기준: 유입 주문 크기 검증 [출처: MX Exchange Market Thresholds and Controls]
+- **공매도 규정:** UMIR 공매도 규칙 적용; CIRO가 캐나다 매매장소 전반의 공매도 활동 모니터링
+- **오류 거래 정책:** TMX는 정의된 상황에서 명백한 오류 거래를 취소할 수 있음
+
+### 8.4 규제 정지 (Regulatory Halts)
+- **중요 뉴스 정지:** TSX는 중요 정보 배포 대기 중 개별 종목 매매를 정지할 수 있음
+- **CIRO 조율 정지:** CIRO는 모든 캐나다 매매장소에 걸쳐 정지를 조율할 수 있음
+- **SSCB 정지:** 서킷브레이커 기준에 의해 발동되는 자동 5분 정지 (제8.1절 참조)
+- **MWCB 정지:** 시장 전체 매매 정지 (제8.2절 참조)
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 규제 구조 (Regulatory Structure)
+캐나다 증권규제는 단일 국가 감독기관이 아닌 주/준주 모델로 운영되는 점에서 독특하다:
+
+| 감독기관 | 역할 |
+|---------|------|
+| Ontario Securities Commission (OSC) | TMX Group 및 TSX의 수석 감독기관; TSX, TSXV, TSX Alpha, MX를 거래소로 인가 |
+| Canadian Securities Administrators (CSA) | 주/준주 증권감독기관 협의회; 캐나다 전역의 규제를 조율·통일 |
+| 주/준주 증권위원회 | 각 주/준주가 자체 증권감독기관을 보유 (예: BCSC, ASC, 퀘벡 AMF); 모두 CSA 체계에 참여 |
+| Canadian Investment Regulatory Organization (CIRO) | 국가 자율규제기관(SRO); 투자딜러, 뮤추얼펀드 딜러, 시장 건전성을 감독; 2023년 1월 1일 IIROC와 MFDA 합병으로 설립; 2023년 6월 1일 CIRO로 명칭 변경 |
+
+### 9.2 CIRO 감독 (구 IIROC) (CIRO Oversight)
+- **시장 건전성:** CIRO가 모든 캐나다 주식 매매장소에 적용되는 Universal Market Integrity Rules (UMIR)를 관리·집행
+- **교차매매장소 감시:** CIRO가 거래소 및 대체매매시스템(ATS)을 포함한 캐나다 매매장소 전반의 모든 주식시장 활동 감독
+- **교차자산 감시:** 주식, 채권, MX 상장 파생상품 데이터를 통합하여 잠재적 교차시장 조종 감지
+- **집행:** 규칙 위반 증거 발견 시, CIRO는 자체 집행팀 또는 주/준주 증권감독기관에 추가 조사 및 가능한 징계 조치를 위해 회부
+- **내부자거래:** 잠재적 내부자거래 사안은 주/준주 증권감독기관에 회부
+- **등록 위임:** 2025년 4월 1일부터 OSC가 투자딜러, 뮤추얼펀드 딜러, 선물위원회 상인에 대한 등록 기능을 CIRO에 위임하되, OSC는 강화된 리스크 기반 감독 프레임워크 하에서 병행 권한을 유지 [출처: OSC, CIRO]
+
+### 9.3 TMX 자율규제 기능 (TMX Self-Regulatory Functions)
+- TMX Group 거래소는 주 증권감독기관이 발행한 인가 명령에 따라 운영
+- TSX와 TSXV는 상장 기준, 매매 규칙, 발행사 의무를 규율하는 자체 규정집(TSX Rule Book 2026년 1월 13일 시행; TSXV Policy Manual) 유지
+- 시장 규제(매매 감시 및 집행)는 매매장소와의 협정에 따라 CIRO에 위탁
+- TMX는 모니터링 목적으로 CIRO에 시장 감시 데이터 피드 제공
+
+### 9.4 주요 규제 수단 (Key Regulatory Instruments)
+- **UMIR (Universal Market Integrity Rules):** 모든 캐나다 주식 매매장소에 적용되는 국가 규칙; 시세조종, 공매도, 최선집행, 시장조성에 관한 조항 포함
+- **National Instrument 21-101 (Marketplace Operation):** 캐나다 거래소 및 ATS의 운영을 규율
+- **National Instrument 23-101 (Trading Rules):** 최선집행 의무 및 주문 보호 규칙 설정
+- **TSX Rule Book:** TSX에서의 상장, 매매, 참가를 규율하는 거래소 고유 규칙
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 매매 수수료 (TSX) (Trading Fees)
+TSX는 **메이커-테이커(유동성 제공-소비 수수료 모델)** 수수료 모델을 운영한다 (2026년 1월 13일 시행):
+
+| 범주 | 설명 |
+|------|------|
+| 소극적 (메이커) 리베이트 | 잔류 주문을 게시하여 이후 체결되는 유동성 공급자에게 지급되는 리베이트 |
+| 적극적 (테이커) 수수료 | 잔류 주문에 대해 유입 주문으로 체결하는 유동성 소비자에게 부과되는 수수료 |
+| 비공개 주문 수수료 | 비공개 유동성 상호작용에 대한 별도 수수료표 |
+| 크로스 수수료 | 의도적 크로스 거래에 대한 감면 수수료 |
+
+- TMX는 이전에 거래량 기반 가격 단계를 운영했으나 간소화된 수수료 구조로 전환함 [출처: Traders Magazine]
+- 주당 구체적 요율은 TSX Trading Fee Schedule (2026년 1월 13일 시행) 및 TSXV Fee Schedule (2025년 11월 3일 시행)에 게재, tsx.com에서 이용 가능 [출처: TSX Fee Schedule 페이지]
+- TSX Alpha Exchange는 특정 주문 유형에 대해 역전 수수료 모델(유동성 소비에 대한 리베이트) 옵션 제공 [미검증]
+
+### 10.2 상장 수수료 (Listing Fees)
+| 수수료 유형 | 범위 | 상세 |
+|------------|------|------|
+| 최초 상장 수수료 (일회성) | C$10,000 - C$200,000 | 상장 시점 증권 시장가치 기준; 신청 시 환불불가 보증금 C$10,000 필요 |
+| 연간 유지 수수료 | C$12,000 - C$145,000/년 | 모든 TSX 상장 증권의 시가총액 기준 산출; 매년 2월 청구 |
+| 추가 상장 수수료 | 변동 | 자금조달, 인수, 보상 약정에 의한 추가 증권 상장 시 납부 |
+| 구조화상품 | 연간 유지 수수료 없음 | 구조화상품은 연간 유지 수수료 면제 |
+
+- 가장 최근 상장 수수료표는 2025년 8월 1일 시행 [출처: TSX Listing Fee Schedule]
+- tsx.com에서 상장 예정 발행사를 위한 최초 상장 수수료 계산기 이용 가능
+
+### 10.3 시세정보 수수료 (Market Data Fees)
+- TMX Datalinx가 실시간 및 지연 시세정보에 수수료 부과
+- 2026년 1월 1일 및 2025년 1월 1일 발행 가격 문서 [출처: TMX Information Services]
+- 전문 구독자에 대해 사용자별 데이터 수수료 적용; 기업 라이선스 이용 가능
+- TMX Webstore를 통해 과거 데이터 상품 구매 가능
+
+### 10.4 수익 모델 개요 (Revenue Model Overview)
+TMX Group의 수익원 (2025년 C$17.2억, 전년 대비 +17.61%):
+- **매매 및 청산 수수료:** 주식, 파생상품, 채권 매매로부터의 거래 기반 수익
+- **상장 수수료:** TSX 및 TSXV 발행사의 최초 및 연간 유지 수수료
+- **시세정보 (TMX Datalinx):** 실시간 및 과거 데이터 상품 판매
+- **기술 서비스 (Trayport, TMX VettaFi):** 에너지 매매 기술 플랫폼 및 지수/분석 상품
+- **기업 솔루션:** 발행사 서비스, 명의개서 대리인 서비스 및 관련 상품; TMX는 기업 솔루션을 자본조달 수익의 50% 이상으로 확대 목표 [출처: TMX Group 전략 커뮤니케이션]
+- **매매후 서비스 (CDS):** 청산, 결제, 예탁 수수료
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 11.1 CIRO 설립 (2023) (CIRO Formation)
+- 2023년 1월 1일, Investment Industry Regulatory Organization of Canada (IIROC)와 Mutual Fund Dealers Association of Canada (MFDA)가 합병하여 New Self-Regulatory Organization of Canada 설립
+- 2023년 6월 1일 Canadian Investment Regulatory Organization (CIRO)으로 명칭 변경
+- 투자딜러, 뮤추얼펀드 딜러, 매매장소 건전성에 대한 감독을 단일 SRO로 통합
+- 2025년 4월 1일부터 CIRO가 OSC로부터 위임된 등록 기능을 인수 [출처: OSC, CIRO]
+
+### 11.2 T+1 결제 (2024) (T+1 Settlement)
+- 캐나다는 미국 및 멕시코와 협조하여 2024년 5월 27일 T+1 (거래일 + 1영업일) 결제로 전환
+- 결제주기를 T+2에서 단축하여 상대방 및 시스템적 위험 감소
+- CDS (TMX 자회사)가 캐나다 시장의 시행 중심 [출처: CDS T+1 initiative 페이지]
+
+### 11.3 매매후 현대화 (2025) (Post-Trade Modernization)
+- 2025년 4월, CDS가 기반 청산 기술에 대한 대규모 업그레이드 시행
+- 레거시 청산·결제 시스템 및 예탁·권리 지급 시스템을 교체
+- TCS BaNCS for Market Infrastructure 기반 신규 플랫폼
+- 2024년 출시된 Canadian Collateral Management Service 등 최근 이니셔티브 지원 [출처: TMX Group 보도자료]
+
+### 11.4 사상 최고 재무 실적 (2025) (Record Financial Performance)
+- TMX Group이 2025년 C$17.2억 매출 보고, 2024년 C$14.6억 대비 17.61% 증가
+- CEO John McKenzie가 2025년을 TMX Group의 "최고의 해"로 평가
+- TSX 상장 발행사가 시가총액 사상 최고 기록 (2025년 8월까지 C$5.8조 돌파) [출처: TMX Group, StockTitan]
+
+### 11.5 광업 부문 강세 (Mining Sector Strength)
+- 2025년 12월 31일 기준, TMX 거래소에 1,073개 광업 발행사가 합산 시가총액 C$1.1조 이상으로 상장
+- 광업 발행사가 2025년 1,429건의 자금조달을 통해 C$160억의 지분 자본 조달
+- TSX 및 TSXV가 전 세계 공개 광업 기업의 약 40%를 대표
+- 2026년 TSX Venture 50이 평균 주가 상승률 431%의 자원 기업 주력 코호트를 선정 [출처: TMX Group PDAC 2026 발표, StockTitan]
+
+### 11.6 호가단위 통일 (Trading Increment Harmonization)
+- CIRO가 미국과 교차상장된 종목에 대해 미국 시장의 호가단위 규칙과 통일하는 UMIR 개정안을 제안하여 캐나다와 미국 매매장소 간 공정한 경쟁을 보장
+- TMX Group이 이 통일 노력을 공개적으로 지지 [출처: TMX comment letter to CSA/CIRO, 2023년 12월]
+
+### 11.7 전략적 이니셔티브 (Strategic Initiatives)
+- TMX Group은 기업 솔루션 사업을 자본조달 수익의 50% 이상으로 확대 추진
+- AI 및 블록체인 통합에 전략적 초점 [미검증 -- 전략 방향 커뮤니케이션 기반]
+- Trayport (에너지 매매 기술) 및 TMX VettaFi (지수·분석)에 대한 지속적 투자
+
+---
+
+## 출처 (Sources)
+
+- [TMX Group of Companies -- Official Website](https://www.tmx.com)
+- [TMX TSX -- Trading Hours](https://www.tsx.com/en/trading/calendars-and-trading-hours/trading-hours)
+- [TMX TSX -- Order Types](https://www.tsx.com/en/trading/toronto-stock-exchange/order-types-and-features/order-types)
+- [TMX Order Types and Functionality Guide v1.75 (November 3, 2025)](https://www.tsx.com/ebooks/en/order-types-guide/)
+- [TMX Quantum XA -- Product Page](https://www.tsx.com/en/trading/products-and-services/tmx-quantum-xa)
+- [TMX Quantum XA FAQ v2.0](https://www.tsx.com/en/resource/93)
+- [TMX TSX -- Fee Schedule (effective January 13, 2026)](https://www.tsx.com/en/trading/toronto-stock-exchange/fee-schedule)
+- [TSX Listing Fee Schedule (effective August 1, 2025)](https://www.tsx.com/en/resource/2939)
+- [TMX TSX -- Market Maker Program](https://www.tsx.com/en/trading/toronto-stock-exchange/order-types-and-features/market-maker-program)
+- [TMX TSX -- Market on Close (MOC)](https://www.tsx.com/en/trading/tsx-venture-exchange/order-types-and-features/market-on-close)
+- [TMX Co-Location Services](https://www.tmxinfoservices.com/platforms-and-colocation/co-location-services)
+- [TMX Datalinx Webstore -- QuantumFeed Products](https://www.tmxwebstore.com/products/binary-feeds-quantumfeeds)
+- [CIRO -- Trade Surveillance](https://www.ciro.ca/markets/trade-surveillance)
+- [CIRO -- Guidance on Single-Stock Circuit Breakers](https://www.ciro.ca/newsroom/publications/guidance-single-stock-circuit-breakers)
+- [CIRO -- Market Volatility](https://www.ciro.ca/newsroom/halts-and-resumptions/market-volatility)
+- [OSC -- Canadian Investment Regulatory Organization (CIRO)](https://www.osc.ca/en/industry/market-regulation/self-regulatory-organizations-sro/canadian-investment-regulatory-organization-ciro)
+- [CDS -- T+1 Initiative](https://www.cds.ca/solutions/cds-key-initiatives/t-1)
+- [TMX Group -- Post Trade Modernization Press Release](https://www.tmx.com/en/newsroom/press-releases?id=1280)
+- [TMX Group -- Equity Financing Statistics (StockTitan)](https://www.stocktitan.net/news/TMXXF/)
+- [TMX Group -- PDAC 2026 Mining Announcement](https://www.stocktitan.net/news/TMXXF/tmx-group-welcomes-international-mining-community-to-pdac-n446kepnckva.html)
+- [TMX Group -- Historical Timeline (Investor Relations)](https://investors.tmx.com/English/about-us/historical-timeline/default.aspx)
+- [Toronto Stock Exchange -- Wikipedia](https://en.wikipedia.org/wiki/Toronto_Stock_Exchange)
+- [TMX Group -- Wikipedia](https://en.wikipedia.org/wiki/TMX_Group)
+- [TSX Daily Trading Reports](https://www.tsx.com/en/trading/market-data-and-statistics/market-statistics-and-reports/daily-trading-reports)
+- [Traders Magazine -- TMX Lowers Maker Taker Fees](https://www.tradersmagazine.com/news/tmx-lowers-maker-taker-fees-abolishes-volume-based-pricing-tiers/)

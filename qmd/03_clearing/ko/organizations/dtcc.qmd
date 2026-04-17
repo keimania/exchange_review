@@ -1,0 +1,677 @@
+---
+title: "DTCC (Depository Trust & Clearing Corporation, 미국예탁결제공사)"
+subtitle: "청산결제 > 청산기관"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 갱신일:** 2026-04-07
+> **조사 단계:** Tier 1 (심층 분석)
+> **유형:** 지주회사 (CCP + CSD) -- DTC (중앙예탁기관), NSCC (주식 CCP), FICC (채권 CCP) 포괄
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 내용 |
+|------|------|
+| 정식 명칭 | The Depository Trust & Clearing Corporation |
+| 약칭 | DTCC |
+| 웹사이트 | [https://www.dtcc.com](https://www.dtcc.com) |
+| 설립 연도 | 1999년 (DTC와 NSCC를 통합하는 지주회사로 설립) |
+| 소재지 | 미국 / 뉴저지주 저지시티 (570 Washington Blvd) |
+| 소유구조 | 이용자 소유·운영 방식. 청산기관 참가자가 서비스 이용량에 비례하여 보통주를 보유한다. 우선주는 Stock Clearing Corporation (NYSE 자회사), FINRA, 기관투자자가 보유한다. |
+| 모회사 / 그룹 | 없음 (DTCC가 최상위 지주회사) |
+| 감독기관 | SEC (DTC, NSCC, FICC 주요 감독기관); 연방준비제도이사회 (도드-프랭크법(Dodd-Frank Act) Title VIII에 따른 감독); CFTC (상품선물거래위원회, 일부 스왑 관련 업무) |
+| CPMI-IOSCO 금융시장인프라에 관한 원칙 (PFMI) 준수 | 예 -- DTC, NSCC, FICC 각각 PFMI 공시 프레임워크 및 CPMI-IOSCO 공적정량공시(PQD)를 분기별로 발표한다 |
+| 적격중앙청산소 (QCCP) 지위 | 예 -- DTC, NSCC, FICC는 Basel III 체계에서 은행 자본 산출 목적의 적격중앙청산소로 인정된다 |
+
+### 주요 자회사 (Key Subsidiaries)
+
+| 자회사 | 유형 | 설립 | 기능 |
+|--------|------|------|------|
+| **DTC** (Depository Trust Company) | 중앙예탁기관 (CSD) / 청산기관 | 1973년 | 중앙예탁기관; 주식, 회사채/지방채, 단기금융상품의 장부대체 결제 |
+| **NSCC** (National Securities Clearing Corporation) | 중앙청산소 (CCP) / 청산기관 | 1976년 | 주식, ETF, 회사채/지방채, UIT, ADR의 청산, 결제, 리스크 관리 및 CCP 보증 |
+| **FICC** (Fixed Income Clearing Corporation) | 중앙청산소 (CCP) / 청산기관 | 2003년 | 미국 국채(GSD 부문) 및 주택저당증권(MBSD 부문)의 청산 및 CCP 서비스 |
+| DTCC Solutions LLC | 서비스 | -- | 데이터 및 거래 후 서비스 |
+| DTCC Deriv/SERV LLC | 거래정보저장소 (Trade Repository) | -- | OTC 파생상품 거래정보 보관소 |
+| DTCC Digital Assets (구 Securrency) | 기술 | 2023년 (인수) | 디지털 자산 인프라 및 토큰화 |
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **1973년:** DTC 설립. 1960년대 후반 "서류 위기(paperwork crisis)"를 해소하기 위해 실물 증권의 부동화(immobilization) 및 장부대체 이전을 가능하게 하였다.
+- **1976년:** NYSE, AMEX, NASD 청산 자회사의 합병으로 NSCC 설립, 중앙집중식 주식 청산 개시.
+- **1986년:** 미국 국채 청산을 위한 GSCC (Government Securities Clearing Corporation) 설립.
+- **1999년:** DTC와 NSCC를 통합 지배구조 하에 결합하기 위해 DTCC 지주회사 설립.
+- **2003년:** GSCC와 MBSCC (Mortgage-Backed Securities Clearing Corporation) 합병으로 FICC 설립.
+- **2012년:** 도드-프랭크법 Title VIII에 따라 FSOC가 DTC, NSCC, FICC를 시스템적으로 중요한 금융시장인프라(SIFMU)로 지정.
+- **2017년:** SEC Rule 17Ad-22(e)의 대상 청산기관 강화 기준 시행 (2017년 4월).
+- **2017년:** 미국 결제주기(Settlement Cycle)를 T+3에서 T+2로 단축 (2017년 9월).
+- **2019년:** DTCC가 EuroCCP를 Cboe Global Markets에 매각.
+- **2022년:** Project Ion DLT 기반 결제 플랫폼이 병렬 운영 환경에서 가동, 일일 100,000건 이상의 주식 거래를 처리.
+- **2023년:** DTCC가 Securrency 인수 (DTCC Digital Assets로 리브랜딩), 디지털 자산 인프라 확보.
+- **2024년 (5월 28일):** 미국 결제주기를 T+2에서 T+1으로 단축. NSCC 청산기금 약 23% (30억 USD) 감소.
+- **2024년 (12월):** SEC가 미국 국채 중앙청산 의무화 규칙 채택 (Rule 17Ad-22(e) 개정). FICC를 통한 미국 국채 현물 및 레포 거래의 중앙청산 확대 의무화. 준수 기한: 현물 2026년 12월 31일, 레포 2027년 6월 30일.
+- **2025년 (6월):** DTC 수탁자산 100조 USD 돌파.
+- **2025년 (12월):** SEC가 Canton Network에서 DTC 수탁 미국 국채의 토큰화 서비스를 DTC에 허용하는 No-Action Letter 발행.
+- **2026년:** DTCC Digital Assets Solutions 신규 사업부문 출범. Canton Network 토큰화 MVP를 2026년 상반기 중 통제된 운영 환경에서 가동 예정.
+
+### 주요 재무 데이터 (2024년) (Key Financial Data)
+
+| 지표 | 수치 |
+|------|------|
+| 매출 | 24.9억 USD |
+| 당기순이익 | 4.88억 USD |
+| EBITDA | 6.09억 USD |
+| 총자산 | 1,226억 USD |
+| 총자본 | 43억 USD |
+| 직원 수 | 약 5,000명 |
+| 처리 증권거래 규모 | 3.7경(quadrillion) USD (금액 기준) |
+| 수탁자산 (DTC) | 99조 USD (2024년); 2025년 6월 100조 USD 초과 |
+| 수탁 증권 종목 수 | 170개 이상 국가·지역에서 144만 건 이상 |
+
+*출처: DTCC 2024 Annual Report ([dtcc.com/annuals/2024](https://www.dtcc.com/annuals/2024)); DTCC Wikipedia ([en.wikipedia.org](https://en.wikipedia.org/wiki/Depository_Trust_%26_Clearing_Corporation))*
+
+---
+
+## 2. 청산 모델 (Clearing Model)
+
+### 2.1 CCP 서비스 (CCP Services)
+
+DTCC는 NSCC (주식 및 관련 상품)와 FICC (채권) 두 자회사를 통해 CCP 서비스를 제공한다. DTC는 중앙예탁기관(CSD) 및 결제 플랫폼으로 기능한다.
+
+| 하위 기관 | 상품군 | 서비스 설명 | 규모 |
+|-----------|--------|-------------|------|
+| **NSCC** | 주식, ETF, ADR | CNS 시스템을 통한 거래 비교, 차감, CCP 보증 | 일일 최대 처리 금액: 5.55조 USD (2025년 4월 9일); 약 4,000 참가자 |
+| **NSCC** | 회사채 및 지방채 | 회사채·지방채 청산 및 결제 | NSCC 전체 거래량에 포함 |
+| **NSCC** | UIT, 뮤추얼펀드 | Fund/SERV 및 Networking 서비스를 통한 뮤추얼펀드 처리 | -- |
+| **FICC-GSD** | 미국 국채 | 거래 비교, 차감, 결제, 국채·정부기관채 CCP | 일일 최대 거래량: 13.2조 USD (2025년 12월 1일); 2024년 전년 대비 42% 활동 증가 |
+| **FICC-GSD** | 레포 (GCF Repo, Sponsored GC, Triparty 포함) | 레포 거래의 CCP 청산; 바이사이드를 위한 Sponsored Member 접근 | 바이사이드 최대 활동: 3.1조 USD (2025년 12월 31일) |
+| **FICC-MBSD** | 주택저당증권 (MBS) | TBA 및 특정 풀 MBS의 거래 비교, 차감, 풀 통지 | -- |
+| **DTC** | 모든 적격 증권 | 중앙예탁, 장부대체 소유권 이전, 수탁, 자산 서비스, 기업 이벤트(corporate actions) | 수탁자산 100조 USD 이상 (2025년) |
+
+*출처: DTCC 2024 Annual Report; DTCC 보도자료 ([dtcc.com/news](https://www.dtcc.com/news)); FICC GSD FAQ ([dtcc.com/ustclearing](https://www.dtcc.com/ustclearing))*
+
+### 2.2 채무인수 절차 (Novation Process)
+
+**NSCC (CNS 시스템):**
+- NSCC는 **채무인수(Novation)**를 통해 CCP로서 개입한다 -- 거래 비교 및 기록 시점에 NSCC가 매수자와 매도자 양쪽의 법적 거래상대방이 된다.
+- **CNS (Continuous Net Settlement)** 시스템은 NSCC의 핵심 차감·결제 엔진이다. CNS 적격 증권의 모든 비교 완료 거래는 참가자별·결제일별로 CUSIP 기준 순매수(long) 또는 순매도(short) 포지션으로 차감된다.
+- NSCC는 CNS 시스템에 수용된 거래의 결제 완료를 보증한다.
+
+**FICC (GSD 및 MBSD):**
+- FICC도 마찬가지로 거래를 채무인수하여 각 차감회원(Netting Member)의 CCP가 된다.
+- GSD는 실시간 거래 비교 시스템을 사용하며 결제를 위해 거래를 차감한다.
+- MBSD는 EPN (Electronic Pool Notification)을 제공하고 TBA (To-Be-Announced) 거래를 처리한다.
+
+*출처: NSCC Disclosure Framework ([dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/NSCC_Disclosure_Framework.pdf)); CNS 개요 ([dtcclearning.com](https://dtcclearning.com/products-and-services/equities-clearing/cns.html))*
+
+### 2.3 차감 (Netting)
+
+**NSCC:**
+- CNS를 통한 **다자간차감(Multilateral Netting)**은 매일 교환해야 하는 결제 금액을 평균 **98%** 감소시킨다.
+- 각 증권은 참가자별로 하나의 포지션으로 차감되어, 결제 의무 건수를 획기적으로 줄인다.
+
+**FICC-GSD:**
+- 차감회원 간 미국 국채 거래의 다자간차감.
+- 일일 거래량이 10조 USD를 초과하는 상황에서 차감 효율성은 매우 중요하다.
+
+**FICC-MBSD:**
+- TBA 및 특정 풀 MBS 거래를 차감하여 순인도 의무를 산출한다.
+
+*출처: DTCC CNS 페이지 ([dtcc.com](https://www.dtcc.com/clearing-and-settlement-services/equities-clearing-services/cns)); SIFMA Insights ([sifma.org](https://www.sifma.org/research/insights/sifma-insights-spotlight-dtcc))*
+
+### 2.4 청산회원 제도 (Clearing Membership)
+
+#### NSCC 회원 제도 (NSCC Membership)
+
+| 등급 | 요건 | 비고 |
+|------|------|------|
+| 풀서비스 청산회원 (Full-Service Clearing Member) | SEC 등록 브로커-딜러; 단계별 VaR 기반 최소 잉여순자본 (2023년 8월 시행); 최소 청산기금 예치금 250,000 USD | 자기 및 위탁 청산 가능 |
+| 대리 청산회원 (Correspondent Clearing Member) | 풀서비스 회원을 통해 청산 | NSCC 직접 접근 불가 |
+| 펀드 회원 (Fund Member) | Fund/SERV 이용 투자회사 | -- |
+| 보험사/대리인 회원 (Insurance Carrier/Agent Member) | 보험 및 퇴직연금 상품 처리용 | -- |
+| 지방채 비교전용 회원 (Municipal Comparison Only Member) | 지방채 비교 서비스만 이용 | -- |
+
+- **NSCC 총 참가자 수:** 약 4,000
+- 순자본 요건은 자기청산 여부 및 위탁 청산 여부, 회원의 일일 VaR 계산에 따른 단계별 방식을 적용한다.
+
+#### FICC-GSD 회원 제도 (FICC-GSD Membership)
+
+| 등급 | 요건 | 비고 |
+|------|------|------|
+| 차감회원 (Netting Member) | 은행: 최소 자기자본 1억 USD; 브로커-딜러: SEC 순자본 요건; 최소 청산기금 예치금 1,000,000 USD (2022년 인상) | 전면적 청산 및 차감 |
+| 스폰서링 회원 (Sponsoring Member) | 차감회원이어야 함; 기관투자자(Sponsored Member)를 GSD에 후원 가입 | 차감 및 후원 활동에 대한 별도 청산기금 예치 |
+| 스폰서드 회원 (Sponsored Member) | 스폰서링 회원이 후원하는 기관투자자 | 정식 차감회원 가입 없이 GSD 청산 이용 가능 |
+| 비교전용 회원 (Comparison-Only Member) | 거래 비교 서비스만 이용 | 차감이나 CCP 보증 없음 |
+
+#### FICC-MBSD 회원 제도 (FICC-MBSD Membership)
+
+| 등급 | 요건 | 비고 |
+|------|------|------|
+| 청산회원 (Clearing Member) | 최소 순자본 및 청산기금 예치 요건 | 전면적 차감 및 결제 |
+
+*출처: NSCC Rules & Procedures ([dtcc.com](https://www.dtcc.com/~/media/files/downloads/legal/rules/nscc_rules.pdf)); FICC GSD Membership Types ([dtcc.com](https://www.dtcc.com/ustclearing)); SEC Order SR-FICC-2022-007 ([federalregister.gov](https://www.federalregister.gov/documents/2022/10/28/2022-23482/self-regulatory-organizations-fixed-income-clearing-corporation-order-granting-approval-of-proposed)); SEC Order SR-NSCC-2021-013 ([federalregister.gov](https://www.federalregister.gov/documents/2021/08/17/2021-17541))*
+
+---
+
+## 3. 리스크 관리 (Risk Management)
+
+### 3.1 증거금 체계 (Margin Framework)
+
+#### NSCC 증거금 (청산기금 예치금, Required Fund Deposit)
+
+각 NSCC 회원의 **청산기금 예치금(Required Fund Deposit)**이 증거금으로 기능한다. 예치금은 다수의 구성요소로 이루어진다:
+
+| 구성요소 | 방법론 | 세부 내용 |
+|----------|--------|-----------|
+| **변동성 차지 (VaR Charge)** | 모수적 VaR (Parametric Value-at-Risk) | (1) 두 가지 VaR 모델 계산 중 큰 값, (2) 집중도 한도를 초과하는 최대 비지수 포지션의 갭 리스크 측정치, (3) 장단 시가 기반 포트폴리오 증거금 하한 중 최대값으로 산출. **99% 신뢰수준**, **3일 청산기간(MPOR)** 기준. 과거 가격 데이터의 회고기간을 사용한다. |
+| **시가평가 차지 (Mark-to-Market Charge)** | 현재 시장가치 | 미결제 순포지션의 미실현 손익 반영 (일반 MTM 및 ID Net MTM) |
+| **증거금 차액 (Margin Requirement Differential, MRD)** | 보충적 | NSCC 증거금과 거래소/OCC 증거금 간 차이를 다룸 |
+| **증거금 유동성 조정 (Margin Liquidity Adjustment, MLA)** | 유동성 기반 | 유동성이 낮은 증권의 유동성 리스크 반영 |
+| **초과자본 프리미엄 (Excess Capital Premium)** | 자본 기반 | 자본 대비 익스포저가 큰 회원에 대한 추가 부과 |
+| **특별 부과금 (Special Charges)** | 다양 | 지방채 헤어컷 차지, 반경기순환적(anti-cyclical) 부과금 등 |
+| **장중 변동성 차지 (Intraday Volatility Charge)** | 장중 VaR | 장중 변동성 변화가 개장 시 차지의 100% 이상이면서 250,000 USD 초과 시 부과 (2023년 3월 도입) |
+| **장중 시가평가 차지 (Intraday Mark-to-Market Charge)** | 장중 MTM | MTM 익스포저 변동에 따른 재량적 장중 징수 |
+
+**최소 청산기금 예치금:** 회원당 250,000 USD.
+
+#### FICC-GSD 증거금 (청산기금 예치금)
+
+| 구성요소 | 방법론 | 세부 내용 |
+|----------|--------|-----------|
+| **VaR Charge** | VaR | 정상 시장 상황에서의 **3일 청산기간** 잠재 손실 커버; 역사적 시뮬레이션 방법론 사용; Cover 1 기준 신뢰수준 목표 |
+| **시가평가 (Mark-to-Market)** | 현재 시장가치 | 미실현 손익의 일일 정산 |
+| **변동성 이벤트 차지 (Volatility Event Charge)** | 이벤트 기반 | 시장 변동성 고조 시 추가 부과 (2025년 4월 승인) |
+| **최소 증거금 (Minimum Margin Amount)** | 하한선 | VaR 계산 결과와 무관한 최소 증거금 수준 (2024년 11월 승인) |
+| **커버리지 차지 (Coverage Charge)** | 사후검증 기반 | 사후검증에서 커버리지 부족이 확인될 때 부과 |
+| **차단기간 익스포저 차지 (Blackout Period Exposure Charge)** | 시간적 | GSD 결제 차단기간 중 리스크 반영 |
+
+**GSD 최소 청산기금 예치금:** 차감회원당 1,000,000 USD (2022년 인상).
+
+#### FICC-MBSD 증거금
+
+| 구성요소 | 방법론 | 세부 내용 |
+|----------|--------|-----------|
+| **VaR Charge** | VaR | MBS 포지션의 포트폴리오 수준 VaR 계산 |
+| **시가평가 (Mark-to-Market)** | 현재 시장가치 | 일일 MTM 정산 |
+| **추가 부과금** | 다양 | 집중도 차지 및 커버리지 차지 등 |
+
+*출처: NSCC Disclosure Framework; SEC Rule Filings SR-NSCC-2023-003 ([federalregister.gov](https://www.federalregister.gov/documents/2023/03/20/2023-05447)); SR-NSCC-2023-013 ([federalregister.gov](https://www.federalregister.gov/documents/2023/08/10/2023-17127)); GSD Clearing Fund Methodology Overview ([dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/GSD-Clearing-Fund-Methodology-Overview-January-2024.pdf)); SR-FICC-2024-005 ([federalregister.gov](https://www.federalregister.gov/documents/2024/11/14/2024-26531)); SR-FICC-2025-008 ([federalregister.gov](https://www.federalregister.gov/documents/2025/04/28/2025-07219))*
+
+### 3.2 증거금 징수 일정 (Margin Call Schedule)
+
+| 징수 유형 | NSCC | FICC (GSD/MBSD) |
+|-----------|------|-----------------|
+| **정기 (개장 전)** | 일일 청산기금 예치금 산출 및 개장 전 징수 | 일일 청산기금 예치금 산출 및 징수 |
+| **장중** | 재량적 장중 징수: 장중 변동성 차지 (익스포저가 100% 이상 증가하면서 250,000 USD 초과 시 발동) 및 장중 MTM 차지 | 시장 상황에 따른 장중 증거금 징수 |
+| **임시 / 특별** | NSCC는 Rule 15에 따라 회원의 운영능력 또는 재무건전성에 의문이 있을 경우 언제든 추가 예치를 요구할 수 있다 | FICC도 스트레스 상황에서 추가 예치를 요구할 수 있다 |
+
+### 3.3 손실부담순서 (Default Waterfall)
+
+손실부담순서는 NSCC와 FICC에서 유사한 구조를 따르며, 각 기관은 별도의 청산기금을 운영한다. 자회사 간 상호보증 약정이 존재한다.
+
+#### NSCC 손실부담순서 (NSCC Default Waterfall)
+
+| 계층 | 설명 | 규모 (대략) |
+|------|------|-------------|
+| 1 | **부도회원의 증거금** (청산기금 예치금) | 총 약 98~110억 USD 청산기금 중 부도회원 귀속분 |
+| 2 | **부도회원의 청산기금 출연분** | 1계층에 포함 (NSCC에서는 청산기금 예치금이 증거금과 공동기금 출연분을 겸한다) |
+| 3 | **NSCC CCP 자기자본 출연분 (SITG)** | 일반적으로 NSCC 일반사업리스크 자본 요건의 50%. [정확한 금액 미확인; 일반적 CCP SITG 규모 기준 약 2,500~5,000만 USD 추정] |
+| 4 | **비부도회원의 청산기금** | 총 약 98~110억 USD 청산기금 중 잔여분 |
+| 5 | **추가분담금 부과 권한 (Assessment Powers, Loss Allocation)** | NSCC는 모든 손실이 충당될 때까지 비부도회원에게 연속적으로 추가 출연을 부과할 수 있다. 회원별·이벤트 기간별 손실배분 한도(Loss Allocation Caps)가 적용된다. |
+| 6 | **상호보증 약정 (Cross-Guaranty Arrangements)** | NSCC, FICC, DTC 간 상호보증 협약; OCC와도 체결. 한 자회사에서 부도회원의 초과 담보를 다른 자회사의 부족분 충당에 사용할 수 있다. |
+
+**NSCC 총 청산기금:**
+- T+1 이전 평균: 약 122~128억 USD
+- T+1 이후 평균 (2024년 6월부터): 약 98억 USD (23% 감소)
+- 2024년 일평균: 112.4억 USD
+
+**NSCC 유동성 자원:**
+- 96억 USD 확약 신용한도 (매년 갱신; 2026년 7월 27일 만기)
+
+#### FICC 손실부담순서 (GSD와 MBSD는 별도 청산기금 운영)
+
+| 계층 | 설명 | 규모 (대략) |
+|------|------|-------------|
+| 1 | **부도회원의 증거금** (해당 부문 청산기금 예치금) | GSD/MBSD 청산기금 중 부도회원 귀속분 |
+| 2 | **FICC CCP 자기자본 출연분 (SITG)** | 일반적으로 FICC 일반사업리스크 자본 요건의 50% [정확한 금액 미확인] |
+| 3 | **비부도회원의 청산기금** (해당 부문) | GSD 청산기금 총액: [미확인; 2024년 Q4 PQD 기준 GSD 총 개시증거금 655억 USD를 감안하면 150~200억 USD 이상 추정] |
+| 4 | **부문 간 상계 (Cross-division Offset)** | FICC는 GSD의 가용 순자원을 MBSD에 상계할 수 있다 |
+| 5 | **추가분담금 부과 권한** | FICC는 비부도회원에게 추가 출연을 부과할 수 있다 |
+| 6 | **상호보증 / 교차증거금** | NSCC·DTC와의 상호보증; CME와의 교차증거금 협약 (양쪽 모두 참가하는 회원 대상) |
+
+**FICC-GSD 총 개시증거금(Initial Margin) 소요액:** 655억 USD (2024년 Q4 PQD 데이터; 전분기 대비 16%↑, 전년 대비 36%↑)
+
+#### DTC 부도 자원 (Participants Fund)
+
+| 계층 | 설명 | 규모 (대략) |
+|------|------|-------------|
+| 1 | **부도참가자의 담보 및 참가자기금 예치금** | 약 6억 USD 참가자기금 목표액 중 부도참가자 귀속분 |
+| 2 | **DTC 자기자본 출연분** | 일반사업리스크 자본 요건의 50% |
+| 3 | **비부도 참가자기금** | 참가자기금 잔여분 |
+| 4 | **추가분담금 부과 권한** | DTC는 참가자에게 추가 출연을 부과할 수 있다 |
+
+- **참가자기금 목표액:** 6억 USD
+- **최소 개별 예치금:** 10,000 USD; 추가 금액은 60영업일 이동 평균 중 가장 높은 일중 순차변 6회 기준
+
+*출처: NSCC Disclosure Framework; SIFMA Insights Spotlight DTCC ([sifma.org](https://www.sifma.org/research/insights/sifma-insights-spotlight-dtcc)); CPMI-IOSCO PQD Q4 2024 ([dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/CPMI-IOSCO-Public-Quantitative-Disclosures---Q4-2024.pdf)); NSCC Financial Statements Annual 2024 ([dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/financials/2024/NSCC-Financial-Statements-Annual-2024.pdf)); Finadium 분석 ([finadium.com](https://finadium.com/dtcc-analysis-shows-clearing-fund-drops-4bn-after-t1-starts/)); SIFMA/ICI/DTCC T+1 After Action Report ([sifma.org](https://www.sifma.org/resources/guides-playbooks/t1-after-action-report))*
+
+### 3.4 공동기금 / 보증기금 (Default Fund / Guarantee Fund)
+
+**NSCC 청산기금:**
+- 총 규모 (2024년 일평균): 약 112.4억 USD
+- T+1 이후 평균: 약 98억 USD
+- 규모 산정 방법론: 리스크 기반. 각 회원의 청산기금 예치금은 VaR Charge, MTM, 보충적 구성요소를 기반으로 산출된다. 총기금은 극단적이지만 현실적인 시장 상황에서 최대 익스포저를 발생시키는 단일 회원(계열사 포함)의 부도를 충당할 수 있도록 설계된다 (Cover 1 기준).
+- 출연 방법론: 각 회원이 산출된 청산기금 예치금에 비례하여 출연.
+- 적격 담보: 현금, 미국 국채, 기타 적격 증권 (헤어컷 적용).
+- 재검토 주기: 청산기금 예치금 일일 재산출; 주기적 모델 검증 및 스트레스 테스트.
+
+**FICC 청산기금 (GSD와 MBSD 별도):**
+- 방법론: VaR 방법론에 기반한 리스크 기반 증거금 산출. 3일 청산기간 동안의 부도회원 포트폴리오 처분을 충당하도록 설계.
+- GSD 최소 청산기금 예치금: 차감회원당 1,000,000 USD.
+- MBSD: 유사한 방법론의 별도 청산기금.
+- 유지 수수료: 현금 예치 평균 잔액의 연 0.25% (월별 부과).
+- 재검토 주기: 일일 재산출; Rule 17Ad-22(e)에 따른 모델 검증.
+
+**CCLF (Committed Liquidity Clearing Facility, 확약유동성청산시설):**
+- GSD와 MBSD 모두 부도 상황에서의 유동성 수요를 충당하기 위해 CCLF를 유지한다.
+- 회원은 CCLF 의무를 이해하고 유동성 계획에 반영해야 한다.
+- CCLF 규모는 특정 회고기간 동안 최대 유동성 익스포저를 발생시키는 회원(계열사 포함)의 부도에 따른 최대 유동성 수요에 완충분을 더하여 산정한다.
+
+*출처: NSCC Financial Statements; GSD Clearing Fund Methodology Overview ([dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/GSD-Clearing-Fund-Methodology-Overview-January-2024.pdf)); SR-FICC-2024-003 ([federalregister.gov](https://www.federalregister.gov/documents/2024/06/27/2024-14067))*
+
+### 3.5 스트레스 테스트 및 사후검증 (Stress Testing & Back-testing)
+
+**스트레스 테스트:**
+- NSCC, FICC, DTC는 증거금 및 청산기금 적정성에 대한 **일일 스트레스 테스트**를 실시한다.
+- 시나리오에는 과거 스트레스 이벤트, 가상 시나리오, 복합 시나리오가 포함된다.
+- **Cover 1 기준:** 각 CCP의 사전적립 자원(증거금 및 청산기금 포함)은 극단적이지만 현실적인 시장 상황에서 최대 총합 익스포저를 발생시키는 단일 회원(계열사 포함)의 부도를 충당할 수 있어야 한다.
+- NSCC 스트레스 테스트는 주식시장 폭락, 금리 충격, 신용 이벤트, 복합 시나리오를 다룬다.
+- FICC 스트레스 테스트는 금리 및 수익률곡선 변동, 스프레드 확대, MBS 조기상환 리스크를 다룬다.
+
+**사후검증:**
+- 증거금 모델 커버리지의 일일 사후검증.
+- **NSCC Q4 2024 PQD:** 12개월 사후검증 커버리지 **99.9%**; Q4 2024 중 최대 부족액은 2024년 12월 11일의 **1.296억 USD**.
+- 결과는 리스크 관리 부서가 검토하고 이사회 리스크위원회에 보고한다.
+- 커버리지가 목표 임계치 이하로 하락하면 모델 성과 지표가 검토 및 재보정을 유발한다.
+
+**모델 검증:**
+- SEC Rule 17Ad-22(e)(6)에 따라 최소 연 1회 독립 모델 검증 실시.
+- 외부 독립 당사자에 의한 검증.
+
+*출처: CPMI-IOSCO PQD Q4 2024; NSCC Disclosure Framework; SEC Rule 17Ad-22(e)*
+
+### 3.6 회복 및 정리 (Recovery & Resolution)
+
+**회복 및 청산 정리(R&W) 계획:**
+- DTC, NSCC, FICC는 각각 DTCC의 회복·정리 기획실(R&R Team)이 관리하는 포괄적인 회복 및 청산 정리 계획을 유지한다.
+- 계획은 DTCC 경영위원회 및 이사회가 검토·감독한다.
+- 가장 최근 검토는 2024년에 완료되었으며, SEC Rule 17ad-26 준수를 위해 2025년 4~6월에 개정하였다 (준수 기한: 2025년 12월 15일).
+
+**회복 시나리오:**
+1. **미충당 신용손실** -- 부도회원의 증거금 및 청산기금 출연분을 초과하는 손실
+2. **미충당 유동성 부족** -- 가용 자원에도 불구하고 결제 의무를 이행하지 못하는 상황
+3. **일반사업손실** -- 다수 회원 동시 부도, 중대한 내부 운영사고, 제3자 시스템 장애 시나리오 등
+
+**회복 수단:**
+
+| 수단 | NSCC | FICC | DTC |
+|------|------|------|-----|
+| **손실배분 / 추가분담금 부과 권한** | 예 -- 모든 손실이 충당될 때까지 연속 부과; 회원별·이벤트 기간별 손실배분 한도 적용 | 예 -- 유사한 부과 구조 | 예 -- 참가자 부과 권한 |
+| **변동증거금 이익 삭감 (VMGH)** | 해당 없음 (주식 CCP; 파생상품 CCP와 같은 일일 변동증거금 정산을 하지 않음) | 일반적으로 미사용 [미확인] | 해당 없음 |
+| **부분적 포지션 청산 (Partial Tear-Up)** | 예 -- 해소되지 않는 포지션에 대한 최종 회복 수단 | 예 | 해당 없음 |
+| **자발적 포지션 정리 (Voluntary Tear-Down)** | 예 | 예 | 해당 없음 |
+| **서비스 종료** | 예 -- 회복 수단이 소진되면 질서 있는 업무정리 | 예 | 예 |
+| **회원 탈퇴 권리** | 손실배분 이벤트 후 지정 통지기간 내 탈퇴 가능 | 유사 규정 | 유사 규정 |
+
+**정리 당국:**
+- **주요:** SEC (도드-프랭크법 Title VIII에 따른 감독기관)
+- **보조:** 연방준비제도이사회 (Title VIII에 따른 예비 집행 권한)
+- **FDIC:** 도드-프랭크법 Title II (질서 있는 청산 권한, Orderly Liquidation Authority) 발동 시 잠재적 역할
+- SIFMU로서 DTC/NSCC/FICC는 정리 계획 요건을 포함한 강화된 감독 체계의 적용을 받는다.
+
+*출처: Federal Register 2025-10877 (SR-DTC-2025-003, SR-FICC-2025-003, SR-NSCC-2025-003) ([federalregister.gov](https://www.federalregister.gov/documents/2025/06/16/2025-10877)); Federal Register 2025-07220 ([federalregister.gov](https://www.federalregister.gov/documents/2025/04/28/2025-07220)); NSCC Rules & Procedures Rule 4*
+
+---
+
+## 4. 결제 (Settlement)
+
+### 4.1 결제주기 (Settlement Cycle)
+
+| 상품 | 결제주기 | 비고 |
+|------|----------|------|
+| 주식 (주식, ETF, ADR) | **T+1** (2024년 5월 28일 시행) | T+2에서 변경; 2017년 9월까지는 T+3 |
+| 회사채 | **T+1** (2024년 5월 28일 시행) | T+2에서 변경 |
+| 지방채 | **T+1** (2024년 5월 28일 시행) | T+2에서 변경 |
+| 미국 국채 (현물) | **T+1** (표준) | GSD 차감결제 |
+| 미국 국채 (레포) | **T+0** 또는 합의에 따름 | 레포는 당일 결제가 일반적 |
+| 주택저당증권 (TBA) | 다양 (통상 T+1~선도 만기) | TBA 거래는 지정된 미래 일자에 결제 |
+| UIT | **T+1** | -- |
+| 옵션 | **T+1** | OCC에서 청산, DTC에서 결제 |
+
+### 4.2 DVP 모델 (DVP Model)
+
+**DTC 결제:**
+- **BIS DVP 모델 2:** 증권의 건별(gross) 이전과 자금의 차감(net) 결제.
+- 증권 인도는 하루 동안 건별(거래별)로 처리된다.
+- 자금 결제는 **차감** 방식 -- 각 참가자는 장 마감 시 단일 순차변(net debit) 또는 순대변(net credit) 포지션으로 결제한다.
+- DTC는 두 가지 주요 결제 사이클을 운영한다:
+  - **야간 사이클 (Night Cycle):** 익일 결제를 위한 인도 사전 배치
+  - **주간 사이클 (Day Cycle):** 영업시간 중 실시간 인도 처리 및 지속적 순결제 재산출
+- **장 마감 순결제:** 순자금 의무는 연방준비제도의 NSS (National Settlement Service) 또는 DTC의 결제은행을 통해 결제된다.
+
+**NSCC/CNS 결제:**
+- CNS는 증권별·참가자별 순인도 의무를 산출한다.
+- 순매수 포지션은 DTC에 있는 NSCC 계좌에서 증권을 수령한다.
+- 순매도 포지션은 DTC에 있는 NSCC 계좌로 증권을 인도한다.
+- 자금 결제는 차감되어 DTC의 장 마감 처리를 통해 결제된다.
+
+**FICC-GSD 결제:**
+- 순결제 의무는 Fedwire Securities Service (연방준비 적격 증권) 또는 DTC (DTC 적격 증권)를 통해 인도된다.
+
+### 4.3 결제완결성 (Settlement Finality)
+
+**법적 근거:**
+- 뉴욕주 계약법, 뉴욕주 통일상법전(UCC) 제8조 및 제9조, 1934년 증권거래소법(Securities Exchange Act of 1934).
+- 도산 시 보호 법률: 연방예금보험법(FDIA), 연방예금보험공사개선법(FDICIA), 미국 파산법(Bankruptcy Code), 증권투자자보호법(SIPA), 도드-프랭크법 Title II.
+
+**완결 시점:**
+- **DTC 증권 이전:** 이전이 DTC의 리스크 통제를 통과하고 인도참가자의 계좌에서 증권이 차감된 시점에 인도자 측에 대해 최종적이고 철회 불가능하다 (장중 인도에 대한 장중 완결).
+- **DTC 자금 결제:** 순자금 결제는 연방준비 NSS를 통해 장 마감 시 완료되면 최종적이다.
+- **NSS 자금 이체:** 실행 즉시 최종적.
+- **NSCC:** DTC의 결제 시스템을 통해 의무가 이행되면 결제완결성이 달성된다.
+- **FICC-GSD:** Fedwire 인도 또는 DTC 장부대체 이전 완료 시 국채에 대한 결제완결성이 달성된다.
+
+**철회 불가성:**
+- 증권 이전이 DTC 리스크 관리 통제를 통과하여 완료되면 일방적으로 철회할 수 없다.
+
+*출처: DTC Disclosure Framework ([dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/DTC_Disclosure_Framework.pdf)); DTC Settlement Service Guide; IMF FSAP Assessment ([imf.org](https://www.imf.org/external/pubs/ft/scr/2010/cr10128.pdf)); NSCC Disclosure Framework*
+
+### 4.4 CSD / 결제 인프라 (CSD / Settlement Infrastructure)
+
+**CSD로서의 DTC:**
+- DTC는 미국 증권시장의 **유일한 중앙예탁기관(CSD)**으로서 자연독점적 지위를 보유한다.
+- **부동화 모델(Immobilization Model):** 실물 증권이 DTC(또는 DTC의 명의인 Cede & Co.)에 예탁되고 소유권은 장부대체로 이전된다.
+- **무권화(Dematerialization):** 점차 증권이 장부대체 전용(book-entry-only) 형태로 발행되고 있다.
+- 증권 계좌: DTC는 각 참가자에 대한 증권 계좌를 유지한다.
+- **자금 결제:** 장 마감 순결제에는 주로 연방준비의 **NSS (National Settlement Service)**(중앙은행 화폐)를 사용한다. 일부 거래에는 상업은행 결제도 사용한다.
+
+**등록 명의인:**
+- DTC의 명의인 **Cede & Co.**가 DTC에 예탁된 증권의 등록 보유자이다.
+- 실질 소유권은 DTC 참가자 계좌 및 그 고객 기록을 통해 추적된다.
+
+### 4.5 CSD 연계 (CSD Linkages)
+
+| 연계 기관 | 연계 유형 | 상품 / 목적 |
+|-----------|-----------|-------------|
+| 연방준비 (Fedwire Securities Service) | 직접 연계 | 미국 국채; 연방준비 적격 증권의 이전 및 결제 |
+| Euroclear Bank | 운영 연계 | 해외 투자자의 미국 증권 국제결제 |
+| Clearstream Banking | 운영 연계 | 해외 투자자의 미국 증권 국제결제 |
+| CDS Clearing (캐나다) | 국제 연계 | 캐나다/미국 국제결제 |
+
+*참고: DTC는 유럽식 CCP 상호운용성 연계(interoperability link)는 갖추고 있지 않으나, 국제결제를 위한 운영적 연결을 유지한다.*
+
+### 4.6 대차거래 (Securities Lending & Borrowing)
+
+- **시설 유무:** 있음
+- **SL&B (Stock Loan/Borrow) 프로그램:** NSCC는 CNS 시스템 내에서 자동 대주 프로그램을 운영한다.
+  - 회원에게 인도불이행(fail-to-deliver) 의무가 발생하면, CNS 시스템이 결제를 촉진하기 위해 대여 가능 포지션을 보유한 회원으로부터 자동으로 증권을 차입할 수 있다.
+  - 대주 프로그램은 대여 의향이 있는 참가자로부터 증권을 조달하여 CNS 결제불이행을 감소시킨다.
+- **DTC 대여 서비스:** DTC는 참가자 간 상대 대차거래를 위한 장부대체 이전 인프라를 제공한다.
+
+*출처: CNS 개요 ([dtcclearning.com](https://dtcclearning.com/products-and-services/equities-clearing/cns.html)); DTC Disclosure Framework*
+
+---
+
+## 5. 기술 및 인프라 (Technology & Infrastructure)
+
+| 항목 | 내용 |
+|------|------|
+| 시스템 명칭 | **CNS** (Continuous Net Settlement -- NSCC 핵심); **Settlement** (DTC 결제 플랫폼); **RTTM** (Real-Time Trade Matching -- FICC); **SMART/Track** (메시징 허브); **Settlement Web** (DTC 주요 사용자 인터페이스); **Inventory Management System** (DTC 인도 순서 관리); **Clearing Fund Management** (실시간 담보 관리 포털) |
+| 아키텍처 | 독자적 메인프레임 기반 핵심 시스템; 분산 시스템 및 클라우드 기반 서비스로 점진적 보완; DLT 기반 플랫폼 병렬 운영 (Project Ion) |
+| 처리 능력 | NSCC: 일일 최대 5.55조 USD 처리 (2025년 4월). FICC-GSD: 일일 최대 13.2조 USD (2025년 12월). Omgeo/ITP: 42개국에서 일일 100만 건 이상. Project Ion: 병렬 운영 환경에서 일일 100,000건 이상 DLT 기반 거래. |
+| STP 비율 | 높음 (구체적 비율 비공개). T+1 전환 시 오후 9시(ET)까지 95% 당일확인(same-day affirmation) 비율 달성 요구, 이를 충족하였다. |
+| 주요 인터페이스 | SMART 네트워크, MQ, SWIFT, ISO 20022 (기업 이벤트), FIX (거래 캡처), 독자 API |
+
+### 5.1 인터페이스 프로토콜 (Interface Protocols)
+
+| 프로토콜 | 용도 |
+|----------|------|
+| **SWIFT (FIN/ISO 15022)** | 국제결제 메시징, 수탁 통지 |
+| **ISO 20022** | 기업 이벤트 메시징 (DTC는 2025년 11월 SR2025 버전으로 전환); 배당, 조직재편, 권리 관련 |
+| **FIX 프로토콜** | 거래 제출 및 비교, 실시간 거래 매칭 (FICC RTTM) |
+| **SMART Network** | DTCC 독자 전용 통신 네트워크. 참가자와 DTCC 시스템 간 대용량 메시지 전송. 건별 수수료 없음 (회선 기반) |
+| **MQ Series** | 배치 및 실시간 데이터 교환을 위한 메시지 큐잉 |
+| **웹 기반 포털** | Settlement Web, Clearing Fund Management, 참가자 보고서 |
+| **API (RESTful)** | 디지털 자산 서비스 및 현대적 통합을 위한 신규 API 연결 |
+
+### 5.2 복원력 (Resilience)
+
+- **DR 사이트:** 지리적으로 분리된 다수의 데이터 센터. DTCC는 전 세계 20개 이상 지역에서 운영.
+- **RTO / RPO:** SIFMU로서 DTCC는 SEC Rule 17Ad-22(e)(17)에 따라 높은 수준의 보안, 복원력, 운영 신뢰성 및 적절한 확장 가능 용량을 갖춘 시스템을 유지해야 한다. 구체적 RTO/RPO 목표는 비공개이나, 2시간 복구에 대한 규제 기대를 충족해야 한다. [구체적 RTO/RPO 값 미확인]
+- **업무연속성계획(BCP):** 사이트 장애, 사이버 사고, 팬데믹, 자연재해 시나리오를 포함하는 포괄적 BCP를 유지·정기 점검.
+- **가동률:** 핵심 청산·결제 시스템은 매우 높은 가용성을 유지하나, 구체적 SLA 비율은 비공개.
+- **사이버 복원력:** DTCC는 업계 전반의 사이버 복원력 훈련에 참여하며, SIFMU에 요구되는 광범위한 사이버 보안 통제를 유지.
+- **참가자 시스템 장애:** 2025년 11월, SEC가 참가자 시스템 장애 관리에 관한 DTC/FICC/NSCC 규칙 변경을 승인 (SR-DTC-2025-006, SR-FICC-2025-006, SR-NSCC-2025-006).
+
+*출처: SEC Rule 17Ad-22(e)(17); DTCC Disclosure Frameworks; Federal Register 2025-20384 ([federalregister.gov](https://www.federalregister.gov/documents/2025/11/20/2025-20384))*
+
+---
+
+## 6. 규제 체계 (Regulatory Framework)
+
+### 6.1 감독 당국 (Supervising Authority)
+
+- **주요:** SEC (미국 증권거래위원회) -- 도드-프랭크법 Title VIII에 따른 DTC, NSCC, FICC 감독기관
+- **보조:** 연방준비제도이사회 -- Title VIII에 따른 SIFMU 감독 권한; 예비 집행 권한
+- **추가:** CFTC (DTCC의 스왑 데이터 저장소 운영 관련); FDIC (Title II에 따른 잠재적 정리 역할)
+
+### 6.2 주요 규제 (Key Regulations)
+
+| 규제 | 설명 | DTCC에 대한 영향 |
+|------|------|-----------------|
+| **도드-프랭크법 Title VIII** (2010년) | DTC, NSCC, FICC를 SIFMU로 지정; SEC 및 연방준비의 강화된 감독 체계 수립 | 리스크 관리, 지배구조, 보고 요건 강화 |
+| **SEC Rule 17Ad-22** (2012년 원안; 2016년 강화) | 등록 청산기관에 대한 기준 | Rule 17Ad-22(e) -- DTC, NSCC, FICC를 포함한 대상 청산기관에 대한 강화 기준. 리스크 관리, 지배구조, 회복 계획 등 |
+| **SEC Rule 17ad-26** (2024년) | 회복 및 청산 정리 계획 요건 | DTC/NSCC/FICC는 R&W 계획 개정 필요; 준수 기한 2025년 12월 15일 |
+| **SEC Rule -- 국채 청산 의무화** (2023년 12월/2024년 채택) | 미국 국채 현물 및 레포 거래의 중앙청산 확대 의무화 | FICC-GSD는 접근성 확대 필요; 준수 기한: 현물 2026년 12월 31일, 레포 2027년 6월 30일 |
+| **1934년 증권거래소법 (Securities Exchange Act of 1934)** | 청산기관 등록 및 규제 | DTC, NSCC, FICC는 Section 17A에 따라 청산기관으로 등록 |
+| **FDICIA** (1991년) | 연방예금보험공사개선법 | 청산기관 거래에 대한 차감 보호 제공 |
+| **Basel III / CRR** | CCP 익스포저에 대한 은행 자본 요건 | DTCC CCP들의 적격중앙청산소(QCCP) 지위가 은행 회원의 자본 부과에 영향 |
+
+### 6.3 PFMI 준수 (PFMI Compliance)
+
+- **최근 PFMI 공시 프레임워크 갱신:**
+  - NSCC: 2025년 Q1 (DTCC 웹사이트 공개)
+  - FICC: 최신본 DTCC 웹사이트에서 확인 가능
+  - DTC: 2024년 Q1 갱신본 공개
+- **형식:** 각 자회사가 24개 PFMI 원칙 및 5개 핵심 고려사항 전체를 다루는 별도 공시 프레임워크를 발행한다.
+- **주요 결과:** 일반적으로 PFMI 원칙을 대체로 준수(broadly observant)하는 것으로 평가된다. 사이버 복원력, 회복 계획, 지배구조 투명성이 지속적 관심 분야이다.
+- **IMF FSAP 평가:** DTC/NSCC/FICC에 대한 미국 FSAP 평가가 2010년에 공표되었다 (가장 최근의 포괄적 국제 평가).
+
+### 6.4 보고 요건 (Reporting Requirements)
+
+- **거래 보고:** DTCC는 도드-프랭크법 Title VII에 따른 OTC 파생상품 거래 보고를 위해 DTCC Data Repository (DDR)를 운영한다.
+- **포지션 보고:** 회원은 증거금 산출의 일부로 포지션 데이터를 제출하며, DTCC는 필요에 따라 감독기관에 보고한다.
+- **CPMI-IOSCO 공적정량공시(PQD):** NSCC와 FICC에 대해 분기별로 공동 발행. 개시증거금, 공동기금, 신용리스크, 유동성리스크, 운영 지표를 다룬다. 열람: [dtcc.com/legal/policy-and-compliance](https://www.dtcc.com/legal/policy-and-compliance)
+- **재무제표:** DTC, NSCC, FICC 및 DTCC 연결 기준으로 분기 및 연간 공개.
+- **SEC 보고:** 중요 규칙 변경에 대한 SR 제출(rule filings) 및 사전통지(advance notices).
+
+*출처: Federal Reserve SIFMU designation page ([federalreserve.gov](https://www.federalreserve.gov/paymentsystems/designated_fmu_about.htm)); Dodd-Frank Title VIII ([law.cornell.edu](https://www.law.cornell.edu/wex/dodd-frank_title_VIII)); SEC Rule 17Ad-22 ([sec.gov](https://www.sec.gov/files/rules/final/2016/34-78961.pdf)); SEC Treasury clearing rule ([federalregister.gov](https://www.federalregister.gov/documents/2024/01/16/2023-27860))*
+
+---
+
+## 7. 상호운용성 (Interoperability)
+
+### 7.1 CCP 상호운용성 약정 (CCP Interoperability Arrangements)
+
+DTCC의 CCP(NSCC 및 FICC)는 유럽 모델과 같은 공식적 CCP 상호운용성 연계(두 CCP가 동일 상품을 상호운용하여 청산하는 방식)를 갖추고 있지 않다. 대신 DTCC는 다음과 같은 약정을 통해 운영한다:
+
+| 약정 | 상대방 | 상품 | 설명 |
+|------|--------|------|------|
+| **상호보증 협약 (Cross-Guaranty Agreement)** | NSCC, FICC, DTC 간 | 이들 기관이 청산하는 모든 상품 | 회원이 여러 DTCC 자회사에서 동시에 부도하면, 한 자회사의 초과 담보를 다른 자회사의 부족분 충당에 사용 가능 |
+| **상호보증 협약** | OCC (옵션청산공사) | 주식 옵션 및 기초 주식 | NSCC와 OCC 양쪽에서 청산하는 회원의 부도관리 조율 |
+| **교차증거금 협약 (Cross-Margining Agreement)** | CME Clearing | 미국 국채 선물 및 현물 국채 | 적격 회원이 FICC-GSD 포지션과 CME 국채 선물 간 증거금 상계를 받을 수 있음 |
+
+### 7.2 국제 약정 (Cross-border Arrangements)
+
+| 상대방 / 약정 | 설명 |
+|---------------|------|
+| **Euroclear / Clearstream** | DTC는 해외 투자자의 미국 증권 보유를 위한 국제결제 운영 연계를 유지 |
+| **CLS Group** | DTCC는 외환 결제 관련 활동을 위해 CLS에 참여 |
+| **SWIFT** | DTCC는 국제 메시징을 위해 SWIFT에 적극 참여 |
+| **JSCC (일본)** | 디지털 자산 담보 관리에 대한 협력 작업 (2024년 사례 연구) |
+| **Canton Network** | DTCC가 Euroclear와 함께 Canton Foundation의 공동 의장으로 참여; 국제 토큰화 인프라 |
+| **국제 규제 인정** | FICC는 EU (유럽시장인프라규정(EMIR) 동등성 평가), 영국, 캐나다 (온타리오증권위원회 면제), 아시아태평양 관할권 등 다수 국가에서 인정/면제 |
+| **DTCC Global Trade Repository** | 도드-프랭크법 Title VII에 따른 OTC 파생상품 보고를 위해 미국, EU, 싱가포르, 호주, 일본 등 다수 관할권에서 운영하는 거래정보저장소 |
+
+*참고: 일부 유럽 CCP(예: LCH, EuroCCP, SIX x-clear)와 달리, DTCC CCP는 동일 거래 상품에 대한 다자간 CCP 상호운용성에 참여하지 않으며, 이는 미국 거래 후 인프라의 집중적 특성을 반영한다.*
+
+*출처: SIFMA Insights Spotlight DTCC; DTCC case study with JSCC ([dtcc.com](https://www.dtcc.com/-/media/WhitePapers/Transforming-Collateral-Management-With-Digital-Assets-JSCC.pdf)); Ontario Securities Commission FICC recognition ([osc.ca](https://www.osc.ca/en/securities-law/orders-rulings-decisions/fixed-income-clearing-corporation-ss-144-147))*
+
+---
+
+## 8. 수수료 (Fees)
+
+### 8.1 청산 수수료 (Clearing Fees)
+
+#### NSCC 수수료 (NSCC Fee Schedule / Addendum A 기준)
+
+| 서비스 | 수수료 구조 | 요율 |
+|--------|-------------|------|
+| 거래 기록 (비교) | 건당 (per side) | 제출 방법에 따라 상이 |
+| CNS 수령/인도 | 건당 | 인도당 0.21 USD (CNS/ACATS 인도 수수료, 2025년 0.17 USD에서 인상) |
+| 청산 / 차감 | 차감 포지션당 | 수수료표 기준 |
+| Fund/SERV | 건당 | 거래 유형에 따라 상이 |
+| ACATS (계좌 이전) | 이전당 | 이전당 수수료 |
+| 청산기금 유지 | 현금 예치에 대해 | 기금 관리에 포함 |
+
+#### FICC-GSD 수수료
+
+| 서비스 | 수수료 구조 | 요율 |
+|--------|-------------|------|
+| 거래 비교 | 비교 거래당 | 핵심 서비스 수수료 |
+| 차감 | 차감 의무당 | 핵심 서비스 수수료 |
+| Sponsored GC 거래 | 거래당 | 핵심 및 고급 서비스 수수료 (2026년 1월 1일 시행) |
+| ACS Triparty 거래 | 거래당 | 핵심 서비스 수수료 (2026년 1월 5일 시행) |
+| 청산기금 유지 | 현금 예치에 대해 | 평균 현금 예치 잔액의 연 0.25% (월별) |
+| Sponsored GC CIL 거래 | 거래당 | 핵심 및 고급 서비스 수수료 (2025년 12월 16일 시행) |
+
+#### DTC 수수료
+
+| 서비스 | 수수료 구조 | 요율 |
+|--------|-------------|------|
+| 장부대체 인도 | 인도당 | 건당 수수료 |
+| 예탁 / 인출 | 증서당 | 건당 수수료 |
+| 수탁 (수탁/자산 서비스) | 포지션당, 월별 | 금액 기준 단계별 |
+| 기업 이벤트 | 처리 이벤트당 | 이벤트 유형에 따라 상이 |
+| 조직재편 | 지시당 | 수수료표 기준 |
+
+### 8.2 회원 수수료 (Membership Fees)
+
+- **NSCC:** 1회 가입 신청 수수료; 청산기금 유지 및 거래 기반 수수료를 통한 지속적 비용.
+- **FICC-GSD:** 가입 신청 수수료; 최소 청산기금 예치금 1,000,000 USD; 현금 예치에 대한 연 0.25% 유지 수수료 (월별 부과).
+- **DTC:** 참가자 가입 신청 수수료; 최소 참가자기금 예치금 10,000 USD (활동 기반 추가 금액); 지속적 수탁 및 거래 수수료.
+
+*참고: 상세 수수료표는 매년 공개되며 [dtcc.com/legal/fee-guides](https://www.dtcc.com/edl-fees)에서 확인 가능하다. 중요 변경 시 SEC 검토 및 승인을 받는다.*
+
+*출처: NSCC Fee Schedule guide ([dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/fee-guides/nsccfeeguide.pdf)); DTC Fee Schedule ([dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/fee-guides/DTC-Fee-Schedule.pdf)); FICC GSD Fee Schedule ([dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/Clearing-Services/FICC/GOV/FICC-GOVfeeschedule.pdf)); Federal Register 2024-30520 (FICC maintenance fee); Federal Register 2024-30351 (DTC settlement fees)*
+
+---
+
+## 9. 최근 동향 (Recent Developments)
+
+### 시스템 업그레이드 (최근 5년) (System Upgrades)
+
+- **2022년:** Project Ion DLT 기반 상대 결제 플랫폼이 병렬 운영 환경에서 가동. 분산원장기술(DLT)을 활용하여 일일 100,000건 이상의 주식 거래를 처리.
+- **2023년:** NSCC가 장중 변동성 차지(Intraday Volatility Charge) 도입 (장중 사후검증 차지 대체) 및 갭 리스크 측정치·VaR Charge 계산 강화 (SR-NSCC-2023-003, SR-NSCC-2023-013).
+- **2023년:** DTCC가 Securrency 인수, DTCC Digital Assets로 리브랜딩. 기관급 디지털 자산 인프라 확보.
+- **2024년 (5월 28일):** 주식, 회사채, 지방채, UIT에 대한 **T+1 결제주기** 성공적 전환. 결과:
+  - 확인(affirmation) 비율: 73% (2024년 1월)에서 오후 9시(ET) 마감 기준 약 95%로 개선
+  - CNS 결제불이행 비율: 2.12% (2024년 7월), 기존 T+2 수준과 유사
+  - NSCC 청산기금 약 30억 USD (23%) 감소, 브로커-딜러에 연간 약 7,500억 USD의 자본 여력 확보
+- **2025년 (4월):** DTCC가 AppChain (Hyperledger Besu 기반) 토큰화 담보 관리 플랫폼 공개.
+- **2025년 (11월):** ISO 20022 기업 이벤트 메시징을 SR2025 버전으로 전환.
+- **2025년 (11월):** SEC가 참가자 시스템 장애 관리에 관한 DTC/FICC/NSCC 규칙 변경 승인.
+
+### 신규 서비스 (New Services)
+
+- **FICC ACS Triparty 서비스:** SEC 승인; 2025년 12월 에이전트 청산 프레임워크를 통한 청산 대상 삼자간 레포(triparty repo) 출시.
+- **FICC Sponsored GC CIL (Collateral-in-Lieu) 서비스:** Sponsored General Collateral 내 신규 서비스.
+- **FICC SFT (Securities Financing Transaction) 청산 서비스:** 국채 청산 의무화에 대비하여 FICC의 레포 청산 역량을 확대하는 제안.
+- **DTC 토큰화 서비스:** SEC No-Action Letter (2025년 12월)로 DTC가 승인된 블록체인 (Canton Network)에서 DTC 수탁 자산의 토큰화를 제공할 수 있도록 허가. 미국 최초로 공개/비공개 허가형 블록체인에서 증권 수익권(security entitlements)을 토큰화하는 CSD.
+- **DTCC Digital Launchpad:** 시장 참가자 및 기술 제공업체와 디지털 자산 솔루션을 테스트·공동 개발하는 협력 생태계.
+- **DTCC Digital Assets Solutions:** SEC 허가에 따라 2026년 출범한 신규 사업부문. DTCC ComposerX, LaunchPad, Collateral AppChain 기반.
+- **Fnality 통합:** Fnality International의 디지털 결제 인프라가 원자적 결제(atomic settlement) 및 실시간 결제를 위해 DTCC Digital Launchpad에 통합.
+
+### 규제 변화 (Regulatory Changes)
+
+- **SEC Rule 17ad-26 (회복 및 청산 정리):** DTC/NSCC/FICC가 R&W 계획 개정; 준수 기한 2025년 12월 15일; SEC가 2025년 6월 승인.
+- **국채 청산 의무화:** SEC가 미국 국채 현물 거래 (준수 기한: 2026년 12월 31일) 및 레포 거래 (준수 기한: 2027년 6월 30일)의 중앙청산 확대를 의무화하는 규칙 채택. FICC-GSD가 주요 CCP이며, CME Securities Clearing Inc.가 제2 CCP로 승인.
+- **FICC GSD 최소 증거금:** SEC가 GSD 포지션에 대한 FICC의 최소 증거금 하한 도입 승인 (2024년 11월).
+- **FICC 변동성 이벤트 차지:** SEC가 변동성 고조 시기를 다루기 위한 GSD 신규 차지 승인 (2025년 4월).
+- **NSCC 장중 증거금 강화:** 장중 증거금 징수 강화를 위한 규칙 변경 제안 (2025년 4월), Amendment No. 1을 SEC가 2025년 6월 승인.
+- **NSCC CNS 결제불이행 차지 개정:** NSCC 규칙 내 CNS Fails Charge 개정을 위한 규칙 변경 제안 (2025년 9월).
+
+### 전략적 이니셔티브 (Strategic Initiatives)
+
+- **국채 청산 확대:** 최우선 전략 과제. SEC의 국채 청산 의무화에 대비하여 FICC-GSD 인프라 및 회원 접근 모델을 준비 중. FICC는 예상 거래량 증가에 대응하기 위해 Sponsored Member 접근, ACS (Agent Clearing Service), 삼자간 레포 청산을 확대하고 있다.
+- **디지털 자산 전략:** Canton Network에서의 DTC 수탁 자산 토큰화, 업계 협력을 위한 Digital Launchpad, ComposerX 플랫폼 등 다각적 접근. DTCC가 Euroclear와 함께 Canton Foundation 공동 의장으로 참여.
+- **클라우드 이전:** 핵심 결제 시스템의 메인프레임 신뢰성을 유지하면서 클라우드 기반 서비스로 인프라를 현대화하는 지속적 이니셔티브.
+- **글로벌 T+1 리더십:** DTCC가 미국 T+1 전환 경험을 공유하고 글로벌 결제 단축을 지원하기 위해 국제 시장(EU, 영국, 아시아태평양)과 적극적으로 협력 중.
+- **ISO 20022 도입:** 기업 이벤트 및 기타 서비스 분야에서 ISO 20022 메시징 표준으로의 지속적 전환.
+
+*출처: DTCC 2024 Annual Report; SIFMA/ICI/DTCC T+1 After Action Report ([sifma.org](https://www.sifma.org/resources/guides-playbooks/t1-after-action-report)); DTCC 보도자료 ([dtcc.com/news](https://www.dtcc.com/news)); SEC FICC rule filings; CoinDesk ([coindesk.com](https://www.coindesk.com/business/2025/12/17/wall-street-giant-dtcc-picks-privacy-focused-blockchain-canton-network-for-tokenization)); SEC Treasury Clearing Implementation page ([sec.gov](https://www.sec.gov/featured-topics/treasury-clearing-implementation))*
+
+---
+
+## KRX/KSD (한국)와의 비교 (Comparison with KRX/KSD)
+
+| 항목 | DTCC (DTC/NSCC/FICC) | KRX/KSD (한국) |
+|------|----------------------|----------------|
+| 구조 | 별도의 CSD (DTC)와 CCP (NSCC, FICC)를 갖춘 지주회사 | KRX가 CCP 역할, KSD가 CSD 역할 -- 별도 기관 |
+| 소유구조 | 이용자 소유 (업계 유틸리티) | KRX: 주식회사화된 거래소; KSD: 금융기관 공동 출자 |
+| CCP 범위 | NSCC (주식), FICC (채권) | KRX CCP는 주식, 파생상품, 채권을 포괄 |
+| 결제주기 | T+1 (2024년 5월부터) | 주식 T+2 |
+| CSD | DTC -- 미국 독점 CSD | KSD -- 한국 유일의 CSD |
+| SIFMU 지정 | 예 (도드-프랭크법 Title VIII) | 해당 없음 (상이한 규제 체계) |
+| 수탁자산 | 100조 USD 이상 | 한국 시장 규모에 비례하여 상당히 소규모 |
+
+---
+
+## 출처 (Sources)
+
+1. DTCC 2024 Annual Report -- [dtcc.com/annuals/2024](https://www.dtcc.com/annuals/2024)
+2. DTCC Wikipedia -- [en.wikipedia.org/wiki/Depository_Trust_&_Clearing_Corporation](https://en.wikipedia.org/wiki/Depository_Trust_%26_Clearing_Corporation)
+3. NSCC Disclosure Framework (PFMI) -- [dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/NSCC_Disclosure_Framework.pdf)
+4. FICC Disclosure Framework (PFMI) -- [dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/FICC_Disclosure_Framework.p)
+5. DTC Disclosure Framework (PFMI) -- [dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/DTC_Disclosure_Framework.pdf)
+6. CPMI-IOSCO Public Quantitative Disclosures Q4 2024 -- [dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/CPMI-IOSCO-Public-Quantitative-Disclosures---Q4-2024.pdf)
+7. CPMI-IOSCO Public Quantitative Disclosures Q3 2025 -- [dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/CPMI-IOSCO-Public-Quantitative-Disclosures---Q3-2025.pdf)
+8. GSD Clearing Fund Methodology Overview (Jan 2024) -- [dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/GSD-Clearing-Fund-Methodology-Overview-January-2024.pdf)
+9. NSCC Rules & Procedures -- [dtcc.com](https://www.dtcc.com/~/media/files/downloads/legal/rules/nscc_rules.pdf)
+10. NSCC Financial Statements Annual 2024 -- [dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/financials/2024/NSCC-Financial-Statements-Annual-2024.pdf)
+11. FICC Financial Statements Annual 2024 -- [dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/financials/2024/FICC-Financial-Statements-Annual-2024.pdf)
+12. SIFMA Insights: Spotlight DTCC -- [sifma.org](https://www.sifma.org/research/insights/sifma-insights-spotlight-dtcc)
+13. SIFMA/ICI/DTCC T+1 After Action Report (Sep 2024) -- [sifma.org](https://www.sifma.org/resources/guides-playbooks/t1-after-action-report)
+14. SEC Rule 17Ad-22 (Standards for Covered Clearing Agencies) -- [sec.gov](https://www.sec.gov/files/rules/final/2016/34-78961.pdf)
+15. Federal Reserve: Designated FMUs -- [federalreserve.gov](https://www.federalreserve.gov/paymentsystems/designated_fmu_about.htm)
+16. Dodd-Frank Title VIII (Payment, Clearing, and Settlement) -- [law.cornell.edu](https://www.law.cornell.edu/wex/dodd-frank_title_VIII)
+17. SEC Treasury Clearing Implementation -- [sec.gov](https://www.sec.gov/featured-topics/treasury-clearing-implementation)
+18. Federal Register: R&W Plan Amendments (2025-10877) -- [federalregister.gov](https://www.federalregister.gov/documents/2025/06/16/2025-10877)
+19. NSCC Fee Schedule Guide -- [dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/fee-guides/nsccfeeguide.pdf)
+20. DTC Fee Schedule Guide -- [dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/legal/fee-guides/DTC-Fee-Schedule.pdf)
+21. FICC GSD Fee Schedule -- [dtcc.com](https://www.dtcc.com/-/media/Files/Downloads/Clearing-Services/FICC/GOV/FICC-GOVfeeschedule.pdf)
+22. DTCC Tokenization / Canton Network (Dec 2025) -- [dtcc.com/news](https://www.dtcc.com/news/2025/december/17/dtcc-and-digital-asset-partner-to-tokenize-dtc-custodied-us-treasury-securities)
+23. IMF FSAP Assessment: DTC (2010) -- [imf.org](https://www.imf.org/external/pubs/ft/scr/2010/cr10128.pdf)
+24. FICC Treasury Clearing FAQ -- [dtcc.com](https://www.dtcc.com/ustclearing)
+25. OFR Working Paper 25-03: CCP Liquidity and Capital -- [financialresearch.gov](https://www.financialresearch.gov/working-papers/files/OFRwp-25-03_the-impact-of-ccp-liquidity-demands-on-clearing-members-under-stress.pdf)

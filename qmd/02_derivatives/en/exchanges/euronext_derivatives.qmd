@@ -1,0 +1,752 @@
+---
+title: "Euronext Derivatives"
+subtitle: "Derivatives > Exchanges"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 2
+> **Domain:** Derivatives
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Euronext N.V. -- Derivatives Markets |
+| Abbreviation | Euronext Derivatives (formerly NYSE Liffe / MONEP / MATIF / AEX-Options / IDEM) |
+| Website | https://www.euronext.com ; https://live.euronext.com/en/products/derivatives |
+| Year Established | 2000 (Euronext formed by merger of Amsterdam, Brussels, Paris exchanges); derivatives heritage dates to MONEP (1987), MATIF (1986), AEX-Optiebeurs (1978), IDEM (1994) |
+| Country / City | Netherlands / Amsterdam (headquarters); derivatives markets operated in Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, Paris |
+| Ownership Structure | Publicly listed company (Euronext N.V., ticker ENX on Euronext Amsterdam and Paris) |
+| Parent Company / Group | Euronext N.V. -- pan-European market infrastructure group encompassing cash equities, fixed income, derivatives, commodities, post-trade (Euronext Clearing, Euronext Securities), technology (Optiq), and data services across 7 European markets |
+| Regulatory Authority | College of Euronext Regulators: AMF (France), AFM (Netherlands), FSMA (Belgium), CMVM (Portugal), CONSOB (Italy), Finanstilsynet (Norway), CBI (Ireland); ESMA for CCP supervision under EMIR |
+| Derivatives ADV (Jan 2025) | 606,267 lots/day (up 5.1% YoY) |
+| Open Interest (Jan 2025) | 23,064,793 contracts (up 4.5% YoY) |
+| Contracts Cleared (Jan 2025) | 13,337,872 contracts (single counted) |
+| Commodity Derivatives ADV (Oct 2025) | 114,307 lots/day |
+| Listed Derivatives Instruments | Equity index futures/options, single stock options/futures, dividend derivatives, commodity futures/options (wheat, rapeseed, corn), fixed income derivatives (BTP, OAT, Bund futures -- launched Sep 2025), ETF options, total return futures |
+| Markets | Amsterdam (AEX), Paris (CAC 40, MATIF commodities), Milan (FTSE MIB, IDEM), Brussels (BEL 20), Lisbon (PSI), Oslo (OBX), Dublin (ISEQ 20) |
+
+[Source: Euronext, "Trading Information", https://www.euronext.com/en/trading]
+[Source: Euronext, "Euronext publishes Q4 and full year 2024 results", February 2025, https://www.euronext.com/en/investor-relations/financial-information/news/euronext-publishes-q4-and-full-year-2024-results]
+[Source: Euronext Clearing, "Statistics", https://www.euronext.com/en/clearing/about/statistics]
+
+### Key Historical Milestones
+
+- **1978**: European Options Exchange (EOE) founded in Amsterdam -- one of Europe's first options exchanges
+- **1986**: MATIF (Marche a Terme International de France) launched in Paris for financial and commodity futures
+- **1987**: MONEP (Marche des Options Negociables de Paris) launched for equity options
+- **1994**: IDEM (Italian Derivatives Market) launched by Borsa Italiana in Milan
+- **2000 (September)**: **Euronext formed** through merger of Paris Bourse, Amsterdam Exchanges, and Brussels Exchanges
+- **2001**: Euronext acquires LIFFE (London International Financial Futures and Options Exchange), forming Euronext.liffe
+- **2002**: Merger with Bolsa de Valores de Lisboa e Porto (BVLP), now Euronext Lisbon
+- **2003**: Cash products integrated onto single NSC platform
+- **2004**: Derivatives products integrated onto LIFFE CONNECT platform
+- **2006**: NYSE Group and Euronext agree to merge, forming NYSE Euronext
+- **2007**: NYSE Euronext officially formed; combined derivatives and cash equities operations
+- **2012**: European Commission blocks proposed Deutsche Borse-NYSE Euronext merger over derivatives monopoly concerns
+- **2013**: Intercontinental Exchange (ICE) acquires NYSE Euronext for USD 11 billion
+- **2014 (June 20)**: Euronext spun off from ICE via IPO; becomes independent publicly listed company on Euronext Amsterdam and Paris
+- **2018 (January)**: MiFID II/MiFIR comes into effect; significant impact on derivatives trading, reporting, and position limits
+- **2018 (June)**: Optiq trading platform goes live for Euronext derivatives markets, replacing legacy LIFFE CONNECT/UTP systems
+- **2018**: Euronext acquires Irish Stock Exchange (now Euronext Dublin)
+- **2019**: Euronext acquires Oslo Bors (now Euronext Oslo)
+- **2021 (April)**: Euronext completes acquisition of Borsa Italiana Group (including IDEM, MTS, CC&G) from LSEG for EUR 4.4 billion
+- **2022 (June)**: Core Data Centre migration from Basildon (UK) to Bergamo (Italy) completed
+- **2023 (November)**: Euronext Clearing expands to cash equity markets (migration from LCH SA)
+- **2024 (April)**: Borsa Italiana derivatives (IDEM) migrated to Optiq trading platform
+- **2024 (July)**: Euronext Clearing expands to commodity derivatives
+- **2024 (September 9)**: Euronext Clearing expands to all Euronext financial derivatives -- migration from LCH SA completed
+- **2025 (February)**: Euronext announces launch of fixed income derivatives (mini cash-settled government bond futures)
+- **2025 (May)**: Launch of mini single stock options on French and Dutch underlyings
+- **2025 (September)**: First phase of fixed income derivatives goes live on Euronext Derivatives Milan (BTP, OAT, Bund, Bono futures)
+- **2026 (March)**: Launch of mini ETF options
+
+[Source: Euronext, "Our Journey", https://www.euronext.com/en/about/our-journey]
+[Source: Wikipedia, "Euronext", https://en.wikipedia.org/wiki/Euronext]
+[Source: Euronext press releases, various dates, https://www.euronext.com/en/about/media/euronext-press-releases]
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+
+| Segment | Key Products | Markets |
+|---------|-------------|---------|
+| **Equity Index Derivatives** | CAC 40, AEX, BEL 20, PSI, OBX, ISEQ 20, FTSE MIB futures and options; mini and micro variants; weekly and daily options; ESG index futures (CAC 40 ESG) | Paris, Amsterdam, Brussels, Lisbon, Oslo, Dublin, Milan |
+| **Single Stock Derivatives** | Options and futures on individual equities listed across Euronext markets; French, Dutch, Belgian, Portuguese, Italian, Norwegian, Irish, German underlyings | All markets |
+| **Dividend Derivatives** | Dividend index futures (CAC 40, AEX, FTSE MIB); single stock dividend futures | Paris, Amsterdam, Milan |
+| **Commodity Derivatives** | Milling Wheat No. 2 (EBM), Rapeseed (ECO), Corn (EMA) futures and options -- physically delivered | Paris (MATIF) |
+| **Fixed Income Derivatives** | Mini cash-settled futures on BTP (Italy 10Y/30Y), OAT (France), Bund (Germany), Bono (Spain) -- launched September 2025 | Milan, Paris |
+| **ETF/ETC Derivatives** | Options on ETFs; mini ETF options (launched March 2026) | Amsterdam, Paris, Milan |
+| **Total Return Futures** | TRF on FTSE MIB, CAC 40, AEX -- replicate economics of OTC Total Return Swaps | Paris, Milan |
+
+[Source: Euronext, "Financial Derivatives trading", https://www.euronext.com/en/for-investors/financial-derivatives]
+[Source: Euronext Live, "Equity derivatives", https://live.euronext.com/en/products/derivatives]
+
+### 2.2 Trading Sessions
+
+Euronext derivatives operate on Central European Time (CET/CEST). Trading hours vary by product group:
+
+| Session / Product | Local Time (CET) | UTC (Winter) | Description |
+|-------------------|-------------------|--------------|-------------|
+| **Equity Index Futures (CAC 40, AEX, etc.)** | 08:00 - 22:00 | 07:00 - 21:00 | Extended hours including US session overlap |
+| **FTSE MIB Futures** | 08:00 - 22:00 | 07:00 - 21:00 | Aligned with other index futures post-Optiq migration |
+| **Equity Options (Single Stock)** | 09:00 - 17:30 | 08:00 - 16:30 | Standard European session |
+| **Equity Index Options** | 09:00 - 17:30 | 08:00 - 16:30 | Some products trade until 18:30 CET [unverified] |
+| **Commodity Futures (Wheat, Rapeseed)** | 10:45 - 18:30 | 09:45 - 17:30 | MATIF commodity session |
+| **Daily/Weekly Options** | 09:00 - 17:30 | 08:00 - 16:30 | Intraday expiration products |
+
+**Notes:**
+- Index futures settlement prices are typically calculated using an averaging method near market close (e.g., CAC 40: arithmetic mean of all index values between 15:40 and 16:00 CET)
+- Trading halts on the underlying equity market trigger corresponding halts in related derivatives
+- Holiday schedules vary by market; Euronext publishes annual holiday calendars per market
+
+[Source: Euronext, "Trading hours & holidays", https://www.euronext.com/en/trading/trading-hours-holidays]
+[Source: Euronext Live, "Derivatives trading hours", https://live.euronext.com/en/media/295]
+
+### 2.3 Tick Sizes
+
+Representative tick sizes for major products:
+
+| Product | Tick Size | Tick Value |
+|---------|-----------|------------|
+| CAC 40 Futures (FCE) | 0.5 index points | EUR 5 |
+| AEX Futures (FTI) | 0.05 index points | EUR 10 |
+| FTSE MIB Futures (FIB) | 5 index points | EUR 25 |
+| FTSE MIB Mini Futures (MIN) | 5 index points | EUR 5 |
+| BEL 20 Futures | 1 index point | [unverified] |
+| CAC 40 Options (PXA) | 0.1 index points | EUR 1 |
+| AEX Options | 0.01 index points | EUR 1 |
+| Single Stock Options | Varies by price range | Varies |
+| Milling Wheat Futures (EBM) | EUR 0.25/tonne | EUR 12.50 |
+
+[Source: Euronext Live, various contract specification pages, https://live.euronext.com/en/resources/contracts-specifications]
+
+### 2.4 Lot Sizes
+
+- **Standard lot size**: 1 contract for all exchange-traded derivatives
+- **Block trade minimum sizes**: Vary by product and are defined in the Euronext Trading Procedures
+- **Commodity contracts**: Milling Wheat = 50 tonnes per contract; Rapeseed = 50 tonnes per contract
+
+### 2.5 Market Maker / Liquidity Provider Programs
+
+Euronext operates liquidity provision programs tailored per market and product class:
+
+- **Primary Market Makers (PMM)**: Continuous two-sided quoting obligations across assigned products; eligible for fee rebates and stipends
+- **Competitive Market Makers (CMM)**: Supplementary liquidity providers with reduced obligations
+- **MiFID II Market Maker Schemes**: Members meeting quoting obligations during Stressed Market Conditions (SMC) receive incentives of EUR 50/month per instrument (80% time threshold), capped at EUR 550/month
+- **Commodity Options LP**: 100% trading fee rebate; top performer receives EUR 5,000 monthly stipend
+- **Power Futures LP**: Trading fee rebate up to 100% and/or monthly stipend up to EUR 10,000
+- **Mass Quote functionality**: Allows market makers to submit batches of two-sided orders across multiple series in a single transaction
+- **Pivot method**: Flexibility to simultaneously adjust volume and spread within 50% limit for continuous quoting and RFQ obligations
+
+[Source: Euronext, "Liquidity provision", https://www.euronext.com/en/trading/membership/liquidity-provision]
+[Source: Euronext, "Market Making Scheme for Derivatives Markets", https://connect2.euronext.com/sites/default/files/documentation/membership/Euronext%20Market%20Making%20Scheme%20for%20Derivatives%20Markets%20-%20Nov19%20(1).pdf]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+Euronext derivatives markets employ the following auction types within the Optiq platform:
+
+- **Opening Auction**: Orders collected during a call phase; indicative prices displayed. Uncrossing occurs at the price maximizing executable volume. Applies to all derivatives products at market open
+- **Closing Auction**: Determines official closing/settlement prices; similar call-and-uncross mechanics
+- **Volatility Interruption (Circuit Breaker Auction)**: Triggered when potential trade price breaches dynamic or static price collars. Trading enters a reservation period (auction call phase) allowing orderly price discovery before resumption
+- **Intraday Auctions**: Scheduled auctions for specific products to provide additional price discovery points [unverified for derivatives -- primarily used in cash equities]
+
+### 3.2 Continuous Trading
+
+- **Central Limit Order Book (CLOB)**: Fully electronic order-driven market for all derivatives products
+- **Continuous matching**: Orders matched throughout the trading session at the best available price
+- **Market makers**: Supplement order book liquidity via continuous quotes; market is order-driven, not quote-driven
+- **Request for Cross (RFC)**: Facility allowing members to cross client orders on-exchange with pre-arranged counterparties, subject to price improvement rules and minimum exposure to the order book
+
+### 3.3 Price Discovery
+
+- Primary price discovery through opening auction and continuous order book
+- **Auction uncrossing**: Maximum executable volume, then minimum surplus, then reference price as tiebreaker
+- **Settlement prices**: For index futures, calculated using averaging methodology near close (e.g., CAC 40: arithmetic mean of all index values between 15:40 and 16:00 CET on expiry day, rounded to two decimal places)
+- **Indicative prices**: Displayed during auction call phases
+
+### 3.4 Order Priority Rules
+
+- **Price-time priority**: Standard priority for all Euronext derivatives products -- best price first, then earliest timestamp at the same price
+- **Market orders** have priority over limit orders at any price level
+- **Visible over hidden**: At the same price, visible quantities take priority over iceberg reserve quantities
+- **Pro-rata allocation**: Not standard on Euronext derivatives; price-time priority is the default matching algorithm [unverified -- specific products may have alternative allocation]
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Market Order** | Executed immediately at the best available price; no price limit specified |
+| **Limit Order** | Specifies maximum buy / minimum sell price; unfilled portion rests in the order book |
+| **Stop Market Order** | Triggered when a specified price is reached; released as a market order |
+| **Stop Limit Order** | Triggered when a specified price is reached; released as a limit order at the specified limit price |
+
+### 4.2 Advanced Order Types
+
+| Order Type | Description |
+|-----------|-------------|
+| **Iceberg Order** | Only a portion of total order volume is visible in the order book |
+| **Market-to-Limit (MTL)** | Market order that, after partial execution, converts remaining quantity to a limit order at the last executed price |
+| **Spread / Strategy Orders** | Calendar spreads, straddles, strangles, and other multi-leg strategies submitted as a single order |
+| **Opening-Auction-Only** | Active only during the opening auction; cancelled if unfilled |
+| **Closing-Auction-Only** | Active only during the closing auction |
+
+### 4.3 Time-in-Force (TIF) Options
+
+| TIF | Description |
+|-----|-------------|
+| **Day** | Valid for the current trading day only |
+| **GTC (Good-Till-Cancelled)** | Remains active until explicitly cancelled |
+| **GTDate (Good-Till-Date)** | Remains active until a specified date |
+| **IOC (Immediate-Or-Cancel)** | Executes immediately as much as possible; unfilled quantity is cancelled |
+| **FOK (Fill-Or-Kill)** | Entire order must be filled immediately or the entire order is cancelled |
+
+### 4.4 Order Modification & Cancellation
+
+- Orders can be modified (price, quantity) or cancelled during appropriate trading phases
+- Price changes or quantity increases result in new time priority
+- Quantity decreases preserve existing time priority
+- Mass cancellation available for all orders in a product or across all products
+- Self-Trade Prevention (STP) functionality available to prevent unintended self-trading
+
+[Source: Trading Technologies, "Euronext Supported Order Types", https://library.tradingtechnologies.com/user-setup/enx-supported-order-types.html]
+[Source: Euronext, "Self-Trade Prevention Functional Overview", https://connect2.euronext.com/sites/default/files/it-documentation/Self-Trade%20Prevention%20Functional%20Overview%20-%20v2.0.pdf]
+
+---
+
+## 5. Trading System Technology -- Optiq
+
+### 5.1 Overview
+
+| Item | Details |
+|------|---------|
+| System Name | Optiq |
+| Developer | Euronext (in-house development) |
+| Architecture | Modular, partition-based architecture with Order Entry Gateway (OEG) and Matching Engine (ME) components |
+| Persistence Layer | Confluent Platform with Apache Kafka |
+| Protocols | SBE (Simple Binary Encoding) and FIX 5.0 for order entry; SBE over UDP/IP for market data |
+| Latency | ~15 microseconds average order roundtrip; ~15 microseconds for market data dissemination |
+| Throughput | 1 million+ messages per second ingestion capacity |
+| Jitter | Minimal standard deviation -- architecture designed for predictable, stable latencies |
+| Asset Coverage | Unified platform for cash equities and all derivatives (financial, commodity, fixed income) |
+
+### 5.2 Architecture
+
+- **Modular service structure**: Flexible, modular design allowing independent scaling of components
+- **Harmonised messaging**: Unified cash and derivatives messaging model on a single platform
+- **Order Entry Gateway (OEG)**: Entry point for order submission; supports SBE and FIX 5.0 protocols
+- **Matching Engine (ME)**: Core matching component processing orders with price-time priority
+- **Market Data Gateway (MDG)**: Disseminates real-time market data via SBE over UDP multicast
+- **Kafka-based persistence**: Confluent Platform/Apache Kafka underpins the persistence layer, providing reliable message streaming and replay capabilities
+
+### 5.3 Platform History
+
+| Date | Milestone |
+|------|-----------|
+| 2016 | Optiq development announced; first newsletter published |
+| 2017 | Optiq goes live for Euronext cash markets (phased rollout) |
+| 2018 (June 25) | Optiq goes live for Euronext derivatives markets (Amsterdam, Brussels, Lisbon, Paris) -- replacing LIFFE CONNECT/UTP |
+| 2023 | Borsa Italiana cash equities migrated to Optiq |
+| 2024 (April 3) | Borsa Italiana derivatives (IDEM) -- third and final phase -- migrated to Optiq |
+| Ongoing | Regular version updates with new features, capacity enhancements, and MiFID II compliance updates |
+
+### 5.4 Performance Highlights
+
+Since going live for derivatives, Optiq has processed more than 14 billion messages and 18.8 million trades. The platform achieved a tenfold reduction in latency compared to the legacy LIFFE CONNECT system and unlimited overall capacity scaling.
+
+### 5.5 Disaster Recovery / Business Continuity
+
+- Primary data center: Aruba Global Cloud Data Centre IT3, Bergamo, Italy (migrated June 2022 from Basildon, UK)
+- Secondary/DR facility: Details not publicly disclosed [unverified]
+- Euronext publishes business continuity procedures and conducts regular DR testing with members
+- The Bergamo data center is entirely powered by renewable energy (solar photovoltaic and hydroelectric)
+
+[Source: Euronext, "Euronext introduces Optiq", https://www.euronext.com/en/about/media/euronext-press-releases/euronext-introduces-optiq-new-technology-platform-powering-cash]
+[Source: Confluent, "Euronext builds high-speed trading platform", https://www.confluent.io/customers/euronext/]
+[Source: Euronext, "Successful roll-out of Euronext Derivatives markets to Optiq", https://www.euronext.com/en/about/media/euronext-press-releases/successful-roll-out-euronext-derivatives-markets-optiq-trading]
+[Source: Euronext, "Data Centre migration completed", https://www.euronext.com/en/news/data-centre-migration]
+
+---
+
+## 6. Market Data
+
+### 6.1 Feed Protocols
+
+| Feed | Protocol | Description |
+|------|----------|-------------|
+| **Optiq MDG (Market Data Gateway)** | SBE over UDP/IP multicast | Primary real-time market data feed; event-based bid/ask/trade/statistical data for cash and derivatives |
+| **Optiq MDG Lite** | SBE over UDP/IP | Lighter-weight market data feed with reduced field set |
+| **FIX 5.0 Drop Copy** | FIX 5.0 | Trade and order execution reports for participants |
+
+### 6.2 Data Levels
+
+- **Level 1 (Top-of-Book)**: Best bid/offer, last trade price, volume, statistics
+- **Level 2 (Full Depth)**: Full order book depth with all price levels and aggregate quantities
+- **Trade Data**: Individual trade reports with timestamps, prices, volumes
+- **Settlement Prices**: Daily and final settlement prices published per contract
+- **Volume & Open Interest**: Daily volume and open interest data per product, available by account type
+
+### 6.3 Data Distribution
+
+- **Direct connectivity**: Via co-location in Bergamo data center or Point of Presence (PoP) network connections
+- **Data vendors**: Distributed through major market data vendors (Bloomberg, Refinitiv/LSEG, ICE Data Services, etc.)
+- **CME Group**: Euronext derivatives data also distributed via CME Group data services
+- **Euronext Data Services**: Historical and real-time data products available through Euronext's own data business
+
+### 6.4 Historical Data
+
+- Tick-by-tick historical data available for purchase
+- Volume and open interest historical reports published monthly ("NextMonth" derivatives statistics reports)
+- Settlement price archives available via Euronext Live website
+
+[Source: Euronext, "Optiq MDG Messages Interface Specification", https://connect.euronext.com/sites/default/files/it-documentation/optiq-mdg-messages-interface-specification-euronext-cash-and-derivatives-markets-external-v636320.pdf]
+[Source: Euronext, "Derivatives Market Data", https://www.euronext.com/en/data/market-data/market-data-products/derivatives-market-data]
+[Source: OnixS, "Euronext Optiq MDG Feed Handler", https://www.onixs.biz/euronext-optiq-market-data-gateway-feed-handler.html]
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership
+
+- **Derivatives Market Membership**: Entities must apply for membership on each specific Euronext derivatives market (Amsterdam, Brussels, Lisbon, Milan, Oslo, Paris)
+- **Cross-market access**: A single membership can provide access to derivatives products across multiple Euronext markets
+- **Membership categories**: Trading Members, Clearing Members (through Euronext Clearing)
+- **Regulatory framework**: Members must be authorized investment firms under MiFID II in their home jurisdiction
+
+### 7.2 Connection Methods
+
+| Method | Description |
+|--------|-------------|
+| **Co-location** | Direct co-location in Euronext's primary data center in Bergamo, Italy; lowest latency access |
+| **Proximity Hosting** | Rack space in the Bergamo data center for customer trading infrastructure |
+| **Points of Presence (PoP)** | Network access points in major financial centers for remote connectivity |
+| **Data Centre Carriers** | Third-party network providers offering direct high-speed connections to Bergamo |
+| **Microwave connectivity** | Available via satellite dishes on the Bergamo data center roof for ultra-low-latency connections |
+
+### 7.3 API Protocols
+
+| Protocol | Use Case |
+|----------|----------|
+| **SBE (Simple Binary Encoding)** | Primary high-performance protocol for order entry and market data; fixed-position, fixed-length fields for ultra-low-latency processing |
+| **FIX 5.0** | Standard FIX protocol for order entry; also used for RiskGuard pre-trade risk management API |
+| **Optiq MDG** | Market data dissemination protocol (SBE-based over UDP multicast) |
+
+### 7.4 Certification & Testing
+
+- Members must pass conformance testing before receiving production access
+- Euronext provides Customer Development Environment (CDE) / External User Acceptance Testing (EUA) environments
+- Certification required separately for SBE and FIX connectivity
+- Regular migration/upgrade testing windows provided before platform releases
+
+[Source: Euronext, "Infrastructure and Connectivity", https://www.euronext.com/en/technology/infrastructure-and-connectivity]
+[Source: Euronext, "Euronext Data Centre", https://www.euronext.com/en/technology/euronext-data-centre]
+[Source: Euronext, "Data Centre Carriers", https://www.euronext.com/en/products-services/data-centre-carriers]
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Trading Safeguards Philosophy
+
+Euronext's approach is to only halt trading under extreme circumstances, relying on a comprehensive set of trading safeguards rather than circuit breakers alone. The philosophy is to detect unusual events and prevent disorderly markets while maximizing continuous trading.
+
+### 8.2 Price Collar Mechanisms
+
+- **Dynamic Collar**: Based on the dynamic reference price (last traded price); defines a permitted price range around the most recent trade. The dynamic reference price updates after each trade
+- **Static Collar**: Based on the static reference price (typically the previous day's closing price or opening auction price); defines a wider permitted price range. The static reference remains fixed unless manually changed by Euronext Market Operations
+- **Reservation Period**: When the potential trade price breaches a collar, trading enters a reservation period (volatility interruption) -- effectively an intraday auction. This gives market participants time to review orders before trading resumes
+- **Trade Price Validation (TPV)**: Additional safeguard layer for derivatives markets; validates trade prices before execution to prevent aberrant trades
+
+### 8.3 Pre-Trade Risk Controls -- Euronext RiskGuard
+
+Euronext RiskGuard is a pre-trade risk management service for derivatives (and cash) markets, available via FIX 5.0 API and web-based GUI:
+
+| Control | Description |
+|---------|-------------|
+| **Order Size Limit** | Maximum number of contracts per order; applies to new orders, revisions, and quotes; orders exceeding the limit are rejected |
+| **Max Order Quantity** | Per-contract limits for buy and/or sell orders, configurable per member or trader group |
+| **Daily Maximum Exposure Position** | Position monitoring with email alerts when limits are approached or breached |
+| **Kill Switch** | Clearing Members can immediately halt all trading activity for a trading firm; all open orders and quotes are pulled; new orders rejected until explicitly reinstated by the Clearing Member |
+| **Self-Trade Prevention (STP)** | Prevents unintended matching of orders from the same member/trader |
+
+**Scope:** RiskGuard controls apply to financial and commodity derivatives markets. Delta-neutral trades, RFCs, and wholesale trades are excluded from certain controls.
+
+[Source: Euronext, "Trading safeguards on the Euronext markets", https://www.euronext.com/en/trading/market-quality/trading-safeguards-euronext-markets]
+[Source: Euronext, "Euronext RiskGuard Service General Overview", February 2019, https://www.euronext.com/sites/default/files/2019-04/euronext_riskguard_service_general_overview_feb_2019_0.pdf]
+[Source: Euronext, "Euronext RiskGuard", https://www.euronext.com/en/trading/trading-services/riskguard]
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 College of Euronext Regulators
+
+Euronext's unique multi-jurisdictional structure is overseen by a **College of Euronext Regulators** established via a Memorandum of Understanding (MoU). The college coordinates supervision across all Euronext markets:
+
+| Regulator | Jurisdiction | Market |
+|-----------|-------------|--------|
+| **AMF** (Autorite des Marches Financiers) | France | Euronext Paris, MATIF |
+| **AFM** (Autoriteit Financiele Markten) | Netherlands | Euronext Amsterdam |
+| **FSMA** (Financial Services and Markets Authority) | Belgium | Euronext Brussels |
+| **CMVM** (Comissao do Mercado de Valores Mobiliarios) | Portugal | Euronext Lisbon |
+| **CONSOB** (Commissione Nazionale per le Societa e la Borsa) | Italy | Euronext Milan / Borsa Italiana |
+| **Finanstilsynet** | Norway | Euronext Oslo / Oslo Bors |
+| **CBI** (Central Bank of Ireland) | Ireland | Euronext Dublin |
+
+### 9.2 Key Regulations
+
+- **MiFID II / MiFIR**: Euronext derivatives markets are Regulated Markets under MiFID II. Key implications include:
+  - Pre- and post-trade transparency requirements for derivatives
+  - Position limits on commodity derivatives (set by national competent authorities with ESMA coordination)
+  - Transaction reporting obligations
+  - Algorithmic trading requirements (including market-making obligations during stressed conditions)
+  - Best execution obligations
+- **EMIR (European Market Infrastructure Regulation)**: Governs CCP supervision (Euronext Clearing supervised by CONSOB with ESMA coordination); mandates central clearing for certain OTC derivatives classes
+- **MAR (Market Abuse Regulation)**: Prohibits insider trading and market manipulation; Euronext operates market surveillance systems
+- **Benchmark Regulation (BMR)**: Applies to indices used as derivatives underlyings
+
+### 9.3 Surveillance & Reporting
+
+- Euronext operates real-time market surveillance across all markets
+- Transaction reporting to national competent authorities via Euronext ARM (Approved Reporting Mechanism) service
+- Trade reporting for MiFID II post-trade transparency via Euronext APA (Approved Publication Arrangement)
+- Suspicious transaction and order reports (STORs) submitted to regulators
+
+### 9.4 Cross-Border Coordination
+
+- The College of Regulators ensures consistent rule application across Euronext's seven markets
+- Euronext Rule Book (Harmonised Rules) applies uniformly; supplemented by market-specific rules for each national market
+- Single operational framework across markets facilitates cross-border trading and clearing
+
+[Source: Euronext, "Regulation", https://www.euronext.com/en/regulation]
+[Source: Euronext, "Regulatory bodies", https://www.euronext.com/en/trade/join-euronext/regulatory-framework]
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+
+Euronext publishes a detailed "Trading Fee Guide for Derivatives Market Members" (updated regularly; most recent effective March 1, 2026). Key fee structure:
+
+- **Per-contract trading fees**: Charged per lot executed; rates vary by product group (index futures/options, single stock options, commodity futures/options)
+- **Market maker rebates**: Reduced fees or rebates for members fulfilling market-making obligations
+- **Wholesale trade fees**: Separate fee schedules for TCS (Trade Confirmation System) and RFC (Request for Cross) trades
+- **Membership fees**: Annual membership fee; pro-rated fee of EUR 10,125 for members joining during the year (2026 rate)
+
+[Source: Euronext, "Trading fees and charges", https://www.euronext.com/en/trading/fees-charges]
+[Source: Euronext, "Derivatives Markets Trading Fee Guide effective 01 March 2026", https://www.euronext.com/sites/default/files/2026-02/euronext_derivatives_markets_trading_fee_guide_effective_01mar2026.pdf]
+
+### 10.2 Clearing Fees
+
+- Euronext Clearing charges per-contract clearing fees (separate from trading fees)
+- Clearing revenue was EUR 144.3 million in 2024 (up 19.0% YoY), reflecting the expansion of Euronext Clearing to derivatives
+- Fee structure includes initial margin interest, default fund contributions, and clearing service fees
+
+### 10.3 Market Data Fees
+
+- **Direct Access fees**: Apply per contracting party per information product; waived for Trading Members with Direct Access
+- **Real-time data**: Tiered pricing based on connection type (co-location, PoP, vendor redistribution)
+- **Historical data**: Separately priced data products for tick data, volume/OI data, and settlement prices
+- Published in the Euronext Information Product Fee Schedule (updated January 2026)
+
+[Source: Euronext, "Market Data Fees and Policies", https://www.euronext.com/en/data/real-time-data/pricing-specs-agreements/market-data-pricing-policies]
+
+### 10.4 Co-location & Connectivity Fees
+
+- Co-location rack space in Bergamo data center (pricing not publicly disclosed in detail)
+- Network connectivity fees for cross-connects and PoP access
+- Microwave connectivity available (premium pricing) [unverified]
+
+---
+
+## 11. Recent Developments
+
+### 11.1 Euronext Clearing Migration (2023-2024)
+
+The most transformative recent development was the migration of derivatives clearing from LCH SA to Euronext Clearing (formerly CC&G):
+
+- **November 2023**: Cash equity clearing migrated to Euronext Clearing
+- **July 15, 2024**: Commodity derivatives clearing migrated
+- **September 9, 2024**: All Euronext financial derivatives (including CAC 40, AEX futures, index options, single name options) migrated to Euronext Clearing -- completing the full transition from LCH SA
+- **Key benefit**: ~20% margin efficiencies through VaR-based methodology and unified equity/derivatives default fund enabling cross-margining
+- **Strategic significance**: Euronext now controls end-to-end trading and clearing infrastructure, internalizing clearing revenue
+
+[Source: Euronext, "Successful expansion of Euronext Clearing to all Euronext financial derivatives", September 2024, https://www.euronext.com/en/about/media/euronext-press-releases/successful-expansion-euronext-clearing-all-euronext-financial]
+[Source: FOW, "Euronext reflects on landmark clearing migration from LCH", https://www.fow.com/insights/3702151-analysis-euronext-reflects-on-landmark-clearing-migration-from-lch]
+
+### 11.2 Borsa Italiana Derivatives Migration to Optiq (2024)
+
+- On April 3, 2024, Borsa Italiana's derivatives markets (IDEM) completed migration to Optiq -- the third and final phase of the Borsa Italiana platform migration
+- Achieved less than 3 years after the acquisition of Borsa Italiana Group
+- All Euronext derivatives now trade on a single unified platform (Optiq)
+
+[Source: Euronext, "Successful completion of the migration of Borsa Italiana to the Optiq trading platform", https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-borsa-italiana-optiqr-trading]
+
+### 11.3 New Product Launches
+
+- **September 2025**: Launch of fixed income derivatives -- first-ever mini cash-settled futures on European government bonds (BTP 10Y/30Y, OAT, Bund, Bono) on Euronext Derivatives Milan
+- **May 2025**: Mini single stock options on French and Dutch underlyings
+- **September 2025**: First-ever mini cash-settled futures
+- **March 2026**: Mini ETF options
+- **Ongoing**: Quarterly product releases adding new single stock options from Germany, Ireland, Portugal, and other markets
+- **Retail derivatives strategy**: Euronext aims to become the European retail exchange for derivatives, targeting retail investor participation
+
+[Source: Euronext, "Euronext launches an innovative suite of fixed income derivatives", February 2025, https://www.euronext.com/en/about/media/euronext-press-releases/euronext-launches-innovative-suite-fixed-income-derivatives]
+[Source: Markets Media, "Euronext Aims to Become European Retail Exchange for Derivatives", https://www.marketsmedia.com/euronext-aims-to-become-european-retail-exchange-for-derivatives/]
+
+### 11.4 Strategic Initiatives
+
+- **Euronext Clearing expansion**: Post-migration focus on leveraging cross-margining and attracting new clearing members
+- **Fixed income derivatives growth**: Multi-year initiative to build a European government bond derivatives franchise
+- **Repo expansion**: First phase of multi-year Repo Expansion Initiative extending Italian repo offering across Europe
+- **Nasdaq Nordic power futures acquisition**: Reinforcing leadership in European energy markets
+- **Technology platform licensing**: Optiq offered as a technology solution for other exchanges and venue operators
+
+---
+
+## Derivatives-Specific Sections
+
+### D1. Product Catalog
+
+#### Equity Index Derivatives
+
+| Index | Futures Code | Options Code | Market | Contract Size |
+|-------|-------------|--------------|--------|---------------|
+| CAC 40 | FCE | PXA | Paris | EUR 10 per index point |
+| AEX | FTI | AEX | Amsterdam | EUR 200 per index point |
+| FTSE MIB | FIB | MIB (MIBO) | Milan | EUR 5 per index point |
+| FTSE MIB Mini | MIN | -- | Milan | EUR 1 per index point |
+| FTSE MIB Micro | MICR | -- | Milan | EUR 0.20 per index point [unverified] |
+| BEL 20 | BEL | BXO | Brussels | EUR 5 per index point [unverified] |
+| PSI 20 | PSI | -- | Lisbon | EUR 1 per index point [unverified] |
+| OBX | OBX | -- | Oslo | NOK 100 per index point [unverified] |
+| ISEQ 20 | FES | -- | Dublin | EUR 10 per index point [unverified] |
+| CAC 40 ESG | -- | -- | Paris | EUR 10 per index point [unverified] |
+
+**Additional Products:**
+- AEX Daily Options (7th), AEX Weekly Options
+- CAC 40 Weekly Options
+- Total Return Futures on FTSE MIB, CAC 40, AEX
+- Dividend Index Futures (CAC 40, AEX, FTSE MIB)
+
+#### Single Stock Derivatives
+
+- Options and futures on individual equities across all Euronext markets
+- Coverage includes French (CAC 40 components), Dutch (AEX components), Belgian, Italian (FTSE MIB components), Norwegian, Portuguese, Irish, and German underlyings
+- Mini single stock options available on selected French and Dutch names (since May 2025)
+
+#### Commodity Derivatives
+
+| Product | Code | Market | Contract Size | Settlement |
+|---------|------|--------|---------------|------------|
+| Milling Wheat No. 2 | EBM | Paris (MATIF) | 50 tonnes | Physical delivery |
+| Rapeseed | ECO | Paris (MATIF) | 50 tonnes | Physical delivery |
+| Corn | EMA | Paris (MATIF) | 50 tonnes | Physical delivery |
+
+**Notes:** Milling Wheat is Euronext's flagship commodity contract and a European benchmark for wheat pricing. Contract months: September, December, March, May. Expiration typically on the 10th of the contract month.
+
+#### Fixed Income Derivatives (launched September 2025)
+
+| Product | Market | Settlement | Description |
+|---------|--------|------------|-------------|
+| Mini BTP Futures (Italy 10Y) | Milan | Cash-settled | First-ever mini cash-settled government bond futures |
+| Mini BTP Futures (Italy 30Y) | Milan | Cash-settled | Long-dated Italian government bond exposure |
+| Mini OAT Futures (France) | Milan/Paris | Cash-settled | French government bond futures |
+| Mini Bund Futures (Germany) | Milan/Paris | Cash-settled | German government bond futures |
+| Mini Bono Futures (Spain) | Milan/Paris | Cash-settled | Spanish government bond futures |
+
+[Source: Euronext, "Trading Equity Index Futures", https://www.euronext.com/en/for-investors/financial-derivatives/equity-index-derivatives]
+[Source: Euronext, "Milling Wheat derivatives", https://www.euronext.com/en/for-investors/commodities/milling-wheat]
+
+### D2. Key Contract Specifications (Top 5 Products by Volume)
+
+#### 1. CAC 40 Index Futures (FCE)
+
+| Item | Specification |
+|------|---------------|
+| Exchange | Euronext Paris |
+| Contract Code | FCE |
+| Underlying | CAC 40 Index |
+| Contract Size | EUR 10 per index point (e.g., EUR 80,000 at 8,000.0) |
+| Tick Size | 0.5 index points |
+| Tick Value | EUR 5 |
+| Contract Months | Monthly: 3 nearest months; Quarterly: March, June, September, December cycle out to 5 years [unverified] |
+| Trading Hours | 08:00 - 22:00 CET |
+| Last Trading Day | 16:00 CET on the third Friday of the delivery month |
+| Settlement Method | Cash settlement |
+| Final Settlement Price | Arithmetic mean of all CAC 40 index values calculated and disseminated between 15:40 and 16:00 CET, rounded to two decimal places |
+
+#### 2. AEX Index Futures (FTI)
+
+| Item | Specification |
+|------|---------------|
+| Exchange | Euronext Amsterdam |
+| Contract Code | FTI |
+| Underlying | AEX Index |
+| Contract Size | EUR 200 per index point (e.g., EUR 180,000 at 900.00) |
+| Tick Size | 0.05 index points |
+| Tick Value | EUR 10 |
+| Contract Months | Monthly: 3 nearest months; Quarterly cycle [unverified] |
+| Trading Hours | 08:00 - 22:00 CET |
+| Last Trading Day | Third Friday of the delivery month |
+| Settlement Method | Cash settlement |
+| Final Settlement Price | Based on AEX index calculation at expiration |
+
+#### 3. AEX Index Options (AEX)
+
+| Item | Specification |
+|------|---------------|
+| Exchange | Euronext Amsterdam |
+| Contract Code | AEX |
+| Underlying | AEX Index |
+| Contract Size | EUR 100 per index point (e.g., EUR 90,000 at 900.00) [unverified] |
+| Tick Size | 0.01 index points |
+| Tick Value | EUR 1 |
+| Exercise Style | European |
+| Contract Months | Monthly; plus weekly and daily expiries available |
+| Trading Hours | 09:00 - 17:30 CET |
+| Settlement Method | Cash settlement |
+
+#### 4. FTSE MIB Index Futures (FIB)
+
+| Item | Specification |
+|------|---------------|
+| Exchange | Euronext Milan (formerly IDEM) |
+| Contract Code | FIB |
+| Underlying | FTSE MIB Index |
+| Contract Size | EUR 5 per index point (e.g., EUR 175,000 at 35,000) |
+| Tick Size | 5 index points |
+| Tick Value | EUR 25 |
+| Contract Months | Quarterly: March, June, September, December |
+| Trading Hours | 08:00 - 22:00 CET [unverified] |
+| Last Trading Day | Third Friday of the delivery month |
+| Settlement Method | Cash settlement |
+
+#### 5. Milling Wheat No. 2 Futures (EBM)
+
+| Item | Specification |
+|------|---------------|
+| Exchange | Euronext Paris (MATIF) |
+| Contract Code | EBM |
+| Underlying | Milling Wheat No. 2 (EU origin) |
+| Contract Size | 50 tonnes |
+| Quotation | EUR per tonne |
+| Tick Size | EUR 0.25 per tonne |
+| Tick Value | EUR 12.50 |
+| Contract Months | September, December, March, May |
+| Expiration | 10th of the contract month (or next business day) |
+| Settlement Method | Physical delivery |
+| Delivery Points | Designated storage facilities in France [unverified] |
+
+[Source: Euronext Live, "CAC 40 Index Future contract specification", https://live.euronext.com/en/product/index-futures/FCE-DPAR/contract-specification]
+[Source: Euronext Live, "AEX Index Future contract specification", https://live.euronext.com/en/product/index-futures/FTI-DAMS/contract-specification]
+[Source: Euronext Live, "Milling Wheat contract specifications", https://live.euronext.com/en/resources/contracts-specifications/commodity-futures-milling-wheat]
+
+### D3. Margin Framework
+
+#### Euronext Clearing Margin Methodology
+
+Following the migration from LCH SA (completed September 2024), all Euronext derivatives are cleared through **Euronext Clearing** (formerly CC&G), which employs a VaR-based margin methodology:
+
+| Item | Details |
+|------|---------|
+| Methodology | Dynamic (auto-updating) VaR-like portfolio margining |
+| Risk Measure | Historical Simulation Expected Shortfall (ES) based on cash flow mapping on sovereign zero curves |
+| Confidence Level | 99.0% for most products [unverified -- standard EMIR requirement] |
+| Lookback Period | Based on historical market data [specific period not publicly disclosed] |
+| Update Frequency | Dynamic/auto-updating based on market conditions |
+| Procyclicality | EMIR-compliant measures to prevent excessive procyclical margin increases |
+
+#### Margin Add-Ons
+
+Euronext Clearing applies additional margin add-ons to address portfolio-specific risks beyond mid-price risk:
+
+- **Idiosyncratic risk**: Risk specific to individual securities
+- **Liquidity risk**: Accounts for varying liquidity across products
+- **Concentration risk**: Additional margins for large concentrated positions
+- **Settlement risk**: Risk related to settlement timing
+- **Repo risk**: For positions involving repo transactions
+
+#### Methodology Timeline
+
+| Date | Change |
+|------|--------|
+| Pre-October 2023 | MARS (SPAN-like methodology) used for Italian equity and derivatives |
+| June 2022 | VaR-based methodology goes live for Italian, Portuguese, Spanish, Irish government bonds |
+| October 2023 | VaR-based methodology goes live for Italian equity, ETF, and equity derivatives (replacing MARS/SPAN-like model) |
+| September 2024 | VaR-based methodology extended to all Euronext financial derivatives following migration from LCH SA |
+
+#### Cross-Margining
+
+- **Unified default fund**: Single equity and derivatives default fund facilitating cross-margining between cash and derivatives positions
+- **Margin efficiency**: ~20% margin reduction achieved through portfolio margining across equity and derivatives products within the same default fund
+
+[Source: Euronext, "Euronext Clearing introduces an innovative VaR-based margin methodology", https://www.euronext.com/en/about/media/euronext-press-releases/euronext-clearing-introduces-innovative-var-based-margin]
+[Source: Euronext, "Risk Management Methodologies", https://www.euronext.com/en/post-trade/euronext-clearing/risk-management/methodologies]
+[Source: Euronext, "Model Validation", May 2024, https://www.euronext.com/sites/default/files/2024-05/Euronext_Clearing_Model%20Validation_May24.pdf]
+
+### D4. Position Limits
+
+- **MiFID II Position Limits**: National competent authorities (coordinated by ESMA) set position limits on commodity derivatives
+- **Milling Wheat position limits**: ESMA publishes opinions on position limits for the EBM (Milling Wheat No. 2) contract; limits are set by the AMF as the relevant national authority for the Paris MATIF market
+- **Accountability levels**: Position reporting thresholds apply to all derivatives; large position holders must report to the exchange and relevant regulator
+- **Hedge exemptions**: Available for bona fide hedgers who apply to the national competent authority
+- **Financial derivatives**: Position limits for equity/index derivatives are generally less restrictive than for commodity derivatives; specific limits vary by product [unverified]
+
+[Source: ESMA, "Opinion on position limits on Milling Wheat No. 2 contract", https://www.esma.europa.eu/sites/default/files/library/amf_milling_wheat_ebmobm.pdf]
+
+### D5. Block Trading / EFP / EFS / Wholesale Trading
+
+Euronext operates several off-book and wholesale trading facilities for derivatives:
+
+| Facility | Description |
+|----------|-------------|
+| **TCS (Trade Confirmation System)** | Publication of regulated market trades including negotiated deals, block trades, and VWAP trades; used for post-trade registration and reporting |
+| **Block Execution Service (BES)** | Enables trading members to report off-book wholesale trades to the exchange for registration |
+| **EFP (Exchange for Physical)** | Simultaneous exchange of a futures position for a basket of underlying shares weighted according to the index; can be entered directly on the Optiq order book via the AMR (Automated Market Reference) strategy |
+| **EFS (Exchange for Swaps)** | Exchange of futures for swap positions; eliminates execution risk associated with trading in the Central Order Book |
+| **RFC (Request for Cross)** | Facility for crossing client orders on-exchange with pre-arranged counterparties; subject to price improvement rules (the cross must be at a price equal to or better than the best bid/offer in the order book) |
+| **Auto-match RFC** | Automated matching of RFC orders, introduced March 2024 |
+
+**Key Rules:**
+- All wholesale trades must be reported through TCS and are subject to post-trade transparency requirements under MiFID II
+- Minimum block trade sizes apply per product (defined in Euronext Trading Procedures)
+- EFP/EFS transactions must involve a genuine related position in the underlying or swap
+
+[Source: Euronext, "Wholesale trading & RFC", https://www.euronext.com/en/for-investors/financial-derivatives/wholesale-trading]
+[Source: Euronext, "Euronext Derivatives Markets: Trading Procedures", https://www.euronext.com/sites/default/files/2025-02/trading_procedures_for_derivatives_-_dsp_fair_value_and_deferred_publication.pdf]
+
+---
+
+## Summary
+
+Euronext Derivatives is a pan-European derivatives exchange operating across seven markets (Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, Paris) on the unified Optiq trading platform. Its product range spans equity index futures/options, single stock derivatives, commodity futures/options (notably Milling Wheat as a European benchmark), dividend derivatives, total return futures, and newly launched fixed income derivatives.
+
+The period 2023-2024 marked a transformative era with two landmark migrations: (1) Borsa Italiana's derivatives markets moved to the Optiq platform (April 2024), and (2) all derivatives clearing migrated from LCH SA to Euronext Clearing (completed September 2024). These changes gave Euronext full vertical control over its trading and clearing stack, enabling ~20% margin efficiencies through VaR-based portfolio margining and a unified default fund.
+
+Optiq delivers ~15 microsecond order roundtrip latency with 1M+ messages/second capacity, using SBE and FIX 5.0 protocols from the Bergamo, Italy data center. The exchange continues to expand its product offering with fixed income derivatives (launched September 2025), mini options, and a retail derivatives strategy.

@@ -1,0 +1,589 @@
+---
+title: "미국 파생상품 규제 (U.S. Derivatives Regulation)"
+subtitle: "파생상품 > 규제"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 업데이트:** 2026-04-07
+> **분야:** 파생상품 — 규제 프레임워크 (Regulatory Framework)
+
+---
+
+## 1. 규제 기관 (Regulatory Authorities)
+
+### 1.1 CFTC (상품선물거래위원회, Commodity Futures Trading Commission)
+
+CFTC는 미국 파생상품 시장의 **주요 연방 규제기관**이다. 1974년 Commodity Futures Trading Commission Act에 의해 설립되었으며, 기존에 농무부(Department of Agriculture)가 보유하던 규제 권한을 승계하였다.
+
+- **관할범위:** 선물계약, 선물옵션, 스왑, 상품옵션
+- **사명:** 건전한 규제를 통해 미국 파생상품 시장의 건전성, 복원력 및 활력을 증진한다
+- **법적 근거:** Commodity Exchange Act (CEA), 7 U.S.C. Chapter 1; Dodd-Frank Act (도드-프랭크법) Title VII (스왑)
+- **부서:**
+  - Division of Market Oversight (DMO) — 시장감시, 거래소 감독
+  - Division of Clearing and Risk (DCR) — 청산소 규제
+  - Division of Enforcement (DOE) — 조사, 소송
+  - Division of Swap Dealer and Intermediary Oversight (DSIO) — 등록기관 감독
+  - Market Participants Division (MPD) — 등록기관 및 시장 참여자 감독
+- **웹사이트:** [https://www.cftc.gov](https://www.cftc.gov)
+
+### 1.2 SEC (증권거래위원회, Securities and Exchange Commission)
+
+- **파생상품 관할범위:** 증권기반 스왑(Security-based swaps, 개별 증권·협의 증권지수·대출 기반 스왑), 증권선물상품(security futures products)
+- **Dodd-Frank Act 위임사항:** Title VII가 SEC에 증권기반 스왑에 대한 권한을 부여하여 CFTC의 스왑 감독을 보완한다
+- **공동 관할:** 혼합 스왑(mixed swaps, 스왑과 증권기반 스왑의 특성을 모두 갖는 경우)은 CFTC와 SEC가 공동으로 규제한다
+
+### 1.3 NFA (미국선물업협회, National Futures Association)
+
+- **지위:** CEA 제17조에 따라 미국 선물업계의 지정 자율규제기관(SRO)으로 지정되어 있다
+- **기능:**
+  - 모든 CFTC 등록기관(FCM, IB, CPO, CTA, 스왑딜러 등)의 등록 처리
+  - 준수(compliance) 감사 및 검사
+  - 중재 및 조정 서비스
+  - 규정 집행 및 징계 조치
+- **회원자격:** 모든 CFTC 등록기관에 의무적이다
+- **웹사이트:** [https://www.nfa.futures.org](https://www.nfa.futures.org)
+
+### 1.4 지정계약시장 (Designated Contract Markets, DCMs)
+
+DCM(즉, CME, CBOT, NYMEX, COMEX, ICE Futures U.S. 등 선물거래소)은 다음을 포함하는 **자율규제 책임**을 가진다:
+
+- 규정 집행 및 거래관행 감시
+- 시장감시 및 포지션 모니터링
+- CFTC 기준 내에서 포지션한도 및 책임수준(accountability levels) 설정
+- 시장 참여자에 대한 징계 절차
+
+### 1.5 관할권 구분: CFTC vs. SEC (Jurisdictional Delineation)
+
+| 사안 | 해결방안 |
+|------|---------|
+| **Shad-Johnson Accord (1982)** | CFTC가 광범위 주가지수 선물 및 옵션에 대한 배타적 관할권을 획득함; 개별주식 선물 및 협의지수 선물은 금지됨 |
+| **CFMA (2000)** | 개별주식선물(SSF)과 협의지수 선물 금지를 해제함; 이러한 "증권선물상품"에 대한 CFTC/SEC 공동 관할권을 확립함 |
+| **Dodd-Frank Act (2010)** | CFTC가 "스왑"을 규제하고; SEC가 "증권기반 스왑"을 규제하며; 혼합 스왑은 공동 규제한다 |
+| **개별주식선물** | 2020년 거래 중단(OneChicago 폐쇄); 사실상 상품이 소멸됨 |
+| **현행 관행** | CFTC가 거래량 기준으로 대다수의 파생상품을 감독하며; SEC 관할권은 주로 증권기반 스왑과 개별증권/협의지수에 대한 주식옵션으로 한정된다 |
+
+> **참고:** 2023년 미국 지방법원(SDNY) 판결에서 CFTC가 ETF 또는 재량적 리밸런싱이 포함된 맞춤형 바스켓에 기반한 총수익스왑(total return swaps)에 대해 관할권이 없다고 명시하였다 — 이는 SEC 관할의 증권기반 스왑에 해당한다.
+
+---
+
+## 2. 주요 법률 및 규정 (Key Legislation & Regulations)
+
+### 2.1 Commodity Exchange Act (CEA, 상품거래법)
+
+- **제정:** 1936년 (1922년 Grain Futures Act를 대체)
+- **성문화:** 7 U.S.C. Chapter 1
+- **목적:** 상품선물거래에 대한 연방 규제, 가격조작 및 사기 방지
+- **역사적 변천:**
+  - 1936년 — 최초 제정, 곡물 및 열거된 농산물 대상
+  - 1974년 — CFTC Act: CFTC 설립, 모든 상품으로 관할권 확대
+  - 1982년 — Shad-Johnson Accord 관할권 분할 비준
+  - 2000년 — Commodity Futures Modernization Act (CFMA): OTC 파생상품 규제 완화, 스왑에 대한 법적 확실성 창출
+  - 2010년 — Dodd-Frank Act: OTC 스왑을 포괄적 규제 대상에 포함
+
+### 2.2 Dodd-Frank Wall Street Reform and Consumer Protection Act (도드-프랭크 월스트리트 개혁 및 소비자보호법, 2010) — Title VII
+
+Title VII "Wall Street Transparency and Accountability"는 CEA 제정 이후 미국 파생상품 규제에 대한 가장 중요한 개혁이다. 주요 조항은 다음과 같다:
+
+#### 의무청산 (Mandatory Clearing)
+- 표준화된 스왑은 등록된 파생상품청산기관(Derivatives Clearing Organizations, DCOs)을 통해 청산해야 한다
+- CFTC는 2013년 3월부터 특정 금리스왑(IRS) 및 지수 신용부도스왑(CDS)에 대해 의무청산을 시행하였다
+- **최종사용자 면제(End-user exception):** 상업적 위험을 헤지하는 상업 최종사용자는 청산을 선택하지 않을 수 있다
+
+#### 스왑체결기관 (Swap Execution Facilities, SEFs)
+- 의무청산 대상 스왑은 SEF 또는 DCM에서 체결해야 한다 (해당 스왑을 거래 가능하게 한 SEF/DCM이 없는 경우 제외)
+- SEF는 호가장(order book) 및/또는 호가요청(RFQ) 기능을 제공해야 한다
+- 2022년 기준 금리파생상품의 약 70%와 CDS의 약 87%가 SEF에서 체결되었다 (ISDA 자료)
+
+#### 등록 요건 (Registration Requirements)
+- **스왑딜러(Swap Dealers, SDs):** 최소 기준(de minimis thresholds)을 초과하여 스왑을 거래하는 기관은 등록해야 한다
+- **주요스왑참여자(Major Swap Participants, MSPs):** 시스템리스크를 유발하는 대규모 스왑 포지션을 보유한 비딜러 기관은 등록해야 한다
+- SD와 MSP 모두 자본, 증거금, 영업행위, 보고의무 요건의 적용을 받는다
+
+#### 거래보고 (Trade Reporting)
+- 모든 스왑(청산 및 비청산)은 등록된 스왑데이터저장소(Swap Data Repositories, SDRs)에 보고해야 한다
+- 스왑 거래 및 가격 데이터의 실시간 공개 보고
+- 대량거래(block trade)에 대한 보고 지연 면제
+
+#### 증거금 요건 (Margin Requirements)
+- SD/MSP 간의 비청산 스왑은 의무적 개시증거금(IM) 및 변동증거금(VM) 적용 대상이다
+- IM 요건의 최종 단계적 도입은 2022년 9월에 완료되었다
+
+### 2.3 CFTC 규정 (17 CFR Chapter I)
+
+연방규정집(Code of Federal Regulations)의 주요 부분:
+
+| Part | 내용 |
+|------|------|
+| **Part 1** | 일반 규정 (정의, 등록, 고객 보호) |
+| **Part 4** | 상품풀운용사(CPOs) 및 상품거래자문사(CTAs) |
+| **Part 15-21** | 보고 요건 (대규모 거래자, 포지션 보고) |
+| **Part 23** | 스왑딜러 및 MSP 요건 |
+| **Part 37** | 스왑체결기관(SEFs) |
+| **Part 38** | 지정계약시장(DCMs) |
+| **Part 39** | 파생상품청산기관(DCOs) |
+| **Part 43** | 실시간 공개 보고 |
+| **Part 45** | 스왑 데이터 기록보관 및 보고 |
+| **Part 46** | 사전 제정 및 전환 스왑 데이터 |
+| **Part 49** | 스왑데이터저장소(SDRs) |
+| **Part 140** | 조직, 기능 및 절차 |
+| **Part 150** | 투기적 포지션한도 |
+| **Part 190** | 상품중개인 파산 규칙 |
+
+### 2.4 기타 관련 법률 (Other Relevant Legislation)
+
+- **Commodity Futures Modernization Act (CFMA, 2000):** OTC 파생상품을 규제 완화하고 스왑에 대한 법적 확실성을 창출하였다 (이후 대부분 Dodd-Frank Act에 의해 대체됨)
+- **CEA Reauthorization Act (2008):** 에너지 시장에 대한 CFTC 집행 권한을 강화하였다
+- **CFTC 재승인(Reauthorization):** 의회는 CFTC를 정기적으로 재승인한다 (가장 최근 재승인 논의 진행 중)
+
+---
+
+## 3. 시장 참여자 유형 (Market Participant Categories)
+
+### 3.1 중개기관 (Intermediaries)
+
+| 유형 | 약칭 | 기능 | 자본 요건 |
+|------|------|------|----------|
+| **선물거래위탁업자 (Futures Commission Merchant)** | FCM | 선물, 옵션, 스왑에 대한 주문을 권유·수탁하고 고객자금을 보관한다 | 최소 조정 순자본 $1,000,000; 등록 스왑딜러를 겸하는 경우 $20,000,000 |
+| **소개중개인 (Introducing Broker)** | IB | 주문을 권유하되 고객자금을 보관하지 않는다 (FCM에 고객을 소개) | 순자본 $45,000 (또는 보증 IB 약정) |
+| **상품풀운용사 (Commodity Pool Operator)** | CPO | 선물/스왑을 거래하는 합동투자기구를 운용한다 | 별도 규정 (펀드 수준 요건) |
+| **상품거래자문사 (Commodity Trading Advisor)** | CTA | 선물/스왑에 대한 거래 자문을 유상으로 제공한다 | 별도 규정 |
+| **스왑딜러 (Swap Dealer)** | SD | 스왑을 거래한다 (시장조성, 수요 대응) | 최소 순자본 $20,000,000 (은행 SD는 건전성 감독기관 자본 규정 적용) |
+| **주요스왑참여자 (Major Swap Participant)** | MSP | 시스템리스크를 유발할 수 있는 대규모 스왑 포지션을 보유한 비딜러 기관 | CFTC가 정한 자본 요건 |
+
+### 3.2 등록 요건 (Registration Requirements)
+
+- 모든 중개기관은 NFA를 통해 CFTC에 등록해야 한다
+- **Form 7-R:** 법인 등록 (법적 명칭, 조직, 사업 내역, 임원 공개)
+- **Form 8-R:** 임원 및 관련인(APs)에 대한 개인 등록
+- **자격시험:** AP는 Series 3 (National Commodity Futures Examination)에 합격해야 하며; 스왑 활동에는 추가적인 스왑 자격 요건(NFA Rule 401)이 요구된다
+- **최고준수임원(Chief Compliance Officer, CCO):** 모든 FCM과 SD는 CCO를 지정해야 한다
+- **준수 프로그램:** AML(자금세탁방지), 사이버보안, 사업연속성, 감독 절차, 판촉자료 심사
+
+### 3.3 기타 시장 참여자 (Other Market Participants)
+
+- **자기매매회사(Proprietary trading firms):** 자기 계정으로만 거래하는 경우 일반적으로 FCM 등록이 면제된다
+- **상업적 헤지자(최종사용자):** 청산 의무 면제; 특정 스왑딜러 등록 기준 면제
+- **외국 중개기관:** 미국 고객 관련 활동 및 국경간 규정에 따라 CFTC 요건의 적용을 받을 수 있다
+
+---
+
+## 4. 포지션한도 체계 (Position Limits Framework)
+
+### 4.1 CFTC Part 150 — 연방 투기적 포지션한도 (Federal Speculative Position Limits)
+
+CFTC는 오랫동안 기다려온 포지션한도 규정을 2021년 1월 14일에 최종 확정하였으며(86 FR 3236), 2021년 3월 15일부터 시행되었다.
+
+#### 25개 핵심 기준 선물계약 (25 Core Referenced Futures Contracts)
+
+이 규정은 3개 상품군에 걸쳐 **25개 핵심 기준 선물계약**에 대한 연방 투기적 포지션한도를 설정한다:
+
+**농산물 (기존 9개 + 신규 7개 = 16개):**
+- 기존: CBOT 옥수수, 귀리, 대두, 대두유, 대두박, 밀, KC HRW 밀, MGEX HRS 밀, ICE 면화 No. 2
+- 신규: CBOT 쌀, ICE 코코아, ICE 커피 C, ICE FCOJ-A, ICE 설탕 No. 11, ICE 설탕 No. 16, CME 생우 (연방 한도에 추가)
+
+**금속 (4개):**
+- COMEX 금, 은, 구리, NYMEX 팔라듐
+
+**에너지 (5개):**
+- NYMEX 경질감성원유(WTI), NY Harbor ULSD, RBOB 가솔린, Henry Hub 천연가스, ICE Henry Hub 천연가스
+
+#### 포지션한도 수준 (Position Limit Levels)
+
+| 한도 유형 | 방법론 |
+|----------|--------|
+| **인도월(Spot-month)** | 추정 인도가능공급량의 25% 이하; 실물인도 및 현금결제 한도가 별도로 적용된다 |
+| **단일월(비인도월, Single-month)** | 최초 25,000계약에 대해 미결제약정의 10% + 이후 2.5% |
+| **전월합산(All-months combined)** | 최초 25,000계약에 대해 미결제약정의 10% + 이후 2.5% |
+
+#### 적용범위: 연계계약 (Referenced Contracts)
+
+포지션한도는 다음에 적용된다:
+1. 25개 핵심 기준 선물계약 자체
+2. 핵심 기준 계약에 직접 또는 간접적으로 연결된 선물/옵션
+3. **경제적 동등 스왑(Economically equivalent swaps)** (준수일: 2023년 1월 1일)
+
+#### 준수일정 (Compliance Dates)
+- 2022년 1월 1일: 16개 비기존 핵심 기준 계약에 대한 연방 한도
+- 2023년 1월 1일: 경제적 동등 스왑에 대한 연방 한도
+
+### 4.2 헤지 면제 (Hedge Exemptions)
+
+선의의 헤지자(Bona fide hedgers)는 투기적 포지션한도 면제를 신청할 수 있다:
+
+- **열거된 헤지(Enumerated hedges):** 적격 헤지 거래의 고정 목록 (예: 생산 헤지, 상인 헤지, 가공 헤지)
+- **비열거 헤지(Non-enumerated hedges):** 시장 참여자는 열거된 범주에 맞지 않는 헤지 포지션의 인정을 거래소에 신청(CFTC에 통보)할 수 있다
+- **패스스루 스왑 상계(Pass-through swap offsets):** 스왑딜러는 상업적 최종사용자의 헤지를 상계하는 스왑 포지션에 대해 면제를 주장할 수 있다
+- **조건부 인도월 면제(Conditional spot-month exemptions):** 특정 현금결제 계약에 적용 가능하다
+
+### 4.3 거래소 설정 포지션한도 및 책임수준 (Exchange-Set Position Limits and Accountability Levels)
+
+- 거래소(DCM)는 연방 한도 적용 대상이 아닌 계약에 대해 자체 포지션한도 및 **책임수준(accountability levels)**을 설정한다
+- 연방 한도 적용 계약에 대해서는 거래소 한도가 CFTC 수준 이상으로 엄격해야 한다
+- **책임수준:** 엄격한 한도가 아니라 강화된 보고 및 거래소 조회 의무를 발동하는 기준이다
+
+### 4.4 합산 (Aggregation)
+
+- 동일 주체가 소유 또는 지배하는 계좌의 포지션은 합산해야 한다
+- 특정 독립 계좌 관리자, 방화벽이 있는 비금융 소유 기관, 특정 펀드 매니저에 대해 면제가 가능하다
+
+---
+
+## 5. 청산 의무 (Clearing Mandates)
+
+### 5.1 의무청산 대상 (Mandatory Clearing Categories)
+
+Dodd-Frank Act 및 CFTC 규정에 따라 다음 스왑 유형이 의무청산 대상이다:
+
+**금리스왑 (Interest Rate Swaps, 2013년 3월 시행):**
+- USD, EUR, GBP, JPY 고정-변동(plain vanilla) IRS
+- USD, EUR, GBP, JPY 베이시스 스왑
+- USD, EUR, GBP, JPY 선도금리계약(FRAs)
+- USD, EUR, GBP 익일물지수스왑(OIS)
+
+**신용부도스왑 (Credit Default Swaps, 2013년 3월 시행):**
+- 북미 비트랜치 CDX 지수 (투자등급, 하이일드)
+- 유럽 비트랜치 iTraxx 지수 (Main, Crossover)
+
+### 5.2 파생상품청산기관(DCO) 요건 (Derivatives Clearing Organization Requirements)
+
+DCO는 CEA 제5b조에 따라 CFTC에 등록해야 하며 **18개 핵심 원칙(Core Principles)**을 준수해야 한다:
+
+1. CEA 및 CFTC 규정 준수
+2. 부도를 충당하기에 충분한 재무 자원
+3. 참여자 및 상품 적격성 기준
+4. 리스크 관리 프레임워크
+5. 결제 절차
+6. 자금 처리 (고객 분리보관)
+7. 부도 규정 및 절차
+8. 규정 집행
+9. 시스템 보호 (사이버보안, 사업연속성)
+10. 보고 요건
+11. 기록 보관
+12. 공개 정보
+13. 정보 공유
+14. 독점금지 고려
+15. 거버넌스 적격성 기준
+16. 이해충돌
+17. 운영위원회 구성
+18. 법적 리스크
+
+### 5.3 시스템적으로 중요한 DCO(SIDCOs) 및 SIFMU 지정
+
+**Dodd-Frank Act Title VIII**에 따라, 금융안정감독위원회(Financial Stability Oversight Council, FSOC)는 청산기관을 **시스템적으로 중요한 금융시장 유틸리티(Systemically Important Financial Market Utilities, SIFMUs)**로 지정할 수 있다.
+
+**현재 지정된 SIFMU(청산):**
+| 기관 | 지정일 | 상품 |
+|------|-------|------|
+| **CME Clearing** | 2012년 7월 | 선물, 선물옵션, IRS, CDS |
+| **ICE Clear Credit** | 2012년 7월 | CDS (신용파생상품) |
+| **OCC (Options Clearing Corporation)** | 2012년 7월 | 상장 주식옵션, 증권선물 |
+| **FICC (Fixed Income Clearing Corporation)** | 2012년 7월 | 국채, 주택저당증권 |
+
+> **참고:** LCH Ltd. (영국 소재)는 미국 참여자를 위한 등록 DCO이나 SIFMU가 아니다 — 영란은행(Bank of England)이 규제하며 CFTC는 미국 관련 활동에 대해 감독한다.
+
+**SIDCO에 대한 강화 요건:**
+- 강화된 재무 자원 (cover-2 기준: 최대 2개 청산회원 부도를 충당할 자원을 보유해야 한다)
+- 연례 CFTC 검사
+- 강화된 거버넌스, 리스크 관리, 회복/정리 계획
+- 추가 공시 요건 (CPMI-IOSCO 금융시장인프라 원칙 — PFMIs)
+
+### 5.4 고객 청산 모델 (Client Clearing Models)
+
+- **선물:** CEA 제4d조에 따라 고객자금이 분리보관된다 (DCO 수준에서의 완전한 물리적 분리)
+- **스왑(LSOC):** "법적 분리, 운영상 혼합(Legally Segregated, Operationally Commingled)" — 각 고객의 담보물은 법적으로 보호되지만 DCO의 포괄계좌(omnibus account)에 보관될 수 있다
+- **최종사용자 면제:** 상업적 위험을 헤지하기 위해 스왑을 사용하는 상업적 최종사용자는 통지 및 보고 요건에 따라 청산을 선택하지 않을 수 있다
+
+---
+
+## 6. 시장감시 및 집행 (Market Surveillance & Enforcement)
+
+### 6.1 대규모거래자 보고시스템 (Large Trader Reporting System, LTRS)
+
+- 청산회원, FCM 및 외국 중개인은 규정 Part 17에 따라 CFTC에 **일일 대규모거래자 포지션 보고서**를 제출해야 한다
+- 거래자의 포지션이 해당 계약의 **보고수준(reporting level)**에 도달하거나 초과할 때 보고서를 제출한다
+- 보고수준은 계약별로 상이하다 (예: 일부 농산물 선물 25계약, E-mini S&P 500 선물 350계약)
+- **2024년 개정:** CFTC가 데이터 제출 기준과 데이터 요소를 현대화하는 Part 17 개정안을 최종 확정하였으며, 준수일은 **2026년 6월 3일**이다
+
+### 6.2 거래자 약정 보고서 (Commitments of Traders, COT Reports)
+
+CFTC는 대규모거래자 데이터를 기반으로 주간 COT 보고서를 발표한다:
+
+| 보고서 | 내용 | 빈도 |
+|--------|------|------|
+| **Legacy COT** | 상업적 vs. 비상업적 포지션 | 주간 (화요일 기준, 금요일 발표) |
+| **Disaggregated COT** | 생산자/상인, 스왑딜러, 관리자금, 기타 보고대상자 | 주간 |
+| **Traders in Financial Futures (TFF)** | 딜러, 자산운용사, 레버리지 펀드, 기타 보고대상자 | 주간 |
+| **Supplemental COT** | 선별된 농산물 계약에 대한 추가 데이터 | 주간 |
+
+### 6.3 시장감시 프로그램 (Market Surveillance Programs)
+
+**CFTC 시장감시:**
+- 모든 활성 선물 및 옵션 시장에 대한 일일 대규모거래자 활동, 주요 가격 관계, 수급 요인을 모니터링한다
+- 감시 직원이 잠재적 시장 문제를 가능한 한 초기 단계에서 식별한다
+- 거래소 감시 프로그램과 조율한다
+
+**거래소 수준 감시:**
+- DCM은 자체 감시 부서를 운영한다
+- 실시간 거래 모니터링, 교차시장 감시
+- 한도 및 책임수준 대비 포지션 모니터링
+
+### 6.4 집행 권한 (Enforcement Authority)
+
+CFTC 집행국(Division of Enforcement)은 CEA 및 CFTC 규정 위반을 조사하고 기소한다:
+
+**주요 금지사항:**
+- **시세조종 금지(Anti-manipulation, CEA Section 9(a)(2)):** 가격 조작, 조작 시도, 매점(corners), 압박(squeezes)
+- **사기 금지(Anti-fraud, CEA Section 4b):** 선물, 옵션 및 스왑 거래와 관련한 사기
+- **스푸핑(Spoofing, CEA Section 4c(a)(5)(C)):** 체결 전 취소할 의도로 호가를 제출하는 행위 (Dodd-Frank Act에 의해 추가)
+- **가장매매(Wash trading):** 진정한 경제적 목적 없이 시장 활동의 외관을 만드는 거래
+- **시장질서 교란 거래(Disruptive trading practices):** 호가 위반, 질서 있는 체결에 대한 의도적 또는 무모한 무시
+
+**집행 수단:**
+- 민사과징금 (위반당 $1,000,000 또는 금전적 이득의 3배 중 큰 금액)
+- 거래 금지 및 정지
+- 시정명령(Cease and desist orders)
+- 이익환수(Disgorgement of profits)
+- 법무부(Department of Justice)에 대한 형사 회부
+
+### 6.5 내부고발 프로그램 (Whistleblower Program)
+
+- Dodd-Frank Act Section 748에 의해 설립되었다
+- $1백만을 초과하는 징수된 제재금의 10-30% 보상
+- 프로그램 시작부터 2025년까지 $3억7천만 이상이 지급되었다
+
+---
+
+## 7. 보고의무 (Reporting Requirements)
+
+### 7.1 SDR에 대한 스왑 데이터 보고 (Swap Data Reporting to SDRs)
+
+Dodd-Frank Act 및 CFTC Parts 43, 45, 49에 따라:
+
+- **모든 스왑** (청산 및 비청산)은 CFTC에 등록된 스왑데이터저장소에 보고해야 한다
+- **생성 데이터(Creation data):** 체결일에 모든 주요 경제적 조건을 포함하여 보고한다
+- **계속 데이터(Continuation data):** 진행 중인 생애주기 사건(수정, 종료, 경개)을 신속히 보고한다
+- **평가 데이터(Valuation data):** 비청산 스왑에 대한 일일 시가평가 데이터
+
+**등록된 SDR (2026년 기준):**
+- DTCC Data Repository (DDR)
+- CME Group (CME Global Repository Service)
+- ICE Trade Vault
+
+### 7.2 실시간 공개 보고 (Real-Time Public Reporting, Part 43)
+
+- 스왑 거래 및 가격 데이터는 SDR을 통해 실시간으로 공개 배포해야 한다
+- **대량거래(Block trades):** 설정된 명목금액 기준을 초과하는 거래는 공개 배포 전에 **시간 지연**을 받는다
+  - 상한 규모(Cap sizes)는 초대형 거래에 대해 표시되는 명목금액을 제한한다
+  - 대량거래 기준 및 상한 규모는 CFTC에 의해 주기적으로 갱신된다
+- **데이터 요소:** 명목금액(상한 적용), 가격, 만기, 통화, 자산유형, 청산 상태
+- **지연:** 자산유형, 거래 범주(SEF 내 vs. 장외), 대량거래 여부에 따라 상이하다
+
+### 7.3 포지션 보고 (Position Reporting)
+
+- **Part 17:** FCM 및 청산회원이 제출하는 일일 대규모거래자 보고서
+- **Part 18:** 특별 소환(Special calls) — CFTC가 모든 거래자에게 추가 정보를 요구할 수 있다
+- **Form 40:** 거래자 식별 및 분류 정보
+- **Part 20:** 스왑 포지션 보고 (대규모 스왑거래자 보고서)
+
+### 7.4 FCM 재무 보고 (Financial Reporting for FCMs)
+
+- **일일 분리보관 보고서:** 고객자금 분리보관 준수
+- **월간 재무 보고서:** CFTC와 지정 SRO(NFA 또는 거래소)에 제출한다
+- **연간 감사 재무제표:** 회계연도 종료 후 60일 이내에 제출해야 한다
+- **FOCUS 보고서:** 증권중개업자를 겸하는 FCM(이중 등록기관)에 적용한다
+- 모든 FCM 재무 데이터는 CFTC 웹사이트에서 공개 열람 가능하다
+
+---
+
+## 8. 국경간 프레임워크 (Cross-Border Framework)
+
+### 8.1 CFTC 국경간 스왑 규제 (Cross-Border Swaps Regulation)
+
+CFTC는 2020년 9월에 국경간 스왑 프레임워크를 최종 확정하였으며(85 FR 56924), 이전의 2013년 잠정 지침을 대체하였다:
+
+**주요 개념:**
+- **미국인(U.S. person):** 미국에 주소를 둔 자연인, 미국에서 설립되었거나 주된 사업장이 미국인 기관, 미국 거주자를 위한 연금 등을 광범위하게 포함하도록 정의된다
+- **보증 계열사 / 도관 계열사(Guaranteed affiliate / conduit affiliate):** 미국인이 스왑 채무를 보증하거나, 미국인에 대해 중요한 재무적 위험을 부담하는 외국 기관
+- **주선, 교섭 또는 체결(ANE) 거래:** 미국 내에서 수행되는 활동
+
+**등록 기준:**
+- 외국 기관은 특정 국경간 스왑을 스왑딜러 등록 기준 산정에 포함해야 한다
+- 최종 규정은 최소 기준($80억 총명목금액)에 산입되는 국경간 스왑을 명확히 하였다
+
+### 8.2 대체적 준수 (Substituted Compliance)
+
+CFTC는 외국 관할권의 규제 프레임워크가 미국 요건과 **비교 가능(comparable)**하다고 결정할 수 있으며, 이 경우 외국 기관은 CFTC 규정 대신 본국 규정을 준수할 수 있다:
+
+- **전체적·결과 기반 접근법(Holistic, outcomes-based approach):** CFTC는 외국 체제가 비교 가능한 규제 결과를 달성하는지 평가한다
+- **별도의 비교 가능성 결정 대상인 13개 범주의 요건:**
+  - 5개 기관 수준 요건 (자본, 최고준수임원, 리스크 관리, SDR 보고, 대규모거래자 보고)
+  - 8개 거래 수준 요건 (청산, 거래 체결, 실시간 보고, 증거금, 외부/내부 영업행위 기준 등)
+- **제외:** 대체적 준수는 일반적으로 대규모거래자 보고 및 외부 영업행위 기준에는 적용되지 않는다
+
+**비교 가능성 결정이 발행된 관할권:**
+- 유럽연합 (다수 범주)
+- 일본 (다수 범주)
+- 호주, 캐나다, 영국 등 (다양한 범주)
+
+### 8.3 외국 CCP 및 거래소의 인정 (Recognition of Foreign CCPs and Trading Venues)
+
+- **면제 DCO(Exempt DCOs):** 외국 청산소는 비교 가능한 본국 규제를 받는 경우 미국인을 위한 스왑 청산을 위해 DCO 등록 면제를 받을 수 있다 (예: KRX는 2015년에 CFTC로부터 면제 명령을 받았다)
+- **외국거래소(Foreign boards of trade, FBOTs):** 외국 거래소는 미국 참여자에게 직접 접근을 제공하기 위해 CFTC에 등록할 수 있다
+
+### 8.4 국제 공조 (International Coordination)
+
+- **IOSCO:** CFTC는 국제증권감독기구(International Organization of Securities Commissions)를 통한 국제 기준 설정에 적극적으로 참여한다
+- **CPMI-IOSCO:** 금융시장인프라에 대한 공동 기준 (PFMIs)
+- **FSB (금융안정위원회):** OTC 파생상품 개혁 모니터링
+- **양자 MOU:** CFTC는 정보 공유 및 감독 협력을 위해 외국 규제기관과 양해각서를 유지한다 (한국 FSC/FSS와의 CFTC-FSC/FSS MOU 포함)
+
+---
+
+## 9. 최근 동향 (2023-2026) (Recent Developments)
+
+### 9.1 포지션한도 시행 (Position Limits Implementation)
+
+- 2022년 1월: 16개 비기존 핵심 기준 계약에 대한 연방 투기적 포지션한도 시행
+- 2023년 1월: 경제적 동등 스왑으로 한도 확대
+- 거래소 설정 한도 및 책임수준의 지속적 시행
+- 합산 및 헤지 면제 요건에 대한 업계의 지속적 적응
+
+### 9.2 이벤트 계약 및 예측시장 (Event Contracts and Prediction Markets)
+
+이것은 2025-2026년 미국 파생상품 규제에서 가장 논쟁적인 분야 중 하나이다:
+
+- **폭발적 성장:** DCM은 2021년에 약 131개 이벤트 계약을 상장하였으며; 2025년에만 약 1,600개 이벤트 계약이 상장 인증을 받았다 (정치 사건, 스포츠, 날씨, 문화 행사, 과학적 결과 등 포함)
+- **정책 전환(2026년 1월):** CFTC 의장 Michael Selig가 "이벤트 계약 시장의 책임 있는 발전"에 대한 지지를 발표하여, 이전 행정부의 정치 이벤트 계약 금지 제안을 뒤집었다
+- **규정 제정(2026년 3월):** CFTC가 예측시장에 관한 사전규정제정고시(Advance Notice of Proposed Rulemaking)를 발행하였으며; 의견제출 마감일은 2026년 4월 30일이다
+- **주(州) 차원 갈등:** 다수의 주(애리조나, 코네티컷, 일리노이)가 예측시장을 제한하는 법안을 제정하거나 제안하였으며; CFTC는 2026년에 CEA에 따라 DCM에 상장된 이벤트 계약에 대한 배타적 연방 관할권을 주장하는 소송을 제기하였다
+- **집행 사례:** CFTC는 예측시장 플랫폼에서의 비공개정보 남용 및 사기를 다루었으며, 중요 비공개정보에 기반한 거래 및 자기 후보에 대한 거래에 대해 과징금을 부과하였다
+- **주요 플랫폼:** Kalshi, Polymarket (역외 운영), CME Group (이벤트 계약 상품 검토 중)
+
+### 9.3 디지털 자산 파생상품 (Digital Asset Derivatives)
+
+- CFTC는 디지털 자산 상품(비트코인, 이더)과 이에 기반한 파생상품에 대한 관할권을 주장한다
+- 비트코인 및 이더 선물이 CME에서 활발히 거래된다
+- 디지털 자산 현물시장에 대한 CFTC vs. SEC 관할권에 관한 입법 논의가 진행 중이다
+- 미등록 디지털 자산 파생상품 플랫폼에 대한 CFTC 집행 조치
+- 제안된 법안 (예: FIT21, 의회에서 논의)이 특정 디지털 자산 현물시장에 대한 CFTC 권한을 확대할 수 있다
+
+### 9.4 기후 관련 파생상품 및 자발적 탄소배출권 (Climate-Related Derivatives and Voluntary Carbon Credits, VCCs)
+
+- **2024년 10월:** CFTC가 DCM에서의 자발적 탄소배출권(VCC) 파생상품 계약 상장에 관한 최종 지침을 승인하였다
+- 지침은 파생상품의 기초가 되는 탄소배출권의 투명성, 추가성(additionality), 영속성(permanence), 견고한 정량화를 강조한다
+- 약 200개의 환경 상품 파생계약이 DCM에 제출되었으나, 시장 유동성은 제한적이다 (2023년 후반 기준 3개 계약만 미결제약정을 보유)
+- CFTC의 관할권은 VCC 현물시장으로 확장되지 않아, 사기가 만연한 규제 공백이 발생하고 있다
+- 2026년부터 시작되는 의무적 CORSIA 참여가 탄소배출권 시장과 수요 역학을 변화시킬 수 있다
+
+### 9.5 CFTC 기술 현대화 (Technology Modernization)
+
+- 대규모거래자 보고 데이터 기준 현대화 (준수: 2026년 6월)
+- 강화된 스왑 데이터 보고 요건 및 데이터 품질 기준
+- 감시 기술 및 데이터 분석에 대한 투자
+- 등록 기관에 대한 사이버보안 지침
+
+### 9.6 기타 주요 동향 (Other Notable Developments)
+
+- **FCM 지침(2025년):** CFTC가 FCM 등록 및 준수 의무에 관한 포괄적 FAQ 지침을 발행하였다
+- **증거금 개혁:** 비청산 스왑 증거금 요건의 지속적 조정
+- **LIBOR 전환:** 청산 및 비청산 파생상품에서 LIBOR로부터 SOFR 및 기타 대체 기준금리로의 전환 완료
+
+---
+
+## 10. 한국과의 비교 (Comparison with Korea)
+
+### 10.1 규제 구조 (Regulatory Structure)
+
+| 차원 | 미국 | 한국 |
+|------|------|------|
+| **주요 규제기관** | CFTC (독립기관) | FSC (금융위원회) — 정책 및 규정 제정 |
+| **감독기관** | CFTC 부서 + NFA (SRO) | FSS (금융감독원) — 검사 및 집행 |
+| **SRO 역할** | NFA (등록, 감사, 중재); 거래소 (거래감시) | KRX가 SRO 기능을 수행; 별도의 NFA에 해당하는 기관 없음 |
+| **근거 법률** | Commodity Exchange Act (CEA) + Dodd-Frank Act | 자본시장과 금융투자업에 관한 법률 (자본시장법, FSCMA) |
+| **관할권 분할** | CFTC (선물/스왑) vs. SEC (증권/증권기반 스왑) | FSC/FSS가 증권과 파생상품 모두에 대해 통합 감독 |
+| **시장 구조** | 복수의 경쟁 거래소 (CME, ICE, Cboe 등) | 단일 통합 거래소 (KRX)가 모든 시장을 운영 |
+
+### 10.2 포지션한도 접근방식 (Position Limit Approaches)
+
+| 차원 | 미국 | 한국 |
+|------|------|------|
+| **권한** | CFTC가 연방 한도 설정(Part 150); 거래소 한도가 보완 | KRX가 FSC/FSS 감독하에 포지션한도를 설정 |
+| **범위** | 25개 핵심 기준 선물 + 경제적 동등 스왑 | KOSPI 200 선물/옵션 및 기타 상장 파생상품에 적용 |
+| **방법론** | 인도월: 인도가능공급량의 25%; 비인도월: 10%/2.5% 공식 | 미결제약정 비율 및 명목가치 기준 |
+| **헤지 면제** | 열거 및 비열거 헤지 면제; 거래소 관리 | KRX 신청을 통한 헤지 면제 |
+| **스왑 동등** | 연방 한도가 경제적 동등 스왑으로 확대 (2023년부터) | TR 보고를 통한 OTC 파생상품 포지션 관리 |
+
+### 10.3 청산 의무 (Clearing Mandates)
+
+| 차원 | 미국 | 한국 |
+|------|------|------|
+| **의무청산** | IRS, CDS (표준화, 2013년부터) | KRW IRS (2014년 6월부터) |
+| **CCP 구조** | 복수 DCO (CME, LCH, ICE Clear) | 단일 CCP (KRX), 장내 및 OTC 모두 |
+| **CFTC-KRX 관계** | KRX가 CFTC로부터 면제 DCO 지위 획득 (2015년) | — |
+| **최종사용자 면제** | 상업적 헤지자에게 적용 가능 | 적격 최종사용자에게 적용 가능 |
+| **증거금 프레임워크** | 청산에 대한 CFTC 규정; 은행에 대한 건전성 감독기관 규정 | FSC/FSS 설정 증거금 규정; KRX 증거금 방법론 |
+| **고객 청산 모델** | 스왑에 대한 LSOC; 선물에 대한 완전 분리보관 | KRX 청산 규정을 통한 고객 보호 |
+
+### 10.4 거래보고 (Trade Reporting)
+
+| 차원 | 미국 | 한국 |
+|------|------|------|
+| **거래저장소** | 복수 등록 SDR (DTCC, CME, ICE) | KRX가 거래저장소로 운영 (약 2020년 활성화) |
+| **보고 범위** | 모든 스왑 (청산 및 비청산) | OTC 파생상품 거래 |
+| **실시간 공개 보고** | 대량거래 지연과 함께 요구됨 | OTC 데이터의 제한적 공개 보고 |
+| **COT 유형 보고서** | 주간 공개 COT 보고서 | KRX가 투자자유형별 포지션 데이터 발표 |
+
+### 10.5 시장감시 (Market Surveillance)
+
+| 차원 | 미국 | 한국 |
+|------|------|------|
+| **이중 수준 감시** | CFTC (연방) + 거래소 (자율규제) | FSS (감독) + KRX (일선 감시) |
+| **대규모거래자 보고** | 계약별 기준 이상의 일일 보고 | 통합 KRX 시스템을 통한 실시간 포지션 모니터링 |
+| **교차시장 감시** | 복수 거래소 간 조율되지만 도전적 | 모든 KRX 시장에 대한 통합 감시 |
+| **집행** | CFTC 민사/행정 조치; DOJ 형사 회부 | FSS 행정 제재; 형사 사건의 경우 검찰 회부 |
+
+### 10.6 주요 구조적 차이 (Key Structural Differences)
+
+1. **분산 vs. 통합:** 미국은 분산된 규제 구조(CFTC/SEC 분할, 복수 거래소, 복수 CCP)를 가지고 있는 반면, 한국은 통합 구조(FSC/FSS, 단일 KRX 거래소 및 CCP)를 갖추고 있다
+2. **SRO 모델:** 미국은 NFA와 거래소를 SRO로 크게 의존하며; 한국은 KRX 내에 SRO 기능을 통합한다
+3. **시장 경쟁:** 미국 거래소는 상품, 수수료, 기술에서 경쟁하며; KRX는 독점 거래소이나 통합을 통해 낮은 비용을 제공할 수 있다
+4. **OTC 파생상품 개혁:** 양 관할권 모두 중앙청산, 거래보고, 플랫폼 거래에 대한 G20 의무를 이행하였으나, 미국의 시행이 범위에서 더 넓고 시기에서 더 빠르다
+5. **국경간:** CFTC는 대체적 준수를 포함한 광범위한 국경간 프레임워크를 가지고 있으며; 한국의 국경간 접근방식은 보다 양자적(MOU 기반)이다
+
+---
+
+## 출처 (Sources)
+
+- [CFTC — Commodity Exchange Act & Regulations](https://www.cftc.gov/LawRegulation/CommodityExchangeAct/index.htm)
+- [CFTC — Dodd-Frank Act Implementation](https://www.cftc.gov/LawRegulation/DoddFrankAct/index.htm)
+- [CFTC — Position Limits for Derivatives](https://www.cftc.gov/LawRegulation/DoddFrankAct/Rulemakings/PositionLimitsforDerivatives/index.htm)
+- [CFTC — Cross-Border Application of Swaps Provisions](https://www.cftc.gov/LawRegulation/DoddFrankAct/Rulemakings/Cross-BorderApplicationofSwapsProvisions/index.htm)
+- [CFTC — Comparability Determinations for Substituted Compliance](https://www.cftc.gov/LawRegulation/DoddFrankAct/CDSCP/index.htm)
+- [CFTC — Derivatives Clearing Organizations](https://www.cftc.gov/IndustryOversight/ClearingOrganizations/index.htm)
+- [CFTC — Market Surveillance Program](https://www.cftc.gov/IndustryOversight/MarketSurveillance/CFTCMarketSurveillanceProgram/index.htm)
+- [CFTC — Large Trader Reporting Program](https://www.cftc.gov/IndustryOversight/MarketSurveillance/LargeTraderReportingProgram/index.htm)
+- [CFTC — Real-Time Reporting](https://www.cftc.gov/LawRegulation/DoddFrankAct/Rulemakings/DF_18_RealTimeReporting/index.htm)
+- [CFTC — Data Repositories](https://www.cftc.gov/IndustryOversight/DataRepositories/index.htm)
+- [CFTC — Systemically Important DCO Rules](https://www.cftc.gov/LawRegulation/DoddFrankAct/Rulemakings/DF_10_SystemicDCO/index.htm)
+- [NFA — Registration and Membership](https://www.nfa.futures.org/registration-membership/index.html)
+- [NFA — FCM Registration Requirements](https://www.nfa.futures.org/registration-membership/who-has-to-register/fcm.html)
+- [Federal Register — Position Limits for Derivatives (86 FR 3236)](https://www.federalregister.gov/documents/2021/01/14/2020-25332/position-limits-for-derivatives)
+- [Federal Register — Cross-Border Application (85 FR 56924)](https://www.federalregister.gov/documents/2020/09/14/2020-16489/cross-border-application-of-the-registration-thresholds-and-certain-requirements-applicable-to-swap)
+- [Federal Register — Prediction Markets ANPR (2026)](https://www.federalregister.gov/documents/2026/03/16/2026-05105/prediction-markets)
+- [eCFR — 17 CFR Part 150 (Position Limits)](https://www.ecfr.gov/current/title-17/chapter-I/part-150)
+- [eCFR — 17 CFR Part 39 (DCOs)](https://www.ecfr.gov/current/title-17/chapter-I/part-39)
+- [eCFR — 17 CFR Part 43 (Real-Time Public Reporting)](https://www.ecfr.gov/current/title-17/chapter-I/part-43)
+- [Congress.gov — Dodd-Frank Title VII (CRS Report R41398)](https://www.congress.gov/crs-product/R41398)
+- [CFTC — KRX Exempt DCO Order (2015)](https://www.cftc.gov/PressRoom/PressReleases/7270-15)
+- [KRX — OTC Derivatives Clearing Background](https://clearing.krx.co.kr/en/contents/GLB/02/0202/0202030201/GLB0202030201.jsp)
+- [Chambers — Financial Services Regulation 2025: South Korea](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/south-korea)

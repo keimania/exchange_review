@@ -1,0 +1,2656 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Cboe Global Markets (Cboe 글로벌 마켓) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/cboe.html">Cboe Global Markets (Cboe 글로벌 마켓)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 (Global Derivatives Markets) — 개요 (Overview)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 — 비교 분석 (Global Derivatives Markets – Comparative Analysis)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">거래소</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Derivatives (호주증권거래소 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cboe.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Cboe Global Markets (Cboe 글로벌 마켓)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX, 중국금융선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group (CME 그룹)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE, 다롄상품거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME, 두바이상업거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/eurex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex (유렉스)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext Derivatives (유로넥스트 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX (홍콩거래소) 파생상품 시장</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange 선물)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX 파생상품시장 (한국거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX, 몬트리올거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O, 인도국립증권거래소 선물옵션)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (오사카거래소, OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX (싱가포르거래소) 파생상품</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE, 상하이선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX, 대만선물거래소)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">규제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">아시아태평양 파생상품 규제 (Asia-Pacific Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU 파생상품 규제 (EU Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">미국 파생상품 규제 (U.S. Derivatives Regulation)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">매매시스템</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#개요-및-프로필-overview-profile" id="toc-개요-및-프로필-overview-profile" class="nav-link active" data-scroll-target="#개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</a>
+  <ul class="collapse">
+  <li><a href="#주요-연혁-key-historical-milestones" id="toc-주요-연혁-key-historical-milestones" class="nav-link" data-scroll-target="#주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</a></li>
+  </ul></li>
+  <li><a href="#시장-구조-market-structure" id="toc-시장-구조-market-structure" class="nav-link" data-scroll-target="#시장-구조-market-structure">2. 시장 구조 (Market Structure)</a>
+  <ul class="collapse">
+  <li><a href="#거래소-부문-exchange-segments" id="toc-거래소-부문-exchange-segments" class="nav-link" data-scroll-target="#거래소-부문-exchange-segments">2.1 거래소 부문 (Exchange Segments)</a></li>
+  <li><a href="#매매-세션-거래시간-trading-sessions-hours" id="toc-매매-세션-거래시간-trading-sessions-hours" class="nav-link" data-scroll-target="#매매-세션-거래시간-trading-sessions-hours">2.2 매매 세션 / 거래시간 (Trading Sessions / Hours)</a></li>
+  <li><a href="#호가단위-최소가격변동폭-tick-sizes-주요-상품" id="toc-호가단위-최소가격변동폭-tick-sizes-주요-상품" class="nav-link" data-scroll-target="#호가단위-최소가격변동폭-tick-sizes-주요-상품">2.3 호가단위 (최소가격변동폭) (Tick Sizes) — 주요 상품</a></li>
+  <li><a href="#계약-승수-거래단위-contract-multipliers-lot-sizes" id="toc-계약-승수-거래단위-contract-multipliers-lot-sizes" class="nav-link" data-scroll-target="#계약-승수-거래단위-contract-multipliers-lot-sizes">2.4 계약 승수 / 거래단위 (Contract Multipliers / Lot Sizes)</a></li>
+  <li><a href="#시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs" id="toc-시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 (마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)</a></li>
+  </ul></li>
+  <li><a href="#매매-메커니즘-trading-mechanism" id="toc-매매-메커니즘-trading-mechanism" class="nav-link" data-scroll-target="#매매-메커니즘-trading-mechanism">3. 매매 메커니즘 (Trading Mechanism)</a>
+  <ul class="collapse">
+  <li><a href="#단일가매매-경매-메커니즘-auction-mechanisms" id="toc-단일가매매-경매-메커니즘-auction-mechanisms" class="nav-link" data-scroll-target="#단일가매매-경매-메커니즘-auction-mechanisms">3.1 단일가매매 (경매) 메커니즘 (Auction Mechanisms)</a></li>
+  <li><a href="#접속매매-연속매매-continuous-trading" id="toc-접속매매-연속매매-continuous-trading" class="nav-link" data-scroll-target="#접속매매-연속매매-continuous-trading">3.2 접속매매 (연속매매) (Continuous Trading)</a></li>
+  <li><a href="#가격-발견-price-discovery" id="toc-가격-발견-price-discovery" class="nav-link" data-scroll-target="#가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</a></li>
+  <li><a href="#주문-우선순위-규칙-매칭-알고리즘-order-priority-rules-matching-algorithms" id="toc-주문-우선순위-규칙-매칭-알고리즘-order-priority-rules-matching-algorithms" class="nav-link" data-scroll-target="#주문-우선순위-규칙-매칭-알고리즘-order-priority-rules-matching-algorithms">3.4 주문 우선순위 규칙 / 매칭 알고리즘 (Order Priority Rules / Matching Algorithms)</a></li>
+  </ul></li>
+  <li><a href="#주문-유형-order-types" id="toc-주문-유형-order-types" class="nav-link" data-scroll-target="#주문-유형-order-types">4. 주문 유형 (Order Types)</a>
+  <ul class="collapse">
+  <li><a href="#기본-주문-유형-standard-order-types" id="toc-기본-주문-유형-standard-order-types" class="nav-link" data-scroll-target="#기본-주문-유형-standard-order-types">4.1 기본 주문 유형 (Standard Order Types)</a></li>
+  <li><a href="#고급-주문-유형-advanced-order-types" id="toc-고급-주문-유형-advanced-order-types" class="nav-link" data-scroll-target="#고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</a></li>
+  <li><a href="#주문-유효조건-time-in-force-tif" id="toc-주문-유효조건-time-in-force-tif" class="nav-link" data-scroll-target="#주문-유효조건-time-in-force-tif">4.3 주문 유효조건 (Time-in-Force, TIF)</a></li>
+  <li><a href="#주문-수정-및-취소-order-modification-cancellation" id="toc-주문-수정-및-취소-order-modification-cancellation" class="nav-link" data-scroll-target="#주문-수정-및-취소-order-modification-cancellation">4.4 주문 수정 및 취소 (Order Modification &amp; Cancellation)</a></li>
+  </ul></li>
+  <li><a href="#매매시스템-기술-cboe-titanium-trading-system-technology-cboe-titanium" id="toc-매매시스템-기술-cboe-titanium-trading-system-technology-cboe-titanium" class="nav-link" data-scroll-target="#매매시스템-기술-cboe-titanium-trading-system-technology-cboe-titanium">5. 매매시스템 기술 — Cboe Titanium (Trading System Technology — Cboe Titanium)</a>
+  <ul class="collapse">
+  <li><a href="#시스템-개요-system-overview" id="toc-시스템-개요-system-overview" class="nav-link" data-scroll-target="#시스템-개요-system-overview">5.1 시스템 개요 (System Overview)</a></li>
+  <li><a href="#시스템-연혁-system-history" id="toc-시스템-연혁-system-history" class="nav-link" data-scroll-target="#시스템-연혁-system-history">5.2 시스템 연혁 (System History)</a></li>
+  <li><a href="#프로토콜-스택-protocol-stack" id="toc-프로토콜-스택-protocol-stack" class="nav-link" data-scroll-target="#프로토콜-스택-protocol-stack">5.3 프로토콜 스택 (Protocol Stack)</a></li>
+  <li><a href="#재해복구-업무연속성-disaster-recovery-business-continuity" id="toc-재해복구-업무연속성-disaster-recovery-business-continuity" class="nav-link" data-scroll-target="#재해복구-업무연속성-disaster-recovery-business-continuity">5.4 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)</a></li>
+  </ul></li>
+  <li><a href="#시장-데이터-market-data" id="toc-시장-데이터-market-data" class="nav-link" data-scroll-target="#시장-데이터-market-data">6. 시장 데이터 (Market Data)</a>
+  <ul class="collapse">
+  <li><a href="#피드-프로토콜-feed-protocols" id="toc-피드-프로토콜-feed-protocols" class="nav-link" data-scroll-target="#피드-프로토콜-feed-protocols">6.1 피드 프로토콜 (Feed Protocols)</a></li>
+  <li><a href="#데이터-수준-data-levels" id="toc-데이터-수준-data-levels" class="nav-link" data-scroll-target="#데이터-수준-data-levels">6.2 데이터 수준 (Data Levels)</a></li>
+  <li><a href="#데이터-배포-data-distribution" id="toc-데이터-배포-data-distribution" class="nav-link" data-scroll-target="#데이터-배포-data-distribution">6.3 데이터 배포 (Data Distribution)</a></li>
+  <li><a href="#과거-데이터-historical-data" id="toc-과거-데이터-historical-data" class="nav-link" data-scroll-target="#과거-데이터-historical-data">6.4 과거 데이터 (Historical Data)</a></li>
+  </ul></li>
+  <li><a href="#접속-및-접근-connectivity-access" id="toc-접속-및-접근-connectivity-access" class="nav-link" data-scroll-target="#접속-및-접근-connectivity-access">7. 접속 및 접근 (Connectivity &amp; Access)</a>
+  <ul class="collapse">
+  <li><a href="#회원-접근-membership-access" id="toc-회원-접근-membership-access" class="nav-link" data-scroll-target="#회원-접근-membership-access">7.1 회원 / 접근 (Membership / Access)</a></li>
+  <li><a href="#접속-방법-connection-methods" id="toc-접속-방법-connection-methods" class="nav-link" data-scroll-target="#접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</a></li>
+  <li><a href="#코로케이션-co-location" id="toc-코로케이션-co-location" class="nav-link" data-scroll-target="#코로케이션-co-location">7.3 코로케이션 (Co-Location)</a></li>
+  <li><a href="#api-프로토콜-api-protocols" id="toc-api-프로토콜-api-protocols" class="nav-link" data-scroll-target="#api-프로토콜-api-protocols">7.4 API 프로토콜 (API Protocols)</a></li>
+  <li><a href="#인증-테스트-certification-testing" id="toc-인증-테스트-certification-testing" class="nav-link" data-scroll-target="#인증-테스트-certification-testing">7.5 인증 / 테스트 (Certification / Testing)</a></li>
+  </ul></li>
+  <li><a href="#리스크-통제-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" id="toc-리스크-통제-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#리스크-통제-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers">8. 리스크 통제 및 서킷브레이커 (매매거래중단) (Risk Controls &amp; Circuit Breakers)</a>
+  <ul class="collapse">
+  <li><a href="#시장-전체-서킷브레이커-mwcb-market-wide-circuit-breakers" id="toc-시장-전체-서킷브레이커-mwcb-market-wide-circuit-breakers" class="nav-link" data-scroll-target="#시장-전체-서킷브레이커-mwcb-market-wide-circuit-breakers">8.1 시장 전체 서킷브레이커 (MWCB) (Market-Wide Circuit Breakers)</a></li>
+  <li><a href="#제한가-하한가-luld-limit-up-limit-down" id="toc-제한가-하한가-luld-limit-up-limit-down" class="nav-link" data-scroll-target="#제한가-하한가-luld-limit-up-limit-down">8.2 제한가-하한가 (LULD) (Limit Up-Limit Down)</a></li>
+  <li><a href="#사전-매매-리스크-통제-pre-trade-risk-controls" id="toc-사전-매매-리스크-통제-pre-trade-risk-controls" class="nav-link" data-scroll-target="#사전-매매-리스크-통제-pre-trade-risk-controls">8.3 사전 매매 리스크 통제 (Pre-Trade Risk Controls)</a></li>
+  <li><a href="#포지션한도-및-행사한도-position-and-exercise-limits" id="toc-포지션한도-및-행사한도-position-and-exercise-limits" class="nav-link" data-scroll-target="#포지션한도-및-행사한도-position-and-exercise-limits">8.4 포지션한도 및 행사한도 (Position and Exercise Limits)</a></li>
+  </ul></li>
+  <li><a href="#규제-체계-regulatory-framework" id="toc-규제-체계-regulatory-framework" class="nav-link" data-scroll-target="#규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</a>
+  <ul class="collapse">
+  <li><a href="#감독-기관-supervising-authorities" id="toc-감독-기관-supervising-authorities" class="nav-link" data-scroll-target="#감독-기관-supervising-authorities">9.1 감독 기관 (Supervising Authorities)</a></li>
+  <li><a href="#자율규제기관-sro-지위-self-regulatory-organization-status" id="toc-자율규제기관-sro-지위-self-regulatory-organization-status" class="nav-link" data-scroll-target="#자율규제기관-sro-지위-self-regulatory-organization-status">9.2 자율규제기관 (SRO) 지위 (Self-Regulatory Organization Status)</a></li>
+  <li><a href="#주요-규정-key-regulations" id="toc-주요-규정-key-regulations" class="nav-link" data-scroll-target="#주요-규정-key-regulations">9.3 주요 규정 (Key Regulations)</a></li>
+  <li><a href="#감시-및-시장-건전성-surveillance-market-integrity" id="toc-감시-및-시장-건전성-surveillance-market-integrity" class="nav-link" data-scroll-target="#감시-및-시장-건전성-surveillance-market-integrity">9.4 감시 및 시장 건전성 (Surveillance &amp; Market Integrity)</a></li>
+  <li><a href="#국경간-운영-cross-border-operations" id="toc-국경간-운영-cross-border-operations" class="nav-link" data-scroll-target="#국경간-운영-cross-border-operations">9.5 국경간 운영 (Cross-Border Operations)</a></li>
+  </ul></li>
+  <li><a href="#수수료-및-수익-모델-fees-revenue-model" id="toc-수수료-및-수익-모델-fees-revenue-model" class="nav-link" data-scroll-target="#수수료-및-수익-모델-fees-revenue-model">10. 수수료 및 수익 모델 (Fees &amp; Revenue Model)</a>
+  <ul class="collapse">
+  <li><a href="#매매-수수료-옵션-거래소-trading-fees-options-exchanges" id="toc-매매-수수료-옵션-거래소-trading-fees-options-exchanges" class="nav-link" data-scroll-target="#매매-수수료-옵션-거래소-trading-fees-options-exchanges">10.1 매매 수수료 — 옵션 거래소 (Trading Fees — Options Exchanges)</a></li>
+  <li><a href="#매매-수수료-cfe-선물-trading-fees-cfe-futures" id="toc-매매-수수료-cfe-선물-trading-fees-cfe-futures" class="nav-link" data-scroll-target="#매매-수수료-cfe-선물-trading-fees-cfe-futures">10.2 매매 수수료 — CFE 선물 (Trading Fees — CFE Futures)</a></li>
+  <li><a href="#시장-데이터-수수료-market-data-fees" id="toc-시장-데이터-수수료-market-data-fees" class="nav-link" data-scroll-target="#시장-데이터-수수료-market-data-fees">10.3 시장 데이터 수수료 (Market Data Fees)</a></li>
+  <li><a href="#접속-수수료-connectivity-fees" id="toc-접속-수수료-connectivity-fees" class="nav-link" data-scroll-target="#접속-수수료-connectivity-fees">10.4 접속 수수료 (Connectivity Fees)</a></li>
+  <li><a href="#수익-분류-2025-revenue-breakdown" id="toc-수익-분류-2025-revenue-breakdown" class="nav-link" data-scroll-target="#수익-분류-2025-revenue-breakdown">10.5 수익 분류 (2025) (Revenue Breakdown)</a></li>
+  </ul></li>
+  <li><a href="#최근-동향-recent-developments" id="toc-최근-동향-recent-developments" class="nav-link" data-scroll-target="#최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</a>
+  <ul class="collapse">
+  <li><a href="#기술-업그레이드-technology-upgrades" id="toc-기술-업그레이드-technology-upgrades" class="nav-link" data-scroll-target="#기술-업그레이드-technology-upgrades">11.1 기술 업그레이드 (Technology Upgrades)</a></li>
+  <li><a href="#신규-상품-new-products" id="toc-신규-상품-new-products" class="nav-link" data-scroll-target="#신규-상품-new-products">11.2 신규 상품 (New Products)</a></li>
+  <li><a href="#규제-변경-regulatory-changes" id="toc-규제-변경-regulatory-changes" class="nav-link" data-scroll-target="#규제-변경-regulatory-changes">11.3 규제 변경 (Regulatory Changes)</a></li>
+  <li><a href="#전략적-이니셔티브-strategic-initiatives" id="toc-전략적-이니셔티브-strategic-initiatives" class="nav-link" data-scroll-target="#전략적-이니셔티브-strategic-initiatives">11.4 전략적 이니셔티브 (Strategic Initiatives)</a></li>
+  </ul></li>
+  <li><a href="#파생상품-특화-상품-카탈로그-및-계약-사양-derivatives-specific-product-catalog-contract-specifications" id="toc-파생상품-특화-상품-카탈로그-및-계약-사양-derivatives-specific-product-catalog-contract-specifications" class="nav-link" data-scroll-target="#파생상품-특화-상품-카탈로그-및-계약-사양-derivatives-specific-product-catalog-contract-specifications">파생상품 특화: 상품 카탈로그 및 계약 사양 (Derivatives-Specific: Product Catalog &amp; Contract Specifications)</a>
+  <ul class="collapse">
+  <li><a href="#주요-상품-분류-key-product-categories" id="toc-주요-상품-분류-key-product-categories" class="nav-link" data-scroll-target="#주요-상품-분류-key-product-categories">주요 상품 분류 (Key Product Categories)</a></li>
+  <li><a href="#계약-사양-주요-상품-contract-specifications-top-products" id="toc-계약-사양-주요-상품-contract-specifications-top-products" class="nav-link" data-scroll-target="#계약-사양-주요-상품-contract-specifications-top-products">계약 사양 — 주요 상품 (Contract Specifications — Top Products)</a></li>
+  <li><a href="#vix-지수-독자-방법론-vix-index-proprietary-methodology" id="toc-vix-지수-독자-방법론-vix-index-proprietary-methodology" class="nav-link" data-scroll-target="#vix-지수-독자-방법론-vix-index-proprietary-methodology">VIX 지수 — 독자 방법론 (VIX Index — Proprietary Methodology)</a></li>
+  <li><a href="#증거금-체계-margin-framework" id="toc-증거금-체계-margin-framework" class="nav-link" data-scroll-target="#증거금-체계-margin-framework">증거금 체계 (Margin Framework)</a></li>
+  <li><a href="#포지션한도-position-limits" id="toc-포지션한도-position-limits" class="nav-link" data-scroll-target="#포지션한도-position-limits">포지션한도 (Position Limits)</a></li>
+  <li><a href="#블록거래-대량매매-및-복합-주문-처리-block-trading-and-complex-order-handling" id="toc-블록거래-대량매매-및-복합-주문-처리-block-trading-and-complex-order-handling" class="nav-link" data-scroll-target="#블록거래-대량매매-및-복합-주문-처리-block-trading-and-complex-order-handling">블록거래 (대량매매) 및 복합 주문 처리 (Block Trading and Complex Order Handling)</a></li>
+  </ul></li>
+  <li><a href="#출처-sources" id="toc-출처-sources" class="nav-link" data-scroll-target="#출처-sources">출처 (Sources)</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html">거래소</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/exchanges/cboe.html">Cboe Global Markets (Cboe 글로벌 마켓)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Cboe Global Markets (Cboe 글로벌 마켓)</h1>
+<p class="subtitle lead">파생상품 &gt; 거래소</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 4월 17일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>최종 수정일:</strong> 2026-04-06 <strong>조사 등급:</strong> Tier 2 <strong>분야:</strong> 파생상품 (Derivatives)</p>
+</blockquote>
+<hr>
+<section id="개요-및-프로필-overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>정식 명칭</td>
+<td>Cboe Global Markets, Inc.</td>
+</tr>
+<tr class="even">
+<td>약칭</td>
+<td>Cboe (하위 거래소: C1/Cboe Options, C2, BZX Options, EDGX Options; 주식: BZX, BYX, EDGX, EDGA; 선물: CFE)</td>
+</tr>
+<tr class="odd">
+<td>웹사이트</td>
+<td>https://www.cboe.com</td>
+</tr>
+<tr class="even">
+<td>설립 연도</td>
+<td>1973년 (Chicago Board Options Exchange로); 2017년 Cboe Global Markets로 개명</td>
+</tr>
+<tr class="odd">
+<td>소재지</td>
+<td>미국 / 일리노이주 시카고 (본사); 주 데이터센터 뉴저지주 Secaucus</td>
+</tr>
+<tr class="even">
+<td>소유 구조</td>
+<td>Cboe BZX Exchange에 상장 (티커: CBOE); 기관투자자 광범위 보유</td>
+</tr>
+<tr class="odd">
+<td>모회사 / 그룹</td>
+<td>Cboe Global Markets, Inc.</td>
+</tr>
+<tr class="even">
+<td>감독 기관</td>
+<td>미국 증권거래위원회(SEC) — 옵션 및 주식 거래소; 미국 상품선물거래위원회(CFTC) — Cboe Futures Exchange (CFE); 각 거래소는 별도 등록된 자율규제기관(SRO)</td>
+</tr>
+<tr class="odd">
+<td>시가총액</td>
+<td>~290-310억 달러 (2026년 3월 기준) [출처: MacroTrends, Yahoo Finance]</td>
+</tr>
+<tr class="even">
+<td>연간 순매출 (2025)</td>
+<td>24억 달러 (역대 최고, 전년 대비 +17%) [출처: Cboe 2025년 4분기 실적 발표, 2026년 2월]</td>
+</tr>
+<tr class="odd">
+<td>총 옵션 일평균 거래량 (2025)</td>
+<td>4개 옵션 거래소에서 1,840만 계약 — 6년 연속 최고 기록 [출처: Cboe 2025년 연간 거래량 보고서]</td>
+</tr>
+<tr class="even">
+<td>SPX 옵션 일평균 거래량 (2025)</td>
+<td>390만 계약 (역대 최고, 전년 대비 +25%); 59%가 0DTE 옵션 [출처: Cboe 2025년 연간 거래량 보고서]</td>
+</tr>
+<tr class="odd">
+<td>청산소 (Clearing House)</td>
+<td>Options Clearing Corporation (OCC) — 옵션용; OCC는 CFE 선물도 청산</td>
+</tr>
+</tbody>
+</table>
+<section id="주요-연혁-key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</h3>
+<ul>
+<li><strong>1973년:</strong> Chicago Board Options Exchange (CBOE), Chicago Board of Trade (CBOT)에 의해 설립; 표준화된 장내 주식 옵션을 최초로 상장한 거래소. 1973년 4월 26일 16개 기초주식에 대한 콜 옵션으로 매매 개시</li>
+<li><strong>1975년:</strong> CBOE에서 풋 옵션 도입</li>
+<li><strong>1977년:</strong> 개별 주식에 대한 옵션 대폭 확대</li>
+<li><strong>1983년:</strong> S&amp;P 100 지수 옵션 (OEX) 출시 — 최초의 지수 옵션</li>
+<li><strong>1993년:</strong> Cboe 변동성지수(VIX) 도입, Robert E. Whaley 교수가 개발; 최초에는 S&amp;P 100 옵션의 내재변동성 측정</li>
+<li><strong>2003년:</strong> VIX 산출 방법론 개정, 더 넓은 행사가 범위 및 모델 비의존 방식을 사용하여 S&amp;P 500 (SPX) 옵션 기반으로 변경</li>
+<li><strong>2004년:</strong> Cboe Futures Exchange (CFE)에서 VIX 선물 출시</li>
+<li><strong>2006년:</strong> Cboe Options Exchange에서 VIX 옵션 출시 — 5년 내 가장 활발히 거래되는 지수 옵션으로 성장</li>
+<li><strong>2010년:</strong> Cboe 주식회사 전환; Cboe Holdings IPO 완료 (티커: CBOE) NASDAQ 상장 (6월)</li>
+<li><strong>2015년:</strong> SPX 주간 옵션이 월, 수, 금 만기로 확대 — 0DTE 성장의 전조</li>
+<li><strong>2016년:</strong> Cboe Holdings, BATS Global Markets 인수 발표 (~32억 달러, 9월)</li>
+<li><strong>2017년:</strong> BATS 인수 완료 (3월); Cboe Global Markets, Inc.로 개명 (10월); 4개 추가 거래소 (BZX, BYX, EDGX, EDGA) 및 상당한 기술 역량 확보</li>
+<li><strong>2019년:</strong> SPX 옵션이 화, 목 만기 추가 포함으로 확대, 매일 만기 (모든 거래일에 0DTE) 가능</li>
+<li><strong>2020년:</strong> Cboe, Hanweck 및 FT Options (데이터 분석 기업) 인수</li>
+<li><strong>2021년:</strong> Cboe, Chi-X Asia Pacific 인수하여 일본 및 호주 진출; Cboe, ErisX (디지털 자산 거래소) 인수</li>
+<li><strong>2022년:</strong> 0DTE 옵션 거래 폭발적 성장 — SPX 0DTE가 전체 SPX 거래량의 40% 초과; Cboe Titanium 플랫폼 브랜딩</li>
+<li><strong>2023-2024년:</strong> 0DTE 지속 성장; 시장 데이터 배포를 위한 Cboe Global Cloud 출시; Cboe Europe Derivatives 출시</li>
+<li><strong>2025년:</strong> 순매출 24억 달러 역대 최고 기록; SPX 옵션 일평균 거래량 390만 계약 (기록); 0DTE SPX 거래량 비중 59%; Magnificent 10 Index (MGTN) 선물 및 옵션 출시 (2025년 12월); 전략 검토 개시 — Cboe Australia 및 Cboe Canada 매각 절차</li>
+<li><strong>2026년 (진행 중):</strong> 2026년 2분기 Mini-SPX 예측시장 계약 계획; 유럽 FLEX 옵션 출시 (2026년 1분기); 거래시간 확대 이니셔티브 개발 중</li>
+</ul>
+<p>[출처: Cboe Global Markets, Wikipedia; Cboe 투자자관계; Cboe 보도자료 2025-2026, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="시장-구조-market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="시장-구조-market-structure">2. 시장 구조 (Market Structure)</h2>
+<section id="거래소-부문-exchange-segments" class="level3">
+<h3 class="anchored" data-anchor-id="거래소-부문-exchange-segments">2.1 거래소 부문 (Exchange Segments)</h3>
+<p>Cboe는 옵션, 주식, 선물에 걸쳐 별도로 등록된 다수의 거래소를 운영한다:</p>
+<p><strong>옵션 거래소 (SEC 규제):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 28%">
+<col style="width: 17%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>거래소</th>
+<th>MIC 코드</th>
+<th>설명</th>
+<th>주요 상품</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cboe Options Exchange (C1)</strong></td>
+<td>XCBO</td>
+<td>주력 옵션 거래소; SPX, VIX 옵션의 독점 시장</td>
+<td>SPX, VIX, RUT, 독자 지수 옵션</td>
+</tr>
+<tr class="even">
+<td><strong>Cboe C2 Exchange (C2)</strong></td>
+<td>C2OX</td>
+<td>제2 옵션 거래소; 복수상장 및 독자 상품 지원</td>
+<td>복수상장 주식 옵션, 일부 지수 옵션</td>
+</tr>
+<tr class="odd">
+<td><strong>Cboe BZX Options</strong></td>
+<td>BATO</td>
+<td>메이커-테이커 수수료 모델</td>
+<td>복수상장 주식 옵션</td>
+</tr>
+<tr class="even">
+<td><strong>Cboe EDGX Options</strong></td>
+<td>EDGO</td>
+<td>고객 우선을 갖춘 메이커-테이커 수수료 모델</td>
+<td>복수상장 주식 옵션</td>
+</tr>
+</tbody>
+</table>
+<p><strong>주식 거래소 (SEC 규제):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 57%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>거래소</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cboe BZX Equities</strong></td>
+<td>메이커-테이커 가격; Cboe Market Close (CMC) 단일가매매</td>
+</tr>
+<tr class="even">
+<td><strong>Cboe BYX Equities</strong></td>
+<td>역전 가격 (테이커-메이커)</td>
+</tr>
+<tr class="odd">
+<td><strong>Cboe EDGX Equities</strong></td>
+<td>메이커-테이커 가격</td>
+</tr>
+<tr class="even">
+<td><strong>Cboe EDGA Equities</strong></td>
+<td>역전 가격 (테이커-메이커)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>선물 거래소 (CFTC 규제):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 24%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>거래소</th>
+<th>설명</th>
+<th>주요 상품</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cboe Futures Exchange (CFE)</strong></td>
+<td>변동성 및 기타 선물을 위한 지정계약시장(DCM)</td>
+<td>VIX 선물, Mini VIX 선물, MGTN 선물</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="매매-세션-거래시간-trading-sessions-hours" class="level3">
+<h3 class="anchored" data-anchor-id="매매-세션-거래시간-trading-sessions-hours">2.2 매매 세션 / 거래시간 (Trading Sessions / Hours)</h3>
+<p><strong>옵션 거래소 (C1, C2, BZX Options, EDGX Options):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 31%">
+<col style="width: 34%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>시간 (CT)</th>
+<th>시간 (UTC)</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>글로벌 거래시간 (GTH)</strong></td>
+<td>오전 2:00 – 8:15</td>
+<td>07:00–13:15 UTC</td>
+<td>C1의 일부 지수 옵션 (SPX, VIX, OEX, RUT, XSP)에 대한 연장 시간</td>
+</tr>
+<tr class="even">
+<td><strong>사전 개장 / 대기</strong></td>
+<td>~오전 8:20 – 8:30</td>
+<td>~13:20–13:30 UTC</td>
+<td>개장 로테이션 이전 주문 대기</td>
+</tr>
+<tr class="odd">
+<td><strong>정규 거래시간 (RTH)</strong></td>
+<td>오전 8:30 – 오후 3:15</td>
+<td>13:30–20:15 UTC</td>
+<td>모든 옵션의 표준 세션</td>
+</tr>
+<tr class="even">
+<td><strong>연장 종료</strong></td>
+<td>오후 3:15 – 4:15</td>
+<td>20:15–21:15 UTC</td>
+<td>일부 지수 옵션 (SPX, VIX, RUT) 매매 계속</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cboe Futures Exchange (CFE):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 31%">
+<col style="width: 34%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>세션</th>
+<th>시간 (CT)</th>
+<th>시간 (UTC)</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>연장 거래시간</strong></td>
+<td>오후 5:00 (일) – 오전 8:30 (월); 오후 3:30 – 오전 8:30 (화~금)</td>
+<td>22:00–13:30 UTC</td>
+<td>VIX 선물 RTH 이전 세션</td>
+</tr>
+<tr class="even">
+<td><strong>정규 거래시간</strong></td>
+<td>오전 8:30 – 오후 3:15</td>
+<td>13:30–20:15 UTC</td>
+<td>표준 세션</td>
+</tr>
+<tr class="odd">
+<td><strong>폐장 후</strong></td>
+<td>오후 3:15 – 3:30</td>
+<td>20:15–20:30 UTC</td>
+<td>거래 보고</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: Cboe, “Hours &amp; Holidays”; Cboe Options Exchange 규칙, 2026-04-06 접속]</p>
+</section>
+<section id="호가단위-최소가격변동폭-tick-sizes-주요-상품" class="level3">
+<h3 class="anchored" data-anchor-id="호가단위-최소가격변동폭-tick-sizes-주요-상품">2.3 호가단위 (최소가격변동폭) (Tick Sizes) — 주요 상품</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 39%">
+<col style="width: 41%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>최소 호가단위 (프리미엄 &lt; $3.00)</th>
+<th>최소 호가단위 (프리미엄 &gt;= $3.00)</th>
+<th>틱 가치</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SPX 옵션</td>
+<td>$0.05</td>
+<td>$0.10</td>
+<td>$5.00 / $10.00</td>
+</tr>
+<tr class="even">
+<td>VIX 옵션</td>
+<td>$0.05</td>
+<td>$0.10</td>
+<td>$5.00 / $10.00</td>
+</tr>
+<tr class="odd">
+<td>XSP (Mini-SPX) 옵션</td>
+<td>$0.01</td>
+<td>$0.05</td>
+<td>$1.00 / $5.00</td>
+</tr>
+<tr class="even">
+<td>복수상장 주식 옵션 (페니 파일럿)</td>
+<td>$0.01</td>
+<td>$0.05</td>
+<td>$1.00 / $5.00</td>
+</tr>
+<tr class="odd">
+<td>복수상장 주식 옵션 (비페니)</td>
+<td>$0.05</td>
+<td>$0.10</td>
+<td>$5.00 / $10.00</td>
+</tr>
+<tr class="even">
+<td>VIX 선물 (VX)</td>
+<td>0.05 지수포인트</td>
+<td>0.05 지수포인트</td>
+<td>$50.00</td>
+</tr>
+<tr class="odd">
+<td>Mini VIX 선물</td>
+<td>0.05 지수포인트</td>
+<td>0.05 지수포인트</td>
+<td>$5.00</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="계약-승수-거래단위-contract-multipliers-lot-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="계약-승수-거래단위-contract-multipliers-lot-sizes">2.4 계약 승수 / 거래단위 (Contract Multipliers / Lot Sizes)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>승수 / 계약 규모</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SPX 옵션</td>
+<td>$100 x S&amp;P 500 지수</td>
+</tr>
+<tr class="even">
+<td>XSP (Mini-SPX) 옵션</td>
+<td>$100 x 1/10 S&amp;P 500 지수</td>
+</tr>
+<tr class="odd">
+<td>VIX 옵션</td>
+<td>$100 x VIX 지수</td>
+</tr>
+<tr class="even">
+<td>RUT (Russell 2000) 옵션</td>
+<td>$100 x Russell 2000 지수</td>
+</tr>
+<tr class="odd">
+<td>주식 옵션</td>
+<td>계약당 100주 (표준)</td>
+</tr>
+<tr class="even">
+<td>VIX 선물 (VX)</td>
+<td>$1,000 x VIX 지수</td>
+</tr>
+<tr class="odd">
+<td>Mini VIX 선물</td>
+<td>$100 x VIX 지수</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="시장조성자-마켓메이커-유동성공급자-프로그램-market-maker-liquidity-provider-programs">2.5 시장조성자 (마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)</h3>
+<p>Cboe는 옵션 거래소 전반에 걸쳐 다수의 시장조성자 지정을 운영한다:</p>
+<p><strong>시장조성자 유형 (C1 - Cboe Options Exchange):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>지정 대표 시장조성자 (DPMs)</strong></td>
+<td>배정된 종목에 대한 독점적 지정; 가장 높은 호가 의무 및 참여 권한; 지속적 양방향 시장 제공 필수</td>
+</tr>
+<tr class="even">
+<td><strong>선도 시장조성자 (LMMs)</strong></td>
+<td>특정 종목에 지정; 우선 배분 권한 (예: 배정 종목의 공개 고객 주문에 대해 최대 50%); 호가 의무</td>
+</tr>
+<tr class="odd">
+<td><strong>시장조성자 (MMs)</strong></td>
+<td>특정 종목에 등록; 폭 및 수량 요건을 충족하는 지속적 양방향 호가 유지 필수</td>
+</tr>
+<tr class="even">
+<td><strong>보조 유동성공급자 (SLPs)</strong></td>
+<td>SPX 및 VIX 종목에서의 추가 유동성</td>
+</tr>
+</tbody>
+</table>
+<p><strong>인센티브 구조:</strong> - 거래량 기준에 따른 단계별 수수료 감면 - 호가 성과에 보상하는 SPX 및 VIX 특화 인센티브 프로그램 - SCORe (Select Customer Options Rebate) 프로그램 — 소매 고객 거래량에 대한 단계별 수수료 환급 제공 - 빈번 거래자 프로그램 (FTID) — TPH 간 고객 거래량 집계하여 단계별 환급</p>
+<p>[출처: Cboe Exchange Rule Book; Cboe 수수료표, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="매매-메커니즘-trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="매매-메커니즘-trading-mechanism">3. 매매 메커니즘 (Trading Mechanism)</h2>
+<section id="단일가매매-경매-메커니즘-auction-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="단일가매매-경매-메커니즘-auction-mechanisms">3.1 단일가매매 (경매) 메커니즘 (Auction Mechanisms)</h3>
+<p>Cboe는 가격 개선 및 주문 상호작용을 위한 여러 전자 단일가매매 메커니즘을 운영한다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 57%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>단일가매매 유형</th>
+<th>설명</th>
+<th>기간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>개장 로테이션 (Opening Rotation)</strong></td>
+<td>각 시리즈의 개장가를 결정하는 전자 개장 과정; 대기 주문이 거래량 최대화 단일 산출가에서 체결</td>
+<td>시장 개장 시</td>
+</tr>
+<tr class="even">
+<td><strong>자동 개선 메커니즘 (AIM)</strong></td>
+<td>쌍대 (위탁/자기) 주문에 대한 전자 단일가매매; 가격 개선 기회 제공; 개시 회원은 참여 권한 수령 (최대 40%)</td>
+<td>통상 100ms–1초</td>
+</tr>
+<tr class="odd">
+<td><strong>권유 단일가매매 메커니즘 (SAM)</strong></td>
+<td>AIM과 유사하나 권유 주문용; 회원이 가격 개선 노출과 함께 상대방 주문 권유 가능</td>
+<td>통상 100ms–1초</td>
+</tr>
+<tr class="even">
+<td><strong>복합 주문 단일가매매 (COA)</strong></td>
+<td>복합 (다중 레그) 주문에 대한 단일가매매; 잠재적 가격 개선을 위해 복합 주문 노출</td>
+<td>거래소 결정 기간</td>
+</tr>
+<tr class="odd">
+<td><strong>스텝업 메커니즘 (SUM)</strong></td>
+<td>시장조성자가 스텝업하여 가격 개선을 제공할 수 있게 함</td>
+<td>설정 가능</td>
+</tr>
+<tr class="even">
+<td><strong>FLEX 단일가매매</strong></td>
+<td>FLEX (맞춤형) 옵션에 대한 단일가매매 과정</td>
+<td>FLEX 규칙에 따름</td>
+</tr>
+</tbody>
+</table>
+<p>추가로 Complex AIM (C-AIM), Complex SAM (C-SAM), FLEX AIM, FLEX SAM 변형이 이용 가능하다.</p>
+</section>
+<section id="접속매매-연속매매-continuous-trading" class="level3">
+<h3 class="anchored" data-anchor-id="접속매매-연속매매-continuous-trading">3.2 접속매매 (연속매매) (Continuous Trading)</h3>
+<ul>
+<li>주요 방식: Cboe Titanium 플랫폼에서의 접속 전자 체결</li>
+<li>가격 우선 및 해당 배분 알고리즘에 따라 주문 실시간 체결</li>
+<li>단순 (단일 레그) 주문, 복합 (다중 레그) 주문, 주식-옵션 주문 지원</li>
+<li>복합 주문장 (COB)은 다중 레그 전략을 위한 별도 호가장 유지; 복합 주문은 COB에서 체결되거나 순가격이 유리할 때 단순 호가장에서 “레그별” 체결 가능</li>
+</ul>
+</section>
+<section id="가격-발견-price-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="가격-발견-price-discovery">3.3 가격 발견 (Price Discovery)</h3>
+<ul>
+<li><strong>개장 로테이션:</strong> 전자 가격 발견 과정을 통해 개장가 설정</li>
+<li><strong>NBBO 통합:</strong> 옵션 거래소는 Options Order Protection and Locked/Crossed Markets Plan (Options Linkage Plan)에 따라 운영; 전국최우선호가(NBBO) 존중 필수</li>
+<li><strong>복합 주문 가격 결정:</strong> 복합 주문은 순가격 요건 하에 개별 레그 NBBO를 개선할 수 있는 순가격으로 체결 가능</li>
+<li><strong>VIX 정산:</strong> 특별개장호가(SOQ) 과정은 만기 당일 아침 선별된 SPX 옵션의 시가를 사용하여 VIX 정산 가치를 산출</li>
+</ul>
+</section>
+<section id="주문-우선순위-규칙-매칭-알고리즘-order-priority-rules-matching-algorithms" class="level3">
+<h3 class="anchored" data-anchor-id="주문-우선순위-규칙-매칭-알고리즘-order-priority-rules-matching-algorithms">3.4 주문 우선순위 규칙 / 매칭 알고리즘 (Order Priority Rules / Matching Algorithms)</h3>
+<p>Cboe는 옵션 거래소 전반에 가격/시간 우선 (FIFO)을 주요 매칭 알고리즘으로 사용한다:</p>
+<p><strong>우선순위 계층:</strong> 1. <strong>가격 우선</strong> — 더 좋은 가격의 주문이 항상 먼저 체결 2. <strong>고객 우선</strong> — 공개 고객 주문이 전문가 및 회사 주문보다 동일 가격에서 우선 (C1 및 EDGX Options) 3. <strong>시장조성자 참여 권한</strong> — DPM/LMM은 특정 주문 흐름에 대해 참여 권리 수령 (설정 가능 %, 최대 50%) 4. <strong>시간 우선 (FIFO)</strong> — 동일 우선순위, 동일 가격의 주문 중 가장 빠른 주문 먼저 체결 5. <strong>비례 배분 (Pro-Rata)</strong> — 특정 거래소의 특정 종목에 사용 [unverified — 현행 상품 세트]</p>
+<p><strong>핵심 규칙:</strong> - 공개 고객 주문은 전문 고객, 브로커-딜러, 시장조성자 주문보다 동일 가격에서 우선 - 지정 시장조성자 (DPM/LMM)는 보장된 참여 비율 수령 가능 - 특정 적격 주문에 대해 소량 주문 체결 보장이 적용될 수 있음</p>
+<p>[출처: Cboe Exchange Rule Book, Rules 5.32-5.35; Cboe 옵션 매매 문서, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="주문-유형-order-types" class="level2">
+<h2 class="anchored" data-anchor-id="주문-유형-order-types">4. 주문 유형 (Order Types)</h2>
+<section id="기본-주문-유형-standard-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="기본-주문-유형-standard-order-types">4.1 기본 주문 유형 (Standard Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 64%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>지정가주문 (Limit)</strong></td>
+<td>지정된 가격 또는 그보다 유리한 가격으로 매수/매도; 미체결 수량은 호가장에 잔류</td>
+</tr>
+<tr class="even">
+<td><strong>시장가주문 (Market)</strong></td>
+<td>최우선 가격으로 체결; 각 거래소의 시장가 처리 규칙에 따름</td>
+</tr>
+<tr class="odd">
+<td><strong>역지정가 주문 (Stop)</strong></td>
+<td>지정된 역지정가에 도달하면 발동; 시장가주문으로 전환</td>
+</tr>
+<tr class="even">
+<td><strong>역지정가-지정가 주문 (Stop-Limit)</strong></td>
+<td>역지정가에서 발동; 지정된 가격의 지정가주문으로 전환</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="고급-주문-유형-advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="고급-주문-유형-advanced-order-types">4.2 고급 주문 유형 (Advanced Order Types)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 64%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>주문 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>복합 / 스프레드 주문 (Complex / Spread Orders)</strong></td>
+<td>단일 전략으로 제출되는 다중 레그 주문 (예: 수직 스프레드, 스트래들, 버터플라이, 콘도르, 캘린더); 순 차변/대변 가격으로 체결</td>
+</tr>
+<tr class="even">
+<td><strong>주식-옵션 주문 (Stock-Option Orders)</strong></td>
+<td>쌍을 이루는 주식 및 옵션 레그를 함께 제출</td>
+</tr>
+<tr class="odd">
+<td><strong>AIM 주문</strong></td>
+<td>자동 개선 메커니즘 단일가매매를 위한 쌍대 주문</td>
+</tr>
+<tr class="even">
+<td><strong>SAM 주문</strong></td>
+<td>권유 단일가매매 메커니즘을 위한 쌍대 주문</td>
+</tr>
+<tr class="odd">
+<td><strong>FLEX 주문</strong></td>
+<td>사용자 정의 행사가, 만기일, 행사 방식, 결제 유형을 갖춘 맞춤형 옵션</td>
+</tr>
+<tr class="even">
+<td><strong>전량충족 (AON)</strong></td>
+<td>전량 체결되거나 전혀 체결되지 않아야 함</td>
+</tr>
+<tr class="odd">
+<td><strong>최소 수량 (Minimum Quantity)</strong></td>
+<td>최소 체결 수량 요구</td>
+</tr>
+<tr class="even">
+<td><strong>예비 / 아이스버그 (Reserve / Iceberg)</strong></td>
+<td>총 주문 수량의 일부만 표시</td>
+</tr>
+<tr class="odd">
+<td><strong>조건부 교차 (QCC)</strong></td>
+<td>주식 부수 조건을 갖춘 쌍대 옵션 주문; 노출 요건 면제; 최소 1,000계약</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-유효조건-time-in-force-tif" class="level3">
+<h3 class="anchored" data-anchor-id="주문-유효조건-time-in-force-tif">4.3 주문 유효조건 (Time-in-Force, TIF)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TIF</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Day</strong></td>
+<td>현재 매매 세션에만 유효</td>
+</tr>
+<tr class="even">
+<td><strong>Good Till Cancel (GTC)</strong></td>
+<td>체결되거나 취소될 때까지 유지</td>
+</tr>
+<tr class="odd">
+<td><strong>Good Till Date (GTD)</strong></td>
+<td>지정된 날짜까지 유지</td>
+</tr>
+<tr class="even">
+<td><strong>Immediate or Cancel (IOC)</strong></td>
+<td>가용 수량만큼 즉시 체결; 미체결 잔량 취소</td>
+</tr>
+<tr class="odd">
+<td><strong>Fill or Kill (FOK)</strong></td>
+<td>전량 즉시 체결되거나 전량 취소</td>
+</tr>
+<tr class="even">
+<td><strong>개장 전용 (Opening Only)</strong></td>
+<td>개장 로테이션에만 참여</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주문-수정-및-취소-order-modification-cancellation" class="level3">
+<h3 class="anchored" data-anchor-id="주문-수정-및-취소-order-modification-cancellation">4.4 주문 수정 및 취소 (Order Modification &amp; Cancellation)</h3>
+<ul>
+<li>BOE (Binary Order Entry) 프로토콜을 통해 매매 세션 중 주문의 가격, 수량 수정 또는 취소 가능</li>
+<li><strong>일괄 취소 (Mass Cancel):</strong> 세션, 상품 또는 기초자산별 모든 미체결 주문 취소 기능</li>
+<li><strong>접속 해제 시 취소 (Cancel on Disconnect):</strong> 매매 세션 연결 해제 시 미체결 주문을 취소하는 설정 가능 기능</li>
+<li><strong>킬 스위치 / 퍼지 (Kill Switch / Purge):</strong> 모든 대기 주문 및 호가의 즉시 취소 (리스크 관리 도구는 8장 참조)</li>
+<li><strong>자기거래 방지 (Self-Trade Prevention):</strong> 동일 회사 주문 간 체결 방지 설정 가능</li>
+</ul>
+<p>[출처: Cboe US Options BOE Specification; Cboe Exchange Rule Book, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="매매시스템-기술-cboe-titanium-trading-system-technology-cboe-titanium" class="level2">
+<h2 class="anchored" data-anchor-id="매매시스템-기술-cboe-titanium-trading-system-technology-cboe-titanium">5. 매매시스템 기술 — Cboe Titanium (Trading System Technology — Cboe Titanium)</h2>
+<section id="시스템-개요-system-overview" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-개요-system-overview">5.1 시스템 개요 (System Overview)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>플랫폼 명칭</td>
+<td>Cboe Titanium (Cboe Ti)</td>
+</tr>
+<tr class="even">
+<td>기원</td>
+<td>BATS Exchange 기술에서 발전 (2017년 인수); 원래 처음부터 설계된 전자 거래소</td>
+</tr>
+<tr class="odd">
+<td>아키텍처</td>
+<td>거래소당 다수 매칭 유닛을 갖춘 분산 매매체결엔진 아키텍처; 주문 핸들러와 매매체결엔진 간 지연 균등화 연결</td>
+</tr>
+<tr class="even">
+<td>주 데이터센터</td>
+<td>Equinix NY5, 뉴저지주 Secaucus (미국 운영); NY4 및 NY6에서 지연 균등화 접근</td>
+</tr>
+<tr class="odd">
+<td>보조 데이터센터</td>
+<td>재해복구 사이트 (비공개 위치) [unverified]</td>
+</tr>
+<tr class="even">
+<td>지연시간</td>
+<td>Dedicated Cores 서비스로 ~60% 지연 감소 달성 (미국); 서브 100 마이크로초 주문 처리 [unverified — 정확한 수치]</td>
+</tr>
+<tr class="odd">
+<td>처리량</td>
+<td>27개 글로벌 시장에서 하루 ~2,000억 건의 주문 및 호가 처리 (최고 일간 기록); 미국 옵션 접근 아키텍처에서 일일 ~1,000억 건의 호가 및 주문</td>
+</tr>
+<tr class="even">
+<td>가동시간</td>
+<td>27개 글로벌 플랫폼 중 25개에서 100% 가동; 전체 &gt;99.9% (2024년)</td>
+</tr>
+<tr class="odd">
+<td>글로벌 플랫폼</td>
+<td>미국, 영국, 유럽, 일본, 호주에 걸쳐 27개 시장 운영</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="시스템-연혁-system-history" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-연혁-system-history">5.2 시스템 연혁 (System History)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>연도</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2005</td>
+<td>BATS Exchange, 완전 전자 거래소, 특수 설계 기술로 설립</td>
+</tr>
+<tr class="even">
+<td>2006-2016</td>
+<td>BATS 기술 10년 이상 개선; 저지연, 고신뢰성 아키텍처로 인정</td>
+</tr>
+<tr class="odd">
+<td>2017</td>
+<td>Cboe, BATS 인수; 레거시 CBOE 시스템의 BATS 파생 기술로의 이전 개시</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>Cboe Options (C1), BATS 기술 플랫폼으로 이전 (Feature Pack 4 통합)</td>
+</tr>
+<tr class="odd">
+<td>2022-2023</td>
+<td>플랫폼 “Cboe Titanium”으로 리브랜딩</td>
+</tr>
+<tr class="even">
+<td>2024-2025</td>
+<td>60% 지연 감소의 Dedicated Cores 서비스 출시; 영국, EU, 호주로 확장; 캐나다 이전 완료 (~45.5% FIX 지연 개선)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="프로토콜-스택-protocol-stack" class="level3">
+<h3 class="anchored" data-anchor-id="프로토콜-스택-protocol-stack">5.3 프로토콜 스택 (Protocol Stack)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 27%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>프로토콜</th>
+<th>용도</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>BOE (Binary Order Entry)</strong></td>
+<td>주문 입력</td>
+<td>주문 제출, 수정, 취소를 위한 독자 바이너리 프로토콜; 현재 버전 BOE v2 및 BOE v3</td>
+</tr>
+<tr class="even">
+<td><strong>FIX</strong></td>
+<td>주문 입력 (대안)</td>
+<td>FIX 4.2 기반 주문 입력 프로토콜; BOE보다 높은 지연</td>
+</tr>
+<tr class="odd">
+<td><strong>Multicast PITCH</strong></td>
+<td>시장 데이터 (L3 깊이)</td>
+<td>UDP 멀티캐스트를 통한 전체 호가장 깊이 데이터; 개별 주문 추가, 수정, 취소, 체결 제공</td>
+</tr>
+<tr class="even">
+<td><strong>Multicast TOP</strong></td>
+<td>시장 데이터 (L1 상단)</td>
+<td>UDP 멀티캐스트를 통한 최우선호가; PITCH 대비 대폭 감소된 대역폭</td>
+</tr>
+<tr class="odd">
+<td><strong>Complex PITCH</strong></td>
+<td>시장 데이터 (복합 호가장)</td>
+<td>복합 주문장 깊이 데이터</td>
+</tr>
+<tr class="even">
+<td><strong>TCP PITCH</strong></td>
+<td>시장 데이터 (TCP)</td>
+<td>갭 복구 및 저대역폭 연결을 위한 TCP를 통한 PITCH 데이터</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="재해복구-업무연속성-disaster-recovery-business-continuity" class="level3">
+<h3 class="anchored" data-anchor-id="재해복구-업무연속성-disaster-recovery-business-continuity">5.4 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)</h3>
+<ul>
+<li>장애 조치 운영을 위한 보조 데이터센터</li>
+<li>Cboe Global Cloud (AWS 기반)가 시장 데이터 배포를 위한 지리적 다양성 제공</li>
+<li>거래소당 다수 매칭 유닛 설계; 단일 매칭 유닛 장애 시 전체 거래소 중단 없음</li>
+<li>정기적 DR 테스트 및 BCP 훈련 [unverified — 구체적 빈도]</li>
+<li>NY4, NY5, NY6 데이터센터 간 지연 균등화로 인프라 이중화 제공</li>
+</ul>
+<p>[출처: Cboe Titanium 페이지; Cboe 접속 매뉴얼; Cboe 보도자료; StockTitan 뉴스, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="시장-데이터-market-data" class="level2">
+<h2 class="anchored" data-anchor-id="시장-데이터-market-data">6. 시장 데이터 (Market Data)</h2>
+<section id="피드-프로토콜-feed-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="피드-프로토콜-feed-protocols">6.1 피드 프로토콜 (Feed Protocols)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>피드</th>
+<th>유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Multicast PITCH</strong></td>
+<td>L3 호가장 깊이</td>
+<td>추가, 수정, 취소, 체결을 포함한 전체 주문별 데이터; 매칭 유닛별 UDP 멀티캐스트 전달</td>
+</tr>
+<tr class="even">
+<td><strong>Multicast TOP</strong></td>
+<td>L1 최우선호가</td>
+<td>최우선 매수/매도호가 및 최근 체결 데이터; PITCH 대비 축소된 대역폭</td>
+</tr>
+<tr class="odd">
+<td><strong>Complex Multicast PITCH</strong></td>
+<td>복합 호가장 깊이</td>
+<td>복합 주문장의 깊이 데이터</td>
+</tr>
+<tr class="even">
+<td><strong>Complex Auction Multicast PITCH</strong></td>
+<td>단일가매매 알림</td>
+<td>복합 주문 단일가매매의 실시간 알림</td>
+</tr>
+<tr class="odd">
+<td><strong>Cboe One Options Feed</strong></td>
+<td>통합 L1</td>
+<td>4개 Cboe 옵션 거래소 전체의 최우선호가 데이터를 집계하는 단일 피드</td>
+</tr>
+<tr class="even">
+<td><strong>TCP PITCH</strong></td>
+<td>복구</td>
+<td>갭 채우기를 위한 TCP를 통한 PITCH 데이터; Gap Request Proxy (GRP) 서버가 재전송 제공</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="데이터-수준-data-levels" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-수준-data-levels">6.2 데이터 수준 (Data Levels)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>수준</th>
+<th>내용</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Level 1 (TOP)</strong></td>
+<td>최우선호가, 최근 체결, 거래량</td>
+<td>소매 매매, 디스플레이 시스템</td>
+</tr>
+<tr class="even">
+<td><strong>Level 2 (PITCH 요약)</strong></td>
+<td>가격 수준별 집계 깊이</td>
+<td>전문 매매</td>
+</tr>
+<tr class="odd">
+<td><strong>Level 3 (PITCH 전체)</strong></td>
+<td>개별 주문별 데이터</td>
+<td>HFT, 시장조성, 감시</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="데이터-배포-data-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-배포-data-distribution">6.3 데이터 배포 (Data Distribution)</h3>
+<ul>
+<li><strong>직접 피드:</strong> Cboe 데이터센터 (NY4, NY5, NY6)의 코로케이션 연결을 통해 이용 가능</li>
+<li><strong>Cboe Global Cloud:</strong> AWS 기반 글로벌 배포 플랫폼; 지리적으로 다양한 위치에서 Cboe 시장 데이터 전달; 클라우드 계정 불필요 — 온프레미스 및 제3자 인프라 연결 지원</li>
+<li><strong>증권정보처리기관 (SIPs):</strong> Cboe 데이터가 통합 옵션 테이프를 위해 OPRA (Options Price Reporting Authority)에 기여</li>
+<li><strong>제3자 벤더:</strong> 주요 시장 데이터 벤더 (Bloomberg, Refinitiv/LSEG, ICE 등)를 통해 Cboe 데이터 이용 가능</li>
+</ul>
+</section>
+<section id="과거-데이터-historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="과거-데이터-historical-data">6.4 과거 데이터 (Historical Data)</h3>
+<ul>
+<li><strong>Cboe DataShop</strong> (datashop.cboe.com): 과거 시장 데이터를 위한 셀프서비스 플랫폼</li>
+<li>상품 포함: 과거 PITCH 데이터, 일말 옵션 데이터, VIX 지수 이력, 옵션 정산 데이터</li>
+<li><strong>Cboe LiveVol:</strong> 옵션 분석 및 과거 데이터 플랫폼 (LiveVol 인수를 통해 확보)</li>
+<li><strong>Cboe Data Vantage:</strong> 데이터 및 분석 사업 부문; 2026년 중-고 한 자릿수 순매출 성장 가이던스</li>
+</ul>
+<p>[출처: Cboe 시장 데이터 사양; Cboe Global Cloud FAQ; Cboe DataShop, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="접속-및-접근-connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="접속-및-접근-connectivity-access">7. 접속 및 접근 (Connectivity &amp; Access)</h2>
+<section id="회원-접근-membership-access" class="level3">
+<h3 class="anchored" data-anchor-id="회원-접근-membership-access">7.1 회원 / 접근 (Membership / Access)</h3>
+<p><strong>옵션 거래소:</strong> - Cboe 옵션 거래소에서 직접 매매하려면 매매허가보유자(TPH) 자격 필요 - 신청 과정에 운영 역량, 인력 경험, 재무 상태 평가 포함 - TPH 범주: 시장조성자, 플로어 브로커 (C1만 — 제한적 플로어 매매), 전자 접근 허가</p>
+<p><strong>Cboe Futures Exchange:</strong> - CFE에 대한 직접 접근을 위해 매매권한보유자(TPH) 자격 필요 - 청산회원은 OCC 회원이어야 함</p>
+</section>
+<section id="접속-방법-connection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="접속-방법-connection-methods">7.2 접속 방법 (Connection Methods)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>방법</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cboe Connect</strong></td>
+<td>경쟁적 마이크로초 왕복 지연을 제공하는 Cboe 관리형 네트워크; 다수 Cboe 시장 간 연결 제공</td>
+</tr>
+<tr class="even">
+<td><strong>크로스커넥트 (Cross-Connect)</strong></td>
+<td>Cboe 데이터센터 (NY4, NY5, NY6) 내 직접 물리적 연결</td>
+</tr>
+<tr class="odd">
+<td><strong>엑스트라넷 / 제3자 네트워크</strong></td>
+<td>금융 엑스트라넷 (예: TNS, IPC, Avelacom)을 통한 접근</td>
+</tr>
+<tr class="even">
+<td><strong>Cboe Global Cloud</strong></td>
+<td>시장 데이터 접근을 위한 AWS 통한 클라우드 기반 연결 (주문 입력에는 미사용)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="코로케이션-co-location" class="level3">
+<h3 class="anchored" data-anchor-id="코로케이션-co-location">7.3 코로케이션 (Co-Location)</h3>
+<ul>
+<li>주 코로케이션 시설: Equinix NY5, 뉴저지주 Secaucus</li>
+<li>추가 지연 균등화 접근점: Equinix NY4 및 NY6</li>
+<li>Cboe는 데이터센터 간 주문 핸들러와 매매체결엔진 간 동일 광섬유 길이 보장</li>
+<li><strong>유럽:</strong> Cboe Europe 운영을 위한 Equinix LD4 (주), Equinix LD3 (보조)</li>
+</ul>
+</section>
+<section id="api-프로토콜-api-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="api-프로토콜-api-protocols">7.4 API 프로토콜 (API Protocols)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 27%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>프로토콜</th>
+<th>용도</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>BOE v2 / BOE v3</strong></td>
+<td>주문 입력</td>
+<td>독자 바이너리 프로토콜; 최저 지연</td>
+</tr>
+<tr class="even">
+<td><strong>FIX 4.2</strong></td>
+<td>주문 입력</td>
+<td>업계 표준 프로토콜; BOE보다 높은 지연</td>
+</tr>
+<tr class="odd">
+<td><strong>Multicast UDP</strong></td>
+<td>시장 데이터</td>
+<td>PITCH 및 TOP 피드</td>
+</tr>
+<tr class="even">
+<td><strong>TCP</strong></td>
+<td>시장 데이터 복구</td>
+<td>갭 요청 및 재전송을 위한 TCP PITCH</td>
+</tr>
+<tr class="odd">
+<td><strong>Web API / REST</strong></td>
+<td>참조 데이터, 단일가매매 데이터</td>
+<td>지연 민감도가 낮은 운영을 위한 Cboe 웹 기반 API [unverified]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="인증-테스트-certification-testing" class="level3">
+<h3 class="anchored" data-anchor-id="인증-테스트-certification-testing">7.5 인증 / 테스트 (Certification / Testing)</h3>
+<ul>
+<li>신규 회원은 프로덕션 접근 허가 전 인증 테스트 완료 필수</li>
+<li>Cboe는 모든 프로토콜 (BOE, FIX, PITCH)에 대한 테스트 환경 (인증 환경) 제공</li>
+<li>각 거래소 및 프로토콜 유형별 별도 인증 필요</li>
+<li>리스크 관리 도구 설정 테스트 필요</li>
+</ul>
+<p>[출처: Cboe 접속 매뉴얼; Cboe 회원 페이지; Cboe Global Cloud FAQ, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="리스크-통제-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="리스크-통제-및-서킷브레이커-매매거래중단-risk-controls-circuit-breakers">8. 리스크 통제 및 서킷브레이커 (매매거래중단) (Risk Controls &amp; Circuit Breakers)</h2>
+<section id="시장-전체-서킷브레이커-mwcb-market-wide-circuit-breakers" class="level3">
+<h3 class="anchored" data-anchor-id="시장-전체-서킷브레이커-mwcb-market-wide-circuit-breakers">8.1 시장 전체 서킷브레이커 (MWCB) (Market-Wide Circuit Breakers)</h3>
+<p>Cboe는 모든 미국 주식, 옵션, 선물 거래소 간 조율되는 미국 시장 전체 서킷브레이커 프로그램에 참여한다:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>수준</th>
+<th>기준 (S&amp;P 500 하락)</th>
+<th>중단 기간</th>
+<th>시간 조건</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>레벨 1</strong></td>
+<td>7%</td>
+<td>15분 중단</td>
+<td>ET 오후 3:25 이전에만</td>
+</tr>
+<tr class="even">
+<td><strong>레벨 2</strong></td>
+<td>13%</td>
+<td>15분 중단</td>
+<td>ET 오후 3:25 이전에만</td>
+</tr>
+<tr class="odd">
+<td><strong>레벨 3</strong></td>
+<td>20%</td>
+<td>잔여 시간 매매 중단</td>
+<td>모든 시간</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="제한가-하한가-luld-limit-up-limit-down" class="level3">
+<h3 class="anchored" data-anchor-id="제한가-하한가-luld-limit-up-limit-down">8.2 제한가-하한가 (LULD) (Limit Up-Limit Down)</h3>
+<ul>
+<li>Cboe는 개별 증권에 대한 LULD 계획에 참여</li>
+<li>기초 주식이 LULD에 따라 중단되면 옵션 매매 중단 발동</li>
+<li>참조 가격에 기반한 가격 밴드 산출; 밴드 내에서 매매가 없으면 5분간 해당 증권 중단</li>
+</ul>
+</section>
+<section id="사전-매매-리스크-통제-pre-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="사전-매매-리스크-통제-pre-trade-risk-controls">8.3 사전 매매 리스크 통제 (Pre-Trade Risk Controls)</h3>
+<p>Cboe는 모든 매매허가보유자에게 포괄적 리스크 관리 도구를 제공한다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>도구</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>퍼지 (킬 스위치) (Purge)</strong></td>
+<td>지정된 거래소의 모든 대기 주문 및 호가 즉시 취소</td>
+</tr>
+<tr class="even">
+<td><strong>리스크 모니터 메커니즘</strong></td>
+<td>체결 계약 수량, 명목 거래량, 시간 구간에 기반한 원치 않는 체결 방지를 위한 설정 가능 매개변수</td>
+</tr>
+<tr class="odd">
+<td><strong>팻 핑거 / 가격 합리성</strong></td>
+<td>유입 주문에 대한 거래소 수준 가격 합리성 검사</td>
+</tr>
+<tr class="even">
+<td><strong>주문 크기 한도</strong></td>
+<td>회원별 설정 가능한 최대 주문 크기 한도</td>
+</tr>
+<tr class="odd">
+<td><strong>드릴스루 보호 (Drill-Through Protection)</strong></td>
+<td>설정 가능 기준을 초과하여 다수 가격 수준을 관통하는 주문 체결 방지</td>
+</tr>
+<tr class="even">
+<td><strong>접속 해제 시 취소</strong></td>
+<td>세션 연결 해제 시 미체결 주문 자동 취소</td>
+</tr>
+<tr class="odd">
+<td><strong>반복 자동 체결 보호</strong></td>
+<td>빠른 시장에서 시장조성자가 반복적으로 포착되는 것을 방지</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="포지션한도-및-행사한도-position-and-exercise-limits" class="level3">
+<h3 class="anchored" data-anchor-id="포지션한도-및-행사한도-position-and-exercise-limits">8.4 포지션한도 및 행사한도 (Position and Exercise Limits)</h3>
+<ul>
+<li>주식 옵션의 포지션한도는 Cboe Exchange 규칙에 따라 설정 (기초자산 유동성 및 시가총액에 따라 통상 25,000~250,000계약)</li>
+<li>지수 옵션 (SPX, VIX) — 포지션한도가 특정 종목에 대해 대폭 확대 또는 사실상 폐지:
+<ul>
+<li>SPX 옵션: 포지션한도 없음 (SEC 승인으로 제거) [unverified — 현행 상태]</li>
+<li>VIX 옵션: 포지션한도 적용, 헤지 면제 신청 가능</li>
+</ul></li>
+<li>행사한도는 일반적으로 포지션한도와 동일</li>
+<li>지정 기준 초과 시 대규모 거래자 보고 필요 (CFTC 및 SEC 대규모 거래자 보고)</li>
+</ul>
+<p>[출처: Cboe Market-Wide Circuit Breaker FAQ; Cboe US Options Risk Management Specification; Cboe Exchange Rule Book, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="규제-체계-regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="규제-체계-regulatory-framework">9. 규제 체계 (Regulatory Framework)</h2>
+<section id="감독-기관-supervising-authorities" class="level3">
+<h3 class="anchored" data-anchor-id="감독-기관-supervising-authorities">9.1 감독 기관 (Supervising Authorities)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>기관</th>
+<th>범위</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SEC (증권거래위원회)</strong></td>
+<td>등록된 국가 증권 거래소로서 모든 Cboe 옵션 및 주식 거래소 감독</td>
+</tr>
+<tr class="even">
+<td><strong>CFTC (상품선물거래위원회)</strong></td>
+<td>지정계약시장(DCM)으로서 Cboe Futures Exchange (CFE) 감독</td>
+</tr>
+<tr class="odd">
+<td><strong>OCC (Options Clearing Corporation)</strong></td>
+<td>모든 Cboe 옵션 및 CFE 선물의 중앙청산소(CCP); 자체적으로 시스템적으로 중요한 금융시장인프라(SIFMU)로서 SEC 및 CFTC의 규제를 받음</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="자율규제기관-sro-지위-self-regulatory-organization-status" class="level3">
+<h3 class="anchored" data-anchor-id="자율규제기관-sro-지위-self-regulatory-organization-status">9.2 자율규제기관 (SRO) 지위 (Self-Regulatory Organization Status)</h3>
+<ul>
+<li>각 Cboe 거래소는 별도로 등록된 SRO</li>
+<li>SRO 책임 포함: 규정 집행, 회원 감독, 시장 감시, 징계 절차</li>
+<li>Cboe 규제부가 매매 활동을 모니터링하고, 잠재적 시장 조작을 감지하며, 의심스러운 활동을 조사</li>
+</ul>
+</section>
+<section id="주요-규정-key-regulations" class="level3">
+<h3 class="anchored" data-anchor-id="주요-규정-key-regulations">9.3 주요 규정 (Key Regulations)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>규정</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Regulation SHO</strong></td>
+<td>주식 옵션 행사에 적용되는 공매도 규정</td>
+</tr>
+<tr class="even">
+<td><strong>Regulation NMS</strong></td>
+<td>전국시장시스템 규칙; Options Linkage Plan이 거래소 간 가격 보호 보장</td>
+</tr>
+<tr class="odd">
+<td><strong>Regulation SCI</strong></td>
+<td>시스템 준수 및 무결성 — SCI 대상 기관에 대한 강건한 기술 거버넌스 요구</td>
+</tr>
+<tr class="even">
+<td><strong>SEC Rule 15c3-5</strong></td>
+<td>시장 접근 규칙 — 브로커-딜러 접근에 대한 리스크 통제 요구</td>
+</tr>
+<tr class="odd">
+<td><strong>CFTC Part 38</strong></td>
+<td>CFE에 대한 지정계약시장 규칙</td>
+</tr>
+<tr class="even">
+<td><strong>도드-프랭크법</strong></td>
+<td>스왑에 적용되는 Title VII 조항; OCC에 적용되는 Title VIII (SIFMU)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="감시-및-시장-건전성-surveillance-market-integrity" class="level3">
+<h3 class="anchored" data-anchor-id="감시-및-시장-건전성-surveillance-market-integrity">9.4 감시 및 시장 건전성 (Surveillance &amp; Market Integrity)</h3>
+<ul>
+<li>Cboe 시장규제부가 첨단 기술 시스템을 사용하여 실시간 감시 수행</li>
+<li>시장간감시그룹(ISG)을 통한 교차시장 감시</li>
+<li>포지션 모니터링을 위한 OCC에 대한 대규모 옵션 포지션 보고 (LOPR)</li>
+<li>옵션규제감시기관(ORSA) — 거래소 간 상장 옵션에 대한 통합 감시</li>
+</ul>
+</section>
+<section id="국경간-운영-cross-border-operations" class="level3">
+<h3 class="anchored" data-anchor-id="국경간-운영-cross-border-operations">9.5 국경간 운영 (Cross-Border Operations)</h3>
+<ul>
+<li>Cboe Europe: 영국에서 인가투자거래소(RIE)로, EU (네덜란드)에서 MiFID II에 따른 규제시장으로 운영</li>
+<li>Cboe Japan: 사설매매시스템(PTS)으로 운영</li>
+<li>Cboe Australia: 호주시장면허에 따라 운영 (2025년 매각 절차 개시)</li>
+<li>Cboe Canada: 대안매매시스템(ATS) 및 거래소로 운영 (2025년 매각 절차 개시)</li>
+</ul>
+<p>[출처: Cboe Exchange Rule Book; SEC 등록; Cboe 규제 페이지, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="수수료-및-수익-모델-fees-revenue-model" class="level2">
+<h2 class="anchored" data-anchor-id="수수료-및-수익-모델-fees-revenue-model">10. 수수료 및 수익 모델 (Fees &amp; Revenue Model)</h2>
+<section id="매매-수수료-옵션-거래소-trading-fees-options-exchanges" class="level3">
+<h3 class="anchored" data-anchor-id="매매-수수료-옵션-거래소-trading-fees-options-exchanges">10.1 매매 수수료 — 옵션 거래소 (Trading Fees — Options Exchanges)</h3>
+<p>Cboe 옵션 거래소는 차별화된 수수료 모델로 운영된다:</p>
+<p><strong>Cboe Options Exchange (C1) — 수수료 예시 (2026년 3월 기준):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>분류</th>
+<th>SPX (계약당)</th>
+<th>VIX (계약당)</th>
+<th>복수상장 주식 (계약당)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>고객</td>
+<td>$0.18–$0.47 (단계별)</td>
+<td>$0.15–$0.45 (단계별)</td>
+<td>$0.00–$0.25 (단계별)</td>
+</tr>
+<tr class="even">
+<td>시장조성자</td>
+<td>종목/등급별 상이</td>
+<td>종목/등급별 상이</td>
+<td>지정에 따라 상이</td>
+</tr>
+<tr class="odd">
+<td>회사 / 브로커-딜러</td>
+<td>$0.15–$0.50</td>
+<td>$0.15–$0.50</td>
+<td>$0.02–$0.50</td>
+</tr>
+</tbody>
+</table>
+<p>주: 정확한 수수료는 거래량 등급, 자격 (고객/전문가/시장조성자), 특정 프로그램 참여에 따라 크게 상이하다. 정확한 요율은 현행 수수료표를 참조.</p>
+<p><strong>거래소별 수수료 모델:</strong> - <strong>C1 (Cboe Options):</strong> 비례 배분 가격; 독자 상품에 대한 명시적 메이커-테이커 없음 - <strong>BZX Options:</strong> 유동성 추가에 대한 환급이 있는 메이커-테이커 가격 - <strong>EDGX Options:</strong> 고객 우선을 갖춘 메이커-테이커 가격 - <strong>C2:</strong> 상품 분류별 수수료 구조 상이</p>
+</section>
+<section id="매매-수수료-cfe-선물-trading-fees-cfe-futures" class="level3">
+<h3 class="anchored" data-anchor-id="매매-수수료-cfe-선물-trading-fees-cfe-futures">10.2 매매 수수료 — CFE 선물 (Trading Fees — CFE Futures)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>상품</th>
+<th>거래 수수료</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VIX 선물 (VX)</td>
+<td>계약당 $0.47–$1.32 (거래량 단계별)</td>
+</tr>
+<tr class="even">
+<td>Mini VIX 선물</td>
+<td>계약당 $0.10–$0.30 (단계별) [unverified]</td>
+</tr>
+<tr class="odd">
+<td>부과금</td>
+<td>규제 수수료, 청산 수수료, 거래소 수수료가 추가로 적용</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="시장-데이터-수수료-market-data-fees" class="level3">
+<h3 class="anchored" data-anchor-id="시장-데이터-수수료-market-data-fees">10.3 시장 데이터 수수료 (Market Data Fees)</h3>
+<ul>
+<li>PITCH (깊이), TOP (최우선호가), 통합 피드에 대한 실시간 데이터 수수료</li>
+<li>Cboe One Options Feed: 4개 옵션 거래소 전체의 통합 L1 데이터</li>
+<li>Cboe DataShop을 통한 과거 데이터 이용 가능</li>
+<li>Cboe Data Vantage 부문: 성장하는 매출 동력 (~2026년 중-고 한 자릿수 유기적 성장 목표)</li>
+</ul>
+</section>
+<section id="접속-수수료-connectivity-fees" class="level3">
+<h3 class="anchored" data-anchor-id="접속-수수료-connectivity-fees">10.4 접속 수수료 (Connectivity Fees)</h3>
+<ul>
+<li>Cboe 데이터센터 (NY4, NY5, NY6)의 코로케이션 수수료</li>
+<li>Cboe Connect 네트워크 접근 수수료</li>
+<li>거래소별 논리적 연결에 대한 포트 수수료</li>
+<li>시장 데이터 배포를 위한 Cboe Global Cloud 접근 수수료</li>
+</ul>
+</section>
+<section id="수익-분류-2025-revenue-breakdown" class="level3">
+<h3 class="anchored" data-anchor-id="수익-분류-2025-revenue-breakdown">10.5 수익 분류 (2025) (Revenue Breakdown)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>부문</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>옵션</strong></td>
+<td>최대 부문; SPX, VIX, 복수상장 주식 옵션에 의해 좌우; 2025년 순매출 34% 증가</td>
+</tr>
+<tr class="even">
+<td><strong>북미 주식</strong></td>
+<td>4개 주식 거래소; 거래 및 시장 데이터 수수료</td>
+</tr>
+<tr class="odd">
+<td><strong>선물</strong></td>
+<td>CFE — VIX 선물 및 관련 상품</td>
+</tr>
+<tr class="even">
+<td><strong>유럽 및 아시아태평양</strong></td>
+<td>Cboe Europe, Japan, Australia 주식/파생상품</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Vantage</strong></td>
+<td>시장 데이터, 분석, 지수 라이선스</td>
+</tr>
+<tr class="even">
+<td><strong>합계</strong></td>
+<td>24억 달러 순매출 (2025년 기록)</td>
+</tr>
+</tbody>
+</table>
+<p>[출처: Cboe 수수료표 (C1, C2, BZX, EDGX, CFE); Cboe 2025년 4분기 실적 발표, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="최근-동향-recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="최근-동향-recent-developments">11. 최근 동향 (Recent Developments)</h2>
+<section id="기술-업그레이드-technology-upgrades" class="level3">
+<h3 class="anchored" data-anchor-id="기술-업그레이드-technology-upgrades">11.1 기술 업그레이드 (Technology Upgrades)</h3>
+<ul>
+<li><strong>Cboe Titanium Dedicated Cores:</strong> 미국 고객을 위한 60% 지연 감소로 출시; 유럽 및 아시아태평양으로 확장</li>
+<li><strong>BOE v3:</strong> 차세대 바이너리 주문 입력 프로토콜, 거래소 전반에 걸쳐 배포 중</li>
+<li><strong>NY6 통합:</strong> Cboe, Secaucus Equinix NY6 데이터센터로의 지연 균등화 연결 확대</li>
+<li><strong>Cboe Global Cloud 확장:</strong> AWS를 통한 클라우드 기반 시장 데이터 배포 지속 확장</li>
+</ul>
+</section>
+<section id="신규-상품-new-products" class="level3">
+<h3 class="anchored" data-anchor-id="신규-상품-new-products">11.2 신규 상품 (New Products)</h3>
+<ul>
+<li><strong>Magnificent 10 Index (MGTN):</strong> 2025년 12월 8일 선물 및 옵션 출시, 미국 대형 기술/성장주 10종목을 추종하는 Cboe Magnificent 10 지수</li>
+<li><strong>Mini-SPX 예측시장:</strong> 2026년 2분기 계획; 고정수익 결과 기반 매매를 위한 전통적 옵션 구조 사용; C1에 상장되고 OCC에서 청산 예정</li>
+<li><strong>유럽 FLEX 옵션:</strong> Cboe Europe Derivatives, 2026년 1분기 FLEX 옵션 출시, 행사가, 만기, 결제, 행사 방식의 기관 맞춤화 가능</li>
+<li><strong>VIX 선물 옵션:</strong> CFE에서 이용 가능, 추가적인 VIX 복합 매매 상품 제공</li>
+<li><strong>거래시간 확대 이니셔티브:</strong> 주요 상품에 대한 잠재적 거래시간 연장을 위해 개발 중</li>
+</ul>
+</section>
+<section id="규제-변경-regulatory-changes" class="level3">
+<h3 class="anchored" data-anchor-id="규제-변경-regulatory-changes">11.3 규제 변경 (Regulatory Changes)</h3>
+<ul>
+<li><strong>예측시장 체계:</strong> Cboe, 예/아니오 결과를 넘어서 확장하는 혁신적 예측시장 체계 도입 (2026년 초 발표)</li>
+<li><strong>단일가매매 응답 처리:</strong> C1의 단일가매매 응답 처리 관련 제안된 규칙 변경에 대한 SEC 절차 진행 중 (SR-CBOE-2025-090)</li>
+<li><strong>포지션한도 검토:</strong> 지수 옵션에 대한 포지션 및 행사한도의 지속적 규제 검토</li>
+</ul>
+</section>
+<section id="전략적-이니셔티브-strategic-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="전략적-이니셔티브-strategic-initiatives">11.4 전략적 이니셔티브 (Strategic Initiatives)</h3>
+<ul>
+<li><strong>전략적 재편:</strong> Cboe Australia 및 Cboe Canada 매각 절차 개시; 미국 및 유럽 기업 상장에서 철수; 핵심 파생상품 및 데이터 사업에 집중</li>
+<li><strong>0DTE 성장:</strong> 당일 만기 옵션 지속 확장 — 2025년 0DTE SPX 옵션이 전체 SPX 거래량의 59% (일평균 거래량 230만 계약); 개별주식 옵션으로의 0DTE 확장 탐색</li>
+<li><strong>Data Vantage 성장:</strong> 2026년 중-고 한 자릿수 유기적 성장 목표; 지수 라이선스 및 분석</li>
+<li><strong>2026년 매출 가이던스:</strong> 중 한 자릿수 유기적 총 순매출 성장; 조정 운영 비용 $864-$879M</li>
+</ul>
+<p>[출처: Cboe 보도자료 2025-2026; Cboe 2025년 4분기 실적 발표; SEC 제출 서류, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="파생상품-특화-상품-카탈로그-및-계약-사양-derivatives-specific-product-catalog-contract-specifications" class="level2">
+<h2 class="anchored" data-anchor-id="파생상품-특화-상품-카탈로그-및-계약-사양-derivatives-specific-product-catalog-contract-specifications">파생상품 특화: 상품 카탈로그 및 계약 사양 (Derivatives-Specific: Product Catalog &amp; Contract Specifications)</h2>
+<section id="주요-상품-분류-key-product-categories" class="level3">
+<h3 class="anchored" data-anchor-id="주요-상품-분류-key-product-categories">주요 상품 분류 (Key Product Categories)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 30%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>분류</th>
+<th>상품</th>
+<th>거래소</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>독자 지수 옵션</strong></td>
+<td>SPX, XSP (Mini-SPX), VIX, RUT, MRUT, MGTN, DJX, OEX, XEO</td>
+<td>C1 (독점)</td>
+</tr>
+<tr class="even">
+<td><strong>복수상장 주식 옵션</strong></td>
+<td>~3,500개 이상 미국 개별 주식 옵션</td>
+<td>C1, C2, BZX Options, EDGX Options</td>
+</tr>
+<tr class="odd">
+<td><strong>ETF 옵션</strong></td>
+<td>SPY, QQQ, IWM 및 기타 ETF 옵션 (복수상장)</td>
+<td>4개 옵션 거래소 전체</td>
+</tr>
+<tr class="even">
+<td><strong>변동성 선물</strong></td>
+<td>VIX 선물 (VX), Mini VIX 선물</td>
+<td>CFE</td>
+</tr>
+<tr class="odd">
+<td><strong>선물 변동성 옵션</strong></td>
+<td>VX 선물에 대한 옵션</td>
+<td>CFE</td>
+</tr>
+<tr class="even">
+<td><strong>FLEX 옵션</strong></td>
+<td>맞춤형 지수 및 주식 옵션</td>
+<td>C1</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="계약-사양-주요-상품-contract-specifications-top-products" class="level3">
+<h3 class="anchored" data-anchor-id="계약-사양-주요-상품-contract-specifications-top-products">계약 사양 — 주요 상품 (Contract Specifications — Top Products)</h3>
+<p><strong>SPX 옵션 (S&amp;P 500 지수 옵션):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>사양</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>S&amp;P 500 지수</td>
+</tr>
+<tr class="even">
+<td>승수</td>
+<td>$100</td>
+</tr>
+<tr class="odd">
+<td>행사 방식</td>
+<td>유럽식 (조기 행사 불가)</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>현금결제; AM 정산 (표준 월간/분기) 또는 PM 정산 (주간, 월말, 0DTE)</td>
+</tr>
+<tr class="odd">
+<td>만기</td>
+<td>일일 (월~금), 주간, 월간, 분기, 월말; LEAPS 최대 5년</td>
+</tr>
+<tr class="even">
+<td>행사가 간격</td>
+<td>근월 $5, 원월 $25; 근월 등가격 부근 $1 간격 이용 가능</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (Tick Size)</td>
+<td>$0.05 (프리미엄 &lt; $3.00); $0.10 (프리미엄 &gt;= $3.00)</td>
+</tr>
+<tr class="even">
+<td>매매시간</td>
+<td>GTH: CT 오전 2:00 – 8:15; RTH: CT 오전 8:30 – 오후 3:15; 연장 종료: CT 오후 3:15 – 4:15</td>
+</tr>
+<tr class="odd">
+<td>정산 산출</td>
+<td>AM: 구성종목 시가를 사용한 특별개장호가(SOQ); PM: 구성종목 종가</td>
+</tr>
+<tr class="even">
+<td>일평균 거래량 (2025)</td>
+<td>390만 계약 (기록); 0DTE가 59% (~일평균 230만) 차지</td>
+</tr>
+</tbody>
+</table>
+<p><strong>VIX 옵션 (Cboe 변동성지수 옵션):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>사양</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>Cboe 변동성지수 (VIX)</td>
+</tr>
+<tr class="even">
+<td>승수</td>
+<td>$100</td>
+</tr>
+<tr class="odd">
+<td>행사 방식</td>
+<td>유럽식</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>현금결제; VIX의 특별개장호가(SOQ)를 사용한 AM 정산</td>
+</tr>
+<tr class="odd">
+<td>만기</td>
+<td>주간, 월간, 주간 시리즈</td>
+</tr>
+<tr class="even">
+<td>행사가 간격</td>
+<td>근월 0.50 지수포인트; 원월 1.00</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (Tick Size)</td>
+<td>$0.05 (프리미엄 &lt; $3.00); $0.10 (프리미엄 &gt;= $3.00)</td>
+</tr>
+<tr class="even">
+<td>매매시간</td>
+<td>GTH: CT 오전 2:00 – 8:15; RTH: CT 오전 8:30 – 오후 3:15; 연장 종료: CT 오후 3:15 – 4:15</td>
+</tr>
+</tbody>
+</table>
+<p><strong>VIX 선물:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>사양</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기초자산</td>
+<td>Cboe 변동성지수 (VIX)</td>
+</tr>
+<tr class="even">
+<td>계약 규모</td>
+<td>$1,000 x VIX</td>
+</tr>
+<tr class="odd">
+<td>호가단위 (Tick Size)</td>
+<td>0.05 지수포인트 (틱당 $50.00)</td>
+</tr>
+<tr class="even">
+<td>결제</td>
+<td>현금결제; VIX의 SOQ를 사용하여 최종결제가 산출</td>
+</tr>
+<tr class="odd">
+<td>만기</td>
+<td>최대 6개 근월 주간, 9개 근월 월간, 5개 분기 만기</td>
+</tr>
+<tr class="even">
+<td>매매시간</td>
+<td>연장: CT 일요일 오후 5:00 – 월요일 오전 8:30; CT 오후 3:30 – 오전 8:30 (화~금); RTH: CT 오전 8:30 – 오후 3:15</td>
+</tr>
+<tr class="odd">
+<td>거래소</td>
+<td>Cboe Futures Exchange (CFE)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>0DTE (당일 만기) 옵션 (Zero Days to Expiration):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>사양</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>정의</td>
+<td>거래 당일 만기되는 옵션</td>
+</tr>
+<tr class="even">
+<td>이용 가능성</td>
+<td>SPX 옵션은 매 거래일 (월~금) 만기</td>
+</tr>
+<tr class="odd">
+<td>핵심 동인</td>
+<td>일일 SPX 만기 도입 (2022년 화/목 추가로 완성)</td>
+</tr>
+<tr class="even">
+<td>2025년 거래량</td>
+<td>일평균 ~230만 계약; 전체 SPX 거래량의 59%; 2025년 8월 62% 도달</td>
+</tr>
+<tr class="odd">
+<td>결제</td>
+<td>PM 정산 (구성종목 종가)</td>
+</tr>
+<tr class="even">
+<td>용도</td>
+<td>장중 헤지, 프리미엄 매도, 감마 스캘핑, 이벤트일 거래, 소매 투기</td>
+</tr>
+<tr class="odd">
+<td>리스크 주의</td>
+<td>급속한 시간가치 감소 및 감마 가속; OCC 및 감독기관이 시스템적 리스크 모니터링</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vix-지수-독자-방법론-vix-index-proprietary-methodology" class="level3">
+<h3 class="anchored" data-anchor-id="vix-지수-독자-방법론-vix-index-proprietary-methodology">VIX 지수 — 독자 방법론 (VIX Index — Proprietary Methodology)</h3>
+<p>VIX 지수는 S&amp;P 500 지수의 30일 예상 변동성에 대한 Cboe의 독자 지표이다:</p>
+<ul>
+<li><strong>산출:</strong> 2개 근월 만기에 걸쳐 광범위한 SPX 옵션 (풋 및 콜) 실시간 가격을 사용하는 모델 비의존 방법론</li>
+<li><strong>공식:</strong> 가중된 외가격 SPX 옵션 가격을 집계하여 예상 분산을 도출; 연율 변동성으로 전환</li>
+<li><strong>배포:</strong> 매매시간 중 15초마다 업데이트</li>
+<li><strong>의의:</strong> “공포지수” 또는 “공포 지표”로 알려짐; 글로벌 변동성 매매의 핵심 벤치마크</li>
+<li><strong>라이선스:</strong> Cboe가 VIX 방법론을 라이선스; 지수 라이선스 수익은 Data Vantage 부문의 일부</li>
+</ul>
+</section>
+<section id="증거금-체계-margin-framework" class="level3">
+<h3 class="anchored" data-anchor-id="증거금-체계-margin-framework">증거금 체계 (Margin Framework)</h3>
+<p><strong>옵션 증거금:</strong> - 고객 증거금은 Regulation T 및 거래소 규칙에 의해 규율 - <strong>표준 (전략 기반) 증거금:</strong> 정의된 전략별 (커버드 콜, 스프레드, 매도 옵션 등) 증거금 산출; Cboe Margin Manual이 상세 요건 제공 - <strong>포트폴리오 증거금:</strong> 적격 계좌에 이용 가능; 다수 가격 시나리오를 사용한 최대 예상 순손실에 기반한 증거금 설정 (OCC의 TIMS — Theoretical Intermarket Margin System); 헤지된 포트폴리오에 대해 일반적으로 낮은 증거금 요건 - <strong>청산회원 증거금:</strong> OCC가 STANS (System for Theoretical Analysis and Numerical Simulations) — 몬테카를로 기반 증거금 시스템을 사용하여 청산 수준 증거금 산출</p>
+<p><strong>선물 증거금 (CFE):</strong> - 청산소로서 OCC가 개시 및 유지 증거금 설정 - VIX 선물 증거금은 STANS 방법론에 기반하여 설정 - 이행보증 요건은 계약 및 시장 상황에 따라 변동</p>
+</section>
+<section id="포지션한도-position-limits" class="level3">
+<h3 class="anchored" data-anchor-id="포지션한도-position-limits">포지션한도 (Position Limits)</h3>
+<ul>
+<li><strong>SPX 옵션:</strong> 포지션한도가 대폭 확대; 표준 SPX 옵션에 대한 총합 포지션한도 사실상 없음 [unverified — 현행 규칙 상태 확인 필요]</li>
+<li><strong>VIX 옵션:</strong> 포지션한도 적용; 신청 절차를 통해 헤지 면제 이용 가능</li>
+<li><strong>주식 옵션:</strong> 기초자산의 거래량 및 유통주식수에 따라 통상 25,000~250,000 계약</li>
+<li><strong>VIX 선물:</strong> CFTC 투기적 포지션한도 및 보고 가능 포지션 기준 적용; CFE 고유 한도 적용</li>
+<li><strong>대규모 거래자 보고:</strong> 보고 기준을 초과하는 포지션은 OCC (옵션) 및 CFTC (선물)에 보고 필요</li>
+</ul>
+</section>
+<section id="블록거래-대량매매-및-복합-주문-처리-block-trading-and-complex-order-handling" class="level3">
+<h3 class="anchored" data-anchor-id="블록거래-대량매매-및-복합-주문-처리-block-trading-and-complex-order-handling">블록거래 (대량매매) 및 복합 주문 처리 (Block Trading and Complex Order Handling)</h3>
+<p><strong>복합 주문:</strong> - 복합 주문장 (COB)은 다중 레그 전략을 위한 전용 호가장 유지 - C1에서 복합 주문당 최대 16개 레그 (Complex AIM을 통한 주식-옵션 주문) - 복합 주문은 COB의 다른 복합 주문에 대해 체결되거나 유리할 때 개별 단순 호가장에서 “레그별” 체결 가능 - 복합 주문 단일가매매 (COA)가 노출 및 가격 개선 기회 제공</p>
+<p><strong>조건부 교차 (QCC):</strong> - 레그당 최소 1,000 계약 - 주식 구성 요소 포함 필수 - 표준 단일가매매 노출 면제; 지정 가격에서 즉시 체결 - 대규모 기관 블록사이즈 옵션 거래에 일반적으로 사용</p>
+<p><strong>FLEX 옵션:</strong> - 완전 맞춤형 계약 조건: 임의의 행사가, 임의의 만기일 (한도 내), 행사 방식 선택 (미국식/유럽식), 결제 선택 (현금/실물) - 최소 초기 포지션 250 계약 (주식 FLEX) 또는 100 계약 (지수 FLEX) [unverified — 현행 기준] - OCC에서 청산</p>
+<p><strong>CFE 블록거래:</strong> - VIX 선물에 대한 블록거래 이용 가능 - CFE 규칙에 따른 최소 블록 규모 및 보고 요건</p>
+<p>[출처: Cboe 상품 사양 페이지; Cboe Margin Manual; Cboe Exchange Rule Book; Cboe VIX 방법론 백서; Cboe 보도자료, 2026-04-06 접속]</p>
+<hr>
+</section>
+</section>
+<section id="출처-sources" class="level2">
+<h2 class="anchored" data-anchor-id="출처-sources">출처 (Sources)</h2>
+<ul>
+<li><a href="https://ir.cboe.com/news/news-details/2026/Cboe-Global-Markets-Reports-Trading-Volume-for-December-and-Full-Year-2025/default.aspx">Cboe Global Markets IR — Full Year 2025 Volume Report</a></li>
+<li><a href="https://ir.cboe.com/news/news-details/2026/Cboe-Global-Markets-Reports-Results-for-Fourth-Quarter-2025-and-Full-Year/default.aspx">Cboe Global Markets IR — Q4 2025 &amp; Full Year Earnings</a></li>
+<li><a href="https://www.cboe.com/tradable-products/sp-500/spx-options/spx-specifications/">Cboe SPX Options Product Specifications</a></li>
+<li><a href="https://www.cboe.com/tradable-products/vix/vix-futures/specifications/">Cboe VIX Futures Contract Specifications</a></li>
+<li><a href="https://www.cboe.com/tradable-products/vix/vix-options/specifications/">Cboe VIX Options Product Specifications</a></li>
+<li><a href="https://www.cboe.com/us/options/trading/complex_orders/">Cboe US Options Exchange Complex Orders</a></li>
+<li><a href="https://www.cboe.com/us/options/trading/risk_management/">Cboe US Options Exchange Risk Management Tools</a></li>
+<li><a href="https://www.cboe.com/us/options/membership/fee_schedule/">Cboe Options Exchange Fee Schedule</a></li>
+<li><a href="https://www.cboe.com/titanium/">Cboe Titanium Platform</a></li>
+<li><a href="https://www.cboe.com/cboe_global_cloud/">Cboe Global Cloud</a></li>
+<li><a href="https://cdn.cboe.com/resources/membership/US_Equities_Options_Connectivity_Manual.pdf">Cboe Connectivity Manual</a></li>
+<li><a href="https://cdn.cboe.com/resources/membership/US_Market_Wide_Circuit_Breaker_FAQ.pdf">Cboe Market-Wide Circuit Breaker FAQ</a></li>
+<li><a href="https://cdn.cboe.com/resources/membership/Margin_Manual.pdf">Cboe Margin Manual</a></li>
+<li><a href="https://cdn.cboe.com/resources/regulation/rule_book/C1_Exchange_Rule_Book.pdf">Cboe Exchange Rule Book</a></li>
+<li><a href="https://www.cboe.com/markets/us/options/membership/">Cboe Options Membership</a></li>
+<li><a href="https://www.cboe.com/about/hours/">Cboe Hours &amp; Holidays</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cboe_Global_Markets">Wikipedia — Cboe Global Markets</a></li>
+<li><a href="https://www.financemagnates.com/institutional-forex/cboe-posts-24b-in-2025-revenue-as-options-volumes-stay-elevated-across-institutional-and-retail/">Finance Magnates — Cboe 2025 Revenue</a></li>
+<li><a href="https://www.macrotrends.net/stocks/charts/CBOE/cboe-global-markets/market-cap">MacroTrends — Cboe Market Cap</a></li>
+<li><a href="https://datashop.cboe.com/">Cboe DataShop</a></li>
+<li><a href="https://www.stocktitan.net/news/CBOE/cboe-unveils-new-brand-for-exchange-technology-platform-marking-new-ba2swduralf0.html">StockTitan — Cboe Titanium Announcement</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

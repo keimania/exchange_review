@@ -1,6 +1,6 @@
 # Session Execution Plan — Global Exchange Research
 
-> **총 13세션** (준비 1 + 영어 조사 6 + 한국어 번역 3 + 용어집/DB 1 + 최종 검토 1 + DOCX 1)
+> **총 14세션** (준비 1 + 영어 조사 6 + 한국어 번역 3 + 용어집/DB 1 + 최종 검토 1 + DOCX 1 + 웹 퍼블리싱 1)
 > 각 세션은 독립적으로 실행 가능하며, 순서대로 진행을 권장한다.
 
 ---
@@ -581,6 +581,10 @@ Report final file counts.
 
 DOCX 최종 (R1 완료 후)
   X1
+
+웹 퍼블리싱 (X1 완료 후, 또는 번역 완료 후 언제든)
+  Q1 (MD→QMD 변환 + Quarto HTML 빌드 + GitHub Pages 배포 준비)
+  → bash scripts/build_html.sh  (이후 재빌드 시 동일 명령)
 ```
 
 ### 의존성 요약
@@ -588,9 +592,10 @@ DOCX 최종 (R1 완료 후)
 ```
 P0 ──→ E1 ──→ E2 ──→ E3 ──→ T1 ──┐
 P0 ──→ D1 ──→ D2 ──────────→ T2 ──┤
-P0 ──→ C1 ──→ C2 ──────────→ T3 ──┼──→ G1 ──→ R1 ──→ X1
+P0 ──→ C1 ──→ C2 ──────────→ T3 ──┼──→ G1 ──→ R1 ──→ X1 ──→ Q1
                                     │
        (E/D/C 시장 간에는 순서 무관 — 병행 가능)
+       (Q1은 X1 이후 권장, 번역 완료 후 언제든 실행 가능)
 ```
 
 ---
@@ -625,3 +630,102 @@ P0 ──→ C1 ──→ C2 ──────────→ T3 ──┼─�
 2. **참조 자료가 있는 거래소는 품질이 현저히 높다:** KRX 파일은 규정 원문의 구체적 조항 인용, 정확한 임계치, 원어 용어 보존 덕분에 웹 검색만으로 작성된 다른 거래소 파일보다 품질이 높다.
 3. **원어 용어 보존이 중요하다:** 동시호가, 접속매매 등 규정 원문의 용어를 그대로 사용하면 번역 품질과 실무 활용도가 크게 향상된다.
 4. **비교분석 테이블에는 모든 거래소를 포함하라:** 초기에 KRX 행이 누락되어 R1 이후 전면 보완이 필요했다. 처음부터 전체 대상을 테이블에 포함해야 한다.
+
+---
+
+## Phase 6: Quarto 웹 퍼블리싱 (1세션)
+
+#### Session Q1 — MD → QMD 변환 + HTML 빌드 + GitHub Pages 배포 준비
+- **작업 디렉토리:** `exchange_review/` (루트)
+- **지시 프롬프트:**
+```
+STEP 1: MD → QMD 변환
+- 프로젝트 내 모든 콘텐츠 md 파일(01_equities/, 02_derivatives/, 03_clearing/, _common/ 내
+  en/ 및 ko/ 하위의 모든 .md)을 .qmd 파일로 변환한다.
+- 각 .qmd 파일 상단에 YAML 헤더를 삽입한다:
+  ---
+  title: "{적절한 제목 — 원본 파일의 H1 또는 파일명 기반}"
+  subtitle: "{도메인 > 카테고리 — 예: Equities > Exchanges}"
+  date: "{원본 파일의 최종 수정일 또는 오늘 날짜}"
+  lang: "{en 또는 ko}"
+  toc: true
+  toc-depth: 3
+  number-sections: true
+  format:
+    html:
+      theme: cosmo
+      code-fold: true
+      self-contained: false
+  ---
+- 본문의 수식($...$, $$...$$)이 Quarto에서 올바르게 렌더링되도록 확인한다.
+  특히 파이프(|) 등이 테이블과 충돌하지 않도록 \lvert \rvert 등으로 이스케이프한다.
+- 본문의 Markdown 테이블이 Quarto에서 정상 렌더링되는지 확인한다.
+  필요시 pipe table → grid table 등으로 변환한다.
+- 변환된 .qmd 파일은 원본 .md와 동일한 디렉토리에 저장한다 (예: en/exchanges/nyse.qmd).
+- SESSION_PLAN.md, README.md, CLAUDE.md 등 프로젝트 관리용 파일은 변환 대상에서 제외한다.
+
+STEP 2: Quarto 프로젝트 설정 + 빌드 스크립트 생성
+- 프로젝트 루트에 _quarto.yml 파일을 생성한다:
+  project:
+    type: website
+    output-dir: docs
+  website:
+    title: "Global Exchange Research"
+    navbar:
+      left:
+        - text: "Equities"
+          menu: [equities 하위 qmd 목록]
+        - text: "Derivatives"
+          menu: [derivatives 하위 qmd 목록]
+        - text: "Clearing"
+          menu: [clearing 하위 qmd 목록]
+        - text: "용어집 (Glossary)"
+          href: glossary 경로
+    sidebar:
+      - title: "Equities"
+        contents: [en/ko 별 exchanges, systems, regulations 파일 목록]
+      - title: "Derivatives"
+        contents: [동일 구조]
+      - title: "Clearing"
+        contents: [동일 구조]
+  format:
+    html:
+      theme: cosmo
+      toc: true
+- 프로젝트 루트에 index.qmd를 생성한다:
+  - 프로젝트 전체 소개
+  - 도메인별(Equities, Derivatives, Clearing) 섹션으로 구분
+  - 각 섹션 내 EN/KO 문서 링크 목록 (exchanges, systems, regulations, comparative)
+  - 용어집(EN/KO) 링크
+  - 최종 리뷰 문서 링크
+- build_html.sh 스크립트를 생성한다:
+  #!/bin/bash
+  # Quarto가 설치되어 있는지 확인
+  command -v quarto >/dev/null 2>&1 || { echo "Quarto CLI 필요: https://quarto.org/docs/get-started/"; exit 1; }
+  # HTML 빌드
+  quarto render
+  echo "HTML 출력: docs/"
+  echo "로컬 미리보기: quarto preview"
+
+STEP 3: HTML 빌드 실행
+- quarto render 명령을 실행하여 docs/ 디렉토리에 HTML을 생성한다.
+- 빌드 오류가 있으면 수정 후 재빌드한다.
+- docs/ 내 index.html이 정상적으로 모든 문서에 대한 네비게이션을 제공하는지 확인한다.
+- GitHub Pages 배포를 위해:
+  - docs/.nojekyll 파일을 생성한다 (빈 파일).
+  - .gitignore에 docs/를 추가하지 않는다 (docs/가 커밋되어야 함).
+  - README.md에 GitHub Pages 설정 안내를 추가한다:
+    "Settings → Pages → Source: Deploy from a branch → Branch: main, /docs"
+```
+- **예상 산출물:** 전체 `.qmd` 파일 + `_quarto.yml` + `index.qmd` + `build_html.sh` + `docs/` (HTML 출력) + `.nojekyll`
+- **상태:** ✅ Completed (2026-04-17)
+- **사전 조건:** X1 완료 후 (또는 번역 완료 후 언제든 실행 가능)
+- **참고:** Quarto CLI 사전 설치 필요 (`brew install --cask quarto`)
+- **산출물 요약:**
+  - `md/` — MD 원본 소스 (`md/01_equities/`, `md/02_derivatives/`, `md/03_clearing/`, `md/_common/`)
+  - `qmd/` — 184개 `.qmd` 파일 (YAML 헤더 포함, `md/` 구조 미러링)
+  - `docx/` — 195개 `.docx` 파일 (도메인별 계층 구조로 통합)
+  - `docs/` — 185개 HTML 파일 (GitHub Pages 배포 준비 완료, `.nojekyll` 포함)
+  - `scripts/` — 4개 스크립트 (convert_md_to_qmd.py, convert_md_to_docx.py, generate_quarto_yml.py, build_html.sh)
+  - `_quarto.yml` — navbar + 8개 도메인별 sidebar (qmd/ 경로 기반)
+  - `index.qmd` — 전체 문서 인덱스 (루트)

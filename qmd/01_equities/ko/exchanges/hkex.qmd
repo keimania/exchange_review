@@ -1,0 +1,553 @@
+---
+title: "Hong Kong Exchanges and Clearing Limited (HKEX)"
+subtitle: "주식시장 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-06
+> **조사 등급:** Tier 1
+> **영역:** 주식시장
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 상세내용 |
+|------|---------|
+| 공식 명칭 | Hong Kong Exchanges and Clearing Limited |
+| 약칭 | HKEX (홍콩거래소) |
+| 웹사이트 | https://www.hkex.com.hk |
+| 설립연도 | 2000년 (SEHK, HKFE, HKSCC 합병); SEHK는 1891년 설립 |
+| 소재지 | 중국 홍콩특별행정구 / 홍콩 센트럴(본사); 쳉콴오(데이터센터) |
+| 소유구조 | 자체 거래소에 상장(SEHK: 0388); 기관투자자 광범위 보유; 홍콩특별행정구 정부가 재정장관을 통해 5.87% 지분 보유 |
+| 모회사/그룹 | HKEX가 상장 지주회사; 주요 자회사로 The Stock Exchange of Hong Kong Limited(SEHK), Hong Kong Futures Exchange Limited(HKFE), Hong Kong Securities Clearing Company Limited(HKSCC), LME Holdings Limited(London Metal Exchange) 포함 |
+| 감독기관 | 홍콩 증권선물위원회(SFC) |
+| 시가총액 (상장기업) | ~48.5조 HKD (~6.2조 USD) (2026년 2월 기준); 2025년 7월 44.9조 HKD (YoY +44%) [Source: HKEX Monthly Market Highlights] |
+| 총 상장종목 수 | 2,673개 상장기업 (2026년 2월 기준); 메인보드: ~2,283개, GEM: ~326개 [2024년 기준]; ETP, 워런트, 구조화상품 ~2,600개 이상 |
+| 일평균 거래량 | 현물시장 ADT: 2025년 1-11월 2,307억 HKD (~296억 USD), YoY 43% 증가; 2025년 9월 월간 ADT 3,167억 HKD 기록 [Source: HKEX 2025 Year in Review] |
+| 일평균 거래대금 | 2,307억 HKD (2025년 1-11월); ETP ADT: 376억 HKD (YoY 2배) [Source: HKEX 2025 Year in Review] |
+
+### 주요 연혁 (Key Historical Milestones)
+- **1891년:** 홍콩주식중개인협회 설립, 최초의 공식 증권거래 조직
+- **1914년:** 홍콩증권거래소로 명칭 변경
+- **1947년:** 제2차 세계대전 후 홍콩증권거래소 재설립
+- **1969-1972년:** 3개 추가 거래소 설립(Far East Exchange, Kam Ngan Stock Exchange, Kowloon Stock Exchange), "4대 거래소" 시대
+- **1986년:** 4대 거래소가 The Stock Exchange of Hong Kong Limited(SEHK)로 통합; 센트럴 Exchange Square에 트레이딩 플로어 개설
+- **1993년:** 11월 AMS(Automatic Order Matching and Execution System) 도입, 전자거래 시작
+- **1997년:** 아시아 금융위기가 홍콩 시장에 심각한 영향; 1998년 정부가 1,180억 HKD 규모 주식 매입 개입
+- **1999년:** 홍콩 정부가 주식 및 선물 거래소의 합병 및 주식회사화 개혁안 발표
+- **2000년 (3월 6일):** SEHK, HKFE, HKSCC 합병으로 Hong Kong Exchanges and Clearing Limited(HKEX) 설립
+- **2000년 (6월 27일):** HKEX가 자체 거래소에 상장(IPO 약 43억 HKD 조달)
+- **2000년 (10월):** AMS/3 매매시스템 출시, AMS/2 대체
+- **2003년:** SARS 발생으로 시장 혼란; HKEX가 종가단일가매매 (장마감 경매) 세션(CAS) 개념 개발 착수
+- **2007년:** 중국 강세장 속에서 일평균 거래대금 최초 1,000억 HKD 초과
+- **2012년 (12월):** HKEX가 London Metal Exchange(LME) 13.9억 파운드(~22억 USD)에 인수 완료
+- **2014년 (11월 17일):** 후강퉁(Shanghai-Hong Kong Stock Connect) 출범, 국경간 주식거래 실현
+- **2016년 (8월):** 증권시장 변동성완화장치(VCM) 도입
+- **2016년 (12월 5일):** 선강퉁(Shenzhen-Hong Kong Stock Connect) 출범
+- **2017년 (7월 3일):** 북향 채권통(Bond Connect) 출범
+- **2018년 (2월 5일):** Orion Trading Platform - Securities Market(OTP-C) 가동, AMS/3.8 대체
+- **2018년 (4월):** 신규 상장 제도 시행(Chapter 18A 바이오테크, 차등의결권 구조)
+- **2022년 (7월 4일):** ETF 통(ETF Connect) 출범(Stock Connect에 ETF 포함)
+- **2023년 (5월 15일):** Swap Connect(북향) 출범 — 세계 최초 파생상품 상호시장 접근 프로그램
+- **2023년 (11월):** 주식거래 인지세 0.13%에서 0.1%로 인하
+- **2024년 (4월):** HKEX가 2028년 출시 목표 Orion Derivatives Platform(ODP) 자체 개발 발표
+- **2025년:** HKEX가 IPO 조달액 글로벌 1위; ADT YoY 43% 증가; 최소 스프레드 축소(Phase 1) 8월 5일 시행
+
+---
+
+## 2. 시장구조 (Market Structure)
+
+### 2.1 시장 세그먼트 (Market Segments)
+| 세그먼트 | 설명 | 상장요건 (요약) |
+|---------|------|----------------|
+| 메인보드 | 기성기업을 위한 최상위 시장; 시가총액 및 거래량의 대부분 차지 | IPO 시 시가총액 >= 5억 HKD; 이익기준: 3년 합계 이익 >= 5,000만 HKD(직전 1년 >= 2,000만 HKD); 또는 시가총액/매출 기준: 시가총액 >= 40억 HKD + 매출 >= 5억 HKD; 또는 시가총액/매출/현금흐름 기준: 시가총액 >= 20억 HKD + 매출 >= 5억 HKD + 3년 합계 양의 현금흐름 >= 1억 HKD; 최소 공개부유 25%(대형주는 15-25%); 300명 이상 공개주주 |
+| GEM (Growth Enterprise Market) | 소규모 고성장기업 및 스타트업을 위한 시장 | 영업실적 >= 2 회계연도; 현금흐름 기준: 시가총액 >= 1.5억 HKD + 2년 합계 양의 영업현금흐름 >= 3,000만 HKD; 또는 R&D 기업 기준: 2년 매출 >= 1억 HKD(YoY 성장), R&D 지출 >= 3,000만 HKD(매년 총 운영비의 >= 15%); 최소 공개부유 25%; 100명 이상 공개주주 |
+| Chapter 18A (바이오테크) | 메인보드의 매출 전 바이오테크 기업 전문 상장 경로(2018년 도입) | IPO 시 시가총액 >= 15억 HKD; 컨셉 단계를 넘긴 핵심 제품 1개 이상; 경험 있는 경영진; 향후 12개월 그룹 비용의 >= 125% 충당 가능한 운전자본 |
+| Chapter 18C (전문기술) | 특정 산업의 전문기술기업 상장 경로(2023년 도입) | 상업화 기업: 시가총액 >= 60억 HKD; 상업화 전 기업: 시가총액 >= 100억 HKD + 매출 >= 2.5억 HKD |
+| Chapter 19C (이중상장) | 적격 해외상장기업의 홍콩 이중상장 허용 | 주로 적격 거래소(NYSE, NASDAQ, LSE 메인마켓) 상장 대중국 및 국제기업 대상; 시가총액 >= 30억 HKD(비대중국 WVR 비보유 발행인은 100억 HKD) |
+
+### 2.2 매매시간 (Trading Sessions)
+| 세션 | 현지시간 (HKT) | UTC (HKT = UTC+8) | 설명 |
+|------|---------------|-------------------|------|
+| 개장 전 세션 (POS) | 9:00 AM - 9:30 AM | 01:00 - 01:30 | 주문입력(9:00-9:15), 사전 매칭(9:15-9:20), 주문매칭(9:20-9:28), 차단(9:28-9:30); 경매주문 및 경매지정가주문 접수; 단일가 경매로 시가 결정 |
+| 오전 접속매매 (연속매매) | 9:30 AM - 12:00 PM | 01:30 - 04:00 | 가격-시간 우선원칙에 따른 연속 주문체결; 모든 연속세션 주문유형 접수 |
+| **점심시간** | **12:00 PM - 1:00 PM** | **04:00 - 05:00** | **매매 없음; 이 기간 중 주문 제출, 정정, 취소 불가. HKEX를 포함한 아시아 거래소의 특징으로 연속 매매하는 서양 거래소와 다름** |
+| 오후 접속매매 (연속매매) | 1:00 PM - 4:00 PM | 05:00 - 08:00 | 오전 세션 계속; 연속 주문체결 재개 |
+| 종가단일가매매 (장마감 경매, CAS) | 4:00 PM - ~4:10 PM | 08:00 - ~08:10 | 4단계: (1) 기준가 확정기간(4:00-4:01); (2) 주문입력기간(4:01-4:06); (3) 취소금지기간(4:06-4:08); (4) 무작위 종료기간(4:08-4:10, 조작 방지를 위해 2분 내 무작위 종료); 경매주문 및 경매지정가주문만 가능 |
+
+**참고:**
+- 총 매매시간: ~5.5시간(점심시간 제외) + CAS ~10분
+- **점심시간**은 홍콩 시장 전통에 따라 유지되며, 폐지에 대한 논의가 주기적으로 있었다(2011년 1.5시간에서 1시간으로 단축)
+- 반일 매매(휴일 전 등)는 12:00 PM에 종료, 오후 세션 없음, CAS는 12:00-12:10 PM 운영
+- 홍콩은 서머타임을 적용하지 않으며 HKT는 UTC+8 고정
+
+### 2.3 호가단위 (최소가격변동폭) (Tick Sizes)
+**Spread Table Code 01 (주식, REIT, 주식 워런트 적용)**
+
+| 가격 범위 (HK$) | 호가단위 (HK$) | 비고 |
+|----------------|---------------|------|
+| 0.01 - 0.25 | 0.001 | |
+| 0.25 - 0.50 | 0.005 | |
+| 0.50 - 10.00 | 0.010 | Phase 2(2026년 중반): 0.005로 축소 예정 |
+| 10.00 - 20.00 | 0.010 | Phase 1(2025년 8월 5일)에서 0.020에서 축소 |
+| 20.00 - 100.00 | 0.020 | Phase 1(2025년 8월 5일)에서 0.050에서 축소 |
+| 100.00 - 200.00 | 0.050 | 0.100에서 축소 [미확인] |
+| 200.00 - 500.00 | 0.100 | 0.200에서 축소 [미확인] |
+| 500.00 - 1,000.00 | 0.500 | |
+| 1,000.00 - 2,000.00 | 1.000 | |
+| 2,000.00 - 5,000.00 | 2.000 | |
+| 5,000.00 - 9,995.00 | 5.000 | |
+
+**참고:** HKEX는 2025년 8월 5일 최소 스프레드 축소 Phase 1을 시행하여 HK$10-50 범위의 호가단위 (최소가격변동폭)를 50-60% 축소하였다. Phase 2(HK$0.50-10 범위, 50% 축소)는 2026년 중반 시행 목표이다. 이 변경은 홍콩을 국제 동종 거래소와 일치시킨다. 별도 스프레드 테이블(코드 03, 04, 05)이 채무증권, ETP, 구조화상품에 적용된다.
+
+### 2.4 매매단위 (거래단위) (Lot Sizes)
+- **보드 랏(매매단위):** 발행인별 상이; 현재 44가지 이상 보드 랏 단위 사용(예: 100, 200, 400, 500, 1,000, 2,000주/랏)
+- **가장 일반적:** 100, 500, 1,000주/랏
+- **보드 랏 가치 가이드라인:** 랏당 HK$2,000 하한(HK$1,000으로 인하 제안)
+- **단주 거래:** 단주(1보드 랏 미만)는 별도 단주 호가창에서 거래 가능, 통상 보드 랏 가격 대비 할인
+- **개혁안 (2025년 12월):** HKEX가 보드 랏 옵션을 44가지 이상에서 8가지 표준(1, 50, 100, 500, 1,000, 2,000, 5,000, 10,000주)으로 축소하고 100주 초과 랏에 HK$50,000 보드 랏 가치 상한을 도입하는 자문서 발간. 자문 마감 2026년 3월 12일
+- **북향 Stock Connect:** A주 보드 랏 100주
+
+**KRX 비교:** KRX는 모든 주식에 대해 1주를 매매단위 (거래단위)로 통일하고 있어 HKEX의 복잡한 다중 보드 랏 체계와 대조적이다.
+
+### 2.5 시장조성자 (마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)
+- **증권시장 시장조성자 (마켓메이커)(SMM):** 구조화상품(파생워런트, CBBC) 등 특정 증권에 유동성을 제공하는 등록 시장조성자 (마켓메이커)
+- **ETP 전문 스페셜리스트 프로그램:** 글로벌 유동성 제공자(HKEX SMM 외)가 거래소거래상품의 시장조성자 (마켓메이커)로 활동 가능, 최소 호가 의무
+- **Dual Counter 전문 스페셜리스트(DCS-DS):** HKD-RMB 이중카운터 종목의 시장조성자 (마켓메이커); 신용등급 A-(S&P) 또는 A3(Moody's) 이상, 납입자본금 >= 5,000만 HKD, 주주자금 >= 1억 HKD 필요
+- **주식옵션 시장조성자 (마켓메이커):** 개별 주식옵션 시리즈에 지정, 지속적 양방향 호가 의무
+- **파생상품 시장조성자 (마켓메이커)/유동성공급자 프로그램:** 선물 및 옵션 상품의 상업적 약정; 시장조성자 프로그램은 거래소 규칙 적용, LP 프로그램은 신규 상품에 더 유연한 조건 제공
+
+---
+
+## 3. 매매메커니즘 (Trading Mechanism)
+
+### 3.1 경매 메커니즘 (Auction Mechanisms)
+- **시가단일가매매 (개장 경매, Pre-Opening Session):**
+  - 9:00-9:30 AM 단일가 경매 메커니즘
+  - 경매주문(AAO, 가격 미지정)이 경매지정가주문(AALO, 가격 지정)보다 높은 체결 우선순위
+  - 예상균형가격(IEP)이 산출되어 세션 중 공시
+  - ~9:20-9:28 AM에 최종 IEP에서 주문 체결
+  - IEP 이상/이하 가격의 미체결 경매지정가주문은 지정가주문으로 전환되어 접속매매 (연속매매)로 이월
+  - 개장 호가 규칙: 전일 종가 대비 +-5%(또는 24 스프레드, 더 큰 값)로 제한
+
+- **종가단일가매매 (장마감 경매, CAS):**
+  - 4단계 메커니즘(4:00-~4:10 PM)으로 공식 종가 결정
+  - 기준가 확정기간: 기준가 확정(통상 접속매매 (연속매매) 마지막 5분의 명목가격)
+  - 주문입력기간: 기준가 대비 +-5% 이내 경매주문 접수
+  - 취소금지기간: 신규 주문 접수 가능하나 취소 불허
+  - 무작위 종료기간: 4:08-4:10 PM 사이 무작위 시점에 세션 종료하여 마지막 순간 조작 방지
+  - 최종 IEP가 지수산출 및 결제를 위한 공식 종가가 됨
+
+- **변동성완화장치(VCM):** 8.2절 참조
+
+### 3.2 접속매매 (연속매매) (Continuous Trading)
+- **체결 방법:** 엄격한 가격-시간 우선원칙에 의한 주문주도 연속 체결(스페셜리스트/DMM 시스템 없음)
+- **가격 우선:** 최우선가 우선 체결(최고 매수 / 최저 매도)
+- **시간 우선:** 동일 가격에서 최선착 주문 우선 체결
+- **최대 주문 규모:** 자동체결 주문당 3,000 보드 랏
+- **호가 규칙:** 접속매매 (연속매매) 중 유입 주문은 현재 명목가격 대비 24 스프레드 이상 이탈 불가(전일 종가 HK$0.01-HK$0.50인 종목은 매수호가 하방 9스프레드, 매도호가 상방 9스프레드로 완화)
+
+### 3.3 가격발견 (Price Discovery)
+- 시가는 개장 전 경매 IEP를 통해 결정
+- 접속매매 (연속매매) 중 주문주도 체결을 통한 지속적 가격발견
+- 종가는 종가단일가매매 (장마감 경매) 세션 IEP를 통해 결정(기존 5회 스냅샷 중간값 방식 대체)
+- 공식적 가격제한(일일 상한/하한) 없음 — HKEX는 중국 본토 거래소(SSE/SZSE는 +-10% 일일 제한)와 달리 증권거래에 법정 일일 가격제한을 부과하지 않으며, 구성종목에 대한 표적 냉각 메커니즘으로 VCM을 사용한다
+
+**KRX 비교:** KRX는 +-30% 일일 가격제한과 변동성완화장치(VI)를 모두 적용한다. HKEX는 일일 가격제한 없이 VCM만 운용하는 점이 차이점이다.
+
+---
+
+## 4. 주문유형 (Order Types)
+
+### 4.1 기본 주문유형 (Standard Order Types)
+| 주문유형 | 설명 |
+|---------|------|
+| 지정가주문 (LO) | 지정 가격에서만 체결; 미체결분은 장 마감 또는 취소까지 지정가에서 호가창에 잔류 |
+| Enhanced Limit Order (ELO) | 지정가 이상/이하 최대 10개 가격 대기열에서 체결; 미체결분은 원래 입력가에서 지정가주문으로 호가창에 잔류 |
+| Special Limit Order (SLO) | 지정가 이하/이상 최대 10개 최우선 가격 대기열에서 체결; 미체결분은 **취소**(대기하지 않음) — 효과적으로 최대 10단계 Fill-or-Kill |
+| 경매주문 (AAO) | 가격 미지정; 개장 전 및 종가단일가매매 (장마감 경매) 세션에서만 사용; 최종 IEP에서 체결; 경매주문 중 최고 우선순위 |
+| 경매지정가주문 (AALO) | 가격 지정; 개장 전 및 종가단일가매매 (장마감 경매) 세션에서 사용; 주문가격이 IEP 이상/이하일 경우 최종 IEP에서 체결; AAO보다 낮은 우선순위 |
+
+### 4.2 고급 주문유형 (Advanced Order Types)
+| 주문유형 | 설명 |
+|---------|------|
+| Good Till Date 주문 (GTD) | 지정일까지(최대 일수 이내) 또는 전량 체결 또는 취소까지 호가창에 유효 |
+| Stop Loss Limit Order (SLLO) | 최종 체결가가 지정 발동가격에 도달하거나 초과하면 발동; 발동 시 지정가에서 지정가주문으로 전환 |
+| Session Order | 특정 매매세션(오전 또는 오후)에만 적용; 지정 세션 종료 시 자동 취소 |
+
+### 4.3 유효기간 (Time-in-Force Options)
+- **Day 주문:** 기본; 당일만 유효
+- **Good Till Date (GTD):** 지정 미래 날짜까지 유효
+- **Session:** 현재 매매세션(오전 또는 오후)에만 유효
+- **Fill-and-Kill (FAK):** 즉시 부분체결 후 잔여분 취소(SLO 기능과 유사)
+- **참고:** HKEX 증권시장에서는 Fill-or-Kill(FOK) 또는 Immediate-or-Cancel(IOC)을 명시적 TIF 옵션으로 지원하지 않으며, SLO가 유사한 기능을 제공한다
+
+### 4.4 주문 정정/취소 (Order Modification / Cancellation)
+- 접속매매 (연속매매) 세션 중 주문 정정(가격, 수량) 또는 취소 가능
+- CAS 취소금지기간(4:06-4:08 PM) 중 주문 취소 불허
+- 점심시간(12:00-1:00 PM) 중 주문 정정 또는 취소 처리 불가
+- 가격 변경 주문 정정은 시간 우선순위 상실
+- OTP-C는 거래참가자 자체 주문 간 체결을 방지하는 Self-Match Prevention(SMP) 기능 지원
+
+---
+
+## 5. 매매시스템 (Trading System)
+
+| 항목 | 상세내용 |
+|------|---------|
+| 시스템 명칭 | Orion Trading Platform - Securities Market (OTP-C) |
+| 개발 주체 | HKEX 자체 개발 |
+| 아키텍처 | 오픈 시스템 기술 기반의 확장 가능 고성능 플랫폼; 새로운 기능의 단계적 도입을 허용하는 모듈형 설계 |
+| 매매체결엔진 (매칭엔진) | 가격-시간 우선원칙의 중앙 매매체결엔진 (매칭엔진); 복수 종목유형 지원 |
+| 왕복 지연시간 | 정확한 마이크로초 단위 정보 미공개; SDNet/3 네트워크가 전작 SDNet/2보다 "더 낮은 지연시간" 제공으로 기술됨 [코로케이션 (전산센터 공동입주) 참가자의 경우 서브밀리초 추정] |
+| 주문 처리 용량 | 출시 시 초당 60,000건 주문 처리(AMS/3.8 대비 100% 증가), 추가 증설 가능 [Source: HKEX, February 2018] |
+| 초당 메시지 수 | 미공개(주문 용량 60,000건/초로 유사 수준의 메시지 처리량 추정) |
+| 출시연도 | 2018년 2월 5일 |
+
+### 시스템 변천사 (System History)
+| 연도 | 시스템 | 비고 |
+|------|--------|------|
+| 1986 | 수동 플로어 거래 | Exchange Square에 통합거래소 개설 |
+| 1993 | AMS (Automatic Order Matching and Execution System) | 최초 전자 매매시스템 |
+| 1996 | AMS/2 | 용량 강화 업그레이드 버전 |
+| 2000 | AMS/3 | 2000년 10월 23일 배포; 다중 워크스테이션 아키텍처 |
+| 2008-2011 | AMS/3.8 | AMS/3의 점진적 용량 강화 업그레이드 |
+| 2013 | HKEX 데이터센터 | 쳉콴오에 최신 시설 개설 |
+| 2018 | OTP-C (Orion Trading Platform - Securities Market) | 2월 5일 가동; AMS/3.8 대체; 2012년 개발 시작 |
+| 2018 | SDNet/3 | 새로운 백본 네트워크; SDNet/2 대비 더 낮은 지연시간, 높은 대역폭 |
+| 2024 | ODP 발표 | Orion Derivatives Platform(자체) 개발 착수; 2028년 출시 목표 |
+
+### 기술 스택 (Technology Stack)
+- **매매 플랫폼:** OTP-C — 오픈 시스템 기술(Linux 기반), 유연성과 확장성을 위해 설계
+- **파생상품 거래:** HKATS (Hong Kong Automated Trading System) — NASDAQ의 Genium INET 기술 기반; 2028년 Orion Derivatives Platform(ODP)으로 대체 예정
+- **주문 게이트웨이:** Orion Central Gateway - Securities Market(OCG-C); 거래참가자용 FIX 프로토콜 (금융정보교환 규약) 기반 접속
+- **시장데이터:** Orion Market Data Platform(증권용 OMD-C, 파생상품용 OMD-D) — UDP/IP 기반 바이너리 멀티캐스트 프로토콜
+- **네트워크:** SDNet/2(파생상품 및 일부 서비스); SDNet/3(OTP-C 증권거래); Optical Ethernet, 1 Gbps 물리속도
+- **청산:** CCASS(증권결제), DCASS(파생상품)
+- **Stock Connect 거래:** OTP-CSC(China Stock Connect용), CCCG(China Connect Central Gateway)
+
+### 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)
+- HKEX는 완전 복제 기능을 갖춘 재해복구 시설 유지
+- OTP-C 및 CSC 시스템 복구를 위한 정기 시스템 리허설 실시(연 복수 회)
+- SDNet/2 및 SDNet/3 네트워크는 이중화 경로로 높은 복원력 설계
+- 쳉콴오 데이터센터의 코로케이션 (전산센터 공동입주) 및 호스팅 서비스가 이중화를 갖춘 직접 접속 제공
+- 주요 시스템 변경 전 시장 리허설(MR) 정기 실시; 공개 정보 패키지로 문서화
+
+---
+
+## 6. 시장데이터 (Market Data)
+
+### 6.1 데이터 피드 프로토콜 (Data Feed Protocols)
+- **OMD-C (Orion Market Data Platform - Securities Market):** 증권용 주 시장데이터 피드
+  - 고처리량 및 저지연을 위한 바이너리 메시지 형식
+  - 일대다 배포를 위한 IP 멀티캐스트 및 UDP 전송 프로토콜
+  - 유니캐스트 TCP 기반 재전송 복구 서비스
+- **OMD-D (Orion Market Data Platform - Derivatives Market):** 파생상품용 동등 피드
+- **OMD-CC (Orion Market Data Platform - China Connect):** Stock Connect 증권 시장데이터
+- **MMDH (Mainland Market Data Hub):** Stock Connect를 통한 본토 증권 시장데이터 배포
+- **IIS (Index Information Service):** Hang Seng Index 데이터 피드
+
+### 6.2 데이터 수준 (Data Levels)
+| 상품 | 설명 |
+|------|------|
+| Securities Standard (OMD-C) | 집약/스냅샷 데이터; 주기적 갱신 |
+| Securities Premium (OMD-C) | 스트리밍 실시간 데이터 |
+| Securities FullTick (OMD-C) | 모든 호가창 변동을 포함한 스트리밍 틱별 데이터 |
+| Index Feed | 실시간 Hang Seng 및 기타 지수 데이터 |
+| Derivatives Market Data (OMD-D) | 실시간 선물 및 옵션 데이터 |
+
+### 6.3 배포 인프라 (Distribution Infrastructure)
+- SDNet/2 네트워크를 통해 거래참가자, 정보벤더, 직접 구독자에 시장데이터 배포
+- 쳉콴오 데이터센터 코로케이션 (전산센터 공동입주) 참가자가 최저지연 피드 수령
+- HKEX는 전세계 100개 이상 정보벤더에 시장데이터 라이선스
+- Bloomberg, Refinitiv 등 주요 단말 제공자를 통해 데이터 이용 가능
+
+### 6.4 과거 데이터 (Historical Data)
+- HKEX Data Products에서 HKEX 웹사이트를 통해 과거 틱 데이터, 일말 데이터, 참조데이터 제공
+- 증권, 파생상품, 지수 상품의 과거 데이터 이용 가능
+- CSV 다운로드 및 API 접근 데이터셋 형식
+- 제3자 벤더(TickData, Refinitiv 등)도 HKEX 과거 데이터 제공
+
+---
+
+## 7. 접속 및 참가 (Connectivity & Access)
+
+### 7.1 회원자격 / 참가 (Membership / Participation)
+- **증권거래소(SEHK) 참가자:** 증권선물조례에 따라 인가 또는 등록된 법인이어야 함; 최소 유동자본 요건 적용; SEHK 상장위원회가 신청 심사
+- **유형:** 거래참가자(EP), China Connect Exchange Participant(CCEP)(Stock Connect 거래용)
+- **요건:** SFC Type 1 인가(증권매매); 적절한 재무자원; 적격성 기준; 책임임원 역량 요건
+- **비거래참가자 접속:** 거래참가자와의 DMA(Direct Market Access) 약정을 통해
+
+### 7.2 접속 방법 (Connection Methods)
+- **OCG-C (Orion Central Gateway - Securities Market):** 주 주문 제출 인터페이스; FIX 프로토콜 (금융정보교환 규약) 사용 TCP/IP 점대점 접속
+- **BSS (Broker Supplied Systems):** 거래참가자가 독자 또는 벤더 매매시스템을 OCG-C에 접속
+- **HKEX 단말:** 소규모 참가자용 HKEX 제공 매매 단말
+- **CCCG (China Connect Central Gateway):** 북향 Stock Connect 주문 라우팅 전용 게이트웨이
+- **DMA (Direct Market Access):** 거래참가자가 SFC 요건에 따라 적격 고객에 DMA 제공 가능
+
+### 7.3 코로케이션 (전산센터 공동입주) / 근접 서비스 (Co-location / Proximity Services)
+- **HKEX 호스팅 서비스:** HKEX 데이터센터(홍콩 쳉콴오 공업단지 1 Chun Ying Street) 코로케이션 (전산센터 공동입주)
+- **시설:** 2013년 1월 개설된 최신 전용 데이터센터; HKEX 핵심 매매, 청산, 시장데이터 시스템 수용
+- **생태계:** 코로케이션 거래참가자, 기술서비스 제공자, 정보벤더, 네트워크서비스 제공자
+- **장점:** OTP-C 매매체결엔진 (매칭엔진), OMD-C 시장데이터, 청산 시스템에 최저지연 접속
+- **네트워크:** 복수의 인가벤더가 시설 내 크로스 커넥트 서비스 제공
+- **제3자 근접 제공자:** IPC, Beeks 등이 HKEX 데이터센터 내 관리형 호스팅 및 접속 제공
+
+### 7.4 API 프로토콜 (API Protocols)
+- **FIX 프로토콜 (금융정보교환 규약):** OCG-C를 통한 주문 제출의 주 API; HKEX 전용 확장이 포함된 FIX 4.4 기반; OCG-C 세션의 CompID "HKEXCO"
+- **바이너리 프로토콜:** OMD 시장데이터 피드(OMD-C, OMD-D)에 사용
+- **HKATS API:** 홍콩 자동매매시스템의 파생상품 거래 API
+- **세션 관리:** FIX 세션이 매일 초기화(시퀀스 번호 매 거래일 1로 초기화); 각 EP가 IP 주소 사전등록으로 복수 세션 등록 가능
+
+### 7.5 인증 / 테스트 (Certification / Testing)
+- **준비 테스트:** 신규 거래참가자 또는 시스템 변경에 대한 가동 전 접속 및 시스템 준비 테스트 필수
+- **시장 리허설:** OTP-C, OTP-CSC 등 시스템에 대한 정기 리허설; EP 참여 기대
+- **테스트 환경:** HKEX가 OCG-C 및 OMD-C 접속 테스트용 전용 테스트 환경 제공
+- **적합성 테스트:** 거래참가자는 운영 접속 전 FIX 프로토콜 (금융정보교환 규약) 구현 적합성 테스트 통과 필수
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 가격제한 (Price Limits)
+- **법정 일일 가격제한 없음:** 중국 본토 거래소(SSE/SZSE: +-10%, ChiNext/STAR: +-20%)와 달리, HKEX는 증권거래에 일일 가격제한 밴드를 **부과하지 않는다**
+- **호가 규칙:** 접속매매 (연속매매) 중 주문은 명목가격 대비 +-24 스프레드 이탈 제한(저가종목 HK$0.01-0.50은 매수 하방 9스프레드, 매도 상방 9스프레드로 완화)
+- **개장 경매 가격제한:** 전일 종가 대비 +-5%(또는 24 스프레드, 더 큰 값)
+- **종가단일가매매 (장마감 경매) 가격제한:** CAS 중 확정된 기준가 대비 +-5%
+
+### 8.2 서킷브레이커 (매매거래중단, 변동성완화장치) (Circuit Breakers - Volatility Control Mechanism)
+- **도입:** 2016년 8월 22일
+- **메커니즘:** 개별 종목 수준 냉각 메커니즘(시장 전체 매매정지가 아님)
+- **적용 종목:** Hang Seng Index 구성종목(~50개) 및 Hang Seng China Enterprises Index 구성종목(~80개 종목); 중복 포함 ~80개 종목
+- **발동:** 잠재적 거래가격이 기준가(5분 전 최종 체결가) 대비 **+-10%** 이상 이탈 시 VCM 발동
+- **냉각기간:** **5분**간 해당 종목은 기준가 +-10% 이내에서만 거래 계속
+- **빈도:** 종목당 매매세션(오전 및 오후)당 VCM 1회만 발동
+- **제외기간:** 각 세션 최초 15분, 시장 재개 후 최초 15분, 오후 세션 마지막 20분에는 VCM 미적용
+- **핵심 구분:** VCM은 매매정지가 **아니다** — 냉각기간 중 해당 종목은 가격밴드 내에서 거래 계속
+- **파생상품 VCM:** 선물에 +-5% 발동기준의 별도 VCM
+
+### 8.3 사전 리스크 관리 (Pre-trade Risk Controls)
+- **증권시장:**
+  - 최대 주문 규모: 주문당 3,000 보드 랏
+  - 주문 가격 이탈 제한(명목가격 대비 +-24 스프레드)
+  - OTP-C를 통한 포지션 한도 모니터링
+  - Self-Match Prevention(SMP): EP의 매수-매도 주문 간 자체 체결 방지
+- **파생상품시장 (PTRM - Pre-Trade Risk Management):**
+  - HKATS 내 PTRM 2.0 시스템이 복수 규정 리스크 통제에 걸쳐 익스포저 모니터링
+  - Execution Throttle: 설정 가능 기간(300-600초)에 걸친 익스포저 한도의 거래 시 리스크 점검
+  - 4가지 익스포저 한도 유형; 어느 한도라도 위반하는 주문은 PTLG(Post-Trade Limit Group) 차단 발동
+  - 청산참가자(CP) 및 거래참가자(EP)가 매매단위에 대한 리스크 한도 설정 가능
+
+### 8.4 킬 스위치 (Kill Switch)
+- **파생상품시장:** 리스크한도 관리자 및 매매단위용 킬 스위치 기능; PTLG를 차단하고 단일 조작으로 모든 미체결 주문 대량 취소; 활성화 중 추가 주문 제출 차단
+- **증권시장:** 거래참가자가 OCG-C 세션을 통해 대량 취소 수행 가능; HKEX가 필요시 EP의 매매 접속을 정지시킬 수 있음
+- **참고:** 파생상품에서 킬 스위치 발동 후 주문 취소는 계속 처리 가능하나 신규 주문 및 블록거래는 거부됨
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독기관 (Supervising Authority)
+- **증권선물위원회(SFC):** 증권선물위원회 조례에 따라 설립된 독립 법정기관; 홍콩 증권 및 선물시장의 주 감독기관
+- **금융서비스 및 재무국(FSTB):** 금융서비스 규제를 총괄하는 정부 정책국
+- **홍콩금융관리국(HKMA):** 은행 측면 규제; SFC와 공동으로 OTC 파생상품 청산 감독
+- **3단계 규제구조:**
+  1. 정부(FSTB) — 정책 및 입법
+  2. SFC — 시장규제, 인가, 집행
+  3. HKEX — 상장기업 및 거래참가자의 일선 규제(인가 거래소 관리자로서)
+
+### 9.2 주요 규제 (Key Regulations)
+- **증권선물조례(SFO, Cap. 571):** 증권선물시장을 규율하는 주 입법; 인가, 시장행위, 공시, 집행 포괄
+- **거래소 규칙(메인보드 상장규칙):** 메인보드 발행인의 포괄적 상장 및 계속의무 규칙
+- **GEM 상장규칙:** GEM 상장기업 대상 동등 규칙
+- **기업지배구조 코드:** 상장규칙에 포함된 준수-설명 코드; 2025년 시행 강화된 기후관련 공시 요건
+- **Securities and Futures (Stock Market Listing) Rules:** SFO 하위 입법
+- **자금세탁방지 및 테러자금조달방지 조례:** 인가법인의 AML/CFT 요건
+
+### 9.3 시장감시 (Market Surveillance)
+- HKEX는 첨단 기술을 활용하여 거래활동을 실시간 모니터링하는 전담 시장감시팀 운영
+- 감시는 내부자거래, 시장조작, 허위거래, 가격조작 등 잠재적 시장 부정행위 탐지 포괄
+- SFC 집행부서와 긴밀히 협력하여 조사 및 기소
+- SFC는 SFO에 따라 징계조치, 법원 명령, 범죄자 기소 권한 보유
+- HKEX는 상장기업의 공시의무(가격민감정보, 특수관계거래 등) 준수 모니터링
+
+### 9.4 보고 요건 (Reporting Requirements)
+- **상장기업 공시:** SFO Part XIVA에 따른 내부정보 공시(계속 공시의무); 연차보고서, 중간보고서, 분기보고서(GEM); 특수관계거래 공시; 실적공시
+- **공매도 보고:** HKEX가 일일 공매도 거래량 보고서 발간; 기준 초과 포지션에 대한 공매도 포지션 보고(격월)
+- **대량주주 공시:** 5% 기준 초과 시(및 이후 1%씩 변동 시) 통지 필요
+- **거래보고:** 모든 장내거래 자동 보고; 장외 보고대상 거래는 HKEX에 보고 필수
+
+### 9.5 국제 협력 (Stock Connect, Bond Connect 등) (Cross-border Arrangements)
+- **후강퉁 (Shanghai-Hong Kong Stock Connect, 2014년 11월):**
+  - 북향: 홍콩 및 국제투자자가 적격 SSE 상장 A주 거래
+  - 남향: 본토 투자자가 적격 SEHK 상장주식 거래
+  - 일일 북향 한도: 520억 RMB; 일일 남향 한도: 520억 RMB
+  - 총 한도 없음(2016년 8월 상해커넥트 폐지)
+  - 적격 종목: SSE 180 지수/SSE 380 지수 구성종목 및 A+H 이중상장(북향); Hang Seng Composite LargeCap/MidCap 지수 구성종목 및 A+H 이중상장(남향)
+
+- **선강퉁 (Shenzhen-Hong Kong Stock Connect, 2016년 12월):**
+  - 후강퉁과 유사한 구조
+  - 일일 북향 한도: 520억 RMB; 일일 남향 한도: 520억 RMB
+  - 적격 종목: SZSE Component Index/SZSE Small/Mid Cap Innovation Index 구성종목 중 시가총액 >= 60억 RMB(북향)
+
+- **ETF 통 (ETF Connect, 2022년 7월):**
+  - Stock Connect에 적격 ETF 포함, 국경간 거래
+  - 북향: 225개 적격 본토상장 ETF; 남향: 8개 적격 홍콩상장 ETF [2024년 기준]
+
+- **채권통 (Bond Connect, 2017년 7월 북향; 2021년 9월 남향):**
+  - 국제투자자의 중국 은행간 채권시장(CIBM) 접근
+  - Bond Connect Company Limited(HKEX 자회사와 CFETS 합작법인) 운영
+  - 2025년 1월 1일부 서비스 수수료 60% 인하
+
+- **Swap Connect (2023년 5월):**
+  - 세계 최초 파생상품 상호시장 접근 프로그램
+  - 북향: 국제투자자의 본토 은행간 금융파생상품(이자율 스왑) 접근
+  - Shanghai Clearing House를 통해 청산, HKEX 자회사 OTC Clear가 통신청산소
+
+- **기술 인프라:**
+  - OTP-CSC(China Stock Connect용 Orion Trading Platform)로 Stock Connect 주문 라우팅
+  - CCCG(China Connect Central Gateway)로 북향 거래 접속
+  - SEHK 자회사가 SSE/SZSE의 특별참가자로 활동하여 주문 라우팅
+  - ChinaClear와 HKSCC가 결제를 위한 교차참가 유지
+
+---
+
+## 10. 수수료 및 수익모델 (Fees & Revenue Model)
+
+### 10.1 매매수수료 (Trading Fees)
+| 수수료 유형 | 요율 | 부과 대상 |
+|------------|------|----------|
+| **인지세** | 거래대금의 0.1%(HK$1 단위 절상; 최소 HK$1) | 매수자 및 매도자 각각 |
+| **SFC 거래부과금** | 거래대금의 0.0027% | 매수자 및 매도자 각각 |
+| **FRC 거래부과금** | 거래대금의 0.00015% | 매수자 및 매도자 각각 |
+| **HKEX 매매수수료** | 거래대금의 0.00565% | 매수자 및 매도자 각각 |
+| **CCASS 주식결제수수료** | 거래대금의 0.002%(최소 HK$2, 최대 HK$100/편/종목/일) | 매수자 및 매도자 각각 |
+| **양도증서 인지세** | 건당 HK$5.00 | 매도자 |
+| **양도수수료** | 건당 HK$2.50 | 매수자 |
+
+**참고:**
+- 인지세가 총 공식 거래비용의 약 90% 차지
+- 2023년 11월 17일부 인지세 0.13%에서 0.1%로 인하
+- ETF 거래는 인지세 면제
+- Stock Connect 북향 거래에는 본토 인지세(0.05% 매도자만) 및 홍콩 부과금 적용
+- 중개수수료(협의, 통상 0.03%-0.25%)는 별도이며 개별 브로커가 설정
+
+### 10.2 기타 수수료 (Other Fees)
+| 수수료 범주 | 설명 |
+|------------|------|
+| **상장수수료** | 최초 상장수수료: HK$150,000(메인보드); 연간 상장수수료: 시가총액 기준 HK$175,000~HK$1,587,000+ |
+| **시장데이터 수수료** | OMD-C 구독수수료, 상품 등급별(Standard, Premium, FullTick); 정보벤더 재배포 수수료 |
+| **호스팅 서비스** | 쳉콴오 데이터센터 코로케이션 (전산센터 공동입주) 랙 공간 및 접속 수수료 |
+| **네트워크 수수료** | 인가벤더를 통한 SDNet/2 및 SDNet/3 회선 구독수수료; 대역폭 기반 가격 |
+| **OCG-C 세션 수수료** | 주문 게이트웨이 접속 세션별 수수료 |
+| **파생상품 매매수수료** | 선물 및 옵션 계약당 수수료; 상품별 상이 |
+| **LME 수수료** | London Metal Exchange 상품의 매매, 청산, 회원 수수료 |
+
+**수익 구성 (HKEX 그룹):**
+- 매매수수료 및 매매부과금: 최대 수익 세그먼트
+- 증권거래소 상장수수료
+- 시장데이터 수수료
+- 예탁, 보관, 명의인 서비스 수수료
+- 청산 및 결제 수수료
+- 투자수익(증거금 및 청산기금)
+- 기타 수익(호스팅, 네트워크, 기술 서비스)
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 시스템 업그레이드 (최근 5년) (System Upgrades)
+- **2021년:** 파생상품시장 Pre-Trade Risk Management(PTRM) 2.0 배포, 강화된 킬 스위치 및 리스크한도 기능
+- **2022년:** 현물시장 VaR(Value-at-Risk) 기반 증거금 모델 도입, 기존 TIMS 방법론 대체
+- **2023년:** Hang Seng Index 파생상품 스위트의 포지션 한도 확대를 위한 시스템 강화
+- **2024년 (4월):** HKEX가 HKATS 대체를 위한 Orion Derivatives Platform(ODP) 자체 개발 발표; 근24시간 거래, 확대된 상품 범위, 업계 표준 인터페이스를 지원하는 모듈형 아키텍처; 2028년 출시 목표
+- **2024년 (12월):** 통합펀드플랫폼(IFP)의 일환으로 Fund Repository 출시
+- **2025년:** 최소 스프레드 축소(Phase 1, 2025년 8월 5일)를 위한 시스템 강화; 2025년 말까지 잠재적 T+1 결제주기를 위한 시스템 준비 완료
+- **2025년 (7월):** IFP Order Routing Service 출시로 펀드 메시지 전송 간소화
+- **2025년 (8월):** HK$10-50 가격범위 최소 스프레드 축소 Phase 1 시행
+
+### 신규 상품/세그먼트 (New Products / Segments)
+- **2022년 (7월):** ETF 통 출시 — Stock Connect 프로그램에 ETF 포함
+- **2023년 (5월):** Swap Connect(북향) 출범 — 세계 최초 파생상품 상호시장 접근
+- **2023년 (3월):** 전문기술기업용 Chapter 18C 상장제도 도입
+- **2023년 (6월):** HKD-RMB Dual Counter 모델 출시, 선정 종목이 HKD 및 RMB 양통화로 거래 가능, 전문 스페셜리스트가 호환성 보장
+- **2024년:** 가상자산 관련 상품 확대; 암호화폐 ETF 상장 승인
+- **2025년:** 106건 IPO에서 2,764억 HKD 조달로 기록적 IPO 해; HKEX가 IPO 조달액 글로벌 1위
+- **2025년 (7월):** HKEX Issuer Access Platform(HKEX IAP) 2026년 출시 제안 발표, 상장발행인과 HKEX 간 주 소통 채널
+- **2025년 (12월):** 보드 랏 체계 개선 자문서 발간(랏 종류 44개 이상에서 8개로 축소)
+
+### 규제 변화 (Regulatory Changes)
+- **2023년 (11월):** 인지세 거래대금의 0.13%에서 0.1%로 인하
+- **2024년:** 기업지배구조 코드 요건 강화; 단일성별 이사회 해소를 요구하는 새 다양성 규칙
+- **2025년 (1월 1일):** 단일성별 이사회 금지 시행 — 모든 상장발행인은 반대 성별 이사 1인 이상 필수
+- **2025년 (1월 1일):** ISSB/TCFD 기준에 부합하는 새 기후관련 공시 규칙 상장기업에 시행
+- **2025년 (1월 1일):** 채권통 서비스 수수료 60% 인하
+- **2025년 (8월 4일):** 상장 시 시장가치에 따른 단계적 공개부유 기준을 도입하는 메인보드 상장규칙 8.08(1) 개정 시행
+- **2026년 (예정):** HK$0.50-10 범위 최소 스프레드 축소 Phase 2, 2026년 중반 목표
+
+### 전략적 이니셔티브 (Strategic Initiatives)
+- **커넥트 확대:** Stock Connect 범위 지속 확대 — 적격 종목 확대, REIT 포함, 블록거래 확대, 휴일 거래 약정
+- **CMU OmniClear MoU (2025년 3월):** 홍콩 사후거래 증권 인프라 강화를 위한 협력, 교차자산군 효율성 및 아시아 내 국제중앙증권예탁기관(ICSD) 개발 포함
+- **T+1 결제 준비:** HKEX가 2025년 말까지 T+1 주식 결제주기에 기술적으로 준비, 다만 실제 시행 일정은 시장 전체 조율에 따름
+- **Orion Derivatives Platform(ODP):** 독자 파생상품 매매 플랫폼에 대한 주요 전략 투자; 근24시간 거래, 확대된 상품 범위, VaR 기반 증거금, 업계 표준 인터페이스 가능
+- **통합펀드플랫폼(IFP):** Fund Repository에서 Order Routing, 전체 플랫폼까지 포괄적 펀드 유통 생태계 구축
+- **HKEX Issuer Access Platform(IAP):** 상장발행인 규제 소통의 디지털 전환, 2026년 목표
+
+---
+
+## 출처 (Sources)
+
+[Source: HKEX Official Website, "About HKEX", https://www.hkex.com.hk, accessed 2026-04-06]
+
+[Source: HKEX, "Trading Mechanism", https://www.hkex.com.hk/Services/Trading/Securities/Overview/Trading-Mechanism?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "OTP-C System Overview", https://www.hkex.com.hk/Services/Trading/Securities/Infrastructure/Overview?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "HKEX Sets Launch Date for New Securities Trading System", https://www.hkex.com.hk/News/Market-Communications/2018/180123news?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Reduction of Minimum Spreads", https://www.hkex.com.hk/Services/Trading/Securities/Overview/Trading-Mechanism/Reduction-of-Minimum-Spreads?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Volatility Control Mechanism (VCM) FAQ", https://www.hkex.com.hk/Global/Exchange/FAQ/Securities-Market/Trading/VCM?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Stock Connect Explained", https://www.hkex.com.hk/Mutual-Market/Connect-Hub/Stock-Connect?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Connect Hub", https://www.hkex.com.hk/Mutual-Market/Connect-Hub?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Hosting Services", https://www.hkex.com.hk/Services/Connectivity/Hosting-Services?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "OMD-C Platform", https://www.hkex.com.hk/Services/Market-Data-Services/Infrastructure/HKEX-Orion-Market-Data-Platform-Securities-Market-OMD-C?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "HKEX in 2025: Year in Review", https://www.hkex.com.hk/News/News-Release/2025/251222news?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Board Lot Framework Enhancements Consultation Paper December 2025", https://www.hkex.com.hk/News/Market-Communications/2025/251218news?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Become a Participant", https://www.hkex.com.hk/Services/Become-a-Participant/Guide-to-Becoming-an-Exchange-Participant?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Pre-Trade Risk Management (PTRM) System in Derivatives Markets", https://www.hkex.com.hk/Services/Trading/Derivatives/Overview/Trading-Mechanism/Pre_Trade-Risk-Management-(PTRM)-System-in-Derivatives-Markets?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Introduction to Regulatory Framework", https://www.hkex.com.hk/Services/Rules-and-Forms-and-Fees/Regulatory-Framework/Introduction?sc_lang=en, accessed 2026-04-06]
+
+[Source: SFC, "Securities and Futures Commission of Hong Kong", https://www.sfc.hk/en/, accessed 2026-04-06]
+
+[Source: HKEX, "Orion Derivatives Platform (ODP)", https://www.hkex.com.hk/Services/Platform-Services/Orion-Derivatives-Platform?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "Annual Market Statistics 2024", https://www.hkex.com.hk/Market-Data/Statistics/Consolidated-Reports/Annual-Market-Statistics?sc_lang=en, accessed 2026-04-06]
+
+[Source: HKEX, "2025 Interim Results", https://www.hkex.com.hk/-/media/HKEX-Market/News/News-Release/2025/250820news/250820news_e.pdf, accessed 2026-04-06]
+
+[Source: Caproasia, "Hong Kong Exchange (HKEX) 2025 Review", https://www.caproasia.com/2025/12/23/hong-kong-exchange-hkex-2025-review/, accessed 2026-04-06]
+
+[Source: Wikipedia, "Hong Kong Exchanges and Clearing", https://en.wikipedia.org/wiki/Hong_Kong_Exchanges_and_Clearing, accessed 2026-04-06]
+
+[Source: Securities and Futures Ordinance (Cap. 571), https://www.elegislation.gov.hk/hk/cap571, accessed 2026-04-06]

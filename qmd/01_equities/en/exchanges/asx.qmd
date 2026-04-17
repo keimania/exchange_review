@@ -1,0 +1,523 @@
+---
+title: "Australian Securities Exchange (ASX)"
+subtitle: "Equities > Exchanges"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 2
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | ASX Limited (operating the Australian Securities Exchange) |
+| Abbreviation | ASX |
+| Website | https://www.asx.com.au |
+| Year Established | 1987 (merger of six state-based stock exchanges); ASX Limited formed in 2006 via merger of ASX and SFE (Sydney Futures Exchange) |
+| Country / City | Australia / Sydney (Exchange Centre, 20 Bridge Street, Sydney NSW 2000) |
+| Ownership Structure | Publicly listed on its own exchange (ticker: ASX); ~50% retail investors, ~49% institutional (top holders: UniSuper ~14%, BlackRock ~6.1%, AustralianSuper ~6.1%), insiders <1% |
+| Parent Company / Group | ASX Limited (self-listed holding company) |
+| Regulatory Authority | Australian Securities and Investments Commission (ASIC); Reserve Bank of Australia (RBA) for clearing and settlement stability |
+| CEO | Helen Lofthouse (appointed August 2022) |
+| Market Capitalization (listed companies) | ~AUD 3.4 trillion / ~USD 2.2 trillion (February 2026) |
+| ASX Limited Market Cap (exchange operator) | ~AUD 9.6 billion (2026) |
+| Total Listed Instruments | ~2,241 listed companies (as of 2025) |
+| Average Daily Trading Volume | ~AUD 4.7 billion average daily turnover |
+| FY2025 Operating Revenue | AUD 1,107.2 million (+7.0% YoY) |
+| FY2025 Underlying Net Profit | AUD 510.0 million (+7.5% YoY) |
+
+### Vertical Integration
+
+ASX is one of the world's few vertically integrated exchange groups, operating across the full value chain:
+- **Listings:** ASX Listing Rules govern admission and ongoing obligations
+- **Trading:** ASX Trade (cash equities), ASX 24 (derivatives)
+- **Clearing:** ASX Clear (cash equities and equity options), ASX Clear (Futures)
+- **Settlement:** ASX Settlement (via CHESS -- Clearing House Electronic Subregister System)
+- **Registry:** Austraclear (debt securities)
+
+### Key Historical Milestones
+- 1861: First stock exchange established in Melbourne
+- 1871: Sydney Stock Exchange established
+- 1987: Australian Stock Exchange (ASX) formed on 1 April through the merger of six independent state-based stock exchanges (Sydney, Melbourne, Brisbane, Adelaide, Hobart, Perth) under the Australian Securities Exchange and National Guarantee Fund Act 1987
+- 1987: Fully electronic trading introduced (SEATS -- Stock Exchange Automated Trading System), replacing floor trading
+- 1990: ASX became a national market; Australian Securities Commission (predecessor to ASIC) established
+- 1996: CHESS (Clearing House Electronic Subregister System) launched for electronic settlement and subregistry
+- 1998: ASX demutualised and listed on its own exchange (13 October), becoming one of the first exchanges globally to do so
+- 2006: ASX merged with the Sydney Futures Exchange (SFE) to form ASX Limited, creating a multi-asset exchange group
+- 2010: ASX Trade launched (powered by NASDAQ OMX Genium INET), replacing SEATS/ITS
+- 2010-2011: Proposed merger with Singapore Exchange (SGX) for AUD 8.4 billion; blocked by the Australian government on national interest grounds (April 2011)
+- 2012: Chi-X Australia (now Cboe Australia) launched as a competing lit market, ending ASX's trading monopoly; ASIC assumed market supervision from ASX
+- 2015: ASX selected Digital Asset Holdings (DA) to explore distributed ledger technology (DLT) for CHESS replacement
+- 2017: ASX formally announced the CHESS replacement using DLT/blockchain technology
+- 2022: ASX abandoned the DLT-based CHESS replacement project in November, writing off ~AUD 250 million
+- 2023: ASX selected Tata Consultancy Services (TCS) as the new implementation partner for CHESS replacement using conventional technology
+- 2024: CHESS batch settlement failure on 20 December triggered major regulatory scrutiny
+- 2025: ASIC launched formal Inquiry into ASX Group (June 2025) following "repeated and serious failures"
+- 2025: Market structure changes (SR15) implemented on 23 June -- single opening auction, new closing auction format, and post-close trading session
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| **ASX (Main Board)** | Primary listing venue for established companies, including S&P/ASX 200 constituents; covers equities, ETFs, LICs, REITs, infrastructure funds, debt securities | Minimum profit test (AUD 1M aggregate over 3 years, including AUD 500K in most recent year) OR assets test (AUD 4M net tangible assets or AUD 15M market cap); minimum 300 shareholders each holding AUD 2,000+; 20% minimum free float |
+| **ASX Listing (Debt)** | Listing venue for wholesale and retail debt securities, including corporate bonds, government bonds, and hybrid securities | Specific requirements for debt issuers including prospectus/information memorandum; minimum issue size requirements apply |
+| **ASX Foreign Exempt** | Simplified secondary listing for companies with primary listing on an approved overseas exchange | Primary listing on a recognised exchange; compliance with home exchange rules; initial listing fee AUD 100K--1M |
+
+**Note:** Unlike some exchanges, ASX does not operate a separate SME/growth board. However, smaller companies may list under the assets test pathway with lower thresholds.
+
+### 2.2 Trading Sessions
+
+**Note:** Sydney observes AEST (UTC+10) from April to October, and AEDT (UTC+11) from October to April. Times below are in Sydney local time.
+
+**Post-June 2025 Trading Schedule (following SR15 market structure changes):**
+
+| Session | Local Time (Sydney) | UTC (AEST) | UTC (AEDT) | Description |
+|---------|-------------------|------------|------------|-------------|
+| Pre-Open | 07:00 - 09:59 | 21:00 - 23:59 (prev day) | 20:00 - 22:59 (prev day) | Orders accepted, entered, amended, cancelled; no matching |
+| Opening Single Price Auction | 09:59:00 - 09:59:15 | 23:59:00 - 23:59:15 | 22:59:00 - 22:59:15 | Randomised 15-second window; single price match determines opening price |
+| Levelling Period | ~09:59:15 - ~10:00 | -- | -- | 15-30 second period for orderly processing of auction trades |
+| Continuous Trading | 10:00 - 16:00 | 00:00 - 06:00 | 23:00 - 05:00 | Continuous order matching by price-time priority; 6 hours uninterrupted (no lunch break) |
+| Pre-CSPA (Closing) | 16:00 - 16:10 | 06:00 - 06:10 | 05:00 - 05:10 | Orders accumulate for closing auction; price-sensitive announcements reflected |
+| Closing Single Price Auction (CSPA) | 16:10 - 16:11 | 06:10 - 06:11 | 05:10 - 05:11 | Randomised end; single price match determines official closing price |
+| Post-Close Trading | 16:11 - 16:21:30 | 06:11 - 06:21:30 | 05:11 - 05:21:30 | Continuous lit trading at the closing price only; new session introduced June 2025 |
+
+**Key Changes from SR15 (23 June 2025):**
+- Unified opening auction (previously staggered across 5 groups)
+- Extended pre-CSPA window (previously started at 16:10, now 16:00)
+- New 10-minute post-close continuous trading session at the closing price
+- No mid-day break (ASX removed lunch break years ago, unlike many Asian exchanges)
+
+### 2.3 Tick Sizes
+
+| Price Range (AUD) | Tick Size (AUD) |
+|-------------------|-----------------|
+| Below $0.10 | $0.001 (0.1 cent) |
+| $0.10 - $1.999 | $0.005 (0.5 cent) |
+| $2.00 and above | $0.01 (1 cent) |
+
+*Source: ASX Operating Rules Procedures. ETFs and some other instrument classes may have modified tick size tables.*
+
+### 2.4 Lot Sizes
+
+- **Standard Board Lot:** 1 share (ASX does not enforce a minimum board lot for equities; orders are accepted in units of 1)
+- **Odd Lot Trading:** Fully supported in the main order book; no separate odd-lot market required
+- **Minimum Order Value:** Some brokers impose their own minimum order values (e.g., AUD 500), but this is not an exchange-level requirement
+
+### 2.5 Market Maker / Liquidity Provider Programs
+
+ASX operates several liquidity enhancement programmes:
+
+- **ETF Market Making:** Dedicated market makers provide continuous two-sided quotes for ETFs with obligations on spread width and minimum quote size; incentivised through reduced trading and clearing fees
+- **Warrant Market Making:** Issuers of structured warrants are required to make markets in their products
+- **Cash Equity Liquidity:** ASX has periodically offered incentive programmes for market makers in less liquid securities, though these are not as formalised as some other exchanges [unverified -- specific current programmes may have changed]
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+- **Opening Auction:** Orders accumulate during the pre-open phase (from 07:00). At a randomised time between 09:59:00 and 09:59:15, the system executes a single-price auction that maximises tradable volume. The equilibrium price algorithm considers: (1) maximum executable volume, (2) minimum order imbalance at that volume, (3) reference price proximity. All securities open simultaneously (single open, effective June 2025).
+
+- **Closing Single Price Auction (CSPA):** The pre-CSPA phase begins at 16:00, allowing orders to accumulate. At a randomised time around 16:10-16:11, the closing auction executes using the same equilibrium price algorithm. The CSPA closing price is the official closing price used for index calculations, margin calculations, and NAV determinations.
+
+- **Post-Close Session:** Introduced June 2025, this 10-minute continuous trading session allows orders to match at the official closing price only. Provides additional liquidity for participants needing to execute at the close (e.g., index funds, benchmark-driven strategies).
+
+- **Volatility Auction:** Not a formal separate auction; instead, ASX uses Extreme Trade Range (ETR) and Anomalous Order Threshold (AOT) mechanisms to pause or restrict trading when price volatility is excessive (see Section 8).
+
+### 3.2 Continuous Trading
+
+- **Model:** Pure order-driven Central Limit Order Book (CLOB) for ASX TradeMatch (lit market)
+- **Priority:** Strict price-time priority -- orders matched first by best price, then by time of entry at the same price level
+- **Dark Liquidity:** ASX Centre Point operates as an integrated dark pool alongside the lit order book (see Section 4.2)
+- **Session Duration:** 6 hours continuous (10:00-16:00), no lunch break
+
+### 3.3 Price Discovery
+
+**Equilibrium Price Algorithm (for auctions):**
+1. Calculate the price that maximises executable volume
+2. If multiple prices yield the same maximum volume, select the price with the smallest imbalance
+3. If still tied, select the price closest to the reference price (last traded price or previous close)
+4. Market orders participate with highest priority
+
+**Continuous Session:**
+- Price discovery through continuous matching of incoming aggressive orders against resting passive orders
+- ASX TradeMatch (lit) and ASX Centre Point (dark) operate as two integrated venues within the same matching engine
+- Centre Point orders execute at or within the NBBO (National Best Bid and Offer), with midpoint being the default execution price
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types (ASX TradeMatch -- Lit Market)
+
+| Order Type | Description |
+|------------|-------------|
+| **Limit Order** | Buy or sell at a specified price or better; rests on the order book if not immediately matched |
+| **Market Order** | Execute immediately at the best available price; any unfilled quantity converts to a limit order at the last execution price (market-to-limit behaviour) |
+| **Market-to-Limit Order** | Execute at the best available price; unfilled portion rests as a limit order at the price of the last partial fill |
+
+### 4.2 Advanced Order Types (ASX Centre Point -- Dark)
+
+| Order Type | Description |
+|------------|-------------|
+| **Centre Point** | Non-displayed order matched at the midpoint of the NBBO; provides price improvement over the lit market |
+| **Centre Point Block** | Centre Point order with a user-defined Minimum Acceptable Quantity (MAQ); only executes when the MAQ can be satisfied |
+| **Single Fill MAQ** | Executes only when the full MAQ can be satisfied by a single opposing order; designed for block discovery with minimal information leakage |
+| **Dark Limit** | Non-displayed order executed at any permitted dark price up to the specified limit price (not restricted to midpoint) |
+| **ASX Sweep** | Single transaction that sweeps dark liquidity in Centre Point first, then lit liquidity in TradeMatch; remaining volume rests in TradeMatch |
+| **ASX Sweep Dual Post** | Simultaneously posts orders in both Centre Point and TradeMatch at limit +1/2 tick; no risk of overfill |
+| **Pegged Order** | Order that automatically adjusts its price to track the best bid or offer [unverified -- specific pegged order availability may vary] |
+
+### 4.3 Time-in-Force Options
+
+| TIF Option | Description |
+|------------|-------------|
+| **Day** | Valid for the current trading day only; cancelled at end of day |
+| **IOC (Immediate or Cancel)** | Execute immediately (fully or partially); cancel any unfilled portion |
+| **FOK (Fill or Kill)** | Execute immediately in full or cancel the entire order |
+| **GTC (Good-till-Cancel)** | Remains active until executed or explicitly cancelled (subject to maximum order lifetime) |
+| **GTD (Good-till-Date)** | Remains active until specified date or until filled/cancelled |
+| **GTE (Good-till-Expiry)** | Remains active until the expiry date of the instrument |
+
+### 4.4 Order Modification / Cancellation
+
+- Orders can be amended (price, quantity) or cancelled during the pre-open and continuous trading sessions
+- Price amendments result in loss of time priority (new timestamp assigned)
+- Quantity reductions (downward amendments) preserve time priority
+- During the Non-Cancel period of auctions, no cancellations or amendments are permitted
+- ASX Operating Rules require participants to have adequate systems to manage and control orders
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | ASX Trade (cash equities); ASX 24 (derivatives) |
+| Vendor | NASDAQ OMX Genium INET platform |
+| Architecture | Centralised matching engine at the Australian Liquidity Centre (ALC); carrier-neutral data centre |
+| Matching Engine | Genium INET -- supports multiple order books, auction and continuous matching, integrated lit/dark |
+| Round-trip Latency | ~300 microseconds (at launch in 2010; reduced from 30ms on the previous SEATS system) [unverified -- current latency may be lower after subsequent optimisations] |
+| Order Processing Capacity | 100,000+ orders per second (at launch 2010; up from 20,000 on SEATS) |
+| Messages Per Second | [specific current figure not publicly disclosed] |
+| Launch Year | 2010 (ASX Trade cash equities); 2010 (ASX 24 derivatives, October) |
+
+### System History
+
+| Period | System | Notes |
+|--------|--------|-------|
+| 1987 - 2006 | SEATS (Stock Exchange Automated Trading System) | First fully electronic trading system; replaced open outcry |
+| 2006 - 2010 | ITS (Integrated Trading System) | Intermediate upgrade after ASX-SFE merger |
+| 2010 - present | ASX Trade (Genium INET) | NASDAQ OMX platform; launched 29 November 2010; major capacity and latency improvement |
+| 2010 - present | ASX 24 (Genium INET) | Derivatives platform; launched 11 October 2010 |
+| 1996 - present | CHESS | Clearing House Electronic Subregister System; handles settlement and subregistry; replacement in progress |
+
+### Technology Stack
+
+- **Trading Engine:** NASDAQ Genium INET (C/C++ based matching engine)
+- **Data Centre:** Australian Liquidity Centre (ALC), Gore Hill, Sydney -- purpose-built Tier III financial markets data centre
+- **Network:** ASX Net -- high-performance dark fibre optical network connecting ALC to participant offices and other data centres across Sydney and Melbourne
+- **Protocols:** FIX (order entry), OUCH (ultra-low latency order entry), ITCH (ultra-low latency market data), GLIMPSE (order book snapshots)
+
+### Disaster Recovery / Business Continuity
+
+- ASX operates a secondary data centre for disaster recovery [specific location not publicly disclosed]
+- Business continuity plans cover trading system failover, CHESS operations, and clearing processes
+- The December 2024 CHESS batch settlement failure exposed significant weaknesses in operational resilience, prompting regulatory action (see Section 9 and 11)
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+
+| Protocol | Description | Use Case |
+|----------|-------------|----------|
+| **ASX ITCH** | Ultra-low latency binary multicast protocol; delivers full order book detail with nanosecond timestamps | Primary feed for algorithmic/HFT firms; full depth of book |
+| **GLIMPSE** | Point-to-point TCP snapshot feed complementing ITCH | Order book recovery/synchronisation; provides current state snapshot with sequence number for ITCH resync |
+| **FIX Market Data** | Industry-standard FIX protocol for market data delivery | Broader participant community; lower-latency requirements |
+| **ASX MDF (Market Data Feed)** | [Legacy/alternative market data distribution] | General market data consumption |
+
+### 6.2 Data Levels
+
+- **Level 1 (Top of Book):** Best bid/offer prices and sizes; last traded price, volume; daily high/low/open/close
+- **Level 2 (Market Depth):** Multiple price levels of the order book (typically 5-10 levels of aggregated depth)
+- **Full Depth (ITCH):** Complete order-by-order view of the order book; every order addition, modification, cancellation, and execution event; all price levels
+
+### 6.3 Distribution Infrastructure
+
+- **Direct Feeds:** Available via co-location at the ALC or via ASX Net connectivity
+- **Redistributors:** ASX real-time data distributed through major vendors including Refinitiv (LSEG), Bloomberg, FactSet, and others
+- **ASX Information Services:** Manages licensing and distribution of all ASX market data products
+- **Delivery:** ITCH via UDP multicast; GLIMPSE via TCP (SoupBinTCP); FIX via TCP
+
+### 6.4 Historical Data
+
+- ASX provides end-of-day data, tick-by-tick historical data, and reference data through ASX Information Services
+- Third-party providers (e.g., Refinitiv, TickData) offer processed historical ASX data products
+- Corporate actions and announcement data available through ASX's company announcements platform
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+
+- **Market Participants:** Must hold an Australian Market Licence (AML) or be authorised by ASIC as a market participant under the Corporations Act 2001
+- **Trading Participants:** Must meet ASX Operating Rules requirements including capital adequacy, organisational capacity, and system certification
+- **Clearing Participants:** Separate membership required for ASX Clear (cash) and ASX Clear (Futures); subject to capital requirements and risk management obligations
+- **Settlement Participants:** Must be approved by ASX Settlement to participate in CHESS
+
+### 7.2 Connection Methods
+
+| Method | Description |
+|--------|-------------|
+| **Co-location (ALC)** | Direct rack space in the Australian Liquidity Centre; equal-length cross-connects to matching engine |
+| **ASX Net** | ASX's high-performance dark fibre network connecting ALC to participant offices and other data centres in Sydney and Melbourne |
+| **Third-party Networks** | Carrier-neutral ALC allows connection via preferred network providers (e.g., BT Radianz, IPC, TNS) |
+| **Internet/VPN** | Available for non-latency-sensitive connectivity (e.g., surveillance, reporting) |
+
+### 7.3 Co-location / Proximity Services
+
+- **Location:** Australian Liquidity Centre (ALC), Gore Hill, Sydney, NSW
+- **Facility:** Purpose-built Tier III data centre, opened 2012; designed specifically for financial markets
+- **Equal Access:** All co-located participants receive identical-length cross-connects to the matching engine
+- **Tenants:** 100+ financial organisations including buy-side firms, sell-side firms, alternative liquidity venues, ISVs, and network providers
+- **Peer-to-Peer:** Cross-connect fabric enables direct participant-to-participant connectivity within the ALC
+
+### 7.4 API Protocols
+
+| Protocol | Use Case |
+|----------|----------|
+| **FIX (Financial Information eXchange)** | Standard order entry and execution; widely supported; suitable for most participants |
+| **OUCH** | Ultra-low latency binary order entry protocol; optimised for algorithmic and high-frequency trading |
+| **ITCH** | Ultra-low latency binary market data protocol; full depth of book via multicast |
+| **GLIMPSE** | TCP-based order book snapshot recovery; complements ITCH for session recovery |
+| **OMNet / OMEX** | Legacy API interfaces [unverified -- may have been retired with platform upgrades] |
+
+### 7.5 Certification / Testing
+
+- All market participants must complete ASX certification testing before connecting to the production environment
+- ASX provides a Customer Development Environment (CDE) for testing
+- Participants must re-certify following significant system changes (either ASX or participant-side)
+- Technical documentation available via ASX Online (asxonline.com)
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+
+| Type | Threshold | Action |
+|------|-----------|--------|
+| **Anomalous Order Threshold (AOT)** | +/- 10% from a rolling 2-minute VWAP reference price (updated every minute) | Orders priced beyond the AOT are rejected; prevents fat-finger and erroneous orders |
+| **Extreme Trade Range (ETR)** | Stock-specific price bands (calculated for each security based on its characteristics) | If a potential trade would breach the ETR, trading in that security is paused for 2 minutes |
+
+### 8.2 Circuit Breakers
+
+| Mechanism | Trigger | Action |
+|-----------|---------|--------|
+| **Extreme Trade Range (ETR) Pause** | Trade would execute outside the ETR band for a specific security | 2-minute trading pause in the affected security; other securities continue trading normally |
+| **Market-wide Circuit Breaker** | ASX does not operate a formal market-wide circuit breaker based on index decline thresholds (unlike NYSE/NASDAQ) | ASX relies on individual security-level controls (ETR/AOT) and has the discretion to halt the market under extraordinary circumstances |
+| **Trading Halt** | Requested by the listed entity or imposed by ASX for pending price-sensitive announcements | Trading suspended until the announcement is released and the market has time to absorb the information |
+| **Suspension** | Imposed by ASX for non-compliance with listing rules, at ASIC direction, or for other regulatory reasons | Trading suspended indefinitely until the issue is resolved |
+
+**ASX's Philosophy:** ASX has publicly articulated a preference for individual security-level controls (AOT/ETR) over broad market-wide circuit breakers, arguing that targeted mechanisms are more effective at maintaining orderly markets without unnecessarily disrupting trading in unaffected securities.
+
+### 8.3 Pre-trade Risk Controls
+
+- **Anomalous Order Threshold (AOT):** Prevents aggressive orders beyond +/- 10% of the reference price
+- **Order Size Limits:** ASX Operating Rules require participants to implement their own order size controls; ASX can also set system-level limits
+- **Participant-level Controls:** Trading participants are required to maintain pre-trade risk management systems including maximum order value checks and position limits
+- **Kill Switch:** ASX provides functionality for participants to cancel all resting orders (mass cancel) in emergency situations
+
+### 8.4 Kill Switch
+
+- Participants can issue mass cancel requests via FIX or OUCH protocols to cancel all outstanding orders
+- ASX can also exercise its own authority to cancel or remove orders from the market in exceptional circumstances under the ASX Operating Rules
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+
+- **ASIC (Australian Securities and Investments Commission):** Primary regulator; responsible for market supervision, licensing of market operators and participants, enforcement of market integrity rules, and consumer protection
+- **RBA (Reserve Bank of Australia):** Oversees clearing and settlement facility licensees under the Financial Stability Standards; assesses ASX Clear and ASX Settlement annually for compliance
+- **ASX Compliance:** ASX's internal compliance function monitors listing rule compliance by listed entities (separate from ASIC's market supervision role)
+
+### 9.2 Key Regulations
+
+- **Corporations Act 2001 (Cth):** Primary legislation governing financial markets, including Part 7.2 (market licences), Part 7.3 (clearing and settlement facility licences), and Part 7.10 (market integrity)
+- **ASIC Market Integrity Rules (Securities Markets) 2017:** Detailed rules governing trading conduct, best execution, order handling, and market manipulation
+- **ASIC Market Integrity Rules (Competition in Exchange Markets) 2011:** Rules governing competition between trading venues (ASX vs. Cboe Australia)
+- **ASX Operating Rules:** Exchange-specific rules governing trading participants, order entry, and market conduct
+- **ASX Listing Rules:** Govern the admission and ongoing obligations of listed entities, including continuous disclosure, related party transactions, and shareholder approval requirements
+- **ASX Clear Operating Rules / ASX Settlement Operating Rules:** Govern clearing and settlement participants
+- **Financial Stability Standards (RBA):** Standards that ASX Clear and ASX Settlement must meet to maintain their clearing and settlement facility licences
+
+### 9.3 Market Surveillance
+
+- **ASIC Market Supervision:** ASIC assumed direct market supervision responsibility from ASX in August 2010 (formalised 2012), using the SMARTS surveillance system
+- **Real-time Monitoring:** ASIC monitors all trading activity across ASX and Cboe Australia in real time for market manipulation, insider trading, and other misconduct
+- **ASX Listing Compliance:** ASX retains responsibility for monitoring compliance with Listing Rules (continuous disclosure, corporate governance)
+- **ASIC Inquiry into ASX (2025-2026):** ASIC launched a formal inquiry into the ASX Group in June 2025, following the December 2024 CHESS settlement failure and other incidents; the inquiry examined governance, capability, and risk management across all ASX licensed entities
+
+### 9.4 Reporting Requirements
+
+- **Continuous Disclosure:** Listed entities must immediately disclose price-sensitive information under ASX Listing Rule 3.1 and Section 674 of the Corporations Act
+- **Transaction Reporting:** Market participants must report all transactions to ASIC
+- **Substantial Holder Notices:** Required when ownership crosses 5% threshold (and for each 1% change thereafter)
+- **Short Selling Reporting:** Daily reporting of covered short sales; naked short selling is prohibited
+
+### 9.5 Cross-border Arrangements
+
+- ASX has mutual recognition arrangements with several overseas exchanges and regulators
+- Foreign companies can list on ASX under the Foreign Exempt listing category
+- ASIC participates in IOSCO and has MoUs with numerous international regulators
+- The proposed ASX-SGX merger (2010-2011) was blocked by the Australian government under the Foreign Acquisitions and Takeovers Act on national interest grounds
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+
+| Fee Type | Structure | Rate (approximate) |
+|----------|-----------|-------------------|
+| **Trading Fee (TradeMatch)** | Ad valorem on traded value | ~0.15-0.28 basis points per side depending on participant tier and activity level [unverified -- specific rates per the January 2026 fee schedule] |
+| **Centre Point Trading Fee** | Ad valorem; typically higher than TradeMatch due to price improvement | Premium over lit trading fees [unverified -- specific rates not publicly summarised] |
+| **Clearing Fee (ASX Clear)** | Per-trade fee or ad valorem component | Subject to new revenue-capping pricing policy effective July 2025 |
+| **Settlement Fee (ASX Settlement)** | Per-settlement instruction | Subject to new revenue-capping pricing policy effective July 2025 |
+
+**Note:** In July 2025, ASX implemented a new Pricing Policy for cash equity clearing, settlement, and issuer services that caps revenue to the amount required to efficiently deliver services plus a reasonable rate of return. This was introduced under the ASIC CS Services Rules 2025 and reflects ASX's monopoly position in clearing and settlement.
+
+### 10.2 Other Fees
+
+**Listing Fees:**
+- **Initial Listing Fee:** Calculated on the value of quoted securities; minimum AUD ~30,000 for standard listings; AUD 100,000-1,000,000 for foreign exempt listings
+- **Annual Listing Fee:** Calculated on the value of quoted securities as at 31 May each year; varies by market capitalisation tier
+- **Suspended Entity Fee:** AUD 30,000 per year for entities suspended for 6+ months
+- **Listing Revenue (FY2025):** AUD 208.0 million
+
+**Market Data Fees:**
+- Fees for real-time data (Level 1, Level 2, Full Depth), delayed data, and historical data
+- Licensed through ASX Information Services; redistributors pay per-user fees
+- Specific fee schedules available from ASX Information and Technical Services
+
+**Co-location Fees:**
+- Rack space, power, and cross-connect fees at the ALC
+- Equal-access pricing model for cross-connects to the matching engine
+
+### 10.3 Revenue Breakdown (FY2025)
+
+| Division | Revenue (AUD M) | YoY Change |
+|----------|----------------|------------|
+| Listings | 208.0 | -0.1% |
+| Markets (Futures, OTC, Austraclear) | 349.2 | +10.7% |
+| Technology & Data | [included in total] | -- |
+| **Total Operating Revenue** | **1,107.2** | **+7.0%** |
+| **Underlying Net Profit** | **510.0** | **+7.5%** |
+| **Dividends per Share** | **223.3 cps** | fully franked |
+
+---
+
+## 11. Recent Developments
+
+### CHESS Replacement Saga (Major Story)
+
+The failed CHESS replacement project is one of the most significant technology failures in global exchange history:
+
+**Phase 1 -- DLT/Blockchain Approach (2015-2022):**
+- 2015: ASX selected Digital Asset Holdings (DA) to explore DLT for CHESS replacement
+- 2017: ASX formally announced CHESS replacement using DA's distributed ledger technology
+- 2018-2022: Repeated delays; go-live date pushed back multiple times (originally 2020, then 2021, 2022, 2023)
+- November 2022: ASX abandoned the DLT-based project after an independent review by Accenture found the software was only 63% complete with an uncertain timeline and overly complex integrated design
+- Financial impact: ~AUD 250 million write-off
+- Key lesson: Attempting to replace critical market infrastructure with unproven technology (enterprise blockchain) was identified as a fundamental strategic error
+
+**Phase 2 -- Conventional Technology Approach (2023-present):**
+- 2023: ASX selected Tata Consultancy Services (TCS) as the new implementation partner
+- Two-phased approach: Phase 1 (clearing) targeted for late April 2026; Phase 2 (settlement and subregistry) targeted for 2028-2029
+- Complete pivot away from DLT to conventional technology stack
+- CHESS replacement Release One go-live targeted for late April 2026 [subject to change]
+
+### December 2024 CHESS Settlement Failure
+
+- 20 December 2024: CHESS batch settlement failed to complete, pushing all settlements to the following Monday
+- Root cause: A memory allocation coding error introduced in 2014 that went undetected for a decade until specific conditions triggered it
+- Impact: Disrupted settlement of all cash equity transactions for the Australian market
+- Triggered unprecedented joint RBA-ASIC intervention in March 2025
+
+### ASIC Inquiry into ASX Group (2025-2026)
+
+- March 2025: RBA and ASIC issued joint letter expressing "deep concerns" about ASX's operational risk management
+- June 2025: ASIC launched formal Inquiry into the ASX Group covering governance, capability, and risk management across all ASX licensed entities (market licences and clearing/settlement facility licences)
+- The inquiry examined "repeated and serious failures" across the ASX Group
+- December 2025: ASIC announced a "transformational package" to safeguard financial markets based on the inquiry's interim report
+- March 2026: ASIC published the ASX Inquiry Panel Final Report with observations and recommendations for change
+
+### Market Structure Changes -- SR15 (June 2025)
+
+- **Single Opening Auction:** All securities now open simultaneously (replaced the previous 5-group staggered open)
+- **Enhanced Closing Auction:** Extended pre-CSPA window from 16:00 (was 16:07); improved handling of late price-sensitive announcements
+- **Post-Close Trading Session:** New 10-minute continuous lit session after the CSPA at the official closing price (16:11-16:21:30)
+- These changes align ASX more closely with global best practice (similar to NASDAQ, HKEX, LSE)
+
+### T+1 Settlement Plans
+
+- Australia currently settles on T+2
+- ASX published an industry whitepaper in April 2024; T+1 Working Group established December 2023
+- Industry consensus: T+1 is desirable but should not proceed until the CHESS replacement is complete
+- No confirmed T+1 implementation date; earliest feasible timeline likely 2029+ (after CHESS Phase 2)
+- International context: US moved to T+1 in May 2024; EU targeting 2027; UK targeting 2027
+
+### Other Developments
+
+- **Tokenised Government Bond Settlement:** ASX launched a pilot for tokenised government bond settlement in March 2026
+- **ASIC CS Services Rules 2025:** New regulatory framework for clearing and settlement service pricing, implementing revenue-capping methodology
+- **Competition:** Cboe Australia continues to operate as a competing lit venue; ASX maintains ~80%+ market share of lit on-exchange trading [unverified]
+
+---
+
+## Sources
+
+1. [ASX Official Website](https://www.asx.com.au) -- exchange overview, trading hours, listing rules, fee schedules
+2. [ASX Cash Market Trading Hours](https://www.asx.com.au/markets/market-resources/trading-hours-calendar/cash-market-trading-hours) -- trading session details
+3. [ASX Centre Point](https://www.asx.com.au/markets/trade-our-cash-market/asx-equities-trading/asx-centre-point) -- dark pool order types
+4. [ASX Trade Technical Documentation](https://www.asxonline.com/public/documents/asx-trade-refresh-manuals.html) -- FIX, OUCH, ITCH specifications
+5. [ASX Australian Liquidity Centre](https://www.asx.com.au/alc) -- co-location and connectivity
+6. [ASX Fee Schedules](https://www.asx.com.au/markets/market-resources/asx-schedule-of-fees) -- trading, clearing, settlement, listing fees
+7. [NASDAQ Press Release: ASX Launches Next Generation Trading Platform](https://ir.nasdaq.com/news-releases/news-release-details/asx-launches-next-generation-trading-platform-powered-nasdaq) -- ASX Trade technology specifications (2010)
+8. [ASX Annual Report 2025](https://www.asx.com.au/content/dam/asx/annual-reports/asx-2025-annual-report.pdf) -- financial results
+9. [ASX Regulatory Framework](https://www.asx.com.au/about/regulation) -- regulatory overview
+10. [ASIC Inquiry into ASX](https://www.asic.gov.au/regulatory-resources/markets/inquiry-into-asx/) -- 2025-2026 inquiry details
+11. [ASIC Media Release 25-050MR: RBA and ASIC act on deep concerns with ASX](https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2025-releases/25-050mr-rba-and-asic-act-on-deep-concerns-with-asx/) -- CHESS settlement failure response
+12. [ASIC Media Release 26-059MR: ASIC publishes ASX Inquiry Panel Final Report](https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-059mr-asic-publishes-asx-inquiry-panel-final-report-and-acknowledges-observations/) -- inquiry conclusions
+13. [ASX Changes to Equity Market Structure](https://www.asx.com.au/blog/listed-at-asx/changes-to-equity-market-structure) -- SR15 market structure changes
+14. [ASX T+1 Settlement Cycle](https://www.asx.com.au/markets/clearing-and-settlement-services/t1-settlement-cycle) -- T+1 consultation
+15. [Henrico Dolfing: ASX CHESS Blunder Case Study](https://www.henricodolfing.com/2025/01/case-study-asx-chess-disaster.html) -- CHESS DLT project failure analysis
+16. [ASX Market Volatility FAQs](https://www.asx.com.au/markets/market-resources/market-volatility-faqs) -- circuit breaker and AOT/ETR details
+17. [Australian Securities Exchange - Wikipedia](https://en.wikipedia.org/wiki/Australian_Securities_Exchange) -- historical background
+18. [Statista: Monthly ASX Domestic Market Cap](https://www.statista.com/statistics/1274954/monthly-asx-domestic-market-cap/) -- market capitalisation data
+19. [CEIC: Australian Stock Exchange Market Capitalization](https://www.ceicdata.com/en/australia/australian-stock-exchange-market-capitalization) -- AUD 3.4 trillion figure (February 2026)
+20. [ASX Order Controls](https://www.asx.com.au/markets/trade-our-cash-market/asx-equities-trading/order-controls) -- AOT and ETR specifications

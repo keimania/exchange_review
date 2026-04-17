@@ -1,0 +1,539 @@
+---
+title: "DTCC 핵심 시스템 (DTCC Core Systems) — NSCC/DTC 결제 및 청산 인프라"
+subtitle: "청산결제 > 시스템"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-07
+> **시스템 분류:** 청산시스템 / 결제시스템
+
+---
+
+## 1. 시스템 개요 (System Overview)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 시스템명 | DTCC Core Systems (다수의 통합 플랫폼) |
+| 운영기관 | DTCC / NSCC / DTC / FICC |
+| 목적 | 미국 자본시장의 청산, 결제, 차감(netting), 예탁 서비스 및 리스크 관리 |
+| 가동연도 | 1973년 (DTC); 1976년 (NSCC/CNS); 2003년 (FICC); 지속적 현대화 진행 |
+| 현재 버전 | 레거시 메인프레임 코어에 분산 오버레이 적용; 현대화 CNS는 2026년 4분기 가동 목표 |
+| 개발 | 자체 개발(독점 개발); DLT 구성요소는 R3 Corda 기반(Project Ion); ComposerX는 Digital Asset(Daml/Canton) 기반; 클라우드 인프라는 AWS |
+
+### 시스템 발전 과정 (System Evolution)
+
+| 시기 | 시스템 / 이니셔티브 | 주요 변화 |
+|--------|-------------------|-------------|
+| 1973 | DTC Settlement System | 실물 증권을 고정화(immobilize)하고 장부기재 이체를 가능하게 하여 "서류 위기(paperwork crisis)"를 해결하기 위해 설립 |
+| 1976 | CNS (Continuous Net Settlement) | NYSE, AMEX, NASD 청산 자회사 합병을 통해 NSCC의 핵심 차감 엔진 구축 |
+| 1986 | GSCC Trade Comparison | 정부증권청산공사(GSCC)가 실시간 거래 비교(trade comparison) 시스템 구축 |
+| 1990년대 | ACATS | 자동 고객계좌이전서비스(ACATS) 출시 |
+| 2003 | FICC RTTM | GSCC와 MBSCC 합병으로 FICC 설립 시 국채 및 MBS 대상 실시간 거래 매칭(RTTM) 도입 |
+| 2005 | 지방채/회사채 RTTM | RTTM 서비스를 지방채 및 회사채로 확대 |
+| 2012 | SIFMU 지정 | DTC, NSCC, FICC가 도드-프랭크법(Dodd-Frank Act) Title VIII에 따라 시스템적으로 중요한 금융시장인프라(SIFMU)로 지정 |
+| 2014 | CTM / ITP Suite | Central Trade Manager(CTM)와 TradeSuite ID를 포함한 기관 거래처리(ITP) 제품군 완성 |
+| 2017 | T+2 시스템 업데이트 | 결제주기를 T+3에서 T+2로 단축(2017년 9월) |
+| 2020 | Project Ion 시범운영 | R3 Corda 기반 DLT 양자 결제 시범운영 개시 |
+| 2022 | Project Ion 병행운영 개시 | DLT 플랫폼이 병행 운영(parallel production) 상태로 전환, 일일 100,000건 이상의 주식 거래 처리 |
+| 2024 (5월) | T+1 시스템 업데이트 | 결제주기를 T+2에서 T+1로 단축; UTC, CNS, ITP 시점 변경; NSCC 청산기금 약 23% 감소 |
+| 2024 (6월) | ACATS 현대화 인터페이스 | 계좌이전을 위한 새로운 웹 기반 클라이언트 인터페이스 출시 |
+| 2025 (11월) | ISO 20022 기업행위(Corporate Actions) (SR2025) | DTC가 기업행위 메시지를 ISO 20022 SR2025 버전으로 전환 |
+| 2025-2026 | 청산 전환(Clearing Transformation) | CNS 및 청산시스템을 메인프레임에서 분산 아키텍처로 마이그레이션하는 다년간 프로젝트; 현대화 CNS 가동 목표 2026년 4분기 |
+| 2025-2027 | 결제 전환(Settlement Transformation) | DTC 결제 플랫폼을 ISO 20022 및 분산 인프라로 마이그레이션; 레거시 포맷 폐기 2027년 3분기 |
+| 2025-2026 | Canton Network / ComposerX | DTC가 Canton Network 기반 수탁 자산 토큰화 승인; MVP 통제 운영 2026년 상반기 |
+
+[Source: DTCC 2024 Annual Report (dtcc.com/annuals/2024); DTCC Transformation Overview (dtcc.com/-/media/Files/Downloads/Transformation/DTCC-Transformation-Overview-and-Current-vs-Future-State.pdf); DTCC press releases]
+
+---
+
+## 2. 아키텍처 (Architecture)
+
+### 2.1 상위 설계 (High-Level Design)
+
+**현재 상태 (2026년 기준):**
+- **중앙집중형 메인프레임 기반 코어**에 분산 오버레이 및 웹 프론트엔드 적용
+- **모놀리식 아키텍처** — 레거시 CNS, DTC Settlement, FICC 청산 엔진이 독점 메인프레임 인프라에서 운영
+- **온프레미스** 기본 운영, 2개 데이터센터: 뉴욕 브루클린(주), 텍사스 댈러스(백업/DR)
+- **클라우드 도입 진행 중:** DTCC가 하이브리드 인프라 없이 AWS 퍼블릭 클라우드에 핵심 RegSCI 청산, 결제 및 리스크 애플리케이션을 호스팅하는 것에 대해 SEC 이의 없음(No-Objection) 확인 수령 [Source: DTCC-AWS resiliency prototype (dtcc.com/dtcc-connection/articles/2023/december/07/bulletproof-building-dtcc-aws-debut-app-resiliency-prototype)]
+- **DLT 계층:** Project Ion(R3 Corda)이 양자 주식 결제를 위해 병행 운영 중
+- **토큰화 계층:** ComposerX 제품군이 Canton Network 기반 디지털 자산 서비스 제공
+
+**미래 상태 (2026-2027년 목표):**
+- 메인프레임에서 **현대적 분산 인프라**로 마이그레이션
+- 독점 포맷을 대체하는 표준화된 **ISO 20022 메시지**
+- 단순화된 클라이언트 인터페이스를 갖춘 **통합 엔터프라이즈 플랫폼**
+- AWS 퍼블릭 클라우드 리전 기반 **클라우드 네이티브** 핵심 애플리케이션
+- 전통 및 토큰화 자산 모두를 위한 **DLT 통합** 결제 경로
+
+[Source: DTCC Transformation Overview and Current vs Future State, September 2025 (dtcc.com/-/media/Files/Downloads/Transformation/DTCC-Transformation-Overview-and-Current-vs-Future-State.pdf)]
+
+### 2.2 핵심 구성요소 (Core Components)
+
+#### CNS (Continuous Net Settlement) — NSCC
+
+| 속성 | 세부사항 |
+|-----------|---------|
+| **기능** | 미국 주식, ETF, 회사채/지방채, ADR, UIT에 대한 핵심 차감, 배분(allotting) 및 실패 관리(fail-control) 엔진 |
+| **차감 모델** | 다자간차감(multilateral netting): CNS 적격 증권의 모든 비교 완료 거래가 CUSIP 기준으로 참가자별, 결제일별 단일 순매수(net long) 또는 순매도(net short) 포지션으로 차감 |
+| **차감 효율** | 일평균 결제 금액을 **98%** 감소 |
+| **채무인수(Novation)** | NSCC가 거래 수락 시 매수자와 매도자 양측의 법적 거래상대방이 됨 |
+| **결제 연동** | 순인도 의무는 DTC 장부기재 시스템을 통해 결제 |
+| **주식 대차 프로그램(Stock Borrow Program)** | CNS 내 자동 증권 대차로 결제 실패(fails-to-deliver) 감소 |
+| **실패율** | T+1 전환 후 평균 CNS 실패율 **2.12%** (2024년 7월), T+2 수준과 일치 |
+| **현대화** | 현대화 CNS 애플리케이션은 **2026년 4분기** 가동 예정; 메인프레임에서 표준화된 인터페이스를 갖춘 분산 아키텍처로 이전 |
+
+[Source: DTCC CNS page (dtcc.com/clearing-services/equities-clearing-services/cns); SIFMA/ICI/DTCC T+1 After Action Report; Clearing Transformation Client Roadmap, November 2025]
+
+#### DTC 결제시스템 (DTC Settlement System)
+
+| 속성 | 세부사항 |
+|-----------|---------|
+| **기능** | 장부기재 결제, 증권 수탁, DVP 처리, 기업행위, 자산 서비스 |
+| **DVP 모델** | BIS DVP Model 2: 총량 증권 이전(개별 증권별)과 차감 자금 결제 |
+| **결제 주기** | 야간 주기(Night Cycle, 익일 사전 배치)와 주간 주기(Day Cycle, 실시간 인도 처리) |
+| **자금 결제** | 순채무를 일말(end-of-day) 연방준비은행의 **National Settlement Service(NSS)**를 통해 중앙은행화폐로 결제 |
+| **수탁규모** | 수탁 자산 $100조 이상(2025년 6월 초과); 170개 이상 국가의 144만건 이상 증권 발행 건 |
+| **등록 보유자** | **Cede & Co.**(DTC 명의인)가 예탁 증권의 등록 보유자 |
+| **주요 인터페이스** | Settlement Web(주요 사용자 인터페이스); Inventory Management System(인도 주문) |
+| **현대화** | ISO 20022로의 결제 전환 진행 중; 레거시 포맷 폐기 **2027년 3분기** |
+
+[Source: DTC Disclosure Framework (dtcc.com); DTCC 2024 Annual Report; Settlement Transformation FAQ]
+
+#### ACATS (Automated Customer Account Transfer Service, 자동 고객계좌이전서비스)
+
+| 속성 | 세부사항 |
+|-----------|---------|
+| **기능** | 브로커-딜러 및 은행 간 고객 계좌 자산의 중앙집중식 자동 이전 |
+| **운영기관** | NSCC |
+| **대상 자산** | 주식, 회사채/지방채, UIT, 뮤추얼펀드, 옵션, 연금, 현금 |
+| **처리시간** | 이전당 약 6영업일 |
+| **적격성** | 모든 NSCC 정회원 및 DTC 은행 참가자 |
+| **현대화** | 2024년 6월 새로운 고급 클라이언트 인터페이스 출시; 2025년 9월 결제주기 단축을 포함한 ACATS 전환 진행 |
+
+[Source: DTCC ACATS page (dtcc.com/clearing-and-settlement-services/equities-clearing-services/acats); ACATS Modernization article, June 2024; ACATS Transformation article, September 2025]
+
+#### FICC GSD (Government Securities Division, 정부증권부)
+
+| 속성 | 세부사항 |
+|-----------|---------|
+| **기능** | 미국 국채(Treasuries), 정부기관채(agency debt), 레포(repo)에 대한 거래 비교, 차감, CCP 청산 및 리스크 관리 |
+| **거래 매칭** | **RTTM (Real-Time Trade Matching)** — 국채 거래 데이터를 실시간으로 수집 및 매칭하는 표준화된 전자 플랫폼; 매칭된 거래에 즉시 FICC 보증 적용 |
+| **대상 증권** | 국채(T-bills, bonds, notes), 무이표채, 정부기관증권, 물가연동채, 레포(GCF Repo, Sponsored GC, Triparty 포함) |
+| **회원 모델** | Netting Member, Sponsoring Member, Sponsored Member(바이사이드 접근), Comparison-Only |
+| **최대 거래량** | 일 $13.2조(2025년 12월 1일); 거래건수 최대 1,206,000건(2025년 4월 9일) |
+| **국채 청산 의무화** | SEC 규정에 따라 미국 국채 현물(2026년 12월 31일까지) 및 레포(2027년 6월 30일까지) 거래에 대해 FICC를 통한 중앙청산 확대 의무화 |
+
+[Source: FICC GSD RTTM page (dtcc.com/clearing-and-settlement-services/ficc-gov/gov-rttm); DTCC record volumes press release, April 2025; SEC Treasury clearing rule]
+
+#### FICC MBSD (Mortgage-Backed Securities Division, 모기지담보증권부)
+
+| 속성 | 세부사항 |
+|-----------|---------|
+| **기능** | 모기지담보증권(MBS)의 거래 비교, 차감, 풀 통지(pool notification), CCP 청산 |
+| **거래 유형** | TBA(To-Be-Announced) 거래 및 지정 풀 MBS |
+| **주요 서비스** | 전자 풀 통지(EPN); MBS용 RTTM; TBA 및 지정 풀 거래 차감 |
+| **결제** | 선도 결제일에 대한 순인도 의무 |
+
+[Source: FICC MBSD RTTM page (dtcc.com/clearing-and-settlement-services/ficc-mbsd/mbsd-rttm)]
+
+#### ITP (Institutional Trade Processing, 기관거래처리)
+
+| 속성 | 세부사항 |
+|-----------|---------|
+| **기능** | 기관 거래의 배분(allocation), 매칭, 확인(affirmation) 및 결제 지시를 위한 종단간 자동일괄처리(STP) 솔루션 |
+| **CTM (Central Trade Manager)** | 바이사이드, 셀사이드, 수탁기관이 42개 이상 국가에서 다자산 클래스 증권 거래를 배분하고 중앙 매칭하는 플랫폼 |
+| **TradeSuite ID** | 기관이 브로커 확인서를 자동으로 승인하는 거래 확인 서비스; T+1을 위해 매매일 오후 9:00 ET까지 확인 마감 |
+| **Match to Instruct (M2i)** | CTM, TradeSuite ID, ALERT SSI 자동 보강을 결합한 워크플로; 매칭된 거래가 자동으로 확인 및 DTC 인도 지시를 발동 |
+| **ALERT** | 상설결제지시(Standing Settlement Instructions, SSI) 데이터베이스로 결제 지시를 자동 보강 |
+| **T+1 영향** | T+1 전환을 위해 오후 9:00 ET까지 당일 확인율 **95%** 목표 달성 |
+| **처리량** | 42개국에서 일 100만건 이상 거래 |
+
+[Source: DTCC ITP page (dtcclearning.com/products-and-services/itp.html); ITP Services Catalog (dtcc.com); T+1 Affirmation Report, January 2024]
+
+#### UTC (Universal Trade Capture)
+
+| 속성 | 세부사항 |
+|-----------|---------|
+| **기능** | NSCC의 거래 수집 및 비교 시스템; 거래소, ATS 및 기타 거래 소스로부터 거래 제출을 수신 및 검증 |
+| **T+1 변경사항** | T+1 주기에 맞춘 결제일 할당 규칙 코딩 변경; 일말 가격 산정을 약 오후 6:30 ET로 앞당김 |
+| **ETF 연동** | Datatrak File Input을 통한 ETF 설정/환매 주문 처리; T+1을 위한 준실시간 제출 기능 추가 |
+
+[Source: DTCC T+1 Functional Changes document (dtcc.com/-/media/Files/PDFs/T2/T1-Functional-Changes.pdf)]
+
+#### 청산기금 관리 (Clearing Fund Management)
+
+| 속성 | 세부사항 |
+|-----------|---------|
+| **기능** | NSCC 및 FICC에 걸친 증거금/청산기금 예탁을 위한 실시간 담보 관리 포털 |
+| **NSCC 청산기금** | 일평균 $112.4억(2024년); T+1 전환 후 평균 약 $98억 |
+| **FICC GSD 개시증거금** | $655억(2024년 4분기 PQD 데이터) |
+
+[Source: CPMI-IOSCO PQD Q4 2024; NSCC Financial Statements 2024]
+
+### 2.3 기술 스택 (Technology Stack)
+
+| 계층 | 현재 상태 | 미래 상태 (2026-2027) |
+|-------|--------------|--------------------------|
+| **핵심 처리** | 독점 메인프레임(IBM zSeries) [미확인 하드웨어 사양] | AWS 기반 분산 서버; 클라우드 네이티브 |
+| **프로그래밍 언어** | COBOL, Assembler(레거시 메인프레임) [미확인]; Java, C++(분산 구성요소) [미확인] | Java, 분산 플랫폼의 최신 언어 [미확인] |
+| **DLT 플랫폼** | R3 Corda(Project Ion); Daml / Canton Network(ComposerX / 토큰화) | DLT 통합 확대 |
+| **운영체제** | z/OS(메인프레임) [미확인]; Linux(분산) | Linux 기반; 클라우드 네이티브 |
+| **클라우드** | AWS(RegSCI 시스템에 대해 SEC 이의 없음 수령); Snowflake(데이터 복원력) | AWS 퍼블릭 클라우드 리전을 주요 호스팅으로 |
+| **메시징/미들웨어** | IBM MQ Series; SMART 독점 네트워크; SWIFT FIN | ISO 20022 메시징; 분산 연결; 경량 메시징 |
+| **데이터베이스** | 독점 메인프레임 데이터베이스 [미확인]; Snowflake(분석/데이터) | 최신 분산 데이터베이스 [미확인] |
+| **네트워크** | SMART 전용 회선(메시지당 비용 없음, 회선 기반); MQ 자동 전송 프로토콜 | 레거시 SMART 연결을 대체하는 분산 연결 |
+| **메시지 포맷** | 독점 포맷; ISO 15022(결제); FIX(거래 수집); ISO 20022(기업행위, SR2025부터) | ISO 20022(모든 결제 및 기업행위); FIX(거래 수집) |
+| **웹 인터페이스** | Settlement Web; Clearing Fund Management 포털; RTTM Web | 현대화된 웹 기반 인터페이스 |
+| **API** | 디지털 자산 서비스를 위한 RESTful API 초기 도입 | API 연결 확대 |
+
+[Source: DTCC Transformation Overview; DTCC Client Interfaces FAQ (dtcc.com/-/media/Files/Downloads/Transformation/Client-Interface-FAQs.pdf); DTCC Connectivity Repository (dtcclearning.com)]
+
+---
+
+## 3. 성능 사양 (Performance Specifications)
+
+| 지표 | 수치 | 시점 / 조건 |
+|--------|-------|-------------------|
+| **NSCC 최대 금액(일간)** | $5.55조 | 2025년 4월 9일(이전 최고 $5.22조 대비 6.4% 증가, 2024년 12월 20일) |
+| **NSCC 최대 건수(일간)** | 5억 4,500만 건 | 2025년 4월 7일(2021년 1월 밈주식(meme-stock) 사건 당시 4.09억 건 대비 33% 증가) |
+| **FICC GSD 최대 금액(일간)** | $13.2조 | 2025년 12월 1일 |
+| **FICC GSD 최대 건수(일간)** | 120만 6,000건 | 2025년 4월 9일(이전 최고 97만 8,000건 대비 23% 증가, 2025년 4월 7일) |
+| **FICC GSD 일평균** | $9.1조(2024년 말)~$13.2조(2025년 12월) | 2024년 말~2025년; 2024년 전년대비 42% 활동량 증가 |
+| **ITP/CTM 일일 처리량** | 100만건 이상/일 | 42개국 |
+| **Project Ion 일일 처리량** | 평균 100,000건 이상; 최대 160,000건 이상 | 2022년 8월부터 병행 운영 |
+| **DTC 수탁 자산** | $100조 이상 | 2025년 6월 초과 |
+| **DTC 증권 발행건수** | 144만건 이상 | 170개 이상 국가/지역 |
+| **연간 처리 총액** | $3.7경(quadrillion) | 2024년 |
+| **CNS 차감 효율** | 결제 금액 98% 감소 | 일평균 |
+| **CNS 실패율(T+1 이후)** | 2.12% | 2024년 7월 평균(T+2 수준과 일치) |
+| **DTC non-CNS 실패율** | 3.31% | 2024년 7월 평균(T+2 수준과 일치) |
+| **당일 확인율(T+1)** | 오후 9:00 ET까지 95% 이상 | T+1 시행(2024년 5월)부터 달성 |
+| **NSCC 사후검증(Backtesting) 커버리지** | 99.9% | 12개월 커버리지(2024년 4분기 PQD) |
+| **2025년 1분기 NSCC 거래량 증가** | 전분기 대비 +15%; 전년대비 +29% | 월평균 |
+| **2025년 1분기 FICC 거래량 증가** | 전분기 대비 +4%; 전년대비 +32% | 월평균 |
+
+### 거래량 변화 추이 (Volume Growth History)
+
+| 연도 / 시기 | NSCC 최대 금액 | FICC GSD 일평균 | 비고 |
+|---------------|----------------|---------------------|-------|
+| 2021년 1월 | -- | -- | 밈주식 사건: NSCC 거래 4.09억건 최고치 |
+| 2022 | -- | -- | Project Ion 병행 운영 개시 |
+| 2024년 3월 | -- | $7.0조 | FICC 국채 청산 거래량 전년대비 +31% |
+| 2024년 5월 | -- | -- | T+1 시행; NSCC 청산기금 약 23%(약 $30억) 감소 |
+| 2024년 12월 | $5.22조 | $9.1조 | 연말 최고치 |
+| 2025년 4월 | $5.55조 | $11.4조(4월 9일) | 시장 변동성 속 전 서비스 기록적 거래량 |
+| 2025년 12월 | -- | $13.2조 | GSD 신최고치; 바이사이드 활동 최고 $3.1조 |
+
+[Source: DTCC record volumes press release, April 23, 2025 (dtcc.com/news/2025/april/23/dtcc-processes-record-volumes-across-services-amid-market-volatility); DTCC FICC volumes press release, March 2024; SIFMA/ICI/DTCC T+1 After Action Report; CPMI-IOSCO PQD Q4 2024]
+
+---
+
+## 4. 인터페이스 및 프로토콜 (Interfaces & Protocols)
+
+### 4.1 거래 입력 및 수집 (Trade Entry and Capture)
+
+| 프로토콜 | 용도 | 세부사항 |
+|----------|----------|---------|
+| **FIX Protocol** | 거래 제출 및 비교 | NSCC(UTC) 및 FICC(RTTM)에서 거래 수집에 사용; 실시간 거래 매칭 |
+| **독점 포맷** | 레거시 거래 제출 | 현재 메인프레임 기반 포맷; 전환 프로젝트에 따라 폐기 예정 |
+| **RTTM Web** | 국채 거래 매칭 | FICC GSD 및 MBSD 거래 모니터링 및 예외 관리용 웹 기반 인터페이스 |
+| **Datatrak** | ETF 설정/환매 | File Input 11300을 통한 준실시간 ETF 주문 제출 |
+
+### 4.2 결제 메시지 (Settlement Messages)
+
+| 프로토콜 / 표준 | 용도 | 전환 현황 |
+|---------------------|----------|-----------------|
+| **독점 포맷** | 현행 DTC 결제 지시 및 확인 | **2027년 3분기** 폐기 예정 |
+| **ISO 15022** | 결제 메시징(MTU가 ISO 15022로 현금 및 증권 인도) | **2027년 3분기** 독점 포맷과 함께 폐기 예정 |
+| **ISO 20022** | 모든 결제 및 기업행위 메시징의 미래 표준 | 기업행위: 운영 중(SR2025 버전, 2025년 11월). 결제: **2026년 2분기** PSE 테스트; **2026년 4분기** 운영 시작; **2027년 3분기** 전면 전환 |
+| **Fedwire** | 국채 결제 | Fedwire Securities Service를 통한 연준 적격 증권 직접 인터페이스 |
+
+### 4.3 SWIFT 연결 (SWIFT Connectivity)
+
+| 서비스 | 설명 |
+|---------|-------------|
+| **SWIFT FIN (ISO 15022)** | 국제 참가자를 위한 해외 결제 메시징, 수탁 통지 |
+| **ISO 20022 (기업행위)** | SWIFT 고객은 SR2025 구독 활성화를 위해 2025년 8월 29일까지 DTCC에 통보 필요 |
+| **BIC 기반 배포** | MTU가 Bank Identifier Code(BIC)를 사용하여 구독자에게 결제 메시지 배포 |
+
+### 4.4 SMART 네트워크 및 MQ 연결 (SMART Network & MQ Connectivity)
+
+| 항목 | 세부사항 |
+|------|---------|
+| **SMART Network** | DTCC의 독점 전용 통신 네트워크; 회선 기반(메시지당 비용 없음); 참가자와 DTCC 시스템 간 대용량 메시지 전송 |
+| **MQ Series** | SMART 전용 회선을 통한 IBM MQ 자동 전송 프로토콜 |
+| **회선 설정** | 신규 회선: 12-14주; 대역폭 증가: 4주; 기존 대역폭에 MQ 설정: 2주 |
+| **미래 연결** | 레거시 SMART/MQ를 대체하는 분산 연결; 경량 메시징; 표준화된 ISO/FIX 인터페이스 |
+
+### 4.5 기준정보 서비스 (Reference Data Services)
+
+| 서비스 | 설명 |
+|---------|-------------|
+| **DTCC Data Services** | 증권 식별, 기업행위 공시를 위한 기준정보 |
+| **CA 20022 Service** | ISO 20022 형식의 기업행위 공시, 권리, 배분 |
+| **ALERT** | 상설결제지시(SSI) 데이터베이스; 결제 지시 자동 보강 |
+| **Securities Data Experiences** | 전환 프로젝트의 일환으로 개발 중인 새로운 플랫폼 |
+
+### 4.6 연결 전환 일정 (Connectivity Transformation Timeline)
+
+| 단계 | 일자 | 활동 |
+|-------|------|----------|
+| **청산(CNS)** | 2026년 1분기 | 연결 테스트 시작 |
+| | 2026년 2분기 | UAT / 기능 테스트 |
+| | 2026년 3분기 | 운영 연결 테스트 |
+| | **2026년 4분기** | **현대화 CNS 가동; 레거시 청산 연결 폐기** |
+| **결제(DTC)** | 2026년 1분기 | 연결 테스트(PSE) 시작 |
+| | 2026년 2분기 | ISO 20022 테스트 환경 가용 |
+| | 2026년 4분기 | ISO 20022 운영 가용 |
+| | **2027년 3분기** | **레거시 독점 및 ISO 15022 포맷 폐기** |
+
+[Source: DTCC Client Interfaces FAQ; Clearing Transformation Client Roadmap, November 2025; Settlement Transformation Client Roadmap, February 2026; DTCC Settlement Transformation FAQ; DTCC Connectivity Repository (dtcclearning.com)]
+
+---
+
+## 5. 복원력 및 업무연속성 (Resilience & Business Continuity)
+
+### 5.1 이중화 (Redundancy)
+
+| 항목 | 세부사항 |
+|------|---------|
+| **데이터센터** | 2개 주요 데이터센터: **뉴욕 브루클린**(주) 및 **텍사스 댈러스**(백업/DR) |
+| **구성** | 현재 주/백업 방식 운영; **액티브-액티브**로 전환 중이며 사이트 간 주기적 교대 운영 |
+| **데이터센터 교대** | **2026년 1월**부터 데이터센터 전면 교대(full swing) 시작 — 모든 운영 처리가 주기적으로 댈러스에서 라이브 운영 |
+| **글로벌 거점** | DTCC는 다양한 서비스를 위해 전 세계 20개 이상 지역에서 운영 |
+| **클라우드 이중화** | AWS 다중 리전 설계; 리전 가용성을 기본 원칙으로 |
+
+### 5.2 재해복구 (Disaster Recovery)
+
+| 항목 | 세부사항 |
+|------|---------|
+| **RTO (복구 목표시간)** | 핵심 애플리케이션 **2시간** 미만(SIFMU에 대한 SEC Rule 17Ad-22(e)(17) 규제 요건) |
+| **RPO (복구 목표시점)** | 핵심 애플리케이션 **30초** 미만 |
+| **DR 테스트** | 정기 DR 테스트; 사이트 장애, 사이버 사고, 팬데믹, 자연재해에 대한 포괄적 BCP 유지 및 테스트 |
+| **데이터센터 교대 테스트** | DTCC가 2025년 4월 데이터센터 교대 테스트 계획 공표; 2026년 1월부터 주기적 교대 계획 |
+| **규제 요건** | SIFMU로서 DTC/NSCC/FICC는 SEC Rule 17Ad-22(e)(17)에 따라 높은 수준의 보안, 복원력, 운영 신뢰성 및 적절한 확장 가능 용량을 갖춘 시스템을 유지해야 함 |
+
+### 5.3 용량 관리 (Capacity Management)
+
+| 항목 | 세부사항 |
+|------|---------|
+| **확장성 접근방식** | 기록적 거래량 처리 능력 입증 — NSCC가 단일 일에 5.45억 건 처리(2025년 4월) 무사고 |
+| **클라우드 확장성** | AWS 클라우드 마이그레이션으로 최대 거래량 시 탄력적 확장성 개선 목표 |
+| **스트레스 이벤트** | 2025년 4월 시장 변동성으로 NSCC, FICC GSD, DTC에서 동시 최고치 기록, 성공적 처리 |
+| **부하 테스트** | 전환 프로젝트를 위한 산업 전체 테스트 조율(청산 테스트 2026년 1-3분기; 결제 테스트 2027년 1-3분기) |
+
+### 5.4 사이버 복원력 (Cyber Resilience)
+
+| 항목 | 세부사항 |
+|------|---------|
+| **산업 훈련** | DTCC가 산업 전체 사이버 복원력 훈련에 참여 |
+| **SIFMU 요건** | 시스템적으로 중요한 FMU에 요구되는 광범위한 사이버보안 통제 |
+| **참가자 장애** | SEC가 참가자 시스템 장애 관리를 위한 DTC/FICC/NSCC 규정 변경 승인(2025년 11월)(SR-DTC-2025-006, SR-FICC-2025-006, SR-NSCC-2025-006) |
+
+### 5.5 AWS 클라우드 복원력 아키텍처 (AWS Cloud Resiliency Architecture)
+
+DTCC와 AWS가 금융서비스를 위한 애플리케이션 복원력 프로토타입을 공동 개발하였다:
+
+| 원칙 | 구현 |
+|-----------|---------------|
+| **장애 시 자동 복구** | AWS Health Check API로 서비스 상태 검증; 자동화된 복구 런북 |
+| **리전 가용성** | AWS 리전 간 다중 리전 배포 |
+| **다중 리전 효율성** | 복구 시간 최소화를 위해 다중 리전에서 활성 처리 |
+| **테스트 및 모니터링** | AWS Route 53 Application Recovery Controller(ARC) 준비 검사; 지속적 인프라 검증 |
+| **Snowflake 연동** | DTCC가 데이터 복원력 및 리전 간 데이터 복제를 위해 Snowflake Snowgrid 활용 |
+
+[Source: DTCC Data Center Rotation Test Plan, April 2025 (dtcc.com/-/media/Files/Downloads/Operational-Resilience/DTCC-Data-Center-Rotation-Test-Plan.pdf); DTCC-AWS Resiliency Prototype (dtcc.com/dtcc-connection/articles/2023/december/07/bulletproof-building-dtcc-aws-debut-app-resiliency-prototype); Snowflake Snowgrid case study (snowflake.com/en/blog/how-dtcc-achieves-data-resiliency/); SEC Rule 17Ad-22(e)(17); Federal Register 2025-20384]
+
+---
+
+## 6. 주요 기술 특징 (Notable Technical Features)
+
+### 6.1 Project Ion — DLT 기반 결제
+
+| 항목 | 세부사항 |
+|------|---------|
+| **현황** | 2022년 8월부터 병행 운영(parallel production) 중 |
+| **기술** | **R3 Corda** 엔터프라이즈 블록체인 기반 |
+| **기능** | 기존 결제시스템과 병행으로 운영되는 DLT 기반 양자 주식 결제; 기존 시스템이 법적 소유권의 권위적 기록(authoritative record)으로 유지 |
+| **거래량** | 일평균 100,000건 이상의 양자 주식 거래; 최대일 160,000건 이상 |
+| **결제 모델** | 차감 기반 **T+0** 결제뿐 아니라 T+1 이상 주기도 지원 |
+| **확장** | DTC 활동 범위 확대 및 NSCC 중앙청산 활동 포함 가능성을 위한 단계적 확장 계획 |
+| **의의** | 전통적 인프라와 함께 운영 규모의 DLT 기반 결제 플랫폼을 운영한 최초의 주요 중앙예탁기관(CSD) |
+
+[Source: DTCC Project Ion articles (dtcc.com); Hedgeweek coverage; Ledger Insights coverage; FIF coverage]
+
+### 6.2 ComposerX 및 Canton Network 토큰화
+
+| 항목 | 세부사항 |
+|------|---------|
+| **ComposerX Suite** | DTCC Digital Assets의 포괄적 토큰화 플랫폼 |
+| **ComposerX CMP** | Capital Markets Platform — 토큰 생애주기 관리(온보딩, 거래, 기업행위, 이전 대리인)를 위한 DLT 불가지론적(DLT-agnostic) 솔루션 |
+| **ComposerX Factory** | 자동화된 데이터 관리를 갖춘 토큰화 엔진; ERC-20 및 ERC-3643 표준 지원; 검증 가능한 데이터 스키마가 내장된 "자기 기술(self-describing)" 스마트 토큰 생성 |
+| **ComposerX LedgerScan** | 네트워크 전반의 거래를 추적하기 위한 토큰 활동 모니터링 및 대사(reconciliation) 도구 |
+| **규정 준수 인식 토큰 프레임워크** | 거래 실행 시 규제 규칙의 실시간 강제; 다관할권 규제 및 거래 정책을 자동화 |
+| **Canton Network** | 프라이버시 중심 블록체인; DTCC가 Euroclear과 함께 Canton Foundation을 공동 의장 |
+| **기술 파트너** | Digital Asset Holdings (Daml 스마트 계약 언어) |
+| **최초 자산** | DTC에 수탁된 미국 국채 |
+| **일정** | 통제 운영 MVP: **2026년 상반기**; DTC 및 연준 적격 자산 확대 포함 광범위 출시: **2026년 하반기** |
+| **SEC 승인** | DTC가 토큰화 서비스를 제공할 수 있도록 2025년 12월 No-Action Letter 수령 |
+
+[Source: DTCC ComposerX page (dtcc.com/digital-assets/composerx); DTCC-Digital Asset partnership announcement, December 2025; Canton Network press release]
+
+### 6.3 T+1 기술 변경사항 (2024년 5월)
+
+T+2에서 T+1 전환을 위해 구현된 주요 시스템 변경사항:
+
+| 시스템 | 변경사항 |
+|--------|--------|
+| **NSCC/UTC** | T+1 주기에 맞춘 결제일 할당 규칙 업데이트 |
+| **NSCC/CNS** | CNS 처리 일정 압축; 일말 가격 산정을 약 오후 6:30 ET로 앞당김 |
+| **ITP/TradeSuite ID** | 확인 마감시한을 **매매일 오후 9:00 ET**로 변경(기존 T+1 오전 11:30에서) |
+| **ITP/CTM** | 당일 확인을 위한 Match to Instruct(M2i) 워크플로 촉진 |
+| **NSCC 청산기금** | T+1 전환 전 평균 약 $122-128억에서 약 $98억으로 약 23%(약 $30억) 감소 |
+| **ETF 처리** | Datatrak File Input 11300을 통한 ETF 설정/환매 주문 준실시간 제출 |
+| **야간 주기(Night Cycle)** | 압축된 결제에 맞춘 DTC 야간 주기 시점 조정 |
+
+**결과:** 2024년 7월 CNS 실패율 2.12%, DTC non-CNS 실패율 3.31% — 모두 이전 T+2 수준과 일치하여 성공적 전환을 시사한다.
+
+[Source: DTCC T+1 Functional Changes document; DTCC T+1 Conversion Guide, May 2024; SIFMA/ICI/DTCC T+1 After Action Report]
+
+### 6.4 청산 및 결제 전환 (2025-2027) (Clearing & Settlement Transformation)
+
+DTCC 역사상 가장 중요한 인프라 현대화 사업이다:
+
+**청산 전환 (주로 NSCC/CNS):**
+- 메인프레임에서 **현대적 분산 인프라**로 마이그레이션
+- 강화된 복원력, 단순화 및 현대적 클라이언트 인터페이스를 갖춘 현대화 CNS
+- 가능한 경우 ISO 및 FIX를 활용한 표준화된 인터페이스
+- **가동: 2026년 4분기**
+- 현행 메인프레임 기반 연결 2026년 4분기 폐기
+
+**결제 전환 (주로 DTC):**
+- 모든 결제 거래에 **ISO 20022** 메시징 적용
+- 미래 기능 지원: 부분결제(partial settlement), 단주(fractional shares)
+- 레거시 SMART/MQ 연결을 대체하는 분산 연결
+- ISO 20022 운영 가용: **2026년 4분기**
+- 레거시 포맷 폐기: **2027년 3분기**
+
+**추가 청산 개선사항:**
+- UTC 거래시간 연장
+- ACATS 결제주기를 영업일 1일 단축
+- 옵션 포함 ETF에 대한 OCC와의 ETF 청산 프로세스 개선
+- 새로운 Securities Data Experiences 플랫폼
+
+[Source: DTCC Transformation Overview, September 2025; Clearing Transformation Client Roadmap, November 2025; Settlement Transformation Client Roadmap, February 2026; Settlement Transformation FAQ]
+
+### 6.5 클라우드 마이그레이션 전략 (Cloud Migration Strategy)
+
+| 항목 | 세부사항 |
+|------|---------|
+| **SEC 승인** | RegSCI 시스템의 퍼블릭 클라우드 호스팅에 대한 이의 없음(No-Objection) 수령 |
+| **클라우드 제공자** | AWS(주) |
+| **범위** | 핵심 청산, 결제 및 리스크 애플리케이션 — 하이브리드 인프라 없이 AWS 퍼블릭 클라우드 리전에서 운영 |
+| **목표** | 향상된 복원력, 보안, 확장성; 개선된 리스크 관리; 변화하는 시장 수요 지원 |
+| **데이터 복원력** | 리전 간 데이터 복제 및 분석을 위한 Snowflake Snowgrid |
+
+[Source: DTCC-AWS resiliency prototype; AWS Cloud Adoption Update for Financial Market Infrastructure Providers 1H25]
+
+### 6.6 국채 청산 의무화 준비 (Treasury Clearing Mandate Preparation)
+
+FICC GSD가 SEC 의무 중앙청산 확대를 준비하고 있다:
+- **국채 현물:** 2026년 12월 31일까지 준수
+- **레포 거래:** 2027년 6월 30일까지 준수
+- 더 넓은 바이사이드 접근을 수용하기 위해 **Sponsored Member 모델** 확대 중
+- 바이사이드 최대 활동량이 이미 $3.1조에 도달(2025년 12월 31일)
+- GSD 일일 활동량이 약 $9.1조(2024년 말)에서 $13.2조(2025년 12월)로 성장
+
+[Source: SEC Treasury clearing rule; DTCC record volumes press release, April 2025]
+
+---
+
+## 7. 비교 참고사항 (Comparison Notes)
+
+### KRX/KSD 시스템과의 비교 (vs. KRX/KSD Systems)
+
+| 측면 | DTCC 시스템 | KRX/KSD 대응 |
+|--------|-------------|-------------------|
+| **매매시스템** | 해당 없음(DTCC는 후선(post-trade) 전용; 거래소가 자체 매매체결엔진 운영) | **Exture+** — 주식, 파생상품, 채권의 주문 매칭을 처리하는 KRX 독자 매매시스템 |
+| **청산(주식)** | **NSCC/CNS** — CUSIP별, 참가자별 다자간차감; 거래소와 분리된 CCP | **KRX**가 직접 CCP 역할 수행; 거래소 운영과 통합된 차감 |
+| **결제/예탁** | **DTC** — 장부기재 결제의 CSD; BIS DVP Model 2(총량 증권, 차감 자금) | **KSD SAFE+** — 중앙예탁기관 및 결제시스템; DVP 결제 |
+| **결제주기** | T+1(2024년 5월부터) 주식, 회사채/지방채 | T+2 주식(KRX); T+1 국채 [미확인 현재 상태] |
+| **국채** | **FICC GSD** — RTTM을 갖춘 국채 전용 CCP; 최대 일 $13.2조 | KRX/KSD가 국채 결제 담당; 한국은행이 통화정책 채권 담당 |
+| **차감 효율** | CNS: 일 결제 금액 98% 감소 | KRX 차감: 높은 효율이나 구체적 비율은 공개 비교 불가 [미확인] |
+| **기관거래처리** | **ITP/CTM/TradeSuite ID** — 별도 기관 워크플로(M2i 포함) | KRX/KSD 시스템에 통합; 개인/기관 흐름 간 분리가 적음 [미확인] |
+| **계좌이전** | **ACATS** — 전용 자동 시스템(약 6영업일) | KSD 참가자 프로세스를 통한 계좌이전 처리 [미확인] |
+| **핵심 기술** | 레거시 메인프레임에서 분산/클라우드(AWS)로 마이그레이션 중; DLT 병행(Corda) | **Exture+**는 현대적 분산 아키텍처; KSD **SAFE+**는 현대적 통합 플랫폼 |
+| **현대화 현황** | 다년간 전환 프로젝트 진행 중(2025-2027) — 메인프레임에서 이전 | KSD가 AI 및 클라우드 기반 차세대 "KSD 혁신 금융 플랫폼" 개발 중 |
+| **DLT/토큰화** | Project Ion(R3 Corda, 병행 운영 중); ComposerX/Canton(토큰화 2026년 상반기) | KSD가 증권 서비스를 위한 블록체인 탐색 중 [미확인 구체적 프로젝트] |
+| **메시지 표준** | 독점 포맷에서 ISO 20022로 전환 중(2027년 3분기 전면 전환 목표) | KSD가 독점 포맷과 함께 ISO 표준 도입 진행 중 [미확인] |
+| **클라우드 전략** | AWS 퍼블릭 클라우드(RegSCI 시스템에 대해 SEC 승인) | KSD에서 클라우드 및 AI 탐색 진행 중 |
+| **조직 구조** | 별도 법인: NSCC(CCP), DTC(CSD), FICC(CCP)가 DTCC 지주회사 산하 | 통합: KRX(거래소 + CCP), KSD(CSD) — 조직 경계가 적음 |
+| **시장 규모** | 연간 $3.7경; 수탁 자산 $100조 이상; 일 최대 5.45억 건 | KRX: 금액 기준으로 상당히 작으나 거래당 처리 효율은 높음 |
+| **규제 체계** | SEC 규제 SIFMU; 도드-프랭크법 Title VIII | 금융위원회(FSC) / 금융감독원(FSS) 감독 |
+
+> **[KRX/KSD 비교 참고]** DTCC는 세계 최대 후선 인프라(연간 $3.7경, 수탁 $100조 이상)를 운영하며, KRX/KSD와의 가장 큰 구조적 차이는 청산(NSCC, FICC)과 예탁(DTC)을 별도 법인으로 분리 운영하는 점이다. KRX는 거래소와 CCP 기능을 단일 기관이 수행하고, KSD가 CSD 역할을 담당하여 조직 경계가 상대적으로 단순하다. 기술 측면에서 DTCC의 레거시 메인프레임 현대화(2025-2027)는 전 세계 FMI 중 가장 대규모 기술 전환 프로젝트 중 하나이며, KRX Exture+ 및 KSD SAFE+는 처음부터 현대적 분산 시스템으로 구축된 점에서 대조적이다. DTCC의 RegSCI 시스템 AWS 퍼블릭 클라우드 이전(하이브리드 없이)은 주요 CCP/CSD 최초 사례로, KSD의 향후 클라우드 전략 수립 시 참고 모델이 될 수 있다.
+
+### 핵심 차별 요소 (Key Differentiators)
+
+1. **규모:** DTCC는 금액 기준 세계 최대 후선 인프라를 운영한다(연간 $3.7경, 수탁 $100조 이상). 다른 CSD/CCP 복합체가 이 규모에 근접하지 못한다.
+
+2. **조직적 분리:** DTCC는 청산(NSCC, FICC)과 예탁(DTC) 기능에 대해 별도 법인을 유지하며, 각각 청산기관 및 SIFMU로 독립적으로 규제된다. KRX/KSD는 조직 경계가 적은 통합 모델을 보유하여 운영 효율이 높을 수 있으나 상이한 리스크 프로파일을 형성한다.
+
+3. **레거시 기술 과제:** DTCC의 핵심 시스템은 여전히 메인프레임 기반(2025-2027년 현대화 중)인 반면, KRX의 Exture+ 및 KSD의 SAFE+는 처음부터 현대적 분산 시스템으로 구축되었다. DTCC의 전환은 전 세계적으로 가장 중요한 FMI 기술 마이그레이션 중 하나이다.
+
+4. **DLT 통합 전략:** DTCC는 레거시 시스템을 권위적 기록으로 유지하면서 DLT 결제 플랫폼(Project Ion)을 운영 규모로 병행 운영하는 유일한 사례이다 — 다른 주요 CSD가 복제하지 못한 실용적 이중 트랙 접근방식이다.
+
+5. **국채 청산 의무화:** FICC를 통한 미국 국채 및 레포의 확대 중앙청산에 대한 SEC 요건(2026-2027)은 FICC GSD 거래량을 급격히 증가시킬 것이며, 미국 채권시장 인프라의 구조적 변화로서 KRX에 직접적 대응 사례가 없다.
+
+6. **T+1 달성:** 미국(DTCC를 통해)과 한국(KRX/KSD를 통해) 모두 결제주기 단축의 선도자였으나, 시장 복잡성과 참가자 수를 고려하면 2024년 5월 미국의 T+1 전환이 상당히 더 대규모 사업이었다.
+
+7. **클라우드 네이티브 CCP/CSD:** DTCC의 RegSCI 시스템을 하이브리드 없이 AWS 퍼블릭 클라우드로 이전하는 것에 대한 SEC 승인은 주요 CCP/CSD 중 최초이며, KSD를 포함한 다른 FMI의 모델이 될 수 있다.
+
+---
+
+## 출처 (Sources)
+
+1. DTCC 2024 Annual Report — [dtcc.com/annuals/2024](https://www.dtcc.com/annuals/2024)
+2. DTCC CNS Page — [dtcc.com/clearing-services/equities-clearing-services/cns](https://www.dtcc.com/clearing-services/equities-clearing-services/cns)
+3. DTCC Record Volumes Press Release, April 23, 2025 — [dtcc.com/news/2025/april/23/dtcc-processes-record-volumes-across-services-amid-market-volatility](https://www.dtcc.com/news/2025/april/23/dtcc-processes-record-volumes-across-services-amid-market-volatility)
+4. DTCC Transformation Overview and Current vs Future State, September 2025 — [dtcc.com/-/media/Files/Downloads/Transformation/DTCC-Transformation-Overview-and-Current-vs-Future-State.pdf](https://www.dtcc.com/-/media/Files/Downloads/Transformation/DTCC-Transformation-Overview-and-Current-vs-Future-State.pdf)
+5. Clearing Transformation Client Roadmap, November 2025 — [dtcc.com/-/media/Files/Downloads/Transformation/Clearing-Transformation-Client-Roadmap.pdf](https://www.dtcc.com/-/media/Files/Downloads/Transformation/Clearing-Transformation-Client-Roadmap.pdf)
+6. Settlement Transformation Client Roadmap, February 2026 — [dtcc.com/-/media/Files/Downloads/Transformation/Settlement-Transformation-Client-Roadmap.pdf](https://www.dtcc.com/-/media/Files/Downloads/Transformation/Settlement-Transformation-Client-Roadmap.pdf)
+7. DTCC Settlement Transformation FAQ — [dtcc.com/-/media/Files/Downloads/Transformation/Settlement-Transformation-FAQ.pdf](https://www.dtcc.com/-/media/Files/Downloads/Transformation/Settlement-Transformation-FAQ.pdf)
+8. DTCC T+1 Functional Changes, March 2024 — [dtcc.com/-/media/Files/PDFs/T2/T1-Functional-Changes.pdf](https://www.dtcc.com/-/media/Files/PDFs/T2/T1-Functional-Changes.pdf)
+9. DTCC T+1 Conversion Guide, May 2024 — [dtcc.com/-/media/Files/PDFs/T2/T1-Conversion-Document-March-2024.pdf](https://www.dtcc.com/-/media/Files/PDFs/T2/T1-Conversion-Document-March-2024.pdf)
+10. SIFMA/ICI/DTCC T+1 After Action Report — [sifma.org/news/press-releases/sifma-ici-and-dtcc-release-t1-after-action-report](https://www.sifma.org/news/press-releases/sifma-ici-and-dtcc-release-t1-after-action-report-industry-coordination-led-to-successful-transition-reducing-risk-and-costs-in-the-system)
+11. DTCC Project Ion — DTCC Connection Medium — [dtcc-connection.medium.com/innovation-insight-dtccs-project-ion](https://dtcc-connection.medium.com/innovation-insight-dtccs-project-ion-9aabda5be247)
+12. DTCC Project Ion 100K Transactions — Hedgeweek — [hedgeweek.com/dtccs-project-ion-platform-now-processing-over-100000-transactions-day-dlt/](https://www.hedgeweek.com/dtccs-project-ion-platform-now-processing-over-100000-transactions-day-dlt/)
+13. DTCC ComposerX — [dtcc.com/digital-assets/composerx](https://www.dtcc.com/digital-assets/composerx)
+14. DTCC and Digital Asset Canton Network Partnership, December 2025 — [dtcc.com/news/2025/december/17/dtcc-and-digital-asset-partner-to-tokenize-dtc-custodied-us-treasury-securities](https://www.dtcc.com/news/2025/december/17/dtcc-and-digital-asset-partner-to-tokenize-dtc-custodied-us-treasury-securities)
+15. DTCC SEC Tokenization Authorization, December 2025 — [dtcc.com/news/2025/december/11/paving-the-way-to-tokenized-dtc-custodied-assets](https://www.dtcc.com/news/2025/december/11/paving-the-way-to-tokenized-dtc-custodied-assets)
+16. DTCC-AWS App Resiliency Prototype — [dtcc.com/dtcc-connection/articles/2023/december/07/bulletproof-building-dtcc-aws-debut-app-resiliency-prototype](https://www.dtcc.com/dtcc-connection/articles/2023/december/07/bulletproof-building-dtcc-aws-debut-app-resiliency-prototype)
+17. DTCC Data Center Rotation Test Plan, April 2025 — [dtcc.com/-/media/Files/Downloads/Operational-Resilience/DTCC-Data-Center-Rotation-Test-Plan.pdf](https://www.dtcc.com/-/media/Files/Downloads/Operational-Resilience/DTCC-Data-Center-Rotation-Test-Plan.pdf)
+18. Snowflake Data Resiliency Case Study — [snowflake.com/en/blog/how-dtcc-achieves-data-resiliency/](https://www.snowflake.com/en/blog/how-dtcc-achieves-data-resiliency/)
+19. DTCC FICC GSD RTTM — [dtcc.com/clearing-and-settlement-services/ficc-gov/gov-rttm](https://www.dtcc.com/clearing-and-settlement-services/ficc-gov/gov-rttm)
+20. DTCC ACATS — [dtcc.com/clearing-and-settlement-services/equities-clearing-services/acats](https://www.dtcc.com/clearing-and-settlement-services/equities-clearing-services/acats)
+21. DTCC ACATS Modernization, June 2024 — [dtcc.com/dtcc-connection/articles/2024/june/04/acats-modernization-dtcc-launches-new-client-interface](https://www.dtcc.com/dtcc-connection/articles/2024/june/04/acats-modernization-dtcc-launches-new-client-interface)
+22. DTCC ITP Services — [dtcclearning.com/products-and-services/itp.html](https://dtcclearning.com/products-and-services/itp.html)
+23. DTCC ISO 20022 Corporate Actions — [dtcc.com/asset-services/corporate-actions-processing/iso-20022-messaging-specifications](https://www.dtcc.com/asset-services/corporate-actions-processing/iso-20022-messaging-specifications)
+24. DTCC Client Interfaces FAQ — [dtcc.com/-/media/Files/Downloads/Transformation/Client-Interface-FAQs.pdf](https://www.dtcc.com/-/media/Files/Downloads/Transformation/Client-Interface-FAQs.pdf)
+25. CPMI-IOSCO Public Quantitative Disclosures Q4 2024 — [dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/CPMI-IOSCO-Public-Quantitative-Disclosures---Q4-2024.pdf](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/CPMI-IOSCO-Public-Quantitative-Disclosures---Q4-2024.pdf)
+26. NSCC Disclosure Framework — [dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/NSCC_Disclosure_Framework.pdf](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/NSCC_Disclosure_Framework.pdf)
+27. DTC Disclosure Framework — [dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/DTC_Disclosure_Framework.pdf](https://www.dtcc.com/-/media/Files/Downloads/legal/policy-and-compliance/DTC_Disclosure_Framework.pdf)
+28. SEC Rule 17Ad-22(e) — [sec.gov/files/rules/final/2016/34-78961.pdf](https://www.sec.gov/files/rules/final/2016/34-78961.pdf)
+29. SEC Treasury Clearing Rule — [federalregister.gov/documents/2024/01/16/2023-27860](https://www.federalregister.gov/documents/2024/01/16/2023-27860)
+30. DTCC Looks Ahead to 2025 — WFE Focus — [focus.world-exchanges.org/articles/dtcc-2025-2024](https://focus.world-exchanges.org/articles/dtcc-2025-2024)
+31. DTCC Connectivity Repository — [dtcclearning.com/products-and-services/cross-product/smart-network.html](https://dtcclearning.com/products-and-services/cross-product/smart-network.html)
+32. DTCC Equities Clearing Transformation — [dtcclearning.com/products-and-services/equities-clearing/equities-clearing-transformation.html](https://dtcclearning.com/products-and-services/equities-clearing/equities-clearing-transformation.html)
+33. DTCC FICC Treasury Clearing Volumes, March 2024 — [dtcc.com/news/2024/march/12/dtccs-ficc-treasury-clearing-volumes-grow-31-percent](https://www.dtcc.com/news/2024/march/12/dtccs-ficc-treasury-clearing-volumes-grow-31-percent)
+34. KSD Official Website — [ksd.or.kr/en/](https://www.ksd.or.kr/en/)

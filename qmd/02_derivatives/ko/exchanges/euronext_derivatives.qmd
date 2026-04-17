@@ -1,0 +1,752 @@
+---
+title: "Euronext Derivatives (유로넥스트 파생상품)"
+subtitle: "파생상품 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-07
+> **조사 등급:** Tier 2
+> **분야:** 파생상품
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | Euronext N.V. -- Derivatives Markets |
+| 약칭 | Euronext Derivatives (구 NYSE Liffe / MONEP / MATIF / AEX-Options / IDEM) |
+| 웹사이트 | https://www.euronext.com ; https://live.euronext.com/en/products/derivatives |
+| 설립연도 | 2000년 (암스테르담, 브뤼셀, 파리 거래소 합병으로 Euronext 설립); 파생상품 연혁은 MONEP (1987), MATIF (1986), AEX-Optiebeurs (1978), IDEM (1994)까지 소급 |
+| 소재지 | 네덜란드 / 암스테르담 (본사); 암스테르담, 브뤼셀, 더블린, 리스본, 밀라노, 오슬로, 파리에서 파생상품 시장 운영 |
+| 지배구조 | 상장회사 (Euronext N.V., 티커 ENX, Euronext 암스테르담 및 파리 상장) |
+| 모회사 / 그룹 | Euronext N.V. — 7개 유럽 시장에 걸쳐 현물 주식, 채권, 파생상품, 상품, 후선업무(Euronext Clearing, Euronext Securities), 기술(Optiq), 데이터 서비스를 아우르는 범유럽 시장 인프라 그룹 |
+| 감독기관 | Euronext 감독기관 협의체(College of Euronext Regulators): AMF (프랑스), AFM (네덜란드), FSMA (벨기에), CMVM (포르투갈), CONSOB (이탈리아), Finanstilsynet (노르웨이), CBI (아일랜드); CCP 감독은 EMIR에 따라 ESMA |
+| 파생상품 ADV (2025년 1월) | 일일 606,267로트 (전년 대비 5.1% 증가) |
+| 미결제약정 (2025년 1월) | 23,064,793계약 (전년 대비 4.5% 증가) |
+| 청산 계약 (2025년 1월) | 13,337,872계약 (단일 집계) |
+| 상품 파생상품 ADV (2025년 10월) | 일일 114,307로트 |
+| 상장 파생상품 종목 | 주가지수 선물/옵션, 개별주식 옵션/선물, 배당 파생상품, 상품 선물/옵션(밀, 유채, 옥수수), 채권 파생상품(BTP, OAT, Bund 선물 — 2025년 9월 출시), ETF 옵션, Total Return 선물 |
+| 시장 | 암스테르담(AEX), 파리(CAC 40, MATIF 상품), 밀라노(FTSE MIB, IDEM), 브뤼셀(BEL 20), 리스본(PSI), 오슬로(OBX), 더블린(ISEQ 20) |
+
+[Source: Euronext, "Trading Information", https://www.euronext.com/en/trading]
+[Source: Euronext, "Euronext publishes Q4 and full year 2024 results", February 2025, https://www.euronext.com/en/investor-relations/financial-information/news/euronext-publishes-q4-and-full-year-2024-results]
+[Source: Euronext Clearing, "Statistics", https://www.euronext.com/en/clearing/about/statistics]
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **1978년**: European Options Exchange (EOE) 암스테르담에 설립 — 유럽 최초의 옵션 거래소 중 하나
+- **1986년**: MATIF (Marche a Terme International de France) 파리에서 금융 및 상품 선물 거래 개시
+- **1987년**: MONEP (Marche des Options Negociables de Paris) 주식 옵션 거래 개시
+- **1994년**: IDEM (Italian Derivatives Market) Borsa Italiana가 밀라노에서 출범
+- **2000년 (9월)**: **Euronext 설립** — Paris Bourse, Amsterdam Exchanges, Brussels Exchanges의 합병
+- **2001년**: Euronext가 LIFFE (London International Financial Futures and Options Exchange) 인수, Euronext.liffe 형성
+- **2002년**: Bolsa de Valores de Lisboa e Porto (BVLP)와 합병, 현 Euronext Lisbon
+- **2003년**: 현물 상품이 단일 NSC 플랫폼에 통합
+- **2004년**: 파생상품이 LIFFE CONNECT 플랫폼에 통합
+- **2006년**: NYSE Group과 Euronext가 합병에 합의, NYSE Euronext 형성
+- **2007년**: NYSE Euronext 공식 출범; 파생상품 및 현물 주식 운영 통합
+- **2012년**: 유럽위원회가 파생상품 독점 우려로 제안된 Deutsche Borse-NYSE Euronext 합병을 차단
+- **2013년**: Intercontinental Exchange (ICE)가 USD 110억에 NYSE Euronext 인수
+- **2014년 (6월 20일)**: Euronext가 ICE에서 IPO를 통해 분사; Euronext 암스테르담 및 파리에 독립 상장회사로 복귀
+- **2018년 (1월)**: MiFID II/MiFIR 시행; 파생상품 거래, 보고, 포지션한도에 중대한 영향
+- **2018년 (6월)**: Optiq 거래 플랫폼이 Euronext 파생상품 시장에 가동, 레거시 LIFFE CONNECT/UTP 시스템 대체
+- **2018년**: Euronext가 Irish Stock Exchange (현 Euronext Dublin) 인수
+- **2019년**: Euronext가 Oslo Bors (현 Euronext Oslo) 인수
+- **2021년 (4월)**: Euronext가 LSEG로부터 Borsa Italiana Group (IDEM, MTS, CC&G 포함) 인수 완료 (EUR 44억)
+- **2022년 (6월)**: 핵심 데이터센터가 영국 Basildon에서 이탈리아 Bergamo로 이전 완료
+- **2023년 (11월)**: Euronext Clearing이 현물 주식 시장으로 확장 (LCH SA에서 이관)
+- **2024년 (4월)**: Borsa Italiana 파생상품(IDEM)이 Optiq 거래 플랫폼으로 이관
+- **2024년 (7월)**: Euronext Clearing이 상품 파생상품으로 확장
+- **2024년 (9월 9일)**: Euronext Clearing이 모든 Euronext 금융 파생상품으로 확장 — LCH SA에서의 이관 완료
+- **2025년 (2월)**: Euronext가 채권 파생상품(미니 현금결제 국채 선물) 출시 발표
+- **2025년 (5월)**: 프랑스 및 네덜란드 기초자산 미니 개별주식 옵션 출시
+- **2025년 (9월)**: Euronext Derivatives Milan에서 채권 파생상품 1단계 가동 (BTP, OAT, Bund, Bono 선물)
+- **2026년 (3월)**: 미니 ETF 옵션 출시
+
+[Source: Euronext, "Our Journey", https://www.euronext.com/en/about/our-journey]
+[Source: Wikipedia, "Euronext", https://en.wikipedia.org/wiki/Euronext]
+[Source: Euronext press releases, various dates, https://www.euronext.com/en/about/media/euronext-press-releases]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 (Market Segments)
+
+| 구분 | 주요 상품 | 시장 |
+|---------|-------------|---------|
+| **주가지수 파생상품** | CAC 40, AEX, BEL 20, PSI, OBX, ISEQ 20, FTSE MIB 선물 및 옵션; 미니 및 마이크로 변형; 주간 및 일간 옵션; ESG 지수 선물 (CAC 40 ESG) | 파리, 암스테르담, 브뤼셀, 리스본, 오슬로, 더블린, 밀라노 |
+| **개별주식 파생상품** | Euronext 시장 전반에 상장된 개별 주식에 대한 옵션 및 선물; 프랑스, 네덜란드, 벨기에, 포르투갈, 이탈리아, 노르웨이, 아일랜드, 독일 기초자산 | 전 시장 |
+| **배당 파생상품** | 배당지수 선물 (CAC 40, AEX, FTSE MIB); 개별주식 배당 선물 | 파리, 암스테르담, 밀라노 |
+| **상품 파생상품** | 제분용 밀 No. 2 (EBM), 유채(ECO), 옥수수(EMA) 선물 및 옵션 — 실물 인수도 | 파리 (MATIF) |
+| **채권 파생상품** | BTP (이탈리아 10Y/30Y), OAT (프랑스), Bund (독일), Bono (스페인) 미니 현금결제 선물 — 2025년 9월 출시 | 밀라노, 파리 |
+| **ETF/ETC 파생상품** | ETF 옵션; 미니 ETF 옵션 (2026년 3월 출시) | 암스테르담, 파리, 밀라노 |
+| **Total Return 선물** | FTSE MIB, CAC 40, AEX에 대한 TRF — OTC Total Return Swap의 경제적 효과를 복제 | 파리, 밀라노 |
+
+[Source: Euronext, "Financial Derivatives trading", https://www.euronext.com/en/for-investors/financial-derivatives]
+[Source: Euronext Live, "Equity derivatives", https://live.euronext.com/en/products/derivatives]
+
+### 2.2 거래 세션 (Trading Sessions)
+
+Euronext 파생상품은 중앙유럽시간(CET/CEST)으로 운영된다. 거래 시간은 상품군별로 상이하다:
+
+| 세션 / 상품 | 현지 시간 (CET) | UTC (겨울) | 설명 |
+|-------------------|-------------------|--------------|-------------|
+| **주가지수 선물 (CAC 40, AEX 등)** | 08:00 - 22:00 | 07:00 - 21:00 | 미국 세션 중첩 포함 연장 시간 |
+| **FTSE MIB 선물** | 08:00 - 22:00 | 07:00 - 21:00 | Optiq 이관 후 기타 지수 선물과 정합 |
+| **주식 옵션 (개별주식)** | 09:00 - 17:30 | 08:00 - 16:30 | 표준 유럽 세션 |
+| **주가지수 옵션** | 09:00 - 17:30 | 08:00 - 16:30 | 일부 상품은 CET 18:30까지 거래 [unverified] |
+| **상품 선물 (밀, 유채)** | 10:45 - 18:30 | 09:45 - 17:30 | MATIF 상품 세션 |
+| **일간/주간 옵션** | 09:00 - 17:30 | 08:00 - 16:30 | 일중 만기 상품 |
+
+**참고사항:**
+- 지수 선물 정산가격은 통상 장 마감 근처의 평균 방식으로 산출된다 (예: CAC 40: CET 15:40~16:00 사이의 모든 지수 값의 산술평균)
+- 기초자산 주식시장의 거래 중단은 관련 파생상품의 해당 중단을 유발한다
+- 공휴일 일정은 시장별로 상이하며; Euronext는 시장별 연간 공휴일 일정을 공표한다
+
+[Source: Euronext, "Trading hours & holidays", https://www.euronext.com/en/trading/trading-hours-holidays]
+[Source: Euronext Live, "Derivatives trading hours", https://live.euronext.com/en/media/295]
+
+### 2.3 호가단위 (Tick Sizes)
+
+주요 상품의 대표적인 호가단위 (최소가격변동폭):
+
+| 상품 | 호가단위 (최소가격변동폭) | 틱 가치 |
+|---------|-----------|------------|
+| CAC 40 선물 (FCE) | 0.5 지수포인트 | EUR 5 |
+| AEX 선물 (FTI) | 0.05 지수포인트 | EUR 10 |
+| FTSE MIB 선물 (FIB) | 5 지수포인트 | EUR 25 |
+| FTSE MIB Mini 선물 (MIN) | 5 지수포인트 | EUR 5 |
+| BEL 20 선물 | 1 지수포인트 | [unverified] |
+| CAC 40 옵션 (PXA) | 0.1 지수포인트 | EUR 1 |
+| AEX 옵션 | 0.01 지수포인트 | EUR 1 |
+| 개별주식 옵션 | 가격대에 따라 상이 | 상이 |
+| 제분용 밀 선물 (EBM) | EUR 0.25/톤 | EUR 12.50 |
+
+[Source: Euronext Live, various contract specification pages, https://live.euronext.com/en/resources/contracts-specifications]
+
+### 2.4 로트 단위 (Lot Sizes)
+
+- **표준 로트 단위**: 모든 장내 파생상품에서 1계약
+- **블록거래 (대량매매) 최소 수량**: 상품별로 상이하며 Euronext Trading Procedures에 정의
+- **상품 계약**: 제분용 밀 = 계약당 50톤; 유채 = 계약당 50톤
+
+### 2.5 시장조성자 / 유동성 공급자 프로그램 (Market Maker / Liquidity Provider Programs)
+
+Euronext는 시장 및 상품군별로 맞춤화된 유동성 공급 프로그램을 운영한다:
+
+- **Primary Market Makers (PMM)**: 지정 상품 전반에 걸쳐 연속적 양방향 호가 의무; 수수료 환급 및 수당 수령 자격
+- **Competitive Market Makers (CMM)**: 축소된 의무를 가진 보조 유동성 공급자
+- **MiFID II 시장조성자 (마켓메이커) 제도**: Stressed Market Conditions (SMC) 중 호가 의무를 충족하는 회원에게 종목당 월 EUR 50 인센티브 (80% 시간 임계치), 월 EUR 550 상한
+- **상품 옵션 LP**: 거래 수수료 100% 환급; 최우수 성과자에게 월 EUR 5,000 수당
+- **전력 선물 LP**: 최대 100% 거래 수수료 환급 및/또는 월 최대 EUR 10,000 수당
+- **Mass Quote 기능**: 시장조성자 (마켓메이커)가 단일 거래에서 다수 시리즈에 걸쳐 양방향 주문을 일괄 제출 가능
+- **Pivot 방식**: 연속 호가 및 RFQ 의무에서 50% 한도 내에서 물량과 스프레드를 동시에 조정하는 유연성
+
+[Source: Euronext, "Liquidity provision", https://www.euronext.com/en/trading/membership/liquidity-provision]
+[Source: Euronext, "Market Making Scheme for Derivatives Markets", https://connect2.euronext.com/sites/default/files/documentation/membership/Euronext%20Market%20Making%20Scheme%20for%20Derivatives%20Markets%20-%20Nov19%20(1).pdf]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 경매 방식 (Auction Mechanisms)
+
+Euronext 파생상품 시장은 Optiq 플랫폼 내에서 다음의 경매 유형을 사용한다:
+
+- **개장 경매**: 호가 접수 단계 중 주문을 수집; 예상 가격 표시. 체결 가능 물량을 극대화하는 가격으로 단일가 체결(Uncrossing). 시장 개장 시 모든 파생상품에 적용
+- **마감 경매**: 공식 종가/정산가격 결정; 유사한 호가접수 및 단일가 체결 메커니즘
+- **변동성 중단 (서킷브레이커 (매매거래중단) 경매)**: 잠재적 거래 가격이 동적 또는 정적 가격밴드를 이탈할 때 발동. 재개 전 질서 있는 가격 발견을 위해 예약 기간(경매 호가접수 단계)에 진입
+- **장중 경매**: 특정 상품에 대해 추가 가격 발견 지점을 제공하기 위한 정기 경매 [unverified — 파생상품 대상, 주로 현물 주식에서 사용]
+
+### 3.2 접속매매 (연속 거래, Continuous Trading)
+
+- **중앙지정가주문대장 (CLOB, Central Limit Order Book)**: 모든 파생상품에 대한 완전 전자화된 주문주도 시장
+- **연속 체결**: 거래 세션 동안 주문이 최우선 가격에서 연속 체결
+- **시장조성자 (마켓메이커)**: 연속 호가를 통해 호가창 유동성을 보완; 시장은 주문주도형이며 호가주도형이 아님
+- **Request for Cross (RFC)**: 회원이 사전 협의된 거래상대방과 고객 주문을 거래소에서 교차 체결할 수 있는 기능으로, 가격개선 규칙 및 호가창 최소 노출 요건의 적용을 받음
+
+### 3.3 가격 발견 (Price Discovery)
+
+- 개장 경매 및 연속 호가창을 통한 1차적 가격 발견
+- **경매 단일가 체결**: 최대 체결 가능 물량, 그 다음 최소 잔여 물량, 그 다음 기준가격을 타이브레이커로 적용
+- **정산가격**: 지수 선물의 경우 만기일 장 마감 부근의 평균 방식으로 산출 (예: CAC 40: 만기일 CET 15:40~16:00 사이 모든 지수 값의 산술평균, 소수점 둘째 자리 반올림)
+- **예상가격**: 경매 호가접수 단계 중 표시
+
+### 3.4 주문 우선순위 규칙 (Order Priority Rules)
+
+- **가격-시간 우선**: 모든 Euronext 파생상품의 표준 우선순위 — 최우선 가격 먼저, 그 다음 동일 가격에서 가장 빠른 시간
+- **시장가 주문**이 모든 가격 수준에서 지정가 주문보다 우선
+- **표시 우선**: 동일 가격에서 표시 수량이 아이스버그 예비 수량보다 우선
+- **비례배분(Pro-rata)**: Euronext 파생상품에서 표준이 아님; 가격-시간 우선이 기본 체결 알고리즘 [unverified — 특정 상품에서 대안적 배분 가능]
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 표준 주문 유형 (Standard Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| **시장가 주문** | 최우선 가격에서 즉시 체결; 가격 한도 미지정 |
+| **지정가 주문** | 최대 매수가/최소 매도가 지정; 미체결 수량은 호가창에 잔류 |
+| **스톱 시장가 주문** | 지정 가격 도달 시 발동; 시장가 주문으로 전환 |
+| **스톱 지정가 주문** | 지정 가격 도달 시 발동; 지정 가격의 지정가 주문으로 전환 |
+
+### 4.2 고급 주문 유형 (Advanced Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| **아이스버그 주문** | 총 주문 물량의 일부만 호가창에 표시 |
+| **Market-to-Limit (MTL)** | 시장가 주문으로 부분 체결 후 잔여 수량이 마지막 체결 가격의 지정가 주문으로 전환 |
+| **스프레드/전략 주문** | 캘린더 스프레드, 스트래들, 스트랭글 등 다수 레그 전략을 단일 주문으로 제출 |
+| **개장경매전용** | 개장 경매 중에만 유효; 미체결 시 취소 |
+| **마감경매전용** | 마감 경매 중에만 유효 |
+
+### 4.3 주문 유효조건 (Time-in-Force, TIF)
+
+| TIF | 설명 |
+|-----|-------------|
+| **Day** | 당일 거래일에만 유효 |
+| **GTC (Good-Till-Cancelled)** | 명시적으로 취소될 때까지 유효 |
+| **GTDate (Good-Till-Date)** | 지정된 날짜까지 유효 |
+| **IOC (Immediate-Or-Cancel)** | 가능한 한 즉시 체결; 미체결 수량 취소 |
+| **FOK (Fill-Or-Kill)** | 전체 주문이 즉시 체결되거나 전체 취소 |
+
+### 4.4 주문 수정 및 취소 (Order Modification & Cancellation)
+
+- 적절한 거래 단계 중 주문 수정(가격, 수량) 또는 취소 가능
+- 가격 변경 또는 수량 증가 시 새로운 시간 우선순위 부여
+- 수량 감소 시 기존 시간 우선순위 유지
+- 단일 상품 또는 전 상품에 대한 대량 취소 기능 이용 가능
+- Self-Trade Prevention (STP) 기능으로 의도하지 않은 자기거래 방지 가능
+
+[Source: Trading Technologies, "Euronext Supported Order Types", https://library.tradingtechnologies.com/user-setup/enx-supported-order-types.html]
+[Source: Euronext, "Self-Trade Prevention Functional Overview", https://connect2.euronext.com/sites/default/files/it-documentation/Self-Trade%20Prevention%20Functional%20Overview%20-%20v2.0.pdf]
+
+---
+
+## 5. 매매시스템 기술 — Optiq (Trading System Technology — Optiq)
+
+### 5.1 개요 (Overview)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 시스템 명칭 | Optiq |
+| 개발사 | Euronext (자체 개발) |
+| 아키텍처 | 모듈형, 파티션 기반 아키텍처; Order Entry Gateway (OEG) 및 Matching Engine (ME) 구성요소 |
+| 영속성 계층 | Apache Kafka 기반 Confluent Platform |
+| 프로토콜 | 주문 접수에 SBE (Simple Binary Encoding) 및 FIX 5.0; 시장 데이터에 UDP/IP 기반 SBE |
+| 지연시간 | 평균 주문 왕복 약 15마이크로초; 시장 데이터 배포 약 15마이크로초 |
+| 처리량 | 초당 100만+ 메시지 수용 용량 |
+| 지터 | 최소 표준편차 — 예측 가능하고 안정적인 지연시간을 위한 아키텍처 설계 |
+| 자산 범위 | 현물 주식 및 모든 파생상품(금융, 상품, 채권)을 위한 통합 플랫폼 |
+
+### 5.2 아키텍처 (Architecture)
+
+- **모듈형 서비스 구조**: 구성요소의 독립적 확장이 가능한 유연한 모듈형 설계
+- **통합 메시징**: 단일 플랫폼에서의 통합 현물 및 파생상품 메시징 모델
+- **Order Entry Gateway (OEG)**: 주문 제출의 진입점; SBE 및 FIX 5.0 프로토콜 지원
+- **매매체결엔진 (Matching Engine, ME)**: 가격-시간 우선으로 주문을 처리하는 핵심 체결 구성요소
+- **Market Data Gateway (MDG)**: UDP 멀티캐스트 기반 SBE를 통해 실시간 시장 데이터 배포
+- **Kafka 기반 영속성**: Confluent Platform/Apache Kafka가 영속성 계층을 지원하여 안정적인 메시지 스트리밍 및 재생 기능 제공
+
+### 5.3 플랫폼 변천 (Platform History)
+
+| 일자 | 연혁 |
+|------|-----------|
+| 2016 | Optiq 개발 발표; 첫 뉴스레터 발행 |
+| 2017 | Euronext 현물 시장에 Optiq 가동 (단계적 전환) |
+| 2018 (6월 25일) | Euronext 파생상품 시장에 Optiq 가동 (암스테르담, 브뤼셀, 리스본, 파리) — 레거시 LIFFE CONNECT/UTP 대체 |
+| 2023 | Borsa Italiana 현물 주식이 Optiq으로 이관 |
+| 2024 (4월 3일) | Borsa Italiana 파생상품(IDEM) — 3차이자 최종 단계 — Optiq으로 이관 |
+| 지속 | 새로운 기능, 용량 확충, MiFID II 준수 업데이트를 포함한 정기 버전 업데이트 |
+
+### 5.4 성능 하이라이트 (Performance Highlights)
+
+파생상품 가동 이후 Optiq은 140억 건 이상의 메시지와 1,880만 건의 거래를 처리하였다. 이 플랫폼은 레거시 LIFFE CONNECT 시스템 대비 지연시간을 10분의 1로 줄이고 전체 용량의 무제한 확장을 달성하였다.
+
+### 5.5 재해복구 / 업무연속성 (Disaster Recovery / Business Continuity)
+
+- 주요 데이터센터: 이탈리아 Bergamo Aruba Global Cloud Data Centre IT3 (2022년 6월 영국 Basildon에서 이전)
+- 보조/DR 시설: 세부사항 비공개 [unverified]
+- Euronext는 업무연속성 절차를 공표하고 회원사와 정기 DR 테스트를 실시
+- Bergamo 데이터센터는 전적으로 재생에너지(태양광 및 수력)로 구동된다
+
+[Source: Euronext, "Euronext introduces Optiq", https://www.euronext.com/en/about/media/euronext-press-releases/euronext-introduces-optiq-new-technology-platform-powering-cash]
+[Source: Confluent, "Euronext builds high-speed trading platform", https://www.confluent.io/customers/euronext/]
+[Source: Euronext, "Successful roll-out of Euronext Derivatives markets to Optiq", https://www.euronext.com/en/about/media/euronext-press-releases/successful-roll-out-euronext-derivatives-markets-optiq-trading]
+[Source: Euronext, "Data Centre migration completed", https://www.euronext.com/en/news/data-centre-migration]
+
+---
+
+## 6. 시장 데이터 (Market Data)
+
+### 6.1 피드 프로토콜 (Feed Protocols)
+
+| 피드 | 프로토콜 | 설명 |
+|------|----------|-------------|
+| **Optiq MDG (Market Data Gateway)** | UDP/IP 멀티캐스트 기반 SBE | 주요 실시간 시장 데이터 피드; 현물 및 파생상품에 대한 이벤트 기반 매수/매도호가/거래/통계 데이터 |
+| **Optiq MDG Lite** | UDP/IP 기반 SBE | 축소된 필드셋의 경량 시장 데이터 피드 |
+| **FIX 5.0 Drop Copy** | FIX 5.0 | 참가자를 위한 거래 및 주문 체결 보고서 |
+
+### 6.2 데이터 수준 (Data Levels)
+
+- **Level 1 (최우선호가)**: 최우선 매수/매도호가, 최종 거래 가격, 거래량, 통계
+- **Level 2 (전체 심도)**: 모든 가격 수준 및 합산 수량의 전체 호가창 심도
+- **거래 데이터**: 타임스탬프, 가격, 거래량이 포함된 개별 거래 보고서
+- **정산가격**: 계약별 일일 및 최종 정산가격 공표
+- **거래량 및 미결제약정**: 상품별 일일 거래량 및 미결제약정 데이터, 계좌 유형별 이용 가능
+
+### 6.3 데이터 배포 (Data Distribution)
+
+- **직접 연결**: Bergamo 데이터센터 코로케이션 또는 Point of Presence (PoP) 네트워크 연결을 통해
+- **데이터 벤더**: 주요 시장 데이터 벤더(Bloomberg, Refinitiv/LSEG, ICE Data Services 등)를 통해 배포
+- **CME Group**: Euronext 파생상품 데이터가 CME Group 데이터 서비스를 통해서도 배포
+- **Euronext Data Services**: Euronext 자체 데이터 사업을 통해 과거 및 실시간 데이터 상품 이용 가능
+
+### 6.4 과거 데이터 (Historical Data)
+
+- 틱별 과거 데이터 구매 가능
+- 거래량 및 미결제약정 과거 보고서 월간 공표 ("NextMonth" 파생상품 통계 보고서)
+- 정산가격 아카이브는 Euronext Live 웹사이트에서 이용 가능
+
+[Source: Euronext, "Optiq MDG Messages Interface Specification", https://connect.euronext.com/sites/default/files/it-documentation/optiq-mdg-messages-interface-specification-euronext-cash-and-derivatives-markets-external-v636320.pdf]
+[Source: Euronext, "Derivatives Market Data", https://www.euronext.com/en/data/market-data/market-data-products/derivatives-market-data]
+[Source: OnixS, "Euronext Optiq MDG Feed Handler", https://www.onixs.biz/euronext-optiq-market-data-gateway-feed-handler.html]
+
+---
+
+## 7. 연결성 및 접근 (Connectivity & Access)
+
+### 7.1 회원 (Membership)
+
+- **파생상품 시장 회원**: 각 특정 Euronext 파생상품 시장(암스테르담, 브뤼셀, 리스본, 밀라노, 오슬로, 파리)에 대한 회원 자격 신청 필요
+- **교차시장 접근**: 단일 회원 자격으로 다수 Euronext 시장의 파생상품에 접근 가능
+- **회원 유형**: Trading Members, Clearing Members (Euronext Clearing을 통해)
+- **규제 체계**: 회원은 본국에서 MiFID II에 따른 허가 투자회사여야 한다
+
+### 7.2 연결 방식 (Connection Methods)
+
+| 방식 | 설명 |
+|--------|-------------|
+| **코로케이션** | 이탈리아 Bergamo Euronext 주요 데이터센터 내 직접 코로케이션; 최저지연 접속 |
+| **Proximity Hosting** | Bergamo 데이터센터 내 고객 거래 인프라를 위한 랙 공간 |
+| **Points of Presence (PoP)** | 원격 연결을 위한 주요 금융 중심지의 네트워크 접근 거점 |
+| **Data Centre Carriers** | Bergamo까지 직접 고속 연결을 제공하는 제3자 네트워크 공급자 |
+| **마이크로웨이브 연결** | 초저지연 연결을 위해 Bergamo 데이터센터 옥상의 위성 안테나를 통해 이용 가능 |
+
+### 7.3 API 프로토콜 (API Protocols)
+
+| 프로토콜 | 용도 |
+|----------|----------|
+| **SBE (Simple Binary Encoding)** | 주문 접수 및 시장 데이터를 위한 주요 고성능 프로토콜; 초저지연 처리를 위한 고정위치, 고정길이 필드 |
+| **FIX 5.0** | 주문 접수를 위한 표준 FIX 프로토콜; RiskGuard 사전거래 리스크 관리 API에도 사용 |
+| **Optiq MDG** | 시장 데이터 배포 프로토콜 (UDP 멀티캐스트 기반 SBE) |
+
+### 7.4 인증 및 테스트 (Certification & Testing)
+
+- 회원은 운영 접속 전 적합성 테스트를 통과해야 한다
+- Euronext는 Customer Development Environment (CDE) / External User Acceptance Testing (EUA) 환경을 제공
+- SBE 및 FIX 연결에 대해 별도 인증 필요
+- 플랫폼 릴리스 전 정기적 이관/업그레이드 테스트 기간 제공
+
+[Source: Euronext, "Infrastructure and Connectivity", https://www.euronext.com/en/technology/infrastructure-and-connectivity]
+[Source: Euronext, "Euronext Data Centre", https://www.euronext.com/en/technology/euronext-data-centre]
+[Source: Euronext, "Data Centre Carriers", https://www.euronext.com/en/products-services/data-centre-carriers]
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (Risk Controls & Circuit Breakers)
+
+### 8.1 거래 안전장치 철학 (Trading Safeguards Philosophy)
+
+Euronext의 접근방식은 극단적 상황에서만 거래를 중단하는 것으로, 서킷브레이커 (매매거래중단)만이 아닌 종합적인 거래 안전장치에 의존한다. 그 철학은 이상 이벤트를 탐지하고 무질서한 시장을 방지하면서 연속 거래를 극대화하는 것이다.
+
+### 8.2 가격밴드 메커니즘 (Price Collar Mechanisms)
+
+- **동적 밴드(Dynamic Collar)**: 동적 기준가격(최종 거래 가격)을 기반으로 함; 가장 최근 거래 주변의 허용 가격 범위를 정의. 동적 기준가격은 각 거래 후 갱신
+- **정적 밴드(Static Collar)**: 정적 기준가격(통상 전일 종가 또는 개장 경매 가격)을 기반으로 함; 더 넓은 허용 가격 범위를 정의. 정적 기준은 Euronext 시장운영부가 수동으로 변경하지 않는 한 고정
+- **예약 기간(Reservation Period)**: 잠재적 거래 가격이 밴드를 이탈할 때 거래가 예약 기간(변동성 중단)에 진입 — 사실상 장중 경매. 재개 전 시장 참가자에게 주문 검토 시간을 부여
+- **Trade Price Validation (TPV)**: 파생상품 시장을 위한 추가 안전장치 계층; 비정상 거래를 방지하기 위해 체결 전 거래 가격을 검증
+
+### 8.3 사전거래 리스크 관리 — Euronext RiskGuard (Pre-Trade Risk Controls — Euronext RiskGuard)
+
+Euronext RiskGuard는 파생상품(및 현물) 시장을 위한 사전거래 리스크 관리 서비스로, FIX 5.0 API 및 웹 기반 GUI를 통해 이용 가능하다:
+
+| 관리 항목 | 설명 |
+|---------|-------------|
+| **주문 수량 한도** | 주문당 최대 계약 수; 신규 주문, 수정, 호가에 적용; 한도 초과 주문은 거부 |
+| **최대 주문 수량** | 계약별 매수 및/또는 매도 주문 한도, 회원 또는 트레이더 그룹별 설정 가능 |
+| **일일 최대 익스포저 포지션** | 한도 근접 또는 초과 시 이메일 경고를 동반한 포지션 모니터링 |
+| **Kill Switch** | 청산회원이 거래회사의 모든 거래 활동을 즉시 중단 가능; 모든 미체결 주문 및 호가가 회수됨; 청산회원이 명시적으로 복원할 때까지 신규 주문 거부 |
+| **Self-Trade Prevention (STP)** | 동일 회원/트레이더 간 의도하지 않은 체결 방지 |
+
+**적용 범위:** RiskGuard 관리는 금융 및 상품 파생상품 시장에 적용된다. 델타중립 거래, RFC, 도매 거래는 특정 관리에서 제외된다.
+
+[Source: Euronext, "Trading safeguards on the Euronext markets", https://www.euronext.com/en/trading/market-quality/trading-safeguards-euronext-markets]
+[Source: Euronext, "Euronext RiskGuard Service General Overview", February 2019, https://www.euronext.com/sites/default/files/2019-04/euronext_riskguard_service_general_overview_feb_2019_0.pdf]
+[Source: Euronext, "Euronext RiskGuard", https://www.euronext.com/en/trading/trading-services/riskguard]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 Euronext 감독기관 협의체 (College of Euronext Regulators)
+
+Euronext의 고유한 다관할권 구조는 양해각서(MoU)를 통해 설립된 **Euronext 감독기관 협의체(College of Euronext Regulators)**가 감독한다. 이 협의체는 모든 Euronext 시장에 걸쳐 감독을 조율한다:
+
+| 감독기관 | 관할 | 시장 |
+|-----------|-------------|--------|
+| **AMF** (Autorite des Marches Financiers) | 프랑스 | Euronext Paris, MATIF |
+| **AFM** (Autoriteit Financiele Markten) | 네덜란드 | Euronext Amsterdam |
+| **FSMA** (Financial Services and Markets Authority) | 벨기에 | Euronext Brussels |
+| **CMVM** (Comissao do Mercado de Valores Mobiliarios) | 포르투갈 | Euronext Lisbon |
+| **CONSOB** (Commissione Nazionale per le Societa e la Borsa) | 이탈리아 | Euronext Milan / Borsa Italiana |
+| **Finanstilsynet** | 노르웨이 | Euronext Oslo / Oslo Bors |
+| **CBI** (Central Bank of Ireland) | 아일랜드 | Euronext Dublin |
+
+### 9.2 주요 규정 (Key Regulations)
+
+- **MiFID II / MiFIR**: Euronext 파생상품 시장은 MiFID II에 따른 규제시장(Regulated Markets)이다. 주요 영향:
+  - 파생상품에 대한 거래 전후 투명성 요건
+  - 상품 파생상품에 대한 포지션한도 (건옥제한) (ESMA 조율 하 국가 감독기관이 설정)
+  - 거래 보고 의무
+  - 알고리즘 거래 요건 (스트레스 상황에서의 시장조성 (마켓메이킹) 의무 포함)
+  - 최선집행 의무
+- **EMIR (European Market Infrastructure Regulation)**: CCP 감독 규율 (ESMA 조율 하 CONSOB이 Euronext Clearing 감독); 특정 장외 파생상품에 대한 중앙청산 의무화
+- **MAR (Market Abuse Regulation)**: 내부자 거래 및 시세조종 금지; Euronext가 시장감시 시스템 운영
+- **Benchmark Regulation (BMR)**: 파생상품 기초자산으로 사용되는 지수에 적용
+
+### 9.3 감시 및 보고 (Surveillance & Reporting)
+
+- Euronext는 모든 시장에 걸쳐 실시간 시장감시를 운영
+- Euronext ARM (Approved Reporting Mechanism) 서비스를 통해 국가 감독기관에 거래 보고
+- Euronext APA (Approved Publication Arrangement)를 통한 MiFID II 거래 후 투명성 보고
+- 감독기관에 의심 거래 및 주문 보고서(STORs) 제출
+
+### 9.4 국경간 조율 (Cross-Border Coordination)
+
+- 감독기관 협의체가 Euronext의 7개 시장에 걸쳐 일관된 규칙 적용을 보장
+- Euronext Rule Book (통합 규칙)이 일률적으로 적용; 각 국가 시장별 특별 규칙이 보완
+- 시장 간 단일 운영 체계가 국경간 거래 및 청산을 촉진
+
+[Source: Euronext, "Regulation", https://www.euronext.com/en/regulation]
+[Source: Euronext, "Regulatory bodies", https://www.euronext.com/en/trade/join-euronext/regulatory-framework]
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 거래 수수료 (Trading Fees)
+
+Euronext는 상세한 "파생상품 시장 회원 거래 수수료 가이드"를 정기적으로 공표한다 (가장 최근: 2026년 3월 1일 시행). 주요 수수료 구조:
+
+- **계약당 거래 수수료**: 체결된 로트당 부과; 상품군(지수 선물/옵션, 개별주식 옵션, 상품 선물/옵션)별로 요율 상이
+- **시장조성자 (마켓메이커) 환급**: 시장조성 의무를 이행하는 회원에 대한 수수료 인하 또는 환급
+- **도매 거래 수수료**: TCS (Trade Confirmation System) 및 RFC (Request for Cross) 거래에 대한 별도 수수료 일정
+- **회원 수수료**: 연간 회원 수수료; 연중 가입 회원에 대한 일할 수수료 EUR 10,125 (2026년 요율)
+
+[Source: Euronext, "Trading fees and charges", https://www.euronext.com/en/trading/fees-charges]
+[Source: Euronext, "Derivatives Markets Trading Fee Guide effective 01 March 2026", https://www.euronext.com/sites/default/files/2026-02/euronext_derivatives_markets_trading_fee_guide_effective_01mar2026.pdf]
+
+### 10.2 청산 수수료 (Clearing Fees)
+
+- Euronext Clearing은 계약당 청산 수수료를 부과 (거래 수수료와 별도)
+- 청산 수익은 2024년 EUR 1억 4,430만 (전년 대비 19.0% 증가)으로, Euronext Clearing의 파생상품 확장을 반영
+- 수수료 구조에는 개시증거금 이자, 손해배상기금 출연금, 청산 서비스 수수료가 포함
+
+### 10.3 시장 데이터 수수료 (Market Data Fees)
+
+- **직접 접속 수수료**: 계약 당사자별 정보 상품별 적용; 직접 접속이 있는 Trading Members에 대해서는 면제
+- **실시간 데이터**: 연결 유형(코로케이션, PoP, 벤더 재배포)에 따른 계층별 가격 체계
+- **과거 데이터**: 틱 데이터, 거래량/미결제약정 데이터, 정산가격에 대해 별도 가격의 데이터 상품
+- Euronext Information Product Fee Schedule에 공표 (2026년 1월 갱신)
+
+[Source: Euronext, "Market Data Fees and Policies", https://www.euronext.com/en/data/real-time-data/pricing-specs-agreements/market-data-pricing-policies]
+
+### 10.4 코로케이션 및 연결 수수료 (Co-location & Connectivity Fees)
+
+- Bergamo 데이터센터 코로케이션 랙 공간 (세부 가격 비공개)
+- 크로스커넥트 및 PoP 접근을 위한 네트워크 연결 수수료
+- 마이크로웨이브 연결 이용 가능 (프리미엄 가격) [unverified]
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 11.1 Euronext Clearing 이관 (2023-2024)
+
+가장 혁신적인 최근 동향은 파생상품 청산의 LCH SA에서 Euronext Clearing(구 CC&G)으로의 이관이다:
+
+- **2023년 11월**: 현물 주식 청산이 Euronext Clearing으로 이관
+- **2024년 7월 15일**: 상품 파생상품 청산 이관
+- **2024년 9월 9일**: 모든 Euronext 금융 파생상품(CAC 40, AEX 선물, 지수 옵션, 개별주식 옵션 포함)이 Euronext Clearing으로 이관 — LCH SA로부터의 전면 전환 완료
+- **주요 이점**: VaR 기반 방법론과 통합 주식/파생상품 손해배상기금을 통한 교차증거금으로 약 20% 증거금 효율성 달성
+- **전략적 의의**: Euronext가 이제 거래 및 청산 인프라 전체를 엔드투엔드로 통제하여 청산 수익을 내재화
+
+[Source: Euronext, "Successful expansion of Euronext Clearing to all Euronext financial derivatives", September 2024, https://www.euronext.com/en/about/media/euronext-press-releases/successful-expansion-euronext-clearing-all-euronext-financial]
+[Source: FOW, "Euronext reflects on landmark clearing migration from LCH", https://www.fow.com/insights/3702151-analysis-euronext-reflects-on-landmark-clearing-migration-from-lch]
+
+### 11.2 Borsa Italiana 파생상품의 Optiq 이관 (2024)
+
+- 2024년 4월 3일, Borsa Italiana의 파생상품 시장(IDEM)이 Optiq으로의 이관을 완료 — Borsa Italiana 플랫폼 이관의 3차이자 최종 단계
+- Borsa Italiana Group 인수 후 3년 미만에 달성
+- 모든 Euronext 파생상품이 이제 단일 통합 플랫폼(Optiq)에서 거래
+
+[Source: Euronext, "Successful completion of the migration of Borsa Italiana to the Optiq trading platform", https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-borsa-italiana-optiqr-trading]
+
+### 11.3 신상품 출시 (New Product Launches)
+
+- **2025년 9월**: 채권 파생상품 출시 — 유럽 국채에 대한 최초의 미니 현금결제 선물(BTP 10Y/30Y, OAT, Bund, Bono), Euronext Derivatives Milan
+- **2025년 5월**: 프랑스 및 네덜란드 기초자산 미니 개별주식 옵션
+- **2025년 9월**: 최초의 미니 현금결제 선물
+- **2026년 3월**: 미니 ETF 옵션
+- **진행 중**: 독일, 아일랜드, 포르투갈 등에서의 신규 개별주식 옵션을 분기별로 추가
+- **개인 투자자 파생상품 전략**: Euronext는 개인 투자자 참여를 목표로 유럽 개인 투자자 파생상품 거래소로의 도약을 추진
+
+[Source: Euronext, "Euronext launches an innovative suite of fixed income derivatives", February 2025, https://www.euronext.com/en/about/media/euronext-press-releases/euronext-launches-innovative-suite-fixed-income-derivatives]
+[Source: Markets Media, "Euronext Aims to Become European Retail Exchange for Derivatives", https://www.marketsmedia.com/euronext-aims-to-become-european-retail-exchange-for-derivatives/]
+
+### 11.4 전략적 이니셔티브 (Strategic Initiatives)
+
+- **Euronext Clearing 확장**: 이관 후 교차증거금 활용 및 신규 청산회원 유치에 집중
+- **채권 파생상품 성장**: 유럽 국채 파생상품 프랜차이즈 구축을 위한 다년 이니셔티브
+- **레포 확장**: 이탈리아 레포 상품을 유럽 전역으로 확장하는 다년 Repo Expansion Initiative의 1단계
+- **Nasdaq Nordic 전력 선물 인수**: 유럽 에너지 시장에서의 리더십 강화
+- **기술 플랫폼 라이선싱**: Optiq을 다른 거래소 및 거래장 운영자를 위한 기술 솔루션으로 제공
+
+---
+
+## 파생상품 전용 섹션 (Derivatives-Specific Sections)
+
+### D1. 상품 목록 (Product Catalog)
+
+#### 주가지수 파생상품 (Equity Index Derivatives)
+
+| 지수 | 선물 코드 | 옵션 코드 | 시장 | 계약 단위 |
+|-------|-------------|--------------|--------|---------------|
+| CAC 40 | FCE | PXA | 파리 | 지수포인트당 EUR 10 |
+| AEX | FTI | AEX | 암스테르담 | 지수포인트당 EUR 200 |
+| FTSE MIB | FIB | MIB (MIBO) | 밀라노 | 지수포인트당 EUR 5 |
+| FTSE MIB Mini | MIN | -- | 밀라노 | 지수포인트당 EUR 1 |
+| FTSE MIB Micro | MICR | -- | 밀라노 | 지수포인트당 EUR 0.20 [unverified] |
+| BEL 20 | BEL | BXO | 브뤼셀 | 지수포인트당 EUR 5 [unverified] |
+| PSI 20 | PSI | -- | 리스본 | 지수포인트당 EUR 1 [unverified] |
+| OBX | OBX | -- | 오슬로 | 지수포인트당 NOK 100 [unverified] |
+| ISEQ 20 | FES | -- | 더블린 | 지수포인트당 EUR 10 [unverified] |
+| CAC 40 ESG | -- | -- | 파리 | 지수포인트당 EUR 10 [unverified] |
+
+**추가 상품:**
+- AEX Daily Options (7th), AEX Weekly Options
+- CAC 40 Weekly Options
+- FTSE MIB, CAC 40, AEX에 대한 Total Return Futures
+- 배당지수 선물 (CAC 40, AEX, FTSE MIB)
+
+#### 개별주식 파생상품 (Single Stock Derivatives)
+
+- 모든 Euronext 시장에 걸쳐 개별 주식에 대한 옵션 및 선물
+- 프랑스(CAC 40 구성종목), 네덜란드(AEX 구성종목), 벨기에, 이탈리아(FTSE MIB 구성종목), 노르웨이, 포르투갈, 아일랜드, 독일 기초자산 포함
+- 일부 프랑스 및 네덜란드 종목에 대한 미니 개별주식 옵션 이용 가능 (2025년 5월~)
+
+#### 상품 파생상품 (Commodity Derivatives)
+
+| 상품 | 코드 | 시장 | 계약 단위 | 결제 방식 |
+|---------|------|--------|---------------|------------|
+| 제분용 밀 No. 2 | EBM | 파리 (MATIF) | 50톤 | 실물 인수도 |
+| 유채 | ECO | 파리 (MATIF) | 50톤 | 실물 인수도 |
+| 옥수수 | EMA | 파리 (MATIF) | 50톤 | 실물 인수도 |
+
+**참고:** 제분용 밀은 Euronext의 대표 상품 계약이자 유럽 밀 가격 벤치마크이다. 계약월: 9월, 12월, 3월, 5월. 만기는 통상 계약월 10일.
+
+#### 채권 파생상품 (2025년 9월 출시)
+
+| 상품 | 시장 | 결제 방식 | 설명 |
+|---------|--------|------------|-------------|
+| Mini BTP Futures (이탈리아 10Y) | 밀라노 | 현금결제 | 최초의 미니 현금결제 국채 선물 |
+| Mini BTP Futures (이탈리아 30Y) | 밀라노 | 현금결제 | 장기 이탈리아 국채 익스포저 |
+| Mini OAT Futures (프랑스) | 밀라노/파리 | 현금결제 | 프랑스 국채 선물 |
+| Mini Bund Futures (독일) | 밀라노/파리 | 현금결제 | 독일 국채 선물 |
+| Mini Bono Futures (스페인) | 밀라노/파리 | 현금결제 | 스페인 국채 선물 |
+
+[Source: Euronext, "Trading Equity Index Futures", https://www.euronext.com/en/for-investors/financial-derivatives/equity-index-derivatives]
+[Source: Euronext, "Milling Wheat derivatives", https://www.euronext.com/en/for-investors/commodities/milling-wheat]
+
+### D2. 주요 계약 명세 (Key Contract Specifications, 거래량 상위 5개 상품)
+
+#### 1. CAC 40 지수 선물 (FCE)
+
+| 항목 | 명세 |
+|------|---------------|
+| 거래소 | Euronext Paris |
+| 계약 코드 | FCE |
+| 기초자산 | CAC 40 Index |
+| 계약 단위 | 지수포인트당 EUR 10 (예: 8,000.0에서 EUR 80,000) |
+| 호가단위 (최소가격변동폭) | 0.5 지수포인트 |
+| 틱 가치 | EUR 5 |
+| 계약월 | 월물: 최근 3개월; 분기물: 3월, 6월, 9월, 12월 주기로 최대 5년 [unverified] |
+| 거래 시간 | CET 08:00 - 22:00 |
+| 최종 거래일 | 결제월 셋째 금요일 CET 16:00 |
+| 결제 방식 | 현금결제 |
+| 최종 결제가격 | CET 15:40~16:00 사이 산출 및 배포된 모든 CAC 40 지수 값의 산술평균, 소수점 둘째 자리 반올림 |
+
+#### 2. AEX 지수 선물 (FTI)
+
+| 항목 | 명세 |
+|------|---------------|
+| 거래소 | Euronext Amsterdam |
+| 계약 코드 | FTI |
+| 기초자산 | AEX Index |
+| 계약 단위 | 지수포인트당 EUR 200 (예: 900.00에서 EUR 180,000) |
+| 호가단위 (최소가격변동폭) | 0.05 지수포인트 |
+| 틱 가치 | EUR 10 |
+| 계약월 | 월물: 최근 3개월; 분기물 주기 [unverified] |
+| 거래 시간 | CET 08:00 - 22:00 |
+| 최종 거래일 | 결제월 셋째 금요일 |
+| 결제 방식 | 현금결제 |
+| 최종 결제가격 | 만기 시 AEX 지수 산출 기반 |
+
+#### 3. AEX 지수 옵션 (AEX)
+
+| 항목 | 명세 |
+|------|---------------|
+| 거래소 | Euronext Amsterdam |
+| 계약 코드 | AEX |
+| 기초자산 | AEX Index |
+| 계약 단위 | 지수포인트당 EUR 100 (예: 900.00에서 EUR 90,000) [unverified] |
+| 호가단위 (최소가격변동폭) | 0.01 지수포인트 |
+| 틱 가치 | EUR 1 |
+| 행사 유형 | 유러피안 |
+| 계약월 | 월물; 주간 및 일간 만기도 이용 가능 |
+| 거래 시간 | CET 09:00 - 17:30 |
+| 결제 방식 | 현금결제 |
+
+#### 4. FTSE MIB 지수 선물 (FIB)
+
+| 항목 | 명세 |
+|------|---------------|
+| 거래소 | Euronext Milan (구 IDEM) |
+| 계약 코드 | FIB |
+| 기초자산 | FTSE MIB Index |
+| 계약 단위 | 지수포인트당 EUR 5 (예: 35,000에서 EUR 175,000) |
+| 호가단위 (최소가격변동폭) | 5 지수포인트 |
+| 틱 가치 | EUR 25 |
+| 계약월 | 분기물: 3월, 6월, 9월, 12월 |
+| 거래 시간 | CET 08:00 - 22:00 [unverified] |
+| 최종 거래일 | 결제월 셋째 금요일 |
+| 결제 방식 | 현금결제 |
+
+#### 5. 제분용 밀 No. 2 선물 (EBM)
+
+| 항목 | 명세 |
+|------|---------------|
+| 거래소 | Euronext Paris (MATIF) |
+| 계약 코드 | EBM |
+| 기초자산 | Milling Wheat No. 2 (EU 원산) |
+| 계약 단위 | 50톤 |
+| 가격 표시 | EUR/톤 |
+| 호가단위 (최소가격변동폭) | EUR 0.25/톤 |
+| 틱 가치 | EUR 12.50 |
+| 계약월 | 9월, 12월, 3월, 5월 |
+| 만기 | 계약월 10일 (또는 다음 영업일) |
+| 결제 방식 | 실물 인수도 |
+| 인수도 지점 | 프랑스 내 지정 저장 시설 [unverified] |
+
+[Source: Euronext Live, "CAC 40 Index Future contract specification", https://live.euronext.com/en/product/index-futures/FCE-DPAR/contract-specification]
+[Source: Euronext Live, "AEX Index Future contract specification", https://live.euronext.com/en/product/index-futures/FTI-DAMS/contract-specification]
+[Source: Euronext Live, "Milling Wheat contract specifications", https://live.euronext.com/en/resources/contracts-specifications/commodity-futures-milling-wheat]
+
+### D3. 증거금 체계 (Margin Framework)
+
+#### Euronext Clearing 증거금 방법론
+
+LCH SA에서의 이관(2024년 9월 완료) 이후 모든 Euronext 파생상품은 VaR 기반 증거금 방법론을 사용하는 **Euronext Clearing**(구 CC&G)을 통해 청산된다:
+
+| 항목 | 세부사항 |
+|------|---------|
+| 방법론 | 동적(자동갱신) VaR 유사 포트폴리오 증거금 산출 |
+| 리스크 지표 | 국채 제로커브 기반 현금흐름 매핑에 대한 Historical Simulation Expected Shortfall (ES) |
+| 신뢰수준 | 대부분 상품에서 99.0% [unverified — EMIR 표준 요건] |
+| 참조 기간 | 과거 시장 데이터 기반 [구체적 기간 비공개] |
+| 갱신 빈도 | 시장 상황에 따라 동적/자동 갱신 |
+| 경기순환성 | 과도한 경기순환적 증거금 인상을 방지하기 위한 EMIR 준수 조치 |
+
+#### 증거금 추가분 (Margin Add-Ons)
+
+Euronext Clearing은 중간가격 리스크 이외의 포트폴리오 특유 리스크를 처리하기 위해 추가 증거금을 적용한다:
+
+- **고유 리스크 (Idiosyncratic risk)**: 개별 증권에 특유한 리스크
+- **유동성 리스크 (Liquidity risk)**: 상품별 상이한 유동성을 반영
+- **집중 리스크 (Concentration risk)**: 대규모 집중 포지션에 대한 추가 증거금
+- **결제 리스크 (Settlement risk)**: 결제 시점 관련 리스크
+- **레포 리스크 (Repo risk)**: 레포 거래와 관련된 포지션
+
+#### 방법론 변천 (Methodology Timeline)
+
+| 일자 | 변경 |
+|------|--------|
+| 2023년 10월 이전 | 이탈리아 주식 및 파생상품에 MARS (SPAN 유사 방법론) 사용 |
+| 2022년 6월 | 이탈리아, 포르투갈, 스페인, 아일랜드 국채에 VaR 기반 방법론 가동 |
+| 2023년 10월 | 이탈리아 주식, ETF, 주식 파생상품에 VaR 기반 방법론 가동 (MARS/SPAN 유사 모델 대체) |
+| 2024년 9월 | LCH SA에서의 이관에 따라 모든 Euronext 금융 파생상품에 VaR 기반 방법론 확대 적용 |
+
+#### 교차증거금 (Cross-Margining)
+
+- **통합 손해배상기금**: 현물 및 파생상품 포지션 간 교차증거금을 촉진하는 단일 주식 및 파생상품 손해배상기금
+- **증거금 효율성**: 동일 손해배상기금 내 주식 및 파생상품 간 포트폴리오 증거금 산출을 통해 약 20% 증거금 절감 달성
+
+[Source: Euronext, "Euronext Clearing introduces an innovative VaR-based margin methodology", https://www.euronext.com/en/about/media/euronext-press-releases/euronext-clearing-introduces-innovative-var-based-margin]
+[Source: Euronext, "Risk Management Methodologies", https://www.euronext.com/en/post-trade/euronext-clearing/risk-management/methodologies]
+[Source: Euronext, "Model Validation", May 2024, https://www.euronext.com/sites/default/files/2024-05/Euronext_Clearing_Model%20Validation_May24.pdf]
+
+### D4. 포지션한도 (Position Limits)
+
+- **MiFID II 포지션한도 (건옥제한)**: ESMA와 조율하여 국가 감독기관이 상품 파생상품에 대한 포지션한도를 설정
+- **제분용 밀 포지션한도**: ESMA가 EBM (Milling Wheat No. 2) 계약에 대한 포지션한도 의견을 발표; 한도는 파리 MATIF 시장의 관할 감독기관인 AMF가 설정
+- **책임 수준**: 포지션 보고 임계치가 모든 파생상품에 적용; 대규모 포지션 보유자는 거래소 및 관련 감독기관에 보고 의무
+- **헤지 면제**: 관할 감독기관에 신청하는 정당한 헤지자에게 이용 가능
+- **금융 파생상품**: 주식/지수 파생상품에 대한 포지션한도는 일반적으로 상품 파생상품보다 덜 제한적; 구체적 한도는 상품별 상이 [unverified]
+
+[Source: ESMA, "Opinion on position limits on Milling Wheat No. 2 contract", https://www.esma.europa.eu/sites/default/files/library/amf_milling_wheat_ebmobm.pdf]
+
+### D5. 블록거래 / EFP / EFS / 도매 거래 (Block Trading / EFP / EFS / Wholesale Trading)
+
+Euronext는 파생상품을 위한 여러 장외 및 도매 거래 기능을 운영한다:
+
+| 기능 | 설명 |
+|----------|-------------|
+| **TCS (Trade Confirmation System)** | 협상 거래, 블록거래 (대량매매), VWAP 거래를 포함한 규제시장 거래의 공표; 거래 후 등록 및 보고에 사용 |
+| **Block Execution Service (BES)** | Trading Members가 장외 도매 거래를 거래소에 등록 보고 가능 |
+| **EFP (Exchange for Physical)** | 지수에 따라 가중된 기초자산 주식 바스켓과 선물 포지션의 동시 교환; AMR (Automated Market Reference) 전략을 통해 Optiq 호가창에서 직접 입력 가능 |
+| **EFS (Exchange for Swaps)** | 선물과 스왑 포지션의 교환; 중앙 호가창 거래와 관련된 체결 리스크 제거 |
+| **RFC (Request for Cross)** | 사전 협의된 거래상대방과 고객 주문을 거래소에서 교차 체결하는 기능; 가격개선 규칙의 적용을 받음 (교차 가격이 호가창 최우선 매수/매도호가 이상이어야 함) |
+| **Auto-match RFC** | RFC 주문의 자동 체결, 2024년 3월 도입 |
+
+**주요 규칙:**
+- 모든 도매 거래는 TCS를 통해 보고해야 하며 MiFID II에 따른 거래 후 투명성 요건의 적용을 받는다
+- 최소 블록거래 (대량매매) 수량은 상품별로 적용 (Euronext Trading Procedures에 정의)
+- EFP/EFS 거래는 기초자산 또는 스왑의 진정한 관련 포지션을 수반해야 한다
+
+[Source: Euronext, "Wholesale trading & RFC", https://www.euronext.com/en/for-investors/financial-derivatives/wholesale-trading]
+[Source: Euronext, "Euronext Derivatives Markets: Trading Procedures", https://www.euronext.com/sites/default/files/2025-02/trading_procedures_for_derivatives_-_dsp_fair_value_and_deferred_publication.pdf]
+
+---
+
+## 요약 (Summary)
+
+Euronext Derivatives는 7개 시장(암스테르담, 브뤼셀, 더블린, 리스본, 밀라노, 오슬로, 파리)에서 통합 Optiq 거래 플랫폼으로 운영되는 범유럽 파생상품 거래소이다. 상품 범위는 주가지수 선물/옵션, 개별주식 파생상품, 상품 선물/옵션(특히 유럽 벤치마크로서의 제분용 밀), 배당 파생상품, Total Return 선물, 신규 출시된 채권 파생상품에 이른다.
+
+2023-2024년은 두 가지 획기적 이관으로 혁신적인 시기였다: (1) Borsa Italiana의 파생상품 시장이 Optiq 플랫폼으로 이전(2024년 4월), (2) 모든 파생상품 청산이 LCH SA에서 Euronext Clearing으로 이관(2024년 9월 완료). 이러한 변화로 Euronext는 거래 및 청산 스택에 대한 완전한 수직적 통제를 확보하여, VaR 기반 포트폴리오 증거금 산출과 통합 손해배상기금을 통한 약 20% 증거금 효율성을 달성하였다.
+
+Optiq은 이탈리아 Bergamo 데이터센터에서 SBE 및 FIX 5.0 프로토콜을 사용하여 약 15마이크로초 주문 왕복 지연시간과 초당 100만+ 메시지 용량을 제공한다. 거래소는 채권 파생상품(2025년 9월 출시), 미니 옵션, 개인 투자자 파생상품 전략으로 상품 제공을 계속 확대하고 있다.

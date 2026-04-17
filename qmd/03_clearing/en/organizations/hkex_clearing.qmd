@@ -1,0 +1,644 @@
+---
+title: "HKEX Clearing -- HKSCC / HKCC / SEOCH"
+subtitle: "Clearing & Settlement > Organizations"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 2
+> **Type:** CCP + CSD (multiple entities)
+
+---
+
+## 1. Overview & Profile
+
+### 1.1 Organization Profile
+
+Hong Kong Exchanges and Clearing Limited (HKEX) operates three recognised clearing houses (RCHs) for its exchange-traded markets, plus OTC Clearing Hong Kong Limited (OTC Clear) for OTC derivatives. This report covers the three exchange-traded clearing entities.
+
+| Item | HKSCC | HKCC | SEOCH |
+|------|-------|------|-------|
+| **Official Name** | Hong Kong Securities Clearing Company Limited | HKFE Clearing Corporation Limited | The SEHK Options Clearing House Limited |
+| **Website** | [hkex.com.hk/clearing/securities](https://www.hkex.com.hk/Services/Clearing/Securities?sc_lang=en) | [hkex.com.hk/clearing/listed-derivatives](https://www.hkex.com.hk/Services/Clearing/Listed-Derivatives?sc_lang=en) | Same as HKCC |
+| **Year Established** | 1992 (CCASS launched); incorporated earlier | 1989 (assumed clearing functions from ICCH) | 1995 (stock options launched on SEHK) |
+| **Country / City** | Hong Kong SAR, China | Hong Kong SAR, China | Hong Kong SAR, China |
+| **Ownership** | Wholly owned subsidiary of HKEX (SEHK: 0388) | Wholly owned subsidiary of HKEX | Wholly owned subsidiary of HKEX |
+| **Functions** | CCP (via CNS), CSD, SSS for securities | CCP for futures and derivatives | CCP for stock options |
+| **Core System** | CCASS (Central Clearing and Settlement System) | DCASS (Derivatives Clearing and Settlement System) | DCASS (shared with HKCC) |
+| **Regulatory Authority** | SFC (Securities and Futures Commission) of Hong Kong | SFC | SFC |
+| **CPMI-IOSCO PFMI Compliance** | Yes -- publishes PFMI qualitative disclosures (latest: 2024) and quarterly PQD | Yes -- publishes PFMI disclosure | Yes -- covered under HKCC/SEOCH combined disclosure |
+| **QCCP Status** | Recognised by ESMA as third-country CCP under EMIR [unverified -- to be confirmed] | Same | Same |
+| **Products Covered** | Equities, ETFs, REITs, warrants, structured products, bonds listed on SEHK; China Connect Securities (via Stock Connect) | Futures and options on equity indices, single stocks, currencies, interest rates, commodities (on HKFE) | Stock options traded on SEHK |
+
+[Source: HKEX Principal Subsidiaries -- https://www.hkexgroup.com/About-HKEX/Organisation/Principal-Subsidiaries; HKEX Clearing Services Overview -- https://www.hkex.com.hk/Services/Clearing/Listed-Derivatives/Overview]
+
+### 1.2 Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 1989 | HKCC assumed clearing functions previously performed by ICCH (International Commodities Clearing House) for Hong Kong Futures Exchange |
+| 1992 | CCASS launched by HKSCC, replacing the physical settlement system for securities |
+| 1995 | Stock options trading launched on SEHK; SEOCH established as clearing house |
+| 2000 | HKEX formed through merger of SEHK, HKFE, and HKSCC; listed on its own exchange (June 27) |
+| 2003 | Securities and Futures Ordinance (SFO) enacted, establishing modern regulatory framework for RCHs |
+| 2008 | CCASS/3 system upgrade completed, enhancing capacity and functionality |
+| 2011 | T+2 finality arrangement for CCASS money settlement introduced (July 25), aligning securities and money settlement finality on the same day |
+| 2012 | HKEX acquired London Metal Exchange (LME) for GBP 1.39 billion; LME Clear later established |
+| 2013 | OTC Clearing Hong Kong Limited (OTC Clear) launched for OTC interest rate swaps and NDFs |
+| 2014 | Shanghai-Hong Kong Stock Connect launched (November 17); HKSCC became clearing participant of ChinaClear |
+| 2016 | Shenzhen-Hong Kong Stock Connect launched (December 5) |
+| 2017 | Northbound Bond Connect launched (July 3) |
+| 2018 | DCASS and HKATS system upgrades; risk management reform introduced PRiME margining and Reserve Fund restructuring for HKCC/SEOCH |
+| 2022 | ETF Connect launched (July 4); HKSCC Guarantee Fund threshold set at HKD 7.3 billion (June 13) |
+| 2023 | Swap Connect (Northbound) launched (May 15) -- world's first derivatives mutual market access programme; HKSCC Next Generation Risk Management (NGRM) platform implementation |
+| 2024 | HKCC Reserve Fund recalculated with total HPAD requirement of HK$2,863 million (August); HKSCC Guarantee Fund review circular issued (July) |
+| 2025 | OTC Clear accepts China Government Bonds as collateral for all derivatives (March); HKEX publishes T+1 settlement consultation paper (July); Stock settlement fee restructured to flat 0.0042% effective June 30; Swap Connect tenor extended to 30 years and LPR 1Y added as reference rate |
+| 2026 | SEOCH Reserve Fund threshold increased to HKD 3.6 billion (effective April 1) |
+
+[Source: HKEX Annual Reports; HKEX Market Communications; BIS Red Book -- Hong Kong; HKEX News Releases 2025]
+
+---
+
+## 2. Clearing Model
+
+### 2.1 CCP Services
+
+#### HKSCC -- Securities Clearing
+
+HKSCC provides clearing, settlement, depository, and nominee services for securities listed on SEHK through CCASS. Two primary clearing modes exist:
+
+| Mode | Description |
+|------|-------------|
+| **CNS (Continuous Net Settlement)** | HKSCC acts as the CCP via novation, becoming the settlement counterparty to both buyer and seller. Positions in the same security are continuously netted, reducing settlement obligations. This is the default mode for Exchange Trades. |
+| **Isolated Trades (IT)** | Trade-for-trade settlement without HKSCC acting as CCP. Used for specific trade types where netting is not appropriate. |
+
+HKSCC also clears and settles non-exchange transactions including: Settlement Instructions (SI) for broker-custodian deliveries, Stock Borrowing and Lending transactions, Clearing Agency Transactions (options exercise settlements from SEOCH), and Investor Settlement Instructions (ISI).
+
+**China Connect Securities:** HKSCC clears northbound Stock Connect trades as a participant of ChinaClear, and clears southbound trades as the host CCP with ChinaClear as its Clearing Agency Participant.
+
+[Source: HKEX Clearing Services -- Securities Overview; HKSCC PFMI Disclosure]
+
+#### HKCC -- Derivatives (Futures) Clearing
+
+HKCC acts as the CCP for all derivatives contracts traded on Hong Kong Futures Exchange (HKFE), guaranteeing settlement of transactions effected by its Clearing Participants. Products cleared include:
+
+| Product Category | Examples |
+|-----------------|----------|
+| Equity Index Futures & Options | Hang Seng Index, Hang Seng China Enterprises Index, Hang Seng TECH Index, Mini-Hang Seng Index |
+| Single Stock Futures | Various Hong Kong-listed equities |
+| Currency Futures & Options | USD/CNH, EUR/CNH, JPY/USD, AUD/USD |
+| Interest Rate Futures | HIBOR futures |
+| Commodity Futures | London Metal Mini Futures (Gold, Silver, Copper, Zinc, Nickel, Aluminium) |
+
+Trade details are electronically and automatically transmitted to HKCC once validly concluded on the exchange.
+
+[Source: HKEX Listed Derivatives Clearing Overview; HKEX Product Information]
+
+#### SEOCH -- Stock Options Clearing
+
+SEOCH acts as the CCP for stock options contracts traded on SEHK. It guarantees settlement of all transactions between its Clearing Participants. SEOCH clears Hong Kong dollar (HKD) and Renminbi (RMB) denominated stock options on major Hong Kong-listed stocks.
+
+Both HKCC and SEOCH share the DCASS infrastructure and are operationally integrated, though they maintain separate legal identities, separate Reserve Funds, and distinct rulebooks.
+
+[Source: HKEX Listed Derivatives Clearing Services]
+
+### 2.2 Novation Process
+
+**HKSCC (Securities):** Upon acceptance of an Exchange Trade for CNS settlement, HKSCC interposes itself as the CCP through novation. The original bilateral obligation between the buying and selling brokers is replaced by two separate obligations: one between HKSCC and the buyer, and one between HKSCC and the seller. This process is continuous -- as new trades are matched and accepted, they are netted against existing CNS positions in the same security.
+
+**HKCC and SEOCH (Derivatives):** Upon registration of a trade, HKCC/SEOCH novates the contract, becoming the buyer to every seller and the seller to every buyer. The original contract between the two exchange participants is extinguished and replaced by two new contracts with the clearing house.
+
+[Source: HKSCC Operational Procedures Section 9; HKCC Rules and Procedures]
+
+### 2.3 Netting
+
+**HKSCC:** Multilateral netting is applied daily under the CNS system. All CNS transactions in the same security are netted to produce a single net long or net short position per security per participant. Money obligations across all securities are then aggregated to determine a single net payment or receipt per participant per settlement day.
+
+**HKCC / SEOCH:** Both clearing houses provide multilateral netting of obligations. Positions within each participant's account are netted, and margin is calculated on a portfolio basis (net margining for house accounts; gross or net for client accounts depending on account type). Variation margin (mark-to-market) produces a single net pay/collect per settlement cycle.
+
+[Source: HKSCC Operational Procedures; HKCC Rules]
+
+### 2.4 Clearing Membership
+
+#### HKSCC Participant Categories
+
+| Category | Description | Key Financial Requirements |
+|----------|-------------|---------------------------|
+| **Direct Clearing Participant (DCP)** | SEHK Exchange Participant that clears its own trades | Minimum liquid capital: HK$3,000,000; Guarantee Fund Basic Contribution: higher of HK$50,000 or HK$50,000 per Trading Right; Admission fee: HK$50,000 per Trading Right |
+| **General Clearing Participant (GCP)** | Clears own trades and trades of Non-Clearing Participants (NCPs) | Minimum liquid capital: HK$100,000,000 base + HK$20,000,000 per NCP beyond 5th (cap: HK$390,000,000); For registered institutions: Tier 1 capital >= HK$390,000,000 |
+| **Custodian Participant** | Authorised bank, trust company, or licensed Type 1 corporation (non-SEHK participant) | Admission fee: HK$1,000,000; Insurance coverage >= HK$100,000,000 (or equivalent paid-up capital) |
+| **Clearing Agency Participant** | External clearing organisations (e.g., ChinaClear) | Per bilateral agreement with HKSCC |
+| **Investor Participant** | Individual or institutional investors with direct CCASS accounts | Per HKSCC rules |
+| **Stock Lender / Stock Pledgee Participant** | Specialised roles for SBL and pledging | Per HKSCC rules |
+
+[Source: HKEX -- Becoming a HKSCC Participant; HKSCC Admission Criteria document]
+
+#### HKCC Participant Categories
+
+| Category | Description | Key Financial Requirements |
+|----------|-------------|---------------------------|
+| **Clearing Participant (CP)** | HKFE Exchange Participant; clears own and client trades | Minimum liquid capital: HK$5,000,000; Reserve Fund Participant Deposit: HK$1,500,000 |
+| **General Clearing Participant (GCP)** | Clears own, client, and NCP trades | Minimum liquid capital: HK$100,000,000 base + HK$20,000,000 per NCP beyond 5th (cap: HK$390,000,000); For registered institutions: Tier 1 capital >= HK$390,000,000; Reserve Fund Participant Deposit: HK$7,500,000 |
+
+HKCC imposes capital-based position limits (CBPLs) on each participant based on its liquid capital, limiting the aggregate margin requirement a participant may accumulate relative to its financial resources.
+
+[Source: HKEX -- Becoming a HKCC Participant; HKCC Safeguards page]
+
+#### SEOCH Participant Categories
+
+SEOCH participant types mirror HKCC's structure, with Clearing Participants and General Clearing Participants. Participants must be Exchange Participants of SEHK for stock options trading or registered institutions. Financial requirements are broadly similar to HKCC.
+
+[Source: HKEX -- Becoming a SEOCH Participant]
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework
+
+#### HKSCC -- Securities Margin
+
+HKSCC employs a two-tier margin framework based on the Hang Seng Composite Index classification:
+
+| Tier | Securities Covered | Methodology | Margin Rate |
+|------|-------------------|-------------|-------------|
+| **Tier P** | Constituents of Hang Seng Composite LargeCap or MidCap Index; all equity ETPs and structured products with these underlyings | Value-at-Risk (VaR) based portfolio margining | Minimum 3.2% (effective August 14, 2023) |
+| **Tier N** | All non-Tier P instruments and related products | Flat-rate margin by sub-group | Group 1: 12% (eff. June 13, 2022); Group 2: 30% (eff. Dec 16, 2022); Group 3: 55% (eff. Oct 27, 2025) |
+
+HKSCC additionally imposes:
+- **Mark-to-market margin:** Daily mark-to-market of all CNS positions to reflect current market value
+- **Concentration margin / margin add-ons:** Discretionary additional margin on Clearing Participants with elevated or concentrated risk exposures
+- **Dynamic Contributions:** Risk-based contributions to the Guarantee Fund, calculated based on each participant's Expected Uncollateralised Loss (EUL) over the most recent 60 business days
+
+[Source: HKEX -- HKSCC Margin page; HKSCC Initial Margin Calculation Guide]
+
+#### HKCC & SEOCH -- Derivatives Margin (PRiME)
+
+Both HKCC and SEOCH use the **Portfolio Risk Margining System (PRiME)**, a SPAN 1-compatible margining algorithm, implemented in DCASS:
+
+| Aspect | Details |
+|--------|---------|
+| **Methodology** | PRiME evaluates the maximum potential loss of a portfolio of futures and options over a one-day holding period under 16 simulated scenarios at a defined confidence level |
+| **Risk Array** | Represents how each derivative instrument will gain or lose value across defined price and volatility movements |
+| **Confidence Level** | Calibrated to provide adequate coverage; reviewed regularly |
+| **Clearing House Margin** | Calculated using the PRiME algorithm directly |
+| **Client Margin** | Clearing House Risk Margin x Client Margin Multiplier (1.33x, effective March 20, 2017) |
+| **Margining Basis** | House accounts: net margined; Omnibus Client, Sink, and Daily accounts: gross margined |
+| **SEOCH Premium Margin** | For premium-paid options in SEOCH, Mark-to-Market Margin is added to the PRiME margin to achieve total margin requirements |
+
+HKCC also applies:
+- **Additional Margin for concentrated positions** exceeding 30% of aggregate losses in stress scenarios
+- **Capital-based position limits (CBPLs)** linking allowable positions to each participant's liquid capital
+
+**Comparison with KRX:** KRX uses a SPAN-based margin system for derivatives (KOSPI 200 futures/options, etc.), similar in concept to HKEX's PRiME. Both apply portfolio-based margining with scenario analysis. KRX additionally applies a net option value-based margin approach for certain products. The client margin multiplier differs -- HKEX uses 1.33x while KRX applies different scaling depending on the product.
+
+[Source: HKEX PRiME Margining Guide v1.5 (October 2023); HKEX Margin page -- Listed Derivatives]
+
+### 3.2 Margin Call Schedule
+
+| Entity | Timing | Details |
+|--------|--------|---------|
+| **HKSCC** | End-of-day (T) | Provisional clearing statements issued around 18:00-20:00 on trade date; final clearing statements after 14:00 on T+1; margin and Marks payable on settlement date |
+| **HKCC** | End-of-day + Intraday | Daily end-of-day mark-to-market and margin recalculation; intraday variation adjustments and additional margin calls may be issued during volatile market conditions |
+| **SEOCH** | End-of-day + Intraday | Each day after close of trading, SEOCH marks positions to market with the fixing price of each option series; intraday margin calls may be triggered during extreme movements |
+
+Margin may be provided in cash (HKD, USD, RMB) or in acceptable forms of collateral as specified by each clearing house. CCMS (Common Collateral Management System) manages collateral holdings and obligations across all three clearing houses.
+
+[Source: HKEX Clearing FAQs -- Derivatives; HKSCC Operational Procedures]
+
+### 3.3 Default Waterfall
+
+#### HKSCC Default Waterfall (Securities)
+
+Upon declaration of a Clearing Participant as defaulter, HKSCC applies the following resources sequentially, per Rule 2507 of the General Rules of HKSCC:
+
+| Layer | Resource | Description |
+|-------|----------|-------------|
+| 1 | **Defaulting CP's margin, Marks, and collateral** | All margin deposits, Marks (mark-to-market payments), collateral, admission fees, Mainland Settlement Deposit, and Mainland Security Deposit held by HKSCC |
+| 2 | **Defaulting CP's Guarantee Fund contributions** | Both Basic Contribution and Dynamic Contribution of the defaulter |
+| 3 | **HKSCC's own contribution (Skin-in-the-Game)** | Clearing house resources appropriated to the Guarantee Fund, equivalent to 10% of the Guarantee Fund size |
+| 4 | **Non-defaulting CPs' Dynamic Contributions** | Pro-rata allocation of Dynamic Contributions from non-defaulting Relevant Clearing Participants |
+| 5 | **Non-defaulting CPs' Basic Contributions** | Pro-rata allocation of Basic Contributions from non-defaulting Relevant Clearing Participants |
+
+**Guarantee Fund Threshold:** HKD 7.3 billion (effective June 13, 2022). When daily risk exposure exceeds 90% of the aggregate Guarantee Fund plus available credits, additional contributions are required from participants.
+
+**Guarantee Fund Risk Collateral (GFRC):** When the Guarantee Fund threshold is breached, HKSCC collects GFRC in the amount of Expected Uncollateralised Loss (EUL) of the CP group in excess of 50% of the Guarantee Fund threshold. Each participant receives a HKD 1 million Dynamic Contribution Credit.
+
+**Minimum aggregate Basic Contributions:** HKD 100 million.
+
+**Key protection:** Customer segregated margin deposits held by the clearing house for one participant cannot be used to cover either a house or customer default of another participant.
+
+[Source: HKEX -- HKSCC Default Fund page; HKEX -- HKSCC Default Management page; HKSCC General Rules Chapter 25]
+
+#### HKCC Default Waterfall (Derivatives)
+
+| Layer | Resource | Description |
+|-------|----------|-------------|
+| 1 | **Defaulting CP's margin deposits** | All margin collateral of the defaulting participant |
+| 2 | **Defaulting CP's Participant Deposit** | Basic deposit to the Reserve Fund |
+| 3 | **Defaulting CP's Additional Deposit (HPAD)** | Risk-based additional deposit to the Reserve Fund |
+| 4 | **HKCC's own contribution (Skin-in-the-Game)** | Clearing house resources equal to 10% of the Reserve Fund size |
+| 5 | **Non-defaulting CPs' Reserve Fund contributions** | Applied "in layers" from non-defaulting participants' deposits and additional deposits |
+
+**Reserve Fund Threshold:** HKD 7.3 billion (effective June 1, 2018).
+
+**Reserve Fund composition:** Participant Deposits (HK$1.5M per CP, HK$7.5M per GCP) + HKCC Participant Additional Deposits (HPAD) + interest income + HKCC's own resources (10% of fund size).
+
+**HPAD formula:** Level of HPAD = (Projected Loss from stress testing -- Defaulting CP Groups' Margin and collateral) x 1.15 -- Basic Elements of Reserve Fund -- Clearing House contributions. As of August 2024, total HPAD requirement was HK$2,863 million.
+
+**Stress test assumptions for fund sizing:**
+- Price movements: +/-20% for key markets; equity products range -56% to +96%
+- Volatility assumptions: -24% to +47% for options; equity products range -35% to +91%
+- Counterparty default: largest plus second-largest CP group simultaneous default (Cover 2 standard)
+
+[Source: HKEX -- HKCC Default Fund page; HKCC Reserve Fund Chapter 4; HKCC Rules and Procedures]
+
+#### SEOCH Default Waterfall (Stock Options)
+
+The SEOCH default waterfall follows a structure parallel to HKCC:
+
+| Layer | Resource |
+|-------|----------|
+| 1 | Defaulting CP's margin deposits |
+| 2 | Defaulting CP's Initial Contribution to Reserve Fund |
+| 3 | Defaulting CP's Variable Contributions |
+| 4 | SEOCH's own contribution (10% of Reserve Fund size) |
+| 5 | Non-defaulting CPs' Reserve Fund contributions (in layers) |
+
+**Reserve Fund Threshold:** HKD 3.6 billion (effective April 1, 2026).
+
+**Variable Contribution formula:** Same as HKCC -- (Projected Loss -- Defaulting CP Groups' Margin) x 1.15 -- Basic Elements -- Clearing House contributions.
+
+**Stress test assumptions for fund sizing:**
+- Market movement: -48% to +96%
+- Implied volatility: -90% to +175%
+- Counterparty default: largest plus second-largest CP group simultaneous default (Cover 2 standard)
+
+**Key distinction:** Participant contribution shares are based on that participant's share of the average total margin requirement and net premium paid over the most recent 60 business days.
+
+[Source: HKEX -- SEOCH Default Fund page; SEOCH Rules]
+
+### 3.4 Default Fund / Guarantee Fund Summary
+
+| Fund | Entity | Threshold | HKEX Contribution | Coverage Standard |
+|------|--------|-----------|-------------------|-------------------|
+| **Guarantee Fund** | HKSCC | HKD 7.3 billion | 10% of fund size | Cover 2 (simultaneous default of two largest CP groups) |
+| **Reserve Fund** | HKCC | HKD 7.3 billion | 10% of fund size | Cover 2 |
+| **Reserve Fund** | SEOCH | HKD 3.6 billion | 10% of fund size | Cover 2 |
+
+All three funds are reviewed and recalculated monthly (on the first trading/business day of each month). Contributions are adjusted when existing amounts fall below required levels or when daily risk exposure exceeds 90% of total fund resources plus available credits.
+
+**Comparison with KRX:** KRX as CCP maintains a Joint Compensation Fund for derivatives clearing, with contributions from members and KRX's own capital. Both HKEX and KRX follow the Cover 2 standard. KRX's fund structure is somewhat simpler as it operates as a single integrated CCP across equity and derivatives markets, whereas HKEX maintains three separate clearing houses with distinct funds.
+
+[Source: HKEX Default Fund pages for HKSCC, HKCC, SEOCH]
+
+### 3.5 Stress Testing & Back-testing
+
+| Practice | HKSCC | HKCC / SEOCH |
+|----------|-------|--------------|
+| **Stress Testing** | Daily stress testing of participant portfolios against historical and hypothetical extreme scenarios | Daily stress testing; scenarios include price movements of -56% to +96% (equities), volatility shifts of -90% to +175% |
+| **Coverage Standard** | Cover 2 -- fund sized to withstand simultaneous default of two largest CP groups | Cover 2 |
+| **Back-testing** | Regular back-testing of margin model adequacy against actual market movements; results reported via PQD | Regular back-testing of PRiME margin adequacy |
+| **Reverse Stress Testing** | Conducted to identify conditions that could exhaust Guarantee Fund resources [unverified -- inferred from PFMI compliance] | Conducted per PFMI requirements [unverified] |
+| **Independent Validation** | SFC conducts periodic assessments of risk management frameworks | SFC oversight and periodic assessment |
+
+[Source: HKEX Default Fund pages; HKSCC/HKCC PFMI Disclosures; HKEX risk management documentation]
+
+### 3.6 Recovery & Resolution
+
+| Aspect | Details |
+|--------|---------|
+| **Recovery Tools** | Assessment powers on non-defaulting participants (additional Guarantee Fund/Reserve Fund contributions); close-out and buy-in procedures for defaulters; loss allocation via waterfall structure |
+| **Resolution Authority** | SFC, as the primary regulator of RCHs under Part III of the Securities and Futures Ordinance |
+| **Legal Basis** | SFO Division 3 of Part III confers finality on "market contracts" with an RCH and provides statutory protections against insolvency proceedings affecting settlement finality |
+| **Recovery Plan** | HKEX clearing houses maintain recovery plans in line with PFMI and FSB guidance on FMI recovery [unverified -- specific plan details not publicly disclosed] |
+| **Customer Segregation** | Customer margin deposits are segregated; deposits held for one participant cannot be used to cover defaults of another participant |
+| **Position Transfer (Porting)** | HKCC/SEOCH rules provide for transfer of customer positions from a defaulting participant to a surviving participant, subject to operational feasibility |
+
+[Source: SFO Part III; HKEX Default Management pages; FSB Continuity of Access to FMIs -- HKSCC Response 2023]
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle
+
+| Market | Settlement Cycle | Details |
+|--------|-----------------|---------|
+| **Securities (SEHK)** | **T+2** | Standard settlement for all SEHK Exchange Trades via CNS. Both securities and money settlement finalised on T+2. |
+| **Stock Connect -- Northbound** | **T+0 (securities) / T+1 (money)** | A-share trades settle with securities on trade day and cash on T+1, reflecting mainland China settlement conventions |
+| **Stock Connect -- Southbound** | **T+2** | Follows Hong Kong T+2 settlement cycle |
+| **Derivatives (HKCC)** | **Daily** | Variation margin (mark-to-market) settled daily; physical delivery contracts per contract specifications |
+| **Stock Options (SEOCH)** | **T+1 (premium); T+2 (exercise)** | Premium settlement on T+1; exercise and assignment settled via CCASS on T+2 |
+
+**T+1 Settlement Transition:** In July 2025, HKEX published a discussion paper on accelerating settlement from T+2 to T+1 for the cash market, with a feedback deadline of September 1, 2025. HKEX has confirmed its post-trade systems will be technically ready to support T+1 by end of 2025. The proposal covers all listed products (equities, ETFs, structured products, REITs, bonds) but excludes Northbound Stock Connect trades. No firm implementation date has been announced; this will be a multi-year journey with phased consultation and industry-wide testing.
+
+**Comparison with KRX:** KRX operates on T+2 for equities (aligned with Hong Kong), T+1 for government bonds, and T+0 for general bonds. Both exchanges are studying T+1 settlement in the context of global trends (US, India already on T+1; Europe/UK targeting 2027).
+
+[Source: HKEX Settlement page; HKEX Accelerated Settlement Discussion Paper (July 2025); Broadridge -- Hong Kong T+1 Settlement Discussion]
+
+### 4.2 DVP Model
+
+**HKSCC (Securities):**
+
+HKSCC operates a DVP settlement model within CCASS:
+
+- CNS settlement is always effected on a **DVP basis**
+- Securities are allocated and put "on hold" during the settlement day until good and irrevocable payment is made
+- Cash settlement is effected through electronic payment instructions sent by CCASS to participants' designated banks via the **Hong Kong Interbank Clearing Limited (HKICL)** using the **CHATS** (Clearing House Automated Transfer System) real-time gross settlement system
+- Upon receipt of good and irrevocable intra-day payments from long CPs (or ChinaClear), HKSCC releases the corresponding allocated shares, achieving **intra-day finality**
+- Short CPs receive good and irrevocable payments in the end-of-day money settlement process
+
+The model functions as a **DVP Model 2** variant -- securities settlement on a net basis with money settlement through RTGS (CHATS).
+
+**HKCC / SEOCH (Derivatives):** As cash-settled derivatives, settlement is effected through daily variation margin payments. Physical delivery contracts (where applicable) settle through the relevant depository systems.
+
+[Source: HKSCC Operational Procedures Section 13; BIS Red Book -- Hong Kong; Clearstream Market Profile -- Hong Kong]
+
+### 4.3 Settlement Finality
+
+| Aspect | HKSCC | HKCC / SEOCH |
+|--------|-------|--------------|
+| **Legal Basis** | SFO Part III, Division 3 confers statutory finality on "market contracts" with an RCH | Same legal basis |
+| **Securities Finality** | Achieved intra-day upon release of allocated shares after good and irrevocable payment received | N/A (derivatives) |
+| **Money Finality (standard)** | Same-day value but not final until 09:30 on SD+1 (no returned unpaid items) or 10:00 on SD+1 (returned items) | Daily settlement finality upon completion of settlement cycle |
+| **Intra-day Finality** | Achievable for long CPs upon receipt of good and irrevocable payments via CHATS | N/A |
+| **Protection** | SFO protections ensure settlement finality is not disturbed by insolvency proceedings against a participant | Same |
+
+[Source: Lexology -- T+2 finality arrangement for CCASS; BIS Red Book -- Hong Kong; SFO Part III]
+
+### 4.4 CSD / Settlement Infrastructure -- CCASS
+
+**CCASS (Central Clearing and Settlement System)** is the core infrastructure operated by HKSCC, functioning as CSD, SSS, and clearing system:
+
+| Component | Description |
+|-----------|-------------|
+| **Depository** | Immobilised depository for all eligible securities; securities held in fungible book-entry form in HKSCC Nominees Limited (the nominee holding company) |
+| **Clearing** | Continuous Net Settlement (CNS) engine; automated matching and netting of Exchange Trades |
+| **Settlement** | Automated securities and money settlement; settlement instructions for non-exchange transactions |
+| **Connectivity** | Accessible via CCASS terminals, CCASS/IP (internet-based), and host-to-host interfaces via SDNet/2 |
+| **Eligible Securities** | All securities listed on SEHK (equities, ETFs, warrants, debt securities, structured products); China Connect Securities |
+| **Operational Hours** | Settlement processing on business days; provisional clearing statements ~18:00-20:00 on T; final clearing statements after 14:00 on T+1 |
+
+**CCASS/3** is the current generation of the system, upgraded from earlier versions to support higher capacity and additional functionality including Stock Connect processing.
+
+[Source: HKEX CCASS FAQ; HKEX Settlement and Depository pages; HKSCC Operational Procedures Section 9]
+
+### 4.5 CSD Linkages -- Stock Connect & Bond Connect
+
+#### Stock Connect (Shanghai-Hong Kong & Shenzhen-Hong Kong)
+
+| Aspect | Northbound (HK investors buying A-shares) | Southbound (Mainland investors buying HK stocks) |
+|--------|------------------------------------------|--------------------------------------------------|
+| **Clearing Link** | HKSCC is a participant of ChinaClear; settles trades directly with ChinaClear on behalf of its CPs | ChinaClear is a Clearing Agency Participant of HKSCC; settles southbound trades with HKSCC in Hong Kong |
+| **Securities Holding** | HKSCC maintains an omnibus stock account with ChinaClear (CSDC), holding A-shares on behalf of CCASS participants | ChinaClear maintains an account with HKSCC in CCASS, holding HK securities on behalf of mainland investors |
+| **Settlement Cycle** | T+0 securities / T+1 money (following mainland convention) | T+2 (following Hong Kong convention) |
+| **Currency** | RMB settlement | HKD settlement |
+| **Daily Quota** | Northbound: RMB 52 billion (net buy); Southbound: RMB 42 billion (net buy) [as of 2024] |
+| **Risk Management** | HKSCC pre-validates northbound orders; margin and collateral required; Mainland Settlement Deposit and Mainland Security Deposit collected from CPs |
+
+#### Bond Connect (Northbound)
+
+| Aspect | Details |
+|--------|---------|
+| **Launch** | July 3, 2017 (Northbound); Southbound launched October 2024 |
+| **Clearing** | Trades are cleared through Shanghai Clearing House (SHCH) or ChinaClear; investors access via HKEX's Bond Connect Company Limited |
+| **Settlement** | DVP settlement in mainland RTGS systems |
+| **Nominee Holding** | Central Moneymarkets Unit (CMU) of HKMA acts as nominee holder |
+
+#### Swap Connect (Northbound)
+
+| Aspect | Details |
+|--------|---------|
+| **Launch** | May 15, 2023 |
+| **Clearing** | OTC Clear (HKEX subsidiary) and Shanghai Clearing House (SHCH) cooperate; trades executed on CFETS and cleared through SHCH with OTC Clear providing offshore clearing services |
+| **Products** | Interest rate swaps referencing FR007, LPR 1Y, SHIBOR 3M; tenor up to 30 years (extended 2025) |
+| **Collateral** | China Government Bonds and Policy Bank Bonds held through Bond Connect accepted as collateral (from March 2025) |
+| **Participants** | 79 international institutions from 15 markets; cumulative notional ~RMB 6.5 trillion (as of April 2025) |
+
+[Source: HKEX Stock Connect Information Book (September 2024); HKEX Bond Connect page; HKEX News Releases -- Swap Connect 2025; SSE Stock Connect Settlement page]
+
+### 4.6 Securities Lending & Borrowing
+
+HKSCC operates a securities borrowing and lending (SBL) facility within CCASS:
+
+| Aspect | Details |
+|--------|---------|
+| **Facility** | CCASS supports SBL transactions between Stock Lender Participants and other CCASS Participants |
+| **Stock Connect SBL** | SBL of China Connect Securities is permitted for short selling purposes; restricted to securities eligible for both buy and sell orders |
+| **Quantity Limits** | For Stock Connect: 1% daily cap and 5% rolling 10-day cap (of total shares held in CCASS by all investors) |
+| **Eligible Lenders** | Exchange Participants and Qualifying Institutions may lend to China Connect Exchange Participants (CCEPs) and Trade-through EPs |
+| **Pre-borrowing** | Borrowed stocks must be held in the selling CCEP's CCASS account or investor's Special Segregated Account (SPSA) before trading commences |
+
+[Source: HKEX Stock Borrowing and Lending Arrangement page; HKEX Stock Connect FAQ (March 2026)]
+
+---
+
+## 5. Technology & Infrastructure
+
+### 5.1 Interface Protocols
+
+| System | Entity | Description | Access Methods |
+|--------|--------|-------------|----------------|
+| **CCASS** | HKSCC | Central Clearing and Settlement System for securities | CCASS Terminal, CCASS/IP (internet), host-to-host via SDNet/2 |
+| **DCASS** | HKCC & SEOCH | Derivatives Clearing and Settlement System; fully electronic, automated; covers clearing, settlement, margining (PRiME engine) | DCASS Online (browser-based), OMnet API (OAPI for host-to-host STP) |
+| **CCMS** | All three | Common Collateral Management System; manages collateral holdings and obligations across cash and derivatives markets | CCMS Terminal (browser-based), integrated with DCASS |
+| **SDNet/2** | All three | Securities and Derivatives Network -- integrated optical Ethernet network infrastructure for trading, clearing, settlement, and market data | Multiple accredited vendors (HKT, HKBNES); designed for high resilience, higher bandwidth, lower latency |
+
+**OAPI (OMnet Application Programme Interface):** Enables straight-through processing for high-volume derivatives participants via direct host-to-host connections. Certification testing required (HK$2,000 per test); production connection fee HK$2,600/month.
+
+[Source: HKEX Infrastructure page -- Listed Derivatives; HKEX SDNet/2 page; HKEX CCMS Terminal User Guide]
+
+### 5.2 Resilience
+
+| Aspect | Details |
+|--------|---------|
+| **Primary Data Centre** | Tseung Kwan O Data Centre (shared with HKEX trading systems) |
+| **Backup / DR** | Backup Centre available for DCASS participants to continue activities upon primary centre failure; participants must reconnect via secondary connections or switch OAPI connections to backup gateways |
+| **SDNet/2 Design** | Multiple carrier support for high resilience; 24-hour technical support from accredited vendors |
+| **Business Continuity** | All DCASS Online functions (input and enquiry) available at the Backup Centre |
+| **Cyber Security** | HKEX maintains cybersecurity measures in line with SFC guidelines and international standards [specific details not publicly disclosed] |
+
+[Source: HKEX Infrastructure page; HKEX DCASS documentation]
+
+---
+
+## 6. Regulatory Framework
+
+### 6.1 Primary Regulation
+
+| Aspect | Details |
+|--------|---------|
+| **Primary Regulator** | Securities and Futures Commission (SFC) of Hong Kong |
+| **Primary Legislation** | Securities and Futures Ordinance (Cap. 571) (SFO), enacted 2003 |
+| **Key Provisions** | Part III, Division 3 of SFO sets out framework for Recognised Clearing Houses (RCHs): recognition, duties, statutory protections, settlement finality |
+| **RCH Status** | HKSCC, HKCC, SEOCH, and OTC Clear are all recognised clearing houses under SFO |
+| **Exchange Controller** | HKEX is the sole Recognised Exchange Controller under SFO Section 59(1), and is the sole shareholder of all three clearing houses |
+| **PFMI Compliance** | SFC requires all RCHs to observe and apply the CPMI-IOSCO Principles for Financial Market Infrastructures (PFMI) |
+| **Oversight Coordination** | SFC coordinates with HKMA (Hong Kong Monetary Authority), which oversees the payment and settlement infrastructure including CHATS; HKMA designated as the resolution authority for systemically important FMIs under the Financial Institutions (Resolution) Ordinance (FIRO) [unverified] |
+
+### 6.2 Self-Regulatory Functions
+
+HKEX and its clearing subsidiaries exercise certain self-regulatory functions including:
+- Participant admission and ongoing compliance monitoring
+- Rulebook enforcement and disciplinary proceedings
+- Market surveillance (in coordination with SFC)
+- Financial resource monitoring of participants
+
+The SFC retains ultimate supervisory authority and can direct HKEX entities to take specific actions in the public interest.
+
+[Source: SFC website; SFO Cap. 571; HKEX Introduction to Regulatory Framework page]
+
+---
+
+## 7. Interoperability
+
+### 7.1 Stock Connect (Shanghai-Hong Kong & Shenzhen-Hong Kong)
+
+See Section 4.5 for detailed clearing and settlement arrangements. Stock Connect represents the most significant cross-border interoperability arrangement, linking HKSCC with ChinaClear (CSDC) for mutual market access between Hong Kong and mainland China equity markets.
+
+### 7.2 Bond Connect
+
+Northbound Bond Connect (since July 2017) and Southbound Bond Connect (since October 2024) link international investors with China's interbank bond market. Settlement and custody involve CMU (HKMA's Central Moneymarkets Unit), ChinaClear, and Shanghai Clearing House.
+
+### 7.3 Swap Connect
+
+Launched May 2023, linking OTC Clear and Shanghai Clearing House for interest rate swap clearing. See Section 4.5 for details.
+
+### 7.4 ETF Connect
+
+Launched July 2022, extending Stock Connect to include eligible ETFs traded on both SEHK and mainland exchanges.
+
+### 7.5 Other CSD Linkages
+
+HKSCC maintains Clearing Agency Participant arrangements with external clearing organisations to facilitate cross-border settlement. Clearstream and Euroclear maintain access to the Hong Kong market through their relationships with local custodians and CMU.
+
+**Comparison with KRX:** KRX/KSD does not have an equivalent to Stock Connect. Cross-border access to the Korean market is primarily through the QFII-like Foreign Investor Registration system. KSD maintains CSD linkages with other Asian CSDs (e.g., through ASEAN CSD linkages) and Euroclear/Clearstream, but these are more conventional custodian/depository relationships rather than the direct CCP-CCP clearing links that characterise Stock Connect.
+
+[Source: HKEX Stock Connect pages; HKEX Bond Connect pages; Clearstream Market Infrastructure -- Hong Kong]
+
+---
+
+## 8. Fees
+
+### 8.1 HKSCC -- Securities Clearing & Settlement Fees
+
+| Fee Type | Rate | Effective Date |
+|----------|------|----------------|
+| **Stock Settlement Fee (Exchange Trades)** | 0.0042% (0.42 bps) per side of gross value | June 30, 2025 |
+| **Stock Settlement Fee (ETP market making)** | 0.0020% (0.20 bps) per side | June 30, 2025 |
+| **Stock Settlement Fee (Crossed trades)** | 0.0021% per side | June 30, 2025 |
+| **Stock Settlement Fee (SI transactions)** | 0.002% of gross value; min HK$2, max HK$100 per side | Current |
+| **Stock Clearing Fee (Exchange Trades)** | Nil | Current |
+| **Stock Clearing Fee (SI/ISI/TI/STI)** | HK$1 per input | Current |
+| **Money Settlement Fee** | HK$0.50 per instruction (HKD, CNY, or USD items) | Current |
+| **Cash Prepayment** | HK$100 per instruction | Current |
+| **Stock Custody Fee** | HK$0.012 per board lot per month; max HK$100,000/month | Current |
+| **Stock Withdrawal Fee** | HK$3.50 per board lot (registered eligible securities) | Current |
+| **Corporate Actions Service Fee** | HK$0.80 per board lot; max HK$10,000 per instruction | Current |
+| **Dividend Collection Fee** | 0.12% of aggregate cash amount; max HK$10,000 | Current |
+| **New Issue Admission Fee** | HK$50,000 to HK$600,000 depending on fundraising size | Current |
+
+**Note:** The June 2025 fee restructuring removed the previous minimum (HK$2) and maximum (HK$100) stock settlement fee per Exchange Trade, replacing it with a flat ad valorem rate of 0.0042%. This was designed to be cost-neutral to the market overall while creating a more proportional fee structure across all trade sizes.
+
+[Source: HKEX Operational Fees page -- Securities; HKEX Market Communication -- Stock Settlement Fee Restructure (February 2025)]
+
+### 8.2 HKCC / SEOCH -- Derivatives Clearing Fees
+
+Derivatives clearing and settlement fees are charged per contract and vary by product. HKEX publishes detailed fee schedules on its fees overview page. Key fee types include:
+- **Trading fee** (charged by exchange)
+- **Clearing and settlement fee** (charged by clearing house)
+- **SFC levy and HKEX trading tariff** (regulatory charges)
+
+[Source: HKEX Fees Overview page]
+
+### 8.3 Stock Connect Fees (Clearing & Settlement)
+
+Northbound and Southbound Stock Connect clearing fees are published separately by HKEX. Key fees include portfolio fees, settlement instruction fees, and Stock Connect-specific charges.
+
+[Source: HKEX Fees -- Securities (Stock Connect) -- Clearing and Settlement]
+
+---
+
+## 9. Recent Developments
+
+### 2025-2026 Key Developments
+
+| Date | Development |
+|------|-------------|
+| **March 2025** | OTC Clear begins accepting China Government Bonds and Policy Bank Bonds (held via Bond Connect) as collateral for all derivatives -- a major enhancement for capital efficiency |
+| **May 2025** | Swap Connect enhancements: maximum tenor extended to 30 years; LPR 1Y added as floating reference rate option |
+| **June 2025** | HKSCC stock settlement fee restructured to flat 0.0042% ad valorem rate, removing min/max caps |
+| **July 2025** | HKEX publishes discussion paper on accelerating cash market settlement to T+1; post-trade systems confirmed technically ready by end-2025; consultation period through September 2025 |
+| **September 2025** | 1-year Loan Prime Rate (LPR 1Y) added to Swap Connect reference rates |
+| **October 2025** | New interest rate arrangement for cash margin collateral across HKCC, HKSCC, and SEOCH: overnight reference rate less handling fee (effective October 2) |
+| **October 2025** | HKSCC Tier N Margin Group 3 rate adjusted to 55% |
+| **April 2026** | SEOCH Reserve Fund threshold increased to HKD 3.6 billion |
+
+### Ongoing Initiatives
+
+- **T+1 Settlement:** Multi-year project following July 2025 consultation; HKEX exploring phased implementation aligned with global peers (Europe/UK targeting 2027)
+- **Orion Derivatives Platform (ODP):** HKEX announced in-house development of a new derivatives trading platform, targeted for 2028 launch; will eventually replace HKATS and may bring clearing system enhancements
+- **Stock Connect expansion:** Continued broadening of eligible securities, ETFs, and enhancements to investor access (e.g., block trading, holiday trading arrangements)
+- **NGRM (Next Generation Risk Management):** HKSCC platform for enhanced risk management, including refined margin methodology and improved Guarantee Fund framework
+
+[Source: HKEX News Releases 2025; HKEX Market Communications; HKEX 2025 Year in Review]
+
+---
+
+## Sources
+
+### Official HKEX Sources
+- [HKEX Principal Subsidiaries](https://www.hkexgroup.com/About-HKEX/Organisation/Principal-Subsidiaries)
+- [HKEX Securities Clearing Overview](https://www.hkex.com.hk/Services/Clearing/Securities?sc_lang=en)
+- [HKEX Listed Derivatives Clearing Overview](https://www.hkex.com.hk/Services/Clearing/Listed-Derivatives/Overview?sc_lang=en)
+- [HKSCC Default Fund](https://www.hkex.com.hk/Services/Clearing/Securities/Risk-Management/Default-Fund?sc_lang=en)
+- [HKSCC Default Management](https://www.hkex.com.hk/Services/Clearing/Securities/Risk-Management/Default-Management?sc_lang=en)
+- [HKCC/SEOCH Default Fund](https://www.hkex.com.hk/Services/Clearing/Listed-Derivatives/Risk-Management/Default-Fund?sc_lang=en)
+- [HKCC/SEOCH Safeguards](https://www.hkex.com.hk/Services/Clearing/Listed-Derivatives/Risk-Management/The-Safeguards?sc_lang=en)
+- [HKEX Margin -- Listed Derivatives](https://www.hkex.com.hk/Services/Clearing/Listed-Derivatives/Risk-Management/Margin?sc_lang=en)
+- [HKEX PRiME Margining Guide v1.5 (October 2023)](https://www.hkex.com.hk/-/media/HKEX-Market/Services/Clearing/Listed-Derivatives/Risk-Management/Margin/Client-Margining-Methodology/PRiME-Margining-Guide.pdf)
+- [HKSCC Margin -- Securities](https://www.hkex.com.hk/Services/Clearing/Securities/Risk-Management/Margin?sc_lang=en)
+- [Becoming a HKSCC Participant](https://www.hkex.com.hk/Services/Clearing/Securities/Getting-Started/Becoming-a-HKSCC-Participant?sc_lang=en)
+- [Becoming a HKCC Participant](https://www.hkex.com.hk/Services/Clearing/Listed-Derivatives/Getting-Started/Becoming-a-HKCC-Participant?sc_lang=en)
+- [HKEX Infrastructure -- Listed Derivatives](https://www.hkex.com.hk/Services/Clearing/Listed-Derivatives/Infrastructure?sc_lang=en)
+- [HKEX SDNet/2](https://www.hkex.com.hk/Services/Connectivity/SDNet_2?sc_lang=en)
+- [HKEX Operational Fees -- Securities](https://www.hkex.com.hk/Services/Rules-and-Forms-and-Fees/Fees/Securities-(Hong-Kong)/Clearing-and-Settlement/Operational?sc_lang=en)
+- [HKEX Fees Overview](https://www.hkex.com.hk/Services/Rules-and-Forms-and-Fees/Fees/Overview?sc_lang=en)
+- [HKEX Stock Connect Information Book (September 2024)](https://www.hkex.com.hk/-/media/HKEX-Market/Mutual-Market/Stock-Connect/Getting-Started/Information-Booklet-and-FAQ/Information-Book-for-Investors/Investor_Book_En.pdf)
+- [HKEX Stock Connect FAQ (March 2026)](https://www.hkex.com.hk/-/media/HKEX-Market/Mutual-Market/Stock-Connect/Getting-Started/Information-Booklet-and-FAQ/FAQ/FAQ_En.pdf)
+- [HKEX Accelerated Settlement Discussion Paper (July 2025)](https://www.hkex.com.hk/-/media/HKEX-Market/News/News-Release/2025/250716news/HKEX-Accelerated-Settlement-Paper-2025-v10-EN-(cover).pdf)
+- [HKEX News -- Swap Connect Enhancements (May 2025)](https://www.hkex.com.hk/News/News-Release/2025/250515news?sc_lang=en)
+- [HKEX News -- Stock Settlement Fee Restructure (February 2025)](https://www.hkex.com.hk/News/Market-Communications/2025/250221news?sc_lang=en)
+
+### PFMI and PQD Disclosures
+- [HKSCC PFMI Disclosure (2024)](https://www.hkex.com.hk/-/media/HKEX-Market/Services/Clearing/Securities/PFMI/2024-HKSCC-PFMI-Disclosure.pdf)
+- [HKSCC PFMI Disclosure (February 2019)](https://www.hkex.com.hk/-/media/HKEX-Market/Services/Clearing/Securities/PFMI/HKSCC-PFMI-Disclosure_Feb2019.pdf)
+- [HKCC PFMI Disclosure](https://www.hkex.com.hk/-/media/HKEX-Market/Services/Clearing/Listed-Derivatives/PFMI/HKCC_PFMI_Disclosure.pdf)
+- [HKSCC CCP Disclosures page](https://www.hkex.com.hk/Services/Clearing/Securities/CCP-Disclosures?sc_lang=en)
+
+### Rules and Procedures
+- [HKSCC General Rules Chapter 25 -- Guarantee Fund](https://www.hkex.com.hk/-/media/HKEX-Market/Services/Rules-and-Forms-and-Fees/Rules/HKSCC/General-Rules-of-HKSCC/R25.pdf)
+- [HKSCC Operational Procedures](https://www.hkex.com.hk/-/media/HKEX-Market/Services/Rules-and-Forms-and-Fees/Rules/HKSCC/Whole_HKSCCOP_e.pdf)
+- [HKCC Rules and Procedures](https://www.hkex.com.hk/Services/Rules-and-Forms-and-Fees/Rules/HKCC?sc_lang=en)
+- [HKCC Reserve Fund Chapter 4](https://www.hkex.com.hk/-/media/HKEX-Market/Services/Clearing/Listed-Derivatives/Risk-Management/Default-Fund/hkats-4_eng.pdf)
+
+### Regulatory and External Sources
+- [Securities and Futures Ordinance (Cap. 571)](https://www.elegislation.gov.hk/hk/cap571)
+- [SFC -- Securities and Futures Commission of Hong Kong](https://www.sfc.hk/en/)
+- [BIS CPMI Red Book -- Payment, Clearing and Settlement Systems in Hong Kong](https://www.bis.org/cpmi/publ/d105_hk.pdf)
+- [Clearstream Market Infrastructure -- Hong Kong](https://www.clearstream.com/clearstream-en/res-library/market-coverage/market-infrastructure-hong-kong-1281142)
+- [Lexology -- T+2 Finality for CCASS Money Settlement](https://www.lexology.com/library/detail.aspx?g=a4a2e950-07c8-4031-9782-0d1a4f474353)
+- [Broadridge -- Hong Kong T+1 Settlement Discussion](https://www.broadridge.com/insight-pages/hong-kongs-tplus1-settlement-discussion)
+- [Regulation Asia -- HKCC Reserve Fund Contributions Set to Increase](https://www.regulationasia.com/hkcc-reserve-fund-contributions-set-to-increase/)
+- [HKCC Participant Additional Deposit -- GCC Capital (August 2024)](https://gcc-consulting.co/2024/08/02/hkcc-participant-additional-deposit/)

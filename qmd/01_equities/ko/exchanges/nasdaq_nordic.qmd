@@ -1,0 +1,357 @@
+---
+title: "Nasdaq Nordic (OMX 북유럽 거래소)"
+subtitle: "주식시장 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 업데이트:** 2026-04-06
+> **조사 등급:** Tier 3
+> **도메인:** 주식
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 정식 명칭 | Nasdaq Stockholm (Stockholmsborsen), Nasdaq Helsinki (Helsingin Porssi), Nasdaq Copenhagen (Kobenhavns Fondsbors), Nasdaq Iceland (Kaupholl Islands), Nasdaq Tallinn, Nasdaq Riga, Nasdaq Vilnius |
+| 통칭 | Nasdaq Nordic (북유럽); Nasdaq Baltic (발트해) |
+| 웹사이트 | https://www.nasdaqomxnordic.com / https://www.nasdaqbaltic.com |
+| 설립 연도 | 스톡홀름: 1863년; 헬싱키: 1912년; 코펜하겐: 1808년; 아이슬란드: 1985년; OMX 설립: 2003년; Nasdaq의 OMX 인수: 2008년 |
+| 소재지 | 스웨덴(스톡홀름), 핀란드(헬싱키), 덴마크(코펜하겐), 아이슬란드(레이캬비크), 에스토니아(탈린), 라트비아(리가), 리투아니아(빌뉴스) |
+| 소유 구조 | Nasdaq, Inc.의 완전 자회사 (Nasdaq 미국에 상장, 종목코드: NDAQ) |
+| 모회사 / 그룹 | Nasdaq, Inc. |
+| 감독 기관 | **스웨덴:** Finansinspektionen (FI); **핀란드:** Finanssivalvonta (FIN-FSA); **덴마크:** Finanstilsynet; **아이슬란드:** 아이슬란드 중앙은행 (FME); **에스토니아:** Finantsinspektsioon (EFSA); **라트비아:** FCMC; **리투아니아:** Lietuvos Bankas |
+| 합산 시가총액 | 2025년 말 기준 약 2,003억 유로 (북유럽 + 발트해 합산) |
+| 총 상장기업 수 | 2025년 말 기준 약 1,119개사: 메인마켓 약 675개사 (북유럽 + 발트해), First North Growth Market 약 444개사 |
+| 일평균 거래대금 | 32.38억 유로 (2025년 연간 주식), 2024년 29.71억 유로 대비 9.0% 증가 |
+| 주요 지수 | OMXS30(스톡홀름 30), OMXH25(헬싱키 25), OMXC25(코펜하겐 25), OMXN40(북유럽 40), OMXN120(북유럽 120), OMX All-Share 지수 |
+
+### 주요 연혁 (Key Historical Milestones)
+- 1808년: 코펜하겐 증권거래소 설립
+- 1863년: 스톡홀름 증권거래소 설립
+- 1912년: 헬싱키 증권거래소 설립
+- 1985년: 아이슬란드 증권거래소 설립; OM AB (Optionsmaklarna) 설립
+- 1998년: OM AB, 스톡홀름 증권거래소 인수
+- 2003년: OM AB와 HEX plc(핀란드) 합병으로 **OMX AB 설립**, 스톡홀름 및 헬싱키 거래소 통합
+- 2004-2005년: OMX, 아이슬란드 및 코펜하겐 증권거래소 인수
+- 2006년: 개별 종목 리스트를 통합 북유럽 리스트로 합치는 가상 북유럽증권거래소 출범
+- 2007년: **Nasdaq, 약 37억 달러에 OMX 인수 합의**
+- 2008년: 인수 완료 (2008년 2월 27일); NASDAQ OMX Group으로 개명
+- 2010년: 발트해 거래소(탈린, 리가, 빌뉴스) NASDAQ OMX 체제에 완전 통합
+- 2015년: NASDAQ OMX Group이 Nasdaq, Inc.로 개명; OMX AB가 Nasdaq AB로 개명
+- 2018년: MiFID II 호가단위(최소가격변동폭) 체제가 전 Nasdaq Nordic 및 Baltic 시장에 시행 (2018년 1월 2일)
+- 2025년: 보조 데이터센터를 PORT에서 STOCKHOLM SOUTH (Equinix SK2)로 이전; 12억 유로 초과의 기록적 채권 상장; 방위 채권 프레임워크 출시
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 구분 (Market Segments)
+
+| 구분 | 설명 | 상장 요건 (요약) |
+|---------|-------------|-------------------------------|
+| **Large Cap** | 시가총액 10억 유로 이상 기업 | 규제시장 입회; 3년 영업실적; 25% 유동주식비율; IFRS 감사 재무제표; 현지 FSA 승인 투자설명서 |
+| **Mid Cap** | 시가총액 1.5억~10억 유로 기업 | Large Cap과 동일; 시가총액 기준에 의한 세분화 |
+| **Small Cap** | 시가총액 1.5억 유로 미만 기업 | Large Cap과 동일; 시가총액 기준에 의한 세분화 |
+| **First North Growth Market** | 소형/성장기업을 위한 MTF; MiFID II 하 SME 성장시장으로 인가 | Certified Adviser 지정 필수; 메인마켓보다 완화된 요건; 최소 시가총액 없음; 간소화된 투자설명서 규정 |
+| **First North Premier Growth Market** | 메인마켓 상장 준비 기업을 위한 First North의 상위 부문 | 표준 First North보다 높은 공시 및 회계 요건; IFRS 적합 재무제표 필수 |
+| **Nasdaq Baltic 메인마켓** | 탈린, 리가, 빌뉴스의 규제시장 | EU 지침에 맞춘 현지 상장 규정; 일반적으로 북유럽 메인마켓보다 낮은 기준 |
+| **Nasdaq Baltic First North** | 발트해 국가의 MTF 부문 | 완화된 요건; Certified Adviser 필수 |
+
+시가총액 부문 검토는 11월 평균 시가총액을 기준으로 매년 실시된다. 2026년 1월 2일 기준 35개사가 부문 변경(22개사 상위 부문, 13개사 하위 부문 이동).
+
+### 2.2 매매시간 (Trading Sessions)
+
+| 세션 | 시간 (CET) | 설명 |
+|---------|-----------|-------------|
+| 장전 / 주문접수 | ~08:00 - 09:00 | 주문 입력, 수정, 취소 가능; 매칭 미발생 |
+| 시가단일가매매(개장 경매) 호출 | 장전 기간 내 | 가격 발견을 위한 주문 집적 |
+| 시가단일가매매(개장 경매) 언크로싱 | 09:00 | 게이밍 방지를 위해 09:00:00~09:00:05 사이 랜덤 언크로싱 |
+| 접속매매(연속매매) | 09:00 - 17:25 | 주문주도형 연속 매칭; 점심시간 없음 |
+| 종가단일가매매(장마감 경매) 호출 | 17:25 - 17:30 | 종가 결정을 위한 주문 집적 [미확인 정확한 시간 -- 시장별 상이 가능] |
+| 종가단일가매매(장마감 경매) 언크로싱 | ~17:30 | 경매 언크로싱에 의한 종가 결정 |
+| 종가매매 (Trading@Closing Price) | 17:30 - 17:40 | 확정된 종가에서만 체결 가능 (코펜하겐: 17:00-17:10 CET) [미확인] |
+
+참고: 아이슬란드는 GMT(UTC+0)로 CET-1. 시장별(스톡홀름, 헬싱키, 코펜하겐, 아이슬란드, 발트해) 구체적 매매시간은 약간 상이할 수 있다.
+
+### 2.3 호가단위 (Tick Sizes)
+
+Nasdaq Nordic 및 Baltic 시장은 2018년 1월 2일부터 시행된 **MiFID II 호가단위(최소가격변동폭) 체제** (RTS 11)를 따른다.
+
+- 호가단위(최소가격변동폭)는 **가격 수준**과 **유동성 밴드** (일평균거래건수, ADNT 기준)의 매트릭스로 결정
+- 전 EU/EEA 규제시장에서 사용되는 것과 동일한 호가단위(최소가격변동폭) 표 (MiFID II 하 조화)
+
+| 가격 범위 (유로) | 저유동성 (< 10 ADNT) | 중유동성 (80-600 ADNT) | 고유동성 (>= 9000 ADNT) |
+|-------------------|---------------------------|-------------------------------|-------------------------------|
+| 0 - 0.4999 | 0.005 | 0.002 | 0.0005 |
+| 0.5 - 0.9999 | 0.01 | 0.005 | 0.001 |
+| 1 - 1.9999 | 0.02 | 0.01 | 0.002 |
+| 2 - 4.9999 | 0.05 | 0.02 | 0.005 |
+| 5 - 9.9999 | 0.1 | 0.05 | 0.01 |
+| 10 - 49.9999 | 0.2 - 0.5 | 0.1 - 0.2 | 0.02 - 0.05 |
+
+[출처: ESMA RTS 11; 대표적 일부 -- 전체 표는 13개 가격 범위 x 6개 유동성 밴드]
+
+### 2.4 매매단위 (Lot Sizes)
+- **표준 매매단위(거래단위)**: 대부분 주식에 대해 1주
+- 단주 매매 지원
+- MiFID II 대규모(LIS) 면제에 의한 대량매매 기준, 상품 유동성에 따라 상이
+
+### 2.5 시장조성자(마켓메이커) / 유동성공급자 프로그램
+- Nasdaq Nordic은 시장조성자(마켓메이커)가 지정된 스프레드 및 수량 범위 내에서 지속적 양방향 호가를 유지하는 유동성공급자 프로그램 운영
+- 등록 시장조성자(마켓메이커)는 인센티브로 매매 수수료 할인을 받을 수 있음
+- First North Growth Market은 Certified Adviser 필요 (시장조성자(마켓메이커)가 아닌 자문 역할); 일부 First North 종목에도 유동성공급자 배치
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 경매 메커니즘
+- **시가단일가매매(개장 경매)**: 장전 단계 동안 주문 집적. 09:00 CET에 체결 가능 수량을 최대화하는 시가 경매 언크로싱. 각 호가장은 조작 방지를 위해 5초 창(09:00:00-09:00:05) 내 랜덤 언크로싱
+- **종가단일가매매(장마감 경매)**: 접속매매(연속매매) 종료 시(약 17:25 CET) 종가 호출 기간 진입. 약 17:30 CET 종가 경매 언크로싱으로 공식 종가 결정
+- **정기 장중 경매**: "Auction Only" 매매 부문의 저유동성 종목에 대해 정기적 장중 경매가 접속매매(연속매매) 없이 설정 간격(예: 11:00, 13:00, 15:00 CET)으로 실시
+- **변동성 경매**: 잠재적 체결가가 Volatility Guard 기준을 위반할 때 발동. 접속매매(연속매매) 중단 후 60-180초의 경매 호출 기간 실시
+
+### 3.2 접속매매 (Continuous Trading)
+- 가격/시간 우선원칙의 **주문주도형 시장**
+- 시가 및 종가 경매 사이(약 09:00-17:25 CET) 연속 매칭 실시
+- INET 매매체결엔진(매칭엔진)이 엄격한 가격/시간 우선원칙으로 호가장에 대해 수신 주문 처리
+- 다크 주문 기능(숨김 및 중간가 주문) 이용 가능
+
+### 3.3 가격 발견
+- 주요 가격 발견은 시가 및 종가 경매를 통해 발생
+- 언크로싱 알고리즘은 체결 가능 수량 최대화 후, 잉여 최소화, 직전 가격 참조
+- Volatility Guard의 기준가는 최근 거래(동적) 및 당일 시가 경매 가격(정적)을 기반으로 동적 갱신
+- 종가매매 세션은 확정된 종가에서 추가 거래량을 허용하여 장마감 유동성 보장
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 표준 주문 유형
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| 지정가주문 | 지정 가격 이상/이하로 매수/매도; 즉시 매칭되지 않으면 호가장에 잔류 |
+| 시장가주문 | 최우선 가격으로 체결; 미매칭 잔량 취소 |
+
+### 4.2 고급 주문 유형
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| 빙산주문 | 가시적 부분(피크)만 표시; 숨겨진 예비 물량이 피크 체결 시 자동 보충 |
+| 숨김주문 | 전체 수량이 공개 호가장에서 숨겨짐; 동일 가격의 표시 주문보다 낮은 우선순위 |
+| 중간가주문 | 최우선 매수/매도 호가의 중간가에 연동; 다크북에서 체결 [미확인] |
+
+### 4.3 주문 유효기간 (Time-in-Force Options)
+| TIF | 설명 |
+|-----|-------------|
+| Day (DAY) | 당일 유효; 장마감 시 취소 |
+| Good till Cancelled (GTC) | 체결 또는 취소 시까지 유효 (거래소 최대 기간 적용) |
+| Good till Date (GTD) | 지정된 만기일까지 유효 |
+| Immediate or Cancel (IOC) | 가능한 수량 즉시 체결; 잔량 취소 |
+| Fill or Kill (FOK) | 전량 즉시 체결 또는 전체 취소 |
+| At the Open (ATO) | 시가단일가매매(개장 경매) 중에만 유효 |
+| At the Close (ATC) | 종가단일가매매(장마감 경매) 중에만 유효 |
+
+---
+
+## 5. 매매시스템 (기술) (Trading System / Technology)
+
+| 항목 | 세부사항 |
+|------|---------|
+| 시스템 명칭 | **INET Nordic** (주식, ETF, 워런트, 인증서); **Genium INET** (파생상품, 채권) |
+| 벤더 / 자체 개발 | 자체 개발 (Nasdaq Technology) |
+| 아키텍처 | 분산형, 저지연 아키텍처; 이벤트 구동형 매매체결엔진(매칭엔진) |
+| 매매체결엔진 (Matching Engine) | 엄격한 가격/시간 우선원칙의 중앙 매매체결엔진(매칭엔진); 다중 자산군 지원 |
+| 왕복 지연시간 | 평균 100마이크로초 미만 (Genium INET 백본) |
+| 주문 처리 용량 | 초당 1,000,000 메시지 이상 처리 능력 |
+| 타임스탬프 | 나노초 정밀도 (자정 UTC 이후 나노초) |
+
+### 프로토콜 버전 (2025년 기준): OUCH 5.02.6, FIX Order Entry 2.02.2, TotalView-ITCH 3.04.5
+
+### 기술 스택 (Technology Stack)
+- **프로토콜**: OUCH (네이티브 주문 입력, 최저 지연시간), FIX (업계 표준 주문 입력), ITCH (UDP 멀티캐스트 시장 데이터), GLIMPSE (스냅샷 복구), FIX Drop Copy
+- **시장 데이터**: TotalView-ITCH가 시장 참가자 속성을 포함한 전체 주문 깊이 제공; MoldUDP64 패킷 형식의 UDP/IP 멀티캐스트로 전달
+
+### 재해복구 / 업무연속성
+- **주 데이터센터**: Vasby (Upplands Vasby), 스톡홀름 북부
+- **보조 데이터센터**: STOCKHOLM SOUTH (Equinix SK2) -- 2025년 4-9월 PORT에서 이전
+- 주 및 보조 사이트의 이중 시장 데이터 피드
+- 주 사이트와 보조 사이트 간 실시간 복제
+
+---
+
+## 6. 시장 데이터 (Market Data)
+
+### 6.1 데이터 피드 프로토콜
+| 프로토콜 | 설명 | 용도 |
+|----------|-------------|----------|
+| TotalView-ITCH | 시장 참가자 속성을 포함한 전체 주문별 호가 깊이; UDP 멀티캐스트 네이티브 바이너리 프로토콜 | HFT 및 알고리즘 매매를 위한 초저지연 시장 데이터 |
+| ITCH Level 2 | 복수 가격 수준의 집계된 매수/매도 호가 | 매매 애플리케이션을 위한 표준 시장 데이터 |
+| FIX Market Data | FIX 프로토콜에 의한 시장 데이터 | 표준화된 FIX 접속 선호 회사 |
+| GLIMPSE | TCP 기반 스냅샷/복구 프로토콜 | 초기 상태 재구축 및 갭 복구 |
+
+### 6.2 데이터 수준
+- **Level 1**: 최우선 매수/매도 호가(BBO), 최근 체결가, 거래량
+- **Level 2**: 5개 가격 수준의 집계된 깊이
+- **TotalView (전체 깊이)**: 속성 포함 전체 호가장 깊이, 주문별 세분화
+- **지연 데이터**: 15분 지연 피드 이용 가능
+
+---
+
+## 7. 접속 및 접근 (Connectivity & Access)
+
+### 7.1 회원 / 참가
+- 회원은 해당 현지 금융감독기관(또는 동등한 EU/EEA 규제기관)의 인가 필요
+- 유형: 직접 회원, 원격 회원(타 EU/EEA국), 스폰서드 액세스 참가자
+
+### 7.2 접속 방법
+| 방법 | 설명 |
+|--------|-------------|
+| Direct Link | Nasdaq Nordic에 대한 전용 네트워크 접속 |
+| 인가 Extranet/VPN | 승인된 네트워크 제공업체 경유 |
+| 코로케이션(전산센터 공동입주) | Vasby 주 데이터센터 코로케이션(전산센터 공동입주) 랙에서 직접 크로스커넥트 |
+| Point-of-Presence (PoP) | 런던 및 프랑크푸르트의 Nasdaq PoP 서비스 |
+
+### 7.3 코로케이션(전산센터 공동입주) / 근접 서비스
+- **위치**: Vasby (Upplands Vasby), 스톡홀름, 스웨덴 -- 주 데이터센터
+- **서비스**: 랙 공간, 전력, 냉각, 매매체결엔진(매칭엔진)에 대한 직접 크로스커넥트
+- 매매체결엔진(매칭엔진) 사이트 코로케이션(전산센터 공동입주)을 통한 최저 지연시간
+
+### 7.4 API 프로토콜
+| 프로토콜 | 용도 |
+|----------|----------|
+| OUCH | 네이티브 바이너리 주문 입력; 최저 지연시간 |
+| FIX | 업계 표준 주문 입력 및 체결 보고 |
+| ITCH | 시장 데이터 배포 (발신 전용) |
+| GLIMPSE | 시장 데이터 스냅샷 복구 |
+
+---
+
+## 8. 위험 통제 및 서킷브레이커(매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 가격제한
+- Nasdaq Nordic은 고정 일일 가격제한을 부과하지 **않는다** (상한/하한 백분율 제한 없음)
+- 대신 비정상적 가격 변동을 감지 및 관리하기 위한 **Volatility Guard** (동적 및 정적) 사용
+
+### 8.2 서킷브레이커(매매거래중단) (Volatility Guards)
+
+| 유형 | 발동 기준 | 대응 |
+|------|---------|----------|
+| **동적 Volatility Guard** | 잠재적 체결가가 **최근 체결가**(지속 갱신 기준)에서 백분율 기준 이탈 | 접속매매(연속매매) 중단; 60-180초 변동성 경매 진입 |
+| **정적 Volatility Guard** | 잠재적 체결가가 **기준가**(통상 당일 시가 경매 가격)에서 백분율 기준 이탈 | 접속매매(연속매매) 중단; 60-180초 변동성 경매 진입 |
+| **경매 안전장치** | 시가 경매 언크로싱 가격이 동적 Volatility Guard 기준의 2배 이탈 | 경매 기간 연장 |
+
+- Volatility Guard 기준은 종목별로 설정되고 거래소가 주기적으로 검토
+
+### 8.3 사전 위험 통제 (PRM)
+
+Nasdaq Nordic의 **Pre-trade Risk Management (PRM)** 서비스는 OUCH 및 FIX 프로토콜을 통한 주문을 검증한다:
+
+| 통제 | 설명 |
+|---------|-------------|
+| **Blow-Through Protection** | 가격 이탈을 제출 전 확인하여 Volatility Guard 발동 방지 |
+| **최대 주문 금액** | 회사별 설정 가능; 기준 초과 주문 거부 |
+| **최대 주문 수량** | 단일 주문당 최대 주식 수 제한 |
+| **오류 주문 방지** | 가격 및 수량 합리성 점검 |
+| **메시지 제한 조절** | 초당 주문 접수율 제한 |
+| **FIX Drop On-Disconnect** | 클라이언트 연결 해제 시 전 미체결 주문 자동 취소 및 신규 주문 입력 차단 |
+
+PRM은 주문 체결에 **지연시간을 추가하지 않도록** 설계되었다. MiFID II 제48조에 의한 ESMA 자동매매 시스템 및 통제 지침 준수.
+
+### 8.4 긴급 차단 (Kill Switch)
+- **대량 취소를 위한 긴급 차단**: 회사 또는 사용자의 전 미체결 주문을 취소하는 관리자 기능
+- PRM 인터페이스를 통해 이용 가능
+- 회원사 또는 Nasdaq Market Operations의 요청에 의해 활성화 가능
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관
+
+| 국가 | 규제기관 | 역할 |
+|---------|-----------|------|
+| **스웨덴** | Finansinspektionen (FI) | Nasdaq Stockholm을 규제시장으로 감독 |
+| **핀란드** | Finanssivalvonta (FIN-FSA) | Nasdaq Helsinki 감독 |
+| **덴마크** | Finanstilsynet | Nasdaq Copenhagen 감독 |
+| **아이슬란드** | 아이슬란드 중앙은행 / FME | Nasdaq Iceland 감독 |
+| **에스토니아** | Finantsinspektsioon (EFSA) | Nasdaq Tallinn 감독 |
+| **라트비아** | FCMC | Nasdaq Riga 감독 |
+| **리투아니아** | Lietuvos Bankas | Nasdaq Vilnius 감독 |
+
+각 거래소 법인은 해당 관할권에서 규제시장 인가(메인마켓) 및/또는 MTF 인가(First North)를 보유한다. 공동 Nasdaq Nordic 브랜딩 및 조화된 규정 하에 운영되지만, 각 법인은 국가 규제기관의 감독을 받는 별도 법인이다.
+
+### 9.2 주요 규정
+- **MiFID II / MiFIR**: 전 Nasdaq Nordic 및 Baltic 시장의 핵심 규제 프레임워크; 투명성, 최선집행, 투자자 보호, 알고리즘 매매 통제, 호가단위(최소가격변동폭) 관할
+- **Market Abuse Regulation (MAR)**: 내부자거래, 시장 조작, 내부정보 불법 공개에 대한 EU 전체 금지
+- **투자설명서규정**: 증권 공모 및 매매 입회를 관할하는 EU 규정
+- **투명성지침**: 상장 증권 발행자의 공시 요건
+- **CSDR (중앙예탁기관규정)**: 결제 규율 및 CSD 인가 관할
+
+### 9.3 시장 감시
+- **Nasdaq Nordic 시장감시**: 전 북유럽 및 발트해 시장의 잠재적 시장남용, 의심 패턴, 규정 위반에 대한 중앙집중형 실시간 감시 모니터링
+- 의심거래 및 주문 보고(STORs)가 관련 FSA에 제출
+
+### 9.4 역외 협력 / 북유럽 협력
+- **조화된 규정집**: Nasdaq Nordic은 공동 북유럽 메인마켓 발행자 규정집으로 운영, 현지 보충규정(Supplement A~D)으로 현지 법적 요건 존중
+- **EU/EEA 패스포팅**: 하나의 EU/EEA국에서 인가된 회원사가 MiFID II 패스포팅에 의해 추가 현지 인가 없이 타 Nasdaq Nordic/Baltic 시장 접근 가능
+- **Nasdaq CSD SE**: 라트비아에서 인가되어 에스토니아, 라트비아, 리투아니아, 아이슬란드에 걸쳐 운영되는 단일 CSD 법인, EU CSDR 패스포팅에 의한 조화된 사후거래 인프라 촉진
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 매매 수수료
+| 수수료 유형 | 구조 | 비고 |
+|----------|-----------|-------|
+| 체결 수수료 (주식) | 거래대금 비례(ad valorem) + 가능한 고정 거래당 요소 | 거래량 등급 및 가격 패키지에 따라 상이; Nasdaq Nordic Cash Market Fee List 참조 |
+| 라우팅 수수료 | 타 시장으로 라우팅된 주문에 대한 추가 수수료 | 표준 체결 수수료에 추가 적용 |
+| 시장조성자(마켓메이커) 리베이트 | 등록 유동성공급자에 대한 수수료 할인 또는 리베이트 | 지속적 호가 제시 장려 |
+
+### 10.2 기타 수수료
+- **상장 수수료**: 시가총액 및 시장 부문 기준 초기 및 연간 상장 수수료
+- **시장 데이터 수수료**: 실시간, 지연, 파생 데이터별 사용자 및 기업 라이선스 차등 가격
+- **코로케이션(전산센터 공동입주) 수수료**: Vasby 데이터센터의 랙 공간, 크로스커넥트, 전력 비용
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 시스템 업그레이드 (최근 5년)
+- **2021년**: INET Nordic을 위한 차세대 OUCH 및 FIX 프로토콜 도입
+- **2025년**: PORT에서 STOCKHOLM SOUTH(Equinix SK2)로 보조 데이터센터 이전 (4-9월)
+- **2025-2026년**: 프로토콜 버전 지속 업데이트 (OUCH 5.02.6, TotalView-ITCH 3.04.5)
+
+### 신상품 / 신시장
+- **방위 채권 프레임워크 (2025년)**: 유럽 최초의 방위 채권 프레임워크 출시; 리투아니아 국영 Valstybiu Investicinis Kapitalas가 최초 발행자(2025년 10월)
+- **지속가능 채권 시장**: 800억 유로 이상 상장 규모로 10주년; 북유럽 시장 전체 채권 상장 총 1.2조 유로 초과
+
+### 전략적 이니셔티브
+- **금융범죄 방지 기술**: Nasdaq, Tier 1 유럽 은행과 최초 PoC 체결; 유럽금융범죄보고서(2025년) 발간
+- **시장 점유율**: Nasdaq Nordic Exchange Network, 2024년 북유럽 주식 거래의 약 72% 시장 점유율 확보
+
+---
+
+## 출처 (Sources)
+
+[Source: Nasdaq Official, "Nordic About Us & Legal", https://www.nasdaq.com/european-markets/about-nordic-exchanges, accessed 2026-04-06]
+[Source: Nasdaq Official, "European Markets Trading Hours", https://www.nasdaq.com/european-market-activity/trading-hours, accessed 2026-04-06]
+[Source: Nasdaq Official, "INET Nordic Protocol Specifications", https://www.nasdaq.com/solutions/inet-nordic-protocol-specifications, accessed 2026-04-06]
+[Source: Nasdaq Official, "Nasdaq Nordic Market Model 2026-01", accessed 2026-04-06]
+[Source: Nasdaq Official, "Pre-Trade Risk Management for INET Nordic", accessed 2026-04-06]
+[Source: Nasdaq Official, "Secondary Data Center Relocation 2025", accessed 2026-04-06]
+[Source: Nasdaq Official, "Nordic Cash Market Fee List (November 2024)", accessed 2026-04-06]
+[Source: Nasdaq Official, "Annual Trading Statistics 2025", accessed 2026-04-06]
+[Source: Wikipedia, "Nasdaq Nordic", https://en.wikipedia.org/wiki/Nasdaq_Nordic, accessed 2026-04-06]
+[Source: ESMA, "Commission Delegated Regulation (EU) 2017/588 (RTS 11) - MiFID II Tick Sizes"]

@@ -1,0 +1,320 @@
+---
+title: "Clearing Corporation of India Limited (CCIL)"
+subtitle: "Clearing & Settlement > Organizations"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3 (Overview)
+> **Type:** CCP (Central Counterparty)
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | The Clearing Corporation of India Limited |
+| Abbreviation | CCIL |
+| Country / City | India / Mumbai |
+| Website | [https://www.ccilindia.com](https://www.ccilindia.com) |
+| Year Established | April 2001; operations commenced February 2002 |
+| Ownership | Promoted by State Bank of India (SBI); shareholders include major Indian banks, primary dealers, and financial institutions [Source: [CCIL Promoters/Shareholders](https://www.ccilindia.com/promoters-stakeholders)] |
+| Paid-up Preference Share Capital | Rs 50 crore (5 crore 8.5% Redeemable Non-Convertible Cumulative Preference Shares) [Source: [CCIL Company Profile](https://www.ccilindia.com/companyprofile)] |
+| Net Worth | Rs 5,903 crore (as of 30 September 2024) [Source: [ICRA Rating Report Feb 2025](https://www.icra.in/Rating/ShowRationalReportFilePdf/132928)] |
+| Regulatory Authority | Reserve Bank of India (RBI) -- authorized under the Payment and Settlement Systems Act, 2007 |
+| QCCP Status | Yes -- granted by RBI (2014) based on compliance with PFMI standards [Source: [Global Custodian](https://www.globalcustodian.com/clearing-corporation-of-india-receives-qccp-status/)] |
+| PFMI Compliance | Designated as critical Financial Market Infrastructure (FMI) by RBI in July 2013; publishes PFMI qualitative and quantitative disclosures [Source: [CCIL PFMI Disclosures](https://www.ccilindia.com/documents/d/ccil/PFMI%20Qualitative%20Disclosures%2031st%20Mar%202024%20FINAL_290624-pdf)] |
+| Credit Rating | AAA (Stable) by ICRA and CARE [Source: [CARE Rating Mar 2025](https://www.careratings.com/upload/CompanyFiles/PR/202503120310_The_Clearing_Corporation_of_India_Limited.pdf)] |
+| Subsidiary | ClearCorp Dealing Systems (India) Ltd. -- develops and operates trading platforms (NDS-OM, TREPS, FX-CLEAR, etc.) |
+
+> **Comparison with KRX/KSD:** CCIL is a specialized CCP focused on fixed income, forex, and money markets -- it does not clear equities or exchange-traded derivatives. This contrasts with KRX, which serves as CCP for all exchange-traded products (equities, derivatives). India's equity clearing is handled separately by NSCCL (NSE), ICCL (BSE), and MCX-CCL (commodity derivatives).
+
+### Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 2001 (Apr) | CCIL incorporated; promoted by SBI and major Indian banks |
+| 2002 (Feb) | Commenced clearing and settlement of government securities transactions |
+| 2002 (Nov) | Forex clearing segment launched (USD/INR interbank spot and forward transactions) |
+| 2003 | Received INFINET membership for funds settlement through RBI's RTGS system |
+| 2004 | Collateralized Borrowing and Lending Obligation (CBLO) segment launched |
+| 2005 | Rupee Derivatives (IRS/FRA) clearing commenced |
+| 2007 | Authorized as payment system under Payment and Settlement Systems Act, 2007 |
+| 2008 | CDS segment and forex forwards/swaps clearing introduced |
+| 2013 (Jul) | Designated as critical FMI by RBI for oversight under PFMI framework |
+| 2014 | Granted QCCP status by RBI [Source: [MarketScreener](https://www.marketscreener.com/news/latest/Reserve-Bank-of-India-RBI-grants-Qualified-Central-Counterparty-Status-to-CCIL-17740350/)] |
+| 2018 (Nov) | TREPS (Tri-party Repo) replaced CBLO as the primary money market instrument |
+| 2022 (Oct) | ESMA refused recognition of CCIL (and five other Indian CCPs) under EMIR, citing lack of cooperation arrangement with RBI [Source: [ESMA](https://www.esma.europa.eu/press-news/esma-news/esma-withdraw-recognition-decisions-six-indian-ccps)] |
+| 2023 (Apr) | ESMA derecognition took effect -- European banks faced higher capital charges for CCIL exposures |
+| 2026 | ESMA-RBI MoU signed, enabling CCIL to re-apply for EMIR recognition [Source: [Angel One](https://www.angelone.in/news/market-updates/rbi-esma-new-agreement-enables-ccil-to-seek-european-recognition-again)] |
+
+---
+
+## 2. Clearing Model
+
+### 2.1 CCP Services
+
+CCIL operates across multiple market segments, each with distinct clearing mechanisms:
+
+| Segment | Products | Settlement Cycle | Launch |
+|---------|----------|-----------------|--------|
+| **Government Securities (G-Sec)** | Government bonds, T-Bills, State Development Loans, sovereign gold bonds | T+1 (outright); T+0 to T+2 (repo) | 2002 |
+| **TREPS (Tri-party Repo)** | Collateralized money market borrowing/lending (replaced CBLO in 2018) | T+0 to T+1 | 2018 |
+| **Forex Settlement** | USD/INR spot, cash, tom; interbank forex transactions | T+0 / T+1 / T+2 (spot) | 2002 |
+| **Forex Forwards** | USD/INR forwards, swaps | Per contract maturity | 2008 |
+| **Rupee Derivatives** | OTC Interest Rate Swaps (IRS) and Forward Rate Agreements (FRA) referenced to MIBOR, MIOIS, MIFOR, Modified MIFOR; tenors up to 10 years | Per contract maturity | 2005 |
+| **CDS** | Credit Default Swaps [unverified -- limited activity] | Per contract terms | 2008 |
+
+[Source: [CCIL Company Profile](https://www.ccilindia.com/companyprofile); [NISM - Role of CCIL](https://www.nism.ac.in/revamp-nism/blog/strengthening-indias-financial-backbone-the-vital-role-of-ccil-in-money-forex-and-bond-markets/)]
+
+**Volume Breakdown (approximate FY2022 proportions):**
+- TREPS: ~40% of total turnover
+- Government Securities: ~30%
+- Forex: ~30%
+
+[Source: [ICRA Rating Report](https://www.icra.in/Rating/GetRationalReportFilePdf?id=110916)]
+
+### 2.3 Netting
+
+CCIL employs different netting mechanisms across its segments:
+
+| Segment | Netting Method |
+|---------|---------------|
+| **G-Sec (Outright)** | Multilateral netting -- all trades due for settlement on the same day are netted to arrive at a single net obligation per member per security |
+| **TREPS** | Multilateral netting of funds along with outright and market repo trades |
+| **Forex (Spot)** | Multilateral netting of USD and INR legs separately; net USD and net INR positions determined per member |
+| **Rupee Derivatives** | Bilateral netting of cashflows; novation upon trade acceptance |
+
+- For all guaranteed settlement segments, CCIL interposes itself as CCP through **novation** -- the original bilateral trade is replaced by two contracts, one between CCIL and each counterparty
+- Netting significantly reduces settlement exposure; in the forex segment, netting efficiency typically reduces gross obligations by 80-90% [unverified]
+
+[Source: [CCIL Securities Settlement FAQ](https://www.ccilindia.com/faqmodulesecurity-settlement); [CCIL Forex Settlement](https://www.ccilindia.com/usd/inr-settlement1)]
+
+### 2.4 Clearing Membership
+
+CCIL has segment-specific membership:
+
+| Member Type | Eligible Entities |
+|-------------|-------------------|
+| **G-Sec Segment** | Scheduled commercial banks, primary dealers, insurance companies, pension funds, mutual funds, FPIs |
+| **Forex Segment** | Authorized dealer banks (AD Category I) |
+| **Rupee Derivatives** | Market Makers (scheduled banks, standalone primary dealers, AIFIs); Non-Retail Entities; Retail Entities (corporates, FPIs) |
+| **TREPS** | Banks, primary dealers, mutual funds, insurance companies, corporates |
+
+- All members must meet minimum net worth requirements and contribute to the Default Fund
+- Members must maintain adequate collateral with CCIL for margin and settlement purposes
+- With effect from November 2023, collateral contribution to the Securities Segment SGF became **segment-agnostic** (common pool)
+
+[Source: [CCIL Rupee Derivatives](https://www.ccilindia.com/rmd-rupee-derivative); [CCIL Collateral Management](https://www.ccilindia.com/collateralmngmtintroduction5)]
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework
+
+CCIL applies a comprehensive margin framework across all segments:
+
+| Margin Type | Description |
+|-------------|-------------|
+| **Initial Margin (IM)** | Covers potential future exposure (PFE); calculated using VaR-based models with a confidence level of 99% and appropriate lookback/holding periods |
+| **Mark-to-Market (MTM) Margin** | Covers current exposure based on daily (or intraday) revaluation of open positions |
+| **Volatility Margin** | Additional margin charged during periods of heightened market volatility |
+| **Concentration Margin** | Charged when a member's positions are disproportionately large relative to the market |
+| **Spread Margin** | Applied to spread positions in the Rupee Derivatives segment |
+
+[Source: [CCIL Risk Management Introduction](https://www.ccilindia.com/service-risk-management-introduction7)]
+
+**Collateral Types Accepted:**
+- Cash (INR and USD depending on segment)
+- Government of India securities and Treasury Bills
+- Since November 2023, collateral can be posted to a segment-agnostic common pool
+
+> **Comparison with KRX:** KRX uses a SPAN-based margin system for derivatives and a VaR-based system for equities, with similar margin types (initial margin, variation margin, additional margin). CCIL's segment-specific margin models reflect the OTC/wholesale nature of its markets, while KRX's models are designed for exchange-traded retail/institutional markets.
+
+### 3.3 Default Waterfall
+
+CCIL maintains a default waterfall structure to absorb member default losses:
+
+| Layer | Resource | Amount (approx.) |
+|-------|----------|-------------------|
+| 1 | **Defaulting member's margins** (IM, MTM, volatility margin) | Varies per member |
+| 2 | **Defaulting member's Default Fund contribution** | Varies per member |
+| 3 | **CCIL's own capital -- "Skin in the Game"** (Settlement Reserve Fund, SRF) | Rs 2,600 crore (as of 31 Mar 2024) |
+| 4 | **Non-defaulting members' Default Fund contributions** (loss mutualization) | Part of Rs 11,928 crore total DF (as of 30 Sep 2024) |
+| 5 | **Additional assessment on surviving members** | As per CCIL's Bye-laws, Rules and Regulations |
+
+[Source: [CCIL PFMI Qualitative Disclosures Mar 2024](https://www.ccilindia.com/documents/d/ccil/PFMI%20Qualitative%20Disclosures%2031st%20Mar%202024%20FINAL_290624-pdf); [ICRA Rating Report Feb 2025](https://www.icra.in/Rating/ShowRationalReportFilePdf/132928)]
+
+**Default Fund Structure:**
+- CCIL maintains **six separate Default Funds** across its segments
+- Total Default Fund: Rs 11,928 crore (as of 30 September 2024)
+- Members contribute cash and eligible Government of India securities / Treasury Bills
+- Default Fund adequacy is regularly stress-tested
+
+[Source: [CCIL Default Fund](https://www.ccilindia.com/web/ccil/default-fund)]
+
+> **Comparison with KRX:** KRX's default waterfall similarly follows the sequence of defaulter's margin -> defaulter's clearing fund contribution -> KRX's own capital -> non-defaulting members' clearing fund contributions. CCIL's SRF of Rs 2,600 crore (~USD 310 million) as skin-in-the-game is substantial for an emerging market CCP. KRX's joint compensation fund follows a comparable mutualization principle.
+
+### 3.6 Recovery & Resolution
+
+- CCIL is designated as a **critical Financial Market Infrastructure (FMI)** by RBI since July 2013
+- RBI acts as the oversight and resolution authority under the Payment and Settlement Systems Act, 2007
+- CCIL has recovery tools including:
+  - Cash calls / additional assessment on members
+  - Partial settlement / delayed settlement
+  - Loss allocation to surviving members
+  - Voluntary tear-up of positions [unverified]
+- India does not yet have a dedicated CCP resolution framework comparable to EU CCPRRR or US OLA, though RBI's oversight framework provides de facto resolution powers [unverified]
+- CCIL's systemic importance means RBI would likely intervene directly in a severe stress scenario
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle
+
+| Segment | Standard Cycle | Settlement Mode |
+|---------|---------------|-----------------|
+| G-Sec (Outright, NDS-OM) | T+1 | DVP via RBI's RTGS |
+| G-Sec (Market Repo) | T+0 to T+1 (first leg); various (second leg) | DVP |
+| TREPS | T+0 (same day); T+1 | Net settlement |
+| Forex Spot | T+2 | PvP (Payment versus Payment) |
+| Forex Cash | T+0 | PvP |
+| Forex Tom | T+1 | PvP |
+| Forex Forwards/Swaps | Per contract maturity | Net settlement |
+| Rupee Derivatives (IRS) | Per cashflow dates | Net settlement of periodic cashflows |
+
+[Source: [CCIL Securities Settlement FAQ](https://www.ccilindia.com/faqmodulesecurity-settlement); [CCIL Forex Settlement](https://www.ccilindia.com/usd/inr-settlement1)]
+
+### 4.2 DVP Model
+
+**Government Securities:**
+- CCIL uses **DVP Model 1** (gross securities against gross funds) for non-netted trades and **DVP Model 3** (net securities against net funds) for netted trades through RBI's RTGS system
+- Securities leg settles through RBI's Securities Settlement System (SSS) / Public Debt Office (PDO)
+- Funds leg settles through RBI's Real-Time Gross Settlement (RTGS) system
+- Settlement finality is achieved upon completion of both legs through RBI's systems
+
+**Forex Settlement:**
+- Uses a **Payment versus Payment (PvP)** mechanism for USD/INR settlement
+- INR leg settles through RBI's RTGS
+- USD leg settles through CCIL's USD settlement account with designated settlement banks
+- Netting of USD and INR obligations separately before settlement
+
+[Source: [CCIL PFMI Qualitative Disclosures](https://www.ccilindia.com/documents/d/ccil/PFMI%20Qualitative%20Disclosures%2031st%20Mar%202024%20FINAL_290624-pdf); [CCIL Guaranteed Settlement](https://www.ccilindia.com/web/ccil/guranteed-settlement)]
+
+> **Comparison with KRX/KSD:** KSD uses DVP Model 3 (net/net) for equity settlement via BOK-Wire+. CCIL's use of DVP Model 1 for gross G-Sec trades reflects the wholesale, high-value nature of government bond transactions, while its netted settlement for TREPS and forex is similar in concept to KSD's approach for equities.
+
+---
+
+## 5. Technology & Infrastructure
+
+| Platform / System | Description | Operated By |
+|-------------------|-------------|-------------|
+| **NDS-OM** (Negotiated Dealing System - Order Matching) | RBI-owned anonymous electronic trading platform for government securities; also used for OTC deal reporting | ClearCorp (CCIL subsidiary) |
+| **NDS-CALL** | Electronic dealing platform for Call, Notice & Term Money market | ClearCorp |
+| **FX-CLEAR** | Electronic dealing platform for interbank forex transactions | ClearCorp |
+| **FX-SWAP** | Platform for forex swap transactions | ClearCorp |
+| **TREPS** (Tri-Party Repo Dealing System) | Replaced CBLO platform; facilitates collateralized borrowing and lending | ClearCorp |
+| **ASTROID** | Automated System for Tendering, Reporting, Operations, Information and Data Dissemination -- auction system for G-Sec primary issuance | ClearCorp |
+| **SARVAM** | Service for Analysis of Risk, Valuation and Margining -- provides valuation, margining, collateral management, and risk analytics for Non-Centrally Cleared Derivatives (NCCDs) | CCIL |
+| **F-TRAC** | Provides reference rates and valuations for fixed income and money market instruments | CCIL |
+
+[Source: [CCIL Company Profile](https://www.ccilindia.com/companyprofile); [ClearCorp Company Profile](https://www.clearcorp.co.in/web/clearcorp/company-profile)]
+
+> **Note:** ClearCorp Dealing Systems (India) Ltd., a wholly-owned subsidiary of CCIL, develops and operates most of the trading platforms. This vertical integration of trading and clearing infrastructure is distinctive -- it means CCIL (through ClearCorp) provides end-to-end infrastructure from trade execution to clearing and settlement for India's wholesale financial markets.
+
+---
+
+## 6. Regulatory Framework
+
+| Aspect | Details |
+|--------|---------|
+| **Primary Regulator** | Reserve Bank of India (RBI) |
+| **Key Legislation** | Payment and Settlement Systems Act, 2007; RBI (Payment and Settlement Systems) Regulations, 2008 |
+| **Authorization** | Authorized as a payment system by RBI under PSS Act, 2007 |
+| **FMI Designation** | Designated as critical Financial Market Infrastructure by RBI (July 2013) |
+| **PFMI Oversight** | Supervised using CPSS-IOSCO PFMI framework; publishes qualitative and quantitative disclosures |
+| **QCCP Status** | Granted by RBI (2014) based on PFMI compliance |
+| **ESMA Recognition** | Lost EMIR third-country recognition in April 2023; ESMA-RBI MoU signed in 2026 to enable re-application |
+| **Governance Rules** | CCIL's Bye-laws, Rules and Regulations (BRR) govern clearing operations, membership, risk management, and default procedures |
+
+**ESMA Derecognition Issue:**
+- In October 2022, ESMA refused recognition of CCIL under EMIR Article 25 due to the absence of a cooperation arrangement with RBI
+- The core dispute was ESMA's demand for direct audit and inspection rights over CCIL, which RBI rejected as a sovereignty concern
+- Derecognition took effect in April 2023, forcing European banks to apply higher capital charges (non-QCCP treatment) for CCIL exposures
+- In 2026, ESMA and RBI signed an MoU resolving the impasse, enabling CCIL to re-apply for EMIR recognition
+
+[Source: [ESMA Press Release](https://www.esma.europa.eu/press-news/esma-news/esma-withdraw-recognition-decisions-six-indian-ccps); [ESMA-RBI MoU](https://www.esma.europa.eu/press-news/esma-news/esma-signs-memorandum-understanding-reserve-bank-india)]
+
+> **Comparison with KRX:** KRX holds QCCP recognition in multiple jurisdictions. The CCIL-ESMA episode highlighted the tension between domestic regulatory sovereignty and international regulatory cooperation for CCPs -- an issue that does not significantly affect KRX given Korea's cooperative regulatory relationships with EU/US authorities.
+
+---
+
+## 7. Interoperability
+
+| Arrangement | Details |
+|-------------|---------|
+| **RBI Systems** | Deep integration with RBI's RTGS (funds settlement), SSS/PDO (securities settlement), and e-Kuber core banking system |
+| **CLS Bank** | India is not a member of CLS Bank for forex settlement; CCIL's PvP mechanism serves as the domestic alternative |
+| **SWIFT** | Uses SWIFT messaging for certain interbank communications |
+| **International Links** | Limited direct CCP-to-CCP links; cross-border participation primarily through CCIL membership by foreign bank branches operating in India |
+
+- CCIL does not have interoperability arrangements with other CCPs (unlike European CCPs that have CCP links for equity clearing)
+- Foreign participation in Indian G-Sec and forex markets (by FPIs, etc.) occurs through CCIL members (custodian banks), not through direct CCP links
+- The ESMA-RBI MoU (2026) may pave the way for deeper international integration
+
+---
+
+## 9. Recent Developments
+
+| Date | Development |
+|------|-------------|
+| 2023 (Nov) | Securities Segment SGF collateral made segment-agnostic (common pool across segments) |
+| 2024 | CCIL PFMI Quantitative Disclosures published for December 2024 [Source: [CCIL PQD Dec 2024](https://www.ccilindia.com/documents/d/ccil/ccil-_pfmi-quantitative-disclosures_-key-risk-areas_dec-2024)] |
+| 2025 (Sep) | 39th Portfolio Compression cycle for MIBOR IRS: 27,622 out of 30,855 eligible trades terminated (89.4% compression rate) [Source: [CCIL Derivatives Quarterly Q2 FY26](https://www.ccilindia.com/documents/d/ccil/Derivatives%20Quarterly_Q2FY26.pdf)] |
+| 2025 | RBI proposed mandatory Unique Transaction Identifier (UTI) for all OTC rupee interest rate and foreign currency derivatives |
+| 2025 | Standalone Primary Dealers authorized as AD Category-III for non-deliverable derivative contracts involving the Rupee |
+| 2026 | ESMA-RBI MoU signed -- CCIL can re-apply for EMIR recognition, resolving the 3+ year derecognition dispute |
+| Ongoing | SARVAM platform expansion for NCCD margining, collateral management, and risk analytics services |
+| Ongoing | CCIL Factbook 2024-25 published with comprehensive segment-wise data [Source: [CCIL Factbook 2024-25](https://www.ccilindia.com/documents/d/ccil/Clearing_Corporation_of_India_Limited%20Annual-pdf)] |
+
+**Key Trends:**
+- Resolution of ESMA recognition dispute will restore QCCP treatment for European bank exposures to CCIL
+- Continued expansion of OTC derivatives clearing scope (IRS, FRA, potentially FX options)
+- Portfolio compression exercises reducing outstanding notional in IRS market
+- SARVAM platform extending CCIL's role beyond CCP into risk infrastructure for non-cleared derivatives
+- India's G-Sec market inclusion in global bond indices (e.g., JP Morgan GBI-EM) driving increased foreign participation through CCIL's clearing infrastructure
+
+---
+
+## Sources
+
+- [CCIL Official Website](https://www.ccilindia.com/)
+- [CCIL Company Profile / Introduction](https://www.ccilindia.com/companyprofile)
+- [CCIL Promoters / Shareholders](https://www.ccilindia.com/promoters-stakeholders)
+- [CCIL PFMI Qualitative Disclosures (March 2024)](https://www.ccilindia.com/documents/d/ccil/PFMI%20Qualitative%20Disclosures%2031st%20Mar%202024%20FINAL_290624-pdf)
+- [CCIL PFMI Quantitative Disclosures (December 2024)](https://www.ccilindia.com/documents/d/ccil/ccil-_pfmi-quantitative-disclosures_-key-risk-areas_dec-2024)
+- [CCIL Factbook 2024-25](https://www.ccilindia.com/documents/d/ccil/Clearing_Corporation_of_India_Limited%20Annual-pdf)
+- [CCIL Risk Management Introduction](https://www.ccilindia.com/service-risk-management-introduction7)
+- [CCIL Default Fund](https://www.ccilindia.com/web/ccil/default-fund)
+- [ClearCorp Company Profile](https://www.clearcorp.co.in/web/clearcorp/company-profile)
+- [CARE Rating Report (March 2025)](https://www.careratings.com/upload/CompanyFiles/PR/202503120310_The_Clearing_Corporation_of_India_Limited.pdf)
+- [ICRA Rating Report (February 2025)](https://www.icra.in/Rating/ShowRationalReportFilePdf/132928)
+- [ESMA - Indian CCPs Derecognition](https://www.esma.europa.eu/press-news/esma-news/esma-withdraw-recognition-decisions-six-indian-ccps)
+- [ESMA - MoU with RBI](https://www.esma.europa.eu/press-news/esma-news/esma-signs-memorandum-understanding-reserve-bank-india)
+- [Global Custodian - CCIL QCCP Status](https://www.globalcustodian.com/clearing-corporation-of-india-receives-qccp-status/)
+- [NISM - Role of CCIL in India's Markets](https://www.nism.ac.in/revamp-nism/blog/strengthening-indias-financial-backbone-the-vital-role-of-ccil-in-money-forex-and-bond-markets/)
+- [IMF FSAP India - CPMI-IOSCO Assessment (2013)](https://www.imf.org/external/pubs/ft/scr/2013/cr13268.pdf)
+- [World Bank FSAP India - PFMI Assessment (2017)](https://documents1.worldbank.org/curated/en/502811516303508722/pdf/India-CPMI-IOSCO-principles-for-financial-market-infrastructures.pdf)

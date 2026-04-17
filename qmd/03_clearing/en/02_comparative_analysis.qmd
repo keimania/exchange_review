@@ -1,0 +1,599 @@
+---
+title: "Global Clearing & Settlement -- Comparative Analysis"
+subtitle: "Clearing & Settlement"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-13
+
+---
+
+## 1. Default Waterfall Comparison
+
+### 1.1 Structure Comparison Table
+
+| CCP | Layer 1 (Defaulter Margin) | Layer 2 (Defaulter DF) | Layer 3 (SITG) | Layer 4 (Non-defaulter DF) | Layer 5 (Additional) | Layer 6 (Other) |
+|-----|---------------------------|------------------------|----------------|---------------------------|---------------------|-----------------|
+| **NSCC** (DTCC) | Defaulter's Required Fund Deposit (portion of ~$11.2B total) | Included in Layer 1 (combined margin + DF at NSCC) | ~$25-50M [estimated; 50% of general business risk capital] | Remainder of ~$11.2B Clearing Fund | Assessment powers (successive rounds, capped per member per Event Period) | Cross-guaranty with FICC, DTC, OCC |
+| **FICC-GSD** (DTCC) | Defaulter's Required Fund Deposit (portion of $65.5B total IM, Q4 2024) | Included in Layer 1 | ~$25-50M [estimated; 50% of general business risk capital] | Remainder of GSD Clearing Fund | Assessment powers; CCLF liquidity facility | Cross-guaranty with NSCC, DTC; cross-margining with CME |
+| **LCH Ltd** (SwapClear) | Defaulter's IM (~$240B total pool) | Defaulter's DF contribution (min GBP 10M) | GBP ~35M [25% of min regulatory capital] | Up to GBP 5.4B core DF + GBP 600M RTTR component | Assessment powers (up to 1x DF contribution, max 3 defaults in 6 months) | VMGH, partial/full tear-up, additional LCH capital |
+| **LCH SA** (CDSClear) | Defaulter's IM | Defaulter's DF contribution (min EUR 10M) | EUR 20M (First SITG per service) | Non-defaulting members' DF (~EUR 2.77B for CDSClear) | Second SITG (variable); assessment powers | VMGH, partial tear-up |
+| **OCC** | Defaulter's margin (~$180-232B total pool) | Defaulter's Clearing Fund contribution (share of ~$19.5B) | $69M persistent minimum (capital) / ~$76M (incl. deferred comp); at least 25% of target regulatory capital | Remainder of ~$19.5B Clearing Fund | Assessments up to each member's required CF contribution (effectively doubling mutualized pool) | VMGH, mandatory/voluntary partial tear-up |
+| **CME** (Base) | Defaulter's performance bonds (IM) | Defaulter's Guaranty Fund contribution (share of ~$10.1B) | **$100M** (pre-funded) | Non-defaulting members' Guaranty Fund | Assessment powers up to **2.75x** each member's GF contribution | VMGH, mandatory tear-ups, voluntary contributions |
+| **CME** (IRS) | Defaulter's performance bonds | Defaulter's IRS Guaranty Fund contribution | **$150M** (pre-funded) | Non-defaulting IRS members' GF | Capped assessments on non-defaulting IRS members | Gains haircutting, mandatory tear-ups |
+| **Eurex Clearing** | Defaulter's margin collateral | Defaulter's Default Fund contribution | **EUR 143M** (Dedicated Amount) | Non-defaulting members' DF + **EUR 57M** (Second SITG) | Assessments (up to 2x DF contribution) + EUR 300M Further Dedicated Amount | **EUR 600M** equity capital + **EUR 600M** Deutsche Borse backstop; total ECAG/DB commitment: **EUR 1.7B** |
+| **JSCC** (IRS) | Defaulter's margin | Defaulter's Clearing Fund contribution | Up to JPY 2B (First Tier Settlement Guarantee Reserve) | Non-defaulting participants' CF + JPY 2B additional JSCC contribution | Special Clearing Charge (up to 1x CF contribution) | VMGH, partial tear-up, remaining JSCC equity |
+| **JSCC** (JGB Futures) | Defaulter's margin | Defaulter's CF contribution | Settlement Guarantee Reserve (from JPY 9.1B total; JPY 7B from OSE for non-energy commodities) | Non-defaulting participants' CF (JPY 64.7B for JGB Futures, Q4 2024) | Special Clearing Charge | Remaining JSCC equity |
+| **HKSCC** | Defaulter's margin, Marks, collateral | Defaulter's Guarantee Fund contributions (Basic + Dynamic) | 10% of Guarantee Fund size | Non-defaulting CPs' Dynamic Contributions, then Basic Contributions | [data not available] | -- |
+| **HKCC** | Defaulter's margin deposits | Defaulter's Participant Deposit + HPAD | 10% of Reserve Fund size | Non-defaulting CPs' Reserve Fund contributions (in layers) | [data not available] | -- |
+| **CDP** (Singapore) | Defaulter's margin | Defaulter's Clearing Fund contribution | At least 25% of total Clearing Fund (~S$20M of S$80M) | Non-defaulting CMs' funded CF contributions | Contingent (unfunded) contributions from non-defaulting CMs | CDP's remaining capital |
+| **Cboe Clear Europe** | Defaulter's margin | Defaulter's Default Fund contribution | ~EUR 6.8M (25% of min required capital, 2021 figure) | Non-defaulting members' Default Fund | Additional CCP dedicated resources (second tranche) | Loss allocation, assessments |
+| **ICE Clear U.S.** | Defaulter's IM (~$23B total) | Defaulter's GF contribution (min $2M) | ~$75M [estimated] | $25M default insurance; then non-defaulting members' GF | Assessment powers | -- |
+| **ICE Clear Europe** | Defaulter's IM | Defaulter's GF contribution | ICE SITG (pre non-defaulter) | $100M default insurance; then non-defaulting members' GF (~$2.9B total) | Cross-segment GF; assessment powers | -- |
+| **ICE Clear Credit** | Defaulter's IM (>$20B at Fed) | Defaulter's GF contribution (min $20M) | **$100M** (ICE SITG) | $75M default insurance; then non-defaulting participants' GF | Assessment powers | -- |
+| **ASX Clear** (Cash) | Defaulter's margin | [No participant DF contributions] | ASX's own capital: **AUD 250M** default fund (100% ASX-funded) | [N/A -- no participant DF] | Recovery assessments up to **AUD 300M** | Contract termination / partial tear-up |
+| **ASX Clear (Futures)** | Defaulter's margin | Defaulter's DF contribution (share of AUD 200M participant pool) | ASX capital Tranche 1 (part of AUD 450M) | Non-defaulting participants' DF Tranche 1 | ASX Tranche 2 + Participant Tranche 2 + ASX Tranche 3 (AUD 180M) + Assessments (up to AUD 200M per default) | VM haircutting, contract termination |
+| **KRX** | Defaulter's margin (위탁증거금) | Defaulter's clearing deposit (회원증거금) | KRX own capital (SITG) | Joint Compensation Fund (손해배상공동기금, ~KRW 100B / ~$75M) | Non-defaulting members' additional contributions (추가분담금) | Asset liquidation, securities sales |
+
+### 1.2 SITG (Skin-in-the-Game) Comparison
+
+| CCP | SITG Amount | Position in Waterfall | SITG as % of Default Fund | Notes |
+|-----|-----------|----------------------|--------------------------|-------|
+| **NSCC** | ~$25-50M [estimated] | Layer 3 (after defaulter's resources) | <0.5% of ~$11.2B | Relatively low SITG; large mutualized fund |
+| **FICC-GSD** | ~$25-50M [estimated] | Layer 3 | [data not available] | Similar to NSCC |
+| **LCH Ltd** (SwapClear) | ~GBP 35M | Layer 3 (before non-defaulter DF) | ~0.6% of ~GBP 6B | Low SITG; very large mutualized DF |
+| **LCH SA** | EUR 20M (per service) | Layer 3 (first SITG) + second SITG in Layer 5 | <1% of total DF | Two-tranche SITG model |
+| **OCC** | $69-76M | Layer 3 | ~0.4% of ~$19.5B | SITG = 25% of target regulatory capital |
+| **CME** (Base) | **$100M** | Layer 3 (before non-defaulter GF) | ~1% of ~$10.1B | Moderate SITG |
+| **CME** (IRS) | **$150M** | Layer 3 | [data not available] | Higher SITG for IRS waterfall |
+| **Eurex Clearing** | **EUR 143M** (first) + **EUR 57M** (second) + up to **EUR 300M** (further) + **EUR 600M** (equity) + **EUR 600M** (DB backstop) = **EUR 1.7B** total | Multiple layers; EUR 143M in Layer 3, others later | EUR 143M = ~4.8% of ~EUR 3B DF; total commitment = ~57% of DF | By far the largest CCP/parent SITG commitment globally |
+| **ICE** (aggregate) | >**$410M** own capital + $200M default insurance = **$660M+** | Before non-defaulting members' GF | [varies by entity] | Includes innovative default insurance layer |
+| **JSCC** (IRS) | Up to JPY 4B (~$27M) | Layers 3 and 4 | [data not available] | Moderate for IRS |
+| **HKSCC** | 10% of GF size (~HKD 730M of HKD 7.3B) | Layer 3 | 10% | Fixed percentage model |
+| **HKCC** | 10% of Reserve Fund | Layer 4 | 10% | Fixed percentage model |
+| **CDP** | >=25% of Clearing Fund (~S$20M of S$80M) | Layer 3 | >=25% | High SITG as percentage |
+| **ASX Clear** (Cash) | **AUD 250M** (100% of default fund) | Entire default fund is CCP-funded | 100% | Unique: no participant DF contributions |
+| **ASX Clear (Futures)** | **AUD 450M** (69% of AUD 650M total DF) | Multiple tranches interspersed with participant contributions | 69% | Highest CCP-funded proportion among major CCPs |
+| **Cboe Clear Europe** | ~EUR 6.8M | Layer 3 | [data not available] | Small SITG reflecting smaller scale |
+| **KRX** | [data not available -- KRX own capital contribution] | Layer 3 (before Joint Compensation Fund) | [data not available] | Follows "defaulter pays first"; SITG before mutualized resources |
+
+### 1.3 Key Observations
+
+1. **Eurex Clearing has the largest aggregate CCP/parent financial commitment** at EUR 1.7 billion (including the Deutsche Borse Letter of Comfort), providing the most comprehensive loss-absorbing capacity beyond participant resources.
+
+2. **ASX has the most unique SITG model**: ASX Clear's cash equities default fund is 100% funded by the CCP itself (AUD 250M), and ASX Clear (Futures) contributes 69% of the total default fund (AUD 450M of AUD 650M). This reflects the vertically integrated ownership model.
+
+3. **ICE introduced innovation** with its default insurance layer (renewed for three-year terms), which adds $200M across its clearing houses between SITG and non-defaulting members' contributions. Aggregate ICE SITG + insurance exceeds $660M.
+
+4. **CME places distinct SITG amounts** in its Base ($100M) and IRS ($150M) waterfalls, totaling $250M in pre-funded own resources.
+
+5. **U.S. user-owned CCPs (NSCC, OCC)** have relatively smaller SITG amounts (estimated $25-76M), reflecting their cooperative ownership models where participants bear the primary mutualized risk.
+
+6. **HKEX uses a fixed-percentage model** (10% of fund size) for its SITG across all three clearing houses, providing simplicity and proportionality.
+
+7. **Cover 2 is the predominant standard** for systemically important CCPs (LCH, OCC, CME, Eurex, JSCC, HKEX), while Cover 1 is used by some smaller or less systemic CCPs.
+
+---
+
+## 2. Margin Methodology Comparison
+
+### 2.1 Summary Table
+
+| CCP | Methodology | Risk Measure | Confidence Level | Lookback Period | Holding Period (ETD) | Holding Period (OTC) | Anti-Procyclicality | Cross-Margining |
+|-----|-------------|-------------|-----------------|-----------------|---------------------|---------------------|--------------------|-----------------|
+| **NSCC** | Parametric VaR | VaR | 99% | Historical price data | 3-day MPOR | N/A | Anti-cyclical charges | Cross-guaranty with FICC, OCC |
+| **FICC-GSD** | Historical simulation VaR | VaR | Cover 1 target | Historical data | 3-day liquidation | N/A | Volatility Event Charge | Cross-margining with CME |
+| **LCH** (SwapClear) | PAIRS (ES based on FHS with vol scaling) | Expected Shortfall | 99.7% | 10 years (with GFC window) | N/A | 5 days (members); 7 days (clients) | Stress period floor (unscaled 10-yr + 2.5-yr GFC) | Within SwapClear service |
+| **LCH** (CDSClear) | HS with scaled returns, ES | Expected Shortfall | 99.7% | From April 2007 | N/A | 5 days | [data not available] | Within CDSClear service |
+| **OCC** | STANS (Monte Carlo simulation) | Expected Shortfall | 99% ES (99.5% for top 2 sub-portfolios) | Historical data (dynamic) | 2 days | N/A | Floor based on historical averages | Cross-margin with CME (equity index options vs futures) |
+| **CME** (Legacy SPAN) | 16 parametric scenarios | Worst-case loss | ~99% | Static parameter updates | 1 day | 5 days (OTC IRS) | APC measures | Cross-margin with OCC and FICC |
+| **CME** (SPAN 2) | Historical VaR + ES | HVaR + ES | 99.7%+ [unverified] | Historical data (dynamic) | 1 day | 5 days | Anti-procyclical features | Cross-margin with OCC and FICC |
+| **Eurex** (Prisma) | Filtered Historical Simulation VaR | Max of FHS-VaR and stress-period VaR | 99% (listed); 99.5% (OTC) | 3 years (750 scenarios) + stress period (250 scenarios) | 2-3 days | 5 days | Stress period VaR floor; annual recalibration | Listed-OTC cross-margining within PFI01 (up to 70% savings) |
+| **JSCC** (Listed) | Historical Simulation VaR + Alternative Simulation VaR | VaR | 99%+ | 1,250+ data points | 1-2 days | N/A | [data not available] | Cross-margin between IRS and listed derivatives (TONA futures, JGB futures) |
+| **JSCC** (IRS) | Historical Simulation ES | Expected Shortfall | Average of worst 1% | 1,250 business days | N/A | 5 days (house); 7 days (client) | [data not available] | Cross-margin with listed derivatives |
+| **HKSCC** | VaR-based portfolio margining (Tier P); flat-rate (Tier N) | VaR | [data not available] | [data not available] | Settlement exposure (T+2) | N/A | [data not available] | No |
+| **HKCC/SEOCH** | PRiME (SPAN 1-compatible; 16 scenarios) | Worst-case loss | Calibrated | [data not available] | 1 day | N/A | [data not available] | No |
+| **CDP** | Risk-based VaR | VaR | 99% | [data not available] | 1-5 days | N/A | [data not available] | No |
+| **Cboe Clear Europe** | Historical simulation CVaR | CVaR | 99% | 700 scenarios (~2.8 years) | 2 days | N/A | Stressed Historical Simulation (StressHS) | Cross-product margining (equities, derivatives, SFT) |
+| **ICE** (IRM 1) | Scenario-based (SPAN-like) | Worst-case loss | [data not available] | Static parameters | 1 day | N/A | Limited | Within product segments |
+| **ICE** (IRM 2) | Filtered Historical Simulation VaR | FHS-VaR | [data not available] | Historical data (dynamic) | 1 day | N/A | Built-in anti-procyclical features | Portfolio-level |
+| **ASX Clear** (Cash) | Filtered Historical Simulation VaR | FHSVaR | High confidence | Historical data | Settlement exposure | N/A | [data not available] | No |
+| **ASX Clear (Futures)** | CME SPAN | Worst-case loss | 3 std dev of 60-day distribution | Multiple lookback periods (7d, 120d, 12m) | 1 day | 5 days (OTC) | [data not available] | Within SPAN product groups |
+| **KRX** | KRX-SPAN (modified SPAN) | Worst-case loss | Not disclosed | Historical data | 1 day | N/A | Intraday margin at KOSPI 200 volatility ≥80% | Within KRX derivatives |
+
+### 2.2 Methodology Deep-Dive
+
+**SPAN (CME Legacy / HKCC PRiME / ASX Clear (Futures))**
+- Evaluates 16 hypothetical risk scenarios combining price and volatility shifts
+- Calculates worst-case loss within each combined commodity group
+- Adds intra-commodity spread charges and subtracts inter-commodity spread credits
+- Transparent and widely adopted (50+ exchanges globally), but limited by its parametric nature and inability to capture tail risk dynamically
+- Being replaced by SPAN 2 at CME; JSCC migrated away from SPAN to VaR in November 2023
+
+**PRISMA / FHS (Eurex)**
+- 750 filtered historical scenarios + 250 stress period scenarios = 1,000 total
+- Volatility filtering ensures model reactivity to changing conditions
+- Forward-looking stress period VaR floor prevents margin erosion during calm periods
+- Cross-margining between listed fixed income (2-day HP) and OTC IRS (5-day HP) within PFI01 liquidation group -- unique feature delivering up to 70% margin savings
+- Annual margin floor recalibration (e.g., Prisma Release 15.0 effective June 2025)
+
+**PAIRS (LCH)**
+- Expected Shortfall (ES) at 99.7% confidence -- highest confidence level among major CCPs
+- 10-year lookback with volatility scaling (EWMA-based) to reflect current conditions
+- Floor calibrated using unscaled 10-year lookback plus 2.5-year GFC window
+- Member MPOR of 5 days for SwapClear, 7 days for client clearing (additional 2 days for portfolio transfer)
+- Proven in managing the Lehman Brothers default (2008): used only 35% of Lehman's IM for a $9 trillion portfolio
+
+**STANS (OCC)**
+- World's first large-scale Monte Carlo-based margin methodology for derivatives clearing (2006)
+- 99% Expected Shortfall with enhanced 99.5% ES for the two largest sub-portfolio exposures
+- 2-day holding period (longer than CME's 1-day for comparable products)
+- Full portfolio margining capturing non-linearities, correlations, and tail risk
+- Being enhanced to address 0DTE option risks (Intraday Risk Charge approved April 2025)
+
+**IRM 2 (ICE)**
+- Next-generation Filtered Historical Simulation VaR replacing scenario-based IRM 1
+- Portfolio-level risk assessment capturing all relationships and diversifying effects
+- Built-in anti-procyclical features and seasonality adjustment
+- Phased rollout: live for ICE Clear U.S. equity index futures (Jan 2022), ICE Clear Europe freight and energy (Sep-Nov 2025), remaining products TBD
+
+**VaR-based approaches (JSCC, HKSCC, CDP, Cboe Clear Europe)**
+- JSCC migrated from SPAN to VaR (November 2023) using dual HS-VaR and AS-VaR methods, with 1,250+ data points -- a major modernization aligning with global trends
+- Cboe Clear Europe uses CVaR with 700 historical scenarios and real-time recalculation every 5 minutes
+- HKSCC uses VaR for large/mid-cap securities (Tier P) but flat-rate margins for smaller securities (Tier N)
+
+### 2.3 Key Observations
+
+1. **Global convergence toward VaR/ES models**: SPAN is being phased out in favor of historical simulation VaR and Expected Shortfall approaches. CME (SPAN 2), JSCC (VaR), and ICE (IRM 2) have all migrated or are migrating away from parametric scenario-based methods.
+
+2. **LCH operates at the highest confidence level** (99.7% ES with PAIRS), reflecting the systemic importance and complexity of OTC IRS clearing.
+
+3. **Eurex Prisma offers the most advanced cross-margining**, enabling margin offsets between listed and OTC products within the same liquidation group -- a capability most other CCPs lack.
+
+4. **Holding periods vary significantly**: 1 day (CME ETD, ICE ETD), 2 days (OCC, Eurex listed, Cboe Clear Europe), 3 days (NSCC), 5 days (OTC products at LCH, CME, Eurex, JSCC, ASX).
+
+5. **Anti-procyclicality measures are increasingly mandated**: Eurex uses stress period VaR floors; Cboe Clear Europe uses Stressed Historical Simulation; CME SPAN 2 incorporates built-in anti-procyclical features. EMIR explicitly requires CCPs to implement anti-procyclicality tools.
+
+---
+
+## 3. Settlement Cycle Comparison
+
+### 3.1 Current Settlement Cycles by Region
+
+| Region/CCP | Equities | Government Bonds | Derivatives (VM) | OTC Derivatives |
+|------------|----------|-----------------|-------------------|-----------------|
+| **U.S.** (DTCC/NSCC) | **T+1** (since May 28, 2024) | T+1 (cash); T+0 (repos) | Daily (T+0/T+1) | Daily |
+| **U.S.** (OCC) | T+1 (premium/exercise) | N/A | Daily | N/A |
+| **EU** (Eurex/Clearstream) | T+2 (CSDR standard) | T+2 | Daily | Daily |
+| **UK** (LCH Ltd) | T+2 (under review for T+1) | T+1 (gilts via RepoClear) | Daily | Daily |
+| **Japan** (JSCC) | **T+2** | **T+1** (since May 2018) | Daily | Per payment frequency |
+| **Hong Kong** (HKSCC) | **T+2** | T+2 | Daily | Daily |
+| **Singapore** (CDP) | **T+2** | T+2 | Daily | Daily |
+| **Australia** (ASX) | **T+2** (since March 2016) | T+2 | Daily | Daily |
+| **South Korea** (KRX/KSD) | **T+2** | **T+1** | Daily (T+0/T+1) | Daily |
+| **Canada** (CDS) | **T+1** (since May 27, 2024) | T+1 | N/A | N/A |
+| **China** (CSDC) | **T+1** (A-shares) | T+1 | Daily | N/A |
+| **India** (CCIL) | T+1 (since January 2023 for equities at NSCCL) | T+1 (G-Sec outright) | Daily | Per maturity |
+| **Saudi Arabia** (Muqassa) | **T+2** | T+2 | Daily | N/A |
+
+### 3.2 T+1 Transition Status
+
+| Market | Current | T+1 Status | Target Date | Notes |
+|--------|---------|-----------|-------------|-------|
+| **United States** | T+1 | **Completed** | May 28, 2024 | NSCC clearing fund reduced ~23% ($3B); affirmation rate reached ~95% |
+| **Canada** | T+1 | **Completed** | May 27, 2024 | Moved one day before US |
+| **India** | T+1 | **Completed** | January 27, 2023 | Pioneer -- first major market to adopt T+1 |
+| **China** | T+1 | **Already at T+1** | N/A | A-shares have operated at T+1 for decades |
+| **United Kingdom** | T+2 | **Planning** | Q4 2027 (proposed) | UK Accelerated Settlement Taskforce report issued |
+| **European Union** | T+2 | **Planning** | October 11, 2027 (proposed) | ESMA recommended T+1 by this date |
+| **Japan** | T+2 | **Monitoring** | No firm date | JGBs already at T+1; equities T+1 under discussion |
+| **Hong Kong** | T+2 | **Consulting** | No firm date | HKEX published discussion paper July 2025; systems ready by end-2025 |
+| **Singapore** | T+2 | **Considering** | No firm date | MAS engaged with CDP; cautious industry stance |
+| **Australia** | T+2 | **Under review** | No firm date | Dependent on CHESS replacement progress |
+| **South Korea** | T+2 | **Monitoring** | No firm date | KRX evaluating global trends |
+
+### 3.3 T+0 / Instant Settlement
+
+- **India**: Pioneer in shortened settlement. NSE's NSCCL achieved T+1 for equities in January 2023, making India the first major market. SEBI is now piloting T+0 and instant settlement for select securities.
+- **China**: CSDC effectively operates T+1 for A-shares (settlement next day), with some bond products settling T+0. China's pre-funding model ensures settlement certainty.
+- **DLT Initiatives**: DTCC's Project Ion processes 100,000+ equity transactions daily on R3 Corda in parallel production; CME is piloting tokenization with Google Cloud Universal Ledger (GCUL); Eurex Clearing launched DLT-enabled collateral mobilization with HQLAx (July 2025).
+
+---
+
+## 4. DVP Model Comparison
+
+### 4.1 DVP Models in Use
+
+| CCP/CSD | BIS DVP Model | Description | Cash Settlement Medium |
+|---------|--------------|-------------|----------------------|
+| **DTC** (DTCC) | Model 2 | Gross securities transfers, net funds settlement | Federal Reserve NSS (central bank money) |
+| **NSCC/CNS** | Model 2 | Net delivery obligations through DTC, net money | Federal Reserve NSS |
+| **FICC-GSD** | Model 1 (Fedwire) | Gross, real-time via Fedwire Securities | Federal Reserve (central bank money) |
+| **LCH Ltd** (EquityClear) | Model 3 | Net-net (multilateral net securities + net cash) | PPS (commercial bank money); BoE reserves for GBP |
+| **LCH SA** | Model 1 / Model 3 | Depends on CSD/settlement arrangement | Banque de France / TARGET (central bank money for EUR) |
+| **OCC** | Via NSCC Accord | Exercise/assignment via NSCC/DTC | Fedwire / commercial bank |
+| **CME** | Model 1 (physical delivery) | Gross DVP via Fedwire Securities (for Treasuries) | BMO Harris, JPMorgan, Citibank (commercial bank money); Fed for Treasuries |
+| **Eurex Clearing** | Model 1 | Gross DVP via Clearstream/T2S | T2 / TARGET (central bank money for EUR); commercial bank also available |
+| **JSCC** | Model 3 | Net securities (JASDEC) + net funds (BOJ-NET/settlement banks) | BOJ-NET (central bank money for JGB); designated settlement banks (commercial) |
+| **HKSCC** | Model 2 variant | Net securities, RTGS cash via CHATS | CHATS (RTGS, linked to central bank) |
+| **CDP** (Singapore) | Model 3 | DVP through CDP post-trade system | MAS settlement (central bank money) [unverified] |
+| **Cboe Clear Europe** | Model 3 | Net-net through 15+ CSDs | Via relevant national CSDs (various) |
+| **ASX Clear** | Model 3 | Multilateral net batch via CHESS | RBA (central bank money via RITS) |
+| **CSDC** (China) | Model 3 | Net securities + net funds | PBOC / designated banks |
+| **CDS** (Canada) | Model 2 | Net securities, net funds via CDSX | Bank of Canada (central bank money) |
+| **KRX/KSD** | Model 3 | Net securities (KSD) + net funds (settlement banks) | BOK (central bank money for gov bonds); commercial settlement banks |
+
+### 4.2 Central Bank Money vs Commercial Bank Money
+
+| Settlement Type | CCPs/CSDs Using | Advantages | Disadvantages |
+|----------------|----------------|-----------|---------------|
+| **Central Bank Money** | DTC (via Fed NSS), FICC (Fedwire), Eurex (T2S/TARGET), JSCC-JGB (BOJ-NET), ASX (RITS), CDS Canada (BoC) | Eliminates commercial bank credit risk; highest safety per PFMI Principle 9 | Limited operating hours; currency-specific |
+| **Commercial Bank Money** | LCH Ltd (PPS), CME (settlement banks), CDP [unverified], most cross-border settlements | Greater flexibility; multi-currency; extended hours | Introduces settlement bank credit risk |
+| **Hybrid** | Most major CCPs use both depending on product and currency | Balances safety and operational flexibility | More complex to manage |
+
+---
+
+## 5. Interoperability Map
+
+### 5.1 CCP Interoperability Arrangements
+
+CCP interoperability -- where two or more CCPs clear the same product and maintain mutual risk exposures -- is primarily a European phenomenon.
+
+| CCP 1 | CCP 2 | Products | Venue(s) | Status |
+|--------|--------|----------|----------|--------|
+| **LCH Ltd** (EquityClear) | **SIX x-clear** | Cash equities | SIX Swiss Exchange | Active |
+| **LCH Ltd** (EquityClear) | **Cboe Clear Europe** | Cash equities | Cboe Europe, other MTFs | Active |
+| **SIX x-clear** | **Cboe Clear Europe** | Cash equities | Multiple European venues | Active |
+
+**No interoperability links exist for:**
+- U.S. CCPs (DTCC, CME, OCC, ICE) -- concentrated domestic structure
+- Asian CCPs (JSCC, HKEX clearing houses, CDP) -- domestic monopoly models
+- OTC derivatives clearing -- each CCP operates independently
+
+### 5.2 CSD Linkages
+
+| CSD/ICSD | Type | Key Links |
+|----------|------|-----------|
+| **DTC** (DTCC) | Domestic CSD (U.S.) | Fedwire Securities; operational links with Euroclear Bank, Clearstream, CDS Canada |
+| **Euroclear Bank** | ICSD | Bridge with Clearstream; links to 48 domestic markets; T2S (connected Sep 2023) |
+| **Clearstream** (CBL/Europe) | ICSD + CSD | Bridge with Euroclear Bank; T2S (50%+ of T2S volume); 60 markets access |
+| **T2S** (ECB) | Settlement platform | 24 CSDs from 23 European countries; central bank money settlement |
+| **JASDEC** | CSD (Japan) | Links with Euroclear, Clearstream for cross-border settlement |
+| **HKSCC/CCASS** | CSD (Hong Kong) | ChinaClear (Stock Connect); Euroclear (Bond Connect) |
+| **CSDC/ChinaClear** | CSD (China) | HKSCC (Stock Connect); Euroclear (Bond Connect); expanding global links |
+| **KSD** (Korea) | CSD (Korea) | Links with Euroclear, Clearstream, DTC for cross-border settlement |
+
+### 5.3 Cross-Border Clearing Arrangements
+
+| Arrangement | Participants | Description |
+|-------------|-------------|-------------|
+| **Stock Connect** (Shanghai/Shenzhen-Hong Kong) | HKSCC, ChinaClear | Mutual market access for equities; HKSCC as sole clearing participant of ChinaClear for northbound; ChinaClear as clearing agency participant of HKSCC for southbound |
+| **Bond Connect** | CMU (HKMA), CFETS, ChinaClear | Northbound and southbound bond market access; multi-currency settlement (CNY, HKD, USD, EUR) |
+| **Swap Connect** | OTC Clear (HKEX), CFETS | Northbound IRS mutual access; launched May 2023; tenor extended to 30 years |
+| **CME-FICC Cross-Margining** | CME Clearing, FICC (DTCC) | Capital efficiencies for U.S. Treasury cash and futures positions; launched Jan 2024; customer extension proposed |
+| **CME-OCC Cross-Margining** | CME Clearing, OCC | Equity index options (OCC) vs equity index futures (CME); established 1989 |
+| **DTCC Cross-Guaranty** | NSCC, FICC, DTC, OCC | Mutual support among DTCC subsidiaries + OCC in member default scenarios |
+| **Canton Network** | DTCC, Euroclear, others | DLT-based cross-border tokenization and collateral infrastructure |
+
+---
+
+## 6. PFMI Compliance Status
+
+### 6.1 Compliance Overview
+
+| CCP | PFMI Self-Assessment | QCCP Status | Cover Standard | Key Gaps / Issues |
+|-----|---------------------|-------------|---------------|-------------------|
+| **NSCC** (DTCC) | Yes (Q1 2025) | Yes (Basel III) | Cover 1 | Ongoing focus on cyber resilience, recovery planning |
+| **FICC** (DTCC) | Yes | Yes | Cover 1 | Treasury clearing mandate implementation (2026-2027) |
+| **DTC** (DTCC) | Yes (Q1 2024) | Yes | N/A (CSD) | Settlement transformation underway |
+| **LCH Ltd** | Yes (Q3 2024) | Yes (multi-jurisdictional) | Cover 2 | Post-Brexit equivalence (extended to June 2028); EU Tier 2 classification |
+| **LCH SA** | Yes (Q1 2025) | Yes (EU-authorized) | Cover 2 | Service realignment after Euronext departure |
+| **OCC** | Yes | Yes | Cover 2 | 2019-2021 Clearing Fund underfunding ($200-588M); SEC/CFTC penalties ($22M); Renaissance tech modernization |
+| **CME Clearing** | Yes (Nov 2023) | Yes (ESMA-recognized) | Cover 2 | Nov 2025 data center outage; SPAN-to-SPAN 2 transition |
+| **Eurex Clearing** | Yes | Yes (EU-authorized, CFTC DCO) | Cover 2 | EMIR 3.0 active account compliance; Prisma Bonds migration |
+| **JSCC** | Yes (Mar 2025) | Yes (EU, CFTC exempt DCO, multi-jurisdictional) | Cover 2 | SPAN-to-VaR migration completed; default fund consolidation under consideration |
+| **HKSCC/HKCC/SEOCH** | Yes (2024) | [unverified -- ESMA recognition pending confirmation] | Cover 2 | T+1 transition planning; USM implementation |
+| **CDP** (Singapore) | Yes | [data not available] | [data not available] | Small clearing fund relative to market size |
+| **Cboe Clear Europe** | Yes | Yes (EU-authorized) | Cover 1 or Cover 2 (per EMIR) | SFT clearing launch (Mar 2025); small SITG |
+| **ICE Clear U.S.** | Yes | Yes [unverified] | Cover 2 | IRM 2 rollout ongoing |
+| **ICE Clear Europe** | Yes | Yes (UK/EU recognized) | Cover 2 | IRM 2 rollout ongoing |
+| **ICE Clear Credit** | Yes | Yes (SIFMU) | Cover 2 | U.S. Treasury clearing launched Feb 2026 |
+| **ASX Clear / Clear (Futures)** | Yes | Yes (ESMA-recognized) | Cover 2 | **RBA downgraded to "not observed" on Operational Risk** (2024/25); CHESS failure (Dec 2024); ASIC Inquiry launched (Jun 2025); credit stress test errors identified |
+| **KRX** | Yes (IMF FSAP 2014) | Yes [unverified] | Cover 2 [unverified] | No dedicated CCP R&R regime; margin methodology modernization pending |
+| **CCIL** (India) | Yes | Yes (RBI-designated) | [data not available] | **ESMA derecognition** (2022-2026) due to MoU dispute with RBI; resolved 2026 with new MoU |
+
+### 6.2 CPMI-IOSCO PQD Disclosure Quality
+
+| Tier | Organizations | PQD Frequency | Quality Assessment |
+|------|--------------|---------------|-------------------|
+| Best practice | DTCC (NSCC, FICC), LCH (Ltd, SA), Eurex, CME, OCC, ICE entities | Quarterly | Comprehensive; 200+ data fields; multi-year historical data available |
+| Good | JSCC, HKEX clearing houses, CDP, Cboe Clear Europe, ASX, SIX x-clear | Quarterly | Standard compliance; some gaps in detail |
+| Limited | CSDC (ChinaClear), CCIL, Muqassa, CDS Canada | Varies | Limited public PQD availability; CSDC publishes minimal data compared to Western CCPs |
+
+---
+
+## 7. Technology / System Comparison
+
+### 7.1 Clearing Platform Comparison
+
+| CCP | Core System | In-house/Vendor | Cloud Strategy | DLT Initiatives |
+|-----|-----------|----------------|----------------|-----------------|
+| **DTCC** (NSCC/DTC/FICC) | CNS (mainframe), DTC Settlement, FICC RTTM | In-house (proprietary) | AWS (SEC no-objection for core systems on public cloud) | Project Ion (R3 Corda, 100K+ txns/day); ComposerX on Canton Network; tokenization MVP H1 2026 |
+| **LCH Ltd/SA** | Millennium Clearing & Risk (MCCP); Murex MX.3 (SwapClear) | Hybrid (LSEG Technology + Murex) | AWS (collateral management migrated Q2 2025); Azure (LSEG-Microsoft partnership) | DigitalAssetClear (LCH SA, GFO-X partnership, 2024) |
+| **OCC** | ENCORE (legacy, since 2000) -> **Ovation** (AWS cloud-native) | In-house | AWS (Ovation platform; SEC no-objection Oct 2022) | Axoni DLT for securities lending modernization |
+| **CME Clearing** | CME Clearing Systems (proprietary); CME Globex; CME CORE; ClearPort | In-house | Google Cloud (10-year strategic partnership; private cloud region in Aurora, IL) | Google Cloud Universal Ledger (GCUL) tokenization pilot; Phase 2 settlement focus |
+| **Eurex Clearing** | **C7** (next-gen clearing architecture); **Prisma** (margin engine) | In-house + TCS partnership | Google Cloud (D7, cPME, analytics); on-premise core | DLT-enabled collateral mobilization with HQLAx/Clearstream (July 2025); D7 digital securities platform |
+| **JSCC** | Proprietary clearing systems per business; VaR Margin Software (VMA) | In-house | [data not available] | DTCC sandbox collateral tokenization pilot |
+| **HKEX** (HKSCC/HKCC/SEOCH) | CCASS (securities); DCASS (derivatives); NGRM (risk) | In-house | [data not available] | [data not available] |
+| **CDP** (Singapore) | Post-Trade System (PTS, LSEG Technology, ISO 20022) | Vendor (LSEG Technology) | [data not available] | Marketnode DLT-enabled digital bond issuance (June 2022) |
+| **Cboe Clear Europe** | Proprietary clearing system with RTRM (real-time risk) | In-house | [data not available] | [data not available] |
+| **ICE Clear** entities | ICE Risk Model (IRM 1/IRM 2); proprietary clearing platforms | In-house | [data not available] | [data not available] |
+| **ASX Clear / Clear (Futures)** | CHESS (settlement, 1996); Genium INET (derivatives); Calypso (OTC) | Mixed (Nasdaq/Genium, Calypso, in-house CHESS) | [data not available] | CHESS replacement abandoned (DLT, Nov 2022; AUD 250M write-off); TCS selected as new partner (2023); CHESS Release 1 planned April 2026 |
+| **SIX x-clear** | SECOM | In-house | [data not available] | SIX Digital Exchange (SDX) for digital assets |
+| **CSDC** (ChinaClear) | Proprietary systems (Shanghai/Shenzhen branches) | In-house | [data not available] | [data not available] |
+| **CCIL** (India) | ClearCorp dealing systems (NDS-OM, TREPS, FX-CLEAR) | In-house (via subsidiary ClearCorp) | [data not available] | [data not available] |
+| **CDS** (Canada) | CDSX (integrated C&S platform, 2003) | In-house | [data not available] | Post-Trade Modernization (PTM) initiative underway |
+| **Muqassa** | [data not available -- reportedly NASDAQ technology initially] | Vendor | [data not available] | [data not available] |
+| **KRX/KSD** | EXTURE+ (clearing integrated); KSD Settlement System | In-house (KOSCOM) | [data not available] | Security token registration (2027 via KSD) |
+
+### 7.2 Processing Capacity Comparison
+
+| CCP/CSD | Peak Daily Volume | Key Capacity Metric |
+|---------|-------------------|-------------------|
+| **NSCC** | $5.55 trillion value (April 9, 2025) | 98% netting efficiency |
+| **FICC-GSD** | $13.2 trillion value (December 1, 2025) | 42% YoY activity increase (2024) |
+| **DTC** | $100+ trillion assets under custody | 1.44M+ securities issues from 170+ countries |
+| **LCH** (SwapClear) | $779 trillion notional cleared H1 2024 | ~10 second novation time; $240B IM held |
+| **LCH** (EquityClear MCCP) | 80M trade sides in first 5 days (March 2020 COVID) | 20M trades / 1,600 trades/sec capacity |
+| **OCC** | 110 million contracts (October 10, 2025) | >2M instrument prices/sec; 12.2B contracts/year (2024) |
+| **CME** | 28.1 million contracts ADV (2025) | 1 billion+ trades/year; $1 quadrillion+ notional |
+| **Eurex Clearing** | EUR 11+ trillion/month | 2,065.9 million contracts (2025) |
+| **JSCC** (IRS) | JPY 8.3 quadrillion cleared (2024) | ~60-70% global share of cleared JPY IRS |
+| **Cboe Clear Europe** | 1.2 billion client trades (2024) | EUR 49.3B avg daily CCP protection value |
+| **CSDC** (ChinaClear) | ~237 million investor accounts | RMB 11.05 quadrillion securities under custody |
+
+### 7.3 ISO 20022 / SWIFT Migration Status
+
+| Organization | ISO 20022 Status | Details |
+|-------------|-----------------|---------|
+| **DTCC** | In progress | DTC converted corporate actions to ISO 20022 SR2025 (November 2025); settlement transformation targeting legacy format decommission Q3 2027 |
+| **CDP** (Singapore) | Completed (2016) | Phase 1 of Post-Trade System went live with ISO 20022 messaging (January 2016) -- early adopter |
+| **LCH** | Early adopter | ISO 20022 for collateral management |
+| **Eurex/Clearstream** | In progress | Via T2S adoption; D7 digital securities platform |
+| **SWIFT** network | Industry-wide migration | SWIFT ISO 20022 migration for payments (TARGET, CHAPS, Fedwire) largely complete 2023-2025; securities messaging ongoing |
+
+---
+
+## 8. Regulatory Framework Comparison
+
+### 8.1 Regional Regulatory Summary
+
+| Aspect | U.S. | EU | Japan | Hong Kong | Singapore | Australia | Korea |
+|--------|------|-----|-------|-----------|-----------|-----------|-------|
+| **Primary CCP Regulator** | SEC (securities); CFTC (derivatives) | NCAs + ESMA supervisory college | JFSA | SFC | MAS | ASIC + RBA | FSC / FSS |
+| **Systemic Oversight** | FSOC / Federal Reserve (Title VIII) | ESRB / ECB | BOJ | HKMA (CSSO) | MAS (dual role) | RBA (FSS) | BOK |
+| **CCP Authorization** | SEC Rule 17A (clearing agency); CFTC Part 39 (DCO) | EMIR Article 14 | FIEA (CCP licensing) | SFO Part III (RCH recognition) | SFA (ACH designation) | Corporations Act (CS facility license) | FSCMA |
+| **SIFMU/Systemic Designation** | Yes (8 SIFMUs designated July 2012) | Implicit under EMIR (all authorized CCPs) | JFSA critical FMI designation | No formal SIFMU designation | MAS systemic FMI designation | No formal SIFMU designation | Systemic importance recognized |
+| **Clearing Mandate (OTC)** | Yes (Dodd-Frank; IRS, CDS) | Yes (EMIR; IRS, CDS) | Yes (FIEA; JPY IRS, iTraxx Japan CDS) | Yes (SFO Part IIIA; IRS, NDF) | Yes (SFA) | Yes (limited scope) | Yes (limited scope) |
+| **Recovery & Resolution** | SEC Rule 17ad-26; Dodd-Frank Title II (FDIC) | EU CCP RRR (Regulation 2021/23, fully applicable Feb 2023) | No dedicated CCP R&R regime; FIEA powers | SFO Division 3 | No dedicated CCP R&R regime | No dedicated CCP R&R legislation | No dedicated CCP R&R regime [unverified] |
+| **Settlement Finality** | Federal law (FDICIA, Bankruptcy Code, SIPA, Dodd-Frank) | EU Settlement Finality Directive (98/26/EC) | FIEA; Book-Entry Transfer Act; BOJ Act | SFO Division 3 (market contracts protection) | SFA | Payment Systems and Netting Act 1998 | Capital Market Act |
+| **Third-Country CCP Recognition** | CFTC exempt/registered DCO; SEC registered clearing agency | EMIR Article 25 (Tier 1/Tier 2); equivalence decisions | JFSA foreign CCP recognition | SFC recognized clearing house | MAS recognized clearing house | ASIC/RBA foreign CS facility | [data not available] |
+
+### 8.2 CCP Resolution Frameworks Comparison
+
+| Framework | Jurisdiction | Key Features | Applicable CCPs |
+|-----------|-------------|-------------|-----------------|
+| **Dodd-Frank Title VIII + Title II** | U.S. | SIFMU designation; Federal Reserve backstop lending; FDIC Orderly Liquidation Authority for resolution; SEC Rule 17ad-26 for R&W plans | NSCC, FICC, DTC, OCC, CME, ICE Clear Credit |
+| **EU CCP RRR** (Regulation 2021/23) | EU | Mandatory recovery plans; resolution authority designation (NCA); resolution tools (cash calls, VMGH, write-down, position allocation, bridge CCP); fully applicable since Feb 2023 | Eurex Clearing, LCH SA, Cboe Clear Europe, all EU-authorized CCPs |
+| **UK framework** | UK | Bank of England as resolution authority; statutory powers under FSMA/Banking Act for CCPs; CBEST cyber resilience testing | LCH Ltd, ICE Clear Europe |
+| **Japan** | Japan | No dedicated CCP R&R regime; JFSA uses FIEA enforcement powers (business improvement orders, license revocation) | JSCC |
+| **Hong Kong** | Hong Kong | SFC powers under SFO; no dedicated CCP R&R framework | HKSCC, HKCC, SEOCH, OTC Clear |
+| **Australia** | Australia | No dedicated CCP resolution legislation; RBA/ASIC coordination under existing Corporations Act and Reserve Bank Act | ASX Clear, ASX Clear (Futures) |
+
+### 8.3 Clearing Mandates Comparison
+
+| Jurisdiction | Products Subject to Clearing Mandate | CCP(s) Available |
+|-------------|-------------------------------------|-----------------|
+| **U.S.** | IRS (USD, EUR, GBP, JPY), CDS indices (CDX); proposed: U.S. Treasury cash (Dec 2026) and repo (Jun 2027) | CME, LCH Ltd (IRS); ICE Clear Credit (CDS); FICC, CME Securities Clearing, ICE Clear Credit (Treasuries) |
+| **EU** | IRS (EUR, GBP, JPY, NOK, PLN, SEK), CDS indices (iTraxx); EMIR 3.0 active account requirement for systemically important products | LCH Ltd, Eurex (IRS); ICE Clear Europe, LCH SA CDSClear (CDS) |
+| **Japan** | JPY IRS (TONA-based), iTraxx Japan CDS index | JSCC (sole eligible CCP) |
+| **Hong Kong** | IRS (HKD, USD, EUR, GBP, JPY), NDF (select currencies) | OTC Clear |
+| **Singapore** | IRS (SGD), NDF (selected) | SGX-DC |
+| **Korea** | KRW IRS, KRW CRS [limited scope] | KRX (domestic CCP) |
+
+---
+
+## 9. Fee Structure Comparison
+
+### 9.1 Clearing Fee Models
+
+| CCP | Fee Model | Representative Rate | Notes |
+|-----|-----------|--------------------|----|
+| **NSCC** | Per-transaction | $0.21 per CNS delivery (increased from $0.17 in 2025) | Schedule-based; FICC-GSD charges 0.25% p.a. on cash clearing fund deposits |
+| **OCC** | Per-contract | **$0.025** per contract (options, effective Feb 2025) | Increased from $0.02; per-transaction cap removed; occasional fee holidays (Dec 2025) |
+| **CME** | Per-side, per-contract | **$0.707** average rate per side (Q4 2025) | Varies by product; volume incentive programs; member vs non-member tiers |
+| **Eurex** | Per-contract | Product-specific with volume-based rebate tiers | 2026 pricing changes for equity index, FI futures; Prisma margin savings offset clearing costs |
+| **LCH** (SwapClear) | Annual fee + tiered per-trade | USD 250,000/year (self-clearing via LCH LLC) | Tiered trade registration and maintenance fees |
+| **LCH** (CDSClear) | Annual membership | EUR 400,000/year (Dealer status) | First-year fee waiver for new members |
+| **JSCC** | Per-transaction (notional-based for OTC) | Reportedly 50-67% lower than comparable global CCP rates for OTC | Competitive pricing strategy to attract volume |
+| **Cboe Clear Europe** | Per-trade | [see individual file] | Cross-venue netting reduces effective cost |
+| **ASX** | Per-trade | [see individual file] | Vertically integrated pricing |
+| **HKSCC** | Settlement fee | 0.0042% flat rate (effective June 30, 2025) | Recently restructured from tiered to flat rate |
+| **KRX** | Bundled with exchange fee | Clearing component ~0.0001%-0.001% of notional | Integrated exchange-CCP model |
+
+---
+
+## 10. Summary Tables
+
+### 10.1 Master Comparison Table
+
+| Organization | Country | Type | Parent/Owner | Est. | Products | Margin Method | Confidence | MPOR (ETD/OTC) | Cover Std | DF Size (approx.) | SITG | Settlement Cycle (Equities) | DVP Model | QCCP | SIFMU |
+|-------------|---------|------|-------------|------|----------|--------------|-----------|----------------|-----------|-------------------|------|---------------------------|-----------|------|-------|
+| **DTCC** (NSCC/FICC/DTC) | U.S. | CCP+CSD | User-owned | 1999 | Equities, FI, MBS, repos | VaR | 99% | 3d / N/A | Cover 1 | NSCC ~$11.2B; FICC-GSD IM $65.5B | ~$25-50M | T+1 | Model 2 | Yes | Yes |
+| **LCH** (Ltd+SA) | UK/France | CCP | LSEG (82.6%) | 1888 | OTC IRS, FX, repos, equities, CDS | PAIRS (ES/FHS) | 99.7% | N/A / 5-7d | Cover 2 | SwapClear ~GBP 6B; CDSClear ~EUR 2.8B | ~GBP 35M | T+2 (UK) | Model 1/3 | Yes | N/A (UK) |
+| **OCC** | U.S. | CCP | Exchange-owned | 1973 | Equity options, futures, stock lending | STANS (Monte Carlo ES) | 99% ES | 2d / N/A | Cover 2 | ~$19.5B | $69-76M | T+1 | Via NSCC | Yes | Yes |
+| **CME Clearing** | U.S. | CCP | CME Group | 1919 | Futures, options, OTC IRS, FX, crypto | SPAN / SPAN 2 (HVaR+ES) | 99-99.7% | 1d / 5d | Cover 2 | ~$10.1B (GF total) | $250M ($100M Base + $150M IRS) | N/A (derivatives) | Model 1 (delivery) | Yes | Yes |
+| **Eurex Clearing** | Germany | CCP | Deutsche Borse | 1998 | Listed derivatives, OTC IRS, repos, equities, lending | Prisma (FHS-VaR) | 99-99.5% | 2-3d / 5d | Cover 2 | ~EUR 3B | EUR 1.7B (total DB commitment) | T+2 (EU) | Model 1 | Yes | N/A (EU) |
+| **JSCC** | Japan | CCP | JPX | 2002 | Equities, derivatives, OTC IRS/CDS, JGB | VaR / HS-ES | 99%+ | 1-2d / 5-7d | Cover 2 | JGB Futures JPY 64.7B; OTC JGB JPY 237B | JPY 9.1B (aggregate reserves) | T+2 | Model 3 | Yes | N/A |
+| **HKSCC** | Hong Kong | CCP+CSD | HKEX | 1992 | Securities (SEHK + Stock Connect) | VaR (Tier P); flat-rate (Tier N) | [varies] | T+2 exposure | Cover 2 | HKD 7.3B (Guarantee Fund threshold) | 10% of GF | T+2 | Model 2 | [unverified] | N/A |
+| **HKCC** | Hong Kong | CCP | HKEX | 1989 | Futures & derivatives (HKFE) | PRiME (SPAN-like) | [varies] | 1d | Cover 2 | HKD 7.3B (Reserve Fund threshold) | 10% of RF | Daily | N/A | [unverified] | N/A |
+| **SEOCH** | Hong Kong | CCP | HKEX | 1995 | Stock options (SEHK) | PRiME (SPAN-like) | [varies] | 1d | Cover 2 | HKD 3.6B (Reserve Fund threshold) | 10% of RF | T+1/T+2 | N/A | [unverified] | N/A |
+| **CDP** | Singapore | CCP+CSD | SGX | 1987 | Securities (SGX-ST) | Risk-based VaR | 99% | 1-5d | [data not available] | S$80M | >=25% of CF | T+2 | Model 3 | [data not available] | N/A |
+| **Cboe Clear Europe** | Netherlands | CCP | Cboe | 2007 | Cash equities, equity derivatives, SFTs | Historical CVaR | 99% | 2d | Cover 1/2 | [data not available] | ~EUR 6.8M | T+2 (EU) | Model 3 | Yes (EU) | N/A |
+| **ICE Clear U.S.** | U.S. | CCP | ICE | 2007 | Agri, energy, equity derivatives | IRM 1/IRM 2 (FHS-VaR) | [varies] | 1d | Cover 2 | [data not available] | ~$75M | N/A (derivatives) | N/A | Yes [unverified] | No |
+| **ICE Clear Europe** | UK | CCP | ICE | 2008 | Energy, FI, equities, softs, freight | IRM 1/IRM 2 | [varies] | 1d | Cover 2 | ~$2.9B (GF min) | ICE SITG + $100M insurance | N/A (derivatives) | N/A | Yes | No |
+| **ICE Clear Credit** | U.S. | CCP | ICE | 2009 | CDS, U.S. Treasuries (from 2026) | [CDS-specific model] | [varies] | N/A | Cover 2 | [data not available] | $100M + $75M insurance | N/A | N/A | Yes | Yes |
+| **ASX Clear** | Australia | CCP | ASX | 1969 | Cash equities, ETOs | FHSVaR (cash); SPAN (ETOs) | High | Settlement / 1d | Cover 2 | AUD 250M (100% ASX) | AUD 250M (100%) | T+2 | Model 3 | Yes | N/A |
+| **ASX Clear (Futures)** | Australia | CCP | ASX | 1999 | Futures, OTC IRS, energy, agri | SPAN (ETD); FHSVaR (OTC) | 3 std dev | 1d / 5d | Cover 2 | AUD 650M | AUD 450M (69%) | Daily | N/A | Yes | N/A |
+| **SIX x-clear** | Switzerland | CCP | SIX Group | 2003 | Cash equities, bonds | SECOM-based | [data not available] | [data not available] | [data not available] | [data not available] | [data not available] | T+2 | [data not available] | Yes (FINMA) | N/A |
+| **Euroclear** | Belgium | ICSD+CSDs | User-owned | 1968 | International + domestic securities (48 markets) | N/A (CSD, not CCP) | N/A | N/A | N/A | N/A | N/A | T+2 (EU) | Model 1/3 | N/A | N/A |
+| **Clearstream** | Luxembourg/Germany | ICSD+CSD | Deutsche Borse | 2000 | International + domestic securities (60 markets) | N/A (CSD, not CCP) | N/A | N/A | N/A | N/A | N/A | T+2 (EU) | Model 1/3 | N/A | N/A |
+| **CSDC** | China | CCP+CSD | SSE+SZSE (50/50) | 2001 | A-shares, bonds, ETFs, options | [data not available] | [data not available] | [data not available] | [data not available] | [data not available] | [data not available] | T+1 | Model 3 | N/A | N/A |
+| **CCIL** | India | CCP | SBI + banks | 2001 | G-Sec, TREPS, forex, IRS | [data not available] | [data not available] | [data not available] | [data not available] | [data not available] | [data not available] | T+0 to T+2 | [data not available] | Yes (RBI; ESMA derecognized 2022-2026) | N/A |
+| **CDS** | Canada | CCP+CSD | TMX Group | 1970 | Equities (CCP via CNS), bonds (settlement only) | [data not available] | [data not available] | [data not available] | [data not available] | [data not available] | [data not available] | T+1 | Model 2 | N/A | Yes (BoC designated) |
+| **Muqassa** | Saudi Arabia | CCP | Saudi Tadawul Group | 2018 | Equities, sukuk, derivatives, repo | [data not available] | [data not available] | [data not available] | [data not available] | [data not available] | [data not available] | T+2 | [data not available] | Yes (CMA designated) | N/A |
+| **KRX** | South Korea | CCP (integrated exchange-CCP) | Public institution (FSC) | 2005 | Equities, derivatives, bonds, OTC IRS/CRS | KRX-SPAN | Not disclosed | 1d / N/A | Cover 2 [unverified] | ~KRW 100B (~$75M) | [data not available] | T+2 | Model 3 | Yes [unverified] | N/A |
+| **KSD** | South Korea | CSD | Public institution (FSC) | 1974 | All listed securities, bonds, ETFs, funds | N/A (CSD) | N/A | N/A | N/A | N/A | N/A | T+2 | Model 3 | N/A | N/A |
+
+### 10.2 Global Ranking by Scale
+
+**By Total Initial Margin Held (approximate, most recent available data):**
+
+| Rank | CCP | Approximate Total IM | Period |
+|------|-----|---------------------|--------|
+| 1 | **LCH Ltd** (SwapClear alone) | ~$240 billion | Q4 2024 |
+| 2 | **OCC** | ~$180 billion | Q3 2025 |
+| 3 | **CME Clearing** | ~$87.4 billion (cash at Fed, inc. IM + GF) | Dec 2024 |
+| 4 | **FICC-GSD** (DTCC) | ~$65.5 billion | Q4 2024 |
+| 5 | **Eurex Clearing** | ~EUR 44 billion (OTC IRS + FI + other) | Q1 2025 partial |
+| 6 | **ICE Clear U.S.** | ~$23 billion | Q3 2025 |
+| 7 | **ICE Clear Credit** | >$20 billion (at Federal Reserve) | 2025 |
+| 8 | **NSCC** (DTCC) | ~$11.2 billion (Clearing Fund) | 2024 avg |
+| 9 | **LCH** (ForexClear) | ~$10.7 billion | Q2 2024 |
+| 10 | **LCH SA** (CDSClear) | ~$10.2 billion | Q4 2024 |
+
+**By Default Fund Size (approximate):**
+
+| Rank | CCP | Approximate DF Size |
+|------|-----|-------------------|
+| 1 | **OCC** | ~$19.5 billion |
+| 2 | **NSCC** (DTCC) | ~$11.2 billion |
+| 3 | **CME** (Base + IRS GFs) | ~$10.1 billion |
+| 4 | **HKSCC** | HKD 7.3 billion (~$935M) |
+| 5 | **HKCC** | HKD 7.3 billion (~$935M) |
+| 6 | **LCH Ltd** (SwapClear) | ~GBP 6 billion (~$7.6B) |
+| 7 | **ICE Clear Europe** (F&O) | ~$2.9 billion |
+| 8 | **Eurex Clearing** | ~EUR 3 billion |
+| 9 | **LCH SA** (CDSClear) | ~EUR 2.77 billion |
+| 10 | **ASX Clear (Futures)** | AUD 650 million (~$430M) |
+
+**By Assets Under Custody (CSDs):**
+
+| Rank | CSD | Approximate AUC |
+|------|-----|----------------|
+| 1 | **DTC** (DTCC) | $100+ trillion |
+| 2 | **Euroclear** (Group) | EUR 42.5 trillion |
+| 3 | **Clearstream** (Group) | EUR 20+ trillion |
+| 4 | **CSDC** (ChinaClear) | RMB 11.05 quadrillion (~$1.5 quadrillion) [note: this figure may represent custody value rather than AUC] |
+| 5 | **KSD** (Korea) | KRW 3,149 trillion (~$2.4 trillion) [data as of 2014] |
+
+### 10.3 KRX/KSD Positioning
+
+Korea's post-trade infrastructure, centered on KRX (as CCP) and KSD (as CSD), can be benchmarked against global peers across key dimensions:
+
+**Structural Model:**
+- KRX operates as an integrated exchange-CCP entity (similar to pre-reform structures), while most Tier 1 peers separate exchange and CCP functions (e.g., JPX/JSCC, HKEX/HKSCC, CME Group/CME Clearing)
+- KSD operates as a separate CSD, comparable to JASDEC (Japan), Clearstream (Germany), or HKSCC's depository function
+- The KRX-KSD split mirrors the CDP-SGX-DC model in Singapore and the JSCC-JASDEC model in Japan
+
+**Margin Methodology:**
+- KRX uses KRX-SPAN (modified SPAN) for listed derivatives -- placing it alongside HKCC (PRiME/SPAN) and ASX Clear (Futures) (SPAN) in the SPAN-based group
+- The global trend is moving away from SPAN toward VaR/ES-based methods (CME SPAN 2, JSCC VaR, Eurex Prisma, ICE IRM 2). KRX may consider a similar migration to align with global best practices
+- For OTC clearing, KRX uses a VaR-based method, consistent with the global standard
+
+**Settlement Cycle:**
+- KRX operates at T+2 for equities, in line with Japan (T+2), Hong Kong (T+2), Singapore (T+2), Australia (T+2), and the EU (T+2)
+- The U.S. and Canada moved to T+1 in May 2024; India achieved T+1 in January 2023; China operates at T+1
+- Korea is monitoring the global T+1 trend but has not announced a formal transition timeline
+- KRX settles government bonds at T+1, comparable to Japan (T+1 for JGBs since May 2018)
+
+**Default Waterfall:**
+- KRX's Joint Compensation Fund for derivatives is estimated at ~KRW 100 billion (~$75M), comparable in scale to CDP's S$80M but significantly smaller than Tier 1 CCPs
+- KRX places its own SITG contribution in the waterfall before non-defaulting members' resources, consistent with global best practice
+- The structure follows the "defaulter pays first" principle, standard across all major CCPs
+
+**OTC Clearing Scope:**
+- KRX's OTC clearing scope (KRW IRS, KRW CRS) is narrower than JSCC (JPY IRS + CDS + JGB), LCH (multi-currency IRS + FX + CDS), or CME (multi-currency IRS + FX)
+- Expanding OTC clearing mandates and product coverage would align with global trends and G20 commitments
+
+**Technology:**
+- KRX uses EXTURE+ (KOSCOM-developed, 2014), an integrated exchange-clearing platform with ~30-50 microsecond latency and 100,000+ TPS. KSD operates dedicated settlement systems with ISO 20022 adoption and SWIFT connectivity. KRX has begun exporting its clearing/settlement technology (Thai Stock Exchange contract, April 2025). KSD's security token mandatory registration framework (effective January 2027) positions Korea as an early mover in DLT-based securities infrastructure.
+- Peers are investing heavily in cloud migration (DTCC-AWS, OCC-AWS, CME-Google Cloud, LCH-AWS/Azure, Eurex-Google Cloud) and DLT-based initiatives
+- The CHESS replacement failure at ASX (AUD 250M write-off) provides a cautionary example for technology modernization projects
+
+**Regulatory Framework:**
+- Korea's FSC/FSS oversight is comparable to Japan's JFSA/BOJ and Hong Kong's SFC/HKMA dual-regulator models
+- Korea does not have a dedicated CCP recovery and resolution regime, similar to Japan, Hong Kong, Singapore, and Australia -- unlike the EU (CCP RRR fully applicable since February 2023) and the U.S. (Dodd-Frank Title VIII/Title II)
+- Developing a CCP R&R framework would align with FSB Key Attributes and global best practices
+
+**Key Recommendations for KRX/KSD:**
+1. **Margin methodology upgrade**: Consider migrating from KRX-SPAN to a VaR/ES-based methodology (following JSCC's 2023 precedent)
+2. **T+1 readiness**: Begin industry consultation and system readiness assessment for potential T+1 migration, monitoring UK/EU timelines (2027 target)
+3. **OTC clearing expansion**: Evaluate expanding OTC clearing mandates to additional currency pairs and product types
+4. **CCP R&R framework**: Advocate for dedicated CCP recovery and resolution legislation
+5. **Technology modernization**: Assess cloud migration opportunities and DLT/tokenization pilots for collateral management
+6. **Cross-border connectivity**: Leverage existing KSD links with Euroclear/Clearstream/DTC; explore deeper integration with regional CCPs (JSCC, HKSCC) for cross-border clearing arrangements
+
+---
+
+## Sources
+
+### Individual Organization Files
+- `en/organizations/dtcc.md` -- DTCC (DTC/NSCC/FICC) deep dive
+- `en/organizations/lch.md` -- LCH (Ltd & SA) deep dive
+- `en/organizations/occ.md` -- OCC deep dive
+- `en/organizations/cme_clearing.md` -- CME Clearing deep dive
+- `en/organizations/eurex_clearing.md` -- Eurex Clearing deep dive
+- `en/organizations/jscc.md` -- JSCC standard review
+- `en/organizations/hkex_clearing.md` -- HKEX Clearing (HKSCC/HKCC/SEOCH) standard review
+- `en/organizations/cdp.md` -- CDP (Singapore) standard review
+- `en/organizations/euroccp.md` -- Cboe Clear Europe standard review
+- `en/organizations/ice_clear.md` -- ICE Clear (U.S./Europe/Credit) standard review
+- `en/organizations/asx_clear.md` -- ASX Clear standard review
+- `en/organizations/six_xclear.md` -- SIX x-clear overview
+- `en/organizations/euroclear.md` -- Euroclear overview
+- `en/organizations/clearstream.md` -- Clearstream overview
+- `en/organizations/csdc.md` -- CSDC/ChinaClear overview
+- `en/organizations/ccil.md` -- CCIL overview
+- `en/organizations/cds_canada.md` -- CDS Canada overview
+- `en/organizations/muqassa.md` -- Muqassa overview
+
+### System Files
+- `en/systems/dtcc_systems.md` -- DTCC core systems (CNS, DTC Settlement, FICC RTTM, Project Ion)
+- `en/systems/lch_systems.md` -- LCH platforms (MCCP, SwapClear/Murex, PAIRS engine)
+- `en/systems/eurex_clearing_prisma.md` -- Eurex C7 architecture and Prisma margin engine
+
+### Regulation Files
+- `en/regulations/us_clearing_regulation.md` -- U.S. clearing regulatory framework
+- `en/regulations/eu_clearing_regulation.md` -- EU clearing regulatory framework (EMIR, CSDR)
+- `en/regulations/asia_clearing_regulation.md` -- Asia-Pacific clearing regulatory frameworks (Japan, Hong Kong, Singapore, Australia, Korea, India, China)
+
+### External Data Sources Referenced
+- CPMI-IOSCO Public Quantitative Disclosures (quarterly, per CCP)
+- CCP Global PQD Quarterly Trends Reports
+- Clarus Financial Technology (CCP volumes and market share analysis)
+- BIS Red Book (payment and settlement systems by country)
+- IMF FSAP assessments
+- FSB annual resolution reports
+- ESMA CCP stress test reports
+- RBA annual assessments of ASX clearing and settlement facilities

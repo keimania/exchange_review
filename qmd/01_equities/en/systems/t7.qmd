@@ -1,0 +1,417 @@
+---
+title: "T7 Trading System -- Deutsche BÃ¶rse (Xetra)"
+subtitle: "Equities > Trading Systems"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-06
+> **System Category:** Trading System
+
+---
+
+## 1. System Overview
+
+| Item | Details |
+|------|---------|
+| System Name | T7 |
+| Operated By | Deutsche BÃ¶rse AG (Xetra cash market) / Eurex Frankfurt AG (derivatives) |
+| Purpose | Unified high-performance trading platform serving the Xetra cash market, Eurex derivatives exchange, European Energy Exchange (EEX), BÃ¶rse Frankfurt, and Nodal Exchange |
+| Launch Year | December 2012 (Eurex derivatives -- first deployment); July 2017 (Xetra cash market migration) |
+| Current Version | T7 Release 14.0 (introduced 10 November 2025 for Xetra and BÃ¶rse Frankfurt) |
+| Vendor / In-house | In-house (developed by Deutsche BÃ¶rse Group technology teams; built largely in-house at Eurex) |
+
+T7 is Deutsche BÃ¶rse Group's core trading platform, designed to deliver low latency, high throughput, and flexibility across multiple asset classes and trading venues. The platform replaced Xetra's legacy trading infrastructure (which had operated for nearly two decades across 16 release versions) and the previous Eurex derivatives system. A key differentiator is the shared platform architecture: the same T7 technology underpins both cash equities trading on Xetra and derivatives trading on Eurex, enabling synergies for participants active in both markets.
+
+When first deployed at Eurex in 2012, T7 was reported to be 14 times faster than the previous platform.
+
+[Source: Xetra, "T7 trading architecture", https://www.xetra.com/xetra-en/technology/t7, accessed 2026-04-06]
+[Source: Xetra, "Xetra -- the electronic trading platform of Deutsche BÃ¶rse", https://live.deutsche-boerse.com/en/know-how/about/geschichte-der-frankfurter-wertpapierboerse/xetra-der-elektronische-handelsplatz-der-deutschen-boerse, accessed 2026-04-06]
+[Source: CFTC, "Eurex Exhibit D -- Automated Trading System", https://www.cftc.gov/sites/default/files/idc/groups/public/@otherif/documents/ifdocs/eub53formfbotexhibitd-tradin.pdf, accessed 2026-04-06]
+
+### System Evolution
+
+| Period | System / Version | Key Changes |
+|--------|-----------------|-------------|
+| 1997 | Xetra (original) | Launch of electronic trading on Xetra; replaced Frankfurt floor-based trading for most instruments |
+| 1997--2017 | Xetra Releases 1.0--16.0 | 16 successive releases over ~20 years; incremental improvements to latency, capacity, and functionality |
+| December 2012 | T7 Release 1.0 (Eurex) | First deployment of T7 at Eurex derivatives exchange; stepwise product migration; 14x faster than predecessor |
+| November 2016 | T7 Release 4.0 (Eurex) | Major Eurex upgrade |
+| July 2017 | T7 Release 5.0 (Xetra) | Xetra cash market migrated to T7; replaced legacy Xetra infrastructure |
+| Q1 2018 | Partition-Specific (PS) Gateway | Introduction of PS gateway; significantly lowered latency variability |
+| Q1 2020 | Matching Engine hardware upgrade | Completion of server hardware upgrade for matching engines |
+| H1 2021 | Consolidated matcher/gateway | Matching Engine and PS Gateway processes consolidated on the same server; faster order processing and improved stability |
+| May 2025 | T7 Release 13.1 | Introduced for Xetra and BÃ¶rse Frankfurt |
+| November 2025 | T7 Release 14.0 | Current production release for Xetra and BÃ¶rse Frankfurt; new web-based GUIs introduced |
+| 2026--2027 | Web GUI transition | T7 Web Admin (Q2/Q3 2026), T7 Web Trader (not before 2027); phased replacement of Java-based GUIs |
+
+[Source: Xetra, "Release 14.0", https://www.eurexgroup.com/xetra-en/technology/t7/system-documentation/release14-0, accessed 2026-04-06]
+[Source: Xetra, "Introduction of Next Generation T7 Web Based GUIs", https://www.xetra.com/xetra-en/newsroom/circulars-newsletters/xetra-circulars/Introduction-of-Next-Generation-T7-Web-Based-GUIs-4673928, accessed 2026-04-06]
+[Source: Eurex, "Completion of the T7 matching engine server hardware upgrade", https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-06]
+
+---
+
+## 2. Architecture
+
+### 2.1 High-Level Design
+
+- **Deployment model:** On-premise, hosted at Equinix colocation facility in Frankfurt
+- **Topology:** Partition-based distributed matching architecture
+- **Design pattern:** High-performance, event-driven matching with independent product partitions
+- **Multi-venue:** Single platform serving Xetra (cash equities), Eurex (derivatives), EEX (energy), BÃ¶rse Frankfurt, and Nodal Exchange
+
+T7 employs a **partition-based architecture** in which market services are separated into completely independent groups of products (partitions). Each partition operates its own matching engine and partition-specific gateway, providing both performance isolation and resilience benefits. If one partition experiences an issue, other partitions continue operating independently. Instruments are distributed across partitions (e.g., Xetra cash market uses multiple partitions, with German equities and non-German equities on separate partitions).
+
+[Source: Xetra, "T7 Simulation: Increase in the number of partitions", https://www.eurexgroup.com/dbcm-en/newsroom/circulars-newsletters/Xetra-circulars-mailings/T7-Simulation-Increase-in-the-number-of-partitions-and-change-of-the-Partition-ID-for-some-products-3836718, accessed 2026-04-06]
+
+### 2.2 Core Components
+
+| Component | Function | Technology |
+|-----------|----------|------------|
+| Matching Engine (per partition) | Order matching for instruments assigned to the partition; price-time priority; supports auction and continuous trading | Custom-built; runs on dedicated server hardware; each partition has its own matching engine with a standby partner |
+| Partition-Specific (PS) Gateway | Lowest-latency order entry path; FIFO processing; one PS gateway per partition, consolidated on the same server as the matching engine since H1 2021 | Proprietary binary; TCP/IP; introduced Q1 2018 |
+| Low-Frequency (LF) Gateway | Order entry for participants not requiring ultra-low latency; connects to all partitions; ~12 microseconds additional latency vs. PS gateway | Proprietary binary (ETI); TCP/IP |
+| Enhanced Trading Interface (ETI) | Primary high-performance trading interface; asynchronous message-based; FIX 5.0 SP2 semantics with proprietary session protocol | Binary over TCP/IP; no special hardware required; OS/language agnostic |
+| FIX Gateway | Standard FIX protocol access (FIX 4.2 and FIX 4.4); trading and back-office sessions | FIX 4.2/4.4 over TCP/IP; FIX LF interface (FIX 4.4 only) introduced with Release 9.0 |
+| Market Data Interfaces (EMDI/MDI/EOBI/RDI) | Real-time market data dissemination via multicast | UDP multicast; FAST 1.1/1.2 encoding (except EOBI); dual service paths (A and B) |
+| Risk Engine | Pre-trade risk controls; session-level throttling; position limits | Integrated into gateway layer |
+| Surveillance | Market surveillance and regulatory oversight under BaFin/ESMA framework | Separate surveillance infrastructure [details not publicly disclosed] |
+| T7 GUI (Trader/Admin/Clearer) | Graphical user interfaces for trading, administration, and clearing operations | Transitioning from Java-based to web-based GUIs (2025--2027) |
+
+### 2.3 Technology Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Programming Language | C/C++ [unverified; consistent with Deutsche BÃ¶rse technical presentations and industry standard] |
+| Operating System | Linux [unverified; consistent with industry standard for exchange matching engines] |
+| Hardware | Commodity server hardware with custom optimization; matching engine hardware upgraded in 2020; PTP (Precision Time Protocol) timing at 4--5 ns RMS accuracy |
+| FPGA Acceleration | Not confirmed in T7 core matching engine; third-party vendors (e.g., NanoSpeed) offer FPGA-based connectivity solutions to T7 |
+| Network | N7 network infrastructure; provides thousands of connections in 35+ countries across Europe, North America, and Asia; 10G/100G Ethernet connectivity |
+| Messaging Format | Binary messages following FIX 5.0 SP2 semantics; FAST 1.1/1.2 encoding for market data (except EOBI) |
+| Byte Order | Little Endian |
+| Colocation | Equinix FR2 data center, Frankfurt, Germany |
+
+[Source: Eurex, "T7 R.13.1 Enhanced Trading Interface Manual", https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-06]
+[Source: Deutsche BÃ¶rse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation-insights-into-trading-system-dynamics.pdf, accessed 2026-04-06]
+[Source: Databento, "What is the T7 trading platform?", https://databento.com/microstructure/t7, accessed 2026-04-06]
+
+---
+
+## 3. Performance Specifications
+
+### Current Latency (Production Data, February/March 2025)
+
+| Metric | Value | Conditions |
+|--------|-------|------------|
+| Minimum internal matching latency | ~2,787 ns (~2.8 microseconds) | Measured from market data timestamp to request processing; production data February 2025 |
+| Median round-trip (High Frequency session) | ~60 microseconds | Via PS gateway; includes network traversal |
+| LF gateway additional latency | ~12 microseconds | Compared to PS gateway path |
+| PTP timing accuracy | 4--5 ns RMS | Precision Time Protocol synchronization |
+
+**Notes:**
+- The 2,787 ns minimum represents the internal matching engine processing time between market data generation and order request handling
+- Round-trip latency measured at the gateway level includes network stack overhead; actual matching engine internal latency is significantly lower
+- PS gateway (partition-specific) provides the lowest-latency path as it connects directly to a single partition's matching engine
+
+[Source: Deutsche BÃ¶rse, "Internal T7 Latency Performance Updates", https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-06]
+[Source: Deutsche BÃ¶rse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation-insights-into-trading-system-dynamics.pdf, accessed 2026-04-06]
+
+### Throughput & Capacity
+
+| Metric | Value | Notes |
+|--------|-------|-------|
+| Typical throughput (t_3n) | ~8,000 kHz (8 million msgs/sec) | Internal matching engine throughput rate; March 2025 data |
+| Typical throughput (t_5) | ~500 kHz | Throughput at gateway level [unverified interpretation] |
+| Typical throughput (t_7) | ~300 kHz | Throughput including external network [unverified interpretation] |
+| Peak daily requests | 1.25 billion | Recorded 7 April 2025 (vs. 857 million in 2023) |
+| Peak input rate | 201,000 requests/second | Recorded 5 June 2025 [unverified -- may be across all T7 venues] |
+| Uptime | 99.99%+ | Industry-standard target for major European exchanges [unverified -- specific SLA not publicly disclosed] |
+
+[Source: Deutsche BÃ¶rse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation-insights-into-trading-system-dynamics.pdf, accessed 2026-04-06]
+
+### Performance Evolution
+
+| Period | Improvement | Notes |
+|--------|------------|-------|
+| December 2012 (T7 launch at Eurex) | 14x faster than predecessor | First T7 deployment |
+| Q1 2018 | PS gateway introduced | Significantly lowered latency variability; increased determinism |
+| Q1 2020 | Matching engine hardware upgrade | New server hardware for matching engines |
+| H1 2021 | Consolidated matcher/gateway | PS Gateway and Matching Engine on same server; further latency reduction |
+| 2025 | PTP accuracy 4--5 ns RMS | Improved timestamping precision |
+
+---
+
+## 4. Interfaces & Protocols
+
+### 4.1 Order Entry
+
+| Interface | Protocol | Description |
+|-----------|----------|-------------|
+| Enhanced Trading Interface (ETI) | Proprietary binary; FIX 5.0 SP2 semantics | Primary high-performance interface; asynchronous message-based; TCP/IP; supports order handling, quote handling, RFQs, strategy creation, off-book trade entry; no special hardware required |
+| FIX Gateway | FIX 4.2 and FIX 4.4 | Standard FIX protocol access for broader compatibility; Trading sessions (order management, risk control, cross trade) and Back-office sessions (trade confirmations) |
+| FIX LF Interface | FIX 4.4 only | Newer FIX interface integrated closer to T7 architecture; provides similar infrastructure and performance characteristics as ETI; introduced with Release 9.0 |
+| T7 GUI (Trader) | Web-based (transitioning from Java) | Graphical trading interface for manual order entry; Java-based currently, web-based T7 Web Trader expected not before 2027 |
+
+**ETI Key Characteristics:**
+- Asynchronous, message-based interface following FIX 5.0 SP2 semantics including user-defined fields (UDF)
+- Connection via TCP/IP to Application Gateways that host client sessions
+- No special hardware or exchange software installation required
+- Free choice of operating system, programming language, and compiler version
+- Session-oriented with gateway-managed sessions
+
+**FIX Gateway Key Characteristics:**
+- Supports FIX 4.2 and FIX 4.4 protocols
+- ClOrdID must be unique per business day and trading session
+- Two session types: Trading session and Back-office session
+- Slightly higher latency than ETI due to additional protocol translation
+
+[Source: Eurex, "T7 R.13.1 Enhanced Trading Interface Manual", https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-06]
+[Source: Xetra, "T7 FIX Gateway Manual V5.0", https://www.cashmarket.deutsche-boerse.com/resource/blob/1470996/f11fe366582ba35ddf9b388ccb544c84/data/T7_FIX_Gateway_Manual_V5.0.pdf, accessed 2026-04-06]
+
+### 4.2 Market Data Dissemination
+
+| Feed | Protocol | Description | Content |
+|------|----------|-------------|---------|
+| EMDI (Enhanced Market Data Interface) | UDP multicast; FAST 1.1/1.2 encoded | Un-netted feed; disseminates every order book change up to configured depth | Market-by-price (MBP) with aggregated depth at limited price levels; all on-exchange trades |
+| MDI (Market Data Interface) | UDP multicast; FAST encoded | Netted/statistical market data | Daily high/low price, total traded quantity, last trade information |
+| EOBI (Enhanced Order Book Interface) | UDP multicast; native binary (not FAST encoded) | Full market-by-order feed; no depth limitation | Side, price, priority timestamp, displayed quantity of each individual order/quote; trade price and quantity |
+| RDI (Reference Data Interface) | UDP multicast; FAST encoded | Reference/static data | Instrument definitions, trading parameters, product assignments |
+| EMDS (Extended Market Data Service) | UDP multicast | Extended market data including settlement prices and open interest | Trade prices, settlement prices, open interest data |
+
+**Market Data Architecture:**
+- All interfaces distribute information via UDP multicast
+- Dual service paths (Service A and Service B) with different multicast addresses provide live-live redundancy
+- Clients should subscribe to both services and arbitrate between them
+- EOBI is the premium feed for latency-sensitive participants -- provides full order-by-order book without depth limitation and is not FAST encoded (reducing decode overhead)
+- EMDI provides un-netted updates (every order book change affecting in-scope price levels), while MDI is netted
+- FIX 5.0 SP2 semantics used across feeds (except EOBI which uses native binary format)
+
+[Source: Eurex, "T7 R.12.1 EMDI/MDI/RDI Manual", https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-06]
+[Source: Databento, "What is the T7 Enhanced Order Book Interface (EOBI)?", https://databento.com/microstructure/t7-eobi, accessed 2026-04-06]
+[Source: OnixS, "Xetra T7 EMDI, EOBI, MDI, RDI Market Data Handler SDK", https://www.onixs.biz/xetra-emdi-eobi-mdi-rdi.html, accessed 2026-04-06]
+
+### 4.3 Drop Copy / Trade Reporting
+
+- Back-office FIX sessions provide trade confirmation receipt at business unit level
+- ETI supports trade notification and execution report messages
+- OTC trade reporting available through T7 Entry Services (TES)
+
+### 4.4 Reference Data
+
+- Reference Data Interface (RDI) publishes instrument definitions and trading parameters via UDP multicast
+- Product and instrument reference data available for download from Deutsche BÃ¶rse website
+- N7 Network Access Guide provides IP addresses and port configurations (updated v.2.5, January 2025)
+
+[Source: Eurex, "N7 Network Access Guide v.2.3.2", https://www.eurex.com/resource/blob/3989230/c71235f6479bb30adb7268afabc2a5b5/data/N7_-_Network_Access_Guide.v.2.3.2.pdf, accessed 2026-04-06]
+
+---
+
+## 5. Resilience & Business Continuity
+
+### 5.1 Redundancy
+
+- **Partition independence:** Each partition operates independently; a failure in one partition does not affect other partitions
+- **Matching engine failover:** Every matching engine process has a standby partner that can take over immediately if the primary fails; a matching engine failover triggers a market reset -- the secondary component loads persistent orders from the persistency layer; all non-persistent orders and quotes are deleted
+- **Market data redundancy:** Dual multicast service paths (Service A and Service B) with different multicast addresses; live-live concept
+- **Gateway redundancy:** Multiple gateway sessions available; PS and LF gateways provide different access paths
+- **Network redundancy:** N7 network provides redundant connectivity across 35+ countries
+
+### 5.2 Disaster Recovery
+
+| Aspect | Details |
+|--------|---------|
+| Primary Site | Equinix FR2 data center, Frankfurt, Germany |
+| DR Infrastructure | T7 simulation environment infrastructure re-used as DR production infrastructure |
+| Failover Scenario | Simulates partial outage of Equinix FR2 facility; DR infrastructure activated |
+| Colocation Access | Colocation facility remains accessible during DR; co-location customers can access DR infrastructure |
+| DR Testing | Regular DR tests conducted (examples: 15 March 2025, 5 October 2024, 14 October 2023, 15 October 2022); Deutsche BÃ¶rse requests all Cash Market Trading Participants to participate |
+
+**Key Characteristics:**
+- DR concept documented in the "T7 Disaster Recovery Concept" guide (updated with each major release)
+- In a DR scenario, the simulation environment infrastructure serves as backup production environment
+- Participants must be prepared to transition to DR environment; different IP addresses and configurations may apply
+- Regular testing ensures readiness; DR tests cover both Xetra and BÃ¶rse Frankfurt trading venues
+
+[Source: Xetra, "Deutsche BÃ¶rse Cash Market's T7 Disaster Recovery Test on 15 March 2025", https://www.xetra.com/xetra-en/newsroom/circulars-newsletters/xetra-circulars/Deutsche-B-rse-Cash-Market-s-T7-Disaster-Recovery-Test-on-15-March-2025-4251484, accessed 2026-04-06]
+[Source: Xetra, "Deutsche BÃ¶rse Cash Market T7 Disaster Recovery Test on 5 October 2024", https://www.xetra.com/xetra-en/newsroom/circulars-newsletters/xetra-circulars/Deutsche-B-rse-Cash-Market-T7-Disaster-Recovery-Test-on-5-October-2024-4056822, accessed 2026-04-06]
+
+### 5.3 Primary Data Center
+
+| Specification | Details |
+|---------------|---------|
+| Facility | Equinix FR2 (Friesstrasse, Frankfurt, Germany) |
+| Operator | Equinix (strategic partnership since 2010) |
+| Role | Financial low-latency trading hub; hosts primary Eurex and Xetra back-ends |
+| Services | Rack space, cooling, power supply, smart hands |
+| Uptime Track Record | 99.999%+ globally (Equinix standard) |
+| Colocation Tenants | Deutsche BÃ¶rse Group, BATS Chi-X Europe, TMX Atrium, and numerous financial market participants |
+| Connectivity | 10G/100G Ethernet; N7 network access; direct cross-connects to T7 matching engines |
+
+[Source: Equinix, "FR2 Data Center", https://www.equinix.com/data-centers/europe-colocation/germany-colocation/frankfurt-data-centers/fr2, accessed 2026-04-06]
+[Source: Xetra, "Co-Location Services", https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-06]
+[Source: Equinix/Investor Relations, "Deutsche Borse Systems Selects Equinix as Strategic Data Center", https://investor.equinix.com/news-releases/news-release-details/deutsche-borse-systems-selects-equinix-strategic-data-center, accessed 2026-04-06]
+
+---
+
+## 6. Notable Technical Features
+
+### 6.1 Shared Platform with Eurex Derivatives
+
+T7 is notable for being a truly shared technology platform across both cash equities (Xetra) and derivatives (Eurex). This provides:
+- Common interface specifications (ETI, FIX, market data feeds) across cash and derivatives
+- Reduced development and maintenance costs for participants active in both markets
+- Shared colocation infrastructure at Equinix FR2
+- Unified technology release cycle (releases deployed across both venues)
+- Extended to additional venues: EEX (energy), BÃ¶rse Frankfurt, Nodal Exchange, and licensed to external exchanges (e.g., Bombay Stock Exchange)
+
+### 6.2 Volatility Interruption Mechanism
+
+T7 implements a sophisticated volatility interruption system to strengthen price continuity:
+- **Single Volatility Interruption model:** Used for equities and equity-like securities; triggers an unscheduled auction when the potential next price deviates too far from reference prices
+- **Volatility Interruption with Automated Corridor Expansion (ACE):** Used for ETFs, ETNs, and ETCs; multi-level price corridors (narrow to wide) defined per instrument; if no valid price is found within the current corridor, the interruption extends and switches to the next wider corridor
+- Operates in both auctions and continuous trading
+- Price determination during interruption follows the principle of most executable volume
+
+[Source: Xetra, "Volatility Interruption during continuous trading", https://www.xetra.com/xetra-en/trading/protective-mechanisms/protective-mechanisms-in-continuous-trading, accessed 2026-04-06]
+[Source: Xetra, "Protective Mechanisms", https://www.xetra.com/xetra-en/trading/protective-mechanisms, accessed 2026-04-06]
+
+### 6.3 Designated Sponsor Integration
+
+The Designated Sponsor program is a key liquidity mechanism integrated into T7:
+- Designated Sponsors post binding buy and sell offers for less liquid securities
+- Must observe maximum spread, minimum quote volume (lot size on both sides), and minimum quotation duration
+- Minimum presence requirements: 80% for ETFs/ETPs, 90% for equities (in both auctions and continuous trading)
+- All firm quotes and two-way limit orders must be flagged with a "Liquidity Provision Indicator"
+- Subject to MiFID II / MiFIR Regulated Market Maker obligations
+- Deutsche BÃ¶rse issues a performance rating comparing Designated Sponsors based on quote duration, spread, and turnover
+- Sponsors must register for every ISIN-currency combination separately
+
+[Source: Xetra, "Designated Sponsor and Market Maker", https://www.cashmarket.deutsche-boerse.com/cash-en/trading/Xetra/Designated-Sponsor-and-Market-Maker, accessed 2026-04-06]
+[Source: Xetra, "Designated Sponsor Guide", https://www.xetra.com/resource/blob/3452184/75f9eefb7b59e0464dc34c3658e1549b/data/designated-sponsor-guide.pdf, accessed 2026-04-06]
+
+### 6.4 T7 Entry Services (TES)
+
+T7 Entry Services enable participants to enter order/trade information into the T7 system, providing:
+- A channel for negotiated or off-book trades to be reported into the exchange
+- Two types of TES services offered
+- Integration with the clearing workflow through T7
+
+[Source: Xetra, "Xetra T7 Entry Service", https://www.xetra.com/xetra-en/trading/trading-models/xetra-entry-service, accessed 2026-04-06]
+
+### 6.5 N7 Network and Cloud Connectivity
+
+- **N7 network:** Deutsche BÃ¶rse's global network infrastructure providing connectivity to T7; thousands of connections across 35+ countries in Europe, North America, and Asia
+- **Cloud simulation:** T7 provides a cloud-based simulation environment for participants to test; current cloud simulation environment scheduled for migration on 28 March 2026
+- **Connectivity options:** Colocation at Equinix FR2 (lowest latency), proximity hosting, leased line via N7, and internet-based access for non-latency-sensitive use cases
+
+[Source: Deutsche BÃ¶rse, "N7", https://www.deutsche-boerse.com/dbg-en/markets-services/ps-technology/ps-7-market-technology/ps-n7, accessed 2026-04-06]
+
+### 6.6 Technology Licensing / Export
+
+T7 technology has been licensed to external exchanges, including:
+- Bombay Stock Exchange (BSE, India)
+- This positions Deutsche BÃ¶rse alongside a small group of exchange operators (including KRX, Nasdaq, and LSE Group) that export their trading technology
+
+[Source: Xetra, "T7 trading architecture", https://www.xetra.com/xetra-en/technology/t7, accessed 2026-04-06]
+
+---
+
+## 7. Comparison Notes
+
+### vs. KRX Exture+
+
+| Aspect | Deutsche BÃ¶rse T7 (Xetra) | KRX Exture+ |
+|--------|--------------------------|-------------|
+| Launch Year | 2012 (Eurex) / 2017 (Xetra cash) | 2014 |
+| Developer | In-house (Deutsche BÃ¶rse Group) | In-house (KRX with Koscom subsidiary) |
+| Architecture | Partition-based; independent matching engines per partition with PS gateways | Unified matching engine architecture [unverified -- specific partition model not publicly detailed] |
+| Venues Served | Xetra (cash), Eurex (derivatives), EEX (energy), BÃ¶rse Frankfurt, Nodal Exchange | Single unified platform (KOSPI, KOSDAQ, derivatives, bonds) |
+| Internal Matching Latency | ~2.8 microseconds minimum (Feb 2025) | ~70 microseconds (matching engine) |
+| Round-trip Latency (median) | ~60 microseconds (High Frequency session via PS gateway) | ~70 microseconds (matching engine only) |
+| Peak Daily Messages | 1.25 billion requests (April 2025) | Not publicly disclosed at comparable granularity |
+| Matching Model | Price-time priority | Price-time priority |
+| Market Data Feeds | EMDI (un-netted MBP), MDI (netted), EOBI (full MBO), RDI (reference) via UDP multicast | Proprietary binary [unverified]; Solace PubSub+ messaging middleware |
+| Order Entry Protocol | ETI (proprietary binary, FIX 5.0 SP2 semantics) + FIX 4.2/4.4 | FIX-based + proprietary API [unverified] |
+| Primary Data Center | Equinix FR2, Frankfurt, Germany (colocation facility) | Busan Data Center (owned, primary since 2014 relocation) |
+| DR Approach | Simulation infrastructure re-used as DR; regular testing (2x/year) | Active/Standby [unverified] |
+| Data Center Ownership | Hosted at third-party Equinix facility | KRX-owned facility |
+| Volatility Protection | Volatility Interruption + ACE model | SVIH (Static/Dynamic Volatility Interruption) |
+| Liquidity Provider Program | Designated Sponsor system with performance rating | Liquidity Provider (LP) system |
+| Technology Export | Licensed to BSE India and others | Exported to Laos, Cambodia, and others |
+| Asset Class Coverage | Cash equities + derivatives + energy (shared platform) | Equities, bonds, derivatives, ETFs, warrants (unified platform) |
+| Regulatory Framework | BaFin / ESMA (MiFID II/MiFIR) | FSC / FSS |
+
+### Key Differentiators
+
+**T7 Strengths:**
+1. **Partition-based architecture:** Independent partitions provide strong fault isolation -- a failure in one product group does not cascade to others; each partition has its own matching engine and gateway
+2. **Shared cash/derivatives platform:** Single technology serving both Xetra cash and Eurex derivatives reduces integration costs for cross-market participants
+3. **Extremely low internal latency:** Minimum internal matching latency of ~2.8 microseconds is among the fastest globally
+4. **Comprehensive market data:** Four distinct market data interfaces (EMDI, MDI, EOBI, RDI) offer participants flexibility to choose data granularity and latency profile
+5. **Volatility Interruption with ACE:** Multi-level corridor expansion for ETFs/ETPs is a sophisticated safeguard mechanism
+6. **Global network reach:** N7 network provides direct connectivity from 35+ countries
+7. **Extensive public documentation:** Deutsche BÃ¶rse publishes unusually detailed technical documentation about T7 internals, latency performance, and system dynamics
+
+**KRX Exture+ Strengths:**
+1. **Broader asset class unification:** Single platform handles equities, bonds, and all derivatives classes within one exchange
+2. **Technology independence:** Fully in-house development with owned data center infrastructure (Busan)
+3. **Technology export track record:** KRX has established a broader export footprint (Laos, Cambodia, and others)
+4. **Simpler venue model:** Single exchange covering all Korean capital market products reduces cross-venue complexity
+5. **Competitive latency:** ~70 microseconds matching engine latency is globally competitive, though T7's internal figures are faster
+
+**Architectural Comparison:**
+- T7's partition model provides strong fault isolation but requires careful instrument-to-partition assignment and may involve different latency profiles across partitions; KRX's unified model may offer more uniform latency characteristics across all instruments
+- T7's approach of hosting at a third-party Equinix facility differs from KRX's owned Busan Data Center -- the Equinix model provides access to a broader colocation ecosystem but introduces a dependency on a third-party facility operator
+- T7's shared platform across cash and derivatives is architecturally similar to KRX's unified approach, but spans legally separate exchanges (Xetra and Eurex) while KRX operates as a single integrated exchange
+- Both exchanges conduct regular DR testing; T7's approach of re-using simulation infrastructure as DR is a pragmatic but potentially capacity-constrained design compared to dedicated DR facilities
+- T7's EOBI (full order-by-order book feed) is comparable to KRX's order book data feeds; both provide transparency for high-frequency participants
+
+---
+
+## Sources
+
+### Official Deutsche BÃ¶rse / Xetra / Eurex Documentation
+- [Source: Xetra, "T7 trading architecture", https://www.xetra.com/xetra-en/technology/t7, accessed 2026-04-06]
+- [Source: Xetra, "System documentation", https://www.xetra.com/xetra-en/technology/t7/system-documentation, accessed 2026-04-06]
+- [Source: Xetra, "Release 14.0", https://www.eurexgroup.com/xetra-en/technology/t7/system-documentation/release14-0, accessed 2026-04-06]
+- [Source: Xetra, "Release 13.1", https://www.xetra.com/xetra-en/technology/t7/system-documentation/release13-1, accessed 2026-04-06]
+- [Source: Deutsche BÃ¶rse, "Internal T7 Latency Performance Updates", https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-06]
+- [Source: Deutsche BÃ¶rse, "Insights into Trading System Dynamics, March 2025", https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation-insights-into-trading-system-dynamics.pdf, accessed 2026-04-06]
+- [Source: Eurex, "T7 R.13.1 Enhanced Trading Interface Manual", https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-06]
+- [Source: Xetra, "T7 FIX Gateway Manual V5.0", https://www.cashmarket.deutsche-boerse.com/resource/blob/1470996/f11fe366582ba35ddf9b388ccb544c84/data/T7_FIX_Gateway_Manual_V5.0.pdf, accessed 2026-04-06]
+- [Source: Eurex, "T7 R.12.1 EMDI/MDI/RDI Manual", https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-06]
+- [Source: Eurex, "N7 Network Access Guide v.2.3.2", https://www.eurex.com/resource/blob/3989230/c71235f6479bb30adb7268afabc2a5b5/data/N7_-_Network_Access_Guide.v.2.3.2.pdf, accessed 2026-04-06]
+- [Source: Deutsche BÃ¶rse, "T7 -- high-speed trading solution for derivatives and cash products", https://deutsche-boerse.com/dbg-en/our-company/insights-corporate-en/T7-high-speed-trading-solution-for-derivatives-and-cash-products-1621640, accessed 2026-04-06]
+- [Source: Deutsche BÃ¶rse, "N7", https://www.deutsche-boerse.com/dbg-en/markets-services/ps-technology/ps-7-market-technology/ps-n7, accessed 2026-04-06]
+- [Source: Deutsche BÃ¶rse, "T7 Factsheet", https://deutsche-boerse.com/resource/blob/320052/a4d10931561b1cdeb0a68f177826f785/Factsheet_T7-data.pdf, accessed 2026-04-06]
+- [Source: Xetra, "Volatility Interruption during continuous trading", https://www.xetra.com/xetra-en/trading/protective-mechanisms/protective-mechanisms-in-continuous-trading, accessed 2026-04-06]
+- [Source: Xetra, "Designated Sponsor and Market Maker", https://www.cashmarket.deutsche-boerse.com/cash-en/trading/Xetra/Designated-Sponsor-and-Market-Maker, accessed 2026-04-06]
+- [Source: Xetra, "Designated Sponsor Guide", https://www.xetra.com/resource/blob/3452184/75f9eefb7b59e0464dc34c3658e1549b/data/designated-sponsor-guide.pdf, accessed 2026-04-06]
+- [Source: Xetra, "Co-Location Services", https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-06]
+- [Source: Xetra, "Xetra T7 Entry Service", https://www.xetra.com/xetra-en/trading/trading-models/xetra-entry-service, accessed 2026-04-06]
+- [Source: Xetra, "Introduction of Next Generation T7 Web Based GUIs", https://www.xetra.com/xetra-en/newsroom/circulars-newsletters/xetra-circulars/Introduction-of-Next-Generation-T7-Web-Based-GUIs-4673928, accessed 2026-04-06]
+- [Source: Eurex, "Completion of the T7 matching engine server hardware upgrade", https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-06]
+- [Source: Xetra, "DR Test 15 March 2025", https://www.xetra.com/xetra-en/newsroom/circulars-newsletters/xetra-circulars/Deutsche-B-rse-Cash-Market-s-T7-Disaster-Recovery-Test-on-15-March-2025-4251484, accessed 2026-04-06]
+
+### Third-Party Sources
+- [Source: Databento, "What is the T7 trading platform?", https://databento.com/microstructure/t7, accessed 2026-04-06]
+- [Source: Databento, "What is the T7 Enhanced Order Book Interface (EOBI)?", https://databento.com/microstructure/t7-eobi, accessed 2026-04-06]
+- [Source: OnixS, "Xetra T7 EMDI, EOBI, MDI, RDI Market Data Handler SDK", https://www.onixs.biz/xetra-emdi-eobi-mdi-rdi.html, accessed 2026-04-06]
+- [Source: Equinix, "FR2 Data Center", https://www.equinix.com/data-centers/europe-colocation/germany-colocation/frankfurt-data-centers/fr2, accessed 2026-04-06]
+- [Source: Equinix/Investor Relations, "Deutsche Borse Systems Selects Equinix", https://investor.equinix.com/news-releases/news-release-details/deutsche-borse-systems-selects-equinix-strategic-data-center, accessed 2026-04-06]
+- [Source: MarketsWiki, "Eurex", https://www.marketswiki.com/wiki/Eurex, accessed 2026-04-06]
+- [Source: A-Team Insight, "NanoSpeed Adds Ultra-Low Latency Connectivity to Eurex T7 Using FPGA Technology", https://a-teaminsight.com/blog/nanospeed-adds-ultra-low-latency-connectivity-to-eurex-t7-using-fpga-technology/, accessed 2026-04-06]
+
+### KRX/Exture+ Sources
+- [Source: KRX, "EXTURE+ Trading", https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp, accessed 2026-04-06]
+- [Source: Koscom, "KRX Trading System", https://english.koscom.co.kr/eng/main/contents.do?menuNo=300005, accessed 2026-04-06]
+- [Source: PRWeb/Solace, "Korea Exchange Deploys Solace Systems", October 2013, https://www.prweb.com/releases/2013/10/prweb11191574.htm, accessed 2026-04-06]

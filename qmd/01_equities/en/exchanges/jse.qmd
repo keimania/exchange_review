@@ -1,0 +1,411 @@
+---
+title: "Johannesburg Stock Exchange (JSE)"
+subtitle: "Equities > Exchanges"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 3
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | JSE Limited |
+| Abbreviation | JSE |
+| Website | https://www.jse.co.za |
+| Year Established | 1887 (8 November 1887) |
+| Country / City | South Africa / Sandton, Gauteng (relocated from Johannesburg CBD in 2000) |
+| Ownership Structure | Publicly listed on its own Main Board (ticker: JSE on JSE); demutualized 1 July 2005, listed June 2006 |
+| Parent Company / Group | Independent (self-listed exchange) |
+| Regulatory Authority | Financial Sector Conduct Authority (FSCA) -- primary market conduct regulator; South African Reserve Bank (SARB) Prudential Authority for financial stability oversight |
+| Market Capitalization (listed companies) | ~ZAR 24.22 trillion (~USD 1.48 trillion / ~EUR 1.27 trillion) as of January 2026 |
+| Total Listed Instruments | ~431 companies (as of January 2026) |
+| Average Daily Trading Volume | [unverified -- not publicly disclosed in consolidated form] |
+| Average Daily Trading Value | [unverified -- not publicly disclosed in consolidated form] |
+
+**Africa's Largest Exchange:** The JSE is the largest stock exchange on the African continent by a significant margin, accounting for approximately 60% of Africa's total equity market value. Its market capitalization exceeds that of the next nine largest African stock exchanges combined.
+
+### Key Historical Milestones
+- 1887: Founded on 8 November by Benjamin Minors Woollan following the 1886 Witwatersrand gold rush; first share transactions took place in a canvas tent
+- 1887 (end Nov): 68 companies listed within weeks of founding
+- 1890 (end Jan): Over 300 companies listed, driven by mining speculation
+- 1903: New exchange building constructed on Hollard Street, Johannesburg
+- 1947: Joined the World Federation of Exchanges (then Federation Internationale des Bourses de Valeurs)
+- 1961: Second exchange building opened
+- 1963: Became a member of the Federation International Bourses de Valeurs (FIBV)
+- 1993: Joined the African Stock Exchanges Association
+- 1996: Transitioned from open outcry floor trading to electronic trading (JET system) after 108 years of floor-based trading
+- 1997: SENS (Stock Exchange News Service) launched for real-time corporate announcements (August 1997)
+- 2000: Relocated headquarters from Johannesburg CBD to Sandton, Gauteng
+- 2001: Cross-dealing agreement signed with the London Stock Exchange
+- 2003: AltX (Alternative Exchange) launched for small and medium-sized growth companies
+- 2005: Demutualized on 1 July 2005, becoming JSE Limited (Reg No: 2005/022939/06), a public unlisted company
+- 2006: Listed on its own Main Board (June 2006) -- one of the first African exchanges to self-list
+- 2009: Acquired the Bond Exchange of South Africa (BESA) for ZAR 240 million
+- 2012: Migrated equities trading to Millennium Exchange platform (LSEG Technology), replacing TradElect; founding member of UN Sustainable Stock Exchanges Initiative
+- 2013: Settlement cycle reduced from T+5 to T+3 (Phase 1, July 2013)
+- 2016: ITaC (Integrated Trading and Clearing) programme delivered, migrating derivatives and bond markets to Millennium Exchange and Cinnober Real-Time Clearing
+- 2022: Launched JSE Trade Explorer service for peer rankings
+- 2025: FTSE/JSE All-Share Index (ALSI) hit 100,000 points for the first time (July 2025); record financial results with 16.7% increase in Net Profit After Tax to ZAR 1,071 million
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+| Segment | Description | Listing Requirements (Summary) |
+|---------|-------------|-------------------------------|
+| **Main Board** | Primary market for large, established companies across all sectors (mining, financials, telecoms, consumer goods, etc.) | Stringent requirements: audited financial track record, minimum free float, sponsor (Designated Adviser) required, compliance with JSE Listings Requirements |
+| **AltX (Alternative Exchange)** | Parallel market for small and medium-sized high-growth companies; launched 2003 | Less stringent than Main Board: no minimum market cap requirement [unverified], must appoint a Designated Adviser (DA), provides growth path toward Main Board listing |
+| **Debt Market (Interest Rate Market)** | Bond and interest rate instruments; acquired from Bond Exchange of South Africa in 2009 | Separate listing requirements for debt instruments |
+
+### 2.2 Trading Sessions
+| Session | Local Time (SAST) | UTC (SAST = UTC+2) | Description |
+|---------|-------------------|---------------------|-------------|
+| Pre-open / Order Entry | ~08:30 - 08:45 [unverified] | ~06:30 - 06:45 | Orders can be entered; no matching |
+| Opening Auction | ~08:45 - 09:00 | ~06:45 - 07:00 | Call auction for opening price discovery; random end period to prevent manipulation |
+| Continuous Trading | 09:00 - 16:50 | 07:00 - 14:50 | Order-driven continuous matching with price/time priority |
+| Intraday Auction | ~12:00 - 12:15 [unverified] | ~10:00 - 10:15 | Midday call auction for price discovery |
+| Closing Auction | ~16:50 - 17:00 | ~14:50 - 15:00 | Closing price determination via call auction |
+| Market Close | 17:00 | 15:00 | End of trading day |
+
+Note: SAST (South Africa Standard Time) is UTC+2 year-round (no daylight saving time). Exact auction window times sourced from JSE documentation and third-party references; some times marked [unverified] where official confirmation was not obtained.
+
+### 2.3 Tick Sizes
+| Price Range | Tick Size |
+|-------------|-----------|
+| All equities | Minimum 1 cent (ZAC) |
+
+Note: The JSE's trading currency is ZAC (South African cents). The minimum tick size is 1 cent across equity instruments. A more granular tick size table with price-dependent bands (similar to MiFID II RTS 11) has not been publicly confirmed for JSE equities [unverified whether JSE uses a tiered tick size regime].
+
+### 2.4 Lot Sizes
+- **Standard lot size**: 1 share (board lot of 100 shares is the conventional trading unit, but odd lots of 1 share are permitted on the electronic order book)
+- **Odd lot trading**: Permitted; minimum tradable quantity is 1 share
+
+### 2.5 Market Maker / Liquidity Provider Programs
+- The JSE operates market maker programmes for certain instruments, particularly ETFs and less liquid equities [unverified -- specific programme details not publicly confirmed]
+- Market makers provide two-sided quotes and receive fee incentives in return for maintaining liquidity
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+- **Opening Auction:** Takes place between approximately 08:45 and 09:00 SAST. During the auction call phase, orders can be entered, amended, or cancelled but no matching occurs. At the end of the call period (with a random end to prevent manipulation), the system determines the price at which maximum volume can execute and uncrosses the order book at that price. The opening price of an instrument is the uncrossing trade price
+- **Closing Auction:** Takes place approximately between 16:50 and 17:00 SAST. Works identically to the opening auction -- orders accumulate during a call period, and the system determines the closing price by maximizing executable volume at the uncrossing
+- **Intraday Auction:** Scheduled between approximately 12:00 and 12:15 SAST [unverified]. Provides an additional price discovery opportunity during the trading day. Same mechanism as opening/closing auctions
+- **Volatility Auction:** Triggered automatically when a potential trade would breach a static or dynamic circuit breaker threshold. Trading in the affected instrument is suspended and a volatility auction call period is initiated to allow orderly price discovery before continuous trading resumes
+
+### 3.2 Continuous Trading
+- **Order-driven** central limit order book (CLOB) with **price/time priority**
+- During continuous trading (09:00 - 16:50 SAST), incoming orders are matched against the order book in real time
+- The JSE operates a fully electronic, order-driven market -- no specialist or designated market maker is required for continuous trading (though voluntary market maker programmes exist)
+
+### 3.3 Price Discovery
+- Price discovery occurs through the interaction of buy and sell orders on the central order book
+- The auction uncrossing algorithm maximizes executable volume at a single price, providing transparent price discovery at market open, midday, and close
+- Volatility auctions serve as additional price discovery events when prices move beyond predefined thresholds
+- The closing auction is particularly important as the closing price is used by index providers, fund managers, and for portfolio valuations
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Limit Order | Order to buy/sell at a specified price or better; rests on the book if not immediately matched |
+| Market Order | Executes at the best available price; unmatched portion behaviour depends on configuration [unverified] |
+
+### 4.2 Advanced Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Iceberg Order | Only a visible portion (peak) displayed on the order book; hidden reserve replenishes as the visible part fills [unverified] |
+| Hidden Order | Entire order quantity hidden from the public order book [unverified] |
+| Stop Order | Triggered when the market reaches a specified stop price [unverified] |
+
+Note: As JSE uses the Millennium Exchange platform, order types are expected to be broadly consistent with other Millennium Exchange deployments (e.g., LSE), but specific availability on JSE should be confirmed with JSE documentation.
+
+### 4.3 Time-in-Force Options
+| TIF | Description |
+|-----|-------------|
+| DAY (Good for Day) | Order valid for the current trading day only |
+| GTC (Good till Cancelled) | Order remains active until executed or cancelled [unverified] |
+| IOC (Immediate or Cancel) | Execute as much as possible immediately; cancel remainder [unverified] |
+| FOK (Fill or Kill) | Must be executed in full immediately or cancelled entirely [unverified] |
+
+### 4.4 Order Modification / Cancellation
+- Orders can be amended (price, quantity) or cancelled during the trading session
+- Price amendments that improve priority result in a new timestamp (loss of time priority), consistent with Millennium Exchange behaviour [unverified]
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | Millennium Exchange (for trading); Millennium Surveillance (for market monitoring) |
+| Vendor / In-house | LSEG Technology (MillenniumIT, LSEG subsidiary based in Colombo, Sri Lanka) |
+| Clearing System | Cinnober Real-Time Clearing (RTC) -- now Nasdaq Technology (Cinnober acquired by Nasdaq in 2018) |
+| Architecture | Distributed, low-latency, event-driven architecture on commodity Linux/x86 hardware |
+| Matching Engine | Central matching engine with price/time priority; multi-asset class capable |
+| Round-trip Latency | ~124 microseconds (Millennium Exchange platform specification); actual JSE-specific latency not independently published [unverified] |
+| Order Processing Capacity | Designed for high-throughput; capable of processing tens of thousands of orders per second [unverified -- specific JSE capacity not publicly disclosed] |
+| Messages Per Second | Not publicly disclosed for JSE specifically |
+| Launch Year | 2012 (equities); 2016 (derivatives and bonds via ITaC) |
+
+### System History
+| Period | System | Notes |
+|--------|--------|-------|
+| 1887-1996 | Floor trading (open outcry) | Physical trading floor for 108 years |
+| 1996-2002 | JET (JSE Equities Trading) | First electronic trading system [unverified system name] |
+| 2002-2012 | TradElect | Microsoft .NET-based platform; shared technology lineage with LSE's TradElect |
+| 2012-present | Millennium Exchange | C++/Linux-based; sub-millisecond latency; deployed as part of ITaC programme |
+
+### ITaC Programme (Integrated Trading and Clearing)
+ITaC was a multi-year programme to modernize the JSE's trading, clearing, and market data infrastructure:
+- **Trading**: Migration of all markets (equities, equity derivatives, FX derivatives, bonds) to the Millennium Exchange platform from LSEG Technology
+- **Clearing**: Migration to Cinnober Real-Time Clearing (RTC), a multi-asset clearing platform offering real-time risk management
+- **Market Data**: Alignment with international standards for data dissemination
+- **Surveillance**: Deployment of Millennium Surveillance for real-time market monitoring
+- The platform was relocated from London to JSE's own facility in Johannesburg, reducing latency for local participants
+
+### Technology Stack
+- **Operating System**: Linux (consistent with Millennium Exchange deployments)
+- **Programming Language**: C++ (matching engine)
+- **Network Protocol**: TCP/IP for trading gateways; market data via FAST/ITCH protocol
+- **Hardware**: Commodity x86 servers
+- **Trading Gateways**: Native binary protocol (lowest latency) and FIX protocol (industry standard)
+- **Market Data**: JSE FAST/ITCH protocol for equity market data dissemination
+
+### Disaster Recovery / Business Continuity
+- Primary matching engine infrastructure housed at JSE colocation facility in Sandton
+- Secondary disaster recovery site at Teraco data centre, supported by Beeks Exchange Cloud (Colo 2.0 initiative)
+- Dual-location disaster recovery architecture ensures business continuity
+- Regular DR testing in compliance with FSCA regulatory requirements
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+| Protocol | Description | Use Case |
+|----------|-------------|----------|
+| JSE FAST/ITCH | Native binary market data protocol based on ITCH standard with FAST compression | Ultra-low latency market data for algorithmic and high-frequency trading |
+| FIX Market Data | Market data via FIX protocol | Firms preferring standardized FIX connectivity |
+| Reference Data | Daily instrument reference data | Pre-trade setup, static data for instrument parameters |
+
+### 6.2 Data Levels
+- **Level 1**: Best bid/offer (BBO), last trade price, volume
+- **Level 2**: Full order book depth (all visible orders at each price level) [unverified -- availability details not confirmed]
+
+### 6.3 Distribution Infrastructure
+- Market data disseminated from JSE colocation facility
+- Available via direct connectivity, co-location cross-connects, and third-party data vendors
+- LSEG/Refinitiv distributes JSE market data globally
+
+### 6.4 Historical Data
+- Historical tick data available through LSEG (Refinitiv) and third-party vendors (e.g., TickData, CME Group)
+- JSE Market Statistics published weekly on jse.co.za
+- CME Group distributes JSE historical data under licensing agreement
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+- **Authorised Users**: Must be licensed by the FSCA and approved by JSE as authorized members (equity member firms)
+- **Types**: Trading members with direct electronic access to JSE markets
+- **Requirements**: Adequate financial resources, compliance arrangements, fit and proper personnel, robust technology systems
+
+### 7.2 Connection Methods
+| Method | Description |
+|--------|-------------|
+| JSE Colocation | Direct cross-connect from co-located racks in the JSE data centre -- lowest latency |
+| Dedicated Leased Lines | Managed network connections from member firm premises to JSE |
+| Third-party Networks | Via approved network providers (TNS, IPC, BT Radianz) |
+| JSE-FIX Hub | FIX-based order routing service powered by Rapid Addition technology for sell-side broker connectivity |
+
+### 7.3 Co-location / Proximity Services
+- **Primary Facility**: JSE Colocation facility at JSE premises in Sandton, Gauteng
+- **Colo 2.0**: Secondary colocation at Teraco data centre, powered by Beeks Exchange Cloud and IPC, providing dual-location disaster recovery
+- **Offerings**: Rack space, power, cooling, physical security, direct cross-connects to matching engine
+- **Third-party Managed Hosting**: Available through TNS and Beeks Group
+
+### 7.4 API Protocols
+| Protocol | Use Case |
+|----------|----------|
+| Native Binary Gateway | Proprietary binary protocol for lowest-latency order entry and execution |
+| FIX Protocol | Industry-standard FIX protocol for order entry, execution, and drop copy |
+| JSE-FIX (Rapid Addition) | FIX-based order routing for domestic and international asset managers |
+| FAST/ITCH | Market data dissemination |
+
+### 7.5 Certification / Testing
+- Member firms must complete conformance testing before production access
+- Test environments available for connectivity and order management validation
+- Certification required for trading gateway access (Native and FIX)
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Price Limits
+The JSE uses **dynamic and static price monitoring bands** rather than fixed daily price limits. These thresholds trigger volatility auctions rather than outright trading halts.
+
+| Type | Threshold | Action |
+|------|-----------|--------|
+| Static Circuit Breaker | ~5% deviation from the last auction uncrossing price | Instrument enters a Volatility Auction Call session |
+| Dynamic Circuit Breaker | ~2% deviation from a continuously updating reference price (based on recent trades) | Instrument enters a Volatility Auction Call session |
+
+Note: The 5% static and 2% dynamic thresholds are representative values; actual tolerances may vary by instrument and are set by JSE. These were reported in JSE documentation but specific current values should be confirmed [values based on JSE Service Hotline 6214].
+
+### 8.2 Circuit Breakers
+| Type | Trigger | Response |
+|------|---------|----------|
+| Dynamic Circuit Breaker | Potential execution price deviates beyond the dynamic threshold from the continuously updating reference price | Automatic transition to Volatility Auction Call -- no outright halt |
+| Static Circuit Breaker | Potential execution price deviates beyond the static threshold from the last auction price | Automatic transition to Volatility Auction Call |
+| Volatility Auction Extension | If the indicative uncrossing price of a volatility auction would breach thresholds again | Auction call period is extended |
+
+- The JSE uses **volatility interruptions** (auction-based) rather than outright trading halts -- trading is suspended in the affected instrument and a call auction period begins
+- Circuit breakers are applied at the individual instrument level, not market-wide
+- The mechanism allows participants to correct order prices or adjust to new information before continuous trading resumes
+
+### 8.3 Pre-trade Risk Controls
+- **Maximum Order Value**: Configurable per firm/gateway; orders exceeding threshold are rejected [unverified]
+- **Maximum Order Quantity**: Limits on the maximum number of shares in a single order [unverified]
+- **Message Throttling**: Rate limits on order submissions to prevent system overload
+- **Price Collar Checks**: Orders with prices significantly away from the current market may be rejected
+- Consistent with Millennium Exchange pre-trade risk control framework used across LSEG Technology deployments
+
+### 8.4 Kill Switch
+- Kill switch functionality expected to be available consistent with Millennium Exchange platform capabilities [unverified -- JSE-specific implementation not publicly confirmed]
+- Allows cancellation of all outstanding orders for a specific user or firm
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Supervising Authority
+- **Financial Sector Conduct Authority (FSCA)**: Primary market conduct regulator for the JSE as a licensed exchange under the Financial Markets Act, 19 of 2012 (FMA). The FSCA supervises the JSE in its regulatory duties, investigates potential market abuse, and institutes enforcement actions
+- **South African Reserve Bank (SARB) -- Prudential Authority (PA)**: Prudential oversight of financial market infrastructure under the Twin Peaks regulatory model. The PA was established on 1 April 2018 within the SARB under the Financial Sector Regulation (FSR) Act, 2017. SARB is involved in approval of JSE's prudential rules and clearing/settlement functions
+- **JSE as Frontline Regulator**: The JSE itself acts as the frontline regulator -- it is the Listings Authority, sets listings requirements, and enforces trading rules under the FMA. The JSE Market Regulation division monitors trading activity across all JSE markets
+
+### 9.2 Key Regulations
+- **Financial Markets Act, 19 of 2012 (FMA)**: Primary legislation governing exchanges, central securities depositories, clearing houses, and trade repositories in South Africa. The JSE is licensed as an exchange under the FMA
+- **Financial Sector Regulation Act, 9 of 2017 (FSR Act)**: Established the Twin Peaks model -- creating the FSCA (market conduct) and the Prudential Authority within SARB (prudential regulation)
+- **Financial Intelligence Centre Act, 38 of 2001 (FICA)**: Anti-money laundering and counter-terrorism financing obligations for JSE members
+- **JSE Listings Requirements**: Detailed rules governing admission, maintenance, and disclosure obligations for listed companies
+- **JSE Equities Rules**: Trading rules governing order entry, matching, clearing, and settlement for the equity market
+- **Companies Act, 71 of 2008**: General corporate governance requirements applicable to listed companies
+
+### 9.3 Market Surveillance
+- **JSE Market Regulation Division**: Real-time monitoring of trading activity across all JSE markets using Millennium Surveillance technology to identify possible market abuse, insider trading, and rule violations
+- **FSCA Investigation and Enforcement**: The FSCA is responsible for investigating market abuse and taking enforcement action where appropriate
+- **SENS Monitoring**: Corporate announcements via SENS (Stock Exchange News Service) are monitored for compliance with continuous disclosure obligations
+
+### 9.4 Reporting Requirements
+- **Transaction Reporting**: Member firms required to report trading activity to JSE and FSCA
+- **Disclosure Obligations**: Listed companies must comply with continuous disclosure requirements under JSE Listings Requirements and the FMA
+- **Major Shareholding Notifications**: Required disclosure when crossing specified ownership thresholds
+- **Short Selling**: Subject to JSE rules and FSCA oversight [unverified -- specific thresholds not confirmed]
+
+### 9.5 Cross-border Arrangements
+- JSE is a member of the World Federation of Exchanges (WFE)
+- Cross-dealing agreement with the London Stock Exchange (since 2001)
+- Member of the African Stock Exchanges Association
+- Founding member of the UN Sustainable Stock Exchanges Initiative (2012)
+- IOSCO MMOU signatory for international regulatory cooperation [unverified]
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees
+| Fee Type | Structure | Rate |
+|----------|-----------|------|
+| Trading Fees | Value-based (ad valorem) | Refer to JSE 2025 Price List for current rates |
+| Securities Transfer Tax (STT) | Government tax on share purchases | 0.25% of transaction value |
+| Strate Fee | CSD fee | 0.005787% (excluding VAT) |
+| FSCA Investor Protection Levy | Regulatory levy | 0.0002% (excluding VAT) |
+
+### 10.2 Other Fees
+- **Listing Fees (Initial)**: Vary by market cap; set out in JSE 2025 Price List
+- **Listing Fees (Annual)**: Annual fee for maintaining listing; scales with market cap
+- **Market Data Fees**: Licensing fees for real-time and delayed data; per-user and enterprise models
+- **Co-location Fees**: Charges for rack space, cross-connects, and power in JSE colocation facility
+- **Connectivity Fees**: Charges for trading gateway and market data connections
+- **JSE-FIX Hub Fees**: Fees for FIX-based order routing service [unverified]
+
+---
+
+## 11. Recent Developments
+
+### System Upgrades (Last 5 Years)
+- **2022**: JSE Trade Explorer service launched for peer rankings; ongoing Millennium Exchange platform enhancements
+- **2023-2024**: Continued infrastructure modernization; expanded Colo 2.0 offering with Beeks Exchange Cloud at Teraco data centre for dual-location disaster recovery
+- **2025**: Transformative progress on BDA (Broker Dealer Accounting) system modernization, removing dependency on mainframe legacy system; pilot phase successfully delivered by end of 2025. Information Services technology modernization completed; 29 new data products launched
+- **2025**: Bond Repos and JSE Fix Hub delivered as new core products; increased Colo 2.0 secondary cloud solution clients
+
+### New Products / Segments
+- **Colo 2.0**: Secondary colocation solution at Teraco data centre, mitigating outage risks and supporting business continuity
+- **JSE-FIX Hub**: FIX-based order routing service for broker connectivity
+- **Bond Repos**: New bond repo trading capability
+- **New ETF Listings (March 2026)**: Satrix MSCI Japan Feeder ETF (STXJPN) and Satrix Stoxx Europe 600 Feeder ETF (STXEUR) listed on Main Board
+- **Bond CCP (planned 2027)**: Central clearing solution for the bond electronic trading platform through JSE Clear, expected to go live in 2027
+
+### Regulatory Changes
+- **Twin Peaks Implementation (2018)**: Financial Sector Regulation Act established the dual-regulator model with FSCA and Prudential Authority
+- **FSCA Approval of Listing Rules**: FSCA approved amendments to JSE Listings Requirements regarding market segmentation
+- **JSE Clear CCP Licence**: JSE Clear granted independent clearing house and central counterparty licence under the FMA
+
+### Strategic Initiatives
+- **Record Financial Performance (2025)**: 16.7% increase in NPAT to ZAR 1,071 million; double-digit growth for the second consecutive year
+- **Information Services Growth**: Completion of Information Services modernization; 29 new data products; strategic focus on growing data revenue
+- **Upcoming Blockbuster Listings (2026)**: Two significant listings expected in 2026 following a decent 2025
+- **BDA Modernization**: Removing mainframe dependency and reducing running costs with modern broker dealer accounting system
+- **24-Hour Trading Consideration**: JSE was reported to be considering 24-hour trading in July 2025 [unverified]
+
+---
+
+## Sources
+
+[Source: JSE Official Website, "jse.co.za", accessed 2026-04-06]
+[Source: JSE, "JSE delivers record 2025 financial results, achieving strategic milestones", jse.co.za/news, accessed 2026-04-06]
+[Source: JSE, "Integrated Trading & Clearing (ITaC)", jse.co.za/learn-how-to-invest/itac, accessed 2026-04-06]
+[Source: JSE, "Market Regulation", jse.co.za/regulation/market-regulation, accessed 2026-04-06]
+[Source: JSE, "Clearing and Settlement Operations", jse.co.za/services/clearing-and-settlement-operations, accessed 2026-04-06]
+[Source: JSE, "JSE Colocation & Connectivity", jse.co.za/services/jse-colocation-connectivity, accessed 2026-04-06]
+[Source: JSE Client Portal, "Equity Market Trading Hours", clientportal.jse.co.za, accessed 2026-04-06]
+[Source: JSE Client Portal, "JSE Service Hotline 06220 -- Summary of JSE Circuit Breakers and Auctions", clientportal.jse.co.za, accessed 2026-04-06]
+[Source: JSE Client Portal, "JSE Service Hotline 6214 -- Proposed New Circuit Breaker Tolerances", clientportal.jse.co.za, accessed 2026-04-06]
+[Source: JSE, "2025 JSE Price List -- Issuers, Services and Trading", jse.co.za, accessed 2026-04-06]
+[Source: JSE, "Volume 00E -- Trading and Information Overview for Equity Market", jse.co.za, accessed 2026-04-06]
+[Source: Wikipedia, "JSE Limited", en.wikipedia.org/wiki/JSE_Limited, accessed 2026-04-06]
+[Source: Exactpro, "JSE--Exactpro collaboration to test the Millennium Exchange platform", exactpro.com, accessed 2026-04-06]
+[Source: LSEG Technology, "Millennium Exchange Factsheet", lseg.com, accessed 2026-04-06]
+[Source: Cinnober/Nasdaq, "JSE chooses integrated clearing technology from Cinnober", group.cinnober.com, accessed 2026-04-06]
+[Source: African Capital Markets News, "London and Johannesburg stock exchanges migrate to Millennium Exchange system", africancapitalmarketsnews.com, accessed 2026-04-06]
+[Source: Mondovisione, "JSE Expands Partnership With Beeks And IPC To Power Colo 2.0 Offering At Teraco Data Centre", mondovisione.com, accessed 2026-04-06]
+[Source: TradingHours.com, "JSE Market Hours & Holidays 2026", tradinghours.com/markets/jse, accessed 2026-04-06]
+[Source: Trading Economics, "JSE Market Capitalization", tradingeconomics.com, accessed 2026-04-06]
+[Source: CEIC Data, "South Africa Market Capitalization", ceicdata.com, accessed 2026-04-06]
+[Source: Moneyweb, "After decent year, two blockbuster JSE listings await in 2026", moneyweb.co.za, accessed 2026-04-06]
+[Source: News24, "What you need to know about volatility auctions", news24.com, accessed 2026-04-06]
+[Source: Baker McKenzie, "Overview of exchange -- Johannesburg JSE Limited", resourcehub.bakermckenzie.com, accessed 2026-04-06]
+[Source: Generisonline, "Understanding Securities Law and Stock Exchange Regulations in South Africa", generisonline.com, accessed 2026-04-06]
+[Source: South African Government, "SARB on Prudential Authority", gov.za, March 2018, accessed 2026-04-06]
+[Source: National Treasury South Africa, "Implementing a twin peaks model of financial regulation in South Africa", treasury.gov.za, accessed 2026-04-06]

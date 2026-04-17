@@ -1,0 +1,1966 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/systems/genium_inet.html">매매시스템</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/systems/t7_derivatives.html">T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 (Global Derivatives Markets) — 개요 (Overview)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 파생상품시장 — 비교 분석 (Global Derivatives Markets – Comparative Analysis)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">거래소</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Derivatives (호주증권거래소 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cboe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cboe Global Markets (Cboe 글로벌 마켓)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX, 중국금융선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group (CME 그룹)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE, 다롄상품거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME, 두바이상업거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/eurex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex (유렉스)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext Derivatives (유로넥스트 파생상품)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX (홍콩거래소) 파생상품 시장</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange 선물)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX 파생상품시장 (한국거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX, 몬트리올거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O, 인도국립증권거래소 선물옵션)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (오사카거래소, OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX (싱가포르거래소) 파생상품</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE, 상하이선물거래소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX, 대만선물거래소)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">규제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">아시아태평양 파생상품 규제 (Asia-Pacific Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU 파생상품 규제 (EU Derivatives Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">미국 파생상품 규제 (U.S. Derivatives Regulation)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">매매시스템</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/ko/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#시스템-개요-system-overview" id="toc-시스템-개요-system-overview" class="nav-link active" data-scroll-target="#시스템-개요-system-overview">1. 시스템 개요 (System Overview)</a>
+  <ul class="collapse">
+  <li><a href="#시스템-발전-과정-system-evolution" id="toc-시스템-발전-과정-system-evolution" class="nav-link" data-scroll-target="#시스템-발전-과정-system-evolution">시스템 발전 과정 (System Evolution)</a></li>
+  </ul></li>
+  <li><a href="#아키텍처-architecture" id="toc-아키텍처-architecture" class="nav-link" data-scroll-target="#아키텍처-architecture">2. 아키텍처 (Architecture)</a>
+  <ul class="collapse">
+  <li><a href="#상위-수준-설계-high-level-design" id="toc-상위-수준-설계-high-level-design" class="nav-link" data-scroll-target="#상위-수준-설계-high-level-design">2.1 상위 수준 설계 (High-Level Design)</a></li>
+  <li><a href="#핵심-구성요소-core-components" id="toc-핵심-구성요소-core-components" class="nav-link" data-scroll-target="#핵심-구성요소-core-components">2.2 핵심 구성요소 (Core Components)</a></li>
+  <li><a href="#기술-스택-technology-stack" id="toc-기술-스택-technology-stack" class="nav-link" data-scroll-target="#기술-스택-technology-stack">2.3 기술 스택 (Technology Stack)</a></li>
+  </ul></li>
+  <li><a href="#성능-사양-performance-specifications" id="toc-성능-사양-performance-specifications" class="nav-link" data-scroll-target="#성능-사양-performance-specifications">3. 성능 사양 (Performance Specifications)</a>
+  <ul class="collapse">
+  <li><a href="#현재-지연시간-운영-데이터-2025-current-latency-production-data-2025" id="toc-현재-지연시간-운영-데이터-2025-current-latency-production-data-2025" class="nav-link" data-scroll-target="#현재-지연시간-운영-데이터-2025-current-latency-production-data-2025">현재 지연시간 (운영 데이터, 2025) (Current Latency — Production Data, 2025)</a></li>
+  <li><a href="#처리량-및-용량-throughput-capacity" id="toc-처리량-및-용량-throughput-capacity" class="nav-link" data-scroll-target="#처리량-및-용량-throughput-capacity">처리량 및 용량 (Throughput &amp; Capacity)</a></li>
+  <li><a href="#성능-발전-과정-performance-evolution" id="toc-성능-발전-과정-performance-evolution" class="nav-link" data-scroll-target="#성능-발전-과정-performance-evolution">성능 발전 과정 (Performance Evolution)</a></li>
+  </ul></li>
+  <li><a href="#인터페이스-및-프로토콜-interfaces-protocols" id="toc-인터페이스-및-프로토콜-interfaces-protocols" class="nav-link" data-scroll-target="#인터페이스-및-프로토콜-interfaces-protocols">4. 인터페이스 및 프로토콜 (Interfaces &amp; Protocols)</a>
+  <ul class="collapse">
+  <li><a href="#주문-입력-eti-enhanced-trading-interface-order-entry-eti" id="toc-주문-입력-eti-enhanced-trading-interface-order-entry-eti" class="nav-link" data-scroll-target="#주문-입력-eti-enhanced-trading-interface-order-entry-eti">4.1 주문 입력 – ETI (Enhanced Trading Interface) (Order Entry – ETI)</a></li>
+  <li><a href="#시장데이터-market-data" id="toc-시장데이터-market-data" class="nav-link" data-scroll-target="#시장데이터-market-data">4.2 시장데이터 (Market Data)</a></li>
+  <li><a href="#drop-copy-매매-보고-t7-entry-services-tes-drop-copy-trade-reporting-t7-entry-services" id="toc-drop-copy-매매-보고-t7-entry-services-tes-drop-copy-trade-reporting-t7-entry-services" class="nav-link" data-scroll-target="#drop-copy-매매-보고-t7-entry-services-tes-drop-copy-trade-reporting-t7-entry-services">4.3 Drop Copy / 매매 보고 – T7 Entry Services (TES) (Drop Copy / Trade Reporting – T7 Entry Services)</a></li>
+  <li><a href="#기준정보-rdi-및-rdd-reference-data-rdi-and-rdd" id="toc-기준정보-rdi-및-rdd-reference-data-rdi-and-rdd" class="nav-link" data-scroll-target="#기준정보-rdi-및-rdd-reference-data-rdi-and-rdd">4.4 기준정보 – RDI 및 RDD (Reference Data – RDI and RDD)</a></li>
+  </ul></li>
+  <li><a href="#복원력-및-업무연속성-resilience-business-continuity" id="toc-복원력-및-업무연속성-resilience-business-continuity" class="nav-link" data-scroll-target="#복원력-및-업무연속성-resilience-business-continuity">5. 복원력 및 업무연속성 (Resilience &amp; Business Continuity)</a>
+  <ul class="collapse">
+  <li><a href="#이중화-redundancy" id="toc-이중화-redundancy" class="nav-link" data-scroll-target="#이중화-redundancy">5.1 이중화 (Redundancy)</a></li>
+  <li><a href="#재해복구-disaster-recovery" id="toc-재해복구-disaster-recovery" class="nav-link" data-scroll-target="#재해복구-disaster-recovery">5.2 재해복구 (Disaster Recovery)</a></li>
+  <li><a href="#주-데이터센터-primary-data-center" id="toc-주-데이터센터-primary-data-center" class="nav-link" data-scroll-target="#주-데이터센터-primary-data-center">5.3 주 데이터센터 (Primary Data Center)</a></li>
+  </ul></li>
+  <li><a href="#주요-기술-특징-notable-technical-features" id="toc-주요-기술-특징-notable-technical-features" class="nav-link" data-scroll-target="#주요-기술-특징-notable-technical-features">6. 주요 기술 특징 (Notable Technical Features)</a>
+  <ul class="collapse">
+  <li><a href="#복합-전략-거래-스프레드-엔진-내재가격-complex-strategy-trading-spread-engine-implied-pricing" id="toc-복합-전략-거래-스프레드-엔진-내재가격-complex-strategy-trading-spread-engine-implied-pricing" class="nav-link" data-scroll-target="#복합-전략-거래-스프레드-엔진-내재가격-complex-strategy-trading-spread-engine-implied-pricing">6.1 복합 전략 거래 (스프레드 엔진 / 내재가격) (Complex Strategy Trading — Spread Engine / Implied Pricing)</a></li>
+  <li><a href="#변동성-인터럽션-메커니즘-volatility-interruption-mechanism" id="toc-변동성-인터럽션-메커니즘-volatility-interruption-mechanism" class="nav-link" data-scroll-target="#변동성-인터럽션-메커니즘-volatility-interruption-mechanism">6.2 변동성 인터럽션 메커니즘 (Volatility Interruption Mechanism)</a></li>
+  <li><a href="#장외거래를-위한-t7-entry-services-tes-t7-entry-services-for-off-book-trades" id="toc-장외거래를-위한-t7-entry-services-tes-t7-entry-services-for-off-book-trades" class="nav-link" data-scroll-target="#장외거래를-위한-t7-entry-services-tes-t7-entry-services-for-off-book-trades">6.3 장외거래를 위한 T7 Entry Services (TES) (T7 Entry Services for Off-Book Trades)</a></li>
+  <li><a href="#마켓-메이커를-위한-mass-quote-기능-mass-quote-functionality-for-market-makers" id="toc-마켓-메이커를-위한-mass-quote-기능-mass-quote-functionality-for-market-makers" class="nav-link" data-scroll-target="#마켓-메이커를-위한-mass-quote-기능-mass-quote-functionality-for-market-makers">6.4 마켓 메이커를 위한 Mass Quote 기능 (Mass Quote Functionality for Market Makers)</a></li>
+  <li><a href="#자기거래-방지-self-trade-prevention-smp" id="toc-자기거래-방지-self-trade-prevention-smp" class="nav-link" data-scroll-target="#자기거래-방지-self-trade-prevention-smp">6.5 자기거래 방지 (Self-Trade Prevention, SMP)</a></li>
+  <li><a href="#eurex-enlight-선별적-rfq-eurex-enlight-selective-rfq" id="toc-eurex-enlight-선별적-rfq-eurex-enlight-selective-rfq" class="nav-link" data-scroll-target="#eurex-enlight-선별적-rfq-eurex-enlight-selective-rfq">6.6 Eurex EnLight (선별적 RFQ) (Eurex EnLight — Selective RFQ)</a></li>
+  <li><a href="#사전거래-리스크-제어-advanced-risk-protection-pre-trade-risk-controls-advanced-risk-protection" id="toc-사전거래-리스크-제어-advanced-risk-protection-pre-trade-risk-controls-advanced-risk-protection" class="nav-link" data-scroll-target="#사전거래-리스크-제어-advanced-risk-protection-pre-trade-risk-controls-advanced-risk-protection">6.7 사전거래 리스크 제어 (Advanced Risk Protection) (Pre-Trade Risk Controls — Advanced Risk Protection)</a></li>
+  <li><a href="#스폰서드-액세스-spa-모델-sponsored-access-spa-model" id="toc-스폰서드-액세스-spa-모델-sponsored-access-spa-model" class="nav-link" data-scroll-target="#스폰서드-액세스-spa-모델-sponsored-access-spa-model">6.8 스폰서드 액세스 (SpA) 모델 (Sponsored Access — SpA Model)</a></li>
+  <li><a href="#파티션-기반-매칭-아키텍처-partition-based-matching-architecture" id="toc-파티션-기반-매칭-아키텍처-partition-based-matching-architecture" class="nav-link" data-scroll-target="#파티션-기반-매칭-아키텍처-partition-based-matching-architecture">6.9 파티션 기반 매칭 아키텍처 (Partition-Based Matching Architecture)</a></li>
+  </ul></li>
+  <li><a href="#비교-참고사항-comparison-notes" id="toc-비교-참고사항-comparison-notes" class="nav-link" data-scroll-target="#비교-참고사항-comparison-notes">7. 비교 참고사항 (Comparison Notes)</a>
+  <ul class="collapse">
+  <li><a href="#vs.-krx-시스템-exture-exture-3.0" id="toc-vs.-krx-시스템-exture-exture-3.0" class="nav-link" data-scroll-target="#vs.-krx-시스템-exture-exture-3.0">vs.&nbsp;KRX 시스템 (Exture+ / Exture 3.0)</a></li>
+  <li><a href="#주요-차별화-요소-key-differentiators" id="toc-주요-차별화-요소-key-differentiators" class="nav-link" data-scroll-target="#주요-차별화-요소-key-differentiators">주요 차별화 요소 (Key Differentiators)</a></li>
+  </ul></li>
+  <li><a href="#출처-sources" id="toc-출처-sources" class="nav-link" data-scroll-target="#출처-sources">출처 (Sources)</a>
+  <ul class="collapse">
+  <li><a href="#공식-eurex-deutsche-boerse-문서" id="toc-공식-eurex-deutsche-boerse-문서" class="nav-link" data-scroll-target="#공식-eurex-deutsche-boerse-문서">공식 Eurex / Deutsche Boerse 문서</a></li>
+  <li><a href="#제3자-출처-third-party-sources" id="toc-제3자-출처-third-party-sources" class="nav-link" data-scroll-target="#제3자-출처-third-party-sources">제3자 출처 (Third-Party Sources)</a></li>
+  <li><a href="#krx-exture-출처" id="toc-krx-exture-출처" class="nav-link" data-scroll-target="#krx-exture-출처">KRX / Exture+ 출처</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/systems/genium_inet.html">매매시스템</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/ko/systems/t7_derivatives.html">T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품)</h1>
+<p class="subtitle lead">파생상품 &gt; 매매시스템</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 4월 17일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>최종 수정일:</strong> 2026-04-07 <strong>시스템 분류:</strong> 매매시스템 (Trading System)</p>
+</blockquote>
+<hr>
+<section id="시스템-개요-system-overview" class="level2">
+<h2 class="anchored" data-anchor-id="시스템-개요-system-overview">1. 시스템 개요 (System Overview)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시스템명</td>
+<td>T7</td>
+</tr>
+<tr class="even">
+<td>운영 주체</td>
+<td>Eurex Frankfurt AG (Deutsche Boerse Group 소속)</td>
+</tr>
+<tr class="odd">
+<td>목적</td>
+<td>파생상품(선물, 옵션, 복합 전략)을 위한 고성능 전자매매 플랫폼; 동일 기술로 현물주식(Xetra), 에너지(EEX) 및 기타 거래소도 운영</td>
+</tr>
+<tr class="even">
+<td>출시 연도</td>
+<td>2012년 12월 (Eurex 파생상품 – 최초 T7 배포); 2017년 7월 (Xetra 현물시장 이전)</td>
+</tr>
+<tr class="odd">
+<td>현재 버전</td>
+<td>T7 Release 14.0 (2025년 11월 10일 Eurex 도입); T7 Release 14.1은 2026년 5월 18일 예정</td>
+</tr>
+<tr class="even">
+<td>벤더 / 자체개발</td>
+<td>자체개발 (Deutsche Boerse Group 기술 팀 개발)</td>
+</tr>
+</tbody>
+</table>
+<p>T7은 Deutsche Boerse Group의 핵심 매매 플랫폼이다. 2012년 12월 Eurex에 최초 배포되었을 때, <strong>선물의 경우 이전 시스템 대비 14배, 옵션의 경우 40배 빠른</strong> 것으로 보고되었다. 이 플랫폼은 Eurex (파생상품), Xetra (현물주식), EEX (에너지), Boerse Frankfurt, Nodal Exchange에 걸쳐 공유 기술 기반으로 활용된다. 파생상품 참가자에게 있어 주요 차별화 요소는 내장된 복합 전략 거래, 내재가격, mass quoting, 통합 장외거래 입력(T7 Entry Services) 기능이다.</p>
+<p>[Source: Eurex, “T7 trading architecture”, https://www.eurex.com/t7/, accessed 2026-04-07] [Source: Eurex, “T7”, https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07] [Source: MarketsWiki, “Eurex”, https://www.marketswiki.com/wiki/Eurex, accessed 2026-04-07]</p>
+<section id="시스템-발전-과정-system-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="시스템-발전-과정-system-evolution">시스템 발전 과정 (System Evolution)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 47%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>기간</th>
+<th>시스템 / 주요 사건</th>
+<th>주요 변경사항</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1988</td>
+<td>DTB (Deutsche Terminboerse) 설립</td>
+<td>Deutsche Boerse 최초의 전자 파생상품 거래소; 1990년 1월 26일 옵션으로 거래 개시, 이후 선물</td>
+</tr>
+<tr class="even">
+<td>1993</td>
+<td>DTB GmbH가 Deutsche Boerse AG로 통합</td>
+<td>조직 통합</td>
+</tr>
+<tr class="odd">
+<td>1998</td>
+<td>Eurex 출범 (DTB + SOFFEX 합병)</td>
+<td>DTB가 Swiss Options and Financial Futures Exchange (SOFFEX)와 합병하여 Eurex를 설립; 세계 최대 파생상품 거래소 중 하나가 됨</td>
+</tr>
+<tr class="even">
+<td>1998~2012</td>
+<td>Eurex System 1 (레거시 플랫폼)</td>
+<td>다수의 릴리스 업그레이드; 성장기 동안 Eurex를 지원</td>
+</tr>
+<tr class="odd">
+<td>2012년 12월</td>
+<td>T7 Release 1.0 (Eurex)</td>
+<td>Eurex에 최초 T7 배포; 단계적 상품 이전; 이전 시스템 대비 14배/40배 빠름 (선물/옵션)</td>
+</tr>
+<tr class="even">
+<td>2018년 1분기</td>
+<td>Partition-Specific (PS) Gateway</td>
+<td>PS 게이트웨이 도입; 지연시간 변동성을 크게 낮추고 결정론성을 향상</td>
+</tr>
+<tr class="odd">
+<td>2020년 1분기</td>
+<td>매매체결엔진 하드웨어 업그레이드</td>
+<td>매매체결엔진의 신규 서버 하드웨어 완료</td>
+</tr>
+<tr class="even">
+<td>2021년 상반기</td>
+<td>매칭/게이트웨이 통합</td>
+<td>PS Gateway와 매매체결엔진 프로세스가 동일 서버에 통합; 주문 처리 속도 향상, 안정성 개선</td>
+</tr>
+<tr class="odd">
+<td>2021년 하반기~2022</td>
+<td>Market Data Distributor 통합</td>
+<td>EMDI distributor 프로세스가 매매체결엔진 호스트에 통합; 페일오버 시나리오 감소, 더 결정론적 데이터 전달</td>
+</tr>
+<tr class="even">
+<td>2022년 2월</td>
+<td>파티션 13개로 확장</td>
+<td>Eurex 파생상품용 Partition 12 추가; 선물 상품 재배분</td>
+</tr>
+<tr class="odd">
+<td>2023년 11월</td>
+<td>T7 Release 12.0</td>
+<td>주요 기능 릴리스</td>
+</tr>
+<tr class="even">
+<td>2024년 3월</td>
+<td>T7 Release 12.1</td>
+<td>정적 변동성 인터럽션 강화; Self-Match Prevention (SMP) 시장 전체 도입</td>
+</tr>
+<tr class="odd">
+<td>2024년 11월</td>
+<td>T7 Release 13.0</td>
+<td>기능 및 성능 향상</td>
+</tr>
+<tr class="even">
+<td>2025년 5월</td>
+<td>T7 Release 13.1</td>
+<td>Eurex용 도입</td>
+</tr>
+<tr class="odd">
+<td>2025년 11월</td>
+<td>T7 Release 14.0</td>
+<td>현재 운영 릴리스; 신규 웹 기반 GUI 도입</td>
+</tr>
+<tr class="even">
+<td>2026년 5월 (예정)</td>
+<td>T7 Release 14.1</td>
+<td>시뮬레이션 기간 2026년 3월 23일 시작; 운영 출시 2026년 5월 18일 예정</td>
+</tr>
+<tr class="odd">
+<td>2026~2027</td>
+<td>Web GUI 전환</td>
+<td>T7 Web Admin (2026년 2/3분기), T7 Web Trader (2027년 이전 불가); Java 기반 GUI의 단계적 교체</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: WallStreetMojo, “Eurex Exchange – What Is It, Rules, History &amp; Benefits”, https://www.wallstreetmojo.com/eurex-exchange/, accessed 2026-04-07] [Source: Eurex, “T7 Release 14.0”, https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0, accessed 2026-04-07] [Source: Eurex, “T7 Release 14.1”, https://www.eurex.com/ex-en/support/initiatives/t7release14-1, accessed 2026-04-07] [Source: Eurex, “Announcement of T7 Release 14.1”, https://www.eurex.com/ex-en/find/circulars/circular-4803582, accessed 2026-04-07] [Source: Eurex, “Completion of the T7 matching engine server hardware upgrade”, https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-07] [Source: Eurex, “T7: Introduction of a consolidated partition-specific Gateway and Matching Engine process”, https://www.eurex.com/ex-en/find/circulars/circular-2404602, accessed 2026-04-07] [Source: Eurex, “T7: Consolidation of the Market Data Distributor and Matching Engine processes on the Matching Engine Host”, https://www.eurex.com/ex-en/find/circulars/T7-Consolidation-of-the-Market-Data-Distributor-and-Matching-Engine-processes-on-the-Matching-Engine-Host-3682674, accessed 2026-04-07]</p>
+<hr>
+</section>
+</section>
+<section id="아키텍처-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="아키텍처-architecture">2. 아키텍처 (Architecture)</h2>
+<section id="상위-수준-설계-high-level-design" class="level3">
+<h3 class="anchored" data-anchor-id="상위-수준-설계-high-level-design">2.1 상위 수준 설계 (High-Level Design)</h3>
+<ul>
+<li><strong>배포 모델:</strong> 온프레미스, 독일 프랑크푸르트의 Equinix FR2 코로케이션 시설에 호스팅</li>
+<li><strong>토폴로지:</strong> 파티션 기반 분산 매칭 아키텍처 – 각 파티션 내에서는 중앙집중형 매칭이지만, 파티션은 독립적으로 운영</li>
+<li><strong>설계 패턴:</strong> 독립적인 상품 파티션을 갖춘 고성능 이벤트 구동 매칭; 각 파티션이 자체 매매체결엔진, PS 게이트웨이, 시장데이터 배포기를 보유</li>
+<li><strong>다중 거래소:</strong> Eurex (파생상품), Xetra (현물주식), EEX (에너지), Boerse Frankfurt, Nodal Exchange를 지원하는 단일 플랫폼</li>
+</ul>
+<p>T7은 파생상품 시장이 완전히 독립적인 파티션으로 분할되는 <strong>파티션 기반 아키텍처(partition-based architecture)</strong>를 채택하고 있다. 각 파티션은 자체 매매체결엔진과 파티션 전용 게이트웨이를 운영한다. 한 파티션에 문제가 발생해도 다른 파티션은 독립적으로 계속 운영된다. Eurex 파생상품의 경우 <strong>13개 파티션</strong> (12개 XEUR 파티션 + 1개 XEEE 파티션(EEX용))이 있다. 상품은 자산군별로 파티션에 분배된다 – 예를 들어 주가지수 선물 및 옵션, 금리 선물, 상품 파생상품이 각각 다른 파티션에 위치할 수 있다.</p>
+<p>2021년 상반기부터 PS Gateway와 매매체결엔진 프로세스가 동일 서버에 통합되었으며, 2021년 하반기 이후에는 Market Data Distributor 프로세스도 매매체결엔진 호스트에 통합되었다. 이러한 통합은 지연시간을 줄이고 페일오버 시나리오를 단순화하며 결정론성을 향상시킨다.</p>
+<p>[Source: Eurex, “T7”, https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07] [Source: Eurex, “T7 Production environment: Increase in the number of partitions”, https://www.eurex.com/ex-en/find/circulars/circular-2877730, accessed 2026-04-07]</p>
+</section>
+<section id="핵심-구성요소-core-components" class="level3">
+<h3 class="anchored" data-anchor-id="핵심-구성요소-core-components">2.2 핵심 구성요소 (Core Components)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 25%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>구성요소</th>
+<th>기능</th>
+<th>기술 / 비고</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>매매체결엔진</strong> (파티션별)</td>
+<td>해당 파티션에 배정된 모든 종목의 주문 및 호가 매칭; 가격-시간 우선; 연속 거래, 경매, 내재가격을 포함한 복합 전략 매칭 지원</td>
+<td>맞춤 개발; 전용 서버 하드웨어에서 실행; 각 파티션은 페일오버를 위한 스탠바이 파트너와 함께 자체 매매체결엔진 보유</td>
+</tr>
+<tr class="even">
+<td><strong>Partition-Specific (PS) Gateway</strong></td>
+<td>최저 지연시간 주문 입력 경로; FIFO 처리; 파티션당 하나의 PS 게이트웨이</td>
+<td>2021년 상반기부터 매매체결엔진과 동일 서버에 통합; 코로케이션에서 10 Gbit/s 크로스 커넥트</td>
+</tr>
+<tr class="odd">
+<td><strong>Low-Frequency (LF) Gateway</strong></td>
+<td>초저지연이 불필요한 참가자를 위한 주문 입력; 모든 파티션에 연결; PS 게이트웨이 대비 ~12 마이크로초 추가 지연시간</td>
+<td>독자 바이너리 (ETI); TCP/IP</td>
+</tr>
+<tr class="even">
+<td><strong>Enhanced Trading Interface (ETI)</strong></td>
+<td>주요 고성능 매매 인터페이스; 비동기, 메시지 기반; FIX 5.0 SP2 시맨틱스와 독자 세션 프로토콜 및 플랫 바이너리 인코딩</td>
+<td>TCP/IP 기반 바이너리; 특수 하드웨어 불필요; OS/언어 무관</td>
+</tr>
+<tr class="odd">
+<td><strong>FIX Gateway</strong></td>
+<td>표준 FIX 프로토콜 접근; 매매 및 백오피스 세션</td>
+<td>FIX 4.2 / FIX 4.4 over TCP/IP; FIX LF 인터페이스 (FIX 4.4)는 Release 9.0에서 도입</td>
+</tr>
+<tr class="even">
+<td><strong>EMDI</strong> (Enhanced Market Data Interface)</td>
+<td>비넷팅 시장데이터; 구성된 호가 잔량 깊이까지의 모든 호가장 변경을 배포</td>
+<td>UDP multicast; FAST 1.1/1.2 인코딩; 이중 서비스 경로 (A 및 B)</td>
+</tr>
+<tr class="odd">
+<td><strong>EOBI</strong> (Enhanced Order Book Interface)</td>
+<td>전체 주문별 (Level 3) 시장데이터; 깊이 제한 없음</td>
+<td>UDP multicast; 네이티브 바이너리 인코딩 (FAST 아님); 최저 지연시간 시장데이터 피드</td>
+</tr>
+<tr class="even">
+<td><strong>MDI</strong> (Market Data Interface)</td>
+<td>넷팅/통계 시장데이터 (일일 고가/저가, 최종 체결, 총거래량)</td>
+<td>UDP multicast; FAST 인코딩</td>
+</tr>
+<tr class="odd">
+<td><strong>RDI</strong> (Reference Data Interface)</td>
+<td>종목 정의, 매매 파라미터, 상품 배정</td>
+<td>UDP multicast; FAST 인코딩</td>
+</tr>
+<tr class="even">
+<td><strong>리스크 엔진</strong></td>
+<td>사전거래 리스크 제어; 세션 수준 쓰로틀링; 포지션 한도; Advanced Risk Protection (ARP)</td>
+<td>게이트웨이 레이어에 통합</td>
+</tr>
+<tr class="odd">
+<td><strong>감시</strong></td>
+<td>시장 감시 및 규제 감독 (BaFin/ESMA 체계)</td>
+<td>별도 감시 인프라; 매매 감시 시스템이 시장 조작 및 남용을 모니터링 [상세 비공개]</td>
+</tr>
+<tr class="even">
+<td><strong>T7 GUI</strong> (Trader/Admin/Clearer)</td>
+<td>파생상품 매매, 관리, 청산 운영을 위한 그래픽 사용자 인터페이스</td>
+<td>Java 기반에서 웹 기반 GUI로 전환 중 (2025~2027)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Eurex, “T7 R.13.1 Enhanced Trading Interface Manual”, https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07] [Source: OnixS, “Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK”, https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]</p>
+</section>
+<section id="기술-스택-technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="기술-스택-technology-stack">2.3 기술 스택 (Technology Stack)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>계층</th>
+<th>기술</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>프로그래밍 언어</td>
+<td>C/C++ [unverified; Deutsche Boerse 기술 프레젠테이션 및 매매체결엔진의 업계 표준과 일치]</td>
+</tr>
+<tr class="even">
+<td>운영체제</td>
+<td>Linux [unverified; 업계 표준과 일치]</td>
+</tr>
+<tr class="odd">
+<td>하드웨어</td>
+<td>맞춤 최적화된 범용 x86 서버 하드웨어; 매매체결엔진 하드웨어 2020년 업그레이드; PTP (Precision Time Protocol) 타이밍 4~5 ns RMS 정확도</td>
+</tr>
+<tr class="even">
+<td>FPGA 가속</td>
+<td>T7 핵심 매매체결엔진에서는 미확인; 제3자 벤더(예: NanoSpeed)가 T7용 FPGA 기반 연결 솔루션 제공</td>
+</tr>
+<tr class="odd">
+<td>네트워크 (내부)</td>
+<td>코로케이션 접근 레이어에서 cut-through 스위칭을 갖춘 10 Gbit/s Ethernet; PS 게이트웨이로의 10 Gbit/s 크로스 커넥트</td>
+</tr>
+<tr class="even">
+<td>네트워크 (외부)</td>
+<td>N7 네트워크 인프라; 유럽, 북미, 아시아 35개 이상 국가에서 수천 개의 연결; 10G/100G Ethernet 연결</td>
+</tr>
+<tr class="odd">
+<td>메시징 형식</td>
+<td>FIX 5.0 SP2 시맨틱스를 따르는 바이너리 메시지 (ETI); EMDI/MDI/RDI용 FAST 1.1/1.2 인코딩; EOBI용 네이티브 바이너리</td>
+</tr>
+<tr class="even">
+<td>바이트 순서</td>
+<td>Little Endian</td>
+</tr>
+<tr class="odd">
+<td>코로케이션</td>
+<td>Equinix FR2 데이터센터, 독일 프랑크푸르트</td>
+</tr>
+<tr class="even">
+<td>인메모리</td>
+<td>매매체결엔진은 호가장 상태를 인메모리로 운영; 지속성 주문은 페일오버 복구를 위해 지속성 레이어에 백업</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Deutsche Boerse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07] [Source: Deutsche Boerse, “Open Day 2019 – T7 infrastructure and latency”, https://www.deutsche-boerse.com/resource/blob/1637232/da0ae611905acda0d7502260903a0835/data/Open-Day-2019_T7-Latency-Roadmap_Andreas-Lohr_final.pdf, accessed 2026-04-07]</p>
+<hr>
+</section>
+</section>
+<section id="성능-사양-performance-specifications" class="level2">
+<h2 class="anchored" data-anchor-id="성능-사양-performance-specifications">3. 성능 사양 (Performance Specifications)</h2>
+<section id="현재-지연시간-운영-데이터-2025-current-latency-production-data-2025" class="level3">
+<h3 class="anchored" data-anchor-id="현재-지연시간-운영-데이터-2025-current-latency-production-data-2025">현재 지연시간 (운영 데이터, 2025) (Current Latency — Production Data, 2025)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 25%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>지표</th>
+<th>수치</th>
+<th>조건</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>최소 내부 매칭 지연시간</td>
+<td>~2,787 ns (~2.8 마이크로초)</td>
+<td>시장데이터 타임스탬프에서 요청 처리까지 측정; 2025년 2월 운영 데이터</td>
+</tr>
+<tr class="even">
+<td>중앙값 왕복시간 (HF 세션, 코로케이션)</td>
+<td>~60 마이크로초</td>
+<td>PS 게이트웨이를 통한 전체 순환; 네트워크 통과, 매칭, 응답 포함</td>
+</tr>
+<tr class="odd">
+<td>LF 게이트웨이 추가 지연시간</td>
+<td>~12 마이크로초</td>
+<td>PS 게이트웨이 경로 대비</td>
+</tr>
+<tr class="even">
+<td>EOBI가 EMDI보다 빠름</td>
+<td>~1.5 마이크로초 (중앙값)</td>
+<td>EOBI 시장데이터가 EMDI 업데이트보다 빠르게 도착</td>
+</tr>
+<tr class="odd">
+<td>EOBI가 ETI 응답보다 빠름</td>
+<td>~1.5 마이크로초 (중앙값)</td>
+<td>주문 발생 시장데이터 업데이트의 경우</td>
+</tr>
+<tr class="even">
+<td>EOBI의 EMDI 대비 우위 (DAX 선물)</td>
+<td>~15 마이크로초 빠름 (단순 업데이트), ~25 마이크로초 빠름 (체결)</td>
+<td>Xetra DAX 상품에 대해 측정; Eurex 파생상품에서도 유사한 우위 예상</td>
+</tr>
+<tr class="odd">
+<td>이중 EMDI 피드 차이 (A vs B)</td>
+<td><sub>6</sub>8 마이크로초 (중앙값)</td>
+<td>선물 상품의 A 및 B 증분 피드 간 지연시간 차이</td>
+</tr>
+<tr class="even">
+<td>PTP 타이밍 정확도</td>
+<td>4~5 ns RMS</td>
+<td>Precision Time Protocol 동기화</td>
+</tr>
+</tbody>
+</table>
+<p><strong>참고:</strong> - 2,787 ns 최소값은 내부 매매체결엔진 처리 시간을 나타낸다 - ~60 마이크로초의 왕복 지연시간은 고빈도 세션을 통해 PS 게이트웨이를 사용하는 코로케이션 참가자에 대해 측정된 것이다 - T7은 각 응답에 최대 6개의 타임스탬프와 모든 시장데이터 업데이트에 핵심 타임스탬프를 제공하여 참가자가 지연시간을 상세하게 측정하고 분해할 수 있도록 한다 - 10 Gbit/s 접근 레이어 스위치는 “cut-through” 모드로 운영되며, 경쟁 네트워크 경로에서 우선순위를 확보한다</p>
+<p>[Source: Deutsche Boerse, “Internal T7 Latency Performance Updates”, https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-07] [Source: Deutsche Boerse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]</p>
+</section>
+<section id="처리량-및-용량-throughput-capacity" class="level3">
+<h3 class="anchored" data-anchor-id="처리량-및-용량-throughput-capacity">처리량 및 용량 (Throughput &amp; Capacity)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 31%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>지표</th>
+<th>수치</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>일반적 처리량 (t_3n – 내부 매칭)</td>
+<td>~8,000 kHz (800만 메시지/초)</td>
+<td>내부 매매체결엔진 처리량; 2025년 3월 데이터</td>
+</tr>
+<tr class="even">
+<td>일반적 처리량 (t_5 – 게이트웨이 수준)</td>
+<td>~500 kHz</td>
+<td>게이트웨이 수준의 처리량 [unverified interpretation]</td>
+</tr>
+<tr class="odd">
+<td>일반적 처리량 (t_7 – 외부)</td>
+<td>~300 kHz</td>
+<td>외부 네트워크를 포함한 처리량 [unverified interpretation]</td>
+</tr>
+<tr class="even">
+<td>최대 일일 요청 (T7 거래소 전체)</td>
+<td>12억 5,000만</td>
+<td>2025년 4월 7일 기록 (2023년 8억 5,700만 대비)</td>
+</tr>
+<tr class="odd">
+<td>ETI HF 세션 쓰로틀</td>
+<td>150 메시지/초</td>
+<td>세션당; 고빈도 세션 유형</td>
+</tr>
+<tr class="even">
+<td>ETI LF 세션 쓰로틀</td>
+<td>50 메시지/초</td>
+<td>세션당; 저빈도 세션 유형</td>
+</tr>
+<tr class="odd">
+<td>Eurex 파티션</td>
+<td>13 (12 XEUR + 1 XEEE)</td>
+<td>2022년 기준; 필요에 따라 파티션 확장 가능</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Deutsche Boerse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]</p>
+</section>
+<section id="성능-발전-과정-performance-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="성능-발전-과정-performance-evolution">성능 발전 과정 (Performance Evolution)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 44%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>기간</th>
+<th>개선사항</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2012년 12월 (Eurex에서 T7 출시)</td>
+<td>이전 시스템 대비 14배 빠름 (선물), 40배 빠름 (옵션)</td>
+<td>최초 T7 배포</td>
+</tr>
+<tr class="even">
+<td>2018년 1분기</td>
+<td>PS 게이트웨이 도입</td>
+<td>지연시간 변동성을 크게 낮춤; 결정론성 향상</td>
+</tr>
+<tr class="odd">
+<td>2020년 1분기</td>
+<td>매매체결엔진 하드웨어 업그레이드</td>
+<td>신규 서버 하드웨어</td>
+</tr>
+<tr class="even">
+<td>2021년 상반기</td>
+<td>매칭/게이트웨이를 동일 서버에 통합</td>
+<td>추가적 지연시간 감소 및 안정성 개선</td>
+</tr>
+<tr class="odd">
+<td>2021~2022</td>
+<td>Market data distributor를 매매체결엔진 호스트에 통합</td>
+<td>EMDI 지연시간 변동성 감소</td>
+</tr>
+<tr class="even">
+<td>2025</td>
+<td>PTP 정확도 4~5 ns RMS</td>
+<td>타임스탬핑 정밀도 향상</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="인터페이스-및-프로토콜-interfaces-protocols" class="level2">
+<h2 class="anchored" data-anchor-id="인터페이스-및-프로토콜-interfaces-protocols">4. 인터페이스 및 프로토콜 (Interfaces &amp; Protocols)</h2>
+<section id="주문-입력-eti-enhanced-trading-interface-order-entry-eti" class="level3">
+<h3 class="anchored" data-anchor-id="주문-입력-eti-enhanced-trading-interface-order-entry-eti">4.1 주문 입력 – ETI (Enhanced Trading Interface) (Order Entry – ETI)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>프로토콜</td>
+<td>FIX 5.0 SP2 시맨틱스를 갖춘 독자 바이너리</td>
+</tr>
+<tr class="even">
+<td>세션 레이어</td>
+<td>독자 (표준 FIX 세션 프로토콜이 아님)</td>
+</tr>
+<tr class="odd">
+<td>인코딩</td>
+<td>플랫 바이너리 인코딩 (성능 최적화)</td>
+</tr>
+<tr class="even">
+<td>전송</td>
+<td>TCP/IP</td>
+</tr>
+<tr class="odd">
+<td>바이트 순서</td>
+<td>Little Endian</td>
+</tr>
+<tr class="even">
+<td>세션 유형</td>
+<td>고빈도 (HF) 및 저빈도 (LF); Standard (지속성 주문) 및 Lean (비지속성 주문)</td>
+</tr>
+<tr class="odd">
+<td>쓰로틀 한도</td>
+<td>HF: 150 메시지/초; LF: 50 메시지/초 (세션당)</td>
+</tr>
+<tr class="even">
+<td>기능</td>
+<td>주문 처리, 호가 처리 (mass quote), 전략 생성, RFQ 제출, 장외거래 입력 (TES), 크로스 요청</td>
+</tr>
+<tr class="odd">
+<td>하드웨어 요건</td>
+<td>없음 – OS/언어/컴파일러 무관; 거래소 소프트웨어 설치 불필요</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ETI 파생상품 전용 기능:</strong> - Mass quote 제출 및 유지 (마켓 메이커에게 핵심) - 복합 종목 생성 (사용자 정의 전략) - 크로스 요청 기능 - T7 Entry Services (TES) 블록/EFP/EFS 거래 입력 - Eurex EnLight RFQ 제출 및 응답 - Self-Match Prevention (SMP) 태깅</p>
+<p><strong>FIX Gateway:</strong> - FIX 4.2 및 FIX 4.4 지원 - FIX LF 인터페이스 (FIX 4.4 전용) – T7 아키텍처에 더 가까우며, ETI와 유사한 성능 특성 제공 - 매매 세션 (주문 관리, 리스크 제어, 크로스 거래) 및 백오피스 세션 (체결 확인) - 프로토콜 변환으로 인해 ETI보다 약간 높은 지연시간</p>
+<p>[Source: Eurex, “T7 R.13.1 Enhanced Trading Interface Manual”, https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07]</p>
+</section>
+<section id="시장데이터-market-data" class="level3">
+<h3 class="anchored" data-anchor-id="시장데이터-market-data">4.2 시장데이터 (Market Data)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 17%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>피드</th>
+<th>프로토콜</th>
+<th>인코딩</th>
+<th>내용</th>
+<th>지연시간 프로파일</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>EMDI</strong> (Enhanced Market Data Interface)</td>
+<td>UDP multicast</td>
+<td>FAST 1.1/1.2</td>
+<td>비넷팅 피드; 구성된 깊이까지의 모든 호가장 변경; 모든 장내 체결; 집계된 가격 수준별 시장-가격별(MBP)</td>
+<td>EOBI보다 ~1.5 마이크로초 느림 (중앙값)</td>
+</tr>
+<tr class="even">
+<td><strong>EOBI</strong> (Enhanced Order Book Interface)</td>
+<td>UDP multicast</td>
+<td>네이티브 바이너리 (FAST 아님)</td>
+<td>전체 주문별 (Level 3); 깊이 제한 없음; 각 개별 주문/호가의 방향, 가격, 우선순위 타임스탬프, 표시 수량; 체결 가격 및 수량</td>
+<td>최고속 시장데이터 피드; ETI 응답보다 ~1.5 마이크로초 빠름</td>
+</tr>
+<tr class="odd">
+<td><strong>MDI</strong> (Market Data Interface)</td>
+<td>UDP multicast</td>
+<td>FAST</td>
+<td>넷팅/통계 데이터; 일일 고가/저가, 총거래량, 최종 체결, 정산가, 미결제약정</td>
+<td>지연시간 민감도가 낮은 애플리케이션에 적합</td>
+</tr>
+<tr class="even">
+<td><strong>RDI</strong> (Reference Data Interface)</td>
+<td>UDP multicast</td>
+<td>FAST</td>
+<td>종목 정의, 매매 파라미터, 상품 배정, multicast 주소/포트 구성</td>
+<td>거래일 개시 전 발행</td>
+</tr>
+<tr class="odd">
+<td><strong>EMDS</strong> (Extended Market Data Service)</td>
+<td>UDP multicast</td>
+<td>–</td>
+<td>정산가 및 미결제약정을 포함한 확장 데이터</td>
+<td>보조 피드</td>
+</tr>
+</tbody>
+</table>
+<p><strong>아키텍처 참고:</strong> - 모든 피드는 다른 multicast 주소를 가진 이중 서비스 경로 (Service A 및 Service B)를 사용하여 실시간-실시간(live-live) 이중화를 제공한다 - 클라이언트는 양쪽 서비스를 모두 구독하고 중재해야 한다 - EOBI는 지연시간 민감 파생상품 참가자를 위한 프리미엄 피드이다 – 전체 주문별 호가장, 네이티브 바이너리 인코딩 (FAST 디코딩 오버헤드 없음)을 제공하며, 일관되게 가장 빠른 데이터 경로이다 - 파생상품 참가자의 경우, EMDI는 구성된 깊이까지의 비넷팅 업데이트를 제공하고 EOBI는 전체 호가장을 제공한다</p>
+<p>[Source: Eurex, “T7 R.12.1 EMDI/MDI/RDI Manual”, https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-07] [Source: OnixS, “Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK”, https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]</p>
+</section>
+<section id="drop-copy-매매-보고-t7-entry-services-tes-drop-copy-trade-reporting-t7-entry-services" class="level3">
+<h3 class="anchored" data-anchor-id="drop-copy-매매-보고-t7-entry-services-tes-drop-copy-trade-reporting-t7-entry-services">4.3 Drop Copy / 매매 보고 – T7 Entry Services (TES) (Drop Copy / Trade Reporting – T7 Entry Services)</h3>
+<p>T7 Entry Services는 Eurex 파생상품의 주요 장외거래 등록 메커니즘이다. 참가자가 Eurex Clearing을 통한 표준화된 청산 및 결제의 혜택을 받으면서 협의되거나 사전 합의된 거래 정보를 Eurex 시스템에 입력할 수 있도록 한다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TES 거래 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Block Trades</strong></td>
+<td>표준 Eurex 상품의 장외거래; 매수자와 매도자가 체결 리스크 없이 주문 정보를 실행; Bulk Load Panel이 대량 배치의 효율성을 향상</td>
+</tr>
+<tr class="even">
+<td><strong>Exchange for Physicals (EFP)</strong></td>
+<td>가격 상관관계를 가진 선물과 현물시장 증권의 동시 매수/매도 (예: 채권선물 vs.&nbsp;채권); Tradeweb와 협력하여 자동 승인 기능 도입</td>
+</tr>
+<tr class="odd">
+<td><strong>Exchange for Swaps (EFS)</strong></td>
+<td>선물 포지션과 OTC 스왑 등가물의 교환</td>
+</tr>
+<tr class="even">
+<td><strong>Multilateral Trades</strong></td>
+<td>다자간 Block Trade를 위한 주문 정보 처리</td>
+</tr>
+<tr class="odd">
+<td><strong>Brokerage 기능</strong></td>
+<td>브로커 중개 거래 촉진</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Eurex EnLight (선별적 RFQ):</strong> - 장내, 장외(off-book) 선별적 RFQ(호가요청) 기능 - 참가자가 특정 상대방에게 선별적으로 호가를 요청 가능 - 가격 칼라를 통한 서킷 브레이커 구현 - T7 거래 등록 워크플로우와 통합</p>
+<p>[Source: Eurex, “Eurex T7 Entry Services”, https://www.eurex.com/ex-en/trade/eurex-t7-entry-services, accessed 2026-04-07] [Source: Eurex, “Block Trades”, https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades, accessed 2026-04-07] [Source: Eurex, “Eurex EnLight”, https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]</p>
+</section>
+<section id="기준정보-rdi-및-rdd-reference-data-rdi-and-rdd" class="level3">
+<h3 class="anchored" data-anchor-id="기준정보-rdi-및-rdd-reference-data-rdi-and-rdd">4.4 기준정보 – RDI 및 RDD (Reference Data – RDI and RDD)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>출처</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>RDI</strong> (Reference Data Interface)</td>
+<td>실시간 multicast 피드; 거래일 개시 전 종목 정의, 매매 파라미터, 상품별 파티션 배정, multicast 주소 구성 제공</td>
+</tr>
+<tr class="even">
+<td><strong>RDD</strong> (Reference Data Download)</td>
+<td>Eurex 웹사이트에서 다운로드 가능한 파일 기반 기준정보; 상품 및 종목 파라미터 파일, T7 Entry Service 파라미터 포함</td>
+</tr>
+<tr class="odd">
+<td><strong>T7 GUI</strong></td>
+<td>관리 GUI가 기준정보 뷰 및 관리 기능 제공</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Eurex, “T7 Entry Service parameters”, https://www.eurex.com/ex-en/data/trading-files/t7-entry-service-parameters, accessed 2026-04-07]</p>
+<hr>
+</section>
+</section>
+<section id="복원력-및-업무연속성-resilience-business-continuity" class="level2">
+<h2 class="anchored" data-anchor-id="복원력-및-업무연속성-resilience-business-continuity">5. 복원력 및 업무연속성 (Resilience &amp; Business Continuity)</h2>
+<section id="이중화-redundancy" class="level3">
+<h3 class="anchored" data-anchor-id="이중화-redundancy">5.1 이중화 (Redundancy)</h3>
+<ul>
+<li><strong>파티션 독립성:</strong> 13개 파티션 각각이 독립적으로 운영된다; 한 파티션의 장애가 다른 파티션에 영향을 미치지 않는다 – 이것이 파티션 기반 아키텍처의 핵심 복원력 이점이다</li>
+<li><strong>매매체결엔진 페일오버:</strong> 모든 매매체결엔진은 주 엔진이 장애 시 인수할 수 있는 스탠바이 파트너를 보유한다; 페일오버 시 시장 리셋이 발생한다 – 보조 엔진이 지속성 레이어에서 지속성 주문을 로드하며, 모든 비지속성 주문 및 호가는 삭제된다</li>
+<li><strong>시장데이터 이중화:</strong> 다른 multicast 주소를 가진 이중 multicast 서비스 경로 (Service A 및 Service B); 실시간-실시간(live-live) 개념</li>
+<li><strong>게이트웨이 이중화:</strong> 다수의 게이트웨이 세션 이용 가능; PS 및 LF 게이트웨이가 서로 다른 접근 경로를 제공; PS 게이트웨이 장애 시 LF 게이트웨이가 이용 가능하게 유지 (반대의 경우도 동일)</li>
+<li><strong>네트워크 이중화:</strong> N7 네트워크가 35개 이상 국가에 걸쳐 이중 연결 제공; 백본 회선은 주 및 보조 데이터센터 모두에서 종단</li>
+</ul>
+</section>
+<section id="재해복구-disaster-recovery" class="level3">
+<h3 class="anchored" data-anchor-id="재해복구-disaster-recovery">5.2 재해복구 (Disaster Recovery)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>주 사이트</td>
+<td>Equinix FR2 데이터센터, 독일 프랑크푸르트</td>
+</tr>
+<tr class="even">
+<td>DR 인프라</td>
+<td>T7 시뮬레이션 환경 인프라를 DR 운영 인프라로 재활용</td>
+</tr>
+<tr class="odd">
+<td>페일오버 시나리오</td>
+<td>주 데이터센터에 호스팅된 정규 T7 운영 시스템의 완전 장애를 시뮬레이션</td>
+</tr>
+<tr class="even">
+<td>코로케이션 접근</td>
+<td>DR 중에도 코로케이션 시설 접근 유지; 코로케이션 고객이 DR 인프라에 접근 가능</td>
+</tr>
+<tr class="odd">
+<td>네트워크 연속성</td>
+<td>프랑크푸르트로의 백본 회선이 보조 데이터센터에서 종단; 프랑크푸르트 접속점에 연결하는 참가자는 보조 데이터센터에 위치한 접속점 반쪽에 연결하는 동일한 전용 회선을 계속 사용</td>
+</tr>
+<tr class="even">
+<td>호가장 상태</td>
+<td>DR 환경으로 전환 후 호가장은 비어 있음; 참가자가 주문을 재입력해야 함</td>
+</tr>
+<tr class="odd">
+<td>인터페이스 가용성</td>
+<td>DR 시나리오에서 대부분의 T7 인터페이스 이용 가능; 정규 운영 대비 일부 개념적 차이</td>
+</tr>
+<tr class="even">
+<td>DR 테스트</td>
+<td>정기 테스트 실시 (일반적으로 연 2회); 예시: 2024년 3월 16일, 2023년 6월 17일, 2022년 10월 15일; Eurex는 모든 거래참가자의 참여를 요청</td>
+</tr>
+</tbody>
+</table>
+<p><strong>주요 참고사항:</strong> - DR 개념은 “T7 Disaster Recovery Concept” 가이드에 문서화되어 있다 (각 주요 릴리스마다 갱신; 현재 버전: 2025 v1.2) - DR에서 시뮬레이션 환경 인프라가 백업 운영 환경이 된다 – 이는 실용적이지만 잠재적으로 용량이 제한될 수 있는 설계이다 - DR에서는 다른 IP 주소 및 구성이 적용될 수 있다 - DR 테스트 참여는 업무연속성 프로세스 준수 및 시장 건전성 유지를 위해 필수적으로 간주된다</p>
+<p>[Source: Eurex, “T7 Disaster Recovery Concept 2025 Version 1.2”, https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf, accessed 2026-04-07] [Source: Eurex, “T7 Disaster Recovery Test on 16 March 2024”, https://www.eurex.com/ex-en/find/circulars/circular-3818172, accessed 2026-04-07]</p>
+</section>
+<section id="주-데이터센터-primary-data-center" class="level3">
+<h3 class="anchored" data-anchor-id="주-데이터센터-primary-data-center">5.3 주 데이터센터 (Primary Data Center)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>사양</th>
+<th>상세</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시설</td>
+<td>Equinix FR2 (Friesstrasse, 독일 프랑크푸르트)</td>
+</tr>
+<tr class="even">
+<td>운영자</td>
+<td>Equinix (2010년 이후 전략적 파트너십)</td>
+</tr>
+<tr class="odd">
+<td>역할</td>
+<td>금융 저지연 매매 허브; Eurex 및 Xetra 핵심 시스템 호스팅</td>
+</tr>
+<tr class="even">
+<td>코로케이션 서비스</td>
+<td>랙 공간, 냉각, 전원 공급, smart hands; 거래 및 시장데이터 서비스를 위한 별도 10 Gbit/s 연결</td>
+</tr>
+<tr class="odd">
+<td>네트워크</td>
+<td>cut-through 모드의 10 Gbit/s 접근 레이어 스위치; 지연시간 최적화 코로케이션 네트워크</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Xetra, “Co-Location Services”, https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-07]</p>
+<hr>
+</section>
+</section>
+<section id="주요-기술-특징-notable-technical-features" class="level2">
+<h2 class="anchored" data-anchor-id="주요-기술-특징-notable-technical-features">6. 주요 기술 특징 (Notable Technical Features)</h2>
+<section id="복합-전략-거래-스프레드-엔진-내재가격-complex-strategy-trading-spread-engine-implied-pricing" class="level3">
+<h3 class="anchored" data-anchor-id="복합-전략-거래-스프레드-엔진-내재가격-complex-strategy-trading-spread-engine-implied-pricing">6.1 복합 전략 거래 (스프레드 엔진 / 내재가격) (Complex Strategy Trading — Spread Engine / Implied Pricing)</h3>
+<p>이는 T7의 가장 파생상품 특화된 기능 중 하나이다. 이 플랫폼은 다음을 지원한다:</p>
+<ul>
+<li><strong>복합 종목:</strong> 참가자가 단일 다리 종목의 개별 조합을 생성하고 전체 시장에 해당 전략을 공표할 수 있는 확장된 조합 거래 기능</li>
+<li><strong>전략 유형:</strong>
+<ul>
+<li>선물 조합: 시간 스프레드, 팩 &amp; 번들, 스트립, 상품간 스프레드</li>
+<li>표준 옵션 전략: 광범위한 인정 옵션 전략 템플릿</li>
+<li>사용자 정의 전략: 참가자가 맞춤형 다중 다리 조합 생성 가능</li>
+</ul></li>
+<li><strong>내재가격:</strong> T7은 다리의 최우선호가 가격을 기반으로 내재가격을 계산한다; 전략 주문에서 다리 호가장으로의 합성 매칭(implied-in)과 아웃라이트 다리 계약의 합성 조합에 대한 매칭(implied-out) 모두 지원</li>
+<li><strong>상품간 스프레드 (IPS):</strong> 각 다리 상품 호가장으로의 합성 매칭을 갖춘 별도 호가장에서 거래 (예: Euribor vs.&nbsp;Euro-STR 선물 IPS)</li>
+<li><strong>자동 정규화:</strong> 입력된 전략이 표준 옵션 전략과 일치하는 경우 자동으로 변환 및 정규화</li>
+</ul>
+<p>[Source: Eurex, “Strategy trading – Trading in complex instruments”, https://www.eurex.com/ex-en/trade/order-book-trading/trading-in-complex-instruments, accessed 2026-04-07]</p>
+</section>
+<section id="변동성-인터럽션-메커니즘-volatility-interruption-mechanism" class="level3">
+<h3 class="anchored" data-anchor-id="변동성-인터럽션-메커니즘-volatility-interruption-mechanism">6.2 변동성 인터럽션 메커니즘 (Volatility Interruption Mechanism)</h3>
+<p>T7은 파생상품의 가격 연속성을 강화하기 위해 변동성 인터럽션을 구현한다:</p>
+<ul>
+<li><strong>작동 메커니즘:</strong> 잠재적 체결가격이 참조가격으로부터 허용 가격 범위를 넘어 벗어나는 경우, 수신 주문의 체결이 방지되고 해당 종목(또는 해당 상품의 모든 종목)이 연속 거래에서 변동성 경매로 자동 전환된다</li>
+<li><strong>정적 변동성 인터럽션</strong> (T7 Release 12.1에서 도입): 거래소가 정의한 추가 참조가격 주위의 정적 가격 범위에 기반; 허용 정적 가격 편차를 초과할 때 발동</li>
+<li><strong>동적 변동성 인터럽션:</strong> 최종 체결가격 주위의 동적 가격 범위에 기반</li>
+<li><strong>범위:</strong> 구성에 따라 개별 종목 또는 전체 상품 그룹에 적용 가능</li>
+</ul>
+<p>[Source: Eurex, “Volatility Interruption Functionality”, https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality, accessed 2026-04-07] [Source: Eurex, “Eurex T7 Functionality activations: Volatility Interruption enhancements”, https://www.eurex.com/ex-en/find/circulars/circular-3989342, accessed 2026-04-07]</p>
+</section>
+<section id="장외거래를-위한-t7-entry-services-tes-t7-entry-services-for-off-book-trades" class="level3">
+<h3 class="anchored" data-anchor-id="장외거래를-위한-t7-entry-services-tes-t7-entry-services-for-off-book-trades">6.3 장외거래를 위한 T7 Entry Services (TES) (T7 Entry Services for Off-Book Trades)</h3>
+<p>상세 내용은 4.3절을 참조한다. 핵심 사항: TES는 블록 거래, EFP, EFS, 다자간 장외거래가 거래소를 통해 등록되고 청산될 수 있도록 규제적 및 운영적 체계를 제공한다.</p>
+</section>
+<section id="마켓-메이커를-위한-mass-quote-기능-mass-quote-functionality-for-market-makers" class="level3">
+<h3 class="anchored" data-anchor-id="마켓-메이커를-위한-mass-quote-기능-mass-quote-functionality-for-market-makers">6.4 마켓 메이커를 위한 Mass Quote 기능 (Mass Quote Functionality for Market Makers)</h3>
+<ul>
+<li><strong>Mass quote:</strong> 마켓 메이커가 단일 메시지로 다수의 종목에 대한 양방향 호가(매수 및 매도)를 제출 및 업데이트할 수 있어, 대규모 옵션 시리즈에 걸친 효율적 마켓 메이킹이 가능하다</li>
+<li><strong>마켓 메이커 역할:</strong> 모든 호가 및 주문 처리 기능, 크로스 요청, 복합 종목 생성을 가능하게 한다</li>
+<li><strong>비지속성 호가:</strong> Mass quote는 일반적으로 비지속성(lean)으로, 매매체결엔진 페일오버 시 삭제된다 – 이는 지속성보다 성능을 우선하는 설계 트레이드오프이다</li>
+</ul>
+</section>
+<section id="자기거래-방지-self-trade-prevention-smp" class="level3">
+<h3 class="anchored" data-anchor-id="자기거래-방지-self-trade-prevention-smp">6.5 자기거래 방지 (Self-Trade Prevention, SMP)</h3>
+<ul>
+<li><strong>도입:</strong> T7 Release 12.1 (시장 전체 도입)</li>
+<li><strong>메커니즘:</strong> SMP Type A 기능은 동일 거래참가자가 동일 SMP ID로 태그한 동일 종목의 특정 주문 또는 호가가 연속 거래 시 서로 매칭되는 것을 방지한다</li>
+<li><strong>목적:</strong> 동일 참가자 내에서 운영되는 서로 다른 알고리즘 전략으로 인해 발생할 수 있는 의도하지 않은 자기거래를 방지한다</li>
+</ul>
+<p>[Source: Eurex, “Announcement of T7 Release 12.1”, https://www.eurex.com/ex-en/find/circulars/circular-3723224, accessed 2026-04-07]</p>
+</section>
+<section id="eurex-enlight-선별적-rfq-eurex-enlight-selective-rfq" class="level3">
+<h3 class="anchored" data-anchor-id="eurex-enlight-선별적-rfq-eurex-enlight-selective-rfq">6.6 Eurex EnLight (선별적 RFQ) (Eurex EnLight — Selective RFQ)</h3>
+<ul>
+<li><strong>유형:</strong> 장내, 장외(off-book) 선별적 RFQ(호가요청) 플랫폼</li>
+<li><strong>메커니즘:</strong> 개시자가 (전체 시장에 방송하는 대신) 특정 상대방에게 선별적으로 호가를 요청</li>
+<li><strong>안전장치:</strong> 가격 칼라를 통한 서킷 브레이커 구현</li>
+<li><strong>사용 사례:</strong> 장내 거래 등록을 유지하면서 특정 유동성 공급자와 협상하고자 하는 대규모/복합 파생상품 거래</li>
+</ul>
+<p>[Source: Eurex, “Eurex EnLight | Selective RFQ Platform for Derivatives”, https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]</p>
+</section>
+<section id="사전거래-리스크-제어-advanced-risk-protection-pre-trade-risk-controls-advanced-risk-protection" class="level3">
+<h3 class="anchored" data-anchor-id="사전거래-리스크-제어-advanced-risk-protection-pre-trade-risk-controls-advanced-risk-protection">6.7 사전거래 리스크 제어 (Advanced Risk Protection) (Pre-Trade Risk Controls — Advanced Risk Protection)</h3>
+<ul>
+<li><strong>사전거래 리스크 포지션 한도:</strong> Clearing Member (CM)가 Direct Clearing Member Participant (DCMP) 및 Non-Clearing Member에 대해 사전거래 리스크 한도를 설정 가능</li>
+<li><strong>Advanced Risk Protection (ARP):</strong> Eurex Clearing의 C7 시스템과 통합; 자동 보호 조치를 갖춘 실시간 리스크 모니터링 제공</li>
+<li><strong>세션 수준 쓰로틀링:</strong> ETI가 세션별 메시지 속도 제한을 적용 (HF 150 메시지/초, LF 50 메시지/초)</li>
+<li><strong>주문 규모 한도:</strong> 상품별 구성 가능한 최대 주문 수량</li>
+<li><strong>Kill switch:</strong> 참가자의 모든 주문 및 호가를 취소하는 비상 기능</li>
+</ul>
+<p>[Source: Eurex, “T7 Derivatives Markets – Participant and User Maintenance Manual”, https://www.eurex.com/resource/blob/4332334/61e2e29f08a63ff88d20ee30c4dc2049/data/T7_R.13.1_Derivatives_Market_-_Participant_and_User_Maintenance_Manual_Version_1.pdf, accessed 2026-04-07]</p>
+</section>
+<section id="스폰서드-액세스-spa-모델-sponsored-access-spa-model" class="level3">
+<h3 class="anchored" data-anchor-id="스폰서드-액세스-spa-모델-sponsored-access-spa-model">6.8 스폰서드 액세스 (SpA) 모델 (Sponsored Access — SpA Model)</h3>
+<ul>
+<li><strong>목적:</strong> 바이사이드 회사가 완전한 거래소 회원 자격 없이, 스폰서링 Eurex 참가자(FCM)를 접근 제공자로 하여 Eurex의 T7 플랫폼에 직접 접근 가능</li>
+<li><strong>분류:</strong> MiFID II에 따른 Direct Electronic Access (DEA)</li>
+<li><strong>리스크 체계:</strong> 스폰서링 참가자가 T7 시스템 내에서 스폰서드 회사 및 그 트레이더에 대한 사전거래 리스크 한도를 설정</li>
+<li><strong>이점:</strong> 바이사이드 회사가 T7 인프라 및 전체 연결 스위트에 대한 직접 접근으로 지연시간 민감 전자매매 전략을 구현 가능</li>
+</ul>
+<p>[Source: Eurex, “Sponsored Access: A new gateway for the buy-side”, https://www.eurex.com/ex-en/trade/sponsored-access, accessed 2026-04-07]</p>
+</section>
+<section id="파티션-기반-매칭-아키텍처-partition-based-matching-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="파티션-기반-매칭-아키텍처-partition-based-matching-architecture">6.9 파티션 기반 매칭 아키텍처 (Partition-Based Matching Architecture)</h3>
+<p>파티션 모델은 파생상품 특유의 영향을 가진 근본적인 아키텍처 선택이다:</p>
+<ul>
+<li><strong>상품 격리:</strong> 서로 다른 자산군(주가지수 파생상품, 금리 파생상품, 상품 파생상품)이 별도 파티션에 배정될 수 있어, 활동이 많은 상품이 다른 상품의 지연시간에 영향을 미치지 않도록 보장한다</li>
+<li><strong>확장성:</strong> 상품 오퍼링이 성장함에 따라 새로운 파티션을 추가할 수 있다 (2022년 Partition 12 추가로 입증)</li>
+<li><strong>장애 격리:</strong> 한 파티션의 기술적 문제가 다른 파티션으로 전파되지 않는다</li>
+<li><strong>지연시간 결정론성:</strong> 각 파티션이 자체 매매체결엔진과 PS 게이트웨이를 보유하므로, 파티션 내에서 지연시간이 더 예측 가능하다</li>
+<li><strong>트레이드오프:</strong> 파티션 간 거래를 하는 참가자는 모든 파티션에서 최적 지연시간을 위해 다수의 PS 게이트웨이 연결이 필요하다; 교차 파티션 전략은 매매체결엔진 내에서 네이티브로 지원되지 않는다</li>
+</ul>
+<p>[Source: Eurex, “Technical Upgrade of T7 partitions”, https://www.eurex.com/ex-en/support/information-channels/implementation-news/Technical-Upgrade-of-T7-partitions–4079882, accessed 2026-04-07]</p>
+<hr>
+</section>
+</section>
+<section id="비교-참고사항-comparison-notes" class="level2">
+<h2 class="anchored" data-anchor-id="비교-참고사항-comparison-notes">7. 비교 참고사항 (Comparison Notes)</h2>
+<section id="vs.-krx-시스템-exture-exture-3.0" class="level3">
+<h3 class="anchored" data-anchor-id="vs.-krx-시스템-exture-exture-3.0">vs.&nbsp;KRX 시스템 (Exture+ / Exture 3.0)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 39%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>Eurex T7 (파생상품)</th>
+<th>KRX Exture+ / Exture 3.0</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>출시 연도</strong></td>
+<td>2012 (Eurex 파생상품)</td>
+<td>2014 (Exture+); Exture 3.0 최근 출시</td>
+</tr>
+<tr class="even">
+<td><strong>개발자</strong></td>
+<td>자체개발 (Deutsche Boerse Group)</td>
+<td>자체개발 (KRX 및 자회사 Koscom)</td>
+</tr>
+<tr class="odd">
+<td><strong>아키텍처</strong></td>
+<td>파티션 기반; 파생상품용 13개 독립 파티션, 각각 자체 매매체결엔진 및 PS 게이트웨이 보유</td>
+<td>통합 매매체결엔진 아키텍처; 서울 DC (주식) + 부산 DC (파생상품)</td>
+</tr>
+<tr class="even">
+<td><strong>내부 매칭 지연시간</strong></td>
+<td>~2.8 마이크로초 최소 (2025년 2월)</td>
+<td>~70 마이크로초 (Exture+); Exture 3.0에서 ~30% 개선 달성</td>
+</tr>
+<tr class="odd">
+<td><strong>왕복 지연시간 (코로케이션)</strong></td>
+<td>~60 마이크로초 중앙값 (HF 세션, PS 게이트웨이 경유)</td>
+<td>~70 마이크로초 (매매체결엔진만; Exture+)</td>
+</tr>
+<tr class="even">
+<td><strong>복합 전략 지원</strong></td>
+<td>내재가격(implied-in / implied-out)을 갖춘 네이티브 스프레드 엔진; 사용자 정의 전략; 상품간 스프레드</td>
+<td>전략 주문 지원되나 내재가격 역량은 문서화가 덜 됨 [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>시장데이터 피드</strong></td>
+<td>UDP multicast를 통한 EMDI (비넷팅 MBP), MDI (넷팅), EOBI (전체 MBO/L3), RDI (기준정보)</td>
+<td>독자 바이너리; Solace PubSub+ 메시징 미들웨어</td>
+</tr>
+<tr class="even">
+<td><strong>주문 입력 프로토콜</strong></td>
+<td>ETI (독자 바이너리, FIX 5.0 SP2 시맨틱스) + FIX 4.2/4.4</td>
+<td>FIX 기반 + 독자 API [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>장외거래</strong></td>
+<td>T7 Entry Services (TES): Block, EFP, EFS, Multilateral, Brokerage; Eurex EnLight (선별적 RFQ)</td>
+<td>협의 거래 지원; 구체적 장외거래 체계는 공개 문서화가 덜 됨 [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>마켓 메이킹 지원</strong></td>
+<td>Mass quote 기능; 비지속성 lean 호가; Designated Market Maker 프로그램</td>
+<td>Liquidity Provider (LP) 제도</td>
+</tr>
+<tr class="odd">
+<td><strong>자기거래 방지</strong></td>
+<td>SMP Type A (동일 참가자, 동일 SMP ID) – Release 12.1 이후 시장 전체</td>
+<td>이용 가능 [unverified – 구체적 메커니즘 비공개]</td>
+</tr>
+<tr class="even">
+<td><strong>변동성 보호</strong></td>
+<td>Volatility Interruption (정적 + 동적 범위); 상품 전체 또는 종목 수준</td>
+<td>SVIH (Static/Dynamic Volatility Interruption)</td>
+</tr>
+<tr class="odd">
+<td><strong>주 데이터센터</strong></td>
+<td>Equinix FR2, 프랑크푸르트 (제3자 시설에 호스팅)</td>
+<td>KRX 소유 부산 데이터센터 (파생상품)</td>
+</tr>
+<tr class="even">
+<td><strong>DR 접근법</strong></td>
+<td>시뮬레이션 인프라를 DR로 재활용; 정기 테스트 (연 2회); 페일오버 후 호가장 비어있음</td>
+<td>서울과 부산 간 액티브/스탠바이 [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>파티션 모델</strong></td>
+<td>13개 파티션; 상품이 파티션에 분배; 파티션 수준 장애 격리</td>
+<td>통합 모델 [unverified – 구체적 파티션 세부사항 비공개]</td>
+</tr>
+<tr class="even">
+<td><strong>규제 체계</strong></td>
+<td>BaFin / ESMA (MiFID II / MiFIR / EMIR)</td>
+<td>FSC / FSS</td>
+</tr>
+<tr class="odd">
+<td><strong>기술 수출</strong></td>
+<td>T7을 BSE India 및 기타에 라이선스</td>
+<td>Exture+를 라오스, 캄보디아, 아제르바이잔 등에 수출</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주요-차별화-요소-key-differentiators" class="level3">
+<h3 class="anchored" data-anchor-id="주요-차별화-요소-key-differentiators">주요 차별화 요소 (Key Differentiators)</h3>
+<p><strong>Eurex T7의 강점 (파생상품 특화):</strong></p>
+<ol type="1">
+<li><strong>내재가격 및 스프레드 엔진:</strong> 복합 전략 및 상품간 스프레드에 걸친 implied-in 및 implied-out 매칭의 네이티브 지원은 파생상품 거래를 위한 중요한 아키텍처 역량이다; 관련 상품 간 합성 유동성 발견을 가능하게 한다</li>
+<li><strong>극히 낮은 내부 지연시간:</strong> ~2.8 마이크로초의 내부 매칭 지연시간은 전 세계적으로 가장 빠른 수준에 속한다; PS 게이트웨이 통합과 결합하여 높은 결정론적 성능을 제공한다</li>
+<li><strong>파티션 기반 장애 격리:</strong> 독립적 파티션은 한 상품 그룹(예: 변동성 이벤트 시 주가지수 옵션)의 활동 급증이나 문제가 다른 상품(예: 금리 선물)의 성능을 저하시키지 않도록 보장한다</li>
+<li><strong>포괄적 장외거래 생태계:</strong> TES (Block/EFP/EFS/Multilateral/Brokerage) + Eurex EnLight (선별적 RFQ)가 장내 청산과 통합된 풍부한 장외거래 체계를 제공한다</li>
+<li><strong>Mass quoting 최적화:</strong> 플랫 바이너리 인코딩과 lean (비지속성) 호가가 대규모 옵션 시리즈에 걸친 고빈도 마켓 메이킹을 위해 특별히 설계되었다</li>
+<li><strong>EOBI 주문별 피드:</strong> 깊이 제한이 없는 전체 Level 3 시장데이터, 네이티브 바이너리 인코딩 (FAST 디코딩 오버헤드 없음), 일관되게 가장 빠른 데이터 경로 – 개별 주문/호가 활동을 확인해야 하는 파생상품 참가자에게 핵심적이다</li>
+<li><strong>광범위한 공개 문서:</strong> Deutsche Boerse는 T7 내부 구조, 지연시간 성능, 시스템 역학에 대해 비정상적으로 상세한 기술 문서를 발행한다 – 참가자 개발 팀에게 귀중한 자료이다</li>
+</ol>
+<p><strong>KRX Exture+ / Exture 3.0의 강점:</strong></p>
+<ol type="1">
+<li><strong>통합 거래소 모델:</strong> 단일 거래소가 모든 한국 자본시장 상품(주식, 채권, 파생상품)을 한 지붕 아래에서 커버하여 교차 거래소 복잡성을 줄인다</li>
+<li><strong>완전한 기술 독립성:</strong> 제3자 시설 운영자에 대한 의존 없이 자체 보유 데이터센터 인프라 (파생상품용 부산)</li>
+<li><strong>폭넓은 기술 수출 실적:</strong> KRX는 다수의 아시아 시장(라오스, 캄보디아, 아제르바이잔)에 걸쳐 수출 관계를 확립하였다</li>
+<li><strong>지리적 분리:</strong> 서울 (주식)과 부산 (파생상품) 데이터센터가 자연적인 지리적 재해복구를 제공한다</li>
+<li><strong>Exture 3.0 현대화:</strong> 최근 시스템 업그레이드가 용량 증대와 함께 거래 처리 속도 ~30% 개선을 달성하였다</li>
+</ol>
+<p><strong>아키텍처 관찰사항:</strong></p>
+<ul>
+<li>T7의 파티션 모델은 수천 개의 종목 시리즈를 가진 파생상품 거래소에 적합하다 (옵션 체인이 대량의 종목을 생성); 파티션 수준 격리는 고변동성 시기 옵션 시장에서 흔한 “noisy neighbor” 효과를 방지한다</li>
+<li>KRX의 통합 모델은 종목 간 더 균일한 지연시간을 제공할 수 있으나, 파생상품 거래량 급증이 공유 인프라에 영향을 미칠 때 어려움에 직면할 수 있다</li>
+<li>T7의 Equinix 코로케이션 접근법은 더 폭넓은 연결 제공자 및 코로케이션 참가자 생태계에 대한 접근을 제공하는 반면, KRX의 자체 시설 모델은 인프라에 대한 더 직접적인 통제를 부여한다</li>
+<li>T7의 시뮬레이션 인프라를 재활용하는 DR 모델은 비용 효율적인 접근법이지만, DR 용량이 운영 용량보다 낮을 수 있다는 것을 의미한다; KRX의 지리적 분리(서울/부산)는 자연적 복원력을 제공한다</li>
+<li>양 거래소 모두 전 세계적으로 경쟁력 있는 수준으로 지연시간을 줄이는 데 투자해 왔으나, T7의 공개된 내부 매칭 지연시간(~2.8 마이크로초)은 KRX의 공개 수치보다 현저히 빠르다</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="출처-sources" class="level2">
+<h2 class="anchored" data-anchor-id="출처-sources">출처 (Sources)</h2>
+<section id="공식-eurex-deutsche-boerse-문서" class="level3">
+<h3 class="anchored" data-anchor-id="공식-eurex-deutsche-boerse-문서">공식 Eurex / Deutsche Boerse 문서</h3>
+<ul>
+<li>[Source: Eurex, “T7 trading architecture”, https://www.eurex.com/t7/, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7”, https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 Release 14.0”, https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 Release 14.1”, https://www.eurex.com/ex-en/support/initiatives/t7release14-1, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Announcement of T7 Release 14.1”, https://www.eurex.com/ex-en/find/circulars/circular-4803582, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 R.13.1 Enhanced Trading Interface Manual”, https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 R.12.1 EMDI/MDI/RDI Manual”, https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 Disaster Recovery Concept 2025 v1.2”, https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Eurex T7 Entry Services”, https://www.eurex.com/ex-en/trade/eurex-t7-entry-services, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Block Trades”, https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Eurex EnLight”, https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Strategy trading – Trading in complex instruments”, https://www.eurex.com/ex-en/trade/order-book-trading/trading-in-complex-instruments, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Volatility Interruption Functionality”, https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Sponsored Access”, https://www.eurex.com/ex-en/trade/sponsored-access, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7: Introduction of a consolidated partition-specific Gateway and Matching Engine process”, https://www.eurex.com/ex-en/find/circulars/circular-2404602, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7: Consolidation of the Market Data Distributor and Matching Engine processes”, https://www.eurex.com/ex-en/find/circulars/T7-Consolidation-of-the-Market-Data-Distributor-and-Matching-Engine-processes-on-the-Matching-Engine-Host-3682674, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Technical Upgrade of T7 partitions”, https://www.eurex.com/ex-en/support/information-channels/implementation-news/Technical-Upgrade-of-T7-partitions–4079882, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Completion of the T7 matching engine server hardware upgrade”, https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-07]</li>
+<li>[Source: Deutsche Boerse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]</li>
+<li>[Source: Deutsche Boerse, “Internal T7 Latency Performance Updates”, https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-07]</li>
+<li>[Source: Deutsche Boerse, “Open Day 2019 – T7 infrastructure and latency”, https://www.deutsche-boerse.com/resource/blob/1637232/da0ae611905acda0d7502260903a0835/data/Open-Day-2019_T7-Latency-Roadmap_Andreas-Lohr_final.pdf, accessed 2026-04-07]</li>
+<li>[Source: Xetra, “Co-Location Services”, https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 Derivatives Markets Participant and User Maintenance Manual R.13.1”, https://www.eurex.com/resource/blob/4332334/61e2e29f08a63ff88d20ee30c4dc2049/data/T7_R.13.1_Derivatives_Market_-_Participant_and_User_Maintenance_Manual_Version_1.pdf, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Readiness Newsflash – Our path for 2026!”, https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026–4867350, accessed 2026-04-07]</li>
+</ul>
+</section>
+<section id="제3자-출처-third-party-sources" class="level3">
+<h3 class="anchored" data-anchor-id="제3자-출처-third-party-sources">제3자 출처 (Third-Party Sources)</h3>
+<ul>
+<li>[Source: OnixS, “Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK”, https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]</li>
+<li>[Source: MarketsWiki, “Eurex”, https://www.marketswiki.com/wiki/Eurex, accessed 2026-04-07]</li>
+<li>[Source: WallStreetMojo, “Eurex Exchange”, https://www.wallstreetmojo.com/eurex-exchange/, accessed 2026-04-07]</li>
+</ul>
+</section>
+<section id="krx-exture-출처" class="level3">
+<h3 class="anchored" data-anchor-id="krx-exture-출처">KRX / Exture+ 출처</h3>
+<ul>
+<li>[Source: Koscom, “KRX Trading System”, https://english.koscom.co.kr/eng/main/contents.do?menuNo=300005, accessed 2026-04-07]</li>
+<li>[Source: Solace, “Korea Exchange Deploys Solace Systems”, October 2013, https://www.prweb.com/releases/2013/10/prweb11191574.htm, accessed 2026-04-07]</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

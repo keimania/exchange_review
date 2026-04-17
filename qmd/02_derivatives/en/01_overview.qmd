@@ -1,0 +1,315 @@
+---
+title: "Global Derivatives Markets — Overview"
+subtitle: "Derivatives"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-13
+> **Status:** Completed
+
+---
+
+## 1. Introduction
+
+This document provides a high-level overview of global derivatives markets (futures, options, and other listed derivatives), their structure, key players, and trends. It serves as the capstone summary for the derivatives domain of the Global Exchange Research project, synthesizing findings from 17 individual exchange research files.
+
+**Related Resources:**
+- Individual exchange files: [exchanges/](exchanges/)
+- System deep-dives: [systems/](systems/) (Globex, Genium INET, T7)
+- Regulatory analysis: [regulations/](regulations/) (U.S., EU, Asia)
+
+---
+
+## 2. Global Derivatives Market Landscape
+
+### 2.1 Market Size & Scale
+
+| Metric | Value (CY2024) | Source |
+|--------|----------------|--------|
+| **Total ETD contracts traded (annual)** | ~205.34 billion contracts (+51% YoY) | FIA, 2024 Annual ETD Volume Review |
+| **Total options volume** | ~177.12 billion contracts (+63.8% YoY) | FIA |
+| **Total futures volume** | ~28.22 billion contracts (+1.2% YoY) | FIA |
+| **Open interest (end-2024)** | ~1.23 billion contracts | FIA |
+| **OTC derivatives notional outstanding (end-2024)** | ~$700+ trillion | BIS Semiannual Statistics |
+| — Interest rate derivatives | ~$548.3 trillion | BIS |
+| — Foreign exchange derivatives | ~$130.1 trillion | BIS |
+| — Credit derivatives | ~$9.2 trillion | BIS |
+| — Equity derivatives (OTC) | ~$8.9 trillion | BIS |
+| — Commodity derivatives (OTC) | ~$2.4 trillion | BIS |
+
+**Key Observation:** The global ETD market surpassed 200 billion contracts for the first time in 2024, marking the sixth consecutive record year. The overwhelming majority of volume growth was driven by equity options, particularly in India, where NSE alone traded an estimated 92-108 billion contracts. Options now account for ~86% of all ETD volume globally, with futures representing the remaining ~14%.
+
+[Source: FIA, "2024 Annual ETD Volume Review", https://www.fia.org/fia/articles/2024-annual-etd-volume-review]
+[Source: BIS, "OTC derivatives statistics at end-June 2024", https://www.bis.org/publ/otc_hy2411.htm]
+[Source: ISDA, "Key Trends in OTC Derivatives Markets H2 2024", https://www.isda.org/2025/07/03/key-trends-in-the-size-and-composition-of-otc-derivatives-markets-in-the-second-half-of-2024]
+
+### 2.2 Top Exchanges by Volume (Contracts Traded, CY2024)
+
+| Rank | Exchange | Contracts (est. annual, billions) | Primary Products | Region |
+|------|----------|----------------------------------|-----------------|--------|
+| 1 | **NSE (India)** | ~92-108 | Equity index & single stock options (Nifty 50, Bank Nifty) | Asia-Pacific |
+| 2 | **B3 (Brazil)** | ~9-10 | Equity index & interest rate futures/options | Americas |
+| 3 | **CME Group** | ~6.2 (ADV ~24.8M record) | Multi-asset (interest rate, equity index, energy, metals, FX) | Americas |
+| 4 | **Cboe Global Markets** | ~4.5 | Equity options, VIX, SPX, 0DTE options | Americas |
+| 5 | **SHFE (incl. INE)** | ~3.0 | Metals (copper, gold, aluminum), crude oil, rubber | Asia-Pacific |
+| 6 | **DCE** | ~2.5 | Iron ore, soybean meal, agricultural/petrochemical | Asia-Pacific |
+| 7 | **Eurex** | ~2.4 | Equity index (Euro Stoxx 50), interest rate (Bund), single stock | Europe |
+| 8 | **ZCE (Zhengzhou)** | ~2.2 | Agricultural (cotton, sugar, PTA), glass, methanol | Asia-Pacific |
+| 9 | **ICE** | ~1.8 | Energy (Brent, gas), interest rates, soft commodities, carbon | Americas/Europe |
+| 10 | **KRX (Korea Exchange)** | ~1.5 | KOSPI 200 options, equity index futures | Asia-Pacific |
+
+**Notes:**
+- NSE's dominance is driven by massive retail options participation; however, SEBI curbs implemented in November 2024 have reduced volumes by ~30-38% from their peak, and NSE ceded the #1 ranking to B3 in H1 2025.
+- CME Group ADV reached a record 24.8 million contracts in July 2024; international ADV hit 8.4 million in Q3 2024.
+- Rankings are approximate; exact figures pending final FIA annual publication. Chinese exchanges (SHFE, DCE, ZCE) rank consistently in the top 10 by contract volume.
+
+[Source: FIA ETD Tracker, https://www.fia.org/fia/etd-tracker]
+[Source: NSE, "NSE is the World's Largest Derivative Exchange for Fifth Consecutive Year", January 2024]
+[Source: CME Group, "CME Group International ADV Reached New Record of 8.4M Contracts in Q3 2024", October 2024]
+[Source: Business Standard, "NSE Loses Top Derivatives Exchange Spot to Brazil B3", July 2025]
+
+### 2.3 Product Categories
+
+| Category | Examples | Key Exchanges |
+|----------|----------|---------------|
+| **Equity Index Futures/Options** | S&P 500, Euro Stoxx 50, Nifty 50, KOSPI 200, TAIEX, SPI 200, CAC 40, FTSE MIB, Hang Seng, SGX Nifty (GIFT Nifty) | NSE, CME, Eurex, Cboe, TAIFEX, ASX, Euronext, HKEX, SGX, KRX, OSE |
+| **Interest Rate Futures/Options** | SOFR, Euribor, Bund, T-Note/T-Bond, 3Y/10Y AUS TB, GoC Bond, CORRA, JGB, TONA | CME, Eurex, ICE, ASX, MX (Montreal), OSE |
+| **FX Futures/Options** | EUR/USD, JPY/USD, USD/INR, AUD/USD, GBP/USD | CME, SGX, NSE, TAIFEX |
+| **Commodity — Energy** | WTI Crude, Brent Crude, Oman Crude, Natural Gas, Electricity, LNG | NYMEX/CME, ICE, DME (GME), INE/SHFE, ASX |
+| **Commodity — Metals** | Gold, Silver, Copper, Aluminum, Iron Ore, Nickel, Zinc | COMEX/CME, LME, SHFE, DCE |
+| **Commodity — Agriculture** | Corn, Wheat, Soybeans, Soybean Meal, Palm Oil, Cotton, Sugar, Rapeseed, Live Hog | CBOT/CME, ICE, DCE, ZCE, Euronext (MATIF) |
+| **Single Stock Futures/Options** | Options/futures on individual equities | NSE, Eurex, Cboe, Euronext, ASX (ETOs), TAIFEX, HKEX |
+| **Volatility Products** | VIX Futures/Options, VSTOXX | Cboe (CFE), Eurex |
+| **Environmental / ESG** | EU Allowances (EUA), Carbon Credits (ACCU, NZU), Renewable Energy Certificates | ICE, Eurex, ASX, EEX |
+| **Dividend Derivatives** | Index dividend futures, single stock dividend futures | Eurex, Euronext |
+| **Government Bond Futures (China)** | 2Y/5Y/10Y/30Y CGB Futures | CFFEX |
+
+---
+
+## 3. Market Structure
+
+### 3.1 Exchange-Traded vs OTC
+
+The global derivatives market spans both exchange-traded derivatives (ETD) and over-the-counter (OTC) markets:
+
+- **ETD markets** reached ~205 billion contracts in 2024, dominated by equity options (~86% of volume)
+- **OTC notional outstanding** exceeded $700 trillion (end-2024), dominated by interest rate derivatives (~$548T)
+- Post-2008 regulatory mandates (Dodd-Frank, EMIR) have pushed standardized OTC derivatives toward central clearing, blurring the line between exchange-traded and OTC markets
+- Major CCPs now clear both ETD and OTC products (e.g., CME Clearing, Eurex Clearing, ASX Clear Futures, LCH)
+
+### 3.2 Trading Mechanisms
+
+| Mechanism | Description | Examples |
+|-----------|-------------|---------|
+| **Electronic order book (CLOB)** | Continuous matching via price-time priority; dominant mechanism globally | CME Globex, Eurex T7, Optiq, SOLA, ASX 24, HKATS, J-GATE, Titan, Cboe Titanium |
+| **Request for Quote (RFQ)** | Electronic negotiation for less liquid instruments; market makers provide competitive quotes | Eurex EnLight, ICE, HKEX, Cboe AIM |
+| **Block trading / negotiated trades** | Off-book large-lot transactions at pre-agreed prices, reported to exchange for clearing | All major exchanges (e.g., CME EFP/EFS/EOO, Eurex TES, OSE J-NET, SGX NLT, ASX Custom Market) |
+| **Trade at Marker (TAM)** | Execution at a published daily marker price | DME/GME (Oman Marker Price) |
+
+### 3.3 Market Participants
+
+- **Hedgers:** Commercial entities managing commodity, interest rate, FX, and equity risk
+- **Speculators:** Including retail investors (particularly dominant in India's options market), hedge funds, and proprietary firms
+- **Arbitrageurs:** Exploiting price discrepancies across related contracts and venues
+- **Proprietary trading firms / HFT:** High-speed algorithmic market makers providing liquidity
+- **Market makers:** Exchange-designated liquidity providers with quoting obligations and incentives
+
+---
+
+## 4. Margin & Risk Framework
+
+Global derivatives exchanges employ several margin methodologies, with a clear industry-wide trend from scenario-based (SPAN) to VaR-based approaches:
+
+| Methodology | Type | Key Exchanges/CCPs | Status |
+|-------------|------|---------------------|--------|
+| **SPAN (original)** | Scenario-based (16 scenarios) | TAIFEX, CDCC (Montreal), HKCC (PRiME), many smaller exchanges | Legacy; being phased out at major exchanges |
+| **SPAN 2** | HVaR-based (thousands of scenarios) | CME Clearing | Energy products migrated 2023; broader rollout ongoing |
+| **Prisma** | Filtered Historical Simulation VaR | Eurex Clearing | In production since 2013; first CCP to apply VaR to financial futures |
+| **ICE Risk Model 2 (IRM 2)** | Filtered Historical Simulation VaR | ICE Clear | Launched 2024-2025, replacing legacy IRM |
+| **Euronext Clearing** | VaR-based | Euronext Clearing (formerly CC&G) | Expanded to all Euronext financial derivatives Sept 2024 |
+| **Fixed-percentage** | Percentage of contract value | CFFEX, DCE, SHFE (China) | Chinese exchanges use fixed-percentage margins with regulatory discretion to adjust |
+| **SEBI Peak Margin** | Upfront 100% margin | NSE (India) | Implemented 2021; additional ELM on expiry day from Nov 2024 |
+| **KRX-SPAN** | Scenario-based (modified SPAN) | KRX | Active; evaluation of VaR-based migration underway |
+
+**Key Observations:**
+- The industry is converging toward VaR-based methodologies (SPAN 2, Prisma, IRM 2) that use historical simulation with thousands of scenarios, replacing SPAN's fixed 16-scenario framework
+- Chinese exchanges (CFFEX, DCE, SHFE) remain on fixed-percentage systems with extensive regulatory discretion to adjust margins during volatile periods or holidays
+- Cross-margining across products is increasingly available at CME, Eurex, and other multi-asset CCPs
+- Anti-procyclicality measures (stress VaR floors, volatility buffers) are now standard at major CCPs
+
+---
+
+## 5. Regulatory Landscape
+
+| Jurisdiction | Key Regulation | Regulator | Scope |
+|-------------|----------------|-----------|-------|
+| **United States** | Dodd-Frank Act (2010) | CFTC, SEC | Central clearing mandates for standardized swaps; position limits; DCM/DCO registration; SIFMU designation for systemically important CCPs |
+| **European Union** | EMIR (2012, amended), MiFID II/MiFIR (2018) | ESMA, national NCAs | CCP authorization; clearing obligations; position limits and reporting; MiFIR Refit (2024) introducing consolidated tape, single volume cap |
+| **United Kingdom** | UK EMIR, UK MiFID II (post-Brexit) | FCA, Bank of England | Parallel regime to EU; independent CCP supervision |
+| **China** | Futures and Derivatives Law (2022), State Council Regulations | CSRC | Comprehensive legal framework; QFI access for foreign investors; strict position limits and margin controls |
+| **India** | SEBI Act, SEBI F&O Regulations | SEBI | Six-point F&O reform package (Oct 2024); weekly expiry restrictions; peak margin rules; 93% retail loss study |
+| **Japan** | Financial Instruments and Exchange Act (FIEA) | JFSA, SESC | Exchange consolidation under JPX; BOJ rate normalization driving TONA futures growth |
+| **Singapore** | Securities and Futures Act (SFA) | MAS | International hub; mutual offset with CME; GIFT Connect with NSE IX |
+| **Hong Kong** | Securities and Futures Ordinance | SFC | Swap Connect (2023); Stock Connect extension; dual CCP (HKCC/SEOCH) |
+| **Australia** | Corporations Act, ASIC Market Integrity Rules | ASIC, RBA | OTC clearing mandates; ASX vertically integrated model; CHESS replacement ongoing |
+| **Taiwan** | Futures Trading Law (1997) | FSC | TAIFEX as sole domestic derivatives exchange; QCCP designation (2020) |
+| **Canada** | Derivatives Act (Quebec), provincial securities acts | AMF, CIRO, Bank of Canada | MX/CDCC as systemically important FMI; T+1 settlement (May 2024); CDOR cessation |
+| **UAE (DIFC)** | DIFC Markets Law | DFSA | DME/GME regulated within DIFC free zone; CME Clearing provides CCP services |
+| **South Korea** | FSCMA (2007), Derivatives Market Business Regulations | FSC, FSS | Integrated exchange-CCP model; night session launched June 2025; QFI access for foreign participants; Nextrade (NXT) alternative exchange launched March 2025 |
+
+**Cross-cutting regulatory trends:**
+- Increasing central clearing mandates for OTC derivatives globally
+- Enhanced position limit regimes and large trader reporting
+- Retail investor protection measures (particularly India's SEBI reforms)
+- Digital Operational Resilience Act (DORA) in the EU (effective January 2025)
+- PFMI (Principles for Financial Market Infrastructures) compliance as global standard
+
+For detailed regulatory analysis, see:
+- [U.S. Derivatives Regulation](regulations/us_derivatives_regulation.md)
+- [EU Derivatives Regulation](regulations/eu_derivatives_regulation.md)
+- [Asia Derivatives Regulation](regulations/asia_derivatives_regulation.md)
+
+---
+
+## 6. Key Trends
+
+### 6.1 Explosion of Options Trading & Retail Participation
+
+- Global options volume reached **177 billion contracts** in 2024 (+63.8% YoY), now ~86% of all ETD volume
+- NSE India alone traded ~92-108 billion contracts in 2024 (mostly equity options), driven by massive retail participation
+- SEBI's September 2024 study revealed **93% of individual F&O traders incurred losses** between FY22-FY24, leading to comprehensive regulatory curbs
+- Post-SEBI curbs (November 2024), NSE volumes declined ~30-38%, and B3 overtook NSE as #1 globally in H1 2025
+
+### 6.2 0DTE (Zero Days to Expiration) Options Revolution
+
+- 0DTE options averaged **14 million contracts/day** in 2025, up 41% YoY
+- 0DTE accounted for **24.1% of all U.S. listed options volume** in 2025 (up from 21.5% in 2024, nearly double the 2022 share)
+- SPX 0DTE contracts became the most traded S&P 500 options, surpassing all other expiration dates combined in Q4 2024
+- Cboe's daily SPX expirations (launched 2022) were the catalyst; 0DTE reached ~59% of SPX options volume by 2025
+- Both retail (50% of options volume via retail broker flows) and institutional participants are adopting 0DTE strategies
+
+### 6.3 Micro/Nano Contracts for Retail Access
+
+- CME Micro E-mini suite (S&P 500, Nasdaq, Gold, Crude) continues to grow, lowering capital requirements for retail
+- TAIFEX launched Micro TAIEX Futures; ASX offers Mini SPI 200
+- DME/GME launched Micro Oman Crude Oil Futures (100 barrels vs. standard 1,000)
+- Euronext introduced mini single stock options (May 2025) and mini ETF options (March 2026)
+
+### 6.4 ESG & Environmental Derivatives
+
+- ICE environmental markets saw a record **20.9 million contracts** in 2025 (+4% YoY)
+- EU Emissions Trading System (ETS) allowances remain the most liquid environmental derivative (ICE Futures Europe primary venue)
+- ASX lists ACCU (Australian Carbon Credit Unit) Futures, NZU Futures, and LGC Futures
+- Euronext launched CAC 40 ESG index futures
+- Global carbon market exceeded **$1 trillion** in 2025
+- Renewable energy carbon credit market exceeded USD 43.3 billion in 2024
+
+### 6.5 Cryptocurrency Derivatives
+
+- Crypto derivatives market expanded to **$8.94 trillion monthly** in 2025
+- CME Bitcoin and Ether futures/options continue to grow as regulated venues
+- Average daily volume in Ether options grew 65% from 2024 to 2025
+- Bitcoin and Ethereum together account for ~68% of crypto derivatives volume
+
+### 6.6 Extended Trading Hours
+
+- TAIFEX offers 19-hour coverage (day + after-hours T+1 session since 2017)
+- ASX 24 provides near-24-hour trading for interest rate and equity index futures
+- CME Globex offers ~23 hours/day across asset classes
+- SHFE/DCE/CFFEX night sessions extend coverage to overlap with London and New York
+- Euronext extended equity index futures hours to 22:00 CET (covering U.S. session)
+- KRX launched independent night session (18:00-06:00 KST) on June 9, 2025, expanding derivatives trading to ~19 hours/day
+
+### 6.7 Technology Modernization
+
+- Margin methodology transition: SPAN to VaR-based (SPAN 2, Prisma, IRM 2) across major CCPs
+- Euronext completed Optiq platform migration for all derivatives (including IDEM, April 2024)
+- Euronext Clearing migration from LCH SA completed for all financial derivatives (September 2024)
+- ASX 24 platform modernization with LSEG announced (March 2026, target go-live H1 2028)
+- NSE planning nanosecond-latency upgrade (100M transactions/second, from April 2026)
+- OSE J-GATE 4.0 planned on Nasdaq Eqlipse platform (~2028)
+
+### 6.8 China's Internationalization
+
+- INE crude oil futures (launched 2018) established RMB-denominated energy benchmark
+- DCE iron ore and palm olein opened to overseas traders
+- SHFE bonded copper and low sulfur fuel oil accessible to foreign participants
+- QFI scheme expanded access across CFFEX, DCE, SHFE products
+- Futures and Derivatives Law (2022) provided comprehensive legal foundation
+
+### 6.9 Fixed Income Derivatives Growth
+
+- BOJ rate normalization driving TONA futures growth on OSE
+- Euronext launched mini cash-settled government bond futures (BTP, OAT, Bund, Bono) in September 2025
+- Montreal Exchange CORRA futures (CRA) reached ~170K ADV in 2025 following successful BAX-to-CRA transition
+- ASX interest rate futures hit record volumes in Q4 2025 (+23% YoY)
+- CFFEX 30-year CGB futures launched April 2023, completing China's yield curve coverage
+
+---
+
+## 7. Research Roadmap
+
+### Tier 1 — Deep Dive
+| Exchange | File | Status |
+|----------|------|--------|
+| CME Group | [cme_group.md](exchanges/cme_group.md) | ✅ Completed (2026-04-06) |
+| Eurex | [eurex.md](exchanges/eurex.md) | ✅ Completed (2026-04-06) |
+| HKEX Derivatives | [hkex_derivatives.md](exchanges/hkex_derivatives.md) | ✅ Completed (2026-04-06) |
+| SGX Derivatives | [sgx_derivatives.md](exchanges/sgx_derivatives.md) | ✅ Completed (2026-04-06) |
+| KRX Derivatives | [krx_derivatives.md](exchanges/krx_derivatives.md) | ✅ Completed (2026-04-13) |
+
+### Tier 2 — Standard
+| Exchange | File | Status |
+|----------|------|--------|
+| Cboe | [cboe.md](exchanges/cboe.md) | ✅ Completed (2026-04-06) |
+| ICE Futures | [ice_futures.md](exchanges/ice_futures.md) | ✅ Completed (2026-04-06) |
+| Osaka Exchange | [osaka_exchange.md](exchanges/osaka_exchange.md) | ✅ Completed (2026-04-06) |
+| Euronext Derivatives | [euronext_derivatives.md](exchanges/euronext_derivatives.md) | ✅ Completed (2026-04-07) |
+| ASX Derivatives | [asx_derivatives.md](exchanges/asx_derivatives.md) | ✅ Completed (2026-04-07) |
+
+### Tier 3 — Overview
+| Exchange | File | Status |
+|----------|------|--------|
+| Montreal Exchange | [montreal_exchange.md](exchanges/montreal_exchange.md) | ✅ Completed (2026-04-07) |
+| CFFEX | [cffex.md](exchanges/cffex.md) | ✅ Completed (2026-04-07) |
+| DCE | [dce.md](exchanges/dce.md) | ✅ Completed (2026-04-07) |
+| SHFE | [shfe.md](exchanges/shfe.md) | ✅ Completed (2026-04-07) |
+| NSE F&O | [nse_fo.md](exchanges/nse_fo.md) | ✅ Completed (2026-04-07) |
+| TAIFEX | [taifex.md](exchanges/taifex.md) | ✅ Completed (2026-04-07) |
+| DME | [dme.md](exchanges/dme.md) | ✅ Completed (2026-04-07) |
+
+### Supporting Research
+| Document | File | Status |
+|----------|------|--------|
+| Globex System Deep-Dive | [systems/globex.md](systems/globex.md) | ✅ Completed |
+| Genium INET System Deep-Dive | [systems/genium_inet.md](systems/genium_inet.md) | ✅ Completed |
+| T7 Derivatives System Deep-Dive | [systems/t7_derivatives.md](systems/t7_derivatives.md) | ✅ Completed |
+| U.S. Derivatives Regulation | [regulations/us_derivatives_regulation.md](regulations/us_derivatives_regulation.md) | ✅ Completed |
+| EU Derivatives Regulation | [regulations/eu_derivatives_regulation.md](regulations/eu_derivatives_regulation.md) | ✅ Completed |
+| Asia Derivatives Regulation | [regulations/asia_derivatives_regulation.md](regulations/asia_derivatives_regulation.md) | ✅ Completed |
+
+---
+
+## Sources
+
+- [FIA — 2024 Annual ETD Volume Review](https://www.fia.org/fia/articles/2024-annual-etd-volume-review)
+- [FIA — ETD Tracker](https://www.fia.org/fia/etd-tracker)
+- [BIS — OTC Derivatives Statistics](https://www.bis.org/statistics/derstats.htm)
+- [BIS — OTC Derivatives Statistics at end-June 2024](https://www.bis.org/publ/otc_hy2411.htm)
+- [ISDA — Key Trends in OTC Derivatives Markets H2 2024](https://www.isda.org/2025/07/03/key-trends-in-the-size-and-composition-of-otc-derivatives-markets-in-the-second-half-of-2024)
+- [NSE — World's Largest Derivative Exchange](https://www.nseindia.com/nse-is-now-worlds-largest-derivatives-exchange)
+- [CME Group — Record ADV 2024](https://www.marketsmedia.com/cme-reports-record-average-daily-volume-for-2024/)
+- [Business Standard — NSE Loses Top Spot to B3](https://www.business-standard.com/markets/news/nse-loses-top-derivatives-exchange-spot-to-brazil-b3-eyes-vix-futures-125073001569_1.html)
+- [Cboe — State of the Options Industry Q3 2025](https://www.cboe.com/insights/posts/the-state-of-the-options-industry-quarter-three-2025/)
+- [SEBI — 93% Retail F&O Loss Study, September 2024](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html)
+- [OpenGamma — SPAN vs VaR](https://opengamma.com/span-vs-var/)

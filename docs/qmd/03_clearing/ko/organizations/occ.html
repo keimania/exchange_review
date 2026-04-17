@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>OCC (Options Clearing Corporation, 옵션청산공사) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/ko/organizations/asx_clear.html">청산기관</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/ko/organizations/occ.html">OCC (Options Clearing Corporation, 옵션청산공사)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 청산결제 — 개요 (Global Clearing &amp; Settlement — Overview)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 청산결제 — 비교 분석 (Global Clearing &amp; Settlement -- Comparative Analysis)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">청산기관</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/asx_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Clear / ASX Clear (Futures) (호주증권거래소 청산소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/ccil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearing Corporation of India Limited (CCIL)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/cdp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Central Depository Pte Ltd (CDP, 싱가포르 중앙예탁청산기관)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/cds_canada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CDS Clearing and Depository Services (CDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/clearstream.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearstream (클리어스트림)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/cme_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Clearing (CME 청산소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/csdc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/dtcc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DTCC (Depository Trust &amp; Clearing Corporation, 미국예탁결제공사)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/eurex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing AG (유렉스 청산소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/euroccp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe (유럽중앙청산소 / Cboe 클리어 유럽)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/euroclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euroclear Group (Euroclear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/hkex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Clearing (홍콩거래소 청산) – HKSCC / HKCC / SEOCH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/ice_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Clear (ICE Clear U.S. / ICE Clear Europe / ICE Clear Credit)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/jscc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japan Securities Clearing Corporation (JSCC, 일본증권청산기관)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/krx_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX 청산 (한국거래소 CCP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/ksd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KSD (한국예탁결제원, Korea Securities Depository)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/lch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH (LCH Limited &amp; LCH SA, 런던청산소)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/muqassa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Securities Clearing Center Company (Muqassa, 무까사)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/occ.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">OCC (Options Clearing Corporation, 옵션청산공사)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/organizations/six_xclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SIX x-clear AG (SIX x-clear)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">규제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/regulations/asia_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">아시아-태평양 청산 및 결제 규제 (Asia-Pacific Clearing &amp; Settlement Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/regulations/eu_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU 청산 및 결제 규제 (EU Clearing &amp; Settlement Regulation)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/regulations/us_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">미국 청산 및 결제 규제 (U.S. Clearing &amp; Settlement Regulation)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">매매시스템</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/systems/dtcc_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DTCC 핵심 시스템 (DTCC Core Systems) — NSCC/DTC 결제 및 청산 인프라</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/systems/eurex_clearing_prisma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing — C7 아키텍처 및 PRISMA 증거금 엔진 (C7 Architecture &amp; PRISMA Margin Engine)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/ko/systems/lch_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH 청산 플랫폼 및 증거금 엔진 (LCH Clearing Platforms &amp; Margin Engines)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#개요-및-프로필-overview-profile" id="toc-개요-및-프로필-overview-profile" class="nav-link active" data-scroll-target="#개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</a>
+  <ul class="collapse">
+  <li><a href="#참가-거래소-및-선물시장-participant-exchanges-and-futures-markets" id="toc-참가-거래소-및-선물시장-participant-exchanges-and-futures-markets" class="nav-link" data-scroll-target="#참가-거래소-및-선물시장-participant-exchanges-and-futures-markets">참가 거래소 및 선물시장 (Participant Exchanges and Futures Markets)</a></li>
+  <li><a href="#주요-연혁-key-historical-milestones" id="toc-주요-연혁-key-historical-milestones" class="nav-link" data-scroll-target="#주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</a></li>
+  <li><a href="#주요-재무-데이터-2024년-key-financial-data" id="toc-주요-재무-데이터-2024년-key-financial-data" class="nav-link" data-scroll-target="#주요-재무-데이터-2024년-key-financial-data">주요 재무 데이터 (2024년) (Key Financial Data)</a></li>
+  </ul></li>
+  <li><a href="#청산-모델-clearing-model" id="toc-청산-모델-clearing-model" class="nav-link" data-scroll-target="#청산-모델-clearing-model">2. 청산 모델 (Clearing Model)</a>
+  <ul class="collapse">
+  <li><a href="#ccp-서비스-ccp-services" id="toc-ccp-서비스-ccp-services" class="nav-link" data-scroll-target="#ccp-서비스-ccp-services">2.1 CCP 서비스 (CCP Services)</a></li>
+  <li><a href="#단기-및-당일만기옵션-short-dated-and-0dte-options" id="toc-단기-및-당일만기옵션-short-dated-and-0dte-options" class="nav-link" data-scroll-target="#단기-및-당일만기옵션-short-dated-and-0dte-options">2.2 단기 및 당일만기옵션 (Short-Dated and 0DTE Options)</a></li>
+  <li><a href="#채무인수-절차-novation-process" id="toc-채무인수-절차-novation-process" class="nav-link" data-scroll-target="#채무인수-절차-novation-process">2.3 채무인수 절차 (Novation Process)</a></li>
+  <li><a href="#차감-netting" id="toc-차감-netting" class="nav-link" data-scroll-target="#차감-netting">2.4 차감 (Netting)</a></li>
+  <li><a href="#청산회원-제도-clearing-membership" id="toc-청산회원-제도-clearing-membership" class="nav-link" data-scroll-target="#청산회원-제도-clearing-membership">2.5 청산회원 제도 (Clearing Membership)</a></li>
+  <li><a href="#대차거래-프로그램-securities-lending-programs" id="toc-대차거래-프로그램-securities-lending-programs" class="nav-link" data-scroll-target="#대차거래-프로그램-securities-lending-programs">2.6 대차거래 프로그램 (Securities Lending Programs)</a></li>
+  </ul></li>
+  <li><a href="#리스크-관리-risk-management" id="toc-리스크-관리-risk-management" class="nav-link" data-scroll-target="#리스크-관리-risk-management">3. 리스크 관리 (Risk Management)</a>
+  <ul class="collapse">
+  <li><a href="#stans-증거금-방법론-stans-margin-methodology" id="toc-stans-증거금-방법론-stans-margin-methodology" class="nav-link" data-scroll-target="#stans-증거금-방법론-stans-margin-methodology">3.1 STANS 증거금 방법론 (STANS Margin Methodology)</a></li>
+  <li><a href="#증거금-징수-일정-margin-call-schedule" id="toc-증거금-징수-일정-margin-call-schedule" class="nav-link" data-scroll-target="#증거금-징수-일정-margin-call-schedule">3.2 증거금 징수 일정 (Margin Call Schedule)</a></li>
+  <li><a href="#손실부담순서-default-waterfall" id="toc-손실부담순서-default-waterfall" class="nav-link" data-scroll-target="#손실부담순서-default-waterfall">3.3 손실부담순서 (Default Waterfall)</a></li>
+  <li><a href="#스트레스-테스트-및-사후검증-stress-testing-back-testing" id="toc-스트레스-테스트-및-사후검증-stress-testing-back-testing" class="nav-link" data-scroll-target="#스트레스-테스트-및-사후검증-stress-testing-back-testing">3.4 스트레스 테스트 및 사후검증 (Stress Testing &amp; Back-Testing)</a></li>
+  <li><a href="#회복-및-정리-수단-recovery-resolution-tools" id="toc-회복-및-정리-수단-recovery-resolution-tools" class="nav-link" data-scroll-target="#회복-및-정리-수단-recovery-resolution-tools">3.5 회복 및 정리 수단 (Recovery &amp; Resolution Tools)</a></li>
+  </ul></li>
+  <li><a href="#결제-settlement" id="toc-결제-settlement" class="nav-link" data-scroll-target="#결제-settlement">4. 결제 (Settlement)</a>
+  <ul class="collapse">
+  <li><a href="#결제주기-settlement-cycle" id="toc-결제주기-settlement-cycle" class="nav-link" data-scroll-target="#결제주기-settlement-cycle">4.1 결제주기 (Settlement Cycle)</a></li>
+  <li><a href="#dvp-및-결제완결성-dvp-and-settlement-finality" id="toc-dvp-및-결제완결성-dvp-and-settlement-finality" class="nav-link" data-scroll-target="#dvp-및-결제완결성-dvp-and-settlement-finality">4.2 DVP 및 결제완결성 (DVP and Settlement Finality)</a></li>
+  <li><a href="#프리미엄-결제-절차-premium-settlement-process" id="toc-프리미엄-결제-절차-premium-settlement-process" class="nav-link" data-scroll-target="#프리미엄-결제-절차-premium-settlement-process">4.3 프리미엄 결제 절차 (Premium Settlement Process)</a></li>
+  <li><a href="#행사-및-배정-절차-exercise-and-assignment-process" id="toc-행사-및-배정-절차-exercise-and-assignment-process" class="nav-link" data-scroll-target="#행사-및-배정-절차-exercise-and-assignment-process">4.4 행사 및 배정 절차 (Exercise and Assignment Process)</a></li>
+  </ul></li>
+  <li><a href="#기술-및-인프라-technology-infrastructure" id="toc-기술-및-인프라-technology-infrastructure" class="nav-link" data-scroll-target="#기술-및-인프라-technology-infrastructure">5. 기술 및 인프라 (Technology &amp; Infrastructure)</a>
+  <ul class="collapse">
+  <li><a href="#핵심-시스템-core-systems" id="toc-핵심-시스템-core-systems" class="nav-link" data-scroll-target="#핵심-시스템-core-systems">5.1 핵심 시스템 (Core Systems)</a></li>
+  <li><a href="#encore-아키텍처" id="toc-encore-아키텍처" class="nav-link" data-scroll-target="#encore-아키텍처">5.2 ENCORE 아키텍처</a></li>
+  <li><a href="#ovation-아키텍처-renaissance-initiative" id="toc-ovation-아키텍처-renaissance-initiative" class="nav-link" data-scroll-target="#ovation-아키텍처-renaissance-initiative">5.3 Ovation 아키텍처 (Renaissance Initiative)</a></li>
+  <li><a href="#처리-능력-processing-capacity" id="toc-처리-능력-processing-capacity" class="nav-link" data-scroll-target="#처리-능력-processing-capacity">5.4 처리 능력 (Processing Capacity)</a></li>
+  <li><a href="#인터페이스-프로토콜-interface-protocols" id="toc-인터페이스-프로토콜-interface-protocols" class="nav-link" data-scroll-target="#인터페이스-프로토콜-interface-protocols">5.5 인터페이스 프로토콜 (Interface Protocols)</a></li>
+  </ul></li>
+  <li><a href="#규제-체계-regulatory-framework" id="toc-규제-체계-regulatory-framework" class="nav-link" data-scroll-target="#규제-체계-regulatory-framework">6. 규제 체계 (Regulatory Framework)</a>
+  <ul class="collapse">
+  <li><a href="#규제-구조-regulatory-structure" id="toc-규제-구조-regulatory-structure" class="nav-link" data-scroll-target="#규제-구조-regulatory-structure">6.1 규제 구조 (Regulatory Structure)</a></li>
+  <li><a href="#주요-규제-요건-key-regulatory-requirements" id="toc-주요-규제-요건-key-regulatory-requirements" class="nav-link" data-scroll-target="#주요-규제-요건-key-regulatory-requirements">6.2 주요 규제 요건 (Key Regulatory Requirements)</a></li>
+  <li><a href="#주요-규제-조치-notable-regulatory-actions" id="toc-주요-규제-조치-notable-regulatory-actions" class="nav-link" data-scroll-target="#주요-규제-조치-notable-regulatory-actions">6.3 주요 규제 조치 (Notable Regulatory Actions)</a></li>
+  </ul></li>
+  <li><a href="#상호운용성-interoperability" id="toc-상호운용성-interoperability" class="nav-link" data-scroll-target="#상호운용성-interoperability">7. 상호운용성 (Interoperability)</a>
+  <ul class="collapse">
+  <li><a href="#교차증거금-프로그램-cross-margining-programs" id="toc-교차증거금-프로그램-cross-margining-programs" class="nav-link" data-scroll-target="#교차증거금-프로그램-cross-margining-programs">7.1 교차증거금 프로그램 (Cross-Margining Programs)</a></li>
+  <li><a href="#상호보증-및-연계-cross-guaranty-and-linkages" id="toc-상호보증-및-연계-cross-guaranty-and-linkages" class="nav-link" data-scroll-target="#상호보증-및-연계-cross-guaranty-and-linkages">7.2 상호보증 및 연계 (Cross-Guaranty and Linkages)</a></li>
+  <li><a href="#지속적-조율-ongoing-coordination" id="toc-지속적-조율-ongoing-coordination" class="nav-link" data-scroll-target="#지속적-조율-ongoing-coordination">7.3 지속적 조율 (Ongoing Coordination)</a></li>
+  </ul></li>
+  <li><a href="#수수료-fees" id="toc-수수료-fees" class="nav-link" data-scroll-target="#수수료-fees">8. 수수료 (Fees)</a>
+  <ul class="collapse">
+  <li><a href="#청산-수수료-clearing-fee-schedule" id="toc-청산-수수료-clearing-fee-schedule" class="nav-link" data-scroll-target="#청산-수수료-clearing-fee-schedule">8.1 청산 수수료 (Clearing Fee Schedule)</a></li>
+  <li><a href="#행사-및-배정-수수료-exercise-and-assignment-fees" id="toc-행사-및-배정-수수료-exercise-and-assignment-fees" class="nav-link" data-scroll-target="#행사-및-배정-수수료-exercise-and-assignment-fees">8.2 행사 및 배정 수수료 (Exercise and Assignment Fees)</a></li>
+  <li><a href="#회원-수수료-membership-fees" id="toc-회원-수수료-membership-fees" class="nav-link" data-scroll-target="#회원-수수료-membership-fees">8.3 회원 수수료 (Membership Fees)</a></li>
+  </ul></li>
+  <li><a href="#최근-동향-recent-developments" id="toc-최근-동향-recent-developments" class="nav-link" data-scroll-target="#최근-동향-recent-developments">9. 최근 동향 (Recent Developments)</a>
+  <ul class="collapse">
+  <li><a href="#renaissance-initiative-기술-현대화-technology-modernization" id="toc-renaissance-initiative-기술-현대화-technology-modernization" class="nav-link" data-scroll-target="#renaissance-initiative-기술-현대화-technology-modernization">9.1 Renaissance Initiative / 기술 현대화 (Technology Modernization)</a></li>
+  <li><a href="#거래시간-연장-extended-trading-hours" id="toc-거래시간-연장-extended-trading-hours" class="nav-link" data-scroll-target="#거래시간-연장-extended-trading-hours">9.2 거래시간 연장 (Extended Trading Hours)</a></li>
+  <li><a href="#당일만기옵션0dte-성장-영향-0dte-options-growth-impact" id="toc-당일만기옵션0dte-성장-영향-0dte-options-growth-impact" class="nav-link" data-scroll-target="#당일만기옵션0dte-성장-영향-0dte-options-growth-impact">9.3 당일만기옵션(0DTE) 성장 영향 (0DTE Options Growth Impact)</a></li>
+  <li><a href="#대차-확대-securities-lending-expansion" id="toc-대차-확대-securities-lending-expansion" class="nav-link" data-scroll-target="#대차-확대-securities-lending-expansion">9.4 대차 확대 (Securities Lending Expansion)</a></li>
+  <li><a href="#capital-plan-지배구조-위기-및-해결-capital-plan-governance-crisis-and-resolution" id="toc-capital-plan-지배구조-위기-및-해결-capital-plan-governance-crisis-and-resolution" class="nav-link" data-scroll-target="#capital-plan-지배구조-위기-및-해결-capital-plan-governance-crisis-and-resolution">9.5 2021 Capital Plan / 지배구조 위기 및 해결 (Capital Plan / Governance Crisis and Resolution)</a></li>
+  <li><a href="#청산기금-배분-방법론-개혁-2025년-clearing-fund-methodology-reform" id="toc-청산기금-배분-방법론-개혁-2025년-clearing-fund-methodology-reform" class="nav-link" data-scroll-target="#청산기금-배분-방법론-개혁-2025년-clearing-fund-methodology-reform">9.6 청산기금 배분 방법론 개혁 (2025년) (Clearing Fund Methodology Reform)</a></li>
+  <li><a href="#거래량-기록-및-시장-성장-volume-records-and-market-growth" id="toc-거래량-기록-및-시장-성장-volume-records-and-market-growth" class="nav-link" data-scroll-target="#거래량-기록-및-시장-성장-volume-records-and-market-growth">9.7 거래량 기록 및 시장 성장 (Volume Records and Market Growth)</a></li>
+  </ul></li>
+  <li><a href="#krx-청산과의-비교-comparison-with-krx-clearing" id="toc-krx-청산과의-비교-comparison-with-krx-clearing" class="nav-link" data-scroll-target="#krx-청산과의-비교-comparison-with-krx-clearing">KRX 청산과의 비교 (Comparison with KRX Clearing)</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/ko/organizations/asx_clear.html">청산기관</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/ko/organizations/occ.html">OCC (Options Clearing Corporation, 옵션청산공사)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">OCC (Options Clearing Corporation, 옵션청산공사)</h1>
+<p class="subtitle lead">청산결제 &gt; 청산기관</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 4월 17일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>최종 갱신일:</strong> 2026-04-07 <strong>조사 단계:</strong> Tier 1 (심층 분석) <strong>유형:</strong> 중앙청산소 (CCP, Central Counterparty) – 세계 최대 주식 파생상품 청산기관</p>
+</blockquote>
+<hr>
+<section id="개요-및-프로필-overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="개요-및-프로필-overview-profile">1. 개요 및 프로필 (Overview &amp; Profile)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>정식 명칭</td>
+<td>The Options Clearing Corporation</td>
+</tr>
+<tr class="even">
+<td>약칭</td>
+<td>OCC</td>
+</tr>
+<tr class="odd">
+<td>웹사이트</td>
+<td><a href="https://www.theocc.com">https://www.theocc.com</a></td>
+</tr>
+<tr class="even">
+<td>설립 연도</td>
+<td>1973년</td>
+</tr>
+<tr class="odd">
+<td>소재지</td>
+<td>미국 / 일리노이주 시카고</td>
+</tr>
+<tr class="even">
+<td>소유구조</td>
+<td>주주 거래소의 공동 소유: Cboe Global Markets, Intercontinental Exchange (NYSE Arca, NYSE American), Nasdaq (ISE 인수로 약 40% 보유). 원래 5개 동등 주주. Nasdaq의 지분이 ISE 인수를 통해 20%에서 40%로 증가.</td>
+</tr>
+<tr class="odd">
+<td>모회사 / 그룹</td>
+<td>없음 (독립적 시장 유틸리티)</td>
+</tr>
+<tr class="even">
+<td>감독기관</td>
+<td>SEC (등록 청산기관으로서 주요 감독기관), CFTC (등록 DCO로서 보조 감독기관), 연방준비제도이사회 (도드-프랭크법(Dodd-Frank Act) Title VIII에 따른 SIFMU 감독)</td>
+</tr>
+<tr class="odd">
+<td>CPMI-IOSCO 금융시장인프라에 관한 원칙 (PFMI) 준수</td>
+<td>예 – PFMI 공시 프레임워크 및 CPMI-IOSCO 공적정량공시(PQD)를 분기별로 발행</td>
+</tr>
+<tr class="even">
+<td>적격중앙청산소 (QCCP) 지위</td>
+<td>예 – Basel III 체계에서 은행 자본 산출 목적의 적격중앙청산소로 인정</td>
+</tr>
+<tr class="odd">
+<td>SIFMU 지정</td>
+<td>도드-프랭크법 Title VIII에 따라 2012년 7월 FSOC에 의해 시스템적으로 중요한 금융시장인프라(SIFMU)로 지정</td>
+</tr>
+</tbody>
+</table>
+<p><em>출처: <a href="https://www.theocc.com/company-information/what-is-occ">OCC – What Is OCC?</a>; <a href="https://en.wikipedia.org/wiki/Options_Clearing_Corporation">Wikipedia – Options Clearing Corporation</a>; <a href="https://www.theocc.com/about/newsroom/releases/2012/07_19.jsp">OCC SIFMU Designation Press Release (2012)</a>; <a href="https://www.theocc.com/risk-management/pfmi-disclosures">OCC PFMI Disclosures</a></em></p>
+<section id="참가-거래소-및-선물시장-participant-exchanges-and-futures-markets" class="level3">
+<h3 class="anchored" data-anchor-id="참가-거래소-및-선물시장-participant-exchanges-and-futures-markets">참가 거래소 및 선물시장 (Participant Exchanges and Futures Markets)</h3>
+<p>OCC는 약 21개 거래소 및 거래 플랫폼에 CCP 청산·결제 서비스를 제공한다:</p>
+<p><strong>옵션 거래소:</strong> - BOX Options Exchange LLC - Cboe BZX Exchange, Inc. - Cboe C2 Exchange, Inc. - Cboe EDGX Exchange, Inc. - Cboe Exchange, Inc. - MIAX Emerald, LLC - Miami International Securities Exchange, LLC (MIAX) - MIAX PEARL, LLC - Nasdaq BX, Inc. - Nasdaq GEMX, LLC - Nasdaq ISE, LLC - Nasdaq MRX, LLC - Nasdaq Options Market, LLC - Nasdaq PHLX, LLC - NYSE American Options, LLC - NYSE Arca, Inc.</p>
+<p><strong>선물 거래소:</strong> - Cboe Futures Exchange (CFE)</p>
+<p><em>출처: <a href="https://en.wikipedia.org/wiki/Options_Clearing_Corporation">Wikipedia – Options Clearing Corporation</a>; <a href="https://annualreport.theocc.com/2024/about-occ">OCC 2024 Annual Report</a></em></p>
+</section>
+<section id="주요-연혁-key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="주요-연혁-key-historical-milestones">주요 연혁 (Key Historical Milestones)</h3>
+<ul>
+<li><strong>1973년:</strong> CBOE (Chicago Board Options Exchange, 시카고옵션거래소) 개장에 맞춰 5개 거래소의 상장 주식 옵션 청산소로 OCC 설립.</li>
+<li><strong>1975년:</strong> 풋옵션 청산 개시 (이전에는 콜옵션만 상장).</li>
+<li><strong>1985년:</strong> 지수옵션 청산 개시.</li>
+<li><strong>1993년:</strong> 대차거래를 위한 Stock Loan/Hedge Program 출시.</li>
+<li><strong>2000년:</strong> 레거시 시스템을 대체하는 ENCORE 청산 플랫폼 출시.</li>
+<li><strong>2000년:</strong> 10월 월간 거래량 7,530만 계약 기록.</li>
+<li><strong>2006년:</strong> STANS (System for Theoretical Analysis and Numerical Simulations) 증거금 방법론 도입, 기존 TIMS (Theoretical Intermarket Margin System) 대체.</li>
+<li><strong>2011년 (8월):</strong> 월간 5.5억 계약의 기록적 거래량; S&amp;P가 OCC의 신용등급을 AAA에서 AA+로 하향.</li>
+<li><strong>2012년 (7월):</strong> 도드-프랭크법 Title VIII에 따라 FSOC가 SIFMU로 지정.</li>
+<li><strong>2015년:</strong> OCC가 자본화 강화를 위한 Capital Plan을 SEC에 제출; 이후 비주주 거래소들의 이의 제기.</li>
+<li><strong>2019년 (2월):</strong> SEC가 절차적·실질적 사유로 OCC의 Capital Plan 불승인. 불충분한 정보 및 지배구조 우려 지적.</li>
+<li><strong>2019년 (9월):</strong> SEC 및 CFTC가 OCC를 적절한 리스크 관리 정책 수립·유지 실패로 고발.</li>
+<li><strong>2019~2021년:</strong> 청산기금 부족 사태 – 청산비용모델(Liquidation Cost Model)의 오류로 인해 2019년 10월~2021년 5월 기간 중 OCC 청산기금이 2억~5.88억 USD 부족.</li>
+<li><strong>2022년 (10월):</strong> SEC가 OCC의 Renaissance Initiative 클라우드 인프라 제안에 대해 이의 없음(no-objection) 통지 발행.</li>
+<li><strong>2023년 (2월):</strong> OCC가 SEC (1,700만 USD 과징금) 및 CFTC (500만 USD 과징금)와 청산기금 부족 및 운영리스크 관리 실패에 관해 화해.</li>
+<li><strong>2024년 (5월 28일):</strong> 기초 주식 증권에 대한 T+1 결제주기 전환.</li>
+<li><strong>2024년:</strong> 기록적 연간 거래량 – 옵션 122억 계약 청산 (전년 대비 +10.6%), 선물 6,010만 계약 (+7.7%).</li>
+<li><strong>2025년 (4월 4일):</strong> 사상 최초 일일 1억 계약 돌파 – 1억 260만 계약의 일일 거래량 기록.</li>
+<li><strong>2025년 (10월 10일):</strong> 일일 1.1억 옵션 계약 청산의 신기록 달성.</li>
+</ul>
+<p><em>출처: <a href="https://en.wikipedia.org/wiki/Options_Clearing_Corporation">Wikipedia – Options Clearing Corporation</a>; <a href="https://www.theocc.com/newsroom/views/2025/01-03-occ-annual-2024-and-december-2024-volume">OCC 2024 Volume Release</a>; <a href="https://www.sec.gov/newsroom/press-releases/2023-31">SEC Charges OCC (2023)</a>; <a href="https://www.cftc.gov/PressRoom/PressReleases/8661-23">CFTC Penalty Order (2023)</a>; <a href="https://www.federalregister.gov/documents/2019/02/20/2019-02731/self-regulatory-organizations-the-options-clearing-corporation-order-disapproving-proposed-rule">SEC Capital Plan Disapproval (2019)</a></em></p>
+</section>
+<section id="주요-재무-데이터-2024년-key-financial-data" class="level3">
+<h3 class="anchored" data-anchor-id="주요-재무-데이터-2024년-key-financial-data">주요 재무 데이터 (2024년) (Key Financial Data)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>지표</th>
+<th>수치</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>매출</td>
+<td>약 4.68~5억 USD [미확인 – 출처에 따라 상이]</td>
+</tr>
+<tr class="even">
+<td>직원 수</td>
+<td>약 800명 이상 [미확인]</td>
+</tr>
+<tr class="odd">
+<td>옵션 계약 청산 (2024년)</td>
+<td>122억 (기록)</td>
+</tr>
+<tr class="even">
+<td>선물 계약 청산 (2024년)</td>
+<td>6,010만</td>
+</tr>
+<tr class="odd">
+<td>일평균 옵션 거래량 (2024년)</td>
+<td>약 4,860만 계약</td>
+</tr>
+<tr class="even">
+<td>총 증거금 보유 (2023년 말)</td>
+<td>2,317억 USD</td>
+</tr>
+<tr class="odd">
+<td>청산기금 규모 (2024년 Q3~2025년 Q2 평균)</td>
+<td>약 195억 USD</td>
+</tr>
+<tr class="even">
+<td>청산기금 규모 (2023년 말)</td>
+<td>약 169억 USD</td>
+</tr>
+<tr class="odd">
+<td>개시증거금 (2025년 Q3, PQD)</td>
+<td>1,800억 USD (전년 대비 +59%)</td>
+</tr>
+<tr class="even">
+<td>규제자본 목표</td>
+<td>3.03억 USD</td>
+</tr>
+<tr class="odd">
+<td>영속적 최소 CCP 자기자본 출연분 (SITG)</td>
+<td>6,900만 USD (OCC 자본) / 약 7,600만 USD (이연보상 포함)</td>
+</tr>
+<tr class="even">
+<td>청산회원 수</td>
+<td>약 115개</td>
+</tr>
+</tbody>
+</table>
+<p><em>출처: <a href="https://www.theocc.com/newsroom/views/2025/01-03-occ-annual-2024-and-december-2024-volume">OCC 2024 Volume Release</a>; <a href="https://annualreport.theocc.com/">2024 OCC Annual Report</a>; <a href="https://ccp-global.org/">CCP Global PQD Quarterly Trends Report Q3 2025</a>; <a href="https://www.federalregister.gov/documents/2021/03/01/2021-04087/self-regulatory-organizations-the-options-clearing-corporation-notice-of-filing-of-advance-notice">SEC Filing SR-OCC-2021 (SITG)</a></em></p>
+<hr>
+</section>
+</section>
+<section id="청산-모델-clearing-model" class="level2">
+<h2 class="anchored" data-anchor-id="청산-모델-clearing-model">2. 청산 모델 (Clearing Model)</h2>
+<section id="ccp-서비스-ccp-services" class="level3">
+<h3 class="anchored" data-anchor-id="ccp-서비스-ccp-services">2.1 CCP 서비스 (CCP Services)</h3>
+<p>OCC는 미국 국내 증권거래소에 상장된 표준화된 주식 옵션의 유일한 CCP이다. 선물, 대차거래, 일부 OTC 상품도 청산한다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 20%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>상품군</th>
+<th>설명</th>
+<th>규모 (2024년)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>주식 옵션</strong></td>
+<td>개별 주식, ETF에 대한 풋·콜 옵션</td>
+<td>총 122억 중 대부분</td>
+</tr>
+<tr class="even">
+<td><strong>지수옵션</strong></td>
+<td>주가지수 옵션 (예: SPX, NDX, VIX)</td>
+<td>총계에 포함; SPX만으로 약 20억 이상</td>
+</tr>
+<tr class="odd">
+<td><strong>선물</strong></td>
+<td>CBOE Futures Exchange 선물 (VIX 선물 등)</td>
+<td>6,010만 계약</td>
+</tr>
+<tr class="even">
+<td><strong>대차거래</strong></td>
+<td>Stock Loan/Hedge Program 및 Market Loan Program</td>
+<td>일평균 대출잔고 약 1,390억 USD (2023년 6월 최대치); 일일 약 9,800건</td>
+</tr>
+<tr class="odd">
+<td><strong>개별주식선물</strong></td>
+<td>개별 주식에 대한 선물</td>
+<td>최소 거래량 (사실상 휴면)</td>
+</tr>
+</tbody>
+</table>
+<p><em>출처: <a href="https://www.theocc.com/newsroom/views/2025/01-03-occ-annual-2024-and-december-2024-volume">OCC 2024 Volume Release</a>; <a href="https://www.theocc.com/clearance-and-settlement/stock-loan-programs">OCC Stock Loan Programs</a>; <a href="https://www.fow.com/insights/3700860-occs-30th-anniversary-of-its-securities-lending-programme">FOW – OCC Securities Lending 30th Anniversary</a></em></p>
+</section>
+<section id="단기-및-당일만기옵션-short-dated-and-0dte-options" class="level3">
+<h3 class="anchored" data-anchor-id="단기-및-당일만기옵션-short-dated-and-0dte-options">2.2 단기 및 당일만기옵션 (Short-Dated and 0DTE Options)</h3>
+<p>단기옵션(만기까지 1주 미만인 계약)은 OCC 청산 거래량에서 급속히 성장하는 부문이다:</p>
+<ul>
+<li>2024년 단기옵션은 총 거래량의 약 <strong>40%</strong>를 차지</li>
+<li>당일만기옵션(0DTE, Zero-Day-to-Expiry)은 2024년 총 거래량의 약 <strong>20%</strong>를 차지</li>
+<li>SPX 옵션에서 구체적으로 0DTE는 2024년 Q1 거래량의 <strong>48%</strong>를 차지 (5년 전 11%에서 증가)</li>
+<li>이러한 급성장은 상당한 장중 리스크 관리 과제를 야기한다. 0DTE 포지션은 전통적 장 마감 증거금 산출 체계에서는 장중 무담보 상태이기 때문이다.</li>
+</ul>
+<p><em>출처: <a href="https://www.theocc.com/newsroom/views/2025/01-03-occ-annual-2024-and-december-2024-volume">OCC 2024 Volume Release</a>; <a href="https://www.sec.gov/files/rules/sro/occ/2025/34-102202.pdf">SEC Filing SR-OCC-2024-010</a></em></p>
+</section>
+<section id="채무인수-절차-novation-process" class="level3">
+<h3 class="anchored" data-anchor-id="채무인수-절차-novation-process">2.3 채무인수 절차 (Novation Process)</h3>
+<p>OCC는 채무인수에 <strong>공개 청약(Open Offer)</strong> 모델을 사용한다. 옵션 거래가 참가 거래소에서 체결되어 OCC에 보고되면, OCC가 CCP로서 개입한다:</p>
+<ul>
+<li>OCC가 <strong>모든 매도자의 매수자이자 모든 매수자의 매도자</strong>가 된다</li>
+<li>이 채무인수(Novation)는 거래 수용 시점에 발생한다</li>
+<li>OCC는 모든 청산 계약의 이행을 보증한다</li>
+<li>포지션은 청산회원(Clearing Member) 계좌 수준에서 관리된다</li>
+</ul>
+</section>
+<section id="차감-netting" class="level3">
+<h3 class="anchored" data-anchor-id="차감-netting">2.4 차감 (Netting)</h3>
+<p>OCC는 다자간차감(Multilateral Netting)을 수행한다:</p>
+<ul>
+<li><strong>포지션 차감:</strong> 동일 시리즈의 매수·매도 포지션이 계좌 수준에서 차감</li>
+<li><strong>프리미엄 차감:</strong> 일일 수취·지급 프리미엄이 청산회원당 단일 결제로 차감</li>
+<li><strong>행사/배정 차감:</strong> 행사 및 배정에 따른 인도 의무가 “Accord” 협약을 통해 NSCC와 차감</li>
+</ul>
+</section>
+<section id="청산회원-제도-clearing-membership" class="level3">
+<h3 class="anchored" data-anchor-id="청산회원-제도-clearing-membership">2.5 청산회원 제도 (Clearing Membership)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>청산회원 수</td>
+<td>약 115개</td>
+</tr>
+<tr class="even">
+<td>회원 유형</td>
+<td>미국 브로커-딜러, 선물중개업자(FCM), 미국 은행 (신규 적격), 비미국 증권사</td>
+</tr>
+<tr class="odd">
+<td>최소 순자본</td>
+<td>10,000,000 USD</td>
+</tr>
+<tr class="even">
+<td>운영 요건</td>
+<td>자격 있는 인력, 적절한 설비, OCC 시스템과의 인터페이스 능력</td>
+</tr>
+<tr class="odd">
+<td>청산기금 출연</td>
+<td>필수; 스트레스 익스포저에 비례한 리스크 기반 방법론으로 배분</td>
+</tr>
+</tbody>
+</table>
+<p>2023년 5월, SEC는 기존 브로커-딜러 및 FCM 외에 특정 미국 은행의 회원 자격을 확대하는 OCC의 개정안을 승인하였다.</p>
+<p><em>출처: <a href="https://www.theocc.com/company-information/becoming-a-clearing-member">OCC – Becoming a Clearing Member</a>; <a href="https://www.federalregister.gov/documents/2023/05/11/2023-10029/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed">SEC Approval of Membership Standards Amendment (2023)</a></em></p>
+</section>
+<section id="대차거래-프로그램-securities-lending-programs" class="level3">
+<h3 class="anchored" data-anchor-id="대차거래-프로그램-securities-lending-programs">2.6 대차거래 프로그램 (Securities Lending Programs)</h3>
+<p>OCC는 1993년에 설립된 두 가지 대차거래 프로그램을 운영한다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 27%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>프로그램</th>
+<th>모델</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Hedge Program</strong></td>
+<td>상대거래</td>
+<td>상대방 간 상대적으로 체결된 거래를 지원; OCC가 CCP 보증자 역할</td>
+</tr>
+<tr class="even">
+<td><strong>Market Loan Program</strong></td>
+<td>거래소 기반</td>
+<td>참가 대출시장(예: AQS)을 통해 개시된 거래 지원</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>2012년 이후 대차 청산 거래량은 <strong>연평균 16%</strong> 성장, 미결제약정은 <strong>22%</strong> 성장</li>
+<li>OCC는 세계 최대의 미국 주식 대차 CCP</li>
+<li>OCC는 대차 인프라 현대화를 위해 Axoni (DLT 플랫폼)를 선정</li>
+</ul>
+<p><em>출처: <a href="https://www.theocc.com/clearance-and-settlement/stock-loan-programs">OCC Stock Loan Programs</a>; <a href="https://axoni.com/press/occ-selects-axoni-to-modernize-securities-lending-infrastructure/">Axoni – OCC Modernization</a></em></p>
+<hr>
+</section>
+</section>
+<section id="리스크-관리-risk-management" class="level2">
+<h2 class="anchored" data-anchor-id="리스크-관리-risk-management">3. 리스크 관리 (Risk Management)</h2>
+<section id="stans-증거금-방법론-stans-margin-methodology" class="level3">
+<h3 class="anchored" data-anchor-id="stans-증거금-방법론-stans-margin-methodology">3.1 STANS 증거금 방법론 (STANS Margin Methodology)</h3>
+<p>OCC의 <strong>STANS (System for Theoretical Analysis and Numerical Simulations)</strong>는 주요 증거금 방법론으로, 기존 TIMS (Theoretical Intermarket Margin System)를 대체하여 2006년 8월에 도입되었다. OCC는 대규모 Monte Carlo 기반 리스크 관리 방법론을 사용하는 <strong>세계 최초의 파생상품 청산소</strong>이다.</p>
+<section id="stans-기술적-세부사항" class="level4">
+<h4 class="anchored" data-anchor-id="stans-기술적-세부사항">STANS 기술적 세부사항</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>파라미터</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>방법론</td>
+<td>Monte Carlo 시뮬레이션 – 전체 포트폴리오 증거금 산출</td>
+</tr>
+<tr class="even">
+<td>리스크 척도</td>
+<td>99% 기대손실(Expected Shortfall, ES) – 99% VaR 지점을 초과하는 모든 손실의 평균</td>
+</tr>
+<tr class="odd">
+<td>강화된 척도</td>
+<td>최대 익스포저를 갖는 두 단일 요소 하위 포트폴리오에 대해 99.5% ES; 잔여 포트폴리오에 대해 99% ES</td>
+</tr>
+<tr class="even">
+<td>보유기간</td>
+<td><strong>2일 청산기간</strong> (CME 등 미국 경쟁사보다 1일 길다)</td>
+</tr>
+<tr class="odd">
+<td>시뮬레이션 경로</td>
+<td>모든 리스크 요소에 대한 대규모 Monte Carlo 시뮬레이션</td>
+</tr>
+<tr class="even">
+<td>리스크 요소</td>
+<td>주가, 내재변동성(행사가격/만기별), 금리, 배당수익률, 상관관계 구조</td>
+</tr>
+<tr class="odd">
+<td>가격결정 모델</td>
+<td>모든 상장 파생상품에 대한 정교한 옵션가격결정 모델</td>
+</tr>
+<tr class="even">
+<td>증거금 구성요소</td>
+<td>기본 구성요소(ES) + 스트레스 테스트 부가 구성요소</td>
+</tr>
+<tr class="odd">
+<td>스트레스 부가금</td>
+<td>특히 큰 시장 변동, 추정 상관관계를 대체하는 완전/영(zero) 상관관계, 극단적 불리한 개별 변동에 따른 ES 증가 고려</td>
+</tr>
+<tr class="even">
+<td>산출 주기</td>
+<td>일일 (장 마감), 장중 모니터링</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="stans-대-span-비교" class="level4">
+<h4 class="anchored" data-anchor-id="stans-대-span-비교">STANS 대 SPAN 비교</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 40%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>특성</th>
+<th>OCC STANS</th>
+<th>CME SPAN</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>방법론</td>
+<td>Monte Carlo 시뮬레이션</td>
+<td>시나리오 기반 (16개 리스크 시나리오)</td>
+</tr>
+<tr class="even">
+<td>리스크 척도</td>
+<td>기대손실(99% ES)</td>
+<td>시나리오 중 최대 손실</td>
+</tr>
+<tr class="odd">
+<td>포트폴리오 접근</td>
+<td>상관관계를 포함한 전체 포트폴리오 증거금 산출</td>
+<td>상품군 스캐닝 및 상품 간 스프레드 크레딧</td>
+</tr>
+<tr class="even">
+<td>보유기간</td>
+<td>2일</td>
+<td>1일 (일반적)</td>
+</tr>
+<tr class="odd">
+<td>비선형성</td>
+<td>시뮬레이션을 통해 완전 반영</td>
+<td>스캐닝 범위를 통한 근사</td>
+</tr>
+<tr class="even">
+<td>상관관계 처리</td>
+<td>역사적 데이터로부터 동적 추정</td>
+<td>고정 상품 간 스프레드 크레딧</td>
+</tr>
+<tr class="odd">
+<td>계산 부하</td>
+<td>높음 (Monte Carlo)</td>
+<td>낮음 (모수적 시나리오)</td>
+</tr>
+<tr class="even">
+<td>역사적 맥락</td>
+<td>2006년 도입</td>
+<td>1988년 도입</td>
+</tr>
+</tbody>
+</table>
+<p><em>출처: <a href="https://www.theocc.com/Risk-Management/Margin-Methodology">OCC – Margin Methodology</a>; <a href="https://www.risk.net/awards/7930416/clearing-house-of-the-year-occ">Risk.net – Clearing House of the Year: OCC</a>; <a href="https://www.sec.gov/files/rules/sro/occ/34-53322.pdf">SEC STANS Approval Order (2006)</a></em></p>
+</section>
+</section>
+<section id="증거금-징수-일정-margin-call-schedule" class="level3">
+<h3 class="anchored" data-anchor-id="증거금-징수-일정-margin-call-schedule">3.2 증거금 징수 일정 (Margin Call Schedule)</h3>
+<ul>
+<li><strong>장 마감 증거금:</strong> STANS를 사용하여 매일 장 마감 후 산출; 익일 아침 납부를 위한 증거금 징수 통지 발행</li>
+<li><strong>장중 모니터링:</strong> OCC는 장중 포지션 및 시장 변동을 모니터링하며 장중 증거금 징수 가능</li>
+<li><strong>장중 리스크 차지 (2025년 제안/승인):</strong> 특히 당일만기옵션(0DTE) 및 야간 거래에서 발생하는 장중 무담보 익스포저를 다루기 위한 신규 증거금 부가금</li>
+</ul>
+<p><em>출처: <a href="https://www.federalregister.gov/documents/2025/04/09/2025-06041/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed">SEC Approval of Intraday Risk Charge (April 2025)</a></em></p>
+</section>
+<section id="손실부담순서-default-waterfall" class="level3">
+<h3 class="anchored" data-anchor-id="손실부담순서-default-waterfall">3.3 손실부담순서 (Default Waterfall)</h3>
+<p>OCC의 손실부담순서는 청산회원 부도 시 발생하는 손실을 충당하기 위해 재무자원이 사용되는 순서를 규정한다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>계층</th>
+<th>자원</th>
+<th>대략적 규모</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>부도회원의 증거금 예치분</strong></td>
+<td>회원에 따라 상이 (총 증거금 풀 약 1,800~2,320억 USD)</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>부도회원의 청산기금 출연분</strong></td>
+<td>총 약 195억 USD 중 비례 배분</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>OCC CCP 자기자본 출연분 (SITG)</strong> – OCC 자체 자본 출연</td>
+<td>영속적 최소 6,900만 USD (자본) / 약 7,600만 USD (이연보상 포함); 목표 규제자본의 최소 25%</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>비부도회원의 청산기금 출연분</strong> (상호 손실 분담)</td>
+<td>총 약 195억 USD 청산기금 잔여분</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>비부도회원에 대한 추가분담금 (Assessment Powers)</strong></td>
+<td>각 회원의 청산기금 출연 의무액까지 (상호분담 풀을 실질적으로 2배로 확대)</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>회복 수단</strong> (VMGH, 부분적 tear-up 등)</td>
+<td>3.5절 참조</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cover 2 기준:</strong> OCC는 자체 재무자원(증거금 + 청산기금)을 극단적이지만 현실적인 시장 상황에서 <strong>최대 두 청산회원 및 그 계열사</strong>의 부도를 충당할 수 있도록 규모를 산정한다. 이는 시스템적으로 중요한 CCP에 대한 CPMI-IOSCO PFMI 원칙 4와 일치한다.</p>
+<p><em>출처: <a href="https://www.theocc.com/risk-management/default-rules-and-procedures">OCC – Default Rules &amp; Procedures</a>; <a href="https://www.federalregister.gov/documents/2024/07/09/2024-14971/self-regulatory-organizations-the-options-clearing-corporation-order-approving-proposed-rule-change">SEC Filing on Default Waterfall Amendments (2024)</a>; <a href="https://www.risk.net/risk-management/5843281/occs-move-to-cover-2-wont-cost-members-more-cro-says">Risk.net – OCC Cover 2</a></em></p>
+</section>
+<section id="스트레스-테스트-및-사후검증-stress-testing-back-testing" class="level3">
+<h3 class="anchored" data-anchor-id="스트레스-테스트-및-사후검증-stress-testing-back-testing">3.4 스트레스 테스트 및 사후검증 (Stress Testing &amp; Back-Testing)</h3>
+<p><strong>스트레스 테스트:</strong> - OCC는 재무자원에 대한 <strong>일일 스트레스 테스트</strong>를 실시한다 - 두 가지 범주의 시나리오: - <strong>규모 산정 시나리오(Sizing Scenarios):</strong> 징수된 자원의 적정성을 평가하고 OCC 재무자원의 규모를 결정 - <strong>충분성 시나리오(Sufficiency Scenarios):</strong> 추가 증거금 또는 청산기금 징수 필요 여부를 판단하기 위한 잠재 익스포저 측정 - 시나리오: 과거 시나리오(예: 2008년 금융위기 급등/급락 변형), 가상 시나리오, 역스트레스 테스트 포함 - 2024년, OCC는 일관되게 더 높은 익스포저를 발생시킨 일부 2008년 기반 정보 시나리오를 충분성 시나리오로 재분류 - 2025년 1월, SEC가 단기옵션의 리스크를 보다 잘 포착하기 위한 STANS 및 CST (Comprehensive Stress Testing) 방법론 개선을 승인</p>
+<p><strong>사후검증:</strong> - OCC는 증거금 모델에 대한 일일 사후검증을 실시 - 2024년 9월, SEC가 OCC의 갱신된 사후검증 프레임워크 및 자원 사후검증 증거금 차지(Resource Backtesting Margin Charge) 수립을 승인 - 사후검증은 실제 포트폴리오 손익을 증거금 요건과 비교하여 모델 커버리지를 검증</p>
+<p><em>출처: <a href="https://www.federalregister.gov/documents/2024/07/09/2024-14971/self-regulatory-organizations-the-options-clearing-corporation-order-approving-proposed-rule-change">SEC Approval of Stress Testing Amendments (July 2024)</a>; <a href="https://www.federalregister.gov/documents/2025/01/22/2025-01414/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed">SEC Approval of STANS/CST Enhancements (January 2025)</a>; <a href="https://www.federalregister.gov/documents/2024/09/17/2024-21035/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed">SEC Approval of Backtesting Framework (September 2024)</a></em></p>
+</section>
+<section id="회복-및-정리-수단-recovery-resolution-tools" class="level3">
+<h3 class="anchored" data-anchor-id="회복-및-정리-수단-recovery-resolution-tools">3.5 회복 및 정리 수단 (Recovery &amp; Resolution Tools)</h3>
+<p>OCC는 통상적 리스크 관리를 초과하는 손실 및 유동성 부족을 관리하기 위한 수단을 기술하는 <strong>회복 및 질서 있는 업무정리(RWD, Recovery and Orderly Wind-Down) 계획</strong>을 유지한다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>수단</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>추가분담금 (Assessments)</strong></td>
+<td>OCC는 비부도 청산회원에게 청산기금 출연 의무액까지 부과할 수 있다</td>
+</tr>
+<tr class="even">
+<td><strong>변동증거금 이익 삭감 (VMGH)</strong></td>
+<td>OCC는 포지션의 시가평가 이익을 경험한 청산참가자에게 손실을 배분할 수 있다; 회원의 부도관리 참여 유인 제공</td>
+</tr>
+<tr class="odd">
+<td><strong>자발적 부분 Tear-Up</strong></td>
+<td>회원이 OCC의 매칭된 장부 복원을 돕기 위해 자발적으로 계약을 소멸시킬 수 있다</td>
+</tr>
+<tr class="even">
+<td><strong>강제적 부분 Tear-Up</strong></td>
+<td>OCC가 부도 청산회원의 잔여 계약을 OCC의 평가가격으로 소멸시킬 수 있는 권한; 다른 부도관리 수단이 소진된 후 사용</td>
+</tr>
+<tr class="odd">
+<td><strong>질서 있는 업무정리</strong></td>
+<td>포지션을 대안적 청산 방안으로 이전하면서 핵심 서비스를 계획적으로 중단</td>
+</tr>
+</tbody>
+</table>
+<p>RWD 계획은 가장 최근 2025년 8월 SEC가 개정을 승인하였다.</p>
+<p><em>출처: <a href="https://www.theocc.com/getmedia/e2cb031f-f53e-4c0b-981b-c3817bff79c9/GenUse_PartGuide_06182021.pdf">OCC Recovery and Orderly Wind-Down Plan</a>; <a href="https://www.federalregister.gov/documents/2025/08/04/2025-14669/self-regulatory-organizations-the-options-clearing-corporation-order-approving-proposed-rule-change">SEC Approval of RWD Plan Modifications (August 2025)</a>; <a href="https://www.fsb.org/uploads/OCC-1.pdf">FSB OCC Questionnaire</a></em></p>
+<hr>
+</section>
+</section>
+<section id="결제-settlement" class="level2">
+<h2 class="anchored" data-anchor-id="결제-settlement">4. 결제 (Settlement)</h2>
+<section id="결제주기-settlement-cycle" class="level3">
+<h3 class="anchored" data-anchor-id="결제주기-settlement-cycle">4.1 결제주기 (Settlement Cycle)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 21%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>결제 유형</th>
+<th>주기</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>프리미엄 결제</strong></td>
+<td>T+1</td>
+<td>옵션 프리미엄은 거래일 익영업일에 결제</td>
+</tr>
+<tr class="even">
+<td><strong>행사/배정 (주식 옵션)</strong></td>
+<td>T+1</td>
+<td>2024년 5월 28일 전환 이후; 이전에는 T+2</td>
+</tr>
+<tr class="odd">
+<td><strong>행사/배정 (지수옵션)</strong></td>
+<td>T+1 현금결제</td>
+<td>현금결제 지수옵션은 현금 차액을 수수</td>
+</tr>
+<tr class="even">
+<td><strong>선물</strong></td>
+<td>일일 시가평가</td>
+<td>변동증거금(Variation Margin) 일일 결제; 만기 시 최종 결제</td>
+</tr>
+<tr class="odd">
+<td><strong>대차거래</strong></td>
+<td>당일 또는 T+1</td>
+<td>프로그램 및 개시 시점에 따름</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dvp-및-결제완결성-dvp-and-settlement-finality" class="level3">
+<h3 class="anchored" data-anchor-id="dvp-및-결제완결성-dvp-and-settlement-finality">4.2 DVP 및 결제완결성 (DVP and Settlement Finality)</h3>
+<ul>
+<li><strong>주식 옵션 행사/배정:</strong> 주식 옵션이 행사/배정되면, 그에 따른 주식 인도 의무는 <strong>Accord</strong> – OCC와 NSCC 간 협약을 통해 처리된다</li>
+<li>Accord에 따라 NSCC는 OCC의 행사 및 배정에서 발생하는 “E&amp;A/인도 거래”를 NSCC의 CNS (Continuous Net Settlement) 시스템을 통한 청산·결제를 위해 수용한다</li>
+<li>기초 주식의 결제는 <strong>DTC (Depository Trust Company)</strong>에서 DVP (증권과대금의 동시결제) 방식으로 이루어진다</li>
+<li>결제는 DTC의 장부대체 시스템을 통해 완료되면 <strong>최종적이고 철회 불가능</strong>한 것으로 간주된다</li>
+</ul>
+</section>
+<section id="프리미엄-결제-절차-premium-settlement-process" class="level3">
+<h3 class="anchored" data-anchor-id="프리미엄-결제-절차-premium-settlement-process">4.3 프리미엄 결제 절차 (Premium Settlement Process)</h3>
+<ol type="1">
+<li>매 거래일 마감 시 OCC는 각 청산회원에 대한 순프리미엄 의무를 산출</li>
+<li>모든 청산 거래에 걸쳐 수취·지급 순프리미엄을 합산</li>
+<li>T+1에 Fedwire 또는 상업은행 결제 시스템을 통해 결제</li>
+<li>OCC는 높은 변동성 기간에 장중 프리미엄 결제를 요구할 수 있다</li>
+</ol>
+</section>
+<section id="행사-및-배정-절차-exercise-and-assignment-process" class="level3">
+<h3 class="anchored" data-anchor-id="행사-및-배정-절차-exercise-and-assignment-process">4.4 행사 및 배정 절차 (Exercise and Assignment Process)</h3>
+<ol type="1">
+<li><strong>행사 통지:</strong> 옵션 보유자의 청산회원이 OCC에 행사 통지를 제출 (지시에 의하거나 내가격(in-the-money) 옵션의 자동 행사)</li>
+<li><strong>배정:</strong> OCC는 <strong>무작위 배정 알고리즘</strong>을 사용하여 배정 대상 시리즈의 매도 포지션을 보유한 청산회원에게 행사 통지를 공정하게 배분</li>
+<li><strong>인도/현금결제:</strong> 주식 옵션의 경우 결과적 매수/매도 의무는 Accord를 통해 NSCC로 유입되어 DTC에서 결제. 지수옵션의 경우 현금결제 금액이 산출되어 OCC를 통해 직접 결제</li>
+<li><strong>자동 행사:</strong> 만기 시 0.01 USD 이상 내가격인 옵션은 반대 지시가 없는 한 자동 행사</li>
+</ol>
+<p><em>출처: <a href="https://www.theocc.com/clearance-and-settlement/clearing/equity-options-product-specifications">OCC Equity Options Product Specifications</a>; <a href="https://infomemo.theocc.com/infomemos?number=54580">OCC T+1 Info Memo #54580</a>; <a href="https://www.federalregister.gov/documents/2024/03/19/2024-05734/self-regulatory-organizations-the-options-clearing-corporation-notice-of-no-objection-to-advance">SEC – OCC/NSCC Accord Modifications (2024)</a></em></p>
+<hr>
+</section>
+</section>
+<section id="기술-및-인프라-technology-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="기술-및-인프라-technology-infrastructure">5. 기술 및 인프라 (Technology &amp; Infrastructure)</h2>
+<section id="핵심-시스템-core-systems" class="level3">
+<h3 class="anchored" data-anchor-id="핵심-시스템-core-systems">5.1 핵심 시스템 (Core Systems)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 30%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>시스템</th>
+<th>기능</th>
+<th>상태</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ENCORE</strong></td>
+<td>핵심 청산, 리스크 관리, 데이터 관리 플랫폼; 실시간 처리 엔진</td>
+<td>레거시 – 2000년부터 운영; Ovation으로 교체 예정</td>
+</tr>
+<tr class="even">
+<td><strong>Ovation</strong></td>
+<td>차세대 클라우드 기반 청산, 결제, 리스크 관리, 데이터 플랫폼</td>
+<td>테스트 중; 외부 베타 테스트 2024년 7월 개시; 2025년 중반 출시 목표 [완료 여부 미확인]</td>
+</tr>
+<tr class="odd">
+<td><strong>STANS</strong></td>
+<td>증거금 계산 엔진 (Monte Carlo 기반)</td>
+<td>운영 중 – 지속적 개선</td>
+</tr>
+<tr class="even">
+<td><strong>CLEARS</strong></td>
+<td>청산회원 보고 및 조회 시스템</td>
+<td>운영 중 [현재 상태 미확인]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="encore-아키텍처" class="level3">
+<h3 class="anchored" data-anchor-id="encore-아키텍처">5.2 ENCORE 아키텍처</h3>
+<ul>
+<li><strong>모놀리식 아키텍처</strong> – 긴밀하게 결합된 구성요소로 인해 변경이 어려움</li>
+<li>전통적 온프레미스 데이터 센터에서 구동</li>
+<li>거래소로부터 거래 및 거래 후 데이터를 실시간으로 건별 수신</li>
+<li>청산회원 포지션 관리, 증거금 및 청산기금 요건 산출</li>
+<li>OCC 직원, 감독기관, 청산회원에 대한 보고 제공</li>
+</ul>
+</section>
+<section id="ovation-아키텍처-renaissance-initiative" class="level3">
+<h3 class="anchored" data-anchor-id="ovation-아키텍처-renaissance-initiative">5.3 Ovation 아키텍처 (Renaissance Initiative)</h3>
+<p>OCC의 <strong>Renaissance Initiative</strong>는 ENCORE를 Ovation 플랫폼으로 교체하는 다년간 기술 현대화 프로그램이다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>특성</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>클라우드 제공자</td>
+<td>Amazon Web Services (AWS)</td>
+</tr>
+<tr class="even">
+<td>아키텍처</td>
+<td>모듈형, 클라우드 네이티브; 3대 축 – 청산·결제, 데이터, 리스크 관리</td>
+</tr>
+<tr class="odd">
+<td>실시간 처리</td>
+<td>Apache Kafka 및 Apache Flink를 활용한 스트림 처리</td>
+</tr>
+<tr class="even">
+<td>데이터 처리</td>
+<td>초당 200만 건 이상의 금융상품 가격 처리; 수십억 건의 미결제 옵션 포지션</td>
+</tr>
+<tr class="odd">
+<td>재해복구</td>
+<td>AWS 및 온프레미스 데이터 센터 양쪽에 분리된 Kafka + Flink 인프라</td>
+</tr>
+<tr class="even">
+<td>주요 이점</td>
+<td>복원력, 보안, 확장성 강화; 전일 종가 대신 현재 가격을 사용한 실시간 리스크 측정</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Renaissance 일정:</strong> - <strong>2022년 10월:</strong> SEC가 클라우드 인프라 제안에 이의 없음 통지 발행 - <strong>2023년:</strong> Ovation 개발 및 내부 테스트 - <strong>2024년 7월:</strong> 외부 베타 테스트 개시 (Beta 1) - <strong>2024년 10월:</strong> 확장된 기능으로 Beta 2 출시 - <strong>2025년 1월:</strong> Beta 3 – 담보 관리 테스트 - <strong>2025년 중반:</strong> Ovation 출시 계획 (단일 처리 사이클 내 ENCORE-Ovation 전환)</p>
+</section>
+<section id="처리-능력-processing-capacity" class="level3">
+<h3 class="anchored" data-anchor-id="처리-능력-processing-capacity">5.4 처리 능력 (Processing Capacity)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>지표</th>
+<th>수치</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>일일 최대 거래량 (기록)</td>
+<td>1.1억 계약 (2025년 10월 10일)</td>
+</tr>
+<tr class="even">
+<td>데이터 수집</td>
+<td>초당 200만 건 이상의 금융상품 가격</td>
+</tr>
+<tr class="odd">
+<td>추적 미결제 포지션</td>
+<td>수십억 건의 미결제 옵션 포지션</td>
+</tr>
+<tr class="even">
+<td>지원 참가 거래소</td>
+<td>약 21개 거래소 및 거래 플랫폼</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="인터페이스-프로토콜-interface-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="인터페이스-프로토콜-interface-protocols">5.5 인터페이스 프로토콜 (Interface Protocols)</h3>
+<ul>
+<li><strong>FIX/FIXML:</strong> 거래 제출 및 보고를 위한 업계 표준 메시징</li>
+<li><strong>독자 API:</strong> 청산회원 연결을 위한 OCC 고유 인터페이스</li>
+<li><strong>시장 데이터 피드:</strong> 실시간 포지션 및 증거금 데이터 전달</li>
+</ul>
+<p><em>출처: <a href="https://www.theocc.com/company-information/occ-transformation">OCC Transformation</a>; <a href="https://www.theocc.com/company-information/occ-transformation/clearing-risk-and-data-changes">OCC – Clearing, Risk and Data Changes</a>; <a href="https://current.confluent.io/2024-sessions/how-the-worlds-largest-options-clearinghouse-moved-from-batch-to-stream-processing-to-manage-risk">Confluent Current 2024 – OCC Stream Processing</a>; <a href="https://www.builtinchicago.org/articles/chicago-options-clearing-corporation-tech-infrastructure">Built In Chicago – OCC Tech Infrastructure</a>; <a href="https://www.tradersmagazine.com/featured_articles/occ-gets-ready-for-ovations-testing/">Traders Magazine – OCC Ovation Testing</a>; <a href="https://www.ibm.com/case-studies/options-clearing-corporation">IBM – OCC Case Study</a></em></p>
+<hr>
+</section>
+</section>
+<section id="규제-체계-regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="규제-체계-regulatory-framework">6. 규제 체계 (Regulatory Framework)</h2>
+<section id="규제-구조-regulatory-structure" class="level3">
+<h3 class="anchored" data-anchor-id="규제-구조-regulatory-structure">6.1 규제 구조 (Regulatory Structure)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 27%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>감독기관</th>
+<th>관할</th>
+<th>범위</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SEC</strong></td>
+<td>주요 감독기관</td>
+<td>1934년 증권거래소법 Section 17A에 따른 등록 청산기관; 주식, 주가지수, 외환, 금리 복합, 개별주식선물에 대한 풋·콜 옵션 청산</td>
+</tr>
+<tr class="even">
+<td><strong>CFTC</strong></td>
+<td>보조 감독기관</td>
+<td>등록 DCO (Derivatives Clearing Organization); 선물 및 선물 옵션 청산</td>
+</tr>
+<tr class="odd">
+<td><strong>연방준비제도이사회</strong></td>
+<td>SIFMU 감독</td>
+<td>도드-프랭크법 Title VIII에 따른 건전성 감독; 연방준비 할인창구 및 결제 시스템 서비스 이용 가능</td>
+</tr>
+<tr class="even">
+<td><strong>FSOC</strong></td>
+<td>지정 기관</td>
+<td>2012년 7월 OCC를 SIFMU로 지정</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="주요-규제-요건-key-regulatory-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="주요-규제-요건-key-regulatory-requirements">6.2 주요 규제 요건 (Key Regulatory Requirements)</h3>
+<ul>
+<li><strong>SEC Rule 17Ad-22(e):</strong> 대상 청산기관에 대한 강화 기준 (2017년 4월 시행); 리스크 관리, 재무자원, 지배구조, 운영, 회복 계획에 관한 요건 수립</li>
+<li><strong>CFTC 핵심 원칙 (Core Principles):</strong> 상품거래소법(CEA)에 따른 DCO 요건</li>
+<li><strong>PFMI 준수:</strong> OCC는 CPMI-IOSCO 지침에 따라 PFMI 공시 프레임워크 및 분기별 PQD 데이터를 발행</li>
+<li><strong>연간 재무감사:</strong> OCC의 재무제표는 매년 감사를 받는다</li>
+<li><strong>규제 보고:</strong> 리스크 지표, 재무자원, 운영 성과에 관해 SEC, CFTC, 연방준비에 정기 보고</li>
+</ul>
+</section>
+<section id="주요-규제-조치-notable-regulatory-actions" class="level3">
+<h3 class="anchored" data-anchor-id="주요-규제-조치-notable-regulatory-actions">6.3 주요 규제 조치 (Notable Regulatory Actions)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>연도</th>
+<th>조치</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>2019년</strong></td>
+<td>SEC 및 CFTC 고발</td>
+<td>적절한 리스크 관리 정책 수립·유지 실패; SEC가 리스크 관리 결함과 관련하여 OCC에 과징금 부과</td>
+</tr>
+<tr class="even">
+<td><strong>2019년</strong></td>
+<td>SEC Capital Plan 불승인</td>
+<td>SEC가 OCC의 Capital Plan 제안 불승인; 불충분한 정보, 지배구조 우려, 비주주 거래소에 대한 경쟁적 영향 지적</td>
+</tr>
+<tr class="odd">
+<td><strong>2023년 (2월)</strong></td>
+<td>SEC 화해</td>
+<td>청산기금 부족(2019년 10월~2021년 5월)으로 1,700만 USD 과징금; 기간 중 청산기금이 2억~5.88억 USD 부족</td>
+</tr>
+<tr class="even">
+<td><strong>2023년 (2월)</strong></td>
+<td>CFTC 화해</td>
+<td>자동화 시스템 관련 운영리스크 관리 위반으로 500만 USD 과징금</td>
+</tr>
+</tbody>
+</table>
+<p><em>출처: <a href="https://www.sec.gov/newsroom/press-releases/2023-31">SEC Press Release – OCC Charges (2023)</a>; <a href="https://www.sec.gov/newsroom/press-releases/2019-171">SEC/CFTC Press Release (2019)</a>; <a href="https://www.cftc.gov/PressRoom/PressReleases/8661-23">CFTC Press Release (2023)</a>; <a href="https://www.federalregister.gov/documents/2019/02/20/2019-02731/self-regulatory-organizations-the-options-clearing-corporation-order-disapproving-proposed-rule">SEC Capital Plan Disapproval (2019)</a></em></p>
+<hr>
+</section>
+</section>
+<section id="상호운용성-interoperability" class="level2">
+<h2 class="anchored" data-anchor-id="상호운용성-interoperability">7. 상호운용성 (Interoperability)</h2>
+<section id="교차증거금-프로그램-cross-margining-programs" class="level3">
+<h3 class="anchored" data-anchor-id="교차증거금-프로그램-cross-margining-programs">7.1 교차증거금 프로그램 (Cross-Margining Programs)</h3>
+<p>OCC는 별도의 청산소에서 청산된 헤지 포지션을 단일 포트폴리오로 결합하여 증거금을 산출할 수 있는 교차증거금 협약을 유지한다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 38%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>프로그램</th>
+<th>상대 CCP</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>OCC-CME 교차증거금 프로그램</strong></td>
+<td>CME Clearing</td>
+<td>적격 청산회원이 주식 옵션 포지션(OCC)과 관련 주가지수 선물 포지션(CME)을 상계할 수 있다; 1987년 블랙먼데이 이후 수립; 2020년 제2차 개정·재작성 협약 승인</td>
+</tr>
+</tbody>
+</table>
+<p>교차증거금은 OCC의 STANS 방법론을 사용하여 결합 포트폴리오 리스크를 산출하며, 일반적으로 각 CCP에서 개별 산출하는 것보다 낮은 증거금이 소요된다.</p>
+</section>
+<section id="상호보증-및-연계-cross-guaranty-and-linkages" class="level3">
+<h3 class="anchored" data-anchor-id="상호보증-및-연계-cross-guaranty-and-linkages">7.2 상호보증 및 연계 (Cross-Guaranty and Linkages)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>약정</th>
+<th>세부 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>OCC-NSCC Accord</strong></td>
+<td>실물결제 주식 옵션의 처리를 규율; NSCC가 DTC의 CNS 시스템을 통한 결제를 위해 행사/배정 인도 거래를 수용</td>
+</tr>
+<tr class="even">
+<td><strong>거래소 연계</strong></td>
+<td>OCC는 16개 이상 옵션 거래소와 참가 거래소 협약을 유지; 개정·재작성된 참가 거래소 협약이 2025년 7월 SEC 승인</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="지속적-조율-ongoing-coordination" class="level3">
+<h3 class="anchored" data-anchor-id="지속적-조율-ongoing-coordination">7.3 지속적 조율 (Ongoing Coordination)</h3>
+<p>OCC는 다음 사항에 대응하여 기존 교차 CCP 협약의 조정 및 잠재적 신규 약정을 검토하고 있다: - 거래시간 연장 이니셔티브 - T+1 결제주기 전환 - 당일만기옵션(0DTE)으로 인한 장중 리스크 증가</p>
+<p><em>출처: <a href="https://www.theocc.com/Risk-Management/Cross-Margin-Programs">OCC – Cross Margin Programs</a>; <a href="https://som.yale.edu/blog/cross-margining-and-financial-stability">Yale SOM – Cross-Margining and Financial Stability</a>; <a href="https://www.federalregister.gov/documents/2025/07/16/2025-13263/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed">SEC Approval of Participant Exchange Agreement (July 2025)</a></em></p>
+<hr>
+</section>
+</section>
+<section id="수수료-fees" class="level2">
+<h2 class="anchored" data-anchor-id="수수료-fees">8. 수수료 (Fees)</h2>
+<section id="청산-수수료-clearing-fee-schedule" class="level3">
+<h3 class="anchored" data-anchor-id="청산-수수료-clearing-fee-schedule">8.1 청산 수수료 (Clearing Fee Schedule)</h3>
+<p>OCC의 수수료 체계는 2024~2025년에 여러 차례 변경되었다:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 22%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>수수료 유형</th>
+<th>금액</th>
+<th>시행일</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>옵션 계약당 청산 수수료</strong></td>
+<td>0.025 USD</td>
+<td>2025년 2월 14일 시행 (0.02 USD에서 인상)</td>
+</tr>
+<tr class="even">
+<td><strong>선물 계약당 청산 수수료</strong></td>
+<td>0.025 USD [미확인 – 상이할 수 있음]</td>
+<td>–</td>
+</tr>
+<tr class="odd">
+<td><strong>거래당 청산 수수료</strong></td>
+<td>폐지</td>
+<td>이전: 2,751계약 이상 거래에 55.00 USD; 2025년 2월 폐지</td>
+</tr>
+<tr class="even">
+<td><strong>최소 월간 청산 수수료</strong></td>
+<td>200.00 USD</td>
+<td>현행</td>
+</tr>
+<tr class="odd">
+<td><strong>운영 손실 수수료</strong></td>
+<td>변동; 자본관리정책에 따라 갱신</td>
+<td>SEC 제출 SR-OCC-2024 기준</td>
+</tr>
+<tr class="even">
+<td><strong>청산 수수료 면제</strong></td>
+<td>0.00 USD (임시)</td>
+<td>2025년 12월 1~31일</td>
+</tr>
+</tbody>
+</table>
+<p><strong>수수료 이력:</strong> - 2021년 6월~2024년 11월 평균 청산 수수료는 계약당 약 <strong>0.019 USD</strong> (폐지된 거래당 수수료 상한 효과 포함) - 0.025 USD로의 인상 및 거래당 상한 폐지는 OCC의 금리 전망, 예상 운영비, 예상 거래량, 자본 필요에 기반한 예상 현금흐름 수요를 반영하여 설계 - OCC는 누적 수익이 목표를 초과하면 간헐적으로 “수수료 면제(fee holiday)”를 시행 – 2025년 12월에 1개월 면제 시행</p>
+</section>
+<section id="행사-및-배정-수수료-exercise-and-assignment-fees" class="level3">
+<h3 class="anchored" data-anchor-id="행사-및-배정-수수료-exercise-and-assignment-fees">8.2 행사 및 배정 수수료 (Exercise and Assignment Fees)</h3>
+<p>계약당 구체적 행사·배정 수수료는 OCC의 Schedule of Fees에서 <a href="https://www.theocc.com/company-information/schedule-of-fees">theocc.com</a>에 공개된다. [정확한 금액은 검색 결과에서 비공개 – 공식 수수료표 참조]</p>
+</section>
+<section id="회원-수수료-membership-fees" class="level3">
+<h3 class="anchored" data-anchor-id="회원-수수료-membership-fees">8.3 회원 수수료 (Membership Fees)</h3>
+<ul>
+<li>가입 및 지속적 회원 수수료는 OCC By-Laws에 따라 부과</li>
+<li>청산기금 출연은 리스크 기반 배분 방법론에 따라 필수 (정액 수수료가 아님)</li>
+<li>2016년, OCC는 청산회원에 3,900만 USD 환급 및 주주 거래소에 약 1,700만 USD 배당을 공고, 이는 수익 잉여를 반영</li>
+</ul>
+<p><em>출처: <a href="https://www.theocc.com/company-information/schedule-of-fees">OCC – Schedule of Fees</a>; <a href="https://www.federalregister.gov/documents/2024/12/27/2024-31089/self-regulatory-organizations-the-options-clearing-corporation-notice-of-filing-and-immediate">SEC Filing SR-OCC-2024-017 (Fee Change)</a>; <a href="https://www.federalregister.gov/documents/2025/02/24/2025-02944/self-regulatory-organizations-the-options-clearing-corporation-notice-of-filing-and-immediate">SEC Filing SR-OCC-2025-002 (Fee Update)</a>; <a href="https://infomemo.theocc.com/infomemos?number=57379">OCC Fee Holiday Info Memo #57379</a></em></p>
+<hr>
+</section>
+</section>
+<section id="최근-동향-recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="최근-동향-recent-developments">9. 최근 동향 (Recent Developments)</h2>
+<section id="renaissance-initiative-기술-현대화-technology-modernization" class="level3">
+<h3 class="anchored" data-anchor-id="renaissance-initiative-기술-현대화-technology-modernization">9.1 Renaissance Initiative / 기술 현대화 (Technology Modernization)</h3>
+<p>OCC의 다년간 <strong>Renaissance Initiative</strong>는 역사상 가장 대규모의 기술 전환이다:</p>
+<ul>
+<li>AWS 클라우드 기반의 <strong>Ovation 플랫폼</strong>, 모듈형 아키텍처 (청산·결제, 데이터, 리스크 관리 3대 축)</li>
+<li>배치 처리(ENCORE)에서 Apache Kafka 및 Flink를 활용한 실시간 <strong>스트림 처리</strong>로 전환</li>
+<li>전일 종가 대신 현재 시장 가격을 사용한 장중 리스크 계산 가능</li>
+<li>2024년 7월 외부 업계 테스트 개시, 점진적 베타 릴리스</li>
+<li>단일 처리 사이클 내 ENCORE에서 Ovation으로의 전환 계획 [목표: 2025년 중반; 2026년 4월 기준 완료 여부 미확인]</li>
+<li>2022년 10월 SEC 클라우드 인프라 이의 없음 통지 수령</li>
+</ul>
+</section>
+<section id="거래시간-연장-extended-trading-hours" class="level3">
+<h3 class="anchored" data-anchor-id="거래시간-연장-extended-trading-hours">9.2 거래시간 연장 (Extended Trading Hours)</h3>
+<ul>
+<li>Cboe 및 기타 거래소가 주식 옵션에 대한 거래시간 연장(프리마켓 및 애프터마켓) 세션을 확대하거나 제안</li>
+<li>Cboe 연장 거래: 일부 옵션 종목에 대해 7:30~9:25 a.m. ET 및 4:00~4:15 p.m. ET 세션</li>
+<li>OCC 인프라는 연장된 시간에 걸쳐 청산 및 리스크 관리를 지원해야 한다</li>
+<li>증거금 산출 시점, 장중 리스크 익스포저, 결제주기 정합성에 대한 과제 야기</li>
+</ul>
+</section>
+<section id="당일만기옵션0dte-성장-영향-0dte-options-growth-impact" class="level3">
+<h3 class="anchored" data-anchor-id="당일만기옵션0dte-성장-영향-0dte-options-growth-impact">9.3 당일만기옵션(0DTE) 성장 영향 (0DTE Options Growth Impact)</h3>
+<p>당일만기옵션의 폭발적 성장이 상당한 리스크 관리 적응을 촉발하였다:</p>
+<ul>
+<li><strong>장중 리스크 차지:</strong> SEC 승인 (2025년 4월). 장중 및 야간 거래 활동에서 발생하는 리스크를 완화하기 위해 모든 청산회원 계좌에 적용되는 신규 증거금 부가금</li>
+<li><strong>STANS 개선:</strong> SEC 승인 (2025년 1월). 단기옵션 리스크를 더 잘 포착하기 위한 STANS 및 CST 방법론 변경; 일평균 증거금 영향 +0.58% 추정</li>
+<li><strong>변동성 조정:</strong> OCC 제안 (2024년 10월). 높은 변동성 기간 중 증거금 파라미터를 조정하는 메커니즘</li>
+<li>OCC의 0DTE 옵션에 대한 장중 익스포저는 이전에 <strong>무담보</strong>였다 – 신규 장중 리스크 차지가 이 공백을 해소</li>
+</ul>
+</section>
+<section id="대차-확대-securities-lending-expansion" class="level3">
+<h3 class="anchored" data-anchor-id="대차-확대-securities-lending-expansion">9.4 대차 확대 (Securities Lending Expansion)</h3>
+<ul>
+<li>OCC는 대차 인프라 현대화를 위해 <strong>Axoni</strong> (분산원장기술 플랫폼)를 선정</li>
+<li>2012년 이후 대차 청산 거래량은 연평균 16% 성장</li>
+<li>OCC는 현재 세계 최대의 미국 주식 대차 CCP</li>
+<li>보다 폭넓은 시장 참여 및 운영 효율성을 지원하도록 프로그램 확대</li>
+</ul>
+</section>
+<section id="capital-plan-지배구조-위기-및-해결-capital-plan-governance-crisis-and-resolution" class="level3">
+<h3 class="anchored" data-anchor-id="capital-plan-지배구조-위기-및-해결-capital-plan-governance-crisis-and-resolution">9.5 2021 Capital Plan / 지배구조 위기 및 해결 (Capital Plan / Governance Crisis and Resolution)</h3>
+<p>이 사건은 OCC 역사에서 중요한 장을 차지한다:</p>
+<p><strong>경과:</strong> 1. <strong>2015년:</strong> OCC가 주주 거래소에 대한 배당 재원을 청산 수수료 인상으로 충당하는 대규모 자본화 확충을 제안하는 Capital Plan을 SEC에 제출 2. <strong>2017년:</strong> SEC가 Capital Plan을 최초 승인 3. <strong>2017년:</strong> D.C. 연방항소법원이 비주주 거래소(예: MIAX)의 이의 제기를 받아들여 결정을 SEC에 환송. 비주주 거래소들은 공정한 통지 및 의견 제출 기회가 거부되었다고 주장 4. <strong>2019년 (2월):</strong> SEC가 Capital Plan을 <strong>불승인</strong>, 다음 사유를 지적: - 계획이 증권거래소법과 합치한다는 증거 불충분 - 지배구조 우려 – OCC 경영진/이사회와 주주 거래소 간 이해상충 - 비주주 거래소에 대한 경쟁적 중요성에 관한 통지 실패 - 시장 유틸리티에 대해 수수료 재원의 소유자 거래소 배당이 적절한지에 대한 의문 5. <strong>2019년 (9월):</strong> SEC 및 CFTC가 Capital Plan과 무관하나 같은 기간에 발생한 리스크 관리 정책 실패에 대해 OCC를 별도 고발 6. <strong>2019~2021년:</strong> OCC 청산비용모델(Liquidation Cost Model)의 오류로 청산기금이 <strong>2억~5.88억 USD</strong> 부족 7. <strong>2023년 (2월):</strong> OCC가 SEC (1,700만 USD) 및 CFTC (500만 USD)와 화해; 총 과징금 2,200만 USD 8. <strong>2023년 이후:</strong> OCC가 강화된 지배구조, 개선된 내부통제, 규제자본 목표 3.03억 USD의 신규 자본관리정책, 영속적 최소 SITG 6,900만 USD를 포함한 시정 조치 이행</p>
+<p><strong>교훈:</strong> - OCC 소유구조의 긴장 – 주주 거래소가 소유자이자 동시에 비주주 거래소의 경쟁자인 구조 – 을 부각 - OCC 지배구조에 대한 강화된 규제 감독으로 이어짐 - OCC가 보다 투명한 자본관리 및 수수료 결정 절차를 채택하도록 촉진 - SIFMU에서의 견고한 내부통제의 중요성을 재확인</p>
+</section>
+<section id="청산기금-배분-방법론-개혁-2025년-clearing-fund-methodology-reform" class="level3">
+<h3 class="anchored" data-anchor-id="청산기금-배분-방법론-개혁-2025년-clearing-fund-methodology-reform">9.6 청산기금 배분 방법론 개혁 (2025년) (Clearing Fund Methodology Reform)</h3>
+<ul>
+<li>2025년 10월, OCC가 각 청산회원이 OCC에 부과하는 스트레스 리스크에 더 잘 부합하도록 청산기금 <strong>배분 방법론</strong> 개혁을 위한 규칙 변경을 제출</li>
+<li>2025년 12월, SEC가 개혁된 방법론을 신속 승인</li>
+<li>새로운 방법론은 스트레스 기반 리스크가 “OCC에 그러한 스트레스 리스크를 부과하는 시장 참가자에게 공정하게 배분”되도록 보장</li>
+</ul>
+</section>
+<section id="거래량-기록-및-시장-성장-volume-records-and-market-growth" class="level3">
+<h3 class="anchored" data-anchor-id="거래량-기록-및-시장-성장-volume-records-and-market-growth">9.7 거래량 기록 및 시장 성장 (Volume Records and Market Growth)</h3>
+<ul>
+<li><strong>2024년:</strong> 122억 옵션 계약 청산 (기록; 전년 대비 +10.6%)</li>
+<li><strong>2025년 (1월):</strong> 월간 11.6억 계약 (전년 대비 +17.8%)</li>
+<li><strong>2025년 (4월 4일):</strong> 사상 최초 일일 1억 건 초과 – 1억 260만 계약</li>
+<li><strong>2025년 (10월 10일):</strong> 일일 1.1억 계약의 신기록</li>
+<li>개인투자자 참여, 무수수료 거래 플랫폼, 0DTE 성장, 경제적 불확실성이 주요 동인</li>
+</ul>
+<p><em>출처: <a href="https://www.theocc.com/company-information/occ-transformation">OCC Transformation</a>; <a href="https://www.federalregister.gov/documents/2025/04/09/2025-06041/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed">SEC Approval of Intraday Risk Charge (April 2025)</a>; <a href="https://www.federalregister.gov/documents/2025/01/22/2025-01414/self-regulatory-organizations-the-options-clearing-corporation-order-granting-approval-of-proposed">SEC Approval of STANS/CST Enhancements (January 2025)</a>; <a href="https://www.federalregister.gov/documents/2019/02/20/2019-02731/self-regulatory-organizations-the-options-clearing-corporation-order-disapproving-proposed-rule">SEC Capital Plan Disapproval (2019)</a>; <a href="https://www.sec.gov/newsroom/press-releases/2023-31">SEC Charges OCC (2023)</a>; <a href="https://www.complianceweek.com/regulatory-enforcement/sec-cftc-order-options-clearing-corp-to-pay-22m-over-internal-rule-failures/32696.article">Compliance Week – OCC Penalties</a>; <a href="https://www.fia.org/fia/articles/fia-questions-new-occ-capital-management-plan-sec-letter">FIA – OCC Capital Plan</a>; <a href="https://www.theocc.com/newsroom/views/2025/01-03-occ-annual-2024-and-december-2024-volume">OCC 2024 Volume Release</a>; <a href="https://www.federalregister.gov/documents/2025/12/16/2025-22855/self-regulatory-organizations-the-options-clearing-corporation-notice-of-filing-of-partial-amendment">SEC Clearing Fund Allocation Approval (December 2025)</a>; <a href="https://cdn.cboe.com/resources/membership/Equity_Options_Extended_Trading_Hours_FAQ.pdf">Cboe Extended Trading Hours FAQ</a></em></p>
+<hr>
+</section>
+</section>
+<section id="krx-청산과의-비교-comparison-with-krx-clearing" class="level2">
+<h2 class="anchored" data-anchor-id="krx-청산과의-비교-comparison-with-krx-clearing">KRX 청산과의 비교 (Comparison with KRX Clearing)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 40%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>특성</th>
+<th>OCC (미국)</th>
+<th>KRX (한국)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>역할</td>
+<td>상장 옵션 및 선물의 CCP</td>
+<td>KRX 상장 전 상품(주식, 파생상품, 채권)의 CCP</td>
+</tr>
+<tr class="even">
+<td>CSD</td>
+<td>DTC (NSCC Accord를 통한 별도 기관)</td>
+<td>KSD (한국예탁결제원 – 별도 기관)</td>
+</tr>
+<tr class="odd">
+<td>증거금 방법론</td>
+<td>STANS (Monte Carlo, 99% ES, 2일 보유기간)</td>
+<td>KOSPI 200 옵션: SPAN 유사; 주식: VaR 기반</td>
+</tr>
+<tr class="even">
+<td>부도 기준</td>
+<td>Cover 2 (최대 두 회원 + 계열사)</td>
+<td>Cover 1 [미확인]</td>
+</tr>
+<tr class="odd">
+<td>SIFMU 상당</td>
+<td>예 (도드-프랭크법 Title VIII)</td>
+<td>금융위원회/금융감독원에 의해 시스템적으로 중요한 기관으로 지정</td>
+</tr>
+<tr class="even">
+<td>결제주기</td>
+<td>T+1 (옵션 프리미엄, 행사/배정)</td>
+<td>주식 T+2; 파생상품 T+1</td>
+</tr>
+<tr class="odd">
+<td>소유구조</td>
+<td>거래소 소유 (Cboe, NYSE, Nasdaq)</td>
+<td>한국거래소의 일부 (정부 지정)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>본 문서는 글로벌 거래소 조사 프로젝트 – 청산결제 분야의 일부로 작성되었다. 모든 데이터는 인용된 공개 자료에서 수집하였다. [미확인]으로 표시된 항목은 공식 출처의 추가 확인이 필요하다.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

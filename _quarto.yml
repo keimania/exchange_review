@@ -1,0 +1,325 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "index.qmd"
+    - "qmd/**/*.qmd"
+
+website:
+  title: "Global Exchange Research"
+  description: "글로벌 거래소 조사 — 주식·파생상품·청산결제"
+
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Equities"
+        menu:
+          - text: "Overview (EN)"
+            href: qmd/01_equities/en/01_overview.qmd
+          - text: "Overview (KO)"
+            href: qmd/01_equities/ko/01_overview.qmd
+          - text: "---"
+          - text: "Comparative Analysis (EN)"
+            href: qmd/01_equities/en/02_comparative_analysis.qmd
+          - text: "비교분석 (KO)"
+            href: qmd/01_equities/ko/02_comparative_analysis.qmd
+      - text: "Derivatives"
+        menu:
+          - text: "Overview (EN)"
+            href: qmd/02_derivatives/en/01_overview.qmd
+          - text: "Overview (KO)"
+            href: qmd/02_derivatives/ko/01_overview.qmd
+          - text: "---"
+          - text: "Comparative Analysis (EN)"
+            href: qmd/02_derivatives/en/02_comparative_analysis.qmd
+          - text: "비교분석 (KO)"
+            href: qmd/02_derivatives/ko/02_comparative_analysis.qmd
+      - text: "Clearing"
+        menu:
+          - text: "Overview (EN)"
+            href: qmd/03_clearing/en/01_overview.qmd
+          - text: "Overview (KO)"
+            href: qmd/03_clearing/ko/01_overview.qmd
+          - text: "---"
+          - text: "Comparative Analysis (EN)"
+            href: qmd/03_clearing/en/02_comparative_analysis.qmd
+          - text: "비교분석 (KO)"
+            href: qmd/03_clearing/ko/02_comparative_analysis.qmd
+      - text: "Glossary"
+        menu:
+          - text: "Glossary (EN)"
+            href: qmd/reference/glossary_en.qmd
+          - text: "용어집 (KO)"
+            href: qmd/reference/glossary_ko.qmd
+          - text: "---"
+          - text: "Final Review (EN)"
+            href: qmd/reference/final_review.qmd
+          - text: "최종 리뷰 (KO)"
+            href: qmd/reference/ko/final_review.qmd
+    right:
+      - icon: github
+        href: https://github.com
+
+  sidebar:
+    - id: 01_equities-en
+      title: "Equities (EN)"
+      style: docked
+      contents:
+        - qmd/01_equities/en/01_overview.qmd
+        - qmd/01_equities/en/02_comparative_analysis.qmd
+        - section: "Exchanges"
+          contents:
+            - qmd/01_equities/en/exchanges/asx.qmd
+            - qmd/01_equities/en/exchanges/bme.qmd
+            - qmd/01_equities/en/exchanges/borsa_italiana.qmd
+            - qmd/01_equities/en/exchanges/bse.qmd
+            - qmd/01_equities/en/exchanges/bursa_malaysia.qmd
+            - qmd/01_equities/en/exchanges/deutsche_borse.qmd
+            - qmd/01_equities/en/exchanges/euronext.qmd
+            - qmd/01_equities/en/exchanges/hkex.qmd
+            - qmd/01_equities/en/exchanges/jpx.qmd
+            - qmd/01_equities/en/exchanges/jse.qmd
+            - qmd/01_equities/en/exchanges/krx.qmd
+            - qmd/01_equities/en/exchanges/lse.qmd
+            - qmd/01_equities/en/exchanges/nasdaq.qmd
+            - qmd/01_equities/en/exchanges/nasdaq_nordic.qmd
+            - qmd/01_equities/en/exchanges/nse_india.qmd
+            - qmd/01_equities/en/exchanges/nyse.qmd
+            - qmd/01_equities/en/exchanges/sgx.qmd
+            - qmd/01_equities/en/exchanges/six.qmd
+            - qmd/01_equities/en/exchanges/sse.qmd
+            - qmd/01_equities/en/exchanges/szse.qmd
+            - qmd/01_equities/en/exchanges/tadawul.qmd
+            - qmd/01_equities/en/exchanges/tmx.qmd
+            - qmd/01_equities/en/exchanges/twse.qmd
+        - section: "Regulations"
+          contents:
+            - qmd/01_equities/en/regulations/asia_equities_regulation.qmd
+            - qmd/01_equities/en/regulations/eu_equities_regulation.qmd
+            - qmd/01_equities/en/regulations/us_equities_regulation.qmd
+        - section: "Trading Systems"
+          contents:
+            - qmd/01_equities/en/systems/arrowhead.qmd
+            - qmd/01_equities/en/systems/exture_3.qmd
+            - qmd/01_equities/en/systems/inet.qmd
+            - qmd/01_equities/en/systems/millennium.qmd
+            - qmd/01_equities/en/systems/optiq.qmd
+            - qmd/01_equities/en/systems/orion.qmd
+            - qmd/01_equities/en/systems/pillar.qmd
+            - qmd/01_equities/en/systems/t7.qmd
+            - qmd/01_equities/en/systems/titan.qmd
+    - id: 01_equities-ko
+      title: "주식시장 (KO)"
+      style: docked
+      contents:
+        - qmd/01_equities/ko/01_overview.qmd
+        - qmd/01_equities/ko/02_comparative_analysis.qmd
+        - section: "거래소"
+          contents:
+            - qmd/01_equities/ko/exchanges/asx.qmd
+            - qmd/01_equities/ko/exchanges/bme.qmd
+            - qmd/01_equities/ko/exchanges/borsa_italiana.qmd
+            - qmd/01_equities/ko/exchanges/bse.qmd
+            - qmd/01_equities/ko/exchanges/bursa_malaysia.qmd
+            - qmd/01_equities/ko/exchanges/deutsche_borse.qmd
+            - qmd/01_equities/ko/exchanges/euronext.qmd
+            - qmd/01_equities/ko/exchanges/hkex.qmd
+            - qmd/01_equities/ko/exchanges/jpx.qmd
+            - qmd/01_equities/ko/exchanges/jse.qmd
+            - qmd/01_equities/ko/exchanges/krx.qmd
+            - qmd/01_equities/ko/exchanges/lse.qmd
+            - qmd/01_equities/ko/exchanges/nasdaq.qmd
+            - qmd/01_equities/ko/exchanges/nasdaq_nordic.qmd
+            - qmd/01_equities/ko/exchanges/nse_india.qmd
+            - qmd/01_equities/ko/exchanges/nyse.qmd
+            - qmd/01_equities/ko/exchanges/sgx.qmd
+            - qmd/01_equities/ko/exchanges/six.qmd
+            - qmd/01_equities/ko/exchanges/sse.qmd
+            - qmd/01_equities/ko/exchanges/szse.qmd
+            - qmd/01_equities/ko/exchanges/tadawul.qmd
+            - qmd/01_equities/ko/exchanges/tmx.qmd
+            - qmd/01_equities/ko/exchanges/twse.qmd
+        - section: "규제"
+          contents:
+            - qmd/01_equities/ko/regulations/asia_equities_regulation.qmd
+            - qmd/01_equities/ko/regulations/eu_equities_regulation.qmd
+            - qmd/01_equities/ko/regulations/us_equities_regulation.qmd
+        - section: "매매시스템"
+          contents:
+            - qmd/01_equities/ko/systems/arrowhead.qmd
+            - qmd/01_equities/ko/systems/exture_3.qmd
+            - qmd/01_equities/ko/systems/inet.qmd
+            - qmd/01_equities/ko/systems/millennium.qmd
+            - qmd/01_equities/ko/systems/optiq.qmd
+            - qmd/01_equities/ko/systems/orion.qmd
+            - qmd/01_equities/ko/systems/pillar.qmd
+            - qmd/01_equities/ko/systems/t7.qmd
+            - qmd/01_equities/ko/systems/titan.qmd
+    - id: 02_derivatives-en
+      title: "Derivatives (EN)"
+      style: docked
+      contents:
+        - qmd/02_derivatives/en/01_overview.qmd
+        - qmd/02_derivatives/en/02_comparative_analysis.qmd
+        - section: "Exchanges"
+          contents:
+            - qmd/02_derivatives/en/exchanges/asx_derivatives.qmd
+            - qmd/02_derivatives/en/exchanges/cboe.qmd
+            - qmd/02_derivatives/en/exchanges/cffex.qmd
+            - qmd/02_derivatives/en/exchanges/cme_group.qmd
+            - qmd/02_derivatives/en/exchanges/dce.qmd
+            - qmd/02_derivatives/en/exchanges/dme.qmd
+            - qmd/02_derivatives/en/exchanges/eurex.qmd
+            - qmd/02_derivatives/en/exchanges/euronext_derivatives.qmd
+            - qmd/02_derivatives/en/exchanges/hkex_derivatives.qmd
+            - qmd/02_derivatives/en/exchanges/ice_futures.qmd
+            - qmd/02_derivatives/en/exchanges/krx_derivatives.qmd
+            - qmd/02_derivatives/en/exchanges/montreal_exchange.qmd
+            - qmd/02_derivatives/en/exchanges/nse_fo.qmd
+            - qmd/02_derivatives/en/exchanges/osaka_exchange.qmd
+            - qmd/02_derivatives/en/exchanges/sgx_derivatives.qmd
+            - qmd/02_derivatives/en/exchanges/shfe.qmd
+            - qmd/02_derivatives/en/exchanges/taifex.qmd
+        - section: "Regulations"
+          contents:
+            - qmd/02_derivatives/en/regulations/asia_derivatives_regulation.qmd
+            - qmd/02_derivatives/en/regulations/eu_derivatives_regulation.qmd
+            - qmd/02_derivatives/en/regulations/us_derivatives_regulation.qmd
+        - section: "Trading Systems"
+          contents:
+            - qmd/02_derivatives/en/systems/genium_inet.qmd
+            - qmd/02_derivatives/en/systems/globex.qmd
+            - qmd/02_derivatives/en/systems/t7_derivatives.qmd
+    - id: 02_derivatives-ko
+      title: "파생상품 (KO)"
+      style: docked
+      contents:
+        - qmd/02_derivatives/ko/01_overview.qmd
+        - qmd/02_derivatives/ko/02_comparative_analysis.qmd
+        - section: "거래소"
+          contents:
+            - qmd/02_derivatives/ko/exchanges/asx_derivatives.qmd
+            - qmd/02_derivatives/ko/exchanges/cboe.qmd
+            - qmd/02_derivatives/ko/exchanges/cffex.qmd
+            - qmd/02_derivatives/ko/exchanges/cme_group.qmd
+            - qmd/02_derivatives/ko/exchanges/dce.qmd
+            - qmd/02_derivatives/ko/exchanges/dme.qmd
+            - qmd/02_derivatives/ko/exchanges/eurex.qmd
+            - qmd/02_derivatives/ko/exchanges/euronext_derivatives.qmd
+            - qmd/02_derivatives/ko/exchanges/hkex_derivatives.qmd
+            - qmd/02_derivatives/ko/exchanges/ice_futures.qmd
+            - qmd/02_derivatives/ko/exchanges/krx_derivatives.qmd
+            - qmd/02_derivatives/ko/exchanges/montreal_exchange.qmd
+            - qmd/02_derivatives/ko/exchanges/nse_fo.qmd
+            - qmd/02_derivatives/ko/exchanges/osaka_exchange.qmd
+            - qmd/02_derivatives/ko/exchanges/sgx_derivatives.qmd
+            - qmd/02_derivatives/ko/exchanges/shfe.qmd
+            - qmd/02_derivatives/ko/exchanges/taifex.qmd
+        - section: "규제"
+          contents:
+            - qmd/02_derivatives/ko/regulations/asia_derivatives_regulation.qmd
+            - qmd/02_derivatives/ko/regulations/eu_derivatives_regulation.qmd
+            - qmd/02_derivatives/ko/regulations/us_derivatives_regulation.qmd
+        - section: "매매시스템"
+          contents:
+            - qmd/02_derivatives/ko/systems/genium_inet.qmd
+            - qmd/02_derivatives/ko/systems/globex.qmd
+            - qmd/02_derivatives/ko/systems/t7_derivatives.qmd
+    - id: 03_clearing-en
+      title: "Clearing (EN)"
+      style: docked
+      contents:
+        - qmd/03_clearing/en/01_overview.qmd
+        - qmd/03_clearing/en/02_comparative_analysis.qmd
+        - section: "Organizations"
+          contents:
+            - qmd/03_clearing/en/organizations/asx_clear.qmd
+            - qmd/03_clearing/en/organizations/ccil.qmd
+            - qmd/03_clearing/en/organizations/cdp.qmd
+            - qmd/03_clearing/en/organizations/cds_canada.qmd
+            - qmd/03_clearing/en/organizations/clearstream.qmd
+            - qmd/03_clearing/en/organizations/cme_clearing.qmd
+            - qmd/03_clearing/en/organizations/csdc.qmd
+            - qmd/03_clearing/en/organizations/dtcc.qmd
+            - qmd/03_clearing/en/organizations/eurex_clearing.qmd
+            - qmd/03_clearing/en/organizations/euroccp.qmd
+            - qmd/03_clearing/en/organizations/euroclear.qmd
+            - qmd/03_clearing/en/organizations/hkex_clearing.qmd
+            - qmd/03_clearing/en/organizations/ice_clear.qmd
+            - qmd/03_clearing/en/organizations/jscc.qmd
+            - qmd/03_clearing/en/organizations/krx_clearing.qmd
+            - qmd/03_clearing/en/organizations/ksd.qmd
+            - qmd/03_clearing/en/organizations/lch.qmd
+            - qmd/03_clearing/en/organizations/muqassa.qmd
+            - qmd/03_clearing/en/organizations/occ.qmd
+            - qmd/03_clearing/en/organizations/six_xclear.qmd
+        - section: "Regulations"
+          contents:
+            - qmd/03_clearing/en/regulations/asia_clearing_regulation.qmd
+            - qmd/03_clearing/en/regulations/eu_clearing_regulation.qmd
+            - qmd/03_clearing/en/regulations/us_clearing_regulation.qmd
+        - section: "Trading Systems"
+          contents:
+            - qmd/03_clearing/en/systems/dtcc_systems.qmd
+            - qmd/03_clearing/en/systems/eurex_clearing_prisma.qmd
+            - qmd/03_clearing/en/systems/lch_systems.qmd
+    - id: 03_clearing-ko
+      title: "청산결제 (KO)"
+      style: docked
+      contents:
+        - qmd/03_clearing/ko/01_overview.qmd
+        - qmd/03_clearing/ko/02_comparative_analysis.qmd
+        - section: "청산기관"
+          contents:
+            - qmd/03_clearing/ko/organizations/asx_clear.qmd
+            - qmd/03_clearing/ko/organizations/ccil.qmd
+            - qmd/03_clearing/ko/organizations/cdp.qmd
+            - qmd/03_clearing/ko/organizations/cds_canada.qmd
+            - qmd/03_clearing/ko/organizations/clearstream.qmd
+            - qmd/03_clearing/ko/organizations/cme_clearing.qmd
+            - qmd/03_clearing/ko/organizations/csdc.qmd
+            - qmd/03_clearing/ko/organizations/dtcc.qmd
+            - qmd/03_clearing/ko/organizations/eurex_clearing.qmd
+            - qmd/03_clearing/ko/organizations/euroccp.qmd
+            - qmd/03_clearing/ko/organizations/euroclear.qmd
+            - qmd/03_clearing/ko/organizations/hkex_clearing.qmd
+            - qmd/03_clearing/ko/organizations/ice_clear.qmd
+            - qmd/03_clearing/ko/organizations/jscc.qmd
+            - qmd/03_clearing/ko/organizations/krx_clearing.qmd
+            - qmd/03_clearing/ko/organizations/ksd.qmd
+            - qmd/03_clearing/ko/organizations/lch.qmd
+            - qmd/03_clearing/ko/organizations/muqassa.qmd
+            - qmd/03_clearing/ko/organizations/occ.qmd
+            - qmd/03_clearing/ko/organizations/six_xclear.qmd
+        - section: "규제"
+          contents:
+            - qmd/03_clearing/ko/regulations/asia_clearing_regulation.qmd
+            - qmd/03_clearing/ko/regulations/eu_clearing_regulation.qmd
+            - qmd/03_clearing/ko/regulations/us_clearing_regulation.qmd
+        - section: "매매시스템"
+          contents:
+            - qmd/03_clearing/ko/systems/dtcc_systems.qmd
+            - qmd/03_clearing/ko/systems/eurex_clearing_prisma.qmd
+            - qmd/03_clearing/ko/systems/lch_systems.qmd
+    - id: reference
+      title: "Reference / 참고자료"
+      style: docked
+      contents:
+        - qmd/reference/glossary_en.qmd
+        - qmd/reference/glossary_ko.qmd
+        - qmd/reference/final_review.qmd
+        - qmd/reference/ko/final_review.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    toc-depth: 3
+    number-sections: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    grid:
+      sidebar-width: 280px
+      body-width: 900px

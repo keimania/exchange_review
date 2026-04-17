@@ -1,0 +1,413 @@
+---
+title: "Taiwan Futures Exchange (TAIFEX, 대만선물거래소)"
+subtitle: "파생상품 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-07
+> **조사 단계:** Tier 3
+> **도메인:** 파생상품
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 공식 명칭 | Taiwan Futures Exchange Corporation (臺灣期貨交易所) |
+| 약칭 | TAIFEX |
+| 웹사이트 | https://www.taifex.com.tw |
+| 설립 연도 | 1997년 (최초 상품 출시: 1998년 7월 21일) |
+| 국가 / 도시 | 대만 / 타이베이 |
+| 소유 구조 | 비영리법인; 대만증권거래소(TWSE), 주요 국내 은행 및 증권사가 공동 설립 |
+| 모회사 / 그룹 | 독립 법인 (TWSE가 주요 주주) |
+| 감독 기관 | 금융감독관리위원회 (Financial Supervisory Commission, FSC), 대만 |
+| 상장 종목 | 주가지수 선물/옵션, 개별주식 선물/옵션, ETF 선물/옵션, 외환 선물, 상품 선물/옵션 등 300개 이상 상품 |
+| 청산기관 | TAIFEX 청산부 -- 중앙거래상대방(CCP) 역할 수행; 2020년 11월 FSC로부터 QCCP 지정 |
+
+[Source: [TAIFEX — Origin of Establishment](https://www.taifex.com.tw/enl/eng1/originOfEstablish); [Wikipedia — Taiwan Futures Exchange](https://en.wikipedia.org/wiki/Taiwan_Futures_Exchange); [TAIFEX PFMI Disclosure Report](https://www.taifex.com.tw/file/taifex/eng/eng9/TAIFEX_PFMI_Disclosure_Report.pdf); [AFM — Taiwan Futures Exchange](https://afmorg.net/taiwan-futures-exchange-taifex/)]
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **1997년 (3월):** 선물거래법(Futures Trading Law) 제정, 대만 국내 선물시장의 법적 기반 수립
+- **1997년 (9월):** Taiwan Futures Exchange Corporation 설립
+- **1998년 (7월 21일):** 최초 상품인 TAIEX 선물(TX) 출시
+- **1999년 (7월):** TAIFEX 1주년 기념으로 전자업종지수 선물 및 금융업종지수 선물 출시
+- **2001년 (4월 9일):** Mini-TAIEX 선물(MTX) 출시
+- **2001년 (12월 24일):** TAIEX 옵션(TXO) 출시
+- **2003년 (1월 20일):** 주식옵션 출시 -- 최초의 비지수 파생상품
+- **2006년 (3월 27일):** 달러표시 금 선물 출시
+- **2010년 (1월 25일):** 개별주식 선물 출시
+- **2017년 (5월 15일):** 시간외 매매 세션 도입, 일일 매매시간 19시간으로 확대
+- **2016년 (12월):** 5세대 전자매매시스템 업그레이드; 반교(板橋, Banqiao) 신 IT센터; 처리 용량 48,000건/초로 2배 증대, 지연시간 800마이크로초에서 200마이크로초로 단축
+- **2019년 (6월 24일):** FSC가 TAIFEX를 장외파생상품 청산기관으로 지정
+- **2020년 (11월):** FSC가 TAIFEX 청산에 QCCP (적격 중앙거래상대방) 지위 부여
+- **2022년 (6월 27일):** Taiwan Semiconductor 30 선물 및 해운업종 선물 출시
+- **2024년 (12월 9일):** Taiwan Mid-Cap 100 선물 출시
+- **2025년:** 처리 효율성 향상 및 아키텍처 최적화를 갖춘 6세대 전자매매시스템 출시
+
+[Source: [TAIFEX — Historical Development](https://www.taifex.com.tw/enl/eng1/historyOfTaifex); [WFE — TAIFEX Marks 25 Years](https://focus.world-exchanges.org/articles/taiwan-exchange-25years); [LSEG — Taiwan Futures Exchange](https://www.lseg.com/en/data-analytics/financial-data/pricing-and-market-data/futures-data/taiwan-futures-exchange); [TAIFEX — Electronic Trading System](https://www.taifex.com.tw/enl/eng4/tradingSystem)]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 부문 / 자산군 (Market Segments / Asset Classes)
+
+| 자산군 | 상품 | 주요 계약 |
+|-------------|----------|---------------|
+| **주가지수 선물** | 대만 주요 주가지수 선물 | TAIEX 선물 (TX), Mini-TAIEX (MTX), Micro TAIEX (TMF), 전자업종지수, 금융업종지수, Taiwan Semiconductor 30, Taiwan Mid-Cap 100, Taipei Exchange Stock Index |
+| **주가지수 옵션** | TAIEX 및 업종지수 옵션 | TAIEX 옵션 (TXO), 주간 TAIEX 옵션, 전자업종지수 옵션, 금융업종지수 옵션 |
+| **개별주식 / ETF** | 개별 주식 및 ETF에 대한 선물과 옵션 | 개별주식 선물, 개별주식 옵션, ETF 선물, ETF 옵션 |
+| **해외지수** | 주요 해외지수 선물 | DJIA 선물, S&P 500 선물, Nasdaq-100 선물, PHLX Semiconductor Sector 선물, FTSE 100 Index 선물 |
+| **외환 파생상품** | 주요 통화쌍 선물 | USD/CNT, USD/CNH, EUR/USD, USD/JPY, GBP/USD, AUD/USD |
+| **상품** | 금 및 에너지 선물과 옵션 | TAIFEX 금 선물 (달러표시), 신대만달러 금 선물, 금 옵션, Brent 원유 선물 |
+
+[Source: [TAIFEX — Products](https://www.taifex.com.tw/enl/eng2/products); [TAIFEX — Single Stock Futures/ETF Futures](https://www.taifex.com.tw/enl/eng2/sSF); [TAIFEX — Gold Futures](https://www.taifex.com.tw/enl/eng2/gDF)]
+
+### 2.2 매매시간 (Trading Sessions / Hours)
+
+**참고:** 대만 표준시(TST)는 연중 UTC+8이다 (서머타임 없음).
+
+**정규 주간 세션 (전 상품) (Regular Day Session)**
+
+| 세션 | 현지시간 (TST) | UTC | 설명 |
+|---------|------------------|-----|-------------|
+| **개장 전** | 08:30 – 08:45 | 00:30 – 00:45 | 모의 체결; 주문 접수; 개장 전 마지막 2분간 수정/취소 불가 |
+| **개시 단일가매매 (경매)** | 08:45 | 00:45 | 균형가격으로의 단일가매매 체결 |
+| **접속매매 (연속매매)** | 08:45 – 13:45 | 00:45 – 05:45 | 연속 주문 체결 |
+| **장 마감** | 13:45 | 05:45 | 주간 세션 마감 |
+
+**시간외 세션 (T+1 세션) -- 일부 상품 (After-Hours Session)**
+
+| 세션 | 현지시간 (TST) | UTC | 설명 |
+|---------|------------------|-----|-------------|
+| **시간외 매매** | 15:00 – 05:00 +1 | 07:00 – 21:00 | 유럽 및 미국 시장 시간대를 커버하는 연장 매매 세션 |
+
+**시간외 매매 대상 상품:**
+TAIEX 선물, Mini-TAIEX 선물, Micro TAIEX 선물, TAIEX 옵션, 전자업종지수 선물, Mini 전자업종 선물, 금융업종지수 선물, Mini 금융업종 선물, Taiwan Semiconductor 30 선물, Taiwan Mid-Cap 100 선물, DJIA 선물, S&P 500 선물, Nasdaq-100 선물, PHLX Semiconductor Sector 선물, FTSE 100 Index 선물, Brent 원유 선물
+
+**총 매매 시간:** 주간 세션 (5시간) + 시간외 세션 (14시간) = 주가지수 상품 기준 19시간
+
+[Source: [TAIFEX — After Hours Trading Introduction](https://www.taifex.com.tw/enl/eng4/aHIntroduction); [TAIFEX — History of Trading](https://www.taifex.com.tw/enl/eng4/historyOfTrading); [TradingHours.com — TAIFEX Market Hours](https://www.tradinghours.com/markets/taifex); [Gate.io — Taiwan Futures Night Session](https://www.gate.com/learn/articles/taiwan-futures-night-session-trading-hours-strategies-and-investment-insights/11293)]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 경매 메커니즘 (Auction Mechanisms)
+
+**개시 단일가매매 (Opening Auction, Call Auction):**
+- 개장 전 단계(08:30 – 08:45)에서 주문 접수; 각 모의 체결 주기마다 모의 시초가와 최적 5단계 매도/매수 가격·수량 공개
+- 개장 전 마지막 2분간 제출된 주문의 삭제 또는 수정 불가 (모의 체결 정보의 조작 방지)
+- 08:45에 누적된 주문이 단일가매매 (경매) 방식으로 단일 균형가격에 체결
+- 캘린더 스프레드 주문은 개장 전 접수 불가하며 개시 단일가매매에 참여하지 않음
+- IOC 시장가 주문은 개장 전 접수 가능; FOK 주문은 단일가매매 단계에서 접수 불가
+
+**접속매매 (Continuous Trading):**
+- 개시 단일가매매 이후, 주문은 호가창 진입 시점에 연속으로 체결된다
+- 가격우선-시간우선(FIFO)이 표준 체결 알고리즘이다
+
+**결제 (Settlement):**
+- 일일 결제가격은 장 마감 시 결정
+- 만기 계약의 최종결제가격은 최종결제일 기초지수 구성종목의 시초가에 기반
+
+### 3.2 주문 유형 (Order Types)
+
+TAIFEX는 직접 체결을 위해 두 가지 기본 주문 유형을 접수한다:
+- **시장가 주문:** 최적 가격에 즉시 체결
+- **지정가 주문:** 지정 가격 또는 그보다 유리한 가격에 체결
+
+FCM은 고객 측 관리를 위해 자체 재량으로 추가 주문 유형을 접수할 수 있으며, 여기에는 market-if-touched, stop, stop limit, one-cancels-the-other (OCO), market-on-close, straight cancel, cancel-replace 주문이 포함된다.
+
+### 3.3 주문 유효기간 (Order Validity)
+
+- **ROD (Rest of Day):** 현재 세션 종료까지 유효
+- **IOC (Immediate-or-Cancel):** 가능 수량만큼 즉시 체결; 미체결 부분은 취소
+- **FOK (Fill-or-Kill):** 전량 즉시 체결 또는 전량 취소 (개시 단일가매매 중 사용 불가)
+
+[Source: [TAIFEX — FAQ Trading](https://www.taifex.com.tw/enl/eng9/tradersQATrading); [Trading Technologies — TAIFEX Overview](https://library.tradingtechnologies.com/user-setup/tai-taifex-overview.html)]
+
+---
+
+## 5. 매매시스템 기술 (Trading System Technology)
+
+### 5.1 시스템 개요 (System Overview)
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 플랫폼명 | TAIFEX 전자매매시스템 (자체 개발) |
+| 개발 | TAIFEX 자체 개발 및 유지보수 |
+| 아키텍처 | TAIFEX와 FCM이 공동 개발한 분산 시스템 기반의 호스트-투-호스트 프레임워크 |
+| 운영체제 | Linux (독점 OS에서 오픈소스 플랫폼으로 전환) |
+| 현행 세대 | 6세대 전자매매시스템 |
+| 주문 입력 프로토콜 | FIX 프로토콜 (글로벌 표준) 및 TMP (Transaction Messaging Protocol, TAIFEX 독자 프로토콜) |
+| 매매 방식 | 100% 전자 시장 |
+| 주 데이터센터 | 반교(Banqiao), 신베이시 (2016년 12월부터) |
+
+### 5.2 플랫폼 연혁 및 발전 (Platform History & Evolution)
+
+| 연도 | 주요 사항 |
+|------|-----------|
+| 1997–1998 | TAIEX 선물 출시를 위한 최초 전자매매시스템 개발 |
+| 2016 (12월) | 5세대 시스템 출시; 처리 용량 48,000건/초로 2배 증대; 지연시간 800에서 200마이크로초로 단축; 반교 신 IT센터 |
+| 2017 (5월) | 시간외 매매 세션 활성화, 시스템 운영시간 일 19시간으로 확대 |
+| 2025 | 6세대 시스템 출시; 처리 효율성 향상을 위한 신규 하드웨어 모델; 최적화된 시스템 아키텍처 |
+
+### 5.3 접속 방식 (Connectivity)
+
+- **인터페이스 호환성:** 해외 FCM이 시장에 접속할 수 있도록 유연한 인터페이스 호환성 설계
+- **FIX 프로토콜:** 국제 접속을 위한 표준 FIX (Financial Information eXchange) 프로토콜 지원
+- **TMP 프로토콜:** 국내 참가자를 위한 TAIFEX 독자 Transaction Messaging Protocol
+- **고속 네트워크:** 오픈소스 플랫폼 전환의 일환으로 구현
+
+[Source: [TAIFEX — Electronic Trading System](https://www.taifex.com.tw/enl/eng4/tradingSystem); [FIA — Capturing Trans-Pacific Investment Flows](https://www.fia.org/marketvoice/articles/capturing-trans-pacific-investment-flows); [Trading Technologies — TAIFEX Trading and Settlement System Update](https://tradingtechnologies.com/support-updates/taifex-trading-and-settlement-system-update-tfex-annual-set-bcp-test-and-more/)]
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (Risk Controls & Circuit Breakers)
+
+### 8.1 일일 가격제한폭 (Daily Price Limits)
+
+TAIFEX는 모든 상품에 일일 가격제한폭을 부과한다. 주요 주가지수 상품의 경우:
+
+| 상품 범주 | 일일 가격제한폭 | 비고 |
+|-----------------|-------------------|-------|
+| 주가지수 선물 (TAIEX, Mini-TAIEX 등) | 전일 결제가격의 ±10% | TWSE 주식시장 일일 제한폭과 동일 |
+| 주가지수 옵션 | 기초자산 ±10% 변동에 연동된 프리미엄 제한 | 행사가격에 따라 상이 |
+| 개별주식 선물/옵션 | 전일 결제가격의 ±10% | 기초 주식의 일일 제한폭과 동일 |
+| 외환 선물 | 상품별 밴드 | 통화쌍에 따라 상이 [unverified] |
+| 상품 선물 (금, Brent) | 상품별 밴드 | 계약별 상이 [unverified] |
+
+### 8.2 포지션한도 (Position Limits)
+
+- TAIFEX는 각 상품 범주별로 포지션한도 (건옥제한)를 설정하며, 다음에 따라 상이한 한도를 적용한다:
+  - **개인 계좌 (자연인)**
+  - **기관 계좌**
+  - **시장조성자 (마켓메이커)**
+- 청산회원의 재무상태 또는 미결제약정에 이상이 발견될 경우, TAIFEX는 시장 포지션 감시 규정 제6-1조 및 제7조에 따라 신규 포지션에 대한 제한을 부과할 수 있다
+- 신청에 의한 헤지 면제 가능
+
+### 8.3 일중 리스크 관리 (Intraday Risk Management)
+
+- **시가평가:** 미결제포지션은 현재 시장가격 또는 결제가격으로 시가평가하여 실시간 손익을 산정한다
+- **일중 증거금 추가 납부 요구:** 09:30, 11:00, 12:30, 15:00에 실시하며, 급격한 가격 변동 시에는 보다 빈번하게 실시한다
+- **동적 가격밴드:** 기초지수 최근 종가 대비 2%의 즉시 거부 기준 (특정 상품 대상)
+
+### 8.4 주문 규모 제한 (Order Size Limits)
+
+- TAIFEX는 각 상품별 단일 주문당 최대 주문 규모 제한을 부과한다
+- 제한 사항은 TAIFEX 웹사이트에 공개되며 정기적으로 갱신된다
+
+[Source: [TAIFEX — Position Limit and Exemption](https://www.taifex.com.tw/enl/eng12/positionLimitExemption); [TAIFEX — Intraday Margin Calls](https://www.taifex.com.tw/enl/eng5/intradayMarginCall); [TAIFEX — Order Size Limits](https://www.taifex.com.tw/enl/eng4/oamOrderlimit); [TAIFEX — FAQ Trading](https://www.taifex.com.tw/enl/eng9/tradersQATrading)]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 주요 규제기관 (Primary Regulator)
+
+- **금융감독관리위원회 (Financial Supervisory Commission, FSC):** 은행, 증권, 선물, 보험 시장을 감독하는 대만의 통합 금융규제기관; 대만 유일의 인가 선물거래소 및 파생상품 청산기관인 TAIFEX를 감독한다
+
+### 9.2 주요 법규 (Key Legislation)
+
+| 규정 | 설명 |
+|-----------|-------------|
+| **선물거래법 (Futures Trading Law, 1997)** | 대만 선물시장을 규율하는 기본법; 국내 선물거래소, FCM, 청산 및 매매에 대한 법적 체계 수립 |
+| **증권거래법 (Securities and Exchange Act)** | 기초 증권시장 규율; 개별주식 선물/옵션에 대한 파생상품 규제와 교차 |
+| **FSC 선물거래 규정** | 증거금, 포지션한도, 회원 요건, 투자자 보호에 관한 세부 규칙 |
+
+### 9.3 청산회원 구조 (Clearing Member Structure)
+
+TAIFEX 청산은 세 가지 회원 자격을 제공한다:
+
+| 회원 유형 | 설명 |
+|----------------|-------------|
+| **개별청산회원** | 자기 고유 거래 및 고객 거래만 청산 |
+| **일반청산회원** | 자기 거래 및 비청산 매매회원의 거래 청산 |
+| **특별청산회원** | 매매를 하지 않고 청산 서비스만 제공하는 전담 청산 법인 |
+
+### 9.4 CCP 및 채무불이행 워터폴 (CCP and Default Waterfall)
+
+- TAIFEX 청산은 모든 거래소 거래 파생상품에 대한 중앙거래상대방(CCP) 역할을 수행한다
+- 2020년 11월 FSC에 의해 QCCP로 지정되었다
+- 채무불이행 워터폴: 채무불이행 회원의 증거금/담보, TAIFEX 자체 적립금, 비채무불이행 청산회원의 공동기금 분담금 (상한 적용)
+- TAIFEX는 CPMI-IOSCO 기준에 따른 PFMI (금융시장인프라 원칙) 공시보고서를 발간한다
+
+### 9.5 국경간 인정 (Cross-Border Recognition)
+
+- **미국 CFTC:** TAIFEX는 상세한 PFMI 공시 문서를 첨부하여 CFTC에 DCO 면제를 신청하였다
+- **국제 협력:** TAIFEX는 타 시장 규제기관과의 규제 협력 체계를 유지하고 있다
+
+[Source: [TAIFEX — Clearing Mechanism](https://www.taifex.com.tw/enl/eng5/clrMechanism); [TAIFEX — Clearing Members' Margin](https://www.taifex.com.tw/enl/eng5/margining); [CFTC — TAIFEX DCO Exemption Application](https://www.cftc.gov/media/9791/TAIFEX%20DCO%20Exemption%20Application-Appendix%20E-TAIFEX%20PFMI%20Disclosure/download)]
+
+---
+
+## 파생상품 전용 섹션 (Derivatives-Specific Sections)
+
+---
+
+## D1. 상품 목록 (Product Catalog)
+
+### 주가지수 선물 (Equity Index Futures)
+
+| 상품 | 종목코드 | 거래승수 | 결제 |
+|---------|--------|---------------------|------------|
+| TAIEX 선물 | TX | NTD 200 x 지수 | 현금 결제 |
+| Mini-TAIEX 선물 | MTX | NTD 50 x 지수 (TX의 1/4) | 현금 결제 |
+| Micro TAIEX 선물 | TMF | NTD 10 x 지수 (TX의 1/10) | 현금 결제 [unverified] |
+| 전자업종지수 선물 | TE | NTD 4,000 x 지수 | 현금 결제 [unverified] |
+| Mini 전자업종 선물 | ZEF | NTD 500 x 지수 | 현금 결제 |
+| 금융업종지수 선물 | TF | NTD 1,000 x 지수 | 현금 결제 |
+| Mini 금융업종 선물 | ZFF | NTD 250 x 지수 (TF의 1/4) | 현금 결제 |
+| Taiwan Semiconductor 30 선물 | — | 상품별 상이 | 현금 결제 |
+| Taiwan Mid-Cap 100 선물 | — | 상품별 상이 | 현금 결제 |
+| Taipei Exchange Stock Index 선물 | — | 상품별 상이 | 현금 결제 |
+
+### 주가지수 옵션 (Equity Index Options)
+
+| 상품 | 종목코드 | 거래승수 | 행사방식 | 결제 |
+|---------|--------|---------------------|----------------|------------|
+| TAIEX 옵션 | TXO | NTD 50 x 지수 | 유럽형 | 현금 결제 |
+| TAIEX 주간옵션 (수요일) | — | NTD 50 x 지수 | 유럽형 | 현금 결제 |
+| TAIEX 주간옵션 (금요일) | — | NTD 50 x 지수 | 유럽형 | 현금 결제 [unverified] |
+| 전자업종지수 옵션 | — | 상품별 상이 | 유럽형 | 현금 결제 [unverified] |
+| 금융업종지수 옵션 | — | 상품별 상이 | 유럽형 | 현금 결제 [unverified] |
+
+### 개별주식 / ETF 파생상품 (Single Stock / ETF Derivatives)
+
+| 상품 | 계약 단위 | 결제 |
+|---------|---------------|------------|
+| 개별주식 선물 | 계약당 2,000주 (표준) | 실물 인도 |
+| 개별주식 옵션 | 계약당 2,000주 (표준) | 실물 인도 [unverified] |
+| ETF 선물 | 상품별 상이 | 현금 결제 [unverified] |
+| ETF 옵션 | 상품별 상이 | 현금 결제 [unverified] |
+
+### 해외지수 선물 (Foreign Index Futures)
+
+| 상품 | 계약 단위 | 결제 |
+|---------|---------------|------------|
+| DJIA 선물 | NTD 20 x 지수 | 현금 결제 [unverified] |
+| S&P 500 선물 | NTD 40 x 지수 | 현금 결제 [unverified] |
+| Nasdaq-100 선물 | NTD 20 x 지수 | 현금 결제 [unverified] |
+| PHLX Semiconductor Sector 선물 | NTD 20 x 지수 | 현금 결제 [unverified] |
+| FTSE 100 Index 선물 | 상품별 상이 | 현금 결제 [unverified] |
+
+### 외환 선물 (FX Futures)
+
+| 상품 | 계약 단위 | 결제 |
+|---------|---------------|------------|
+| USD/CNT 선물 | USD 20,000 | 현금 결제 |
+| USD/CNH 선물 | USD 100,000 | 현금 결제 [unverified] |
+| EUR/USD 선물 | EUR 20,000 | 현금 결제 [unverified] |
+| USD/JPY 선물 | USD 40,000 | 현금 결제 [unverified] |
+| GBP/USD 선물 | GBP 20,000 | 현금 결제 [unverified] |
+| AUD/USD 선물 | AUD 40,000 | 현금 결제 [unverified] |
+
+### 상품 파생상품 (Commodity Derivatives)
+
+| 상품 | 계약 단위 | 결제 |
+|---------|---------------|------------|
+| TAIFEX 금 선물 (USD) | 10 트로이온스 | 현금 결제 (달러표시) |
+| 신대만달러 금 선물 | 10 tael | 현금 결제 (NTD표시) [unverified] |
+| 금 옵션 | 10 트로이온스 | 현금 결제 [unverified] |
+| Brent 원유 선물 | 200 배럴 | 현금 결제 [unverified] |
+
+[Source: [TAIFEX — Products](https://www.taifex.com.tw/enl/eng2/products); [TAIFEX — TAIEX Futures](https://www.taifex.com.tw/enl/eng2/tX); [TAIFEX — Mini-TAIEX Futures](https://www.taifex.com.tw/enl/eng2/mTX); [TAIFEX — Gold Futures](https://www.taifex.com.tw/enl/eng2/gDF); [TAIFEX — Finance Sector Index Futures](https://www.taifex.com.tw/enl/eng2/tF); [Capital Futures Corp. — Contract Specifications](https://www.capitalfutures.com.tw/en-us/productinformation/fucontract)]
+
+---
+
+## D2. 주요 계약 명세 (Key Contract Specifications)
+
+### 1. TAIEX 선물 (TX) -- 대표 상품 (Flagship Product)
+
+| 항목 | 명세 |
+|------|---------------|
+| 기초자산 | Taiwan Stock Exchange Capitalization Weighted Stock Index (TAIEX) |
+| 거래승수 | 지수포인트당 NTD 200 |
+| 호가단위 (최소가격변동폭) | 1 지수포인트 |
+| 호가단위 가치 | NTD 200 |
+| 계약 월물 | 당월, 차월, 이후 3개 분기월 (3월, 6월, 9월, 12월 주기) |
+| 주간 세션 | 08:45 – 13:45 TST |
+| 시간외 세션 | 15:00 – 05:00 +1 TST |
+| 일일 가격제한폭 | 전일 결제가격의 ±10% |
+| 최종거래일 | 계약월 셋째 수요일 |
+| 최종 결제 | 현금 결제; 최종결제일 TAIEX 구성종목의 시초가에 기반 |
+| 결제 통화 | NTD |
+
+### 2. Mini-TAIEX 선물 (MTX)
+
+| 항목 | 명세 |
+|------|---------------|
+| 기초자산 | TAIEX |
+| 거래승수 | 지수포인트당 NTD 50 (TX의 1/4) |
+| 호가단위 (최소가격변동폭) | 1 지수포인트 |
+| 호가단위 가치 | NTD 50 |
+| 계약 월물 | TX와 동일 |
+| 매매시간 | TX와 동일 |
+| 일일 가격제한폭 | ±10% |
+| 결제 | 현금 결제 |
+
+### 3. TAIEX 옵션 (TXO)
+
+| 항목 | 명세 |
+|------|---------------|
+| 기초자산 | TAIEX |
+| 거래승수 | 지수포인트당 NTD 50 |
+| 행사방식 | 유럽형 (만기일에만 행사 가능) |
+| 호가단위 (최소가격변동폭) | 1포인트 (프리미엄 10포인트 미만); 5포인트 (프리미엄 10포인트 이상) [unverified] |
+| 계약 월물 | 당월, 차 2개월, 이후 3개 분기월 |
+| 일일 가격제한폭 | 기초자산 ±10% 변동에 연동된 프리미엄 제한 |
+| 결제 | 현금 결제 |
+| 주간옵션 | 수요일 및 금요일 주간 만기 가능 |
+
+[Source: [TAIFEX — TAIEX Futures](https://www.taifex.com.tw/enl/eng2/tX); [TAIFEX — TAIEX Options](https://www.taifex.com.tw/enl/eng2/tXO); [Capital Futures Corp. — TAIEX Futures Margin & Contract Specifications](https://www.capitalfutures.com.tw/en-us/productinformation/commodityinfo?cid=taiexfutures); [JPX — TAIEX Futures Contract Specifications](https://www.jpx.co.jp/english/derivatives/products/foreign/taiex-futures/01.html); [The TRADE — TAIFEX to launch micro TAIEX futures](https://www.thetradenews.com/taifex-to-launch-micro-taiex-futures-to-enhance-market-flexibility-in-taiwan/)]
+
+---
+
+## D3. 증거금 체계 (Margin Framework)
+
+### 증거금 방법론 (Margin Methodology)
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 방법론 | SPAN (Standard Portfolio Analysis of Risk) |
+| 증거금 산출 | 일정 기간 내 가격 변동에 기반한 위험계수, 경기순응성 완화 요소 및 기타 고려사항을 적용하여 2일 가격 변동성 위험의 99%를 커버 |
+| 개시증거금 | 청산증거금에 TAIFEX가 정한 비율을 곱하여 산출 (통상 청산증거금의 ~115–135%) [unverified] |
+| 유지증거금 | 개시증거금의 일정 비율로 설정 (통상 개시증거금의 ~75–88%) [unverified] |
+| 변동증거금 | 일일 시가평가를 통한 손익 정산 |
+| 증거금 공표 | 개시증거금 및 유지증거금 금액은 TAIFEX가 정기적으로 공표하며, 고변동성 기간에 조정될 수 있다 |
+
+### 증거금 추가 납부 절차 (Margin Call Process)
+
+1. **장 마감 후 정산:** TAIFEX 청산은 장 마감 후 각 청산회원의 청산증거금, 변동증거금, 청산수수료를 산출한다
+2. **일중 시가평가:** 09:30, 11:00, 12:30, 15:00에 실시 (고변동성 시 보다 빈번)
+3. **증거금 부족:** 고객의 자산이 유지증거금 수준 이하로 하락하면 FCM이 고객에게 개시증거금 수준으로의 회복을 요구하는 증거금 추가 납부 요구(margin call)를 발행한다
+4. **추가 납부 기한:** 통상 다음 영업일 장 개시 전까지; 미이행 시 포지션 강제 청산 가능 [unverified]
+
+### 적격 담보 (Acceptable Collateral)
+
+- 현금 (NTD 및 주요 외국통화)
+- 국채
+- TAIFEX가 승인한 기타 유가증권 (할인율 적용)
+
+### 데이트레이딩 증거금 (Day Trading Margin)
+
+- 데이트레이딩 포지션은 SPAN 증거금 산출 시 나머지 포트폴리오와 합산 가능
+- 확인된 일중 포지션에 대해 감면된 증거금률이 적용될 수 있다 [unverified]
+
+[Source: [TAIFEX — Margin Calculation](https://www.taifex.com.tw/enl/eng5/marginCal); [TAIFEX — Clearing Members' Margin](https://www.taifex.com.tw/enl/eng5/margining); [TAIFEX — Intraday Margin Calls](https://www.taifex.com.tw/enl/eng5/intradayMarginCall); [TAIFEX — Clearing Margin Deposit](https://www.taifex.com.tw/enl/eng5/marginDeposit)]
+
+---
+
+*본 조사는 TAIFEX 공식 자료, CFTC 제출서류, 업계 참고자료를 기반으로 작성되었다. [unverified]로 표시된 항목은 1차 자료로부터의 확인이 필요하다.*

@@ -1,0 +1,455 @@
+---
+title: "Central Depository Pte Ltd (CDP)"
+subtitle: "Clearing & Settlement > Organizations"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 2 (Standard)
+> **Type:** CCP + CSD (Central Counterparty + Central Securities Depository)
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | The Central Depository (Pte) Limited |
+| Abbreviation | CDP |
+| LEI | 549300CMH3J8ASUM8N29 |
+| SWIFT Code | CDPLSGSGXXX |
+| Country / City | Singapore |
+| Address | SGX Centre 1, 2 Shenton Way, #02-02, Singapore 068804 |
+| Website | [https://www.sgx.com/securities/depository](https://www.sgx.com/securities/depository) |
+| Year Established | 1987 |
+| Parent Company | Singapore Exchange Limited (SGX Group) -- wholly-owned subsidiary |
+| Regulatory Authority | Monetary Authority of Singapore (MAS) |
+| Regulatory Status | Approved Clearing House (ACH) under Securities and Futures Act 2001 (SFA); designated Central Depository under the Companies Act |
+| CPMI-IOSCO PFMI Compliance | Yes -- publishes PFMI disclosure ([SGX RegCo PFMI Page](https://regco.sgx.com/principles-financial-market-infrastructures-disclosure)) |
+| Role | Provides integrated clearing, settlement, and depository services for the Singapore securities market (equities and fixed income) |
+| Systemic Importance | Designated as systemically important FMI by MAS; value of transactions cleared as percentage of Singapore GDP was ~94% (as of 2012 IMF assessment) [Source: IMF Country Report No. 13/345] |
+
+**Relationship to SGX Group:**
+
+CDP is one of two clearing houses within SGX Group:
+- **CDP** -- clears and settles equities, corporate bonds, ETFs, REITs, unit trusts, warrants, depository receipts, and other listed securities traded on SGX-ST (Singapore Exchange Securities Trading)
+- **SGX-DC (SGX Derivatives Clearing Limited)** -- clears derivatives products (futures, options, OTC derivatives); separate entity with its own clearing fund (~S$557 million as of Dec 2024)
+
+Both CDP and SGX-DC are wholly-owned subsidiaries of SGX and are regulated as Designated Clearing Houses (DCHs) under the SFA. [Source: MAS -- [Clearing Houses](https://www.mas.gov.sg/regulation/capital-markets/understand-the-types-of-capital-market-entities/clearing-houses)]
+
+> **KRX/KSD Comparison:** In Korea, KRX serves as the CCP while KSD serves as the CSD, and they are separate entities. In Singapore, CDP uniquely combines both CCP and CSD functions within a single legal entity.
+
+### Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 1987 | CDP established as a wholly-owned subsidiary of the Stock Exchange of Singapore (SES) to serve as the central securities depository for the Singapore market |
+| 1999 | SES and SIMEX merged to form Singapore Exchange (SGX); CDP became a subsidiary of SGX |
+| 2006 | CDP implemented real-time surveillance capabilities for settlement risk |
+| 2012 | SGX embarked on post-trade modernisation programme to upgrade clearing, settlement, and depository systems |
+| 2016 (Jan) | Phase 1 of new Post-Trade System (PTS) went live -- clearing, settlement, and payment APIs with ISO 20022 messaging [Source: [SWIFT Case Study](https://swift.com/resource/singapore-exchange-sgx-embraces-iso-20022-its-new-post-trade-system)] |
+| 2018 (Dec) | Phase 2 of PTS launched -- new securities settlement and depository framework, powered by LSEG Technology; settlement cycle shortened from T+3 to T+2; true DVP settlement introduced [Source: [LSEG Press Release](https://www.lseg.com/en/media-centre/press-releases/2018/lseg-technology-successfully-implements-settlement-and-depository-solution-singapore-exchange-sgx)] |
+| 2019 (Jul) | Enhancements to default management capabilities implemented [Source: [Allen & Gledhill](https://www.allenandgledhill.com/sg/publication/articles/12346/sgx-implements-enhancements-to-default-management-capabilities-of-sgx-dc-and-cdp-on-17-july-2019)] |
+| 2019 (Dec) | Securities Borrowing and Lending (SBL) programme enhanced with variable rates [Source: [SGX Group Media Centre](https://www.sgxgroup.com/media-centre/20191127-sgx-enhances-securities-borrowing-and-lending-programme-introduction-variable)] |
+| 2022 (Jun) | SGX CDP made available Marketnode's DLT-enabled direct-to-depository service for digital bond issuance [Source: [SGX Group Media Centre](https://www.sgxgroup.com/media-centre/20220601-sgx-cdp-makes-available-marketnodes-dlt-enabled-direct-depository)] |
+| 2023 (May) | Refinements to CDP margin and clearing fund frameworks implemented [Source: [Allen & Gledhill](https://www.allenandgledhill.com/sg/publication/articles/24870/sgx-implements-refinements-to-cdp-margin-and-clearing-fund-frameworks)] |
+| 2024 | SGX Group revised cap on clearing members' liability for multiple defaults [Source: [Mondovisione](https://mondovisione.com/news/sgx-group-seeks-to-refine-cap-on-clearing-members-liability-for-multiple-defaul-2024322/)] |
+
+---
+
+## 2. Clearing Model
+
+### 2.1 CCP Services
+
+CDP acts as the central counterparty for all securities traded on SGX-ST, providing clearing services for the following:
+
+| Product Class | Description |
+|---------------|-------------|
+| Equities | Ordinary shares, preference shares listed on SGX-ST |
+| Exchange Traded Funds (ETFs) | All ETFs listed on SGX-ST |
+| REITs & Business Trusts | Real Estate Investment Trusts and business trusts |
+| Fixed Income | Listed corporate bonds, government bonds |
+| Warrants & Structured Products | Structured warrants, daily leverage certificates |
+| Depository Receipts | Singapore Depository Receipts |
+| Unit Trusts | Exchange-traded unit trusts |
+| Extended Settlement (ES) Contracts | Marginable futures-like contracts on single stocks |
+| Rights | Rights issues during corporate actions |
+
+[Source: [SGX Clearing Information](https://www.sgx.com/securities/clearing-information)]
+
+### 2.2 Novation Process
+
+CDP becomes the counterparty to each side of a transaction through novation as soon as the trade is executed or reported on SGX-ST. The novation process differs based on membership type:
+
+1. **Both parties are Clearing Members (CMs):** The trade is directly novated to CDP, with CDP becoming the buyer to the selling CM and the seller to the buying CM.
+
+2. **One party is a Trading Member (TM), the other a CM:** The qualifying CM assumes the rights, duties, and obligations of the counterparty TM, and the transaction is then novated to CDP.
+
+3. **Both parties are Trading-only Members:** The respective qualifying CMs assume the rights and obligations of each TM, and the transaction is then novated to CDP.
+
+[Source: [SGX Rulebook -- Rule 6.2 Clearing and Novation](https://rulebook.sgx.com/entiresection/536)]
+
+> **KRX Comparison:** KRX follows a similar novation model -- upon trade execution on the exchange, KRX interposes itself as the CCP to both sides. The key difference is that KRX operates as a single integrated exchange-CCP entity, while CDP is a separate legal subsidiary within the SGX Group.
+
+### 2.3 Netting
+
+CDP operates a multilateral netting system:
+
+- **Securities Netting:** Net securities obligations are calculated per Clearing Member per security. On T+2, each CM has a single net delivery or receive obligation for each security.
+- **Cash Netting:** Net cash obligations are calculated per Clearing Member. A single net pay or receive amount is determined for each settlement day.
+- **Netting Cut-off:** Netting occurs at end of trade day for trades executed that day, with settlement obligations due on T+2.
+
+### 2.4 Clearing Membership
+
+CDP has two categories of clearing membership:
+
+| Type | Minimum Capital | Key Requirements |
+|------|----------------|-----------------|
+| **General Clearing Member (GCM)** | S$5 million base capital (or S$8 million if also a clearing member of SGX-DC) | Must be Singapore-registered corporation; hold Capital Markets Services Licence (unless exempt); register a CEO; maintain reserve fund (30% of audited net profits transferred annually until base capital less unappropriated profits reaches S$15 million) |
+| **Bank Clearing Member (BCM)** | No specific minimum (subject to banking regulations) | Must be authorised to conduct banking business in Singapore; must have adequate credit rating indicating intrinsic safety and soundness |
+
+[Source: [SGX Rulebook -- Rule 3 Membership](https://rulebook.sgx.com/rulebook/rule-3-membership-0); [SGX Rulebook -- Rule 5 Financial/Capital Requirements](https://rulebook.sgx.com/rulebook/rule-5-financialcapital-requirements-0)]
+
+Additional requirements:
+- CDP may prescribe additional capital, financial, and other requirements based on volume, risk exposure, risk concentration, margin policies, and nature of business conducted
+- GCMs can clear for their own account and for Trading Members they have qualified (sponsored)
+- BCMs can clear for custodial clients
+
+> **KRX Comparison:** KRX clearing membership requires minimum net capital of KRW 10 billion (~S$10 million) for securities clearing members, broadly comparable to CDP's S$5 million threshold.
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework
+
+CDP employs a risk-based margining framework for its clearing members:
+
+| Parameter | Details |
+|-----------|---------|
+| Margin Methodology | Risk-based margin calculated at a confidence level of at least 99% [Source: SGX CDP PFMI Disclosure] |
+| Close-out Period | 1 to 5 days depending on contract liquidity |
+| Margin Calculation Frequency | At least twice daily (intraday and end-of-day) |
+| Margin Types | Initial Margin, Variation Margin, Additional Margin (concentration, wrong-way risk) |
+| Collateral Accepted | Cash (SGD), government securities, and other approved collateral with appropriate haircuts [unverified -- specific collateral schedule not confirmed from public sources] |
+
+Key features of the margin framework (post-May 2023 refinements):
+- Initial margin is designed to cover potential losses during the close-out period at a 99% confidence level
+- Margin calculations incorporate both current market risk and historical stress scenarios
+- CDP may call for additional margin during periods of heightened volatility
+
+[Source: [Allen & Gledhill -- CDP Margin and Clearing Fund Refinements](https://www.allenandgledhill.com/sg/publication/articles/24870/sgx-implements-refinements-to-cdp-margin-and-clearing-fund-frameworks)]
+
+### 3.2 Margin Call Schedule
+
+| Cycle | Timing | Description |
+|-------|--------|-------------|
+| Intraday Margin | During trading hours | CDP monitors positions intraday and may issue margin calls to cover shortfalls in margin requirements and potential mark-to-market losses |
+| End-of-Day Margin | After market close | Full margin recalculation; margin calls issued for any shortfall |
+| Margin Call Deadline | Within one Trading Day | Clearing Members must meet margin calls within one Trading Day after the event giving rise to the margin call |
+| Customer Margin Restoration | Within two Market Days | CMs must call from customers to restore to Initial Margin level within 2 Market Days of Customer Asset Value falling below Customer Required Margins |
+
+[Source: [SGX Rulebook -- Rule 6A Margin Requirements](https://rulebook.sgx.com/rulebook/rule-6a-margin-requirements); [SGX Rulebook -- Regulatory Notice 3.3.12](https://rulebook.sgx.com/rulebook/regulatory-notice-3312-customer-margins)]
+
+### 3.3 Default Waterfall (with approximate sizes)
+
+CDP's default waterfall specifies the order in which financial resources are applied following a clearing member default:
+
+| Layer | Resource | Approximate Size / Notes |
+|-------|----------|-------------------------|
+| 1 | **Defaulter's Margin** | Margins and collateral posted by the defaulting CM; first line of defence |
+| 2 | **Defaulter's Clearing Fund Contribution** | The defaulting CM's funded contribution to the Clearing Fund |
+| 3 | **CDP's Skin-in-the-Game (SITG)** | CDP's own capital contribution to the Clearing Fund -- at least 25% of the total Clearing Fund [unverified -- exact current CDP SITG amount not confirmed; the 25% ratio is derived from SGX Group-level statements] |
+| 4 | **Non-Defaulting CMs' Funded Clearing Fund Contributions** | Funded contributions from other (non-defaulting) Clearing Members |
+| 5 | **Non-Defaulting CMs' Contingent Contributions** | Unfunded (callable) contributions from non-defaulting CMs -- utilised only after all funded resources are exhausted (per 2023 refinements) |
+| 6 | **CDP's Remaining Capital** | Any remaining financial resources of CDP |
+
+**Clearing Fund Size:**
+- Total CDP Clearing Fund: **S$80 million** (as of 30 June 2024 and 31 December 2024) [Source: SGX Group Financial Results FY2024/H1 FY2025]
+- For comparison, SGX-DC Clearing Fund: **S$557 million** (as of same dates)
+
+**Key 2023 Refinements:**
+- Contingent contributions from non-defaulting CMs were deprioritised -- funded contributions (of both CMs and CDP) are now utilised ahead of unfunded resources
+- A cap was placed on clearing members' total clearing fund liability to give certainty on maximum exposure
+- CDP's own contribution was structured to be at least 25% of the total clearing fund, which SGX states is proportionately higher than many other CCPs in Europe and the US
+
+[Source: [Allen & Gledhill](https://www.allenandgledhill.com/sg/publication/articles/24870/sgx-implements-refinements-to-cdp-margin-and-clearing-fund-frameworks); [SGX Group Financial Results H1 FY2025](https://investorrelations.sgx.com/static-files/df4677aa-9523-4995-9e31-d69158169384)]
+
+> **KRX Comparison:** KRX's Joint Compensation Fund for the securities market was approximately KRW 100 billion (~S$100 million) as of 2023, broadly comparable in scale to CDP's S$80 million. KRX also places its own contribution (skin-in-the-game) in the waterfall ahead of non-defaulting members' contributions, consistent with CPMI-IOSCO guidance. [unverified -- KRX fund size approximate]
+
+### 3.4 Default Fund / Guarantee Fund
+
+The CDP Clearing Fund is sized and managed as follows:
+
+| Parameter | Details |
+|-----------|---------|
+| Total Fund Size | S$80 million (as of Dec 2024) |
+| CDP SITG Contribution | At least 25% of the Clearing Fund |
+| CM Funded Contribution | Based on a percentage of average daily risk margin (post-2023 methodology) |
+| CM Contingent Contribution | Callable, capped, and used only after funded resources exhausted |
+| Fund Sizing Methodology | Revised in 2023 -- changed approach for sizing the Clearing Fund to be more risk-sensitive |
+| Fund Review Frequency | Reviewed periodically; fund calls can be made if contributions are insufficient |
+
+[Source: [SGX RegCo Consultation Paper on CDP Margining and Clearing Fund (Nov 2022)](https://www.sgxgroup.com/media-centre/20221103-sgx-regco-proposes-changes-cdp-margining-and-clearing-fund)]
+
+### 3.5 Stress Testing & Back-testing
+
+CDP conducts regular stress testing and back-testing as part of its PFMI compliance:
+
+- **Stress Testing:** CDP performs stress tests of its financial resources to ensure adequacy under extreme but plausible market conditions. These include both historical stress scenarios and hypothetical scenarios. [unverified -- specific stress scenario details not publicly disclosed]
+- **Back-testing:** Margin models are back-tested to validate that they achieve the targeted coverage level (99% confidence). Results are reviewed regularly and models are recalibrated as needed. [unverified -- specific back-testing results not publicly disclosed]
+- **MAS Oversight:** MAS conducts supervisory assessments of CDP's risk management practices, including its stress testing framework. [Source: [MAS Parliamentary Reply on CDP Oversight (2024)](https://www.mas.gov.sg/news/parliamentary-replies/2024/pq-on-mas-oversight-on-cdp)]
+
+### 3.6 Recovery & Resolution
+
+- **Recovery Tools:** CDP has recovery plans that include tools such as variation margin haircutting, partial tear-up, and voluntary auction mechanisms to manage residual losses beyond the default waterfall. [unverified -- specific recovery plan details not publicly available]
+- **Resolution Authority:** MAS is the resolution authority for CDP as a systemically important FMI in Singapore.
+- **Default Management Enhancements (2019):** SGX implemented enhancements to the default management capabilities of both SGX-DC and CDP, including amendments to the default management process for clearing members. [Source: [Allen & Gledhill (2019)](https://www.allenandgledhill.com/sg/publication/articles/12346/sgx-implements-enhancements-to-default-management-capabilities-of-sgx-dc-and-cdp-on-17-july-2019)]
+- **2024 Refinements:** SGX revised the cap on clearing members' liability for multiple defaults, providing greater certainty to CMs on their maximum financial exposure. [Source: [Mondovisione (2024)](https://mondovisione.com/news/sgx-group-seeks-to-refine-cap-on-clearing-members-liability-for-multiple-defaul-2024322/)]
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle
+
+| Product | Settlement Cycle | Notes |
+|---------|-----------------|-------|
+| Equities (shares, ETFs, REITs) | **T+2** | Shortened from T+3 on 10 December 2018 |
+| Listed Corporate Bonds | **T+2** | Aligned with equities |
+| Singapore Government Securities (SGS) | **T+1** | Settled via MAS's MEPS+ system (not CDP) |
+| Unlisted Corporate Bonds | **Negotiable** | Fully negotiable settlement dates |
+| Unit Trusts | **Various** | Depends on fund manager's terms |
+
+[Source: [Clearstream -- Settlement Process Singapore](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-process-singapore-1280598); [DBS Vickers -- New Securities Settlement Framework](https://www.dbsvickers.com/vickers/sgxposttrademodernisation.page)]
+
+> **KRX Comparison:** KRX also settles equities on T+2 (moved from T+3 in 2024). Both markets are now aligned with the global standard. The US moved to T+1 in May 2024; Singapore has not yet announced plans for T+1 migration. [unverified -- Singapore T+1 status]
+
+### 4.2 DVP Model
+
+CDP operates a **true DVP (Delivery versus Payment)** model since the December 2018 system upgrade:
+
+| Feature | Details |
+|---------|---------|
+| DVP Type | BIS Model 3 -- gross securities settlement with net cash settlement [unverified -- exact BIS model classification] |
+| Securities Settlement | Book-entry transfer within CDP; settlement only finalised once intraday batch or RTGS is completed |
+| Cash Settlement | Via settlement banks through MAS's MEPS+ RTGS system for SGD; multi-currency settlement supported |
+| Settlement Windows | Settlement from 09:00 on settlement date; multiple intraday batch settlement cycles |
+| Simultaneous Settlement | Securities and cash settle simultaneously -- securities delivery occurs only upon confirmed cash payment |
+
+[Source: [DBS Vickers -- New Securities Settlement Framework](https://www.dbsvickers.com/vickers/sgxposttrademodernisation.page)]
+
+### 4.3 Settlement Finality
+
+Settlement finality is clearly defined under CDP rules:
+
+- **Securities Finality:** Delivery of securities is effected and **final** upon CDP debiting the securities from the Delivering Securities Account. Receipt is final upon CDP crediting the securities into the Receiving Securities Account.
+- **Cash Finality:** Settlement of a Settlement Participant's payment obligation is effected and **final** upon CDP debiting an equivalent sum of money from the Settlement Participant's Cash Ledger Account.
+- **Legal Basis:** Settlement finality is protected under the Securities and Futures Act 2001 (SFA), which provides statutory protection for the irrevocability and finality of settlements effected through approved clearing houses.
+
+[Source: [SGX Rulebook -- CDP Settlement Rules](https://rulebook.sgx.com/rulebook/cdp-settlement-rules)]
+
+### 4.4 CSD / Settlement Infrastructure
+
+CDP operates as Singapore's sole CSD for exchange-traded securities:
+
+| Function | Details |
+|----------|---------|
+| Securities Held | All SGX-listed securities including equities, corporate bonds, ETFs, REITs, warrants, structured products, unit trusts, depository receipts |
+| Account Types | **Direct Securities Account** (for individual retail investors linked directly to CDP); **Sub-Account** (held under a Depository Agent such as a broker or custodian bank) |
+| Immobilisation | SGX-listed securities are immobilised -- all securities are held in book-entry form at CDP |
+| Corporate Actions | CDP processes dividends, rights issues, bonus issues, share splits, and other corporate actions on behalf of account holders |
+| Number of Accounts | Over 1.5 million CDP Securities Accounts held by retail investors [unverified -- approximate figure based on industry reports] |
+
+**Key Statistics (FY2025, July 2024 -- June 2025):**
+- Securities Daily Average Traded Value (SDAV): **S$1.34 billion** (up 26.5% YoY)
+- Total Securities Traded Value: **S$336.4 billion** (up 27.5% YoY)
+- Average Net Clearing Fees: **2.59 basis points** (up from 2.46 bps)
+
+[Source: [SGX Group Annual Report FY2025](https://links.sgx.com/FileOpen/2025_SGX_Annual_Report.ashx?App=Announcement&FileID=859054)]
+
+### 4.5 CSD Linkages
+
+CDP maintains cross-border linkages with international CSDs and settlement systems:
+
+| Counterpart | Type | Description |
+|-------------|------|-------------|
+| **Clearstream Banking Luxembourg (CBL)** | CSD Link | CBL clients can settle transactions with counterparties who are direct account holders with CDP; allegements accepted via depository from domestic market counterparties [Source: [Clearstream -- Settlement Services Singapore](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-services-singapore-1278428)] |
+| **Euroclear** | Indirect Link | Access to Singapore market securities through correspondent relationships [unverified -- specific link details not confirmed] |
+| **MAS MEPS+** | Cash Settlement | CDP uses MAS's MEPS+ RTGS system for SGD cash settlement; MEPS+ also handles SGS bond settlement directly |
+| **Settlement Banks** | Banking Interface | CDP interfaces with designated settlement banks (e.g., DBS, OCBC, UOB, international banks) for cash settlement on behalf of clearing members |
+
+> **KRX/KSD Comparison:** KSD maintains bilateral CSD linkages with over 50 foreign CSDs and ICSDs for cross-border settlement. CDP's linkage network is smaller, reflecting Singapore's different market positioning as a financial hub with strong custodial bank intermediation.
+
+### 4.6 Securities Lending & Borrowing
+
+CDP operates the **SGX Securities Borrowing and Lending (SBL)** programme:
+
+| Feature | Details |
+|---------|---------|
+| Role | CDP acts as principal counterparty to both lender and borrower; lenders take on counterparty risk of CDP, not the borrower |
+| Eligibility (Lender) | Retail and institutional investors with CDP securities accounts; minimum holdings: 10,000 units for shares priced <=S$1, or S$10,000 in value for shares priced >S$1 |
+| Borrowing Rate | 0.5% for index stocks, REITs, business trusts; 4.0% for other securities (as of Dec 2019 variable rate introduction) |
+| Lending Fee | Lenders receive 70% of the borrowing fee |
+| Title Transfer | Legal ownership temporarily transferred to borrower; voting rights suspended during lending period; economic benefits (dividends) retained by lender |
+| Registration Fee | Free for lenders |
+
+[Source: [SGX Group Media Centre -- SBL Enhancement (2019)](https://www.sgxgroup.com/media-centre/20191127-sgx-enhances-securities-borrowing-and-lending-programme-introduction-variable); [SGX Securities Lending Pool](https://www1.cdp.sgx.com/sgx-cdp-web/lendingpool/show)]
+
+---
+
+## 5. Technology & Infrastructure
+
+### 5.1 Interface Protocols
+
+| Component | Details |
+|-----------|---------|
+| Post-Trade System (PTS) | New system implemented in two phases (Phase 1: Jan 2016, Phase 2: Dec 2018); powered by LSEG Technology |
+| Messaging Standard | **ISO 20022** -- adopted for settlement processing; structured XML-based messaging |
+| Connectivity | API-based connectivity allowing members flexibility to adopt "best of breed" solutions; members can connect via SWIFT network or direct API |
+| Web Interface | SGX-PTS WEB -- single web-based system for settlement, replacing legacy systems (PSMS, Enhanced DVP, E-Hub, DCSS) |
+| Legacy System Replacement | New PTS replaced four legacy systems as of 10 December 2018 |
+
+[Source: [SWIFT Case Study -- SGX ISO 20022](https://swift.com/resource/singapore-exchange-sgx-embraces-iso-20022-its-new-post-trade-system); [LSEG Technology Press Release (2018)](https://www.lseg.com/en/media-centre/press-releases/2018/lseg-technology-successfully-implements-settlement-and-depository-solution-singapore-exchange-sgx)]
+
+### 5.2 Resilience
+
+| Feature | Details |
+|---------|---------|
+| Business Continuity | CDP maintains business continuity and disaster recovery plans as required by MAS for systemically important FMIs [unverified -- specific BCP/DR details not publicly disclosed] |
+| Operational Uptime | Target of 99.9%+ system availability [unverified] |
+| Cyber Security | Subject to MAS Technology Risk Management (TRM) guidelines; MAS conducts regular supervisory technology risk assessments [Source: MAS regulatory framework] |
+| Data Centre | Primary and secondary data centre facilities [unverified -- specific locations not publicly disclosed] |
+| DLT Capabilities | Marketnode integration for DLT-enabled bond issuance -- separate distributed ledger layer that connects into CDP's core depository infrastructure |
+
+---
+
+## 6. Regulatory Framework (MAS Oversight)
+
+CDP is regulated by the Monetary Authority of Singapore (MAS) under multiple frameworks:
+
+| Framework | Details |
+|-----------|---------|
+| **Securities and Futures Act 2001 (SFA)** | CDP is licensed as an Approved Clearing House (ACH) and operates a central depository system. MAS has powers to regulate, inspect, investigate, and enforce compliance. |
+| **Payment Systems (Oversight) Act (PS(O)A)** | MAS may designate CDP's payment and settlement systems under PS(O)A, subjecting them to additional oversight requirements including access regime provisions. |
+| **Companies Act** | CDP is additionally regulated as a central depository under the Companies Act. |
+| **PFMI Standards** | CDP is expected to observe the CPMI-IOSCO Principles for Financial Market Infrastructures and publishes periodic self-assessments. |
+| **MAS Supervisory Powers** | Include power to request information, make regulations, inspect, investigate, establish access regimes, and issue directions. |
+
+**Key Regulatory Requirements for CDP:**
+- Fair and objective access criteria for participation
+- Safe and efficient functioning of clearing facility
+- Protection of the investing public
+- Adequate financial resources and risk management
+- Regular reporting and disclosure to MAS
+
+[Source: [MAS -- Clearing Houses](https://www.mas.gov.sg/regulation/capital-markets/understand-the-types-of-capital-market-entities/clearing-houses); [MAS -- ACH/RCH Licence](https://www.mas.gov.sg/regulation/capital-markets/apply-for-licensing-or-registration-of-capital-market-entities/copy-of-approved-clearing-house-ach-or-recognised-clearing-house-rch-licence)]
+
+> **KRX Comparison:** KRX is supervised by the Financial Services Commission (FSC) and Financial Supervisory Service (FSS) of Korea. Unlike CDP which is a private company subsidiary of a listed exchange, KRX is a special-purpose corporation established under the Financial Investment Services and Capital Markets Act.
+
+---
+
+## 7. Interoperability
+
+CDP does not currently maintain formal CCP interoperability arrangements (CCP links) with other CCPs for cross-margining or mutual clearing. Its interoperability is primarily through:
+
+- **CSD Linkages:** As described in Section 4.5, CDP maintains links with Clearstream and indirect access via Euroclear for cross-border settlement
+- **SGX Group Integration:** Within SGX Group, CDP and SGX-DC operate as complementary but separate clearing entities -- CDP for securities and SGX-DC for derivatives. There is no formal cross-margining between the two entities. [unverified -- cross-margining status]
+- **ASEAN Linkage:** SGX has been involved in ASEAN exchange connectivity initiatives (ASEAN Trading Link, launched 2012 but discontinued), which aimed to enable cross-border trading and settlement across ASEAN exchanges. [Source: Industry reports]
+
+---
+
+## 8. Fees
+
+CDP charges clearing and settlement fees to Clearing Members based on its published fee schedules:
+
+| Fee Type | Rate / Amount | Notes |
+|----------|---------------|-------|
+| **Clearing Fee** | ~0.0325% of trade value | Average net clearing fee was 2.59 bps in FY2025; actual rates vary by product and volume tier [Source: SGX Group Annual Report FY2025] |
+| **Settlement Fee** | Per settlement instruction | Charged to Settlement Participants [unverified -- specific per-instruction fee not confirmed] |
+| **Depository Fee** | Free for retail CDP accounts | No custody fees for retail investors holding securities in direct CDP accounts |
+| **Corporate Action Processing** | Various | Fees for processing dividends, rights issues, etc. [unverified -- specific fee schedule not confirmed] |
+| **SBL Fees** | 0.5% -- 4.0% borrowing rate | CDP retains 30% of borrowing fee; lenders receive 70% |
+| **Account Opening** | Free | No charge for opening a CDP Securities Account |
+
+Note: Specific detailed fee schedules are published in the [SGX Rulebook](https://rulebook.sgx.com/rulebook/111-fees-and-expenses-payable) and updated periodically.
+
+---
+
+## 9. Recent Developments
+
+### 2022 -- Marketnode DLT Direct-to-Depository Service
+SGX CDP made available Marketnode's DLT-enabled direct-to-depository service for debt issuers. The platform eliminates paper trails and reduces bond settlement time by 60% (from T+5 to T+2). OCBC Bank's US$100 million Euro Commercial Paper issuance was the first transaction on the platform. Over S$1 billion in digital bonds have been issued through the platform. [Source: [SGX Group (Jun 2022)](https://www.sgxgroup.com/media-centre/20220601-sgx-cdp-makes-available-marketnodes-dlt-enabled-direct-depository); [Marketnode](https://www.marketnode.com/media-centre/sgx-cdp-makes-available-marketnodes-dlt-enabled-direct-to-depository-service-for-debt-issuers)]
+
+### 2023 -- Margin and Clearing Fund Framework Refinements
+Effective 26 May 2023 (rules) and 12 June 2023 (margin methodology), CDP implemented significant changes:
+- Revised approach for sizing the Clearing Fund to be more risk-sensitive
+- Deprioritised contingent contributions -- funded resources now utilised first
+- Cap on clearing members' total clearing fund liability
+- CDP maintains skin-in-the-game at minimum 25% of the Clearing Fund
+
+[Source: [Allen & Gledhill (2023)](https://www.allenandgledhill.com/sg/publication/articles/24870/sgx-implements-refinements-to-cdp-margin-and-clearing-fund-frameworks)]
+
+### 2024 -- Revised Clearing Member Liability Cap for Multiple Defaults
+SGX Group refined the cap on clearing members' liability for multiple defaults, providing CMs with greater certainty on their maximum financial exposure in tail-risk events involving sequential defaults. [Source: [Mondovisione (Mar 2024)](https://mondovisione.com/news/sgx-group-seeks-to-refine-cap-on-clearing-members-liability-for-multiple-defaul-2024322/)]
+
+### 2025 -- Strong Market Activity
+FY2025 (July 2024 -- June 2025) saw significantly increased activity:
+- Securities daily average traded value reached S$1.34 billion (up 26.5%)
+- Total securities traded value reached S$336.4 billion (up 27.5%)
+
+[Source: [SGX Group Annual Report FY2025](https://links.sgx.com/FileOpen/2025_SGX_Annual_Report.ashx?App=Announcement&FileID=859054)]
+
+### Digital Asset and Blockchain Initiatives
+- SGX and Temasek established Marketnode as a joint venture for digital market infrastructure
+- MAS and SGX successfully piloted blockchain technology for settlement of tokenised assets (Project Ubin) [Source: [MAS Media Release (2018)](https://www.mas.gov.sg/news/media-releases/2018/mas-and-sgx-successfully-leverage-blockchain-technology-for-settlement-of-tokenised-assets)]
+- SGX Derivatives (separate from CDP) launched Bitcoin and Ethereum perpetual futures in November 2025
+
+---
+
+## Sources
+
+### Official SGX / CDP Sources
+- [SGX Securities Depository](https://www.sgx.com/securities/depository)
+- [SGX Securities Clearing Information](https://www.sgx.com/securities/clearing-information)
+- [SGX Rulebook -- CDP Clearing Rules](https://rulebook.sgx.com/rulebook/cdp-clearing-rules)
+- [SGX Rulebook -- CDP Settlement Rules](https://rulebook.sgx.com/rulebook/cdp-settlement-rules)
+- [SGX RegCo -- PFMI Disclosure](https://regco.sgx.com/principles-financial-market-infrastructures-disclosure)
+- [SGX Group Annual Report FY2025](https://links.sgx.com/FileOpen/2025_SGX_Annual_Report.ashx?App=Announcement&FileID=859054)
+- [SGX Group Financial Results H1 FY2025](https://investorrelations.sgx.com/static-files/df4677aa-9523-4995-9e31-d69158169384)
+- [SGX Group Financial Results FY2024](https://investorrelations.sgx.com/static-files/a56f86dc-34fd-4a1f-965c-b9563565594a)
+- [SGX Rulebook -- Rule 3 Membership](https://rulebook.sgx.com/rulebook/rule-3-membership-0)
+- [SGX Rulebook -- Rule 5 Financial/Capital Requirements](https://rulebook.sgx.com/rulebook/rule-5-financialcapital-requirements-0)
+- [SGX Rulebook -- Rule 6.2 Clearing and Novation](https://rulebook.sgx.com/entiresection/536)
+- [SGX Rulebook -- Rule 6A Margin Requirements](https://rulebook.sgx.com/rulebook/rule-6a-margin-requirements)
+- [SGX SBL Lending Pool](https://www1.cdp.sgx.com/sgx-cdp-web/lendingpool/show)
+
+### Regulatory Sources
+- [MAS -- Clearing Houses](https://www.mas.gov.sg/regulation/capital-markets/understand-the-types-of-capital-market-entities/clearing-houses)
+- [MAS -- Parliamentary Reply on CDP Oversight (2024)](https://www.mas.gov.sg/news/parliamentary-replies/2024/pq-on-mas-oversight-on-cdp)
+- [MAS -- EMEAP Red Book (2011)](https://www.mas.gov.sg/-/media/MAS/Singapore-Financial-Centre/Why-Singapore/Payment-and-Settlement-Systems-redirect-pages/EMEAP-Redbook-2011--Paymentclearing-and-settlement-systems-in-Singapore.pdf)
+- [BIS -- Payment Systems in Singapore](https://www.bis.org/cpmi/publ/d97_sg.pdf)
+- [IMF Country Report No. 13/345 -- Singapore FSAP](https://www.imf.org/external/pubs/ft/scr/2013/cr13345.pdf)
+
+### Third-Party / Analysis Sources
+- [Allen & Gledhill -- CDP Margin and Clearing Fund Refinements (2023)](https://www.allenandgledhill.com/sg/publication/articles/24870/sgx-implements-refinements-to-cdp-margin-and-clearing-fund-frameworks)
+- [Allen & Gledhill -- Default Management Enhancements (2019)](https://www.allenandgledhill.com/sg/publication/articles/12346/sgx-implements-enhancements-to-default-management-capabilities-of-sgx-dc-and-cdp-on-17-july-2019)
+- [Allen & Gledhill -- Default Management Process Amendments](https://www.allenandgledhill.com/sg/publication/articles/19588/sgx-amends-default-management-process-for-clearing-members-of-cdp)
+- [Mondovisione -- Clearing Member Liability Cap (2024)](https://mondovisione.com/news/sgx-group-seeks-to-refine-cap-on-clearing-members-liability-for-multiple-defaul-2024322/)
+- [LSEG Technology -- SGX Implementation (2018)](https://www.lseg.com/en/media-centre/press-releases/2018/lseg-technology-successfully-implements-settlement-and-depository-solution-singapore-exchange-sgx)
+- [SWIFT -- SGX ISO 20022 Case Study](https://swift.com/resource/singapore-exchange-sgx-embraces-iso-20022-its-new-post-trade-system)
+- [Clearstream -- Settlement Process Singapore](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-process-singapore-1280598)
+- [Clearstream -- Settlement Services Singapore](https://www.clearstream.com/clearstream-en/res-library/market-coverage/settlement-services-singapore-1278428)
+- [Marketnode -- DLT Direct-to-Depository](https://www.marketnode.com/media-centre/sgx-cdp-makes-available-marketnodes-dlt-enabled-direct-to-depository-service-for-debt-issuers)
+- [Cbonds -- CDP Issuer Information](https://cbonds.com/company/86295/)
+- [MAS eServices -- CDP Registration](https://eservices.mas.gov.sg/fid/institution/detail/100611-THE-CENTRAL-DEPOSITORY-PTE-LIMITED)

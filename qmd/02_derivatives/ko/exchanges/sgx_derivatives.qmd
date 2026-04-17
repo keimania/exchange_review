@@ -1,0 +1,994 @@
+---
+title: "SGX (싱가포르거래소) 파생상품"
+subtitle: "파생상품 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-06
+> **조사 단계:** Tier 1
+> **도메인:** 파생상품
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 공식 명칭 | Singapore Exchange Derivatives Trading Limited (SGX-DT) / Singapore Exchange Derivatives Clearing Limited (SGX-DC) |
+| 약칭 | SGX Derivatives |
+| 웹사이트 | https://www.sgx.com/derivatives |
+| 설립 연도 | 1984년 (SIMEX — Singapore International Monetary Exchange로 설립); 1999년 SGX로 합병; SGX-DT 및 SGX-DC는 SGX Group 내 별도 법인 |
+| 국가 / 도시 | 싱가포르 / 싱가포르 (2 Shenton Way, SGX Centre 1) |
+| 소유 구조 | SGX Group의 일부이며, 자체 거래소에 상장 (종목코드: S68) |
+| 모회사 / 그룹 | Singapore Exchange Limited (SGX Group) |
+| 감독 기관 | 싱가포르 통화관리국 (Monetary Authority of Singapore, MAS) |
+| 연간 매출 (FY2025) | 주식 -- 파생상품: SGD 3억 4,590만 (전년 대비 +13.8%); 통화 & 상품: SGD 3억 1,250만 (전년 대비 +8.6%); SGX Group 합계: SGD 13억 (역대 최고) |
+| 연간 파생상품 거래량 (CY2025) | 3억 2,900만 계약 (역대 최고), 주식, 외환, 상품 전 분야 |
+| 일평균 거래량 (2025년 2월) | 약 140만 계약/일 (파생상품 DAV 전년 대비 +8%) |
+| 상장 종목 | 주가지수 (아시아 15개 이상 시장), 외환 (6개 이상 통화쌍), 상품 (철광석, 해운, 고무, 코킹석탄, 철강), 금리 (JGB, APAC 채권), 디지털 자산 (BTC, ETH 무기한 선물) 등 선물 및 옵션 |
+| 청산기관 | SGX Derivatives Clearing Limited (SGX-DC) — 중앙거래상대방 |
+
+[Source: SGX Group FY2025 Annual Report; SGX Group market statistics press releases, February 2025; TipRanks, "SGX Ends 2025 With Record Derivatives Volumes", January 2026]
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **1984년:** Singapore International Monetary Exchange (SIMEX) 설립, 아시아 최초의 금융 선물 거래소; CME와의 상호상쇄(Mutual Offset)를 통해 유로달러 선물 출시
+- **1986년:** SIMEX가 Nikkei 225 선물 출시 — 일본 주식시장에 대한 역외 접근의 선구적 사례; 주요 아시아 주가지수의 최초 역외 상장
+- **1999년 (12월 1일):** SGX는 Stock Exchange of Singapore (SES), SIMEX, Securities Clearing and Computer Services Pte Ltd의 합병으로 설립, Exchanges (Demutualisation and Merger) Act 1999에 의해 가능
+- **2000년:** SGX 자체 Mainboard에 상장 (11월 23일); SGX Derivatives Trading (SGX-DT)과 SGX Securities Trading (SGX-ST)을 별도 부문으로 설립
+- **2002년:** 일본 국채(JGB) 선물 출시
+- **2003년:** Nasdaq과의 매매시스템 기술 파트너십 개시
+- **2006년:** FTSE China A50 Index 선물 출시 — 전 세계 유일의 달러표시 A주 선물 계약
+- **2007년:** AsiaClear 출시, 상품에 대한 장외 청산 서비스; 철광석 스왑 출시
+- **2009년:** SGX 철광석 선물 출시 — 현재 해상 철광석 파생상품의 글로벌 벤치마크
+- **2010년:** ASX와 AUD 84억 합병 제안; 2011년 호주 정부에 의해 차단
+- **2013년:** Baltic Exchange 24.9% 지분 인수 (2017년 전량 인수)
+- **2014년:** 외환 선물 출시 (USD/CNH, INR/USD 등 아시아 통화쌍)
+- **2015년:** Nasdaq Genium INET 기술을 활용한 차세대 파생상품 플랫폼 (Titan) 발표
+- **2016–2017년:** SGX Titan DT/DC 파생상품 매매 및 청산 플랫폼 가동, 레거시 시스템 대체
+- **2018년:** FTSE-SGX 지수 출시; 철광석 및 상품 제품군 확대
+- **2019년:** 증권 매매 엔진을 Nasdaq 다중 매매체결엔진으로 업그레이드
+- **2020년:** 외환 파생상품 제품군 확대; 철광석 역대 최고 거래량
+- **2022년:** NSE (인도)와 GIFT Connect 계약 체결, Nifty 파생상품 전환
+- **2023년 (7월 3일):** NSE IX-SGX GIFT Connect 완전 운영 — Nifty 파생상품이 인도 GIFT City의 NSE International Exchange로 이전
+- **2025년 (11월):** iEdge-CoinDesk Cryptocurrency Indices에 연동된 기관 등급 Bitcoin 및 Ethereum 무기한 선물 출시
+- **2025년:** 연간 파생상품 거래량 3억 2,900만 계약 역대 최고; 외환 선물 역대 최고; 장외 외환 ADV USD 1,430억 역대 최고; MSCI Singapore OI 역대 최고
+- **2026년 (4월, 예정):** 인도, 인도네시아, 말레이시아, 태국, 필리핀을 커버하는 아시아태평양 국채 선물 출시
+- **2027년 (예정):** 신규 증권 매매 엔진 "Iris-ST" 2027년 하반기 가동 예정
+
+[Source: SGX website, "About SGX"; Wikipedia, "Singapore Exchange"; SGX press releases 2022–2026; SGX FY2025 Annual Report; PR Newswire, "SGX Derivatives breaks new ground with institutional-grade crypto perpetual futures", November 2025; Markets Media, "SGX Derivatives to Launch Asia Pacific Government Bond Futures", March 2026]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 시장 부문 / 자산군 (Market Segments / Asset Classes)
+
+SGX Derivatives는 아시아에서 가장 광범위한 다자산 파생상품 플랫폼 중 하나를 제공하며, 기초자산 유형별로 구성된다:
+
+| 자산군 | 상품 | 주요 계약 |
+|-------------|----------|---------------|
+| **주가지수** | 아시아 주요 지수에 대한 선물 및 옵션; 아시아 경제의 80% 이상 커버 | FTSE China A50, Nikkei 225 (JPY & USD), MSCI Singapore, MSCI Taiwan, MSCI Indonesia, MSCI India, MSCI Thailand, MSCI Philippines, Hang Seng Index, Hang Seng China Enterprises Index, S&P/ASX 200 |
+| **외환 파생상품** | 아시아 통화쌍 선물 및 옵션 (상장) + 장외 외환 | USD/CNH, INR/USD, KRW/USD, AUD/USD, AUD/JPY, USD/SGD |
+| **상품** | 벌크 상품 및 해운에 대한 선물, 스왑, 옵션 | TSI Iron Ore CFR China 62% Fe, Iron Ore 65% Fe, Coking Coal, Steel Rebar, Rubber (TSR20, RSS3), Freight (FFA), Energy (fuel oil, naphtha) |
+| **금리** | 국채 선물 | Japanese Government Bond (JGB) 선물; 아시아태평양 국채 선물 (인도, 인도네시아, 말레이시아, 태국, 필리핀 — 2026년 4월 출시) |
+| **디지털 자산** | 무기한 선물 | Bitcoin 무기한 선물, Ethereum 무기한 선물 (2025년 11월 출시) |
+| **GIFT Connect** | NSE IX를 통한 인도 Nifty 지수 파생상품 | GIFT Nifty 50, GIFT Nifty Bank, GIFT Nifty Financial Services, GIFT Nifty IT (NSE IX에서 거래, SGX를 통해 접근 가능) |
+
+[Source: SGX website, "Derivatives Products"; Exegy, "Singapore Exchange Links Traders to Diverse APAC Products"; SGX press releases 2025–2026]
+
+### 2.2 매매시간 (Trading Sessions / Hours)
+
+**참고:** 싱가포르 표준시(SST/SGT)는 연중 UTC+8이다 (서머타임 없음).
+
+SGX Derivatives는 주요 상품에 대해 일일 약 22시간까지의 연장 매매시간을 운영하여 아시아, 유럽, 북미 시간대를 커버한다.
+
+**주가지수 파생상품 (대표: FTSE China A50, Nikkei 225) (Equity Index Derivatives)**
+
+| 세션 | 현지시간 (SGT) | UTC | 설명 |
+|---------|------------------|-----|-------------|
+| **개장 전 (T 세션)** | 08:45 – 09:00 | 00:45 – 01:00 | 주문 접수; 체결 없음. 마지막 2분간 취소 차단 |
+| **T 세션 (주간)** | 09:00 – 16:30 | 01:00 – 08:30 | 접속매매 (연속매매) |
+| **휴장** | 16:30 – 17:00 | 08:30 – 09:00 | 세션 간 휴장 |
+| **개장 전 (T+1 세션)** | 16:55 – 17:00 | 08:55 – 09:00 | T+1 세션 주문 접수 |
+| **T+1 세션 (연장)** | 17:00 – 05:15 +1 | 09:00 – 21:15 | 유럽 및 미국 시간대를 커버하는 연장 매매 |
+
+**Nikkei 225 전용:**
+- T 세션: 07:30 – 14:55 SGT (23:30 – 06:55 UTC)
+- T+1 세션: 15:10 – 05:15 +1 SGT (07:10 – 21:15 UTC)
+- 연장 시간은 런던 시장 마감까지 커버
+
+**외환 파생상품 (USD/CNH, INR/USD) (FX Derivatives)**
+
+| 세션 | 현지시간 (SGT) | UTC |
+|---------|------------------|-----|
+| T 세션 | 07:25 – 19:55 | 23:25 – 11:55 |
+| 휴장 | 19:55 – 20:15 | 11:55 – 12:15 |
+| T+1 세션 | 20:15 – 05:15 +1 | 12:15 – 21:15 |
+
+**상품 파생상품 (철광석) (Commodity Derivatives)**
+
+| 세션 | 현지시간 (SGT) | UTC |
+|---------|------------------|-----|
+| T 세션 | 07:25 – 19:55 | 23:25 – 11:55 |
+| 휴장 | 19:55 – 20:15 | 11:55 – 12:15 |
+| T+1 세션 | 20:15 – 04:45 +1 | 12:15 – 20:45 |
+
+**주문 접수 규칙:**
+- T 세션 개장 15분 전부터 주문 접수
+- T+1 세션 개장 5분 전부터 주문 접수
+- 각 세션 개장 전 마지막 2분간: 신규 주문만 접수 -- 가격 수정 또는 취소 불가
+
+[Source: SGX website, "Trading"; QuantConnect, "SGX Market Hours"; Trading Technologies, "SGX Overview"; Capital Futures Corp., "SGX Contract Specifications"]
+
+### 2.3 호가단위 (일부 상품) (Tick Sizes, Selected Products)
+
+| 상품 | 호가단위 (최소가격변동폭) | 호가단위 가치 |
+|---------|-----------|------------|
+| FTSE China A50 선물 | 5 지수포인트 | USD 5.00 |
+| Nikkei 225 선물 (JPY) | 5 지수포인트 | JPY 2,500 |
+| Nikkei 225 선물 (USD) | 5 지수포인트 | USD 25.00 |
+| MSCI Singapore 선물 | 0.05 지수포인트 | SGD 10.00 |
+| TSI Iron Ore 62% 선물 | 미터톤당 USD 0.01 | USD 1.00 |
+| USD/CNH 선물 | 0.0001 CNH | 약 USD 10.00/틱 [unverified] |
+| INR/USD 선물 | 100 INR당 0.01 US 센트 | USD 2.00 |
+| Bitcoin 무기한 선물 | USD 5.00 | USD 5.00 [unverified] |
+
+### 2.4 거래 단위 / 계약 단위 (Lot Sizes / Contract Units)
+
+| 상품 | 계약 단위 |
+|---------|--------------|
+| FTSE China A50 선물 | USD 1 x 지수 |
+| Nikkei 225 선물 (JPY) | JPY 500 x 지수 |
+| Nikkei 225 선물 (USD) | USD 5 x 지수 |
+| Nikkei 225 Mini 선물 | JPY 100 x 지수 |
+| MSCI Singapore 선물 | SGD 200 x 지수 |
+| TSI Iron Ore 62% 선물 | 100 미터톤 |
+| INR/USD 선물 | INR 2,000,000 |
+| USD/CNH 선물 | USD 100,000 |
+
+[Source: Barchart.com, "SGX Contract Specifications"; SGX website, "Derivatives Products"; Capital Futures Corp., "SGX Contract Specifications"]
+
+### 2.5 시장조성자 / 유동성 공급자 프로그램 (Market Maker / Liquidity Provider Programs)
+
+SGX는 파생상품 시장 전반에 걸쳐 지정 시장조성자 프로그램을 운영한다:
+
+**프로그램 구조:**
+- **지정 시장조성자 (Designated Market Makers, DMMs):** 배정 상품에 대해 연속 양방향 호가를 제공할 의무가 있으며, 스프레드 폭, 최소 수량, 시장 참여시간에 대한 호가 의무를 충족해야 한다
+- SGX-DT는 자격 충족 DMM에 대해 수수료, 부담금, 비용을 감면 또는 면제할 수 있다
+- 성과는 통상 거래량, 스프레드 유지, 시장 참여도에 연동된 KPI로 측정된다
+
+**주요 특징:**
+- 자격 충족 시장조성자에 대한 수수료 할인 및 환급
+- 거래량 기반 인센티브 등급 — 거래량이 높을수록 더 많은 인센티브 해제
+- 프로그램은 주가지수 파생상품, 외환 선물, 상품 파생상품, 옵션을 커버
+- 시장 스트레스 상황 (예: Covid-19 팬데믹) 중 핵심 계약의 유동성 지원에 시장조성자 참여가 중요한 역할
+
+**커버리지:**
+- 주가지수 선물 및 옵션 (FTSE China A50, Nikkei 225, MSCI 제품군)
+- 외환 선물 (USD/CNH, INR/USD)
+- 철광석 및 상품 파생상품
+- 전 자산군에 걸친 옵션 시장
+
+[Source: SGX Rulebook, "Chapter 5 — Designated Market-Maker"; SGX Rulebook, "6.6 Obligations of a Designated Market-Maker"; The Edge Singapore, "Where's the liquidity?"]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 경매 메커니즘 (Auction Mechanisms)
+
+**개시 단일가매매 (Opening Auction, Pre-Open / Non-Cancel):**
+- 개장 전 단계에서 주문 접수, 수정, 취소 허용
+- 세션 개장 전 마지막 2분간에는 신규 주문만 접수 (수정 또는 취소 불가)
+- 세션 개장 시, 누적된 주문이 SGX의 체결 알고리즘이 산출한 단일 균형가격에서 체결
+- 알고리즘은 균형가격에서의 체결 수량을 극대화
+
+**종가 / 결제:**
+- 일일 결제가격은 정의된 결제 시간대의 매매활동에 기반하여 결정
+- 주가지수 계약의 경우, 최종결제가격은 통상 최종거래일 기초지수의 공식 종가에 기반
+
+### 3.2 접속매매 (Continuous Trading)
+
+- 주요 메커니즘: SGX Titan DT 플랫폼에서의 연속 전자 체결
+- T 및 T+1 세션 중 실시간 주문 체결
+- 완전매매(outright) 및 스프레드 전략 (캘린더 스프레드, 상품간 스프레드) 지원
+- T+1 세션은 연장 시간을 제공하지만, 통상 호가창이 얇다
+
+### 3.3 가격 발견 (Price Discovery)
+
+- 주요 상품에 대한 연장 매매시간 (일 최대 ~22시간)이 아시아, 유럽, 미국 시장 시간대에 걸친 연속적 가격 발견을 제공한다
+- 주요 아시아 지수 (Nikkei 225, FTSE China A50)의 주요 역외 상장 장소로서의 SGX의 위치는 자국 시장 시간 외 핵심 가격 발견 장소로 만든다
+- SGX의 Nikkei 225 선물은 일본 비거래시간 중 종종 가격 발견을 주도한다
+- FTSE China A50 선물은 중국 본토 시장 폐장 시 중국 A주 익스포저에 대한 주요 가격 발견 메커니즘으로 기능한다
+
+### 3.4 주문 우선순위 규칙 / 체결 알고리즘 (Order Priority Rules / Matching Algorithms)
+
+SGX Derivatives의 모든 주문은 기본 알고리즘으로 **가격-시간 우선 (FIFO)**을 사용하여 체결된다:
+
+| 알고리즘 | 설명 | 적용 |
+|-----------|-------------|-------------|
+| **가격-시간 우선 (FIFO)** | 엄격한 가격 우선, 이후 각 가격 수준에서 시간 우선; 최적 가격의 최선접수 주문이 먼저 체결 | 대부분 선물 상품의 기본값 |
+| **Price Point Maker (PPM)** | 대기 중인 수동(passive) 주문에 우선순위를 부여하는 대안 알고리즘 | 일부 상품 [unverified] |
+| **비례배분 (Pro-Rata)** | 각 가격 수준에서 주문 규모에 비례한 배분 | 일부 옵션 시장 [unverified] |
+| **시장조성자 (MM)** | 시장조성자에게 우선 배분 | DMM 프로그램 적용 시 |
+
+**주요 규칙:**
+- 가격 우선은 절대적 — 더 유리한 가격의 주문이 항상 먼저 체결
+- 동일 가격 내에서 시간 우선이 배분을 결정 (FIFO)
+- 개장/마감 시에는 단일 균형가격으로 주문 체결
+- 동일 회사 내 주문의 자기매매 방지를 위한 Self-Trade Prevention (STP) 기능 제공
+
+[Source: SGX Rulebook, "Practice Note 8.2.1 — Application of Market Phases and Algorithm"; SGX Rulebook, "Regulatory Notice 8.2.1 — Trading Hours, Market Phases, Application of Market Phases and Principles and Rules for Trade Matching"; Trading Technologies, "SGX Overview"]
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 표준 주문 유형 (Standard Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| **지정가 (Limit)** | 지정 가격 또는 그보다 유리한 가격에 매수/매도; 미체결 수량은 호가창에 잔존 |
+| **시장가 (Market)** | 최적 가격에 즉시 체결; 미체결 부분은 설정에 따라 취소 또는 잔존 |
+| **Market to Limit** | 최적 가격에 체결; 미체결 수량은 최종 체결가격의 지정가 주문으로 전환 |
+
+### 4.2 고급 주문 유형 (Advanced Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|-------------|
+| **Stop Limit** | 스톱가격 도달 시 발동; 발동 후 지정 한도가격의 지정가 주문이 됨 |
+| **Stop Market** | 스톱가격 도달 시 발동; 발동 후 시장가 주문이 됨 |
+| **Stop Market to Limit** | 스톱가격 도달 시 발동; 발동 후 market-to-limit 주문이 됨 |
+| **스프레드 주문 (Spread Orders)** | 캘린더 스프레드 및 상품간 스프레드 전략 |
+| **일괄 호가 (Mass Quote)** | 시장조성자가 OUCH 프로토콜을 통해 단일 메시지로 다수의 양방향 호가를 제출 가능 |
+
+### 4.3 유효기간 (TIF) 조건 (Time-in-Force Conditions)
+
+| TIF | 설명 |
+|-----|-------------|
+| **Day** | 현재 매매 세션에만 유효; 세션 종료 시 취소 |
+| **Good Till Cancel (GTC)** | 체결 또는 명시적으로 취소될 때까지 유효 |
+| **Good Till Date (GTD)** | 지정 날짜까지 유효 |
+| **Fill and Kill (FAK)** | 가능 수량만큼 즉시 체결; 미체결 부분 취소 |
+| **Fill or Kill (FOK)** | 전량 즉시 체결 또는 전량 취소 |
+
+### 4.4 주문 수정 및 취소 (Order Modification & Cancellation)
+
+- OUCH 프로토콜을 통해 매매 세션 중 언제든지 주문의 수정(가격, 수량) 또는 취소 가능
+- **Replace Order:** 시간 우선순위를 유지 또는 갱신하면서 기존 주문 수정 (가격/수량 변경)
+- **Cancel Order:** 주문 토큰으로 특정 주문 취소
+- **Cancel by Order ID:** 거래소 부여 주문 ID를 사용한 대안적 취소 방법
+- **Self-Trade Prevention (STP):** 2024/2025년에 강화되어 동일 회사 내 자기매매 방지를 설정 가능
+
+[Source: Trading Technologies, "SGX Supported Order Types"; OnixS, "SGX Titan OUCH Trading Handler — EnterOrder"; SGX Titan OUCH Protocol Specifications; Trading Technologies, "SGX Self-Trade Prevention Enhancement"]
+
+---
+
+## 5. 매매시스템 기술 — SGX Titan (Trading System Technology)
+
+### 5.1 시스템 개요 (System Overview)
+
+| 항목 | 세부 내용 |
+|------|---------|
+| 플랫폼명 | SGX Titan DT (파생상품 매매) / SGX Titan DC (파생상품 청산) |
+| 기술 벤더 | Nasdaq (Genium INET version 4) |
+| 최초 발표 | 2014년 12월 |
+| 가동 | 2016–2017년 (레거시 플랫폼으로부터 단계적 전환) |
+| 아키텍처 | 상품 수준 파티셔닝을 갖춘 고성능, 저지연 매매체결엔진 |
+| 주 데이터센터 | 싱가포르 코로케이션 시설 |
+| 주문 입력 프로토콜 | OUCH (비동기 주문 입력을 위한 Nasdaq 네이티브 바이너리 프로토콜) |
+| 시장 데이터 프로토콜 | ITCH (시장 데이터를 위한 Nasdaq 네이티브 바이너리 멀티캐스트 프로토콜) |
+| 복구 프로토콜 | GLIMPSE (ITCH를 위한 호가창 스냅샷 복구) |
+| 평균 지연시간 | 90마이크로초 미만 (벤치마크 평균); 운영 환경에서 왕복 200마이크로초 미만 |
+| 처리량 | 초당 100만+ 메시지 |
+
+### 5.2 아키텍처 (Architecture)
+
+- **매매체결엔진:** 확정적이고 저지연 처리에 최적화된 전용 하드웨어에서 실행되는 상품 파티셔닝된 매매체결엔진
+- **주문 입력 게이트웨이:** 최소 오버헤드로 직접적이고 비동기적인 주문 입력을 제공하는 OUCH 프로토콜 서버
+- **시장 데이터 배포:** 모든 접속 참가자에게 실시간 전체 깊이 호가창 데이터를 제공하는 ITCH 멀티캐스트 피드
+- **청산 엔진 (Titan DC):** 리스크 관리 및 결제를 위해 거의 실시간으로 거래를 처리하는 통합 청산 플랫폼
+- **확정적 처리:** 최소 지터(jitter)로 일관되고 예측 가능한 지연시간을 위해 설계
+
+### 5.3 지연시간 (Latency)
+
+- **벤치마크 지연시간:** 평균 90마이크로초 미만 (gate-to-gate) — 출시 당시 전 세계에서 가장 빠른 파생상품 매매 플랫폼 중 하나
+- **운영 왕복:** 코로케이션 참가자의 경우 200마이크로초 미만
+- **주문 라우팅 지연시간:** OUCH 프로토콜 통해 약 100–150마이크로초
+- **전 플랫폼 대비:** 이전 SGX 파생상품 플랫폼 대비 상당한 개선; Nasdaq 마케팅은 발표 시 Titan을 "세계 최고속 매매 플랫폼"으로 기술
+
+### 5.4 플랫폼 연혁 및 발전 (Platform History & Evolution)
+
+| 연도 | 주요 사항 |
+|------|-----------|
+| 1984 | SIMEX 거래장 개장 — 금융 선물에 대한 호가장내거래 |
+| 1999 | SGX 설립; 호가장내거래와 병행하여 전자매매 도입 |
+| 2003 | SGX 매매시스템을 위한 Nasdaq 기술 파트너십 개시 |
+| 2014 (12월) | SGX가 Nasdaq Genium INET v4를 사용한 차세대 Titan 플랫폼 발표 |
+| 2015 | 개발 및 테스트 단계; 원래 2015년 말 가동 목표 |
+| 2016 | Titan 접속 (OUCH/ITCH) 벤더 인증 2016년 5월 완료; 가동 2016년 말로 연기 |
+| 2017 | Titan DT/DC로의 전체 운영 전환 완료; 레거시 플랫폼 폐기 |
+| 2019 | 증권 매매 엔진을 Nasdaq 다중 매매체결엔진으로 업그레이드 (SGX-ST, 2019년 6월 3일) |
+| 2025 | Titan DT에 Self-Trade Prevention 강화 배치 |
+| 2027 (예정) | 신규 증권 매매 엔진 "Iris-ST" 계획; 파생상품 플랫폼 진화는 미정 |
+
+### 5.5 기술 스택 (Technology Stack)
+
+| 구성요소 | 기술 |
+|-----------|-----------|
+| **주문 입력** | OUCH — 저지연 비동기 주문 제출을 위한 Nasdaq 네이티브 바이너리 프로토콜; Enter Order, Replace Order, Cancel Order, Cancel by Order ID 메시지 지원 |
+| **시장 데이터** | ITCH — Nasdaq 네이티브 바이너리 멀티캐스트 프로토콜; 주문별 전체 깊이 호가창 데이터 제공; 증분 업데이트 및 호가창 재구성 지원 |
+| **호가창 복구** | GLIMPSE — ITCH 데이터를 위한 스냅샷 복구 프로토콜; 접속 단절 후 전체 호가창 상태 재구축 가능 |
+| **ITCH Rewinder** | 손실 패킷 복구를 위한 과거 ITCH 메시지 재생 |
+| **FIX Gateway** | 네이티브 OUCH를 사용하지 않는 참가자를 위한 FIX 프로토콜 접근 [unverified] |
+| **청산 통합** | Titan DC가 실시간 포지션 및 리스크 관리를 통한 통합 청산 제공 |
+
+### 5.6 재해복구 및 업무연속성 (Disaster Recovery & Business Continuity)
+
+- **주 데이터센터:** 싱가포르 코로케이션 시설
+- **DR 사이트:** 싱가포르 내 지리적으로 분리된 백업 사이트 [unverified]
+- **복구 모델:** 주 환경과 백업 환경 간 실시간 데이터 복제
+- **운영 지원:** 연장 매매시간 (일 최대 ~22시간)을 감안하여 SGX는 follow-the-sun 지원 모델 운영
+- **시스템 회복력:** Nasdaq Genium INET 플랫폼은 내장된 이중화 및 장애조치 기능으로 설계
+- **규제 요건:** MAS는 기술 리스크 관리 지침에 따라 거래소를 포함한 모든 인가 거래소 운영자에게 견고한 BCP 및 DR 역량을 유지하도록 요구
+
+[Source: Nasdaq Inc., "NASDAQ OMX to Deliver World's Fastest Trading Platform to Singapore Exchange", December 2014; OnixS, "SGX Titan DT ITCH and OUCH API SDKs"; WatersTechnology, "SGX Plans Titan for Derivatives"; SGX Titan ITCH & GLIMPSE Protocol Specifications, Release 1.4; Markets Media, "Object Trading Conforms to Upgraded SGX Titan Platform"]
+
+---
+
+## 6. 시장 데이터 (Market Data)
+
+### 6.1 시장 데이터 플랫폼 — ITCH (Market Data Platform)
+
+| 특징 | 세부 내용 |
+|---------|---------|
+| 프로토콜 | ITCH (Nasdaq 네이티브 바이너리 프로토콜) |
+| 인코딩 | 초저지연 처리를 위한 고정 길이 바이너리 메시지 |
+| 전송 | UDP 멀티캐스트 (주요 배포) |
+| 복구 | GLIMPSE 프로토콜을 통한 호가창 스냅샷; ITCH Rewinder를 통한 패킷 재생 |
+| 깊이 | 주문별 전체 깊이 (Market by Order) |
+
+### 6.2 피드 유형 / 데이터 수준 (Feed Types / Data Levels)
+
+| 피드 유형 | 설명 | 전송 |
+|-----------|-------------|-----------|
+| **ITCH 실시간** | 모든 주문 추가, 수정, 체결, 취소를 포함하는 전체 깊이 주문별 시장 데이터 | UDP 멀티캐스트 |
+| **GLIMPSE** | 전체 호가창의 특정 시점 스냅샷; 복구 및 초기화에 사용 | TCP (요청/응답) |
+| **ITCH Rewinder** | 지정 시퀀스 번호부터 과거 ITCH 메시지 재생; 갭 복구에 사용 | TCP |
+| **장 마감 파일** | 결제가격, 거래량, 미결제약정 일일 공시 | 파일 기반 다운로드 |
+
+### 6.3 데이터 배포 (Data Distribution)
+
+- **직접 접속:** 코로케이션 참가자는 SGX 데이터센터 내에서 최저 지연시간으로 ITCH 멀티캐스트 데이터 수신
+- **관리 네트워크:** 비코로케이션 참가자는 SGX 인가 네트워크 서비스 제공자 또는 관리 네트워크 서비스를 통해 접근 가능
+- **재배포사:** 주요 데이터 벤더 (Bloomberg, Refinitiv, ICE Data Services 등)가 라이선스 하에 SGX 시장 데이터 재배포
+- **SGX Data Services:** SGX는 데이터 상품 부문을 통해 과거 데이터, 분석, 지수 데이터 제공
+- **지연 데이터:** 다양한 금융 포털 및 SGX 자체 웹사이트를 통해 이용 가능
+
+### 6.4 시장 데이터 라이선스 (Market Data Licensing)
+
+- SGX는 실시간 시장 데이터, 지연 데이터 재배포, 과거 데이터에 대해 별도 수수료 부과
+- 전문가 및 비전문가 수수료 등급 적용
+- 구체적 수수료 체계는 SGX에 요청하거나 SGX 웹사이트를 통해 확인 가능
+
+[Source: SGX Titan ITCH & GLIMPSE Protocol Specifications, Release 1.4; OnixS, "SGX Titan DT ITCH and OUCH API SDKs"; SGX website, "Data & Connectivity"]
+
+---
+
+## 7. 접속 및 접근 (Connectivity & Access)
+
+### 7.1 회원 / 접근 유형 (Membership / Access Types)
+
+| 회원 유형 | 설명 | 주요 요건 |
+|----------------|-------------|-----------------|
+| **파생상품 매매회원** | SGX-DT에서 파생상품 거래를 위한 직접 전자 접근 | MAS Capital Markets Services (CMS) 인가; SGX 적격성 기준 충족; 최소 재무 요건 |
+| **파생상품 청산회원 — 일반** | 자기 거래 및 제3자 (비청산회원 및 고객) 거래 청산 가능 | 높은 자본 요건; SGX-DC 청산기금 참여; MAS 승인 |
+| **파생상품 청산회원 — 은행** | 은행 전용 청산 회원; 자기 및 제3자 거래 청산 가능; 상호상쇄시스템 접근 | 인가 은행이어야 함; 추가 재무 요건 |
+| **비청산회원** | 일반 청산회원 또는 은행 청산회원을 통해 거래 | 청산회원과의 청산 약정 체결 필요 |
+
+**회원 통계:**
+- SGX 파생상품 청산은 주요 글로벌 은행 및 브로커에 의해 지원
+- 2025년 11월 Bitcoin/Ethereum 무기한 선물 출시를 8개 주요 청산회원이 지원
+
+[Source: SGX website, "Memberships"; SGX Rulebook, "SGX-DC Clearing Rules"; SGX RegCo, "Memberships"]
+
+### 7.2 접속 방법 (Connection Methods)
+
+| 접속 유형 | 설명 |
+|----------------|-------------|
+| **코로케이션** | SGX 데이터센터 내 SGX Titan 매매체결엔진에 직접 물리적 근접; 최저 지연시간 옵션 |
+| **관리 네트워크 서비스** | SGX 인가 네트워크 서비스 제공자를 통한 접속 |
+| **해외 허브** | 국제 참가자를 위한 주요 금융 중심지 (런던, 시카고, 도쿄) 접근점 [unverified] |
+| **인가 네트워크 서비스 제공자** | SGX가 파생상품 시장 접근을 위해 인증한 제3자 네트워크 제공자 |
+
+**참고:** SGX 파생상품 접속은 최저 지연시간을 요구하는 참가자의 경우 사실상 **코로케이션 전용**이다. 모든 시장 접근 경로는 궁극적으로 SGX 데이터센터 내 Titan DT 플랫폼에 연결된다.
+
+### 7.3 코로케이션 서비스 (Co-Location Services)
+
+- **위치:** 싱가포르 SGX 데이터센터
+- **시설:** Titan DT 매매체결엔진에 근접하도록 목적 설계된 코로케이션 환경
+- **이점:** DMA를 위한 비교할 수 없는 속도 및 효율성; 최소화된 네트워크 지연시간
+- **캐비닛 옵션:** 전력 및 냉각이 포함된 표준 랙 공간; 요청에 따른 특정 구성 가능
+- **크로스커넥트:** 시설 내 SGX 인프라로의 직접 광섬유 연결
+
+### 7.4 API 프로토콜 (API Protocols)
+
+| API / 프로토콜 | 목적 | 방향 |
+|---------------|---------|-----------|
+| **Titan OUCH** | 주문 입력, 수정, 취소, 체결 보고 | 인바운드 (클라이언트→거래소) 및 아웃바운드 (거래소→클라이언트) |
+| **Titan ITCH** | 실시간 시장 데이터 배포 | 아웃바운드 (거래소→클라이언트) — UDP 멀티캐스트 |
+| **GLIMPSE** | 호가창 스냅샷 복구 | 요청/응답 — TCP |
+| **FIX** | 네이티브 OUCH를 사용하지 않는 참가자를 위한 대안적 주문 입력 [unverified] | 양방향 — TCP |
+
+### 7.5 인증 (적합성 테스트) (Certification, Conformance Testing)
+
+- **의무사항:** Titan OUCH 및 ITCH를 통해 접속하는 모든 클라이언트 시스템은 운영 접근 전 SGX 적합성 테스트를 완료해야 한다
+- **테스트 범위:** OUCH 주문 입력 (enter, replace, cancel, cancel by order ID), ITCH 시장 데이터 처리, GLIMPSE 복구를 포함
+- **환경:** SGX가 전용 적합성 테스트 환경 제공
+- **재인증:** 중대한 시스템 변경 또는 프로토콜 버전 업그레이드 시 필요
+- **ISV 지원:** 다수의 독립 소프트웨어 벤더 (OnixS, Trading Technologies, Object Trading 등)가 SGX Titan용 사전 인증 SDK 및 매매 핸들러 제공
+
+[Source: SGX website, "Market Access"; SGX website, "Co-Location"; SGX Titan ITCH and OUCH Conformance Test Scope, Version 1.0; OnixS, "SGX Titan DT ITCH and OUCH API SDKs"]
+
+---
+
+## 8. 리스크 관리 및 서킷브레이커 (Risk Controls & Circuit Breakers)
+
+### 8.1 서킷브레이커 메커니즘 (Circuit Breaker Mechanism)
+
+SGX의 파생상품 서킷브레이커 (매매거래중단)는 동적 가격밴드로 운영된다:
+
+- **가격밴드 기준:** 기준가격에서 규정 비율로 설정된 상한 및 하한
+- **발동:** 유입 주문이 기준 외 가격의 대기 주문과 체결하려 할 때, **냉각기간**이 활성화되고 유입 주문은 거부
+- **냉각기간:** 시장이 재개 전 상황을 분석할 수 있도록 하는 짧은 일시중지 (통상 5분); 가격 발견을 완전히 중단하지 않고 대규모 가격 변동의 속도를 완화하도록 설계
+- **기준가격 산출:**
+  - 각 매매 단계 시작 시: 전 세션의 결제가 또는 최종 체결가에서 도출
+  - 최초 5분 후: 잠재적 거래 시점으로부터 5분 전의 최종 체결가에 기반한 롤링 기준가격
+  - 직전 5분간 거래가 없으면 매매 단계 시작 시의 기준가격 적용
+
+**목적:** 서킷브레이커는 급격한 무통제 시장 변동으로 인한 무질서한 상황을 방지한다. 가격 변동을 중단시키기 위한 것이 아니라 시장 참가자와 규제기관이 상황을 평가할 수 있는 일시중지를 제공한다. 또한 다른 시장으로의 전염 위험을 방지하는 데 도움이 된다.
+
+### 8.2 가격제한 (일부 상품) (Price Limits, Selected Products)
+
+구체적인 가격제한 기준은 상품별로 상이하며 SGX가 규제 통지를 통해 공시한다. 대표적 기준:
+
+| 상품 범주 | 일반적 가격제한 | 비고 |
+|-----------------|---------------------|-------|
+| 주가지수 선물 | 기준가격 대비 +/- 10%~15% | 구체적 계약에 따라 상이 [unverified] |
+| 상품 선물 | 기준가격 대비 +/- 15%~20% | 철광석, 고무 등 [unverified] |
+| 외환 선물 | 상품별 밴드 | 변동성 높은 EM 통화는 더 넓은 밴드 [unverified] |
+
+### 8.3 사전 매매 리스크 관리 (Pre-Trade Risk Controls)
+
+| 관리 항목 | 설명 |
+|---------|-------------|
+| **가격밴딩** | 현재 시장가격 주변의 수용 가능한 동적 가격 범위 밖의 주문 거부 |
+| **최대 주문 규모** | 주문당 최대 수량 제한, 청산회원이 설정 가능 |
+| **신용 관리** | 청산회원에 의한 각 매매 참가자에 대한 실시간 신용한도 모니터링 |
+| **Self-Trade Prevention (STP)** | 동일 회사 내 주문의 자기매매 방지를 위한 설정 가능 기능; 2024/2025년 강화 |
+| **접속 단절 시 취소 (Cancel on Disconnect)** | 접속 단절 시 모든 미체결 주문을 취소하는 선택적 기능 |
+
+### 8.4 SGX-DC 청산 재무 안전장치 (채무불이행 워터폴) (Default Waterfall)
+
+| 계층 | 설명 |
+|-------|-------------|
+| 1. 채무불이행 회원의 재원 | 채무불이행 회원의 증거금/담보 + 청산기금 분담금 |
+| 2. SGX-DC의 자기기여금 ("Skin in the Game") | SGD 2억 (SGD 1.5억에서 증가; 청산기금의 ~25% — 모든 미국 및 유럽 CCP보다 높은 수준) |
+| 3. 청산기금 (비채무불이행 회원) | 스트레스 테스트에 기반하여 규모가 결정된 모든 비채무불이행 청산회원의 상호기금 분담금 |
+| 4. 추가 분담금 | 청산회원의 상한 있는 추가 재무 분담금 |
+
+**주요 리스크 관리 특징:**
+- 인가 결제은행을 통한 일일 시가평가 결제
+- 증거금 요건 부족분 및 잠재적 시가평가 손실을 커버하기 위한 일중 증거금 추가 납부 요구
+- 청산회원은 일중 주기에 따라 결제은행을 통해 증거금 추가 납부를 이행해야 한다
+- 청산기금 분담금은 지정 기간에 걸친 스트레스 손실에 기반하여 각 회원이 가져오는 리스크에 비례하여 조정
+- SGX-DC는 미국 CFTC에 Derivatives Clearing Organization (DCO)으로 등록되어 있어 미국 시장 참가자의 접근이 가능
+
+[Source: SGX Rulebook, "Practice Note 8.10A — Circuit Breaker"; SGX Rulebook, "Regulatory Notice 8.14.1 — Circuit Breaker"; WFE, "SGX Takes a Deep Look at Circuit Breakers"; SGX website, "Risk Management"; Hong Kong Lawyer, "Singapore Exchange Eyes Increase in Skin in the Game for OTC Derivatives Clearing"; CFTC, "SGX-DC Regulatory Compliance Chart"]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 주요 규제기관 (Primary Regulator)
+
+- **싱가포르 통화관리국 (Monetary Authority of Singapore, MAS):** 중앙은행 겸 통합 금융규제기관; 증권선물법 2001(Securities and Futures Act 2001)에 따라 SGX를 인가 거래소(AE)로, SGX-DC를 인가 청산기관(ACH)으로 감독
+- **SGX RegCo:** 2016년 SGX Group의 독립 규제 자회사로 설립; 시장 감시, 회원 규제, 상장 규제, 집행 등 일선 규제 기능 수행
+
+### 9.2 주요 법률 및 규정 (Key Legislation and Regulations)
+
+| 규정 | 설명 |
+|-----------|-------------|
+| **증권선물법 2001 (Securities and Futures Act 2001, SFA)** | 싱가포르 증권 및 파생상품 시장을 규율하는 기본법; 인허가, 매매, 청산, 시장 행위, 시장 남용을 포괄 |
+| **증권선물(파생상품 거래) 규정 2019** | 특정 파생상품 계약에 대한 의무적 플랫폼 매매 요건 |
+| **증권선물(파생상품 보고) 규정 2013** | 인가 거래정보저장소에 대한 장외 파생상품 보고 요건 |
+| **MAS 기술 리스크 관리 지침** | 거래소를 포함한 금융기관의 기술 거버넌스, IT 보안, 가용성, 재해복구 요건 |
+| **SGX-DT 선물거래규칙** | 매매 행위, 주문 유형, 시장 단계, 회원 의무를 규율하는 거래소별 규칙 |
+| **SGX-DC 청산규칙** | 청산 회원, 증거금, 결제, 채무불이행 관리, 청산기금을 규율하는 규칙 |
+
+### 9.3 시장 감시 (Market Surveillance)
+
+- **SGX RegCo**는 조작, 스푸핑, 가장매매, 내부자거래 및 기타 시장 남용에 대한 실시간 시장 감시를 수행한다
+- 감시 시스템은 증권 및 파생상품 시장 전반의 매매 패턴을 모니터링한다
+- SGX RegCo는 회원 및 상장회사에 대한 조사, 징계, 제재 권한을 보유한다
+- 주식, 파생상품, 장외 시장에 걸친 교차시장 감시 역량
+
+### 9.4 보고 요건 (Reporting Requirements)
+
+- **대량포지션 보고:** 회원은 회사 수준에서 포지션을 모니터링하는 자동화된 절차를 갖추어야 하며, 단일 고객 및 단일 계약에 대한 건전성 한도를 위반할 위험이 있는 경우 보고해야 한다
+- **장외 파생상품 보고:** 2013년 규정에 따라 거래상대방은 장외 파생상품 계약을 인가 거래정보저장소에 보고해야 한다 (거래소 거래 파생상품은 별도 처리)
+- **청산회원 보고:** SGX-DC에 대한 증거금, 담보, 재무상태의 일일 보고
+- **거래 보고:** 요구에 따라 MAS에 거래 세부사항 보고
+
+### 9.5 국경간 인정 (Cross-Border Recognition)
+
+- **미국 CFTC:** SGX-DC는 Derivatives Clearing Organization (DCO)으로 등록되어 있어 미국 FCM 및 고객이 SGX-DC에서 청산 가능; SGX-DT는 특정 미국인의 직접 접근을 위한 "no-action" 구제를 받음
+- **EU/EMIR:** SGX-DC는 EMIR에 따라 EU 청산회원 접근을 위한 제3국 CCP로 인정
+- **GIFT Connect (인도):** NSE IX-SGX GIFT Connect를 위한 MAS와 SEBI/IFSCA 간 규제 체계 수립
+- **상호상쇄시스템 (Mutual Offset System, MOS):** 역사적으로 CME Group과 Nikkei 225 및 유로달러 선물에 대해 유지 — 한 거래소에서 개시된 포지션을 다른 거래소로 이전하여 청산 가능
+- **CPMI-IOSCO:** SGX-DC는 금융시장인프라 원칙(PFMI)에 따른 공시 문서를 발간한다
+- 일본(JFSA), 홍콩(SFC), 호주(ASIC) 등의 규제기관과의 **다수의 양자 MOU**
+
+[Source: MAS website, "Securities and Futures Act 2001"; SGX Rulebook, "Futures Trading Rules"; SGX Rulebook, "SGX-DC Clearing Rules"; CFTC, "Industry Filings: Derivatives Clearing Organizations"; SGX website, "Memberships"]
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 매매 및 청산 수수료 (Trading & Clearing Fees)
+
+SGX는 계약당 기준으로 매매 수수료(SGX-DT에) 및 청산 수수료(SGX-DC에)를 부과한다. 수수료는 상품, 회원 유형, 거래량 등급에 따라 상이하다. 대표적 요율:
+
+| 상품 범주 | 대략적 계약당 수수료 (편도) | 비고 |
+|-----------------|----------------------------------------|-------|
+| 주가지수 선물 (예: FTSE China A50) | USD 0.50 – 1.50 | 회원 요율 상당히 낮음; 거래량 할인 적용 |
+| Nikkei 225 선물 | JPY 40 – 100 | JPY 대 USD 표시에 따라 상이 |
+| 외환 선물 | USD 0.30 – 1.00 | 대량 거래 시 실효 요율 인하 |
+| 철광석 선물 | USD 0.50 – 1.50 | 거래량 인센티브 프로그램 이용 가능 |
+| 선물옵션 | USD 0.50 – 2.00 | 프리미엄 기반 청산 수수료도 적용 가능 (프리미엄의 0.05%, 최대 $200) |
+| NLT (블록) 거래 | 별도 수수료 체계 | 일반적으로 전자 거래소 수수료보다 높음 |
+
+*참고: 정확한 수수료는 변경 대상이다. SGX는 웹사이트 및 청산회원 통신을 통해 상세 수수료 체계를 공시한다. 위 수수료는 브로커로부터 공개된 정보에 기반한 대략적 범위이다.* [unverified — 구체적 요율은 공식 SGX 수수료 체계에서 미확인]
+
+**수수료 등급:**
+- **회원 요율:** 비회원 요율 대비 상당히 인하
+- **거래량 인센티브 프로그램:** 대량 참가자에 대한 단계별 할인
+- **시장조성자 할인:** 호가 의무를 충족하는 지정 시장조성자에 대한 수수료 감면
+- **청산 수수료:** 매매 수수료와 별도 부과; SGX-DC에 납부
+
+### 10.2 시장 데이터 수수료 (Market Data Fees)
+
+- 실시간 ITCH 시장 데이터에 대한 전문가 및 비전문가 수수료 등급
+- SGX Data Services를 통한 과거 데이터 이용 가능
+- 데이터 벤더를 위한 재배포 라이선스
+- 지수 라이선스 수수료 (FTSE, MSCI, Nikkei)가 상품 경제에 포함
+
+### 10.3 접속 및 코로케이션 수수료 (Connectivity & Co-Location Fees)
+
+- 코로케이션 랙 공간 및 전력 비용
+- SGX 데이터센터 내 크로스커넥트 수수료
+- 관리 네트워크 서비스 접근을 위한 네트워크 접속 수수료
+- 구체적 수수료 체계는 SGX에 요청 시 이용 가능
+
+### 10.4 수익 구조 (FY2025) (Revenue Breakdown)
+
+SGX Group의 역대 최고 순수익 SGD 13억은 파생상품 관련 부문별로 다음과 같이 구성된다:
+
+| 부문 | 매출 (SGD) | 전년 대비 성장 | 전체 비중 |
+|---------|--------------|------------|------------|
+| 주식 — 파생상품 | 3억 4,590만 | +13.8% | 26.6% |
+| 통화 & 상품 | 3억 1,250만 | +8.6% | 24.0% |
+| 플랫폼 & 기타 | 2억 3,800만 | +3.0% | 18.3% |
+| 주식 — 현물 | ~4억+ | +27.5% (SDAV) | ~31% |
+
+파생상품 관련 매출 (주식 파생상품 + 통화 & 상품)은 약 SGD 6억 5,800만으로, SGX Group 총 순수익의 약 50.6%를 차지한다 — 이는 SGX의 파생상품 주도 거래소 그룹으로서의 정체성을 보여준다.
+
+**장외 외환 ADV:** 역대 최고 USD 1,430억 (FY2025 전년 대비 +28%)
+
+[Source: SGX FY2025 Annual Report; SGX FY2025 Results Presentation; Yahoo Finance, "SGX posts record revenue, net profit in FY2025"; Interactive Brokers, "SGX Exchange and Regulatory Fees"]
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 11.1 시스템 업그레이드 및 기술 (System Upgrades & Technology)
+
+- **Titan DT 개선:** Titan DT에 Self-Trade Prevention (STP) 강화 배치 (2024/2025년) — 자기매매 방지의 보다 세분화된 설정 가능
+- **Iris-ST (2027년 예정):** 2027년 하반기 신규 증권 매매 엔진 계획; 파생상품 플랫폼 진화는 후속 예정
+- **SGX-Nasdaq 글로벌 리스팅 보드:** 시가총액 SGD 20억 이상 기업을 위한 공동 이니셔티브 2025년 발표; SGX와 Nasdaq 간 이중상장 브릿지
+
+### 11.2 신규 상품 및 시장 발전 (New Products & Market Developments)
+
+- **암호화폐 무기한 선물 (2025년 11월):** Bitcoin 및 Ethereum 무기한 선물 출시 — 만기 없는 연속 구조로 기관 등급 청산 및 증거금; 8개 청산회원 지원; 첫날 ~2,000 lot (~USD 3,500만 명목) 거래; iEdge-CoinDesk Cryptocurrency Indices에 연동
+- **아시아태평양 국채 선물 (2026년 4월):** 인도, 인도네시아, 말레이시아, 태국, 필리핀을 커버하는 최초의 거래소 상장 지역 국채 선물; 달러표시; 국가 금리 리스크 헤지를 위해 설계; 2026년 4월 20일 거래 개시
+- **역대 최고 파생상품 거래량 (2025년):** 주식, 외환, 상품 전 분야에 걸쳐 3억 2,900만 계약 — 역대 최고
+  - FTSE China A50 선물: 9개월 기준 ~8,400만 lot (+20%)
+  - 외환 선물: 7,360만 계약 (전년 대비 +49.7%); 2025년 2월에만 610만 계약 — 역대 월간 최고
+  - 상품 파생상품: 6,530만 계약 (+6.2%)
+  - 철광석 선물: 4,360만 계약 (+15%) — 글로벌 거래량 최고
+  - MSCI Singapore OI: 역대 최고 명목 USD 61억 (전년 대비 +80%)
+  - FTSE China A50 OI: USD 138억 (2025년 2월 기준 전년 대비 +24%)
+- **GIFT Connect 성장:** GIFT Nifty 월간 거래대금이 2025년 5월 기준 USD 1,020억을 초과, 해당 월 200만 계약 이상 거래
+
+### 11.3 규제 변경 (Regulatory Changes)
+
+- **MAS 입법 제안 (2026년):** MAS가 SGX-Nasdaq 글로벌 리스팅 보드에서의 이중상장을 촉진하기 위한 입법 변경 제안
+- **SGX RegCo ETF 시장조성자 간소화 (2025년):** ETF 지정 시장조성자 요건 간소화
+- **채무불이행 관리 강화:** SGX가 국제 모범사례와 일치하는 채무불이행 관리 역량 강화를 위한 SGX-DC 청산규칙 변경 제안
+
+### 11.4 전략적 이니셔티브 (Strategic Initiatives)
+
+- **범아시아 관문 전략:** SGX는 주가지수 파생상품 제품군을 통해 아시아 경제의 80% 이상을 커버하며, 아시아 파생상품 익스포저의 주요 국제 관문으로 계속 포지셔닝
+- **철광석 글로벌 벤치마크:** SGX는 현재 전 세계 해상 철광석 파생상품의 90% 이상을 청산하며, SGX TSI Iron Ore 62% 계약을 글로벌 벤치마크로 확고히 자리매김
+- **다자산 확장:** 주식, 외환, 상품, 금리, 디지털 자산 전 자산군에 걸친 전략적 확장으로 종합 다자산 플랫폼 구축
+- **GIFT Connect 심화:** NSE IX-SGX GIFT Connect의 지속적 성장, 확대되는 상품 진열대 (Nifty 50, Nifty Bank, Nifty Financial Services, Nifty IT) 및 증가하는 거래량
+- **금리 상품 확대:** 기존 JGB 선물 프랜차이즈와 신규 APAC 국채 선물을 활용하여 다자산 플랫폼을 보완하는 금리 프랜차이즈 구축
+
+[Source: PR Newswire, "SGX Derivatives breaks new ground with institutional-grade crypto perpetual futures", November 2025; Markets Media, "SGX Derivatives to Launch Asia Pacific Government Bond Futures", March 2026; TipRanks, "SGX Ends 2025 With Record Derivatives Volumes", January 2026; FIA, "SGX iron ore futures set volume record"; SGX FY2025 Annual Report; FOW, "SGX weighs opportunities, in rates and new products"]
+
+---
+
+## 파생상품 전용 섹션 (Derivatives-Specific Sections)
+
+---
+
+## D1. 상품 목록 (Product Catalog)
+
+### 자산군별 (By Asset Class)
+
+#### 주가지수 파생상품 (Equity Index Derivatives)
+
+| 상품 | 종목코드 | 계약 단위 | 결제 | 거래소/장소 |
+|---------|--------|---------------|------------|---------------|
+| FTSE China A50 Index 선물 | CN | USD 1 x 지수 | 현금 결제 | SGX-DT |
+| FTSE China A50 Index 옵션 | — | USD 1 x 지수 | 현금 결제 | SGX-DT |
+| Nikkei 225 Index 선물 (JPY) | NK | JPY 500 x 지수 | 현금 결제 | SGX-DT |
+| Nikkei 225 Index 선물 (USD) | NU | USD 5 x 지수 | 현금 결제 | SGX-DT |
+| Nikkei 225 Mini 선물 | NM | JPY 100 x 지수 | 현금 결제 | SGX-DT |
+| Nikkei 225 Index 옵션 | — | JPY 500 x 지수 | 현금 결제 | SGX-DT |
+| Nikkei 225 Total Return 선물 | NR | JPY 10,000 x 지수 | 현금 결제 | SGX-DT |
+| MSCI Singapore Index 선물 | SGP | SGD 200 x 지수 | 현금 결제 | SGX-DT |
+| MSCI Singapore Index 옵션 | — | SGD 200 x 지수 | 현금 결제 | SGX-DT |
+| MSCI Taiwan Index 선물 | TW | USD 100 x 지수 | 현금 결제 | SGX-DT |
+| MSCI Indonesia Index 선물 | ID | USD 100 x 지수 | 현금 결제 | SGX-DT |
+| MSCI India Index 선물 | — | USD 5 x 지수 | 현금 결제 | SGX-DT [unverified] |
+| MSCI Thailand Index 선물 | — | USD 100 x 지수 | 현금 결제 | SGX-DT [unverified] |
+| MSCI Philippines Index 선물 | — | USD 100 x 지수 | 현금 결제 | SGX-DT [unverified] |
+| Hang Seng Index 선물 | — | HKD 50 x 지수 | 현금 결제 | SGX-DT [unverified] |
+| FTSE China H50 Index 선물 | — | HKD 50 x 지수 | 현금 결제 | SGX-DT [unverified] |
+| S&P/ASX 200 선물 | — | AUD 25 x 지수 | 현금 결제 | SGX-DT [unverified] |
+| GIFT Nifty 50 선물 | IN | USD 2 x 지수 | 현금 결제 | NSE IX (GIFT Connect 경유) |
+| GIFT Nifty Bank 선물 | — | USD 2 x 지수 | 현금 결제 | NSE IX (GIFT Connect 경유) |
+
+#### 외환 파생상품 (FX Derivatives)
+
+| 상품 | 종목코드 | 계약 단위 | 결제 |
+|---------|--------|---------------|------------|
+| USD/CNH 선물 | UC | USD 100,000 | 현금 결제 |
+| INR/USD 선물 | IU | INR 2,000,000 | 현금 결제 |
+| KRW/USD 선물 | KU | KRW 125,000,000 | 현금 결제 [unverified] |
+| AUD/USD 선물 | AU | AUD 100,000 | 현금 결제 [unverified] |
+| AUD/JPY 선물 | — | AUD 100,000 | 현금 결제 [unverified] |
+| USD/SGD 선물 | — | USD 100,000 | 현금 결제 [unverified] |
+| 외환 옵션 | — | 다양 | 현금 결제 |
+
+#### 상품 파생상품 (Commodity Derivatives)
+
+| 상품 | 종목코드 | 계약 단위 | 결제 |
+|---------|--------|---------------|------------|
+| TSI Iron Ore CFR China 62% Fe 선물 | FEF | 100 미터톤 | 현금 결제 (TSI 지수 대비) |
+| MB Iron Ore CFR China 65% Fe 선물 | — | 100 미터톤 | 현금 결제 (Fastmarkets 지수 대비) |
+| Iron Ore 62% 옵션 | — | 100 미터톤 | 현금 결제 |
+| TSI Coking Coal 선물 | — | 100 미터톤 | 현금 결제 |
+| Steel Rebar 선물 | — | 10 미터톤 | 현금 결제 [unverified] |
+| TSR20 Rubber 선물 | — | 5 미터톤 | 실물 인도 |
+| RSS3 Rubber 선물 | — | 5 미터톤 | 실물 인도 [unverified] |
+| Freight 선물 (FFA) | — | 다양 | 현금 결제 |
+| Fuel Oil 선물 | — | 다양 | 현금 결제 [unverified] |
+| Naphtha 선물 | — | 다양 | 현금 결제 [unverified] |
+
+#### 금리 파생상품 (Interest Rate Derivatives)
+
+| 상품 | 종목코드 | 계약 단위 | 결제 |
+|---------|--------|---------------|------------|
+| Japanese Government Bond (JGB) 선물 | JB | JPY 100,000,000 액면가 | 현금 결제 [unverified] |
+| APAC 국채 선물 — 인도 | — | 달러표시 | 현금 결제 (2026년 4월 출시) |
+| APAC 국채 선물 — 인도네시아 | — | 달러표시 | 현금 결제 (2026년 4월 출시) |
+| APAC 국채 선물 — 말레이시아 | — | 달러표시 | 현금 결제 (2026년 4월 출시) |
+| APAC 국채 선물 — 태국 | — | 달러표시 | 현금 결제 (2026년 4월 출시) |
+| APAC 국채 선물 — 필리핀 | — | 달러표시 | 현금 결제 (2026년 4월 출시) |
+
+#### 디지털 자산 파생상품 (Digital Asset Derivatives)
+
+| 상품 | 종목코드 | 계약 단위 | 결제 |
+|---------|--------|---------------|------------|
+| Bitcoin 무기한 선물 | — | 0.1 BTC [unverified] | 현금 결제 (USD) |
+| Ethereum 무기한 선물 | — | 1.0 ETH [unverified] | 현금 결제 (USD) |
+
+[Source: SGX website, "Derivatives Products"; Barchart.com, "SGX Contract Specifications"; Capital Futures Corp., "SGX Contract Specifications"; SGX press releases 2025–2026]
+
+---
+
+## D2. 주요 계약 명세 (거래량 상위 5개 상품) (Key Contract Specifications, Top 5 Products by Volume)
+
+### 1. FTSE China A50 Index 선물 (CN)
+
+| 항목 | 명세 |
+|------|---------------|
+| 기초자산 | FTSE China A50 Index (시가총액 기준 A주 상위 50개 기업) |
+| 계약 단위 | USD 1 x FTSE China A50 Index |
+| 호가단위 (최소가격변동폭) | 5 지수포인트 |
+| 호가단위 가치 | USD 5.00 |
+| 계약 월물 | 최근 2개 연속월 + 4개 분기월 (3월, 6월, 9월, 12월 주기) |
+| 매매시간 (T 세션) | 09:00 – 16:30 SGT |
+| 매매시간 (T+1 세션) | 17:00 – 05:15 +1 SGT |
+| 최종거래일 | 계약월의 끝에서 두 번째 영업일 |
+| 최종 결제 | 현금 결제; 최종거래일 FTSE China A50 Index 공식 종가 기반 |
+| 결제 통화 | USD |
+| 포지션 | 실물 인도 없음 |
+| 2025년 거래량 | ~8,400만 lot (9개월 기준); 2025년 2월에만: 940만 계약 (전년 대비 +18%) |
+| 미결제약정 (2025년 2월) | 명목 USD 138억 (전년 대비 +24%) |
+
+### 2. TSI Iron Ore CFR China 62% Fe 선물 (FEF)
+
+| 항목 | 명세 |
+|------|---------------|
+| 기초자산 | Platts TSI Iron Ore CFR China 62% Fe Fines Index |
+| 계약 단위 | 100 미터톤 |
+| 호가단위 (최소가격변동폭) | 미터톤당 USD 0.01 |
+| 호가단위 가치 | USD 1.00 |
+| 계약 월물 | 최대 72개 연속 월물 |
+| 매매시간 (T 세션) | 07:25 – 19:55 SGT |
+| 매매시간 (T+1 세션) | 20:15 – 04:45 +1 SGT |
+| 최종거래일 | 계약월 내 TSI 철광석 기준가격의 마지막 발행일 |
+| 최종 결제 | 현금 결제; 계약월 중 TSI Iron Ore CFR China 62% Fe Fines 평가의 산술평균 기반 |
+| 결제 통화 | USD |
+| 2025년 거래량 | 4,360만 계약 (전년 대비 +15%) — 글로벌 거래량 최고 |
+| 시장 점유율 | SGX가 전 세계 해상 철광석 파생상품의 90% 이상 청산 |
+
+### 3. Nikkei 225 Index 선물 — JPY (NK)
+
+| 항목 | 명세 |
+|------|---------------|
+| 기초자산 | Nikkei 225 Stock Average |
+| 계약 단위 | JPY 500 x Nikkei 225 Index |
+| 호가단위 (최소가격변동폭) | 5 지수포인트 |
+| 호가단위 가치 | JPY 2,500 |
+| 계약 월물 | 5개 분기월 (3월 주기) + 최근 3개 연속월 |
+| 매매시간 (T 세션) | 07:30 – 14:55 SGT |
+| 매매시간 (T+1 세션) | 15:10 – 05:15 +1 SGT |
+| 최종거래일 | 계약월 둘째 금요일 전 영업일 |
+| 최종 결제 | 현금 결제; Nikkei 225 Index의 Special Quotation (SQ) 기반 |
+| 결제 통화 | JPY |
+| MOS | CME Group과의 상호상쇄시스템 적격 |
+| 역사적 의의 | 1986년 출시 — 최초의 역외 Nikkei 225 상장; SGX의 선구적 상품 |
+
+### 4. USD/CNH 선물 (UC)
+
+| 항목 | 명세 |
+|------|---------------|
+| 기초자산 | USD/CNH (역외 위안화) 환율 |
+| 계약 단위 | USD 100,000 |
+| 호가단위 (최소가격변동폭) | USD당 0.0001 CNH [unverified] |
+| 계약 월물 | 13개 연속 월물 |
+| 매매시간 (T 세션) | 07:25 – 19:55 SGT |
+| 매매시간 (T+1 세션) | 20:15 – 05:15 +1 SGT |
+| 최종거래일 | 결제일 2 홍콩 영업일 전 |
+| 최종 결제 | 현금 결제; TMA가 발행하는 USD/CNH(HK) 고시환율 기반 |
+| 결제 통화 | USD |
+| 2025년 거래량 | 역대 최고 7,360만 외환 선물 계약의 일부 (전년 대비 +49.7%) |
+
+### 5. INR/USD 선물 (IU)
+
+| 항목 | 명세 |
+|------|---------------|
+| 기초자산 | INR/USD 환율 |
+| 계약 단위 | INR 2,000,000 |
+| 호가단위 (최소가격변동폭) | 100 인도루피당 0.01 US 센트 |
+| 호가단위 가치 | USD 2.00 |
+| 계약 월물 | 최대 13개 연속 월물 |
+| 매매시간 (T 세션) | 07:25 – 19:30 SGT [unverified] |
+| 매매시간 (T+1 세션) | 20:15 – 05:15 +1 SGT [unverified] |
+| 최종거래일 | 결제일 2 뭄바이 영업일 전 |
+| 최종 결제 | 현금 결제; RBI Reference Rate 기반 |
+| 결제 통화 | USD |
+| 포인트 가치 | USD 200 |
+
+[Source: SGX website, "FTSE China A50 Index Futures"; SGX website, "Iron Ore"; SGX website, "Nikkei 225 Index Futures and Options"; Barchart.com, "SGX Contract Specifications"; FIA, "SGX iron ore futures set volume record"; SGX market statistics, February 2025]
+
+---
+
+## D3. 증거금 체계 (Margin Framework)
+
+### 방법론: SPAN (Standard Portfolio Analysis of Risk)
+
+SGX-DC는 주요 증거금 시스템으로 SPAN을 사용한다 — 증거금 요건을 산출하기 위한 리스크 기반 포트폴리오 접근법이다.
+
+**주요 특징:**
+
+| 특징 | 설명 |
+|---------|-------------|
+| 모델 | SPAN (Standard Portfolio Analysis of Risk), CME Group이 원래 개발 |
+| 접근법 | 다수의 시장 시나리오 하에서 지정 시간 범위 (통상 선물 1일, 옵션 1-2일)에 걸친 최악의 포트폴리오 손실을 평가 |
+| 리스크 시나리오 | 가격 변동과 변동성 변화를 결합한 16개 표준 시나리오 |
+| 가격 스캔 범위 | 변동성 스케일링을 적용한 과거 가격 데이터를 사용하여 보정된 신뢰수준 (통상 99% 이상)에 기반 설정 |
+| 변동성 스캔 범위 | 내재변동성의 변화를 포함하는 시나리오 |
+| 포트폴리오 상쇄 | 동일 결합상품군 내 상관된 포지션에 대한 교차증거금 크레딧 |
+
+### SGX-DC의 강화된 SPAN 파라미터 (SGX-DC's Enhanced SPAN Parameters)
+
+SGX-DC는 표준 SPAN 방법론에 구체적인 수정을 가하여 강화하였다:
+
+1. **변동성 스케일링:** SGX는 직전 1년간 모든 가격 관찰에 동일 가중치를 부여하던 기존 표준편차 접근법을 변동성 스케일링 방법론으로 대체하였다. 증거금은 이제 현재의 변동성 체제에 보다 민감하게 반응하며 — 고변동성 기간에 증가하고 안정기에 감소한다.
+
+2. **경기순응성 완화 하한:** 하한은 장기 저변동성 기간에도 증거금이 **10년 룩백 기간**을 사용하여 산출되는 수준 이하로 하락하지 않도록 보장한다. 이는 안정적 시장에서의 과소증거금 리스크 축적을 방지한다.
+
+3. **스트레스 테스트:** SGX-DC는 극단적이지만 가능한 시장 상황에서의 청산기금 적정성을 확보하기 위해 SPAN 시나리오 이상의 스트레스 테스트를 정기적으로 수행한다.
+
+### 증거금 유형 (Margin Types)
+
+| 증거금 유형 | 설명 |
+|-------------|-------------|
+| **개시증거금 (Performance Bond)** | 포지션 개시에 필요한 예치금; SPAN 시나리오 하에서의 추정 최대 1일 손실을 커버 |
+| **유지증거금** | 유지해야 하는 최소 증거금 수준; 통상 개시증거금보다 낮게 설정 |
+| **변동증거금** | 일일 시가평가 결제; 각 영업일 종료 시 산출되며 결제은행을 통해 현금으로 정산 |
+| **일중 증거금** | 포지션에 상당한 미실현 손실이 발생하거나 변동성이 급등할 경우 매매일 중 추가 증거금 요구 |
+| **스프레드 증거금** | 상쇄 리스크로부터 혜택을 받는 스프레드 포지션 (캘린더, 상품간)에 대한 감면된 증거금 |
+
+### 증거금 추가 납부 절차 (Margin Call Process)
+
+1. **장 마감:** 결제가격 결정; 변동증거금 및 증거금 부족분 산출
+2. **증거금 추가 납부 통보:** SGX-DC 시스템을 통해 청산회원에 증거금 의무 통보
+3. **결제:** 인가 결제은행을 통한 현금 이전
+4. **일중 주기:** 매매 세션 중 시장 변동으로 인한 부족분을 커버하기 위해 추가 일중 증거금 요구가 발행될 수 있으며 (신속히 이행해야 함)
+5. **적격 담보:** 현금 (다통화), 정부채권, 은행보증, 기타 승인 담보 형태
+
+### 산업 맥락 (Industry Context)
+
+파생상품 업계가 SPAN에서 VaR 기반 증거금 모델 (예: CME SPAN 2, Eurex PRISMA)로 전환하고 있는 가운데, SGX-DC는 강화된 SPAN 체계를 계속 사용하고 있다. 경기순응성 완화 조치와 변동성 스케일링은 기본 SPAN 대비 의미 있는 개선을 나타내며, 리스크 대응성을 유지하면서 증거금 안정성을 제공한다.
+
+[Source: SGX website, "Risk Management"; SGX Rulebook, "Practice Note 6A.5.2 Calculation of Amount of Clearing Member Required Margins"; Risk.net, "SGX's Koh defends clearing methods post-Nasdaq"; CME Group, "SPAN Methodology Overview"; FIA, "Navigating a New Era in Derivatives Clearing"]
+
+---
+
+## D4. 포지션한도 및 대량포지션 보고 (Position Limits & Large Position Reporting)
+
+### 포지션한도 (Position Limits)
+
+SGX는 시스템 리스크를 관리하고 과도한 집중을 방지하기 위해 파생상품 계약에 포지션한도 (건옥제한)를 부과한다:
+
+- **포지션한도**는 SGX 규칙집 (Section 18.4.2)에서 계약별로 정의되며 상품에 따라 상이하다
+- 회원은 단일 고객 및 단일 계약에 대한 건전성 한도 위반 위험 시 회사 수준에서 모니터링하는 **자동화된 절차**를 갖추어야 한다
+- 포지션한도는 **투기적 포지션** — 기초 상업적 헤지 수요 없이 매매/투자 목적으로 보유하는 포지션에 적용된다
+
+### 헤지 면제 (Hedge Exemptions)
+
+- 선의의 헤지 수요가 있는 시장 참가자는 투기적 포지션한도로부터 면제를 신청할 수 있다
+- 면제 신청은 SGX-DT에 제출해야 하며, 헤지 근거 및 기초 상업적 익스포저를 입증해야 한다
+- 면제된 포지션은 지속적으로 모니터링 및 보고해야 한다
+
+### 대량포지션 보고 (Large Position Reporting)
+
+- 청산회원은 포지션이 지정 기준을 초과할 때 SGX-DC에 대량포지션을 보고해야 한다
+- 대량포지션 보고는 SGX가 집중 리스크 및 잠재적 시장 조작을 모니터링할 수 있게 한다
+- 기준은 상품별로 설정된다
+
+### 책임수준 (Accountability Levels)
+
+SGX는 특정 계약에 대해 (경성 포지션한도와 구별되는) **책임수준**을 설정할 수 있으며, 이 수준을 초과하는 참가자에게 요청 시 포지션 및 매매 의도에 관한 추가 정보를 제공하도록 요구할 수 있다.
+
+[Source: SGX Rulebook, "18.4.2 Position Limits"; SGX Rulebook, "Practice Note 7.22 — Margins of Third Parties"; SGX website, "Risk Management"]
+
+---
+
+## D5. 블록거래 / 협상대량거래 (NLT) / EFP / EFS (Block Trading / NLT / EFP / EFS)
+
+### 협상대량거래 (Negotiated Large Trades, NLT)
+
+SGX의 블록거래에 해당하는 것은 **협상대량거래(Negotiated Large Trade, NLT)** 시설이다:
+
+**주요 규칙:**
+- NLT는 중앙호가창 외부에서 두 당사자 간 합의된 가격으로 체결되는 사적 협상 거래이다
+- 각 NLT는 Regulatory Notice 4.1.11의 Appendix A에서 계약별로 지정된 **최소 거래량 기준**을 충족해야 한다
+- 대표적 최소 기준:
+  - Nikkei 225 옵션: 25 lot
+  - 기타 상품: 계약별 상이 (Regulatory Notice에 구체적 기준 공시)
+- 동일 기초자산 내 다중 레그 NLT는 **하나 이상의 레그**가 최소 거래량 기준을 충족하면 적격으로 간주
+- 회원은 최소 거래량 기준을 충족하기 위해서만 개별 고객의 주문을 결합해서는 **안 된다**
+- 그러나 각각 독립적으로 기준을 초과하는 개별 주문은 더 큰 NLT 상대 매수·매도 호가에 대응하기 위해 결합할 수 있다
+
+**보고 및 등록:**
+- NLT는 규정된 기한 내에 SGX에 보고해야 한다
+- 매도자와 매수자 모두 각 청산회원이 정한 신용 및 포지션 기준을 충족해야 한다
+- NLT는 검증 성공 후 SGX-DC에 등록되어 청산된다
+
+### 실물교환 (Exchange for Physical, EFP)
+
+- **EFP 거래**는 파생상품 포지션을 해당 실물 또는 현물시장 포지션으로 교환 가능하게 한다
+- SGX가 정한 절차를 충족해야 한다
+- 실물 레그는 기초자산 또는 관련 상품/종목의 선의의 거래여야 한다
+- 청산회원의 신용 및 포지션 기준을 충족해야 한다
+
+### 스왑교환 (Exchange for Swap, EFS)
+
+- **EFS 거래**는 상장 파생상품 포지션을 동등한 장외 스왑 포지션으로 교환 가능하게 한다
+- 절차, 신용 기준, 보고에 관해 EFP 거래와 유사한 규칙이 적용된다
+
+### 등록 요건 (Registration Requirements)
+
+"관련 시장"에 상장된 계약 (즉, 다른 거래소에도 상장된 계약)을 포함하는 NLT, EFP, EFS 거래의 경우, Rule 7.04A가 교차시장 건전성을 확보하기 위한 추가 등록 절차 준수를 요구한다.
+
+[Source: SGX Rulebook, "Regulatory Notice 2.1.3A(4); 4.1.11 — Negotiated Large Trades"; SGX Rulebook, "4.1.11 Negotiated Large Trades"; SGX Rulebook, "7.04A Registration of an NLT, EFP or EFS in Respect of Contracts Listed on a Relevant Market"; SGX website, "Negotiated Large Trade (NLT)"]
+
+---
+
+## D6. 인도 및 결제 절차 (Delivery & Settlement Process)
+
+### 일일 결제 (시가평가) (Daily Settlement, Mark-to-Market)
+
+1. **일일 결제가격:** SGX-DC는 매 영업일 종료 시 모든 상장 파생상품 계약의 일일 결제가격을 결정한다
+2. **변동증거금:** 당일 결제가격과 전일 결제가격 (또는 신규 포지션의 매매가격) 간 차이를 현금으로 정산한다
+3. **결제은행:** 인가 결제은행을 통해 현금 이전이 이루어지며, 청산회원은 인가 은행에 계좌를 유지해야 한다
+4. **일중 결제:** 변동성 높은 시장 상황에서 일중 증거금 추가 납부 및 시가평가가 발동될 수 있다
+
+### 최종 결제 — 현금결제 계약 (Final Settlement — Cash-Settled Contracts)
+
+SGX 파생상품의 대부분은 **현금결제**이다:
+
+| 상품 | 최종결제가격 방법론 |
+|---------|-----------------------------------|
+| FTSE China A50 선물 | 최종거래일 FTSE China A50 Index 공식 종가 기반 |
+| Nikkei 225 선물 | Nikkei 225 Index의 Special Quotation (SQ) 기반 |
+| 철광석 선물 | 계약월 중 TSI Iron Ore CFR China 62% Fe Fines 평가의 산술평균 |
+| 외환 선물 (USD/CNH) | TMA가 발행하는 USD/CNH(HK) 고시환율 기반 |
+| 외환 선물 (INR/USD) | RBI Reference Rate 기반 |
+| MSCI 지수 선물 | 해당 MSCI Index의 공식 종가 기반 |
+
+### 최종 결제 — 실물인도 계약 (Final Settlement — Physically Delivered Contracts)
+
+소수의 SGX 상품 계약 (예: 고무 선물 — TSR20, RSS3)은 실물 인도로 결제된다:
+
+- **인도 의무**는 매매 거래상대방에 있으며, SGX-DC에 있지 않다
+- SGX-DC는 금전 결제에 대한 중앙거래상대방 역할을 하지만 **실제 인도 절차에 대한 책임은 없다**
+- 인도 장소, 품질 사양, 절차는 각 계약의 명세에 정의되어 있다
+- 청산회원은 인도 기간까지 포지션을 보유하는 고객이 인도를 하거나 받을 준비가 되어 있도록 해야 한다
+
+### 결제 통화 (Settlement Currency)
+
+- 대부분의 SGX 파생상품 계약은 **USD**로 표시 및 결제되어, 국제 참가자가 통화 변환 없이 접근 가능하다
+- 일부 계약은 JPY (Nikkei 225 JPY), SGD (MSCI Singapore), HKD (Hang Seng 상품), AUD (S&P/ASX 200)로 결제된다
+
+[Source: SGX website, "Clearing Information"; CFTC, "SGX-DC Regulatory Compliance Chart"; SGX Rulebook, "SGX-DC Clearing Rules"; Capital Futures Corp., "SGX Contract Specifications"]
+
+---
+
+## 부록: SGX 파생상품 — KRX와의 비교 (Appendix: SGX Derivatives — Comparison with KRX)
+
+| 특성 | SGX 파생상품 | KRX 파생상품 |
+|---------|----------------|-----------------|
+| 주요 초점 | 범아시아 관문; 아시아 주식시장, 상품, 외환에 대한 역외 접근 | 국내 한국 시장 (KOSPI 200, KOSDAQ 150, KTB) |
+| 대표 상품 | FTSE China A50 선물 | KOSPI 200 옵션 (역사적으로 계약 건수 기준 세계 최대 활발) |
+| 청산기관 | SGX-DC | KRX CCP |
+| 매매 플랫폼 | Titan DT (Nasdaq Genium INET) | Exture+ |
+| 증거금 모델 | SPAN (변동성 스케일링으로 강화) | SPAN 기반 (KRX SPAN) |
+| 국제 접근 | 광범위한 국제 참여; CFTC 등록 DCO | 보다 제한적인 국제 직접 접근 |
+| 매매시간 | 주요 상품 일 최대 ~22시간 | 주로 한국 영업시간, 제한적 야간 세션 |
+| 통화 | 주로 USD 표시 | KRW 표시 |
+| 결제 | T+1 현금 결제 (대부분 상품) | T+1 현금 결제 |
+
+*참고: KRX 비교는 공개 정보에 기반한 것이며, 구체적 내용은 KRX 문서를 통해 확인해야 한다.*
+
+---
+
+*본 조사 파일은 SGX 공식 웹사이트, SGX 규칙집, SGX 연차보고서, 규제 제출물, 금융뉴스 자료, 기술 벤더 문서 등 공개 자료를 기반으로 작성되었다. [unverified]로 표시된 정보는 공식 1차 자료에서 확인되지 않았으며, 공식 분석에 사용하기 전 검증이 필요하다.*

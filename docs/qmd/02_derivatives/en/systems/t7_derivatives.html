@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>T7 Trading Architecture – Eurex (Derivatives) – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/systems/genium_inet.html">Trading Systems</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/systems/t7_derivatives.html">T7 Trading Architecture – Eurex (Derivatives)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Derivatives Markets — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Derivatives Markets – Comparative Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exchanges</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Derivatives (Australian Securities Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cboe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cboe Global Markets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/eurex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Derivatives Market</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange Futures)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX Derivatives (Korea Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Derivatives Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU Derivatives Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">U.S. Derivatives Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">T7 Trading Architecture – Eurex (Derivatives)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#system-overview" id="toc-system-overview" class="nav-link active" data-scroll-target="#system-overview">1. System Overview</a>
+  <ul class="collapse">
+  <li><a href="#system-evolution" id="toc-system-evolution" class="nav-link" data-scroll-target="#system-evolution">System Evolution</a></li>
+  </ul></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">2. Architecture</a>
+  <ul class="collapse">
+  <li><a href="#high-level-design" id="toc-high-level-design" class="nav-link" data-scroll-target="#high-level-design">2.1 High-Level Design</a></li>
+  <li><a href="#core-components" id="toc-core-components" class="nav-link" data-scroll-target="#core-components">2.2 Core Components</a></li>
+  <li><a href="#technology-stack" id="toc-technology-stack" class="nav-link" data-scroll-target="#technology-stack">2.3 Technology Stack</a></li>
+  </ul></li>
+  <li><a href="#performance-specifications" id="toc-performance-specifications" class="nav-link" data-scroll-target="#performance-specifications">3. Performance Specifications</a>
+  <ul class="collapse">
+  <li><a href="#current-latency-production-data-2025" id="toc-current-latency-production-data-2025" class="nav-link" data-scroll-target="#current-latency-production-data-2025">Current Latency (Production Data, 2025)</a></li>
+  <li><a href="#throughput-capacity" id="toc-throughput-capacity" class="nav-link" data-scroll-target="#throughput-capacity">Throughput &amp; Capacity</a></li>
+  <li><a href="#performance-evolution" id="toc-performance-evolution" class="nav-link" data-scroll-target="#performance-evolution">Performance Evolution</a></li>
+  </ul></li>
+  <li><a href="#interfaces-protocols" id="toc-interfaces-protocols" class="nav-link" data-scroll-target="#interfaces-protocols">4. Interfaces &amp; Protocols</a>
+  <ul class="collapse">
+  <li><a href="#order-entry-eti-enhanced-trading-interface" id="toc-order-entry-eti-enhanced-trading-interface" class="nav-link" data-scroll-target="#order-entry-eti-enhanced-trading-interface">4.1 Order Entry – ETI (Enhanced Trading Interface)</a></li>
+  <li><a href="#market-data" id="toc-market-data" class="nav-link" data-scroll-target="#market-data">4.2 Market Data</a></li>
+  <li><a href="#drop-copy-trade-reporting-t7-entry-services-tes" id="toc-drop-copy-trade-reporting-t7-entry-services-tes" class="nav-link" data-scroll-target="#drop-copy-trade-reporting-t7-entry-services-tes">4.3 Drop Copy / Trade Reporting – T7 Entry Services (TES)</a></li>
+  <li><a href="#reference-data-rdi-and-rdd" id="toc-reference-data-rdi-and-rdd" class="nav-link" data-scroll-target="#reference-data-rdi-and-rdd">4.4 Reference Data – RDI and RDD</a></li>
+  </ul></li>
+  <li><a href="#resilience-business-continuity" id="toc-resilience-business-continuity" class="nav-link" data-scroll-target="#resilience-business-continuity">5. Resilience &amp; Business Continuity</a>
+  <ul class="collapse">
+  <li><a href="#redundancy" id="toc-redundancy" class="nav-link" data-scroll-target="#redundancy">5.1 Redundancy</a></li>
+  <li><a href="#disaster-recovery" id="toc-disaster-recovery" class="nav-link" data-scroll-target="#disaster-recovery">5.2 Disaster Recovery</a></li>
+  <li><a href="#primary-data-center" id="toc-primary-data-center" class="nav-link" data-scroll-target="#primary-data-center">5.3 Primary Data Center</a></li>
+  </ul></li>
+  <li><a href="#notable-technical-features" id="toc-notable-technical-features" class="nav-link" data-scroll-target="#notable-technical-features">6. Notable Technical Features</a>
+  <ul class="collapse">
+  <li><a href="#complex-strategy-trading-spread-engine-implied-pricing" id="toc-complex-strategy-trading-spread-engine-implied-pricing" class="nav-link" data-scroll-target="#complex-strategy-trading-spread-engine-implied-pricing">6.1 Complex Strategy Trading (Spread Engine / Implied Pricing)</a></li>
+  <li><a href="#volatility-interruption-mechanism" id="toc-volatility-interruption-mechanism" class="nav-link" data-scroll-target="#volatility-interruption-mechanism">6.2 Volatility Interruption Mechanism</a></li>
+  <li><a href="#t7-entry-services-tes-for-off-book-trades" id="toc-t7-entry-services-tes-for-off-book-trades" class="nav-link" data-scroll-target="#t7-entry-services-tes-for-off-book-trades">6.3 T7 Entry Services (TES) for Off-Book Trades</a></li>
+  <li><a href="#mass-quote-functionality-for-market-makers" id="toc-mass-quote-functionality-for-market-makers" class="nav-link" data-scroll-target="#mass-quote-functionality-for-market-makers">6.4 Mass Quote Functionality for Market Makers</a></li>
+  <li><a href="#self-trade-prevention-smp" id="toc-self-trade-prevention-smp" class="nav-link" data-scroll-target="#self-trade-prevention-smp">6.5 Self-Trade Prevention (SMP)</a></li>
+  <li><a href="#eurex-enlight-selective-rfq" id="toc-eurex-enlight-selective-rfq" class="nav-link" data-scroll-target="#eurex-enlight-selective-rfq">6.6 Eurex EnLight (Selective RFQ)</a></li>
+  <li><a href="#pre-trade-risk-controls-advanced-risk-protection" id="toc-pre-trade-risk-controls-advanced-risk-protection" class="nav-link" data-scroll-target="#pre-trade-risk-controls-advanced-risk-protection">6.7 Pre-Trade Risk Controls (Advanced Risk Protection)</a></li>
+  <li><a href="#sponsored-access-spa-model" id="toc-sponsored-access-spa-model" class="nav-link" data-scroll-target="#sponsored-access-spa-model">6.8 Sponsored Access (SpA) Model</a></li>
+  <li><a href="#partition-based-matching-architecture" id="toc-partition-based-matching-architecture" class="nav-link" data-scroll-target="#partition-based-matching-architecture">6.9 Partition-Based Matching Architecture</a></li>
+  </ul></li>
+  <li><a href="#comparison-notes" id="toc-comparison-notes" class="nav-link" data-scroll-target="#comparison-notes">7. Comparison Notes</a>
+  <ul class="collapse">
+  <li><a href="#vs.-krx-systems-exture-exture-3.0" id="toc-vs.-krx-systems-exture-exture-3.0" class="nav-link" data-scroll-target="#vs.-krx-systems-exture-exture-3.0">vs.&nbsp;KRX Systems (Exture+ / Exture 3.0)</a></li>
+  <li><a href="#key-differentiators" id="toc-key-differentiators" class="nav-link" data-scroll-target="#key-differentiators">Key Differentiators</a></li>
+  </ul></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a>
+  <ul class="collapse">
+  <li><a href="#official-eurex-deutsche-boerse-documentation" id="toc-official-eurex-deutsche-boerse-documentation" class="nav-link" data-scroll-target="#official-eurex-deutsche-boerse-documentation">Official Eurex / Deutsche Boerse Documentation</a></li>
+  <li><a href="#third-party-sources" id="toc-third-party-sources" class="nav-link" data-scroll-target="#third-party-sources">Third-Party Sources</a></li>
+  <li><a href="#krx-exture-sources" id="toc-krx-exture-sources" class="nav-link" data-scroll-target="#krx-exture-sources">KRX / Exture+ Sources</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/systems/genium_inet.html">Trading Systems</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/systems/t7_derivatives.html">T7 Trading Architecture – Eurex (Derivatives)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">T7 Trading Architecture – Eurex (Derivatives)</h1>
+<p class="subtitle lead">Derivatives &gt; Trading Systems</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-07 <strong>System Category:</strong> Trading System</p>
+</blockquote>
+<hr>
+<section id="system-overview" class="level2">
+<h2 class="anchored" data-anchor-id="system-overview">1. System Overview</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>System Name</td>
+<td>T7</td>
+</tr>
+<tr class="even">
+<td>Operated By</td>
+<td>Eurex Frankfurt AG (part of Deutsche Boerse Group)</td>
+</tr>
+<tr class="odd">
+<td>Purpose</td>
+<td>High-performance electronic trading platform for derivatives (futures, options, and complex strategies); also serves cash equities (Xetra), energy (EEX), and other venues on the same technology</td>
+</tr>
+<tr class="even">
+<td>Launch Year</td>
+<td>December 2012 (Eurex derivatives – first T7 deployment); July 2017 (Xetra cash market migration)</td>
+</tr>
+<tr class="odd">
+<td>Current Version</td>
+<td>T7 Release 14.0 (introduced 10 November 2025 for Eurex); T7 Release 14.1 planned for 18 May 2026</td>
+</tr>
+<tr class="even">
+<td>Vendor / In-house</td>
+<td>In-house (developed by Deutsche Boerse Group technology teams)</td>
+</tr>
+</tbody>
+</table>
+<p>T7 is Deutsche Boerse Group’s core trading platform. When first deployed at Eurex in December 2012, it was reported to be <strong>14 times faster than the predecessor system for futures</strong> and <strong>40 times faster for options</strong>. The platform serves as a shared technology base across Eurex (derivatives), Xetra (cash equities), EEX (energy), Boerse Frankfurt, and Nodal Exchange. For derivatives participants, key differentiators include built-in complex strategy trading, implied pricing, mass quoting, and integrated off-book trade entry (T7 Entry Services).</p>
+<p>[Source: Eurex, “T7 trading architecture”, https://www.eurex.com/t7/, accessed 2026-04-07] [Source: Eurex, “T7”, https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07] [Source: MarketsWiki, “Eurex”, https://www.marketswiki.com/wiki/Eurex, accessed 2026-04-07]</p>
+<section id="system-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="system-evolution">System Evolution</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 47%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>System / Milestone</th>
+<th>Key Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1988</td>
+<td>DTB (Deutsche Terminboerse) founded</td>
+<td>Deutsche Boerse’s first electronic derivatives exchange; trading began 26 January 1990 with options, then futures</td>
+</tr>
+<tr class="even">
+<td>1993</td>
+<td>DTB GmbH integrated into Deutsche Boerse AG</td>
+<td>Organizational consolidation</td>
+</tr>
+<tr class="odd">
+<td>1998</td>
+<td>Eurex formed (merger of DTB + SOFFEX)</td>
+<td>DTB merged with Swiss Options and Financial Futures Exchange (SOFFEX) to create Eurex; became one of the world’s largest derivatives exchanges</td>
+</tr>
+<tr class="even">
+<td>1998–2012</td>
+<td>Eurex System 1 (legacy platform)</td>
+<td>Multiple release upgrades; served Eurex throughout its growth phase</td>
+</tr>
+<tr class="odd">
+<td>December 2012</td>
+<td>T7 Release 1.0 (Eurex)</td>
+<td>First T7 deployment at Eurex; stepwise product migration; 14x/40x faster than predecessor (futures/options)</td>
+</tr>
+<tr class="even">
+<td>Q1 2018</td>
+<td>Partition-Specific (PS) Gateway</td>
+<td>Introduction of PS gateways; significantly lowered latency variability and increased determinism</td>
+</tr>
+<tr class="odd">
+<td>Q1 2020</td>
+<td>Matching Engine hardware upgrade</td>
+<td>New server hardware for matching engines completed</td>
+</tr>
+<tr class="even">
+<td>H1 2021</td>
+<td>Consolidated matcher/gateway</td>
+<td>PS Gateway and Matching Engine processes consolidated on the same server; faster order processing, improved stability</td>
+</tr>
+<tr class="odd">
+<td>H2 2021–2022</td>
+<td>Market Data Distributor consolidation</td>
+<td>EMDI distributor process consolidated onto matching engine host; reduced failover scenarios, more deterministic data delivery</td>
+</tr>
+<tr class="even">
+<td>February 2022</td>
+<td>Partition expansion to 13</td>
+<td>Addition of Partition 12 for Eurex derivatives; redistribution of futures products</td>
+</tr>
+<tr class="odd">
+<td>November 2023</td>
+<td>T7 Release 12.0</td>
+<td>Major feature release</td>
+</tr>
+<tr class="even">
+<td>March 2024</td>
+<td>T7 Release 12.1</td>
+<td>Static volatility interruption enhancements; Self-Match Prevention (SMP) introduced market-wide</td>
+</tr>
+<tr class="odd">
+<td>November 2024</td>
+<td>T7 Release 13.0</td>
+<td>Feature and performance enhancements</td>
+</tr>
+<tr class="even">
+<td>May 2025</td>
+<td>T7 Release 13.1</td>
+<td>Introduced for Eurex</td>
+</tr>
+<tr class="odd">
+<td>November 2025</td>
+<td>T7 Release 14.0</td>
+<td>Current production release; new web-based GUIs introduced</td>
+</tr>
+<tr class="even">
+<td>May 2026 (planned)</td>
+<td>T7 Release 14.1</td>
+<td>Simulation period started 23 March 2026; planned production launch 18 May 2026</td>
+</tr>
+<tr class="odd">
+<td>2026–2027</td>
+<td>Web GUI transition</td>
+<td>T7 Web Admin (Q2/Q3 2026), T7 Web Trader (not before 2027); phased replacement of Java-based GUIs</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: WallStreetMojo, “Eurex Exchange – What Is It, Rules, History &amp; Benefits”, https://www.wallstreetmojo.com/eurex-exchange/, accessed 2026-04-07] [Source: Eurex, “T7 Release 14.0”, https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0, accessed 2026-04-07] [Source: Eurex, “T7 Release 14.1”, https://www.eurex.com/ex-en/support/initiatives/t7release14-1, accessed 2026-04-07] [Source: Eurex, “Announcement of T7 Release 14.1”, https://www.eurex.com/ex-en/find/circulars/circular-4803582, accessed 2026-04-07] [Source: Eurex, “Completion of the T7 matching engine server hardware upgrade”, https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-07] [Source: Eurex, “T7: Introduction of a consolidated partition-specific Gateway and Matching Engine process”, https://www.eurex.com/ex-en/find/circulars/circular-2404602, accessed 2026-04-07] [Source: Eurex, “T7: Consolidation of the Market Data Distributor and Matching Engine processes on the Matching Engine Host”, https://www.eurex.com/ex-en/find/circulars/T7-Consolidation-of-the-Market-Data-Distributor-and-Matching-Engine-processes-on-the-Matching-Engine-Host-3682674, accessed 2026-04-07]</p>
+<hr>
+</section>
+</section>
+<section id="architecture" class="level2">
+<h2 class="anchored" data-anchor-id="architecture">2. Architecture</h2>
+<section id="high-level-design" class="level3">
+<h3 class="anchored" data-anchor-id="high-level-design">2.1 High-Level Design</h3>
+<ul>
+<li><strong>Deployment model:</strong> On-premise, hosted at Equinix FR2 colocation facility in Frankfurt, Germany</li>
+<li><strong>Topology:</strong> Partition-based distributed matching architecture – centralized matching within each partition, but partitions operate independently</li>
+<li><strong>Design pattern:</strong> High-performance, event-driven matching with independent product partitions; each partition has its own matching engine, PS gateway, and market data distributor</li>
+<li><strong>Multi-venue:</strong> Single platform serving Eurex (derivatives), Xetra (cash equities), EEX (energy), Boerse Frankfurt, and Nodal Exchange</li>
+</ul>
+<p>T7 employs a <strong>partition-based architecture</strong> in which the derivatives market is divided into completely independent partitions. Each partition operates its own matching engine and partition-specific gateway. If one partition experiences an issue, other partitions continue operating independently. For Eurex derivatives, there are <strong>13 partitions</strong> (12 XEUR partitions + 1 XEEE partition for EEX). Products are distributed across partitions by asset class – for example, equity index futures and options, fixed income futures, and commodity derivatives may reside on different partitions.</p>
+<p>Since H1 2021, the PS Gateway and Matching Engine processes have been consolidated on the same server, and from late 2021 onward the Market Data Distributor process was also consolidated onto the matching engine host. This consolidation reduces latency, simplifies failover scenarios, and improves determinism.</p>
+<p>[Source: Eurex, “T7”, https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07] [Source: Eurex, “T7 Production environment: Increase in the number of partitions”, https://www.eurex.com/ex-en/find/circulars/circular-2877730, accessed 2026-04-07]</p>
+</section>
+<section id="core-components" class="level3">
+<h3 class="anchored" data-anchor-id="core-components">2.2 Core Components</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 25%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Function</th>
+<th>Technology / Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Matching Engine</strong> (per partition)</td>
+<td>Order and quote matching for all instruments assigned to the partition; price-time priority; supports continuous trading, auctions, and complex strategy matching with implied pricing</td>
+<td>Custom-built; runs on dedicated server hardware; each partition has its own matching engine with a standby partner for failover</td>
+</tr>
+<tr class="even">
+<td><strong>Partition-Specific (PS) Gateway</strong></td>
+<td>Lowest-latency order entry path; FIFO processing; one PS gateway per partition</td>
+<td>Consolidated on the same server as the matching engine since H1 2021; 10 Gbit/s cross connects from co-location</td>
+</tr>
+<tr class="odd">
+<td><strong>Low-Frequency (LF) Gateway</strong></td>
+<td>Order entry for participants not requiring ultra-low latency; connects to all partitions; ~12 microseconds additional latency vs.&nbsp;PS gateway</td>
+<td>Proprietary binary (ETI); TCP/IP</td>
+</tr>
+<tr class="even">
+<td><strong>Enhanced Trading Interface (ETI)</strong></td>
+<td>Primary high-performance trading interface; asynchronous, message-based; FIX 5.0 SP2 semantics with proprietary session protocol and flat binary encoding</td>
+<td>Binary over TCP/IP; no special hardware required; OS/language agnostic</td>
+</tr>
+<tr class="odd">
+<td><strong>FIX Gateway</strong></td>
+<td>Standard FIX protocol access; trading and back-office sessions</td>
+<td>FIX 4.2 / FIX 4.4 over TCP/IP; FIX LF interface (FIX 4.4) introduced with Release 9.0</td>
+</tr>
+<tr class="even">
+<td><strong>EMDI</strong> (Enhanced Market Data Interface)</td>
+<td>Un-netted market data; disseminates every order book change up to configured depth</td>
+<td>UDP multicast; FAST 1.1/1.2 encoded; dual service paths (A and B)</td>
+</tr>
+<tr class="odd">
+<td><strong>EOBI</strong> (Enhanced Order Book Interface)</td>
+<td>Full order-by-order (Level 3) market data; no depth limitation</td>
+<td>UDP multicast; native binary encoding (not FAST); lowest-latency market data feed</td>
+</tr>
+<tr class="even">
+<td><strong>MDI</strong> (Market Data Interface)</td>
+<td>Netted/statistical market data (daily high/low, last trade, total volume)</td>
+<td>UDP multicast; FAST encoded</td>
+</tr>
+<tr class="odd">
+<td><strong>RDI</strong> (Reference Data Interface)</td>
+<td>Instrument definitions, trading parameters, product assignments</td>
+<td>UDP multicast; FAST encoded</td>
+</tr>
+<tr class="even">
+<td><strong>Risk Engine</strong></td>
+<td>Pre-trade risk controls; session-level throttling; position limits; Advanced Risk Protection (ARP)</td>
+<td>Integrated into gateway layer</td>
+</tr>
+<tr class="odd">
+<td><strong>Surveillance</strong></td>
+<td>Market surveillance and regulatory oversight (BaFin/ESMA framework)</td>
+<td>Separate surveillance infrastructure; trade surveillance system monitors for market manipulation and abuse [details not publicly disclosed in detail]</td>
+</tr>
+<tr class="even">
+<td><strong>T7 GUI</strong> (Trader/Admin/Clearer)</td>
+<td>Graphical user interfaces for derivatives trading, administration, and clearing operations</td>
+<td>Transitioning from Java-based to web-based GUIs (2025–2027)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Eurex, “T7 R.13.1 Enhanced Trading Interface Manual”, https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07] [Source: OnixS, “Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK”, https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]</p>
+</section>
+<section id="technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="technology-stack">2.3 Technology Stack</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programming Language</td>
+<td>C/C++ [unverified; consistent with Deutsche Boerse technical presentations and industry standard for matching engines]</td>
+</tr>
+<tr class="even">
+<td>Operating System</td>
+<td>Linux [unverified; consistent with industry standard]</td>
+</tr>
+<tr class="odd">
+<td>Hardware</td>
+<td>Commodity x86 server hardware with custom optimization; matching engine hardware upgraded in 2020; PTP (Precision Time Protocol) timing at 4–5 ns RMS accuracy</td>
+</tr>
+<tr class="even">
+<td>FPGA Acceleration</td>
+<td>Not confirmed in T7 core matching engine; third-party vendors (e.g., NanoSpeed) offer FPGA-based connectivity solutions to T7</td>
+</tr>
+<tr class="odd">
+<td>Network (Internal)</td>
+<td>10 Gbit/s Ethernet with cut-through switching in the co-location access layer; 10 Gbit/s cross connects to PS gateways</td>
+</tr>
+<tr class="even">
+<td>Network (External)</td>
+<td>N7 network infrastructure; thousands of connections in 35+ countries across Europe, North America, and Asia; 10G/100G Ethernet connectivity</td>
+</tr>
+<tr class="odd">
+<td>Messaging Format</td>
+<td>Binary messages following FIX 5.0 SP2 semantics (ETI); FAST 1.1/1.2 encoding for EMDI/MDI/RDI; native binary for EOBI</td>
+</tr>
+<tr class="even">
+<td>Byte Order</td>
+<td>Little Endian</td>
+</tr>
+<tr class="odd">
+<td>Colocation</td>
+<td>Equinix FR2 data center, Frankfurt, Germany</td>
+</tr>
+<tr class="even">
+<td>In-Memory</td>
+<td>Matching engine operates in-memory for order book state; persistent orders backed to persistency layer for failover recovery</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Deutsche Boerse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07] [Source: Deutsche Boerse, “Open Day 2019 – T7 infrastructure and latency”, https://www.deutsche-boerse.com/resource/blob/1637232/da0ae611905acda0d7502260903a0835/data/Open-Day-2019_T7-Latency-Roadmap_Andreas-Lohr_final.pdf, accessed 2026-04-07]</p>
+<hr>
+</section>
+</section>
+<section id="performance-specifications" class="level2">
+<h2 class="anchored" data-anchor-id="performance-specifications">3. Performance Specifications</h2>
+<section id="current-latency-production-data-2025" class="level3">
+<h3 class="anchored" data-anchor-id="current-latency-production-data-2025">Current Latency (Production Data, 2025)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 25%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+<th>Conditions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Minimum internal matching latency</td>
+<td>~2,787 ns (~2.8 microseconds)</td>
+<td>Measured from market data timestamp to request processing; production data February 2025</td>
+</tr>
+<tr class="even">
+<td>Median round-trip (HF session, co-located)</td>
+<td>~60 microseconds</td>
+<td>Full circle via PS gateway; includes network traversal, matching, and response</td>
+</tr>
+<tr class="odd">
+<td>LF gateway additional latency</td>
+<td>~12 microseconds</td>
+<td>Compared to PS gateway path</td>
+</tr>
+<tr class="even">
+<td>EOBI faster than EMDI</td>
+<td>~1.5 microseconds (median)</td>
+<td>EOBI market data arrives faster than EMDI updates</td>
+</tr>
+<tr class="odd">
+<td>EOBI faster than ETI response</td>
+<td>~1.5 microseconds (median)</td>
+<td>For order-triggered market data updates</td>
+</tr>
+<tr class="even">
+<td>EOBI advantage over EMDI (DAX futures)</td>
+<td>~15 microseconds faster (simple updates), ~25 microseconds faster (trades)</td>
+<td>Measured for Xetra DAX products; similar advantage expected for Eurex derivatives</td>
+</tr>
+<tr class="odd">
+<td>Dual EMDI feed difference (A vs B)</td>
+<td>~6–8 microseconds (median)</td>
+<td>Latency difference between A and B incremental feeds for futures products</td>
+</tr>
+<tr class="even">
+<td>PTP timing accuracy</td>
+<td>4–5 ns RMS</td>
+<td>Precision Time Protocol synchronization</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notes:</strong> - The 2,787 ns minimum represents internal matching engine processing time - Round-trip latency of ~60 microseconds is measured for co-located participants using PS gateways via high-frequency sessions - T7 provides up to six timestamps with each response and key timestamps with every market data update, enabling participants to measure and decompose latency in detail - The 10 Gbit/s access layer switches operate in “cut-through” mode, reserving priority on the competitive network path</p>
+<p>[Source: Deutsche Boerse, “Internal T7 Latency Performance Updates”, https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-07] [Source: Deutsche Boerse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]</p>
+</section>
+<section id="throughput-capacity" class="level3">
+<h3 class="anchored" data-anchor-id="throughput-capacity">Throughput &amp; Capacity</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 31%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typical throughput (t_3n – internal matching)</td>
+<td>~8,000 kHz (8 million msgs/sec)</td>
+<td>Internal matching engine throughput rate; March 2025 data</td>
+</tr>
+<tr class="even">
+<td>Typical throughput (t_5 – gateway level)</td>
+<td>~500 kHz</td>
+<td>Throughput at gateway level [unverified interpretation]</td>
+</tr>
+<tr class="odd">
+<td>Typical throughput (t_7 – external)</td>
+<td>~300 kHz</td>
+<td>Throughput including external network [unverified interpretation]</td>
+</tr>
+<tr class="even">
+<td>Peak daily requests (across T7 venues)</td>
+<td>1.25 billion</td>
+<td>Recorded 7 April 2025 (vs.&nbsp;857 million in 2023)</td>
+</tr>
+<tr class="odd">
+<td>ETI HF session throttle</td>
+<td>150 messages/second</td>
+<td>Per session; high-frequency session type</td>
+</tr>
+<tr class="even">
+<td>ETI LF session throttle</td>
+<td>50 messages/second</td>
+<td>Per session; low-frequency session type</td>
+</tr>
+<tr class="odd">
+<td>Eurex partitions</td>
+<td>13 (12 XEUR + 1 XEEE)</td>
+<td>As of 2022; partitions can be expanded as needed</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Deutsche Boerse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]</p>
+</section>
+<section id="performance-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="performance-evolution">Performance Evolution</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 44%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>Improvement</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>December 2012 (T7 launch at Eurex)</td>
+<td>14x faster (futures), 40x faster (options) than predecessor</td>
+<td>First T7 deployment</td>
+</tr>
+<tr class="even">
+<td>Q1 2018</td>
+<td>PS gateway introduced</td>
+<td>Significantly lowered latency variability; increased determinism</td>
+</tr>
+<tr class="odd">
+<td>Q1 2020</td>
+<td>Matching engine hardware upgrade</td>
+<td>New server hardware</td>
+</tr>
+<tr class="even">
+<td>H1 2021</td>
+<td>Consolidated matcher/gateway on same server</td>
+<td>Further latency reduction and stability improvement</td>
+</tr>
+<tr class="odd">
+<td>2021–2022</td>
+<td>Market data distributor consolidated onto matching engine host</td>
+<td>Reduced EMDI latency variability</td>
+</tr>
+<tr class="even">
+<td>2025</td>
+<td>PTP accuracy 4–5 ns RMS</td>
+<td>Improved timestamping precision</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="interfaces-protocols" class="level2">
+<h2 class="anchored" data-anchor-id="interfaces-protocols">4. Interfaces &amp; Protocols</h2>
+<section id="order-entry-eti-enhanced-trading-interface" class="level3">
+<h3 class="anchored" data-anchor-id="order-entry-eti-enhanced-trading-interface">4.1 Order Entry – ETI (Enhanced Trading Interface)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Protocol</td>
+<td>Proprietary binary with FIX 5.0 SP2 semantics</td>
+</tr>
+<tr class="even">
+<td>Session Layer</td>
+<td>Proprietary (not standard FIX session protocol)</td>
+</tr>
+<tr class="odd">
+<td>Encoding</td>
+<td>Flat binary encoding (optimized for performance)</td>
+</tr>
+<tr class="even">
+<td>Transport</td>
+<td>TCP/IP</td>
+</tr>
+<tr class="odd">
+<td>Byte Order</td>
+<td>Little Endian</td>
+</tr>
+<tr class="even">
+<td>Session Types</td>
+<td>High-frequency (HF) and Low-frequency (LF); Standard (persistent orders) and Lean (non-persistent orders)</td>
+</tr>
+<tr class="odd">
+<td>Throttle Limits</td>
+<td>HF: 150 msgs/sec; LF: 50 msgs/sec per session</td>
+</tr>
+<tr class="even">
+<td>Functions</td>
+<td>Order handling, quote handling (mass quotes), strategy creation, RFQ submission, off-book trade entry (TES), cross requests</td>
+</tr>
+<tr class="odd">
+<td>Hardware Requirements</td>
+<td>None – OS/language/compiler agnostic; no exchange software installation required</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ETI Derivatives-Specific Features:</strong> - Mass quote submission and maintenance (key for market makers) - Complex instrument creation (user-defined strategies) - Cross request functionality - T7 Entry Services (TES) trade entry for block/EFP/EFS trades - Eurex EnLight RFQ submission and response - Self-Match Prevention (SMP) tagging</p>
+<p><strong>FIX Gateway:</strong> - FIX 4.2 and FIX 4.4 support - FIX LF interface (FIX 4.4 only) – closer to T7 architecture, provides performance characteristics similar to ETI - Trading sessions (order management, risk control, cross trade) and Back-office sessions (trade confirmations) - Slightly higher latency than ETI due to protocol translation</p>
+<p>[Source: Eurex, “T7 R.13.1 Enhanced Trading Interface Manual”, https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07]</p>
+</section>
+<section id="market-data" class="level3">
+<h3 class="anchored" data-anchor-id="market-data">4.2 Market Data</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 17%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feed</th>
+<th>Protocol</th>
+<th>Encoding</th>
+<th>Content</th>
+<th>Latency Profile</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>EMDI</strong> (Enhanced Market Data Interface)</td>
+<td>UDP multicast</td>
+<td>FAST 1.1/1.2</td>
+<td>Un-netted feed; every order book change up to configured depth; all on-exchange trades; market-by-price (MBP) at aggregated price levels</td>
+<td>~1.5 microseconds slower than EOBI (median)</td>
+</tr>
+<tr class="even">
+<td><strong>EOBI</strong> (Enhanced Order Book Interface)</td>
+<td>UDP multicast</td>
+<td>Native binary (not FAST)</td>
+<td>Full order-by-order (Level 3); no depth limitation; side, price, priority timestamp, displayed quantity of each individual order/quote; trade price and quantity</td>
+<td>Fastest market data feed; ~1.5 microseconds faster than ETI response</td>
+</tr>
+<tr class="odd">
+<td><strong>MDI</strong> (Market Data Interface)</td>
+<td>UDP multicast</td>
+<td>FAST</td>
+<td>Netted/statistical data; daily high/low, total traded quantity, last trade, settlement prices, open interest</td>
+<td>Suitable for less latency-sensitive applications</td>
+</tr>
+<tr class="even">
+<td><strong>RDI</strong> (Reference Data Interface)</td>
+<td>UDP multicast</td>
+<td>FAST</td>
+<td>Instrument definitions, trading parameters, product assignments, multicast address/port configurations</td>
+<td>Published before trading day opens</td>
+</tr>
+<tr class="odd">
+<td><strong>EMDS</strong> (Extended Market Data Service)</td>
+<td>UDP multicast</td>
+<td>–</td>
+<td>Extended data including settlement prices and open interest</td>
+<td>Supplementary feed</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Architecture Notes:</strong> - All feeds use dual service paths (Service A and Service B) with different multicast addresses for live-live redundancy - Clients should subscribe to both services and arbitrate between them - EOBI is the premium feed for latency-sensitive derivatives participants – provides full order-by-order book, native binary encoding (no FAST decode overhead), and is consistently the fastest data path - For derivatives participants, EMDI provides un-netted updates at configured depth while EOBI provides the complete order book</p>
+<p>[Source: Eurex, “T7 R.12.1 EMDI/MDI/RDI Manual”, https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-07] [Source: OnixS, “Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK”, https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]</p>
+</section>
+<section id="drop-copy-trade-reporting-t7-entry-services-tes" class="level3">
+<h3 class="anchored" data-anchor-id="drop-copy-trade-reporting-t7-entry-services-tes">4.3 Drop Copy / Trade Reporting – T7 Entry Services (TES)</h3>
+<p>T7 Entry Services are the primary off-book trade registration mechanism for Eurex derivatives. They enable participants to enter negotiated or pre-arranged trade information into the Eurex system while benefiting from standardized clearing and settlement through Eurex Clearing.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TES Trade Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Block Trades</strong></td>
+<td>Off-book trading of standard Eurex products; buyers and sellers execute order information without execution risk; Bulk Load Panel enhances efficiency for large batches</td>
+</tr>
+<tr class="even">
+<td><strong>Exchange for Physicals (EFP)</strong></td>
+<td>Simultaneous purchase/sale of futures and a cash market security with price correlation (e.g., Fixed Income Futures vs.&nbsp;bonds); auto-approval functionality introduced in collaboration with Tradeweb</td>
+</tr>
+<tr class="odd">
+<td><strong>Exchange for Swaps (EFS)</strong></td>
+<td>Exchange of futures position for an OTC swap equivalent</td>
+</tr>
+<tr class="even">
+<td><strong>Multilateral Trades</strong></td>
+<td>Processing of order information for multilateral Block Trades</td>
+</tr>
+<tr class="odd">
+<td><strong>Brokerage Functionality</strong></td>
+<td>Broker-mediated trade facilitation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Eurex EnLight (Selective RFQ):</strong> - On-exchange, off-book selective Request-for-Quote (RFQ) functionality - Allows participants to selectively request quotes from specific counterparties - Circuit breakers implemented via price collars - Integrated with T7 trade registration workflow</p>
+<p>[Source: Eurex, “Eurex T7 Entry Services”, https://www.eurex.com/ex-en/trade/eurex-t7-entry-services, accessed 2026-04-07] [Source: Eurex, “Block Trades”, https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades, accessed 2026-04-07] [Source: Eurex, “Eurex EnLight”, https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]</p>
+</section>
+<section id="reference-data-rdi-and-rdd" class="level3">
+<h3 class="anchored" data-anchor-id="reference-data-rdi-and-rdd">4.4 Reference Data – RDI and RDD</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>RDI</strong> (Reference Data Interface)</td>
+<td>Real-time multicast feed; provides instrument definitions, trading parameters, product-to-partition assignments, and multicast address configurations before trading day opens</td>
+</tr>
+<tr class="even">
+<td><strong>RDD</strong> (Reference Data Download)</td>
+<td>File-based reference data available for download from the Eurex website; includes product and instrument parameter files, T7 Entry Service parameters</td>
+</tr>
+<tr class="odd">
+<td><strong>T7 GUI</strong></td>
+<td>Administrative GUI provides reference data views and management</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Eurex, “T7 Entry Service parameters”, https://www.eurex.com/ex-en/data/trading-files/t7-entry-service-parameters, accessed 2026-04-07]</p>
+<hr>
+</section>
+</section>
+<section id="resilience-business-continuity" class="level2">
+<h2 class="anchored" data-anchor-id="resilience-business-continuity">5. Resilience &amp; Business Continuity</h2>
+<section id="redundancy" class="level3">
+<h3 class="anchored" data-anchor-id="redundancy">5.1 Redundancy</h3>
+<ul>
+<li><strong>Partition independence:</strong> Each of the 13 partitions operates independently; a failure in one partition does not affect other partitions – this is a key resilience benefit of the partition-based architecture</li>
+<li><strong>Matching engine failover:</strong> Every matching engine has a standby partner that can take over if the primary fails; a failover triggers a market reset – the secondary loads persistent orders from the persistency layer; all non-persistent orders and quotes are deleted</li>
+<li><strong>Market data redundancy:</strong> Dual multicast service paths (Service A and Service B) with different multicast addresses; live-live concept</li>
+<li><strong>Gateway redundancy:</strong> Multiple gateway sessions available; PS and LF gateways provide different access paths; if a PS gateway fails, LF gateways remain available (and vice versa)</li>
+<li><strong>Network redundancy:</strong> N7 network provides redundant connectivity across 35+ countries; backbone lines terminate in both primary and secondary data centers</li>
+</ul>
+</section>
+<section id="disaster-recovery" class="level3">
+<h3 class="anchored" data-anchor-id="disaster-recovery">5.2 Disaster Recovery</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary Site</td>
+<td>Equinix FR2 data center, Frankfurt, Germany</td>
+</tr>
+<tr class="even">
+<td>DR Infrastructure</td>
+<td>T7 simulation environment infrastructure re-used as DR production infrastructure</td>
+</tr>
+<tr class="odd">
+<td>Failover Scenario</td>
+<td>Simulates complete outage of regular T7 production system hosted in primary data center</td>
+</tr>
+<tr class="even">
+<td>Colocation Access</td>
+<td>Colocation facility remains accessible during DR; co-location customers can access DR infrastructure</td>
+</tr>
+<tr class="odd">
+<td>Network Continuity</td>
+<td>Backbone lines to Frankfurt terminate in the secondary data centre; participants connecting to the Frankfurt access point continue using the same leased line connecting to the access point half located in the secondary data centre</td>
+</tr>
+<tr class="even">
+<td>Order Book State</td>
+<td>Order books are empty after switch to DR environment; participants must re-enter orders</td>
+</tr>
+<tr class="odd">
+<td>Interface Availability</td>
+<td>Most T7 interfaces available in DR scenario; some conceptual differences vs.&nbsp;regular production</td>
+</tr>
+<tr class="even">
+<td>DR Testing</td>
+<td>Regular tests conducted (typically 2x per year); examples: 16 March 2024, 17 June 2023, 15 October 2022; Eurex requests all Trading Participants to participate</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Notes:</strong> - DR concept documented in the “T7 Disaster Recovery Concept” guide (updated with each major release; current version: 2025 v1.2) - In DR, the simulation environment infrastructure becomes the backup production environment – this is a pragmatic but potentially capacity-constrained design - Different IP addresses and configurations may apply in DR - Participation in DR tests is considered essential for compliance with Business Continuity Processes and continued market integrity</p>
+<p>[Source: Eurex, “T7 Disaster Recovery Concept 2025 Version 1.2”, https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf, accessed 2026-04-07] [Source: Eurex, “T7 Disaster Recovery Test on 16 March 2024”, https://www.eurex.com/ex-en/find/circulars/circular-3818172, accessed 2026-04-07]</p>
+</section>
+<section id="primary-data-center" class="level3">
+<h3 class="anchored" data-anchor-id="primary-data-center">5.3 Primary Data Center</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Facility</td>
+<td>Equinix FR2 (Friesstrasse, Frankfurt, Germany)</td>
+</tr>
+<tr class="even">
+<td>Operator</td>
+<td>Equinix (strategic partnership since 2010)</td>
+</tr>
+<tr class="odd">
+<td>Role</td>
+<td>Financial low-latency trading hub; hosts primary Eurex and Xetra back-ends</td>
+</tr>
+<tr class="even">
+<td>Colocation Services</td>
+<td>Rack space, cooling, power supply, smart hands; separate 10 Gbit/s connections for transaction and market data services</td>
+</tr>
+<tr class="odd">
+<td>Network</td>
+<td>10 Gbit/s access layer switches in cut-through mode; latency-optimized co-location network</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Xetra, “Co-Location Services”, https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-07]</p>
+<hr>
+</section>
+</section>
+<section id="notable-technical-features" class="level2">
+<h2 class="anchored" data-anchor-id="notable-technical-features">6. Notable Technical Features</h2>
+<section id="complex-strategy-trading-spread-engine-implied-pricing" class="level3">
+<h3 class="anchored" data-anchor-id="complex-strategy-trading-spread-engine-implied-pricing">6.1 Complex Strategy Trading (Spread Engine / Implied Pricing)</h3>
+<p>This is one of the most derivatives-specific features of T7. The platform supports:</p>
+<ul>
+<li><strong>Complex instruments:</strong> Extended combination trading functionality enabling participants to create individual combinations of single-leg instruments and announce the strategy to the entire market</li>
+<li><strong>Strategy types:</strong>
+<ul>
+<li>Futures combinations: time spreads, packs &amp; bundles, strips, inter-product spreads</li>
+<li>Standard options strategies: a wide variety of recognized options strategy templates</li>
+<li>User-defined strategies: participants can create custom multi-leg combinations</li>
+</ul></li>
+<li><strong>Implied pricing:</strong> T7 calculates implied prices based on the top-of-book prices of the legs; supports both implied-in (synthetic matching into leg order books from strategy orders) and implied-out (matching of outright leg contracts against synthetic combinations)</li>
+<li><strong>Inter-product spreads (IPS):</strong> Traded in separate order books with synthetic matching into the respective leg product order books (e.g., Euribor vs.&nbsp;Euro-STR futures IPS)</li>
+<li><strong>Auto-normalization:</strong> If an entered strategy matches a standard options strategy, it is automatically converted and normalized</li>
+</ul>
+<p>[Source: Eurex, “Strategy trading – Trading in complex instruments”, https://www.eurex.com/ex-en/trade/order-book-trading/trading-in-complex-instruments, accessed 2026-04-07]</p>
+</section>
+<section id="volatility-interruption-mechanism" class="level3">
+<h3 class="anchored" data-anchor-id="volatility-interruption-mechanism">6.2 Volatility Interruption Mechanism</h3>
+<p>T7 implements volatility interruptions to strengthen price continuity in derivatives:</p>
+<ul>
+<li><strong>Trigger mechanism:</strong> If the potential execution price deviates beyond allowed price corridors from reference prices, execution of the incoming order is prevented and the affected instrument (or all instruments of the affected product) is automatically moved from continuous trading to a volatility auction</li>
+<li><strong>Static volatility interruptions</strong> (introduced with T7 Release 12.1): Based on static price ranges around additional reference prices defined by the exchange; triggers when the allowed static price deviation is exceeded</li>
+<li><strong>Dynamic volatility interruptions:</strong> Based on dynamic price ranges around the last traded price</li>
+<li><strong>Scope:</strong> Can apply to individual instruments or entire product groups depending on configuration</li>
+</ul>
+<p>[Source: Eurex, “Volatility Interruption Functionality”, https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality, accessed 2026-04-07] [Source: Eurex, “Eurex T7 Functionality activations: Volatility Interruption enhancements”, https://www.eurex.com/ex-en/find/circulars/circular-3989342, accessed 2026-04-07]</p>
+</section>
+<section id="t7-entry-services-tes-for-off-book-trades" class="level3">
+<h3 class="anchored" data-anchor-id="t7-entry-services-tes-for-off-book-trades">6.3 T7 Entry Services (TES) for Off-Book Trades</h3>
+<p>See Section 4.3 above for detailed coverage. Key point: TES provides the regulatory and operational framework for block trades, EFP, EFS, and multilateral off-book transactions to be registered and cleared through the exchange.</p>
+</section>
+<section id="mass-quote-functionality-for-market-makers" class="level3">
+<h3 class="anchored" data-anchor-id="mass-quote-functionality-for-market-makers">6.4 Mass Quote Functionality for Market Makers</h3>
+<ul>
+<li><strong>Mass quotes:</strong> Market makers can submit and update two-sided quotes (bid and ask) for multiple instruments in a single message, enabling efficient market making across large numbers of options series</li>
+<li><strong>Market maker role:</strong> Enables all quoting and order handling functions, cross requests, and complex instrument creation</li>
+<li><strong>Non-persistent quotes:</strong> Mass quotes are typically non-persistent (lean), meaning they are deleted upon matching engine failover – this is a design trade-off favoring performance over persistence</li>
+</ul>
+</section>
+<section id="self-trade-prevention-smp" class="level3">
+<h3 class="anchored" data-anchor-id="self-trade-prevention-smp">6.5 Self-Trade Prevention (SMP)</h3>
+<ul>
+<li><strong>Introduced:</strong> T7 Release 12.1 (market-wide rollout)</li>
+<li><strong>Mechanism:</strong> SMP Type A functionality prevents certain orders or quotes of the same instrument from matching against each other during continuous trading when sent by the same Trading Participant and tagged with the same SMP ID</li>
+<li><strong>Purpose:</strong> Prevents unintentional self-trades that may arise from different algorithmic strategies operating within the same participant</li>
+</ul>
+<p>[Source: Eurex, “Announcement of T7 Release 12.1”, https://www.eurex.com/ex-en/find/circulars/circular-3723224, accessed 2026-04-07]</p>
+</section>
+<section id="eurex-enlight-selective-rfq" class="level3">
+<h3 class="anchored" data-anchor-id="eurex-enlight-selective-rfq">6.6 Eurex EnLight (Selective RFQ)</h3>
+<ul>
+<li><strong>Type:</strong> On-exchange, off-book selective Request-for-Quote platform</li>
+<li><strong>Mechanism:</strong> Initiators selectively request quotes from specific counterparties (rather than broadcasting to the entire market)</li>
+<li><strong>Safeguards:</strong> Circuit breakers implemented via price collars</li>
+<li><strong>Use case:</strong> Large/complex derivatives trades where participants want to negotiate with specific liquidity providers while maintaining on-exchange trade registration</li>
+</ul>
+<p>[Source: Eurex, “Eurex EnLight | Selective RFQ Platform for Derivatives”, https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]</p>
+</section>
+<section id="pre-trade-risk-controls-advanced-risk-protection" class="level3">
+<h3 class="anchored" data-anchor-id="pre-trade-risk-controls-advanced-risk-protection">6.7 Pre-Trade Risk Controls (Advanced Risk Protection)</h3>
+<ul>
+<li><strong>Pre-Trade Risk Position Limits:</strong> Allow Clearing Members (CMs) to set pre-trade risk limits for their Direct Clearing Member Participants (DCMPs) and Non-Clearing Members</li>
+<li><strong>Advanced Risk Protection (ARP):</strong> Integrated with Eurex Clearing’s C7 system; provides real-time risk monitoring with automatic protective actions</li>
+<li><strong>Session-level throttling:</strong> ETI enforces per-session message rate limits (150 msgs/sec HF, 50 msgs/sec LF)</li>
+<li><strong>Order size limits:</strong> Configurable maximum order quantity per product</li>
+<li><strong>Kill switch:</strong> Emergency functionality to cancel all orders and quotes for a participant</li>
+</ul>
+<p>[Source: Eurex, “T7 Derivatives Markets – Participant and User Maintenance Manual”, https://www.eurex.com/resource/blob/4332334/61e2e29f08a63ff88d20ee30c4dc2049/data/T7_R.13.1_Derivatives_Market_-_Participant_and_User_Maintenance_Manual_Version_1.pdf, accessed 2026-04-07]</p>
+</section>
+<section id="sponsored-access-spa-model" class="level3">
+<h3 class="anchored" data-anchor-id="sponsored-access-spa-model">6.8 Sponsored Access (SpA) Model</h3>
+<ul>
+<li><strong>Purpose:</strong> Allows buy-side firms to access Eurex’s T7 platform directly without full exchange membership, using a sponsoring Eurex participant (FCM) as the access provider</li>
+<li><strong>Classification:</strong> Direct Electronic Access (DEA) under MiFID II</li>
+<li><strong>Risk framework:</strong> The sponsoring participant establishes pre-trade risk limits for the sponsored firm and its traders within the T7 system</li>
+<li><strong>Benefit:</strong> Enables buy-side firms to implement latency-sensitive electronic trading strategies with direct access to T7 infrastructure and complete connectivity suite</li>
+</ul>
+<p>[Source: Eurex, “Sponsored Access: A new gateway for the buy-side”, https://www.eurex.com/ex-en/trade/sponsored-access, accessed 2026-04-07]</p>
+</section>
+<section id="partition-based-matching-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="partition-based-matching-architecture">6.9 Partition-Based Matching Architecture</h3>
+<p>The partition model is a foundational architectural choice with derivatives-specific implications:</p>
+<ul>
+<li><strong>Product isolation:</strong> Different asset classes (equity index derivatives, fixed income derivatives, commodity derivatives) can be assigned to separate partitions, ensuring that high-activity products do not impact latency for other products</li>
+<li><strong>Scalability:</strong> New partitions can be added as product offerings grow (demonstrated by the addition of Partition 12 in 2022)</li>
+<li><strong>Fault isolation:</strong> A technical issue in one partition does not cascade to others</li>
+<li><strong>Latency determinism:</strong> Since each partition has its own matching engine and PS gateway, latency is more predictable within a partition</li>
+<li><strong>Trade-off:</strong> Participants trading across partitions need multiple PS gateway connections for optimal latency on all partitions; cross-partition strategies are not natively supported within the matching engine</li>
+</ul>
+<p>[Source: Eurex, “Technical Upgrade of T7 partitions”, https://www.eurex.com/ex-en/support/information-channels/implementation-news/Technical-Upgrade-of-T7-partitions–4079882, accessed 2026-04-07]</p>
+<hr>
+</section>
+</section>
+<section id="comparison-notes" class="level2">
+<h2 class="anchored" data-anchor-id="comparison-notes">7. Comparison Notes</h2>
+<section id="vs.-krx-systems-exture-exture-3.0" class="level3">
+<h3 class="anchored" data-anchor-id="vs.-krx-systems-exture-exture-3.0">vs.&nbsp;KRX Systems (Exture+ / Exture 3.0)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 39%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Eurex T7 (Derivatives)</th>
+<th>KRX Exture+ / Exture 3.0</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Launch Year</strong></td>
+<td>2012 (Eurex derivatives)</td>
+<td>2014 (Exture+); Exture 3.0 launched recently</td>
+</tr>
+<tr class="even">
+<td><strong>Developer</strong></td>
+<td>In-house (Deutsche Boerse Group)</td>
+<td>In-house (KRX with Koscom subsidiary)</td>
+</tr>
+<tr class="odd">
+<td><strong>Architecture</strong></td>
+<td>Partition-based; 13 independent partitions for derivatives, each with own matching engine and PS gateway</td>
+<td>Unified matching engine architecture; Seoul DC (equities) + Busan DC (derivatives)</td>
+</tr>
+<tr class="even">
+<td><strong>Internal Matching Latency</strong></td>
+<td>~2.8 microseconds minimum (Feb 2025)</td>
+<td>~70 microseconds (Exture+); Exture 3.0 achieved ~30% improvement</td>
+</tr>
+<tr class="odd">
+<td><strong>Round-trip Latency (co-located)</strong></td>
+<td>~60 microseconds median (HF session via PS gateway)</td>
+<td>~70 microseconds (matching engine only; Exture+)</td>
+</tr>
+<tr class="even">
+<td><strong>Complex Strategy Support</strong></td>
+<td>Native spread engine with implied pricing (implied-in / implied-out); user-defined strategies; inter-product spreads</td>
+<td>Strategy orders supported but implied pricing capabilities less documented [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>Market Data Feeds</strong></td>
+<td>EMDI (un-netted MBP), MDI (netted), EOBI (full MBO/L3), RDI (reference) via UDP multicast</td>
+<td>Proprietary binary; Solace PubSub+ messaging middleware</td>
+</tr>
+<tr class="even">
+<td><strong>Order Entry Protocol</strong></td>
+<td>ETI (proprietary binary, FIX 5.0 SP2 semantics) + FIX 4.2/4.4</td>
+<td>FIX-based + proprietary API [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>Off-Book Trading</strong></td>
+<td>T7 Entry Services (TES): Block, EFP, EFS, Multilateral, Brokerage; Eurex EnLight (selective RFQ)</td>
+<td>Negotiated trades supported; specific off-book framework less documented publicly [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>Market Making Support</strong></td>
+<td>Mass quote functionality; non-persistent lean quotes; Designated Market Maker programs</td>
+<td>Liquidity Provider (LP) system</td>
+</tr>
+<tr class="odd">
+<td><strong>Self-Trade Prevention</strong></td>
+<td>SMP Type A (same participant, same SMP ID) – market-wide since Release 12.1</td>
+<td>Available [unverified – specific mechanism not publicly detailed]</td>
+</tr>
+<tr class="even">
+<td><strong>Volatility Protection</strong></td>
+<td>Volatility Interruption (static + dynamic corridors); product-wide or instrument-level</td>
+<td>SVIH (Static/Dynamic Volatility Interruption)</td>
+</tr>
+<tr class="odd">
+<td><strong>Primary Data Center</strong></td>
+<td>Equinix FR2, Frankfurt (hosted at third-party facility)</td>
+<td>KRX-owned Busan Data Center (derivatives)</td>
+</tr>
+<tr class="even">
+<td><strong>DR Approach</strong></td>
+<td>Simulation infrastructure re-used as DR; regular testing (2x/year); order books empty after failover</td>
+<td>Active/Standby between Seoul and Busan [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>Partition Model</strong></td>
+<td>13 partitions; products distributed across partitions; partition-level fault isolation</td>
+<td>Unified model [unverified – specific partition details not publicly available]</td>
+</tr>
+<tr class="even">
+<td><strong>Regulatory Framework</strong></td>
+<td>BaFin / ESMA (MiFID II / MiFIR / EMIR)</td>
+<td>FSC / FSS</td>
+</tr>
+<tr class="odd">
+<td><strong>Technology Export</strong></td>
+<td>T7 licensed to BSE India and others</td>
+<td>Exture+ exported to Laos, Cambodia, Azerbaijan, and others</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-differentiators" class="level3">
+<h3 class="anchored" data-anchor-id="key-differentiators">Key Differentiators</h3>
+<p><strong>Eurex T7 Strengths (Derivatives-Specific):</strong></p>
+<ol type="1">
+<li><strong>Implied pricing and spread engine:</strong> Native support for implied-in and implied-out matching across complex strategies and inter-product spreads is a significant architectural capability for derivatives trading; enables synthetic liquidity discovery across related products</li>
+<li><strong>Extremely low internal latency:</strong> ~2.8 microseconds internal matching latency is among the fastest globally; combined with the PS gateway consolidation, provides highly deterministic performance</li>
+<li><strong>Partition-based fault isolation:</strong> Independent partitions ensure that activity spikes or issues in one product group (e.g., equity index options during volatility events) do not degrade performance for other products (e.g., fixed income futures)</li>
+<li><strong>Comprehensive off-book ecosystem:</strong> TES (Block/EFP/EFS/Multilateral/Brokerage) + Eurex EnLight (selective RFQ) provide a rich off-book trading framework integrated with on-exchange clearing</li>
+<li><strong>Mass quoting optimization:</strong> Flat binary encoding and lean (non-persistent) quotes designed specifically for high-frequency market making across large options series</li>
+<li><strong>EOBI order-by-order feed:</strong> Full Level 3 market data without depth limitation, native binary encoding (no FAST decode overhead), consistently fastest data path – critical for derivatives participants who need to see individual order/quote activity</li>
+<li><strong>Extensive public documentation:</strong> Deutsche Boerse publishes unusually detailed technical documentation about T7 internals, latency performance, and system dynamics – valuable for participant development teams</li>
+</ol>
+<p><strong>KRX Exture+ / Exture 3.0 Strengths:</strong></p>
+<ol type="1">
+<li><strong>Unified exchange model:</strong> Single exchange covering all Korean capital market products (equities, bonds, derivatives) under one roof, reducing cross-venue complexity</li>
+<li><strong>Full technology independence:</strong> Owned data center infrastructure (Busan for derivatives) with no dependency on third-party facility operators</li>
+<li><strong>Broader technology export track record:</strong> KRX has established export relationships across multiple Asian markets (Laos, Cambodia, Azerbaijan)</li>
+<li><strong>Geographic separation:</strong> Seoul (equities) and Busan (derivatives) data centers provide natural geographic disaster recovery</li>
+<li><strong>Exture 3.0 modernization:</strong> Recent system upgrade achieved ~30% improvement in transaction processing speed with increased capacity</li>
+</ol>
+<p><strong>Architectural Observations:</strong></p>
+<ul>
+<li>T7’s partition model is well-suited for a derivatives exchange with thousands of instrument series (options chains generate large numbers of instruments); the partition-level isolation prevents “noisy neighbor” effects common in options markets during high-volatility periods</li>
+<li>KRX’s unified model may offer more uniform latency across instruments but could face challenges when derivatives volume spikes affect the shared infrastructure</li>
+<li>T7’s approach of co-locating at Equinix provides access to a broader ecosystem of connectivity providers and co-located participants, whereas KRX’s owned facility model gives more direct control over the infrastructure</li>
+<li>T7’s DR model of re-using simulation infrastructure is a cost-effective approach but means DR capacity may be lower than production; KRX’s geographic separation (Seoul/Busan) provides natural resilience</li>
+<li>Both exchanges have invested in reducing latency to globally competitive levels, though T7’s published internal matching latency (~2.8 microseconds) is significantly faster than KRX’s published figures</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<section id="official-eurex-deutsche-boerse-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="official-eurex-deutsche-boerse-documentation">Official Eurex / Deutsche Boerse Documentation</h3>
+<ul>
+<li>[Source: Eurex, “T7 trading architecture”, https://www.eurex.com/t7/, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7”, https://www.eurex.com/ex-en/support/technology/t7, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 Release 14.0”, https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 Release 14.1”, https://www.eurex.com/ex-en/support/initiatives/t7release14-1, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Announcement of T7 Release 14.1”, https://www.eurex.com/ex-en/find/circulars/circular-4803582, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 R.13.1 Enhanced Trading Interface Manual”, https://www.eurex.com/resource/blob/4305946/dcadfeef8842b1a84b0e9afa439802e1/data/T7_R.13.1_Enhanced_Trading_Interface_-_Manual_Version_1.pdf, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 R.12.1 EMDI/MDI/RDI Manual”, https://www.eurex.com/resource/blob/3989238/e67870919ecda0f21395e8bc7928d9dc/data/T7_R.12.1_%20EMDI_MDI_RDI_Manual_Version_4.pdf, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 Disaster Recovery Concept 2025 v1.2”, https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Eurex T7 Entry Services”, https://www.eurex.com/ex-en/trade/eurex-t7-entry-services, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Block Trades”, https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Eurex EnLight”, https://www.eurex.com/ex-en/trade/market-models/enlight, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Strategy trading – Trading in complex instruments”, https://www.eurex.com/ex-en/trade/order-book-trading/trading-in-complex-instruments, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Volatility Interruption Functionality”, https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Sponsored Access”, https://www.eurex.com/ex-en/trade/sponsored-access, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7: Introduction of a consolidated partition-specific Gateway and Matching Engine process”, https://www.eurex.com/ex-en/find/circulars/circular-2404602, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7: Consolidation of the Market Data Distributor and Matching Engine processes”, https://www.eurex.com/ex-en/find/circulars/T7-Consolidation-of-the-Market-Data-Distributor-and-Matching-Engine-processes-on-the-Matching-Engine-Host-3682674, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Technical Upgrade of T7 partitions”, https://www.eurex.com/ex-en/support/information-channels/implementation-news/Technical-Upgrade-of-T7-partitions–4079882, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Completion of the T7 matching engine server hardware upgrade”, https://www.eurex.com/ex-en/support/information-channels/implementation-news/Completion-of-the-T7-matching-engine-server-hardware-upgrade-2558592, accessed 2026-04-07]</li>
+<li>[Source: Deutsche Boerse, “Insights into Trading System Dynamics, March 2025”, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf, accessed 2026-04-07]</li>
+<li>[Source: Deutsche Boerse, “Internal T7 Latency Performance Updates”, https://www.deutsche-boerse.com/resource/blob/4680836/55df581501c18919e9d72aa949ed03d9/data/T7%20Latency.pdf, accessed 2026-04-07]</li>
+<li>[Source: Deutsche Boerse, “Open Day 2019 – T7 infrastructure and latency”, https://www.deutsche-boerse.com/resource/blob/1637232/da0ae611905acda0d7502260903a0835/data/Open-Day-2019_T7-Latency-Roadmap_Andreas-Lohr_final.pdf, accessed 2026-04-07]</li>
+<li>[Source: Xetra, “Co-Location Services”, https://www.xetra.com/xetra-en/technology/co-location-services, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “T7 Derivatives Markets Participant and User Maintenance Manual R.13.1”, https://www.eurex.com/resource/blob/4332334/61e2e29f08a63ff88d20ee30c4dc2049/data/T7_R.13.1_Derivatives_Market_-_Participant_and_User_Maintenance_Manual_Version_1.pdf, accessed 2026-04-07]</li>
+<li>[Source: Eurex, “Readiness Newsflash – Our path for 2026!”, https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026–4867350, accessed 2026-04-07]</li>
+</ul>
+</section>
+<section id="third-party-sources" class="level3">
+<h3 class="anchored" data-anchor-id="third-party-sources">Third-Party Sources</h3>
+<ul>
+<li>[Source: OnixS, “Eurex EEX Nodal T7 EMDI, MDI, EOBI, RDI Market Data Handler SDK”, https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html, accessed 2026-04-07]</li>
+<li>[Source: MarketsWiki, “Eurex”, https://www.marketswiki.com/wiki/Eurex, accessed 2026-04-07]</li>
+<li>[Source: WallStreetMojo, “Eurex Exchange”, https://www.wallstreetmojo.com/eurex-exchange/, accessed 2026-04-07]</li>
+</ul>
+</section>
+<section id="krx-exture-sources" class="level3">
+<h3 class="anchored" data-anchor-id="krx-exture-sources">KRX / Exture+ Sources</h3>
+<ul>
+<li>[Source: Koscom, “KRX Trading System”, https://english.koscom.co.kr/eng/main/contents.do?menuNo=300005, accessed 2026-04-07]</li>
+<li>[Source: Solace, “Korea Exchange Deploys Solace Systems”, October 2013, https://www.prweb.com/releases/2013/10/prweb11191574.htm, accessed 2026-04-07]</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>Optiq – Euronext – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/en/systems/arrowhead.html">Trading Systems</a></li><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/en/systems/optiq.html">Optiq – Euronext</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Equities Markets — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comparative Analysis of Global Equities Exchanges</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exchanges</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/asx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Australian Securities Exchange (ASX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/bme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bolsas y Mercados Espanoles (BME)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/borsa_italiana.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Borsa Italiana (Euronext Milan)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/bse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BSE Ltd (formerly Bombay Stock Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/bursa_malaysia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bursa Malaysia Berhad (Bursa Malaysia)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/deutsche_borse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Deutsche Borse / Xetra (XETR)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/euronext.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext N.V. (Euronext)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/hkex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hong Kong Exchanges and Clearing Limited (HKEX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/jpx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japan Exchange Group / Tokyo Stock Exchange (JPX / TSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/jse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Johannesburg Stock Exchange (JSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/krx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Korea Exchange (KRX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/lse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">London Stock Exchange (LSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/nasdaq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NASDAQ Stock Market (NASDAQ)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/nasdaq_nordic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Nasdaq Nordic (OMX Nordic Exchanges)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/nse_india.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India (NSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/nyse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">New York Stock Exchange (NYSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/sgx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Singapore Exchange (SGX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/six.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SIX Swiss Exchange (SIX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/sse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Stock Exchange (SSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/szse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shenzhen Stock Exchange (SZSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/tadawul.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Saudi Exchange (Tadawul)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/tmx.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TMX Group / Toronto Stock Exchange (TSX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/exchanges/twse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Stock Exchange (TWSE)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/regulations/asia_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Equities Market Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/regulations/eu_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU/UK Equities Market Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/regulations/us_equities_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">US Equities Market Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/arrowhead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">arrowhead – Japan Exchange Group (JPX) / Tokyo Stock Exchange (TSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/exture_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exture 3.0 — Korea Exchange (KRX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NASDAQ INET — NASDAQ Stock Market</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/millennium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Millennium Exchange — London Stock Exchange</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/optiq.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Optiq – Euronext</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/orion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Orion Trading Platform – Cash (OTP-C) — HKEX</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/pillar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NYSE Pillar – New York Stock Exchange</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/t7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 Trading System – Deutsche BÃ¶rse (Xetra)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/01_equities/en/systems/titan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX Titan / SGX REACH – Singapore Exchange</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#system-overview" id="toc-system-overview" class="nav-link active" data-scroll-target="#system-overview">1. System Overview</a>
+  <ul class="collapse">
+  <li><a href="#system-evolution" id="toc-system-evolution" class="nav-link" data-scroll-target="#system-evolution">System Evolution</a></li>
+  </ul></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">2. Architecture</a>
+  <ul class="collapse">
+  <li><a href="#high-level-design" id="toc-high-level-design" class="nav-link" data-scroll-target="#high-level-design">2.1 High-Level Design</a></li>
+  <li><a href="#core-components" id="toc-core-components" class="nav-link" data-scroll-target="#core-components">2.2 Core Components</a></li>
+  <li><a href="#technology-stack" id="toc-technology-stack" class="nav-link" data-scroll-target="#technology-stack">2.3 Technology Stack</a></li>
+  </ul></li>
+  <li><a href="#performance-specifications" id="toc-performance-specifications" class="nav-link" data-scroll-target="#performance-specifications">3. Performance Specifications</a>
+  <ul class="collapse">
+  <li><a href="#performance-history" id="toc-performance-history" class="nav-link" data-scroll-target="#performance-history">Performance History</a></li>
+  </ul></li>
+  <li><a href="#interfaces-protocols" id="toc-interfaces-protocols" class="nav-link" data-scroll-target="#interfaces-protocols">4. Interfaces &amp; Protocols</a>
+  <ul class="collapse">
+  <li><a href="#order-entry" id="toc-order-entry" class="nav-link" data-scroll-target="#order-entry">4.1 Order Entry</a></li>
+  <li><a href="#market-data-dissemination" id="toc-market-data-dissemination" class="nav-link" data-scroll-target="#market-data-dissemination">4.2 Market Data Dissemination</a></li>
+  <li><a href="#drop-copy-trade-reporting" id="toc-drop-copy-trade-reporting" class="nav-link" data-scroll-target="#drop-copy-trade-reporting">4.3 Drop Copy / Trade Reporting</a></li>
+  <li><a href="#reference-data" id="toc-reference-data" class="nav-link" data-scroll-target="#reference-data">4.4 Reference Data</a></li>
+  </ul></li>
+  <li><a href="#resilience-business-continuity" id="toc-resilience-business-continuity" class="nav-link" data-scroll-target="#resilience-business-continuity">5. Resilience &amp; Business Continuity</a>
+  <ul class="collapse">
+  <li><a href="#redundancy" id="toc-redundancy" class="nav-link" data-scroll-target="#redundancy">5.1 Redundancy</a></li>
+  <li><a href="#disaster-recovery" id="toc-disaster-recovery" class="nav-link" data-scroll-target="#disaster-recovery">5.2 Disaster Recovery</a></li>
+  <li><a href="#primary-data-center-bergamo-aruba-it3-campus" id="toc-primary-data-center-bergamo-aruba-it3-campus" class="nav-link" data-scroll-target="#primary-data-center-bergamo-aruba-it3-campus">5.3 Primary Data Center: Bergamo (Aruba IT3 Campus)</a></li>
+  <li><a href="#capacity-management" id="toc-capacity-management" class="nav-link" data-scroll-target="#capacity-management">5.4 Capacity Management</a></li>
+  </ul></li>
+  <li><a href="#notable-technical-features" id="toc-notable-technical-features" class="nav-link" data-scroll-target="#notable-technical-features">6. Notable Technical Features</a>
+  <ul class="collapse">
+  <li><a href="#single-platform-across-seven-countries" id="toc-single-platform-across-seven-countries" class="nav-link" data-scroll-target="#single-platform-across-seven-countries">6.1 Single Platform Across Seven Countries</a></li>
+  <li><a href="#migration-of-borsa-italiana-from-millennium-exchange" id="toc-migration-of-borsa-italiana-from-millennium-exchange" class="nav-link" data-scroll-target="#migration-of-borsa-italiana-from-millennium-exchange">6.2 Migration of Borsa Italiana from Millennium Exchange</a></li>
+  <li><a href="#harmonized-cash-and-derivatives-messaging" id="toc-harmonized-cash-and-derivatives-messaging" class="nav-link" data-scroll-target="#harmonized-cash-and-derivatives-messaging">6.3 Harmonized Cash and Derivatives Messaging</a></li>
+  <li><a href="#sbe-simple-binary-encoding-as-core-protocol" id="toc-sbe-simple-binary-encoding-as-core-protocol" class="nav-link" data-scroll-target="#sbe-simple-binary-encoding-as-core-protocol">6.4 SBE (Simple Binary Encoding) as Core Protocol</a></li>
+  <li><a href="#apache-kafka-persistence-layer" id="toc-apache-kafka-persistence-layer" class="nav-link" data-scroll-target="#apache-kafka-persistence-layer">6.5 Apache Kafka Persistence Layer</a></li>
+  <li><a href="#green-data-center" id="toc-green-data-center" class="nav-link" data-scroll-target="#green-data-center">6.6 Green Data Center</a></li>
+  <li><a href="#technology-licensing" id="toc-technology-licensing" class="nav-link" data-scroll-target="#technology-licensing">6.7 Technology Licensing</a></li>
+  </ul></li>
+  <li><a href="#comparison-notes" id="toc-comparison-notes" class="nav-link" data-scroll-target="#comparison-notes">7. Comparison Notes</a>
+  <ul class="collapse">
+  <li><a href="#vs.-krx-exture" id="toc-vs.-krx-exture" class="nav-link" data-scroll-target="#vs.-krx-exture">vs.&nbsp;KRX Exture+</a></li>
+  <li><a href="#key-differentiators" id="toc-key-differentiators" class="nav-link" data-scroll-target="#key-differentiators">Key Differentiators</a></li>
+  </ul></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a>
+  <ul class="collapse">
+  <li><a href="#official-euronext-documentation" id="toc-official-euronext-documentation" class="nav-link" data-scroll-target="#official-euronext-documentation">Official Euronext Documentation</a></li>
+  <li><a href="#third-party-sources" id="toc-third-party-sources" class="nav-link" data-scroll-target="#third-party-sources">Third-Party Sources</a></li>
+  <li><a href="#krxexture-sources" id="toc-krxexture-sources" class="nav-link" data-scroll-target="#krxexture-sources">KRX/Exture+ Sources</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/en/systems/arrowhead.html">Trading Systems</a></li><li class="breadcrumb-item"><a href="../../../../qmd/01_equities/en/systems/optiq.html">Optiq – Euronext</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Optiq – Euronext</h1>
+<p class="subtitle lead">Equities &gt; Trading Systems</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-06 <strong>System Category:</strong> Trading System</p>
+</blockquote>
+<hr>
+<section id="system-overview" class="level2">
+<h2 class="anchored" data-anchor-id="system-overview">1. System Overview</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>System Name</td>
+<td>Optiq</td>
+</tr>
+<tr class="even">
+<td>Operated By</td>
+<td>Euronext N.V.</td>
+</tr>
+<tr class="odd">
+<td>Purpose</td>
+<td>Unified multi-market, multi-asset trading platform serving all Euronext regulated markets across seven European countries</td>
+</tr>
+<tr class="even">
+<td>Launch Year</td>
+<td>2016–2019 phased rollout (MDG July 2017, Cash OEG/ME March 2018, Derivatives December 2019); subsequent expansion to Oslo (2020) and Borsa Italiana (2023–2024)</td>
+</tr>
+<tr class="odd">
+<td>Current Version</td>
+<td>Continuously updated; latest public OEG SBE specification v5.38.0, MDG specification v6.36.320</td>
+</tr>
+<tr class="even">
+<td>Vendor / In-house</td>
+<td>In-house (developed by Euronext’s internal technology teams)</td>
+</tr>
+</tbody>
+</table>
+<p>Optiq is Euronext’s proprietary, next-generation trading platform that provides a Single Order Book across all seven Euronext regulated markets. It replaced the legacy Universal Trading Platform (UTP) for cash markets and LIFFE CONNECT / SOLA for derivatives, as well as Millennium Exchange for Borsa Italiana following Euronext’s 2021 acquisition. The platform is described officially as delivering “ultra-low latency, predictability, high availability, and high scalability,” with a harmonized cash and derivatives messaging model.</p>
+<p>Euronext has also positioned Optiq as a licensable technology product for other exchange and venue operators.</p>
+<p>[Source: Euronext, “Optiq: technology solutions for exchanges and venue operators”, https://www.euronext.com/en/technology/optiq-tech-solutions-for-exchanges-and-venue-operators, accessed 2026-04-06] [Source: Euronext, “Euronext introduces Optiq, the new technology platform powering cash markets”, July 2018, https://www.euronext.com/en/about/media/euronext-press-releases/euronext-introduces-optiq-new-technology-platform-powering-cash, accessed 2026-04-06]</p>
+<section id="system-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="system-evolution">System Evolution</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 38%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>System Name</th>
+<th>Key Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2000–2003</td>
+<td>NSC (Nouveau Systeme de Cotation)</td>
+<td>Original Paris Bourse trading system; adopted across merged Euronext markets (Amsterdam, Brussels, Lisbon)</td>
+</tr>
+<tr class="even">
+<td>2003–2017</td>
+<td>UTP (Universal Trading Platform)</td>
+<td>Harmonized cash trading across all Euronext markets; based on NSC architecture; integrated following NYSE-Euronext merger</td>
+</tr>
+<tr class="odd">
+<td>2004–2019</td>
+<td>LIFFE CONNECT / SOLA</td>
+<td>Derivatives trading platform inherited from LIFFE; used across Euronext derivatives markets</td>
+</tr>
+<tr class="even">
+<td>2010–2023</td>
+<td>Millennium Exchange (Borsa Italiana)</td>
+<td>London Stock Exchange Group’s Millennium IT platform; used by Borsa Italiana until migration to Optiq</td>
+</tr>
+<tr class="odd">
+<td>2017–2019</td>
+<td>Optiq Phase 1–3 (core Euronext)</td>
+<td>Phased replacement of UTP and LIFFE CONNECT across Paris, Amsterdam, Brussels, Lisbon, Dublin</td>
+</tr>
+<tr class="even">
+<td>2020</td>
+<td>Optiq Oslo migration</td>
+<td>Oslo Bors migrated from Millennium/SOLA to Optiq following Euronext’s June 2019 acquisition</td>
+</tr>
+<tr class="odd">
+<td>2022</td>
+<td>Data center migration</td>
+<td>Primary infrastructure migrated from Basildon (UK) to Bergamo (Italy) on 6 June 2022</td>
+</tr>
+<tr class="even">
+<td>2023–2024</td>
+<td>Optiq Borsa Italiana migration</td>
+<td>Three-phase migration of Borsa Italiana from Millennium Exchange to Optiq (equities March 2023, bonds/ETFs September 2023, derivatives Q1 2024)</td>
+</tr>
+</tbody>
+</table>
+<section id="optiq-migration-timeline-detailed" class="level4">
+<h4 class="anchored" data-anchor-id="optiq-migration-timeline-detailed">Optiq Migration Timeline (Detailed)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>June 2016</td>
+<td>Optiq program formally announced; first newsletter published</td>
+</tr>
+<tr class="even">
+<td>19 June 2017</td>
+<td>Cash MDG pre-production begins (Phase 1)</td>
+</tr>
+<tr class="odd">
+<td>July 2017</td>
+<td>Cash Market Data Gateway (MDG) goes live in production</td>
+</tr>
+<tr class="even">
+<td>August 2017</td>
+<td>Derivatives MDG goes live; Phase 2 (Cash OEG/ME) test platform opens</td>
+</tr>
+<tr class="odd">
+<td>April 2018</td>
+<td>Fixed income instruments migrated to Optiq</td>
+</tr>
+<tr class="even">
+<td>12 March 2018</td>
+<td>Cash Order Entry Gateway (OEG) and Matching Engine (ME) go live in production (Phase 2)</td>
+</tr>
+<tr class="odd">
+<td>January 2019</td>
+<td>Derivatives OEG and ME migration begins (Phase 3)</td>
+</tr>
+<tr class="even">
+<td>9 December 2019</td>
+<td>Derivatives markets complete migration to Optiq; UTP and LIFFE CONNECT fully decommissioned</td>
+</tr>
+<tr class="odd">
+<td>30 November 2020</td>
+<td>Oslo Bors equities migrate to Optiq</td>
+</tr>
+<tr class="even">
+<td>7 December 2020</td>
+<td>Oslo Bors derivatives and fixed income migrate to Optiq</td>
+</tr>
+<tr class="odd">
+<td>6 June 2022</td>
+<td>Core data center migrates from Basildon (UK) to Bergamo (Italy)</td>
+</tr>
+<tr class="even">
+<td>27 March 2023</td>
+<td>Borsa Italiana equities and ETFs migrate to Optiq (Phase 1)</td>
+</tr>
+<tr class="odd">
+<td>September 2023</td>
+<td>Borsa Italiana bonds, securitised derivatives, and other instruments migrate (Phase 2; 32,500+ instruments)</td>
+</tr>
+<tr class="even">
+<td>Q1 2024</td>
+<td>Borsa Italiana derivatives complete migration to Optiq (Phase 3 – final)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Euronext, “Successful roll-out of Euronext Derivatives markets to Optiq trading platform”, December 2019, https://www.euronext.com/en/about/media/euronext-press-releases/successful-roll-out-euronext-derivatives-markets-optiq-trading, accessed 2026-04-06] [Source: Euronext, “Successful migration of Borsa Italiana equity and ETF markets to the Optiq trading platform”, March 2023, https://www.euronext.com/en/about/media/euronext-press-releases/successful-migration-borsa-italiana-equity-and-etf-markets, accessed 2026-04-06] [Source: Euronext, “Successful completion of the migration of Borsa Italiana to the Optiq trading platform”, 2024, https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-borsa-italiana-optiqr-trading, accessed 2026-04-06] [Source: Mondovisione, “Oslo Optiq Migration – High-Level Timeline and Scope”, https://mondovisione.com/news/oslo-optiq-migration-high-level-timeline-and-scope/, accessed 2026-04-06] [Source: Euronext, “Optiq Newsletter #1”, July 2016, https://www.euronext.com/sites/default/files/nl201607_euronext_optiq_newsletter_1_july_2016.pdf, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="architecture" class="level2">
+<h2 class="anchored" data-anchor-id="architecture">2. Architecture</h2>
+<section id="high-level-design" class="level3">
+<h3 class="anchored" data-anchor-id="high-level-design">2.1 High-Level Design</h3>
+<ul>
+<li><strong>Deployment model:</strong> On-premise, dedicated data center infrastructure (Aruba campus, Bergamo, Italy)</li>
+<li><strong>Topology:</strong> Single centralized platform serving all Euronext markets; modular component design</li>
+<li><strong>Design pattern:</strong> Event-driven; Apache Kafka (Confluent Platform) used as persistence layer; deterministic matching pipeline</li>
+<li><strong>Multi-venue:</strong> Single platform, Single Order Book architecture across 7 countries and 7 regulated markets (Amsterdam, Brussels, Dublin, Lisbon, Milan, Oslo, Paris)</li>
+<li><strong>Multi-asset:</strong> Cash equities, ETFs, bonds, derivatives (futures and options), warrants, securitised derivatives, commodities, FX products</li>
+<li><strong>Multi-currency:</strong> EUR, GBP, NOK, USD, CHF, and others traded across venues</li>
+</ul>
+<p>The Optiq architecture uses a segmented design where each <strong>Optiq Segment</strong> defines a universe of instruments sharing common trading properties (e.g., “Euronext Cash Amsterdam,” “Euronext Derivatives Paris”). Each segment is subdivided into <strong>Partitions</strong> – technically independent processing units connected within the segment context. This partition-based architecture enables horizontal scalability and isolation.</p>
+<p>The platform’s unique architecture minimizes jitter to enable clients to fine-tune their algorithms against stable and predictable latencies.</p>
+<p>[Source: Euronext, “Optiq: technology solutions for exchanges and venue operators”, https://www.euronext.com/en/technology/optiq-tech-solutions-for-exchanges-and-venue-operators, accessed 2026-04-06] [Source: Confluent, “Euronext builds high-speed trading platform”, https://www.confluent.io/customers/euronext/, accessed 2026-04-06]</p>
+</section>
+<section id="core-components" class="level3">
+<h3 class="anchored" data-anchor-id="core-components">2.2 Core Components</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 30%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Function</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Matching Engine (ME)</td>
+<td>Deterministic order matching for all asset classes across all Euronext markets; supports continuous trading, auctions (opening, closing, intraday, volatility interruption), and call phases</td>
+<td>Custom-built in-house engine; partitioned per segment; binary message processing</td>
+</tr>
+<tr class="even">
+<td>Order Entry Gateway (OEG)</td>
+<td>Private interface between clients and the matching engine; manages authentication, session lifecycle, throttling, and order routing to partitions</td>
+<td>TCP/IP connectivity; supports both SBE (binary) and FIX 5.0 protocols; per-partition physical connections</td>
+</tr>
+<tr class="odd">
+<td>Market Data Gateway (MDG)</td>
+<td>Real-time and snapshot market data dissemination; publishes full order book, BBO, and trade data</td>
+<td>UDP/IP multicast with SBE encoding; dual redundant feeds (Feed A / Feed B); LZ4 compression for low-bandwidth connections</td>
+</tr>
+<tr class="even">
+<td>Drop Copy Gateway</td>
+<td>Post-trade message dissemination; provides execution reports and trade confirmations to back-office systems</td>
+<td>Dedicated logical accesses separate from trading OEG; SBE and FIX protocols</td>
+</tr>
+<tr class="odd">
+<td>Risk Engine</td>
+<td>Pre-trade risk controls; order throttling mechanism; kill switch functionality</td>
+<td>Integrated into OEG layer; per-session throttle rates; configurable rejection/queuing behavior</td>
+</tr>
+<tr class="even">
+<td>Surveillance</td>
+<td>Market surveillance for regulatory compliance (MAR, MiFID II); real-time and post-trade monitoring</td>
+<td>Separate surveillance infrastructure [details not publicly disclosed]</td>
+</tr>
+<tr class="odd">
+<td>Persistence Layer</td>
+<td>Event sourcing and message persistence for the trading platform</td>
+<td>Apache Kafka (Confluent Platform); designed for up to 1 million messages/second ingestion</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="technology-stack">2.3 Technology Stack</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programming Language</td>
+<td>C++ (confirmed via Confluent case study referencing C++ API integration with Kafka); additional languages likely used for ancillary systems [unverified]</td>
+</tr>
+<tr class="even">
+<td>Operating System</td>
+<td>Linux (confirmed; RedHat/CentOS-based environments referenced in SDK documentation)</td>
+</tr>
+<tr class="odd">
+<td>Hardware</td>
+<td>Commodity server hardware; no confirmed use of FPGA acceleration [unverified]</td>
+</tr>
+<tr class="even">
+<td>Network</td>
+<td>Dedicated Euronext network infrastructure; 10 Gbps and 100 Mbps (shaped) connectivity options for market data; TCP/IP for order entry; UDP/IP multicast for market data</td>
+</tr>
+<tr class="odd">
+<td>Database</td>
+<td>Not publicly disclosed; Apache Kafka serves as the persistence/event sourcing layer</td>
+</tr>
+<tr class="even">
+<td>Messaging/Middleware</td>
+<td>Apache Kafka (Confluent Platform) for persistence layer; SBE (Simple Binary Encoding) for wire protocol; UDP multicast for market data distribution; LZ4 compression available</td>
+</tr>
+<tr class="odd">
+<td>Encoding</td>
+<td>SBE (Simple Binary Encoding) – FIX Protocol Limited open standard; fixed-position, fixed-length fields for direct data access without sequential processing</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Confluent, “Euronext builds high-speed trading platform”, https://www.confluent.io/customers/euronext/, accessed 2026-04-06] [Source: Confluent, “Building an Event-Driven Stock Platform at Euronext”, https://www.confluent.io/blog/euronext-apache-kafka-use-case-with-confluent-platform/, accessed 2026-04-06] [Source: OnixS, “Euronext Optiq Market Data Gateway (MDG) Market Data Handler SDK”, https://www.onixs.biz/euronext-optiq-market-data-gateway-feed-handler.html, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="performance-specifications" class="level2">
+<h2 class="anchored" data-anchor-id="performance-specifications">3. Performance Specifications</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 25%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+<th>Conditions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Average Order Round-trip Latency</td>
+<td>~15 microseconds</td>
+<td>Euronext official claim; order acknowledgment round-trip; measured at gateway level [verify: this may represent best-case/median rather than average across all conditions]</td>
+</tr>
+<tr class="even">
+<td>Average Market Data Latency</td>
+<td>~15 microseconds</td>
+<td>Euronext official claim; market data dissemination latency</td>
+</tr>
+<tr class="odd">
+<td>Capacity vs.&nbsp;Predecessor</td>
+<td>10x increase</td>
+<td>Compared to UTP; Euronext official claim</td>
+</tr>
+<tr class="even">
+<td>Peak Ingestion Rate (persistence layer)</td>
+<td>Up to 1 million messages/second</td>
+<td>Kafka-based persistence layer benchmark; Confluent case study</td>
+</tr>
+<tr class="odd">
+<td>Session Throttle Rate</td>
+<td>~100 messages/second per session (default example)</td>
+<td>Per OEG connectivity spec example for 1-session, 1-partition logical access; actual rates configurable per client [unverified whether higher rates are standard]</td>
+</tr>
+<tr class="even">
+<td>Daily Message Volume (early production)</td>
+<td>14+ billion messages processed</td>
+<td>Reported after initial cash market go-live (mid-2018); includes orders, modifications, cancellations, and market data</td>
+</tr>
+<tr class="odd">
+<td>Daily Trades (early production)</td>
+<td>18.8 million trades</td>
+<td>Reported after initial cash market go-live (mid-2018)</td>
+</tr>
+<tr class="even">
+<td>Uptime SLA</td>
+<td>Not publicly disclosed</td>
+<td>Euronext is subject to MiFID II operational resilience requirements; annual DR testing conducted [specific SLA percentage not published]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notes:</strong> - The ~15 microsecond figure is Euronext’s official marketing claim for average latency. Percentile breakdowns (P50, P99, P99.9) are not published in the same manner as some other exchanges (e.g., NYSE publishes detailed venue-by-venue percentile data). Actual production latency under load is likely higher at tail percentiles. - The 10x capacity improvement over UTP is a headline figure from the 2018 launch announcement. - Euronext’s jitter-minimizing architecture is emphasized as a key differentiator, suggesting consistent latency is prioritized alongside raw speed.</p>
+<section id="performance-history" class="level3">
+<h3 class="anchored" data-anchor-id="performance-history">Performance History</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 26%">
+<col style="width: 35%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Latency</th>
+<th>Throughput</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pre-2017 (UTP)</td>
+<td>Not publicly benchmarked in microseconds [unverified]</td>
+<td>Lower than Optiq by ~10x</td>
+<td>Legacy Universal Trading Platform</td>
+</tr>
+<tr class="even">
+<td>2017 (MDG launch)</td>
+<td>~15 microseconds (market data)</td>
+<td>10x improvement over predecessor</td>
+<td>Phase 1: Market Data Gateway</td>
+</tr>
+<tr class="odd">
+<td>2018 (Cash OEG/ME)</td>
+<td>~15 microseconds (order round-trip)</td>
+<td>14 billion+ messages processed post-launch</td>
+<td>Phase 2: Cash trading fully operational</td>
+</tr>
+<tr class="even">
+<td>2019 (Derivatives)</td>
+<td>Same platform performance</td>
+<td>Full cash + derivatives on single platform</td>
+<td>Phase 3 complete</td>
+</tr>
+<tr class="odd">
+<td>2022</td>
+<td>Same platform performance [unverified]</td>
+<td>–</td>
+<td>Data center migrated from Basildon to Bergamo; latency characteristics may have shifted for some participants</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Euronext, “Euronext introduces Optiq, the new technology platform powering cash markets”, July 2018, https://www.euronext.com/en/about/media/euronext-press-releases/euronext-introduces-optiq-new-technology-platform-powering-cash, accessed 2026-04-06] [Source: Confluent, “Euronext builds high-speed trading platform”, https://www.confluent.io/customers/euronext/, accessed 2026-04-06] [Source: Euronext, “Optiq: technology solutions for exchanges and venue operators”, https://www.euronext.com/en/technology/optiq-tech-solutions-for-exchanges-and-venue-operators, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="interfaces-protocols" class="level2">
+<h2 class="anchored" data-anchor-id="interfaces-protocols">4. Interfaces &amp; Protocols</h2>
+<section id="order-entry" class="level3">
+<h3 class="anchored" data-anchor-id="order-entry">4.1 Order Entry</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 28%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Protocol</th>
+<th>Version</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OEG SBE (Simple Binary Encoding)</td>
+<td>v5.38.0 (latest published)</td>
+<td>Lowest-latency order entry; fixed-position, fixed-length binary messages based on FIX Protocol Limited’s SBE standard; optimized for low-bandwidth utilization and minimal encoding/decoding overhead; supports all Euronext cash and derivatives markets</td>
+</tr>
+<tr class="even">
+<td>OEG FIX 5.0</td>
+<td>v4.12.0 (latest published)</td>
+<td>Standard FIX 5.0 protocol with Euronext-specific extensions; broader compatibility with existing client systems; slightly higher latency than SBE</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Session Architecture:</strong> - Clients connect via TCP/IP to the Order Entry Gateway (OEG) - A <strong>Logical Access</strong> is an OEG entry point configured for a single Optiq Segment, containing the client’s connectivity configuration - Each Logical Access may have as many <strong>OE Sessions</strong> (physical connections) as there are Partitions in the Optiq Segment - Logon message must be sent individually to each partition - Separate Logical Accesses required for trading OEG and Drop Copy gateway - Session lifecycle: Logon -&gt; Active Trading -&gt; Logout; heartbeat mechanism for connection monitoring</p>
+<p><strong>Throttling Mechanism:</strong> - Per-session message rate limits enforced at the OEG level - Configurable burst size (maximum messages that can be sent consecutively before throttling activates) - When throttle limit breached: messages either rejected or queued (configurable) - Rejection returns TechnicalReject (SBE message 108) or Reject (FIX message 3) - Exchange also monitors for excessive breaching and may take additional action</p>
+<p>[Source: Euronext, “Optiq OEG SBE Messages – Interface Specification v5.38.0”, https://connect.euronext.com/sites/default/files/it-documentation/Optiq%20OEG%20SBE%20Messages%20-%20Interface%20Specification%20-%20Euronext%20Cash%20and%20Derivatives%20Markets%20-%20External%20-%20v5.38.0.pdf, accessed 2026-04-06] [Source: Euronext, “Optiq OEG Client Specifications – FIX 5.0 Interface v4.12.0”, https://connect2.euronext.com/sites/default/files/it-documentation/Euronext%20Markets%20-%20Optiq%20OEG%20Client%20Specifications%20-%20FIX%205.0%20Interface%20-%20v4.12.0.pdf, accessed 2026-04-06] [Source: Euronext, “Optiq OEG Throttling Mechanism v2.2”, https://connect2.euronext.com/sites/default/files/it-documentation/euronext_cash_markets_-<em>oeg_throttling_mechanism</em>-_v2.2.pdf, accessed 2026-04-06]</p>
+</section>
+<section id="market-data-dissemination" class="level3">
+<h3 class="anchored" data-anchor-id="market-data-dissemination">4.2 Market Data Dissemination</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 23%">
+<col style="width: 30%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feed</th>
+<th>Protocol</th>
+<th>Description</th>
+<th>Data Content</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MDG Real-time (Full)</td>
+<td>UDP/IP multicast, SBE encoding</td>
+<td>Full order book depth, real-time</td>
+<td>All price levels, order counts, trade reports, auction data; unshaped 10 Gbps or shaped 1 Gbps</td>
+</tr>
+<tr class="even">
+<td>MDG Real-time (Compressed)</td>
+<td>UDP/IP multicast, SBE + LZ4 compression</td>
+<td>Compressed real-time feed for lower-bandwidth connections</td>
+<td>Same content as full feed; shaped to 100 Mbps; body compressed with LZ4 (block mode, no headers)</td>
+</tr>
+<tr class="odd">
+<td>MDG Snapshot</td>
+<td>UDP/IP multicast, SBE + LZ4 compression</td>
+<td>Periodic snapshots for recovery and initialization</td>
+<td>Full instrument state at point-in-time; always LZ4 compressed</td>
+</tr>
+<tr class="even">
+<td>MDG Lite</td>
+<td>UDP/IP multicast, SBE encoding</td>
+<td>Simplified market data feed</td>
+<td>Reduced data set for clients not requiring full depth [unverified – details limited]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Market Data Architecture:</strong> - Dual redundant multicast feeds: <strong>Feed A</strong> and <strong>Feed B</strong> published independently; clients should subscribe to both and arbitrate - Channels disaggregated by: asset class, currency, and country - Separate dedicated channels for pre-trade and post-trade data - Channel identification scheme: first digit = feed type (1 = real-time, 2 = snapshot); last three digits = multicast group IP suffix - SBE format: fixed-position, fixed-length fields supporting direct access to data; avoids sequential processing of variable-length elements - 10 Gbps line clients can subscribe to all available channels including Full Order Book</p>
+<p>[Source: Euronext, “Optiq MDG Client Specifications v4.1.0”, https://connect2.euronext.com/sites/default/files/it-documentation/Euronext%20Markets%20-%20Optiq%20MDG%20Client%20Specifications%20v4.1.0.pdf, accessed 2026-04-06] [Source: Euronext, “Optiq MDG Messages – Interface Specification v6.36.320”, https://connect.euronext.com/sites/default/files/it-documentation/optiq-mdg-messages-interface-specification-euronext-cash-and-derivatives-markets-external-v636320.pdf, accessed 2026-04-06]</p>
+</section>
+<section id="drop-copy-trade-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="drop-copy-trade-reporting">4.3 Drop Copy / Trade Reporting</h3>
+<ul>
+<li>Dedicated <strong>Drop Copy Service</strong> via separate OEG logical accesses</li>
+<li>Provides execution reports, trade confirmations, and fill notifications to back-office systems</li>
+<li>Available in both SBE and FIX 5.0 protocols</li>
+<li>Drop Copy is not a trading segment; uses a different partition approach than the trading OEG</li>
+<li>Separate connectivity configuration required (distinct IP addresses from trading gateway)</li>
+<li>MiFID II trade reporting obligations supported through Euronext’s approved publication arrangement (APA) and approved reporting mechanism (ARM) services</li>
+</ul>
+<p>[Source: Euronext, “Optiq Drop Copy Service – Interface Specification v5.351.0”, https://connect.euronext.com/sites/default/files/it-documentation/Optiq%20Drop%20Copy%20Service%20-%20Interface%20Specification%20-%20Euronext%20Cash%20and%20Derivatives%20Markets%20-%20External%20-%20v5.351.0.pdf, accessed 2026-04-06]</p>
+</section>
+<section id="reference-data" class="level3">
+<h3 class="anchored" data-anchor-id="reference-data">4.4 Reference Data</h3>
+<ul>
+<li><strong>Optiq MDG Reference Data</strong> provides instrument-level reference information</li>
+<li>Published via MDG channels at start of trading day and available as downloadable files</li>
+<li>Includes trading parameters, tick size tables, lot sizes, trading hours, instrument identifiers (ISIN, MIC, Symbol Index)</li>
+<li>Reference data available for all Euronext-listed instruments across all markets</li>
+<li>Standing Data files published on Euronext’s website and via Connect portal</li>
+</ul>
+<p>[Source: Euronext, “Optiq MDG Reference Data”, https://www.euronext.com/en/products-services/optiq-mdg-reference-data, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="resilience-business-continuity" class="level2">
+<h2 class="anchored" data-anchor-id="resilience-business-continuity">5. Resilience &amp; Business Continuity</h2>
+<section id="redundancy" class="level3">
+<h3 class="anchored" data-anchor-id="redundancy">5.1 Redundancy</h3>
+<ul>
+<li><strong>Market data redundancy:</strong> Dual independent multicast feeds (Feed A and Feed B) per channel; clients expected to subscribe to both and perform arbitration</li>
+<li><strong>Gateway redundancy:</strong> Multiple OEG partitions per segment; clients can distribute order flow across partitions</li>
+<li><strong>Network redundancy:</strong> Multiple connectivity paths to the primary data center; colocation available within the Aruba campus</li>
+<li><strong>Platform redundancy:</strong> Modular, partitioned architecture isolates failures within individual segments/partitions</li>
+</ul>
+</section>
+<section id="disaster-recovery" class="level3">
+<h3 class="anchored" data-anchor-id="disaster-recovery">5.2 Disaster Recovery</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary Site</td>
+<td>DC1 – Aruba Global Cloud Data Centre (IT3), Ponte San Pietro, Bergamo, Italy (within Aruba S.p.A. campus)</td>
+</tr>
+<tr class="even">
+<td>DR Site</td>
+<td>DC2 – Paris region (exact location not publicly confirmed; referred to as the “Disaster Recovery Data Centre”)</td>
+</tr>
+<tr class="odd">
+<td>Configuration</td>
+<td>Active/Passive – DR site is a separate physical data center maintained in standby</td>
+</tr>
+<tr class="even">
+<td>Failover Type</td>
+<td>Managed failover; upon DR activation, trading resumes from the secondary site</td>
+</tr>
+<tr class="odd">
+<td>IP Addressing</td>
+<td>DR site uses different IP addresses (IPAddressDR field in OEG connectivity specs); clients must maintain separate DR connectivity configurations</td>
+</tr>
+<tr class="even">
+<td>DR Testing</td>
+<td>Conducted at least annually on a dedicated Saturday; external participants involved; reconciliation reports automatically generated after failover to identify gaps</td>
+</tr>
+<tr class="odd">
+<td>Regulatory Requirement</td>
+<td>MiFID II Article 48 and RTS 7 require regulated markets to maintain business continuity arrangements including near-instantaneous switch-over capability</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Previous Primary Site:</strong> - Before June 2022, Euronext’s primary data center was located in <strong>Basildon, Essex, United Kingdom</strong> (inherited from the NYSE Euronext era) - The 14-month migration to Bergamo was completed on 6 June 2022, part of Euronext’s strategic repatriation of infrastructure to continental Europe following Brexit and the Borsa Italiana acquisition</p>
+<p>[Source: Euronext, “Euronext Data Centre”, https://www.euronext.com/en/technology/euronext-data-centre, accessed 2026-04-06] [Source: Euronext, “Successful completion of the migration of Euronext’s Core Data Centre”, June 2022, https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-euronexts-core-data-centre, accessed 2026-04-06] [Source: Euronext, “Disaster Recovery Test 25 October 2025: Guidelines for Participants”, https://connect.euronext.com/sites/default/files/it-documentation/euronext-disaster-recovery-test-25-october-2025-guidelines-participants.pdf, accessed 2026-04-06] [Source: The TRADE, “Inside Europe’s new fortress: Euronext’s continental data centre and trading floor”, https://www.thetradenews.com/inside-europes-new-fortress-euronexts-continental-data-centre-and-trading-floor/, accessed 2026-04-06]</p>
+</section>
+<section id="primary-data-center-bergamo-aruba-it3-campus" class="level3">
+<h3 class="anchored" data-anchor-id="primary-data-center-bergamo-aruba-it3-campus">5.3 Primary Data Center: Bergamo (Aruba IT3 Campus)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Location</td>
+<td>Ponte San Pietro, Bergamo, Italy (Aruba S.p.A. Global Cloud Data Centre campus)</td>
+</tr>
+<tr class="even">
+<td>Campus Size</td>
+<td>~20 hectares; capacity for up to 5 data center buildings; 200,000 sqm total potential</td>
+</tr>
+<tr class="odd">
+<td>Current Building</td>
+<td>~17,600 sqm with 8,000 sqm colocation space across 10 data rooms</td>
+</tr>
+<tr class="even">
+<td>Total Power Capacity</td>
+<td>12 MW (initial building); campus scalable to 60 MW</td>
+</tr>
+<tr class="odd">
+<td>Additional Buildings</td>
+<td>DC-B (9 MW, 4,950 sqm) and DC-C (8 MW, 5,950 sqm) available on campus</td>
+</tr>
+<tr class="even">
+<td>Certification</td>
+<td>Rating 4 (Tier IV equivalent); maximum safety and resilience</td>
+</tr>
+<tr class="odd">
+<td>Power Source</td>
+<td>100% renewable energy – hydroelectric (River Brembo dedicated plant), photovoltaic (10,258 sqm solar panels), geothermal and dynamic free cooling</td>
+</tr>
+<tr class="even">
+<td>Connectivity</td>
+<td>Colocation services available for Euronext members; cross-connects to matching infrastructure</td>
+</tr>
+<tr class="odd">
+<td>Migration Date</td>
+<td>6 June 2022 (from Basildon, UK)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Euronext, “New, Green Data Centre: A Glimpse into the Future”, https://www.euronext.com/en/news/new-green-data-centre-bergamo, accessed 2026-04-06] [Source: DataCenterMap, “Aruba Global Cloud IT3, Bergamo”, https://www.datacentermap.com/italy/bergamo/global-cdc-it3/, accessed 2026-04-06]</p>
+</section>
+<section id="capacity-management" class="level3">
+<h3 class="anchored" data-anchor-id="capacity-management">5.4 Capacity Management</h3>
+<ul>
+<li>Partitioned architecture allows horizontal scaling by adding partitions within segments</li>
+<li>Throttling mechanism prevents individual clients from overloading partitions</li>
+<li>Market data distributed across multiple disaggregated multicast channels to manage bandwidth</li>
+<li>10x capacity improvement over predecessor UTP platform</li>
+<li>Kafka persistence layer benchmarked for 1 million messages/second sustained ingestion</li>
+<li>Scalable infrastructure described by Euronext as able to “accommodate unlimited capacity”</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="notable-technical-features" class="level2">
+<h2 class="anchored" data-anchor-id="notable-technical-features">6. Notable Technical Features</h2>
+<section id="single-platform-across-seven-countries" class="level3">
+<h3 class="anchored" data-anchor-id="single-platform-across-seven-countries">6.1 Single Platform Across Seven Countries</h3>
+<p>Optiq is one of the most geographically distributed single-platform exchange systems in the world, serving seven distinct national markets from a single data center:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 20%">
+<col style="width: 33%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Market</th>
+<th>Country</th>
+<th>Asset Classes</th>
+<th>Key Indices</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Euronext Amsterdam</td>
+<td>Netherlands</td>
+<td>Equities, ETFs, bonds, derivatives</td>
+<td>AEX 25</td>
+</tr>
+<tr class="even">
+<td>Euronext Brussels</td>
+<td>Belgium</td>
+<td>Equities, ETFs, bonds, derivatives</td>
+<td>BEL 20</td>
+</tr>
+<tr class="odd">
+<td>Euronext Dublin</td>
+<td>Ireland</td>
+<td>Equities, ETFs, bonds</td>
+<td>ISEQ 20</td>
+</tr>
+<tr class="even">
+<td>Euronext Lisbon</td>
+<td>Portugal</td>
+<td>Equities, ETFs, bonds, derivatives</td>
+<td>PSI 20</td>
+</tr>
+<tr class="odd">
+<td>Euronext Milan (Borsa Italiana)</td>
+<td>Italy</td>
+<td>Equities, ETFs, bonds, derivatives</td>
+<td>FTSE MIB</td>
+</tr>
+<tr class="even">
+<td>Euronext Oslo (Oslo Bors)</td>
+<td>Norway</td>
+<td>Equities, ETFs, bonds, derivatives, seafood/freight</td>
+<td>OBX 25</td>
+</tr>
+<tr class="odd">
+<td>Euronext Paris</td>
+<td>France</td>
+<td>Equities, ETFs, bonds, derivatives</td>
+<td>CAC 40</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="migration-of-borsa-italiana-from-millennium-exchange" class="level3">
+<h3 class="anchored" data-anchor-id="migration-of-borsa-italiana-from-millennium-exchange">6.2 Migration of Borsa Italiana from Millennium Exchange</h3>
+<p>One of the most significant technology migrations in recent European exchange history: - Borsa Italiana was acquired by Euronext from LSEG in April 2021 - Full migration from Millennium Exchange to Optiq completed in three phases over 12 months (March 2023 – Q1 2024) - Over 32,500 instruments migrated in Phase 2 alone - Required coordination between Euronext technology teams, Italian market participants, and ISVs (e.g., ION/LIST’s FastTrade) - Represented Optiq’s ability to absorb a major new market onto the existing platform</p>
+<p>[Source: Euronext, “Behind the scenes: migrating Borsa Italiana Equities and ETFs to Optiq”, https://www.euronext.com/en/news/behind-scenes-migrating-borsa-italiana-equities-and-etfs-optiqr, accessed 2026-04-06] [Source: Finance Magnates, “Italian Investors Unlock Trading with Optiq Migration”, https://www.financemagnates.com/institutional-forex/italian-investors-gain-access-to-new-trading-capabilities-with-optiq-platform-migration/, accessed 2026-04-06]</p>
+</section>
+<section id="harmonized-cash-and-derivatives-messaging" class="level3">
+<h3 class="anchored" data-anchor-id="harmonized-cash-and-derivatives-messaging">6.3 Harmonized Cash and Derivatives Messaging</h3>
+<ul>
+<li>Single SBE/FIX messaging model covers both cash and derivatives markets</li>
+<li>Reduces integration effort for firms trading across multiple asset classes</li>
+<li>Consistent order types, execution reports, and market data formats regardless of asset class</li>
+<li>MiFID II compliance built into the messaging model (transaction reporting fields, investor identification)</li>
+</ul>
+</section>
+<section id="sbe-simple-binary-encoding-as-core-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="sbe-simple-binary-encoding-as-core-protocol">6.4 SBE (Simple Binary Encoding) as Core Protocol</h3>
+<ul>
+<li>Euronext adopted FIX Protocol Limited’s open SBE standard rather than developing a fully proprietary binary protocol</li>
+<li>Benefits: industry-standard tooling, wider SDK ecosystem, reduced vendor lock-in</li>
+<li>Fixed-position, fixed-length fields enable zero-copy direct access to message fields</li>
+<li>Avoids overhead of variable-length parsing required by traditional FIX tag-value format</li>
+</ul>
+</section>
+<section id="apache-kafka-persistence-layer" class="level3">
+<h3 class="anchored" data-anchor-id="apache-kafka-persistence-layer">6.5 Apache Kafka Persistence Layer</h3>
+<ul>
+<li>Unusual for exchange platforms: Euronext selected Apache Kafka (Confluent Platform) as the core persistence and event-sourcing layer</li>
+<li>Provides durable, ordered event log for all trading messages</li>
+<li>Proof of concept started with a Kafka-based matching engine prototype for an order book</li>
+<li>Production deployment handles sustained multi-million message/second throughput</li>
+<li>C++ integration with Kafka API for matching engine components</li>
+</ul>
+</section>
+<section id="green-data-center" class="level3">
+<h3 class="anchored" data-anchor-id="green-data-center">6.6 Green Data Center</h3>
+<ul>
+<li>100% renewable energy powering the primary trading infrastructure</li>
+<li>Hydroelectric, solar, and geothermal cooling at the Bergamo campus</li>
+<li>Euronext is among the first major exchanges to operate its core matching engine entirely on renewable energy</li>
+<li>Rating 4 (Tier IV equivalent) certification ensures high resilience despite the green power approach</li>
+</ul>
+</section>
+<section id="technology-licensing" class="level3">
+<h3 class="anchored" data-anchor-id="technology-licensing">6.7 Technology Licensing</h3>
+<ul>
+<li>Optiq is offered as a licensable product for other exchange operators and venue operators</li>
+<li>Euronext positions it as a turnkey trading platform solution</li>
+<li>Includes matching engine, order gateway, market data gateway, and surveillance components</li>
+<li>Reflects a business model similar to Nasdaq’s market technology licensing and LSEG Millennium IT’s approach</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="comparison-notes" class="level2">
+<h2 class="anchored" data-anchor-id="comparison-notes">7. Comparison Notes</h2>
+<section id="vs.-krx-exture" class="level3">
+<h3 class="anchored" data-anchor-id="vs.-krx-exture">vs.&nbsp;KRX Exture+</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 41%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Euronext Optiq</th>
+<th>KRX Exture+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Launch Year</td>
+<td>2016–2019 (phased); ongoing expansion through 2024</td>
+<td>2014</td>
+</tr>
+<tr class="even">
+<td>Developer</td>
+<td>In-house (Euronext technology teams)</td>
+<td>In-house (KRX with Koscom subsidiary)</td>
+</tr>
+<tr class="odd">
+<td>Markets Served</td>
+<td>7 national regulated markets across 7 countries</td>
+<td>Single unified market (KOSPI, KOSDAQ, derivatives, bonds)</td>
+</tr>
+<tr class="even">
+<td>Geography</td>
+<td>Pan-European (Netherlands, Belgium, France, Portugal, Ireland, Norway, Italy)</td>
+<td>Single country (South Korea)</td>
+</tr>
+<tr class="odd">
+<td>Claimed Latency</td>
+<td>~15 microseconds average (order round-trip, official claim)</td>
+<td>~70 microseconds (matching engine)</td>
+</tr>
+<tr class="even">
+<td>Capacity vs.&nbsp;Predecessor</td>
+<td>10x improvement over UTP</td>
+<td>~285x improvement over original EXTURE</td>
+</tr>
+<tr class="odd">
+<td>Asset Class Coverage</td>
+<td>Equities, ETFs, bonds, derivatives, warrants, commodities, FX</td>
+<td>Equities, bonds, derivatives (futures/options), ETFs, warrants</td>
+</tr>
+<tr class="even">
+<td>Matching Model</td>
+<td>Price-time priority (standard across Euronext markets)</td>
+<td>Price-time priority</td>
+</tr>
+<tr class="odd">
+<td>Order Entry Protocol</td>
+<td>SBE (binary, open standard) + FIX 5.0</td>
+<td>FIX-based + proprietary API [unverified]</td>
+</tr>
+<tr class="even">
+<td>Market Data Protocol</td>
+<td>SBE over UDP/IP multicast; LZ4 compression option</td>
+<td>Proprietary binary [unverified]; Solace PubSub+ messaging middleware</td>
+</tr>
+<tr class="odd">
+<td>Persistence Layer</td>
+<td>Apache Kafka (Confluent Platform)</td>
+<td>Not publicly disclosed</td>
+</tr>
+<tr class="even">
+<td>Primary Data Center</td>
+<td>Bergamo, Italy (Aruba IT3 campus; 12 MW initial)</td>
+<td>Busan Data Center (primary since 2014)</td>
+</tr>
+<tr class="odd">
+<td>DR Site</td>
+<td>Paris region (separate physical DC)</td>
+<td>Seoul DR site [unverified]</td>
+</tr>
+<tr class="even">
+<td>DR Model</td>
+<td>Active/Passive with annual external testing</td>
+<td>Active/Standby [unverified]</td>
+</tr>
+<tr class="odd">
+<td>Data Center Power</td>
+<td>100% renewable energy (hydroelectric, solar, geothermal)</td>
+<td>Not publicly disclosed</td>
+</tr>
+<tr class="even">
+<td>Multi-Currency</td>
+<td>Yes (EUR, GBP, NOK, USD, CHF, etc.)</td>
+<td>Single currency (KRW)</td>
+</tr>
+<tr class="odd">
+<td>Regulatory Framework</td>
+<td>MiFID II / MAR across multiple national regulators + ESMA</td>
+<td>Under FSC / FSS oversight</td>
+</tr>
+<tr class="even">
+<td>Technology Export</td>
+<td>Licensed to other exchanges/venues (commercial offering)</td>
+<td>Exported to other countries (Laos, Cambodia, etc.)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-differentiators" class="level3">
+<h3 class="anchored" data-anchor-id="key-differentiators">Key Differentiators</h3>
+<p><strong>Euronext Optiq Strengths:</strong> 1. <strong>Pan-European unification</strong>: Only exchange platform serving 7 distinct national markets from a single matching engine – operationally unique in scope 2. <strong>Ultra-low latency</strong>: ~15 microsecond average order round-trip is competitive with global best-in-class, though detailed percentile data is not published 3. <strong>Open protocol standards</strong>: Adoption of SBE (FIX Protocol Limited standard) reduces integration burden vs.&nbsp;fully proprietary protocols 4. <strong>Modern persistence architecture</strong>: Apache Kafka as event-sourcing layer is a distinctive architectural choice among major exchanges 5. <strong>Green infrastructure</strong>: 100% renewable-powered primary data center; relevant for ESG-conscious participants and regulatory trends 6. <strong>Proven migration capability</strong>: Successfully absorbed Borsa Italiana (32,500+ instruments) and Oslo Bors onto existing platform, demonstrating scalability 7. <strong>Technology licensing</strong>: Commercial offering of Optiq to other venues provides additional revenue stream and technology validation</p>
+<p><strong>KRX Exture+ Strengths:</strong> 1. <strong>Broader derivatives coverage</strong>: Single platform handles a wider range of derivative products including index, currency, interest rate, commodity futures/options 2. <strong>Technology independence</strong>: Fully in-house development with proven export track record 3. <strong>Simpler operational model</strong>: Single country, single currency, single regulatory framework eliminates cross-border complexity 4. <strong>Global competitiveness</strong>: 70-microsecond matching engine latency remains competitive at global top-tier level 5. <strong>Unified market</strong>: All Korean capital market products on one exchange reduces cross-venue fragmentation</p>
+<p><strong>Architectural Comparison:</strong> - Optiq’s “one platform, many countries” model is a <strong>geographic unification</strong> approach – solving the complexity of operating multiple national markets on a single technology stack with harmonized protocols - Exture+’s “one platform, one market” model is an <strong>asset-class unification</strong> approach – optimizing for comprehensive coverage within a single jurisdiction - Optiq’s use of Apache Kafka as a persistence layer is architecturally distinctive; most exchanges use custom-built or proprietary event stores. This choice trades some theoretical latency overhead for operational benefits (replayability, fault tolerance, ecosystem tooling) - Optiq’s SBE protocol adoption aligns with European trends toward open standards (MiFID II drove standardization); KRX’s approach is more typical of Asian exchanges favoring proprietary protocols - The Bergamo data center migration (from UK to Italy, post-Brexit/post-acquisition) demonstrates Optiq’s portability – the entire matching engine was relocated with minimal impact. This is relevant for KRX as it considers future infrastructure evolution - Both platforms demonstrate that in-house development remains viable and competitive against vendor solutions (Nasdaq OMX, LSEG Millennium IT) at the global top tier</p>
+<hr>
+</section>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<section id="official-euronext-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="official-euronext-documentation">Official Euronext Documentation</h3>
+<ul>
+<li>[Source: Euronext, “Optiq: technology solutions for exchanges and venue operators”, https://www.euronext.com/en/technology/optiq-tech-solutions-for-exchanges-and-venue-operators, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Euronext introduces Optiq, the new technology platform powering cash markets”, July 2018, https://www.euronext.com/en/about/media/euronext-press-releases/euronext-introduces-optiq-new-technology-platform-powering-cash, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Successful roll-out of Euronext Derivatives markets to Optiq trading platform”, December 2019, https://www.euronext.com/en/about/media/euronext-press-releases/successful-roll-out-euronext-derivatives-markets-optiq-trading, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Successful migration of Borsa Italiana equity and ETF markets to the Optiq trading platform”, March 2023, https://www.euronext.com/en/about/media/euronext-press-releases/successful-migration-borsa-italiana-equity-and-etf-markets, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Successful completion of the migration of Borsa Italiana to the Optiq trading platform”, 2024, https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-borsa-italiana-optiqr-trading, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Optiq OEG SBE Messages – Interface Specification v5.38.0”, https://connect.euronext.com/sites/default/files/it-documentation/Optiq%20OEG%20SBE%20Messages%20-%20Interface%20Specification%20-%20Euronext%20Cash%20and%20Derivatives%20Markets%20-%20External%20-%20v5.38.0.pdf, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Optiq OEG Client Specifications – FIX 5.0 Interface v4.12.0”, https://connect2.euronext.com/sites/default/files/it-documentation/Euronext%20Markets%20-%20Optiq%20OEG%20Client%20Specifications%20-%20FIX%205.0%20Interface%20-%20v4.12.0.pdf, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Optiq OEG Connectivity Specifications v3.4 – Aruba Data Centre”, https://connect2.euronext.com/sites/default/files/it-documentation/Euronext%20Markets%20%20OPTIQ%20OEG%20Connectivity%20Specifications%20v3.4%20-%20Aruba%20Data%20Centre.pdf, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Optiq OEG Throttling Mechanism v2.2”, https://connect2.euronext.com/sites/default/files/it-documentation/euronext_cash_markets_-<em>oeg_throttling_mechanism</em>-_v2.2.pdf, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Optiq MDG Client Specifications v4.1.0”, https://connect2.euronext.com/sites/default/files/it-documentation/Euronext%20Markets%20-%20Optiq%20MDG%20Client%20Specifications%20v4.1.0.pdf, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Optiq MDG Messages – Interface Specification v6.36.320”, https://connect.euronext.com/sites/default/files/it-documentation/optiq-mdg-messages-interface-specification-euronext-cash-and-derivatives-markets-external-v636320.pdf, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Optiq Drop Copy Service – Interface Specification v5.351.0”, https://connect.euronext.com/sites/default/files/it-documentation/Optiq%20Drop%20Copy%20Service%20-%20Interface%20Specification%20-%20Euronext%20Cash%20and%20Derivatives%20Markets%20-%20External%20-%20v5.351.0.pdf, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Optiq MDG Reference Data”, https://www.euronext.com/en/products-services/optiq-mdg-reference-data, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Euronext Data Centre”, https://www.euronext.com/en/technology/euronext-data-centre, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Successful completion of the migration of Euronext’s Core Data Centre”, June 2022, https://www.euronext.com/en/about/media/euronext-press-releases/successful-completion-migration-euronexts-core-data-centre, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Disaster Recovery Test 25 October 2025: Guidelines for Participants”, https://connect.euronext.com/sites/default/files/it-documentation/euronext-disaster-recovery-test-25-october-2025-guidelines-participants.pdf, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “Market Outage Plan – Euronext Regulated Markets”, December 2024, https://connect2.euronext.com/en/media/1390/download, accessed 2026-04-06]</li>
+<li>[Source: Euronext, “New, Green Data Centre: A Glimpse into the Future”, https://www.euronext.com/en/news/new-green-data-centre-bergamo, accessed 2026-04-06]</li>
+</ul>
+</section>
+<section id="third-party-sources" class="level3">
+<h3 class="anchored" data-anchor-id="third-party-sources">Third-Party Sources</h3>
+<ul>
+<li>[Source: Confluent, “Euronext builds high-speed trading platform”, https://www.confluent.io/customers/euronext/, accessed 2026-04-06]</li>
+<li>[Source: Confluent, “Building an Event-Driven Stock Platform at Euronext”, https://www.confluent.io/blog/euronext-apache-kafka-use-case-with-confluent-platform/, accessed 2026-04-06]</li>
+<li>[Source: The TRADE, “Inside Europe’s new fortress: Euronext’s continental data centre and trading floor”, https://www.thetradenews.com/inside-europes-new-fortress-euronexts-continental-data-centre-and-trading-floor/, accessed 2026-04-06]</li>
+<li>[Source: Mondovisione, “Oslo Optiq Migration – High-Level Timeline and Scope”, https://mondovisione.com/news/oslo-optiq-migration-high-level-timeline-and-scope/, accessed 2026-04-06]</li>
+<li>[Source: Finance Magnates, “Italian Investors Unlock Trading with Optiq Migration”, https://www.financemagnates.com/institutional-forex/italian-investors-gain-access-to-new-trading-capabilities-with-optiq-platform-migration/, accessed 2026-04-06]</li>
+<li>[Source: Traders Magazine, “Euronext Launches New OPTIQ Cash Market Trading Platform”, https://www.tradersmagazine.com/news/euronext-launches-new-optiq-cash-market-trading-platform/, accessed 2026-04-06]</li>
+<li>[Source: FinTech Futures, “Euronext moves cash markets to its Optiq platform”, https://www.fintechfutures.com/branches-atms/euronext-moves-cash-markets-to-its-optiq-platform, accessed 2026-04-06]</li>
+<li>[Source: WatersTechnology, “Euronext Debuts Next-Generation Platform Optiq”, https://www.waterstechnology.com/exchanges-trading-venues/exchange-technologies/3743206/euronext-debuts-next-generation-platform-optiq, accessed 2026-04-06]</li>
+<li>[Source: OnixS, “Euronext Optiq Market Data Gateway (MDG) Market Data Handler SDK”, https://www.onixs.biz/euronext-optiq-market-data-gateway-feed-handler.html, accessed 2026-04-06]</li>
+<li>[Source: DataCenterMap, “Aruba Global Cloud IT3, Bergamo”, https://www.datacentermap.com/italy/bergamo/global-cdc-it3/, accessed 2026-04-06]</li>
+<li>[Source: Wikipedia, “Euronext”, https://en.wikipedia.org/wiki/Euronext, accessed 2026-04-06]</li>
+<li>[Source: MarketsWiki, “Euronext”, https://www.marketswiki.com/wiki/Euronext, accessed 2026-04-06]</li>
+</ul>
+</section>
+<section id="krxexture-sources" class="level3">
+<h3 class="anchored" data-anchor-id="krxexture-sources">KRX/Exture+ Sources</h3>
+<ul>
+<li>[Source: KRX, “EXTURE+ Trading”, https://global.krx.co.kr/contents/GLB/04/0402/0402020000/GLB0402020000.jsp, accessed 2026-04-06]</li>
+<li>[Source: PRWeb/Solace, “Korea Exchange Deploys Solace Systems”, October 2013, https://www.prweb.com/releases/2013/10/prweb11191574.htm, accessed 2026-04-06]</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

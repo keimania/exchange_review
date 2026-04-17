@@ -1,0 +1,2965 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>Eurex – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html">Exchanges</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/eurex.html">Eurex</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Derivatives Markets — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Derivatives Markets – Comparative Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exchanges</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Derivatives (Australian Securities Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cboe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cboe Global Markets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/eurex.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Eurex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Derivatives Market</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange Futures)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX Derivatives (Korea Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Derivatives Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU Derivatives Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">U.S. Derivatives Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 Trading Architecture – Eurex (Derivatives)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview-profile" id="toc-overview-profile" class="nav-link active" data-scroll-target="#overview-profile">1. Overview &amp; Profile</a>
+  <ul class="collapse">
+  <li><a href="#key-historical-milestones" id="toc-key-historical-milestones" class="nav-link" data-scroll-target="#key-historical-milestones">Key Historical Milestones</a></li>
+  </ul></li>
+  <li><a href="#market-structure" id="toc-market-structure" class="nav-link" data-scroll-target="#market-structure">2. Market Structure</a>
+  <ul class="collapse">
+  <li><a href="#market-segments" id="toc-market-segments" class="nav-link" data-scroll-target="#market-segments">2.1 Market Segments</a></li>
+  <li><a href="#trading-sessions" id="toc-trading-sessions" class="nav-link" data-scroll-target="#trading-sessions">2.2 Trading Sessions</a></li>
+  <li><a href="#tick-sizes" id="toc-tick-sizes" class="nav-link" data-scroll-target="#tick-sizes">2.3 Tick Sizes</a></li>
+  <li><a href="#lot-sizes" id="toc-lot-sizes" class="nav-link" data-scroll-target="#lot-sizes">2.4 Lot Sizes</a></li>
+  <li><a href="#market-maker-liquidity-provider-programs" id="toc-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#market-maker-liquidity-provider-programs">2.5 Market Maker / Liquidity Provider Programs</a></li>
+  </ul></li>
+  <li><a href="#trading-mechanism" id="toc-trading-mechanism" class="nav-link" data-scroll-target="#trading-mechanism">3. Trading Mechanism</a>
+  <ul class="collapse">
+  <li><a href="#auction-mechanisms" id="toc-auction-mechanisms" class="nav-link" data-scroll-target="#auction-mechanisms">3.1 Auction Mechanisms</a></li>
+  <li><a href="#continuous-trading" id="toc-continuous-trading" class="nav-link" data-scroll-target="#continuous-trading">3.2 Continuous Trading</a></li>
+  <li><a href="#price-discovery" id="toc-price-discovery" class="nav-link" data-scroll-target="#price-discovery">3.3 Price Discovery</a></li>
+  <li><a href="#order-priority-rules" id="toc-order-priority-rules" class="nav-link" data-scroll-target="#order-priority-rules">3.4 Order Priority Rules</a></li>
+  </ul></li>
+  <li><a href="#order-types" id="toc-order-types" class="nav-link" data-scroll-target="#order-types">4. Order Types</a>
+  <ul class="collapse">
+  <li><a href="#standard-order-types" id="toc-standard-order-types" class="nav-link" data-scroll-target="#standard-order-types">4.1 Standard Order Types</a></li>
+  <li><a href="#advanced-order-types" id="toc-advanced-order-types" class="nav-link" data-scroll-target="#advanced-order-types">4.2 Advanced Order Types</a></li>
+  <li><a href="#time-in-force-tif-options" id="toc-time-in-force-tif-options" class="nav-link" data-scroll-target="#time-in-force-tif-options">4.3 Time-in-Force (TIF) Options</a></li>
+  <li><a href="#order-modification-cancellation" id="toc-order-modification-cancellation" class="nav-link" data-scroll-target="#order-modification-cancellation">4.4 Order Modification &amp; Cancellation</a></li>
+  </ul></li>
+  <li><a href="#trading-system-technology-t7" id="toc-trading-system-technology-t7" class="nav-link" data-scroll-target="#trading-system-technology-t7">5. Trading System Technology – T7</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">5.1 Overview</a></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">5.2 Architecture</a></li>
+  <li><a href="#latency-throughput" id="toc-latency-throughput" class="nav-link" data-scroll-target="#latency-throughput">5.3 Latency &amp; Throughput</a></li>
+  <li><a href="#technology-stack" id="toc-technology-stack" class="nav-link" data-scroll-target="#technology-stack">5.4 Technology Stack</a></li>
+  <li><a href="#release-history" id="toc-release-history" class="nav-link" data-scroll-target="#release-history">5.5 Release History</a></li>
+  <li><a href="#disaster-recovery-business-continuity-drbcp" id="toc-disaster-recovery-business-continuity-drbcp" class="nav-link" data-scroll-target="#disaster-recovery-business-continuity-drbcp">5.6 Disaster Recovery &amp; Business Continuity (DR/BCP)</a></li>
+  </ul></li>
+  <li><a href="#market-data" id="toc-market-data" class="nav-link" data-scroll-target="#market-data">6. Market Data</a>
+  <ul class="collapse">
+  <li><a href="#market-data-interfaces" id="toc-market-data-interfaces" class="nav-link" data-scroll-target="#market-data-interfaces">6.1 Market Data Interfaces</a></li>
+  <li><a href="#technical-protocols" id="toc-technical-protocols" class="nav-link" data-scroll-target="#technical-protocols">6.2 Technical Protocols</a></li>
+  <li><a href="#data-levels" id="toc-data-levels" class="nav-link" data-scroll-target="#data-levels">6.3 Data Levels</a></li>
+  <li><a href="#historical-data" id="toc-historical-data" class="nav-link" data-scroll-target="#historical-data">6.4 Historical Data</a></li>
+  </ul></li>
+  <li><a href="#connectivity-access" id="toc-connectivity-access" class="nav-link" data-scroll-target="#connectivity-access">7. Connectivity &amp; Access</a>
+  <ul class="collapse">
+  <li><a href="#exchange-membership" id="toc-exchange-membership" class="nav-link" data-scroll-target="#exchange-membership">7.1 Exchange Membership</a></li>
+  <li><a href="#connection-methods" id="toc-connection-methods" class="nav-link" data-scroll-target="#connection-methods">7.2 Connection Methods</a></li>
+  <li><a href="#co-location" id="toc-co-location" class="nav-link" data-scroll-target="#co-location">7.3 Co-Location</a></li>
+  <li><a href="#certification" id="toc-certification" class="nav-link" data-scroll-target="#certification">7.4 Certification</a></li>
+  </ul></li>
+  <li><a href="#risk-controls-circuit-breakers" id="toc-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#risk-controls-circuit-breakers">8. Risk Controls &amp; Circuit Breakers</a>
+  <ul class="collapse">
+  <li><a href="#volatility-interruptions-circuit-breakers" id="toc-volatility-interruptions-circuit-breakers" class="nav-link" data-scroll-target="#volatility-interruptions-circuit-breakers">8.1 Volatility Interruptions (Circuit Breakers)</a></li>
+  <li><a href="#pre-trade-risk-controls" id="toc-pre-trade-risk-controls" class="nav-link" data-scroll-target="#pre-trade-risk-controls">8.2 Pre-Trade Risk Controls</a></li>
+  <li><a href="#post-trade-risk-controls" id="toc-post-trade-risk-controls" class="nav-link" data-scroll-target="#post-trade-risk-controls">8.3 Post-Trade Risk Controls</a></li>
+  </ul></li>
+  <li><a href="#regulatory-framework" id="toc-regulatory-framework" class="nav-link" data-scroll-target="#regulatory-framework">9. Regulatory Framework</a>
+  <ul class="collapse">
+  <li><a href="#supervisory-authorities" id="toc-supervisory-authorities" class="nav-link" data-scroll-target="#supervisory-authorities">9.1 Supervisory Authorities</a></li>
+  <li><a href="#key-regulations" id="toc-key-regulations" class="nav-link" data-scroll-target="#key-regulations">9.2 Key Regulations</a></li>
+  <li><a href="#surveillance-reporting" id="toc-surveillance-reporting" class="nav-link" data-scroll-target="#surveillance-reporting">9.3 Surveillance &amp; Reporting</a></li>
+  <li><a href="#cross-border-considerations" id="toc-cross-border-considerations" class="nav-link" data-scroll-target="#cross-border-considerations">9.4 Cross-Border Considerations</a></li>
+  </ul></li>
+  <li><a href="#fees-revenue-model" id="toc-fees-revenue-model" class="nav-link" data-scroll-target="#fees-revenue-model">10. Fees &amp; Revenue Model</a>
+  <ul class="collapse">
+  <li><a href="#trading-fees" id="toc-trading-fees" class="nav-link" data-scroll-target="#trading-fees">10.1 Trading Fees</a></li>
+  <li><a href="#clearing-fees" id="toc-clearing-fees" class="nav-link" data-scroll-target="#clearing-fees">10.2 Clearing Fees</a></li>
+  <li><a href="#connectivity-market-data-fees" id="toc-connectivity-market-data-fees" class="nav-link" data-scroll-target="#connectivity-market-data-fees">10.3 Connectivity &amp; Market Data Fees</a></li>
+  </ul></li>
+  <li><a href="#recent-developments" id="toc-recent-developments" class="nav-link" data-scroll-target="#recent-developments">11. Recent Developments</a>
+  <ul class="collapse">
+  <li><a href="#t7-system-upgrades" id="toc-t7-system-upgrades" class="nav-link" data-scroll-target="#t7-system-upgrades">11.1 T7 System Upgrades</a></li>
+  <li><a href="#new-products-market-initiatives" id="toc-new-products-market-initiatives" class="nav-link" data-scroll-target="#new-products-market-initiatives">11.2 New Products &amp; Market Initiatives</a></li>
+  <li><a href="#access-membership-changes" id="toc-access-membership-changes" class="nav-link" data-scroll-target="#access-membership-changes">11.3 Access &amp; Membership Changes</a></li>
+  <li><a href="#regulatory-changes" id="toc-regulatory-changes" class="nav-link" data-scroll-target="#regulatory-changes">11.4 Regulatory Changes</a></li>
+  <li><a href="#strategic-initiatives" id="toc-strategic-initiatives" class="nav-link" data-scroll-target="#strategic-initiatives">11.5 Strategic Initiatives</a></li>
+  </ul></li>
+  <li><a href="#product-catalog-derivatives-specific" id="toc-product-catalog-derivatives-specific" class="nav-link" data-scroll-target="#product-catalog-derivatives-specific">12. Product Catalog (Derivatives-Specific)</a>
+  <ul class="collapse">
+  <li><a href="#interest-rate-derivatives" id="toc-interest-rate-derivatives" class="nav-link" data-scroll-target="#interest-rate-derivatives">12.1 Interest Rate Derivatives</a></li>
+  <li><a href="#equity-index-derivatives" id="toc-equity-index-derivatives" class="nav-link" data-scroll-target="#equity-index-derivatives">12.2 Equity Index Derivatives</a></li>
+  <li><a href="#equity-derivatives-single-stock" id="toc-equity-derivatives-single-stock" class="nav-link" data-scroll-target="#equity-derivatives-single-stock">12.3 Equity Derivatives (Single Stock)</a></li>
+  <li><a href="#dividend-derivatives" id="toc-dividend-derivatives" class="nav-link" data-scroll-target="#dividend-derivatives">12.4 Dividend Derivatives</a></li>
+  <li><a href="#volatility-derivatives" id="toc-volatility-derivatives" class="nav-link" data-scroll-target="#volatility-derivatives">12.5 Volatility Derivatives</a></li>
+  <li><a href="#fx-derivatives" id="toc-fx-derivatives" class="nav-link" data-scroll-target="#fx-derivatives">12.6 FX Derivatives</a></li>
+  <li><a href="#etf-etc-derivatives" id="toc-etf-etc-derivatives" class="nav-link" data-scroll-target="#etf-etc-derivatives">12.7 ETF &amp; ETC Derivatives</a></li>
+  <li><a href="#cryptocurrency-derivatives" id="toc-cryptocurrency-derivatives" class="nav-link" data-scroll-target="#cryptocurrency-derivatives">12.8 Cryptocurrency Derivatives</a></li>
+  </ul></li>
+  <li><a href="#key-contract-specifications-top-5-products-by-volume" id="toc-key-contract-specifications-top-5-products-by-volume" class="nav-link" data-scroll-target="#key-contract-specifications-top-5-products-by-volume">13. Key Contract Specifications (Top 5 Products by Volume)</a>
+  <ul class="collapse">
+  <li><a href="#euro-stoxx-50-index-futures-fesx" id="toc-euro-stoxx-50-index-futures-fesx" class="nav-link" data-scroll-target="#euro-stoxx-50-index-futures-fesx">13.1 EURO STOXX 50 Index Futures (FESX)</a></li>
+  <li><a href="#euro-stoxx-50-index-options-oesx" id="toc-euro-stoxx-50-index-options-oesx" class="nav-link" data-scroll-target="#euro-stoxx-50-index-options-oesx">13.2 EURO STOXX 50 Index Options (OESX)</a></li>
+  <li><a href="#euro-bund-futures-fgbl" id="toc-euro-bund-futures-fgbl" class="nav-link" data-scroll-target="#euro-bund-futures-fgbl">13.3 Euro-Bund Futures (FGBL)</a></li>
+  <li><a href="#dax-futures-fdax" id="toc-dax-futures-fdax" class="nav-link" data-scroll-target="#dax-futures-fdax">13.4 DAX Futures (FDAX)</a></li>
+  <li><a href="#euro-bobl-futures-fgbm" id="toc-euro-bobl-futures-fgbm" class="nav-link" data-scroll-target="#euro-bobl-futures-fgbm">13.5 Euro-Bobl Futures (FGBM)</a></li>
+  </ul></li>
+  <li><a href="#margin-framework-eurex-clearing-prisma" id="toc-margin-framework-eurex-clearing-prisma" class="nav-link" data-scroll-target="#margin-framework-eurex-clearing-prisma">14. Margin Framework – Eurex Clearing Prisma</a>
+  <ul class="collapse">
+  <li><a href="#overview-1" id="toc-overview-1" class="nav-link" data-scroll-target="#overview-1">14.1 Overview</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">14.2 Methodology</a></li>
+  <li><a href="#margin-types" id="toc-margin-types" class="nav-link" data-scroll-target="#margin-types">14.3 Margin Types</a></li>
+  <li><a href="#cross-margining" id="toc-cross-margining" class="nav-link" data-scroll-target="#cross-margining">14.4 Cross-Margining</a></li>
+  <li><a href="#margin-call-process" id="toc-margin-call-process" class="nav-link" data-scroll-target="#margin-call-process">14.5 Margin Call Process</a></li>
+  <li><a href="#cloud-prisma-margin-estimator-cpme" id="toc-cloud-prisma-margin-estimator-cpme" class="nav-link" data-scroll-target="#cloud-prisma-margin-estimator-cpme">14.6 Cloud Prisma Margin Estimator (cPME)</a></li>
+  </ul></li>
+  <li><a href="#position-limits" id="toc-position-limits" class="nav-link" data-scroll-target="#position-limits">15. Position Limits</a>
+  <ul class="collapse">
+  <li><a href="#framework" id="toc-framework" class="nav-link" data-scroll-target="#framework">15.1 Framework</a></li>
+  <li><a href="#commodity-derivatives-position-limits" id="toc-commodity-derivatives-position-limits" class="nav-link" data-scroll-target="#commodity-derivatives-position-limits">15.2 Commodity Derivatives Position Limits</a></li>
+  <li><a href="#hedge-exemptions" id="toc-hedge-exemptions" class="nav-link" data-scroll-target="#hedge-exemptions">15.3 Hedge Exemptions</a></li>
+  <li><a href="#non-commodity-position-limits" id="toc-non-commodity-position-limits" class="nav-link" data-scroll-target="#non-commodity-position-limits">15.4 Non-Commodity Position Limits</a></li>
+  </ul></li>
+  <li><a href="#block-trading-efp-efs-off-book-trading-facilities" id="toc-block-trading-efp-efs-off-book-trading-facilities" class="nav-link" data-scroll-target="#block-trading-efp-efs-off-book-trading-facilities">16. Block Trading / EFP / EFS – Off-Book Trading Facilities</a>
+  <ul class="collapse">
+  <li><a href="#eurex-t7-entry-services-tes" id="toc-eurex-t7-entry-services-tes" class="nav-link" data-scroll-target="#eurex-t7-entry-services-tes">16.1 Eurex T7 Entry Services (TES)</a></li>
+  <li><a href="#eurex-enlight-selective-rfq-platform" id="toc-eurex-enlight-selective-rfq-platform" class="nav-link" data-scroll-target="#eurex-enlight-selective-rfq-platform">16.2 Eurex EnLight – Selective RFQ Platform</a></li>
+  </ul></li>
+  <li><a href="#delivery-settlement" id="toc-delivery-settlement" class="nav-link" data-scroll-target="#delivery-settlement">17. Delivery &amp; Settlement</a>
+  <ul class="collapse">
+  <li><a href="#cash-settlement" id="toc-cash-settlement" class="nav-link" data-scroll-target="#cash-settlement">17.1 Cash Settlement</a></li>
+  <li><a href="#physical-delivery" id="toc-physical-delivery" class="nav-link" data-scroll-target="#physical-delivery">17.2 Physical Delivery</a></li>
+  <li><a href="#variation-margin-daily-settlement" id="toc-variation-margin-daily-settlement" class="nav-link" data-scroll-target="#variation-margin-daily-settlement">17.3 Variation Margin (Daily Settlement)</a></li>
+  </ul></li>
+  <li><a href="#appendix-comparison-with-krx-derivatives-market" id="toc-appendix-comparison-with-krx-derivatives-market" class="nav-link" data-scroll-target="#appendix-comparison-with-krx-derivatives-market">Appendix: Comparison with KRX Derivatives Market</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html">Exchanges</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/eurex.html">Eurex</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Eurex</h1>
+<p class="subtitle lead">Derivatives &gt; Exchanges</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-06 <strong>Research Tier:</strong> Tier 1 <strong>Domain:</strong> Derivatives</p>
+</blockquote>
+<hr>
+<section id="overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="overview-profile">1. Overview &amp; Profile</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Official Name</td>
+<td>Eurex Frankfurt AG (operates Eurex Deutschland and Eurex Zurich)</td>
+</tr>
+<tr class="even">
+<td>Abbreviation</td>
+<td>EUREX</td>
+</tr>
+<tr class="odd">
+<td>Website</td>
+<td>https://www.eurex.com</td>
+</tr>
+<tr class="even">
+<td>Year Established</td>
+<td>1998 (merger of DTB Deutsche Terminborse and SOFFEX)</td>
+</tr>
+<tr class="odd">
+<td>Country / City</td>
+<td>Germany / Frankfurt am Main (Mergenthalerallee 61, 65760 Eschborn); also Zurich, Switzerland</td>
+</tr>
+<tr class="even">
+<td>Ownership Structure</td>
+<td>Wholly owned subsidiary of Deutsche Borse AG (publicly listed, ticker DB1); Deutsche Borse acquired SIX Group’s remaining stake in Eurex Zurich AG in January 2012</td>
+</tr>
+<tr class="odd">
+<td>Parent Company / Group</td>
+<td>Deutsche Borse Group – vertically integrated group encompassing Eurex (derivatives), Xetra (cash equities), Eurex Clearing (CCP), Clearstream (settlement/custody), EEX (energy), 360T (FX), STOXX/Qontigo (indices/analytics)</td>
+</tr>
+<tr class="even">
+<td>Regulatory Authority</td>
+<td>Bundesanstalt fur Finanzdienstleistungsaufsicht (BaFin) as primary regulator; Hessische Borsaufsicht (Exchange Supervisory Authority of Hesse); European Securities and Markets Authority (ESMA) for CCP supervision under EMIR; FINMA (Switzerland) for Eurex Zurich</td>
+</tr>
+<tr class="odd">
+<td>Annual Trading Volume (2025)</td>
+<td>2,065.9 million contracts (down 1% YoY); interest rate derivatives up 8%, equity derivatives down 1%, index derivatives down 11%</td>
+</tr>
+<tr class="even">
+<td>Annual Trading Volume (2024)</td>
+<td>2,080.5 million contracts (up 9% YoY)</td>
+</tr>
+<tr class="odd">
+<td>OTC Clearing Notional Outstanding</td>
+<td>EUR 33,411 billion (end-2024, up 12% YoY); average daily cleared volume EUR 280 billion (2025, up 35% from 2024)</td>
+</tr>
+<tr class="even">
+<td>Eurex Repo Volume</td>
+<td>EUR 406.1 billion average term-adjusted volume (2025, record year, up 20% YoY)</td>
+</tr>
+<tr class="odd">
+<td>Listed Instruments</td>
+<td>1,000+ futures and 700+ options across 19 countries; 900+ single stock futures; 500+ equity options</td>
+</tr>
+<tr class="even">
+<td>Asset Classes</td>
+<td>9 asset classes: Interest Rate, Equity Index, Equity (Single Stock), Volatility, Dividend, FX, ETF/ETC, Commodity, Cryptocurrency</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Eurex, “Full year and December 2025 figures at Eurex”, January 2026, https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494] [Source: Eurex, “Full year and December 2024 figures at Eurex”, January 2025, https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2024-figures-at-Eurex-4250318]</p>
+<section id="key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="key-historical-milestones">Key Historical Milestones</h3>
+<ul>
+<li><strong>1990</strong>: Deutsche Terminborse (DTB) launched as one of the world’s first fully electronic derivatives exchanges in Frankfurt</li>
+<li><strong>1988</strong>: Swiss Options and Financial Futures Exchange (SOFFEX) established in Zurich</li>
+<li><strong>1997</strong>: DTB distributes electronic screens across Europe and the United States; begins capturing Bund futures liquidity from LIFFE’s open outcry pit</li>
+<li><strong>1998 (November 30)</strong>: <strong>Eurex established</strong> through the merger of DTB and SOFFEX, creating the world’s first cross-border electronic derivatives exchange linking Frankfurt and Zurich</li>
+<li><strong>1999</strong>: Eurex overtakes CBOT as the world’s largest derivatives exchange by contract volume</li>
+<li><strong>2000</strong>: Launch of Eurex US initiative (later discontinued in 2007)</li>
+<li><strong>2002</strong>: Eurex Clearing AG established as a central counterparty</li>
+<li><strong>2003</strong>: Launch of Eurex Bonds (electronic fixed income trading platform)</li>
+<li><strong>2007</strong>: Eurex US operations wound down; Eurex Credit Clear initiative launched</li>
+<li><strong>2010</strong>: Launch of Eurex OTC Clear for interest rate swaps</li>
+<li><strong>2012</strong>: Deutsche Borse acquires SIX Group’s remaining shares in Eurex Zurich AG, becoming sole owner</li>
+<li><strong>2012</strong>: Introduction of <strong>Eurex Clearing Prisma</strong> portfolio-based margining methodology</li>
+<li><strong>2013</strong>: European Commission blocks proposed merger of Deutsche Borse with NYSE Euronext</li>
+<li><strong>2014</strong>: Extended Asian trading hours introduced for key benchmark products (01:00 CET)</li>
+<li><strong>2015</strong>: Eurex Repo GC Pooling reaches record volumes</li>
+<li><strong>2017</strong>: <strong>T7 trading system launched for Eurex</strong> (shared platform with Xetra, replacing legacy systems)</li>
+<li><strong>2018</strong>: MiFID II/MiFIR comes into effect; Eurex EnLight RFQ platform launched</li>
+<li><strong>2019</strong>: Launch of ESG Index Derivatives (STOXX ESG-X futures and options)</li>
+<li><strong>2020</strong>: COVID-19 pandemic drives record volatility and trading volumes</li>
+<li><strong>2021</strong>: Launch of Credit Index Futures and Three-Month Euro STR Futures</li>
+<li><strong>2022</strong>: Record trading volumes; crypto derivatives initiative begins</li>
+<li><strong>2023</strong>: SimCorp acquisition by Deutsche Borse completed; ongoing T7 upgrades</li>
+<li><strong>2024</strong>: Revenue exceeds EUR 5.6 billion for Deutsche Borse Group; launch of D7 digital post-trade platform</li>
+<li><strong>2025</strong>: T7 Release 14.0 launched (November 10, 2025); Sponsored Access model introduced; Systematic QIS Index Futures launched; ESG derivatives notional exceeds EUR 30 billion cumulative; new Eurex Liquidity Provider framework for OESX</li>
+</ul>
+<p>[Source: Wikipedia, “Eurex”, https://en.wikipedia.org/wiki/Eurex] [Source: MarketsWiki, “Eurex”, https://www.marketswiki.com/wiki/Eurex]</p>
+<hr>
+</section>
+</section>
+<section id="market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="market-structure">2. Market Structure</h2>
+<section id="market-segments" class="level3">
+<h3 class="anchored" data-anchor-id="market-segments">2.1 Market Segments</h3>
+<p>Eurex organizes its derivatives products across the following major segments:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 37%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Segment</th>
+<th>Key Products</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Interest Rate Derivatives</strong></td>
+<td>Euro-Bund, Euro-Bobl, Euro-Schatz, Euro-Buxl futures &amp; options; Euribor futures; Euro STR futures; Credit Index Futures</td>
+<td>Covers the entire euro yield curve from overnight to long-dated; includes government bond futures, money market futures, and OTC IRS clearing</td>
+</tr>
+<tr class="even">
+<td><strong>Equity Index Derivatives</strong></td>
+<td>EURO STOXX 50, DAX, MDAX, STOXX Europe 600, MSCI, FTSE</td>
+<td>Benchmark index futures and options; includes standard, mini, and micro contracts; ESG and total return variants</td>
+</tr>
+<tr class="odd">
+<td><strong>Equity Derivatives (Single Stock)</strong></td>
+<td>900+ single stock futures, 500+ equity options</td>
+<td>Covers STOXX Europe 600 components and major US/Canadian shares</td>
+</tr>
+<tr class="even">
+<td><strong>Dividend Derivatives</strong></td>
+<td>Index dividend futures (EURO STOXX 50, DAX); 80+ single stock dividend futures</td>
+<td>Pure dividend exposure instruments</td>
+</tr>
+<tr class="odd">
+<td><strong>Volatility Derivatives</strong></td>
+<td>VSTOXX futures and options; Variance futures (EVAR)</td>
+<td>Implied volatility trading on EURO STOXX 50 via VSTOXX index</td>
+</tr>
+<tr class="even">
+<td><strong>FX Derivatives</strong></td>
+<td>Rolling Spot Futures, Classic FX Futures &amp; Options</td>
+<td>Value dates from spot to 3 years; deliverable and non-deliverable</td>
+</tr>
+<tr class="odd">
+<td><strong>ETF &amp; ETC Derivatives</strong></td>
+<td>Futures and options on ETFs and ETCs</td>
+<td>Including commodity ETCs (Physical Gold, Crude Oil)</td>
+</tr>
+<tr class="even">
+<td><strong>Commodity Derivatives</strong></td>
+<td>Futures and options on commodity ETCs</td>
+<td>Physical Gold ETC (AUM &gt; EUR 4 billion)</td>
+</tr>
+<tr class="odd">
+<td><strong>Cryptocurrency Derivatives</strong></td>
+<td>Bitcoin and Ether futures</td>
+<td>Launched as part of digital assets expansion</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Eurex, “Markets”, https://www.eurex.com/ex-en/markets]</p>
+</section>
+<section id="trading-sessions" class="level3">
+<h3 class="anchored" data-anchor-id="trading-sessions">2.2 Trading Sessions</h3>
+<p>Eurex operates on Central European Time (CET/CEST) and covers three global time zones:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 34%">
+<col style="width: 25%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Session</th>
+<th>Local Time (CET)</th>
+<th>UTC (Winter)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Asian Trading Hours</td>
+<td>01:00 - 08:00</td>
+<td>00:00 - 07:00</td>
+<td>Extended hours for selected liquid futures (benchmark index and fixed income futures)</td>
+</tr>
+<tr class="even">
+<td>Pre-Trading</td>
+<td>07:30 - 08:00</td>
+<td>06:30 - 07:00</td>
+<td>System open; orders can be entered, modified, cancelled; no matching</td>
+</tr>
+<tr class="odd">
+<td>European Trading Hours (Main)</td>
+<td>08:00 - 17:30</td>
+<td>07:00 - 16:30</td>
+<td>Core European session; opening auction, continuous trading, closing auction</td>
+</tr>
+<tr class="even">
+<td>U.S. Trading Hours (Extended)</td>
+<td>17:30 - 22:00</td>
+<td>16:30 - 21:00</td>
+<td>Extended evening session for benchmark products</td>
+</tr>
+<tr class="odd">
+<td>Post-Trading</td>
+<td>22:00 - 22:30</td>
+<td>21:00 - 21:30</td>
+<td>Trade reporting; no new matching</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Product-Specific Variations:</strong> - <strong>Equity index futures/options (FESX, FDAX, etc.)</strong>: 08:00 - 22:00 CET (with Asian hours for selected products from 01:00) - <strong>Fixed income futures (FGBL, FGBM, FGBS)</strong>: 08:00 - 22:00 CET (with Asian hours from 01:00) - <strong>Equity options (single stock)</strong>: 09:00 - 17:30 CET - <strong>FX derivatives</strong>: 08:00 - 18:00 CET [unverified]</p>
+<p>[Source: Eurex, “Trading hours”, https://www.eurex.com/ex-en/trade/trading-hours] [Source: Eurex, “Trade Eurex Derivatives Across All Time Zones”, https://www.eurex.com/ex-en/trade/trading-hours/thx]</p>
+</section>
+<section id="tick-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="tick-sizes">2.3 Tick Sizes</h3>
+<p>Tick sizes vary by product. Representative examples:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Tick Size</th>
+<th>Tick Value (EUR)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EURO STOXX 50 Futures (FESX)</td>
+<td>1 index point</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>DAX Futures (FDAX)</td>
+<td>0.5 index points</td>
+<td>12.50</td>
+</tr>
+<tr class="odd">
+<td>Mini-DAX Futures (FDXM)</td>
+<td>1 index point</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Micro-DAX Futures (FDXS)</td>
+<td>1 index point</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Euro-Bund Futures (FGBL)</td>
+<td>0.01 (% of par)</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Euro-Bobl Futures (FGBM)</td>
+<td>0.01 (% of par)</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Euro-Schatz Futures (FGBS)</td>
+<td>0.005 (% of par)</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>EURO STOXX 50 Options (OESX)</td>
+<td>0.1 index point</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>DAX Options (ODAX)</td>
+<td>0.1 index point</td>
+<td>0.50</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Tick sizes for index derivatives were updated effective March 3, 2025, with changes to minimum price gradations in selected products.</p>
+<p>[Source: Eurex, various product specification pages, https://www.eurex.com/ex-en/markets]</p>
+</section>
+<section id="lot-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="lot-sizes">2.4 Lot Sizes</h3>
+<ul>
+<li><strong>Standard lot size</strong>: 1 contract for all derivatives products</li>
+<li><strong>Block trade minimum sizes</strong>: Vary by product; e.g., EURO STOXX 50 Options EnLight minimum block trade size is 1,000 contracts [unverified]</li>
+<li><strong>Minimum block trade sizes (MBTS)</strong> for T7 Entry Services and Eurex EnLight are published in TES parameter files</li>
+</ul>
+</section>
+<section id="market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="market-maker-liquidity-provider-programs">2.5 Market Maker / Liquidity Provider Programs</h3>
+<p>Eurex operates multiple market-making frameworks:</p>
+<ul>
+<li><strong>Permanent Market Makers</strong>: Provide continuous two-sided quotes; eligible for fee rebates and incentives</li>
+<li><strong>Regular Market Makers</strong>: Fulfill reduced quoting obligations compared to Permanent Market Makers</li>
+<li><strong>Designated Market Makers</strong>: Product-specific schemes; e.g., Euribor futures designated market-making scheme, single stock dividend futures designated market-making scheme</li>
+</ul>
+<p><strong>OESX (EURO STOXX 50 Options) Liquidity Provider Framework (effective July 2025):</strong></p>
+<p>Three-tier incentive structure: 1. <strong>Basis Building Block</strong>: Requires quoting all maturities over a wide delta range in the first two years with 90% coverage; ensures consistent quotation throughout the day 2. <strong>Advanced Building Block (Sliding-Scale Rebate)</strong>: Rewards based on time-weighted spread and size; LPs choose desired rebate level 3. <strong>Passive Volume Incentive</strong>: Rewards passive executions; incentive pool open to a limited number of qualifying LPs</p>
+<p>Quotation performance and payout of incentives are calculated automatically for all Eurex products.</p>
+<p>[Source: Eurex, “Market-Making and Liquidity provisioning”, https://www.eurex.com/ex-en/trade/market-making-and-liquidity-provisioning] [Source: Eurex, “Eurex introduces new liquidity framework”, 2025, https://www.eurex.com/ex-en/find/news-center/news/oesx-new-lp-scheme-4321212]</p>
+<hr>
+</section>
+</section>
+<section id="trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="trading-mechanism">3. Trading Mechanism</h2>
+<section id="auction-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="auction-mechanisms">3.1 Auction Mechanisms</h3>
+<p>Eurex employs multiple auction types within the T7 trading system:</p>
+<ul>
+<li><strong>Opening Auction</strong>: Begins the main trading phase; orders are collected in a call phase with indicative prices displayed. An uncrossing match occurs at the price that maximizes executable volume. Opening-Auction-Only orders become active and receive a new priority timestamp when the instrument enters the Opening Auction state</li>
+<li><strong>Closing Auction</strong>: Concentrates liquidity at the end of the main trading phase; determines the official closing price. Similar call-phase and uncrossing mechanics as the opening auction</li>
+<li><strong>Intraday Auction</strong>: Scheduled around midday for certain instruments; interrupts continuous trading temporarily to provide additional price discovery points</li>
+<li><strong>Volatility Auction</strong>: Triggered automatically when the potential trade price of an incoming order breaches configured price deviation limits (volatility interruption). The instrument moves from continuous trading into an auction call phase for orderly price discovery. The potential trade price is checked against reference prices from all executed trades within configured lookback time windows</li>
+<li><strong>Trade-at-Close</strong>: After the closing auction, orders can be matched continuously at the fixed closing auction price (no further price discovery)</li>
+</ul>
+<p>[Source: Eurex, “Trading phases”, https://www.eurex.com/ex-en/trade/trading-hours/trading-phases]</p>
+</section>
+<section id="continuous-trading" class="level3">
+<h3 class="anchored" data-anchor-id="continuous-trading">3.2 Continuous Trading</h3>
+<ul>
+<li><strong>Central limit order book (CLOB)</strong>: Fully electronic order-driven market</li>
+<li><strong>Matching</strong>: Continuous matching of buy and sell orders throughout the trading session</li>
+<li><strong>Synthetic matching</strong>: Calendar spreads are matched synthetically from outright contracts; T7 Release 14.0 extended this to Butterfly and Condor strategies for STIR futures (Euribor, Euro STR)</li>
+<li><strong>Market makers</strong>: Supplement order book liquidity via continuous quotes; not a quote-driven market</li>
+</ul>
+</section>
+<section id="price-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="price-discovery">3.3 Price Discovery</h3>
+<ul>
+<li>Primary price discovery occurs through the opening auction and continuous order book</li>
+<li><strong>Auction uncrossing algorithm</strong>: (1) Maximum executable volume, (2) Minimum surplus, (3) Reference price as tiebreaker</li>
+<li><strong>Closing price</strong>: Determined via closing auction; critical for derivatives settlement calculations, index calculations, and margin computation</li>
+<li><strong>Indicative prices</strong>: Displayed during auction call phases to guide price discovery</li>
+</ul>
+</section>
+<section id="order-priority-rules" class="level3">
+<h3 class="anchored" data-anchor-id="order-priority-rules">3.4 Order Priority Rules</h3>
+<ul>
+<li><strong>Price-time priority</strong>: Standard priority rule for most Eurex products – best price first, then earliest time at the same price</li>
+<li><strong>Market orders</strong> have priority over limit orders</li>
+<li><strong>Visible over hidden</strong>: At the same price, visible order quantities have priority over hidden (iceberg reserve) quantities</li>
+<li><strong>Pro-rata allocation</strong>: Used for specific products (e.g., certain interest rate options and Euribor futures) where orders at the same price are filled proportionally to their size rather than by time priority [unverified – pro-rata is common on European fixed income derivatives but exact Eurex product list requires confirmation]</li>
+</ul>
+<p>Note: The T7 system supports configurable matching algorithms per product, allowing the exchange to apply price-time or pro-rata matching as appropriate.</p>
+<hr>
+</section>
+</section>
+<section id="order-types" class="level2">
+<h2 class="anchored" data-anchor-id="order-types">4. Order Types</h2>
+<section id="standard-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="standard-order-types">4.1 Standard Order Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Order Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Market Order</strong></td>
+<td>Executed immediately at the best available price; no price limit specified. Not supported with IOC time-in-force</td>
+</tr>
+<tr class="even">
+<td><strong>Limit Order</strong></td>
+<td>Specifies a maximum buy price or minimum sell price; unfilled portion rests in the order book</td>
+</tr>
+<tr class="odd">
+<td><strong>Stop Market Order</strong></td>
+<td>Held at the stop server until the trigger price is reached, then released as a Market Order</td>
+</tr>
+<tr class="even">
+<td><strong>Stop Limit Order</strong></td>
+<td>Held at the stop server until the trigger price is reached, then released as a Limit Order. Time priority counts from when the Limit order is received by Eurex after the stop is triggered</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-order-types">4.2 Advanced Order Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Order Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>OCO (One-Cancels-Other)</strong></td>
+<td>Two linked orders where execution of one automatically cancels the other</td>
+</tr>
+<tr class="even">
+<td><strong>Iceberg Order</strong></td>
+<td>Only a portion of the total order volume is visible in the order book; a minimum of 5% of overall volume must be visible</td>
+</tr>
+<tr class="odd">
+<td><strong>Book or Cancel (BOC)</strong></td>
+<td>Order that is rejected if it would immediately match upon entry; ensures passive (maker) execution only</td>
+</tr>
+<tr class="even">
+<td><strong>Opening-Auction-Only</strong></td>
+<td>Active only during the opening auction; automatically cancelled if not filled during the opening auction</td>
+</tr>
+<tr class="odd">
+<td><strong>Closing-Auction-Only</strong></td>
+<td>Active only during the closing auction</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="time-in-force-tif-options" class="level3">
+<h3 class="anchored" data-anchor-id="time-in-force-tif-options">4.3 Time-in-Force (TIF) Options</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TIF</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Day</strong></td>
+<td>Order valid for the current trading day only; cancelled at end of session</td>
+</tr>
+<tr class="even">
+<td><strong>GTC (Good-Till-Cancelled)</strong></td>
+<td>Order remains active until explicitly cancelled or expired (maximum duration applies)</td>
+</tr>
+<tr class="odd">
+<td><strong>GTDate (Good-Till-Date)</strong></td>
+<td>Order remains active until a specified date</td>
+</tr>
+<tr class="even">
+<td><strong>IOC (Immediate-Or-Cancel)</strong></td>
+<td>Executes immediately as much as possible; any unfilled quantity is cancelled. Not available for Market orders or Stop orders</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="order-modification-cancellation" class="level3">
+<h3 class="anchored" data-anchor-id="order-modification-cancellation">4.4 Order Modification &amp; Cancellation</h3>
+<ul>
+<li>Orders can be modified (price, quantity, TIF) or cancelled at any time during appropriate trading phases</li>
+<li>Modifications that change the price or increase quantity result in a new time priority</li>
+<li>Modifications that decrease quantity preserve time priority</li>
+<li>Mass cancellation functionality available for participants to cancel all orders in a product or across all products</li>
+</ul>
+<p>[Source: Eurex, “Order types”, https://www.eurex.com/ex-en/trade/order-book-trading/order-types] [Source: Trading Technologies, “Eurex Supported Order Types”, https://library.tradingtechnologies.com/user-setup/eur-eurex-supported-order-types.html]</p>
+<hr>
+</section>
+</section>
+<section id="trading-system-technology-t7" class="level2">
+<h2 class="anchored" data-anchor-id="trading-system-technology-t7">5. Trading System Technology – T7</h2>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">5.1 Overview</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>System Name</td>
+<td>T7 (also used for Xetra, EEX, and other Deutsche Borse Group venues)</td>
+</tr>
+<tr class="even">
+<td>Current Version</td>
+<td>T7 Release 14.0 (launched November 10, 2025 for Eurex); Release 14.1 planned for May 18, 2026</td>
+</tr>
+<tr class="odd">
+<td>Architecture</td>
+<td>Central matching engine with distributed gateway access; partition-based architecture allowing independent scaling</td>
+</tr>
+<tr class="even">
+<td>Developer</td>
+<td>Deutsche Borse AG (in-house)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="architecture" class="level3">
+<h3 class="anchored" data-anchor-id="architecture">5.2 Architecture</h3>
+<ul>
+<li><strong>Partition-based design</strong>: Products are distributed across multiple partitions, each with its own matching engine, allowing horizontal scaling and fault isolation</li>
+<li><strong>Gateway types</strong>:
+<ul>
+<li><strong>Partition-Specific (PS) Gateways</strong>: Route to a specific partition only; lowest latency path for order and quote management via 10 Gbit/s cross-connects</li>
+<li><strong>Low-Frequency (LF) Gateways</strong>: Allow access to all partitions via a single session; higher base latency (~12 microseconds additional compared to PS)</li>
+</ul></li>
+<li><strong>Access Layer</strong>: 10 Gbit/s switches operating in “cut-through” mode; first bytes of an ethernet frame reserve priority on the competitive network path</li>
+<li><strong>Matching Engine</strong>: Central deterministic matching; processes orders and quotes with sub-microsecond internal latency</li>
+</ul>
+</section>
+<section id="latency-throughput" class="level3">
+<h3 class="anchored" data-anchor-id="latency-throughput">5.3 Latency &amp; Throughput</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 53%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Minimum infrastructure latency (market data to request)</td>
+<td>~2,787 nanoseconds (~2.8 microseconds)</td>
+</tr>
+<tr class="even">
+<td>PS Gateway to Matching Engine</td>
+<td>~1 microsecond for cross-side requests (reduced from ~45 microseconds pre-January 2025)</td>
+</tr>
+<tr class="odd">
+<td>LF Gateway additional latency</td>
+<td>~12 microseconds higher than PS path</td>
+</tr>
+<tr class="even">
+<td>Typical throughput at t_3n</td>
+<td>~8,000 kHz</td>
+</tr>
+<tr class="odd">
+<td>Typical throughput at t_5</td>
+<td>~500 kHz</td>
+</tr>
+<tr class="even">
+<td>Typical throughput at t_7</td>
+<td>~300 kHz</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Eurex, “Insights into Trading System Dynamics”, March 2025, https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf]</p>
+</section>
+<section id="technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="technology-stack">5.4 Technology Stack</h3>
+<ul>
+<li><strong>Protocol</strong>: FIX 5.0 SP2 semantics with proprietary session layer and flat binary encoding (ETI)</li>
+<li><strong>Market Data</strong>: FIX/FAST encoded multicast data streams (EMDI, MDI, EOBI)</li>
+<li><strong>Network</strong>: 10 Gbit/s Ethernet infrastructure; mandatory TLS encryption for all interfaces (FIX LF and ETI)</li>
+<li><strong>GUI</strong>: New generation browser-based GUIs introduced in 2025 to replace legacy desktop applications</li>
+</ul>
+</section>
+<section id="release-history" class="level3">
+<h3 class="anchored" data-anchor-id="release-history">5.5 Release History</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 21%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Release</th>
+<th>Date</th>
+<th>Key Features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T7 initial launch (Eurex)</td>
+<td>2017</td>
+<td>Replaced legacy Eurex trading system; shared platform with Xetra</td>
+</tr>
+<tr class="even">
+<td>T7 Release 8.0</td>
+<td>2018</td>
+<td>Enhanced Trading Interface improvements</td>
+</tr>
+<tr class="odd">
+<td>T7 Release 10.1</td>
+<td>2021</td>
+<td>Transaction Size Limit amendments</td>
+</tr>
+<tr class="even">
+<td>T7 Release 12.1</td>
+<td>2023</td>
+<td>Enhanced Order Book Interface improvements</td>
+</tr>
+<tr class="odd">
+<td>T7 Release 13.0</td>
+<td>2024</td>
+<td>Functional enhancements; updated market data services</td>
+</tr>
+<tr class="even">
+<td>T7 Release 13.1</td>
+<td>2025 (March)</td>
+<td>Functional reference updates; documentation improvements</td>
+</tr>
+<tr class="odd">
+<td><strong>T7 Release 14.0</strong></td>
+<td><strong>2025 (Nov 10)</strong></td>
+<td><strong>Sponsored Access (SpA); synthetic matching for Butterfly/Condor strategies in STIRs; browser-based GUIs</strong></td>
+</tr>
+<tr class="even">
+<td>T7 Release 14.1</td>
+<td>2026 (May 18, planned)</td>
+<td>Enhanced SpA risk monitoring; synthetic Packs &amp; Bundles for STIR markets; additional GUI improvements</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="disaster-recovery-business-continuity-drbcp" class="level3">
+<h3 class="anchored" data-anchor-id="disaster-recovery-business-continuity-drbcp">5.6 Disaster Recovery &amp; Business Continuity (DR/BCP)</h3>
+<ul>
+<li><strong>Primary data center</strong>: Equinix FR2, Frankfurt, Germany (houses T7 back-end and co-location facility)</li>
+<li><strong>DR infrastructure</strong>: T7 simulation environment serves as DR production infrastructure in the event of a disaster at the primary site</li>
+<li><strong>DR scenario</strong>: Renders the T7 back-end of Equinix FR2 inaccessible while co-location facility remains accessible, allowing co-location customers to still connect to DR infrastructure</li>
+<li><strong>Regular testing</strong>: Eurex conducts semi-annual T7 Disaster Recovery Tests (most recently October 2024, with tests in March and October each year). All Trading Participants are requested to participate</li>
+<li><strong>DR test coordination</strong>: Often coordinated with industry-wide tests organized by the Futures Industry Association (FIA)</li>
+</ul>
+<p>[Source: Eurex, “T7 Disaster Recovery Test”, https://www.eurex.com/ex-en/support/initiatives/project-readiness/T7-Disaster-Recovery-Test-2442570]</p>
+<hr>
+</section>
+</section>
+<section id="market-data" class="level2">
+<h2 class="anchored" data-anchor-id="market-data">6. Market Data</h2>
+<section id="market-data-interfaces" class="level3">
+<h3 class="anchored" data-anchor-id="market-data-interfaces">6.1 Market Data Interfaces</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 38%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Interface</th>
+<th>Description</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>EMDI (Enhanced Market Data Interface)</strong></td>
+<td>Un-netted feed disseminating every order book change up to configured depth and all on-exchange trades</td>
+<td>High-speed, real-time market data for algorithmic trading; multicast delivery</td>
+</tr>
+<tr class="even">
+<td><strong>EOBI (Enhanced Order Book Interface)</strong></td>
+<td>Full order book without depth limitation; provides side, price, priority timestamp, and displayed quantity of each order/quote, plus trade prices and volumes</td>
+<td>Ultra-low latency order book data for co-located participants; provides complete L3 order-by-order data</td>
+</tr>
+<tr class="odd">
+<td><strong>MDI (Market Data Interface)</strong></td>
+<td>Aggregated market data; statistical high/low, volume, and last trade info; order book updates at regular intervals (significantly less frequent than EMDI)</td>
+<td>Cost-effective option for participants not requiring tick-by-tick data</td>
+</tr>
+<tr class="even">
+<td><strong>RDI (Reference Data Interface)</strong></td>
+<td>Reference data for all instruments (product definitions, contract specifications, trading parameters)</td>
+<td>Pre-trade setup and instrument universe management</td>
+</tr>
+<tr class="odd">
+<td><strong>EMDS (Extended Market Data Service)</strong></td>
+<td>Trade prices, settlement prices, and open interest data</td>
+<td>End-of-day and historical data distribution</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technical-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="technical-protocols">6.2 Technical Protocols</h3>
+<ul>
+<li><strong>Encoding</strong>: FIX/FAST (FAST 1.1 and 1.2) for EMDI, MDI, RDI; proprietary binary encoding for EOBI</li>
+<li><strong>Delivery</strong>: IP Multicast with snapshot/incremental update model</li>
+<li><strong>XML FAST template files and FIXML schema files</strong> define the message formats</li>
+</ul>
+</section>
+<section id="data-levels" class="level3">
+<h3 class="anchored" data-anchor-id="data-levels">6.3 Data Levels</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 33%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Content</th>
+<th>Interface</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Level 1 (Top of Book)</td>
+<td>Best bid/offer, last trade price/volume</td>
+<td>MDI</td>
+</tr>
+<tr class="even">
+<td>Level 2 (Depth of Book)</td>
+<td>Multiple price levels with aggregated quantities</td>
+<td>EMDI (configurable depth)</td>
+</tr>
+<tr class="odd">
+<td>Level 3 (Full Order Book)</td>
+<td>Every individual order with price, quantity, and priority timestamp</td>
+<td>EOBI</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="historical-data">6.4 Historical Data</h3>
+<ul>
+<li><strong>Market statistics</strong>: Monthly statistics publications available on Eurex website</li>
+<li><strong>Market statistics online</strong>: Interactive query tool for historical volume, open interest, and pricing data</li>
+<li><strong>Settlement prices</strong>: Published daily via EMDS</li>
+</ul>
+<p>[Source: Eurex, “Market and Reference Data Interfaces”, https://www.eurex.com/ex-en/support/initiatives/archive/release8/Market-and-Reference-Data-Interfaces-1546120] [Source: OnixS, “Eurex T7 Market and Reference Data”, https://www.onixs.biz/eurex-emdi-eobi-mdi-rdi.html]</p>
+<hr>
+</section>
+</section>
+<section id="connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="connectivity-access">7. Connectivity &amp; Access</h2>
+<section id="exchange-membership" class="level3">
+<h3 class="anchored" data-anchor-id="exchange-membership">7.1 Exchange Membership</h3>
+<p><strong>Trading Membership Types:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Trading Participant</strong></td>
+<td>Full exchange membership; can trade on own account and for clients</td>
+</tr>
+<tr class="even">
+<td><strong>Sponsored Access (SpA) User</strong></td>
+<td>Non-member entity accessing T7 via a SpA Service Provider (introduced T7 Release 14.0, November 2025); low latency access without full membership</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Clearing Membership Types:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 40%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Description</th>
+<th>Capital/Fees</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>General Clearing Member (GCM)</strong></td>
+<td>Clears own transactions, customer transactions, and transactions of non-clearing trading participants</td>
+<td>Admission fee: EUR 50,000; annual fee: EUR 25,000; must meet minimum capital requirements and contribute to Clearing Fund</td>
+</tr>
+<tr class="even">
+<td><strong>Direct Clearing Member (DCM)</strong></td>
+<td>Clears only own transactions, customer transactions, and 100% affiliated exchange participants</td>
+<td>Same fee structure as GCM</td>
+</tr>
+<tr class="odd">
+<td><strong>FCM Clearing Member</strong></td>
+<td>Clears swap transactions; acts as agent for FCM clients</td>
+<td>Specific to OTC clearing</td>
+</tr>
+<tr class="even">
+<td><strong>ISA Direct Clearing Member</strong></td>
+<td>Clears own business for OTC or Repo Market via a Clearing Agent</td>
+<td>Specialized membership for individual segregated accounts</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Admission Requirements:</strong> - Financial institutions within the EU or Switzerland - Authorized for custody business, credit operations, and receipt of margin (securities and cash) - Must comply with Eurex Clearing AG minimum capital requirements - Must contribute to the Clearing Fund</p>
+<p>[Source: Eurex, “Membership Types”, https://www.eurex.com/ec-en/join/admission-requirements/Membership-Types-24040] [Source: Eurex, “Exchange membership”, https://www.eurex.com/ex-en/trade/exchange-membership]</p>
+</section>
+<section id="connection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="connection-methods">7.2 Connection Methods</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ETI (Enhanced Trading Interface)</strong></td>
+<td>High-performance native binary interface; FIX 5.0 SP2 semantics with proprietary session layer and flat binary encoding. Supports HF (High Frequency) and LF (Low Frequency) sessions</td>
+</tr>
+<tr class="even">
+<td><strong>FIX LF Interface</strong></td>
+<td>Standard FIX protocol interface via Low Frequency gateways; suitable for participants not requiring lowest latency</td>
+</tr>
+<tr class="odd">
+<td><strong>T7 Trader GUI / Admin GUI</strong></td>
+<td>Graphical user interfaces for manual trading and administration; new browser-based GUIs introduced in 2025</td>
+</tr>
+<tr class="even">
+<td><strong>Eurex EnLight API</strong></td>
+<td>Programmatic access to the RFQ platform</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Gateway Types:</strong> - <strong>PS (Partition-Specific) Gateways</strong>: Fastest path; 10 Gbit/s cross-connects; routes to a single partition - <strong>LF (Low-Frequency) Gateways</strong>: Access all partitions via a single session; suitable for broader market access</p>
+<p><strong>Mandatory Encryption:</strong> - ETI LF payload encryption mandatory for connections outside Equinix FR2 (since October 2023) - FIX LF interface encryption mandatory (since May 2023) - TLS 1.3 support added</p>
+</section>
+<section id="co-location" class="level3">
+<h3 class="anchored" data-anchor-id="co-location">7.3 Co-Location</h3>
+<ul>
+<li><strong>Primary facility</strong>: Equinix FR2, Frankfurt, Germany</li>
+<li><strong>Infrastructure</strong>: 10 Gbit/s co-location cross-connects</li>
+<li><strong>Latency advantage</strong>: Direct access to PS gateways provides the fastest order routing path</li>
+<li><strong>Eurex and Xetra services</strong> available via separate physical connections within the co-location facility</li>
+<li><strong>Contact</strong>: Equinix (Germany) GmbH, Rebstocker Strasse 33, 60326 Frankfurt</li>
+</ul>
+<p>[Source: Eurex, “Connectivity”, https://www.eurex.com/ex-en/support/technology/connectivity] [Source: Eurex, “Co-Location Services”, https://www.eurexchange.com/exchange-en/technology/co-location-services]</p>
+</section>
+<section id="certification" class="level3">
+<h3 class="anchored" data-anchor-id="certification">7.4 Certification</h3>
+<ul>
+<li>Trading participants must complete a <strong>technical and functional certification process</strong> before going live</li>
+<li>Simulation environment available for testing (separate from production)</li>
+<li>Member Section portal for account management, reporting, and administration</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="risk-controls-circuit-breakers">8. Risk Controls &amp; Circuit Breakers</h2>
+<section id="volatility-interruptions-circuit-breakers" class="level3">
+<h3 class="anchored" data-anchor-id="volatility-interruptions-circuit-breakers">8.1 Volatility Interruptions (Circuit Breakers)</h3>
+<p>Eurex’s primary safeguard mechanism to prevent erroneous trades and sudden price cascades:</p>
+<ul>
+<li><strong>Dynamic Volatility Interruption</strong>: The potential trade price of an incoming order is checked against all prices of previously executed trades within configured lookback time windows (reference prices)</li>
+<li><strong>Trigger</strong>: If the allowed price deviation is exceeded, the execution is prevented and the instrument (or all instruments in the affected product) is automatically moved from continuous trading to a <strong>volatility auction</strong></li>
+<li><strong>Duration</strong>: The volatility auction runs for a defined period to allow orderly price discovery before returning to continuous trading</li>
+<li><strong>Price Collars</strong>: For Eurex EnLight off-book trading, price collars reject quotes or orders falling outside an entry interval defined by the Management Board. Price collars do <strong>not</strong> trigger a trading halt</li>
+</ul>
+<p>[Source: Eurex, “Volatility Interruption Functionality”, https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality]</p>
+</section>
+<section id="pre-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="pre-trade-risk-controls">8.2 Pre-Trade Risk Controls</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Control</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Maximum Order Quantity / Transaction Size Limits (TSL)</strong></td>
+<td>Exchange-level and member-level limits on the maximum number of contracts per order/quote. The lowest limit set (by exchange, Clearing Member, or Trading Participant) applies</td>
+</tr>
+<tr class="even">
+<td><strong>Maximum Order Value</strong></td>
+<td>Limits on the maximum notional value of a single order</td>
+</tr>
+<tr class="odd">
+<td><strong>Pre-Trade Risk (PTR) Limits</strong></td>
+<td>Clearing members can define limits for themselves and their non-clearing participants (DCMPs); monitored in real-time</td>
+</tr>
+<tr class="even">
+<td><strong>Price Reasonability Checks</strong></td>
+<td>Orders are checked against reference prices to detect potentially erroneous prices</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="post-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="post-trade-risk-controls">8.3 Post-Trade Risk Controls</h3>
+<ul>
+<li><strong>Position monitoring</strong>: Real-time position monitoring by Eurex Clearing</li>
+<li><strong>Intraday margin calls</strong>: Eurex Clearing can directly debit Clearing Members when intraday risk thresholds are breached</li>
+<li><strong>Stop/Kill functionality</strong>: Emergency procedures for halting trading activity; details in the Eurex Emergency Playbook (published under Support &gt; Emergencies and Safeguards)</li>
+</ul>
+<p>[Source: Eurex, “Trading Safeguards”, October 2025, https://www.eurex.com/resource/blob/2448162/28033c3a73ea19078860573d526f8f33/data/presentation-trading-safeguards.pdf]</p>
+<hr>
+</section>
+</section>
+<section id="regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="regulatory-framework">9. Regulatory Framework</h2>
+<section id="supervisory-authorities" class="level3">
+<h3 class="anchored" data-anchor-id="supervisory-authorities">9.1 Supervisory Authorities</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 43%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Authority</th>
+<th>Jurisdiction</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>BaFin</strong> (Bundesanstalt fur Finanzdienstleistungsaufsicht)</td>
+<td>Germany</td>
+<td>Primary regulator of Eurex Frankfurt AG as a regulated market; sets and monitors position limits for commodity derivatives traded predominantly on German venues</td>
+</tr>
+<tr class="even">
+<td><strong>Hessische Borsaufsicht</strong></td>
+<td>Hesse, Germany</td>
+<td>Exchange Supervisory Authority for the State of Hesse; oversees exchange operations</td>
+</tr>
+<tr class="odd">
+<td><strong>ESMA</strong> (European Securities and Markets Authority)</td>
+<td>EU</td>
+<td>Supervises trade repositories under EMIR; coordinates MiFID II/MiFIR implementation; oversees CCP supervision for Eurex Clearing under EMIR</td>
+</tr>
+<tr class="even">
+<td><strong>FINMA</strong></td>
+<td>Switzerland</td>
+<td>Regulates Eurex Zurich operations</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-regulations" class="level3">
+<h3 class="anchored" data-anchor-id="key-regulations">9.2 Key Regulations</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 31%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Regulation</th>
+<th>Description</th>
+<th>Impact on Eurex</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>MiFID II / MiFIR</strong> (effective January 3, 2018)</td>
+<td>Markets in Financial Instruments Directive II / Regulation</td>
+<td>Transaction reporting obligations; position limits for commodity derivatives; pre- and post-trade transparency; best execution requirements; algorithmic trading controls</td>
+</tr>
+<tr class="even">
+<td><strong>EMIR</strong> (European Market Infrastructure Regulation)</td>
+<td>Regulation on OTC derivatives, CCPs, and trade repositories</td>
+<td>Mandatory clearing of standardized OTC derivatives; trade reporting to trade repositories; CCP risk management requirements for Eurex Clearing</td>
+</tr>
+<tr class="odd">
+<td><strong>EMIR REFIT</strong></td>
+<td>Updated EMIR reporting standards</td>
+<td>Enhanced reporting format using XML/ISO 20022; new data fields; updated validation rules</td>
+</tr>
+<tr class="even">
+<td><strong>CSDR</strong> (Central Securities Depository Regulation)</td>
+<td>Regulation on settlement discipline and CSDs</td>
+<td>Settlement discipline regime affecting post-trade processing</td>
+</tr>
+<tr class="odd">
+<td><strong>MAR</strong> (Market Abuse Regulation)</td>
+<td>EU market abuse framework</td>
+<td>Surveillance obligations; insider trading and market manipulation detection</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="surveillance-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="surveillance-reporting">9.3 Surveillance &amp; Reporting</h3>
+<ul>
+<li><strong>Transaction Reporting</strong>: Under MiFID II Article 26, all transactions must be reported to BaFin using RTS 22 format (XML schema based on ESMA Transaction Reporting XML Schema 1.1.0)</li>
+<li><strong>Position Reporting</strong>: Under MiFID II Article 58, Eurex Frankfurt AG must provide BaFin with daily end-of-day reports on positions held by clients (and clients of clients up to end client) in listed commodity derivatives and emission allowances</li>
+<li><strong>EMIR Trade Reporting</strong>: All derivative contracts (OTC and exchange-traded) must be reported to a trade repository no later than the working day following conclusion, modification, or termination</li>
+<li><strong>Market Surveillance</strong>: Eurex Market Supervision monitors trading activity for market abuse, manipulation, and unusual patterns</li>
+</ul>
+</section>
+<section id="cross-border-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="cross-border-considerations">9.4 Cross-Border Considerations</h3>
+<ul>
+<li>Eurex is recognized as a third-country CCP by regulators in multiple jurisdictions</li>
+<li>CFTC registration: Eurex Clearing AG is registered as a Derivatives Clearing Organization (DCO) with the U.S. CFTC</li>
+<li>Eurex has been granted equivalence determinations in several non-EU jurisdictions</li>
+<li>Cross-border membership available for participants from numerous countries</li>
+</ul>
+<p>[Source: Eurex, “MiFID II/MiFIR”, https://www.eurex.com/ex-en/rules-regs/regulations/mifid-mifir] [Source: BaFin, “Position limits for commodity derivatives”, https://www.bafin.de/EN/Aufsicht/BoersenMaerkte/Derivate/PositionslimitsWarenderivate/positionslimits_warenderivate_node_en.html]</p>
+<hr>
+</section>
+</section>
+<section id="fees-revenue-model" class="level2">
+<h2 class="anchored" data-anchor-id="fees-revenue-model">10. Fees &amp; Revenue Model</h2>
+<section id="trading-fees" class="level3">
+<h3 class="anchored" data-anchor-id="trading-fees">10.1 Trading Fees</h3>
+<p>Eurex charges transaction fees per contract for both on-book and off-book (T7 Entry Service) trades:</p>
+<ul>
+<li><strong>Standard fee per contract</strong>: Varies by product class and whether trade is on-book or off-book</li>
+<li><strong>Reduced fees</strong>: May apply to volume above certain thresholds, depending on product and Position Account type (P-Account / M-Account)</li>
+<li><strong>Fee tiers</strong>: Participants can benefit from monthly rebates including:
+<ul>
+<li><strong>Market-Making rebates</strong>: For qualifying market makers meeting quotation obligations</li>
+<li><strong>Volume rebates</strong>: Based on cumulative monthly trading volume</li>
+</ul></li>
+<li><strong>2026 pricing changes</strong> (effective January 1, 2026 and April 1, 2026):
+<ul>
+<li>Standard fees, reduced fees, rebates, and thresholds amended for Equity Index Futures, EURO STOXX 50 Index Options, and Fixed Income Futures and Options</li>
+<li>Rebate levels for liquidity class 1 in Equity Index Options reduced by 5 percentage points per tier</li>
+<li>Interest Rate Options liquidity provisioning rebates lowered by 10 percentage points for all liquidity classes</li>
+</ul></li>
+</ul>
+<p><strong>Representative Fee Ranges</strong> (indicative, subject to official Price List):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Standard Fee (per contract)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equity Index Futures (e.g., FESX)</td>
+<td>EUR 0.10 - 0.30 [unverified]</td>
+</tr>
+<tr class="even">
+<td>Fixed Income Futures (e.g., FGBL)</td>
+<td>EUR 0.05 - 0.20 [unverified]</td>
+</tr>
+<tr class="odd">
+<td>Equity Index Options (e.g., OESX)</td>
+<td>EUR 0.10 - 0.40 [unverified]</td>
+</tr>
+<tr class="even">
+<td>Single Stock Futures</td>
+<td>EUR 0.15 - 0.50 [unverified]</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Actual fees depend on volume tier, member type, and current Price List. The full fee schedule is published in the “Price List of Eurex Clearing AG” (Chapter 3).</p>
+</section>
+<section id="clearing-fees" class="level3">
+<h3 class="anchored" data-anchor-id="clearing-fees">10.2 Clearing Fees</h3>
+<ul>
+<li>Transaction-based clearing fees per contract</li>
+<li>Admission fee: EUR 50,000 (one-off) for Clearing Members</li>
+<li>Annual membership fee: EUR 25,000 for Clearing Members</li>
+</ul>
+</section>
+<section id="connectivity-market-data-fees" class="level3">
+<h3 class="anchored" data-anchor-id="connectivity-market-data-fees">10.3 Connectivity &amp; Market Data Fees</h3>
+<ul>
+<li><strong>Co-location fees</strong>: Charged by Equinix for rack space and cross-connects at FR2</li>
+<li><strong>Connectivity fees</strong>: Charged for network connections (10 Gbit/s lines)</li>
+<li><strong>Market data fees</strong>: Charged for real-time market data (EMDI, EOBI, MDI) based on usage type (display, non-display, derived data)</li>
+<li><strong>Fee schedule changes</strong>: Connectivity fee schedules periodically amended via circulars</li>
+</ul>
+<p>[Source: Eurex, “Transaction fees”, https://www.eurex.com/ex-en/trade/transaction-fees] [Source: Eurex, “Price List of Eurex Clearing AG”, https://www.eurex.com/ec-en/rules-regs/rules-and-regulations/3.-Price-List-32640]</p>
+<hr>
+</section>
+</section>
+<section id="recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="recent-developments">11. Recent Developments</h2>
+<section id="t7-system-upgrades" class="level3">
+<h3 class="anchored" data-anchor-id="t7-system-upgrades">11.1 T7 System Upgrades</h3>
+<ul>
+<li><strong>T7 Release 14.0</strong> (November 10, 2025): Introduced Sponsored Access (SpA) for non-disclosed trading participants; synthetic matching extended to Butterfly and Condor strategies for STIR futures; new browser-based GUIs</li>
+<li><strong>T7 Release 14.1</strong> (planned May 18, 2026): Enhanced SpA risk monitoring; synthetic Packs &amp; Bundles for STIR markets (FEU3, FST3); additional GUI improvements</li>
+</ul>
+</section>
+<section id="new-products-market-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="new-products-market-initiatives">11.2 New Products &amp; Market Initiatives</h3>
+<ul>
+<li><strong>Systematic QIS Index Futures</strong> (December 2025): Launched in collaboration with Premialab; allows trading of rules-based thematic strategies (e.g., “Fundamental Quality European”, “Value European”) previously only available as OTC swaps. The OTC QIS market estimated to reach USD 1 trillion by end of 2026</li>
+<li><strong>Credit Index Futures</strong>: Strong growth trajectory since 2021 launch; volumes surging as participants adopt listed credit derivatives</li>
+<li><strong>Three-Month Euro STR Futures</strong>: Continuing adoption as the euro risk-free rate benchmark replacement for EURIBOR</li>
+<li><strong>Daily Options</strong>: Expanded availability on EURO STOXX 50 and DAX (launched November 2025)</li>
+<li><strong>ESG Index Derivatives</strong>: Cumulated notional volume exceeded EUR 30 billion in Q1 2025 (up 76.5% vs.&nbsp;2024); capital open interest in ESG products reached EUR 4.9 billion by early 2026, a 200% increase over 24 months</li>
+</ul>
+</section>
+<section id="access-membership-changes" class="level3">
+<h3 class="anchored" data-anchor-id="access-membership-changes">11.3 Access &amp; Membership Changes</h3>
+<ul>
+<li><strong>Sponsored Access Model</strong> (November 2025): Lowers entry barriers for buy-side firms and non-member entities; provides low-latency T7 access via approved SpA Service Providers without requiring full exchange membership</li>
+</ul>
+</section>
+<section id="regulatory-changes" class="level3">
+<h3 class="anchored" data-anchor-id="regulatory-changes">11.4 Regulatory Changes</h3>
+<ul>
+<li><strong>EMIR REFIT</strong>: Updated trade reporting requirements with enhanced data fields and validation rules</li>
+<li><strong>MiFID II position limits</strong>: Ongoing refinement of commodity derivatives position limit framework</li>
+<li><strong>Mandatory interface encryption</strong>: Completed migration to encrypted connectivity for all ETI and FIX interfaces</li>
+</ul>
+</section>
+<section id="strategic-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="strategic-initiatives">11.5 Strategic Initiatives</h3>
+<ul>
+<li><strong>Eurex Repo</strong>: Record year in 2025 (EUR 406.1 billion average term-adjusted volume); expansion of secured funding capabilities</li>
+<li><strong>OTC Clearing growth</strong>: Average daily cleared volume EUR 280 billion in 2025 (up 35%); ~650 new clients joined Eurex Clearing’s OTC IRD market</li>
+<li><strong>Digital assets</strong>: Expansion of cryptocurrency derivatives offerings; Deutsche Borse Group acquired majority stake in Crypto Finance AG (2023)</li>
+<li><strong>D7 digital post-trade platform</strong>: Launched in 2024 for digital securities issuance and settlement</li>
+</ul>
+<p>[Source: Eurex, “Our path for 2026”, https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026–4867350] [Source: Eurex, “T7 Release 14.0”, https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0]</p>
+<hr>
+</section>
+</section>
+<section id="product-catalog-derivatives-specific" class="level2">
+<h2 class="anchored" data-anchor-id="product-catalog-derivatives-specific">12. Product Catalog (Derivatives-Specific)</h2>
+<section id="interest-rate-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="interest-rate-derivatives">12.1 Interest Rate Derivatives</h3>
+<p><strong>Fixed Income Futures (Government Bonds):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 10%">
+<col style="width: 18%">
+<col style="width: 31%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Code</th>
+<th>Underlying</th>
+<th>Residual Maturity</th>
+<th>Contract Size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Euro-Schatz Futures</td>
+<td>FGBS</td>
+<td>German Federal bonds/notes</td>
+<td>1.75 - 2.25 years</td>
+<td>EUR 100,000</td>
+</tr>
+<tr class="even">
+<td>Euro-Bobl Futures</td>
+<td>FGBM</td>
+<td>German Federal bonds/notes</td>
+<td>4.5 - 5.5 years</td>
+<td>EUR 100,000</td>
+</tr>
+<tr class="odd">
+<td>Euro-Bund Futures</td>
+<td>FGBL</td>
+<td>German Federal bonds (Bundesanleihen)</td>
+<td>8.5 - 10.5 years</td>
+<td>EUR 100,000</td>
+</tr>
+<tr class="even">
+<td>Euro-Buxl Futures</td>
+<td>FGBX</td>
+<td>German Federal bonds</td>
+<td>24 - 35 years</td>
+<td>EUR 100,000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fixed Income Options:</strong> Options on Euro-Schatz, Euro-Bobl, Euro-Bund, and Euro-Buxl futures</p>
+<p><strong>Money Market Futures:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 23%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Code</th>
+<th>Underlying</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Three-Month Euribor Futures</td>
+<td>FEU3</td>
+<td>3-month EURIBOR</td>
+</tr>
+<tr class="even">
+<td>Three-Month Euro STR Futures</td>
+<td>FST3</td>
+<td>Compounded Euro STR over 3 months</td>
+</tr>
+<tr class="odd">
+<td>One-Month Euro STR Futures</td>
+<td>–</td>
+<td>1-month Euro STR</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Credit Index Futures:</strong> - iTraxx Europe Main CDS Index Futures - iTraxx Europe Crossover CDS Index Futures - iTraxx Europe Senior Financials CDS Index Futures</p>
+<p><strong>OTC Cleared:</strong> - Interest Rate Swaps (IRS) - Overnight Index Swaps (OIS) - Forward Rate Agreements (FRA) - Cross-currency swaps</p>
+</section>
+<section id="equity-index-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="equity-index-derivatives">12.2 Equity Index Derivatives</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 56%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Index Family</th>
+<th>Products</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>EURO STOXX 50</strong></td>
+<td>Futures (FESX), Mini Futures, Micro Futures (FSXE), Options (OESX), Daily Options, Weekly Options, End-of-Day Options, Total Return Futures (TESX), ESG Futures, Dividend Futures, Variance Futures</td>
+</tr>
+<tr class="even">
+<td><strong>DAX</strong></td>
+<td>Futures (FDAX), Mini-DAX Futures (FDXM), Micro-DAX Futures (FDXS), Options (ODAX), Daily Options, Weekly Options</td>
+</tr>
+<tr class="odd">
+<td><strong>MDAX</strong></td>
+<td>Futures, Options</td>
+</tr>
+<tr class="even">
+<td><strong>STOXX Europe 600</strong></td>
+<td>Futures, Options; Sector Index derivatives (18 sectors including Banks, Technology, Healthcare)</td>
+</tr>
+<tr class="odd">
+<td><strong>MSCI</strong></td>
+<td>146 Futures and 23 Options covering MSCI World, MSCI Europe, MSCI EM, country indices, ESG variants</td>
+</tr>
+<tr class="even">
+<td><strong>FTSE 100</strong></td>
+<td>Futures and Options (introduced 2023)</td>
+</tr>
+<tr class="odd">
+<td><strong>ESG Indices</strong></td>
+<td>STOXX ESG-X, STOXX Europe Climate Benchmark, DAX ESG variants</td>
+</tr>
+<tr class="even">
+<td><strong>Systematic QIS Indices</strong></td>
+<td>Rules-based thematic strategy futures (launched December 2025)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equity-derivatives-single-stock" class="level3">
+<h3 class="anchored" data-anchor-id="equity-derivatives-single-stock">12.3 Equity Derivatives (Single Stock)</h3>
+<ul>
+<li><strong>Single Stock Futures</strong>: 900+ contracts covering STOXX Europe 600 components plus major US and Canadian shares</li>
+<li><strong>Equity Options</strong>: 500+ contracts across all major industry segments globally</li>
+<li><strong>Physical settlement</strong> for single stock futures and options</li>
+</ul>
+</section>
+<section id="dividend-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="dividend-derivatives">12.4 Dividend Derivatives</h3>
+<ul>
+<li><strong>Index Dividend Futures</strong>: EURO STOXX 50 Dividend Futures, DAX Dividend Futures</li>
+<li><strong>Single Stock Dividend Futures</strong>: 80+ contracts on the largest Eurozone and pan-European companies</li>
+<li><strong>Cash settlement</strong> based on declared dividends</li>
+</ul>
+</section>
+<section id="volatility-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="volatility-derivatives">12.5 Volatility Derivatives</h3>
+<ul>
+<li><strong>VSTOXX Futures</strong>: Based on EURO STOXX 50 implied volatility (VSTOXX index)</li>
+<li><strong>VSTOXX Options</strong>: Options on VSTOXX futures</li>
+<li><strong>EURO STOXX 50 Variance Futures (EVAR)</strong>: Variance swaps in listed form</li>
+</ul>
+</section>
+<section id="fx-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="fx-derivatives">12.6 FX Derivatives</h3>
+<ul>
+<li><strong>Rolling Spot Futures</strong>: Continuous roll; value dates from spot</li>
+<li><strong>Classic FX Futures</strong>: Fixed settlement dates across serial months, quarterly, bi-annually, up to 3 years</li>
+<li><strong>FX Options</strong>: Options on major currency pairs</li>
+<li>Deliverable and non-deliverable contracts available</li>
+</ul>
+</section>
+<section id="etf-etc-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="etf-etc-derivatives">12.7 ETF &amp; ETC Derivatives</h3>
+<ul>
+<li>Futures and options on major equity index ETFs</li>
+<li>Futures and options on fixed income ETFs</li>
+<li><strong>ETC derivatives</strong>: Physical Gold ETC (AUM &gt; EUR 4 billion), Crude Oil ETC</li>
+</ul>
+</section>
+<section id="cryptocurrency-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="cryptocurrency-derivatives">12.8 Cryptocurrency Derivatives</h3>
+<ul>
+<li>Bitcoin futures [unverified – specific products expanding]</li>
+<li>Ether futures [unverified]</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="key-contract-specifications-top-5-products-by-volume" class="level2">
+<h2 class="anchored" data-anchor-id="key-contract-specifications-top-5-products-by-volume">13. Key Contract Specifications (Top 5 Products by Volume)</h2>
+<section id="euro-stoxx-50-index-futures-fesx" class="level3">
+<h3 class="anchored" data-anchor-id="euro-stoxx-50-index-futures-fesx">13.1 EURO STOXX 50 Index Futures (FESX)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Product Code</td>
+<td>FESX</td>
+</tr>
+<tr class="even">
+<td>Underlying</td>
+<td>EURO STOXX 50 Index (50 leading Eurozone blue-chip stocks)</td>
+</tr>
+<tr class="odd">
+<td>Contract Size / Multiplier</td>
+<td>EUR 10 per index point</td>
+</tr>
+<tr class="even">
+<td>Minimum Price Change (Tick)</td>
+<td>1 index point</td>
+</tr>
+<tr class="odd">
+<td>Tick Value</td>
+<td>EUR 10</td>
+</tr>
+<tr class="even">
+<td>Contract Months</td>
+<td>Up to 36 months; twelve nearest quarterly months (March, June, September, December)</td>
+</tr>
+<tr class="odd">
+<td>Last Trading Day</td>
+<td>Third Friday of the maturity month (or preceding exchange day)</td>
+</tr>
+<tr class="even">
+<td>Settlement</td>
+<td>Cash settlement</td>
+</tr>
+<tr class="odd">
+<td>Final Settlement Price</td>
+<td>Based on average of EURO STOXX 50 index values calculated between 11:50 and 12:00 CET on final settlement day</td>
+</tr>
+<tr class="even">
+<td>Trading Hours</td>
+<td>01:00 - 22:00 CET (including Asian hours)</td>
+</tr>
+<tr class="odd">
+<td>2024 Volume</td>
+<td>~205 million contracts; EUR 39.5 billion notional ADV</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="euro-stoxx-50-index-options-oesx" class="level3">
+<h3 class="anchored" data-anchor-id="euro-stoxx-50-index-options-oesx">13.2 EURO STOXX 50 Index Options (OESX)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Product Code</td>
+<td>OESX</td>
+</tr>
+<tr class="even">
+<td>Underlying</td>
+<td>EURO STOXX 50 Index</td>
+</tr>
+<tr class="odd">
+<td>Contract Size / Multiplier</td>
+<td>EUR 10 per index point</td>
+</tr>
+<tr class="even">
+<td>Minimum Price Change (Tick)</td>
+<td>0.1 index point</td>
+</tr>
+<tr class="odd">
+<td>Tick Value</td>
+<td>EUR 1</td>
+</tr>
+<tr class="even">
+<td>Exercise Style</td>
+<td>European (exercisable only on final settlement day until 20:30 CET)</td>
+</tr>
+<tr class="odd">
+<td>Contract Months</td>
+<td>Monthly, weekly, daily expiries available</td>
+</tr>
+<tr class="even">
+<td>Settlement</td>
+<td>Cash settlement</td>
+</tr>
+<tr class="odd">
+<td>Final Settlement Price</td>
+<td>Average of EURO STOXX 50 index values between 11:50 and 12:00 CET</td>
+</tr>
+<tr class="even">
+<td>Trading Hours</td>
+<td>08:00 - 22:00 CET</td>
+</tr>
+<tr class="odd">
+<td>2024 Volume</td>
+<td>~242 million contracts; EUR 44 billion notional ADV</td>
+</tr>
+<tr class="even">
+<td>Exercise Prices</td>
+<td>At least 7 for terms up to 24 months (3 ITM, 1 ATM, 3 OTM); at least 5 for longer terms</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="euro-bund-futures-fgbl" class="level3">
+<h3 class="anchored" data-anchor-id="euro-bund-futures-fgbl">13.3 Euro-Bund Futures (FGBL)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Product Code</td>
+<td>FGBL</td>
+</tr>
+<tr class="even">
+<td>Underlying</td>
+<td>Notional German Federal Government bond (Bundesanleihe) with 6% coupon</td>
+</tr>
+<tr class="odd">
+<td>Deliverable Bonds</td>
+<td>German Federal bonds with residual maturity of 8.5 to 10.5 years and minimum issue size EUR 5 billion</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>EUR 100,000 nominal value</td>
+</tr>
+<tr class="odd">
+<td>Minimum Price Change (Tick)</td>
+<td>0.01 (percentage of par)</td>
+</tr>
+<tr class="even">
+<td>Tick Value</td>
+<td>EUR 10</td>
+</tr>
+<tr class="odd">
+<td>Contract Months</td>
+<td>Up to 9 months; three nearest quarterly months (March, June, September, December)</td>
+</tr>
+<tr class="even">
+<td>Last Trading Day</td>
+<td>Two exchange days before the delivery day of the relevant maturity month</td>
+</tr>
+<tr class="odd">
+<td>Delivery Day</td>
+<td>10th calendar day of the maturity month (or next exchange day)</td>
+</tr>
+<tr class="even">
+<td>Settlement</td>
+<td>Physical delivery</td>
+</tr>
+<tr class="odd">
+<td>Daily Settlement Price</td>
+<td>Volume-weighted average of trades in the minute before 17:15 CET (if &gt;5 trades)</td>
+</tr>
+<tr class="even">
+<td>Final Settlement Price</td>
+<td>Volume-weighted average at 12:30 CET on final settlement day (if &gt;10 trades)</td>
+</tr>
+<tr class="odd">
+<td>Trading Hours</td>
+<td>01:00 - 22:00 CET (including Asian hours)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dax-futures-fdax" class="level3">
+<h3 class="anchored" data-anchor-id="dax-futures-fdax">13.4 DAX Futures (FDAX)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Product Code</td>
+<td>FDAX</td>
+</tr>
+<tr class="even">
+<td>Underlying</td>
+<td>DAX Index (40 leading German blue-chip stocks)</td>
+</tr>
+<tr class="odd">
+<td>Contract Size / Multiplier</td>
+<td>EUR 25 per index point</td>
+</tr>
+<tr class="even">
+<td>Minimum Price Change (Tick)</td>
+<td>0.5 index points</td>
+</tr>
+<tr class="odd">
+<td>Tick Value</td>
+<td>EUR 12.50</td>
+</tr>
+<tr class="even">
+<td>Contract Months</td>
+<td>Up to 9 months; three nearest quarterly months (March, June, September, December)</td>
+</tr>
+<tr class="odd">
+<td>Last Trading Day</td>
+<td>Third Friday of the maturity month (or preceding exchange day)</td>
+</tr>
+<tr class="even">
+<td>Settlement</td>
+<td>Cash settlement</td>
+</tr>
+<tr class="odd">
+<td>Final Settlement Price</td>
+<td>Based on intraday auction values of DAX constituent stocks</td>
+</tr>
+<tr class="even">
+<td>Trading Hours</td>
+<td>01:00 - 22:00 CET (including Asian hours)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="euro-bobl-futures-fgbm" class="level3">
+<h3 class="anchored" data-anchor-id="euro-bobl-futures-fgbm">13.5 Euro-Bobl Futures (FGBM)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Product Code</td>
+<td>FGBM</td>
+</tr>
+<tr class="even">
+<td>Underlying</td>
+<td>Notional German Federal Government bond/note with 6% coupon</td>
+</tr>
+<tr class="odd">
+<td>Deliverable Bonds</td>
+<td>German Federal bonds/notes with residual maturity of 4.5 to 5.5 years</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>EUR 100,000 nominal value</td>
+</tr>
+<tr class="odd">
+<td>Minimum Price Change (Tick)</td>
+<td>0.01 (percentage of par)</td>
+</tr>
+<tr class="even">
+<td>Tick Value</td>
+<td>EUR 10</td>
+</tr>
+<tr class="odd">
+<td>Contract Months</td>
+<td>Up to 9 months; three nearest quarterly months (March, June, September, December)</td>
+</tr>
+<tr class="even">
+<td>Last Trading Day</td>
+<td>Two exchange days before the delivery day</td>
+</tr>
+<tr class="odd">
+<td>Delivery Day</td>
+<td>10th calendar day of the maturity month (or next exchange day)</td>
+</tr>
+<tr class="even">
+<td>Settlement</td>
+<td>Physical delivery</td>
+</tr>
+<tr class="odd">
+<td>Trading Hours</td>
+<td>01:00 - 22:00 CET (including Asian hours)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Eurex, “EURO STOXX 50 Index Futures (FESX)”, https://www.eurex.com/ex-en/markets/idx/stx/euro-stoxx-50-derivatives/products/EURO-STOXX-50-Index-Futures-160088] [Source: Eurex, “Euro-Bund Futures (FGBL)”, https://www.eurex.com/ex-en/markets/int/fix/government-bonds/Euro-Bund-Futures-137298] [Source: Eurex, “DAX Futures (FDAX)”, https://www.eurex.com/ex-en/markets/idx/dax/DAX-Futures-139902]</p>
+<hr>
+</section>
+</section>
+<section id="margin-framework-eurex-clearing-prisma" class="level2">
+<h2 class="anchored" data-anchor-id="margin-framework-eurex-clearing-prisma">14. Margin Framework – Eurex Clearing Prisma</h2>
+<section id="overview-1" class="level3">
+<h3 class="anchored" data-anchor-id="overview-1">14.1 Overview</h3>
+<p>Eurex Clearing Prisma is a <strong>portfolio-based risk management methodology</strong> applied to all exchange-traded derivatives (ETD) and OTC products cleared by Eurex Clearing AG. Unlike product-by-product margin calculation, Prisma determines margin requirements at the portfolio level, accounting for hedging and cross-correlation effects.</p>
+</section>
+<section id="methodology" class="level3">
+<h3 class="anchored" data-anchor-id="methodology">14.2 Methodology</h3>
+<p><strong>Core Approach:</strong> - <strong>Historical Value-at-Risk (VaR)</strong>: Prisma uses a filtered historical simulation approach to estimate potential portfolio losses - <strong>Liquidation Groups</strong>: Products sharing similar risk characteristics are grouped into Liquidation Groups. Portfolio margining is applied within the same Liquidation Group and with the same holding period - Example: EURO STOXX 50 Futures and DAX Futures may be in the same Liquidation Group, offering margin offsets for diversified portfolios - <strong>Cross-Product Scenarios</strong>: Enable a consistent way to account for portfolio correlation and diversification effects, resulting in more accurate risk netting - <strong>Holding Periods</strong>: Vary by product type; e.g., ETD may have a 2-day holding period while OTC IRS has a 5-day holding period</p>
+</section>
+<section id="margin-types" class="level3">
+<h3 class="anchored" data-anchor-id="margin-types">14.3 Margin Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Margin Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Initial Margin (Additional Margin)</strong></td>
+<td>Covers potential liquidation risk for upcoming business days; based on Prisma historical VaR calculation at 99.x% confidence level</td>
+</tr>
+<tr class="even">
+<td><strong>Premium Margin</strong></td>
+<td>For options: covers the cost of the option premium (traditional-style options)</td>
+</tr>
+<tr class="odd">
+<td><strong>Current Liquidating Margin</strong></td>
+<td>Reflects the immediate mark-to-market value of positions</td>
+</tr>
+<tr class="even">
+<td><strong>Variation Margin</strong></td>
+<td>Daily settlement of profits and losses on futures positions; must be paid in cash</td>
+</tr>
+<tr class="odd">
+<td><strong>Margin Floors</strong></td>
+<td>Annual recalibration of Prisma initial margin floors (most recent recalibration effective June 16, 2025)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cross-margining" class="level3">
+<h3 class="anchored" data-anchor-id="cross-margining">14.4 Cross-Margining</h3>
+<ul>
+<li><strong>Cross-product margining</strong>: Offsets between products within the same Liquidation Group</li>
+<li><strong>Cross-market margining</strong>: Offsets between listed (ETD) and OTC positions cleared by Eurex Clearing</li>
+<li><strong>Cross-holding-period margining</strong>: Allows offsets between products with different holding periods (e.g., OTC IRS with 5-day holding period vs.&nbsp;listed fixed income with 2-day holding period)</li>
+<li><strong>Key benefit</strong>: More accurate risk netting leads to significantly lower initial margin requirements for diversified portfolios</li>
+</ul>
+</section>
+<section id="margin-call-process" class="level3">
+<h3 class="anchored" data-anchor-id="margin-call-process">14.5 Margin Call Process</h3>
+<ul>
+<li>Margins are calculated <strong>throughout the trading day</strong> (intraday margin recalculations)</li>
+<li><strong>Regular margin calls</strong>: End-of-day margin requirements communicated to Clearing Members</li>
+<li><strong>Intraday margin calls</strong>: Eurex Clearing can directly debit Clearing Members if intraday risk thresholds are breached</li>
+<li><strong>Payment</strong>: Variation margin and premiums on traditional options must be paid in <strong>cash</strong>; initial margin can be posted in cash or eligible securities (with appropriate haircuts)</li>
+</ul>
+</section>
+<section id="cloud-prisma-margin-estimator-cpme" class="level3">
+<h3 class="anchored" data-anchor-id="cloud-prisma-margin-estimator-cpme">14.6 Cloud Prisma Margin Estimator (cPME)</h3>
+<ul>
+<li>Web-based tool allowing participants to estimate margin requirements for hypothetical portfolios</li>
+<li>Available via Deutsche Borse Risk GitHub: https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/</li>
+</ul>
+<p>[Source: Eurex Clearing, “Eurex Clearing Prisma”, https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma] [Source: Eurex Clearing, “Margining process”, https://www.eurex.com/ec-en/services/margining/margining-process] [Source: Eurex Clearing, “Cross-margining”, https://www.eurex.com/ec-en/services/margining/cross-margining]</p>
+<hr>
+</section>
+</section>
+<section id="position-limits" class="level2">
+<h2 class="anchored" data-anchor-id="position-limits">15. Position Limits</h2>
+<section id="framework" class="level3">
+<h3 class="anchored" data-anchor-id="framework">15.1 Framework</h3>
+<ul>
+<li><strong>MiFID II Article 57</strong>: Establishes position limits for commodity derivatives traded on EU trading venues</li>
+<li><strong>BaFin</strong> is the competent authority for setting and monitoring position limits for commodity derivatives traded exclusively or predominantly on German trading venues (including Eurex)</li>
+<li><strong>Accountability levels</strong>: Set for financial instruments to identify large positions and ensure orderly markets</li>
+</ul>
+</section>
+<section id="commodity-derivatives-position-limits" class="level3">
+<h3 class="anchored" data-anchor-id="commodity-derivatives-position-limits">15.2 Commodity Derivatives Position Limits</h3>
+<ul>
+<li>Position limits set by BaFin based on deliverable supply and open interest</li>
+<li>Apply to <strong>net positions</strong> held by any person in commodity derivatives and economically equivalent OTC contracts</li>
+<li>Limits apply at both the <strong>spot month</strong> and the <strong>other months combined</strong> levels</li>
+</ul>
+</section>
+<section id="hedge-exemptions" class="level3">
+<h3 class="anchored" data-anchor-id="hedge-exemptions">15.3 Hedge Exemptions</h3>
+<ul>
+<li><strong>Non-financial entities</strong> may apply for exemption from position limits under MiFID II Article 57(1) if positions are objectively measurable as reducing risks directly relating to non-financial commercial activities</li>
+<li><strong>Financial entities</strong> must count hedging contracts toward position limits (no hedge exemption available)</li>
+<li>Application process: Submit to BaFin pursuant to MiFID II Article 57(1) and Commission Delegated Regulation (EU) 2017/591 Article 8</li>
+<li>Once approved, positions flagged as “hedge” fall outside the position limit regime</li>
+</ul>
+</section>
+<section id="non-commodity-position-limits" class="level3">
+<h3 class="anchored" data-anchor-id="non-commodity-position-limits">15.4 Non-Commodity Position Limits</h3>
+<ul>
+<li>For equity index and interest rate derivatives, Eurex applies <strong>position reporting</strong> requirements rather than hard position limits</li>
+<li>Large position reporting thresholds trigger enhanced monitoring by Eurex Market Supervision</li>
+<li>Exchange rules may impose product-specific position limits in exceptional circumstances</li>
+</ul>
+<p>[Source: BaFin, “Position limits for commodity derivatives”, https://www.bafin.de/EN/Aufsicht/BoersenMaerkte/Derivate/PositionslimitsWarenderivate/positionslimits_warenderivate_node_en.html]</p>
+<hr>
+</section>
+</section>
+<section id="block-trading-efp-efs-off-book-trading-facilities" class="level2">
+<h2 class="anchored" data-anchor-id="block-trading-efp-efs-off-book-trading-facilities">16. Block Trading / EFP / EFS – Off-Book Trading Facilities</h2>
+<section id="eurex-t7-entry-services-tes" class="level3">
+<h3 class="anchored" data-anchor-id="eurex-t7-entry-services-tes">16.1 Eurex T7 Entry Services (TES)</h3>
+<p>Eurex T7 Entry Services enable Trading Participants to enter off-book transactions into the Eurex system, combining the flexibility of customized trading with standardized clearing and settlement through Eurex Clearing.</p>
+<p><strong>Available TES Types:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Service</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Block Trades</strong></td>
+<td>Off-book execution of standard Eurex products at negotiated prices; subject to Minimum Block Trade Sizes (MBTS)</td>
+</tr>
+<tr class="even">
+<td><strong>Exchange for Physicals – Financial (EFP-F)</strong></td>
+<td>Execute and clear the futures leg of an off-book fixed income trade; auto-approval functionality available for Fixed Income Futures</td>
+</tr>
+<tr class="odd">
+<td><strong>Exchange for Swaps (EFS)</strong></td>
+<td>Exchange a futures position against an OTC swap position</td>
+</tr>
+<tr class="even">
+<td><strong>Trade at Index Close (TAIC)</strong></td>
+<td>Execute trades at the official closing price of an index</td>
+</tr>
+<tr class="odd">
+<td><strong>Multilateral Block Trades</strong></td>
+<td>Registration of block trades with multiple counterparties (e.g., one buyer vs.&nbsp;three sellers) in a single transaction</td>
+</tr>
+<tr class="even">
+<td><strong>Non-Disclosure Facility</strong></td>
+<td>Allows participants to trade without disclosing identity</td>
+</tr>
+</tbody>
+</table>
+<p><strong>TES Entry &amp; Approval Times:</strong> - For EFP and EFS on Fixed Income Futures, entry and approval times extended to the end of the trading day (22:00 CET)</p>
+</section>
+<section id="eurex-enlight-selective-rfq-platform" class="level3">
+<h3 class="anchored" data-anchor-id="eurex-enlight-selective-rfq-platform">16.2 Eurex EnLight – Selective RFQ Platform</h3>
+<ul>
+<li><strong>On-exchange, off-book</strong> selective Request-for-Quote (RFQ) functionality</li>
+<li>Fully integrated with straight-through processing (STP) into T7</li>
+<li><strong>Key features</strong>:
+<ul>
+<li><strong>Anonymous Negotiation</strong>: Requester can make RFQ anonymous; no identity disclosure during or after negotiation</li>
+<li><strong>Smart RFQ</strong>: Suggests members most likely to respond favorably based on historical data</li>
+<li><strong>Leakage control</strong>: Sales desks fully control which counterparties receive RFQs and how much information is included</li>
+</ul></li>
+<li><strong>Minimum sizes</strong>: EnLight Minimum Block Trade Sizes (EMBTS) apply; vary by product</li>
+<li><strong>Access</strong>: Available via API, Bloomberg Tradebook, Trading Technologies, and other ISV platforms</li>
+</ul>
+<p>[Source: Eurex, “Block Trades”, https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades] [Source: Eurex, “Eurex EnLight”, https://www.eurex.com/ex-en/trade/market-models/enlight]</p>
+<hr>
+</section>
+</section>
+<section id="delivery-settlement" class="level2">
+<h2 class="anchored" data-anchor-id="delivery-settlement">17. Delivery &amp; Settlement</h2>
+<section id="cash-settlement" class="level3">
+<h3 class="anchored" data-anchor-id="cash-settlement">17.1 Cash Settlement</h3>
+<p>Applies to <strong>index derivatives, volatility derivatives, dividend derivatives, money market futures</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 74%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product Type</th>
+<th>Final Settlement Price Determination</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EURO STOXX 50 Futures/Options</td>
+<td>Average of EURO STOXX 50 index values calculated between 11:50 and 12:00 CET on final settlement day</td>
+</tr>
+<tr class="even">
+<td>DAX Futures/Options</td>
+<td>Based on intraday auction values of DAX constituent stocks on final settlement day</td>
+</tr>
+<tr class="odd">
+<td>VSTOXX Futures</td>
+<td>Based on VSTOXX index calculation on expiration day</td>
+</tr>
+<tr class="even">
+<td>Euribor / Euro STR Futures</td>
+<td>Based on reference rate fixing on final settlement day</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="physical-delivery" class="level3">
+<h3 class="anchored" data-anchor-id="physical-delivery">17.2 Physical Delivery</h3>
+<p>Applies to <strong>fixed income futures, single stock futures, equity options</strong>:</p>
+<p><strong>Fixed Income Futures Delivery Process:</strong> 1. <strong>Notification</strong>: Clearing members with open short positions must notify Eurex on the last trading day which specific bond (from the deliverable basket) they will deliver, by end of Post-Trading Full Period 2. <strong>Delivery day</strong>: 10th calendar day of the maturity month (or next exchange day) 3. <strong>Conversion factors</strong>: Applied to adjust for differences between the notional coupon (6%) and actual coupon of delivered bonds 4. <strong>Cheapest-to-deliver (CTD)</strong>: Short position holders typically select the bond that is cheapest to deliver based on conversion factors and market conditions</p>
+<p><strong>Single Stock Futures/Options:</strong> - Physical delivery of underlying shares - Settlement via Eurex Clearing through the respective CSD (Clearstream or other connected settlement systems) - Delivery occurs on the standard settlement cycle (T+2 for most European markets)</p>
+</section>
+<section id="variation-margin-daily-settlement" class="level3">
+<h3 class="anchored" data-anchor-id="variation-margin-daily-settlement">17.3 Variation Margin (Daily Settlement)</h3>
+<ul>
+<li><strong>Futures</strong>: Daily mark-to-market with cash variation margin payments</li>
+<li><strong>Daily settlement prices</strong> for current maturity months derived from volume-weighted average of trades in the minute before 17:15 CET (if &gt;5 trades in that period)</li>
+<li>Settlement via Eurex Clearing AG through designated payment banks</li>
+</ul>
+<p>[Source: Eurex, “Euro-Bund Futures (FGBL)”, https://www.eurex.com/ex-en/markets/int/fix/government-bonds/Euro-Bund-Futures-137298] [Source: Eurex, “Contract Specifications”, https://www.eurex.com/exchange-en/resources/rules-regulations/Contract-specifications/136774]</p>
+<hr>
+</section>
+</section>
+<section id="appendix-comparison-with-krx-derivatives-market" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-comparison-with-krx-derivatives-market">Appendix: Comparison with KRX Derivatives Market</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 33%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Eurex</th>
+<th>KRX</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Flagship Equity Index Product</td>
+<td>EURO STOXX 50 Futures/Options</td>
+<td>KOSPI 200 Futures/Options</td>
+</tr>
+<tr class="even">
+<td>Interest Rate Benchmark</td>
+<td>Euro-Bund Futures</td>
+<td>KTB Futures (3Y, 10Y)</td>
+</tr>
+<tr class="odd">
+<td>Margin Methodology</td>
+<td>Prisma (portfolio-based historical VaR)</td>
+<td>SPAN-based (transitioning to new methodology)</td>
+</tr>
+<tr class="even">
+<td>Trading System</td>
+<td>T7 (Deutsche Borse proprietary)</td>
+<td>EXTURE+ (KRX proprietary)</td>
+</tr>
+<tr class="odd">
+<td>Clearing</td>
+<td>Eurex Clearing AG (standalone CCP)</td>
+<td>KRX as CCP (integrated exchange-clearing)</td>
+</tr>
+<tr class="even">
+<td>Cross-Margining</td>
+<td>ETD-OTC cross-margining available</td>
+<td>Limited cross-margining</td>
+</tr>
+<tr class="odd">
+<td>Trading Hours</td>
+<td>Up to 21 hours (01:00 - 22:00 CET)</td>
+<td>~6.5 hours (09:00 - 15:45 KST) for most products</td>
+</tr>
+<tr class="even">
+<td>Off-Book Trading</td>
+<td>T7 Entry Services, Eurex EnLight</td>
+<td>Limited off-book facilities</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<ul>
+<li><a href="https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494">Eurex, “Full year and December 2025 figures at Eurex”</a></li>
+<li><a href="https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2024-figures-at-Eurex-4250318">Eurex, “Full year and December 2024 figures at Eurex”</a></li>
+<li><a href="https://www.eurex.com/ex-en/markets">Eurex, “Markets”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/trading-hours">Eurex, “Trading hours”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/order-book-trading/order-types">Eurex, “Order types”</a></li>
+<li><a href="https://www.eurex.com/ex-en/support/technology/t7">Eurex, “T7”</a></li>
+<li><a href="https://www.eurex.com/resource/blob/48918/4f724c9415d2731cfb27295db6269c9c/data/presentation_insights-into-trading-system-dynamics_en.pdf">Eurex, “Insights into Trading System Dynamics”, March 2025</a></li>
+<li><a href="https://www.eurex.com/ex-en/support/initiatives/T7-Release-14.0">Eurex, “T7 Release 14.0”</a></li>
+<li><a href="https://www.eurex.com/ex-en/support/technology/connectivity">Eurex, “Connectivity”</a></li>
+<li><a href="https://www.eurex.com/ex-en/support/initiatives/archive/release8/Market-and-Reference-Data-Interfaces-1546120">Eurex, “Market and Reference Data Interfaces”</a></li>
+<li><a href="https://www.eurex.com/ex-en/support/emergencies-and-safeguards/volatility-interruption-functionality">Eurex, “Volatility Interruption Functionality”</a></li>
+<li><a href="https://www.eurex.com/resource/blob/2448162/28033c3a73ea19078860573d526f8f33/data/presentation-trading-safeguards.pdf">Eurex, “Trading Safeguards”, October 2025</a></li>
+<li><a href="https://www.eurex.com/ex-en/rules-regs/regulations/mifid-mifir">Eurex, “MiFID II/MiFIR”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/transaction-fees">Eurex, “Transaction fees”</a></li>
+<li><a href="https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma">Eurex Clearing, “Eurex Clearing Prisma”</a></li>
+<li><a href="https://www.eurex.com/ec-en/services/margining/margining-process">Eurex Clearing, “Margining process”</a></li>
+<li><a href="https://www.eurex.com/ec-en/services/margining/cross-margining">Eurex Clearing, “Cross-margining”</a></li>
+<li><a href="https://www.eurex.com/ec-en/join/admission-requirements/Membership-Types-24040">Eurex Clearing, “Membership Types”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/eurex-t7-entry-services/block-trades">Eurex, “Block Trades”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/market-models/enlight">Eurex, “Eurex EnLight”</a></li>
+<li><a href="https://www.eurex.com/ex-en/trade/market-making-and-liquidity-provisioning">Eurex, “Market-Making and Liquidity provisioning”</a></li>
+<li><a href="https://www.bafin.de/EN/Aufsicht/BoersenMaerkte/Derivate/PositionslimitsWarenderivate/positionslimits_warenderivate_node_en.html">BaFin, “Position limits for commodity derivatives”</a></li>
+<li><a href="https://www.eurex.com/exchange-en/resources/rules-regulations/Contract-specifications/136774">Eurex, “Contract Specifications”</a></li>
+<li><a href="https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026--4867350">Eurex, “Our path for 2026”</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Eurex">Wikipedia, “Eurex”</a></li>
+<li><a href="https://www.marketswiki.com/wiki/Eurex">MarketsWiki, “Eurex”</a></li>
+<li><a href="https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/">Deutsche Boerse Risk, “Cloud Prisma Margin Estimator”</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

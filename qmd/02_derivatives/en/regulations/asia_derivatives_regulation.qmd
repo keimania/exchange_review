@@ -1,0 +1,440 @@
+---
+title: "Asia-Pacific Derivatives Regulation"
+subtitle: "Derivatives > Regulations"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-07
+> **Domain:** Derivatives --- Regulatory Framework
+> **Jurisdictions:** Japan, Hong Kong, Singapore, Korea (comparative)
+
+---
+
+## 1. Japan
+
+### 1.1 Regulatory Authorities
+
+| Authority | Role | Scope |
+|-----------|------|-------|
+| **JFSA** (Financial Services Agency) | Primary regulator | Securities, banking, insurance, derivatives; reports to Cabinet Office |
+| **SESC** (Securities and Exchange Surveillance Commission) | Enforcement & surveillance | Market manipulation, insider trading, inspection of FIBOs |
+| **JPX-R** (JPX Regulation) | Self-regulatory organization | Market surveillance, member compliance for JPX-listed markets |
+| **Bank of Japan** | Central bank / systemic oversight | Systemic risk oversight of JSCC; monetary policy implications |
+| **METI** (Ministry of Economy, Trade and Industry) | Commodity oversight (historical) | Commodity derivatives (pre-2012 unification); now largely consolidated under JFSA |
+
+- Japan operates a **ministry-level** regulatory model: the JFSA is an external bureau of the Cabinet Office, giving it broad administrative authority.
+- The SESC, while organizationally under the JFSA, maintains operational independence for enforcement actions.
+- JPX-R provides front-line surveillance for the Osaka Exchange (OSE) and Tokyo Commodity Exchange (TOCOM) derivatives markets.
+
+> Source: [JFSA official website](https://www.fsa.go.jp/en/); [Chambers Derivatives 2025 — Japan](https://practiceguides.chambers.com/practice-guides/derivatives-2025/japan)
+
+### 1.2 Key Legislation
+
+| Legislation | Year | Scope |
+|-------------|------|-------|
+| **Financial Instruments and Exchange Act (FIEA)** | 2006 (orig.), multiple amendments | Primary law governing securities and derivatives; defines Financial Instruments Business Operators (FIBOs) |
+| **Commodity Derivatives Act** | 2009 (orig.) | Governs commodity derivatives; largely merged into FIEA framework post-2012 |
+| **2012 Comprehensive Reform** | 2012 | Unified regulation of securities derivatives and commodity derivatives under JFSA; previously commodity derivatives were under METI/MAFF |
+| **2024 FIEA Amendments** | 2024 (enacted); effective May 2026 | Shareholder disclosure reforms; extends reporting obligations to cash-settled equity derivatives; clarifies "joint holder" definitions |
+
+**Key FIEA provisions for derivatives:**
+- Registration requirements for Financial Instruments Business Operators (FIBOs) dealing in derivatives
+- Mandatory clearing of designated OTC derivatives through a licensed clearinghouse
+- Trade reporting obligations to trade repositories (amended April 2024 to require LEI, UTI, and CDE reporting)
+- Conduct rules: suitability obligations, risk disclosure, segregation of customer assets
+- Position limit framework delegated to exchange rules
+
+> Source: [ICLG Derivatives 2025-2026 — Japan](https://iclg.com/practice-areas/derivatives-laws-and-regulations/japan); [Funds-Axis — FIEA 2024 Amendments](https://funds-axis.com/japans-2024-fiea-amendments-key-shareholder-disclosure-reforms-coming-in-2026/)
+
+### 1.3 Clearing Framework
+
+**Central Counterparty:** Japan Securities Clearing Corporation (JSCC) --- sole CCP for listed and OTC derivatives
+
+| Service | Products | Mandatory? |
+|---------|----------|------------|
+| Listed derivatives clearing | All OSE/TOCOM listed futures & options | Yes (all exchange-traded) |
+| OTC IRS clearing | JPY-denominated interest rate swaps (TONA compounded in arrears) | Yes (for designated FIBOs) |
+| OTC CDS clearing | iTraxx Japan index CDS | Yes (for designated FIBOs) |
+
+- JSCC clears only **yen-denominated** OTC products (IRS and CDS).
+- Mandatory clearing applies to FIBOs and Registered Financial Institutions meeting threshold criteria, as designated by the JFSA Commissioner under Cabinet Office Orders.
+- **2025 development:** The U.S. CFTC issued Staff Letter No. 25-32 (September 12, 2025) and an Amended Order of Exemption, permitting U.S. eligible contract participants to clear JPY-IRS through JSCC clearing members. This represents a significant cross-border milestone.
+
+> Source: [JSCC — OTC Derivatives Clearing](https://www.jpx.co.jp/jscc/en/otc/index.html); [CFTC Letter No. 25-32](https://www.cftc.gov/csl/25-32/download); [Gibson Dunn — CFTC/JSCC](https://www.gibsondunn.com/cftc-will-permit-us-customers-to-clear-yen-interest-rate-swaps-at-jscc/)
+
+### 1.4 Position Limits & Reporting
+
+- **Position limits** are set by the Osaka Exchange (OSE) at the exchange rule level, not prescribed by statute.
+- Limits vary by contract and are expressed in terms of number of contracts (net position).
+- **Large position reporting** is required when positions exceed exchange-prescribed thresholds.
+- Hedge exemptions are available upon application to the exchange.
+- The JFSA retains authority to direct exchanges to modify position limit rules if warranted by systemic concerns.
+
+> Source: [JPX — Index Futures Specifications (May 2025)](https://www.jpx.co.jp/english/derivatives/rules/outline/dreu250000001ove-att/dreu250000001oyj.pdf)
+
+### 1.5 Trade Reporting
+
+- **April 2024 reform:** Amendments to the trade data reporting requirement came into force, requiring:
+  - Reporting through licensed trade repositories (rather than directly to the JFSA)
+  - Mandatory use of Legal Entity Identifier (LEI)
+  - Mandatory use of Unique Transaction Identifier (UTI)
+  - Improved Critical Data Elements (CDE) aligned with CPMI-IOSCO standards
+
+> Source: [ICLG Derivatives 2025-2026 — Japan](https://iclg.com/practice-areas/derivatives-laws-and-regulations/japan)
+
+### 1.6 Recent Developments
+
+| Development | Date | Details |
+|-------------|------|---------|
+| **Extended trading hours** | 2016 (Night Session to 5:30 AM JST) | Night session accounts for ~40% of total futures & options trading volume |
+| **Holiday trading** | Sep 2022 | OSE/TOCOM launched holiday trading for select derivatives products |
+| **TONA futures growth** | 2023-2025 | 3-Month TONA futures OI surpassed 100,000 contracts (March 2025); Oct 2025 volume reached ~250,000 contracts (monthly record); supported by BOJ rate normalization (negative rates removed March 2024, rate hike to 0.25% July 2024) |
+| **JSCC IRS clearing record** | Oct 2025 | JPY IRS clearing volume reached ~JPY 1,526 trillion, a new record |
+| **CFTC cross-border access** | Sep 2025 | U.S. customers permitted to clear JPY-IRS at JSCC |
+| **2024 FIEA Amendments** | Enacted 2024; effective May 2026 | Cash-settled equity derivatives brought into shareholder disclosure reporting |
+
+> Sources: [JPX — TONA Futures Record (Mar 2025)](https://www.jpx.co.jp/english/corporate/news/news-releases/2041/20250314-01.html); [JPX — Oct 2025 Records](https://www.jpx.co.jp/english/news/2041/20251107-01.html); [FIA — JPX Extended Hours Success](https://www.fia.org/marketvoice/articles/market-never-sleeps-success-extended-trading-hours-jpx)
+
+---
+
+## 2. Hong Kong
+
+### 2.1 Regulatory Authorities
+
+| Authority | Role | Scope |
+|-----------|------|-------|
+| **SFC** (Securities and Futures Commission) | Primary market regulator | Securities, futures, OTC derivatives regulation; independent statutory body |
+| **HKMA** (Hong Kong Monetary Authority) | Banking / monetary regulator | OTC derivatives regulation for authorized institutions (banks); co-regulator with SFC |
+| **HKEX** | Exchange and CCP operator | Operates the exchange and three clearing houses; also conducts front-line regulation |
+| **FSTB** (Financial Services and the Treasury Bureau) | Policy | Sets legislative policy direction |
+
+- Hong Kong uses an **independent statutory authority** model. The SFC is not a government ministry but an independent body with quasi-judicial powers.
+- For OTC derivatives regulation, the SFC and HKMA share jurisdiction: the SFC oversees licensed corporations, while the HKMA oversees authorized institutions (banks).
+- HKEX performs dual roles as commercial exchange operator and market regulator.
+
+> Source: [SFC — About the SFC](https://www.sfc.hk/en/About-the-SFC); [ICLG Derivatives 2025-2026 — Hong Kong](https://iclg.com/practice-areas/derivatives-laws-and-regulations/hong-kong)
+
+### 2.2 Key Legislation
+
+| Legislation | Year | Scope |
+|-------------|------|-------|
+| **Securities and Futures Ordinance (SFO)** | 2003 | Primary law governing securities and futures markets; licensing, market conduct, derivatives regulation |
+| **Securities and Futures (OTC Derivative Transactions — Reporting and Record Keeping Obligations) Rules** | 2015+ (phased) | Mandatory reporting of OTC derivatives |
+| **Securities and Futures (OTC Derivative Transactions — Clearing and Record Keeping Obligations and Designation of Central Counterparties) Rules** | 2016+ (phased) | Mandatory clearing of designated OTC derivatives |
+| **Securities and Futures (Contracts Limits and Reportable Positions) Rules** | Various | Position limits and large open position reporting for exchange-traded derivatives |
+
+> Source: [SFC — OTC Derivatives Regime FAQ](https://www.sfc.hk/en/faqs/OTC-derivatives)
+
+### 2.3 Clearing Framework
+
+**Clearing Houses under HKEX:**
+
+| Clearing House | Scope | Products |
+|----------------|-------|----------|
+| **HKCC** (HKFE Clearing Corporation) | Listed derivatives | All exchange-traded futures and options on HKEX |
+| **SEOCH** (SEHK Options Clearing House) | Listed stock options | Stock options on HKEX |
+| **OTC Clear** (OTC Clearing Hong Kong Limited) | OTC derivatives | IRS (HKD, USD, EUR, GBP, CNY), cross-currency swaps, NDFs |
+
+**Mandatory OTC clearing:**
+- Mandatory clearing applies to IRS transactions between "prescribed persons" and "Financial Services Providers" (FSPs — major dealers outside Hong Kong).
+- Covered currencies: HKD, USD, EUR, GBP fixed-to-floating IRS.
+- The FSP List is updated annually; the 2025 update was gazetted Q4 2025 for implementation January 1, 2026.
+- **2026 consultation:** In January 2026, HKMA and SFC jointly consulted on standard calculation periods under OTC derivative Clearing Rules, proposing two annual calculation periods (March-May and September-November) effective March 1, 2027.
+
+**Margin for non-centrally cleared derivatives:**
+- Margin requirements for non-centrally cleared OTC single-stock options, equity basket options, and equity index options were deferred to January 4, 2026, aligning with UK and EU timelines.
+
+> Sources: [HKEX — OTC Clear Clearing Services](https://www.hkex.com.hk/Services/Clearing/OTC-Clear/Overview/Clearing-Services?sc_lang=en); [HKMA — FSP List Update (Apr 2025)](https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/04/20250417-3/); [HKMA — Clearing Rules Consultation (Jan 2026)](https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/01/20260129-4/)
+
+### 2.4 Position Limits
+
+The SFC prescribes statutory position limits for exchange-traded derivatives:
+
+**Key position limits (effective July 2, 2025):**
+
+| Contract | Position Limit (Delta) | Change |
+|----------|----------------------|--------|
+| Hang Seng Index (HSI) futures & options | 15,000 | +50% increase |
+| Hang Seng China Enterprises Index (HSCEI) futures & options | 25,000 | +108% increase |
+| Hang Seng TECH Index futures & options | 30,000 | +43% increase |
+
+- Position limits are expressed in **position delta** (net delta across futures and options).
+- **Reportable position thresholds** are set at lower levels; exceeding these triggers large open position (LOP) reporting to the SFC.
+- Hedge exemptions and market-maker exemptions are available upon application.
+- The SFC consulted on these increases in early 2025 and received 25 submissions from local and overseas market participants showing strong support.
+
+> Sources: [SFC — Position Limit Increases (Jun 2025)](https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=25PR100); [SFC — Consultation Paper 25CP2](https://apps.sfc.hk/edistributionWeb/api/consultation/openFile?lang=EN&refNo=25CP2)
+
+### 2.5 Trade Reporting
+
+- **September 29, 2025:** Enhanced HKTR (Hong Kong Trade Repository) reporting requirements took effect:
+  - Mandatory Unique Transaction Identifier (UTI)
+  - Mandatory Unique Product Identifier (UPI)
+  - Mandatory Critical Data Elements (CDE) aligned with CPMI-IOSCO standards
+
+> Source: [EY — Evolving HKTR Requirements (Mar 2025)](https://www.ey.com/content/dam/ey-unified-site/ey-com/en-cn/technical/hong-kong-fsrm-insights/documents/ey-evolving-hktr-requirements-adapting-to-international-standards-and-revamping-reporting-capabilities.pdf)
+
+### 2.6 Recent Developments
+
+| Development | Date | Details |
+|-------------|------|---------|
+| **Swap Connect launch** | May 15, 2023 | Northbound trading channel allowing international investors to access Mainland China interbank IRS market; cleared through OTC Clear / Shanghai Clearing House |
+| **Swap Connect enhancements** | May 2024 | IMM date trades, solo compression service, backdated trades introduced |
+| **Bond collateral for Swap Connect** | Jan 2025 | Offshore investors permitted to use central government bonds and policy bank bonds (held via Bond Connect) as collateral |
+| **30-Year swaps in Swap Connect** | Jun 2025 | 30-year tenor added to Northbound Swap Connect |
+| **Swap Connect cumulative volume** | As of Apr 2025 | 79 institutions from 15 markets; 12,000+ transactions; ~RMB 6.5 trillion aggregate notional |
+| **Position limit increases** | Jul 2, 2025 | HSI/HSCEI/HSTECH position limits increased 50-108% |
+| **HKTR reporting enhancements** | Sep 29, 2025 | UTI, UPI, CDE mandated |
+| **Synapse platform** | 2023+ | Settlement acceleration platform for Stock Connect using DAML smart contracts; collaboration with DTCC |
+| **Orion Derivatives Platform (ODP)** | In development | Next-generation derivatives trading platform |
+| **Southbound Swap Connect** | Under exploration | SFC exploring Southbound functionality |
+
+> Sources: [HKEX — Swap Connect Launch](https://www.hkex.com.hk/News/News-Release/2025/250630news?sc_lang=en); [Reed Smith — Swap Connect](https://www.reedsmith.com/en/perspectives/2023/05/hong-kong-stock-exchange-launched-swap-connect); [SFC Speech — Bond Connect Anniversary (Jul 2025)](https://www.sfc.hk/-/media/EN/files/COM/Speech/EN_Bond-Connect-Anniversary_CEO-Speech_Jul-2025.pdf)
+
+---
+
+## 3. Singapore
+
+### 3.1 Regulatory Authorities
+
+| Authority | Role | Scope |
+|-----------|------|-------|
+| **MAS** (Monetary Authority of Singapore) | Integrated regulator + central bank | Securities, banking, insurance, derivatives, monetary policy --- single unified regulator |
+| **SGX RegCo** | Self-regulatory organization | Front-line regulation of SGX-listed markets; subsidiary of SGX Group |
+
+- Singapore uses a **fully integrated** regulatory model: MAS is both the central bank and the financial regulator.
+- SGX RegCo was established as a separate subsidiary in 2017 to strengthen the independence of regulatory functions from SGX's commercial operations.
+
+> Source: [MAS — About MAS](https://www.mas.gov.sg); [SGX RegCo](https://www.sgx.com/regulation/sgx-regco)
+
+### 3.2 Key Legislation
+
+| Legislation | Year | Scope |
+|-------------|------|-------|
+| **Securities and Futures Act (SFA)** | 2001 (current version) | Primary law governing securities, futures, and derivatives markets; licensing, market conduct, clearing |
+| **Securities and Futures (Reporting of Derivatives Contracts) Regulations 2013** | 2013 (amended 2024) | Mandatory reporting of OTC derivatives contracts |
+| **Securities and Futures (Licensing and Conduct of Business) Regulations** | Various | Licensing requirements for capital markets services |
+
+> Source: [MAS — Securities and Futures Act 2001](https://www.mas.gov.sg/regulation/acts/securities-and-futures-act); [Singapore Statutes Online — SFA](https://sso.agc.gov.sg/SL/SFA2001-RG10)
+
+### 3.3 Clearing Framework
+
+**Central Counterparty:** SGX Derivatives Clearing Limited (SGX-DC)
+
+| Service | Products | Notes |
+|---------|----------|-------|
+| Listed derivatives clearing | All SGX-listed futures & options | Equity index, FX, commodity, interest rate derivatives |
+| OTC IRS clearing | SGD and USD IRS | Mandatory for entities exceeding S$20 billion threshold |
+| OTC FX clearing | NDFs, FX options | Voluntary clearing available |
+
+**Mandatory clearing scope:**
+- MAS mandated clearing for certain IRS contracts (originally SGD fixed-to-floating SOR IRS and USD fixed-to-floating LIBOR IRS; transitioned to SORA-based benchmarks).
+- Applies to banks and other specified persons exceeding the S$20 billion gross notional outstanding threshold (measured over four consecutive calendar quarters for derivatives booked in Singapore).
+- Banks below the threshold and non-bank entities below the threshold are exempt.
+
+**SGX-DC is CFTC-registered** as a Derivatives Clearing Organization (DCO), enabling U.S. customers to access SGX-cleared products.
+
+> Sources: [MAS — Consultation Paper on Mandatory Clearing](https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Consultation-Papers/Consultation-Paper-on-Draft-Regulations-for-Mandatory-Clearing-of-Derivatives-Contracts.pdf); [CFTC — SGX-DC Registration](https://www.cftc.gov/PressRoom/PressReleases/6812-13)
+
+### 3.4 Position Limits
+
+- Position limits are set by **SGX** at the exchange rule level.
+- SGX uses a dual framework:
+  - **Position limits:** Hard caps on net positions for speculative accounts.
+  - **Accountability levels:** Soft thresholds that trigger exchange inquiry but do not automatically prohibit additional positions.
+- Large position reporting is required when positions exceed prescribed thresholds.
+- Hedge exemptions are available upon application to SGX.
+
+> Source: [SGX-DC Clearing Rules](https://rulebook.sgx.com/rulebook/sgx-dc-clearing-rules)
+
+### 3.5 Trade Reporting
+
+**October 21, 2024 reform (MAS Rewrite):**
+- Major overhaul of OTC derivatives reporting requirements, harmonizing with CPMI-IOSCO standards:
+  - Adoption of ISO 20022 messaging standard
+  - Mandatory reporting to licensed trade repositories within two business days
+  - Covers: interest rate, credit, FX, commodity, and equity derivatives contracts booked or traded in Singapore
+- **Re-reporting requirement:** All outstanding specified derivatives contracts with remaining maturity of 6+ months as of October 21, 2024, were required to be re-reported by April 21, 2025.
+
+> Sources: [MAS — Reporting Guidelines (May 2024)](https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulations-guidance-and-licensing/securities-futures-and-fund-management/regulations-guidance-and-licensing/guidelines/guidelines-to-the-securities-and-futures-reporting-of-derivatives-contracts-regulations_31-may-2024.pdf); [Rajah & Tann — OTC Reporting Changes (Oct 2024)](https://www.rajahtannasia.com/viewpoints/changes-to-the-otc-derivatives-reporting-regime-commencing-on-21-october-2024/)
+
+### 3.6 Recent Developments
+
+| Development | Date | Details |
+|-------------|------|---------|
+| **GIFT Connect with NSE** | Jul 2023 | GIFT Nifty launched --- migration of SGX Nifty derivatives to NSE IX in GIFT City, India; $9 billion OI at launch; SGX members access via connectivity arrangement |
+| **Extended trading hours** | Nov 2024 | SGX Nikkei derivatives and FTSE Blossom Japan Index Futures trading hours extended by 30 minutes |
+| **OTC reporting reform** | Oct 2024 | Major rewrite of OTC derivatives reporting (ISO 20022, UTI, UPI, CDE) |
+| **FX futures leadership** | Ongoing | SGX is Asia's largest exchange for FX futures and options; continues adding new currency pairs |
+| **CME mutual offset** | Ongoing | Agreement with CME Group allows futures positions opened on one exchange to be liquidated on the other (Eurodollar/Euroyen and Nikkei 225 futures) |
+
+> Sources: [SGX — GIFT Connect](https://www.sgx.com/derivatives/products/gift-connect); [Phillip Nova — SGX Extended Hours (Nov 2024)](https://www.phillipnova.com.sg/announcement/extension-of-t-session-trading-hours-for-sgx-nikkei-derivatives-and-sgx-ftse-blossom-japan-index-futures/)
+
+---
+
+## 4. Comparative Analysis
+
+### 4.1 Regulatory Structure Comparison
+
+| Dimension | Japan | Hong Kong | Singapore | Korea |
+|-----------|-------|-----------|-----------|-------|
+| **Primary regulator** | JFSA (Financial Services Agency) | SFC (Securities and Futures Commission) | MAS (Monetary Authority of Singapore) | FSC (Financial Services Commission) |
+| **Regulator type** | External bureau of Cabinet Office (ministry-level) | Independent statutory body | Integrated regulator + central bank | Government commission under Prime Minister's Office |
+| **Supervisory arm** | SESC (enforcement) | SFC Enforcement Division | MAS (integrated) | FSS (Financial Supervisory Service) |
+| **SRO** | JPX-R | HKEX (dual role) | SGX RegCo | KRX (dual role: exchange + SRO) |
+| **Central bank role** | BOJ --- systemic oversight of JSCC | HKMA --- co-regulator for OTC derivatives (banks) | MAS is the central bank | BOK --- limited direct role in derivatives regulation |
+| **Dual regulator?** | No (JFSA unified post-2012) | Yes (SFC + HKMA for OTC derivatives) | No (MAS is fully integrated) | Yes (FSC policy + FSS supervision) |
+
+**Key distinctions:**
+- **Singapore** stands out as the only fully integrated model where the central bank is also the financial regulator.
+- **Korea** has a unique dual structure: the FSC sets policy while the FSS (a separate organization) executes supervision and examination. This differs from Hong Kong's SFC/HKMA split, which is based on entity type (licensed corporations vs. banks), not function.
+- **Japan** completed its unification in 2012, bringing commodity derivatives under JFSA from METI/MAFF.
+
+### 4.2 Position Limit Approaches
+
+| Dimension | Japan | Hong Kong | Singapore | Korea |
+|-----------|-------|-----------|-----------|-------|
+| **Authority setting limits** | Exchange (OSE) | Statutory (SFC) | Exchange (SGX) | Exchange (KRX) + FSC oversight |
+| **Expression** | Number of contracts (net) | Position delta | Contracts + accountability levels | Contracts (net); varies by investor type |
+| **Statutory vs. exchange rule** | Exchange rule | Statutory (SFO subsidiary legislation) | Exchange rule | KRX rules under FSC approval |
+| **Recent changes** | No major changes | HSI/HSCEI/HSTECH limits increased 50-108% (Jul 2025) | [no major recent changes reported] | Strike price ranges expanded (Mar 2026) |
+| **Foreign investor treatment** | Same limits; registration required | Same limits; SFC licensing required | Same limits; MAS licensing required | Separate registration; ID system for foreigners; historically stricter scrutiny |
+| **Hedge exemptions** | Available (exchange application) | Available (SFC application) | Available (SGX application) | Available (KRX application) |
+
+### 4.3 Clearing Mandate Comparison
+
+| Dimension | Japan | Hong Kong | Singapore | Korea |
+|-----------|-------|-----------|-----------|-------|
+| **CCP for listed derivatives** | JSCC | HKCC, SEOCH | SGX-DC | KRX (vertically integrated) |
+| **CCP for OTC derivatives** | JSCC | OTC Clear | SGX-DC | KRX (limited OTC clearing) |
+| **Mandatory OTC clearing — IRS** | Yes (JPY IRS) | Yes (HKD, USD, EUR, GBP IRS) | Yes (SGD, USD IRS --- above threshold) | Limited |
+| **Mandatory OTC clearing — CDS** | Yes (iTraxx Japan) | No mandatory CDS clearing | No mandatory CDS clearing | No mandatory CDS clearing |
+| **Clearing threshold** | Applies to designated FIBOs | Transactions between prescribed persons and FSPs | S$20 billion gross notional threshold | [varies by regulation] |
+| **Trade reporting** | Yes (LEI, UTI, CDE from Apr 2024) | Yes (UTI, UPI, CDE from Sep 2025) | Yes (ISO 20022, UTI, CDE from Oct 2024) | Yes (to KRX/FSS) |
+
+**Notable patterns:**
+- All four jurisdictions have implemented mandatory OTC IRS clearing, with Hong Kong covering the broadest range of currencies.
+- Japan is unique in mandating CDS clearing (iTraxx Japan).
+- Singapore applies a quantitative threshold (S$20 billion) to determine clearing obligations.
+- All four jurisdictions have recently upgraded trade reporting to align with CPMI-IOSCO CDE standards (2024-2025 implementation wave).
+
+### 4.4 Cross-Border Arrangements
+
+| Arrangement | Participants | Status |
+|-------------|-------------|--------|
+| **IOSCO MMOU** | All four jurisdictions (JFSA, SFC, MAS, FSC/FSS) | Full signatories |
+| **IOSCO APRC Supervisory MMoU** | JFSA, SFC, MAS, FSC/FSS (12 APRC signatories total) | Full signatories; enables supervisory (not just enforcement) information exchange |
+| **CFTC — JSCC exemption** | Japan / U.S. | JSCC exempt from DCO registration; U.S. customers can clear JPY-IRS (Sep 2025) |
+| **CFTC — SGX-DC registration** | Singapore / U.S. | SGX-DC fully registered as CFTC DCO |
+| **CFTC — OTC Clear exemption** | Hong Kong / U.S. | OTC Clear exempt from DCO registration (Dec 2015) |
+| **ESMA equivalence** | Japan, Hong Kong, Singapore | ESMA has assessed CCP regulatory equivalence for all three jurisdictions under EMIR |
+| **Swap Connect** | Hong Kong / Mainland China | Northbound live (May 2023); Southbound under exploration |
+| **GIFT Connect** | Singapore / India | SGX-NSE IX connectivity (Jul 2023) |
+
+- All four jurisdictions are **IOSCO MMOU** and **APRC Supervisory MMoU** signatories, facilitating cross-border enforcement and supervisory cooperation.
+- Cross-border CCP recognition is well-established: JSCC, OTC Clear, and SGX-DC all have CFTC exemption/registration status, and ESMA equivalence assessments.
+- Korea's KRX had a cooperation arrangement with Eurex for KOSPI 200 products, though Eurex cancelled admission to trading for its KOSPI derivatives [unverified — specific timeline].
+
+> Sources: [JFSA — APRC MMoU (Nov 2022)](https://www.fsa.go.jp/en/news/2022/20221111-3/20221111-3.html); [SFC — IOSCO MMOU](https://www.sfc.hk/en/About-the-SFC/Regulatory-collaboration/International/IOSCO-MMOU); [FSC — APRC MMoU](https://www.fsc.go.kr/eng/pr010101/81856)
+
+### 4.5 Key Differences from Korean Framework
+
+Korea's derivatives regulatory framework has several distinctive features compared to the other three jurisdictions:
+
+#### 4.5.1 FSC/FSS Dual Structure
+
+- Korea's **FSC** (policy-making) and **FSS** (supervision/examination) split is functionally different from Hong Kong's SFC/HKMA split. Hong Kong divides by entity type (licensed corporations vs. banks); Korea divides by function (policy vs. execution).
+- The FSS is not a government body but a special statutory corporation, which creates a unique institutional dynamic.
+- In Japan and Singapore, these functions are consolidated in a single body (JFSA and MAS, respectively).
+
+#### 4.5.2 KRX as Vertically Integrated Exchange + CCP
+
+- **KRX operates as both exchange and CCP** (vertical silo model), similar to HKEX's structure.
+- This contrasts with Japan, where JPX (exchange holding) and JSCC (CCP) are separate entities (though JSCC is a JPX subsidiary).
+- SGX also uses a vertical silo model (SGX-DC is a subsidiary), but MAS has maintained regulatory separation through SGX RegCo.
+- The vertical integration debate is particularly relevant for Korea given KRX's monopoly position as the sole exchange and CCP for Korean derivatives.
+
+#### 4.5.3 KOSPI 200 Derivatives Position Limits
+
+- Korea has historically applied **position limits differentiated by investor type** (individual, institutional, foreign), with particularly strict limits for individual investors on KOSPI 200 options following the 2011 options multiplier increase (from 100,000 to 500,000 KRW).
+- This investor-type-based approach is more granular than the approach in Japan, Hong Kong, or Singapore, where limits are generally the same regardless of investor type (though market-maker exemptions apply everywhere).
+- **March 2026:** KRX expanded KOSPI 200 options strike price ranges from +/-80 to +/-120 points (first through third nearby months), and similarly for Mini KOSPI 200 options.
+
+#### 4.5.4 Foreign Investor Access
+
+- Korea requires foreign investors to obtain a unique **Investor Registration Certificate (IRC)** from the FSS before trading derivatives.
+- This contrasts with:
+  - **Japan:** Foreign investors access through licensed FIBOs; no separate investor registration
+  - **Hong Kong:** Access through licensed intermediaries; no separate investor registration
+  - **Singapore:** Access through licensed capital markets services holders; no separate investor registration
+- Korea's IRC system enables account-level tracking of foreign positions but adds an administrative layer not present in the other three markets.
+
+#### 4.5.5 Regulatory Governance
+
+| Dimension | Korea (FSC/FSS/KRX) | Japan | Hong Kong | Singapore |
+|-----------|---------------------|-------|-----------|-----------|
+| Capital Markets Act | FSCMA (2009) | FIEA (2006) | SFO (2003) | SFA (2001) |
+| Exchange governance | KRX (member-owned, quasi-public) | JPX (publicly listed) | HKEX (publicly listed) | SGX (publicly listed) |
+| CCP governance | KRX (same entity) | JSCC (JPX subsidiary) | HKCC/OTC Clear (HKEX subsidiaries) | SGX-DC (SGX subsidiary) |
+| Market surveillance | KRX (account-based) | JPX-R | HKEX + SFC | SGX RegCo + MAS |
+| OTC clearing development | Limited | Established (IRS, CDS) | Established (IRS, NDF, CCS) | Established (IRS, FX) |
+
+---
+
+## 5. Summary & Outlook
+
+### 5.1 Convergence Trends
+
+All four jurisdictions are converging on several fronts:
+1. **Trade reporting harmonization:** All adopted CPMI-IOSCO CDE, UTI, and UPI standards during 2024-2025.
+2. **OTC clearing mandates:** All have mandatory IRS clearing, though scope and thresholds vary.
+3. **IOSCO participation:** All are full MMOU and APRC Supervisory MMoU signatories.
+4. **Cross-border CCP recognition:** Mutual recognition frameworks are well-established with major Western counterparts (CFTC, ESMA).
+
+### 5.2 Divergence Points
+
+1. **Regulatory architecture:** Ranges from fully integrated (Singapore/MAS) to split-function (Korea/FSC+FSS) to split-by-entity (Hong Kong/SFC+HKMA).
+2. **Position limit authority:** Statutory (Hong Kong) vs. exchange-level (Japan, Singapore, Korea).
+3. **Foreign investor access:** Korea's IRC system remains more restrictive than the other three.
+4. **Exchange structure:** KRX's monopoly quasi-public model differs from the publicly listed exchange groups in the other three jurisdictions.
+
+### 5.3 Key Watchpoints (2026-2027)
+
+- **Japan:** FIEA 2024 amendments taking effect May 2026; continued TONA futures market development
+- **Hong Kong:** Southbound Swap Connect development; Clearing Rules calculation period amendments (proposed effective March 2027); ODP platform rollout
+- **Singapore:** Continued expansion of FX futures product suite; potential updates to mandatory clearing thresholds
+- **Korea:** Potential KRX IPO implications for regulatory structure; ongoing derivatives market reforms; foreign investor access modernization
+
+---
+
+## Sources
+
+- [Chambers — Derivatives 2025: Japan](https://practiceguides.chambers.com/practice-guides/derivatives-2025/japan)
+- [ICLG — Derivatives 2025-2026: Japan](https://iclg.com/practice-areas/derivatives-laws-and-regulations/japan)
+- [ICLG — Derivatives 2025-2026: Hong Kong](https://iclg.com/practice-areas/derivatives-laws-and-regulations/hong-kong)
+- [Chambers — Financial Services Regulation 2025: South Korea](https://practiceguides.chambers.com/practice-guides/financial-services-regulation-2025/south-korea)
+- [JSCC — OTC Derivatives Clearing](https://www.jpx.co.jp/jscc/en/otc/index.html)
+- [SFC — OTC Derivatives Regime](https://www.sfc.hk/en/faqs/OTC-derivatives)
+- [MAS — Securities and Futures Act](https://www.mas.gov.sg/regulation/acts/securities-and-futures-act)
+- [HKMA — Clearing Rules Consultation (Jan 2026)](https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/01/20260129-4/)
+- [SFC — Position Limit Increases (Jun 2025)](https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=25PR100)
+- [CFTC — JSCC Letter No. 25-32 (Sep 2025)](https://www.cftc.gov/csl/25-32/download)
+- [JPX — TONA Futures Records](https://www.jpx.co.jp/english/corporate/news/news-releases/2041/20250314-01.html)
+- [HKEX — Swap Connect 30-Year Launch (Jun 2025)](https://www.hkex.com.hk/News/News-Release/2025/250630news?sc_lang=en)
+- [SGX — GIFT Connect](https://www.sgx.com/derivatives/products/gift-connect)
+- [MAS — OTC Derivatives Reporting Guidelines](https://www.mas.gov.sg/regulation/guidelines/guidelines-on-reporting-of-otc-derivatives-contracts-sfa-06a-g01)
+- [Rajah & Tann — MAS OTC Reporting Changes (Oct 2024)](https://www.rajahtannasia.com/viewpoints/changes-to-the-otc-derivatives-reporting-regime-commencing-on-21-october-2024/)
+- [JFSA — APRC Supervisory MMoU](https://www.fsa.go.jp/en/news/2022/20221111-3/20221111-3.html)
+- [FSC Korea — Press Releases](https://www.fsc.go.kr/eng/pr010101)
+- [FIA — JPX Extended Hours](https://www.fia.org/marketvoice/articles/market-never-sleeps-success-extended-trading-hours-jpx)
+- [KRX — KOSPI 200 Options Expansion (Mar 2026)](https://en.sedaily.com/news/2026/03/11/krx-expands-kospi-200-options-strike-prices-to-ease-trading)

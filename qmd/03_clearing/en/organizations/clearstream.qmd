@@ -1,0 +1,305 @@
+---
+title: "Clearstream (Clearstream)"
+subtitle: "Clearing & Settlement > Organizations"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-07
+> **Research Tier:** Tier 3 (Overview)
+> **Type:** ICSD (International Central Securities Depository) + CSD
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | Clearstream International S.A. (holding); Clearstream Banking S.A. (ICSD); Clearstream Europe AG (CSD, formerly Clearstream Banking AG) |
+| Abbreviation | Clearstream; CBL (Luxembourg ICSD); CBF (Frankfurt CSD, now Clearstream Europe) |
+| Website | [https://www.clearstream.com](https://www.clearstream.com) |
+| Year Established | 2000 (formed from merger of Cedel International and Deutsche Borse Clearing) |
+| Country / City | Luxembourg (ICSD headquarters); Frankfurt, Germany (CSD) |
+| Ownership Structure | Wholly owned subsidiary of Deutsche Borse Group (publicly listed, ticker DB1) |
+| Parent Company / Group | Deutsche Borse Group -- vertically integrated group encompassing Eurex (derivatives), Xetra (cash equities), Eurex Clearing (CCP), Clearstream (CSD/ICSD), EEX (energy), 360T (FX), STOXX/Qontigo (indices) |
+| Regulatory Authority | CSSF (Commission de Surveillance du Secteur Financier, Luxembourg) for CBL; BaFin/Bundesbank for Clearstream Europe AG (Frankfurt) |
+| CPMI-IOSCO PFMI Compliance | Yes -- publishes comprehensive CPMI-IOSCO disclosure reports for CBL and Clearstream Europe |
+| CSDR Authorization | CBL authorized under CSDR on 12 April 2021 (core CSD services, banking ancillary services, interoperable Bridge link) |
+| Assets Under Custody | EUR 20 trillion+ (group-wide); access to 60 markets globally |
+| T2S Volume | Handles over 50% of entire T2S settlement volume via Clearstream Europe |
+| Position | One of two global ICSDs (alongside Euroclear Bank); largest CSD in the Eurozone by T2S volume |
+
+[Source: Clearstream -- About Clearstream, https://www.clearstream.com/clearstream-en/about-clearstream]
+[Source: Wikipedia -- Clearstream, https://en.wikipedia.org/wiki/Clearstream]
+[Source: Deutsche Borse -- Clearstream Europe Rebranding, https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Clearstream-reinforces-commitment-to-Europe-by-rebranding-its-Germany-based-CSD-to-Clearstream-Europe-4688174]
+
+### Clearstream Group Entities
+
+| Entity | Type | Location | Role |
+|--------|------|----------|------|
+| **Clearstream International S.A.** | Holding company | Luxembourg | Group holding entity |
+| **Clearstream Banking S.A. (CBL)** | ICSD + Credit institution | Luxembourg | International securities settlement and custody (Eurobonds); ICSD operations; banking services |
+| **Clearstream Europe AG** (formerly Clearstream Banking AG / CBF) | CSD | Frankfurt, Germany | German domestic CSD; pan-European CSD via T2S (19 European markets); renamed September 2025 |
+| **LuxCSD S.A.** | CSD | Luxembourg | Luxembourg domestic CSD (joint venture with Banque Centrale du Luxembourg, est. 2010) |
+
+### Key Historical Milestones
+
+| Year | Event |
+|------|-------|
+| 1970 | Cedel (Centrale de Livraison de Valeurs Mobilieres) established in Luxembourg by 35 European and North American banks for Eurobond settlement |
+| 1989 | Deutsche Kassenverein (predecessor to Deutsche Borse Clearing) modernizes German securities infrastructure |
+| 2000 | Clearstream formed through merger of Cedel International (50%) and Deutsche Borse Clearing (50%) on 1 January 2000 |
+| 2002 | Deutsche Borse acquires full ownership of Clearstream (1 July 2002) |
+| 2010 | LuxCSD founded jointly with Banque Centrale du Luxembourg |
+| 2010 | Co-founded REGIS-TR (trade repository) with Iberclear |
+| 2015 | Clearstream Banking AG (CBF) connects to T2S (Wave 1, June 2015) |
+| 2017 | Full T2S migration completed; Global Securities Financing services extended to T2S |
+| 2021 | CBL receives CSDR authorization (12 April 2021) |
+| 2025 | Clearstream Banking AG rebranded to "Clearstream Europe AG" (effective 26 September 2025) |
+| 2025 | CBL authorized by CSSF as crypto-asset service provider (CASP) |
+| 2025 | Deutsche Borse Group announces review of banking licenses for Eurex Clearing and Clearstream, considering returning CBF's banking license under CSDR refit |
+| 2025 | Joint initiative with Euroclear to digitize Eurobond market |
+
+[Source: Wikipedia -- Clearstream]
+[Source: Clearstream -- 50 Years History, https://www.clearstream.com/clearstream-en/newsroom/200429-1969172]
+[Source: Deutsche Borse -- Regulatory Complexity Reduction, https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Deutsche-B-rse-Group-Plans-to-Use-Improved-European-Regulatory-Environment-to-Reduce-Regulatory-Complexity--4561082]
+
+---
+
+## 2. Settlement Model
+
+### 2.1 Clearstream Banking S.A. (CBL -- ICSD)
+
+As one of two global ICSDs, CBL provides settlement and custody for international securities (primarily Eurobonds) and cross-border transactions:
+
+- **Book-Entry Settlement:** All securities held in dematerialized or immobilized form; transfers through book entries
+- **Multi-Currency Settlement:** Settles in multiple currencies with commercial bank money (CMB) via correspondent banking relationships
+- **Internal Settlement:** Transactions between two CBL participants settle internally on CBL's books
+- **Bridge Settlement:** Transactions between CBL and Euroclear Bank participants settle via the Bridge (see Section 7)
+- **External Settlement:** Transactions involving securities held at other CSDs settle through CBL's network of links
+
+### 2.2 Clearstream Europe AG (CSD -- Germany + Pan-European)
+
+Clearstream Europe (formerly CBF) serves as:
+- **German Domestic CSD:** Settlement and custody for all German domestic securities
+- **Pan-European CSD:** Via T2S, provides access to 19 European markets through a single point of entry
+- **T2S Settlement:** Uses central bank money (EUR) via TARGET2 for the cash leg; real-time gross settlement (RTGS)
+- **Over 50% of T2S Volume:** Clearstream Europe consistently handles more than half of all T2S settlement traffic
+
+### 2.3 Settlement Processing
+
+| Feature | CBL (ICSD) | Clearstream Europe (CSD) |
+|---------|-----------|-------------------------|
+| Settlement Basis | Gross (trade-by-trade) | Gross (trade-by-trade) via T2S |
+| Cash Settlement | Commercial bank money (CMB) | Central bank money (CeBM) via TARGET2 |
+| Processing Windows | Overnight batch + real-time daytime | Real-time on T2S platform |
+| DVP Model | Model 1 | Model 1 (via T2S) |
+
+[Source: Clearstream -- Settlement, https://www.clearstream.com/clearstream-en/securities-services/settlement]
+[Source: Clearstream -- Pan-European CSD Solution, https://www.clearstream.com/clearstream-en/securities-services/custody-and-investor-solutions/pan-european-csd-solution]
+
+---
+
+## 3. Risk Management
+
+### 3.1 Margin Framework
+
+Clearstream (as a CSD/ICSD) does not operate as a CCP and does not collect traditional margins. Risk management focuses on:
+
+- **DVP Settlement:** Simultaneous exchange of securities and cash eliminates principal risk
+- **Credit Facilities:** CBL provides credit extensions to participants secured by pledged collateral
+- **Collateral Valuation:** Securities used as collateral are marked-to-market daily with conservative haircuts
+- **Exposure Limits:** Participant-specific credit and exposure limits monitored in real time
+- **Liquidity Risk Management:** Cash forecasting and management of settlement liquidity across currencies
+
+### 3.3 Default Waterfall
+
+As a CSD/ICSD (not CCP), Clearstream does not maintain a mutualized default fund. Risk absorption follows:
+
+1. **Defaulter's pledged collateral** -- CBL has the right to liquidate securities pledged by the defaulting participant
+2. **Clearstream's own capital** -- capital buffers maintained under CRR/CRD requirements
+3. **No loss mutualization** -- non-defaulting participants are not called upon to absorb losses
+
+### 3.6 Recovery & Resolution
+
+- **CSDR Framework:** Subject to EU CSD Recovery and Resolution requirements
+- **Banking Resolution:** CBL, as a licensed credit institution, is subject to the Bank Recovery and Resolution Directive (BRRD)
+- **Resolution Authority:** CSSF (Luxembourg) for CBL; BaFin/SRB for Clearstream Europe AG
+- **Systemic Importance:** Designated as systemically important financial market infrastructure
+- **Banking License Review (2025):** Deutsche Borse Group is reviewing whether Clearstream Europe AG needs to retain its banking license under the amended CSDR; CBL will continue to leverage its CRR license as the Service CSD of the group
+
+[Source: Clearstream -- CPMI-IOSCO Principles Report 2024, https://www.clearstream.com/resource/blob/4416516/da6226a03ecca1a4d943b9081098f2f7/cpmi-iosco-cbl-2024-data.pdf]
+[Source: Clearstream -- Regulatory Oversight, https://www.clearstream.com/clearstream-en/about-clearstream/regulation/regulatory-oversight-1278060]
+
+---
+
+## 4. Settlement
+
+### 4.1 Settlement Cycle
+
+| Market / Entity | Standard Cycle | Notes |
+|----------------|---------------|-------|
+| CBL (ICSD) -- Eurobonds | T+2 | Standard for secondary market; primary issuance varies |
+| Clearstream Europe -- German securities | T+2 | Aligned with EU CSDR |
+| Clearstream Europe -- T2S markets | T+2 | 19 European markets via T2S |
+| LuxCSD -- Luxembourg securities | T+2 | Aligned with EU CSDR |
+
+**T+1 Transition:** The EU is working toward T+1 settlement. Clearstream will need to adapt its ICSD and CSD operations for the new cycle. Specific implementation timelines were under discussion as of early 2026. [unverified]
+
+### 4.2 DVP Model
+
+| Entity | DVP Model | Cash Leg | Description |
+|--------|-----------|----------|-------------|
+| CBL (ICSD) | Model 1 | Commercial bank money (CMB) | Gross, simultaneous, final transfer of securities and cash |
+| Clearstream Europe (CSD via T2S) | Model 1 | Central bank money (CeBM) via TARGET2 | Real-time DVP on T2S with EUR central bank money |
+| Bridge (CBL-Euroclear Bank) | Model 1 | CMB | Simultaneous final transfer between the two ICSDs |
+| LuxCSD | Model 1 | CeBM via TARGET2 | Connected to T2S |
+
+**DVP Cut-Off Extensions:** Clearstream has periodically extended EUR DVP cut-off times on T2S to improve settlement efficiency and reduce fails.
+
+[Source: Clearstream -- Settlement]
+[Source: Clearstream -- T2S DVP Cut-Off Extension, https://www.clearstream.com/clearstream-en/newsroom/ops250314-3-4331014]
+
+---
+
+## 5. Technology & Infrastructure
+
+- **CASCADE / Creation:** Core settlement and custody systems for German domestic and international securities
+- **T2S Integration:** Full integration with the Eurosystem's T2S platform since 2017 for pan-European settlement
+- **Collateral Management System (OneCMS):** Unified collateral management across ICSD and CSD locations, enabling optimized collateral allocation
+- **D7 Platform:** Deutsche Borse Group's digital post-trade platform for DLT-based securities issuance and custody [unverified -- in development]
+- **Crypto-Asset Custody:** CBL authorized by CSSF as crypto-asset service provider (2025), extending regulated custody to digital assets
+- **Eurobond Digitization:** Joint initiative with Euroclear to support dematerialized Eurobond issuance from Q1 2026
+
+---
+
+## 6. Regulatory Framework
+
+| Aspect | Details |
+|--------|---------|
+| **CBL (Luxembourg ICSD)** | |
+| Primary Legislation | EU CSDR (Regulation 909/2014); Luxembourg law on financial sector |
+| Supervisor | CSSF (Commission de Surveillance du Secteur Financier) |
+| CSDR Authorization | 12 April 2021 (core CSD services, banking ancillary services, Bridge link) |
+| Banking License | Licensed credit institution under Luxembourg law; CRR/CRD compliant |
+| Settlement Finality | Luxembourg law implements EU Settlement Finality Directive (98/26/EC) |
+| | |
+| **Clearstream Europe AG (German CSD)** | |
+| Primary Legislation | EU CSDR; German Banking Act (KWG); German Securities Deposit Act (DepotG) |
+| Supervisor | BaFin / Deutsche Bundesbank |
+| CSDR Authorization | Authorized under CSDR |
+| Banking License | Currently holds banking license; under review for potential return under CSDR refit |
+| | |
+| **LuxCSD** | |
+| Supervisor | CSSF / Banque Centrale du Luxembourg |
+| CSDR Authorization | Authorized under CSDR |
+
+### International Recognition
+
+CBL is recognized in multiple jurisdictions globally, including:
+- Australia (recognized by Reserve Bank of Australia; latest assessment June 2025)
+- Various other jurisdictions through bilateral recognition agreements [unverified -- specific list not confirmed]
+
+[Source: Clearstream -- Licences, https://www.clearstream.com/clearstream-en/about-clearstream/regulation-1-/licences]
+[Source: Clearstream -- Regulatory Oversight]
+[Source: RBA -- Assessment of Clearstream Banking S.A. 2025, https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/clearstream/2025/pdf/clearstream-assessment-2025-06.pdf]
+
+---
+
+## 7. Interoperability
+
+### 7.1 The Bridge (Clearstream-Euroclear)
+
+The Bridge is the critical interoperability link between the two global ICSDs:
+
+- **Purpose:** Enables settlement of securities transactions between Clearstream Banking Luxembourg and Euroclear Bank participants
+- **Settlement:** Both free-of-payment and delivery-versus-payment transactions
+- **Processing:** Multiple overnight batch exchanges plus Automated Daytime Bridge for real-time settlement during business hours
+- **DVP Model:** Model 1 (simultaneous, final transfer)
+- **CSDR Status:** The Bridge link is explicitly covered under CBL's CSDR authorization
+- **History:** Operational since the 1970s; continuously modernized
+
+### 7.2 CSD Links Network
+
+Clearstream maintains an extensive global network of CSD links:
+
+- **Clearstream Europe:** Direct T2S links to 19 European markets; additional links to non-T2S markets
+- **CBL (ICSD):** Links to CSDs and agent banks providing access to 60+ markets globally
+- **Cross-CSD Settlement:** T2S enables harmonized cross-CSD settlement between Clearstream Europe and other T2S-connected CSDs (including Euroclear group CSDs)
+
+### 7.3 T2S Participation
+
+| Entity | T2S Connected | Connection Date |
+|--------|--------------|-----------------|
+| Clearstream Europe AG (CBF) | Yes | June 2015 (Wave 1 -- one of first CSDs on T2S) |
+| LuxCSD | Yes | September 2016 |
+| CBL (ICSD) | Partial | CBL is not directly a T2S participant but accesses T2S markets via Clearstream Europe |
+
+### 7.4 Global Securities Financing (GSF) Integration
+
+Clearstream's interoperability extends to collateral and lending services:
+- **Harmonized GSF across locations:** Since T2S migration in 2017, GSF services (securities lending, collateral management) are available across both ICSD and CSD positions
+- **Single Pool:** Clients can pool assets from ICSD and CSD (T2S) accounts for lending and collateral purposes
+- **Fails Lending on T2S:** Automated Securities Lending (ASL) service covers T2S settlement, providing the same service level as the ICSD
+
+[Source: Clearstream -- Bridge Settlement, https://www.clearstream.com/clearstream-en/res-library/res-library/bridge-settlement-1276276]
+[Source: Clearstream -- Global Liquidity Hub with T2S, https://www.clearstream.com/clearstream-en/securities-services/collateral-lending-liquidity/global-liquidity-hub-with-t2s-1275354]
+[Source: Clearstream -- GSF ASL for T2S, https://www.clearstream.com/clearstream-en/products-and-services/global-securities-financing/a17094-1299950]
+
+---
+
+## 9. Recent Developments
+
+| Date | Development |
+|------|-------------|
+| Sep 2025 | Clearstream Banking AG rebranded to "Clearstream Europe AG" to reflect pan-European CSD role |
+| Jul 2025 | Deutsche Borse Group announces plans to simplify regulatory structure; reviews banking licenses for Eurex Clearing and Clearstream Europe under amended CSDR |
+| 2025 | CBL authorized by CSSF as crypto-asset service provider (CASP) for regulated digital asset custody |
+| 2025 | Joint initiative with Euroclear to digitize Eurobond market (dematerialized issuance from Q1 2026) |
+| 2025 | Clearstream and Euronext deepen interoperability for pan-European post-trade |
+| Jul 2025 | Eurex Clearing launches DLT-enabled collateral mobilization service with HQLAx and Clearstream |
+| 2024 | CBL publishes updated CPMI-IOSCO Principles Report |
+| Jun 2025 | Reserve Bank of Australia publishes assessment of Clearstream Banking S.A. |
+
+### Key Strategic Themes
+
+1. **Pan-European CSD Consolidation:** Clearstream Europe serves as a gateway to 19 European markets via T2S, aiming to become the pan-European CSD of choice
+2. **Regulatory Simplification:** Potential return of Clearstream Europe's banking license under CSDR refit, reducing regulatory overlap while CBL retains its CRR license for the group
+3. **Digital Assets:** Expansion into crypto-asset custody (CASP license) and DLT-based collateral services
+4. **Eurobond Modernization:** Joint digitization initiative with Euroclear to eliminate paper certificates
+5. **Global Liquidity Hub:** Deepening integration of collateral management, securities lending, and financing services across ICSD and CSD locations
+6. **T+1 Readiness:** Preparing for EU transition to T+1 settlement cycle
+
+[Source: Deutsche Borse -- Clearstream Europe Rebranding]
+[Source: Deutsche Borse -- Regulatory Complexity Reduction]
+[Source: Clearstream -- CSSF Crypto Authorization, https://en.paperjam.lu/article/cssf-certifies-clearstream-as-crypto-asset-service-provider]
+
+---
+
+## Sources
+
+- [Clearstream -- About Clearstream](https://www.clearstream.com/clearstream-en/about-clearstream)
+- [Clearstream -- Settlement](https://www.clearstream.com/clearstream-en/securities-services/settlement)
+- [Clearstream -- Bridge Settlement](https://www.clearstream.com/clearstream-en/res-library/res-library/bridge-settlement-1276276)
+- [Clearstream -- Pan-European CSD Solution](https://www.clearstream.com/clearstream-en/securities-services/custody-and-investor-solutions/pan-european-csd-solution)
+- [Clearstream -- Global Liquidity Hub with T2S](https://www.clearstream.com/clearstream-en/securities-services/collateral-lending-liquidity/global-liquidity-hub-with-t2s-1275354)
+- [Clearstream -- GSF ASL for T2S](https://www.clearstream.com/clearstream-en/products-and-services/global-securities-financing/a17094-1299950)
+- [Clearstream -- Regulatory Oversight](https://www.clearstream.com/clearstream-en/about-clearstream/regulation/regulatory-oversight-1278060)
+- [Clearstream -- Licences](https://www.clearstream.com/clearstream-en/about-clearstream/regulation-1-/licences)
+- [Clearstream -- CPMI-IOSCO Disclosure Framework](https://www.clearstream.com/clearstream-en/about-clearstream/regulation-1-/cpmi-iosco-disclosure-framework-1278124)
+- [Clearstream -- CPMI-IOSCO Principles Report 2024](https://www.clearstream.com/resource/blob/4416516/da6226a03ecca1a4d943b9081098f2f7/cpmi-iosco-cbl-2024-data.pdf)
+- [Clearstream -- 50 Years History](https://www.clearstream.com/clearstream-en/newsroom/200429-1969172)
+- [Deutsche Borse -- Clearstream Europe Rebranding (Sep 2025)](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Clearstream-reinforces-commitment-to-Europe-by-rebranding-its-Germany-based-CSD-to-Clearstream-Europe-4688174)
+- [Deutsche Borse -- Regulatory Complexity Reduction (Jul 2025)](https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Deutsche-B-rse-Group-Plans-to-Use-Improved-European-Regulatory-Environment-to-Reduce-Regulatory-Complexity--4561082)
+- [RBA -- Assessment of Clearstream Banking S.A. (Jun 2025)](https://www.rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/clearstream/2025/pdf/clearstream-assessment-2025-06.pdf)
+- [Wikipedia -- Clearstream](https://en.wikipedia.org/wiki/Clearstream)
+- [IMF -- Germany FSAP 2022](https://www.imf.org/-/media/Files/Publications/CR/2022/English/1DEUEA2022004.ashx)

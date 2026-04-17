@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>Eurex Clearing – C7 Architecture &amp; PRISMA Margin Engine – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/systems/dtcc_systems.html">Trading Systems</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/systems/eurex_clearing_prisma.html">Eurex Clearing -- C7 Architecture &amp; PRISMA Margin Engine</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Clearing &amp; Settlement — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Clearing &amp; Settlement -- Comparative Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Organizations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/asx_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Clear / ASX Clear (Futures)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ccil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearing Corporation of India Limited (CCIL)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cdp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Central Depository Pte Ltd (CDP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cds_canada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CDS Clearing and Depository Services (CDS)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/clearstream.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clearstream (Clearstream)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/cme_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Clearing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/csdc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/dtcc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Depository Trust &amp; Clearing Corporation (DTCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/eurex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex Clearing AG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/euroccp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/euroclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euroclear Group (Euroclear)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/hkex_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Clearing – HKSCC / HKCC / SEOCH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ice_clear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Clear (ICE Clear U.S. / ICE Clear Europe / ICE Clear Credit)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/jscc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Japan Securities Clearing Corporation (JSCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/krx_clearing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX Clearing (Korea Exchange CCP)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/ksd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KSD (Korea Securities Depository)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/lch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH (LCH Limited &amp; LCH SA)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/muqassa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Securities Clearing Center Company (Muqassa)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/occ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Options Clearing Corporation (OCC)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/organizations/six_xclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SIX x-clear AG (SIX x-clear)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/asia_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/eu_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/regulations/us_clearing_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">U.S. Clearing &amp; Settlement Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/dtcc_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DTCC Core Systems — NSCC/DTC Settlement &amp; Clearing Infrastructure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/eurex_clearing_prisma.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Eurex Clearing -- C7 Architecture &amp; PRISMA Margin Engine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/03_clearing/en/systems/lch_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCH Clearing Platforms &amp; Margin Engines</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#system-overview" id="toc-system-overview" class="nav-link active" data-scroll-target="#system-overview">1. System Overview</a>
+  <ul class="collapse">
+  <li><a href="#system-evolution" id="toc-system-evolution" class="nav-link" data-scroll-target="#system-evolution">System Evolution</a></li>
+  </ul></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">2. Architecture</a>
+  <ul class="collapse">
+  <li><a href="#high-level-design" id="toc-high-level-design" class="nav-link" data-scroll-target="#high-level-design">2.1 High-Level Design</a></li>
+  <li><a href="#core-components" id="toc-core-components" class="nav-link" data-scroll-target="#core-components">2.2 Core Components</a></li>
+  <li><a href="#technology-stack" id="toc-technology-stack" class="nav-link" data-scroll-target="#technology-stack">2.3 Technology Stack</a></li>
+  </ul></li>
+  <li><a href="#performance-specifications" id="toc-performance-specifications" class="nav-link" data-scroll-target="#performance-specifications">3. Performance Specifications</a></li>
+  <li><a href="#interfaces-protocols" id="toc-interfaces-protocols" class="nav-link" data-scroll-target="#interfaces-protocols">4. Interfaces &amp; Protocols</a>
+  <ul class="collapse">
+  <li><a href="#clearing-connectivity" id="toc-clearing-connectivity" class="nav-link" data-scroll-target="#clearing-connectivity">4.1 Clearing Connectivity</a></li>
+  <li><a href="#eurex-clearing-gui-prisma-calculator" id="toc-eurex-clearing-gui-prisma-calculator" class="nav-link" data-scroll-target="#eurex-clearing-gui-prisma-calculator">4.2 Eurex Clearing GUI / Prisma Calculator</a></li>
+  <li><a href="#swift-fix-xml-interfaces" id="toc-swift-fix-xml-interfaces" class="nav-link" data-scroll-target="#swift-fix-xml-interfaces">4.3 SWIFT / FIX / XML Interfaces</a></li>
+  <li><a href="#reference-data" id="toc-reference-data" class="nav-link" data-scroll-target="#reference-data">4.4 Reference Data</a></li>
+  </ul></li>
+  <li><a href="#resilience-business-continuity" id="toc-resilience-business-continuity" class="nav-link" data-scroll-target="#resilience-business-continuity">5. Resilience &amp; Business Continuity</a>
+  <ul class="collapse">
+  <li><a href="#redundancy-disaster-recovery" id="toc-redundancy-disaster-recovery" class="nav-link" data-scroll-target="#redundancy-disaster-recovery">5.1 Redundancy &amp; Disaster Recovery</a></li>
+  <li><a href="#regulatory-resilience-requirements" id="toc-regulatory-resilience-requirements" class="nav-link" data-scroll-target="#regulatory-resilience-requirements">5.2 Regulatory Resilience Requirements</a></li>
+  <li><a href="#capacity-management" id="toc-capacity-management" class="nav-link" data-scroll-target="#capacity-management">5.3 Capacity Management</a></li>
+  </ul></li>
+  <li><a href="#notable-technical-features" id="toc-notable-technical-features" class="nav-link" data-scroll-target="#notable-technical-features">6. Notable Technical Features</a>
+  <ul class="collapse">
+  <li><a href="#prisma-methodology-deep-dive" id="toc-prisma-methodology-deep-dive" class="nav-link" data-scroll-target="#prisma-methodology-deep-dive">6.1 PRISMA Methodology Deep-Dive</a></li>
+  <li><a href="#d7-digital-post-trade-platform" id="toc-d7-digital-post-trade-platform" class="nav-link" data-scroll-target="#d7-digital-post-trade-platform">6.2 D7 – Digital Post-Trade Platform</a></li>
+  <li><a href="#cloud-adoption-strategy" id="toc-cloud-adoption-strategy" class="nav-link" data-scroll-target="#cloud-adoption-strategy">6.3 Cloud Adoption Strategy</a></li>
+  <li><a href="#partnership-initiatives-isv-ecosystem" id="toc-partnership-initiatives-isv-ecosystem" class="nav-link" data-scroll-target="#partnership-initiatives-isv-ecosystem">6.4 Partnership Initiatives (ISV Ecosystem)</a></li>
+  </ul></li>
+  <li><a href="#comparison-notes" id="toc-comparison-notes" class="nav-link" data-scroll-target="#comparison-notes">7. Comparison Notes</a>
+  <ul class="collapse">
+  <li><a href="#vs.-krxksd-systems" id="toc-vs.-krxksd-systems" class="nav-link" data-scroll-target="#vs.-krxksd-systems">vs.&nbsp;KRX/KSD Systems</a></li>
+  <li><a href="#key-differentiators-of-eurex-c7prisma" id="toc-key-differentiators-of-eurex-c7prisma" class="nav-link" data-scroll-target="#key-differentiators-of-eurex-c7prisma">Key Differentiators of Eurex C7/PRISMA</a></li>
+  </ul></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/systems/dtcc_systems.html">Trading Systems</a></li><li class="breadcrumb-item"><a href="../../../../qmd/03_clearing/en/systems/eurex_clearing_prisma.html">Eurex Clearing -- C7 Architecture &amp; PRISMA Margin Engine</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Eurex Clearing – C7 Architecture &amp; PRISMA Margin Engine</h1>
+<p class="subtitle lead">Clearing &amp; Settlement &gt; Systems</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-07 <strong>System Category:</strong> Clearing System</p>
+</blockquote>
+<hr>
+<section id="system-overview" class="level2">
+<h2 class="anchored" data-anchor-id="system-overview">1. System Overview</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>System Name</td>
+<td>C7 / Eurex Clearing Prisma</td>
+</tr>
+<tr class="even">
+<td>Operated By</td>
+<td>Eurex Clearing AG (Deutsche Borse Group)</td>
+</tr>
+<tr class="odd">
+<td>Purpose</td>
+<td>CCP clearing, post-trade processing, and portfolio-based risk management / margining</td>
+</tr>
+<tr class="even">
+<td>Launch Year</td>
+<td>C7: phased rollout from ~2017 (derivatives) through 2021 (securities); Prisma: 2012</td>
+</tr>
+<tr class="odd">
+<td>Current Version</td>
+<td>C7 Release 11.1+ (derivatives clearing); C7 CAS Release 2.293; Prisma Release 15.0</td>
+</tr>
+<tr class="even">
+<td>Vendor / In-house</td>
+<td>In-house (Deutsche Borse Group), with TCS (Tata Consultancy Services) as technology partner for C7 SCS modernization</td>
+</tr>
+</tbody>
+</table>
+<section id="system-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="system-evolution">System Evolution</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 38%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>System Name</th>
+<th>Key Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pre-2012</td>
+<td>Eurex Clearing Classic</td>
+<td>Monolithic legacy clearing system; product-by-product margining (Risk-Based Margining)</td>
+</tr>
+<tr class="even">
+<td>2012</td>
+<td>Prisma Launch</td>
+<td>Introduction of portfolio-based margining using Filtered Historical Simulation (FHS) VaR; initially for listed derivatives</td>
+</tr>
+<tr class="odd">
+<td>2012-2017</td>
+<td>Prisma expansion</td>
+<td>Extension to OTC IRS (EurexOTC Clear), cross-margining between listed FI and OTC IRS within PFI01 liquidation group</td>
+</tr>
+<tr class="even">
+<td>~2017 onwards</td>
+<td>C7 Core</td>
+<td>Next-generation clearing architecture replacing Eurex Clearing Classic; phased migration of derivatives clearing</td>
+</tr>
+<tr class="odd">
+<td>2021</td>
+<td>C7 SCS Launch</td>
+<td>C7 Securities Clearing Service goes live (September 2021) for cash market clearing (Xetra, XFRA)</td>
+</tr>
+<tr class="even">
+<td>2022-2025</td>
+<td>C7 CAS</td>
+<td>C7 Client Administration Service rollout; multiple releases for member administration and reporting</td>
+</tr>
+<tr class="odd">
+<td>2025</td>
+<td>C7 Release 11.1</td>
+<td>Total Return Futures strategy, negative trade/settlement prices, cross-product margining for US FCM clients (May 2025)</td>
+</tr>
+<tr class="even">
+<td>2025</td>
+<td>Prisma Bonds</td>
+<td>Prisma methodology extended to bonds and repos; mandatory migration from Risk-Based Margining from 8 December 2025</td>
+</tr>
+<tr class="odd">
+<td>2025</td>
+<td>Prisma Release 15.0</td>
+<td>Annual recalibration of margin floors effective 16 June 2025; margin concentration add-on for OTC IRS portfolios</td>
+</tr>
+<tr class="even">
+<td>2026</td>
+<td>Ongoing</td>
+<td>Further clearing architecture advances, regulatory compliance (EMIR 3.0), secured funding enhancements</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: <a href="https://www.eurex.com/ec-en/support/initiatives/c7-releases">Eurex C7 Releases</a>; <a href="https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma">Eurex Clearing Prisma</a>; <a href="https://www.eurex.com/ec-en/find/circulars/Introduction-of-C7-Eurex-Clearing-s-new-clearing-architecture-Information-on-scope-and-timeline-213474">C7 Introduction Circular</a>; <a href="https://www.eurex.com/ec-en/find/circulars/clearing-circular-4609908">Prisma Bonds Circular</a>]</p>
+<hr>
+</section>
+</section>
+<section id="architecture" class="level2">
+<h2 class="anchored" data-anchor-id="architecture">2. Architecture</h2>
+<section id="high-level-design" class="level3">
+<h3 class="anchored" data-anchor-id="high-level-design">2.1 High-Level Design</h3>
+<p>The Eurex Clearing technology ecosystem is composed of several distinct but integrated platforms:</p>
+<pre><code>+--------------------------------------------------------------+
+|                  Eurex Clearing Infrastructure                |
+|                                                               |
+|  +------------------+   +-------------------+                 |
+|  |   C7 Core        |   |  EurexOTC Clear   |                |
+|  |  (Derivatives     |   |  (OTC IRS/NDF     |                |
+|  |   Clearing)       |   |   Clearing)       |                |
+|  +--------+---------+   +--------+----------+                |
+|           |                       |                           |
+|  +--------+---------+   +--------+----------+                 |
+|  |  C7 SCS          |   |  F7 Repo          |                |
+|  |  (Securities      |   |  (Repo Trading    |                |
+|  |   Clearing)       |   |   &amp; Clearing)     |                |
+|  +--------+---------+   +--------+----------+                |
+|           |                       |                           |
+|  +--------+----------+-----------+----------+                 |
+|  |           Eurex Clearing Prisma          |                 |
+|  |        (Margin &amp; Risk Engine)            |                 |
+|  +--------+----------+-----------+----------+                |
+|           |                       |                           |
+|  +--------+---------+   +--------+----------+                 |
+|  |  C7 ARP          |   |  C7 CAS           |                |
+|  |  (Advanced Risk   |   |  (Client Admin    |                |
+|  |   Protection)     |   |   Service)        |                |
+|  +------------------+   +-------------------+                 |
+|                                                               |
+|  +---------+  +--------+  +--------+  +----------+           |
+|  |  CRE    |  |  ERS   |  | Prisma |  | Clearing |           |
+|  | Reports |  |  Risk  |  | Calc.  |  |   GUI    |           |
+|  +---------+  +--------+  +--------+  +----------+           |
++--------------------------------------------------------------+
+         |                      |                    |
+    Clearstream            T2S / T2           Clearing Members
+   (Settlement)         (Cash/Securities)    (Connectivity)</code></pre>
+<p><strong>Architecture type:</strong> Hybrid – transitioning from monolithic legacy to <strong>microservices-based architecture</strong> (C7 SCS on Red Hat OpenShift); on-premise core with selective cloud adoption (Google Cloud for D7, cPME, analytics).</p>
+<p>[Source: <a href="https://www.tcs.com/what-we-do/industries/capital-markets/case-study/eurex-central-counterparty-clearing-legacy-modernization">TCS Eurex Case Study</a>]</p>
+</section>
+<section id="core-components" class="level3">
+<h3 class="anchored" data-anchor-id="core-components">2.2 Core Components</h3>
+<section id="c7-clearing-platform" class="level4">
+<h4 class="anchored" data-anchor-id="c7-clearing-platform">C7 Clearing Platform</h4>
+<p>C7 is Eurex Clearing’s next-generation clearing architecture, replacing the legacy “Eurex Clearing Classic” system through a stepwise migration approach.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 34%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Function</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>C7 Core</strong></td>
+<td>Central clearing engine for listed derivatives (futures, options); novation, position management, settlement instruction generation</td>
+<td>Production (multiple releases)</td>
+</tr>
+<tr class="even">
+<td><strong>C7 Securities Clearing Service (C7 SCS)</strong></td>
+<td>Securities clearing for Frankfurt Stock Exchange (XETR, XFRA) and Eurex securities (XEUR); handles trade capture, netting, settlement instruction generation, corporate actions</td>
+<td>Production since September 2021</td>
+</tr>
+<tr class="odd">
+<td><strong>C7 Client Administration Service (C7 CAS)</strong></td>
+<td>Member and account administration, reporting configuration, user entitlements, OTC report receiver management</td>
+<td>Production; CAS Release 2.293 live October 2025</td>
+</tr>
+<tr class="even">
+<td><strong>C7 Advanced Risk Protection (C7 ARP)</strong></td>
+<td>Pre-trade and real-time risk controls; maintains member risk limits; interfaces with Prisma for limit breach detection; member Stop/Release functionality</td>
+<td>Integrated into C7</td>
+</tr>
+</tbody>
+</table>
+<p><strong>C7 SCS Modernization Details (TCS Partnership):</strong></p>
+<p>The migration from Eurex Clearing Classic to C7 SCS was executed in partnership with TCS:</p>
+<ul>
+<li><strong>Phase 1:</strong> Clearing of securities market and derivatives settlement transactions. TCS designed robust, high-performing system components to handle high throughput and low-latency requirements.</li>
+<li><strong>Phase 2:</strong> Clearing of repo market transactions. Addressed complex functionality and migration to a new collateral management system.</li>
+<li><strong>Architecture:</strong> Microservice-based, deployed on <strong>Red Hat OpenShift</strong> container platform. Independently scalable components replace the monolithic legacy application.</li>
+<li><strong>Benefits:</strong> Flexible scaling for increased trade traffic; faster time-to-market for new products and services (e.g., additional currency support, extended trading hours); reduced operational overhead.</li>
+<li><strong>Development methodology:</strong> Distributed agile methods with test automation.</li>
+</ul>
+<p>[Source: <a href="https://www.tcs.com/what-we-do/industries/capital-markets/case-study/eurex-central-counterparty-clearing-legacy-modernization">TCS Eurex Case Study</a>]</p>
+<p><strong>Recent C7 Releases:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 41%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Release</th>
+<th>Production Date</th>
+<th>Key Features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C7 Release 11.1</td>
+<td>19 May 2025</td>
+<td>Total Return Futures strategy support; negative trade/settlement prices; cross-product margining for US FCM clients</td>
+</tr>
+<tr class="even">
+<td>C7 CAS Release 2.289.7</td>
+<td>15 May 2025</td>
+<td>Reporting ID improvements; system enhancements</td>
+</tr>
+<tr class="odd">
+<td>C7 CAS Release 2.293</td>
+<td>20 October 2025</td>
+<td>New OTC Report Receiver admission type; reporting improvements</td>
+</tr>
+<tr class="even">
+<td>C7 SCS Enhancements</td>
+<td>November 2025</td>
+<td>Corporate actions handling improvements</td>
+</tr>
+<tr class="odd">
+<td>C7 Release Notes</td>
+<td>18 March 2026</td>
+<td>Functional and technical enhancements overview published</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: <a href="https://www.eurex.com/ec-en/support/initiatives/c7-releases">C7 Releases</a>; <a href="https://www.eurex.com/ec-en/support/initiatives/c7-client-administration-service/C7-CAS-Releases-2900566">C7 CAS Releases</a>]</p>
+<hr>
+</section>
+<section id="prisma-margin-engine-portfolio-risk-integrated-system-and-margin-approach" class="level4">
+<h4 class="anchored" data-anchor-id="prisma-margin-engine-portfolio-risk-integrated-system-and-margin-approach">PRISMA Margin Engine – Portfolio Risk Integrated System and Margin Approach</h4>
+<p><strong>Eurex Clearing Prisma</strong> (Portfolio-based Risk management by Simulating scenario Matrices and Assessing market risks) is Eurex Clearing’s proprietary portfolio-based margin methodology, introduced in 2012. It represents a fundamental shift from product-by-product margining to portfolio-level risk assessment.</p>
+<section id="core-methodology-filtered-historical-simulation-fhs" class="level5">
+<h5 class="anchored" data-anchor-id="core-methodology-filtered-historical-simulation-fhs">Core Methodology: Filtered Historical Simulation (FHS)</h5>
+<p>The FHS approach combines the benefits of historical simulation (no distributional assumptions, captures fat tails and non-linear payoffs) with GARCH-type volatility filtering to ensure the model reacts quickly to changing market conditions.</p>
+<p><strong>Scenario Generation Process:</strong></p>
+<ol type="1">
+<li><strong>Raw historical returns:</strong> Collect daily returns for all risk factors over a 3-year lookback window (approximately 750 trading days).</li>
+<li><strong>Volatility filtering:</strong> Apply a GARCH-type filter to scale historical returns by the ratio of current conditional volatility to historical volatility at each observation date. This ensures that in high-volatility regimes, scenarios reflect current elevated risk, while in low-volatility regimes, the filtered scenarios remain responsive.</li>
+<li><strong>Filtered scenarios:</strong> The 750 filtered historical scenarios represent potential portfolio P&amp;L outcomes calibrated to current market conditions.</li>
+<li><strong>Stress period scenarios:</strong> An additional 250 scenarios are drawn from identified historical stress episodes (e.g., 2008 financial crisis, 2011 European debt crisis, 2020 COVID-19 crash). These are also filtered to ensure consistency.</li>
+<li><strong>Full revaluation:</strong> Each portfolio is revalued under all 1,000 scenarios using full pricing models (not delta-gamma approximations), capturing non-linear risks for options and complex instruments.</li>
+<li><strong>VaR calculation:</strong> The initial margin is set as the <strong>maximum</strong> of:
+<ul>
+<li>Filtered Historical Simulation VaR at the target confidence level (99% for listed, 99.5% for OTC)</li>
+<li>Stress Period VaR at the same confidence level</li>
+</ul></li>
+<li><strong>Subsampling technique:</strong> Filtered historical and stress period scenario prices are divided into non-overlapping scenario subsamples for robust VaR estimation.</li>
+</ol>
+<p>[Source: <a href="https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma">Eurex Clearing Prisma</a>; <a href="https://www.eurex.com/resource/blob/2287018/05702c2d06312fc083c9419d81414db5/data/2014-Brosch-re-Eurex-Clearing-Prisma-E.pdf">Eurex Clearing Prisma Brochure (2014)</a>; <a href="https://www.eurex.com/ec-en/find/news/Part-8-Forward-looking-margin-simulations-into-periods-of-stress-3193710">Part 8: Forward Looking Margin Simulations</a>]</p>
+</section>
+<section id="key-parameters" class="level5">
+<h5 class="anchored" data-anchor-id="key-parameters">Key Parameters</h5>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model Type</td>
+<td>Filtered Historical Simulation (FHS) with Value-at-Risk (VaR)</td>
+</tr>
+<tr class="even">
+<td>Confidence Level</td>
+<td>99% for listed products; 99.5% for OTC instruments</td>
+</tr>
+<tr class="odd">
+<td>Historical Scenarios</td>
+<td>750 filtered-historical scenarios (3-year lookback)</td>
+</tr>
+<tr class="even">
+<td>Stress Scenarios</td>
+<td>250 stress period scenarios from identified historical stress episodes</td>
+</tr>
+<tr class="odd">
+<td>Total Scenarios</td>
+<td>1,000 (750 + 250)</td>
+</tr>
+<tr class="even">
+<td>Risk Measure</td>
+<td>Maximum of FHS VaR and Stress Period VaR</td>
+</tr>
+<tr class="odd">
+<td>Revaluation</td>
+<td>Full revaluation under each scenario (not delta-gamma approximation)</td>
+</tr>
+<tr class="even">
+<td>Holding Period – Listed Equity Derivatives</td>
+<td>2-3 days (PEQ01 liquidation group)</td>
+</tr>
+<tr class="odd">
+<td>Holding Period – Listed Fixed Income</td>
+<td>2 days (PFI01_HP2 split)</td>
+</tr>
+<tr class="even">
+<td>Holding Period – OTC IRS</td>
+<td>5 days (PFI01_HP5 split)</td>
+</tr>
+<tr class="odd">
+<td>Procyclicality Mitigation</td>
+<td>Stress period VaR serves as prudent margin floor during low-volatility regimes</td>
+</tr>
+<tr class="even">
+<td>Floor Recalibration</td>
+<td>Annual recalibration (e.g., effective 16 June 2025)</td>
+</tr>
+<tr class="odd">
+<td>Stress Period Selection</td>
+<td>Calibrated to long-term (at least 10 years), 99% VaR to ensure stable flooring</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="margin-components" class="level5">
+<h5 class="anchored" data-anchor-id="margin-components">Margin Components</h5>
+<p>Prisma initial margin consists of multiple additive components:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Market Risk Initial Margin (MRIM)</strong></td>
+<td>Core risk component based on FHS; captures potential portfolio value changes under historical and stress scenarios via full revaluation</td>
+</tr>
+<tr class="even">
+<td><strong>Liquidity Adjustment (LA)</strong></td>
+<td>Accounts for the cost of liquidating concentrated positions; adjusts for bid-ask spread widening and market impact during portfolio close-out</td>
+</tr>
+<tr class="odd">
+<td><strong>KnockIn / Event Risk Component</strong></td>
+<td>Additional margin for specific risk events (e.g., barrier events for structured products, dividend event risk for single stock derivatives)</td>
+</tr>
+<tr class="even">
+<td><strong>Margin Concentration Add-on</strong></td>
+<td>Supplementary margin for concentrated OTC IRS portfolios; introduced December 2025</td>
+</tr>
+<tr class="odd">
+<td><strong>Correlation Break Adjustment</strong></td>
+<td>Adjustment to account for potential breakdown of historical correlations during stress periods [unverified – referenced in methodology but details limited]</td>
+</tr>
+</tbody>
+</table>
+<p>The backward-looking component (filtered historical VaR) ensures model reactivity to changing market conditions, while the forward-looking component (stress period VaR) ensures margin stability and counters procyclicality.</p>
+</section>
+<section id="liquidation-groups" class="level5">
+<h5 class="anchored" data-anchor-id="liquidation-groups">Liquidation Groups</h5>
+<p>Products are organized into Liquidation Groups based on shared risk characteristics. Margin offsets (cross-margining) are permitted within a liquidation group but not across liquidation groups.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 19%">
+<col style="width: 29%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Liquidation Group</th>
+<th>Products</th>
+<th>Holding Period</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>PFI01</strong> (Fixed Income)</td>
+<td>Listed FI futures/options + OTC IRS, OIS, FRA, basis swaps, zero-coupon inflation swaps</td>
+<td>Split: HP2 (2-day) for listed; HP5 (5-day) for OTC</td>
+<td>Cross-margining between listed and OTC within this group</td>
+</tr>
+<tr class="even">
+<td><strong>PEQ01</strong> (Equity)</td>
+<td>Listed equity/index derivatives</td>
+<td>2-3 days</td>
+<td>Reduced from 4 to 3 days; subsequently to 2 days for some products</td>
+</tr>
+<tr class="odd">
+<td><strong>FX Liquidation Group</strong></td>
+<td>OTC FX NDFs</td>
+<td>2 days [unverified]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Repo/Bonds</strong></td>
+<td>Repo, GC Pooling, bonds</td>
+<td>Varies</td>
+<td>Migrating from Risk-Based Margining to Prisma Bonds (mandatory from 8 December 2025)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cross-margining-algorithm" class="level5">
+<h5 class="anchored" data-anchor-id="cross-margining-algorithm">Cross-Margining Algorithm</h5>
+<p>Cross-margining is a distinctive and economically significant feature of Prisma, enabling margin offsets between products with different holding periods within the same liquidation group:</p>
+<ol type="1">
+<li><strong>Portfolio assessment:</strong> The system evaluates whether listed FI/money market positions within PFI01 are economically sensible hedges to the OTC portfolio.</li>
+<li><strong>Holding period optimization:</strong> If the listed positions qualify as hedges, they are moved from the 2-day holding period split to the 5-day split. Although this increases the holding period for those positions, the portfolio-level diversification benefit from combining them with OTC positions more than offsets the increased time horizon.</li>
+<li><strong>Net margin calculation:</strong> The combined portfolio is then evaluated at the 5-day horizon, producing a lower total margin than the sum of separate listed (2-day) and OTC (5-day) margins.</li>
+<li><strong>Margin savings:</strong> Potential savings of <strong>up to 70%</strong> depending on portfolio composition (e.g., a portfolio with listed Euro-Bund futures hedging OTC EUR IRS).</li>
+</ol>
+<p><strong>Advantage over SPAN:</strong> Unlike CME’s SPAN methodology (which calculates margin product-by-product with limited inter-commodity spread credits using 16 scanning scenarios), Prisma assesses risk at the portfolio level using full revaluation under 1,000 historical scenarios, enabling more accurate capture of hedging benefits and tail risk.</p>
+<p>[Source: <a href="https://www.eurex.com/ec-en/services/margining/cross-margining">Eurex Clearing Cross-Margining</a>]</p>
+<hr>
+</section>
+</section>
+<section id="eurexotc-clear" class="level4">
+<h4 class="anchored" data-anchor-id="eurexotc-clear">EurexOTC Clear</h4>
+<p>EurexOTC Clear provides central clearing for OTC derivative transactions, with a focus on interest rate derivatives.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Products</td>
+<td>Plain vanilla IRS, OIS, FRA, basis swaps, zero-coupon inflation swaps (ZCIS), FX NDFs</td>
+</tr>
+<tr class="even">
+<td>Currencies</td>
+<td>EUR, USD, GBP, CHF, JPY, DKK, NOK, SEK, PLN, CZK, HUF (11 currencies)</td>
+</tr>
+<tr class="odd">
+<td>Trade Sources</td>
+<td>Approved Trade Sources (ATS) including MarkitWire, Bloomberg, Tradeweb</td>
+</tr>
+<tr class="even">
+<td>Compression</td>
+<td>Portfolio compression services to reduce line items and gross notional</td>
+</tr>
+<tr class="odd">
+<td>Margin Methodology</td>
+<td>Prisma (PFI01 liquidation group, 5-day holding period, 99.5% confidence)</td>
+</tr>
+<tr class="even">
+<td>Notional Outstanding</td>
+<td>EUR 43,668 billion (end-2025, +31% YoY)</td>
+</tr>
+<tr class="odd">
+<td>Avg Daily Cleared Volume</td>
+<td>EUR 280 billion (2025, +35% YoY)</td>
+</tr>
+</tbody>
+</table>
+<p>EurexOTC Clear has its own release track separate from C7, with regular enhancements for new product support, regulatory compliance, and connectivity improvements.</p>
+<p>[Source: <a href="https://www.eurex.com/ec-en/clear/eurex-otc-clear/about-eurex-otc-clear">EurexOTC Clear</a>; <a href="https://www.eurex.com/ec-en/technology/eurexotc-clear">EurexOTC Clear Technology</a>]</p>
+<hr>
+</section>
+<section id="cloud-prisma-margin-estimator-cpme" class="level4">
+<h4 class="anchored" data-anchor-id="cloud-prisma-margin-estimator-cpme">Cloud Prisma Margin Estimator (cPME)</h4>
+<p>cPME is a cloud-based margin simulation tool available to both members and non-members of Eurex Clearing, providing transparency into Prisma margin calculations.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Access Methods</td>
+<td>Browser-based GUI and RESTful API</td>
+</tr>
+<tr class="even">
+<td>Hosting</td>
+<td>Deutsche Borse VPC on <strong>Google Cloud Platform</strong> (EU datacenters); migrated from previous infrastructure in 2023</td>
+</tr>
+<tr class="odd">
+<td>Availability</td>
+<td>24 hours a day (with brief interruptions during snapshot loading)</td>
+</tr>
+<tr class="even">
+<td>API Performance</td>
+<td>95% of requests responded in <strong>less than 1 second</strong></td>
+</tr>
+<tr class="odd">
+<td>ETD Margin Accuracy</td>
+<td>Code identical to production Prisma environment; results match CC050 report for same date/time</td>
+</tr>
+<tr class="even">
+<td>OTC Margin Accuracy</td>
+<td>Independent implementation of margin methodology; may differ a few percent from official EurexOTC margin</td>
+</tr>
+<tr class="odd">
+<td>Input Formats</td>
+<td>CB202 member report; CSV file with additional trades; concurrent format support</td>
+</tr>
+<tr class="even">
+<td>Cost</td>
+<td>Free of charge</td>
+</tr>
+<tr class="odd">
+<td>Use Cases</td>
+<td>Pre-trade margin estimation; what-if analysis; portfolio optimization; clearing member onboarding assessment</td>
+</tr>
+</tbody>
+</table>
+<p>The cPME API documentation is publicly available, including OpenAPI specifications on GitHub.</p>
+<p>[Source: <a href="https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/">Cloud Prisma Margin Estimator</a>; <a href="https://github.com/Deutsche-Boerse-Risk/CloudPrismaMarginEstimator">GitHub Repository</a>; <a href="https://www.eurex.com/ec-en/find/circulars/Eurex-Clearing-Readiness-Newsflash-Cloud-Prisma-Margin-Estimator-CPME-migration-to-Google-Cloud-Platform-3931142">cPME GCP Migration Circular</a>]</p>
+<hr>
+</section>
+<section id="risk-engine-real-time-risk-monitoring" class="level4">
+<h4 class="anchored" data-anchor-id="risk-engine-real-time-risk-monitoring">Risk Engine – Real-Time Risk Monitoring</h4>
+<p>Eurex Clearing’s risk monitoring infrastructure consists of two main components:</p>
+<p><strong>Enhanced Risk Solution (ERS):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Purpose</td>
+<td>Real-time risk data distribution to clearing and non-clearing members</td>
+</tr>
+<tr class="even">
+<td>Coverage</td>
+<td>All asset classes: derivatives, cash equities, bonds, repo</td>
+</tr>
+<tr class="odd">
+<td>Data Distributed</td>
+<td>Risk-relevant margin parameters, position information, overall margin requirements, detailed margin components, cash flows, collateral valuations, margin shortfall/surplus</td>
+</tr>
+<tr class="even">
+<td>Standards</td>
+<td>Based on open standards for integration into member in-house risk systems</td>
+</tr>
+<tr class="odd">
+<td>Cost</td>
+<td>Free of charge</td>
+</tr>
+<tr class="even">
+<td>Interface</td>
+<td>Web-based GUI (ERS GUI) with risk manager dashboards; data feed for programmatic consumption</td>
+</tr>
+</tbody>
+</table>
+<p><strong>C7 Advanced Risk Protection (ARP):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Purpose</td>
+<td>Pre-trade and real-time risk limit management</td>
+</tr>
+<tr class="even">
+<td>Functions</td>
+<td>Maintain member risk limits; detect limit breaches (interfacing with Prisma); member Stop/Release functionality</td>
+</tr>
+<tr class="odd">
+<td>Access</td>
+<td>C7 Clearing GUI; programmatic API</td>
+</tr>
+<tr class="even">
+<td>Scope</td>
+<td>Covers all C7 cleared products</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: <a href="https://mondovisione.com/media-and-resources/news/eurex-clearing-introduces-realtime-risk-management-for-all-customers-clearing-an-2011124/">Eurex ERS Press Release</a>; <a href="https://www.eurex.com/resource/blob/3202446/5c50f388c13754438fe0c7b26c5f9cc4/data/Eurex-Clearing-ARP-Functional-Reference-Guide-Rel.-9.0.pdf">C7 ARP Functional Reference Guide</a>]</p>
+</section>
+</section>
+<section id="technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="technology-stack">2.3 Technology Stack</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 44%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Technology</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Container Platform</td>
+<td>Red Hat OpenShift</td>
+<td>Used for C7 SCS microservices deployment</td>
+</tr>
+<tr class="even">
+<td>Architecture Pattern</td>
+<td>Microservices (C7 SCS); transitional for other components</td>
+<td>Legacy monolithic components being progressively retired</td>
+</tr>
+<tr class="odd">
+<td>Cloud Platform</td>
+<td>Google Cloud Platform (GCP)</td>
+<td>10-year strategic partnership (announced February 2023); used for cPME, D7, analytics</td>
+</tr>
+<tr class="even">
+<td>Cloud Services</td>
+<td>Google Cloud VMware Engine, BigQuery, Analytics Hub</td>
+<td>Deutsche Borse among first users of GCP VMware Engine</td>
+</tr>
+<tr class="odd">
+<td>Messaging / Connectivity</td>
+<td>Proprietary protocols (ETI), FIX/FIXML, SFTP (CRE)</td>
+<td>Multiple connectivity options</td>
+</tr>
+<tr class="even">
+<td>Risk Calculation Engine</td>
+<td>Eurex Clearing Prisma (proprietary)</td>
+<td>Filtered Historical Simulation with full revaluation</td>
+</tr>
+<tr class="odd">
+<td>Reporting Infrastructure</td>
+<td>Common Report Engine (CRE) – SFTP-based</td>
+<td>OpenSSH authentication</td>
+</tr>
+<tr class="even">
+<td>Development Methodology</td>
+<td>Distributed Agile with test automation (TCS partnership)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Programming Language</td>
+<td>Not publicly disclosed</td>
+<td>[unverified – Java/C++ likely based on industry norms for clearing systems]</td>
+</tr>
+<tr class="even">
+<td>Operating System</td>
+<td>Linux-based (OpenShift runs on RHEL/CoreOS)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>DLT / Blockchain</td>
+<td>Integrated with HQLAx DLT for collateral mobilisation; D7 DLT for tokenized securities</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>[Source: <a href="https://www.tcs.com/what-we-do/industries/capital-markets/case-study/eurex-central-counterparty-clearing-legacy-modernization">TCS Eurex Case Study</a>; <a href="https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Deutsche-B-rse-Group-and-Google-Cloud-Announce-Strategic-Partnership-to-Accelerate-Innovation-3405724">Deutsche Borse Google Cloud Partnership</a>; <a href="https://cloud.google.com/customers/deutsche-boerse">Google Cloud Deutsche Borse Case Study</a>]</p>
+<hr>
+</section>
+</section>
+<section id="performance-specifications" class="level2">
+<h2 class="anchored" data-anchor-id="performance-specifications">3. Performance Specifications</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 20%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+<th>Conditions / Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Daily Quote Capacity</td>
+<td>800+ million quotes per day</td>
+<td>Eurex Exchange T7 platform (trading side)</td>
+</tr>
+<tr class="even">
+<td>Average Daily Contracts</td>
+<td>~7 million contracts per day</td>
+<td>Listed derivatives on Eurex Exchange</td>
+</tr>
+<tr class="odd">
+<td>Annual Cleared Contracts</td>
+<td>2,065.9 million contracts (2025)</td>
+<td>Full year listed derivatives</td>
+</tr>
+<tr class="even">
+<td>OTC Daily Cleared Volume</td>
+<td>EUR 280 billion average (2025)</td>
+<td>OTC IRS notional</td>
+</tr>
+<tr class="odd">
+<td>Repo Daily Volume</td>
+<td>EUR 406.1 billion average term-adjusted (2025)</td>
+<td>Record year</td>
+</tr>
+<tr class="even">
+<td>cPME API Response Time</td>
+<td>&lt;1 second for 95% of requests</td>
+<td>Margin estimation API</td>
+</tr>
+<tr class="odd">
+<td>T7 Order Response Time</td>
+<td>~6 milliseconds</td>
+<td>Via Enhanced Transaction Interface (trading side)</td>
+</tr>
+<tr class="even">
+<td>Monthly Cleared Value</td>
+<td>EUR 11+ trillion</td>
+<td>Across all asset classes</td>
+</tr>
+<tr class="odd">
+<td>Margin Recalculation</td>
+<td>End-of-day full; intraday near-time</td>
+<td>Prisma margin engine</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Specific clearing-side throughput metrics (transactions per second, clearing latency) are not publicly disclosed by Eurex Clearing. The metrics above combine trading-side and clearing-side publicly available data.</p>
+<p>[Source: <a href="https://www.eurex.com/ex-en/find/about-us/the-market-place">Eurex Exchange Marketplace</a>; <a href="https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494">Eurex Full Year 2025 Figures</a>]</p>
+<hr>
+</section>
+<section id="interfaces-protocols" class="level2">
+<h2 class="anchored" data-anchor-id="interfaces-protocols">4. Interfaces &amp; Protocols</h2>
+<section id="clearing-connectivity" class="level3">
+<h3 class="anchored" data-anchor-id="clearing-connectivity">4.1 Clearing Connectivity</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 29%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Interface</th>
+<th>Protocol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Enhanced Transaction Solution (ETS)</strong></td>
+<td>Proprietary binary</td>
+<td>Optional high-performance trading/clearing interface; introduced with Eurex Release 10.0</td>
+</tr>
+<tr class="even">
+<td><strong>Enhanced Trading Interface (ETI)</strong></td>
+<td>Proprietary binary</td>
+<td>Low-latency API for trading and clearing; ~6ms order response time</td>
+</tr>
+<tr class="odd">
+<td><strong>FIX / FIXML</strong></td>
+<td>FIX 4.2/4.4, FIXML</td>
+<td>Post-trade clearing and settlement messaging; widely used by ISVs</td>
+</tr>
+<tr class="even">
+<td><strong>C7 APIs</strong></td>
+<td>Proprietary</td>
+<td>APIs for C7 SCS and C7 CAS integration</td>
+</tr>
+<tr class="odd">
+<td><strong>Common Report Engine (CRE)</strong></td>
+<td>SFTP (OpenSSH)</td>
+<td>Central solution for all trading and clearing report retrieval; end-of-day reports in TXT and XML formats; single source for all non-transactional files</td>
+</tr>
+<tr class="even">
+<td><strong>Connectivity Options</strong></td>
+<td>Leased line, Internet, Multi-Member-Service Operator</td>
+<td>Members choose preferred hardware platform and OS</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: <a href="https://www.eurex.com/ex-en/support/technology/common-report-engine">Eurex CRE</a>; <a href="https://www.eurex.com/ex-en/find/circulars/Enhanced-Transaction-Solution-ETS-Introduction-of-new-optional-Trading-Interface-Eurex-Release-10.0-Changes-to-Legal-Documents-due-to-new-Features-Introduction-of-new-Reports-and-Discontinuation-of-Eurex-Reports--196272">ETS Circular</a>]</p>
+</section>
+<section id="eurex-clearing-gui-prisma-calculator" class="level3">
+<h3 class="anchored" data-anchor-id="eurex-clearing-gui-prisma-calculator">4.2 Eurex Clearing GUI / Prisma Calculator</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 48%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tool</th>
+<th>Description</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Clearing GUI</strong></td>
+<td>Web-based GUI for clearing activities across listed derivatives, securities, OTC business; includes C7 ARP services</td>
+<td>Members only; via Eurex connectivity</td>
+</tr>
+<tr class="even">
+<td><strong>ERS GUI</strong></td>
+<td>Web-based dashboard for real-time risk monitoring; margin coverage, exposure views</td>
+<td>Members only</td>
+</tr>
+<tr class="odd">
+<td><strong>Prisma Online Margin Calculator</strong></td>
+<td>Browser-based margin simulation for listed and OTC products</td>
+<td>Members; via Eurex website</td>
+</tr>
+<tr class="even">
+<td><strong>Cloud Prisma Margin Estimator (cPME)</strong></td>
+<td>Cloud-based GUI and RESTful API for margin estimation; hosted on GCP</td>
+<td>Members and non-members; free of charge</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: <a href="https://www.eurex.com/ex-en/trade/margin-calculators/eurexotc-clear-prisma-margin-calculator">Eurex Prisma Calculators</a>; <a href="https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/">cPME Documentation</a>]</p>
+</section>
+<section id="swift-fix-xml-interfaces" class="level3">
+<h3 class="anchored" data-anchor-id="swift-fix-xml-interfaces">4.3 SWIFT / FIX / XML Interfaces</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 61%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Interface</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SWIFT</strong></td>
+<td>Settlement messaging with Clearstream and other CSDs; standard MT5xx messages for securities settlement</td>
+</tr>
+<tr class="even">
+<td><strong>FIX/FIXML</strong></td>
+<td>Post-trade clearing messages; trade confirmation; position reporting</td>
+</tr>
+<tr class="odd">
+<td><strong>XML Reports</strong></td>
+<td>Eurex Clearing XML Reports (reference manual V7.1.0); detailed clearing, margin, and settlement reports delivered via CRE</td>
+</tr>
+<tr class="even">
+<td><strong>ISO 20022</strong></td>
+<td>Alignment with T2S and T2 messaging standards for settlement in central bank money</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: <a href="https://www.eurex.com/resource/blob/2559052/1d7c5d0b9ca7a34198cab317c7af8914/data/Eurex-Clearing-XML-Reports-Reference-Manual.pdf">Eurex Clearing XML Reports Reference Manual</a>]</p>
+</section>
+<section id="reference-data" class="level3">
+<h3 class="anchored" data-anchor-id="reference-data">4.4 Reference Data</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Data Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Product Reference Data</td>
+<td>Instrument definitions, contract specifications, expiry calendars</td>
+</tr>
+<tr class="even">
+<td>Risk Parameters</td>
+<td>Prisma scenario files, margin parameters, volatility surfaces</td>
+</tr>
+<tr class="odd">
+<td>Member/Account Data</td>
+<td>Via C7 CAS; member configurations, account structures</td>
+</tr>
+<tr class="even">
+<td>Price Data</td>
+<td>End-of-day settlement prices; intraday reference prices for margin monitoring</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="resilience-business-continuity" class="level2">
+<h2 class="anchored" data-anchor-id="resilience-business-continuity">5. Resilience &amp; Business Continuity</h2>
+<section id="redundancy-disaster-recovery" class="level3">
+<h3 class="anchored" data-anchor-id="redundancy-disaster-recovery">5.1 Redundancy &amp; Disaster Recovery</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data Center Architecture</td>
+<td>Dual-site architecture; primary production and simulation/DR infrastructure</td>
+</tr>
+<tr class="even">
+<td>DR Infrastructure</td>
+<td>T7 simulation infrastructure serves as DR production environment in disaster scenarios</td>
+</tr>
+<tr class="odd">
+<td>Co-location Continuity</td>
+<td>Co-location customers can use existing connections to access DR environment</td>
+</tr>
+<tr class="even">
+<td>Recovery Time Objective</td>
+<td>Designed to meet EMIR requirement of <strong>2-hour RTO</strong> for critical services</td>
+</tr>
+<tr class="odd">
+<td>DR Testing</td>
+<td>Regular disaster recovery tests (typically semi-annually); participation serves to ensure transition requirements are met and emergency procedures are validated</td>
+</tr>
+<tr class="even">
+<td>BCP Framework</td>
+<td>Group-wide incident and crisis management process (Deutsche Borse Group level); covers loss of IT, workspace, and staff scenarios</td>
+</tr>
+<tr class="odd">
+<td>BCP Testing</td>
+<td>Regular and comprehensive testing of business continuity arrangements</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: <a href="https://www.eurex.com/ec-en/find/about-us/business-continuity-planning">Eurex BCP</a>; <a href="https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf">T7 DR Concept 2025</a>]</p>
+</section>
+<section id="regulatory-resilience-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="regulatory-resilience-requirements">5.2 Regulatory Resilience Requirements</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Regulation</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>EMIR</strong></td>
+<td>2-hour recovery time; robust governance and operational risk management</td>
+</tr>
+<tr class="even">
+<td><strong>DORA</strong> (Digital Operational Resilience Act)</td>
+<td>ICT risk management, incident reporting, digital operational resilience testing, third-party risk management; applicable from January 2025</td>
+</tr>
+<tr class="odd">
+<td><strong>CPMI-IOSCO PFMI</strong></td>
+<td>Principle 17 (Operational Risk): FMIs should identify, monitor, and manage operational risk; achieve recovery within 2 hours</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="capacity-management" class="level3">
+<h3 class="anchored" data-anchor-id="capacity-management">5.3 Capacity Management</h3>
+<ul>
+<li>C7 SCS microservices architecture on OpenShift enables <strong>independent horizontal scaling</strong> of individual components</li>
+<li>System designed to handle significant increases in trade traffic without burdening operations or development teams</li>
+<li>Regular capacity planning aligned with market growth projections</li>
+<li>Load testing as part of release management process [unverified – industry standard practice]</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="notable-technical-features" class="level2">
+<h2 class="anchored" data-anchor-id="notable-technical-features">6. Notable Technical Features</h2>
+<section id="prisma-methodology-deep-dive" class="level3">
+<h3 class="anchored" data-anchor-id="prisma-methodology-deep-dive">6.1 PRISMA Methodology Deep-Dive</h3>
+<p><strong>Filtered Historical Simulation (FHS) Approach:</strong></p>
+<p>The FHS methodology, originally developed by Barone-Adesi, Engle, and Mancini (2008), is used by Eurex Clearing Prisma to combine the non-parametric benefits of historical simulation with the responsiveness of GARCH-type volatility models. Key characteristics:</p>
+<ul>
+<li><strong>No distributional assumptions:</strong> Unlike parametric VaR or Monte Carlo approaches, FHS preserves the empirical distribution of returns including fat tails, skewness, and complex dependence structures.</li>
+<li><strong>Volatility conditioning:</strong> GARCH-type filtering scales historical returns by the ratio of current to historical conditional volatility. In periods of rising volatility, filtered scenarios produce larger potential losses; in calm periods, the stress period VaR provides a floor.</li>
+<li><strong>Full revaluation:</strong> Each portfolio is repriced under all 1,000 scenarios using full pricing models, accurately capturing non-linear risks (gamma, vega, convexity for fixed income).</li>
+<li><strong>Subsampling:</strong> Non-overlapping subsamples improve the robustness of VaR estimates and reduce sensitivity to individual extreme observations.</li>
+</ul>
+<p><strong>Anti-Procyclicality Measures:</strong></p>
+<p>Eurex Clearing employs multiple mechanisms to prevent margins from being excessively low during calm markets and spiking sharply during stress:</p>
+<ol type="1">
+<li><strong>Stress Period VaR floor:</strong> The margin is always at least as large as the stress period VaR, preventing margins from falling too low during benign market conditions.</li>
+<li><strong>Annual floor recalibration:</strong> Stress period parameters and margin floors are recalibrated annually (e.g., effective 16 June 2025) based on long-term historical data spanning at least 10 years.</li>
+<li><strong>Gradual adjustment:</strong> The FHS volatility filter ensures margins adjust gradually rather than through sudden jumps.</li>
+<li><strong>EMIR compliance:</strong> Eurex monitors two procyclicality metrics: maximum relative margin increase (short-term) and peak-to-trough ratio (long-term funding uncertainty).</li>
+</ol>
+<p><strong>Stress Margin Components:</strong></p>
+<p>The 250 stress scenarios are selected from identified historical stress episodes across different asset classes. The stress period dates are calibrated to the long-term (at least 10-year) 99% VaR to ensure stable flooring. Annual updates of stress period parameters are published via clearing circulars (e.g., the annual update effective 29 June 2020 and subsequent years).</p>
+<p>[Source: <a href="https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma">Eurex Clearing Prisma</a>; <a href="https://www.eurex.com/ec-en/find/news/Part-8-Forward-looking-margin-simulations-into-periods-of-stress-3193710">Part 8: Forward Looking Margin Simulations</a>; <a href="https://www.cftc.gov/media/5501/GMAC_121720Eurex/download">CFTC Eurex Clearing Margin Performance During 2020</a>]</p>
+</section>
+<section id="d7-digital-post-trade-platform" class="level3">
+<h3 class="anchored" data-anchor-id="d7-digital-post-trade-platform">6.2 D7 – Digital Post-Trade Platform</h3>
+<p>D7 is Deutsche Borse Group’s next-generation platform for fully digital issuance and processing of securities, operated by Clearstream and integrated with Eurex Clearing infrastructure.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>D7 Digital</strong></td>
+<td>Cloud-backed service (built with Google Cloud) for end-to-end digital securities issuance; creates and registers securities within seconds instead of up to two days</td>
+</tr>
+<tr class="even">
+<td><strong>D7 DLT</strong></td>
+<td>Tokenized securities platform based on distributed ledger technology; fully CSDR-compliant</td>
+</tr>
+<tr class="odd">
+<td><strong>Scale</strong></td>
+<td>Processes 45,000+ digital issuances per week; 2+ million issued securities; EUR 44+ billion total volume</td>
+</tr>
+<tr class="even">
+<td><strong>Products</strong></td>
+<td>Retail structured products, debt capital market instruments, digital commercial paper</td>
+</tr>
+<tr class="odd">
+<td><strong>Integration</strong></td>
+<td>D7 digital commercial paper traded on Eurex Repo F7 and cleared through Eurex Clearing</td>
+</tr>
+<tr class="even">
+<td><strong>DLT Collateral</strong></td>
+<td>Eurex Clearing became the first CCP globally to launch DLT-enabled collateral mobilisation (July 2025, with HQLAx and Clearstream)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: <a href="https://www.deutsche-boerse.com/dbg-en/markets-services/ps-technology/ps-7-market-technology/ps-d7">Deutsche Borse D7</a>; <a href="https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/D7-DLT-Clearstream-Launches-Tokenized-Securities-Platform-4757912">D7 DLT Launch</a>; <a href="https://focus.world-exchanges.org/articles/clearstream-db-d7">WFE Clearstream D7 Article</a>]</p>
+</section>
+<section id="cloud-adoption-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="cloud-adoption-strategy">6.3 Cloud Adoption Strategy</h3>
+<p>Deutsche Borse Group’s cloud strategy centers on a 10-year strategic partnership with Google Cloud (announced February 2023):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Initiative</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cloud Migration</strong></td>
+<td>Multi-cloud infrastructure; significant workloads migrated since 2019</td>
+</tr>
+<tr class="even">
+<td><strong>cPME on GCP</strong></td>
+<td>Cloud Prisma Margin Estimator deployed in Deutsche Borse VPC on GCP within EU</td>
+</tr>
+<tr class="odd">
+<td><strong>D7 on GCP</strong></td>
+<td>D7 Digital built on Google Cloud’s secure infrastructure with BigQuery and Analytics Hub</td>
+</tr>
+<tr class="even">
+<td><strong>Cloud-Native Trading Engine</strong></td>
+<td>New cloud-native trading engine for digital trading platform with 24/7 availability and internet API access</td>
+</tr>
+<tr class="odd">
+<td><strong>Digital Assets Platform</strong></td>
+<td>Cloud-native market infrastructure combining centralized and decentralized finance for crypto spot and derivatives</td>
+</tr>
+<tr class="even">
+<td><strong>Data Analytics</strong></td>
+<td>Google Cloud’s data and analytics capabilities for market data distribution and analytics use cases</td>
+</tr>
+<tr class="odd">
+<td><strong>VMware Engine</strong></td>
+<td>Deutsche Borse among first users of Google Cloud VMware Engine for migrating existing VMware workloads</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: <a href="https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Deutsche-B-rse-Group-and-Google-Cloud-Announce-Strategic-Partnership-to-Accelerate-Innovation-3405724">Deutsche Borse Google Cloud Partnership</a>; <a href="https://cloud.google.com/blog/topics/financial-services/lessons-from-deutsche-borse-groups-cloud-native-trading-engine">Google Cloud Blog</a>]</p>
+</section>
+<section id="partnership-initiatives-isv-ecosystem" class="level3">
+<h3 class="anchored" data-anchor-id="partnership-initiatives-isv-ecosystem">6.4 Partnership Initiatives (ISV Ecosystem)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 26%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Partner</th>
+<th>Domain</th>
+<th>Integration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>TCS</strong></td>
+<td>Technology</td>
+<td>C7 SCS modernization; microservices architecture; ongoing development partnership</td>
+</tr>
+<tr class="even">
+<td><strong>Google Cloud</strong></td>
+<td>Infrastructure</td>
+<td>10-year strategic partnership; cloud hosting for D7, cPME, analytics</td>
+</tr>
+<tr class="odd">
+<td><strong>HQLAx</strong></td>
+<td>DLT Collateral</td>
+<td>DLT-enabled collateral mobilisation for Eurex Clearing margin</td>
+</tr>
+<tr class="even">
+<td><strong>Pirum</strong></td>
+<td>Post-trade</td>
+<td>Post-trade automation for Lending CCP</td>
+</tr>
+<tr class="odd">
+<td><strong>EquiLend</strong></td>
+<td>Securities Lending</td>
+<td>Trade sourcing for Lending CCP</td>
+</tr>
+<tr class="even">
+<td><strong>CLS</strong></td>
+<td>FX Settlement</td>
+<td>Settlement of OTC FX-related cash flows</td>
+</tr>
+<tr class="odd">
+<td><strong>ISV Community</strong></td>
+<td>Connectivity</td>
+<td>Multiple ISVs provide FIX-based connectivity solutions for clearing members</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="comparison-notes" class="level2">
+<h2 class="anchored" data-anchor-id="comparison-notes">7. Comparison Notes</h2>
+<section id="vs.-krxksd-systems" class="level3">
+<h3 class="anchored" data-anchor-id="vs.-krxksd-systems">vs.&nbsp;KRX/KSD Systems</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 39%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Eurex C7 / PRISMA</th>
+<th>KRX / KSD Equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Clearing System</strong></td>
+<td>C7 (microservices on OpenShift); phased migration from legacy monolith</td>
+<td>KRX integrated clearing system (part of EXTURE+ platform ecosystem)</td>
+</tr>
+<tr class="even">
+<td><strong>Margin Methodology</strong></td>
+<td>PRISMA: Filtered Historical Simulation VaR; portfolio-based; 1,000 scenarios (750 historical + 250 stress)</td>
+<td>SPAN-based margin for derivatives (Standard Portfolio Analysis of Net Risk); 16 scanning scenarios per product; product-by-product with limited inter-commodity credits</td>
+</tr>
+<tr class="odd">
+<td><strong>Confidence Level</strong></td>
+<td>99% (listed) / 99.5% (OTC)</td>
+<td>99% for KOSPI 200 derivatives [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>Cross-Margining</strong></td>
+<td>Yes – within liquidation groups; listed-OTC cross-margining with up to 70% savings</td>
+<td>Limited cross-margining; KRX provides some inter-product spread credits within SPAN framework</td>
+</tr>
+<tr class="odd">
+<td><strong>Risk Approach</strong></td>
+<td>Portfolio-level full revaluation under historical scenarios</td>
+<td>Scenario-based scanning with parameterized risk arrays</td>
+</tr>
+<tr class="even">
+<td><strong>Anti-Procyclicality</strong></td>
+<td>Stress period VaR floor; annual recalibration</td>
+<td>Margin floor mechanisms [unverified – details not publicly available]</td>
+</tr>
+<tr class="odd">
+<td><strong>OTC Clearing</strong></td>
+<td>EurexOTC Clear for IRS, OIS, FRA, inflation swaps, NDF in 11 currencies</td>
+<td>KRX CCP for KRW-denominated OTC IRS and CRS (authorized under Capital Markets Act)</td>
+</tr>
+<tr class="even">
+<td><strong>Margin Simulation Tool</strong></td>
+<td>cPME (free, cloud-based, API + GUI, on Google Cloud)</td>
+<td>KRX margin calculator (member-facing) [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>Architecture</strong></td>
+<td>Microservices (C7 SCS on OpenShift); hybrid cloud</td>
+<td>Integrated platform (EXTURE+ ecosystem); primarily on-premise</td>
+</tr>
+<tr class="even">
+<td><strong>DLT/Digital</strong></td>
+<td>D7 DLT for tokenized securities; HQLAx DLT collateral</td>
+<td>KSD exploring DLT-based bond issuance and security token platforms [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>Cloud Strategy</strong></td>
+<td>10-year Google Cloud partnership; selective migration</td>
+<td>On-premise focused with selective cloud exploration [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>CSD Integration</strong></td>
+<td>Vertically integrated with Clearstream (same group); settlement via T2S</td>
+<td>KSD (Korea Securities Depository) is separate entity but deeply integrated with KRX</td>
+</tr>
+<tr class="odd">
+<td><strong>Default Waterfall</strong></td>
+<td>EUR 1.7 billion total Eurex/Deutsche Borse commitment (SITG + SSITG + equity + backstop)</td>
+<td>KRX default fund structure per Capital Markets Act [details vary]</td>
+</tr>
+<tr class="even">
+<td><strong>Regulatory Framework</strong></td>
+<td>EMIR (EU); DORA; CFTC DCO registration</td>
+<td>Capital Markets Act (Korea); FSC/FSS supervision</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-differentiators-of-eurex-c7prisma" class="level3">
+<h3 class="anchored" data-anchor-id="key-differentiators-of-eurex-c7prisma">Key Differentiators of Eurex C7/PRISMA</h3>
+<ol type="1">
+<li><p><strong>Portfolio-based margining vs.&nbsp;product-based:</strong> PRISMA’s FHS approach evaluates risk at the portfolio level using full revaluation under 1,000 scenarios, providing more accurate margin requirements that recognize hedging and diversification. KRX’s SPAN-based approach uses 16 scanning scenarios per product with limited portfolio-level offsets. This is a fundamental methodological difference – PRISMA can offer up to 70% margin savings for hedged portfolios.</p></li>
+<li><p><strong>Microservices architecture:</strong> C7 SCS’s deployment on Red Hat OpenShift represents a modern containerized approach that enables independent scaling of components, faster feature delivery, and operational flexibility. This contrasts with the more traditional integrated platform approach used by KRX.</p></li>
+<li><p><strong>Cloud-native margin tools:</strong> cPME provides free, cloud-based margin simulation with production-equivalent code via RESTful API, enabling pre-trade margin optimization. This level of transparency and accessibility in margin simulation tools is a distinctive offering.</p></li>
+<li><p><strong>Listed-OTC cross-margining:</strong> The ability to cross-margin between listed fixed income products and OTC IRS within the PFI01 liquidation group is a key competitive advantage, particularly relevant for the EMIR 3.0 active account requirement driving EU-based clearing.</p></li>
+<li><p><strong>DLT integration:</strong> Eurex Clearing’s early adoption of DLT-enabled collateral mobilisation (first CCP globally, July 2025) and integration with the D7 tokenized securities platform positions it at the forefront of post-trade digital transformation.</p></li>
+<li><p><strong>Vertical integration:</strong> Deutsche Borse Group’s vertical integration (Eurex Exchange for trading, Eurex Clearing for CCP, Clearstream for CSD/ICSD) creates a seamless value chain, particularly for repo (Eurex Repo F7 trading -&gt; Eurex Clearing CCP -&gt; Clearstream settlement). KRX has a similar vertical integration model with KSD.</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<ol type="1">
+<li><a href="https://www.eurex.com/ec-en/support/initiatives/c7-releases">Eurex Clearing C7 Releases</a> – Official C7 release information and documentation</li>
+<li><a href="https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma">Eurex Clearing Prisma</a> – PRISMA methodology overview</li>
+<li><a href="https://www.eurex.com/ec-en/services/margining/cross-margining">Eurex Clearing Cross-Margining</a> – Cross-margining methodology</li>
+<li><a href="https://www.tcs.com/what-we-do/industries/capital-markets/case-study/eurex-central-counterparty-clearing-legacy-modernization">TCS Eurex Case Study</a> – C7 SCS modernization technology details</li>
+<li><a href="https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/">Cloud Prisma Margin Estimator Documentation</a> – cPME technical documentation</li>
+<li><a href="https://github.com/Deutsche-Boerse-Risk/CloudPrismaMarginEstimator">cPME GitHub Repository</a> – API specifications and documentation</li>
+<li><a href="https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Deutsche-B-rse-Group-and-Google-Cloud-Announce-Strategic-Partnership-to-Accelerate-Innovation-3405724">Deutsche Borse Google Cloud Partnership</a> – Strategic cloud partnership announcement</li>
+<li><a href="https://cloud.google.com/customers/deutsche-boerse">Google Cloud Deutsche Borse Case Study</a> – Cloud adoption details</li>
+<li><a href="https://cloud.google.com/blog/topics/financial-services/lessons-from-deutsche-borse-groups-cloud-native-trading-engine">Google Cloud Blog: Cloud-Native Trading Engine</a> – Cloud-native architecture details</li>
+<li><a href="https://www.deutsche-boerse.com/dbg-en/markets-services/ps-technology/ps-7-market-technology/ps-d7">Deutsche Borse D7 Platform</a> – D7 digital post-trade platform</li>
+<li><a href="https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/D7-DLT-Clearstream-Launches-Tokenized-Securities-Platform-4757912">D7 DLT Launch</a> – Tokenized securities platform</li>
+<li><a href="https://focus.world-exchanges.org/articles/clearstream-db-d7">WFE Clearstream D7 Article</a> – D7 platform overview</li>
+<li><a href="https://www.eurex.com/resource/blob/2287018/05702c2d06312fc083c9419d81414db5/data/2014-Brosch-re-Eurex-Clearing-Prisma-E.pdf">Eurex Clearing Prisma Brochure (2014)</a> – Original PRISMA methodology documentation</li>
+<li><a href="https://www.cftc.gov/media/5501/GMAC_121720Eurex/download">CFTC: Eurex Clearing Margin Performance During 2020</a> – Margin model performance during COVID-19</li>
+<li><a href="https://www.eurex.com/ec-en/find/news/Part-8-Forward-looking-margin-simulations-into-periods-of-stress-3193710">Part 8: Forward Looking Margin Simulations</a> – Stress period VaR methodology</li>
+<li><a href="https://www.eurex.com/ec-en/find/about-us/business-continuity-planning">Eurex Clearing BCP</a> – Business continuity planning</li>
+<li><a href="https://www.eurex.com/resource/blob/4651858/b6f4ff08ad7dd3ce49a66f7ccaa369ab/data/T7_Disaster_Recovery_Concept_2025_v_1.2.pdf">T7 Disaster Recovery Concept 2025</a> – DR infrastructure</li>
+<li><a href="https://www.eurex.com/ex-en/find/news-center/news/Full-year-and-December-2025-figures-at-Eurex-4891494">Eurex Full Year 2025 Figures</a> – Volume and performance statistics</li>
+<li><a href="https://www.eurex.com/ec-en/clear/eurex-otc-clear/about-eurex-otc-clear">EurexOTC Clear</a> – OTC clearing service overview</li>
+<li><a href="https://www.eurex.com/ex-en/support/technology/common-report-engine">Eurex Common Report Engine</a> – CRE technical documentation</li>
+<li><a href="https://www.eurex.com/resource/blob/3202446/5c50f388c13754438fe0c7b26c5f9cc4/data/Eurex-Clearing-ARP-Functional-Reference-Guide-Rel.-9.0.pdf">C7 ARP Functional Reference Guide</a> – Advanced Risk Protection documentation</li>
+<li><a href="https://www.eurex.com/ex-en/find/circulars/Eurex-Readiness-Newsflash-Our-path-for-2026--4867350">Eurex 2026 Roadmap</a> – 2026 development plans</li>
+<li><a href="https://www.eurex.com/ec-en/find/circulars/clearing-circular-4441804">Prisma Margin Floor Recalibration Circular (2025)</a> – Annual margin floor update</li>
+<li><a href="https://www.eurex.com/ec-en/find/circulars/clearing-circular-4609908">Prisma Bonds Circular</a> – Extension of Prisma to bonds and repos</li>
+<li><a href="https://www.eurex.com/ec-en/find/circulars/Eurex-Clearing-Readiness-Newsflash-Cloud-Prisma-Margin-Estimator-CPME-migration-to-Google-Cloud-Platform-3931142">cPME GCP Migration Circular</a> – Cloud migration details</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

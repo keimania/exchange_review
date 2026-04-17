@@ -1,0 +1,767 @@
+---
+title: "ICE Futures (Intercontinental Exchange 선물)"
+subtitle: "파생상품 > 거래소"
+date: "2026-04-17"
+lang: ko
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **최종 수정일:** 2026-04-06
+> **조사 등급:** Tier 2
+> **분야:** 파생상품 (Derivatives)
+
+---
+
+## 1. 개요 및 프로필 (Overview & Profile)
+
+| 항목 | 상세 |
+|------|------|
+| 정식 명칭 | ICE Futures Europe (IFEU); ICE Futures U.S. (IFUS) |
+| 약칭 | ICE Futures (IFEU / IFUS) |
+| 웹사이트 | https://www.ice.com/futures-europe ; https://www.ice.com/futures-us |
+| 설립 연도 | 2000년 (ICE Inc. 설립); IFEU 전신 IPE 1980년 설립; IFUS 전신 NYBOT 1870년 설립 |
+| 소재지 | **ICE Futures Europe:** 영국 / 런던; **ICE Futures U.S.:** 미국 / 뉴욕 |
+| 소유 구조 | Intercontinental Exchange, Inc. (NYSE: ICE)의 100% 자회사; 상장, 기관투자자 광범위 보유 |
+| 모회사 / 그룹 | Intercontinental Exchange, Inc. -- NYSE, ICE Clear Europe, ICE Clear U.S., ICE Clear Credit, ICE Data Services, ICE Mortgage Technology를 포함하여 12개 이상의 규제 거래소 및 청산소를 포괄하는 수직 통합 그룹 |
+| 감독 기관 | **IFEU:** 영국 금융행위감독청(FCA) — 인가투자거래소(RIE); 미국 연관 계약에 대한 CFTC 감독. **IFUS:** 미국 상품선물거래위원회(CFTC) — 지정계약시장(DCM) |
+| 연간 매출 (2025, ICE Inc.) | 99억 달러 순매출 (전년 대비 +7%); 거래소 순매출 분기당 ~14억 달러; 20년 연속 역대 최고 매출 기록 |
+| 연간 파생상품 거래량 (2025) | ICE 글로벌 파생상품 시장에서 역대 최고 24억 선물 및 옵션 계약 (전년 대비 +13%) |
+| 일평균 거래량 (2025) | 역대 최고 일평균 930만 계약 (2024년 대비 +14%) |
+| 미결제약정 (2025년 말) | 1억 270만 계약 (2024년 말 대비 +17%); 2025년 12월 11일 사상 최고 1억 1,340만 달성 |
+| 상장 상품 | 에너지, 농산물/소프트 상품, 금리, 주가지수, FX, 배출권, 해운, 금속 분야의 수천 개 선물 및 옵션 |
+| 청산소 | ICE Clear Europe (런던); ICE Clear U.S. (뉴욕); ICE Clear Credit (시카고) |
+
+[출처: ICE Inc. 보도자료, "Intercontinental Exchange Reports Strong Full Year 2025 Results", February 2026, https://ir.theice.com/press/news-details/2026/Intercontinental-Exchange-Reports-Strong-Full-Year-2025-Results/default.aspx]
+[출처: ICE Inc. 보도자료, "ICE Announces 2025 Records Across Its Global Derivative and NYSE Equity & NYSE Options Markets", January 2026, https://ir.theice.com/press/news-details/2026/ICE-Announces-2025-Records-Across-Its-Global-Derivative-and-NYSE-Equity--NYSE-Options-Markets/default.aspx]
+
+### 주요 연혁 (Key Historical Milestones)
+
+- **1870년:** New York Cotton Exchange (NYCE) 설립 -- ICE Futures U.S.의 전신
+- **1882년:** Coffee Exchange of the City of New York 설립
+- **1980년:** International Petroleum Exchange (IPE), 플로어 매매 에너지 거래소로 런던에 설립
+- **1998년:** New York Board of Trade (NYBOT), NYCE와 Coffee, Sugar & Cocoa Exchange (CSCE)의 합병으로 설립
+- **2000년:** Intercontinental Exchange (ICE), Jeffrey Sprecher에 의해 조지아주 애틀랜타에 전자 장외(OTC) 에너지 시장으로 설립
+- **2001년:** ICE, 런던의 International Petroleum Exchange (IPE) 인수, 장내 선물 시장 진출
+- **2005년 (4월 7일):** IPE, 플로어 매매에서 전자 매매로 완전 전환; ICE Futures (이후 ICE Futures Europe)로 개명
+- **2005년:** ICE, NYSE에 상장 (티커: ICE)
+- **2007년:** ICE, New York Board of Trade (NYBOT) 인수; ICE Futures U.S.로 개명
+- **2007년:** ICE, ChemConnect (화학 시장) 및 Winnipeg Commodity Exchange (현 ICE Futures Canada) 인수
+- **2008년:** ICE Clear Europe, 런던에 중앙청산소(CCP)로 설립
+- **2010년:** ICE, Climate Exchange (유럽기후거래소 및 시카고기후거래소 포함) 인수
+- **2012년 (12월):** ICE, NYSE Euronext 인수 발표 (82억 달러)
+- **2013년 (11월 13일):** ICE, NYSE Euronext 인수 완료 (~총 110억 달러); LIFFE (London International Financial Futures and Options Exchange) 및 NYSE 인수
+- **2014년 (6월):** ICE, 유럽 대륙 Euronext 거래소를 IPO를 통해 분사; LIFFE 운영을 유지하여 ICE Futures Europe에 통합
+- **2016년:** ICE, ICE Benchmark Administration (IBA) 출시, LIBOR, ICE Swap Rate 및 기타 벤치마크 관리자
+- **2018년:** ICE, MERSCORP Holdings (모기지 전자등록소) 인수; Bakkt 디지털 자산 플랫폼 출시
+- **2020년:** ICE, Ellie Mae (모기지 기술) 110억 달러에 인수; Simplifile 인수
+- **2022년:** ICE, Black Knight (모기지 기술) 131억 달러에 인수
+- **2025년:** 파생상품 역대 최고 거래량 (24억 계약); EUA 2 (EU 탄소배출권 2) 선물 출시; 배터리 소재 선물 (리튬, 코발트, 스포듀민) 출시; ICE, Polymarket에 최대 20억 달러 투자
+- **2026년 (진행 중):** CoinDesk Indices 기반 규제 암호화폐 선물 출시 (7개 신규 계약); OKX에 대한 전략적 투자 ($200M); 데이터센터 DR 애틀랜타에서 Mahwah로 이전
+
+[출처: ICE, "Our History", https://www.ice.com/about/history]
+[출처: Wikipedia, "Intercontinental Exchange", https://en.wikipedia.org/wiki/Intercontinental_Exchange]
+[출처: ICE 보도자료, 2025-2026]
+
+---
+
+## 2. 시장 구조 (Market Structure)
+
+### 2.1 거래소 및 시장 부문 (Exchanges and Market Segments)
+
+ICE는 각각 고유한 상품 전문성을 가진 두 개의 주요 파생상품 거래소를 운영한다:
+
+| 거래소 | 주요 상품 | 핵심 계약 |
+|--------|-----------|-----------|
+| **ICE Futures Europe (IFEU)** | 에너지 (원유, 천연가스, 전력, 정제제품), 배출권, 소프트 상품 (런던 코코아, 로부스타 커피, 백설탕), 금리, 주가지수 | Brent 원유, Dutch TTF 가스, EUA 탄소, SONIA, Long Gilt, FTSE 100 |
+| **ICE Futures U.S. (IFUS)** | 소프트 상품/농산물, 주가지수, FX, 디지털 자산 | 설탕 No. 11, 커피 "C", 코코아, 면화 No. 2, MSCI 지수, Russell 지수 |
+
+**추가 ICE 파생상품 시장:**
+- **ICE Endex** -- 네덜란드 및 벨기에 천연가스 및 전력 파생상품 (암스테르담)
+- **ICE Futures Canada** -- 카놀라 선물 (위니펙)
+- **ICE Futures Abu Dhabi (IFAD)** -- Murban 원유 선물
+- **ICE Futures Singapore** -- 아시아 상품
+
+### 2.2 상품 카탈로그 (Product Catalog)
+
+#### 에너지 (ICE Futures Europe -- 세계 최대 에너지 파생상품 거래소)
+
+| 상품 | 계약 코드 | 계약 규모 | 결제 | 비고 |
+|------|----------|-----------|------|------|
+| Brent 원유 선물 | B | 1,000 배럴 | 현금 (EFP 인도 옵션) | 글로벌 벤치마크; 세계 원유/정제유 선물 거래량의 ~50% |
+| WTI 원유 선물 (IFEU) | T | 1,000 배럴 | NYMEX WTI 대비 현금결제 | 금융 계약 |
+| Dutch TTF 천연가스 | TFM | 1 MW/일 x 인도기간 시간 | 실물 (TTF 허브) | 유럽의 선도적 가스 벤치마크; 2025년 역대 최고 1억 300만 계약 |
+| 영국 천연가스 (NBP) | M | 1,000 서머/일 | 실물 (NBP 허브) | 영국 가스 벤치마크 |
+| ICE 가스오일 선물 | G | 100 메트릭톤 | 실물 | 핵심 정제제품 벤치마크 |
+| EUA 선물 (EU 탄소) | ECF | 1,000 EUA 배출권 | 배출권 실물인도 | 세계 최고 유동성 탄소 시장 |
+| EUA 2 선물 | -- | 1,000 EUA 2 배출권 | 실물 | 신규 ETS2를 위해 2025년 5월 출시 |
+| UKA 선물 (영국 탄소) | UKA | 1,000 UKA 배출권 | 실물 | 영국 ETS 유통시장 |
+
+#### 농산물 / 소프트 상품 (주로 ICE Futures U.S.)
+
+| 상품 | 계약 코드 | 계약 규모 | 결제 |
+|------|----------|-----------|------|
+| 설탕 No. 11 | SB | 112,000 파운드 | 실물 |
+| 커피 "C" 아라비카 | KC | 37,500 파운드 | 실물 |
+| 코코아 (IFUS) | CC | 10 메트릭톤 | 실물 |
+| 면화 No. 2 | CT | 50,000 파운드 | 실물 |
+| FCOJ-A | OJ | 15,000 파운드 | 실물 |
+| 런던 코코아 (IFEU) | C | 10 메트릭톤 | 실물 (런던) |
+| 로부스타 커피 (IFEU) | RC | 10 메트릭톤 | 실물 (런던) |
+| 백설탕 (IFEU) | W | 50 메트릭톤 | 실물 |
+| 카놀라 (ICE Canada) | RS | 20 메트릭톤 | 실물 |
+
+#### 금리 (ICE Futures Europe -- 구 LIFFE 상품)
+
+| 상품 | 계약 규모 | 결제 |
+|------|-----------|------|
+| 3개월 SONIA 선물 | GBP 1,000,000 명목 | 현금 (복리 SONIA) |
+| 1개월 SONIA 선물 | GBP 3,000,000 명목 | 현금 |
+| 3개월 Euribor 선물 | EUR 1,000,000 명목 | 현금 |
+| Long Gilt 선물 | GBP 100,000 액면 | 실물 |
+| Medium Gilt 선물 | GBP 100,000 액면 | 실물 |
+| 3개월 SARON 선물 | CHF 1,000,000 명목 | 현금 |
+
+#### 주가지수 (IFEU 및 IFUS)
+
+| 상품 | 거래소 | 승수 |
+|------|--------|------|
+| FTSE 100 지수 선물 | IFEU | GBP 10 x 지수 |
+| MSCI World 지수 선물 | IFEU | USD 50 x 지수 [unverified] |
+| MSCI Europe 지수 선물 | IFEU | EUR 50 x 지수 [unverified] |
+| Russell 2000 Mini 선물 | IFUS | USD 50 x 지수 |
+| Russell 1000 Mini 선물 | IFUS | USD 50 x 지수 |
+| MSCI Emerging Markets 선물 | IFUS | USD 50 x 지수 |
+| NYSE FANG+ 지수 선물 | IFUS | USD 20 x 지수 [unverified] |
+
+#### FX 선물 (ICE Futures U.S.)
+
+- USD Index 선물 (DX) -- 6개 통화 대비 USD의 가중 바스켓 (계약 규모: 1,000 x 지수)
+- Mini USD Index 선물
+- 다양한 통화 쌍 선물
+
+[출처: ICE, "Products - Futures & Options", https://www.ice.com/products/Futures-Options]
+[출처: ICE, "Brent Crude Futures - Specs", https://www.ice.com/products/219/Brent-Crude-Futures/specs]
+
+### 2.3 매매 세션 (Trading Sessions)
+
+#### ICE Futures Europe (IFEU) -- 런던 시간 (GMT/BST)
+
+| 상품군 | 사전 개장 | 매매 세션 | 비고 |
+|--------|----------|-----------|------|
+| 에너지 (Brent, 가스오일 등) | 00:45 | 01:00 -- 23:00 GMT | 거의 22시간 세션 |
+| Dutch TTF 천연가스 | 01:30 [unverified] | 01:50 -- 00:00 GMT | 연장 시간; 거의 22시간 세션 |
+| 배출권 (EUA, UKA) | 06:45 | 07:00 -- 17:00 GMT | 짧은 세션 |
+| 소프트 상품 (런던 코코아, 로부스타 커피, 백설탕) | 상이 | 09:00 -- 17:30 GMT (대략) | 상품별 상이 |
+| 금리 (SONIA, Euribor, Gilt) | 07:00 | 07:30 -- 18:00 GMT (대략) | LIFFE로부터 계승 |
+| 주가지수 (FTSE 100) | 07:00 [unverified] | 08:00 -- 17:30 GMT (대략) | LIFFE로부터 계승 |
+
+*주: 유럽 서머타임(BST) 기간에는 현지 시간은 동일하나 UTC 오프셋이 -1시간으로 변경. ICE는 서머타임 전환 시 임시 매매시간 조정을 공표.*
+
+#### ICE Futures U.S. (IFUS) -- 뉴욕 시간 (ET)
+
+| 상품군 | 사전 개장 | 매매 세션 | 비고 |
+|--------|----------|-----------|------|
+| 소프트 (설탕 No. 11) | 상이 | 03:30 -- 13:00 ET (대략) | 전자; 아시아/유럽 접근을 위해 전일 저녁 개장 |
+| 커피 "C" | 상이 | 04:15 -- 13:30 ET (대략) | |
+| 코코아 | 상이 | 04:45 -- 13:30 ET (대략) | |
+| 면화 No. 2 | 상이 | 21:00 (전일) -- 14:20 ET | 거의 17시간 세션 |
+| FCOJ-A | 상이 | 08:00 -- 14:00 ET (대략) | |
+| 주가지수 (Russell, MSCI) | 상이 | 20:00 (전일) -- 18:00 ET (대략) | 거의 22시간 세션 |
+| USD Index (DX) | 상이 | 20:00 (전일) -- 18:00 ET (대략) | 거의 22시간 세션 |
+
+*주: 정확한 매매시간은 변경될 수 있으며 서머타임 전환 시 달라진다. ICE는 서머타임 기간에 대한 임시 매매 일정을 공표.*
+
+[출처: ICE, "Trading Hours", https://www.ice.com/trading-hours]
+[출처: ICE, "IFEU Trading Schedule: Oil, Utilities and Agricultural", January 2026, https://www.ice.com/publicdocs/Trading_Schedule.pdf]
+[출처: ICE, "ICE Futures US Regular Trading Hours", https://www.ice.com/publicdocs/futures_us/ICE_Futures_US_Regular_Trading_Hours.pdf]
+
+### 2.4 호가단위 (최소가격변동폭) (Tick Sizes) — 주요 상품
+
+| 상품 | 호가단위 (Tick Size) | 틱 가치 (Tick Value) |
+|------|---------------------|---------------------|
+| Brent 원유 선물 (B) | $0.01/배럴 | $10.00 |
+| WTI 원유 선물 (IFEU, T) | $0.01/배럴 | $10.00 |
+| Dutch TTF 가스 선물 | EUR 0.001/MWh | 인도 기간에 따라 상이 |
+| ICE 가스오일 선물 (G) | $0.25/톤 | $25.00 |
+| EUA 선물 | EUR 0.01/톤 CO2 | EUR 10.00 |
+| 설탕 No. 11 (SB) | $0.01/파운드 | $11.20 |
+| 커피 "C" (KC) | $0.05/파운드 (5포인트) | $18.75 |
+| 코코아 IFUS (CC) | $1.00/톤 | $10.00 |
+| 면화 No. 2 (CT) | $0.01/파운드 (1포인트) | $5.00 |
+| 3개월 SONIA | 0.005 (반 베이시스포인트) | GBP 12.50 [unverified] |
+| Long Gilt 선물 | 0.01 (1/100 포인트) | GBP 10.00 |
+| FTSE 100 선물 | 0.5 지수포인트 | GBP 5.00 |
+| USD Index (DX) | 0.005 | $5.00 |
+
+### 2.5 시장조성자 (마켓메이커) / 유동성공급자 프로그램 (Market Maker / Liquidity Provider Programs)
+
+ICE는 IFEU 및 IFUS 모두에 대해 유동성공급자 프로그램을 운영한다:
+
+- **시장조성 프로그램:** 지정 시장조성자가 수수료 환급 및 인센티브 대가로 특정 상품에 지속적 양방향 호가 제공
+- **유동성공급자 프로그램 (IFEU):** IFEU 수수료표에 게시; 에너지, 소프트 상품, 금리, 주가지수 상품에 대한 단계별 환급 구조
+- **수수료 감면 인센티브:** 적격 참여자에 대한 거래량 기반 및 호가 의무 기반 수수료 감면
+- **eRFQ (전자 호가요청):** 옵션 및 유동성 낮은 상품에 이용 가능; 시장조성자가 지정된 매개변수 내에서 응답 의무
+
+[출처: ICE, "ICE Futures Europe Exchange & Clearing Fees 2026", https://www.ice.com/publicdocs/futures/IFEU_Exchange_Clearing_Fees.pdf]
+
+---
+
+## 3. 매매 메커니즘 (Trading Mechanism)
+
+### 3.1 접속매매 (연속매매) (Continuous Trading)
+
+ICE의 파생상품 시장은 정규 매매시간 중 접속 전자 주문체결 방식으로 운영된다:
+
+- **가격-시간 우선 (Price-Time Priority):** 엄격한 가격-시간 우선 기준에 따른 주문 체결 -- 최우선 가격 먼저, 이후 동일 가격에서 가장 빠른 타임스탬프
+- **중앙지정가호가장 (CLOB):** 모든 주문이 중앙지정가호가장에 진입; 주문 유형에 따라 표시(디스플레이) 및 비표시 부분 처리
+- **익명 매매:** 호가장에 상대방 신원 비공개; 모든 거래는 ICE 청산소를 통해 청산
+
+### 3.2 단일가매매 (경매) 메커니즘 (Auction Mechanisms)
+
+- **개장 단일가매매 (일부 상품):** 체결 없이 주문이 누적되는 사전 개장 기간 후 단일가 개봉 단일가매매
+- **종가/정산 기간:** Brent 원유 등의 상품은 정의된 정산 구간 중 거래의 가중평균을 사용 (예: Brent 정산은 런던 시간 19:28 2분 구간 동안의 VWAP 기반)
+- **장중 단일가매매:** 대부분의 ICE 상품에는 표준 기능 아님 [unverified]
+
+### 3.3 스프레드 매매 (Spread Trading)
+
+- **캘린더 스프레드:** 종목으로 직접 매매 가능; 스프레드 시장에 대한 별도 호가장
+- **상품간 스프레드:** 관련 상품에 대해 지원 (예: Brent/WTI 스프레드, 크랙 스프레드)
+- **전략 매매:** 복합 다중 레그 전략을 단일 주문으로 제출 가능
+
+### 3.4 묵시적 가격 결정 (Implied Pricing)
+
+- **Implied-in 및 Implied-out:** ICE는 스프레드 시장에 대한 묵시적 가격을 지원하여, 직접 주문과 스프레드 주문으로부터 합성 가격을 도출하여 유동성 향상 [unverified]
+
+[출처: ICE, "ICE Futures Europe Trading Procedures", https://www.ice.com/publicdocs/contractregs/185_XX_TRADING_PROCEDURES.pdf]
+
+---
+
+## 4. 주문 유형 (Order Types)
+
+### 4.1 기본 주문 유형 (Standard Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|------|
+| **지정가주문 (Limit Order)** | 지정된 가격 또는 그보다 유리한 가격으로 매수/매도 |
+| **시장가주문 (Market Order)** | 최우선 가격으로 매수/매도; 즉시 체결 |
+| **역지정가 주문 (Stop Order)** | 시장 가격이 역지정가에 도달하면 발동; 시장가주문으로 전환 |
+| **역지정가-지정가 주문 (Stop Limit Order)** | 역지정가에서 발동; 지정된 가격의 지정가주문으로 전환 |
+
+### 4.2 고급 주문 유형 (Advanced Order Types)
+
+| 주문 유형 | 설명 |
+|-----------|------|
+| **아이스버그 / 예비 주문 (Iceberg / Reserve Order)** | 주문의 일부만 표시; 나머지 숨겨지고 보충 |
+| **Market-if-Touched (MIT)** | 지정된 가격이 도달되면 시장가주문으로 전환 |
+| **재량 주문 (Discretionary Order)** | 가격 개선을 위한 숨겨진 재량 범위를 가진 지정가주문 [unverified] |
+
+### 4.3 주문 유효조건 (Time-in-Force)
+
+| 조건 | 설명 |
+|------|------|
+| **Day** | 현재 매매 세션에만 유효 |
+| **Good Till Cancelled (GTC)** | 체결되거나 취소될 때까지 유지 |
+| **Good Till Date (GTD)** | 지정된 날짜까지 유지 |
+| **Fill or Kill (FOK)** | 전량 즉시 체결되거나 취소 |
+| **Immediate or Cancel (IOC)** | 즉시 미체결된 부분은 취소 |
+
+### 4.4 주문 수정 및 취소 (Order Modification & Cancellation)
+
+- 매매 세션 중 언제든지 주문의 가격, 수량 수정 또는 취소 가능
+- 가격을 변경하는 수정은 시간 우선순위 상실
+- 수량 감소는 시간 우선순위 유지
+- **일괄 취소 (Mass Cancellation):** 단일 "cancel all" 메시지로 모든 주문 취소 가능 (킬 스위치 기능)
+
+[출처: ICE, "ICE Futures U.S. Trading Rules", https://www.ice.com/publicdocs/rulebooks/futures_us/4_Trading.pdf]
+
+---
+
+## 5. 매매시스템 / 기술 (Trading System / Technology)
+
+### 5.1 플랫폼 개요 (Platform Overview)
+
+| 항목 | 상세 |
+|------|------|
+| 매매 플랫폼 | ICE Trading Platform (독자 개발) |
+| 벤더 | ICE 자체 개발 |
+| 아키텍처 | 분산형, 멀티 데이터센터; 상품군별 별도 매매체결엔진 |
+| 주문 입력 프로토콜 | FIX 4.2 (ICE OS -- Order System); 네이티브 바이너리 API |
+| 시장 데이터 프로토콜 | iMpact (독자 UDP 멀티캐스트); FIX Market Data |
+| 지연시간 | 코로케이션 시설에서 서브밀리초 매매체결엔진 지연 [unverified] |
+| 처리량 | 모든 상품군에 걸쳐 초당 수백만 건의 메시지 처리 가능하도록 설계 [unverified] |
+
+### 5.2 시스템 연혁 (System History)
+
+- **2000년:** ICE, 최초의 완전 전자 에너지 시장 중 하나인 전자 OTC 에너지 매매 플랫폼으로 출시
+- **2005년:** IPE, 플로어 매매에서 ICE 전자 플랫폼으로 이전
+- **2007년:** NYBOT (ICE Futures U.S.), 플로어 매매에서 전자 매매로 이전
+- **2013-2014년:** LIFFE 상품, NYSE Euronext의 UTP/LIFFE CONNECT 플랫폼에서 ICE 매매 플랫폼으로 이전
+- **진행 중:** 지속적 플랫폼 개선; 데이터센터 인프라 갱신 (2025-2026)
+
+### 5.3 데이터센터 (Data Centers)
+
+| 위치 | 역할 | 상품 |
+|------|------|------|
+| **시카고, IL** (주 프로덕션) | IFUS 상품 매매체결엔진 | 소프트, 주가지수, FX |
+| **Basildon, Essex, 영국** (주 프로덕션) | IFEU 상품 매매체결엔진 | 에너지, 금리, 배출권, 런던 소프트, 주가지수 |
+| **Mahwah, NJ** | NYSE 코로케이션; DR 사이트 (애틀랜타에서 이전 중) | 매매/청산 시스템 재해복구 |
+
+### 5.4 재해복구 / BCP (Disaster Recovery / BCP)
+
+- 액티브-패시브 DR 아키텍처; DR 사이트 애틀랜타에서 뉴저지주 Mahwah로 통합 이전 중 (2025-2026 이전 진행 중)
+- 시카고 및 Basildon 프로덕션 데이터센터는 **이전하지 않음**; 지연 영향 없을 것으로 예상
+- 이전 기간 중 접속 및 코로케이션 네트워크 변경 없음
+- 인프라 갱신의 일환으로 모든 프로덕션 및 테스트 시스템의 IP 주소 및 DNS 항목 업데이트
+
+[출처: ICE, "ICE Datacenter Migration", https://www.ice.com/datacenter]
+[출처: ICE, "ICE Global Network & Colocation Technical Specifications", January 2026, https://www.ice.com/publicdocs/IGN_Colocation_US_Technical_Specifications.pdf]
+
+---
+
+## 6. 시장 데이터 (Market Data)
+
+### 6.1 피드 프로토콜 (Feed Protocols)
+
+| 프로토콜 | 유형 | 설명 |
+|----------|------|------|
+| **iMpact** | UDP 멀티캐스트 | 주요 시장 데이터 피드; 최우선호가(TOB), 상위 5 가격 수준, 전체 호가 깊이 채널 지원; 상품 세트 및 깊이 수준별 멀티캐스트 그룹 구성 |
+| **iMpact TCP** | TCP | 멀티캐스트 수신이 불가능한 환경용; 터널링된 멀티캐스트 전달 |
+| **FIX Market Data** | TCP (FIX 4.2) | 저빈도 소비자를 위한 FIX 기반 시장 데이터 |
+| **ICE Consolidated Feed** | 다양 | ICE Data Services를 통한 ICE 시장 전체의 통합 피드 |
+
+### 6.2 데이터 수준 (Data Levels)
+
+| 수준 | 내용 |
+|------|------|
+| Level 1 (최우선호가) | 최우선 매수/매도호가, 최근 거래, 정산가, 미결제약정 |
+| Level 2 (시장 깊이) | 상위 5 또는 상위 10 가격 수준, 집계 수량 |
+| 전체 호가 깊이 | 개별 주문 세부 정보를 포함한 완전한 호가장 |
+
+### 6.3 데이터 배포 (Data Distribution)
+
+- **실시간 데이터** 코로케이션 데이터센터에서 iMpact 멀티캐스트를 통해 배포
+- **지연 데이터** ICE 웹사이트 및 제3자 벤더를 통해 이용 가능
+- **일말** 정산가, 미결제약정, 거래량 매일 공표
+- **과거 틱 데이터** ICE Data Services를 통해 이용 가능 (나노초 타임스탬프 해상도)
+
+### 6.4 시장 데이터 수수료 (Market Data Fees)
+
+시장 데이터 가입자 수수료는 연간 공표 (USD 표시). 실시간 데이터 접근에 대해 터미널/사용자당 수수료 적용. 디스플레이 및 비디스플레이 (알고리즘) 사용에 대해 별도 수수료.
+
+[출처: ICE, "Market Data Subscriber Fees", January 2026, https://www.ice.com/publicdocs/data/Market_Data_Subscriber_Fees.pdf]
+[출처: OnixS, "ICE iMpact Market Data Handler SDK", https://www.onixs.biz/ice-impact-multicast-price-feed.html]
+
+---
+
+## 7. 접속 및 접근 (Connectivity & Access)
+
+### 7.1 회원 (Membership)
+
+**ICE Futures Europe (IFEU):**
+- **일반 참가자 (General Participant):** 모든 상품 분류에 걸친 전체 매매 권한
+- **매매 참가자 (Trade Participant):** 특정 상품 분류의 매매 권한
+- **개인 허가 보유자 (Individual Permit Holder):** 개인 매매 접근
+- 회원 자격에 FCA 인가 또는 동등한 규제 지위 필요
+
+**ICE Futures U.S. (IFUS):**
+- **청산회원 (Clearing Member):** 매매 및 청산 권한
+- **비청산회원 (매매 참가자) (Non-Clearing Member):** 매매 권한; 청산회원을 통해 청산 필요
+- 회원 자격에 CFTC 등록 (해당 시) 및 NFA 회원 필요
+
+### 7.2 접속 방법 (Connection Methods)
+
+| 방법 | 설명 |
+|------|------|
+| **ICE Global Network (IGN)** | 참여자를 ICE 시장에 연결하는 전용 사설 네트워크; 초고보안, 고복원력 |
+| **코로케이션 (Colocation)** | ICE 데이터센터에서의 직접 코로케이션 (영국 Basildon IFEU용; 시카고 IFUS용; 뉴저지 Mahwah NYSE/데이터 서비스용) |
+| **엑스트라넷 제공업체** | ICE 시설에 연결하는 제3자 네트워크 제공업체 |
+| **인터넷 (WebICE)** | 스크린 기반 접근을 위한 웹 기반 매매 플랫폼 |
+
+### 7.3 코로케이션 (Colocation)
+
+- **Basildon, 영국:** Tier 4 데이터센터; IFEU 시장 참여자를 위한 코로케이션; 유럽 매매체결엔진에 대한 저지연 접근을 위한 근접 호스팅
+- **시카고, IL:** IFUS 매매체결엔진에 대한 프로덕션 코로케이션
+- **Mahwah, NJ:** ICE Data Services 코로케이션; SFTI 네트워크 인프라 활용
+
+### 7.4 API 프로토콜 (API Protocols)
+
+| 프로토콜 | 용도 |
+|----------|------|
+| **FIX 4.2 (ICE OS)** | 주문 입력 및 거래 포착; ICE 고유 FIX 방언 |
+| **iMpact API** | 시장 데이터 수신 (UDP 멀티캐스트 및 TCP) |
+| **ICE Block API** | 블록거래 (대량매매), EFRP, 장외 거래 제출 |
+| **Drop Copy (FIX)** | 실시간 거래 확인 피드 (FIX Private Order Feed / POF) |
+
+### 7.5 인증 / 적합성 (Certification / Conformance)
+
+- ISV 및 참여자는 프로덕션 연결 전 ICE 적합성 테스트 완료 필요
+- API 버전 업그레이드 시 회원 리허설 실시
+- ICE는 기술 사양을 공표하고 개발을 위한 테스트 환경 제공
+
+[출처: ICE, "ICE Global Network & Colocation", https://www.ice.com/fixed-income-data-services/access-and-delivery/connectivity-and-feeds/icecolocation]
+[출처: ICE, "Technology ISV", https://www.ice.com/fixed-income-data-services/access-and-delivery/connectivity-and-feeds/technology-isv]
+[출처: B2BITS, "ICE Direct Access", https://www.b2bits.com/trading_solutions/direct_exchange_access/ice-direct-access]
+
+---
+
+## 8. 리스크 통제 및 서킷브레이커 (매매거래중단) (Risk Controls & Circuit Breakers)
+
+### 8.1 구간 가격제한 (IPL) -- 서킷브레이커 (Interval Price Limits)
+
+ICE는 전자 플랫폼에서 임시 서킷브레이커 메커니즘으로 **구간 가격제한(IPL)**을 사용한다:
+
+- 주문이 특정 선물 계약의 IPL 수준을 교차하면 사전 설정된 기간 동안 **시장 보류** (매매 중단) 발동
+- IPL은 주어진 방향의 가격 변동 속도를 늦추어 비정상적 가격 급등 방지
+- 모든 IPL 매개변수 (가격 밴드, 보류 기간)는 현행 시장 상황에 따라 거래소가 조정 가능
+- 보류 기간 만료 후 매매 재개 및 새로운 IPL 재산출
+
+### 8.2 일일 가격제한 (DPL) (Daily Price Limits)
+
+- ICE Futures U.S.는 일부 계약에 일일 가격제한 적용:
+  - **면화 No. 2** -- 확대 가능 제한 (~표준보다 50% 넓음)의 DPL
+  - **FCOJ-A** -- 확대 가능 제한의 DPL
+  - **카놀라** (ICE Futures Canada) -- DPL
+- 대부분의 에너지 및 금리 상품은 일일 가격제한 **없음**
+
+### 8.3 합리성 제한 (Reasonability Limits)
+
+- **경성 제한 (Hard Limits):** 지정 범위 밖의 주문을 입력 시 거부하는 사전 결정 가격 매개변수 (상한 초과 매수 주문 및 하한 미만 매도 주문 거부)
+- **무취소 범위 (No Cancellation Ranges):** 지정 범위 내 체결된 거래를 거래소가 통상 조정하거나 취소하지 않는 연성 제한
+
+### 8.4 사전 매매 리스크 통제 (Pre-Trade Risk Controls)
+
+- **최대 주문 크기:** 상품/참여자별 설정 가능
+- **최대 포지션 크기:** 실시간 모니터링
+- **신용 통제:** 매매체결엔진 수준에서 시행되는 청산회원 수준 리스크 한도
+- **접속 해제 시 취소:** 참여자 연결 해제 시 대기 주문 자동 취소 [unverified]
+- **킬 스위치:** 참여자 또는 청산회원이 모든 대기 주문을 즉시 취소할 수 있는 일괄 취소 기능
+
+### 8.5 포지션한도 (건옥제한) (Position Limits)
+
+**ICE Futures U.S.:**
+- CFTC Part 150 및 거래소 규칙에 따른 거래소 설정 투기적 포지션한도
+- 장중 및 일말 기준 모두에서 포지션한도 적용
+- 신청 시 헤지 면제 이용 가능
+- 공통 소유 또는 지배하 포지션 집합 필요
+- 위반은 거래소 규칙 6.13 또는 6.20 위반에 해당
+
+**ICE Futures Europe:**
+- 영국 FCA 규칙 및 EU/UK MiFID II 체계에 따른 포지션 관리 통제
+- 계약별 포지션한도 및 책임 수준 설정
+- 주요 계약 (예: Dutch TTF)에 대한 포지션한도에 관한 ESMA 의견
+
+[출처: ICE, "ICE's supervision of markets and price controls", https://www.ice.com/insights/exchanges/why-financial-participants-matter-to-the-commodity-markets/ice-supervision-of-markets]
+[출처: ICE, "Guidance on Position Limits", September 2025, https://www.ice.com/publicdocs/futures_us/ICE_Futures_US_PositionLimitGuidance.pdf]
+
+---
+
+## 9. 규제 체계 (Regulatory Framework)
+
+### 9.1 감독 기관 (Supervising Authorities)
+
+| 거래소 | 주요 감독기관 | 추가 감독 |
+|--------|-------------|-----------|
+| **ICE Futures Europe** | 영국 금융행위감독청(FCA) -- 인가투자거래소(RIE) | CFTC (WTI 등 미국 연관 계약); 영란은행 (ICE Clear Europe 청산 감독) |
+| **ICE Futures U.S.** | 미국 상품선물거래위원회(CFTC) -- 지정계약시장(DCM) | NFA (National Futures Association); SEC (증권선물 관련) |
+| **ICE Clear Europe** | 영란은행 (영국 EMIR에 따른 CCP); FCA; 이전 EU EMIR에 따라 인가 | |
+| **ICE Clear U.S.** | CFTC (파생상품청산기관 -- DCO) | |
+
+### 9.2 주요 규정 (Key Regulations)
+
+- **영국:** Financial Services and Markets Act 2000 (FSMA); 영국 MiFID II / MiFIR; 영국 EMIR (청산용)
+- **미국:** 상품거래소법 (CEA); CFTC 규정 Parts 1-190; 도드-프랭크법 Title VII (스왑/OTC 파생상품 감독)
+- **국경간:** ICE Futures Europe는 CFTC에 해외거래위원회(FBOT)로 등록되어, 미국 참여자의 특정 상품에 대한 직접 접근 허용
+
+### 9.3 자율규제 의무 (Self-Regulatory Obligations)
+
+- IFEU 및 IFUS 모두 각 관할하에서 자율규제 책임 유지
+- 각 거래소는 자체 규칙집, 준법감시, 시장 감시 기능 유지
+- **ICE Futures Europe 시장규제:** 시장남용, 조작, 규칙 위반을 모니터링하는 전담 시장 감시팀
+- **ICE Futures U.S. 규제부:** 거래소 규칙 집행; 매매 관행 감시 수행; 포지션한도 준수 감독
+
+### 9.4 보고 (Reporting)
+
+- **대규모 거래자 보고:** 미국 시장에 대해 CFTC 규칙에 따라 필요; IFEU는 영국 거래 보고 제도에 따라 FCA에 보고
+- **EMIR 거래 보고:** 영국 EMIR에 따라 청산된 거래가 거래정보저장소에 보고
+- **도드-프랭크 보고:** 미국에서 스왑 및 OTC 파생상품이 스왑데이터저장소(SDR)에 보고
+
+[출처: ICE, "ICE Futures Europe: Regulation", https://www.ice.com/futures-europe/regulation]
+[출처: ICE, "Regulation | ICE Futures U.S.", https://www.ice.com/futures-us/regulation]
+[출처: ICE, "ICE Futures Europe Market Regulation", https://www.ice.com/futures-europe/market-regulation-and-supervision]
+
+---
+
+## 10. 수수료 및 수익 모델 (Fees & Revenue Model)
+
+### 10.1 매매 / 거래 수수료 (Trading / Transaction Fees)
+
+수수료는 상품, 참여자 유형, 거래량 등급에 따라 상이하다. 대표적 예시 (2026년 수수료표):
+
+**ICE Futures Europe (일부):**
+
+| 상품 분류 | 편도 대략적 수수료 | 비고 |
+|-----------|-------------------|------|
+| 에너지 선물 (Brent, 가스오일) | ~$0.50 -- $1.20 | 상품 및 회원 유형에 따라 상이 |
+| 에너지 옵션 | ~$0.50 -- $1.50 | |
+| 배출권 (EUA) | ~EUR 0.03 -- 0.05/로트 | 대규모 로트 크기 (1,000 배출권)로 인한 낮은 로트당 수수료 |
+| 금리 선물 | ~GBP 0.10 -- 0.30 | 구 LIFFE 상품 |
+| 소프트 상품 (런던) | ~$0.50 -- $1.00 | 코코아, 로부스타 커피, 백설탕 |
+
+**ICE Futures U.S. (일부):**
+
+| 상품 분류 | 편도 대략적 수수료 | 비고 |
+|-----------|-------------------|------|
+| 소프트 상품 선물 | ~$0.70 -- $1.40 | 설탕, 커피, 코코아, 면화 |
+| 소프트 상품 옵션 | ~$0.70 -- $1.40 | |
+| 주가지수 선물 | ~$0.10 -- $0.75 | Russell, MSCI |
+| USD Index (DX) | ~$0.75 -- $1.25 | |
+
+*주: 이는 대략적 범위이다. 실제 수수료는 회원 분류, 거래량 등급, 특정 상품에 따라 달라진다. 청산 수수료는 해당 청산소에서 별도 부과.*
+
+### 10.2 시장 데이터 수수료 (Market Data Fees)
+
+- 사용자/터미널당 실시간 데이터 가입자 수수료 (연간 공표)
+- 디스플레이 및 비디스플레이 (알고리즘/자동화) 수수료 분류 별도
+- 대규모 배포를 위한 기업 라이선스 이용 가능
+- ICE Data Services를 통한 과거 데이터 이용 가능
+
+### 10.3 접속 / 기술 수수료 (Connectivity / Technology Fees)
+
+- Basildon, 시카고, Mahwah 시설의 코로케이션 랙 공간 및 전력 수수료
+- ICE Global Network 연결 수수료
+- 추가 FIX 세션 또는 시장 데이터 연결에 대한 포트 수수료
+- API 테스트 및 적합성 수수료
+
+### 10.4 수익 모델 (Revenue Model)
+
+ICE Inc. 수익 분류 (2025):
+- **거래소 매출** (매매, 청산, 데이터): 최대 부문; 파생상품 거래량 및 미결제약정에 의해 좌우
+- **채권 및 데이터 서비스:** 분기당 $608M (2025년 4분기); ICE Data Services 및 채권 가격 결정 포함
+- **모기지 기술:** 분기당 $532M (2025년 4분기); Ellie Mae / ICE Mortgage Technology 플랫폼
+
+[출처: ICE, "Fees", https://www.ice.com/fees]
+[출처: ICE, "ICE Futures Europe Exchange & Clearing Fees 2026", https://www.ice.com/publicdocs/futures/IFEU_Exchange_Clearing_Fees.pdf]
+[출처: ICE, "ICE Futures Technology & Market Data Fees 2025", https://www.ice.com/publicdocs/Fee_Overview.pdf]
+
+---
+
+## 11. 최근 동향 (Recent Developments)
+
+### 11.1 역대 최고 거래량 (2025) (Record Trading Volumes)
+
+- 2025년 역대 최고 24억 선물 및 옵션 계약 거래 (전년 대비 +13%)
+- 역대 최고 일평균 930만 계약 (2024년 대비 +14%)
+- 역대 최고 상품 일평균 540만 (+13%), 에너지 일평균 500만 (+15%), 금리 일평균 350만 (+19%)
+- 2025년 12월 11일 미결제약정 사상 최고 1억 1,340만 계약 달성
+
+### 11.2 신규 상품 (New Products)
+
+- **EUA 2 선물** (2025년 5월): 건물 및 도로운송을 커버하는 신규 ETS2용 EU 탄소배출권 2 선물; 2027년 운영 개시 예상
+- **배터리 소재 선물** (2025년): 리튬 수산화물, 탄산리튬, 코발트, 스포듀민을 커버하는 4개 신규 현금결제 계약 (Fastmarkets 평가 기반)
+- **암호화폐 선물** (2026년 2월): CoinDesk Indices에 벤치마크된 7개 신규 규제 암호화폐 선물 계약, 단일자산 알트코인 및 광범위 시장 벤치마크 커버
+- **Polymarket Signals and Sentiment Tool** (2026년 2월): 구조화된 시장 신호로서 크라우드소싱 확률 평가를 전달하는 정규화된 데이터 피드
+
+### 11.3 전략적 투자 및 파트너십 (Strategic Investments & Partnerships)
+
+- **Polymarket** (2025년 10월): ICE, 80억 달러 기업가치의 Polymarket (예측시장 플랫폼)에 최대 20억 달러 투자 발표; ICE가 Polymarket의 이벤트 기반 데이터 배포
+- **OKX** (2026년 3월): 250억 달러 기업가치의 OKX (블록체인/매매 회사)에 2억 달러 전략적 관계 및 투자; ICE 이사회 참여 및 광범위한 전략적 협력 수립
+
+### 11.4 인프라 및 기술 (Infrastructure & Technology)
+
+- **데이터센터 DR 이전** (2025-2026): 재해복구 사이트 애틀랜타에서 뉴저지주 Mahwah로 이전; 비프로덕션 시스템도 이전 및 갱신 중; 시카고 및 Basildon 프로덕션 사이트 변경 없음
+- **IRM 2 전환 계속:** ICE Risk Model 2 (VaR 기반 포트폴리오 증거금)가 2022년 주가지수 최초 적용 이후 에너지 선물 및 옵션 (1,000개 이상 계약)으로 확대
+
+### 11.5 재무 실적 (ICE Inc.) (Financial Performance)
+
+- 2025년 순매출: 99억 달러 (전년 대비 +7%) -- 20년 연속 역대 최고 매출
+- 2025년 GAAP 희석 EPS: $5.77 (전년 대비 +21%); 조정 희석 EPS: $6.95 (전년 대비 +14%)
+- 역대 최고 영업현금흐름: 47억 달러; 조정 잉여현금흐름: 42억 달러 (전년 대비 +16%)
+- 2025년 자사주 매입 13억 달러 및 배당금 11억 달러 주주 환원
+
+[출처: ICE 보도자료, "ICE Announces 2025 Records", January 2026]
+[출처: ICE 보도자료, "ICE Launches its first Futures Contracts Based on Battery Materials", 2025]
+[출처: ICE 보도자료, "ICE Reports Strong Full Year 2025 Results", February 2026]
+[출처: Wikipedia, "Intercontinental Exchange", 2026-04-06 접속]
+
+---
+
+## 파생상품 특화 부록 (Derivatives-Specific Appendix)
+
+### A. 주요 계약 사양 -- 주요 상품 (Key Contract Specifications -- Top Products)
+
+#### Brent 원유 선물 (ICE Futures Europe)
+
+| 사양 | 상세 |
+|------|------|
+| 계약 코드 | B |
+| 계약 규모 | 1,000 미국 배럴 |
+| 가격 호가 | 배럴당 미국 달러 및 센트 |
+| 최소 호가단위 | $0.01/배럴 (계약당 $10.00) |
+| 결제 방법 | 현금결제 (EFP 인도 옵션 포함); ICE Brent Index |
+| 만기 / 최종 거래일 | 결제월 2개월 전 월의 마지막 영업일 (예: 3월 계약은 1월 마지막 영업일 만기) |
+| 결제월 | 최대 96개 연속월 |
+| 포지션한도 (만기) | 만기를 포함한 마지막 5영업일에 7,000 계약, 선물 등가 Brent 옵션 포함 |
+| 매매시간 | 런던 시간 01:00 -- 23:00 (거의 22시간 세션) |
+| 정산 구간 | 런던 시간 19:28:00 -- 19:30:00 (VWAP) |
+
+#### 설탕 No. 11 선물 (ICE Futures U.S.)
+
+| 사양 | 상세 |
+|------|------|
+| 계약 코드 | SB |
+| 계약 규모 | 112,000 파운드 (50 롱톤) |
+| 가격 호가 | 파운드당 미국 센트 |
+| 최소 호가단위 | $0.01/파운드 (계약당 $11.20) |
+| 결제 방법 | 실물인도 (지정 항구) |
+| 결제월 | 3월, 5월, 7월, 10월 |
+| 매매시간 | ~03:30 -- 13:00 ET (전자) |
+
+#### 커피 "C" 아라비카 선물 (ICE Futures U.S.)
+
+| 사양 | 상세 |
+|------|------|
+| 계약 코드 | KC |
+| 계약 규모 | 37,500 파운드 (~250백 x 60 kg) |
+| 가격 호가 | 파운드당 미국 센트 |
+| 최소 호가단위 | $0.05/파운드 (계약당 $18.75) |
+| 결제 방법 | 실물인도 (인가 창고) |
+| 결제월 | 3월, 5월, 7월, 9월, 12월 |
+
+#### EUA 선물 (ICE Futures Europe)
+
+| 사양 | 상세 |
+|------|------|
+| 계약 코드 | ECF |
+| 계약 규모 | 1,000 EU 배출권 (각 = 1톤 CO2 상당) |
+| 가격 호가 | 톤 CO2당 EUR |
+| 최소 호가단위 | EUR 0.01/톤 (계약당 EUR 10.00) |
+| 결제 방법 | EUA 배출권 실물인도 |
+| 최종 거래일 | 결제월 마지막 월요일 |
+| 매매시간 | 런던 시간 07:00 -- 17:00 |
+
+#### 3개월 SONIA 선물 (ICE Futures Europe)
+
+| 사양 | 상세 |
+|------|------|
+| 계약 규모 | GBP 1,000,000 명목 |
+| 가격 호가 | 100 마이너스 금리 |
+| 최소 호가단위 | 0.005 (반 베이시스포인트) = GBP 12.50 [unverified] |
+| 결제 방법 | 현금결제 (일일 복리 SONIA 금리) |
+| 결제월 | 분기 (3, 6, 9, 12월) 추가 연속월 |
+
+### B. 증거금 체계 (Margin Framework)
+
+#### ICE Risk Model (IRM) -- 레거시
+
+- **방법론:** 시나리오 기반 증거금 (SPAN과 개념적으로 유사); 다양한 가격 및 변동성 시나리오에 걸쳐 포트폴리오 리스크 평가
+- **적용:** 대부분의 ICE 청산소에서 선물 및 옵션 개시증거금 산출에 사용
+
+#### ICE Risk Model 2 (IRM 2) -- 신규 표준
+
+- **방법론:** 필터링된 과거 시뮬레이션 VaR (Filtered Historical Simulation VaR, FHS VaR)
+- **신뢰수준:** 99% (정상 시장 상황하 예상 청산 비용을 커버하도록 보정)
+- **주요 특징:**
+  - 분산 효과를 갖춘 완전한 포트폴리오 기반 증거금
+  - GARCH 유형 변동성 필터링을 통해 변화하는 시장 상황에 반응
+  - 시나리오 기반 접근법을 경험적 리스크 측정으로 대체
+- **전환 현황:**
+  - 2022년 1월: 주가지수 선물 (ICE Clear U.S.)에 출시
+  - 2025년: 에너지 선물 및 옵션 (석유, 천연가스, LNG, 전력, 배출권, 해운 포함 1,000개 이상 계약)으로 확대
+  - 추가 자산군 확대 진행 중
+
+#### 변동증거금 (Variation Margin)
+
+- 시가평가 변동에 기반하여 매일 징수/지급
+- 높은 변동성 시기에 장중 마진콜 발생 가능
+
+#### 마진콜 절차 (Margin Call Process)
+
+- 청산회원이 고객 대리로 개시증거금 납부
+- 포지션이 기준 초과하여 불리하게 변동 시 장중 마진콜
+- 청산회원이 최종 고객으로부터 징수 책임
+
+[출처: ICE, "Clearing Margin Models", https://www.ice.com/clearing/margin-models]
+[출처: ICE, "ICE Risk Model 2", https://www.ice.com/clearing/margin-models/irm-2]
+[출처: ICE, "ICE Clear Europe Risk Management", https://www.ice.com/clear-europe/risk-management]
+
+### C. 블록거래 (대량매매) 및 EFP/EFS 규칙 (Block Trading and EFP/EFS Rules)
+
+#### 블록거래 (대량매매) (Block Trades)
+
+- 공개 단일가매매 시장과 별도로 비공개 협상된 거래
+- 상품별 최소 수량 기준 충족 필요
+- 거래 규모 및 비교 가능한 시장 가격에 비추어 **공정하고 합리적인** 가격으로 체결 필요
+- **ICE Block** 시스템을 통해 제출
+- 거래소에 보고되고 해당 청산소를 통해 청산
+
+#### 현물 교환 (EFP) (Exchange for Physical)
+
+- 2개 레그 거래: 한 레그는 선물 포지션, 다른 레그는 상응하는 실물 상품 포지션
+- 양 당사자 모두 선의의 실물 포지션 보유 필요
+- ICE Block 시스템을 통해 제출 필요
+
+#### 스왑 교환 (EFS) (Exchange for Swap)
+
+- 2개 레그 거래: 한 레그는 선물 포지션, 다른 레그는 상응하는 OTC 스왑/파생상품 포지션
+- 관련 포지션은 진정한 경제적 리스크를 수반해야 함
+
+#### 리스크 교환 (EFR) / 관련 포지션에 대한 선물 교환 (EFRP)
+
+- EFP, EFS, EOO (옵션간 교환)를 포괄하는 상위 분류
+- **핵심 요건:**
+  - 진정한 경제적 리스크 존재 필요
+  - "일시적" EFRP (동일 당사자 간 관련 포지션을 상쇄하기 위해 하나의 집행이 다른 집행에 조건부인 경우) 금지
+  - ICE가 상업적 근거에 만족하지 않을 경우 등록 거부 가능
+  - EFRP 거래는 ICE Block 시스템을 통해 제출 필요
+
+[출처: ICE, "ICE Futures Europe EFP, EFS, Soft Commodity EFRP and Basis Trade Policy", https://www.ice.com/publicdocs/futures/IFEU_EFP_EFS_Policy.pdf]
+[출처: ICE, "EFRP FAQs", February 2026, https://www.ice.com/publicdocs/futures_us/EFRP_FAQ.pdf]
+
+### D. ICE 청산소 (ICE Clearing Houses)
+
+| 청산소 | 소재지 | 청산 상품 | 감독기관 |
+|--------|--------|-----------|---------|
+| **ICE Clear Europe** | 런던 | 에너지, 배출권, 농산물, 금리, 주가지수 파생상품 (IFEU) | 영란은행; FCA |
+| **ICE Clear U.S.** | 뉴욕 | 농산물/소프트 상품, 주가지수, FX, 디지털 자산 (IFUS) | CFTC (DCO) |
+| **ICE Clear Credit** | 시카고 | 신용부도스왑 (CDS) | CFTC (DCO); SIFMU 지정 |
+| **ICE Clear Netherlands** | 암스테르담 | ICE Endex 상품 (네덜란드 가스/전력) | De Nederlandsche Bank (DNB) |
+| **ICE Clear Singapore** | 싱가포르 | 아시아 상품 | MAS |
+
+**ICE Clear Europe -- 주요 특징:**
+- 모든 IFEU 거래의 중앙청산소(CCP)
+- 3개 청산 분류: 에너지, 금융 (금리/주식), CDS
+- 분류별 청산회원의 기본이행불능기금 출연 필요
+- 일일 및 장중 증거금 징수
+- EMIR/영국 EMIR 요건에 따른 증거금 모델의 스트레스 테스트 및 백테스트
+
+**ICE Clear U.S. -- 주요 특징:**
+- 모든 IFUS 거래의 중앙청산소(CCP)
+- 분리된 고객 증거금 모델
+- IRM 2 전환 — 주가지수에서 시작하여 기타 자산군으로 확대
+
+[출처: ICE, "ICE Clear Europe Risk Management", https://www.ice.com/clear-europe/risk-management]
+[출처: ICE, "Clearing House Regulation | ICE Clear Europe Regulation", https://www.ice.com/clear-europe/regulation]
+
+---
+
+## 비교 참고: ICE vs. KRX 파생상품 (Comparison Note: ICE vs. KRX Derivatives)
+
+| 측면 | ICE (IFEU + IFUS) | KRX (한국거래소) |
+|------|-------------------|------------------|
+| 주요 강점 | 에너지 (세계 최대), 소프트 상품, 배출권 | 주가지수 파생상품 (KOSPI 200 옵션은 역사적으로 세계 최다 거래량) |
+| 증거금 모델 | IRM / IRM 2 (필터링된 과거 시뮬레이션 VaR) | KRX COMS (SPAN 유사) |
+| 매매시간 | 거의 22시간 전자 세션 (에너지) | ~6시간 세션 (09:00-15:45 KST) |
+| 청산 | 지역별 복수 청산소 | KRX CCP (단일) |
+| 규제 체계 | FCA (영국) + CFTC (미국) 이중 체제 | 금융위원회 (FSC) / 금융감독원 (FSS) |
+
+---
+
+*ICE Futures 조사 파일 끝*

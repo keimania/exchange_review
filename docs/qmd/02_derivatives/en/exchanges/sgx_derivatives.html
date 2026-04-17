@@ -1,0 +1,3389 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>SGX Derivatives – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html">Exchanges</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/sgx_derivatives.html">SGX Derivatives</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Derivatives Markets — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Derivatives Markets – Comparative Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exchanges</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Derivatives (Australian Securities Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cboe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cboe Global Markets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/eurex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Derivatives Market</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange Futures)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX Derivatives (Korea Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">SGX Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Derivatives Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU Derivatives Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">U.S. Derivatives Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 Trading Architecture – Eurex (Derivatives)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview-profile" id="toc-overview-profile" class="nav-link active" data-scroll-target="#overview-profile">1. Overview &amp; Profile</a>
+  <ul class="collapse">
+  <li><a href="#key-historical-milestones" id="toc-key-historical-milestones" class="nav-link" data-scroll-target="#key-historical-milestones">Key Historical Milestones</a></li>
+  </ul></li>
+  <li><a href="#market-structure" id="toc-market-structure" class="nav-link" data-scroll-target="#market-structure">2. Market Structure</a>
+  <ul class="collapse">
+  <li><a href="#market-segments-asset-classes" id="toc-market-segments-asset-classes" class="nav-link" data-scroll-target="#market-segments-asset-classes">2.1 Market Segments / Asset Classes</a></li>
+  <li><a href="#trading-sessions-hours" id="toc-trading-sessions-hours" class="nav-link" data-scroll-target="#trading-sessions-hours">2.2 Trading Sessions / Hours</a></li>
+  <li><a href="#tick-sizes-selected-products" id="toc-tick-sizes-selected-products" class="nav-link" data-scroll-target="#tick-sizes-selected-products">2.3 Tick Sizes (Selected Products)</a></li>
+  <li><a href="#lot-sizes-contract-units" id="toc-lot-sizes-contract-units" class="nav-link" data-scroll-target="#lot-sizes-contract-units">2.4 Lot Sizes / Contract Units</a></li>
+  <li><a href="#market-maker-liquidity-provider-programs" id="toc-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#market-maker-liquidity-provider-programs">2.5 Market Maker / Liquidity Provider Programs</a></li>
+  </ul></li>
+  <li><a href="#trading-mechanism" id="toc-trading-mechanism" class="nav-link" data-scroll-target="#trading-mechanism">3. Trading Mechanism</a>
+  <ul class="collapse">
+  <li><a href="#auction-mechanisms" id="toc-auction-mechanisms" class="nav-link" data-scroll-target="#auction-mechanisms">3.1 Auction Mechanisms</a></li>
+  <li><a href="#continuous-trading" id="toc-continuous-trading" class="nav-link" data-scroll-target="#continuous-trading">3.2 Continuous Trading</a></li>
+  <li><a href="#price-discovery" id="toc-price-discovery" class="nav-link" data-scroll-target="#price-discovery">3.3 Price Discovery</a></li>
+  <li><a href="#order-priority-rules-matching-algorithms" id="toc-order-priority-rules-matching-algorithms" class="nav-link" data-scroll-target="#order-priority-rules-matching-algorithms">3.4 Order Priority Rules / Matching Algorithms</a></li>
+  </ul></li>
+  <li><a href="#order-types" id="toc-order-types" class="nav-link" data-scroll-target="#order-types">4. Order Types</a>
+  <ul class="collapse">
+  <li><a href="#standard-order-types" id="toc-standard-order-types" class="nav-link" data-scroll-target="#standard-order-types">4.1 Standard Order Types</a></li>
+  <li><a href="#advanced-order-types" id="toc-advanced-order-types" class="nav-link" data-scroll-target="#advanced-order-types">4.2 Advanced Order Types</a></li>
+  <li><a href="#time-in-force-tif-conditions" id="toc-time-in-force-tif-conditions" class="nav-link" data-scroll-target="#time-in-force-tif-conditions">4.3 Time-in-Force (TIF) Conditions</a></li>
+  <li><a href="#order-modification-cancellation" id="toc-order-modification-cancellation" class="nav-link" data-scroll-target="#order-modification-cancellation">4.4 Order Modification &amp; Cancellation</a></li>
+  </ul></li>
+  <li><a href="#trading-system-technology-sgx-titan" id="toc-trading-system-technology-sgx-titan" class="nav-link" data-scroll-target="#trading-system-technology-sgx-titan">5. Trading System Technology — SGX Titan</a>
+  <ul class="collapse">
+  <li><a href="#system-overview" id="toc-system-overview" class="nav-link" data-scroll-target="#system-overview">5.1 System Overview</a></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">5.2 Architecture</a></li>
+  <li><a href="#latency" id="toc-latency" class="nav-link" data-scroll-target="#latency">5.3 Latency</a></li>
+  <li><a href="#platform-history-evolution" id="toc-platform-history-evolution" class="nav-link" data-scroll-target="#platform-history-evolution">5.4 Platform History &amp; Evolution</a></li>
+  <li><a href="#technology-stack" id="toc-technology-stack" class="nav-link" data-scroll-target="#technology-stack">5.5 Technology Stack</a></li>
+  <li><a href="#disaster-recovery-business-continuity" id="toc-disaster-recovery-business-continuity" class="nav-link" data-scroll-target="#disaster-recovery-business-continuity">5.6 Disaster Recovery &amp; Business Continuity</a></li>
+  </ul></li>
+  <li><a href="#market-data" id="toc-market-data" class="nav-link" data-scroll-target="#market-data">6. Market Data</a>
+  <ul class="collapse">
+  <li><a href="#market-data-platform-itch" id="toc-market-data-platform-itch" class="nav-link" data-scroll-target="#market-data-platform-itch">6.1 Market Data Platform — ITCH</a></li>
+  <li><a href="#feed-types-data-levels" id="toc-feed-types-data-levels" class="nav-link" data-scroll-target="#feed-types-data-levels">6.2 Feed Types / Data Levels</a></li>
+  <li><a href="#data-distribution" id="toc-data-distribution" class="nav-link" data-scroll-target="#data-distribution">6.3 Data Distribution</a></li>
+  <li><a href="#market-data-licensing" id="toc-market-data-licensing" class="nav-link" data-scroll-target="#market-data-licensing">6.4 Market Data Licensing</a></li>
+  </ul></li>
+  <li><a href="#connectivity-access" id="toc-connectivity-access" class="nav-link" data-scroll-target="#connectivity-access">7. Connectivity &amp; Access</a>
+  <ul class="collapse">
+  <li><a href="#membership-access-types" id="toc-membership-access-types" class="nav-link" data-scroll-target="#membership-access-types">7.1 Membership / Access Types</a></li>
+  <li><a href="#connection-methods" id="toc-connection-methods" class="nav-link" data-scroll-target="#connection-methods">7.2 Connection Methods</a></li>
+  <li><a href="#co-location-services" id="toc-co-location-services" class="nav-link" data-scroll-target="#co-location-services">7.3 Co-Location Services</a></li>
+  <li><a href="#api-protocols" id="toc-api-protocols" class="nav-link" data-scroll-target="#api-protocols">7.4 API Protocols</a></li>
+  <li><a href="#certification-conformance-testing" id="toc-certification-conformance-testing" class="nav-link" data-scroll-target="#certification-conformance-testing">7.5 Certification (Conformance Testing)</a></li>
+  </ul></li>
+  <li><a href="#risk-controls-circuit-breakers" id="toc-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#risk-controls-circuit-breakers">8. Risk Controls &amp; Circuit Breakers</a>
+  <ul class="collapse">
+  <li><a href="#circuit-breaker-mechanism" id="toc-circuit-breaker-mechanism" class="nav-link" data-scroll-target="#circuit-breaker-mechanism">8.1 Circuit Breaker Mechanism</a></li>
+  <li><a href="#price-limits-selected-products" id="toc-price-limits-selected-products" class="nav-link" data-scroll-target="#price-limits-selected-products">8.2 Price Limits (Selected Products)</a></li>
+  <li><a href="#pre-trade-risk-controls" id="toc-pre-trade-risk-controls" class="nav-link" data-scroll-target="#pre-trade-risk-controls">8.3 Pre-Trade Risk Controls</a></li>
+  <li><a href="#sgx-dc-clearing-financial-safeguards-default-waterfall" id="toc-sgx-dc-clearing-financial-safeguards-default-waterfall" class="nav-link" data-scroll-target="#sgx-dc-clearing-financial-safeguards-default-waterfall">8.4 SGX-DC Clearing Financial Safeguards (Default Waterfall)</a></li>
+  </ul></li>
+  <li><a href="#regulatory-framework" id="toc-regulatory-framework" class="nav-link" data-scroll-target="#regulatory-framework">9. Regulatory Framework</a>
+  <ul class="collapse">
+  <li><a href="#primary-regulator" id="toc-primary-regulator" class="nav-link" data-scroll-target="#primary-regulator">9.1 Primary Regulator</a></li>
+  <li><a href="#key-legislation-and-regulations" id="toc-key-legislation-and-regulations" class="nav-link" data-scroll-target="#key-legislation-and-regulations">9.2 Key Legislation and Regulations</a></li>
+  <li><a href="#market-surveillance" id="toc-market-surveillance" class="nav-link" data-scroll-target="#market-surveillance">9.3 Market Surveillance</a></li>
+  <li><a href="#reporting-requirements" id="toc-reporting-requirements" class="nav-link" data-scroll-target="#reporting-requirements">9.4 Reporting Requirements</a></li>
+  <li><a href="#cross-border-recognition" id="toc-cross-border-recognition" class="nav-link" data-scroll-target="#cross-border-recognition">9.5 Cross-Border Recognition</a></li>
+  </ul></li>
+  <li><a href="#fees-revenue-model" id="toc-fees-revenue-model" class="nav-link" data-scroll-target="#fees-revenue-model">10. Fees &amp; Revenue Model</a>
+  <ul class="collapse">
+  <li><a href="#trading-clearing-fees" id="toc-trading-clearing-fees" class="nav-link" data-scroll-target="#trading-clearing-fees">10.1 Trading &amp; Clearing Fees</a></li>
+  <li><a href="#market-data-fees" id="toc-market-data-fees" class="nav-link" data-scroll-target="#market-data-fees">10.2 Market Data Fees</a></li>
+  <li><a href="#connectivity-co-location-fees" id="toc-connectivity-co-location-fees" class="nav-link" data-scroll-target="#connectivity-co-location-fees">10.3 Connectivity &amp; Co-Location Fees</a></li>
+  <li><a href="#revenue-breakdown-fy2025" id="toc-revenue-breakdown-fy2025" class="nav-link" data-scroll-target="#revenue-breakdown-fy2025">10.4 Revenue Breakdown (FY2025)</a></li>
+  </ul></li>
+  <li><a href="#recent-developments" id="toc-recent-developments" class="nav-link" data-scroll-target="#recent-developments">11. Recent Developments</a>
+  <ul class="collapse">
+  <li><a href="#system-upgrades-technology" id="toc-system-upgrades-technology" class="nav-link" data-scroll-target="#system-upgrades-technology">11.1 System Upgrades &amp; Technology</a></li>
+  <li><a href="#new-products-market-developments" id="toc-new-products-market-developments" class="nav-link" data-scroll-target="#new-products-market-developments">11.2 New Products &amp; Market Developments</a></li>
+  <li><a href="#regulatory-changes" id="toc-regulatory-changes" class="nav-link" data-scroll-target="#regulatory-changes">11.3 Regulatory Changes</a></li>
+  <li><a href="#strategic-initiatives" id="toc-strategic-initiatives" class="nav-link" data-scroll-target="#strategic-initiatives">11.4 Strategic Initiatives</a></li>
+  </ul></li>
+  <li><a href="#derivatives-specific-sections" id="toc-derivatives-specific-sections" class="nav-link" data-scroll-target="#derivatives-specific-sections">Derivatives-Specific Sections</a></li>
+  <li><a href="#d1.-product-catalog" id="toc-d1.-product-catalog" class="nav-link" data-scroll-target="#d1.-product-catalog">D1. Product Catalog</a>
+  <ul class="collapse">
+  <li><a href="#by-asset-class" id="toc-by-asset-class" class="nav-link" data-scroll-target="#by-asset-class">By Asset Class</a></li>
+  </ul></li>
+  <li><a href="#d2.-key-contract-specifications-top-5-products-by-volume" id="toc-d2.-key-contract-specifications-top-5-products-by-volume" class="nav-link" data-scroll-target="#d2.-key-contract-specifications-top-5-products-by-volume">D2. Key Contract Specifications (Top 5 Products by Volume)</a>
+  <ul class="collapse">
+  <li><a href="#ftse-china-a50-index-futures-cn" id="toc-ftse-china-a50-index-futures-cn" class="nav-link" data-scroll-target="#ftse-china-a50-index-futures-cn">1. FTSE China A50 Index Futures (CN)</a></li>
+  <li><a href="#tsi-iron-ore-cfr-china-62-fe-futures-fef" id="toc-tsi-iron-ore-cfr-china-62-fe-futures-fef" class="nav-link" data-scroll-target="#tsi-iron-ore-cfr-china-62-fe-futures-fef">2. TSI Iron Ore CFR China 62% Fe Futures (FEF)</a></li>
+  <li><a href="#nikkei-225-index-futures-jpy-nk" id="toc-nikkei-225-index-futures-jpy-nk" class="nav-link" data-scroll-target="#nikkei-225-index-futures-jpy-nk">3. Nikkei 225 Index Futures — JPY (NK)</a></li>
+  <li><a href="#usdcnh-futures-uc" id="toc-usdcnh-futures-uc" class="nav-link" data-scroll-target="#usdcnh-futures-uc">4. USD/CNH Futures (UC)</a></li>
+  <li><a href="#inrusd-futures-iu" id="toc-inrusd-futures-iu" class="nav-link" data-scroll-target="#inrusd-futures-iu">5. INR/USD Futures (IU)</a></li>
+  </ul></li>
+  <li><a href="#d3.-margin-framework" id="toc-d3.-margin-framework" class="nav-link" data-scroll-target="#d3.-margin-framework">D3. Margin Framework</a>
+  <ul class="collapse">
+  <li><a href="#methodology-span-standard-portfolio-analysis-of-risk" id="toc-methodology-span-standard-portfolio-analysis-of-risk" class="nav-link" data-scroll-target="#methodology-span-standard-portfolio-analysis-of-risk">Methodology: SPAN (Standard Portfolio Analysis of Risk)</a></li>
+  <li><a href="#sgx-dcs-enhanced-span-parameters" id="toc-sgx-dcs-enhanced-span-parameters" class="nav-link" data-scroll-target="#sgx-dcs-enhanced-span-parameters">SGX-DC’s Enhanced SPAN Parameters</a></li>
+  <li><a href="#margin-types" id="toc-margin-types" class="nav-link" data-scroll-target="#margin-types">Margin Types</a></li>
+  <li><a href="#margin-call-process" id="toc-margin-call-process" class="nav-link" data-scroll-target="#margin-call-process">Margin Call Process</a></li>
+  <li><a href="#industry-context" id="toc-industry-context" class="nav-link" data-scroll-target="#industry-context">Industry Context</a></li>
+  </ul></li>
+  <li><a href="#d4.-position-limits-large-position-reporting" id="toc-d4.-position-limits-large-position-reporting" class="nav-link" data-scroll-target="#d4.-position-limits-large-position-reporting">D4. Position Limits &amp; Large Position Reporting</a>
+  <ul class="collapse">
+  <li><a href="#position-limits" id="toc-position-limits" class="nav-link" data-scroll-target="#position-limits">Position Limits</a></li>
+  <li><a href="#hedge-exemptions" id="toc-hedge-exemptions" class="nav-link" data-scroll-target="#hedge-exemptions">Hedge Exemptions</a></li>
+  <li><a href="#large-position-reporting" id="toc-large-position-reporting" class="nav-link" data-scroll-target="#large-position-reporting">Large Position Reporting</a></li>
+  <li><a href="#accountability-levels" id="toc-accountability-levels" class="nav-link" data-scroll-target="#accountability-levels">Accountability Levels</a></li>
+  </ul></li>
+  <li><a href="#d5.-block-trading-negotiated-large-trades-nlt-efp-efs" id="toc-d5.-block-trading-negotiated-large-trades-nlt-efp-efs" class="nav-link" data-scroll-target="#d5.-block-trading-negotiated-large-trades-nlt-efp-efs">D5. Block Trading / Negotiated Large Trades (NLT) / EFP / EFS</a>
+  <ul class="collapse">
+  <li><a href="#negotiated-large-trades-nlt" id="toc-negotiated-large-trades-nlt" class="nav-link" data-scroll-target="#negotiated-large-trades-nlt">Negotiated Large Trades (NLT)</a></li>
+  <li><a href="#exchange-for-physical-efp" id="toc-exchange-for-physical-efp" class="nav-link" data-scroll-target="#exchange-for-physical-efp">Exchange for Physical (EFP)</a></li>
+  <li><a href="#exchange-for-swap-efs" id="toc-exchange-for-swap-efs" class="nav-link" data-scroll-target="#exchange-for-swap-efs">Exchange for Swap (EFS)</a></li>
+  <li><a href="#registration-requirements" id="toc-registration-requirements" class="nav-link" data-scroll-target="#registration-requirements">Registration Requirements</a></li>
+  </ul></li>
+  <li><a href="#d6.-delivery-settlement-process" id="toc-d6.-delivery-settlement-process" class="nav-link" data-scroll-target="#d6.-delivery-settlement-process">D6. Delivery &amp; Settlement Process</a>
+  <ul class="collapse">
+  <li><a href="#daily-settlement-mark-to-market" id="toc-daily-settlement-mark-to-market" class="nav-link" data-scroll-target="#daily-settlement-mark-to-market">Daily Settlement (Mark-to-Market)</a></li>
+  <li><a href="#final-settlement-cash-settled-contracts" id="toc-final-settlement-cash-settled-contracts" class="nav-link" data-scroll-target="#final-settlement-cash-settled-contracts">Final Settlement — Cash-Settled Contracts</a></li>
+  <li><a href="#final-settlement-physically-delivered-contracts" id="toc-final-settlement-physically-delivered-contracts" class="nav-link" data-scroll-target="#final-settlement-physically-delivered-contracts">Final Settlement — Physically Delivered Contracts</a></li>
+  <li><a href="#settlement-currency" id="toc-settlement-currency" class="nav-link" data-scroll-target="#settlement-currency">Settlement Currency</a></li>
+  </ul></li>
+  <li><a href="#appendix-sgx-derivatives-comparison-with-krx" id="toc-appendix-sgx-derivatives-comparison-with-krx" class="nav-link" data-scroll-target="#appendix-sgx-derivatives-comparison-with-krx">Appendix: SGX Derivatives — Comparison with KRX</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html">Exchanges</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/sgx_derivatives.html">SGX Derivatives</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">SGX Derivatives</h1>
+<p class="subtitle lead">Derivatives &gt; Exchanges</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-06 <strong>Research Tier:</strong> Tier 1 <strong>Domain:</strong> Derivatives</p>
+</blockquote>
+<hr>
+<section id="overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="overview-profile">1. Overview &amp; Profile</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Official Name</td>
+<td>Singapore Exchange Derivatives Trading Limited (SGX-DT) / Singapore Exchange Derivatives Clearing Limited (SGX-DC)</td>
+</tr>
+<tr class="even">
+<td>Abbreviation</td>
+<td>SGX Derivatives</td>
+</tr>
+<tr class="odd">
+<td>Website</td>
+<td>https://www.sgx.com/derivatives</td>
+</tr>
+<tr class="even">
+<td>Year Established</td>
+<td>1984 (as SIMEX — Singapore International Monetary Exchange); 1999 merged into SGX; SGX-DT and SGX-DC as separate entities within SGX Group</td>
+</tr>
+<tr class="odd">
+<td>Country / City</td>
+<td>Singapore / Singapore (2 Shenton Way, SGX Centre 1)</td>
+</tr>
+<tr class="even">
+<td>Ownership Structure</td>
+<td>Part of SGX Group, which is publicly listed on its own exchange (ticker: S68)</td>
+</tr>
+<tr class="odd">
+<td>Parent Company / Group</td>
+<td>Singapore Exchange Limited (SGX Group)</td>
+</tr>
+<tr class="even">
+<td>Regulatory Authority</td>
+<td>Monetary Authority of Singapore (MAS)</td>
+</tr>
+<tr class="odd">
+<td>Annual Revenue (FY2025)</td>
+<td>Equities — Derivatives: SGD 345.9 million (+13.8% YoY); Currencies &amp; Commodities: SGD 312.5 million (+8.6% YoY); SGX Group total: SGD 1.30 billion (record)</td>
+</tr>
+<tr class="even">
+<td>Annual Derivatives Volume (CY2025)</td>
+<td>329 million contracts (record) across equities, FX, and commodities</td>
+</tr>
+<tr class="odd">
+<td>Average Daily Volume (Feb 2025)</td>
+<td>~1.4 million contracts/day (derivatives DAV +8% YoY)</td>
+</tr>
+<tr class="even">
+<td>Listed Instruments</td>
+<td>Futures and options across equity indices (&gt;15 Asian markets), FX (6+ currency pairs), commodities (iron ore, freight, rubber, coking coal, steel), interest rates (JGB, APAC bonds), and digital assets (BTC, ETH perpetual futures)</td>
+</tr>
+<tr class="odd">
+<td>Clearing House</td>
+<td>SGX Derivatives Clearing Limited (SGX-DC) — central counterparty</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: SGX Group FY2025 Annual Report; SGX Group market statistics press releases, February 2025; TipRanks, “SGX Ends 2025 With Record Derivatives Volumes”, January 2026]</p>
+<section id="key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="key-historical-milestones">Key Historical Milestones</h3>
+<ul>
+<li><strong>1984:</strong> Singapore International Monetary Exchange (SIMEX) established as Asia’s first financial futures exchange; launched Eurodollar futures via mutual offset with CME</li>
+<li><strong>1986:</strong> SIMEX launches Nikkei 225 futures — pioneering offshore access to Japanese equity markets; first offshore listing of a major Asian equity index</li>
+<li><strong>1999 (1 December):</strong> SGX formed through merger of Stock Exchange of Singapore (SES), SIMEX, and Securities Clearing and Computer Services Pte Ltd, enabled by the Exchanges (Demutualisation and Merger) Act 1999</li>
+<li><strong>2000:</strong> SGX listed on its own Mainboard (23 November); established SGX Derivatives Trading (SGX-DT) and SGX Securities Trading (SGX-ST) as separate arms</li>
+<li><strong>2002:</strong> Launched Japanese Government Bond (JGB) futures</li>
+<li><strong>2003:</strong> Technology partnership with Nasdaq for trading systems commenced</li>
+<li><strong>2006:</strong> Launched FTSE China A50 Index Futures — the first and only USD-denominated A-share futures contract globally</li>
+<li><strong>2007:</strong> Launched AsiaClear, OTC clearing service for commodities; launched iron ore swaps</li>
+<li><strong>2009:</strong> Launched SGX iron ore futures — now the global benchmark for seaborne iron ore derivatives</li>
+<li><strong>2010:</strong> Proposed merger with ASX for AUD 8.4 billion; blocked by Australian government in 2011</li>
+<li><strong>2013:</strong> Acquired 24.9% stake in the Baltic Exchange (full acquisition in 2017)</li>
+<li><strong>2014:</strong> Launched FX futures (USD/CNH, INR/USD, and other Asian currency pairs)</li>
+<li><strong>2015:</strong> Announced next-generation derivatives platform (Titan) using Nasdaq Genium INET technology</li>
+<li><strong>2016–2017:</strong> SGX Titan DT/DC derivatives trading and clearing platform goes live, replacing legacy systems</li>
+<li><strong>2018:</strong> Launched FTSE-SGX indices; expanded iron ore and commodity suite</li>
+<li><strong>2019:</strong> Upgraded securities trading engine to Nasdaq multi-matching engine</li>
+<li><strong>2020:</strong> Extended FX derivatives product suite; record iron ore volumes</li>
+<li><strong>2022:</strong> Signed GIFT Connect agreement with NSE (India) for Nifty derivatives transition</li>
+<li><strong>2023 (3 July):</strong> NSE IX-SGX GIFT Connect became fully operational — Nifty derivatives migrated to NSE International Exchange in GIFT City, India</li>
+<li><strong>2025 (November):</strong> Launched institutional-grade Bitcoin and Ethereum perpetual futures tied to iEdge-CoinDesk Cryptocurrency Indices</li>
+<li><strong>2025:</strong> Record annual derivatives volume of 329 million contracts; record FX futures volumes; record OTC FX ADV of USD 143 billion; record MSCI Singapore OI</li>
+<li><strong>2026 (April, planned):</strong> Launch of Asia Pacific Government Bond Futures covering India, Indonesia, Malaysia, Thailand, and the Philippines</li>
+<li><strong>2027 (planned):</strong> New securities trading engine “Iris-ST” expected to go live in second half of 2027</li>
+</ul>
+<p>[Source: SGX website, “About SGX”; Wikipedia, “Singapore Exchange”; SGX press releases 2022–2026; SGX FY2025 Annual Report; PR Newswire, “SGX Derivatives breaks new ground with institutional-grade crypto perpetual futures”, November 2025; Markets Media, “SGX Derivatives to Launch Asia Pacific Government Bond Futures”, March 2026]</p>
+<hr>
+</section>
+</section>
+<section id="market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="market-structure">2. Market Structure</h2>
+<section id="market-segments-asset-classes" class="level3">
+<h3 class="anchored" data-anchor-id="market-segments-asset-classes">2.1 Market Segments / Asset Classes</h3>
+<p>SGX Derivatives offers one of Asia’s broadest multi-asset derivatives platforms, organized by underlying asset class:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 26%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Asset Class</th>
+<th>Products</th>
+<th>Key Contracts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Equity Index</strong></td>
+<td>Futures and options on major Asian indices; covers &gt;80% of Asia’s economies</td>
+<td>FTSE China A50, Nikkei 225 (JPY &amp; USD), MSCI Singapore, MSCI Taiwan, MSCI Indonesia, MSCI India, MSCI Thailand, MSCI Philippines, Hang Seng Index, Hang Seng China Enterprises Index, S&amp;P/ASX 200</td>
+</tr>
+<tr class="even">
+<td><strong>FX Derivatives</strong></td>
+<td>Futures and options on Asian currency pairs (listed) + OTC FX</td>
+<td>USD/CNH, INR/USD, KRW/USD, AUD/USD, AUD/JPY, USD/SGD</td>
+</tr>
+<tr class="odd">
+<td><strong>Commodities</strong></td>
+<td>Futures, swaps, and options on bulk commodities and freight</td>
+<td>TSI Iron Ore CFR China 62% Fe, Iron Ore 65% Fe, Coking Coal, Steel Rebar, Rubber (TSR20, RSS3), Freight (FFA), Energy (fuel oil, naphtha)</td>
+</tr>
+<tr class="even">
+<td><strong>Interest Rates</strong></td>
+<td>Government bond futures</td>
+<td>Japanese Government Bond (JGB) Futures; Asia Pacific Government Bond Futures (India, Indonesia, Malaysia, Thailand, Philippines — launching April 2026)</td>
+</tr>
+<tr class="odd">
+<td><strong>Digital Assets</strong></td>
+<td>Perpetual futures</td>
+<td>Bitcoin Perpetual Futures, Ethereum Perpetual Futures (launched November 2025)</td>
+</tr>
+<tr class="even">
+<td><strong>GIFT Connect</strong></td>
+<td>India Nifty index derivatives via NSE IX</td>
+<td>GIFT Nifty 50, GIFT Nifty Bank, GIFT Nifty Financial Services, GIFT Nifty IT (traded on NSE IX, accessible via SGX)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: SGX website, “Derivatives Products”; Exegy, “Singapore Exchange Links Traders to Diverse APAC Products”; SGX press releases 2025–2026]</p>
+</section>
+<section id="trading-sessions-hours" class="level3">
+<h3 class="anchored" data-anchor-id="trading-sessions-hours">2.2 Trading Sessions / Hours</h3>
+<p><strong>Note:</strong> Singapore Standard Time (SST/SGT) is UTC+8 year-round (no daylight saving time).</p>
+<p>SGX Derivatives operates extended trading hours — up to approximately 22 hours per day for many products — providing coverage across Asian, European, and North American time zones.</p>
+<p><strong>Equity Index Derivatives (Representative: FTSE China A50, Nikkei 225)</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 40%">
+<col style="width: 11%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Session</th>
+<th>Local Time (SGT)</th>
+<th>UTC</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Pre-Open (T Session)</strong></td>
+<td>08:45 – 09:00</td>
+<td>00:45 – 01:00</td>
+<td>Order entry; no matching. Cancellations blocked in final 2 minutes</td>
+</tr>
+<tr class="even">
+<td><strong>T Session (Day)</strong></td>
+<td>09:00 – 16:30</td>
+<td>01:00 – 08:30</td>
+<td>Continuous trading</td>
+</tr>
+<tr class="odd">
+<td><strong>Break</strong></td>
+<td>16:30 – 17:00</td>
+<td>08:30 – 09:00</td>
+<td>Session break</td>
+</tr>
+<tr class="even">
+<td><strong>Pre-Open (T+1 Session)</strong></td>
+<td>16:55 – 17:00</td>
+<td>08:55 – 09:00</td>
+<td>Order entry for T+1 session</td>
+</tr>
+<tr class="odd">
+<td><strong>T+1 Session (Extended)</strong></td>
+<td>17:00 – 05:15 +1</td>
+<td>09:00 – 21:15</td>
+<td>Extended trading covering European and U.S. hours</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nikkei 225 Specific:</strong> - T Session: 07:30 – 14:55 SGT (23:30 – 06:55 UTC) - T+1 Session: 15:10 – 05:15 +1 SGT (07:10 – 21:15 UTC) - Extended hours cover through the close of London markets</p>
+<p><strong>FX Derivatives (USD/CNH, INR/USD)</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Session</th>
+<th>Local Time (SGT)</th>
+<th>UTC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T Session</td>
+<td>07:25 – 19:55</td>
+<td>23:25 – 11:55</td>
+</tr>
+<tr class="even">
+<td>Break</td>
+<td>19:55 – 20:15</td>
+<td>11:55 – 12:15</td>
+</tr>
+<tr class="odd">
+<td>T+1 Session</td>
+<td>20:15 – 05:15 +1</td>
+<td>12:15 – 21:15</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Commodity Derivatives (Iron Ore)</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Session</th>
+<th>Local Time (SGT)</th>
+<th>UTC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T Session</td>
+<td>07:25 – 19:55</td>
+<td>23:25 – 11:55</td>
+</tr>
+<tr class="even">
+<td>Break</td>
+<td>19:55 – 20:15</td>
+<td>11:55 – 12:15</td>
+</tr>
+<tr class="odd">
+<td>T+1 Session</td>
+<td>20:15 – 04:45 +1</td>
+<td>12:15 – 20:45</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Order Entry Rules:</strong> - Orders accepted starting 15 minutes before the opening of the T session - Orders accepted starting 5 minutes before the opening of the T+1 session - In the final 2 minutes before each session opens: only new order placements are accepted — no price modifications or cancellations allowed</p>
+<p>[Source: SGX website, “Trading”; QuantConnect, “SGX Market Hours”; Trading Technologies, “SGX Overview”; Capital Futures Corp., “SGX Contract Specifications”]</p>
+</section>
+<section id="tick-sizes-selected-products" class="level3">
+<h3 class="anchored" data-anchor-id="tick-sizes-selected-products">2.3 Tick Sizes (Selected Products)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 34%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Tick Size</th>
+<th>Tick Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FTSE China A50 Futures</td>
+<td>5 index points</td>
+<td>USD 5.00</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 Futures (JPY)</td>
+<td>5 index points</td>
+<td>JPY 2,500</td>
+</tr>
+<tr class="odd">
+<td>Nikkei 225 Futures (USD)</td>
+<td>5 index points</td>
+<td>USD 25.00</td>
+</tr>
+<tr class="even">
+<td>MSCI Singapore Futures</td>
+<td>0.05 index points</td>
+<td>SGD 10.00</td>
+</tr>
+<tr class="odd">
+<td>TSI Iron Ore 62% Futures</td>
+<td>USD 0.01/metric tonne</td>
+<td>USD 1.00</td>
+</tr>
+<tr class="even">
+<td>USD/CNH Futures</td>
+<td>0.0001 CNH</td>
+<td>Approx. USD 10.00 per tick [unverified]</td>
+</tr>
+<tr class="odd">
+<td>INR/USD Futures</td>
+<td>0.01 US cents per 100 INR</td>
+<td>USD 2.00</td>
+</tr>
+<tr class="even">
+<td>Bitcoin Perpetual Futures</td>
+<td>USD 5.00</td>
+<td>USD 5.00 [unverified]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lot-sizes-contract-units" class="level3">
+<h3 class="anchored" data-anchor-id="lot-sizes-contract-units">2.4 Lot Sizes / Contract Units</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Contract Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FTSE China A50 Futures</td>
+<td>USD 1 x Index</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 Futures (JPY)</td>
+<td>JPY 500 x Index</td>
+</tr>
+<tr class="odd">
+<td>Nikkei 225 Futures (USD)</td>
+<td>USD 5 x Index</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 Mini Futures</td>
+<td>JPY 100 x Index</td>
+</tr>
+<tr class="odd">
+<td>MSCI Singapore Futures</td>
+<td>SGD 200 x Index</td>
+</tr>
+<tr class="even">
+<td>TSI Iron Ore 62% Futures</td>
+<td>100 metric tonnes</td>
+</tr>
+<tr class="odd">
+<td>INR/USD Futures</td>
+<td>INR 2,000,000</td>
+</tr>
+<tr class="even">
+<td>USD/CNH Futures</td>
+<td>USD 100,000</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Barchart.com, “SGX Contract Specifications”; SGX website, “Derivatives Products”; Capital Futures Corp., “SGX Contract Specifications”]</p>
+</section>
+<section id="market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="market-maker-liquidity-provider-programs">2.5 Market Maker / Liquidity Provider Programs</h3>
+<p>SGX operates designated market maker programs across its derivatives markets:</p>
+<p><strong>Program Structure:</strong> - <strong>Designated Market Makers (DMMs):</strong> Obligated to provide continuous two-sided quotes for assigned products; must meet quoting obligations in terms of spread width, minimum quantity, and time in market - SGX-DT may reduce or waive fees, levies, and charges for qualifying DMMs as incentive - Performance measured against KPIs typically tied to volume, spread maintenance, and market presence</p>
+<p><strong>Key Features:</strong> - Fee discounts and rebates for qualifying market makers - Volume-based incentive tiers — higher volumes unlock greater incentives - Programs cover equity index derivatives, FX futures, commodity derivatives, and options - Market maker participation was critical during market stress events (e.g., Covid-19 pandemic), supporting liquidity in key contracts</p>
+<p><strong>Coverage:</strong> - Equity index futures and options (FTSE China A50, Nikkei 225, MSCI suite) - FX futures (USD/CNH, INR/USD) - Iron ore and commodity derivatives - Options markets across asset classes</p>
+<p>[Source: SGX Rulebook, “Chapter 5 — Designated Market-Maker”; SGX Rulebook, “6.6 Obligations of a Designated Market-Maker”; The Edge Singapore, “Where’s the liquidity?”]</p>
+<hr>
+</section>
+</section>
+<section id="trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="trading-mechanism">3. Trading Mechanism</h2>
+<section id="auction-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="auction-mechanisms">3.1 Auction Mechanisms</h3>
+<p><strong>Opening Auction (Pre-Open / Non-Cancel):</strong> - Pre-Open phase allows order entry, amendment, and cancellation - In the final 2 minutes before session open, only new order placements are accepted (no modifications or cancellations) - At session open, accumulated orders are matched at a single equilibrium price computed by SGX’s matching algorithm - The algorithm maximizes matched volume at the equilibrium price</p>
+<p><strong>Closing / Settlement:</strong> - Daily settlement prices are determined based on trading activity during defined settlement windows - For equity index contracts, final settlement price is typically based on the official closing price of the underlying index on the last trading day</p>
+</section>
+<section id="continuous-trading" class="level3">
+<h3 class="anchored" data-anchor-id="continuous-trading">3.2 Continuous Trading</h3>
+<ul>
+<li>Primary mechanism: continuous electronic matching on the SGX Titan DT platform</li>
+<li>Orders matched in real-time during T and T+1 sessions</li>
+<li>Supports outright orders and spread strategies (calendar spreads, inter-commodity spreads)</li>
+<li>T+1 sessions provide extended hours with continuous matching but typically have thinner order books</li>
+</ul>
+</section>
+<section id="price-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="price-discovery">3.3 Price Discovery</h3>
+<ul>
+<li>Extended trading hours (up to ~22 hours/day for key products) provide continuous price discovery spanning Asian, European, and U.S. market hours</li>
+<li>SGX’s position as the primary offshore listing venue for major Asian indices (Nikkei 225, FTSE China A50) makes it a key price discovery venue outside home market hours</li>
+<li>Nikkei 225 futures on SGX often lead price discovery during non-Japan trading hours</li>
+<li>FTSE China A50 futures serve as the primary price discovery mechanism for China A-share exposure when mainland markets are closed</li>
+</ul>
+</section>
+<section id="order-priority-rules-matching-algorithms" class="level3">
+<h3 class="anchored" data-anchor-id="order-priority-rules-matching-algorithms">3.4 Order Priority Rules / Matching Algorithms</h3>
+<p>All orders on SGX Derivatives are matched using <strong>Price-Time Priority</strong> (FIFO) as the default algorithm:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 35%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Algorithm</th>
+<th>Description</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Price-Time Priority (FIFO)</strong></td>
+<td>Strict price priority, then time priority at each price level; earliest order at best price is filled first</td>
+<td>Default for most futures products</td>
+</tr>
+<tr class="even">
+<td><strong>Price Point Maker (PPM)</strong></td>
+<td>Alternative algorithm giving priority to resting passive orders</td>
+<td>Selected products [unverified]</td>
+</tr>
+<tr class="odd">
+<td><strong>Pro-Rata</strong></td>
+<td>Allocation proportional to order size at each price level</td>
+<td>Selected options markets [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>Market Maker (MM)</strong></td>
+<td>Market maker receives priority allocation</td>
+<td>Applicable where DMM program is in effect</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Rules:</strong> - Price priority is absolute — better-priced orders always fill first - Within the same price, time priority determines allocation (FIFO) - During opening/closing routines, orders are matched at a single equilibrium price - Self-Trade Prevention (STP) functionality available to prevent matching of orders from the same firm</p>
+<p>[Source: SGX Rulebook, “Practice Note 8.2.1 — Application of Market Phases and Algorithm”; SGX Rulebook, “Regulatory Notice 8.2.1 — Trading Hours, Market Phases, Application of Market Phases and Principles and Rules for Trade Matching”; Trading Technologies, “SGX Overview”]</p>
+<hr>
+</section>
+</section>
+<section id="order-types" class="level2">
+<h2 class="anchored" data-anchor-id="order-types">4. Order Types</h2>
+<section id="standard-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="standard-order-types">4.1 Standard Order Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Order Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Limit</strong></td>
+<td>Buy/sell at a specified price or better; unfilled quantity rests on the book</td>
+</tr>
+<tr class="even">
+<td><strong>Market</strong></td>
+<td>Executes immediately at the best available price; any unfilled portion is cancelled or rests depending on configuration</td>
+</tr>
+<tr class="odd">
+<td><strong>Market to Limit</strong></td>
+<td>Executes at the best available price; unfilled quantity converts to a limit order at the last execution price</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-order-types">4.2 Advanced Order Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Order Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Stop Limit</strong></td>
+<td>Triggered when the stop price is reached; once triggered, becomes a limit order at the specified limit price</td>
+</tr>
+<tr class="even">
+<td><strong>Stop Market</strong></td>
+<td>Triggered when the stop price is reached; once triggered, becomes a market order</td>
+</tr>
+<tr class="odd">
+<td><strong>Stop Market to Limit</strong></td>
+<td>Triggered when the stop price is reached; once triggered, becomes a market-to-limit order</td>
+</tr>
+<tr class="even">
+<td><strong>Spread Orders</strong></td>
+<td>Calendar spreads and inter-commodity spread strategies</td>
+</tr>
+<tr class="odd">
+<td><strong>Mass Quote</strong></td>
+<td>Allows market makers to submit multiple two-sided quotes in a single message via OUCH protocol</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="time-in-force-tif-conditions" class="level3">
+<h3 class="anchored" data-anchor-id="time-in-force-tif-conditions">4.3 Time-in-Force (TIF) Conditions</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TIF</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Day</strong></td>
+<td>Valid for the current trading session only; cancelled at session end</td>
+</tr>
+<tr class="even">
+<td><strong>Good Till Cancel (GTC)</strong></td>
+<td>Remains active until filled or explicitly cancelled</td>
+</tr>
+<tr class="odd">
+<td><strong>Good Till Date (GTD)</strong></td>
+<td>Remains active until a specified date</td>
+</tr>
+<tr class="even">
+<td><strong>Fill and Kill (FAK)</strong></td>
+<td>Executes immediately for any available quantity; unfilled portion is cancelled</td>
+</tr>
+<tr class="odd">
+<td><strong>Fill or Kill (FOK)</strong></td>
+<td>Must be filled entirely and immediately, or the entire order is cancelled</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="order-modification-cancellation" class="level3">
+<h3 class="anchored" data-anchor-id="order-modification-cancellation">4.4 Order Modification &amp; Cancellation</h3>
+<ul>
+<li>Orders can be modified (price, quantity) or cancelled at any time during trading sessions via the OUCH protocol</li>
+<li><strong>Replace Order:</strong> Modifies an existing order (price/quantity change) while maintaining or updating time priority</li>
+<li><strong>Cancel Order:</strong> Cancels a specific order by order token</li>
+<li><strong>Cancel by Order ID:</strong> Alternative cancellation method using the exchange-assigned order ID</li>
+<li><strong>Self-Trade Prevention (STP):</strong> Enhanced in 2024/2025 to allow configurable prevention of self-matching within the same firm</li>
+</ul>
+<p>[Source: Trading Technologies, “SGX Supported Order Types”; OnixS, “SGX Titan OUCH Trading Handler — EnterOrder”; SGX Titan OUCH Protocol Specifications; Trading Technologies, “SGX Self-Trade Prevention Enhancement”]</p>
+<hr>
+</section>
+</section>
+<section id="trading-system-technology-sgx-titan" class="level2">
+<h2 class="anchored" data-anchor-id="trading-system-technology-sgx-titan">5. Trading System Technology — SGX Titan</h2>
+<section id="system-overview" class="level3">
+<h3 class="anchored" data-anchor-id="system-overview">5.1 System Overview</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Platform Name</td>
+<td>SGX Titan DT (Derivatives Trading) / SGX Titan DC (Derivatives Clearing)</td>
+</tr>
+<tr class="even">
+<td>Technology Vendor</td>
+<td>Nasdaq (Genium INET version 4)</td>
+</tr>
+<tr class="odd">
+<td>First Announced</td>
+<td>December 2014</td>
+</tr>
+<tr class="even">
+<td>Go-Live</td>
+<td>2016–2017 (phased migration from legacy platform)</td>
+</tr>
+<tr class="odd">
+<td>Architecture</td>
+<td>High-performance, low-latency matching engine with product-level partitioning</td>
+</tr>
+<tr class="even">
+<td>Primary Data Center</td>
+<td>Co-location facility in Singapore</td>
+</tr>
+<tr class="odd">
+<td>Order Entry Protocol</td>
+<td>OUCH (Nasdaq native binary protocol for asynchronous order entry)</td>
+</tr>
+<tr class="even">
+<td>Market Data Protocol</td>
+<td>ITCH (Nasdaq native binary multicast protocol for market data)</td>
+</tr>
+<tr class="odd">
+<td>Recovery Protocol</td>
+<td>GLIMPSE (order book snapshot recovery for ITCH)</td>
+</tr>
+<tr class="even">
+<td>Average Latency</td>
+<td>Sub-90 microseconds (benchmark average); sub-200 microseconds round-trip in production</td>
+</tr>
+<tr class="odd">
+<td>Throughput</td>
+<td>&gt;1 million messages per second</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="architecture" class="level3">
+<h3 class="anchored" data-anchor-id="architecture">5.2 Architecture</h3>
+<ul>
+<li><strong>Matching Engine:</strong> Product-partitioned matching engines running on dedicated hardware optimized for deterministic, low-latency processing</li>
+<li><strong>Order Entry Gateway:</strong> OUCH protocol servers providing direct, asynchronous order entry with minimal overhead</li>
+<li><strong>Market Data Dissemination:</strong> ITCH multicast feed providing real-time, full-depth order book data to all connected participants</li>
+<li><strong>Clearing Engine (Titan DC):</strong> Integrated clearing platform processing trades in near-real-time for risk management and settlement</li>
+<li><strong>Deterministic Processing:</strong> Designed for consistent, predictable latency with minimal jitter</li>
+</ul>
+</section>
+<section id="latency" class="level3">
+<h3 class="anchored" data-anchor-id="latency">5.3 Latency</h3>
+<ul>
+<li><strong>Benchmark Latency:</strong> Sub-90 microseconds average (gate-to-gate) — among the fastest derivatives trading platforms globally at time of launch</li>
+<li><strong>Production Round-Trip:</strong> Sub-200 microseconds for co-located participants</li>
+<li><strong>Order Routing Latency:</strong> Approximately 100–150 microseconds via OUCH protocol</li>
+<li><strong>Compared to Predecessor:</strong> Significant improvement over previous SGX derivatives platform; Nasdaq marketing described Titan as “the world’s fastest trading platform” at announcement</li>
+</ul>
+</section>
+<section id="platform-history-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="platform-history-evolution">5.4 Platform History &amp; Evolution</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1984</td>
+<td>SIMEX trading floor opens — open outcry for financial futures</td>
+</tr>
+<tr class="even">
+<td>1999</td>
+<td>SGX formed; electronic trading introduced alongside open outcry</td>
+</tr>
+<tr class="odd">
+<td>2003</td>
+<td>Nasdaq technology partnership begins for SGX trading systems</td>
+</tr>
+<tr class="even">
+<td>2014 (Dec)</td>
+<td>SGX announces next-generation Titan platform using Nasdaq Genium INET v4</td>
+</tr>
+<tr class="odd">
+<td>2015</td>
+<td>Development and testing phase; originally targeted for late 2015 go-live</td>
+</tr>
+<tr class="even">
+<td>2016</td>
+<td>Vendor certification for Titan connectivity (OUCH/ITCH) completed May 2016; go-live postponed to end of 2016</td>
+</tr>
+<tr class="odd">
+<td>2017</td>
+<td>Full production migration to Titan DT/DC completed; legacy platform decommissioned</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>Securities trading engine upgraded to Nasdaq multi-matching engine (SGX-ST, 3 June 2019)</td>
+</tr>
+<tr class="odd">
+<td>2025</td>
+<td>Self-Trade Prevention enhancement deployed on Titan DT</td>
+</tr>
+<tr class="even">
+<td>2027 (planned)</td>
+<td>New securities trading engine “Iris-ST” planned; derivatives platform evolution TBD</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technology-stack" class="level3">
+<h3 class="anchored" data-anchor-id="technology-stack">5.5 Technology Stack</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Order Entry</strong></td>
+<td>OUCH — Nasdaq native binary protocol for low-latency, asynchronous order submission; supports Enter Order, Replace Order, Cancel Order, Cancel by Order ID messages</td>
+</tr>
+<tr class="even">
+<td><strong>Market Data</strong></td>
+<td>ITCH — Nasdaq native binary multicast protocol; provides full order-by-order depth-of-book data; supports incremental updates and order book reconstruction</td>
+</tr>
+<tr class="odd">
+<td><strong>Order Book Recovery</strong></td>
+<td>GLIMPSE — snapshot recovery protocol for ITCH data; allows participants to rebuild full order book state after connection loss</td>
+</tr>
+<tr class="even">
+<td><strong>ITCH Rewinder</strong></td>
+<td>Replay of historical ITCH messages for recovery of lost packets</td>
+</tr>
+<tr class="odd">
+<td><strong>FIX Gateway</strong></td>
+<td>FIX protocol access available for participants preferring standard FIX connectivity [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>Clearing Integration</strong></td>
+<td>Titan DC provides integrated clearing with real-time position and risk management</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="disaster-recovery-business-continuity" class="level3">
+<h3 class="anchored" data-anchor-id="disaster-recovery-business-continuity">5.6 Disaster Recovery &amp; Business Continuity</h3>
+<ul>
+<li><strong>Primary Data Center:</strong> Co-location facility in Singapore</li>
+<li><strong>DR Site:</strong> Geographically separate backup site in Singapore [unverified]</li>
+<li><strong>Recovery Model:</strong> Real-time data replication between primary and backup environments</li>
+<li><strong>Operational Support:</strong> SGX operates follow-the-sun support model given extended trading hours (up to ~22 hours/day)</li>
+<li><strong>System Resilience:</strong> Nasdaq Genium INET platform designed with built-in redundancy and failover capabilities</li>
+<li><strong>Regulatory Requirement:</strong> MAS requires all approved exchange operators to maintain robust BCP and DR capabilities under its Technology Risk Management Guidelines</li>
+</ul>
+<p>[Source: Nasdaq Inc., “NASDAQ OMX to Deliver World’s Fastest Trading Platform to Singapore Exchange”, December 2014; OnixS, “SGX Titan DT ITCH and OUCH API SDKs”; WatersTechnology, “SGX Plans Titan for Derivatives”; SGX Titan ITCH &amp; GLIMPSE Protocol Specifications, Release 1.4; Markets Media, “Object Trading Conforms to Upgraded SGX Titan Platform”]</p>
+<hr>
+</section>
+</section>
+<section id="market-data" class="level2">
+<h2 class="anchored" data-anchor-id="market-data">6. Market Data</h2>
+<section id="market-data-platform-itch" class="level3">
+<h3 class="anchored" data-anchor-id="market-data-platform-itch">6.1 Market Data Platform — ITCH</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Protocol</td>
+<td>ITCH (Nasdaq native binary protocol)</td>
+</tr>
+<tr class="even">
+<td>Encoding</td>
+<td>Fixed-length binary messages for ultra-low-latency processing</td>
+</tr>
+<tr class="odd">
+<td>Transport</td>
+<td>UDP multicast (primary dissemination)</td>
+</tr>
+<tr class="even">
+<td>Recovery</td>
+<td>GLIMPSE protocol for order book snapshots; ITCH Rewinder for packet replay</td>
+</tr>
+<tr class="odd">
+<td>Depth</td>
+<td>Full order-by-order depth (Market by Order)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="feed-types-data-levels" class="level3">
+<h3 class="anchored" data-anchor-id="feed-types-data-levels">6.2 Feed Types / Data Levels</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 37%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feed Type</th>
+<th>Description</th>
+<th>Transport</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ITCH Real-Time</strong></td>
+<td>Full depth, order-by-order market data including every order addition, modification, execution, and cancellation</td>
+<td>UDP multicast</td>
+</tr>
+<tr class="even">
+<td><strong>GLIMPSE</strong></td>
+<td>Point-in-time snapshot of the full order book; used for recovery and initialization</td>
+<td>TCP (request/response)</td>
+</tr>
+<tr class="odd">
+<td><strong>ITCH Rewinder</strong></td>
+<td>Replay of historical ITCH messages from a specified sequence number; used for gap recovery</td>
+<td>TCP</td>
+</tr>
+<tr class="even">
+<td><strong>End-of-Day Files</strong></td>
+<td>Settlement prices, volumes, open interest published daily</td>
+<td>File-based download</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="data-distribution">6.3 Data Distribution</h3>
+<ul>
+<li><strong>Direct connectivity:</strong> Co-located participants receive ITCH multicast data within the SGX data center at the lowest possible latency</li>
+<li><strong>Managed Network:</strong> Participants not co-located can access via SGX-approved network service providers or managed network services</li>
+<li><strong>Redistributors:</strong> Major data vendors (Bloomberg, Refinitiv, ICE Data Services, etc.) redistribute SGX market data under license</li>
+<li><strong>SGX Data Services:</strong> SGX provides historical data, analytics, and index data through its data products division</li>
+<li><strong>Delayed Data:</strong> Available through various financial portals and SGX’s own website</li>
+</ul>
+</section>
+<section id="market-data-licensing" class="level3">
+<h3 class="anchored" data-anchor-id="market-data-licensing">6.4 Market Data Licensing</h3>
+<ul>
+<li>SGX charges separate fees for real-time market data, delayed data redistribution, and historical data</li>
+<li>Professional and non-professional fee tiers apply</li>
+<li>Specific fee schedules available from SGX upon request or through the SGX website</li>
+</ul>
+<p>[Source: SGX Titan ITCH &amp; GLIMPSE Protocol Specifications, Release 1.4; OnixS, “SGX Titan DT ITCH and OUCH API SDKs”; SGX website, “Data &amp; Connectivity”]</p>
+<hr>
+</section>
+</section>
+<section id="connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="connectivity-access">7. Connectivity &amp; Access</h2>
+<section id="membership-access-types" class="level3">
+<h3 class="anchored" data-anchor-id="membership-access-types">7.1 Membership / Access Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 28%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Membership Type</th>
+<th>Description</th>
+<th>Key Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Derivatives Trading Member</strong></td>
+<td>Direct electronic access to SGX-DT for trading derivatives</td>
+<td>MAS Capital Markets Services (CMS) license; meet SGX fit and proper criteria; minimum financial requirements</td>
+</tr>
+<tr class="even">
+<td><strong>Derivatives Clearing Member — General</strong></td>
+<td>Can clear own trades and trades of third parties (non-clearing members and customers)</td>
+<td>Higher capital requirements; participation in SGX-DC clearing fund; MAS approval</td>
+</tr>
+<tr class="odd">
+<td><strong>Derivatives Clearing Member — Bank</strong></td>
+<td>Bank-specific clearing membership; can clear own and third-party trades; access to Mutual Offset Systems</td>
+<td>Must be a licensed bank; additional financial requirements</td>
+</tr>
+<tr class="even">
+<td><strong>Non-Clearing Member</strong></td>
+<td>Trades through a General Clearing Member or Bank Clearing Member</td>
+<td>Must establish clearing arrangement with a clearing member</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Membership Statistics:</strong> - SGX derivatives clearing is supported by major global banks and brokers - Eight prominent clearing members supported the November 2025 Bitcoin/Ethereum perpetual futures launch</p>
+<p>[Source: SGX website, “Memberships”; SGX Rulebook, “SGX-DC Clearing Rules”; SGX RegCo, “Memberships”]</p>
+</section>
+<section id="connection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="connection-methods">7.2 Connection Methods</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Connection Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Co-Location</strong></td>
+<td>Direct physical proximity to SGX Titan matching engines within the SGX data center; lowest latency option</td>
+</tr>
+<tr class="even">
+<td><strong>Managed Network Service</strong></td>
+<td>Connectivity via SGX-approved network service providers</td>
+</tr>
+<tr class="odd">
+<td><strong>Offshore Hubs</strong></td>
+<td>Access points in key financial centers (London, Chicago, Tokyo) for international participants [unverified]</td>
+</tr>
+<tr class="even">
+<td><strong>Approved Network Service Providers</strong></td>
+<td>Third-party network providers certified by SGX for derivatives market access</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> SGX derivatives connectivity is effectively <strong>co-location only</strong> for participants requiring the lowest latency. All market access routes ultimately connect to the Titan DT platform within the SGX data center.</p>
+</section>
+<section id="co-location-services" class="level3">
+<h3 class="anchored" data-anchor-id="co-location-services">7.3 Co-Location Services</h3>
+<ul>
+<li><strong>Location:</strong> SGX data center in Singapore</li>
+<li><strong>Facility:</strong> Purpose-built co-location environment with proximity to Titan DT matching engines</li>
+<li><strong>Benefits:</strong> Unparalleled speed and efficiency for direct market access; minimized network latency</li>
+<li><strong>Cabinet Options:</strong> Standard rack space with power and cooling; specific configurations available on request</li>
+<li><strong>Cross-Connects:</strong> Direct fiber connections within the facility to SGX infrastructure</li>
+</ul>
+</section>
+<section id="api-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="api-protocols">7.4 API Protocols</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 25%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>API / Protocol</th>
+<th>Purpose</th>
+<th>Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Titan OUCH</strong></td>
+<td>Order entry, modification, cancellation, execution reports</td>
+<td>Inbound (client to exchange) and outbound (exchange to client)</td>
+</tr>
+<tr class="even">
+<td><strong>Titan ITCH</strong></td>
+<td>Real-time market data dissemination</td>
+<td>Outbound (exchange to client) — UDP multicast</td>
+</tr>
+<tr class="odd">
+<td><strong>GLIMPSE</strong></td>
+<td>Order book snapshot recovery</td>
+<td>Request/response — TCP</td>
+</tr>
+<tr class="even">
+<td><strong>FIX</strong></td>
+<td>Alternative order entry for participants not using native OUCH [unverified]</td>
+<td>Bidirectional — TCP</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="certification-conformance-testing" class="level3">
+<h3 class="anchored" data-anchor-id="certification-conformance-testing">7.5 Certification (Conformance Testing)</h3>
+<ul>
+<li><strong>Mandatory:</strong> All client systems connecting via Titan OUCH and ITCH must complete SGX conformance testing before production access</li>
+<li><strong>Test Scope:</strong> Covers OUCH order entry (enter, replace, cancel, cancel by order ID), ITCH market data processing, and GLIMPSE recovery</li>
+<li><strong>Environment:</strong> SGX provides a dedicated conformance test environment</li>
+<li><strong>Recertification:</strong> Required for significant system changes or protocol version upgrades</li>
+<li><strong>ISV Support:</strong> Multiple independent software vendors (OnixS, Trading Technologies, Object Trading, etc.) offer pre-certified SDKs and trading handlers for SGX Titan</li>
+</ul>
+<p>[Source: SGX website, “Market Access”; SGX website, “Co-Location”; SGX Titan ITCH and OUCH Conformance Test Scope, Version 1.0; OnixS, “SGX Titan DT ITCH and OUCH API SDKs”]</p>
+<hr>
+</section>
+</section>
+<section id="risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="risk-controls-circuit-breakers">8. Risk Controls &amp; Circuit Breakers</h2>
+<section id="circuit-breaker-mechanism" class="level3">
+<h3 class="anchored" data-anchor-id="circuit-breaker-mechanism">8.1 Circuit Breaker Mechanism</h3>
+<p>SGX’s derivatives circuit breakers operate as dynamic price bands:</p>
+<ul>
+<li><strong>Price Band Thresholds:</strong> Upper and lower thresholds set as a prescribed percentage from a reference price</li>
+<li><strong>Trigger:</strong> When an incoming order seeks to match against a resting order at a price outside the threshold, a <strong>Cooling-Off Period</strong> is activated and the incoming order is rejected</li>
+<li><strong>Cooling-Off Period:</strong> A brief pause (typically 5 minutes) allowing the market to analyze conditions before resuming; designed to moderate the pace of large price movements without halting price discovery entirely</li>
+<li><strong>Reference Price Calculation:</strong>
+<ul>
+<li>At the start of each Trading Phase: derived from the prior session’s settlement or last traded price</li>
+<li>After the first 5 minutes: rolling reference price based on the last traded price as of 5 minutes prior to each potential trade</li>
+<li>If no trade in the preceding 5 minutes, the reference price at the start of the Trading Phase applies</li>
+</ul></li>
+</ul>
+<p><strong>Purpose:</strong> The circuit breaker guards against disorderly situations from rapid, unchecked market movements. It is not intended to halt price movement but rather to allow market participants and regulators a pause to assess conditions. It also helps avert contagion risk to other markets.</p>
+</section>
+<section id="price-limits-selected-products" class="level3">
+<h3 class="anchored" data-anchor-id="price-limits-selected-products">8.2 Price Limits (Selected Products)</h3>
+<p>Specific price limit thresholds vary by product and are published by SGX in regulatory notices. Representative thresholds include:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 46%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product Category</th>
+<th>Typical Price Limit</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equity Index Futures</td>
+<td>+/- 10% to 15% from reference price</td>
+<td>Varies by specific contract [unverified]</td>
+</tr>
+<tr class="even">
+<td>Commodity Futures</td>
+<td>+/- 15% to 20% from reference price</td>
+<td>Iron ore, rubber, etc. [unverified]</td>
+</tr>
+<tr class="odd">
+<td>FX Futures</td>
+<td>Product-specific bands</td>
+<td>Wider bands for volatile EM currencies [unverified]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pre-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="pre-trade-risk-controls">8.3 Pre-Trade Risk Controls</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Control</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Price Banding</strong></td>
+<td>Rejects orders outside an acceptable dynamic price range around the current market price</td>
+</tr>
+<tr class="even">
+<td><strong>Maximum Order Size</strong></td>
+<td>Limits on maximum quantity per order, configurable by clearing member</td>
+</tr>
+<tr class="odd">
+<td><strong>Credit Controls</strong></td>
+<td>Real-time credit limit monitoring by clearing members for each trading participant</td>
+</tr>
+<tr class="even">
+<td><strong>Self-Trade Prevention (STP)</strong></td>
+<td>Configurable to prevent matching of orders from the same firm; enhanced in 2024/2025</td>
+</tr>
+<tr class="odd">
+<td><strong>Cancel on Disconnect</strong></td>
+<td>Optional feature to cancel all working orders upon connection loss</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sgx-dc-clearing-financial-safeguards-default-waterfall" class="level3">
+<h3 class="anchored" data-anchor-id="sgx-dc-clearing-financial-safeguards-default-waterfall">8.4 SGX-DC Clearing Financial Safeguards (Default Waterfall)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Defaulted Member’s Resources</td>
+<td>Margin/collateral + clearing fund contribution of the defaulted member</td>
+</tr>
+<tr class="even">
+<td>2. SGX-DC’s Contribution (“Skin in the Game”)</td>
+<td>SGD 200 million (increased from SGD 150 million; represents ~25% of clearing fund — higher than all U.S. and European CCPs)</td>
+</tr>
+<tr class="odd">
+<td>3. Clearing Fund (Non-Defaulting Members)</td>
+<td>Mutualized fund contributions from all non-defaulting clearing members, sized based on stress testing</td>
+</tr>
+<tr class="even">
+<td>4. Assessments</td>
+<td>Additional capped financial contributions from clearing members</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Risk Management Features:</strong> - Daily mark-to-market settlement through approved Settlement Banks - Intraday margin calls to cover shortfalls in margin requirements and potential mark-to-market losses - Clearing members must meet margin calls via Settlement Banks following intraday cycles - Clearing fund contributions scaled to the risks each member brings, based on stress losses over specified periods - SGX-DC is registered as a Derivatives Clearing Organization (DCO) with the U.S. CFTC, enabling access by U.S. market participants</p>
+<p>[Source: SGX Rulebook, “Practice Note 8.10A — Circuit Breaker”; SGX Rulebook, “Regulatory Notice 8.14.1 — Circuit Breaker”; WFE, “SGX Takes a Deep Look at Circuit Breakers”; SGX website, “Risk Management”; Hong Kong Lawyer, “Singapore Exchange Eyes Increase in Skin in the Game for OTC Derivatives Clearing”; CFTC, “SGX-DC Regulatory Compliance Chart”]</p>
+<hr>
+</section>
+</section>
+<section id="regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="regulatory-framework">9. Regulatory Framework</h2>
+<section id="primary-regulator" class="level3">
+<h3 class="anchored" data-anchor-id="primary-regulator">9.1 Primary Regulator</h3>
+<ul>
+<li><strong>Monetary Authority of Singapore (MAS):</strong> Central bank and integrated financial regulator; supervises SGX as an Approved Exchange (AE) and SGX-DC as an Approved Clearing House (ACH) under the Securities and Futures Act 2001</li>
+<li><strong>SGX RegCo:</strong> Established in 2016 as an independent regulatory subsidiary of SGX Group; performs front-line regulatory functions including market surveillance, member regulation, listing regulation, and enforcement</li>
+</ul>
+</section>
+<section id="key-legislation-and-regulations" class="level3">
+<h3 class="anchored" data-anchor-id="key-legislation-and-regulations">9.2 Key Legislation and Regulations</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Regulation</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Securities and Futures Act 2001 (SFA)</strong></td>
+<td>Primary legislation governing securities and derivatives markets in Singapore; covers licensing, trading, clearing, market conduct, and market abuse</td>
+</tr>
+<tr class="even">
+<td><strong>Securities and Futures (Trading of Derivatives Contracts) Regulations 2019</strong></td>
+<td>Mandatory platform trading requirements for certain derivatives contracts</td>
+</tr>
+<tr class="odd">
+<td><strong>Securities and Futures (Reporting of Derivatives Contracts) Regulations 2013</strong></td>
+<td>OTC derivatives reporting requirements to licensed trade repositories</td>
+</tr>
+<tr class="even">
+<td><strong>MAS Technology Risk Management Guidelines</strong></td>
+<td>Requirements for technology governance, IT security, availability, and disaster recovery for financial institutions including exchanges</td>
+</tr>
+<tr class="odd">
+<td><strong>SGX-DT Futures Trading Rules</strong></td>
+<td>Exchange-specific rules governing trading conduct, order types, market phases, and member obligations</td>
+</tr>
+<tr class="even">
+<td><strong>SGX-DC Clearing Rules</strong></td>
+<td>Rules governing clearing membership, margin, settlement, default management, and the clearing fund</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-surveillance" class="level3">
+<h3 class="anchored" data-anchor-id="market-surveillance">9.3 Market Surveillance</h3>
+<ul>
+<li><strong>SGX RegCo</strong> conducts real-time market surveillance for manipulation, spoofing, wash trading, insider trading, and other forms of market abuse</li>
+<li>Surveillance systems monitor trading patterns across both securities and derivatives markets</li>
+<li>SGX RegCo has powers to investigate, discipline, and sanction members and listed companies</li>
+<li>Cross-market surveillance capabilities spanning equity, derivatives, and OTC markets</li>
+</ul>
+</section>
+<section id="reporting-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="reporting-requirements">9.4 Reporting Requirements</h3>
+<ul>
+<li><strong>Large Position Reporting:</strong> Members must have automated processes to monitor positions at the firm level; must report if at risk of breaching prudential limits on exposures to a single customer and a single contract</li>
+<li><strong>OTC Derivatives Reporting:</strong> Under the 2013 Regulations, counterparties must report OTC derivative contracts to a licensed trade repository (exchange-traded derivatives subject to different treatment)</li>
+<li><strong>Clearing Member Reporting:</strong> Daily reporting of margin, collateral, and financial position to SGX-DC</li>
+<li><strong>Transaction Reporting:</strong> Trade details reported to MAS as required</li>
+</ul>
+</section>
+<section id="cross-border-recognition" class="level3">
+<h3 class="anchored" data-anchor-id="cross-border-recognition">9.5 Cross-Border Recognition</h3>
+<ul>
+<li><strong>U.S. CFTC:</strong> SGX-DC is registered as a Derivatives Clearing Organization (DCO), enabling U.S. FCMs and customers to clear on SGX-DC; SGX-DT has been granted “no-action” relief for direct access by certain U.S. persons</li>
+<li><strong>EU/EMIR:</strong> SGX-DC recognized as a third-country CCP under EMIR for EU clearing member access</li>
+<li><strong>GIFT Connect (India):</strong> Regulatory framework established between MAS and SEBI/IFSCA for the NSE IX-SGX GIFT Connect</li>
+<li><strong>Mutual Offset System (MOS):</strong> Historically maintained with CME Group for Nikkei 225 and Eurodollar futures — enables positions opened on one exchange to be transferred to the other for close-out</li>
+<li><strong>CPMI-IOSCO:</strong> SGX-DC publishes disclosure documents in accordance with Principles for Financial Market Infrastructures (PFMI)</li>
+<li><strong>Multiple bilateral MOUs</strong> with regulators in Japan (JFSA), Hong Kong (SFC), Australia (ASIC), and others</li>
+</ul>
+<p>[Source: MAS website, “Securities and Futures Act 2001”; SGX Rulebook, “Futures Trading Rules”; SGX Rulebook, “SGX-DC Clearing Rules”; CFTC, “Industry Filings: Derivatives Clearing Organizations”; SGX website, “Memberships”]</p>
+<hr>
+</section>
+</section>
+<section id="fees-revenue-model" class="level2">
+<h2 class="anchored" data-anchor-id="fees-revenue-model">10. Fees &amp; Revenue Model</h2>
+<section id="trading-clearing-fees" class="level3">
+<h3 class="anchored" data-anchor-id="trading-clearing-fees">10.1 Trading &amp; Clearing Fees</h3>
+<p>SGX charges trading fees (to SGX-DT) and clearing fees (to SGX-DC) on a per-contract basis. Fees vary by product, membership type, and volume tier. Representative rates:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 62%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product Category</th>
+<th>Approximate Fee per Contract (per side)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equity Index Futures (e.g., FTSE China A50)</td>
+<td>USD 0.50 – 1.50</td>
+<td>Member rates substantially lower; volume discounts apply</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 Futures</td>
+<td>JPY 40 – 100</td>
+<td>Varies by JPY vs USD denomination</td>
+</tr>
+<tr class="odd">
+<td>FX Futures</td>
+<td>USD 0.30 – 1.00</td>
+<td>High volume drives lower effective rate</td>
+</tr>
+<tr class="even">
+<td>Iron Ore Futures</td>
+<td>USD 0.50 – 1.50</td>
+<td>Volume incentive programs available</td>
+</tr>
+<tr class="odd">
+<td>Options on Futures</td>
+<td>USD 0.50 – 2.00</td>
+<td>Premium-based clearing fee may also apply (0.05% of premium, max $200)</td>
+</tr>
+<tr class="even">
+<td>NLT (Block) Trades</td>
+<td>Separate fee schedule</td>
+<td>Generally higher than electronic exchange fees</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Exact fees are subject to change. SGX publishes detailed fee schedules on its website and through clearing member communications. The fees shown above are approximate ranges based on publicly available information from brokers.</em> [unverified — specific rates not confirmed from official SGX fee schedule]</p>
+<p><strong>Fee Tiers:</strong> - <strong>Member rates:</strong> Substantially reduced compared to non-member rates - <strong>Volume incentive programs:</strong> Tiered discounts for high-volume participants - <strong>Market maker discounts:</strong> Fee reductions for designated market makers meeting quoting obligations - <strong>Clearing fees:</strong> Charged separately from trading fees; payable to SGX-DC</p>
+</section>
+<section id="market-data-fees" class="level3">
+<h3 class="anchored" data-anchor-id="market-data-fees">10.2 Market Data Fees</h3>
+<ul>
+<li>Professional and non-professional fee tiers for real-time ITCH market data</li>
+<li>Historical data available through SGX Data Services</li>
+<li>Redistribution licenses for data vendors</li>
+<li>Index licensing fees (FTSE, MSCI, Nikkei) embedded in product economics</li>
+</ul>
+</section>
+<section id="connectivity-co-location-fees" class="level3">
+<h3 class="anchored" data-anchor-id="connectivity-co-location-fees">10.3 Connectivity &amp; Co-Location Fees</h3>
+<ul>
+<li>Co-location rack space and power charges</li>
+<li>Cross-connect fees within the SGX data center</li>
+<li>Network connectivity fees for managed network service access</li>
+<li>Specific fee schedules available from SGX upon request</li>
+</ul>
+</section>
+<section id="revenue-breakdown-fy2025" class="level3">
+<h3 class="anchored" data-anchor-id="revenue-breakdown-fy2025">10.4 Revenue Breakdown (FY2025)</h3>
+<p>SGX Group’s record total net revenue of SGD 1.30 billion breaks down as follows across derivatives-related segments:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Segment</th>
+<th>Revenue (SGD)</th>
+<th>YoY Growth</th>
+<th>% of Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equities — Derivatives</td>
+<td>345.9 million</td>
+<td>+13.8%</td>
+<td>26.6%</td>
+</tr>
+<tr class="even">
+<td>Currencies &amp; Commodities</td>
+<td>312.5 million</td>
+<td>+8.6%</td>
+<td>24.0%</td>
+</tr>
+<tr class="odd">
+<td>Platform &amp; Others</td>
+<td>238.0 million</td>
+<td>+3.0%</td>
+<td>18.3%</td>
+</tr>
+<tr class="even">
+<td>Equities — Cash</td>
+<td>~400+ million</td>
+<td>+27.5% (SDAV)</td>
+<td>~31%</td>
+</tr>
+</tbody>
+</table>
+<p>Derivatives-related revenue (equities derivatives + currencies &amp; commodities) totalled approximately SGD 658 million, representing roughly 50.6% of SGX Group’s total net revenue — underscoring SGX’s identity as a derivatives-led exchange group.</p>
+<p><strong>OTC FX ADV:</strong> Record USD 143 billion (+28% YoY in FY2025)</p>
+<p>[Source: SGX FY2025 Annual Report; SGX FY2025 Results Presentation; Yahoo Finance, “SGX posts record revenue, net profit in FY2025”; Interactive Brokers, “SGX Exchange and Regulatory Fees”]</p>
+<hr>
+</section>
+</section>
+<section id="recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="recent-developments">11. Recent Developments</h2>
+<section id="system-upgrades-technology" class="level3">
+<h3 class="anchored" data-anchor-id="system-upgrades-technology">11.1 System Upgrades &amp; Technology</h3>
+<ul>
+<li><strong>Titan DT Enhancements:</strong> Self-Trade Prevention (STP) enhancement deployed on Titan DT (2024/2025) — allows more granular configuration of self-match prevention</li>
+<li><strong>Iris-ST (Planned 2027):</strong> New securities trading engine planned for the second half of 2027; derivatives platform evolution likely to follow</li>
+<li><strong>SGX-Nasdaq Global Listing Board:</strong> Joint initiative announced in 2025 for companies with market cap above SGD 2 billion; dual-listing bridge between SGX and Nasdaq</li>
+</ul>
+</section>
+<section id="new-products-market-developments" class="level3">
+<h3 class="anchored" data-anchor-id="new-products-market-developments">11.2 New Products &amp; Market Developments</h3>
+<ul>
+<li><strong>Crypto Perpetual Futures (November 2025):</strong> Launched Bitcoin and Ethereum perpetual futures — continuous, no-expiry structure with institutional-grade clearing and margining; supported by eight clearing members; debuted with ~2,000 lots (~USD 35 million notional) on day one; tied to iEdge-CoinDesk Cryptocurrency Indices</li>
+<li><strong>Asia Pacific Government Bond Futures (April 2026):</strong> First exchange-listed regional government bond futures covering India, Indonesia, Malaysia, Thailand, and the Philippines; USD-denominated; designed for sovereign rate risk hedging; trading commences 20 April 2026</li>
+<li><strong>Record Derivatives Volumes (2025):</strong> 329 million contracts — record year across equities, FX, and commodities
+<ul>
+<li>FTSE China A50 futures: ~84 million lots in first 9 months (+20%)</li>
+<li>FX futures: 73.6 million contracts (+49.7% YoY); February 2025 alone saw 6.1 million contracts — all-time monthly high</li>
+<li>Commodity derivatives: 65.3 million contracts (+6.2%)</li>
+<li>Iron ore futures: 43.6 million contracts (+15%) — global volume record</li>
+<li>MSCI Singapore OI: record notional USD 6.1 billion (+80% YoY)</li>
+<li>FTSE China A50 OI: USD 13.8 billion (+24% YoY as of Feb 2025)</li>
+</ul></li>
+<li><strong>GIFT Connect Growth:</strong> GIFT Nifty monthly turnover exceeded USD 102 billion as of May 2025, with over 2 million contracts traded in that month</li>
+</ul>
+</section>
+<section id="regulatory-changes" class="level3">
+<h3 class="anchored" data-anchor-id="regulatory-changes">11.3 Regulatory Changes</h3>
+<ul>
+<li><strong>MAS Legislative Proposals (2026):</strong> MAS proposes legislative changes to facilitate dual listings on the SGX-Nasdaq Global Listing Board</li>
+<li><strong>SGX RegCo ETF Market Maker Streamlining (2025):</strong> Simplified designated market maker requirements for ETFs</li>
+<li><strong>Enhanced Default Management:</strong> SGX proposed changes to SGX-DC Clearing Rules to enhance default management capabilities, consistent with international best practices</li>
+</ul>
+</section>
+<section id="strategic-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="strategic-initiatives">11.4 Strategic Initiatives</h3>
+<ul>
+<li><strong>Pan-Asian Gateway Strategy:</strong> SGX continues to position itself as the primary international gateway for Asian derivatives exposure, covering &gt;80% of Asia’s economies through its equity index derivatives suite</li>
+<li><strong>Iron Ore Global Benchmark:</strong> SGX now clears over 90% of the world’s seaborne iron ore derivatives, firmly establishing the SGX TSI Iron Ore 62% contract as the global benchmark</li>
+<li><strong>Multi-Asset Expansion:</strong> Strategic expansion across all asset classes — equities, FX, commodities, interest rates, digital assets — creating a comprehensive multi-asset platform</li>
+<li><strong>GIFT Connect Deepening:</strong> Continued growth of the NSE IX-SGX GIFT Connect with expanding product shelf (Nifty 50, Nifty Bank, Nifty Financial Services, Nifty IT) and growing volumes</li>
+<li><strong>Interest Rate Product Expansion:</strong> Leveraging existing JGB futures franchise and new APAC government bond futures to build a rates franchise complementing the multi-asset platform</li>
+</ul>
+<p>[Source: PR Newswire, “SGX Derivatives breaks new ground with institutional-grade crypto perpetual futures”, November 2025; Markets Media, “SGX Derivatives to Launch Asia Pacific Government Bond Futures”, March 2026; TipRanks, “SGX Ends 2025 With Record Derivatives Volumes”, January 2026; FIA, “SGX iron ore futures set volume record”; SGX FY2025 Annual Report; FOW, “SGX weighs opportunities, in rates and new products”]</p>
+<hr>
+</section>
+</section>
+<section id="derivatives-specific-sections" class="level2">
+<h2 class="anchored" data-anchor-id="derivatives-specific-sections">Derivatives-Specific Sections</h2>
+<hr>
+</section>
+<section id="d1.-product-catalog" class="level2">
+<h2 class="anchored" data-anchor-id="d1.-product-catalog">D1. Product Catalog</h2>
+<section id="by-asset-class" class="level3">
+<h3 class="anchored" data-anchor-id="by-asset-class">By Asset Class</h3>
+<section id="equity-index-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="equity-index-derivatives">Equity Index Derivatives</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 13%">
+<col style="width: 25%">
+<col style="width: 20%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Symbol</th>
+<th>Contract Size</th>
+<th>Settlement</th>
+<th>Exchange/Venue</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FTSE China A50 Index Futures</td>
+<td>CN</td>
+<td>USD 1 x Index</td>
+<td>Cash</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>FTSE China A50 Index Options</td>
+<td>—</td>
+<td>USD 1 x Index</td>
+<td>Cash</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="odd">
+<td>Nikkei 225 Index Futures (JPY)</td>
+<td>NK</td>
+<td>JPY 500 x Index</td>
+<td>Cash</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 Index Futures (USD)</td>
+<td>NU</td>
+<td>USD 5 x Index</td>
+<td>Cash</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="odd">
+<td>Nikkei 225 Mini Futures</td>
+<td>NM</td>
+<td>JPY 100 x Index</td>
+<td>Cash</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 Index Options</td>
+<td>—</td>
+<td>JPY 500 x Index</td>
+<td>Cash</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="odd">
+<td>Nikkei 225 Total Return Futures</td>
+<td>NR</td>
+<td>JPY 10,000 x Index</td>
+<td>Cash</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>MSCI Singapore Index Futures</td>
+<td>SGP</td>
+<td>SGD 200 x Index</td>
+<td>Cash</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="odd">
+<td>MSCI Singapore Index Options</td>
+<td>—</td>
+<td>SGD 200 x Index</td>
+<td>Cash</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>MSCI Taiwan Index Futures</td>
+<td>TW</td>
+<td>USD 100 x Index</td>
+<td>Cash</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="odd">
+<td>MSCI Indonesia Index Futures</td>
+<td>ID</td>
+<td>USD 100 x Index</td>
+<td>Cash</td>
+<td>SGX-DT</td>
+</tr>
+<tr class="even">
+<td>MSCI India Index Futures</td>
+<td>—</td>
+<td>USD 5 x Index</td>
+<td>Cash</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="odd">
+<td>MSCI Thailand Index Futures</td>
+<td>—</td>
+<td>USD 100 x Index</td>
+<td>Cash</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="even">
+<td>MSCI Philippines Index Futures</td>
+<td>—</td>
+<td>USD 100 x Index</td>
+<td>Cash</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="odd">
+<td>Hang Seng Index Futures</td>
+<td>—</td>
+<td>HKD 50 x Index</td>
+<td>Cash</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="even">
+<td>FTSE China H50 Index Futures</td>
+<td>—</td>
+<td>HKD 50 x Index</td>
+<td>Cash</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="odd">
+<td>S&amp;P/ASX 200 Futures</td>
+<td>—</td>
+<td>AUD 25 x Index</td>
+<td>Cash</td>
+<td>SGX-DT [unverified]</td>
+</tr>
+<tr class="even">
+<td>GIFT Nifty 50 Futures</td>
+<td>IN</td>
+<td>USD 2 x Index</td>
+<td>Cash</td>
+<td>NSE IX (via GIFT Connect)</td>
+</tr>
+<tr class="odd">
+<td>GIFT Nifty Bank Futures</td>
+<td>—</td>
+<td>USD 2 x Index</td>
+<td>Cash</td>
+<td>NSE IX (via GIFT Connect)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fx-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="fx-derivatives">FX Derivatives</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Symbol</th>
+<th>Contract Size</th>
+<th>Settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>USD/CNH Futures</td>
+<td>UC</td>
+<td>USD 100,000</td>
+<td>Cash</td>
+</tr>
+<tr class="even">
+<td>INR/USD Futures</td>
+<td>IU</td>
+<td>INR 2,000,000</td>
+<td>Cash</td>
+</tr>
+<tr class="odd">
+<td>KRW/USD Futures</td>
+<td>KU</td>
+<td>KRW 125,000,000</td>
+<td>Cash [unverified]</td>
+</tr>
+<tr class="even">
+<td>AUD/USD Futures</td>
+<td>AU</td>
+<td>AUD 100,000</td>
+<td>Cash [unverified]</td>
+</tr>
+<tr class="odd">
+<td>AUD/JPY Futures</td>
+<td>—</td>
+<td>AUD 100,000</td>
+<td>Cash [unverified]</td>
+</tr>
+<tr class="even">
+<td>USD/SGD Futures</td>
+<td>—</td>
+<td>USD 100,000</td>
+<td>Cash [unverified]</td>
+</tr>
+<tr class="odd">
+<td>FX Options</td>
+<td>—</td>
+<td>Various</td>
+<td>Cash</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="commodity-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="commodity-derivatives">Commodity Derivatives</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 18%">
+<col style="width: 34%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Symbol</th>
+<th>Contract Size</th>
+<th>Settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TSI Iron Ore CFR China 62% Fe Futures</td>
+<td>FEF</td>
+<td>100 metric tonnes</td>
+<td>Cash (vs.&nbsp;TSI index)</td>
+</tr>
+<tr class="even">
+<td>MB Iron Ore CFR China 65% Fe Futures</td>
+<td>—</td>
+<td>100 metric tonnes</td>
+<td>Cash (vs.&nbsp;Fastmarkets index)</td>
+</tr>
+<tr class="odd">
+<td>Iron Ore 62% Options</td>
+<td>—</td>
+<td>100 metric tonnes</td>
+<td>Cash</td>
+</tr>
+<tr class="even">
+<td>TSI Coking Coal Futures</td>
+<td>—</td>
+<td>100 metric tonnes</td>
+<td>Cash</td>
+</tr>
+<tr class="odd">
+<td>Steel Rebar Futures</td>
+<td>—</td>
+<td>10 metric tonnes</td>
+<td>Cash [unverified]</td>
+</tr>
+<tr class="even">
+<td>TSR20 Rubber Futures</td>
+<td>—</td>
+<td>5 metric tonnes</td>
+<td>Physical delivery</td>
+</tr>
+<tr class="odd">
+<td>RSS3 Rubber Futures</td>
+<td>—</td>
+<td>5 metric tonnes</td>
+<td>Physical delivery [unverified]</td>
+</tr>
+<tr class="even">
+<td>Freight Futures (FFA)</td>
+<td>—</td>
+<td>Various</td>
+<td>Cash</td>
+</tr>
+<tr class="odd">
+<td>Fuel Oil Futures</td>
+<td>—</td>
+<td>Various</td>
+<td>Cash [unverified]</td>
+</tr>
+<tr class="even">
+<td>Naphtha Futures</td>
+<td>—</td>
+<td>Various</td>
+<td>Cash [unverified]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="interest-rate-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="interest-rate-derivatives">Interest Rate Derivatives</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 18%">
+<col style="width: 34%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Symbol</th>
+<th>Contract Size</th>
+<th>Settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Japanese Government Bond (JGB) Futures</td>
+<td>JB</td>
+<td>JPY 100,000,000 face value</td>
+<td>Cash [unverified]</td>
+</tr>
+<tr class="even">
+<td>APAC Government Bond Futures — India</td>
+<td>—</td>
+<td>USD-denominated</td>
+<td>Cash (launching April 2026)</td>
+</tr>
+<tr class="odd">
+<td>APAC Government Bond Futures — Indonesia</td>
+<td>—</td>
+<td>USD-denominated</td>
+<td>Cash (launching April 2026)</td>
+</tr>
+<tr class="even">
+<td>APAC Government Bond Futures — Malaysia</td>
+<td>—</td>
+<td>USD-denominated</td>
+<td>Cash (launching April 2026)</td>
+</tr>
+<tr class="odd">
+<td>APAC Government Bond Futures — Thailand</td>
+<td>—</td>
+<td>USD-denominated</td>
+<td>Cash (launching April 2026)</td>
+</tr>
+<tr class="even">
+<td>APAC Government Bond Futures — Philippines</td>
+<td>—</td>
+<td>USD-denominated</td>
+<td>Cash (launching April 2026)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="digital-asset-derivatives" class="level4">
+<h4 class="anchored" data-anchor-id="digital-asset-derivatives">Digital Asset Derivatives</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Symbol</th>
+<th>Contract Size</th>
+<th>Settlement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bitcoin Perpetual Futures</td>
+<td>—</td>
+<td>0.1 BTC [unverified]</td>
+<td>Cash (USD)</td>
+</tr>
+<tr class="even">
+<td>Ethereum Perpetual Futures</td>
+<td>—</td>
+<td>1.0 ETH [unverified]</td>
+<td>Cash (USD)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: SGX website, “Derivatives Products”; Barchart.com, “SGX Contract Specifications”; Capital Futures Corp., “SGX Contract Specifications”; SGX press releases 2025–2026]</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="d2.-key-contract-specifications-top-5-products-by-volume" class="level2">
+<h2 class="anchored" data-anchor-id="d2.-key-contract-specifications-top-5-products-by-volume">D2. Key Contract Specifications (Top 5 Products by Volume)</h2>
+<section id="ftse-china-a50-index-futures-cn" class="level3">
+<h3 class="anchored" data-anchor-id="ftse-china-a50-index-futures-cn">1. FTSE China A50 Index Futures (CN)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Underlying</td>
+<td>FTSE China A50 Index (top 50 A-share companies by market cap)</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>USD 1 x FTSE China A50 Index</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>5 index points</td>
+</tr>
+<tr class="even">
+<td>Tick Value</td>
+<td>USD 5.00</td>
+</tr>
+<tr class="odd">
+<td>Contract Months</td>
+<td>2 nearest serial months + 4 quarterly months (March, June, September, December cycle)</td>
+</tr>
+<tr class="even">
+<td>Trading Hours (T Session)</td>
+<td>09:00 – 16:30 SGT</td>
+</tr>
+<tr class="odd">
+<td>Trading Hours (T+1 Session)</td>
+<td>17:00 – 05:15 +1 SGT</td>
+</tr>
+<tr class="even">
+<td>Last Trading Day</td>
+<td>Second-to-last business day of the contract month</td>
+</tr>
+<tr class="odd">
+<td>Final Settlement</td>
+<td>Cash settled; based on official closing price of FTSE China A50 Index on the last trading day</td>
+</tr>
+<tr class="even">
+<td>Settlement Currency</td>
+<td>USD</td>
+</tr>
+<tr class="odd">
+<td>Position</td>
+<td>No physical delivery</td>
+</tr>
+<tr class="even">
+<td>2025 Volume</td>
+<td>~84 million lots (first 9 months); February 2025 alone: 9.4 million contracts (+18% YoY)</td>
+</tr>
+<tr class="odd">
+<td>Open Interest (Feb 2025)</td>
+<td>Notional USD 13.8 billion (+24% YoY)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tsi-iron-ore-cfr-china-62-fe-futures-fef" class="level3">
+<h3 class="anchored" data-anchor-id="tsi-iron-ore-cfr-china-62-fe-futures-fef">2. TSI Iron Ore CFR China 62% Fe Futures (FEF)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Underlying</td>
+<td>Platts TSI Iron Ore CFR China 62% Fe Fines Index</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>100 metric tonnes</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>USD 0.01 per metric tonne</td>
+</tr>
+<tr class="even">
+<td>Tick Value</td>
+<td>USD 1.00</td>
+</tr>
+<tr class="odd">
+<td>Contract Months</td>
+<td>Monthly contracts for up to 72 consecutive months</td>
+</tr>
+<tr class="even">
+<td>Trading Hours (T Session)</td>
+<td>07:25 – 19:55 SGT</td>
+</tr>
+<tr class="odd">
+<td>Trading Hours (T+1 Session)</td>
+<td>20:15 – 04:45 +1 SGT</td>
+</tr>
+<tr class="even">
+<td>Last Trading Day</td>
+<td>Last publication day of TSI iron ore reference prices in the contract month</td>
+</tr>
+<tr class="odd">
+<td>Final Settlement</td>
+<td>Cash settled; based on the arithmetic average of TSI Iron Ore CFR China 62% Fe Fines assessments during the contract month</td>
+</tr>
+<tr class="even">
+<td>Settlement Currency</td>
+<td>USD</td>
+</tr>
+<tr class="odd">
+<td>2025 Volume</td>
+<td>43.6 million contracts (+15% YoY) — global volume record</td>
+</tr>
+<tr class="even">
+<td>Market Share</td>
+<td>SGX clears &gt;90% of world’s seaborne iron ore derivatives</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="nikkei-225-index-futures-jpy-nk" class="level3">
+<h3 class="anchored" data-anchor-id="nikkei-225-index-futures-jpy-nk">3. Nikkei 225 Index Futures — JPY (NK)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Underlying</td>
+<td>Nikkei 225 Stock Average</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>JPY 500 x Nikkei 225 Index</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>5 index points</td>
+</tr>
+<tr class="even">
+<td>Tick Value</td>
+<td>JPY 2,500</td>
+</tr>
+<tr class="odd">
+<td>Contract Months</td>
+<td>5 quarterly months (March cycle) + 3 nearest serial months</td>
+</tr>
+<tr class="even">
+<td>Trading Hours (T Session)</td>
+<td>07:30 – 14:55 SGT</td>
+</tr>
+<tr class="odd">
+<td>Trading Hours (T+1 Session)</td>
+<td>15:10 – 05:15 +1 SGT</td>
+</tr>
+<tr class="even">
+<td>Last Trading Day</td>
+<td>The business day preceding the second Friday of the contract month</td>
+</tr>
+<tr class="odd">
+<td>Final Settlement</td>
+<td>Cash settled; based on the Special Quotation (SQ) of the Nikkei 225 Index</td>
+</tr>
+<tr class="even">
+<td>Settlement Currency</td>
+<td>JPY</td>
+</tr>
+<tr class="odd">
+<td>MOS</td>
+<td>Eligible for Mutual Offset System with CME Group</td>
+</tr>
+<tr class="even">
+<td>Historical Significance</td>
+<td>Launched 1986 — first offshore Nikkei 225 listing; pioneer product for SGX</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="usdcnh-futures-uc" class="level3">
+<h3 class="anchored" data-anchor-id="usdcnh-futures-uc">4. USD/CNH Futures (UC)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Underlying</td>
+<td>USD/CNH (offshore Chinese renminbi) exchange rate</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>USD 100,000</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>0.0001 CNH per USD [unverified]</td>
+</tr>
+<tr class="even">
+<td>Contract Months</td>
+<td>Monthly contracts for 13 consecutive months</td>
+</tr>
+<tr class="odd">
+<td>Trading Hours (T Session)</td>
+<td>07:25 – 19:55 SGT</td>
+</tr>
+<tr class="even">
+<td>Trading Hours (T+1 Session)</td>
+<td>20:15 – 05:15 +1 SGT</td>
+</tr>
+<tr class="odd">
+<td>Last Trading Day</td>
+<td>Two Hong Kong business days prior to the settlement date</td>
+</tr>
+<tr class="even">
+<td>Final Settlement</td>
+<td>Cash settled; based on the USD/CNH(HK) fixing published by TMA</td>
+</tr>
+<tr class="odd">
+<td>Settlement Currency</td>
+<td>USD</td>
+</tr>
+<tr class="even">
+<td>2025 Volume</td>
+<td>Part of record 73.6 million FX futures contracts (+49.7% YoY)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="inrusd-futures-iu" class="level3">
+<h3 class="anchored" data-anchor-id="inrusd-futures-iu">5. INR/USD Futures (IU)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Underlying</td>
+<td>INR/USD exchange rate</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>INR 2,000,000</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>0.01 US cents per 100 Indian Rupees</td>
+</tr>
+<tr class="even">
+<td>Tick Value</td>
+<td>USD 2.00</td>
+</tr>
+<tr class="odd">
+<td>Contract Months</td>
+<td>Monthly contracts for up to 13 consecutive months</td>
+</tr>
+<tr class="even">
+<td>Trading Hours (T Session)</td>
+<td>07:25 – 19:30 SGT [unverified]</td>
+</tr>
+<tr class="odd">
+<td>Trading Hours (T+1 Session)</td>
+<td>20:15 – 05:15 +1 SGT [unverified]</td>
+</tr>
+<tr class="even">
+<td>Last Trading Day</td>
+<td>Two Mumbai business days prior to the settlement date</td>
+</tr>
+<tr class="odd">
+<td>Final Settlement</td>
+<td>Cash settled; based on the RBI Reference Rate</td>
+</tr>
+<tr class="even">
+<td>Settlement Currency</td>
+<td>USD</td>
+</tr>
+<tr class="odd">
+<td>Point Value</td>
+<td>USD 200</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: SGX website, “FTSE China A50 Index Futures”; SGX website, “Iron Ore”; SGX website, “Nikkei 225 Index Futures and Options”; Barchart.com, “SGX Contract Specifications”; FIA, “SGX iron ore futures set volume record”; SGX market statistics, February 2025]</p>
+<hr>
+</section>
+</section>
+<section id="d3.-margin-framework" class="level2">
+<h2 class="anchored" data-anchor-id="d3.-margin-framework">D3. Margin Framework</h2>
+<section id="methodology-span-standard-portfolio-analysis-of-risk" class="level3">
+<h3 class="anchored" data-anchor-id="methodology-span-standard-portfolio-analysis-of-risk">Methodology: SPAN (Standard Portfolio Analysis of Risk)</h3>
+<p>SGX-DC uses SPAN as its primary margining system — a risk-based, portfolio approach to computing margin requirements.</p>
+<p><strong>Key Features:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model</td>
+<td>SPAN (Standard Portfolio Analysis of Risk), originally developed by CME Group</td>
+</tr>
+<tr class="even">
+<td>Approach</td>
+<td>Evaluates the worst possible portfolio loss over a specified time horizon (typically 1 day for futures, 1–2 days for options) under multiple market scenarios</td>
+</tr>
+<tr class="odd">
+<td>Risk Scenarios</td>
+<td>16 standard scenarios combining price moves and volatility shifts</td>
+</tr>
+<tr class="even">
+<td>Price Scan Range</td>
+<td>Set based on a confidence level (typically 99% or higher), calibrated using historical price data with volatility scaling</td>
+</tr>
+<tr class="odd">
+<td>Volatility Scan Range</td>
+<td>Scenarios include shifts in implied volatility</td>
+</tr>
+<tr class="even">
+<td>Portfolio Offsets</td>
+<td>Cross-margining credits for correlated positions within the same combined commodity group</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sgx-dcs-enhanced-span-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="sgx-dcs-enhanced-span-parameters">SGX-DC’s Enhanced SPAN Parameters</h3>
+<p>SGX-DC has enhanced the standard SPAN methodology with specific modifications:</p>
+<ol type="1">
+<li><p><strong>Volatility Scaling:</strong> SGX replaced the legacy standard deviation approach (which gave equal weight to all price observations during the prior year) with a volatility-scaling methodology. Margins are now more responsive to the prevailing volatility regime — increasing during high-volatility periods and decreasing during calm periods.</p></li>
+<li><p><strong>Anti-Procyclicality Floor:</strong> A floor ensures that margins cannot dip below those that would be calculated using a <strong>10-year lookback period</strong>, even during extended benign/low-volatility periods. This prevents the buildup of under-margined risk during calm markets.</p></li>
+<li><p><strong>Stress Testing:</strong> SGX-DC regularly performs stress tests beyond SPAN scenarios to ensure clearing fund adequacy under extreme but plausible market conditions.</p></li>
+</ol>
+</section>
+<section id="margin-types" class="level3">
+<h3 class="anchored" data-anchor-id="margin-types">Margin Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Margin Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Initial Margin (Performance Bond)</strong></td>
+<td>Required deposit to open a position; covers the estimated maximum one-day loss under SPAN scenarios</td>
+</tr>
+<tr class="even">
+<td><strong>Maintenance Margin</strong></td>
+<td>Minimum margin level that must be maintained; typically set at a lower level than initial margin</td>
+</tr>
+<tr class="odd">
+<td><strong>Variation Margin</strong></td>
+<td>Daily mark-to-market settlement; calculated at the end of each trading day and settled in cash through Settlement Banks</td>
+</tr>
+<tr class="even">
+<td><strong>Intraday Margin</strong></td>
+<td>Additional margin calls during the trading day if positions incur significant unrealized losses or volatility spikes</td>
+</tr>
+<tr class="odd">
+<td><strong>Spread Margin</strong></td>
+<td>Reduced margin for spread positions (calendar, inter-commodity) that benefit from offsetting risk</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="margin-call-process" class="level3">
+<h3 class="anchored" data-anchor-id="margin-call-process">Margin Call Process</h3>
+<ol type="1">
+<li><strong>End-of-Day:</strong> Settlement prices determined; variation margin and any margin shortfalls calculated</li>
+<li><strong>Margin Call Issued:</strong> Clearing members notified of margin obligations via SGX-DC systems</li>
+<li><strong>Settlement:</strong> Cash transfers through approved Settlement Banks</li>
+<li><strong>Intraday Cycles:</strong> Additional intraday margin calls may be issued (and must be met promptly) to cover shortfalls arising from market movements during the trading session</li>
+<li><strong>Accepted Collateral:</strong> Cash (multi-currency), government securities, bank guarantees, and other approved collateral forms</li>
+</ol>
+</section>
+<section id="industry-context" class="level3">
+<h3 class="anchored" data-anchor-id="industry-context">Industry Context</h3>
+<p>While the broader derivatives industry is migrating from SPAN to VaR-based margin models (e.g., CME SPAN 2, Eurex PRISMA), SGX-DC continues to use its enhanced SPAN framework. The anti-procyclicality measures and volatility scaling represent meaningful improvements over basic SPAN, providing margin stability while maintaining risk responsiveness.</p>
+<p>[Source: SGX website, “Risk Management”; SGX Rulebook, “Practice Note 6A.5.2 Calculation of Amount of Clearing Member Required Margins”; Risk.net, “SGX’s Koh defends clearing methods post-Nasdaq”; CME Group, “SPAN Methodology Overview”; FIA, “Navigating a New Era in Derivatives Clearing”]</p>
+<hr>
+</section>
+</section>
+<section id="d4.-position-limits-large-position-reporting" class="level2">
+<h2 class="anchored" data-anchor-id="d4.-position-limits-large-position-reporting">D4. Position Limits &amp; Large Position Reporting</h2>
+<section id="position-limits" class="level3">
+<h3 class="anchored" data-anchor-id="position-limits">Position Limits</h3>
+<p>SGX imposes position limits on derivatives contracts to manage systemic risk and prevent excessive concentration:</p>
+<ul>
+<li><strong>Position limits</strong> are defined per contract in the SGX Rulebook (Section 18.4.2) and vary by product</li>
+<li>Members must have <strong>automated processes</strong> in place to monitor at the firm level if they are at risk of breaching prudential limits on exposures to a single customer and a single contract</li>
+<li>Position limits apply to <strong>speculative positions</strong> — positions held for trading/investment purposes without an underlying commercial hedging need</li>
+</ul>
+</section>
+<section id="hedge-exemptions" class="level3">
+<h3 class="anchored" data-anchor-id="hedge-exemptions">Hedge Exemptions</h3>
+<ul>
+<li>Market participants with bona fide hedging needs may apply for exemptions from speculative position limits</li>
+<li>Applications for exemption must be submitted to SGX-DT, demonstrating the hedging rationale and underlying commercial exposure</li>
+<li>Exempted positions must be monitored and reported on an ongoing basis</li>
+</ul>
+</section>
+<section id="large-position-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="large-position-reporting">Large Position Reporting</h3>
+<ul>
+<li>Clearing members are required to report large positions to SGX-DC when positions exceed specified thresholds</li>
+<li>Large position reports enable SGX to monitor concentration risk and potential market manipulation</li>
+<li>Thresholds are set on a product-by-product basis</li>
+</ul>
+</section>
+<section id="accountability-levels" class="level3">
+<h3 class="anchored" data-anchor-id="accountability-levels">Accountability Levels</h3>
+<p>SGX may set <strong>accountability levels</strong> (as distinct from hard position limits) for certain contracts, requiring participants exceeding these levels to provide additional information about their positions and trading intentions upon request.</p>
+<p>[Source: SGX Rulebook, “18.4.2 Position Limits”; SGX Rulebook, “Practice Note 7.22 — Margins of Third Parties”; SGX website, “Risk Management”]</p>
+<hr>
+</section>
+</section>
+<section id="d5.-block-trading-negotiated-large-trades-nlt-efp-efs" class="level2">
+<h2 class="anchored" data-anchor-id="d5.-block-trading-negotiated-large-trades-nlt-efp-efs">D5. Block Trading / Negotiated Large Trades (NLT) / EFP / EFS</h2>
+<section id="negotiated-large-trades-nlt" class="level3">
+<h3 class="anchored" data-anchor-id="negotiated-large-trades-nlt">Negotiated Large Trades (NLT)</h3>
+<p>SGX’s equivalent of block trades is the <strong>Negotiated Large Trade (NLT)</strong> facility:</p>
+<p><strong>Key Rules:</strong> - NLTs are privately negotiated transactions executed off the central order book at a price agreed between two parties - Each NLT must meet the <strong>minimum volume threshold</strong> specified per contract in Appendix A of Regulatory Notice 4.1.11 - Representative minimum thresholds: - Nikkei 225 Options: 25 lots - Other products: varies by contract (specific thresholds published in the Regulatory Notice) - A multi-leg NLT within the same underlying is deemed compliant if <strong>at least one leg</strong> meets the minimum volume threshold - Members shall <strong>not</strong> combine individual customers’ orders solely to meet the minimum volume threshold - However, individual orders that each independently exceed the threshold may be combined to match a larger NLT counter bid/offer</p>
+<p><strong>Reporting and Registration:</strong> - NLTs must be reported to SGX within the prescribed timeframe - Both the seller and buyer must have satisfied the credit and position thresholds prescribed by their respective clearing members - NLTs are registered with SGX-DC for clearing upon successful validation</p>
+</section>
+<section id="exchange-for-physical-efp" class="level3">
+<h3 class="anchored" data-anchor-id="exchange-for-physical-efp">Exchange for Physical (EFP)</h3>
+<ul>
+<li><strong>EFP transactions</strong> allow the exchange of a derivatives position for a corresponding physical or cash market position</li>
+<li>Must meet procedures prescribed by SGX</li>
+<li>The physical leg must be a bona fide transaction in the underlying or related commodity/instrument</li>
+<li>Clearing member credit and position thresholds must be satisfied</li>
+</ul>
+</section>
+<section id="exchange-for-swap-efs" class="level3">
+<h3 class="anchored" data-anchor-id="exchange-for-swap-efs">Exchange for Swap (EFS)</h3>
+<ul>
+<li><strong>EFS transactions</strong> allow the exchange of a listed derivatives position for an equivalent OTC swap position</li>
+<li>Subject to similar rules as EFP transactions regarding procedures, credit thresholds, and reporting</li>
+</ul>
+</section>
+<section id="registration-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="registration-requirements">Registration Requirements</h3>
+<p>For NLT, EFP, and EFS transactions involving contracts listed on a “Relevant Market” (i.e., contracts that are also listed on another exchange), Rule 7.04A requires compliance with additional registration procedures to ensure cross-market integrity.</p>
+<p>[Source: SGX Rulebook, “Regulatory Notice 2.1.3A(4); 4.1.11 — Negotiated Large Trades”; SGX Rulebook, “4.1.11 Negotiated Large Trades”; SGX Rulebook, “7.04A Registration of an NLT, EFP or EFS in Respect of Contracts Listed on a Relevant Market”; SGX website, “Negotiated Large Trade (NLT)”]</p>
+<hr>
+</section>
+</section>
+<section id="d6.-delivery-settlement-process" class="level2">
+<h2 class="anchored" data-anchor-id="d6.-delivery-settlement-process">D6. Delivery &amp; Settlement Process</h2>
+<section id="daily-settlement-mark-to-market" class="level3">
+<h3 class="anchored" data-anchor-id="daily-settlement-mark-to-market">Daily Settlement (Mark-to-Market)</h3>
+<ol type="1">
+<li><strong>Daily Settlement Prices:</strong> SGX-DC determines daily settlement prices for all listed derivatives contracts at the end of each trading day</li>
+<li><strong>Variation Margin:</strong> The difference between the current day’s settlement price and the prior day’s settlement price (or the trade price for new positions) is settled in cash</li>
+<li><strong>Settlement Banks:</strong> Cash transfers are effected through approved Settlement Banks; clearing members must maintain accounts with approved banks</li>
+<li><strong>Intraday Settlement:</strong> Intraday margin calls and mark-to-market may be triggered during volatile market conditions</li>
+</ol>
+</section>
+<section id="final-settlement-cash-settled-contracts" class="level3">
+<h3 class="anchored" data-anchor-id="final-settlement-cash-settled-contracts">Final Settlement — Cash-Settled Contracts</h3>
+<p>The majority of SGX derivatives are <strong>cash-settled:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 79%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Final Settlement Price Methodology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FTSE China A50 Futures</td>
+<td>Based on the official closing price of the FTSE China A50 Index on the last trading day</td>
+</tr>
+<tr class="even">
+<td>Nikkei 225 Futures</td>
+<td>Based on the Special Quotation (SQ) of the Nikkei 225 Index</td>
+</tr>
+<tr class="odd">
+<td>Iron Ore Futures</td>
+<td>Arithmetic average of TSI Iron Ore CFR China 62% Fe Fines assessments during the contract month</td>
+</tr>
+<tr class="even">
+<td>FX Futures (USD/CNH)</td>
+<td>Based on the USD/CNH(HK) fixing published by TMA</td>
+</tr>
+<tr class="odd">
+<td>FX Futures (INR/USD)</td>
+<td>Based on the RBI Reference Rate</td>
+</tr>
+<tr class="even">
+<td>MSCI Index Futures</td>
+<td>Based on the official closing price of the respective MSCI Index</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="final-settlement-physically-delivered-contracts" class="level3">
+<h3 class="anchored" data-anchor-id="final-settlement-physically-delivered-contracts">Final Settlement — Physically Delivered Contracts</h3>
+<p>A small number of SGX commodity contracts (e.g., rubber futures — TSR20, RSS3) settle via physical delivery:</p>
+<ul>
+<li><strong>Delivery obligations</strong> fall to the trading counterparties, not to SGX-DC</li>
+<li>SGX-DC acts as the central counterparty for financial settlement but has <strong>no liability for the actual delivery process</strong></li>
+<li>Delivery locations, quality specifications, and procedures are defined in each contract’s specifications</li>
+<li>Clearing members must ensure their customers are prepared to make or take delivery if holding positions into the delivery period</li>
+</ul>
+</section>
+<section id="settlement-currency" class="level3">
+<h3 class="anchored" data-anchor-id="settlement-currency">Settlement Currency</h3>
+<ul>
+<li>Most SGX derivatives contracts are denominated and settled in <strong>USD</strong>, making them accessible to international participants without currency conversion</li>
+<li>Selected contracts settle in JPY (Nikkei 225 JPY), SGD (MSCI Singapore), HKD (Hang Seng products), or AUD (S&amp;P/ASX 200)</li>
+</ul>
+<p>[Source: SGX website, “Clearing Information”; CFTC, “SGX-DC Regulatory Compliance Chart”; SGX Rulebook, “SGX-DC Clearing Rules”; Capital Futures Corp., “SGX Contract Specifications”]</p>
+<hr>
+</section>
+</section>
+<section id="appendix-sgx-derivatives-comparison-with-krx" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-sgx-derivatives-comparison-with-krx">Appendix: SGX Derivatives — Comparison with KRX</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 38%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>SGX Derivatives</th>
+<th>KRX Derivatives</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary Focus</td>
+<td>Pan-Asian gateway; offshore access to Asian equity markets, commodities, FX</td>
+<td>Domestic Korean market (KOSPI 200, KOSDAQ 150, KTB)</td>
+</tr>
+<tr class="even">
+<td>Top Product</td>
+<td>FTSE China A50 Futures</td>
+<td>KOSPI 200 Options (historically world’s most active by contract count)</td>
+</tr>
+<tr class="odd">
+<td>Clearing House</td>
+<td>SGX-DC</td>
+<td>KRX CCP</td>
+</tr>
+<tr class="even">
+<td>Trading Platform</td>
+<td>Titan DT (Nasdaq Genium INET)</td>
+<td>Exture+</td>
+</tr>
+<tr class="odd">
+<td>Margin Model</td>
+<td>SPAN (enhanced with volatility scaling)</td>
+<td>SPAN-based (KRX SPAN)</td>
+</tr>
+<tr class="even">
+<td>International Access</td>
+<td>Broad international participation; CFTC-registered DCO</td>
+<td>More limited international direct access</td>
+</tr>
+<tr class="odd">
+<td>Trading Hours</td>
+<td>Up to ~22 hours/day for key products</td>
+<td>Primarily Korean business hours with limited night session</td>
+</tr>
+<tr class="even">
+<td>Currency</td>
+<td>Predominantly USD-denominated</td>
+<td>KRW-denominated</td>
+</tr>
+<tr class="odd">
+<td>Settlement</td>
+<td>T+1 cash settlement (most products)</td>
+<td>T+1 cash settlement</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: KRX comparison based on publicly available information; specific details should be verified against KRX documentation.</em></p>
+<hr>
+<p><em>This research file was compiled from publicly available sources including the SGX official website, SGX Rulebook, SGX annual reports, regulatory filings, financial news sources, and technology vendor documentation. Information marked [unverified] could not be confirmed from primary official sources and should be verified before use in formal analysis.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

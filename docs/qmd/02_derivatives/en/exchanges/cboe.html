@@ -1,0 +1,2667 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+
+<title>Cboe Global Markets – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-95bfc0c13984d9b08dc918dc662b221e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html">Exchanges</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/cboe.html">Cboe Global Markets</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/01_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Derivatives Markets — Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/02_comparative_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global Derivatives Markets – Comparative Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exchanges</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASX Derivatives (Australian Securities Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cboe.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Cboe Global Markets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cffex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">China Financial Futures Exchange (CFFEX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/cme_group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/dce.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dalian Commodity Exchange (DCE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/dme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dubai Mercantile Exchange (DME)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/eurex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eurex</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/euronext_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Euronext Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/hkex_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HKEX Derivatives Market</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/ice_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICE Futures (Intercontinental Exchange Futures)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/krx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KRX Derivatives (Korea Exchange)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/montreal_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Montreal Exchange (MX)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/nse_fo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">National Stock Exchange of India — Futures &amp; Options (NSE F&amp;O)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/osaka_exchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Osaka Exchange (OSE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/sgx_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SGX Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/shfe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shanghai Futures Exchange (SHFE)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/exchanges/taifex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Taiwan Futures Exchange (TAIFEX)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Regulations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/asia_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Asia-Pacific Derivatives Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/eu_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EU Derivatives Regulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/regulations/us_derivatives_regulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">U.S. Derivatives Regulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Trading Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/genium_inet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genium INET — Nasdaq Technology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/globex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CME Globex — CME Group</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../qmd/02_derivatives/en/systems/t7_derivatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T7 Trading Architecture – Eurex (Derivatives)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview-profile" id="toc-overview-profile" class="nav-link active" data-scroll-target="#overview-profile">1. Overview &amp; Profile</a>
+  <ul class="collapse">
+  <li><a href="#key-historical-milestones" id="toc-key-historical-milestones" class="nav-link" data-scroll-target="#key-historical-milestones">Key Historical Milestones</a></li>
+  </ul></li>
+  <li><a href="#market-structure" id="toc-market-structure" class="nav-link" data-scroll-target="#market-structure">2. Market Structure</a>
+  <ul class="collapse">
+  <li><a href="#exchange-segments" id="toc-exchange-segments" class="nav-link" data-scroll-target="#exchange-segments">2.1 Exchange Segments</a></li>
+  <li><a href="#trading-sessions-hours" id="toc-trading-sessions-hours" class="nav-link" data-scroll-target="#trading-sessions-hours">2.2 Trading Sessions / Hours</a></li>
+  <li><a href="#tick-sizes-selected-products" id="toc-tick-sizes-selected-products" class="nav-link" data-scroll-target="#tick-sizes-selected-products">2.3 Tick Sizes (Selected Products)</a></li>
+  <li><a href="#contract-multipliers-lot-sizes" id="toc-contract-multipliers-lot-sizes" class="nav-link" data-scroll-target="#contract-multipliers-lot-sizes">2.4 Contract Multipliers / Lot Sizes</a></li>
+  <li><a href="#market-maker-liquidity-provider-programs" id="toc-market-maker-liquidity-provider-programs" class="nav-link" data-scroll-target="#market-maker-liquidity-provider-programs">2.5 Market Maker / Liquidity Provider Programs</a></li>
+  </ul></li>
+  <li><a href="#trading-mechanism" id="toc-trading-mechanism" class="nav-link" data-scroll-target="#trading-mechanism">3. Trading Mechanism</a>
+  <ul class="collapse">
+  <li><a href="#auction-mechanisms" id="toc-auction-mechanisms" class="nav-link" data-scroll-target="#auction-mechanisms">3.1 Auction Mechanisms</a></li>
+  <li><a href="#continuous-trading" id="toc-continuous-trading" class="nav-link" data-scroll-target="#continuous-trading">3.2 Continuous Trading</a></li>
+  <li><a href="#price-discovery" id="toc-price-discovery" class="nav-link" data-scroll-target="#price-discovery">3.3 Price Discovery</a></li>
+  <li><a href="#order-priority-rules-matching-algorithms" id="toc-order-priority-rules-matching-algorithms" class="nav-link" data-scroll-target="#order-priority-rules-matching-algorithms">3.4 Order Priority Rules / Matching Algorithms</a></li>
+  </ul></li>
+  <li><a href="#order-types" id="toc-order-types" class="nav-link" data-scroll-target="#order-types">4. Order Types</a>
+  <ul class="collapse">
+  <li><a href="#standard-order-types" id="toc-standard-order-types" class="nav-link" data-scroll-target="#standard-order-types">4.1 Standard Order Types</a></li>
+  <li><a href="#advanced-order-types" id="toc-advanced-order-types" class="nav-link" data-scroll-target="#advanced-order-types">4.2 Advanced Order Types</a></li>
+  <li><a href="#time-in-force-tif-conditions" id="toc-time-in-force-tif-conditions" class="nav-link" data-scroll-target="#time-in-force-tif-conditions">4.3 Time-in-Force (TIF) Conditions</a></li>
+  <li><a href="#order-modification-cancellation" id="toc-order-modification-cancellation" class="nav-link" data-scroll-target="#order-modification-cancellation">4.4 Order Modification &amp; Cancellation</a></li>
+  </ul></li>
+  <li><a href="#trading-system-technology-cboe-titanium" id="toc-trading-system-technology-cboe-titanium" class="nav-link" data-scroll-target="#trading-system-technology-cboe-titanium">5. Trading System Technology — Cboe Titanium</a>
+  <ul class="collapse">
+  <li><a href="#system-overview" id="toc-system-overview" class="nav-link" data-scroll-target="#system-overview">5.1 System Overview</a></li>
+  <li><a href="#system-history" id="toc-system-history" class="nav-link" data-scroll-target="#system-history">5.2 System History</a></li>
+  <li><a href="#protocol-stack" id="toc-protocol-stack" class="nav-link" data-scroll-target="#protocol-stack">5.3 Protocol Stack</a></li>
+  <li><a href="#disaster-recovery-business-continuity" id="toc-disaster-recovery-business-continuity" class="nav-link" data-scroll-target="#disaster-recovery-business-continuity">5.4 Disaster Recovery / Business Continuity</a></li>
+  </ul></li>
+  <li><a href="#market-data" id="toc-market-data" class="nav-link" data-scroll-target="#market-data">6. Market Data</a>
+  <ul class="collapse">
+  <li><a href="#feed-protocols" id="toc-feed-protocols" class="nav-link" data-scroll-target="#feed-protocols">6.1 Feed Protocols</a></li>
+  <li><a href="#data-levels" id="toc-data-levels" class="nav-link" data-scroll-target="#data-levels">6.2 Data Levels</a></li>
+  <li><a href="#data-distribution" id="toc-data-distribution" class="nav-link" data-scroll-target="#data-distribution">6.3 Data Distribution</a></li>
+  <li><a href="#historical-data" id="toc-historical-data" class="nav-link" data-scroll-target="#historical-data">6.4 Historical Data</a></li>
+  </ul></li>
+  <li><a href="#connectivity-access" id="toc-connectivity-access" class="nav-link" data-scroll-target="#connectivity-access">7. Connectivity &amp; Access</a>
+  <ul class="collapse">
+  <li><a href="#membership-access" id="toc-membership-access" class="nav-link" data-scroll-target="#membership-access">7.1 Membership / Access</a></li>
+  <li><a href="#connection-methods" id="toc-connection-methods" class="nav-link" data-scroll-target="#connection-methods">7.2 Connection Methods</a></li>
+  <li><a href="#co-location" id="toc-co-location" class="nav-link" data-scroll-target="#co-location">7.3 Co-Location</a></li>
+  <li><a href="#api-protocols" id="toc-api-protocols" class="nav-link" data-scroll-target="#api-protocols">7.4 API Protocols</a></li>
+  <li><a href="#certification-testing" id="toc-certification-testing" class="nav-link" data-scroll-target="#certification-testing">7.5 Certification / Testing</a></li>
+  </ul></li>
+  <li><a href="#risk-controls-circuit-breakers" id="toc-risk-controls-circuit-breakers" class="nav-link" data-scroll-target="#risk-controls-circuit-breakers">8. Risk Controls &amp; Circuit Breakers</a>
+  <ul class="collapse">
+  <li><a href="#market-wide-circuit-breakers-mwcb" id="toc-market-wide-circuit-breakers-mwcb" class="nav-link" data-scroll-target="#market-wide-circuit-breakers-mwcb">8.1 Market-Wide Circuit Breakers (MWCB)</a></li>
+  <li><a href="#limit-up-limit-down-luld" id="toc-limit-up-limit-down-luld" class="nav-link" data-scroll-target="#limit-up-limit-down-luld">8.2 Limit Up-Limit Down (LULD)</a></li>
+  <li><a href="#pre-trade-risk-controls" id="toc-pre-trade-risk-controls" class="nav-link" data-scroll-target="#pre-trade-risk-controls">8.3 Pre-Trade Risk Controls</a></li>
+  <li><a href="#position-and-exercise-limits" id="toc-position-and-exercise-limits" class="nav-link" data-scroll-target="#position-and-exercise-limits">8.4 Position and Exercise Limits</a></li>
+  </ul></li>
+  <li><a href="#regulatory-framework" id="toc-regulatory-framework" class="nav-link" data-scroll-target="#regulatory-framework">9. Regulatory Framework</a>
+  <ul class="collapse">
+  <li><a href="#supervising-authorities" id="toc-supervising-authorities" class="nav-link" data-scroll-target="#supervising-authorities">9.1 Supervising Authorities</a></li>
+  <li><a href="#self-regulatory-organization-sro-status" id="toc-self-regulatory-organization-sro-status" class="nav-link" data-scroll-target="#self-regulatory-organization-sro-status">9.2 Self-Regulatory Organization (SRO) Status</a></li>
+  <li><a href="#key-regulations" id="toc-key-regulations" class="nav-link" data-scroll-target="#key-regulations">9.3 Key Regulations</a></li>
+  <li><a href="#surveillance-market-integrity" id="toc-surveillance-market-integrity" class="nav-link" data-scroll-target="#surveillance-market-integrity">9.4 Surveillance &amp; Market Integrity</a></li>
+  <li><a href="#cross-border-operations" id="toc-cross-border-operations" class="nav-link" data-scroll-target="#cross-border-operations">9.5 Cross-Border Operations</a></li>
+  </ul></li>
+  <li><a href="#fees-revenue-model" id="toc-fees-revenue-model" class="nav-link" data-scroll-target="#fees-revenue-model">10. Fees &amp; Revenue Model</a>
+  <ul class="collapse">
+  <li><a href="#trading-fees-options-exchanges" id="toc-trading-fees-options-exchanges" class="nav-link" data-scroll-target="#trading-fees-options-exchanges">10.1 Trading Fees — Options Exchanges</a></li>
+  <li><a href="#trading-fees-cfe-futures" id="toc-trading-fees-cfe-futures" class="nav-link" data-scroll-target="#trading-fees-cfe-futures">10.2 Trading Fees — CFE Futures</a></li>
+  <li><a href="#market-data-fees" id="toc-market-data-fees" class="nav-link" data-scroll-target="#market-data-fees">10.3 Market Data Fees</a></li>
+  <li><a href="#connectivity-fees" id="toc-connectivity-fees" class="nav-link" data-scroll-target="#connectivity-fees">10.4 Connectivity Fees</a></li>
+  <li><a href="#revenue-breakdown-2025" id="toc-revenue-breakdown-2025" class="nav-link" data-scroll-target="#revenue-breakdown-2025">10.5 Revenue Breakdown (2025)</a></li>
+  </ul></li>
+  <li><a href="#recent-developments" id="toc-recent-developments" class="nav-link" data-scroll-target="#recent-developments">11. Recent Developments</a>
+  <ul class="collapse">
+  <li><a href="#technology-upgrades" id="toc-technology-upgrades" class="nav-link" data-scroll-target="#technology-upgrades">11.1 Technology Upgrades</a></li>
+  <li><a href="#new-products" id="toc-new-products" class="nav-link" data-scroll-target="#new-products">11.2 New Products</a></li>
+  <li><a href="#regulatory-changes" id="toc-regulatory-changes" class="nav-link" data-scroll-target="#regulatory-changes">11.3 Regulatory Changes</a></li>
+  <li><a href="#strategic-initiatives" id="toc-strategic-initiatives" class="nav-link" data-scroll-target="#strategic-initiatives">11.4 Strategic Initiatives</a></li>
+  </ul></li>
+  <li><a href="#derivatives-specific-product-catalog-contract-specifications" id="toc-derivatives-specific-product-catalog-contract-specifications" class="nav-link" data-scroll-target="#derivatives-specific-product-catalog-contract-specifications">Derivatives-Specific: Product Catalog &amp; Contract Specifications</a>
+  <ul class="collapse">
+  <li><a href="#key-product-categories" id="toc-key-product-categories" class="nav-link" data-scroll-target="#key-product-categories">Key Product Categories</a></li>
+  <li><a href="#contract-specifications-top-products" id="toc-contract-specifications-top-products" class="nav-link" data-scroll-target="#contract-specifications-top-products">Contract Specifications — Top Products</a></li>
+  <li><a href="#vix-index-proprietary-methodology" id="toc-vix-index-proprietary-methodology" class="nav-link" data-scroll-target="#vix-index-proprietary-methodology">VIX Index — Proprietary Methodology</a></li>
+  <li><a href="#margin-framework" id="toc-margin-framework" class="nav-link" data-scroll-target="#margin-framework">Margin Framework</a></li>
+  <li><a href="#position-limits" id="toc-position-limits" class="nav-link" data-scroll-target="#position-limits">Position Limits</a></li>
+  <li><a href="#block-trading-and-complex-order-handling" id="toc-block-trading-and-complex-order-handling" class="nav-link" data-scroll-target="#block-trading-and-complex-order-handling">Block Trading and Complex Order Handling</a></li>
+  </ul></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/asx_derivatives.html">Exchanges</a></li><li class="breadcrumb-item"><a href="../../../../qmd/02_derivatives/en/exchanges/cboe.html">Cboe Global Markets</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Cboe Global Markets</h1>
+<p class="subtitle lead">Derivatives &gt; Exchanges</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p><strong>Last Updated:</strong> 2026-04-06 <strong>Research Tier:</strong> Tier 2 <strong>Domain:</strong> Derivatives</p>
+</blockquote>
+<hr>
+<section id="overview-profile" class="level2">
+<h2 class="anchored" data-anchor-id="overview-profile">1. Overview &amp; Profile</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Official Name</td>
+<td>Cboe Global Markets, Inc.</td>
+</tr>
+<tr class="even">
+<td>Abbreviation</td>
+<td>Cboe (sub-exchanges: C1/Cboe Options, C2, BZX Options, EDGX Options; equities: BZX, BYX, EDGX, EDGA; futures: CFE)</td>
+</tr>
+<tr class="odd">
+<td>Website</td>
+<td>https://www.cboe.com</td>
+</tr>
+<tr class="even">
+<td>Year Established</td>
+<td>1973 (as Chicago Board Options Exchange); renamed Cboe Global Markets in 2017</td>
+</tr>
+<tr class="odd">
+<td>Country / City</td>
+<td>United States / Chicago, IL (headquarters); primary data center in Secaucus, NJ</td>
+</tr>
+<tr class="even">
+<td>Ownership Structure</td>
+<td>Publicly traded on Cboe BZX Exchange (ticker: CBOE); widely held institutional ownership</td>
+</tr>
+<tr class="odd">
+<td>Parent Company / Group</td>
+<td>Cboe Global Markets, Inc.</td>
+</tr>
+<tr class="even">
+<td>Regulatory Authority</td>
+<td>U.S. Securities and Exchange Commission (SEC) for options and equities exchanges; U.S. Commodity Futures Trading Commission (CFTC) for Cboe Futures Exchange (CFE); each exchange is a separately registered Self-Regulatory Organization (SRO)</td>
+</tr>
+<tr class="odd">
+<td>Market Capitalization</td>
+<td>~$29-31 billion (as of March 2026) [Source: MacroTrends, Yahoo Finance]</td>
+</tr>
+<tr class="even">
+<td>Annual Net Revenue (2025)</td>
+<td>$2.4 billion (record, +17% YoY) [Source: Cboe Q4 2025 earnings release, February 2026]</td>
+</tr>
+<tr class="odd">
+<td>Total Options ADV (2025)</td>
+<td>18.4 million contracts across four options exchanges — sixth consecutive record year [Source: Cboe full year 2025 volume report]</td>
+</tr>
+<tr class="even">
+<td>SPX Options ADV (2025)</td>
+<td>3.9 million contracts (record, +25% YoY); 59% comprised of 0DTE options [Source: Cboe full year 2025 volume report]</td>
+</tr>
+<tr class="odd">
+<td>Clearing House</td>
+<td>Options Clearing Corporation (OCC) for options; OCC also clears CFE futures</td>
+</tr>
+</tbody>
+</table>
+<section id="key-historical-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="key-historical-milestones">Key Historical Milestones</h3>
+<ul>
+<li><strong>1973:</strong> Chicago Board Options Exchange (CBOE) founded by the Chicago Board of Trade (CBOT); first exchange to list standardized, exchange-traded stock options. Trading commenced April 26, 1973, with call options on 16 underlying stocks</li>
+<li><strong>1975:</strong> Put options introduced on CBOE</li>
+<li><strong>1977:</strong> Options on individual equities expanded significantly</li>
+<li><strong>1983:</strong> S&amp;P 100 Index Options (OEX) launched — first index options</li>
+<li><strong>1993:</strong> Cboe Volatility Index (VIX) introduced, created by Professor Robert E. Whaley; initially measured implied volatility of S&amp;P 100 options</li>
+<li><strong>2003:</strong> VIX calculation methodology revised to be based on S&amp;P 500 (SPX) options using a wider strike range and a model-free approach</li>
+<li><strong>2004:</strong> VIX futures launched on Cboe Futures Exchange (CFE)</li>
+<li><strong>2006:</strong> VIX options launched on Cboe Options Exchange — became the most actively traded index option within five years</li>
+<li><strong>2010:</strong> Cboe demutualizes; Cboe Holdings completes IPO (ticker: CBOE) on NASDAQ (June)</li>
+<li><strong>2015:</strong> SPX Weeklys options expanded to Monday, Wednesday, and Friday expirations — precursor to 0DTE growth</li>
+<li><strong>2016:</strong> Cboe Holdings announces acquisition of BATS Global Markets for ~$3.2 billion (September)</li>
+<li><strong>2017:</strong> BATS acquisition completed (March); company renamed Cboe Global Markets, Inc.&nbsp;(October); gained four additional exchanges (BZX, BYX, EDGX, EDGA) and significant technology capabilities</li>
+<li><strong>2019:</strong> SPX options expanded to include Tuesday and Thursday expirations, enabling daily expirations (0DTE on every trading day)</li>
+<li><strong>2020:</strong> Cboe acquires Hanweck and FT Options (data analytics firms)</li>
+<li><strong>2021:</strong> Cboe acquires Chi-X Asia Pacific, establishing presence in Japan and Australia; Cboe acquires ErisX (digital asset exchange)</li>
+<li><strong>2022:</strong> 0DTE options trading explodes — SPX 0DTE surpasses 40% of total SPX volume; Cboe Titanium platform branded</li>
+<li><strong>2023-2024:</strong> Continued 0DTE growth; Cboe Global Cloud launched for market data distribution; Cboe Europe Derivatives launches</li>
+<li><strong>2025:</strong> Record net revenue of $2.4 billion; SPX options ADV of 3.9 million contracts (record); 0DTE reaches 59% of SPX volume; Magnificent 10 Index (MGTN) futures and options launched (December 2025); strategic review initiated — sale process for Cboe Australia and Cboe Canada</li>
+<li><strong>2026 (ongoing):</strong> Mini-SPX prediction market contract planned for Q2 2026; FLEX options launch in Europe (Q1 2026); expanded trading hours initiative under development</li>
+</ul>
+<p>[Source: Cboe Global Markets, Wikipedia; Cboe investor relations; Cboe press releases 2025-2026, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="market-structure" class="level2">
+<h2 class="anchored" data-anchor-id="market-structure">2. Market Structure</h2>
+<section id="exchange-segments" class="level3">
+<h3 class="anchored" data-anchor-id="exchange-segments">2.1 Exchange Segments</h3>
+<p>Cboe operates multiple separately registered exchanges across options, equities, and futures:</p>
+<p><strong>Options Exchanges (SEC-regulated):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 27%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Exchange</th>
+<th>MIC Code</th>
+<th>Description</th>
+<th>Key Products</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cboe Options Exchange (C1)</strong></td>
+<td>XCBO</td>
+<td>Flagship options exchange; exclusive home of SPX, VIX options</td>
+<td>SPX, VIX, RUT, proprietary index options</td>
+</tr>
+<tr class="even">
+<td><strong>Cboe C2 Exchange (C2)</strong></td>
+<td>C2OX</td>
+<td>Second options exchange; supports multi-listed and proprietary products</td>
+<td>Multi-listed equity options, select index options</td>
+</tr>
+<tr class="odd">
+<td><strong>Cboe BZX Options</strong></td>
+<td>BATO</td>
+<td>Maker-taker pricing model</td>
+<td>Multi-listed equity options</td>
+</tr>
+<tr class="even">
+<td><strong>Cboe EDGX Options</strong></td>
+<td>EDGO</td>
+<td>Maker-taker pricing model with customer priority</td>
+<td>Multi-listed equity options</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Equities Exchanges (SEC-regulated):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Exchange</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cboe BZX Equities</strong></td>
+<td>Maker-taker pricing; Cboe Market Close (CMC) auction</td>
+</tr>
+<tr class="even">
+<td><strong>Cboe BYX Equities</strong></td>
+<td>Inverted pricing (taker-maker)</td>
+</tr>
+<tr class="odd">
+<td><strong>Cboe EDGX Equities</strong></td>
+<td>Maker-taker pricing</td>
+</tr>
+<tr class="even">
+<td><strong>Cboe EDGA Equities</strong></td>
+<td>Inverted pricing (taker-maker)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Futures Exchange (CFTC-regulated):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 35%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Exchange</th>
+<th>Description</th>
+<th>Key Products</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cboe Futures Exchange (CFE)</strong></td>
+<td>Designated Contract Market (DCM) for volatility and other futures</td>
+<td>VIX futures, Mini VIX futures, MGTN futures</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="trading-sessions-hours" class="level3">
+<h3 class="anchored" data-anchor-id="trading-sessions-hours">2.2 Trading Sessions / Hours</h3>
+<p><strong>Options Exchanges (C1, C2, BZX Options, EDGX Options):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 24%">
+<col style="width: 26%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Session</th>
+<th>Time (CT)</th>
+<th>Time (UTC)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Global Trading Hours (GTH)</strong></td>
+<td>2:00 AM – 8:15 AM</td>
+<td>07:00–13:15 UTC</td>
+<td>Extended hours for select index options (SPX, VIX, OEX, RUT, XSP) on C1</td>
+</tr>
+<tr class="even">
+<td><strong>Pre-Open / Queuing</strong></td>
+<td>~8:20 AM – 8:30 AM</td>
+<td>~13:20–13:30 UTC</td>
+<td>Order queuing prior to opening rotation</td>
+</tr>
+<tr class="odd">
+<td><strong>Regular Trading Hours (RTH)</strong></td>
+<td>8:30 AM – 3:15 PM</td>
+<td>13:30–20:15 UTC</td>
+<td>Standard session for all options</td>
+</tr>
+<tr class="even">
+<td><strong>Extended Trading Close</strong></td>
+<td>3:15 PM – 4:15 PM</td>
+<td>20:15–21:15 UTC</td>
+<td>Select index options (SPX, VIX, RUT) continue trading</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cboe Futures Exchange (CFE):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 24%">
+<col style="width: 26%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Session</th>
+<th>Time (CT)</th>
+<th>Time (UTC)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Extended Trading Hours</strong></td>
+<td>5:00 PM (Sun) – 8:30 AM (Mon); 3:30 PM – 8:30 AM (Tue–Fri)</td>
+<td>22:00–13:30 UTC</td>
+<td>VIX futures pre-RTH session</td>
+</tr>
+<tr class="even">
+<td><strong>Regular Trading Hours</strong></td>
+<td>8:30 AM – 3:15 PM</td>
+<td>13:30–20:15 UTC</td>
+<td>Standard session</td>
+</tr>
+<tr class="odd">
+<td><strong>Post-Close</strong></td>
+<td>3:15 PM – 3:30 PM</td>
+<td>20:15–20:30 UTC</td>
+<td>Trade reporting</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Cboe, “Hours &amp; Holidays”; Cboe Options Exchange rules, accessed 2026-04-06]</p>
+</section>
+<section id="tick-sizes-selected-products" class="level3">
+<h3 class="anchored" data-anchor-id="tick-sizes-selected-products">2.3 Tick Sizes (Selected Products)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 36%">
+<col style="width: 38%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Minimum Tick (Premium &lt; $3.00)</th>
+<th>Minimum Tick (Premium &gt;= $3.00)</th>
+<th>Tick Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SPX Options</td>
+<td>$0.05</td>
+<td>$0.10</td>
+<td>$5.00 / $10.00</td>
+</tr>
+<tr class="even">
+<td>VIX Options</td>
+<td>$0.05</td>
+<td>$0.10</td>
+<td>$5.00 / $10.00</td>
+</tr>
+<tr class="odd">
+<td>XSP (Mini-SPX) Options</td>
+<td>$0.01</td>
+<td>$0.05</td>
+<td>$1.00 / $5.00</td>
+</tr>
+<tr class="even">
+<td>Multi-listed Equity Options (Penny Pilot)</td>
+<td>$0.01</td>
+<td>$0.05</td>
+<td>$1.00 / $5.00</td>
+</tr>
+<tr class="odd">
+<td>Multi-listed Equity Options (Non-Penny)</td>
+<td>$0.05</td>
+<td>$0.10</td>
+<td>$5.00 / $10.00</td>
+</tr>
+<tr class="even">
+<td>VIX Futures (VX)</td>
+<td>0.05 index points</td>
+<td>0.05 index points</td>
+<td>$50.00</td>
+</tr>
+<tr class="odd">
+<td>Mini VIX Futures</td>
+<td>0.05 index points</td>
+<td>0.05 index points</td>
+<td>$5.00</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="contract-multipliers-lot-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="contract-multipliers-lot-sizes">2.4 Contract Multipliers / Lot Sizes</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Multiplier / Contract Size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SPX Options</td>
+<td>$100 x S&amp;P 500 Index</td>
+</tr>
+<tr class="even">
+<td>XSP (Mini-SPX) Options</td>
+<td>$100 x 1/10th S&amp;P 500 Index</td>
+</tr>
+<tr class="odd">
+<td>VIX Options</td>
+<td>$100 x VIX Index</td>
+</tr>
+<tr class="even">
+<td>RUT (Russell 2000) Options</td>
+<td>$100 x Russell 2000 Index</td>
+</tr>
+<tr class="odd">
+<td>Equity Options</td>
+<td>100 shares per contract (standard)</td>
+</tr>
+<tr class="even">
+<td>VIX Futures (VX)</td>
+<td>$1,000 x VIX Index</td>
+</tr>
+<tr class="odd">
+<td>Mini VIX Futures</td>
+<td>$100 x VIX Index</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-maker-liquidity-provider-programs" class="level3">
+<h3 class="anchored" data-anchor-id="market-maker-liquidity-provider-programs">2.5 Market Maker / Liquidity Provider Programs</h3>
+<p>Cboe operates multiple market maker designations across its options exchanges:</p>
+<p><strong>Market Maker Types (C1 - Cboe Options Exchange):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Designated Primary Market Makers (DPMs)</strong></td>
+<td>Exclusive appointment in assigned classes; highest quoting obligations and participation rights; must provide continuous two-sided markets</td>
+</tr>
+<tr class="even">
+<td><strong>Lead Market Makers (LMMs)</strong></td>
+<td>Appointed in specific classes; priority allocation rights (e.g., up to 50% on public customer orders in assigned classes); quoting obligations</td>
+</tr>
+<tr class="odd">
+<td><strong>Market Makers (MMs)</strong></td>
+<td>Registered in specific classes; must maintain continuous two-sided quotes meeting width and size requirements</td>
+</tr>
+<tr class="even">
+<td><strong>Supplemental Liquidity Providers (SLPs)</strong></td>
+<td>Additional liquidity in SPX and VIX classes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Incentive Structure:</strong> - Tiered fee reductions based on volume thresholds - SPX and VIX-specific incentive programs rewarding quoting performance - SCORe (Select Customer Options Rebate) Program provides tier-based fee rebates for retail customer volume - Frequent Trader Program (FTID) aggregates customer volume across TPHs for tier-based rebates</p>
+<p>[Source: Cboe Exchange Rule Book; Cboe fee schedules, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="trading-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="trading-mechanism">3. Trading Mechanism</h2>
+<section id="auction-mechanisms" class="level3">
+<h3 class="anchored" data-anchor-id="auction-mechanisms">3.1 Auction Mechanisms</h3>
+<p>Cboe operates several electronic auction mechanisms for price improvement and order interaction:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 36%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Auction Type</th>
+<th>Description</th>
+<th>Duration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Opening Rotation</strong></td>
+<td>Electronic opening process that determines opening prices for each series; queued orders are matched at a single calculated price maximizing volume</td>
+<td>At market open</td>
+</tr>
+<tr class="even">
+<td><strong>Automated Improvement Mechanism (AIM)</strong></td>
+<td>Electronic auction for paired (agency/principal) orders; provides price improvement opportunity; initiating member receives participation right (up to 40%)</td>
+<td>Typically 100ms–1 second</td>
+</tr>
+<tr class="odd">
+<td><strong>Solicitation Auction Mechanism (SAM)</strong></td>
+<td>Similar to AIM but for solicited orders; allows members to solicit counterparty orders with price improvement exposure</td>
+<td>Typically 100ms–1 second</td>
+</tr>
+<tr class="even">
+<td><strong>Complex Order Auction (COA)</strong></td>
+<td>Auction for complex (multi-leg) orders; exposes complex orders for potential price improvement</td>
+<td>Exchange-determined period</td>
+</tr>
+<tr class="odd">
+<td><strong>Step-Up Mechanism (SUM)</strong></td>
+<td>Allows market makers to step up and provide price improvement</td>
+<td>Configurable</td>
+</tr>
+<tr class="even">
+<td><strong>FLEX Auction</strong></td>
+<td>Auction process for FLEX (customizable) options</td>
+<td>Per FLEX rules</td>
+</tr>
+</tbody>
+</table>
+<p>Additionally, Complex AIM (C-AIM), Complex SAM (C-SAM), FLEX AIM, and FLEX SAM variants are available.</p>
+</section>
+<section id="continuous-trading" class="level3">
+<h3 class="anchored" data-anchor-id="continuous-trading">3.2 Continuous Trading</h3>
+<ul>
+<li>Primary mechanism: continuous electronic matching on Cboe Titanium platform</li>
+<li>Orders matched in real-time according to price priority and the applicable allocation algorithm</li>
+<li>Supports simple (single-leg) orders, complex (multi-leg) orders, and stock-option orders</li>
+<li>Complex Order Book (COB) maintains a separate book for multi-leg strategies; complex orders can trade against the COB or be “legged” against the simple book when net pricing is favorable</li>
+</ul>
+</section>
+<section id="price-discovery" class="level3">
+<h3 class="anchored" data-anchor-id="price-discovery">3.3 Price Discovery</h3>
+<ul>
+<li><strong>Opening Rotation:</strong> Establishes opening prices through an electronic price discovery process</li>
+<li><strong>NBBO Integration:</strong> Options exchanges operate under the Options Order Protection and Locked/Crossed Markets Plan (Options Linkage Plan); must respect the National Best Bid and Offer (NBBO)</li>
+<li><strong>Complex Order Pricing:</strong> Complex orders can execute at a net price that may improve upon the individual leg NBBO, subject to net price requirements</li>
+<li><strong>VIX Settlement:</strong> Special Opening Quotation (SOQ) process uses the opening prices of selected SPX options to calculate the VIX settlement value on expiration mornings</li>
+</ul>
+</section>
+<section id="order-priority-rules-matching-algorithms" class="level3">
+<h3 class="anchored" data-anchor-id="order-priority-rules-matching-algorithms">3.4 Order Priority Rules / Matching Algorithms</h3>
+<p>Cboe uses price/time priority (FIFO) as its primary matching algorithm across options exchanges:</p>
+<p><strong>Priority Hierarchy:</strong> 1. <strong>Price Priority</strong> — better-priced orders always fill first 2. <strong>Customer Priority</strong> — public customer orders have priority over professional and firm orders at the same price (on C1 and EDGX Options) 3. <strong>Market Maker Participation Rights</strong> — DPMs/LMMs receive participation entitlements (configurable %, up to 50%) on certain order flow 4. <strong>Time Priority (FIFO)</strong> — among equal-priority orders at the same price, earliest order filled first 5. <strong>Pro-Rata</strong> — used in certain classes on specific exchanges [unverified for current product set]</p>
+<p><strong>Key Rules:</strong> - Public customer orders have priority over professional customer, broker-dealer, and market maker orders at the same price - Appointed market makers (DPM/LMM) may receive guaranteed participation percentages - Small order execution guarantees may apply for certain qualifying orders</p>
+<p>[Source: Cboe Exchange Rule Book, Rules 5.32-5.35; Cboe options trading documentation, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="order-types" class="level2">
+<h2 class="anchored" data-anchor-id="order-types">4. Order Types</h2>
+<section id="standard-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="standard-order-types">4.1 Standard Order Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Order Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Limit</strong></td>
+<td>Buy/sell at a specified price or better; unfilled quantity rests on the book</td>
+</tr>
+<tr class="even">
+<td><strong>Market</strong></td>
+<td>Executes at the best available price; subject to market order handling rules on each exchange</td>
+</tr>
+<tr class="odd">
+<td><strong>Stop</strong></td>
+<td>Triggered when the specified stop price is reached; becomes a market order</td>
+</tr>
+<tr class="even">
+<td><strong>Stop-Limit</strong></td>
+<td>Triggered at stop price; becomes a limit order at specified limit price</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-order-types">4.2 Advanced Order Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Order Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Complex / Spread Orders</strong></td>
+<td>Multi-leg orders submitted as a single strategy (e.g., vertical spread, straddle, butterfly, condor, calendar); executed at a net debit/credit price</td>
+</tr>
+<tr class="even">
+<td><strong>Stock-Option Orders</strong></td>
+<td>Paired equity and option legs submitted together</td>
+</tr>
+<tr class="odd">
+<td><strong>AIM Orders</strong></td>
+<td>Paired orders for the Automated Improvement Mechanism auction</td>
+</tr>
+<tr class="even">
+<td><strong>SAM Orders</strong></td>
+<td>Paired orders for the Solicitation Auction Mechanism</td>
+</tr>
+<tr class="odd">
+<td><strong>FLEX Orders</strong></td>
+<td>Customizable options with user-defined strike price, expiration date, exercise style, and settlement type</td>
+</tr>
+<tr class="even">
+<td><strong>All-or-None (AON)</strong></td>
+<td>Must be entirely filled or not at all</td>
+</tr>
+<tr class="odd">
+<td><strong>Minimum Quantity</strong></td>
+<td>Requires a minimum fill size</td>
+</tr>
+<tr class="even">
+<td><strong>Reserve / Iceberg</strong></td>
+<td>Displays only a portion of total order quantity</td>
+</tr>
+<tr class="odd">
+<td><strong>Qualified Contingent Cross (QCC)</strong></td>
+<td>Paired options order with stock contingency; exempt from exposure requirements; minimum 1,000 contracts</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="time-in-force-tif-conditions" class="level3">
+<h3 class="anchored" data-anchor-id="time-in-force-tif-conditions">4.3 Time-in-Force (TIF) Conditions</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TIF</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Day</strong></td>
+<td>Valid for the current trading session only</td>
+</tr>
+<tr class="even">
+<td><strong>Good Till Cancel (GTC)</strong></td>
+<td>Remains active until filled or cancelled</td>
+</tr>
+<tr class="odd">
+<td><strong>Good Till Date (GTD)</strong></td>
+<td>Remains active until a specified date</td>
+</tr>
+<tr class="even">
+<td><strong>Immediate or Cancel (IOC)</strong></td>
+<td>Executes immediately for available quantity; unfilled portion cancelled</td>
+</tr>
+<tr class="odd">
+<td><strong>Fill or Kill (FOK)</strong></td>
+<td>Must be filled entirely immediately or cancelled entirely</td>
+</tr>
+<tr class="even">
+<td><strong>Opening Only</strong></td>
+<td>Participates in the opening rotation only</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="order-modification-cancellation" class="level3">
+<h3 class="anchored" data-anchor-id="order-modification-cancellation">4.4 Order Modification &amp; Cancellation</h3>
+<ul>
+<li>Orders can be modified (price, quantity) or cancelled during trading sessions via BOE (Binary Order Entry) protocol</li>
+<li><strong>Mass Cancel:</strong> Functionality to cancel all working orders by session, product, or underlying</li>
+<li><strong>Cancel on Disconnect:</strong> Configurable feature that cancels working orders if the trading session disconnects</li>
+<li><strong>Kill Switch / Purge:</strong> Immediate cancellation of all resting orders and quotes (see Section 8 for risk management tools)</li>
+<li><strong>Self-Trade Prevention:</strong> Configurable to prevent matching of orders from the same firm</li>
+</ul>
+<p>[Source: Cboe US Options BOE Specification; Cboe Exchange Rule Book, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="trading-system-technology-cboe-titanium" class="level2">
+<h2 class="anchored" data-anchor-id="trading-system-technology-cboe-titanium">5. Trading System Technology — Cboe Titanium</h2>
+<section id="system-overview" class="level3">
+<h3 class="anchored" data-anchor-id="system-overview">5.1 System Overview</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Platform Name</td>
+<td>Cboe Titanium (Cboe Ti)</td>
+</tr>
+<tr class="even">
+<td>Origin</td>
+<td>Evolved from BATS Exchange technology (acquired 2017); originally built as a purpose-designed electronic exchange from ground up</td>
+</tr>
+<tr class="odd">
+<td>Architecture</td>
+<td>Distributed matching engine architecture with multiple matching units per exchange; latency-equalized connections between order handlers and matching engines</td>
+</tr>
+<tr class="even">
+<td>Primary Data Center</td>
+<td>Equinix NY5, Secaucus, NJ (U.S. operations); latency-equalized access from NY4 and NY6</td>
+</tr>
+<tr class="odd">
+<td>Secondary Data Center</td>
+<td>Disaster recovery site (undisclosed location) [unverified]</td>
+</tr>
+<tr class="even">
+<td>Latency</td>
+<td>~60% latency reduction achieved with Dedicated Cores service (U.S.); sub-100 microsecond order processing [unverified for exact figures]</td>
+</tr>
+<tr class="odd">
+<td>Throughput</td>
+<td>~200 billion orders and quotes processed in a single day across 27 global markets (peak day record); ~100 billion quotes and orders daily on U.S. options access architecture</td>
+</tr>
+<tr class="even">
+<td>Uptime</td>
+<td>100% uptime on 25 of 27 global platforms; &gt;99.9% across all platforms (2024)</td>
+</tr>
+<tr class="odd">
+<td>Global Platforms</td>
+<td>Powers 27 markets across U.S., UK, Europe, Japan, and Australia</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="system-history" class="level3">
+<h3 class="anchored" data-anchor-id="system-history">5.2 System History</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2005</td>
+<td>BATS Exchange founded as an all-electronic exchange with purpose-built technology</td>
+</tr>
+<tr class="even">
+<td>2006-2016</td>
+<td>BATS technology refined over 10+ years; known for low-latency, high-reliability architecture</td>
+</tr>
+<tr class="odd">
+<td>2017</td>
+<td>Cboe acquires BATS; begins migrating legacy CBOE systems to BATS-derived technology</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>Cboe Options (C1) migrated to the BATS technology platform (Feature Pack 4 integration)</td>
+</tr>
+<tr class="odd">
+<td>2022-2023</td>
+<td>Platform rebranded as “Cboe Titanium”</td>
+</tr>
+<tr class="even">
+<td>2024-2025</td>
+<td>Dedicated Cores service launched with 60% latency reduction; expansion to UK, EU, and Australia; Canada migration completed (~45.5% FIX latency improvement)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="protocol-stack" class="level3">
+<h3 class="anchored" data-anchor-id="protocol-stack">5.3 Protocol Stack</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 28%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Protocol</th>
+<th>Purpose</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>BOE (Binary Order Entry)</strong></td>
+<td>Order entry</td>
+<td>Proprietary binary protocol for order submission, modification, cancellation; current versions BOE v2 and BOE v3</td>
+</tr>
+<tr class="even">
+<td><strong>FIX</strong></td>
+<td>Order entry (alternative)</td>
+<td>FIX 4.2-based protocol for order entry; higher latency than BOE</td>
+</tr>
+<tr class="odd">
+<td><strong>Multicast PITCH</strong></td>
+<td>Market data (L3 depth)</td>
+<td>Full depth-of-book data via UDP multicast; provides individual order adds, modifies, cancels, and executions</td>
+</tr>
+<tr class="even">
+<td><strong>Multicast TOP</strong></td>
+<td>Market data (L1 top)</td>
+<td>Top-of-book quotations via UDP multicast; significantly reduced bandwidth vs.&nbsp;PITCH</td>
+</tr>
+<tr class="odd">
+<td><strong>Complex PITCH</strong></td>
+<td>Market data (complex book)</td>
+<td>Complex order book depth data</td>
+</tr>
+<tr class="even">
+<td><strong>TCP PITCH</strong></td>
+<td>Market data (TCP)</td>
+<td>PITCH data delivered over TCP for gap recovery and lower-bandwidth connections</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="disaster-recovery-business-continuity" class="level3">
+<h3 class="anchored" data-anchor-id="disaster-recovery-business-continuity">5.4 Disaster Recovery / Business Continuity</h3>
+<ul>
+<li>Secondary data center for failover operations</li>
+<li>Cboe Global Cloud (AWS-based) provides geographic diversity for market data distribution</li>
+<li>Platform designed with multiple matching units per exchange; single matching unit failure does not take down entire exchange</li>
+<li>Regular DR testing and BCP exercises [unverified for specific frequency]</li>
+<li>Latency equalization across NY4, NY5, and NY6 data centers provides infrastructure redundancy</li>
+</ul>
+<p>[Source: Cboe Titanium page; Cboe connectivity manuals; Cboe press releases; StockTitan news, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="market-data" class="level2">
+<h2 class="anchored" data-anchor-id="market-data">6. Market Data</h2>
+<section id="feed-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="feed-protocols">6.1 Feed Protocols</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feed</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Multicast PITCH</strong></td>
+<td>L3 Depth of Book</td>
+<td>Full order-by-order data including adds, modifies, cancels, executions; delivered via UDP multicast by matching unit</td>
+</tr>
+<tr class="even">
+<td><strong>Multicast TOP</strong></td>
+<td>L1 Top of Book</td>
+<td>Best bid/offer and last sale data; reduced bandwidth compared to PITCH</td>
+</tr>
+<tr class="odd">
+<td><strong>Complex Multicast PITCH</strong></td>
+<td>Complex book depth</td>
+<td>Depth-of-book for the Complex Order Book</td>
+</tr>
+<tr class="even">
+<td><strong>Complex Auction Multicast PITCH</strong></td>
+<td>Auction notifications</td>
+<td>Real-time auction notifications for complex order auctions</td>
+</tr>
+<tr class="odd">
+<td><strong>Cboe One Options Feed</strong></td>
+<td>Consolidated L1</td>
+<td>Single feed aggregating top-of-book data across all four Cboe options exchanges</td>
+</tr>
+<tr class="even">
+<td><strong>TCP PITCH</strong></td>
+<td>Recovery</td>
+<td>PITCH data via TCP for gap fill; Gap Request Proxy (GRP) servers provide retransmission</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-levels" class="level3">
+<h3 class="anchored" data-anchor-id="data-levels">6.2 Data Levels</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 34%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Content</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Level 1 (TOP)</strong></td>
+<td>BBO, last sale, volume</td>
+<td>Retail trading, display systems</td>
+</tr>
+<tr class="even">
+<td><strong>Level 2 (PITCH summary)</strong></td>
+<td>Aggregated depth by price level</td>
+<td>Professional trading</td>
+</tr>
+<tr class="odd">
+<td><strong>Level 3 (PITCH full)</strong></td>
+<td>Individual order-by-order data</td>
+<td>HFT, market making, surveillance</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="data-distribution">6.3 Data Distribution</h3>
+<ul>
+<li><strong>Direct Feeds:</strong> Available via co-located connections in Cboe data centers (NY4, NY5, NY6)</li>
+<li><strong>Cboe Global Cloud:</strong> AWS-based global distribution platform; delivers Cboe market data from geographically diverse locations; does not require a cloud account — supports on-premises and third-party infrastructure connectivity</li>
+<li><strong>Securities Information Processors (SIPs):</strong> Cboe data contributed to OPRA (Options Price Reporting Authority) for consolidated options tape</li>
+<li><strong>Third-Party Vendors:</strong> Cboe data available through major market data vendors (Bloomberg, Refinitiv/LSEG, ICE, etc.)</li>
+</ul>
+</section>
+<section id="historical-data" class="level3">
+<h3 class="anchored" data-anchor-id="historical-data">6.4 Historical Data</h3>
+<ul>
+<li><strong>Cboe DataShop</strong> (datashop.cboe.com): Self-service platform for historical market data</li>
+<li>Products include: historical PITCH data, end-of-day options data, VIX index history, options settlement data</li>
+<li><strong>Cboe LiveVol:</strong> Options analytics and historical data platform (acquired via LiveVol acquisition)</li>
+<li><strong>Cboe Data Vantage:</strong> Data and analytics business segment; net revenue growth guided at mid-to-high single digits for 2026</li>
+</ul>
+<p>[Source: Cboe market data specifications; Cboe Global Cloud FAQ; Cboe DataShop, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="connectivity-access" class="level2">
+<h2 class="anchored" data-anchor-id="connectivity-access">7. Connectivity &amp; Access</h2>
+<section id="membership-access" class="level3">
+<h3 class="anchored" data-anchor-id="membership-access">7.1 Membership / Access</h3>
+<p><strong>Options Exchanges:</strong> - Trading Permit Holder (TPH) status required to trade directly on Cboe options exchanges - Application process includes assessment of operational capability, personnel experience, and financial condition - TPH categories: Market Maker, Floor Broker (C1 only — limited open outcry), Electronic Access Permit</p>
+<p><strong>Cboe Futures Exchange:</strong> - Trading Privilege Holder (TPH) status required for direct access to CFE - Clearing member must be a member of OCC</p>
+</section>
+<section id="connection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="connection-methods">7.2 Connection Methods</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cboe Connect</strong></td>
+<td>Cboe’s managed network offering competitive microsecond round-trip latency; provides connectivity across multiple Cboe markets</td>
+</tr>
+<tr class="even">
+<td><strong>Cross-Connect</strong></td>
+<td>Direct physical connection within Cboe data centers (NY4, NY5, NY6)</td>
+</tr>
+<tr class="odd">
+<td><strong>Extranet / Third-Party Networks</strong></td>
+<td>Access via financial extranets (e.g., TNS, IPC, Avelacom)</td>
+</tr>
+<tr class="even">
+<td><strong>Cboe Global Cloud</strong></td>
+<td>Cloud-based connectivity via AWS for market data access (not for order entry)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="co-location" class="level3">
+<h3 class="anchored" data-anchor-id="co-location">7.3 Co-Location</h3>
+<ul>
+<li>Primary co-location facility: Equinix NY5, Secaucus, NJ</li>
+<li>Additional latency-equalized access points: Equinix NY4 and NY6</li>
+<li>Cboe ensures equal fiber length between order handlers and matching engines across data centers</li>
+<li><strong>Europe:</strong> Equinix LD4 (primary), Equinix LD3 (secondary) for Cboe Europe operations</li>
+</ul>
+</section>
+<section id="api-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="api-protocols">7.4 API Protocols</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 17%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Protocol</th>
+<th>Use</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>BOE v2 / BOE v3</strong></td>
+<td>Order entry</td>
+<td>Proprietary binary protocol; lowest latency</td>
+</tr>
+<tr class="even">
+<td><strong>FIX 4.2</strong></td>
+<td>Order entry</td>
+<td>Industry-standard protocol; higher latency than BOE</td>
+</tr>
+<tr class="odd">
+<td><strong>Multicast UDP</strong></td>
+<td>Market data</td>
+<td>PITCH and TOP feeds</td>
+</tr>
+<tr class="even">
+<td><strong>TCP</strong></td>
+<td>Market data recovery</td>
+<td>TCP PITCH for gap requests and retransmission</td>
+</tr>
+<tr class="odd">
+<td><strong>Web API / REST</strong></td>
+<td>Reference data, auction data</td>
+<td>Cboe web-based APIs for non-latency-sensitive operations [unverified]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="certification-testing" class="level3">
+<h3 class="anchored" data-anchor-id="certification-testing">7.5 Certification / Testing</h3>
+<ul>
+<li>New members must complete certification testing before being granted production access</li>
+<li>Cboe provides test environments (certification environments) for all protocols (BOE, FIX, PITCH)</li>
+<li>Separate certification required for each exchange and protocol type</li>
+<li>Risk management tool configuration testing required</li>
+</ul>
+<p>[Source: Cboe connectivity manuals; Cboe membership pages; Cboe Global Cloud FAQ, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="risk-controls-circuit-breakers" class="level2">
+<h2 class="anchored" data-anchor-id="risk-controls-circuit-breakers">8. Risk Controls &amp; Circuit Breakers</h2>
+<section id="market-wide-circuit-breakers-mwcb" class="level3">
+<h3 class="anchored" data-anchor-id="market-wide-circuit-breakers-mwcb">8.1 Market-Wide Circuit Breakers (MWCB)</h3>
+<p>Cboe participates in the U.S. market-wide circuit breaker program, coordinated across all U.S. equities, options, and futures exchanges:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 44%">
+<col style="width: 22%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Threshold (S&amp;P 500 decline)</th>
+<th>Halt Duration</th>
+<th>Time Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Level 1</strong></td>
+<td>7%</td>
+<td>15-minute halt</td>
+<td>Before 3:25 PM ET only</td>
+</tr>
+<tr class="even">
+<td><strong>Level 2</strong></td>
+<td>13%</td>
+<td>15-minute halt</td>
+<td>Before 3:25 PM ET only</td>
+</tr>
+<tr class="odd">
+<td><strong>Level 3</strong></td>
+<td>20%</td>
+<td>Trading halted for remainder of day</td>
+<td>Any time</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="limit-up-limit-down-luld" class="level3">
+<h3 class="anchored" data-anchor-id="limit-up-limit-down-luld">8.2 Limit Up-Limit Down (LULD)</h3>
+<ul>
+<li>Cboe participates in the LULD Plan for individual securities</li>
+<li>Options trading halts are triggered when the underlying equity is halted under LULD</li>
+<li>Price bands calculated based on reference prices; securities halted for 5 minutes if no trading occurs within the bands</li>
+</ul>
+</section>
+<section id="pre-trade-risk-controls" class="level3">
+<h3 class="anchored" data-anchor-id="pre-trade-risk-controls">8.3 Pre-Trade Risk Controls</h3>
+<p>Cboe provides comprehensive risk management tools to all Trading Permit Holders:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Purge (Kill Switch)</strong></td>
+<td>Immediately cancels all resting orders and quotes across specified exchange(s)</td>
+</tr>
+<tr class="even">
+<td><strong>Risk Monitor Mechanism</strong></td>
+<td>Configurable parameters to prevent unwanted executions based on: contract quantity executed, notional volume, and time window</td>
+</tr>
+<tr class="odd">
+<td><strong>Fat Finger / Price Reasonability</strong></td>
+<td>Exchange-level price reasonability checks on incoming orders</td>
+</tr>
+<tr class="even">
+<td><strong>Order Size Limits</strong></td>
+<td>Maximum order size limits configurable by member</td>
+</tr>
+<tr class="odd">
+<td><strong>Drill-Through Protection</strong></td>
+<td>Prevents orders from executing through multiple price levels beyond a configurable threshold</td>
+</tr>
+<tr class="even">
+<td><strong>Cancel on Disconnect</strong></td>
+<td>Automatic cancellation of working orders upon session disconnection</td>
+</tr>
+<tr class="odd">
+<td><strong>Repeated Automated Execution Protection</strong></td>
+<td>Prevents market makers from being repeatedly picked off during fast markets</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="position-and-exercise-limits" class="level3">
+<h3 class="anchored" data-anchor-id="position-and-exercise-limits">8.4 Position and Exercise Limits</h3>
+<ul>
+<li>Position limits for equity options are set per Cboe Exchange rules (typically 25,000 to 250,000 contracts depending on underlying liquidity and capitalization)</li>
+<li>Index options (SPX, VIX) — position limits have been significantly expanded or effectively eliminated for certain classes:
+<ul>
+<li>SPX options: no position limits (removed via SEC approval) [unverified for current status]</li>
+<li>VIX options: subject to position limits with hedge exemptions available</li>
+</ul></li>
+<li>Exercise limits generally equal position limits</li>
+<li>Large trader reporting required above specified thresholds (CFTC and SEC large trader reporting)</li>
+</ul>
+<p>[Source: Cboe Market-Wide Circuit Breaker FAQ; Cboe US Options Risk Management Specification; Cboe Exchange Rule Book, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="regulatory-framework" class="level2">
+<h2 class="anchored" data-anchor-id="regulatory-framework">9. Regulatory Framework</h2>
+<section id="supervising-authorities" class="level3">
+<h3 class="anchored" data-anchor-id="supervising-authorities">9.1 Supervising Authorities</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 61%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Authority</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SEC (Securities and Exchange Commission)</strong></td>
+<td>Oversees all Cboe options and equities exchanges as registered national securities exchanges</td>
+</tr>
+<tr class="even">
+<td><strong>CFTC (Commodity Futures Trading Commission)</strong></td>
+<td>Oversees Cboe Futures Exchange (CFE) as a Designated Contract Market (DCM)</td>
+</tr>
+<tr class="odd">
+<td><strong>OCC (Options Clearing Corporation)</strong></td>
+<td>Central counterparty clearing for all Cboe options and CFE futures; itself regulated by SEC and CFTC as a Systemically Important Financial Market Utility (SIFMU)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="self-regulatory-organization-sro-status" class="level3">
+<h3 class="anchored" data-anchor-id="self-regulatory-organization-sro-status">9.2 Self-Regulatory Organization (SRO) Status</h3>
+<ul>
+<li>Each Cboe exchange is a separately registered SRO</li>
+<li>SRO responsibilities include: rule enforcement, member supervision, market surveillance, and disciplinary proceedings</li>
+<li>Cboe’s Regulatory Division monitors trading activity, detects potential market manipulation, and investigates suspicious activity</li>
+</ul>
+</section>
+<section id="key-regulations" class="level3">
+<h3 class="anchored" data-anchor-id="key-regulations">9.3 Key Regulations</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Regulation</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Regulation SHO</strong></td>
+<td>Short sale regulation applicable to equity options exercises</td>
+</tr>
+<tr class="even">
+<td><strong>Regulation NMS</strong></td>
+<td>National Market System rules; Options Linkage Plan ensures price protection across exchanges</td>
+</tr>
+<tr class="odd">
+<td><strong>Regulation SCI</strong></td>
+<td>Systems Compliance and Integrity — requires robust technology governance for SCI entities</td>
+</tr>
+<tr class="even">
+<td><strong>SEC Rule 15c3-5</strong></td>
+<td>Market access rule — requires risk controls for broker-dealer access</td>
+</tr>
+<tr class="odd">
+<td><strong>CFTC Part 38</strong></td>
+<td>Designated Contract Market rules for CFE</td>
+</tr>
+<tr class="even">
+<td><strong>Dodd-Frank Act</strong></td>
+<td>Title VII provisions applicable to swaps; Title VIII (SIFMU) applicable to OCC</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="surveillance-market-integrity" class="level3">
+<h3 class="anchored" data-anchor-id="surveillance-market-integrity">9.4 Surveillance &amp; Market Integrity</h3>
+<ul>
+<li>Cboe’s Market Regulation Department conducts real-time surveillance using advanced technology systems</li>
+<li>Cross-market surveillance through the Intermarket Surveillance Group (ISG)</li>
+<li>Large Options Position Reporting (LOPR) to the OCC for position monitoring</li>
+<li>Options Regulatory Surveillance Authority (ORSA) — consolidated surveillance for listed options across exchanges</li>
+</ul>
+</section>
+<section id="cross-border-operations" class="level3">
+<h3 class="anchored" data-anchor-id="cross-border-operations">9.5 Cross-Border Operations</h3>
+<ul>
+<li>Cboe Europe: operates as a Recognised Investment Exchange (RIE) in the UK and a Regulated Market under MiFID II in the EU (Netherlands)</li>
+<li>Cboe Japan: operates as a Proprietary Trading System (PTS)</li>
+<li>Cboe Australia: operates under Australian Market Licence (sale process initiated in 2025)</li>
+<li>Cboe Canada: operates as an Alternative Trading System (ATS) and exchange (sale process initiated in 2025)</li>
+</ul>
+<p>[Source: Cboe Exchange Rule Book; SEC registrations; Cboe regulatory pages, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="fees-revenue-model" class="level2">
+<h2 class="anchored" data-anchor-id="fees-revenue-model">10. Fees &amp; Revenue Model</h2>
+<section id="trading-fees-options-exchanges" class="level3">
+<h3 class="anchored" data-anchor-id="trading-fees-options-exchanges">10.1 Trading Fees — Options Exchanges</h3>
+<p>Cboe options exchanges operate with differentiated fee models:</p>
+<p><strong>Cboe Options Exchange (C1) — Select Fee Examples (as of March 2026):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>SPX (per contract)</th>
+<th>VIX (per contract)</th>
+<th>Multi-listed Equity (per contract)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Customer</td>
+<td>$0.18–$0.47 (tiered)</td>
+<td>$0.15–$0.45 (tiered)</td>
+<td>$0.00–$0.25 (tiered)</td>
+</tr>
+<tr class="even">
+<td>Market Maker</td>
+<td>Varies by class/tier</td>
+<td>Varies by class/tier</td>
+<td>Varies by appointment</td>
+</tr>
+<tr class="odd">
+<td>Firm / Broker-Dealer</td>
+<td>$0.15–$0.50</td>
+<td>$0.15–$0.50</td>
+<td>$0.02–$0.50</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Exact fees vary significantly by volume tier, capacity (customer/professional/market maker), and specific program participation. Consult current fee schedule for precise rates.</p>
+<p><strong>Fee Models by Exchange:</strong> - <strong>C1 (Cboe Options):</strong> Pro-rata pricing; no explicit maker-taker for proprietary products - <strong>BZX Options:</strong> Maker-taker pricing with rebates for adding liquidity - <strong>EDGX Options:</strong> Maker-taker pricing with customer priority - <strong>C2:</strong> Fee structure varies by product class</p>
+</section>
+<section id="trading-fees-cfe-futures" class="level3">
+<h3 class="anchored" data-anchor-id="trading-fees-cfe-futures">10.2 Trading Fees — CFE Futures</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Transaction Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VIX Futures (VX)</td>
+<td>$0.47–$1.32 per contract (tiered by volume)</td>
+</tr>
+<tr class="even">
+<td>Mini VIX Futures</td>
+<td>$0.10–$0.30 per contract (tiered) [unverified]</td>
+</tr>
+<tr class="odd">
+<td>Surcharges</td>
+<td>Regulatory fees, clearing fees, and exchange fees apply additionally</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="market-data-fees" class="level3">
+<h3 class="anchored" data-anchor-id="market-data-fees">10.3 Market Data Fees</h3>
+<ul>
+<li>Real-time data fees for PITCH (depth), TOP (top-of-book), and consolidated feeds</li>
+<li>Cboe One Options Feed: consolidated L1 data across all four options exchanges</li>
+<li>Historical data available via Cboe DataShop</li>
+<li>Cboe Data Vantage segment: growing revenue driver (~mid-to-high single digit organic growth target for 2026)</li>
+</ul>
+</section>
+<section id="connectivity-fees" class="level3">
+<h3 class="anchored" data-anchor-id="connectivity-fees">10.4 Connectivity Fees</h3>
+<ul>
+<li>Co-location fees in Cboe data centers (NY4, NY5, NY6)</li>
+<li>Cboe Connect network access fees</li>
+<li>Port fees for logical connections per exchange</li>
+<li>Cboe Global Cloud access fees for market data distribution</li>
+</ul>
+</section>
+<section id="revenue-breakdown-2025" class="level3">
+<h3 class="anchored" data-anchor-id="revenue-breakdown-2025">10.5 Revenue Breakdown (2025)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Segment</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Options</strong></td>
+<td>Largest segment; driven by SPX, VIX, multi-listed equity options; net revenue up 34% in 2025</td>
+</tr>
+<tr class="even">
+<td><strong>North American Equities</strong></td>
+<td>Four equities exchanges; transaction and market data fees</td>
+</tr>
+<tr class="odd">
+<td><strong>Futures</strong></td>
+<td>CFE — VIX futures and related products</td>
+</tr>
+<tr class="even">
+<td><strong>Europe &amp; APAC</strong></td>
+<td>Cboe Europe, Japan, Australia equities/derivatives</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Vantage</strong></td>
+<td>Market data, analytics, index licensing</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td>$2.4 billion net revenue (2025 record)</td>
+</tr>
+</tbody>
+</table>
+<p>[Source: Cboe fee schedules (C1, C2, BZX, EDGX, CFE); Cboe Q4 2025 earnings release, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="recent-developments" class="level2">
+<h2 class="anchored" data-anchor-id="recent-developments">11. Recent Developments</h2>
+<section id="technology-upgrades" class="level3">
+<h3 class="anchored" data-anchor-id="technology-upgrades">11.1 Technology Upgrades</h3>
+<ul>
+<li><strong>Cboe Titanium Dedicated Cores:</strong> Launched with 60% latency reduction for U.S. customers; expanding to Europe and Asia Pacific</li>
+<li><strong>BOE v3:</strong> Next-generation binary order entry protocol being rolled out across exchanges</li>
+<li><strong>NY6 Integration:</strong> Cboe expanding latency-equalized connectivity to Equinix NY6 data center in Secaucus</li>
+<li><strong>Cboe Global Cloud Expansion:</strong> Ongoing expansion of cloud-based market data distribution via AWS</li>
+</ul>
+</section>
+<section id="new-products" class="level3">
+<h3 class="anchored" data-anchor-id="new-products">11.2 New Products</h3>
+<ul>
+<li><strong>Magnificent 10 Index (MGTN):</strong> Futures and options launched December 8, 2025, on the Cboe Magnificent 10 Index tracking 10 large-cap U.S. tech/growth stocks</li>
+<li><strong>Mini-SPX Prediction Market:</strong> Planned for Q2 2026; uses traditional options wrapper for fixed-return outcome-based trading; will be listed on C1 and cleared by OCC</li>
+<li><strong>FLEX Options in Europe:</strong> Cboe Europe Derivatives launched FLEX options in Q1 2026, enabling institutional customization of strike, expiry, settlement, and exercise style</li>
+<li><strong>Options on VIX Futures:</strong> Available on CFE, providing additional VIX-complex trading instruments</li>
+<li><strong>Expanded Trading Hours Initiative:</strong> Under development for potential extension of trading hours for key products</li>
+</ul>
+</section>
+<section id="regulatory-changes" class="level3">
+<h3 class="anchored" data-anchor-id="regulatory-changes">11.3 Regulatory Changes</h3>
+<ul>
+<li><strong>Prediction Markets Framework:</strong> Cboe introduced innovative prediction markets framework expanding beyond yes-or-no outcomes (announced early 2026)</li>
+<li><strong>Auction Response Processing:</strong> SEC proceedings underway regarding proposed rule changes to auction response processing on C1 (SR-CBOE-2025-090)</li>
+<li><strong>Position Limit Reviews:</strong> Ongoing regulatory reviews of position and exercise limits for index options</li>
+</ul>
+</section>
+<section id="strategic-initiatives" class="level3">
+<h3 class="anchored" data-anchor-id="strategic-initiatives">11.4 Strategic Initiatives</h3>
+<ul>
+<li><strong>Strategic Realignment:</strong> Sale process initiated for Cboe Australia and Cboe Canada; exit from U.S. and European corporate listings; focus on core derivatives and data businesses</li>
+<li><strong>0DTE Growth:</strong> Continued expansion of same-day expiry options — 0DTE SPX options represented 59% of total SPX volume in 2025 (ADV of 2.3 million contracts); exploring 0DTE expansion to single-name equity options</li>
+<li><strong>Data Vantage Growth:</strong> Mid-to-high single digit organic growth target for 2026; index licensing and analytics</li>
+<li><strong>2026 Revenue Guidance:</strong> Mid-single-digit organic total net revenue growth; adjusted operating expenses $864-$879 million</li>
+</ul>
+<p>[Source: Cboe press releases 2025-2026; Cboe Q4 2025 earnings call; SEC filings, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="derivatives-specific-product-catalog-contract-specifications" class="level2">
+<h2 class="anchored" data-anchor-id="derivatives-specific-product-catalog-contract-specifications">Derivatives-Specific: Product Catalog &amp; Contract Specifications</h2>
+<section id="key-product-categories" class="level3">
+<h3 class="anchored" data-anchor-id="key-product-categories">Key Product Categories</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Products</th>
+<th>Exchange</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Proprietary Index Options</strong></td>
+<td>SPX, XSP (Mini-SPX), VIX, RUT, MRUT, MGTN, DJX, OEX, XEO</td>
+<td>C1 (exclusive)</td>
+</tr>
+<tr class="even">
+<td><strong>Multi-Listed Equity Options</strong></td>
+<td>Options on ~3,500+ individual U.S. equities</td>
+<td>C1, C2, BZX Options, EDGX Options</td>
+</tr>
+<tr class="odd">
+<td><strong>ETF Options</strong></td>
+<td>SPY, QQQ, IWM, and other ETF options (multi-listed)</td>
+<td>All four options exchanges</td>
+</tr>
+<tr class="even">
+<td><strong>Volatility Futures</strong></td>
+<td>VIX futures (VX), Mini VIX futures</td>
+<td>CFE</td>
+</tr>
+<tr class="odd">
+<td><strong>Volatility Options on Futures</strong></td>
+<td>Options on VX futures</td>
+<td>CFE</td>
+</tr>
+<tr class="even">
+<td><strong>FLEX Options</strong></td>
+<td>Customizable index and equity options</td>
+<td>C1</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="contract-specifications-top-products" class="level3">
+<h3 class="anchored" data-anchor-id="contract-specifications-top-products">Contract Specifications — Top Products</h3>
+<p><strong>SPX Options (S&amp;P 500 Index Options):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Underlying</td>
+<td>S&amp;P 500 Index</td>
+</tr>
+<tr class="even">
+<td>Multiplier</td>
+<td>$100</td>
+</tr>
+<tr class="odd">
+<td>Exercise Style</td>
+<td>European (no early exercise)</td>
+</tr>
+<tr class="even">
+<td>Settlement</td>
+<td>Cash-settled; AM-settled (standard monthly/quarterly) or PM-settled (Weeklys, End-of-Month, 0DTE)</td>
+</tr>
+<tr class="odd">
+<td>Expirations</td>
+<td>Daily (Mon-Fri), weekly, monthly, quarterly, end-of-month; LEAPS up to 5 years</td>
+</tr>
+<tr class="even">
+<td>Strike Intervals</td>
+<td>$5 for near-term, $25 for far-term; $1 intervals available near-the-money in near-term expirations</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>$0.05 (premium &lt; $3.00); $0.10 (premium &gt;= $3.00)</td>
+</tr>
+<tr class="even">
+<td>Trading Hours</td>
+<td>GTH: 2:00 AM – 8:15 AM CT; RTH: 8:30 AM – 3:15 PM CT; Extended close: 3:15 PM – 4:15 PM CT</td>
+</tr>
+<tr class="odd">
+<td>Settlement Calculation</td>
+<td>AM: Special Opening Quotation (SOQ) using opening prices of component stocks; PM: closing prices of component stocks</td>
+</tr>
+<tr class="even">
+<td>ADV (2025)</td>
+<td>3.9 million contracts (record); 0DTE comprised 59% (~2.3 million ADV)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>VIX Options (Cboe Volatility Index Options):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Underlying</td>
+<td>Cboe Volatility Index (VIX)</td>
+</tr>
+<tr class="even">
+<td>Multiplier</td>
+<td>$100</td>
+</tr>
+<tr class="odd">
+<td>Exercise Style</td>
+<td>European</td>
+</tr>
+<tr class="even">
+<td>Settlement</td>
+<td>Cash-settled; AM-settled using Special Opening Quotation (SOQ) of VIX</td>
+</tr>
+<tr class="odd">
+<td>Expirations</td>
+<td>Weekly, monthly, and Weeklys series</td>
+</tr>
+<tr class="even">
+<td>Strike Intervals</td>
+<td>0.50 index points for near-term; 1.00 for far-term</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>$0.05 (premium &lt; $3.00); $0.10 (premium &gt;= $3.00)</td>
+</tr>
+<tr class="even">
+<td>Trading Hours</td>
+<td>GTH: 2:00 AM – 8:15 AM CT; RTH: 8:30 AM – 3:15 PM CT; Extended close: 3:15 PM – 4:15 PM CT</td>
+</tr>
+</tbody>
+</table>
+<p><strong>VIX Futures:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Underlying</td>
+<td>Cboe Volatility Index (VIX)</td>
+</tr>
+<tr class="even">
+<td>Contract Size</td>
+<td>$1,000 x VIX</td>
+</tr>
+<tr class="odd">
+<td>Tick Size</td>
+<td>0.05 index points ($50.00 per tick)</td>
+</tr>
+<tr class="even">
+<td>Settlement</td>
+<td>Cash-settled; final settlement value calculated using SOQ of VIX</td>
+</tr>
+<tr class="odd">
+<td>Expirations</td>
+<td>Up to 6 near-term weekly, 9 near-term monthly, and 5 quarterly expirations</td>
+</tr>
+<tr class="even">
+<td>Trading Hours</td>
+<td>Extended: 5:00 PM Sun – 8:30 AM Mon CT; 3:30 PM – 8:30 AM Tue-Fri CT; RTH: 8:30 AM – 3:15 PM CT</td>
+</tr>
+<tr class="odd">
+<td>Exchange</td>
+<td>Cboe Futures Exchange (CFE)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>0DTE (Zero Days to Expiration) Options:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Definition</td>
+<td>Options expiring on the same day they are traded</td>
+</tr>
+<tr class="even">
+<td>Availability</td>
+<td>SPX options expire every trading day (Monday through Friday)</td>
+</tr>
+<tr class="odd">
+<td>Key Driver</td>
+<td>Introduction of daily SPX expirations (completed 2022 with Tuesday/Thursday additions)</td>
+</tr>
+<tr class="even">
+<td>2025 Volume</td>
+<td>ADV of ~2.3 million contracts; 59% of total SPX volume; reached 62% in August 2025</td>
+</tr>
+<tr class="odd">
+<td>Settlement</td>
+<td>PM-settled (closing prices of component stocks)</td>
+</tr>
+<tr class="even">
+<td>Use Cases</td>
+<td>Intraday hedging, premium selling, gamma scalping, event-day trades, retail speculation</td>
+</tr>
+<tr class="odd">
+<td>Risk Note</td>
+<td>Rapid theta decay and gamma acceleration; OCC and regulators monitor for systemic risk</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vix-index-proprietary-methodology" class="level3">
+<h3 class="anchored" data-anchor-id="vix-index-proprietary-methodology">VIX Index — Proprietary Methodology</h3>
+<p>The VIX Index is Cboe’s proprietary measure of 30-day expected volatility of the S&amp;P 500 Index:</p>
+<ul>
+<li><strong>Calculation:</strong> Uses a model-free methodology based on real-time prices of a wide range of SPX options (both puts and calls) across two near-term expirations</li>
+<li><strong>Formula:</strong> Aggregates weighted out-of-the-money SPX option prices to derive expected variance; converted to annualized volatility</li>
+<li><strong>Dissemination:</strong> Updated every 15 seconds during trading hours</li>
+<li><strong>Significance:</strong> Known as the “Fear Index” or “Fear Gauge”; key benchmark for volatility trading globally</li>
+<li><strong>Licensing:</strong> Cboe licenses the VIX methodology; revenue from index licensing is part of Data Vantage segment</li>
+</ul>
+</section>
+<section id="margin-framework" class="level3">
+<h3 class="anchored" data-anchor-id="margin-framework">Margin Framework</h3>
+<p><strong>Options Margin:</strong> - Customer margin governed by Regulation T and exchange rules - <strong>Standard (Strategy-Based) Margining:</strong> Margin calculated per defined strategy (covered call, spread, naked option, etc.); Cboe Margin Manual provides detailed requirements - <strong>Portfolio Margining:</strong> Available for qualifying accounts; sets margin based on the greatest projected net loss using multiple pricing scenarios (OCC’s TIMS — Theoretical Intermarket Margin System); generally results in lower margin requirements for hedged portfolios - <strong>Clearing Member Margin:</strong> OCC calculates clearing-level margin using STANS (System for Theoretical Analysis and Numerical Simulations) — a Monte Carlo-based margining system</p>
+<p><strong>Futures Margin (CFE):</strong> - Initial and maintenance margin set by OCC as clearing house - VIX futures margins set based on STANS methodology - Performance bond requirements vary by contract and market conditions</p>
+</section>
+<section id="position-limits" class="level3">
+<h3 class="anchored" data-anchor-id="position-limits">Position Limits</h3>
+<ul>
+<li><strong>SPX Options:</strong> Position limits have been substantially expanded; effectively no aggregate position limit for standard SPX options [unverified — verify current rule status]</li>
+<li><strong>VIX Options:</strong> Position limits apply; hedge exemptions available through application process</li>
+<li><strong>Equity Options:</strong> Typically 25,000 to 250,000 contracts per underlying, depending on the stock’s trading volume and float</li>
+<li><strong>VIX Futures:</strong> Subject to CFTC speculative position limits and reportable position thresholds; CFE-specific limits apply</li>
+<li><strong>Large Trader Reporting:</strong> Positions exceeding reporting thresholds must be reported to OCC (options) and CFTC (futures)</li>
+</ul>
+</section>
+<section id="block-trading-and-complex-order-handling" class="level3">
+<h3 class="anchored" data-anchor-id="block-trading-and-complex-order-handling">Block Trading and Complex Order Handling</h3>
+<p><strong>Complex Orders:</strong> - Complex Order Book (COB) maintains a dedicated order book for multi-leg strategies - Up to 16 legs per complex order on C1 (stock-option orders via Complex AIM) - Complex orders can trade against other complex orders in the COB or be “legged” against the individual simple books when favorable - Complex Order Auction (COA) provides exposure and price improvement opportunities</p>
+<p><strong>Qualified Contingent Cross (QCC):</strong> - Minimum 1,000 contracts per leg - Must include a stock component - Exempt from standard auction exposure; executes immediately at designated price - Commonly used for large institutional block-size options trades</p>
+<p><strong>FLEX Options:</strong> - Fully customizable contract terms: any strike price, any expiration date (within limits), choice of exercise style (American/European), choice of settlement (cash/physical) - Minimum initial position of 250 contracts (equity FLEX) or 100 contracts (index FLEX) [unverified for current thresholds] - Cleared by OCC</p>
+<p><strong>CFE Block Trades:</strong> - Block trading available for VIX futures - Minimum block size and reporting requirements per CFE rules</p>
+<p>[Source: Cboe product specifications pages; Cboe Margin Manual; Cboe Exchange Rule Book; Cboe VIX methodology whitepaper; Cboe press releases, accessed 2026-04-06]</p>
+<hr>
+</section>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<ul>
+<li><a href="https://ir.cboe.com/news/news-details/2026/Cboe-Global-Markets-Reports-Trading-Volume-for-December-and-Full-Year-2025/default.aspx">Cboe Global Markets IR — Full Year 2025 Volume Report</a></li>
+<li><a href="https://ir.cboe.com/news/news-details/2026/Cboe-Global-Markets-Reports-Results-for-Fourth-Quarter-2025-and-Full-Year/default.aspx">Cboe Global Markets IR — Q4 2025 &amp; Full Year Earnings</a></li>
+<li><a href="https://www.cboe.com/tradable-products/sp-500/spx-options/spx-specifications/">Cboe SPX Options Product Specifications</a></li>
+<li><a href="https://www.cboe.com/tradable-products/vix/vix-futures/specifications/">Cboe VIX Futures Contract Specifications</a></li>
+<li><a href="https://www.cboe.com/tradable-products/vix/vix-options/specifications/">Cboe VIX Options Product Specifications</a></li>
+<li><a href="https://www.cboe.com/us/options/trading/complex_orders/">Cboe US Options Exchange Complex Orders</a></li>
+<li><a href="https://www.cboe.com/us/options/trading/risk_management/">Cboe US Options Exchange Risk Management Tools</a></li>
+<li><a href="https://www.cboe.com/us/options/membership/fee_schedule/">Cboe Options Exchange Fee Schedule</a></li>
+<li><a href="https://www.cboe.com/titanium/">Cboe Titanium Platform</a></li>
+<li><a href="https://www.cboe.com/cboe_global_cloud/">Cboe Global Cloud</a></li>
+<li><a href="https://cdn.cboe.com/resources/membership/US_Equities_Options_Connectivity_Manual.pdf">Cboe Connectivity Manual</a></li>
+<li><a href="https://cdn.cboe.com/resources/membership/US_Market_Wide_Circuit_Breaker_FAQ.pdf">Cboe Market-Wide Circuit Breaker FAQ</a></li>
+<li><a href="https://cdn.cboe.com/resources/membership/Margin_Manual.pdf">Cboe Margin Manual</a></li>
+<li><a href="https://cdn.cboe.com/resources/regulation/rule_book/C1_Exchange_Rule_Book.pdf">Cboe Exchange Rule Book</a></li>
+<li><a href="https://www.cboe.com/markets/us/options/membership/">Cboe Options Membership</a></li>
+<li><a href="https://www.cboe.com/about/hours/">Cboe Hours &amp; Holidays</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cboe_Global_Markets">Wikipedia — Cboe Global Markets</a></li>
+<li><a href="https://www.financemagnates.com/institutional-forex/cboe-posts-24b-in-2025-revenue-as-options-volumes-stay-elevated-across-institutional-and-retail/">Finance Magnates — Cboe 2025 Revenue</a></li>
+<li><a href="https://www.macrotrends.net/stocks/charts/CBOE/cboe-global-markets/market-cap">MacroTrends — Cboe Market Cap</a></li>
+<li><a href="https://datashop.cboe.com/">Cboe DataShop</a></li>
+<li><a href="https://www.stocktitan.net/news/CBOE/cboe-unveils-new-brand-for-exchange-technology-platform-marking-new-ba2swduralf0.html">StockTitan — Cboe Titanium Announcement</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

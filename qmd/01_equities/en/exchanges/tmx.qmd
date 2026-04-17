@@ -1,0 +1,519 @@
+---
+title: "TMX Group / Toronto Stock Exchange (TSX)"
+subtitle: "Equities > Exchanges"
+date: "2026-04-17"
+lang: en
+toc: true
+toc-depth: 3
+number-sections: false
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    self-contained: false
+---
+
+> **Last Updated:** 2026-04-06
+> **Research Tier:** Tier 2
+> **Domain:** Equities
+
+---
+
+## 1. Overview & Profile
+
+| Item | Details |
+|------|---------|
+| Official Name | TMX Group Limited |
+| Abbreviation | TMX (parent); TSX (Toronto Stock Exchange) |
+| Website | https://www.tmx.com |
+| Year Established | 1861 (Toronto Stock Exchange); TMX Group formed 2008 |
+| Country / City | Canada / Toronto, Ontario (head office: 100 Adelaide Street West) |
+| Ownership Structure | Publicly traded on TSX (TSX: X); major shareholders include Canadian banks and pension funds following Maple Group Acquisition Corporation's C$3.8 billion acquisition in 2012 |
+| Parent Company / Group | TMX Group Limited â operates TSX, TSX Venture Exchange, TSX Alpha Exchange, Montreal Exchange (MX), Canadian Depository for Securities (CDS), TMX Datalinx, Trayport, and other subsidiaries |
+| Regulatory Authority | Ontario Securities Commission (OSC) as lead regulator; recognized by provincial/territorial securities regulators across Canada via the Canadian Securities Administrators (CSA); market integrity oversight by the Canadian Investment Regulatory Organization (CIRO) |
+| Market Capitalization (TMX Group company) | ~C$13.8 billion (April 2026) [Source: companiesmarketcap.com, Investing.com] |
+| Market Capitalization (TSX-listed issuers) | ~C$5.8 trillion (August 2025, 24.3% increase year-to-date); as of January 2024, C$4.16 trillion [Source: TMX Group Equity Financing Statistics, Wikipedia] |
+| Total Listed Instruments | ~1,800+ issuers on TSX; ~1,600+ issuers on TSXV; combined mining issuers alone exceed 1,073 with C$1.1 trillion market cap (December 2025) [Source: TMX Group, StockTitan] |
+| Average Daily Trading Volume | ~192 million shares (TSX, December 2025 sample day); average trade size ~410 shares [Source: TSX Daily Trading Report, December 23, 2025] |
+| Average Daily Trading Value | ~C$7.4 billion (TSX, December 2025 sample day) [Source: TSX Daily Trading Report] |
+
+### Key Historical Milestones
+- **1852:** Association of Brokers formed by Toronto businessmen on July 26, considered the precursor to the Toronto Stock Exchange
+- **1861:** Twenty-four brokers gather at the Masonic Hall on October 25 to formally create the Toronto Stock Exchange
+- **1878:** TSX is incorporated by an Act of the Ontario Legislature
+- **1934:** TSX merges with the Standard Stock and Mining Exchange, consolidating Toronto's equity trading
+- **1977:** Introduction of CATS (Computer Assisted Trading System), one of the world's first automated trading systems
+- **1997:** TSX becomes a for-profit, demutualised exchange
+- **1999:** TSX assumes responsibility for listing and trading all senior equities in Canada as part of market restructuring; junior equities move to the Canadian Venture Exchange (later TSX Venture)
+- **2000:** TSX ceases floor trading; becomes fully electronic
+- **2001:** TSX Group Inc. formed as the parent company
+- **2002:** TSX Group acquires TSX Venture Exchange
+- **2005:** TSX Group goes public via IPO on its own exchange (TSX: X)
+- **2008:** TSX Group acquires Montreal Exchange (MX); renamed to TMX Group Inc. on May 1
+- **2012:** Maple Group Acquisition Corporation (consortium of Canadian banks and pension funds) acquires majority stake in TMX Group for C$3.8 billion
+- **2013â2014:** TMX Quantum XA trading platform rolled out across TMX Select, TSX, and TSXV
+- **2023:** CIRO (Canadian Investment Regulatory Organization) formed from merger of IIROC and MFDA (effective January 1, 2023; renamed CIRO on June 1, 2023)
+- **2024:** T+1 settlement implemented in Canada (May 27, 2024)
+- **2025:** TMX Group reports record revenue of C$1.72 billion (17.61% increase year-over-year); post-trade modernization completed via CDS subsidiary
+
+---
+
+## 2. Market Structure
+
+### 2.1 Market Segments
+| Segment | Description | Key Characteristics |
+|---------|-------------|---------------------|
+| Toronto Stock Exchange (TSX) | Premier listing venue for senior equities in Canada | Minimum market cap typically C$50M+; established companies; ~1,800+ listed issuers; home to major banks, energy, and mining companies |
+| TSX Venture Exchange (TSXV) | Public venture capital marketplace for early-stage and emerging companies | Lower listing requirements; gateway to TSX graduation; ~1,600+ issuers; strong in mining exploration and junior resource companies |
+| TSX Alpha Exchange (TSXA) | Alternative trading venue within TMX Group offering different order priority models | Operates with size-time priority (rewards larger orders); inverted pricing model available; extended trading hours (8:00 AM â 5:00 PM ET) |
+| Montreal Exchange (MX) | Canada's derivatives exchange (financial futures and options) | Operated by Bourse de Montreal Inc., a TMX subsidiary; trades equity options, index futures/options, interest rate derivatives |
+| Canadian Depository for Securities (CDS) | Clearing and settlement subsidiary | Provides clearing, settlement, and depository services for Canadian capital markets; powered by TCS BaNCS platform since 2025 |
+
+### 2.2 Trading Sessions (TSX)
+| Session | Local Time (ET) | UTC (ET = UTC-5 / UTC-4 DST) | Description |
+|---------|----------------|-------------------------------|-------------|
+| Pre-Open Session | 7:00 AM â 9:30 AM | 12:00â14:30 / 11:00â13:30 UTC | Order entry and cancellation; COP (Calculated Opening Price) broadcast and continuously updated; no executions |
+| Opening Auction (MOO) | 9:30 AM | 14:30 / 13:30 UTC | Market on Open call market; single-price opening auction; all matching orders execute at the COP |
+| Continuous Trading (CLOB) | 9:30 AM â 4:00 PM | 14:30â21:00 / 13:30â20:00 UTC | Main trading session; continuous order matching in the Central Limit Order Book |
+| MOC Imbalance Publication | 3:40 PM | 20:40 / 19:40 UTC | Market on Close imbalance information begins dissemination |
+| Closing Auction (MOC) | 4:00 PM | 21:00 / 20:00 UTC | Market on Close call market; Calculated Closing Price (CCP) determined from combined MOC Book and CLOB orders |
+| Extended Trading Session | 4:15 PM â 5:00 PM | 21:15â22:00 / 20:15â21:00 UTC | Orders accepted and trades may occur only at the Last Sale Price; board lots, odd lots, and crosses permitted |
+
+**Note on TSX Alpha Exchange:** TSX Alpha supports continuous trading from 8:00 AM to 5:00 PM ET, providing a longer trading window than TSX/TSXV.
+
+**Note on Must Be Filled (MBF) Session:** Supported on TSX only; occurs once per month on the Thursday immediately preceding options expiry to offset expiring derivatives positions.
+
+### 2.3 Tick Sizes
+| Price Range | Tick Size (Trading Increment) |
+|-------------|-------------------------------|
+| Securities priced >= C$0.50 | C$0.01 (one cent) |
+| Securities priced < C$0.50 | C$0.005 (half a cent) |
+
+- Tick sizes are governed by UMIR (Universal Market Integrity Rules) administered by CIRO
+- CIRO has proposed harmonizing trading increments for U.S.-interlisted securities with U.S. tick size rules [Source: CIRO, TMX comment letter, December 2023]
+
+### 2.4 Lot Sizes (Board Lots)
+Board lot sizes on TSX and TSXV are determined by the security's previous day closing price:
+
+| Price Range | Board Lot Size |
+|-------------|---------------|
+| Securities priced >= C$1.00 | 100 shares |
+| Securities priced C$0.10 â C$0.99 | 500 shares |
+| Securities priced < C$0.10 | 1,000 shares |
+
+- **Odd lots** (less than a board lot): Treated separately; odd lots only trade as "All or None" (no partial fills); Participating Organizations are prohibited from splitting larger orders into odd lots
+- **Mixed lots** (board lot + odd lot portion): Effectively split into two separate orders at time of entry; board lot portion trades in the CLOB; odd lot portion treated as an odd lot order
+
+### 2.5 Market Maker / Liquidity Provider Programs
+
+**Responsible Traders (RT) / Market Makers:**
+- Every TSX-listed security (except debentures/notes) is assigned a designated Market Maker firm and Registered Trader (RT)
+- RTs have an optional "participation" feature enabling them to trade against a fraction of incoming orders with priority of execution in their assigned securities
+- Market Makers must maintain sufficient expertise, technology, and firm capital
+- Must maintain a minimum number of security assignments with a balanced ratio of highly liquid and less liquid securities
+- Must ensure trading is reasonable, consistent with just and equitable principles, and not detrimental to market integrity
+
+**Minimum Guaranteed Fill (MGF):**
+- Market Makers provide a Minimum Guaranteed Fill obligation for small orders
+- For securities with a board lot of 100, the minimum MGF is 199 shares [Source: TSX Order Types and Functionality Guide]
+- Odd lot orders and small board lot orders benefit from MGF liquidity provided by RTs
+
+**TSX Alpha Exchange:**
+- Uses a different priority model (size-time priority) to incentivize larger displayed orders
+- Does not have traditional RT/market maker assignments in the same structure as TSX
+
+---
+
+## 3. Trading Mechanism
+
+### 3.1 Auction Mechanisms
+
+**Opening Auction (Market on Open / MOO):**
+- Conducted at 9:30 AM ET as a single-price call auction
+- During the Pre-Open session (7:00 AM â 9:30 AM), the Calculated Opening Price (COP) is continuously broadcast and updated as orders are entered/modified
+- COP determination logic (in priority order):
+  1. Price at which the most shares may be executed
+  2. If tied, the price that leaves the least imbalance
+  3. If still tied, the price closest to the previous trading day's closing price
+- When trades execute in the opening auction, the COP sets the last sale price
+- If no trades execute at the opening, the previous day's closing price sets the opening price
+- Eligible order types: Market on Open (MOO), Limit on Open (LOO), and regular limit orders carried forward
+
+**Closing Auction (Market on Close / MOC):**
+- Electronic call market that establishes the official closing price for eligible TSX-listed securities
+- MOC imbalance information disseminated beginning at 3:40 PM ET
+- At 4:00 PM ET, the Calculated Closing Price (CCP) is determined by combining the MOC Book orders with the Central Limit Order Book (CLOB) orders
+- CCP uses similar logic to the COP: maximum volume, minimum imbalance, closest to last sale
+- **Price Movement Extension (PME):** If the CCP would violate the PME range (greater of 5 trading increments or PME percentage from the VWAP of the last 20 minutes and the last board-lot sale price), a PME period is initiated between 4:00 PM and 4:10 PM to allow additional order entry and price discovery
+- MOC facility provides equal access in setting the closing price and reduces closing price volatility [Source: TSX MOC FAQ]
+
+**Volatility Auctions:**
+- When a Single Stock Circuit Breaker (SSCB) is triggered, a 5-minute trading halt occurs across all Canadian marketplaces
+- Re-opening after a halt follows an auction-like process similar to the opening mechanism
+
+### 3.2 Continuous Trading
+- **Order-driven model:** Fully electronic Central Limit Order Book (CLOB) with price-time priority
+- **Priority rules:**
+  1. **Price priority:** Best-priced orders execute first
+  2. **Time priority:** At the same price level, earlier orders execute first (FIFO)
+  3. **Broker preferencing:** TSX supports intentional crosses and broker preferencing under certain conditions as defined by UMIR
+- **RT participation:** Registered Traders may receive a participation entitlement allowing them to trade against a fraction of incoming orders with execution priority in their assigned securities
+- **Dark interaction:** Dark orders (Dark Limit, Dark Pegged) are fully integrated within the order book but not displayed; they interact with incoming orders after all displayed volume at the same or better price
+
+### 3.3 Price Discovery
+- **Pre-open:** COP broadcast continuously from 7:00 AM â 9:30 AM ET, providing indicative opening price and imbalance data
+- **MOC imbalance:** Imbalance information published from 3:40 PM ET; PME mechanism ensures closing price reflects genuine supply/demand
+- **RT role:** Registered Traders maintain continuous two-sided markets in their assigned securities, supporting orderly price discovery
+- **Bypass orders:** Orders with a bypass flag can avoid interaction with non-displayed volume (including undisclosed iceberg volume, dark orders, and RT participation), enabling transparent price discovery for participants who prefer displayed liquidity only
+
+---
+
+## 4. Order Types
+
+### 4.1 Standard Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Limit Order | Executes at the specified price or better; displayed in the CLOB |
+| Market Order | Executes immediately at the best available price |
+| Market on Open (MOO) | Market order for execution only in the 9:30 AM opening auction |
+| Limit on Open (LOO) | Limit order for execution only in the opening auction |
+| Market on Close (MOC) | Market order for execution only in the closing auction |
+| Limit on Close (LOC) | Limit order for execution only in the closing auction |
+
+### 4.2 Advanced Order Types
+| Order Type | Description |
+|-----------|-------------|
+| Iceberg Order | Order with both displayed and hidden portions; as the displayed portion fills, hidden volume automatically replenishes it; optional random display range (DisplayRange) parameter randomizes the refresh size within a +/- range |
+| Dark Limit Order | Fully hidden limit order with no pre-trade transparency; interacts with incoming orders after all displayed volume at the same or better price |
+| Dark Pegged Order | Non-displayed order pegged to the midpoint or other reference price; provides full pre-trade anonymity |
+| Bypass Order | Order with bypass flag that trades only with booked visible volume, avoiding non-displayed volume (undisclosed iceberg, dark orders, RT participation, RT MGF obligations) |
+| Must Be Filled (MBF) Order | Special order for offsetting expiring derivatives positions; available only on TSX during the monthly MBF session |
+| Specialty Price Cross | A cross order at an agreed-upon price; subject to specific rules and regulatory approval |
+| Volume-Weighted Average Price (VWAP) Cross | Cross executed at the volume-weighted average price over a specified period |
+| Basis Cross | Cross transaction based on a calculated basis price |
+
+### 4.3 Time-in-Force Options
+| TIF | Description |
+|-----|-------------|
+| Day | Valid for the current trading day only; expires at session end if unfilled |
+| Good Till Cancelled (GTC) | Remains active until executed or manually cancelled |
+| Good Till Date (GTD) | Valid until a specified future date |
+| Immediate or Cancel (IOC) | Executes immediately (in whole or in part); unfilled portion cancelled |
+| Fill or Kill (FOK) | Must execute in full immediately or the entire order is cancelled |
+| At the Open (OPG) | Valid only for the opening auction |
+| At the Close | Valid only for the closing auction |
+
+### 4.4 Order Modification / Cancellation
+- Orders can be modified or cancelled electronically via FIX or STAMP protocols at any time before execution
+- **MOC/LOC restrictions:** MOC and LOC orders have entry cutoff times and cancellation restrictions during the closing period to protect auction integrity
+- **Cancel on Disconnect (COD):** Mandatory feature that automatically cancels open orders if the trading session disconnects, reducing risk of unmanaged exposure; must be configured and submitted to a TMX Account Manager by each Participating Organization
+- **Odd lot restrictions:** Participating Organizations cannot split larger orders into odd lots or enter multiple odd lots from a single account on a given security on a given day
+
+---
+
+## 5. Trading System (Technology)
+
+| Item | Details |
+|------|---------|
+| System Name | TMX Quantum XA (TMX Quantum Express Accelerated) |
+| Vendor / In-house | In-house (proprietary TMX Group technology) |
+| Architecture | Hardware-accelerated, ultra-low latency trading engine with proprietary network upgrades; optimized gateway and matching engine message processing |
+| Matching Engine | Deterministic matching engine supporting price-time priority (TSX, TSXV) and size-time priority (TSX Alpha) |
+| Median Latency (TMX Select benchmark) | ~26 microseconds median; ~38 microseconds at 99th percentile (measured at network edge across full production day) [Source: TMX Quantum XA FAQ] |
+| Performance Improvement | Twenty-fold reduction in median latency compared to the previous TMX Quantum system, achieving sub-100 microsecond order executions [Source: TMX, Newswire] |
+| Key Features | Ultra-high performance with low latency response times; significantly reduced latency jitter; highly optimized resource utilization; high throughput with minimum hardware footprint |
+| Launch Year | Quantum XA rollout began 2013 (TMX Select); completed on TSX and TSXV by 2014 |
+
+### System History
+| Period | System | Notes |
+|--------|--------|-------|
+| 1861â1977 | Open outcry / floor trading | Traditional auction-based trading on the TSX trading floor |
+| 1977 | CATS (Computer Assisted Trading System) | One of the world's first automated trading systems; pioneered electronic order matching |
+| 1997 | TSE Trading System | Post-demutualization modernization [unverified] |
+| 2000 | Full electronic trading | TSX ceases floor trading; becomes entirely electronic |
+| ~2000â2012 | STAMP / TMX Quantum | STAMP protocol-based trading engine; TMX Quantum was the proprietary platform prior to XA |
+| 2013 | TMX Quantum (Alpha migration) | Alpha marketplace migrated to TMX Quantum engine (April 2013) |
+| 2013 | TMX Quantum XA (TMX Select) | First deployment of hardware-accelerated XA platform on TMX Select (JulyâAugust 2013) |
+| 2014 | TMX Quantum XA (TSX) | TMX Quantum XA launched on Toronto Stock Exchange (June 2014) |
+| 2014 | TMX Quantum XA (TSXV) | TMX Quantum XA launched on TSX Venture Exchange (September 2014) |
+| Present | TMX Quantum XA | Current production platform for all TMX equity marketplaces |
+
+### Technology Stack
+- **Matching Engine:** Proprietary hardware-accelerated matching engine with deterministic processing
+- **Order Entry Protocols:** FIX 4.3, STAMP (proprietary TMX protocol); both supported for TSX, TSXV, and TSX Alpha
+- **Market Data Distribution:** TMX QuantumFeed â binary, fixed-length message format using XMT (eXtreme Message Transfer) protocol; Multicast IP with retransmission via TCP/UDP
+- **Network:** TMX proprietary network infrastructure within the Markham data center
+- **Operating Environment:** Linux-based [unverified]
+
+### Disaster Recovery / Business Continuity
+- **Primary site:** TMX Data Centre, 3500 Steeles Avenue East, Markham, Ontario
+- **DR site:** Not publicly disclosed in detail; TMX maintains business continuity plans as required by regulatory obligations
+- **Cancel on Disconnect:** Automatic order cancellation on session disconnect provides a baseline safety mechanism
+
+---
+
+## 6. Market Data
+
+### 6.1 Data Feed Protocols
+| Protocol / Feed | Description | Use Case |
+|----------------|-------------|----------|
+| TMX QuantumFeed Level 1 (TQL1) | Real-time pre- and post-trade TSX data in low-latency binary format; includes equity quotes, equity trades, MOC imbalance notifications, trade cancellations, symbol/stock status messages | Low-latency display and automated trading |
+| TMX QuantumFeed Level 2 (TQL2) | Full depth-of-book data for TSX in binary format | Order book depth analysis, algorithmic trading |
+| TMX Venture QuantumFeed Level 1 (VQL1) | Real-time TSXV Level 1 data in low-latency binary format | Venture market monitoring |
+| TMX Venture QuantumFeed Level 2 (VQL2) | Full depth-of-book data for TSXV | Venture market depth analysis |
+| TMX Alpha QuantumFeed Level 1 (AQL1) | Real-time TSX Alpha Level 1 data | Alternative market monitoring |
+| TMX Alpha QuantumFeed Level 2 (AQL2) | Full depth-of-book data for TSX Alpha | Alpha market depth analysis |
+| Broadcast Feeds | Standard broadcast data feeds for wider distribution | Data vendors, display systems |
+| TMX QuantumFeed Binary Data | Combined binary data feed | Consolidated TMX market data consumption |
+
+### 6.2 Data Levels
+- **Level 1 (Top of Book / BBO):** Best bid price, best offer price, last sale price, volume â available via TQL1/VQL1/AQL1 feeds
+- **Level 2 (Depth of Book):** Full order book depth showing all price levels and aggregate size â available via TQL2/VQL2/AQL2 feeds
+- **Level 3 / Order-by-Order:** Individual order-level detail available to Participating Organizations [unverified]
+
+### 6.3 TMX Datalinx (Distribution Infrastructure)
+- **TMX Datalinx:** TMX Group's information services division; responsible for distribution, licensing, and sale of real-time and historical market data
+- **TMX Webstore:** Online portal (tmxwebstore.com) for purchasing market data products, historical data, and analytical tools
+- **Data format:** QuantumFeed uses XMT (eXtreme Message Transfer) protocol â binary, fixed record length messages with ASCII and binary fields; aligns with global standards for low-latency data distribution
+- **Delivery:** Multicast IP with retransmission support via TCP/UDP; feeds available from the TMX Markham co-location facility
+- **Vendor redistribution:** Major data vendors (Bloomberg, Refinitiv/LSEG, FactSet, etc.) redistribute TMX data under license
+- **Consolidated feed:** TMX Information Processor (TMX IP) provides consolidated Canadian equity market data [unverified]
+
+### 6.4 Historical Data
+- **TSX Trading Summary (Daily):** End-of-day trade summaries available via TMX Datalinx Webstore
+- **Daily Trading Reports:** Published on tsx.com with detailed volume, value, and trade statistics
+- **Third-party providers:** Historical tick data available through commercial data vendors
+
+---
+
+## 7. Connectivity & Access
+
+### 7.1 Membership / Participation
+- **Participating Organization (PO):** Required to directly access TSX; must be a registered investment dealer and CIRO member
+- **TSXV Member:** Required for direct TSXV access; similar requirements to PO status
+- **TSX Alpha Member:** Required for direct TSX Alpha access
+- **Direct Market Access (DMA):** Non-member firms can access TSX/TSXV/TSXA through a sponsoring Participating Organization; DMA sessions require Cancel on Disconnect (COD) configuration
+- **Sponsored access:** Subject to pre-trade risk controls; the sponsoring PO retains responsibility for the DMA client's activity
+
+### 7.2 Connection Methods
+- **FIX 4.3 Gateway:** Standard FIX protocol-based order entry; widely compatible with trading systems globally
+- **STAMP Protocol:** Proprietary TMX order entry protocol; may offer performance advantages for integrated systems
+- **TMX QuantumFeed (Market Data):** Binary multicast feeds via XMT protocol for low-latency market data consumption
+- **Certification requirement:** All new customers must complete certification in the TMX testing environment before production access; existing customers may need re-certification prior to scheduled upgrades [Source: TMX Market Access page]
+
+### 7.3 Co-location / Proximity Services
+- **Primary facility:** TMX Data Centre, 3500 Steeles Avenue East, Markham, Ontario
+  - Up to 1.8 MW of power capacity
+  - Power density of 150 watts per square foot, supporting high-density computing
+  - Co-location cabinets are pre-wired to receive low latency data feeds directly from TMX trading engines
+  - Direct high-speed access to TSX, TSXV, and Montreal Exchange trading engines and market data feeds
+  - Available to market participants as well as technology/network service providers to market participants
+- **Connectivity setup:** Clients request TMX Service Request Form from the Technical Help Desk; completed forms submitted to establish connectivity
+- **Third-party co-location:** Equinix TR1/TR2 facilities in Toronto also provide proximity hosting with connectivity to TMX [Source: Options/Business Wire]
+- **Network providers:** TNS and other financial infrastructure providers offer managed connectivity services to TMX markets [Source: TNS]
+
+### 7.4 API Protocols
+- FIX 4.3 (order entry)
+- STAMP (proprietary order entry)
+- XMT (eXtreme Message Transfer) â binary market data protocol
+- Multicast IP with TCP/UDP retransmission (market data delivery)
+
+### 7.5 Certification / Testing
+- **Mandatory certification:** Required for all new connections to TSX, TSXV, and TSX Alpha
+- **Testing environment:** Available for pre-production testing, new symbol additions, and system upgrades
+- **Cancel on Disconnect testing:** COD functionality must be tested and confirmed with a TMX Account Manager
+- **Upgrade re-certification:** May be required for existing customers prior to scheduled platform upgrades
+
+---
+
+## 8. Risk Controls & Circuit Breakers
+
+### 8.1 Single Stock Circuit Breaker (SSCB)
+| Time Period | Trigger Threshold | Action |
+|-------------|-------------------|--------|
+| 9:30 AM â 9:50 AM (first 20 minutes) | 20% price move in a 5-minute period (and >= 40 trading increments) | 5-minute trading halt across all Canadian marketplaces |
+| 9:50 AM â 3:30 PM (core session) | 10% price move | 5-minute trading halt across all Canadian marketplaces |
+| All hours | 20% price move in a 5-minute period (and >= 40 trading increments) | 5-minute trading halt across all Canadian marketplaces |
+
+- SSCB applies to both upward and downward price movements
+- Administered by CIRO (Canadian Investment Regulatory Organization)
+- When triggered, the halt applies across ALL Canadian equity marketplaces simultaneously, not just the venue where the trigger occurred
+- After the halt period, trading resumes via an auction-like re-opening process [Source: CIRO Guidance on Single-Stock Circuit Breakers]
+
+### 8.2 Market-Wide Circuit Breaker (MWCB)
+| Level | Trigger | Halt Duration |
+|-------|---------|---------------|
+| Level 1 | 7% decline in S&P/TSX Composite Index (or S&P 500 if U.S. markets open) | 15-minute halt |
+| Level 2 | 13% decline | 15-minute halt |
+| Level 3 | 20% decline | Trading halted for remainder of the day |
+
+- When U.S. markets are open, Canadian MWCBs are harmonized with U.S. triggers (based on S&P 500 declines)
+- When U.S. markets are not open, the S&P/TSX Composite Index is used to determine MWCB thresholds
+- Circuit breaker levels are recalculated daily based on the prior day's closing price [Source: CIRO Market Volatility guidance, RBC]
+
+### 8.3 Pre-Trade Risk Controls
+- **Cancel on Disconnect (COD):** Mandatory feature; automatically cancels all open orders if the trading session disconnects
+- **Pre-Trade Risk Management Solution:** TMX offers a comprehensive risk management system enabling participants to apply risk checks, trading limits, and controls to their order flow; provides real-time monitoring of committed capital, open order exposure, and intraday market risk across all major Canadian equity venues [Source: Markets Media]
+- **Price reasonability controls:** TMX systems validate incoming order prices against control parameters; orders significantly outside reasonable price ranges are rejected
+- **Montreal Exchange controls (MX):**
+  - "X" limit: Price filter based on calculated control price; orders above/below the limit are automatically rejected
+  - "Y" limit: Narrower price limit validating potential execution price of the next executable order
+  - Maximum volume thresholds: Validate incoming order sizes [Source: MX Exchange Market Thresholds and Controls]
+- **Short sale regulations:** Subject to UMIR short sale rules; CIRO monitors short selling activity across Canadian marketplaces
+- **Erroneous trade policy:** TMX can cancel clearly erroneous trades under defined circumstances
+
+### 8.4 Regulatory Halts
+- **Material news halt:** TSX can halt trading in individual securities pending dissemination of material information
+- **CIRO-coordinated halts:** CIRO can coordinate halts across all Canadian marketplaces
+- **SSCB halt:** Automatic 5-minute halt triggered by circuit breaker thresholds (see Section 8.1)
+- **MWCB halt:** Market-wide trading suspension (see Section 8.2)
+
+---
+
+## 9. Regulatory Framework
+
+### 9.1 Regulatory Structure
+Canada's securities regulation is unique in that it operates under a provincial/territorial model rather than a single national regulator:
+
+| Regulator | Role |
+|-----------|------|
+| Ontario Securities Commission (OSC) | Lead regulator for TMX Group and TSX; recognizes TSX, TSXV, TSX Alpha, and MX as exchanges |
+| Canadian Securities Administrators (CSA) | Council of provincial/territorial securities regulators; coordinates and harmonizes regulation across Canada |
+| Provincial/Territorial Securities Commissions | Each province/territory has its own securities regulator (e.g., BCSC, ASC, AMF in Quebec); all participate in the CSA framework |
+| Canadian Investment Regulatory Organization (CIRO) | National self-regulatory organization (SRO); oversees investment dealers, mutual fund dealers, and market integrity; formed January 1, 2023 from merger of IIROC and MFDA; renamed CIRO on June 1, 2023 |
+
+### 9.2 CIRO Oversight (formerly IIROC)
+- **Market integrity:** CIRO administers and enforces the Universal Market Integrity Rules (UMIR), which apply to all Canadian equity marketplaces
+- **Cross-marketplace surveillance:** CIRO oversees ALL equity market activity across Canadian marketplaces, including exchanges and alternative trading systems (ATS)
+- **Cross-asset surveillance:** By integrating equity, debt, and MX-listed derivatives data, CIRO can detect potential cross-market manipulation
+- **Enforcement:** When evidence of rule violations is found, CIRO refers cases to its Enforcement team or to provincial/territorial securities regulators for further investigation and possible disciplinary action
+- **Insider trading:** Potential insider trading matters are referred to provincial/territorial securities regulators
+- **Registration delegation:** Effective April 1, 2025, the OSC delegates the registration function for investment dealers, mutual fund dealers, and futures commission merchants to CIRO, though the OSC retains concurrent authority under an enhanced risk-based oversight framework [Source: OSC, CIRO]
+
+### 9.3 TMX Self-Regulatory Functions
+- TMX Group exchanges operate under recognition orders issued by provincial securities regulators
+- TSX and TSXV maintain their own rule books (TSX Rule Book effective January 13, 2026; TSXV Policy Manual) governing listing standards, trading rules, and issuer obligations
+- Market regulation (trade surveillance and enforcement) is outsourced to CIRO under agreements with the marketplaces
+- TMX provides market surveillance data feeds to CIRO for monitoring purposes
+
+### 9.4 Key Regulatory Instruments
+- **UMIR (Universal Market Integrity Rules):** National rules governing trading conduct on all Canadian equity marketplaces; includes provisions on manipulative trading, short selling, best execution, and market making
+- **National Instrument 21-101 (Marketplace Operation):** Governs the operation of exchanges and ATS in Canada
+- **National Instrument 23-101 (Trading Rules):** Establishes best execution obligations and order protection rules
+- **TSX Rule Book:** Exchange-specific rules governing listing, trading, and participation on TSX
+
+---
+
+## 10. Fees & Revenue Model
+
+### 10.1 Trading Fees (TSX)
+TSX operates a **maker-taker** fee model (effective January 13, 2026):
+
+| Category | Description |
+|----------|-------------|
+| Passive (maker) rebate | Rebate paid to liquidity providers who post resting orders that are subsequently executed against |
+| Active (taker) fee | Fee charged to liquidity takers whose incoming orders execute against resting orders |
+| Dark order fees | Separate fee schedule for dark liquidity interactions |
+| Cross fees | Reduced fees for intentional cross transactions |
+
+- TMX previously operated volume-based pricing tiers but has moved toward a simplified fee structure [Source: Traders Magazine]
+- Specific per-share rates are published in the TSX Trading Fee Schedule (effective January 13, 2026) and TSXV Fee Schedule (effective November 3, 2025), available at tsx.com [Source: TSX Fee Schedule page]
+- TSX Alpha Exchange offers an inverted fee model option (rebates for taking liquidity) for certain order types [unverified]
+
+### 10.2 Listing Fees
+| Fee Type | Range | Details |
+|----------|-------|---------|
+| Original Listing Fee (one-time) | C$10,000 â C$200,000 | Based on market value of securities at the time of listing; non-refundable deposit of C$10,000 required at application |
+| Annual Sustaining Fee | C$12,000 â C$145,000/year | Calculated based on market capitalization of all TSX-listed securities; invoiced in February each year |
+| Additional Listing Fee | Variable | Payable when listing additional securities due to financings, acquisitions, or compensation arrangements |
+| Structured Products | No annual sustaining fee | Structured products are exempt from the annual sustaining fee |
+
+- Most current listing fee schedule effective August 1, 2025 [Source: TSX Listing Fee Schedule]
+- Original Listing Fee Calculator available at tsx.com for prospective issuers
+
+### 10.3 Market Data Fees
+- TMX Datalinx charges fees for real-time and delayed market data
+- Pricing documents published January 1, 2026 and January 1, 2025 [Source: TMX Information Services]
+- Data fees apply per-user for professional subscribers; enterprise licenses available
+- Historical data products available for purchase via the TMX Webstore
+
+### 10.4 Revenue Model Overview
+TMX Group's revenue streams (C$1.72 billion in 2025, +17.61% YoY):
+- **Trading and clearing fees:** Transaction-based revenue from equity, derivatives, and fixed income trading
+- **Listing fees:** Initial and annual sustaining fees from TSX and TSXV issuers
+- **Market data (TMX Datalinx):** Real-time and historical data product sales
+- **Technology services (Trayport, TMX VettaFi):** Energy trading technology platform and index/analytics products
+- **Corporate solutions:** Issuer services, transfer agent services, and related products; TMX aims to expand corporate solutions to over 50% of capital formation revenue [Source: TMX Group strategic communications]
+- **Post-trade services (CDS):** Clearing, settlement, and depository fees
+
+---
+
+## 11. Recent Developments
+
+### 11.1 CIRO Formation (2023)
+- On January 1, 2023, the Investment Industry Regulatory Organization of Canada (IIROC) and the Mutual Fund Dealers Association of Canada (MFDA) amalgamated to form the New Self-Regulatory Organization of Canada
+- Renamed to the Canadian Investment Regulatory Organization (CIRO) on June 1, 2023
+- Consolidates oversight of investment dealers, mutual fund dealers, and marketplace integrity under a single SRO
+- Effective April 1, 2025, CIRO takes on delegated registration functions from the OSC [Source: OSC, CIRO]
+
+### 11.2 T+1 Settlement (2024)
+- Canada transitioned to T+1 (trade date plus one business day) settlement on May 27, 2024, in coordination with the United States and Mexico
+- Reduces counterparty and systemic risk by shortening the settlement cycle from T+2
+- CDS (TMX subsidiary) was central to the implementation for Canadian markets [Source: CDS T+1 initiative page]
+
+### 11.3 Post-Trade Modernization (2025)
+- In April 2025, CDS implemented major upgrades to its foundational clearing technology
+- Replaced legacy clearing and settlement systems as well as depository and entitlement payment systems
+- New platform powered by TCS BaNCS for Market Infrastructure
+- Supports recent initiatives including the Canadian Collateral Management Service launched in 2024 [Source: TMX Group Press Release]
+
+### 11.4 Record Financial Performance (2025)
+- TMX Group reported revenue of C$1.72 billion in 2025, an increase of 17.61% compared to C$1.46 billion in 2024
+- CEO John McKenzie described 2025 as TMX Group's "best year ever"
+- TSX-listed issuers set an all-time record for market capitalization (exceeding C$5.8 trillion by August 2025) [Source: TMX Group, StockTitan]
+
+### 11.5 Mining Sector Strength
+- As of December 31, 2025, TMX exchanges hosted 1,073 mining issuers with a combined market cap above C$1.1 trillion
+- Mining issuers completed 1,429 financings raising C$16 billion in equity capital in 2025
+- TSX and TSXV represent approximately 40% of the world's public mining companies
+- The 2026 TSX Venture 50 featured a dominant cohort of resource companies with an average share price appreciation of 431% [Source: TMX Group PDAC 2026 announcement, StockTitan]
+
+### 11.6 Trading Increment Harmonization
+- CIRO has proposed amendments to UMIR to harmonize trading increments for U.S.-interlisted securities with the U.S. market, ensuring continued fair competition between Canadian and U.S. marketplaces
+- TMX Group publicly supports this harmonization effort [Source: TMX comment letter to CSA/CIRO, December 2023]
+
+### 11.7 Strategic Initiatives
+- TMX Group is pursuing expansion of its corporate solutions business to represent over 50% of capital formation revenue
+- Strategic focus on AI and blockchain integration [unverified â based on strategic direction communications]
+- Continued investment in Trayport (energy trading technology) and TMX VettaFi (index and analytics)
+
+---
+
+## Sources
+
+- [TMX Group of Companies â Official Website](https://www.tmx.com)
+- [TMX TSX â Trading Hours](https://www.tsx.com/en/trading/calendars-and-trading-hours/trading-hours)
+- [TMX TSX â Order Types](https://www.tsx.com/en/trading/toronto-stock-exchange/order-types-and-features/order-types)
+- [TMX Order Types and Functionality Guide v1.75 (November 3, 2025)](https://www.tsx.com/ebooks/en/order-types-guide/)
+- [TMX Quantum XA â Product Page](https://www.tsx.com/en/trading/products-and-services/tmx-quantum-xa)
+- [TMX Quantum XA FAQ v2.0](https://www.tsx.com/en/resource/93)
+- [TMX TSX â Fee Schedule (effective January 13, 2026)](https://www.tsx.com/en/trading/toronto-stock-exchange/fee-schedule)
+- [TSX Listing Fee Schedule (effective August 1, 2025)](https://www.tsx.com/en/resource/2939)
+- [TMX TSX â Market Maker Program](https://www.tsx.com/en/trading/toronto-stock-exchange/order-types-and-features/market-maker-program)
+- [TMX TSX â Market on Close (MOC)](https://www.tsx.com/en/trading/tsx-venture-exchange/order-types-and-features/market-on-close)
+- [TMX Co-Location Services](https://www.tmxinfoservices.com/platforms-and-colocation/co-location-services)
+- [TMX Datalinx Webstore â QuantumFeed Products](https://www.tmxwebstore.com/products/binary-feeds-quantumfeeds)
+- [CIRO â Trade Surveillance](https://www.ciro.ca/markets/trade-surveillance)
+- [CIRO â Guidance on Single-Stock Circuit Breakers](https://www.ciro.ca/newsroom/publications/guidance-single-stock-circuit-breakers)
+- [CIRO â Market Volatility](https://www.ciro.ca/newsroom/halts-and-resumptions/market-volatility)
+- [OSC â Canadian Investment Regulatory Organization (CIRO)](https://www.osc.ca/en/industry/market-regulation/self-regulatory-organizations-sro/canadian-investment-regulatory-organization-ciro)
+- [CDS â T+1 Initiative](https://www.cds.ca/solutions/cds-key-initiatives/t-1)
+- [TMX Group â Post Trade Modernization Press Release](https://www.tmx.com/en/newsroom/press-releases?id=1280)
+- [TMX Group â Equity Financing Statistics (StockTitan)](https://www.stocktitan.net/news/TMXXF/)
+- [TMX Group â PDAC 2026 Mining Announcement](https://www.stocktitan.net/news/TMXXF/tmx-group-welcomes-international-mining-community-to-pdac-n446kepnckva.html)
+- [TMX Group â Historical Timeline (Investor Relations)](https://investors.tmx.com/English/about-us/historical-timeline/default.aspx)
+- [Toronto Stock Exchange â Wikipedia](https://en.wikipedia.org/wiki/Toronto_Stock_Exchange)
+- [TMX Group â Wikipedia](https://en.wikipedia.org/wiki/TMX_Group)
+- [TSX Daily Trading Reports](https://www.tsx.com/en/trading/market-data-and-statistics/market-statistics-and-reports/daily-trading-reports)
+- [Traders Magazine â TMX Lowers Maker Taker Fees](https://www.tradersmagazine.com/news/tmx-lowers-maker-taker-fees-abolishes-volume-based-pricing-tiers/)
