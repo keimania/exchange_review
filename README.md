@@ -5,6 +5,9 @@ KRX IT 부서를 위한 글로벌 거래소 인프라 비교 조사 프로젝트
 
 > **A comprehensive, bilingual (English/Korean) research project analyzing 60 exchanges, CCPs, and CSDs across 20+ jurisdictions — with deep-dive benchmarking powered by official reference materials.**
 
+> 🌐 **웹 포털 (PC 및 모바일 브라우저 즉시 접속):** [https://keimania.github.io/exchange_review/](https://keimania.github.io/exchange_review/)  
+> *반응형 웹 UI, 실시간 전문 검색(Search), 180+ 심층 리포트 및 403개 용어집 포함*
+
 ---
 
 ## Project Overview

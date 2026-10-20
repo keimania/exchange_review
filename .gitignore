@@ -1,2 +1,23 @@
+# Quarto
 /.quarto/
 **/*.quarto_ipynb
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Office temporary files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Python cache
+__pycache__/
+*.pyc

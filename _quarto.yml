@@ -59,7 +59,7 @@ website:
             href: qmd/reference/ko/final_review.qmd
     right:
       - icon: github
-        href: https://github.com
+        href: https://github.com/keimania/exchange_review
 
   sidebar:
     - id: 01_equities-en
@@ -314,6 +314,7 @@ website:
 format:
   html:
     theme: cosmo
+    css: styles.css
     toc: true
     toc-location: left
     toc-depth: 3

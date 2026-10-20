@@ -117,7 +117,7 @@ def main():
         "            href: qmd/reference/ko/final_review.qmd",
         "    right:",
         "      - icon: github",
-        "        href: https://github.com",
+        "        href: https://github.com/keimania/exchange_review",
         "",
         "  sidebar:",
     ]
@@ -145,6 +145,7 @@ def main():
         "format:",
         "  html:",
         "    theme: cosmo",
+        "    css: styles.css",
         "    toc: true",
         "    toc-location: left",
         "    toc-depth: 3",

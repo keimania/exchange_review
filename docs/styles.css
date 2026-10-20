@@ -1,0 +1,84 @@
+/* Global Exchange Research - Responsive & Mobile Styles */
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.75;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Mobile responsive tables */
+.table-responsive, table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+}
+
+table th {
+  background-color: rgba(0, 0, 0, 0.04);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+table td, table th {
+  padding: 0.65rem 0.9rem;
+  font-size: 0.95rem;
+}
+
+/* Hero Box in index */
+.hero-box {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  border-radius: 14px;
+  padding: 2.25rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px rgba(30, 60, 114, 0.18);
+}
+
+.hero-box h1 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-box p {
+  color: #e3ebf6;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+  
+  .hero-box {
+    padding: 1.5rem 1.25rem;
+  }
+  
+  .hero-box h1 {
+    font-size: 1.6rem;
+  }
+  
+  .hero-box p {
+    font-size: 0.95rem;
+  }
+
+  table td, table th {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.88rem;
+  }
+}
