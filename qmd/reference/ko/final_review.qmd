@@ -10,15 +10,21 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
     self-contained: false
 ---
 
-> **작성일:** 2026-04-13
-> **범위:** 주식시장 23개 거래소, 파생상품시장 17개 거래소, 청산·결제 기관 20개
-> **총 문서 수:** 3개 도메인에 걸쳐 영문 연구 파일 90개 이상
-
----
+```{=html}
+<div class="doc-header-card">
+  <div class="doc-header-left">
+    <span class="doc-badge category">📁 참고자료 &gt; 한국어 리포트</span>
+    <span class="doc-badge tier">📑 심층 분석 리포트</span>
+    <span class="doc-badge date">📅 2026-04-17</span>
+  </div>
+  <div class="doc-header-right">
+    <a href="../final_review.html" class="doc-lang-btn">🌐 Read in English</a>
+  </div>
+</div>
+```
 
 ## 목차 (Table of Contents)
 

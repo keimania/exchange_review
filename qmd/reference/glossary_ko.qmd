@@ -10,13 +10,21 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
     self-contained: false
 ---
 
-> 조사 중 새 용어가 발견될 때마다 추가. 카테고리별 영문 기준 알파벳순 정렬.
-
----
+```{=html}
+<div class="doc-header-card">
+  <div class="doc-header-left">
+    <span class="doc-badge category">📁 참고자료 &gt; 용어집</span>
+    <span class="doc-badge tier">📑 심층 분석 리포트</span>
+    <span class="doc-badge date">📅 2026-04-17</span>
+  </div>
+  <div class="doc-header-right">
+    <a href="glossary_en.html" class="doc-lang-btn">🌐 Read in English</a>
+  </div>
+</div>
+```
 
 ## 매매 (Trading)
 

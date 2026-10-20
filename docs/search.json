@@ -4,7 +4,7 @@
     "href": "qmd/reference/ko/final_review.html",
     "title": "최종 리뷰 (Final Review): 글로벌 거래소 연구 — 도메인 간 비교 분석 및 KRX 벤치마킹",
     "section": "",
-    "text": "작성일: 2026-04-13 범위: 주식시장 23개 거래소, 파생상품시장 17개 거래소, 청산·결제 기관 20개 총 문서 수: 3개 도메인에 걸쳐 영문 연구 파일 90개 이상",
+    "text": "📁 참고자료 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-17\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "최종 리뷰 (Final Review): 글로벌 거래소 연구 — 도메인 간 비교 분석 및 KRX 벤치마킹"
     ]
@@ -64,7 +64,7 @@
     "href": "qmd/reference/glossary_en.html",
     "title": "English Glossary — Global Exchange Research",
     "section": "",
-    "text": "Terms are added as they are encountered during research. Keep alphabetically sorted within each category.",
+    "text": "📁 Reference &gt; Glossary\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "English Glossary — Global Exchange Research"
     ]
@@ -144,7 +144,7 @@
     "href": "qmd/03_clearing/ko/systems/lch_systems.html",
     "title": "LCH 청산 플랫폼 및 증거금 엔진 (LCH Clearing Platforms & Margin Engines)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 시스템 분류: 청산시스템",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "LCH 청산 플랫폼 및 증거금 엔진 (LCH Clearing Platforms & Margin Engines)"
@@ -243,7 +243,7 @@
     "href": "qmd/03_clearing/ko/systems/dtcc_systems.html",
     "title": "DTCC 핵심 시스템 (DTCC Core Systems) — NSCC/DTC 결제 및 청산 인프라",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 시스템 분류: 청산시스템 / 결제시스템",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "DTCC 핵심 시스템 (DTCC Core Systems) — NSCC/DTC 결제 및 청산 인프라"
@@ -342,7 +342,7 @@
     "href": "qmd/03_clearing/ko/regulations/eu_clearing_regulation.html",
     "title": "EU 청산 및 결제 규제 (EU Clearing & Settlement Regulation)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 상태: 포괄적 초안 (Comprehensive draft)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "규제",
       "EU 청산 및 결제 규제 (EU Clearing & Settlement Regulation)"
@@ -463,7 +463,7 @@
     "href": "qmd/03_clearing/ko/organizations/six_xclear.html",
     "title": "SIX x-clear AG (SIX x-clear)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 3 (개요) 유형: CCP (중앙청산소, Central Counterparty)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "SIX x-clear AG (SIX x-clear)"
@@ -573,7 +573,7 @@
     "href": "qmd/03_clearing/ko/organizations/muqassa.html",
     "title": "Securities Clearing Center Company (Muqassa, 무까사)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 3 유형: CCP (중앙청산소, Central Counterparty)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "Securities Clearing Center Company (Muqassa, 무까사)"
@@ -683,7 +683,7 @@
     "href": "qmd/03_clearing/ko/organizations/ksd.html",
     "title": "KSD (한국예탁결제원, Korea Securities Depository)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-13 조사 등급: Tier 1 유형: CSD (중앙예탁결제기관, Central Securities Depository)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-13\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "KSD (한국예탁결제원, Korea Securities Depository)"
@@ -815,7 +815,7 @@
     "href": "qmd/03_clearing/ko/organizations/jscc.html",
     "title": "Japan Securities Clearing Corporation (JSCC, 일본증권청산기관)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 2 (Standard) 유형: CCP (중앙청산소, Central Counterparty)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "Japan Securities Clearing Corporation (JSCC, 일본증권청산기관)"
@@ -936,7 +936,7 @@
     "href": "qmd/03_clearing/ko/organizations/hkex_clearing.html",
     "title": "HKEX Clearing (홍콩거래소 청산) – HKSCC / HKCC / SEOCH",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 2 유형: CCP + CSD (복수 법인)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "HKEX Clearing (홍콩거래소 청산) -- HKSCC / HKCC / SEOCH"
@@ -1057,7 +1057,7 @@
     "href": "qmd/03_clearing/ko/organizations/euroccp.html",
     "title": "European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe (유럽중앙청산소 / Cboe 클리어 유럽)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 수준: Tier 2 (Standard) 유형: CCP (중앙청산소)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe (유럽중앙청산소 / Cboe 클리어 유럽)"
@@ -1178,7 +1178,7 @@
     "href": "qmd/03_clearing/ko/organizations/dtcc.html",
     "title": "DTCC (Depository Trust & Clearing Corporation, 미국예탁결제공사)",
     "section": "",
-    "text": "최종 갱신일: 2026-04-07 조사 단계: Tier 1 (심층 분석) 유형: 지주회사 (CCP + CSD) – DTC (중앙예탁기관), NSCC (주식 CCP), FICC (채권 CCP) 포괄",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-17\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "DTCC (Depository Trust & Clearing Corporation, 미국예탁결제공사)"
@@ -1310,7 +1310,7 @@
     "href": "qmd/03_clearing/ko/organizations/cme_clearing.html",
     "title": "CME Clearing (CME 청산소)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 1 (심층 분석) 유형: CCP (중앙청산소, Central Counterparty)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "CME Clearing (CME 청산소)"
@@ -1431,7 +1431,7 @@
     "href": "qmd/03_clearing/ko/organizations/cds_canada.html",
     "title": "CDS Clearing and Depository Services (CDS)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 3 유형: CCP (중앙청산소) / CSD (중앙예탁기관)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "CDS Clearing and Depository Services (CDS)"
@@ -1541,7 +1541,7 @@
     "href": "qmd/03_clearing/ko/organizations/ccil.html",
     "title": "Clearing Corporation of India Limited (CCIL)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 3 (개요) 유형: CCP (중앙청산소, Central Counterparty)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "Clearing Corporation of India Limited (CCIL)"
@@ -1651,7 +1651,7 @@
     "href": "qmd/03_clearing/ko/02_comparative_analysis.html",
     "title": "글로벌 청산결제 — 비교 분석 (Global Clearing & Settlement – Comparative Analysis)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-13",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-13\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "글로벌 청산결제 — 비교 분석 (Global Clearing & Settlement -- Comparative Analysis)"
     ]
@@ -1771,7 +1771,7 @@
     "href": "qmd/03_clearing/en/systems/lch_systems.html",
     "title": "LCH Clearing Platforms & Margin Engines",
     "section": "",
-    "text": "Last Updated: 2026-04-07 System Category: Clearing System",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "LCH Clearing Platforms & Margin Engines"
@@ -1870,7 +1870,7 @@
     "href": "qmd/03_clearing/en/systems/dtcc_systems.html",
     "title": "DTCC Core Systems — NSCC/DTC Settlement & Clearing Infrastructure",
     "section": "",
-    "text": "Last Updated: 2026-04-07 System Category: Clearing System / Settlement System",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "DTCC Core Systems — NSCC/DTC Settlement & Clearing Infrastructure"
@@ -1969,7 +1969,7 @@
     "href": "qmd/03_clearing/en/regulations/eu_clearing_regulation.html",
     "title": "EU Clearing & Settlement Regulation",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Status: Comprehensive draft",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Regulations",
       "EU Clearing & Settlement Regulation"
@@ -2090,7 +2090,7 @@
     "href": "qmd/03_clearing/en/organizations/six_xclear.html",
     "title": "SIX x-clear AG (SIX x-clear)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 (Overview) Type: CCP (Central Counterparty)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "SIX x-clear AG (SIX x-clear)"
@@ -2200,7 +2200,7 @@
     "href": "qmd/03_clearing/en/organizations/muqassa.html",
     "title": "Securities Clearing Center Company (Muqassa)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 Type: CCP (Central Counterparty)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "Securities Clearing Center Company (Muqassa)"
@@ -2310,7 +2310,7 @@
     "href": "qmd/03_clearing/en/organizations/ksd.html",
     "title": "KSD (Korea Securities Depository)",
     "section": "",
-    "text": "Last Updated: 2026-04-13 Research Tier: Tier 1 Type: CSD (Central Securities Depository)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "KSD (Korea Securities Depository)"
@@ -2442,7 +2442,7 @@
     "href": "qmd/03_clearing/en/organizations/jscc.html",
     "title": "Japan Securities Clearing Corporation (JSCC)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 2 (Standard) Type: CCP (Central Counterparty)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "Japan Securities Clearing Corporation (JSCC)"
@@ -2563,7 +2563,7 @@
     "href": "qmd/03_clearing/en/organizations/hkex_clearing.html",
     "title": "HKEX Clearing – HKSCC / HKCC / SEOCH",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 2 Type: CCP + CSD (multiple entities)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "HKEX Clearing -- HKSCC / HKCC / SEOCH"
@@ -2684,7 +2684,7 @@
     "href": "qmd/03_clearing/en/organizations/euroccp.html",
     "title": "European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 2 (Standard) Type: CCP (Central Counterparty)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "European Central Counterparty N.V. (EuroCCP) / Cboe Clear Europe"
@@ -2805,7 +2805,7 @@
     "href": "qmd/03_clearing/en/organizations/dtcc.html",
     "title": "Depository Trust & Clearing Corporation (DTCC)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 1 (Deep Dive) Type: Holding Company (CCP + CSD) — encompasses DTC (CSD), NSCC (CCP for equities), FICC (CCP for fixed income)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "Depository Trust & Clearing Corporation (DTCC)"
@@ -2937,7 +2937,7 @@
     "href": "qmd/03_clearing/en/organizations/cme_clearing.html",
     "title": "CME Clearing",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 1 (Deep Dive) Type: CCP (Central Counterparty)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "CME Clearing"
@@ -3058,7 +3058,7 @@
     "href": "qmd/03_clearing/en/organizations/cds_canada.html",
     "title": "CDS Clearing and Depository Services (CDS)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 Type: CCP / CSD",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "CDS Clearing and Depository Services (CDS)"
@@ -3168,7 +3168,7 @@
     "href": "qmd/03_clearing/en/organizations/ccil.html",
     "title": "Clearing Corporation of India Limited (CCIL)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 (Overview) Type: CCP (Central Counterparty)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "Clearing Corporation of India Limited (CCIL)"
@@ -3278,7 +3278,7 @@
     "href": "qmd/03_clearing/en/02_comparative_analysis.html",
     "title": "Global Clearing & Settlement – Comparative Analysis",
     "section": "",
-    "text": "Last Updated: 2026-04-13",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Global Clearing & Settlement -- Comparative Analysis"
     ]
@@ -3398,7 +3398,7 @@
     "href": "qmd/02_derivatives/ko/systems/t7_derivatives.html",
     "title": "T7 매매 아키텍처 (T7 Trading Architecture) – Eurex (파생상품)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 시스템 분류: 매매시스템 (Trading System)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "T7 매매 아키텍처 (T7 Trading Architecture) -- Eurex (파생상품)"
@@ -3497,7 +3497,7 @@
     "href": "qmd/02_derivatives/ko/systems/genium_inet.html",
     "title": "Genium INET — Nasdaq Technology",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 시스템 분류: 매매시스템 (Trading System)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "Genium INET — Nasdaq Technology"
@@ -3596,7 +3596,7 @@
     "href": "qmd/02_derivatives/ko/regulations/eu_derivatives_regulation.html",
     "title": "EU 파생상품 규제 (EU Derivatives Regulation)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 분야: 파생상품 — 규제 프레임워크 (Regulatory Framework)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "규제",
       "EU 파생상품 규제 (EU Derivatives Regulation)"
@@ -3717,7 +3717,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/taifex.html",
     "title": "Taiwan Futures Exchange (TAIFEX, 대만선물거래소)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 조사 단계: Tier 3 도메인: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Taiwan Futures Exchange (TAIFEX, 대만선물거래소)"
@@ -3838,7 +3838,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/sgx_derivatives.html",
     "title": "SGX (싱가포르거래소) 파생상품",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 조사 단계: Tier 1 도메인: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "SGX (싱가포르거래소) 파생상품"
@@ -4058,7 +4058,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/nse_fo.html",
     "title": "National Stock Exchange of India — Futures & Options (NSE F&O, 인도국립증권거래소 선물옵션)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 조사 등급: Tier 3 분야: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "National Stock Exchange of India — Futures & Options (NSE F&O, 인도국립증권거래소 선물옵션)"
@@ -4201,7 +4201,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/krx_derivatives.html",
     "title": "KRX 파생상품시장 (한국거래소)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-13 조사 등급: Tier 1 도메인: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-13\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "KRX 파생상품시장 (한국거래소)"
@@ -4333,7 +4333,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/hkex_derivatives.html",
     "title": "HKEX (홍콩거래소) 파생상품 시장",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 조사 단계: Tier 1 도메인: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "HKEX (홍콩거래소) 파생상품 시장"
@@ -4498,7 +4498,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/eurex.html",
     "title": "Eurex (유렉스)",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 조사 등급: Tier 1 분야: 파생상품 (Derivatives)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Eurex (유렉스)"
@@ -4718,7 +4718,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/dce.html",
     "title": "Dalian Commodity Exchange (DCE, 다롄상품거래소)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 조사 등급: Tier 3 분야: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Dalian Commodity Exchange (DCE, 다롄상품거래소)"
@@ -4828,7 +4828,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/cffex.html",
     "title": "China Financial Futures Exchange (CFFEX, 중국금융선물거래소)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 조사 단계: Tier 3 도메인: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "China Financial Futures Exchange (CFFEX, 중국금융선물거래소)"
@@ -4938,7 +4938,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/asx_derivatives.html",
     "title": "ASX Derivatives (호주증권거래소 파생상품)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 조사 등급: Tier 2 분야: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "ASX Derivatives (호주증권거래소 파생상품)"
@@ -5081,7 +5081,7 @@
     "href": "qmd/02_derivatives/ko/01_overview.html",
     "title": "글로벌 파생상품시장 (Global Derivatives Markets) — 개요 (Overview)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-13 상태 (Status): 완료 (Completed)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-13\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "글로벌 파생상품시장 (Global Derivatives Markets) — 개요 (Overview)"
     ]
@@ -5171,7 +5171,7 @@
     "href": "qmd/02_derivatives/en/systems/globex.html",
     "title": "CME Globex — CME Group",
     "section": "",
-    "text": "Last Updated: 2026-04-07 System Category: Trading System",
+    "text": "📁 Derivatives &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "CME Globex — CME Group"
@@ -5270,7 +5270,7 @@
     "href": "qmd/02_derivatives/en/regulations/us_derivatives_regulation.html",
     "title": "U.S. Derivatives Regulation",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Domain: Derivatives — Regulatory Framework",
+    "text": "📁 Derivatives &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Regulations",
       "U.S. Derivatives Regulation"
@@ -5402,7 +5402,7 @@
     "href": "qmd/02_derivatives/en/regulations/asia_derivatives_regulation.html",
     "title": "Asia-Pacific Derivatives Regulation",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Domain: Derivatives — Regulatory Framework Jurisdictions: Japan, Hong Kong, Singapore, Korea (comparative)",
+    "text": "📁 Derivatives &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Regulations",
       "Asia-Pacific Derivatives Regulation"
@@ -5479,7 +5479,7 @@
     "href": "qmd/02_derivatives/en/exchanges/shfe.html",
     "title": "Shanghai Futures Exchange (SHFE)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Shanghai Futures Exchange (SHFE)"
@@ -5589,7 +5589,7 @@
     "href": "qmd/02_derivatives/en/exchanges/osaka_exchange.html",
     "title": "Osaka Exchange (OSE)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 2 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Osaka Exchange (OSE)"
@@ -5743,7 +5743,7 @@
     "href": "qmd/02_derivatives/en/exchanges/montreal_exchange.html",
     "title": "Montreal Exchange (MX)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Montreal Exchange (MX)"
@@ -5897,7 +5897,7 @@
     "href": "qmd/02_derivatives/en/exchanges/ice_futures.html",
     "title": "ICE Futures (Intercontinental Exchange Futures)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 2 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "ICE Futures (Intercontinental Exchange Futures)"
@@ -6051,7 +6051,7 @@
     "href": "qmd/02_derivatives/en/exchanges/euronext_derivatives.html",
     "title": "Euronext Derivatives",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 2 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Euronext Derivatives"
@@ -6205,7 +6205,7 @@
     "href": "qmd/02_derivatives/en/exchanges/dme.html",
     "title": "Dubai Mercantile Exchange (DME)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Dubai Mercantile Exchange (DME)"
@@ -6326,7 +6326,7 @@
     "href": "qmd/02_derivatives/en/exchanges/cme_group.html",
     "title": "CME Group",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 1 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "CME Group"
@@ -6546,7 +6546,7 @@
     "href": "qmd/02_derivatives/en/exchanges/cboe.html",
     "title": "Cboe Global Markets",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 2 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Cboe Global Markets"
@@ -6700,7 +6700,7 @@
     "href": "qmd/02_derivatives/en/02_comparative_analysis.html",
     "title": "Global Derivatives Markets – Comparative Analysis",
     "section": "",
-    "text": "Last Updated: 2026-04-13 Domain: Derivatives Scope: 17 exchanges across Americas, Europe, Asia-Pacific, and Middle East",
+    "text": "📁 Derivatives &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Global Derivatives Markets -- Comparative Analysis"
     ]
@@ -6810,7 +6810,7 @@
     "href": "qmd/01_equities/ko/systems/titan.html",
     "title": "SGX Titan / SGX REACH – 싱가포르거래소 (Singapore Exchange)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 시스템 분류: 매매시스템 (Trading System)",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "SGX Titan / SGX REACH -- 싱가포르거래소 (Singapore Exchange)"
@@ -6909,7 +6909,7 @@
     "href": "qmd/01_equities/ko/systems/pillar.html",
     "title": "NYSE Pillar – 뉴욕증권거래소 (New York Stock Exchange)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 시스템 분류: 매매시스템 (Trading System)",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "NYSE Pillar -- 뉴욕증권거래소 (New York Stock Exchange)"
@@ -7008,7 +7008,7 @@
     "href": "qmd/01_equities/ko/systems/optiq.html",
     "title": "Optiq – Euronext (유로넥스트)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 시스템 분류: 매매시스템 (Trading System)",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "Optiq -- Euronext (유로넥스트)"
@@ -7107,7 +7107,7 @@
     "href": "qmd/01_equities/ko/systems/inet.html",
     "title": "NASDAQ INET – NASDAQ 주식시장 (NASDAQ Stock Market)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 시스템 분류: 매매시스템 (Trading System)",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "NASDAQ INET -- NASDAQ 주식시장 (NASDAQ Stock Market)"
@@ -7206,7 +7206,7 @@
     "href": "qmd/01_equities/ko/systems/arrowhead.html",
     "title": "arrowhead – 일본거래소그룹(JPX) / 도쿄증권거래소(TSE)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 시스템 분류: 매매시스템 (Trading System)",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "arrowhead -- 일본거래소그룹(JPX) / 도쿄증권거래소(TSE)"
@@ -7305,7 +7305,7 @@
     "href": "qmd/01_equities/ko/regulations/eu_equities_regulation.html",
     "title": "EU/UK 주식시장 규제 (EU/UK Equities Market Regulation)",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 연구 등급: Tier 1 분야: 주식 — 규제 프레임워크",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "규제",
       "EU/UK 주식시장 규제 (EU/UK Equities Market Regulation)"
@@ -7448,7 +7448,7 @@
     "href": "qmd/01_equities/ko/exchanges/twse.html",
     "title": "Taiwan Stock Exchange (TWSE)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 3 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Taiwan Stock Exchange (TWSE)"
@@ -7602,7 +7602,7 @@
     "href": "qmd/01_equities/ko/exchanges/tadawul.html",
     "title": "Saudi Exchange (Tadawul)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 3 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Saudi Exchange (Tadawul)"
@@ -7723,7 +7723,7 @@
     "href": "qmd/01_equities/ko/exchanges/sse.html",
     "title": "Shanghai Stock Exchange (SSE)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 3 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Shanghai Stock Exchange (SSE)"
@@ -7877,7 +7877,7 @@
     "href": "qmd/01_equities/ko/exchanges/sgx.html",
     "title": "Singapore Exchange (SGX)",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 조사 등급: Tier 1 영역: 주식시장",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Singapore Exchange (SGX)"
@@ -8020,7 +8020,7 @@
     "href": "qmd/01_equities/ko/exchanges/nse_india.html",
     "title": "National Stock Exchange of India (NSE)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 3 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "National Stock Exchange of India (NSE)"
@@ -8163,7 +8163,7 @@
     "href": "qmd/01_equities/ko/exchanges/nasdaq.html",
     "title": "NASDAQ Stock Market (NASDAQ)",
     "section": "",
-    "text": "최종 수정일: 2026-04-03 조사 등급: Tier 1 영역: 주식시장",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-03\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "NASDAQ Stock Market (NASDAQ)"
@@ -8306,7 +8306,7 @@
     "href": "qmd/01_equities/ko/exchanges/krx.html",
     "title": "Korea Exchange (KRX, 한국거래소)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-13 조사 등급: Tier 1 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-13\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Korea Exchange (KRX, 한국거래소)"
@@ -8449,7 +8449,7 @@
     "href": "qmd/01_equities/ko/exchanges/jpx.html",
     "title": "Japan Exchange Group / Tokyo Stock Exchange (JPX / TSE)",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 조사 등급: Tier 1 영역: 주식시장",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Japan Exchange Group / Tokyo Stock Exchange (JPX / TSE)"
@@ -8592,7 +8592,7 @@
     "href": "qmd/01_equities/ko/exchanges/euronext.html",
     "title": "Euronext N.V. (Euronext)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 2 분야: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Euronext N.V. (Euronext)"
@@ -8735,7 +8735,7 @@
     "href": "qmd/01_equities/ko/exchanges/bursa_malaysia.html",
     "title": "Bursa Malaysia Berhad (Bursa Malaysia)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 3 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Bursa Malaysia Berhad (Bursa Malaysia)"
@@ -8878,7 +8878,7 @@
     "href": "qmd/01_equities/ko/exchanges/borsa_italiana.html",
     "title": "Borsa Italiana (Euronext Milan)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 3 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Borsa Italiana (Euronext Milan)"
@@ -9021,7 +9021,7 @@
     "href": "qmd/01_equities/ko/exchanges/asx.html",
     "title": "Australian Securities Exchange (ASX)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 2 분야: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Australian Securities Exchange (ASX)"
@@ -9164,7 +9164,7 @@
     "href": "qmd/01_equities/ko/01_overview.html",
     "title": "글로벌 주식시장 — 개요 (Global Equities Markets — Overview)",
     "section": "",
-    "text": "최종 수정일: 2026-04-13 상태: 완료",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-13\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "글로벌 주식시장 — 개요 (Global Equities Markets — Overview)"
     ]
@@ -9244,7 +9244,7 @@
     "href": "qmd/01_equities/en/systems/t7.html",
     "title": "T7 Trading System – Deutsche BÃ¶rse (Xetra)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 System Category: Trading System",
+    "text": "📁 Equities &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "T7 Trading System -- Deutsche BÃ¶rse (Xetra)"
@@ -9343,7 +9343,7 @@
     "href": "qmd/01_equities/en/systems/orion.html",
     "title": "Orion Trading Platform – Cash (OTP-C) — HKEX",
     "section": "",
-    "text": "Last Updated: 2026-04-06 System Category: Trading System",
+    "text": "📁 Equities &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "Orion Trading Platform -- Cash (OTP-C) — HKEX"
@@ -9442,7 +9442,7 @@
     "href": "qmd/01_equities/en/systems/millennium.html",
     "title": "Millennium Exchange — London Stock Exchange",
     "section": "",
-    "text": "Last Updated: 2026-04-06 System Category: Trading System",
+    "text": "📁 Equities &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "Millennium Exchange — London Stock Exchange"
@@ -9541,7 +9541,7 @@
     "href": "qmd/01_equities/en/systems/exture_3.html",
     "title": "Exture 3.0 — Korea Exchange (KRX)",
     "section": "",
-    "text": "Last Updated: 2026-04-13 System Category: Trading System / Clearing System / Market Data System",
+    "text": "📁 Equities &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "Exture 3.0 — Korea Exchange (KRX)"
@@ -9640,7 +9640,7 @@
     "href": "qmd/01_equities/en/regulations/us_equities_regulation.html",
     "title": "US Equities Market Regulation",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 1 Domain: Equities — Regulatory Framework",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Regulations",
       "US Equities Market Regulation"
@@ -9783,7 +9783,7 @@
     "href": "qmd/01_equities/en/regulations/asia_equities_regulation.html",
     "title": "Asia-Pacific Equities Market Regulation",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 1 Domain: Equities â Regulatory Framework",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Regulations",
       "Asia-Pacific Equities Market Regulation"
@@ -9805,7 +9805,7 @@
     "href": "qmd/01_equities/en/regulations/asia_equities_regulation.html#japan-fsajfsa-jpx",
     "title": "Asia-Pacific Equities Market Regulation",
     "section": "1. Japan (FSA/JFSA + JPX)",
-    "text": "1. Japan (FSA/JFSA + JPX)\n\n1.1 Regulatory Authority Structure\nJapan’s securities market regulation follows a multi-layered structure comprising a government regulator, a surveillance commission, and exchange-level self-regulation.\n\n\n\n\n\n\n\n\nAuthority\nFull Name\nRole\n\n\n\n\nJFSA\nFinancial Services Agency of Japan (éèåº)\nPrimary regulator; rulemaking, licensing, supervision of financial institutions and markets\n\n\nSESC\nSecurities and Exchange Surveillance Commission (è¨¼å¸åå¼ç­ç£è¦å§å¡ä¼)\nInvestigative and surveillance arm under JFSA; inspections, market monitoring, criminal referrals\n\n\nJPX-R\nJapan Exchange Regulation, Inc.\nSelf-regulatory organization (SRO) of JPX; conducts listing examinations, trading participant inspections, market surveillance on behalf of TSE and OSE\n\n\nMOF\nMinistry of Finance (è²¡åç)\nOversees Foreign Exchange and Foreign Trade Act (FEFTA); foreign investment screening\n\n\n\n[Source: JFSA, “About FSA”, accessed 2026-04-06; JPX, “Self-Regulation”, accessed 2026-04-06]\nJFSA was established in 2000 (reorganized from the Financial Supervisory Agency, originally created in 1998) and exercises comprehensive regulatory authority over securities markets, banking, and insurance. The JFSA sets policy, drafts legislation, issues licenses, and supervises compliance. It reports directly to the Prime Minister and the Cabinet.\nSESC was established in 1992 as an independent commission within the JFSA (structurally analogous to the relationship between the SEC’s Division of Enforcement and the full Commission in the US). The SESC conducts: - Market surveillance for insider trading, market manipulation, and other unfair trading practices - Inspections of financial instruments business operators (broker-dealers, asset managers) - Investigations of disclosure violations - Recommendations for administrative sanctions and criminal referrals to prosecutors\nAs of February 2026, the SESC continues to expand its enforcement capabilities, including proposed authority over crypto-asset insider trading under forthcoming FIEA amendments.\n[Source: SESC, “Overview”, published February 2026, accessed 2026-04-06]\nJPX-R (Japan Exchange Regulation, Inc.) was established as a wholly-owned subsidiary of Japan Exchange Group to serve as the dedicated self-regulatory organization for TSE and Osaka Exchange (OSE). JPX-R is described as the “quality control center” of the exchanges and performs: - Listing examinations: Reviews applications for new listings and continued listing compliance - Listed company compliance: Monitors corporate disclosure, governance compliance, and timely disclosure obligations - Trading participant examination and inspection: Examines and inspects broker-dealers (trading participants) for compliance with exchange rules - Market surveillance: Real-time monitoring of trading activity for manipulation, insider trading, and other anomalies; as of April 2025, JPX-R has introduced AI-powered market surveillance tools\n[Source: JPX, “Outline of Self-Regulatory Operations”, accessed 2026-04-06; Mondovisione, “Japan Exchange Regulation Annual Report 2025”, August 2025]\n\n\n1.2 Key Legislation\n\nFinancial Instruments and Exchange Act (FIEA / éèåååå¼æ³)\nThe FIEA (Act No. 25 of 1948, substantially revised in 2006) is the principal statute governing Japan’s securities markets. Originally enacted as the Securities and Exchange Act (modeled on the US Securities Act of 1933 and Securities Exchange Act of 1934), it was comprehensively reformed and renamed the Financial Instruments and Exchange Act in 2006 (effective September 2007) to broaden its scope to cover a wider range of financial instruments beyond traditional securities.\n[Source: JFSA, “Financial Instruments and Exchange Act”, accessed 2026-04-06]\nKey Provisions:\n\n\n\n\n\n\n\nArea\nFIEA Provisions\n\n\n\n\nRegistration\nType 1 (securities broker-dealer), Type 2 (fund sales), Investment Advisory, Investment Management â all require JFSA registration\n\n\nDisclosure\nContinuous disclosure (annual securities reports/æä¾¡è¨¼å¸å ±åæ¸, quarterly reports, timely disclosure via TDnet), large shareholding reports (5% rule)\n\n\nUnfair trading\nProhibition of insider trading (Art. 166, 167), market manipulation (Art. 159), fraudulent acts (Art. 157)\n\n\nTender offers\nMandatory TOB rules for acquiring &gt;30% of a listed company (effective May 1, 2026, lowered from one-third)\n\n\nMarket infrastructure\nRegulation of financial instruments exchanges, clearing organizations, book-entry transfer institutions\n\n\nInvestor protection\nSuitability obligations, segregation of customer assets, conflict-of-interest management\n\n\n\n\n\n2024 FIEA Amendments (Effective May 1, 2026)\nMajor amendments enacted in 2024 include:\n\nTender Offer Bid (TOB) threshold: Lowered from one-third to 30% for mandatory tender offers\n“30% Rule” exemption: Small-scale purchases increasing shareholding by less than 0.5% are exempt from TOB, provided no acquisitions occurred in the previous six months\nLarge shareholding reporting clarifications: Scope of “joint holders” and “acts of material proposal” clarified; format of reports modernized through EDINET updates\nCrypto-asset reclassification: JFSA proposed bringing crypto-assets under FIEA oversight (as “Type 1 Financial Instruments”), with legislative drafting targeted for 2026\n\n[Source: Funds-Axis, “Japan’s 2024 FIEA Amendments”, accessed 2026-04-06; DLA Piper, “Recent developments on TOB rules and shareholding transparency in Japan”, January 2026]\n\n\nOther Key Legislation\n\n\n\n\n\n\n\nStatute\nScope\n\n\n\n\nForeign Exchange and Foreign Trade Act (FEFTA / å¤çºæ³)\nForeign investment screening; prior notification requirements for investments in designated sectors\n\n\nCompanies Act (ä¼ç¤¾æ³)\nCorporate governance, directors’ duties, shareholder rights\n\n\nAct on Book-Entry Transfer of Company Bonds, Shares, etc.\nDematerialization of securities\n\n\nFinancial Instruments Exchange Act Enforcement Order (æ¿ä»¤)\nDetailed implementing rules for FIEA\n\n\n\n\n\n\n1.3 Market Structure Rules\nTrading Regulations: - Order types: Limit orders, market orders, and various conditional orders processed through the arrowhead trading engine - Price limits: Daily price limits (å¤å¹å¶é) based on the previous day’s closing price; limits range from +/-30 yen (for stocks under 100 yen) to +/-7,000 yen (for stocks at 30,000-50,000 yen level), with wider limits for higher-priced stocks - Tick sizes: Multi-tiered based on price level and index membership (TOPIX 500 constituents have finer ticks) - Trading unit: Standardized at 100 shares for all listed stocks since October 2018 - Closing auction: Introduced November 2024 with a 5-minute pre-closing period (15:25-15:30) followed by Itayose matching\nListing Requirements: Governed by TSE listing rules and examined by JPX-R. Three main market segments (Prime, Standard, Growth) established in April 2022 market restructuring, plus TOKYO PRO Market for professional investors.\n\n\n1.4 Market Surveillance\nJapan employs a two-tier surveillance model:\nJPX-R (First Line): - Real-time surveillance of all trading on TSE and OSE - AI-powered detection systems (introduced April 2025) for identifying suspicious trading patterns - Investigation of potential rule violations by trading participants and listed companies - Referral of suspected violations to SESC\nSESC (Second Line): - Conducts formal investigations upon referral from JPX-R or on its own initiative - Authority to recommend administrative monetary penalties (èª²å¾´é) to JFSA - Criminal referrals to public prosecutors for serious violations - Inspection of financial instruments business operators - Cross-border coordination with overseas regulators - In Q4 2024, the SESC investigated inappropriate sharing of customer information between banks and securities affiliates\n[Source: JPX, “JPX-R Inspection Plan for FY2025”, March 2025; SESC overview, February 2026]\n\n\n1.5 Reporting and Disclosure Requirements\n\n\n\n\n\n\n\nRequirement\nDetails\n\n\n\n\nAnnual securities report (æä¾¡è¨¼å¸å ±åæ¸)\nFiled via EDINET within 3 months of fiscal year-end; comprehensive financial and operational disclosure\n\n\nQuarterly reports\nFiled within 45 days of each quarter-end\n\n\nTimely disclosure (é©æéç¤º)\nMaterial information disclosed immediately via TDnet (TSE Timely Disclosure Network); covering decisions, events, and financial results\n\n\nLarge shareholding reports\n5% threshold; filing within 5 business days via EDINET; 1% change triggers amendment\n\n\nShort position reporting\nPositions &gt;= 0.2% reported to TSE; positions &gt;= 0.5% publicly disclosed with investor name\n\n\nInsider trading reporting\nOfficers, major shareholders, and other insiders must report trading in issuer shares\n\n\n\n\n\n1.6 Short Selling Regulations\nJapan maintains a permanent regulatory framework for short selling under the FIEA and its Enforcement Order:\n\n\n\n\n\n\n\nRule\nDetails\n\n\n\n\nNaked short selling ban\nPermanent prohibition (originally a temporary crisis measure in 2008, made permanent); sellers must secure securities before selling short\n\n\nUptick rule (trigger-based)\nPrice restriction activated when a stock’s price drops 10% or more from the base price; once triggered, short sales may only be executed at a price above the last traded price; restriction lasts until the end of the next trading day\n\n\nMarking requirement\nAll short sale orders must be flagged/marked as short sales\n\n\nPosition reporting\nPositions &gt;= 0.2% must be reported to TSE; &gt;= 0.5% publicly disclosed\n\n\nAggregation\nShort positions calculated on a per-investor, per-issue basis\n\n\n\n[Source: JPX, “Short Selling Restrictions”, accessed 2026-04-06; Clifford Chance, “Significant changes to the Japanese short selling regulations”, 2013]\n\n\n1.7 Foreign Investor Access\nJapan’s securities market is generally open to foreign investors with no major restrictions on portfolio investment:\n\nNo pre-registration requirement for general portfolio investment in listed securities\nNo foreign ownership limits on most listed companies (sector-specific restrictions apply under FEFTA for national security sectors such as defense, nuclear energy, telecommunications)\nFree repatriation of capital and profits\n\n2025 FEFTA Amendments (effective May 19, 2025): - New “Specified Foreign Investors” classification for investors with obligations to disclose information to foreign governments (particularly targeting entities linked to foreign intelligence services) - Specified Foreign Investors must file prior notification when acquiring &gt;= 1% of listed shares, with no eligibility for exemptions - Enhanced screening for investments in designated sensitive sectors\n[Source: Lexology, “Japan’s 2025 FEFTA Amendments”, accessed 2026-04-06; Norton Rose Fulbright, “Global rules on foreign direct investment: Japan”, accessed 2026-04-06]\n\n\n1.8 Corporate Governance Code and Stewardship Code\n\nCorporate Governance Code (ã³ã¼ãã¬ã¼ãã¬ããã³ã¹ã»ã³ã¼ã)\nFirst introduced in June 2015 and revised in June 2018 and June 2021, the Corporate Governance Code is a principles-based framework jointly published by the JFSA and TSE. It applies on a “comply or explain” basis.\nKey Principles: - Board independence: At least one-third independent outside directors for Prime Market companies (majority encouraged) - Cross-shareholding: Companies should disclose rationale and reduce strategic cross-shareholdings; major insurance companies committed to full divestment - Cost of capital awareness: TSE’s January 2023 initiative requesting all Prime and Standard Market companies to disclose plans for improving cost of capital and stock price (PBR initiative); as of March 2025, over 90% of Prime Market companies have disclosed such plans\n2025-2026 Revision Process: - JPX and JFSA convened the Expert Panel on the Revision of the Corporate Governance Code (third meeting held April 3, 2026) - Key topics under review include: further strengthening board effectiveness, sustainability disclosure, engagement with shareholders, and cross-shareholding unwinding\n[Source: JPX, “Follow-up Council”, accessed 2026-04-06; Harvard Law School Forum on Corporate Governance, “Tokyo Stock Exchange Initiative on Cost of Capital”, October 2025]\n\n\nStewardship Code (Version 3.0, June 26, 2025)\nJapan’s Stewardship Code was first introduced in February 2014 and revised in May 2017 and March 2020. Version 3.0 was published on June 26, 2025.\nKey Changes in Version 3.0: - Emphasis on moving from “form to substance” â discouraging box-ticking approaches - Beneficial shareholder transparency: Institutional investors should be prepared to disclose shareholding details to investee companies upon request (Guidance 4-2) - Collaborative engagement: Principle 4.5 encourages joint investor engagement to address governance and sustainability challenges - Principles-based flexibility: Recognition that sustainable value creation cannot be reduced to formulaic approaches\n[Source: JFSA, “Revision of the Stewardship Code”, June 26, 2025; ACGA, “Decoding Japan’s New Stewardship Code and 2025 FSA Action Programme”, accessed 2026-04-06]\n\n\n\n1.9 Recent Changes (2023-2026)\n\n\n\n\n\n\n\nDate\nChange\n\n\n\n\nJanuary 2023\nTSE requests Prime/Standard Market companies to disclose plans for improving cost of capital and stock price (PBR initiative)\n\n\nApril 2024\narrowhead 4.0 launched; trading hours extended to 15:30 with closing auction\n\n\nNovember 2024\nTrading hours officially extended by 30 minutes with 5-minute pre-closing period\n\n\nApril 2025\nJPX-R introduces AI-powered market surveillance\n\n\nMay 2025\n2025 FEFTA Amendments take effect â “Specified Foreign Investors” classification\n\n\nJune 2025\nStewardship Code Version 3.0 published\n\n\n2025-2026\nExpert Panel on Corporate Governance Code Revision convened\n\n\nMay 1, 2026\n2024 FIEA Amendments take effect â TOB threshold lowered to 30%, large shareholding reporting reforms\n\n\n2026 (expected)\nCrypto-asset regulation under FIEA â legislative drafting in progress",
+    "text": "1. Japan (FSA/JFSA + JPX)\n\n1.1 Regulatory Authority Structure\nJapan’s securities market regulation follows a multi-layered structure comprising a government regulator, a surveillance commission, and exchange-level self-regulation.\n\n\n\n\n\n\n\n\nAuthority\nFull Name\nRole\n\n\n\n\nJFSA\nFinancial Services Agency of Japan (éèåº)\nPrimary regulator; rulemaking, licensing, supervision of financial institutions and markets\n\n\nSESC\nSecurities and Exchange Surveillance Commission (è¨¼å¸åå¼ç­ç£è¦å§å¡ä¼)\nInvestigative and surveillance arm under JFSA; inspections, market monitoring, criminal referrals\n\n\nJPX-R\nJapan Exchange Regulation, Inc.\nSelf-regulatory organization (SRO) of JPX; conducts listing examinations, trading participant inspections, market surveillance on behalf of TSE and OSE\n\n\nMOF\nMinistry of Finance (è²¡åç)\nOversees Foreign Exchange and Foreign Trade Act (FEFTA); foreign investment screening\n\n\n\n[Source: JFSA, “About FSA”, accessed 2026-04-06; JPX, “Self-Regulation”, accessed 2026-04-06]\nJFSA was established in 2000 (reorganized from the Financial Supervisory Agency, originally created in 1998) and exercises comprehensive regulatory authority over securities markets, banking, and insurance. The JFSA sets policy, drafts legislation, issues licenses, and supervises compliance. It reports directly to the Prime Minister and the Cabinet.\nSESC was established in 1992 as an independent commission within the JFSA (structurally analogous to the relationship between the SEC’s Division of Enforcement and the full Commission in the US). The SESC conducts: - Market surveillance for insider trading, market manipulation, and other unfair trading practices - Inspections of financial instruments business operators (broker-dealers, asset managers) - Investigations of disclosure violations - Recommendations for administrative sanctions and criminal referrals to prosecutors\nAs of February 2026, the SESC continues to expand its enforcement capabilities, including proposed authority over crypto-asset insider trading under forthcoming FIEA amendments.\n[Source: SESC, “Overview”, published February 2026, accessed 2026-04-06]\nJPX-R (Japan Exchange Regulation, Inc.) was established as a wholly-owned subsidiary of Japan Exchange Group to serve as the dedicated self-regulatory organization for TSE and Osaka Exchange (OSE). JPX-R is described as the “quality control center” of the exchanges and performs: - Listing examinations: Reviews applications for new listings and continued listing compliance - Listed company compliance: Monitors corporate disclosure, governance compliance, and timely disclosure obligations - Trading participant examination and inspection: Examines and inspects broker-dealers (trading participants) for compliance with exchange rules - Market surveillance: Real-time monitoring of trading activity for manipulation, insider trading, and other anomalies; as of April 2025, JPX-R has introduced AI-powered market surveillance tools\n[Source: JPX, “Outline of Self-Regulatory Operations”, accessed 2026-04-06; Mondovisione, “Japan Exchange Regulation Annual Report 2025”, August 2025]\n\n\n1.2 Key Legislation\n\nFinancial Instruments and Exchange Act (FIEA / éèåååå¼æ³)\nThe FIEA (Act No. 25 of 1948, substantially revised in 2006) is the principal statute governing Japan’s securities markets. Originally enacted as the Securities and Exchange Act (modeled on the US Securities Act of 1933 and Securities Exchange Act of 1934), it was comprehensively reformed and renamed the Financial Instruments and Exchange Act in 2006 (effective September 2007) to broaden its scope to cover a wider range of financial instruments beyond traditional securities.\n[Source: JFSA, “Financial Instruments and Exchange Act”, accessed 2026-04-06]\nKey Provisions:\n\n\n\n\n\n\n\nArea\nFIEA Provisions\n\n\n\n\nRegistration\nType 1 (securities broker-dealer), Type 2 (fund sales), Investment Advisory, Investment Management â all require JFSA registration\n\n\nDisclosure\nContinuous disclosure (annual securities reports/æä¾¡è¨¼å¸å ±åæ¸, quarterly reports, timely disclosure via TDnet), large shareholding reports (5% rule)\n\n\nUnfair trading\nProhibition of insider trading (Art. 166, 167), market manipulation (Art. 159), fraudulent acts (Art. 157)\n\n\nTender offers\nMandatory TOB rules for acquiring &gt;30% of a listed company (effective May 1, 2026, lowered from one-third)\n\n\nMarket infrastructure\nRegulation of financial instruments exchanges, clearing organizations, book-entry transfer institutions\n\n\nInvestor protection\nSuitability obligations, segregation of customer assets, conflict-of-interest management\n\n\n\n\n\n2024 FIEA Amendments (Effective May 1, 2026)\nMajor amendments enacted in 2024 include:\n\nTender Offer Bid (TOB) threshold: Lowered from one-third to 30% for mandatory tender offers\n“30% Rule” exemption: Small-scale purchases increasing shareholding by less than 0.5% are exempt from TOB, provided no acquisitions occurred in the previous six months\nLarge shareholding reporting clarifications: Scope of “joint holders” and “acts of material proposal” clarified; format of reports modernized through EDINET updates\nCrypto-asset reclassification: JFSA proposed bringing crypto-assets under FIEA oversight (as “Type 1 Financial Instruments”), with legislative drafting targeted for 2026\n\n[Source: Funds-Axis, “Japan’s 2024 FIEA Amendments”, accessed 2026-04-06; DLA Piper, “Recent developments on TOB rules and shareholding transparency in Japan”, January 2026]\n\n\nOther Key Legislation\n\n\n\n\n\n\n\nStatute\nScope\n\n\n\n\nForeign Exchange and Foreign Trade Act (FEFTA / å¤çºæ³)\nForeign investment screening; prior notification requirements for investments in designated sectors\n\n\nCompanies Act (ä¼ç¤¾æ³)\nCorporate governance, directors’ duties, shareholder rights\n\n\nAct on Book-Entry Transfer of Company Bonds, Shares, etc.\nDematerialization of securities\n\n\nFinancial Instruments Exchange Act Enforcement Order (æ¿ä»¤)\nDetailed implementing rules for FIEA\n\n\n\n\n\n\n1.3 Market Structure Rules\nTrading Regulations: - Order types: Limit orders, market orders, and various conditional orders processed through the arrowhead trading engine - Price limits: Daily price limits (å¤å¹ å¶é) based on the previous day’s closing price; limits range from +/-30 yen (for stocks under 100 yen) to +/-7,000 yen (for stocks at 30,000-50,000 yen level), with wider limits for higher-priced stocks - Tick sizes: Multi-tiered based on price level and index membership (TOPIX 500 constituents have finer ticks) - Trading unit: Standardized at 100 shares for all listed stocks since October 2018 - Closing auction: Introduced November 2024 with a 5-minute pre-closing period (15:25-15:30) followed by Itayose matching\nListing Requirements: Governed by TSE listing rules and examined by JPX-R. Three main market segments (Prime, Standard, Growth) established in April 2022 market restructuring, plus TOKYO PRO Market for professional investors.\n\n\n1.4 Market Surveillance\nJapan employs a two-tier surveillance model:\nJPX-R (First Line): - Real-time surveillance of all trading on TSE and OSE - AI-powered detection systems (introduced April 2025) for identifying suspicious trading patterns - Investigation of potential rule violations by trading participants and listed companies - Referral of suspected violations to SESC\nSESC (Second Line): - Conducts formal investigations upon referral from JPX-R or on its own initiative - Authority to recommend administrative monetary penalties (èª²å¾´é) to JFSA - Criminal referrals to public prosecutors for serious violations - Inspection of financial instruments business operators - Cross-border coordination with overseas regulators - In Q4 2024, the SESC investigated inappropriate sharing of customer information between banks and securities affiliates\n[Source: JPX, “JPX-R Inspection Plan for FY2025”, March 2025; SESC overview, February 2026]\n\n\n1.5 Reporting and Disclosure Requirements\n\n\n\n\n\n\n\nRequirement\nDetails\n\n\n\n\nAnnual securities report (æä¾¡è¨¼å¸å ±åæ¸)\nFiled via EDINET within 3 months of fiscal year-end; comprehensive financial and operational disclosure\n\n\nQuarterly reports\nFiled within 45 days of each quarter-end\n\n\nTimely disclosure (é©æéç¤º)\nMaterial information disclosed immediately via TDnet (TSE Timely Disclosure Network); covering decisions, events, and financial results\n\n\nLarge shareholding reports\n5% threshold; filing within 5 business days via EDINET; 1% change triggers amendment\n\n\nShort position reporting\nPositions &gt;= 0.2% reported to TSE; positions &gt;= 0.5% publicly disclosed with investor name\n\n\nInsider trading reporting\nOfficers, major shareholders, and other insiders must report trading in issuer shares\n\n\n\n\n\n1.6 Short Selling Regulations\nJapan maintains a permanent regulatory framework for short selling under the FIEA and its Enforcement Order:\n\n\n\n\n\n\n\nRule\nDetails\n\n\n\n\nNaked short selling ban\nPermanent prohibition (originally a temporary crisis measure in 2008, made permanent); sellers must secure securities before selling short\n\n\nUptick rule (trigger-based)\nPrice restriction activated when a stock’s price drops 10% or more from the base price; once triggered, short sales may only be executed at a price above the last traded price; restriction lasts until the end of the next trading day\n\n\nMarking requirement\nAll short sale orders must be flagged/marked as short sales\n\n\nPosition reporting\nPositions &gt;= 0.2% must be reported to TSE; &gt;= 0.5% publicly disclosed\n\n\nAggregation\nShort positions calculated on a per-investor, per-issue basis\n\n\n\n[Source: JPX, “Short Selling Restrictions”, accessed 2026-04-06; Clifford Chance, “Significant changes to the Japanese short selling regulations”, 2013]\n\n\n1.7 Foreign Investor Access\nJapan’s securities market is generally open to foreign investors with no major restrictions on portfolio investment:\n\nNo pre-registration requirement for general portfolio investment in listed securities\nNo foreign ownership limits on most listed companies (sector-specific restrictions apply under FEFTA for national security sectors such as defense, nuclear energy, telecommunications)\nFree repatriation of capital and profits\n\n2025 FEFTA Amendments (effective May 19, 2025): - New “Specified Foreign Investors” classification for investors with obligations to disclose information to foreign governments (particularly targeting entities linked to foreign intelligence services) - Specified Foreign Investors must file prior notification when acquiring &gt;= 1% of listed shares, with no eligibility for exemptions - Enhanced screening for investments in designated sensitive sectors\n[Source: Lexology, “Japan’s 2025 FEFTA Amendments”, accessed 2026-04-06; Norton Rose Fulbright, “Global rules on foreign direct investment: Japan”, accessed 2026-04-06]\n\n\n1.8 Corporate Governance Code and Stewardship Code\n\nCorporate Governance Code (ã³ã¼ãã¬ã¼ãã¬ããã³ã¹ã»ã³ã¼ã)\nFirst introduced in June 2015 and revised in June 2018 and June 2021, the Corporate Governance Code is a principles-based framework jointly published by the JFSA and TSE. It applies on a “comply or explain” basis.\nKey Principles: - Board independence: At least one-third independent outside directors for Prime Market companies (majority encouraged) - Cross-shareholding: Companies should disclose rationale and reduce strategic cross-shareholdings; major insurance companies committed to full divestment - Cost of capital awareness: TSE’s January 2023 initiative requesting all Prime and Standard Market companies to disclose plans for improving cost of capital and stock price (PBR initiative); as of March 2025, over 90% of Prime Market companies have disclosed such plans\n2025-2026 Revision Process: - JPX and JFSA convened the Expert Panel on the Revision of the Corporate Governance Code (third meeting held April 3, 2026) - Key topics under review include: further strengthening board effectiveness, sustainability disclosure, engagement with shareholders, and cross-shareholding unwinding\n[Source: JPX, “Follow-up Council”, accessed 2026-04-06; Harvard Law School Forum on Corporate Governance, “Tokyo Stock Exchange Initiative on Cost of Capital”, October 2025]\n\n\nStewardship Code (Version 3.0, June 26, 2025)\nJapan’s Stewardship Code was first introduced in February 2014 and revised in May 2017 and March 2020. Version 3.0 was published on June 26, 2025.\nKey Changes in Version 3.0: - Emphasis on moving from “form to substance” â discouraging box-ticking approaches - Beneficial shareholder transparency: Institutional investors should be prepared to disclose shareholding details to investee companies upon request (Guidance 4-2) - Collaborative engagement: Principle 4.5 encourages joint investor engagement to address governance and sustainability challenges - Principles-based flexibility: Recognition that sustainable value creation cannot be reduced to formulaic approaches\n[Source: JFSA, “Revision of the Stewardship Code”, June 26, 2025; ACGA, “Decoding Japan’s New Stewardship Code and 2025 FSA Action Programme”, accessed 2026-04-06]\n\n\n\n1.9 Recent Changes (2023-2026)\n\n\n\n\n\n\n\nDate\nChange\n\n\n\n\nJanuary 2023\nTSE requests Prime/Standard Market companies to disclose plans for improving cost of capital and stock price (PBR initiative)\n\n\nApril 2024\narrowhead 4.0 launched; trading hours extended to 15:30 with closing auction\n\n\nNovember 2024\nTrading hours officially extended by 30 minutes with 5-minute pre-closing period\n\n\nApril 2025\nJPX-R introduces AI-powered market surveillance\n\n\nMay 2025\n2025 FEFTA Amendments take effect â “Specified Foreign Investors” classification\n\n\nJune 2025\nStewardship Code Version 3.0 published\n\n\n2025-2026\nExpert Panel on Corporate Governance Code Revision convened\n\n\nMay 1, 2026\n2024 FIEA Amendments take effect â TOB threshold lowered to 30%, large shareholding reporting reforms\n\n\n2026 (expected)\nCrypto-asset regulation under FIEA â legislative drafting in progress",
     "crumbs": [
       "Regulations",
       "Asia-Pacific Equities Market Regulation"
@@ -9838,7 +9838,7 @@
     "href": "qmd/01_equities/en/regulations/asia_equities_regulation.html#comparison-with-korea-fscfsskrx",
     "title": "Asia-Pacific Equities Market Regulation",
     "section": "4. Comparison with Korea (FSC/FSS/KRX)",
-    "text": "4. Comparison with Korea (FSC/FSS/KRX)\n\n4.1 Regulatory Structure Comparison\nKorea uniquely operates a dual-regulator model at the government level (FSC for policy/rulemaking, FSS for supervision/enforcement), which differs from the single-regulator models of Japan (JFSA), Hong Kong (SFC), and Singapore (MAS).\n\n\n\n\n\n\n\n\n\n\nDimension\nKorea\nJapan\nHong Kong\nSingapore\n\n\n\n\nGovernment regulator\nFSC (Financial Services Commission, ê¸ìµììí) â policy/rulemaking; FSS (Financial Supervisory Service, ê¸ìµê°ëì) â supervision/examination\nJFSA (single regulator for policy + supervision)\nSFC (single statutory regulator for securities markets)\nMAS (integrated regulator: central bank + all financial supervision)\n\n\nDual/single structure\nDual: FSC (government commission) + FSS (executive body, non-governmental)\nSingle JFSA with SESC as specialized surveillance commission within it\nSingle SFC (plus HKEX Listing Division for listing regulation)\nSingle MAS (plus SGX RegCo for exchange-level regulation)\n\n\nExchange SRO\nKRX (Korea Exchange, íêµ­ê±°ëì) â operates as sole exchange and SRO\nJPX-R (dedicated SRO subsidiary of JPX)\nHKEX Listing Division (delegated authority from SFC)\nSGX RegCo (independent regulatory subsidiary of SGX)\n\n\nRegulatory philosophy\nPrescriptive/rules-based; active government intervention (e.g., short selling bans)\nPrinciples-based (corporate governance) + rules-based (trading regulations); increasing emphasis on market-based solutions\nDisclosure-based with SFC oversight; SFO provides both civil and criminal enforcement routes\nDisclosure-based; MAS favors proportionate enforcement with emphasis on deterrence\n\n\nRecent structural debate\nIn September 2025, Korea shelved proposed merger of FSC and FSS, keeping dual structure in place\nNo major structural changes\nPeriodic debate about HKEX self-listing conflict\nSGX RegCo independence strengthened since 2018\n\n\n\n[Source: FSC, “About FSC”, accessed 2026-04-06; KED Global, “S.Korea shelves financial regulator shake-up”, September 2025]\n\n\n4.2 Key Regulations: FSCMA (ìë³¸ìì¥ë²)\nKorea’s principal securities legislation is the Financial Investment Services and Capital Markets Act (FSCMA / ìë³¸ìì¥ê³¼ ê¸ìµí¬ììì ê´í ë²ë¥ ), enacted in 2007 (effective February 4, 2009). The FSCMA consolidated six prior laws into a single comprehensive statute covering securities, derivatives, and investment services.\nComparison of Principal Legislation:\n\n\n\n\n\n\n\n\n\nKorea (FSCMA)\nJapan (FIEA)\nHong Kong (SFO)\nSingapore (SFA)\n\n\n\n\nEnacted 2007, effective 2009\nOriginally 1948, renamed 2006 (effective 2007)\nEnacted 2002, effective 2003\nEnacted 2001\n\n\nConsolidated 6 prior laws\nExpanded from Securities and Exchange Act to cover broader financial instruments\nConsolidated 10 prior ordinances\nPrincipal statute for capital markets\n\n\nFunctional regulation approach (regulates activities, not institutions)\nSimilarly functional\nActivity-based (10 regulated activity types)\nCMS license categories\n\n\nNegative-list approach for financial investment products\nPositive-list approach (defined categories)\nDefined categories of securities and futures\nDefined “capital markets products”\n\n\n\n\n\n4.3 KRX as SRO\nKRX (Korea Exchange) serves as the sole licensed exchange operator and self-regulatory organization in Korea. Unlike other Asia-Pacific markets where multiple exchanges may compete, KRX operates all domestic equities, derivatives, and bond markets.\nComparison of Exchange SRO Functions:\n\n\n\n\n\n\n\n\n\n\nFunction\nKRX (Korea)\nJPX-R (Japan)\nHKEX Listing Div. (HK)\nSGX RegCo (Singapore)\n\n\n\n\nListing examination\nYes\nYes\nYes\nYes\n\n\nMarket surveillance\nYes (real-time)\nYes (AI-enhanced since 2025)\nSFC conducts primary surveillance\nYes (first-line); MAS oversees\n\n\nMember/participant inspection\nYes\nYes\nSFC handles\nYes\n\n\nCorporate independence from commercial arm\nLimited (KRX is a single entity)\nSeparate subsidiary (JPX-R)\nDivision within HKEX (SFC oversight)\nSeparate subsidiary with Regulatory Conflicts Committee\n\n\nDisciplinary authority\nYes\nYes\nSFC retains final authority\nYes, with MAS oversight\n\n\n\n\n\n4.4 Foreign Investor Registration\nKorea’s foreign investor registration system has historically been more restrictive than its Asia-Pacific peers:\n\n\n\n\n\n\n\n\n\n\nAspect\nKorea\nJapan\nHong Kong\nSingapore\n\n\n\n\nPre-registration\nPreviously: IRC (Investor Registration Certificate) required from FSS. Since December 14, 2023: IRC system abolished for new investors; LEI (Legal Entity Identifier) required instead\nNo pre-registration for portfolio investment\nNo pre-registration\nNo pre-registration\n\n\nUnique identifiers\nIRC (legacy investors) or LEI (new investors since December 2023); cannot use both simultaneously\nNone required for portfolio investment\nNone required\nNone required\n\n\nOmnibus accounts\nIntroduced as a reform measure; allows global asset managers to consolidate client orders under a single account\nStandard practice\nStandard practice\nStandard practice\n\n\nForeign ownership limits\nGenerally none for listed equities; sector-specific limits apply (e.g., broadcasting, telecommunications, airlines)\nGenerally none; FEFTA screening for designated sectors\nNone for HK-listed; Stock Connect quotas for A-shares\nGenerally none; sector-specific limits may apply\n\n\nOpenness ranking\nHistorically more restrictive; undergoing significant liberalization (MSCI watch for EM -&gt; DM reclassification)\nOpen\nVery open\nVery open\n\n\n\n[Source: FSC, “Omnibus Account for Foreign Investors”, accessed 2026-04-06; Clearstream, “Investment regulation â South Korea”, accessed 2026-04-06]\n\n\n4.5 Short Selling Rules: Korea’s Stricter Approach\nKorea has taken the most interventionist approach to short selling regulation among the four jurisdictions, including multiple temporary bans over recent years.\n\n\n\n\n\n\n\n\n\n\nAspect\nKorea\nJapan\nHong Kong\nSingapore\n\n\n\n\nNaked short selling\nProhibited (criminal offence; enhanced penalties under 2025 FSCMA revision: up to life imprisonment for illicit gains &gt; KRW 5 billion)\nPermanently prohibited (since 2008 crisis measures made permanent)\nCriminal offence under SFO Part XIV (up to HK$100,000 fine + 2 years imprisonment)\nProhibited under SFA\n\n\nTemporary bans\nMultiple: March 2020 â May 2021 (COVID); November 2023 â March 30, 2025 (institutional naked short selling scandal)\nNone in recent history\nNone in recent history\nNone in recent history\n\n\nResumption\nShort selling resumed March 31, 2025 for all listed stocks â first time all stocks eligible in five years\nN/A\nN/A\nN/A\n\n\nUptick rule\nYes (uptick rule for all short sales)\nTrigger-based: activated only when stock drops 10% from base price\nYes: short sales must be at or above best ask price\nYes [unverified]\n\n\nPosition reporting\nEnhanced under 2025 FSCMA revision\n&gt;= 0.2% reported; &gt;= 0.5% publicly disclosed\n&gt;= 0.02% of issued shares or HK$30 million reported to SFC\nNo mandatory public reporting regime [unverified]\n\n\nDetection system\nKRX launched Naked Short Selling Detection System (NSDS) for real-time detection\nJPX-R AI surveillance\nSFC surveillance\nSGX RegCo + MAS surveillance\n\n\nNon-monetary sanctions\nNew under 2025 FSCMA: trading restrictions up to 5 years; executive appointment restrictions up to 5 years\nAdministrative monetary penalties, criminal prosecution\nSFC civil/criminal prosecution; Market Misconduct Tribunal\nMAS civil penalties, prohibition orders, criminal prosecution\n\n\n\n2025 FSCMA Enforcement Decree (effective April 23, 2025): - FSC authorized to restrict rule-breakers from engaging in financial investment transactions for up to 5 years - FSC authorized to restrict rule-breakers from serving as executives at listed companies for up to 5 years - Enhanced criminal penalties: illegal short selling subject to same enhanced prison terms as unfair trading\n[Source: FSC, “Capital Market Reform”, accessed 2026-04-06; KED Global, “All listed stocks to be available for shorting”, March 2025]\n\n\n4.6 Circuit Breaker Comparison\nKorea operates the most comprehensive multi-layered circuit breaker system in the Asia-Pacific region.\n\n\n\n\n\n\n\n\n\n\nMechanism\nKorea (KRX)\nJapan (JPX)\nHong Kong (HKEX)\nSingapore (SGX)\n\n\n\n\nMarket-Wide Circuit Breaker (MWCB)\nYes â 3 stages: Stage 1: KOSPI drops &gt;= 8% for 1 min â 20-min halt; Stage 2: drops &gt;= 15% (+1%) â 20-min halt; Stage 3: drops &gt;= 20% (+1%) â market closed for the day\nFutures only: SCB triggered at ~8% decline for Nikkei/TOPIX futures â 10-min halt; cash equity trading continues\nNo market-wide CB; VCM operates at individual security level\nNo market-wide CB; circuit breaker at individual stock level\n\n\nSidecar (SSCB)\nYes: Triggered when KOSPI 200 futures move &gt;= 5% from previous close for 1 min â program trading halted for 5 min\nNot applicable\nNot applicable\nNot applicable\n\n\nVolatility Interruption (VI)\nYes â dual VI: Dynamic VI (intra-day price movement) + Static VI (deviation from reference price); applied to individual stocks; triggers 2-minute auction\nDaily price limits per stock (no intra-day VI equivalent); price limits vary by price level\nVCM: 10% deviation from reference price (5 min ago) â 5-min cooling-off period; trading within price band continues; applies to HSI/HSCEI constituent stocks and derivatives\nCircuit Breaker: 10% deviation within 5-min period â 5-min cooling-off; trading within price band; applies to STI and MSCI Singapore Index components\n\n\nDaily price limits\n+/- 30% (expanded from +/-15% in June 2015)\nYes: tiered limits based on stock price level\nNo daily price limits\nNo daily price limits\n\n\nRecent activation\nMarch 2026: MWCB triggered on KOSPI amid geopolitical tensions (KOSPI dropped 8.11%)\nApril 2025: Nikkei 225 futures SCB triggered (index opened down ~9%)\nVCM triggered periodically on individual stocks\nRarely triggered\n\n\n\n[Source: KRX, “Circuit Breaker”, accessed 2026-04-06; Korea Times, “KRX issues circuit breaker on KOSPI trading”, March 2026; HKEX, “VCM”, accessed 2026-04-06]\n\n\n4.7 Market Surveillance Comparison\n\n\n\n\n\n\n\n\n\n\nAspect\nKorea (KRX/FSS)\nJapan (JPX-R/SESC)\nHong Kong (SFC)\nSingapore (MAS/SGX RegCo)\n\n\n\n\nPrimary surveillance entity\nKRX Market Surveillance Division\nJPX-R\nSFC\nSGX RegCo (first-line) + MAS (oversight)\n\n\nTechnology\nNSDS (Naked Short Selling Detection System) for real-time monitoring; AI-based trade surveillance\nAI-powered surveillance introduced April 2025\nSFC integrated surveillance systems\nAutomated surveillance systems\n\n\nInsider trading enforcement\nFSS investigates; FSC imposes sanctions\nSESC investigates; refers to JFSA for monetary penalties or prosecutors for criminal cases\nSFC: dual track â Market Misconduct Tribunal (civil) or criminal prosecution\nMAS: civil penalties or criminal prosecution (joint with CAD)\n\n\nMarket manipulation enforcement\nFSS investigates; FSC sanctions\nSESC investigates and refers\nSFC investigates and prosecutes; joint operations with ICAC\nMAS investigates; joint operations with CAD\n\n\nCross-border cooperation\nMOUs with major regulators; IOSCO member\nSESC International Surveillance Office (est. 2015); IOSCO member\nSFC: extensive cross-border MOUs; IOSCO member\nMAS: IOSCO member; bilateral MOUs\n\n\n\n\n\n4.8 Summary Comparison Table\n\n\n\n\n\n\n\n\n\n\nDimension\nKorea (FSC/FSS/KRX)\nJapan (JFSA/SESC/JPX-R)\nHong Kong (SFC/HKEX)\nSingapore (MAS/SGX RegCo)\n\n\n\n\nRegulator model\nDual government regulator (FSC + FSS)\nSingle regulator (JFSA) with SESC surveillance commission\nSingle statutory regulator (SFC)\nSingle integrated regulator (MAS)\n\n\nPrincipal legislation\nFSCMA (2009)\nFIEA (1948/2006)\nSFO (2003)\nSFA (2001)\n\n\nExchange structure\nKRX (sole exchange, SRO)\nJPX Group with JPX-R (dedicated SRO)\nHKEX (Listing Division + SFC oversight)\nSGX Group with SGX RegCo (independent subsidiary)\n\n\nForeign investor access\nIRC/LEI registration required; liberalizing\nOpen (no registration; FEFTA for sensitive sectors)\nVery open (no registration; no FX controls)\nVery open (no registration; no FX controls)\n\n\nShort selling regime\nStrictest: multiple bans; enhanced penalties; NSDS system\nModerate: permanent naked ban; trigger-based uptick rule; position reporting\nModerate: covered only; designated securities; tick rule\nModerate: prohibited naked; standard enforcement\n\n\nCircuit breakers\nMost comprehensive: 3-stage MWCB + SSCB + dual VI + daily limits\nFutures SCB + daily price limits (no equity MWCB)\nVCM per security (no MWCB; no daily limits)\nPer-security CB (no MWCB; no daily limits)\n\n\nCorporate governance\nKorean CG Code (comply-or-explain); FSC emphasis on shareholder activism reforms\nCG Code + Stewardship Code (both actively revised); PBR initiative\nCorporate Governance Code (comply-or-explain); Listing Rules governance requirements\nCode of Corporate Governance (comply-or-explain); SGX listing rules\n\n\nCross-border market access\nLimited (no formal market link programs currently)\nNo formal market link (but open access)\nStock Connect (Shanghai, Shenzhen); Bond Connect; Swap Connect; ETF Connect\nGIFT Connect (India); Global Listing Board (Nasdaq, proposed)\n\n\nMarket cap of listed companies\n~USD 1.8 trillion (2025)\n~USD 8.1 trillion (March 2026)\n~USD 6.2 trillion (February 2026)\n~USD 0.8 trillion (December 2025)\n\n\nRegulatory trend\nLiberalization (IRC abolition, omnibus accounts, short selling resumption); but interventionist streak persists\nMarket-based reforms (governance codes, PBR initiative); cautious on crypto regulation\nMaintaining competitiveness (listing reforms, spread reduction, Stock Connect expansion)\nInnovation-friendly (Global Listing Board, integrated regulator efficiency)",
+    "text": "4. Comparison with Korea (FSC/FSS/KRX)\n\n4.1 Regulatory Structure Comparison\nKorea uniquely operates a dual-regulator model at the government level (FSC for policy/rulemaking, FSS for supervision/enforcement), which differs from the single-regulator models of Japan (JFSA), Hong Kong (SFC), and Singapore (MAS).\n\n\n\n\n\n\n\n\n\n\nDimension\nKorea\nJapan\nHong Kong\nSingapore\n\n\n\n\nGovernment regulator\nFSC (Financial Services Commission, ê¸ìµììí) â policy/rulemaking; FSS (Financial Supervisory Service, ê¸ìµê°ë\n\n\n\n\n\nì) â supervision/examination\nJFSA (single regulator for policy + supervision)\nSFC (single statutory regulator for securities markets)\nMAS (integrated regulator: central bank + all financial supervision)\n\n\n\nDual/single structure\nDual: FSC (government commission) + FSS (executive body, non-governmental)\nSingle JFSA with SESC as specialized surveillance commission within it\nSingle SFC (plus HKEX Listing Division for listing regulation)\nSingle MAS (plus SGX RegCo for exchange-level regulation)\n\n\nExchange SRO\nKRX (Korea Exchange, íêµ­ê±°ëì) â operates as sole exchange and SRO\nJPX-R (dedicated SRO subsidiary of JPX)\nHKEX Listing Division (delegated authority from SFC)\nSGX RegCo (independent regulatory subsidiary of SGX)\n\n\nRegulatory philosophy\nPrescriptive/rules-based; active government intervention (e.g., short selling bans)\nPrinciples-based (corporate governance) + rules-based (trading regulations); increasing emphasis on market-based solutions\nDisclosure-based with SFC oversight; SFO provides both civil and criminal enforcement routes\nDisclosure-based; MAS favors proportionate enforcement with emphasis on deterrence\n\n\nRecent structural debate\nIn September 2025, Korea shelved proposed merger of FSC and FSS, keeping dual structure in place\nNo major structural changes\nPeriodic debate about HKEX self-listing conflict\nSGX RegCo independence strengthened since 2018\n\n\n\n[Source: FSC, “About FSC”, accessed 2026-04-06; KED Global, “S.Korea shelves financial regulator shake-up”, September 2025]\n\n\n4.2 Key Regulations: FSCMA (ìë³¸ìì¥ë²)\nKorea’s principal securities legislation is the Financial Investment Services and Capital Markets Act (FSCMA / ìë³¸ìì¥ê³¼ ê¸ìµí¬ìì ì ê´í ë²ë¥ ), enacted in 2007 (effective February 4, 2009). The FSCMA consolidated six prior laws into a single comprehensive statute covering securities, derivatives, and investment services.\nComparison of Principal Legislation:\n\n\n\n\n\n\n\n\n\nKorea (FSCMA)\nJapan (FIEA)\nHong Kong (SFO)\nSingapore (SFA)\n\n\n\n\nEnacted 2007, effective 2009\nOriginally 1948, renamed 2006 (effective 2007)\nEnacted 2002, effective 2003\nEnacted 2001\n\n\nConsolidated 6 prior laws\nExpanded from Securities and Exchange Act to cover broader financial instruments\nConsolidated 10 prior ordinances\nPrincipal statute for capital markets\n\n\nFunctional regulation approach (regulates activities, not institutions)\nSimilarly functional\nActivity-based (10 regulated activity types)\nCMS license categories\n\n\nNegative-list approach for financial investment products\nPositive-list approach (defined categories)\nDefined categories of securities and futures\nDefined “capital markets products”\n\n\n\n\n\n4.3 KRX as SRO\nKRX (Korea Exchange) serves as the sole licensed exchange operator and self-regulatory organization in Korea. Unlike other Asia-Pacific markets where multiple exchanges may compete, KRX operates all domestic equities, derivatives, and bond markets.\nComparison of Exchange SRO Functions:\n\n\n\n\n\n\n\n\n\n\nFunction\nKRX (Korea)\nJPX-R (Japan)\nHKEX Listing Div. (HK)\nSGX RegCo (Singapore)\n\n\n\n\nListing examination\nYes\nYes\nYes\nYes\n\n\nMarket surveillance\nYes (real-time)\nYes (AI-enhanced since 2025)\nSFC conducts primary surveillance\nYes (first-line); MAS oversees\n\n\nMember/participant inspection\nYes\nYes\nSFC handles\nYes\n\n\nCorporate independence from commercial arm\nLimited (KRX is a single entity)\nSeparate subsidiary (JPX-R)\nDivision within HKEX (SFC oversight)\nSeparate subsidiary with Regulatory Conflicts Committee\n\n\nDisciplinary authority\nYes\nYes\nSFC retains final authority\nYes, with MAS oversight\n\n\n\n\n\n4.4 Foreign Investor Registration\nKorea’s foreign investor registration system has historically been more restrictive than its Asia-Pacific peers:\n\n\n\n\n\n\n\n\n\n\nAspect\nKorea\nJapan\nHong Kong\nSingapore\n\n\n\n\nPre-registration\nPreviously: IRC (Investor Registration Certificate) required from FSS. Since December 14, 2023: IRC system abolished for new investors; LEI (Legal Entity Identifier) required instead\nNo pre-registration for portfolio investment\nNo pre-registration\nNo pre-registration\n\n\nUnique identifiers\nIRC (legacy investors) or LEI (new investors since December 2023); cannot use both simultaneously\nNone required for portfolio investment\nNone required\nNone required\n\n\nOmnibus accounts\nIntroduced as a reform measure; allows global asset managers to consolidate client orders under a single account\nStandard practice\nStandard practice\nStandard practice\n\n\nForeign ownership limits\nGenerally none for listed equities; sector-specific limits apply (e.g., broadcasting, telecommunications, airlines)\nGenerally none; FEFTA screening for designated sectors\nNone for HK-listed; Stock Connect quotas for A-shares\nGenerally none; sector-specific limits may apply\n\n\nOpenness ranking\nHistorically more restrictive; undergoing significant liberalization (MSCI watch for EM -&gt; DM reclassification)\nOpen\nVery open\nVery open\n\n\n\n[Source: FSC, “Omnibus Account for Foreign Investors”, accessed 2026-04-06; Clearstream, “Investment regulation â South Korea”, accessed 2026-04-06]\n\n\n4.5 Short Selling Rules: Korea’s Stricter Approach\nKorea has taken the most interventionist approach to short selling regulation among the four jurisdictions, including multiple temporary bans over recent years.\n\n\n\n\n\n\n\n\n\n\nAspect\nKorea\nJapan\nHong Kong\nSingapore\n\n\n\n\nNaked short selling\nProhibited (criminal offence; enhanced penalties under 2025 FSCMA revision: up to life imprisonment for illicit gains &gt; KRW 5 billion)\nPermanently prohibited (since 2008 crisis measures made permanent)\nCriminal offence under SFO Part XIV (up to HK$100,000 fine + 2 years imprisonment)\nProhibited under SFA\n\n\nTemporary bans\nMultiple: March 2020 â May 2021 (COVID); November 2023 â March 30, 2025 (institutional naked short selling scandal)\nNone in recent history\nNone in recent history\nNone in recent history\n\n\nResumption\nShort selling resumed March 31, 2025 for all listed stocks â first time all stocks eligible in five years\nN/A\nN/A\nN/A\n\n\nUptick rule\nYes (uptick rule for all short sales)\nTrigger-based: activated only when stock drops 10% from base price\nYes: short sales must be at or above best ask price\nYes [unverified]\n\n\nPosition reporting\nEnhanced under 2025 FSCMA revision\n&gt;= 0.2% reported; &gt;= 0.5% publicly disclosed\n&gt;= 0.02% of issued shares or HK$30 million reported to SFC\nNo mandatory public reporting regime [unverified]\n\n\nDetection system\nKRX launched Naked Short Selling Detection System (NSDS) for real-time detection\nJPX-R AI surveillance\nSFC surveillance\nSGX RegCo + MAS surveillance\n\n\nNon-monetary sanctions\nNew under 2025 FSCMA: trading restrictions up to 5 years; executive appointment restrictions up to 5 years\nAdministrative monetary penalties, criminal prosecution\nSFC civil/criminal prosecution; Market Misconduct Tribunal\nMAS civil penalties, prohibition orders, criminal prosecution\n\n\n\n2025 FSCMA Enforcement Decree (effective April 23, 2025): - FSC authorized to restrict rule-breakers from engaging in financial investment transactions for up to 5 years - FSC authorized to restrict rule-breakers from serving as executives at listed companies for up to 5 years - Enhanced criminal penalties: illegal short selling subject to same enhanced prison terms as unfair trading\n[Source: FSC, “Capital Market Reform”, accessed 2026-04-06; KED Global, “All listed stocks to be available for shorting”, March 2025]\n\n\n4.6 Circuit Breaker Comparison\nKorea operates the most comprehensive multi-layered circuit breaker system in the Asia-Pacific region.\n\n\n\n\n\n\n\n\n\n\nMechanism\nKorea (KRX)\nJapan (JPX)\nHong Kong (HKEX)\nSingapore (SGX)\n\n\n\n\nMarket-Wide Circuit Breaker (MWCB)\nYes â 3 stages: Stage 1: KOSPI drops &gt;= 8% for 1 min â 20-min halt; Stage 2: drops &gt;= 15% (+1%) â 20-min halt; Stage 3: drops &gt;= 20% (+1%) â market closed for the day\nFutures only: SCB triggered at ~8% decline for Nikkei/TOPIX futures â 10-min halt; cash equity trading continues\nNo market-wide CB; VCM operates at individual security level\nNo market-wide CB; circuit breaker at individual stock level\n\n\nSidecar (SSCB)\nYes: Triggered when KOSPI 200 futures move &gt;= 5% from previous close for 1 min â program trading halted for 5 min\nNot applicable\nNot applicable\nNot applicable\n\n\nVolatility Interruption (VI)\nYes â dual VI: Dynamic VI (intra-day price movement) + Static VI (deviation from reference price); applied to individual stocks; triggers 2-minute auction\nDaily price limits per stock (no intra-day VI equivalent); price limits vary by price level\nVCM: 10% deviation from reference price (5 min ago) â 5-min cooling-off period; trading within price band continues; applies to HSI/HSCEI constituent stocks and derivatives\nCircuit Breaker: 10% deviation within 5-min period â 5-min cooling-off; trading within price band; applies to STI and MSCI Singapore Index components\n\n\nDaily price limits\n+/- 30% (expanded from +/-15% in June 2015)\nYes: tiered limits based on stock price level\nNo daily price limits\nNo daily price limits\n\n\nRecent activation\nMarch 2026: MWCB triggered on KOSPI amid geopolitical tensions (KOSPI dropped 8.11%)\nApril 2025: Nikkei 225 futures SCB triggered (index opened down ~9%)\nVCM triggered periodically on individual stocks\nRarely triggered\n\n\n\n[Source: KRX, “Circuit Breaker”, accessed 2026-04-06; Korea Times, “KRX issues circuit breaker on KOSPI trading”, March 2026; HKEX, “VCM”, accessed 2026-04-06]\n\n\n4.7 Market Surveillance Comparison\n\n\n\n\n\n\n\n\n\n\nAspect\nKorea (KRX/FSS)\nJapan (JPX-R/SESC)\nHong Kong (SFC)\nSingapore (MAS/SGX RegCo)\n\n\n\n\nPrimary surveillance entity\nKRX Market Surveillance Division\nJPX-R\nSFC\nSGX RegCo (first-line) + MAS (oversight)\n\n\nTechnology\nNSDS (Naked Short Selling Detection System) for real-time monitoring; AI-based trade surveillance\nAI-powered surveillance introduced April 2025\nSFC integrated surveillance systems\nAutomated surveillance systems\n\n\nInsider trading enforcement\nFSS investigates; FSC imposes sanctions\nSESC investigates; refers to JFSA for monetary penalties or prosecutors for criminal cases\nSFC: dual track â Market Misconduct Tribunal (civil) or criminal prosecution\nMAS: civil penalties or criminal prosecution (joint with CAD)\n\n\nMarket manipulation enforcement\nFSS investigates; FSC sanctions\nSESC investigates and refers\nSFC investigates and prosecutes; joint operations with ICAC\nMAS investigates; joint operations with CAD\n\n\nCross-border cooperation\nMOUs with major regulators; IOSCO member\nSESC International Surveillance Office (est. 2015); IOSCO member\nSFC: extensive cross-border MOUs; IOSCO member\nMAS: IOSCO member; bilateral MOUs\n\n\n\n\n\n4.8 Summary Comparison Table\n\n\n\n\n\n\n\n\n\n\nDimension\nKorea (FSC/FSS/KRX)\nJapan (JFSA/SESC/JPX-R)\nHong Kong (SFC/HKEX)\nSingapore (MAS/SGX RegCo)\n\n\n\n\nRegulator model\nDual government regulator (FSC + FSS)\nSingle regulator (JFSA) with SESC surveillance commission\nSingle statutory regulator (SFC)\nSingle integrated regulator (MAS)\n\n\nPrincipal legislation\nFSCMA (2009)\nFIEA (1948/2006)\nSFO (2003)\nSFA (2001)\n\n\nExchange structure\nKRX (sole exchange, SRO)\nJPX Group with JPX-R (dedicated SRO)\nHKEX (Listing Division + SFC oversight)\nSGX Group with SGX RegCo (independent subsidiary)\n\n\nForeign investor access\nIRC/LEI registration required; liberalizing\nOpen (no registration; FEFTA for sensitive sectors)\nVery open (no registration; no FX controls)\nVery open (no registration; no FX controls)\n\n\nShort selling regime\nStrictest: multiple bans; enhanced penalties; NSDS system\nModerate: permanent naked ban; trigger-based uptick rule; position reporting\nModerate: covered only; designated securities; tick rule\nModerate: prohibited naked; standard enforcement\n\n\nCircuit breakers\nMost comprehensive: 3-stage MWCB + SSCB + dual VI + daily limits\nFutures SCB + daily price limits (no equity MWCB)\nVCM per security (no MWCB; no daily limits)\nPer-security CB (no MWCB; no daily limits)\n\n\nCorporate governance\nKorean CG Code (comply-or-explain); FSC emphasis on shareholder activism reforms\nCG Code + Stewardship Code (both actively revised); PBR initiative\nCorporate Governance Code (comply-or-explain); Listing Rules governance requirements\nCode of Corporate Governance (comply-or-explain); SGX listing rules\n\n\nCross-border market access\nLimited (no formal market link programs currently)\nNo formal market link (but open access)\nStock Connect (Shanghai, Shenzhen); Bond Connect; Swap Connect; ETF Connect\nGIFT Connect (India); Global Listing Board (Nasdaq, proposed)\n\n\nMarket cap of listed companies\n~USD 1.8 trillion (2025)\n~USD 8.1 trillion (March 2026)\n~USD 6.2 trillion (February 2026)\n~USD 0.8 trillion (December 2025)\n\n\nRegulatory trend\nLiberalization (IRC abolition, omnibus accounts, short selling resumption); but interventionist streak persists\nMarket-based reforms (governance codes, PBR initiative); cautious on crypto regulation\nMaintaining competitiveness (listing reforms, spread reduction, Stock Connect expansion)\nInnovation-friendly (Global Listing Board, integrated regulator efficiency)",
     "crumbs": [
       "Regulations",
       "Asia-Pacific Equities Market Regulation"
@@ -9860,7 +9860,7 @@
     "href": "qmd/01_equities/en/exchanges/tmx.html",
     "title": "TMX Group / Toronto Stock Exchange (TSX)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 2 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "TMX Group / Toronto Stock Exchange (TSX)"
@@ -10003,7 +10003,7 @@
     "href": "qmd/01_equities/en/exchanges/szse.html",
     "title": "Shenzhen Stock Exchange (SZSE)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 3 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Shenzhen Stock Exchange (SZSE)"
@@ -10025,7 +10025,7 @@
     "href": "qmd/01_equities/en/exchanges/szse.html#market-structure",
     "title": "Shenzhen Stock Exchange (SZSE)",
     "section": "2. Market Structure",
-    "text": "2. Market Structure\n\n2.1 Market Segments\nFollowing the April 2021 merger of the SME Board into the Main Board, SZSE operates a two-board structure:\n\n\n\n\n\n\n\n\nSegment\nDescription\nListing Requirements (Summary)\n\n\n\n\nMain Board (ä¸»æ¿)\nMarket for established, profitable enterprises; absorbed former SME Board companies in April 2021\nUnder the registration-based system: (1) Estimated market value &gt;= CNY 1 billion, positive net profit in most recent year, operating income &gt;= CNY 100 million; OR (2) Estimated market value &gt;= CNY 5 billion, operating income &gt;= CNY 300 million in most recent year. Must have &gt;= 3 years of continuous operation as a joint stock company. Net profit must be positive.\n\n\nChiNext (åä¸æ¿)\nNASDAQ-style board for innovative, high-growth enterprises â particularly technology, biotech, and new-economy companies. Lower entry barriers but strict ongoing operation requirements.\nUnder the registration-based system: (1) Net profit positive in last 2 years, cumulative &gt;= CNY 50 million; OR (2) Estimated market value &gt;= CNY 1 billion, positive net profit, operating income &gt;= CNY 100 million; OR (3) Estimated market value &gt;= CNY 5 billion, operating income &gt;= CNY 300 million (for pre-profit companies). Focus on companies in strategic emerging industries, innovation-driven businesses.\n\n\n\nNote on SME Board Merger: On April 6, 2021, with CSRC approval, the SME Board was fully merged into the Main Board. All previously SME-listed companies were reclassified as Main Board A-shares with unchanged ticker symbols and abbreviations. This merger streamlined the market structure and facilitated the comprehensive registration-based system reform.\n\n\n2.2 Trading Sessions\n\n\n\n\n\n\n\n\n\nSession\nLocal Time (CST)\nUTC (CST = UTC+8)\nDescription\n\n\n\n\nOpening Call Auction\n9:15 AM â 9:25 AM\n01:15 â 01:25\nOrder input and matching to determine opening price. Orders accepted 9:15â9:20; no cancellations allowed 9:20â9:25. Unmatched orders carry into continuous trading.\n\n\nMorning Continuous Trading\n9:30 AM â 11:30 AM\n01:30 â 03:30\nContinuous order matching on price-time priority.\n\n\nLunch Break\n11:30 AM â 1:00 PM\n03:30 â 05:00\nNo trading. 1.5-hour break (longer than HKEX’s 1-hour break). Common feature of Asian exchanges.\n\n\nAfternoon Continuous Trading\n1:00 PM â 2:57 PM\n05:00 â 06:57\nContinuation of continuous matching.\n\n\nClosing Call Auction\n2:57 PM â 3:00 PM\n06:57 â 07:00\n3-minute closing auction to determine closing price. No order cancellations allowed during this period.\n\n\n\nNotes: - Total continuous trading hours: ~4 hours (9:30â11:30 + 13:00â14:57), plus auction sessions. - China does not observe daylight saving time; CST is fixed at UTC+8. - Trading days: MondayâFriday, excluding national holidays declared in advance. - Half-day sessions apply before certain holidays.\n\n\n2.3 Tick Sizes\n\n\n\nPrice Range\nTick Size\n\n\n\n\nAll price levels\nCNY 0.01 (uniform)\n\n\n\nNote: Unlike HKEX or western exchanges that use tiered tick size tables, both SZSE and SSE apply a uniform tick size of CNY 0.01 for all equities regardless of price level.\n\n\n2.4 Lot Sizes\n\nStandard board lot: 100 shares (ä¹°ååä½)\nBuy orders: Must be in multiples of 100 shares (board lots).\nSell orders: Odd lots (fewer than 100 shares) may be sold in a single order but cannot be split.\nMaximum order size: 1,000,000 shares per single order.\nChiNext exception: Under the 2020 reforms, ChiNext allows orders in increments of 1 share (for amounts above 200 shares), rather than strictly in board lots [unverified â consult SZSE trading rules for current specifics].\n\n\n\n2.5 Settlement\n\n\n\n\n\n\n\nItem\nDetails\n\n\n\n\nSettlement Cycle\nT+1 for stock delivery; funds settlement also T+1\n\n\nKey Rule\nStocks bought on T day cannot be sold until T+1 (no same-day selling). Proceeds from selling on T can be used to purchase other stocks on the same day but cannot be withdrawn until T+1.\n\n\nClearing House\nChina Securities Depository and Clearing Corporation (CSDC / ä¸­å½è¯å¸ç»è®°ç»ç®æéå¬å¸), Shenzhen branch\n\n\nCurrency\nChinese Yuan (CNY / RMB)\n\n\n\n\n\n2.6 Market Maker / Liquidity Provider Programs\n\nSZSE operates primarily as an order-driven market without designated market makers for equities on the Main Board.\nChiNext introduced a competitive market maker system as part of the 2020 reforms to improve liquidity for smaller-cap stocks [unverified â details on implementation scope should be confirmed].",
+    "text": "2. Market Structure\n\n2.1 Market Segments\nFollowing the April 2021 merger of the SME Board into the Main Board, SZSE operates a two-board structure:\n\n\n\n\n\n\n\n\nSegment\nDescription\nListing Requirements (Summary)\n\n\n\n\nMain Board (ä¸»æ¿)\nMarket for established, profitable enterprises; absorbed former SME Board companies in April 2021\nUnder the registration-based system: (1) Estimated market value &gt;= CNY 1 billion, positive net profit in most recent year, operating income &gt;= CNY 100 million; OR (2) Estimated market value &gt;= CNY 5 billion, operating income &gt;= CNY 300 million in most recent year. Must have &gt;= 3 years of continuous operation as a joint stock company. Net profit must be positive.\n\n\nChiNext (åä¸æ¿)\nNASDAQ-style board for innovative, high-growth enterprises â particularly technology, biotech, and new-economy companies. Lower entry barriers but strict ongoing operation requirements.\nUnder the registration-based system: (1) Net profit positive in last 2 years, cumulative &gt;= CNY 50 million; OR (2) Estimated market value &gt;= CNY 1 billion, positive net profit, operating income &gt;= CNY 100 million; OR (3) Estimated market value &gt;= CNY 5 billion, operating income &gt;= CNY 300 million (for pre-profit companies). Focus on companies in strategic emerging industries, innovation-driven businesses.\n\n\n\nNote on SME Board Merger: On April 6, 2021, with CSRC approval, the SME Board was fully merged into the Main Board. All previously SME-listed companies were reclassified as Main Board A-shares with unchanged ticker symbols and abbreviations. This merger streamlined the market structure and facilitated the comprehensive registration-based system reform.\n\n\n2.2 Trading Sessions\n\n\n\n\n\n\n\n\n\nSession\nLocal Time (CST)\nUTC (CST = UTC+8)\nDescription\n\n\n\n\nOpening Call Auction\n9:15 AM â 9:25 AM\n01:15 â 01:25\nOrder input and matching to determine opening price. Orders accepted 9:15â9:20; no cancellations allowed 9:20â9:25. Unmatched orders carry into continuous trading.\n\n\nMorning Continuous Trading\n9:30 AM â 11:30 AM\n01:30 â 03:30\nContinuous order matching on price-time priority.\n\n\nLunch Break\n11:30 AM â 1:00 PM\n03:30 â 05:00\nNo trading. 1.5-hour break (longer than HKEX’s 1-hour break). Common feature of Asian exchanges.\n\n\nAfternoon Continuous Trading\n1:00 PM â 2:57 PM\n05:00 â 06:57\nContinuation of continuous matching.\n\n\nClosing Call Auction\n2:57 PM â 3:00 PM\n06:57 â 07:00\n3-minute closing auction to determine closing price. No order cancellations allowed during this period.\n\n\n\nNotes: - Total continuous trading hours: ~4 hours (9:30â11:30 + 13:00â14:57), plus auction sessions. - China does not observe daylight saving time; CST is fixed at UTC+8. - Trading days: MondayâFriday, excluding national holidays declared in advance. - Half-day sessions apply before certain holidays.\n\n\n2.3 Tick Sizes\n\n\n\nPrice Range\nTick Size\n\n\n\n\nAll price levels\nCNY 0.01 (uniform)\n\n\n\nNote: Unlike HKEX or western exchanges that use tiered tick size tables, both SZSE and SSE apply a uniform tick size of CNY 0.01 for all equities regardless of price level.\n\n\n2.4 Lot Sizes\n\nStandard board lot: 100 shares (ä¹°ååä½)\nBuy orders: Must be in multiples of 100 shares (board lots).\nSell orders: Odd lots (fewer than 100 shares) may be sold in a single order but cannot be split.\nMaximum order size: 1,000,000 shares per single order.\nChiNext exception: Under the 2020 reforms, ChiNext allows orders in increments of 1 share (for amounts above 200 shares), rather than strictly in board lots [unverified â consult SZSE trading rules for current specifics].\n\n\n\n2.5 Settlement\n\n\n\n\n\n\n\nItem\nDetails\n\n\n\n\nSettlement Cycle\nT+1 for stock delivery; funds settlement also T+1\n\n\nKey Rule\nStocks bought on T day cannot be sold until T+1 (no same-day selling). Proceeds from selling on T can be used to purchase other stocks on the same day but cannot be withdrawn until T+1.\n\n\nClearing House\nChina Securities Depository and Clearing Corporation (CSDC / ä¸­å½è¯å¸ç»è®°ç»ç®æéå\n\n\n¬å¸), Shenzhen branch\n\n\n\nCurrency\nChinese Yuan (CNY / RMB)\n\n\n\n\n\n2.6 Market Maker / Liquidity Provider Programs\n\nSZSE operates primarily as an order-driven market without designated market makers for equities on the Main Board.\nChiNext introduced a competitive market maker system as part of the 2020 reforms to improve liquidity for smaller-cap stocks [unverified â details on implementation scope should be confirmed].",
     "crumbs": [
       "Exchanges",
       "Shenzhen Stock Exchange (SZSE)"
@@ -10069,7 +10069,7 @@
     "href": "qmd/01_equities/en/exchanges/szse.html#market-data",
     "title": "Shenzhen Stock Exchange (SZSE)",
     "section": "6. Market Data",
-    "text": "6. Market Data\n\n6.1 Data Feed Protocols\n\n\n\n\n\n\n\n\nProtocol\nDescription\nUse Case\n\n\n\n\nSTEP (Securities Trading Exchange Protocol)\nXML-based messaging protocol\nReal-time market data distribution\n\n\nBINARY\nBinary-format proprietary feed\nLow-latency market data\n\n\nData File Exchange\nBatch/file-based data delivery\nEnd-of-day and reference data\n\n\n\n\n\n6.2 Data Levels\n\nLevel 1: Best bid/ask, last trade, volume, turnover.\nLevel 2: Full order book depth with additional detail.\nData services exclusively managed by Shenzhen Securities Information Co., Ltd. (SSIC / æ·±å³è¯å¸ä¿¡æ¯æéå¬å¸), the authorized market data distributor for SZSE.\n\n\n\n6.3 Key Indices\n\n\n\n\n\n\n\nIndex\nDescription\n\n\n\n\nSZSE Component Index (æ·±è¯ææ, 399001)\nMajor index tracking large-cap SZSE stocks\n\n\nSZSE Composite Index (æ·±è¯ç»¼æ)\nBroad market index of all SZSE-listed stocks\n\n\nChiNext Index (åä¸æ¿æ, 399006)\nTracks ChiNext-listed companies â key tech/growth benchmark\n\n\nSZSE 100\nTop 100 blue-chip stocks\n\n\nSZSE 200 / 300 / 700 / 1000\nVarious size-segment indices\n\n\nCNI indices\nVarious thematic and sector indices published by CNIndex (joint venture of SSE and SZSE)",
+    "text": "6. Market Data\n\n6.1 Data Feed Protocols\n\n\n\n\n\n\n\n\nProtocol\nDescription\nUse Case\n\n\n\n\nSTEP (Securities Trading Exchange Protocol)\nXML-based messaging protocol\nReal-time market data distribution\n\n\nBINARY\nBinary-format proprietary feed\nLow-latency market data\n\n\nData File Exchange\nBatch/file-based data delivery\nEnd-of-day and reference data\n\n\n\n\n\n6.2 Data Levels\n\nLevel 1: Best bid/ask, last trade, volume, turnover.\nLevel 2: Full order book depth with additional detail.\nData services exclusively managed by Shenzhen Securities Information Co., Ltd. (SSIC / æ·±å³è¯å¸ä¿¡æ¯æéå ¬å¸), the authorized market data distributor for SZSE.\n\n\n\n6.3 Key Indices\n\n\n\n\n\n\n\nIndex\nDescription\n\n\n\n\nSZSE Component Index (æ·±è¯ææ, 399001)\nMajor index tracking large-cap SZSE stocks\n\n\nSZSE Composite Index (æ·±è¯ç»¼æ)\nBroad market index of all SZSE-listed stocks\n\n\nChiNext Index (åä¸æ¿æ, 399006)\nTracks ChiNext-listed companies â key tech/growth benchmark\n\n\nSZSE 100\nTop 100 blue-chip stocks\n\n\nSZSE 200 / 300 / 700 / 1000\nVarious size-segment indices\n\n\nCNI indices\nVarious thematic and sector indices published by CNIndex (joint venture of SSE and SZSE)",
     "crumbs": [
       "Exchanges",
       "Shenzhen Stock Exchange (SZSE)"
@@ -10168,7 +10168,7 @@
     "href": "qmd/01_equities/en/exchanges/six.html",
     "title": "SIX Swiss Exchange (SIX)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 2 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "SIX Swiss Exchange (SIX)"
@@ -10311,7 +10311,7 @@
     "href": "qmd/01_equities/en/exchanges/nyse.html",
     "title": "New York Stock Exchange (NYSE)",
     "section": "",
-    "text": "Last Updated: 2026-04-03 Research Tier: Tier 1 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "New York Stock Exchange (NYSE)"
@@ -10454,7 +10454,7 @@
     "href": "qmd/01_equities/en/exchanges/nasdaq_nordic.html",
     "title": "Nasdaq Nordic (OMX Nordic Exchanges)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 3 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Nasdaq Nordic (OMX Nordic Exchanges)"
@@ -10597,7 +10597,7 @@
     "href": "qmd/01_equities/en/exchanges/lse.html",
     "title": "London Stock Exchange (LSE)",
     "section": "",
-    "text": "Last Updated: 2026-04-03 Research Tier: Tier 1 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "London Stock Exchange (LSE)"
@@ -10740,7 +10740,7 @@
     "href": "qmd/01_equities/en/exchanges/jse.html",
     "title": "Johannesburg Stock Exchange (JSE)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 3 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Johannesburg Stock Exchange (JSE)"
@@ -10883,7 +10883,7 @@
     "href": "qmd/01_equities/en/exchanges/hkex.html",
     "title": "Hong Kong Exchanges and Clearing Limited (HKEX)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 1 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Hong Kong Exchanges and Clearing Limited (HKEX)"
@@ -11026,7 +11026,7 @@
     "href": "qmd/01_equities/en/exchanges/deutsche_borse.html",
     "title": "Deutsche Borse / Xetra (XETR)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 2 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Deutsche Borse / Xetra (XETR)"
@@ -11169,7 +11169,7 @@
     "href": "qmd/01_equities/en/exchanges/bse.html",
     "title": "BSE Ltd (formerly Bombay Stock Exchange)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 3 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "BSE Ltd (formerly Bombay Stock Exchange)"
@@ -11312,7 +11312,7 @@
     "href": "qmd/01_equities/en/exchanges/bme.html",
     "title": "Bolsas y Mercados Espanoles (BME)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 3 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Bolsas y Mercados Espanoles (BME)"
@@ -11477,7 +11477,7 @@
     "href": "qmd/01_equities/en/02_comparative_analysis.html",
     "title": "Comparative Analysis of Global Equities Exchanges",
     "section": "",
-    "text": "Last Updated: 2026-04-13 Scope: 23 exchanges across Americas, EMEA, and Asia-Pacific (including KRX) Author: Exchange Research Project",
+    "text": "📁 Equities &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Comparative Analysis of Global Equities Exchanges"
     ]
@@ -11600,39 +11600,11 @@
     "text": "🏛️ KRX IT Global Exchange Infrastructure Research Hub\n\n\n\n  글로벌 거래소 인프라 종합 리서치 포털\n\n\n\n  주식·파생상품·청산결제 전 영역에 걸친 60개 글로벌 핵심 기관의 시장 구조, 매매체결 엔진, 규제 체계 및 리스크 관리 제도를 규정 원문(Primary Source) 기반으로 심층 분석한 리서치 허브입니다.\n\n\n\n  \n    23\n    주식 거래소 (Equities)\n  \n  \n    17\n    파생상품 거래소 (Derivatives)\n  \n  \n    20\n    청산·결제 기관 (Clearing & CSD)\n  \n  \n    15\n    차세대 매매·청산 엔진\n  \n  \n    403\n    한/영 대역 전문 용어집\n  \n\n\n\n\n  🔥 빠른 바로가기:\n  🇰🇷 KRX 한국거래소\n  🇺🇸 NYSE\n  🇺🇸 NASDAQ\n  ⚡ CME Group\n  🛡️ DTCC (T+1)\n  🎯 종합 벤치마킹 리포트\n  📖 403개 용어사전\n\n\n\n  🔍 카드 빠른 검색:\n  \n  전체 보기\n  🇰🇷 한국\n  🇺🇸 미국/북미\n  🌏 아시아\n  🇪🇺 유럽\n\n\n📈 주식시장 (Equities)⚡ 파생상품 (Derivatives)🛡️ 청산·결제 (Clearing)📚 벤치마킹 & 용어집 (Reference)\n\n\n\n  \n    🌐 23개 글로벌 대표 주식거래소의 호가 제도, 체결 메커니즘, 매매세션 및 9대 차세대 매매엔진 심층 비교\n  \n  \n    📊 주식시장 개요\n    ⚖️ 23개소 종합 비교분석\n  \n\n\n### 🏛️ 주요 거래소 프로필 (23개소)\n\n\n\n  \n  \n    \n      \n        🇰🇷\n        Tier 1 · 기준 거래소\n      \n      한국거래소 (KRX)\n      Korea Exchange · 대한민국 (서울/부산)\n      \n        • 시가총액: 약 4,277조 원 (USD 2.95조)\n        • 매매엔진: EXTURE 3.0 (Exture+)\n        • 특징: 단일가매매, 정적/동적 VI, 3단계 서킷브레이커\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇺🇸\n        세계 최대 시총\n      \n      뉴욕증권거래소 (NYSE)\n      New York Stock Exchange · 미국 (뉴욕)\n      \n        • 시가총액: 약 USD 28.0조\n        • 매매엔진: NYSE Pillar\n        • 특징: DMM(지정시장조성자), D-Quote 재량주문\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇺🇸\n        글로벌 테크 허브\n      \n      나스닥 (NASDAQ)\n      NASDAQ · 미국 (뉴욕)\n      \n        • 시가총액: 약 USD 42.2조 (상장사 합산)\n        • 매매엔진: NASDAQ INET\n        • 특징: 완전 전자식 호가장, 초저지연 아키텍처\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇯🇵\n        아시아 1위\n      \n      도쿄증권거래소 (JPX/TSE)\n      Japan Exchange Group · 일본 (도쿄)\n      \n        • 시가총액: 약 USD 8.1조\n        • 매매엔진: arrowhead 4.0\n        • 특징: 板寄せ(이타요세), 자라바, CONNEQTOR RFQ\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇬🇧\n        유럽 금융 중심\n      \n      런던증권거래소 (LSE)\n      London Stock Exchange · 영국 (런던)\n      \n        • 시가총액: 약 USD 5.9조\n        • 매매엔진: Millennium Exchange\n        • 특징: SETS 메인 호가장, Turquoise MTF 연계\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇪🇺\n        범유럽 7개국 통합\n      \n      유로넥스트 (Euronext)\n      Euronext N.V. · 범유럽 (파리, 암스테르담 등)\n      \n        • 시가총액: 약 USD 7.8조 (EUR 6.8T)\n        • 매매엔진: Optiq\n        • 특징: 단일 오더북 통합 결제, 초저지연 마이크로아키텍처\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇨🇳\n        중국 본토 최대\n      \n      상하이증권거래소 (SSE)\n      Shanghai Stock Exchange · 중국 (상하이)\n      \n        • 시가총액: 약 USD 8.9조\n        • 특징: STAR 마켓(과창판), 후강퉁(Stock Connect)\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇨🇳\n        혁신·창업 성장판\n      \n      선전증권거래소 (SZSE)\n      Shenzhen Stock Exchange · 중국 (선전)\n      \n        • 시가총액: 약 USD 5.1조\n        • 특징: ChiNext(창업판), 선강퉁 연계\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇭🇰\n        글로벌 관문\n      \n      홍콩거래소 (HKEX)\n      Hong Kong Exchanges · 홍콩\n      \n        • 시가총액: 약 USD 6.2조\n        • 매매엔진: OTP-C (Orion)\n        • 특징: 스톡커넥트 북향/남향 거래, 이중상장 제도\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇩🇪\n        독일 대표 거래소\n      \n      독일거래소 (Xetra/FWB)\n      Deutsche Börse Group · 독일 (프랑크푸르트)\n      \n        • 시가총액: 약 USD 2.4조\n        • 매매엔진: T7\n        • 특징: Xetra 매매시스템, Designated Sponsor 유동성\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇨🇦\n        북미 3위\n      \n      토론토증권거래소 (TMX)\n      TMX Group (TSX / TSXV) · 캐나다 (토론토)\n      \n        • 시가총액: 약 USD 3.9조 (C$5.8T)\n        • 특징: 천연자원/광업 글로벌 1위, 듀얼 보드 체계\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇦🇺\n        오세아니아 최대\n      \n      호주증권거래소 (ASX)\n      Australian Securities Exchange · 호주 (시드니)\n      \n        • 시가총액: 약 USD 2.2조\n        • 특징: 호주 자본시장 코어, CHESS 결제 시스템\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇨🇭\n        스위스 대표\n      \n      SIX 스위스거래소\n      SIX Swiss Exchange · 스위스 (취리히)\n      \n        • 특징: 글로벌 제약/식품 대형주 집중, 디지털 자산 SDX\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇮🇳\n        인도 1위\n      \n      인도국립증권거래소 (NSE)\n      NSE India · 인도 (뭄바이)\n      \n        • 시가총액: 약 USD 5.1조\n        • 특징: 전세계 최다 거래량 기록, Nifty 50 지수\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇮🇳\n        아시아 최장 역사\n      \n      봄베이증권거래소 (BSE)\n      Bombay Stock Exchange · 인도 (뭄바이)\n      \n        • 1875년 설립, 상장사 수 세계 1위 (~5,900개사)\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇹🇼\n        반도체 밸류체인\n      \n      대만증권거래소 (TWSE)\n      Taiwan Stock Exchange · 대만 (타이베이)\n      \n        • 시가총액: 약 USD 2.9조\n        • 특징: TSMC 등 글로벌 테크 하드웨어 중심\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇸🇦\n        중동 최대 시장\n      \n      사우디거래소 (Tadawul)\n      Saudi Exchange · 사우디아라비아 (리야드)\n      \n        • 시가총액: 약 USD 2.7조 (아람코 상장)\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇸🇬\n        아시아 금융 허브\n      \n      싱가포르거래소 (SGX)\n      Singapore Exchange · 싱가포르\n      \n        • 매매엔진: SGX Titan\n        • 특징: 국제 다자간 자산거래 플랫폼, REITs 선도\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇮🇹\n        유로넥스트 그룹\n      \n      이탈리아거래소 (Borsa Italiana)\n      Borsa Italiana · 이탈리아 (밀라노)\n      \n        • Optiq 마이그레이션 완료, FTSE MIB 지수\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇪🇸\n        SIX 그룹\n      \n      스페인거래소 (BME)\n      Bolsas y Mercados Españoles · 스페인 (마드리드)\n      \n        • IBEX 35 지수, SIX 그룹 통합 인프라\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇲🇾\n        아세안 신흥 시장\n      \n      부르사 말레이시아\n      Bursa Malaysia · 말레이시아 (쿠알라룸푸르)\n      \n        • 이슬람 금융(Sukuk) 글로벌 선도 거래소\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇿🇦\n        아프리카 최대\n      \n      요하네스버그증권거래소 (JSE)\n      Johannesburg Stock Exchange · 남아프리카공화국\n      \n        • 아프리카 대륙 금융 거래량의 70% 이상 점유\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇪🇺\n        노르딕 통합 거래소\n      \n      나스닥 노르딕 (Nasdaq Nordic)\n      스웨덴, 덴마크, 핀란드, 아이슬란드 통합\n      \n        • INET 기반 북유럽 시장 단일 호가장 운영\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n\n\n### ⚙️ 9대 주식 매매체결 엔진 분석\n\n\n  \n    \n      KRX EXTURE 3.0 (Exture+)\n      한국거래소 코어 매매엔진\n      초고속 인메모리 프로세싱, 초저지연 시세분배, 대용량 주문 처리 아키텍처\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      NYSE Pillar\n      뉴욕증권거래소 단일 통합 아키텍처\n      현물-파생 통합 플랫폼, 결정론적(Deterministic) 주문 매칭, 모듈형 확장성\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      NASDAQ INET\n      나스닥 플래그십 매매엔진\n      글로벌 거래소 솔루션의 표준, 초저지연 병렬 코어 매칭, FPGA 하드웨어 가속\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      JPX arrowhead 4.0\n      도쿄증권거래소 매매엔진\n      후지쯔 공동 개발, 마이크로초 수준 응답속도 및 99.999% 무중단 안정성\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      LSE Millennium Exchange\n      런던증권거래소 플랫폼\n      MillenniumIT 고속 C++ 기반 엔진, 오슬로 및 요하네스버그 거래소 공급\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      Euronext Optiq\n      유로넥스트 통합 매매플랫폼\n      마이크로서비스 아키텍처, 10배 처리량 향상 및 99% 지연시간 편차 제거\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      HKEX Orion (OTP-C)\n      홍콩거래소 현물 매매엔진\n      개방형 표준 기반 자체 개발, 스톡커넥트 대량 크로스보더 주문 최적화\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      Deutsche Börse T7\n      독일거래소 및 빈 증권거래소\n      현물-파생 겸용 공통 엔진, 고성능 파티셔닝 구조, Eurex 동시 적용\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      SGX Titan\n      싱가포르거래소 주식 매매엔진\n      다자간 통화 결제 지원, 국제 투자자 온보딩 및 API 게이트웨이\n    \n    \n      한국어 분석\n      English\n    \n  \n\n\n### ⚖️ 주식시장 규제 체계 비교\n\n\n  \n    \n      미국 주식 규제 (US Regulation)\n      SEC / FINRA 규제 프레임워크\n      Reg NMS (Rule 611 최선체결원칙, Rule 605/606 공시), CAT(통합감사추적), 공매도 규제\n    \n    \n      한국어 리포트\n      English\n    \n  \n\n  \n    \n      유럽 주식 규제 (EU Regulation)\n      ESMA / MiFID II / MiFIR\n      체결전/체결후 투명성 요건, 더블 볼륨 캡(DVC), SI(체계적 내부화자) 규제 및 알고리즘 검증\n    \n    \n      한국어 리포트\n      English\n    \n  \n\n  \n    \n      아시아 주식 규제 (Asia Regulation)\n      한국(FSC) · 일본(FSA) · 홍콩(SFC) · 싱가포르(MAS)\n      동아시아 주요국 자본시장법 비교, 가격제한폭 및 시장안정화장치(VI/CB), 공매도 제도\n    \n    \n      한국어 리포트\n      English\n    \n  \n\n\n\n\n  \n    🌐 17개 글로벌 파생상품거래소의 24시간 연속매매, 스프레드 주문, 실시간 증거금(SPAN) 및 알고리즘 제도 비교\n  \n  \n    📊 파생시장 개요\n    ⚖️ 17개소 종합 비교분석\n  \n\n\n### 🏛️ 파생상품 거래소 프로필 (17개소)\n\n\n\n  \n  \n    \n      \n        🇺🇸\n        세계 최대 파생그룹\n      \n      CME Group\n      CME · CBOT · NYMEX · COMEX (미국 시카고)\n      \n        • 매매엔진: CME Globex\n        • 주요 상품: 금리선물(SOFR), E-mini S&P 500, WTI 원유, 금(Gold)\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇩🇪\n        유럽 1위 파생\n      \n      유렉스 (Eurex)\n      Deutsche Börse Group · 유럽 (프랑크푸르트)\n      \n        • 매매엔진: T7\n        • 주요 상품: 독일국채(Bund/Bobl/Schatz) 선물, DAX 지수, Euro STOXX 50\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇺🇸\n        세계 최대 옵션시장\n      \n      Cboe Global Markets\n      Cboe · 미국 (시카고)\n      \n        • 주요 상품: VIX 변동성 선물/옵션, SPX 인덱스 옵션\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇺🇸\n        에너지 원자재 1위\n      \n      ICE Futures\n      Intercontinental Exchange · 글로벌 (미국/영국)\n      \n        • 주요 상품: Brent 원유선물, 탄소배출권, 단기금리\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇯🇵\n        일본 파생 허브\n      \n      오사카거래소 (OSE)\n      JPX Group · 일본 (오사카)\n      \n        • 주요 상품: Nikkei 225 선물/옵션, JGB(일본국채) 선물\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇭🇰\n        아시아 핵심 지수\n      \n      홍콩 파생상품시장 (HKEX)\n      Hong Kong Exchanges · 홍콩\n      \n        • 주요 상품: Hang Seng Index(HSI) 선물/옵션, H주 지수\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇸🇬\n        다국적 아시아 파생\n      \n      싱가포르 파생상품시장 (SGX)\n      Singapore Exchange · 싱가포르\n      \n        • 주요 상품: FTSE China A50, 철광석 선물, 외환(FX) 선물\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇰🇷\n        Tier 1 · 기준 거래소\n      \n      한국거래소 파생상품시장 (KRX)\n      Korea Exchange · 대한민국 (부산)\n      \n        • 주요 상품: KOSPI 200 선물·옵션, 3년/10년 국채선물, 미국달러선물\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇪🇺\n        범유럽 지수 파생\n      \n      유로넥스트 파생시장\n      Euronext Derivatives · 유럽\n      \n        • 주요 상품: CAC 40, AEX 선물/옵션, 밀/옥수수 농산물 파생\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇦🇺\n        남반구 최대 파생\n      \n      호주 파생상품시장 (ASX)\n      ASX Derivatives · 호주 (시드니)\n      \n        • 주요 상품: SPI 200 지수선물, 호주 3년/10년 국채선물\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇨🇦\n        캐나다 공식 파생\n      \n      몬트리올거래소 (MX)\n      Bourse de Montréal (TMX Group) · 캐나다\n      \n        • 주요 상품: BAX(단기금리), CGB(캐나다국채), SXF 지수선물\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇨🇳\n        중국 금융선물\n      \n      중국금융선물거래소 (CFFEX)\n      China Financial Futures Exchange · 중국 (상하이)\n      \n        • 주요 상품: CSI 300 지수선물, 중국 국채선물\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇨🇳\n        세계 최대 상품선물\n      \n      다롄상품거래소 (DCE)\n      Dalian Commodity Exchange · 중국 (다롄)\n      \n        • 주요 상품: 철광석 선물, 대두, 플라스틱 원자재\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇨🇳\n        글로벌 금속 파생\n      \n      상하이선물거래소 (SHFE)\n      Shanghai Futures Exchange · 중국 (상하이)\n      \n        • 주요 상품: 전기동(Copper), 금, 고무, 원유(INE)\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇮🇳\n        세계 최다 계약 체결\n      \n      인도 NSE 파생시장 (NSE F&O)\n      NSE Futures & Options · 인도 (뭄바이)\n      \n        • 주요 상품: Nifty 50 옵션, Bank Nifty 옵션 (주간 만기옵션)\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇹🇼\n        대만 파생 허브\n      \n      대만선물거래소 (TAIFEX)\n      Taiwan Futures Exchange · 대만 (타이베이)\n      \n        • 주요 상품: TAIEX 지수 선물/옵션, 전자섹터 선물\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇦🇪\n        중동 대표 에너지 파생\n      \n      두바이상업거래소 (DME)\n      Dubai Mercantile Exchange · UAE (두바이)\n      \n        • 주요 상품: 오만 원유(Oman Crude Oil) 선물 (아시아 기준원유)\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n\n\n### ⚙️ 파생 매매시스템 및 규제 분석\n\n\n  \n    \n      CME Globex\n      세계 최대 전자 파생 매매엔진\n      24시간 연속 가동, 복합 스프레드 자동 매칭, MDP 3.0 시세분배 및 iLink 바이너리 프로토콜\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      Eurex T7 (Derivatives)\n      유럽 플래그십 파생 매매엔진\n      T7 기반 선물·옵션 마이크로초 매칭, 파생 복합전략 주문(Strategy Order) 및 블록트레이딩(TES) 연계\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      Nasdaq Genium INET\n      글로벌 파생 매매 솔루션\n      북유럽, 싱가포르 등 전세계 20개 이상 파생거래소에 구축된 엔터프라이즈 거래 플랫폼\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      미국 파생 규제 (US CFTC)\n      CFTC / Dodd-Frank Act\n      장외파생상품(OTC) 중앙청산 의무화, SEF(스왑체결장소), 포지션 한도 규제 및 시스템 리스크 모니터링\n    \n    \n      한국어 리포트\n      English\n    \n  \n\n  \n    \n      유럽 파생 규제 (EU EMIR)\n      ESMA / EMIR / MiFIR\n      거래정보저장소(TR) 보고, 미청산 장외파생 증거금 교환 의무, CCP 상호승인(동등성 평가) 체계\n    \n    \n      한국어 리포트\n      English\n    \n  \n\n  \n    \n      아시아 파생 규제 (Asia Regulation)\n      한국 · 일본 · 홍콩 · 싱가포르\n      적격투자자 제도, 사전위탁증거금 규제, 결제안정성 확보를 위한 일일정산 및 강제청산 프레임워크\n    \n    \n      한국어 리포트\n      English\n    \n  \n\n\n\n\n  \n    🌐 20개 글로벌 청산결제기구(CCP / CSD)의 T+1 결제 단축, 다자간 차감(Netting), 리스크 마진(Prisma) 및 디폴트 워터폴 분석\n  \n  \n    📊 청산결제 개요\n    ⚖️ 20개 기관 종합 비교분석\n  \n\n\n### 🏛️ 청산·결제 기관 프로필 (20개소)\n\n\n\n  \n  \n    \n      \n        🇺🇸\n        세계 최대 결제기관\n      \n      DTCC (미국 예탁결제원)\n      Depository Trust & Clearing Corporation · 미국 (뉴욕)\n      \n        • 구성: DTC(예탁), NSCC(주식청산), FICC(채권청산)\n        • 특징: 2024년 5월 주식 T+1 단축결제 성공적 시행\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇬🇧\n        세계 최대 스왑 청산\n      \n      LCH (London Clearing House)\n      LSEG Group (LCH Ltd & SA) · 영국/프랑스\n      \n        • 특징: SwapClear를 통한 글로벌 장외 금리스왑(IRS) 청산 점유율 90%\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇺🇸\n        세계 최대 파생 청산\n      \n      OCC (옵션청산공사)\n      Options Clearing Corporation · 미국 (시카고)\n      \n        • 미국 16개 모든 옵션 거래소의 거래를 독점 청산하는 중앙계약당사자\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇺🇸\n        CME 전담 청산\n      \n      CME Clearing\n      CME Group · 미국 (시카고)\n      \n        • CME Group 산하 전 상품 및 OTC 금리스왑 청산, SPAN 증거금 체계\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇩🇪\n        유럽 선도 CCP\n      \n      유렉스 청산 (Eurex Clearing)\n      Deutsche Börse Group · 유럽 (프랑크푸르트)\n      \n        • 리스크 관리: Eurex Clearing Prisma (포트폴리오 기반 실시간 마진)\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇯🇵\n        일본 통합 청산기관\n      \n      일본증권청산기구 (JSCC)\n      Japan Securities Clearing Corporation · 일본 (도쿄)\n      \n        • 일본 주식, 국채(JGB), 선물옵션, CDS 및 금리스왑 단일 청산\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇭🇰\n        홍콩 통합 청산\n      \n      홍콩거래소 청산 (HKEX Clearing)\n      HKSCC · HKCC · SEOCH · OTC Clear (홍콩)\n      \n        • 스톡커넥트 결제 및 다자간 통화 결제 인프라 제공\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇸🇬\n        싱가포르 중앙예탁\n      \n      CDP (싱가포르 중앙예탁소)\n      The Central Depository (SGX Group) · 싱가포르\n      \n        • 주식·채권 중앙예탁, 직간접 계좌 관리 및 결제 서비스\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇰🇷\n        Tier 1 · 기준 청산소\n      \n      한국거래소 청산 (KRX Clearing)\n      Korea Exchange Clearing House · 대한민국 (부산/서울)\n      \n        • 유가증권시장, 코스닥, 파생상품 및 장외파생상품(OTC) 공식 CCP\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇰🇷\n        Tier 1 · 국내 유일 CSD\n      \n      한국예탁결제원 (KSD)\n      Korea Securities Depository · 대한민국 (부산)\n      \n        • 증권 중앙예탁, 전자등록, T+2 권리의무 결제 및 외화증권 결제\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇪🇺\n        범유럽 경쟁 청산\n      \n      EuroCCP (Cboe Clear Europe)\n      Cboe Clear Europe · 네덜란드 (암스테르담)\n      \n        • 유럽 47개 거래 플랫폼의 범유럽 주식 청산 처리\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇪🇺\n        글로벌 ICSD 1위\n      \n      유로클리어 (Euroclear)\n      Euroclear Bank · 벨기에 (브뤼셀)\n      \n        • 전세계 180개국 이상의 국제증권(유로본드 등) 예탁결제\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇱🇺\n        국제 중앙예탁결제\n      \n      클리어스트림 (Clearstream)\n      Deutsche Börse Group · 룩셈부르크 / 독일\n      \n        • 독일 국내 CSD 및 국제 ICSD 통합 운영, 담보관리 솔루션\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇺🇸\n        글로벌 파생 청산\n      \n      ICE Clear\n      ICE Clear US · Europe · Credit (글로벌)\n      \n        • 에너지 선물 및 글로벌 CDS(신용부도스왑) 중앙청산 전담\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇦🇺\n        호주 전담 청산\n      \n      ASX Clear\n      ASX Group · 호주 (시드니)\n      \n        • 호주 현물주식(ASX Clear) 및 파생(ASX Clear Futures) 결제\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇨🇭\n        스위스 CCP\n      \n      SIX x-clear\n      SIX Group · 스위스 (취리히)\n      \n        • 스위스 증권 및 유럽 다자간 거래 플랫폼 상호 청산 링크\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇨🇦\n        캐나다 공식 CSD\n      \n      CDS Canada\n      The Canadian Depository for Securities (TMX)\n      \n        • 캐나다 주식·채권 결제, 2024년 5월 미국과 동시 T+1 도입\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇨🇳\n        중국 중앙예탁\n      \n      중국증권등기결산 (CSDC)\n      China Securities Depository & Clearing · 중국\n      \n        • 상하이·선전·베이징 거래소의 중앙 등기, 예탁, 결제 독점\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇮🇳\n        인도 금융시장 결제\n      \n      인도청산공사 (CCIL)\n      The Clearing Corporation of India Ltd · 인도\n      \n        • 인도 국채, 머니마켓, 외환(FX) 및 파생상품 CCP 청산\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n  \n  \n    \n      \n        🇸🇦\n        사우디 독립 CCP\n      \n      무카사 (Muqassa)\n      Securities Clearing Center Company · 사우디\n      \n        • Tadawul 그룹 산하 사우디아라비아 자본시장 중앙청산소\n      \n    \n    \n      🇰🇷 한국어 리포트\n      🌐 English\n    \n  \n\n\n\n### ⚙️ 청산결제 시스템 및 규제 분석\n\n\n  \n    \n      DTCC 코어 인프라\n      T+1 결제 자동화 및 CNS 시스템\n      연속순차감(CNS), 차세대 청산 결제 아키텍처, 실시간 담보 최적화 및 리스크 엔진\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      Eurex Clearing Prisma\n      차세대 포트폴리오 마진 시스템\n      현물-파생 포트폴리오 교차마진, 위험 상쇄(Margin Offset) 정밀 산출 및 실시간 VaR\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      LCH Clearing Systems\n      초대형 OTC 스왑 청산 기술\n      수백조 달러 스왑 계약의 다자간 압축(Compression), 디폴트 관리 워터폴 자동화\n    \n    \n      한국어 분석\n      English\n    \n  \n\n  \n    \n      미국 청산·결제 규제\n      SEC Rule 15c6-1 / CFTC Part 39\n      T+1 결제 법제화 요건, 당일확인(Same-Day Affirmation) 지침, 시스템적 중요 청산소(SIFMU) 기준\n    \n    \n      한국어 리포트\n      English\n    \n  \n\n  \n    \n      유럽 청산·결제 규제 (CSDR / EMIR)\n      ESMA / CSDR Settlement Discipline\n      결제불이행 패널티 제도, 강제매수(Mandatory Buy-in) 규칙, CSD 인가 및 감독 표준\n    \n    \n      한국어 리포트\n      English\n    \n  \n\n  \n    \n      아시아 청산·결제 규제 (PFMI)\n      CPMI-IOSCO 금융시장인프라원칙 (PFMI)\n      아시아 주요국의 PFMI 준수성 평가, 결제완결성(Settlement Finality) 법적 보호 장치 비교\n    \n    \n      한국어 리포트\n      English\n    \n  \n\n\n\n\n  \n    🎯 KRX IT 벤치마킹 핵심 제언 리포트 및 403개 한/영 대역 전문 용어사전\n  \n\n\n\n\n  \n  \n    \n      \n        🎯\n        종합 결론 보고서\n      \n      종합 비교분석 & KRX 벤치마킹 (한국어)\n      Cross-Domain Analysis & KRX Recommendations\n      \n        • 3대 시장(주식-파생-청산) 생태계 맵 총괄 정리\n        • 글로벌 거래소 인프라 트렌드와 KRX IT 시스템 고도화 권고사항\n        • 품질 검증 및 60개 기관 비교 요약\n      \n    \n    \n      📖 한국어 전문 열람\n      🌐 English Version\n    \n  \n\n  \n  \n    \n      \n        📖\n        403개 표제어 수록\n      \n      한영 대역 금융/IT 전문 용어집\n      Bilingual Glossary (English / Korean)\n      \n        • 매매(Trading), 청산(Clearing), 규제(Regulation), IT 기술 용어 총망라\n        • 영문 표제어, 표준 한국어 대역어, 정의 및 KRX 실무 참고사항 완벽 수록\n      \n    \n    \n      📖 한국어 용어집\n      🌐 English Glossary\n    \n  \n\n\n\n\n\n\n\n---\n\n\n  Global Exchange Infrastructure Research · prepared for KRX IT Department\n  최종 업데이트: 2026-04-17 (v2.0 UI Enhancement) | 총 60개 기관 인프라 분석 보고서"
   },
   {
-    "objectID": "index.html#주식시장-equities",
-    "href": "index.html#주식시장-equities",
-    "title": "Global Exchange Research",
-    "section": "",
-    "text": "문서\n설명\n\n\n\n\nOverview\n전체 개요 및 조사 현황\n\n\nComparative Analysis\n거래소 간 비교분석\n\n\nExchanges\n\n\n\nNYSE\nNew York Stock Exchange\n\n\nNASDAQ\nNASDAQ\n\n\nLSE\nLondon Stock Exchange\n\n\nJPX\nJapan Exchange Group\n\n\nHKEX\nHong Kong Exchanges\n\n\nSGX\nSingapore Exchange\n\n\nKRX\nKorea Exchange\n\n\nEuronext\nEuronext\n\n\nDeutsche Börse\nXetra\n\n\nASX\nAustralian Securities Exchange\n\n\nTMX\nToronto Stock Exchange\n\n\nSIX\nSIX Swiss Exchange\n\n\nSSE\nShanghai Stock Exchange\n\n\nSZSE\nShenzhen Stock Exchange\n\n\nBSE\nBombay Stock Exchange\n\n\nNSE India\nNational Stock Exchange of India\n\n\nTWSE\nTaiwan Stock Exchange\n\n\nTadawul\nSaudi Exchange\n\n\nJSE\nJohannesburg Stock Exchange\n\n\nBursa Malaysia\nBursa Malaysia\n\n\nBorsa Italiana\nBorsa Italiana\n\n\nBME\nBolsas y Mercados Españoles\n\n\nNasdaq Nordic\nNasdaq Nordic\n\n\nTrading Systems\n\n\n\nPillar\nNYSE Pillar\n\n\niNET\nNASDAQ iNET\n\n\nMillennium\nLSE Millennium IT\n\n\nArrowhead\nJPX Arrowhead\n\n\nOrion\nHKEX Orion\n\n\nTitan\nSGX Titan\n\n\nOptiq\nEuronext Optiq\n\n\nT7\nDeutsche Börse T7\n\n\nExture 3.0\nKRX Exture+ 3.0\n\n\nRegulations\n\n\n\nUS Equities Regulation\nReg NMS, SEC/FINRA\n\n\nEU Equities Regulation\nMiFID II/MiFIR\n\n\nAsia Equities Regulation\nJPX, HKEX, SGX, KRX\n\n\n\n\n\n\n\n\n\n\n문서\n설명\n\n\n\n\n개요\n전체 개요 및 조사 현황\n\n\n비교분석\n거래소 간 비교분석\n\n\n거래소\n\n\n\nNYSE\n뉴욕증권거래소\n\n\nNASDAQ\n나스닥\n\n\nLSE\n런던증권거래소\n\n\nJPX\n일본거래소그룹\n\n\nHKEX\n홍콩거래소\n\n\nSGX\n싱가포르거래소\n\n\nKRX\n한국거래소\n\n\nEuronext\n유로넥스트\n\n\nDeutsche Börse\n독일거래소\n\n\nASX\n호주증권거래소\n\n\nTMX\n토론토증권거래소\n\n\nSIX\nSIX 스위스거래소\n\n\nSSE\n상하이증권거래소\n\n\nSZSE\n선전증권거래소\n\n\nBSE\n봄베이증권거래소\n\n\nNSE India\n인도국립증권거래소\n\n\nTWSE\n대만증권거래소\n\n\nTadawul\n사우디거래소\n\n\nJSE\n요하네스버그증권거래소\n\n\nBursa Malaysia\n부르사말레이시아\n\n\nBorsa Italiana\n이탈리아거래소\n\n\nBME\n스페인거래소\n\n\nNasdaq Nordic\n나스닥 노르딕\n\n\n매매시스템\n\n\n\nPillar\nNYSE Pillar\n\n\niNET\nNASDAQ iNET\n\n\nMillennium\nLSE Millennium IT\n\n\nArrowhead\nJPX Arrowhead\n\n\nOrion\nHKEX Orion\n\n\nTitan\nSGX Titan\n\n\nOptiq\nEuronext Optiq\n\n\nT7\nDeutsche Börse T7\n\n\nExture 3.0\nKRX Exture+ 3.0\n\n\n규제\n\n\n\n미국 주식 규제\nReg NMS, SEC/FINRA\n\n\nEU 주식 규제\nMiFID II/MiFIR\n\n\n아시아 주식 규제\nJPX, HKEX, SGX, KRX"
-  },
-  {
-    "objectID": "index.html#파생상품-derivatives",
-    "href": "index.html#파생상품-derivatives",
-    "title": "Global Exchange Research",
-    "section": "",
-    "text": "문서\n설명\n\n\n\n\nOverview\n전체 개요\n\n\nComparative Analysis\n비교분석\n\n\nExchanges\n\n\n\nCME Group\nCME, CBOT, NYMEX, COMEX\n\n\nEurex\nEurex\n\n\nCboe\nCboe Global Markets\n\n\nICE Futures\nICE Futures\n\n\nOsaka Exchange\nJPX Osaka\n\n\nHKEX Derivatives\nHKEX Derivatives\n\n\nSGX Derivatives\nSGX Derivatives\n\n\nKRX Derivatives\nKRX 파생상품\n\n\nEuronext Derivatives\nEuronext Derivatives\n\n\nASX Derivatives\nASX Derivatives\n\n\nMontreal Exchange\nMX\n\n\nCFFEX\nChina Financial Futures\n\n\nDCE\nDalian Commodity Exchange\n\n\nSHFE\nShanghai Futures Exchange\n\n\nNSE F&O\nNSE Futures & Options\n\n\nTAIFEX\nTaiwan Futures Exchange\n\n\nDME\nDubai Mercantile Exchange\n\n\nSystems\n\n\n\nGlobex\nCME Globex\n\n\nT7 Derivatives\nEurex T7\n\n\nGenium iNET\nNasdaq Genium iNET\n\n\nRegulations\n\n\n\nUS Derivatives Regulation\nCFTC, Dodd-Frank\n\n\nEU Derivatives Regulation\nEMIR, MiFID II\n\n\nAsia Derivatives Regulation\nAsia\n\n\n\n\n\n\n\n\n\n\n문서\n설명\n\n\n\n\n개요\n전체 개요\n\n\n비교분석\n비교분석\n\n\n거래소\n\n\n\nCME Group\nCME, CBOT, NYMEX, COMEX\n\n\nEurex\n유렉스\n\n\nCboe\nCboe\n\n\nICE Futures\nICE 선물\n\n\nOsaka Exchange\n오사카거래소\n\n\nHKEX Derivatives\nHKEX 파생상품\n\n\nSGX Derivatives\nSGX 파생상품\n\n\nKRX Derivatives\nKRX 파생상품\n\n\nEuronext Derivatives\n유로넥스트 파생\n\n\nASX Derivatives\nASX 파생상품\n\n\nMontreal Exchange\n몬트리올거래소\n\n\nCFFEX\n중국금융선물거래소\n\n\nDCE\n대련상품거래소\n\n\nSHFE\n상하이선물거래소\n\n\nNSE F&O\nNSE 선물옵션\n\n\nTAIFEX\n대만선물거래소\n\n\nDME\n두바이상업거래소\n\n\n매매시스템\n\n\n\nGlobex\nCME Globex\n\n\nT7 Derivatives\nEurex T7\n\n\nGenium iNET\nGenium iNET\n\n\n규제\n\n\n\n미국 파생상품 규제\nCFTC, Dodd-Frank\n\n\nEU 파생상품 규제\nEMIR\n\n\n아시아 파생상품 규제\n아시아"
-  },
-  {
-    "objectID": "index.html#청산결제-clearing-settlement",
-    "href": "index.html#청산결제-clearing-settlement",
-    "title": "Global Exchange Research",
-    "section": "",
-    "text": "문서\n설명\n\n\n\n\nOverview\n전체 개요\n\n\nComparative Analysis\n비교분석\n\n\nOrganizations\n\n\n\nDTCC\nDTC/NSCC/FICC\n\n\nLCH\nLCH Ltd & SA\n\n\nOCC\nOptions Clearing Corporation\n\n\nCME Clearing\nCME Clearing\n\n\nEurex Clearing\nEurex Clearing\n\n\nJSCC\nJapan Securities Clearing\n\n\nHKEX Clearing\nHKSCC/HKCC/SEOCH\n\n\nCDP\nCDP (SGX)\n\n\nKRX Clearing\nKRX 청산\n\n\nKSD\nKorea Securities Depository\n\n\nEuroCCP\nEuroCCP\n\n\nEuroclear\nEuroclear\n\n\nClearstream\nClearstream\n\n\nICE Clear\nICE Clear\n\n\nASX Clear\nASX Clear\n\n\nSIX x-clear\nSIX x-clear\n\n\nCDS Canada\nCDS\n\n\nCSDC\nChina Securities Depository\n\n\nCCIL\nCCIL (India)\n\n\nMuqassa\nMuqassa (Saudi)\n\n\nSystems\n\n\n\nDTCC Systems\nDTCC Technology\n\n\nLCH Systems\nLCH Technology\n\n\nEurex Clearing Prisma\nPRISMA\n\n\nRegulations\n\n\n\nUS Clearing Regulation\nCFTC, SEC\n\n\nEU Clearing Regulation\nEMIR, CSDR\n\n\nAsia Clearing Regulation\nAsia\n\n\n\n\n\n\n\n\n\n\n문서\n설명\n\n\n\n\n개요\n전체 개요\n\n\n비교분석\n비교분석\n\n\n청산기관\n\n\n\nDTCC\nDTC/NSCC/FICC\n\n\nLCH\nLCH Ltd & SA\n\n\nOCC\n옵션청산기구\n\n\nCME Clearing\nCME Clearing\n\n\nEurex Clearing\nEurex Clearing\n\n\nJSCC\n일본증권청산기구\n\n\nHKEX Clearing\nHKSCC/HKCC/SEOCH\n\n\nCDP\nCDP (SGX)\n\n\nKRX 청산\n한국거래소 청산\n\n\nKSD\n한국예탁결제원\n\n\nEuroCCP\nEuroCCP\n\n\nEuroclear\n유로클리어\n\n\nClearstream\n클리어스트림\n\n\nICE Clear\nICE Clear\n\n\nASX Clear\nASX Clear\n\n\nSIX x-clear\nSIX x-clear\n\n\nCDS Canada\nCDS 캐나다\n\n\nCSDC\n중국증권등기결산\n\n\nCCIL\n인도청산결제\n\n\nMuqassa\n무카사 (사우디)\n\n\n시스템\n\n\n\nDTCC 시스템\nDTCC 기술\n\n\nLCH 시스템\nLCH 기술\n\n\nEurex Clearing Prisma\nPRISMA\n\n\n규제\n\n\n\n미국 청산 규제\nCFTC, SEC\n\n\nEU 청산 규제\nEMIR, CSDR\n\n\n아시아 청산 규제\n아시아"
-  },
-  {
-    "objectID": "index.html#용어집-최종-리뷰-glossary-final-review",
-    "href": "index.html#용어집-최종-리뷰-glossary-final-review",
-    "title": "Global Exchange Research",
-    "section": "",
-    "text": "문서\n설명\n\n\n\n\nGlossary (EN)\n영어 용어집\n\n\n용어집 (KO)\n한국어 용어집\n\n\nFinal Review (EN)\n최종 검토 및 벤치마킹\n\n\n최종 리뷰 (KO)\n최종 검토 (한국어)\n\n\n\n\n최종 업데이트: 2026-04-17 | 총 50개 이상의 거래소·청산기관 수록"
-  },
-  {
     "objectID": "qmd/01_equities/en/01_overview.html",
     "href": "qmd/01_equities/en/01_overview.html",
     "title": "Global Equities Markets — Overview",
     "section": "",
-    "text": "Last Updated: 2026-04-13 Status: Completed",
+    "text": "📁 Equities &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Global Equities Markets — Overview"
     ]
@@ -11712,7 +11684,7 @@
     "href": "qmd/01_equities/en/exchanges/asx.html",
     "title": "Australian Securities Exchange (ASX)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 2 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Australian Securities Exchange (ASX)"
@@ -11855,7 +11827,7 @@
     "href": "qmd/01_equities/en/exchanges/borsa_italiana.html",
     "title": "Borsa Italiana (Euronext Milan)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 3 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Borsa Italiana (Euronext Milan)"
@@ -11998,7 +11970,7 @@
     "href": "qmd/01_equities/en/exchanges/bursa_malaysia.html",
     "title": "Bursa Malaysia Berhad (Bursa Malaysia)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 3 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Bursa Malaysia Berhad (Bursa Malaysia)"
@@ -12141,7 +12113,7 @@
     "href": "qmd/01_equities/en/exchanges/euronext.html",
     "title": "Euronext N.V. (Euronext)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 2 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Euronext N.V. (Euronext)"
@@ -12284,7 +12256,7 @@
     "href": "qmd/01_equities/en/exchanges/jpx.html",
     "title": "Japan Exchange Group / Tokyo Stock Exchange (JPX / TSE)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 1 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Japan Exchange Group / Tokyo Stock Exchange (JPX / TSE)"
@@ -12427,7 +12399,7 @@
     "href": "qmd/01_equities/en/exchanges/krx.html",
     "title": "Korea Exchange (KRX)",
     "section": "",
-    "text": "Last Updated: 2026-04-13 Research Tier: Tier 1 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Korea Exchange (KRX)"
@@ -12570,7 +12542,7 @@
     "href": "qmd/01_equities/en/exchanges/nasdaq.html",
     "title": "NASDAQ Stock Market (NASDAQ)",
     "section": "",
-    "text": "Last Updated: 2026-04-03 Research Tier: Tier 1 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "NASDAQ Stock Market (NASDAQ)"
@@ -12713,7 +12685,7 @@
     "href": "qmd/01_equities/en/exchanges/nse_india.html",
     "title": "National Stock Exchange of India (NSE)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 3 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "National Stock Exchange of India (NSE)"
@@ -12856,7 +12828,7 @@
     "href": "qmd/01_equities/en/exchanges/sgx.html",
     "title": "Singapore Exchange (SGX)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 1 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Singapore Exchange (SGX)"
@@ -12999,7 +12971,7 @@
     "href": "qmd/01_equities/en/exchanges/sse.html",
     "title": "Shanghai Stock Exchange (SSE)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 3 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Shanghai Stock Exchange (SSE)"
@@ -13153,7 +13125,7 @@
     "href": "qmd/01_equities/en/exchanges/tadawul.html",
     "title": "Saudi Exchange (Tadawul)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 3 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Saudi Exchange (Tadawul)"
@@ -13296,7 +13268,7 @@
     "href": "qmd/01_equities/en/exchanges/twse.html",
     "title": "Taiwan Stock Exchange (TWSE)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 3 Domain: Equities",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Taiwan Stock Exchange (TWSE)"
@@ -13450,7 +13422,7 @@
     "href": "qmd/01_equities/en/regulations/eu_equities_regulation.html",
     "title": "EU/UK Equities Market Regulation",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 1 Domain: Equities — Regulatory Framework",
+    "text": "📁 Equities &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Regulations",
       "EU/UK Equities Market Regulation"
@@ -13593,7 +13565,7 @@
     "href": "qmd/01_equities/en/systems/arrowhead.html",
     "title": "arrowhead – Japan Exchange Group (JPX) / Tokyo Stock Exchange (TSE)",
     "section": "",
-    "text": "Last Updated: 2026-04-06 System Category: Trading System",
+    "text": "📁 Equities &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "arrowhead -- Japan Exchange Group (JPX) / Tokyo Stock Exchange (TSE)"
@@ -13659,7 +13631,7 @@
     "href": "qmd/01_equities/en/systems/arrowhead.html#notable-technical-features",
     "title": "arrowhead – Japan Exchange Group (JPX) / Tokyo Stock Exchange (TSE)",
     "section": "6. Notable Technical Features",
-    "text": "6. Notable Technical Features\n\n6.1 Itayose (Call Auction) Mechanism\nThe Itayose method is a call auction used to determine opening prices, closing prices, and prices after volatility interruptions. Orders are accumulated during a designated period, then matched simultaneously at a single equilibrium price where supply meets demand. Key rules: - All orders at or better than the equilibrium price are matched - Market orders have priority over limit orders - Used at the open of morning and afternoon sessions - With arrowhead4.0, a dedicated Closing Auction Session was introduced at the end of the afternoon session (15:25–15:30 JST) specifically for transparent closing price formation\n[Source: JPX, “Transaction Methods”, https://www.jpx.co.jp/english/equities/trading/domestic/04.html, accessed 2026-04-06]\n\n\n6.2 Zaraba (Continuous Trading) Method\nZaraba is the continuous auction method used during regular trading hours between the opening and closing auctions. Orders are matched on a price-time priority basis: - Best price has priority (price priority) - Among orders at the same price, earlier orders are matched first (time priority) - Market orders are executed ahead of limit orders at any price\n\n\n6.3 Special Quote (Tokubetsu Kehai) – Volatility Interruption\nSpecial Quotes serve as TSE’s primary circuit breaker / volatility control mechanism: - Indicated whenever prices are likely to jump beyond a certain price range from the last execution price - Once a Special Quote is indicated, execution switches from Zaraba (continuous) to Itayose (call auction) to prevent inappropriate price fluctuations - Can be triggered at any time during the trading session - Enhanced in arrowhead4.0: Excessive price fluctuations beyond double the update price range of Special Quotes are prevented until 60 seconds have passed from the reference execution - Daily price limits (å¤å¹å¶é) also apply as a broader circuit breaker\n[Source: JPX, “2024 Edition – Trading Rules Guide”, https://www.jpx.co.jp/english/equities/trading/domestic/tvdivq000000tpfi-att/eg.pdf]\n\n\n6.4 ToSTNeT (Tokyo Stock Exchange Trading NeTwork System)\nToSTNeT is the off-auction trading platform operated alongside arrowhead: - Handles block trades, basket trades, and closing price transactions - Accepts orders from domestic and foreign investors (through securities companies) - Trades executed off the central order book at negotiated or reference prices - Processes include order acceptance, execution, and result reporting - Separate system from arrowhead’s auction matching but integrated into the TSE ecosystem\n[Source: JPX, “Services (ToSTNeT)”, https://www.jpx.co.jp/english/systems/equities-trading/03.html, accessed 2026-04-06]\n\n\n6.5 CONNEQTOR – RFQ Platform for ETFs\nCONNEQTOR is JPX’s Request-for-Quote platform specifically designed for institutional ETF trading: - Launch: February 2021 - Purpose: Connects institutional investors, securities companies, and market makers for efficient ETF trading - Process: (1) Investor submits RFQ on CONNEQTOR, (2) market makers provide competitive quotes, (3) accepted trade is cleared and settled via ToSTNeT as an on-exchange trade - Adoption: Used by more than 250 institutional investors; monthly trading value surpassed JPY 200 billion (September 2023) - Benefits: Real-time best price quoting, reduced transaction costs, improved operational efficiency, no counterparty risk (exchange-cleared)\n[Source: JPX, “Overview – RFQ Platform”, https://www.jpx.co.jp/english/equities/products/etfs/rfq-platform/index.html, accessed 2026-04-06] [Source: JPX, “Monthly Trading Value via the RFQ Platform CONNEQTOR Surpasses 200 Billion Yen”, September 2023, https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20230904-02.html]\n\n\n6.6 arrowhead System Stats Service\nLaunched in July 2020, this alternative data service provides: - Real-time and historical statistics on arrowhead system performance - FLEX throttling data per multicast group - Order/trade activity metrics - Available to participants and data vendors for capacity planning and market microstructure research\n[Source: JPX, “TSE to launch arrowhead System Stats Service”, July 2020, https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20200703-01.html]\n\n\n6.7 Cloud PoC for Future Architecture\nTSE has conducted a Proof of Concept (PoC) to explore the long-term applicability of cloud technology to its cash equity trading system, signaling potential future architectural evolution beyond traditional on-premise infrastructure.\n[Source: FX News Group, “Tokyo Stock Exchange conducts PoC to explore long-term applicability of cloud tech to its cash equity trading system”, https://fxnewsgroup.com/forex-news/exchanges/tokyo-stock-exchange-conducts-poc-to-explore-long-term-applicability-of-cloud-tech-to-its-cash-equity-trading-system/]",
+    "text": "6. Notable Technical Features\n\n6.1 Itayose (Call Auction) Mechanism\nThe Itayose method is a call auction used to determine opening prices, closing prices, and prices after volatility interruptions. Orders are accumulated during a designated period, then matched simultaneously at a single equilibrium price where supply meets demand. Key rules: - All orders at or better than the equilibrium price are matched - Market orders have priority over limit orders - Used at the open of morning and afternoon sessions - With arrowhead4.0, a dedicated Closing Auction Session was introduced at the end of the afternoon session (15:25–15:30 JST) specifically for transparent closing price formation\n[Source: JPX, “Transaction Methods”, https://www.jpx.co.jp/english/equities/trading/domestic/04.html, accessed 2026-04-06]\n\n\n6.2 Zaraba (Continuous Trading) Method\nZaraba is the continuous auction method used during regular trading hours between the opening and closing auctions. Orders are matched on a price-time priority basis: - Best price has priority (price priority) - Among orders at the same price, earlier orders are matched first (time priority) - Market orders are executed ahead of limit orders at any price\n\n\n6.3 Special Quote (Tokubetsu Kehai) – Volatility Interruption\nSpecial Quotes serve as TSE’s primary circuit breaker / volatility control mechanism: - Indicated whenever prices are likely to jump beyond a certain price range from the last execution price - Once a Special Quote is indicated, execution switches from Zaraba (continuous) to Itayose (call auction) to prevent inappropriate price fluctuations - Can be triggered at any time during the trading session - Enhanced in arrowhead4.0: Excessive price fluctuations beyond double the update price range of Special Quotes are prevented until 60 seconds have passed from the reference execution - Daily price limits (å¤å¹ å¶é) also apply as a broader circuit breaker\n[Source: JPX, “2024 Edition – Trading Rules Guide”, https://www.jpx.co.jp/english/equities/trading/domestic/tvdivq000000tpfi-att/eg.pdf]\n\n\n6.4 ToSTNeT (Tokyo Stock Exchange Trading NeTwork System)\nToSTNeT is the off-auction trading platform operated alongside arrowhead: - Handles block trades, basket trades, and closing price transactions - Accepts orders from domestic and foreign investors (through securities companies) - Trades executed off the central order book at negotiated or reference prices - Processes include order acceptance, execution, and result reporting - Separate system from arrowhead’s auction matching but integrated into the TSE ecosystem\n[Source: JPX, “Services (ToSTNeT)”, https://www.jpx.co.jp/english/systems/equities-trading/03.html, accessed 2026-04-06]\n\n\n6.5 CONNEQTOR – RFQ Platform for ETFs\nCONNEQTOR is JPX’s Request-for-Quote platform specifically designed for institutional ETF trading: - Launch: February 2021 - Purpose: Connects institutional investors, securities companies, and market makers for efficient ETF trading - Process: (1) Investor submits RFQ on CONNEQTOR, (2) market makers provide competitive quotes, (3) accepted trade is cleared and settled via ToSTNeT as an on-exchange trade - Adoption: Used by more than 250 institutional investors; monthly trading value surpassed JPY 200 billion (September 2023) - Benefits: Real-time best price quoting, reduced transaction costs, improved operational efficiency, no counterparty risk (exchange-cleared)\n[Source: JPX, “Overview – RFQ Platform”, https://www.jpx.co.jp/english/equities/products/etfs/rfq-platform/index.html, accessed 2026-04-06] [Source: JPX, “Monthly Trading Value via the RFQ Platform CONNEQTOR Surpasses 200 Billion Yen”, September 2023, https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20230904-02.html]\n\n\n6.6 arrowhead System Stats Service\nLaunched in July 2020, this alternative data service provides: - Real-time and historical statistics on arrowhead system performance - FLEX throttling data per multicast group - Order/trade activity metrics - Available to participants and data vendors for capacity planning and market microstructure research\n[Source: JPX, “TSE to launch arrowhead System Stats Service”, July 2020, https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20200703-01.html]\n\n\n6.7 Cloud PoC for Future Architecture\nTSE has conducted a Proof of Concept (PoC) to explore the long-term applicability of cloud technology to its cash equity trading system, signaling potential future architectural evolution beyond traditional on-premise infrastructure.\n[Source: FX News Group, “Tokyo Stock Exchange conducts PoC to explore long-term applicability of cloud tech to its cash equity trading system”, https://fxnewsgroup.com/forex-news/exchanges/tokyo-stock-exchange-conducts-poc-to-explore-long-term-applicability-of-cloud-tech-to-its-cash-equity-trading-system/]",
     "crumbs": [
       "Trading Systems",
       "arrowhead -- Japan Exchange Group (JPX) / Tokyo Stock Exchange (TSE)"
@@ -13692,7 +13664,7 @@
     "href": "qmd/01_equities/en/systems/inet.html",
     "title": "NASDAQ INET — NASDAQ Stock Market",
     "section": "",
-    "text": "Last Updated: 2026-04-06 System Category: Trading System",
+    "text": "📁 Equities &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "NASDAQ INET — NASDAQ Stock Market"
@@ -13791,7 +13763,7 @@
     "href": "qmd/01_equities/en/systems/optiq.html",
     "title": "Optiq – Euronext",
     "section": "",
-    "text": "Last Updated: 2026-04-06 System Category: Trading System",
+    "text": "📁 Equities &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "Optiq -- Euronext"
@@ -13890,7 +13862,7 @@
     "href": "qmd/01_equities/en/systems/pillar.html",
     "title": "NYSE Pillar – New York Stock Exchange",
     "section": "",
-    "text": "Last Updated: 2026-04-06 System Category: Trading System",
+    "text": "📁 Equities &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "NYSE Pillar -- New York Stock Exchange"
@@ -13989,7 +13961,7 @@
     "href": "qmd/01_equities/en/systems/titan.html",
     "title": "SGX Titan / SGX REACH – Singapore Exchange",
     "section": "",
-    "text": "Last Updated: 2026-04-06 System Category: Trading System",
+    "text": "📁 Equities &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "SGX Titan / SGX REACH -- Singapore Exchange"
@@ -14088,7 +14060,7 @@
     "href": "qmd/01_equities/ko/02_comparative_analysis.html",
     "title": "글로벌 주식거래소 비교 분석 (Comparative Analysis of Global Equities Exchanges)",
     "section": "",
-    "text": "최종 수정일: 2026-04-13 범위: 아메리카, EMEA, 아태 지역 23개 거래소 (KRX 포함) 작성: 거래소 연구 프로젝트",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-13\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "글로벌 주식거래소 비교 분석 (Comparative Analysis of Global Equities Exchanges)"
     ]
@@ -14208,7 +14180,7 @@
     "href": "qmd/01_equities/ko/exchanges/bme.html",
     "title": "Bolsas y Mercados Espanoles (BME)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 3 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Bolsas y Mercados Espanoles (BME)"
@@ -14318,7 +14290,7 @@
     "href": "qmd/01_equities/ko/exchanges/bse.html",
     "title": "BSE Ltd (구 Bombay Stock Exchange)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 3 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "BSE Ltd (구 Bombay Stock Exchange)"
@@ -14461,7 +14433,7 @@
     "href": "qmd/01_equities/ko/exchanges/deutsche_borse.html",
     "title": "Deutsche Borse / Xetra (XETR)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 2 분야: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Deutsche Borse / Xetra (XETR)"
@@ -14604,7 +14576,7 @@
     "href": "qmd/01_equities/ko/exchanges/hkex.html",
     "title": "Hong Kong Exchanges and Clearing Limited (HKEX)",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 조사 등급: Tier 1 영역: 주식시장",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Hong Kong Exchanges and Clearing Limited (HKEX)"
@@ -14747,7 +14719,7 @@
     "href": "qmd/01_equities/ko/exchanges/jse.html",
     "title": "Johannesburg Stock Exchange (JSE)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 3 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Johannesburg Stock Exchange (JSE)"
@@ -14879,7 +14851,7 @@
     "href": "qmd/01_equities/ko/exchanges/lse.html",
     "title": "London Stock Exchange (LSE)",
     "section": "",
-    "text": "최종 수정일: 2026-04-03 조사 등급: Tier 1 영역: 주식시장",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-03\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "London Stock Exchange (LSE)"
@@ -15022,7 +14994,7 @@
     "href": "qmd/01_equities/ko/exchanges/nasdaq_nordic.html",
     "title": "Nasdaq Nordic (OMX 북유럽 거래소)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 3 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Nasdaq Nordic (OMX 북유럽 거래소)"
@@ -15165,7 +15137,7 @@
     "href": "qmd/01_equities/ko/exchanges/nyse.html",
     "title": "New York Stock Exchange (NYSE)",
     "section": "",
-    "text": "최종 수정일: 2026-04-03 조사 등급: Tier 1 영역: 주식시장",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-03\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "New York Stock Exchange (NYSE)"
@@ -15308,7 +15280,7 @@
     "href": "qmd/01_equities/ko/exchanges/six.html",
     "title": "SIX Swiss Exchange (SIX)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 2 분야: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "SIX Swiss Exchange (SIX)"
@@ -15451,7 +15423,7 @@
     "href": "qmd/01_equities/ko/exchanges/szse.html",
     "title": "Shenzhen Stock Exchange (SZSE)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 3 도메인: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Shenzhen Stock Exchange (SZSE)"
@@ -15616,7 +15588,7 @@
     "href": "qmd/01_equities/ko/exchanges/tmx.html",
     "title": "TMX Group / Toronto Stock Exchange (TSX)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 조사 등급: Tier 2 분야: 주식",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "TMX Group / Toronto Stock Exchange (TSX)"
@@ -15759,7 +15731,7 @@
     "href": "qmd/01_equities/ko/regulations/asia_equities_regulation.html",
     "title": "아시아태평양 주식시장 규제 (Asia-Pacific Equities Market Regulation)",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 연구 등급: Tier 1 분야: 주식 — 규제 프레임워크",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "규제",
       "아시아태평양 주식시장 규제 (Asia-Pacific Equities Market Regulation)"
@@ -15836,7 +15808,7 @@
     "href": "qmd/01_equities/ko/regulations/us_equities_regulation.html",
     "title": "미국 주식시장 규제 (US Equities Market Regulation)",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 연구 등급: Tier 1 분야: 주식 — 규제 프레임워크",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "규제",
       "미국 주식시장 규제 (US Equities Market Regulation)"
@@ -15979,7 +15951,7 @@
     "href": "qmd/01_equities/ko/systems/exture_3.html",
     "title": "Exture 3.0 — 한국거래소 (Korea Exchange, KRX)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-13 시스템 분류: 매매시스템 / 청산결제시스템 / 시장정보시스템 (Trading System / Clearing System / Market Data System)",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-13\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "Exture 3.0 — 한국거래소 (Korea Exchange, KRX)"
@@ -16078,7 +16050,7 @@
     "href": "qmd/01_equities/ko/systems/millennium.html",
     "title": "Millennium Exchange – 런던증권거래소 (London Stock Exchange)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 시스템 분류: 매매시스템 (Trading System)",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "Millennium Exchange -- 런던증권거래소 (London Stock Exchange)"
@@ -16177,7 +16149,7 @@
     "href": "qmd/01_equities/ko/systems/orion.html",
     "title": "Orion Trading Platform – Cash (OTP-C) – HKEX (홍콩거래소)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 시스템 분류: 매매시스템 (Trading System)",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "Orion Trading Platform -- Cash (OTP-C) -- HKEX (홍콩거래소)"
@@ -16276,7 +16248,7 @@
     "href": "qmd/01_equities/ko/systems/t7.html",
     "title": "T7 매매시스템 – Deutsche Boerse (Xetra)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-06 시스템 분류: 매매시스템 (Trading System)",
+    "text": "📁 주식시장 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "T7 매매시스템 -- Deutsche Boerse (Xetra)"
@@ -16375,7 +16347,7 @@
     "href": "qmd/02_derivatives/en/01_overview.html",
     "title": "Global Derivatives Markets — Overview",
     "section": "",
-    "text": "Last Updated: 2026-04-13 Status: Completed",
+    "text": "📁 Derivatives &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Global Derivatives Markets — Overview"
     ]
@@ -16465,7 +16437,7 @@
     "href": "qmd/02_derivatives/en/exchanges/asx_derivatives.html",
     "title": "ASX Derivatives (Australian Securities Exchange)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 2 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "ASX Derivatives (Australian Securities Exchange)"
@@ -16619,7 +16591,7 @@
     "href": "qmd/02_derivatives/en/exchanges/cffex.html",
     "title": "China Financial Futures Exchange (CFFEX)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "China Financial Futures Exchange (CFFEX)"
@@ -16729,7 +16701,7 @@
     "href": "qmd/02_derivatives/en/exchanges/dce.html",
     "title": "Dalian Commodity Exchange (DCE)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Dalian Commodity Exchange (DCE)"
@@ -16839,7 +16811,7 @@
     "href": "qmd/02_derivatives/en/exchanges/eurex.html",
     "title": "Eurex",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 1 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Eurex"
@@ -17059,7 +17031,7 @@
     "href": "qmd/02_derivatives/en/exchanges/hkex_derivatives.html",
     "title": "HKEX Derivatives Market",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 1 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "HKEX Derivatives Market"
@@ -17224,7 +17196,7 @@
     "href": "qmd/02_derivatives/en/exchanges/krx_derivatives.html",
     "title": "KRX Derivatives (Korea Exchange)",
     "section": "",
-    "text": "Last Updated: 2026-04-13 Research Tier: Tier 1 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "KRX Derivatives (Korea Exchange)"
@@ -17356,7 +17328,7 @@
     "href": "qmd/02_derivatives/en/exchanges/nse_fo.html",
     "title": "National Stock Exchange of India — Futures & Options (NSE F&O)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "National Stock Exchange of India — Futures & Options (NSE F&O)"
@@ -17499,7 +17471,7 @@
     "href": "qmd/02_derivatives/en/exchanges/sgx_derivatives.html",
     "title": "SGX Derivatives",
     "section": "",
-    "text": "Last Updated: 2026-04-06 Research Tier: Tier 1 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "SGX Derivatives"
@@ -17719,7 +17691,7 @@
     "href": "qmd/02_derivatives/en/exchanges/taifex.html",
     "title": "Taiwan Futures Exchange (TAIFEX)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 Domain: Derivatives",
+    "text": "📁 Derivatives &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Exchanges",
       "Taiwan Futures Exchange (TAIFEX)"
@@ -17840,7 +17812,7 @@
     "href": "qmd/02_derivatives/en/regulations/eu_derivatives_regulation.html",
     "title": "EU Derivatives Regulation",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Domain: Derivatives – Regulatory Framework",
+    "text": "📁 Derivatives &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Regulations",
       "EU Derivatives Regulation"
@@ -17961,7 +17933,7 @@
     "href": "qmd/02_derivatives/en/systems/genium_inet.html",
     "title": "Genium INET — Nasdaq Technology",
     "section": "",
-    "text": "Last Updated: 2026-04-07 System Category: Trading System",
+    "text": "📁 Derivatives &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "Genium INET — Nasdaq Technology"
@@ -18060,7 +18032,7 @@
     "href": "qmd/02_derivatives/en/systems/t7_derivatives.html",
     "title": "T7 Trading Architecture – Eurex (Derivatives)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 System Category: Trading System",
+    "text": "📁 Derivatives &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "T7 Trading Architecture -- Eurex (Derivatives)"
@@ -18159,7 +18131,7 @@
     "href": "qmd/02_derivatives/ko/02_comparative_analysis.html",
     "title": "글로벌 파생상품시장 — 비교 분석 (Global Derivatives Markets – Comparative Analysis)",
     "section": "",
-    "text": "최종 수정일: 2026-04-13 영역: 파생상품 (Derivatives) 범위: 아메리카, 유럽, 아시아-태평양, 중동 지역 17개 거래소",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-13\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "글로벌 파생상품시장 — 비교 분석 (Global Derivatives Markets -- Comparative Analysis)"
     ]
@@ -18269,7 +18241,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/cboe.html",
     "title": "Cboe Global Markets (Cboe 글로벌 마켓)",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 조사 등급: Tier 2 분야: 파생상품 (Derivatives)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Cboe Global Markets (Cboe 글로벌 마켓)"
@@ -18423,7 +18395,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/cme_group.html",
     "title": "CME Group (CME 그룹)",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 조사 등급: Tier 1 분야: 파생상품 (Derivatives)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "CME Group (CME 그룹)"
@@ -18643,7 +18615,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/dme.html",
     "title": "Dubai Mercantile Exchange (DME, 두바이상업거래소)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 조사 등급: Tier 3 분야: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Dubai Mercantile Exchange (DME, 두바이상업거래소)"
@@ -18764,7 +18736,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/euronext_derivatives.html",
     "title": "Euronext Derivatives (유로넥스트 파생상품)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 조사 등급: Tier 2 분야: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Euronext Derivatives (유로넥스트 파생상품)"
@@ -18918,7 +18890,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/ice_futures.html",
     "title": "ICE Futures (Intercontinental Exchange 선물)",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 조사 등급: Tier 2 분야: 파생상품 (Derivatives)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "ICE Futures (Intercontinental Exchange 선물)"
@@ -19072,7 +19044,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/montreal_exchange.html",
     "title": "Montreal Exchange (MX, 몬트리올거래소)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 조사 단계: Tier 3 도메인: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Montreal Exchange (MX, 몬트리올거래소)"
@@ -19226,7 +19198,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/osaka_exchange.html",
     "title": "Osaka Exchange (오사카거래소, OSE)",
     "section": "",
-    "text": "최종 수정일: 2026-04-06 조사 등급: Tier 2 분야: 파생상품 (Derivatives)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-06\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Osaka Exchange (오사카거래소, OSE)"
@@ -19380,7 +19352,7 @@
     "href": "qmd/02_derivatives/ko/exchanges/shfe.html",
     "title": "Shanghai Futures Exchange (SHFE, 상하이선물거래소)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 조사 등급: Tier 3 분야: 파생상품",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "거래소",
       "Shanghai Futures Exchange (SHFE, 상하이선물거래소)"
@@ -19490,7 +19462,7 @@
     "href": "qmd/02_derivatives/ko/regulations/asia_derivatives_regulation.html",
     "title": "아시아태평양 파생상품 규제 (Asia-Pacific Derivatives Regulation)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 분야: 파생상품 — 규제 프레임워크 (Regulatory Framework) 대상 관할권: 일본, 홍콩, 싱가포르, 한국 (비교)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "규제",
       "아시아태평양 파생상품 규제 (Asia-Pacific Derivatives Regulation)"
@@ -19567,7 +19539,7 @@
     "href": "qmd/02_derivatives/ko/regulations/us_derivatives_regulation.html",
     "title": "미국 파생상품 규제 (U.S. Derivatives Regulation)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 분야: 파생상품 — 규제 프레임워크 (Regulatory Framework)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "규제",
       "미국 파생상품 규제 (U.S. Derivatives Regulation)"
@@ -19699,7 +19671,7 @@
     "href": "qmd/02_derivatives/ko/systems/globex.html",
     "title": "CME Globex — CME Group",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 시스템 분류: 매매시스템 (Trading System)",
+    "text": "📁 파생상품 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "CME Globex — CME Group"
@@ -19798,7 +19770,7 @@
     "href": "qmd/03_clearing/en/01_overview.html",
     "title": "Global Clearing & Settlement — Overview",
     "section": "",
-    "text": "Last Updated: 2026-04-13 Status: Completed",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Global Clearing & Settlement — Overview"
     ]
@@ -19888,7 +19860,7 @@
     "href": "qmd/03_clearing/en/organizations/asx_clear.html",
     "title": "ASX Clear / ASX Clear (Futures)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 2 Type: CCP (two separate legal entities under ASX Group)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "ASX Clear / ASX Clear (Futures)"
@@ -20009,7 +19981,7 @@
     "href": "qmd/03_clearing/en/organizations/cdp.html",
     "title": "Central Depository Pte Ltd (CDP)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 2 (Standard) Type: CCP + CSD (Central Counterparty + Central Securities Depository)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "Central Depository Pte Ltd (CDP)"
@@ -20130,7 +20102,7 @@
     "href": "qmd/03_clearing/en/organizations/clearstream.html",
     "title": "Clearstream (Clearstream)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 (Overview) Type: ICSD (International Central Securities Depository) + CSD",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "Clearstream (Clearstream)"
@@ -20240,7 +20212,7 @@
     "href": "qmd/03_clearing/en/organizations/csdc.html",
     "title": "China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 (Overview) Type: CCP + CSD (Central Counterparty and Central Securities Depository)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)"
@@ -20350,7 +20322,7 @@
     "href": "qmd/03_clearing/en/organizations/eurex_clearing.html",
     "title": "Eurex Clearing AG",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 1 (Deep Dive) Type: CCP (Central Counterparty)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "Eurex Clearing AG"
@@ -20471,7 +20443,7 @@
     "href": "qmd/03_clearing/en/organizations/euroclear.html",
     "title": "Euroclear Group (Euroclear)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 3 (Overview) Type: ICSD (International Central Securities Depository) + CSDs",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 3 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "Euroclear Group (Euroclear)"
@@ -20581,7 +20553,7 @@
     "href": "qmd/03_clearing/en/organizations/ice_clear.html",
     "title": "ICE Clear (ICE Clear U.S. / ICE Clear Europe / ICE Clear Credit)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 2 (Standard) Type: CCP (multiple entities)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 2 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "ICE Clear (ICE Clear U.S. / ICE Clear Europe / ICE Clear Credit)"
@@ -20702,7 +20674,7 @@
     "href": "qmd/03_clearing/en/organizations/krx_clearing.html",
     "title": "KRX Clearing (Korea Exchange CCP)",
     "section": "",
-    "text": "Last Updated: 2026-04-13 Research Tier: Tier 1 (Deep Dive) Type: CCP (Integrated Exchange-CCP)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "KRX Clearing (Korea Exchange CCP)"
@@ -20834,7 +20806,7 @@
     "href": "qmd/03_clearing/en/organizations/lch.html",
     "title": "LCH (LCH Limited & LCH SA)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 1 (Deep Dive) Type: CCP (Central Counterparty)",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "LCH (LCH Limited & LCH SA)"
@@ -20955,7 +20927,7 @@
     "href": "qmd/03_clearing/en/organizations/occ.html",
     "title": "Options Clearing Corporation (OCC)",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Research Tier: Tier 1 (Deep Dive) Type: Central Counterparty (CCP) — world’s largest equity derivatives clearing organization",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    ⭐ TIER 1 Primary Source\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Organizations",
       "Options Clearing Corporation (OCC)"
@@ -21076,7 +21048,7 @@
     "href": "qmd/03_clearing/en/regulations/asia_clearing_regulation.html",
     "title": "Asia-Pacific Clearing & Settlement Regulation",
     "section": "",
-    "text": "Last Updated: 2026-04-07",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Regulations",
       "Asia-Pacific Clearing & Settlement Regulation"
@@ -21197,7 +21169,7 @@
     "href": "qmd/03_clearing/en/regulations/us_clearing_regulation.html",
     "title": "U.S. Clearing & Settlement Regulation",
     "section": "",
-    "text": "Last Updated: 2026-04-07 Domain: Clearing & Settlement – Regulatory Framework",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Regulations",
       "U.S. Clearing & Settlement Regulation"
@@ -21340,7 +21312,7 @@
     "href": "qmd/03_clearing/en/systems/eurex_clearing_prisma.html",
     "title": "Eurex Clearing – C7 Architecture & PRISMA Margin Engine",
     "section": "",
-    "text": "Last Updated: 2026-04-07 System Category: Clearing System",
+    "text": "📁 Clearing & Settlement &gt; English Research\n    📑 In-Depth Research\n    📅 2026-04-17\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Trading Systems",
       "Eurex Clearing -- C7 Architecture & PRISMA Margin Engine"
@@ -21439,7 +21411,7 @@
     "href": "qmd/03_clearing/ko/01_overview.html",
     "title": "글로벌 청산결제 — 개요 (Global Clearing & Settlement — Overview)",
     "section": "",
-    "text": "최종 수정일: 2026-04-13 상태: 완료",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-13\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "글로벌 청산결제 — 개요 (Global Clearing & Settlement — Overview)"
     ]
@@ -21529,7 +21501,7 @@
     "href": "qmd/03_clearing/ko/organizations/asx_clear.html",
     "title": "ASX Clear / ASX Clear (Futures) (호주증권거래소 청산소)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 수준: Tier 2 유형: CCP (ASX 그룹 산하 두 개의 별도 법인)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "ASX Clear / ASX Clear (Futures) (호주증권거래소 청산소)"
@@ -21650,7 +21622,7 @@
     "href": "qmd/03_clearing/ko/organizations/cdp.html",
     "title": "Central Depository Pte Ltd (CDP, 싱가포르 중앙예탁청산기관)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 2 (Standard) 유형: CCP + CSD (중앙청산소 + 중앙예탁기관)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 2 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "Central Depository Pte Ltd (CDP, 싱가포르 중앙예탁청산기관)"
@@ -21771,7 +21743,7 @@
     "href": "qmd/03_clearing/ko/organizations/clearstream.html",
     "title": "Clearstream (클리어스트림)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 3 (개요) 유형: ICSD (국제예탁기관, International Central Securities Depository) + CSD (중앙예탁기관)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "Clearstream (클리어스트림)"
@@ -21881,7 +21853,7 @@
     "href": "qmd/03_clearing/ko/organizations/csdc.html",
     "title": "China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 3 (개요) 유형: CCP (중앙청산소) + CSD (중앙예탁기관)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "China Securities Depository and Clearing Corporation Limited (CSDC / ChinaClear)"
@@ -21991,7 +21963,7 @@
     "href": "qmd/03_clearing/ko/organizations/eurex_clearing.html",
     "title": "Eurex Clearing AG (유렉스 청산소)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 1 (심층 분석) 유형: CCP (중앙청산소, Central Counterparty)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "Eurex Clearing AG (유렉스 청산소)"
@@ -22112,7 +22084,7 @@
     "href": "qmd/03_clearing/ko/organizations/euroclear.html",
     "title": "Euroclear Group (Euroclear)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 등급: Tier 3 (개요) 유형: ICSD (국제예탁기관, International Central Securities Depository) + CSD",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 3 공식자료 기반\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "Euroclear Group (Euroclear)"
@@ -22222,7 +22194,7 @@
     "href": "qmd/03_clearing/ko/organizations/ice_clear.html",
     "title": "ICE Clear (ICE Clear U.S. / ICE Clear Europe / ICE Clear Credit)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 조사 수준: Tier 2 (Standard) 유형: CCP (복수 법인)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "ICE Clear (ICE Clear U.S. / ICE Clear Europe / ICE Clear Credit)"
@@ -22343,7 +22315,7 @@
     "href": "qmd/03_clearing/ko/organizations/krx_clearing.html",
     "title": "KRX 청산 (한국거래소 CCP)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-13 조사 등급: Tier 1 (심층 분석) 유형: CCP (거래소-CCP 통합형)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    ⭐ TIER 1 공식자료 기반\n    📅 2026-04-13\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "KRX 청산 (한국거래소 CCP)"
@@ -22475,7 +22447,7 @@
     "href": "qmd/03_clearing/ko/organizations/lch.html",
     "title": "LCH (LCH Limited & LCH SA, 런던청산소)",
     "section": "",
-    "text": "최종 갱신일: 2026-04-07 조사 단계: Tier 1 (심층 분석) 유형: 중앙청산소 (CCP, Central Counterparty)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-17\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "LCH (LCH Limited & LCH SA, 런던청산소)"
@@ -22596,7 +22568,7 @@
     "href": "qmd/03_clearing/ko/organizations/occ.html",
     "title": "OCC (Options Clearing Corporation, 옵션청산공사)",
     "section": "",
-    "text": "최종 갱신일: 2026-04-07 조사 단계: Tier 1 (심층 분석) 유형: 중앙청산소 (CCP, Central Counterparty) – 세계 최대 주식 파생상품 청산기관",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-17\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "청산기관",
       "OCC (Options Clearing Corporation, 옵션청산공사)"
@@ -22717,7 +22689,7 @@
     "href": "qmd/03_clearing/ko/regulations/asia_clearing_regulation.html",
     "title": "아시아-태평양 청산 및 결제 규제 (Asia-Pacific Clearing & Settlement Regulation)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "규제",
       "아시아-태평양 청산 및 결제 규제 (Asia-Pacific Clearing & Settlement Regulation)"
@@ -22838,7 +22810,7 @@
     "href": "qmd/03_clearing/ko/regulations/us_clearing_regulation.html",
     "title": "미국 청산 및 결제 규제 (U.S. Clearing & Settlement Regulation)",
     "section": "",
-    "text": "최종 업데이트: 2026-04-07 분야: 청산 및 결제 – 규제 체계 (Regulatory Framework)",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "규제",
       "미국 청산 및 결제 규제 (U.S. Clearing & Settlement Regulation)"
@@ -22981,7 +22953,7 @@
     "href": "qmd/03_clearing/ko/systems/eurex_clearing_prisma.html",
     "title": "Eurex Clearing — C7 아키텍처 및 PRISMA 증거금 엔진 (C7 Architecture & PRISMA Margin Engine)",
     "section": "",
-    "text": "최종 수정일: 2026-04-07 시스템 분류: 청산시스템",
+    "text": "📁 청산·결제 &gt; 한국어 리포트\n    📑 심층 분석 리포트\n    📅 2026-04-07\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "매매시스템",
       "Eurex Clearing — C7 아키텍처 및 PRISMA 증거금 엔진 (C7 Architecture & PRISMA Margin Engine)"
@@ -23080,7 +23052,7 @@
     "href": "qmd/reference/final_review.html",
     "title": "Final Review: Global Exchange Research — Cross-Domain Analysis & KRX Benchmarking",
     "section": "",
-    "text": "Date: 2026-04-13 Scope: 23 equity exchanges, 17 derivatives exchanges, 20 clearing/settlement organizations Total Documents: 90+ English research files across 3 domains",
+    "text": "📁 Reference &gt; Benchmarking\n    📑 In-Depth Research\n    📅 2026-04-13\n  \n  \n    🇰🇷 한국어 리포트 보기",
     "crumbs": [
       "Final Review: Global Exchange Research — Cross-Domain Analysis & KRX Benchmarking"
     ]
@@ -23140,7 +23112,7 @@
     "href": "qmd/reference/glossary_ko.html",
     "title": "한영 대역 용어집 — 글로벌 거래소 조사",
     "section": "",
-    "text": "조사 중 새 용어가 발견될 때마다 추가. 카테고리별 영문 기준 알파벳순 정렬.",
+    "text": "📁 참고자료 &gt; 용어집\n    📑 심층 분석 리포트\n    📅 2026-04-17\n  \n  \n    🌐 Read in English",
     "crumbs": [
       "한영 대역 용어집 — 글로벌 거래소 조사"
     ]

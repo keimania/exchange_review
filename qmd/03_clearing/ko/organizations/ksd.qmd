@@ -10,15 +10,21 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
     self-contained: false
 ---
 
-> **최종 업데이트:** 2026-04-13
-> **조사 등급:** Tier 1
-> **유형:** CSD (중앙예탁결제기관, Central Securities Depository)
-
----
+```{=html}
+<div class="doc-header-card">
+  <div class="doc-header-left">
+    <span class="doc-badge category">📁 청산·결제 &gt; 한국어 리포트</span>
+    <span class="doc-badge tier">⭐ TIER 1 공식자료 기반</span>
+    <span class="doc-badge date">📅 2026-04-13</span>
+  </div>
+  <div class="doc-header-right">
+    <a href="../../en/organizations/ksd.html" class="doc-lang-btn">🌐 Read in English</a>
+  </div>
+</div>
+```
 
 ## 1. 개요 및 기본 정보 (Overview & Profile)
 

@@ -10,14 +10,21 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
     self-contained: false
 ---
 
-> **최종 업데이트:** 2026-04-07
-> **분야:** 청산 및 결제 -- 규제 체계 (Regulatory Framework)
-
----
+```{=html}
+<div class="doc-header-card">
+  <div class="doc-header-left">
+    <span class="doc-badge category">📁 청산·결제 &gt; 한국어 리포트</span>
+    <span class="doc-badge tier">📑 심층 분석 리포트</span>
+    <span class="doc-badge date">📅 2026-04-07</span>
+  </div>
+  <div class="doc-header-right">
+    <a href="../../en/regulations/us_clearing_regulation.html" class="doc-lang-btn">🌐 Read in English</a>
+  </div>
+</div>
+```
 
 ## 목차 (Table of Contents)
 

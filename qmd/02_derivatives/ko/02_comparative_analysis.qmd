@@ -10,15 +10,21 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
     self-contained: false
 ---
 
-> **최종 수정일:** 2026-04-13
-> **영역:** 파생상품 (Derivatives)
-> **범위:** 아메리카, 유럽, 아시아-태평양, 중동 지역 17개 거래소
-
----
+```{=html}
+<div class="doc-header-card">
+  <div class="doc-header-left">
+    <span class="doc-badge category">📁 파생상품 &gt; 한국어 리포트</span>
+    <span class="doc-badge tier">📑 심층 분석 리포트</span>
+    <span class="doc-badge date">📅 2026-04-13</span>
+  </div>
+  <div class="doc-header-right">
+    <a href="../en/02_comparative_analysis.html" class="doc-lang-btn">🌐 Read in English</a>
+  </div>
+</div>
+```
 
 ## 1. 상품 범위 비교 (Product Coverage Comparison)
 

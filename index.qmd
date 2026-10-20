@@ -3,6 +3,8 @@ title: "Global Exchange Research Portal"
 subtitle: "KRX IT 부서를 위한 글로벌 60개 거래소·청산기관 인프라 비교 조사 & 벤치마킹"
 date: "2026-04-17"
 toc: false
+sidebar: false
+page-layout: full
 number-sections: false
 format:
   html:

@@ -10,15 +10,21 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
     self-contained: false
 ---
 
-> **최종 수정일:** 2026-04-13
-> **범위:** 아메리카, EMEA, 아태 지역 23개 거래소 (KRX 포함)
-> **작성:** 거래소 연구 프로젝트
-
----
+```{=html}
+<div class="doc-header-card">
+  <div class="doc-header-left">
+    <span class="doc-badge category">📁 주식시장 &gt; 한국어 리포트</span>
+    <span class="doc-badge tier">📑 심층 분석 리포트</span>
+    <span class="doc-badge date">📅 2026-04-13</span>
+  </div>
+  <div class="doc-header-right">
+    <a href="../en/02_comparative_analysis.html" class="doc-lang-btn">🌐 Read in English</a>
+  </div>
+</div>
+```
 
 ## 1. 매매시스템 기술 비교 (Trading System Technology Comparison)
 

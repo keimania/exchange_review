@@ -10,15 +10,21 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
     self-contained: false
 ---
 
-> **Last Updated:** 2026-04-06
-> **Research Tier:** Tier 1
-> **Domain:** Derivatives
-
----
+```{=html}
+<div class="doc-header-card">
+  <div class="doc-header-left">
+    <span class="doc-badge category">📁 Derivatives &gt; English Research</span>
+    <span class="doc-badge tier">⭐ TIER 1 Primary Source</span>
+    <span class="doc-badge date">📅 2026-04-17</span>
+  </div>
+  <div class="doc-header-right">
+    <a href="../../ko/exchanges/eurex.html" class="doc-lang-btn">🇰🇷 한국어 리포트 보기</a>
+  </div>
+</div>
+```
 
 ## 1. Overview & Profile
 

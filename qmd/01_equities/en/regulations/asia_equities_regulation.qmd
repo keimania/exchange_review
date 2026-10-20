@@ -10,15 +10,21 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
     self-contained: false
 ---
 
-> **Last Updated:** 2026-04-06
-> **Research Tier:** Tier 1
-> **Domain:** Equities â Regulatory Framework
-
----
+```{=html}
+<div class="doc-header-card">
+  <div class="doc-header-left">
+    <span class="doc-badge category">📁 Equities &gt; English Research</span>
+    <span class="doc-badge tier">⭐ TIER 1 Primary Source</span>
+    <span class="doc-badge date">📅 2026-04-17</span>
+  </div>
+  <div class="doc-header-right">
+    <a href="../../ko/regulations/asia_equities_regulation.html" class="doc-lang-btn">🇰🇷 한국어 리포트 보기</a>
+  </div>
+</div>
+```
 
 ## Table of Contents
 
@@ -107,7 +113,8 @@ Major amendments enacted in 2024 include:
 
 **Trading Regulations:**
 - **Order types:** Limit orders, market orders, and various conditional orders processed through the arrowhead trading engine
-- **Price limits:** Daily price limits (å¤å¹å¶é) based on the previous day's closing price; limits range from +/-30 yen (for stocks under 100 yen) to +/-7,000 yen (for stocks at 30,000-50,000 yen level), with wider limits for higher-priced stocks
+- **Price limits:** Daily price limits (å¤å¹
+å¶é) based on the previous day's closing price; limits range from +/-30 yen (for stocks under 100 yen) to +/-7,000 yen (for stocks at 30,000-50,000 yen level), with wider limits for higher-priced stocks
 - **Tick sizes:** Multi-tiered based on price level and index membership (TOPIX 500 constituents have finer ticks)
 - **Trading unit:** Standardized at 100 shares for all listed stocks since October 2018
 - **Closing auction:** Introduced November 2024 with a 5-minute pre-closing period (15:25-15:30) followed by Itayose matching
@@ -528,7 +535,8 @@ Korea uniquely operates a **dual-regulator model** at the government level (FSC 
 
 | Dimension | Korea | Japan | Hong Kong | Singapore |
 |-----------|-------|-------|-----------|-----------|
-| **Government regulator** | FSC (Financial Services Commission, ê¸ìµììí) â policy/rulemaking; FSS (Financial Supervisory Service, ê¸ìµê°ëì) â supervision/examination | JFSA (single regulator for policy + supervision) | SFC (single statutory regulator for securities markets) | MAS (integrated regulator: central bank + all financial supervision) |
+| **Government regulator** | FSC (Financial Services Commission, ê¸ìµììí) â policy/rulemaking; FSS (Financial Supervisory Service, ê¸ìµê°ë
+ì) â supervision/examination | JFSA (single regulator for policy + supervision) | SFC (single statutory regulator for securities markets) | MAS (integrated regulator: central bank + all financial supervision) |
 | **Dual/single structure** | Dual: FSC (government commission) + FSS (executive body, non-governmental) | Single JFSA with SESC as specialized surveillance commission within it | Single SFC (plus HKEX Listing Division for listing regulation) | Single MAS (plus SGX RegCo for exchange-level regulation) |
 | **Exchange SRO** | KRX (Korea Exchange, íêµ­ê±°ëì) â operates as sole exchange and SRO | JPX-R (dedicated SRO subsidiary of JPX) | HKEX Listing Division (delegated authority from SFC) | SGX RegCo (independent regulatory subsidiary of SGX) |
 | **Regulatory philosophy** | Prescriptive/rules-based; active government intervention (e.g., short selling bans) | Principles-based (corporate governance) + rules-based (trading regulations); increasing emphasis on market-based solutions | Disclosure-based with SFC oversight; SFO provides both civil and criminal enforcement routes | Disclosure-based; MAS favors proportionate enforcement with emphasis on deterrence |
@@ -538,7 +546,8 @@ Korea uniquely operates a **dual-regulator model** at the government level (FSC 
 
 ### 4.2 Key Regulations: FSCMA (ìë³¸ìì¥ë²)
 
-Korea's principal securities legislation is the **Financial Investment Services and Capital Markets Act (FSCMA / ìë³¸ìì¥ê³¼ ê¸ìµí¬ììì ê´í ë²ë¥ )**, enacted in 2007 (effective February 4, 2009). The FSCMA consolidated six prior laws into a single comprehensive statute covering securities, derivatives, and investment services.
+Korea's principal securities legislation is the **Financial Investment Services and Capital Markets Act (FSCMA / ìë³¸ìì¥ê³¼ ê¸ìµí¬ìì
+ì ê´í ë²ë¥ )**, enacted in 2007 (effective February 4, 2009). The FSCMA consolidated six prior laws into a single comprehensive statute covering securities, derivatives, and investment services.
 
 **Comparison of Principal Legislation:**
 

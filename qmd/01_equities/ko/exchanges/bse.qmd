@@ -10,15 +10,21 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
     self-contained: false
 ---
 
-> **최종 업데이트:** 2026-04-06
-> **조사 등급:** Tier 3
-> **도메인:** 주식
-
----
+```{=html}
+<div class="doc-header-card">
+  <div class="doc-header-left">
+    <span class="doc-badge category">📁 주식시장 &gt; 한국어 리포트</span>
+    <span class="doc-badge tier">⭐ TIER 3 공식자료 기반</span>
+    <span class="doc-badge date">📅 2026-04-06</span>
+  </div>
+  <div class="doc-header-right">
+    <a href="../../en/exchanges/bse.html" class="doc-lang-btn">🌐 Read in English</a>
+  </div>
+</div>
+```
 
 ## 1. 개요 및 프로필 (Overview & Profile)
 

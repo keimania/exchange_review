@@ -10,14 +10,21 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
     self-contained: false
 ---
 
-> **최종 수정일:** 2026-04-07
-> **시스템 분류:** 청산시스템
-
----
+```{=html}
+<div class="doc-header-card">
+  <div class="doc-header-left">
+    <span class="doc-badge category">📁 청산·결제 &gt; 한국어 리포트</span>
+    <span class="doc-badge tier">📑 심층 분석 리포트</span>
+    <span class="doc-badge date">📅 2026-04-07</span>
+  </div>
+  <div class="doc-header-right">
+    <a href="../../en/systems/lch_systems.html" class="doc-lang-btn">🌐 Read in English</a>
+  </div>
+</div>
+```
 
 ## 1. 시스템 개요 (System Overview)
 

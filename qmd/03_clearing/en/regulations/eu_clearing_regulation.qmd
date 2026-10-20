@@ -10,14 +10,21 @@ format:
   html:
     theme: cosmo
     toc: true
-    toc-location: left
     self-contained: false
 ---
 
-> **Last Updated:** 2026-04-07
-> **Status:** Comprehensive draft
-
----
+```{=html}
+<div class="doc-header-card">
+  <div class="doc-header-left">
+    <span class="doc-badge category">📁 Clearing & Settlement &gt; English Research</span>
+    <span class="doc-badge tier">📑 In-Depth Research</span>
+    <span class="doc-badge date">📅 2026-04-17</span>
+  </div>
+  <div class="doc-header-right">
+    <a href="../../ko/regulations/eu_clearing_regulation.html" class="doc-lang-btn">🇰🇷 한국어 리포트 보기</a>
+  </div>
+</div>
+```
 
 ## 1. Regulatory Authorities
 

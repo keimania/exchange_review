@@ -316,11 +316,15 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-    toc-location: left
+    toc-location: right
+    toc-title: "목차 (Contents)"
     toc-depth: 3
     number-sections: false
     smooth-scroll: true
     link-external-newwindow: true
+    page-navigation: true
+    back-to-top-navigation: true
     grid:
-      sidebar-width: 280px
-      body-width: 900px
+      sidebar-width: 270px
+      body-width: 1050px
+      margin-width: 260px
