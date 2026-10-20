@@ -1,7 +1,7 @@
 ---
 title: "LCH (LCH Limited & LCH SA)"
 subtitle: "Clearing & Settlement > Organizations"
-date: "2026-04-17"
+date: "2026-10-20"
 lang: en
 toc: true
 toc-depth: 3
@@ -18,7 +18,7 @@ format:
   <div class="doc-header-left">
     <span class="doc-badge category">📁 Clearing & Settlement &gt; English Research</span>
     <span class="doc-badge tier">⭐ TIER 1 Primary Source</span>
-    <span class="doc-badge date">📅 2026-04-17</span>
+    <span class="doc-badge date">📅 2026-10-20</span>
   </div>
   <div class="doc-header-right">
     <a href="../../ko/organizations/lch.html" class="doc-lang-btn">🇰🇷 한국어 리포트 보기</a>

@@ -1,7 +1,7 @@
 ---
 title: "CME Clearing (CME 청산소)"
 subtitle: "청산결제 > 청산기관"
-date: "2026-04-17"
+date: "2026-10-20"
 lang: ko
 toc: true
 toc-depth: 3
@@ -18,7 +18,7 @@ format:
   <div class="doc-header-left">
     <span class="doc-badge category">📁 청산·결제 &gt; 한국어 리포트</span>
     <span class="doc-badge tier">⭐ TIER 1 공식자료 기반</span>
-    <span class="doc-badge date">📅 2026-04-07</span>
+    <span class="doc-badge date">📅 2026-10-20</span>
   </div>
   <div class="doc-header-right">
     <a href="../../en/organizations/cme_clearing.html" class="doc-lang-btn">🌐 Read in English</a>

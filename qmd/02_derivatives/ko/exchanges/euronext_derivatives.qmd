@@ -1,7 +1,7 @@
 ---
 title: "Euronext Derivatives (유로넥스트 파생상품)"
 subtitle: "파생상품 > 거래소"
-date: "2026-04-17"
+date: "2026-10-20"
 lang: ko
 toc: true
 toc-depth: 3
@@ -18,7 +18,7 @@ format:
   <div class="doc-header-left">
     <span class="doc-badge category">📁 파생상품 &gt; 한국어 리포트</span>
     <span class="doc-badge tier">⭐ TIER 2 공식자료 기반</span>
-    <span class="doc-badge date">📅 2026-04-07</span>
+    <span class="doc-badge date">📅 2026-10-20</span>
   </div>
   <div class="doc-header-right">
     <a href="../../en/exchanges/euronext_derivatives.html" class="doc-lang-btn">🌐 Read in English</a>

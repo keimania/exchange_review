@@ -1,7 +1,7 @@
 ---
 title: "글로벌 파생상품시장 — 비교 분석 (Global Derivatives Markets -- Comparative Analysis)"
 subtitle: "파생상품"
-date: "2026-04-17"
+date: "2026-10-20"
 lang: ko
 toc: true
 toc-depth: 3
@@ -18,7 +18,7 @@ format:
   <div class="doc-header-left">
     <span class="doc-badge category">📁 파생상품 &gt; 한국어 리포트</span>
     <span class="doc-badge tier">📑 심층 분석 리포트</span>
-    <span class="doc-badge date">📅 2026-04-13</span>
+    <span class="doc-badge date">📅 2026-10-20</span>
   </div>
   <div class="doc-header-right">
     <a href="../en/02_comparative_analysis.html" class="doc-lang-btn">🌐 Read in English</a>

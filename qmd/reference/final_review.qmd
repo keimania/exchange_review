@@ -1,7 +1,7 @@
 ---
 title: "Final Review: Global Exchange Research — Cross-Domain Analysis & KRX Benchmarking"
 subtitle: "Reference"
-date: "2026-04-17"
+date: "2026-10-20"
 lang: en
 toc: true
 toc-depth: 3
@@ -18,7 +18,7 @@ format:
   <div class="doc-header-left">
     <span class="doc-badge category">📁 Reference &gt; Benchmarking</span>
     <span class="doc-badge tier">📑 In-Depth Research</span>
-    <span class="doc-badge date">📅 2026-04-13</span>
+    <span class="doc-badge date">📅 2026-10-20</span>
   </div>
   <div class="doc-header-right">
     <a href="ko/final_review.html" class="doc-lang-btn">🇰🇷 한국어 리포트 보기</a>
@@ -665,6 +665,51 @@ The following items remain [unverified] after KRX deep-dive research and require
 6. KSD current assets under custody (KRW 3,149T figure is from 2014)
 7. KRX extended trading hours plans beyond current off-hours session
 8. KRX T+1 settlement migration timeline (under active review)
+
+---
+
+## 4. October 2026 Regulatory & Market Infrastructure Updates (2026 Q4 Review)
+
+As of **October 20, 2026**, global exchange and post-trade infrastructures have reached critical milestones across multi-venue competition, shortened settlement cycles (T+1), 24/5 extended trading hours, algorithmic surveillance, and mandatory operational resilience frameworks.
+
+### 4.1 Korean Capital Market: Nextrade ATS Integration and IT Modernization
+1. **Nextrade (ATS) Market Maturation & Smart Order Routing (SOR)**:
+   - Launched in March 2025, Nextrade (Korea's first Alternative Trading System) has secured a stable 10–15% market share in KOSPI/KOSDAQ benchmark constituents as of October 2026.
+   - Brokers operate mature Smart Order Routing (SOR) engines to fulfill Best Execution mandates, dynamically splitting orders between KRX and Nextrade across extended operating hours (08:00 to 20:00 KST).
+   - In response, KRX successfully integrated Midpoint and Stop-Limit order types and recalibrated Maker-Taker fee schedules to sustain lit market liquidity.
+
+2. **National Short-sale Detecting System (NSDS) Full Operation**:
+   - Following the resumption of short selling in March 2025, KRX's central NSDS platform operates in real-time, cross-referencing institutional internal balance-tracking systems and electronic stock-lending records to systematically prevent naked short selling.
+
+3. **Corporate Value-Up Program & Korea Value-Up Index**:
+   - Corporate value enhancement disclosures have matured, with Korea Value-Up Index ETFs and futures contracts serving as institutional benchmarks to address the structural Korea Discount.
+
+4. **KSD & KRX T+1 Settlement Roadmap**:
+   - Building upon split-settlement reforms (effective April 2026 in KRW 1 billion increments), KSD and KRX are collaborating with the FSC on formal timelines for full T+1 cash equities migration.
+
+### 4.2 North American Markets: T+1 Settlement Maturity & 24/5 Trading Venues
+1. **Two-Year Milestone of U.S. T+1 Settlement**:
+   - Following the May 2024 implementation across the U.S., Canada, and Mexico, trade fail rates have stabilized below 2% as of October 2026. DTCC reports consistent same-day affirmation rates exceeding 95%, generating billions in annual margin efficiency.
+2. **SEC-Approved 24/5 Stock Exchanges & Extended Sessions**:
+   - With SEC regulatory approval of venues such as 24X National Exchange, NYSE (Pillar 22-hour weekday trading initiatives) and NASDAQ have expanded retail and global cross-border trading windows for international investors.
+3. **U.S. Treasury Central Clearing Mandate**:
+   - Phased implementation of mandatory UST cash and repo clearing at FICC/DTCC is actively reducing counterparty risk across government debt markets.
+
+### 4.3 European Markets: October 2027 T+1 Harmonization & DORA Enforcement
+1. **Coordinated October 2027 T+1 Go-Live**:
+   - ESMA and the UK FCA/Treasury have confirmed a synchronized October 2027 transition date across the EU, UK, and Switzerland, supported by pan-European testing playbooks active as of Q4 2026.
+2. **DORA (Digital Operational Resilience Act) Enforcement**:
+   - In full effect since January 2025, DORA mandates rigorous Threat-Led Penetration Testing (TLPT) and ICT third-party risk management across all trading venues, CCPs, and major cloud providers (AWS, Azure, GCP).
+3. **EMIR 3.0 Active Account Requirement (AAR)**:
+   - Mandatory operational clearing accounts at EU-based CCPs have bolstered Eurex Clearing’s share of euro-denominated interest rate swaps.
+
+### 4.4 Asia-Pacific Highlights: Extended Trading & Severe Weather Operations
+1. **TSE/JPX 30-Minute Extension & Closing Auction**:
+   - TSE's extension to 15:30 JST with a 5-minute Closing Auction has completed nearly two years of operation, significantly deepening end-of-day market liquidity.
+2. **HKEX Severe Weather Trading (SWT)**:
+   - HKEX's non-stop electronic trading during Typhoon Signal No. 8 and Black Rainstorms has cemented Hong Kong's competitive parity with global continuous trading hubs.
+3. **India (NSE/BSE) Optional T+0 Settlement**:
+   - Same-day settlement mechanics continue to serve as an architectural reference for global instant-clearing initiatives.
 
 ---
 

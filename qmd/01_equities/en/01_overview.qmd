@@ -1,7 +1,7 @@
 ---
 title: "Global Equities Markets — Overview"
 subtitle: "Equities"
-date: "2026-04-17"
+date: "2026-10-20"
 lang: en
 toc: true
 toc-depth: 3
@@ -18,7 +18,7 @@ format:
   <div class="doc-header-left">
     <span class="doc-badge category">📁 Equities &gt; English Research</span>
     <span class="doc-badge tier">📑 In-Depth Research</span>
-    <span class="doc-badge date">📅 2026-04-17</span>
+    <span class="doc-badge date">📅 2026-10-20</span>
   </div>
   <div class="doc-header-right">
     <a href="../ko/01_overview.html" class="doc-lang-btn">🇰🇷 한국어 리포트 보기</a>
@@ -299,7 +299,7 @@ Hybrid markets combine elements of both order-driven and quote-driven structures
 - **India (NSE/BSE):** Demat account openings surged; retail participation growing rapidly in both cash and derivatives markets.
 - **U.S.:** Post-2020 retail surge (commission-free trading, fractional shares, social media-driven). NYSE introduced Retail Price Improvement (RPI) orders.
 - **Saudi Arabia:** QFI restrictions abolished (February 2026); previously retail-dominated market opening to foreign flows.
-- **Korea:** High retail participation (~60-70% of turnover); KOSPI surged from 2,500 to 6,000 (Oct 2025 - Feb 2026); Nextrade (NXT) launched March 2025 as first alternative exchange; KRX introduced maker-taker fees (Dec 2025) in response to competition.
+- **Korea:** High retail participation (~60-70% of turnover); KOSPI surged from 2,500 to 6,000 (Oct 2025 - Feb 2026); Nextrade (NXT) launched March 2025 as first alternative exchange, reaching a 10–15% market share by October 2026; broker Smart Order Routing (SOR) fully operational; KRX introduced maker-taker fees (Dec 2025), Midpoint & Stop-Limit orders, and full operation of the National Short-sale Detecting System (NSDS) alongside T+1 roadmap planning as of October 2026.
 - **Taiwan:** High retail participation (~60-70% of turnover) with active options/derivatives retail trading.
 
 ### 6.6 AI/ML in Surveillance and Trading
