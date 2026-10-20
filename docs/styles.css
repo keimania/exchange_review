@@ -835,3 +835,310 @@ p:has(> a[href*="http"]), p a[href*="http"] {
     font-size: 0.86rem;
   }
 }
+
+/* ==========================================================================
+   Collapsible Sidebars, Focus Mode & Tablet Responsive Reading Enhancements
+   ========================================================================== */
+
+/* Transition for layout transitions */
+#quarto-sidebar, 
+.page-columns .content,
+#quarto-margin-sidebar,
+#quarto-content {
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 1. Left Sidebar Collapsed State */
+body.sidebar-left-collapsed #quarto-sidebar {
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+  display: none !important;
+}
+
+body.sidebar-left-collapsed .page-columns .content {
+  grid-column-start: screen-start-inset !important;
+}
+
+body.sidebar-left-collapsed #handle-sidebar-left {
+  display: flex !important;
+}
+
+/* 2. Right TOC Sidebar Collapsed State */
+body.sidebar-right-collapsed #quarto-margin-sidebar {
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  display: none !important;
+}
+
+body.sidebar-right-collapsed .page-columns .content {
+  grid-column-end: screen-end-inset !important;
+}
+
+body.sidebar-right-collapsed #handle-sidebar-right {
+  display: flex !important;
+}
+
+/* 3. Both Collapsed or Focus Mode (Ultra-wide comfortable reading) */
+body.focus-mode-enabled #quarto-sidebar,
+body.focus-mode-enabled #quarto-margin-sidebar,
+body.sidebar-left-collapsed.sidebar-right-collapsed #quarto-sidebar,
+body.sidebar-left-collapsed.sidebar-right-collapsed #quarto-margin-sidebar {
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  overflow: hidden !important;
+  display: none !important;
+}
+
+body.focus-mode-enabled #quarto-content,
+body.sidebar-left-collapsed.sidebar-right-collapsed #quarto-content {
+  display: block !important;
+  max-width: 1300px !important;
+  margin: 0 auto !important;
+  padding: 0 2rem !important;
+}
+
+body.focus-mode-enabled .page-columns .content,
+body.sidebar-left-collapsed.sidebar-right-collapsed .page-columns .content {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+body.focus-mode-enabled #handle-sidebar-left,
+body.focus-mode-enabled #handle-sidebar-right,
+body.sidebar-left-collapsed.sidebar-right-collapsed #handle-sidebar-left,
+body.sidebar-left-collapsed.sidebar-right-collapsed #handle-sidebar-right {
+  display: flex !important;
+}
+
+/* 4. Top Document View Controller Toolbar */
+.doc-view-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0.85rem;
+  margin: 0.5rem 0 1rem 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.view-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.view-toolbar-label {
+  font-weight: 700;
+  color: #475569;
+  font-size: 0.82rem;
+  margin-right: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.view-tool-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.view-tool-btn:hover {
+  background: var(--primary-subtle);
+  color: var(--primary-light);
+  border-color: #93c5fd;
+  transform: translateY(-1px);
+}
+
+.view-tool-btn.active {
+  background: #dbeafe;
+  color: #1e40af;
+  border-color: #3b82f6;
+  font-weight: 700;
+}
+
+.view-tool-btn.focus-btn {
+  background: linear-gradient(135deg, #f0fdf4 0%, #e2fbe8 100%);
+  border-color: #86efac;
+  color: #15803d;
+}
+
+.view-tool-btn.focus-btn:hover {
+  background: #bbf7d0;
+  border-color: #4ade80;
+  color: #14532d;
+}
+
+.view-tool-btn.focus-btn.active {
+  background: #16a34a;
+  border-color: #15803d;
+  color: #ffffff;
+}
+
+.view-toolbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.view-toolbar-hint {
+  font-size: 0.76rem;
+  color: #64748b;
+}
+
+/* 5. Floating Edge Dock Handles (Quick-expand when collapsed) */
+.edge-dock-handle {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1040;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #1e3a8a;
+  border: 1px solid #93c5fd;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.15);
+  padding: 0.85rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.05em;
+}
+
+.edge-dock-handle:hover {
+  background: #eff6ff;
+  color: #2563eb;
+  border-color: #3b82f6;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
+  padding: 0.85rem 0.65rem;
+}
+
+.edge-dock-handle .handle-icon {
+  font-size: 0.95rem;
+  color: #2563eb;
+  font-weight: 800;
+}
+
+.edge-dock-handle .handle-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.left-handle {
+  left: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: none;
+}
+
+.right-handle {
+  right: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: none;
+}
+
+.view-tool-btn.font-btn {
+  padding: 0.35rem 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  min-width: 30px;
+  justify-content: center;
+}
+
+.font-size-group {
+  display: inline-flex;
+  gap: 3px;
+  margin-left: 0.25rem;
+}
+
+/* ==========================================================================
+   6. Tablet & Intermediate Screen Optimization (768px ~ 1250px)
+   ========================================================================== */
+@media (min-width: 768px) and (max-width: 1250px) {
+  /* On tablets, auto-collapse right TOC by default so main content gets 100% of available reading area */
+  body.sidebar-right-collapsed #quarto-margin-sidebar {
+    display: none !important;
+    width: 0 !important;
+  }
+
+  /* When TOC is opened on tablet, slide in as a floating overlay drawer without compressing the article */
+  body:not(.sidebar-right-collapsed) #quarto-margin-sidebar {
+    position: fixed !important;
+    top: 60px !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 310px !important;
+    max-width: 85vw !important;
+    background: #ffffff !important;
+    box-shadow: -8px 0 28px rgba(15, 23, 42, 0.16) !important;
+    z-index: 1060 !important;
+    padding: 1.5rem !important;
+    overflow-y: auto !important;
+    border-left: 2px solid var(--primary-light) !important;
+    display: block !important;
+  }
+  
+  .page-columns .content {
+    grid-column-end: screen-end-inset !important;
+    max-width: 100% !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  /* Left sidebar on tablet */
+  #quarto-sidebar {
+    width: 240px !important;
+    min-width: 240px !important;
+  }
+
+  /* When left sidebar is collapsed on tablet, content uses full screen width */
+  body.sidebar-left-collapsed .page-columns .content {
+    grid-column-start: screen-start-inset !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  /* Show TOC handle on tablet so user can inspect it if needed */
+  #handle-sidebar-right {
+    display: flex !important;
+  }
+}
