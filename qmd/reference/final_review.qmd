@@ -343,7 +343,7 @@ Korea Exchange (KRX) operates as an integrated exchange covering equities (KOSPI
 
 **Assessment:**
 - **KRX leads:** Removal of lunch break (since 2000) — ahead of all Asian peers. Price limit system (+/-30%) well-calibrated
-- **KRX response:** While KRX off-hours trading remains 16:00-18:00 (contrasting with Nextrade's 08:00-20:00), Nextrade (NXT) ATS launched in March 2025 and has established an active 10–15% market share with broker Smart Order Routing (SOR) and new KRX Midpoint/Stop-Limit orders in operation.
+- **KRX response:** Expanding beyond legacy off-hours trading (16:00–18:00), KRX has implemented the equity and ETF After-Market session (16:00–20:00 KST) in 2026, establishing 12-hour dual-venue parity with Nextrade (08:00–20:00) alongside broker SOR integration and new Midpoint/Stop-Limit order types.
 
 #### Settlement Comparison
 
@@ -470,7 +470,7 @@ Korea Exchange (KRX) operates as an integrated exchange covering equities (KOSPI
 | **Cross-margining** | Limited to spread margins and mandated OTC IRS/CRS; no cross-CCP arrangements | Medium | CME-FICC, Eurex PRISMA (comprehensive ETD/OTC) |
 | **CCP recovery tools** | No VMGH or forced allocation documented; only assessment powers | Medium | LCH (VMGH, tear-up, auction), Eurex (VMGH, cash calls) |
 | **Dark pool/alternative venues** | Nextrade (NXT) ATS launched (2025.3) establishing multi-venue competition (10–15% market share) & SOR operational | Low-Medium | US (15%+ dark), EU (10%+ dark/SI) |
-| **Extended trading hours** | Off-hours 16:00-18:00 (vs NXT 08:00-20:00); domestic derivatives night session (18:00-06:00, 10 products) operational | Low-Medium | NYSE (22-hour planned), CME Globex (~23 hours) |
+| **Extended trading hours** | Equity After-market (16:00-20:00) establishing 12-hour parity with NXT; domestic derivatives night session (18:00-06:00, 10 products) operational | Medium | NYSE (22-hour planned), CME Globex (~23 hours) |
 | **Cloud migration** | No announced plans | Low | CME (Google Cloud 2026-28), LCH (AWS), Eurex (Google Cloud) |
 
 #### Recommended Priority Actions for KRX

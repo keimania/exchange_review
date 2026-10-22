@@ -689,7 +689,7 @@ ul.task-list li input[type="checkbox"] {
     글로벌 24시간 매매세션 타임라인
   </div>
   <p class="timeline-desc">
-    한국거래소(KRX 정규장 09:00~15:30 및 자체 파생 야간거래 18:00~06:00), 넥스트레이드(Nextrade ATS 08:00~20:00), 그리고 아시아·유럽·북미 주요 12대 거래소의 장전·정규·장후·야간 세션이 맞물리는 <strong>글로벌 24시간 유동성 중첩 구간</strong>을 시각화합니다.
+    한국거래소(KRX 정규장 09:00~15:30, 주식 애프터마켓 15:30~20:00 및 자체 파생 야간거래 18:00~06:00), 넥스트레이드(Nextrade ATS 08:00~20:00), 그리고 아시아·유럽·북미 주요 12대 거래소의 장전·정규·장후·야간 세션이 맞물리는 <strong>글로벌 24시간 유동성 중첩 구간</strong>을 시각화합니다.
   </p>
 </div>
 
@@ -787,7 +787,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="overlap-badge afternoon">☕ 오후 유럽 개장 중첩</span>
     <div class="overlap-time">15:30 ~ 18:00 KST</div>
     <p class="overlap-desc">
-      <strong>KRX 정규장 마감 후 시간외 매매</strong> 및 <strong>넥스트레이드 애프터마켓(15:30~20:00)</strong>이 런던(LSE), 프랑크푸르트(Xetra), 파리(Euronext)의 정규장 개장(한국시간 17:00)과 맞물려 유럽발 거시경제 지표 발표에 따른 가격 변동이 발생합니다.
+      <strong>KRX 주식 애프터마켓</strong> 및 <strong>넥스트레이드 애프터마켓(15:30~20:00)</strong>이 런던(LSE), 프랑크푸르트(Xetra), 파리(Euronext)의 정규장 개장(한국시간 17:00)과 맞물려 유럽발 거시경제 지표 발표에 따른 가격 변동이 발생합니다.
     </p>
   </div>
 
@@ -796,7 +796,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="overlap-badge evening">🌆 저녁 골든 타임</span>
     <div class="overlap-time">18:00 ~ 20:00 KST</div>
     <p class="overlap-desc">
-      <strong>KRX 파생상품 자체 야간거래 개장</strong>(18:00)과 넥스트레이드 주식 야간매매(20:00까지), 유럽 본장 피크 타임 및 미국 정규장 개장 전 장전(Pre-market) 주문이 결합하여 지수 선물 및 외환 상품의 1차 야간 유동성 피크가 형성됩니다.
+      <strong>KRX 주식 애프터마켓 &amp; 넥스트레이드 주식 야간매매(20:00까지)</strong>와 <strong>KRX 파생상품 자체 야간거래(18:00~)</strong>가 유럽 본장 피크 타임 및 미국 정규장 개장 전 장전(Pre-market) 주문과 결합하여 한국 주식·파생상품의 1차 야간 유동성 피크가 형성됩니다.
     </p>
   </div>
 
@@ -821,14 +821,15 @@ const MARKETS = [
   {
     id: "krx_eq",
     name: "🇰🇷 KRX 한국거래소 (주식)",
-    sub: "KOSPI / KOSDAQ Lit Market",
+    sub: "KOSPI · KOSDAQ (애프터마켓 ~20:00)",
     utcOpen: 0 * 60, // 09:00 KST = 00:00 UTC
-    utcClose: 6.5 * 60, // 15:30 KST = 06:30 UTC
+    utcClose: 11 * 60, // 20:00 KST = 11:00 UTC (애프터마켓 포함)
     sessions: [
       { start: -30, end: 0, type: "pre", label: "시가단일가 (08:30-09:00)" },
       { start: 0, end: 380, type: "regular", label: "정규접속매매 (09:00-15:20)" },
       { start: 380, end: 390, type: "close", label: "종가단일가 (15:20-15:30)" },
-      { start: 400, end: 540, type: "post", label: "시간외 (15:40-18:00)" }
+      { start: 390, end: 420, type: "post", label: "장후시간외 (15:30-16:00)" },
+      { start: 420, end: 660, type: "post", label: "애프터마켓 (16:00-20:00)" }
     ]
   },
   {

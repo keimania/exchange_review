@@ -122,7 +122,7 @@ format:
       <div class="ex-card-meta">
         • 시가총액: 약 4,277조 원 (USD 2.95조)<br>
         • 매매엔진: <strong>EXTURE 3.0</strong> (Exture+)<br>
-        • 특징: 단일가매매, 정적/동적 VI, 3단계 서킷브레이커
+        • 특징: 단일가매매, 정적/동적 VI, 애프터마켓(20:00까지) 연장운영
       </div>
     </div>
     <div class="ex-card-actions">

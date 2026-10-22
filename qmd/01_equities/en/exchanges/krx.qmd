@@ -103,8 +103,9 @@ format:
 | Post-market closing-price trading | 15:30 - 16:00 | 06:30 - 07:00 | Trades at closing price [업무규정 시행세칙 Art. 11] |
 | Post-market single-price trading (시간외단일가매매) | 16:00 - 18:00 | 07:00 - 09:00 | Call auction at 10-minute intervals; +/-10% of closing price [업무규정 Art. 34의2] |
 | Post-market block/basket trading | 15:40 - 18:00 | 06:40 - 09:00 | Off-hours block and basket trades |
+| **After-Market Trading (애프터마켓)** | **16:00 - 20:00** | **07:00 - 11:00** | **Extended equity & ETF trading session (up to 20:00 KST) in response to Nextrade ATS** |
 
-**Total trading window:** 08:00 - 18:00 KST (10 hours including off-hours sessions)
+**Total trading window:** 08:00 - 20:00 KST (12 hours including After-market session)
 
 [Source: 유가증권시장 업무규정 Art. 4; 업무규정 시행세칙 Art. 8, 11]
 
@@ -543,8 +544,8 @@ First fee structure change in 20 years; initially a 2-month trial, introduced in
 - **Self-trade prevention:** Made mandatory for HFT participants
 
 ### Strategic Initiatives
-- **Extended trading hours:** Plan for 12-hour trading; pre-market 07:00-08:00, after-hours 16:00-20:00; targeting 24-hour trading by December 2027
-- **ETF pre/after-market trading:** September 2026 launch for KRX; November for NXT
+- **Extended trading hours (After-Market launched):** Implemented After-market extended trading (16:00–20:00 KST) for equities and ETFs in 2026 to establish 12-hour dual-venue parity against Nextrade ATS, with a multi-year roadmap targeting 24-hour trading capability by Dec 2027
+- **ETF pre/after-market trading:** September 2026 operationalized for KRX; November integrated for NXT
 - **T+1 settlement study:** KRX inspecting North America's T+1 experience (WFE CLEAR 2026 conference, Toronto); concerns about foreign investor time zone challenges
 - **KOSPI milestones:** 3,549 (Oct 2025), 4,000 (Oct 2025), 5,000 (Jan 2026), 6,000 (Feb 2026)
 

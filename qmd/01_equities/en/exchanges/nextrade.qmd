@@ -274,7 +274,7 @@ sequenceDiagram
 
 1. **Catalyst for KRX Engine Acceleration:** Direct competition with Nextrade motivated KRX to upgrade EXTURE 3.0 to single-digit microsecond latencies (8.6 μs) with kernel-bypass and FPGA accelerations.
 2. **Accelerated Order Type Modernization:** Prompted KRX to introduce Midpoint and Stop-Limit orders and implement maker-taker fee pricing.
-3. **Paving the Way for 24-Hour Trading:** The operational success of Nextrade's 12-hour session (08:00–20:00) provides the domestic benchmark for KRX's broader extended trading roadmap.
+3. **Paving the Way for 24-Hour Trading:** Prompted by Nextrade's 12-hour continuous session (08:00–20:00), KRX launched its own equity & ETF After-Market (16:00–20:00 KST) to achieve competitive 12-hour dual-market parity, accelerating the capital market roadmap toward full 24-hour continuous trading capability.
 
 ---
 

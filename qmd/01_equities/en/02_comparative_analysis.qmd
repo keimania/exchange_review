@@ -90,7 +90,7 @@ format:
 | Tadawul | Order-driven | Open (random), Close (random) | 10:00-15:00 AST | 07:00-12:00 | No | Tiered by price (6 bands) | 1 share |
 | JSE | Order-driven | Open, Close, Intraday, Volatility | 09:00-17:00 SAST | 07:00-15:00 | No | Flat (1 cent minimum) | 1 share |
 | Bursa Malaysia | Order-driven | Open (AM/PM), Close | 09:00-17:00 MYT | 01:00-09:00 | Yes (1.5 hrs) | Tiered by price (2 bands) | 100 shares |
-| **KRX (KOSPI)** | **Order-driven + LP/MM** | **Open call, Close call, VI auction** | **09:00-15:30 KST (08:00-18:00 incl. off-hours)** | **00:00-06:30 (23:00-09:00 incl. off-hours)** | **No** | **Tiered by price (7 bands)** | **1 share** |
+| **KRX (KOSPI)** | **Order-driven + LP/MM** | **Open call, Close call, VI auction, After-market** | **09:00-15:30 KST (08:00-20:00 incl. After-market)** | **00:00-06:30 (23:00-11:00 incl. After-market)** | **No** | **Tiered by price (7 bands)** | **1 share** |
 | **Nextrade (NXT)** | **Order-driven (Alternative Exchange ATS)** | **Continuous trading (call auctions omitted)** | **08:00-20:00 KST (12-hour session)** | **23:00-11:00 UTC** | **No** | **Finer tick sizes (KRW 1 for KRW 1k–5k)** | **1 share** |
 
 **Key Observations:**
