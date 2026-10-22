@@ -1,0 +1,877 @@
+---
+title: "글로벌 거래소 1:1 및 다자간 맞춤 비교기 (Exchange Comparator)"
+subtitle: "Visual Analytics & Benchmarking"
+date: "2026-10-22"
+lang: ko
+toc: false
+page-layout: full
+format:
+  html:
+    theme: cosmo
+    css: ../../styles.css
+    self-contained: false
+---
+
+```{=html}
+<style>
+/* Comparator Component Styling */
+.comparator-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: #ffffff;
+  padding: 2.2rem 2rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.3);
+}
+
+.comparator-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.85rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #93c5fd;
+}
+
+.comparator-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.comparator-desc {
+  font-size: 0.98rem;
+  color: #cbd5e1;
+  max-width: 900px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Control Panel */
+.comp-control-panel {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.comp-section-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comp-preset-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.preset-chip {
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #1e293b;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.preset-chip:hover {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.preset-chip.active {
+  background: #1e3a8a;
+  border-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.ex-select-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ex-pill {
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.ex-pill:hover {
+  border-color: #93c5fd;
+  background: #f0fdf4;
+}
+
+.ex-pill.selected {
+  background: #eff6ff;
+  border-color: #2563eb;
+  color: #1e3a8a;
+  box-shadow: 0 0 0 1px #2563eb;
+}
+
+.ex-pill .pill-check {
+  font-size: 0.75rem;
+  color: #2563eb;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.ex-pill.selected .pill-check {
+  opacity: 1;
+}
+
+/* Category Tabs & Options Bar */
+.comp-options-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.comp-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.comp-tab-btn {
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.comp-tab-btn:hover {
+  color: #1e293b;
+  background: #f1f5f9;
+}
+
+.comp-tab-btn.active {
+  background: #1e3a8a;
+  color: #ffffff;
+}
+
+.comp-toggles {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toggle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+}
+
+/* Comparison Matrix Container */
+.comparison-matrix-wrapper {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+}
+
+.comp-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9rem;
+}
+
+.comp-table th, .comp-table td {
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid #f1f5f9;
+  border-right: 1px solid #f1f5f9;
+  vertical-align: top;
+}
+
+.comp-table th:last-child, .comp-table td:last-child {
+  border-right: none;
+}
+
+.comp-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comp-header-row th {
+  background: #f8fafc;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #cbd5e1;
+}
+
+.comp-attr-col {
+  width: 220px;
+  min-width: 200px;
+  background: #f8fafc;
+  font-weight: 700;
+  color: #334155;
+  border-right: 2px solid #e2e8f0 !important;
+}
+
+.comp-ex-header {
+  min-width: 260px;
+  padding: 1.2rem 1rem !important;
+  text-align: left;
+}
+
+.comp-ex-header.featured-krx {
+  background: #eff6ff !important;
+  border-top: 3px solid #2563eb;
+}
+
+.comp-header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.comp-header-sub {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin-bottom: 0.65rem;
+}
+
+.comp-header-links {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.comp-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: #e2e8f0;
+  color: #334155;
+  transition: var(--transition);
+}
+
+.comp-link-btn:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.comp-group-header {
+  background: #f1f5f9;
+  font-weight: 800;
+  color: #1e3a8a;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.6rem 1.1rem !important;
+}
+
+.comp-diff-highlight {
+  background: #fefce8 !important;
+}
+
+.comp-badge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.badge-lead {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.badge-lag {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.badge-neutral {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.empty-state {
+  padding: 3rem;
+  text-align: center;
+  color: #64748b;
+}
+</style>
+
+<div class="comparator-hero">
+  <div class="comparator-hero-badge">
+    <span>📊 Interactive Tool</span>
+    <span>•</span>
+    <span>KRX Benchmarking Engine</span>
+  </div>
+  <div class="comparator-title">
+    글로벌 거래소 맞춤 1:1 및 다자간 비교기
+  </div>
+  <p class="comparator-desc">
+    KRX 한국거래소 및 넥스트레이드(Nextrade ATS)를 포함한 <strong>글로벌 16대 핵심 거래소·청산기관</strong>의 매매엔진 스펙, 지연시간, 호가 유형, 매매세션, 변동성 완화장치, 결제주기 및 증거금 모델을 나란히 선택하여 즉시 교차 비교할 수 있습니다.
+  </p>
+</div>
+
+<!-- Control Panel -->
+<div class="comp-control-panel">
+  <!-- Presets -->
+  <div class="comp-section-title">
+    <span>💡 추천 비교 프리셋 (Quick Presets)</span>
+    <span style="font-size: 0.8rem; color: #94a3b8; font-weight: normal;">* 최대 4개소 동시 비교 권장</span>
+  </div>
+  <div class="comp-preset-bar">
+    <button class="preset-chip active" onclick="applyPreset('kr_nxt')">🇰🇷 KRX vs 넥스트레이드 (정규 vs ATS)</button>
+    <button class="preset-chip" onclick="applyPreset('asia4')">🌏 아시아 4대 거래소 (KRX · JPX · HKEX · SGX)</button>
+    <button class="preset-chip" onclick="applyPreset('global_equity')">🇺🇸 글로벌 3대 주식 (KRX · NYSE · NASDAQ)</button>
+    <button class="preset-chip" onclick="applyPreset('derivatives')">📈 글로벌 3대 파생 (KRX · CME · Eurex)</button>
+    <button class="preset-chip" onclick="applyPreset('clearing')">🛡️ 4대 청산결제 (KSD · DTCC · Euroclear · JSCC)</button>
+  </div>
+
+  <!-- Exchange Picker -->
+  <div class="comp-section-title">
+    <span>🏛️ 비교 대상 거래소 선택 (클릭하여 추가/해제)</span>
+    <button class="btn btn-sm btn-outline-secondary" onclick="resetSelection()" style="font-size: 0.78rem; padding: 0.15rem 0.5rem;">선택 초기화</button>
+  </div>
+  <div class="ex-select-grid" id="exchangePicker">
+    <!-- Generated dynamically via JS -->
+  </div>
+
+  <!-- Options & Tabs -->
+  <div class="comp-options-bar">
+    <div class="comp-tabs" id="categoryTabs">
+      <button class="comp-tab-btn active" onclick="setCategory('all', this)">전체 항목</button>
+      <button class="comp-tab-btn" onclick="setCategory('it', this)">⚡ 체결엔진 & IT</button>
+      <button class="comp-tab-btn" onclick="setCategory('trading', this)">📋 매매제도 & 호가</button>
+      <button class="comp-tab-btn" onclick="setCategory('risk', this)">🛡️ 변동성 & 리스크</button>
+      <button class="comp-tab-btn" onclick="setCategory('clearing', this)">🔄 청산·결제 & CSD</button>
+    </div>
+
+    <div class="comp-toggles">
+      <label class="toggle-label">
+        <input type="checkbox" id="diffHighlightToggle" onchange="renderMatrix()">
+        <span>⚠️ 차이점만 강조</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<!-- Comparison Matrix Output -->
+<div class="comparison-matrix-wrapper" id="matrixContainer">
+  <!-- Table injected by JS -->
+</div>
+
+<script>
+// Exchange Database for Comparator
+const EXCHANGES_DB = {
+  "krx": {
+    name: "KRX 한국거래소",
+    nativeName: "Korea Exchange",
+    country: "대한민국 🇰🇷",
+    type: "통합 거래소 (주식/파생/채권)",
+    reportKo: "../01_equities/ko/exchanges/krx.html",
+    reportEn: "../01_equities/en/exchanges/krx.html",
+    engine: "Exture 3.0 (Koscom 자체개발)",
+    latency: "~49 μs (초저지연, 2023년 업그레이드)",
+    throughput: "일 최대 1.5억 건 이상 처리",
+    tradingHours: "09:00 - 15:30 (점심휴장 없음)\n시간외: 08:30-09:00, 15:40-18:00",
+    nightTrading: "파생상품 자체 야간거래(18:00-06:00, 10개 상품) 운용 정착",
+    orderTypes: "지정가, 시장가, 조건부지정가, 최유리지정가, 최우선지정가, 중간가, 스톱지정가",
+    tickSize: "주가별 1원 ~ 1,000원 구간별 세분화 호가단위",
+    volatilityCtrl: "동적 VI (2~3%), 정적 VI (10%), 사이드카 (5%), 서킷브레이커 (8/15/20% 3단계)",
+    settlementCycle: "T+2 (주식/ETF), 분할결제 10억 원 단위 정착 및 T+1 로드맵 추진",
+    clearingCCP: "KRX 내부 CCP (통합 청산부서, 자기부담금 SITG 4단계)",
+    marginModel: "KRX-SPAN (수정 SPAN 시나리오 모델; VaR 전환 검토 중)",
+    atsCompetition: "Nextrade ATS 출범(2025.3) 이후 10~15% 점유율 분산, 증권사 SOR 가동",
+    dltCloud: "토큰증권(ST) KSD 법정 중앙등록 연계, 온프레미스 고성능 클러스터"
+  },
+  "nextrade": {
+    name: "넥스트레이드 (Nextrade)",
+    nativeName: "Korea Alternative Trading System",
+    country: "대한민국 🇰🇷",
+    type: "대체거래소 (ATS, 다자간매매체결회사)",
+    reportKo: "../reference/ko/final_review.html#sec-4",
+    reportEn: "../reference/final_review.html#sec-4",
+    engine: "Nextrade Matching Engine (자체개발 저지연)",
+    latency: "서브밀리초 (마이크로초 수준 지연시간)",
+    throughput: "코스피·코스닥 주요 800여 종목 대상 집중",
+    tradingHours: "08:00 - 20:00 (12시간 거래)\nPre 08:00-08:50, Regular 09:00-15:30, After 15:30-20:00",
+    nightTrading: "08:00~20:00 연장 운영 (정규 거래소 전후 각 1~4.5시간 연장)",
+    orderTypes: "지정가, 시장가, 중간가호가 (Midpoint), 스톱호가 (Stop-limit)",
+    tickSize: "KRX와 동일 규격 적용 (증권사 SOR에 의한 최적 분기)",
+    volatilityCtrl: "KRX VI 및 매매거래중단 장치 실시간 연동 적용",
+    settlementCycle: "T+2 (KRX 청산 및 KSD 결제 인프라 공유)",
+    clearingCCP: "KRX 중앙청산 위탁 (자체 CCP 미운영)",
+    marginModel: "KRX 증거금 체계 연동",
+    atsCompetition: "한국 최초 ATS (2025.3 출범, 거래대금 10~15% 점유율 안착)",
+    dltCloud: "스마트오더라우팅(SOR) 연계 금융망 기반"
+  },
+  "nyse": {
+    name: "NYSE 뉴욕증권거래소",
+    nativeName: "New York Stock Exchange",
+    country: "미국 🇺🇸",
+    type: "전통 하이브리드 주식거래소",
+    reportKo: "../01_equities/ko/exchanges/nyse.html",
+    reportEn: "../01_equities/en/exchanges/nyse.html",
+    engine: "NYSE Pillar (ICE 자체개발 일원화 플랫폼)",
+    latency: "21 ~ 40 μs (바이너리 게이트웨이 기준)",
+    throughput: "일평균 15억 주 이상, 피크 수십억 건",
+    tradingHours: "09:30 - 16:00 ET (점심휴장 없음)\nPre 04:00-09:30, Post 16:00-20:00",
+    nightTrading: "NYSE Arca 22시간 매매(01:30-23:30 ET) 단계적 운용",
+    orderTypes: "Market, Limit, DMM 재량(D-Quote), Midpoint, Retail Liquidity (RLP)",
+    tickSize: "1센트 ($0.01) / Reg NMS 개정 0.5센트 서브페니",
+    volatilityCtrl: "LULD (Limit-Up Limit-Down 5~10%), Market-Wide CB (7/13/20%)",
+    settlementCycle: "T+1 (2024년 5월 완전 정착)",
+    clearingCCP: "DTCC (NSCC 다자간 차감 결제 98% 감축)",
+    marginModel: "Portfolio Margin (VaR 기반 청산기금 및 TIMS)",
+    atsCompetition: "초경쟁 (16개 정규거래소 + 30개 이상 ATS/다크풀, 오프익스체인지 40%+)",
+    dltCloud: "AWS 클라우드 하이브리드 감시, RegSCI 컴플라이언스"
+  },
+  "nasdaq": {
+    name: "NASDAQ 나스닥",
+    nativeName: "Nasdaq Stock Market",
+    country: "미국 🇺🇸",
+    type: "완전 전자식 주식/파생 거래소",
+    reportKo: "../01_equities/ko/exchanges/nasdaq.html",
+    reportEn: "../01_equities/en/exchanges/nasdaq.html",
+    engine: "Nasdaq Eqlipse / INET (4세대 엔진)",
+    latency: "< 40 μs (나노초 타임스탬프 지원)",
+    throughput: "초당 100만 건 이상 메시지 처리",
+    tradingHours: "09:30 - 16:00 ET (점심휴장 없음)\nPre 04:00-09:30, After 16:00-20:00",
+    nightTrading: "주 5일 23시간 거래 체계 (야간 21:00-04:00 ET)",
+    orderTypes: "Limit, Market, MELO (Midpoint Extended Life), Post-Only, Pegged",
+    tickSize: "$0.01 / 서브페니 중간가격 체결",
+    volatilityCtrl: "LULD (5/10%), MWCB (7/13/20%), 심볼별 Halt",
+    settlementCycle: "T+1 (DTCC NSCC 연계)",
+    clearingCCP: "DTCC (NSCC/DTC), 옵션은 OCC",
+    marginModel: "VaR 기반 청산기금 산정 (NSCC/OCC)",
+    atsCompetition: "초경쟁 (PFOF 리테일 플로우 내부화 경쟁 및 Maker-Taker 리베이트)",
+    dltCloud: "AWS Outposts 하이브리드 코로케이션, 토큰증권 거래 SEC 승인"
+  },
+  "jpx": {
+    name: "JPX / TSE 도쿄거래소",
+    nativeName: "Tokyo Stock Exchange",
+    country: "일본 🇯🇵",
+    type: "통합 거래소 (주식 arrowhead / 파생 J-GATE)",
+    reportKo: "../01_equities/ko/exchanges/jpx.html",
+    reportEn: "../01_equities/en/exchanges/jpx.html",
+    engine: "arrowhead 4.0 (Fujitsu PRIMERGY M6 462대)",
+    latency: "~0.2 ms (200 μs, 중앙값)",
+    throughput: "일 최대 수억 건 (용량 대폭 확충)",
+    tradingHours: "09:00 - 11:30, 12:30 - 15:30 (점심휴장 1시간 有)\n2024.11 30분 연장 및 종가단일가 도입",
+    nightTrading: "파생상품 J-GATE 야간거래 (16:30 - 익일 06:00)",
+    orderTypes: "지정가, 시장가, 조건부, 이타요세(단일가) 전용 호가",
+    tickSize: "TOPIX 100 소수점 호가 (0.1엔 단위) / 일반 종목 1엔~",
+    volatilityCtrl: "특별기배(特別気配, 갱신값폭) 및 연속기배, 서킷브레이커",
+    settlementCycle: "T+2 (주식), T+1 국채 (BOJ-NET)",
+    clearingCCP: "JSCC (일본증권청산기구, 단일 독점 CCP)",
+    marginModel: "JSCC VaR (2023.11 SPAN에서 VaR/ES 전면 전환 완료, VMA v4.0)",
+    atsCompetition: "PTS 경쟁 (Japannext, Cboe Japan 등 점유율 약 10~15%)",
+    dltCloud: "AWS PoC 클라우드 탐색, CONNEQTOR RFQ 인프라"
+  },
+  "hkex": {
+    name: "HKEX 홍콩거래소",
+    nativeName: "Hong Kong Exchanges and Clearing",
+    country: "홍콩 🇭🇰",
+    type: "상장 통합 거래소그룹 (주식/선물/LME)",
+    reportKo: "../01_equities/ko/exchanges/hkex.html",
+    reportEn: "../01_equities/en/exchanges/hkex.html",
+    engine: "OTP-C / Orion (주식), HKEX Synapse",
+    latency: "< 100 μs (SDNet/3 초저지연망)",
+    throughput: "초당 6만 건 이상 주문 처리",
+    tradingHours: "09:30 - 12:00, 13:00 - 16:00 (점심휴장 1시간 有)\n악천후 거래 유지(SWT, 2024.9 도입)",
+    nightTrading: "파생상품 T+1 세션 (17:15 - 익일 03:00)",
+    orderTypes: "At-the-Opening, Limit, Enhanced Limit (ELO), Special Limit (SLO)",
+    tickSize: "주가 단계별 동적 스프레드 테이블 (HKD 0.01 ~ 5.00)",
+    volatilityCtrl: "VCM (변동성제어메커니즘, 5분 쿨링다운), CAS 가격제한",
+    settlementCycle: "T+2 (Stock Connect 중국 본토 T+0/T+1 결제와 연계)",
+    clearingCCP: "HKSCC (주식), HKCC (선물), SEOCH (옵션)",
+    marginModel: "PRiME (SPAN 기반 변형 모델)",
+    atsCompetition: "대안시장 제한적 (Stock Connect, Swap Connect 상호연계 집중)",
+    dltCloud: "Synapse DLT 결제 추적, HKEX 디지털 자산 플랫폼"
+  },
+  "sgx": {
+    name: "SGX 싱가포르거래소",
+    nativeName: "Singapore Exchange",
+    country: "싱가포르 🇸🇬",
+    type: "아시아 선도 다자산 국제금융 거래소",
+    reportKo: "../01_equities/ko/exchanges/sgx.html",
+    reportEn: "../01_equities/en/exchanges/sgx.html",
+    engine: "SGX Titan (Nasdaq 기술 기반 파생/주식)",
+    latency: "< 100 μs (마이크로초 고성능)",
+    throughput: "초당 수만 건 (글로벌 외환/지수 파생 집중)",
+    tradingHours: "09:00 - 12:00, 13:00 - 17:00 (점심휴장 1시간 有)\nPre-open 08:30-09:00, Close 17:00-17:06",
+    nightTrading: "파생상품 T+1 나이트 세션 (17:15 - 익일 05:15)",
+    orderTypes: "Limit, Market, Stop, Iceberg, Session Orders",
+    tickSize: "주가 등급별 호가단위 ($0.001 ~ $0.02)",
+    volatilityCtrl: "Circuit Breakers (동적 10%, 5분 냉각기간), Price Bands",
+    settlementCycle: "T+2 (CDP 예탁결제원)",
+    clearingCCP: "SGX-DC (파생상품 청산), CDP (중앙예탁)",
+    marginModel: "SGX-SPAN (SPAN 기반 마진 계산)",
+    atsCompetition: "글로벌 허브 경쟁 (GIFT Connect 인도 선물 직접 연계)",
+    dltCloud: "Marketnode DLT 채권 발행, 디지털 인프라 선도"
+  },
+  "deutsche_borse": {
+    name: "Deutsche Börse / Eurex",
+    nativeName: "Deutsche Börse Group",
+    country: "독일 🇩🇪",
+    type: "유럽 최대 거래소·청산·정보기술 복합체",
+    reportKo: "../01_equities/ko/exchanges/deutsche_borse.html",
+    reportEn: "../01_equities/en/exchanges/deutsche_borse.html",
+    engine: "T7 Trading Architecture (Xetra / Eurex 공용)",
+    latency: "< 20 μs (초저지연, Linux C++ / FPGA 가속)",
+    throughput: "초당 수십만 건, 일평균 수천만 건",
+    tradingHours: "09:00 - 17:30 CET (점심휴장 없음)\nPre 08:00-09:00, Post 17:30-17:35",
+    nightTrading: "Eurex 파생 야간거래 세션 (글로벌 시간대 연계)",
+    orderTypes: "Market, Limit, Stop, Iceberg, Trailing Stop, One-Cancels-Other",
+    tickSize: "MiFID II RTS 27/28 준수 유동성 대역별 틱 테이블",
+    volatilityCtrl: "변동성 중단(Volatility Interruption) 단일가 경매 자동전환",
+    settlementCycle: "T+2 (CSDR 체계, 2027년 10월 11일 T+1 전환 확정)",
+    clearingCCP: "Eurex Clearing (글로벌 톱클래스 독점 CCP)",
+    marginModel: "Eurex Clearing PRISMA (포트폴리오 VaR/ES 3세대 방법론)",
+    atsCompetition: "초경쟁 (BATS, Chi-X, Tradeweb 등 다자간매매체결 MTF/SI 경쟁)",
+    dltCloud: "Google Cloud 전략 파트너십, D7 디지털 자산 후선 플랫폼"
+  },
+  "euronext": {
+    name: "Euronext 범유럽거래소",
+    nativeName: "Euronext N.V.",
+    country: "유럽연합 🇪🇺 (7개국 통합)",
+    reportKo: "../01_equities/ko/exchanges/euronext.html",
+    reportEn: "../01_equities/en/exchanges/euronext.html",
+    engine: "Optiq Trading Platform (자체개발 7개국 통합)",
+    latency: "~15 μs (유럽 최고 수준 초저지연, Kafka 영속성)",
+    throughput: "일 최대 1억 건 이상 주문 처리",
+    tradingHours: "09:00 - 17:30 CET (파리/암스테르담 기준)\n점심휴장 없음",
+    nightTrading: "시간외 연장 거래 및 파생상품 세션",
+    orderTypes: "Limit, Market, Stop, Iceberg, Pegged, Dark Midpoint",
+    tickSize: "MiFID II 틱 사이즈 대역 규정",
+    volatilityCtrl: "동적/정적 칼라(Price Collars, 2~5%) 및 예약 경매",
+    settlementCycle: "T+2 (2027년 10월 EU T+1 동시 전환 예정)",
+    clearingCCP: "Euronext Clearing (과거 CC&G 기반 다국적 통합 CCP)",
+    marginModel: "SA-CCR 및 VaR/ES 기반 청산 위험 관리",
+    atsCompetition: "Cboe Europe, Aquis, 다양한 다크풀 MTF와 격돌",
+    dltCloud: "베르가모 친환경 그린 데이터센터 이전 완료"
+  },
+  "cme": {
+    name: "CME Group 파생상품",
+    nativeName: "Chicago Mercantile Exchange",
+    country: "미국 🇺🇸",
+    type: "세계 최대 파생상품 거래소그룹",
+    reportKo: "../02_derivatives/ko/exchanges/cme_group.html",
+    reportEn: "../02_derivatives/en/exchanges/cme_group.html",
+    engine: "CME Globex (iLink 3 바이너리 오더 엔트리)",
+    latency: "서브밀리초 (결정론적 FIFO / Pro-Rata)",
+    throughput: "일평균 2,800만 계약 이상 (피크 6,000만+)",
+    tradingHours: "주 5일 거의 24시간 (일 17:00 ~ 금 16:00 CT)\n일일 1시간 점검(16:00-17:00 CT) 제외 연속거래",
+    nightTrading: "글로벌 23시간 연속 유동성 공급 (한국 낮=미국 밤 완벽 커버)",
+    orderTypes: "Limit, Stop, Stop-Limit, Market-with-Protection, Spread Orders",
+    tickSize: "상품별 미세 틱 (지수 0.25pt, 금 $0.10, 국채 1/32 등)",
+    volatilityCtrl: "Dynamic Circuit Breakers, Velocity Logic, Stop Logic",
+    settlementCycle: "T+1 (현금정산) / 실물인도 절차",
+    clearingCCP: "CME Clearing (단일 글로벌 리딩 DCO)",
+    marginModel: "SPAN 2 (Historical VaR + Expected Shortfall 차세대 프레임워크)",
+    atsCompetition: "ICE, Cboe와의 상품별 경쟁 및 바이터럴 OTC 청산 흡수",
+    dltCloud: "Google Cloud 10년 전략적 마이그레이션 (2026-2028)"
+  },
+  "dtcc": {
+    name: "DTCC (NSCC / DTC / FICC)",
+    nativeName: "Depository Trust & Clearing Corporation",
+    country: "미국 🇺🇸",
+    type: "세계 최대 증권 청산·예탁 복합 인프라 (SIFMU)",
+    reportKo: "../03_clearing/ko/organizations/dtcc.html",
+    reportEn: "../03_clearing/en/organizations/dtcc.html",
+    engine: "CNS (연속차감) / Settlement Engine / TradeSuite ID",
+    latency: "대규모 배치 및 실시간 DVP 스트리밍",
+    throughput: "연간 $3,700조 결제, 수탁 자산 $100조 이상",
+    tradingHours: "결제 처리 24시간 실시간 배치 스트리밍",
+    nightTrading: "야간 결제 사이클(Night Batch Settlement) 가동",
+    orderTypes: "해당 없음 (후속거래 청산/결제/예탁)",
+    tickSize: "해당 없음",
+    volatilityCtrl: "일중 증거금 추가징수 (Intraday VaR Margin Calls)",
+    settlementCycle: "T+1 (2024년 5월 안착, 차감효율 98% 달성)",
+    clearingCCP: "NSCC (주식 CCP), FICC (국채/MBS CCP), DTC (CSD)",
+    marginModel: "VaR 기반 청산기금 공식 (Dodd-Frank Title VIII SIFMU 규제)",
+    atsCompetition: "미국 내 모든 주식거래소 및 ATS의 단일 중앙청산",
+    dltCloud: "Project Ion (Corda 실시간 결제 병행), AWS 클라우드 전환"
+  },
+  "ksd": {
+    name: "KSD 한국예탁결제원",
+    nativeName: "Korea Securities Depository",
+    country: "대한민국 🇰🇷",
+    type: "국가 유일 CSD (중앙증권예탁기관)",
+    reportKo: "../03_clearing/ko/organizations/ksd.html",
+    reportEn: "../03_clearing/en/organizations/ksd.html",
+    engine: "SAFE+ (차세대 예탁결제 종합시스템)",
+    latency: "실시간 장부대체 및 한은 BOK-Wire+ DVP 연동",
+    throughput: "전자등록 관리자산 6,200조 원 이상 (~USD 4.6조+)",
+    tradingHours: "08:00 - 18:00 기관결제 운영",
+    nightTrading: "야간 결제 및 대체거래소(Nextrade 08:00~20:00) 결제 지원",
+    orderTypes: "해당 없음 (CSD 예탁/결제/권리행사)",
+    tickSize: "해당 없음",
+    volatilityCtrl: "결제부도 손해배상공동기금 및 유동성 지원망",
+    settlementCycle: "주식 T+2 (10억 원 단위 분할결제 정착), 국채 T+1 (한은 DVP)",
+    clearingCCP: "KRX CCP와 연계 (KSD는 결제/예탁 및 CSD 역할 전담)",
+    marginModel: "CSD 결제참가자 관리 및 차감결제 체계",
+    atsCompetition: "KRX 및 대체거래소(Nextrade) 전담 중앙예탁기관",
+    dltCloud: "토큰증권(ST) 법정 중앙등록기관 지정 (전자증권법, 2027.1 시행)"
+  }
+};
+
+// Current Active State
+let selectedExchanges = ["krx", "nextrade"];
+let activeCategory = "all";
+
+// Initialization
+document.addEventListener("DOMContentLoaded", function() {
+  initPicker();
+  renderMatrix();
+});
+
+function initPicker() {
+  const container = document.getElementById("exchangePicker");
+  container.innerHTML = "";
+  
+  for (const [id, data] of Object.entries(EXCHANGES_DB)) {
+    const pill = document.createElement("div");
+    pill.className = `ex-pill ${selectedExchanges.includes(id) ? 'selected' : ''}`;
+    pill.id = `pill_${id}`;
+    pill.onclick = () => toggleExchange(id);
+    
+    pill.innerHTML = `
+      <span>${data.name}</span>
+      <span class="pill-check">✓</span>
+    `;
+    container.appendChild(pill);
+  }
+}
+
+function toggleExchange(id) {
+  if (selectedExchanges.includes(id)) {
+    if (selectedExchanges.length <= 1) {
+      alert("최소 1개 이상의 거래소를 선택해야 합니다.");
+      return;
+    }
+    selectedExchanges = selectedExchanges.filter(e => e !== id);
+  } else {
+    if (selectedExchanges.length >= 4) {
+      alert("화면 가독성을 위해 한 번에 최대 4개 거래소까지 비교를 권장합니다.");
+      return;
+    }
+    selectedExchanges.push(id);
+  }
+  
+  updatePills();
+  renderMatrix();
+}
+
+function updatePills() {
+  for (const id of Object.keys(EXCHANGES_DB)) {
+    const pill = document.getElementById(`pill_${id}`);
+    if (pill) {
+      if (selectedExchanges.includes(id)) {
+        pill.classList.add("selected");
+      } else {
+        pill.classList.remove("selected");
+      }
+    }
+  }
+}
+
+function applyPreset(presetKey) {
+  // Update preset button active class
+  document.querySelectorAll(".preset-chip").forEach(btn => btn.classList.remove("active"));
+  event.target.classList.add("active");
+
+  if (presetKey === "kr_nxt") {
+    selectedExchanges = ["krx", "nextrade"];
+  } else if (presetKey === "asia4") {
+    selectedExchanges = ["krx", "jpx", "hkex", "sgx"];
+  } else if (presetKey === "global_equity") {
+    selectedExchanges = ["krx", "nyse", "nasdaq"];
+  } else if (presetKey === "derivatives") {
+    selectedExchanges = ["krx", "cme", "deutsche_borse"];
+  } else if (presetKey === "clearing") {
+    selectedExchanges = ["ksd", "dtcc", "jpx", "deutsche_borse"];
+  }
+  
+  updatePills();
+  renderMatrix();
+}
+
+function resetSelection() {
+  selectedExchanges = ["krx"];
+  document.querySelectorAll(".preset-chip").forEach(btn => btn.classList.remove("active"));
+  updatePills();
+  renderMatrix();
+}
+
+function setCategory(cat, btn) {
+  activeCategory = cat;
+  document.querySelectorAll(".comp-tab-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderMatrix();
+}
+
+// Field Definitions
+const ATTRIBUTES = [
+  // General Info
+  { key: "country", label: "국가 및 소재지", cat: "trading" },
+  { key: "type", label: "시장 구조 및 유형", cat: "trading" },
+  
+  // IT & Engine
+  { key: "engine", label: "매매/청산 엔진 (아키텍처)", cat: "it" },
+  { key: "latency", label: "지연시간 (Latency)", cat: "it" },
+  { key: "throughput", label: "처리량 및 용량 (Throughput)", cat: "it" },
+  { key: "dltCloud", label: "클라우드 및 DLT 혁신", cat: "it" },
+  
+  // Trading & Orders
+  { key: "tradingHours", label: "정규 매매시간", cat: "trading" },
+  { key: "nightTrading", label: "야간 및 연장 거래 세션", cat: "trading" },
+  { key: "orderTypes", label: "호가 유형 (Order Types)", cat: "trading" },
+  { key: "tickSize", label: "호가단위 (Tick Size)", cat: "trading" },
+  { key: "atsCompetition", label: "ATS/다크풀 경쟁 및 SOR", cat: "trading" },
+
+  // Volatility & Risk
+  { key: "volatilityCtrl", label: "변동성 제어 및 서킷브레이커", cat: "risk" },
+  
+  // Post-Trade & Clearing
+  { key: "settlementCycle", label: "결제주기 (Settlement Cycle)", cat: "clearing" },
+  { key: "clearingCCP", label: "청산기관 (CCP 구조)", cat: "clearing" },
+  { key: "marginModel", label: "증거금 산정 모델 (Margin)", cat: "clearing" }
+];
+
+function renderMatrix() {
+  const container = document.getElementById("matrixContainer");
+  const highlightDiff = document.getElementById("diffHighlightToggle").checked;
+
+  if (selectedExchanges.length === 0) {
+    container.innerHTML = `<div class="empty-state">선택된 거래소가 없습니다. 상단에서 비교할 거래소를 선택해주세요.</div>`;
+    return;
+  }
+
+  // Filter attributes based on active tab
+  const visibleAttrs = ATTRIBUTES.filter(attr => activeCategory === "all" || attr.cat === activeCategory);
+
+  let html = `<table class="comp-table">`;
+  
+  // Header Row
+  html += `<tr class="comp-header-row">`;
+  html += `<th class="comp-attr-col" style="font-size:0.86rem; color:#64748b;">비교 항목 / 지표</th>`;
+  
+  for (const exId of selectedExchanges) {
+    const ex = EXCHANGES_DB[exId];
+    const isKrx = exId === "krx";
+    html += `
+      <th class="comp-ex-header ${isKrx ? 'featured-krx' : ''}">
+        <div class="comp-header-title">
+          <span>${ex.name}</span>
+        </div>
+        <div class="comp-header-sub">${ex.nativeName} · ${ex.country}</div>
+        <div class="comp-header-links">
+          <a href="${ex.reportKo}" class="comp-link-btn" title="한국어 심층 보고서 읽기">📄 상세분석</a>
+          <a href="${ex.reportEn}" class="comp-link-btn" title="영문 보고서 읽기">🌐 EN</a>
+        </div>
+      </th>
+    `;
+  }
+  html += `</tr>`;
+
+  // Body Rows
+  for (const attr of visibleAttrs) {
+    // Check if values differ across selected exchanges
+    const values = selectedExchanges.map(exId => EXCHANGES_DB[exId][attr.key]);
+    const isDifferent = new Set(values).size > 1;
+    const rowClass = (highlightDiff && isDifferent) ? 'comp-diff-highlight' : '';
+
+    html += `<tr class="${rowClass}">`;
+    html += `<td class="comp-attr-col">${attr.label}</td>`;
+
+    for (const exId of selectedExchanges) {
+      const val = EXCHANGES_DB[exId][attr.key] || "-";
+      // Format line breaks
+      const formattedVal = val.replace(/\n/g, '<br>');
+      html += `<td>${formattedVal}</td>`;
+    }
+    html += `</tr>`;
+  }
+
+  html += `</table>`;
+  container.innerHTML = html;
+}
+</script>
+```
+
+---
+
+### 💡 KRX 벤치마킹 시사점 (Key Strategic Takeaways)
+
+::: {.callout-note appearance="simple"}
+#### 📌 1. 대체거래소(Nextrade ATS) 복수 경쟁 체제 대응
+2025년 3월 넥스트레이드 출범 및 10~15% 거래대금 안착에 따라, KRX는 중간가호가 및 스톱지정가 등 신규 호가 유형을 도입하고 메이커-테이커(Maker-Taker) 수수료를 정교화하여 대응하고 있습니다. 증권사 SOR(최선집행엔진)이 양 시장의 가격을 실시간으로 비교하므로 체결 속도와 호가창 유동성 수호가 핵심 과제입니다.
+:::
+
+::: {.callout-tip appearance="simple"}
+#### 📌 2. 결제주기(T+1) 단축 및 분할결제 정착
+미국·캐나다(2024년 5월 완료)와 인도(2023년)가 이미 주식 T+1을 시행 중이며, 유럽연합(EU)도 2027년 10월 T+1 단축을 확정했습니다. 한국은 2026년 4월 10억 원 단위 분할결제 제도를 성공적으로 안착시켜 결제유동성 리스크를 크게 낮추었으며, 글로벌 정합성을 위한 T+1 중장기 로드맵을 적극 추진하고 있습니다.
+:::
+
+::: {.callout-important appearance="simple"}
+#### 📌 3. 차세대 증거금 방법론 (SPAN → VaR/ES) 전환 흐름
+CME(SPAN 2), Eurex(PRISMA), DTCC 및 일본 JSCC(2023년 VaR 전환 완료) 등 글로벌 주요 CCP는 과거 시나리오 기반의 SPAN에서 3세대 VaR/Expected Shortfall 프레임워크로 전면 전환했습니다. KRX 역시 JSCC의 선례를 참고하여 장내 파생상품 증거금 체계의 VaR 고도화를 추진할 시점입니다.
+:::

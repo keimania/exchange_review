@@ -171,6 +171,30 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-analytics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Analytics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-analytics">    
+        <li>
+    <a class="dropdown-item" href="./qmd/analytics/index.html">
+ <span class="dropdown-text">Analytics Hub (분석 허브)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="./qmd/analytics/comparator.html">
+ <span class="dropdown-text">Exchange Comparator (맞춤 비교)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./qmd/analytics/trading_hours.html">
+ <span class="dropdown-text">Trading Hours Timeline (세션 타임라인)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./qmd/analytics/engine_benchmark.html">
+ <span class="dropdown-text">Engine Benchmark &amp; Architecture (엔진·밸류체인)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Glossary</span>
     </a>
@@ -281,13 +305,29 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quick-action-bar">
   <span class="quick-action-title">🔥 빠른 바로가기:</span>
-  <a href="qmd/01_equities/ko/exchanges/krx.html" class="action-chip featured">🇰🇷 KRX 한국거래소</a>
+  <a href="qmd/analytics/comparator.html" class="action-chip featured">⚖️ 거래소 맞춤 비교기</a>
+  <a href="qmd/analytics/trading_hours.html" class="action-chip featured">⏱️ 24시간 세션 타임라인</a>
+  <a href="qmd/analytics/engine_benchmark.html" class="action-chip featured">⚡ 매매엔진 벤치마크</a>
+  <a href="qmd/01_equities/ko/exchanges/krx.html" class="action-chip">🇰🇷 KRX 한국거래소</a>
   <a href="qmd/01_equities/ko/exchanges/nyse.html" class="action-chip">🇺🇸 NYSE</a>
   <a href="qmd/01_equities/ko/exchanges/nasdaq.html" class="action-chip">🇺🇸 NASDAQ</a>
   <a href="qmd/02_derivatives/ko/exchanges/cme_group.html" class="action-chip">⚡ CME Group</a>
   <a href="qmd/03_clearing/ko/organizations/dtcc.html" class="action-chip">🛡️ DTCC (T+1)</a>
-  <a href="qmd/reference/ko/final_review.html" class="action-chip featured">🎯 종합 벤치마킹 리포트</a>
-  <a href="qmd/reference/glossary_ko.html" class="action-chip">📖 403개 용어사전</a>
+  <a href="qmd/reference/ko/final_review.html" class="action-chip">🎯 종합 벤치마킹 리포트</a>
+  <a href="qmd/reference/glossary_ko.html" class="action-chip">📖 406개 용어사전</a>
+</div>
+
+<div class="analytics-callout-banner" style="background: linear-gradient(135deg, #1e1b4b 0%, #1e3a8a 100%); color: #ffffff; padding: 1.25rem 1.75rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; box-shadow: var(--shadow-sm);">
+  <div>
+    <div style="font-size: 0.82rem; font-weight: 700; color: #93c5fd; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">✨ NEW INTERACTIVE VISUALIZATIONS</div>
+    <div style="font-size: 1.15rem; font-weight: 800;">글로벌 거래소 맞춤 비교기 &amp; 24시간 세션 타임라인 신규 탑재</div>
+    <div style="font-size: 0.88rem; color: #cbd5e1; margin-top: 0.25rem;">16대 거래소 1:1 비교, 아시아-유럽-미국 24h 유동성 중첩 및 12대 체결엔진 성능 벤치마크를 직접 조작해보세요.</div>
+  </div>
+  <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+    <a href="qmd/analytics/comparator.html" class="btn btn-sm btn-light" style="font-weight: 700; color: #1e3a8a; padding: 0.5rem 0.9rem; border-radius: 6px;">⚖️ 거래소 비교기</a>
+    <a href="qmd/analytics/trading_hours.html" class="btn btn-sm btn-outline-light" style="font-weight: 700; padding: 0.5rem 0.9rem; border-radius: 6px;">⏱️ 세션 타임라인</a>
+    <a href="qmd/analytics/engine_benchmark.html" class="btn btn-sm btn-outline-light" style="font-weight: 700; padding: 0.5rem 0.9rem; border-radius: 6px;">⚡ 엔진 벤치마크</a>
+  </div>
 </div>
 
 <div class="filter-container">

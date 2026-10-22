@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>차세대 매매엔진 성능 벤치마킹 &amp; 밸류체인 다이어그램 – Global Exchange Research</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../qmd/analytics/trading_hours.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-25b66172d429e0b7029695957c954ae4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Global Exchange Research</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-equities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Equities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-equities">    
+        <li>
+    <a class="dropdown-item" href="../../qmd/01_equities/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../qmd/01_equities/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../qmd/01_equities/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../qmd/01_equities/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-derivatives" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Derivatives</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-derivatives">    
+        <li>
+    <a class="dropdown-item" href="../../qmd/02_derivatives/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../qmd/02_derivatives/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../qmd/02_derivatives/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../qmd/02_derivatives/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-clearing" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Clearing</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-clearing">    
+        <li>
+    <a class="dropdown-item" href="../../qmd/03_clearing/en/01_overview.html">
+ <span class="dropdown-text">Overview (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../qmd/03_clearing/ko/01_overview.html">
+ <span class="dropdown-text">Overview (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../qmd/03_clearing/en/02_comparative_analysis.html">
+ <span class="dropdown-text">Comparative Analysis (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../qmd/03_clearing/ko/02_comparative_analysis.html">
+ <span class="dropdown-text">비교분석 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-analytics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Analytics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-analytics">    
+        <li>
+    <a class="dropdown-item" href="../../qmd/analytics/index.html">
+ <span class="dropdown-text">Analytics Hub (분석 허브)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../qmd/analytics/comparator.html">
+ <span class="dropdown-text">Exchange Comparator (맞춤 비교)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../qmd/analytics/trading_hours.html">
+ <span class="dropdown-text">Trading Hours Timeline (세션 타임라인)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../qmd/analytics/engine_benchmark.html">
+ <span class="dropdown-text">Engine Benchmark &amp; Architecture (엔진·밸류체인)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-glossary" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Glossary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-glossary">    
+        <li>
+    <a class="dropdown-item" href="../../qmd/reference/glossary_en.html">
+ <span class="dropdown-text">Glossary (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../qmd/reference/glossary_ko.html">
+ <span class="dropdown-text">용어집 (KO)</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../qmd/reference/final_review.html">
+ <span class="dropdown-text">Final Review (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../qmd/reference/ko/final_review.html">
+ <span class="dropdown-text">최종 리뷰 (KO)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/keimania/exchange_review"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../qmd/analytics/engine_benchmark.html">차세대 매매엔진 성능 벤치마킹 &amp; 밸류체인 다이어그램</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../qmd/analytics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">인터랙티브 분석 허브 (Visual Analytics Hub)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../qmd/analytics/comparator.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 거래소 1:1 및 다자간 맞춤 비교기 (Exchange Comparator)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../qmd/analytics/trading_hours.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">글로벌 24시간 매매세션 타임라인 (Global Trading Hours Timeline)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../qmd/analytics/engine_benchmark.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">차세대 매매엔진 성능 벤치마킹 &amp; 밸류체인 다이어그램</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">차세대 매매엔진 성능 벤치마킹 &amp; 밸류체인 다이어그램</h1>
+<p class="subtitle lead">Visual Analytics &amp; IT Architecture</p>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 10월 22일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+/* Benchmark Hero */
+.benchmark-hero {
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e3a8a 100%);
+  color: #ffffff;
+  padding: 2.2rem 2rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(30, 27, 75, 0.35);
+}
+
+.benchmark-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.85rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #c7d2fe;
+}
+
+.benchmark-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.benchmark-desc {
+  font-size: 0.98rem;
+  color: #e0e7ff;
+  max-width: 900px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Chart Container & Controls */
+.chart-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.chart-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.chart-title-wrap h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.chart-title-wrap p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+.chart-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-toggle-group {
+  display: inline-flex;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  padding: 2px;
+}
+
+.btn-toggle-item {
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-toggle-item.active {
+  background: #1e3a8a;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Custom Interactive SVG Latency Chart */
+.interactive-chart-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.engine-bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  position: relative;
+  font-size: 0.86rem;
+  transition: transform 0.15s ease;
+}
+
+.engine-bar-row:hover {
+  transform: translateX(4px);
+}
+
+.engine-label-box {
+  width: 220px;
+  min-width: 220px;
+  text-align: right;
+  padding-right: 1.25rem;
+}
+
+.engine-name {
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.engine-vendor {
+  font-size: 0.76rem;
+  color: #64748b;
+}
+
+.engine-track {
+  flex: 1;
+  height: 32px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+}
+
+.engine-bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-weight: 800;
+  font-size: 0.82rem;
+  color: #ffffff;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.fill-krx {
+  background: linear-gradient(90deg, #2563eb 0%, #1d4ed8 100%);
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
+}
+
+.fill-tier1 {
+  background: linear-gradient(90deg, #0ea5e9 0%, #0284c7 100%);
+}
+
+.fill-other {
+  background: linear-gradient(90deg, #64748b 0%, #475569 100%);
+}
+
+.engine-badge-tag {
+  margin-left: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+  min-width: 90px;
+}
+
+/* Architecture Tab Section */
+.arch-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.arch-tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.75rem;
+}
+
+.arch-nav-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.arch-nav-btn:hover {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+}
+
+.arch-nav-btn.active {
+  background: #1e3a8a;
+  border-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.arch-content-panel {
+  display: none;
+}
+
+.arch-content-panel.active {
+  display: block;
+}
+
+.arch-detail-box {
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* Waterfall Comparison Table */
+.waterfall-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.waterfall-col {
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.waterfall-col-header {
+  padding: 0.85rem 1rem;
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header-krx { background: #1e3a8a; }
+.header-dtcc { background: #0f766e; }
+.header-cme { background: #c2410c; }
+.header-eurex { background: #4338ca; }
+
+.waterfall-step {
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.waterfall-step:last-child {
+  border-bottom: none;
+}
+
+.step-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: 800;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-sitg {
+  background: #fef08a !important;
+  color: #854d0e !important;
+  font-weight: 800;
+}
+</style>
+
+<div class="benchmark-hero">
+  <div class="benchmark-hero-badge">
+    <span>⚡ Next-Gen Engine Analytics</span>
+    <span>•</span>
+    <span>Architecture &amp; Value Chain</span>
+  </div>
+  <div class="benchmark-title">
+    차세대 매매엔진 성능 벤치마킹 &amp; 포스트트레이드 밸류체인
+  </div>
+  <p class="benchmark-desc">
+    KRX Exture 3.0을 비롯한 <strong>글로벌 12대 핵심 매매체결 엔진</strong>의 지연시간(Latency)을 마이크로초(μs) 단위로 정밀 비교하고, 각국 <strong>거래소(매매) → 청산(CCP) → 예탁결제(CSD) → 중앙은행(RTGS)</strong> 밸류체인 및 결제불이행 폭포(Default Waterfall) 구조를 시각화합니다.
+  </p>
+</div>
+
+<!-- Section 1: Engine Benchmark Chart -->
+<div class="chart-card">
+  <div class="chart-header">
+    <div class="chart-title-wrap">
+      <h3 class="anchored">⚡ 글로벌 매매체결 엔진 지연시간(Latency) 벤치마크</h3>
+      <p>단위: 마이크로초 (μs, 1초 = 1,000,000μs / 숫자가 낮을수록 초고속 체결 성능)</p>
+    </div>
+    
+    <div class="chart-controls">
+      <div class="btn-toggle-group">
+        <button class="btn-toggle-item active" onclick="setScale('log', this)">로그 스케일 (Log)</button>
+        <button class="btn-toggle-item" onclick="setScale('linear', this)">선형 스케일 (Linear)</button>
+      </div>
+      
+      <div class="btn-toggle-group">
+        <button class="btn-toggle-item active" onclick="setFilter('all', this)">전체 엔진</button>
+        <button class="btn-toggle-item" onclick="setFilter('inhouse', this)">자체 개발</button>
+        <button class="btn-toggle-item" onclick="setFilter('vendor', this)">벤더 솔루션</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="interactive-chart-container" id="engineChartContainer">
+    <!-- Populated by JS -->
+  </div>
+</div>
+
+<!-- Section 2: End-to-End Value Chain Architectures -->
+<div class="arch-card">
+  <div class="chart-header">
+    <div class="chart-title-wrap">
+      <h3 class="anchored">🏛️ 글로벌 4대 자본시장 End-to-End 포스트트레이드 밸류체인</h3>
+      <p>주문·체결(거래소) → 청산·차감(CCP) → 예탁·결제(CSD) → 중앙은행 결제(RTGS) 연결 구조</p>
+    </div>
+  </div>
+
+  <div class="arch-tab-nav">
+    <button class="arch-nav-btn active" onclick="switchArch('kr', this)">🇰🇷 대한민국 (KRX · Nextrade · KSD · BOK)</button>
+    <button class="arch-nav-btn" onclick="switchArch('us', this)">🇺🇸 미국 (NYSE · NASDAQ · DTCC · Fedwire)</button>
+    <button class="arch-nav-btn" onclick="switchArch('eu', this)">🇪🇺 유럽연합 (Euronext · Eurex · T2S · TARGET2)</button>
+    <button class="arch-nav-btn" onclick="switchArch('jp', this)">🇯🇵 일본 (TSE · Japannext · JSCC · BOJ-NET)</button>
+  </div>
+
+  <!-- Panel KR -->
+  <div class="arch-content-panel active" id="arch_kr">
+```mermaid
+graph TD
+    classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
+    classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
+    classDef csd fill:#fefce8,stroke:#ca8a04,stroke-width:2px;
+    classDef rtgs fill:#faf5ff,stroke:#9333ea,stroke-width:2px;
+
+    Inv["투자자 / 브로커 (증권사)"] --&gt; SOR["스마트오더라우팅 (SOR) 최선집행"]
+    
+    subgraph 매매시장_Trading_Venues ["1. 매매체결 시장 (Trading Venues)"]
+        SOR --&gt; KRX["KRX 한국거래소 (정규시장)<br>Exture 3.0 (~49μs)<br>09:00~15:30 (파생야간 18:00~06:00)"]:::venue
+        SOR --&gt; NXT["넥스트레이드 (Nextrade ATS)<br>저지연 매칭엔진<br>08:00~20:00 (12시간 연속거래)"]:::venue
+    end
+
+    KRX --&gt; KRX_CCP["2. 청산 및 다자간 차감 (Central Counterparty)<br>KRX 청산부서 (통합 CCP)<br>• 주식·파생상품 다자간 차감 (대금 95%+ 감축)<br>• 원화 IRS 및 통화스왑(CRS) 법정 의무청산"]:::ccp
+    NXT --&gt; KRX_CCP
+
+    KRX_CCP --&gt; KSD["3. 증권 예탁 및 장부대체 (CSD)<br>KSD 한국예탁결제원 (SAFE+)<br>• 주식 BIS DVP Model 2 (총액증권/순액자금)<br>• 10억 원 단위 분할결제 정착 (유동성 리스크 완화)<br>• 토큰증권(ST) 법정 중앙등록기관 (2027.1 시행)"]:::csd
+
+    KSD --&gt; BOK["4. 최종 자금결제 (Central Bank Money)<br>한국은행 한은금융망 (BOK-Wire+)<br>• 중앙은행 화폐 RTGS 최종 결제 완료"]:::rtgs
+<pre><code>&lt;div class="arch-detail-box"&gt;
+  &lt;strong&gt;🇰🇷 한국 자본시장 구조적 특징:&lt;/strong&gt;
+  2025년 3월 대체거래소(Nextrade ATS) 출범으로 &lt;strong&gt;매매 영역은 복수 시장 경쟁(KRX vs NXT) 및 증권사 SOR 체제로 전환&lt;/strong&gt;되었으나, &lt;strong&gt;청산(KRX CCP)과 결제(KSD SAFE+)는 단일 국가 인프라로 수렴&lt;/strong&gt;되는 고효율 집중 모델을 채택하고 있습니다. 2026년 4월 10억 원 단위 분할결제 제도가 정착되어 결제유동성 리스크를 크게 낮추었습니다.
+&lt;/div&gt;</code></pre>
+</div>
+<!-- Panel US -->
+<div id="arch_us" class="arch-content-panel">
+<pre class="mermaid"><code>graph TD
+    classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
+    classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
+    classDef csd fill:#fefce8,stroke:#ca8a04,stroke-width:2px;
+    classDef rtgs fill:#faf5ff,stroke:#9333ea,stroke-width:2px;
+
+    Inv["기관 / 리테일 브로커 (Broker-Dealers)"] --&gt; Routing["Reg NMS 최선집행 / 내부화 / PFOF"]
+    
+    subgraph 매매시장_US_Venues ["1. 극도로 분산된 매매장소 (16대 거래소 + 30개+ ATS)"]
+        Routing --&gt; NYSE["NYSE (Pillar, 21~40μs)"]:::venue
+        Routing --&gt; NSDQ["NASDAQ (Eqlipse, &lt;40μs)"]:::venue
+        Routing --&gt; CBOE["Cboe / IEX / 24X / Dark Pools"]:::venue
+    end
+
+    NYSE --&gt; NSCC["2. 주식 중앙청산 (CCP)&lt;br/&gt;DTCC - NSCC (National Securities Clearing Corp)&lt;br/&gt;• 연속차감결제(CNS)로 결제금액 98% 감축&lt;br/&gt;• T+1 결제주기 전면 안착 (2024.5 완료)"]:::ccp
+    NSDQ --&gt; NSCC
+    CBOE --&gt; NSCC
+
+    NSCC --&gt; DTC["3. 중앙증권예탁기관 (CSD)&lt;br/&gt;DTCC - DTC (Depository Trust Company)&lt;br/&gt;• 장부기재 결제 (Book-entry)&lt;br/&gt;• BIS DVP Model 2"]:::csd
+
+    DTC --&gt; Fedwire["4. 최종 자금결제 (RTGS)&lt;br/&gt;연방준비제도 Fedwire Funds Service&lt;br/&gt;• 중앙은행 화폐 당일 최종 결제"]:::rtgs</code></pre>
+<pre><code>&lt;div class="arch-detail-box"&gt;
+  &lt;strong&gt;🇺🇸 미국 자본시장 구조적 특징:&lt;/strong&gt;
+  매매 시장은 16개 정규거래소와 30개 이상의 다크풀/ATS로 극도로 파편화되어 있으나, 후속거래는 지주회사 형태의 &lt;strong&gt;DTCC 산하 자회사(NSCC: 주식 CCP, FICC: 국채 CCP, DTC: CSD)로 일원화&lt;/strong&gt;되어 있습니다. 2024년 5월 글로벌 FMI 중 최초로 T+1 결제 단축을 전면 성공시켰습니다.
+&lt;/div&gt;</code></pre>
+</div>
+<!-- Panel EU -->
+<div id="arch_eu" class="arch-content-panel">
+<pre class="mermaid"><code>graph TD
+    classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
+    classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
+    classDef csd fill:#fefce8,stroke:#ca8a04,stroke-width:2px;
+    classDef rtgs fill:#faf5ff,stroke:#9333ea,stroke-width:2px;
+
+    Inv["유럽 투자자 / 은행"] --&gt; MiFID["MiFID II 최선집행"]
+
+    subgraph 매매시장_EU_Venues ["1. 범유럽 다자간 매매시장 (Venues &amp; MTFs)"]
+        MiFID --&gt; ENX["Euronext (Optiq, ~15μs)"]:::venue
+        MiFID --&gt; DB["Deutsche Börse (T7, &lt;20μs)"]:::venue
+        MiFID --&gt; MTF["Cboe Europe / Aquis MTF"]:::venue
+    end
+
+    subgraph 청산소_Interoperable_CCPs ["2. 상호운용 청산 체계 (Interoperable CCPs)"]
+        ENX --&gt; CCP_Group["LCH SA ↔ SIX x-clear ↔ Cboe Clear Europe&lt;br/&gt;(상호운용성 약정에 따른 자유 청산소 선택)"]:::ccp
+        DB --&gt; Eurex_Clear["Eurex Clearing (PRISMA VaR/ES)"]:::ccp
+    end
+
+    CCP_Group --&gt; T2S["3. 범유럽 통합 결제 인프라 (CSD Network)&lt;br/&gt;TARGET2-Securities (T2S, ECB 운영)&lt;br/&gt;• Euroclear Bank / Clearstream / 24개 각국 CSD 연결&lt;br/&gt;• BIS DVP Model 1 실시간 총액 결제&lt;br/&gt;• 2027년 10월 11일 T+1 전환 확정"]:::csd
+    Eurex_Clear --&gt; T2S
+
+    T2S --&gt; TARGET2["4. 유로존 중앙은행 자금결제 (RTGS)&lt;br/&gt;ECB TARGET2 결제망"]:::rtgs</code></pre>
+<pre><code>&lt;div class="arch-detail-box"&gt;
+  &lt;strong&gt;🇪🇺 유럽연합(EU) 구조적 특징:&lt;/strong&gt;
+  27개 회원국의 역사적 분절을 극복하기 위해 &lt;strong&gt;CCP 간 상호운용성(Interoperability) 체계&lt;/strong&gt;와 ECB가 직접 운영하는 &lt;strong&gt;T2S(범유럽 통합 증권결제 플랫폼)&lt;/strong&gt;를 구축하여, 복수 청산소와 24개국 CSD 간의 국경 없는 결제를 실현하고 있습니다. EU는 2027년 10월 11일 T+1 결제주기 전환을 입법화했습니다.
+&lt;/div&gt;</code></pre>
+</div>
+<!-- Panel JP -->
+<div id="arch_jp" class="arch-content-panel">
+<pre class="mermaid"><code>graph TD
+    classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
+    classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
+    classDef csd fill:#fefce8,stroke:#ca8a04,stroke-width:2px;
+    classDef rtgs fill:#faf5ff,stroke:#9333ea,stroke-width:2px;
+
+    Inv["일본 기관 / 개인투자자"] --&gt; SOR_JP["증권사 SOR 라우팅"]
+
+    subgraph 매매시장_JP_Venues ["1. 매매체결 시장"]
+        SOR_JP --&gt; TSE["도쿄증권거래소 (TSE)&lt;br/&gt;arrowhead 4.0 (~200μs)"]:::venue
+        SOR_JP --&gt; PTS["대체거래소 (PTS)&lt;br/&gt;Japannext / Cboe Japan"]:::venue
+    end
+
+    TSE --&gt; JSCC["2. 단일 중앙청산소 (CCP)&lt;br/&gt;JSCC (일본증권청산기구)&lt;br/&gt;• 주식·국채·파생상품·장외IRS 일원화 청산&lt;br/&gt;• 2023.11 SPAN에서 VaR 산출 전면 전환 완료"]:::ccp
+    PTS --&gt; JSCC
+
+    JSCC --&gt; JASDEC["3. 중앙증권예탁기관 (CSD)&lt;br/&gt;JASDEC (일본증권보관진체기구)&lt;br/&gt;• 주식 DVP 장부대체 결제"]:::csd
+
+    JASDEC --&gt; BOJ["4. 중앙은행 자금결제 (RTGS)&lt;br/&gt;일본은행 BOJ-NET&lt;br/&gt;• 엔화 당일 최종 결제"]:::rtgs</code></pre>
+<pre><code>&lt;div class="arch-detail-box"&gt;
+  &lt;strong&gt;🇯🇵 일본 자본시장 구조적 특징:&lt;/strong&gt;
+  한국과 유사하게 &lt;strong&gt;단일 중앙청산소(JSCC)와 단일 예탁기관(JASDEC)&lt;/strong&gt;을 중심으로 운영됩니다. 특히 JSCC는 2023년 11월 장내 파생상품에 대해 SPAN을 폐지하고 &lt;strong&gt;Historical Simulation VaR(HS-VaR)로 전면 전환을 완료(VMA v4.0 가동)&lt;/strong&gt;하여, KRX의 증거금 체계 고도화에 있어 가장 직접적인 벤치마크 사례를 제공합니다.
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<!-- Section 3: Default Waterfall Comparison -->
+<div class="arch-card">
+<div class="chart-header">
+<pre><code>&lt;div class="chart-title-wrap"&gt;
+  &lt;h3&gt;🛡️ 글로벌 4대 CCP 결제불이행 폭포(Default Waterfall) 단계별 비교&lt;/h3&gt;
+  &lt;p&gt;회원 부도 발생 시 청산소의 손실 흡수 단계 및 자기부담분(SITG) 배치 비교&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="waterfall-grid">
+<pre><code>&lt;!-- KRX --&gt;
+&lt;div class="waterfall-col"&gt;
+  &lt;div class="waterfall-col-header header-krx"&gt;🇰🇷 KRX 청산 (한국)&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;1&lt;/span&gt; &lt;span&gt;부도회원 증거금 (Initial Margin)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;2&lt;/span&gt; &lt;span&gt;부도회원 청산기금 분담금&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;3&lt;/span&gt; &lt;span&gt;손해배상공동기금 (~1,000억 원)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num step-sitg"&gt;4&lt;/span&gt; &lt;span style="font-weight:700; color:#854d0e;"&gt;KRX 자기부담금 (SITG)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;5&lt;/span&gt; &lt;span&gt;비부도회원 추가 손실 분담금&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;6&lt;/span&gt; &lt;span&gt;법정 정리 및 FSC 회복 절차&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- DTCC --&gt;
+&lt;div class="waterfall-col"&gt;
+  &lt;div class="waterfall-col-header header-dtcc"&gt;🇺🇸 DTCC / NSCC (미국)&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;1&lt;/span&gt; &lt;span&gt;부도회원 청산기금 (Clearing Fund)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num step-sitg"&gt;2&lt;/span&gt; &lt;span style="font-weight:700; color:#854d0e;"&gt;NSCC Corporate Contribution (SITG)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;3&lt;/span&gt; &lt;span&gt;비부도회원 청산기금 비례 차감&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;4&lt;/span&gt; &lt;span&gt;Assessment Power (추가 납부)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;5&lt;/span&gt; &lt;span&gt;Dodd-Frank Title II (OLA 정리 절차)&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CME --&gt;
+&lt;div class="waterfall-col"&gt;
+  &lt;div class="waterfall-col-header header-cme"&gt;⚡ CME Clearing (미국)&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;1&lt;/span&gt; &lt;span&gt;부도회원 증거금 및 담보&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;2&lt;/span&gt; &lt;span&gt;부도회원 보증기금 (Guaranty Fund)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num step-sitg"&gt;3&lt;/span&gt; &lt;span style="font-weight:700; color:#854d0e;"&gt;CME Corporate Contribution ($1억+)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;4&lt;/span&gt; &lt;span&gt;비부도회원 보증기금 분담금&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;5&lt;/span&gt; &lt;span&gt;Assessment Calls (최대 275%)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;6&lt;/span&gt; &lt;span&gt;VMGH (변동증거금 헤어컷) / Tear-up&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Eurex --&gt;
+&lt;div class="waterfall-col"&gt;
+  &lt;div class="waterfall-col-header header-eurex"&gt;🇪🇺 Eurex Clearing (독일)&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;1&lt;/span&gt; &lt;span&gt;부도회원 증거금 (Margin)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;2&lt;/span&gt; &lt;span&gt;부도회원 청산기금 분담금&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num step-sitg"&gt;3&lt;/span&gt; &lt;span style="font-weight:700; color:#854d0e;"&gt;Eurex Dedicated Capital (SITG 1차)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;4&lt;/span&gt; &lt;span&gt;비부도회원 청산기금 분담금&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num step-sitg"&gt;5&lt;/span&gt; &lt;span style="font-weight:700; color:#854d0e;"&gt;Eurex 추가 자본 (SITG 2차)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="waterfall-step"&gt;&lt;span class="step-num"&gt;6&lt;/span&gt; &lt;span&gt;EU CCP RRR (VMGH, 현금 요구, 정리)&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<script>
+// Matching Engines Database
+const ENGINES_DB = [
+  { name: "Optiq", venue: "Euronext (범유럽 7개국)", dev: "inhouse", latency: 15, throughput: "일 최대 1억 건+", hw: "Commodity x86, Linux, Kafka", tag: "~15 μs" },
+  { name: "T7", venue: "Deutsche Börse / Eurex", dev: "inhouse", latency: 18, throughput: "초당 수십만 건", hw: "Commodity x86, Linux C++, FPGA", tag: "< 20 μs" },
+  { name: "Pillar", venue: "NYSE 뉴욕증권거래소", dev: "inhouse", latency: 30, throughput: "초당 5,000건/세션", hw: "x86, Red Hat Enterprise Linux", tag: "21~40 μs" },
+  { name: "Eqlipse / INET", venue: "NASDAQ 나스닥", dev: "inhouse", latency: 35, throughput: "초당 100만 건+", hw: "AWS Outposts / x86 On-premise", tag: "< 40 μs" },
+  { name: "Exture 3.0", venue: "KRX 한국거래소 🇰🇷", dev: "inhouse", latency: 49, throughput: "일 1.5억 건 이상", hw: "Koscom 자체개발, Solace PubSub+", tag: "~49 μs" },
+  { name: "Titan", venue: "SGX 싱가포르거래소", dev: "vendor", latency: 80, throughput: "초당 수만 건", hw: "Nasdaq Technology (X-Stream)", tag: "< 100 μs" },
+  { name: "Millennium", venue: "LSE 런던 / JSE 요하네스버그", dev: "vendor", latency: 85, throughput: "초당 수십만 건", hw: "LSEG Technology C++", tag: "< 100 μs" },
+  { name: "Orion (OTP-C)", venue: "HKEX 홍콩거래소", dev: "inhouse", latency: 90, throughput: "초당 60,000건", hw: "SDNet/3 초저지연망", tag: "< 100 μs" },
+  { name: "SIBE-Smart", venue: "BME 스페인거래소", dev: "inhouse", latency: 100, throughput: "초당 수만 건", hw: "자체개발 분산 아키텍처", tag: "~100 μs" },
+  { name: "arrowhead 4.0", venue: "JPX 도쿄거래소", dev: "vendor", latency: 200, throughput: "일 수억 건 처리", hw: "Fujitsu PRIMERGY M6 462대", tag: "~200 μs" },
+  { name: "CME Globex", venue: "CME Group 파생상품", dev: "inhouse", latency: 450, throughput: "일 6,000만 계약 피크", hw: "Google Cloud 하이브리드", tag: "서브밀리초" },
+  { name: "FAST 2세대", venue: "TWSE 대만증권거래소", dev: "inhouse", latency: 2800, throughput: "초당 80,000건", hw: "자체개발 메모리 아키텍처", tag: "< 3,000 μs" }
+];
+
+let currentScale = "log"; // log vs linear
+let currentFilter = "all"; // all vs inhouse vs vendor
+
+document.addEventListener("DOMContentLoaded", function() {
+  renderEngineChart();
+});
+
+function setScale(scale, btn) {
+  currentScale = scale;
+  btn.parentElement.querySelectorAll(".btn-toggle-item").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderEngineChart();
+}
+
+function setFilter(filter, btn) {
+  currentFilter = filter;
+  btn.parentElement.querySelectorAll(".btn-toggle-item").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderEngineChart();
+}
+
+function renderEngineChart() {
+  const container = document.getElementById("engineChartContainer");
+  container.innerHTML = "";
+
+  const filtered = ENGINES_DB.filter(e => {
+    if (currentFilter === "all") return true;
+    return e.dev === currentFilter;
+  });
+
+  const maxLatency = Math.max(...filtered.map(e => e.latency));
+  const minLatency = 10;
+
+  for (const eng of filtered) {
+    const row = document.createElement("div");
+    row.className = "engine-bar-row";
+
+    // Calculate width percentage
+    let widthPct = 0;
+    if (currentScale === "linear") {
+      widthPct = Math.max(3, (eng.latency / maxLatency) * 100);
+    } else {
+      // Log scale: log10(latency) / log10(max)
+      const logVal = Math.log10(eng.latency);
+      const logMax = Math.log10(maxLatency);
+      const logMin = Math.log10(minLatency);
+      widthPct = Math.max(4, ((logVal - logMin) / (logMax - logMin)) * 96 + 4);
+    }
+
+    let fillClass = "fill-other";
+    if (eng.name.includes("Exture")) {
+      fillClass = "fill-krx";
+    } else if (eng.latency <= 50) {
+      fillClass = "fill-tier1";
+    }
+
+    row.innerHTML = `
+      <div class="engine-label-box">
+        <div class="engine-name">${eng.name}</div>
+        <div class="engine-vendor">${eng.venue}</div>
+      </div>
+      <div class="engine-track">
+        <div class="engine-bar-fill ${fillClass}" style="width: ${widthPct}%;">
+          ${eng.tag}
+        </div>
+      </div>
+      <div class="engine-badge-tag">${eng.dev === 'inhouse' ? '자체개발' : '외부벤더'}</div>
+    `;
+
+    container.appendChild(row);
+  }
+}
+
+function switchArch(regionKey, btn) {
+  document.querySelectorAll(".arch-nav-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+
+  document.querySelectorAll(".arch-content-panel").forEach(p => p.classList.remove("active"));
+  const target = document.getElementById(`arch_${regionKey}`);
+  if (target) {
+    target.classList.add("active");
+  }
+}
+</script>
+<p>```</p>
+<hr>
+<section id="krx-it-인프라-아키텍처-제언" class="level3">
+<h3 class="anchored" data-anchor-id="krx-it-인프라-아키텍처-제언">💡 KRX IT 인프라 아키텍처 제언</h3>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">노트</span>1. 자체 개발 역량과 글로벌 톱티어 지연시간(~49μs)의 가치
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>KRX Exture 3.0은 Koscom과의 긴밀한 협력을 통한 <strong>100% 자체 개발 엔진</strong>으로서, 글로벌 최선두 그룹인 Euronext Optiq(~15μs), Deutsche Börse T7(&lt;20μs), NYSE Pillar(21~40μs)와 견줄 수 있는 초저지연 성능을 확보하고 있습니다. 벤더 라이선스 종속이 없어 시장 환경 변화 및 규제 대응에 가장 기민하게 대처할 수 있습니다.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">중요</span>2. CCP 자기부담금(SITG) 투명성 및 CPMI-IOSCO 정량공시(PQD) 강화
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eurex Clearing, CME, DTCC 등 선진 CCP는 결제불이행 폭포 상단(Layer 2~3)에 수억 달러 규모의 SITG(청산소 자기자본)를 명확히 배치하고 금액을 정기 공시함으로써 비부도회원의 신뢰를 얻고 있습니다. KRX 역시 Layer 4에 배정된 SITG의 구체적인 금액 산정 기준을 공개하여 글로벌 평가(CPMI-IOSCO PFMI) 수준을 한 단계 격상시킬 필요가 있습니다.</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<!-- Layout Controls & Responsive Tablet Enhancements -->
+<aside id="floating-dock-handles" aria-label="사이드바 독 제어 핸들">
+  <button id="handle-sidebar-left" class="edge-dock-handle left-handle" title="좌측 메뉴 열기 (단축키: [ )" aria-label="좌측 메뉴 열기">
+    <span class="handle-icon">❯</span>
+    <span class="handle-text">메뉴 열기</span>
+  </button>
+  <button id="handle-sidebar-right" class="edge-dock-handle right-handle" title="우측 목차 열기 (단축키: ] )" aria-label="우측 목차 열기">
+    <span class="handle-icon">❮</span>
+    <span class="handle-text">목차 열기</span>
+  </button>
+</aside>
+
+<script>
+(function() {
+  function initLayoutControls() {
+    const leftSidebar = document.getElementById('quarto-sidebar');
+    const rightSidebar = document.getElementById('quarto-margin-sidebar');
+    const mainContent = document.getElementById('quarto-document-content');
+    
+    // Bail out if not a content page with sidebars
+    if (!mainContent || (!leftSidebar && !rightSidebar)) {
+      return;
+    }
+
+    const body = document.body;
+    const isTablet = window.innerWidth <= 1250;
+
+    // Load saved preferences or smart tablet defaults
+    const savedLeft = localStorage.getItem('exchange_sidebar_left');
+    const savedRight = localStorage.getItem('exchange_sidebar_right');
+    const savedFocus = localStorage.getItem('exchange_focus_mode');
+    const savedFontSize = localStorage.getItem('exchange_font_size');
+
+    if (savedFontSize) {
+      mainContent.style.fontSize = savedFontSize;
+    }
+
+    if (savedFocus === 'true') {
+      body.classList.add('focus-mode-enabled');
+      body.classList.add('sidebar-left-collapsed');
+      body.classList.add('sidebar-right-collapsed');
+    } else {
+      if (savedLeft === 'collapsed') {
+        body.classList.add('sidebar-left-collapsed');
+      }
+      
+      // On tablets, if no explicit right sidebar preference saved, default to collapsed for maximum reading space
+      if (savedRight === 'collapsed' || (isTablet && savedRight === null)) {
+        body.classList.add('sidebar-right-collapsed');
+      }
+    }
+
+    // Insert top toolbar in document header
+    insertToolbar(mainContent);
+    
+    // Bind edge handles
+    bindEdgeHandles();
+
+    // Drawer close handler for tablet right sidebar
+    if (rightSidebar) {
+      rightSidebar.addEventListener('click', function(e) {
+        if (e.target.classList.contains('toc-close-trigger') || (e.clientY < 110 && e.clientX > window.innerWidth - 60)) {
+          toggleRightSidebar();
+        }
+      });
+    }
+
+    // Listen to keyboard shortcuts: [ for left, ] for right, \ for focus mode
+    document.addEventListener('keydown', function(e) {
+      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
+      
+      if (e.key === '[') {
+        e.preventDefault();
+        toggleLeftSidebar();
+      } else if (e.key === ']') {
+        e.preventDefault();
+        toggleRightSidebar();
+      } else if (e.key === '\\') {
+        e.preventDefault();
+        toggleFocusMode();
+      }
+    });
+
+    updateToolbarButtons();
+  }
+
+  function insertToolbar(mainContent) {
+    if (document.getElementById('doc-view-toolbar')) return;
+
+    const toolbar = document.createElement('div');
+    toolbar.id = 'doc-view-toolbar';
+    toolbar.className = 'doc-view-toolbar';
+    toolbar.innerHTML = `
+      <div class="view-toolbar-left">
+        <span class="view-toolbar-label">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px; margin-right:4px;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+          화면 보기:
+        </span>
+        <button type="button" id="btn-toggle-left" class="view-tool-btn" title="사이드바 메뉴 접기/펼치기 (단축키: [ )">
+          <span class="btn-icon">◧</span>
+          <span class="btn-label">메뉴 접기</span>
+        </button>
+        <button type="button" id="btn-toggle-right" class="view-tool-btn" title="우측 목차 접기/펼치기 (단축키: ] )">
+          <span class="btn-icon">◨</span>
+          <span class="btn-label">목차 접기</span>
+        </button>
+        <button type="button" id="btn-toggle-focus" class="view-tool-btn focus-btn" title="양쪽 사이드바를 모두 접고 본문을 넓게 집중해서 봅니다 (단축키: \\ )">
+          <span class="btn-icon">📖</span>
+          <span class="btn-label">넓게 보기 (집중 모드)</span>
+        </button>
+        <div class="font-size-group">
+          <button type="button" id="btn-font-smaller" class="view-tool-btn font-btn" title="글자 작게">A-</button>
+          <button type="button" id="btn-font-larger" class="view-tool-btn font-btn" title="글자 크게">A+</button>
+        </div>
+      </div>
+      <div class="view-toolbar-right">
+        <span class="view-toolbar-hint">💡 태블릿/노트북에서는 사이드바를 접어 본문을 시원하게 읽으실 수 있습니다.</span>
+      </div>
+    `;
+
+    // Try inserting right above .doc-header-card or title block
+    const headerCard = mainContent.querySelector('.doc-header-card');
+    if (headerCard && headerCard.parentNode) {
+      headerCard.parentNode.insertBefore(toolbar, headerCard);
+    } else {
+      const titleBlock = mainContent.querySelector('#title-block-header');
+      if (titleBlock && titleBlock.nextSibling) {
+        titleBlock.parentNode.insertBefore(toolbar, titleBlock.nextSibling);
+      } else {
+        mainContent.prepend(toolbar);
+      }
+    }
+
+    // Attach event listeners
+    const btnLeft = document.getElementById('btn-toggle-left');
+    const btnRight = document.getElementById('btn-toggle-right');
+    const btnFocus = document.getElementById('btn-toggle-focus');
+    const btnFontSmaller = document.getElementById('btn-font-smaller');
+    const btnFontLarger = document.getElementById('btn-font-larger');
+
+    if (btnLeft) btnLeft.addEventListener('click', function() { toggleLeftSidebar(); });
+    if (btnRight) btnRight.addEventListener('click', function() { toggleRightSidebar(); });
+    if (btnFocus) btnFocus.addEventListener('click', function() { toggleFocusMode(); });
+    
+    if (btnFontSmaller) {
+      btnFontSmaller.addEventListener('click', function() {
+        adjustFontSize(mainContent, -1);
+      });
+    }
+    if (btnFontLarger) {
+      btnFontLarger.addEventListener('click', function() {
+        adjustFontSize(mainContent, 1);
+      });
+    }
+  }
+
+  function adjustFontSize(mainContent, delta) {
+    const current = window.getComputedStyle(mainContent).fontSize;
+    const currentPx = parseFloat(current) || 16;
+    const newPx = Math.max(14, Math.min(22, currentPx + delta));
+    mainContent.style.fontSize = newPx + 'px';
+    localStorage.setItem('exchange_font_size', newPx + 'px');
+  }
+
+  function bindEdgeHandles() {
+    const handleLeft = document.getElementById('handle-sidebar-left');
+    const handleRight = document.getElementById('handle-sidebar-right');
+
+    if (handleLeft) {
+      handleLeft.addEventListener('click', function() {
+        toggleLeftSidebar(true);
+      });
+    }
+    if (handleRight) {
+      handleRight.addEventListener('click', function() {
+        toggleRightSidebar(true);
+      });
+    }
+  }
+
+  function toggleLeftSidebar(forceExpand) {
+    const body = document.body;
+    let isCollapsed = body.classList.contains('sidebar-left-collapsed');
+    
+    if (forceExpand === true) {
+      isCollapsed = true;
+    }
+
+    if (isCollapsed) {
+      body.classList.remove('sidebar-left-collapsed');
+      localStorage.setItem('exchange_sidebar_left', 'expanded');
+      body.classList.remove('focus-mode-enabled');
+      localStorage.setItem('exchange_focus_mode', 'false');
+    } else {
+      body.classList.add('sidebar-left-collapsed');
+      localStorage.setItem('exchange_sidebar_left', 'collapsed');
+    }
+    updateToolbarButtons();
+  }
+
+  function toggleRightSidebar(forceExpand) {
+    const body = document.body;
+    let isCollapsed = body.classList.contains('sidebar-right-collapsed');
+
+    if (forceExpand === true) {
+      isCollapsed = true;
+    }
+
+    if (isCollapsed) {
+      body.classList.remove('sidebar-right-collapsed');
+      localStorage.setItem('exchange_sidebar_right', 'expanded');
+      body.classList.remove('focus-mode-enabled');
+      localStorage.setItem('exchange_focus_mode', 'false');
+    } else {
+      body.classList.add('sidebar-right-collapsed');
+      localStorage.setItem('exchange_sidebar_right', 'collapsed');
+    }
+    updateToolbarButtons();
+  }
+
+  function toggleFocusMode() {
+    const body = document.body;
+    const isFocus = body.classList.contains('focus-mode-enabled');
+
+    if (isFocus) {
+      body.classList.remove('focus-mode-enabled');
+      body.classList.remove('sidebar-left-collapsed');
+      body.classList.remove('sidebar-right-collapsed');
+      localStorage.setItem('exchange_focus_mode', 'false');
+      localStorage.setItem('exchange_sidebar_left', 'expanded');
+      localStorage.setItem('exchange_sidebar_right', 'expanded');
+    } else {
+      body.classList.add('focus-mode-enabled');
+      body.classList.add('sidebar-left-collapsed');
+      body.classList.add('sidebar-right-collapsed');
+      localStorage.setItem('exchange_focus_mode', 'true');
+      localStorage.setItem('exchange_sidebar_left', 'collapsed');
+      localStorage.setItem('exchange_sidebar_right', 'collapsed');
+    }
+    updateToolbarButtons();
+  }
+
+  function updateToolbarButtons() {
+    const body = document.body;
+    const btnLeft = document.getElementById('btn-toggle-left');
+    const btnRight = document.getElementById('btn-toggle-right');
+    const btnFocus = document.getElementById('btn-toggle-focus');
+
+    const leftCollapsed = body.classList.contains('sidebar-left-collapsed');
+    const rightCollapsed = body.classList.contains('sidebar-right-collapsed');
+    const isFocus = body.classList.contains('focus-mode-enabled');
+
+    if (btnLeft) {
+      if (leftCollapsed) {
+        btnLeft.classList.add('active');
+        btnLeft.querySelector('.btn-label').textContent = '메뉴 열기';
+        btnLeft.querySelector('.btn-icon').textContent = '▥';
+      } else {
+        btnLeft.classList.remove('active');
+        btnLeft.querySelector('.btn-label').textContent = '메뉴 접기';
+        btnLeft.querySelector('.btn-icon').textContent = '◧';
+      }
+    }
+
+    if (btnRight) {
+      if (rightCollapsed) {
+        btnRight.classList.add('active');
+        btnRight.querySelector('.btn-label').textContent = '목차 열기';
+        btnRight.querySelector('.btn-icon').textContent = '▥';
+      } else {
+        btnRight.classList.remove('active');
+        btnRight.querySelector('.btn-label').textContent = '목차 접기';
+        btnRight.querySelector('.btn-icon').textContent = '◨';
+      }
+    }
+
+    if (btnFocus) {
+      if (isFocus) {
+        btnFocus.classList.add('active');
+        btnFocus.querySelector('.btn-label').textContent = '기본 뷰로 복원';
+        btnFocus.querySelector('.btn-icon').textContent = '↺';
+      } else {
+        btnFocus.classList.remove('active');
+        btnFocus.querySelector('.btn-label').textContent = '넓게 보기 (집중 모드)';
+        btnFocus.querySelector('.btn-icon').textContent = '📖';
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLayoutControls);
+  } else {
+    initLayoutControls();
+  }
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../qmd/analytics/trading_hours.html" class="pagination-link" aria-label="글로벌 24시간 매매세션 타임라인 (Global Trading Hours Timeline)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">글로벌 24시간 매매세션 타임라인 (Global Trading Hours Timeline)</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,298 @@
+---
+title: "인터랙티브 분석 허브 (Visual Analytics Hub)"
+subtitle: "Interactive Benchmarking, Global Sessions & IT Architectures"
+date: "2026-10-22"
+lang: ko
+toc: false
+page-layout: full
+format:
+  html:
+    theme: cosmo
+    css: ../../styles.css
+    self-contained: false
+---
+
+```{=html}
+<style>
+.analytics-hub-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0369a1 100%);
+  color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2.5rem;
+  box-shadow: 0 12px 30px -8px rgba(15, 23, 42, 0.35);
+  text-align: center;
+}
+
+.hub-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.95rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #7dd3fc;
+}
+
+.hub-hero-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
+}
+
+.hub-hero-desc {
+  font-size: 1.05rem;
+  color: #e0f2fe;
+  max-width: 820px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* 3 Main Tool Cards Grid */
+.hub-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+  margin-bottom: 3rem;
+}
+
+.hub-tool-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.85rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.hub-tool-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.card-comparator::before { background: linear-gradient(90deg, #2563eb, #38bdf8); }
+.card-timeline::before { background: linear-gradient(90deg, #0ea5e9, #10b981); }
+.card-engine::before { background: linear-gradient(90deg, #6366f1, #a855f7); }
+
+.hub-tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: #93c5fd;
+}
+
+.tool-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.icon-blue { background: #eff6ff; color: #2563eb; }
+.icon-cyan { background: #ecfeff; color: #0891b2; }
+.icon-purple { background: #f5f3ff; color: #7c3aed; }
+
+.tool-card-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.tool-card-desc {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.tool-card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  font-size: 0.85rem;
+  color: #334155;
+}
+
+.tool-card-features li {
+  padding: 0.35rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tool-card-features li::before {
+  content: "✓";
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.tool-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: var(--transition);
+  background: #1e3a8a;
+  color: #ffffff;
+}
+
+.tool-card-btn:hover {
+  background: #2563eb;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* KPI Banner */
+.hub-kpi-banner {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.kpi-item-val {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.2rem;
+}
+
+.kpi-item-lbl {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+}
+</style>
+
+<div class="analytics-hub-hero">
+  <div class="hub-hero-badge">
+    <span>📊 Interactive Visual Portal</span>
+    <span>•</span>
+    <span>Next-Gen Analytics</span>
+  </div>
+  <div class="hub-hero-title">
+    인터랙티브 거래소 분석 & 벤치마킹 허브
+  </div>
+  <p class="hub-hero-desc">
+    텍스트 중심의 리포트를 직관적인 동적 시각 자료로 전환하여, KRX IT 실무진 및 의사결정권자가 <strong>거래소 간 비교, 글로벌 24시간 세션 추적, 차세대 매매엔진 벤치마크</strong>를 한눈에 수행할 수 있도록 설계된 전용 분석 도구 모음입니다.
+  </p>
+</div>
+
+<!-- 3 Main Interactive Modules -->
+<div class="hub-tools-grid">
+
+  <!-- Tool 1: Comparator -->
+  <div class="hub-tool-card card-comparator">
+    <div>
+      <div class="tool-card-icon icon-blue">⚖️</div>
+      <div class="tool-card-title">거래소 맞춤 비교기</div>
+      <p class="tool-card-desc">
+        사용자가 원하는 2~4개 거래소(KRX, 넥스트레이드, NYSE, JPX 등)를 자유롭게 선택하여, 매매엔진 스펙, 호가 유형, 매매시간, 결제주기 및 증거금 모델을 나란히 한 화면에서 교차 비교합니다.
+      </p>
+      <ul class="tool-card-features">
+        <li>16대 핵심 거래소·청산소 데이터 수록</li>
+        <li>KRX vs Nextrade ATS 전용 프리셋 제공</li>
+        <li>차이점만 강조(Highlight Differences) 기능</li>
+        <li>IT·매매·리스크·청산 분야별 필터링</li>
+      </ul>
+    </div>
+    <a href="comparator.html" class="tool-card-btn">
+      <span>맞춤 비교기 실행</span>
+      <span>→</span>
+    </a>
+  </div>
+
+  <!-- Tool 2: Trading Hours Timeline -->
+  <div class="hub-tool-card card-timeline">
+    <div>
+      <div class="tool-card-icon icon-cyan">⏱️</div>
+      <div class="tool-card-title">24시간 매매세션 타임라인</div>
+      <p class="tool-card-desc">
+        한국 표준시(KST) 및 UTC 기준으로 아시아, 유럽, 북미 주요 12개 시장의 프리마켓, 정규접속매매, 종가경매, 시간외 및 야간거래 세션의 24시간 간트(Gantt) 차트를 시각화합니다.
+      </p>
+      <ul class="tool-card-features">
+        <li>KST / UTC / ET / CET 다중 시간대 지원</li>
+        <li>실시간 현재 시각 인디케이터(Red Needle)</li>
+        <li>시장별 실시간 개장/폐장 상태 배지</li>
+        <li>주요 4대 글로벌 유동성 중첩 구간 분석</li>
+      </ul>
+    </div>
+    <a href="trading_hours.html" class="tool-card-btn">
+      <span>세션 타임라인 확인</span>
+      <span>→</span>
+    </a>
+  </div>
+
+  <!-- Tool 3: Engine Benchmark & Architecture -->
+  <div class="hub-tool-card card-engine">
+    <div>
+      <div class="tool-card-icon icon-purple">⚡</div>
+      <div class="tool-card-title">매매엔진 성능 & 밸류체인</div>
+      <p class="tool-card-desc">
+        KRX Exture 3.0(~49μs)을 포함한 12대 글로벌 매매엔진의 지연시간을 로그/선형 스케일로 정밀 벤치마킹하고, 한·미·유럽·일본의 매매→청산→예탁→RTGS 밸류체인을 다이어그램으로 제공합니다.
+      </p>
+      <ul class="tool-card-features">
+        <li>마이크로초(μs) 단위 인터랙티브 성능 바 차트</li>
+        <li>자체개발 vs 벤더 솔루션 비교 분석</li>
+        <li>4대 자본시장 End-to-End Mermaid 아키텍처</li>
+        <li>글로벌 4대 CCP Default Waterfall 비교</li>
+      </ul>
+    </div>
+    <a href="engine_benchmark.html" class="tool-card-btn">
+      <span>엔진 벤치마크 탐색</span>
+      <span>→</span>
+    </a>
+  </div>
+
+</div>
+
+<!-- KPI Summary Banner -->
+<div class="hub-kpi-banner">
+  <div>
+    <div class="kpi-item-val">60개소</div>
+    <div class="kpi-item-lbl">글로벌 거래소 & 청산소 분석</div>
+  </div>
+  <div>
+    <div class="kpi-item-val">12개</div>
+    <div class="kpi-item-lbl">차세대 매매체결 엔진 벤치마크</div>
+  </div>
+  <div>
+    <div class="kpi-item-val">24시간</div>
+    <div class="kpi-item-lbl">연속 유동성 세션 타임라인</div>
+  </div>
+  <div>
+    <div class="kpi-item-val">4대 시장</div>
+    <div class="kpi-item-lbl">End-to-End 포스트트레이드 밸류체인</div>
+  </div>
+</div>
+```

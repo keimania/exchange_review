@@ -1,0 +1,682 @@
+---
+title: "차세대 매매엔진 성능 벤치마킹 & 밸류체인 다이어그램"
+subtitle: "Visual Analytics & IT Architecture"
+date: "2026-10-22"
+lang: ko
+toc: false
+page-layout: full
+format:
+  html:
+    theme: cosmo
+    css: ../../styles.css
+    self-contained: false
+---
+
+```{=html}
+<style>
+/* Benchmark Hero */
+.benchmark-hero {
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e3a8a 100%);
+  color: #ffffff;
+  padding: 2.2rem 2rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(30, 27, 75, 0.35);
+}
+
+.benchmark-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.85rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #c7d2fe;
+}
+
+.benchmark-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.benchmark-desc {
+  font-size: 0.98rem;
+  color: #e0e7ff;
+  max-width: 900px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Chart Container & Controls */
+.chart-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.chart-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.chart-title-wrap h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.chart-title-wrap p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+.chart-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-toggle-group {
+  display: inline-flex;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  padding: 2px;
+}
+
+.btn-toggle-item {
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-toggle-item.active {
+  background: #1e3a8a;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Custom Interactive SVG Latency Chart */
+.interactive-chart-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.engine-bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  position: relative;
+  font-size: 0.86rem;
+  transition: transform 0.15s ease;
+}
+
+.engine-bar-row:hover {
+  transform: translateX(4px);
+}
+
+.engine-label-box {
+  width: 220px;
+  min-width: 220px;
+  text-align: right;
+  padding-right: 1.25rem;
+}
+
+.engine-name {
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.engine-vendor {
+  font-size: 0.76rem;
+  color: #64748b;
+}
+
+.engine-track {
+  flex: 1;
+  height: 32px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+}
+
+.engine-bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-weight: 800;
+  font-size: 0.82rem;
+  color: #ffffff;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.fill-krx {
+  background: linear-gradient(90deg, #2563eb 0%, #1d4ed8 100%);
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
+}
+
+.fill-tier1 {
+  background: linear-gradient(90deg, #0ea5e9 0%, #0284c7 100%);
+}
+
+.fill-other {
+  background: linear-gradient(90deg, #64748b 0%, #475569 100%);
+}
+
+.engine-badge-tag {
+  margin-left: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+  min-width: 90px;
+}
+
+/* Architecture Tab Section */
+.arch-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.arch-tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.75rem;
+}
+
+.arch-nav-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.arch-nav-btn:hover {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+}
+
+.arch-nav-btn.active {
+  background: #1e3a8a;
+  border-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.arch-content-panel {
+  display: none;
+}
+
+.arch-content-panel.active {
+  display: block;
+}
+
+.arch-detail-box {
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* Waterfall Comparison Table */
+.waterfall-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.waterfall-col {
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.waterfall-col-header {
+  padding: 0.85rem 1rem;
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header-krx { background: #1e3a8a; }
+.header-dtcc { background: #0f766e; }
+.header-cme { background: #c2410c; }
+.header-eurex { background: #4338ca; }
+
+.waterfall-step {
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.waterfall-step:last-child {
+  border-bottom: none;
+}
+
+.step-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: 800;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-sitg {
+  background: #fef08a !important;
+  color: #854d0e !important;
+  font-weight: 800;
+}
+</style>
+
+<div class="benchmark-hero">
+  <div class="benchmark-hero-badge">
+    <span>⚡ Next-Gen Engine Analytics</span>
+    <span>•</span>
+    <span>Architecture & Value Chain</span>
+  </div>
+  <div class="benchmark-title">
+    차세대 매매엔진 성능 벤치마킹 & 포스트트레이드 밸류체인
+  </div>
+  <p class="benchmark-desc">
+    KRX Exture 3.0을 비롯한 <strong>글로벌 12대 핵심 매매체결 엔진</strong>의 지연시간(Latency)을 마이크로초(μs) 단위로 정밀 비교하고, 각국 <strong>거래소(매매) → 청산(CCP) → 예탁결제(CSD) → 중앙은행(RTGS)</strong> 밸류체인 및 결제불이행 폭포(Default Waterfall) 구조를 시각화합니다.
+  </p>
+</div>
+
+<!-- Section 1: Engine Benchmark Chart -->
+<div class="chart-card">
+  <div class="chart-header">
+    <div class="chart-title-wrap">
+      <h3>⚡ 글로벌 매매체결 엔진 지연시간(Latency) 벤치마크</h3>
+      <p>단위: 마이크로초 (μs, 1초 = 1,000,000μs / 숫자가 낮을수록 초고속 체결 성능)</p>
+    </div>
+    
+    <div class="chart-controls">
+      <div class="btn-toggle-group">
+        <button class="btn-toggle-item active" onclick="setScale('log', this)">로그 스케일 (Log)</button>
+        <button class="btn-toggle-item" onclick="setScale('linear', this)">선형 스케일 (Linear)</button>
+      </div>
+      
+      <div class="btn-toggle-group">
+        <button class="btn-toggle-item active" onclick="setFilter('all', this)">전체 엔진</button>
+        <button class="btn-toggle-item" onclick="setFilter('inhouse', this)">자체 개발</button>
+        <button class="btn-toggle-item" onclick="setFilter('vendor', this)">벤더 솔루션</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="interactive-chart-container" id="engineChartContainer">
+    <!-- Populated by JS -->
+  </div>
+</div>
+
+<!-- Section 2: End-to-End Value Chain Architectures -->
+<div class="arch-card">
+  <div class="chart-header">
+    <div class="chart-title-wrap">
+      <h3>🏛️ 글로벌 4대 자본시장 End-to-End 포스트트레이드 밸류체인</h3>
+      <p>주문·체결(거래소) → 청산·차감(CCP) → 예탁·결제(CSD) → 중앙은행 결제(RTGS) 연결 구조</p>
+    </div>
+  </div>
+
+  <div class="arch-tab-nav">
+    <button class="arch-nav-btn active" onclick="switchArch('kr', this)">🇰🇷 대한민국 (KRX · Nextrade · KSD · BOK)</button>
+    <button class="arch-nav-btn" onclick="switchArch('us', this)">🇺🇸 미국 (NYSE · NASDAQ · DTCC · Fedwire)</button>
+    <button class="arch-nav-btn" onclick="switchArch('eu', this)">🇪🇺 유럽연합 (Euronext · Eurex · T2S · TARGET2)</button>
+    <button class="arch-nav-btn" onclick="switchArch('jp', this)">🇯🇵 일본 (TSE · Japannext · JSCC · BOJ-NET)</button>
+  </div>
+
+  <!-- Panel KR -->
+  <div class="arch-content-panel active" id="arch_kr">
+```mermaid
+graph TD
+    classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
+    classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
+    classDef csd fill:#fefce8,stroke:#ca8a04,stroke-width:2px;
+    classDef rtgs fill:#faf5ff,stroke:#9333ea,stroke-width:2px;
+
+    Inv["투자자 / 브로커 (증권사)"] --> SOR["스마트오더라우팅 (SOR) 최선집행"]
+    
+    subgraph 매매시장_Trading_Venues ["1. 매매체결 시장 (Trading Venues)"]
+        SOR --> KRX["KRX 한국거래소 (정규시장)<br/>Exture 3.0 (~49μs)<br/>09:00~15:30 (파생야간 18:00~06:00)"]:::venue
+        SOR --> NXT["넥스트레이드 (Nextrade ATS)<br/>저지연 매칭엔진<br/>08:00~20:00 (12시간 연속거래)"]:::venue
+    end
+
+    KRX --> KRX_CCP["2. 청산 및 다자간 차감 (Central Counterparty)<br/>KRX 청산부서 (통합 CCP)<br/>• 주식·파생상품 다자간 차감 (대금 95%+ 감축)<br/>• 원화 IRS 및 통화스왑(CRS) 법정 의무청산"]:::ccp
+    NXT --> KRX_CCP
+
+    KRX_CCP --> KSD["3. 증권 예탁 및 장부대체 (CSD)<br/>KSD 한국예탁결제원 (SAFE+)<br/>• 주식 BIS DVP Model 2 (총액증권/순액자금)<br/>• 10억 원 단위 분할결제 정착 (유동성 리스크 완화)<br/>• 토큰증권(ST) 법정 중앙등록기관 (2027.1 시행)"]:::csd
+
+    KSD --> BOK["4. 최종 자금결제 (Central Bank Money)<br/>한국은행 한은금융망 (BOK-Wire+)<br/>• 중앙은행 화폐 RTGS 최종 결제 완료"]:::rtgs
+```
+    <div class="arch-detail-box">
+      <strong>🇰🇷 한국 자본시장 구조적 특징:</strong>
+      2025년 3월 대체거래소(Nextrade ATS) 출범으로 <strong>매매 영역은 복수 시장 경쟁(KRX vs NXT) 및 증권사 SOR 체제로 전환</strong>되었으나, <strong>청산(KRX CCP)과 결제(KSD SAFE+)는 단일 국가 인프라로 수렴</strong>되는 고효율 집중 모델을 채택하고 있습니다. 2026년 4월 10억 원 단위 분할결제 제도가 정착되어 결제유동성 리스크를 크게 낮추었습니다.
+    </div>
+  </div>
+
+  <!-- Panel US -->
+  <div class="arch-content-panel" id="arch_us">
+```mermaid
+graph TD
+    classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
+    classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
+    classDef csd fill:#fefce8,stroke:#ca8a04,stroke-width:2px;
+    classDef rtgs fill:#faf5ff,stroke:#9333ea,stroke-width:2px;
+
+    Inv["기관 / 리테일 브로커 (Broker-Dealers)"] --> Routing["Reg NMS 최선집행 / 내부화 / PFOF"]
+    
+    subgraph 매매시장_US_Venues ["1. 극도로 분산된 매매장소 (16대 거래소 + 30개+ ATS)"]
+        Routing --> NYSE["NYSE (Pillar, 21~40μs)"]:::venue
+        Routing --> NSDQ["NASDAQ (Eqlipse, <40μs)"]:::venue
+        Routing --> CBOE["Cboe / IEX / 24X / Dark Pools"]:::venue
+    end
+
+    NYSE --> NSCC["2. 주식 중앙청산 (CCP)<br/>DTCC - NSCC (National Securities Clearing Corp)<br/>• 연속차감결제(CNS)로 결제금액 98% 감축<br/>• T+1 결제주기 전면 안착 (2024.5 완료)"]:::ccp
+    NSDQ --> NSCC
+    CBOE --> NSCC
+
+    NSCC --> DTC["3. 중앙증권예탁기관 (CSD)<br/>DTCC - DTC (Depository Trust Company)<br/>• 장부기재 결제 (Book-entry)<br/>• BIS DVP Model 2"]:::csd
+
+    DTC --> Fedwire["4. 최종 자금결제 (RTGS)<br/>연방준비제도 Fedwire Funds Service<br/>• 중앙은행 화폐 당일 최종 결제"]:::rtgs
+```
+    <div class="arch-detail-box">
+      <strong>🇺🇸 미국 자본시장 구조적 특징:</strong>
+      매매 시장은 16개 정규거래소와 30개 이상의 다크풀/ATS로 극도로 파편화되어 있으나, 후속거래는 지주회사 형태의 <strong>DTCC 산하 자회사(NSCC: 주식 CCP, FICC: 국채 CCP, DTC: CSD)로 일원화</strong>되어 있습니다. 2024년 5월 글로벌 FMI 중 최초로 T+1 결제 단축을 전면 성공시켰습니다.
+    </div>
+  </div>
+
+  <!-- Panel EU -->
+  <div class="arch-content-panel" id="arch_eu">
+```mermaid
+graph TD
+    classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
+    classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
+    classDef csd fill:#fefce8,stroke:#ca8a04,stroke-width:2px;
+    classDef rtgs fill:#faf5ff,stroke:#9333ea,stroke-width:2px;
+
+    Inv["유럽 투자자 / 은행"] --> MiFID["MiFID II 최선집행"]
+
+    subgraph 매매시장_EU_Venues ["1. 범유럽 다자간 매매시장 (Venues & MTFs)"]
+        MiFID --> ENX["Euronext (Optiq, ~15μs)"]:::venue
+        MiFID --> DB["Deutsche Börse (T7, <20μs)"]:::venue
+        MiFID --> MTF["Cboe Europe / Aquis MTF"]:::venue
+    end
+
+    subgraph 청산소_Interoperable_CCPs ["2. 상호운용 청산 체계 (Interoperable CCPs)"]
+        ENX --> CCP_Group["LCH SA ↔ SIX x-clear ↔ Cboe Clear Europe<br/>(상호운용성 약정에 따른 자유 청산소 선택)"]:::ccp
+        DB --> Eurex_Clear["Eurex Clearing (PRISMA VaR/ES)"]:::ccp
+    end
+
+    CCP_Group --> T2S["3. 범유럽 통합 결제 인프라 (CSD Network)<br/>TARGET2-Securities (T2S, ECB 운영)<br/>• Euroclear Bank / Clearstream / 24개 각국 CSD 연결<br/>• BIS DVP Model 1 실시간 총액 결제<br/>• 2027년 10월 11일 T+1 전환 확정"]:::csd
+    Eurex_Clear --> T2S
+
+    T2S --> TARGET2["4. 유로존 중앙은행 자금결제 (RTGS)<br/>ECB TARGET2 결제망"]:::rtgs
+```
+    <div class="arch-detail-box">
+      <strong>🇪🇺 유럽연합(EU) 구조적 특징:</strong>
+      27개 회원국의 역사적 분절을 극복하기 위해 <strong>CCP 간 상호운용성(Interoperability) 체계</strong>와 ECB가 직접 운영하는 <strong>T2S(범유럽 통합 증권결제 플랫폼)</strong>를 구축하여, 복수 청산소와 24개국 CSD 간의 국경 없는 결제를 실현하고 있습니다. EU는 2027년 10월 11일 T+1 결제주기 전환을 입법화했습니다.
+    </div>
+  </div>
+
+  <!-- Panel JP -->
+  <div class="arch-content-panel" id="arch_jp">
+```mermaid
+graph TD
+    classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
+    classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
+    classDef csd fill:#fefce8,stroke:#ca8a04,stroke-width:2px;
+    classDef rtgs fill:#faf5ff,stroke:#9333ea,stroke-width:2px;
+
+    Inv["일본 기관 / 개인투자자"] --> SOR_JP["증권사 SOR 라우팅"]
+
+    subgraph 매매시장_JP_Venues ["1. 매매체결 시장"]
+        SOR_JP --> TSE["도쿄증권거래소 (TSE)<br/>arrowhead 4.0 (~200μs)"]:::venue
+        SOR_JP --> PTS["대체거래소 (PTS)<br/>Japannext / Cboe Japan"]:::venue
+    end
+
+    TSE --> JSCC["2. 단일 중앙청산소 (CCP)<br/>JSCC (일본증권청산기구)<br/>• 주식·국채·파생상품·장외IRS 일원화 청산<br/>• 2023.11 SPAN에서 VaR 산출 전면 전환 완료"]:::ccp
+    PTS --> JSCC
+
+    JSCC --> JASDEC["3. 중앙증권예탁기관 (CSD)<br/>JASDEC (일본증권보관진체기구)<br/>• 주식 DVP 장부대체 결제"]:::csd
+
+    JASDEC --> BOJ["4. 중앙은행 자금결제 (RTGS)<br/>일본은행 BOJ-NET<br/>• 엔화 당일 최종 결제"]:::rtgs
+```
+    <div class="arch-detail-box">
+      <strong>🇯🇵 일본 자본시장 구조적 특징:</strong>
+      한국과 유사하게 <strong>단일 중앙청산소(JSCC)와 단일 예탁기관(JASDEC)</strong>을 중심으로 운영됩니다. 특히 JSCC는 2023년 11월 장내 파생상품에 대해 SPAN을 폐지하고 <strong>Historical Simulation VaR(HS-VaR)로 전면 전환을 완료(VMA v4.0 가동)</strong>하여, KRX의 증거금 체계 고도화에 있어 가장 직접적인 벤치마크 사례를 제공합니다.
+    </div>
+  </div>
+</div>
+
+<!-- Section 3: Default Waterfall Comparison -->
+<div class="arch-card">
+  <div class="chart-header">
+    <div class="chart-title-wrap">
+      <h3>🛡️ 글로벌 4대 CCP 결제불이행 폭포(Default Waterfall) 단계별 비교</h3>
+      <p>회원 부도 발생 시 청산소의 손실 흡수 단계 및 자기부담분(SITG) 배치 비교</p>
+    </div>
+  </div>
+
+  <div class="waterfall-grid">
+    <!-- KRX -->
+    <div class="waterfall-col">
+      <div class="waterfall-col-header header-krx">🇰🇷 KRX 청산 (한국)</div>
+      <div class="waterfall-step"><span class="step-num">1</span> <span>부도회원 증거금 (Initial Margin)</span></div>
+      <div class="waterfall-step"><span class="step-num">2</span> <span>부도회원 청산기금 분담금</span></div>
+      <div class="waterfall-step"><span class="step-num">3</span> <span>손해배상공동기금 (~1,000억 원)</span></div>
+      <div class="waterfall-step"><span class="step-num step-sitg">4</span> <span style="font-weight:700; color:#854d0e;">KRX 자기부담금 (SITG)</span></div>
+      <div class="waterfall-step"><span class="step-num">5</span> <span>비부도회원 추가 손실 분담금</span></div>
+      <div class="waterfall-step"><span class="step-num">6</span> <span>법정 정리 및 FSC 회복 절차</span></div>
+    </div>
+
+    <!-- DTCC -->
+    <div class="waterfall-col">
+      <div class="waterfall-col-header header-dtcc">🇺🇸 DTCC / NSCC (미국)</div>
+      <div class="waterfall-step"><span class="step-num">1</span> <span>부도회원 청산기금 (Clearing Fund)</span></div>
+      <div class="waterfall-step"><span class="step-num step-sitg">2</span> <span style="font-weight:700; color:#854d0e;">NSCC Corporate Contribution (SITG)</span></div>
+      <div class="waterfall-step"><span class="step-num">3</span> <span>비부도회원 청산기금 비례 차감</span></div>
+      <div class="waterfall-step"><span class="step-num">4</span> <span>Assessment Power (추가 납부)</span></div>
+      <div class="waterfall-step"><span class="step-num">5</span> <span>Dodd-Frank Title II (OLA 정리 절차)</span></div>
+    </div>
+
+    <!-- CME -->
+    <div class="waterfall-col">
+      <div class="waterfall-col-header header-cme">⚡ CME Clearing (미국)</div>
+      <div class="waterfall-step"><span class="step-num">1</span> <span>부도회원 증거금 및 담보</span></div>
+      <div class="waterfall-step"><span class="step-num">2</span> <span>부도회원 보증기금 (Guaranty Fund)</span></div>
+      <div class="waterfall-step"><span class="step-num step-sitg">3</span> <span style="font-weight:700; color:#854d0e;">CME Corporate Contribution ($1억+)</span></div>
+      <div class="waterfall-step"><span class="step-num">4</span> <span>비부도회원 보증기금 분담금</span></div>
+      <div class="waterfall-step"><span class="step-num">5</span> <span>Assessment Calls (최대 275%)</span></div>
+      <div class="waterfall-step"><span class="step-num">6</span> <span>VMGH (변동증거금 헤어컷) / Tear-up</span></div>
+    </div>
+
+    <!-- Eurex -->
+    <div class="waterfall-col">
+      <div class="waterfall-col-header header-eurex">🇪🇺 Eurex Clearing (독일)</div>
+      <div class="waterfall-step"><span class="step-num">1</span> <span>부도회원 증거금 (Margin)</span></div>
+      <div class="waterfall-step"><span class="step-num">2</span> <span>부도회원 청산기금 분담금</span></div>
+      <div class="waterfall-step"><span class="step-num step-sitg">3</span> <span style="font-weight:700; color:#854d0e;">Eurex Dedicated Capital (SITG 1차)</span></div>
+      <div class="waterfall-step"><span class="step-num">4</span> <span>비부도회원 청산기금 분담금</span></div>
+      <div class="waterfall-step"><span class="step-num step-sitg">5</span> <span style="font-weight:700; color:#854d0e;">Eurex 추가 자본 (SITG 2차)</span></div>
+      <div class="waterfall-step"><span class="step-num">6</span> <span>EU CCP RRR (VMGH, 현금 요구, 정리)</span></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Matching Engines Database
+const ENGINES_DB = [
+  { name: "Optiq", venue: "Euronext (범유럽 7개국)", dev: "inhouse", latency: 15, throughput: "일 최대 1억 건+", hw: "Commodity x86, Linux, Kafka", tag: "~15 μs" },
+  { name: "T7", venue: "Deutsche Börse / Eurex", dev: "inhouse", latency: 18, throughput: "초당 수십만 건", hw: "Commodity x86, Linux C++, FPGA", tag: "< 20 μs" },
+  { name: "Pillar", venue: "NYSE 뉴욕증권거래소", dev: "inhouse", latency: 30, throughput: "초당 5,000건/세션", hw: "x86, Red Hat Enterprise Linux", tag: "21~40 μs" },
+  { name: "Eqlipse / INET", venue: "NASDAQ 나스닥", dev: "inhouse", latency: 35, throughput: "초당 100만 건+", hw: "AWS Outposts / x86 On-premise", tag: "< 40 μs" },
+  { name: "Exture 3.0", venue: "KRX 한국거래소 🇰🇷", dev: "inhouse", latency: 49, throughput: "일 1.5억 건 이상", hw: "Koscom 자체개발, Solace PubSub+", tag: "~49 μs" },
+  { name: "Titan", venue: "SGX 싱가포르거래소", dev: "vendor", latency: 80, throughput: "초당 수만 건", hw: "Nasdaq Technology (X-Stream)", tag: "< 100 μs" },
+  { name: "Millennium", venue: "LSE 런던 / JSE 요하네스버그", dev: "vendor", latency: 85, throughput: "초당 수십만 건", hw: "LSEG Technology C++", tag: "< 100 μs" },
+  { name: "Orion (OTP-C)", venue: "HKEX 홍콩거래소", dev: "inhouse", latency: 90, throughput: "초당 60,000건", hw: "SDNet/3 초저지연망", tag: "< 100 μs" },
+  { name: "SIBE-Smart", venue: "BME 스페인거래소", dev: "inhouse", latency: 100, throughput: "초당 수만 건", hw: "자체개발 분산 아키텍처", tag: "~100 μs" },
+  { name: "arrowhead 4.0", venue: "JPX 도쿄거래소", dev: "vendor", latency: 200, throughput: "일 수억 건 처리", hw: "Fujitsu PRIMERGY M6 462대", tag: "~200 μs" },
+  { name: "CME Globex", venue: "CME Group 파생상품", dev: "inhouse", latency: 450, throughput: "일 6,000만 계약 피크", hw: "Google Cloud 하이브리드", tag: "서브밀리초" },
+  { name: "FAST 2세대", venue: "TWSE 대만증권거래소", dev: "inhouse", latency: 2800, throughput: "초당 80,000건", hw: "자체개발 메모리 아키텍처", tag: "< 3,000 μs" }
+];
+
+let currentScale = "log"; // log vs linear
+let currentFilter = "all"; // all vs inhouse vs vendor
+
+document.addEventListener("DOMContentLoaded", function() {
+  renderEngineChart();
+});
+
+function setScale(scale, btn) {
+  currentScale = scale;
+  btn.parentElement.querySelectorAll(".btn-toggle-item").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderEngineChart();
+}
+
+function setFilter(filter, btn) {
+  currentFilter = filter;
+  btn.parentElement.querySelectorAll(".btn-toggle-item").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderEngineChart();
+}
+
+function renderEngineChart() {
+  const container = document.getElementById("engineChartContainer");
+  container.innerHTML = "";
+
+  const filtered = ENGINES_DB.filter(e => {
+    if (currentFilter === "all") return true;
+    return e.dev === currentFilter;
+  });
+
+  const maxLatency = Math.max(...filtered.map(e => e.latency));
+  const minLatency = 10;
+
+  for (const eng of filtered) {
+    const row = document.createElement("div");
+    row.className = "engine-bar-row";
+
+    // Calculate width percentage
+    let widthPct = 0;
+    if (currentScale === "linear") {
+      widthPct = Math.max(3, (eng.latency / maxLatency) * 100);
+    } else {
+      // Log scale: log10(latency) / log10(max)
+      const logVal = Math.log10(eng.latency);
+      const logMax = Math.log10(maxLatency);
+      const logMin = Math.log10(minLatency);
+      widthPct = Math.max(4, ((logVal - logMin) / (logMax - logMin)) * 96 + 4);
+    }
+
+    let fillClass = "fill-other";
+    if (eng.name.includes("Exture")) {
+      fillClass = "fill-krx";
+    } else if (eng.latency <= 50) {
+      fillClass = "fill-tier1";
+    }
+
+    row.innerHTML = `
+      <div class="engine-label-box">
+        <div class="engine-name">${eng.name}</div>
+        <div class="engine-vendor">${eng.venue}</div>
+      </div>
+      <div class="engine-track">
+        <div class="engine-bar-fill ${fillClass}" style="width: ${widthPct}%;">
+          ${eng.tag}
+        </div>
+      </div>
+      <div class="engine-badge-tag">${eng.dev === 'inhouse' ? '자체개발' : '외부벤더'}</div>
+    `;
+
+    container.appendChild(row);
+  }
+}
+
+function switchArch(regionKey, btn) {
+  document.querySelectorAll(".arch-nav-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+
+  document.querySelectorAll(".arch-content-panel").forEach(p => p.classList.remove("active"));
+  const target = document.getElementById(`arch_${regionKey}`);
+  if (target) {
+    target.classList.add("active");
+  }
+}
+</script>
+```
+
+---
+
+### 💡 KRX IT 인프라 아키텍처 제언
+
+::: {.callout-note appearance="simple"}
+#### 1. 자체 개발 역량과 글로벌 톱티어 지연시간(~49μs)의 가치
+KRX Exture 3.0은 Koscom과의 긴밀한 협력을 통한 **100% 자체 개발 엔진**으로서, 글로벌 최선두 그룹인 Euronext Optiq(~15μs), Deutsche Börse T7(<20μs), NYSE Pillar(21~40μs)와 견줄 수 있는 초저지연 성능을 확보하고 있습니다. 벤더 라이선스 종속이 없어 시장 환경 변화 및 규제 대응에 가장 기민하게 대처할 수 있습니다.
+:::
+
+::: {.callout-important appearance="simple"}
+#### 2. CCP 자기부담금(SITG) 투명성 및 CPMI-IOSCO 정량공시(PQD) 강화
+Eurex Clearing, CME, DTCC 등 선진 CCP는 결제불이행 폭포 상단(Layer 2~3)에 수억 달러 규모의 SITG(청산소 자기자본)를 명확히 배치하고 금액을 정기 공시함으로써 비부도회원의 신뢰를 얻고 있습니다. KRX 역시 Layer 4에 배정된 SITG의 구체적인 금액 산정 기준을 공개하여 글로벌 평가(CPMI-IOSCO PFMI) 수준을 한 단계 격상시킬 필요가 있습니다.
+:::

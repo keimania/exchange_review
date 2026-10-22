@@ -1,0 +1,864 @@
+---
+title: "글로벌 24시간 매매세션 타임라인 (Global Trading Hours Timeline)"
+subtitle: "Visual Analytics & Market Liquidity"
+date: "2026-10-22"
+lang: ko
+toc: false
+page-layout: full
+format:
+  html:
+    theme: cosmo
+    css: ../../styles.css
+    self-contained: false
+---
+
+```{=html}
+<style>
+/* Trading Hours Timeline Styles */
+.timeline-hero {
+  background: linear-gradient(135deg, #091e3a 0%, #1e40af 100%);
+  color: #ffffff;
+  padding: 2.2rem 2rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.3);
+}
+
+.timeline-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.85rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #93c5fd;
+}
+
+.timeline-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-desc {
+  font-size: 0.98rem;
+  color: #cbd5e1;
+  max-width: 900px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Control & Realtime Status Bar */
+.timeline-status-bar {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.current-time-display {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.clock-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.time-val {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.time-sub {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.tz-selector-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tz-btn {
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.tz-btn:hover {
+  border-color: #3b82f6;
+  color: #1d4ed8;
+}
+
+.tz-btn.active {
+  background: #1e3a8a;
+  border-color: #1e3a8a;
+  color: #ffffff;
+}
+
+/* Legend */
+.timeline-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.84rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.legend-color-box {
+  width: 16px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.color-pre { background: #bae6fd; border: 1px solid #0284c7; }
+.color-regular { background: #10b981; }
+.color-lunch { background: #e2e8f0; border: 1px dashed #94a3b8; }
+.color-close { background: #8b5cf6; }
+.color-post { background: #f59e0b; }
+.color-night { background: #3b82f6; }
+
+/* Gantt Chart Container */
+.gantt-outer-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.gantt-table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+}
+
+.gantt-header-row th {
+  padding: 0.65rem 0.2rem;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #475569;
+  background: #f8fafc;
+  border-bottom: 2px solid #cbd5e1;
+  border-left: 1px solid #e2e8f0;
+}
+
+.gantt-header-row th:first-child {
+  border-left: none;
+  min-width: 220px;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.gantt-row {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.15s ease;
+}
+
+.gantt-row:hover {
+  background: #f8fafc;
+}
+
+.gantt-row-title-cell {
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #1e293b;
+  border-right: 2px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+.market-status-pill {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-left: 0.4rem;
+}
+
+.status-open { background: #dcfce7; color: #166534; }
+.status-auction { background: #fef08a; color: #854d0e; }
+.status-extended { background: #dbeafe; color: #1e40af; }
+.status-closed { background: #f1f5f9; color: #64748b; }
+
+.gantt-timeline-cell {
+  position: relative;
+  padding: 0;
+  height: 48px;
+}
+
+.gantt-hour-grid {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  pointer-events: none;
+}
+
+.gantt-hour-col {
+  border-right: 1px solid #f1f5f9;
+}
+
+.gantt-hour-col:nth-child(6n) {
+  border-right: 1px solid #cbd5e1;
+}
+
+/* Session Block */
+.session-bar {
+  position: absolute;
+  top: 9px;
+  height: 30px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.15s ease, filter 0.15s ease;
+  z-index: 2;
+}
+
+.session-bar:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  z-index: 5;
+}
+
+.bar-regular {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.bar-pre {
+  background: #38bdf8;
+  color: #0c4a6e;
+}
+
+.bar-close {
+  background: #8b5cf6;
+}
+
+.bar-post {
+  background: #f59e0b;
+}
+
+.bar-night {
+  background: linear-gradient(135deg, #3b82f6 0%, #1e3a8a 100%);
+}
+
+.bar-nxt {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+}
+
+/* Current Time Needle */
+.current-time-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ef4444;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.current-time-marker {
+  position: absolute;
+  top: -8px;
+  transform: translateX(-50%);
+  background: #ef4444;
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+/* Overlap Analysis Cards */
+.overlap-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.overlap-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.overlap-card:hover {
+  border-color: #93c5fd;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.overlap-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.overlap-badge.morning { background: #dbeafe; color: #1e40af; }
+.overlap-badge.afternoon { background: #fef3c7; color: #92400e; }
+.overlap-badge.evening { background: #e0e7ff; color: #3730a3; }
+.overlap-badge.night { background: #f3e8ff; color: #6b21a8; }
+
+.overlap-time {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+}
+
+.overlap-desc {
+  font-size: 0.87rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+</style>
+
+<div class="timeline-hero">
+  <div class="timeline-hero-badge">
+    <span>🌐 24/5 Global Market Operations</span>
+    <span>•</span>
+    <span>Interactive Visualizer</span>
+  </div>
+  <div class="timeline-title">
+    글로벌 24시간 매매세션 타임라인
+  </div>
+  <p class="timeline-desc">
+    한국거래소(KRX 정규장 09:00~15:30 및 자체 파생 야간거래 18:00~06:00), 넥스트레이드(Nextrade ATS 08:00~20:00), 그리고 아시아·유럽·북미 주요 12대 거래소의 장전·정규·장후·야간 세션이 맞물리는 <strong>글로벌 24시간 유동성 중첩 구간</strong>을 시각화합니다.
+  </p>
+</div>
+
+<!-- Realtime Status & Timezone Switcher -->
+<div class="timeline-status-bar">
+  <div class="current-time-display">
+    <div class="clock-icon-wrap">⏱️</div>
+    <div>
+      <div class="time-val" id="liveClock">16:40:00</div>
+      <div class="time-sub" id="clockZoneLabel">한국 표준시 (KST, UTC+9) 기준</div>
+    </div>
+  </div>
+
+  <div class="tz-selector-wrap">
+    <span style="font-size: 0.86rem; font-weight: 700; color: #64748b;">기준 시간대 선택:</span>
+    <button class="tz-btn active" onclick="setTimezone('KST', this)">🇰🇷 KST (UTC+9)</button>
+    <button class="tz-btn" onclick="setTimezone('UTC', this)">🌐 UTC (GMT)</button>
+    <button class="tz-btn" onclick="setTimezone('ET', this)">🇺🇸 ET (New York)</button>
+    <button class="tz-btn" onclick="setTimezone('CET', this)">🇪🇺 CET (Frankfurt/Paris)</button>
+  </div>
+</div>
+
+<!-- Legend -->
+<div class="timeline-legend">
+  <div class="legend-item"><span class="legend-color-box color-pre"></span> 장전 / 시가단일가 (Pre-market/Auction)</div>
+  <div class="legend-item"><span class="legend-color-box color-regular"></span> 정규 접속매매 (Continuous Trading)</div>
+  <div class="legend-item"><span class="legend-color-box color-lunch"></span> 점심 휴장 (Lunch Break)</div>
+  <div class="legend-item"><span class="legend-color-box color-close"></span> 종가단일가매매 (Closing Auction)</div>
+  <div class="legend-item"><span class="legend-color-box color-post"></span> 시간외 / 애프터마켓 (After-hours)</div>
+  <div class="legend-item"><span class="legend-color-box color-night"></span> 야간거래 세션 (Night Session / 24h)</div>
+</div>
+
+<!-- Gantt Chart Wrapper -->
+<div class="gantt-outer-wrapper">
+  <table class="gantt-table">
+    <thead class="gantt-header-row">
+      <tr>
+        <th>거래소 및 시장</th>
+        <th colspan="24">
+          <div style="display: flex; justify-content: space-between; font-size: 0.76rem; font-weight: 700; color: #64748b; padding: 0 4px;" id="ganttHoursHeader">
+            <!-- 0 ~ 24 Hour ticks generated by JS -->
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody id="ganttBody">
+      <!-- Populated dynamically via JS -->
+    </tbody>
+  </table>
+</div>
+
+<!-- Overlap Analysis Section -->
+<h3 style="font-size: 1.35rem; font-weight: 800; color: #0f172a; margin-top: 2rem; margin-bottom: 1rem;">
+  🔄 주요 글로벌 유동성 중첩 구간 분석 (Market Overlap Windows)
+</h3>
+
+<div class="overlap-cards-grid">
+  <!-- Window 1 -->
+  <div class="overlap-card">
+    <span class="overlap-badge morning">🌅 아침 세션 중첩</span>
+    <div class="overlap-time">08:00 ~ 09:00 KST</div>
+    <p class="overlap-desc">
+      <strong>넥스트레이드(NXT) 프리마켓 개장</strong>(08:00)과 미국 증시 시간외(After-hours) 마감, 도쿄(TSE) 및 싱가포르(SGX) 장전 호가 접수가 맞물려 아침 금융 뉴스 및 미국 종가 이벤트가 한국 시장에 조기 반영되는 구간입니다.
+    </p>
+  </div>
+
+  <!-- Window 2 -->
+  <div class="overlap-card">
+    <span class="overlap-badge afternoon">☕ 오후 유럽 개장 중첩</span>
+    <div class="overlap-time">15:30 ~ 18:00 KST</div>
+    <p class="overlap-desc">
+      <strong>KRX 정규장 마감 후 시간외 매매</strong> 및 <strong>넥스트레이드 애프터마켓(15:30~20:00)</strong>이 런던(LSE), 프랑크푸르트(Xetra), 파리(Euronext)의 정규장 개장(한국시간 17:00)과 맞물려 유럽발 거시경제 지표 발표에 따른 가격 변동이 발생합니다.
+    </p>
+  </div>
+
+  <!-- Window 3 -->
+  <div class="overlap-card">
+    <span class="overlap-badge evening">🌆 저녁 골든 타임</span>
+    <div class="overlap-time">18:00 ~ 20:00 KST</div>
+    <p class="overlap-desc">
+      <strong>KRX 파생상품 자체 야간거래 개장</strong>(18:00)과 넥스트레이드 주식 야간매매(20:00까지), 유럽 본장 피크 타임 및 미국 정규장 개장 전 장전(Pre-market) 주문이 결합하여 지수 선물 및 외환 상품의 1차 야간 유동성 피크가 형성됩니다.
+    </p>
+  </div>
+
+  <!-- Window 4 -->
+  <div class="overlap-card">
+    <span class="overlap-badge night">🌙 심야 미국 본장 중첩</span>
+    <div class="overlap-time">22:30 ~ 익일 05:00 KST</div>
+    <p class="overlap-desc">
+      <strong>미국 뉴욕증권거래소(NYSE) 및 나스닥(NASDAQ) 정규 본장</strong>(22:30~05:00), <strong>CME Globex</strong>, 그리고 <strong>KRX 파생 야간거래</strong>(06:00까지)가 풀가동되어 KOSPI 200 야간 선물·옵션 및 미국 테크주 이벤트에 대한 글로벌 리스크 헤징이 집중됩니다.
+    </p>
+  </div>
+</div>
+
+<script>
+// Timezone and Session Database
+// All raw times defined in UTC minutes from 00:00 UTC (0 to 1440)
+// KST is UTC + 540 min (+9h)
+// ET is UTC - 240 min (-4h during EDT) or -300 min (-5h during EST). We use EDT (UTC-4) as reference.
+// CET is UTC + 120 min (+2h during CEST) or +60 min (+1h). We use CEST (UTC+2) as reference.
+
+const MARKETS = [
+  {
+    id: "krx_eq",
+    name: "🇰🇷 KRX 한국거래소 (주식)",
+    sub: "KOSPI / KOSDAQ Lit Market",
+    utcOpen: 0 * 60, // 09:00 KST = 00:00 UTC
+    utcClose: 6.5 * 60, // 15:30 KST = 06:30 UTC
+    sessions: [
+      { start: -30, end: 0, type: "pre", label: "시가단일가 (08:30-09:00)" },
+      { start: 0, end: 380, type: "regular", label: "정규접속매매 (09:00-15:20)" },
+      { start: 380, end: 390, type: "close", label: "종가단일가 (15:20-15:30)" },
+      { start: 400, end: 540, type: "post", label: "시간외 (15:40-18:00)" }
+    ]
+  },
+  {
+    id: "nextrade",
+    name: "🇰🇷 넥스트레이드 (Nextrade ATS)",
+    sub: "대체거래소 12시간 연속매매",
+    utcOpen: -60, // 08:00 KST = 23:00 UTC (-1d)
+    utcClose: 660, // 20:00 KST = 11:00 UTC
+    sessions: [
+      { start: -60, end: -10, type: "pre", label: "프리마켓 (08:00-08:50)" },
+      { start: 0, end: 390, type: "nxt", label: "정규마켓 (09:00-15:30)" },
+      { start: 390, end: 660, type: "post", label: "애프터마켓 (15:30-20:00)" }
+    ]
+  },
+  {
+    id: "krx_der",
+    name: "🇰🇷 KRX 파생 야간거래",
+    sub: "KOSPI 200 · 국채 자체 야간세션",
+    utcOpen: 9 * 60, // 18:00 KST = 09:00 UTC
+    utcClose: 21 * 60, // 06:00 KST = 21:00 UTC
+    sessions: [
+      { start: 540, end: 1260, type: "night", label: "자체 야간거래 (18:00 - 익일 06:00 KST)" }
+    ]
+  },
+  {
+    id: "jpx",
+    name: "🇯🇵 JPX 도쿄증권거래소",
+    sub: "arrowhead 4.0 (30분 연장)",
+    utcOpen: 0, // 09:00 JST = 00:00 UTC
+    utcClose: 6.5 * 60, // 15:30 JST = 06:30 UTC
+    sessions: [
+      { start: 0, end: 150, type: "regular", label: "전장 (09:00-11:30)" },
+      { start: 210, end: 385, type: "regular", label: "후장 (12:30-15:25)" },
+      { start: 385, end: 390, type: "close", label: "종가경매 (15:25-15:30)" }
+    ]
+  },
+  {
+    id: "hkex",
+    name: "🇭🇰 HKEX 홍콩거래소",
+    sub: "점심휴장 有 / 악천후 거래",
+    utcOpen: 90, // 09:30 HKT = 01:30 UTC
+    utcClose: 490, // 16:10 HKT = 08:10 UTC
+    sessions: [
+      { start: 60, end: 90, type: "pre", label: "시가경매 (09:00-09:30)" },
+      { start: 90, end: 240, type: "regular", label: "오전세션 (09:30-12:00)" },
+      { start: 300, end: 480, type: "regular", label: "오후세션 (13:00-16:00)" },
+      { start: 480, end: 490, type: "close", label: "종가경매 (16:00-16:10)" }
+    ]
+  },
+  {
+    id: "sgx",
+    name: "🇸🇬 SGX 싱가포르거래소",
+    sub: "아시아 외환·지수 허브",
+    utcOpen: 60, // 09:00 SGT = 01:00 UTC
+    utcClose: 546, // 17:06 SGT = 09:06 UTC
+    sessions: [
+      { start: 30, end: 60, type: "pre", label: "Pre-open (08:30-09:00)" },
+      { start: 60, end: 240, type: "regular", label: "오전 (09:00-12:00)" },
+      { start: 300, end: 540, type: "regular", label: "오후 (13:00-17:00)" },
+      { start: 540, end: 546, type: "close", label: "종가경매 (17:00-17:06)" },
+      { start: 555, end: 1275, type: "night", label: "파생 T+1 야간 (17:15-05:15 SGT)" }
+    ]
+  },
+  {
+    id: "lse",
+    name: "🇬🇧 LSE 런던증권거래소",
+    sub: "Millennium Exchange",
+    utcOpen: 7 * 60, // 08:00 BST = 07:00 UTC
+    utcClose: 15.5 * 60 + 35, // 16:35 BST = 15:35 UTC
+    sessions: [
+      { start: 410, end: 420, type: "pre", label: "시가경매 (07:50-08:00)" },
+      { start: 420, end: 930, type: "regular", label: "정규접속매매 (08:00-16:30 BST)" },
+      { start: 930, end: 935, type: "close", label: "종가경매 (16:30-16:35)" }
+    ]
+  },
+  {
+    id: "deutsche_borse",
+    name: "🇩🇪 Deutsche Börse (Xetra / Eurex)",
+    sub: "T7 Trading Platform",
+    utcOpen: 7 * 60, // 09:00 CEST = 07:00 UTC
+    utcClose: 15.5 * 60 + 35,
+    sessions: [
+      { start: 410, end: 420, type: "pre", label: "장전경매 (08:50-09:00)" },
+      { start: 420, end: 930, type: "regular", label: "정규거래 (09:00-17:30 CEST)" },
+      { start: 930, end: 935, type: "close", label: "종가경매 (17:30-17:35)" }
+    ]
+  },
+  {
+    id: "nyse",
+    name: "🇺🇸 NYSE 뉴욕증권거래소",
+    sub: "NYSE Pillar / Arca 22시간",
+    utcOpen: 13.5 * 60, // 09:30 EDT = 13:30 UTC
+    utcClose: 20 * 60, // 16:00 EDT = 20:00 UTC
+    sessions: [
+      { start: 480, end: 810, type: "pre", label: "Pre-market (04:00-09:30 ET)" },
+      { start: 810, end: 1200, type: "regular", label: "정규본장 (09:30-16:00 ET)" },
+      { start: 1200, end: 1440, type: "post", label: "After-hours (16:00-20:00 ET)" },
+      { start: 330, end: 480, type: "night", label: "NYSE Arca 조기거래 (01:30 ET~)" }
+    ]
+  },
+  {
+    id: "nasdaq",
+    name: "🇺🇸 NASDAQ 나스닥",
+    sub: "23시간 주 5일 연속거래",
+    utcOpen: 13.5 * 60,
+    utcClose: 20 * 60,
+    sessions: [
+      { start: 480, end: 810, type: "pre", label: "Pre-market (04:00-09:30 ET)" },
+      { start: 810, end: 1200, type: "regular", label: "정규본장 (09:30-16:00 ET)" },
+      { start: 1200, end: 1440, type: "post", label: "After-hours (16:00-20:00 ET)" },
+      { start: 1500, end: 1920, type: "night", label: "야간세션 (21:00-04:00 ET)" }
+    ]
+  },
+  {
+    id: "cme",
+    name: "⚡ CME Globex 파생상품",
+    sub: "주 5일 23시간 연속 유동성",
+    utcOpen: 0,
+    utcClose: 1440,
+    sessions: [
+      { start: 0, end: 1380, type: "night", label: "Globex 23시간 연속거래 (1시간 점검 제외)" }
+    ]
+  }
+];
+
+let currentTimezone = "KST";
+let tzOffsetMinutes = 540; // KST = +9 hours
+
+document.addEventListener("DOMContentLoaded", function() {
+  updateLiveClock();
+  setInterval(updateLiveClock, 1000);
+  renderTimelineHeader();
+  renderTimelineBody();
+});
+
+function setTimezone(tz, btn) {
+  currentTimezone = tz;
+  document.querySelectorAll(".tz-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+
+  if (tz === "KST") {
+    tzOffsetMinutes = 540; // +9h
+    document.getElementById("clockZoneLabel").innerText = "한국 표준시 (KST, UTC+9) 기준";
+  } else if (tz === "UTC") {
+    tzOffsetMinutes = 0;
+    document.getElementById("clockZoneLabel").innerText = "협정 세계시 (UTC / GMT) 기준";
+  } else if (tz === "ET") {
+    tzOffsetMinutes = -240; // EDT = -4h
+    document.getElementById("clockZoneLabel").innerText = "미국 동부시간 (ET, New York) 기준";
+  } else if (tz === "CET") {
+    tzOffsetMinutes = 120; // CEST = +2h
+    document.getElementById("clockZoneLabel").innerText = "중부 유럽시간 (CET, Frankfurt/Paris) 기준";
+  }
+
+  renderTimelineHeader();
+  renderTimelineBody();
+  updateLiveClock();
+}
+
+function updateLiveClock() {
+  const now = new Date();
+  // Get UTC milliseconds
+  const utcMs = now.getTime() + (now.getTimezoneOffset() * 60000);
+  const targetDate = new Date(utcMs + (tzOffsetMinutes * 60000));
+
+  const h = String(targetDate.getHours()).padStart(2, '0');
+  const m = String(targetDate.getMinutes()).padStart(2, '0');
+  const s = String(targetDate.getSeconds()).padStart(2, '0');
+  
+  const clockEl = document.getElementById("liveClock");
+  if (clockEl) {
+    clockEl.innerText = `${h}:${m}:${s}`;
+  }
+
+  // Update needle position if rendered
+  updateNeedle(targetDate.getHours() * 60 + targetDate.getMinutes());
+}
+
+function renderTimelineHeader() {
+  const header = document.getElementById("ganttHoursHeader");
+  header.innerHTML = "";
+  
+  for (let i = 0; i <= 24; i += 2) {
+    const span = document.createElement("span");
+    span.innerText = `${String(i % 24).padStart(2, '0')}:00`;
+    header.appendChild(span);
+  }
+}
+
+function renderTimelineBody() {
+  const tbody = document.getElementById("ganttBody");
+  tbody.innerHTML = "";
+
+  const now = new Date();
+  const utcMinutes = now.getUTCHours() * 60 + now.getUTCMinutes();
+  const currentTzMinutes = (utcMinutes + tzOffsetMinutes + 1440 * 2) % 1440;
+
+  for (const mkt of MARKETS) {
+    const tr = document.createElement("tr");
+    tr.className = "gantt-row";
+
+    // Determine current status
+    let currentStatus = "closed";
+    let statusLabel = "휴장";
+    
+    // Check sessions in UTC
+    for (const sess of mkt.sessions) {
+      const sessStart = (sess.start + 1440 * 2) % 1440;
+      const sessEnd = (sess.end + 1440 * 2) % 1440;
+      
+      let isWithin = false;
+      if (sessStart <= sessEnd) {
+        isWithin = utcMinutes >= sessStart && utcMinutes < sessEnd;
+      } else {
+        isWithin = utcMinutes >= sessStart || utcMinutes < sessEnd;
+      }
+
+      if (isWithin) {
+        if (sess.type === "regular") {
+          currentStatus = "open";
+          statusLabel = "정규거래 중";
+        } else if (sess.type === "pre" || sess.type === "close") {
+          currentStatus = "auction";
+          statusLabel = "경매/단일가";
+        } else if (sess.type === "nxt" || sess.type === "night" || sess.type === "post") {
+          currentStatus = "extended";
+          statusLabel = "연장/야간";
+        }
+        break;
+      }
+    }
+
+    // Title cell
+    const titleTd = document.createElement("td");
+    titleTd.className = "gantt-row-title-cell";
+    titleTd.innerHTML = `
+      <div>${mkt.name}</div>
+      <div style="font-size:0.75rem; color:#64748b; font-weight:normal;">
+        ${mkt.sub}
+        <span class="market-status-pill status-${currentStatus}">${statusLabel}</span>
+      </div>
+    `;
+    tr.appendChild(titleTd);
+
+    // Timeline cell
+    const timelineTd = document.createElement("td");
+    timelineTd.colSpan = 24;
+    timelineTd.className = "gantt-timeline-cell";
+
+    // Hour grid lines
+    const grid = document.createElement("div");
+    grid.className = "gantt-hour-grid";
+    for (let h = 0; h < 24; h++) {
+      const col = document.createElement("div");
+      col.className = "gantt-hour-col";
+      grid.appendChild(col);
+    }
+    timelineTd.appendChild(grid);
+
+    // Render session bars
+    for (const sess of mkt.sessions) {
+      // Convert session start/end to current selected timezone
+      const startInTz = (sess.start + tzOffsetMinutes + 1440 * 2) % 1440;
+      const duration = sess.end - sess.start;
+      
+      // If duration crosses 1440 boundary in target timezone, split into two bars
+      if (startInTz + duration <= 1440) {
+        const bar = createSessionBar(startInTz, duration, sess);
+        timelineTd.appendChild(bar);
+      } else {
+        const dur1 = 1440 - startInTz;
+        const dur2 = duration - dur1;
+        const bar1 = createSessionBar(startInTz, dur1, sess);
+        const bar2 = createSessionBar(0, dur2, sess);
+        timelineTd.appendChild(bar1);
+        timelineTd.appendChild(bar2);
+      }
+    }
+
+    tr.appendChild(timelineTd);
+    tbody.appendChild(tr);
+  }
+
+  // Add Real-time Needle
+  addTimelineNeedle(currentTzMinutes);
+}
+
+function createSessionBar(startMins, durationMins, sessionInfo) {
+  const bar = document.createElement("div");
+  bar.className = `session-bar bar-${sessionInfo.type}`;
+  
+  const leftPct = (startMins / 1440) * 100;
+  const widthPct = Math.max(0.8, (durationMins / 1440) * 100);
+
+  bar.style.left = `${leftPct}%`;
+  bar.style.width = `${widthPct}%`;
+  bar.title = `${sessionInfo.label}`;
+
+  // Only show text if width is wide enough
+  if (widthPct > 6) {
+    bar.innerText = sessionInfo.label.split('(')[0].trim();
+  }
+
+  return bar;
+}
+
+function addTimelineNeedle(currentMins) {
+  const wrapper = document.querySelector(".gantt-outer-wrapper");
+  let needle = document.getElementById("currentTimeNeedle");
+  
+  if (!needle) {
+    needle = document.createElement("div");
+    needle.id = "currentTimeNeedle";
+    needle.className = "current-time-line";
+    needle.innerHTML = `<div class="current-time-marker">현재 시각</div>`;
+    wrapper.appendChild(needle);
+  }
+
+  const leftOffset = 220; // width of title column
+  const timelineWidth = wrapper.clientWidth - leftOffset;
+  if (timelineWidth > 0) {
+    const pct = currentMins / 1440;
+    needle.style.left = `${leftOffset + timelineWidth * pct}px`;
+  }
+}
+
+function updateNeedle(currentMins) {
+  const needle = document.getElementById("currentTimeNeedle");
+  const wrapper = document.querySelector(".gantt-outer-wrapper");
+  if (needle && wrapper) {
+    const leftOffset = 220;
+    const timelineWidth = wrapper.clientWidth - leftOffset;
+    if (timelineWidth > 0) {
+      const pct = currentMins / 1440;
+      needle.style.left = `${leftOffset + timelineWidth * pct}px`;
+    }
+  }
+}
+</script>
+```
+
+---
+
+### 💡 KRX 글로벌 시간대 전략 시사점 (Global Liquidity Implications)
+
+::: {.callout-note appearance="simple"}
+#### 1. 24/5 유동성 분절 방지와 스마트오더라우팅(SOR)의 역할
+미국 주식시장이 22~23시간 거래 체제로 전환되고 국내 넥스트레이드 ATS가 12시간 연속거래(08:00~20:00)를 가동함에 따라, **정규 거래소 폐장 이후 시간대에도 실시간 가격 발견(Price Discovery)과 주문 유입이 지속**됩니다. KRX는 중간가 호가 및 주문 유형 확충과 더불어 브로커 SOR 엔진의 공정한 라우팅 기준을 정립하여 정규 시장의 핵심 앵커 역할을 공고히 해야 합니다.
+:::
+
+::: {.callout-tip appearance="simple"}
+#### 2. 파생상품 자체 야간 거래(18:00~06:00)의 상품 라인업 확장
+과거 Eurex 연계 야간거래에서 KRX 자체 야간거래 세션으로 전환 정착(10개 상품)된 것은 IT 시스템 독립성과 결제 효율성을 극대화한 핵심 성과입니다. 향후 유럽 3대 거래소 및 미국 본장 시간대에 맞추어 **3년/10년 국채선물, 원/달러(USD/KRW) 환율선물 및 섹터지수 파생상품**으로 야간 거래 상품군을 다각화함으로써 야간 유동성 흡수력을 배가할 수 있습니다.
+:::
