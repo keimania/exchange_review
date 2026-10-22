@@ -176,7 +176,7 @@ format:
 
 넥스트레이드는 여의도 및 목동 금융 데이터센터 내에 주 전산센터를 두고 국내 21개 증권사 및 글로벌 기관투자자와 직접 연결되어 있습니다.
 
-```mermaid
+```{mermaid}
 flowchart TD
     subgraph Brokers["증권사 및 참여자 인프라"]
         Retail["리테일 HTS / MTS"]
@@ -275,7 +275,7 @@ ATS는 단독으로 운영되는 고립된 시장이 아니므로, 시장 전체
 
 대한민국 자본시장은 매매 체결 영역에서는 복수 거래소 경쟁을 허용하되, 포스트트레이드(Post-trade) 영역에서는 위험 분산을 방지하고 규모의 경제를 달성하기 위해 **단일 집중 청산·결제 인프라**를 유지합니다.
 
-```mermaid
+```{mermaid}
 sequenceDiagram
     autonumber
     actor Investor as 투자자

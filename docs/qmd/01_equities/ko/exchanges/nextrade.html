@@ -73,6 +73,9 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script src="../../../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../../../styles.css">
@@ -1016,7 +1019,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="네트워크-연결-토폴로지" class="level3">
 <h3 class="anchored" data-anchor-id="네트워크-연결-토폴로지">6.1 네트워크 연결 토폴로지</h3>
 <p>넥스트레이드는 여의도 및 목동 금융 데이터센터 내에 주 전산센터를 두고 국내 21개 증권사 및 글로벌 기관투자자와 직접 연결되어 있습니다.</p>
-<pre class="mermaid"><code>flowchart TD
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
     subgraph Brokers["증권사 및 참여자 인프라"]
         Retail["리테일 HTS / MTS"]
         Inst["기관 알고리즘 / DMA"]
@@ -1045,7 +1053,13 @@ ul.task-list li input[type="checkbox"] {
 
     KRX --&gt;|실시간 체결내역| CCP
     NXT --&gt;|실시간 체결내역 인수| CCP
-    CCP --&gt;|다자간 차감 Netting| CSD</code></pre>
+    CCP --&gt;|다자간 차감 Netting| CSD
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 <section id="코로케이션-co-location-및-접근성" class="level3">
 <h3 class="anchored" data-anchor-id="코로케이션-co-location-및-접근성">6.2 코로케이션 (Co-location) 및 접근성</h3>
@@ -1192,7 +1206,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="청산-및-결제-연동-clearing-settlement-integration" class="level2">
 <h2 class="anchored" data-anchor-id="청산-및-결제-연동-clearing-settlement-integration">10. 청산 및 결제 연동 (Clearing &amp; Settlement Integration)</h2>
 <p>대한민국 자본시장은 매매 체결 영역에서는 복수 거래소 경쟁을 허용하되, 포스트트레이드(Post-trade) 영역에서는 위험 분산을 방지하고 규모의 경제를 달성하기 위해 <strong>단일 집중 청산·결제 인프라</strong>를 유지합니다.</p>
-<pre class="mermaid"><code>sequenceDiagram
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">sequenceDiagram
     autonumber
     actor Investor as 투자자
     participant Broker as 증권사 (SOR)
@@ -1208,7 +1227,13 @@ ul.task-list li input[type="checkbox"] {
     NXT-&gt;&gt;CCP: 당일 체결 데이터 실시간 전송 (Trade Lock-in)
     Note over CCP: 거래 채무인수 (Novation)&lt;br/&gt;다자간 차감 (Multilateral Netting)
     CCP-&gt;&gt;KSD: 순 결제 채권·채무 데이터 송신 (T+2 / T+1)
-    KSD-&gt;&gt;KSD: SAFE+ 증권 계좌대체 &amp; BOK-Wire+ 대금 결제&lt;br/&gt;(10억 원 분할결제 연동)</code></pre>
+    KSD-&gt;&gt;KSD: SAFE+ 증권 계좌대체 &amp; BOK-Wire+ 대금 결제&lt;br/&gt;(10억 원 분할결제 연동)
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <ol type="1">
 <li><strong>중앙청산 (KRX CCP Novation):</strong>
 <ul>

@@ -162,7 +162,7 @@ Nextrade utilizes an in-house developed ultra-low latency architecture: the **Ne
 
 ## 6. Connectivity & Market Infrastructure
 
-```mermaid
+```{mermaid}
 flowchart TD
     subgraph Participants["Broker-Dealers & Market Participants"]
         Retail["Retail HTS / MTS Clients"]
@@ -245,7 +245,7 @@ Under Article 68 of the FSCMA and FSS regulatory guidelines, Korean securities b
 
 ## 10. Clearing & Settlement Integration
 
-```mermaid
+```{mermaid}
 sequenceDiagram
     autonumber
     actor Investor

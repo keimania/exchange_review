@@ -211,48 +211,32 @@ format:
   box-shadow: var(--shadow-sm);
 }
 
-.arch-tab-nav {
+.arch-card .panel-tabset {
+  margin-top: 1rem;
+}
+
+.arch-card .panel-tabset .nav-tabs {
+  margin-bottom: 1.25rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.arch-card .cell-output-display {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #e2e8f0;
-  padding-bottom: 0.75rem;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 0.5rem 0;
 }
 
-.arch-nav-btn {
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
-  background: #f8fafc;
-  color: #334155;
-  font-size: 0.88rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: var(--transition);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
+.arch-card .cell-output-display figure {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.arch-nav-btn:hover {
-  background: #eff6ff;
-  border-color: #3b82f6;
-  color: #1d4ed8;
-}
-
-.arch-nav-btn.active {
-  background: #1e3a8a;
-  border-color: #1e3a8a;
-  color: #ffffff;
-}
-
-.arch-content-panel {
-  display: none;
-}
-
-.arch-content-panel.active {
-  display: block;
+.arch-card .cell-output-display svg {
+  max-width: 100%;
+  height: auto !important;
 }
 
 .arch-detail-box {
@@ -260,7 +244,7 @@ format:
   border-left: 4px solid #2563eb;
   padding: 1rem 1.25rem;
   border-radius: 0 8px 8px 0;
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   font-size: 0.9rem;
   color: #334155;
   line-height: 1.6;
@@ -328,7 +312,9 @@ format:
   font-weight: 800;
 }
 </style>
+```
 
+```{=html}
 <div class="benchmark-hero">
   <div class="benchmark-hero-badge">
     <span>⚡ Next-Gen Engine Analytics</span>
@@ -369,26 +355,22 @@ format:
     <!-- Populated by JS -->
   </div>
 </div>
+```
 
-<!-- Section 2: End-to-End Value Chain Architectures -->
-<div class="arch-card">
-  <div class="chart-header">
-    <div class="chart-title-wrap">
-      <h3>🏛️ 글로벌 4대 자본시장 End-to-End 포스트트레이드 밸류체인</h3>
-      <p>주문·체결(거래소) → 청산·차감(CCP) → 예탁·결제(CSD) → 중앙은행 결제(RTGS) 연결 구조</p>
-    </div>
-  </div>
+:::: {.arch-card}
 
-  <div class="arch-tab-nav">
-    <button class="arch-nav-btn active" onclick="switchArch('kr', this)">🇰🇷 대한민국 (KRX · Nextrade · KSD · BOK)</button>
-    <button class="arch-nav-btn" onclick="switchArch('us', this)">🇺🇸 미국 (NYSE · NASDAQ · DTCC · Fedwire)</button>
-    <button class="arch-nav-btn" onclick="switchArch('eu', this)">🇪🇺 유럽연합 (Euronext · Eurex · T2S · TARGET2)</button>
-    <button class="arch-nav-btn" onclick="switchArch('jp', this)">🇯🇵 일본 (TSE · Japannext · JSCC · BOJ-NET)</button>
-  </div>
+::: {.chart-header}
+::: {.chart-title-wrap}
+<h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem;">🏛️ 글로벌 4대 자본시장 End-to-End 포스트트레이드 밸류체인</h3>
+<p style="font-size: 0.85rem; color: #64748b; margin-bottom: 0;">주문·체결(거래소) → 청산·차감(CCP) → 예탁·결제(CSD) → 중앙은행 결제(RTGS) 연결 구조</p>
+:::
+:::
 
-  <!-- Panel KR -->
-  <div class="arch-content-panel active" id="arch_kr">
-```mermaid
+::: {.panel-tabset}
+
+## 🇰🇷 대한민국 (KRX · Nextrade · KSD · BOK)
+
+```{mermaid}
 graph TD
     classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
     classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
@@ -398,7 +380,7 @@ graph TD
     Inv["투자자 / 브로커 (증권사)"] --> SOR["스마트오더라우팅 (SOR) 최선집행"]
     
     subgraph 매매시장_Trading_Venues ["1. 매매체결 시장 (Trading Venues)"]
-        SOR --> KRX["KRX 한국거래소 (정규시장)<br/>Exture 3.0 (~49μs)<br/>09:00~15:30 (파생야간 18:00~06:00)"]:::venue
+        SOR --> KRX["KRX 한국거래소 (정규시장)<br/>Exture 3.0 (~49μs)<br/>09:00~15:30 (애프터마켓 16:00~20:00)"]:::venue
         SOR --> NXT["넥스트레이드 (Nextrade ATS)<br/>저지연 매칭엔진<br/>08:00~20:00 (12시간 연속거래)"]:::venue
     end
 
@@ -409,15 +391,15 @@ graph TD
 
     KSD --> BOK["4. 최종 자금결제 (Central Bank Money)<br/>한국은행 한은금융망 (BOK-Wire+)<br/>• 중앙은행 화폐 RTGS 최종 결제 완료"]:::rtgs
 ```
-    <div class="arch-detail-box">
-      <strong>🇰🇷 한국 자본시장 구조적 특징:</strong>
-      2025년 3월 대체거래소(Nextrade ATS) 출범으로 <strong>매매 영역은 복수 시장 경쟁(KRX vs NXT) 및 증권사 SOR 체제로 전환</strong>되었으나, <strong>청산(KRX CCP)과 결제(KSD SAFE+)는 단일 국가 인프라로 수렴</strong>되는 고효율 집중 모델을 채택하고 있습니다. 2026년 4월 10억 원 단위 분할결제 제도가 정착되어 결제유동성 리스크를 크게 낮추었습니다.
-    </div>
-  </div>
 
-  <!-- Panel US -->
-  <div class="arch-content-panel" id="arch_us">
-```mermaid
+::: {.arch-detail-box}
+**🇰🇷 한국 자본시장 구조적 특징:**
+2025년 3월 대체거래소(Nextrade ATS) 출범으로 **매매 영역은 복수 시장 경쟁(KRX vs NXT) 및 증권사 SOR 체제로 전환**되었으나, **청산(KRX CCP)과 결제(KSD SAFE+)는 단일 국가 인프라로 수렴**되는 고효율 집중 모델을 채택하고 있습니다. 2026년 4월 10억 원 단위 분할결제 제도가 정착되어 결제유동성 리스크를 크게 낮추었습니다.
+:::
+
+## 🇺🇸 미국 (NYSE · NASDAQ · DTCC · Fedwire)
+
+```{mermaid}
 graph TD
     classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
     classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
@@ -440,15 +422,15 @@ graph TD
 
     DTC --> Fedwire["4. 최종 자금결제 (RTGS)<br/>연방준비제도 Fedwire Funds Service<br/>• 중앙은행 화폐 당일 최종 결제"]:::rtgs
 ```
-    <div class="arch-detail-box">
-      <strong>🇺🇸 미국 자본시장 구조적 특징:</strong>
-      매매 시장은 16개 정규거래소와 30개 이상의 다크풀/ATS로 극도로 파편화되어 있으나, 후속거래는 지주회사 형태의 <strong>DTCC 산하 자회사(NSCC: 주식 CCP, FICC: 국채 CCP, DTC: CSD)로 일원화</strong>되어 있습니다. 2024년 5월 글로벌 FMI 중 최초로 T+1 결제 단축을 전면 성공시켰습니다.
-    </div>
-  </div>
 
-  <!-- Panel EU -->
-  <div class="arch-content-panel" id="arch_eu">
-```mermaid
+::: {.arch-detail-box}
+**🇺🇸 미국 자본시장 구조적 특징:**
+매매 시장은 16개 정규거래소와 30개 이상의 다크풀/ATS로 극도로 파편화되어 있으나, 후속거래는 지주회사 형태의 **DTCC 산하 자회사(NSCC: 주식 CCP, FICC: 국채 CCP, DTC: CSD)로 일원화**되어 있습니다. 2024년 5월 글로벌 FMI 중 최초로 T+1 결제 단축을 전면 성공시켰습니다.
+:::
+
+## 🇪🇺 유럽연합 (Euronext · Eurex · T2S · TARGET2)
+
+```{mermaid}
 graph TD
     classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
     classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
@@ -473,15 +455,15 @@ graph TD
 
     T2S --> TARGET2["4. 유로존 중앙은행 자금결제 (RTGS)<br/>ECB TARGET2 결제망"]:::rtgs
 ```
-    <div class="arch-detail-box">
-      <strong>🇪🇺 유럽연합(EU) 구조적 특징:</strong>
-      27개 회원국의 역사적 분절을 극복하기 위해 <strong>CCP 간 상호운용성(Interoperability) 체계</strong>와 ECB가 직접 운영하는 <strong>T2S(범유럽 통합 증권결제 플랫폼)</strong>를 구축하여, 복수 청산소와 24개국 CSD 간의 국경 없는 결제를 실현하고 있습니다. EU는 2027년 10월 11일 T+1 결제주기 전환을 입법화했습니다.
-    </div>
-  </div>
 
-  <!-- Panel JP -->
-  <div class="arch-content-panel" id="arch_jp">
-```mermaid
+::: {.arch-detail-box}
+**🇪🇺 유럽연합(EU) 구조적 특징:**
+27개 회원국의 역사적 분절을 극복하기 위해 **CCP 간 상호운용성(Interoperability) 체계**와 ECB가 직접 운영하는 **T2S(범유럽 통합 증권결제 플랫폼)**를 구축하여, 복수 청산소와 24개국 CSD 간의 국경 없는 결제를 실현하고 있습니다. EU는 2027년 10월 11일 T+1 결제주기 전환을 입법화했습니다.
+:::
+
+## 🇯🇵 일본 (TSE · Japannext · JSCC · BOJ-NET)
+
+```{mermaid}
 graph TD
     classDef venue fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
     classDef ccp fill:#f0fdf4,stroke:#16a34a,stroke-width:2px;
@@ -502,13 +484,17 @@ graph TD
 
     JASDEC --> BOJ["4. 중앙은행 자금결제 (RTGS)<br/>일본은행 BOJ-NET<br/>• 엔화 당일 최종 결제"]:::rtgs
 ```
-    <div class="arch-detail-box">
-      <strong>🇯🇵 일본 자본시장 구조적 특징:</strong>
-      한국과 유사하게 <strong>단일 중앙청산소(JSCC)와 단일 예탁기관(JASDEC)</strong>을 중심으로 운영됩니다. 특히 JSCC는 2023년 11월 장내 파생상품에 대해 SPAN을 폐지하고 <strong>Historical Simulation VaR(HS-VaR)로 전면 전환을 완료(VMA v4.0 가동)</strong>하여, KRX의 증거금 체계 고도화에 있어 가장 직접적인 벤치마크 사례를 제공합니다.
-    </div>
-  </div>
-</div>
 
+::: {.arch-detail-box}
+**🇯🇵 일본 자본시장 구조적 특징:**
+한국과 유사하게 **단일 중앙청산소(JSCC)와 단일 예탁기관(JASDEC)**을 중심으로 운영됩니다. 특히 JSCC는 2023년 11월 장내 파생상품에 대해 SPAN을 폐지하고 **Historical Simulation VaR(HS-VaR)로 전면 전환을 완료(VMA v4.0 가동)**하여, KRX의 증거금 체계 고도화에 있어 가장 직접적인 벤치마크 사례를 제공합니다.
+:::
+
+:::
+
+::::
+
+```{=html}
 <!-- Section 3: Default Waterfall Comparison -->
 <div class="arch-card">
   <div class="chart-header">
@@ -652,17 +638,6 @@ function renderEngineChart() {
     `;
 
     container.appendChild(row);
-  }
-}
-
-function switchArch(regionKey, btn) {
-  document.querySelectorAll(".arch-nav-btn").forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
-
-  document.querySelectorAll(".arch-content-panel").forEach(p => p.classList.remove("active"));
-  const target = document.getElementById(`arch_${regionKey}`);
-  if (target) {
-    target.classList.add("active");
   }
 }
 </script>
