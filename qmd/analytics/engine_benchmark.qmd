@@ -220,6 +220,28 @@ format:
   border-bottom: 2px solid #e2e8f0;
 }
 
+/* Ensure tabs with Mermaid diagrams remain measurable during page load */
+.arch-card .tab-content > .tab-pane {
+  display: block !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -9999px !important;
+  width: 1000px !important;
+  max-width: 100% !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+
+.arch-card .tab-content > .tab-pane.active {
+  position: static !important;
+  left: 0 !important;
+  width: 100% !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  opacity: 1 !important;
+}
+
 .arch-card .cell-output-display {
   display: flex;
   justify-content: center;
@@ -235,8 +257,10 @@ format:
 }
 
 .arch-card .cell-output-display svg {
-  max-width: 100%;
+  max-width: 100% !important;
+  max-height: none !important;
   height: auto !important;
+  min-height: 380px;
 }
 
 .arch-detail-box {
@@ -410,7 +434,7 @@ graph TD
     
     subgraph 매매시장_US_Venues ["1. 극도로 분산된 매매장소 (16대 거래소 + 30개+ ATS)"]
         Routing --> NYSE["NYSE (Pillar, 21~40μs)"]:::venue
-        Routing --> NSDQ["NASDAQ (Eqlipse, <40μs)"]:::venue
+        Routing --> NSDQ["NASDAQ (Eqlipse, ~40μs)"]:::venue
         Routing --> CBOE["Cboe / IEX / 24X / Dark Pools"]:::venue
     end
 
@@ -441,7 +465,7 @@ graph TD
 
     subgraph 매매시장_EU_Venues ["1. 범유럽 다자간 매매시장 (Venues & MTFs)"]
         MiFID --> ENX["Euronext (Optiq, ~15μs)"]:::venue
-        MiFID --> DB["Deutsche Börse (T7, <20μs)"]:::venue
+        MiFID --> DB["Deutsche Börse (T7, ~20μs)"]:::venue
         MiFID --> MTF["Cboe Europe / Aquis MTF"]:::venue
     end
 
@@ -640,6 +664,15 @@ function renderEngineChart() {
     container.appendChild(row);
   }
 }
+
+// Ensure Mermaid SVGs adjust smoothly when switching tabs
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('a[data-bs-toggle="tab"]').forEach(tab => {
+    tab.addEventListener('shown.bs.tab', function() {
+      window.dispatchEvent(new Event('resize'));
+    });
+  });
+});
 </script>
 ```
 
