@@ -81,12 +81,13 @@ format:
 
 <div class="filter-container">
   <span style="font-size: 0.88rem; font-weight: 700; color: #475569; margin-right: 0.25rem;">🔍 카드 빠른 검색:</span>
-  <input type="text" id="cardFilterInput" class="search-input-inline" placeholder="거래소명, 국가, 매매시스템 검색 (예: KRX, CME, 일본, T7)..." onkeyup="filterCards()">
+  <input type="text" id="cardFilterInput" class="search-input-inline" placeholder="거래소명, 국가, 매매시스템, 용어 검색 (예: KRX, CME, 일본, T7, 용어집)..." onkeyup="filterCards()">
   <button class="filter-btn active" onclick="setQuickFilter('all', this)">전체 보기</button>
   <button class="filter-btn" onclick="setQuickFilter('kr', this)">🇰🇷 한국</button>
   <button class="filter-btn" onclick="setQuickFilter('us', this)">🇺🇸 미국/북미</button>
   <button class="filter-btn" onclick="setQuickFilter('asia', this)">🌏 아시아</button>
   <button class="filter-btn" onclick="setQuickFilter('eu', this)">🇪🇺 유럽</button>
+  <button class="filter-btn" onclick="setQuickFilter('reference', this)">📚 벤치마킹·용어</button>
 </div>
 ```
 
@@ -1652,10 +1653,10 @@ format:
   </p>
 </div>
 
-<div class="exchange-grid">
+<div class="exchange-grid" id="referenceGrid">
 
   <!-- Final Review KO -->
-  <div class="ex-card featured-card">
+  <div class="ex-card featured-card" data-region="all kr us asia eu global reference" data-keyword="종합 비교분석 krx 벤치마킹 final review benchmarking cross domain recommendations 제언 보고서 인프라 60개 기관 로드맵 t+1 sor ats 거버넌스 한국 미국 유럽 아시아 글로벌 reference">
     <div>
       <div class="ex-card-top">
         <span class="ex-card-flag">🎯</span>
@@ -1676,7 +1677,7 @@ format:
   </div>
 
   <!-- Glossary KO -->
-  <div class="ex-card featured-card">
+  <div class="ex-card featured-card" data-region="all kr us asia eu global reference" data-keyword="한영 대역 금융 it 전문 용어집 용어사전 glossary bilingual dictionary 403개 406개 표제어 용어 매매 trading 청산 clearing 결제 settlement 규제 regulation it 기술 용어 약어 약어사전 한국 미국 유럽 아시아 글로벌 reference">
     <div>
       <div class="ex-card-top">
         <span class="ex-card-flag">📖</span>
@@ -1702,39 +1703,63 @@ format:
 
 ```{=html}
 <script>
+let currentRegion = 'all';
+
 function filterCards() {
-  const query = document.getElementById('cardFilterInput').value.toLowerCase().trim();
-  const cards = document.querySelectorAll('.ex-card');
+  const query = (document.getElementById('cardFilterInput').value || '').toLowerCase().trim();
   
-  cards.forEach(card => {
-    const text = card.textContent.toLowerCase();
-    const keywords = (card.getAttribute('data-keyword') || '').toLowerCase();
-    if (text.includes(query) || keywords.includes(query)) {
-      card.style.display = 'flex';
-    } else {
-      card.style.display = 'none';
-    }
-  });
+  // If user types a search query while a specific regional filter is active, 
+  // automatically reset to 'all' so the search finds matches across all domains
+  if (query.length > 0 && currentRegion !== 'all' && currentRegion !== 'reference') {
+    currentRegion = 'all';
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    const allBtn = document.querySelector(".filter-btn[onclick*=\"'all'\"]");
+    if (allBtn) allBtn.classList.add('active');
+  }
+  
+  applyCardFilters();
 }
 
 function setQuickFilter(region, btn) {
-  // Update button active state
+  currentRegion = region;
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+  if (btn) btn.classList.add('active');
   
   document.getElementById('cardFilterInput').value = '';
+  applyCardFilters();
+}
+
+function applyCardFilters() {
+  const query = (document.getElementById('cardFilterInput').value || '').toLowerCase().trim();
+  const region = currentRegion || 'all';
   const cards = document.querySelectorAll('.ex-card');
-  
+
   cards.forEach(card => {
+    const text = card.textContent.toLowerCase();
+    const keywords = (card.getAttribute('data-keyword') || '').toLowerCase();
+    const cardRegions = (card.getAttribute('data-region') || '').toLowerCase();
+
+    // Universal / reference cards that should stay accessible under all regional views
+    const isUniversal = cardRegions.includes('global') || 
+                        cardRegions.includes('reference') || 
+                        cardRegions.includes('all');
+
+    let matchesRegion = false;
     if (region === 'all') {
+      matchesRegion = true;
+    } else if (region === 'reference') {
+      matchesRegion = isUniversal;
+    } else {
+      // Matches specific region OR universal reference cards
+      matchesRegion = cardRegions.includes(region) || isUniversal;
+    }
+
+    const matchesQuery = !query || text.includes(query) || keywords.includes(query);
+
+    if (matchesRegion && matchesQuery) {
       card.style.display = 'flex';
     } else {
-      const reg = card.getAttribute('data-region') || '';
-      if (reg.includes(region)) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
+      card.style.display = 'none';
     }
   });
 }
