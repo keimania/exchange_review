@@ -1476,12 +1476,12 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>시장 데이터 프로토콜</td>
 <td>독자적 바이너리 멀티캐스트 UDP (Pillar 피드)</td>
-<td>독자적 바이너리 [미검증]; Solace PubSub+ 메시징 미들웨어</td>
+<td>독자적 바이너리 멀티캐스트; Solace PubSub+ 메시징 미들웨어</td>
 </tr>
 <tr class="even">
 <td>주문 입력 프로토콜</td>
 <td>Pillar Binary Gateway + FIX 4.2</td>
-<td>FIX 기반 + 독자적 API [미검증]</td>
+<td>FIX 프로토콜 및 Koscom 전용 FEP 인터페이스</td>
 </tr>
 <tr class="odd">
 <td>주 데이터센터</td>
@@ -1491,12 +1491,12 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>DR 사이트</td>
 <td>Cermak, Chicago (콜드 스타트)</td>
-<td>서울 DR 사이트 [미검증]</td>
+<td>서울 데이터센터 (상호 백업 센터)</td>
 </tr>
 <tr class="odd">
 <td>DR 모델</td>
 <td>Active/Passive (콜드 스타트)</td>
-<td>Active/Standby [미검증]</td>
+<td>Active/Standby (서울-부산 도시간 상호 백업)</td>
 </tr>
 <tr class="even">
 <td>자산군 범위</td>
@@ -1519,7 +1519,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="주요-차별화-요소-key-differentiators" class="level3">
 <h3 class="anchored" data-anchor-id="주요-차별화-요소-key-differentiators">주요 차별화 요소 (Key Differentiators)</h3>
 <p><strong>NYSE Pillar 강점:</strong> 1. <strong>초저지연</strong>: 거래소 전반에 걸친 21–40 마이크로초의 Binary 중앙값 지연시간은 글로벌 최고 수준과 경쟁 2. <strong>다중 거래소 통합</strong>: 서로 다른 시장 모델을 갖는 7개 독립 거래소를 단일 프로토콜로 서비스 – 운영적으로 독보적 3. <strong>DMM/플로어 통합</strong>: 물리적 플로어 기반 경매와 전자 매칭을 결합한 유일한 미국 주식 거래소 4. <strong>균등배분 모델</strong>: 더 깊은 유동성과 참가자 다양성을 촉진하는 독특한 배분 메커니즘 5. <strong>규모</strong>: NYSE Group 전체에서 일일 ~800억 달러 이상의 명목거래대금과 ~15억 주 이상 처리 6. <strong>결정론적 성능</strong>: 92% P99 개선으로 체결 품질에 대한 높은 신뢰도 제공</p>
-<p><strong>KRX Exture+ 강점:</strong> 1. <strong>광범위한 자산군 범위</strong>: 단일 플랫폼에서 주식, 채권 및 모든 파생상품 클래스 처리 2. <strong>기술적 독립성</strong>: 수출 가능한 기술 플랫폼을 갖춘 완전한 자체 개발 3. <strong>간결한 DR 모델</strong>: [미검증] 단일 거래소 아키텍처를 감안하면 잠재적으로 더 견고한 DR 4. <strong>글로벌 경쟁력</strong>: 70 마이크로초 지연시간은 글로벌 최상위 수준에서 경쟁력 보유 5. <strong>통합 시장</strong>: 모든 한국 자본시장 상품을 하나의 거래소에서 커버하여 교차 거래소 복잡성 감소</p>
+<p><strong>KRX Exture+ 강점:</strong> 1. <strong>광범위한 자산군 범위</strong>: 단일 플랫폼에서 주식, 채권 및 모든 파생상품 클래스 처리 2. <strong>기술적 독립성</strong>: 수출 가능한 기술 플랫폼을 갖춘 완전한 자체 개발 3. <strong>견고한 도시간 DR 모델</strong>: 서울-부산 간 상호 백업(Active/Standby)을 통한 지진 및 재해 대응력 확보 4. <strong>글로벌 경쟁력</strong>: 70 마이크로초 지연시간은 글로벌 최상위 수준에서 경쟁력 보유 5. <strong>통합 시장</strong>: 모든 한국 자본시장 상품을 하나의 거래소에서 커버하여 교차 거래소 복잡성 감소</p>
 <p><strong>아키텍처 비교:</strong> - NYSE Pillar는 서로 다른 시장 모델을 갖는 다수의 독립 거래소 간 프로토콜 통합을 우선시하는 “다수-대-하나(many-to-one)” 기술 접근방식이다 - KRX Exture+는 단일 거래소 내 자산군 통합을 우선시하는 “올인원(all-in-one)” 접근방식이다 - NYSE의 콜드 스타트 DR 모델은 단순하지만 일부 아시아 거래소가 사용하는 웜/핫 대기 방식보다 복구 시간이 길다 - KRX의 Solace PubSub+ 메시징 미들웨어 채택은 주목할 만한 인프라 선택이다; NYSE는 맞춤형 바이너리 멀티캐스트를 사용한다</p>
 <hr>
 </section>

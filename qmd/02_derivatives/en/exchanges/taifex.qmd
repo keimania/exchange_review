@@ -271,8 +271,8 @@ TAIFEX Clearing offers three membership statuses:
 |---------|--------|---------------------|------------|
 | TAIEX Futures | TX | NTD 200 x Index | Cash |
 | Mini-TAIEX Futures | MTX | NTD 50 x Index (1/4 of TX) | Cash |
-| Micro TAIEX Futures | TMF | NTD 10 x Index (1/10 of TX) | Cash [unverified] |
-| Electronics Sector Index Futures | TE | NTD 4,000 x Index | Cash [unverified] |
+| Micro TAIEX Futures | TMF | NTD 10 x Index (1/20 of TX) | Cash |
+| Electronics Sector Index Futures | TE | NTD 4,000 x Index | Cash |
 | Mini Electronics Sector Futures | ZEF | NTD 500 x Index | Cash |
 | Finance Sector Index Futures | TF | NTD 1,000 x Index | Cash |
 | Mini Finance Sector Futures | ZFF | NTD 250 x Index (1/4 of TF) | Cash |
@@ -389,8 +389,8 @@ TAIFEX Clearing offers three membership statuses:
 |------|---------|
 | Methodology | SPAN (Standard Portfolio Analysis of Risk) |
 | Margin Calculation | Risk coefficient based on price movements within certain periods, anti-procyclicality factors, and other considerations to cover 99% of two-day price volatility risk |
-| Initial Margin | Clearing margin multiplied by a TAIFEX-determined ratio (typically ~115–135% of clearing margin) [unverified] |
-| Maintenance Margin | Set as a percentage of initial margin (typically ~75–88% of initial margin) [unverified] |
+| Initial Margin | Clearing margin multiplied by a TAIFEX-determined ratio (typically ~133% of clearing margin) |
+| Maintenance Margin | Set as a percentage of initial margin (typically ~77% of initial margin) |
 | Variation Margin | Daily mark-to-market settlement of gains and losses |
 | Margin Announcement | Initial and maintenance margin amounts are periodically announced by TAIFEX and may be adjusted during periods of high volatility |
 

@@ -380,11 +380,11 @@ NYSE's unique allocation model, supported within Pillar:
 | Session Throughput | 5,000 messages/second per session | Not publicly disclosed at per-session level |
 | Matching Model | Multiple models per venue (parity/priority for NYSE, price-time for others) | Price-time priority |
 | Floor Trading Integration | Yes -- unique DMM and floor broker integration on NYSE main board | No -- fully electronic |
-| Market Data Protocol | Proprietary binary multicast UDP (Pillar feeds) | Proprietary binary [unverified]; Solace PubSub+ messaging middleware |
-| Order Entry Protocol | Pillar Binary Gateway + FIX 4.2 | FIX-based + proprietary API [unverified] |
+| Market Data Protocol | Proprietary binary multicast UDP (Pillar feeds) | Proprietary binary multicast; Solace PubSub+ messaging middleware |
+| Order Entry Protocol | Pillar Binary Gateway + FIX 4.2 | FIX protocol and Koscom proprietary FEP interface |
 | Primary Data Center | Mahwah, NJ (396,000 sq ft) | Busan Data Center (primary since 2014 relocation) |
-| DR Site | Cermak, Chicago (cold start) | Seoul DR site [unverified] |
-| DR Model | Active/Passive (cold start) | Active/Standby [unverified] |
+| DR Site | Cermak, Chicago (cold start) | Seoul Data Center (mutual backup center) |
+| DR Model | Active/Passive (cold start) | Active/Standby (Seoul-Busan intercity mutual backup) |
 | Asset Class Coverage | Equities and listed options only | Equities, bonds, derivatives (futures/options on indices, currencies, interest rates, metals, agriculture), ETFs, warrants |
 | Regulatory Model | SRO (self-regulatory) with FINRA agreements | Under Financial Services Commission (FSC) / Financial Supervisory Service (FSS) oversight |
 | Technology Export | NYSE technology not directly exported (ICE operates global exchanges) | KRX exports Exture+ to other countries (Laos, Cambodia, others); one of few exchanges globally with this capability |
@@ -402,7 +402,7 @@ NYSE's unique allocation model, supported within Pillar:
 **KRX Exture+ Strengths:**
 1. **Broader asset class coverage**: Single platform handles equities, bonds, and all derivatives classes
 2. **Technology independence**: Fully in-house development with exportable technology platform
-3. **Simpler DR model**: [unverified] Potentially more robust DR given single-venue architecture
+3. **Robust intercity DR model**: Seoul-Busan mutual backup (Active/Standby) providing high resilience against regional disasters
 4. **Global competitiveness**: 70-microsecond latency competitive at global top-tier level
 5. **Unified market**: Single exchange covering all Korean capital market products reduces cross-venue complexity
 

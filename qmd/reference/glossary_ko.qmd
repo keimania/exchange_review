@@ -402,6 +402,7 @@ format:
 
 | English | Korean | 정의 (Definition) | KRX 참고사항 |
 |---------|--------|-------------------|-------------|
+| Active Account Requirement (AAR) | 활성계좌의무 (AAR) | EMIR 3.0에 도입된 요건으로, 일정 규모 이상의 파생상품 포지션을 보유한 EU 금융기관이 EU 역내 공인 CCP(예: Eurex Clearing)에 실질적으로 작동 가능한 활성 계좌를 개설하고 대표적 거래를 일정 비율 이상 청산하도록 의무화한 제도이다 (영국 LCH 등 역외 CCP 집중 리스크 완화 목적). | EMIR 3.0 핵심 조항 (EU 역내 청산 의무화) |
 | Australian Securities and Investments Commission (ASIC) | ASIC (호주증권투자위원회) | 호주의 증권, 파생상품, 금융서비스에 대한 주요 시장행위 규제기관이다. | |
 | Autorite des marches financiers (Quebec) (AMF) | AMF (퀘벡금융시장감독원) | 퀘벡주의 금융시장 규제기관이다. 몬트리올거래소(MX) 및 CDCC의 주관 규제기관으로서, 퀘벡 파생상품법에 따라 인정거래소 및 자율규제기관(SRO) 지위를 부여한다. | 몬트리올거래소/CDCC 주관 규제 |
 | Best Execution | 최선집행의무 | 고객 주문을 가용한 가장 유리한 조건으로 체결할 의무이다. | 자본시장법 제68조의2 |

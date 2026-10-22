@@ -384,6 +384,7 @@ format:
 
 | Term | Abbreviation | Definition |
 |------|-------------|-----------|
+| Active Account Requirement | AAR | An EMIR 3.0 mandate requiring EU counterparties exceeding clearing thresholds to maintain an operational active account at an EU-authorized CCP (e.g., Eurex Clearing) and clear a representative portion of standardized contracts to reduce systemic reliance on Tier 2 third-country CCPs (such as UK LCH) |
 | Australian Securities and Investments Commission | ASIC | Australia's primary market conduct regulator for securities, derivatives, and financial services |
 | Autorite des marches financiers (Quebec) | AMF | Quebec's financial markets regulator; lead regulator for the Montreal Exchange (MX) and CDCC; grants recognized exchange and self-regulatory organization (SRO) status under Quebec's Derivatives Act |
 | Best Execution | | The obligation to execute client orders on the most favorable terms available |

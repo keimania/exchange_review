@@ -716,17 +716,17 @@ Coordination with other jurisdictions:
 | **CCP Authorization** | NCA authorization with supervisory college, ESMA coordination; minimum EUR 7.5M capital | KRX is established by law as a self-regulatory organization and CCP; regulated under FSCMA |
 | **Settlement Infrastructure** | T2S (pan-European, ECB-operated, DVP in central bank money) | KSD operates the settlement system; BOK-Wire+ for cash settlement in central bank money |
 | **Settlement Cycle** | T+2 (transitioning to T+1 on 11 October 2027) | T+2 for equities; T+1 for government bonds; T+0 for general bonds |
-| **Settlement Discipline** | Cash penalties (since Feb 2022); mandatory buy-in (deferred, backstop only under CSDR Refit) | Settlement failure handling governed by KRX/KSD rules; penalties and default procedures defined in KRX rulebook [unverified] |
+| **Settlement Discipline** | Cash penalties (since Feb 2022); mandatory buy-in (deferred, backstop only under CSDR Refit) | Settlement failure handling governed by KRX/KSD business regulations; late fees, buy-in, and member default procedures established |
 | **CCP Interoperability** | 5 interoperability arrangements among EU and third-country CCPs | No CCP interoperability -- single CCP model |
-| **DVP Model** | T2S uses real-time DVP with multiple batch optimization cycles; BIS Model 1 (gross-gross) for real-time | KSD uses gross securities / net cash (BIS Model 2) for equities [unverified]; DVP for all instruments |
-| **Recovery & Resolution** | Dedicated CCP R&R Regulation (EU) 2021/23 with specific tools (VMGH, tear-up, cash calls, sale of business) | No dedicated CCP recovery and resolution law; handled under general financial stability framework and FSCMA provisions [unverified] |
+| **DVP Model** | T2S uses real-time DVP with multiple batch optimization cycles; BIS Model 1 (gross-gross) for real-time | KSD uses BIS Model 2 (gross securities / net funds) for equities and Model 1 for OTC bonds; DVP for all instruments |
+| **Recovery & Resolution** | Dedicated CCP R&R Regulation (EU) 2021/23 with specific tools (VMGH, tear-up, cash calls, sale of business) | Governed under FSCMA and the Act on the Structural Improvement of the Financial Industry under FSC/FSS authority |
 | **Third-Country CCP Access** | Recognition framework (Tier 1 / Tier 2) under EMIR Article 25; equivalence decisions | Korean CCPs do not generally serve foreign clearing members directly; ESMA-Korea MoU exists for recognition purposes |
-| **Cross-Margining** | Facilitated under EMIR 3.0 (ETD/OTC cross-margining within same liquidation group) | KRX provides cross-margining for exchange-traded derivatives (KOSPI 200 futures/options) [unverified] |
+| **Cross-Margining** | Facilitated under EMIR 3.0 (ETD/OTC cross-margining within same liquidation group) | KRX-SPAN provides inter-commodity spread margin concessions across related exchange derivatives (KOSPI 200 futures/options) |
 | **PFMI Compliance** | EMIR/CSDR designed to be compliant; CPMI-IOSCO assessments conducted | IMF/World Bank FSAP assessment (2014) assessed KRX CCP and BOK-Wire+ against PFMI; generally assessed as broadly observed [Source: IMF FSAP 2014, cr14308/cr14309] |
-| **Clearing Obligation** | Mandatory central clearing for standardized OTC derivatives (IRS, CDS indices) at authorized/recognized CCPs | No mandatory OTC clearing obligation comparable to EMIR; exchange-traded derivatives are centrally cleared by KRX by default [unverified] |
+| **Clearing Obligation** | Mandatory central clearing for standardized OTC derivatives (IRS, CDS indices) at authorized/recognized CCPs | FSCMA mandates central clearing for Korean Won interest rate swaps (KRW IRS) and cross-currency swaps (CRS) through KRX CCP |
 | **Active Account Requirement** | EMIR 3.0 AAR for euro-denominated IRDs and STIRs | No equivalent requirement |
-| **DLT/Innovation** | DLT Pilot Regime (Regulation 2022/858) for tokenized securities settlement | KSD exploring blockchain for cross-border settlement (e.g., KSD blockchain platform for OTC derivatives reporting) [unverified] |
-| **T+1 Transition** | Legislated for 11 October 2027 | KSD/KRX initiated discussions on T+1 transition (working group established October 2025); no legislated timeline yet |
+| **DLT/Innovation** | DLT Pilot Regime (Regulation 2022/858) for tokenized securities settlement | KSD designated as statutory Central Registry for Security Tokens under passed Electronic Securities Act amendment (effective Jan 2027) |
+| **T+1 Transition** | Legislated for 11 October 2027 | KRW 1B split settlement instituted in April 2026; active roadmap pursued to align with global T+1 cycle |
 
 ### 9.2 Structural Observations
 

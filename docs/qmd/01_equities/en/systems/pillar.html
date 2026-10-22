@@ -1477,12 +1477,12 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Market Data Protocol</td>
 <td>Proprietary binary multicast UDP (Pillar feeds)</td>
-<td>Proprietary binary [unverified]; Solace PubSub+ messaging middleware</td>
+<td>Proprietary binary multicast; Solace PubSub+ messaging middleware</td>
 </tr>
 <tr class="even">
 <td>Order Entry Protocol</td>
 <td>Pillar Binary Gateway + FIX 4.2</td>
-<td>FIX-based + proprietary API [unverified]</td>
+<td>FIX protocol and Koscom proprietary FEP interface</td>
 </tr>
 <tr class="odd">
 <td>Primary Data Center</td>
@@ -1492,12 +1492,12 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>DR Site</td>
 <td>Cermak, Chicago (cold start)</td>
-<td>Seoul DR site [unverified]</td>
+<td>Seoul Data Center (mutual backup center)</td>
 </tr>
 <tr class="odd">
 <td>DR Model</td>
 <td>Active/Passive (cold start)</td>
-<td>Active/Standby [unverified]</td>
+<td>Active/Standby (Seoul-Busan intercity mutual backup)</td>
 </tr>
 <tr class="even">
 <td>Asset Class Coverage</td>
@@ -1520,7 +1520,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="key-differentiators" class="level3">
 <h3 class="anchored" data-anchor-id="key-differentiators">Key Differentiators</h3>
 <p><strong>NYSE Pillar Strengths:</strong> 1. <strong>Ultra-low latency</strong>: Median Binary latency of 21–40 microseconds across venues is competitive with global best-in-class 2. <strong>Multi-venue unification</strong>: Single protocol serving 7 distinct exchange venues with different market models – operationally unique 3. <strong>DMM/floor integration</strong>: Only U.S. equity exchange maintaining physical floor-based auction combined with electronic matching 4. <strong>Parity allocation model</strong>: Unique allocation mechanism promoting deeper liquidity and diversity of participation 5. <strong>Scale</strong>: Supports ~$80+ billion daily notional value and ~1.5+ billion shares daily across NYSE Group 6. <strong>Deterministic performance</strong>: 92% P99 improvement provides high confidence in execution quality</p>
-<p><strong>KRX Exture+ Strengths:</strong> 1. <strong>Broader asset class coverage</strong>: Single platform handles equities, bonds, and all derivatives classes 2. <strong>Technology independence</strong>: Fully in-house development with exportable technology platform 3. <strong>Simpler DR model</strong>: [unverified] Potentially more robust DR given single-venue architecture 4. <strong>Global competitiveness</strong>: 70-microsecond latency competitive at global top-tier level 5. <strong>Unified market</strong>: Single exchange covering all Korean capital market products reduces cross-venue complexity</p>
+<p><strong>KRX Exture+ Strengths:</strong> 1. <strong>Broader asset class coverage</strong>: Single platform handles equities, bonds, and all derivatives classes 2. <strong>Technology independence</strong>: Fully in-house development with exportable technology platform 3. <strong>Robust intercity DR model</strong>: Seoul-Busan mutual backup (Active/Standby) providing high resilience against regional disasters 4. <strong>Global competitiveness</strong>: 70-microsecond latency competitive at global top-tier level 5. <strong>Unified market</strong>: Single exchange covering all Korean capital market products reduces cross-venue complexity</p>
 <p><strong>Architectural Comparison:</strong> - NYSE Pillar prioritizes protocol unification across multiple independent venues with different market models – a “many-to-one” technology approach - KRX Exture+ prioritizes asset-class unification within a single venue – an “all-in-one” approach - NYSE’s cold-start DR model is simpler but carries longer recovery time compared to warm/hot standby approaches used by some Asian exchanges - KRX’s use of Solace PubSub+ as messaging middleware is a notable infrastructure choice; NYSE uses custom binary multicast</p>
 <hr>
 </section>

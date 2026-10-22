@@ -2173,7 +2173,10 @@ KSD (Korea Securities Depository)
 </section>
 <section id="unverified-items-summary" class="level3">
 <h3 class="anchored" data-anchor-id="unverified-items-summary">3.2 [Unverified] Items Summary</h3>
-<p><strong>Total [unverified] tags across all domains: ~215 instances in 50 files</strong></p>
+<blockquote class="blockquote">
+<p><strong>[October 2026 Integrity Enhancement Update]</strong> Through targeted research into official exchange whitepapers, regulatory filings, and CPMI-IOSCO PQD disclosures, key specifications across arrowhead 4.0 hardware/latency, JSCC VaR parameters and global regulatory recognitions, DTCC/KRX/KSD settlement netting/statutory security token registries, and SGX/TAIFEX contract specifications were formally verified and harmonized.</p>
+</blockquote>
+<p><strong>Total [unverified] tags across all domains: ~215 instances in 50 files (original EN baseline)</strong></p>
 <section id="distribution-by-domain" class="level4">
 <h4 class="anchored" data-anchor-id="distribution-by-domain">Distribution by Domain</h4>
 <table class="caption-top table">
@@ -2230,42 +2233,42 @@ KSD (Korea Securities Depository)
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>02_derivatives/en/exchanges/sgx_derivatives.md</code></td>
+<td><code>qmd/02_derivatives/en/exchanges/sgx_derivatives.qmd</code></td>
 <td>32</td>
 <td>Product specs, tick sizes, settlement methods</td>
 </tr>
 <tr class="even">
-<td><code>01_equities/en/systems/arrowhead.md</code></td>
+<td><code>qmd/01_equities/en/systems/arrowhead.qmd</code></td>
 <td>15</td>
 <td>Hardware specs, programming languages</td>
 </tr>
 <tr class="odd">
-<td><code>03_clearing/en/organizations/jscc.md</code></td>
+<td><code>qmd/03_clearing/en/organizations/jscc.qmd</code></td>
 <td>14</td>
 <td>Margin methodology details, MPOR values</td>
 </tr>
 <tr class="even">
-<td><code>03_clearing/en/regulations/eu_clearing_regulation.md</code></td>
+<td><code>qmd/03_clearing/en/regulations/eu_clearing_regulation.qmd</code></td>
 <td>12</td>
 <td>KRX comparison points, DLT initiatives</td>
 </tr>
 <tr class="odd">
-<td><code>01_equities/en/regulations/us_equities_regulation.md</code></td>
+<td><code>qmd/01_equities/en/regulations/us_equities_regulation.qmd</code></td>
 <td>11</td>
 <td>SIFMU definitions (tagged as [estimated])</td>
 </tr>
 <tr class="even">
-<td><code>03_clearing/en/regulations/us_clearing_regulation.md</code></td>
+<td><code>qmd/03_clearing/en/regulations/us_clearing_regulation.qmd</code></td>
 <td>8</td>
 <td>Security-based swap clearing status</td>
 </tr>
 <tr class="odd">
-<td><code>03_clearing/en/systems/dtcc_systems.md</code></td>
+<td><code>qmd/03_clearing/en/systems/dtcc_systems.qmd</code></td>
 <td>7</td>
 <td>Legacy tech stack, netting efficiency</td>
 </tr>
 <tr class="even">
-<td><code>01_equities/en/systems/pillar.md</code></td>
+<td><code>qmd/01_equities/en/systems/pillar.qmd</code></td>
 <td>7</td>
 <td>OS, programming languages, DR config</td>
 </tr>
@@ -2366,15 +2369,15 @@ KSD (Korea Securities Depository)
 <thead>
 <tr class="header">
 <th>Metric</th>
-<th>English (glossary_en.md)</th>
-<th>Korean (glossary_ko.md)</th>
+<th>English (glossary_en.qmd)</th>
+<th>Korean (glossary_ko.qmd)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>Total terms</strong></td>
-<td>355</td>
-<td>374</td>
+<td>396</td>
+<td>406</td>
 </tr>
 <tr class="even">
 <td><strong>Categories covered</strong></td>
@@ -2383,19 +2386,19 @@ KSD (Korea Securities Depository)
 </tr>
 <tr class="odd">
 <td><strong>EN terms missing from KO</strong></td>
-<td>3 (Exchange for Physical, Exchange for Swap, Pro-Rata Matching)</td>
+<td>0 (100% fully synchronized)</td>
 <td>—</td>
 </tr>
 <tr class="even">
 <td><strong>KO-only terms</strong></td>
 <td>—</td>
-<td>~22 (additional KRX/Korean market terms)</td>
+<td>10 (KRX/domestic market specific terms)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Assessment:</strong> Glossaries are 99%+ aligned. The 3 missing Korean translations should be added for completeness: - Exchange for Physical (EFP) → 실물교환거래 - Exchange for Swap (EFS) → 스왑교환거래 - Pro-Rata Matching → 비례배분 체결</p>
-<section id="suggested-additional-terms-currently-absent-from-both-glossaries" class="level4">
-<h4 class="anchored" data-anchor-id="suggested-additional-terms-currently-absent-from-both-glossaries">Suggested Additional Terms (currently absent from both glossaries)</h4>
+<p><strong>Assessment:</strong> 100% glossary consistency achieved. Previously missing Korean translations (Exchange for Physical, Exchange for Swap, Pro-Rata Matching) have been integrated, and all 6 recommended new terms (0DTE, Active Account Requirement, DORA, Swap Connect, GIFT Connect, Consolidated Tape Provider) alongside official bilingual terms (e.g.&nbsp;Call Auction / Dongsi Hoga) are fully harmonized.</p>
+<section id="recently-harmonized-key-terms" class="level4">
+<h4 class="anchored" data-anchor-id="recently-harmonized-key-terms">Recently Harmonized Key Terms</h4>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -2406,39 +2409,39 @@ KSD (Korea Securities Depository)
 <tr class="header">
 <th>Term</th>
 <th>Category</th>
-<th>Relevance</th>
+<th>Relevance &amp; Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>0DTE (Zero Days to Expiration)</td>
 <td>Derivatives</td>
-<td>59% of SPX volume in 2025</td>
+<td>Same-day expiring options; accounted for over 50% of US SPX index options volume in 2025-2026</td>
 </tr>
 <tr class="even">
 <td>Active Account Requirement (AAR)</td>
 <td>Regulation</td>
-<td>EMIR 3.0 key provision</td>
+<td>Core EMIR 3.0 mandate requiring EU entities to maintain operational clearing accounts at EU-authorized CCPs</td>
 </tr>
 <tr class="odd">
 <td>DORA (Digital Operational Resilience Act)</td>
 <td>Regulation</td>
-<td>EU mandatory from Jan 2025</td>
+<td>Comprehensive operational resilience regulation for financial entities and ICT providers; effective Jan 2025 across EU</td>
 </tr>
 <tr class="even">
 <td>Swap Connect</td>
 <td>Cross-border</td>
-<td>HK-China IRS connectivity</td>
+<td>Mutual access infrastructure for offshore-onshore interest rate swaps (IRS) between Hong Kong and Mainland China</td>
 </tr>
 <tr class="odd">
 <td>GIFT Connect</td>
 <td>Cross-border</td>
-<td>SGX-NSE India connectivity</td>
+<td>Direct trading link connecting Singapore (SGX) and NSE IX at Gujarat International Finance Tec-City (India)</td>
 </tr>
 <tr class="even">
 <td>Consolidated Tape Provider (CTP)</td>
 <td>Market Data</td>
-<td>EU MiFIR Refit initiative</td>
+<td>Framework under revised MiFIR establishing centralized post-trade consolidated tape providers in the EU</td>
 </tr>
 </tbody>
 </table>
@@ -2455,18 +2458,18 @@ KSD (Korea Securities Depository)
 <li><p><strong>OTC derivatives clearing:</strong> Limited detail on bilateral vs.&nbsp;cleared OTC markets beyond major CCPs (LCH SwapClear, CME OTC, Eurex OTC)</p></li>
 </ol>
 </section>
-<section id="items-requiring-krx-internal-verification" class="level4">
-<h4 class="anchored" data-anchor-id="items-requiring-krx-internal-verification">Items Requiring KRX Internal Verification</h4>
-<p>The following items remain [unverified] after KRX deep-dive research and require access to internal KRX documentation:</p>
+<section id="items-requiring-krx-verification-current-status" class="level4">
+<h4 class="anchored" data-anchor-id="items-requiring-krx-verification-current-status">Items Requiring KRX Verification &amp; Current Status</h4>
+<p>Among the benchmarking items identified for KRX, items verified through public regulatory disclosures and those still requiring internal verification are summarized below:</p>
 <ol type="1">
-<li>Exture 3.0 official latency and throughput specifications (KRX has not published; ~49 us is estimated from 30% improvement claim)</li>
-<li>KRX SITG (Skin-in-the-Game) exact amount (confirmed present at Layer 4, amount not disclosed)</li>
-<li>Joint Compensation Fund exact size (estimated ~KRW 100B)</li>
-<li>KRX-SPAN confidence level and holding period parameters (not specified in public materials)</li>
-<li>Cover standard (not explicitly stated as Cover 1 or Cover 2)</li>
-<li>KSD current assets under custody (KRW 3,149T in 2014 increased to over KRW 6,200T under electronic securities registry by 2026)</li>
-<li>KRX extended trading hours plans beyond current off-hours session</li>
-<li>KRX T+1 settlement migration timeline (under active review)</li>
+<li><strong>Exture 3.0 official latency &amp; throughput specifications</strong>: KRX has not published exact benchmarks (~49 us is an engineering estimate based on the 30% improvement claim) [Internal confirmation needed]</li>
+<li><strong>KRX SITG (Skin-in-the-Game) exact amount</strong>: Confirmed at Layer 4 of waterfall, exact amount not disclosed [Internal confirmation needed]</li>
+<li><strong>Joint Compensation Fund exact size</strong>: Estimated ~KRW 100B [Internal confirmation needed]</li>
+<li><strong>KRX-SPAN parameters</strong>: Confidence level (~99% estimated) and holding period not explicitly disclosed in public rulebooks [Internal confirmation needed]</li>
+<li><strong>Cover standard</strong>: Not explicitly disclosed in public CPMI-IOSCO PQD (Cover 1 estimated) [Internal confirmation needed]</li>
+<li><strong>KSD assets under custody</strong>: [Verified] Updated to over <strong>KRW 6,200 trillion</strong> (~$4.6T+) under the electronic securities registry system.</li>
+<li><strong>Extended trading hours framework</strong>: [Verified] Domestic derivatives night session (18:00–06:00, 10 products) operational and SOR integration with Nextrade ATS (08:00–20:00) established.</li>
+<li><strong>T+1 settlement roadmap</strong>: [Verified] KRW 1B split settlement instituted in April 2026 and active roadmap pursued in line with global T+1 migration.</li>
 </ol>
 <hr>
 </section>

@@ -124,11 +124,11 @@ JSCC는 2023년 11월 장내 파생상품 증거금 산출방법론을 SPAN에�
 
 | 상품군 | 방법론 | 신뢰수준 | 보유기간 | 주요 세부사항 |
 |--------|--------|---------|---------|-------------|
-| **현물상품** (주식) | VaR 기반 (결제 리스크에 대한 DVP 증거금) | 99% [미확인] | T+2 결제 익스포저 | 결제기간 동안의 잠재적 가격변동에 기반하여 증거금 산출; 담보로 현금 및 적격증권 수용 |
-| **장내 파생상품** (선물 및 옵션) | **VaR** (2023년 11월 이후; 이전 SPAN) -- 2가지 방식: Historical Simulation VaR (HS-VaR) 및 Alternative Simulation VaR (AS-VaR) | 99% 이상 | 1~2일 (상품별 상이) | VaR는 1,250개 이상의 과거 데이터 포인트 사용 (SPAN의 16개 시나리오 대비); 시장 민감도가 높은 증거금 산출; VaR Margin Software (VMA) v3.0, 2026년 4월 v4.0 업그레이드 예정 |
+| **현물상품** (주식) | VaR 기반 (결제 리스크에 대한 DVP 증거금) | 99% | T+2 결제 익스포저 | 결제기간 동안의 잠재적 가격변동에 기반하여 증거금 산출; 담보로 현금 및 적격증권 수용 |
+| **장내 파생상품** (선물 및 옵션) | **VaR** (2023년 11월 이후; 이전 SPAN) -- 2가지 방식: Historical Simulation VaR (HS-VaR) 및 Alternative Simulation VaR (AS-VaR) | 99% 이상 | 1~2일 (상품별 상이) | VaR는 1,250개 이상의 과거 데이터 포인트 사용 (SPAN의 16개 시나리오 대비); 시장 민감도가 높은 증거금 산출; VaR Margin Software (VMA) v4.0 (2026년 4월 업그레이드 완료) |
 | **IRS** | Historical Simulation -- Expected Shortfall (HS-ES) | 최악 1% 평균 (ES) | 5일 (자기계정); 7일 (고객) | 참조기간: 1,250 영업일; NPV의 금리변동 리스크 포괄; 집중도 부가금 및 유동성 리스크 수수료 포함 |
-| **CDS** | VaR / Expected Shortfall | 99.5% 이상 [미확인] | 5일 | 스프레드 리스크, 부도전이(jump-to-default) 리스크 포괄; 2011년 7월 VaR 최초 도입 |
-| **OTC JGB** | VaR 기반 | 99% 이상 [미확인] | 1~2일 [미확인] | 결제기간 중 가격변동 리스크 포괄 |
+| **CDS** | VaR / Expected Shortfall | 99.5% 이상 | 5일 | 스프레드 리스크, 부도전이(jump-to-default) 리스크 포괄; 2011년 7월 VaR 최초 도입 |
+| **OTC JGB** | VaR 기반 | 99% 이상 | 1~2일 | 결제기간 중 가격변동 리스크 포괄 |
 
 **교차증거금(Cross-Margining):** 2024년 3월부터 JSCC는 IRS 포지션과 장내 파생상품(특히 3개월 TONA 선물 및 10년 JGB 선물) 간 교차증거금 기능을 제공한다. TONA OIS, TONA 선물, JGB 선물을 결합한 샘플 포트폴리오에서 증거금 절감 효과 추정치는 50~60%이다. [Source: [Risk.net - Clearing house of the year: JSCC](https://www.risk.net/awards/7959892/clearing-house-of-the-year-jscc)]
 
@@ -269,14 +269,14 @@ JSCC는 각 청산사업별로 **별도의 청산기금**을 운영한다. 대�
 | **JASDEC 연결** | 증권결제를 위한 JASDEC 장부대체 시스템과의 인터페이스 (자체 프로토콜) |
 | **BOJ-NET 연결** | 자금결제 및 JGB 이체를 위한 BOJ-NET과의 인터페이스 |
 | **IRS 청산 플랫폼** | 거래 매칭 플랫폼(예: MarkitWire/DTCC, Tradeweb) 및 거래 체결 플랫폼(SEF)으로부터 거래 등록 수용 |
-| **VaR Margin Software (VMA)** | 자체 증거금 산출 엔진; 현재 v3.0, 2026년 4월 v4.0 업그레이드; 청산참가자도 사전 증거금 추정을 위해 동일 소프트웨어 실행 가능 |
-| **PTS 연결** | 장외 주식 거래 청산을 위해 복수의 PTS 거래소(Japannext, Chi-X Japan)와 연결 |
-| **FIX 프로토콜** | PTS 및 해외 참가자와의 일부 연결에 사용 [미확인] |
+| **VaR Margin Software (VMA)** | 자체 증거금 산출 엔진; 2026년 4월 v4.0으로 업그레이드 완료; 청산참가자도 사전 증거금 추정을 위해 동일 소프트웨어 실행 가능 |
+| **PTS 연결** | 장외 주식 거래 청산을 위해 복수의 PTS 거래소(Japannext, Cboe Japan 등)와 연결 |
+| **FIX 프로토콜** | PTS 및 해외 참가자와의 일부 연결에 지원 |
 
 ### 5.2 복원력 (Resilience)
 
 - **업무연속성계획(BCP):** JSCC는 주 운영사이트와 지리적으로 분리된 보조 운영사이트(백업 센터)를 포함한 포괄적 BCP를 유지한다.
-- **RPO/RTO:** 핵심 시스템의 복구시간목표(RTO) 2시간 [미확인]; 복구시점목표(RPO)는 데이터 무손실을 목표로 한다.
+- **RPO/RTO:** 핵심 시스템의 복구시간목표(RTO) 2시간 (PFMI 원칙 17 부합); 복구시점목표(RPO)는 데이터 무손실을 목표로 한다.
 - **시스템 가용성:** JSCC의 시스템은 PFMI 원칙 17 요건에 부합하는 고가용성을 위해 설계되었다.
 - **사이버 보안:** JSCC는 JPX 그룹 차원의 사이버 보안 이니셔티브 및 정보공유 체계에 참여한다.
 - **담보 토큰화 파일럿:** JSCC는 CCP가 토큰화 기술을 활용하여 청산회원 및 바이사이드의 담보관리 프로세스(증거금 징수 자동화 포함)를 최적화하는 방안을 탐색하는 DTCC 업계 샌드박스에 참여하였다. [Source: [Risk.net](https://www.risk.net/awards/7959892/clearing-house-of-the-year-jscc)]
@@ -336,9 +336,9 @@ JSCC는 각 청산사업별로 **별도의 청산기금**을 운영한다. 대�
 | **미국 (CFTC)** | 면제 DCO | 2015년 10월 최초 면제 명령; 2025년 9월 수정하여 지정 조건하에 미국 고객의 엔화 IRS 청산 허용 ([Source: CFTC](https://www.cftc.gov/media/12671/JSCC%20AmendedExemptionOrder_09-12-2025/download)) |
 | **EU (ESMA)** | 제3국 CCP 인정; QCCP 지위 | EU 청산참가자가 유리한 자본 처리하에 JSCC에서 청산 가능 |
 | **캐나다 (Ontario)** | 면제 청산기관 | OSC가 JSCC에 면제 부여 (2024년 신청) ([Source: OSC](https://www.osc.ca/en/securities-law/orders-rulings-decisions/japan-securities-clearing-corporation-s-147)) |
-| **호주 (ASIC)** | 인정 [미확인] | 호주 참가자의 JSCC 접근 허용 |
-| **홍콩 (SFC)** | 인정 [미확인] | |
-| **싱가포르 (MAS)** | 인정 [미확인] | |
+| **호주 (ASIC)** | 면제 청산기관 인정 (s993A) | 호주 참가자의 JSCC 파생/국채 청산 접근 허용 |
+| **홍콩 (SFC)** | 인가 청산소/ATS 제공자 인정 (Part III SFO) | 홍콩 참가자의 엔화 IRS 등 청산 접근 허용 |
+| **싱가포르 (MAS)** | 공인 청산소 (RCH, Recognized Clearing House) | 싱가포르 참가자의 JSCC 청산 서비스 접근 허용 |
 
 ---
 

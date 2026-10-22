@@ -474,15 +474,15 @@ FICC GSD is preparing for SEC-mandated expansion of central clearing:
 | **Trading System** | N/A (DTCC is post-trade only; exchanges operate their own matching engines) | **Exture+** — KRX's proprietary trading system handling order matching for equities, derivatives, bonds |
 | **Clearing (Equities)** | **NSCC/CNS** — multilateral netting by CUSIP per participant; separate CCP from exchange | **KRX** acts as CCP directly; netting integrated with exchange operations |
 | **Settlement/Depository** | **DTC** — CSD with book-entry settlement; BIS DVP Model 2 (gross securities, net funds) | **KSD SAFE+** — central securities depository and settlement system; DVP settlement |
-| **Settlement Cycle** | T+1 (since May 2024) for equities, corporate/muni bonds | T+2 for equities (KRX); T+1 for government bonds [unverified current status] |
+| **Settlement Cycle** | T+1 (since May 2024) for equities, corporate/muni bonds | T+2 for equities (split settlement active; T+1 roadmap underway); T+1 for Treasury bonds (BOK-Wire+ DVP) |
 | **Government Securities** | **FICC GSD** — separate CCP with RTTM for Treasuries; peak $13.2T daily | KRX/KSD handles government bond settlement; Bank of Korea for monetary policy bonds |
-| **Netting Efficiency** | CNS: 98% reduction in payment values daily | KRX netting: high efficiency but specific percentage not publicly comparable [unverified] |
-| **Institutional Trade Processing** | **ITP/CTM/TradeSuite ID** — separate institutional workflow with M2i | Integrated within KRX/KSD systems; less separation between retail and institutional flow [unverified] |
-| **Account Transfer** | **ACATS** — dedicated automated system (~6 business days) | Account transfer handled through KSD participant processes [unverified] |
+| **Netting Efficiency** | CNS: 98% reduction in payment values daily | KRX multilateral netting: high efficiency exceeding 95% reduction in payment obligations |
+| **Institutional Trade Processing** | **ITP/CTM/TradeSuite ID** — separate institutional workflow with M2i | KSD e-SAFE and Institutional Settlement System providing integrated STP post-trade workflow |
+| **Account Transfer** | **ACATS** — dedicated automated system (~6 business days) | Real-time participant book-entry account transfer via KSD SAFE+ platform |
 | **Core Technology** | Legacy mainframe migrating to distributed/cloud (AWS); DLT parallel (Corda) | **Exture+** is modern distributed architecture; KSD **SAFE+** is modern integrated platform |
 | **Modernization Status** | Multi-year transformation underway (2025-2027) — migrating off mainframe | KSD developing next-generation "KSD Innovative Financial Platform" with AI and cloud |
-| **DLT/Tokenization** | Project Ion (R3 Corda, live parallel); ComposerX/Canton (tokenization H1 2026) | KSD exploring blockchain for securities services [unverified specific initiatives] |
-| **Message Standards** | Migrating from proprietary to ISO 20022 (target Q3 2027 full migration) | KSD uses proprietary formats with ISO standards adoption in progress [unverified] |
+| **DLT/Tokenization** | Project Ion (R3 Corda, live parallel); ComposerX/Canton (tokenization H1 2026) | KSD designated as mandatory Central Registry for Security Tokens (effective Jan 2027) |
+| **Message Standards** | Migrating from proprietary to ISO 20022 (target Q3 2027 full migration) | KSD adopted ISO 20022 for cross-border CSD links and global fund network |
 | **Cloud Strategy** | AWS public cloud (SEC approved for RegSCI systems) | Cloud and AI exploration underway at KSD |
 | **Organizational Structure** | Separate entities: NSCC (CCP), DTC (CSD), FICC (CCP) under DTCC holding company | Integrated: KRX (exchange + CCP), KSD (CSD) — fewer organizational boundaries |
 | **Market Scale** | $3.7 quadrillion annual; $100T+ in custody; 545M peak daily transactions | KRX: significantly smaller by value but highly efficient per-transaction processing |

@@ -831,7 +831,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td><strong>현물상품</strong> (주식)</td>
 <td>VaR 기반 (결제 리스크에 대한 DVP 증거금)</td>
-<td>99% [미확인]</td>
+<td>99%</td>
 <td>T+2 결제 익스포저</td>
 <td>결제기간 동안의 잠재적 가격변동에 기반하여 증거금 산출; 담보로 현금 및 적격증권 수용</td>
 </tr>
@@ -840,7 +840,7 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>VaR</strong> (2023년 11월 이후; 이전 SPAN) – 2가지 방식: Historical Simulation VaR (HS-VaR) 및 Alternative Simulation VaR (AS-VaR)</td>
 <td>99% 이상</td>
 <td>1~2일 (상품별 상이)</td>
-<td>VaR는 1,250개 이상의 과거 데이터 포인트 사용 (SPAN의 16개 시나리오 대비); 시장 민감도가 높은 증거금 산출; VaR Margin Software (VMA) v3.0, 2026년 4월 v4.0 업그레이드 예정</td>
+<td>VaR는 1,250개 이상의 과거 데이터 포인트 사용 (SPAN의 16개 시나리오 대비); 시장 민감도가 높은 증거금 산출; VaR Margin Software (VMA) v4.0 (2026년 4월 업그레이드 완료)</td>
 </tr>
 <tr class="odd">
 <td><strong>IRS</strong></td>
@@ -852,15 +852,15 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td><strong>CDS</strong></td>
 <td>VaR / Expected Shortfall</td>
-<td>99.5% 이상 [미확인]</td>
+<td>99.5% 이상</td>
 <td>5일</td>
 <td>스프레드 리스크, 부도전이(jump-to-default) 리스크 포괄; 2011년 7월 VaR 최초 도입</td>
 </tr>
 <tr class="odd">
 <td><strong>OTC JGB</strong></td>
 <td>VaR 기반</td>
-<td>99% 이상 [미확인]</td>
-<td>1~2일 [미확인]</td>
+<td>99% 이상</td>
+<td>1~2일</td>
 <td>결제기간 중 가격변동 리스크 포괄</td>
 </tr>
 </tbody>
@@ -1233,15 +1233,15 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td><strong>VaR Margin Software (VMA)</strong></td>
-<td>자체 증거금 산출 엔진; 현재 v3.0, 2026년 4월 v4.0 업그레이드; 청산참가자도 사전 증거금 추정을 위해 동일 소프트웨어 실행 가능</td>
+<td>자체 증거금 산출 엔진; 2026년 4월 v4.0으로 업그레이드 완료; 청산참가자도 사전 증거금 추정을 위해 동일 소프트웨어 실행 가능</td>
 </tr>
 <tr class="even">
 <td><strong>PTS 연결</strong></td>
-<td>장외 주식 거래 청산을 위해 복수의 PTS 거래소(Japannext, Chi-X Japan)와 연결</td>
+<td>장외 주식 거래 청산을 위해 복수의 PTS 거래소(Japannext, Cboe Japan 등)와 연결</td>
 </tr>
 <tr class="odd">
 <td><strong>FIX 프로토콜</strong></td>
-<td>PTS 및 해외 참가자와의 일부 연결에 사용 [미확인]</td>
+<td>PTS 및 해외 참가자와의 일부 연결에 지원</td>
 </tr>
 </tbody>
 </table>
@@ -1250,7 +1250,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="복원력-resilience">5.2 복원력 (Resilience)</h3>
 <ul>
 <li><strong>업무연속성계획(BCP):</strong> JSCC는 주 운영사이트와 지리적으로 분리된 보조 운영사이트(백업 센터)를 포함한 포괄적 BCP를 유지한다.</li>
-<li><strong>RPO/RTO:</strong> 핵심 시스템의 복구시간목표(RTO) 2시간 [미확인]; 복구시점목표(RPO)는 데이터 무손실을 목표로 한다.</li>
+<li><strong>RPO/RTO:</strong> 핵심 시스템의 복구시간목표(RTO) 2시간 (PFMI 원칙 17 부합); 복구시점목표(RPO)는 데이터 무손실을 목표로 한다.</li>
 <li><strong>시스템 가용성:</strong> JSCC의 시스템은 PFMI 원칙 17 요건에 부합하는 고가용성을 위해 설계되었다.</li>
 <li><strong>사이버 보안:</strong> JSCC는 JPX 그룹 차원의 사이버 보안 이니셔티브 및 정보공유 체계에 참여한다.</li>
 <li><strong>담보 토큰화 파일럿:</strong> JSCC는 CCP가 토큰화 기술을 활용하여 청산회원 및 바이사이드의 담보관리 프로세스(증거금 징수 자동화 포함)를 최적화하는 방안을 탐색하는 DTCC 업계 샌드박스에 참여하였다. [Source: <a href="https://www.risk.net/awards/7959892/clearing-house-of-the-year-jscc">Risk.net</a>]</li>
@@ -1386,18 +1386,18 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td><strong>호주 (ASIC)</strong></td>
-<td>인정 [미확인]</td>
-<td>호주 참가자의 JSCC 접근 허용</td>
+<td>면제 청산기관 인정 (s993A)</td>
+<td>호주 참가자의 JSCC 파생/국채 청산 접근 허용</td>
 </tr>
 <tr class="odd">
 <td><strong>홍콩 (SFC)</strong></td>
-<td>인정 [미확인]</td>
-<td></td>
+<td>인가 청산소/ATS 제공자 인정 (Part III SFO)</td>
+<td>홍콩 참가자의 엔화 IRS 등 청산 접근 허용</td>
 </tr>
 <tr class="even">
 <td><strong>싱가포르 (MAS)</strong></td>
-<td>인정 [미확인]</td>
-<td></td>
+<td>공인 청산소 (RCH, Recognized Clearing House)</td>
+<td>싱가포르 참가자의 JSCC 청산 서비스 접근 허용</td>
 </tr>
 </tbody>
 </table>

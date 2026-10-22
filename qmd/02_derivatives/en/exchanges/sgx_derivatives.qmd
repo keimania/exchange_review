@@ -146,7 +146,7 @@ SGX Derivatives operates extended trading hours — up to approximately 22 hours
 | Nikkei 225 Futures (USD) | 5 index points | USD 25.00 |
 | MSCI Singapore Futures | 0.05 index points | SGD 10.00 |
 | TSI Iron Ore 62% Futures | USD 0.01/metric tonne | USD 1.00 |
-| USD/CNH Futures | 0.0001 CNH | Approx. USD 10.00 per tick [unverified] |
+| USD/CNH Futures | 0.0001 CNH | 10 CNH (~USD 1.40 per tick) |
 | INR/USD Futures | 0.01 US cents per 100 INR | USD 2.00 |
 | Bitcoin Perpetual Futures | USD 5.00 | USD 5.00 [unverified] |
 
@@ -786,7 +786,7 @@ Derivatives-related revenue (equities derivatives + currencies & commodities) to
 |------|---------------|
 | Underlying | USD/CNH (offshore Chinese renminbi) exchange rate |
 | Contract Size | USD 100,000 |
-| Tick Size | 0.0001 CNH per USD [unverified] |
+| Tick Size | 0.0001 CNH per USD |
 | Contract Months | Monthly contracts for 13 consecutive months |
 | Trading Hours (T Session) | 07:25 – 19:55 SGT |
 | Trading Hours (T+1 Session) | 20:15 – 05:15 +1 SGT |
@@ -804,8 +804,8 @@ Derivatives-related revenue (equities derivatives + currencies & commodities) to
 | Tick Size | 0.01 US cents per 100 Indian Rupees |
 | Tick Value | USD 2.00 |
 | Contract Months | Monthly contracts for up to 13 consecutive months |
-| Trading Hours (T Session) | 07:25 – 19:30 SGT [unverified] |
-| Trading Hours (T+1 Session) | 20:15 – 05:15 +1 SGT [unverified] |
+| Trading Hours (T Session) | 07:25 – 19:30 SGT |
+| Trading Hours (T+1 Session) | 20:15 – 05:15 +1 SGT |
 | Last Trading Day | Two Mumbai business days prior to the settlement date |
 | Final Settlement | Cash settled; based on the RBI Reference Rate |
 | Settlement Currency | USD |

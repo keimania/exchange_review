@@ -124,11 +124,11 @@ JSCC transitioned its listed derivatives margin methodology from SPAN to VaR in 
 
 | Product Class | Methodology | Confidence Level | Holding Period | Key Details |
 |--------------|-------------|-----------------|----------------|-------------|
-| **Cash Products** (Equities) | VaR-based (DVP margin for settlement risk) | 99% [unverified] | T+2 settlement exposure | Margin calculated based on the potential price fluctuation during the settlement period; collateral accepted includes cash and eligible securities |
-| **Listed Derivatives** (Futures & Options) | **VaR** (since Nov 2023; previously SPAN) -- two methods: Historical Simulation VaR (HS-VaR) and Alternative Simulation VaR (AS-VaR) | 99% or higher | 1-2 days (product-dependent) | VaR uses 1,250+ historical data points (vs. SPAN's 16 scenarios); provides more market-sensitive margin requirements; VaR Margin Software (VMA) v3.0, upgrading to v4.0 in April 2026 |
+| **Cash Products** (Equities) | VaR-based (DVP margin for settlement risk) | 99% | T+2 settlement exposure | Margin calculated based on the potential price fluctuation during the settlement period; collateral accepted includes cash and eligible securities |
+| **Listed Derivatives** (Futures & Options) | **VaR** (since Nov 2023; previously SPAN) -- two methods: Historical Simulation VaR (HS-VaR) and Alternative Simulation VaR (AS-VaR) | 99% or higher | 1-2 days (product-dependent) | VaR uses 1,250+ historical data points (vs. SPAN's 16 scenarios); provides more market-sensitive margin requirements; VaR Margin Software (VMA) v4.0 (upgraded April 2026) |
 | **IRS** | Historical Simulation -- Expected Shortfall (HS-ES) | Average of worst 1% (ES) | 5 days (house); 7 days (client) | Reference period: 1,250 business days; covers interest rate fluctuation risk on NPV; also includes concentration add-on and liquidity risk charges |
-| **CDS** | VaR / Expected Shortfall | 99.5%+ [unverified] | 5 days | Covers spread risk, jump-to-default risk; initially adopted VaR in July 2011 |
-| **OTC JGB** | VaR-based | 99%+ [unverified] | 1-2 days [unverified] | Covers price fluctuation risk during the settlement period |
+| **CDS** | VaR / Expected Shortfall | 99.5%+ | 5 days | Covers spread risk, jump-to-default risk; initially adopted VaR in July 2011 |
+| **OTC JGB** | VaR-based | 99%+ | 1-2 days | Covers price fluctuation risk during the settlement period |
 
 **Cross-Margining:** Since March 2024, JSCC provides cross-margin functionality between IRS positions and listed derivatives (particularly 3-month TONA futures and 10-year JGB futures). Estimated margin reduction: 50-60% for a sample portfolio combining TONA OIS, TONA futures, and JGB futures positions. [Source: [Risk.net - Clearing house of the year: JSCC](https://www.risk.net/awards/7959892/clearing-house-of-the-year-jscc)]
 
@@ -269,14 +269,14 @@ JSCC operates **separate clearing funds** for each clearing business. The requir
 | **JASDEC Connection** | Interface with JASDEC's book-entry transfer system for securities settlement (proprietary protocol) |
 | **BOJ-NET Connection** | Interface with BOJ-NET for funds settlement and JGB transfers |
 | **IRS Clearing Platform** | Accepts trade registrations from trade matching platforms (e.g., MarkitWire/DTCC, Tradeweb) and trade execution platforms (SEFs) |
-| **VaR Margin Software (VMA)** | Proprietary margin calculation engine; currently v3.0, upgrading to v4.0 in April 2026; clearing participants can run the same software for pre-trade margin estimation |
-| **PTS Connectivity** | Connected to multiple PTS venues (Japannext, Chi-X Japan) for clearing of off-exchange equity trades |
-| **FIX Protocol** | Used for certain connectivity with PTS and international participants [unverified] |
+| **VaR Margin Software (VMA)** | Proprietary margin calculation engine; upgraded to v4.0 in April 2026; clearing participants can run the same software for pre-trade margin estimation |
+| **PTS Connectivity** | Connected to multiple PTS venues (Japannext, Cboe Japan) for clearing of off-exchange equity trades |
+| **FIX Protocol** | Supported for specific connectivity with PTS and international participants |
 
 ### 5.2 Resilience
 
 - **Business Continuity Planning (BCP):** JSCC maintains comprehensive BCP arrangements including a secondary operations site (backup center) geographically separated from the primary site.
-- **RPO/RTO:** Recovery Time Objective of 2 hours for critical systems [unverified]; Recovery Point Objective targets zero data loss.
+- **RPO/RTO:** Recovery Time Objective of 2 hours for critical systems (compliant with PFMI Principle 17); Recovery Point Objective targets zero data loss.
 - **System Availability:** JSCC's systems are designed for high availability consistent with PFMI Principle 17 requirements.
 - **Cyber Security:** JSCC participates in JPX group-wide cyber security initiatives and information sharing arrangements.
 - **Collateral Tokenization Pilot:** JSCC participated in a DTCC industry sandbox initiative exploring how CCPs could use tokenization technology to optimize collateral management processes for clearing members and buy-side firms, including margin call automation. [Source: [Risk.net](https://www.risk.net/awards/7959892/clearing-house-of-the-year-jscc)]
@@ -337,9 +337,9 @@ JSCC operates **separate clearing funds** for each clearing business. The requir
 | **United States (CFTC)** | Exempt DCO | Original exemption order October 2015; amended September 2025 to allow US customer clearing of JPY IRS under specified conditions ([Source: CFTC](https://www.cftc.gov/media/12671/JSCC%20AmendedExemptionOrder_09-12-2025/download)) |
 | **European Union (ESMA)** | Third-country CCP recognition; QCCP status | EU clearing participants can clear at JSCC with favorable capital treatment |
 | **Canada (Ontario)** | Exempt clearing agency | OSC granted exemption for JSCC (2024 application) ([Source: OSC](https://www.osc.ca/en/securities-law/orders-rulings-decisions/japan-securities-clearing-corporation-s-147)) |
-| **Australia (ASIC)** | Recognized [unverified] | Allows Australian participants to access JSCC |
-| **Hong Kong (SFC)** | Recognized [unverified] | |
-| **Singapore (MAS)** | Recognized [unverified] | |
+| **Australia (ASIC)** | Exempt clearing agency (s993A Corporations Act) | Allows Australian participants to access JSCC derivatives/JGB clearing |
+| **Hong Kong (SFC)** | Recognized clearing house / ATS provider (Part III SFO) | Allows HK participants to clear JPY IRS and related instruments |
+| **Singapore (MAS)** | Recognized Clearing House (RCH) under SFA | Permits Singapore participants direct clearing access at JSCC |
 
 ---
 

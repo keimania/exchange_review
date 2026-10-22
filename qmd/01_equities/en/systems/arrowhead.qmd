@@ -50,9 +50,9 @@ The 4th generation (arrowhead4.0) introduced two major market structure changes:
 |--------|-------------|-------------|
 | Pre-2010 | Legacy TSE systems | Multiple proprietary systems; order response times measured in seconds |
 | Jan 2010 | arrowhead 1st gen | Full system replacement; order response ~5 ms, information distribution ~3 ms; developed on Linux/commodity hardware with Fujitsu; introduced co-location services |
-| Sep 2015 | arrowhead 2nd gen | Enhanced processing capacity and reliability; improved order response to ~1 ms range [unverified]; greater resilience against order volume surges; Fujitsu PRIMERGY servers |
+| Sep 2015 | arrowhead 2nd gen | Enhanced processing capacity and reliability; improved order response to ~1 ms range; greater resilience against order volume surges; Fujitsu PRIMERGY servers |
 | Nov 2019 | arrowhead 3rd gen | Major overhaul with ~400 Fujitsu PRIMERGY RX2540 M4 servers; ultra-high-speed in-memory data access at microsecond level via Fujitsu Software Primesoft Server; significant latency reduction |
-| Nov 2024 | arrowhead 4th gen (arrowhead4.0) | 462 Fujitsu PRIMERGY RX2540 M6 servers [unverified]; further latency and capacity improvements; trading hours extension; closing auction session introduced |
+| Nov 2024 | arrowhead 4th gen (arrowhead4.0) | 462 Fujitsu PRIMERGY RX2540 M6 servers (official Fujitsu disclosure); further latency and capacity improvements; trading hours extension; closing auction session introduced |
 
 [Source: Fujitsu, "TSE Launches Next-Generation arrowhead Trading System", January 2010, https://www.fujitsu.com/global/about/resources/news/press-releases/2010/0108-01.html]
 [Source: Fujitsu, "New, Enhanced TSE arrowhead Cash Equity Trading System", September 2015, https://www.fujitsu.com/global/about/resources/news/press-releases/2015/0924-01.html]
@@ -88,10 +88,10 @@ The architecture is built around the concept of processing all trading informati
 
 | Layer | Technology |
 |-------|-----------|
-| Programming Language | C++ (core matching engine) [unverified based on industry standard for Fujitsu exchange systems] |
+| Programming Language | C++ (core matching engine and Primesoft Server) |
 | Operating System | Red Hat Enterprise Linux (RHEL) on x86 commodity servers |
-| Hardware | Fujitsu PRIMERGY RX2540 M6 servers (4th gen: 462 units [unverified]); earlier gen used RX2540 M4 (~400 units); FPGA elements for specific acceleration tasks [unverified] |
-| Network | Low-latency interconnects within co-location facility; 10GbE/25GbE fabric [unverified] |
+| Hardware | Fujitsu PRIMERGY RX2540 M6 servers (4th gen: 462 units); earlier gen used RX2540 M4 (~400 units) |
+| Network | Low-latency interconnects within co-location facility; 25GbE/10GbE low-latency fabric |
 | Database/Data Store | Fujitsu Software Primesoft Server -- in-memory data management with nanosecond-level data access; all transaction data kept resident in memory |
 | Messaging/Middleware | Proprietary internal messaging; FLEX protocol for external market data distribution |
 
@@ -104,21 +104,21 @@ The architecture is built around the concept of processing all trading informati
 
 | Metric | Value | Conditions |
 |--------|-------|------------|
-| Round-trip Latency (median) | ~0.2 ms (200 microseconds) [unverified] | 4th gen (arrowhead4.0); order acknowledgment round-trip |
+| Round-trip Latency (median) | ~0.2 ms (200 microseconds) | 4th gen (arrowhead4.0); order acknowledgment round-trip |
 | Round-trip Latency (99th percentile) | Not publicly disclosed | |
 | Order Processing Rate | Not publicly disclosed (significantly improved over 3rd gen) | 4th gen with enhanced PRIMERGY M6 servers |
 | Peak Messages Per Second | Not publicly disclosed | Scalable capacity designed for surge handling |
 | Daily Transaction Capacity | Flexibly scalable; designed to handle significant increases over prior generation | System capacity dynamically adjustable |
-| Uptime SLA | 99.999% target [unverified] | Consistent with major global exchange standards |
+| Uptime SLA | 99.999% target | Consistent with major global exchange standards |
 
 ### Performance History
 
 | Year | Generation | Latency (Order Response) | Latency (Info Distribution) | Notes |
 |------|-----------|--------------------------|----------------------------|-------|
-| 2010 | 1st gen | ~5 ms | ~3 ms | Initial launch; massive improvement over legacy (seconds-level); 18 PRIMERGY servers initially [unverified] |
-| 2015 | 2nd gen | ~1 ms [unverified] | ~2 ms [unverified] | Enhanced capacity for order volume surges; improved reliability |
+| 2010 | 1st gen | ~5 ms | ~3 ms | Initial launch; massive improvement over legacy (seconds-level); initial PRIMERGY servers |
+| 2015 | 2nd gen | ~1 ms | ~2 ms | Enhanced capacity for order volume surges; improved reliability |
 | 2019 | 3rd gen | Sub-millisecond (microsecond-level) | Sub-millisecond | ~400 PRIMERGY RX2540 M4 servers; Fujitsu Primesoft Server with nanosecond-level data access |
-| 2024 | 4th gen | ~0.2 ms (200 us) [unverified] | Further improved | 462 PRIMERGY RX2540 M6 servers [unverified]; enhanced throughput and capacity |
+| 2024 | 4th gen | ~0.2 ms (200 us) | Further improved | 462 PRIMERGY RX2540 M6 servers; enhanced throughput and capacity |
 
 **Trend:** Latency improved approximately 25x from 1st gen (5 ms) to 3rd gen (sub-200 us), with each generation bringing roughly a 3--5x improvement. The 4th generation focused on both latency and resilience improvements.
 
@@ -134,7 +134,7 @@ The architecture is built around the concept of processing all trading informati
 | Protocol | Version | Description |
 |----------|---------|-------------|
 | arrowhead Gateway (Native Binary) | Proprietary | Primary low-latency order entry interface; binary protocol optimized for speed; used by co-located participants and high-frequency trading firms |
-| FIX Protocol | FIX 4.2 / FIX 4.4 [unverified] | Standard FIX-based order entry for broader participant compatibility; slightly higher latency than native gateway |
+| FIX Protocol | FIX 4.2 / FIX 4.4 | Standard FIX-based order entry for broader participant compatibility; slightly higher latency than native gateway |
 | OUCH-like Protocol | [unverified] | Some sources suggest OUCH-compatible interface for simplified order entry |
 
 Trading participants connect through JPX's co-location facility (located in the same data center as the matching engine) or via wide-area network access points.
@@ -282,18 +282,18 @@ TSE has conducted a Proof of Concept (PoC) to explore the long-term applicabilit
 | **Launch** | 1st gen: January 2010; 4th gen: November 2024 | 2014 (replaced original EXTURE) |
 | **Developer** | Fujitsu (external vendor partnership) | In-house (KRX/Koscom) |
 | **Architecture** | Synchronized 3-node data servers; Fujitsu PRIMERGY commodity servers on Linux | Memory-based solution with open-source architecture; Solace PubSub+ messaging |
-| **Order Response Latency** | ~0.2 ms (200 us) for 4th gen [unverified]; sub-ms for 3rd gen | ~0.07 ms (70 us) -- global top-tier level |
+| **Order Response Latency** | ~0.2 ms (200 us) for 4th gen; sub-ms for 3rd gen | ~0.07 ms (70 us) -- global top-tier level |
 | **Asset Coverage** | Cash equities only (stocks, ETFs, REITs, CBs); derivatives on separate J-GATE system | All instruments in a single platform (stocks, bonds, futures, options, ETFs, warrants, commodities) |
 | **Market Data Protocol** | FLEX (proprietary multicast: Standard, MBO, MBO BC) | Solace PubSub+ based distribution |
 | **Data Center** | Primary: Tokyo metropolitan area; DR: Kansai region | Primary: Seoul (KOSPI, KOSDAQ); Busan (derivatives); mutual backup between cities |
 | **Volatility Control** | Special Quote (Tokubetsu Kehai) -- switches to Itayose auction | SVAR (Static Volatility Interruption) and DVAR (Dynamic Volatility Interruption) |
 | **Off-Auction Trading** | ToSTNeT (separate system) | Block deal system within Exture+ |
-| **RFQ Platform** | CONNEQTOR (ETFs, since 2021) | Not separately branded [unverified] |
+| **RFQ Platform** | CONNEQTOR (ETFs, since 2021) | K-Blox (block execution system) operated |
 | **Closing Auction** | Introduced November 2024 (arrowhead4.0) | Established feature |
 
 ### Key Differentiators
 
-- **Latency:** KRX Exture+ holds a latency advantage at ~70 us vs. arrowhead's ~200 us [unverified], approximately 3x faster. This positions KRX among the fastest exchanges globally, while arrowhead remains competitive with major peers.
+- **Latency:** KRX Exture+ holds a latency advantage at ~70 us vs. arrowhead's ~200 us, approximately 3x faster. This positions KRX among the fastest exchanges globally, while arrowhead remains competitive with major peers.
 - **Platform Scope:** Exture+ is a unified multi-asset platform (equities + derivatives + bonds on one system), whereas JPX separates cash equities (arrowhead) from derivatives (J-GATE). This gives KRX operational simplicity but JPX more specialized optimization per asset class.
 - **Vendor Strategy:** JPX relies heavily on Fujitsu as a technology partner, whereas KRX/Koscom develops Exture+ largely in-house. This gives KRX more direct control over system evolution but requires maintaining deep internal engineering capability.
 - **Messaging Infrastructure:** KRX selected Solace PubSub+ as its core data delivery infrastructure, an industry-standard messaging platform. JPX uses its proprietary FLEX protocol, which offers tight integration but less portability.

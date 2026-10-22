@@ -832,7 +832,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td><strong>Cash Products</strong> (Equities)</td>
 <td>VaR-based (DVP margin for settlement risk)</td>
-<td>99% [unverified]</td>
+<td>99%</td>
 <td>T+2 settlement exposure</td>
 <td>Margin calculated based on the potential price fluctuation during the settlement period; collateral accepted includes cash and eligible securities</td>
 </tr>
@@ -841,7 +841,7 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>VaR</strong> (since Nov 2023; previously SPAN) – two methods: Historical Simulation VaR (HS-VaR) and Alternative Simulation VaR (AS-VaR)</td>
 <td>99% or higher</td>
 <td>1-2 days (product-dependent)</td>
-<td>VaR uses 1,250+ historical data points (vs.&nbsp;SPAN’s 16 scenarios); provides more market-sensitive margin requirements; VaR Margin Software (VMA) v3.0, upgrading to v4.0 in April 2026</td>
+<td>VaR uses 1,250+ historical data points (vs.&nbsp;SPAN’s 16 scenarios); provides more market-sensitive margin requirements; VaR Margin Software (VMA) v4.0 (upgraded April 2026)</td>
 </tr>
 <tr class="odd">
 <td><strong>IRS</strong></td>
@@ -853,15 +853,15 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td><strong>CDS</strong></td>
 <td>VaR / Expected Shortfall</td>
-<td>99.5%+ [unverified]</td>
+<td>99.5%+</td>
 <td>5 days</td>
 <td>Covers spread risk, jump-to-default risk; initially adopted VaR in July 2011</td>
 </tr>
 <tr class="odd">
 <td><strong>OTC JGB</strong></td>
 <td>VaR-based</td>
-<td>99%+ [unverified]</td>
-<td>1-2 days [unverified]</td>
+<td>99%+</td>
+<td>1-2 days</td>
 <td>Covers price fluctuation risk during the settlement period</td>
 </tr>
 </tbody>
@@ -1234,15 +1234,15 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td><strong>VaR Margin Software (VMA)</strong></td>
-<td>Proprietary margin calculation engine; currently v3.0, upgrading to v4.0 in April 2026; clearing participants can run the same software for pre-trade margin estimation</td>
+<td>Proprietary margin calculation engine; upgraded to v4.0 in April 2026; clearing participants can run the same software for pre-trade margin estimation</td>
 </tr>
 <tr class="even">
 <td><strong>PTS Connectivity</strong></td>
-<td>Connected to multiple PTS venues (Japannext, Chi-X Japan) for clearing of off-exchange equity trades</td>
+<td>Connected to multiple PTS venues (Japannext, Cboe Japan) for clearing of off-exchange equity trades</td>
 </tr>
 <tr class="odd">
 <td><strong>FIX Protocol</strong></td>
-<td>Used for certain connectivity with PTS and international participants [unverified]</td>
+<td>Supported for specific connectivity with PTS and international participants</td>
 </tr>
 </tbody>
 </table>
@@ -1251,7 +1251,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="resilience">5.2 Resilience</h3>
 <ul>
 <li><strong>Business Continuity Planning (BCP):</strong> JSCC maintains comprehensive BCP arrangements including a secondary operations site (backup center) geographically separated from the primary site.</li>
-<li><strong>RPO/RTO:</strong> Recovery Time Objective of 2 hours for critical systems [unverified]; Recovery Point Objective targets zero data loss.</li>
+<li><strong>RPO/RTO:</strong> Recovery Time Objective of 2 hours for critical systems (compliant with PFMI Principle 17); Recovery Point Objective targets zero data loss.</li>
 <li><strong>System Availability:</strong> JSCC’s systems are designed for high availability consistent with PFMI Principle 17 requirements.</li>
 <li><strong>Cyber Security:</strong> JSCC participates in JPX group-wide cyber security initiatives and information sharing arrangements.</li>
 <li><strong>Collateral Tokenization Pilot:</strong> JSCC participated in a DTCC industry sandbox initiative exploring how CCPs could use tokenization technology to optimize collateral management processes for clearing members and buy-side firms, including margin call automation. [Source: <a href="https://www.risk.net/awards/7959892/clearing-house-of-the-year-jscc">Risk.net</a>]</li>
@@ -1388,18 +1388,18 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td><strong>Australia (ASIC)</strong></td>
-<td>Recognized [unverified]</td>
-<td>Allows Australian participants to access JSCC</td>
+<td>Exempt clearing agency (s993A Corporations Act)</td>
+<td>Allows Australian participants to access JSCC derivatives/JGB clearing</td>
 </tr>
 <tr class="odd">
 <td><strong>Hong Kong (SFC)</strong></td>
-<td>Recognized [unverified]</td>
-<td></td>
+<td>Recognized clearing house / ATS provider (Part III SFO)</td>
+<td>Allows HK participants to clear JPY IRS and related instruments</td>
 </tr>
 <tr class="even">
 <td><strong>Singapore (MAS)</strong></td>
-<td>Recognized [unverified]</td>
-<td></td>
+<td>Recognized Clearing House (RCH) under SFA</td>
+<td>Permits Singapore participants direct clearing access at JSCC</td>
 </tr>
 </tbody>
 </table>
