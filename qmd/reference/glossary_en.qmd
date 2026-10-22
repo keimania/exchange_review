@@ -79,7 +79,7 @@ format:
 | J-GATE | | Osaka Exchange's (OSE) derivatives trading system built on Nasdaq Genium INET technology; current version 3.0 launched September 2021; version 4.0 planned on Nasdaq Eqlipse platform (~2028) |
 | J-NET | | Osaka Exchange's off-auction trading facility for negotiated large-lot derivative transactions at pre-agreed prices, analogous to block trade facilities at other exchanges |
 | KOSPI 200 Options | | Equity index options based on the KOSPI 200 index, traded on KRX since July 7, 1997; contract multiplier KRW 500,000 (quintupled from KRW 100,000 in June 2012); European-style cash-settled; historically the world's most actively traded single derivatives contract (peak ~3.67 billion contracts in 2011) |
-| KRX Night Session (야간거래) | | KRX's independently operated after-hours derivatives trading session (18:00-06:00 KST), launched June 9, 2025, replacing the previous Eurex-linked arrangement; covers 10 products including KOSPI 200 futures/options, Mini products, KOSDAQ 150, USD futures, and KTB futures |
+| KRX Night Trading Session ||KRX's independently operated after-hours derivatives trading session (18:00-06:00 KST), launched June 9, 2025, replacing the previous Eurex-linked arrangement; covers 10 products including KOSPI 200 futures/options, Mini products, KOSDAQ 150, USD futures, and KTB futures|
 | KRX-SPAN | | KRX's modified SPAN-based margin methodology for listed derivatives; uses scenario-based portfolio risk assessment; includes intraday margin calls triggered when KOSPI 200 volatility reaches ≥80% of the futures margin rate |
 | Lead Market Maker | LMM | A designated market participant required to provide continuous two-sided quotes with specific obligations; receives priority allocation in some matching algorithms |
 | Liquidation Group | | In Eurex Prisma, a grouping of products sharing similar risk characteristics for portfolio-based margin calculation; enables cross-margining between listed and OTC derivatives |
@@ -100,7 +100,7 @@ format:
 | RiskGuard | | Euronext's pre-trade risk management service for derivatives and cash markets; provides order size limits, maximum order quantity, daily maximum exposure monitoring, kill switch functionality, and self-trade prevention via FIX 5.0 API and web-based GUI |
 | SAIL (SOLA Access Information Language) | SAIL | Montreal Exchange's native high-performance protocol for the SOLA trading platform; supports all order entry functionalities for brokers, HFT firms, and designated market makers |
 | Scanning Range | | In SPAN methodology, the maximum probable one-day price move for each product, used to generate risk scenarios |
-| Sidecar (사이드카) | | KRX's market-wide circuit breaker for derivatives; triggered when KOSPI 200 futures lead month hits ±5% of previous settlement for 1 minute with theoretical price variance ±3% or more; halts ALL derivatives contracts for 5 minutes |
+| Sidecar (Derivatives Circuit Breaker) ||KRX's market-wide circuit breaker for derivatives; triggered when KOSPI 200 futures lead month hits ±5% of previous settlement for 1 minute with theoretical price variance ±3% or more; halts ALL derivatives contracts for 5 minutes|
 | Self-Trade Prevention | STP | A configurable mechanism that prevents matching of orders from the same firm or account |
 | SEOCH | | The SEHK Options Clearing House Limited — HKEX's clearing house for stock options traded on the Stock Exchange of Hong Kong |
 | SIMEX | | Singapore International Monetary Exchange — Asia's first financial futures exchange, established 1984; merged into SGX in 1999; pioneered mutual offset arrangement with CME for Eurodollar futures |
@@ -117,7 +117,7 @@ format:
 | Trade Price Validation | TPV | Euronext's additional safeguard layer for derivatives markets that validates trade prices before execution to prevent aberrant trades; supplements the dynamic and static collar mechanisms |
 | V-KOSPI 200 | | Volatility index measuring the implied volatility of KOSPI 200 options, analogous to the VIX; V-KOSPI 200 futures trade on KRX with a multiplier of KRW 250,000 |
 | Volatility Interruption | VI | Eurex's circuit breaker mechanism that moves an instrument from continuous trading to a volatility auction when price deviation limits are breached |
-| Volatility Interruption (변동성완화장치, VI) | VI | KRX's dynamic circuit breaker mechanism consisting of Static VI (정적VI, triggered by deviation from previous settlement) and Dynamic VI (동적VI, triggered by ±3% deviation from recent reference price); triggers a 2-minute cooling-off period followed by single-price auction |
+| Volatility Interruption (VI) — KRX | VI |KRX's dynamic circuit breaker mechanism consisting of Static VI (정적VI, triggered by deviation from previous settlement) and Dynamic VI (동적VI, triggered by ±3% deviation from recent reference price); triggers a 2-minute cooling-off period followed by single-price auction|
 | Zero Days to Expiration | 0DTE | Options contracts that expire on the same day they are traded; popularized by Cboe's SPX daily expirations, reaching ~59% of SPX options volume in 2025 |
 
 ## Trading
@@ -137,9 +137,9 @@ format:
 | Dark Pool | | A private trading venue that does not display orders publicly before execution |
 | Designated Market Maker | DMM | A market participant assigned to specific securities on NYSE, responsible for maintaining fair and orderly markets (successor to the specialist role) |
 | Designated Sponsor | | Deutsche Borse/Xetra term for a contractually obligated liquidity provider who maintains continuous bid/ask quotes for less liquid securities to ensure tradability |
-| Conditional Limit Order (조건부지정가호가) | | KRX order type that acts as a limit order during continuous trading but converts to a market order at the closing call auction |
+| Conditional Limit Order ||KRX order type that acts as a limit order during continuous trading but converts to a market order at the closing call auction|
 | Direct Market Access | DMA | Electronic trading infrastructure allowing buy-side firms to directly access exchange order books |
-| Dongsi Hoga (동시호가) | | KRX's call auction mechanism used for opening price, closing price, and VI-triggered auction price determination; all orders are treated as simultaneous and matched at a single equilibrium price |
+| Call Auction (Simultaneous Order Matching) || KRX's single-price call auction mechanism (traditionally referred to as Simultaneous Bids and Offers or 'Dongsi Hoga') used for opening price, closing price, and VI-triggered auction price determination; all orders accumulated during the period are treated as arriving simultaneously and matched at a single equilibrium price. |
 | Enhanced Limit Order | ELO | HKEX order type that can match up to 10 price queues beyond the best price on the opposite side |
 | ETF Connect | | Extension of the Stock Connect programme (launched July 2022) enabling cross-border trading of eligible ETFs between Hong Kong and mainland China exchanges |
 | Forced Order Range | FOR | SGX mechanism that rejects orders priced beyond a specified range (e.g., +/-30 bids) from the current best price to prevent erroneous trades |
@@ -148,7 +148,7 @@ format:
 | Iceberg Order | | An order type where only a portion of the total order quantity is visible in the order book |
 | Intermarket Sweep Order | ISO | A limit order that simultaneously routes to multiple exchanges to sweep through protected quotes under Reg NMS |
 | Itayose | | JPX's call auction method (板寄せ) used for opening/closing price determination, where orders are accumulated and matched at a single equilibrium price |
-| Jeopsokmaemae (접속매매) | | KRX's continuous trading method using price-time priority matching between opening and closing auctions; equivalent to continuous order book matching |
+| Continuous Trading (Price-Time Priority) || KRX's continuous trading method (traditionally termed 'Jeopsokmaemae') using price-time priority matching between opening and closing call auctions; standard continuous order book matching. |
 | Limit Order | | An order to buy or sell at a specified price or better |
 | Limit Order Book | LOB | The collection of all outstanding limit orders for a given security |
 | Limit Up-Limit Down | LULD | A U.S. price band mechanism that prevents trades outside specified percentage bands from a reference price |
@@ -165,10 +165,10 @@ format:
 | Parity Allocation | | NYSE's matching priority rule where orders at the same price share proportional fills among DMM, floor brokers, and displayed orders |
 | Price-Time Priority | | A matching rule where orders are first ranked by price, then by time of entry |
 | Retail Price Improvement Order | RPI | A non-displayed order type on NYSE that provides price improvement to retail order flow |
-| SAPI (시장전체 매매거래중단) | | KRX's market-wide circuit breaker mechanism; triggers at KOSPI -8% (Level 1, 20-min halt), -15% (Level 2, 20-min halt), -20% (Level 3, trading terminated for the day); each sustained for 1 minute |
+| Market-Wide Circuit Breaker (KRX) | MWCB | KRX's market-wide circuit breaker mechanism; triggers at KOSPI decline of -8% (Level 1, 20-min halt), -15% (Level 2, 20-min halt), and -20% (Level 3, trading terminated for the day); each level requires a 1-minute sustained duration confirmation before activation. |
 | Self-Match Prevention | SMP | A mechanism that prevents orders from the same participant from matching against each other |
 | Self-Regulatory Organization | SRO | An organization authorized to create and enforce rules governing its members (e.g., NYSE, NASDAQ, FINRA) |
-| Sidecar (프로그램매매호가 효력정지) | | KRX mechanism that suspends program trading orders for 5 minutes when KOSPI 200 front-month futures price moves +/-5% from base price for 1 minute; applied once per day, not after 14:50 KST |
+| Sidecar (Program Trading Suspension) ||KRX mechanism that suspends program trading orders for 5 minutes when KOSPI 200 front-month futures price moves +/-5% from base price for 1 minute; applied once per day, not after 14:50 KST|
 | Special Quote (Tokubetsu Kehai) | | JPX volatility interruption mechanism (特別気配) that temporarily halts continuous trading when price movement exceeds a threshold, displaying an indicative quote before resuming via Itayose auction |
 | Stock Connect | | Mutual market access program linking HKEX with Shanghai (2014) and Shenzhen (2016) stock exchanges, allowing cross-border equity trading |
 | Stop Order | | An order that becomes a market order when a specified price level is reached |
@@ -212,7 +212,7 @@ format:
 | Individual Segregated Account | ISA | An account structure where a clearing member's client positions and collateral are held separately at the CCP, providing full portability and protection in the event of the clearing member's default |
 | Initial Margin | IM | Collateral collected by a CCP from clearing members to cover potential future exposure |
 | Interoperability | | An arrangement allowing two or more CCPs to establish links so that participants of different CCPs can clear trades executed on the same trading venue; regulated under EMIR Article 51; implemented in European cash equities (e.g., Cboe Clear Europe, LCH, EuroCCP, SIX x-clear) |
-| Joint Compensation Fund (손해배상공동기금) | | KRX's mutualized default fund for derivatives clearing; contributions from clearing members based on fixed + variable model; estimated size ~KRW 100 billion (~$75M); used after defaulter's margin and clearing deposit are exhausted |
+| Joint Compensation Fund ||KRX's mutualized default fund for derivatives clearing; contributions from clearing members based on fixed + variable model; estimated size ~KRW 100 billion (~$75M); used after defaulter's margin and clearing deposit are exhausted|
 | LCH | LCH | London Clearing House — a multi-asset CCP majority owned by LSEG (82.61%); operates as LCH Ltd (London, regulated by Bank of England) and LCH SA (Paris, regulated by ACPR/Banque de France); clears OTC derivatives, repos, fixed income, FX, equities, and listed derivatives |
 | Legal Entity Identifier | LEI | A 20-character alphanumeric code that uniquely identifies legal entities participating in financial transactions; mandated globally for derivatives trade reporting under EMIR, Dodd-Frank, and other regulations; issued by Local Operating Units under the Global LEI Foundation (GLEIF) |
 | Lending CCP | | Eurex Clearing's securities lending service with CCP interposition, reducing counterparty risk in the securities lending market |
@@ -235,7 +235,7 @@ format:
 | Qualifying CCP | QCCP | A CCP that has been recognized as meeting international regulatory standards, resulting in lower capital requirements for its members |
 | Security Token | | A digital representation of a financial instrument (equity, bond, fund unit, or other security) issued and recorded on a distributed ledger (DLT/blockchain) under applicable securities law; in Korea, mandatory registration of all security tokens with KSD (Korea Securities Depository) is required under the revised Electronic Registration Act framework, effective January 2027 |
 | Recovery and Resolution | | The framework for restoring a CCP to viability (recovery) or, if recovery fails, winding down in an orderly manner (resolution) while preserving critical clearing functions; governed by the EU CCP RRR, FSB Key Attributes, and CPMI-IOSCO Recovery Guidance; recovery tools include VMGH, cash calls, and partial tear-up; resolution tools include bridge CCP, mandatory tear-up, and public backstop |
-| Settlement Facilitation Deposit (결제촉진담보금) | | Collateral deposited by KRX clearing members to promote settlement completion; eligible collateral includes cash, government bonds, and monetary stabilization bonds |
+| Settlement Facilitation Deposit ||Collateral deposited by KRX clearing members to promote settlement completion; eligible collateral includes cash, government bonds, and monetary stabilization bonds|
 | Skin in the Game | SITG | A CCP's own financial resources contributed to the default waterfall, distinct from clearing member contributions |
 | SIX x-clear | | SIX Group's CCP for equities and other instruments; planned consolidation with BME Clearing into a single multi-asset CCP headquartered in Madrid |
 | SPAN | SPAN | Standard Portfolio Analysis of Risk — CME's portfolio-based margin methodology using 16 risk scenarios analyzing price and volatility changes; widely adopted globally; being succeeded by SPAN 2 (HVaR + Expected Shortfall based) |
@@ -268,7 +268,7 @@ format:
 | Immobilization | | The practice of concentrating physical securities certificates in a central depository (CSD) and recording subsequent transfers through book entries, without eliminating the underlying physical certificates; contrasts with full dematerialization |
 | International CSD | ICSD | A CSD that settles trades in international securities and various domestic securities (e.g., Euroclear, Clearstream) |
 | JASDEC | | Japan Securities Depository Center, Inc. — Japan's central securities depository for equities and corporate bonds; provides book-entry transfer services for shares, investment trusts, corporate bonds, and commercial paper; operates under the Book-Entry Transfer Act |
-| KSD (Korea Securities Depository, 한국예탁결제원) | KSD | South Korea's central securities depository; established 1974; headquartered in Busan; provides securities custody, settlement agent services, fund settlement, and transfer agent services; ISO 20022 adopted; SWIFT BIC KSDCKRSEXXX; mandatory security token registration framework effective January 2027 |
+| Korea Securities Depository (KSD) | KSD |South Korea's central securities depository; established 1974; headquartered in Busan; provides securities custody, settlement agent services, fund settlement, and transfer agent services; ISO 20022 adopted; SWIFT BIC KSDCKRSEXXX; mandatory security token registration framework effective January 2027|
 | Mandatory Buy-in | | A mechanism requiring a buyer to purchase securities in the open market if the original seller fails to deliver within a specified period after the intended settlement date; proposed under CSDR but deferred in the EU; remains under discussion globally as a settlement discipline tool |
 | Monte Titoli | | Italian CSD for equities and other securities; subsidiary of Euronext (acquired with Borsa Italiana in 2021) |
 | Omnibus Account | | A single account held at a CSD that contains the securities of multiple underlying clients |
@@ -277,7 +277,7 @@ format:
 | Settlement Discipline Regime | SDR | CSDR provision imposing cash penalties on participants that fail to settle on the intended settlement date; mandatory buy-ins originally proposed but deferred |
 | Settlement Finality | | The point at which the transfer of securities and funds becomes irrevocable and unconditional |
 | Settlement Finality Directive | SFD | EU Directive 98/26/EC providing legal certainty for settlement finality in designated payment and securities settlement systems, ensuring transfers cannot be unwound in insolvency |
-| Split Settlement (분할결제) | | KSD's settlement system innovation introduced in 2021 that divides settlement into smaller units to reduce peak settlement risk; units progressively reduced from KRW 10 billion (2021) to 5 billion (2024) to 1 billion (April 2026) |
+| Split Settlement ||KSD's settlement system innovation introduced in 2021 that divides settlement into smaller units to reduce peak settlement risk; units progressively reduced from KRW 10 billion (2021) to 5 billion (2024) to 1 billion (April 2026)|
 | Straight-Through Processing | STP | The automated end-to-end processing of trades without manual intervention |
 | TARGET2-Securities | T2S | Eurosystem platform operated by the ECB providing a single pan-European platform for securities settlement in central bank money; used by Iberclear, Monte Titoli, and other European CSDs |
 | Trade Date Affirmation | | The process of confirming trade details between counterparties on trade date, critical for T+1 settlement; DTCC's CTM platform targets same-day affirmation |
@@ -405,9 +405,9 @@ format:
 | Double Volume Cap / Single Volume Cap | DVC / SVC | MiFID II mechanism limiting dark pool trading as a percentage of total volume; reformed from dual cap (4%/8%) to single 7% cap under MiFIR Refit |
 | Dubai Financial Services Authority | DFSA | The independent regulator of the Dubai International Financial Centre (DIFC); supervises DME/GME as a licensed exchange operating within the DIFC financial free zone; maintains cooperation agreements with international regulators |
 | EMIR | EMIR | European Market Infrastructure Regulation — EU regulation on OTC derivatives, CCPs, and trade repositories |
-| Electronic Securities Act (전자증권법) | | South Korea's Act on Electronic Registration of Stocks, Bonds, etc. (주식·사채 등의 전자등록에 관한 법률); governs the electronic registration of securities at KSD and designated registrars; revisions extended the framework to cover security tokens, with mandatory KSD registration of all security tokens effective January 2027 |
+| Electronic Securities Act ||South Korea's Act on Electronic Registration of Stocks, Bonds, etc. (주식·사채 등의 전자등록에 관한 법률); governs the electronic registration of securities at KSD and designated registrars; revisions extended the framework to cover security tokens, with mandatory KSD registration of all security tokens effective January 2027|
 | ESMA | ESMA | European Securities and Markets Authority — EU supervisory authority coordinating securities regulation across member states |
-| Financial Investment Services and Capital Markets Act (자본시장법) | FSCMA | South Korea's primary securities law; function-based regulation covering stocks, bonds, collective investment schemes, and derivatives; administered by FSC/FSS |
+| Financial Investment Services and Capital Markets Act (FSCMA) | FSCMA |South Korea's primary securities law; function-based regulation covering stocks, bonds, collective investment schemes, and derivatives; administered by FSC/FSS|
 | Financial Instruments and Exchange Act | FIEA | Japan's primary securities regulation law, governing securities trading, disclosure, and market conduct |
 | Financial Market Infrastructure Act | FMIA | Switzerland's primary legislation governing financial market infrastructures, including exchanges, CCPs, CSDs, and trade repositories; administered by FINMA |
 | Financial Services Commission (Korea) | FSC (금융위원회) | South Korea's highest financial regulatory authority; formulates policy, licensing, and approval of financial companies; supervises KRX |

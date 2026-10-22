@@ -570,7 +570,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Equity index options based on the KOSPI 200 index, traded on KRX since July 7, 1997; contract multiplier KRW 500,000 (quintupled from KRW 100,000 in June 2012); European-style cash-settled; historically the world’s most actively traded single derivatives contract (peak ~3.67 billion contracts in 2011)</td>
 </tr>
 <tr class="even">
-<td>KRX Night Session (야간거래)</td>
+<td>KRX Night Trading Session</td>
 <td></td>
 <td>KRX’s independently operated after-hours derivatives trading session (18:00-06:00 KST), launched June 9, 2025, replacing the previous Eurex-linked arrangement; covers 10 products including KOSPI 200 futures/options, Mini products, KOSDAQ 150, USD futures, and KTB futures</td>
 </tr>
@@ -675,7 +675,7 @@ ul.task-list li input[type="checkbox"] {
 <td>In SPAN methodology, the maximum probable one-day price move for each product, used to generate risk scenarios</td>
 </tr>
 <tr class="odd">
-<td>Sidecar (사이드카)</td>
+<td>Sidecar (Derivatives Circuit Breaker)</td>
 <td></td>
 <td>KRX’s market-wide circuit breaker for derivatives; triggered when KOSPI 200 futures lead month hits ±5% of previous settlement for 1 minute with theoretical price variance ±3% or more; halts ALL derivatives contracts for 5 minutes</td>
 </tr>
@@ -760,7 +760,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Eurex’s circuit breaker mechanism that moves an instrument from continuous trading to a volatility auction when price deviation limits are breached</td>
 </tr>
 <tr class="even">
-<td>Volatility Interruption (변동성완화장치, VI)</td>
+<td>Volatility Interruption (VI) — KRX</td>
 <td>VI</td>
 <td>KRX’s dynamic circuit breaker mechanism consisting of Static VI (정적VI, triggered by deviation from previous settlement) and Dynamic VI (동적VI, triggered by ±3% deviation from recent reference price); triggers a 2-minute cooling-off period followed by single-price auction</td>
 </tr>
@@ -854,7 +854,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Deutsche Borse/Xetra term for a contractually obligated liquidity provider who maintains continuous bid/ask quotes for less liquid securities to ensure tradability</td>
 </tr>
 <tr class="even">
-<td>Conditional Limit Order (조건부지정가호가)</td>
+<td>Conditional Limit Order</td>
 <td></td>
 <td>KRX order type that acts as a limit order during continuous trading but converts to a market order at the closing call auction</td>
 </tr>
@@ -864,9 +864,9 @@ ul.task-list li input[type="checkbox"] {
 <td>Electronic trading infrastructure allowing buy-side firms to directly access exchange order books</td>
 </tr>
 <tr class="even">
-<td>Dongsi Hoga (동시호가)</td>
+<td>Call Auction (Simultaneous Order Matching)</td>
 <td></td>
-<td>KRX’s call auction mechanism used for opening price, closing price, and VI-triggered auction price determination; all orders are treated as simultaneous and matched at a single equilibrium price</td>
+<td>KRX’s single-price call auction mechanism (traditionally referred to as Simultaneous Bids and Offers or ‘Dongsi Hoga’) used for opening price, closing price, and VI-triggered auction price determination; all orders accumulated during the period are treated as arriving simultaneously and matched at a single equilibrium price.</td>
 </tr>
 <tr class="odd">
 <td>Enhanced Limit Order</td>
@@ -909,9 +909,9 @@ ul.task-list li input[type="checkbox"] {
 <td>JPX’s call auction method (板寄せ) used for opening/closing price determination, where orders are accumulated and matched at a single equilibrium price</td>
 </tr>
 <tr class="odd">
-<td>Jeopsokmaemae (접속매매)</td>
+<td>Continuous Trading (Price-Time Priority)</td>
 <td></td>
-<td>KRX’s continuous trading method using price-time priority matching between opening and closing auctions; equivalent to continuous order book matching</td>
+<td>KRX’s continuous trading method (traditionally termed ‘Jeopsokmaemae’) using price-time priority matching between opening and closing call auctions; standard continuous order book matching.</td>
 </tr>
 <tr class="even">
 <td>Limit Order</td>
@@ -994,9 +994,9 @@ ul.task-list li input[type="checkbox"] {
 <td>A non-displayed order type on NYSE that provides price improvement to retail order flow</td>
 </tr>
 <tr class="even">
-<td>SAPI (시장전체 매매거래중단)</td>
-<td></td>
-<td>KRX’s market-wide circuit breaker mechanism; triggers at KOSPI -8% (Level 1, 20-min halt), -15% (Level 2, 20-min halt), -20% (Level 3, trading terminated for the day); each sustained for 1 minute</td>
+<td>Market-Wide Circuit Breaker (KRX)</td>
+<td>MWCB</td>
+<td>KRX’s market-wide circuit breaker mechanism; triggers at KOSPI decline of -8% (Level 1, 20-min halt), -15% (Level 2, 20-min halt), and -20% (Level 3, trading terminated for the day); each level requires a 1-minute sustained duration confirmation before activation.</td>
 </tr>
 <tr class="odd">
 <td>Self-Match Prevention</td>
@@ -1009,7 +1009,7 @@ ul.task-list li input[type="checkbox"] {
 <td>An organization authorized to create and enforce rules governing its members (e.g., NYSE, NASDAQ, FINRA)</td>
 </tr>
 <tr class="odd">
-<td>Sidecar (프로그램매매호가 효력정지)</td>
+<td>Sidecar (Program Trading Suspension)</td>
 <td></td>
 <td>KRX mechanism that suspends program trading orders for 5 minutes when KOSPI 200 front-month futures price moves +/-5% from base price for 1 minute; applied once per day, not after 14:50 KST</td>
 </tr>
@@ -1223,7 +1223,7 @@ ul.task-list li input[type="checkbox"] {
 <td>An arrangement allowing two or more CCPs to establish links so that participants of different CCPs can clear trades executed on the same trading venue; regulated under EMIR Article 51; implemented in European cash equities (e.g., Cboe Clear Europe, LCH, EuroCCP, SIX x-clear)</td>
 </tr>
 <tr class="odd">
-<td>Joint Compensation Fund (손해배상공동기금)</td>
+<td>Joint Compensation Fund</td>
 <td></td>
 <td>KRX’s mutualized default fund for derivatives clearing; contributions from clearing members based on fixed + variable model; estimated size ~KRW 100 billion (~$75M); used after defaulter’s margin and clearing deposit are exhausted</td>
 </tr>
@@ -1338,7 +1338,7 @@ ul.task-list li input[type="checkbox"] {
 <td>The framework for restoring a CCP to viability (recovery) or, if recovery fails, winding down in an orderly manner (resolution) while preserving critical clearing functions; governed by the EU CCP RRR, FSB Key Attributes, and CPMI-IOSCO Recovery Guidance; recovery tools include VMGH, cash calls, and partial tear-up; resolution tools include bridge CCP, mandatory tear-up, and public backstop</td>
 </tr>
 <tr class="even">
-<td>Settlement Facilitation Deposit (결제촉진담보금)</td>
+<td>Settlement Facilitation Deposit</td>
 <td></td>
 <td>Collateral deposited by KRX clearing members to promote settlement completion; eligible collateral includes cash, government bonds, and monetary stabilization bonds</td>
 </tr>
@@ -1497,7 +1497,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Japan Securities Depository Center, Inc.&nbsp;— Japan’s central securities depository for equities and corporate bonds; provides book-entry transfer services for shares, investment trusts, corporate bonds, and commercial paper; operates under the Book-Entry Transfer Act</td>
 </tr>
 <tr class="even">
-<td>KSD (Korea Securities Depository, 한국예탁결제원)</td>
+<td>Korea Securities Depository (KSD)</td>
 <td>KSD</td>
 <td>South Korea’s central securities depository; established 1974; headquartered in Busan; provides securities custody, settlement agent services, fund settlement, and transfer agent services; ISO 20022 adopted; SWIFT BIC KSDCKRSEXXX; mandatory security token registration framework effective January 2027</td>
 </tr>
@@ -1542,7 +1542,7 @@ ul.task-list li input[type="checkbox"] {
 <td>EU Directive 98/26/EC providing legal certainty for settlement finality in designated payment and securities settlement systems, ensuring transfers cannot be unwound in insolvency</td>
 </tr>
 <tr class="odd">
-<td>Split Settlement (분할결제)</td>
+<td>Split Settlement</td>
 <td></td>
 <td>KSD’s settlement system innovation introduced in 2021 that divides settlement into smaller units to reduce peak settlement risk; units progressively reduced from KRW 10 billion (2021) to 5 billion (2024) to 1 billion (April 2026)</td>
 </tr>
@@ -2164,7 +2164,7 @@ ul.task-list li input[type="checkbox"] {
 <td>European Market Infrastructure Regulation — EU regulation on OTC derivatives, CCPs, and trade repositories</td>
 </tr>
 <tr class="even">
-<td>Electronic Securities Act (전자증권법)</td>
+<td>Electronic Securities Act</td>
 <td></td>
 <td>South Korea’s Act on Electronic Registration of Stocks, Bonds, etc. (주식·사채 등의 전자등록에 관한 법률); governs the electronic registration of securities at KSD and designated registrars; revisions extended the framework to cover security tokens, with mandatory KSD registration of all security tokens effective January 2027</td>
 </tr>
@@ -2174,7 +2174,7 @@ ul.task-list li input[type="checkbox"] {
 <td>European Securities and Markets Authority — EU supervisory authority coordinating securities regulation across member states</td>
 </tr>
 <tr class="even">
-<td>Financial Investment Services and Capital Markets Act (자본시장법)</td>
+<td>Financial Investment Services and Capital Markets Act (FSCMA)</td>
 <td>FSCMA</td>
 <td>South Korea’s primary securities law; function-based regulation covering stocks, bonds, collective investment schemes, and derivatives; administered by FSC/FSS</td>
 </tr>

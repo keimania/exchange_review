@@ -16,14 +16,14 @@
 | Closing Auction | 종가단일가매매 (장마감 경매) | 거래일 종료 시 종가를 결정하기 위해 실시하는 단일가매매이다. | KRX: 장마감 동시호가 (15:20~15:30) |
 | CONNEQTOR | CONNEQTOR (호가요청 플랫폼) | JPX의 ETF/ETN 매매를 위한 RFQ(호가요청) 플랫폼으로, 시장조성자가 요청에 따라 경쟁적 호가를 제공한다. | JPX의 ETF/ETN 호가요청 플랫폼 |
 | Consolidated Audit Trail (CAT) | 통합감사추적시스템 | 미국 전 거래소에 걸쳐 모든 주식 및 옵션 주문 이벤트를 추적하는 포괄적 규제 데이터베이스이다. | 미국 규제 데이터베이스 |
-| Conditional Limit Order (조건부지정가호가) | 조건부지정가호가 | KRX 주문유형으로, 접속매매 중에는 지정가주문으로 작동하다가 장마감 단일가매매 시 시장가주문으로 전환된다. | KRX 전용 주문유형 |
+| Conditional Limit Order | 조건부지정가호가 |KRX 주문유형으로, 접속매매 중에는 지정가주문으로 작동하다가 장마감 단일가매매 시 시장가주문으로 전환된다.|KRX 전용 주문유형|
 | Continuous Trading | 접속매매 (연속매매) | 주문이 도착하는 즉시 호가장의 대기 주문과 체결되는 매매 세션이다. | KRX: 정규시장 접속매매 |
 | D-Order (D-Quote) | D주문 (DMM 재량주문) | NYSE DMM의 재량주문으로, 경매 및 접속매매 시 가격 개선을 허용한다. | NYSE DMM 전용 |
 | Dark Pool | 다크풀 (비공개 거래소) | 체결 전 주문을 공개적으로 표시하지 않는 비공개 매매 장소이다. | 한국에서는 제한적 운영 |
 | Designated Market Maker (DMM) | 지정시장조성자 | NYSE에서 특정 증권에 배정되어 공정하고 질서 있는 시장을 유지할 책임이 있는 시장참가자이다(과거 전문딜러 역할의 후신). | NYSE 전문 |
 | Designated Sponsor | 지정유동성공급자 | Deutsche Borse/Xetra에서 유동성이 낮은 증권의 거래가능성을 보장하기 위해 계약에 따라 지속적으로 매수·매도 호가를 제시하는 유동성공급자이다. | Deutsche Borse/Xetra 용어 |
 | Direct Market Access (DMA) | DMA (직접시장접근) | 바이사이드 기관이 거래소 호가장에 직접 접근할 수 있도록 하는 전자매매 인프라이다. | |
-| Dongsi Hoga (동시호가) | 동시호가 | KRX의 단일가매매 메커니즘으로, 시가·종가·VI 발동 후 가격 결정에 사용된다. 모든 주문을 동시 접수된 것으로 처리하고 단일 균형가격으로 체결한다. | KRX 시가·종가 결정 메커니즘 |
+| Call Auction (Simultaneous Order Matching) | 동시호가 (단일가매매, Call Auction) | KRX의 단일가매매(Call Auction) 메커니즘으로, 시가·종가 및 변동성완화장치(VI) 발동 후 가격 결정에 사용된다. 일정 시간 동안 접수된 모든 호가를 동시 접수로 간주하여 단일 균형가격으로 일괄 체결한다 (전통적 명칭: 동시호가). | KRX 시가·종가 결정 메커니즘 (Call Auction) |
 | Enhanced Limit Order (ELO) | 확장지정가주문 | HKEX 주문유형으로, 반대편 최우선호가 기준 최대 10개 가격단계까지 체결 가능하다. | HKEX 주문유형 |
 | ETF Connect | ETF 커넥트 | Stock Connect 프로그램의 확장으로(2022년 7월 개시), 홍콩과 중국 본토 거래소 간 적격 ETF의 국경 간 매매를 가능하게 한다. | Stock Connect 확장 (2022년 7월~) |
 | Forced Order Range (FOR) | 강제주문범위 | SGX의 오류방지 장치로, 현재 최우선호가에서 일정 범위(예: ±30 틱)를 벗어나는 가격의 주문을 거부한다. | SGX 오류방지 장치 |
@@ -32,7 +32,7 @@
 | Iceberg Order | 빙산주문 (비공개수량주문) | 전체 주문수량 중 일부만 호가장에 표시되는 주문유형이다. | |
 | Intermarket Sweep Order (ISO) | 시장간일괄주문 | Reg NMS에 따라 보호호가를 소진하기 위해 복수의 거래소에 동시 전송되는 지정가주문이다. | 미국 Reg NMS 관련 |
 | Itayose | 이타요세 (판기매매, 板寄せ) | JPX의 단일가매매 방식으로, 주문을 누적한 후 단일 균형가격으로 체결하여 시가/종가를 결정한다. | JPX 단일가매매 방식 |
-| Jeopsokmaemae (접속매매) | 접속매매 | KRX의 연속매매 방식으로, 개시 및 종가 단일가매매 사이에 가격-시간 우선원칙에 따라 주문을 체결한다. | KRX 연속매매 방식 |
+| Continuous Trading (Price-Time Priority) | 접속매매 (연속매매, Continuous Trading) | KRX의 정규 거래시간 중 개시 및 종가 단일가매매 사이에 가격-시간 우선원칙에 따라 주문을 연속적으로 체결하는 매매 방식이다 (전통적 명칭: 접속매매). | KRX 정규시장 연속매매 방식 |
 | Limit Order | 지정가주문 | 지정된 가격 또는 그보다 유리한 가격으로 매수 또는 매도하는 주문이다. | |
 | Limit Order Book (LOB) | 호가창 (지정가주문장) | 특정 증권에 대한 모든 미체결 지정가주문의 집합이다. | |
 | Limit Up-Limit Down (LULD) | 가격제한제도 (LULD) | 기준가격 대비 일정 비율 범위 밖의 거래를 방지하는 미국의 가격밴드 메커니즘이다. | 미국 가격밴드 메커니즘 |
@@ -51,8 +51,8 @@
 | Retail Price Improvement Order (RPI) | 소매가격개선주문 | NYSE의 비표시 주문유형으로, 소매 주문 흐름에 가격 개선을 제공한다. | NYSE 비공개 주문유형 |
 | Self-Match Prevention (SMP) | 자기체결방지 | 동일 참가자의 주문이 상호 체결되는 것을 방지하는 메커니즘이다. | |
 | Self-Regulatory Organization (SRO) | 자율규제기관 | 회원에 대한 규칙을 제정하고 집행할 권한을 부여받은 기관이다(예: NYSE, NASDAQ, FINRA). | KRX: 자율규제 기능 수행 |
-| SAPI (시장전체 매매거래중단) | 시장전체 매매거래중단 | KRX의 시장전체 서킷브레이커로, KOSPI 지수 하락률 -8%(1단계, 20분 거래중단), -15%(2단계, 20분 거래중단), -20%(3단계, 당일 매매 종료) 시 발동된다. 각 단계는 1분간 지속 확인 후 발동한다. | KRX: KOSPI -8%/-15%/-20% 3단계 |
-| Sidecar (프로그램매매호가 효력정지) | 사이드카 (프로그램매매호가 효력정지) | KOSPI 200 근월물 선물 가격이 기준가 대비 ±5% 변동 상태가 1분간 지속될 경우 프로그램매매 호가를 5분간 정지하는 KRX의 메커니즘이다. 하루 1회에 한해 적용되며 14:50 이후에는 발동하지 않는다. | KRX: KOSPI 200 선물 ±5% 1분 지속 시 발동; 1일 1회 한정 |
+| Market-Wide Circuit Breaker (KRX) | 시장전체 매매거래중단 (서킷브레이커, MWCB) | KRX의 시장전체 서킷브레이커 메커니즘으로, KOSPI 지수 하락률 -8%(1단계, 20분 거래중단), -15%(2단계, 20분 거래중단), -20%(3단계, 당일 매매 종료) 시 발동된다. 각 단계는 1분간 지속 확인 후 발동한다. | KRX: KOSPI -8%/-15%/-20% 3단계 서킷브레이커 |
+| Sidecar (Program Trading Suspension) | 사이드카 (프로그램매매호가 효력정지) |KOSPI 200 근월물 선물 가격이 기준가 대비 ±5% 변동 상태가 1분간 지속될 경우 프로그램매매 호가를 5분간 정지하는 KRX의 메커니즘이다. 하루 1회에 한해 적용되며 14:50 이후에는 발동하지 않는다.|KRX: KOSPI 200 선물 ±5% 1분 지속 시 발동; 1일 1회 한정|
 | Special Quote (Tokubetsu Kehai) | 특별호가 (特別気配) | JPX의 변동성중단 메커니즘(特別気配)으로, 가격 변동이 임계치를 초과하면 접속매매를 일시 중단하고 예상호가를 표시한 후 이타요세 경매로 매매를 재개한다. | JPX 변동성중단 메커니즘 |
 | Stock Connect | 후강퉁/선강퉁 (Stock Connect) | HKEX와 상해(2014년) 및 심천(2016년) 증권거래소를 연결하여 국경 간 주식 매매를 허용하는 상호 시장접근 프로그램이다. | HKEX-상해/심천 상호접근 |
 | Stop Order | 조건부지정가주문 (역지정가주문) | 지정된 가격 수준에 도달하면 시장가주문으로 전환되는 주문이다. | |
@@ -61,7 +61,7 @@
 | Trading at Last (TAL) | 종가매매 (장마감 후 종가거래) | 장마감 경매 이후의 세션(Euronext, SIX, BME 등에서 사용)으로, 확정된 종가로만 주문을 체결할 수 있다. | Euronext, SIX, BME 등 |
 | Volatility Auction | 변동성완화장치 (VI) 발동 시 단일가매매 | 가격 변동이 일정 임계치를 초과할 때 발동되는 특별 단일가매매이다. | KRX: VI (정적VI/동적VI) |
 | Volatility Control Mechanism (VCM) | 변동성통제장치 | HKEX의 동적 서킷브레이커로, 지정 증권의 잠재 체결가격이 5분 기준가격 대비 ±10% 벗어날 때 발동되어 5분간의 냉각기간을 부과한다. | HKEX: ±10% 가격밴드 |
-| Volatility Interruption (변동성완화장치, VI) — KRX | 변동성완화장치 (VI) | KRX의 동적 서킷브레이커로, 정적VI(직전 단일가매매 가격 대비 일정 비율 이탈 시 발동)와 동적VI(최근 기준가 대비 ±3% 이탈 시 발동)로 구성된다. 발동 시 2분간의 냉각 단일가매매 후 매매를 재개한다. | KRX: 정적VI(3%/6%), 동적VI(±3%) |
+| Volatility Interruption (VI) — KRX | 변동성완화장치 (VI, Volatility Interruption) |KRX의 동적 서킷브레이커로, 정적VI(직전 단일가매매 가격 대비 일정 비율 이탈 시 발동)와 동적VI(최근 기준가 대비 ±3% 이탈 시 발동)로 구성된다. 발동 시 2분간의 냉각 단일가매매 후 매매를 재개한다.|KRX: 정적VI(3%/6%), 동적VI(±3%)|
 | Zaraba | 자라바 (ザラバ, 접속매매) | JPX의 접속매매 방식(ザラバ)으로, 시가 및 종가 경매 사이에 가격-시간 우선원칙에 따라 주문을 체결한다. | JPX 연속매매 방식 |
 
 ## 파생상품 (Derivatives)
@@ -129,7 +129,7 @@
 | J-GATE | J-GATE (오사카거래소 파생매매시스템) | 오사카거래소(OSE)의 Nasdaq Genium INET 기술 기반 파생상품 거래 시스템이다. 현행 버전 3.0은 2021년 9월 출시되었으며, 버전 4.0은 Nasdaq Eqlipse 플랫폼으로 계획 중이다(약 2028년). | Nasdaq Genium INET 기반 |
 | J-NET | J-NET (오사카거래소 장외대량거래) | 오사카거래소의 장외 경매 외 거래 시설로, 사전 합의된 가격에 의한 대량 파생상품 협의 거래를 위한 것이다. 타 거래소의 블록거래 시설에 해당한다. | |
 | KOSPI 200 Options | KOSPI 200 옵션 | 1997년 7월 7일 KRX에 상장된 KOSPI 200 지수 옵션이다. 계약승수 KRW 500,000(2012년 6월 KRW 100,000에서 5배 인상); 유럽형 현금결제; 역사상 세계 최대 단일 파생상품 계약(2011년 최고 약 36.7억 계약). | KRX 대표 옵션; 2012년 이전 세계 최대 거래량 |
-| KRX Night Session (야간거래) | 야간거래 (夜間去來) | KRX가 독자적으로 운영하는 시간외 파생상품 거래 세션(18:00~06:00 KST)으로, 2025년 6월 9일 Eurex 연계 방식을 대체하여 출시되었다. KOSPI 200 선물/옵션, 미니 상품, KOSDAQ 150, USD 선물, KTB 선물 등 10개 상품을 커버한다. | 2025년 6월 9일 출시; 10개 상품 |
+| KRX Night Trading Session | KRX 야간거래 (Night Trading Session) |KRX가 독자적으로 운영하는 시간외 파생상품 거래 세션(18:00~06:00 KST)으로, 2025년 6월 9일 Eurex 연계 방식을 대체하여 출시되었다. KOSPI 200 선물/옵션, 미니 상품, KOSDAQ 150, USD 선물, KTB 선물 등 10개 상품을 커버한다.|2025년 6월 9일 출시; 10개 상품|
 | KRX-SPAN | KRX-SPAN | KRX의 상장 파생상품에 대한 수정 SPAN 기반 증거금 방법론이다. 시나리오 기반 포트폴리오 위험 평가를 사용하며, KOSPI 200 변동성이 선물 증거금율의 80% 이상에 도달하면 장중 추가 증거금 납부가 요구된다. | KRX: KOSPI 200 변동성 80% 도달 시 장중 추가납부 |
 | Lead Market Maker (LMM) | 선도시장조성자 (LMM) | 특정 의무 조건 하에 연속적인 양방향 호가를 제시해야 하는 지정 시장 참가자이다. 일부 체결 알고리즘에서 우선 배분을 받는다. | |
 | Liquidation Group | 청산그룹 | Eurex Prisma에서 포트폴리오 기반 증거금 산출을 위해 유사한 위험 특성을 공유하는 상품의 그룹이다. 장내 및 장외 파생상품 간 교차 증거금을 가능하게 한다. | Eurex Prisma 포트폴리오 분류 |
@@ -160,7 +160,7 @@
 | SOLA | SOLA (몬트리올거래소 매매엔진) | 몬트리올거래소의 독자 개발 저지연 전자 거래 엔진이다. 중간값 응답 시간은 약 460마이크로초(2013년 업그레이드 이후)이며, 메시징 용량은 초당 100,000건 이상의 호가를 처리한다. Boston Options Exchange(BOX) 등 외부 거래소에도 라이선스되었다. | |
 | SPAN | SPAN (Standard Portfolio Analysis of Risk) | CME의 증거금 방법론으로, 전 세계 50개 이상의 거래소에서 채택되었다. | CME 증거금 방법론; 전세계 50+ 거래소 채택 |
 | SPAN 2 | SPAN 2 (차세대 증거금 방법론) | CME의 차세대 증거금 방법론으로, HVaR 및 Expected Shortfall에 기반한다. | CME HVaR + Expected Shortfall 기반 |
-| Sidecar (사이드카) | 사이드카 | KOSPI 200 선물 근월물이 전일 정산가 대비 ±5% 변동하고 이론가격 괴리가 ±3% 이상인 상태가 1분간 지속될 경우, 모든 파생상품 계약의 호가 효력을 5분간 정지하는 KRX의 시장전체 서킷브레이커이다. | KRX 파생상품 전체 서킷브레이커; ±5% + ±3% 이론가 괴리 1분 지속 |
+| Sidecar (Derivatives Circuit Breaker) | 사이드카 (파생상품 서킷브레이커) |KOSPI 200 선물 근월물이 전일 정산가 대비 ±5% 변동하고 이론가격 괴리가 ±3% 이상인 상태가 1분간 지속될 경우, 모든 파생상품 계약의 호가 효력을 5분간 정지하는 KRX의 시장전체 서킷브레이커이다.|KRX 파생상품 전체 서킷브레이커; ±5% + ±3% 이론가 괴리 1분 지속|
 | Special Opening Quotation (SOQ) | 특별개장호가 (SOQ) | 만기일에 모든 구성종목의 시가를 기반으로 산출되는 주가지수선물의 결제 산출 방식이다. | 주가지수선물 만기 결제가 |
 | Sponsored Access (SpA) | 후원접속 (SpA) | 비회원 법인이 정식 거래소 회원 자격 없이 승인된 서비스 제공자를 통해 거래소 시스템에 접속할 수 있는 모델이다. Eurex T7 Release 14.0에서 도입되었다. | Eurex T7 Release 14.0~ |
 | Spread Trading | 스프레드거래 | 관련된 두 개 이상의 선물 또는 옵션 계약을 동시에 매수·매도하여 가격 차이의 변동으로부터 이익을 추구하는 거래 전략이다. | |
@@ -210,7 +210,7 @@
 | Individual Segregated Account (ISA) | 개별분리계좌 (ISA) | 청산회원의 고객 포지션과 담보가 CCP에서 별도로 관리되는 계좌 구조로, 청산회원 부도 시 완전한 포터빌리티와 보호를 제공한다. | 완전 포터빌리티 제공 |
 | Initial Margin (IM) | 개시증거금 | CCP가 잠재적 미래 익스포저를 보전하기 위해 청산회원으로부터 징수하는 담보이다. | KRX: 위탁증거금 / 거래증거금 |
 | Interoperability | 상호운용성 | 둘 이상의 CCP가 링크를 설정하여 서로 다른 CCP의 참가자가 동일 거래소에서 체결된 거래를 청산할 수 있도록 하는 체계이다. EMIR 제51조에 의해 규제되며, 유럽 현물주식에서 시행 중이다(Cboe Clear Europe, LCH, EuroCCP, SIX x-clear 등). | EMIR 제51조; 유럽 현물주식에서 시행 (Cboe Clear Europe, LCH, EuroCCP, SIX x-clear) |
-| Joint Compensation Fund (손해배상공동기금) | 손해배상공동기금 | KRX 파생상품 청산을 위한 상호화된 손해배상 기금이다. 청산회원의 고정 + 변동 모델에 따른 출연금으로 구성되며, 규모는 약 KRW 1,000억(~7,500만 달러)으로 추정된다. 부도 회원의 증거금과 청산예탁금이 소진된 후 사용된다. | KRX 파생 손해배상기금; 약 KRW 1,000억 |
+| Joint Compensation Fund | 손해배상공동기금 (Joint Compensation Fund) |KRX 파생상품 청산을 위한 상호화된 손해배상 기금이다. 청산회원의 고정 + 변동 모델에 따른 출연금으로 구성되며, 규모는 약 KRW 1,000억(~7,500만 달러)으로 추정된다. 부도 회원의 증거금과 청산예탁금이 소진된 후 사용된다.|KRX 파생 손해배상기금; 약 KRW 1,000억|
 | LCH | LCH (런던청산소) | LSEG가 82.61% 소유한 다자산 CCP이다. LCH Ltd(런던, Bank of England 규제)와 LCH SA(파리, ACPR/Banque de France 규제)로 운영되며, OTC 파생, 레포, 채권, FX, 주식, 상장파생을 청산한다. | LSEG 82.61% 소유; OTC 파생, 레포, 채권, FX, 주식, 상장파생 청산 |
 | Legal Entity Identifier (LEI) | 법인식별기호 (LEI) | 금융거래에 참여하는 법인을 고유하게 식별하는 20자 영숫자 코드이다. EMIR, 도드-프랭크 등에 따라 파생거래 보고 시 전세계적으로 의무화되어 있으며, GLEIF 산하 지역운영기관(LOU)이 발급한다. | EMIR, 도드-프랭크 등에 따라 파생거래 보고 시 의무; GLEIF 관할 |
 | Lending CCP | 대차거래 CCP | Eurex Clearing의 증권대차 서비스로 CCP를 개입시켜 증권대차시장의 거래상대방 위험을 감소시킨다. | Eurex Clearing 증권대차 서비스 |
@@ -232,7 +232,7 @@
 | Public Quantitative Disclosures (PQD) | 공개정량공시 (PQD) | CPMI-IOSCO 권고에 따른 CCP의 표준화된 분기 및 연간 공시이다. 증거금 데이터, 손해배상공동기금 규모, 스트레스테스트 결과, 사후검증 커버리지 등을 포함한다. | CPMI-IOSCO 권고; 분기/연간 공시 |
 | Qualifying CCP (QCCP) | 적격중앙청산소 | 국제 규제기준을 충족하는 것으로 인정된 CCP로, 회원에게 낮은 자본 요건이 적용된다. | KRX: QCCP 인정 |
 | Recovery and Resolution | 회복 및 정리 | CCP의 생존력을 회복(recovery)하거나, 회복이 실패할 경우 핵심 청산기능을 유지하면서 질서있게 정리(resolution)하는 프레임워크이다. EU CCP RRR, FSB 핵심속성, CPMI-IOSCO 회복지침에 의해 규율된다. 회복 수단에는 VMGH, 추가현금납입, 부분거래종결이 있고, 정리 수단에는 가교 CCP, 강제 종결, 공적 지원이 있다. | KRX: 위기관리계획 수립 |
-| Settlement Facilitation Deposit (결제촉진담보금) | 결제촉진담보금 | 결제 완료를 촉진하기 위해 KRX 청산회원이 예탁하는 담보이다. 적격 담보로는 현금, 국채, 통화안정증권이 있다. | KRX 청산 담보 항목 |
+| Settlement Facilitation Deposit | 결제촉진담보금 (Settlement Facilitation Deposit) |결제 완료를 촉진하기 위해 KRX 청산회원이 예탁하는 담보이다. 적격 담보로는 현금, 국채, 통화안정증권이 있다.|KRX 청산 담보 항목|
 | Skin in the Game (SITG) | CCP 자기자본 출연분 | 청산회원 출연분과 구별되는 CCP 자체 재원으로, 부도폭포에 출연된다. | |
 | SIX x-clear | SIX x-clear (SIX 청산소) | SIX Group의 주식 및 기타 상품 CCP이다. BME Clearing과 마드리드 소재 단일 다자산 CCP로의 통합이 예정되어 있다. | BME Clearing과 통합 예정 (마드리드 소재) |
 | SPAN | SPAN (Standard Portfolio Analysis of Risk) | CME의 포트폴리오 기반 증거금 방법론으로, 가격 및 변동성 변화를 분석하는 16개 리스크 시나리오를 사용한다. 전세계적으로 광범위하게 채택되었으며, SPAN 2(HVaR + Expected Shortfall 기반)로 대체되고 있다. | CME 증거금 방법론; 16개 리스크 시나리오; 전세계 50+ 거래소 채택 |
@@ -273,7 +273,7 @@
 | Settlement Discipline Regime (SDR) | 결제규율 제도 (SDR) | CSDR 조항으로, 결제예정일에 결제하지 못한 참가자에게 현금 과징금을 부과한다. 의무적 매수보상은 당초 제안되었으나 유예되었다. | CSDR 조항; 현금 과징금 부과, 의무적 매수보상 유예 |
 | Settlement Finality | 결제완결성 | 증권과 대금의 이전이 취소 불가능하고 무조건적이 되는 시점이다. | |
 | Settlement Finality Directive (SFD) | 결제완결성 지침 | EU 지침 98/26/EC로, 지정된 결제 시스템에서 결제의 완결성에 대한 법적 확실성을 제공하여 도산 시에도 이전이 번복되지 않도록 보장한다. | EU 지침 98/26/EC |
-| Split Settlement (분할결제) | 분할결제 | 2021년 도입된 KSD의 결제시스템 혁신으로, 결제를 소단위로 분할하여 결제 집중 위험을 완화한다. 단위는 KRW 100억(2021년) → 50억(2024년) → 10억(2026년 4월)으로 단계적으로 축소되었다. | KSD: 2021년 도입; 단위 10억→50억→100억 단계 축소 |
+| Split Settlement | 분할결제 (Split Settlement) |2021년 도입된 KSD의 결제시스템 혁신으로, 결제를 소단위로 분할하여 결제 집중 위험을 완화한다. 단위는 KRW 100억(2021년) → 50억(2024년) → 10억(2026년 4월)으로 단계적으로 축소되었다.|KSD: 2021년 도입; 단위 10억→50억→100억 단계 축소|
 | Straight-Through Processing (STP) | 자동일괄처리 (STP) | 수작업 개입 없이 매매의 처음부터 끝까지 자동으로 처리하는 것이다. | |
 | TARGET2-Securities (T2S) | T2S (범유럽 증권결제 플랫폼) | ECB가 운영하는 유로시스템 플랫폼으로, 중앙은행화폐로 범유럽 증권결제를 위한 단일 플랫폼을 제공한다. Iberclear, Monte Titoli 및 기타 유럽 CSD가 사용한다. | ECB 운영; 중앙은행화폐 결제; Iberclear, Monte Titoli 등 사용; KRX: 참고 벤치마크 |
 | Trade Date Affirmation | 거래일 확인 (매매일 확약) | 매매일 당일에 거래상대방 간 거래 세부사항을 확인하는 절차로, T+1 결제에 필수적이다. DTCC의 CTM 플랫폼이 당일 확인을 목표로 한다. | T+1 결제에 필수; DTCC CTM 플랫폼 |
@@ -401,10 +401,10 @@
 | Double Volume Cap / Single Volume Cap (DVC/SVC) | 이중거래량상한 / 단일거래량상한 | 다크풀 매매를 총거래량 대비 일정 비율로 제한하는 MiFID II 메커니즘이다. MiFIR 개정에 따라 이중 상한(4%/8%)에서 7% 단일 상한으로 변경되었다. | MiFID II 다크풀 제한; MiFIR 개정으로 7% 단일 상한 |
 | Dubai Financial Services Authority (DFSA) | DFSA (두바이금융서비스청) | Dubai International Financial Centre(DIFC)의 독립 규제기관이다. DIFC 금융자유구역 내에서 운영되는 인가 거래소로서 DME/GME를 감독하며, 국제 규제기관과 협력 협정을 유지한다. | DIFC 관할; DME/GME 감독 |
 | EMIR | 유럽시장인프라규정 (EMIR) | OTC 파생상품, CCP, 거래정보저장소에 관한 EU 규정인 European Market Infrastructure Regulation이다. | OTC 파생, CCP, TR 규제 |
-| Electronic Securities Act (전자증권법) | 전자증권법 (주식·사채 등의 전자등록에 관한 법률) | 한국예탁결제원(KSD) 및 지정등록기관에서의 증권 전자등록을 규율하는 한국 법률이다. 개정을 통해 보안토큰(증권형 토큰)을 적용 범위에 포함하였으며, 모든 보안토큰의 KSD 의무등록은 2027년 1월 시행 예정이다. | KSD 전자등록 근거법; 2027년 1월 보안토큰 의무등록 |
+| Electronic Securities Act | 전자증권법 (주식·사채 등의 전자등록에 관한 법률) |한국예탁결제원(KSD) 및 지정등록기관에서의 증권 전자등록을 규율하는 한국 법률이다. 개정을 통해 보안토큰(증권형 토큰)을 적용 범위에 포함하였으며, 모든 보안토큰의 KSD 의무등록은 2027년 1월 시행 예정이다.|KSD 전자등록 근거법; 2027년 1월 보안토큰 의무등록|
 | ESMA | 유럽증권시장감독청 (ESMA) | 회원국 전체의 증권 규제를 조정하는 EU 감독기관인 European Securities and Markets Authority이다. | |
 | Financial Instruments and Exchange Act (FIEA) | 금융상품거래법 (FIEA) | 증권거래, 공시, 시장행위를 규율하는 일본의 주요 증권규제법이다. | 일본 증권거래 기본법 |
-| Financial Investment Services and Capital Markets Act (자본시장법) | 자본시장과 금융투자업에 관한 법률 (자본시장법, FSCMA) | 한국의 주요 증권법으로, 기능 기반 규제 방식을 채택하여 주식·채권·집합투자상품·파생상품을 포괄한다. FSC/FSS가 관할한다. | 한국 자본시장 기본법; KRX 설립 근거 |
+| Financial Investment Services and Capital Markets Act (FSCMA) | 자본시장과 금융투자업에 관한 법률 (자본시장법, FSCMA) |한국의 주요 증권법으로, 기능 기반 규제 방식을 채택하여 주식·채권·집합투자상품·파생상품을 포괄한다. FSC/FSS가 관할한다.|한국 자본시장 기본법; KRX 설립 근거|
 | Financial Market Infrastructure Act (FMIA) | 금융시장인프라법 (FMIA) | 거래소, CCP, CSD, 거래정보저장소를 포함한 금융시장인프라를 규율하는 스위스의 주요 법률이다. FINMA가 관할한다. | 스위스; FINMA 관할 |
 | Financial Sector Conduct Authority (FSCA) | FSCA (남아공금융부문행위감독청) | JSE 감독을 포함하여 금융부문을 관할하는 남아프리카공화국의 주요 시장행위 규제기관이다. | JSE 감독 |
 | Financial Services and Markets Act (FSMA) | 금융서비스시장법 (FSMA) | 금융서비스 규제를 규율하는 영국의 기본 법률이다. | 영국 기본법 |
