@@ -29,8 +29,8 @@ format:
 
 <div class="hero-stats-grid">
   <div class="hero-stat-item">
-    <div class="hero-stat-val">23</div>
-    <div class="hero-stat-lbl">주식 거래소 (Equities)</div>
+    <div class="hero-stat-val">24</div>
+    <div class="hero-stat-lbl">주식 거래소 & ATS (Equities)</div>
   </div>
   <div class="hero-stat-item">
     <div class="hero-stat-val">17</div>
@@ -57,6 +57,7 @@ format:
   <a href="qmd/analytics/trading_hours.html" class="action-chip featured">⏱️ 24시간 세션 타임라인</a>
   <a href="qmd/analytics/engine_benchmark.html" class="action-chip featured">⚡ 매매엔진 벤치마크</a>
   <a href="qmd/01_equities/ko/exchanges/krx.html" class="action-chip">🇰🇷 KRX 한국거래소</a>
+  <a href="qmd/01_equities/ko/exchanges/nextrade.html" class="action-chip">🇰🇷 넥스트레이드 (NXT)</a>
   <a href="qmd/01_equities/ko/exchanges/nyse.html" class="action-chip">🇺🇸 NYSE</a>
   <a href="qmd/01_equities/ko/exchanges/nasdaq.html" class="action-chip">🇺🇸 NASDAQ</a>
   <a href="qmd/02_derivatives/ko/exchanges/cme_group.html" class="action-chip">⚡ CME Group</a>
@@ -96,15 +97,15 @@ format:
 ```{=html}
 <div class="domain-banner">
   <p class="domain-banner-text">
-    🌐 <strong>23개 글로벌 대표 주식거래소</strong>의 호가 제도, 체결 메커니즘, 매매세션 및 9대 차세대 매매엔진 심층 비교
+    🌐 <strong>24개 글로벌 대표 주식거래소 및 대체거래소(ATS)</strong>의 호가 제도, 체결 메커니즘, 매매세션 및 9대 차세대 매매엔진 심층 비교
   </p>
   <div class="domain-banner-links">
     <a href="qmd/01_equities/ko/01_overview.html" class="btn-dual btn-dual-ko">📊 주식시장 개요</a>
-    <a href="qmd/01_equities/ko/02_comparative_analysis.html" class="btn-dual btn-dual-ko">⚖️ 23개소 종합 비교분석</a>
+    <a href="qmd/01_equities/ko/02_comparative_analysis.html" class="btn-dual btn-dual-ko">⚖️ 24개소 종합 비교분석</a>
   </div>
 </div>
 
-### 🏛️ 주요 거래소 프로필 (23개소)
+<h3 class="portal-section-header">🏛️ 주요 주식거래소 및 ATS 프로필 (24개소)</h3>
 
 <div class="exchange-grid" id="equitiesGrid">
 
@@ -126,6 +127,27 @@ format:
     <div class="ex-card-actions">
       <a href="qmd/01_equities/ko/exchanges/krx.html" class="btn-dual btn-dual-ko">🇰🇷 한국어 리포트</a>
       <a href="qmd/01_equities/en/exchanges/krx.html" class="btn-dual btn-dual-en">🌐 English</a>
+    </div>
+  </div>
+
+  <!-- Nextrade (NXT) -->
+  <div class="ex-card featured-card" data-region="kr asia" data-keyword="nextrade nxt 넥스트레이드 대체거래소 ats 한국 seoul 여의도 중간가 스톱지정가 kofia sor 12시간 08:00">
+    <div>
+      <div class="ex-card-top">
+        <span class="ex-card-flag">🇰🇷</span>
+        <span class="ex-card-badge">대한민국 제1호 ATS</span>
+      </div>
+      <div class="ex-card-title">넥스트레이드 (Nextrade / NXT)</div>
+      <div class="ex-card-subtitle">Nextrade Corp. · 대한민국 (서울)</div>
+      <div class="ex-card-meta">
+        • 거래대상: KOSPI/KOSDAQ 주요 우량주 (~800종목)<br>
+        • 매매시간: <strong>08:00 ~ 20:00 (12시간 연속거래)</strong><br>
+        • 특징: 중간가·스톱지정가, 세분화된 틱, KRX CCP 연동
+      </div>
+    </div>
+    <div class="ex-card-actions">
+      <a href="qmd/01_equities/ko/exchanges/nextrade.html" class="btn-dual btn-dual-ko">🇰🇷 한국어 리포트</a>
+      <a href="qmd/01_equities/en/exchanges/nextrade.html" class="btn-dual btn-dual-en">🌐 English</a>
     </div>
   </div>
 
@@ -570,7 +592,7 @@ format:
 
 </div>
 
-### ⚙️ 9대 주식 매매체결 엔진 분석
+<h3 class="portal-section-header">⚙️ 9대 주식 매매체결 엔진 분석</h3>
 
 <div class="exchange-grid">
   <div class="system-card">
@@ -682,7 +704,7 @@ format:
   </div>
 </div>
 
-### ⚖️ 주식시장 규제 체계 비교
+<h3 class="portal-section-header">⚖️ 주식시장 규제 체계 비교</h3>
 
 <div class="exchange-grid">
   <div class="system-card">
@@ -736,7 +758,7 @@ format:
   </div>
 </div>
 
-### 🏛️ 파생상품 거래소 프로필 (17개소)
+<h3 class="portal-section-header">🏛️ 파생상품 거래소 프로필 (17개소)</h3>
 
 <div class="exchange-grid" id="derivativesGrid">
 
@@ -1067,7 +1089,7 @@ format:
 
 </div>
 
-### ⚙️ 파생 매매시스템 및 규제 분석
+<h3 class="portal-section-header">⚙️ 파생 매매시스템 및 규제 분석</h3>
 
 <div class="exchange-grid">
   <div class="system-card">
@@ -1157,7 +1179,7 @@ format:
   </div>
 </div>
 
-### 🏛️ 청산·결제 기관 프로필 (20개소)
+<h3 class="portal-section-header">🏛️ 청산·결제 기관 프로필 (20개소)</h3>
 
 <div class="exchange-grid" id="clearingGrid">
 
@@ -1544,7 +1566,7 @@ format:
 
 </div>
 
-### ⚙️ 청산결제 시스템 및 규제 분석
+<h3 class="portal-section-header">⚙️ 청산결제 시스템 및 규제 분석</h3>
 
 <div class="exchange-grid">
   <div class="system-card">

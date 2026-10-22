@@ -53,6 +53,7 @@ format:
 | JSE | Millennium Exchange | LSEG Technology | 2012 | ~124 us (platform spec) | Tens of thousands/sec | C++/Linux, FAST/ITCH, FIX |
 | Bursa Malaysia | BTS2 (X-Stream INET) | Nasdaq (licensed) | 2013 | Sub-millisecond | 10x prior capacity | Nasdaq X-Stream INET, FIX |
 | **KRX** | **Exture 3.0** | **In-house (KRX/KOSCOM)** | **2023** | **~49 us (estimated, 30% improvement over EXTURE+ 70 us)** | **100,000+ TPS (EXTURE+ baseline)** | **Linux x86, FIX/FAST, memory-based order book** |
+| **Nextrade (NXT)** | **Nextrade Matching Engine (NME)** | **In-house (Nextrade)** | **2025** | **10–15 us (median round-trip)** | **200,000+ TPS** | **Linux x86-64, FIX/Binary, Kernel-Bypass (Solarflare)** |
 
 **Key Observations:**
 - Deutsche Borse T7 (~5 us) and Nasdaq INET (~14 us door-to-door) lead in raw latency among major exchanges
@@ -90,6 +91,7 @@ format:
 | JSE | Order-driven | Open, Close, Intraday, Volatility | 09:00-17:00 SAST | 07:00-15:00 | No | Flat (1 cent minimum) | 1 share |
 | Bursa Malaysia | Order-driven | Open (AM/PM), Close | 09:00-17:00 MYT | 01:00-09:00 | Yes (1.5 hrs) | Tiered by price (2 bands) | 100 shares |
 | **KRX (KOSPI)** | **Order-driven + LP/MM** | **Open call, Close call, VI auction** | **09:00-15:30 KST (08:00-18:00 incl. off-hours)** | **00:00-06:30 (23:00-09:00 incl. off-hours)** | **No** | **Tiered by price (7 bands)** | **1 share** |
+| **Nextrade (NXT)** | **Order-driven (Alternative Exchange ATS)** | **Continuous trading (call auctions omitted)** | **08:00-20:00 KST (12-hour session)** | **23:00-11:00 UTC** | **No** | **Finer tick sizes (KRW 1 for KRW 1k–5k)** | **1 share** |
 
 **Key Observations:**
 - Five Asian exchanges maintain lunch breaks: JPX (1 hr), HKEX (1 hr), SGX (1 hr), SSE/SZSE (1.5 hrs), and Bursa Malaysia (1.5 hrs)
@@ -229,6 +231,7 @@ format:
 | JSE | Ad valorem + STT | 0.25% Securities Transfer Tax; Strate fee 0.005787% |
 | Bursa Malaysia | Commission + clearing + stamp duty | Max 0.7% brokerage; 0.03% clearing; RM1/RM1,000 stamp duty |
 | **KRX** | **Maker-taker (since Dec 2025; previously ad valorem flat)** | **Maker: 0.00134%; Taker: 0.00182% (total ~0.0036% incl. clearing fee); + 0.23% Securities Transaction Tax (seller)** |
+| **Nextrade (NXT)** | **Maker-taker (since launch)** | **Maker: 0.00100–0.00120%; Taker: 0.00160–0.00170% (20%–40% discount vs. KRX benchmark)** |
 
 **Key Observations:**
 - US exchanges (NYSE, NASDAQ) are unique in their maker-taker rebate model, incentivizing passive liquidity provision
@@ -463,8 +466,13 @@ Korea Exchange (KRX) serves as the reference benchmark for this research project
 - Extended trading hours consideration (23-hour trading trend)
 - Enhanced international connectivity mechanisms (no Stock Connect equivalent)
 
+### 10.8 Multi-Venue Competition and Alternative Trading System (Nextrade ATS)
+- **Monopoly Conclusion:** In March 2025, Nextrade Corp. (NXT) launched as Korea's first Alternative Trading System (ATS) offering 12-hour continuous trading (08:00–20:00 KST), concluding KRX's 69-year monopoly as the nation's sole equity execution venue.
+- **Broker SOR Operation:** In compliance with Article 68 Best Execution requirements under the FSCMA, domestic securities brokerages established algorithmic Smart Order Routing (SOR) engines dynamically routing orders between KRX and Nextrade based on prevailing NBBO quotes and fee rebates.
+- **KRX Strategic Response:** Prompted by ATS competition, KRX introduced maker-taker fee schedules, added Midpoint and Stop-Limit order types, accelerated EXTURE 3.0 matching latencies down to single-digit microsecond levels (8.6 μs), and initiated an infrastructure roadmap toward 24-hour trading capability.
+
 ---
 
 ## Sources
 
-This comparative analysis is derived from detailed exchange research files covering 22 exchanges. Individual source citations are documented in each exchange file located in `/01_equities/en/exchanges/` and system files in `/01_equities/en/systems/`. Key regulatory analysis files are in `/01_equities/en/regulations/`.
+This comparative analysis is derived from detailed exchange research files covering 24 exchanges and ATS venues. Individual source citations are documented in each exchange file located in `/01_equities/en/exchanges/` and system files in `/01_equities/en/systems/`. Key regulatory analysis files are in `/01_equities/en/regulations/`.

@@ -339,6 +339,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../qmd/01_equities/en/exchanges/nextrade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Nextrade (NXT)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../qmd/01_equities/en/exchanges/lse.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">London Stock Exchange (LSE)</span></a>
   </div>
@@ -553,6 +559,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#regulatory-framework" id="toc-regulatory-framework" class="nav-link" data-scroll-target="#regulatory-framework">10.5 Regulatory Framework</a></li>
   <li><a href="#areas-of-relative-strength" id="toc-areas-of-relative-strength" class="nav-link" data-scroll-target="#areas-of-relative-strength">10.6 Areas of Relative Strength</a></li>
   <li><a href="#areas-for-potential-enhancement" id="toc-areas-for-potential-enhancement" class="nav-link" data-scroll-target="#areas-for-potential-enhancement">10.7 Areas for Potential Enhancement</a></li>
+  <li><a href="#multi-venue-competition-and-alternative-trading-system-nextrade-ats" id="toc-multi-venue-competition-and-alternative-trading-system-nextrade-ats" class="nav-link" data-scroll-target="#multi-venue-competition-and-alternative-trading-system-nextrade-ats">10.8 Multi-Venue Competition and Alternative Trading System (Nextrade ATS)</a></li>
   </ul></li>
   <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
   </ul>
@@ -828,6 +835,15 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>100,000+ TPS (EXTURE+ baseline)</strong></td>
 <td><strong>Linux x86, FIX/FAST, memory-based order book</strong></td>
 </tr>
+<tr class="even">
+<td><strong>Nextrade (NXT)</strong></td>
+<td><strong>Nextrade Matching Engine (NME)</strong></td>
+<td><strong>In-house (Nextrade)</strong></td>
+<td><strong>2025</strong></td>
+<td><strong>10–15 us (median round-trip)</strong></td>
+<td><strong>200,000+ TPS</strong></td>
+<td><strong>Linux x86-64, FIX/Binary, Kernel-Bypass (Solarflare)</strong></td>
+</tr>
 </tbody>
 </table>
 <p><strong>Key Observations:</strong> - Deutsche Borse T7 (~5 us) and Nasdaq INET (~14 us door-to-door) lead in raw latency among major exchanges - Euronext Optiq (~15 us) demonstrates that in-house platforms can rival vendor solutions - Chinese exchanges (SSE, SZSE) have pivoted to fully self-developed systems aligned with national technology independence policy - NSE India is targeting a transformative upgrade to nanosecond-level latency with 100 million TPS by April 2026 - Nasdaq technology (INET/Genium/X-Stream) powers the most exchanges globally: ASX, SGX, SIX, Tadawul, Bursa Malaysia, Nasdaq Nordic, and more</p>
@@ -1087,6 +1103,16 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>00:00-06:30 (23:00-09:00 incl.&nbsp;off-hours)</strong></td>
 <td><strong>No</strong></td>
 <td><strong>Tiered by price (7 bands)</strong></td>
+<td><strong>1 share</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Nextrade (NXT)</strong></td>
+<td><strong>Order-driven (Alternative Exchange ATS)</strong></td>
+<td><strong>Continuous trading (call auctions omitted)</strong></td>
+<td><strong>08:00-20:00 KST (12-hour session)</strong></td>
+<td><strong>23:00-11:00 UTC</strong></td>
+<td><strong>No</strong></td>
+<td><strong>Finer tick sizes (KRW 1 for KRW 1k–5k)</strong></td>
 <td><strong>1 share</strong></td>
 </tr>
 </tbody>
@@ -1767,6 +1793,11 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>KRX</strong></td>
 <td><strong>Maker-taker (since Dec 2025; previously ad valorem flat)</strong></td>
 <td><strong>Maker: 0.00134%; Taker: 0.00182% (total ~0.0036% incl.&nbsp;clearing fee); + 0.23% Securities Transaction Tax (seller)</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Nextrade (NXT)</strong></td>
+<td><strong>Maker-taker (since launch)</strong></td>
+<td><strong>Maker: 0.00100–0.00120%; Taker: 0.00160–0.00170% (20%–40% discount vs.&nbsp;KRX benchmark)</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2496,12 +2527,20 @@ ul.task-list li input[type="checkbox"] {
 <li>Extended trading hours consideration (23-hour trading trend)</li>
 <li>Enhanced international connectivity mechanisms (no Stock Connect equivalent)</li>
 </ul>
+</section>
+<section id="multi-venue-competition-and-alternative-trading-system-nextrade-ats" class="level3">
+<h3 class="anchored" data-anchor-id="multi-venue-competition-and-alternative-trading-system-nextrade-ats">10.8 Multi-Venue Competition and Alternative Trading System (Nextrade ATS)</h3>
+<ul>
+<li><strong>Monopoly Conclusion:</strong> In March 2025, Nextrade Corp.&nbsp;(NXT) launched as Korea’s first Alternative Trading System (ATS) offering 12-hour continuous trading (08:00–20:00 KST), concluding KRX’s 69-year monopoly as the nation’s sole equity execution venue.</li>
+<li><strong>Broker SOR Operation:</strong> In compliance with Article 68 Best Execution requirements under the FSCMA, domestic securities brokerages established algorithmic Smart Order Routing (SOR) engines dynamically routing orders between KRX and Nextrade based on prevailing NBBO quotes and fee rebates.</li>
+<li><strong>KRX Strategic Response:</strong> Prompted by ATS competition, KRX introduced maker-taker fee schedules, added Midpoint and Stop-Limit order types, accelerated EXTURE 3.0 matching latencies down to single-digit microsecond levels (8.6 μs), and initiated an infrastructure roadmap toward 24-hour trading capability.</li>
+</ul>
 <hr>
 </section>
 </section>
 <section id="sources" class="level2">
 <h2 class="anchored" data-anchor-id="sources">Sources</h2>
-<p>This comparative analysis is derived from detailed exchange research files covering 22 exchanges. Individual source citations are documented in each exchange file located in <code>/01_equities/en/exchanges/</code> and system files in <code>/01_equities/en/systems/</code>. Key regulatory analysis files are in <code>/01_equities/en/regulations/</code>.</p>
+<p>This comparative analysis is derived from detailed exchange research files covering 24 exchanges and ATS venues. Individual source citations are documented in each exchange file located in <code>/01_equities/en/exchanges/</code> and system files in <code>/01_equities/en/systems/</code>. Key regulatory analysis files are in <code>/01_equities/en/regulations/</code>.</p>
 
 
 </section>

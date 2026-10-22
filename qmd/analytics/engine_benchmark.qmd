@@ -339,7 +339,7 @@ format:
     차세대 매매엔진 성능 벤치마킹 & 포스트트레이드 밸류체인
   </div>
   <p class="benchmark-desc">
-    KRX Exture 3.0을 비롯한 <strong>글로벌 12대 핵심 매매체결 엔진</strong>의 지연시간(Latency)을 마이크로초(μs) 단위로 정밀 비교하고, 각국 <strong>거래소(매매) → 청산(CCP) → 예탁결제(CSD) → 중앙은행(RTGS)</strong> 밸류체인 및 결제불이행 폭포(Default Waterfall) 구조를 시각화합니다.
+    KRX Exture 3.0 및 넥스트레이드 NME를 비롯한 <strong>글로벌 13대 핵심 매매체결 엔진</strong>의 지연시간(Latency)을 마이크로초(μs) 단위로 정밀 비교하고, 각국 <strong>거래소(매매) → 청산(CCP) → 예탁결제(CSD) → 중앙은행(RTGS)</strong> 밸류체인 및 결제불이행 폭포(Default Waterfall) 구조를 시각화합니다.
   </p>
 </div>
 
@@ -567,6 +567,7 @@ graph TD
 <script>
 // Matching Engines Database
 const ENGINES_DB = [
+  { name: "Nextrade NME", venue: "넥스트레이드 (Nextrade ATS) 🇰🇷", dev: "inhouse", latency: 12, throughput: "초당 200,000건+", hw: "Solarflare Kernel-Bypass, C++ In-memory", tag: "10~15 μs" },
   { name: "Optiq", venue: "Euronext (범유럽 7개국)", dev: "inhouse", latency: 15, throughput: "일 최대 1억 건+", hw: "Commodity x86, Linux, Kafka", tag: "~15 μs" },
   { name: "T7", venue: "Deutsche Börse / Eurex", dev: "inhouse", latency: 18, throughput: "초당 수십만 건", hw: "Commodity x86, Linux C++, FPGA", tag: "< 20 μs" },
   { name: "Pillar", venue: "NYSE 뉴욕증권거래소", dev: "inhouse", latency: 30, throughput: "초당 5,000건/세션", hw: "x86, Red Hat Enterprise Linux", tag: "21~40 μs" },
@@ -631,7 +632,7 @@ function renderEngineChart() {
     }
 
     let fillClass = "fill-other";
-    if (eng.name.includes("Exture")) {
+    if (eng.name.includes("Exture") || eng.name.includes("Nextrade")) {
       fillClass = "fill-krx";
     } else if (eng.latency <= 50) {
       fillClass = "fill-tier1";

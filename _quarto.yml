@@ -92,6 +92,7 @@ website:
             - qmd/01_equities/en/exchanges/jpx.qmd
             - qmd/01_equities/en/exchanges/jse.qmd
             - qmd/01_equities/en/exchanges/krx.qmd
+            - qmd/01_equities/en/exchanges/nextrade.qmd
             - qmd/01_equities/en/exchanges/lse.qmd
             - qmd/01_equities/en/exchanges/nasdaq.qmd
             - qmd/01_equities/en/exchanges/nasdaq_nordic.qmd
@@ -139,6 +140,7 @@ website:
             - qmd/01_equities/ko/exchanges/jpx.qmd
             - qmd/01_equities/ko/exchanges/jse.qmd
             - qmd/01_equities/ko/exchanges/krx.qmd
+            - qmd/01_equities/ko/exchanges/nextrade.qmd
             - qmd/01_equities/ko/exchanges/lse.qmd
             - qmd/01_equities/ko/exchanges/nasdaq.qmd
             - qmd/01_equities/ko/exchanges/nasdaq_nordic.qmd

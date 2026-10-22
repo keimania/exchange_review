@@ -181,6 +181,7 @@ Hybrid markets combine elements of both order-driven and quote-driven structures
 | JSE | Millennium Exchange | LSEG Technology | Migrated 2012 from TradElect |
 | Bursa Malaysia | Bursa Trade Securities 2 (BTS2) | Nasdaq X-Stream INET | Launched December 2013 |
 | **KRX** | **Exture 3.0** | **In-house (KRX/KOSCOM)** | **Phase 1 Jan 2023, Phase 2 Oct 2023; ~49 us est. latency; integrated trading+clearing+settlement** |
+| **Nextrade (NXT)** | **Nextrade Matching Engine (NME)** | **In-house (Nextrade)** | **Launched March 2025; 10–15 us latency; 08:00–20:00 12-hour continuous trading** |
 
 ### 4.3 Emerging Technology Trends
 - **Cloud migration:** JPX conducting PoC with AWS and Fujitsu for arrowhead cloud migration (2025). ASX exploring cloud for post-trade. Multiple exchanges evaluating hybrid cloud/on-premise architectures.

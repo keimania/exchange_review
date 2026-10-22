@@ -181,6 +181,7 @@ format:
 | JSE | Millennium Exchange | LSEG Technology | 2012년 TradElect에서 전환 |
 | Bursa Malaysia | Bursa Trade Securities 2 (BTS2) | Nasdaq X-Stream INET | 2013년 12월 출시 |
 | **한국거래소 (KRX)** | **Exture 3.0** | **자체 개발 (KRX/KOSCOM)** | **1단계 2023년 1월, 2단계 2023년 10월; 추정 지연 ~49us; 거래+청산+결제 통합** |
+| **넥스트레이드 (Nextrade / NXT)** | **Nextrade Matching Engine (NME)** | **자체 개발 (Nextrade)** | **2025년 3월 공식 출범; 지연시간 10~15us; 08:00~20:00 12시간 연속매매** |
 
 ### 4.3 신기술 동향 (Emerging Technology Trends)
 - **클라우드 전환:** JPX는 arrowhead 클라우드 전환을 위해 AWS 및 Fujitsu와 개념 검증(PoC)을 진행 중(2025). ASX는 거래 후 인프라에 대한 클라우드 탐색 중. 다수의 거래소가 하이브리드 클라우드/온프레미스 아키텍처를 검토 중.

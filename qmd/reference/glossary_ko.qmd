@@ -390,7 +390,7 @@ format:
 | KOSDAQ | KOSDAQ (코스닥) | 기술·벤처·중견기업을 위한 KRX의 성장시장으로, 1996년 개설되었다. 1,700개사 이상 상장; 한국의 NASDAQ에 해당한다. | KRX 성장시장; 1996년 개설 |
 | KOSPI (Korea Composite Stock Price Index) | KOSPI (코스피) | KRX의 메인보드 주식시장으로, 약 954개사가 상장된 대형 우량주 시장이다. 한국의 대표 주가지수 명칭이기도 하다. | KRX 대표 주식시장 |
 | Latibex | Latibex (중남미 증권시장) | BME의 중남미 증권을 유로화로 거래하는 국제시장으로, 2001년에 개설되었다. 유럽 투자자에게 중남미 기업에 대한 접근을 제공한다. | BME; 유로화 거래 |
-| Nextrade (NXT) | Nextrade (넥스트레이드, NXT) | 한국 최초의 대안거래소로, 2025년 3월에 출시되었다. 12시간 거래 세션(08:00~20:00 KST)을 운영하며, KRX의 유일 증권거래소 독점을 종식시켰다. 2025년 7월 기준 30% 이상의 시장점유율을 달성하였다. | 한국 최초 ATS; 2025년 3월; 30%+ 시장점유율 (2025년 7월) |
+| Nextrade (NXT) | Nextrade (넥스트레이드, NXT) | 한국 최초의 대체거래소(ATS)로, 2025년 3월 공식 출범하였다. 12시간 거래 세션(08:00~20:00 KST)을 운영하며, KRX의 69년 유일 증권거래소 독점을 종식시켰다. 2026년 10월 현재 KOSPI/KOSDAQ 주요 종목 기준 10~15% 수준의 시장점유율에 안정적으로 안착하였다. | 한국 최초 ATS; 2025년 3월; 10~15% 시장점유율 안착 |
 | Nomu (Parallel Market) | Nomu (병행시장) | 사우디거래소의 SME 상장을 위한 병행시장으로, 2017년 2월에 개설되었다. Main Market(TASI)보다 완화된 상장요건을 적용한다. 아랍어로 "성장"을 의미한다. | 사우디거래소 SME; "성장" 의미 |
 | NSE EMERGE | NSE EMERGE (SME 플랫폼) | NSE 인도의 SME IPO 및 유통시장 매매 플랫폼으로, 2012년에 개설되었다. | NSE 인도; 2012년~ |
 | Scale | Scale (Deutsche Borse 성장세그먼트) | Deutsche Borse의 Open Market(Freiverkehr) 내 중소기업 성장 세그먼트이다. Designated Sponsor를 선임해야 한다. | Open Market 내 |
