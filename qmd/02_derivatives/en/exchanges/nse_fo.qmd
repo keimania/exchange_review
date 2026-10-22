@@ -384,7 +384,7 @@ Contract cycle: 3 serial monthly + 3 quarterly (March/June/September/December). 
 | Silver | Standard, Mini, Micro |
 | Brent Crude Oil | Standard |
 | WTI Crude Oil | Standard, Mini |
-| Platts Dated Brent (planned April 2026) | Standard |
+| Platts Dated Brent (introduced H1 2026) | Standard |
 
 [Source: [NSE — Equity Derivatives](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50); [NSE — Currency Derivatives Contract Specs](https://www.nseindia.com/static/products-services/currency-derivatives-contract-specification-inr); [NSE — Interest Rate Futures](https://www.nseindia.com/market-data/bond-market-futures); [Groww — NSE Adds 45 New Stocks to F&O](https://groww.in/blog/nse-adds-45-new-stocks-to-the-fo-list); [NSE Clearing — Commodity Derivatives](https://www.nseclearing.in/clearing-settlement/commodity-derivatives)]
 

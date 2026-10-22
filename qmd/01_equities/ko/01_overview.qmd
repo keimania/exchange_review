@@ -184,7 +184,7 @@ format:
 
 ### 4.3 신기술 동향 (Emerging Technology Trends)
 - **클라우드 전환:** JPX는 arrowhead 클라우드 전환을 위해 AWS 및 Fujitsu와 개념 검증(PoC)을 진행 중(2025). ASX는 거래 후 인프라에 대한 클라우드 탐색 중. 다수의 거래소가 하이브리드 클라우드/온프레미스 아키텍처를 검토 중.
-- **24시간 거래:** NYSE Arca는 22시간 거래를 승인받음(2026년 말 예정). NASDAQ은 23시간 세션을 계획 중(SEC 승인 대기, 목표 2026년 하반기). 글로벌 연속 접근에 대한 수요 증가를 반영.
+- **24시간 거래:** NYSE Arca는 22시간 거래를 승인받아 단계적 확장 시행 중이며, NASDAQ은 23시간 세션(유지보수 1시간 제외)을 구축하여 글로벌 연속 유동성을 공급. 글로벌 연속 접근에 대한 수요 증가를 반영.
 - **디지털 자산 / DLT:** SIX Digital Exchange (SDX)는 FINMA 라이선스를 획득하여 2021년부터 운영 중. Deutsche Borse는 D7 디지털 거래 후 플랫폼 출시(2024) 및 Crypto Finance AG 인수. ASX는 CHESS 대체를 위한 DLT 기반 프로젝트를 포기(2022, ~AUD 2억 5,000만 상각).
 - **AI/ML:** LSEG는 재무 데이터를 ChatGPT에 통합(2025). 거래소들은 시장 감시(패턴 감지, 이상 징후 식별)에 ML을 배포 중. Nasdaq은 시장 기술 제품 전반에 AI를 적용 중.
 
@@ -306,12 +306,12 @@ format:
 - **LSEG:** 재무 데이터를 ChatGPT에 통합(2025); AI 기반 분석을 위한 Microsoft 파트너십.
 - **Nasdaq:** 전세계 130개 이상의 시장 운영 고객사를 대상으로 AI 기반 시장 감시.
 - **거래소 일반:** 주문 흐름의 이상 징후 탐지, 내부자 거래 패턴 인식, 시장 조작 감시에 ML 배포 중.
-- **NSE India:** 초당 ~1억 건 처리 용량의 나노초 수준 거래 시스템 업그레이드 계획(2026년 4월).
+- **NSE India:** 초당 ~1억 건 처리 용량의 나노초 수준 거래 시스템 업그레이드 단행(2026년 상반기).
 - **규제적 함의:** 규제 기관(SEC, ESMA, MAS)은 거래에서의 AI 거버넌스, 알고리즘 책임, 모델 리스크 관리에 대한 집중도를 높이고 있다.
 
 ### 6.7 거래 시간 연장 (Extended Trading Hours)
-- **NYSE Arca:** SEC가 22시간 거래(월-목 오전 1시 30분 - 오후 11시 30분 ET) 승인, 2026년 말 예정.
-- **NASDAQ:** 23시간 세션 계획(SEC 승인 대기, 2026년 하반기).
+- **NYSE Arca:** SEC가 22시간 거래(월-목 오전 1시 30분 - 오후 11시 30분 ET) 승인 이후 단계적 가동 확충.
+- **NASDAQ:** 23시간 세션(야간 세션 21:00-04:00 ET 포함) 운용 체계 구축.
 - **JPX/TSE:** 거래 시간을 30분 연장(15시 30분까지)하고 2024년 11월 마감 경매 세션 도입.
 - **HKEX:** 점심 휴장을 1.5시간에서 1시간으로 단축(2011); 추가 단축 또는 폐지에 관한 주기적 논의.
 - **동향:** 세계화, 비본국 시장 시간 중의 리스크 관리에 대한 기관 수요, 24시간 운영되는 가상자산 시장과의 경쟁에 의해 주도됨.
@@ -323,34 +323,34 @@ format:
 ### Tier 1 — 심층 분석 (Deep Dive)
 | 거래소 | 파일 | 상태 |
 |----------|------|--------|
-| NYSE | [nyse.md](exchanges/nyse.md) | 완료 |
-| NASDAQ | [nasdaq.md](exchanges/nasdaq.md) | 완료 |
-| LSE | [lse.md](exchanges/lse.md) | 완료 |
-| JPX (TSE) | [jpx.md](exchanges/jpx.md) | 완료 |
-| HKEX | [hkex.md](exchanges/hkex.md) | 완료 |
-| SGX | [sgx.md](exchanges/sgx.md) | 완료 |
-| **한국거래소 (KRX)** | [krx.md](exchanges/krx.md) | **완료** |
+| NYSE | [nyse](exchanges/nyse.qmd) | 완료 |
+| NASDAQ | [nasdaq](exchanges/nasdaq.qmd) | 완료 |
+| LSE | [lse](exchanges/lse.qmd) | 완료 |
+| JPX (TSE) | [jpx](exchanges/jpx.qmd) | 완료 |
+| HKEX | [hkex](exchanges/hkex.qmd) | 완료 |
+| SGX | [sgx](exchanges/sgx.qmd) | 완료 |
+| **한국거래소 (KRX)** | [krx](exchanges/krx.qmd) | **완료** |
 
 ### Tier 2 — 표준 분석 (Standard)
 | 거래소 | 파일 | 상태 |
 |----------|------|--------|
-| Euronext | [euronext.md](exchanges/euronext.md) | 완료 |
-| Deutsche Borse | [deutsche_borse.md](exchanges/deutsche_borse.md) | 완료 |
-| ASX | [asx.md](exchanges/asx.md) | 완료 |
-| TMX | [tmx.md](exchanges/tmx.md) | 완료 |
-| SIX | [six.md](exchanges/six.md) | 완료 |
+| Euronext | [euronext](exchanges/euronext.qmd) | 완료 |
+| Deutsche Borse | [deutsche_borse](exchanges/deutsche_borse.qmd) | 완료 |
+| ASX | [asx](exchanges/asx.qmd) | 완료 |
+| TMX | [tmx](exchanges/tmx.qmd) | 완료 |
+| SIX | [six](exchanges/six.qmd) | 완료 |
 
 ### Tier 3 — 개요 분석 (Overview)
 | 거래소 | 파일 | 상태 |
 |----------|------|--------|
-| SSE | [sse.md](exchanges/sse.md) | 완료 |
-| SZSE | [szse.md](exchanges/szse.md) | 완료 |
-| BSE | [bse.md](exchanges/bse.md) | 완료 |
-| NSE India | [nse_india.md](exchanges/nse_india.md) | 완료 |
-| TWSE | [twse.md](exchanges/twse.md) | 완료 |
-| Borsa Italiana | [borsa_italiana.md](exchanges/borsa_italiana.md) | 완료 |
-| BME | [bme.md](exchanges/bme.md) | 완료 |
-| Nasdaq Nordic | [nasdaq_nordic.md](exchanges/nasdaq_nordic.md) | 완료 |
-| Tadawul | [tadawul.md](exchanges/tadawul.md) | 완료 |
-| JSE | [jse.md](exchanges/jse.md) | 완료 |
-| Bursa Malaysia | [bursa_malaysia.md](exchanges/bursa_malaysia.md) | 완료 |
+| SSE | [sse](exchanges/sse.qmd) | 완료 |
+| SZSE | [szse](exchanges/szse.qmd) | 완료 |
+| BSE | [bse](exchanges/bse.qmd) | 완료 |
+| NSE India | [nse_india](exchanges/nse_india.qmd) | 완료 |
+| TWSE | [twse](exchanges/twse.qmd) | 완료 |
+| Borsa Italiana | [borsa_italiana](exchanges/borsa_italiana.qmd) | 완료 |
+| BME | [bme](exchanges/bme.qmd) | 완료 |
+| Nasdaq Nordic | [nasdaq_nordic](exchanges/nasdaq_nordic.qmd) | 완료 |
+| Tadawul | [tadawul](exchanges/tadawul.qmd) | 완료 |
+| JSE | [jse](exchanges/jse.qmd) | 완료 |
+| Bursa Malaysia | [bursa_malaysia](exchanges/bursa_malaysia.qmd) | 완료 |

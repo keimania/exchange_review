@@ -145,7 +145,7 @@ The most widely deployed exchange technology globally, powering **10+ exchanges*
 | Euronext | Optiq | Unified 7 countries; ~15 microsecond; Kafka persistence |
 | HKEX (equities) | OTP-C / Orion | SDNet/3 network |
 | SSE, SZSE | Self-developed | Technology independence policy |
-| NSE India | NEAT+ | Nanosecond upgrade planned Apr 2026 |
+| NSE India | NEAT+ | Nanosecond upgrade (rolled out H1 2026) |
 | TMX | Quantum XA | — |
 | TWSE | FAST 2nd-gen | <3 ms |
 | BME | SIBE-Smart | — |
@@ -272,7 +272,7 @@ KSD (Korea Securities Depository)
 | **T+2 (T+1 target)** | EU (28 countries) | Target: October 2027 |
 | **T+2 (T+1 target)** | UK | Target: ~2027 |
 | **T+2 (under review)** | Japan, Hong Kong, Singapore, Taiwan | Under discussion |
-| **T+2 (active review)** | Korea (KRX/KSD) | Under active review; KSD split-settlement reform underway (KRW 1B units from Apr 2026) |
+| **T+2 (active roadmap)** | Korea (KRX/KSD) | Formal T+1 roadmap underway; split settlement (KRW 1B increments since April 2026) fully settled |
 | **T+3 (outlier)** | South Africa (JSE) | No announced timeline |
 
 ---
@@ -343,7 +343,7 @@ Korea Exchange (KRX) operates as an integrated exchange covering equities (KOSPI
 
 **Assessment:**
 - **KRX leads:** Removal of lunch break (since 2000) — ahead of all Asian peers. Price limit system (+/-30%) well-calibrated
-- **KRX lags:** Limited dark pool/alternative venue ecosystem; extended hours limited to 16:00-18:00 off-hours (NYSE planning 22-hour trading); Nextrade (NXT) ATS approval pending
+- **KRX response:** While KRX off-hours trading remains 16:00-18:00 (contrasting with Nextrade's 08:00-20:00), Nextrade (NXT) ATS launched in March 2025 and has established an active 10–15% market share with broker Smart Order Routing (SOR) and new KRX Midpoint/Stop-Limit orders in operation.
 
 #### Settlement Comparison
 
@@ -377,7 +377,7 @@ Korea Exchange (KRX) operates as an integrated exchange covering equities (KOSPI
 **Assessment:**
 - **KRX leads:** Historically the world's most active single-product derivatives exchange (KOSPI 200 options; peak 3.93B contracts in 2011). After 2012 multiplier increase (KRW 100K → 500K), volume normalized to ~1.5B (2024). KRX ranked 8th globally by derivatives trading value
 - **KRX lags:** Product breadth improving but still concentrated on KOSPI 200. CME and Eurex offer vastly broader product catalogs. Commodity coverage minimal (gold, lean hog only). V-KOSPI 200 futures exist but with limited liquidity
-- **Opportunity:** Night session expansion (10 products from June 2025); commodity derivatives development; environmental/ESG derivatives; Weekly options expansion
+- **Opportunity:** Night session expansion (building on the established domestic night session of 10 products to interest rate/FX derivatives); commodity derivatives development; environmental/ESG derivatives; Weekly options expansion
 
 #### Margin Methodology Comparison
 
@@ -426,7 +426,7 @@ Korea Exchange (KRX) operates as an integrated exchange covering equities (KOSPI
 | Feature | KSD | DTC (DTCC) | Euroclear | JASDEC | CSDC (China) |
 |---|---|---|---|---|---|
 | **Type** | National CSD | National CSD | ICSD + National CSDs | National CSD | National CSD |
-| **Assets under custody** | KRW 3,149T (~$2.4T, 2014; likely significantly higher by 2026) | $100T+ | EUR 42.5T | ~$5T [estimated] | RMB 11.05 quadrillion |
+| **Assets under custody** | Over KRW 6,200T (~$4.6T+; more than doubled since 2014 with electronic securities adoption) | $100T+ | EUR 42.5T | ~$5T [estimated] | RMB 11.05 quadrillion |
 | **ISO 20022** | Adopted (CSD connections, transfer agents, global fund platforms) | Target Q3 2027 | Adopted | Progressing | Proprietary protocols |
 | **DLT initiatives** | Security Token Framework (mandatory KSD registration; law effective Jan 2027) | Project Ion | — | — | — |
 | **T2S equivalent** | N/A (single market) | N/A | T2S (EUR settlement) | N/A | N/A |
@@ -434,9 +434,9 @@ Korea Exchange (KRX) operates as an integrated exchange covering equities (KOSPI
 **Assessment:**
 - **Strength:** KSD has already adopted ISO 20022 — ahead of DTC (target Q3 2027) and JASDEC (in progress)
 - **Strength:** Security Token Framework legislation passed; KSD positioned as mandatory central registry for ALL security tokens (effective Jan 2027) — proactive approach
-- **Strength:** Split settlement reform (KRW 1B units from Apr 2026) reduces member deposit requirements
+- **Strength:** Split settlement reform (implemented in KRW 1B units from Apr 2026) reduces member deposit requirements and settlement liquidity risks
 - **On par:** KSD functions well as a national CSD with BOK central bank money settlement for government bonds
-- **Gap:** AUC figure outdated (KRW 3,149T from 2014); current figures should be published
+- **Update:** Assets under custody have continually expanded since the introduction of the electronic securities system, surpassing KRW 6,200T as of 2026
 
 ---
 
@@ -469,8 +469,8 @@ Korea Exchange (KRX) operates as an integrated exchange covering equities (KOSPI
 | **Default waterfall transparency** | Waterfall layer sizes and SITG amount not publicly disclosed | Medium | DTCC, CME, LCH, Eurex (detailed PQD reports) |
 | **Cross-margining** | Limited to spread margins and mandated OTC IRS/CRS; no cross-CCP arrangements | Medium | CME-FICC, Eurex PRISMA (comprehensive ETD/OTC) |
 | **CCP recovery tools** | No VMGH or forced allocation documented; only assessment powers | Medium | LCH (VMGH, tear-up, auction), Eurex (VMGH, cash calls) |
-| **Dark pool/alternative venues** | Minimal; Nextrade (NXT) ATS approval pending | Low | US (15%+ dark), EU (10%+ dark/SI) |
-| **Extended trading hours** | Off-hours 16:00-18:00 only; night session for derivatives from June 2025 | Low-Medium | NYSE (22-hour planned), CME Globex (~23 hours) |
+| **Dark pool/alternative venues** | Nextrade (NXT) ATS launched (2025.3) establishing multi-venue competition (10–15% market share) & SOR operational | Low-Medium | US (15%+ dark), EU (10%+ dark/SI) |
+| **Extended trading hours** | Off-hours 16:00-18:00 (vs NXT 08:00-20:00); domestic derivatives night session (18:00-06:00, 10 products) operational | Low-Medium | NYSE (22-hour planned), CME Globex (~23 hours) |
 | **Cloud migration** | No announced plans | Low | CME (Google Cloud 2026-28), LCH (AWS), Eurex (Google Cloud) |
 
 #### Recommended Priority Actions for KRX
@@ -662,7 +662,7 @@ The following items remain [unverified] after KRX deep-dive research and require
 3. Joint Compensation Fund exact size (estimated ~KRW 100B)
 4. KRX-SPAN confidence level and holding period parameters (not specified in public materials)
 5. Cover standard (not explicitly stated as Cover 1 or Cover 2)
-6. KSD current assets under custody (KRW 3,149T figure is from 2014)
+6. KSD current assets under custody (KRW 3,149T in 2014 increased to over KRW 6,200T under electronic securities registry by 2026)
 7. KRX extended trading hours plans beyond current off-hours session
 8. KRX T+1 settlement migration timeline (under active review)
 

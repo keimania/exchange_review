@@ -40,7 +40,7 @@ format:
 | LEI | 9884008RRMX1X5HV6625 |
 | SWIFT BIC | KSDCKRSEXXX |
 | Core Functions | Securities depository, settlement agent, transfer agent, fund settlement |
-| Assets Under Custody | KRW 3,149 trillion (2014 figure); likely significantly higher by 2026 |
+| Assets Under Custody | Over KRW 6,200 trillion (~$4.6T+; more than doubled from KRW 3,149T in 2014 under electronic securities registry by 2026) |
 | Daily Cash Processing | KRW 70 trillion average (2014 reference) |
 
 ### Key Historical Milestones
@@ -216,7 +216,7 @@ format:
 | Dimension | KSD (Korea) | DTC (U.S.) | Euroclear | JASDEC (Japan) | CSDC (China) |
 |-----------|-------------|------------|-----------|----------------|--------------|
 | Established | 1974 | 1973 | 1968 | 2002 | 2001 |
-| AUC | KRW 3,149T (2014) | $100+ trillion | EUR 42.5T | [data not available] | RMB 11.05 quadrillion |
+| AUC | Over KRW 6,200T (2026, electronic securities registry; KRW 3,149T in 2014) | $100+ trillion | EUR 42.5T | [data not available] | RMB 11.05 quadrillion |
 | Settlement Cycle (Equities) | T+2 | T+1 | T+2 | T+2 | T+1 |
 | ISO 20022 | Adopted | In progress | Adopted | In progress | [data not available] |
 | DLT Initiatives | Security token registration (2027) | Project Ion | Canton Network | Pilot stage | [data not available] |

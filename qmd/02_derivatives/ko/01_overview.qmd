@@ -182,9 +182,9 @@ format:
 - PFMI(금융시장인프라 원칙, Principles for Financial Market Infrastructures) 준수가 글로벌 표준으로 정착
 
 상세 규제 분석은 다음을 참조:
-- [미국 파생상품 규제](regulations/us_derivatives_regulation.md)
-- [EU 파생상품 규제](regulations/eu_derivatives_regulation.md)
-- [아시아 파생상품 규제](regulations/asia_derivatives_regulation.md)
+- [미국 파생상품 규제](regulations/us_derivatives_regulation.qmd)
+- [EU 파생상품 규제](regulations/eu_derivatives_regulation.qmd)
+- [아시아 파생상품 규제](regulations/asia_derivatives_regulation.qmd)
 
 ---
 
@@ -269,41 +269,41 @@ format:
 ### 1단계 — 심층 분석 (Tier 1 — Deep Dive)
 | 거래소 | 파일 | 상태 |
 |--------|------|------|
-| CME Group | [cme_group.md](exchanges/cme_group.md) | ✅ 완료 (2026-04-06) |
-| Eurex | [eurex.md](exchanges/eurex.md) | ✅ 완료 (2026-04-06) |
-| HKEX 파생상품 | [hkex_derivatives.md](exchanges/hkex_derivatives.md) | ✅ 완료 (2026-04-06) |
-| SGX 파생상품 | [sgx_derivatives.md](exchanges/sgx_derivatives.md) | ✅ 완료 (2026-04-06) |
-| KRX 파생상품 | [krx_derivatives.md](exchanges/krx_derivatives.md) | ✅ 완료 (2026-04-13) |
+| CME Group | [cme_group](exchanges/cme_group.qmd) | ✅ 완료 (2026-04-06) |
+| Eurex | [eurex](exchanges/eurex.qmd) | ✅ 완료 (2026-04-06) |
+| HKEX 파생상품 | [hkex_derivatives](exchanges/hkex_derivatives.qmd) | ✅ 완료 (2026-04-06) |
+| SGX 파생상품 | [sgx_derivatives](exchanges/sgx_derivatives.qmd) | ✅ 완료 (2026-04-06) |
+| KRX 파생상품 | [krx_derivatives](exchanges/krx_derivatives.qmd) | ✅ 완료 (2026-04-13) |
 
 ### 2단계 — 표준 분석 (Tier 2 — Standard)
 | 거래소 | 파일 | 상태 |
 |--------|------|------|
-| Cboe | [cboe.md](exchanges/cboe.md) | ✅ 완료 (2026-04-06) |
-| ICE Futures | [ice_futures.md](exchanges/ice_futures.md) | ✅ 완료 (2026-04-06) |
-| 오사카거래소 (Osaka Exchange) | [osaka_exchange.md](exchanges/osaka_exchange.md) | ✅ 완료 (2026-04-06) |
-| Euronext 파생상품 | [euronext_derivatives.md](exchanges/euronext_derivatives.md) | ✅ 완료 (2026-04-07) |
-| ASX 파생상품 | [asx_derivatives.md](exchanges/asx_derivatives.md) | ✅ 완료 (2026-04-07) |
+| Cboe | [cboe](exchanges/cboe.qmd) | ✅ 완료 (2026-04-06) |
+| ICE Futures | [ice_futures](exchanges/ice_futures.qmd) | ✅ 완료 (2026-04-06) |
+| 오사카거래소 (Osaka Exchange) | [osaka_exchange](exchanges/osaka_exchange.qmd) | ✅ 완료 (2026-04-06) |
+| Euronext 파생상품 | [euronext_derivatives](exchanges/euronext_derivatives.qmd) | ✅ 완료 (2026-04-07) |
+| ASX 파생상품 | [asx_derivatives](exchanges/asx_derivatives.qmd) | ✅ 완료 (2026-04-07) |
 
 ### 3단계 — 개요 분석 (Tier 3 — Overview)
 | 거래소 | 파일 | 상태 |
 |--------|------|------|
-| 몬트리올거래소 (Montreal Exchange) | [montreal_exchange.md](exchanges/montreal_exchange.md) | ✅ 완료 (2026-04-07) |
-| CFFEX | [cffex.md](exchanges/cffex.md) | ✅ 완료 (2026-04-07) |
-| DCE | [dce.md](exchanges/dce.md) | ✅ 완료 (2026-04-07) |
-| SHFE | [shfe.md](exchanges/shfe.md) | ✅ 완료 (2026-04-07) |
-| NSE F&O | [nse_fo.md](exchanges/nse_fo.md) | ✅ 완료 (2026-04-07) |
-| TAIFEX | [taifex.md](exchanges/taifex.md) | ✅ 완료 (2026-04-07) |
-| DME | [dme.md](exchanges/dme.md) | ✅ 완료 (2026-04-07) |
+| 몬트리올거래소 (Montreal Exchange) | [montreal_exchange](exchanges/montreal_exchange.qmd) | ✅ 완료 (2026-04-07) |
+| CFFEX | [cffex](exchanges/cffex.qmd) | ✅ 완료 (2026-04-07) |
+| DCE | [dce](exchanges/dce.qmd) | ✅ 완료 (2026-04-07) |
+| SHFE | [shfe](exchanges/shfe.qmd) | ✅ 완료 (2026-04-07) |
+| NSE F&O | [nse_fo](exchanges/nse_fo.qmd) | ✅ 완료 (2026-04-07) |
+| TAIFEX | [taifex](exchanges/taifex.qmd) | ✅ 완료 (2026-04-07) |
+| DME | [dme](exchanges/dme.qmd) | ✅ 완료 (2026-04-07) |
 
 ### 지원 조사 자료 (Supporting Research)
 | 문서 | 파일 | 상태 |
 |------|------|------|
-| Globex 시스템 심층 분석 | [systems/globex.md](systems/globex.md) | ✅ 완료 |
-| Genium INET 시스템 심층 분석 | [systems/genium_inet.md](systems/genium_inet.md) | ✅ 완료 |
-| T7 파생상품 시스템 심층 분석 | [systems/t7_derivatives.md](systems/t7_derivatives.md) | ✅ 완료 |
-| 미국 파생상품 규제 | [regulations/us_derivatives_regulation.md](regulations/us_derivatives_regulation.md) | ✅ 완료 |
-| EU 파생상품 규제 | [regulations/eu_derivatives_regulation.md](regulations/eu_derivatives_regulation.md) | ✅ 완료 |
-| 아시아 파생상품 규제 | [regulations/asia_derivatives_regulation.md](regulations/asia_derivatives_regulation.md) | ✅ 완료 |
+| Globex 시스템 심층 분석 | [systems/globex](systems/globex.qmd) | ✅ 완료 |
+| Genium INET 시스템 심층 분석 | [systems/genium_inet](systems/genium_inet.qmd) | ✅ 완료 |
+| T7 파생상품 시스템 심층 분석 | [systems/t7_derivatives](systems/t7_derivatives.qmd) | ✅ 완료 |
+| 미국 파생상품 규제 | [regulations/us_derivatives_regulation](regulations/us_derivatives_regulation.qmd) | ✅ 완료 |
+| EU 파생상품 규제 | [regulations/eu_derivatives_regulation](regulations/eu_derivatives_regulation.qmd) | ✅ 완료 |
+| 아시아 파생상품 규제 | [regulations/asia_derivatives_regulation](regulations/asia_derivatives_regulation.qmd) | ✅ 완료 |
 
 ---
 

@@ -346,7 +346,7 @@ CCP interoperability -- where two or more CCPs clear the same product and mainta
 | **CDP** (Singapore) | Post-Trade System (PTS, LSEG Technology, ISO 20022) | Vendor (LSEG Technology) | [data not available] | Marketnode DLT-enabled digital bond issuance (June 2022) |
 | **Cboe Clear Europe** | Proprietary clearing system with RTRM (real-time risk) | In-house | [data not available] | [data not available] |
 | **ICE Clear** entities | ICE Risk Model (IRM 1/IRM 2); proprietary clearing platforms | In-house | [data not available] | [data not available] |
-| **ASX Clear / Clear (Futures)** | CHESS (settlement, 1996); Genium INET (derivatives); Calypso (OTC) | Mixed (Nasdaq/Genium, Calypso, in-house CHESS) | [data not available] | CHESS replacement abandoned (DLT, Nov 2022; AUD 250M write-off); TCS selected as new partner (2023); CHESS Release 1 planned April 2026 |
+| **ASX Clear / Clear (Futures)** | CHESS (settlement, 1996); Genium INET (derivatives); Calypso (OTC) | Mixed (Nasdaq/Genium, Calypso, in-house CHESS) | [data not available] | CHESS replacement abandoned (DLT, Nov 2022; AUD 250M write-off); TCS selected as new partner (2023); CHESS Release 1 targeted H1 2026 |
 | **SIX x-clear** | SECOM | In-house | [data not available] | SIX Digital Exchange (SDX) for digital assets |
 | **CSDC** (ChinaClear) | Proprietary systems (Shanghai/Shenzhen branches) | In-house | [data not available] | [data not available] |
 | **CCIL** (India) | ClearCorp dealing systems (NDS-OM, TREPS, FX-CLEAR) | In-house (via subsidiary ClearCorp) | [data not available] | [data not available] |
@@ -513,7 +513,7 @@ CCP interoperability -- where two or more CCPs clear the same product and mainta
 | 2 | **Euroclear** (Group) | EUR 42.5 trillion |
 | 3 | **Clearstream** (Group) | EUR 20+ trillion |
 | 4 | **CSDC** (ChinaClear) | RMB 11.05 quadrillion (~$1.5 quadrillion) [note: this figure may represent custody value rather than AUC] |
-| 5 | **KSD** (Korea) | KRW 3,149 trillion (~$2.4 trillion) [data as of 2014] |
+| 5 | **KSD** (Korea) | Over KRW 6,200 trillion (~$4.6T+) [as of 2026 under electronic registry; doubled from KRW 3,149T in 2014] |
 
 ### 10.3 KRX/KSD Positioning
 
@@ -532,7 +532,7 @@ Korea's post-trade infrastructure, centered on KRX (as CCP) and KSD (as CSD), ca
 **Settlement Cycle:**
 - KRX operates at T+2 for equities, in line with Japan (T+2), Hong Kong (T+2), Singapore (T+2), Australia (T+2), and the EU (T+2)
 - The U.S. and Canada moved to T+1 in May 2024; India achieved T+1 in January 2023; China operates at T+1
-- Korea is monitoring the global T+1 trend but has not announced a formal transition timeline
+- Korea has successfully instituted KRW 1B split settlement (April 2026) to manage settlement liquidity and is actively developing its T+1 migration roadmap to keep pace with global peers
 - KRX settles government bonds at T+1, comparable to Japan (T+1 for JGBs since May 2018)
 
 **Default Waterfall:**

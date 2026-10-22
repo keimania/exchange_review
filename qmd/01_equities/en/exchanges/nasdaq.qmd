@@ -61,7 +61,7 @@ format:
 - **2016:** Company rebranded as Nasdaq, Inc.
 - **2023:** Acquired Adenza (risk management and regulatory technology) for $10.5 billion.
 - **2024:** Launched Nasdaq Eqlipse, the fourth generation of its marketplace technology platform.
-- **2025:** Announced plans for 24-hour, 5-day-a-week trading (pending SEC approval, target launch H2 2026).
+- **2025–2026:** Rollout of 23-hour trading per weekday (including night session 9:00 PM – 4:00 AM ET) and 24/5 global trading infrastructure.
 - **2026 (March):** SEC approved Nasdaq proposal to allow certain stocks to be traded and settled in tokenized form.
 
 ---
@@ -84,7 +84,7 @@ format:
 | Closing Cross | ~3:50 PM - 4:00 PM ET | ~20:50 - 21:00 UTC (EST) | Closing auction; single-price cross; ~16% of daily volume |
 | After-Hours | 4:00 PM - 8:00 PM ET | 21:00 - 01:00 UTC (EST) | Extended hours session; limited order types; lower liquidity |
 
-**Planned change (H2 2026, pending SEC approval):** Expansion to 23-hour trading per weekday. Day session 4:00 AM - 8:00 PM ET, 1-hour maintenance pause (8:00-9:00 PM), Night session 9:00 PM - 4:00 AM ET.
+**Extended Trading Hours (2026 operational status):** 23-hour trading architecture per weekday. Day session 4:00 AM – 8:00 PM ET, 1-hour maintenance pause (8:00–9:00 PM), Night session 9:00 PM – 4:00 AM ET.
 
 ### 2.3 Tick Sizes
 | Price Range | Tick Size |

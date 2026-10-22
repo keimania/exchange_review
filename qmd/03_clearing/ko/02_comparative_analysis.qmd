@@ -346,7 +346,7 @@ CCP 상호운용성 -- 둘 이상의 CCP가 동일 상품을 청산하고 상호
 | **CDP** (싱가포르) | 후속거래 시스템 (PTS, LSEG Technology, ISO 20022) | 외부공급 (LSEG Technology) | [자료 없음] | Marketnode DLT 기반 디지털 채권 발행 (2022년 6월) |
 | **Cboe Clear Europe** | RTRM(실시간 위험) 탑재 독자 청산 시스템 | 자체개발 | [자료 없음] | [자료 없음] |
 | **ICE Clear** 기관들 | ICE Risk Model (IRM 1/IRM 2); 독자 청산 플랫폼 | 자체개발 | [자료 없음] | [자료 없음] |
-| **ASX Clear / Clear (Futures)** | CHESS (결제, 1996년); Genium INET (파생상품); Calypso (장외) | 혼합 (Nasdaq/Genium, Calypso, 자체개발 CHESS) | [자료 없음] | CHESS 교체 포기 (DLT, 2022년 11월; AUD 2억5,000만 손상 처리); TCS를 신규 파트너로 선정 (2023년); CHESS Release 1은 2026년 4월 예정 |
+| **ASX Clear / Clear (Futures)** | CHESS (결제, 1996년); Genium INET (파생상품); Calypso (장외) | 혼합 (Nasdaq/Genium, Calypso, 자체개발 CHESS) | [자료 없음] | CHESS 교체 포기 (DLT, 2022년 11월; AUD 2억5,000만 손상 처리); TCS를 신규 파트너로 선정 (2023년); CHESS Release 1은 2026년 상반기 도입 추진 |
 | **SIX x-clear** | SECOM | 자체개발 | [자료 없음] | SIX Digital Exchange (SDX, 디지털 자산) |
 | **CSDC** (ChinaClear) | 독자 시스템 (상하이/선전 지점) | 자체개발 | [자료 없음] | [자료 없음] |
 | **CCIL** (인도) | ClearCorp 딜링 시스템 (NDS-OM, TREPS, FX-CLEAR) | 자체개발 (자회사 ClearCorp 경유) | [자료 없음] | [자료 없음] |
@@ -513,7 +513,7 @@ CCP 상호운용성 -- 둘 이상의 CCP가 동일 상품을 청산하고 상호
 | 2 | **Euroclear** (그룹) | EUR 42.5조 |
 | 3 | **Clearstream** (그룹) | EUR 20조 이상 |
 | 4 | **CSDC** (ChinaClear) | RMB 11,050경 (~$1.5경) [주: 이 수치는 AUC가 아닌 보관 평가액일 수 있음] |
-| 5 | **KSD** (한국) | KRW 3,149조 (~$2.4조) [2014년 기준 자료] |
+| 5 | **KSD** (한국) | KRW 6,200조 이상 (~$4.6조+) [2026년 전자등록 기준; 2014년 3,149조 원에서 2배 성장] |
 
 ### 10.3 KRX/KSD 포지셔닝 (KRX/KSD Positioning)
 
@@ -532,7 +532,7 @@ KRX(CCP로서)와 KSD(CSD로서)를 중심으로 하는 한국의 후속거래 �
 **결제주기 (Settlement Cycle):**
 - KRX는 주식에 대해 T+2를 운영하며, 일본(T+2), 홍콩(T+2), 싱가포르(T+2), 호주(T+2), EU(T+2)와 동일하다
 - 미국과 캐나다는 2024년 5월 T+1로 전환하였고, 인도는 2023년 1월 T+1을 달성하였으며, 중국은 T+1로 운영된다
-- 한국은 글로벌 T+1 추세를 모니터링 중이나 공식적인 전환 일정을 발표하지 않았다
+- 한국은 2026년 4월 10억 원 단위 분할결제를 성공적으로 정착시켜 결제유동성 리스크를 완화하였으며, 글로벌 T+1 추세(미국 T+1 안착, EU 2027년 목표)에 발맞추어 T+1 결제주기 단축 로드맵을 적극 추진하고 있다
 - KRX는 국채를 T+1로 결제하며, 이는 일본(2018년 5월 이후 JGB T+1)과 비교 가능하다
 
 **채무불이행 손실분담 구조 (Default Waterfall):**

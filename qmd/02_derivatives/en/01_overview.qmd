@@ -182,9 +182,9 @@ Global derivatives exchanges employ several margin methodologies, with a clear i
 - PFMI (Principles for Financial Market Infrastructures) compliance as global standard
 
 For detailed regulatory analysis, see:
-- [U.S. Derivatives Regulation](regulations/us_derivatives_regulation.md)
-- [EU Derivatives Regulation](regulations/eu_derivatives_regulation.md)
-- [Asia Derivatives Regulation](regulations/asia_derivatives_regulation.md)
+- [U.S. Derivatives Regulation](regulations/us_derivatives_regulation.qmd)
+- [EU Derivatives Regulation](regulations/eu_derivatives_regulation.qmd)
+- [Asia Derivatives Regulation](regulations/asia_derivatives_regulation.qmd)
 
 ---
 
@@ -269,41 +269,41 @@ For detailed regulatory analysis, see:
 ### Tier 1 — Deep Dive
 | Exchange | File | Status |
 |----------|------|--------|
-| CME Group | [cme_group.md](exchanges/cme_group.md) | ✅ Completed (2026-04-06) |
-| Eurex | [eurex.md](exchanges/eurex.md) | ✅ Completed (2026-04-06) |
-| HKEX Derivatives | [hkex_derivatives.md](exchanges/hkex_derivatives.md) | ✅ Completed (2026-04-06) |
-| SGX Derivatives | [sgx_derivatives.md](exchanges/sgx_derivatives.md) | ✅ Completed (2026-04-06) |
-| KRX Derivatives | [krx_derivatives.md](exchanges/krx_derivatives.md) | ✅ Completed (2026-04-13) |
+| CME Group | [cme_group](exchanges/cme_group.qmd) | ✅ Completed (2026-04-06) |
+| Eurex | [eurex](exchanges/eurex.qmd) | ✅ Completed (2026-04-06) |
+| HKEX Derivatives | [hkex_derivatives](exchanges/hkex_derivatives.qmd) | ✅ Completed (2026-04-06) |
+| SGX Derivatives | [sgx_derivatives](exchanges/sgx_derivatives.qmd) | ✅ Completed (2026-04-06) |
+| KRX Derivatives | [krx_derivatives](exchanges/krx_derivatives.qmd) | ✅ Completed (2026-04-13) |
 
 ### Tier 2 — Standard
 | Exchange | File | Status |
 |----------|------|--------|
-| Cboe | [cboe.md](exchanges/cboe.md) | ✅ Completed (2026-04-06) |
-| ICE Futures | [ice_futures.md](exchanges/ice_futures.md) | ✅ Completed (2026-04-06) |
-| Osaka Exchange | [osaka_exchange.md](exchanges/osaka_exchange.md) | ✅ Completed (2026-04-06) |
-| Euronext Derivatives | [euronext_derivatives.md](exchanges/euronext_derivatives.md) | ✅ Completed (2026-04-07) |
-| ASX Derivatives | [asx_derivatives.md](exchanges/asx_derivatives.md) | ✅ Completed (2026-04-07) |
+| Cboe | [cboe](exchanges/cboe.qmd) | ✅ Completed (2026-04-06) |
+| ICE Futures | [ice_futures](exchanges/ice_futures.qmd) | ✅ Completed (2026-04-06) |
+| Osaka Exchange | [osaka_exchange](exchanges/osaka_exchange.qmd) | ✅ Completed (2026-04-06) |
+| Euronext Derivatives | [euronext_derivatives](exchanges/euronext_derivatives.qmd) | ✅ Completed (2026-04-07) |
+| ASX Derivatives | [asx_derivatives](exchanges/asx_derivatives.qmd) | ✅ Completed (2026-04-07) |
 
 ### Tier 3 — Overview
 | Exchange | File | Status |
 |----------|------|--------|
-| Montreal Exchange | [montreal_exchange.md](exchanges/montreal_exchange.md) | ✅ Completed (2026-04-07) |
-| CFFEX | [cffex.md](exchanges/cffex.md) | ✅ Completed (2026-04-07) |
-| DCE | [dce.md](exchanges/dce.md) | ✅ Completed (2026-04-07) |
-| SHFE | [shfe.md](exchanges/shfe.md) | ✅ Completed (2026-04-07) |
-| NSE F&O | [nse_fo.md](exchanges/nse_fo.md) | ✅ Completed (2026-04-07) |
-| TAIFEX | [taifex.md](exchanges/taifex.md) | ✅ Completed (2026-04-07) |
-| DME | [dme.md](exchanges/dme.md) | ✅ Completed (2026-04-07) |
+| Montreal Exchange | [montreal_exchange](exchanges/montreal_exchange.qmd) | ✅ Completed (2026-04-07) |
+| CFFEX | [cffex](exchanges/cffex.qmd) | ✅ Completed (2026-04-07) |
+| DCE | [dce](exchanges/dce.qmd) | ✅ Completed (2026-04-07) |
+| SHFE | [shfe](exchanges/shfe.qmd) | ✅ Completed (2026-04-07) |
+| NSE F&O | [nse_fo](exchanges/nse_fo.qmd) | ✅ Completed (2026-04-07) |
+| TAIFEX | [taifex](exchanges/taifex.qmd) | ✅ Completed (2026-04-07) |
+| DME | [dme](exchanges/dme.qmd) | ✅ Completed (2026-04-07) |
 
 ### Supporting Research
 | Document | File | Status |
 |----------|------|--------|
-| Globex System Deep-Dive | [systems/globex.md](systems/globex.md) | ✅ Completed |
-| Genium INET System Deep-Dive | [systems/genium_inet.md](systems/genium_inet.md) | ✅ Completed |
-| T7 Derivatives System Deep-Dive | [systems/t7_derivatives.md](systems/t7_derivatives.md) | ✅ Completed |
-| U.S. Derivatives Regulation | [regulations/us_derivatives_regulation.md](regulations/us_derivatives_regulation.md) | ✅ Completed |
-| EU Derivatives Regulation | [regulations/eu_derivatives_regulation.md](regulations/eu_derivatives_regulation.md) | ✅ Completed |
-| Asia Derivatives Regulation | [regulations/asia_derivatives_regulation.md](regulations/asia_derivatives_regulation.md) | ✅ Completed |
+| Globex System Deep-Dive | [systems/globex](systems/globex.qmd) | ✅ Completed |
+| Genium INET System Deep-Dive | [systems/genium_inet](systems/genium_inet.qmd) | ✅ Completed |
+| T7 Derivatives System Deep-Dive | [systems/t7_derivatives](systems/t7_derivatives.qmd) | ✅ Completed |
+| U.S. Derivatives Regulation | [regulations/us_derivatives_regulation](regulations/us_derivatives_regulation.qmd) | ✅ Completed |
+| EU Derivatives Regulation | [regulations/eu_derivatives_regulation](regulations/eu_derivatives_regulation.qmd) | ✅ Completed |
+| Asia Derivatives Regulation | [regulations/asia_derivatives_regulation](regulations/asia_derivatives_regulation.qmd) | ✅ Completed |
 
 ---
 

@@ -184,7 +184,7 @@ Hybrid markets combine elements of both order-driven and quote-driven structures
 
 ### 4.3 Emerging Technology Trends
 - **Cloud migration:** JPX conducting PoC with AWS and Fujitsu for arrowhead cloud migration (2025). ASX exploring cloud for post-trade. Multiple exchanges evaluating hybrid cloud/on-premise architectures.
-- **24-hour trading:** NYSE Arca approved for 22-hour trading (targeted late 2026). NASDAQ planning 23-hour sessions (pending SEC approval, target H2 2026). Reflects growing demand for global continuous access.
+- **24-hour trading:** NYSE Arca approved for 22-hour trading with phased rollout; NASDAQ operationalizing 23-hour sessions (excluding 1-hour maintenance window). Reflects growing demand for global continuous access.
 - **Digital assets / DLT:** SIX Digital Exchange (SDX) operational since 2021 with FINMA license. Deutsche Borse launched D7 digital post-trade platform (2024) and Crypto Finance AG. ASX abandoned DLT-based CHESS replacement (2022) after writing off ~AUD 250M.
 - **AI/ML:** LSEG integrating financial data into ChatGPT (2025). Exchanges deploying ML for market surveillance (pattern detection, anomaly identification). Nasdaq applying AI across market technology products.
 
@@ -306,12 +306,12 @@ Hybrid markets combine elements of both order-driven and quote-driven structures
 - **LSEG:** Integrated financial data into ChatGPT (2025); Microsoft partnership for AI-powered analytics.
 - **Nasdaq:** AI-driven market surveillance across 130+ market operator clients globally.
 - **Exchanges generally:** Deploying ML for anomaly detection in order flow, insider trading pattern recognition, market manipulation surveillance.
-- **NSE India:** Planning nanosecond-level trading system upgrade with capacity of ~100 million transactions/second (April 2026).
+- **NSE India:** Nanosecond-level trading system upgrade deployed with capacity of ~100 million transactions/second (H1 2026).
 - **Regulatory implication:** Regulators (SEC, ESMA, MAS) increasingly focused on AI governance in trading, algorithmic accountability, and model risk management.
 
 ### 6.7 Extended Trading Hours
-- **NYSE Arca:** SEC approved 22-hour trading (1:30 AM - 11:30 PM ET Mon-Thu), targeted late 2026.
-- **NASDAQ:** Planning 23-hour sessions (pending SEC approval, H2 2026).
+- **NYSE Arca:** SEC approved 22-hour trading (1:30 AM - 11:30 PM ET Mon-Thu) with phased rollout.
+- **NASDAQ:** 23-hour session framework (including 9:00 PM - 4:00 AM ET night session) deployed.
 - **JPX/TSE:** Extended trading hours by 30 minutes (to 15:30) and introduced closing auction session in November 2024.
 - **HKEX:** Shortened lunch break from 1.5 hours to 1 hour (2011); periodic discussions about further reduction or elimination.
 - **Trend:** Driven by globalization, institutional demand for risk management during non-home-market hours, and competition from crypto markets operating 24/7.
@@ -323,34 +323,34 @@ Hybrid markets combine elements of both order-driven and quote-driven structures
 ### Tier 1 — Deep Dive
 | Exchange | File | Status |
 |----------|------|--------|
-| NYSE | [nyse.md](exchanges/nyse.md) | Completed |
-| NASDAQ | [nasdaq.md](exchanges/nasdaq.md) | Completed |
-| LSE | [lse.md](exchanges/lse.md) | Completed |
-| JPX (TSE) | [jpx.md](exchanges/jpx.md) | Completed |
-| HKEX | [hkex.md](exchanges/hkex.md) | Completed |
-| SGX | [sgx.md](exchanges/sgx.md) | Completed |
-| **KRX** | [krx.md](exchanges/krx.md) | **Completed** |
+| NYSE | [nyse](exchanges/nyse.qmd) | Completed |
+| NASDAQ | [nasdaq](exchanges/nasdaq.qmd) | Completed |
+| LSE | [lse](exchanges/lse.qmd) | Completed |
+| JPX (TSE) | [jpx](exchanges/jpx.qmd) | Completed |
+| HKEX | [hkex](exchanges/hkex.qmd) | Completed |
+| SGX | [sgx](exchanges/sgx.qmd) | Completed |
+| **KRX** | [krx](exchanges/krx.qmd) | **Completed** |
 
 ### Tier 2 — Standard
 | Exchange | File | Status |
 |----------|------|--------|
-| Euronext | [euronext.md](exchanges/euronext.md) | Completed |
-| Deutsche Borse | [deutsche_borse.md](exchanges/deutsche_borse.md) | Completed |
-| ASX | [asx.md](exchanges/asx.md) | Completed |
-| TMX | [tmx.md](exchanges/tmx.md) | Completed |
-| SIX | [six.md](exchanges/six.md) | Completed |
+| Euronext | [euronext](exchanges/euronext.qmd) | Completed |
+| Deutsche Borse | [deutsche_borse](exchanges/deutsche_borse.qmd) | Completed |
+| ASX | [asx](exchanges/asx.qmd) | Completed |
+| TMX | [tmx](exchanges/tmx.qmd) | Completed |
+| SIX | [six](exchanges/six.qmd) | Completed |
 
 ### Tier 3 — Overview
 | Exchange | File | Status |
 |----------|------|--------|
-| SSE | [sse.md](exchanges/sse.md) | Completed |
-| SZSE | [szse.md](exchanges/szse.md) | Completed |
-| BSE | [bse.md](exchanges/bse.md) | Completed |
-| NSE India | [nse_india.md](exchanges/nse_india.md) | Completed |
-| TWSE | [twse.md](exchanges/twse.md) | Completed |
-| Borsa Italiana | [borsa_italiana.md](exchanges/borsa_italiana.md) | Completed |
-| BME | [bme.md](exchanges/bme.md) | Completed |
-| Nasdaq Nordic | [nasdaq_nordic.md](exchanges/nasdaq_nordic.md) | Completed |
-| Tadawul | [tadawul.md](exchanges/tadawul.md) | Completed |
-| JSE | [jse.md](exchanges/jse.md) | Completed |
-| Bursa Malaysia | [bursa_malaysia.md](exchanges/bursa_malaysia.md) | Completed |
+| SSE | [sse](exchanges/sse.qmd) | Completed |
+| SZSE | [szse](exchanges/szse.qmd) | Completed |
+| BSE | [bse](exchanges/bse.qmd) | Completed |
+| NSE India | [nse_india](exchanges/nse_india.qmd) | Completed |
+| TWSE | [twse](exchanges/twse.qmd) | Completed |
+| Borsa Italiana | [borsa_italiana](exchanges/borsa_italiana.qmd) | Completed |
+| BME | [bme](exchanges/bme.qmd) | Completed |
+| Nasdaq Nordic | [nasdaq_nordic](exchanges/nasdaq_nordic.qmd) | Completed |
+| Tadawul | [tadawul](exchanges/tadawul.qmd) | Completed |
+| JSE | [jse](exchanges/jse.qmd) | Completed |
+| Bursa Malaysia | [bursa_malaysia](exchanges/bursa_malaysia.qmd) | Completed |

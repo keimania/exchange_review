@@ -458,4 +458,4 @@ Notable: KRX achieved a ~285x improvement from Exture (20,000 microseconds) to E
 
 ---
 
-*This document covers SGX Titan (derivatives), SGX REACH (securities), Titan OTC (OTC clearing), and the planned Iris-ST (next-gen securities). For the broader SGX exchange profile including market structure, regulations, and listing requirements, see [sgx.md](../exchanges/sgx.md). For Nasdaq INET technology in depth, see [inet.md](inet.md).*
+*This document covers SGX Titan (derivatives), SGX REACH (securities), Titan OTC (OTC clearing), and the planned Iris-ST (next-gen securities). For the broader SGX exchange profile including market structure, regulations, and listing requirements, see [sgx](../exchanges/sgx.qmd). For Nasdaq INET technology in depth, see [inet](inet.qmd).*

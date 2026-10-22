@@ -51,8 +51,8 @@ format:
 - **T+1 Considerations for Equities:** Japan has not yet announced a formal timeline for equity T+1 migration but is monitoring global developments. [unverified]
 
 ### 1.5 Recent Changes
-- **JSCC Margin Methodology Migration (SPAN to VaR):** JSCC migrated from SPAN to a VaR-based margin calculation method on November 6, 2023, covering JGB futures, index futures, options, and commodity futures/options. The methodology uses Historical Simulation (HS-VaR) and Alternative Simulation (AS-VaR) methods. VaR Margin Software (VMA) upgrade from v3.0 to v4.0 is planned for April 13, 2026. [Source: JPX Working Paper Vol. 45, February 2025; JSCC VaR Method page]
-- **Listed Derivatives April 2026 Project:** JSCC published outline of changes for listed derivatives scheduled for April 2026. [Source: JSCC News, 2026]
+- **JSCC Margin Methodology Migration (SPAN to VaR):** JSCC migrated from SPAN to a VaR-based margin calculation method on November 6, 2023, covering JGB futures, index futures, options, and commodity futures/options. The methodology uses Historical Simulation (HS-VaR) and Alternative Simulation (AS-VaR) methods. VaR Margin Software (VMA) upgrade from v3.0 to v4.0 was implemented on April 13, 2026. [Source: JPX Working Paper Vol. 45, February 2025; JSCC VaR Method page]
+- **Listed Derivatives April 2026 Project:** JSCC published outline of changes for listed derivatives implemented in April 2026. [Source: JSCC News, 2026]
 - **Cross-border CCP Recognition:** JSCC has obtained recognition from foreign regulators including the Ontario Securities Commission (Canada) under s.147 orders. [Source: OSC decision]
 
 ---

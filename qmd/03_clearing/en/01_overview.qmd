@@ -184,45 +184,45 @@ Trade Execution → Trade Capture → Clearing → Settlement → Custody
 ### Tier 1 — Deep Dive
 | Organization | File | Status |
 |-------------|------|--------|
-| DTCC | [dtcc.md](organizations/dtcc.md) | **Completed** (2026-04-07) |
-| LCH | [lch.md](organizations/lch.md) | **Completed** (2026-04-07) |
-| OCC | [occ.md](organizations/occ.md) | **Completed** (2026-04-07) |
-| CME Clearing | [cme_clearing.md](organizations/cme_clearing.md) | **Completed** (2026-04-07) |
-| Eurex Clearing | [eurex_clearing.md](organizations/eurex_clearing.md) | **Completed** (2026-04-07) |
-| KRX Clearing | [krx_clearing.md](organizations/krx_clearing.md) | **Completed** (2026-04-13) |
-| KSD | [ksd.md](organizations/ksd.md) | **Completed** (2026-04-13) |
+| DTCC | [dtcc](organizations/dtcc.qmd) | **Completed** (2026-04-07) |
+| LCH | [lch](organizations/lch.qmd) | **Completed** (2026-04-07) |
+| OCC | [occ](organizations/occ.qmd) | **Completed** (2026-04-07) |
+| CME Clearing | [cme_clearing](organizations/cme_clearing.qmd) | **Completed** (2026-04-07) |
+| Eurex Clearing | [eurex_clearing](organizations/eurex_clearing.qmd) | **Completed** (2026-04-07) |
+| KRX Clearing | [krx_clearing](organizations/krx_clearing.qmd) | **Completed** (2026-04-13) |
+| KSD | [ksd](organizations/ksd.qmd) | **Completed** (2026-04-13) |
 
 ### Tier 2 — Standard
 | Organization | File | Status |
 |-------------|------|--------|
-| JSCC | [jscc.md](organizations/jscc.md) | **Completed** (2026-04-07) |
-| HKSCC/HKCC/SEOCH | [hkex_clearing.md](organizations/hkex_clearing.md) | **Completed** (2026-04-07) |
-| CDP (Singapore) | [cdp.md](organizations/cdp.md) | **Completed** (2026-04-07) |
-| EuroCCP / Cboe Clear Europe | [euroccp.md](organizations/euroccp.md) | **Completed** (2026-04-07) |
-| ICE Clear | [ice_clear.md](organizations/ice_clear.md) | **Completed** (2026-04-07) |
-| ASX Clear | [asx_clear.md](organizations/asx_clear.md) | **Completed** (2026-04-07) |
+| JSCC | [jscc](organizations/jscc.qmd) | **Completed** (2026-04-07) |
+| HKSCC/HKCC/SEOCH | [hkex_clearing](organizations/hkex_clearing.qmd) | **Completed** (2026-04-07) |
+| CDP (Singapore) | [cdp](organizations/cdp.qmd) | **Completed** (2026-04-07) |
+| EuroCCP / Cboe Clear Europe | [euroccp](organizations/euroccp.qmd) | **Completed** (2026-04-07) |
+| ICE Clear | [ice_clear](organizations/ice_clear.qmd) | **Completed** (2026-04-07) |
+| ASX Clear | [asx_clear](organizations/asx_clear.qmd) | **Completed** (2026-04-07) |
 
 ### Tier 3 — Overview
 | Organization | File | Status |
 |-------------|------|--------|
-| SIX x-clear | [six_xclear.md](organizations/six_xclear.md) | **Completed** (2026-04-07) |
-| Euroclear | [euroclear.md](organizations/euroclear.md) | **Completed** (2026-04-07) |
-| Clearstream | [clearstream.md](organizations/clearstream.md) | **Completed** (2026-04-07) |
-| CSDC | [csdc.md](organizations/csdc.md) | **Completed** (2026-04-07) |
-| CCIL | [ccil.md](organizations/ccil.md) | **Completed** (2026-04-07) |
-| CDS Canada | [cds_canada.md](organizations/cds_canada.md) | **Completed** (2026-04-07) |
-| Muqassa | [muqassa.md](organizations/muqassa.md) | **Completed** (2026-04-07) |
+| SIX x-clear | [six_xclear](organizations/six_xclear.qmd) | **Completed** (2026-04-07) |
+| Euroclear | [euroclear](organizations/euroclear.qmd) | **Completed** (2026-04-07) |
+| Clearstream | [clearstream](organizations/clearstream.qmd) | **Completed** (2026-04-07) |
+| CSDC | [csdc](organizations/csdc.qmd) | **Completed** (2026-04-07) |
+| CCIL | [ccil](organizations/ccil.qmd) | **Completed** (2026-04-07) |
+| CDS Canada | [cds_canada](organizations/cds_canada.qmd) | **Completed** (2026-04-07) |
+| Muqassa | [muqassa](organizations/muqassa.qmd) | **Completed** (2026-04-07) |
 
 ### Systems Deep-Dives
 | System | File | Status |
 |--------|------|--------|
-| DTCC Systems (NSCC CNS, FICC GSD/MBSD, DTC, Project Ion) | [dtcc_systems.md](systems/dtcc_systems.md) | **Completed** (2026-04-07) |
-| LCH Systems (SwapClear, ForexClear, RepoClear, CDSClear) | [lch_systems.md](systems/lch_systems.md) | **Completed** (2026-04-07) |
-| Eurex Clearing Prisma Margin Methodology | [eurex_clearing_prisma.md](systems/eurex_clearing_prisma.md) | **Completed** (2026-04-07) |
+| DTCC Systems (NSCC CNS, FICC GSD/MBSD, DTC, Project Ion) | [dtcc_systems](systems/dtcc_systems.qmd) | **Completed** (2026-04-07) |
+| LCH Systems (SwapClear, ForexClear, RepoClear, CDSClear) | [lch_systems](systems/lch_systems.qmd) | **Completed** (2026-04-07) |
+| Eurex Clearing Prisma Margin Methodology | [eurex_clearing_prisma](systems/eurex_clearing_prisma.qmd) | **Completed** (2026-04-07) |
 
 ### Regulatory Analysis
 | Topic | File | Status |
 |-------|------|--------|
-| U.S. Clearing Regulation (Dodd-Frank Title VII/VIII, SEC Rule 17Ad-22, Treasury Clearing Mandate) | [us_clearing_regulation.md](regulations/us_clearing_regulation.md) | **Completed** (2026-04-07) |
-| EU Clearing Regulation (EMIR, CSDR, CCP RRR, EMIR 3.0) | [eu_clearing_regulation.md](regulations/eu_clearing_regulation.md) | **Completed** (2026-04-07) |
-| Asia Clearing Regulation (Japan, Hong Kong, Singapore, China, India, Australia) | [asia_clearing_regulation.md](regulations/asia_clearing_regulation.md) | **Completed** (2026-04-07) |
+| U.S. Clearing Regulation (Dodd-Frank Title VII/VIII, SEC Rule 17Ad-22, Treasury Clearing Mandate) | [us_clearing_regulation](regulations/us_clearing_regulation.qmd) | **Completed** (2026-04-07) |
+| EU Clearing Regulation (EMIR, CSDR, CCP RRR, EMIR 3.0) | [eu_clearing_regulation](regulations/eu_clearing_regulation.qmd) | **Completed** (2026-04-07) |
+| Asia Clearing Regulation (Japan, Hong Kong, Singapore, China, India, Australia) | [asia_clearing_regulation](regulations/asia_clearing_regulation.qmd) | **Completed** (2026-04-07) |

@@ -384,7 +384,7 @@ NSE는 데이터센터에서 코로케이션 서비스를 제공하여 거래 �
 | 은 | 표준, 미니, 마이크로 |
 | Brent Crude Oil | 표준 |
 | WTI Crude Oil | 표준, 미니 |
-| Platts Dated Brent (2026년 4월 예정) | 표준 |
+| Platts Dated Brent (2026년 상반기 도입) | 표준 |
 
 [Source: [NSE — Equity Derivatives](https://www.nseindia.com/static/products-services/equity-derivatives-nifty50); [NSE — Currency Derivatives Contract Specs](https://www.nseindia.com/static/products-services/currency-derivatives-contract-specification-inr); [NSE — Interest Rate Futures](https://www.nseindia.com/market-data/bond-market-futures); [Groww — NSE Adds 45 New Stocks to F&O](https://groww.in/blog/nse-adds-45-new-stocks-to-the-fo-list); [NSE Clearing — Commodity Derivatives](https://www.nseclearing.in/clearing-settlement/commodity-derivatives)]
 

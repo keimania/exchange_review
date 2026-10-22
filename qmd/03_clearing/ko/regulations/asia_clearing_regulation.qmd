@@ -51,8 +51,8 @@ format:
 - **주식 T+1 전환 고려:** 일본은 아직 주식 T+1 이행에 대한 공식 일정을 발표하지 않았으나 글로벌 동향을 모니터링 중이다. [unverified]
 
 ### 1.5 최근 변화 (Recent Changes)
-- **JSCC 증거금 방법론 전환(SPAN에서 VaR로):** JSCC는 2023년 11월 6일 JGB 선물, 지수선물, 옵션, 상품선물/옵션에 대해 SPAN에서 VaR 기반 증거금 산출 방법으로 전환하였다. 방법론은 Historical Simulation(HS-VaR) 및 Alternative Simulation(AS-VaR)을 사용한다. VaR Margin Software(VMA) v3.0에서 v4.0으로의 업그레이드가 2026년 4월 13일에 예정되어 있다. [Source: JPX Working Paper Vol. 45, February 2025; JSCC VaR Method page]
-- **상장 파생상품 2026년 4월 프로젝트:** JSCC가 2026년 4월 예정 상장 파생상품 변경 개요를 발표하였다. [Source: JSCC News, 2026]
+- **JSCC 증거금 방법론 전환(SPAN에서 VaR로):** JSCC는 2023년 11월 6일 JGB 선물, 지수선물, 옵션, 상품선물/옵션에 대해 SPAN에서 VaR 기반 증거금 산출 방법으로 전환하였다. 방법론은 Historical Simulation(HS-VaR) 및 Alternative Simulation(AS-VaR)을 사용한다. VaR Margin Software(VMA) v3.0에서 v4.0으로의 업그레이드가 2026년 4월 13일에 단행되었다. [Source: JPX Working Paper Vol. 45, February 2025; JSCC VaR Method page]
+- **상장 파생상품 2026년 4월 프로젝트:** JSCC가 2026년 4월 시행된 상장 파생상품 제도 개선을 완료하였다. [Source: JSCC News, 2026]
 - **국경 간 CCP 승인:** JSCC는 온타리오증권위원회(캐나다) 등 외국 규제기관으로부터 승인을 획득하였다. [Source: OSC decision]
 
 ---

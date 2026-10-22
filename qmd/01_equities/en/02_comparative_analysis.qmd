@@ -417,8 +417,8 @@ ESG reporting and sustainability are becoming universal exchange requirements:
 ### 9.7 24-Hour Trading Ambitions
 
 Multiple exchanges are exploring extended or round-the-clock trading:
-- **NASDAQ:** Plans for 24/5 trading (pending SEC approval, H2 2026 target)
-- **NYSE Arca:** SEC approved 22-hour trading; implementation targeted late 2026
+- **NASDAQ:** 23-hour trading session deployed (including 9:00 PM - 4:00 AM ET night trading) providing 24/5 liquidity
+- **NYSE Arca:** SEC approved 22-hour trading with phased operational rollout
 - **JSE:** Reported to be considering 24-hour trading (July 2025)
 - This trend reflects the globalization of capital flows and competition from crypto markets that trade 24/7
 
