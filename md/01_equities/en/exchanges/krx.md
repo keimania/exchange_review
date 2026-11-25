@@ -1,8 +1,6 @@
 # Korea Exchange (KRX)
 
-> **Last Updated:** 2026-04-13
-> **Research Tier:** Tier 1
-> **Domain:** Equities
+> **Date:** 2026-11-24
 
 ---
 
@@ -42,6 +40,9 @@
 - **2025 (March):** Nextrade (NXT) launched as Korea's first alternative exchange, ending KRX monopoly
 - **2025 (December):** KRX introduces maker-taker fee model (first fee change in 20 years)
 - **2026 (February):** KOSPI reaches 6,000 milestone
+- **2026 (March):** Central National Short-sale Detecting System (NSDS) enters full operation to eliminate naked short selling
+- **2026 (April):** Implementation of split settlement in KRW 1B increments by KSD/KRX to mitigate settlement liquidity risks
+- **2026 (October):** Multi-venue SOR maturation against Nextrade ATS, adoption of Midpoint & Stop-Limit order types, and active T+1 transition roadmap formulation (as of October 20, 2026)
 
 ---
 
@@ -80,8 +81,9 @@
 | Post-market closing-price trading | 15:30 - 16:00 | 06:30 - 07:00 | Trades at closing price [업무규정 시행세칙 Art. 11] |
 | Post-market single-price trading (시간외단일가매매) | 16:00 - 18:00 | 07:00 - 09:00 | Call auction at 10-minute intervals; +/-10% of closing price [업무규정 Art. 34의2] |
 | Post-market block/basket trading | 15:40 - 18:00 | 06:40 - 09:00 | Off-hours block and basket trades |
+| **After-Market Trading (애프터마켓)** | **16:00 - 20:00** | **07:00 - 11:00** | **Extended equity & ETF trading session (up to 20:00 KST) in response to Nextrade ATS** |
 
-**Total trading window:** 08:00 - 18:00 KST (10 hours including off-hours sessions)
+**Total trading window:** 08:00 - 20:00 KST (12 hours including After-market session)
 
 [Source: 유가증권시장 업무규정 Art. 4; 업무규정 시행세칙 Art. 8, 11]
 
@@ -171,8 +173,8 @@
 | Priority | Rule | Detail |
 |----------|------|--------|
 | 1. Price priority (가격우선) | Art. 22②1 | Lower sell price > higher sell price; Higher buy price > lower buy price; Market orders have priority over limit orders |
-| 2. Time priority (시간우선) | Art. 22②2 | Same price: earlier submission takes priority |
-| 3. Simultaneous order rules | Art. 22③ | For call auctions: orders at limit-up (buys) or limit-down (sells) during price determination treated as simultaneous |
+| 2. Time priority (시간우선) | Art. 22②2 | Same price: earlier submission takes priority (**applies to both continuous trading and standard single-price call auctions**) |
+| 3. Simultaneous order rules (동시호가 특례) | Art. 22③, 시행세칙 Art. 34 | Exception for call auctions **ONLY when determined at limit-up (limit-up buys) or limit-down (limit-down sells)**: time priority waived and allocated by staged quantity priority (100x trading unit → 1/2 remainder → remainder) |
 
 ---
 
@@ -365,10 +367,10 @@
 
 | Type | Trigger | Duration |
 |------|---------|----------|
-| **Static VI** — KOSPI 200 constituents | **3%** from last call auction price (reference price) | 2-minute call auction + random 30-sec close |
-| **Static VI** — Other stocks/ETF/ETN | **6%** from reference price | 2-minute call auction + random 30-sec close |
-| **Static VI** — During closing auction | Thresholds halved: 2% (KOSPI 200) / 4% (others); **1%** on derivatives last trading day | 2-minute call auction |
-| **Dynamic VI** — All equities/ETF/ETN | **10%** from last trade price | 2-minute call auction + random 30-sec close |
+| **Dynamic VI (동적VI)** — KOSPI 200 constituents | **3%** from last trade price (직전의 가격) | 2-minute call auction + random 30-sec close |
+| **Dynamic VI (동적VI)** — Other stocks/ETF/ETN | **6%** from last trade price (직전의 가격) | 2-minute call auction + random 30-sec close |
+| **Dynamic VI (동적VI)** — During closing auction | **2%** (KOSPI 200) / **4%** (others); **1%** on derivatives final trading day | 2-minute call auction extension + random 30-sec close |
+| **Static VI (정적VI)** — All equities/ETF/ETN | **10%** from last single-price call auction price (or base price before opening) | 2-minute call auction + random 30-sec close |
 
 **VI Exceptions:** Delisting trading, short-term overheated stocks, abnormal surge stocks, cautionary stocks, IPO day stocks, prices within 3 tick sizes of prior price for stocks below KRW 1,000.
 
@@ -520,8 +522,8 @@ First fee structure change in 20 years; initially a 2-month trial, introduced in
 - **Self-trade prevention:** Made mandatory for HFT participants
 
 ### Strategic Initiatives
-- **Extended trading hours:** Plan for 12-hour trading; pre-market 07:00-08:00, after-hours 16:00-20:00; targeting 24-hour trading by December 2027
-- **ETF pre/after-market trading:** September 2026 launch for KRX; November for NXT
+- **Extended trading hours (After-Market launched):** Implemented After-market extended trading (16:00–20:00 KST) for equities and ETFs in 2026 to establish 12-hour dual-venue parity against Nextrade ATS, with a multi-year roadmap targeting 24-hour trading capability by Dec 2027
+- **ETF pre/after-market trading:** September 2026 operationalized for KRX; November integrated for NXT
 - **T+1 settlement study:** KRX inspecting North America's T+1 experience (WFE CLEAR 2026 conference, Toronto); concerns about foreign investor time zone challenges
 - **KOSPI milestones:** 3,549 (Oct 2025), 4,000 (Oct 2025), 5,000 (Jan 2026), 6,000 (Feb 2026)
 

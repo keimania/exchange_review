@@ -1,7 +1,7 @@
 ---
 title: "Global Exchange Research Portal"
 subtitle: "KRX IT 부서를 위한 글로벌 60개 거래소·청산기관 인프라 비교 조사 & 벤치마킹"
-date: "2026-10-20"
+date: "2026-11-24"
 toc: false
 sidebar: false
 page-layout: full
@@ -45,14 +45,15 @@ format:
     <div class="hero-stat-lbl">차세대 매매·청산 엔진</div>
   </div>
   <div class="hero-stat-item">
-    <div class="hero-stat-val">403</div>
-    <div class="hero-stat-lbl">한/영 대역 전문 용어집</div>
+    <div class="hero-stat-val">420</div>
+    <div class="hero-stat-lbl">대화형 한/영 전문 용어집</div>
   </div>
 </div>
 </div>
 
 <div class="quick-action-bar">
   <span class="quick-action-title">🔥 빠른 바로가기:</span>
+  <a href="qmd/analytics/auction_simulator.html" class="action-chip featured">🔬 경매·크로스 시뮬레이터</a>
   <a href="qmd/analytics/comparator.html" class="action-chip featured">⚖️ 거래소 맞춤 비교기</a>
   <a href="qmd/analytics/trading_hours.html" class="action-chip featured">⏱️ 24시간 세션 타임라인</a>
   <a href="qmd/analytics/engine_benchmark.html" class="action-chip featured">⚡ 매매엔진 벤치마크</a>
@@ -63,31 +64,37 @@ format:
   <a href="qmd/02_derivatives/ko/exchanges/cme_group.html" class="action-chip">⚡ CME Group</a>
   <a href="qmd/03_clearing/ko/organizations/dtcc.html" class="action-chip">🛡️ DTCC (T+1)</a>
   <a href="qmd/reference/ko/final_review.html" class="action-chip">🎯 종합 벤치마킹 리포트</a>
-  <a href="qmd/reference/glossary_ko.html" class="action-chip">📖 406개 용어사전</a>
+  <a href="qmd/reference/glossary_ko.html" class="action-chip">📖 420개 대화형 용어집</a>
 </div>
 
 <div class="analytics-callout-banner" style="background: linear-gradient(135deg, #1e1b4b 0%, #1e3a8a 100%); color: #ffffff; padding: 1.25rem 1.75rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; box-shadow: var(--shadow-sm);">
   <div>
-    <div style="font-size: 0.82rem; font-weight: 700; color: #93c5fd; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">✨ NEW INTERACTIVE VISUALIZATIONS</div>
-    <div style="font-size: 1.15rem; font-weight: 800;">글로벌 거래소 맞춤 비교기 & 24시간 세션 타임라인 신규 탑재</div>
-    <div style="font-size: 0.88rem; color: #cbd5e1; margin-top: 0.25rem;">16대 거래소 1:1 비교, 아시아-유럽-미국 24h 유동성 중첩 및 12대 체결엔진 성능 벤치마크를 직접 조작해보세요.</div>
+    <div style="font-size: 0.82rem; font-weight: 700; color: #93c5fd; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">✨ INTERACTIVE VISUAL ANALYTICS &amp; SIMULATOR SUITE</div>
+    <div style="font-size: 1.15rem; font-weight: 800;">개·폐장 크로스/단일가 경매 시뮬레이터 · 거래소 맞춤 비교기 · 24h 타임라인 · 엔진 벤치마크</div>
+    <div style="font-size: 0.88rem; color: #cbd5e1; margin-top: 0.25rem;">NASDAQ 4단계 합치가격·OIO 시뮬레이션, KRX 단일가(시간우선 vs 상한가 동시호가) 검증, 16대 거래소 비교 및 24h 세션을 직접 조작해 보세요.</div>
   </div>
   <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-    <a href="qmd/analytics/comparator.html" class="btn btn-sm btn-light" style="font-weight: 700; color: #1e3a8a; padding: 0.5rem 0.9rem; border-radius: 6px;">⚖️ 거래소 비교기</a>
+    <a href="qmd/analytics/auction_simulator.html" class="btn btn-sm btn-light" style="font-weight: 700; color: #1e3a8a; padding: 0.5rem 0.9rem; border-radius: 6px;">🔬 경매 시뮬레이터</a>
+    <a href="qmd/analytics/comparator.html" class="btn btn-sm btn-outline-light" style="font-weight: 700; padding: 0.5rem 0.9rem; border-radius: 6px;">⚖️ 거래소 비교기</a>
     <a href="qmd/analytics/trading_hours.html" class="btn btn-sm btn-outline-light" style="font-weight: 700; padding: 0.5rem 0.9rem; border-radius: 6px;">⏱️ 세션 타임라인</a>
     <a href="qmd/analytics/engine_benchmark.html" class="btn btn-sm btn-outline-light" style="font-weight: 700; padding: 0.5rem 0.9rem; border-radius: 6px;">⚡ 엔진 벤치마크</a>
   </div>
 </div>
 
 <div class="filter-container">
-  <span style="font-size: 0.88rem; font-weight: 700; color: #475569; margin-right: 0.25rem;">🔍 카드 빠른 검색:</span>
-  <input type="text" id="cardFilterInput" class="search-input-inline" placeholder="거래소명, 국가, 매매시스템, 용어 검색 (예: KRX, CME, 일본, T7, 용어집)..." onkeyup="filterCards()">
+  <span style="font-size: 0.88rem; font-weight: 700; color: var(--text-muted); margin-right: 0.25rem;">🔍 통합 빠른 검색:</span>
+  <div style="position: relative; flex: 1; min-width: 230px; max-width: 390px;">
+    <input type="text" id="cardFilterInput" class="search-input-inline" style="max-width: 100%; width: 100%; padding-right: 2.2rem;" placeholder="거래소명, 국가, 매매시스템, 규제 검색 (단축키: / )..." oninput="filterCards()">
+    <button type="button" id="cardSearchClearBtn" onclick="clearCardSearch()" style="display:none; position:absolute; right:0.55rem; top:50%; transform:translateY(-50%); border:none; background:#e2e8f0; color:#334155; width:20px; height:20px; border-radius:50%; font-size:0.72rem; font-weight:800; cursor:pointer;">✕</button>
+  </div>
   <button class="filter-btn active" onclick="setQuickFilter('all', this)">전체 보기</button>
+  <button class="filter-btn" onclick="setQuickFilter('tier1', this)">⭐ Tier 1 핵심</button>
   <button class="filter-btn" onclick="setQuickFilter('kr', this)">🇰🇷 한국</button>
   <button class="filter-btn" onclick="setQuickFilter('us', this)">🇺🇸 미국/북미</button>
   <button class="filter-btn" onclick="setQuickFilter('asia', this)">🌏 아시아</button>
   <button class="filter-btn" onclick="setQuickFilter('eu', this)">🇪🇺 유럽</button>
   <button class="filter-btn" onclick="setQuickFilter('reference', this)">📚 벤치마킹·용어</button>
+  <span id="portalMatchCounter" style="font-size: 0.82rem; font-weight: 700; color: var(--text-muted); margin-left: auto;"></span>
 </div>
 ```
 
@@ -1644,12 +1651,100 @@ format:
 </div>
 ```
 
+## 📊 인터랙티브 분석 (Analytics)
+
+```{=html}
+<div class="domain-banner">
+  <p class="domain-banner-text">
+    🔬 <strong>4종 대화형 분석 &amp; 시뮬레이션 도구</strong> — 경매·크로스 엔진, 맞춤 비교기, 24시간 타임라인, 매매엔진 성능 벤치마크
+  </p>
+  <div class="domain-banner-links">
+    <a href="qmd/analytics/index.html" class="btn-dual btn-dual-ko">📊 분석 허브 전체 보기</a>
+  </div>
+</div>
+
+<div class="exchange-grid" id="analyticsGrid">
+  <div class="ex-card featured-card" data-region="all kr us asia eu global reference" data-keyword="경매 크로스 단일가 시뮬레이터 auction cross simulator nasdaq opening closing cross noii oio moo loo krx 동시호가 시간우선 수량배분 상한가">
+    <div>
+      <div class="ex-card-top">
+        <span class="ex-card-flag">🔬</span>
+        <span class="ex-card-badge">NEW 시뮬레이터</span>
+      </div>
+      <div class="ex-card-title">개·폐장 크로스 &amp; 단일가 시뮬레이터</div>
+      <div class="ex-card-subtitle">Interactive Call Auction &amp; Cross Lab</div>
+      <div class="ex-card-meta">
+        • NASDAQ 4단계 합치가격 타이브레이킹 &amp; OIO Cap 실시간 계산<br>
+        • KRX 일반 단일가(시간우선) vs 상한가(동시호가 수량배분) 직접 비교<br>
+        • 사용자 주문 추가·삭제 실시간 시뮬레이션
+      </div>
+    </div>
+    <div class="ex-card-actions">
+      <a href="qmd/analytics/auction_simulator.html" class="btn-dual btn-dual-ko">🔬 시뮬레이터 실행</a>
+    </div>
+  </div>
+
+  <div class="ex-card featured-card" data-region="all kr us asia eu global reference" data-keyword="거래소 맞춤 비교기 comparator krx nextrade nyse nasdaq jpx hkex eurex cme dtcc 스펙 비교">
+    <div>
+      <div class="ex-card-top">
+        <span class="ex-card-flag">⚖️</span>
+        <span class="ex-card-badge">맞춤 교차 비교</span>
+      </div>
+      <div class="ex-card-title">글로벌 거래소 맞춤 비교기</div>
+      <div class="ex-card-subtitle">1:1 &amp; Multi-Venue Comparator</div>
+      <div class="ex-card-meta">
+        • 16대 핵심 거래소·청산소 자유 선택 교차 비교<br>
+        • KRX vs 넥스트레이드(NXT) 등 원클릭 프리셋 &amp; 차이점 강조
+      </div>
+    </div>
+    <div class="ex-card-actions">
+      <a href="qmd/analytics/comparator.html" class="btn-dual btn-dual-ko">⚖️ 비교기 실행</a>
+    </div>
+  </div>
+
+  <div class="ex-card featured-card" data-region="all kr us asia eu global reference" data-keyword="24시간 매매세션 타임라인 trading hours timeline gantt kst utc 야간거래 애프터마켓 프리마켓">
+    <div>
+      <div class="ex-card-top">
+        <span class="ex-card-flag">⏱️</span>
+        <span class="ex-card-badge">실시간 간트 차트</span>
+      </div>
+      <div class="ex-card-title">24시간 글로벌 매매세션 타임라인</div>
+      <div class="ex-card-subtitle">Global 24h Trading Sessions</div>
+      <div class="ex-card-meta">
+        • KST / UTC / ET / CET 기준 12대 시장 24h 유동성 중첩 시각화<br>
+        • 실시간 현재 시각 인디케이터 및 개장/폐장 상태 자동 표시
+      </div>
+    </div>
+    <div class="ex-card-actions">
+      <a href="qmd/analytics/trading_hours.html" class="btn-dual btn-dual-ko">⏱️ 타임라인 열기</a>
+    </div>
+  </div>
+
+  <div class="ex-card featured-card" data-region="all kr us asia eu global reference" data-keyword="매매엔진 성능 벤치마크 밸류체인 engine benchmark latency exture inet pillar t7 arrowhead 다이어그램">
+    <div>
+      <div class="ex-card-top">
+        <span class="ex-card-flag">⚡</span>
+        <span class="ex-card-badge">아키텍처 &amp; 지연시간</span>
+      </div>
+      <div class="ex-card-title">매매엔진 성능 &amp; 밸류체인 벤치마크</div>
+      <div class="ex-card-subtitle">Engine Latency &amp; Post-Trade Architecture</div>
+      <div class="ex-card-meta">
+        • Exture 3.0 포함 12대 엔진 마이크로초(μs) 로그/선형 차트<br>
+        • 한·미·유럽·일 4대 시장 매매→청산→결제 End-to-End 구조도
+      </div>
+    </div>
+    <div class="ex-card-actions">
+      <a href="qmd/analytics/engine_benchmark.html" class="btn-dual btn-dual-ko">⚡ 벤치마크 보기</a>
+    </div>
+  </div>
+</div>
+```
+
 ## 📚 벤치마킹 & 용어집 (Reference)
 
 ```{=html}
 <div class="domain-banner">
   <p class="domain-banner-text">
-    🎯 <strong>KRX IT 벤치마킹</strong> 핵심 제언 리포트 및 <strong>403개 한/영 대역 전문 용어사전</strong>
+    🎯 <strong>KRX IT 벤치마킹</strong> 핵심 제언 리포트 및 <strong>420개 대화형 한/영 전문 용어사전</strong>
   </p>
 </div>
 
@@ -1667,7 +1762,7 @@ format:
       <div class="ex-card-meta">
         • 3대 시장(주식-파생-청산) 생태계 맵 총괄 정리<br>
         • 글로벌 거래소 인프라 트렌드와 KRX IT 시스템 고도화 권고사항<br>
-        • 품질 검증 및 60개 기관 비교 요약
+        • 2026년 11월 최신 규제·인프라 업데이트 반영
       </div>
     </div>
     <div class="ex-card-actions">
@@ -1677,17 +1772,17 @@ format:
   </div>
 
   <!-- Glossary KO -->
-  <div class="ex-card featured-card" data-region="all kr us asia eu global reference" data-keyword="한영 대역 금융 it 전문 용어집 용어사전 glossary bilingual dictionary 403개 406개 표제어 용어 매매 trading 청산 clearing 결제 settlement 규제 regulation it 기술 용어 약어 약어사전 한국 미국 유럽 아시아 글로벌 reference">
+  <div class="ex-card featured-card" data-region="all kr us asia eu global reference" data-keyword="한영 대역 금융 it 전문 용어집 용어사전 glossary bilingual dictionary 420개 표제어 용어 매매 trading 청산 clearing 결제 settlement 규제 regulation it 기술 용어 약어 약어사전 한국 미국 유럽 아시아 글로벌 reference">
     <div>
       <div class="ex-card-top">
         <span class="ex-card-flag">📖</span>
-        <span class="ex-card-badge">403개 표제어 수록</span>
+        <span class="ex-card-badge">420개 대화형 검색</span>
       </div>
-      <div class="ex-card-title">한영 대역 금융/IT 전문 용어집</div>
-      <div class="ex-card-subtitle">Bilingual Glossary (English / Korean)</div>
+      <div class="ex-card-title">대화형 한영 금융/IT 전문 용어집</div>
+      <div class="ex-card-subtitle">Interactive Bilingual Glossary (EN / KO)</div>
       <div class="ex-card-meta">
-        • 매매(Trading), 청산(Clearing), 규제(Regulation), IT 기술 용어 총망라<br>
-        • 영문 표제어, 표준 한국어 대역어, 정의 및 KRX 실무 참고사항 완벽 수록
+        • 실시간 키워드 하이라이트 검색, 범주별 탭, KRX 필터, A~Z 탐색기 탑재<br>
+        • 영문·국문 420개 표제어 1:1 동기화 및 KRX 규정 조항 완벽 반영
       </div>
     </div>
     <div class="ex-card-actions">
@@ -1704,72 +1799,124 @@ format:
 ```{=html}
 <script>
 let currentRegion = 'all';
+let baseTabLabels = [];
+
+function initPortalTabs() {
+  const tabLinks = Array.from(document.querySelectorAll('.panel-tabset .nav-tabs .nav-link'));
+  baseTabLabels = tabLinks.map(a => a.textContent.trim());
+  applyCardFilters(false);
+}
+
+function clearCardSearch() {
+  const input = document.getElementById('cardFilterInput');
+  if (input) {
+    input.value = '';
+    input.focus();
+  }
+  applyCardFilters(false);
+}
 
 function filterCards() {
   const query = (document.getElementById('cardFilterInput').value || '').toLowerCase().trim();
-  
-  // If user types a search query while a specific regional filter is active, 
-  // automatically reset to 'all' so the search finds matches across all domains
   if (query.length > 0 && currentRegion !== 'all' && currentRegion !== 'reference') {
     currentRegion = 'all';
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     const allBtn = document.querySelector(".filter-btn[onclick*=\"'all'\"]");
     if (allBtn) allBtn.classList.add('active');
   }
-  
-  applyCardFilters();
+  applyCardFilters(true);
 }
 
 function setQuickFilter(region, btn) {
   currentRegion = region;
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
-  
   document.getElementById('cardFilterInput').value = '';
-  applyCardFilters();
+  applyCardFilters(true);
 }
 
-function applyCardFilters() {
-  const query = (document.getElementById('cardFilterInput').value || '').toLowerCase().trim();
+function applyCardFilters(allowAutoTabSwitch) {
+  const input = document.getElementById('cardFilterInput');
+  const clearBtn = document.getElementById('cardSearchClearBtn');
+  const counterEl = document.getElementById('portalMatchCounter');
+  const query = (input ? input.value : '').toLowerCase().trim();
   const region = currentRegion || 'all';
-  const cards = document.querySelectorAll('.ex-card');
+
+  if (clearBtn) clearBtn.style.display = query ? 'block' : 'none';
+
+  const cards = document.querySelectorAll('.ex-card, .system-card');
+  let totalVisible = 0;
 
   cards.forEach(card => {
+    const isSystemCard = card.classList.contains('system-card');
     const text = card.textContent.toLowerCase();
     const keywords = (card.getAttribute('data-keyword') || '').toLowerCase();
     const cardRegions = (card.getAttribute('data-region') || '').toLowerCase();
-
-    // Universal / reference cards that should stay accessible under all regional views
-    const isUniversal = cardRegions.includes('global') || 
-                        cardRegions.includes('reference') || 
-                        cardRegions.includes('all');
+    const isUniversal = cardRegions.includes('global') || cardRegions.includes('reference') || cardRegions.includes('all');
+    const isTier1 = card.classList.contains('featured-card') || text.includes('tier 1');
 
     let matchesRegion = false;
     if (region === 'all') {
       matchesRegion = true;
+    } else if (region === 'tier1') {
+      matchesRegion = isTier1;
     } else if (region === 'reference') {
-      matchesRegion = isUniversal;
+      matchesRegion = isUniversal && !isSystemCard;
     } else {
-      // Matches specific region OR universal reference cards
-      matchesRegion = cardRegions.includes(region) || isUniversal;
+      matchesRegion = isSystemCard ? (query.length > 0) : (cardRegions.includes(region) || isUniversal);
     }
 
     const matchesQuery = !query || text.includes(query) || keywords.includes(query);
 
     if (matchesRegion && matchesQuery) {
       card.style.display = 'flex';
+      totalVisible++;
     } else {
       card.style.display = 'none';
     }
   });
+
+  // Update per-tab badge counts and auto-switch if active tab has 0 results during search
+  const tabLinks = Array.from(document.querySelectorAll('.panel-tabset .nav-tabs .nav-link'));
+  const tabPanes = Array.from(document.querySelectorAll('.panel-tabset .tab-content > .tab-pane'));
+
+  if (tabLinks.length === tabPanes.length && baseTabLabels.length === tabLinks.length) {
+    let activeIdx = tabLinks.findIndex(a => a.classList.contains('active'));
+    let firstMatchIdx = -1;
+    const paneCounts = tabPanes.map((pane, idx) => {
+      const visibleInPane = Array.from(pane.querySelectorAll('.ex-card, .system-card'))
+        .filter(c => c.style.display !== 'none').length;
+      if (visibleInPane > 0 && firstMatchIdx === -1) firstMatchIdx = idx;
+      tabLinks[idx].textContent = (query || region !== 'all')
+        ? `${baseTabLabels[idx]} (${visibleInPane})`
+        : baseTabLabels[idx];
+      return visibleInPane;
+    });
+
+    if (allowAutoTabSwitch && (query || region === 'reference') && activeIdx >= 0 && paneCounts[activeIdx] === 0 && firstMatchIdx >= 0) {
+      tabLinks[firstMatchIdx].click();
+    }
+  }
+
+  if (counterEl) {
+    counterEl.textContent = (query || region !== 'all')
+      ? `검색 결과: ${totalVisible}개 항목`
+      : `전체 ${totalVisible}개 리포트·도구`;
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPortalTabs);
+} else {
+  initPortalTabs();
 }
 </script>
 
 ---
 
-<div style="text-align: center; color: #64748b; font-size: 0.9rem; padding: 2rem 0;">
+<div style="text-align: center; color: var(--text-muted); font-size: 0.9rem; padding: 2rem 0;">
   <strong>Global Exchange Infrastructure Research</strong> · prepared for KRX IT Department<br>
-  최종 현행화: 2026-10-20 (2026 Q4 정기 현행화 완료) | 총 60개 기관 인프라 분석 보고서
+  최종 현행화: 2026-11-24 (2026 Q4 최신화 및 대화형 UI 고도화 완료) | 총 61개 기관·ATS 인프라 분석 &amp; 420개 전문 용어집
 </div>
 ```
 

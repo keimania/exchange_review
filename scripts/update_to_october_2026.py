@@ -12,7 +12,7 @@ import re
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
-TARGET_DATE = "2026-10-20"
+TARGET_DATE = "2026-11-24"
 
 def update_file(file_path: Path) -> bool:
     content = file_path.read_text(encoding="utf-8")

@@ -1,7 +1,7 @@
 ---
 title: "Nextrade (NXT, 넥스트레이드)"
 subtitle: "주식시장 > 대체거래소 (ATS)"
-date: "2026-10-20"
+date: "2026-11-24"
 lang: ko
 toc: true
 toc-depth: 3
@@ -18,7 +18,7 @@ format:
   <div class="doc-header-left">
     <span class="doc-badge category">📁 주식시장 &gt; 대체거래소(ATS) 한국어 리포트</span>
     <span class="doc-badge tier">⭐ TIER 1 자본시장 인프라</span>
-    <span class="doc-badge date">📅 2026-10-20</span>
+    <span class="doc-badge date">📅 2026-11-24</span>
   </div>
   <div class="doc-header-right">
     <a href="../../en/exchanges/nextrade.html" class="doc-lang-btn">🌐 Read in English</a>
@@ -122,11 +122,10 @@ format:
 |----------|----------|-------------|--------------|
 | **일반 지정가호가** | Limit Order | 가격과 수량을 지정하여 주문장에 등록 | KRX 기본 호가 |
 | **시장가호가** | Market Order | 수량만 지정하여 최우선 상대호가와 즉시 체결 | KRX 기본 호가 |
-| **중간가 호가** | **Midpoint Order** | 최우선 매수호가와 매도호가의 정중앙 가격(NBBO Midpoint)으로 자동 체결되는 비표시/개선 호가 | KRX 추후 도입 (2025.2) |
-| **스톱지정가 호가** | **Stop-Limit Order** | 시장 가격이 투자자가 사전에 설정한 감시가격(Trigger Price)에 도달하면 지정가호가로 활성화 | KRX 추후 도입 (2025.2) |
-| **조건부지정가호가** | Conditional Limit | 매매시간 중 지정가로 체결되지 않을 경우 마감 시점 시장가로 자동 전환 | KRX 기본 호가 |
-| **최유리지정가호가** | Best Limit | 자기 방향 최우선 호가 가격으로 자동 정정 제출 | KRX 기본 호가 |
-| **최우선지정가호가** | Top of Book Limit | 상대 방향 최우선 호가 가격으로 즉시 제출 | KRX 기본 호가 |
+| **중간가 호가** | **Midpoint Order** | 최우선 매수호가와 매도호가의 정중앙 가격(BBO Midpoint)으로 자동 체결되는 가격 개선 호가 | KRX 동시 도입 (2025.3) |
+| **스톱지정가 호가** | **Stop-Limit Order** | 시장 현재가가 사전에 설정한 스톱가격(Trigger Price)에 도달하면 지정가호가로 활성화 | KRX 동시 도입 (2025.3) |
+| **최유리지정가호가** | Best Limit | **상대 방향 최우선호가 가격**(매수 시 최우선매도호가, 매도 시 최우선매수호가)으로 자동 지정 제출 | KRX 기본 호가 |
+| **최우선지정가호가** | Best Priority Limit | **자기 방향 최우선호가 가격**(매수 시 최우선매수호가, 매도 시 최우선매도호가)으로 자동 지정 제출 | KRX 기본 호가 |
 | **IOC (Immediate Or Cancel)** | Immediate-Or-Cancel | 즉시 체결 가능한 수량만 체결하고 잔여 수량은 자동 취소 | 공통 지원 |
 | **FOK (Fill Or Kill)** | Fill-Or-Kill | 주문 전량이 즉시 체결되지 않으면 전량 자동 취소 | 공통 지원 |
 

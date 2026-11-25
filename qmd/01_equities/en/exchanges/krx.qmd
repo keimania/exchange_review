@@ -1,7 +1,7 @@
 ---
 title: "Korea Exchange (KRX)"
 subtitle: "Equities > Exchanges"
-date: "2026-10-20"
+date: "2026-11-24"
 lang: en
 toc: true
 toc-depth: 3
@@ -18,7 +18,7 @@ format:
   <div class="doc-header-left">
     <span class="doc-badge category">📁 Equities &gt; English Research</span>
     <span class="doc-badge tier">⭐ TIER 1 Primary Source</span>
-    <span class="doc-badge date">📅 2026-10-20</span>
+    <span class="doc-badge date">📅 2026-11-24</span>
   </div>
   <div class="doc-header-right">
     <a href="../../ko/exchanges/krx.html" class="doc-lang-btn">🇰🇷 한국어 리포트 보기</a>
@@ -195,8 +195,8 @@ format:
 | Priority | Rule | Detail |
 |----------|------|--------|
 | 1. Price priority (가격우선) | Art. 22②1 | Lower sell price > higher sell price; Higher buy price > lower buy price; Market orders have priority over limit orders |
-| 2. Time priority (시간우선) | Art. 22②2 | Same price: earlier submission takes priority |
-| 3. Simultaneous order rules | Art. 22③ | For call auctions: orders at limit-up (buys) or limit-down (sells) during price determination treated as simultaneous |
+| 2. Time priority (시간우선) | Art. 22②2 | Same price: earlier submission takes priority (**applies to both continuous trading and standard single-price call auctions**) |
+| 3. Simultaneous order rules (동시호가 특례) | Art. 22③, 시행세칙 Art. 34 | Exception for call auctions **ONLY when determined at limit-up (limit-up buys) or limit-down (limit-down sells)**: time priority waived and allocated by staged quantity priority (100x trading unit → 1/2 remainder → remainder) |
 
 ---
 
@@ -389,10 +389,10 @@ format:
 
 | Type | Trigger | Duration |
 |------|---------|----------|
-| **Static VI** — KOSPI 200 constituents | **3%** from last call auction price (reference price) | 2-minute call auction + random 30-sec close |
-| **Static VI** — Other stocks/ETF/ETN | **6%** from reference price | 2-minute call auction + random 30-sec close |
-| **Static VI** — During closing auction | Thresholds halved: 2% (KOSPI 200) / 4% (others); **1%** on derivatives last trading day | 2-minute call auction |
-| **Dynamic VI** — All equities/ETF/ETN | **10%** from last trade price | 2-minute call auction + random 30-sec close |
+| **Dynamic VI (동적VI)** — KOSPI 200 constituents | **3%** from last trade price (직전의 가격) | 2-minute call auction + random 30-sec close |
+| **Dynamic VI (동적VI)** — Other stocks/ETF/ETN | **6%** from last trade price (직전의 가격) | 2-minute call auction + random 30-sec close |
+| **Dynamic VI (동적VI)** — During closing auction | **2%** (KOSPI 200) / **4%** (others); **1%** on derivatives final trading day | 2-minute call auction extension + random 30-sec close |
+| **Static VI (정적VI)** — All equities/ETF/ETN | **10%** from last single-price call auction price (or base price before opening) | 2-minute call auction + random 30-sec close |
 
 **VI Exceptions:** Delisting trading, short-term overheated stocks, abnormal surge stocks, cautionary stocks, IPO day stocks, prices within 3 tick sizes of prior price for stocks below KRW 1,000.
 

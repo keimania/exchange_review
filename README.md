@@ -1,12 +1,12 @@
 # Global Exchange Infrastructure Research
 
 KRX IT 부서를 위한 글로벌 거래소 인프라 비교 조사 프로젝트.
-주식, 파생상품, 청산/결제 3개 도메인에 걸쳐 60개 기관을 분석하고, 벤치마킹을 수행한다.
+주식, 파생상품, 청산/결제 3개 도메인에 걸쳐 61개 기관(넥스트레이드 ATS 포함)을 분석하고, 벤치마킹을 수행한다.
 
-> **A comprehensive, bilingual (English/Korean) research project analyzing 60 exchanges, CCPs, and CSDs across 20+ jurisdictions — with deep-dive benchmarking powered by official reference materials.**
+> **A comprehensive, bilingual (English/Korean) research project analyzing 61 exchanges, ATSs, CCPs, and CSDs across 20+ jurisdictions — with deep-dive benchmarking powered by official reference materials.**
 
 > 🌐 **웹 포털 (PC 및 모바일 브라우저 즉시 접속):** [https://keimania.github.io/exchange_review/](https://keimania.github.io/exchange_review/)  
-> *반응형 웹 UI, 실시간 전문 검색(Search), 180+ 심층 리포트 및 403개 용어집 포함*
+> *다크모드·집중모드 반응형 웹 UI, 실시간 전문 검색, 4종 인터랙티브 시뮬레이터·시각화 도구, 190+ 심층 리포트 및 420개 대화형 용어집 포함*
 
 ---
 
@@ -14,11 +14,12 @@ KRX IT 부서를 위한 글로벌 거래소 인프라 비교 조사 프로젝트
 
 | Item | Detail |
 |------|--------|
-| **Scope** | 23 equity exchanges, 17 derivatives exchanges, 20 clearing/settlement organizations |
+| **Scope** | 24 equity venues (incl. Nextrade ATS), 17 derivatives exchanges, 20 clearing/settlement organizations |
 | **Jurisdictions** | 20+ (North America, Europe, Asia-Pacific, Middle East, Africa) |
 | **Languages** | English (primary research) + Korean (full translation) |
-| **Glossary** | 403 terms (EN/KO bilingual, SQLite FTS indexed) |
-| **Research Period** | 2026-04-03 ~ 2026-04-17 |
+| **Glossary** | 420 terms (EN/KO 100% bilingual, A–Z sorted, SQLite FTS5 & Interactive Web Explorer) |
+| **Interactive Tools** | Exchange Comparator, 24h Global Session Gantt, Matching Engine Benchmark, Cross & Call Auction Simulator |
+| **Research Period** | 2026-04-03 ~ 2026-11-24 (Continuous Modernization) |
 
 ---
 
@@ -59,7 +60,7 @@ exchange_review/
 │   │   ├── en/
 │   │   │   ├── 01_overview.md
 │   │   │   ├── 02_comparative_analysis.md
-│   │   │   ├── exchanges/            # 23개 거래소 프로파일
+│   │   │   ├── exchanges/            # 24개 거래소·ATS 프로파일 (Nextrade 포함)
 │   │   │   ├── systems/              # 9개 매매시스템 심층분석
 │   │   │   └── regulations/          # 3개 규제 분석 (US, EU, Asia)
 │   │   ├── ko/                       # 한국어 번역 (동일 구조)
@@ -74,8 +75,8 @@ exchange_review/
 │   │   └── CLAUDE.md
 │   └── _common/                      # 공용 리소스
 │       ├── final_review.md           # 최종 검토 & KRX 벤치마킹
-│       ├── glossary_en.md            # 영어 용어집 (403 terms)
-│       ├── glossary_ko.md            # 한국어 용어집 (403 terms)
+│       ├── glossary_en.md            # 영어 용어집 (420 terms)
+│       ├── glossary_ko.md            # 한국어 용어집 (420 terms)
 │       ├── glossary.db               # SQLite FTS5 용어집 DB
 │       ├── RESEARCH_GUIDE.md
 │       ├── TRANSLATION_GUIDE.md
@@ -93,7 +94,13 @@ exchange_review/
 │   ├── 01_equities/en/ko/...         # 동일 계층 구조
 │   ├── 02_derivatives/en/ko/...
 │   ├── 03_clearing/en/ko/...
-│   └── reference/                    # 용어집 + 최종리뷰 QMD
+│   ├── analytics/                    # 인터랙티브 시각화 & 시뮬레이터 (4종)
+│   │   ├── index.qmd
+│   │   ├── comparator.qmd
+│   │   ├── trading_hours.qmd
+│   │   ├── engine_benchmark.qmd
+│   │   └── auction_simulator.qmd
+│   └── reference/                    # 대화형 용어집 + 최종리뷰 QMD
 │       ├── glossary_en.qmd
 │       ├── glossary_ko.qmd
 │       ├── final_review.qmd
@@ -106,7 +113,7 @@ exchange_review/
 │   └── _common/en/ko/
 │
 ├── docs/                             # HTML 웹사이트 (GitHub Pages 배포)
-│   └── ... (185개 HTML 파일)
+│   └── ... (192개 HTML 파일)
 │
 │─ ─ ─ ─ ─ ─ ─ ─  프로젝트 파일  ─ ─ ─ ─ ─ ─ ─ ─
 │
@@ -126,11 +133,11 @@ exchange_review/
 
 ## Exchanges & Organizations Covered
 
-### Equities (23 exchanges)
+### Equities (24 venues)
 
-| Tier | Exchanges |
+| Tier | Exchanges & ATS |
 |------|-----------|
-| **Tier 1** | NYSE, NASDAQ, LSE, JPX, HKEX, SGX, **KRX** |
+| **Tier 1** | NYSE, NASDAQ, LSE, JPX, HKEX, SGX, **KRX**, **Nextrade (NXT)** |
 | **Tier 2** | Euronext, Deutsche Borse, ASX, TMX, SIX Swiss |
 | **Tier 3** | SSE, SZSE, BSE, NSE India, TWSE, Borsa Italiana, BME, Nasdaq Nordic, Tadawul, JSE, Bursa Malaysia |
 
@@ -166,11 +173,11 @@ KRX 규정 원문 10개 파일(`00_references/krx/`)을 1차 자료로 활용하
 
 | 위치 | 포맷 | 수량 | 설명 |
 |------|------|------|------|
-| `md/` | `.md` | ~180 | Markdown 원본 소스 |
-| `qmd/` | `.qmd` | 184 | Quarto 변환본 (YAML 헤더 포함) |
-| `docx/` | `.docx` | 195 | Word 문서 변환본 |
-| `docs/` | `.html` | 185 | HTML 웹사이트 |
-| `md/_common/` | `.db` | 1 | SQLite 용어집 DB (FTS5) |
+| `md/` | `.md` | ~182 | Markdown 원본 소스 |
+| `qmd/` | `.qmd` | 192 | Quarto 변환본 및 인터랙티브 분석 모듈 (`index.qmd` 포함) |
+| `docx/` | `.docx` | 197 | Word 문서 변환본 |
+| `docs/` | `.html` | 192 | HTML 웹사이트 |
+| `md/_common/` | `.db` | 1 | SQLite 용어집 DB (FTS5, 420 terms) |
 | `00_references/krx/` | `.txt` | 10 | KRX 규정 원문 |
 
 ---
@@ -281,4 +288,4 @@ This research is prepared for internal use by KRX IT Department. All data is sou
 
 ---
 
-*최종 업데이트: 2026-04-17*
+*최종 업데이트: 2026-11-24*

@@ -1,8 +1,6 @@
 # NASDAQ Stock Market (NASDAQ)
 
-> **Last Updated:** 2026-04-03
-> **Research Tier:** Tier 1
-> **Domain:** Equities
+> **Date:** 2026-11-24
 
 ---
 
@@ -41,7 +39,7 @@
 - **2016:** Company rebranded as Nasdaq, Inc.
 - **2023:** Acquired Adenza (risk management and regulatory technology) for $10.5 billion.
 - **2024:** Launched Nasdaq Eqlipse, the fourth generation of its marketplace technology platform.
-- **2025:** Announced plans for 24-hour, 5-day-a-week trading (pending SEC approval, target launch H2 2026).
+- **2025–2026:** Rollout of 23-hour trading per weekday (including night session 9:00 PM – 4:00 AM ET) and 24/5 global trading infrastructure.
 - **2026 (March):** SEC approved Nasdaq proposal to allow certain stocks to be traded and settled in tokenized form.
 
 ---
@@ -64,7 +62,7 @@
 | Closing Cross | ~3:50 PM - 4:00 PM ET | ~20:50 - 21:00 UTC (EST) | Closing auction; single-price cross; ~16% of daily volume |
 | After-Hours | 4:00 PM - 8:00 PM ET | 21:00 - 01:00 UTC (EST) | Extended hours session; limited order types; lower liquidity |
 
-**Planned change (H2 2026, pending SEC approval):** Expansion to 23-hour trading per weekday. Day session 4:00 AM - 8:00 PM ET, 1-hour maintenance pause (8:00-9:00 PM), Night session 9:00 PM - 4:00 AM ET.
+**Extended Trading Hours (2026 operational status):** 23-hour trading architecture per weekday. Day session 4:00 AM – 8:00 PM ET, 1-hour maintenance pause (8:00–9:00 PM), Night session 9:00 PM – 4:00 AM ET.
 
 ### 2.3 Tick Sizes
 | Price Range | Tick Size |
@@ -89,25 +87,76 @@
 
 ## 3. Trading Mechanism
 
-### 3.1 Auction Mechanisms
-- **Opening Cross (9:30 AM ET):** Aggregates all pre-market orders and continuous book orders to determine a single opening price per security. The Net Order Imbalance Indicator (NOII) is disseminated prior to the cross, providing supply/demand transparency via Nasdaq TotalView. Fully electronic with no human intervention. Processes millions of orders in microseconds.
-- **Closing Cross (~4:00 PM ET):** Determines the official closing price for Nasdaq-listed securities. NOII disseminated beginning at 3:50 PM ET. Handles approximately 16% of daily Nasdaq volume. This price is used for mutual fund NAV calculations, index calculations, and settlement.
-- **IPO/Halt Cross:** Used for IPO price discovery and resumption of trading after halts. Separate NOII disseminated for imbalance information.
+### 3.1 Auction Mechanisms: Opening Cross & Closing Cross Deep-Dive (Rule 4752 / 4754)
+- **Opening Cross (9:30 AM ET):** Aggregates dedicated on-open orders (MOO, LOO, OIO) alongside eligible continuous book limit orders (LO) to determine a single official opening price per security. Fully electronic, matching millions of orders in microseconds (~4% of daily volume).
+- **Closing Cross (4:00 PM ET):** Establishes the official Nasdaq closing benchmark price, handling **~16–20% of daily volume** (and billions of shares during Russell, S&P 500, and Nasdaq-100 index rebalancings).
+- **IPO / Halt Cross:** Used for initial IPO price discovery and orderly single-price resumption following LULD or regulatory trading halts.
+
+#### (1) Session Timeline, NOII Transparency & Late-Auction Order Freeze (Opening Cross Example)
+| Time (ET) | Phase | Operational Rules & Safeguards |
+|-----------|-------|--------------------------------|
+| **04:00 – 09:25** | Order Accumulation & Pre-Market | Pre-market continuous matching runs alongside unrestricted entry, modification, and cancellation of cross-only orders (**MOO, LOO, OIO**). |
+| **09:25 – 09:28** | **NOII Dissemination** | Net Order Imbalance Indicator broadcast every 5s (every 1s from 09:28), publishing **Near Price** (cross + continuous book), **Far Price** (cross-only orders), **Paired Shares**, and **Imbalance Shares & Side**. |
+| **09:28 – 09:30** | **Order Freeze (Cutoff)** | Cancelling or unfavorably repricing **MOO/LOO** orders is prohibited to prevent spoofing (price improvement and size increases remain allowed). **OIO (Imbalance Only)** orders continue to be accepted to offset imbalances. |
+| **09:30:00** | **Cross Execution & LULD Anchor** | Single clearing price is calculated and executed; the Cross price immediately sets the initial reference price for regular-session **LULD (Limit Up-Limit Down)** bands. |
+
+*(Note: For the Closing Cross, NOII dissemination and MOC/LOC cancellation cutoff begin at 15:50 ET, late LOC cutoff at 15:55 ET, and execution occurs at 16:00:00 ET.)*
+
+#### (2) 4-Step Cross Price Tie-Breaking Algorithm
+When multiple candidate prices exist, Nasdaq determines the Cross price sequentially:
+1. **Step 1 — Maximize Paired Shares:** Selects the price(s) maximizing executable share volume.
+2. **Step 2 — Minimize Imbalance:** If tied, selects the price(s) leaving the smallest unmatched share imbalance.
+3. **Step 3 — Closest to Nasdaq BBO Midpoint:** If still tied, selects the price closest to the prevailing Nasdaq inside bid-ask midpoint ($\frac{\text{Best Bid}+\text{Best Ask}}{2}$).
+4. **Step 4 — Closest to Benchmark Price:** If still equidistant (e.g., \$10.01 and \$10.02 around a \$10.015 midpoint), selects the price closest to the prior official close (Opening) or last sale (Closing)—e.g., \$10.01 when prior close is \$10.00.
+
+#### (3) Order Handling, OIO Price Caps & Execution Priority
+- **MOO / MOC & Collar Safeguards:** Guaranteed top execution priority within benchmark price collars. If extreme MOO/MOC volume prevents clearing within collar bounds, Nasdaq triggers an **Imbalance Freeze** or **Auction Extension** rather than printing a dislocated price.
+- **OIO / CIO Price Cap Formula:** To ensure liquidity-supplying OIO/CIO orders never shift the inside market, buy OIOs are capped at $\min(\text{Limit Price}, \text{Best Bid})$ and sell OIOs are floored at $\max(\text{Limit Price}, \text{Best Ask})$, executing strictly up to the unmatched imbalance quantity.
+- **Execution Priority:** ① **MOO/MOC** → ② **In-the-Money** LOO/LO (in full) and OIO (up to imbalance) → ③ **At-the-Money** LOO/LO ranked by **time priority**, followed last by At-the-Money **OIO/CIO**.
+
+#### (4) Why Complex Cross Design Remains Vital in an Order-Driven Market
+Although modern Nasdaq operates as an order-driven CLOB intraday, U.S. equity liquidity is fragmented across 16 exchanges and dozens of ATSs. At the open and close, trillions of dollars in passive ETF/index assets demand **zero tracking error** (`MOO/MOC`), active funds seek bounded liquidity (`LOO/LOC`), and market makers/HFTs use `NOII` + `OIO/CIO` to safely absorb massive one-sided rebalancing imbalances and hedge instantaneously across futures and ATS venues—preventing price spikes, LULD halts, and fiduciary litigation risk.
 
 ### 3.2 Continuous Trading
 - **Order-driven market** with competing market makers providing liquidity.
 - **Price-time priority:** Orders are matched first by price, then by time of entry at the same price level.
-- Supports both displayed and non-displayed (hidden) orders.
-- Midpoint pegging orders available for execution at the midpoint of the NBBO.
+- Supports both displayed and non-displayed (hidden) orders, including midpoint pegging and MELO orders.
 
 ### 3.3 Price Discovery
-- Opening and closing crosses are the primary price discovery mechanisms, representing approximately 20% of total daily exchange volume.
-- NOII provides real-time reference prices, paired shares, and imbalance data for informed participation.
-- Continuous trading provides ongoing price discovery throughout the regular session.
+- Opening and closing crosses account for ~20%+ of daily volume and establish official LULD reference anchors.
+- NOII provides sub-second indicative prices (Near/Far), paired shares, and imbalance transparency.
 
 ---
 
-#ㅌ
+## 4. Order Types
+
+### 4.1 Standard & Cross Order Types
+| Order Type | Description |
+|------------|-------------|
+| Market Order | Immediate execution at best available prices; regular market hours only |
+| Limit Order | Executes at specified price or better; displayed on the order book |
+| Pegged Order | Dynamically tracks NBBO (primary peg, market peg, midpoint peg) |
+| Market-on-Open (MOO) | Participates in Opening Cross at the determined opening cross price (top priority) |
+| Limit-on-Open (LOO) | Participates in Opening Cross subject to specified limit price protection |
+| Market-on-Close (MOC) | Participates in Closing Cross at the determined official closing price |
+| Limit-on-Close (LOC) | Participates in Closing Cross subject to specified limit price protection |
+| Imbalance Only (OIO / CIO) | Cross-only liquidity-providing order capped at BBO so as not to move inside quotes; executes strictly against opposite-side imbalances (accepted even after Order Freeze) |
+
+### 4.2 Advanced Order Types
+| Order Type | Description |
+|------------|-------------|
+| Discretionary Order | Displayed at one price while passively executable within a non-displayed discretionary range |
+| Non-Displayed (Hidden) Order | Fully hidden from public depth feeds; executes at or within NBBO |
+| Midpoint Extended Life Order (MELO) | Non-displayed NBBO midpoint order requiring a 10ms–0.5s holding period to shield institutional flow from latency arbitrage |
+| Reserve (Iceberg) Order | Displays a partial slice of total quantity and replenishes automatically upon fill |
+| Intermarket Sweep Order (ISO) | Sweeps book levels while sender simultaneously routes to clear protected NBBO quotes at other venues under Reg NMS |
+| Post-Only Order | Adds liquidity only; repriced or rejected if it would immediately lock/cross resting orders |
+| Retail Price-Improving Order | Designated retail order flow eligible for sub-penny price improvement |
+
+### 4.3 Time-in-Force (TIF) & Order Management
+- **Supported TIFs:** `DAY` (09:30–16:00 ET), `IOC`, `SHRS` (System Hours 04:00–20:00 ET), `GTMC` (Good-Til-Market Close), `OPG` (Opening Cross only), `ATC` (Closing Cross only).
+- **Order Modification / Kill Switch:** Atomic cancel-replace via OUCH/FIX (price changes lose time priority; size reductions retain priority); port- and firm-level **Kill Switch** cancels all open orders across all symbols simultaneously.
+
 ---
 
 ## 5. Trading System (Technology)

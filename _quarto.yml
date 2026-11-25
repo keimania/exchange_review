@@ -57,6 +57,8 @@ website:
             href: qmd/analytics/trading_hours.qmd
           - text: "Engine Benchmark & Architecture (엔진·밸류체인)"
             href: qmd/analytics/engine_benchmark.qmd
+          - text: "Auction & Cross Simulator (경매·크로스 시뮬레이터)"
+            href: qmd/analytics/auction_simulator.qmd
       - text: "Glossary"
         menu:
           - text: "Glossary (EN)"
@@ -331,6 +333,7 @@ website:
         - qmd/analytics/comparator.qmd
         - qmd/analytics/trading_hours.qmd
         - qmd/analytics/engine_benchmark.qmd
+        - qmd/analytics/auction_simulator.qmd
 
 format:
   html:

@@ -1,7 +1,7 @@
 ---
 title: "Final Review: Global Exchange Research — Cross-Domain Analysis & KRX Benchmarking"
 subtitle: "Reference"
-date: "2026-10-20"
+date: "2026-11-24"
 lang: en
 toc: true
 toc-depth: 3
@@ -18,7 +18,7 @@ format:
   <div class="doc-header-left">
     <span class="doc-badge category">📁 Reference &gt; Benchmarking</span>
     <span class="doc-badge tier">📑 In-Depth Research</span>
-    <span class="doc-badge date">📅 2026-10-20</span>
+    <span class="doc-badge date">📅 2026-11-24</span>
   </div>
   <div class="doc-header-right">
     <a href="ko/final_review.html" class="doc-lang-btn">🇰🇷 한국어 리포트 보기</a>
@@ -620,14 +620,13 @@ Korea Exchange (KRX) operates as an integrated exchange covering equities (KOSPI
 
 ### 3.4 Glossary Completeness
 
-| Metric | English (glossary_en.qmd) | Korean (glossary_ko.qmd) |
-|---|---|---|
-| **Total terms** | 396 | 406 |
-| **Categories covered** | Trading, Clearing, Settlement, Technology, Regulation, Derivatives, Market Segments | Same + KRX-specific terms |
-| **EN terms missing from KO** | 0 (100% fully synchronized) | — |
-| **KO-only terms** | — | 10 (KRX/domestic market specific terms) |
+| Metric | English (`glossary_en.qmd`) | Korean (`glossary_ko.qmd`) | SQLite DB (`glossary.db`) |
+|---|---|---|---|
+| **Total terms** | **420** | **420** | **420 (FTS5 full-text indexed)** |
+| **Categories covered (7)** | Trading (67), Derivatives (105), Clearing (63), Settlement (29), Technology (66), Market Segments & Boards (24), Regulation (66) | Identical category order & strict A–Z alignment | 100% 1:1 parity |
+| **EN/KO parity** | 0 missing (100% synchronized) | 0 missing (100% synchronized) | 100% synchronized |
 
-**Assessment:** 100% glossary consistency achieved. Previously missing Korean translations (Exchange for Physical, Exchange for Swap, Pro-Rata Matching) have been integrated, and all 6 recommended new terms (0DTE, Active Account Requirement, DORA, Swap Connect, GIFT Connect, Consolidated Tape Provider) alongside official bilingual terms (e.g. Call Auction / Dongsi Hoga) are fully harmonized.
+**Assessment:** 100% bilingual glossary consistency and interactive real-time search/filtering UI achieved. Verified against KRX primary rulebooks—explicitly distinguishing KRX single-price `Call Auction` (which enforces strict price-time priority) from `Simultaneous Bids and Offers` (`동시호가`, applied solely to limit-up/limit-down executions via staged quantity allocation)—and incorporating 420 terms spanning Dynamic/Static VI thresholds, Midpoint & Stop-Limit orders, NASDAQ Cross mechanics (MOO/LOO/OIO, Order Freeze, Collars), Nextrade (NXT), SOR, NSDS, Same-Day Affirmation (SDA), and EMIR 3.0 AAR.
 
 #### Recently Harmonized Key Terms
 
@@ -667,48 +666,46 @@ Among the benchmarking items identified for KRX, items verified through public r
 
 ---
 
-## 4. October 2026 Regulatory & Market Infrastructure Updates (2026 Q4 Review)
+## 4. November 2026 Regulatory & Market Infrastructure Updates (2026 Q4 Review)
 
-As of **October 20, 2026**, global exchange and post-trade infrastructures have reached critical milestones across multi-venue competition, shortened settlement cycles (T+1), 24/5 extended trading hours, algorithmic surveillance, and mandatory operational resilience frameworks.
+As of **November 24, 2026**, global exchange and post-trade infrastructures have reached critical milestones across multi-venue competition, shortened settlement cycles (T+1), 24/5 extended trading hours, impending mandatory security token registration (January 2027 in Korea), algorithmic surveillance, and operational resilience frameworks.
 
-### 4.1 Korean Capital Market: Nextrade ATS Integration and IT Modernization
-1. **Nextrade (ATS) Market Maturation & Smart Order Routing (SOR)**:
-   - Launched in March 2025, Nextrade (Korea's first Alternative Trading System) has secured a stable 10–15% market share in KOSPI/KOSDAQ benchmark constituents as of October 2026.
-   - Brokers operate mature Smart Order Routing (SOR) engines to fulfill Best Execution mandates, dynamically splitting orders between KRX and Nextrade across extended operating hours (08:00 to 20:00 KST).
-   - In response, KRX successfully integrated Midpoint and Stop-Limit order types and recalibrated Maker-Taker fee schedules to sustain lit market liquidity.
+### 4.1 Korean Capital Market: Multi-Venue Maturation, KRX Extended Hours & 2027 Security Token Readiness
+1. **Nextrade (ATS) Market Stabilization & Opening/Closing Auction Safeguards**:
+   - Launched in March 2025, Nextrade (NXT) has stabilized at a 10–15% market share across ~800 eligible KOSPI/KOSDAQ equities as of November 2026, operating within statutory ATS volume caps (15% market-wide, 30% per stock).
+   - Broker Smart Order Routing (SOR) engines dynamically evaluate price, finer tick increments, fees, and depth across KRX and NXT under FSCMA Art. 68-2 Best Execution rules, while NXT suspends matching during KRX's opening (08:50–09:00) and closing (15:20–15:30) call auctions to preserve KRX's centralized benchmark price discovery.
+   - KRX operates extended After-Market hours (up to 20:00 KST), Midpoint and Stop-Limit order types, and Maker-Taker fee incentives, while benchmarking advanced cross mechanisms (e.g., NASDAQ NOII & OIO) as passive ETF rebalancing volumes grow.
 
 2. **National Short-sale Detecting System (NSDS) Full Operation**:
-   - Following the resumption of short selling in March 2025, KRX's central NSDS platform operates in real-time, cross-referencing institutional internal balance-tracking systems and electronic stock-lending records to systematically prevent naked short selling.
+   - Operational since March 31, 2025, KRX's centralized NSDS platform cross-verifies institutional short-sale balance management systems against all KRX and Nextrade trade executions and borrow records to block uncovered short selling.
 
-3. **Corporate Value-Up Program & Korea Value-Up Index**:
-   - Corporate value enhancement disclosures have matured, with Korea Value-Up Index ETFs and futures contracts serving as institutional benchmarks to address the structural Korea Discount.
+3. **Final Readiness for Mandatory Security Token Registration at KSD (January 2027)**:
+   - Ahead of the January 2027 statutory effective date under the revised Electronic Securities Act, KSD and participating broker/account-management institutions are completing final end-to-end DLT registry integration tests in Q4 2026.
 
-4. **KSD & KRX T+1 Settlement Roadmap**:
-   - Building upon split-settlement reforms (effective April 2026 in KRW 1 billion increments), KSD and KRX are collaborating with the FSC on formal timelines for full T+1 cash equities migration.
+4. **KSD & KRX T+1 Settlement Roadmap & Split Settlement**:
+   - Building upon KRW 1 billion split-settlement cycles instituted in April 2026, KSD and KRX are advancing Same-Day Affirmation (SDA) and FX cutoff alignment with the FSC toward a formal T+1 migration roadmap.
 
 ### 4.2 North American Markets: T+1 Settlement Maturity & 24/5 Trading Venues
-1. **Two-Year Milestone of U.S. T+1 Settlement**:
-   - Following the May 2024 implementation across the U.S., Canada, and Mexico, trade fail rates have stabilized below 2% as of October 2026. DTCC reports consistent same-day affirmation rates exceeding 95%, generating billions in annual margin efficiency.
-2. **SEC-Approved 24/5 Stock Exchanges & Extended Sessions**:
-   - With SEC regulatory approval of venues such as 24X National Exchange, NYSE (Pillar 22-hour weekday trading initiatives) and NASDAQ have expanded retail and global cross-border trading windows for international investors.
-3. **U.S. Treasury Central Clearing Mandate**:
-   - Phased implementation of mandatory UST cash and repo clearing at FICC/DTCC is actively reducing counterparty risk across government debt markets.
+1. **Sustained U.S. T+1 Efficiency**:
+   - Over two years post-launch (May 2024), U.S., Canadian, and Mexican T+1 fail rates remain below 2%, with DTCC CTM same-day affirmation exceeding 95% as of November 2026.
+2. **24/5 Equity Trading Expansion**:
+   - Alongside SEC-approved 24X National Exchange, NYSE Arca (22-hour Pillar sessions) and NASDAQ (23-hour weekday architecture) have expanded overnight APAC-facing sessions in coordination with SIP and DTCC overnight clearing gateways.
+3. **U.S. Treasury Central Clearing & DLT Collateral Tokenization**:
+   - Phased FICC mandatory clearing for UST cash and repo transactions is active across 2026, complemented by production pilots for tokenized Treasury collateral on the Canton Network.
 
-### 4.3 European Markets: October 2027 T+1 Harmonization & DORA Enforcement
-1. **Coordinated October 2027 T+1 Go-Live**:
-   - ESMA and the UK FCA/Treasury have confirmed a synchronized October 2027 transition date across the EU, UK, and Switzerland, supported by pan-European testing playbooks active as of Q4 2026.
-2. **DORA (Digital Operational Resilience Act) Enforcement**:
-   - In full effect since January 2025, DORA mandates rigorous Threat-Led Penetration Testing (TLPT) and ICT third-party risk management across all trading venues, CCPs, and major cloud providers (AWS, Azure, GCP).
-3. **EMIR 3.0 Active Account Requirement (AAR)**:
-   - Mandatory operational clearing accounts at EU-based CCPs have bolstered Eurex Clearing’s share of euro-denominated interest rate swaps.
+### 4.3 European Markets: October 11, 2027 T+1 Testing & DORA / EMIR 3.0 Enforcement
+1. **Synchronized October 11, 2027 T+1 Transition Testing**:
+   - The EU (ESMA), UK (FCA/HM Treasury), and Switzerland (FINMA/SIX) are executing coordinated Q4 2026 industry testing playbooks ahead of the unified **October 11, 2027** T+1 go-live.
+2. **DORA & EMIR 3.0 Active Account Requirement (AAR)**:
+   - Threat-Led Penetration Testing (TLPT) and cloud third-party oversight under DORA are fully embedded across European FMIs, while EMIR 3.0 AAR continues to expand Eurex Clearing's euro IRS clearing share.
 
-### 4.4 Asia-Pacific Highlights: Extended Trading & Severe Weather Operations
-1. **TSE/JPX 30-Minute Extension & Closing Auction**:
-   - TSE's extension to 15:30 JST with a 5-minute Closing Auction has completed nearly two years of operation, significantly deepening end-of-day market liquidity.
-2. **HKEX Severe Weather Trading (SWT)**:
-   - HKEX's non-stop electronic trading during Typhoon Signal No. 8 and Black Rainstorms has cemented Hong Kong's competitive parity with global continuous trading hubs.
-3. **India (NSE/BSE) Optional T+0 Settlement**:
-   - Same-day settlement mechanics continue to serve as an architectural reference for global instant-clearing initiatives.
+### 4.4 Asia-Pacific Highlights: arrowhead 4.0 & Closing Auctions
+1. **Two-Year Milestone of TSE/JPX arrowhead 4.0 & Closing Auction**:
+   - TSE's November 2024 upgrade to arrowhead 4.0 (~0.2ms latency), 30-minute extension to 15:30 JST, and 5-minute Closing Auction have completed two full years of stable operation with concentrated closing liquidity.
+2. **HKEX Severe Weather Trading & Next-Gen Derivatives**:
+   - HKEX's uninterrupted Severe Weather Trading (SWT) has become standard practice alongside ongoing next-generation derivatives platform modernization targeting 2028.
+3. **India (NSE/BSE) Ultra-High-Throughput Architecture & Optional T+0**:
+   - Sub-microsecond/nanosecond capacity upgrades and optional T+0 settlement continue to serve as global post-trade benchmarks.
 
 ---
 
@@ -716,15 +713,12 @@ As of **October 20, 2026**, global exchange and post-trade infrastructures have 
 
 | Metric | Value |
 |---|---|
-| **Total exchanges/organizations researched** | 60 (23 equities + 17 derivatives + 20 clearing) |
-| **Total English research documents** | 90 |
-| **Total Korean translations** | 90 |
-| **Total DOCX exports** | 180 (90 EN + 90 KO) |
-| **Grand total files** | 360+ |
-| **Research period** | 2026-04-03 to 2026-04-13 |
-| **Sessions executed** | 15 (E1-E3, D1-D3, C1-C3, T1-T3, K1-K3) |
-| **Glossary terms (EN)** | 355 |
-| **Glossary terms (KO)** | 374 |
+| **Total exchanges/organizations researched** | 61 (24 equities/ATS + 17 derivatives + 20 clearing/CSD) |
+| **Interactive visual analytics & simulators** | 4 tools (Comparator, 24h Session Timeline, Engine Benchmark, Cross/Auction Simulator) |
+| **Total QMD / HTML portal pages** | 191 pages |
+| **Total DOCX exports** | 195+ |
+| **Research & latest update date** | Initial: 2026-04-03 / **Latest Update: 2026-11-24** |
+| **Bilingual Glossary terms** | **420** (420 EN · 420 KO · 420 SQLite FTS5, 100% 1:1 synchronized) |
 | **[unverified] tags** | ~215 across 50 files |
 | **[estimated] tags** | ~28 across 7 files |
 | **TBD/placeholder items** | 5 |

@@ -1,7 +1,7 @@
 ---
 title: "글로벌 거래소 1:1 및 다자간 맞춤 비교기 (Exchange Comparator)"
 subtitle: "Visual Analytics & Benchmarking"
-date: "2026-10-22"
+date: "2026-11-24"
 lang: ko
 toc: false
 page-layout: full

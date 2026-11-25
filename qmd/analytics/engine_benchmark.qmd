@@ -1,7 +1,7 @@
 ---
 title: "차세대 매매엔진 성능 벤치마킹 & 밸류체인 다이어그램"
 subtitle: "Visual Analytics & IT Architecture"
-date: "2026-10-22"
+date: "2026-11-24"
 lang: ko
 toc: false
 page-layout: full

@@ -1,0 +1,938 @@
+---
+title: "개·폐장 크로스 & 단일가 경매 시뮬레이터 (Auction & Cross Simulator)"
+subtitle: "Visual Analytics & Market Microstructure"
+date: "2026-11-24"
+lang: ko
+toc: false
+page-layout: full
+format:
+  html:
+    theme: cosmo
+    css: ../../styles.css
+    self-contained: false
+---
+
+```{=html}
+<style>
+.auc-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 55%, #0f766e 100%);
+  color: #ffffff;
+  padding: 2.2rem 2rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.75rem;
+  box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.35);
+}
+.auc-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.9rem;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 9999px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #5eead4;
+  margin-bottom: 0.75rem;
+}
+.auc-hero-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+.auc-hero-desc {
+  font-size: 0.97rem;
+  color: #e2e8f0;
+  max-width: 940px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.auc-mode-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+.auc-mode-btn {
+  flex: 1;
+  min-width: 240px;
+  padding: 0.9rem 1.2rem;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-main);
+  font-weight: 800;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: var(--shadow-sm);
+}
+.auc-mode-btn:hover {
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+}
+.auc-mode-btn.active {
+  border-color: #2563eb;
+  background: var(--primary-subtle);
+  color: #1e3a8a;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.14);
+}
+.auc-mode-sub {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.auc-panel {
+  display: none;
+}
+.auc-panel.active {
+  display: block;
+}
+
+.auc-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+.auc-card-title {
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.preset-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.auc-preset-btn {
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: var(--bg-page);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.auc-preset-btn:hover, .auc-preset-btn.active {
+  background: #1e3a8a;
+  border-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.param-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.85rem;
+  padding: 0.9rem 1rem;
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.param-field label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+.param-field input, .param-field select {
+  width: 100%;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: var(--bg-card);
+  color: var(--text-main);
+}
+
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.kpi-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid #2563eb;
+  border-radius: 10px;
+  padding: 0.95rem 1.1rem;
+  box-shadow: var(--shadow-sm);
+}
+.kpi-box.green { border-left-color: #10b981; }
+.kpi-box.amber { border-left-color: #f59e0b; }
+.kpi-box.purple { border-left-color: #8b5cf6; }
+.kpi-box-lbl {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.kpi-box-val {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-top: 0.2rem;
+  font-variant-numeric: tabular-nums;
+}
+.kpi-box-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+.step-trace-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.step-trace-item {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.8rem 0.95rem;
+  background: var(--bg-page);
+  font-size: 0.84rem;
+}
+.step-trace-item.winner {
+  border-color: #2563eb;
+  background: var(--primary-subtle);
+}
+.step-num {
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #2563eb;
+  text-transform: uppercase;
+}
+.step-title {
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0.15rem 0 0.3rem 0;
+}
+.step-cands {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.sim-table-wrap {
+  overflow-x: auto;
+}
+.sim-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+  display: table;
+}
+.sim-table th, .sim-table td {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.85rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+.sim-table tr.cross-winner td {
+  background: rgba(37, 99, 235, 0.12) !important;
+  font-weight: 800;
+  color: #1e40af;
+}
+.badge-buy { background: #dcfce7; color: #166534; padding: 2px 7px; border-radius: 4px; font-weight: 700; font-size: 0.75rem; }
+.badge-sell { background: #fee2e2; color: #991b1b; padding: 2px 7px; border-radius: 4px; font-weight: 700; font-size: 0.75rem; }
+.badge-oio { background: #ede9fe; color: #5b21b6; padding: 2px 7px; border-radius: 4px; font-weight: 700; font-size: 0.75rem; }
+.badge-moo { background: #fef3c7; color: #92400e; padding: 2px 7px; border-radius: 4px; font-weight: 700; font-size: 0.75rem; }
+
+.order-add-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-end;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--border-color);
+  margin-top: 0.85rem;
+}
+.order-add-bar > div {
+  flex: 1;
+  min-width: 110px;
+}
+.btn-add-order {
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.btn-del-order {
+  border: none;
+  background: transparent;
+  color: #ef4444;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+</style>
+
+<div class="auc-hero">
+  <div class="auc-hero-badge">
+    <span>🔬 Market Microstructure Lab</span>
+    <span>•</span>
+    <span>Interactive Call Auction & Cross Engine</span>
+  </div>
+  <div class="auc-hero-title">개·폐장 크로스 & 단일가 경매 시뮬레이터</div>
+  <p class="auc-hero-desc">
+    글로벌 거래소의 핵심 가격발견 엔진인 <strong>NASDAQ Opening/Closing Cross (4단계 합치가격 & OIO 불균형 흡수)</strong>와 <strong>한국거래소(KRX) 단일가매매 (가격·시간우선 원칙 vs 상·하한가 동시호가 수량배분 특례)</strong>를 실시간 주문장 조작을 통해 직접 비교·검증할 수 있습니다.
+  </p>
+</div>
+
+<div class="auc-mode-bar">
+  <button type="button" class="auc-mode-btn active" onclick="switchAucMode('nasdaq', this)">
+    <span style="font-size:1.6rem;">🇺🇸</span>
+    <span>
+      NASDAQ Opening / Closing Cross
+      <span class="auc-mode-sub">4단계 타이브레이킹 · NOII · OIO 가격 Cap 시뮬레이션</span>
+    </span>
+  </button>
+  <button type="button" class="auc-mode-btn" onclick="switchAucMode('krx', this)">
+    <span style="font-size:1.6rem;">🇰🇷</span>
+    <span>
+      KRX 단일가매매 & 동시호가 특례
+      <span class="auc-mode-sub">일반 단일가(시간우선) vs 상한가 체결(수량우선 3단계 배분)</span>
+    </span>
+  </button>
+  <button type="button" class="auc-mode-btn" onclick="switchAucMode('compare', this)">
+    <span style="font-size:1.6rem;">⚖️</span>
+    <span>
+      KRX·NXT vs NASDAQ vs JPX 구조 비교
+      <span class="auc-mode-sub">파편화 시장의 리밸런싱 흡수 및 스푸핑 방지 아키텍처</span>
+    </span>
+  </button>
+</div>
+
+<!-- ==================== PANEL 1: NASDAQ CROSS ==================== -->
+<div id="panel-nasdaq" class="auc-panel active">
+  <div class="auc-card">
+    <div class="auc-card-title">
+      <span>🎛️ 시나리오 프리셋 & 시장 기준값 설정 (Nasdaq Rule 4752 / 4754)</span>
+    </div>
+    <div class="preset-row" id="nasdaqPresets">
+      <button type="button" class="auc-preset-btn active" onclick="loadNasdaqPreset('tie4', this)">프리셋 ① 4단계 타이브레이킹 완주 ($10.01 낙점)</button>
+      <button type="button" class="auc-preset-btn" onclick="loadNasdaqPreset('oio_rescue', this)">프리셋 ② 패시브 MOO 매수폭탄 + MM OIO 소방수 투입</button>
+      <button type="button" class="auc-preset-btn" onclick="loadNasdaqPreset('collar', this)">프리셋 ③ 극단적 MOO 불균형 (Collar 경보)</button>
+    </div>
+    <div class="param-grid">
+      <div class="param-field">
+        <label>전일 공식 종가 (Benchmark, $)</label>
+        <input type="number" id="nqBench" step="0.01" value="10.00" onchange="runNasdaqSim()">
+      </div>
+      <div class="param-field">
+        <label>직전 최우선 매수호가 (Best Bid, $)</label>
+        <input type="number" id="nqBid" step="0.01" value="10.01" onchange="runNasdaqSim()">
+      </div>
+      <div class="param-field">
+        <label>직전 최우선 매도호가 (Best Ask, $)</label>
+        <input type="number" id="nqAsk" step="0.01" value="10.02" onchange="runNasdaqSim()">
+      </div>
+      <div class="param-field">
+        <label>BBO 중간값 (Midpoint, 자동계산)</label>
+        <input type="text" id="nqMid" readonly value="$10.015">
+      </div>
+      <div class="param-field">
+        <label>가격제한 밴드 (Benchmark Collar, ±%)</label>
+        <input type="number" id="nqCollar" step="1" value="10" onchange="runNasdaqSim()">
+      </div>
+    </div>
+    <div id="nqScenarioNote" style="font-size:0.86rem; color:var(--text-muted); padding:0.5rem 0.75rem; background:var(--primary-subtle); border-radius:6px;"></div>
+  </div>
+
+  <div class="kpi-strip">
+    <div class="kpi-box">
+      <div class="kpi-box-lbl">최종 합치가격 (Cross Price)</div>
+      <div class="kpi-box-val" id="nqKpiPrice">$10.01</div>
+      <div class="kpi-box-sub" id="nqKpiStep">4단계(기준가 근접) 확정</div>
+    </div>
+    <div class="kpi-box green">
+      <div class="kpi-box-lbl">Paired Shares (최대 체결량)</div>
+      <div class="kpi-box-val" id="nqKpiPaired">10,000주</div>
+      <div class="kpi-box-sub" id="nqKpiFar">NOII Far Price 연동</div>
+    </div>
+    <div class="kpi-box amber">
+      <div class="kpi-box-lbl">Imbalance (미체결 불균형)</div>
+      <div class="kpi-box-val" id="nqKpiImb">0주</div>
+      <div class="kpi-box-sub" id="nqKpiImbSide">균형 (Balanced)</div>
+    </div>
+    <div class="kpi-box purple">
+      <div class="kpi-box-lbl">정규장 LULD 기준가 밴드</div>
+      <div class="kpi-box-val" id="nqKpiLuld">$9.51 ~ $10.51</div>
+      <div class="kpi-box-sub">Cross 가격 기준 ±5% (Tier 1 가정)</div>
+    </div>
+  </div>
+
+  <div class="auc-card">
+    <div class="auc-card-title">🔍 4단계 타이브레이킹 필터링 추적 (Step-by-Step Tie-Breaking)</div>
+    <div class="step-trace-grid" id="nqStepTrace"></div>
+    <div class="sim-table-wrap">
+      <table class="sim-table" id="nqPriceTable">
+        <thead>
+          <tr>
+            <th>가격 후보 ($)</th>
+            <th>누적 매수 (주)</th>
+            <th>누적 매도 (주)</th>
+            <th>체결 가능 (Paired)</th>
+            <th>불균형 (Imbalance)</th>
+            <th>BBO 중간값 거리</th>
+            <th>기준가 거리</th>
+            <th>판정</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="auc-card">
+    <div class="auc-card-title">
+      <span>📋 접수 주문장 & 체결 배정 결과 (우선순위: MOO → ITM → ATM 시간우선 → OIO 최열위)</span>
+    </div>
+    <div class="sim-table-wrap">
+      <table class="sim-table" id="nqOrderTable">
+        <thead>
+          <tr>
+            <th>접수순</th>
+            <th>참여자</th>
+            <th>방향</th>
+            <th>유형</th>
+            <th>입력가격</th>
+            <th>유효가격 (Cap 적용)</th>
+            <th>주문수량</th>
+            <th>체결수량</th>
+            <th>배정 사유</th>
+            <th>삭제</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="order-add-bar">
+      <div>
+        <label style="font-size:0.75rem; font-weight:700;">참여자명</label>
+        <input type="text" id="addNqActor" value="신규 기관" style="width:100%; padding:0.38rem; border:1px solid #cbd5e1; border-radius:6px; font-size:0.84rem;">
+      </div>
+      <div>
+        <label style="font-size:0.75rem; font-weight:700;">매수/매도</label>
+        <select id="addNqSide" style="width:100%; padding:0.4rem; border:1px solid #cbd5e1; border-radius:6px; font-size:0.84rem;">
+          <option value="BUY">매수 (BUY)</option>
+          <option value="SELL">매도 (SELL)</option>
+        </select>
+      </div>
+      <div>
+        <label style="font-size:0.75rem; font-weight:700;">주문유형</label>
+        <select id="addNqType" style="width:100%; padding:0.4rem; border:1px solid #cbd5e1; border-radius:6px; font-size:0.84rem;">
+          <option value="MOO">MOO (시가 시장가)</option>
+          <option value="LOO" selected>LOO (시가 지정가)</option>
+          <option value="LO">LO (연속장 지정가)</option>
+          <option value="OIO">OIO (불균형 상쇄)</option>
+        </select>
+      </div>
+      <div>
+        <label style="font-size:0.75rem; font-weight:700;">지정가격 ($)</label>
+        <input type="number" id="addNqPrice" step="0.01" value="10.02" style="width:100%; padding:0.38rem; border:1px solid #cbd5e1; border-radius:6px; font-size:0.84rem;">
+      </div>
+      <div>
+        <label style="font-size:0.75rem; font-weight:700;">수량 (주)</label>
+        <input type="number" id="addNqQty" step="500" value="2000" style="width:100%; padding:0.38rem; border:1px solid #cbd5e1; border-radius:6px; font-size:0.84rem;">
+      </div>
+      <div style="flex:0 0 auto;">
+        <button type="button" class="btn-add-order" onclick="addNasdaqOrder()">+ 주문 추가</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PANEL 2: KRX CALL AUCTION ==================== -->
+<div id="panel-krx" class="auc-panel">
+  <div class="auc-card">
+    <div class="auc-card-title">
+      <span>🇰🇷 KRX 단일가격에 의한 개별경쟁매매 시뮬레이터 (유가증권시장 업무규정 제22조·제23조, 세칙 제34조)</span>
+    </div>
+    <div class="preset-row" id="krxPresets">
+      <button type="button" class="auc-preset-btn active" onclick="loadKrxPreset('normal_time', this)">프리셋 ① 일반 시·종가 단일가매매 (엄격한 가격·시간우선 적용)</button>
+      <button type="button" class="auc-preset-btn" onclick="loadKrxPreset('limit_up_dongsi', this)">프리셋 ② 상한가(+30%) 체결 시 '동시호가' 수량우선 3단계 배분 특례</button>
+    </div>
+    <div id="krxScenarioNote" style="font-size:0.86rem; color:var(--text-muted); padding:0.6rem 0.85rem; background:var(--primary-subtle); border-radius:6px; line-height:1.6;"></div>
+  </div>
+
+  <div class="kpi-strip">
+    <div class="kpi-box">
+      <div class="kpi-box-lbl">결정 합치가격 (단일가)</div>
+      <div class="kpi-box-val" id="krxKpiPrice">50,000원</div>
+      <div class="kpi-box-sub" id="krxKpiMode">일반 가격 (기준가 50,000원)</div>
+    </div>
+    <div class="kpi-box green">
+      <div class="kpi-box-lbl">총 체결 수량</div>
+      <div class="kpi-box-val" id="krxKpiPaired">1,000주</div>
+      <div class="kpi-box-sub">매수·매도 합치 수량</div>
+    </div>
+    <div class="kpi-box amber">
+      <div class="kpi-box-lbl">적용된 배분 원칙</div>
+      <div class="kpi-box-val" id="krxKpiRule" style="font-size:1.15rem;">가격 · 시간우선 원칙</div>
+      <div class="kpi-box-sub" id="krxKpiRuleSub">동시 접수가 아닌 접수 시간순 체결!</div>
+    </div>
+  </div>
+
+  <div class="auc-card">
+    <div class="auc-card-title">📊 호가별 체결 수량 배정 상세 비교표</div>
+    <div class="sim-table-wrap">
+      <table class="sim-table" id="krxOrderTable">
+        <thead>
+          <tr>
+            <th>접수시각</th>
+            <th>투자자</th>
+            <th>방향</th>
+            <th>호가가격</th>
+            <th>주문수량</th>
+            <th>체결수량</th>
+            <th>미체결 잔량</th>
+            <th>배분 근거 (규정 조항)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PANEL 3: ARCHITECTURE COMPARISON ==================== -->
+<div id="panel-compare" class="auc-panel">
+  <div class="auc-card">
+    <div class="auc-card-title">⚖️ 글로벌 3대 개·폐장 경매 아키텍처 심층 비교</div>
+    <div class="sim-table-wrap">
+      <table class="sim-table">
+        <thead>
+          <tr>
+            <th>비교 영역</th>
+            <th>🇰🇷 KRX + 넥스트레이드(NXT)</th>
+            <th>🇺🇸 NASDAQ (Opening/Closing Cross)</th>
+            <th>🇯🇵 JPX / TSE (Itayose, 板寄せ)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>시장 파편화 환경</strong></td>
+            <td>2원화 체제 (KRX 주시장 + NXT 대체거래소)</td>
+            <td>초고도 파편화 (16개 정규거래소 + 30+ ATS/다크풀)</td>
+            <td>주시장(TSE) 집중 + PTS(Chi-X/Japannext)</td>
+          </tr>
+          <tr>
+            <td><strong>시·종가 유동성 집중 방식</strong></td>
+            <td><strong>제도적 셧다운:</strong> KRX 단일가 시간(08:50~09:00, 15:20~15:30) 동안 <strong>NXT 거래 일시 중단</strong></td>
+            <td><strong>경제적·알고리즘 결집:</strong> MOO/MOC·LOO/LOC·OIO 전용 호가 및 공식 벤치마크 독점</td>
+            <td>TSE 시가 및 2024.11 신설된 <strong>5분 종가 콜옥션(15:25~15:30)</strong>으로 패시브 유동성 집중</td>
+          </tr>
+          <tr>
+            <td><strong>동일가격 우선순위</strong></td>
+            <td><strong>원칙적 시간우선</strong> (단, 상·하한가 결정 시에만 <strong>동시호가 수량배분</strong> 특례 적용)</td>
+            <td>MOO/MOC 최우선 → 지정가(LOO/LO) <strong>시간우선</strong> → 불균형전용(OIO/CIO) 최열위</td>
+            <td>시장가 우선 → 지정가 동일가격 내 시가/종가 동시 취급(회원 단위 배분 규칙)</td>
+          </tr>
+          <tr>
+            <td><strong>실시간 정보 공개</strong></td>
+            <td>예상체결가격 및 예상최우선호가/잔량 공표</td>
+            <td><strong>NOII</strong> 초단위 배포 (Near Price, Far Price, Paired, Imbalance 수량·방향)</td>
+            <td>특별호가(特別気配) 및 예상 시·종가 호가 잔량 배포</td>
+          </tr>
+          <tr>
+            <td><strong>시세조종(스푸핑) 방지</strong></td>
+            <td>VI 발동 및 과열종목 단일가 시 <strong>30초 랜덤엔드</strong>; 시·종가 VI 발동 시 2분 연장</td>
+            <td><strong>Order Freeze</strong> (개장 2분 전, 마감 10분 전 MOO/LOO 취소 금지) + OIO만 진입 허용</td>
+            <td>종가 경매 전 호가 접수 및 특별호가 단계별 가격 갱신</td>
+          </tr>
+          <tr>
+            <td><strong>불균형 흡수 전문호가</strong></td>
+            <td>별도 불균형 전용 호가 없음 (조건부지정가·일반 지정가 활용)</td>
+            <td><strong>OIO / CIO</strong> (BBO 가격 Cap으로 가격 왜곡 없이 MM이 불균형 물량만 흡수)</td>
+            <td>Funari 주문 (장중 지정가 → 종가 경매 시 시장가 자동 전환)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+let nqOrders = [];
+
+const NASDAQ_PRESETS = {
+  tie4: {
+    bench: 10.00, bid: 10.01, ask: 10.02, collar: 10,
+    note: "💡 <strong>4단계 타이브레이킹 완주 예시:</strong> $10.00~$10.03 모두 체결량 10,000주 동률(1단계) → $10.01·$10.02 불균형 0주 동률(2단계) → BBO 중간값($10.015)과의 거리 모두 $0.005로 동률(3단계) → 전일 종가($10.00)에 더 가까운 <strong>$10.01</strong>이 최종 낙점(4단계)됩니다.",
+    orders: [
+      { id: 1, actor: "액티브펀드 A", side: "BUY", type: "LOO", price: 10.03, qty: 10000 },
+      { id: 2, actor: "퀀트펀드 B", side: "BUY", type: "LOO", price: 10.00, qty: 3000 },
+      { id: 3, actor: "기관투자자 C", side: "SELL", type: "LOO", price: 10.00, qty: 10000 },
+      { id: 4, actor: "연기금 D", side: "SELL", type: "LOO", price: 10.03, qty: 3000 }
+    ]
+  },
+  oio_rescue: {
+    bench: 100.00, bid: 99.90, ask: 100.10, collar: 10,
+    note: "💡 <strong>패시브 리밸런싱 + MM 소방수(OIO) 시나리오:</strong> 패시브 ETF가 15,000주 MOO 매수를 쏟아내어 일반 매도호가(8,000주)만으로는 7,000주 매수 불균형 및 가격 급등이 발생합니다. 이때 09:28 Order Freeze 이후 시장조성자(MM)가 $99.80 지정가로 10,000주 매도 OIO를 투입하면, 가격 왜곡 방지를 위해 최우선매도호가($100.10)로 Cap이 씌워지고 정확히 부족했던 7,000주 불균형 물량만 흡수하여 가격을 안정시킵니다.",
+    orders: [
+      { id: 1, actor: "패시브 ETF (QQQ)", side: "BUY", type: "MOO", price: 0, qty: 15000 },
+      { id: 2, actor: "액티브 운용사", side: "BUY", type: "LOO", price: 100.00, qty: 3000 },
+      { id: 3, actor: "일반 기관 매도1", side: "SELL", type: "LOO", price: 100.00, qty: 5000 },
+      { id: 4, actor: "연속장 지정가잔량", side: "SELL", type: "LO", price: 100.20, qty: 3000 },
+      { id: 5, actor: "시장조성자 (Citadel MM)", side: "SELL", type: "OIO", price: 99.80, qty: 10000 }
+    ]
+  },
+  collar: {
+    bench: 50.00, bid: 49.90, ask: 50.10, collar: 5,
+    note: "💡 <strong>극단적 수급 쏠림 & Collar 보호:</strong> MOO 매수(25,000주)가 매도 유동성(10,000주)을 압도하여 시장 균형가가 $54.00(+8.0%)까지 치솟으면서 Benchmark Collar(±5%, 상한 $52.50)를 초과합니다. NASDAQ은 왜곡된 시가를 그대로 찍지 않고 <strong>Collar 제한 / Imbalance Freeze (또는 Auction Extension)</strong>를 발동합니다.",
+    orders: [
+      { id: 1, actor: "글로벌 인덱스 리밸런싱", side: "BUY", type: "MOO", price: 0, qty: 25000 },
+      { id: 2, actor: "매도 지정가 1", side: "SELL", type: "LOO", price: 50.50, qty: 4000 },
+      { id: 3, actor: "매도 지정가 2", side: "SELL", type: "LO", price: 52.00, qty: 3000 },
+      { id: 4, actor: "매도 지정가 3", side: "SELL", type: "LO", price: 54.00, qty: 18000 }
+    ]
+  }
+};
+
+function switchAucMode(mode, btn) {
+  document.querySelectorAll('.auc-mode-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.auc-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + mode).classList.add('active');
+}
+
+function loadNasdaqPreset(key, btn) {
+  document.querySelectorAll('#nasdaqPresets .auc-preset-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  const p = NASDAQ_PRESETS[key];
+  document.getElementById('nqBench').value = p.bench.toFixed(2);
+  document.getElementById('nqBid').value = p.bid.toFixed(2);
+  document.getElementById('nqAsk').value = p.ask.toFixed(2);
+  document.getElementById('nqCollar').value = p.collar;
+  document.getElementById('nqScenarioNote').innerHTML = p.note;
+  nqOrders = JSON.parse(JSON.stringify(p.orders));
+  runNasdaqSim();
+}
+
+function addNasdaqOrder() {
+  const actor = document.getElementById('addNqActor').value || '참여자';
+  const side = document.getElementById('addNqSide').value;
+  const type = document.getElementById('addNqType').value;
+  const price = parseFloat(document.getElementById('addNqPrice').value) || 0;
+  const qty = Math.max(100, parseInt(document.getElementById('addNqQty').value) || 1000);
+  const nextId = nqOrders.length ? Math.max(...nqOrders.map(o => o.id)) + 1 : 1;
+  nqOrders.push({ id: nextId, actor, side, type, price: type === 'MOO' ? 0 : price, qty });
+  runNasdaqSim();
+}
+
+function removeNasdaqOrder(id) {
+  nqOrders = nqOrders.filter(o => o.id !== id);
+  runNasdaqSim();
+}
+
+function runNasdaqSim() {
+  const bench = parseFloat(document.getElementById('nqBench').value) || 10;
+  const bid = parseFloat(document.getElementById('nqBid').value) || bench;
+  const ask = parseFloat(document.getElementById('nqAsk').value) || bench;
+  const collarPct = parseFloat(document.getElementById('nqCollar').value) || 10;
+  const mid = (bid + ask) / 2;
+  document.getElementById('nqMid').value = '$' + mid.toFixed(3);
+
+  // Effective prices (apply OIO cap: buy min(limit, bid), sell max(limit, ask))
+  const processed = nqOrders.map((o, idx) => {
+    let effPrice = o.price;
+    if (o.type === 'OIO') {
+      effPrice = o.side === 'BUY' ? Math.min(o.price, bid) : Math.max(o.price, ask);
+    }
+    return { ...o, seq: idx + 1, effPrice: Math.round(effPrice * 100) / 100 };
+  });
+
+  // Collect candidate price grid
+  const priceSet = new Set([
+    Math.round(bench * 100) / 100,
+    Math.round(bid * 100) / 100,
+    Math.round(ask * 100) / 100
+  ]);
+  processed.forEach(o => {
+    if (o.type !== 'MOO' && o.effPrice > 0) priceSet.add(o.effPrice);
+  });
+  let minP = Math.min(...priceSet);
+  let maxP = Math.max(...priceSet);
+  // Fill intermediate cents if span is small (<= $0.20)
+  if (maxP - minP <= 0.25) {
+    for (let p = Math.round(minP * 100); p <= Math.round(maxP * 100); p++) {
+      priceSet.add(p / 100);
+    }
+  }
+  const prices = Array.from(priceSet).sort((a, b) => a - b);
+
+  // Evaluate each candidate price
+  const grid = prices.map(p => {
+    // Non-OIO demand & supply first to detect pure imbalance direction
+    let baseBuy = 0, baseSell = 0;
+    processed.forEach(o => {
+      if (o.type === 'OIO') return;
+      if (o.side === 'BUY' && (o.type === 'MOO' || o.effPrice >= p - 1e-9)) baseBuy += o.qty;
+      if (o.side === 'SELL' && (o.type === 'MOO' || o.effPrice <= p + 1e-9)) baseSell += o.qty;
+    });
+    let oioBuyAvail = 0, oioSellAvail = 0;
+    processed.forEach(o => {
+      if (o.type !== 'OIO') return;
+      if (o.side === 'BUY' && o.effPrice >= p - 1e-9) oioBuyAvail += o.qty;
+      if (o.side === 'SELL' && o.effPrice <= p + 1e-9) oioSellAvail += o.qty;
+    });
+    // OIO only participates on the side needed to reduce imbalance up to the imbalance amount
+    let cumBuy = baseBuy, cumSell = baseSell;
+    if (baseBuy > baseSell && oioSellAvail > 0) {
+      cumSell += Math.min(baseBuy - baseSell, oioSellAvail);
+    } else if (baseSell > baseBuy && oioBuyAvail > 0) {
+      cumBuy += Math.min(baseSell - baseBuy, oioBuyAvail);
+    }
+    const paired = Math.min(cumBuy, cumSell);
+    const imb = Math.abs(cumBuy - cumSell);
+    const imbSide = cumBuy > cumSell ? 'BUY' : (cumSell > cumBuy ? 'SELL' : 'NONE');
+    const distMid = Math.abs(p - mid);
+    const distBench = Math.abs(p - bench);
+    return { p, cumBuy, cumSell, paired, imb, imbSide, distMid, distBench };
+  });
+
+  // 4-Step Tie-Breaking
+  const maxPaired = Math.max(...grid.map(g => g.paired));
+  const s1 = grid.filter(g => g.paired === maxPaired);
+  const minImb = Math.min(...s1.map(g => g.imb));
+  const s2 = s1.filter(g => g.imb === minImb);
+  const minDistMid = Math.min(...s2.map(g => Math.round(g.distMid * 10000)));
+  const s3 = s2.filter(g => Math.round(g.distMid * 10000) === minDistMid);
+  const minDistBench = Math.min(...s3.map(g => Math.round(g.distBench * 10000)));
+  const s4 = s3.filter(g => Math.round(g.distBench * 10000) === minDistBench);
+  const winner = s4[0] || grid[0];
+
+  let decidedAt = 1;
+  if (s1.length > 1) decidedAt = 2;
+  if (s2.length > 1) decidedAt = 3;
+  if (s3.length > 1) decidedAt = 4;
+
+  const collarUpper = mid * (1 + collarPct / 100);
+  const collarLower = mid * (1 - collarPct / 100);
+  const collarBreached = winner.p > collarUpper + 1e-9 || winner.p < collarLower - 1e-9;
+
+  // Update KPIs
+  document.getElementById('nqKpiPrice').textContent = '$' + winner.p.toFixed(2) + (collarBreached ? ' ⚠️' : '');
+  document.getElementById('nqKpiStep').textContent = collarBreached
+    ? `Collar(±${collarPct}%) 이탈 → Auction Extension 유보!`
+    : `${decidedAt}단계(${['최대 체결량','최소 불균형','BBO 중간값 근접','기준가 근접'][decidedAt-1]})에서 단일가 확정`;
+  document.getElementById('nqKpiPaired').textContent = winner.paired.toLocaleString() + '주';
+  document.getElementById('nqKpiImb').textContent = winner.imb.toLocaleString() + '주';
+  document.getElementById('nqKpiImbSide').textContent = winner.imb === 0 ? '불균형 완전 해소 (0주)' : (winner.imbSide === 'BUY' ? '매수 초과 (Buy Imbalance)' : '매도 초과 (Sell Imbalance)');
+  document.getElementById('nqKpiLuld').textContent = `$${(winner.p * 0.95).toFixed(2)} ~ $${(winner.p * 1.05).toFixed(2)}`;
+
+  // Step Trace Cards
+  const fmtList = arr => arr.map(x => '$' + x.p.toFixed(2)).join(', ');
+  const stepsHtml = [
+    { n: '1단계', t: '최대 체결량 (Paired)', d: `최대 ${maxPaired.toLocaleString()}주 → 후보 ${s1.length}개 (${fmtList(s1)})`, w: decidedAt === 1 },
+    { n: '2단계', t: '최소 불균형 (Imbalance)', d: `최소 ${minImb.toLocaleString()}주 → 후보 ${s2.length}개 (${fmtList(s2)})`, w: decidedAt === 2 },
+    { n: '3단계', t: 'BBO 중간값 근접', d: `Mid $${mid.toFixed(3)} 최소거리 → 후보 ${s3.length}개 (${fmtList(s3)})`, w: decidedAt === 3 },
+    { n: '4단계', t: '기준가격(전일종가) 근접', d: `기준가 $${bench.toFixed(2)} 근접 → 최종 $${winner.p.toFixed(2)}`, w: decidedAt === 4 }
+  ].map(s => `
+    <div class="step-trace-item ${s.w ? 'winner' : ''}">
+      <div class="step-num">${s.n} ${s.w ? '✅ 결정 단계' : ''}</div>
+      <div class="step-title">${s.t}</div>
+      <div class="step-cands">${s.d}</div>
+    </div>
+  `).join('');
+  document.getElementById('nqStepTrace').innerHTML = stepsHtml;
+
+  // Render Price Table
+  const ptBody = document.querySelector('#nqPriceTable tbody');
+  ptBody.innerHTML = grid.map(g => {
+    const isWin = Math.abs(g.p - winner.p) < 1e-9;
+    let status = '탈락';
+    if (isWin) status = collarBreached ? '⚠️ Collar 초과 (연장)' : '🏆 최종 합치가격';
+    else if (s3.includes(g)) status = '3단계 동률 → 4단계 탈락';
+    else if (s2.includes(g)) status = '2단계 통과 → 3단계 탈락';
+    else if (s1.includes(g)) status = '1단계 통과 → 2단계 탈락';
+    return `<tr class="${isWin ? 'cross-winner' : ''}">
+      <td>$${g.p.toFixed(2)}</td>
+      <td>${g.cumBuy.toLocaleString()}</td>
+      <td>${g.cumSell.toLocaleString()}</td>
+      <td>${g.paired.toLocaleString()}</td>
+      <td>${g.imb.toLocaleString()} ${g.imbSide !== 'NONE' ? '('+g.imbSide+')' : ''}</td>
+      <td>$${g.distMid.toFixed(3)}</td>
+      <td>$${g.distBench.toFixed(2)}</td>
+      <td>${status}</td>
+    </tr>`;
+  }).join('');
+
+  // Allocate fills at winner.p
+  const cp = winner.p;
+  const allocateSide = (side) => {
+    let rem = winner.paired;
+    const sideOrders = processed.filter(o => o.side === side && (
+      o.type === 'MOO' ||
+      (side === 'BUY' ? o.effPrice >= cp - 1e-9 : o.effPrice <= cp + 1e-9)
+    ));
+    // Check if OIO is allowed on this side (only if opposite non-OIO exceeds this side non-OIO)
+    const nonOioBuy = processed.filter(o => o.side === 'BUY' && o.type !== 'MOO' ? (o.type !== 'OIO' && o.effPrice >= cp - 1e-9) : (o.side === 'BUY' && o.type === 'MOO')).reduce((a,b)=>a+b.qty,0);
+    const nonOioSell = processed.filter(o => o.side === 'SELL' && o.type !== 'MOO' ? (o.type !== 'OIO' && o.effPrice <= cp + 1e-9) : (o.side === 'SELL' && o.type === 'MOO')).reduce((a,b)=>a+b.qty,0);
+    const oioAllowed = (side === 'SELL' && nonOioBuy > nonOioSell) || (side === 'BUY' && nonOioSell > nonOioBuy);
+
+    // Rank: 1. MOO (seq), 2. ITM LOO/LO (better price then seq), 3. ITM OIO, 4. ATM LOO/LO (seq), 5. ATM OIO
+    const ranked = sideOrders.filter(o => o.type !== 'OIO' || oioAllowed).sort((a, b) => {
+      const tier = o => {
+        if (o.type === 'MOO') return 1;
+        const isItm = side === 'BUY' ? o.effPrice > cp + 1e-9 : o.effPrice < cp - 1e-9;
+        if (isItm && o.type !== 'OIO') return 2;
+        if (isItm && o.type === 'OIO') return 3;
+        if (o.type !== 'OIO') return 4;
+        return 5;
+      };
+      const ta = tier(a), tb = tier(b);
+      if (ta !== tb) return ta - tb;
+      return a.seq - b.seq;
+    });
+
+    const fills = {};
+    ranked.forEach(o => {
+      const f = Math.min(rem, o.qty);
+      fills[o.id] = f;
+      rem -= f;
+    });
+    return { fills, oioAllowed };
+  };
+
+  const buyAlloc = allocateSide('BUY');
+  const sellAlloc = allocateSide('SELL');
+
+  const otBody = document.querySelector('#nqOrderTable tbody');
+  otBody.innerHTML = processed.map(o => {
+    const alloc = o.side === 'BUY' ? buyAlloc : sellAlloc;
+    const filled = alloc.fills[o.id] || 0;
+    let reason = '가격 조건 미충족';
+    if (o.type === 'MOO') reason = '1순위: MOO 최우선 배정';
+    else if (o.type === 'OIO' && !alloc.oioAllowed) reason = '불균형 반대방향 아님 (미참여)';
+    else if (o.type === 'OIO' && filled > 0) reason = '불균형 해소 한도 내 배정 (Cap 적용)';
+    else if (filled > 0) {
+      const isItm = o.side === 'BUY' ? o.effPrice > cp + 1e-9 : o.effPrice < cp - 1e-9;
+      reason = isItm ? '2순위: In-the-Money 전량 체결' : '3순위: At-the-Money 시간우선 배정';
+    } else if ((o.side === 'BUY' && o.effPrice >= cp - 1e-9) || (o.side === 'SELL' && o.effPrice <= cp + 1e-9)) {
+      reason = '후순위 대기 (상대 수량 소진)';
+    }
+    const typeBadge = o.type === 'MOO' ? 'badge-moo' : (o.type === 'OIO' ? 'badge-oio' : '');
+    return `<tr>
+      <td>#${o.seq}</td>
+      <td style="text-align:left; font-weight:700;">${o.actor}</td>
+      <td><span class="${o.side === 'BUY' ? 'badge-buy' : 'badge-sell'}">${o.side}</span></td>
+      <td><span class="${typeBadge}">${o.type}</span></td>
+      <td>${o.type === 'MOO' ? '시장가' : '$' + o.price.toFixed(2)}</td>
+      <td>${o.type === 'MOO' ? 'Collar 내 최우선' : '$' + o.effPrice.toFixed(2) + (o.type === 'OIO' && o.effPrice !== o.price ? ' (Cap)' : '')}</td>
+      <td>${o.qty.toLocaleString()}주</td>
+      <td style="font-weight:800; color:${filled > 0 ? '#16a34a' : '#94a3b8'};">${filled.toLocaleString()}주</td>
+      <td style="text-align:left; font-size:0.8rem;">${reason}</td>
+      <td><button type="button" class="btn-del-order" onclick="removeNasdaqOrder(${o.id})" title="주문 삭제">✕</button></td>
+    </tr>`;
+  }).join('');
+}
+
+// KRX Simulator Presets
+function loadKrxPreset(mode, btn) {
+  document.querySelectorAll('#krxPresets .auc-preset-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+
+  const tb = document.querySelector('#krxOrderTable tbody');
+  if (mode === 'normal_time') {
+    document.getElementById('krxScenarioNote').innerHTML =
+      "📌 <strong>핵심 검증 포인트 (일반 시·종가 단일가매매):</strong> 08:30~09:00 시가 단일가매매에서 매도 총량이 1,000주이고 동일 가격(50,000원)에 매수호가 3건(합계 1,800주)이 접수되었습니다. 관행적으로 '동시호가'라 부르지만, <strong>상한가가 아니므로 동시 접수(비례/수량배분)가 아니라 엄격한 '시간우선원칙(제22조②2호)'이 적용</strong>되어 08:31 접수자(600주 전량) → 08:42 접수자(400주 부분체결) 순으로 배정되고, 수량이 가장 많은 08:55 접수자(800주)는 0주 체결됩니다.";
+    document.getElementById('krxKpiPrice').textContent = "50,000원";
+    document.getElementById('krxKpiMode').textContent = "일반 균형가격 (상·하한가 아님)";
+    document.getElementById('krxKpiPaired').textContent = "1,000주";
+    document.getElementById('krxKpiRule').textContent = "가격 · 시간우선 원칙";
+    document.getElementById('krxKpiRuleSub').textContent = "유가증권시장 업무규정 제22조②2호 적용";
+
+    const rows = [
+      ["08:31:05", "개인투자자 A (선접수)", "BUY", "50,000원", "600주", "600주 (100%)", "0주", "1순위 시간우선 전량 체결 [제22조②2호]"],
+      ["08:42:18", "기관투자자 B (중간접수)", "BUY", "50,000원", "600주", "400주 (부분)", "200주", "2순위 시간우선 잔여물량 체결 [제22조②2호]"],
+      ["08:55:40", "대형펀드 C (대량·후접수)", "BUY", "50,000원", "800주", "0주 (미체결)", "800주", "수량이 가장 많아도 접수시간 열위로 미체결"],
+      ["08:35:00", "매도참여자 합계", "SELL", "50,000원", "1,000주", "1,000주 (100%)", "0주", "합치가격 매도물량 전량 체결"]
+    ];
+    tb.innerHTML = rows.map(r => `<tr>
+      <td>${r[0]}</td>
+      <td style="text-align:left; font-weight:700;">${r[1]}</td>
+      <td><span class="${r[2]==='BUY'?'badge-buy':'badge-sell'}">${r[2]}</span></td>
+      <td>${r[3]}</td>
+      <td>${r[4]}</td>
+      <td style="font-weight:800; color:${r[5].startsWith('0주')?'#94a3b8':'#16a34a'};">${r[5]}</td>
+      <td>${r[6]}</td>
+      <td style="text-align:left; font-size:0.8rem;">${r[7]}</td>
+    </tr>`).join('');
+  } else {
+    document.getElementById('krxScenarioNote').innerHTML =
+      "📌 <strong>핵심 검증 포인트 (상한가 +30% 결정 시 '동시호가' 특례):</strong> 기준가 50,000원 종목의 시가가 <strong>상한가(65,000원)</strong>로 결정되고 상한가 매도물량이 총 1,000주일 때만 예외적으로 <strong>호가시간 선후를 구분하지 않는 '동시호가(제22조③, 시행세칙 제34조)'</strong>가 발동됩니다! 늦게 낸 대량호가(08:55, 1,200주)도 <strong>수량우선 단계별 배분(① 각 100매매수량단위(100주) 우선 → ② 잔량의 1/2 → ③ 잔량)</strong>을 통해 가장 많은 650주를 배정받습니다.";
+    document.getElementById('krxKpiPrice').textContent = "65,000원 (상한가)";
+    document.getElementById('krxKpiMode').textContent = "기준가 50,000원 대비 +30% 상한가";
+    document.getElementById('krxKpiPaired').textContent = "1,000주";
+    document.getElementById('krxKpiRule').textContent = "동시호가 수량우선 배분";
+    document.getElementById('krxKpiRuleSub').textContent = "업무규정 제22조③ & 시행세칙 제34조① (100단위 → 잔량 1/2 → 잔량)";
+
+    // Total sell at limit up = 1,000 shares
+    // Buyers at 65,000:
+    // C (08:55): 1,200 shares -> Round 1: 100 (rem 1,100)
+    // B (08:42):   600 shares -> Round 1: 100 (rem 500)
+    // A (08:31):   200 shares -> Round 1: 100 (rem 100)
+    // Pool left after Round 1 (300 allocated): 700 shares.
+    // Round 2 (1/2 of remainder, largest order first):
+    // C (rem 1,100 -> 1/2 = 550): gets 550! Pool left: 700 - 550 = 150.
+    // B (rem 500 -> 1/2 = 250): gets remaining 150! Pool left: 0.
+    // A (rem 100): gets 0 in Round 2.
+    // Total fills: C = 100 + 550 = 650; B = 100 + 150 = 250; A = 100 + 0 = 100. Sum = 1,000!
+    const rows = [
+      ["08:55:40", "대형펀드 C (1,200주·후접수)", "BUY", "65,000원(상)", "1,200주", "650주", "550주", "시간무시 수량 1위: 1차 100주 + 2차 잔량1/2(550주) = 650주 [세칙 제34조①]"],
+      ["08:42:18", "기관투자자 B (600주·중간접수)", "BUY", "65,000원(상)", "600주", "250주", "350주", "시간무시 수량 2위: 1차 100주 + 2차 잔여물량(150주) = 250주 [세칙 제34조①]"],
+      ["08:31:05", "개인투자자 A (200주·선접수)", "BUY", "65,000원(상)", "200주", "100주", "100주", "가장 먼저 접수했으나 수량 3위: 1차 100주만 배정 [세칙 제34조①]"],
+      ["08:49:00", "상한가 매도물량 합계", "SELL", "65,000원(상)", "1,000주", "1,000주", "0주", "상한가 매도 전량 체결"]
+    ];
+    tb.innerHTML = rows.map(r => `<tr>
+      <td>${r[0]}</td>
+      <td style="text-align:left; font-weight:700;">${r[1]}</td>
+      <td><span class="${r[2]==='BUY'?'badge-buy':'badge-sell'}">${r[2]}</span></td>
+      <td>${r[3]}</td>
+      <td>${r[4]}</td>
+      <td style="font-weight:800; color:#16a34a;">${r[5]}</td>
+      <td>${r[6]}</td>
+      <td style="text-align:left; font-size:0.8rem;">${r[7]}</td>
+    </tr>`).join('');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  loadNasdaqPreset('tie4', document.querySelector('#nasdaqPresets .auc-preset-btn'));
+  loadKrxPreset('normal_time', document.querySelector('#krxPresets .auc-preset-btn'));
+});
+</script>
+```

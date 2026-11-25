@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-10-20">
+<meta name="dcterms.date" content="2026-11-24">
 
 <title>NASDAQ Stock Market (NASDAQ) – Global Exchange Research</title>
 <style>
@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../../styles.css">
 </head>
@@ -193,6 +222,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../../../../qmd/analytics/engine_benchmark.html">
  <span class="dropdown-text">Engine Benchmark &amp; Architecture (엔진·밸류체인)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../qmd/analytics/auction_simulator.html">
+ <span class="dropdown-text">Auction &amp; Cross Simulator (경매·크로스 시뮬레이터)</span></a>
   </li>  
     </ul>
   </li>
@@ -535,11 +568,16 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#trading-mechanism" id="toc-trading-mechanism" class="nav-link" data-scroll-target="#trading-mechanism">3. Trading Mechanism</a>
   <ul class="collapse">
-  <li><a href="#auction-mechanisms" id="toc-auction-mechanisms" class="nav-link" data-scroll-target="#auction-mechanisms">3.1 Auction Mechanisms</a></li>
+  <li><a href="#auction-mechanisms-opening-cross-closing-cross-deep-dive-rule-4752-4754" id="toc-auction-mechanisms-opening-cross-closing-cross-deep-dive-rule-4752-4754" class="nav-link" data-scroll-target="#auction-mechanisms-opening-cross-closing-cross-deep-dive-rule-4752-4754">3.1 Auction Mechanisms: Opening Cross &amp; Closing Cross Deep-Dive (Rule 4752 / 4754)</a></li>
   <li><a href="#continuous-trading" id="toc-continuous-trading" class="nav-link" data-scroll-target="#continuous-trading">3.2 Continuous Trading</a></li>
   <li><a href="#price-discovery" id="toc-price-discovery" class="nav-link" data-scroll-target="#price-discovery">3.3 Price Discovery</a></li>
   </ul></li>
-  <li><a href="#ㅌ" id="toc-ㅌ" class="nav-link" data-scroll-target="#ㅌ">#ㅌ</a></li>
+  <li><a href="#order-types" id="toc-order-types" class="nav-link" data-scroll-target="#order-types">4. Order Types</a>
+  <ul class="collapse">
+  <li><a href="#standard-cross-order-types" id="toc-standard-cross-order-types" class="nav-link" data-scroll-target="#standard-cross-order-types">4.1 Standard &amp; Cross Order Types</a></li>
+  <li><a href="#advanced-order-types" id="toc-advanced-order-types" class="nav-link" data-scroll-target="#advanced-order-types">4.2 Advanced Order Types</a></li>
+  <li><a href="#time-in-force-tif-order-management" id="toc-time-in-force-tif-order-management" class="nav-link" data-scroll-target="#time-in-force-tif-order-management">4.3 Time-in-Force (TIF) &amp; Order Management</a></li>
+  </ul></li>
   <li><a href="#trading-system-technology" id="toc-trading-system-technology" class="nav-link" data-scroll-target="#trading-system-technology">5. Trading System (Technology)</a>
   <ul class="collapse">
   <li><a href="#system-history" id="toc-system-history" class="nav-link" data-scroll-target="#system-history">System History</a></li>
@@ -609,7 +647,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 20, 2026</p>
+      <p class="date">November 24, 2026</p>
     </div>
   </div>
   
@@ -625,7 +663,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="doc-header-left">
     <span class="doc-badge category">📁 Equities &gt; English Research</span>
     <span class="doc-badge tier">⭐ TIER 1 Primary Source</span>
-    <span class="doc-badge date">📅 2026-10-20</span>
+    <span class="doc-badge date">📅 2026-11-24</span>
   </div>
   <div class="doc-header-right">
     <a href="../../ko/exchanges/nasdaq.html" class="doc-lang-btn">🇰🇷 한국어 리포트 보기</a>
@@ -852,35 +890,191 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="trading-mechanism" class="level2">
 <h2 class="anchored" data-anchor-id="trading-mechanism">3. Trading Mechanism</h2>
-<section id="auction-mechanisms" class="level3">
-<h3 class="anchored" data-anchor-id="auction-mechanisms">3.1 Auction Mechanisms</h3>
+<section id="auction-mechanisms-opening-cross-closing-cross-deep-dive-rule-4752-4754" class="level3">
+<h3 class="anchored" data-anchor-id="auction-mechanisms-opening-cross-closing-cross-deep-dive-rule-4752-4754">3.1 Auction Mechanisms: Opening Cross &amp; Closing Cross Deep-Dive (Rule 4752 / 4754)</h3>
 <ul>
-<li><strong>Opening Cross (9:30 AM ET):</strong> Aggregates all pre-market orders and continuous book orders to determine a single opening price per security. The Net Order Imbalance Indicator (NOII) is disseminated prior to the cross, providing supply/demand transparency via Nasdaq TotalView. Fully electronic with no human intervention. Processes millions of orders in microseconds.</li>
-<li><strong>Closing Cross (~4:00 PM ET):</strong> Determines the official closing price for Nasdaq-listed securities. NOII disseminated beginning at 3:50 PM ET. Handles approximately 16% of daily Nasdaq volume. This price is used for mutual fund NAV calculations, index calculations, and settlement.</li>
-<li><strong>IPO/Halt Cross:</strong> Used for IPO price discovery and resumption of trading after halts. Separate NOII disseminated for imbalance information.</li>
+<li><strong>Opening Cross (9:30 AM ET):</strong> Aggregates dedicated on-open orders (MOO, LOO, OIO) alongside eligible continuous book limit orders (LO) to determine a single official opening price per security. Fully electronic, matching millions of orders in microseconds (~4% of daily volume).</li>
+<li><strong>Closing Cross (4:00 PM ET):</strong> Establishes the official Nasdaq closing benchmark price, handling <strong>~16–20% of daily volume</strong> (and billions of shares during Russell, S&amp;P 500, and Nasdaq-100 index rebalancings).</li>
+<li><strong>IPO / Halt Cross:</strong> Used for initial IPO price discovery and orderly single-price resumption following LULD or regulatory trading halts.</li>
 </ul>
+<section id="session-timeline-noii-transparency-late-auction-order-freeze-opening-cross-example" class="level4">
+<h4 class="anchored" data-anchor-id="session-timeline-noii-transparency-late-auction-order-freeze-opening-cross-example">(1) Session Timeline, NOII Transparency &amp; Late-Auction Order Freeze (Opening Cross Example)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 14%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time (ET)</th>
+<th>Phase</th>
+<th>Operational Rules &amp; Safeguards</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>04:00 – 09:25</strong></td>
+<td>Order Accumulation &amp; Pre-Market</td>
+<td>Pre-market continuous matching runs alongside unrestricted entry, modification, and cancellation of cross-only orders (<strong>MOO, LOO, OIO</strong>).</td>
+</tr>
+<tr class="even">
+<td><strong>09:25 – 09:28</strong></td>
+<td><strong>NOII Dissemination</strong></td>
+<td>Net Order Imbalance Indicator broadcast every 5s (every 1s from 09:28), publishing <strong>Near Price</strong> (cross + continuous book), <strong>Far Price</strong> (cross-only orders), <strong>Paired Shares</strong>, and <strong>Imbalance Shares &amp; Side</strong>.</td>
+</tr>
+<tr class="odd">
+<td><strong>09:28 – 09:30</strong></td>
+<td><strong>Order Freeze (Cutoff)</strong></td>
+<td>Cancelling or unfavorably repricing <strong>MOO/LOO</strong> orders is prohibited to prevent spoofing (price improvement and size increases remain allowed). <strong>OIO (Imbalance Only)</strong> orders continue to be accepted to offset imbalances.</td>
+</tr>
+<tr class="even">
+<td><strong>09:30:00</strong></td>
+<td><strong>Cross Execution &amp; LULD Anchor</strong></td>
+<td>Single clearing price is calculated and executed; the Cross price immediately sets the initial reference price for regular-session <strong>LULD (Limit Up-Limit Down)</strong> bands.</td>
+</tr>
+</tbody>
+</table>
+<p><em>(Note: For the Closing Cross, NOII dissemination and MOC/LOC cancellation cutoff begin at 15:50 ET, late LOC cutoff at 15:55 ET, and execution occurs at 16:00:00 ET.)</em></p>
+</section>
+<section id="step-cross-price-tie-breaking-algorithm" class="level4">
+<h4 class="anchored" data-anchor-id="step-cross-price-tie-breaking-algorithm">(2) 4-Step Cross Price Tie-Breaking Algorithm</h4>
+<p>When multiple candidate prices exist, Nasdaq determines the Cross price sequentially: 1. <strong>Step 1 — Maximize Paired Shares:</strong> Selects the price(s) maximizing executable share volume. 2. <strong>Step 2 — Minimize Imbalance:</strong> If tied, selects the price(s) leaving the smallest unmatched share imbalance. 3. <strong>Step 3 — Closest to Nasdaq BBO Midpoint:</strong> If still tied, selects the price closest to the prevailing Nasdaq inside bid-ask midpoint (<span class="math inline">\(\frac{\text{Best Bid}+\text{Best Ask}}{2}\)</span>). 4. <strong>Step 4 — Closest to Benchmark Price:</strong> If still equidistant (e.g., $10.01 and $10.02 around a $10.015 midpoint), selects the price closest to the prior official close (Opening) or last sale (Closing)—e.g., $10.01 when prior close is $10.00.</p>
+</section>
+<section id="order-handling-oio-price-caps-execution-priority" class="level4">
+<h4 class="anchored" data-anchor-id="order-handling-oio-price-caps-execution-priority">(3) Order Handling, OIO Price Caps &amp; Execution Priority</h4>
+<ul>
+<li><strong>MOO / MOC &amp; Collar Safeguards:</strong> Guaranteed top execution priority within benchmark price collars. If extreme MOO/MOC volume prevents clearing within collar bounds, Nasdaq triggers an <strong>Imbalance Freeze</strong> or <strong>Auction Extension</strong> rather than printing a dislocated price.</li>
+<li><strong>OIO / CIO Price Cap Formula:</strong> To ensure liquidity-supplying OIO/CIO orders never shift the inside market, buy OIOs are capped at <span class="math inline">\(\min(\text{Limit Price}, \text{Best Bid})\)</span> and sell OIOs are floored at <span class="math inline">\(\max(\text{Limit Price}, \text{Best Ask})\)</span>, executing strictly up to the unmatched imbalance quantity.</li>
+<li><strong>Execution Priority:</strong> ① <strong>MOO/MOC</strong> → ② <strong>In-the-Money</strong> LOO/LO (in full) and OIO (up to imbalance) → ③ <strong>At-the-Money</strong> LOO/LO ranked by <strong>time priority</strong>, followed last by At-the-Money <strong>OIO/CIO</strong>.</li>
+</ul>
+</section>
+<section id="why-complex-cross-design-remains-vital-in-an-order-driven-market" class="level4">
+<h4 class="anchored" data-anchor-id="why-complex-cross-design-remains-vital-in-an-order-driven-market">(4) Why Complex Cross Design Remains Vital in an Order-Driven Market</h4>
+<p>Although modern Nasdaq operates as an order-driven CLOB intraday, U.S. equity liquidity is fragmented across 16 exchanges and dozens of ATSs. At the open and close, trillions of dollars in passive ETF/index assets demand <strong>zero tracking error</strong> (<code>MOO/MOC</code>), active funds seek bounded liquidity (<code>LOO/LOC</code>), and market makers/HFTs use <code>NOII</code> + <code>OIO/CIO</code> to safely absorb massive one-sided rebalancing imbalances and hedge instantaneously across futures and ATS venues—preventing price spikes, LULD halts, and fiduciary litigation risk.</p>
+</section>
 </section>
 <section id="continuous-trading" class="level3">
 <h3 class="anchored" data-anchor-id="continuous-trading">3.2 Continuous Trading</h3>
 <ul>
 <li><strong>Order-driven market</strong> with competing market makers providing liquidity.</li>
 <li><strong>Price-time priority:</strong> Orders are matched first by price, then by time of entry at the same price level.</li>
-<li>Supports both displayed and non-displayed (hidden) orders.</li>
-<li>Midpoint pegging orders available for execution at the midpoint of the NBBO.</li>
+<li>Supports both displayed and non-displayed (hidden) orders, including midpoint pegging and MELO orders.</li>
 </ul>
 </section>
 <section id="price-discovery" class="level3">
 <h3 class="anchored" data-anchor-id="price-discovery">3.3 Price Discovery</h3>
 <ul>
-<li>Opening and closing crosses are the primary price discovery mechanisms, representing approximately 20% of total daily exchange volume.</li>
-<li>NOII provides real-time reference prices, paired shares, and imbalance data for informed participation.</li>
-<li>Continuous trading provides ongoing price discovery throughout the regular session.</li>
+<li>Opening and closing crosses account for ~20%+ of daily volume and establish official LULD reference anchors.</li>
+<li>NOII provides sub-second indicative prices (Near/Far), paired shares, and imbalance transparency.</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="ㅌ" class="level2">
-<h2 class="anchored" data-anchor-id="ㅌ">#ㅌ</h2>
+<section id="order-types" class="level2">
+<h2 class="anchored" data-anchor-id="order-types">4. Order Types</h2>
+<section id="standard-cross-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="standard-cross-order-types">4.1 Standard &amp; Cross Order Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Order Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Market Order</td>
+<td>Immediate execution at best available prices; regular market hours only</td>
+</tr>
+<tr class="even">
+<td>Limit Order</td>
+<td>Executes at specified price or better; displayed on the order book</td>
+</tr>
+<tr class="odd">
+<td>Pegged Order</td>
+<td>Dynamically tracks NBBO (primary peg, market peg, midpoint peg)</td>
+</tr>
+<tr class="even">
+<td>Market-on-Open (MOO)</td>
+<td>Participates in Opening Cross at the determined opening cross price (top priority)</td>
+</tr>
+<tr class="odd">
+<td>Limit-on-Open (LOO)</td>
+<td>Participates in Opening Cross subject to specified limit price protection</td>
+</tr>
+<tr class="even">
+<td>Market-on-Close (MOC)</td>
+<td>Participates in Closing Cross at the determined official closing price</td>
+</tr>
+<tr class="odd">
+<td>Limit-on-Close (LOC)</td>
+<td>Participates in Closing Cross subject to specified limit price protection</td>
+</tr>
+<tr class="even">
+<td>Imbalance Only (OIO / CIO)</td>
+<td>Cross-only liquidity-providing order capped at BBO so as not to move inside quotes; executes strictly against opposite-side imbalances (accepted even after Order Freeze)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="advanced-order-types" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-order-types">4.2 Advanced Order Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Order Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Discretionary Order</td>
+<td>Displayed at one price while passively executable within a non-displayed discretionary range</td>
+</tr>
+<tr class="even">
+<td>Non-Displayed (Hidden) Order</td>
+<td>Fully hidden from public depth feeds; executes at or within NBBO</td>
+</tr>
+<tr class="odd">
+<td>Midpoint Extended Life Order (MELO)</td>
+<td>Non-displayed NBBO midpoint order requiring a 10ms–0.5s holding period to shield institutional flow from latency arbitrage</td>
+</tr>
+<tr class="even">
+<td>Reserve (Iceberg) Order</td>
+<td>Displays a partial slice of total quantity and replenishes automatically upon fill</td>
+</tr>
+<tr class="odd">
+<td>Intermarket Sweep Order (ISO)</td>
+<td>Sweeps book levels while sender simultaneously routes to clear protected NBBO quotes at other venues under Reg NMS</td>
+</tr>
+<tr class="even">
+<td>Post-Only Order</td>
+<td>Adds liquidity only; repriced or rejected if it would immediately lock/cross resting orders</td>
+</tr>
+<tr class="odd">
+<td>Retail Price-Improving Order</td>
+<td>Designated retail order flow eligible for sub-penny price improvement</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="time-in-force-tif-order-management" class="level3">
+<h3 class="anchored" data-anchor-id="time-in-force-tif-order-management">4.3 Time-in-Force (TIF) &amp; Order Management</h3>
+<ul>
+<li><strong>Supported TIFs:</strong> <code>DAY</code> (09:30–16:00 ET), <code>IOC</code>, <code>SHRS</code> (System Hours 04:00–20:00 ET), <code>GTMC</code> (Good-Til-Market Close), <code>OPG</code> (Opening Cross only), <code>ATC</code> (Closing Cross only).</li>
+<li><strong>Order Modification / Kill Switch:</strong> Atomic cancel-replace via OUCH/FIX (price changes lose time priority; size reductions retain priority); port- and firm-level <strong>Kill Switch</strong> cancels all open orders across all symbols simultaneously.</li>
+</ul>
+<hr>
+</section>
 </section>
 <section id="trading-system-technology" class="level2">
 <h2 class="anchored" data-anchor-id="trading-system-technology">5. Trading System (Technology)</h2>
@@ -1451,7 +1645,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
-<!-- Layout Controls & Responsive Tablet Enhancements -->
+<!-- Global Layout Controls, Dark Mode, Sidebar Filter, Table Search & Quick Actions -->
+<div id="reading-progress-bar" aria-hidden="true"></div>
+
 <aside id="floating-dock-handles" aria-label="사이드바 독 제어 핸들">
   <button id="handle-sidebar-left" class="edge-dock-handle left-handle" title="좌측 메뉴 열기 (단축키: [ )" aria-label="좌측 메뉴 열기">
     <span class="handle-icon">❯</span>
@@ -1463,78 +1659,302 @@ ul.task-list li input[type="checkbox"] {
   </button>
 </aside>
 
+<aside id="floating-quick-actions" class="floating-quick-actions" aria-label="빠른 도구 모음">
+  <a id="fab-lang-switch" class="fab-btn fab-lang" href="#" style="display:none;" title="한/영 리포트 전환">🌐</a>
+  <button type="button" id="fab-theme-toggle" class="fab-btn" title="다크/라이트 모드 전환 (단축키: D)" aria-label="테마 전환">🌙</button>
+  <button type="button" id="fab-shortcuts" class="fab-btn" title="키보드 단축키 안내 (단축키: ?)" aria-label="단축키 안내">⌨️</button>
+  <button type="button" id="fab-scroll-top" class="fab-btn fab-top" title="맨 위로 이동" aria-label="맨 위로 이동">↑</button>
+</aside>
+
+<div id="shortcuts-modal-backdrop" class="shortcuts-modal-backdrop" aria-hidden="true">
+  <div class="shortcuts-modal" role="dialog" aria-labelledby="shortcuts-modal-title">
+    <div class="shortcuts-modal-header">
+      <span id="shortcuts-modal-title">⌨️ 빠른 키보드 단축키 안내</span>
+      <button type="button" id="shortcuts-modal-close" class="shortcuts-close-btn" aria-label="닫기">✕</button>
+    </div>
+    <div class="shortcuts-list">
+      <div class="shortcut-row"><kbd>/</kbd><span>페이지 내 검색창(홈·용어집·사이드바) 즉시 포커스</span></div>
+      <div class="shortcut-row"><kbd>[</kbd><span>좌측 사이드바 메뉴 접기 / 펼치기</span></div>
+      <div class="shortcut-row"><kbd>]</kbd><span>우측 목차(TOC) 사이드바 접기 / 펼치기</span></div>
+      <div class="shortcut-row"><kbd>\</kbd><span>넓게 보기 (양쪽 사이드바 숨김 집중 독서 모드)</span></div>
+      <div class="shortcut-row"><kbd>D</kbd><span>다크 모드 / 라이트 모드 즉시 전환</span></div>
+      <div class="shortcut-row"><kbd>?</kbd><span>단축키 도움말 열기 / 닫기</span></div>
+      <div class="shortcut-row"><kbd>Esc</kbd><span>열린 모달 닫기 또는 입력창 포커스 해제</span></div>
+    </div>
+  </div>
+</div>
+
 <script>
 (function() {
-  function initLayoutControls() {
+  // Apply saved theme immediately to minimize flash
+  const savedTheme = localStorage.getItem('exchange_theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+
+  function initGlobalPortalUX() {
+    const body = document.body;
     const leftSidebar = document.getElementById('quarto-sidebar');
     const rightSidebar = document.getElementById('quarto-margin-sidebar');
     const mainContent = document.getElementById('quarto-document-content');
-    
-    // Bail out if not a content page with sidebars
-    if (!mainContent || (!leftSidebar && !rightSidebar)) {
-      return;
+    const isContentPageWithSidebars = !!(mainContent && (leftSidebar || rightSidebar));
+
+    // 1. Inject Dark Mode button into Top Navbar
+    injectNavbarThemeToggle();
+
+    // 2. Setup Floating Action Buttons (Theme, Language Switch, Shortcuts, Scroll-to-Top)
+    setupFloatingActions();
+
+    // 3. Setup Reading Progress Bar
+    setupReadingProgress();
+
+    // 4. Setup Left Sidebar Quick Filter
+    if (leftSidebar) {
+      setupSidebarFilter(leftSidebar);
     }
 
-    const body = document.body;
-    const isTablet = window.innerWidth <= 1250;
-
-    // Load saved preferences or smart tablet defaults
-    const savedLeft = localStorage.getItem('exchange_sidebar_left');
-    const savedRight = localStorage.getItem('exchange_sidebar_right');
-    const savedFocus = localStorage.getItem('exchange_focus_mode');
-    const savedFontSize = localStorage.getItem('exchange_font_size');
-
-    if (savedFontSize) {
-      mainContent.style.fontSize = savedFontSize;
+    // 5. Setup Auto Table Filter on Large Comparison Tables (12+ rows, excluding custom interactive pages)
+    if (mainContent && !document.getElementById('glossaryExplorer') && !document.getElementById('panel-nasdaq')) {
+      setupSmartTableFilters(mainContent);
     }
 
-    if (savedFocus === 'true') {
-      body.classList.add('focus-mode-enabled');
-      body.classList.add('sidebar-left-collapsed');
-      body.classList.add('sidebar-right-collapsed');
-    } else {
-      if (savedLeft === 'collapsed') {
-        body.classList.add('sidebar-left-collapsed');
+    // 6. Content Page Layout Controls (Sidebar collapse, Focus mode, Font size)
+    if (isContentPageWithSidebars) {
+      const isTablet = window.innerWidth <= 1250;
+      const savedLeft = localStorage.getItem('exchange_sidebar_left');
+      const savedRight = localStorage.getItem('exchange_sidebar_right');
+      const savedFocus = localStorage.getItem('exchange_focus_mode');
+      const savedFontSize = localStorage.getItem('exchange_font_size');
+
+      if (savedFontSize) {
+        mainContent.style.fontSize = savedFontSize;
       }
-      
-      // On tablets, if no explicit right sidebar preference saved, default to collapsed for maximum reading space
-      if (savedRight === 'collapsed' || (isTablet && savedRight === null)) {
-        body.classList.add('sidebar-right-collapsed');
-      }
-    }
 
-    // Insert top toolbar in document header
-    insertToolbar(mainContent);
-    
-    // Bind edge handles
-    bindEdgeHandles();
-
-    // Drawer close handler for tablet right sidebar
-    if (rightSidebar) {
-      rightSidebar.addEventListener('click', function(e) {
-        if (e.target.classList.contains('toc-close-trigger') || (e.clientY < 110 && e.clientX > window.innerWidth - 60)) {
-          toggleRightSidebar();
+      if (savedFocus === 'true') {
+        body.classList.add('focus-mode-enabled', 'sidebar-left-collapsed', 'sidebar-right-collapsed');
+      } else {
+        if (savedLeft === 'collapsed') {
+          body.classList.add('sidebar-left-collapsed');
         }
-      });
+        if (savedRight === 'collapsed' || (isTablet && savedRight === null)) {
+          body.classList.add('sidebar-right-collapsed');
+        }
+      }
+
+      insertToolbar(mainContent);
+      bindEdgeHandles();
+
+      if (rightSidebar) {
+        rightSidebar.addEventListener('click', function(e) {
+          if (e.target.classList.contains('toc-close-trigger') || (e.clientY < 110 && e.clientX > window.innerWidth - 60)) {
+            toggleRightSidebar();
+          }
+        });
+      }
+      updateToolbarButtons();
     }
 
-    // Listen to keyboard shortcuts: [ for left, ] for right, \ for focus mode
+    // 7. Global Keyboard Shortcuts
     document.addEventListener('keydown', function(e) {
-      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
-      
-      if (e.key === '[') {
+      const modal = document.getElementById('shortcuts-modal-backdrop');
+      if (e.key === 'Escape') {
+        if (modal && modal.classList.contains('open')) {
+          modal.classList.remove('open');
+        } else if (document.activeElement) {
+          document.activeElement.blur();
+        }
+        return;
+      }
+
+      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName) || e.metaKey || e.ctrlKey || e.altKey) {
+        return;
+      }
+
+      if (e.key === '/') {
+        const targetInput =
+          document.getElementById('gSearchInput') ||
+          document.getElementById('cardFilterInput') ||
+          document.querySelector('.smart-table-filter-input') ||
+          document.getElementById('sidebar-filter-input');
+        if (targetInput) {
+          e.preventDefault();
+          targetInput.focus();
+          targetInput.select();
+        }
+      } else if (e.key === 'd' || e.key === 'D') {
         e.preventDefault();
-        toggleLeftSidebar();
-      } else if (e.key === ']') {
+        toggleDarkMode();
+      } else if (e.key === '?') {
         e.preventDefault();
-        toggleRightSidebar();
-      } else if (e.key === '\\') {
-        e.preventDefault();
-        toggleFocusMode();
+        toggleShortcutsModal();
+      } else if (isContentPageWithSidebars) {
+        if (e.key === '[') {
+          e.preventDefault();
+          toggleLeftSidebar();
+        } else if (e.key === ']') {
+          e.preventDefault();
+          toggleRightSidebar();
+        } else if (e.key === '\\') {
+          e.preventDefault();
+          toggleFocusMode();
+        }
       }
     });
 
-    updateToolbarButtons();
+    syncThemeIcons();
+  }
+
+  function injectNavbarThemeToggle() {
+    const rightNav = document.querySelector('.navbar-nav.ms-auto');
+    if (!rightNav || document.getElementById('nav-theme-btn')) return;
+
+    const li = document.createElement('li');
+    li.className = 'nav-item';
+    li.innerHTML = `<button type="button" id="nav-theme-btn" class="nav-theme-toggle-btn" title="다크 모드 / 라이트 모드 전환 (단축키: D)" aria-label="테마 전환">🌙</button>`;
+    rightNav.prepend(li);
+    li.querySelector('button').addEventListener('click', toggleDarkMode);
+  }
+
+  function toggleDarkMode() {
+    const isDark = document.body.classList.toggle('dark-mode');
+    localStorage.setItem('exchange_theme', isDark ? 'dark' : 'light');
+    syncThemeIcons();
+  }
+
+  function syncThemeIcons() {
+    const isDark = document.body.classList.contains('dark-mode');
+    const icon = isDark ? '☀️' : '🌙';
+    const navBtn = document.getElementById('nav-theme-btn');
+    const fabBtn = document.getElementById('fab-theme-toggle');
+    const toolBtn = document.getElementById('btn-toggle-theme');
+    if (navBtn) navBtn.textContent = icon;
+    if (fabBtn) fabBtn.textContent = icon;
+    if (toolBtn) {
+      toolBtn.querySelector('.btn-icon').textContent = icon;
+      toolBtn.querySelector('.btn-label').textContent = isDark ? '라이트 모드' : '다크 모드';
+      toolBtn.classList.toggle('active', isDark);
+    }
+  }
+
+  function setupFloatingActions() {
+    const fabLang = document.getElementById('fab-lang-switch');
+    const fabTheme = document.getElementById('fab-theme-toggle');
+    const fabShort = document.getElementById('fab-shortcuts');
+    const fabTop = document.getElementById('fab-scroll-top');
+
+    // Detect counterpart language button if present
+    const docLangBtn = document.querySelector('.doc-lang-btn');
+    if (fabLang && docLangBtn && docLangBtn.getAttribute('href')) {
+      fabLang.href = docLangBtn.getAttribute('href');
+      const isTargetEn = docLangBtn.textContent.includes('English');
+      fabLang.textContent = isTargetEn ? 'EN' : 'KO';
+      fabLang.title = isTargetEn ? 'Switch to English Report' : '한국어 리포트로 전환';
+      fabLang.style.display = 'inline-flex';
+    }
+
+    if (fabTheme) fabTheme.addEventListener('click', toggleDarkMode);
+    if (fabShort) fabShort.addEventListener('click', toggleShortcutsModal);
+    if (fabTop) {
+      fabTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    const modal = document.getElementById('shortcuts-modal-backdrop');
+    const closeBtn = document.getElementById('shortcuts-modal-close');
+    if (closeBtn && modal) {
+      closeBtn.addEventListener('click', () => modal.classList.remove('open'));
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) modal.classList.remove('open');
+      });
+    }
+  }
+
+  function toggleShortcutsModal() {
+    const modal = document.getElementById('shortcuts-modal-backdrop');
+    if (modal) modal.classList.toggle('open');
+  }
+
+  function setupReadingProgress() {
+    const bar = document.getElementById('reading-progress-bar');
+    const fabTop = document.getElementById('fab-scroll-top');
+    if (!bar) return;
+
+    function onScroll() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const pct = docHeight > 100 ? Math.min(100, Math.max(0, (scrollTop / docHeight) * 100)) : 0;
+      bar.style.width = pct + '%';
+      if (fabTop) {
+        fabTop.classList.toggle('visible', scrollTop > 280);
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  function setupSidebarFilter(sidebar) {
+    const nav = sidebar.querySelector('.sidebar-menu-container');
+    if (!nav || document.getElementById('sidebar-filter-wrap')) return;
+
+    const items = Array.from(nav.querySelectorAll('li.sidebar-item'));
+    if (items.length < 6) return;
+
+    const wrap = document.createElement('div');
+    wrap.id = 'sidebar-filter-wrap';
+    wrap.className = 'sidebar-filter-wrap';
+    wrap.innerHTML = `
+      <input type="text" id="sidebar-filter-input" class="sidebar-filter-input" placeholder="🔍 목록 빠른 검색..." aria-label="사이드바 목록 필터">
+    `;
+    nav.parentNode.insertBefore(wrap, nav);
+
+    const input = wrap.querySelector('input');
+    input.addEventListener('input', function() {
+      const q = this.value.trim().toLowerCase();
+      items.forEach(li => {
+        // Keep section headers if any child matches
+        if (li.classList.contains('sidebar-item-section')) return;
+        const txt = li.textContent.toLowerCase();
+        li.style.display = (!q || txt.includes(q)) ? '' : 'none';
+      });
+      // Hide empty section groups
+      nav.querySelectorAll('li.sidebar-item-section').forEach(sec => {
+        const subItems = Array.from(sec.querySelectorAll('li.sidebar-item:not(.sidebar-item-section)'));
+        if (subItems.length) {
+          const anyVisible = subItems.some(si => si.style.display !== 'none');
+          sec.style.display = anyVisible ? '' : 'none';
+        }
+      });
+    });
+  }
+
+  function setupSmartTableFilters(mainContent) {
+    const tables = Array.from(mainContent.querySelectorAll('table'));
+    tables.forEach(tbl => {
+      const rows = Array.from(tbl.querySelectorAll('tbody tr'));
+      if (rows.length < 12) return;
+
+      const bar = document.createElement('div');
+      bar.className = 'smart-table-toolbar';
+      bar.innerHTML = `
+        <input type="text" class="smart-table-filter-input" placeholder="🔍 표 내 항목 빠른 필터링 (${rows.length}개 행)..." aria-label="표 데이터 필터">
+        <span class="smart-table-count">${rows.length} / ${rows.length}</span>
+      `;
+      tbl.parentNode.insertBefore(bar, tbl);
+
+      const input = bar.querySelector('input');
+      const countEl = bar.querySelector('.smart-table-count');
+      input.addEventListener('input', function() {
+        const q = this.value.trim().toLowerCase();
+        let shown = 0;
+        rows.forEach(r => {
+          const match = !q || r.textContent.toLowerCase().includes(q);
+          r.style.display = match ? '' : 'none';
+          if (match) shown++;
+        });
+        countEl.textContent = `${shown} / ${rows.length}`;
+      });
+    });
   }
 
   function insertToolbar(mainContent) {
@@ -1547,7 +1967,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="view-toolbar-left">
         <span class="view-toolbar-label">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px; margin-right:4px;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
-          화면 보기:
+          화면 도구:
         </span>
         <button type="button" id="btn-toggle-left" class="view-tool-btn" title="사이드바 메뉴 접기/펼치기 (단축키: [ )">
           <span class="btn-icon">◧</span>
@@ -1559,7 +1979,11 @@ ul.task-list li input[type="checkbox"] {
         </button>
         <button type="button" id="btn-toggle-focus" class="view-tool-btn focus-btn" title="양쪽 사이드바를 모두 접고 본문을 넓게 집중해서 봅니다 (단축키: \\ )">
           <span class="btn-icon">📖</span>
-          <span class="btn-label">넓게 보기 (집중 모드)</span>
+          <span class="btn-label">넓게 보기</span>
+        </button>
+        <button type="button" id="btn-toggle-theme" class="view-tool-btn" title="다크 모드 / 라이트 모드 전환 (단축키: D)">
+          <span class="btn-icon">🌙</span>
+          <span class="btn-label">다크 모드</span>
         </button>
         <div class="font-size-group">
           <button type="button" id="btn-font-smaller" class="view-tool-btn font-btn" title="글자 작게">A-</button>
@@ -1567,11 +1991,10 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
       <div class="view-toolbar-right">
-        <span class="view-toolbar-hint">💡 태블릿/노트북에서는 사이드바를 접어 본문을 시원하게 읽으실 수 있습니다.</span>
+        <span class="view-toolbar-hint">💡 단축키: <kbd>/</kbd> 검색 · <kbd>[</kbd><kbd>]</kbd> 사이드바 · <kbd>D</kbd> 다크모드 · <kbd>?</kbd> 도움말</span>
       </div>
     `;
 
-    // Try inserting right above .doc-header-card or title block
     const headerCard = mainContent.querySelector('.doc-header-card');
     if (headerCard && headerCard.parentNode) {
       headerCard.parentNode.insertBefore(toolbar, headerCard);
@@ -1584,27 +2007,19 @@ ul.task-list li input[type="checkbox"] {
       }
     }
 
-    // Attach event listeners
     const btnLeft = document.getElementById('btn-toggle-left');
     const btnRight = document.getElementById('btn-toggle-right');
     const btnFocus = document.getElementById('btn-toggle-focus');
+    const btnTheme = document.getElementById('btn-toggle-theme');
     const btnFontSmaller = document.getElementById('btn-font-smaller');
     const btnFontLarger = document.getElementById('btn-font-larger');
 
     if (btnLeft) btnLeft.addEventListener('click', function() { toggleLeftSidebar(); });
     if (btnRight) btnRight.addEventListener('click', function() { toggleRightSidebar(); });
     if (btnFocus) btnFocus.addEventListener('click', function() { toggleFocusMode(); });
-    
-    if (btnFontSmaller) {
-      btnFontSmaller.addEventListener('click', function() {
-        adjustFontSize(mainContent, -1);
-      });
-    }
-    if (btnFontLarger) {
-      btnFontLarger.addEventListener('click', function() {
-        adjustFontSize(mainContent, 1);
-      });
-    }
+    if (btnTheme) btnTheme.addEventListener('click', toggleDarkMode);
+    if (btnFontSmaller) btnFontSmaller.addEventListener('click', function() { adjustFontSize(mainContent, -1); });
+    if (btnFontLarger) btnFontLarger.addEventListener('click', function() { adjustFontSize(mainContent, 1); });
   }
 
   function adjustFontSize(mainContent, delta) {
@@ -1618,31 +2033,18 @@ ul.task-list li input[type="checkbox"] {
   function bindEdgeHandles() {
     const handleLeft = document.getElementById('handle-sidebar-left');
     const handleRight = document.getElementById('handle-sidebar-right');
-
-    if (handleLeft) {
-      handleLeft.addEventListener('click', function() {
-        toggleLeftSidebar(true);
-      });
-    }
-    if (handleRight) {
-      handleRight.addEventListener('click', function() {
-        toggleRightSidebar(true);
-      });
-    }
+    if (handleLeft) handleLeft.addEventListener('click', function() { toggleLeftSidebar(true); });
+    if (handleRight) handleRight.addEventListener('click', function() { toggleRightSidebar(true); });
   }
 
   function toggleLeftSidebar(forceExpand) {
     const body = document.body;
     let isCollapsed = body.classList.contains('sidebar-left-collapsed');
-    
-    if (forceExpand === true) {
-      isCollapsed = true;
-    }
+    if (forceExpand === true) isCollapsed = true;
 
     if (isCollapsed) {
-      body.classList.remove('sidebar-left-collapsed');
+      body.classList.remove('sidebar-left-collapsed', 'focus-mode-enabled');
       localStorage.setItem('exchange_sidebar_left', 'expanded');
-      body.classList.remove('focus-mode-enabled');
       localStorage.setItem('exchange_focus_mode', 'false');
     } else {
       body.classList.add('sidebar-left-collapsed');
@@ -1654,15 +2056,11 @@ ul.task-list li input[type="checkbox"] {
   function toggleRightSidebar(forceExpand) {
     const body = document.body;
     let isCollapsed = body.classList.contains('sidebar-right-collapsed');
-
-    if (forceExpand === true) {
-      isCollapsed = true;
-    }
+    if (forceExpand === true) isCollapsed = true;
 
     if (isCollapsed) {
-      body.classList.remove('sidebar-right-collapsed');
+      body.classList.remove('sidebar-right-collapsed', 'focus-mode-enabled');
       localStorage.setItem('exchange_sidebar_right', 'expanded');
-      body.classList.remove('focus-mode-enabled');
       localStorage.setItem('exchange_focus_mode', 'false');
     } else {
       body.classList.add('sidebar-right-collapsed');
@@ -1676,16 +2074,12 @@ ul.task-list li input[type="checkbox"] {
     const isFocus = body.classList.contains('focus-mode-enabled');
 
     if (isFocus) {
-      body.classList.remove('focus-mode-enabled');
-      body.classList.remove('sidebar-left-collapsed');
-      body.classList.remove('sidebar-right-collapsed');
+      body.classList.remove('focus-mode-enabled', 'sidebar-left-collapsed', 'sidebar-right-collapsed');
       localStorage.setItem('exchange_focus_mode', 'false');
       localStorage.setItem('exchange_sidebar_left', 'expanded');
       localStorage.setItem('exchange_sidebar_right', 'expanded');
     } else {
-      body.classList.add('focus-mode-enabled');
-      body.classList.add('sidebar-left-collapsed');
-      body.classList.add('sidebar-right-collapsed');
+      body.classList.add('focus-mode-enabled', 'sidebar-left-collapsed', 'sidebar-right-collapsed');
       localStorage.setItem('exchange_focus_mode', 'true');
       localStorage.setItem('exchange_sidebar_left', 'collapsed');
       localStorage.setItem('exchange_sidebar_right', 'collapsed');
@@ -1704,46 +2098,26 @@ ul.task-list li input[type="checkbox"] {
     const isFocus = body.classList.contains('focus-mode-enabled');
 
     if (btnLeft) {
-      if (leftCollapsed) {
-        btnLeft.classList.add('active');
-        btnLeft.querySelector('.btn-label').textContent = '메뉴 열기';
-        btnLeft.querySelector('.btn-icon').textContent = '▥';
-      } else {
-        btnLeft.classList.remove('active');
-        btnLeft.querySelector('.btn-label').textContent = '메뉴 접기';
-        btnLeft.querySelector('.btn-icon').textContent = '◧';
-      }
+      btnLeft.classList.toggle('active', leftCollapsed);
+      btnLeft.querySelector('.btn-label').textContent = leftCollapsed ? '메뉴 열기' : '메뉴 접기';
+      btnLeft.querySelector('.btn-icon').textContent = leftCollapsed ? '▥' : '◧';
     }
-
     if (btnRight) {
-      if (rightCollapsed) {
-        btnRight.classList.add('active');
-        btnRight.querySelector('.btn-label').textContent = '목차 열기';
-        btnRight.querySelector('.btn-icon').textContent = '▥';
-      } else {
-        btnRight.classList.remove('active');
-        btnRight.querySelector('.btn-label').textContent = '목차 접기';
-        btnRight.querySelector('.btn-icon').textContent = '◨';
-      }
+      btnRight.classList.toggle('active', rightCollapsed);
+      btnRight.querySelector('.btn-label').textContent = rightCollapsed ? '목차 열기' : '목차 접기';
+      btnRight.querySelector('.btn-icon').textContent = rightCollapsed ? '▥' : '◨';
     }
-
     if (btnFocus) {
-      if (isFocus) {
-        btnFocus.classList.add('active');
-        btnFocus.querySelector('.btn-label').textContent = '기본 뷰로 복원';
-        btnFocus.querySelector('.btn-icon').textContent = '↺';
-      } else {
-        btnFocus.classList.remove('active');
-        btnFocus.querySelector('.btn-label').textContent = '넓게 보기 (집중 모드)';
-        btnFocus.querySelector('.btn-icon').textContent = '📖';
-      }
+      btnFocus.classList.toggle('active', isFocus);
+      btnFocus.querySelector('.btn-label').textContent = isFocus ? '기본 뷰 복원' : '넓게 보기';
+      btnFocus.querySelector('.btn-icon').textContent = isFocus ? '↺' : '📖';
     }
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initLayoutControls);
+    document.addEventListener('DOMContentLoaded', initGlobalPortalUX);
   } else {
-    initLayoutControls();
+    initGlobalPortalUX();
   }
 })();
 </script>

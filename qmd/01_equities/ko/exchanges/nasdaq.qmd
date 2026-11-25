@@ -1,7 +1,7 @@
 ---
 title: "NASDAQ Stock Market (NASDAQ)"
 subtitle: "주식시장 > 거래소"
-date: "2026-10-20"
+date: "2026-11-24"
 lang: ko
 toc: true
 toc-depth: 3
@@ -18,7 +18,7 @@ format:
   <div class="doc-header-left">
     <span class="doc-badge category">📁 주식시장 &gt; 한국어 리포트</span>
     <span class="doc-badge tier">⭐ TIER 1 공식자료 기반</span>
-    <span class="doc-badge date">📅 2026-10-20</span>
+    <span class="doc-badge date">📅 2026-11-24</span>
   </div>
   <div class="doc-header-right">
     <a href="../../en/exchanges/nasdaq.html" class="doc-lang-btn">🌐 Read in English</a>
@@ -111,21 +111,51 @@ format:
 
 ## 3. 매매메커니즘 (Trading Mechanism)
 
-### 3.1 경매 메커니즘 (Auction Mechanisms)
-- **Opening Cross (9:30 AM ET):** 모든 시간외 주문과 연속 호가창 주문을 집계하여 종목별 단일 시가를 결정한다. 크로스 전에 순주문불균형지표(NOII)가 공시되어 Nasdaq TotalView를 통해 수급 투명성을 제공한다. 인간 개입 없이 완전 전자적으로 수행되며 마이크로초 단위로 수백만 건의 주문을 처리한다.
-- **Closing Cross (~4:00 PM ET):** NASDAQ 상장 종목의 공식 종가를 결정한다. NOII가 오후 3:50 ET부터 공시된다. NASDAQ 일일 거래량의 약 16%를 처리한다. 이 가격은 뮤추얼펀드 NAV 산출, 지수산출, 결제에 사용된다.
-- **IPO/Halt Cross:** IPO 가격발견 및 매매정지 후 거래재개에 사용된다. 불균형 정보를 위한 별도 NOII가 공시된다.
+### 3.1 경매 메커니즘: Opening Cross & Closing Cross 심층 분석 (Nasdaq Rule 4752 / 4754)
+- **Opening Cross (09:30 AM ET):** 모든 프리마켓 전용 주문(MOO, LOO, OIO)과 연속 호가창의 정규장 유효 지정가 주문(LO)을 통합 집계하여 종목별 단일 공식 시가를 산출한다. 인간 개입 없이 마이크로초 단위로 수백만 건의 주문을 전자 매칭하며 일일 거래량의 약 4%를 처리한다.
+- **Closing Cross (16:00 PM ET):** NASDAQ 상장 종목의 공식 벤치마크 종가를 결정하며 일일 전체 거래량의 **약 16~20%**가 집중된다. S&P 500, NASDAQ-100, Russell 리밸런싱 날에는 수십억 주가 단일 크로스에서 체결된다.
+- **IPO / Halt Cross:** 신규 상장(IPO) 최초 가격발견 및 LULD·뉴스 매매정지 해제 시 단일가 재개에 활용된다.
+
+#### (1) 세션 타임라인 및 정보공개·동결 메커니즘 (Opening Cross 예시)
+| 시간 (ET) | 단계 | 핵심 동작 및 시장보호 규칙 |
+|-----------|------|----------------------------|
+| **04:00 ~ 09:25** | 주문 자유 접수 & 프리마켓 접속매매 | 프리마켓 연속매매(04:00~09:30)와 병행하여 Opening 전용 주문(**MOO, LOO, OIO**) 신규·정정·취소 자유 제출 |
+| **09:25 ~ 09:28** | **NOII (순주문불균형지표) 공표** | 5초(09:28부터 1초) 주기로 **Near Price**(연속매매 잔량 포함 예체가), **Far Price**(크로스 전용 주문만의 예체가), **Paired Shares**(체결가능 최대수량), **Imbalance Shares & Side**(불균형 수량·방향) 실시간 배포 |
+| **09:28 ~ 09:30** | **Order Freeze (호가 동결)** | 시세조종(스푸핑) 방지를 위해 **MOO·LOO 취소 및 불리한 가격 정정 금지**(더 공격적인 가격 정정·수량 증가는 허용). 반면 불균형을 흡수할 **OIO(Imbalance Only) 신규 제출은 계속 허용** |
+| **09:30:00** | **Opening Cross 실행 및 LULD 설정** | 단일 합치가격 산출·체결 후, 해당 합치가격을 정규장 연속매매 **LULD(가격변동제한밴드) 최초 기준가격**으로 즉시 설정 |
+
+*(참고: Closing Cross는 15:50부터 NOII 배포 및 MOC/LOC 취소 제한이 시작되며, 15:55 이후 후기 LOC 제한을 거쳐 16:00 정각에 체결된다.)*
+
+#### (2) 합치가격(Cross Price) 산출 4단계 타이브레이킹 알고리즘
+복수의 후보 가격 중 최종 단일 합치가격은 다음 4단계를 순차 적용하여 결정한다:
+1. **1단계 — 최대 체결량 (Maximizes Paired Shares):** 교환 가능한 주식 수가 최대가 되는 가격.
+2. **2단계 — 최소 불균형 (Minimizes Imbalance):** 1단계 동률 시 미체결 불균형 잔량이 가장 적은 가격.
+3. **3단계 — BBO 중간값 근접 (Closest to Nasdaq Inside Midpoint):** 2단계 동률 시 직전 최우선 매수·매도호가 중간값($\frac{\text{Best Bid}+\text{Best Ask}}{2}$)에 가장 가까운 가격.
+4. **4단계 — 기준가격 근접 (Closest to Benchmark Price):** 3단계까지 동률 시 직전 공식 종가(Opening) 또는 직전 체결가(Closing)에 가장 가까운 가격.
+
+> **수치 예시 (전일 종가 \$10.00, 프리마켓 BBO \$10.01 / \$10.02 → 중간값 \$10.015):**
+> \$10.00~\$10.03 전 구간에서 체결 가능 수량이 10,000주로 동일(1단계 동률)하고, 불균형 수량이 \$10.01과 \$10.02에서 모두 0주(2단계 동률)이며, BBO 중간값(\$10.015)과의 거리도 양쪽 모두 \$0.005로 동일(3단계 동률)할 경우, 4단계 기준가격(전일 종가 \$10.00)에 더 가까운 **\$10.01**이 최종 시가로 확정된다.
+
+#### (3) 호가별 처리 및 체결 우선순위
+- **MOO / MOC:** 가격제한밴드(Benchmark Collar) 내에서 최우선 체결 보장. 막대한 MOO 쏠림으로 밴드 내 정상 가격 산출이 불가할 경우 **Imbalance Freeze** 또는 **Auction Extension**으로 체결을 유보하여 이상 급등락을 차단한다.
+- **OIO / CIO (불균형상쇄주문):** 자신의 호가가 최우선호가(Inside Quote)를 변경시켜 가격을 왜곡하지 못하도록 **매수 OIO는 $\min(\text{지정가}, \text{최우선매수호가})$, 매도 OIO는 $\max(\text{지정가}, \text{최우선매도호가})$로 가격 Cap**이 설정되며, 오직 수량이 부족한 불균형 해소 한도까지만 반영된다.
+- **체결 배정 순위:** ① **MOO/MOC** → ② **In-the-Money**(합치가격보다 유리한 LOO/LO 전량 및 불균형 범위 내 OIO) → ③ **At-the-Money**(합치가격과 동일한 LOO/LO는 **접수 시간 우선**, 그 뒤 최열위로 불균형 범위 내 OIO 체결).
+
+#### (4) 주문주도형(Order-Driven) 시장에서도 왜 복잡한 Cross가 유효한가?
+16개 정규 거래소와 수십 개 다크풀(ATS)로 고도로 파편화된 미국 시장에서, 시·종가 순간만큼은 글로벌 패시브 인덱스·ETF의 천문학적 리밸런싱 물량이 상장 거래소(NASDAQ) 한 곳으로 결집한다:
+- **패시브 펀드·ETF (`MOO/MOC`):** 벤치마크 추적오차(Tracking Error) 0 달성과 수탁자 책임(소송 리스크 회피)을 위해 가격 불문 확정 체결을 원함.
+- **액티브·퀀트 기관 (`LOO/LOC`):** 유동성이 극대화되는 시점에 지정한 한도 가격 보호 하에 대량 매매 수행.
+- **시장조성자·HFT (`OIO/CIO`):** NOII로 공개된 불균형 정보를 보고 Order Freeze 이후 안전하게 반대편 유동성을 공급한 뒤, 체결 직후 파생상품·ATS에서 무위험 차익거래로 헤지하여 스프레드 프리미엄을 수취.
+- **KRX·NXT 대비 시사점:** 한국은 대체거래소(NXT)를 시·종가 시간대(08:50~09:00, 15:20~15:30)에 일시 휴장시켜 KRX 단일가로 유동성을 모으고 있으나, 향후 복수 시장 점유율과 패시브 리밸런싱 규모가 커질수록 NOII·Order Freeze·OIO와 같은 정교한 불균형 흡수 메커니즘이 주요 벤치마크 모델이 된다.
 
 ### 3.2 접속매매 (연속매매) (Continuous Trading)
-- 경쟁 시장조성자 (마켓메이커)가 유동성을 공급하는 **주문 주도 시장**이다.
+- 경쟁 시장조성자 (마켓메이커)가 유동성을 공급하는 **주문 주도 시장(Order-Driven Market)**이다.
 - **가격-시간 우선원칙:** 주문은 먼저 가격 우선, 이후 동일 가격에서 입력 시간 우선으로 체결된다.
-- 표시 주문과 비표시(숨겨진) 주문 모두 지원한다.
-- NBBO 중간가격에서 체결되는 중간가격 연동 주문이 이용 가능하다.
+- 표시 주문과 비표시(숨겨진) 주문 모두 지원하며, NBBO 중간가격에 연동되는 중간가 주문(Midpoint Peg / MELO)이 활발히 활용된다.
 
 ### 3.3 가격발견 (Price Discovery)
-- Opening Cross와 Closing Cross가 주요 가격발견 메커니즘으로, 전체 일일 거래소 거래량의 약 20%를 차지한다.
-- NOII는 정보에 입각한 참여를 위해 실시간 참조가격, 대응주식 수, 불균형 데이터를 제공한다.
-- 접속매매 (연속매매)는 정규 세션 전반에 걸쳐 지속적인 가격발견을 제공한다.
+- Opening Cross와 Closing Cross가 핵심 기준가격 발견 메커니즘으로 일일 거래량의 약 20% 이상을 담당하며, 산출된 합치가격은 정규장 LULD 가격밴드의 기준점이 된다.
+- NOII는 초단위 예상체결가(Near/Far), 체결가능 수량, 불균형 수량·방향을 투명하게 중계하여 시장 충격을 최소화한다.
 
 ---
 
@@ -141,6 +171,7 @@ format:
 | Limit-on-Open (LOO) | 가격 제한을 두고 Opening Cross에 참여 |
 | Market-on-Close (MOC) | 결정된 종가로 Closing Cross에 참여 |
 | Limit-on-Close (LOC) | 가격 제한을 두고 Closing Cross에 참여 |
+| Imbalance Only (OIO / CIO) | Opening/Closing Cross 전용 유동성 공급 주문; 최우선호가를 변경하지 않도록 가격 Cap이 적용되며 불균형 수량 해소 범위 내에서만 체결 (Order Freeze 이후에도 신규 제출 가능) |
 
 ### 4.2 고급 주문유형 (Advanced Order Types)
 | 주문유형 | 설명 |

@@ -1,7 +1,7 @@
 ---
 title: "Nextrade (NXT)"
 subtitle: "Equities > Alternative Trading System (ATS)"
-date: "2026-10-20"
+date: "2026-11-24"
 lang: en
 toc: true
 toc-depth: 3
@@ -18,7 +18,7 @@ format:
   <div class="doc-header-left">
     <span class="doc-badge category">📁 Equities &gt; ATS English Report</span>
     <span class="doc-badge tier">⭐ TIER 1 Market Infrastructure</span>
-    <span class="doc-badge date">📅 2026-10-20</span>
+    <span class="doc-badge date">📅 2026-11-24</span>
   </div>
   <div class="doc-header-right">
     <a href="../../ko/exchanges/nextrade.html" class="doc-lang-btn">🇰🇷 Read in Korean</a>
@@ -120,11 +120,10 @@ Nextrade pioneered advanced order types previously unavailable in the Korean dom
 |------------|-------------|----------------------|
 | **Limit Order** | 지정가호가 | Standard order with specified price and quantity |
 | **Market Order** | 시장가호가 | Executes immediately against opposite top-of-book liquidity |
-| **Midpoint Order** | 중간가호가 | Executes strictly at the midpoint of the consolidated National Best Bid and Offer (NBBO) |
-| **Stop-Limit Order**| 스톱지정가호가 | Triggered when market touches the stop activation price, generating a limit order |
-| **Conditional Limit**| 조건부지정가호가 | Operates as a limit order during continuous session; converts to market at close |
-| **Best Limit** | 최유리지정가호가 | Pegs price automatically to the same-side best prevailing quote |
-| **Top of Book** | 최우선지정가호가 | Pegs price automatically to the opposite-side best prevailing quote |
+| **Midpoint Order** | 중간가호가 | Executes strictly at the midpoint of prevailing best bid and ask quotes |
+| **Stop-Limit Order**| 스톱지정가호가 | Triggered when market trade price reaches the stop activation price, entering as a limit order |
+| **Best Limit** | 최유리지정가호가 | Pegs price automatically to the **opposite-side** best prevailing quote (buy at best ask, sell at best bid) |
+| **Best Priority Limit** | 최우선지정가호가 | Pegs price automatically to the **same-side** best prevailing quote (buy at best bid, sell at best ask) |
 | **IOC** | Immediate-Or-Cancel | Executes all or part immediately; unexecuted balance is canceled |
 | **FOK** | Fill-Or-Kill | Executes in its entirety immediately, otherwise fully canceled |
 

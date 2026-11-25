@@ -1,7 +1,7 @@
 ---
 title: "글로벌 24시간 매매세션 타임라인 (Global Trading Hours Timeline)"
 subtitle: "Visual Analytics & Market Liquidity"
-date: "2026-10-22"
+date: "2026-11-24"
 lang: ko
 toc: false
 page-layout: full
